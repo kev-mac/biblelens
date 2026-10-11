@@ -85,7 +85,7 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
   font:400 var(--summary-size,20px)/1.6 var(--serif);
 }
 .comparison-summary,.comparison-cell .comparison-summary,.study-tldr .comparison-summary,.commentary-card .comparison-summary,.evidence-result .comparison-summary{
-  font:italic 400 var(--chapter-size,19px)/1.85 system-ui;
+  font:400 calc(var(--chapter-size,19px) - 1px)/1.85 system-ui;
   color:var(--ink);
   border:1px solid var(--line);
   border-radius:6px;
