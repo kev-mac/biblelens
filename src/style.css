@@ -94,11 +94,16 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
   margin:6px 0 12px;
 }
 
-/* Keep comparison shading in sync with the displayed status tag. */
-.verse-comparison:has(.agreement.agrees){--tag-background:#b5eed5}
-.verse-comparison:has(.agreement.disagrees){--tag-background:#ffd0b4}
-.verse-comparison:has(.agreement.conflict){--tag-background:#c5d8ff}
-.verse-comparison .agreement,.verse-comparison .comparison-summary{background:var(--tag-background,var(--soft))}
-body.dark .verse-comparison:has(.agreement.agrees){--tag-background:#214a44}
-body.dark .verse-comparison:has(.agreement.disagrees){--tag-background:#543d36}
-body.dark .verse-comparison:has(.agreement.conflict){--tag-background:#2b3d5b}
+/* Pale summaries remain readable in both themes. */
+.comparison-summary,.comparison-cell .comparison-summary,.study-tldr .comparison-summary,.commentary-card .comparison-summary,.evidence-result .comparison-summary{background:#edf3ee;color:#24352d;border-color:#c7d7cd}
+.verse-comparison[data-tone="agrees"]{--summary-tint:#e6f5ed;--summary-ink:#234c3b}
+.verse-comparison[data-tone="disagrees"]{--summary-tint:#fff0e7;--summary-ink:#633e2b}
+.verse-comparison[data-tone="conflict"]{--summary-tint:#edf1fc;--summary-ink:#34456b}
+.verse-comparison[data-tone="plain"]{--summary-tint:#edf3ee;--summary-ink:#24352d}
+.verse-comparison .comparison-summary{background:var(--summary-tint,#edf3ee);color:var(--summary-ink,#24352d);border-color:color-mix(in srgb,var(--summary-ink,#24352d) 24%,var(--summary-tint,#edf3ee))}
+.comparison-tabs{display:flex;flex-wrap:wrap;gap:7px;margin:2px 0 10px}
+.comparison-tab{border:1px solid transparent;cursor:pointer;font:500 11px/1.4 system-ui;padding:5px 8px;min-height:28px;max-width:100%;text-align:left}
+.comparison-tab[aria-selected="true"]{outline:2px solid var(--green);outline-offset:2px;font-weight:700}
+.comparison-tab.plain,body.dark .comparison-tab.plain{background:#edf3ee;color:#24352d}
+.summary-citations{gap:6px;margin:8px 0}
+.summary-citations .verse-citation{font:11px/1.4 system-ui;padding:4px 7px;min-height:28px;border-radius:4px}
