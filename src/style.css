@@ -31,7 +31,6 @@ html,body{touch-action:pan-x pan-y;-webkit-text-size-adjust:100%;text-size-adjus
 .comparison-head{display:none}
 .comparison-cell{border:0;padding:0}
 .comparison-cell:not(:empty)::before{content:none}
-.tldr-label{display:block;font:600 11px/1.5 system-ui;letter-spacing:.6px;color:var(--muted);margin-top:10px}
 .comparison-cell .comparison-summary,.study-tldr .comparison-summary{font:400 var(--summary-size,20px)/1.6 system-ui;margin:6px 0 12px;color:var(--ink);padding:0}
 .verse-disclosure,.comparison-details{font:14px/1.6 system-ui;color:var(--ink)}
 .verse-disclosure>summary,.comparison-details>summary{cursor:pointer;color:var(--green);padding:10px 0;min-height:44px;box-sizing:border-box}
