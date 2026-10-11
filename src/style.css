@@ -61,3 +61,22 @@ html,body{touch-action:pan-x pan-y;-webkit-text-size-adjust:100%;text-size-adjus
 .preview-text{font:18px/1.6 Georgia,serif;margin:8px 0 14px;overflow-wrap:anywhere}
 .preview-link{font:14px/1.5 system-ui;color:var(--green)}
 @media(max-width:650px){.verse-citation{min-height:44px;font-size:14px}.preview-close{width:44px;height:44px}}
+
+/* Higher contrast dark theme */
+body.dark{--bg:#08111d;--panel:#172638;--ink:#f4f8ff;--muted:#c3d1e3;--line:#6f89a6;--green:#9fd7ff;--soft:#243b54;--rust:#b6e1ff}
+body.dark .chapter-text,body.dark .commentary-card,body.dark .chat-message,body.dark .card{border-color:var(--line)}
+body.dark .comparison-details[open]{background:var(--bg);border-left:3px solid var(--green);padding:0 16px 16px;border-radius:4px}
+body.dark .verse-citation{background:#2e4b68;color:#d8efff;border-color:#8cafd0}
+body.dark .agreement.agrees{background:#b5eed5;color:#092c20}
+body.dark .agreement.disagrees{background:#ffd0b4;color:#431b0b}
+body.dark .agreement.conflict{background:#c5d8ff;color:#192d51}
+body.dark select{color:var(--ink)}
+body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);text-decoration:underline}
+.agreement{font-size:11px;font-weight:600;padding:4px 9px}
+.science-fields{margin:18px 0}
+.science-fields h4{font:600 16px/1.5 system-ui;margin:12px 0}
+.science-field{padding:14px 0;border-top:1px solid var(--line)}
+.science-field h5{font:600 16px/1.5 system-ui;margin:0 0 8px;color:var(--ink)}
+.science-field p{font:16px/1.75 system-ui;margin:8px 0;color:var(--ink)}
+.field-sources{display:flex;flex-direction:column;gap:8px}
+.field-sources a{font:13px/1.6 system-ui;color:var(--green)}

@@ -3,16 +3,56 @@
     "mode": "science",
     "ref": "Genesis 1:11",
     "status": "Disagrees",
-    "text": "Vegetation appears before the Sun in verse 16. The scientific formation model has the Sun forming before Earth and therefore before terrestrial plants.",
-    "scope": "Comparison assumes the days give a literal physical sequence; a literary reading makes a different claim.",
+    "text": "Genesis places seed-bearing vegetation on day three (1:11–13) and the heavenly lights on day four (1:14–19). Reading these as the first physical appearance of plants and the Sun reverses the order in the accepted solar-system formation model.",
+    "scope": "The strongest disagreement is the Sun–Earth–plants sequence under a literal first-creation reading. A literary arrangement, later visibility of an existing Sun, or miraculous light changes the claim being evaluated; these readings are not established by the scientific sources. Science models natural processes and cannot independently test an unspecified miracle.",
     "sources": [
       {
-        "label": "NASA: Sun formation",
+        "label": "NASA · Sun formation",
         "url": "https://science.nasa.gov/sun/facts/"
+      },
+      {
+        "label": "OpenStax Biology 2e · photosynthesis",
+        "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
       }
     ],
     "checked": "2026-10-11",
-    "summary": "On a literal timeline, plants appear before the Sun. Science places the Sun before Earth and its plants."
+    "summary": "On a literal timeline, plants appear before the Sun. Science places the Sun before Earth and its plants.",
+    "fields": [
+      {
+        "branch": "Astrophysics & planetary science",
+        "text": "The Sun formed from a collapsing gas-and-dust cloud; planets formed from material in the surrounding disk. Earth’s plants therefore came after the Sun, not before it. This is a conflict about the sequence of natural events, not merely the length of a “day.”",
+        "sources": [
+          {
+            "label": "NASA · Sun formation",
+            "url": "https://science.nasa.gov/sun/facts/"
+          }
+        ]
+      },
+      {
+        "branch": "Botany & plant physiology",
+        "text": "Photosynthesis uses light energy to make sugars from carbon dioxide and water. A naturally developing plant ecosystem needs an energy source. However, Genesis 1:3 already describes light: photosynthesis alone does not prove these plants were in total darkness or that sunlight is the only possible light source.",
+        "sources": [
+          {
+            "label": "OpenStax Biology 2e · photosynthesis",
+            "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
+          }
+        ]
+      }
+    ],
+    "refs": [
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 3,
+        "label": "Genesis 1:3"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 16,
+        "label": "Genesis 1:16"
+      }
+    ]
   },
   {
     "mode": "science",
@@ -27,22 +67,84 @@
       }
     ],
     "checked": "2026-10-11",
-    "summary": "The Sun helps mark days and years. Earth’s tilt and orbit explain the seasonal cycle."
+    "summary": "The Sun helps mark days and years. Earth’s tilt and orbit explain the seasonal cycle.",
+    "fields": [
+      {
+        "branch": "Astronomy",
+        "text": "Earth’s rotation produces the day–night cycle, and its orbit around the Sun provides the basis of the solar year. These regular motions support the broad observation that heavenly lights can mark time.",
+        "sources": [
+          {
+            "label": "NASA · Earth rotation and orbit",
+            "url": "https://science.nasa.gov/earth/facts/"
+          }
+        ]
+      },
+      {
+        "branch": "Earth science",
+        "text": "The seasonal cycle depends on Earth’s axial tilt as it orbits the Sun. This agreement concerns observable cycles, not the chapter’s order of creation.",
+        "sources": [
+          {
+            "label": "NASA · Earth rotation and orbit",
+            "url": "https://science.nasa.gov/earth/facts/"
+          }
+        ]
+      }
+    ]
   },
   {
     "mode": "science",
     "ref": "Genesis 1:16",
     "status": "Disagrees",
-    "text": "This places the Sun after Earth and vegetation. NASA’s formation model has the Sun forming first from the solar nebula, with the remaining material forming planets.",
-    "scope": "Disagreement concerns a literal chronological reading, not the metaphor of heavenly lights.",
+    "text": "Genesis places seed-bearing vegetation on day three (1:11–13) and the heavenly lights on day four (1:14–19). Reading these as the first physical appearance of plants and the Sun reverses the order in the accepted solar-system formation model.",
+    "scope": "The strongest disagreement is the Sun–Earth–plants sequence under a literal first-creation reading. A literary arrangement, later visibility of an existing Sun, or miraculous light changes the claim being evaluated; these readings are not established by the scientific sources. Science models natural processes and cannot independently test an unspecified miracle.",
     "sources": [
       {
-        "label": "NASA: Sun formation",
+        "label": "NASA · Sun formation",
         "url": "https://science.nasa.gov/sun/facts/"
+      },
+      {
+        "label": "OpenStax Biology 2e · photosynthesis",
+        "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
       }
     ],
     "checked": "2026-10-11",
-    "summary": "On a literal timeline, the Sun appears after Earth and plants. Science places the Sun first."
+    "summary": "On a literal timeline, the Sun appears after Earth and plants. Science places the Sun first.",
+    "fields": [
+      {
+        "branch": "Astrophysics & planetary science",
+        "text": "The Sun formed from a collapsing gas-and-dust cloud; planets formed from material in the surrounding disk. Earth’s plants therefore came after the Sun, not before it. This is a conflict about the sequence of natural events, not merely the length of a “day.”",
+        "sources": [
+          {
+            "label": "NASA · Sun formation",
+            "url": "https://science.nasa.gov/sun/facts/"
+          }
+        ]
+      },
+      {
+        "branch": "Botany & plant physiology",
+        "text": "Photosynthesis uses light energy to make sugars from carbon dioxide and water. A naturally developing plant ecosystem needs an energy source. However, Genesis 1:3 already describes light: photosynthesis alone does not prove these plants were in total darkness or that sunlight is the only possible light source.",
+        "sources": [
+          {
+            "label": "OpenStax Biology 2e · photosynthesis",
+            "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
+          }
+        ]
+      }
+    ],
+    "refs": [
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 3,
+        "label": "Genesis 1:3"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 11,
+        "label": "Genesis 1:11"
+      }
+    ]
   },
   {
     "mode": "science",
@@ -57,7 +159,19 @@
       }
     ],
     "checked": "2026-10-11",
-    "summary": "The day–night pattern agrees with Earth rotating toward and away from the Sun."
+    "summary": "The day–night pattern agrees with Earth rotating toward and away from the Sun.",
+    "fields": [
+      {
+        "branch": "Astronomy & planetary science",
+        "text": "On a rotating Earth, the side facing the Sun receives daylight and the side turned away experiences night. The verse’s distinction between day and night agrees with this observed pattern; it does not explain the rotation mechanism.",
+        "sources": [
+          {
+            "label": "NASA · Earth rotation and orbit",
+            "url": "https://science.nasa.gov/earth/facts/"
+          }
+        ]
+      }
+    ]
   },
   {
     "mode": "science",
@@ -72,7 +186,19 @@
       }
     ],
     "checked": "2026-10-11",
-    "summary": "If this poem means Earth never moves, it conflicts with Earth’s rotation and orbit. Stability is another possible meaning."
+    "summary": "If this poem means Earth never moves, it conflicts with Earth’s rotation and orbit. Stability is another possible meaning.",
+    "fields": [
+      {
+        "branch": "Astronomy & mechanics",
+        "text": "Earth spins on its axis and moves around the Sun. A claim that Earth is physically motionless would contradict both motions. The verse is poetry, however: permanence or stability need not mean zero motion.",
+        "sources": [
+          {
+            "label": "NASA · Earth rotation and orbit",
+            "url": "https://science.nasa.gov/earth/facts/"
+          }
+        ]
+      }
+    ]
   },
   {
     "mode": "science",
@@ -82,12 +208,24 @@
     "scope": "Broad observational agreement; the verse does not provide a complete hydrological explanation.",
     "sources": [
       {
-        "label": "USGS: Water cycle",
-        "url": "https://www.usgs.gov/centers/new-york-water-science-center/science/hydrologic-cycle"
+        "label": "USGS · water cycle",
+        "url": "https://www.usgs.gov/water-science-school/water-cycle"
       }
     ],
     "checked": "2026-10-11",
-    "summary": "Rivers flowing to the sea broadly fit the water cycle, though the verse does not explain the full process."
+    "summary": "Rivers flowing to the sea broadly fit the water cycle, though the verse does not explain the full process.",
+    "fields": [
+      {
+        "branch": "Hydrology",
+        "text": "Water moves through rivers to the ocean and returns to land through evaporation, atmospheric transport and precipitation. This circulation explains why continued river flow does not simply fill the sea without any return process.",
+        "sources": [
+          {
+            "label": "USGS · water cycle",
+            "url": "https://www.usgs.gov/water-science-school/water-cycle"
+          }
+        ]
+      }
+    ]
   },
   {
     "mode": "science",
@@ -97,12 +235,24 @@
     "scope": "A poetic description, not a complete scientific model.",
     "sources": [
       {
-        "label": "USGS: Water cycle",
-        "url": "https://www.usgs.gov/centers/new-york-water-science-center/science/hydrologic-cycle"
+        "label": "USGS · water cycle",
+        "url": "https://www.usgs.gov/water-science-school/water-cycle"
       }
     ],
     "checked": "2026-10-11",
-    "summary": "The poetic description of water rising and returning as rain broadly fits the water cycle."
+    "summary": "The poetic description of water rising and returning as rain broadly fits the water cycle.",
+    "fields": [
+      {
+        "branch": "Meteorology & hydrology",
+        "text": "Water evaporates, moves through the atmosphere, condenses and returns as precipitation. The rising-water and rain imagery broadly resembles that circulation. The poem does not specify the complete mechanisms, so this is observational agreement rather than a scientific theory.",
+        "sources": [
+          {
+            "label": "USGS · water cycle",
+            "url": "https://www.usgs.gov/water-science-school/water-cycle"
+          }
+        ]
+      }
+    ]
   },
   {
     "mode": "science",
@@ -112,12 +262,24 @@
     "scope": "A poetic description, not a complete scientific model.",
     "sources": [
       {
-        "label": "USGS: Water cycle",
-        "url": "https://www.usgs.gov/centers/new-york-water-science-center/science/hydrologic-cycle"
+        "label": "USGS · water cycle",
+        "url": "https://www.usgs.gov/water-science-school/water-cycle"
       }
     ],
     "checked": "2026-10-11",
-    "summary": "The poetic description of water rising and returning as rain broadly fits the water cycle."
+    "summary": "The poetic description of water rising and returning as rain broadly fits the water cycle.",
+    "fields": [
+      {
+        "branch": "Meteorology & hydrology",
+        "text": "Water evaporates, moves through the atmosphere, condenses and returns as precipitation. The rising-water and rain imagery broadly resembles that circulation. The poem does not specify the complete mechanisms, so this is observational agreement rather than a scientific theory.",
+        "sources": [
+          {
+            "label": "USGS · water cycle",
+            "url": "https://www.usgs.gov/water-science-school/water-cycle"
+          }
+        ]
+      }
+    ]
   },
   {
     "mode": "history",
@@ -197,5 +359,113 @@
     ],
     "checked": "2026-10-11",
     "summary": "Josephus also describes Judas the Galilean opposing Quirinius’s census. This supports the movement, not every detail of the verse."
+  },
+  {
+    "mode": "science",
+    "ref": "Genesis 1:6",
+    "status": "Disagrees",
+    "title": "A solid sky dome?",
+    "summary": "A literal solid dome holding back an upper sea conflicts with atmospheric science. Whether “firmament” means that dome is an interpretive question.",
+    "text": "Genesis 1:6–7 describes a divider between waters below and waters above. Paul H. Seely argues that the Hebrew term refers to a solid sky; Vern S. Poythress instead reads the upper waters as rain-bearing clouds. The science comparison below evaluates the solid-dome interpretation, not every possible meaning of the verse.",
+    "fields": [
+      {
+        "branch": "Atmospheric science",
+        "text": "Earth’s atmosphere has gaseous layers that become increasingly thin toward space. A rigid roof enclosing the sky and supporting an upper ocean is incompatible with that measured structure.",
+        "sources": [
+          {
+            "label": "NASA · atmospheric layers",
+            "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+          }
+        ]
+      },
+      {
+        "branch": "Meteorology",
+        "text": "Clouds and almost all atmospheric water vapor occur in the lower atmosphere. That differs from a cosmic ocean retained above a solid sky barrier. Water in clouds does not, by itself, conflict with science.",
+        "sources": [
+          {
+            "label": "NASA · atmospheric layers",
+            "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+          }
+        ]
+      }
+    ],
+    "scope": "“Snowglobe Earth” is a modern analogy for the dome interpretation, not a phrase or complete model stated in this verse. Verse 6 alone does not establish a flat Earth. The physical dome model disagrees with science; the lexical and literary interpretation remains disputed. This is our conditional assessment, not a NASA judgment on scripture.",
+    "sources": [
+      {
+        "label": "NASA · atmospheric layers",
+        "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+      },
+      {
+        "label": "Paul H. Seely · firmament interpretation (WTJ, 1991; preview)",
+        "url": "https://www.galaxie.com/article/wtj53-2-04"
+      },
+      {
+        "label": "Vern S. Poythress · alternative reading (WTJ, 2015; PDF)",
+        "url": "https://frame-poythress.org/wp-content/uploads/2015/12/2015Poythress-RainWater-WTJ77.2.pdf"
+      }
+    ],
+    "refs": [
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 7,
+        "label": "Genesis 1:7"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "mode": "science",
+    "ref": "Genesis 1:7",
+    "status": "Disagrees",
+    "title": "A solid sky dome?",
+    "summary": "A literal solid dome holding back an upper sea conflicts with atmospheric science. Whether “firmament” means that dome is an interpretive question.",
+    "text": "Genesis 1:6–7 describes a divider between waters below and waters above. Paul H. Seely argues that the Hebrew term refers to a solid sky; Vern S. Poythress instead reads the upper waters as rain-bearing clouds. The science comparison below evaluates the solid-dome interpretation, not every possible meaning of the verse.",
+    "fields": [
+      {
+        "branch": "Atmospheric science",
+        "text": "Earth’s atmosphere has gaseous layers that become increasingly thin toward space. A rigid roof enclosing the sky and supporting an upper ocean is incompatible with that measured structure.",
+        "sources": [
+          {
+            "label": "NASA · atmospheric layers",
+            "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+          }
+        ]
+      },
+      {
+        "branch": "Meteorology",
+        "text": "Clouds and almost all atmospheric water vapor occur in the lower atmosphere. That differs from a cosmic ocean retained above a solid sky barrier. Water in clouds does not, by itself, conflict with science.",
+        "sources": [
+          {
+            "label": "NASA · atmospheric layers",
+            "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+          }
+        ]
+      }
+    ],
+    "scope": "“Snowglobe Earth” is a modern analogy for the dome interpretation, not a phrase or complete model stated in this verse. Verse 6 alone does not establish a flat Earth. The physical dome model disagrees with science; the lexical and literary interpretation remains disputed. This is our conditional assessment, not a NASA judgment on scripture.",
+    "sources": [
+      {
+        "label": "NASA · atmospheric layers",
+        "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+      },
+      {
+        "label": "Paul H. Seely · firmament interpretation (WTJ, 1991; preview)",
+        "url": "https://www.galaxie.com/article/wtj53-2-04"
+      },
+      {
+        "label": "Vern S. Poythress · alternative reading (WTJ, 2015; PDF)",
+        "url": "https://frame-poythress.org/wp-content/uploads/2015/12/2015Poythress-RainWater-WTJ77.2.pdf"
+      }
+    ],
+    "refs": [
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 6,
+        "label": "Genesis 1:6"
+      }
+    ],
+    "checked": "2026-10-11"
   }
 ]
