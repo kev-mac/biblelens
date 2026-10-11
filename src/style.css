@@ -46,3 +46,18 @@ html,body{touch-action:pan-x pan-y;-webkit-text-size-adjust:100%;text-size-adjus
 .summary-attribution{display:block;font:12px/1.5 system-ui;color:var(--muted);margin-bottom:8px}
 
 .commentary-card .comparison-summary,.evidence-result .comparison-summary{font:20px/1.6 system-ui}
+
+/* Visible chapter text; cited passages stay in previews. */
+.verse-content-grid.is-comparing{grid-template-columns:minmax(0,1fr);gap:16px}
+.with-comparisons .verse-body{font-size:var(--chapter-size,19px)}
+.summary-citations{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.verse-citation{background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:7px 10px;color:var(--green);font:13px/1.5 system-ui;cursor:pointer;min-height:36px}
+.verse-citation:hover,.verse-citation:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.verse-preview{position:fixed;z-index:1000;box-sizing:border-box;width:min(380px,calc(100vw - 24px));padding:16px 18px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 32px #0003;overflow:auto;overscroll-behavior:contain}
+.verse-preview[hidden]{display:none}
+.preview-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;font:16px/1.5 system-ui}
+.preview-close{width:36px;height:36px;border:0;border-radius:5px;background:var(--soft);color:var(--ink);font:24px system-ui;cursor:pointer}
+.preview-edition{font:11px/1.5 system-ui;color:var(--muted);margin:2px 0 10px}
+.preview-text{font:18px/1.6 Georgia,serif;margin:8px 0 14px;overflow-wrap:anywhere}
+.preview-link{font:14px/1.5 system-ui;color:var(--green)}
+@media(max-width:650px){.verse-citation{min-height:44px;font-size:14px}.preview-close{width:44px;height:44px}}
