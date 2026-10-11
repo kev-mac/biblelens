@@ -1,0 +1,15 @@
+{
+  "source": "https://github.com/midvash/bible-data",
+  "retrieved": "2026-10-11",
+  "editions": [
+    "KJV",
+    "ASV 1901"
+  ],
+  "books": 66,
+  "chapters": 1189,
+  "verseCounts": {
+    "kjv": 31102,
+    "asv": 31086
+  },
+  "note": "Missing verse numbers in an edition are retained as absent in the supplied dataset, never filled from another edition."
+}
