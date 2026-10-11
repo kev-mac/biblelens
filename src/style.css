@@ -44,3 +44,5 @@ html,body{touch-action:pan-x pan-y;-webkit-text-size-adjust:100%;text-size-adjus
 @media(max-width:650px){.comparison-cell .comparison-summary,.study-tldr .comparison-summary{font-size:20px}.comparison-cell{margin:0;padding:0;border:0}}
 
 .summary-attribution{display:block;font:12px/1.5 system-ui;color:var(--muted);margin-bottom:8px}
+
+.commentary-card .comparison-summary,.evidence-result .comparison-summary{font:20px/1.6 system-ui}
