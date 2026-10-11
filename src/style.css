@@ -79,3 +79,17 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 .science-field p{font:16px/1.75 system-ui;margin:8px 0;color:var(--ink)}
 .field-sources{display:flex;flex-direction:column;gap:8px}
 .field-sources a{font:13px/1.6 system-ui;color:var(--green)}
+
+/* Verse and summary typography exchanged across the reading workspace. */
+.verse-body,.with-comparisons .verse-body,.translation-pair .verse-body,.passage blockquote,.preview-text{
+  font:400 var(--summary-size,20px)/1.6 system-ui;
+}
+.comparison-summary,.comparison-cell .comparison-summary,.study-tldr .comparison-summary,.commentary-card .comparison-summary,.evidence-result .comparison-summary{
+  font:italic 400 var(--chapter-size,19px)/1.85 var(--serif);
+  color:var(--ink);
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:var(--soft);
+  padding:12px 16px;
+  margin:6px 0 12px;
+}
