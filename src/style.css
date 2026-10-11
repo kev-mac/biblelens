@@ -12,10 +12,12 @@ html,body{touch-action:pan-x pan-y;-webkit-text-size-adjust:100%;text-size-adjus
  input,select,button.secondary,.primary,.chip,nav button{min-height:44px}
  .reader-toolbar select{height:44px}#book-select{min-width:0}.reader-toolbar label{min-width:0}.reader-nav .secondary{min-width:40px}.icon{width:40px;height:40px}.bookmark{min-width:40px;min-height:40px}.verse-num{min-width:32px;min-height:36px}.ref-button{min-height:36px}.tabs button{min-height:40px}
  .chat-form{padding-bottom:max(12px,env(safe-area-inset-bottom));bottom:0}.chat-form textarea{min-height:86px;max-height:min(180px,35dvh)}.chat-form button{min-width:74px}
- html.mobile-editing .reader-toolbar,html.mobile-editing .chat-form{position:static}
- html.keyboard-open body{padding-bottom:calc(var(--keyboard-gap,0px) + 32px)}
- html.mobile-editing dialog[open]{position:fixed;top:calc(var(--visual-top,0px) + 12px);bottom:auto;margin:0 auto;max-height:calc(var(--visual-height,100dvh) - 24px);overscroll-behavior:contain}
- html.keyboard-open #toast{bottom:calc(var(--keyboard-gap,0px) + 16px)}
+ .reader-toolbar,.chat-form{position:static}
+ html.mobile-editing{scroll-behavior:auto}
+ html.mobile-editing body{padding-bottom:var(--editing-space,320px)}
+
+ html.mobile-editing dialog[open]{position:fixed;top:12px;bottom:auto;margin:0 auto;max-height:calc(var(--visual-height,100dvh) - 24px);overscroll-behavior:contain}
+
  footer{padding-bottom:max(22px,env(safe-area-inset-bottom))}.search-wrap{min-width:0}.search-wrap input{min-width:0}.reader-toolbar{scroll-margin-top:12px}.notes-area{max-height:35dvh;min-height:130px}
 }
 @media(max-width:650px){
