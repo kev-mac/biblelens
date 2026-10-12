@@ -9183,12 +9183,13 @@
       "Leviticus 6:4",
       "Leviticus 6:5",
       "Leviticus 6:6",
-      "Leviticus 6:7"
+      "Leviticus 6:7",
+      "Leviticus 22:14"
     ],
     "title": "A ritual offering does not replace restitution",
     "status": "Context",
     "summary": "Restoration of property, an additional fifth and an offering appear together.",
-    "text": "Harm to sacred property requires compensation plus a fifth. Deceit over entrusted, stolen or found property likewise requires restoration to its owner with an added fifth, alongside a ram offering.",
+    "text": "Harm to sacred property requires compensation plus a fifth. Deceit over entrusted, stolen or found property likewise requires restoration to its owner with an added fifth, alongside a ram offering. Leviticus 22:14 also requires replacement plus a fifth when sacred food is eaten unwittingly.",
     "reasoning": "The stated remedy combines material repair with ritual atonement. It should not be summarized as forgiveness obtained merely by presenting an animal.",
     "scope": "This describes these particular cases. It does not resolve every restitution rule in other law collections or demonstrate historical collection and enforcement.",
     "refs": [
@@ -9239,6 +9240,12 @@
         "book": 2,
         "chapter": 6,
         "verse": 7
+      },
+      {
+        "label": "Leviticus 22:14",
+        "book": 2,
+        "chapter": 22,
+        "verse": 14
       }
     ],
     "sources": [
@@ -9249,6 +9256,10 @@
       {
         "label": "Leviticus 6 · primary scripture",
         "url": "https://ebible.org/eng-kjv/LEV06.htm"
+      },
+      {
+        "label": "Leviticus 22 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV22.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -10366,12 +10377,13 @@
       "Deuteronomy 25:7",
       "Deuteronomy 25:8",
       "Deuteronomy 25:9",
-      "Deuteronomy 25:10"
+      "Deuteronomy 25:10",
+      "Leviticus 20:21"
     ],
     "title": "A brother’s wife prohibition and a conditional marriage duty",
     "status": "Context",
     "summary": "Leviticus prohibits relations with a brother’s wife; Deuteronomy requires marriage in a specified widowhood case.",
-    "text": "Deuteronomy describes brothers dwelling together, one dying without a child, and a surviving brother’s duty to marry the widow to preserve the dead brother’s name. It also gives a public procedure for refusal.",
+    "text": "Deuteronomy describes brothers dwelling together, one dying without a child, and a surviving brother’s duty to marry the widow to preserve the dead brother’s name. It also gives a public procedure for refusal. Leviticus 20:21 repeats the brother’s-wife prohibition with a childlessness sanction. This differs from the prior childlessness of the deceased brother that triggers Deuteronomy’s widowhood procedure.",
     "reasoning": "The conditions support reading the widowhood duty as a limited exception to the kinship prohibition. Leviticus 18:16 does not spell out that exception, so the relationship between these laws still needs interpretation.",
     "scope": "This identifies the textual tension and a possible contextual reading. It does not prove uniform historical practice, settle later legal applications or justify the arrangement by present-day standards.",
     "refs": [
@@ -10422,6 +10434,12 @@
         "book": 4,
         "chapter": 25,
         "verse": 10
+      },
+      {
+        "label": "Leviticus 20:21",
+        "book": 2,
+        "chapter": 20,
+        "verse": 21
       }
     ],
     "sources": [
@@ -10432,6 +10450,616 @@
       {
         "label": "Deuteronomy 25 · primary scripture",
         "url": "https://ebible.org/eng-kjv/DEU25.htm"
+      },
+      {
+        "label": "Leviticus 20 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV20.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-poor-and-impartial-judgment",
+    "mode": "contradictions",
+    "ref": "Leviticus 19:9",
+    "appliesTo": [
+      "Leviticus 19:9",
+      "Leviticus 19:10",
+      "Leviticus 19:13",
+      "Leviticus 19:14",
+      "Leviticus 19:15",
+      "Leviticus 19:18",
+      "Leviticus 19:33",
+      "Leviticus 19:34",
+      "Leviticus 19:35",
+      "Leviticus 19:36"
+    ],
+    "title": "Support for the poor accompanies impartial judgment",
+    "status": "Context",
+    "summary": "Harvest provisions for poor people and residents coexist with a ban on favoring rich or poor in judgment.",
+    "text": "The chapter reserves gleanings, requires prompt wages, forbids abusing deaf or blind people, commands love for the resident stranger and requires honest measures. Its judicial rule forbids favoritism based on either poverty or power.",
+    "reasoning": "Material assistance and deciding a legal case are different activities. Requiring support for vulnerable people does not here require a judge to decide solely according to someone’s economic status.",
+    "scope": "This describes the stated duties. Actual enforcement, the social reach of resident status and broader unequal legal statuses require historical and comparative research.",
+    "refs": [
+      {
+        "label": "Leviticus 19:9",
+        "book": 2,
+        "chapter": 19,
+        "verse": 9
+      },
+      {
+        "label": "Leviticus 19:10",
+        "book": 2,
+        "chapter": 19,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 19:13",
+        "book": 2,
+        "chapter": 19,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 19:14",
+        "book": 2,
+        "chapter": 19,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 19:15",
+        "book": 2,
+        "chapter": 19,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 19:18",
+        "book": 2,
+        "chapter": 19,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 19:33",
+        "book": 2,
+        "chapter": 19,
+        "verse": 33
+      },
+      {
+        "label": "Leviticus 19:34",
+        "book": 2,
+        "chapter": 19,
+        "verse": 34
+      },
+      {
+        "label": "Leviticus 19:35",
+        "book": 2,
+        "chapter": 19,
+        "verse": 35
+      },
+      {
+        "label": "Leviticus 19:36",
+        "book": 2,
+        "chapter": 19,
+        "verse": 36
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 19 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV19.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-distinct-sanctions",
+    "mode": "history",
+    "ref": "Leviticus 20:2",
+    "appliesTo": [
+      "Leviticus 20:2",
+      "Leviticus 20:4",
+      "Leviticus 20:5",
+      "Leviticus 20:9",
+      "Leviticus 20:10",
+      "Leviticus 20:11",
+      "Leviticus 20:12",
+      "Leviticus 20:13",
+      "Leviticus 20:14",
+      "Leviticus 20:15",
+      "Leviticus 20:16",
+      "Leviticus 20:17",
+      "Leviticus 20:18",
+      "Leviticus 20:19",
+      "Leviticus 20:20",
+      "Leviticus 20:21",
+      "Leviticus 20:27"
+    ],
+    "title": "The collection prescribes several kinds of sanctions",
+    "status": "Context",
+    "summary": "Death, being cut off and childlessness are described separately rather than as one uniform penalty.",
+    "text": "The chapter prescribes death for specified offenses, including adultery and the male same-sex act it prohibits. Other kinship offenses receive language about being cut off, bearing iniquity or childlessness.",
+    "reasoning": "The wording distinguishes sanctions. The meaning and administration of being cut off cannot simply be assumed identical to every explicit execution command.",
+    "scope": "This records the ancient prescriptions without endorsing them. It does not establish actual enforcement or a biological cause of childlessness; historical interpretation and ethical evaluation remain separate tasks.",
+    "refs": [
+      {
+        "label": "Leviticus 20:2",
+        "book": 2,
+        "chapter": 20,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 20:4",
+        "book": 2,
+        "chapter": 20,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 20:5",
+        "book": 2,
+        "chapter": 20,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 20:9",
+        "book": 2,
+        "chapter": 20,
+        "verse": 9
+      },
+      {
+        "label": "Leviticus 20:10",
+        "book": 2,
+        "chapter": 20,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 20:11",
+        "book": 2,
+        "chapter": 20,
+        "verse": 11
+      },
+      {
+        "label": "Leviticus 20:12",
+        "book": 2,
+        "chapter": 20,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 20:13",
+        "book": 2,
+        "chapter": 20,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 20:14",
+        "book": 2,
+        "chapter": 20,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 20:15",
+        "book": 2,
+        "chapter": 20,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 20:16",
+        "book": 2,
+        "chapter": 20,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 20:17",
+        "book": 2,
+        "chapter": 20,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 20:18",
+        "book": 2,
+        "chapter": 20,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 20:19",
+        "book": 2,
+        "chapter": 20,
+        "verse": 19
+      },
+      {
+        "label": "Leviticus 20:20",
+        "book": 2,
+        "chapter": 20,
+        "verse": 20
+      },
+      {
+        "label": "Leviticus 20:21",
+        "book": 2,
+        "chapter": 20,
+        "verse": 21
+      },
+      {
+        "label": "Leviticus 20:27",
+        "book": 2,
+        "chapter": 20,
+        "verse": 27
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 20 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV20.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-priestly-family-mourning",
+    "mode": "contradictions",
+    "ref": "Leviticus 21:1",
+    "appliesTo": [
+      "Leviticus 21:1",
+      "Leviticus 21:2",
+      "Leviticus 21:3",
+      "Leviticus 21:5",
+      "Leviticus 21:6",
+      "Leviticus 21:10",
+      "Leviticus 21:11",
+      "Leviticus 21:12"
+    ],
+    "title": "Priests and the high priest have different rules for the dead",
+    "status": "Context",
+    "summary": "Ordinary priests have named family exceptions; the high priest’s rule excludes even parents.",
+    "text": "The opening permits a priest’s contact-related defilement for certain close relatives. The later section explicitly addresses the high priest and forbids it even for father or mother, alongside mourning and sanctuary restrictions.",
+    "reasoning": "The change in the addressed office explains why the permissions differ. Reading both sections as rules for one undifferentiated priestly role misses that distinction.",
+    "scope": "The text describes office-specific restrictions. It does not document how every burial or bereavement was handled historically or settle the human consequences of these requirements.",
+    "refs": [
+      {
+        "label": "Leviticus 21:1",
+        "book": 2,
+        "chapter": 21,
+        "verse": 1
+      },
+      {
+        "label": "Leviticus 21:2",
+        "book": 2,
+        "chapter": 21,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 21:3",
+        "book": 2,
+        "chapter": 21,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 21:5",
+        "book": 2,
+        "chapter": 21,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 21:6",
+        "book": 2,
+        "chapter": 21,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 21:10",
+        "book": 2,
+        "chapter": 21,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 21:11",
+        "book": 2,
+        "chapter": 21,
+        "verse": 11
+      },
+      {
+        "label": "Leviticus 21:12",
+        "book": 2,
+        "chapter": 21,
+        "verse": 12
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 21 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV21.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-priestly-body-and-food-access",
+    "mode": "contradictions",
+    "ref": "Leviticus 21:17",
+    "appliesTo": [
+      "Leviticus 21:17",
+      "Leviticus 21:18",
+      "Leviticus 21:19",
+      "Leviticus 21:20",
+      "Leviticus 21:21",
+      "Leviticus 21:22",
+      "Leviticus 21:23",
+      "Leviticus 22:3",
+      "Leviticus 22:4",
+      "Leviticus 22:5",
+      "Leviticus 22:6",
+      "Leviticus 22:7"
+    ],
+    "title": "Restrictions on altar service and sacred food are distinct",
+    "status": "Context",
+    "summary": "A descendant of Aaron with a listed bodily condition may eat sacred food while barred from altar service.",
+    "text": "Chapter 21 excludes those with listed bodily conditions from specified sanctuary duties but expressly permits sacred food. Chapter 22 separately prohibits eating while ritually unclean and gives conditions for resuming it.",
+    "reasoning": "Service eligibility and temporary purity status are different criteria. Permission to eat under the first rule does not cancel the second rule’s conditions.",
+    "scope": "These are restrictive ancient ritual categories, not proof that disability entails moral wrongdoing. Their origins, social effects and ethics need additional research; the record does not endorse exclusion today.",
+    "refs": [
+      {
+        "label": "Leviticus 21:17",
+        "book": 2,
+        "chapter": 21,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 21:18",
+        "book": 2,
+        "chapter": 21,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 21:19",
+        "book": 2,
+        "chapter": 21,
+        "verse": 19
+      },
+      {
+        "label": "Leviticus 21:20",
+        "book": 2,
+        "chapter": 21,
+        "verse": 20
+      },
+      {
+        "label": "Leviticus 21:21",
+        "book": 2,
+        "chapter": 21,
+        "verse": 21
+      },
+      {
+        "label": "Leviticus 21:22",
+        "book": 2,
+        "chapter": 21,
+        "verse": 22
+      },
+      {
+        "label": "Leviticus 21:23",
+        "book": 2,
+        "chapter": 21,
+        "verse": 23
+      },
+      {
+        "label": "Leviticus 22:3",
+        "book": 2,
+        "chapter": 22,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 22:4",
+        "book": 2,
+        "chapter": 22,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 22:5",
+        "book": 2,
+        "chapter": 22,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 22:6",
+        "book": 2,
+        "chapter": 22,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 22:7",
+        "book": 2,
+        "chapter": 22,
+        "verse": 7
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 21 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV21.htm"
+      },
+      {
+        "label": "Leviticus 22 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV22.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-animal-blemish-exception",
+    "mode": "contradictions",
+    "ref": "Leviticus 22:18",
+    "appliesTo": [
+      "Leviticus 22:18",
+      "Leviticus 22:19",
+      "Leviticus 22:20",
+      "Leviticus 22:21",
+      "Leviticus 22:22",
+      "Leviticus 22:23",
+      "Leviticus 22:24",
+      "Leviticus 22:25"
+    ],
+    "title": "A freewill-offering exception qualifies the animal rules",
+    "status": "Context",
+    "summary": "A stated exception for certain bodily irregularities differs between freewill offerings and vows.",
+    "text": "After general requirements for animals without blemish, verse 23 permits a bullock or lamb with a part described as superfluous or lacking for a freewill offering, but not for a vow. Other specified injuries remain prohibited.",
+    "reasoning": "The text supplies a limited exception tied to offering type. It should not be expanded into permission for every listed defect in every offering.",
+    "scope": "This compares the wording and exception. Exact anatomical terminology, textual variants and later legal classifications remain to be researched.",
+    "refs": [
+      {
+        "label": "Leviticus 22:18",
+        "book": 2,
+        "chapter": 22,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 22:19",
+        "book": 2,
+        "chapter": 22,
+        "verse": 19
+      },
+      {
+        "label": "Leviticus 22:20",
+        "book": 2,
+        "chapter": 22,
+        "verse": 20
+      },
+      {
+        "label": "Leviticus 22:21",
+        "book": 2,
+        "chapter": 22,
+        "verse": 21
+      },
+      {
+        "label": "Leviticus 22:22",
+        "book": 2,
+        "chapter": 22,
+        "verse": 22
+      },
+      {
+        "label": "Leviticus 22:23",
+        "book": 2,
+        "chapter": 22,
+        "verse": 23
+      },
+      {
+        "label": "Leviticus 22:24",
+        "book": 2,
+        "chapter": 22,
+        "verse": 24
+      },
+      {
+        "label": "Leviticus 22:25",
+        "book": 2,
+        "chapter": 22,
+        "verse": 25
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 22 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV22.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-sacrificial-meal-deadlines",
+    "mode": "contradictions",
+    "ref": "Leviticus 7:11",
+    "appliesTo": [
+      "Leviticus 7:11",
+      "Leviticus 7:15",
+      "Leviticus 7:16",
+      "Leviticus 7:17",
+      "Leviticus 7:18",
+      "Leviticus 19:5",
+      "Leviticus 19:6",
+      "Leviticus 19:7",
+      "Leviticus 19:8",
+      "Leviticus 22:29",
+      "Leviticus 22:30"
+    ],
+    "title": "Thanksgiving and vow offerings have different eating deadlines",
+    "status": "Context",
+    "summary": "Thanksgiving meat has a same-day deadline; the vow or voluntary offering rule permits the following day.",
+    "text": "Chapter 7 distinguishes thanksgiving from vow or voluntary peace offerings. Chapter 22 repeats the same-day thanksgiving rule. Chapter 19 gives a two-day peace-offering rule without naming thanksgiving there.",
+    "reasoning": "The category distinction in chapter 7 offers context for the different deadlines. The broad wording of chapter 19 still requires interpretation rather than treating every peace offering as automatically identical.",
+    "scope": "This concerns ritual timing. The passages do not supply a universal microbiological shelf-life or quantify food-safety effects, and wider legal history remains open.",
+    "refs": [
+      {
+        "label": "Leviticus 7:11",
+        "book": 2,
+        "chapter": 7,
+        "verse": 11
+      },
+      {
+        "label": "Leviticus 7:15",
+        "book": 2,
+        "chapter": 7,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 7:16",
+        "book": 2,
+        "chapter": 7,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 7:17",
+        "book": 2,
+        "chapter": 7,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 7:18",
+        "book": 2,
+        "chapter": 7,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 19:5",
+        "book": 2,
+        "chapter": 19,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 19:6",
+        "book": 2,
+        "chapter": 19,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 19:7",
+        "book": 2,
+        "chapter": 19,
+        "verse": 7
+      },
+      {
+        "label": "Leviticus 19:8",
+        "book": 2,
+        "chapter": 19,
+        "verse": 8
+      },
+      {
+        "label": "Leviticus 22:29",
+        "book": 2,
+        "chapter": 22,
+        "verse": 29
+      },
+      {
+        "label": "Leviticus 22:30",
+        "book": 2,
+        "chapter": 22,
+        "verse": 30
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 7 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV07.htm"
+      },
+      {
+        "label": "Leviticus 19 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV19.htm"
+      },
+      {
+        "label": "Leviticus 22 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV22.htm"
       }
     ],
     "checked": "2026-10-12"

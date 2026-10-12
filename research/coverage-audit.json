@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 136,
+    "evidenceRecords": 142,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 157,
-    "annotatedVerses": 1057
+    "chaptersWithAnnotations": 161,
+    "annotatedVerses": 1124
   },
   "byBook": [
     {
@@ -27,8 +27,8 @@
     {
       "book": "Leviticus",
       "chapters": 27,
-      "chaptersWithAnnotations": 19,
-      "annotatedVerses": 215
+      "chaptersWithAnnotations": 23,
+      "annotatedVerses": 282
     },
     {
       "book": "Numbers",
@@ -2132,14 +2132,20 @@
       "chapter": 7,
       "annotationIds": [
         "leviticus-offering-portions",
-        "leviticus-leaven-context"
+        "leviticus-leaven-context",
+        "leviticus-sacrificial-meal-deadlines"
       ],
       "annotatedVerses": [
         6,
         8,
+        11,
         12,
         13,
         14,
+        15,
+        16,
+        17,
+        18,
         31,
         32
       ],
@@ -2464,36 +2470,126 @@
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-poor-and-impartial-judgment",
+        "leviticus-sacrificial-meal-deadlines"
+      ],
+      "annotatedVerses": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15,
+        18,
+        33,
+        34,
+        35,
+        36
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-brothers-wife-and-levirate",
+        "leviticus-distinct-sanctions"
+      ],
+      "annotatedVerses": [
+        2,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        27
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-priestly-family-mourning",
+        "leviticus-priestly-body-and-food-access"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-restoration-and-offering",
+        "leviticus-priestly-body-and-food-access",
+        "leviticus-animal-blemish-exception",
+        "leviticus-sacrificial-meal-deadlines"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        14,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        29,
+        30
+      ],
+      "modes": [
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
