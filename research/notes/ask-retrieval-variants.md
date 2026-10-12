@@ -1,0 +1,5 @@
+# Ask retrieval word variants
+
+User reported false denial that Moses personally killed anyone. Reproduced retrieval of Moses/kill returning Numbers 31, Numbers 16, Exodus 4, John 7, Exodus 32 and Exodus 16, omitting Exodus 2. Packaged KJV uses slew and WEB uses killed. Added bounded synonym/inflection groups and chapter ranking that rewards distinct question terms rather than repeated mentions. Short pronoun follow-ups combine the last user question for retrieval. Prompt explicitly prohibits treating omitted retrieved evidence as proof an event never happened and prohibits unsupported memory answers.
+
+Regression checks cover Moses/Egyptian (Exodus 2), Cain/Abel, Goliath, follow-up context, and both Judas death accounts, plus existing global retrieval and reader checks. Retrieval remains bounded and semantic variants are not exhaustive; this fix does not guarantee every question retrieves the right passage or every generated answer is correct. No live internet search added. Bible annotation coverage unchanged at 245 chapters / 220 records / 2126 verse locations. Next research Joshua 5-6, not yet saved.
