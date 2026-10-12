@@ -2,7 +2,7 @@
 let books=[],reading=null,selectedVerses=new Set(),readingBook=Number(state.reading?.book)||0,readingChapter=Number(state.reading?.chapter)||1,loadVersion=0,readingScroll=0,lastView='explore',chatBusy=false;
 const chatMessages=[];
 const readerPreferences=state.readerPreferences||{edition:'web',compare:'none',commentary:'context'};
-if(!state.webEditionEnabled){readerPreferences.edition='web';state.webEditionEnabled=true;state.readerPreferences=readerPreferences;persist();}
+if(state.readerEditionDefault!=='web-v2'){readerPreferences.edition='web';state.readerEditionDefault='web-v2';state.readerPreferences=readerPreferences;persist();}
 if(!['none','history','contradictions','science'].includes(readerPreferences.compare))readerPreferences.compare='none';
 if(readerPreferences.commentary==='sab')readerPreferences.commentary='context';
 for(const [id,key] of [['#reader-edition','edition'],['#reader-compare','compare']]){$(id).value=readerPreferences[key];if(!$(id).value)$(id).selectedIndex=0;}
