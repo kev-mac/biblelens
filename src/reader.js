@@ -2,7 +2,7 @@
 let books=[],reading=null,selectedVerses=new Set(),readingBook=Number(state.reading?.book)||0,readingChapter=Number(state.reading?.chapter)||1,loadVersion=0,readingScroll=0,lastView='explore',chatBusy=false;
 const chatMessages=[];
 const readerPreferences=state.readerPreferences||{edition:'kjv',compare:'none',commentary:'context'};
-if(!['none','plain','history','contradictions','science'].includes(readerPreferences.compare))readerPreferences.compare='none';
+if(!['none','history','contradictions','science'].includes(readerPreferences.compare))readerPreferences.compare='none';
 if(readerPreferences.commentary==='sab')readerPreferences.commentary='context';
 for(const [id,key] of [['#reader-edition','edition'],['#reader-compare','compare'],['#commentary-select','commentary']]){$(id).value=readerPreferences[key];if(!$(id).value)$(id).selectedIndex=0;}
 function readRef(ref){const m=/^(.*?) (\d+):(\d+)/.exec(ref);const book=m&&books.find(b=>b.name===m[1]);return book?{book:book.id,chapter:+m[2],verse:+m[3]}:null;}
@@ -14,7 +14,7 @@ async function loadChapter(book,ch,verse=null,updateHash=true){const b=books[boo
 const comparisonCache=new Map();
 const comparisonSelections=new Map();
 const comparisonModes=['history','contradictions','science'];
-const comparisonLabels={plain:'Plain Language',history:'Historic',contradictions:'Contradictions',science:'Scientific'};
+const comparisonLabels={history:'Historic',contradictions:'Contradictions',science:'Scientific'};
 function comparisonKey(mode=$('#reader-compare').value){return `${readingBook}:${readingChapter}:${$('#reader-edition').value}:${mode}`;}
 function selectionKey(verse){return `${comparisonKey('tabs')}:${verse}`;}
 function verseComparisons(verse){return comparisonModes.flatMap(mode=>(comparisonCache.get(comparisonKey(mode))?.items||[]).filter(i=>i.verse===verse).map((item,index)=>({...item,mode,key:`${mode}-${index}`})));}
@@ -23,20 +23,14 @@ function scienceDetails(item){if(!item.fields?.length)return '';return `<div cla
 function comparisonCell(verse){
  const mode=$('#reader-compare').value;if(mode==='none')return '';
  const items=verseComparisons(verse);
- if(!items.length&&mode!=='plain')return '<div class="comparison-cell" aria-label="No comparison attached"></div>';
- const choices=[...items,{mode:'plain',key:'plain',status:''}];
+ if(!items.length)return '<div class="comparison-cell" aria-label="No comparison attached"></div>';
+ const choices=items;
  const selected=comparisonSelections.get(selectionKey(verse));
  const active=choices.find(i=>i.key===selected)||choices.find(i=>i.mode===mode)||choices[0];
- const tone=item=>item.mode==='plain'?'plain':item.status==='Agrees'?'agrees':item.status==='Disagrees'?'disagrees':'conflict';
+ const tone=item=>item.status==='Agrees'?'agrees':item.status==='Disagrees'?'disagrees':'conflict';
  const tabs=choices.map(item=>{const duplicate=choices.filter(i=>i.mode===item.mode).length>1;const label=`${comparisonLabels[item.mode]}${item.status?' · '+item.status:''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;return `<button type="button" class="agreement comparison-tab ${tone(item)}" id="comparison-tab-${verse}-${item.key}" role="tab" aria-selected="${item.key===active.key}" aria-controls="comparison-panel-${verse}" tabindex="${item.key===active.key?0:-1}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${comparisonLabels[item.mode][0]}</button>`}).join('');
  let content='';
- if(active.mode==='plain'){
-  const cached=plainRecord(verse);
-  const explanation=cached?.items?.find(i=>i.verse===verse)?.explanation;
-  content=explanation?`<p class="comparison-summary plain-explanation">${esc(explanation)}</p>`:cached?.status==='error'?`<p>${esc(cached.error)}</p><button type="button" class="text-button" data-retry-plain="true">Retry Plain Language</button>`:'<p class="comparison-loading" role="status">Loading plain language…</p>';
- }else{
   content=`${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(active.summary||active.text)}</p>${comparisonCitations(verse,[active])}<details class="comparison-details"><summary>Details & sources</summary><p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details>`;
- }
  return `<div class="comparison-cell"><div class="verse-comparison" data-tone="${tone(active)}"><div class="comparison-tabs" role="tablist" aria-label="Comparisons for verse ${verse}">${tabs}</div><div id="comparison-panel-${verse}" role="tabpanel" aria-labelledby="comparison-tab-${verse}-${active.key}">${content}</div></div></div>`;
 }
 function selectComparison(button){
@@ -48,7 +42,6 @@ function selectComparison(button){
 }
 document.addEventListener('click',ev=>{
  const tab=ev.target.closest('[data-comparison-key]');if(tab){selectComparison(tab);return;}
- if(ev.target.closest('[data-retry-plain]')){const verse=Number(ev.target.closest('.verse').id.replace('verse-',''));comparisonCache.delete(plainKey(verse));renderReader(true);}
 });
 document.addEventListener('keydown',ev=>{
  const tab=ev.target.closest('[role="tab"][data-comparison-key]');if(!tab||!['ArrowLeft','ArrowRight','Home','End'].includes(ev.key))return;
@@ -66,37 +59,10 @@ function comparisonStatus(){
  if(failures.length){status.innerHTML='Some comparison tags could not load. <button class="text-button" id="retry-comparison">Retry</button>';$('#retry-comparison').onclick=()=>{for(const m of comparisonModes)if(comparisonCache.get(comparisonKey(m))?.status==='error')comparisonCache.delete(comparisonKey(m));ensureComparisons();};return;}
  if(records.some(r=>!r||r.status==='loading')){status.textContent='Loading comparison tags…';return;}
  const count=records.reduce((n,r)=>n+(r.items?.length||0),0);
- status.textContent=`${count} sourced comparisons · Select a tag to switch summaries. Plain Language provides an AI explanation.`;
-}
-function plainKey(verse){return `${comparisonKey('plain')}:${verse}`;}
-function plainRecord(verse){
- const key=plainKey(verse);if(comparisonCache.has(key))return comparisonCache.get(key);
- try{const item=JSON.parse(localStorage.getItem('scripture-plain-v1:'+key));if(item?.verse===verse&&typeof item.explanation==='string'&&item.explanation.trim()){const record={status:'ready',items:[item]};comparisonCache.set(key,record);return record;}}catch{}
-}
-async function ensurePlain(verse){
- const key=plainKey(verse);if(plainRecord(verse))return;
- const book=readingBook,ch=readingChapter,edition=$('#reader-edition').value;
- comparisonCache.set(key,{status:'loading'});
- try{
-  const res=await fetch('/api/plain',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({book,chapter:ch,edition,verse}),signal:AbortSignal.timeout(65000)});
-  const data=await res.json();if(!res.ok)throw Error(data.error||'Could not load Plain Language.');
-  const item=data.items?.find(i=>i.verse===verse);if(!item?.explanation?.trim())throw Error('No explanation returned. Try again.');
-  comparisonCache.set(key,{status:'ready',items:[item]});
-  try{localStorage.setItem('scripture-plain-v1:'+key,JSON.stringify(item));}catch{}
- }catch(err){comparisonCache.set(key,{status:'error',error:err.name==='TimeoutError'?'The explanation took too long. Try again.':err.message});}
- if(reading&&book===readingBook&&ch===readingChapter&&edition===$('#reader-edition').value)renderReader(true);
+ status.textContent=`${count} sourced comparisons · Select a tag to switch summaries.`;
 }
 async function ensureComparisons(){
  if(!reading||$('#reader-compare').value==='none')return;
- const mode=$('#reader-compare').value;
- const selectedPlain=reading.verses.filter(v=>comparisonSelections.get(selectionKey(v.n))==='plain').map(v=>v.n);
- if(mode==='plain'){
-  const priority=[...selectedVerses][0]||reading.verses[0]?.n;
-  if(priority&&!comparisonSelections.has(selectionKey(priority)))selectedPlain.unshift(priority);
-  // Generate only requested verses; selecting P on another verse loads it next.
-  if(selectedPlain.length)await ensurePlain(selectedPlain[0]);
-  for(const verse of selectedPlain.slice(1))await ensurePlain(verse);
- }else{for(const verse of selectedPlain)ensurePlain(verse);}
  const edition=$('#reader-edition').value,book=readingBook,ch=readingChapter;
  const pending=comparisonModes.filter(mode=>!comparisonCache.has(comparisonKey(mode)));
  const jobs=pending.map(async mode=>{
@@ -110,7 +76,7 @@ async function ensureComparisons(){
  comparisonStatus();if(!jobs.length)return;await Promise.all(jobs);
  if(reading&&book===readingBook&&ch===readingChapter&&edition===$('#reader-edition').value)renderReader(true);
 }
-function renderReader(preserve=false){if(!reading)return;const scroll=window.scrollY;const edition=$('#reader-edition').value,mode=$('#reader-compare').value;const comparing=mode!=='none';const label={plain:'Plain Language',history:'Historic',contradictions:'Contradictions',science:'Scientific'}[mode];$('#chapter-text').classList.toggle('with-comparisons',comparing);$('#chapter-text').innerHTML=`<h2>${esc(reading.name)} ${reading.chapter}</h2><p class="chapter-subtitle">${edition==='kjv'?'King James Version':'American Standard Version (1901)'}</p>${reading.verses.map(v=>`<div class="verse ${selectedVerses.has(v.n)?'selected':''}" id="verse-${v.n}"><button class="verse-num" data-verse="${v.n}" aria-label="${selectedVerses.has(v.n)?'Deselect':'Select'} verse ${v.n}" aria-pressed="${selectedVerses.has(v.n)}">${v.n}</button><div class="verse-content-grid ${comparing?'is-comparing':''}">${verseText(v,edition)}${comparing?comparisonCell(v.n):''}</div></div>`).join('')}`;renderSidebar();updateContext();comparisonStatus();if(preserve)requestAnimationFrame(()=>window.scrollTo({top:scroll,behavior:'instant'}));ensureComparisons();}
+function renderReader(preserve=false){if(!reading)return;const scroll=window.scrollY;const edition=$('#reader-edition').value,mode=$('#reader-compare').value;const comparing=mode!=='none';const label={history:'Historic',contradictions:'Contradictions',science:'Scientific'}[mode];$('#chapter-text').classList.toggle('with-comparisons',comparing);$('#chapter-text').innerHTML=`<h2>${esc(reading.name)} ${reading.chapter}</h2><p class="chapter-subtitle">${edition==='kjv'?'King James Version':'American Standard Version (1901)'}</p>${reading.verses.map(v=>`<div class="verse ${selectedVerses.has(v.n)?'selected':''}" id="verse-${v.n}"><button class="verse-num" data-verse="${v.n}" aria-label="${selectedVerses.has(v.n)?'Deselect':'Select'} verse ${v.n}" aria-pressed="${selectedVerses.has(v.n)}">${v.n}</button><div class="verse-content-grid ${comparing?'is-comparing':''}">${verseText(v,edition)}${comparing?comparisonCell(v.n):''}</div></div>`).join('')}`;renderSidebar();updateContext();comparisonStatus();if(preserve)requestAnimationFrame(()=>window.scrollTo({top:scroll,behavior:'instant'}));ensureComparisons();}
 function renderSidebar(){if(!reading)return;const mode=$('#commentary-select').value,studies=applicableStudies();let html='';if(mode!=='none'){html+=`<div class="sidebar-heading">${mode==='context'?'Our assessment':'Other readings'}</div>`;if(!studies.length)html+='<div class="sidebar-empty">No editorial assessment for this chapter yet. Chat can examine the text using the available sources.</div>';for(const e of studies){const refs=e.refs.map(citationButton).join('');const content=mode==='context'?`<p class="comparison-summary">${esc(e.summary)}</p><details class="comparison-details"><summary>Context & assessment</summary><p>${esc(e.context)}</p><p>${esc(e.translation)}</p><p><b>Our assessment:</b> ${esc(e.assessment)}</p></details>`:`<p>${esc(e.response)}</p>${e.responseUrl?`<a href="${e.responseUrl}" target="_blank" rel="noopener">Attributed response ↗</a>`:''}<p><b>Our assessment:</b> ${esc(e.assessment)}</p>`;html+=`<article class="commentary-card"><span class="source-label">${mode==='context'?'Our analysis · provisional':e.responseUrl?'Attributed Christian response':'Possible editorial reading'}</span><h3>${esc(e.title)}</h3>${content}<div class="summary-citations">${refs}</div><button class="text-button" data-bookmark="${e.id}">${state.bookmarks.includes(e.id)?'Saved ◆':'Save study ◇'}</button></article>`;}}
 $('#reader-sidebar').innerHTML=html;$('#reader-sidebar').hidden=!html;$('#reader-layout').classList.toggle('no-sidebar',!html);$('#reader-layout').classList.toggle('has-comparison',$('#reader-compare').value!=='none');}
 function moveChapter(direction){let book=readingBook,ch=readingChapter+direction;if(ch<1&&book>0){book--;ch=books[book].chapters}else if(ch>books[book].chapters&&book<books.length-1){book++;ch=1}loadChapter(book,ch);}
