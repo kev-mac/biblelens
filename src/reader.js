@@ -65,7 +65,7 @@ function comparisonStatus(){
  const failures=records.filter(r=>r?.status==='error');
  if(failures.length){status.innerHTML='Some comparison tags could not load. <button class="text-button" id="retry-comparison">Retry</button>';$('#retry-comparison').onclick=()=>{for(const m of comparisonModes)if(comparisonCache.get(comparisonKey(m))?.status==='error')comparisonCache.delete(comparisonKey(m));ensureComparisons();};return;}
  if(records.some(r=>!r||r.status==='loading')){status.textContent='Loading comparison tags…';return;}
- const count=records.reduce((n,r)=>n+(r.items?.length||0),0);
+ const count=new Set(records.flatMap(r=>(r.items||[]).map(item=>item.id||`${item.mode||''}:${item.title||''}:${item.summary}`))).size;
  status.textContent=`${count} sourced comparisons · Select a tag to switch summaries.`;
 }
 async function ensureComparisons(){

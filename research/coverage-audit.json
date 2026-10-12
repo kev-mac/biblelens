@@ -5,24 +5,24 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 79,
+    "evidenceRecords": 84,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 98,
-    "annotatedVerses": 426
+    "chaptersWithAnnotations": 107,
+    "annotatedVerses": 492
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 4,
-      "annotatedVerses": 16
+      "chaptersWithAnnotations": 6,
+      "annotatedVerses": 19
     },
     {
       "book": "Exodus",
       "chapters": 40,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 5
+      "chaptersWithAnnotations": 9,
+      "annotatedVerses": 67
     },
     {
       "book": "Leviticus",
@@ -273,8 +273,8 @@
     {
       "book": "Acts",
       "chapters": 28,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 11
+      "chaptersWithAnnotations": 4,
+      "annotatedVerses": 12
     },
     {
       "book": "Romans",
@@ -415,11 +415,10 @@
       "bookId": 0,
       "chapter": 1,
       "annotationIds": [
-        "legacy-evidence-0",
-        "legacy-evidence-1",
-        "legacy-evidence-2",
-        "legacy-evidence-12",
-        "legacy-evidence-13",
+        "legacy-science-1",
+        "legacy-science-2",
+        "legacy-science-3",
+        "science-sky-dome",
         "genesis-1-celestial-sequence",
         "study-animals",
         "study-plants"
@@ -585,9 +584,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-divine-name"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -864,9 +869,16 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 46,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-family-counts"
+      ],
+      "annotatedVerses": [
+        26,
+        27
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -909,54 +921,155 @@
       "book": "Exodus",
       "bookId": 1,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-family-counts",
+        "exodus-women-rescue"
+      ],
+      "annotatedVerses": [
+        5,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-women-rescue"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-divine-name",
+        "exodus-labor-and-response"
+      ],
+      "annotatedVerses": [
+        13,
+        14,
+        15,
+        19,
+        20
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-signs-purpose",
+        "exodus-zipporah",
+        "exodus-labor-and-response"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        19,
+        24,
+        25,
+        26,
+        30,
+        31
+      ],
+      "modes": [
+        "science",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-labor-and-response"
+      ],
+      "annotatedVerses": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-divine-name",
+        "exodus-labor-and-response"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -4929,8 +5042,8 @@
       "bookId": 17,
       "chapter": 36,
       "annotationIds": [
-        "legacy-evidence-5",
-        "legacy-evidence-6"
+        "legacy-science-6",
+        "legacy-science-7"
       ],
       "annotatedVerses": [
         27,
@@ -5935,7 +6048,7 @@
       "bookId": 18,
       "chapter": 104,
       "annotationIds": [
-        "legacy-evidence-3"
+        "legacy-science-4"
       ],
       "annotatedVerses": [
         5
@@ -6664,7 +6777,7 @@
       "bookId": 20,
       "chapter": 1,
       "annotationIds": [
-        "legacy-evidence-4"
+        "legacy-science-5"
       ],
       "annotatedVerses": [
         7
@@ -9362,8 +9475,8 @@
       "bookId": 39,
       "chapter": 2,
       "annotationIds": [
-        "legacy-evidence-7",
-        "legacy-evidence-8"
+        "legacy-history-8",
+        "legacy-history-9"
       ],
       "annotatedVerses": [
         1,
@@ -9799,7 +9912,7 @@
       "bookId": 41,
       "chapter": 2,
       "annotationIds": [
-        "legacy-evidence-9"
+        "legacy-history-10"
       ],
       "annotatedVerses": [
         2
@@ -9814,7 +9927,7 @@
       "bookId": 41,
       "chapter": 3,
       "annotationIds": [
-        "legacy-evidence-10"
+        "legacy-history-11"
       ],
       "annotatedVerses": [
         1
@@ -10295,7 +10408,7 @@
       "bookId": 43,
       "chapter": 5,
       "annotationIds": [
-        "legacy-evidence-11"
+        "legacy-history-12"
       ],
       "annotatedVerses": [
         37
@@ -10318,9 +10431,15 @@
       "book": "Acts",
       "bookId": 43,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-family-counts"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

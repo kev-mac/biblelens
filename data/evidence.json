@@ -52,7 +52,8 @@
         "verse": 16,
         "label": "Genesis 1:16"
       }
-    ]
+    ],
+    "id": "legacy-science-1"
   },
   {
     "mode": "science",
@@ -89,7 +90,8 @@
           }
         ]
       }
-    ]
+    ],
+    "id": "legacy-science-2"
   },
   {
     "mode": "science",
@@ -116,7 +118,8 @@
           }
         ]
       }
-    ]
+    ],
+    "id": "legacy-science-3"
   },
   {
     "mode": "science",
@@ -143,7 +146,8 @@
           }
         ]
       }
-    ]
+    ],
+    "id": "legacy-science-4"
   },
   {
     "mode": "science",
@@ -170,7 +174,8 @@
           }
         ]
       }
-    ]
+    ],
+    "id": "legacy-science-5"
   },
   {
     "mode": "science",
@@ -197,7 +202,8 @@
           }
         ]
       }
-    ]
+    ],
+    "id": "legacy-science-6"
   },
   {
     "mode": "science",
@@ -224,7 +230,8 @@
           }
         ]
       }
-    ]
+    ],
+    "id": "legacy-science-7"
   },
   {
     "mode": "history",
@@ -239,7 +246,8 @@
       }
     ],
     "checked": "2026-10-11",
-    "summary": "Josephus confirms Herod ruled Judea. This supports the setting, not the birth story itself."
+    "summary": "Josephus confirms Herod ruled Judea. This supports the setting, not the birth story itself.",
+    "id": "legacy-history-8"
   },
   {
     "mode": "history",
@@ -254,7 +262,8 @@
       }
     ],
     "checked": "2026-10-11",
-    "summary": "Josephus confirms Archelaus succeeded Herod in Judea. This supports the succession, not the family’s journey."
+    "summary": "Josephus confirms Archelaus succeeded Herod in Judea. This supports the succession, not the family’s journey.",
+    "id": "legacy-history-9"
   },
   {
     "mode": "history",
@@ -273,7 +282,8 @@
       }
     ],
     "checked": "2026-10-11",
-    "summary": "Josephus places Quirinius’s census after Herod’s death. Using that census for a Herod-era birth creates a chronological conflict."
+    "summary": "Josephus places Quirinius’s census after Herod’s death. Using that census for a Herod-era birth creates a chronological conflict.",
+    "id": "legacy-history-10"
   },
   {
     "mode": "history",
@@ -288,7 +298,8 @@
       }
     ],
     "checked": "2026-10-11",
-    "summary": "Josephus records Pilate governing Judea under Tiberius. This supports those officials and the setting."
+    "summary": "Josephus records Pilate governing Judea under Tiberius. This supports those officials and the setting.",
+    "id": "legacy-history-11"
   },
   {
     "mode": "history",
@@ -303,7 +314,8 @@
       }
     ],
     "checked": "2026-10-11",
-    "summary": "Josephus also describes Judas the Galilean opposing Quirinius’s census. This supports the movement, not every detail of the verse."
+    "summary": "Josephus also describes Judas the Galilean opposing Quirinius’s census. This supports the movement, not every detail of the verse.",
+    "id": "legacy-history-12"
   },
   {
     "mode": "science",
@@ -357,61 +369,12 @@
         "label": "Genesis 1:7"
       }
     ],
-    "checked": "2026-10-11"
-  },
-  {
-    "mode": "science",
-    "ref": "Genesis 1:7",
-    "status": "Disagrees",
-    "title": "A solid sky dome?",
-    "summary": "A literal solid dome holding back an upper sea conflicts with atmospheric science. Whether “firmament” means that dome is an interpretive question.",
-    "text": "Genesis 1:6–7 describes a divider between waters below and waters above. Paul H. Seely argues that the Hebrew term refers to a solid sky; Vern S. Poythress instead reads the upper waters as rain-bearing clouds. The science comparison below evaluates the solid-dome interpretation, not every possible meaning of the verse.",
-    "fields": [
-      {
-        "branch": "Atmospheric science",
-        "text": "Earth’s atmosphere has gaseous layers that become increasingly thin toward space. A rigid roof enclosing the sky and supporting an upper ocean is incompatible with that measured structure.",
-        "sources": [
-          {
-            "label": "NASA · atmospheric layers",
-            "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
-          }
-        ]
-      },
-      {
-        "branch": "Meteorology",
-        "text": "Clouds and almost all atmospheric water vapor occur in the lower atmosphere. That differs from a cosmic ocean retained above a solid sky barrier. Water in clouds does not, by itself, conflict with science.",
-        "sources": [
-          {
-            "label": "NASA · atmospheric layers",
-            "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
-          }
-        ]
-      }
-    ],
-    "scope": "“Snowglobe Earth” is a modern analogy for the dome interpretation, not a phrase or complete model stated in this verse. Verse 6 alone does not establish a flat Earth. The physical dome model disagrees with science; the lexical and literary interpretation remains disputed. This is our conditional assessment, not a NASA judgment on scripture.",
-    "sources": [
-      {
-        "label": "NASA · atmospheric layers",
-        "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
-      },
-      {
-        "label": "Paul H. Seely · firmament interpretation (WTJ, 1991; preview)",
-        "url": "https://www.galaxie.com/article/wtj53-2-04"
-      },
-      {
-        "label": "Vern S. Poythress · alternative reading (WTJ, 2015; PDF)",
-        "url": "https://frame-poythress.org/wp-content/uploads/2015/12/2015Poythress-RainWater-WTJ77.2.pdf"
-      }
-    ],
-    "refs": [
-      {
-        "book": 0,
-        "chapter": 1,
-        "verse": 6,
-        "label": "Genesis 1:6"
-      }
-    ],
-    "checked": "2026-10-11"
+    "checked": "2026-10-11",
+    "id": "science-sky-dome",
+    "appliesTo": [
+      "Genesis 1:6",
+      "Genesis 1:7"
+    ]
   },
   {
     "id": "genesis-1-celestial-sequence",
@@ -3255,7 +3218,7 @@
       "Proverbs 26:5"
     ],
     "title": "Opposite advice in adjacent sayings",
-    "status": "Textual conflict",
+    "status": "Context",
     "summary": "One proverb says not to answer a fool; the next says to answer one.",
     "text": "Verse 4 warns that answering can make the respondent like the fool; verse 5 warns that silence leaves the fool self-satisfied.",
     "reasoning": "As unconditional rules they conflict; their differing reasons also permit advice for different circumstances.",
@@ -3496,7 +3459,7 @@
       "Lamentations 5:16"
     ],
     "title": "Inherited suffering and individual guilt",
-    "status": "Textual conflict",
+    "status": "Context",
     "summary": "Lamentations describes bearing ancestors’ wrongdoing; Ezekiel rejects inherited guilt.",
     "text": "Lamentations 5:7 describes descendants suffering from ancestors’ actions, while verse 16 also acknowledges their own sin. Ezekiel assigns guilt to the acting person.",
     "reasoning": "The wording is in tension but can distinguish inherited consequences from individual responsibility.",
@@ -3582,7 +3545,7 @@
       "Ezekiel 29:20"
     ],
     "title": "Tyre campaign: an internal qualification",
-    "status": "Textual conflict",
+    "status": "Context",
     "summary": "A later oracle says Nebuchadnezzar received no reward from his Tyre campaign.",
     "text": "Ezekiel 26 names Nebuchadnezzar and anticipates destruction and plunder. Ezekiel 29 says his army received no wages there and presents Egypt as compensation.",
     "reasoning": "The texts complicate an uncomplicated fulfillment claim. Chapter 26 changes from singular to plural agents, requiring care about who is said to fulfill each line.",
@@ -3591,10 +3554,6 @@
       {
         "label": "Primary text: Ezekiel 29 (WEB)",
         "url": "https://ebible.org/engwebp/EZK29.htm"
-      },
-      {
-        "label": "Primary text: Ezekiel 26 (WEB)",
-        "url": "https://ebible.org/engwebp/EZK26.htm"
       },
       {
         "label": "Primary text: Ezekiel 26 (WEB)",
@@ -3736,10 +3695,6 @@
     "reasoning": "The repeated comparisons support agricultural and poetic readings. The passage does not identify a modern army or a dated astronomical event.",
     "scope": "Interpretations vary over literal plague and symbolic invasion.",
     "sources": [
-      {
-        "label": "Primary text: Joel 2 (WEB)",
-        "url": "https://ebible.org/engwebp/JOL02.htm"
-      },
       {
         "label": "Primary text: Joel 2 (WEB)",
         "url": "https://ebible.org/engwebp/JOL02.htm"
@@ -4265,5 +4220,638 @@
       }
     ],
     "checked": "2026-10-11"
+  },
+  {
+    "id": "exodus-family-counts",
+    "mode": "contradictions",
+    "ref": "Exodus 1:5",
+    "appliesTo": [
+      "Exodus 1:5",
+      "Genesis 46:26",
+      "Genesis 46:27",
+      "Acts 7:14"
+    ],
+    "title": "Seventy or seventy-five family members?",
+    "status": "Context",
+    "summary": "Exodus and Genesis give a family total of seventy; Stephen’s speech in Acts gives seventy-five.",
+    "text": "Exodus 1:5 gives seventy descendants and notes Joseph was already in Egypt. Genesis 46:26–27 distinguishes sixty-six traveling descendants from a total household of seventy. Acts 7:14 gives seventy-five for the relatives Joseph summoned.",
+    "reasoning": "The totals differ in all three packaged translations. The passages do not describe their counting categories in identical terms, so the numerical difference is directly visible while its explanation needs further evidence.",
+    "scope": "This records an apparent textual discrepancy. Counting scope and textual transmission are questions for further research; these citations alone do not establish a particular reconciliation or manuscript history.",
+    "refs": [
+      {
+        "label": "Exodus 1:5",
+        "book": 1,
+        "chapter": 1,
+        "verse": 5
+      },
+      {
+        "label": "Genesis 46:26",
+        "book": 0,
+        "chapter": 46,
+        "verse": 26
+      },
+      {
+        "label": "Genesis 46:27",
+        "book": 0,
+        "chapter": 46,
+        "verse": 27
+      },
+      {
+        "label": "Acts 7:14",
+        "book": 43,
+        "chapter": 7,
+        "verse": 14
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 1 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO01.htm"
+      },
+      {
+        "label": "Genesis 46 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/GEN46.htm"
+      },
+      {
+        "label": "Acts 7 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/ACT07.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-women-rescue",
+    "mode": "history",
+    "ref": "Exodus 1:15",
+    "appliesTo": [
+      "Exodus 1:15",
+      "Exodus 1:16",
+      "Exodus 1:17",
+      "Exodus 1:18",
+      "Exodus 1:19",
+      "Exodus 1:20",
+      "Exodus 1:21",
+      "Exodus 1:22",
+      "Exodus 2:2",
+      "Exodus 2:3",
+      "Exodus 2:5",
+      "Exodus 2:6",
+      "Exodus 2:7",
+      "Exodus 2:8",
+      "Exodus 2:9",
+      "Exodus 2:10"
+    ],
+    "title": "Royal orders and the rescue of children",
+    "status": "Context",
+    "summary": "The midwives refuse Pharaoh’s order to kill boys; Pharaoh’s daughter later rescues a Hebrew child.",
+    "text": "Exodus 1:16–22 moves from an order to the midwives to a general command to drown male infants. The midwives preserve the children and are commended for fearing God. In Exodus 2:5–10, Pharaoh’s daughter recognizes a Hebrew baby, arranges nursing and adopts him.",
+    "reasoning": "The two chapters contrast royal policy with the choices of named midwives and a member of the royal household. Reading them together shows that the narrative does not portray every Egyptian as carrying out the king’s order.",
+    "scope": "This is an internal narrative comparison, not independent confirmation of an Egyptian decree, the identity of a pharaoh or the historicity of the rescue. The midwives’ explanation in 1:19 is a character’s statement, not medical evidence about childbirth.",
+    "refs": [
+      {
+        "label": "Exodus 1:15",
+        "book": 1,
+        "chapter": 1,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 1:16",
+        "book": 1,
+        "chapter": 1,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 1:17",
+        "book": 1,
+        "chapter": 1,
+        "verse": 17
+      },
+      {
+        "label": "Exodus 1:18",
+        "book": 1,
+        "chapter": 1,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 1:19",
+        "book": 1,
+        "chapter": 1,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 1:20",
+        "book": 1,
+        "chapter": 1,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 1:21",
+        "book": 1,
+        "chapter": 1,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 1:22",
+        "book": 1,
+        "chapter": 1,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 2:2",
+        "book": 1,
+        "chapter": 2,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 2:3",
+        "book": 1,
+        "chapter": 2,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 2:5",
+        "book": 1,
+        "chapter": 2,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 2:6",
+        "book": 1,
+        "chapter": 2,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 2:7",
+        "book": 1,
+        "chapter": 2,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 2:8",
+        "book": 1,
+        "chapter": 2,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 2:9",
+        "book": 1,
+        "chapter": 2,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 2:10",
+        "book": 1,
+        "chapter": 2,
+        "verse": 10
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 1 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO01.htm"
+      },
+      {
+        "label": "Exodus 2 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO02.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-divine-name",
+    "mode": "contradictions",
+    "ref": "Exodus 3:13",
+    "appliesTo": [
+      "Exodus 3:13",
+      "Exodus 3:14",
+      "Exodus 3:15",
+      "Exodus 6:2",
+      "Exodus 6:3",
+      "Genesis 15:7"
+    ],
+    "title": "When was the divine name known?",
+    "status": "Context",
+    "summary": "Exodus 6 says the patriarchs did not know God by the name Jehovah; Genesis presents that name in speech to Abram.",
+    "text": "Exodus 3:13–15 connects the name revealed to Moses with the God of the patriarchs. Exodus 6:2–3 contrasts appearing as God Almighty with being known by the name Jehovah. In Genesis 15:7, the speaker identifies himself to Abram using the name rendered Jehovah in ASV and LORD in WEB.",
+    "reasoning": "If being known means knowing the name itself, the statements are in tension. An experiential reading—coming to know the name’s significance through deliverance—changes the comparison. The English editions also render the name differently, making the ASV wording useful to compare.",
+    "scope": "This is an interpretive tension. The cited passages do not prove an experiential reconciliation or a particular theory about how the texts were composed. The packaged KJV normalizes some LORD capitalization; typography alone should not decide the issue.",
+    "refs": [
+      {
+        "label": "Exodus 3:13",
+        "book": 1,
+        "chapter": 3,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 3:14",
+        "book": 1,
+        "chapter": 3,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 3:15",
+        "book": 1,
+        "chapter": 3,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 6:2",
+        "book": 1,
+        "chapter": 6,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 6:3",
+        "book": 1,
+        "chapter": 6,
+        "verse": 3
+      },
+      {
+        "label": "Genesis 15:7",
+        "book": 0,
+        "chapter": 15,
+        "verse": 7
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 3 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO03.htm"
+      },
+      {
+        "label": "Exodus 6 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO06.htm"
+      },
+      {
+        "label": "Genesis 15 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/GEN15.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-signs-purpose",
+    "mode": "science",
+    "ref": "Exodus 4:1",
+    "appliesTo": [
+      "Exodus 4:1",
+      "Exodus 4:2",
+      "Exodus 4:3",
+      "Exodus 4:4",
+      "Exodus 4:5",
+      "Exodus 4:6",
+      "Exodus 4:7",
+      "Exodus 4:8",
+      "Exodus 4:9",
+      "Exodus 4:30",
+      "Exodus 4:31"
+    ],
+    "title": "Signs offered to establish a messenger’s authority",
+    "status": "Context",
+    "summary": "The staff, changed hand and water-to-blood signs answer Moses’s fear that people will not believe him.",
+    "text": "Exodus 4:1–9 presents extraordinary transformations as signs of divine commissioning. Verses 5 and 8–9 explicitly describe their purpose as eliciting belief. In 4:30–31, Aaron performs signs before the people and they believe.",
+    "reasoning": "The narrative itself identifies an evidentiary purpose for the signs. It does not give a repeatable procedure, physical explanation or independent observation that could be tested from this account.",
+    "scope": "Calling an event a miraculous sign does not establish its occurrence or a natural mechanism. These verses alone also do not justify a modern medical diagnosis from the translated description of the hand. This is context for the claim, not scientific confirmation or a claim that science disproves every miracle.",
+    "refs": [
+      {
+        "label": "Exodus 4:1",
+        "book": 1,
+        "chapter": 4,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 4:2",
+        "book": 1,
+        "chapter": 4,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 4:3",
+        "book": 1,
+        "chapter": 4,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 4:4",
+        "book": 1,
+        "chapter": 4,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 4:5",
+        "book": 1,
+        "chapter": 4,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 4:6",
+        "book": 1,
+        "chapter": 4,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 4:7",
+        "book": 1,
+        "chapter": 4,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 4:8",
+        "book": 1,
+        "chapter": 4,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 4:9",
+        "book": 1,
+        "chapter": 4,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 4:30",
+        "book": 1,
+        "chapter": 4,
+        "verse": 30
+      },
+      {
+        "label": "Exodus 4:31",
+        "book": 1,
+        "chapter": 4,
+        "verse": 31
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 4 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO04.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-zipporah",
+    "mode": "history",
+    "ref": "Exodus 4:19",
+    "appliesTo": [
+      "Exodus 4:19",
+      "Exodus 4:24",
+      "Exodus 4:25",
+      "Exodus 4:26"
+    ],
+    "title": "An abrupt threat during the return journey",
+    "status": "Context",
+    "summary": "After commissioning Moses, the narrative describes a lethal divine encounter ended by Zipporah’s circumcision of her son.",
+    "text": "Exodus 4:19–23 sends Moses back to Egypt and announces a confrontation with Pharaoh. The following scene, 4:24–26, says the LORD sought to kill him, then describes Zipporah circumcising her son and the threat ending.",
+    "reasoning": "The scene creates a striking interruption in the commission. The short account does not explicitly explain the offense or clearly name the referent of every pronoun. Circumcision is the action narrated immediately before release.",
+    "scope": "A link to neglected circumcision is an interpretation of the sequence, not a fully stated explanation in these verses. Do not present a guessed identity for every pronoun or a reconstructed motive as settled fact.",
+    "refs": [
+      {
+        "label": "Exodus 4:19",
+        "book": 1,
+        "chapter": 4,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 4:24",
+        "book": 1,
+        "chapter": 4,
+        "verse": 24
+      },
+      {
+        "label": "Exodus 4:25",
+        "book": 1,
+        "chapter": 4,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 4:26",
+        "book": 1,
+        "chapter": 4,
+        "verse": 26
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 4 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO04.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-labor-and-response",
+    "mode": "history",
+    "ref": "Exodus 3:19",
+    "appliesTo": [
+      "Exodus 3:19",
+      "Exodus 3:20",
+      "Exodus 4:31",
+      "Exodus 5:6",
+      "Exodus 5:7",
+      "Exodus 5:8",
+      "Exodus 5:9",
+      "Exodus 5:10",
+      "Exodus 5:11",
+      "Exodus 5:12",
+      "Exodus 5:13",
+      "Exodus 5:14",
+      "Exodus 5:15",
+      "Exodus 5:16",
+      "Exodus 5:17",
+      "Exodus 5:18",
+      "Exodus 5:19",
+      "Exodus 5:20",
+      "Exodus 5:21",
+      "Exodus 5:22",
+      "Exodus 5:23",
+      "Exodus 6:1",
+      "Exodus 6:6",
+      "Exodus 6:7",
+      "Exodus 6:8",
+      "Exodus 6:9"
+    ],
+    "title": "Belief gives way to distress under heavier labor",
+    "status": "Context",
+    "summary": "The people first believe the promise of rescue, but harsher labor leads to blame and refusal to listen.",
+    "text": "Exodus 4:31 records belief. After Pharaoh removes straw supplies while keeping brick quotas in Exodus 5, the officers blame Moses and Aaron, and Moses questions the failed rescue. Exodus 6:9 explicitly attributes the people’s refusal to listen to anguish and harsh bondage.",
+    "reasoning": "The changing response has a stated narrative cause. Exodus 3:19–20 had already anticipated Pharaoh’s resistance, so the worsening conditions are a setback within the narrative rather than a simple contradiction of a promise of immediate success.",
+    "scope": "The chapters describe coercive labor and suffering but do not independently identify the ruler, date the events or establish the scale of the workforce. A literary explanation of changed belief is not historical corroboration.",
+    "refs": [
+      {
+        "label": "Exodus 3:19",
+        "book": 1,
+        "chapter": 3,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 3:20",
+        "book": 1,
+        "chapter": 3,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 4:31",
+        "book": 1,
+        "chapter": 4,
+        "verse": 31
+      },
+      {
+        "label": "Exodus 5:6",
+        "book": 1,
+        "chapter": 5,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 5:7",
+        "book": 1,
+        "chapter": 5,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 5:8",
+        "book": 1,
+        "chapter": 5,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 5:9",
+        "book": 1,
+        "chapter": 5,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 5:10",
+        "book": 1,
+        "chapter": 5,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 5:11",
+        "book": 1,
+        "chapter": 5,
+        "verse": 11
+      },
+      {
+        "label": "Exodus 5:12",
+        "book": 1,
+        "chapter": 5,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 5:13",
+        "book": 1,
+        "chapter": 5,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 5:14",
+        "book": 1,
+        "chapter": 5,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 5:15",
+        "book": 1,
+        "chapter": 5,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 5:16",
+        "book": 1,
+        "chapter": 5,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 5:17",
+        "book": 1,
+        "chapter": 5,
+        "verse": 17
+      },
+      {
+        "label": "Exodus 5:18",
+        "book": 1,
+        "chapter": 5,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 5:19",
+        "book": 1,
+        "chapter": 5,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 5:20",
+        "book": 1,
+        "chapter": 5,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 5:21",
+        "book": 1,
+        "chapter": 5,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 5:22",
+        "book": 1,
+        "chapter": 5,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 5:23",
+        "book": 1,
+        "chapter": 5,
+        "verse": 23
+      },
+      {
+        "label": "Exodus 6:1",
+        "book": 1,
+        "chapter": 6,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 6:6",
+        "book": 1,
+        "chapter": 6,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 6:7",
+        "book": 1,
+        "chapter": 6,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 6:8",
+        "book": 1,
+        "chapter": 6,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 6:9",
+        "book": 1,
+        "chapter": 6,
+        "verse": 9
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 3 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO03.htm"
+      },
+      {
+        "label": "Exodus 4 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO04.htm"
+      },
+      {
+        "label": "Exodus 5 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO05.htm"
+      },
+      {
+        "label": "Exodus 6 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO06.htm"
+      }
+    ],
+    "checked": "2026-10-12"
   }
 ]
