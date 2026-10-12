@@ -9049,12 +9049,21 @@ const EVIDENCE=[
       "Leviticus 5:10",
       "Leviticus 5:11",
       "Leviticus 5:12",
-      "Leviticus 5:13"
+      "Leviticus 5:13",
+      "Leviticus 12:6",
+      "Leviticus 12:8",
+      "Leviticus 14:10",
+      "Leviticus 14:21",
+      "Leviticus 14:22",
+      "Leviticus 14:23",
+      "Leviticus 14:30",
+      "Leviticus 14:31",
+      "Leviticus 14:32"
     ],
     "title": "The required offering changes with what a person can afford",
     "status": "Context",
     "summary": "A person unable to afford a flock animal may bring birds, or ultimately flour.",
-    "text": "Chapter 5 gives a flock animal, two birds if that is unaffordable, and flour if the birds are also unaffordable. The flour sin offering specifically omits oil and frankincense.",
+    "text": "Chapter 5 gives a flock animal, two birds if that is unaffordable, and flour if the birds are also unaffordable. The flour sin offering specifically omits oil and frankincense. Leviticus 12 permits two birds instead of the standard childbirth offering when a lamb is unaffordable. Leviticus 14 gives a reduced cleansing offering for poverty, but still requires one lamb. These distinct allowances do not support substituting flour in every case.",
     "reasoning": "The alternatives are explicit exceptions to the standard requirement, including a non-animal offering in this case. The no-oil rule also distinguishes it from the grain offering of chapter 2.",
     "scope": "These allowances apply to the cases under discussion; they do not prove that every sacrificial obligation allowed the same substitutes or quantify ancient household wealth.",
     "refs": [
@@ -9093,12 +9102,74 @@ const EVIDENCE=[
         "book": 2,
         "chapter": 5,
         "verse": 13
+      },
+      {
+        "label": "Leviticus 12:6",
+        "book": 2,
+        "chapter": 12,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 12:8",
+        "book": 2,
+        "chapter": 12,
+        "verse": 8
+      },
+      {
+        "label": "Leviticus 14:10",
+        "book": 2,
+        "chapter": 14,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 14:21",
+        "book": 2,
+        "chapter": 14,
+        "verse": 21
+      },
+      {
+        "label": "Leviticus 14:22",
+        "book": 2,
+        "chapter": 14,
+        "verse": 22
+      },
+      {
+        "label": "Leviticus 14:23",
+        "book": 2,
+        "chapter": 14,
+        "verse": 23
+      },
+      {
+        "label": "Leviticus 14:30",
+        "book": 2,
+        "chapter": 14,
+        "verse": 30
+      },
+      {
+        "label": "Leviticus 14:31",
+        "book": 2,
+        "chapter": 14,
+        "verse": 31
+      },
+      {
+        "label": "Leviticus 14:32",
+        "book": 2,
+        "chapter": 14,
+        "verse": 32
       }
     ],
     "sources": [
       {
         "label": "Leviticus 5 · primary scripture",
         "url": "https://ebible.org/eng-kjv/LEV05.htm"
+      },
+      {
+        "label": "Leviticus 12 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV12.htm"
+      },
+      {
+        "label": "Leviticus 14 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV14.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -9334,6 +9405,653 @@ const EVIDENCE=[
       {
         "label": "Leviticus 10 · primary scripture",
         "url": "https://ebible.org/eng-kjv/LEV10.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-carcass-and-food-category",
+    "mode": "history",
+    "ref": "Leviticus 11:3",
+    "appliesTo": [
+      "Leviticus 11:3",
+      "Leviticus 11:24",
+      "Leviticus 11:25",
+      "Leviticus 11:32",
+      "Leviticus 11:33",
+      "Leviticus 11:36",
+      "Leviticus 11:37",
+      "Leviticus 11:38",
+      "Leviticus 11:39",
+      "Leviticus 11:40",
+      "Leviticus 11:44",
+      "Leviticus 11:45",
+      "Leviticus 11:47"
+    ],
+    "title": "An edible animal’s carcass can still transmit ritual uncleanness",
+    "status": "Context",
+    "summary": "Permission to eat an animal category does not make every contact with its dead body clean.",
+    "text": "The law distinguishes allowed animal categories, contact with carcasses, washing and waiting until evening. It explicitly includes carcasses of animals otherwise permitted for food and gives exceptions for water sources and dry seed.",
+    "reasoning": "Food classification and contact rules address different circumstances. The exceptions also prevent treating every contact as one identical rule.",
+    "scope": "The passage states holiness as its rationale. Historical health effects, pathogen transmission and the zoological descriptions in verses 4–23 require separate evidence.",
+    "refs": [
+      {
+        "label": "Leviticus 11:3",
+        "book": 2,
+        "chapter": 11,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 11:24",
+        "book": 2,
+        "chapter": 11,
+        "verse": 24
+      },
+      {
+        "label": "Leviticus 11:25",
+        "book": 2,
+        "chapter": 11,
+        "verse": 25
+      },
+      {
+        "label": "Leviticus 11:32",
+        "book": 2,
+        "chapter": 11,
+        "verse": 32
+      },
+      {
+        "label": "Leviticus 11:33",
+        "book": 2,
+        "chapter": 11,
+        "verse": 33
+      },
+      {
+        "label": "Leviticus 11:36",
+        "book": 2,
+        "chapter": 11,
+        "verse": 36
+      },
+      {
+        "label": "Leviticus 11:37",
+        "book": 2,
+        "chapter": 11,
+        "verse": 37
+      },
+      {
+        "label": "Leviticus 11:38",
+        "book": 2,
+        "chapter": 11,
+        "verse": 38
+      },
+      {
+        "label": "Leviticus 11:39",
+        "book": 2,
+        "chapter": 11,
+        "verse": 39
+      },
+      {
+        "label": "Leviticus 11:40",
+        "book": 2,
+        "chapter": 11,
+        "verse": 40
+      },
+      {
+        "label": "Leviticus 11:44",
+        "book": 2,
+        "chapter": 11,
+        "verse": 44
+      },
+      {
+        "label": "Leviticus 11:45",
+        "book": 2,
+        "chapter": 11,
+        "verse": 45
+      },
+      {
+        "label": "Leviticus 11:47",
+        "book": 2,
+        "chapter": 11,
+        "verse": 47
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 11 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV11.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-postpartum-periods",
+    "mode": "history",
+    "ref": "Leviticus 12:2",
+    "appliesTo": [
+      "Leviticus 12:2",
+      "Leviticus 12:3",
+      "Leviticus 12:4",
+      "Leviticus 12:5",
+      "Leviticus 12:6",
+      "Leviticus 12:7",
+      "Leviticus 12:8"
+    ],
+    "title": "The purification periods differ by the child’s sex",
+    "status": "Context",
+    "summary": "The prescribed periods total forty days after a son and eighty after a daughter.",
+    "text": "The law gives seven days followed by thirty-three after a son, and fourteen followed by sixty-six after a daughter. It specifies sanctuary restrictions and a concluding offering, with an affordability allowance.",
+    "reasoning": "Both components double in the second case. The text states the difference but provides no biological explanation for it.",
+    "scope": "This identifies an unequal ritual prescription. It cannot establish that biological recovery takes twice as long after a daughter, explain the historical rationale or settle its ethical evaluation.",
+    "refs": [
+      {
+        "label": "Leviticus 12:2",
+        "book": 2,
+        "chapter": 12,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 12:3",
+        "book": 2,
+        "chapter": 12,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 12:4",
+        "book": 2,
+        "chapter": 12,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 12:5",
+        "book": 2,
+        "chapter": 12,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 12:6",
+        "book": 2,
+        "chapter": 12,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 12:7",
+        "book": 2,
+        "chapter": 12,
+        "verse": 7
+      },
+      {
+        "label": "Leviticus 12:8",
+        "book": 2,
+        "chapter": 12,
+        "verse": 8
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 12 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV12.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-leprosy-category",
+    "mode": "science",
+    "ref": "Leviticus 13:2",
+    "appliesTo": [
+      "Leviticus 13:2",
+      "Leviticus 13:3",
+      "Leviticus 13:4",
+      "Leviticus 13:5",
+      "Leviticus 13:6",
+      "Leviticus 13:12",
+      "Leviticus 13:13",
+      "Leviticus 13:14",
+      "Leviticus 13:15",
+      "Leviticus 13:16",
+      "Leviticus 13:17",
+      "Leviticus 13:40",
+      "Leviticus 13:41",
+      "Leviticus 13:47",
+      "Leviticus 13:48",
+      "Leviticus 13:49",
+      "Leviticus 13:59",
+      "Leviticus 14:34",
+      "Leviticus 14:37",
+      "Leviticus 14:44",
+      "Leviticus 14:45",
+      "Leviticus 14:54",
+      "Leviticus 14:55",
+      "Leviticus 14:56",
+      "Leviticus 14:57"
+    ],
+    "title": "The KJV leprosy category extends beyond modern Hansen’s disease",
+    "status": "Context",
+    "summary": "The same translated category is applied to skin, fabrics and houses.",
+    "text": "Leviticus examines skin changes, including conditions declared clean, then applies leprosy language to fabric and house surfaces. Modern Hansen’s disease is a specific bacterial disease; CDC describes clinical diagnosis and confirmation using skin or nerve biopsy and staining.",
+    "reasoning": "Applying the biblical category to materials as well as people shows that it cannot simply identify one modern human disease in every occurrence. Similar English names do not establish identical diagnostic criteria.",
+    "scope": "This comparison does not diagnose any ancient individual, identify every skin condition or determine which organism affected a garment or house. Modern disease causation does not resolve all translation questions.",
+    "refs": [
+      {
+        "label": "Leviticus 13:2",
+        "book": 2,
+        "chapter": 13,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 13:3",
+        "book": 2,
+        "chapter": 13,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 13:4",
+        "book": 2,
+        "chapter": 13,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 13:5",
+        "book": 2,
+        "chapter": 13,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 13:6",
+        "book": 2,
+        "chapter": 13,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 13:12",
+        "book": 2,
+        "chapter": 13,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 13:13",
+        "book": 2,
+        "chapter": 13,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 13:14",
+        "book": 2,
+        "chapter": 13,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 13:15",
+        "book": 2,
+        "chapter": 13,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 13:16",
+        "book": 2,
+        "chapter": 13,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 13:17",
+        "book": 2,
+        "chapter": 13,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 13:40",
+        "book": 2,
+        "chapter": 13,
+        "verse": 40
+      },
+      {
+        "label": "Leviticus 13:41",
+        "book": 2,
+        "chapter": 13,
+        "verse": 41
+      },
+      {
+        "label": "Leviticus 13:47",
+        "book": 2,
+        "chapter": 13,
+        "verse": 47
+      },
+      {
+        "label": "Leviticus 13:48",
+        "book": 2,
+        "chapter": 13,
+        "verse": 48
+      },
+      {
+        "label": "Leviticus 13:49",
+        "book": 2,
+        "chapter": 13,
+        "verse": 49
+      },
+      {
+        "label": "Leviticus 13:59",
+        "book": 2,
+        "chapter": 13,
+        "verse": 59
+      },
+      {
+        "label": "Leviticus 14:34",
+        "book": 2,
+        "chapter": 14,
+        "verse": 34
+      },
+      {
+        "label": "Leviticus 14:37",
+        "book": 2,
+        "chapter": 14,
+        "verse": 37
+      },
+      {
+        "label": "Leviticus 14:44",
+        "book": 2,
+        "chapter": 14,
+        "verse": 44
+      },
+      {
+        "label": "Leviticus 14:45",
+        "book": 2,
+        "chapter": 14,
+        "verse": 45
+      },
+      {
+        "label": "Leviticus 14:54",
+        "book": 2,
+        "chapter": 14,
+        "verse": 54
+      },
+      {
+        "label": "Leviticus 14:55",
+        "book": 2,
+        "chapter": 14,
+        "verse": 55
+      },
+      {
+        "label": "Leviticus 14:56",
+        "book": 2,
+        "chapter": 14,
+        "verse": 56
+      },
+      {
+        "label": "Leviticus 14:57",
+        "book": 2,
+        "chapter": 14,
+        "verse": 57
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 13 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV13.htm"
+      },
+      {
+        "label": "Leviticus 14 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV14.htm"
+      },
+      {
+        "label": "CDC · clinical overview of Hansen’s disease",
+        "url": "https://www.cdc.gov/leprosy/hcp/clinical-overview/index.html"
+      },
+      {
+        "label": "CDC · clinical testing and diagnosis",
+        "url": "https://www.cdc.gov/leprosy/hcp/diagnosis-testing/index.html"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-cleansing-after-healing",
+    "mode": "science",
+    "ref": "Leviticus 14:2",
+    "appliesTo": [
+      "Leviticus 14:2",
+      "Leviticus 14:3",
+      "Leviticus 14:4",
+      "Leviticus 14:5",
+      "Leviticus 14:6",
+      "Leviticus 14:7",
+      "Leviticus 14:8",
+      "Leviticus 14:9",
+      "Leviticus 14:10",
+      "Leviticus 14:14",
+      "Leviticus 14:17",
+      "Leviticus 14:19",
+      "Leviticus 14:20"
+    ],
+    "title": "The cleansing ceremony follows a finding of healing",
+    "status": "Context",
+    "summary": "The priest first finds the condition healed, then begins the bird and washing ceremony.",
+    "text": "Verse 3 places healing before the instructions for birds, blood, washing, shaving and later offerings. The person’s return also occurs in stages.",
+    "reasoning": "The sequence does not present the bird ceremony as the action that first cures the skin condition. Ritual restoration and a claim of medical treatment should not be conflated.",
+    "scope": "The account does not explain what caused recovery, measure treatment efficacy or establish the health effects of each ritual action.",
+    "refs": [
+      {
+        "label": "Leviticus 14:2",
+        "book": 2,
+        "chapter": 14,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 14:3",
+        "book": 2,
+        "chapter": 14,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 14:4",
+        "book": 2,
+        "chapter": 14,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 14:5",
+        "book": 2,
+        "chapter": 14,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 14:6",
+        "book": 2,
+        "chapter": 14,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 14:7",
+        "book": 2,
+        "chapter": 14,
+        "verse": 7
+      },
+      {
+        "label": "Leviticus 14:8",
+        "book": 2,
+        "chapter": 14,
+        "verse": 8
+      },
+      {
+        "label": "Leviticus 14:9",
+        "book": 2,
+        "chapter": 14,
+        "verse": 9
+      },
+      {
+        "label": "Leviticus 14:10",
+        "book": 2,
+        "chapter": 14,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 14:14",
+        "book": 2,
+        "chapter": 14,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 14:17",
+        "book": 2,
+        "chapter": 14,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 14:19",
+        "book": 2,
+        "chapter": 14,
+        "verse": 19
+      },
+      {
+        "label": "Leviticus 14:20",
+        "book": 2,
+        "chapter": 14,
+        "verse": 20
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 14 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV14.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-discharge-purity",
+    "mode": "history",
+    "ref": "Leviticus 15:2",
+    "appliesTo": [
+      "Leviticus 15:2",
+      "Leviticus 15:5",
+      "Leviticus 15:11",
+      "Leviticus 15:12",
+      "Leviticus 15:13",
+      "Leviticus 15:14",
+      "Leviticus 15:15",
+      "Leviticus 15:16",
+      "Leviticus 15:17",
+      "Leviticus 15:18",
+      "Leviticus 15:19",
+      "Leviticus 15:24",
+      "Leviticus 15:25",
+      "Leviticus 15:28",
+      "Leviticus 15:29",
+      "Leviticus 15:30",
+      "Leviticus 15:31"
+    ],
+    "title": "Ordinary and prolonged discharges have different procedures",
+    "status": "Context",
+    "summary": "The law distinguishes temporary uncleanness after semen discharge from longer discharge-related procedures.",
+    "text": "Semen discharge and intercourse require washing and waiting until evening. Menstruation, prolonged bleeding and other discharges have different periods and, in specified cases, offerings. The concluding rationale concerns protecting the sanctuary.",
+    "reasoning": "The text assigns ritual status to several bodily conditions. It does not say that every one of these conditions is a moral offense or that every discharge has the same cause.",
+    "scope": "This is a reading of the stated categories, not a modern diagnosis or evidence that every condition is contagious. Medical identification and historical interpretation require additional research.",
+    "refs": [
+      {
+        "label": "Leviticus 15:2",
+        "book": 2,
+        "chapter": 15,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 15:5",
+        "book": 2,
+        "chapter": 15,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 15:11",
+        "book": 2,
+        "chapter": 15,
+        "verse": 11
+      },
+      {
+        "label": "Leviticus 15:12",
+        "book": 2,
+        "chapter": 15,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 15:13",
+        "book": 2,
+        "chapter": 15,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 15:14",
+        "book": 2,
+        "chapter": 15,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 15:15",
+        "book": 2,
+        "chapter": 15,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 15:16",
+        "book": 2,
+        "chapter": 15,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 15:17",
+        "book": 2,
+        "chapter": 15,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 15:18",
+        "book": 2,
+        "chapter": 15,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 15:19",
+        "book": 2,
+        "chapter": 15,
+        "verse": 19
+      },
+      {
+        "label": "Leviticus 15:24",
+        "book": 2,
+        "chapter": 15,
+        "verse": 24
+      },
+      {
+        "label": "Leviticus 15:25",
+        "book": 2,
+        "chapter": 15,
+        "verse": 25
+      },
+      {
+        "label": "Leviticus 15:28",
+        "book": 2,
+        "chapter": 15,
+        "verse": 28
+      },
+      {
+        "label": "Leviticus 15:29",
+        "book": 2,
+        "chapter": 15,
+        "verse": 29
+      },
+      {
+        "label": "Leviticus 15:30",
+        "book": 2,
+        "chapter": 15,
+        "verse": 30
+      },
+      {
+        "label": "Leviticus 15:31",
+        "book": 2,
+        "chapter": 15,
+        "verse": 31
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 15 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV15.htm"
       }
     ],
     "checked": "2026-10-12"
