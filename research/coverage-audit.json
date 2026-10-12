@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 221,
+    "evidenceRecords": 223,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 247,
-    "annotatedVerses": 2139
+    "chaptersWithAnnotations": 249,
+    "annotatedVerses": 2160
   },
   "byBook": [
     {
@@ -40,13 +40,13 @@
       "book": "Deuteronomy",
       "chapters": 34,
       "chaptersWithAnnotations": 34,
-      "annotatedVerses": 327
+      "annotatedVerses": 328
     },
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 9,
-      "annotatedVerses": 45
+      "chaptersWithAnnotations": 11,
+      "annotatedVerses": 65
     },
     {
       "book": "Judges",
@@ -4472,7 +4472,8 @@
       "chapter": 24,
       "annotationIds": [
         "coverage-nt-divorce",
-        "leviticus-leprosy-category"
+        "leviticus-leprosy-category",
+        "joshua-achan-household-responsibility"
       ],
       "annotatedVerses": [
         1,
@@ -4480,7 +4481,8 @@
         3,
         4,
         8,
-        9
+        9,
+        16
       ],
       "modes": [
         "contradictions",
@@ -4875,18 +4877,49 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "joshua-achan-household-responsibility"
+      ],
+      "annotatedVerses": [
+        1,
+        11,
+        12,
+        15,
+        20,
+        21,
+        24,
+        25,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Joshua",
       "bookId": 5,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest",
+        "joshua-ai-ambush-numbers"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        4,
+        9,
+        12,
+        13,
+        19,
+        24,
+        25,
+        26,
+        27
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

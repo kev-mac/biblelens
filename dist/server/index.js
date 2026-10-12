@@ -1035,12 +1035,17 @@ const EVIDENCE=[
       "Joshua 3:10",
       "Joshua 6:20",
       "Joshua 6:21",
-      "Joshua 6:24"
+      "Joshua 6:24",
+      "Joshua 8:2",
+      "Joshua 8:24",
+      "Joshua 8:25",
+      "Joshua 8:26",
+      "Joshua 8:27"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed. Joshua 6:21 describes destruction encompassing people of both sexes and ages and livestock; 6:24 describes burning the city with designated metals preserved for the treasury. The same account orders Rahab and her household brought out alive. These are explicitly differentiated outcomes, so the totalizing statement should be read together with the exceptions rather than quoted in isolation.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed. Joshua 6:21 describes destruction encompassing people of both sexes and ages and livestock; 6:24 describes burning the city with designated metals preserved for the treasury. The same account orders Rahab and her household brought out alive. These are explicitly differentiated outcomes, so the totalizing statement should be read together with the exceptions rather than quoted in isolation. Joshua 8:24–26 reports destruction of Ai’s inhabitants, while verses 2 and 27 explicitly permit cattle and spoil to be kept. This permission differs from Jericho’s disposal rule and is stated as an exception to treating the cities alike; it is not a claim that all campaigns used one uniform spoil policy.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed. This explicit exception qualifies an unqualified reading of destruction language; it does not by itself establish the historical extent of conquest or resolve the moral assessment of the killings.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
     "sources": [
@@ -1087,6 +1092,10 @@ const EVIDENCE=[
       {
         "label": "Joshua 3 · promised displacement",
         "url": "https://ebible.org/eng-kjv/JOS03.htm"
+      },
+      {
+        "label": "Joshua 8 · express spoil permission",
+        "url": "https://ebible.org/eng-kjv/JOS08.htm"
       }
     ],
     "refs": [
@@ -1341,6 +1350,36 @@ const EVIDENCE=[
         "book": 5,
         "chapter": 6,
         "verse": 24
+      },
+      {
+        "label": "Joshua 8:2",
+        "book": 5,
+        "chapter": 8,
+        "verse": 2
+      },
+      {
+        "label": "Joshua 8:24",
+        "book": 5,
+        "chapter": 8,
+        "verse": 24
+      },
+      {
+        "label": "Joshua 8:25",
+        "book": 5,
+        "chapter": 8,
+        "verse": 25
+      },
+      {
+        "label": "Joshua 8:26",
+        "book": 5,
+        "chapter": 8,
+        "verse": 26
+      },
+      {
+        "label": "Joshua 8:27",
+        "book": 5,
+        "chapter": 8,
+        "verse": 27
       }
     ],
     "checked": "2026-10-12"
@@ -20680,6 +20719,166 @@ const EVIDENCE=[
       {
         "label": "Leviticus 12 · eighth-day timing",
         "url": "https://ebible.org/eng-kjv/LEV12.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "joshua-achan-household-responsibility",
+    "mode": "contradictions",
+    "title": "Achan’s household and individual punishment",
+    "status": "Context",
+    "summary": "Achan’s children are included in the judgment scene, while Deuteronomy forbids executing children for a parent’s sin. The narrative does not state their individual guilt.",
+    "text": "Joshua 7 begins with one named man taking prohibited spoil but attributes a trespass to Israel and connects it to the army’s defeat. Achan confesses his own action. Verse 24 lists his sons and daughters among those brought to Achor; verse 25 first describes stoning him and then uses plural objects for burning and stoning. Deuteronomy 24:16 forbids putting children to death for fathers and assigns death to each person’s own sin.",
+    "reasoning": "Reading the plural action as extending to the listed family creates tension with the individual-punishment rule. The passage does not explicitly accuse the children of sharing Achan’s theft. Assuming their complicity supplies a fact not stated in this scene. Distinguishing exceptional divine judgment from ordinary legal proceedings is a proposed difference of scope, not an explicit explanation of each family member’s responsibility here.",
+    "scope": "The final actions do not itemize each victim, so do not claim the text separately describes every child’s execution. The household-inclusive reading is a qualified interpretation of the listed group and plural wording. The collective military consequences and the execution rule are related but not identical kinds of responsibility. No independent historical occurrence or geological mechanism is established.",
+    "sources": [
+      {
+        "label": "Joshua 7 · confession and household judgment",
+        "url": "https://ebible.org/eng-kjv/JOS07.htm"
+      },
+      {
+        "label": "Deuteronomy 24 · individual punishment rule",
+        "url": "https://ebible.org/eng-kjv/DEU24.htm"
+      }
+    ],
+    "ref": "Joshua 7:1",
+    "appliesTo": [
+      "Joshua 7:1",
+      "Joshua 7:11",
+      "Joshua 7:12",
+      "Joshua 7:15",
+      "Joshua 7:20",
+      "Joshua 7:21",
+      "Joshua 7:24",
+      "Joshua 7:25",
+      "Joshua 7:26",
+      "Deuteronomy 24:16"
+    ],
+    "refs": [
+      {
+        "label": "Joshua 7:1",
+        "book": 5,
+        "chapter": 7,
+        "verse": 1
+      },
+      {
+        "label": "Joshua 7:11",
+        "book": 5,
+        "chapter": 7,
+        "verse": 11
+      },
+      {
+        "label": "Joshua 7:12",
+        "book": 5,
+        "chapter": 7,
+        "verse": 12
+      },
+      {
+        "label": "Joshua 7:15",
+        "book": 5,
+        "chapter": 7,
+        "verse": 15
+      },
+      {
+        "label": "Joshua 7:20",
+        "book": 5,
+        "chapter": 7,
+        "verse": 20
+      },
+      {
+        "label": "Joshua 7:21",
+        "book": 5,
+        "chapter": 7,
+        "verse": 21
+      },
+      {
+        "label": "Joshua 7:24",
+        "book": 5,
+        "chapter": 7,
+        "verse": 24
+      },
+      {
+        "label": "Joshua 7:25",
+        "book": 5,
+        "chapter": 7,
+        "verse": 25
+      },
+      {
+        "label": "Joshua 7:26",
+        "book": 5,
+        "chapter": 7,
+        "verse": 26
+      },
+      {
+        "label": "Deuteronomy 24:16",
+        "book": 4,
+        "chapter": 24,
+        "verse": 16
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "joshua-ai-ambush-numbers",
+    "mode": "contradictions",
+    "title": "Thirty thousand and about five thousand in the ambush account",
+    "status": "Context",
+    "summary": "Joshua 8 describes thirty thousand sent for an ambush, then about five thousand placed west of Ai. Whether these are separate detachments is not explicit.",
+    "text": "Joshua 8:3 names thirty thousand selected fighters, followed by instructions to lie behind the city. Verse 9 locates the ambush west of Ai between Ai and Bethel. Verse 12 then reports about five thousand set in ambush between the same places, west of the city; verse 13 distinguishes the northern army from those lying west.",
+    "reasoning": "If the two descriptions count the same ambush group, the numbers differ substantially. Reading five thousand as an additional or smaller detachment may distinguish the groups, but the passage does not label it a second ambush or state that it is a subset of the thirty thousand. The later account of the ambush rising in verse 19 does not independently settle the two earlier counts.",
+    "scope": "This flags an ambiguity within the supplied KJV/WEB/ASV narrative, not a proven census discrepancy. No manuscript comparison, ancient troop count, excavation result or composition history is established by these verses alone. Do not present an inferred additional detachment as expressly stated.",
+    "sources": [
+      {
+        "label": "Joshua 8 · deployment counts and locations",
+        "url": "https://ebible.org/eng-kjv/JOS08.htm"
+      }
+    ],
+    "ref": "Joshua 8:3",
+    "appliesTo": [
+      "Joshua 8:3",
+      "Joshua 8:4",
+      "Joshua 8:9",
+      "Joshua 8:12",
+      "Joshua 8:13",
+      "Joshua 8:19"
+    ],
+    "refs": [
+      {
+        "label": "Joshua 8:3",
+        "book": 5,
+        "chapter": 8,
+        "verse": 3
+      },
+      {
+        "label": "Joshua 8:4",
+        "book": 5,
+        "chapter": 8,
+        "verse": 4
+      },
+      {
+        "label": "Joshua 8:9",
+        "book": 5,
+        "chapter": 8,
+        "verse": 9
+      },
+      {
+        "label": "Joshua 8:12",
+        "book": 5,
+        "chapter": 8,
+        "verse": 12
+      },
+      {
+        "label": "Joshua 8:13",
+        "book": 5,
+        "chapter": 8,
+        "verse": 13
+      },
+      {
+        "label": "Joshua 8:19",
+        "book": 5,
+        "chapter": 8,
+        "verse": 19
       }
     ],
     "checked": "2026-10-12"
