@@ -8,8 +8,8 @@
     "evidenceRecords": 225,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 250,
-    "annotatedVerses": 2189
+    "chaptersWithAnnotations": 251,
+    "annotatedVerses": 2208
   },
   "byBook": [
     {
@@ -45,8 +45,8 @@
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 12,
-      "annotatedVerses": 94
+      "chaptersWithAnnotations": 13,
+      "annotatedVerses": 113
     },
     {
       "book": "Judges",
@@ -4989,9 +4989,22 @@
       "bookId": 5,
       "chapter": 11,
       "annotationIds": [
-        "early-conquest"
+        "early-conquest",
+        "joshua-gibeonite-covenant"
       ],
       "annotatedVerses": [
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
         23
       ],
       "modes": [
@@ -5003,9 +5016,21 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest"
+      ],
+      "annotatedVerses": [
+        7,
+        8,
+        10,
+        12,
+        21,
+        23,
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

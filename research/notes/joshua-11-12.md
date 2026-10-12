@@ -1,0 +1,9 @@
+# Joshua 11–12 checkpoint — 2026-10-12
+
+Read all 47 packaged KJV verses and publisher chapter pages; checked Joshua 15 and Judges 1 cross-references. Extended the existing conquest finding, without creating a duplicate: long war, Gibeon exception, surviving Anakim, Hazor-specific burning versus retained spoil, and kings defeated at places where later inhabitants remain. The discrepancy is qualified: a defeated king does not prove permanent occupation or population extinction; incomplete occupation and subsequent return remain possibilities rather than demonstrated solutions. Linked Joshua 11:19 to the existing Gibeon treaty record.
+
+Counted the west-Jordan list: 31 entries agrees with 12:24; no summary of agreement added. No independent archaeological claim added. A missing destruction/burning layer alone is not a conclusion licensed by 11:13. No separate giant-science finding from narrative terminology alone. No generic notes for verses without an identified comparison.
+
+Unresolved: place identification and chronology for the northern campaign, Hazor archaeology and dating, relation of king-list organization to territorial control, chronology of Anakim removal versus Caleb passages, Hebrew battle idiom and composition. Next sequential Joshua 13–14, including remaining-land summary and Caleb chronology; inspect existing conquest and Numbers/Deuteronomy Caleb records to avoid duplication. Annotation presence does not certify exhaustive review. All user UI, conversation and Ask retrieval changes preserved. Exact audit to append after validation.
+
+Validated audit: 225 evidence records plus 6 studies; 251/1189 chapters with annotations (21.1%); 2208 unique verse locations; 938 chapters without annotations; 2276 evidence placements. All chapter endpoints/modes, reference and duplicate checks, UI and Ask checks passed.
