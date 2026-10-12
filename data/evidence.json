@@ -5889,12 +5889,16 @@
       "Numbers 3:48",
       "Numbers 3:49",
       "Numbers 3:50",
-      "Numbers 3:51"
+      "Numbers 3:51",
+      "Numbers 18:15",
+      "Numbers 18:16",
+      "Numbers 18:17",
+      "Numbers 18:18"
     ],
     "title": "Firstborn people are redeemed, not offered as animals",
     "status": "Context",
     "summary": "The firstborn dedication includes explicit redemption of human children and a separate rule for donkeys.",
-    "text": "Exodus 13:2 dedicates firstborn humans and animals. Verses 12–15 distinguish animal offerings, a donkey redeemed with a lamb or killed, and human firstborn who must be redeemed. Exodus 22:29–30 gives a general firstborn dedication command. Exodus 13:13–15 explicitly supplies human redemption, so dedication should not automatically be equated with human sacrifice. Exodus 34:19–20 repeats the distinction between firstborn dedication and redeeming sons. Numbers 3 describes Levites substituting for Israelite firstborn and a payment for the excess firstborn.",
+    "text": "Exodus 13:2 dedicates firstborn humans and animals. Verses 12–15 distinguish animal offerings, a donkey redeemed with a lamb or killed, and human firstborn who must be redeemed. Exodus 22:29–30 gives a general firstborn dedication command. Exodus 13:13–15 explicitly supplies human redemption, so dedication should not automatically be equated with human sacrifice. Exodus 34:19–20 repeats the distinction between firstborn dedication and redeeming sons. Numbers 3 describes Levites substituting for Israelite firstborn and a payment for the excess firstborn. Numbers 18 again mandates redemption of firstborn people and unclean animals, contrasting cattle, sheep and goats that are not redeemed.",
     "reasoning": "The general dedication must be read with the specific human-redemption rule. Verse 15 explicitly contrasts animal sacrifice with redeeming the speaker’s children. This is an additional substitution and redemption procedure, not an instruction to kill those firstborn.",
     "scope": "These verses establish the rule this passage gives. They do not independently reconstruct every ancient practice or settle how redemption was administered in each period.",
     "refs": [
@@ -6023,6 +6027,30 @@
         "book": 3,
         "chapter": 3,
         "verse": 51
+      },
+      {
+        "label": "Numbers 18:15",
+        "book": 3,
+        "chapter": 18,
+        "verse": 15
+      },
+      {
+        "label": "Numbers 18:16",
+        "book": 3,
+        "chapter": 18,
+        "verse": 16
+      },
+      {
+        "label": "Numbers 18:17",
+        "book": 3,
+        "chapter": 18,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 18:18",
+        "book": 3,
+        "chapter": 18,
+        "verse": 18
       }
     ],
     "sources": [
@@ -6041,6 +6069,10 @@
       {
         "label": "Numbers 3 · primary text",
         "url": "https://ebible.org/eng-kjv/NUM03.htm"
+      },
+      {
+        "label": "Numbers 18 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM18.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -13841,11 +13873,23 @@
       "Numbers 16:40",
       "Numbers 16:46",
       "Numbers 16:47",
-      "Numbers 16:48"
+      "Numbers 16:48",
+      "Numbers 17:3",
+      "Numbers 17:5",
+      "Numbers 17:8",
+      "Numbers 17:9",
+      "Numbers 17:10",
+      "Numbers 18:1",
+      "Numbers 18:2",
+      "Numbers 18:3",
+      "Numbers 18:4",
+      "Numbers 18:5",
+      "Numbers 18:6",
+      "Numbers 18:7"
     ],
     "status": "Context",
     "summary": "The dispute turns on who may approach and offer incense, not simply whether the community is called holy.",
-    "text": "Korah’s appeal to everyone’s holiness confronts a distinction between Levite work and priesthood. Unauthorized incense offerers die; Aaron later uses incense for atonement.",
+    "text": "Korah’s appeal to everyone’s holiness confronts a distinction between Levite work and priesthood. Unauthorized incense offerers die; Aaron later uses incense for atonement. The blossoming rod in Numbers 17 is presented as a sign of Aaron’s selection; Numbers 18 restates differentiated responsibilities and access restrictions.",
     "reasoning": "Contrasting outcomes follow different authorization within the story. The censers remain sacred despite the offerers’ condemnation.",
     "scope": "This explains the narrative’s authority claim; it does not establish divine selection, historical enforcement or a medical effect of incense.",
     "refs": [
@@ -13926,12 +13970,92 @@
         "book": 3,
         "chapter": 16,
         "verse": 48
+      },
+      {
+        "label": "Numbers 17:3",
+        "book": 3,
+        "chapter": 17,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 17:5",
+        "book": 3,
+        "chapter": 17,
+        "verse": 5
+      },
+      {
+        "label": "Numbers 17:8",
+        "book": 3,
+        "chapter": 17,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 17:9",
+        "book": 3,
+        "chapter": 17,
+        "verse": 9
+      },
+      {
+        "label": "Numbers 17:10",
+        "book": 3,
+        "chapter": 17,
+        "verse": 10
+      },
+      {
+        "label": "Numbers 18:1",
+        "book": 3,
+        "chapter": 18,
+        "verse": 1
+      },
+      {
+        "label": "Numbers 18:2",
+        "book": 3,
+        "chapter": 18,
+        "verse": 2
+      },
+      {
+        "label": "Numbers 18:3",
+        "book": 3,
+        "chapter": 18,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 18:4",
+        "book": 3,
+        "chapter": 18,
+        "verse": 4
+      },
+      {
+        "label": "Numbers 18:5",
+        "book": 3,
+        "chapter": 18,
+        "verse": 5
+      },
+      {
+        "label": "Numbers 18:6",
+        "book": 3,
+        "chapter": 18,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 18:7",
+        "book": 3,
+        "chapter": 18,
+        "verse": 7
       }
     ],
     "sources": [
       {
         "label": "Numbers 16 · primary text",
         "url": "https://ebible.org/eng-kjv/NUM16.htm"
+      },
+      {
+        "label": "Numbers 17 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM17.htm"
+      },
+      {
+        "label": "Numbers 18 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM18.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -14024,6 +14148,321 @@
       {
         "label": "Numbers 16 · primary text",
         "url": "https://ebible.org/eng-kjv/NUM16.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-levite-income-and-contribution",
+    "mode": "history",
+    "title": "Levite support includes an onward contribution to the priests",
+    "ref": "Numbers 18:20",
+    "appliesTo": [
+      "Numbers 18:20",
+      "Numbers 18:21",
+      "Numbers 18:23",
+      "Numbers 18:24",
+      "Numbers 18:26",
+      "Numbers 18:27",
+      "Numbers 18:28",
+      "Numbers 18:29",
+      "Numbers 18:30",
+      "Numbers 18:31",
+      "Numbers 18:32"
+    ],
+    "status": "Context",
+    "summary": "Tithes support Levite service, and a tenth of that tithe is assigned onward to Aaron.",
+    "text": "The chapter contrasts a land inheritance with support through tithes. Levites must give a portion of what they receive before their households consume the remainder.",
+    "reasoning": "Describing this simply as all tithes belonging directly to priests erases the separate recipients and onward obligation.",
+    "scope": "This is a prescribed arrangement, not proof of collection or distribution in a particular historical period. Other tithe legislation and land-holding rules require comparison.",
+    "refs": [
+      {
+        "label": "Numbers 18:20",
+        "book": 3,
+        "chapter": 18,
+        "verse": 20
+      },
+      {
+        "label": "Numbers 18:21",
+        "book": 3,
+        "chapter": 18,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 18:23",
+        "book": 3,
+        "chapter": 18,
+        "verse": 23
+      },
+      {
+        "label": "Numbers 18:24",
+        "book": 3,
+        "chapter": 18,
+        "verse": 24
+      },
+      {
+        "label": "Numbers 18:26",
+        "book": 3,
+        "chapter": 18,
+        "verse": 26
+      },
+      {
+        "label": "Numbers 18:27",
+        "book": 3,
+        "chapter": 18,
+        "verse": 27
+      },
+      {
+        "label": "Numbers 18:28",
+        "book": 3,
+        "chapter": 18,
+        "verse": 28
+      },
+      {
+        "label": "Numbers 18:29",
+        "book": 3,
+        "chapter": 18,
+        "verse": 29
+      },
+      {
+        "label": "Numbers 18:30",
+        "book": 3,
+        "chapter": 18,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 18:31",
+        "book": 3,
+        "chapter": 18,
+        "verse": 31
+      },
+      {
+        "label": "Numbers 18:32",
+        "book": 3,
+        "chapter": 18,
+        "verse": 32
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 18 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM18.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-purification-and-handler-impurity",
+    "mode": "contradictions",
+    "title": "Purification provision also imposes impurity on its handlers",
+    "ref": "Numbers 19:7",
+    "appliesTo": [
+      "Numbers 19:7",
+      "Numbers 19:8",
+      "Numbers 19:9",
+      "Numbers 19:10",
+      "Numbers 19:11",
+      "Numbers 19:12",
+      "Numbers 19:13",
+      "Numbers 19:14",
+      "Numbers 19:16",
+      "Numbers 19:17",
+      "Numbers 19:18",
+      "Numbers 19:19",
+      "Numbers 19:20",
+      "Numbers 19:21",
+      "Numbers 19:22"
+    ],
+    "status": "Context",
+    "summary": "The ash-water procedure restores corpse-related purity while some preparation and contact duties incur impurity until evening.",
+    "text": "The priest, burner and ash collector have washing and evening restrictions. The corpse-contaminated person follows a third- and seventh-day process; contact with the purification water also has a stated restriction.",
+    "reasoning": "The rules differentiate roles and durations. Calling the preparation purifying does not mean every person handling it immediately becomes ritually clean.",
+    "scope": "Ritual purity should not be equated with a measured infection state. These instructions alone do not demonstrate disinfectant efficacy, disease transmission or historical practice.",
+    "refs": [
+      {
+        "label": "Numbers 19:7",
+        "book": 3,
+        "chapter": 19,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 19:8",
+        "book": 3,
+        "chapter": 19,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 19:9",
+        "book": 3,
+        "chapter": 19,
+        "verse": 9
+      },
+      {
+        "label": "Numbers 19:10",
+        "book": 3,
+        "chapter": 19,
+        "verse": 10
+      },
+      {
+        "label": "Numbers 19:11",
+        "book": 3,
+        "chapter": 19,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 19:12",
+        "book": 3,
+        "chapter": 19,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 19:13",
+        "book": 3,
+        "chapter": 19,
+        "verse": 13
+      },
+      {
+        "label": "Numbers 19:14",
+        "book": 3,
+        "chapter": 19,
+        "verse": 14
+      },
+      {
+        "label": "Numbers 19:16",
+        "book": 3,
+        "chapter": 19,
+        "verse": 16
+      },
+      {
+        "label": "Numbers 19:17",
+        "book": 3,
+        "chapter": 19,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 19:18",
+        "book": 3,
+        "chapter": 19,
+        "verse": 18
+      },
+      {
+        "label": "Numbers 19:19",
+        "book": 3,
+        "chapter": 19,
+        "verse": 19
+      },
+      {
+        "label": "Numbers 19:20",
+        "book": 3,
+        "chapter": 19,
+        "verse": 20
+      },
+      {
+        "label": "Numbers 19:21",
+        "book": 3,
+        "chapter": 19,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 19:22",
+        "book": 3,
+        "chapter": 19,
+        "verse": 22
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 19 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM19.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-rock-instructions-differ",
+    "mode": "contradictions",
+    "title": "Striking the rock is commanded in one scene and replaced by speaking in another",
+    "ref": "Numbers 20:7",
+    "appliesTo": [
+      "Numbers 20:7",
+      "Numbers 20:8",
+      "Numbers 20:9",
+      "Numbers 20:10",
+      "Numbers 20:11",
+      "Numbers 20:12",
+      "Numbers 20:13",
+      "Numbers 20:24",
+      "Exodus 17:6"
+    ],
+    "status": "Context",
+    "summary": "Exodus commands striking; Numbers commands speaking but narrates two strikes and a rebuke.",
+    "text": "In Exodus 17:6 Moses is told to strike the rock. Numbers 20 instructs him to speak, records striking twice, and excludes Moses and Aaron from bringing the people into the land for failing to trust and sanctify God.",
+    "reasoning": "The actions and instructions belong to distinct scenes. An earlier command to strike is not an instruction for the later scene. The rebuke describes the failure more broadly than the physical action alone.",
+    "scope": "The precise offense, relationship of the traditions, water source and historicity remain open; neither text supplies a verified hydrological explanation.",
+    "refs": [
+      {
+        "label": "Numbers 20:7",
+        "book": 3,
+        "chapter": 20,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 20:8",
+        "book": 3,
+        "chapter": 20,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 20:9",
+        "book": 3,
+        "chapter": 20,
+        "verse": 9
+      },
+      {
+        "label": "Numbers 20:10",
+        "book": 3,
+        "chapter": 20,
+        "verse": 10
+      },
+      {
+        "label": "Numbers 20:11",
+        "book": 3,
+        "chapter": 20,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 20:12",
+        "book": 3,
+        "chapter": 20,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 20:13",
+        "book": 3,
+        "chapter": 20,
+        "verse": 13
+      },
+      {
+        "label": "Numbers 20:24",
+        "book": 3,
+        "chapter": 20,
+        "verse": 24
+      },
+      {
+        "label": "Exodus 17:6",
+        "book": 1,
+        "chapter": 17,
+        "verse": 6
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 20 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM20.htm"
+      },
+      {
+        "label": "Exodus 17 · primary text",
+        "url": "https://ebible.org/eng-kjv/EXO17.htm"
       }
     ],
     "checked": "2026-10-12"
