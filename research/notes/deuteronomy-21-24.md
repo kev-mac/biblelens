@@ -1,0 +1,15 @@
+# Deuteronomy 21–24 checkpoint — 2026-10-12
+
+Read all 100 packaged KJV verses and opened the four primary eBible chapter pages. Compared Isaiah 56:3–5 and Matthew 19:7–9 and checked WHO's 2018 interagency statement on eliminating virginity testing. Inspected existing servitude, disease-category, captive and divorce records before editing.
+
+Added three sourced assessments: captive marriage's stated release protections within coercive wartime circumstances; legal cloth evidence versus modern limits on diagnosing sexual history; and Deuteronomy's bodily exclusion alongside Isaiah's positive promise to covenant-keeping eunuchs. Expanded the existing servitude record with escaped-servant protection, the disease-category record with Miriam's recollection, and the divorce comparison with Deuteronomy 24 and Matthew's explicit concession explanation.
+
+Medical source checked: https://www.who.int/publications/i/item/WHO-RHR-18.15. The statement says hymen appearance is not a reliable indication of intercourse and no known examination proves a history of vaginal intercourse. It is not a study of the ancient cloth procedure, and the annotation explicitly preserves that limitation. No particular ancient woman's history is inferred.
+
+Limits: protection against resale does not supply an unstated consent requirement; escaped-servant protection is not automatically a universal abolition rule. Congregation eligibility and Isaiah's promised honor may concern different categories or envisioned conditions. Matthew supplies a theological interpretation of Mosaic divorce; this does not establish identical scope for every divorce rule. The comparison is literary evidence, not independent verification of institutional practice.
+
+Build and checks passed: 1,189 chapters, all comparison modes, 2,036 evidence placements, valid reference bounds and no duplicate IDs. Audit: 208 evidence records, six studies; 226 chapters with annotations, 1,979 distinct verse locations and 963 chapters without annotations. Cross-linked Isaiah increases the chapter count without certifying exhaustive review there or elsewhere.
+
+Unresolved: unidentified-homicide ritual and legal comparison; double firstborn inheritance and patriarchal exceptions; rebellious-son penalty and its reception; hanging/burial and later scriptural interpretation; garment categories, seed/animal mixtures, bird protection and roof parapets; city/field sexual-offense assumptions, evidentiary standards and the unbetrothed case's Hebrew wording; Ammonite/Moabite exclusions and Ruth; camp sanitation evidence versus holiness rationale; interest categories; livelihood-related pledges and prompt wage payment; personal execution liability versus intergenerational punishment passages; gleaning provision. No generic annotations were used to imply completion of these topics.
+
+Next sequential batch: Deuteronomy 25–28. Read full chapters and inspect existing levirate, Amalek, offering/confession, covenant-curse and disease/violence assessments before researching new findings. Preserve KJV default, WEB/ASV, appearance and blank unannotated verses.

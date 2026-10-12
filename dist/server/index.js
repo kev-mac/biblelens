@@ -644,12 +644,14 @@ const EVIDENCE=[
       "Deuteronomy 15:15",
       "Deuteronomy 15:16",
       "Deuteronomy 15:17",
-      "Deuteronomy 15:18"
+      "Deuteronomy 15:18",
+      "Deuteronomy 23:15",
+      "Deuteronomy 23:16"
     ],
     "title": "Different legal treatment of servants and slaves",
     "status": "Context",
     "summary": "The laws distinguish servants by origin and family status, preserve ownership claims, and specify some release conditions.",
-    "text": "Leviticus distinguishes impoverished Israelites from foreign slaves inherited as property. It provides redemption and Jubilee release for an Israelite sold to a resident stranger. Exodus also preserves ownership claims over families and specifies injury-related release. Deuteronomy 15 explicitly includes Hebrew women in six-year service release, requires departure provisions and describes remaining permanently through an ear-piercing procedure. These protections remain within its specified servant category.",
+    "text": "Leviticus distinguishes impoverished Israelites from foreign slaves inherited as property. It provides redemption and Jubilee release for an Israelite sold to a resident stranger. Exodus also preserves ownership claims over families and specifies injury-related release. Deuteronomy 15 explicitly includes Hebrew women in six-year service release, requires departure provisions and describes remaining permanently through an ear-piercing procedure. These protections remain within its specified servant category. Deuteronomy 23 prohibits returning an escaped servant to the master and allows chosen residence without oppression. Its scope, including whether cross-border escape is implied, is not specified here; the protection should neither be ignored nor treated as an explicit universal abolition law.",
     "reasoning": "The broad Jubilee proclamation must be read alongside the explicit foreign-slavery provision. Israelite redemption protections do not establish equivalent release for everyone.",
     "scope": "These unequal legal categories do not establish how consistently the laws were practiced. The scope of the broad liberty proclamation merits further study.",
     "sources": [
@@ -664,6 +666,10 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 15 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU15.htm"
+      },
+      {
+        "label": "Deuteronomy 23 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU23.htm"
       }
     ],
     "refs": [
@@ -888,6 +894,18 @@ const EVIDENCE=[
         "book": 4,
         "chapter": 15,
         "verse": 18
+      },
+      {
+        "label": "Deuteronomy 23:15",
+        "book": 4,
+        "chapter": 23,
+        "verse": 15
+      },
+      {
+        "label": "Deuteronomy 23:16",
+        "book": 4,
+        "chapter": 23,
+        "verse": 16
       }
     ],
     "checked": "2026-10-12"
@@ -1991,11 +2009,17 @@ const EVIDENCE=[
       "1 Corinthians 7:12",
       "1 Corinthians 7:13",
       "1 Corinthians 7:14",
-      "1 Corinthians 7:15"
+      "1 Corinthians 7:15",
+      "Deuteronomy 24:1",
+      "Deuteronomy 24:2",
+      "Deuteronomy 24:3",
+      "Deuteronomy 24:4",
+      "Matthew 19:7",
+      "Matthew 19:8"
     ],
     "title": "Different qualifications to divorce teaching",
     "summary": "The passages share a restrictive view of divorce but state different qualifications.",
-    "text": "Mark gives an unqualified divorce-and-remarriage prohibition. Matthew includes an exception for sexual misconduct. Paul addresses a departing unbelieving spouse.",
+    "text": "Mark gives an unqualified divorce-and-remarriage prohibition. Matthew includes an exception for sexual misconduct. Paul addresses a departing unbelieving spouse. Deuteronomy 24 describes divorce, a subsequent marriage and a ban on return to the first husband after that marriage ends. Matthew 19:7–8 explicitly discusses Mosaic divorce as a concession rather than the creation ideal. This is an offered interpretation of differing rules, not proof that every divorce statement has identical scope.",
     "reasoning": "The texts discuss related but not identical situations; treating one sentence as the entire New Testament rule loses relevant qualifications.",
     "scope": "This is a comparison of textual rules, not advice about remaining in an unsafe relationship or a determination of modern legal rights.",
     "sources": [
@@ -2010,6 +2034,14 @@ const EVIDENCE=[
       {
         "label": "1 Corinthians 7 (primary text)",
         "url": "https://ebible.org/kjv/1CO07.htm"
+      },
+      {
+        "label": "Deuteronomy 24 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU24.htm"
+      },
+      {
+        "label": "Matthew 19 · Mosaic concession discussion",
+        "url": "https://ebible.org/eng-kjv/MAT19.htm"
       }
     ],
     "refs": [
@@ -2072,9 +2104,45 @@ const EVIDENCE=[
         "chapter": 7,
         "verse": 15,
         "label": "1 Corinthians 7:15"
+      },
+      {
+        "label": "Deuteronomy 24:1",
+        "book": 4,
+        "chapter": 24,
+        "verse": 1
+      },
+      {
+        "label": "Deuteronomy 24:2",
+        "book": 4,
+        "chapter": 24,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 24:3",
+        "book": 4,
+        "chapter": 24,
+        "verse": 3
+      },
+      {
+        "label": "Deuteronomy 24:4",
+        "book": 4,
+        "chapter": 24,
+        "verse": 4
+      },
+      {
+        "label": "Matthew 19:7",
+        "book": 39,
+        "chapter": 19,
+        "verse": 7
+      },
+      {
+        "label": "Matthew 19:8",
+        "book": 39,
+        "chapter": 19,
+        "verse": 8
       }
     ],
-    "checked": "2026-10-11"
+    "checked": "2026-10-12"
   },
   {
     "id": "coverage-nt-spirit-timing",
@@ -10645,12 +10713,14 @@ const EVIDENCE=[
       "Numbers 12:12",
       "Numbers 12:13",
       "Numbers 12:14",
-      "Numbers 12:15"
+      "Numbers 12:15",
+      "Deuteronomy 24:8",
+      "Deuteronomy 24:9"
     ],
     "title": "The KJV leprosy category extends beyond modern Hansen’s disease",
     "status": "Context",
     "summary": "The same translated category is applied to skin, fabrics and houses.",
-    "text": "Leviticus examines skin changes, including conditions declared clean, then applies leprosy language to fabric and house surfaces. Modern Hansen’s disease is a specific bacterial disease; CDC describes clinical diagnosis and confirmation using skin or nerve biopsy and staining. Numbers 12 describes Miriam’s sudden skin change and seven-day exclusion; these narrative features alone do not establish a modern Hansen’s disease diagnosis.",
+    "text": "Leviticus examines skin changes, including conditions declared clean, then applies leprosy language to fabric and house surfaces. Modern Hansen’s disease is a specific bacterial disease; CDC describes clinical diagnosis and confirmation using skin or nerve biopsy and staining. Numbers 12 describes Miriam’s sudden skin change and seven-day exclusion; these narrative features alone do not establish a modern Hansen’s disease diagnosis. Deuteronomy 24 directs observance of priestly instructions and recalls Miriam’s punishment, without adding diagnostic evidence sufficient to identify a modern disease.",
     "reasoning": "Applying the biblical category to materials as well as people shows that it cannot simply identify one modern human disease in every occurrence. Similar English names do not establish identical diagnostic criteria.",
     "scope": "This comparison does not diagnose any ancient individual, identify every skin condition or determine which organism affected a garment or house. Modern disease causation does not resolve all translation questions.",
     "refs": [
@@ -10833,6 +10903,18 @@ const EVIDENCE=[
         "book": 3,
         "chapter": 12,
         "verse": 15
+      },
+      {
+        "label": "Deuteronomy 24:8",
+        "book": 4,
+        "chapter": 24,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 24:9",
+        "book": 4,
+        "chapter": 24,
+        "verse": 9
       }
     ],
     "sources": [
@@ -10855,6 +10937,10 @@ const EVIDENCE=[
       {
         "label": "Numbers 12 · primary text",
         "url": "https://ebible.org/eng-kjv/NUM12.htm"
+      },
+      {
+        "label": "Deuteronomy 24 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU24.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -18849,6 +18935,206 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 20 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU20.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-captive-marriage",
+    "mode": "history",
+    "title": "Captive marriage has release protections within a coercive setting",
+    "ref": "Deuteronomy 21:10",
+    "appliesTo": [
+      "Deuteronomy 21:10",
+      "Deuteronomy 21:11",
+      "Deuteronomy 21:12",
+      "Deuteronomy 21:13",
+      "Deuteronomy 21:14"
+    ],
+    "status": "Context",
+    "summary": "The law allows a captor to marry a captive woman after a mourning period and forbids selling her if he later rejects her.",
+    "text": "It specifies a month for mourning and subsequent release rather than resale. It does not state a requirement that she freely agree to the initial marriage.",
+    "reasoning": "The release restriction is a real textual protection, but it should not be treated as evidence of equal bargaining power or explicit consent in wartime captivity.",
+    "scope": "This describes a prescribed arrangement, not verified practice or an endorsement. The exact translation of the preparation actions remains a separate question.",
+    "refs": [
+      {
+        "label": "Deuteronomy 21:10",
+        "book": 4,
+        "chapter": 21,
+        "verse": 10
+      },
+      {
+        "label": "Deuteronomy 21:11",
+        "book": 4,
+        "chapter": 21,
+        "verse": 11
+      },
+      {
+        "label": "Deuteronomy 21:12",
+        "book": 4,
+        "chapter": 21,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 21:13",
+        "book": 4,
+        "chapter": 21,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 21:14",
+        "book": 4,
+        "chapter": 21,
+        "verse": 14
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 21 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU21.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-virginity-evidence",
+    "mode": "science",
+    "title": "Claimed virginity evidence is not a validated medical diagnosis",
+    "ref": "Deuteronomy 22:13",
+    "appliesTo": [
+      "Deuteronomy 22:13",
+      "Deuteronomy 22:14",
+      "Deuteronomy 22:15",
+      "Deuteronomy 22:16",
+      "Deuteronomy 22:17",
+      "Deuteronomy 22:18",
+      "Deuteronomy 22:19",
+      "Deuteronomy 22:20",
+      "Deuteronomy 22:21"
+    ],
+    "status": "Context",
+    "summary": "The law presents cloth as evidence in a disputed accusation and prescribes severe outcomes.",
+    "text": "WHO’s interagency statement says hymen appearance cannot reliably indicate intercourse and no known examination proves a history of vaginal intercourse. The biblical passage supplies no validation of its evidence as a diagnostic test.",
+    "reasoning": "A legal designation of evidence is not scientific proof of sexual history. The modern medical findings challenge using bodily signs to certify virginity, rather than determining whether a particular ancient accusation was true.",
+    "scope": "The exact meaning and handling of the cloth remain interpretive questions. WHO discusses genital examination, not a study of this ancient legal procedure.",
+    "refs": [
+      {
+        "label": "Deuteronomy 22:13",
+        "book": 4,
+        "chapter": 22,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 22:14",
+        "book": 4,
+        "chapter": 22,
+        "verse": 14
+      },
+      {
+        "label": "Deuteronomy 22:15",
+        "book": 4,
+        "chapter": 22,
+        "verse": 15
+      },
+      {
+        "label": "Deuteronomy 22:16",
+        "book": 4,
+        "chapter": 22,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 22:17",
+        "book": 4,
+        "chapter": 22,
+        "verse": 17
+      },
+      {
+        "label": "Deuteronomy 22:18",
+        "book": 4,
+        "chapter": 22,
+        "verse": 18
+      },
+      {
+        "label": "Deuteronomy 22:19",
+        "book": 4,
+        "chapter": 22,
+        "verse": 19
+      },
+      {
+        "label": "Deuteronomy 22:20",
+        "book": 4,
+        "chapter": 22,
+        "verse": 20
+      },
+      {
+        "label": "Deuteronomy 22:21",
+        "book": 4,
+        "chapter": 22,
+        "verse": 21
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 22 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU22.htm"
+      },
+      {
+        "label": "WHO · Eliminating virginity testing, interagency statement (2018)",
+        "url": "https://www.who.int/publications/i/item/WHO-RHR-18.15"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-eunuch-exclusion-and-isaiah",
+    "mode": "contradictions",
+    "title": "An exclusion rule and Isaiah’s promise to eunuchs differ in emphasis",
+    "ref": "Deuteronomy 23:1",
+    "appliesTo": [
+      "Deuteronomy 23:1",
+      "Isaiah 56:3",
+      "Isaiah 56:4",
+      "Isaiah 56:5"
+    ],
+    "status": "Context",
+    "summary": "Deuteronomy excludes men with specified genital injuries from the congregation; Isaiah promises covenant-keeping eunuchs an enduring place and name.",
+    "text": "Isaiah 56:3–5 rejects the eunuch’s fear of being a fruitless tree and promises honor within God’s house and walls.",
+    "reasoning": "Read as an unchanged blanket denial of religious belonging, the exclusion conflicts with the positive promise. A distinction between formal assembly eligibility and promised divine honor, or a change in envisioned circumstances, may explain the difference.",
+    "scope": "The scope of congregation and the relation between these texts require interpretation. They do not alone establish a complete historical membership policy.",
+    "refs": [
+      {
+        "label": "Deuteronomy 23:1",
+        "book": 4,
+        "chapter": 23,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 56:3",
+        "book": 22,
+        "chapter": 56,
+        "verse": 3
+      },
+      {
+        "label": "Isaiah 56:4",
+        "book": 22,
+        "chapter": 56,
+        "verse": 4
+      },
+      {
+        "label": "Isaiah 56:5",
+        "book": 22,
+        "chapter": 56,
+        "verse": 5
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 23 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU23.htm"
+      },
+      {
+        "label": "Isaiah 56 · eunuchs and covenant belonging",
+        "url": "https://ebible.org/eng-kjv/ISA56.htm"
       }
     ],
     "checked": "2026-10-12"

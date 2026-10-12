@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 205,
+    "evidenceRecords": 208,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 221,
-    "annotatedVerses": 1951
+    "chaptersWithAnnotations": 226,
+    "annotatedVerses": 1979
   },
   "byBook": [
     {
@@ -39,8 +39,8 @@
     {
       "book": "Deuteronomy",
       "chapters": 34,
-      "chaptersWithAnnotations": 21,
-      "annotatedVerses": 214
+      "chaptersWithAnnotations": 25,
+      "annotatedVerses": 237
     },
     {
       "book": "Joshua",
@@ -147,8 +147,8 @@
     {
       "book": "Isaiah",
       "chapters": 66,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 8
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 11
     },
     {
       "book": "Jeremiah",
@@ -250,7 +250,7 @@
       "book": "Matthew",
       "chapters": 28,
       "chaptersWithAnnotations": 4,
-      "annotatedVerses": 14
+      "annotatedVerses": 16
     },
     {
       "book": "Mark",
@@ -4387,36 +4387,83 @@
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-captive-marriage"
+      ],
+      "annotatedVerses": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-virginity-evidence"
+      ],
+      "annotatedVerses": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "modes": [
+        "science"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-servitude",
+        "deuteronomy-eunuch-exclusion-and-isaiah"
+      ],
+      "annotatedVerses": [
+        1,
+        15,
+        16
+      ],
+      "modes": [
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "coverage-nt-divorce",
+        "leviticus-leprosy-category"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "modes": [
+        "contradictions",
+        "science"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9735,9 +9782,17 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 56,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-eunuch-exclusion-and-isaiah"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11886,6 +11941,8 @@
         "coverage-nt-divorce"
       ],
       "annotatedVerses": [
+        7,
+        8,
         9
       ],
       "modes": [
