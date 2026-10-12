@@ -157,3 +157,7 @@ body.dark{--bg:#000;--panel:#000}
 .chat-details{margin-top:14px}.chat-details>summary{cursor:pointer;color:var(--green);font-size:13px}.chat-details .message-body{margin-top:12px}
 .chat-sources{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;padding-top:12px}
 .chat-sources .verse-citation{display:inline-flex;align-items:center;font-size:11px;line-height:1.4;padding:6px 8px;max-width:100%;text-decoration:none}
+
+/* Keep mouse focus quiet while preserving a visible keyboard focus cue. */
+#chat-input:focus,#chat-input:focus-visible{outline:none;box-shadow:none}
+body.keyboard-navigation #chat-input:focus{outline:3px solid var(--rust);outline-offset:3px}
