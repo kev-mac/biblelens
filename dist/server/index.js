@@ -1040,12 +1040,25 @@ const EVIDENCE=[
       "Joshua 8:24",
       "Joshua 8:25",
       "Joshua 8:26",
-      "Joshua 8:27"
+      "Joshua 8:27",
+      "Joshua 10:1",
+      "Joshua 10:6",
+      "Joshua 10:7",
+      "Joshua 10:19",
+      "Joshua 10:20",
+      "Joshua 10:28",
+      "Joshua 10:30",
+      "Joshua 10:32",
+      "Joshua 10:35",
+      "Joshua 10:37",
+      "Joshua 10:39",
+      "Joshua 10:41",
+      "Joshua 10:42"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed. Joshua 6:21 describes destruction encompassing people of both sexes and ages and livestock; 6:24 describes burning the city with designated metals preserved for the treasury. The same account orders Rahab and her household brought out alive. These are explicitly differentiated outcomes, so the totalizing statement should be read together with the exceptions rather than quoted in isolation. Joshua 8:24–26 reports destruction of Ai’s inhabitants, while verses 2 and 27 explicitly permit cattle and spoil to be kept. This permission differs from Jericho’s disposal rule and is stated as an exception to treating the cities alike; it is not a claim that all campaigns used one uniform spoil policy.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed. Joshua 6:21 describes destruction encompassing people of both sexes and ages and livestock; 6:24 describes burning the city with designated metals preserved for the treasury. The same account orders Rahab and her household brought out alive. These are explicitly differentiated outcomes, so the totalizing statement should be read together with the exceptions rather than quoted in isolation. Joshua 8:24–26 reports destruction of Ai’s inhabitants, while verses 2 and 27 explicitly permit cattle and spoil to be kept. This permission differs from Jericho’s disposal rule and is stated as an exception to treating the cities alike; it is not a claim that all campaigns used one uniform spoil policy. Joshua 10:20 explicitly mentions survivors entering fortified cities after a totalizing battle description. Verses 1 and 6–7 also retain Gibeon as a protected ally. The southern-city destruction reports in 28–40 should therefore be assessed with their stated targets and these exceptions, rather than expanded into an exhaustive population census.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed. This explicit exception qualifies an unqualified reading of destruction language; it does not by itself establish the historical extent of conquest or resolve the moral assessment of the killings.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
     "sources": [
@@ -1380,6 +1393,84 @@ const EVIDENCE=[
         "book": 5,
         "chapter": 8,
         "verse": 27
+      },
+      {
+        "label": "Joshua 10:1",
+        "book": 5,
+        "chapter": 10,
+        "verse": 1
+      },
+      {
+        "label": "Joshua 10:6",
+        "book": 5,
+        "chapter": 10,
+        "verse": 6
+      },
+      {
+        "label": "Joshua 10:7",
+        "book": 5,
+        "chapter": 10,
+        "verse": 7
+      },
+      {
+        "label": "Joshua 10:19",
+        "book": 5,
+        "chapter": 10,
+        "verse": 19
+      },
+      {
+        "label": "Joshua 10:20",
+        "book": 5,
+        "chapter": 10,
+        "verse": 20
+      },
+      {
+        "label": "Joshua 10:28",
+        "book": 5,
+        "chapter": 10,
+        "verse": 28
+      },
+      {
+        "label": "Joshua 10:30",
+        "book": 5,
+        "chapter": 10,
+        "verse": 30
+      },
+      {
+        "label": "Joshua 10:32",
+        "book": 5,
+        "chapter": 10,
+        "verse": 32
+      },
+      {
+        "label": "Joshua 10:35",
+        "book": 5,
+        "chapter": 10,
+        "verse": 35
+      },
+      {
+        "label": "Joshua 10:37",
+        "book": 5,
+        "chapter": 10,
+        "verse": 37
+      },
+      {
+        "label": "Joshua 10:39",
+        "book": 5,
+        "chapter": 10,
+        "verse": 39
+      },
+      {
+        "label": "Joshua 10:41",
+        "book": 5,
+        "chapter": 10,
+        "verse": 41
+      },
+      {
+        "label": "Joshua 10:42",
+        "book": 5,
+        "chapter": 10,
+        "verse": 42
       }
     ],
     "checked": "2026-10-12"
@@ -20879,6 +20970,209 @@ const EVIDENCE=[
         "book": 5,
         "chapter": 8,
         "verse": 19
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "joshua-gibeonite-covenant",
+    "mode": "contradictions",
+    "ref": "Joshua 9:6",
+    "appliesTo": [
+      "Joshua 9:6",
+      "Joshua 9:7",
+      "Joshua 9:14",
+      "Joshua 9:15",
+      "Joshua 9:16",
+      "Joshua 9:18",
+      "Joshua 9:19",
+      "Joshua 9:20",
+      "Joshua 9:21",
+      "Joshua 9:23",
+      "Joshua 9:24",
+      "Joshua 9:26",
+      "Joshua 9:27",
+      "Deuteronomy 7:1",
+      "Deuteronomy 7:2",
+      "Deuteronomy 20:15",
+      "Deuteronomy 20:16",
+      "Deuteronomy 20:17"
+    ],
+    "title": "A forbidden covenant and a binding oath",
+    "status": "Context",
+    "summary": "The local Gibeonites receive an oath of protection despite the ban on covenants with their people. Joshua explains the deception and the decision to honor the oath.",
+    "text": "Joshua 9 identifies the visitors as Hivites. They claim distant origins; Israel makes peace without seeking divine counsel, then discovers they are neighbors. Leaders preserve their lives because of the sworn oath and assign compulsory service. Deuteronomy 7 forbids covenants with named local peoples; Deuteronomy 20 distinguishes distant cities from those peoples.",
+    "reasoning": "The account acknowledges the local-versus-distant distinction. It reports a prohibited agreement followed by concern about breaking an oath, rather than issuing two opposite covenant commands. The survival exception also qualifies an unqualified claim that every local inhabitant was killed.",
+    "scope": "A tension between prescribed policy and narrated conduct, not proof the laws contradict themselves. Deception and the oath explain the narrative decision; they do not independently establish legal validity, historical occurrence, or the justice of compulsory service.",
+    "sources": [
+      {
+        "label": "Joshua 9: treaty and discovery",
+        "url": "https://ebible.org/eng-kjv/JOS09.htm"
+      },
+      {
+        "label": "Deuteronomy 7: local covenant ban",
+        "url": "https://ebible.org/eng-kjv/DEU07.htm"
+      },
+      {
+        "label": "Deuteronomy 20: distant and local cities",
+        "url": "https://ebible.org/eng-kjv/DEU20.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Joshua 9:6",
+        "book": 5,
+        "chapter": 9,
+        "verse": 6
+      },
+      {
+        "label": "Joshua 9:7",
+        "book": 5,
+        "chapter": 9,
+        "verse": 7
+      },
+      {
+        "label": "Joshua 9:14",
+        "book": 5,
+        "chapter": 9,
+        "verse": 14
+      },
+      {
+        "label": "Joshua 9:15",
+        "book": 5,
+        "chapter": 9,
+        "verse": 15
+      },
+      {
+        "label": "Joshua 9:16",
+        "book": 5,
+        "chapter": 9,
+        "verse": 16
+      },
+      {
+        "label": "Joshua 9:18",
+        "book": 5,
+        "chapter": 9,
+        "verse": 18
+      },
+      {
+        "label": "Joshua 9:19",
+        "book": 5,
+        "chapter": 9,
+        "verse": 19
+      },
+      {
+        "label": "Joshua 9:20",
+        "book": 5,
+        "chapter": 9,
+        "verse": 20
+      },
+      {
+        "label": "Joshua 9:21",
+        "book": 5,
+        "chapter": 9,
+        "verse": 21
+      },
+      {
+        "label": "Joshua 9:23",
+        "book": 5,
+        "chapter": 9,
+        "verse": 23
+      },
+      {
+        "label": "Joshua 9:24",
+        "book": 5,
+        "chapter": 9,
+        "verse": 24
+      },
+      {
+        "label": "Joshua 9:26",
+        "book": 5,
+        "chapter": 9,
+        "verse": 26
+      },
+      {
+        "label": "Joshua 9:27",
+        "book": 5,
+        "chapter": 9,
+        "verse": 27
+      },
+      {
+        "label": "Deuteronomy 7:1",
+        "book": 4,
+        "chapter": 7,
+        "verse": 1
+      },
+      {
+        "label": "Deuteronomy 7:2",
+        "book": 4,
+        "chapter": 7,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 20:15",
+        "book": 4,
+        "chapter": 20,
+        "verse": 15
+      },
+      {
+        "label": "Deuteronomy 20:16",
+        "book": 4,
+        "chapter": 20,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 20:17",
+        "book": 4,
+        "chapter": 20,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "joshua-prolonged-daylight",
+    "mode": "science",
+    "ref": "Joshua 10:12",
+    "appliesTo": [
+      "Joshua 10:12",
+      "Joshua 10:13",
+      "Joshua 10:14"
+    ],
+    "title": "A day with delayed sunset",
+    "status": "Disagrees",
+    "summary": "A literal extra day before sunset departs from ordinary Earth rotation. The account gives no physical mechanism; reading the battle language as poetry changes what is being assessed.",
+    "text": "Joshua addresses the Sun and Moon, and the account describes a delayed sunset of about a day while attributing the victory to divine action. NASA describes Earth rotating approximately once every 23.9 hours while orbiting the Sun.",
+    "reasoning": "Ordinary apparent daily solar motion is associated with Earth rotation; merely describing the Sun as moving is not the discrepancy. The issue is a literal extension of daylight beyond that cycle, which is not explained by ordinary rotation. The passage cites Jasher and contains elevated battle language, making interpretation relevant.",
+    "scope": "This conditional comparison does not show Earth stopped rotating, calculate physical consequences, identify a historical date, or disprove supernatural intervention. NASA supplies the ordinary physical model, not a reconstruction of this battle. A figurative reading does not assert the same physical event.",
+    "sources": [
+      {
+        "label": "Joshua 10: Sun, Moon and delayed sunset",
+        "url": "https://ebible.org/eng-kjv/JOS10.htm"
+      },
+      {
+        "label": "NASA: Earth orbit and rotation",
+        "url": "https://science.nasa.gov/earth/facts/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Joshua 10:12",
+        "book": 5,
+        "chapter": 10,
+        "verse": 12
+      },
+      {
+        "label": "Joshua 10:13",
+        "book": 5,
+        "chapter": 10,
+        "verse": 13
+      },
+      {
+        "label": "Joshua 10:14",
+        "book": 5,
+        "chapter": 10,
+        "verse": 14
       }
     ],
     "checked": "2026-10-12"

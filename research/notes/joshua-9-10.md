@@ -1,0 +1,9 @@
+# Joshua 9–10 checkpoint — 2026-10-12
+
+Read all 70 packaged KJV verses and publisher chapter pages. Checked Deuteronomy 7 and 20 and NASA Earth orbit/rotation. Added qualified Gibeonite treaty comparison: the narrative acknowledges deception, lack of counsel, discovery, and oath-based protection; this is policy versus conduct rather than opposite commands. Added conditional physical assessment of literal prolonged daylight, explicitly avoiding a claim the text specifies Earth stopping or that science disproves a miracle. Expanded existing conquest record with explicit battlefield survivors and protected Gibeon, avoiding duplicate conquest notes.
+
+Unresolved: Hebrew stand/be silent terminology and genre, relation of Jasher quotation to prose narration, manuscript/compositional analysis, the early Gilgal return at 10:15 versus the later continuation/10:43, treaty legal scope, independent dating/archaeology of the campaigns, and quantitative physical proposals for prolonged daylight. These need further sources; no unsupported naturalistic explanation or historical reconstruction added. Higher-reasoning review candidates: genre and the limits of classifying a miracle account as a scientific discrepancy; oath legality under deception.
+
+Next sequential Joshua 11–12: inspect existing conquest record and any king-list duplicates; do not add agreement or generic chapter summaries. Annotation presence is not exhaustive review. Preserve the latest Ask text-versus-inference correction and all UI preferences. Exact audit totals to be appended after validation.
+
+Validated audit: 225 evidence records plus 6 studies; 250/1189 chapters with annotations (21.0%), 2189 unique verse locations, 939 chapters without annotations; 2256 evidence placements. All endpoint/mode, bounds, duplicate, UI and Ask checks passed.

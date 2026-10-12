@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 223,
+    "evidenceRecords": 225,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 249,
-    "annotatedVerses": 2160
+    "chaptersWithAnnotations": 250,
+    "annotatedVerses": 2189
   },
   "byBook": [
     {
@@ -45,8 +45,8 @@
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 11,
-      "annotatedVerses": 65
+      "chaptersWithAnnotations": 12,
+      "annotatedVerses": 94
     },
     {
       "book": "Judges",
@@ -4024,7 +4024,8 @@
       "chapter": 7,
       "annotationIds": [
         "early-conquest",
-        "deuteronomy-health-blessing-condition"
+        "deuteronomy-health-blessing-condition",
+        "joshua-gibeonite-covenant"
       ],
       "annotatedVerses": [
         1,
@@ -4386,7 +4387,8 @@
       "chapter": 20,
       "annotationIds": [
         "early-conquest",
-        "deuteronomy-distant-city-submission"
+        "deuteronomy-distant-city-submission",
+        "joshua-gibeonite-covenant"
       ],
       "annotatedVerses": [
         10,
@@ -4926,9 +4928,27 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "joshua-gibeonite-covenant"
+      ],
+      "annotatedVerses": [
+        6,
+        7,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        26,
+        27
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -4936,13 +4956,31 @@
       "bookId": 5,
       "chapter": 10,
       "annotationIds": [
-        "early-conquest"
+        "early-conquest",
+        "joshua-prolonged-daylight"
       ],
       "annotatedVerses": [
-        40
+        1,
+        6,
+        7,
+        12,
+        13,
+        14,
+        19,
+        20,
+        28,
+        30,
+        32,
+        35,
+        37,
+        39,
+        40,
+        41,
+        42
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "science"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
