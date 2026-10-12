@@ -4856,6 +4856,713 @@ const EVIDENCE=[
       }
     ],
     "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-hardening-agency",
+    "mode": "contradictions",
+    "ref": "Exodus 7:3",
+    "appliesTo": [
+      "Exodus 7:3",
+      "Exodus 7:4",
+      "Exodus 8:15",
+      "Exodus 8:32",
+      "Exodus 9:12",
+      "Exodus 9:34",
+      "Exodus 9:35",
+      "Exodus 10:1",
+      "Exodus 10:2",
+      "Exodus 10:3",
+      "Exodus 10:20",
+      "Exodus 10:27",
+      "Exodus 11:9",
+      "Exodus 11:10"
+    ],
+    "title": "Who hardens Pharaoh’s heart?",
+    "status": "Context",
+    "summary": "The narrative attributes Pharaoh’s resistance both to Pharaoh himself and to God.",
+    "text": "Exodus 7:3 announces divine hardening. Exodus 8:15 and 8:32 explicitly say Pharaoh hardens his own heart; 9:12 attributes hardening to the LORD, while 9:34 again names Pharaoh and his servants. Exodus 10:1–3 places divine hardening beside a demand that Pharaoh humble himself.",
+    "reasoning": "These are different assignments of agency within the same narrative. They are not automatically mutually exclusive, but they raise a question about how responsibility and divine intervention are related.",
+    "scope": "The verses do not supply a complete theory of free will. A claim that God only hardens an already resistant ruler must also account for the advance announcement; a claim that Pharaoh has no agency must account for passages assigning action and blame to him.",
+    "refs": [
+      {
+        "label": "Exodus 7:3",
+        "book": 1,
+        "chapter": 7,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 7:4",
+        "book": 1,
+        "chapter": 7,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 8:15",
+        "book": 1,
+        "chapter": 8,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 8:32",
+        "book": 1,
+        "chapter": 8,
+        "verse": 32
+      },
+      {
+        "label": "Exodus 9:12",
+        "book": 1,
+        "chapter": 9,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 9:34",
+        "book": 1,
+        "chapter": 9,
+        "verse": 34
+      },
+      {
+        "label": "Exodus 9:35",
+        "book": 1,
+        "chapter": 9,
+        "verse": 35
+      },
+      {
+        "label": "Exodus 10:1",
+        "book": 1,
+        "chapter": 10,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 10:2",
+        "book": 1,
+        "chapter": 10,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 10:3",
+        "book": 1,
+        "chapter": 10,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 10:20",
+        "book": 1,
+        "chapter": 10,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 10:27",
+        "book": 1,
+        "chapter": 10,
+        "verse": 27
+      },
+      {
+        "label": "Exodus 11:9",
+        "book": 1,
+        "chapter": 11,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 11:10",
+        "book": 1,
+        "chapter": 11,
+        "verse": 10
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 7 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO07.htm"
+      },
+      {
+        "label": "Exodus 8 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO08.htm"
+      },
+      {
+        "label": "Exodus 9 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO09.htm"
+      },
+      {
+        "label": "Exodus 10 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO10.htm"
+      },
+      {
+        "label": "Exodus 11 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO11.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-magicians-limits",
+    "mode": "history",
+    "ref": "Exodus 7:9",
+    "appliesTo": [
+      "Exodus 7:9",
+      "Exodus 7:10",
+      "Exodus 7:11",
+      "Exodus 7:12",
+      "Exodus 7:22",
+      "Exodus 8:7",
+      "Exodus 8:18",
+      "Exodus 8:19",
+      "Exodus 9:11"
+    ],
+    "title": "Imitation gives way to inability",
+    "status": "Context",
+    "summary": "Egyptian magicians imitate early signs but later fail and become afflicted themselves.",
+    "text": "Exodus 7:11–12 and 7:22 attribute similar signs to Pharaoh’s magicians, and 8:7 says they bring up frogs. In 8:18–19 they fail to reproduce the next sign and acknowledge divine power. In 9:11 boils prevent them from standing before Moses.",
+    "reasoning": "The account changes the magicians’ role from rival performers to witnesses of their limits. It does not treat every supernatural-looking action as unique to Moses and Aaron.",
+    "scope": "This identifies a literary progression. The text does not explain the magicians’ methods, prove a modern stage-illusion reconstruction, or independently verify supernatural powers.",
+    "refs": [
+      {
+        "label": "Exodus 7:9",
+        "book": 1,
+        "chapter": 7,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 7:10",
+        "book": 1,
+        "chapter": 7,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 7:11",
+        "book": 1,
+        "chapter": 7,
+        "verse": 11
+      },
+      {
+        "label": "Exodus 7:12",
+        "book": 1,
+        "chapter": 7,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 7:22",
+        "book": 1,
+        "chapter": 7,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 8:7",
+        "book": 1,
+        "chapter": 8,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 8:18",
+        "book": 1,
+        "chapter": 8,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 8:19",
+        "book": 1,
+        "chapter": 8,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 9:11",
+        "book": 1,
+        "chapter": 9,
+        "verse": 11
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 7 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO07.htm"
+      },
+      {
+        "label": "Exodus 8 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO08.htm"
+      },
+      {
+        "label": "Exodus 9 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO09.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-livestock-scope",
+    "mode": "contradictions",
+    "ref": "Exodus 9:3",
+    "appliesTo": [
+      "Exodus 9:3",
+      "Exodus 9:6",
+      "Exodus 9:9",
+      "Exodus 9:10",
+      "Exodus 9:19",
+      "Exodus 9:20",
+      "Exodus 9:21",
+      "Exodus 9:25",
+      "Exodus 11:5",
+      "Exodus 12:29"
+    ],
+    "title": "Livestock after “all” have died",
+    "status": "Context",
+    "summary": "After saying all Egyptian livestock died, Exodus describes livestock threatened by later plagues.",
+    "text": "Exodus 9:6 describes all Egyptian livestock dying. Yet 9:19–21 tells Egyptians to shelter livestock before the hail, and 11:5 and 12:29 refer to firstborn animals. The earlier warning in 9:3 specifically names livestock in the field.",
+    "reasoning": "An unrestricted reading of all creates a continuity problem. Reading it within the field-livestock scope of 9:3 offers a possible explanation, because the hail warning explicitly distinguishes sheltered and exposed animals.",
+    "scope": "The narrative does not explicitly list survivors of the earlier plague or say that replacement animals were purchased. The field qualification is present in the text; a replenishment story would require additional evidence.",
+    "refs": [
+      {
+        "label": "Exodus 9:3",
+        "book": 1,
+        "chapter": 9,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 9:6",
+        "book": 1,
+        "chapter": 9,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 9:9",
+        "book": 1,
+        "chapter": 9,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 9:10",
+        "book": 1,
+        "chapter": 9,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 9:19",
+        "book": 1,
+        "chapter": 9,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 9:20",
+        "book": 1,
+        "chapter": 9,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 9:21",
+        "book": 1,
+        "chapter": 9,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 9:25",
+        "book": 1,
+        "chapter": 9,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 11:5",
+        "book": 1,
+        "chapter": 11,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 12:29",
+        "book": 1,
+        "chapter": 12,
+        "verse": 29
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 9 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO09.htm"
+      },
+      {
+        "label": "Exodus 11 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO11.htm"
+      },
+      {
+        "label": "Exodus 12 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO12.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-crops-surviving-hail",
+    "mode": "contradictions",
+    "ref": "Exodus 9:25",
+    "appliesTo": [
+      "Exodus 9:25",
+      "Exodus 9:31",
+      "Exodus 9:32",
+      "Exodus 10:5",
+      "Exodus 10:12",
+      "Exodus 10:15"
+    ],
+    "title": "What remained for the locusts?",
+    "status": "Context",
+    "summary": "The broad description of hail damage is qualified by a later statement that some crops survived.",
+    "text": "Exodus 9:25 describes hail striking every field plant and breaking every tree. Verses 31–32 distinguish damaged flax and barley from wheat and the other later crop, which were not struck. Exodus 10:5, 10:12 and 10:15 explicitly describe locusts eating what the hail left.",
+    "reasoning": "The nearby crop-specific qualification matters when assessing the sweeping wording. Reading the summary as absolute destruction of all vegetation ignores an exception stated within the same chapter.",
+    "scope": "This resolves one apparent narrative tension through explicit context. It does not independently confirm the agricultural season, identify every ancient crop term, or verify the plague as a historical event.",
+    "refs": [
+      {
+        "label": "Exodus 9:25",
+        "book": 1,
+        "chapter": 9,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 9:31",
+        "book": 1,
+        "chapter": 9,
+        "verse": 31
+      },
+      {
+        "label": "Exodus 9:32",
+        "book": 1,
+        "chapter": 9,
+        "verse": 32
+      },
+      {
+        "label": "Exodus 10:5",
+        "book": 1,
+        "chapter": 10,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 10:12",
+        "book": 1,
+        "chapter": 10,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 10:15",
+        "book": 1,
+        "chapter": 10,
+        "verse": 15
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 9 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO09.htm"
+      },
+      {
+        "label": "Exodus 10 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO10.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-locust-wind",
+    "mode": "science",
+    "ref": "Exodus 10:13",
+    "appliesTo": [
+      "Exodus 10:13",
+      "Exodus 10:14",
+      "Exodus 10:19"
+    ],
+    "title": "Wind and locust migration",
+    "status": "Agrees",
+    "summary": "Wind-driven locust movement fits observed swarm behavior; it does not verify this particular plague.",
+    "text": "Exodus 10:13 attributes the arrival of locusts to an east wind; 10:19 describes their removal by a strong west wind. FAO explains that desert locusts generally travel with the wind and can migrate long distances.",
+    "reasoning": "Wind-assisted migration is an independently documented biological behavior. This supports that limited feature of the description, rather than the entire sequence of events.",
+    "scope": "FAO’s observations do not identify the species in this ancient account, date the event, verify its unprecedented scale or confirm divine timing and the complete removal of every locust.",
+    "refs": [
+      {
+        "label": "Exodus 10:13",
+        "book": 1,
+        "chapter": 10,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 10:14",
+        "book": 1,
+        "chapter": 10,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 10:19",
+        "book": 1,
+        "chapter": 10,
+        "verse": 19
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 10 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO10.htm"
+      },
+      {
+        "label": "FAO · Desert Locust movement and behavior",
+        "url": "https://www.fao.org/locusts/faqs/en/"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-last-audience",
+    "mode": "contradictions",
+    "ref": "Exodus 10:28",
+    "appliesTo": [
+      "Exodus 10:28",
+      "Exodus 10:29",
+      "Exodus 11:4",
+      "Exodus 11:5",
+      "Exodus 11:6",
+      "Exodus 11:7",
+      "Exodus 11:8",
+      "Exodus 12:31",
+      "Exodus 12:32"
+    ],
+    "title": "Would Moses see Pharaoh again?",
+    "status": "Context",
+    "summary": "Moses says he will not see Pharaoh again, yet the narrative continues with a warning and a later summons.",
+    "text": "Exodus 10:28–29 ends with Pharaoh banning another audience and Moses agreeing. Exodus 11:4–8 gives the firstborn warning and ends with Moses leaving Pharaoh. Exodus 12:31 reports that Pharaoh called for Moses and Aaron during the night.",
+    "reasoning": "The warning in chapter 11 can be read as a continuation of the same audience, because departure is narrated only at 11:8. The later summons raises a further question, but 12:31 does not describe the mechanics of delivering the message.",
+    "scope": "Chapter divisions alone do not establish a new encounter. Neither a direct final meeting nor an exclusively messenger-delivered summons is fully described here. Do not present one reconstruction as established by these verses.",
+    "refs": [
+      {
+        "label": "Exodus 10:28",
+        "book": 1,
+        "chapter": 10,
+        "verse": 28
+      },
+      {
+        "label": "Exodus 10:29",
+        "book": 1,
+        "chapter": 10,
+        "verse": 29
+      },
+      {
+        "label": "Exodus 11:4",
+        "book": 1,
+        "chapter": 11,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 11:5",
+        "book": 1,
+        "chapter": 11,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 11:6",
+        "book": 1,
+        "chapter": 11,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 11:7",
+        "book": 1,
+        "chapter": 11,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 11:8",
+        "book": 1,
+        "chapter": 11,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 12:31",
+        "book": 1,
+        "chapter": 12,
+        "verse": 31
+      },
+      {
+        "label": "Exodus 12:32",
+        "book": 1,
+        "chapter": 12,
+        "verse": 32
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 10 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO10.htm"
+      },
+      {
+        "label": "Exodus 11 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO11.htm"
+      },
+      {
+        "label": "Exodus 12 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO12.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-passover-memory",
+    "mode": "history",
+    "ref": "Exodus 12:8",
+    "appliesTo": [
+      "Exodus 12:8",
+      "Exodus 12:11",
+      "Exodus 12:14",
+      "Exodus 12:15",
+      "Exodus 12:17",
+      "Exodus 12:24",
+      "Exodus 12:25",
+      "Exodus 12:26",
+      "Exodus 12:27",
+      "Exodus 12:34",
+      "Exodus 12:39",
+      "Exodus 12:42"
+    ],
+    "title": "An escape story becomes a recurring observance",
+    "status": "Context",
+    "summary": "Passover instructions connect household ritual, the departure narrative and explanation to future children.",
+    "text": "Exodus 12:14 and 12:24–27 prescribe continuing observance and an answer to children who ask its meaning. The same chapter describes departure in haste and dough that had not risen in 12:34 and 12:39.",
+    "reasoning": "The chapter presents a ritual with an explanation rooted in the narrated rescue. It combines instructions for commemoration with the story those instructions ask later generations to remember.",
+    "scope": "A text prescribing a recurring festival does not independently establish when every element of the festival originated, how uniformly it was practiced or the historicity of the departure.",
+    "refs": [
+      {
+        "label": "Exodus 12:8",
+        "book": 1,
+        "chapter": 12,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 12:11",
+        "book": 1,
+        "chapter": 12,
+        "verse": 11
+      },
+      {
+        "label": "Exodus 12:14",
+        "book": 1,
+        "chapter": 12,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 12:15",
+        "book": 1,
+        "chapter": 12,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 12:17",
+        "book": 1,
+        "chapter": 12,
+        "verse": 17
+      },
+      {
+        "label": "Exodus 12:24",
+        "book": 1,
+        "chapter": 12,
+        "verse": 24
+      },
+      {
+        "label": "Exodus 12:25",
+        "book": 1,
+        "chapter": 12,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 12:26",
+        "book": 1,
+        "chapter": 12,
+        "verse": 26
+      },
+      {
+        "label": "Exodus 12:27",
+        "book": 1,
+        "chapter": 12,
+        "verse": 27
+      },
+      {
+        "label": "Exodus 12:34",
+        "book": 1,
+        "chapter": 12,
+        "verse": 34
+      },
+      {
+        "label": "Exodus 12:39",
+        "book": 1,
+        "chapter": 12,
+        "verse": 39
+      },
+      {
+        "label": "Exodus 12:42",
+        "book": 1,
+        "chapter": 12,
+        "verse": 42
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 12 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO12.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-passover-membership",
+    "mode": "contradictions",
+    "ref": "Exodus 12:43",
+    "appliesTo": [
+      "Exodus 12:43",
+      "Exodus 12:44",
+      "Exodus 12:45",
+      "Exodus 12:47",
+      "Exodus 12:48",
+      "Exodus 12:49"
+    ],
+    "title": "Excluding foreigners and admitting a sojourner",
+    "status": "Context",
+    "summary": "Passover rules exclude some outsiders but explicitly allow a circumcised sojourner to participate.",
+    "text": "Exodus 12:43 prohibits participation by a stranger, and 12:45 excludes a foreigner and hired servant. Verse 48 then gives a condition under which a sojourner may participate and be treated as native-born. Verse 49 states one law for the native and sojourner.",
+    "reasoning": "The immediate context distinguishes an outsider who does not meet the participation condition from one who does. Treating every English outsider term as an unconditional, identical category creates an avoidable contradiction.",
+    "scope": "The condition is explicitly stated in this ritual law. This does not establish equal social status in every other law or erase the separate rules about purchased servants in verse 44.",
+    "refs": [
+      {
+        "label": "Exodus 12:43",
+        "book": 1,
+        "chapter": 12,
+        "verse": 43
+      },
+      {
+        "label": "Exodus 12:44",
+        "book": 1,
+        "chapter": 12,
+        "verse": 44
+      },
+      {
+        "label": "Exodus 12:45",
+        "book": 1,
+        "chapter": 12,
+        "verse": 45
+      },
+      {
+        "label": "Exodus 12:47",
+        "book": 1,
+        "chapter": 12,
+        "verse": 47
+      },
+      {
+        "label": "Exodus 12:48",
+        "book": 1,
+        "chapter": 12,
+        "verse": 48
+      },
+      {
+        "label": "Exodus 12:49",
+        "book": 1,
+        "chapter": 12,
+        "verse": 49
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 12 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO12.htm"
+      }
+    ],
+    "checked": "2026-10-12"
   }
 ]
 ;

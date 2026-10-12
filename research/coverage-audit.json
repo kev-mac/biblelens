@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 84,
+    "evidenceRecords": 92,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 107,
-    "annotatedVerses": 492
+    "chaptersWithAnnotations": 113,
+    "annotatedVerses": 559
   },
   "byBook": [
     {
@@ -21,8 +21,8 @@
     {
       "book": "Exodus",
       "chapters": 40,
-      "chaptersWithAnnotations": 9,
-      "annotatedVerses": 67
+      "chaptersWithAnnotations": 15,
+      "annotatedVerses": 134
     },
     {
       "book": "Leviticus",
@@ -1076,54 +1076,169 @@
       "book": "Exodus",
       "bookId": 1,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-hardening-agency",
+        "exodus-magicians-limits"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        22
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-hardening-agency",
+        "exodus-magicians-limits"
+      ],
+      "annotatedVerses": [
+        7,
+        15,
+        18,
+        19,
+        32
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-hardening-agency",
+        "exodus-magicians-limits",
+        "exodus-livestock-scope",
+        "exodus-crops-surviving-hail"
+      ],
+      "annotatedVerses": [
+        3,
+        6,
+        9,
+        10,
+        11,
+        12,
+        19,
+        20,
+        21,
+        25,
+        31,
+        32,
+        34,
+        35
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-hardening-agency",
+        "exodus-crops-surviving-hail",
+        "exodus-locust-wind",
+        "exodus-last-audience"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        5,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        27,
+        28,
+        29
+      ],
+      "modes": [
+        "contradictions",
+        "science"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-hardening-agency",
+        "exodus-livestock-scope",
+        "exodus-last-audience"
+      ],
+      "annotatedVerses": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-livestock-scope",
+        "exodus-last-audience",
+        "exodus-passover-memory",
+        "exodus-passover-membership"
+      ],
+      "annotatedVerses": [
+        8,
+        11,
+        14,
+        15,
+        17,
+        24,
+        25,
+        26,
+        27,
+        29,
+        31,
+        32,
+        34,
+        39,
+        42,
+        43,
+        44,
+        45,
+        47,
+        48,
+        49
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
