@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/audit-annotations.mjs && node scripts/check-annotations.mjs && node scripts/check-reader-toggles.mjs && node scripts/check-red-letters.mjs && node scripts/check-reader-question.mjs && node scripts/check-global-chat.mjs",
+    "check": "node scripts/audit-annotations.mjs && node scripts/check-annotations.mjs && node scripts/check-reader-toggles.mjs && node scripts/check-red-letters.mjs && node scripts/check-reader-question.mjs && node scripts/check-global-chat.mjs && node scripts/check-verse-roles.mjs",
     "start": "node scripts/serve.mjs"
   }
 }

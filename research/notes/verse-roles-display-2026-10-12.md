@@ -1,0 +1,11 @@
+# Verse roles and cleaner citations — 2026-10-12
+
+Implemented optional sides with exact packaged KJV substring and membership validation. Invalid sides stop the build before dist is altered. Atomic supplied-file merger rejects unknown/duplicate IDs. No verse-roles.json was available; no sides were invented. data/evidence.json remains byte-for-byte unchanged from the prior published commit.
+
+Full evidence cards now occur only on supplied side verses or the primary ref fallback. Other refs and preserved appliesTo locations have context pointers. Clicking any record/category tag synchronizes its cards and pointers within the open chapter. Details and sources remain unchanged. Legacy records without titles use their primary reference as the pointer label. Range chips sort in Bible order, merge only within chapters, and use one CONTEXT_CHIP_LIMIT=4 constant. Expanded citations group by book. Side rows and overlapping KJV highlights are ready for Claude's roles; other editions are not guessed.
+
+Visible evidence record placements (existing agreement/background hiding preserved): 1,356 cards / 0 pointers before; 190 cards / 1,207 pointers after. 1,166 old cards became pointers; 41 new context locations gained pointers. Counts identify record/verse placements, not duplicate panels for multiple tags. Six study records retain their existing layout. All evidence placements including hidden records: 2,649 before; 316 key cards and 2,391 pointers after; 2,333 converted and 58 additional context locations. Coverage audit remains based on original research placements, not pointer presence.
+
+Validation: complete chapter/comparison endpoint checks; reference bounds and duplicates; existing reader/global-chat/red-letter checks; fixture-only side and fallback records; 32-ref range/cap example (+2 hidden chips, not hidden verses); exactly four chips with no expansion; atomic merging; actual build failure on a wrong quote; two cards at one verse; synchronized card/pointer toggles; expand/collapse; overlapping highlights, edition limits and red-letter preservation. No fixture inserted into published evidence.
+
+Publication and hosted UI verification are recorded in outputs after deployment.

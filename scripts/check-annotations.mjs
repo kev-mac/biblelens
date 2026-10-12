@@ -19,9 +19,12 @@ for(const b of books){
    const seen=new Set();
    for(const item of result.items){assert(verses.has(item.verse));assert(item.summary&&item.text&&item.sources.length);const key=`${item.id||item.title||item.summary}:${item.verse}`;assert(!seen.has(key),`Duplicate ${key}`);seen.add(key);}
    for(const e of evidence.filter(e=>e.mode===mode)){
-    for(const ref of new Set(e.appliesTo||[e.ref])){const p=refParts(ref);if(p.book!==b.id||p.chapter!==ch)continue;
+    for(const ref of new Set([...(e.sides?.length?e.sides.map(s=>s.ref):[e.ref]),...(e.refs||[]).map(r=>r.label),...(e.appliesTo||[])])){const p=refParts(ref);if(p.book!==b.id||p.chapter!==ch)continue;
      const published=result.items.find(item=>item.verse===p.verse&&(e.id?item.id===e.id:item.summary===e.summary));
      assert(published,`Missing ${ref} ${mode}`);
+     assert.equal(published.placementRole,(e.sides?.length?e.sides.some(s=>s.ref===ref):ref===e.ref)?'key':'context');
+     assert.equal(published.keyTarget,e.sides?.find(s=>s.label==='A')?.ref||e.ref);
+     if(e.sides)assert.deepEqual(published.sides,e.sides);
      if(e.tags)assert.deepEqual(published.tags,e.tags,`Lost language tags at ${ref}`);
      if(e.languageContext)assert.equal(published.languageContext,e.languageContext,`Lost edition context at ${ref}`);
      annotationTargets++;

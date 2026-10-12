@@ -170,3 +170,14 @@ body.keyboard-navigation #chat-input:focus,body.keyboard-navigation #reader-ques
 .agreement.greek,body.dark .agreement.greek{background:#ebe0f5;color:#50356c}
 .agreement.violation,body.dark .agreement.violation{background:#f9ded8;color:#792b22}
 .language-context{font-weight:600;color:var(--muted)}
+
+/* Verse roles and capped context citations. */
+.context-pointer{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:8px}
+.context-pointer a{color:var(--accent);text-decoration:underline}
+.comparison-sides{display:grid;gap:10px;margin-bottom:14px}
+.comparison-side{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.comparison-side q{flex:1;min-width:180px;font-style:normal}
+.context-book-line{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.context-citations [hidden]{display:none}
+.context-citations{margin:10px 0}
+mark.side-quote{color:inherit;background:rgba(255,172,74,.24);border-radius:2px}
