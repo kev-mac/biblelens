@@ -102,7 +102,7 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 .verse-comparison[data-tone="plain"]{--summary-tint:#edf3ee;--summary-ink:#24352d}
 .verse-comparison .comparison-summary{background:var(--summary-tint,#edf3ee);color:var(--summary-ink,#24352d);border-color:color-mix(in srgb,var(--summary-ink,#24352d) 24%,var(--summary-tint,#edf3ee))}
 .comparison-tabs{display:flex;flex-wrap:wrap;gap:7px;margin:2px 0 10px}
-.comparison-tab{border:1px solid transparent;cursor:pointer;font:500 11px/1.4 system-ui;padding:5px 8px;min-height:28px;max-width:100%;text-align:left}
+.comparison-tabs .comparison-tab{border:1px solid transparent;cursor:pointer;font:600 13px/1 system-ui;padding:0;width:32px;height:32px;min-height:32px;flex:0 0 32px;display:grid;place-items:center;border-radius:4px;text-align:center}
 .comparison-tab[aria-selected="true"]{outline:2px solid var(--green);outline-offset:2px;font-weight:700}
 .comparison-tab.plain,body.dark .comparison-tab.plain{background:#edf3ee;color:#24352d}
 .summary-citations{gap:6px;margin:8px 0}
