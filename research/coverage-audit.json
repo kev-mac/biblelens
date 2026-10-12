@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 112,
+    "evidenceRecords": 116,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 130,
-    "annotatedVerses": 738
+    "chaptersWithAnnotations": 132,
+    "annotatedVerses": 780
   },
   "byBook": [
     {
@@ -21,8 +21,8 @@
     {
       "book": "Exodus",
       "chapters": 40,
-      "chaptersWithAnnotations": 32,
-      "annotatedVerses": 313
+      "chaptersWithAnnotations": 34,
+      "annotatedVerses": 355
     },
     {
       "book": "Leviticus",
@@ -1695,14 +1695,16 @@
       "chapter": 31,
       "annotationIds": [
         "early-sabbath",
-        "exodus-sabbath-sanction"
+        "exodus-sabbath-sanction",
+        "exodus-replacement-tablets"
       ],
       "annotatedVerses": [
         13,
         14,
         15,
         16,
-        17
+        17,
+        18
       ],
       "modes": [
         "contradictions",
@@ -1714,9 +1716,43 @@
       "book": "Exodus",
       "bookId": 1,
       "chapter": 32,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-commanded-cherubim",
+        "exodus-aaron-calf-account",
+        "exodus-intercession-relenting",
+        "exodus-replacement-tablets"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        21,
+        22,
+        23,
+        24,
+        27,
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -1724,10 +1760,20 @@
       "bookId": 1,
       "chapter": 33,
       "annotationIds": [
+        "exodus-presence-negotiation",
         "study-seen"
       ],
       "annotatedVerses": [
+        1,
+        2,
+        3,
         11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
         20,
         23
       ],
@@ -1740,9 +1786,24 @@
       "book": "Exodus",
       "bookId": 1,
       "chapter": 34,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-firstborn-redemption",
+        "exodus-commanded-cherubim",
+        "exodus-replacement-tablets"
+      ],
+      "annotatedVerses": [
+        1,
+        4,
+        17,
+        19,
+        20,
+        27,
+        28
+      ],
+      "modes": [
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
