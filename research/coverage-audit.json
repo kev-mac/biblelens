@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 148,
+    "evidenceRecords": 152,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 165,
-    "annotatedVerses": 1199
+    "chaptersWithAnnotations": 170,
+    "annotatedVerses": 1270
   },
   "byBook": [
     {
@@ -33,8 +33,8 @@
     {
       "book": "Numbers",
       "chapters": 36,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 1
+      "chaptersWithAnnotations": 6,
+      "annotatedVerses": 72
     },
     {
       "book": "Deuteronomy",
@@ -2754,36 +2754,131 @@
       "book": "Numbers",
       "bookId": 3,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "numbers-military-census-scope",
+        "numbers-sanctuary-carrying-and-access"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        46,
+        47,
+        49,
+        50,
+        51
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Numbers",
       "bookId": 3,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "numbers-military-census-scope"
+      ],
+      "annotatedVerses": [
+        9,
+        16,
+        24,
+        31,
+        32,
+        33
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Numbers",
       "bookId": 3,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-firstborn-redemption",
+        "numbers-levite-total-discrepancy",
+        "numbers-levite-age-thresholds",
+        "numbers-sanctuary-carrying-and-access"
+      ],
+      "annotatedVerses": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        15,
+        22,
+        28,
+        34,
+        38,
+        39,
+        40,
+        41,
+        43,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "modes": [
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Numbers",
       "bookId": 3,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "numbers-levite-age-thresholds",
+        "numbers-sanctuary-carrying-and-access"
+      ],
+      "annotatedVerses": [
+        3,
+        5,
+        6,
+        15,
+        18,
+        19,
+        20,
+        23,
+        27,
+        28,
+        30,
+        31,
+        32,
+        33,
+        35,
+        39,
+        43,
+        47,
+        48
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -2817,9 +2912,17 @@
       "book": "Numbers",
       "bookId": 3,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "numbers-levite-age-thresholds"
+      ],
+      "annotatedVerses": [
+        24,
+        25,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
