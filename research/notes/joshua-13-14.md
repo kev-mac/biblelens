@@ -1,0 +1,9 @@
+# Joshua 13–14 checkpoint — 2026-10-12
+
+Read all 48 packaged KJV verses and publisher pages, with Joshua 15:13–17 as cross-reference. Extended the existing conquest assessment: 13:1 explicitly has much land unpossessed after whole-land summaries; 13:6 distinguishes allocation from future removal; 13:13 names eastern survivors. Caleb’s conditional request and later local-conquest reports are linked with prior Hebron/Anakim summaries, with no claim that narrative placement establishes an absolute chronology or the future-looking request proves those same enemies remained. No duplicate conquest record.
+
+Caleb’s 40 + 45 = 85 agrees internally. The forty-five-year interval need not mean all those years were spent wandering. No agreement summary added and no externally dated campaign chronology inferred. Levites’ lack of a tribal territory is explicitly compatible with dwelling cities at 14:4; no artificial contradiction added. Balaam’s death agrees with Numbers 31:8; no generic note added.
+
+Unresolved: Caleb episode chronology relative to conquest summaries, scope of Anakim claims, historical occupation and regional place identifications, manuscript/Hebrew analysis, and implications of land allocation before occupation. Candidate for higher-reasoning review: accounts' sequence and limits of claiming a discrepancy from anticipatory language. Next sequential Joshua 15–16; investigate town-list totals and remaining inhabitants; existing conquest references at 15:13–17 are cross-reference placements, not a completed chapter-15 review. Preserve latest UI/Ask fixes. Exact validation audit to append.
+
+Validated audit: 225 evidence records plus 6 studies; 253/1189 chapters with annotations (21.3%), 2227 unique verse locations, 936 chapters without annotations; 2295 evidence placements. All endpoints/modes, references, duplicates, UI and Ask checks passed.
