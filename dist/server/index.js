@@ -6762,12 +6762,17 @@ const EVIDENCE=[
       "Exodus 32:4",
       "Exodus 32:5",
       "Exodus 32:8",
-      "Exodus 34:17"
+      "Exodus 34:17",
+      "Exodus 36:8",
+      "Exodus 36:35",
+      "Exodus 37:7",
+      "Exodus 37:8",
+      "Exodus 37:9"
     ],
     "title": "The image prohibition and commanded cherubim",
     "status": "Context",
     "summary": "The law prohibits images and their worship; sanctuary instructions also require cherubim.",
-    "text": "Exodus 20:4–5 prohibits making likenesses and bowing to or serving them. Exodus 25 orders two golden cherubim, while chapter 26 places cherubim on fabric. The calf narrative explicitly includes worship and sacrifice; Exodus 34:17 again prohibits molten gods.",
+    "text": "Exodus 20:4–5 prohibits making likenesses and bowing to or serving them. Exodus 25 orders two golden cherubim, while chapter 26 places cherubim on fabric. The calf narrative explicitly includes worship and sacrifice; Exodus 34:17 again prohibits molten gods. The construction narrative also describes making the prescribed cherubim.",
     "reasoning": "The commands create a real interpretive question for a ban understood to prohibit every depiction. Reading the prohibition as directed at cult images or worship distinguishes these sanctuary decorations, but that is an interpretation of its scope.",
     "scope": "This comparison identifies the wording and a contextual reading; it does not establish that every ancient reader applied the same distinction or settle the ethics of religious imagery.",
     "refs": [
@@ -6842,6 +6847,36 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 34,
         "verse": 17
+      },
+      {
+        "label": "Exodus 36:8",
+        "book": 1,
+        "chapter": 36,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 36:35",
+        "book": 1,
+        "chapter": 36,
+        "verse": 35
+      },
+      {
+        "label": "Exodus 37:7",
+        "book": 1,
+        "chapter": 37,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 37:8",
+        "book": 1,
+        "chapter": 37,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 37:9",
+        "book": 1,
+        "chapter": 37,
+        "verse": 9
       }
     ],
     "sources": [
@@ -6864,6 +6899,14 @@ const EVIDENCE=[
       {
         "label": "Exodus 34 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO34.htm"
+      },
+      {
+        "label": "Exodus 36 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO36.htm"
+      },
+      {
+        "label": "Exodus 37 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO37.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -6880,12 +6923,17 @@ const EVIDENCE=[
       "Exodus 26:9",
       "Exodus 26:12",
       "Exodus 26:13",
-      "Exodus 26:14"
+      "Exodus 26:14",
+      "Exodus 36:8",
+      "Exodus 36:9",
+      "Exodus 36:14",
+      "Exodus 36:15",
+      "Exodus 36:19"
     ],
     "title": "Ten curtains and eleven curtains describe different layers",
     "status": "Context",
     "summary": "The differing curtain totals refer to linen and an outer goats’ hair covering.",
-    "text": "The first set has ten linen curtains, each 28 cubits long. The next set has eleven goats’ hair curtains, each 30 cubits long, with surplus folded or hanging over the structure.",
+    "text": "The first set has ten linen curtains, each 28 cubits long. The next set has eleven goats’ hair curtains, each 30 cubits long, with surplus folded or hanging over the structure. Exodus 36 repeats the two material layers and their different totals in its construction account.",
     "reasoning": "The passage names different materials and describes the second set as a covering. Treating both totals as counts of one identical set removes those contextual distinctions.",
     "scope": "This resolves that particular numerical comparison within the instructions. It does not independently verify construction or establish the precise modern length of a cubit.",
     "refs": [
@@ -6936,12 +6984,46 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 26,
         "verse": 14
+      },
+      {
+        "label": "Exodus 36:8",
+        "book": 1,
+        "chapter": 36,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 36:9",
+        "book": 1,
+        "chapter": 36,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 36:14",
+        "book": 1,
+        "chapter": 36,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 36:15",
+        "book": 1,
+        "chapter": 36,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 36:19",
+        "book": 1,
+        "chapter": 36,
+        "verse": 19
       }
     ],
     "sources": [
       {
         "label": "Exodus 26 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO26.htm"
+      },
+      {
+        "label": "Exodus 36 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO36.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -7044,12 +7126,15 @@ const EVIDENCE=[
       "Exodus 28:17",
       "Exodus 28:21",
       "Exodus 28:29",
-      "Exodus 28:30"
+      "Exodus 28:30",
+      "Exodus 39:6",
+      "Exodus 39:7",
+      "Exodus 39:14"
     ],
     "title": "Priestly clothing represents the tribes",
     "status": "Context",
     "summary": "Tribal names appear on shoulder stones and the breastplate as memorials.",
-    "text": "Chapter 28 connects engraved names on two shoulder stones and twelve breastplate stones with Aaron bearing Israel’s names before God. It also names the Urim and Thummim.",
+    "text": "Chapter 28 connects engraved names on two shoulder stones and twelve breastplate stones with Aaron bearing Israel’s names before God. It also names the Urim and Thummim. Exodus 39 repeats the engraved tribal names and memorial purpose in the construction account.",
     "reasoning": "The text supplies a representative purpose for the names, but does not explain the objects or operating procedure of the Urim and Thummim. A precise mechanism would require further evidence.",
     "scope": "The symbolism is explicit in the passage. It does not authenticate surviving artifacts, establish exact gemstone identifications or prove a particular divination technique.",
     "refs": [
@@ -7100,12 +7185,34 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 28,
         "verse": 30
+      },
+      {
+        "label": "Exodus 39:6",
+        "book": 1,
+        "chapter": 39,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 39:7",
+        "book": 1,
+        "chapter": 39,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 39:14",
+        "book": 1,
+        "chapter": 39,
+        "verse": 14
       }
     ],
     "sources": [
       {
         "label": "Exodus 28 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO28.htm"
+      },
+      {
+        "label": "Exodus 39 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO39.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -7211,12 +7318,16 @@ const EVIDENCE=[
       "Exodus 30:13",
       "Exodus 30:14",
       "Exodus 30:15",
-      "Exodus 30:16"
+      "Exodus 30:16",
+      "Exodus 38:25",
+      "Exodus 38:26",
+      "Exodus 38:27",
+      "Exodus 38:28"
     ],
     "title": "The census contribution is a fixed amount",
     "status": "Context",
     "summary": "Those counted from age twenty owe the same half-shekel contribution.",
-    "text": "The passage links counting, a ransom contribution, avoidance of plague and tabernacle service. Rich and poor are assigned the same amount.",
+    "text": "The passage links counting, a ransom contribution, avoidance of plague and tabernacle service. Rich and poor are assigned the same amount. Exodus 38 reports half-shekel contributions from 603,550 counted men and assigns the silver to sanctuary fittings; this is the narrative’s accounting, not an externally verified census.",
     "reasoning": "The contribution is explicitly fixed, rather than proportional to wealth. The plague language is a religious claim within the law, not an independently demonstrated causal link.",
     "scope": "This does not establish historical collection rates, modern monetary value or an empirically tested way of preventing disease.",
     "refs": [
@@ -7249,12 +7360,40 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 30,
         "verse": 16
+      },
+      {
+        "label": "Exodus 38:25",
+        "book": 1,
+        "chapter": 38,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 38:26",
+        "book": 1,
+        "chapter": 38,
+        "verse": 26
+      },
+      {
+        "label": "Exodus 38:27",
+        "book": 1,
+        "chapter": 38,
+        "verse": 27
+      },
+      {
+        "label": "Exodus 38:28",
+        "book": 1,
+        "chapter": 38,
+        "verse": 28
       }
     ],
     "sources": [
       {
         "label": "Exodus 30 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO30.htm"
+      },
+      {
+        "label": "Exodus 38 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO38.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -7267,12 +7406,15 @@ const EVIDENCE=[
       "Exodus 30:18",
       "Exodus 30:19",
       "Exodus 30:20",
-      "Exodus 30:21"
+      "Exodus 30:21",
+      "Exodus 40:30",
+      "Exodus 40:31",
+      "Exodus 40:32"
     ],
     "title": "Ritual washing is not a stated germ theory",
     "status": "Context",
     "summary": "Priests wash hands and feet before service; the passage frames the requirement as sacred duty.",
-    "text": "The basin is positioned near the sanctuary and altar. Priests must wash before entering or ministering, with a death warning attached.",
+    "text": "The basin is positioned near the sanctuary and altar. Priests must wash before entering or ministering, with a death warning attached. Exodus 40 describes Moses, Aaron and his sons washing hands and feet at the basin.",
     "reasoning": "Washing can have practical effects, but this text provides no account of pathogens, treatment efficacy or controlled comparison. Its own explanation concerns priestly service.",
     "scope": "The passage cannot by itself verify germ theory, quantify sanitation benefits or demonstrate the cause of threatened death.",
     "refs": [
@@ -7299,12 +7441,34 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 30,
         "verse": 21
+      },
+      {
+        "label": "Exodus 40:30",
+        "book": 1,
+        "chapter": 40,
+        "verse": 30
+      },
+      {
+        "label": "Exodus 40:31",
+        "book": 1,
+        "chapter": 40,
+        "verse": 31
+      },
+      {
+        "label": "Exodus 40:32",
+        "book": 1,
+        "chapter": 40,
+        "verse": 32
       }
     ],
     "sources": [
       {
         "label": "Exodus 30 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO30.htm"
+      },
+      {
+        "label": "Exodus 40 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO40.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -7318,12 +7482,14 @@ const EVIDENCE=[
       "Exodus 31:14",
       "Exodus 31:15",
       "Exodus 31:16",
-      "Exodus 31:17"
+      "Exodus 31:17",
+      "Exodus 35:2",
+      "Exodus 35:3"
     ],
     "title": "The Sabbath is a covenant sign with a death penalty",
     "status": "Context",
     "summary": "The Sabbath command here includes covenant identity and severe sanctions.",
-    "text": "Chapter 31 calls Sabbath observance a sign between God and Israel and prescribes death for working on it. Its rationale recalls creation and divine rest.",
+    "text": "Chapter 31 calls Sabbath observance a sign between God and Israel and prescribes death for working on it. Its rationale recalls creation and divine rest. Exodus 35 repeats the death sanction and adds a prohibition on kindling fire in dwellings on the Sabbath.",
     "reasoning": "A statement of prescribed punishment is distinct from evidence showing how often, where or when it was enforced. Describing the law also does not endorse its penalty.",
     "scope": "The text establishes the rule as narrated; historical enforcement and ethical evaluation require separate analysis.",
     "refs": [
@@ -7356,12 +7522,28 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 31,
         "verse": 17
+      },
+      {
+        "label": "Exodus 35:2",
+        "book": 1,
+        "chapter": 35,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 35:3",
+        "book": 1,
+        "chapter": 35,
+        "verse": 3
       }
     ],
     "sources": [
       {
         "label": "Exodus 31 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO31.htm"
+      },
+      {
+        "label": "Exodus 35 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO35.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -7717,6 +7899,531 @@ const EVIDENCE=[
       {
         "label": "Exodus 34 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO34.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-voluntary-and-fixed-giving",
+    "mode": "contradictions",
+    "ref": "Exodus 25:2",
+    "appliesTo": [
+      "Exodus 25:2",
+      "Exodus 30:13",
+      "Exodus 30:14",
+      "Exodus 30:15",
+      "Exodus 30:16",
+      "Exodus 35:5",
+      "Exodus 35:21",
+      "Exodus 35:22",
+      "Exodus 35:24",
+      "Exodus 35:25",
+      "Exodus 35:26",
+      "Exodus 35:29",
+      "Exodus 36:3",
+      "Exodus 36:4",
+      "Exodus 36:5",
+      "Exodus 36:6",
+      "Exodus 36:7",
+      "Exodus 38:24",
+      "Exodus 38:25",
+      "Exodus 38:26",
+      "Exodus 38:27",
+      "Exodus 38:28"
+    ],
+    "title": "Voluntary gifts and a fixed census payment are separate contributions",
+    "status": "Context",
+    "summary": "Willing donations coexist with a uniform census contribution; excess gifts are stopped.",
+    "text": "Chapters 35–36 describe donated materials and skilled labor, followed by an order to stop bringing more. Chapter 38 separately reports silver from the counted men, consistent with the fixed payment of chapter 30.",
+    "reasoning": "Willingness governs the donation descriptions; a specified amount governs those counted. Treating every sanctuary contribution as one identical payment would create a misleading conflict.",
+    "scope": "The narrative distinguishes funding categories. It does not independently verify the donor list, census total, material inventory or how obligations were administered.",
+    "refs": [
+      {
+        "label": "Exodus 25:2",
+        "book": 1,
+        "chapter": 25,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 30:13",
+        "book": 1,
+        "chapter": 30,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 30:14",
+        "book": 1,
+        "chapter": 30,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 30:15",
+        "book": 1,
+        "chapter": 30,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 30:16",
+        "book": 1,
+        "chapter": 30,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 35:5",
+        "book": 1,
+        "chapter": 35,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 35:21",
+        "book": 1,
+        "chapter": 35,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 35:22",
+        "book": 1,
+        "chapter": 35,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 35:24",
+        "book": 1,
+        "chapter": 35,
+        "verse": 24
+      },
+      {
+        "label": "Exodus 35:25",
+        "book": 1,
+        "chapter": 35,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 35:26",
+        "book": 1,
+        "chapter": 35,
+        "verse": 26
+      },
+      {
+        "label": "Exodus 35:29",
+        "book": 1,
+        "chapter": 35,
+        "verse": 29
+      },
+      {
+        "label": "Exodus 36:3",
+        "book": 1,
+        "chapter": 36,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 36:4",
+        "book": 1,
+        "chapter": 36,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 36:5",
+        "book": 1,
+        "chapter": 36,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 36:6",
+        "book": 1,
+        "chapter": 36,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 36:7",
+        "book": 1,
+        "chapter": 36,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 38:24",
+        "book": 1,
+        "chapter": 38,
+        "verse": 24
+      },
+      {
+        "label": "Exodus 38:25",
+        "book": 1,
+        "chapter": 38,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 38:26",
+        "book": 1,
+        "chapter": 38,
+        "verse": 26
+      },
+      {
+        "label": "Exodus 38:27",
+        "book": 1,
+        "chapter": 38,
+        "verse": 27
+      },
+      {
+        "label": "Exodus 38:28",
+        "book": 1,
+        "chapter": 38,
+        "verse": 28
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 25 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO25.htm"
+      },
+      {
+        "label": "Exodus 30 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO30.htm"
+      },
+      {
+        "label": "Exodus 35 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO35.htm"
+      },
+      {
+        "label": "Exodus 36 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO36.htm"
+      },
+      {
+        "label": "Exodus 38 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO38.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-instructions-and-completion",
+    "mode": "history",
+    "ref": "Exodus 25:10",
+    "appliesTo": [
+      "Exodus 25:10",
+      "Exodus 25:18",
+      "Exodus 25:37",
+      "Exodus 26:1",
+      "Exodus 26:7",
+      "Exodus 27:1",
+      "Exodus 28:21",
+      "Exodus 31:2",
+      "Exodus 31:6",
+      "Exodus 35:30",
+      "Exodus 35:34",
+      "Exodus 36:8",
+      "Exodus 36:14",
+      "Exodus 37:1",
+      "Exodus 37:7",
+      "Exodus 37:23",
+      "Exodus 38:1",
+      "Exodus 38:22",
+      "Exodus 38:23",
+      "Exodus 39:14",
+      "Exodus 39:32",
+      "Exodus 39:42",
+      "Exodus 39:43",
+      "Exodus 40:2",
+      "Exodus 40:16",
+      "Exodus 40:17"
+    ],
+    "title": "Construction repeats selected earlier specifications",
+    "status": "Context",
+    "summary": "Named workers, dimensions and tribal names link instructions with the account of completion.",
+    "text": "The construction account repeats the ark dimensions, two cherubim, seven lamps, curtain counts, altar dimensions and twelve named breastplate stones from earlier instructions. Moses inspects the completed work.",
+    "reasoning": "These correspondences support the story’s emphasis on following instructions. Repetition within one literary work is not independent archaeological corroboration.",
+    "scope": "The comparison checks these named features, not every design detail or every manuscript tradition. It cannot establish the structure’s date, surviving remains or actual workforce.",
+    "refs": [
+      {
+        "label": "Exodus 25:10",
+        "book": 1,
+        "chapter": 25,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 25:18",
+        "book": 1,
+        "chapter": 25,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 25:37",
+        "book": 1,
+        "chapter": 25,
+        "verse": 37
+      },
+      {
+        "label": "Exodus 26:1",
+        "book": 1,
+        "chapter": 26,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 26:7",
+        "book": 1,
+        "chapter": 26,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 27:1",
+        "book": 1,
+        "chapter": 27,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 28:21",
+        "book": 1,
+        "chapter": 28,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 31:2",
+        "book": 1,
+        "chapter": 31,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 31:6",
+        "book": 1,
+        "chapter": 31,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 35:30",
+        "book": 1,
+        "chapter": 35,
+        "verse": 30
+      },
+      {
+        "label": "Exodus 35:34",
+        "book": 1,
+        "chapter": 35,
+        "verse": 34
+      },
+      {
+        "label": "Exodus 36:8",
+        "book": 1,
+        "chapter": 36,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 36:14",
+        "book": 1,
+        "chapter": 36,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 37:1",
+        "book": 1,
+        "chapter": 37,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 37:7",
+        "book": 1,
+        "chapter": 37,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 37:23",
+        "book": 1,
+        "chapter": 37,
+        "verse": 23
+      },
+      {
+        "label": "Exodus 38:1",
+        "book": 1,
+        "chapter": 38,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 38:22",
+        "book": 1,
+        "chapter": 38,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 38:23",
+        "book": 1,
+        "chapter": 38,
+        "verse": 23
+      },
+      {
+        "label": "Exodus 39:14",
+        "book": 1,
+        "chapter": 39,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 39:32",
+        "book": 1,
+        "chapter": 39,
+        "verse": 32
+      },
+      {
+        "label": "Exodus 39:42",
+        "book": 1,
+        "chapter": 39,
+        "verse": 42
+      },
+      {
+        "label": "Exodus 39:43",
+        "book": 1,
+        "chapter": 39,
+        "verse": 43
+      },
+      {
+        "label": "Exodus 40:2",
+        "book": 1,
+        "chapter": 40,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 40:16",
+        "book": 1,
+        "chapter": 40,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 40:17",
+        "book": 1,
+        "chapter": 40,
+        "verse": 17
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 25 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO25.htm"
+      },
+      {
+        "label": "Exodus 26 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO26.htm"
+      },
+      {
+        "label": "Exodus 27 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO27.htm"
+      },
+      {
+        "label": "Exodus 28 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO28.htm"
+      },
+      {
+        "label": "Exodus 31 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO31.htm"
+      },
+      {
+        "label": "Exodus 35 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO35.htm"
+      },
+      {
+        "label": "Exodus 36 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO36.htm"
+      },
+      {
+        "label": "Exodus 37 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO37.htm"
+      },
+      {
+        "label": "Exodus 38 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO38.htm"
+      },
+      {
+        "label": "Exodus 39 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO39.htm"
+      },
+      {
+        "label": "Exodus 40 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO40.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-cloud-entry-guidance",
+    "mode": "history",
+    "ref": "Exodus 33:7",
+    "appliesTo": [
+      "Exodus 33:7",
+      "Exodus 33:9",
+      "Exodus 33:11",
+      "Exodus 40:33",
+      "Exodus 40:34",
+      "Exodus 40:35",
+      "Exodus 40:36",
+      "Exodus 40:37",
+      "Exodus 40:38"
+    ],
+    "title": "The cloud limits entry and governs departure",
+    "status": "Context",
+    "summary": "At the newly erected sanctuary, Moses cannot enter while the cloud and glory fill it.",
+    "text": "Exodus 33 describes Moses entering a tent outside the camp. After the erection in chapter 40, the cloud fills the sanctuary, prevents his entry and signals when Israel travels.",
+    "reasoning": "The earlier meeting scene and this completion scene have different stated circumstances. The text’s sequence and location descriptions matter before treating entry and non-entry as incompatible claims.",
+    "scope": "This does not settle the relationship between the tent traditions or independently identify the cloud as a meteorological phenomenon. Historical and composition questions remain open.",
+    "refs": [
+      {
+        "label": "Exodus 33:7",
+        "book": 1,
+        "chapter": 33,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 33:9",
+        "book": 1,
+        "chapter": 33,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 33:11",
+        "book": 1,
+        "chapter": 33,
+        "verse": 11
+      },
+      {
+        "label": "Exodus 40:33",
+        "book": 1,
+        "chapter": 40,
+        "verse": 33
+      },
+      {
+        "label": "Exodus 40:34",
+        "book": 1,
+        "chapter": 40,
+        "verse": 34
+      },
+      {
+        "label": "Exodus 40:35",
+        "book": 1,
+        "chapter": 40,
+        "verse": 35
+      },
+      {
+        "label": "Exodus 40:36",
+        "book": 1,
+        "chapter": 40,
+        "verse": 36
+      },
+      {
+        "label": "Exodus 40:37",
+        "book": 1,
+        "chapter": 40,
+        "verse": 37
+      },
+      {
+        "label": "Exodus 40:38",
+        "book": 1,
+        "chapter": 40,
+        "verse": 38
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 33 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO33.htm"
+      },
+      {
+        "label": "Exodus 40 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO40.htm"
       }
     ],
     "checked": "2026-10-12"
