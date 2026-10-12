@@ -31,11 +31,11 @@ function comparisonCell(verse){
  const tabs=choices.map(item=>{const duplicate=choices.filter(i=>i.mode===item.mode).length>1;const label=`${comparisonLabels[item.mode]}${item.status?' · '+item.status:''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;return `<button type="button" class="agreement comparison-tab ${tone(item)}" id="comparison-tab-${verse}-${item.key}" role="tab" aria-selected="${item.key===active.key}" aria-controls="comparison-panel-${verse}" tabindex="${item.key===active.key?0:-1}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${comparisonLabels[item.mode][0]}</button>`}).join('');
  let content='';
  if(active.mode==='plain'){
-  const cached=comparisonCache.get(comparisonKey('plain'));
+  const cached=plainRecord(verse);
   const explanation=cached?.items?.find(i=>i.verse===verse)?.explanation;
-  content=explanation?`<p class="comparison-summary plain-explanation">${esc(explanation)}</p>${comparisonCitations(verse,[])}`:cached?.status==='error'?`<p>${esc(cached.error)}</p><button type="button" class="text-button" data-retry-plain="true">Retry Plain Language</button>`:'<p class="comparison-loading" role="status">Loading plain language…</p>';
+  content=explanation?`<p class="comparison-summary plain-explanation">${esc(explanation)}</p>`:cached?.status==='error'?`<p>${esc(cached.error)}</p><button type="button" class="text-button" data-retry-plain="true">Retry Plain Language</button>`:'<p class="comparison-loading" role="status">Loading plain language…</p>';
  }else{
-  content=`${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(active.summary||active.text)}</p><span class="summary-attribution">Our summary · provisional assessment</span>${comparisonCitations(verse,[active])}<details class="comparison-details"><summary>Details & sources</summary><p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details>`;
+  content=`${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(active.summary||active.text)}</p>${comparisonCitations(verse,[active])}<details class="comparison-details"><summary>Details & sources</summary><p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details>`;
  }
  return `<div class="comparison-cell"><div class="verse-comparison" data-tone="${tone(active)}"><div class="comparison-tabs" role="tablist" aria-label="Comparisons for verse ${verse}">${tabs}</div><div id="comparison-panel-${verse}" role="tabpanel" aria-labelledby="comparison-tab-${verse}-${active.key}">${content}</div></div></div>`;
 }
@@ -48,7 +48,7 @@ function selectComparison(button){
 }
 document.addEventListener('click',ev=>{
  const tab=ev.target.closest('[data-comparison-key]');if(tab){selectComparison(tab);return;}
- if(ev.target.closest('[data-retry-plain]')){comparisonCache.delete(comparisonKey('plain'));renderReader(true);}
+ if(ev.target.closest('[data-retry-plain]')){const verse=Number(ev.target.closest('.verse').id.replace('verse-',''));comparisonCache.delete(plainKey(verse));renderReader(true);}
 });
 document.addEventListener('keydown',ev=>{
  const tab=ev.target.closest('[role="tab"][data-comparison-key]');if(!tab||!['ArrowLeft','ArrowRight','Home','End'].includes(ev.key))return;
@@ -68,22 +68,46 @@ function comparisonStatus(){
  const count=records.reduce((n,r)=>n+(r.items?.length||0),0);
  status.textContent=`${count} sourced comparisons · Select a tag to switch summaries. Plain Language provides an AI explanation.`;
 }
+function plainKey(verse){return `${comparisonKey('plain')}:${verse}`;}
+function plainRecord(verse){
+ const key=plainKey(verse);if(comparisonCache.has(key))return comparisonCache.get(key);
+ try{const item=JSON.parse(localStorage.getItem('scripture-plain-v1:'+key));if(item?.verse===verse&&typeof item.explanation==='string'&&item.explanation.trim()){const record={status:'ready',items:[item]};comparisonCache.set(key,record);return record;}}catch{}
+}
+async function ensurePlain(verse){
+ const key=plainKey(verse);if(plainRecord(verse))return;
+ const book=readingBook,ch=readingChapter,edition=$('#reader-edition').value;
+ comparisonCache.set(key,{status:'loading'});
+ try{
+  const res=await fetch('/api/plain',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({book,chapter:ch,edition,verse}),signal:AbortSignal.timeout(65000)});
+  const data=await res.json();if(!res.ok)throw Error(data.error||'Could not load Plain Language.');
+  const item=data.items?.find(i=>i.verse===verse);if(!item?.explanation?.trim())throw Error('No explanation returned. Try again.');
+  comparisonCache.set(key,{status:'ready',items:[item]});
+  try{localStorage.setItem('scripture-plain-v1:'+key,JSON.stringify(item));}catch{}
+ }catch(err){comparisonCache.set(key,{status:'error',error:err.name==='TimeoutError'?'The explanation took too long. Try again.':err.message});}
+ if(reading&&book===readingBook&&ch===readingChapter&&edition===$('#reader-edition').value)renderReader(true);
+}
 async function ensureComparisons(){
  if(!reading||$('#reader-compare').value==='none')return;
- const modes=[...comparisonModes];
- if($('#reader-compare').value==='plain'||reading.verses.some(v=>comparisonSelections.get(selectionKey(v.n))==='plain'))modes.push('plain');
+ const mode=$('#reader-compare').value;
+ const selectedPlain=reading.verses.filter(v=>comparisonSelections.get(selectionKey(v.n))==='plain').map(v=>v.n);
+ if(mode==='plain'){
+  const priority=[...selectedVerses][0]||reading.verses[0]?.n;
+  if(priority&&!comparisonSelections.has(selectionKey(priority)))selectedPlain.unshift(priority);
+  // Generate only requested verses; selecting P on another verse loads it next.
+  if(selectedPlain.length)await ensurePlain(selectedPlain[0]);
+  for(const verse of selectedPlain.slice(1))await ensurePlain(verse);
+ }else{for(const verse of selectedPlain)ensurePlain(verse);}
  const edition=$('#reader-edition').value,book=readingBook,ch=readingChapter;
- const pending=modes.filter(mode=>!comparisonCache.has(comparisonKey(mode)));
- if(!pending.length){comparisonStatus();return;}
+ const pending=comparisonModes.filter(mode=>!comparisonCache.has(comparisonKey(mode)));
  const jobs=pending.map(async mode=>{
   const key=comparisonKey(mode);comparisonCache.set(key,{status:'loading'});
   try{
-   const res=mode==='plain'?await fetch('/api/plain',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({book,chapter:ch,edition}),signal:AbortSignal.timeout(65000)}):await fetch(`/api/comparisons?book=${book}&chapter=${ch}&mode=${mode}`,{signal:AbortSignal.timeout(30000)});
+   const res=await fetch(`/api/comparisons?book=${book}&chapter=${ch}&mode=${mode}`,{signal:AbortSignal.timeout(30000)});
    const data=await res.json();if(!res.ok)throw Error(data.error||'Could not load comparisons.');
    comparisonCache.set(key,{status:'ready',items:data.items});
   }catch(err){comparisonCache.set(key,{status:'error',error:err.name==='TimeoutError'?'The comparison took too long. Try again.':err.message});}
  });
- comparisonStatus();await Promise.all(jobs);
+ comparisonStatus();if(!jobs.length)return;await Promise.all(jobs);
  if(reading&&book===readingBook&&ch===readingChapter&&edition===$('#reader-edition').value)renderReader(true);
 }
 function renderReader(preserve=false){if(!reading)return;const scroll=window.scrollY;const edition=$('#reader-edition').value,mode=$('#reader-compare').value;const comparing=mode!=='none';const label={plain:'Plain Language',history:'Historic',contradictions:'Contradictions',science:'Scientific'}[mode];$('#chapter-text').classList.toggle('with-comparisons',comparing);$('#chapter-text').innerHTML=`<h2>${esc(reading.name)} ${reading.chapter}</h2><p class="chapter-subtitle">${edition==='kjv'?'King James Version':'American Standard Version (1901)'}</p>${reading.verses.map(v=>`<div class="verse ${selectedVerses.has(v.n)?'selected':''}" id="verse-${v.n}"><button class="verse-num" data-verse="${v.n}" aria-label="${selectedVerses.has(v.n)?'Deselect':'Select'} verse ${v.n}" aria-pressed="${selectedVerses.has(v.n)}">${v.n}</button><div class="verse-content-grid ${comparing?'is-comparing':''}">${verseText(v,edition)}${comparing?comparisonCell(v.n):''}</div></div>`).join('')}`;renderSidebar();updateContext();comparisonStatus();if(preserve)requestAnimationFrame(()=>window.scrollTo({top:scroll,behavior:'instant'}));ensureComparisons();}
