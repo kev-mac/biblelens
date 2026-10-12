@@ -7231,12 +7231,25 @@ const EVIDENCE=[
       "Exodus 29:32",
       "Exodus 29:33",
       "Exodus 29:34",
-      "Exodus 29:35"
+      "Exodus 29:35",
+      "Leviticus 8:2",
+      "Leviticus 8:6",
+      "Leviticus 8:7",
+      "Leviticus 8:12",
+      "Leviticus 8:13",
+      "Leviticus 8:23",
+      "Leviticus 8:24",
+      "Leviticus 8:30",
+      "Leviticus 8:31",
+      "Leviticus 8:32",
+      "Leviticus 8:33",
+      "Leviticus 8:35",
+      "Leviticus 8:36"
     ],
     "title": "Ordination uses water, oil, blood and a restricted meal",
     "status": "Context",
     "summary": "The ceremony distinguishes priestly consecration from ordinary eating and dress.",
-    "text": "The instructions combine washing, anointing, blood placed on the right ear, thumb and toe, garments, a sacred meal and seven days of consecration. Outsiders cannot eat the meal; leftovers are burned.",
+    "text": "The instructions combine washing, anointing, blood placed on the right ear, thumb and toe, garments, a sacred meal and seven days of consecration. Outsiders cannot eat the meal; leftovers are burned. Leviticus 8 narrates the corresponding washing, clothing, anointing, blood applications, meal and seven-day consecration. The repeated acts connect instruction with narrated performance without independently verifying it.",
     "reasoning": "These actions are presented as consecration. The passage does not assign a separate symbolic meaning to each body part or explain the restrictions as food safety measures.",
     "scope": "This describes the ritual as written. Specific symbolic explanations, public health benefits and actual historical performance require additional evidence.",
     "refs": [
@@ -7299,12 +7312,94 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 29,
         "verse": 35
+      },
+      {
+        "label": "Leviticus 8:2",
+        "book": 2,
+        "chapter": 8,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 8:6",
+        "book": 2,
+        "chapter": 8,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 8:7",
+        "book": 2,
+        "chapter": 8,
+        "verse": 7
+      },
+      {
+        "label": "Leviticus 8:12",
+        "book": 2,
+        "chapter": 8,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 8:13",
+        "book": 2,
+        "chapter": 8,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 8:23",
+        "book": 2,
+        "chapter": 8,
+        "verse": 23
+      },
+      {
+        "label": "Leviticus 8:24",
+        "book": 2,
+        "chapter": 8,
+        "verse": 24
+      },
+      {
+        "label": "Leviticus 8:30",
+        "book": 2,
+        "chapter": 8,
+        "verse": 30
+      },
+      {
+        "label": "Leviticus 8:31",
+        "book": 2,
+        "chapter": 8,
+        "verse": 31
+      },
+      {
+        "label": "Leviticus 8:32",
+        "book": 2,
+        "chapter": 8,
+        "verse": 32
+      },
+      {
+        "label": "Leviticus 8:33",
+        "book": 2,
+        "chapter": 8,
+        "verse": 33
+      },
+      {
+        "label": "Leviticus 8:35",
+        "book": 2,
+        "chapter": 8,
+        "verse": 35
+      },
+      {
+        "label": "Leviticus 8:36",
+        "book": 2,
+        "chapter": 8,
+        "verse": 36
       }
     ],
     "sources": [
       {
         "label": "Exodus 29 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO29.htm"
+      },
+      {
+        "label": "Leviticus 8 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV08.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -8454,12 +8549,21 @@ const EVIDENCE=[
       "Leviticus 7:6",
       "Leviticus 7:8",
       "Leviticus 7:31",
-      "Leviticus 7:32"
+      "Leviticus 7:32",
+      "Leviticus 10:12",
+      "Leviticus 10:13",
+      "Leviticus 10:14",
+      "Leviticus 10:15",
+      "Leviticus 10:16",
+      "Leviticus 10:17",
+      "Leviticus 10:18",
+      "Leviticus 10:19",
+      "Leviticus 10:20"
     ],
     "title": "Burning and eating depend on the offering category",
     "status": "Context",
     "summary": "The rules distinguish altar portions, priestly food and offerings that must be burned.",
-    "text": "Burnt offerings are burned on the altar, with stated exceptions such as discarded bird parts and the priest’s right to a hide. Other offerings supply priestly portions. Sin offerings whose blood enters the sanctuary cannot be eaten.",
+    "text": "Burnt offerings are burned on the altar, with stated exceptions such as discarded bird parts and the priest’s right to a hide. Other offerings supply priestly portions. Sin offerings whose blood enters the sanctuary cannot be eaten. Leviticus 10:16–20 adds a dispute: Moses expects a goat offering to be eaten because its blood did not enter the sanctuary; Aaron questions eating after the day’s calamity, and Moses accepts his explanation. This contextual exception should not erase the general rule.",
     "reasoning": "The chapter 6 exceptions explain why a command to eat one offering need not conflict with a command to burn another. Offering type, priestly ownership and blood destination matter.",
     "scope": "This compares stated ritual categories, not every later legal interpretation, historical practice or ethical issue concerning animal sacrifice.",
     "refs": [
@@ -8594,6 +8698,60 @@ const EVIDENCE=[
         "book": 2,
         "chapter": 7,
         "verse": 32
+      },
+      {
+        "label": "Leviticus 10:12",
+        "book": 2,
+        "chapter": 10,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 10:13",
+        "book": 2,
+        "chapter": 10,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 10:14",
+        "book": 2,
+        "chapter": 10,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 10:15",
+        "book": 2,
+        "chapter": 10,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 10:16",
+        "book": 2,
+        "chapter": 10,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 10:17",
+        "book": 2,
+        "chapter": 10,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 10:18",
+        "book": 2,
+        "chapter": 10,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 10:19",
+        "book": 2,
+        "chapter": 10,
+        "verse": 19
+      },
+      {
+        "label": "Leviticus 10:20",
+        "book": 2,
+        "chapter": 10,
+        "verse": 20
       }
     ],
     "sources": [
@@ -8620,6 +8778,10 @@ const EVIDENCE=[
       {
         "label": "Leviticus 7 · primary scripture",
         "url": "https://ebible.org/eng-kjv/LEV07.htm"
+      },
+      {
+        "label": "Leviticus 10 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV10.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -9019,6 +9181,159 @@ const EVIDENCE=[
       {
         "label": "Leviticus 6 · primary scripture",
         "url": "https://ebible.org/eng-kjv/LEV06.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-fire-contrasting-outcomes",
+    "mode": "history",
+    "ref": "Leviticus 9:6",
+    "appliesTo": [
+      "Leviticus 9:6",
+      "Leviticus 9:22",
+      "Leviticus 9:23",
+      "Leviticus 9:24",
+      "Leviticus 10:1",
+      "Leviticus 10:2",
+      "Leviticus 10:3",
+      "Leviticus 10:4",
+      "Leviticus 10:5"
+    ],
+    "title": "Fire marks acceptance and then judgment",
+    "status": "Context",
+    "summary": "Consecutive scenes assign opposite outcomes to fire described as coming from God.",
+    "text": "At the inauguration, fire consumes the altar offering and the people respond with awe. In the next scene, Nadab and Abihu offer unauthorized fire and die when fire comes from God.",
+    "reasoning": "The narrative contrasts authorized worship with an unauthorized act. It gives no detailed physical account of either fire event.",
+    "scope": "The account identifies the act as uncommanded, but does not fully specify the procedural breach, independently verify the deaths or establish a natural mechanism.",
+    "refs": [
+      {
+        "label": "Leviticus 9:6",
+        "book": 2,
+        "chapter": 9,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 9:22",
+        "book": 2,
+        "chapter": 9,
+        "verse": 22
+      },
+      {
+        "label": "Leviticus 9:23",
+        "book": 2,
+        "chapter": 9,
+        "verse": 23
+      },
+      {
+        "label": "Leviticus 9:24",
+        "book": 2,
+        "chapter": 9,
+        "verse": 24
+      },
+      {
+        "label": "Leviticus 10:1",
+        "book": 2,
+        "chapter": 10,
+        "verse": 1
+      },
+      {
+        "label": "Leviticus 10:2",
+        "book": 2,
+        "chapter": 10,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 10:3",
+        "book": 2,
+        "chapter": 10,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 10:4",
+        "book": 2,
+        "chapter": 10,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 10:5",
+        "book": 2,
+        "chapter": 10,
+        "verse": 5
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 9 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV09.htm"
+      },
+      {
+        "label": "Leviticus 10 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV10.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-wine-and-priestly-duty",
+    "mode": "history",
+    "ref": "Leviticus 10:1",
+    "appliesTo": [
+      "Leviticus 10:1",
+      "Leviticus 10:2",
+      "Leviticus 10:8",
+      "Leviticus 10:9",
+      "Leviticus 10:10",
+      "Leviticus 10:11"
+    ],
+    "title": "The wine prohibition does not prove the brothers were intoxicated",
+    "status": "Context",
+    "summary": "The later rule concerns priests entering the sanctuary and performing their duties.",
+    "text": "After Nadab and Abihu’s deaths, Aaron is told that he and his sons must not drink wine or strong drink when entering the sanctuary. Distinguishing sacred categories and teaching are stated purposes.",
+    "reasoning": "The placement may invite a connection with the preceding episode, but the account never explicitly says the brothers drank. That diagnosis would be an inference.",
+    "scope": "This establishes the rule’s stated setting, not a ban on every person drinking in every circumstance or proof of the brothers’ condition.",
+    "refs": [
+      {
+        "label": "Leviticus 10:1",
+        "book": 2,
+        "chapter": 10,
+        "verse": 1
+      },
+      {
+        "label": "Leviticus 10:2",
+        "book": 2,
+        "chapter": 10,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 10:8",
+        "book": 2,
+        "chapter": 10,
+        "verse": 8
+      },
+      {
+        "label": "Leviticus 10:9",
+        "book": 2,
+        "chapter": 10,
+        "verse": 9
+      },
+      {
+        "label": "Leviticus 10:10",
+        "book": 2,
+        "chapter": 10,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 10:11",
+        "book": 2,
+        "chapter": 10,
+        "verse": 11
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 10 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV10.htm"
       }
     ],
     "checked": "2026-10-12"
