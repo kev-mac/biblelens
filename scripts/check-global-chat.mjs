@@ -18,6 +18,9 @@ try{
  const adam=await ask('what day was adam created');assert(adam.some(s=>s.url==='#read/0/1'&&s.text.includes('sixth day')));assert(adam.some(s=>s.url==='#read/0/2'));
  for(const wording of ['what day was mankind created','what day was man created','when was humanity made']){const human=await ask(wording);assert(human.some(s=>s.url==='#read/0/1'&&s.text.includes('sixth day')));assert(human.some(s=>s.url==='#read/0/2'));}
  assert.match(payload.instructions,/Describe that reading conditionally/);assert.match(payload.instructions,/distinction in the summary itself/);
+ for(const wording of ['is shrimp ok to eat according to the Bible?','Can Christians eat prawns?','Is shellfish forbidden?','What about lobster and crab?','Are oysters or clams unclean?','Can I eat mussels and scallops?']){const seafood=await ask(wording,{book:0,chapter:1});assert(seafood.some(s=>s.url==='#read/2/11'&&s.text.includes('fins and scales')));assert(seafood.some(s=>s.url==='#read/4/14'&&s.text.includes('ye may not eat')));assert(seafood.some(s=>s.url==='#read/40/7'));assert(seafood.some(s=>s.url==='#read/43/10'&&s.text.includes('any man common or unclean')));assert(seafood.some(s=>s.url==='#read/44/14'));}
+ const seafoodFollowup=await ask('is it allowed then?',{history:[{role:'user',content:'Can I eat shrimp?'}]});assert(seafoodFollowup.some(s=>s.url==='#read/2/11'));assert(seafoodFollowup.some(s=>s.url==='#read/4/14'));
+ assert.match(payload.instructions,/rather than requiring the modern animal name/);assert.match(payload.instructions,/uncontested seafood command/);
  assert.match(payload.instructions,/Never assert that an event never happened/);
  assert.deepEqual(payload.text.format.schema.required,['summary','details','source_ids']);assert.match(payload.instructions,/NO citation markers/);
 }finally{globalThis.fetch=originalFetch;}

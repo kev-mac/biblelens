@@ -1,0 +1,5 @@
+# Seafood retrieval correction - 2026-10-12
+
+Literal word retrieval missed shrimp while shellfish could produce an answer. Added category routing for shrimp/prawns, shellfish, crustaceans, lobster/crab, oysters/clams/mussels/scallops and seafood to packaged Leviticus 11, Deuteronomy 14, Mark 7, Acts 10 and Romans 14. Torah fins/scales criterion is available even when the query uses a modern species name; later passages are supplied for context rather than a universal religious ruling. No live internet search added to Chat.
+
+Instructions require distinguishing the Torah rule addressed to Israel from Christian application, Mark 7 handwashing/defilement context, Acts 10:28 people interpretation, and Romans 14 conscience. Regression checks exercise source contents for multiple wordings and pronoun follow-up; they verify retrieval, not model answer accuracy. Live model answers require separate verification after deployment. This repairs one concept family; it does not claim semantic retrieval is complete throughout the Bible.
