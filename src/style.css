@@ -107,3 +107,6 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 .comparison-tab.plain,body.dark .comparison-tab.plain{background:#edf3ee;color:#24352d}
 .summary-citations{gap:6px;margin:8px 0}
 .summary-citations .verse-citation{font:11px/1.4 system-ui;padding:4px 7px;min-height:28px;border-radius:4px}
+
+/* Compact summary lines. */
+.comparison-summary,.comparison-cell .comparison-summary,.study-tldr .comparison-summary,.commentary-card .comparison-summary,.evidence-result .comparison-summary{line-height:1.5}
