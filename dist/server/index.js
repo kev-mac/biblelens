@@ -835,12 +835,17 @@ const EVIDENCE=[
     "ref": "Numbers 20:28",
     "appliesTo": [
       "Numbers 20:28",
-      "Deuteronomy 10:6"
+      "Deuteronomy 10:6",
+      "Numbers 33:30",
+      "Numbers 33:31",
+      "Numbers 33:37",
+      "Numbers 33:38",
+      "Numbers 33:39"
     ],
     "title": "Where did Aaron die?",
     "status": "Textual conflict",
     "summary": "Numbers locates Aaron's death on Mount Hor; Deuteronomy names Mosera.",
-    "text": "Numbers locates Aaron's death on Mount Hor; Deuteronomy names Mosera.",
+    "text": "Numbers locates Aaron's death on Mount Hor; Deuteronomy names Mosera. Numbers 33 again places Aaron’s death at Mount Hor and lists Moseroth earlier in the itinerary. It does not explicitly identify Moseroth/Mosera with Mount Hor; a regional or retracing explanation needs additional geographical evidence.",
     "reasoning": "Read as distinct death locations, these accounts differ. A harmonization could place Mount Hor within a region called Mosera, but the cited passages do not explain that relationship.",
     "scope": "A geographical tension in the text; these passages alone cannot settle the historical location.",
     "sources": [
@@ -851,6 +856,10 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 10 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU10.htm"
+      },
+      {
+        "label": "Numbers 33 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM33.htm"
       }
     ],
     "refs": [
@@ -865,9 +874,39 @@ const EVIDENCE=[
         "chapter": 10,
         "verse": 6,
         "label": "Deuteronomy 10:6"
+      },
+      {
+        "label": "Numbers 33:30",
+        "book": 3,
+        "chapter": 33,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 33:31",
+        "book": 3,
+        "chapter": 33,
+        "verse": 31
+      },
+      {
+        "label": "Numbers 33:37",
+        "book": 3,
+        "chapter": 33,
+        "verse": 37
+      },
+      {
+        "label": "Numbers 33:38",
+        "book": 3,
+        "chapter": 33,
+        "verse": 38
+      },
+      {
+        "label": "Numbers 33:39",
+        "book": 3,
+        "chapter": 33,
+        "verse": 39
       }
     ],
-    "checked": "2026-10-11"
+    "checked": "2026-10-12"
   },
   {
     "id": "early-conquest",
@@ -884,12 +923,17 @@ const EVIDENCE=[
       "Judges 1:32",
       "Exodus 23:29",
       "Exodus 23:30",
-      "Exodus 23:31"
+      "Exodus 23:31",
+      "Numbers 33:51",
+      "Numbers 33:52",
+      "Numbers 33:53",
+      "Numbers 33:55",
+      "Numbers 33:56"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
     "sources": [
@@ -912,6 +956,10 @@ const EVIDENCE=[
       {
         "label": "Exodus 23 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO23.htm"
+      },
+      {
+        "label": "Numbers 33 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM33.htm"
       }
     ],
     "refs": [
@@ -980,9 +1028,39 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 23,
         "verse": 31
+      },
+      {
+        "label": "Numbers 33:51",
+        "book": 3,
+        "chapter": 33,
+        "verse": 51
+      },
+      {
+        "label": "Numbers 33:52",
+        "book": 3,
+        "chapter": 33,
+        "verse": 52
+      },
+      {
+        "label": "Numbers 33:53",
+        "book": 3,
+        "chapter": 33,
+        "verse": 53
+      },
+      {
+        "label": "Numbers 33:55",
+        "book": 3,
+        "chapter": 33,
+        "verse": 55
+      },
+      {
+        "label": "Numbers 33:56",
+        "book": 3,
+        "chapter": 33,
+        "verse": 56
       }
     ],
-    "checked": "2026-10-11"
+    "checked": "2026-10-12"
   },
   {
     "id": "early-ruth-shoe",
@@ -14354,11 +14432,16 @@ const EVIDENCE=[
       "Numbers 18:29",
       "Numbers 18:30",
       "Numbers 18:31",
-      "Numbers 18:32"
+      "Numbers 18:32",
+      "Numbers 35:2",
+      "Numbers 35:3",
+      "Numbers 35:6",
+      "Numbers 35:7",
+      "Numbers 35:8"
     ],
     "status": "Context",
     "summary": "Tithes support Levite service, and a tenth of that tithe is assigned onward to Aaron.",
-    "text": "The chapter contrasts a land inheritance with support through tithes. Levites must give a portion of what they receive before their households consume the remainder.",
+    "text": "The chapter contrasts a land inheritance with support through tithes. Levites must give a portion of what they receive before their households consume the remainder. Numbers 35 assigns forty-eight Levite towns with surrounding land from other tribes’ possessions. This distinguishes residence and pasture provision from a separate tribal land allotment, while historical implementation remains unverified.",
     "reasoning": "Describing this simply as all tithes belonging directly to priests erases the separate recipients and onward obligation.",
     "scope": "This is a prescribed arrangement, not proof of collection or distribution in a particular historical period. Other tithe legislation and land-holding rules require comparison.",
     "refs": [
@@ -14427,12 +14510,46 @@ const EVIDENCE=[
         "book": 3,
         "chapter": 18,
         "verse": 32
+      },
+      {
+        "label": "Numbers 35:2",
+        "book": 3,
+        "chapter": 35,
+        "verse": 2
+      },
+      {
+        "label": "Numbers 35:3",
+        "book": 3,
+        "chapter": 35,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 35:6",
+        "book": 3,
+        "chapter": 35,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 35:7",
+        "book": 3,
+        "chapter": 35,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 35:8",
+        "book": 3,
+        "chapter": 35,
+        "verse": 8
       }
     ],
     "sources": [
       {
         "label": "Numbers 18 · primary text",
         "url": "https://ebible.org/eng-kjv/NUM18.htm"
+      },
+      {
+        "label": "Numbers 35 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM35.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -16085,6 +16202,304 @@ const EVIDENCE=[
       {
         "label": "Louvre · Mesha stela AO 5066",
         "url": "https://collections.louvre.fr/en/ark:/53355/cl010120339"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-canaan-boundary-scope",
+    "mode": "history",
+    "title": "The Canaan boundary list excludes the already allocated eastern territories",
+    "ref": "Numbers 34:2",
+    "appliesTo": [
+      "Numbers 34:2",
+      "Numbers 34:3",
+      "Numbers 34:5",
+      "Numbers 34:6",
+      "Numbers 34:7",
+      "Numbers 34:10",
+      "Numbers 34:11",
+      "Numbers 34:12",
+      "Numbers 34:13",
+      "Numbers 34:14",
+      "Numbers 34:15",
+      "Numbers 34:17",
+      "Numbers 34:18"
+    ],
+    "status": "Context",
+    "summary": "The bounded Canaan inheritance is assigned to nine and a half tribes; two and a half tribes already have land east of Jordan.",
+    "text": "The chapter’s eastern boundary descends along Jordan. Its allocation explanation explicitly separates Reuben, Gad and half of Manasseh’s eastern inheritance from the land being divided here.",
+    "reasoning": "Reading this boundary as the complete extent of every tribal possession would overlook the chapter’s stated scope. The named boundary is a prescription, not a survey proving historical control.",
+    "scope": "Exact identifications of several northern and southern markers remain unresolved here. No precise modern political map or historical occupation limit is inferred.",
+    "refs": [
+      {
+        "label": "Numbers 34:2",
+        "book": 3,
+        "chapter": 34,
+        "verse": 2
+      },
+      {
+        "label": "Numbers 34:3",
+        "book": 3,
+        "chapter": 34,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 34:5",
+        "book": 3,
+        "chapter": 34,
+        "verse": 5
+      },
+      {
+        "label": "Numbers 34:6",
+        "book": 3,
+        "chapter": 34,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 34:7",
+        "book": 3,
+        "chapter": 34,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 34:10",
+        "book": 3,
+        "chapter": 34,
+        "verse": 10
+      },
+      {
+        "label": "Numbers 34:11",
+        "book": 3,
+        "chapter": 34,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 34:12",
+        "book": 3,
+        "chapter": 34,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 34:13",
+        "book": 3,
+        "chapter": 34,
+        "verse": 13
+      },
+      {
+        "label": "Numbers 34:14",
+        "book": 3,
+        "chapter": 34,
+        "verse": 14
+      },
+      {
+        "label": "Numbers 34:15",
+        "book": 3,
+        "chapter": 34,
+        "verse": 15
+      },
+      {
+        "label": "Numbers 34:17",
+        "book": 3,
+        "chapter": 34,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 34:18",
+        "book": 3,
+        "chapter": 34,
+        "verse": 18
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 34 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM34.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-levite-town-measurements",
+    "mode": "contradictions",
+    "title": "The pasture measurements require an interpretation of the layout",
+    "ref": "Numbers 35:4",
+    "appliesTo": [
+      "Numbers 35:4",
+      "Numbers 35:5"
+    ],
+    "status": "Context",
+    "summary": "One verse specifies 1,000 cubits outward from the wall; the next names 2,000 cubits on each side.",
+    "text": "NET note 8 acknowledges uncertainty about the layout and cites a proposal distinguishing frontage from depth.",
+    "reasoning": "If both figures measure the same outward distance, they conflict. Different dimensions could reconcile them, but that plan is an interpretation rather than an explicit diagram in the passage.",
+    "scope": "This preserves the numerical tension without claiming a settled survey plan, cubit length or archaeological verification.",
+    "refs": [
+      {
+        "label": "Numbers 35:4",
+        "book": 3,
+        "chapter": 35,
+        "verse": 4
+      },
+      {
+        "label": "Numbers 35:5",
+        "book": 3,
+        "chapter": 35,
+        "verse": 5
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 35 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM35.htm"
+      },
+      {
+        "label": "NET Numbers 35 · layout note 8",
+        "url": "https://classic.net.bible.org/bible.php?book=Num&chapter=35"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-refuge-protection-and-limits",
+    "mode": "history",
+    "title": "Refuge protects an unintentional killer under restricted residence",
+    "ref": "Numbers 35:11",
+    "appliesTo": [
+      "Numbers 35:11",
+      "Numbers 35:12",
+      "Numbers 35:14",
+      "Numbers 35:15",
+      "Numbers 35:19",
+      "Numbers 35:20",
+      "Numbers 35:21",
+      "Numbers 35:22",
+      "Numbers 35:23",
+      "Numbers 35:24",
+      "Numbers 35:25",
+      "Numbers 35:26",
+      "Numbers 35:27",
+      "Numbers 35:28",
+      "Numbers 35:30",
+      "Numbers 35:31",
+      "Numbers 35:32"
+    ],
+    "status": "Context",
+    "summary": "Community judgment distinguishes cases; refuge protection requires residence until the high priest’s death.",
+    "text": "The law extends refuge to Israelites and resident outsiders. An avenger may kill the protected slayer outside its boundary without bloodguilt. One witness is insufficient for execution, and ransom cannot buy early return.",
+    "reasoning": "Protection from immediate vengeance is qualified by location and duration, rather than a declaration that unintentional killing has no consequences.",
+    "scope": "This describes the prescribed procedure, not verified enforcement or an ethical justification for killing someone who leaves refuge.",
+    "refs": [
+      {
+        "label": "Numbers 35:11",
+        "book": 3,
+        "chapter": 35,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 35:12",
+        "book": 3,
+        "chapter": 35,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 35:14",
+        "book": 3,
+        "chapter": 35,
+        "verse": 14
+      },
+      {
+        "label": "Numbers 35:15",
+        "book": 3,
+        "chapter": 35,
+        "verse": 15
+      },
+      {
+        "label": "Numbers 35:19",
+        "book": 3,
+        "chapter": 35,
+        "verse": 19
+      },
+      {
+        "label": "Numbers 35:20",
+        "book": 3,
+        "chapter": 35,
+        "verse": 20
+      },
+      {
+        "label": "Numbers 35:21",
+        "book": 3,
+        "chapter": 35,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 35:22",
+        "book": 3,
+        "chapter": 35,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 35:23",
+        "book": 3,
+        "chapter": 35,
+        "verse": 23
+      },
+      {
+        "label": "Numbers 35:24",
+        "book": 3,
+        "chapter": 35,
+        "verse": 24
+      },
+      {
+        "label": "Numbers 35:25",
+        "book": 3,
+        "chapter": 35,
+        "verse": 25
+      },
+      {
+        "label": "Numbers 35:26",
+        "book": 3,
+        "chapter": 35,
+        "verse": 26
+      },
+      {
+        "label": "Numbers 35:27",
+        "book": 3,
+        "chapter": 35,
+        "verse": 27
+      },
+      {
+        "label": "Numbers 35:28",
+        "book": 3,
+        "chapter": 35,
+        "verse": 28
+      },
+      {
+        "label": "Numbers 35:30",
+        "book": 3,
+        "chapter": 35,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 35:31",
+        "book": 3,
+        "chapter": 35,
+        "verse": 31
+      },
+      {
+        "label": "Numbers 35:32",
+        "book": 3,
+        "chapter": 35,
+        "verse": 32
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 35 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM35.htm"
+      },
+      {
+        "label": "NET Numbers 35 · primary translation and notes",
+        "url": "https://classic.net.bible.org/bible.php?book=Num&chapter=35"
       }
     ],
     "checked": "2026-10-12"
