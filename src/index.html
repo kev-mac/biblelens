@@ -8,12 +8,12 @@
 <label>Chapter<select id="chapter-select" aria-label="Chapter"><option>1</option></select></label>
 <label>Translation<select id="reader-edition"><option value="web">WEB</option><option value="kjv">KJV</option><option value="asv">ASV</option></select></label>
 <label>Compare<select id="reader-compare"><option value="none">Off</option><option value="contradictions">Contradictions</option><option value="history">Historic</option><option value="science">Scientific</option></select></label>
-<label>Commentary<select id="commentary-select"><option value="context">Our assessment</option><option value="responses">Responses</option><option value="none">Off</option></select></label>
+
 <div class="reader-nav"><button id="prev-chapter" class="secondary" aria-label="Previous chapter">←</button><button id="next-chapter" class="secondary" aria-label="Next chapter">→</button><button id="reader-font" class="secondary" aria-label="Change verse text size">A+</button></div>
 </div>
 <div class="selection-bar"><span id="reader-status" aria-live="polite">Loading chapter…</span><div><button id="clear-selection" class="text-button" hidden>Clear</button><button id="ask-selection" class="primary">Ask Chat →</button></div></div>
 <div id="comparison-status" class="comparison-status" aria-live="polite" hidden></div>
-<div id="reader-layout" class="reader-layout"><article id="chapter-text" class="chapter-text" aria-label="Chapter text"><p class="muted">Loading scripture…</p></article><aside id="reader-sidebar" class="reader-sidebar" aria-label="Commentary and comparisons"></aside></div>
+<div id="reader-layout" class="reader-layout no-sidebar"><article id="chapter-text" class="chapter-text" aria-label="Chapter text"><p class="muted">Loading scripture…</p></article></div>
 <div class="chapter-bottom"><button id="prev-bottom" class="secondary">← Previous</button><span id="chapter-footer"></span><button id="next-bottom" class="secondary">Next →</button></div>
 <p class="reader-footnote">KJV and ASV · 66 books · public-domain text. Contradictions currently cover six studies; History and Science use a limited sourced collection. Empty comparison cells mean no comparison is attached, not that the verse has been verified. Select verse numbers to ask about specific passages.</p>
 </section>
