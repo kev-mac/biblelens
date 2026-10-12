@@ -10,6 +10,8 @@ The initial expansion added 64 assessments and enhanced three existing compariso
 
 `research/coverage-audit.json` lists every chapter and its actual annotation locations. `research/notes/` records researched passages, source-access limitations and outstanding work. The reader keeps unannotated verses blank, as requested.
 
+Reader tags start closed and independently toggle their summary, citations and Details & sources. History tags are gold, Contradictions blue and Science green throughout both themes. History and Science display only explicit discrepancies; agreement and background assessments remain saved in the research collection. Coverage counts describe stored research attachments, not the number of visible discrepancy tags.
+
 ## Build and check
 
 Requires Node.js 22 or later; no dependency installation is needed.

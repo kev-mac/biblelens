@@ -103,7 +103,9 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 .verse-comparison .comparison-summary{background:var(--summary-tint,#edf3ee);color:var(--summary-ink,#24352d);border-color:color-mix(in srgb,var(--summary-ink,#24352d) 24%,var(--summary-tint,#edf3ee))}
 .comparison-tabs{display:flex;flex-wrap:wrap;gap:7px;margin:2px 0 10px}
 .comparison-tabs .comparison-tab{border:1px solid transparent;cursor:pointer;font:600 13px/1 system-ui;padding:0;width:32px;height:32px;min-height:32px;flex:0 0 32px;display:grid;place-items:center;border-radius:4px;text-align:center}
-.comparison-tab[aria-selected="true"]{outline:2px solid var(--green);outline-offset:2px;font-weight:700}
+.comparison-tab[aria-pressed="true"]{outline:2px solid var(--green);outline-offset:2px;font-weight:700}
+.comparison-panel[hidden]{display:none}
+.comparison-panel+.comparison-panel{margin-top:16px}
 .comparison-tab.plain,body.dark .comparison-tab.plain{background:#edf3ee;color:#24352d}
 .summary-citations{gap:6px;margin:8px 0}
 .summary-citations .verse-citation{font:11px/1.4 system-ui;padding:4px 7px;min-height:28px;border-radius:4px}
@@ -113,3 +115,11 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 
 .verse-comparison[data-tone="context"]{--summary-tint:#eef2f5;--summary-ink:#344859}
 .agreement.context,body.dark .agreement.context{background:#e5edf3;color:#344859}
+
+/* Category colors remain consistent across verses, assessments and themes. */
+.verse-comparison[data-tone="history"]{--summary-tint:#f8e8c3;--summary-ink:#624514}
+.verse-comparison[data-tone="contradictions"]{--summary-tint:#edf1fc;--summary-ink:#34456b}
+.verse-comparison[data-tone="science"]{--summary-tint:#e6f5ed;--summary-ink:#234c3b}
+.agreement.history,body.dark .agreement.history{background:#f8e8c3;color:#624514}
+.agreement.contradictions,body.dark .agreement.contradictions{background:#edf1fc;color:#34456b}
+.agreement.science,body.dark .agreement.science{background:#e6f5ed;color:#234c3b}

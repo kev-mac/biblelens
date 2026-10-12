@@ -9,7 +9,7 @@ for(const [id,key] of [['#reader-edition','edition'],['#reader-compare','compare
 function readRef(ref){const m=/^(.*?) (\d+):(\d+)/.exec(ref);const book=m&&books.find(b=>b.name===m[1]);return book?{book:book.id,chapter:+m[2],verse:+m[3]}:null;}
 function chapterStudies(){if(!reading)return [];return ENTRIES.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter}));}
 function applicableStudies(){const entries=chapterStudies();if(!selectedVerses.size)return entries;const matching=entries.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter&&selectedVerses.has(p.verse)}));return matching.length?matching:entries;}
-function chapterOptions(){const book=books[readingBook];$('#chapter-select').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===readingChapter?'selected':''}>${i+1}</option>`).join('');$('#book-select').value=String(readingBook);}
+function chapterOptions(){comparisonSelections.clear();const book=books[readingBook];$('#chapter-select').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===readingChapter?'selected':''}>${i+1}</option>`).join('');$('#book-select').value=String(readingBook);}
 function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#chat-context-label').textContent=label;$('#chat-selection-label').textContent=selectedVerses.size?'Verses '+[...selectedVerses].sort((a,b)=>a-b).join(', '):'Whole chapter';$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${label} · ${reading?.verses.length||0} verses`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;for(const id of ['#prev-chapter','#prev-bottom'])$(id).disabled=first;for(const id of ['#next-chapter','#next-bottom'])$(id).disabled=last;}
 async function loadChapter(book,ch,verse=null,updateHash=true){const b=books[book];if(!b||!Number.isInteger(ch)||ch<1||ch>b.chapters)return;const version=++loadVersion;readingBook=book;readingChapter=ch;selectedVerses.clear();chapterOptions();$('#reader-status').textContent='Loading chapter…';$('#chapter-text').innerHTML='<p class="chapter-loading">Loading chapter…</p>';$('#comparison-status').hidden=true;try{const response=await fetch(`/api/chapter?book=${book}&chapter=${ch}`);if(!response.ok)throw Error('Chapter could not be loaded');const data=await response.json();if(version!==loadVersion)return;reading=data;if(verse&&data.verses.some(v=>v.n===verse))selectedVerses.add(verse);state.reading={book,chapter:ch};persist();renderReader();if(updateHash)history.replaceState(null,'',`#read/${book}/${ch}${verse?'/'+verse:''}`);if(verse)requestAnimationFrame(()=>$(`#verse-${verse}`)?.scrollIntoView({block:'center',behavior:'smooth'}));else window.scrollTo({top:0,behavior:'instant'});}catch(err){if(version!==loadVersion)return;reading=null;$('#chapter-text').innerHTML='<div class="reader-error"><p>Could not load this chapter.</p><button id="retry-chapter" class="primary">Retry</button></div>';$('#retry-chapter').onclick=()=>loadChapter(book,ch,verse,updateHash);$('#reader-status').textContent='Chapter unavailable. Try again.';}}
 const comparisonCache=new Map();
@@ -18,7 +18,8 @@ const comparisonModes=['history','contradictions','science'];
 const comparisonLabels={history:'Historic',contradictions:'Contradictions',science:'Scientific'};
 function comparisonKey(mode=$('#reader-compare').value){return `${readingBook}:${readingChapter}:${$('#reader-edition').value}:${mode}`;}
 function selectionKey(verse){return `${comparisonKey('tabs')}:${verse}`;}
-function verseComparisons(verse){return comparisonModes.flatMap(mode=>(comparisonCache.get(comparisonKey(mode))?.items||[]).filter(i=>i.verse===verse).map((item,index)=>({...item,mode,key:`${mode}-${index}`})));}
+function visibleComparison(item){return item.mode==='contradictions'||(item.status!=='Agrees'&&(item.status==='Disagrees'||item.discrepancy===true));}
+function verseComparisons(verse){return comparisonModes.flatMap(mode=>(comparisonCache.get(comparisonKey(mode))?.items||[]).filter(i=>i.verse===verse).map((item,index)=>({...item,mode,key:`${mode}-${index}`}))).filter(visibleComparison);}
 
 function scienceDetails(item){if(!item.fields?.length)return '';return `<div class="science-fields"><h4>Relevant fields & why</h4>${item.fields.map(f=>`<section class="science-field"><h5>${esc(f.branch)}</h5><p>${esc(f.text)}</p><div class="field-sources">${f.sources.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')}</div></section>`).join('')}</div>`;}
 function alternativeReadings(verse){
@@ -32,29 +33,22 @@ function comparisonCell(verse){
  const items=verseComparisons(verse);
  if(!items.length)return '<div class="comparison-cell" aria-label="No comparison attached"></div>';
  const choices=items;
- const selected=comparisonSelections.get(selectionKey(verse));
- const active=choices.find(i=>i.key===selected)||choices.find(i=>i.mode===mode)||choices[0];
- const tone=item=>item.status==='Agrees'?'agrees':item.status==='Disagrees'?'disagrees':item.status==='Context'?'context':'conflict';
- const tabs=choices.map(item=>{const duplicate=choices.filter(i=>i.mode===item.mode).length>1;const label=`${comparisonLabels[item.mode]}${item.status?' · '+item.status:''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;return `<button type="button" class="agreement comparison-tab ${tone(item)}" id="comparison-tab-${verse}-${item.key}" role="tab" aria-selected="${item.key===active.key}" aria-controls="comparison-panel-${verse}" tabindex="${item.key===active.key?0:-1}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${comparisonLabels[item.mode][0]}</button>`}).join('');
- let content='';
-  content=`${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(active.summary||active.text)}</p>${comparisonCitations(verse,[active])}<details class="comparison-details"><summary>Details & sources</summary><p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${alternativeReadings(verse)}${active.reasoning?`<p><b>Reasoning:</b> ${esc(active.reasoning)}</p>`:''}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details>`;
- return `<div class="comparison-cell"><div class="verse-comparison" data-tone="${tone(active)}"><div class="comparison-tabs" role="tablist" aria-label="Comparisons for verse ${verse}">${tabs}</div><div id="comparison-panel-${verse}" role="tabpanel" aria-labelledby="comparison-tab-${verse}-${active.key}">${content}</div></div></div>`;
+ const selected=comparisonSelections.get(selectionKey(verse))||new Set();
+ const tone=item=>item.mode;
+ const tabs=choices.map(item=>{const duplicate=choices.filter(i=>i.mode===item.mode).length>1;const label=`${comparisonLabels[item.mode]}${item.status?' · '+item.status:''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;const open=selected.has(item.key);return `<button type="button" class="agreement comparison-tab ${tone(item)}" id="comparison-tab-${verse}-${item.key}" aria-pressed="${open}" aria-expanded="${open}" aria-controls="comparison-panel-${verse}-${item.key}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${comparisonLabels[item.mode][0]}</button>`}).join('');
+ const panels=choices.map(active=>`<section class="verse-comparison comparison-panel" data-tone="${tone(active)}" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${selected.has(active.key)?'':'hidden'}>${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(active.summary||active.text)}</p>${comparisonCitations(verse,[active])}<details class="comparison-details"><summary>Details & sources</summary><p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${alternativeReadings(verse)}${active.reasoning?`<p><b>Reasoning:</b> ${esc(active.reasoning)}</p>`:''}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details></section>`).join('');
+ return `<div class="comparison-cell"><div class="comparison-tabs" role="group" aria-label="Comparisons for verse ${verse}">${tabs}</div>${panels}</div>`;
 }
 function selectComparison(button){
  const verse=Number(button.dataset.comparisonVerse),key=button.dataset.comparisonKey;
- comparisonSelections.set(selectionKey(verse),key);
- const cell=button.closest('.comparison-cell');cell.outerHTML=comparisonCell(verse);
- document.getElementById(`comparison-tab-${verse}-${key}`)?.focus({preventScroll:true});
- ensureComparisons();
+ const selected=comparisonSelections.get(selectionKey(verse))||new Set();
+ if(selected.has(key))selected.delete(key);else selected.add(key);
+ comparisonSelections.set(selectionKey(verse),selected);
+ const open=selected.has(key);button.setAttribute('aria-pressed',String(open));button.setAttribute('aria-expanded',String(open));
+ const panel=document.getElementById(`comparison-panel-${verse}-${key}`);if(panel)panel.hidden=!open;
 }
 document.addEventListener('click',ev=>{
  const tab=ev.target.closest('[data-comparison-key]');if(tab){selectComparison(tab);return;}
-});
-document.addEventListener('keydown',ev=>{
- const tab=ev.target.closest('[role="tab"][data-comparison-key]');if(!tab||!['ArrowLeft','ArrowRight','Home','End'].includes(ev.key))return;
- ev.preventDefault();const tabs=[...tab.parentElement.querySelectorAll('[role="tab"]')],index=tabs.indexOf(tab);
- const next=ev.key==='Home'?0:ev.key==='End'?tabs.length-1:(index+(ev.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
- selectComparison(tabs[next]);
 });
 function citationButton(ref){const p=typeof ref==='string'?readRef(ref):ref;if(!p)return '';const label=typeof ref==='string'?ref:ref.label||`${books[p.book]?.name||reading.name} ${p.chapter}:${p.verse}`;return `<button type="button" class="verse-citation" data-cite="${p.book}/${p.chapter}/${p.verse}" data-cite-label="${esc(label)}" aria-haspopup="dialog">${esc(label)}</button>`;}
 function comparisonCitations(verse,items){const refs=[{book:readingBook,chapter:readingChapter,verse,label:`${reading.name} ${readingChapter}:${verse}`},...items.flatMap(i=>i.refs||[])];return `<div class="summary-citations">${refs.filter((r,i)=>refs.findIndex(other=>other.book===r.book&&other.chapter===r.chapter&&other.verse===r.verse)===i).map(citationButton).join('')}</div>`;}
@@ -65,8 +59,8 @@ function comparisonStatus(){
  const failures=records.filter(r=>r?.status==='error');
  if(failures.length){status.innerHTML='Some comparison tags could not load. <button class="text-button" id="retry-comparison">Retry</button>';$('#retry-comparison').onclick=()=>{for(const m of comparisonModes)if(comparisonCache.get(comparisonKey(m))?.status==='error')comparisonCache.delete(comparisonKey(m));ensureComparisons();};return;}
  if(records.some(r=>!r||r.status==='loading')){status.textContent='Loading comparison tags…';return;}
- const count=new Set(records.flatMap(r=>(r.items||[]).map(item=>item.id||`${item.mode||''}:${item.title||''}:${item.summary}`))).size;
- status.textContent=`${count} sourced comparisons · Select a tag to switch summaries.`;
+ const count=new Set(records.flatMap((r,index)=>(r.items||[]).filter(item=>visibleComparison({...item,mode:comparisonModes[index]})).map(item=>item.id||`${comparisonModes[index]}:${item.title||''}:${item.summary}`))).size;
+ status.textContent=`${count} sourced comparisons · Click tags to show or hide summaries.`;
 }
 async function ensureComparisons(){
  if(!reading||$('#reader-compare').value==='none')return;
