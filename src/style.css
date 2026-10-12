@@ -110,3 +110,6 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 
 /* Compact summary lines. */
 .comparison-summary,.comparison-cell .comparison-summary,.study-tldr .comparison-summary,.commentary-card .comparison-summary,.evidence-result .comparison-summary{line-height:1.5}
+
+.verse-comparison[data-tone="context"]{--summary-tint:#eef2f5;--summary-ink:#344859}
+.agreement.context,body.dark .agreement.context{background:#e5edf3;color:#344859}

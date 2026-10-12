@@ -510,5 +510,3760 @@
         "label": "Genesis 1:19"
       }
     ]
+  },
+  {
+    "id": "early-ark-count",
+    "mode": "contradictions",
+    "ref": "Genesis 6:19",
+    "appliesTo": [
+      "Genesis 6:19",
+      "Genesis 6:20",
+      "Genesis 7:2",
+      "Genesis 7:3"
+    ],
+    "title": "Two animals or seven pairs?",
+    "status": "Context",
+    "summary": "Genesis 6 gives a general instruction to bring pairs; Genesis 7 specifies larger numbers of clean animals and birds.",
+    "text": "Genesis 6 gives a general instruction to bring pairs; Genesis 7 specifies larger numbers of clean animals and birds.",
+    "reasoning": "The later distinction can qualify the earlier general rule. Different quantities are present, but the text does not require treating the instructions as mutually exclusive.",
+    "scope": "This is a comparison of the surviving narrative, not independent confirmation of an ark or flood.",
+    "sources": [
+      {
+        "label": "Genesis 6 · primary text",
+        "url": "https://ebible.org/eng-kjv/GEN06.htm"
+      },
+      {
+        "label": "Genesis 7 · primary text",
+        "url": "https://ebible.org/eng-kjv/GEN07.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 0,
+        "chapter": 6,
+        "verse": 19,
+        "label": "Genesis 6:19"
+      },
+      {
+        "book": 0,
+        "chapter": 6,
+        "verse": 20,
+        "label": "Genesis 6:20"
+      },
+      {
+        "book": 0,
+        "chapter": 7,
+        "verse": 2,
+        "label": "Genesis 7:2"
+      },
+      {
+        "book": 0,
+        "chapter": 7,
+        "verse": 3,
+        "label": "Genesis 7:3"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-sabbath",
+    "mode": "contradictions",
+    "ref": "Exodus 20:11",
+    "appliesTo": [
+      "Exodus 20:11",
+      "Deuteronomy 5:15"
+    ],
+    "title": "Two reasons for the Sabbath",
+    "status": "Context",
+    "summary": "Exodus grounds Sabbath rest in creation; Deuteronomy grounds it in liberation from slavery.",
+    "text": "Exodus grounds Sabbath rest in creation; Deuteronomy grounds it in liberation from slavery.",
+    "reasoning": "The command to rest is shared, while its stated rationale changes. Both reasons can coexist, so this variation alone is not a logical contradiction.",
+    "scope": "Textual difference; no claim about which version was historically first.",
+    "sources": [
+      {
+        "label": "Exodus 20 · primary text",
+        "url": "https://ebible.org/eng-kjv/EXO20.htm"
+      },
+      {
+        "label": "Deuteronomy 5 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU05.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 1,
+        "chapter": 20,
+        "verse": 11,
+        "label": "Exodus 20:11"
+      },
+      {
+        "book": 4,
+        "chapter": 5,
+        "verse": 15,
+        "label": "Deuteronomy 5:15"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-servitude",
+    "mode": "history",
+    "ref": "Leviticus 25:39",
+    "appliesTo": [
+      "Leviticus 25:39",
+      "Leviticus 25:40",
+      "Leviticus 25:44",
+      "Leviticus 25:45",
+      "Leviticus 25:46",
+      "Exodus 21:2",
+      "Deuteronomy 15:12"
+    ],
+    "title": "Different legal treatment of servants and slaves",
+    "status": "Context",
+    "summary": "Leviticus distinguishes impoverished Israelites from foreign slaves, allowing foreign slaves to be inherited as property.",
+    "text": "Leviticus distinguishes impoverished Israelites from foreign slaves, allowing foreign slaves to be inherited as property.",
+    "reasoning": "The temporary service protections for Israelites do not apply equally to the foreign slaves in verses 44–46. Calling every arrangement ordinary paid employment obscures that distinction.",
+    "scope": "These laws are primary evidence for the text's legal categories; they do not establish how consistently those laws were practiced.",
+    "sources": [
+      {
+        "label": "Leviticus 25 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV25.htm"
+      },
+      {
+        "label": "Exodus 21 · primary text",
+        "url": "https://ebible.org/eng-kjv/EXO21.htm"
+      },
+      {
+        "label": "Deuteronomy 15 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU15.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 2,
+        "chapter": 25,
+        "verse": 39,
+        "label": "Leviticus 25:39"
+      },
+      {
+        "book": 2,
+        "chapter": 25,
+        "verse": 40,
+        "label": "Leviticus 25:40"
+      },
+      {
+        "book": 2,
+        "chapter": 25,
+        "verse": 44,
+        "label": "Leviticus 25:44"
+      },
+      {
+        "book": 2,
+        "chapter": 25,
+        "verse": 45,
+        "label": "Leviticus 25:45"
+      },
+      {
+        "book": 2,
+        "chapter": 25,
+        "verse": 46,
+        "label": "Leviticus 25:46"
+      },
+      {
+        "book": 1,
+        "chapter": 21,
+        "verse": 2,
+        "label": "Exodus 21:2"
+      },
+      {
+        "book": 4,
+        "chapter": 15,
+        "verse": 12,
+        "label": "Deuteronomy 15:12"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-aaron",
+    "mode": "contradictions",
+    "ref": "Numbers 20:28",
+    "appliesTo": [
+      "Numbers 20:28",
+      "Deuteronomy 10:6"
+    ],
+    "title": "Where did Aaron die?",
+    "status": "Textual conflict",
+    "summary": "Numbers locates Aaron's death on Mount Hor; Deuteronomy names Mosera.",
+    "text": "Numbers locates Aaron's death on Mount Hor; Deuteronomy names Mosera.",
+    "reasoning": "Read as distinct death locations, these accounts differ. A harmonization could place Mount Hor within a region called Mosera, but the cited passages do not explain that relationship.",
+    "scope": "A geographical tension in the text; these passages alone cannot settle the historical location.",
+    "sources": [
+      {
+        "label": "Numbers 20 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM20.htm"
+      },
+      {
+        "label": "Deuteronomy 10 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU10.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 3,
+        "chapter": 20,
+        "verse": 28,
+        "label": "Numbers 20:28"
+      },
+      {
+        "book": 4,
+        "chapter": 10,
+        "verse": 6,
+        "label": "Deuteronomy 10:6"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-conquest",
+    "mode": "contradictions",
+    "ref": "Joshua 10:40",
+    "appliesTo": [
+      "Joshua 10:40",
+      "Joshua 11:23",
+      "Joshua 15:63",
+      "Judges 1:19",
+      "Judges 1:21",
+      "Judges 1:27",
+      "Judges 1:29",
+      "Judges 1:32"
+    ],
+    "title": "Complete conquest and continuing inhabitants",
+    "status": "Context",
+    "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
+    "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed.",
+    "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
+    "sources": [
+      {
+        "label": "Joshua 10 · primary text",
+        "url": "https://ebible.org/eng-kjv/JOS10.htm"
+      },
+      {
+        "label": "Joshua 11 · primary text",
+        "url": "https://ebible.org/eng-kjv/JOS11.htm"
+      },
+      {
+        "label": "Joshua 15 · primary text",
+        "url": "https://ebible.org/eng-kjv/JOS15.htm"
+      },
+      {
+        "label": "Judges 1 · primary text",
+        "url": "https://ebible.org/eng-kjv/JDG01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 5,
+        "chapter": 10,
+        "verse": 40,
+        "label": "Joshua 10:40"
+      },
+      {
+        "book": 5,
+        "chapter": 11,
+        "verse": 23,
+        "label": "Joshua 11:23"
+      },
+      {
+        "book": 5,
+        "chapter": 15,
+        "verse": 63,
+        "label": "Joshua 15:63"
+      },
+      {
+        "book": 6,
+        "chapter": 1,
+        "verse": 19,
+        "label": "Judges 1:19"
+      },
+      {
+        "book": 6,
+        "chapter": 1,
+        "verse": 21,
+        "label": "Judges 1:21"
+      },
+      {
+        "book": 6,
+        "chapter": 1,
+        "verse": 27,
+        "label": "Judges 1:27"
+      },
+      {
+        "book": 6,
+        "chapter": 1,
+        "verse": 29,
+        "label": "Judges 1:29"
+      },
+      {
+        "book": 6,
+        "chapter": 1,
+        "verse": 32,
+        "label": "Judges 1:32"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-ruth-shoe",
+    "mode": "history",
+    "ref": "Ruth 4:7",
+    "appliesTo": [
+      "Ruth 4:7",
+      "Ruth 4:8",
+      "Ruth 4:9",
+      "Ruth 4:10"
+    ],
+    "title": "A transfer confirmed with a sandal",
+    "status": "Context",
+    "summary": "Ruth explains a sandal exchange as an earlier custom used to confirm redemption and transfer.",
+    "text": "Ruth explains a sandal exchange as an earlier custom used to confirm redemption and transfer.",
+    "reasoning": "The narrator pauses to explain the practice, then describes witnesses recognizing Boaz's transaction. This supplies the story's own legal and social context.",
+    "scope": "The narrative is evidence for the custom as represented in Ruth, not independent archaeological verification of this transaction.",
+    "sources": [
+      {
+        "label": "Ruth 4 · primary text",
+        "url": "https://ebible.org/eng-kjv/RUT04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 7,
+        "chapter": 4,
+        "verse": 7,
+        "label": "Ruth 4:7"
+      },
+      {
+        "book": 7,
+        "chapter": 4,
+        "verse": 8,
+        "label": "Ruth 4:8"
+      },
+      {
+        "book": 7,
+        "chapter": 4,
+        "verse": 9,
+        "label": "Ruth 4:9"
+      },
+      {
+        "book": 7,
+        "chapter": 4,
+        "verse": 10,
+        "label": "Ruth 4:10"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-saul-jabesh",
+    "mode": "history",
+    "ref": "1 Samuel 11:1",
+    "appliesTo": [
+      "1 Samuel 11:1",
+      "1 Samuel 11:2",
+      "1 Samuel 11:7",
+      "1 Samuel 11:11",
+      "1 Samuel 11:14",
+      "1 Samuel 11:15",
+      "1 Samuel 10:24",
+      "1 Samuel 10:27",
+      "1 Samuel 31:11",
+      "1 Samuel 31:12"
+    ],
+    "title": "Jabesh Gilead and Saul's public legitimacy",
+    "status": "Context",
+    "summary": "The rescue of Jabesh turns disputed kingship into public recognition; the same town later recovers Saul's body.",
+    "text": "The rescue of Jabesh turns disputed kingship into public recognition; the same town later recovers Saul's body.",
+    "reasoning": "Chapter 10 records both acclamation and dissent. Chapter 11 ends with a renewal of kingship after victory. Chapter 31's recovery of Saul's body supplies a later narrative connection to Jabesh.",
+    "scope": "This is an inference about the narrative's structure, not independent confirmation of the battle, troop totals, or divine intervention.",
+    "sources": [
+      {
+        "label": "1 Samuel 11 · primary text",
+        "url": "https://ebible.org/eng-kjv/1SA11.htm"
+      },
+      {
+        "label": "1 Samuel 10 · primary text",
+        "url": "https://ebible.org/eng-kjv/1SA10.htm"
+      },
+      {
+        "label": "1 Samuel 31 · primary text",
+        "url": "https://ebible.org/eng-kjv/1SA31.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 8,
+        "chapter": 11,
+        "verse": 1,
+        "label": "1 Samuel 11:1"
+      },
+      {
+        "book": 8,
+        "chapter": 11,
+        "verse": 2,
+        "label": "1 Samuel 11:2"
+      },
+      {
+        "book": 8,
+        "chapter": 11,
+        "verse": 7,
+        "label": "1 Samuel 11:7"
+      },
+      {
+        "book": 8,
+        "chapter": 11,
+        "verse": 11,
+        "label": "1 Samuel 11:11"
+      },
+      {
+        "book": 8,
+        "chapter": 11,
+        "verse": 14,
+        "label": "1 Samuel 11:14"
+      },
+      {
+        "book": 8,
+        "chapter": 11,
+        "verse": 15,
+        "label": "1 Samuel 11:15"
+      },
+      {
+        "book": 8,
+        "chapter": 10,
+        "verse": 24,
+        "label": "1 Samuel 10:24"
+      },
+      {
+        "book": 8,
+        "chapter": 10,
+        "verse": 27,
+        "label": "1 Samuel 10:27"
+      },
+      {
+        "book": 8,
+        "chapter": 31,
+        "verse": 11,
+        "label": "1 Samuel 31:11"
+      },
+      {
+        "book": 8,
+        "chapter": 31,
+        "verse": 12,
+        "label": "1 Samuel 31:12"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-saul-death",
+    "mode": "contradictions",
+    "ref": "1 Samuel 31:4",
+    "appliesTo": [
+      "1 Samuel 31:4",
+      "1 Samuel 31:5",
+      "2 Samuel 1:9",
+      "2 Samuel 1:10",
+      "2 Samuel 1:16"
+    ],
+    "title": "Saul's death: narration and a claimant's story",
+    "status": "Context",
+    "summary": "The narrator says Saul died after falling on his sword; an Amalekite later claims to have killed him.",
+    "text": "The narrator says Saul died after falling on his sword; an Amalekite later claims to have killed him.",
+    "reasoning": "The accounts differ, but the second is a character's reported claim. Treating it as a lie for advantage is a possible reading; the story does not require the narrator to endorse every detail of that claim.",
+    "scope": "An apparent conflict between accounts, with an internal distinction between narration and testimony.",
+    "sources": [
+      {
+        "label": "1 Samuel 31 · primary text",
+        "url": "https://ebible.org/eng-kjv/1SA31.htm"
+      },
+      {
+        "label": "2 Samuel 1 · primary text",
+        "url": "https://ebible.org/eng-kjv/2SA01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 8,
+        "chapter": 31,
+        "verse": 4,
+        "label": "1 Samuel 31:4"
+      },
+      {
+        "book": 8,
+        "chapter": 31,
+        "verse": 5,
+        "label": "1 Samuel 31:5"
+      },
+      {
+        "book": 9,
+        "chapter": 1,
+        "verse": 9,
+        "label": "2 Samuel 1:9"
+      },
+      {
+        "book": 9,
+        "chapter": 1,
+        "verse": 10,
+        "label": "2 Samuel 1:10"
+      },
+      {
+        "book": 9,
+        "chapter": 1,
+        "verse": 16,
+        "label": "2 Samuel 1:16"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-census-agent",
+    "mode": "contradictions",
+    "ref": "2 Samuel 24:1",
+    "appliesTo": [
+      "2 Samuel 24:1",
+      "1 Chronicles 21:1"
+    ],
+    "title": "Who prompted David's census?",
+    "status": "Textual conflict",
+    "summary": "Samuel attributes the prompting to the LORD's anger; Chronicles names Satan.",
+    "text": "Samuel attributes the prompting to the LORD's anger; Chronicles names Satan.",
+    "reasoning": "The passages explicitly assign the prompting to different agents. A theological explanation can posit divine permission and an intermediate agent, but neither verse states that combined explanation.",
+    "scope": "A difference in narrated causation; it does not independently establish a supernatural cause.",
+    "sources": [
+      {
+        "label": "2 Samuel 24 · primary text",
+        "url": "https://ebible.org/eng-kjv/2SA24.htm"
+      },
+      {
+        "label": "1 Chronicles 21 · primary text",
+        "url": "https://ebible.org/eng-kjv/1CH21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 9,
+        "chapter": 24,
+        "verse": 1,
+        "label": "2 Samuel 24:1"
+      },
+      {
+        "book": 12,
+        "chapter": 21,
+        "verse": 1,
+        "label": "1 Chronicles 21:1"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-census-famine",
+    "mode": "contradictions",
+    "ref": "2 Samuel 24:13",
+    "appliesTo": [
+      "2 Samuel 24:13",
+      "1 Chronicles 21:12"
+    ],
+    "title": "Seven or three years of famine?",
+    "status": "Textual conflict",
+    "summary": "In the packaged KJV text, Samuel offers seven years of famine while Chronicles offers three.",
+    "text": "In the packaged KJV text, Samuel offers seven years of famine while Chronicles offers three.",
+    "reasoning": "Both passages describe Gad's alternatives after the census, making this a directly comparable numerical difference.",
+    "scope": "This annotation concerns the packaged KJV readings. Other translations or manuscript traditions may present a different reading in Samuel.",
+    "sources": [
+      {
+        "label": "2 Samuel 24 · primary text",
+        "url": "https://ebible.org/eng-kjv/2SA24.htm"
+      },
+      {
+        "label": "1 Chronicles 21 · primary text",
+        "url": "https://ebible.org/eng-kjv/1CH21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 9,
+        "chapter": 24,
+        "verse": 13,
+        "label": "2 Samuel 24:13"
+      },
+      {
+        "book": 12,
+        "chapter": 21,
+        "verse": 12,
+        "label": "1 Chronicles 21:12"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-stalls",
+    "mode": "contradictions",
+    "ref": "1 Kings 4:26",
+    "appliesTo": [
+      "1 Kings 4:26",
+      "2 Chronicles 9:25"
+    ],
+    "title": "Solomon's horse stalls",
+    "status": "Textual conflict",
+    "summary": "Kings lists 40,000 horse stalls; Chronicles lists 4,000, while both list 12,000 horsemen.",
+    "text": "Kings lists 40,000 horse stalls; Chronicles lists 4,000, while both list 12,000 horsemen.",
+    "reasoning": "The paired descriptions share the ruler and horsemen total but differ tenfold in stalls. The text does not provide a conversion explaining the numbers.",
+    "scope": "A discrepancy in the packaged readings; no claim that either figure is independently verified.",
+    "sources": [
+      {
+        "label": "1 Kings 4 · primary text",
+        "url": "https://ebible.org/eng-kjv/1KI04.htm"
+      },
+      {
+        "label": "2 Chronicles 9 · primary text",
+        "url": "https://ebible.org/eng-kjv/2CH09.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 10,
+        "chapter": 4,
+        "verse": 26,
+        "label": "1 Kings 4:26"
+      },
+      {
+        "book": 13,
+        "chapter": 9,
+        "verse": 25,
+        "label": "2 Chronicles 9:25"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-ahaziah",
+    "mode": "contradictions",
+    "ref": "2 Kings 8:26",
+    "appliesTo": [
+      "2 Kings 8:26",
+      "2 Chronicles 22:2"
+    ],
+    "title": "Ahaziah's accession age",
+    "status": "Textual conflict",
+    "summary": "Kings gives Ahaziah's accession age as 22; the packaged KJV Chronicles gives 42.",
+    "text": "Kings gives Ahaziah's accession age as 22; the packaged KJV Chronicles gives 42.",
+    "reasoning": "The same named mother and one-year reign identify the parallel accounts. Both ages cannot describe the same accession in the ordinary sense.",
+    "scope": "Textual transmission can explain a numerical error; the discrepancy should not be generalized to all modern translations.",
+    "sources": [
+      {
+        "label": "2 Kings 8 · primary text",
+        "url": "https://ebible.org/eng-kjv/2KI08.htm"
+      },
+      {
+        "label": "2 Chronicles 22 · primary text",
+        "url": "https://ebible.org/eng-kjv/2CH22.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 11,
+        "chapter": 8,
+        "verse": 26,
+        "label": "2 Kings 8:26"
+      },
+      {
+        "book": 13,
+        "chapter": 22,
+        "verse": 2,
+        "label": "2 Chronicles 22:2"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-lachish",
+    "mode": "history",
+    "ref": "2 Kings 18:13",
+    "appliesTo": [
+      "2 Kings 18:13",
+      "2 Kings 18:14"
+    ],
+    "title": "Assyrian evidence for the attack on Lachish",
+    "status": "Agrees",
+    "summary": "An Assyrian palace relief depicts Sennacherib watching the capture of Lachish, corroborating that specific campaign setting.",
+    "text": "An Assyrian palace relief depicts Sennacherib watching the capture of Lachish, corroborating that specific campaign setting.",
+    "reasoning": "Kings places Sennacherib at Lachish during his attack on Judah; the relief provides independent royal evidence for an Assyrian attack on that city.",
+    "scope": "Corroboration is limited to the campaign and location. It does not verify every speech, payment, or supernatural claim in Kings.",
+    "sources": [
+      {
+        "label": "2 Kings 18 · primary text",
+        "url": "https://ebible.org/eng-kjv/2KI18.htm"
+      },
+      {
+        "label": "British Museum · Lachish relief",
+        "url": "https://www.britishmuseum.org/collection/object/W_1856-0909-14_2"
+      }
+    ],
+    "refs": [
+      {
+        "book": 11,
+        "chapter": 18,
+        "verse": 13,
+        "label": "2 Kings 18:13"
+      },
+      {
+        "book": 11,
+        "chapter": 18,
+        "verse": 14,
+        "label": "2 Kings 18:14"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-cyrus",
+    "mode": "history",
+    "ref": "Ezra 1:1",
+    "appliesTo": [
+      "Ezra 1:1",
+      "Ezra 1:2",
+      "Ezra 1:3",
+      "Ezra 1:7"
+    ],
+    "title": "Cyrus and restoration of local worship",
+    "status": "Context",
+    "summary": "The Cyrus Cylinder describes restoration of sanctuaries and displaced peoples, providing context for Ezra's account of return.",
+    "text": "The Cyrus Cylinder describes restoration of sanctuaries and displaced peoples, providing context for Ezra's account of return.",
+    "reasoning": "The inscription supports a broader imperial practice compatible with return and religious restoration. It presents Cyrus through Babylonian religious language, while Ezra presents him through Israel's God.",
+    "scope": "The cylinder is not the Jerusalem decree quoted in Ezra and does not name the Jews or Jerusalem. Compatibility is not direct proof of Ezra's exact decree.",
+    "sources": [
+      {
+        "label": "Ezra 1 · primary text",
+        "url": "https://ebible.org/eng-kjv/EZR01.htm"
+      },
+      {
+        "label": "British Museum · Cyrus Cylinder",
+        "url": "https://www.britishmuseum.org/collection/object/W_1880-0617-1941"
+      }
+    ],
+    "refs": [
+      {
+        "book": 14,
+        "chapter": 1,
+        "verse": 1,
+        "label": "Ezra 1:1"
+      },
+      {
+        "book": 14,
+        "chapter": 1,
+        "verse": 2,
+        "label": "Ezra 1:2"
+      },
+      {
+        "book": 14,
+        "chapter": 1,
+        "verse": 3,
+        "label": "Ezra 1:3"
+      },
+      {
+        "book": 14,
+        "chapter": 1,
+        "verse": 7,
+        "label": "Ezra 1:7"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-arah",
+    "mode": "contradictions",
+    "ref": "Ezra 2:5",
+    "appliesTo": [
+      "Ezra 2:5",
+      "Nehemiah 7:10"
+    ],
+    "title": "Two totals for the descendants of Arah",
+    "status": "Textual conflict",
+    "summary": "Ezra lists 775 descendants of Arah; Nehemiah lists 652.",
+    "text": "Ezra lists 775 descendants of Arah; Nehemiah lists 652.",
+    "reasoning": "Both chapters frame their lists as people returning with Zerubbabel, so the matching family entry warrants comparison.",
+    "scope": "Different stages of registration or textual transmission could explain the difference, but the entries do not specify an explanation.",
+    "sources": [
+      {
+        "label": "Ezra 2 · primary text",
+        "url": "https://ebible.org/eng-kjv/EZR02.htm"
+      },
+      {
+        "label": "Nehemiah 7 · primary text",
+        "url": "https://ebible.org/eng-kjv/NEH07.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 14,
+        "chapter": 2,
+        "verse": 5,
+        "label": "Ezra 2:5"
+      },
+      {
+        "book": 15,
+        "chapter": 7,
+        "verse": 10,
+        "label": "Nehemiah 7:10"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-pahath",
+    "mode": "contradictions",
+    "ref": "Ezra 2:6",
+    "appliesTo": [
+      "Ezra 2:6",
+      "Nehemiah 7:11"
+    ],
+    "title": "Two totals for Pahathmoab",
+    "status": "Textual conflict",
+    "summary": "Ezra records 2,812 for Pahathmoab's group; Nehemiah records 2,818.",
+    "text": "Ezra records 2,812 for Pahathmoab's group; Nehemiah records 2,818.",
+    "reasoning": "The matching group name and Jeshua/Joab description make this a parallel entry with a six-person difference.",
+    "scope": "A textual or registration difference is possible; the sources do not identify its cause.",
+    "sources": [
+      {
+        "label": "Ezra 2 · primary text",
+        "url": "https://ebible.org/eng-kjv/EZR02.htm"
+      },
+      {
+        "label": "Nehemiah 7 · primary text",
+        "url": "https://ebible.org/eng-kjv/NEH07.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 14,
+        "chapter": 2,
+        "verse": 6,
+        "label": "Ezra 2:6"
+      },
+      {
+        "book": 15,
+        "chapter": 7,
+        "verse": 11,
+        "label": "Nehemiah 7:11"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-vessels",
+    "mode": "contradictions",
+    "ref": "Ezra 1:9",
+    "appliesTo": [
+      "Ezra 1:9",
+      "Ezra 1:10",
+      "Ezra 1:11"
+    ],
+    "title": "The listed vessels and the stated total",
+    "status": "Textual conflict",
+    "summary": "Ezra's itemized figures add to 2,499, while the stated total is 5,400.",
+    "text": "Ezra's itemized figures add to 2,499, while the stated total is 5,400.",
+    "reasoning": "Adding 30 + 1,000 + 29 + 30 + 410 + 1,000 yields 2,499. If the list is exhaustive, its stated total does not match.",
+    "scope": "An incomplete itemization could account for a larger grand total; the text does not explicitly say that categories were omitted.",
+    "sources": [
+      {
+        "label": "Ezra 1 · primary text",
+        "url": "https://ebible.org/eng-kjv/EZR01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 14,
+        "chapter": 1,
+        "verse": 9,
+        "label": "Ezra 1:9"
+      },
+      {
+        "book": 14,
+        "chapter": 1,
+        "verse": 10,
+        "label": "Ezra 1:10"
+      },
+      {
+        "book": 14,
+        "chapter": 1,
+        "verse": 11,
+        "label": "Ezra 1:11"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "early-esther-susa",
+    "mode": "history",
+    "ref": "Esther 1:2",
+    "appliesTo": [
+      "Esther 1:2",
+      "Esther 1:5",
+      "Esther 1:6"
+    ],
+    "title": "Susa as a Persian royal setting",
+    "status": "Context",
+    "summary": "The Persian palace remains from Susa provide a real archaeological setting for Esther's royal court.",
+    "text": "The Persian palace remains from Susa provide a real archaeological setting for Esther's royal court.",
+    "reasoning": "The Louvre's Susa collection includes architecture from Darius's palace, confirming a monumental Persian royal complex at the named city.",
+    "scope": "A real palace location does not verify Esther's banquet, characters, or plot. Darius's architectural remains should not be identified as the precise room in the story.",
+    "sources": [
+      {
+        "label": "Esther 1 · primary text",
+        "url": "https://ebible.org/eng-kjv/EST01.htm"
+      },
+      {
+        "label": "Louvre · Palace of Darius I in Susa",
+        "url": "https://presse.louvre.fr/wp-content/uploads/2021/10/373c2545f0326e58c68488f608936318.pdf"
+      }
+    ],
+    "refs": [
+      {
+        "book": 16,
+        "chapter": 1,
+        "verse": 2,
+        "label": "Esther 1:2"
+      },
+      {
+        "book": 16,
+        "chapter": 1,
+        "verse": 5,
+        "label": "Esther 1:5"
+      },
+      {
+        "book": 16,
+        "chapter": 1,
+        "verse": 6,
+        "label": "Esther 1:6"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-jericho",
+    "mode": "contradictions",
+    "status": "Textual conflict",
+    "ref": "Mark 10:46",
+    "appliesTo": [
+      "Mark 10:46",
+      "Mark 10:47",
+      "Mark 10:48",
+      "Mark 10:49",
+      "Mark 10:50",
+      "Mark 10:51",
+      "Mark 10:52",
+      "Luke 18:35",
+      "Luke 18:36",
+      "Luke 18:37",
+      "Luke 18:38",
+      "Luke 18:39",
+      "Luke 18:40",
+      "Luke 18:41",
+      "Luke 18:42",
+      "Luke 18:43"
+    ],
+    "title": "Approaching or leaving Jericho?",
+    "summary": "Mark places the blind man's healing on departure from Jericho; Luke places it on approach.",
+    "text": "Mark names Bartimaeus and locates him as Jesus leaves Jericho. Luke leaves the man unnamed and introduces the encounter as Jesus nears the city.",
+    "reasoning": "The shared request, crowd rebuke, and healing make these meaningful parallel accounts with a geographical difference.",
+    "scope": "Separate incidents or distinct city boundaries are proposed harmonizations, but neither explanation appears in these passages.",
+    "sources": [
+      {
+        "label": "Mark 10 (primary text)",
+        "url": "https://ebible.org/kjv/MRK10.htm"
+      },
+      {
+        "label": "Luke 18 (primary text)",
+        "url": "https://ebible.org/kjv/LUK18.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 46,
+        "label": "Mark 10:46"
+      },
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 47,
+        "label": "Mark 10:47"
+      },
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 48,
+        "label": "Mark 10:48"
+      },
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 49,
+        "label": "Mark 10:49"
+      },
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 50,
+        "label": "Mark 10:50"
+      },
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 51,
+        "label": "Mark 10:51"
+      },
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 52,
+        "label": "Mark 10:52"
+      },
+      {
+        "book": 41,
+        "chapter": 18,
+        "verse": 35,
+        "label": "Luke 18:35"
+      },
+      {
+        "book": 41,
+        "chapter": 18,
+        "verse": 36,
+        "label": "Luke 18:36"
+      },
+      {
+        "book": 41,
+        "chapter": 18,
+        "verse": 37,
+        "label": "Luke 18:37"
+      },
+      {
+        "book": 41,
+        "chapter": 18,
+        "verse": 38,
+        "label": "Luke 18:38"
+      },
+      {
+        "book": 41,
+        "chapter": 18,
+        "verse": 39,
+        "label": "Luke 18:39"
+      },
+      {
+        "book": 41,
+        "chapter": 18,
+        "verse": 40,
+        "label": "Luke 18:40"
+      },
+      {
+        "book": 41,
+        "chapter": 18,
+        "verse": 41,
+        "label": "Luke 18:41"
+      },
+      {
+        "book": 41,
+        "chapter": 18,
+        "verse": 42,
+        "label": "Luke 18:42"
+      },
+      {
+        "book": 41,
+        "chapter": 18,
+        "verse": 43,
+        "label": "Luke 18:43"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-divorce",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "Mark 10:10",
+    "appliesTo": [
+      "Mark 10:10",
+      "Mark 10:11",
+      "Mark 10:12",
+      "Matthew 19:9",
+      "1 Corinthians 7:10",
+      "1 Corinthians 7:11",
+      "1 Corinthians 7:12",
+      "1 Corinthians 7:13",
+      "1 Corinthians 7:14",
+      "1 Corinthians 7:15"
+    ],
+    "title": "Different qualifications to divorce teaching",
+    "summary": "The passages share a restrictive view of divorce but state different qualifications.",
+    "text": "Mark gives an unqualified divorce-and-remarriage prohibition. Matthew includes an exception for sexual misconduct. Paul addresses a departing unbelieving spouse.",
+    "reasoning": "The texts discuss related but not identical situations; treating one sentence as the entire New Testament rule loses relevant qualifications.",
+    "scope": "This is a comparison of textual rules, not advice about remaining in an unsafe relationship or a determination of modern legal rights.",
+    "sources": [
+      {
+        "label": "Mark 10 (primary text)",
+        "url": "https://ebible.org/kjv/MRK10.htm"
+      },
+      {
+        "label": "Matthew 19 (primary text)",
+        "url": "https://ebible.org/kjv/MAT19.htm"
+      },
+      {
+        "label": "1 Corinthians 7 (primary text)",
+        "url": "https://ebible.org/kjv/1CO07.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 10,
+        "label": "Mark 10:10"
+      },
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 11,
+        "label": "Mark 10:11"
+      },
+      {
+        "book": 40,
+        "chapter": 10,
+        "verse": 12,
+        "label": "Mark 10:12"
+      },
+      {
+        "book": 39,
+        "chapter": 19,
+        "verse": 9,
+        "label": "Matthew 19:9"
+      },
+      {
+        "book": 45,
+        "chapter": 7,
+        "verse": 10,
+        "label": "1 Corinthians 7:10"
+      },
+      {
+        "book": 45,
+        "chapter": 7,
+        "verse": 11,
+        "label": "1 Corinthians 7:11"
+      },
+      {
+        "book": 45,
+        "chapter": 7,
+        "verse": 12,
+        "label": "1 Corinthians 7:12"
+      },
+      {
+        "book": 45,
+        "chapter": 7,
+        "verse": 13,
+        "label": "1 Corinthians 7:13"
+      },
+      {
+        "book": 45,
+        "chapter": 7,
+        "verse": 14,
+        "label": "1 Corinthians 7:14"
+      },
+      {
+        "book": 45,
+        "chapter": 7,
+        "verse": 15,
+        "label": "1 Corinthians 7:15"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-spirit-timing",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "John 20:19",
+    "appliesTo": [
+      "John 20:19",
+      "John 20:20",
+      "John 20:21",
+      "John 20:22",
+      "John 20:23",
+      "Acts 1:4",
+      "Acts 1:5",
+      "Acts 2:1",
+      "Acts 2:2",
+      "Acts 2:3",
+      "Acts 2:4"
+    ],
+    "title": "Resurrection evening and Pentecost",
+    "summary": "John and Acts present different scenes for receiving the Spirit.",
+    "text": "John has Jesus breathe on the disciples on resurrection evening. Acts describes waiting for a promised baptism followed by Pentecost.",
+    "reasoning": "A single-event reading encounters a timing difference; a staged-gift or symbolic-action reading treats the scenes as distinct.",
+    "scope": "The texts establish the scenes. Choosing a theological relationship between them goes beyond what either explicitly explains.",
+    "sources": [
+      {
+        "label": "John 20 (primary text)",
+        "url": "https://ebible.org/kjv/JHN20.htm"
+      },
+      {
+        "label": "Acts 1 (primary text)",
+        "url": "https://ebible.org/kjv/ACT01.htm"
+      },
+      {
+        "label": "Acts 2 (primary text)",
+        "url": "https://ebible.org/kjv/ACT02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 42,
+        "chapter": 20,
+        "verse": 19,
+        "label": "John 20:19"
+      },
+      {
+        "book": 42,
+        "chapter": 20,
+        "verse": 20,
+        "label": "John 20:20"
+      },
+      {
+        "book": 42,
+        "chapter": 20,
+        "verse": 21,
+        "label": "John 20:21"
+      },
+      {
+        "book": 42,
+        "chapter": 20,
+        "verse": 22,
+        "label": "John 20:22"
+      },
+      {
+        "book": 42,
+        "chapter": 20,
+        "verse": 23,
+        "label": "John 20:23"
+      },
+      {
+        "book": 43,
+        "chapter": 1,
+        "verse": 4,
+        "label": "Acts 1:4"
+      },
+      {
+        "book": 43,
+        "chapter": 1,
+        "verse": 5,
+        "label": "Acts 1:5"
+      },
+      {
+        "book": 43,
+        "chapter": 2,
+        "verse": 1,
+        "label": "Acts 2:1"
+      },
+      {
+        "book": 43,
+        "chapter": 2,
+        "verse": 2,
+        "label": "Acts 2:2"
+      },
+      {
+        "book": 43,
+        "chapter": 2,
+        "verse": 3,
+        "label": "Acts 2:3"
+      },
+      {
+        "book": 43,
+        "chapter": 2,
+        "verse": 4,
+        "label": "Acts 2:4"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-faith-works",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "Romans 3:20",
+    "appliesTo": [
+      "Romans 3:20",
+      "Romans 3:27",
+      "Romans 3:28",
+      "Romans 3:29",
+      "Romans 3:30",
+      "Romans 3:31",
+      "James 2:14",
+      "James 2:17",
+      "James 2:18",
+      "James 2:21",
+      "James 2:22",
+      "James 2:23",
+      "James 2:24",
+      "James 2:26"
+    ],
+    "title": "Faith and works in Romans and James",
+    "summary": "Romans rejects justification by works of the law; James rejects faith without action.",
+    "text": "Romans emphasizes justification apart from deeds of the law. James describes aid to the needy and Abraham's action as evidence that faith is alive.",
+    "reasoning": "The wording is in tension, but the immediate arguments target different problems: reliance on law and an inactive profession of belief.",
+    "scope": "Whether these are complementary definitions or divergent emphases is interpretive. The comparison does not establish a scientific claim.",
+    "sources": [
+      {
+        "label": "Romans 3 (primary text)",
+        "url": "https://ebible.org/kjv/ROM03.htm"
+      },
+      {
+        "label": "James 2 (primary text)",
+        "url": "https://ebible.org/kjv/JAS02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 44,
+        "chapter": 3,
+        "verse": 20,
+        "label": "Romans 3:20"
+      },
+      {
+        "book": 44,
+        "chapter": 3,
+        "verse": 27,
+        "label": "Romans 3:27"
+      },
+      {
+        "book": 44,
+        "chapter": 3,
+        "verse": 28,
+        "label": "Romans 3:28"
+      },
+      {
+        "book": 44,
+        "chapter": 3,
+        "verse": 29,
+        "label": "Romans 3:29"
+      },
+      {
+        "book": 44,
+        "chapter": 3,
+        "verse": 30,
+        "label": "Romans 3:30"
+      },
+      {
+        "book": 44,
+        "chapter": 3,
+        "verse": 31,
+        "label": "Romans 3:31"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 14,
+        "label": "James 2:14"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 17,
+        "label": "James 2:17"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 18,
+        "label": "James 2:18"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 21,
+        "label": "James 2:21"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 22,
+        "label": "James 2:22"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 23,
+        "label": "James 2:23"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 24,
+        "label": "James 2:24"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 26,
+        "label": "James 2:26"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-collection",
+    "mode": "history",
+    "status": "Context",
+    "ref": "2 Corinthians 8:12",
+    "appliesTo": [
+      "2 Corinthians 8:12",
+      "2 Corinthians 8:13",
+      "2 Corinthians 8:14",
+      "2 Corinthians 8:15",
+      "2 Corinthians 8:19",
+      "2 Corinthians 8:20",
+      "2 Corinthians 8:21"
+    ],
+    "title": "A collection with accountability",
+    "summary": "The letter describes organized material aid and precautions over handling it.",
+    "text": "Paul presents the collection as a response to need, with companions administering it and concern for public accountability.",
+    "reasoning": "This is primary textual evidence for the practices the letter advocates; its appeal to manna applies an older narrative to resource sharing.",
+    "scope": "A letter's description is not an independent audit proving that the collection was completed exactly as planned.",
+    "sources": [
+      {
+        "label": "2 Corinthians 8 (primary text)",
+        "url": "https://ebible.org/kjv/2CO08.htm"
+      },
+      {
+        "label": "Exodus 16:14–20 (manna narrative)",
+        "url": "https://ebible.org/kjv/EXO16.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 46,
+        "chapter": 8,
+        "verse": 12,
+        "label": "2 Corinthians 8:12"
+      },
+      {
+        "book": 46,
+        "chapter": 8,
+        "verse": 13,
+        "label": "2 Corinthians 8:13"
+      },
+      {
+        "book": 46,
+        "chapter": 8,
+        "verse": 14,
+        "label": "2 Corinthians 8:14"
+      },
+      {
+        "book": 46,
+        "chapter": 8,
+        "verse": 15,
+        "label": "2 Corinthians 8:15"
+      },
+      {
+        "book": 46,
+        "chapter": 8,
+        "verse": 19,
+        "label": "2 Corinthians 8:19"
+      },
+      {
+        "book": 46,
+        "chapter": 8,
+        "verse": 20,
+        "label": "2 Corinthians 8:20"
+      },
+      {
+        "book": 46,
+        "chapter": 8,
+        "verse": 21,
+        "label": "2 Corinthians 8:21"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-abraham-seed",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "Galatians 3:6",
+    "appliesTo": [
+      "Galatians 3:6",
+      "Galatians 3:7",
+      "Galatians 3:8",
+      "Galatians 3:16",
+      "Galatians 3:28",
+      "Galatians 3:29"
+    ],
+    "title": "Abraham's descendants and Christ",
+    "summary": "Galatians interprets the promise to Abraham through Christ and then extends it to believers.",
+    "text": "The chapter first identifies the promised seed with Christ, then calls those belonging to Christ Abraham's seed. Genesis 15 pictures descendants as numerous as stars.",
+    "reasoning": "This is a theological rereading of a promise about descendants; the chapter itself uses both an individual and a collective application.",
+    "scope": "The observation concerns interpretation, not a demonstrated factual contradiction.",
+    "sources": [
+      {
+        "label": "Galatians 3 (primary text)",
+        "url": "https://ebible.org/kjv/GAL03.htm"
+      },
+      {
+        "label": "Genesis 15:1–6 (primary text)",
+        "url": "https://ebible.org/kjv/GEN15.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 47,
+        "chapter": 3,
+        "verse": 6,
+        "label": "Galatians 3:6"
+      },
+      {
+        "book": 47,
+        "chapter": 3,
+        "verse": 7,
+        "label": "Galatians 3:7"
+      },
+      {
+        "book": 47,
+        "chapter": 3,
+        "verse": 8,
+        "label": "Galatians 3:8"
+      },
+      {
+        "book": 47,
+        "chapter": 3,
+        "verse": 16,
+        "label": "Galatians 3:16"
+      },
+      {
+        "book": 47,
+        "chapter": 3,
+        "verse": 28,
+        "label": "Galatians 3:28"
+      },
+      {
+        "book": 47,
+        "chapter": 3,
+        "verse": 29,
+        "label": "Galatians 3:29"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-household-slavery",
+    "mode": "history",
+    "status": "Context",
+    "ref": "Ephesians 6:5",
+    "appliesTo": [
+      "Ephesians 6:5",
+      "Ephesians 6:6",
+      "Ephesians 6:7",
+      "Ephesians 6:8",
+      "Ephesians 6:9",
+      "Colossians 4:1",
+      "1 Peter 2:18",
+      "1 Peter 2:19",
+      "1 Peter 2:20"
+    ],
+    "title": "Instructions within a slaveholding household",
+    "summary": "These instructions address masters and servants within an existing hierarchy.",
+    "text": "Ephesians commands obedience and limits masters' threats; Colossians requires just treatment; 1 Peter tells servants to endure even harsh masters.",
+    "reasoning": "The passages regulate relations within the hierarchy rather than explicitly order its abolition. The specific commands differ in emphasis.",
+    "scope": "This records what these texts prescribe. It neither endorses slavery nor proves how every Christian household behaved.",
+    "sources": [
+      {
+        "label": "Ephesians 6 (primary text)",
+        "url": "https://ebible.org/kjv/EPH06.htm"
+      },
+      {
+        "label": "Colossians 4 (primary text)",
+        "url": "https://ebible.org/kjv/COL04.htm"
+      },
+      {
+        "label": "1 Peter 2 (primary text)",
+        "url": "https://ebible.org/kjv/1PE02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 48,
+        "chapter": 6,
+        "verse": 5,
+        "label": "Ephesians 6:5"
+      },
+      {
+        "book": 48,
+        "chapter": 6,
+        "verse": 6,
+        "label": "Ephesians 6:6"
+      },
+      {
+        "book": 48,
+        "chapter": 6,
+        "verse": 7,
+        "label": "Ephesians 6:7"
+      },
+      {
+        "book": 48,
+        "chapter": 6,
+        "verse": 8,
+        "label": "Ephesians 6:8"
+      },
+      {
+        "book": 48,
+        "chapter": 6,
+        "verse": 9,
+        "label": "Ephesians 6:9"
+      },
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 1,
+        "label": "Colossians 4:1"
+      },
+      {
+        "book": 59,
+        "chapter": 2,
+        "verse": 18,
+        "label": "1 Peter 2:18"
+      },
+      {
+        "book": 59,
+        "chapter": 2,
+        "verse": 19,
+        "label": "1 Peter 2:19"
+      },
+      {
+        "book": 59,
+        "chapter": 2,
+        "verse": 20,
+        "label": "1 Peter 2:20"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-illness",
+    "mode": "history",
+    "status": "Context",
+    "ref": "Philippians 2:25",
+    "appliesTo": [
+      "Philippians 2:25",
+      "Philippians 2:26",
+      "Philippians 2:27",
+      "Philippians 2:28",
+      "Philippians 2:29",
+      "Philippians 2:30",
+      "2 Timothy 4:20"
+    ],
+    "title": "Illness among Christian coworkers",
+    "summary": "These letters acknowledge serious and continuing illness among coworkers.",
+    "text": "Philippians says Epaphroditus nearly died and recovered. Second Timothy says Trophimus was left sick at Miletus.",
+    "reasoning": "The texts do not depict every believer or coworker as immediately cured. They preserve different outcomes without supplying medical diagnoses.",
+    "scope": "Reported recovery is not clinical evidence identifying its cause, and the passages do not test prayer as a treatment.",
+    "sources": [
+      {
+        "label": "Philippians 2 (primary text)",
+        "url": "https://ebible.org/kjv/PHP02.htm"
+      },
+      {
+        "label": "2 Timothy 4 (primary text)",
+        "url": "https://ebible.org/kjv/2TI04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 49,
+        "chapter": 2,
+        "verse": 25,
+        "label": "Philippians 2:25"
+      },
+      {
+        "book": 49,
+        "chapter": 2,
+        "verse": 26,
+        "label": "Philippians 2:26"
+      },
+      {
+        "book": 49,
+        "chapter": 2,
+        "verse": 27,
+        "label": "Philippians 2:27"
+      },
+      {
+        "book": 49,
+        "chapter": 2,
+        "verse": 28,
+        "label": "Philippians 2:28"
+      },
+      {
+        "book": 49,
+        "chapter": 2,
+        "verse": 29,
+        "label": "Philippians 2:29"
+      },
+      {
+        "book": 49,
+        "chapter": 2,
+        "verse": 30,
+        "label": "Philippians 2:30"
+      },
+      {
+        "book": 54,
+        "chapter": 4,
+        "verse": 20,
+        "label": "2 Timothy 4:20"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-colossian-network",
+    "mode": "history",
+    "status": "Context",
+    "ref": "Colossians 4:7",
+    "appliesTo": [
+      "Colossians 4:7",
+      "Colossians 4:8",
+      "Colossians 4:9",
+      "Colossians 4:10",
+      "Colossians 4:12",
+      "Colossians 4:14",
+      "Colossians 4:15",
+      "Colossians 4:16",
+      "Colossians 4:17",
+      "Philemon 1:1",
+      "Philemon 1:2",
+      "Philemon 1:10",
+      "Philemon 1:12",
+      "Philemon 1:16",
+      "Philemon 1:23",
+      "Philemon 1:24"
+    ],
+    "title": "Shared names and circulating letters",
+    "summary": "Colossians and Philemon name overlapping people, offering a textual link between the letters.",
+    "text": "Onesimus, Archippus, Epaphras, Mark, Luke, and Demas occur across the two letters. Colossians also calls for exchanging letters with Laodicea.",
+    "reasoning": "Shared names support comparison of the social networks represented in the writings; the texts alone cannot establish every biography or resolve authorship debates.",
+    "scope": "This is internal documentary context, not independent proof that every named person has been identified archaeologically.",
+    "sources": [
+      {
+        "label": "Colossians 4 (primary text)",
+        "url": "https://ebible.org/kjv/COL04.htm"
+      },
+      {
+        "label": "Philemon 1 (primary text)",
+        "url": "https://ebible.org/kjv/PHM01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 7,
+        "label": "Colossians 4:7"
+      },
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 8,
+        "label": "Colossians 4:8"
+      },
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 9,
+        "label": "Colossians 4:9"
+      },
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 10,
+        "label": "Colossians 4:10"
+      },
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 12,
+        "label": "Colossians 4:12"
+      },
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 14,
+        "label": "Colossians 4:14"
+      },
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 15,
+        "label": "Colossians 4:15"
+      },
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 16,
+        "label": "Colossians 4:16"
+      },
+      {
+        "book": 50,
+        "chapter": 4,
+        "verse": 17,
+        "label": "Colossians 4:17"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 1,
+        "label": "Philemon 1:1"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 2,
+        "label": "Philemon 1:2"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 10,
+        "label": "Philemon 1:10"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 12,
+        "label": "Philemon 1:12"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 16,
+        "label": "Philemon 1:16"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 23,
+        "label": "Philemon 1:23"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 24,
+        "label": "Philemon 1:24"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-return-expectation",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "1 Thessalonians 4:13",
+    "appliesTo": [
+      "1 Thessalonians 4:13",
+      "1 Thessalonians 4:14",
+      "1 Thessalonians 4:15",
+      "1 Thessalonians 4:16",
+      "1 Thessalonians 4:17",
+      "1 Thessalonians 4:18",
+      "2 Thessalonians 2:1",
+      "2 Thessalonians 2:2",
+      "2 Thessalonians 2:3",
+      "2 Thessalonians 2:4"
+    ],
+    "title": "Expectation and prerequisites for the return",
+    "summary": "First Thessalonians comforts readers about the dead; Second Thessalonians warns against premature claims about the day.",
+    "text": "The first passage includes living believers in the anticipated gathering. The second says certain events must precede the day.",
+    "reasoning": "Their emphases differ, but neither passage supplies a calendar date. The language of expectation should not be converted into a dated prediction without further argument.",
+    "scope": "This comparison does not settle disputed authorship or whether Paul expected to be alive at the return.",
+    "sources": [
+      {
+        "label": "1 Thessalonians 4 (primary text)",
+        "url": "https://ebible.org/kjv/1TH04.htm"
+      },
+      {
+        "label": "2 Thessalonians 2 (primary text)",
+        "url": "https://ebible.org/kjv/2TH02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 51,
+        "chapter": 4,
+        "verse": 13,
+        "label": "1 Thessalonians 4:13"
+      },
+      {
+        "book": 51,
+        "chapter": 4,
+        "verse": 14,
+        "label": "1 Thessalonians 4:14"
+      },
+      {
+        "book": 51,
+        "chapter": 4,
+        "verse": 15,
+        "label": "1 Thessalonians 4:15"
+      },
+      {
+        "book": 51,
+        "chapter": 4,
+        "verse": 16,
+        "label": "1 Thessalonians 4:16"
+      },
+      {
+        "book": 51,
+        "chapter": 4,
+        "verse": 17,
+        "label": "1 Thessalonians 4:17"
+      },
+      {
+        "book": 51,
+        "chapter": 4,
+        "verse": 18,
+        "label": "1 Thessalonians 4:18"
+      },
+      {
+        "book": 52,
+        "chapter": 2,
+        "verse": 1,
+        "label": "2 Thessalonians 2:1"
+      },
+      {
+        "book": 52,
+        "chapter": 2,
+        "verse": 2,
+        "label": "2 Thessalonians 2:2"
+      },
+      {
+        "book": 52,
+        "chapter": 2,
+        "verse": 3,
+        "label": "2 Thessalonians 2:3"
+      },
+      {
+        "book": 52,
+        "chapter": 2,
+        "verse": 4,
+        "label": "2 Thessalonians 2:4"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-women-speaking",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "1 Timothy 2:11",
+    "appliesTo": [
+      "1 Timothy 2:11",
+      "1 Timothy 2:12",
+      "1 Timothy 2:13",
+      "1 Timothy 2:14",
+      "1 Corinthians 11:4",
+      "1 Corinthians 11:5",
+      "1 Corinthians 11:6",
+      "Acts 2:17",
+      "Acts 2:18"
+    ],
+    "title": "Teaching restrictions and women's prophecy",
+    "summary": "First Timothy restricts women's teaching; other passages envision women praying or prophesying.",
+    "text": "First Corinthians discusses the manner in which women prophesy, while Acts applies a promise of prophecy to daughters and female servants.",
+    "reasoning": "A blanket claim that all female religious speech is forbidden does not capture all these passages. Distinguishing prophecy from authoritative teaching is one interpretive response.",
+    "scope": "The texts support a difference in permissions and activities; they do not by themselves settle modern debates over ordination.",
+    "sources": [
+      {
+        "label": "1 Timothy 2 (primary text)",
+        "url": "https://ebible.org/kjv/1TI02.htm"
+      },
+      {
+        "label": "1 Corinthians 11 (primary text)",
+        "url": "https://ebible.org/kjv/1CO11.htm"
+      },
+      {
+        "label": "Acts 2 (primary text)",
+        "url": "https://ebible.org/kjv/ACT02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 53,
+        "chapter": 2,
+        "verse": 11,
+        "label": "1 Timothy 2:11"
+      },
+      {
+        "book": 53,
+        "chapter": 2,
+        "verse": 12,
+        "label": "1 Timothy 2:12"
+      },
+      {
+        "book": 53,
+        "chapter": 2,
+        "verse": 13,
+        "label": "1 Timothy 2:13"
+      },
+      {
+        "book": 53,
+        "chapter": 2,
+        "verse": 14,
+        "label": "1 Timothy 2:14"
+      },
+      {
+        "book": 45,
+        "chapter": 11,
+        "verse": 4,
+        "label": "1 Corinthians 11:4"
+      },
+      {
+        "book": 45,
+        "chapter": 11,
+        "verse": 5,
+        "label": "1 Corinthians 11:5"
+      },
+      {
+        "book": 45,
+        "chapter": 11,
+        "verse": 6,
+        "label": "1 Corinthians 11:6"
+      },
+      {
+        "book": 43,
+        "chapter": 2,
+        "verse": 17,
+        "label": "Acts 2:17"
+      },
+      {
+        "book": 43,
+        "chapter": 2,
+        "verse": 18,
+        "label": "Acts 2:18"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-titus-works",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "Titus 3:5",
+    "appliesTo": [
+      "Titus 3:5",
+      "Titus 3:7",
+      "Titus 3:8",
+      "Titus 3:14",
+      "James 2:14",
+      "James 2:15",
+      "James 2:16",
+      "James 2:17"
+    ],
+    "title": "Grace and practical assistance",
+    "summary": "Titus distinguishes salvation from righteous works while also requiring useful good works.",
+    "text": "Within one chapter, salvation is attributed to mercy and believers are urged to meet practical needs through good work. James likewise criticizes words of care without assistance.",
+    "reasoning": "The local context prevents treating the rejection of salvation by works as a rejection of ethical action.",
+    "scope": "This is an internal comparison of ethical and theological language, not evidence that either theological claim is empirically proven.",
+    "sources": [
+      {
+        "label": "Titus 3 (primary text)",
+        "url": "https://ebible.org/kjv/TIT03.htm"
+      },
+      {
+        "label": "James 2 (primary text)",
+        "url": "https://ebible.org/kjv/JAS02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 55,
+        "chapter": 3,
+        "verse": 5,
+        "label": "Titus 3:5"
+      },
+      {
+        "book": 55,
+        "chapter": 3,
+        "verse": 7,
+        "label": "Titus 3:7"
+      },
+      {
+        "book": 55,
+        "chapter": 3,
+        "verse": 8,
+        "label": "Titus 3:8"
+      },
+      {
+        "book": 55,
+        "chapter": 3,
+        "verse": 14,
+        "label": "Titus 3:14"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 14,
+        "label": "James 2:14"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 15,
+        "label": "James 2:15"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 16,
+        "label": "James 2:16"
+      },
+      {
+        "book": 58,
+        "chapter": 2,
+        "verse": 17,
+        "label": "James 2:17"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-philemon-freedom",
+    "mode": "history",
+    "status": "Context",
+    "ref": "Philemon 1:10",
+    "appliesTo": [
+      "Philemon 1:10",
+      "Philemon 1:12",
+      "Philemon 1:13",
+      "Philemon 1:14",
+      "Philemon 1:15",
+      "Philemon 1:16",
+      "Philemon 1:17",
+      "Philemon 1:18",
+      "Philemon 1:19",
+      "Philemon 1:21"
+    ],
+    "title": "Onesimus: brotherhood and freedom",
+    "summary": "Philemon asks for Onesimus to be received as a brother but does not explicitly record a completed emancipation.",
+    "text": "The appeal addresses return, consent, possible debt, and a relationship beyond servitude. Its expectation that the recipient will do more remains unspecified.",
+    "reasoning": "A request for brotherly reception is present; a formal legal release and its outcome are not narrated.",
+    "scope": "Readers may infer an appeal toward freedom, but the letter alone does not establish that Onesimus was emancipated.",
+    "sources": [
+      {
+        "label": "Philemon 1 (primary text)",
+        "url": "https://ebible.org/kjv/PHM01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 10,
+        "label": "Philemon 1:10"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 12,
+        "label": "Philemon 1:12"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 13,
+        "label": "Philemon 1:13"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 14,
+        "label": "Philemon 1:14"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 15,
+        "label": "Philemon 1:15"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 16,
+        "label": "Philemon 1:16"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 17,
+        "label": "Philemon 1:17"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 18,
+        "label": "Philemon 1:18"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 19,
+        "label": "Philemon 1:19"
+      },
+      {
+        "book": 56,
+        "chapter": 1,
+        "verse": 21,
+        "label": "Philemon 1:21"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-new-covenant",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "Hebrews 8:8",
+    "appliesTo": [
+      "Hebrews 8:8",
+      "Hebrews 8:9",
+      "Hebrews 8:10",
+      "Hebrews 8:11",
+      "Hebrews 8:12",
+      "Hebrews 8:13"
+    ],
+    "title": "Jeremiah's promise interpreted in Hebrews",
+    "summary": "Hebrews uses Jeremiah's new-covenant promise to argue that the first covenant is becoming obsolete.",
+    "text": "Jeremiah addresses Israel and Judah and describes internalized law. Hebrews quotes that promise in an argument about Jesus's priestly ministry.",
+    "reasoning": "The later text makes a Christian interpretive move from the word new to the status of the earlier covenant.",
+    "scope": "This identifies the argument within Hebrews; it does not present its Christian conclusion as a neutral description accepted by all Jewish readers.",
+    "sources": [
+      {
+        "label": "Hebrews 8 (primary text)",
+        "url": "https://ebible.org/kjv/HEB08.htm"
+      },
+      {
+        "label": "Jeremiah 31:31–34 (primary text)",
+        "url": "https://ebible.org/kjv/JER31.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 57,
+        "chapter": 8,
+        "verse": 8,
+        "label": "Hebrews 8:8"
+      },
+      {
+        "book": 57,
+        "chapter": 8,
+        "verse": 9,
+        "label": "Hebrews 8:9"
+      },
+      {
+        "book": 57,
+        "chapter": 8,
+        "verse": 10,
+        "label": "Hebrews 8:10"
+      },
+      {
+        "book": 57,
+        "chapter": 8,
+        "verse": 11,
+        "label": "Hebrews 8:11"
+      },
+      {
+        "book": 57,
+        "chapter": 8,
+        "verse": 12,
+        "label": "Hebrews 8:12"
+      },
+      {
+        "book": 57,
+        "chapter": 8,
+        "verse": 13,
+        "label": "Hebrews 8:13"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-peter-delay",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "2 Peter 3:3",
+    "appliesTo": [
+      "2 Peter 3:3",
+      "2 Peter 3:4",
+      "2 Peter 3:8",
+      "2 Peter 3:9",
+      "2 Peter 3:10",
+      "2 Peter 3:11",
+      "2 Peter 3:12",
+      "2 Peter 3:13"
+    ],
+    "title": "Explaining the delayed return",
+    "summary": "Second Peter explicitly addresses objections that the promised return has not occurred.",
+    "text": "The reply appeals to divine time and patience and urges ethical readiness. The comparison of a day and a thousand years appears in that argument.",
+    "reasoning": "Reading the comparison as a fixed mathematical conversion for dating creation or the end ignores its function as an answer to delay.",
+    "scope": "This is a textual interpretation of the argument, not a measurement of cosmological time or scientific confirmation of future destruction.",
+    "sources": [
+      {
+        "label": "2 Peter 3 (primary text)",
+        "url": "https://ebible.org/kjv/2PE03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 60,
+        "chapter": 3,
+        "verse": 3,
+        "label": "2 Peter 3:3"
+      },
+      {
+        "book": 60,
+        "chapter": 3,
+        "verse": 4,
+        "label": "2 Peter 3:4"
+      },
+      {
+        "book": 60,
+        "chapter": 3,
+        "verse": 8,
+        "label": "2 Peter 3:8"
+      },
+      {
+        "book": 60,
+        "chapter": 3,
+        "verse": 9,
+        "label": "2 Peter 3:9"
+      },
+      {
+        "book": 60,
+        "chapter": 3,
+        "verse": 10,
+        "label": "2 Peter 3:10"
+      },
+      {
+        "book": 60,
+        "chapter": 3,
+        "verse": 11,
+        "label": "2 Peter 3:11"
+      },
+      {
+        "book": 60,
+        "chapter": 3,
+        "verse": 12,
+        "label": "2 Peter 3:12"
+      },
+      {
+        "book": 60,
+        "chapter": 3,
+        "verse": 13,
+        "label": "2 Peter 3:13"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-john-sin",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "1 John 1:8",
+    "appliesTo": [
+      "1 John 1:8",
+      "1 John 1:9",
+      "1 John 1:10",
+      "1 John 3:6",
+      "1 John 3:9"
+    ],
+    "title": "Confession and claims about sinlessness",
+    "summary": "First John warns against denying sin, yet also says those born of God do not sin.",
+    "text": "The first chapter calls for confession; the third contrasts God's children with patterns of wrongdoing.",
+    "reasoning": "An absolute sinlessness reading creates tension. A reading about settled conduct versus individual failures is one way to interpret the passages together.",
+    "scope": "The distinction is an interpretation of the context, not wording explicitly supplied by these English verses.",
+    "sources": [
+      {
+        "label": "1 John 1 (primary text)",
+        "url": "https://ebible.org/kjv/1JN01.htm"
+      },
+      {
+        "label": "1 John 3 (primary text)",
+        "url": "https://ebible.org/kjv/1JN03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 61,
+        "chapter": 1,
+        "verse": 8,
+        "label": "1 John 1:8"
+      },
+      {
+        "book": 61,
+        "chapter": 1,
+        "verse": 9,
+        "label": "1 John 1:9"
+      },
+      {
+        "book": 61,
+        "chapter": 1,
+        "verse": 10,
+        "label": "1 John 1:10"
+      },
+      {
+        "book": 61,
+        "chapter": 3,
+        "verse": 6,
+        "label": "1 John 3:6"
+      },
+      {
+        "book": 61,
+        "chapter": 3,
+        "verse": 9,
+        "label": "1 John 3:9"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-hospitality",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "2 John 1:7",
+    "appliesTo": [
+      "2 John 1:7",
+      "2 John 1:9",
+      "2 John 1:10",
+      "2 John 1:11",
+      "3 John 1:5",
+      "3 John 1:6",
+      "3 John 1:7",
+      "3 John 1:8",
+      "3 John 1:9",
+      "3 John 1:10"
+    ],
+    "title": "Hospitality and disputed teachers",
+    "summary": "Second John restricts hospitality to certain teachers; Third John condemns refusal to welcome approved workers.",
+    "text": "The two letters use hospitality to mark different boundaries of community membership and authority.",
+    "reasoning": "Their commands are not unconditional opposites: they evaluate different visitors. The important question is who the author regards as a legitimate representative.",
+    "scope": "This concerns the letters' internal criteria, not an independent judgment that their opponents were deceptive.",
+    "sources": [
+      {
+        "label": "2 John 1 (primary text)",
+        "url": "https://ebible.org/kjv/2JN01.htm"
+      },
+      {
+        "label": "3 John 1 (primary text)",
+        "url": "https://ebible.org/kjv/3JN01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 62,
+        "chapter": 1,
+        "verse": 7,
+        "label": "2 John 1:7"
+      },
+      {
+        "book": 62,
+        "chapter": 1,
+        "verse": 9,
+        "label": "2 John 1:9"
+      },
+      {
+        "book": 62,
+        "chapter": 1,
+        "verse": 10,
+        "label": "2 John 1:10"
+      },
+      {
+        "book": 62,
+        "chapter": 1,
+        "verse": 11,
+        "label": "2 John 1:11"
+      },
+      {
+        "book": 63,
+        "chapter": 1,
+        "verse": 5,
+        "label": "3 John 1:5"
+      },
+      {
+        "book": 63,
+        "chapter": 1,
+        "verse": 6,
+        "label": "3 John 1:6"
+      },
+      {
+        "book": 63,
+        "chapter": 1,
+        "verse": 7,
+        "label": "3 John 1:7"
+      },
+      {
+        "book": 63,
+        "chapter": 1,
+        "verse": 8,
+        "label": "3 John 1:8"
+      },
+      {
+        "book": 63,
+        "chapter": 1,
+        "verse": 9,
+        "label": "3 John 1:9"
+      },
+      {
+        "book": 63,
+        "chapter": 1,
+        "verse": 10,
+        "label": "3 John 1:10"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-jude-metaphor",
+    "mode": "science",
+    "status": "Context",
+    "ref": "Jude 1:12",
+    "appliesTo": [
+      "Jude 1:12",
+      "Jude 1:13"
+    ],
+    "title": "Clouds, trees, waves, and wandering stars",
+    "summary": "Jude uses natural images to criticize people, rather than give a scientific account of weather or astronomy.",
+    "text": "Its sequence of comparisons includes fruitless trees, foaming waves, and wandering stars, all applied to the disputed people discussed in the letter.",
+    "reasoning": "The referents are human opponents and their conduct; treating every image as a physical proposition mistakes the passage's rhetorical function.",
+    "scope": "This does not evaluate the historical identity of the opponents or verify the letter's moral allegations.",
+    "sources": [
+      {
+        "label": "Jude 1 (primary text)",
+        "url": "https://ebible.org/engwebp/JUD01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 64,
+        "chapter": 1,
+        "verse": 12,
+        "label": "Jude 1:12"
+      },
+      {
+        "book": 64,
+        "chapter": 1,
+        "verse": 13,
+        "label": "Jude 1:13"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "coverage-nt-revelation-symbols",
+    "mode": "science",
+    "status": "Context",
+    "ref": "Revelation 1:12",
+    "appliesTo": [
+      "Revelation 1:12",
+      "Revelation 1:13",
+      "Revelation 1:14",
+      "Revelation 1:15",
+      "Revelation 1:16",
+      "Revelation 1:20"
+    ],
+    "title": "Stars and lamps explicitly interpreted as symbols",
+    "summary": "Revelation itself explains its seven stars and seven lampstands symbolically.",
+    "text": "Verse 20 identifies the stars with angels of churches and the lampstands with the churches.",
+    "reasoning": "The explicit explanation supplies a strong contextual reason not to read these particular stars as a claim about stellar size or physical placement.",
+    "scope": "This conclusion applies to this vision; it is not a blanket scientific or historical verdict on every image elsewhere in Revelation.",
+    "sources": [
+      {
+        "label": "Revelation 1 (primary text)",
+        "url": "https://ebible.org/kjv/REV01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 65,
+        "chapter": 1,
+        "verse": 12,
+        "label": "Revelation 1:12"
+      },
+      {
+        "book": 65,
+        "chapter": 1,
+        "verse": 13,
+        "label": "Revelation 1:13"
+      },
+      {
+        "book": 65,
+        "chapter": 1,
+        "verse": 14,
+        "label": "Revelation 1:14"
+      },
+      {
+        "book": 65,
+        "chapter": 1,
+        "verse": 15,
+        "label": "Revelation 1:15"
+      },
+      {
+        "book": 65,
+        "chapter": 1,
+        "verse": 16,
+        "label": "Revelation 1:16"
+      },
+      {
+        "book": 65,
+        "chapter": 1,
+        "verse": 20,
+        "label": "Revelation 1:20"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-17-26-7",
+    "mode": "science",
+    "ref": "Job 26:7",
+    "appliesTo": [
+      "Job 26:7",
+      "Job 26:8",
+      "Job 26:9",
+      "Job 26:10",
+      "Job 26:11",
+      "Job 26:12",
+      "Job 26:13"
+    ],
+    "title": "Cosmic poetry uses several images",
+    "status": "Context",
+    "summary": "Job describes earth suspended over nothing alongside heavenly pillars and a defeated cosmic serpent.",
+    "text": "The speech places suspended earth, clouds holding water, heavenly pillars, and a fleeing serpent side by side.",
+    "reasoning": "Calling verse 7 a modern astronomical prediction while treating adjacent images figuratively applies inconsistent standards.",
+    "scope": "Poetic portrayal of divine power, not a complete physical model.",
+    "sources": [
+      {
+        "label": "Primary text: Job 26 (WEB)",
+        "url": "https://ebible.org/engwebp/JOB26.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 17,
+        "chapter": 26,
+        "verse": 7,
+        "label": "Job 26:7"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-17-42-7",
+    "mode": "history",
+    "ref": "Job 42:7",
+    "appliesTo": [
+      "Job 42:7",
+      "Job 42:8",
+      "Job 42:9"
+    ],
+    "title": "The book corrects its own speakers",
+    "status": "Context",
+    "summary": "The ending rejects what Job’s friends said about God.",
+    "text": "God rebukes Eliphaz and his two companions and directs them to seek Job’s intercession.",
+    "reasoning": "A character’s statement should not automatically be treated as the final position of the book. Speaker and narrative outcome matter.",
+    "scope": "Internal literary assessment; does not verify historical conversations.",
+    "sources": [
+      {
+        "label": "Primary text: Job 42 (WEB)",
+        "url": "https://ebible.org/engwebp/JOB42.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 17,
+        "chapter": 42,
+        "verse": 7,
+        "label": "Job 42:7"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-18-137-1",
+    "mode": "history",
+    "ref": "Psalms 137:1",
+    "appliesTo": [
+      "Psalms 137:1",
+      "Psalms 137:2",
+      "Psalms 137:3",
+      "Psalms 137:4",
+      "Psalms 137:5",
+      "Psalms 137:6",
+      "Psalms 137:7",
+      "Psalms 137:8",
+      "Psalms 137:9"
+    ],
+    "title": "Exile, grief, and violent retaliation",
+    "status": "Context",
+    "summary": "This lament moves from captivity in Babylon to a wish for retaliation against Babylonian children.",
+    "text": "The poem remembers Zion, accuses Edom of encouraging destruction, and ends by blessing violent retaliation.",
+    "reasoning": "The final violence is the speakers’ wish within a lament. Genre identifies the speaker without removing the ethical difficulty.",
+    "scope": "Literary memory does not independently corroborate or date every event.",
+    "sources": [
+      {
+        "label": "Primary text: Psalms 137 (WEB)",
+        "url": "https://ebible.org/engwebp/PSA137.htm"
+      },
+      {
+        "label": "Primary text: Obadiah 1 (WEB)",
+        "url": "https://ebible.org/engwebp/OBA01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 18,
+        "chapter": 137,
+        "verse": 1,
+        "label": "Psalms 137:1"
+      },
+      {
+        "book": 30,
+        "chapter": 1,
+        "verse": 11,
+        "label": "Obadiah 1:11"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-19-26-4",
+    "mode": "contradictions",
+    "ref": "Proverbs 26:4",
+    "appliesTo": [
+      "Proverbs 26:4",
+      "Proverbs 26:5"
+    ],
+    "title": "Opposite advice in adjacent sayings",
+    "status": "Textual conflict",
+    "summary": "One proverb says not to answer a fool; the next says to answer one.",
+    "text": "Verse 4 warns that answering can make the respondent like the fool; verse 5 warns that silence leaves the fool self-satisfied.",
+    "reasoning": "As unconditional rules they conflict; their differing reasons also permit advice for different circumstances.",
+    "scope": "A verbal tension; judgment depends on whether proverbs are treated as universal commands.",
+    "sources": [
+      {
+        "label": "Primary text: Proverbs 26 (WEB)",
+        "url": "https://ebible.org/engwebp/PRO26.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 19,
+        "chapter": 26,
+        "verse": 4,
+        "label": "Proverbs 26:4"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-20-9-5",
+    "mode": "contradictions",
+    "ref": "Ecclesiastes 9:5",
+    "appliesTo": [
+      "Ecclesiastes 9:5",
+      "Ecclesiastes 9:6",
+      "Ecclesiastes 9:7",
+      "Ecclesiastes 9:8",
+      "Ecclesiastes 9:9",
+      "Ecclesiastes 9:10"
+    ],
+    "title": "Death in wisdom and apocalyptic texts",
+    "status": "Textual conflict",
+    "summary": "Ecclesiastes describes inactive dead; Daniel anticipates their awakening.",
+    "text": "Ecclesiastes says the dead no longer participate in what happens under the sun and describes Sheol as without work or knowledge. Daniel 12:2 describes resurrection.",
+    "reasoning": "The texts conflict if Ecclesiastes denies all future existence, but its repeated earthly perspective permits a distinction between present inactivity and future awakening.",
+    "scope": "Literary comparison, not empirical verification of an afterlife.",
+    "sources": [
+      {
+        "label": "Primary text: Ecclesiastes 9 (WEB)",
+        "url": "https://ebible.org/engwebp/ECC09.htm"
+      },
+      {
+        "label": "Primary text: Daniel 12 (WEB)",
+        "url": "https://ebible.org/engwebp/DAN12.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 20,
+        "chapter": 9,
+        "verse": 5,
+        "label": "Ecclesiastes 9:5"
+      },
+      {
+        "book": 26,
+        "chapter": 12,
+        "verse": 2,
+        "label": "Daniel 12:2"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-21-4-1",
+    "mode": "history",
+    "ref": "Song of Solomon 4:1",
+    "appliesTo": [
+      "Song of Solomon 4:1",
+      "Song of Solomon 4:2",
+      "Song of Solomon 4:3",
+      "Song of Solomon 4:4",
+      "Song of Solomon 4:5",
+      "Song of Solomon 4:6",
+      "Song of Solomon 4:7"
+    ],
+    "title": "Figurative language in love poetry",
+    "status": "Context",
+    "summary": "Goats, sheep, fruit, towers, and deer praise a lover through comparisons.",
+    "text": "Hair is compared to goats, teeth to sheep, temples to pomegranate, and the neck to a tower.",
+    "reasoning": "The repeated comparative language marks a poetic portrait rather than biological claims. Later allegorical readings add interpretive frameworks.",
+    "scope": "Genre context; does not settle authorship or later religious interpretation.",
+    "sources": [
+      {
+        "label": "Primary text: Song of Solomon 4 (WEB)",
+        "url": "https://ebible.org/engwebp/SNG04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 21,
+        "chapter": 4,
+        "verse": 1,
+        "label": "Song of Solomon 4:1"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-22-36-1",
+    "mode": "history",
+    "ref": "Isaiah 36:1",
+    "appliesTo": [
+      "Isaiah 36:1",
+      "Isaiah 36:2",
+      "Isaiah 36:3"
+    ],
+    "title": "Assyrian campaign and Hezekiah",
+    "status": "Agrees",
+    "summary": "An Assyrian inscription independently names tribute from Hezekiah in 701 BCE.",
+    "text": "Isaiah places Sennacherib’s forces in Judah and at Lachish. The British Museum catalog records a Sennacherib prism describing tribute from Hezekiah in 701 BCE.",
+    "reasoning": "Independent royal evidence supports the rulers and political setting; speeches and miraculous deliverance still require separate evaluation.",
+    "scope": "Corroboration of setting, not the complete narrative.",
+    "sources": [
+      {
+        "label": "Primary text: Isaiah 36 (WEB)",
+        "url": "https://ebible.org/engwebp/ISA36.htm"
+      },
+      {
+        "label": "British Museum: Sennacherib prism",
+        "url": "https://www.britishmuseum.org/collection/object/W_1855-1003-1"
+      }
+    ],
+    "refs": [
+      {
+        "book": 22,
+        "chapter": 36,
+        "verse": 1,
+        "label": "Isaiah 36:1"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-22-45-1",
+    "mode": "history",
+    "ref": "Isaiah 45:1",
+    "appliesTo": [
+      "Isaiah 45:1",
+      "Isaiah 45:2",
+      "Isaiah 45:3",
+      "Isaiah 45:4",
+      "Isaiah 45:5"
+    ],
+    "title": "Cyrus and independent royal evidence",
+    "status": "Context",
+    "summary": "Cyrus is independently attested; his divine commissioning is Isaiah’s theological claim.",
+    "text": "Isaiah calls Cyrus an anointed ruler. The Cyrus Cylinder records conquest of Babylon and restoration of shrines and displaced peoples.",
+    "reasoning": "The artifact supports the ruler and broader policy. It does not name the Jews, date Isaiah’s composition, or verify divine commissioning.",
+    "scope": "Historical evidence and claims about prophecy must be distinguished.",
+    "sources": [
+      {
+        "label": "Primary text: Isaiah 45 (WEB)",
+        "url": "https://ebible.org/engwebp/ISA45.htm"
+      },
+      {
+        "label": "Primary text: Isaiah 44 (WEB)",
+        "url": "https://ebible.org/engwebp/ISA44.htm"
+      },
+      {
+        "label": "Metropolitan Museum: Cyrus Cylinder",
+        "url": "https://www.metmuseum.org/exhibitions/listings/2013/cyrus-cylinder"
+      }
+    ],
+    "refs": [
+      {
+        "book": 22,
+        "chapter": 45,
+        "verse": 1,
+        "label": "Isaiah 45:1"
+      },
+      {
+        "book": 22,
+        "chapter": 44,
+        "verse": 28,
+        "label": "Isaiah 44:28"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-23-18-7",
+    "mode": "history",
+    "ref": "Jeremiah 18:7",
+    "appliesTo": [
+      "Jeremiah 18:7",
+      "Jeremiah 18:8",
+      "Jeremiah 18:9",
+      "Jeremiah 18:10"
+    ],
+    "title": "Conditional prophetic warnings",
+    "status": "Context",
+    "summary": "Jeremiah explicitly allows announced destruction or blessing to change with conduct.",
+    "text": "The potter illustration leads to two conditions: repentance can avert threatened judgment; disobedience can cancel promised good.",
+    "reasoning": "Evaluation of a prediction should consider whether its own framework makes it conditional. This cannot be assumed for every oracle.",
+    "scope": "Textual explanation, not a blanket exemption from historical evaluation.",
+    "sources": [
+      {
+        "label": "Primary text: Jeremiah 18 (WEB)",
+        "url": "https://ebible.org/engwebp/JER18.htm"
+      },
+      {
+        "label": "Primary text: Jonah 3 (WEB)",
+        "url": "https://ebible.org/engwebp/JON03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 23,
+        "chapter": 18,
+        "verse": 7,
+        "label": "Jeremiah 18:7"
+      },
+      {
+        "book": 31,
+        "chapter": 3,
+        "verse": 10,
+        "label": "Jonah 3:10"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-24-5-7",
+    "mode": "contradictions",
+    "ref": "Lamentations 5:7",
+    "appliesTo": [
+      "Lamentations 5:7",
+      "Lamentations 5:8",
+      "Lamentations 5:9",
+      "Lamentations 5:10",
+      "Lamentations 5:11",
+      "Lamentations 5:12",
+      "Lamentations 5:13",
+      "Lamentations 5:14",
+      "Lamentations 5:15",
+      "Lamentations 5:16"
+    ],
+    "title": "Inherited suffering and individual guilt",
+    "status": "Textual conflict",
+    "summary": "Lamentations describes bearing ancestors’ wrongdoing; Ezekiel rejects inherited guilt.",
+    "text": "Lamentations 5:7 describes descendants suffering from ancestors’ actions, while verse 16 also acknowledges their own sin. Ezekiel assigns guilt to the acting person.",
+    "reasoning": "The wording is in tension but can distinguish inherited consequences from individual responsibility.",
+    "scope": "A lament need not be a systematic doctrine of punishment.",
+    "sources": [
+      {
+        "label": "Primary text: Lamentations 5 (WEB)",
+        "url": "https://ebible.org/engwebp/LAM05.htm"
+      },
+      {
+        "label": "Primary text: Ezekiel 18 (WEB)",
+        "url": "https://ebible.org/engwebp/EZK18.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 24,
+        "chapter": 5,
+        "verse": 7,
+        "label": "Lamentations 5:7"
+      },
+      {
+        "book": 25,
+        "chapter": 18,
+        "verse": 20,
+        "label": "Ezekiel 18:20"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-25-18-19",
+    "mode": "history",
+    "ref": "Ezekiel 18:19",
+    "appliesTo": [
+      "Ezekiel 18:19",
+      "Ezekiel 18:20",
+      "Ezekiel 18:21",
+      "Ezekiel 18:22",
+      "Ezekiel 18:23",
+      "Ezekiel 18:24"
+    ],
+    "title": "Responsibility and change",
+    "status": "Context",
+    "summary": "Ezekiel assigns responsibility individually and allows changed conduct to change the outcome.",
+    "text": "Children do not bear parents’ guilt. Subsequent verses say a wicked person may turn, while a righteous person may abandon righteousness.",
+    "reasoning": "The opening sour-grapes proverb explains why intergenerational responsibility is central to the argument.",
+    "scope": "Internal interpretation; compare collective consequences without equating them with guilt.",
+    "sources": [
+      {
+        "label": "Primary text: Ezekiel 18 (WEB)",
+        "url": "https://ebible.org/engwebp/EZK18.htm"
+      },
+      {
+        "label": "Primary text: Lamentations 5 (WEB)",
+        "url": "https://ebible.org/engwebp/LAM05.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 25,
+        "chapter": 18,
+        "verse": 19,
+        "label": "Ezekiel 18:19"
+      },
+      {
+        "book": 24,
+        "chapter": 5,
+        "verse": 7,
+        "label": "Lamentations 5:7"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-25-29-17",
+    "mode": "contradictions",
+    "ref": "Ezekiel 29:17",
+    "appliesTo": [
+      "Ezekiel 29:17",
+      "Ezekiel 29:18",
+      "Ezekiel 29:19",
+      "Ezekiel 29:20"
+    ],
+    "title": "Tyre campaign: an internal qualification",
+    "status": "Textual conflict",
+    "summary": "A later oracle says Nebuchadnezzar received no reward from his Tyre campaign.",
+    "text": "Ezekiel 26 names Nebuchadnezzar and anticipates destruction and plunder. Ezekiel 29 says his army received no wages there and presents Egypt as compensation.",
+    "reasoning": "The texts complicate an uncomplicated fulfillment claim. Chapter 26 changes from singular to plural agents, requiring care about who is said to fulfill each line.",
+    "scope": "Internal tension; these verses alone do not reconstruct the entire siege.",
+    "sources": [
+      {
+        "label": "Primary text: Ezekiel 29 (WEB)",
+        "url": "https://ebible.org/engwebp/EZK29.htm"
+      },
+      {
+        "label": "Primary text: Ezekiel 26 (WEB)",
+        "url": "https://ebible.org/engwebp/EZK26.htm"
+      },
+      {
+        "label": "Primary text: Ezekiel 26 (WEB)",
+        "url": "https://ebible.org/engwebp/EZK26.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 25,
+        "chapter": 29,
+        "verse": 17,
+        "label": "Ezekiel 29:17"
+      },
+      {
+        "book": 25,
+        "chapter": 26,
+        "verse": 7,
+        "label": "Ezekiel 26:7"
+      },
+      {
+        "book": 25,
+        "chapter": 26,
+        "verse": 12,
+        "label": "Ezekiel 26:12"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-26-12-1",
+    "mode": "history",
+    "ref": "Daniel 12:1",
+    "appliesTo": [
+      "Daniel 12:1",
+      "Daniel 12:2",
+      "Daniel 12:3"
+    ],
+    "title": "Resurrection in an end-time vision",
+    "status": "Context",
+    "summary": "Daniel connects awakening from death with crisis and final justice.",
+    "text": "Distress is followed by rescue, resurrection to different destinies, and the wise shining like stars.",
+    "reasoning": "The star wording is a comparison within a vision, not a physical description of transformed human bodies.",
+    "scope": "Apocalyptic claim; this is not an empirical demonstration of resurrection.",
+    "sources": [
+      {
+        "label": "Primary text: Daniel 12 (WEB)",
+        "url": "https://ebible.org/engwebp/DAN12.htm"
+      },
+      {
+        "label": "Primary text: Ecclesiastes 9 (WEB)",
+        "url": "https://ebible.org/engwebp/ECC09.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 26,
+        "chapter": 12,
+        "verse": 1,
+        "label": "Daniel 12:1"
+      },
+      {
+        "book": 20,
+        "chapter": 9,
+        "verse": 5,
+        "label": "Ecclesiastes 9:5"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-27-6-4",
+    "mode": "history",
+    "ref": "Hosea 6:4",
+    "appliesTo": [
+      "Hosea 6:4",
+      "Hosea 6:5",
+      "Hosea 6:6"
+    ],
+    "title": "Mercy and ritual",
+    "status": "Context",
+    "summary": "Hosea prioritizes enduring loyalty and knowledge of God over offerings.",
+    "text": "The comparison with fleeting dew precedes the declaration favoring mercy over sacrifice.",
+    "reasoning": "The immediate criticism concerns unreliable loyalty and ritual as a substitute for faithfulness; it need not prohibit every sacrifice.",
+    "scope": "Prophetic ethical rhetoric in its context.",
+    "sources": [
+      {
+        "label": "Primary text: Hosea 6 (WEB)",
+        "url": "https://ebible.org/engwebp/HOS06.htm"
+      },
+      {
+        "label": "Primary text: Amos 5 (WEB)",
+        "url": "https://ebible.org/engwebp/AMO05.htm"
+      },
+      {
+        "label": "Primary text: Micah 6 (WEB)",
+        "url": "https://ebible.org/engwebp/MIC06.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 27,
+        "chapter": 6,
+        "verse": 4,
+        "label": "Hosea 6:4"
+      },
+      {
+        "book": 29,
+        "chapter": 5,
+        "verse": 21,
+        "label": "Amos 5:21"
+      },
+      {
+        "book": 32,
+        "chapter": 6,
+        "verse": 8,
+        "label": "Micah 6:8"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-28-2-4",
+    "mode": "history",
+    "ref": "Joel 2:4",
+    "appliesTo": [
+      "Joel 2:4",
+      "Joel 2:5",
+      "Joel 2:6",
+      "Joel 2:7",
+      "Joel 2:8",
+      "Joel 2:9",
+      "Joel 2:10",
+      "Joel 2:11"
+    ],
+    "title": "Locust and army imagery",
+    "status": "Context",
+    "summary": "Joel describes devastation with military comparisons and later calls locusts God’s army.",
+    "text": "The invaders look like horses, move like warriors, and enter houses; verse 25 explicitly refers to locusts.",
+    "reasoning": "The repeated comparisons support agricultural and poetic readings. The passage does not identify a modern army or a dated astronomical event.",
+    "scope": "Interpretations vary over literal plague and symbolic invasion.",
+    "sources": [
+      {
+        "label": "Primary text: Joel 2 (WEB)",
+        "url": "https://ebible.org/engwebp/JOL02.htm"
+      },
+      {
+        "label": "Primary text: Joel 2 (WEB)",
+        "url": "https://ebible.org/engwebp/JOL02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 28,
+        "chapter": 2,
+        "verse": 4,
+        "label": "Joel 2:4"
+      },
+      {
+        "book": 28,
+        "chapter": 2,
+        "verse": 25,
+        "label": "Joel 2:25"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-29-5-21",
+    "mode": "history",
+    "ref": "Amos 5:21",
+    "appliesTo": [
+      "Amos 5:21",
+      "Amos 5:22",
+      "Amos 5:23",
+      "Amos 5:24"
+    ],
+    "title": "Worship rejected without justice",
+    "status": "Context",
+    "summary": "Amos juxtaposes rejected rituals with a demand for justice.",
+    "text": "Feasts, offerings, and songs are rejected before the demand for justice and righteousness to flow like water.",
+    "reasoning": "The contrast is ethical; its river language is metaphorical, not hydrological. Hosea and Micah offer related critiques.",
+    "scope": "Primary-text comparison, not independent verification of divine speech.",
+    "sources": [
+      {
+        "label": "Primary text: Amos 5 (WEB)",
+        "url": "https://ebible.org/engwebp/AMO05.htm"
+      },
+      {
+        "label": "Primary text: Hosea 6 (WEB)",
+        "url": "https://ebible.org/engwebp/HOS06.htm"
+      },
+      {
+        "label": "Primary text: Micah 6 (WEB)",
+        "url": "https://ebible.org/engwebp/MIC06.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 29,
+        "chapter": 5,
+        "verse": 21,
+        "label": "Amos 5:21"
+      },
+      {
+        "book": 27,
+        "chapter": 6,
+        "verse": 6,
+        "label": "Hosea 6:6"
+      },
+      {
+        "book": 32,
+        "chapter": 6,
+        "verse": 8,
+        "label": "Micah 6:8"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-30-1-10",
+    "mode": "history",
+    "ref": "Obadiah 1:10",
+    "appliesTo": [
+      "Obadiah 1:10",
+      "Obadiah 1:11",
+      "Obadiah 1:12",
+      "Obadiah 1:13",
+      "Obadiah 1:14"
+    ],
+    "title": "Edom at Jerusalem’s catastrophe",
+    "status": "Context",
+    "summary": "Obadiah accuses Edom of assisting or exploiting Judah’s disaster.",
+    "text": "The accusation includes rejoicing, looting, intercepting escapees, and handing over survivors. Psalm 137 also associates Edom with Jerusalem’s destruction.",
+    "reasoning": "The shared theme connects two literary memories but does not establish their independence or composition dates.",
+    "scope": "Exact event identification and external corroboration require more evidence.",
+    "sources": [
+      {
+        "label": "Primary text: Obadiah 1 (WEB)",
+        "url": "https://ebible.org/engwebp/OBA01.htm"
+      },
+      {
+        "label": "Primary text: Psalms 137 (WEB)",
+        "url": "https://ebible.org/engwebp/PSA137.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 30,
+        "chapter": 1,
+        "verse": 10,
+        "label": "Obadiah 1:10"
+      },
+      {
+        "book": 18,
+        "chapter": 137,
+        "verse": 7,
+        "label": "Psalms 137:7"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-31-3-4",
+    "mode": "history",
+    "ref": "Jonah 3:4",
+    "appliesTo": [
+      "Jonah 3:4",
+      "Jonah 3:5",
+      "Jonah 3:6",
+      "Jonah 3:7",
+      "Jonah 3:8",
+      "Jonah 3:9",
+      "Jonah 3:10"
+    ],
+    "title": "A threatened destruction is averted",
+    "status": "Context",
+    "summary": "Jonah’s forty-day warning is followed by repentance and an explicitly averted disaster.",
+    "text": "The king calls for an end to violence, and the narrator says God sees the changed conduct and does not carry out the destruction.",
+    "reasoning": "The reversal is the story’s stated outcome. Jeremiah offers a related principle of conditional warnings.",
+    "scope": "Literary claim; not independent evidence for a historical citywide conversion.",
+    "sources": [
+      {
+        "label": "Primary text: Jonah 3 (WEB)",
+        "url": "https://ebible.org/engwebp/JON03.htm"
+      },
+      {
+        "label": "Primary text: Jeremiah 18 (WEB)",
+        "url": "https://ebible.org/engwebp/JER18.htm"
+      },
+      {
+        "label": "Primary text: Jonah 4 (WEB)",
+        "url": "https://ebible.org/engwebp/JON04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 31,
+        "chapter": 3,
+        "verse": 4,
+        "label": "Jonah 3:4"
+      },
+      {
+        "book": 23,
+        "chapter": 18,
+        "verse": 7,
+        "label": "Jeremiah 18:7"
+      },
+      {
+        "book": 31,
+        "chapter": 4,
+        "verse": 2,
+        "label": "Jonah 4:2"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-31-4-1",
+    "mode": "history",
+    "ref": "Jonah 4:1",
+    "appliesTo": [
+      "Jonah 4:1",
+      "Jonah 4:2",
+      "Jonah 4:3",
+      "Jonah 4:4",
+      "Jonah 4:5",
+      "Jonah 4:6",
+      "Jonah 4:7",
+      "Jonah 4:8",
+      "Jonah 4:9",
+      "Jonah 4:10",
+      "Jonah 4:11"
+    ],
+    "title": "The narrative challenges Jonah",
+    "status": "Context",
+    "summary": "Jonah resents mercy for Nineveh; the closing question defends concern for its people and animals.",
+    "text": "Jonah says he fled because he knew God was merciful. The plant episode contrasts his concern for shade with his hostility toward the city.",
+    "reasoning": "The prophet’s attitude is not the narrator’s unquestioned position. The ending must be included when interpreting the warning.",
+    "scope": "Literary reading; the stated population is not independently established.",
+    "sources": [
+      {
+        "label": "Primary text: Jonah 4 (WEB)",
+        "url": "https://ebible.org/engwebp/JON04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 31,
+        "chapter": 4,
+        "verse": 1,
+        "label": "Jonah 4:1"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-32-4-1",
+    "mode": "history",
+    "ref": "Micah 4:1",
+    "appliesTo": [
+      "Micah 4:1",
+      "Micah 4:2",
+      "Micah 4:3"
+    ],
+    "title": "A peace oracle shared with Isaiah",
+    "status": "Context",
+    "summary": "Micah and Isaiah have closely parallel wording about weapons becoming farming tools.",
+    "text": "Both describe nations coming to Zion, instruction from Jerusalem, judgment between peoples, and an end to learning war.",
+    "reasoning": "The verbal overlap is direct evidence of a textual relationship, but does not alone identify a borrower or exclude a common tradition.",
+    "scope": "Textual comparison; future peace is not a description of present conditions.",
+    "sources": [
+      {
+        "label": "Primary text: Micah 4 (WEB)",
+        "url": "https://ebible.org/engwebp/MIC04.htm"
+      },
+      {
+        "label": "Primary text: Isaiah 2 (WEB)",
+        "url": "https://ebible.org/engwebp/ISA02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 32,
+        "chapter": 4,
+        "verse": 1,
+        "label": "Micah 4:1"
+      },
+      {
+        "book": 22,
+        "chapter": 2,
+        "verse": 2,
+        "label": "Isaiah 2:2"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-32-6-6",
+    "mode": "history",
+    "ref": "Micah 6:6",
+    "appliesTo": [
+      "Micah 6:6",
+      "Micah 6:7",
+      "Micah 6:8"
+    ],
+    "title": "Extreme offerings and the ethical response",
+    "status": "Context",
+    "summary": "Questions about escalating offerings end with a call to justice, mercy, and humility.",
+    "text": "The questions move from calves to thousands of rams, rivers of oil, and a firstborn child. Verse 8 gives the response.",
+    "reasoning": "The firstborn question is not an instruction to sacrifice children; it belongs to an escalating rhetorical contrast.",
+    "scope": "Does not establish how prevalent any ancient ritual was.",
+    "sources": [
+      {
+        "label": "Primary text: Micah 6 (WEB)",
+        "url": "https://ebible.org/engwebp/MIC06.htm"
+      },
+      {
+        "label": "Primary text: Hosea 6 (WEB)",
+        "url": "https://ebible.org/engwebp/HOS06.htm"
+      },
+      {
+        "label": "Primary text: Amos 5 (WEB)",
+        "url": "https://ebible.org/engwebp/AMO05.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 32,
+        "chapter": 6,
+        "verse": 6,
+        "label": "Micah 6:6"
+      },
+      {
+        "book": 27,
+        "chapter": 6,
+        "verse": 6,
+        "label": "Hosea 6:6"
+      },
+      {
+        "book": 29,
+        "chapter": 5,
+        "verse": 24,
+        "label": "Amos 5:24"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-33-3-7",
+    "mode": "history",
+    "ref": "Nahum 3:7",
+    "appliesTo": [
+      "Nahum 3:7",
+      "Nahum 3:8",
+      "Nahum 3:9",
+      "Nahum 3:10"
+    ],
+    "title": "Nineveh compared with No-Amon",
+    "status": "Context",
+    "summary": "Nahum warns Nineveh by recalling another city’s defeat.",
+    "text": "The passage describes No-Amon’s defenses and allies, followed by captivity and violence against its inhabitants.",
+    "reasoning": "The analogy argues that power and alliances cannot guarantee protection. The hostile oracle is not an impartial campaign report.",
+    "scope": "Primary textual setting; this note does not independently date the conquest.",
+    "sources": [
+      {
+        "label": "Primary text: Nahum 3 (WEB)",
+        "url": "https://ebible.org/engwebp/NAM03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 33,
+        "chapter": 3,
+        "verse": 7,
+        "label": "Nahum 3:7"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-34-3-8",
+    "mode": "science",
+    "ref": "Habakkuk 3:8",
+    "appliesTo": [
+      "Habakkuk 3:8",
+      "Habakkuk 3:9",
+      "Habakkuk 3:10",
+      "Habakkuk 3:11",
+      "Habakkuk 3:12",
+      "Habakkuk 3:13",
+      "Habakkuk 3:14",
+      "Habakkuk 3:15"
+    ],
+    "title": "Cosmic imagery in a warrior poem",
+    "status": "Context",
+    "summary": "Sun, moon, rivers, and mountains participate in a poetic picture of divine warfare.",
+    "text": "The prayer describes divine chariots, arrows, and trampling the sea; mountains see and fear, and the deep raises its hands.",
+    "reasoning": "Personification and martial imagery make genre essential before judging individual lines as physical claims.",
+    "scope": "Poetic context, not empirical confirmation of a stopped Sun or Moon.",
+    "sources": [
+      {
+        "label": "Primary text: Habakkuk 3 (WEB)",
+        "url": "https://ebible.org/engwebp/HAB03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 34,
+        "chapter": 3,
+        "verse": 8,
+        "label": "Habakkuk 3:8"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-35-3-8",
+    "mode": "history",
+    "ref": "Zephaniah 3:8",
+    "appliesTo": [
+      "Zephaniah 3:8",
+      "Zephaniah 3:9",
+      "Zephaniah 3:10",
+      "Zephaniah 3:11",
+      "Zephaniah 3:12",
+      "Zephaniah 3:13"
+    ],
+    "title": "Sweeping judgment and a surviving remnant",
+    "status": "Context",
+    "summary": "Universal destruction language is followed immediately by peoples worshiping and survivors.",
+    "text": "Verse 8 describes all earth consumed; verses 9-13 describe purified peoples, offerings, and an afflicted remnant.",
+    "reasoning": "The continuation complicates an interpretation in which every person is physically destroyed. Comprehensive rhetoric coexists with restoration.",
+    "scope": "Internal context; does not identify a particular future physical event.",
+    "sources": [
+      {
+        "label": "Primary text: Zephaniah 3 (WEB)",
+        "url": "https://ebible.org/engwebp/ZEP03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 35,
+        "chapter": 3,
+        "verse": 8,
+        "label": "Zephaniah 3:8"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-36-1-1",
+    "mode": "history",
+    "ref": "Haggai 1:1",
+    "appliesTo": [
+      "Haggai 1:1",
+      "Haggai 1:2",
+      "Haggai 1:3",
+      "Haggai 1:4",
+      "Haggai 1:5",
+      "Haggai 1:6",
+      "Haggai 1:7",
+      "Haggai 1:8",
+      "Haggai 1:9",
+      "Haggai 1:10",
+      "Haggai 1:11"
+    ],
+    "title": "Temple rebuilding and drought",
+    "status": "Context",
+    "summary": "Haggai attributes poor harvests to neglect of the temple in a dated prophetic appeal.",
+    "text": "The passage names Darius’s second year, Zerubbabel, and Joshua, then interprets drought and poor returns as consequences of neglect.",
+    "reasoning": "Named officials and a regnal date frame the narrative; divine causation of weather is the oracle’s explanation rather than independently demonstrated meteorology.",
+    "scope": "Distinguishes a historical frame from a verified causal mechanism.",
+    "sources": [
+      {
+        "label": "Primary text: Haggai 1 (WEB)",
+        "url": "https://ebible.org/engwebp/HAG01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 36,
+        "chapter": 1,
+        "verse": 1,
+        "label": "Haggai 1:1"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-37-7-3",
+    "mode": "history",
+    "ref": "Zechariah 7:3",
+    "appliesTo": [
+      "Zechariah 7:3",
+      "Zechariah 7:4",
+      "Zechariah 7:5",
+      "Zechariah 7:6",
+      "Zechariah 7:7",
+      "Zechariah 7:8",
+      "Zechariah 7:9",
+      "Zechariah 7:10",
+      "Zechariah 7:11",
+      "Zechariah 7:12",
+      "Zechariah 7:13",
+      "Zechariah 7:14"
+    ],
+    "title": "Fasting, collective memory, and justice",
+    "status": "Context",
+    "summary": "A question about mourning becomes a critique of oppression and refusal to listen.",
+    "text": "The answer questions whom the fasting served, then recalls obligations toward widows, orphans, foreigners, and the poor.",
+    "reasoning": "The passage connects ritual memory with moral responsibility, providing a theological interpretation of devastation.",
+    "scope": "Primary textual context, not independent proof of the cause of exile.",
+    "sources": [
+      {
+        "label": "Primary text: Zechariah 7 (WEB)",
+        "url": "https://ebible.org/engwebp/ZEC07.htm"
+      },
+      {
+        "label": "Primary text: Zechariah 8 (WEB)",
+        "url": "https://ebible.org/engwebp/ZEC08.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 37,
+        "chapter": 7,
+        "verse": 3,
+        "label": "Zechariah 7:3"
+      },
+      {
+        "book": 37,
+        "chapter": 8,
+        "verse": 19,
+        "label": "Zechariah 8:19"
+      }
+    ],
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "exp-late-38-3-8",
+    "mode": "history",
+    "ref": "Malachi 3:8",
+    "appliesTo": [
+      "Malachi 3:8",
+      "Malachi 3:9",
+      "Malachi 3:10",
+      "Malachi 3:11",
+      "Malachi 3:12"
+    ],
+    "title": "Tithes in an agricultural setting",
+    "status": "Context",
+    "summary": "The promised blessing concerns food stores, crops, vines, and crop destroyers.",
+    "text": "The community is accused of withholding tithes; the response promises provision and protection for produce.",
+    "reasoning": "Its agricultural setting matters. A guaranteed modern investment return is an extension beyond the immediate text.",
+    "scope": "Theological promise, not a financial or scientific guarantee.",
+    "sources": [
+      {
+        "label": "Primary text: Malachi 3 (WEB)",
+        "url": "https://ebible.org/engwebp/MAL03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "book": 38,
+        "chapter": 3,
+        "verse": 8,
+        "label": "Malachi 3:8"
+      }
+    ],
+    "checked": "2026-10-11"
   }
 ]

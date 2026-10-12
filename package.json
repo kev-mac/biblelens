@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/audit-annotations.mjs && node scripts/check-annotations.mjs",
+    "start": "node scripts/serve.mjs"
   }
 }
