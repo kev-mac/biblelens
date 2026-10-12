@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 186,
+    "evidenceRecords": 188,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 201,
-    "annotatedVerses": 1709
+    "chaptersWithAnnotations": 205,
+    "annotatedVerses": 1755
   },
   "byBook": [
     {
@@ -34,13 +34,13 @@
       "book": "Numbers",
       "chapters": 36,
       "chaptersWithAnnotations": 36,
-      "annotatedVerses": 507
+      "annotatedVerses": 515
     },
     {
       "book": "Deuteronomy",
       "chapters": 34,
-      "chaptersWithAnnotations": 4,
-      "annotatedVerses": 9
+      "chaptersWithAnnotations": 8,
+      "annotatedVerses": 47
     },
     {
       "book": "Joshua",
@@ -3134,6 +3134,9 @@
         "numbers-spies-report-and-rhetoric"
       ],
       "annotatedVerses": [
+        1,
+        2,
+        3,
         27,
         28,
         30,
@@ -3343,7 +3346,8 @@
       "chapter": 20,
       "annotationIds": [
         "early-aaron",
-        "numbers-rock-instructions-differ"
+        "numbers-rock-instructions-differ",
+        "deuteronomy-edom-passage-and-provisions"
       ],
       "annotatedVerses": [
         7,
@@ -3353,6 +3357,11 @@
         11,
         12,
         13,
+        17,
+        18,
+        19,
+        20,
+        21,
         24,
         28
       ],
@@ -3819,36 +3828,103 @@
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-jethro-delegation",
+        "numbers-spies-report-and-rhetoric",
+        "numbers-rock-instructions-differ"
+      ],
+      "annotatedVerses": [
+        9,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        37
+      ],
+      "modes": [
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-edom-passage-and-provisions"
+      ],
+      "annotatedVerses": [
+        4,
+        5,
+        6,
+        8,
+        27,
+        28,
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "numbers-rock-instructions-differ",
+        "numbers-east-jordan-conditional-settlement",
+        "deuteronomy-og-bed-and-body-size"
+      ],
+      "annotatedVerses": [
+        11,
+        12,
+        13,
+        18,
+        19,
+        20,
+        26,
+        27
+      ],
+      "modes": [
+        "contradictions",
+        "science"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "numbers-rock-instructions-differ",
+        "numbers-refuge-protection-and-limits",
+        "study-seen"
+      ],
+      "annotatedVerses": [
+        12,
+        15,
+        16,
+        21,
+        22,
+        41,
+        42,
+        43
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

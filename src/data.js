@@ -21,7 +21,10 @@ const ENTRIES = [
       "Exodus 24:9",
       "Exodus 24:10",
       "Exodus 24:11",
-      "Numbers 12:8"
+      "Numbers 12:8",
+      "Deuteronomy 4:12",
+      "Deuteronomy 4:15",
+      "Deuteronomy 4:16"
     ],
     "intro": "A face-to-face encounter in Exodus meets an absolute-sounding statement in John.",
     "passages": [
@@ -43,7 +46,7 @@ const ENTRIES = [
     "responseUrl": "https://www.gotquestions.org/seen-God.html",
     "assessment": "Exodus 24 describes a group seeing God without harm; Exodus 33 restricts seeing God’s face, and John 1 says no one has seen God. A distinction between a manifestation and full divine sight is a possible theological reading. The passages do not explicitly define one uniform distinction, so that reconciliation remains an interpretation.",
     "question": "Does “face to face” describe literal sight, an idiom, or a manifestation? Read Exodus 33:20–23 alongside verse 11.",
-    "context": "Exodus 33 includes both personal communication and a restriction on seeing God’s face. John 1 introduces the Son’s role in revealing God. Exodus 24:9–11 explicitly says a group saw God and survived; this is stronger sight language than the possible idiom in Exodus 33:11. Numbers 12:8 distinguishes Moses’s direct communication and beholding the divine similitude from other prophets’ dreams and visions; that distinction does not explicitly equate similitude with seeing the unrestricted divine face.",
+    "context": "Exodus 33 includes both personal communication and a restriction on seeing God’s face. John 1 introduces the Son’s role in revealing God. Exodus 24:9–11 explicitly says a group saw God and survived; this is stronger sight language than the possible idiom in Exodus 33:11. Numbers 12:8 distinguishes Moses’s direct communication and beholding the divine similitude from other prophets’ dreams and visions; that distinction does not explicitly equate similitude with seeing the unrestricted divine face. Deuteronomy 4:12–16 says the gathered people heard a voice but saw no form, grounding its warning against images. The audience differs from Moses’s special encounter, so absence of a form for the people does not directly deny his distinct experience.",
     "translation": "KJV and ASV preserve the central tension. “LORD” versus “Jehovah” reflects a rendering of the divine name.",
     "sources": [
       {
@@ -54,7 +57,8 @@ const ENTRIES = [
         "label": "Exodus 24 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO24.htm"
       },
-      {"label": "Numbers 12 · primary text", "url": "https://ebible.org/eng-kjv/NUM12.htm"}
+      {"label": "Numbers 12 · primary text", "url": "https://ebible.org/eng-kjv/NUM12.htm"},
+      {"label": "Deuteronomy 4 · primary text", "url": "https://ebible.org/eng-kjv/DEU04.htm"}
     ],
     "reasoning": "Verse 11 compares the conversation to friends speaking. Reading that expression as direct communication rather than literal sight resolves the apparent tension with verses 20–23."
   },
