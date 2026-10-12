@@ -1032,12 +1032,15 @@ const EVIDENCE=[
       "Joshua 6:22",
       "Joshua 6:23",
       "Joshua 6:25",
-      "Joshua 3:10"
+      "Joshua 3:10",
+      "Joshua 6:20",
+      "Joshua 6:21",
+      "Joshua 6:24"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed. Joshua 6:21 describes destruction encompassing people of both sexes and ages and livestock; 6:24 describes burning the city with designated metals preserved for the treasury. The same account orders Rahab and her household brought out alive. These are explicitly differentiated outcomes, so the totalizing statement should be read together with the exceptions rather than quoted in isolation.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed. This explicit exception qualifies an unqualified reading of destruction language; it does not by itself establish the historical extent of conquest or resolve the moral assessment of the killings.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
     "sources": [
@@ -1320,6 +1323,24 @@ const EVIDENCE=[
         "book": 5,
         "chapter": 3,
         "verse": 10
+      },
+      {
+        "label": "Joshua 6:20",
+        "book": 5,
+        "chapter": 6,
+        "verse": 20
+      },
+      {
+        "label": "Joshua 6:21",
+        "book": 5,
+        "chapter": 6,
+        "verse": 21
+      },
+      {
+        "label": "Joshua 6:24",
+        "book": 5,
+        "chapter": 6,
+        "verse": 24
       }
     ],
     "checked": "2026-10-12"
@@ -20552,6 +20573,113 @@ const EVIDENCE=[
         "book": 5,
         "chapter": 4,
         "verse": 20
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "joshua-wilderness-circumcision",
+    "mode": "contradictions",
+    "ref": "Joshua 5:5",
+    "appliesTo": [
+      "Joshua 5:2",
+      "Joshua 5:3",
+      "Joshua 5:5",
+      "Joshua 5:7",
+      "Joshua 5:8",
+      "Genesis 17:10",
+      "Genesis 17:11",
+      "Genesis 17:12",
+      "Genesis 17:13",
+      "Genesis 17:14",
+      "Leviticus 12:3"
+    ],
+    "title": "An eighth-day command and a generation left uncircumcised",
+    "status": "Context",
+    "summary": "Joshua reports that wilderness-born males were not circumcised, despite the earlier eighth-day command. This is a gap between instruction and reported practice.",
+    "text": "Genesis 17 requires male circumcision, specifies the eighth day and treats remaining uncircumcised as covenant breach. Leviticus 12:3 repeats the timing. Joshua 5:5,7 says those born during the wilderness journey were not circumcised and describes Joshua circumcising them at Gilgal. The second time in 5:2 refers in context to another generation-wide action, not necessarily a second operation on already circumcised individuals.",
+    "reasoning": "A command does not entail that everyone obeyed it. Joshua distinguishes the circumcised group that left Egypt from their uncircumcised children and supplies a later remedy; it does not issue an opposite command or explain why the earlier timing was not followed.",
+    "scope": "The omission is expressly reported, but its motive and duration for each individual are not supplied. Do not infer that the eighth-day rule was formally repealed, that every person was circumcised twice, or that these verses independently establish the chronology or historical occurrence.",
+    "refs": [
+      {
+        "label": "Joshua 5:2",
+        "book": 5,
+        "chapter": 5,
+        "verse": 2
+      },
+      {
+        "label": "Joshua 5:3",
+        "book": 5,
+        "chapter": 5,
+        "verse": 3
+      },
+      {
+        "label": "Joshua 5:5",
+        "book": 5,
+        "chapter": 5,
+        "verse": 5
+      },
+      {
+        "label": "Joshua 5:7",
+        "book": 5,
+        "chapter": 5,
+        "verse": 7
+      },
+      {
+        "label": "Joshua 5:8",
+        "book": 5,
+        "chapter": 5,
+        "verse": 8
+      },
+      {
+        "label": "Genesis 17:10",
+        "book": 0,
+        "chapter": 17,
+        "verse": 10
+      },
+      {
+        "label": "Genesis 17:11",
+        "book": 0,
+        "chapter": 17,
+        "verse": 11
+      },
+      {
+        "label": "Genesis 17:12",
+        "book": 0,
+        "chapter": 17,
+        "verse": 12
+      },
+      {
+        "label": "Genesis 17:13",
+        "book": 0,
+        "chapter": 17,
+        "verse": 13
+      },
+      {
+        "label": "Genesis 17:14",
+        "book": 0,
+        "chapter": 17,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 12:3",
+        "book": 2,
+        "chapter": 12,
+        "verse": 3
+      }
+    ],
+    "sources": [
+      {
+        "label": "Joshua 5 · generations distinguished",
+        "url": "https://ebible.org/eng-kjv/JOS05.htm"
+      },
+      {
+        "label": "Genesis 17 · covenant requirement",
+        "url": "https://ebible.org/eng-kjv/GEN17.htm"
+      },
+      {
+        "label": "Leviticus 12 · eighth-day timing",
+        "url": "https://ebible.org/eng-kjv/LEV12.htm"
       }
     ],
     "checked": "2026-10-12"

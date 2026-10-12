@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 220,
+    "evidenceRecords": 221,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 245,
-    "annotatedVerses": 2126
+    "chaptersWithAnnotations": 247,
+    "annotatedVerses": 2139
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 7,
-      "annotatedVerses": 22
+      "chaptersWithAnnotations": 8,
+      "annotatedVerses": 27
     },
     {
       "book": "Exodus",
@@ -45,8 +45,8 @@
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 8,
-      "annotatedVerses": 37
+      "chaptersWithAnnotations": 9,
+      "annotatedVerses": 45
     },
     {
       "book": "Judges",
@@ -608,9 +608,19 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "joshua-wilderness-circumcision"
+      ],
+      "annotatedVerses": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -2296,7 +2306,8 @@
       "chapter": 12,
       "annotationIds": [
         "leviticus-affordable-offerings",
-        "leviticus-postpartum-periods"
+        "leviticus-postpartum-periods",
+        "joshua-wilderness-circumcision"
       ],
       "annotatedVerses": [
         2,
@@ -2308,7 +2319,8 @@
         8
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -4823,9 +4835,19 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "joshua-wilderness-circumcision"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -4837,8 +4859,11 @@
       ],
       "annotatedVerses": [
         17,
+        20,
+        21,
         22,
         23,
+        24,
         25
       ],
       "modes": [
