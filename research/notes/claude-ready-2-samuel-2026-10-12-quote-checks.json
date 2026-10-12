@@ -1,0 +1,1463 @@
+{
+  "ownerRuling": "ACCEPT Absalom wording clash with possible unreported reconciliation retained",
+  "checks": [
+    {
+      "id": "david-sons-and-ira-chief-rulers-or-priests",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "כֹּהֲנִ֑ים",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/8/",
+            "https://bolls.life/get-text/WLC/13/18/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/8/",
+            "https://bolls.life/get-text/HAC/10/8/",
+            "https://bolls.life/get-text/WLC/10/20/",
+            "https://bolls.life/get-text/HAC/10/20/",
+            "https://bolls.life/get-text/WLC/13/18/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/8/",
+              "verse": 17
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/13/18/",
+              "verse": 16
+            }
+          ]
+        },
+        {
+          "quote": "וּבְנֵ֥י דָוִ֖ד כֹּהֲנִ֥ים הָיֽוּ",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/8/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/8/",
+            "https://bolls.life/get-text/HAC/10/8/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/8/",
+              "verse": 18
+            }
+          ]
+        },
+        {
+          "quote": "ובני דוד כהנים היו",
+          "exact": [
+            "https://bolls.life/get-text/HAC/10/8/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/8/",
+            "https://bolls.life/get-text/HAC/10/8/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/HAC/10/8/",
+              "verse": 18
+            }
+          ]
+        },
+        {
+          "quote": "כֹּהֲנִֽים",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/20/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/8/",
+            "https://bolls.life/get-text/HAC/10/8/",
+            "https://bolls.life/get-text/WLC/10/20/",
+            "https://bolls.life/get-text/HAC/10/20/",
+            "https://bolls.life/get-text/WLC/13/18/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/20/",
+              "verse": 25
+            }
+          ]
+        },
+        {
+          "quote": "הָיָ֥ה כֹהֵ֖ן לְדָוִֽד",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/20/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/20/",
+            "https://bolls.life/get-text/HAC/10/20/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/20/",
+              "verse": 26
+            }
+          ]
+        },
+        {
+          "quote": "היה כהן לדוד",
+          "exact": [
+            "https://bolls.life/get-text/HAC/10/20/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/20/",
+            "https://bolls.life/get-text/HAC/10/20/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/HAC/10/20/",
+              "verse": 26
+            }
+          ]
+        },
+        {
+          "quote": "καὶ οἱ υἱοὶ Δαυὶδ αὐλάρχαι ἦσαν",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA08.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA08.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA08.htm",
+              "verse": 18
+            }
+          ]
+        },
+        {
+          "quote": "ἱερεῖς",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA08.htm",
+            "https://ebible.org/grcbrent/2SA20.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA08.htm",
+            "https://ebible.org/grcbrent/2SA20.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA08.htm",
+              "verse": 17
+            },
+            {
+              "url": "https://ebible.org/grcbrent/2SA20.htm",
+              "verse": 25
+            }
+          ]
+        },
+        {
+          "quote": "ἦν ἱερεὺς τῷ Δαυίδ",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA20.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA20.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA20.htm",
+              "verse": 26
+            }
+          ]
+        },
+        {
+          "quote": "וּבְנֵי־דָוִ֥יד הָרִאשֹׁנִ֖ים לְיַ֥ד הַמֶּֽלֶךְ",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/18/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/18/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/18/",
+              "verse": 17
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "Zadok the son of Ahitub, and Ahimelech the son of Abiathar, were the priests",
+          "found": true
+        },
+        {
+          "quote": "and David's sons were chief rulers",
+          "found": true
+        },
+        {
+          "quote": "Zadok and Abiathar were the priests",
+          "found": true
+        },
+        {
+          "quote": "And Ira also the Jairite was a chief ruler about David.",
+          "found": true
+        },
+        {
+          "quote": "and the sons of David were chief about the king",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 8:18",
+          "n": 18,
+          "kjv": "And Benaiah the son of Jehoiada was over both the Cherethites and the Pelethites; and David's sons were chief rulers.",
+          "asv": "and Benaiah the son of Jehoiada [was over] the Cherethites and the Pelethites; and David’s sons were chief ministers.",
+          "web": "Benaiah the son of Jehoiada was over the Cherethites and the Pelethites; and David’s sons were chief ministers."
+        },
+        {
+          "ref": "2 Samuel 20:26",
+          "n": 26,
+          "kjv": "And Ira also the Jairite was a chief ruler about David.",
+          "asv": "and also Ira the Jairite was chief minister unto David.",
+          "web": "and Ira the Jairite was chief minister to David."
+        },
+        {
+          "ref": "2 Samuel 8:17",
+          "n": 17,
+          "kjv": "And Zadok the son of Ahitub, and Ahimelech the son of Abiathar, were the priests; and Seraiah was the scribe;",
+          "asv": "and Zadok the son of Ahitub, and Ahimelech the son of Abiathar, were priests; and Seraiah was scribe;",
+          "web": "Zadok the son of Ahitub and Ahimelech the son of Abiathar were priests, Seraiah was scribe,"
+        },
+        {
+          "ref": "2 Samuel 20:25",
+          "n": 25,
+          "kjv": "And Sheva was scribe: and Zadok and Abiathar were the priests:",
+          "asv": "and Sheva was scribe; and Zadok and Abiathar were priests;",
+          "web": "Sheva was scribe, Zadok and Abiathar were priests,"
+        },
+        {
+          "ref": "1 Chronicles 18:17",
+          "n": 17,
+          "kjv": "And Benaiah the son of Jehoiada was over the Cherethites and the Pelethites; and the sons of David were chief about the king.",
+          "asv": "and Benaiah the son of Jehoiada was over the Cherethites and the Pelethites; and the sons of David were chief about the king.",
+          "web": "and Benaiah the son of Jehoiada was over the Cherethites and the Pelethites; and the sons of David were chief officials serving the king."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "philistine-images-burned-or-carried-off",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "וַיִּשָּׂאֵ֥ם דָּוִ֖ד וַאֲנָשָֽׁיו",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/5/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/5/",
+            "https://bolls.life/get-text/HAC/10/5/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/5/",
+              "verse": 21
+            }
+          ]
+        },
+        {
+          "quote": "וישאם דוד ואנשיו",
+          "exact": [
+            "https://bolls.life/get-text/HAC/10/5/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/5/",
+            "https://bolls.life/get-text/HAC/10/5/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/HAC/10/5/",
+              "verse": 21
+            }
+          ]
+        },
+        {
+          "quote": "וַיִּשְׂאוּ֙ אֶת־עֲשָׂהאֵ֔ל",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/2/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/2/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/2/",
+              "verse": 32
+            }
+          ]
+        },
+        {
+          "quote": "וַתִּשָּׂאֵ֤הוּ אֹֽמַנְתֹּו֙",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/4/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/4/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/4/",
+              "verse": 4
+            }
+          ]
+        },
+        {
+          "quote": "καὶ ἐλάβοσαν αὐτοὺς Δαυὶδ καὶ οἱ ἄνδρες",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA05.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA05.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA05.htm",
+              "verse": 21
+            }
+          ]
+        },
+        {
+          "quote": "וַיִּשָּׂרְפ֖וּ בָּאֵֽשׁ",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/14/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/14/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/14/",
+              "verse": 12
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "And there they left their images, and David and his men burned them.",
+          "found": true
+        },
+        {
+          "quote": "And they took up Asahel",
+          "found": true
+        },
+        {
+          "quote": "his nurse took him up",
+          "found": true
+        },
+        {
+          "quote": "David gave a commandment, and they were burned with fire",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 5:21",
+          "n": 21,
+          "kjv": "And there they left their images, and David and his men burned them.",
+          "asv": "And they left their images there; and David and his men took them away.",
+          "web": "They left their images there, and David and his men took them away."
+        },
+        {
+          "ref": "1 Chronicles 14:12",
+          "n": 12,
+          "kjv": "And when they had left their gods there, David gave a commandment, and they were burned with fire.",
+          "asv": "And they left their gods there; and David gave commandment, and they were burned with fire.",
+          "web": "They left their gods there; and David gave a command, and they were burned with fire."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "hadadezer-horsemen-seventeen-hundred-seven-hundred-or-seven-thousand",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "אֶ֤לֶף וּשְׁבַע־מֵאֹות֙ פָּרָשִׁ֔ים וְעֶשְׂרִ֥ים אֶ֖לֶף אִ֣ישׁ רַגְלִ֑י",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/8/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/8/",
+            "https://bolls.life/get-text/HAC/10/8/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/8/",
+              "verse": 4
+            }
+          ]
+        },
+        {
+          "quote": "אלף ושבע מאות פרשים ועשרים אלף איש רגלי",
+          "exact": [
+            "https://bolls.life/get-text/HAC/10/8/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/8/",
+            "https://bolls.life/get-text/HAC/10/8/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/HAC/10/8/",
+              "verse": 4
+            }
+          ]
+        },
+        {
+          "quote": "χίλια ἅρματα, καὶ ἑπτὰ χιλιάδας ἱππέων, καὶ εἴκοσι χιλιάδας ἀνδρῶν πεζῶν",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA08.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA08.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA08.htm",
+              "verse": 4
+            }
+          ]
+        },
+        {
+          "quote": "אֶ֣לֶף רֶ֗כֶב וְשִׁבְעַ֤ת אֲלָפִים֙ פָּֽרָשִׁ֔ים",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/18/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/18/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/18/",
+              "verse": 4
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "And David took from him a thousand chariots, and seven hundred horsemen, and twenty thousand footmen",
+          "found": true
+        },
+        {
+          "quote": "And David took from him a thousand chariots, and seven thousand horsemen, and twenty thousand footmen",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 8:4",
+          "n": 4,
+          "kjv": "And David took from him a thousand chariots, and seven hundred horsemen, and twenty thousand footmen: and David houghed all the chariot horses, but reserved of them for an hundred chariots.",
+          "asv": "And David took from him a thousand and seven hundred horsemen, and twenty thousand footmen: and David hocked all the chariot horses, but reserved of them for a hundred chariots.",
+          "web": "David took from him one thousand seven hundred horsemen and twenty thousand footmen. David hamstrung the chariot horses, but reserved enough of them for one hundred chariots."
+        },
+        {
+          "ref": "1 Chronicles 18:4",
+          "n": 4,
+          "kjv": "And David took from him a thousand chariots, and seven thousand horsemen, and twenty thousand footmen: David also houghed all the chariot horses, but reserved of them an hundred chariots.",
+          "asv": "And David took from him a thousand chariots, and seven thousand horsemen, and twenty thousand footmen; and David hocked all the chariot horses, but reserved of them for a hundred chariots.",
+          "web": "David took from him one thousand chariots, seven thousand horsemen, and twenty thousand footmen; and David hamstrung all the chariot horses, but reserved of them enough for one hundred chariots."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "philistines-smitten-from-geba-or-gibeon",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "מִגֶּ֖בַע",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/5/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/5/",
+            "https://bolls.life/get-text/WLC/13/14/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/5/",
+              "verse": 25
+            }
+          ]
+        },
+        {
+          "quote": "ἀπὸ Γαβαὼν ἕως τῆς γῆς Γαζηρά",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA05.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA05.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA05.htm",
+              "verse": 25
+            }
+          ]
+        },
+        {
+          "quote": "מִגִּבְעֹ֖ון",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/14/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/14/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/14/",
+              "verse": 16
+            }
+          ]
+        },
+        {
+          "quote": "ἀπὸ Γαβαὼν ἕως Γαζηρά",
+          "exact": [
+            "https://ebible.org/grcbrent/1CH14.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/1CH14.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH14.htm",
+              "verse": 16
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "smote the Philistines from Geba until thou come to Gazer",
+          "found": true
+        },
+        {
+          "quote": "smote the host of the Philistines from Gibeon even to Gazer",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 5:25",
+          "n": 25,
+          "kjv": "And David did so, as the Lord had commanded him; and smote the Philistines from Geba until thou come to Gazer.",
+          "asv": "And David did so, as Jehovah commanded him, and smote the Philistines from Geba until thou come to Gezer.",
+          "web": "David did so, as the LORD commanded him, and struck the Philistines all the way from Geba to Gezer."
+        },
+        {
+          "ref": "1 Chronicles 14:16",
+          "n": 16,
+          "kjv": "David therefore did as God commanded him: and they smote the host of the Philistines from Gibeon even to Gazer.",
+          "asv": "And David did as God commanded him: and they smote the host of the Philistines from Gibeon even to Gezer.",
+          "web": "David did as God commanded him; and they attacked the army of the Philistines from Gibeon even to Gezer."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "valley-of-salt-syrians-or-edomites",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "מֵהַכֹּותֹ֥ו אֶת־אֲרָ֖ם בְּגֵיא־מֶ֑לַח שְׁמֹונָ֥ה עָשָׂ֖ר אָֽלֶף",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/8/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/8/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/8/",
+              "verse": 13
+            }
+          ]
+        },
+        {
+          "quote": "ἐπάταξε τὴν Ἰδουμαίαν ἐν Γεβελὲμ εἰς ὀκτωκαίδεκα χιλιάδας",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA08.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA08.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA08.htm",
+              "verse": 13
+            }
+          ]
+        },
+        {
+          "quote": "הִכָּ֤ה אֶת־אֱדֹום֙ בְּגֵ֣יא הַמֶּ֔לַח שְׁמֹונָ֥ה עָשָׂ֖ר אָֽלֶף",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/18/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/18/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/18/",
+              "verse": 12
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "And David gat him a name when he returned from smiting of the Syrians in the valley of salt, being eighteen thousand men.",
+          "found": true
+        },
+        {
+          "quote": "Moreover Abishai the son of Zeruiah slew of the Edomites in the valley of salt eighteen thousand.",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 8:13",
+          "n": 13,
+          "kjv": "And David gat him a name when he returned from smiting of the Syrians in the valley of salt, being eighteen thousand men.",
+          "asv": "And David gat him a name when he returned from smiting the Syrians in the Valley of Salt, even eighteen thousand men.",
+          "web": "David earned a reputation when he returned from striking down eighteen thousand men of the Syrians in the Valley of Salt."
+        },
+        {
+          "ref": "1 Chronicles 18:12",
+          "n": 12,
+          "kjv": "Moreover Abishai the son of Zeruiah slew of the Edomites in the valley of salt eighteen thousand.",
+          "asv": "Moreover Abishai the son of Zeruiah smote of the Edomites in the Valley of Salt eighteen thousand.",
+          "web": "Moreover Abishai the son of Zeruiah struck eighteen thousand of the Edomites in the Valley of Salt."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "ishbosheth-murder-wheat-fetchers-or-sleeping-doorkeeper",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "לֹקְחֵ֣י חִטִּ֔ים וַיַּכֻּ֖הוּ אֶל־הַחֹ֑מֶשׁ",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/4/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/4/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/4/",
+              "verse": 6
+            }
+          ]
+        },
+        {
+          "quote": "Καὶ ἰδοὺ ἡ θυρωρὸς τοῦ οἴκου ἐκάθαιρε πυροὺς, καὶ ἐνύσταξε καὶ ἐκάθευδε· καὶ Ῥηχὰβ καὶ Βαανὰ οἱ ἀδελφοὶ διέλαθον",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA04.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA04.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA04.htm",
+              "verse": 6
+            }
+          ]
+        },
+        {
+          "quote": "καὶ τύπτουσιν αὐτὸν, καὶ θανατοῦσιν αὐτὸν",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA04.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA04.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA04.htm",
+              "verse": 7
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "And they came thither into the midst of the house, as though they would have fetched wheat; and they smote him under the fifth rib: and Rechab and Baanah his brother escaped.",
+          "found": true
+        },
+        {
+          "quote": "and they smote him, and slew him, and beheaded him",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 4:6",
+          "n": 6,
+          "kjv": "And they came thither into the midst of the house, as though they would have fetched wheat; and they smote him under the fifth rib: and Rechab and Baanah his brother escaped.",
+          "asv": "And they came thither into the midst of the house, as though they would have fetched wheat; and they smote him in the body: and Rechab and Baanah his brother escaped.",
+          "web": "They came there into the middle of the house as though they would have fetched wheat, and they struck him in the body; and Rechab and Baanah his brother escaped."
+        },
+        {
+          "ref": "2 Samuel 4:7",
+          "n": 7,
+          "kjv": "For when they came into the house, he lay on his bed in his bedchamber, and they smote him, and slew him, and beheaded him, and took his head, and gat them away through the plain all night.",
+          "asv": "Now when they came into the house, as he lay on his bed in his bedchamber, they smote him, and slew him, and beheaded him, and took his head, and went by the way of the Arabah all night.",
+          "web": "Now when they came into the house as he lay on his bed in his bedroom, they struck him, killed him, beheaded him, and took his head, and went by the way of the Arabah all night."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "david-wroth-at-amnon-greek-adds-he-did-not-grieve-him",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "וַיִּ֥חַר לֹ֖ו מְאֹֽד",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/13/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/13/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/13/",
+              "verse": 21
+            }
+          ]
+        },
+        {
+          "quote": "καὶ ἐθυμώθη σφόδρα, καὶ οὐκ ἐλύπησε τὸ πνεῦμα Ἀμνὼν τοῦ υἱοῦ αὐτοῦ, ὅτι ἠγάπα αὐτὸν, ὅτι πρωτότοκος αὐτοῦ ἦν",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA13.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA13.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA13.htm",
+              "verse": 21
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "But when king David heard of all these things, he was very wroth.",
+          "found": true
+        },
+        {
+          "quote": "So Tamar remained desolate in her brother Absalom's house",
+          "found": true
+        },
+        {
+          "quote": "And Absalom spake unto his brother Amnon neither good nor bad",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 13:21",
+          "n": 21,
+          "kjv": "But when king David heard of all these things, he was very wroth.",
+          "asv": "But when king David heard of all these things, he was very wroth.",
+          "web": "But when King David heard of all these things, he was very angry."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "david-longed-or-ceased-to-go-out-to-absalom",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "Καὶ ἐκόπασεν ὁ βασιλεὺς Δαυὶδ τοῦ ἐξελθεῖν πρὸς Ἀβεσσαλὼμ",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA13.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA13.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA13.htm",
+              "verse": 39
+            }
+          ]
+        },
+        {
+          "quote": "וַתְּכַל֙ דָּוִ֣ד הַמֶּ֔לֶךְ לָצֵ֖את אֶל־אַבְשָׁלֹ֑ום",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/13/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/13/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/13/",
+              "verse": 39
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "And the soul of king David longed to go forth unto Absalom: for he was comforted concerning Amnon, seeing he was dead.",
+          "found": true
+        },
+        {
+          "quote": "And king David ceased to go out after Abessalom",
+          "found": false
+        },
+        {
+          "quote": "And the king said, Let him turn to his own house, and let him not see my face.",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 13:39",
+          "n": 39,
+          "kjv": "And the soul of king David longed to go forth unto Absalom: for he was comforted concerning Amnon, seeing he was dead.",
+          "asv": "And [the soul of] king David longed to go forth unto Absalom: for he was comforted concerning Amnon, seeing he was dead.",
+          "web": "King David longed to go out to Absalom, for he was comforted concerning Amnon, since he was dead."
+        },
+        {
+          "ref": "2 Samuel 14:24",
+          "n": 24,
+          "kjv": "And the king said, Let him turn to his own house, and let him not see my face. So Absalom returned to his own house, and saw not the king's face.",
+          "asv": "And the king said, Let him turn to his own house, but let him not see my face. So Absalom turned to his own house, and saw not the king’s face.",
+          "web": "The king said, “Let him return to his own house, but let him not see my face.” So Absalom returned to his own house, and didn’t see the king’s face."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "david-gift-flagon-of-wine-or-cake-from-the-pan",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "ἑκάστῳ κολλυρίδα ἄρτου, καὶ ἐσχαρίτην, καὶ λάγανον ἀπὸ τηγάνου",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA06.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA06.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA06.htm",
+              "verse": 19
+            }
+          ]
+        },
+        {
+          "quote": "וַאֲשִׁישָׁ֖ה אֶחָ֑ת",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/6/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/6/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/6/",
+              "verse": 19
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "to every one a cake of bread, and a good piece of flesh, and a flagon of wine",
+          "found": true
+        },
+        {
+          "quote": "to every one a cake of bread, and a joint of meat, and a cake from the frying-pan",
+          "found": false
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 6:19",
+          "n": 19,
+          "kjv": "And he dealt among all the people, even among the whole multitude of Israel, as well to the women as men, to every one a cake of bread, and a good piece of flesh, and a flagon of wine. So all the people departed every one to his house.",
+          "asv": "And he dealt among all the people, even among the whole multitude of Israel, both to men and women, to every one a cake of bread, and a portion [of flesh], and a cake of raisins. So all the people departed every one to his house.",
+          "web": "He gave to all the people, even among the whole multitude of Israel, both to men and women, to everyone a portion of bread, dates, and raisins. So all the people departed, each to his own house."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "amasa-father-israelite-ishmeelite-or-jezreelite",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "יִתְרָ֣א הַיִּשְׂרְאֵלִ֔י",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/17/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/17/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/17/",
+              "verse": 25
+            }
+          ]
+        },
+        {
+          "quote": "Ἰεθὲρ ὁ Ἰεζραηλίτης",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA17.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA17.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA17.htm",
+              "verse": 25
+            }
+          ]
+        },
+        {
+          "quote": "יֶ֖תֶר הַיִּשְׁמְעֵאלִֽי",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/2/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/2/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/2/",
+              "verse": 17
+            }
+          ]
+        },
+        {
+          "quote": "ὁ Ἰσμαηλίτης",
+          "exact": [
+            "https://ebible.org/grcbrent/1CH02.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/1CH02.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH02.htm",
+              "verse": 17
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "which Amasa was a man's son, whose name was Ithra an Israelite",
+          "found": true
+        },
+        {
+          "quote": "and the father of Amasa was Jether the Ishmeelite",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 17:25",
+          "n": 25,
+          "kjv": "And Absalom made Amasa captain of the host instead of Joab: which Amasa was a man's son, whose name was Ithra an Israelite, that went in to Abigail the daughter of Nahash, sister to Zeruiah Joab's mother.",
+          "asv": "And Absalom set Amasa over the host instead of Joab. Now Amasa was the son of a man, whose name was Ithra the Israelite, that went in to Abigal the daughter of Nahash, sister to Zeruiah, Joab’s mother.",
+          "web": "Absalom set Amasa over the army instead of Joab. Now Amasa was the son of a man whose name was Ithra the Israelite, who went in to Abigail the daughter of Nahash, sister to Zeruiah, Joab’s mother."
+        },
+        {
+          "ref": "1 Chronicles 2:17",
+          "n": 17,
+          "kjv": "And Abigail bare Amasa: and the father of Amasa was Jether the Ishmeelite.",
+          "asv": "And Abigail bare Amasa; and the father of Amasa was Jether the Ishmaelite.",
+          "web": "Abigail bore Amasa; and the father of Amasa was Jether the Ishmaelite."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "early-census-famine",
+      "file": "2-samuel-1-24-records.json",
+      "existing": true,
+      "language": [
+        {
+          "quote": "שֶֽׁבַע שָׁנִ֣ים ׀ רָעָ֣ב",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/24/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/24/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/24/",
+              "verse": 13
+            }
+          ]
+        },
+        {
+          "quote": "שָׁלֹ֨ושׁ שָׁנִ֜ים רָעָ֗ב",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/21/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/21/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/21/",
+              "verse": 12
+            }
+          ]
+        },
+        {
+          "quote": "εἰ ἔλθῃ σοι τρία ἔτη λιμὸς ἐν τῇ γῇ σου",
+          "exact": [
+            "https://ebible.org/grcbrent/2SA24.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/2SA24.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA24.htm",
+              "verse": 13
+            }
+          ]
+        },
+        {
+          "quote": "ἢ τρία ἔτη λιμοῦ",
+          "exact": [
+            "https://ebible.org/grcbrent/1CH21.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/1CH21.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH21.htm",
+              "verse": 12
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "Shall seven years of famine come unto thee in thy land?",
+          "found": true
+        },
+        {
+          "quote": "Either three years' famine",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 24:13",
+          "n": 13,
+          "kjv": "So Gad came to David, and told him, and said unto him, Shall seven years of famine come unto thee in thy land? or wilt thou flee three months before thine enemies, while they pursue thee? or that there be three days' pestilence in thy land? now advise, and see what answer I shall return to him that sent me.",
+          "asv": "So Gad came to David, and told him, and said unto him, Shall seven years of famine come unto thee in thy land? or wilt thou flee three months before thy foes while they pursue thee? or shall there be three days’ pestilence in thy land? now advise thee, and consider what answer I shall return to him that sent me.",
+          "web": "So Gad came to David, and told him, saying, “Shall seven years of famine come to you in your land? Or will you flee three months before your foes while they pursue you? Or shall there be three days’ pestilence in your land? Now answer, and consider what answer I shall return to him who sent me.”"
+        },
+        {
+          "ref": "1 Chronicles 21:12",
+          "n": 12,
+          "kjv": "Either three years' famine; or three months to be destroyed before thy foes, while that the sword of thine enemies overtaketh thee; or else three days the sword of the Lord, even the pestilence, in the land, and the angel of the Lord destroying throughout all the coasts of Israel. Now therefore advise thyself what word I shall bring again to him that sent me.",
+          "asv": "either three years of famine; or three months to be consumed before thy foes, while the sword of thine enemies overtaketh thee; or else three days the sword of Jehovah, even pestilence in the land, and the angel of Jehovah destroying throughout all the borders of Israel. Now therefore consider what answer I shall return to him that sent me.",
+          "web": "either three years of famine; or three months to be consumed before your foes, while the sword of your enemies overtakes you; or else three days of the sword of the LORD, even pestilence in the land, and the LORD’s angel destroying throughout all the borders of Israel. Now therefore consider what answer I shall return to him who sent me.’”"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "syrian-chariots-seven-hundred-or-seven-thousand",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "שְׁבַ֤ע מֵאֹות֙ רֶ֔כֶב וְאַרְבָּעִ֥ים אֶ֖לֶף פָּרָשִׁ֑ים",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/10/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/10/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/10/",
+              "verse": 18
+            }
+          ]
+        },
+        {
+          "quote": "שִׁבְעַ֤ת אֲלָפִים֙ רֶ֔כֶב וְאַרְבָּעִ֥ים אֶ֖לֶף אִ֣ישׁ רַגְלִ֑י",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/19/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/19/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/19/",
+              "verse": 18
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "David slew the men of seven hundred chariots of the Syrians, and forty thousand horsemen",
+          "found": true
+        },
+        {
+          "quote": "David slew of the Syrians seven thousand men which fought in chariots, and forty thousand footmen",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 10:18",
+          "n": 18,
+          "kjv": "And the Syrians fled before Israel; and David slew the men of seven hundred chariots of the Syrians, and forty thousand horsemen, and smote Shobach the captain of their host, who died there.",
+          "asv": "And the Syrians fled before Israel; and David slew of the Syrians [the men of] seven hundred chariots, and forty thousand horsemen, and smote Shobach the captain of their host, so that he died there.",
+          "web": "The Syrians fled before Israel; and David killed seven hundred charioteers of the Syrians and forty thousand horsemen, and struck Shobach the captain of their army, so that he died there."
+        },
+        {
+          "ref": "1 Chronicles 19:18",
+          "n": 18,
+          "kjv": "But the Syrians fled before Israel; and David slew of the Syrians seven thousand men which fought in chariots, and forty thousand footmen, and killed Shophach the captain of the host.",
+          "asv": "And the Syrians fled before Israel; and David slew of the Syrians [the men of] seven thousand chariots, and forty thousand footmen, and killed Shophach the captain of the host.",
+          "web": "The Syrians fled before Israel; and David killed of the Syrian men seven thousand charioteers and forty thousand footmen, and also killed Shophach the captain of the army."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "absalom-three-sons-or-no-son",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "וַיִּֽוָּלְד֤וּ לְאַבְשָׁלֹום֙ שְׁלֹושָׁ֣ה בָנִ֔ים",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/14/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/14/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/14/",
+              "verse": 27
+            }
+          ]
+        },
+        {
+          "quote": "אֵֽין־לִ֣י בֵ֔ן",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/18/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/18/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/18/",
+              "verse": 18
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "And unto Absalom there were born three sons, and one daughter, whose name was Tamar",
+          "found": true
+        },
+        {
+          "quote": "for he said, I have no son to keep my name in remembrance",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 14:27",
+          "n": 27,
+          "kjv": "And unto Absalom there were born three sons, and one daughter, whose name was Tamar: she was a woman of a fair countenance.",
+          "asv": "And unto Absalom there were born three sons, and one daughter, whose name was Tamar: she was a woman of a fair countenance.",
+          "web": "Three sons were born to Absalom, and one daughter, whose name was Tamar. She was a woman with a beautiful face."
+        },
+        {
+          "ref": "2 Samuel 18:18",
+          "n": 18,
+          "kjv": "Now Absalom in his lifetime had taken and reared up for himself a pillar, which is in the king's dale: for he said, I have no son to keep my name in remembrance: and he called the pillar after his own name: and it is called unto this day, Absalom's place.",
+          "asv": "Now Absalom in his lifetime had taken and reared up for himself the pillar, which is in the king’s dale; for he said, I have no son to keep my name in remembrance: and he called the pillar after his own name; and it is called Absalom’s monument, unto this day.",
+          "web": "Now Absalom in his lifetime had taken and reared up for himself the pillar which is in the king’s valley, for he said, “I have no son to keep my name in memory.” He called the pillar after his own name. It is called Absalom’s monument, to this day."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "first-mighty-man-eight-hundred-or-three-hundred",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "עַל־שְׁמֹנֶ֥ה מֵאֹ֛ות חָלָ֖ל בְּפַ֥עַם",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/23/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/23/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/23/",
+              "verse": 8
+            }
+          ]
+        },
+        {
+          "quote": "עַל־שְׁלֹשׁ־מֵאֹ֥ות חָלָ֖ל בְּפַ֥עַם אֶחָֽת",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/11/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/11/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/11/",
+              "verse": 11
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "he lift up his spear against eight hundred, whom he slew at one time",
+          "found": true
+        },
+        {
+          "quote": "he lifted up his spear against three hundred slain by him at one time",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 23:8",
+          "n": 8,
+          "kjv": "These be the names of the mighty men whom David had: The Tachmonite that sat in the seat, chief among the captains; the same was Adino the Eznite: he lift up his spear against eight hundred, whom he slew at one time.",
+          "asv": "These are the names of the mighty men whom David had: Josheb-basshebeth a Tahchemonite, chief of the captains; the same was Adino the Eznite, against eight hundred slain at one time.",
+          "web": "These are the names of the mighty men whom David had: Josheb Basshebeth, a Tahchemonite, chief of the captains; he was called Adino the Eznite, who killed eight hundred at one time."
+        },
+        {
+          "ref": "1 Chronicles 11:11",
+          "n": 11,
+          "kjv": "And this is the number of the mighty men whom David had; Jashobeam, an Hachmonite, the chief of the captains: he lifted up his spear against three hundred slain by him at one time.",
+          "asv": "And this is the number of the mighty men whom David had: Jashobeam, the son of a Hachmonite, the chief of the thirty; he lifted up his spear against three hundred and slew them at one time.",
+          "web": "This is the number of the mighty men whom David had: Jashobeam, the son of a Hachmonite, the chief of the thirty; he lifted up his spear against three hundred and killed them at one time."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "census-totals-samuel-or-chronicles",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "שְׁמֹנֶה֩ מֵאֹ֨ות אֶ֤לֶף אִֽישׁ־חַ֙יִל֙ שֹׁ֣לֵֽף חֶ֔רֶב וְאִ֣ישׁ יְהוּדָ֔ה חֲמֵשׁ־מֵאֹ֥ות אֶ֖לֶף אִֽישׁ",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/24/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/24/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/24/",
+              "verse": 9
+            }
+          ]
+        },
+        {
+          "quote": "אֶ֣לֶף אֲלָפִים֩ וּמֵאָ֨ה אֶ֤לֶף אִישׁ֙ שֹׁ֣לֵֽף חֶ֔רֶב וִֽיהוּדָ֕ה אַרְבַּע֩ מֵאֹ֨ות וְשִׁבְעִ֥ים אֶ֛לֶף אִ֖ישׁ",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/21/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/21/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/21/",
+              "verse": 5
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "there were in Israel eight hundred thousand valiant men that drew the sword; and the men of Judah were five hundred thousand men",
+          "found": true
+        },
+        {
+          "quote": "And all they of Israel were a thousand thousand and an hundred thousand men that drew sword: and Judah was four hundred threescore and ten thousand men that drew sword.",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 24:9",
+          "n": 9,
+          "kjv": "And Joab gave up the sum of the number of the people unto the king: and there were in Israel eight hundred thousand valiant men that drew the sword; and the men of Judah were five hundred thousand men.",
+          "asv": "And Joab gave up the sum of the numbering of the people unto the king: and there were in Israel eight hundred thousand valiant men that drew the sword; and the men of Judah were five hundred thousand men.",
+          "web": "Joab gave up the sum of the counting of the people to the king; and there were in Israel eight hundred thousand valiant men who drew the sword, and the men of Judah were five hundred thousand men."
+        },
+        {
+          "ref": "1 Chronicles 21:5",
+          "n": 5,
+          "kjv": "And Joab gave the sum of the number of the people unto David. And all they of Israel were a thousand thousand and an hundred thousand men that drew sword: and Judah was four hundred threescore and ten thousand men that drew sword.",
+          "asv": "And Joab gave up the sum of the numbering of the people unto David. And all they of Israel were a thousand thousand and a hundred thousand men that drew sword: and Judah was four hundred threescore and ten thousand men that drew sword.",
+          "web": "Joab gave the sum of the census of the people to David. All those of Israel were one million one hundred thousand men who drew a sword; and in Judah were four hundred seventy thousand men who drew a sword."
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "threshingfloor-price-fifty-silver-or-six-hundred-gold",
+      "file": "2-samuel-1-24-records.json",
+      "existing": false,
+      "language": [
+        {
+          "quote": "בְּכֶ֖סֶף שְׁקָלִ֥ים חֲמִשִּֽׁים",
+          "exact": [
+            "https://bolls.life/get-text/WLC/10/24/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/10/24/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/24/",
+              "verse": 24
+            }
+          ]
+        },
+        {
+          "quote": "שִׁקְלֵ֣י זָהָ֔ב מִשְׁקָ֖ל שֵׁ֥שׁ מֵאֹֽות",
+          "exact": [
+            "https://bolls.life/get-text/WLC/13/21/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/13/21/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/21/",
+              "verse": 25
+            }
+          ]
+        }
+      ],
+      "english": [
+        {
+          "quote": "So David bought the threshingfloor and the oxen for fifty shekels of silver.",
+          "found": true
+        },
+        {
+          "quote": "So David gave to Ornan for the place six hundred shekels of gold by weight.",
+          "found": true
+        }
+      ],
+      "packaged": [
+        {
+          "ref": "2 Samuel 24:24",
+          "n": 24,
+          "kjv": "And the king said unto Araunah, Nay; but I will surely buy it of thee at a price: neither will I offer burnt offerings unto the Lord my God of that which doth cost me nothing. So David bought the threshingfloor and the oxen for fifty shekels of silver.",
+          "asv": "And the king said unto Araunah, Nay; but I will verily buy it of thee at a price; neither will I offer burnt-offerings unto Jehovah my God which cost me nothing. So David bought the threshing-floor and the oxen for fifty shekels of silver.",
+          "web": "The king said to Araunah, “No, but I will most certainly buy it from you for a price. I will not offer burnt offerings to the LORD my God which cost me nothing.” So David bought the threshing floor and the oxen for fifty shekels of silver."
+        },
+        {
+          "ref": "1 Chronicles 21:25",
+          "n": 25,
+          "kjv": "So David gave to Ornan for the place six hundred shekels of gold by weight.",
+          "asv": "So David gave to Ornan for the place six hundred shekels of gold by weight.",
+          "web": "So David gave to Ornan six hundred shekels of gold by weight for the place."
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "brentonEnglish": [
+    {
+      "url": "https://ebible.org/eng-Brenton/2SA13.htm",
+      "verse": 39,
+      "quote": "And king David ceased to go out after Abessalom",
+      "found": true,
+      "text": "And king David ceased to go out after Abessalom, for he was comforted concerning Amnon, touching his death. Kings II &lt; 13 &gt; * 13:4 Gr. dost. † 13:9 Gr. above. ‡ 13:12 Gr. will not. q. d. non est fasciendum. § 13:23 q. d. a two-year of days. ** 13:24 Gr. they are shearing for thy servant. †† 13:28 Gr. and become sons of strength. Public Domain"
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/2SA06.htm",
+      "verse": 19,
+      "quote": "to every one a cake of bread, and a joint of meat, and a cake from the frying-pan",
+      "found": true,
+      "text": "And he distributed to all the people, even to all the host of Israel from Dan to Bersabee, both men and women, to every one a cake of bread, and a joint of meat, and a cake from the frying-pan: and all the people departed every one to his home."
+    }
+  ],
+  "greekAgreementClaims": [
+    {
+      "url": "https://ebible.org/grcbrent/2SA10.htm",
+      "verse": 18,
+      "text": "Καὶ ἔφυγε Συρία ἀπὸ πρόσωπου Ἰσραήλ· καὶ ἀνεῖλε Δαυὶδ ἐκ τῆς Συρίας ἑπτακόσια ἅρματα, καὶ τεσσαράκοντα χιλιάδας ἱππέων, καὶ τὸν Σωβὰκ τὸν ἄρχοντα τῆς δυνάμεως αὐτοῦ ἐπάταξε, καὶ ἀπέθανεν ἐκεῖ.",
+      "purpose": "Verify draft named-edition agreement claim only; no new finding"
+    },
+    {
+      "url": "https://ebible.org/grcbrent/2SA23.htm",
+      "verse": 8,
+      "text": "Ταῦτα τὰ ὀνόματα τῶν δυνατῶν Δαυίδ· Ἰεβοσθὲ ὁ Χαναναῖος ἄρχων τοῦ τρίτου ἐστίν· Ἀδινὼν ὁ Ἀσωναῖος, οὗτος ἐσπάσατο τὴν ῥομφαίαν αὐτοῦ ἐπὶ ὀκτακοσίους στρατιώτας εἰσάπαξ.",
+      "purpose": "Verify draft named-edition agreement claim only; no new finding"
+    },
+    {
+      "url": "https://ebible.org/grcbrent/2SA24.htm",
+      "verse": 9,
+      "text": "Καὶ ἔδωκεν Ἰωὰβ τὸν ἀριθμὸν τῆς ἐπισκέψεως τοῦ λαοῦ πρὸς τὸν βασιλέα· καὶ ἐγένετο Ἰσραὴλ, ὀκτακόσιαι χιλιάδες ἀνδρῶν δυνάμεως σπωμένων ῥομφαίαν· καὶ ἀνὴρ Ἰούδα, πεντακόσιαι χιλιάδες ἀνδρῶν μαχητῶν."
+    },
+    {
+      "url": "https://ebible.org/grcbrent/2SA24.htm",
+      "verse": 24,
+      "text": "Καὶ εἶπεν ὁ βασιλεὺς πρὸς Ὀρνὰ, οὐχὶ, ὅτι ἀλλὰ κτώμενος κτήσομαι παρὰ σοῦ ἐν ἀναλλάγματι, καὶ οὐκ ἀνοίσω τῷ Κυρίῳ μου Θεῷ ὁλοκαύτωμα δωρεάν. Καὶ ἐκτήσατο Δαυὶδ τὸν ἅλωνα καὶ τοὺς βόας ἐν ἀργυρίῳ σίκλων πεντήκοντα."
+    }
+  ],
+  "manualReview": "All original-language quoted fragments matched the stated verse at supplied address. English unmatched items in automated KJV checker are explicitly Brenton English excerpts, independently matched at supplied addresses. Supporting scope name quotations match packaged KJV. Census fixed fields preserved from published record."
+}
