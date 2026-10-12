@@ -1,0 +1,13 @@
+# Deuteronomy 25–28 checkpoint — 2026-10-12
+
+Read the full 132-verse packaged KJV batch in the preceding checkpoint preparation and checked all four primary chapter pages this run. Compared 2 Corinthians 11:24–25, 1 Corinthians 9:9–15, Galatians 3:10–14 and Leviticus 26. Inspected the existing levirate, Amalek, Levite/tithe, covenant-threat and health-promise records before editing.
+
+Added four original sourced comparisons: forty as a maximum versus Paul's thirty-nine lashes; ox-rule reuse and voluntary refusal of ministerial support; Galatians' covenant-curse quotation; and the royal Egypt prohibition versus threatened forced return. Expanded four existing assessments for Amalek, third-year tithe distribution, siege/dispersal threats and conditional health language. Levirate coverage was retained without duplication.
+
+Limits: Paul’s claimed experiences are internal documentary evidence, not independently verified punishments. A count below a maximum is compatible with it; the passages do not establish why thirty-nine was selected. Later quotation demonstrates interpretation, not exclusive original meaning. Parallel curses do not establish a borrowing direction, composition date or fulfilled prediction. Disease terms are not clinical diagnoses and do not demonstrate individual illness caused by wrongdoing. The Egypt comparison distinguishes prohibition from threatened consequence without identifying a historical voyage.
+
+Build and checks passed: 1,189 chapters, all comparison modes, 2,089 evidence placements, valid bounds and no duplicate IDs. Audit: 212 evidence records, six studies; 231 annotated chapters, 2,030 distinct verse locations, 958 chapters without annotations. Cross-linked Corinthians material contributes to chapter presence without claiming exhaustive research. Whole-Bible coverage remains incomplete.
+
+Unresolved: flogging practice and punitive mutilation; exact ancient measures; patriarchal identity and Hebrew wording in 26:5; firstfruits ceremony versus tithe schedules; Ebal/Gerizim textual variants and manuscript evidence; law-inscription extent and altar archaeology; curse-list treaty parallels; ancient disease identities; drought imagery; historical siege/cannibalism evidence and literary dating; Egypt-return referent. No general filler was added for these questions.
+
+Next sequential batch: Deuteronomy 29–32. Read chapters fully, inspect existing covenant, individual accountability, revealed/hidden matters, return/restoration, law custody, Moses authorship and song imagery annotations; research specific findings before additions. Preserve all existing translation/UI requirements and blank unannotated verses.
