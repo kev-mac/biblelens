@@ -1,0 +1,9 @@
+# Joshua 17–18 checkpoint — 2026-10-12
+
+Read all 46 packaged KJV verses and publisher chapter pages. Extended the existing conquest assessment rather than creating a duplicate: named towns retain Canaanites under tribute; iron chariots are an obstacle in the tribes’ speech yet Joshua predicts victory despite them; subdued-land wording coexists with seven tribes lacking allotments and a call to take possession. Survey/allocation differs from settled possession. Benjamin’s Jerusalem list does not itself report the expulsion of the Jebusites, so avoid an artificial contradictory-ownership claim.
+
+Zelophehad daughters’ allocation is consistent with their earlier inheritance ruling; no agreement annotation added. Ten portions can reflect named clans plus individual daughters, but no reconstruction of the administrative count is asserted. Tappuah’s city/territory distinction and Ephraim enclaves are explicit, so no contradiction from overlapping boundary wording alone. Benjamin subtotals 12 and 14 match the listed city groups when Jerusalem is treated as Jebusi’s alias; no agreement summary added.
+
+Unresolved: administrative portion counts and clan relations, identity of three regions at 17:11, chronology of tribute/control, place identifications, archaeological dating, legal implementation of women’s inheritance, and boundary jurisdiction around Jerusalem. No generic historic/science agreement summaries. Next sequential Joshua 19–20: town counts and refuge-city procedures, comparing Numbers 35/Deuteronomy 19 existing records before adding. Exact audit to append; annotation presence is not exhaustive review. UI/Ask fixes preserved.
+
+Validated audit: 226 evidence records plus 6 studies; 256/1189 chapters with annotations (21.5%); 2259 unique verse locations; 933 chapters without annotations; 2327 evidence placements. All endpoint/mode, bounds, duplicate, reader and Ask checks passed.

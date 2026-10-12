@@ -8,8 +8,8 @@
     "evidenceRecords": 226,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 254,
-    "annotatedVerses": 2245
+    "chaptersWithAnnotations": 256,
+    "annotatedVerses": 2259
   },
   "byBook": [
     {
@@ -45,8 +45,8 @@
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 16,
-      "annotatedVerses": 150
+      "chaptersWithAnnotations": 18,
+      "annotatedVerses": 164
     },
     {
       "book": "Judges",
@@ -5132,18 +5132,42 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest"
+      ],
+      "annotatedVerses": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Joshua",
       "bookId": 5,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
