@@ -535,12 +535,15 @@
     "appliesTo": [
       "Exodus 20:11",
       "Deuteronomy 5:15",
-      "Exodus 31:17"
+      "Exodus 31:17",
+      "Deuteronomy 5:12",
+      "Deuteronomy 5:13",
+      "Deuteronomy 5:14"
     ],
     "title": "Two reasons for the Sabbath",
     "status": "Context",
     "summary": "Exodus grounds Sabbath rest in creation; Deuteronomy grounds it in liberation from slavery.",
-    "text": "Exodus grounds Sabbath rest in creation; Deuteronomy grounds it in liberation from slavery.",
+    "text": "Exodus grounds Sabbath rest in creation; Deuteronomy grounds it in liberation from slavery. Deuteronomy 5:14 expressly includes servants’ rest alongside the liberation rationale, giving a social purpose absent from a summary limited to creation.",
     "reasoning": "The command to rest is shared, while its stated rationale changes. Both reasons can coexist, so this variation alone is not a logical contradiction.",
     "scope": "Textual difference; no claim about which version was historically first.",
     "sources": [
@@ -575,9 +578,27 @@
         "book": 1,
         "chapter": 31,
         "verse": 17
+      },
+      {
+        "label": "Deuteronomy 5:12",
+        "book": 4,
+        "chapter": 5,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 5:13",
+        "book": 4,
+        "chapter": 5,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 5:14",
+        "book": 4,
+        "chapter": 5,
+        "verse": 14
       }
     ],
-    "checked": "2026-10-11"
+    "checked": "2026-10-12"
   },
   {
     "id": "early-servitude",
@@ -925,12 +946,19 @@
       "Numbers 33:52",
       "Numbers 33:53",
       "Numbers 33:55",
-      "Numbers 33:56"
+      "Numbers 33:56",
+      "Deuteronomy 7:1",
+      "Deuteronomy 7:2",
+      "Deuteronomy 7:16",
+      "Deuteronomy 7:20",
+      "Deuteronomy 7:22",
+      "Deuteronomy 7:23",
+      "Deuteronomy 7:24"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
     "sources": [
@@ -957,6 +985,10 @@
       {
         "label": "Numbers 33 · primary text",
         "url": "https://ebible.org/eng-kjv/NUM33.htm"
+      },
+      {
+        "label": "Deuteronomy 7 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU07.htm"
       }
     ],
     "refs": [
@@ -1055,6 +1087,48 @@
         "book": 3,
         "chapter": 33,
         "verse": 56
+      },
+      {
+        "label": "Deuteronomy 7:1",
+        "book": 4,
+        "chapter": 7,
+        "verse": 1
+      },
+      {
+        "label": "Deuteronomy 7:2",
+        "book": 4,
+        "chapter": 7,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 7:16",
+        "book": 4,
+        "chapter": 7,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 7:20",
+        "book": 4,
+        "chapter": 7,
+        "verse": 20
+      },
+      {
+        "label": "Deuteronomy 7:22",
+        "book": 4,
+        "chapter": 7,
+        "verse": 22
+      },
+      {
+        "label": "Deuteronomy 7:23",
+        "book": 4,
+        "chapter": 7,
+        "verse": 23
+      },
+      {
+        "label": "Deuteronomy 7:24",
+        "book": 4,
+        "chapter": 7,
+        "verse": 24
       }
     ],
     "checked": "2026-10-12"
@@ -16874,6 +16948,250 @@
       {
         "label": "Deuteronomy 3 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU03.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-oaths-and-matthew",
+    "mode": "contradictions",
+    "title": "Swearing by God’s name differs from Matthew’s prohibition of oaths",
+    "ref": "Deuteronomy 6:13",
+    "appliesTo": [
+      "Deuteronomy 6:13",
+      "Matthew 5:33",
+      "Matthew 5:34",
+      "Matthew 5:35",
+      "Matthew 5:36",
+      "Matthew 5:37"
+    ],
+    "status": "Context",
+    "summary": "Deuteronomy prescribes swearing by God’s name; Matthew’s Jesus tells his hearers not to swear at all.",
+    "text": "Matthew 5:33–37 moves from keeping oaths to a prohibition covering heaven, earth, Jerusalem and one’s head, then calls for plain yes or no.",
+    "reasoning": "The directions differ when read as general rules for the same oath-taking practice. Restricting Matthew to evasive everyday oaths or distinguishing covenant settings may reconcile them, but the broad prohibition does not expressly state those limits.",
+    "scope": "This compares the wording. Later religious and legal distinctions need separate evidence; no single harmonization is presented as settled.",
+    "refs": [
+      {
+        "label": "Deuteronomy 6:13",
+        "book": 4,
+        "chapter": 6,
+        "verse": 13
+      },
+      {
+        "label": "Matthew 5:33",
+        "book": 39,
+        "chapter": 5,
+        "verse": 33
+      },
+      {
+        "label": "Matthew 5:34",
+        "book": 39,
+        "chapter": 5,
+        "verse": 34
+      },
+      {
+        "label": "Matthew 5:35",
+        "book": 39,
+        "chapter": 5,
+        "verse": 35
+      },
+      {
+        "label": "Matthew 5:36",
+        "book": 39,
+        "chapter": 5,
+        "verse": 36
+      },
+      {
+        "label": "Matthew 5:37",
+        "book": 39,
+        "chapter": 5,
+        "verse": 37
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 6 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU06.htm"
+      },
+      {
+        "label": "Matthew 5 · primary text",
+        "url": "https://ebible.org/eng-kjv/MAT05.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-tefillin-material-evidence",
+    "mode": "history",
+    "title": "Ancient tefillin attest a material practice of carrying scripture",
+    "ref": "Deuteronomy 6:6",
+    "appliesTo": [
+      "Deuteronomy 6:6",
+      "Deuteronomy 6:7",
+      "Deuteronomy 6:8",
+      "Deuteronomy 6:9"
+    ],
+    "status": "Context",
+    "summary": "Surviving leather capsules and inscribed strips provide evidence of a later literal practice associated with the hand-and-forehead command.",
+    "text": "The Israel Antiquities Authority identifies Qumran tefillin containing biblical excerpts. The Library of Congress exhibition describes the usual passages from Exodus and Deuteronomy, including Deuteronomy 6:4–9.",
+    "reasoning": "Artifacts support the existence of that practice in the periods of the finds. They do not establish when the command was composed or that its earliest audience used the same objects.",
+    "scope": "The evidence concerns later reception, not Mosaic authorship or uninterrupted universal observance. The verse alone does not specify every later construction detail.",
+    "refs": [
+      {
+        "label": "Deuteronomy 6:6",
+        "book": 4,
+        "chapter": 6,
+        "verse": 6
+      },
+      {
+        "label": "Deuteronomy 6:7",
+        "book": 4,
+        "chapter": 6,
+        "verse": 7
+      },
+      {
+        "label": "Deuteronomy 6:8",
+        "book": 4,
+        "chapter": 6,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 6:9",
+        "book": 4,
+        "chapter": 6,
+        "verse": 9
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 6 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU06.htm"
+      },
+      {
+        "label": "Israel Antiquities Authority · featured tefillin",
+        "url": "https://www.deadseascrolls.org.il/featured-scrolls"
+      },
+      {
+        "label": "Library of Congress · phylactery scroll exhibition",
+        "url": "https://www.loc.gov/exhibits/scrolls/scr2.html"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-health-blessing-condition",
+    "mode": "science",
+    "title": "The disease and fertility promise belongs to a conditional covenant blessing",
+    "ref": "Deuteronomy 7:12",
+    "appliesTo": [
+      "Deuteronomy 7:12",
+      "Deuteronomy 7:13",
+      "Deuteronomy 7:14",
+      "Deuteronomy 7:15"
+    ],
+    "status": "Context",
+    "summary": "Freedom from sickness and barrenness is promised in a passage conditioned on keeping the judgments.",
+    "text": "The promise extends fertility to people and cattle and attributes removal of sickness to God, alongside agricultural blessings.",
+    "reasoning": "This is a theological promise with an obedience condition, not a reported clinical comparison demonstrating that observance prevents every illness. No specific disease, exposure or measured outcome is supplied.",
+    "scope": "The passage cannot by itself quantify health effects or diagnose an individual’s illness as disobedience. The theological claim and any historical outcomes require different kinds of assessment.",
+    "refs": [
+      {
+        "label": "Deuteronomy 7:12",
+        "book": 4,
+        "chapter": 7,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 7:13",
+        "book": 4,
+        "chapter": 7,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 7:14",
+        "book": 4,
+        "chapter": 7,
+        "verse": 14
+      },
+      {
+        "label": "Deuteronomy 7:15",
+        "book": 4,
+        "chapter": 7,
+        "verse": 15
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 7 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU07.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-provision-and-hunger",
+    "mode": "contradictions",
+    "title": "A broad claim of provision coexists with deliberate hunger",
+    "ref": "Deuteronomy 2:7",
+    "appliesTo": [
+      "Deuteronomy 2:7",
+      "Deuteronomy 8:2",
+      "Deuteronomy 8:3",
+      "Deuteronomy 8:4",
+      "Deuteronomy 8:15",
+      "Deuteronomy 8:16"
+    ],
+    "status": "Context",
+    "summary": "Deuteronomy says Israel lacked nothing, yet also says God allowed hunger before providing manna.",
+    "text": "Chapter 2 describes divine provision over forty years. Chapter 8 explicitly includes hunger, dangerous wilderness conditions and subsequent feeding in a lesson about dependence.",
+    "reasoning": "A reading of lacked nothing as continuous absence of hardship conflicts with the hunger statement. Reading it as sustained provision through hardships fits the narrated sequence, though the phrase itself is broad.",
+    "scope": "This compares the text’s descriptions. It does not verify exceptional clothing preservation, medical outcomes or a natural identification of manna.",
+    "refs": [
+      {
+        "label": "Deuteronomy 2:7",
+        "book": 4,
+        "chapter": 2,
+        "verse": 7
+      },
+      {
+        "label": "Deuteronomy 8:2",
+        "book": 4,
+        "chapter": 8,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 8:3",
+        "book": 4,
+        "chapter": 8,
+        "verse": 3
+      },
+      {
+        "label": "Deuteronomy 8:4",
+        "book": 4,
+        "chapter": 8,
+        "verse": 4
+      },
+      {
+        "label": "Deuteronomy 8:15",
+        "book": 4,
+        "chapter": 8,
+        "verse": 15
+      },
+      {
+        "label": "Deuteronomy 8:16",
+        "book": 4,
+        "chapter": 8,
+        "verse": 16
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 2 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU02.htm"
+      },
+      {
+        "label": "Deuteronomy 8 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU08.htm"
       }
     ],
     "checked": "2026-10-12"
