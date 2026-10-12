@@ -23189,5 +23189,59 @@
       }
     ],
     "checked": "2026-10-12"
+  },
+  {
+    "id": "samson-riddle-timing-witness",
+    "mode": "contradictions",
+    "ref": "Judges 14:15",
+    "appliesTo": [
+      "Judges 14:15",
+      "Judges 14:14",
+      "Judges 14:17",
+      "Judges 14:18"
+    ],
+    "title": "The riddle threat: fourth or seventh day?",
+    "status": "Context",
+    "summary": "The KJV places the threat to Samson’s wife on day seven; Brenton’s English Septuagint translation places it on day four. Their descriptions of the answer’s time also differ.",
+    "text": "Both editions give a seven-day riddle deadline and an answer on day seven. At 14:15 the KJV dates the threat to the seventh day; Brenton prints the fourth. At 14:18 the KJV has the answer before sunset, whereas Brenton prints before sunrise.",
+    "reasoning": "The threat date is a direct difference in the same episode, not merely a differently sized participant list. The sunrise and sunset phrases also differ, although before-sunset wording alone does not exclude an earlier morning answer. The seven-day weeping statement can be a narrative recap; the order of adjacent sentences need not prove all pressure began only after the threat.",
+    "scope": "Brenton is an English translation of a Septuagint text, not a critical Greek apparatus. These observations do not establish every Greek witness, an original reading or an actual historical timetable. Do not treat the KJV’s seventh-day threat and seven-day weeping as an unavoidable internal contradiction; earlier pressure or a recap remains possible.",
+    "sources": [
+      {
+        "label": "Judges 14: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG14.htm"
+      },
+      {
+        "label": "Judges 14: Brenton English Septuagint translation",
+        "url": "https://ebible.org/eng-Brenton/JDG14.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 14:15",
+        "book": 6,
+        "chapter": 14,
+        "verse": 15
+      },
+      {
+        "label": "Judges 14:14",
+        "book": 6,
+        "chapter": 14,
+        "verse": 14
+      },
+      {
+        "label": "Judges 14:17",
+        "book": 6,
+        "chapter": 14,
+        "verse": 17
+      },
+      {
+        "label": "Judges 14:18",
+        "book": 6,
+        "chapter": 14,
+        "verse": 18
+      }
+    ],
+    "checked": "2026-10-12"
   }
 ]

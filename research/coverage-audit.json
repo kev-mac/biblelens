@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 236,
+    "evidenceRecords": 237,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 278,
-    "annotatedVerses": 2402
+    "chaptersWithAnnotations": 279,
+    "annotatedVerses": 2406
   },
   "byBook": [
     {
@@ -51,8 +51,8 @@
     {
       "book": "Judges",
       "chapters": 21,
-      "chaptersWithAnnotations": 11,
-      "annotatedVerses": 72
+      "chaptersWithAnnotations": 12,
+      "annotatedVerses": 76
     },
     {
       "book": "Ruth",
@@ -5629,9 +5629,18 @@
       "book": "Judges",
       "bookId": 6,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "samson-riddle-timing-witness"
+      ],
+      "annotatedVerses": [
+        14,
+        15,
+        17,
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
