@@ -93,61 +93,6 @@
   },
   {
     "mode": "science",
-    "ref": "Genesis 1:16",
-    "status": "Disagrees",
-    "text": "Genesis places seed-bearing vegetation on day three (1:11–13) and the heavenly lights on day four (1:14–19). Reading these as the first physical appearance of plants and the Sun reverses the order in the accepted solar-system formation model.",
-    "scope": "The strongest disagreement is the Sun–Earth–plants sequence under a literal first-creation reading. A literary arrangement, later visibility of an existing Sun, or miraculous light changes the claim being evaluated; these readings are not established by the scientific sources. Science models natural processes and cannot independently test an unspecified miracle.",
-    "sources": [
-      {
-        "label": "NASA · Sun formation",
-        "url": "https://science.nasa.gov/sun/facts/"
-      },
-      {
-        "label": "OpenStax Biology 2e · photosynthesis",
-        "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
-      }
-    ],
-    "checked": "2026-10-11",
-    "summary": "On a literal timeline, the Sun appears after Earth and plants. Science places the Sun first.",
-    "fields": [
-      {
-        "branch": "Astrophysics & planetary science",
-        "text": "The Sun formed from a collapsing gas-and-dust cloud; planets formed from material in the surrounding disk. Earth’s plants therefore came after the Sun, not before it. This is a conflict about the sequence of natural events, not merely the length of a “day.”",
-        "sources": [
-          {
-            "label": "NASA · Sun formation",
-            "url": "https://science.nasa.gov/sun/facts/"
-          }
-        ]
-      },
-      {
-        "branch": "Botany & plant physiology",
-        "text": "Photosynthesis uses light energy to make sugars from carbon dioxide and water. A naturally developing plant ecosystem needs an energy source. However, Genesis 1:3 already describes light: photosynthesis alone does not prove these plants were in total darkness or that sunlight is the only possible light source.",
-        "sources": [
-          {
-            "label": "OpenStax Biology 2e · photosynthesis",
-            "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
-          }
-        ]
-      }
-    ],
-    "refs": [
-      {
-        "book": 0,
-        "chapter": 1,
-        "verse": 3,
-        "label": "Genesis 1:3"
-      },
-      {
-        "book": 0,
-        "chapter": 1,
-        "verse": 11,
-        "label": "Genesis 1:11"
-      }
-    ]
-  },
-  {
-    "mode": "science",
     "ref": "Genesis 1:18",
     "status": "Agrees",
     "text": "The day–night pattern broadly agrees with Earth rotating so different regions face toward or away from the Sun.",
@@ -467,5 +412,103 @@
       }
     ],
     "checked": "2026-10-11"
+  },
+  {
+    "id": "genesis-1-celestial-sequence",
+    "mode": "science",
+    "ref": "Genesis 1:14",
+    "appliesTo": [
+      "Genesis 1:14",
+      "Genesis 1:15",
+      "Genesis 1:16",
+      "Genesis 1:17",
+      "Genesis 1:18",
+      "Genesis 1:19"
+    ],
+    "title": "Celestial lights and the creation sequence",
+    "status": "Disagrees",
+    "summary": "Read as a physical creation sequence, this passage places the Sun after Earth’s vegetation, conflicting with the scientific account. Calling stars “lights” is not itself an error.",
+    "text": "Genesis 1:11–13 places vegetation on the third day; Genesis 1:14–19 places the making of the celestial lights on the fourth day. Verse 15 describes their role in lighting Earth within that larger account; it does not independently say when stars formed.",
+    "scope": "This assessment applies to a literal first-creation chronology. A literary or theological reading does not necessarily make the same scientific claim. Reading this as the later visibility of already-existing lights also changes the claim being evaluated; NASA does not establish that interpretation.",
+    "reasoning": "A literal sequence placing terrestrial vegetation before the Sun conflicts with the solar-system formation model. The issue is the sequence, rather than describing luminous objects as lights.",
+    "sources": [
+      {
+        "label": "NASA: How did the solar system form?",
+        "url": "https://spaceplace.nasa.gov/solar-system-formation/en/"
+      },
+      {
+        "label": "Genesis 1:11–19 (WEB)",
+        "url": "https://ebible.org/engwebp/GEN01.htm"
+      }
+    ],
+    "checked": "2026-10-11",
+    "fields": [
+      {
+        "branch": "Scientific evidence: astrophysics and planetary formation",
+        "text": "The young Sun formed at the center of a collapsing cloud; planets subsequently formed from material in the surrounding disk.",
+        "sources": [
+          {
+            "label": "NASA: How did the solar system form?",
+            "url": "https://spaceplace.nasa.gov/solar-system-formation/en/"
+          }
+        ]
+      }
+    ],
+    "refs": [
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 11,
+        "label": "Genesis 1:11"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 12,
+        "label": "Genesis 1:12"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 13,
+        "label": "Genesis 1:13"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 14,
+        "label": "Genesis 1:14"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 15,
+        "label": "Genesis 1:15"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 16,
+        "label": "Genesis 1:16"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 17,
+        "label": "Genesis 1:17"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 18,
+        "label": "Genesis 1:18"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
+        "verse": 19,
+        "label": "Genesis 1:19"
+      }
+    ]
   }
 ]
