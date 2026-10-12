@@ -6450,12 +6450,22 @@
       "Exodus 18:23",
       "Exodus 18:24",
       "Exodus 18:25",
-      "Exodus 18:26"
+      "Exodus 18:26",
+      "Numbers 11:11",
+      "Numbers 11:14",
+      "Numbers 11:16",
+      "Numbers 11:17",
+      "Numbers 11:24",
+      "Numbers 11:25",
+      "Numbers 11:26",
+      "Numbers 11:27",
+      "Numbers 11:28",
+      "Numbers 11:29"
     ],
     "title": "Judging disputes becomes a shared responsibility",
     "status": "Context",
     "summary": "Jethro challenges Moses’s workload and proposes smaller cases be delegated to other judges.",
-    "text": "Exodus 18:13–18 describes a queue lasting all day and Jethro’s warning that the arrangement will exhaust both Moses and the people. Verses 19–26 describe teaching, selection of qualified leaders and escalation of difficult cases.",
+    "text": "Exodus 18:13–18 describes a queue lasting all day and Jethro’s warning that the arrangement will exhaust both Moses and the people. Verses 19–26 describe teaching, selection of qualified leaders and escalation of difficult cases. Numbers 11 also addresses Moses’s burden through seventy elders, but narrates a divine gift of spirit and prophecy rather than simply repeating the judicial arrangement. Moses declines to prohibit two listed men prophesying in the camp.",
     "reasoning": "This is an institutional change inside the narrative, prompted by advice from Moses’s Midianite father-in-law. Verse 23 qualifies the advice with divine command, and verses 24–26 describe its adoption.",
     "scope": "The passage provides textual evidence for the institution portrayed. It does not independently verify an administrative system in a dated historical population or establish that the numerical tiers were implemented uniformly.",
     "refs": [
@@ -6542,12 +6552,76 @@
         "book": 1,
         "chapter": 18,
         "verse": 26
+      },
+      {
+        "label": "Numbers 11:11",
+        "book": 3,
+        "chapter": 11,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 11:14",
+        "book": 3,
+        "chapter": 11,
+        "verse": 14
+      },
+      {
+        "label": "Numbers 11:16",
+        "book": 3,
+        "chapter": 11,
+        "verse": 16
+      },
+      {
+        "label": "Numbers 11:17",
+        "book": 3,
+        "chapter": 11,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 11:24",
+        "book": 3,
+        "chapter": 11,
+        "verse": 24
+      },
+      {
+        "label": "Numbers 11:25",
+        "book": 3,
+        "chapter": 11,
+        "verse": 25
+      },
+      {
+        "label": "Numbers 11:26",
+        "book": 3,
+        "chapter": 11,
+        "verse": 26
+      },
+      {
+        "label": "Numbers 11:27",
+        "book": 3,
+        "chapter": 11,
+        "verse": 27
+      },
+      {
+        "label": "Numbers 11:28",
+        "book": 3,
+        "chapter": 11,
+        "verse": 28
+      },
+      {
+        "label": "Numbers 11:29",
+        "book": 3,
+        "chapter": 11,
+        "verse": 29
       }
     ],
     "sources": [
       {
         "label": "Exodus 18 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO18.htm"
+      },
+      {
+        "label": "Numbers 11 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM11.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -9898,12 +9972,17 @@
       "Leviticus 14:54",
       "Leviticus 14:55",
       "Leviticus 14:56",
-      "Leviticus 14:57"
+      "Leviticus 14:57",
+      "Numbers 12:10",
+      "Numbers 12:12",
+      "Numbers 12:13",
+      "Numbers 12:14",
+      "Numbers 12:15"
     ],
     "title": "The KJV leprosy category extends beyond modern Hansen’s disease",
     "status": "Context",
     "summary": "The same translated category is applied to skin, fabrics and houses.",
-    "text": "Leviticus examines skin changes, including conditions declared clean, then applies leprosy language to fabric and house surfaces. Modern Hansen’s disease is a specific bacterial disease; CDC describes clinical diagnosis and confirmation using skin or nerve biopsy and staining.",
+    "text": "Leviticus examines skin changes, including conditions declared clean, then applies leprosy language to fabric and house surfaces. Modern Hansen’s disease is a specific bacterial disease; CDC describes clinical diagnosis and confirmation using skin or nerve biopsy and staining. Numbers 12 describes Miriam’s sudden skin change and seven-day exclusion; these narrative features alone do not establish a modern Hansen’s disease diagnosis.",
     "reasoning": "Applying the biblical category to materials as well as people shows that it cannot simply identify one modern human disease in every occurrence. Similar English names do not establish identical diagnostic criteria.",
     "scope": "This comparison does not diagnose any ancient individual, identify every skin condition or determine which organism affected a garment or house. Modern disease causation does not resolve all translation questions.",
     "refs": [
@@ -10056,6 +10135,36 @@
         "book": 2,
         "chapter": 14,
         "verse": 57
+      },
+      {
+        "label": "Numbers 12:10",
+        "book": 3,
+        "chapter": 12,
+        "verse": 10
+      },
+      {
+        "label": "Numbers 12:12",
+        "book": 3,
+        "chapter": 12,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 12:13",
+        "book": 3,
+        "chapter": 12,
+        "verse": 13
+      },
+      {
+        "label": "Numbers 12:14",
+        "book": 3,
+        "chapter": 12,
+        "verse": 14
+      },
+      {
+        "label": "Numbers 12:15",
+        "book": 3,
+        "chapter": 12,
+        "verse": 15
       }
     ],
     "sources": [
@@ -10074,6 +10183,10 @@
       {
         "label": "CDC · clinical testing and diagnosis",
         "url": "https://www.cdc.gov/leprosy/hcp/diagnosis-testing/index.html"
+      },
+      {
+        "label": "Numbers 12 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM12.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -12919,6 +13032,436 @@
       {
         "label": "Numbers 8 · primary text",
         "url": "https://ebible.org/eng-kjv/NUM08.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-passover-delayed-observance",
+    "mode": "contradictions",
+    "title": "A delayed Passover is a specified exception",
+    "ref": "Numbers 9:3",
+    "appliesTo": [
+      "Numbers 9:3",
+      "Numbers 9:5",
+      "Numbers 9:6",
+      "Numbers 9:7",
+      "Numbers 9:8",
+      "Numbers 9:10",
+      "Numbers 9:11",
+      "Numbers 9:12",
+      "Numbers 9:13",
+      "Numbers 9:14"
+    ],
+    "status": "Context",
+    "summary": "Corpse-related impurity or a distant journey permits observance a month later; willing omission is treated differently.",
+    "text": "The usual date is the first month’s fourteenth day. The instructions provide the second month’s fourteenth day for the stated impediments, preserving the meal rules.",
+    "reasoning": "The different dates apply to different circumstances. The accommodation does not make the festival optional for a clean person who is not traveling.",
+    "scope": "This addresses the stated exception, not every later calendar practice or the historical frequency of its use.",
+    "refs": [
+      {
+        "label": "Numbers 9:3",
+        "book": 3,
+        "chapter": 9,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 9:5",
+        "book": 3,
+        "chapter": 9,
+        "verse": 5
+      },
+      {
+        "label": "Numbers 9:6",
+        "book": 3,
+        "chapter": 9,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 9:7",
+        "book": 3,
+        "chapter": 9,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 9:8",
+        "book": 3,
+        "chapter": 9,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 9:10",
+        "book": 3,
+        "chapter": 9,
+        "verse": 10
+      },
+      {
+        "label": "Numbers 9:11",
+        "book": 3,
+        "chapter": 9,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 9:12",
+        "book": 3,
+        "chapter": 9,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 9:13",
+        "book": 3,
+        "chapter": 9,
+        "verse": 13
+      },
+      {
+        "label": "Numbers 9:14",
+        "book": 3,
+        "chapter": 9,
+        "verse": 14
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 9 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM09.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-cloud-and-local-guidance",
+    "mode": "contradictions",
+    "title": "Divine guidance is narrated alongside practical assistance",
+    "ref": "Numbers 9:15",
+    "appliesTo": [
+      "Numbers 9:15",
+      "Numbers 9:16",
+      "Numbers 9:17",
+      "Numbers 9:18",
+      "Numbers 9:21",
+      "Numbers 9:22",
+      "Numbers 9:23",
+      "Numbers 10:29",
+      "Numbers 10:30",
+      "Numbers 10:31",
+      "Numbers 10:32",
+      "Numbers 10:33",
+      "Numbers 10:34"
+    ],
+    "status": "Context",
+    "summary": "The cloud determines movement while Moses asks Hobab to help with wilderness camping.",
+    "text": "The narrative says the people follow the cloud. Moses nevertheless asks a knowledgeable companion to assist them as their eyes, and the ark is also described as seeking a resting place.",
+    "reasoning": "Departure timing and local camping knowledge can be complementary. This is a possible contextual reading; the text does not give a complete division of navigation responsibilities.",
+    "scope": "The passage does not independently establish miraculous navigation or identify a meteorological mechanism. Hobab’s kinship identification needs further textual comparison.",
+    "refs": [
+      {
+        "label": "Numbers 9:15",
+        "book": 3,
+        "chapter": 9,
+        "verse": 15
+      },
+      {
+        "label": "Numbers 9:16",
+        "book": 3,
+        "chapter": 9,
+        "verse": 16
+      },
+      {
+        "label": "Numbers 9:17",
+        "book": 3,
+        "chapter": 9,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 9:18",
+        "book": 3,
+        "chapter": 9,
+        "verse": 18
+      },
+      {
+        "label": "Numbers 9:21",
+        "book": 3,
+        "chapter": 9,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 9:22",
+        "book": 3,
+        "chapter": 9,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 9:23",
+        "book": 3,
+        "chapter": 9,
+        "verse": 23
+      },
+      {
+        "label": "Numbers 10:29",
+        "book": 3,
+        "chapter": 10,
+        "verse": 29
+      },
+      {
+        "label": "Numbers 10:30",
+        "book": 3,
+        "chapter": 10,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 10:31",
+        "book": 3,
+        "chapter": 10,
+        "verse": 31
+      },
+      {
+        "label": "Numbers 10:32",
+        "book": 3,
+        "chapter": 10,
+        "verse": 32
+      },
+      {
+        "label": "Numbers 10:33",
+        "book": 3,
+        "chapter": 10,
+        "verse": 33
+      },
+      {
+        "label": "Numbers 10:34",
+        "book": 3,
+        "chapter": 10,
+        "verse": 34
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 9 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM09.htm"
+      },
+      {
+        "label": "Numbers 10 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM10.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-ark-march-position",
+    "mode": "contradictions",
+    "title": "The prescribed middle position contrasts with an ark going ahead",
+    "ref": "Numbers 2:17",
+    "appliesTo": [
+      "Numbers 2:17",
+      "Numbers 10:14",
+      "Numbers 10:17",
+      "Numbers 10:18",
+      "Numbers 10:21",
+      "Numbers 10:22",
+      "Numbers 10:25",
+      "Numbers 10:33"
+    ],
+    "status": "Context",
+    "summary": "The camp order places sanctuary transport between groups, while a departure scene says the ark went before them.",
+    "text": "The prescribed sequence places the Levite camp in the middle. Numbers 10 separates tabernacle components and sacred-object carriers, then describes the ark leading a three-day journey.",
+    "reasoning": "These descriptions create a positional tension under a uniform marching-order reading. An exceptional departure arrangement is possible, but is not explicitly identified as the reason for the difference.",
+    "scope": "This comparison does not settle whether the scenes reflect different situations, literary traditions or figurative leadership language.",
+    "refs": [
+      {
+        "label": "Numbers 2:17",
+        "book": 3,
+        "chapter": 2,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 10:14",
+        "book": 3,
+        "chapter": 10,
+        "verse": 14
+      },
+      {
+        "label": "Numbers 10:17",
+        "book": 3,
+        "chapter": 10,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 10:18",
+        "book": 3,
+        "chapter": 10,
+        "verse": 18
+      },
+      {
+        "label": "Numbers 10:21",
+        "book": 3,
+        "chapter": 10,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 10:22",
+        "book": 3,
+        "chapter": 10,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 10:25",
+        "book": 3,
+        "chapter": 10,
+        "verse": 25
+      },
+      {
+        "label": "Numbers 10:33",
+        "book": 3,
+        "chapter": 10,
+        "verse": 33
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 2 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM02.htm"
+      },
+      {
+        "label": "Numbers 10 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM10.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-quail-plague-diagnosis-limit",
+    "mode": "science",
+    "title": "Quail poisoning is a proposed explanation, not a biblical diagnosis",
+    "ref": "Numbers 11:31",
+    "appliesTo": [
+      "Numbers 11:31",
+      "Numbers 11:32",
+      "Numbers 11:33",
+      "Numbers 11:34"
+    ],
+    "status": "Context",
+    "summary": "Modern reports describe illness after quail consumption; they cannot diagnose this sparsely described ancient plague.",
+    "text": "Numbers links a quail feast and plague to divine anger without a clinical symptom history. Bellomo and colleagues report a modern case of muscle breakdown attributed to quail poisoning and note uncertainty about its mechanisms.",
+    "reasoning": "A documented modern syndrome makes a natural explanation conceivable, but resemblance of the food exposure alone does not establish the same disease in the narrative.",
+    "scope": "No pathogen, toxin, dose, mortality rate or supernatural cause is verified for the biblical event. This is a limit on retrospective diagnosis, not medical advice.",
+    "refs": [
+      {
+        "label": "Numbers 11:31",
+        "book": 3,
+        "chapter": 11,
+        "verse": 31
+      },
+      {
+        "label": "Numbers 11:32",
+        "book": 3,
+        "chapter": 11,
+        "verse": 32
+      },
+      {
+        "label": "Numbers 11:33",
+        "book": 3,
+        "chapter": 11,
+        "verse": 33
+      },
+      {
+        "label": "Numbers 11:34",
+        "book": 3,
+        "chapter": 11,
+        "verse": 34
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 11 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM11.htm"
+      },
+      {
+        "label": "Bellomo et al. (2011) · original quail-associated rhabdomyolysis case report",
+        "url": "https://academic.oup.com/ckj/article/4/3/173/345942"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-miriam-aaron-different-outcomes",
+    "mode": "history",
+    "title": "Miriam and Aaron speak together but have different narrated outcomes",
+    "ref": "Numbers 12:1",
+    "appliesTo": [
+      "Numbers 12:1",
+      "Numbers 12:2",
+      "Numbers 12:9",
+      "Numbers 12:10",
+      "Numbers 12:11",
+      "Numbers 12:12",
+      "Numbers 12:13",
+      "Numbers 12:14",
+      "Numbers 12:15"
+    ],
+    "status": "Context",
+    "summary": "Both challenge Moses; Miriam receives the described skin affliction and exclusion.",
+    "text": "The account names both speakers and divine anger against them. Aaron acknowledges shared wrongdoing and appeals to Moses; Miriam is isolated for seven days while the camp waits.",
+    "reasoning": "The narrative does not report the same bodily punishment for Aaron. Explaining why by gender, leadership or priestly status adds an interpretation not explicitly supplied here.",
+    "scope": "The ethical asymmetry and literary purpose merit further research. The description does not independently verify the event or diagnose a modern disease.",
+    "refs": [
+      {
+        "label": "Numbers 12:1",
+        "book": 3,
+        "chapter": 12,
+        "verse": 1
+      },
+      {
+        "label": "Numbers 12:2",
+        "book": 3,
+        "chapter": 12,
+        "verse": 2
+      },
+      {
+        "label": "Numbers 12:9",
+        "book": 3,
+        "chapter": 12,
+        "verse": 9
+      },
+      {
+        "label": "Numbers 12:10",
+        "book": 3,
+        "chapter": 12,
+        "verse": 10
+      },
+      {
+        "label": "Numbers 12:11",
+        "book": 3,
+        "chapter": 12,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 12:12",
+        "book": 3,
+        "chapter": 12,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 12:13",
+        "book": 3,
+        "chapter": 12,
+        "verse": 13
+      },
+      {
+        "label": "Numbers 12:14",
+        "book": 3,
+        "chapter": 12,
+        "verse": 14
+      },
+      {
+        "label": "Numbers 12:15",
+        "book": 3,
+        "chapter": 12,
+        "verse": 15
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 12 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM12.htm"
       }
     ],
     "checked": "2026-10-12"
