@@ -17083,13 +17083,18 @@ const EVIDENCE=[
       "Numbers 23:19",
       "Numbers 23:20",
       "Numbers 23:26",
-      "Exodus 32:14"
+      "Exodus 32:14",
+      "Judges 10:13",
+      "Judges 10:14",
+      "Judges 10:15",
+      "Judges 10:16",
+      "Judges 11:32"
     ],
     "status": "Context",
     "summary": "Balaam denies divine lying or repentance while declaring a blessing he cannot reverse; Exodus narrates relenting.",
-    "text": "Numbers 23 links its statement to the reliability of the announced blessing. Exodus 32:14 says God repented of the threatened harm after Moses’s intercession.",
-    "reasoning": "A distinction between a firm blessing and a conditional threat offers a contextual reading. Treating Numbers as an absolute denial of every divine change creates a textual tension with Exodus.",
-    "scope": "The passages do not explicitly formulate one comprehensive doctrine of divine change. Hebrew terms, genre and theological reconciliation remain interpretive questions.",
+    "text": "Numbers 23 links its statement to the reliability of the announced blessing. Exodus 32:14 says God repented of the threatened harm after Moses’s intercession. Judges 10:13 announces no further deliverance, but 10:15-16 narrates repentance and removal of foreign gods; 11:32 then credits the Lord with victory.",
+    "reasoning": "A distinction between a firm blessing and a conditional threat offers a contextual reading. Treating Numbers as an absolute denial of every divine change creates a textual tension with Exodus. Judges supplies an intervening change in conduct. A conditional warning followed by repentance can explain the later deliverance, rather than a breach of an unconditional promise; the warning itself does not expressly state an exception.",
+    "scope": "The passages do not explicitly formulate one comprehensive doctrine of divine change. Hebrew terms, genre and theological reconciliation remain interpretive questions. This sequence is not proof that every divine declaration is reversible or that the passages formulate one uniform doctrine.",
     "refs": [
       {
         "label": "Numbers 23:19",
@@ -17114,6 +17119,36 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 32,
         "verse": 14
+      },
+      {
+        "label": "Judges 10:13",
+        "book": 6,
+        "chapter": 10,
+        "verse": 13
+      },
+      {
+        "label": "Judges 10:14",
+        "book": 6,
+        "chapter": 10,
+        "verse": 14
+      },
+      {
+        "label": "Judges 10:15",
+        "book": 6,
+        "chapter": 10,
+        "verse": 15
+      },
+      {
+        "label": "Judges 10:16",
+        "book": 6,
+        "chapter": 10,
+        "verse": 16
+      },
+      {
+        "label": "Judges 11:32",
+        "book": 6,
+        "chapter": 11,
+        "verse": 32
       }
     ],
     "sources": [
@@ -17124,6 +17159,14 @@ const EVIDENCE=[
       {
         "label": "Exodus 32 · primary text",
         "url": "https://ebible.org/eng-kjv/EXO32.htm"
+      },
+      {
+        "label": "Judges 10: warning and repentance",
+        "url": "https://ebible.org/eng-kjv/JDG10.htm"
+      },
+      {
+        "label": "Judges 11: subsequent deliverance",
+        "url": "https://ebible.org/eng-kjv/JDG11.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -18716,7 +18759,7 @@ const EVIDENCE=[
   {
     "id": "deuteronomy-edom-passage-and-provisions",
     "mode": "contradictions",
-    "title": "Edom’s refusal sits beside dealings with Esau’s descendants",
+    "title": "Refused passage and provision dealings with Edom and Moab",
     "ref": "Deuteronomy 2:4",
     "appliesTo": [
       "Deuteronomy 2:4",
@@ -18730,13 +18773,18 @@ const EVIDENCE=[
       "Numbers 20:18",
       "Numbers 20:19",
       "Numbers 20:20",
-      "Numbers 20:21"
+      "Numbers 20:21",
+      "Judges 11:17",
+      "Judges 11:18",
+      "Deuteronomy 2:18",
+      "Deuteronomy 23:3",
+      "Deuteronomy 23:4"
     ],
     "status": "Context",
-    "summary": "Numbers says Edom refused passage; Deuteronomy compares requested food and water transactions to dealings with Esau’s descendants.",
-    "text": "Numbers 20:17–21 records repeated refusal, including an offer to pay for water, followed by Israel turning away. Deuteronomy 2 instructs purchases and later mentions what Esau’s descendants and Moab did in a request to Sihon.",
-    "reasoning": "If the later comparison includes passage through the same territory, there is tension. Distinguishing provision purchases from authorized passage, or routes and local groups, could reconcile the accounts.",
-    "scope": "The extent of the comparison in verse 29 is ambiguous. The texts supply no verified route map or explicit separate transactions; reconciliation remains interpretive.",
+    "summary": "Numbers and Jephthah describe refused passage; Deuteronomy refers to provision dealings with Esau’s descendants and Moab. A conflict depends on treating purchases, hospitality and authorized passage as the same claim.",
+    "text": "Numbers 20:17–21 records repeated refusal, including an offer to pay for water, followed by Israel turning away. Deuteronomy 2 instructs purchases and later mentions what Esau’s descendants and Moab did in a request to Sihon. Judges 11:17-18 adds Moab’s refusal and a route outside its border. Deuteronomy 2:18 describes passing Ar, Moab’s border; 2:28-29 compares requested transactions to dealings with Moabites in Ar. Deuteronomy 23:4 says Ammonites and Moabites did not meet Israel with bread and water.",
+    "reasoning": "If the later comparison includes passage through the same territory, there is tension. Distinguishing provision purchases from authorized passage, or routes and local groups, could reconcile the accounts. Passing a border district need not mean crossing the interior. Selling provisions can differ from welcoming travellers with hospitality. Neither distinction is an explicitly narrated reconciliation of every transaction.",
+    "scope": "The extent of the comparison in verse 29 is ambiguous. The texts supply no verified route map or explicit separate transactions; reconciliation remains interpretive. Jephthah is recounting the journey in a territorial negotiation. The hospitality charge does not explicitly say no food was ever sold by any local Moabite. Do not recast it as an absolute ban on every transaction.",
     "refs": [
       {
         "label": "Deuteronomy 2:4",
@@ -18809,6 +18857,36 @@ const EVIDENCE=[
         "book": 3,
         "chapter": 20,
         "verse": 21
+      },
+      {
+        "label": "Judges 11:17",
+        "book": 6,
+        "chapter": 11,
+        "verse": 17
+      },
+      {
+        "label": "Judges 11:18",
+        "book": 6,
+        "chapter": 11,
+        "verse": 18
+      },
+      {
+        "label": "Deuteronomy 2:18",
+        "book": 4,
+        "chapter": 2,
+        "verse": 18
+      },
+      {
+        "label": "Deuteronomy 23:3",
+        "book": 4,
+        "chapter": 23,
+        "verse": 3
+      },
+      {
+        "label": "Deuteronomy 23:4",
+        "book": 4,
+        "chapter": 23,
+        "verse": 4
       }
     ],
     "sources": [
@@ -18819,6 +18897,14 @@ const EVIDENCE=[
       {
         "label": "Numbers 20 · refusal of passage",
         "url": "https://ebible.org/eng-kjv/NUM20.htm"
+      },
+      {
+        "label": "Judges 11: diplomatic journey account",
+        "url": "https://ebible.org/eng-kjv/JDG11.htm"
+      },
+      {
+        "label": "Deuteronomy 23: hospitality charge",
+        "url": "https://ebible.org/eng-kjv/DEU23.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -22894,6 +22980,215 @@ const EVIDENCE=[
         "book": 6,
         "chapter": 8,
         "verse": 28
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "jephthah-chemosh-and-ammon",
+    "mode": "contradictions",
+    "ref": "Judges 11:24",
+    "appliesTo": [
+      "Judges 11:24",
+      "Judges 11:12",
+      "Judges 11:14",
+      "Judges 11:25",
+      "Numbers 21:29",
+      "1 Kings 11:7",
+      "1 Kings 11:33"
+    ],
+    "title": "Chemosh addressed to Ammon’s king",
+    "status": "Context",
+    "summary": "Jephthah calls Chemosh the Ammonite king’s god; Numbers and Kings associate Chemosh with Moab and name a different deity for Ammon. Those associations do not prove exclusive worship.",
+    "text": "Judges 11 addresses the king of Ammon and calls Chemosh his god. Numbers 21 identifies Moab with Chemosh. Kings distinguishes Chemosh of Moab from Molech or Milcom associated with Ammon.",
+    "reasoning": "The named association in Jephthah’s speech differs from the other passages. The dispute concerns territory previously attributed to Amorites, and the speech also invokes Moab’s Balak. Referring to a deity associated with the disputed land, overlapping worship, or an inaccurate diplomatic statement are possible explanations; the text does not select one.",
+    "scope": "This is a comparison of a character’s speech and other textual associations. It does not establish that Ammonites never worshipped Chemosh, identify every deity of either people, or independently verify the historical dispute. No claim about a Greek manuscript or a reconstructed earlier speech is made.",
+    "sources": [
+      {
+        "label": "Judges 11: diplomatic speech",
+        "url": "https://ebible.org/eng-kjv/JDG11.htm"
+      },
+      {
+        "label": "Numbers 21: Moab and Chemosh",
+        "url": "https://ebible.org/eng-kjv/NUM21.htm"
+      },
+      {
+        "label": "1 Kings 11: named national associations",
+        "url": "https://ebible.org/eng-kjv/1KI11.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 11:24",
+        "book": 6,
+        "chapter": 11,
+        "verse": 24
+      },
+      {
+        "label": "Judges 11:12",
+        "book": 6,
+        "chapter": 11,
+        "verse": 12
+      },
+      {
+        "label": "Judges 11:14",
+        "book": 6,
+        "chapter": 11,
+        "verse": 14
+      },
+      {
+        "label": "Judges 11:25",
+        "book": 6,
+        "chapter": 11,
+        "verse": 25
+      },
+      {
+        "label": "Numbers 21:29",
+        "book": 3,
+        "chapter": 21,
+        "verse": 29
+      },
+      {
+        "label": "1 Kings 11:7",
+        "book": 10,
+        "chapter": 11,
+        "verse": 7
+      },
+      {
+        "label": "1 Kings 11:33",
+        "book": 10,
+        "chapter": 11,
+        "verse": 33
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "ammonite-land-taken-or-untouched",
+    "mode": "contradictions",
+    "ref": "Joshua 13:25",
+    "appliesTo": [
+      "Joshua 13:25",
+      "Deuteronomy 2:19",
+      "Deuteronomy 2:37",
+      "Numbers 21:24",
+      "Numbers 21:26",
+      "Judges 11:13",
+      "Judges 11:15",
+      "Judges 11:21",
+      "Judges 11:22"
+    ],
+    "title": "Ammon’s land: untouched or allotted?",
+    "status": "Context",
+    "summary": "Deuteronomy says Israel avoided Ammon’s land, while Joshua allots Gad half of it. Jephthah disputes Ammon’s claim. The tension depends on whether the same territory and ownership period are meant.",
+    "text": "Deuteronomy forbids taking Ammon’s possession and says Israel did not enter it. Joshua 13:25 includes half of Ammon’s land in Gad’s territory. In Judges 11 the king claims land between Arnon and Jabbok; Jephthah says Israel took Amorite territory, not Ammon’s.",
+    "reasoning": "Read as the same current Ammonite possession, the descriptions conflict. A territorial label reflecting earlier ownership, or land previously transferred to Sihon, could explain them. Numbers 21:26 explicitly describes a prior Moab-to-Sihon transfer, not an equivalent transfer of Ammon’s land; applying that explanation to Ammon is an inference.",
+    "scope": "Joshua’s allocation does not by itself date an occupation or identify prior ownership at each stage. The opposing diplomatic claims are not an independent boundary survey. These passages do not settle the ancient map, so the proposed ownership distinction remains qualified.",
+    "sources": [
+      {
+        "label": "Joshua 13: Gad’s allotment",
+        "url": "https://ebible.org/eng-kjv/JOS13.htm"
+      },
+      {
+        "label": "Deuteronomy 2: restricted territory",
+        "url": "https://ebible.org/eng-kjv/DEU02.htm"
+      },
+      {
+        "label": "Numbers 21: Sihon and prior Moabite land",
+        "url": "https://ebible.org/eng-kjv/NUM21.htm"
+      },
+      {
+        "label": "Judges 11: opposing territorial claims",
+        "url": "https://ebible.org/eng-kjv/JDG11.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Joshua 13:25",
+        "book": 5,
+        "chapter": 13,
+        "verse": 25
+      },
+      {
+        "label": "Deuteronomy 2:19",
+        "book": 4,
+        "chapter": 2,
+        "verse": 19
+      },
+      {
+        "label": "Deuteronomy 2:37",
+        "book": 4,
+        "chapter": 2,
+        "verse": 37
+      },
+      {
+        "label": "Numbers 21:24",
+        "book": 3,
+        "chapter": 21,
+        "verse": 24
+      },
+      {
+        "label": "Numbers 21:26",
+        "book": 3,
+        "chapter": 21,
+        "verse": 26
+      },
+      {
+        "label": "Judges 11:13",
+        "book": 6,
+        "chapter": 11,
+        "verse": 13
+      },
+      {
+        "label": "Judges 11:15",
+        "book": 6,
+        "chapter": 11,
+        "verse": 15
+      },
+      {
+        "label": "Judges 11:21",
+        "book": 6,
+        "chapter": 11,
+        "verse": 21
+      },
+      {
+        "label": "Judges 11:22",
+        "book": 6,
+        "chapter": 11,
+        "verse": 22
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "jair-household-count-witness",
+    "mode": "contradictions",
+    "ref": "Judges 10:4",
+    "appliesTo": [
+      "Judges 10:4"
+    ],
+    "title": "Jair’s count in two published texts",
+    "status": "Context",
+    "summary": "The KJV gives Jair thirty sons, mounts and cities; Brenton’s English Septuagint translation gives thirty-two for each. This is a published-text difference, not a verified count of Jair’s household.",
+    "text": "The three matched counts in the packaged KJV are thirty. The linked Brenton translation of Judges 10:4 instead prints thirty-two sons, colts and cities.",
+    "reasoning": "These are different numerical readings of the same verse and group, unlike town totals from different periods or districts. The difference is visible in the named editions without assuming all towns called Jair’s towns describe one unchanged holding.",
+    "scope": "Brenton is an English translation of the Septuagint, not the Greek wording or a critical manuscript apparatus. This note does not establish which Greek witnesses agree, which reading is original, or that the KJV mistranslated an original Greek Old Testament. The Old Testament comparison concerns different textual traditions; Hebrew/Greek edition work remains outstanding.",
+    "sources": [
+      {
+        "label": "Judges 10: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG10.htm"
+      },
+      {
+        "label": "Judges 10: Brenton English Septuagint translation",
+        "url": "https://ebible.org/eng-Brenton/JDG10.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 10:4",
+        "book": 6,
+        "chapter": 10,
+        "verse": 4
       }
     ],
     "checked": "2026-10-12"
