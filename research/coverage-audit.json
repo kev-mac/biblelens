@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 237,
+    "evidenceRecords": 252,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 279,
-    "annotatedVerses": 2406
+    "chaptersWithAnnotations": 288,
+    "annotatedVerses": 2447
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 15,
-      "annotatedVerses": 44
+      "chaptersWithAnnotations": 16,
+      "annotatedVerses": 45
     },
     {
       "book": "Exodus",
@@ -46,13 +46,13 @@
       "book": "Joshua",
       "chapters": 24,
       "chaptersWithAnnotations": 23,
-      "annotatedVerses": 198
+      "annotatedVerses": 208
     },
     {
       "book": "Judges",
       "chapters": 21,
-      "chaptersWithAnnotations": 12,
-      "annotatedVerses": 76
+      "chaptersWithAnnotations": 19,
+      "annotatedVerses": 103
     },
     {
       "book": "Ruth",
@@ -87,8 +87,8 @@
     {
       "book": "1 Chronicles",
       "chapters": 29,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 4
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 7
     },
     {
       "book": "2 Chronicles",
@@ -786,7 +786,8 @@
       "bookId": 0,
       "chapter": 33,
       "annotationIds": [
-        "shechem-burial-land-purchaser"
+        "shechem-burial-land-purchaser",
+        "jacob-shechem-portion-bought-or-taken"
       ],
       "annotatedVerses": [
         18,
@@ -949,9 +950,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 48,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jacob-shechem-portion-bought-or-taken"
+      ],
+      "annotatedVerses": [
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -5245,7 +5252,8 @@
       "bookId": 5,
       "chapter": 18,
       "annotationIds": [
-        "early-conquest"
+        "early-conquest",
+        "joshua-covenant-assembly-shechem-or-shiloh"
       ],
       "annotatedVerses": [
         1,
@@ -5300,9 +5308,15 @@
       "bookId": 5,
       "chapter": 21,
       "annotationIds": [
-        "early-conquest"
+        "early-conquest",
+        "levite-city-lists-joshua-chronicles"
       ],
       "annotatedVerses": [
+        25,
+        36,
+        37,
+        40,
+        41,
         43,
         44,
         45
@@ -5318,11 +5332,13 @@
       "chapter": 22,
       "annotationIds": [
         "early-conquest",
-        "joshua-achan-household-responsibility"
+        "joshua-achan-household-responsibility",
+        "joshua-altar-named-ed"
       ],
       "annotatedVerses": [
         4,
-        20
+        20,
+        34
       ],
       "modes": [
         "contradictions"
@@ -5358,13 +5374,20 @@
       "annotationIds": [
         "early-conquest",
         "joshua-hornet-and-military-victory",
-        "shechem-burial-land-purchaser"
+        "shechem-burial-land-purchaser",
+        "balak-war-against-israel",
+        "joshua-covenant-assembly-shechem-or-shiloh",
+        "jacob-shechem-portion-bought-or-taken"
       ],
       "annotatedVerses": [
+        1,
         8,
+        9,
         11,
         12,
         18,
+        25,
+        26,
         32
       ],
       "modes": [
@@ -5428,7 +5451,9 @@
       "bookId": 6,
       "chapter": 3,
       "annotationIds": [
-        "early-conquest"
+        "early-conquest",
+        "ehud-quarries-or-carved-images",
+        "ehud-lefthanded-or-ambidextrous"
       ],
       "annotatedVerses": [
         1,
@@ -5436,7 +5461,10 @@
         3,
         4,
         5,
-        6
+        6,
+        15,
+        19,
+        26
       ],
       "modes": [
         "contradictions"
@@ -5565,10 +5593,12 @@
       "chapter": 10,
       "annotationIds": [
         "numbers-blessing-stability-and-relenting",
-        "jair-household-count-witness"
+        "jair-household-count-witness",
+        "maonites-or-midian"
       ],
       "annotatedVerses": [
         4,
+        12,
         13,
         14,
         15,
@@ -5587,7 +5617,8 @@
         "numbers-blessing-stability-and-relenting",
         "deuteronomy-edom-passage-and-provisions",
         "jephthah-chemosh-and-ammon",
-        "ammonite-land-taken-or-untouched"
+        "ammonite-land-taken-or-untouched",
+        "balak-war-against-israel"
       ],
       "annotatedVerses": [
         12,
@@ -5620,9 +5651,16 @@
       "book": "Judges",
       "bookId": 6,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "angel-name-secret-or-wonderful"
+      ],
+      "annotatedVerses": [
+        18,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -5647,18 +5685,32 @@
       "book": "Judges",
       "bookId": 6,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "samson-water-jaw-or-lehi"
+      ],
+      "annotatedVerses": [
+        17,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Judges",
       "bookId": 6,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "samson-web-longer-greek"
+      ],
+      "annotatedVerses": [
+        13,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -5674,36 +5726,76 @@
       "book": "Judges",
       "bookId": 6,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bethel-or-house-of-god"
+      ],
+      "annotatedVerses": [
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Judges",
       "bookId": 6,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "levite-concubine-unfaithful-or-left",
+        "levite-house-of-the-lord-or-my-house"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        18,
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Judges",
       "bookId": 6,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bethel-or-house-of-god",
+        "benjamin-army-arithmetic",
+        "ehud-lefthanded-or-ambidextrous"
+      ],
+      "annotatedVerses": [
+        15,
+        16,
+        18,
+        26,
+        27,
+        31,
+        35,
+        44,
+        45,
+        46,
+        47
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Judges",
       "bookId": 6,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bethel-or-house-of-god"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6810,9 +6902,17 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "levite-city-lists-joshua-chronicles"
+      ],
+      "annotatedVerses": [
+        60,
+        61,
+        63
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

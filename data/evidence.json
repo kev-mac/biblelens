@@ -5770,10 +5770,10 @@
     ],
     "title": "Seventy or seventy-five family members?",
     "status": "Context",
-    "summary": "Exodus and Genesis give a family total of seventy; Stephen’s speech in Acts gives seventy-five.",
-    "text": "Exodus 1:5 gives seventy descendants and notes Joseph was already in Egypt. Genesis 46:26–27 distinguishes sixty-six traveling descendants from a total household of seventy. Acts 7:14 gives seventy-five for the relatives Joseph summoned.",
+    "summary": "Exodus and Genesis give a family total of seventy; Stephen’s speech in Acts gives seventy-five. The Septuagint also reads seventy-five in Genesis 46:27 and Exodus 1:5.",
+    "text": "Exodus 1:5 gives seventy descendants and notes Joseph was already in Egypt. Genesis 46:26–27 distinguishes sixty-six traveling descendants from a total household of seventy. Acts 7:14 gives seventy-five for the relatives Joseph summoned. Original-language wording: the Hebrew (WLC) has שִׁבְעִֽים [seventy] at Genesis 46:27 and שִׁבְעִ֣ים נָ֑פֶשׁ [seventy souls] at Exodus 1:5, which the KJV follows (“threescore and ten”; “seventy souls”). The Brenton Greek of Genesis 46:27 gives Joseph nine sons, not two, and a total of seventy-five: ψυχαὶ ἐννέα … ψυχαὶ ἑβδομηκονταπέντε; its Exodus 1:5 has πέντε καὶ ἑβδομήκοντα [seventy-five]. Acts 7:14 (KJV “threescore and fifteen souls”) reads ἐν ψυχαῖς ἑβδομήκοντα πέντε in the SBL and Tischendorf editions, and the same words in the Textus Receptus. Fetched from https://bolls.life/get-text/WLC/1/46/, https://bolls.life/get-text/WLC/2/1/, https://ebible.org/grcbrent/GEN46.htm, https://ebible.org/grcbrent/EXO01.htm and https://bolls.life/get-text/SBLGNT/44/7/.",
     "reasoning": "The totals differ in all three packaged translations. The passages do not describe their counting categories in identical terms, so the numerical difference is directly visible while its explanation needs further evidence.",
-    "scope": "This records an apparent textual discrepancy. Counting scope and textual transmission are questions for further research; these citations alone do not establish a particular reconciliation or manuscript history.",
+    "scope": "This records an apparent textual discrepancy. Counting scope and textual transmission are questions for further research; these citations alone do not establish a particular reconciliation or manuscript history. Stephen’s seventy-five agrees with the Septuagint of Genesis and Exodus and disagrees with the Hebrew those KJV chapters translate. This shows where the two figures sit in the named editions; it does not show which figure is earlier or how either was counted. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier.",
     "refs": [
       {
         "label": "Exodus 1:5",
@@ -5812,9 +5812,41 @@
       {
         "label": "Acts 7 · primary scripture",
         "url": "https://ebible.org/eng-kjv/ACT07.htm"
+      },
+      {
+        "label": "Genesis 46: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/1/46/"
+      },
+      {
+        "label": "Exodus 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/2/1/"
+      },
+      {
+        "label": "Genesis 46: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/GEN46.htm"
+      },
+      {
+        "label": "Exodus 1: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EXO01.htm"
+      },
+      {
+        "label": "Acts 7: Greek New Testament, Elzevir Textus Receptus",
+        "url": "https://bolls.life/get-text/TR/44/7/"
+      },
+      {
+        "label": "Acts 7: Greek New Testament, SBL edition",
+        "url": "https://bolls.life/get-text/SBLGNT/44/7/"
+      },
+      {
+        "label": "Acts 7: Greek New Testament, Tischendorf 8th edition",
+        "url": "https://bolls.life/get-text/TISCH/44/7/"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition; Greek New Testament · Textus Receptus, SBL and Tischendorf editions"
   },
   {
     "id": "exodus-women-rescue",
@@ -21627,9 +21659,9 @@
     "title": "Achan’s household and individual punishment",
     "status": "Context",
     "summary": "Achan’s children are included in the judgment scene, while Deuteronomy forbids executing children for a parent’s sin. The narrative does not state their individual guilt.",
-    "text": "Joshua 7 begins with one named man taking prohibited spoil but attributes a trespass to Israel and connects it to the army’s defeat. Achan confesses his own action. Verse 24 lists his sons and daughters among those brought to Achor; verse 25 first describes stoning him and then uses plural objects for burning and stoning. Deuteronomy 24:16 forbids putting children to death for fathers and assigns death to each person’s own sin. Joshua 22:20 recalls that Achan did not perish alone and that wrath affected the congregation. Joshua 7:5 has already reported roughly thirty-six soldiers killed in the defeat. The later recollection confirms wider fatal consequences; it does not name each additional person or separately describe the death or guilt of each child. Verse 15 announces destruction of the offender and all he has, without separately naming the children. Brenton’s Greek-based English translation of verse 25 retains the singular stoning action but lacks the additional plural burning/stoning clause used by the packaged translations. It still includes sons and daughters in the group brought to the valley in verse 24.",
+    "text": "Joshua 7 begins with one named man taking prohibited spoil but attributes a trespass to Israel and connects it to the army’s defeat. Achan confesses his own action. Verse 24 lists his sons and daughters among those brought to Achor; verse 25 first describes stoning him and then uses plural objects for burning and stoning. Deuteronomy 24:16 forbids putting children to death for fathers and assigns death to each person’s own sin. Joshua 22:20 recalls that Achan did not perish alone and that wrath affected the congregation. Joshua 7:5 has already reported roughly thirty-six soldiers killed in the defeat. The later recollection confirms wider fatal consequences; it does not name each additional person or separately describe the death or guilt of each child. Verse 15 announces destruction of the offender and all he has, without separately naming the children. Brenton’s Greek-based English translation of verse 25 retains the singular stoning action but lacks the additional plural burning/stoning clause used by the packaged translations. It still includes sons and daughters in the group brought to the valley in verse 24. Original-language wording of 7:25: the KJV has “burned them with fire, after they had stoned them with stones”; the Hebrew (WLC) has וַיִּרְגְּמ֨וּ אֹתֹ֤ו כָל־יִשְׂרָאֵל֙ אֶ֔בֶן וַיִּשְׂרְפ֤וּ אֹתָם֙ בָּאֵ֔שׁ וַיִּסְקְל֥וּ אֹתָ֖ם בָּאֲבָנִֽים [all Israel stoned him … burned them … stoned them]. In the Brenton Greek, verse 25 ends with Joshua’s words and the next verse has only the singular: Καὶ ἐλιθοβόλησαν αὐτὸν λίθοις πᾶς Ἰσραὴλ [and all Israel stoned him with stones]. Fetched from https://bolls.life/get-text/WLC/6/7/ and https://ebible.org/grcbrent/JOS07.htm.",
     "reasoning": "Reading the plural action as extending to the listed family creates tension with the individual-punishment rule. The passage does not explicitly accuse the children of sharing Achan’s theft. Assuming their complicity supplies a fact not stated in this scene. Distinguishing exceptional divine judgment from ordinary legal proceedings is a proposed difference of scope, not an explicit explanation of each family member’s responsibility here. The retrospective statement therefore cannot settle the household question by itself: the earlier military deaths are also part of the narrative consequences.",
-    "scope": "The final actions do not itemize each victim, so do not claim the text separately describes every child’s execution. The household-inclusive reading is a qualified interpretation of the listed group and plural wording. The collective military consequences and the execution rule are related but not identical kinds of responsibility. No independent historical occurrence or geological mechanism is established. The plural-action argument depends on the longer wording in the packaged editions; Brenton illustrates a different textual tradition without settling priority or the fate of every family member.",
+    "scope": "The final actions do not itemize each victim, so do not claim the text separately describes every child’s execution. The household-inclusive reading is a qualified interpretation of the listed group and plural wording. The collective military consequences and the execution rule are related but not identical kinds of responsibility. No independent historical occurrence or geological mechanism is established. The plural-action argument depends on the longer wording in the packaged editions; Brenton illustrates a different textual tradition without settling priority or the fate of every family member. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier.",
     "sources": [
       {
         "label": "Joshua 7 · confession and household judgment",
@@ -21646,6 +21678,14 @@
       {
         "label": "Brenton Joshua 7: shorter judgment wording",
         "url": "https://ebible.org/eng-Brenton/JOS07.htm"
+      },
+      {
+        "label": "Joshua 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/6/7/"
+      },
+      {
+        "label": "Joshua 7: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JOS07.htm"
       }
     ],
     "ref": "Joshua 7:1",
@@ -21737,7 +21777,11 @@
         "verse": 5
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
   },
   {
     "id": "joshua-ai-ambush-numbers",
@@ -22279,9 +22323,9 @@
       "Joshua 24:11"
     ],
     "summary": "Joshua credits displacement to a hornet rather than Israel’s weapons, while the same speech mentions fighting. The tension depends on whether the weapon denial excludes combat or emphasizes divine agency.",
-    "text": "Joshua 24:12 attributes displacement to a hornet rather than Israel’s sword or bow, referring to two Amorite kings without naming them. The same speech says the eastern Amorites and Jericho’s people fought Israel (24:8,11). Identifying the two kings as Sihon and Og follows the usage in Deuteronomy 3:8, but is an inference; verse 12 follows the western-Jordan events in verse 11. Deuteronomy 2:32-34 and 3:1-8 describes Israel striking Sihon and Og in battle while crediting divine delivery. Exodus 23:28 promises hornets. Brenton’s Greek-based English translation instead reads twelve kings at Joshua 24:12.",
+    "text": "Joshua 24:12 attributes displacement to a hornet rather than Israel’s sword or bow, referring to two Amorite kings without naming them. The same speech says the eastern Amorites and Jericho’s people fought Israel (24:8,11). Identifying the two kings as Sihon and Og follows the usage in Deuteronomy 3:8, but is an inference; verse 12 follows the western-Jordan events in verse 11. Deuteronomy 2:32-34 and 3:1-8 describes Israel striking Sihon and Og in battle while crediting divine delivery. Exodus 23:28 promises hornets. Brenton’s Greek-based English translation instead reads twelve kings at Joshua 24:12. KJV 24:12 reads “the two kings of the Amorites”, as does the Hebrew (WLC): שְׁנֵ֖י מַלְכֵ֣י הָאֱמֹרִ֑י. The Brenton Greek edition prints δώδεκα βασιλεῖς τῶν Ἀμοῤῥαίων [twelve kings of the Amorites]. Fetched from https://bolls.life/get-text/WLC/6/24/ and https://ebible.org/grcbrent/JOS24.htm.",
     "reasoning": "If the weapon denial means no Israelite fighting occurred, it conflicts with Deuteronomy’s battle reports. If it contrasts the ultimate cause of victory with self-reliance, human fighting and divine aid can coexist. The wording does not itself establish which reading is intended.",
-    "scope": "The comparison does not establish whether hornet is literal, figurative, a particular natural event or a separate stage of displacement. No insect species, military chronology or independent historical event is identified. The two kings are not explicitly identified here. Brenton is a translation witness, not a critical apparatus establishing which original reading is earlier. Its twelve-kings wording limits any unqualified identification with Sihon and Og.",
+    "scope": "The comparison does not establish whether hornet is literal, figurative, a particular natural event or a separate stage of displacement. No insect species, military chronology or independent historical event is identified. The two kings are not explicitly identified here. Brenton is a translation witness, not a critical apparatus establishing which original reading is earlier. Its twelve-kings wording limits any unqualified identification with Sihon and Og. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier.",
     "sources": [
       {
         "label": "Joshua 24: retrospective hornet claim",
@@ -22302,6 +22346,14 @@
       {
         "label": "Brenton Joshua 24:12: twelve-kings translation witness",
         "url": "https://ebible.org/eng-Brenton/JOS24.htm"
+      },
+      {
+        "label": "Joshua 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/6/24/"
+      },
+      {
+        "label": "Joshua 24: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JOS24.htm"
       }
     ],
     "refs": [
@@ -22372,7 +22424,11 @@
         "verse": 11
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
   },
   {
     "id": "shechem-burial-land-purchaser",
@@ -22395,9 +22451,9 @@
       "Genesis 50:13"
     ],
     "summary": "Joshua and Genesis name Jacob as purchaser of the Shechem land; Acts names Abraham as purchaser of a Shechem tomb. The texts do not explicitly explain the different purchaser.",
-    "text": "Joshua 24:32 places Joseph’s bones in land at Shechem purchased by Jacob from Hamor’s sons; Genesis 33:19 also names Jacob. Acts 7:15-16 describes a tomb at Shechem purchased by Abraham from Hamor’s sons. Genesis 23 instead narrates Abraham purchasing the Machpelah property from Ephron near Hebron, where Genesis 50:12-13 places Jacob’s burial. In Acts 7:16, the location comes from the statement that the remains were carried to Shechem; the packaged KJV’s closing father-of-Sychem wording can refer to the person rather than the town. If the plural burial subject includes Jacob, Acts’ Shechem location also differs from Genesis 50’s Machpelah burial. If it resumes only the fathers, that particular burial-location conflict does not follow.",
+    "text": "Joshua 24:32 places Joseph’s bones in land at Shechem purchased by Jacob from Hamor’s sons; Genesis 33:19 also names Jacob. Acts 7:15-16 describes a tomb at Shechem purchased by Abraham from Hamor’s sons. Genesis 23 instead narrates Abraham purchasing the Machpelah property from Ephron near Hebron, where Genesis 50:12-13 places Jacob’s burial. In Acts 7:16, the location comes from the statement that the remains were carried to Shechem; the packaged KJV’s closing father-of-Sychem wording can refer to the person rather than the town. If the plural burial subject includes Jacob, Acts’ Shechem location also differs from Genesis 50’s Machpelah burial. If it resumes only the fathers, that particular burial-location conflict does not follow. Original-language wording: Joshua 24:32 (KJV) has “of the sons of Hamor the father of Shechem for an hundred pieces of silver”; the Hebrew (WLC) has מֵאֵ֛ת בְּנֵֽי־חֲמֹ֥ור אֲבִֽי־שְׁכֶ֖ם בְּמֵאָ֣ה קְשִׂיטָ֑ה [from the sons of Hamor, father of Shechem, for a hundred qesitah]. The Brenton Greek has other sellers and a price in animals: παρὰ τῶν Ἀμοῤῥαίων τῶν κατοικούντων ἐν Σικίμοις ἀμνάδων ἑκατὸν [from the Amorites living in Shechem, for a hundred ewe-lambs]. At Acts 7:16 the KJV ends “of the sons of Emmor the father of Sychem”. The Elzevir Textus Receptus has παρα των υιων εμμορ του συχεμ [from the sons of Emmor of Sychem; no word for “father”]. The SBL and Tischendorf editions have παρὰ τῶν υἱῶν Ἑμμὼρ ἐν Συχέμ [from the sons of Hamor in Shechem]. All three Greek editions name Abraham as the buyer. Fetched from https://bolls.life/get-text/WLC/6/24/, https://ebible.org/grcbrent/JOS24.htm, https://bolls.life/get-text/TR/44/7/, https://bolls.life/get-text/SBLGNT/44/7/ and https://bolls.life/get-text/TISCH/44/7/.",
     "reasoning": "The named purchaser and transaction differ. Treating Abraham and Jacob as interchangeable erases the explicit names. A separate earlier purchase or compressed family history is a possible explanation, but the compared passages do not narrate a second Abraham purchase at Shechem. Acts’ plural burial statement also needs care about which persons it includes.",
-    "scope": "This establishes a textual comparison, not an archaeological identification of the tombs. Do not claim Joseph was buried at Machpelah or that every patriarch’s burial is separately documented. Original wording, narrative compression and the scope of Acts’ plural subjects require further textual study.",
+    "scope": "This establishes a textual comparison, not an archaeological identification of the tombs. Do not claim Joseph was buried at Machpelah or that every patriarch’s burial is separately documented. Original wording, narrative compression and the scope of Acts’ plural subjects require further textual study. The purchaser difference between Acts and Joshua is in the Greek New Testament editions checked, so it is not a product of English translation. Three printed Greek New Testament editions are not a manuscript apparatus; no codex is named. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier.",
     "sources": [
       {
         "label": "Joshua 24: Joseph burial and Jacob purchase",
@@ -22418,6 +22474,26 @@
       {
         "label": "Genesis 50: Jacob burial at Machpelah",
         "url": "https://ebible.org/eng-kjv/GEN50.htm"
+      },
+      {
+        "label": "Joshua 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/6/24/"
+      },
+      {
+        "label": "Joshua 24: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JOS24.htm"
+      },
+      {
+        "label": "Acts 7: Greek New Testament, Elzevir Textus Receptus",
+        "url": "https://bolls.life/get-text/TR/44/7/"
+      },
+      {
+        "label": "Acts 7: Greek New Testament, SBL edition",
+        "url": "https://bolls.life/get-text/SBLGNT/44/7/"
+      },
+      {
+        "label": "Acts 7: Greek New Testament, Tischendorf 8th edition",
+        "url": "https://bolls.life/get-text/TISCH/44/7/"
       }
     ],
     "refs": [
@@ -22494,7 +22570,11 @@
         "verse": 13
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition; Greek New Testament · Textus Receptus, SBL and Tischendorf editions"
   },
   {
     "id": "sisera-death-prose-and-song",
@@ -22511,9 +22591,9 @@
       "Judges 5:27"
     ],
     "summary": "The narrative kills Sisera while he sleeps; the song describes him falling at Jael’s feet. KJV says she struck off his head, while ASV and WEB say she struck through it. A literal sequence needs qualification.",
-    "text": "Judges 4:21-22 describes Jael driving a tent peg through a sleeping Sisera and into the ground; Barak sees the peg in his temples. Judges 5:26-27 poetically repeats his bowing, falling and lying at her feet. The packaged KJV says she smote off his head; the packaged ASV and WEB instead describe striking through his head.",
+    "text": "Judges 4:21-22 describes Jael driving a tent peg through a sleeping Sisera and into the ground; Barak sees the peg in his temples. Judges 5:26-27 poetically repeats his bowing, falling and lying at her feet. The packaged KJV says she smote off his head; the packaged ASV and WEB instead describe striking through his head. Original-language wording of 5:26: the KJV has “she smote off his head”. The Hebrew (WLC) has מָחֲקָ֣ה רֹאשֹׁ֔ו [she struck, or crushed, his head], with no word for “off”. The Brenton Greek has διήλωσε κεφαλὴν αὐτοῦ [she nailed through his head]. Fetched from https://bolls.life/get-text/WLC/7/5/ and https://ebible.org/grcbrent/JDG05.htm.",
     "reasoning": "Treating the song as a precise standing-to-falling chronology creates tension with a sleeper pinned to the ground. Poetic repetition can describe death without specifying an earlier standing posture. The KJV head wording suggests a different action, but the translations show that this stronger contrast is edition-dependent; the narrative also does not explicitly deny any additional blow.",
-    "scope": "Do not assert all translations describe decapitation, that the man must have been standing, or that the two texts prove two deaths. Literary posture and translation choices require interpretation. This is not independent forensic or historical evidence. The poem’s stars and melting mountains are not automatically literal science claims.",
+    "scope": "Do not assert all translations describe decapitation, that the man must have been standing, or that the two texts prove two deaths. Literary posture and translation choices require interpretation. This is not independent forensic or historical evidence. The poem’s stars and melting mountains are not automatically literal science claims. Neither the Hebrew nor the Greek edition quoted describes a head being removed, so the decapitation contrast belongs to the KJV’s wording. The exact sense of the Hebrew verb is the researcher’s gloss, not a lexicon ruling. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier.",
     "sources": [
       {
         "label": "Judges 4: narrative death scene",
@@ -22526,6 +22606,14 @@
       {
         "label": "Judges 5: WEB struck-through wording",
         "url": "https://ebible.org/eng-web/JDG05.htm"
+      },
+      {
+        "label": "Judges 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/5/"
+      },
+      {
+        "label": "Judges 5: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG05.htm"
       }
     ],
     "refs": [
@@ -22566,7 +22654,12 @@
         "verse": 27
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "tags": [
+      "H",
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
   },
   {
     "id": "moses-father-in-law-names",
@@ -22584,9 +22677,9 @@
       "Exodus 3:1"
     ],
     "summary": "KJV calls Hobab Moses’ father-in-law; ASV and WEB call him brother-in-law. Exodus names Reuel and Jethro, while Numbers calls Hobab Reuel’s son. The apparent family conflict depends on the kinship reading.",
-    "text": "Exodus 2:18 names the daughters’ father Reuel, and 2:21 gives Zipporah to Moses. Exodus 3:1 calls Jethro Moses’ father-in-law and priest of Midian. Numbers 10:29 introduces Hobab son of Raguel the Midianite, followed by the in-law label. Judges 4:11 calls Hobab father-in-law in the packaged KJV but brother-in-law in the packaged ASV and WEB. Judges 1:16 associates Moses’ in-law family with the Kenites.",
+    "text": "Exodus 2:18 names the daughters’ father Reuel, and 2:21 gives Zipporah to Moses. Exodus 3:1 calls Jethro Moses’ father-in-law and priest of Midian. Numbers 10:29 introduces Hobab son of Raguel the Midianite, followed by the in-law label. Judges 4:11 calls Hobab father-in-law in the packaged KJV but brother-in-law in the packaged ASV and WEB. Judges 1:16 associates Moses’ in-law family with the Kenites. Original-language wording: at Judges 1:16 the KJV has “the children of the Kenite, Moses' father in law” and the Hebrew (WLC) likewise gives no personal name: וּבְנֵ֣י קֵינִי֩ חֹתֵ֨ן מֹשֶׁ֜ה. The Brenton Greek supplies one: οἱ υἱοὶ Ἰοθὸρ τοῦ Κιναίου τοῦ γαμβροῦ Μωυσῆ [the sons of Jothor, Jethro, the Kenite, Moses’ in-law]. At Judges 4:11 the Hebrew has חֹבָ֖ב חֹתֵ֣ן מֹשֶׁ֑ה and the Greek Ἰωβὰβ γαμβροῦ Μωυσῆ. Fetched from https://bolls.life/get-text/WLC/7/1/, https://ebible.org/grcbrent/JDG01.htm, https://bolls.life/get-text/WLC/7/4/ and https://ebible.org/grcbrent/JDG04.htm.",
     "reasoning": "If every in-law label denotes the same paternal relationship, the named father and son create tension. Reading Hobab as brother-in-law avoids that particular generation conflict; equating Jethro and Reuel as two names for one person is a possible explanation, not an explicit identification in these passages. Numbers’ punctuation alone does not prove which antecedent receives the label.",
-    "scope": "This comparison is edition-sensitive. Do not claim all translations make Hobab the father-in-law, or that Kenite and Midianite must be mutually exclusive ethnic identities. No original-language semantic range or family genealogy is established solely from English translations. Alias and clan relationships remain interpretation questions.",
+    "scope": "This comparison is edition-sensitive. Do not claim all translations make Hobab the father-in-law, or that Kenite and Midianite must be mutually exclusive ethnic identities. No original-language semantic range or family genealogy is established solely from English translations. Alias and clan relationships remain interpretation questions. The Greek of Judges 1:16 names Jethro where the Hebrew and KJV name no one, so in the Greek book both Jethro (1:16) and Hobab (4:11) carry the same in-law word. Brenton’s English renders that Greek word “father-in-law” in both verses; the same Greek word is used for the woman’s father at Judges 19:9, so it does not by itself fix the relationship. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier.",
     "sources": [
       {
         "label": "Exodus 2: Reuel and Zipporah",
@@ -22611,6 +22704,22 @@
       {
         "label": "Judges 4: WEB brother-in-law wording",
         "url": "https://ebible.org/eng-web/JDG04.htm"
+      },
+      {
+        "label": "Judges 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/1/"
+      },
+      {
+        "label": "Judges 1: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG01.htm"
+      },
+      {
+        "label": "Judges 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/4/"
+      },
+      {
+        "label": "Judges 4: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG04.htm"
       }
     ],
     "refs": [
@@ -22657,7 +22766,11 @@
         "verse": 1
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
   },
   {
     "id": "gideon-seventy-sons-count",
@@ -23211,9 +23324,9 @@
     "title": "The riddle threat: fourth or seventh day?",
     "status": "Context",
     "summary": "The KJV places the threat to Samson’s wife on day seven; Brenton’s English Septuagint translation places it on day four. Their descriptions of the answer’s time also differ.",
-    "text": "Both editions give a seven-day riddle deadline and an answer on day seven. At 14:15 the KJV dates the threat to the seventh day; Brenton prints the fourth. At 14:18 the KJV has the answer before sunset, whereas Brenton prints before sunrise.",
+    "text": "Both editions give a seven-day riddle deadline and an answer on day seven. At 14:15 the KJV dates the threat to the seventh day; Brenton prints the fourth. At 14:18 the KJV has the answer before sunset, whereas Brenton prints before sunrise. Original-language wording: at 14:15 the KJV has “on the seventh day” and the Hebrew (WLC) בַּיֹּ֣ום הַשְּׁבִיעִ֗י [on the seventh day]; the Brenton Greek has ἐν τῇ ἡμέρᾳ τῇ τετάρτῃ [on the fourth day]. At 14:18 the KJV has “before the sun went down” and the Hebrew בְּטֶ֙רֶם֙ יָבֹ֣א הַחַ֔רְסָה [before the sun went in]; the Greek has πρὸ τοῦ ἀνατεῖλαι τὸν ἥλιον [before the sun rose]. Fetched from https://bolls.life/get-text/WLC/7/14/ and https://ebible.org/grcbrent/JDG14.htm.",
     "reasoning": "The threat date is a direct difference in the same episode, not merely a differently sized participant list. The sunrise and sunset phrases also differ, although before-sunset wording alone does not exclude an earlier morning answer. The seven-day weeping statement can be a narrative recap; the order of adjacent sentences need not prove all pressure began only after the threat.",
-    "scope": "Brenton is an English translation of a Septuagint text, not a critical Greek apparatus. These observations do not establish every Greek witness, an original reading or an actual historical timetable. Do not treat the KJV’s seventh-day threat and seven-day weeping as an unavoidable internal contradiction; earlier pressure or a recap remains possible.",
+    "scope": "Brenton is an English translation of a Septuagint text, not a critical Greek apparatus. These observations do not establish every Greek witness, an original reading or an actual historical timetable. Do not treat the KJV’s seventh-day threat and seven-day weeping as an unavoidable internal contradiction; earlier pressure or a recap remains possible. The fourth-day and sunrise readings are now confirmed in the Greek edition itself, not only in Brenton’s English. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier.",
     "sources": [
       {
         "label": "Judges 14: KJV",
@@ -23222,6 +23335,14 @@
       {
         "label": "Judges 14: Brenton English Septuagint translation",
         "url": "https://ebible.org/eng-Brenton/JDG14.htm"
+      },
+      {
+        "label": "Judges 14: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/14/"
+      },
+      {
+        "label": "Judges 14: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG14.htm"
       }
     ],
     "refs": [
@@ -23250,6 +23371,915 @@
         "verse": 18
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "balak-war-against-israel",
+    "mode": "contradictions",
+    "ref": "Joshua 24:9",
+    "appliesTo": [
+      "Joshua 24:9",
+      "Judges 11:25"
+    ],
+    "title": "Did Balak ever fight Israel?",
+    "status": "Context",
+    "summary": "Joshua says Balak rose and warred against Israel. Jephthah asks, expecting the answer no, whether Balak ever fought them. The Hebrew uses the same verb in both verses.",
+    "text": "Joshua 24:9 (KJV): “Balak the son of Zippor, king of Moab, arose and warred against Israel”. Judges 11:25 (KJV): “did he ever strive against Israel, or did he ever fight against them”. Hebrew (WLC) of Joshua 24:9: וַיִּלָּ֖חֶם בְּיִשְׂרָאֵ֑ל [and he fought against Israel]. Hebrew (WLC) of Judges 11:25: אִם־נִלְחֹ֥ם נִלְחַ֖ם בָּֽם [did he ever fight against them]. The Brenton Greek has παρετάξατο τῷ Ἰσραὴλ [drew up in battle order against Israel] in Joshua and πολεμῶν ἐπολέμησεν αὐτὸν [did he ever make war on him] in Judges. Fetched from https://bolls.life/get-text/WLC/6/24/, https://bolls.life/get-text/WLC/7/11/, https://ebible.org/grcbrent/JOS24.htm and https://ebible.org/grcbrent/JDG11.htm.",
+    "reasoning": "One speech asserts the act and the other asks a rhetorical question that denies it, about the same king and the same people, using one Hebrew verb. If the verb means armed combat in both, the speeches disagree. If Joshua’s “warred” summarises hostile action, the two can stand together: the same verse goes straight on to say Balak “sent and called Balaam” to curse.",
+    "scope": "Both statements are speeches by characters making an argument, not narrator reports. A shared Hebrew root does not settle that both speakers mean the same kind of action. The KJV’s “warred” and “fight” are synonyms, so this is not tagged as a KJV departure from the Hebrew; the Hebrew is quoted only to show the wording match. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Joshua 24: KJV",
+        "url": "https://ebible.org/eng-kjv/JOS24.htm"
+      },
+      {
+        "label": "Judges 11: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG11.htm"
+      },
+      {
+        "label": "Joshua 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/6/24/"
+      },
+      {
+        "label": "Judges 11: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/11/"
+      },
+      {
+        "label": "Joshua 24: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JOS24.htm"
+      },
+      {
+        "label": "Judges 11: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG11.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Joshua 24:9",
+        "book": 5,
+        "chapter": 24,
+        "verse": 9
+      },
+      {
+        "label": "Judges 11:25",
+        "book": 6,
+        "chapter": 11,
+        "verse": 25
+      }
+    ],
+    "checked": "2026-10-12",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "joshua-covenant-assembly-shechem-or-shiloh",
+    "mode": "contradictions",
+    "ref": "Joshua 24:1",
+    "appliesTo": [
+      "Joshua 24:1",
+      "Joshua 24:25",
+      "Joshua 24:26",
+      "Joshua 18:1"
+    ],
+    "title": "Joshua’s covenant assembly: Shechem or Shiloh?",
+    "status": "Context",
+    "summary": "The KJV and the Hebrew set Joshua’s last assembly and covenant at Shechem. The Septuagint sets both at Shiloh, before the tent of God, and has no “sanctuary” in verse 26.",
+    "text": "KJV Joshua 24:1: “gathered all the tribes of Israel to Shechem”; 24:25: “set them a statute and an ordinance in Shechem”; 24:26: “under an oak, that was by the sanctuary of the Lord”. Hebrew (WLC): 24:1 שְׁכֶ֑מָה [to Shechem]; 24:25 בִּשְׁכֶֽם [in Shechem]; 24:26 בְּמִקְדַּ֥שׁ יְהוָֽה [in the sanctuary of the LORD]. Septuagint (Brenton Greek): 24:1 εἰς Σηλὼ [to Shiloh]; 24:25 ἐν Σηλὼ ἐνώπιον τῆς σκηνῆς τοῦ Θεοῦ Ἰσραήλ [in Shiloh before the tent of the God of Israel]; 24:26 ὑπὸ τὴν τέρμινθον ἀπέναντι Κυρίου [under the terebinth before the Lord]. Joshua 18:1 (KJV) puts the tabernacle at Shiloh: “assembled together at Shiloh, and set up the tabernacle of the congregation there”. Fetched from https://bolls.life/get-text/WLC/6/24/ and https://ebible.org/grcbrent/JOS24.htm.",
+    "reasoning": "The two text traditions name different towns for the same assembly. The Greek place agrees with where Joshua 18:1 puts the tabernacle; the Hebrew and KJV place a “sanctuary of the Lord” at Shechem without saying what it was.",
+    "scope": "The passage does not say whether the “sanctuary” at Shechem was the tabernacle, a second holy place or something else, and it mentions no altar there. Do not claim the Greek is a deliberate correction or that the Hebrew is; neither is shown by these editions. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Joshua 24: KJV",
+        "url": "https://ebible.org/eng-kjv/JOS24.htm"
+      },
+      {
+        "label": "Joshua 18: KJV",
+        "url": "https://ebible.org/eng-kjv/JOS18.htm"
+      },
+      {
+        "label": "Joshua 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/6/24/"
+      },
+      {
+        "label": "Joshua 24: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JOS24.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Joshua 24:1",
+        "book": 5,
+        "chapter": 24,
+        "verse": 1
+      },
+      {
+        "label": "Joshua 24:25",
+        "book": 5,
+        "chapter": 24,
+        "verse": 25
+      },
+      {
+        "label": "Joshua 24:26",
+        "book": 5,
+        "chapter": 24,
+        "verse": 26
+      },
+      {
+        "label": "Joshua 18:1",
+        "book": 5,
+        "chapter": 18,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "joshua-altar-named-ed",
+    "mode": "contradictions",
+    "ref": "Joshua 22:34",
+    "appliesTo": [
+      "Joshua 22:34"
+    ],
+    "title": "Was the altar named “Ed”?",
+    "status": "Context",
+    "summary": "The KJV says the eastern tribes “called the altar Ed”. The Hebrew quoted here gives no name after “called”; “witness” is a common noun in the reason that follows. In the Septuagint, Joshua names the altar.",
+    "text": "KJV Joshua 22:34: “called the altar Ed: for it shall be a witness between us”. Hebrew (WLC): וַֽיִּקְרְא֛וּ בְּנֵי־רְאוּבֵ֥ן וּבְנֵי־גָ֖ד לַמִּזְבֵּ֑חַ כִּ֣י עֵ֥ד הוּא֙ בֵּֽינֹתֵ֔ינוּ [and the sons of Reuben and the sons of Gad called the altar, for it is a witness between us]. Septuagint (Brenton Greek): ἐπωνόμασεν Ἰησοῦς τὸν βωμὸν [Joshua named the altar] … μαρτύριόν ἐστιν ἀναμέσον αὐτῶν [it is a testimony between them]. Fetched from https://bolls.life/get-text/WLC/6/22/ and https://ebible.org/grcbrent/JOS22.htm.",
+    "reasoning": "In this Hebrew text the word for “witness” appears once, inside the explanation, and no name stands after “called the altar”. The KJV supplies “Ed” as a proper name. The Greek differs again: the namer is Joshua, not the tribes, and no name “Ed” is printed.",
+    "scope": "The packaged KJV text does not mark supplied words, so it cannot show whether the translators flagged “Ed” as an addition. The Hebrew sentence is abrupt, and reading its reason clause as the name itself is a possible construction. The effect on meaning is limited to whether the altar had a proper name. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Joshua 22: KJV",
+        "url": "https://ebible.org/eng-kjv/JOS22.htm"
+      },
+      {
+        "label": "Joshua 22: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/6/22/"
+      },
+      {
+        "label": "Joshua 22: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JOS22.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Joshua 22:34",
+        "book": 5,
+        "chapter": 22,
+        "verse": 34
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "H",
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "levite-city-lists-joshua-chronicles",
+    "mode": "contradictions",
+    "ref": "Joshua 21:41",
+    "appliesTo": [
+      "Joshua 21:41",
+      "Joshua 21:25",
+      "Joshua 21:36",
+      "Joshua 21:37",
+      "Joshua 21:40",
+      "1 Chronicles 6:60",
+      "1 Chronicles 6:61",
+      "1 Chronicles 6:63"
+    ],
+    "title": "Forty-eight Levite towns: stated totals against the names",
+    "status": "Textual conflict",
+    "summary": "Joshua 21 names 48 Levite towns and totals 48. 1 Chronicles 6 states the same group totals, 13, 10, 13 and 12, but names 11, 8, 13 and 10. The Aleppo-based digital text served at the supplied address omits four Reubenite towns.",
+    "text": "Joshua 21:41 (KJV): “forty and eight cities”; its lists name 13, 10, 13 and 12 towns. 1 Chronicles 6:60 (KJV): “All their cities throughout their families were thirteen cities”, after eleven names in verses 57–60 (Juttah and Gibeon of Joshua 21:16–17 are not there). 1 Chronicles 6:61: “ten cities”; verses 67–70 name eight (no Eltekeh or Gibbethon). 1 Chronicles 6:63: “twelve cities”; verses 77–81 name ten (two towns from Zebulun where Joshua 21:34–35 has four). The thirteen Gershonite towns are all named (6:71–76). Named total: 42. Joshua 21:25 (KJV) gives Manasseh “Gathrimmon”, the town just listed for Dan in 21:24; the Hebrew (WLC) has גַּת־רִמֹּ֖ון, the Brenton Greek has τὴν Ἰεβαθὰ [Iebatha], and 1 Chronicles 6:70 (KJV) has “Bileam”. Joshua 21:36–37, the four Reubenite towns (“four cities”): the Unicode/XML Leningrad Codex edition prints both verses with a mark [X]. The supplied excerpt does not include the key defining that mark. The Aleppo-based consonantal edition served by bolls.life (HAC) has 43 verses in the chapter, goes from Zebulun straight to Gad, and still totals ערים שתים עשרה [twelve towns] for Merari after eight names. The Brenton Greek includes the Reubenite towns (πόλεις τέσσαρες). Fetched from https://tanach.us/Server.txt?Josh21:35-21:38, https://bolls.life/get-text/HAC/6/21/, https://bolls.life/get-text/WLC/6/21/ and https://ebible.org/grcbrent/JOS21.htm.",
+    "reasoning": "This is arithmetic inside each list. Chronicles’ stated subtotals exceed its own names by six. Joshua’s names reach 48 only with verses 36–37, which the KJV includes; without them the Hebrew names 44 and Merari has eight against a stated twelve.",
+    "scope": "Different spellings or names for what may be the same town (Holon/Hilen, Ain/Ashan, Almon/Alemeth, Kibzaim/Jokmeam and others) are not counted here as contradictions. A shortfall can come from loss in copying, abbreviation or an earlier form of the list; none is shown by these texts. The G tag covers only the different town name in the Greek of 21:25. The [X] marks are visible in the supplied Unicode/XML excerpt, but their definition is not provided there. The 43-verse count describes how one website serves the Aleppo-based edition; neither observation establishes what every manuscript contains. A supplied critical-edition reference would be needed for a claim about the physical codices. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier.",
+    "sources": [
+      {
+        "label": "Joshua 21: KJV",
+        "url": "https://ebible.org/eng-kjv/JOS21.htm"
+      },
+      {
+        "label": "1 Chronicles 6: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH06.htm"
+      },
+      {
+        "label": "Joshua 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/6/21/"
+      },
+      {
+        "label": "Joshua 21:35–38: Unicode/XML Leningrad Codex (UXLC) with transcription notes",
+        "url": "https://tanach.us/Server.txt?Josh21:35-21:38"
+      },
+      {
+        "label": "Joshua 21: Hebrew, Aleppo-based consonantal edition (HAC) as served by bolls.life",
+        "url": "https://bolls.life/get-text/HAC/6/21/"
+      },
+      {
+        "label": "Joshua 21: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JOS21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Joshua 21:41",
+        "book": 5,
+        "chapter": 21,
+        "verse": 41
+      },
+      {
+        "label": "Joshua 21:25",
+        "book": 5,
+        "chapter": 21,
+        "verse": 25
+      },
+      {
+        "label": "Joshua 21:36",
+        "book": 5,
+        "chapter": 21,
+        "verse": 36
+      },
+      {
+        "label": "Joshua 21:37",
+        "book": 5,
+        "chapter": 21,
+        "verse": 37
+      },
+      {
+        "label": "Joshua 21:40",
+        "book": 5,
+        "chapter": 21,
+        "verse": 40
+      },
+      {
+        "label": "1 Chronicles 6:60",
+        "book": 12,
+        "chapter": 6,
+        "verse": 60
+      },
+      {
+        "label": "1 Chronicles 6:61",
+        "book": 12,
+        "chapter": 6,
+        "verse": 61
+      },
+      {
+        "label": "1 Chronicles 6:63",
+        "book": 12,
+        "chapter": 6,
+        "verse": 63
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Unicode/XML Leningrad Codex (UXLC); Aleppo-based edition (HAC); Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "jacob-shechem-portion-bought-or-taken",
+    "mode": "contradictions",
+    "ref": "Genesis 48:22",
+    "appliesTo": [
+      "Genesis 48:22",
+      "Genesis 33:19",
+      "Joshua 24:32"
+    ],
+    "title": "Jacob’s land at Shechem: bought, or taken by sword and bow?",
+    "status": "Context",
+    "summary": "Genesis 33 and Joshua 24 say Jacob bought land at Shechem. In Genesis 48:22 Jacob says he took Joseph’s extra share from the Amorite with sword and bow; the Hebrew word for that share is “shekhem”, and the Septuagint names it as Shechem.",
+    "text": "Genesis 48:22 (KJV): “one portion above thy brethren, which I took out of the hand of the Amorite with my sword and with my bow”. Hebrew (WLC): שְׁכֶ֥ם אַחַ֖ד עַל־אַחֶ֑יךָ [one shekhem above your brothers]. Septuagint (Brenton Greek): δίδωμί σοι Σίκιμα ἐξαίρετον [I give you Sikima, Shechem, as a special share] … ἐν μαχαίρᾳ μου καὶ τόξῳ [with my sword and bow]. Genesis 33:19 (KJV): “he bought a parcel of a field”. Joshua 24:32 (KJV): “a parcel of ground which Jacob bought of the sons of Hamor the father of Shechem” … “it became the inheritance of the children of Joseph”. In the Brenton Greek of Joshua 24:32 the sellers are παρὰ τῶν Ἀμοῤῥαίων τῶν κατοικούντων ἐν Σικίμοις [from the Amorites living in Shechem]. Fetched from https://bolls.life/get-text/WLC/1/48/, https://ebible.org/grcbrent/GEN48.htm and https://ebible.org/grcbrent/JOS24.htm.",
+    "reasoning": "In the Greek, one passage says Jacob took Shechem from the Amorites by weapons and another says he acquired a field at Shechem from the Amorites by purchase. These descriptions create a question about how the acquisitions relate, but naming the same town does not establish that the same parcel is meant. In the KJV Genesis 48:22 reads “portion” and names no place.",
+    "scope": "The Hebrew word can mean shoulder, ridge or share as well as the place name, so the KJV’s “portion” is within its range and no H tag is proposed. The Greek makes the geographical link with Shechem explicit; it does not establish that Genesis 48:22 concerns precisely the same parcel as Genesis 33:19. Different portions or stages of acquisition remain possible. Genesis 34 narrates violence at Shechem by Jacob’s sons, which Jacob condemns; whether 48:22 refers to that is not stated. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Genesis 48: KJV",
+        "url": "https://ebible.org/eng-kjv/GEN48.htm"
+      },
+      {
+        "label": "Genesis 33: KJV",
+        "url": "https://ebible.org/eng-kjv/GEN33.htm"
+      },
+      {
+        "label": "Joshua 24: KJV",
+        "url": "https://ebible.org/eng-kjv/JOS24.htm"
+      },
+      {
+        "label": "Genesis 48: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/1/48/"
+      },
+      {
+        "label": "Genesis 48: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/GEN48.htm"
+      },
+      {
+        "label": "Joshua 24: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JOS24.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Genesis 48:22",
+        "book": 0,
+        "chapter": 48,
+        "verse": 22
+      },
+      {
+        "label": "Genesis 33:19",
+        "book": 0,
+        "chapter": 33,
+        "verse": 19
+      },
+      {
+        "label": "Joshua 24:32",
+        "book": 5,
+        "chapter": 24,
+        "verse": 32
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "samson-web-longer-greek",
+    "mode": "contradictions",
+    "ref": "Judges 16:13",
+    "appliesTo": [
+      "Judges 16:13",
+      "Judges 16:14"
+    ],
+    "title": "Samson’s third answer: a sentence the KJV does not finish",
+    "status": "Context",
+    "summary": "In the KJV, Samson’s third answer to Delilah stops at “with the web”, and he then wakes without having been said to sleep. The Septuagint has the rest: the result he promises, his sleep, and Delilah weaving his hair.",
+    "text": "KJV Judges 16:13–14: “If thou weavest the seven locks of my head with the web.” “And she fastened it with the pin” … “And he awaked out of his sleep”. The Hebrew (WLC) is as short: אִם־תַּאַרְגִ֗י אֶת־שֶׁ֛בַע מַחְלְפֹ֥ות רֹאשִׁ֖י עִם־הַמַּסָּֽכֶת then וַתִּתְקַע֙ בַּיָּתֵ֔ד [and she fastened with the pin]. Septuagint (Brenton Greek), 16:13: ἐὰν ὑφάνῃς τὰς ἑπτὰ σειρὰς τῆς κεφαλῆς μου σὺν τῷ διάσματι, καὶ ἐγκρούσῃς τῷ πασσάλῳ εἰς τὸν τοῖχον, καὶ ἔσομαι ὡς εἷς τῶν ἀνθρώπων ἀσθενής [if you weave the seven locks of my head with the web, and drive the pin into the wall, I shall be weak like one of the men]; 16:14: Καὶ ἐγένετο ἐν τῷ κοιμᾶσθαι αὐτὸν, καὶ ἔλαβε Δαλιδὰ τὰς ἑπτὰ σειρὰς τῆς κεφαλῆς αὐτοῦ, καὶ ὕφανεν ἐν τῷ διάσματι [and while he slept Delilah took the seven locks of his head and wove them in the web]. The first two answers in the KJV end with the result: “then shall I be weak, and be as another man” (16:7; 16:11). Fetched from https://bolls.life/get-text/WLC/7/16/ and https://ebible.org/grcbrent/JDG16.htm.",
+    "reasoning": "The Greek carries a clause and a half that the Hebrew and KJV lack, and it supplies exactly what the shorter text leaves open: the promised result, the sleep and the weaving. The pattern of the first two answers shows what the third is missing.",
+    "scope": "This shows a longer text in one Greek edition. It does not show that the Hebrew lost the words in copying or that the Greek added them; both are explanations, not readings. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 16: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG16.htm"
+      },
+      {
+        "label": "Judges 16: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/16/"
+      },
+      {
+        "label": "Judges 16: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG16.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 16:13",
+        "book": 6,
+        "chapter": 16,
+        "verse": 13
+      },
+      {
+        "label": "Judges 16:14",
+        "book": 6,
+        "chapter": 16,
+        "verse": 14
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "samson-water-jaw-or-lehi",
+    "mode": "contradictions",
+    "ref": "Judges 15:19",
+    "appliesTo": [
+      "Judges 15:19",
+      "Judges 15:17"
+    ],
+    "title": "Water for Samson: out of the jawbone, or at a place called Lehi?",
+    "status": "Context",
+    "summary": "The KJV has God split a hollow “in the jaw” and then says the spring “is in Lehi unto this day”. The Hebrew uses the same two words both times. The Septuagint has “jaw” both times.",
+    "text": "KJV Judges 15:19: “God clave an hollow place that was in the jaw” … “which is in Lehi unto this day”. Hebrew (WLC): first אֶת־הַמַּכְתֵּ֣שׁ אֲשֶׁר־בַּלֶּ֗חִי [the hollow that is in lehi], then אֲשֶׁ֣ר בַּלֶּ֔חִי עַ֖ד הַיֹּ֥ום הַזֶּֽה [that is in lehi to this day]. Septuagint (Brenton Greek): τὸν λάκκον τὸν ἐν τῇ σιαγόνι [the hollow in the jaw] … ἥ ἐστιν ἐν σιαγόνι [which is in jaw]. In the KJV, Lehi is the place of the fight (“spread themselves in Lehi”, 15:9), named in 15:17: “called that place Ramathlehi”. Fetched from https://bolls.life/get-text/WLC/7/15/ and https://ebible.org/grcbrent/JDG15.htm.",
+    "reasoning": "One Hebrew phrase is given two meanings inside one KJV verse. Read the first way, water comes out of the donkey’s jawbone; read the second way, it comes from a hollow in the ground at Lehi, where a spring could still be shown “unto this day”.",
+    "scope": "The Hebrew word is both the common noun “jaw” and the place name, so the Hebrew does not decide between the two, and the Greek chose “jaw” throughout. The same Hebrew word can have different referents in context, so the two KJV renderings do not by themselves prove a Hebrew meaning error. No H tag is used. The G tag marks the second occurrence: this Greek edition renders “jaw” where the KJV gives the place name Lehi; neither reading’s priority is established. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 15: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG15.htm"
+      },
+      {
+        "label": "Judges 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/15/"
+      },
+      {
+        "label": "Judges 15: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG15.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 15:19",
+        "book": 6,
+        "chapter": 15,
+        "verse": 19
+      },
+      {
+        "label": "Judges 15:17",
+        "book": 6,
+        "chapter": 15,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "angel-name-secret-or-wonderful",
+    "mode": "contradictions",
+    "ref": "Judges 13:18",
+    "appliesTo": [
+      "Judges 13:18",
+      "Judges 13:19"
+    ],
+    "title": "The angel’s name: “secret” or “wonderful”?",
+    "status": "Context",
+    "summary": "The KJV has the angel refuse his name because “it is secret”. The Hebrew word is from the root the KJV renders “wonderously” in the next verse, and the Septuagint says “it is wonderful”.",
+    "text": "KJV Judges 13:18: “Why askest thou thus after my name, seeing it is secret?”. Hebrew (WLC): וְהוּא־פֶֽלִאי [and it is wonderful]. Septuagint (Brenton Greek): καὶ αὐτό ἐστι θαυμαστόν [and it is wonderful]. Next verse, KJV: “the angel did wonderously”; Hebrew וּמַפְלִ֣א לַעֲשֹׂ֔ות, from the same root. Fetched from https://bolls.life/get-text/WLC/7/13/ and https://ebible.org/grcbrent/JDG13.htm.",
+    "reasoning": "This Greek edition describes the name as wonderful, whereas the KJV calls it secret. The Hebrew name description and the following action share a root associated with wonder, but that alone does not settle the description’s contextual meaning.",
+    "scope": "A shared root does not settle context: the Hebrew word can carry the sense “beyond understanding”, which lies near “secret”, so the difference is one of emphasis more than of fact. No H tag is used because the admitted overlap with “beyond understanding” does not establish a Hebrew meaning error. The G tag records the different description in the named Greek edition. No doctrine about the angel’s identity is drawn from it. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 13: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG13.htm"
+      },
+      {
+        "label": "Judges 13: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/13/"
+      },
+      {
+        "label": "Judges 13: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG13.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 13:18",
+        "book": 6,
+        "chapter": 13,
+        "verse": 18
+      },
+      {
+        "label": "Judges 13:19",
+        "book": 6,
+        "chapter": 13,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "levite-concubine-unfaithful-or-left",
+    "mode": "contradictions",
+    "ref": "Judges 19:2",
+    "appliesTo": [
+      "Judges 19:2",
+      "Judges 19:3"
+    ],
+    "title": "The Levite’s concubine: unfaithful, or simply left?",
+    "status": "Context",
+    "summary": "The KJV, following the Hebrew, says the concubine “played the whore against him”. The Septuagint says only that she “went away from him”.",
+    "text": "KJV Judges 19:2: “his concubine played the whore against him, and went away from him”. Hebrew (WLC): וַתִּזְנֶ֤ה עָלָיו֙ פִּֽילַגְשֹׁ֔ו [and his concubine was unfaithful against him]. Septuagint (Brenton Greek): Καὶ ἐπορεύθη ἀπʼ αὐτοῦ ἡ παλλακὴ αὐτοῦ [and his concubine went from him]. KJV 19:3: the husband went “to speak friendly unto her, and to bring her again”. Fetched from https://bolls.life/get-text/WLC/7/19/ and https://ebible.org/grcbrent/JDG19.htm.",
+    "reasoning": "The Greek has no charge of sexual unfaithfulness: the woman leaves, and the man goes to win her back. In the Hebrew and KJV she is accused first.",
+    "scope": "This is a difference between two text traditions about the same sentence. It does not show which is earlier, and it does not bear on responsibility for what happens to her at Gibeah. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 19: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG19.htm"
+      },
+      {
+        "label": "Judges 19: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/19/"
+      },
+      {
+        "label": "Judges 19: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG19.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 19:2",
+        "book": 6,
+        "chapter": 19,
+        "verse": 2
+      },
+      {
+        "label": "Judges 19:3",
+        "book": 6,
+        "chapter": 19,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "levite-house-of-the-lord-or-my-house",
+    "mode": "contradictions",
+    "ref": "Judges 19:18",
+    "appliesTo": [
+      "Judges 19:18",
+      "Judges 19:29"
+    ],
+    "title": "The Levite’s destination: “the house of the Lord” or “my house”?",
+    "status": "Context",
+    "summary": "In the KJV and Hebrew the Levite says he is going to “the house of the Lord”. In the Septuagint he says “to my house”, and the story does end at his own house.",
+    "text": "KJV Judges 19:18: “I am now going to the house of the Lord”. Hebrew (WLC): וְאֶת־בֵּ֤ית יְהוָה֙ אֲנִ֣י הֹלֵ֔ךְ [and to the house of the LORD I am going]. Septuagint (Brenton Greek): εἰς τὸν οἶκόν μου ἐγὼ πορεύομαι [to my house I am going]. KJV 19:28–29: he “gat him unto his place” … “when he was come into his house”. Fetched from https://bolls.life/get-text/WLC/7/19/ and https://ebible.org/grcbrent/JDG19.htm.",
+    "reasoning": "The two traditions give the traveller different destinations in the same sentence. Nothing later in the chapter takes him to a sanctuary; he goes home.",
+    "scope": "A man may have meant to visit a sanctuary on the way home, so the KJV wording is not contradicted by 19:29. Do not claim which reading is original. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 19: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG19.htm"
+      },
+      {
+        "label": "Judges 19: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/19/"
+      },
+      {
+        "label": "Judges 19: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG19.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 19:18",
+        "book": 6,
+        "chapter": 19,
+        "verse": 18
+      },
+      {
+        "label": "Judges 19:29",
+        "book": 6,
+        "chapter": 19,
+        "verse": 29
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "bethel-or-house-of-god",
+    "mode": "contradictions",
+    "ref": "Judges 20:18",
+    "appliesTo": [
+      "Judges 20:18",
+      "Judges 20:26",
+      "Judges 20:27",
+      "Judges 20:31",
+      "Judges 21:2",
+      "Judges 18:31"
+    ],
+    "title": "Where Israel asked God: “the house of God” or Bethel?",
+    "status": "Context",
+    "summary": "Four times the KJV says Israel went to “the house of God”. The Hebrew has the place name Bethel each time, and so does the Septuagint. In the KJV the ark seems to be at the sanctuary; in the Hebrew and Greek it is at Bethel.",
+    "text": "KJV Judges 20:18: “went up to the house of God, and asked counsel of God”; 20:26: “came unto the house of God, and wept”; 20:31: “of which one goeth up to the house of God”; 21:2: “the people came to the house of God”. Hebrew (WLC): 20:18 וַיַּעֲל֣וּ בֵֽית־אֵל֮ [and went up to Bethel]; 20:26 וַיָּבֹ֣אוּ בֵֽית־אֵ֗ל; 20:31 עֹלָ֣ה בֵֽית־אֵ֗ל; 21:2 וַיָּבֹ֤א הָעָם֙ בֵּֽית־אֵ֔ל. Septuagint (Brenton Greek): 20:18 ἀνέβησαν εἰς Βαιθὴλ; 20:26 ἦλθον εἰς Βαιθήλ; 20:31 ἀναβαίνουσα εἰς Βαιθὴλ; 21:2 ἦλθεν ὁ λαὸς εἰς Βαιθὴλ. KJV 20:27: “the ark of the covenant of God was there in those days”. Where the KJV has “house of God” at 18:31 (“the house of God was in Shiloh”), the Hebrew phrase is a different one: בֵּית־הָאֱלֹהִ֖ים בְּשִׁלֹֽה. The KJV itself prints “Bethel” at 21:19. Fetched from https://bolls.life/get-text/WLC/7/20/, https://bolls.life/get-text/WLC/7/21/, https://bolls.life/get-text/WLC/7/18/, https://ebible.org/grcbrent/JDG20.htm and https://ebible.org/grcbrent/JDG21.htm.",
+    "reasoning": "Hebrew and Greek name a town; the KJV turns the name into a description that a reader will connect with the sanctuary just located at Shiloh (18:31). On the Hebrew and Greek wording, the ark and the sacrifices of 20:26–27 are at Bethel, not Shiloh.",
+    "scope": "The name Bethel is made of the words “house” and “God”, so the KJV’s rendering is a possible reading of the two words; the case against it is the Greek, the different Hebrew phrase at 18:31 and the KJV’s own “Bethel” at 21:19. A shared root does not settle context. The verses do not say why the ark was at Bethel or for how long, and no unauthorised-sanctuary claim is made. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 20: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG20.htm"
+      },
+      {
+        "label": "Judges 21: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG21.htm"
+      },
+      {
+        "label": "Judges 18: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG18.htm"
+      },
+      {
+        "label": "Judges 20: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/20/"
+      },
+      {
+        "label": "Judges 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/21/"
+      },
+      {
+        "label": "Judges 18: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/18/"
+      },
+      {
+        "label": "Judges 20: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG20.htm"
+      },
+      {
+        "label": "Judges 21: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 20:18",
+        "book": 6,
+        "chapter": 20,
+        "verse": 18
+      },
+      {
+        "label": "Judges 20:26",
+        "book": 6,
+        "chapter": 20,
+        "verse": 26
+      },
+      {
+        "label": "Judges 20:27",
+        "book": 6,
+        "chapter": 20,
+        "verse": 27
+      },
+      {
+        "label": "Judges 20:31",
+        "book": 6,
+        "chapter": 20,
+        "verse": 31
+      },
+      {
+        "label": "Judges 21:2",
+        "book": 6,
+        "chapter": 21,
+        "verse": 2
+      },
+      {
+        "label": "Judges 18:31",
+        "book": 6,
+        "chapter": 18,
+        "verse": 31
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "H",
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "benjamin-army-arithmetic",
+    "mode": "contradictions",
+    "ref": "Judges 20:15",
+    "appliesTo": [
+      "Judges 20:15",
+      "Judges 20:35",
+      "Judges 20:44",
+      "Judges 20:45",
+      "Judges 20:46",
+      "Judges 20:47"
+    ],
+    "title": "Benjamin’s army: mustered, killed and escaped",
+    "status": "Textual conflict",
+    "summary": "Benjamin musters 26,700. The dead are given as 25,100 and then as 25,000, and 600 escape. That leaves about 1,000 men unaccounted for. This Septuagint edition musters 23,700 including Gibeah’s 700, fewer than the dead and escaped together.",
+    "text": "KJV Judges 20:15: “twenty and six thousand men that drew sword, beside the inhabitants of Gibeah, which were numbered seven hundred chosen men” (26,700). 20:35: “twenty and five thousand and an hundred men”. 20:44–45: “eighteen thousand men”, “five thousand men”, “two thousand men”; 20:46: “twenty and five thousand men that drew the sword”. 20:47: “six hundred men turned and fled”. 25,100 + 600 = 25,700; 25,000 + 600 = 25,600; the muster is 26,700. The Hebrew (WLC) has the KJV’s figures: 20:15 עֶשְׂרִ֨ים וְשִׁשָּׁ֥ה אֶ֛לֶף [twenty-six thousand]; 20:35 עֶשְׂרִ֨ים וַחֲמִשָּׁ֥ה אֶ֛לֶף וּמֵאָ֖ה אִ֑ישׁ; 20:47 שֵׁ֥שׁ מֵאֹ֖ות אִ֑ישׁ. The Brenton Greek at 20:15 has εἰκοσιτρεῖς χιλιάδες [twenty-three thousand] with the same seven hundred (ἑπτακόσιοι ἄνδρες), 25,100 at 20:35 (εἴκοσι καὶ πέντε χιλιάδας καὶ ἑκατὸν ἄνδρας) and six hundred at 20:47 (ἑξακόσιοι ἄνδρες): a muster of 23,700 against 25,700 dead and escaped. Fetched from https://bolls.life/get-text/WLC/7/20/ and https://ebible.org/grcbrent/JDG20.htm.",
+    "reasoning": "These are figures for one army in one chapter. In the KJV and Hebrew about a thousand men are neither killed nor among the survivors, and the day’s dead are stated two ways, 25,100 and 25,000. In the Greek edition the dead and the escaped outnumber the men mustered by two thousand.",
+    "scope": "Benjamin’s own losses on the first two days are not stated (20:21 and 20:25 give only Israel’s), so a thousand earlier deaths would close the KJV gap; that is a supplied figure, not a stated one. 25,000 may be 25,100 rounded. 20:48 adds further killing in the towns without a number. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 20: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG20.htm"
+      },
+      {
+        "label": "Judges 20: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/20/"
+      },
+      {
+        "label": "Judges 20: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG20.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 20:15",
+        "book": 6,
+        "chapter": 20,
+        "verse": 15
+      },
+      {
+        "label": "Judges 20:35",
+        "book": 6,
+        "chapter": 20,
+        "verse": 35
+      },
+      {
+        "label": "Judges 20:44",
+        "book": 6,
+        "chapter": 20,
+        "verse": 44
+      },
+      {
+        "label": "Judges 20:45",
+        "book": 6,
+        "chapter": 20,
+        "verse": 45
+      },
+      {
+        "label": "Judges 20:46",
+        "book": 6,
+        "chapter": 20,
+        "verse": 46
+      },
+      {
+        "label": "Judges 20:47",
+        "book": 6,
+        "chapter": 20,
+        "verse": 47
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "ehud-quarries-or-carved-images",
+    "mode": "contradictions",
+    "ref": "Judges 3:19",
+    "appliesTo": [
+      "Judges 3:19",
+      "Judges 3:26"
+    ],
+    "title": "Ehud at Gilgal: “quarries” or carved images?",
+    "status": "Context",
+    "summary": "The KJV says Ehud turned back from “the quarries” by Gilgal. The Hebrew word is the plural the KJV elsewhere renders “graven images”, and the Septuagint has “the carved things”.",
+    "text": "KJV Judges 3:19: “turned again from the quarries that were by Gilgal”; 3:26: “passed beyond the quarries”. Hebrew (WLC): 3:19 מִן־הַפְּסִילִים֙ אֲשֶׁ֣ר אֶת־הַגִּלְגָּ֔ל [from the carved images that are by Gilgal]; 3:26 עָבַ֣ר אֶת־הַפְּסִילִ֔ים. Septuagint (Brenton Greek): 3:19 ἀπὸ τῶν γλυπτῶν τῶν μετὰ τῆς Γαλγάλ [from the carved things by Galgal]; 3:26 παρῆλθε τὰ γλυπτὰ. The same Hebrew plural at Deuteronomy 7:25, פְּסִילֵ֥י אֱלֹהֵיהֶ֖ם, is “The graven images of their gods” in the KJV. Fetched from https://bolls.life/get-text/WLC/7/3/, https://ebible.org/grcbrent/JDG03.htm and https://bolls.life/get-text/WLC/5/7/.",
+    "reasoning": "Hebrew and Greek agree against the KJV. On their wording, carved images stood near Gilgal, Israel’s first camp in the land, in the time of the judges; the KJV’s “quarries” removes that.",
+    "scope": "The verses do not say whose images these were or who made them, so no violation is claimed. A shared Hebrew word does not prove the same kind of object in both books. Brenton’s own English translation prints “quarries” beside this Greek. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 3: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG03.htm"
+      },
+      {
+        "label": "Deuteronomy 7: KJV",
+        "url": "https://ebible.org/eng-kjv/DEU07.htm"
+      },
+      {
+        "label": "Judges 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/3/"
+      },
+      {
+        "label": "Deuteronomy 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/5/7/"
+      },
+      {
+        "label": "Judges 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 3:19",
+        "book": 6,
+        "chapter": 3,
+        "verse": 19
+      },
+      {
+        "label": "Judges 3:26",
+        "book": 6,
+        "chapter": 3,
+        "verse": 26
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "H",
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "ehud-lefthanded-or-ambidextrous",
+    "mode": "contradictions",
+    "ref": "Judges 3:15",
+    "appliesTo": [
+      "Judges 3:15",
+      "Judges 20:16"
+    ],
+    "title": "Left-handed, or able to use both hands?",
+    "status": "Context",
+    "summary": "The KJV calls Ehud and seven hundred Benjamite slingers “lefthanded”. The Hebrew says, word for word, “bound in his right hand”. The Septuagint says “ambidextrous”.",
+    "text": "KJV Judges 3:15: “a Benjamite, a man lefthanded”; 20:16: “seven hundred chosen men lefthanded”. Hebrew (WLC), both verses: אִ֥ישׁ אִטֵּ֖ר יַד־יְמִינֹ֑ו [a man bound, or restricted, in his right hand]; אִטֵּ֖ר יַד־יְמִינֹ֑ו. Septuagint (Brenton Greek): 3:15 ἄνδρα ἀμφοτεροδέξιον [a man with two right hands, ambidextrous]; 20:16 ἀμφοτεροδέξιοι. Fetched from https://bolls.life/get-text/WLC/7/3/, https://bolls.life/get-text/WLC/7/20/, https://ebible.org/grcbrent/JDG03.htm and https://ebible.org/grcbrent/JDG20.htm.",
+    "reasoning": "The Greek gives the men full use of both hands; the Hebrew phrase speaks of a limit on the right hand; the KJV says left-handed. The Greek and the KJV describe different abilities.",
+    "scope": "The KJV’s “lefthanded” is a fair rendering of the Hebrew idiom, so no H tag is proposed; the difference tagged is between the Greek and the KJV. Whether the Hebrew phrase means a disability, a trained habit or plain left-handedness is not settled by its wording. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 3: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG03.htm"
+      },
+      {
+        "label": "Judges 20: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG20.htm"
+      },
+      {
+        "label": "Judges 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/3/"
+      },
+      {
+        "label": "Judges 20: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/20/"
+      },
+      {
+        "label": "Judges 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG03.htm"
+      },
+      {
+        "label": "Judges 20: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG20.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 3:15",
+        "book": 6,
+        "chapter": 3,
+        "verse": 15
+      },
+      {
+        "label": "Judges 20:16",
+        "book": 6,
+        "chapter": 20,
+        "verse": 16
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "maonites-or-midian",
+    "mode": "contradictions",
+    "ref": "Judges 10:12",
+    "appliesTo": [
+      "Judges 10:12"
+    ],
+    "title": "Past oppressors: Maonites or Midian?",
+    "status": "Context",
+    "summary": "In God’s list of peoples he saved Israel from, the KJV and the Hebrew name Maon; the Septuagint names Midian.",
+    "text": "KJV Judges 10:12: “The Zidonians also, and the Amalekites, and the Maonites, did oppress you”. Hebrew (WLC): וְצִידֹונִ֤ים וַֽעֲמָלֵק֙ וּמָעֹ֔ון [and Sidonians and Amalek and Maon]. Septuagint (Brenton Greek): καὶ Σιδωνίων, καὶ Ἀμαλὲκ, καὶ Μαδιὰμ [and Sidonians and Amalek and Madiam, Midian]. Fetched from https://bolls.life/get-text/WLC/7/10/ and https://ebible.org/grcbrent/JDG10.htm.",
+    "reasoning": "The two traditions name different peoples in the same list. Judges 6–8 narrates a Midianite oppression and deliverance, which the Greek reading would recall.",
+    "scope": "That no Maonite oppression is narrated earlier is an observation about what the book tells, not proof that none was meant. Do not claim either reading is original. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "sources": [
+      {
+        "label": "Judges 10: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG10.htm"
+      },
+      {
+        "label": "Judges 10: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/10/"
+      },
+      {
+        "label": "Judges 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JDG10.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 10:12",
+        "book": 6,
+        "chapter": 10,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
   }
 ]

@@ -20,7 +20,11 @@ for(const b of books){
    for(const item of result.items){assert(verses.has(item.verse));assert(item.summary&&item.text&&item.sources.length);const key=`${item.id||item.title||item.summary}:${item.verse}`;assert(!seen.has(key),`Duplicate ${key}`);seen.add(key);}
    for(const e of evidence.filter(e=>e.mode===mode)){
     for(const ref of new Set(e.appliesTo||[e.ref])){const p=refParts(ref);if(p.book!==b.id||p.chapter!==ch)continue;
-     assert(result.items.some(item=>item.verse===p.verse&&(e.id?item.id===e.id:item.summary===e.summary)),`Missing ${ref} ${mode}`);annotationTargets++;
+     const published=result.items.find(item=>item.verse===p.verse&&(e.id?item.id===e.id:item.summary===e.summary));
+     assert(published,`Missing ${ref} ${mode}`);
+     if(e.tags)assert.deepEqual(published.tags,e.tags,`Lost language tags at ${ref}`);
+     if(e.languageContext)assert.equal(published.languageContext,e.languageContext,`Lost edition context at ${ref}`);
+     annotationTargets++;
     }
    }
   }
