@@ -537,7 +537,8 @@ const EVIDENCE=[
     "ref": "Exodus 20:11",
     "appliesTo": [
       "Exodus 20:11",
-      "Deuteronomy 5:15"
+      "Deuteronomy 5:15",
+      "Exodus 31:17"
     ],
     "title": "Two reasons for the Sabbath",
     "status": "Context",
@@ -553,6 +554,10 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 5 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU05.htm"
+      },
+      {
+        "label": "Exodus 31 · creation rationale repeated",
+        "url": "https://ebible.org/eng-kjv/EXO31.htm"
       }
     ],
     "refs": [
@@ -567,6 +572,12 @@ const EVIDENCE=[
         "chapter": 5,
         "verse": 15,
         "label": "Deuteronomy 5:15"
+      },
+      {
+        "label": "Exodus 31:17",
+        "book": 1,
+        "chapter": 31,
+        "verse": 17
       }
     ],
     "checked": "2026-10-11"
@@ -6713,6 +6724,590 @@ const EVIDENCE=[
       {
         "label": "Exodus 24 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO24.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-commanded-cherubim",
+    "mode": "contradictions",
+    "ref": "Exodus 20:4",
+    "appliesTo": [
+      "Exodus 20:4",
+      "Exodus 20:5",
+      "Exodus 25:18",
+      "Exodus 25:19",
+      "Exodus 25:20",
+      "Exodus 25:22",
+      "Exodus 26:1",
+      "Exodus 26:31"
+    ],
+    "title": "The image prohibition and commanded cherubim",
+    "status": "Context",
+    "summary": "The law prohibits images and their worship; sanctuary instructions also require cherubim.",
+    "text": "Exodus 20:4–5 prohibits making likenesses and bowing to or serving them. Exodus 25 orders two golden cherubim, while chapter 26 places cherubim on fabric.",
+    "reasoning": "The commands create a real interpretive question for a ban understood to prohibit every depiction. Reading the prohibition as directed at cult images or worship distinguishes these sanctuary decorations, but that is an interpretation of its scope.",
+    "scope": "This comparison identifies the wording and a contextual reading; it does not establish that every ancient reader applied the same distinction or settle the ethics of religious imagery.",
+    "refs": [
+      {
+        "label": "Exodus 20:4",
+        "book": 1,
+        "chapter": 20,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 20:5",
+        "book": 1,
+        "chapter": 20,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 25:18",
+        "book": 1,
+        "chapter": 25,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 25:19",
+        "book": 1,
+        "chapter": 25,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 25:20",
+        "book": 1,
+        "chapter": 25,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 25:22",
+        "book": 1,
+        "chapter": 25,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 26:1",
+        "book": 1,
+        "chapter": 26,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 26:31",
+        "book": 1,
+        "chapter": 26,
+        "verse": 31
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 20 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO20.htm"
+      },
+      {
+        "label": "Exodus 25 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO25.htm"
+      },
+      {
+        "label": "Exodus 26 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO26.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-curtain-layers",
+    "mode": "contradictions",
+    "ref": "Exodus 26:1",
+    "appliesTo": [
+      "Exodus 26:1",
+      "Exodus 26:2",
+      "Exodus 26:7",
+      "Exodus 26:8",
+      "Exodus 26:9",
+      "Exodus 26:12",
+      "Exodus 26:13",
+      "Exodus 26:14"
+    ],
+    "title": "Ten curtains and eleven curtains describe different layers",
+    "status": "Context",
+    "summary": "The differing curtain totals refer to linen and an outer goats’ hair covering.",
+    "text": "The first set has ten linen curtains, each 28 cubits long. The next set has eleven goats’ hair curtains, each 30 cubits long, with surplus folded or hanging over the structure.",
+    "reasoning": "The passage names different materials and describes the second set as a covering. Treating both totals as counts of one identical set removes those contextual distinctions.",
+    "scope": "This resolves that particular numerical comparison within the instructions. It does not independently verify construction or establish the precise modern length of a cubit.",
+    "refs": [
+      {
+        "label": "Exodus 26:1",
+        "book": 1,
+        "chapter": 26,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 26:2",
+        "book": 1,
+        "chapter": 26,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 26:7",
+        "book": 1,
+        "chapter": 26,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 26:8",
+        "book": 1,
+        "chapter": 26,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 26:9",
+        "book": 1,
+        "chapter": 26,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 26:12",
+        "book": 1,
+        "chapter": 26,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 26:13",
+        "book": 1,
+        "chapter": 26,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 26:14",
+        "book": 1,
+        "chapter": 26,
+        "verse": 14
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 26 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO26.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-continuous-service",
+    "mode": "history",
+    "ref": "Exodus 27:20",
+    "appliesTo": [
+      "Exodus 27:20",
+      "Exodus 27:21",
+      "Exodus 29:38",
+      "Exodus 29:39",
+      "Exodus 29:41",
+      "Exodus 29:42",
+      "Exodus 30:7",
+      "Exodus 30:8"
+    ],
+    "title": "Continual service includes recurring morning and evening duties",
+    "status": "Context",
+    "summary": "The stated schedules help explain language about continual lamps, offerings and incense.",
+    "text": "The lamp instructions specify evening to morning. The daily offering has morning and evening lambs, and incense is tied to morning lamp care and evening lighting.",
+    "reasoning": "In this context, continual service includes repeated scheduled observance. The wording alone should not be treated as proof that every lamp burned uninterrupted for all 24 hours.",
+    "scope": "This is a contextual reading of ritual instructions, not evidence of actual historical observance or a technical reconstruction of lamp operation.",
+    "refs": [
+      {
+        "label": "Exodus 27:20",
+        "book": 1,
+        "chapter": 27,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 27:21",
+        "book": 1,
+        "chapter": 27,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 29:38",
+        "book": 1,
+        "chapter": 29,
+        "verse": 38
+      },
+      {
+        "label": "Exodus 29:39",
+        "book": 1,
+        "chapter": 29,
+        "verse": 39
+      },
+      {
+        "label": "Exodus 29:41",
+        "book": 1,
+        "chapter": 29,
+        "verse": 41
+      },
+      {
+        "label": "Exodus 29:42",
+        "book": 1,
+        "chapter": 29,
+        "verse": 42
+      },
+      {
+        "label": "Exodus 30:7",
+        "book": 1,
+        "chapter": 30,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 30:8",
+        "book": 1,
+        "chapter": 30,
+        "verse": 8
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 27 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO27.htm"
+      },
+      {
+        "label": "Exodus 29 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO29.htm"
+      },
+      {
+        "label": "Exodus 30 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO30.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-priestly-tribal-memorial",
+    "mode": "history",
+    "ref": "Exodus 28:9",
+    "appliesTo": [
+      "Exodus 28:9",
+      "Exodus 28:10",
+      "Exodus 28:11",
+      "Exodus 28:12",
+      "Exodus 28:17",
+      "Exodus 28:21",
+      "Exodus 28:29",
+      "Exodus 28:30"
+    ],
+    "title": "Priestly clothing represents the tribes",
+    "status": "Context",
+    "summary": "Tribal names appear on shoulder stones and the breastplate as memorials.",
+    "text": "Chapter 28 connects engraved names on two shoulder stones and twelve breastplate stones with Aaron bearing Israel’s names before God. It also names the Urim and Thummim.",
+    "reasoning": "The text supplies a representative purpose for the names, but does not explain the objects or operating procedure of the Urim and Thummim. A precise mechanism would require further evidence.",
+    "scope": "The symbolism is explicit in the passage. It does not authenticate surviving artifacts, establish exact gemstone identifications or prove a particular divination technique.",
+    "refs": [
+      {
+        "label": "Exodus 28:9",
+        "book": 1,
+        "chapter": 28,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 28:10",
+        "book": 1,
+        "chapter": 28,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 28:11",
+        "book": 1,
+        "chapter": 28,
+        "verse": 11
+      },
+      {
+        "label": "Exodus 28:12",
+        "book": 1,
+        "chapter": 28,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 28:17",
+        "book": 1,
+        "chapter": 28,
+        "verse": 17
+      },
+      {
+        "label": "Exodus 28:21",
+        "book": 1,
+        "chapter": 28,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 28:29",
+        "book": 1,
+        "chapter": 28,
+        "verse": 29
+      },
+      {
+        "label": "Exodus 28:30",
+        "book": 1,
+        "chapter": 28,
+        "verse": 30
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 28 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO28.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-ordination-blood",
+    "mode": "history",
+    "ref": "Exodus 29:4",
+    "appliesTo": [
+      "Exodus 29:4",
+      "Exodus 29:7",
+      "Exodus 29:20",
+      "Exodus 29:21",
+      "Exodus 29:29",
+      "Exodus 29:30",
+      "Exodus 29:32",
+      "Exodus 29:33",
+      "Exodus 29:34",
+      "Exodus 29:35"
+    ],
+    "title": "Ordination uses water, oil, blood and a restricted meal",
+    "status": "Context",
+    "summary": "The ceremony distinguishes priestly consecration from ordinary eating and dress.",
+    "text": "The instructions combine washing, anointing, blood placed on the right ear, thumb and toe, garments, a sacred meal and seven days of consecration. Outsiders cannot eat the meal; leftovers are burned.",
+    "reasoning": "These actions are presented as consecration. The passage does not assign a separate symbolic meaning to each body part or explain the restrictions as food safety measures.",
+    "scope": "This describes the ritual as written. Specific symbolic explanations, public health benefits and actual historical performance require additional evidence.",
+    "refs": [
+      {
+        "label": "Exodus 29:4",
+        "book": 1,
+        "chapter": 29,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 29:7",
+        "book": 1,
+        "chapter": 29,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 29:20",
+        "book": 1,
+        "chapter": 29,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 29:21",
+        "book": 1,
+        "chapter": 29,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 29:29",
+        "book": 1,
+        "chapter": 29,
+        "verse": 29
+      },
+      {
+        "label": "Exodus 29:30",
+        "book": 1,
+        "chapter": 29,
+        "verse": 30
+      },
+      {
+        "label": "Exodus 29:32",
+        "book": 1,
+        "chapter": 29,
+        "verse": 32
+      },
+      {
+        "label": "Exodus 29:33",
+        "book": 1,
+        "chapter": 29,
+        "verse": 33
+      },
+      {
+        "label": "Exodus 29:34",
+        "book": 1,
+        "chapter": 29,
+        "verse": 34
+      },
+      {
+        "label": "Exodus 29:35",
+        "book": 1,
+        "chapter": 29,
+        "verse": 35
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 29 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO29.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-census-ransom",
+    "mode": "history",
+    "ref": "Exodus 30:12",
+    "appliesTo": [
+      "Exodus 30:12",
+      "Exodus 30:13",
+      "Exodus 30:14",
+      "Exodus 30:15",
+      "Exodus 30:16"
+    ],
+    "title": "The census contribution is a fixed amount",
+    "status": "Context",
+    "summary": "Those counted from age twenty owe the same half-shekel contribution.",
+    "text": "The passage links counting, a ransom contribution, avoidance of plague and tabernacle service. Rich and poor are assigned the same amount.",
+    "reasoning": "The contribution is explicitly fixed, rather than proportional to wealth. The plague language is a religious claim within the law, not an independently demonstrated causal link.",
+    "scope": "This does not establish historical collection rates, modern monetary value or an empirically tested way of preventing disease.",
+    "refs": [
+      {
+        "label": "Exodus 30:12",
+        "book": 1,
+        "chapter": 30,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 30:13",
+        "book": 1,
+        "chapter": 30,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 30:14",
+        "book": 1,
+        "chapter": 30,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 30:15",
+        "book": 1,
+        "chapter": 30,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 30:16",
+        "book": 1,
+        "chapter": 30,
+        "verse": 16
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 30 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO30.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-priestly-washing",
+    "mode": "science",
+    "ref": "Exodus 30:18",
+    "appliesTo": [
+      "Exodus 30:18",
+      "Exodus 30:19",
+      "Exodus 30:20",
+      "Exodus 30:21"
+    ],
+    "title": "Ritual washing is not a stated germ theory",
+    "status": "Context",
+    "summary": "Priests wash hands and feet before service; the passage frames the requirement as sacred duty.",
+    "text": "The basin is positioned near the sanctuary and altar. Priests must wash before entering or ministering, with a death warning attached.",
+    "reasoning": "Washing can have practical effects, but this text provides no account of pathogens, treatment efficacy or controlled comparison. Its own explanation concerns priestly service.",
+    "scope": "The passage cannot by itself verify germ theory, quantify sanitation benefits or demonstrate the cause of threatened death.",
+    "refs": [
+      {
+        "label": "Exodus 30:18",
+        "book": 1,
+        "chapter": 30,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 30:19",
+        "book": 1,
+        "chapter": 30,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 30:20",
+        "book": 1,
+        "chapter": 30,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 30:21",
+        "book": 1,
+        "chapter": 30,
+        "verse": 21
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 30 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO30.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-sabbath-sanction",
+    "mode": "history",
+    "ref": "Exodus 31:13",
+    "appliesTo": [
+      "Exodus 31:13",
+      "Exodus 31:14",
+      "Exodus 31:15",
+      "Exodus 31:16",
+      "Exodus 31:17"
+    ],
+    "title": "The Sabbath is a covenant sign with a death penalty",
+    "status": "Context",
+    "summary": "The Sabbath command here includes covenant identity and severe sanctions.",
+    "text": "Chapter 31 calls Sabbath observance a sign between God and Israel and prescribes death for working on it. Its rationale recalls creation and divine rest.",
+    "reasoning": "A statement of prescribed punishment is distinct from evidence showing how often, where or when it was enforced. Describing the law also does not endorse its penalty.",
+    "scope": "The text establishes the rule as narrated; historical enforcement and ethical evaluation require separate analysis.",
+    "refs": [
+      {
+        "label": "Exodus 31:13",
+        "book": 1,
+        "chapter": 31,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 31:14",
+        "book": 1,
+        "chapter": 31,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 31:15",
+        "book": 1,
+        "chapter": 31,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 31:16",
+        "book": 1,
+        "chapter": 31,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 31:17",
+        "book": 1,
+        "chapter": 31,
+        "verse": 17
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 31 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO31.htm"
       }
     ],
     "checked": "2026-10-12"
