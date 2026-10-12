@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 217,
+    "evidenceRecords": 219,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 236,
-    "annotatedVerses": 2074
+    "chaptersWithAnnotations": 243,
+    "annotatedVerses": 2114
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 6,
-      "annotatedVerses": 19
+      "chaptersWithAnnotations": 7,
+      "annotatedVerses": 22
     },
     {
       "book": "Exodus",
@@ -39,14 +39,14 @@
     {
       "book": "Deuteronomy",
       "chapters": 34,
-      "chaptersWithAnnotations": 32,
-      "annotatedVerses": 314
+      "chaptersWithAnnotations": 34,
+      "annotatedVerses": 327
     },
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 3
+      "chaptersWithAnnotations": 6,
+      "annotatedVerses": 25
     },
     {
       "book": "Judges",
@@ -357,14 +357,14 @@
     {
       "book": "Hebrews",
       "chapters": 13,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 6
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 7
     },
     {
       "book": "James",
       "chapters": 5,
       "chaptersWithAnnotations": 1,
-      "annotatedVerses": 10
+      "annotatedVerses": 11
     },
     {
       "book": "1 Peter",
@@ -903,9 +903,17 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 49,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-levi-blessing-and-rebuke"
+      ],
+      "annotatedVerses": [
+        5,
+        6,
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -4633,9 +4641,12 @@
       "chapter": 31,
       "annotationIds": [
         "deuteronomy-presence-promise-and-warning",
-        "deuteronomy-law-custody-and-reading"
+        "deuteronomy-law-custody-and-reading",
+        "deuteronomy-moses-capacity-and-vigor"
       ],
       "annotatedVerses": [
+        2,
+        3,
         6,
         8,
         9,
@@ -4680,36 +4691,90 @@
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 33,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-levi-blessing-and-rebuke"
+      ],
+      "annotatedVerses": [
+        1,
+        8,
+        9,
+        10,
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 34,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-law-custody-and-reading",
+        "deuteronomy-moses-capacity-and-vigor"
+      ],
+      "annotatedVerses": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "modes": [
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Joshua",
       "bookId": 5,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-presence-promise-and-warning",
+        "deuteronomy-law-custody-and-reading"
+      ],
+      "annotatedVerses": [
+        5,
+        7,
+        8,
+        9
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Joshua",
       "bookId": 5,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest",
+        "coverage-nt-faith-works"
+      ],
+      "annotatedVerses": [
+        1,
+        4,
+        5,
+        6,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -4743,9 +4808,18 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest"
+      ],
+      "annotatedVerses": [
+        17,
+        22,
+        23,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14145,9 +14219,15 @@
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "coverage-nt-faith-works"
+      ],
+      "annotatedVerses": [
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14195,6 +14275,7 @@
         22,
         23,
         24,
+        25,
         26
       ],
       "modes": [

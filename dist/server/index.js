@@ -1019,13 +1019,25 @@ const EVIDENCE=[
       "Deuteronomy 7:24",
       "Deuteronomy 20:16",
       "Deuteronomy 20:17",
-      "Deuteronomy 20:18"
+      "Deuteronomy 20:18",
+      "Joshua 2:12",
+      "Joshua 2:13",
+      "Joshua 2:14",
+      "Joshua 2:17",
+      "Joshua 2:18",
+      "Joshua 2:19",
+      "Joshua 2:20",
+      "Joshua 2:21",
+      "Joshua 6:17",
+      "Joshua 6:22",
+      "Joshua 6:23",
+      "Joshua 6:25"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion.",
-    "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath.",
+    "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed. This explicit exception qualifies an unqualified reading of destruction language; it does not by itself establish the historical extent of conquest or resolve the moral assessment of the killings.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
     "sources": [
       {
@@ -1059,56 +1071,64 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 20 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU20.htm"
+      },
+      {
+        "label": "Joshua 2 · conditional household oath",
+        "url": "https://ebible.org/eng-kjv/JOS02.htm"
+      },
+      {
+        "label": "Joshua 6 · explicit Rahab exception",
+        "url": "https://ebible.org/eng-kjv/JOS06.htm"
       }
     ],
     "refs": [
       {
+        "label": "Joshua 10:40",
         "book": 5,
         "chapter": 10,
-        "verse": 40,
-        "label": "Joshua 10:40"
+        "verse": 40
       },
       {
+        "label": "Joshua 11:23",
         "book": 5,
         "chapter": 11,
-        "verse": 23,
-        "label": "Joshua 11:23"
+        "verse": 23
       },
       {
+        "label": "Joshua 15:63",
         "book": 5,
         "chapter": 15,
-        "verse": 63,
-        "label": "Joshua 15:63"
+        "verse": 63
       },
       {
+        "label": "Judges 1:19",
         "book": 6,
         "chapter": 1,
-        "verse": 19,
-        "label": "Judges 1:19"
+        "verse": 19
       },
       {
+        "label": "Judges 1:21",
         "book": 6,
         "chapter": 1,
-        "verse": 21,
-        "label": "Judges 1:21"
+        "verse": 21
       },
       {
+        "label": "Judges 1:27",
         "book": 6,
         "chapter": 1,
-        "verse": 27,
-        "label": "Judges 1:27"
+        "verse": 27
       },
       {
+        "label": "Judges 1:29",
         "book": 6,
         "chapter": 1,
-        "verse": 29,
-        "label": "Judges 1:29"
+        "verse": 29
       },
       {
+        "label": "Judges 1:32",
         "book": 6,
         "chapter": 1,
-        "verse": 32,
-        "label": "Judges 1:32"
+        "verse": 32
       },
       {
         "label": "Exodus 23:29",
@@ -1217,6 +1237,78 @@ const EVIDENCE=[
         "book": 4,
         "chapter": 20,
         "verse": 18
+      },
+      {
+        "label": "Joshua 2:12",
+        "book": 5,
+        "chapter": 2,
+        "verse": 12
+      },
+      {
+        "label": "Joshua 2:13",
+        "book": 5,
+        "chapter": 2,
+        "verse": 13
+      },
+      {
+        "label": "Joshua 2:14",
+        "book": 5,
+        "chapter": 2,
+        "verse": 14
+      },
+      {
+        "label": "Joshua 2:17",
+        "book": 5,
+        "chapter": 2,
+        "verse": 17
+      },
+      {
+        "label": "Joshua 2:18",
+        "book": 5,
+        "chapter": 2,
+        "verse": 18
+      },
+      {
+        "label": "Joshua 2:19",
+        "book": 5,
+        "chapter": 2,
+        "verse": 19
+      },
+      {
+        "label": "Joshua 2:20",
+        "book": 5,
+        "chapter": 2,
+        "verse": 20
+      },
+      {
+        "label": "Joshua 2:21",
+        "book": 5,
+        "chapter": 2,
+        "verse": 21
+      },
+      {
+        "label": "Joshua 6:17",
+        "book": 5,
+        "chapter": 6,
+        "verse": 17
+      },
+      {
+        "label": "Joshua 6:22",
+        "book": 5,
+        "chapter": 6,
+        "verse": 22
+      },
+      {
+        "label": "Joshua 6:23",
+        "book": 5,
+        "chapter": 6,
+        "verse": 23
+      },
+      {
+        "label": "Joshua 6:25",
+        "book": 5,
+        "chapter": 6,
+        "verse": 25
       }
     ],
     "checked": "2026-10-12"
@@ -2270,13 +2362,21 @@ const EVIDENCE=[
       "James 2:22",
       "James 2:23",
       "James 2:24",
-      "James 2:26"
+      "James 2:26",
+      "Joshua 2:1",
+      "Joshua 2:4",
+      "Joshua 2:5",
+      "Joshua 2:6",
+      "Joshua 2:15",
+      "Joshua 2:16",
+      "James 2:25",
+      "Hebrews 11:31"
     ],
     "title": "Faith and works in Romans and James",
     "summary": "Romans rejects justification by works of the law; James rejects faith without action.",
-    "text": "Romans emphasizes justification apart from deeds of the law. James describes aid to the needy and Abraham's action as evidence that faith is alive.",
+    "text": "Romans emphasizes justification apart from deeds of the law. James describes aid to the needy and Abraham's action as evidence that faith is alive. Rahab provides another linked example: Joshua 2 describes receiving, hiding and redirecting the spies. Hebrews 11:31 associates her survival with faith and receiving them; James 2:25 cites receiving and sending them another way as works.",
     "reasoning": "The wording is in tension, but the immediate arguments target different problems: reliance on law and an inactive profession of belief.",
-    "scope": "Whether these are complementary definitions or divergent emphases is interpretive. The comparison does not establish a scientific claim.",
+    "scope": "Whether these are complementary definitions or divergent emphases is interpretive. The comparison does not establish a scientific claim. These later commendations do not explicitly endorse every statement Rahab made to the pursuers, and reception and action need not be mutually exclusive explanations.",
     "sources": [
       {
         "label": "Romans 3 (primary text)",
@@ -2285,95 +2385,155 @@ const EVIDENCE=[
       {
         "label": "James 2 (primary text)",
         "url": "https://ebible.org/kjv/JAS02.htm"
+      },
+      {
+        "label": "Joshua 2 · Rahab’s actions",
+        "url": "https://ebible.org/eng-kjv/JOS02.htm"
+      },
+      {
+        "label": "James 2 · Rahab and works",
+        "url": "https://ebible.org/eng-kjv/JAS02.htm"
+      },
+      {
+        "label": "Hebrews 11 · Rahab and faith",
+        "url": "https://ebible.org/eng-kjv/HEB11.htm"
       }
     ],
     "refs": [
       {
+        "label": "Romans 3:20",
         "book": 44,
         "chapter": 3,
-        "verse": 20,
-        "label": "Romans 3:20"
+        "verse": 20
       },
       {
+        "label": "Romans 3:27",
         "book": 44,
         "chapter": 3,
-        "verse": 27,
-        "label": "Romans 3:27"
+        "verse": 27
       },
       {
+        "label": "Romans 3:28",
         "book": 44,
         "chapter": 3,
-        "verse": 28,
-        "label": "Romans 3:28"
+        "verse": 28
       },
       {
+        "label": "Romans 3:29",
         "book": 44,
         "chapter": 3,
-        "verse": 29,
-        "label": "Romans 3:29"
+        "verse": 29
       },
       {
+        "label": "Romans 3:30",
         "book": 44,
         "chapter": 3,
-        "verse": 30,
-        "label": "Romans 3:30"
+        "verse": 30
       },
       {
+        "label": "Romans 3:31",
         "book": 44,
         "chapter": 3,
-        "verse": 31,
-        "label": "Romans 3:31"
+        "verse": 31
       },
       {
+        "label": "James 2:14",
         "book": 58,
         "chapter": 2,
-        "verse": 14,
-        "label": "James 2:14"
+        "verse": 14
       },
       {
+        "label": "James 2:17",
         "book": 58,
         "chapter": 2,
-        "verse": 17,
-        "label": "James 2:17"
+        "verse": 17
       },
       {
+        "label": "James 2:18",
         "book": 58,
         "chapter": 2,
-        "verse": 18,
-        "label": "James 2:18"
+        "verse": 18
       },
       {
+        "label": "James 2:21",
         "book": 58,
         "chapter": 2,
-        "verse": 21,
-        "label": "James 2:21"
+        "verse": 21
       },
       {
+        "label": "James 2:22",
         "book": 58,
         "chapter": 2,
-        "verse": 22,
-        "label": "James 2:22"
+        "verse": 22
       },
       {
+        "label": "James 2:23",
         "book": 58,
         "chapter": 2,
-        "verse": 23,
-        "label": "James 2:23"
+        "verse": 23
       },
       {
+        "label": "James 2:24",
         "book": 58,
         "chapter": 2,
-        "verse": 24,
-        "label": "James 2:24"
+        "verse": 24
       },
       {
+        "label": "James 2:26",
         "book": 58,
         "chapter": 2,
-        "verse": 26,
-        "label": "James 2:26"
+        "verse": 26
+      },
+      {
+        "label": "Joshua 2:1",
+        "book": 5,
+        "chapter": 2,
+        "verse": 1
+      },
+      {
+        "label": "Joshua 2:4",
+        "book": 5,
+        "chapter": 2,
+        "verse": 4
+      },
+      {
+        "label": "Joshua 2:5",
+        "book": 5,
+        "chapter": 2,
+        "verse": 5
+      },
+      {
+        "label": "Joshua 2:6",
+        "book": 5,
+        "chapter": 2,
+        "verse": 6
+      },
+      {
+        "label": "Joshua 2:15",
+        "book": 5,
+        "chapter": 2,
+        "verse": 15
+      },
+      {
+        "label": "Joshua 2:16",
+        "book": 5,
+        "chapter": 2,
+        "verse": 16
+      },
+      {
+        "label": "James 2:25",
+        "book": 58,
+        "chapter": 2,
+        "verse": 25
+      },
+      {
+        "label": "Hebrews 11:31",
+        "book": 57,
+        "chapter": 11,
+        "verse": 31
       }
     ],
-    "checked": "2026-10-11"
+    "checked": "2026-10-12"
   },
   {
     "id": "coverage-nt-collection",
@@ -19871,11 +20031,15 @@ const EVIDENCE=[
       "Deuteronomy 31:8",
       "Deuteronomy 31:16",
       "Deuteronomy 31:17",
-      "Deuteronomy 31:18"
+      "Deuteronomy 31:18",
+      "Joshua 1:5",
+      "Joshua 1:7",
+      "Joshua 1:8",
+      "Joshua 1:9"
     ],
     "status": "Context",
     "summary": "The chapter promises not to forsake its hearers, then warns of forsaking a people who abandon the covenant.",
-    "text": "Verses 6–8 encourage the present people and Joshua. Verses 16–18 describe a later turn to other gods and a corresponding withdrawal.",
+    "text": "Verses 6–8 encourage the present people and Joshua. Verses 16–18 describe a later turn to other gods and a corresponding withdrawal. Joshua 1:5,9 repeats the presence assurance in Joshua’s commission, while verses 7–8 link success to obeying the law.",
     "reasoning": "An unconditional promise for every future circumstance would conflict with the warning. Reading the assurance within covenant loyalty and distinguishing the addressed occasions can reconcile them.",
     "scope": "The condition is supplied by the surrounding warning, not stated in the assurance itself. This does not verify historical divine presence.",
     "refs": [
@@ -19908,12 +20072,40 @@ const EVIDENCE=[
         "book": 4,
         "chapter": 31,
         "verse": 18
+      },
+      {
+        "label": "Joshua 1:5",
+        "book": 5,
+        "chapter": 1,
+        "verse": 5
+      },
+      {
+        "label": "Joshua 1:7",
+        "book": 5,
+        "chapter": 1,
+        "verse": 7
+      },
+      {
+        "label": "Joshua 1:8",
+        "book": 5,
+        "chapter": 1,
+        "verse": 8
+      },
+      {
+        "label": "Joshua 1:9",
+        "book": 5,
+        "chapter": 1,
+        "verse": 9
       }
     ],
     "sources": [
       {
         "label": "Deuteronomy 31 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU31.htm"
+      },
+      {
+        "label": "Joshua 1 · assurance and obedience",
+        "url": "https://ebible.org/eng-kjv/JOS01.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -19931,12 +20123,17 @@ const EVIDENCE=[
       "Deuteronomy 31:13",
       "Deuteronomy 31:24",
       "Deuteronomy 31:25",
-      "Deuteronomy 31:26"
+      "Deuteronomy 31:26",
+      "Joshua 1:7",
+      "Joshua 1:8",
+      "Deuteronomy 34:5",
+      "Deuteronomy 34:6",
+      "Deuteronomy 34:10"
     ],
     "status": "Context",
     "summary": "The narrative attributes law writing to Moses and directs custody beside the ark and a seven-year public reading.",
-    "text": "The commanded audience includes men, women, children and resident outsiders. The text connects preservation with hearing and learning.",
-    "reasoning": "A narrative attribution to Moses is evidence of the authorship claim made within the book, rather than external verification of the surviving book’s complete composition.",
+    "text": "The commanded audience includes men, women, children and resident outsiders. The text connects preservation with hearing and learning. Joshua 1:7–8 presupposes a written law for Joshua’s obedience. Deuteronomy 34:5–6,10 narrates Moses’s death and uses retrospective time language.",
+    "reasoning": "A narrative attribution to Moses is evidence of the authorship claim made within the book, rather than external verification of the surviving book’s complete composition. The closing narrator’s perspective must be distinguished from the earlier law-writing attribution; this distinction alone does not identify an author, editor or date.",
     "scope": "This does not identify the deposited manuscript, establish its survival or show how regularly the reading occurred.",
     "refs": [
       {
@@ -19986,12 +20183,50 @@ const EVIDENCE=[
         "book": 4,
         "chapter": 31,
         "verse": 26
+      },
+      {
+        "label": "Joshua 1:7",
+        "book": 5,
+        "chapter": 1,
+        "verse": 7
+      },
+      {
+        "label": "Joshua 1:8",
+        "book": 5,
+        "chapter": 1,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 34:5",
+        "book": 4,
+        "chapter": 34,
+        "verse": 5
+      },
+      {
+        "label": "Deuteronomy 34:6",
+        "book": 4,
+        "chapter": 34,
+        "verse": 6
+      },
+      {
+        "label": "Deuteronomy 34:10",
+        "book": 4,
+        "chapter": 34,
+        "verse": 10
       }
     ],
     "sources": [
       {
         "label": "Deuteronomy 31 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU31.htm"
+      },
+      {
+        "label": "Joshua 1 · written-law instruction",
+        "url": "https://ebible.org/eng-kjv/JOS01.htm"
+      },
+      {
+        "label": "Deuteronomy 34 · retrospective ending",
+        "url": "https://ebible.org/eng-kjv/DEU34.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -20056,6 +20291,149 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 32 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU32.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-levi-blessing-and-rebuke",
+    "title": "Levi’s blessing differs from Jacob’s rebuke",
+    "summary": "Genesis rebukes Simeon and Levi together; Deuteronomy gives Levi a positive priestly blessing and no separate blessing named for Simeon.",
+    "text": "Genesis 49:5–7 condemns their violence and predicts dispersal. Deuteronomy 33:8–11 instead emphasizes Levi’s covenant loyalty, teaching and sacrifice.",
+    "reasoning": "The tribal portraits differ, but praise for a later role does not logically deny earlier wrongdoing. The two speeches also have different speakers and narrative occasions.",
+    "scope": "The omission is a feature of this blessing’s list, not proof that Simeon ceased to exist or a secure date for the poem. Historical explanations need further evidence.",
+    "ref": "Deuteronomy 33:1",
+    "mode": "contradictions",
+    "status": "Context",
+    "sources": [
+      {
+        "label": "Deuteronomy 33 · tribal blessing",
+        "url": "https://ebible.org/eng-kjv/DEU33.htm"
+      },
+      {
+        "label": "Genesis 49 · Jacob’s speech",
+        "url": "https://ebible.org/eng-kjv/GEN49.htm"
+      }
+    ],
+    "appliesTo": [
+      "Deuteronomy 33:1",
+      "Deuteronomy 33:8",
+      "Deuteronomy 33:9",
+      "Deuteronomy 33:10",
+      "Deuteronomy 33:11",
+      "Genesis 49:5",
+      "Genesis 49:6",
+      "Genesis 49:7"
+    ],
+    "refs": [
+      {
+        "label": "Deuteronomy 33:1",
+        "book": 4,
+        "chapter": 33,
+        "verse": 1
+      },
+      {
+        "label": "Deuteronomy 33:8",
+        "book": 4,
+        "chapter": 33,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 33:9",
+        "book": 4,
+        "chapter": 33,
+        "verse": 9
+      },
+      {
+        "label": "Deuteronomy 33:10",
+        "book": 4,
+        "chapter": 33,
+        "verse": 10
+      },
+      {
+        "label": "Deuteronomy 33:11",
+        "book": 4,
+        "chapter": 33,
+        "verse": 11
+      },
+      {
+        "label": "Genesis 49:5",
+        "book": 0,
+        "chapter": 49,
+        "verse": 5
+      },
+      {
+        "label": "Genesis 49:6",
+        "book": 0,
+        "chapter": 49,
+        "verse": 6
+      },
+      {
+        "label": "Genesis 49:7",
+        "book": 0,
+        "chapter": 49,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-moses-capacity-and-vigor",
+    "title": "Moses’s inability to lead and his undiminished vigor",
+    "summary": "Moses says he can no longer go out and come in; the ending says his sight and vigor remained intact.",
+    "text": "Deuteronomy 31:2 pairs his age and inability with the prohibition on crossing Jordan. Deuteronomy 34:7 describes his condition at death.",
+    "reasoning": "If the first statement means physical debility, the later description creates a tension. A reading about completing leadership duties or permission to lead across Jordan can distinguish the claims.",
+    "scope": "The leadership reading is contextual, not an explicit definition supplied in verse 31:2. These passages alone do not independently establish his age or medical condition.",
+    "ref": "Deuteronomy 31:2",
+    "mode": "contradictions",
+    "status": "Context",
+    "sources": [
+      {
+        "label": "Deuteronomy 31 · transition to Joshua",
+        "url": "https://ebible.org/eng-kjv/DEU31.htm"
+      },
+      {
+        "label": "Deuteronomy 34 · closing narrative",
+        "url": "https://ebible.org/eng-kjv/DEU34.htm"
+      }
+    ],
+    "appliesTo": [
+      "Deuteronomy 31:2",
+      "Deuteronomy 31:3",
+      "Deuteronomy 34:4",
+      "Deuteronomy 34:7",
+      "Deuteronomy 34:9"
+    ],
+    "refs": [
+      {
+        "label": "Deuteronomy 31:2",
+        "book": 4,
+        "chapter": 31,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 31:3",
+        "book": 4,
+        "chapter": 31,
+        "verse": 3
+      },
+      {
+        "label": "Deuteronomy 34:4",
+        "book": 4,
+        "chapter": 34,
+        "verse": 4
+      },
+      {
+        "label": "Deuteronomy 34:7",
+        "book": 4,
+        "chapter": 34,
+        "verse": 7
+      },
+      {
+        "label": "Deuteronomy 34:9",
+        "book": 4,
+        "chapter": 34,
+        "verse": 9
       }
     ],
     "checked": "2026-10-12"
