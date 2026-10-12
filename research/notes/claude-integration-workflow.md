@@ -2,6 +2,8 @@
 
 Claude is the sole researcher. Codex verifies only quoted scripture in data/chapters.json, Hebrew/Greek quotations at supplied addresses, and fair interpretation limits; checks duplicates, integrates, tests and publishes. No independent chapter reading or searches for new findings. Applies to subsequent automation runs too.
 
+Direct owner ruling for the Ruth batch, 2026-10-12: DROP Septuagint additions that state nothing the KJV does not already state elsewhere in the same passage. Hold orpah-returned-to-her-people-greek. This ruling is supplied directly in this chat, not inferred from a researcher note.
+
 Deliver a JSON array of complete data/evidence.json records in research/claude-drafts/. Keep the existing schema and mode (history, contradictions or science), and add tags: ["H"], ["G"], ["V"] or multiple qualifying tags. Single tag is also supported. Optional languageContext names the specific edition/tradition. H: Hebrew comparison; G: Greek comparison; V: applicable law clearly broken and unchecked, with supporting evidence and limits. State whether G concerns Septuagint OT or Greek NT. Include named edition, supplied quote address, exact original-language wording and KJV excerpt in text; do not rely on a search snippet. Keep stable IDs for extensions. Mark proposals as drafts until accepted.
 
 Do not tag differences in synonymous English words as a Hebrew mistranslation without a demonstrated meaning difference. A shared root alone does not settle context (for example testing God at Massah versus requesting reassurance). A digital named edition is not proof that every manuscript agrees. Absence from a short passage is not proof of no rebuke anywhere in the Bible. Retain these limits in ready records.
