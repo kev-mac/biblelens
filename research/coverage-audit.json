@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 100,
+    "evidenceRecords": 104,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 120,
-    "annotatedVerses": 637
+    "chaptersWithAnnotations": 123,
+    "annotatedVerses": 683
   },
   "byBook": [
     {
@@ -21,8 +21,8 @@
     {
       "book": "Exodus",
       "chapters": 40,
-      "chaptersWithAnnotations": 22,
-      "annotatedVerses": 212
+      "chaptersWithAnnotations": 25,
+      "annotatedVerses": 258
     },
     {
       "book": "Leviticus",
@@ -1427,10 +1427,12 @@
       "bookId": 1,
       "chapter": 20,
       "annotationIds": [
-        "early-sabbath"
+        "early-sabbath",
+        "exodus-command-and-penalties"
       ],
       "annotatedVerses": [
-        11
+        11,
+        13
       ],
       "modes": [
         "contradictions"
@@ -1442,13 +1444,33 @@
       "bookId": 1,
       "chapter": 21,
       "annotationIds": [
-        "early-servitude"
+        "early-servitude",
+        "exodus-command-and-penalties"
       ],
       "annotatedVerses": [
-        2
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        20,
+        21,
+        26,
+        27
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1456,27 +1478,75 @@
       "book": "Exodus",
       "bookId": 1,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-firstborn-redemption",
+        "exodus-command-and-penalties",
+        "exodus-burglary-restitution"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        18,
+        19,
+        20,
+        29,
+        30
+      ],
+      "modes": [
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest",
+        "exodus-impartial-judgment"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        29,
+        30,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-covenant-ratification",
+        "study-seen"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "modes": [
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

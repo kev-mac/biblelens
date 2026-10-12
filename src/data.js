@@ -17,7 +17,10 @@ const ENTRIES = [
       "Exodus 33:11",
       "John 1:18",
       "Exodus 33:20",
-      "Exodus 33:23"
+      "Exodus 33:23",
+      "Exodus 24:9",
+      "Exodus 24:10",
+      "Exodus 24:11"
     ],
     "intro": "A face-to-face encounter in Exodus meets an absolute-sounding statement in John.",
     "passages": [
@@ -37,14 +40,18 @@ const ENTRIES = [
     "claim": "SAB places accounts of seeing God beside passages denying that God can be seen.",
     "response": "GotQuestions reads “face to face” as an expression of close communion and distinguishes divine manifestations from seeing God in full glory.",
     "responseUrl": "https://www.gotquestions.org/seen-God.html",
-    "assessment": "The passages use different literary contexts. The proposed distinction is a theological interpretation; the words alone do not settle whether each author intended the same distinction.",
+    "assessment": "Exodus 24 describes a group seeing God without harm; Exodus 33 restricts seeing God’s face, and John 1 says no one has seen God. A distinction between a manifestation and full divine sight is a possible theological reading. The passages do not explicitly define one uniform distinction, so that reconciliation remains an interpretation.",
     "question": "Does “face to face” describe literal sight, an idiom, or a manifestation? Read Exodus 33:20–23 alongside verse 11.",
-    "context": "Exodus 33 includes both personal communication and a restriction on seeing God’s face. John 1 introduces the Son’s role in revealing God.",
+    "context": "Exodus 33 includes both personal communication and a restriction on seeing God’s face. John 1 introduces the Son’s role in revealing God. Exodus 24:9–11 explicitly says a group saw God and survived; this is stronger sight language than the possible idiom in Exodus 33:11.",
     "translation": "KJV and ASV preserve the central tension. “LORD” versus “Jehovah” reflects a rendering of the divine name.",
     "sources": [
       {
         "label": "Exodus 33 · primary text",
         "url": "https://ebible.org/eng-kjv/EXO33.htm"
+      },
+      {
+        "label": "Exodus 24 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO24.htm"
       }
     ],
     "reasoning": "Verse 11 compares the conversation to friends speaking. Reading that expression as direct communication rather than literal sight resolves the apparent tension with verses 20–23."

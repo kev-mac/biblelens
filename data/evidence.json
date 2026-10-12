@@ -579,12 +579,24 @@
       "Leviticus 25:45",
       "Leviticus 25:46",
       "Exodus 21:2",
-      "Deuteronomy 15:12"
+      "Deuteronomy 15:12",
+      "Exodus 21:3",
+      "Exodus 21:4",
+      "Exodus 21:5",
+      "Exodus 21:6",
+      "Exodus 21:8",
+      "Exodus 21:9",
+      "Exodus 21:10",
+      "Exodus 21:11",
+      "Exodus 21:20",
+      "Exodus 21:21",
+      "Exodus 21:26",
+      "Exodus 21:27"
     ],
     "title": "Different legal treatment of servants and slaves",
     "status": "Context",
-    "summary": "Leviticus distinguishes impoverished Israelites from foreign slaves, allowing foreign slaves to be inherited as property.",
-    "text": "Leviticus distinguishes impoverished Israelites from foreign slaves, allowing foreign slaves to be inherited as property.",
+    "summary": "The laws distinguish servants by origin and family status, preserve ownership claims, and specify some release conditions.",
+    "text": "Leviticus distinguishes impoverished Israelites from foreign slaves, allowing foreign slaves to be inherited as property. Exodus 21 also preserves a master’s claim over a provided wife and children, distinguishes immediate death from survival after beating, and orders freedom for specified injuries. These provisions regulate an unequal institution rather than abolish it.",
     "reasoning": "The temporary service protections for Israelites do not apply equally to the foreign slaves in verses 44–46. Calling every arrangement ordinary paid employment obscures that distinction.",
     "scope": "These laws are primary evidence for the text's legal categories; they do not establish how consistently those laws were practiced.",
     "sources": [
@@ -643,6 +655,78 @@
         "chapter": 15,
         "verse": 12,
         "label": "Deuteronomy 15:12"
+      },
+      {
+        "label": "Exodus 21:3",
+        "book": 1,
+        "chapter": 21,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 21:4",
+        "book": 1,
+        "chapter": 21,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 21:5",
+        "book": 1,
+        "chapter": 21,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 21:6",
+        "book": 1,
+        "chapter": 21,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 21:8",
+        "book": 1,
+        "chapter": 21,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 21:9",
+        "book": 1,
+        "chapter": 21,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 21:10",
+        "book": 1,
+        "chapter": 21,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 21:11",
+        "book": 1,
+        "chapter": 21,
+        "verse": 11
+      },
+      {
+        "label": "Exodus 21:20",
+        "book": 1,
+        "chapter": 21,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 21:21",
+        "book": 1,
+        "chapter": 21,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 21:26",
+        "book": 1,
+        "chapter": 21,
+        "verse": 26
+      },
+      {
+        "label": "Exodus 21:27",
+        "book": 1,
+        "chapter": 21,
+        "verse": 27
       }
     ],
     "checked": "2026-10-11"
@@ -699,12 +783,15 @@
       "Judges 1:21",
       "Judges 1:27",
       "Judges 1:29",
-      "Judges 1:32"
+      "Judges 1:32",
+      "Exodus 23:29",
+      "Exodus 23:30",
+      "Exodus 23:31"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
     "sources": [
@@ -723,6 +810,10 @@
       {
         "label": "Judges 1 · primary text",
         "url": "https://ebible.org/eng-kjv/JDG01.htm"
+      },
+      {
+        "label": "Exodus 23 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO23.htm"
       }
     ],
     "refs": [
@@ -773,6 +864,24 @@
         "chapter": 1,
         "verse": 32,
         "label": "Judges 1:32"
+      },
+      {
+        "label": "Exodus 23:29",
+        "book": 1,
+        "chapter": 23,
+        "verse": 29
+      },
+      {
+        "label": "Exodus 23:30",
+        "book": 1,
+        "chapter": 23,
+        "verse": 30
+      },
+      {
+        "label": "Exodus 23:31",
+        "book": 1,
+        "chapter": 23,
+        "verse": 31
       }
     ],
     "checked": "2026-10-11"
@@ -5669,12 +5778,14 @@
       "Exodus 13:12",
       "Exodus 13:13",
       "Exodus 13:14",
-      "Exodus 13:15"
+      "Exodus 13:15",
+      "Exodus 22:29",
+      "Exodus 22:30"
     ],
     "title": "Firstborn people are redeemed, not offered as animals",
     "status": "Context",
     "summary": "The firstborn dedication includes explicit redemption of human children and a separate rule for donkeys.",
-    "text": "Exodus 13:2 dedicates firstborn humans and animals. Verses 12–15 distinguish animal offerings, a donkey redeemed with a lamb or killed, and human firstborn who must be redeemed.",
+    "text": "Exodus 13:2 dedicates firstborn humans and animals. Verses 12–15 distinguish animal offerings, a donkey redeemed with a lamb or killed, and human firstborn who must be redeemed. Exodus 22:29–30 gives a general firstborn dedication command. Exodus 13:13–15 explicitly supplies human redemption, so dedication should not automatically be equated with human sacrifice.",
     "reasoning": "The general dedication must be read with the specific human-redemption rule. Verse 15 explicitly contrasts animal sacrifice with redeeming the speaker’s children.",
     "scope": "These verses establish the rule this passage gives. They do not independently reconstruct every ancient practice or settle how redemption was administered in each period.",
     "refs": [
@@ -5707,12 +5818,28 @@
         "book": 1,
         "chapter": 13,
         "verse": 15
+      },
+      {
+        "label": "Exodus 22:29",
+        "book": 1,
+        "chapter": 22,
+        "verse": 29
+      },
+      {
+        "label": "Exodus 22:30",
+        "book": 1,
+        "chapter": 22,
+        "verse": 30
       }
     ],
     "sources": [
       {
         "label": "Exodus 13 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO13.htm"
+      },
+      {
+        "label": "Exodus 22 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO22.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -6305,6 +6432,284 @@
       {
         "label": "Exodus 19 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO19.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-command-and-penalties",
+    "mode": "contradictions",
+    "ref": "Exodus 20:13",
+    "appliesTo": [
+      "Exodus 20:13",
+      "Exodus 21:12",
+      "Exodus 21:13",
+      "Exodus 21:14",
+      "Exodus 21:15",
+      "Exodus 21:16",
+      "Exodus 21:17",
+      "Exodus 22:18",
+      "Exodus 22:19",
+      "Exodus 22:20"
+    ],
+    "title": "A killing prohibition alongside death penalties",
+    "status": "Context",
+    "summary": "The command against killing appears alongside laws prescribing execution for particular offenses.",
+    "text": "Exodus 20:13 gives the brief prohibition. Exodus 21:12–17 distinguishes intentional and unpremeditated killing while prescribing death for specified offenses. Exodus 22:18–20 adds other capital prohibitions.",
+    "reasoning": "The law collection itself does not treat all taking of life as one undifferentiated category. Reading the short command as an absolute ban on every court-ordered death creates tension with its surrounding legal provisions.",
+    "scope": "This identifies a scope question within the collection. It does not settle the command’s complete lexical history, prove that the penalties were uniformly enforced, or justify these penalties by present-day ethical standards.",
+    "refs": [
+      {
+        "label": "Exodus 20:13",
+        "book": 1,
+        "chapter": 20,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 21:12",
+        "book": 1,
+        "chapter": 21,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 21:13",
+        "book": 1,
+        "chapter": 21,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 21:14",
+        "book": 1,
+        "chapter": 21,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 21:15",
+        "book": 1,
+        "chapter": 21,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 21:16",
+        "book": 1,
+        "chapter": 21,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 21:17",
+        "book": 1,
+        "chapter": 21,
+        "verse": 17
+      },
+      {
+        "label": "Exodus 22:18",
+        "book": 1,
+        "chapter": 22,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 22:19",
+        "book": 1,
+        "chapter": 22,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 22:20",
+        "book": 1,
+        "chapter": 22,
+        "verse": 20
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 20 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO20.htm"
+      },
+      {
+        "label": "Exodus 21 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO21.htm"
+      },
+      {
+        "label": "Exodus 22 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO22.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-burglary-restitution",
+    "mode": "history",
+    "ref": "Exodus 22:1",
+    "appliesTo": [
+      "Exodus 22:1",
+      "Exodus 22:2",
+      "Exodus 22:3",
+      "Exodus 22:4"
+    ],
+    "title": "Burglary rules distinguish circumstances and outcomes",
+    "status": "Context",
+    "summary": "The rules differentiate a thief killed during a break-in, daylight liability and different restitution amounts.",
+    "text": "Exodus 22:1 requires larger restitution for stolen animals killed or sold; 22:4 requires double when recovered alive. Verses 2–3 distinguish a fatal break-in encounter from one after sunrise, and describe restitution and sale when the thief cannot pay.",
+    "reasoning": "Different penalties apply to expressly different conditions. Treating fivefold, fourfold and double restitution as rival versions of one identical case ignores those conditions.",
+    "scope": "These are ancient legal provisions as presented in the text, not present-day legal advice. The text alone does not independently establish enforcement frequency or the precise rationale for every distinction.",
+    "refs": [
+      {
+        "label": "Exodus 22:1",
+        "book": 1,
+        "chapter": 22,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 22:2",
+        "book": 1,
+        "chapter": 22,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 22:3",
+        "book": 1,
+        "chapter": 22,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 22:4",
+        "book": 1,
+        "chapter": 22,
+        "verse": 4
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 22 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO22.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-impartial-judgment",
+    "mode": "contradictions",
+    "ref": "Exodus 23:1",
+    "appliesTo": [
+      "Exodus 23:1",
+      "Exodus 23:2",
+      "Exodus 23:3",
+      "Exodus 23:6",
+      "Exodus 23:7",
+      "Exodus 23:8"
+    ],
+    "title": "Protecting the poor without favoritism in court",
+    "status": "Context",
+    "summary": "The laws prohibit both favoring a poor litigant and denying the poor fair judgment.",
+    "text": "Exodus 23:1–3 rejects false testimony, following a crowd into injustice and favoring a poor person in a case. Verses 6–8 forbid distorting a poor person’s judgment, false charges and gifts that corrupt judgment.",
+    "reasoning": "The two instructions distinguish social status from the merits of a case: neither favoritism nor deprivation of justice is permitted. Their proximity supplies context for the apparent opposite emphasis.",
+    "scope": "The provisions express an ideal of judgment. Their presence does not independently prove that actual courts followed it or erase inequalities elsewhere in the law collection.",
+    "refs": [
+      {
+        "label": "Exodus 23:1",
+        "book": 1,
+        "chapter": 23,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 23:2",
+        "book": 1,
+        "chapter": 23,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 23:3",
+        "book": 1,
+        "chapter": 23,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 23:6",
+        "book": 1,
+        "chapter": 23,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 23:7",
+        "book": 1,
+        "chapter": 23,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 23:8",
+        "book": 1,
+        "chapter": 23,
+        "verse": 8
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 23 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO23.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-covenant-ratification",
+    "mode": "history",
+    "ref": "Exodus 24:3",
+    "appliesTo": [
+      "Exodus 24:3",
+      "Exodus 24:4",
+      "Exodus 24:5",
+      "Exodus 24:6",
+      "Exodus 24:7",
+      "Exodus 24:8"
+    ],
+    "title": "The covenant is narrated through reading and blood",
+    "status": "Context",
+    "summary": "Written words, public assent, an altar and blood mark the covenant ceremony.",
+    "text": "Exodus 24:3–8 describes the people agreeing, Moses writing and reading the covenant words, sacrifices, and blood applied to the altar and people. The account presents assent and ritual together.",
+    "reasoning": "The narrator links the obligations to a public ceremony rather than depicting the covenant only as a private experience. The passage attributes writing to Moses, but that narrative attribution is different from externally verifying authorship of the surviving book.",
+    "scope": "The text alone cannot authenticate the ceremony as a dated historical event, reconstruct every ritual detail or establish the authorship and transmission of the final literary work.",
+    "refs": [
+      {
+        "label": "Exodus 24:3",
+        "book": 1,
+        "chapter": 24,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 24:4",
+        "book": 1,
+        "chapter": 24,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 24:5",
+        "book": 1,
+        "chapter": 24,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 24:6",
+        "book": 1,
+        "chapter": 24,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 24:7",
+        "book": 1,
+        "chapter": 24,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 24:8",
+        "book": 1,
+        "chapter": 24,
+        "verse": 8
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 24 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO24.htm"
       }
     ],
     "checked": "2026-10-12"
