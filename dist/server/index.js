@@ -7864,14 +7864,19 @@ const EVIDENCE=[
       "Exodus 31:16",
       "Exodus 31:17",
       "Exodus 35:2",
-      "Exodus 35:3"
+      "Exodus 35:3",
+      "Numbers 15:32",
+      "Numbers 15:33",
+      "Numbers 15:34",
+      "Numbers 15:35",
+      "Numbers 15:36"
     ],
     "title": "The Sabbath is a covenant sign with a death penalty",
     "status": "Context",
     "summary": "The Sabbath command here includes covenant identity and severe sanctions.",
-    "text": "Chapter 31 calls Sabbath observance a sign between God and Israel and prescribes death for working on it. Its rationale recalls creation and divine rest. Exodus 35 repeats the death sanction and adds a prohibition on kindling fire in dwellings on the Sabbath.",
+    "text": "Chapter 31 calls Sabbath observance a sign between God and Israel and prescribes death for working on it. Its rationale recalls creation and divine rest. Exodus 35 repeats the death sanction and adds a prohibition on kindling fire in dwellings on the Sabbath. Numbers 15 narrates detention of a Sabbath wood gatherer followed by a ruling and execution by stoning.",
     "reasoning": "A statement of prescribed punishment is distinct from evidence showing how often, where or when it was enforced. Describing the law also does not endorse its penalty.",
-    "scope": "The text establishes the rule as narrated; historical enforcement and ethical evaluation require separate analysis.",
+    "scope": "The text establishes the rule as narrated; historical enforcement and ethical evaluation require separate analysis. The scene does not explicitly describe the man’s inner motive; treating the preceding defiance category as a complete motive report adds an inference.",
     "refs": [
       {
         "label": "Exodus 31:13",
@@ -7914,6 +7919,36 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 35,
         "verse": 3
+      },
+      {
+        "label": "Numbers 15:32",
+        "book": 3,
+        "chapter": 15,
+        "verse": 32
+      },
+      {
+        "label": "Numbers 15:33",
+        "book": 3,
+        "chapter": 15,
+        "verse": 33
+      },
+      {
+        "label": "Numbers 15:34",
+        "book": 3,
+        "chapter": 15,
+        "verse": 34
+      },
+      {
+        "label": "Numbers 15:35",
+        "book": 3,
+        "chapter": 15,
+        "verse": 35
+      },
+      {
+        "label": "Numbers 15:36",
+        "book": 3,
+        "chapter": 15,
+        "verse": 36
       }
     ],
     "sources": [
@@ -7924,6 +7959,10 @@ const EVIDENCE=[
       {
         "label": "Exodus 35 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO35.htm"
+      },
+      {
+        "label": "Numbers 15 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM15.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -8016,13 +8055,29 @@ const EVIDENCE=[
       "Exodus 32:32",
       "Exodus 32:33",
       "Exodus 32:34",
-      "Exodus 32:35"
+      "Exodus 32:35",
+      "Numbers 14:12",
+      "Numbers 14:15",
+      "Numbers 14:18",
+      "Numbers 14:19",
+      "Numbers 14:20",
+      "Numbers 14:22",
+      "Numbers 14:23",
+      "Numbers 14:24",
+      "Numbers 14:29",
+      "Numbers 14:30",
+      "Numbers 14:31",
+      "Numbers 14:32",
+      "Numbers 14:33",
+      "Numbers 14:34",
+      "Numbers 14:37",
+      "Numbers 14:38"
     ],
     "title": "Intercession precedes relenting, but further punishment remains",
     "status": "Context",
     "summary": "The threat of destroying the people is withdrawn; the chapter still narrates killings and plague.",
-    "text": "Moses appeals to earlier promises and God relents. Later, Levites kill about three thousand people and the narrative reports a plague.",
-    "reasoning": "Relenting from the announced destruction should not be equated with cancellation of every consequence. The account contains both intercession and severe punishment.",
+    "text": "Moses appeals to earlier promises and God relents. Later, Levites kill about three thousand people and the narrative reports a plague. Numbers 14 also narrates intercession and pardon followed by consequences: the counted, murmuring adults are excluded from the land, while Caleb, Joshua and the younger generation receive different outcomes.",
+    "reasoning": "Relenting from the announced destruction should not be equated with cancellation of every consequence. The account contains both intercession and severe punishment. In Numbers 14, pardon therefore does not mean removal of every consequence.",
     "scope": "This reports the narrative’s sequence, not an independent casualty count, diagnosis of the plague or justification of the violence. Theological conclusions about divine change require a wider comparison.",
     "refs": [
       {
@@ -8102,12 +8157,112 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 32,
         "verse": 35
+      },
+      {
+        "label": "Numbers 14:12",
+        "book": 3,
+        "chapter": 14,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 14:15",
+        "book": 3,
+        "chapter": 14,
+        "verse": 15
+      },
+      {
+        "label": "Numbers 14:18",
+        "book": 3,
+        "chapter": 14,
+        "verse": 18
+      },
+      {
+        "label": "Numbers 14:19",
+        "book": 3,
+        "chapter": 14,
+        "verse": 19
+      },
+      {
+        "label": "Numbers 14:20",
+        "book": 3,
+        "chapter": 14,
+        "verse": 20
+      },
+      {
+        "label": "Numbers 14:22",
+        "book": 3,
+        "chapter": 14,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 14:23",
+        "book": 3,
+        "chapter": 14,
+        "verse": 23
+      },
+      {
+        "label": "Numbers 14:24",
+        "book": 3,
+        "chapter": 14,
+        "verse": 24
+      },
+      {
+        "label": "Numbers 14:29",
+        "book": 3,
+        "chapter": 14,
+        "verse": 29
+      },
+      {
+        "label": "Numbers 14:30",
+        "book": 3,
+        "chapter": 14,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 14:31",
+        "book": 3,
+        "chapter": 14,
+        "verse": 31
+      },
+      {
+        "label": "Numbers 14:32",
+        "book": 3,
+        "chapter": 14,
+        "verse": 32
+      },
+      {
+        "label": "Numbers 14:33",
+        "book": 3,
+        "chapter": 14,
+        "verse": 33
+      },
+      {
+        "label": "Numbers 14:34",
+        "book": 3,
+        "chapter": 14,
+        "verse": 34
+      },
+      {
+        "label": "Numbers 14:37",
+        "book": 3,
+        "chapter": 14,
+        "verse": 37
+      },
+      {
+        "label": "Numbers 14:38",
+        "book": 3,
+        "chapter": 14,
+        "verse": 38
       }
     ],
     "sources": [
       {
         "label": "Exodus 32 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO32.htm"
+      },
+      {
+        "label": "Numbers 14 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM14.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -13465,6 +13620,413 @@ const EVIDENCE=[
       {
         "label": "Numbers 12 · primary text",
         "url": "https://ebible.org/eng-kjv/NUM12.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-spies-report-and-rhetoric",
+    "mode": "history",
+    "title": "The fearful report is a disputed speech within the narrative",
+    "ref": "Numbers 13:27",
+    "appliesTo": [
+      "Numbers 13:27",
+      "Numbers 13:28",
+      "Numbers 13:30",
+      "Numbers 13:31",
+      "Numbers 13:32",
+      "Numbers 13:33",
+      "Numbers 14:6",
+      "Numbers 14:7",
+      "Numbers 14:8",
+      "Numbers 14:9",
+      "Numbers 14:36",
+      "Numbers 14:37",
+      "Numbers 14:38"
+    ],
+    "status": "Context",
+    "summary": "The spies agree about fertility but disagree about conquest; the narrator condemns the discouraging report.",
+    "text": "The claim that all inhabitants are immense and that the spies looked like grasshoppers occurs in the disputed report. Caleb and Joshua argue for entering the land.",
+    "reasoning": "The speakers’ rhetoric should be distinguished from an independently measured population description. Their asserted knowledge of how the inhabitants saw them also is not externally verified.",
+    "scope": "This does not establish the historical size of the Anakites or settle the meaning of the KJV giants terminology. Archaeology and Hebrew literary comparison are still needed.",
+    "refs": [
+      {
+        "label": "Numbers 13:27",
+        "book": 3,
+        "chapter": 13,
+        "verse": 27
+      },
+      {
+        "label": "Numbers 13:28",
+        "book": 3,
+        "chapter": 13,
+        "verse": 28
+      },
+      {
+        "label": "Numbers 13:30",
+        "book": 3,
+        "chapter": 13,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 13:31",
+        "book": 3,
+        "chapter": 13,
+        "verse": 31
+      },
+      {
+        "label": "Numbers 13:32",
+        "book": 3,
+        "chapter": 13,
+        "verse": 32
+      },
+      {
+        "label": "Numbers 13:33",
+        "book": 3,
+        "chapter": 13,
+        "verse": 33
+      },
+      {
+        "label": "Numbers 14:6",
+        "book": 3,
+        "chapter": 14,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 14:7",
+        "book": 3,
+        "chapter": 14,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 14:8",
+        "book": 3,
+        "chapter": 14,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 14:9",
+        "book": 3,
+        "chapter": 14,
+        "verse": 9
+      },
+      {
+        "label": "Numbers 14:36",
+        "book": 3,
+        "chapter": 14,
+        "verse": 36
+      },
+      {
+        "label": "Numbers 14:37",
+        "book": 3,
+        "chapter": 14,
+        "verse": 37
+      },
+      {
+        "label": "Numbers 14:38",
+        "book": 3,
+        "chapter": 14,
+        "verse": 38
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 13 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM13.htm"
+      },
+      {
+        "label": "Numbers 14 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM14.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-ignorance-and-defiance",
+    "mode": "history",
+    "title": "Ignorance and presumptuous defiance receive different remedies",
+    "ref": "Numbers 15:22",
+    "appliesTo": [
+      "Numbers 15:22",
+      "Numbers 15:24",
+      "Numbers 15:25",
+      "Numbers 15:26",
+      "Numbers 15:27",
+      "Numbers 15:28",
+      "Numbers 15:29",
+      "Numbers 15:30",
+      "Numbers 15:31"
+    ],
+    "status": "Context",
+    "summary": "The chapter provides atonement for inadvertent offenses but prescribes exclusion for presumptuous wrongdoing.",
+    "text": "Community and individual inadvertent offenses have distinct offerings. The defiant offender is instead described as despising the divine word and being cut off; the rules include resident strangers.",
+    "reasoning": "A summary that every offense is remedied simply by an offering omits the express contrast. The individual and community procedures also should not be conflated.",
+    "scope": "This describes the stated categories, not a complete taxonomy of all offenses or proof of historical enforcement. Exact legal terminology and comparison with other collections remain open.",
+    "refs": [
+      {
+        "label": "Numbers 15:22",
+        "book": 3,
+        "chapter": 15,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 15:24",
+        "book": 3,
+        "chapter": 15,
+        "verse": 24
+      },
+      {
+        "label": "Numbers 15:25",
+        "book": 3,
+        "chapter": 15,
+        "verse": 25
+      },
+      {
+        "label": "Numbers 15:26",
+        "book": 3,
+        "chapter": 15,
+        "verse": 26
+      },
+      {
+        "label": "Numbers 15:27",
+        "book": 3,
+        "chapter": 15,
+        "verse": 27
+      },
+      {
+        "label": "Numbers 15:28",
+        "book": 3,
+        "chapter": 15,
+        "verse": 28
+      },
+      {
+        "label": "Numbers 15:29",
+        "book": 3,
+        "chapter": 15,
+        "verse": 29
+      },
+      {
+        "label": "Numbers 15:30",
+        "book": 3,
+        "chapter": 15,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 15:31",
+        "book": 3,
+        "chapter": 15,
+        "verse": 31
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 15 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM15.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-holiness-and-priestly-authority",
+    "mode": "contradictions",
+    "title": "Congregational holiness does not imply equal priestly access",
+    "ref": "Numbers 16:3",
+    "appliesTo": [
+      "Numbers 16:3",
+      "Numbers 16:5",
+      "Numbers 16:8",
+      "Numbers 16:9",
+      "Numbers 16:10",
+      "Numbers 16:35",
+      "Numbers 16:37",
+      "Numbers 16:38",
+      "Numbers 16:39",
+      "Numbers 16:40",
+      "Numbers 16:46",
+      "Numbers 16:47",
+      "Numbers 16:48"
+    ],
+    "status": "Context",
+    "summary": "The dispute turns on who may approach and offer incense, not simply whether the community is called holy.",
+    "text": "Korah’s appeal to everyone’s holiness confronts a distinction between Levite work and priesthood. Unauthorized incense offerers die; Aaron later uses incense for atonement.",
+    "reasoning": "Contrasting outcomes follow different authorization within the story. The censers remain sacred despite the offerers’ condemnation.",
+    "scope": "This explains the narrative’s authority claim; it does not establish divine selection, historical enforcement or a medical effect of incense.",
+    "refs": [
+      {
+        "label": "Numbers 16:3",
+        "book": 3,
+        "chapter": 16,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 16:5",
+        "book": 3,
+        "chapter": 16,
+        "verse": 5
+      },
+      {
+        "label": "Numbers 16:8",
+        "book": 3,
+        "chapter": 16,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 16:9",
+        "book": 3,
+        "chapter": 16,
+        "verse": 9
+      },
+      {
+        "label": "Numbers 16:10",
+        "book": 3,
+        "chapter": 16,
+        "verse": 10
+      },
+      {
+        "label": "Numbers 16:35",
+        "book": 3,
+        "chapter": 16,
+        "verse": 35
+      },
+      {
+        "label": "Numbers 16:37",
+        "book": 3,
+        "chapter": 16,
+        "verse": 37
+      },
+      {
+        "label": "Numbers 16:38",
+        "book": 3,
+        "chapter": 16,
+        "verse": 38
+      },
+      {
+        "label": "Numbers 16:39",
+        "book": 3,
+        "chapter": 16,
+        "verse": 39
+      },
+      {
+        "label": "Numbers 16:40",
+        "book": 3,
+        "chapter": 16,
+        "verse": 40
+      },
+      {
+        "label": "Numbers 16:46",
+        "book": 3,
+        "chapter": 16,
+        "verse": 46
+      },
+      {
+        "label": "Numbers 16:47",
+        "book": 3,
+        "chapter": 16,
+        "verse": 47
+      },
+      {
+        "label": "Numbers 16:48",
+        "book": 3,
+        "chapter": 16,
+        "verse": 48
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 16 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM16.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-rebellion-household-judgment",
+    "mode": "history",
+    "title": "The narrated judgment extends beyond the named leaders",
+    "ref": "Numbers 16:21",
+    "appliesTo": [
+      "Numbers 16:21",
+      "Numbers 16:22",
+      "Numbers 16:24",
+      "Numbers 16:26",
+      "Numbers 16:27",
+      "Numbers 16:30",
+      "Numbers 16:31",
+      "Numbers 16:32",
+      "Numbers 16:33",
+      "Numbers 16:49"
+    ],
+    "status": "Context",
+    "summary": "Intercession challenges a threat against everyone, yet the ensuing judgment includes households.",
+    "text": "Moses and Aaron question collective destruction. The people move away, while Dathan and Abiram stand with wives and children before the ground opens. The later plague toll is separate from the Korah episode.",
+    "reasoning": "Sparing the wider congregation does not limit the described deaths to individual leaders.",
+    "scope": "The household involvement raises an ethical question the scene does not resolve by assigning personal guilt to each child. Geological mechanism and historicity are not verified here.",
+    "refs": [
+      {
+        "label": "Numbers 16:21",
+        "book": 3,
+        "chapter": 16,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 16:22",
+        "book": 3,
+        "chapter": 16,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 16:24",
+        "book": 3,
+        "chapter": 16,
+        "verse": 24
+      },
+      {
+        "label": "Numbers 16:26",
+        "book": 3,
+        "chapter": 16,
+        "verse": 26
+      },
+      {
+        "label": "Numbers 16:27",
+        "book": 3,
+        "chapter": 16,
+        "verse": 27
+      },
+      {
+        "label": "Numbers 16:30",
+        "book": 3,
+        "chapter": 16,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 16:31",
+        "book": 3,
+        "chapter": 16,
+        "verse": 31
+      },
+      {
+        "label": "Numbers 16:32",
+        "book": 3,
+        "chapter": 16,
+        "verse": 32
+      },
+      {
+        "label": "Numbers 16:33",
+        "book": 3,
+        "chapter": 16,
+        "verse": 33
+      },
+      {
+        "label": "Numbers 16:49",
+        "book": 3,
+        "chapter": 16,
+        "verse": 49
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 16 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM16.htm"
       }
     ],
     "checked": "2026-10-12"
