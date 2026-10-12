@@ -16,6 +16,8 @@ try{
  const followup=await ask("didn't he kill a soldier that was beating a slave?",{history:[{role:'user',content:'who did moses kill?'}]});assert(followup.some(s=>s.url==='#read/1/2'));
  const judas=await ask('how did Judas die?');assert(judas.some(s=>s.url.startsWith('#read/43/1')));assert(judas.some(s=>s.url.startsWith('#read/39/27')));
  const adam=await ask('what day was adam created');assert(adam.some(s=>s.url==='#read/0/1'&&s.text.includes('sixth day')));assert(adam.some(s=>s.url==='#read/0/2'));
+ for(const wording of ['what day was mankind created','what day was man created','when was humanity made']){const human=await ask(wording);assert(human.some(s=>s.url==='#read/0/1'&&s.text.includes('sixth day')));assert(human.some(s=>s.url==='#read/0/2'));}
+ assert.match(payload.instructions,/Describe that reading conditionally/);assert.match(payload.instructions,/distinction in the summary itself/);
  assert.match(payload.instructions,/Never assert that an event never happened/);
  assert.deepEqual(payload.text.format.schema.required,['summary','details','source_ids']);assert.match(payload.instructions,/NO citation markers/);
 }finally{globalThis.fetch=originalFetch;}
