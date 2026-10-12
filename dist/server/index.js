@@ -8427,6 +8427,601 @@ const EVIDENCE=[
       }
     ],
     "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-offering-portions",
+    "mode": "contradictions",
+    "ref": "Leviticus 1:9",
+    "appliesTo": [
+      "Leviticus 1:9",
+      "Leviticus 1:13",
+      "Leviticus 1:16",
+      "Leviticus 2:2",
+      "Leviticus 2:3",
+      "Leviticus 3:3",
+      "Leviticus 3:4",
+      "Leviticus 3:5",
+      "Leviticus 3:16",
+      "Leviticus 4:11",
+      "Leviticus 4:12",
+      "Leviticus 4:21",
+      "Leviticus 6:16",
+      "Leviticus 6:22",
+      "Leviticus 6:23",
+      "Leviticus 6:26",
+      "Leviticus 6:29",
+      "Leviticus 6:30",
+      "Leviticus 7:6",
+      "Leviticus 7:8",
+      "Leviticus 7:31",
+      "Leviticus 7:32"
+    ],
+    "title": "Burning and eating depend on the offering category",
+    "status": "Context",
+    "summary": "The rules distinguish altar portions, priestly food and offerings that must be burned.",
+    "text": "Burnt offerings are burned on the altar, with stated exceptions such as discarded bird parts and the priest’s right to a hide. Other offerings supply priestly portions. Sin offerings whose blood enters the sanctuary cannot be eaten.",
+    "reasoning": "The chapter 6 exceptions explain why a command to eat one offering need not conflict with a command to burn another. Offering type, priestly ownership and blood destination matter.",
+    "scope": "This compares stated ritual categories, not every later legal interpretation, historical practice or ethical issue concerning animal sacrifice.",
+    "refs": [
+      {
+        "label": "Leviticus 1:9",
+        "book": 2,
+        "chapter": 1,
+        "verse": 9
+      },
+      {
+        "label": "Leviticus 1:13",
+        "book": 2,
+        "chapter": 1,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 1:16",
+        "book": 2,
+        "chapter": 1,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 2:2",
+        "book": 2,
+        "chapter": 2,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 2:3",
+        "book": 2,
+        "chapter": 2,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 3:3",
+        "book": 2,
+        "chapter": 3,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 3:4",
+        "book": 2,
+        "chapter": 3,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 3:5",
+        "book": 2,
+        "chapter": 3,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 3:16",
+        "book": 2,
+        "chapter": 3,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 4:11",
+        "book": 2,
+        "chapter": 4,
+        "verse": 11
+      },
+      {
+        "label": "Leviticus 4:12",
+        "book": 2,
+        "chapter": 4,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 4:21",
+        "book": 2,
+        "chapter": 4,
+        "verse": 21
+      },
+      {
+        "label": "Leviticus 6:16",
+        "book": 2,
+        "chapter": 6,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 6:22",
+        "book": 2,
+        "chapter": 6,
+        "verse": 22
+      },
+      {
+        "label": "Leviticus 6:23",
+        "book": 2,
+        "chapter": 6,
+        "verse": 23
+      },
+      {
+        "label": "Leviticus 6:26",
+        "book": 2,
+        "chapter": 6,
+        "verse": 26
+      },
+      {
+        "label": "Leviticus 6:29",
+        "book": 2,
+        "chapter": 6,
+        "verse": 29
+      },
+      {
+        "label": "Leviticus 6:30",
+        "book": 2,
+        "chapter": 6,
+        "verse": 30
+      },
+      {
+        "label": "Leviticus 7:6",
+        "book": 2,
+        "chapter": 7,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 7:8",
+        "book": 2,
+        "chapter": 7,
+        "verse": 8
+      },
+      {
+        "label": "Leviticus 7:31",
+        "book": 2,
+        "chapter": 7,
+        "verse": 31
+      },
+      {
+        "label": "Leviticus 7:32",
+        "book": 2,
+        "chapter": 7,
+        "verse": 32
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 1 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV01.htm"
+      },
+      {
+        "label": "Leviticus 2 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV02.htm"
+      },
+      {
+        "label": "Leviticus 3 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV03.htm"
+      },
+      {
+        "label": "Leviticus 4 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV04.htm"
+      },
+      {
+        "label": "Leviticus 6 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV06.htm"
+      },
+      {
+        "label": "Leviticus 7 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV07.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-meat-offering-grain",
+    "mode": "history",
+    "ref": "Leviticus 2:1",
+    "appliesTo": [
+      "Leviticus 2:1",
+      "Leviticus 2:4",
+      "Leviticus 2:5",
+      "Leviticus 2:7",
+      "Leviticus 2:14",
+      "Leviticus 6:14",
+      "Leviticus 6:15",
+      "Leviticus 6:16"
+    ],
+    "title": "The KJV meat offering here is made from grain",
+    "status": "Context",
+    "summary": "Flour, oil and grain identify the offering’s ingredients despite the older English label.",
+    "text": "The chapter describes flour preparations and grain, including baked cakes and pan preparations. A portion is burned and a remainder belongs to priests.",
+    "reasoning": "The ingredients establish what this passage calls a meat offering; interpreting the label as necessarily animal flesh would misread the recipe.",
+    "scope": "This is a contextual explanation of the packaged English text, not a complete history of the Hebrew term or a claim about all uses of meat in older English.",
+    "refs": [
+      {
+        "label": "Leviticus 2:1",
+        "book": 2,
+        "chapter": 2,
+        "verse": 1
+      },
+      {
+        "label": "Leviticus 2:4",
+        "book": 2,
+        "chapter": 2,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 2:5",
+        "book": 2,
+        "chapter": 2,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 2:7",
+        "book": 2,
+        "chapter": 2,
+        "verse": 7
+      },
+      {
+        "label": "Leviticus 2:14",
+        "book": 2,
+        "chapter": 2,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 6:14",
+        "book": 2,
+        "chapter": 6,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 6:15",
+        "book": 2,
+        "chapter": 6,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 6:16",
+        "book": 2,
+        "chapter": 6,
+        "verse": 16
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 2 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV02.htm"
+      },
+      {
+        "label": "Leviticus 6 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV06.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-leaven-context",
+    "mode": "contradictions",
+    "ref": "Leviticus 2:11",
+    "appliesTo": [
+      "Leviticus 2:11",
+      "Leviticus 2:12",
+      "Leviticus 7:12",
+      "Leviticus 7:13",
+      "Leviticus 7:14"
+    ],
+    "title": "Leavened thanksgiving bread is not the prohibited altar burning",
+    "status": "Context",
+    "summary": "A ban on burning leaven accompanies a permission to bring leavened bread with thanksgiving offerings.",
+    "text": "Leviticus 2 prohibits leaven in the grain offering and burning it on the altar. Leviticus 7 permits leavened bread alongside thanksgiving offerings and assigns a contribution to the priest.",
+    "reasoning": "Bringing accompanying bread and burning the altar portion are different actions. The permission does not say that this bread is burned on the altar.",
+    "scope": "This addresses the stated contrast. Wider festival legislation and later interpretation require separate comparison.",
+    "refs": [
+      {
+        "label": "Leviticus 2:11",
+        "book": 2,
+        "chapter": 2,
+        "verse": 11
+      },
+      {
+        "label": "Leviticus 2:12",
+        "book": 2,
+        "chapter": 2,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 7:12",
+        "book": 2,
+        "chapter": 7,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 7:13",
+        "book": 2,
+        "chapter": 7,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 7:14",
+        "book": 2,
+        "chapter": 7,
+        "verse": 14
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 2 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV02.htm"
+      },
+      {
+        "label": "Leviticus 7 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV07.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-inadvertent-guilt",
+    "mode": "history",
+    "ref": "Leviticus 4:2",
+    "appliesTo": [
+      "Leviticus 4:2",
+      "Leviticus 4:13",
+      "Leviticus 4:14",
+      "Leviticus 4:22",
+      "Leviticus 4:23",
+      "Leviticus 4:27",
+      "Leviticus 4:28",
+      "Leviticus 5:3",
+      "Leviticus 5:4",
+      "Leviticus 5:5",
+      "Leviticus 5:17",
+      "Leviticus 5:18"
+    ],
+    "title": "Unrecognized wrongdoing can still require atonement",
+    "status": "Context",
+    "summary": "The laws distinguish not knowing about an offense from learning of it and responding.",
+    "text": "Chapter 4 gives procedures for inadvertent offenses by priests, the assembly, rulers and ordinary people. Chapter 5 includes confession and says an offense can incur guilt even when unknown.",
+    "reasoning": "Lack of knowledge does not simply erase responsibility in these rules. Their specified remedies should not automatically be generalized to every deliberate offense.",
+    "scope": "This describes the law’s framing, not a modern judgment of culpability, evidence of uniform enforcement or a comprehensive theory of forgiveness.",
+    "refs": [
+      {
+        "label": "Leviticus 4:2",
+        "book": 2,
+        "chapter": 4,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 4:13",
+        "book": 2,
+        "chapter": 4,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 4:14",
+        "book": 2,
+        "chapter": 4,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 4:22",
+        "book": 2,
+        "chapter": 4,
+        "verse": 22
+      },
+      {
+        "label": "Leviticus 4:23",
+        "book": 2,
+        "chapter": 4,
+        "verse": 23
+      },
+      {
+        "label": "Leviticus 4:27",
+        "book": 2,
+        "chapter": 4,
+        "verse": 27
+      },
+      {
+        "label": "Leviticus 4:28",
+        "book": 2,
+        "chapter": 4,
+        "verse": 28
+      },
+      {
+        "label": "Leviticus 5:3",
+        "book": 2,
+        "chapter": 5,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 5:4",
+        "book": 2,
+        "chapter": 5,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 5:5",
+        "book": 2,
+        "chapter": 5,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 5:17",
+        "book": 2,
+        "chapter": 5,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 5:18",
+        "book": 2,
+        "chapter": 5,
+        "verse": 18
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 4 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV04.htm"
+      },
+      {
+        "label": "Leviticus 5 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV05.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-affordable-offerings",
+    "mode": "history",
+    "ref": "Leviticus 5:6",
+    "appliesTo": [
+      "Leviticus 5:6",
+      "Leviticus 5:7",
+      "Leviticus 5:10",
+      "Leviticus 5:11",
+      "Leviticus 5:12",
+      "Leviticus 5:13"
+    ],
+    "title": "The required offering changes with what a person can afford",
+    "status": "Context",
+    "summary": "A person unable to afford a flock animal may bring birds, or ultimately flour.",
+    "text": "Chapter 5 gives a flock animal, two birds if that is unaffordable, and flour if the birds are also unaffordable. The flour sin offering specifically omits oil and frankincense.",
+    "reasoning": "The alternatives are explicit exceptions to the standard requirement, including a non-animal offering in this case. The no-oil rule also distinguishes it from the grain offering of chapter 2.",
+    "scope": "These allowances apply to the cases under discussion; they do not prove that every sacrificial obligation allowed the same substitutes or quantify ancient household wealth.",
+    "refs": [
+      {
+        "label": "Leviticus 5:6",
+        "book": 2,
+        "chapter": 5,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 5:7",
+        "book": 2,
+        "chapter": 5,
+        "verse": 7
+      },
+      {
+        "label": "Leviticus 5:10",
+        "book": 2,
+        "chapter": 5,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 5:11",
+        "book": 2,
+        "chapter": 5,
+        "verse": 11
+      },
+      {
+        "label": "Leviticus 5:12",
+        "book": 2,
+        "chapter": 5,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 5:13",
+        "book": 2,
+        "chapter": 5,
+        "verse": 13
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 5 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV05.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-restoration-and-offering",
+    "mode": "history",
+    "ref": "Leviticus 5:15",
+    "appliesTo": [
+      "Leviticus 5:15",
+      "Leviticus 5:16",
+      "Leviticus 6:2",
+      "Leviticus 6:3",
+      "Leviticus 6:4",
+      "Leviticus 6:5",
+      "Leviticus 6:6",
+      "Leviticus 6:7"
+    ],
+    "title": "A ritual offering does not replace restitution",
+    "status": "Context",
+    "summary": "Restoration of property, an additional fifth and an offering appear together.",
+    "text": "Harm to sacred property requires compensation plus a fifth. Deceit over entrusted, stolen or found property likewise requires restoration to its owner with an added fifth, alongside a ram offering.",
+    "reasoning": "The stated remedy combines material repair with ritual atonement. It should not be summarized as forgiveness obtained merely by presenting an animal.",
+    "scope": "This describes these particular cases. It does not resolve every restitution rule in other law collections or demonstrate historical collection and enforcement.",
+    "refs": [
+      {
+        "label": "Leviticus 5:15",
+        "book": 2,
+        "chapter": 5,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 5:16",
+        "book": 2,
+        "chapter": 5,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 6:2",
+        "book": 2,
+        "chapter": 6,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 6:3",
+        "book": 2,
+        "chapter": 6,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 6:4",
+        "book": 2,
+        "chapter": 6,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 6:5",
+        "book": 2,
+        "chapter": 6,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 6:6",
+        "book": 2,
+        "chapter": 6,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 6:7",
+        "book": 2,
+        "chapter": 6,
+        "verse": 7
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 5 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV05.htm"
+      },
+      {
+        "label": "Leviticus 6 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV06.htm"
+      }
+    ],
+    "checked": "2026-10-12"
   }
 ]
 ;
