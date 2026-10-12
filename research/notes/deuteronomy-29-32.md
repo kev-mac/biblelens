@@ -1,0 +1,13 @@
+# Deuteronomy 29–32 checkpoint — 2026-10-12
+
+Read all 131 packaged KJV verses and checked the four eBible chapter pages. Read Romans 10's near-word reuse and inspected existing covenant-threat and eyewitness-audience records. Five new assessments address covenant audience, Romans' interpretive reuse, presence promise versus apostasy warning, law custody/public reading, and selected song imagery. Two existing assessments now include restoration after dispersal and the repeated Egypt eyewitness address.
+
+Sources are primary literary evidence. The broad covenant audience is not automatically a list of equal legal entitlements or people who all witnessed Egypt. The absent group in 29:15 is not precisely identified. Romans changes explanatory referents and the sea-crossing wording in its Christ-centered reading. That reuse is described without declaring its theology settled. The promise of presence is interpreted alongside, rather than in isolation from, the later covenant-breaking warning; its qualification is contextual, not part of the assurance's own sentence.
+
+Moses's law writing and custody beside the ark are narrated claims, not independent verification of the complete surviving book's authorship or a surviving artifact. Rain/dew comparison, rock language, grape blood and drunken arrows have specific figurative signals within a named song. This neither certifies every line as metaphor nor verifies separate event claims.
+
+Build and checks passed: 1,189 chapters and all modes, 2,133 evidence placements, valid bounds and no duplicate IDs. Audit: 217 evidence records, six studies; 236 annotated chapters, 2,074 distinct verse locations and 953 chapters without annotations. Cross-linked Romans material contributes chapter presence without exhaustive certification.
+
+Unresolved: Moab/Horeb covenant relationship; divine withholding of perception; non-aging clothes and bread categories; collective curse liability and absent generations; salt/brimstone imagery and Sodom archaeology; hidden/revealed matters; heart circumcision and legal/metaphorical relations; return history and composition dating; Moses's age and leadership capacity; song custody and literary development; 32:8 and 32:43 textual variants requiring manuscript evidence; eagle behavior versus simile; song deity terminology and divine-council readings; vengeance and later reuse; Moses's exclusion versus other narrative accounts. No generic annotations substitute for these open questions.
+
+Next sequential batch: Deuteronomy 33–34, then Joshua 1–2. Inspect existing tribal blessings, Moses death/authorship, Joshua commissioning, conquest and Rahab findings before researching further additions. Preserve translations, appearance and blank unannotated verses.

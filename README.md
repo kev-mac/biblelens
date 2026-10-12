@@ -4,9 +4,9 @@ This snapshot packages KJV, WEB and ASV scripture for all 66 books and 1,189 cha
 
 ## Annotation coverage
 
-The annotation collection is **incomplete**. As of this snapshot, 231 chapters across all 66 books have annotations, covering 2,030 distinct verse locations. The other 958 chapters have no attached annotations. Even annotated chapters have not received an exhaustive research review.
+The annotation collection is **incomplete**. As of this snapshot, 236 chapters across all 66 books have annotations, covering 2,074 distinct verse locations. The other 953 chapters have no attached annotations. Even annotated chapters have not received an exhaustive research review.
 
-The initial expansion added 64 assessments and enhanced three existing comparisons. Subsequent checkpoints add forty-one Exodus, twenty-nine Leviticus and thirty-eight Numbers and twenty-six Deuteronomy assessments and consolidate duplicate records. Sources, reasoning and interpretation limits are available through Details & sources. Internal literary comparisons are distinguished from independent historical or scientific evidence. No general claim of comprehensive review is made.
+The initial expansion added 64 assessments and enhanced three existing comparisons. Subsequent checkpoints add forty-one Exodus, twenty-nine Leviticus and thirty-eight Numbers and thirty-one Deuteronomy assessments and consolidate duplicate records. Sources, reasoning and interpretation limits are available through Details & sources. Internal literary comparisons are distinguished from independent historical or scientific evidence. No general claim of comprehensive review is made.
 
 `research/coverage-audit.json` lists every chapter and its actual annotation locations. `research/notes/` records researched passages, source-access limitations and outstanding work. The reader keeps unannotated verses blank, as requested.
 

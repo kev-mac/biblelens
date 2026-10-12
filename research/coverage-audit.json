@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 212,
+    "evidenceRecords": 217,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 231,
-    "annotatedVerses": 2030
+    "chaptersWithAnnotations": 236,
+    "annotatedVerses": 2074
   },
   "byBook": [
     {
@@ -39,8 +39,8 @@
     {
       "book": "Deuteronomy",
       "chapters": 34,
-      "chaptersWithAnnotations": 28,
-      "annotatedVerses": 274
+      "chaptersWithAnnotations": 32,
+      "annotatedVerses": 314
     },
     {
       "book": "Joshua",
@@ -279,8 +279,8 @@
     {
       "book": "Romans",
       "chapters": 16,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 6
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 10
     },
     {
       "book": "1 Corinthians",
@@ -4578,36 +4578,102 @@
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 29,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-eyewitness-audience",
+        "deuteronomy-covenant-audience"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 30,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-covenant-threat-and-retention",
+        "deuteronomy-near-word-in-romans"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 31,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-presence-promise-and-warning",
+        "deuteronomy-law-custody-and-reading"
+      ],
+      "annotatedVerses": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        24,
+        25,
+        26
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 32,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-song-physical-imagery"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        4,
+        14,
+        42,
+        44
+      ],
+      "modes": [
+        "science"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13092,9 +13158,18 @@
       "book": "Romans",
       "bookId": 44,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-near-word-in-romans"
+      ],
+      "annotatedVerses": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

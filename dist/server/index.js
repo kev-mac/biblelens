@@ -12584,12 +12584,21 @@ const EVIDENCE=[
       "Deuteronomy 28:55",
       "Deuteronomy 28:56",
       "Deuteronomy 28:57",
-      "Deuteronomy 28:64"
+      "Deuteronomy 28:64",
+      "Deuteronomy 30:1",
+      "Deuteronomy 30:2",
+      "Deuteronomy 30:3",
+      "Deuteronomy 30:4",
+      "Deuteronomy 30:5",
+      "Deuteronomy 30:6",
+      "Deuteronomy 30:8",
+      "Deuteronomy 30:9",
+      "Deuteronomy 30:10"
     ],
     "title": "Severe covenant threats accompany a retained commitment",
     "status": "Context",
     "summary": "Threatened devastation is followed by confession, covenant remembrance and a refusal of total destruction.",
-    "text": "The chapter escalates consequences for disobedience, including famine and exile. Its closing section nevertheless preserves the covenant even in the enemies’ land. Deuteronomy 28 similarly threatens defeat, siege, family cannibalism and dispersal for disobedience. These parallels alone neither establish borrowing direction nor demonstrate a fulfilled prediction or composition date.",
+    "text": "The chapter escalates consequences for disobedience, including famine and exile. Its closing section nevertheless preserves the covenant even in the enemies’ land. Deuteronomy 28 similarly threatens defeat, siege, family cannibalism and dispersal for disobedience. These parallels alone neither establish borrowing direction nor demonstrate a fulfilled prediction or composition date. Deuteronomy 30 follows dispersal threats with return, restored provision and a changed heart, tied to renewed loyalty. Restoration language means exile is not presented as the only possible final outcome; historical fulfillment remains a separate question.",
     "reasoning": "Statements of rejection and retained commitment address different aspects of the conditional narrative. The latter does not cancel the severity of the earlier threats.",
     "scope": "These are theological claims within the text. The passage alone cannot verify supernatural causation, forecast dates or date its composition relative to historical disasters.",
     "refs": [
@@ -12790,6 +12799,60 @@ const EVIDENCE=[
         "book": 4,
         "chapter": 28,
         "verse": 64
+      },
+      {
+        "label": "Deuteronomy 30:1",
+        "book": 4,
+        "chapter": 30,
+        "verse": 1
+      },
+      {
+        "label": "Deuteronomy 30:2",
+        "book": 4,
+        "chapter": 30,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 30:3",
+        "book": 4,
+        "chapter": 30,
+        "verse": 3
+      },
+      {
+        "label": "Deuteronomy 30:4",
+        "book": 4,
+        "chapter": 30,
+        "verse": 4
+      },
+      {
+        "label": "Deuteronomy 30:5",
+        "book": 4,
+        "chapter": 30,
+        "verse": 5
+      },
+      {
+        "label": "Deuteronomy 30:6",
+        "book": 4,
+        "chapter": 30,
+        "verse": 6
+      },
+      {
+        "label": "Deuteronomy 30:8",
+        "book": 4,
+        "chapter": 30,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 30:9",
+        "book": 4,
+        "chapter": 30,
+        "verse": 9
+      },
+      {
+        "label": "Deuteronomy 30:10",
+        "book": 4,
+        "chapter": 30,
+        "verse": 10
       }
     ],
     "sources": [
@@ -12800,6 +12863,10 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 28 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU28.htm"
+      },
+      {
+        "label": "Deuteronomy 30 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU30.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -18197,11 +18264,13 @@ const EVIDENCE=[
       "Deuteronomy 11:7",
       "Numbers 26:2",
       "Numbers 26:64",
-      "Numbers 26:65"
+      "Numbers 26:65",
+      "Deuteronomy 29:2",
+      "Deuteronomy 29:3"
     ],
     "status": "Context",
     "summary": "Moses addresses people as eyewitnesses of Egypt and wilderness events; Numbers reports the earlier counted men’s deaths, with two exceptions.",
-    "text": "Numbers 26:64–65 concerns men in the military census. Deuteronomy 11 distinguishes its present hearers from children who did not know or see the events.",
+    "text": "Numbers 26:64–65 concerns men in the military census. Deuteronomy 11 distinguishes its present hearers from children who did not know or see the events. Deuteronomy 29 repeats the address to those who saw the Egyptian events. The same census-category limits apply; this does not establish that every member of the broader covenant audience witnessed those events.",
     "reasoning": "Those too young for the earlier military count could have witnessed events and survived into adulthood; women were also outside that count. Therefore death of the counted generation does not entail death of every possible eyewitness.",
     "scope": "The exact ages, membership and rhetorical scope of the addressed group remain unspecified. This is a possible contextual reading, not independent verification of an eyewitness gathering.",
     "refs": [
@@ -18258,6 +18327,18 @@ const EVIDENCE=[
         "book": 3,
         "chapter": 26,
         "verse": 65
+      },
+      {
+        "label": "Deuteronomy 29:2",
+        "book": 4,
+        "chapter": 29,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 29:3",
+        "book": 4,
+        "chapter": 29,
+        "verse": 3
       }
     ],
     "sources": [
@@ -18268,6 +18349,10 @@ const EVIDENCE=[
       {
         "label": "Numbers 26 · census criteria and generation",
         "url": "https://ebible.org/eng-kjv/NUM26.htm"
+      },
+      {
+        "label": "Deuteronomy 29 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU29.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -19626,6 +19711,351 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 28 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU28.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-covenant-audience",
+    "mode": "history",
+    "title": "The covenant address includes households, resident outsiders and absent people",
+    "ref": "Deuteronomy 29:10",
+    "appliesTo": [
+      "Deuteronomy 29:10",
+      "Deuteronomy 29:11",
+      "Deuteronomy 29:12",
+      "Deuteronomy 29:13",
+      "Deuteronomy 29:14",
+      "Deuteronomy 29:15"
+    ],
+    "status": "Context",
+    "summary": "The covenant address names leaders, women, children and resident outsiders, then extends beyond those standing there.",
+    "text": "The passage includes woodcutters and water carriers and expressly says the covenant is not only with the present gathering.",
+    "reasoning": "This is broader than an address limited to military-age men. Inclusion in this covenant statement does not establish identical legal rights for every category.",
+    "scope": "The absent group is not precisely identified here. The text is not independent evidence for a dated historical gathering.",
+    "refs": [
+      {
+        "label": "Deuteronomy 29:10",
+        "book": 4,
+        "chapter": 29,
+        "verse": 10
+      },
+      {
+        "label": "Deuteronomy 29:11",
+        "book": 4,
+        "chapter": 29,
+        "verse": 11
+      },
+      {
+        "label": "Deuteronomy 29:12",
+        "book": 4,
+        "chapter": 29,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 29:13",
+        "book": 4,
+        "chapter": 29,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 29:14",
+        "book": 4,
+        "chapter": 29,
+        "verse": 14
+      },
+      {
+        "label": "Deuteronomy 29:15",
+        "book": 4,
+        "chapter": 29,
+        "verse": 15
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 29 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU29.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-near-word-in-romans",
+    "mode": "history",
+    "title": "Romans interprets the nearby commandment as a word of faith",
+    "ref": "Deuteronomy 30:11",
+    "appliesTo": [
+      "Deuteronomy 30:11",
+      "Deuteronomy 30:12",
+      "Deuteronomy 30:13",
+      "Deuteronomy 30:14",
+      "Romans 10:6",
+      "Romans 10:7",
+      "Romans 10:8",
+      "Romans 10:9"
+    ],
+    "status": "Context",
+    "summary": "Deuteronomy describes an accessible commandment; Romans reuses its language in a Christ-centered argument.",
+    "text": "Romans 10:6–9 interprets ascent in relation to Christ, substitutes descent into the deep for Deuteronomy’s sea crossing, and identifies the near word with proclaimed faith.",
+    "reasoning": "The wording links the texts, while the explanatory referent changes. This is interpretive reuse rather than an identical paraphrase of Deuteronomy’s immediate obedience instruction.",
+    "scope": "The comparison does not settle Paul’s theology or claim that the original passage explicitly named Jesus.",
+    "refs": [
+      {
+        "label": "Deuteronomy 30:11",
+        "book": 4,
+        "chapter": 30,
+        "verse": 11
+      },
+      {
+        "label": "Deuteronomy 30:12",
+        "book": 4,
+        "chapter": 30,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 30:13",
+        "book": 4,
+        "chapter": 30,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 30:14",
+        "book": 4,
+        "chapter": 30,
+        "verse": 14
+      },
+      {
+        "label": "Romans 10:6",
+        "book": 44,
+        "chapter": 10,
+        "verse": 6
+      },
+      {
+        "label": "Romans 10:7",
+        "book": 44,
+        "chapter": 10,
+        "verse": 7
+      },
+      {
+        "label": "Romans 10:8",
+        "book": 44,
+        "chapter": 10,
+        "verse": 8
+      },
+      {
+        "label": "Romans 10:9",
+        "book": 44,
+        "chapter": 10,
+        "verse": 9
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 30 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU30.htm"
+      },
+      {
+        "label": "Romans 10 · interpretation of the near word",
+        "url": "https://ebible.org/eng-kjv/ROM10.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-presence-promise-and-warning",
+    "mode": "contradictions",
+    "title": "The assurance of presence is followed by an apostasy warning",
+    "ref": "Deuteronomy 31:6",
+    "appliesTo": [
+      "Deuteronomy 31:6",
+      "Deuteronomy 31:8",
+      "Deuteronomy 31:16",
+      "Deuteronomy 31:17",
+      "Deuteronomy 31:18"
+    ],
+    "status": "Context",
+    "summary": "The chapter promises not to forsake its hearers, then warns of forsaking a people who abandon the covenant.",
+    "text": "Verses 6–8 encourage the present people and Joshua. Verses 16–18 describe a later turn to other gods and a corresponding withdrawal.",
+    "reasoning": "An unconditional promise for every future circumstance would conflict with the warning. Reading the assurance within covenant loyalty and distinguishing the addressed occasions can reconcile them.",
+    "scope": "The condition is supplied by the surrounding warning, not stated in the assurance itself. This does not verify historical divine presence.",
+    "refs": [
+      {
+        "label": "Deuteronomy 31:6",
+        "book": 4,
+        "chapter": 31,
+        "verse": 6
+      },
+      {
+        "label": "Deuteronomy 31:8",
+        "book": 4,
+        "chapter": 31,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 31:16",
+        "book": 4,
+        "chapter": 31,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 31:17",
+        "book": 4,
+        "chapter": 31,
+        "verse": 17
+      },
+      {
+        "label": "Deuteronomy 31:18",
+        "book": 4,
+        "chapter": 31,
+        "verse": 18
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 31 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU31.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-law-custody-and-reading",
+    "mode": "history",
+    "title": "A written law is entrusted for custody and periodic public reading",
+    "ref": "Deuteronomy 31:9",
+    "appliesTo": [
+      "Deuteronomy 31:9",
+      "Deuteronomy 31:10",
+      "Deuteronomy 31:11",
+      "Deuteronomy 31:12",
+      "Deuteronomy 31:13",
+      "Deuteronomy 31:24",
+      "Deuteronomy 31:25",
+      "Deuteronomy 31:26"
+    ],
+    "status": "Context",
+    "summary": "The narrative attributes law writing to Moses and directs custody beside the ark and a seven-year public reading.",
+    "text": "The commanded audience includes men, women, children and resident outsiders. The text connects preservation with hearing and learning.",
+    "reasoning": "A narrative attribution to Moses is evidence of the authorship claim made within the book, rather than external verification of the surviving book’s complete composition.",
+    "scope": "This does not identify the deposited manuscript, establish its survival or show how regularly the reading occurred.",
+    "refs": [
+      {
+        "label": "Deuteronomy 31:9",
+        "book": 4,
+        "chapter": 31,
+        "verse": 9
+      },
+      {
+        "label": "Deuteronomy 31:10",
+        "book": 4,
+        "chapter": 31,
+        "verse": 10
+      },
+      {
+        "label": "Deuteronomy 31:11",
+        "book": 4,
+        "chapter": 31,
+        "verse": 11
+      },
+      {
+        "label": "Deuteronomy 31:12",
+        "book": 4,
+        "chapter": 31,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 31:13",
+        "book": 4,
+        "chapter": 31,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 31:24",
+        "book": 4,
+        "chapter": 31,
+        "verse": 24
+      },
+      {
+        "label": "Deuteronomy 31:25",
+        "book": 4,
+        "chapter": 31,
+        "verse": 25
+      },
+      {
+        "label": "Deuteronomy 31:26",
+        "book": 4,
+        "chapter": 31,
+        "verse": 26
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 31 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU31.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-song-physical-imagery",
+    "mode": "science",
+    "title": "The song’s rain, rock and blood language uses explicit figurative signals",
+    "ref": "Deuteronomy 32:1",
+    "appliesTo": [
+      "Deuteronomy 32:1",
+      "Deuteronomy 32:2",
+      "Deuteronomy 32:4",
+      "Deuteronomy 32:14",
+      "Deuteronomy 32:42",
+      "Deuteronomy 32:44"
+    ],
+    "status": "Context",
+    "summary": "The song compares instruction to rain, calls God a rock, describes grape juice as blood and depicts drunken arrows.",
+    "text": "Verse 2 explicitly likens speech to rain and dew; verse 44 identifies the preceding speech as a song.",
+    "reasoning": "These signals support figurative interpretation of the selected phrases rather than treating them as claims that words are liquid, God is a mineral or arrows metabolize alcohol.",
+    "scope": "This does not make every statement in the song metaphorical or establish the physical truth of its separate event claims.",
+    "refs": [
+      {
+        "label": "Deuteronomy 32:1",
+        "book": 4,
+        "chapter": 32,
+        "verse": 1
+      },
+      {
+        "label": "Deuteronomy 32:2",
+        "book": 4,
+        "chapter": 32,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 32:4",
+        "book": 4,
+        "chapter": 32,
+        "verse": 4
+      },
+      {
+        "label": "Deuteronomy 32:14",
+        "book": 4,
+        "chapter": 32,
+        "verse": 14
+      },
+      {
+        "label": "Deuteronomy 32:42",
+        "book": 4,
+        "chapter": 32,
+        "verse": 42
+      },
+      {
+        "label": "Deuteronomy 32:44",
+        "book": 4,
+        "chapter": 32,
+        "verse": 44
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 32 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU32.htm"
       }
     ],
     "checked": "2026-10-12"
