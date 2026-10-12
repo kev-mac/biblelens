@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 104,
+    "evidenceRecords": 112,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 123,
-    "annotatedVerses": 683
+    "chaptersWithAnnotations": 130,
+    "annotatedVerses": 738
   },
   "byBook": [
     {
@@ -21,8 +21,8 @@
     {
       "book": "Exodus",
       "chapters": 40,
-      "chaptersWithAnnotations": 25,
-      "annotatedVerses": 258
+      "chaptersWithAnnotations": 32,
+      "annotatedVerses": 313
     },
     {
       "book": "Leviticus",
@@ -1428,9 +1428,12 @@
       "chapter": 20,
       "annotationIds": [
         "early-sabbath",
-        "exodus-command-and-penalties"
+        "exodus-command-and-penalties",
+        "exodus-commanded-cherubim"
       ],
       "annotatedVerses": [
+        4,
+        5,
         11,
         13
       ],
@@ -1553,63 +1556,158 @@
       "book": "Exodus",
       "bookId": 1,
       "chapter": 25,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-commanded-cherubim"
+      ],
+      "annotatedVerses": [
+        18,
+        19,
+        20,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 26,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-commanded-cherubim",
+        "exodus-curtain-layers"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 27,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-continuous-service"
+      ],
+      "annotatedVerses": [
+        20,
+        21
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 28,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-priestly-tribal-memorial"
+      ],
+      "annotatedVerses": [
+        9,
+        10,
+        11,
+        12,
+        17,
+        21,
+        29,
+        30
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 29,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-continuous-service",
+        "exodus-ordination-blood"
+      ],
+      "annotatedVerses": [
+        4,
+        7,
+        20,
+        21,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        38,
+        39,
+        41,
+        42
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 30,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-continuous-service",
+        "exodus-census-ransom",
+        "exodus-priestly-washing"
+      ],
+      "annotatedVerses": [
+        7,
+        8,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21
+      ],
+      "modes": [
+        "history",
+        "science"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Exodus",
       "bookId": 1,
       "chapter": 31,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-sabbath",
+        "exodus-sabbath-sanction"
+      ],
+      "annotatedVerses": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
