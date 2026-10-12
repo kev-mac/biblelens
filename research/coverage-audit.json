@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 219,
+    "evidenceRecords": 220,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 243,
-    "annotatedVerses": 2114
+    "chaptersWithAnnotations": 245,
+    "annotatedVerses": 2126
   },
   "byBook": [
     {
@@ -45,8 +45,8 @@
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 6,
-      "annotatedVerses": 25
+      "chaptersWithAnnotations": 8,
+      "annotatedVerses": 37
     },
     {
       "book": "Judges",
@@ -4733,6 +4733,7 @@
       "bookId": 5,
       "chapter": 1,
       "annotationIds": [
+        "numbers-east-jordan-conditional-settlement",
         "deuteronomy-presence-promise-and-warning",
         "deuteronomy-law-custody-and-reading"
       ],
@@ -4740,7 +4741,11 @@
         5,
         7,
         8,
-        9
+        9,
+        12,
+        13,
+        14,
+        15
       ],
       "modes": [
         "contradictions",
@@ -4781,18 +4786,37 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Joshua",
       "bookId": 5,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "numbers-east-jordan-conditional-settlement",
+        "joshua-stone-memorial-locations"
+      ],
+      "annotatedVerses": [
+        3,
+        5,
+        8,
+        9,
+        12,
+        13,
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

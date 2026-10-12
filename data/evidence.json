@@ -1028,12 +1028,13 @@
       "Joshua 6:17",
       "Joshua 6:22",
       "Joshua 6:23",
-      "Joshua 6:25"
+      "Joshua 6:25",
+      "Joshua 3:10"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed. This explicit exception qualifies an unqualified reading of destruction language; it does not by itself establish the historical extent of conquest or resolve the moral assessment of the killings.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
     "sources": [
@@ -1076,6 +1077,10 @@
       {
         "label": "Joshua 6 · explicit Rahab exception",
         "url": "https://ebible.org/eng-kjv/JOS06.htm"
+      },
+      {
+        "label": "Joshua 3 · promised displacement",
+        "url": "https://ebible.org/eng-kjv/JOS03.htm"
       }
     ],
     "refs": [
@@ -1306,6 +1311,12 @@
         "book": 5,
         "chapter": 6,
         "verse": 25
+      },
+      {
+        "label": "Joshua 3:10",
+        "book": 5,
+        "chapter": 3,
+        "verse": 10
       }
     ],
     "checked": "2026-10-12"
@@ -17166,13 +17177,19 @@
       "Deuteronomy 3:13",
       "Deuteronomy 3:18",
       "Deuteronomy 3:19",
-      "Deuteronomy 3:20"
+      "Deuteronomy 3:20",
+      "Joshua 1:12",
+      "Joshua 1:13",
+      "Joshua 1:14",
+      "Joshua 1:15",
+      "Joshua 4:12",
+      "Joshua 4:13"
     ],
     "status": "Context",
     "summary": "The request to remain east of Jordan is followed by a commitment to cross armed before returning to that inheritance.",
-    "text": "Moses objects to leaving the other tribes to fight alone. Reuben and Gad distinguish their families and livestock remaining east from their own military participation west of the river; permission follows that condition. Deuteronomy 3 repeats the distinction: eastern families and livestock remain while eligible fighters cross until the other tribes receive rest and possession.",
+    "text": "Moses objects to leaving the other tribes to fight alone. Reuben and Gad distinguish their families and livestock remaining east from their own military participation west of the river; permission follows that condition. Deuteronomy 3 repeats the distinction: eastern families and livestock remain while eligible fighters cross until the other tribes receive rest and possession. Joshua 1:12–15 recalls the same participation condition. Joshua 4:12–13 reports an armed contingent of about 40,000 from Reuben, Gad and half-Manasseh crossing.",
     "reasoning": "The refusal and later grant respond to different commitments, so the sequence need not represent an unexplained reversal. Failure to cross brings a different land-allocation provision.",
-    "scope": "This is the narrative’s negotiated condition. Actual participation, settlement chronology and geographical extent require independent investigation.",
+    "scope": "These are the narrative’s condition and reported fulfillment at the crossing, not external confirmation of the contingent’s size, chronology or settlement extent.",
     "refs": [
       {
         "label": "Numbers 32:5",
@@ -17305,6 +17322,42 @@
         "book": 4,
         "chapter": 3,
         "verse": 20
+      },
+      {
+        "label": "Joshua 1:12",
+        "book": 5,
+        "chapter": 1,
+        "verse": 12
+      },
+      {
+        "label": "Joshua 1:13",
+        "book": 5,
+        "chapter": 1,
+        "verse": 13
+      },
+      {
+        "label": "Joshua 1:14",
+        "book": 5,
+        "chapter": 1,
+        "verse": 14
+      },
+      {
+        "label": "Joshua 1:15",
+        "book": 5,
+        "chapter": 1,
+        "verse": 15
+      },
+      {
+        "label": "Joshua 4:12",
+        "book": 5,
+        "chapter": 4,
+        "verse": 12
+      },
+      {
+        "label": "Joshua 4:13",
+        "book": 5,
+        "chapter": 4,
+        "verse": 13
       }
     ],
     "sources": [
@@ -17315,6 +17368,14 @@
       {
         "label": "Deuteronomy 3 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU03.htm"
+      },
+      {
+        "label": "Joshua 1 · eastern-tribe obligation",
+        "url": "https://ebible.org/eng-kjv/JOS01.htm"
+      },
+      {
+        "label": "Joshua 4 · reported armed crossing",
+        "url": "https://ebible.org/eng-kjv/JOS04.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -20431,6 +20492,63 @@
         "book": 4,
         "chapter": 34,
         "verse": 9
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "joshua-stone-memorial-locations",
+    "mode": "contradictions",
+    "status": "Context",
+    "ref": "Joshua 4:8",
+    "title": "Twelve stones at Gilgal and twelve in the river",
+    "summary": "Joshua 4 places carried stones at Gilgal and also describes stones set in the Jordan.",
+    "text": "Verses 3,8 and 20 connect the carried stones with the campsite and Gilgal. Verse 9 separately attributes a placement at the priests’ standing place to Joshua.",
+    "reasoning": "The locations conflict only if both descriptions refer to the same single set. Reading verse 9 as an additional set accommodates the wording, though the narrative does not explicitly call it a second set.",
+    "scope": "This is a possible reading of the received text, not proof that either monument survives or that an editorial history has been established.",
+    "sources": [
+      {
+        "label": "Joshua 4 · stone placements",
+        "url": "https://ebible.org/eng-kjv/JOS04.htm"
+      }
+    ],
+    "appliesTo": [
+      "Joshua 4:8",
+      "Joshua 4:3",
+      "Joshua 4:5",
+      "Joshua 4:9",
+      "Joshua 4:20"
+    ],
+    "refs": [
+      {
+        "label": "Joshua 4:8",
+        "book": 5,
+        "chapter": 4,
+        "verse": 8
+      },
+      {
+        "label": "Joshua 4:3",
+        "book": 5,
+        "chapter": 4,
+        "verse": 3
+      },
+      {
+        "label": "Joshua 4:5",
+        "book": 5,
+        "chapter": 4,
+        "verse": 5
+      },
+      {
+        "label": "Joshua 4:9",
+        "book": 5,
+        "chapter": 4,
+        "verse": 9
+      },
+      {
+        "label": "Joshua 4:20",
+        "book": 5,
+        "chapter": 4,
+        "verse": 20
       }
     ],
     "checked": "2026-10-12"

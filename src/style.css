@@ -137,3 +137,12 @@ body.dark .verse-citation{background:#5a3c24;color:#ffe2b9;border-color:#b78a5a}
 .switch-track>span{width:16px;height:16px;border-radius:50%;background:var(--panel);transition:transform .15s}
 #reader-compare[aria-checked="true"] .switch-track{background:var(--green)}
 #reader-compare[aria-checked="true"] .switch-track>span{transform:translateX(14px)}
+
+/* Ask directly from the chapter heading. */
+.reader-question-form{margin:14px 0 20px}
+.reader-question-form label{display:block;font:12px/1.5 system-ui;color:var(--muted);margin-bottom:7px}
+.reader-question-form>div{display:flex;align-items:flex-end;gap:10px}
+.reader-question-form textarea{width:100%;min-height:68px;resize:vertical;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--ink);padding:10px 12px;font:14px/1.5 system-ui}
+.reader-question-form button{white-space:nowrap;min-height:44px}
+@media(max-width:500px){.reader-question-form>div{flex-direction:column;align-items:stretch}.reader-question-form button{align-self:flex-end}}
+body.dark{--bg:#000;--panel:#000}

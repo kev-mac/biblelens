@@ -1,0 +1,9 @@
+import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
+const source=fs.readFileSync('src/reader.js','utf8');const nodes={'#reader-question':{value:'Explain verse 6'},'#chat-input':{value:''},'#chat-form':{requestSubmit(){nodes.submits=(nodes.submits||0)+1}}};
+const listeners={};const c={reading:{name:'Genesis'},readingChapter:1,readerQuestionDraft:'A draft <question>',selectedVerses:new Set([6]),chatBusy:false,esc:s=>String(s).replaceAll('<','&lt;').replaceAll('>','&gt;'),$:id=>nodes[id],setView:v=>nodes.view=v,window:{scrollTo(){}},document:{addEventListener:(type,fn)=>listeners[type]=fn}};vm.createContext(c);vm.runInContext(source.slice(source.indexOf('function readerQuestionForm'),source.indexOf('function renderReader')),c);
+const before=c.readerQuestionForm();assert.match(before,/Ask about Genesis 1 · selected verses/);assert.match(before,/A draft &lt;question&gt;/);
+listeners.input({target:{id:'reader-question',value:'Changed draft'}});assert.match(c.readerQuestionForm(),/Changed draft/);assert.equal(c.readerQuestionForm(),c.readerQuestionForm());
+let prevented=false;c.submitReaderQuestion({preventDefault(){prevented=true}});assert(prevented);assert.equal(nodes.view,'chat');assert.equal(nodes['#chat-input'].value,'Explain verse 6');assert.equal(nodes.submits,1);assert.equal(c.readerQuestionDraft,'');
+c.chatBusy=true;c.submitReaderQuestion({preventDefault(){}});assert.equal(nodes.submits,1);assert.match(c.readerQuestionForm(),/disabled/);
+assert(source.indexOf('${readerQuestionForm()}')>source.indexOf('<h2>${esc(reading.name)}'));
+console.log('PASS: inline chapter question preserves drafts, selected context, existing Ask submission and busy guard.');
