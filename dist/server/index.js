@@ -5794,12 +5794,14 @@ const EVIDENCE=[
       "Exodus 13:14",
       "Exodus 13:15",
       "Exodus 22:29",
-      "Exodus 22:30"
+      "Exodus 22:30",
+      "Exodus 34:19",
+      "Exodus 34:20"
     ],
     "title": "Firstborn people are redeemed, not offered as animals",
     "status": "Context",
     "summary": "The firstborn dedication includes explicit redemption of human children and a separate rule for donkeys.",
-    "text": "Exodus 13:2 dedicates firstborn humans and animals. Verses 12–15 distinguish animal offerings, a donkey redeemed with a lamb or killed, and human firstborn who must be redeemed. Exodus 22:29–30 gives a general firstborn dedication command. Exodus 13:13–15 explicitly supplies human redemption, so dedication should not automatically be equated with human sacrifice.",
+    "text": "Exodus 13:2 dedicates firstborn humans and animals. Verses 12–15 distinguish animal offerings, a donkey redeemed with a lamb or killed, and human firstborn who must be redeemed. Exodus 22:29–30 gives a general firstborn dedication command. Exodus 13:13–15 explicitly supplies human redemption, so dedication should not automatically be equated with human sacrifice. Exodus 34:19–20 repeats the distinction between firstborn dedication and redeeming sons.",
     "reasoning": "The general dedication must be read with the specific human-redemption rule. Verse 15 explicitly contrasts animal sacrifice with redeeming the speaker’s children.",
     "scope": "These verses establish the rule this passage gives. They do not independently reconstruct every ancient practice or settle how redemption was administered in each period.",
     "refs": [
@@ -5844,6 +5846,18 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 22,
         "verse": 30
+      },
+      {
+        "label": "Exodus 34:19",
+        "book": 1,
+        "chapter": 34,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 34:20",
+        "book": 1,
+        "chapter": 34,
+        "verse": 20
       }
     ],
     "sources": [
@@ -5854,6 +5868,10 @@ const EVIDENCE=[
       {
         "label": "Exodus 22 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO22.htm"
+      },
+      {
+        "label": "Exodus 34 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO34.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -6740,12 +6758,16 @@ const EVIDENCE=[
       "Exodus 25:20",
       "Exodus 25:22",
       "Exodus 26:1",
-      "Exodus 26:31"
+      "Exodus 26:31",
+      "Exodus 32:4",
+      "Exodus 32:5",
+      "Exodus 32:8",
+      "Exodus 34:17"
     ],
     "title": "The image prohibition and commanded cherubim",
     "status": "Context",
     "summary": "The law prohibits images and their worship; sanctuary instructions also require cherubim.",
-    "text": "Exodus 20:4–5 prohibits making likenesses and bowing to or serving them. Exodus 25 orders two golden cherubim, while chapter 26 places cherubim on fabric.",
+    "text": "Exodus 20:4–5 prohibits making likenesses and bowing to or serving them. Exodus 25 orders two golden cherubim, while chapter 26 places cherubim on fabric. The calf narrative explicitly includes worship and sacrifice; Exodus 34:17 again prohibits molten gods.",
     "reasoning": "The commands create a real interpretive question for a ban understood to prohibit every depiction. Reading the prohibition as directed at cult images or worship distinguishes these sanctuary decorations, but that is an interpretation of its scope.",
     "scope": "This comparison identifies the wording and a contextual reading; it does not establish that every ancient reader applied the same distinction or settle the ethics of religious imagery.",
     "refs": [
@@ -6796,6 +6818,30 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 26,
         "verse": 31
+      },
+      {
+        "label": "Exodus 32:4",
+        "book": 1,
+        "chapter": 32,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 32:5",
+        "book": 1,
+        "chapter": 32,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 32:8",
+        "book": 1,
+        "chapter": 32,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 34:17",
+        "book": 1,
+        "chapter": 34,
+        "verse": 17
       }
     ],
     "sources": [
@@ -6810,6 +6856,14 @@ const EVIDENCE=[
       {
         "label": "Exodus 26 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO26.htm"
+      },
+      {
+        "label": "Exodus 32 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO32.htm"
+      },
+      {
+        "label": "Exodus 34 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO34.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -7308,6 +7362,361 @@ const EVIDENCE=[
       {
         "label": "Exodus 31 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO31.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-aaron-calf-account",
+    "mode": "contradictions",
+    "ref": "Exodus 32:2",
+    "appliesTo": [
+      "Exodus 32:2",
+      "Exodus 32:3",
+      "Exodus 32:4",
+      "Exodus 32:21",
+      "Exodus 32:22",
+      "Exodus 32:23",
+      "Exodus 32:24"
+    ],
+    "title": "Aaron’s explanation differs from the narrator’s account",
+    "status": "Context",
+    "summary": "The narrator describes Aaron shaping the calf; Aaron later describes it emerging from the fire.",
+    "text": "Verse 4 attributes shaping the object to Aaron. In his explanation to Moses, Aaron mentions collecting gold and casting it into fire, omitting that workmanship.",
+    "reasoning": "The difference occurs between narration and a character’s defense. Reading the defense as evasive explains its literary role without requiring two incompatible authorial claims about the event.",
+    "scope": "This comparison concerns how the story presents responsibility. It does not independently verify the event or every motive attributed to Aaron.",
+    "refs": [
+      {
+        "label": "Exodus 32:2",
+        "book": 1,
+        "chapter": 32,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 32:3",
+        "book": 1,
+        "chapter": 32,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 32:4",
+        "book": 1,
+        "chapter": 32,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 32:21",
+        "book": 1,
+        "chapter": 32,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 32:22",
+        "book": 1,
+        "chapter": 32,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 32:23",
+        "book": 1,
+        "chapter": 32,
+        "verse": 23
+      },
+      {
+        "label": "Exodus 32:24",
+        "book": 1,
+        "chapter": 32,
+        "verse": 24
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 32 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO32.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-intercession-relenting",
+    "mode": "history",
+    "ref": "Exodus 32:10",
+    "appliesTo": [
+      "Exodus 32:10",
+      "Exodus 32:11",
+      "Exodus 32:12",
+      "Exodus 32:13",
+      "Exodus 32:14",
+      "Exodus 32:27",
+      "Exodus 32:28",
+      "Exodus 32:30",
+      "Exodus 32:31",
+      "Exodus 32:32",
+      "Exodus 32:33",
+      "Exodus 32:34",
+      "Exodus 32:35"
+    ],
+    "title": "Intercession precedes relenting, but further punishment remains",
+    "status": "Context",
+    "summary": "The threat of destroying the people is withdrawn; the chapter still narrates killings and plague.",
+    "text": "Moses appeals to earlier promises and God relents. Later, Levites kill about three thousand people and the narrative reports a plague.",
+    "reasoning": "Relenting from the announced destruction should not be equated with cancellation of every consequence. The account contains both intercession and severe punishment.",
+    "scope": "This reports the narrative’s sequence, not an independent casualty count, diagnosis of the plague or justification of the violence. Theological conclusions about divine change require a wider comparison.",
+    "refs": [
+      {
+        "label": "Exodus 32:10",
+        "book": 1,
+        "chapter": 32,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 32:11",
+        "book": 1,
+        "chapter": 32,
+        "verse": 11
+      },
+      {
+        "label": "Exodus 32:12",
+        "book": 1,
+        "chapter": 32,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 32:13",
+        "book": 1,
+        "chapter": 32,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 32:14",
+        "book": 1,
+        "chapter": 32,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 32:27",
+        "book": 1,
+        "chapter": 32,
+        "verse": 27
+      },
+      {
+        "label": "Exodus 32:28",
+        "book": 1,
+        "chapter": 32,
+        "verse": 28
+      },
+      {
+        "label": "Exodus 32:30",
+        "book": 1,
+        "chapter": 32,
+        "verse": 30
+      },
+      {
+        "label": "Exodus 32:31",
+        "book": 1,
+        "chapter": 32,
+        "verse": 31
+      },
+      {
+        "label": "Exodus 32:32",
+        "book": 1,
+        "chapter": 32,
+        "verse": 32
+      },
+      {
+        "label": "Exodus 32:33",
+        "book": 1,
+        "chapter": 32,
+        "verse": 33
+      },
+      {
+        "label": "Exodus 32:34",
+        "book": 1,
+        "chapter": 32,
+        "verse": 34
+      },
+      {
+        "label": "Exodus 32:35",
+        "book": 1,
+        "chapter": 32,
+        "verse": 35
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 32 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO32.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-presence-negotiation",
+    "mode": "contradictions",
+    "ref": "Exodus 33:1",
+    "appliesTo": [
+      "Exodus 33:1",
+      "Exodus 33:2",
+      "Exodus 33:3",
+      "Exodus 33:12",
+      "Exodus 33:13",
+      "Exodus 33:14",
+      "Exodus 33:15",
+      "Exodus 33:16",
+      "Exodus 33:17"
+    ],
+    "title": "The discussion of divine presence changes after Moses’ appeal",
+    "status": "Context",
+    "summary": "An initial refusal to accompany Israel is followed by an assurance of presence.",
+    "text": "The opening says an angel will lead while God will not go in Israel’s midst. Moses then asks about accompaniment and receives an assurance of presence and rest.",
+    "reasoning": "The statements are separated by dialogue and an appeal. They can be read as a changed response within the narrative rather than simultaneous promises under identical circumstances.",
+    "scope": "The passage leaves questions about the relationship between angelic guidance and divine presence. This reading does not establish a universally accepted theology of that relationship.",
+    "refs": [
+      {
+        "label": "Exodus 33:1",
+        "book": 1,
+        "chapter": 33,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 33:2",
+        "book": 1,
+        "chapter": 33,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 33:3",
+        "book": 1,
+        "chapter": 33,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 33:12",
+        "book": 1,
+        "chapter": 33,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 33:13",
+        "book": 1,
+        "chapter": 33,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 33:14",
+        "book": 1,
+        "chapter": 33,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 33:15",
+        "book": 1,
+        "chapter": 33,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 33:16",
+        "book": 1,
+        "chapter": 33,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 33:17",
+        "book": 1,
+        "chapter": 33,
+        "verse": 17
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 33 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO33.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-replacement-tablets",
+    "mode": "contradictions",
+    "ref": "Exodus 31:18",
+    "appliesTo": [
+      "Exodus 31:18",
+      "Exodus 32:15",
+      "Exodus 32:16",
+      "Exodus 32:19",
+      "Exodus 34:1",
+      "Exodus 34:4",
+      "Exodus 34:27",
+      "Exodus 34:28"
+    ],
+    "title": "Replacement tablets separate preparation from writing",
+    "status": "Context",
+    "summary": "Moses prepares replacement stones; the text attributes writing in more than one way.",
+    "text": "The first tablets are attributed to God and broken by Moses. Chapter 34 tells Moses to cut new stones, promises divine writing, then commands Moses to write covenant words and says he wrote the commandments on tablets.",
+    "reasoning": "Cutting stone and writing are different actions. The identity of the final writing subject and the relation between covenant words and tablet words are interpretive questions, not resolved merely by noting Moses cut the stones.",
+    "scope": "This identifies attribution and reference questions in the account. Manuscript, Hebrew syntax and composition research remain needed; no definitive authorship or archaeological claim follows.",
+    "refs": [
+      {
+        "label": "Exodus 31:18",
+        "book": 1,
+        "chapter": 31,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 32:15",
+        "book": 1,
+        "chapter": 32,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 32:16",
+        "book": 1,
+        "chapter": 32,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 32:19",
+        "book": 1,
+        "chapter": 32,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 34:1",
+        "book": 1,
+        "chapter": 34,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 34:4",
+        "book": 1,
+        "chapter": 34,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 34:27",
+        "book": 1,
+        "chapter": 34,
+        "verse": 27
+      },
+      {
+        "label": "Exodus 34:28",
+        "book": 1,
+        "chapter": 34,
+        "verse": 28
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 31 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO31.htm"
+      },
+      {
+        "label": "Exodus 32 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO32.htm"
+      },
+      {
+        "label": "Exodus 34 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO34.htm"
       }
     ],
     "checked": "2026-10-12"
