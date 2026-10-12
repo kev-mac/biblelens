@@ -10,7 +10,7 @@ The initial expansion added 64 assessments and enhanced three existing compariso
 
 `research/coverage-audit.json` lists every chapter and its actual annotation locations. `research/notes/` records researched passages, source-access limitations and outstanding work. The reader keeps unannotated verses blank, as requested.
 
-Reader tags start closed and independently toggle their summary, citations and Details & sources. History tags are gold, Contradictions blue and Science green throughout both themes. History and Science display only explicit discrepancies; agreement and background assessments remain saved in the research collection. Coverage counts describe stored research attachments, not the number of visible discrepancy tags.
+Reader tags start closed and independently toggle their summary, citations and Details & sources. History tags are gold, Contradictions peach/orange and Science green throughout both themes. History and Science display only explicit discrepancies; agreement and background assessments remain saved in the research collection. Coverage counts describe stored research attachments, not the number of visible discrepancy tags.
 
 ## Build and check
 
@@ -31,3 +31,5 @@ The automated check exercises all 1,189 chapters and every comparison mode, veri
 https://scripture-lens.kvn-mcgwn.chatgpt.site
 
 The existing private audience is preserved. Source identity is retained in `.openai/hosting.json`; it is not an authentication credential.
+
+Compare is an on/off switch enabled by default. Read and Ask replace Explore and Chat. Both themes use warm tan/orange palettes. Red-letter markup preserves the packaged text and follows publisher speech spans; see data/red-letter-provenance.json and research/notes/reader-warm-red-letters.md for attribution and boundary limits.

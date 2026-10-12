@@ -1,0 +1,14 @@
+import fs from 'node:fs';import vm from 'node:vm';import zlib from 'node:zlib';import assert from 'node:assert/strict';
+const context={esc:s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;'),readingBook:41,readingChapter:2};vm.createContext(context);
+const reader=fs.readFileSync('src/reader.js','utf8');vm.runInContext(fs.readFileSync('src/red-letters.js','utf8')+'\n'+reader.slice(reader.indexOf('function scriptureHtml'),reader.indexOf('function comparisonStatus'))+'\nthis.ranges=RED_LETTERS;this.html=scriptureHtml;',context);
+const chapters=Object.fromEntries(Object.entries(JSON.parse(fs.readFileSync('data/chapters.json'))).map(([key,value])=>[key,JSON.parse(zlib.gunzipSync(Buffer.from(value,'base64')))]));
+let count=0;for(const[key,verses]of Object.entries(context.ranges))for(const[number,editions]of Object.entries(verses))for(const[edition,ranges]of Object.entries(editions)){const verse=chapters[key].verses.find(v=>v.n===Number(number)),text=verse[edition];let end=0;for(const[a,b]of ranges){assert(a>=end&&b>a&&b<=text.length,`${key}:${number} ${edition}`);end=b;}const[b,ch]=key.split(':').map(Number);assert.equal(context.html(verse,edition,b,ch).replaceAll(/<\/?span[^>]*>/g,''),context.esc(text));count++;}
+for(const ed of ['kjv','web','asv']){
+ const verse=chapters['41:2'].verses.find(v=>v.n===49);assert.match(context.html(verse,ed,41,2),/jesus-words/);assert(!context.ranges['41:2']?.[48]?.[ed]);
+ const mixed=chapters['40:10'].verses.find(v=>v.n===51);const html=context.html(mixed,ed,40,10);assert.match(html,/<span class="jesus-words">What/);assert(!/<span class="jesus-words">[^<]*(Rabboni|Rabbi)/.test(html));
+}
+assert(!context.ranges['39:3']?.[2]); // John the Baptist speaking, not Jesus.
+assert(context.ranges['65:22']?.[16]?.kjv); // risen Jesus in Revelation.
+const nodes=new Map();const $=id=>{if(!nodes.has(id))nodes.set(id,{value:'',textContent:'',attrs:{},setAttribute(k,v){this.attrs[k]=v}});return nodes.get(id)};
+for(const old of [undefined,'none','history','science']){const state={readerPreferences:{edition:'kjv',compare:old},readerEditionDefault:'kjv-v1'};const c={state,$,persist(){},renders:0,comparisonSelections:new Map(),renderReader(){}};vm.createContext(c);vm.runInContext(reader.slice(reader.indexOf('const readerPreferences'),reader.indexOf('function readRef')),c);assert.equal($('#reader-compare').attrs['aria-checked'],'true');const handler=reader.match(/\$\('#reader-compare'\)\.onclick=.*?;\};/)[0];vm.runInContext(handler,c);$('#reader-compare').onclick();assert.equal($('#reader-compare').attrs['aria-checked'],'false');$('#reader-compare').onclick();assert.equal($('#reader-compare').attrs['aria-checked'],'true');}
+console.log(`PASS: ${count} red-letter verse/edition spans preserve exact text; mixed speakers, risen Jesus, migration and Compare on/off.`);

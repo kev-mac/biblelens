@@ -98,7 +98,7 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 .comparison-summary,.comparison-cell .comparison-summary,.study-tldr .comparison-summary,.commentary-card .comparison-summary,.evidence-result .comparison-summary{background:#edf3ee;color:#24352d;border-color:#c7d7cd}
 .verse-comparison[data-tone="agrees"]{--summary-tint:#e6f5ed;--summary-ink:#234c3b}
 .verse-comparison[data-tone="disagrees"]{--summary-tint:#fff0e7;--summary-ink:#633e2b}
-.verse-comparison[data-tone="conflict"]{--summary-tint:#edf1fc;--summary-ink:#34456b}
+.verse-comparison[data-tone="conflict"]{--summary-tint:#fbe4d2;--summary-ink:#713c19}
 .verse-comparison[data-tone="plain"]{--summary-tint:#edf3ee;--summary-ink:#24352d}
 .verse-comparison .comparison-summary{background:var(--summary-tint,#edf3ee);color:var(--summary-ink,#24352d);border-color:color-mix(in srgb,var(--summary-ink,#24352d) 24%,var(--summary-tint,#edf3ee))}
 .comparison-tabs{display:flex;flex-wrap:wrap;gap:7px;margin:2px 0 10px}
@@ -118,8 +118,22 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 
 /* Category colors remain consistent across verses, assessments and themes. */
 .verse-comparison[data-tone="history"]{--summary-tint:#f8e8c3;--summary-ink:#624514}
-.verse-comparison[data-tone="contradictions"]{--summary-tint:#edf1fc;--summary-ink:#34456b}
+.verse-comparison[data-tone="contradictions"]{--summary-tint:#fbe4d2;--summary-ink:#713c19}
 .verse-comparison[data-tone="science"]{--summary-tint:#e6f5ed;--summary-ink:#234c3b}
 .agreement.history,body.dark .agreement.history{background:#f8e8c3;color:#624514}
-.agreement.contradictions,body.dark .agreement.contradictions{background:#edf1fc;color:#34456b}
+.agreement.contradictions,body.dark .agreement.contradictions{background:#fbe4d2;color:#713c19}
 .agreement.science,body.dark .agreement.science{background:#e6f5ed;color:#234c3b}
+
+/* Warm parchment and burnt orange, with a chocolate night palette. */
+:root{--bg:#f1e4d1;--panel:#fff8ed;--ink:#39291e;--muted:#75604c;--line:#c4a98c;--green:#984515;--soft:#e9d5bb;--rust:#b84c19;--jesus:#b32925}
+body.dark{--bg:#21170f;--panel:#33261b;--ink:#fff1dd;--muted:#dbc3a6;--line:#987654;--green:#ffbb78;--soft:#4b3523;--rust:#ffc080;--jesus:#ff9290}
+body.dark .verse-citation{background:#5a3c24;color:#ffe2b9;border-color:#b78a5a}
+.comparison-summary,.study-tldr .comparison-summary,.evidence-result .comparison-summary{background:#f5e7d3;color:#53351c;border-color:#c7aa87}
+.verse-comparison .comparison-summary{background:var(--summary-tint,#f5e7d3);color:var(--summary-ink,#53351c)}
+.jesus-words{color:var(--jesus)}
+.compare-control{display:flex;flex-direction:column;gap:5px;font-size:10px;color:var(--muted)}
+#reader-compare{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:5px;font-size:13px}
+.switch-track{width:36px;height:22px;background:var(--line);border-radius:20px;display:flex;align-items:center;padding:3px}
+.switch-track>span{width:16px;height:16px;border-radius:50%;background:var(--panel);transition:transform .15s}
+#reader-compare[aria-checked="true"] .switch-track{background:var(--green)}
+#reader-compare[aria-checked="true"] .switch-track>span{transform:translateX(14px)}

@@ -1,0 +1,17 @@
+{
+  "retrieved": "2026-10-12",
+  "sources": {
+    "kjv": "https://ebible.org/Scriptures/eng-kjv_usfm.zip",
+    "web": "https://ebible.org/Scriptures/engwebp_usfm.zip"
+  },
+  "sha256": {
+    "kjv": "80bb0add46d3a648e6f68239d2721c259df23e3f247065bb12f2819c8c23728d",
+    "web": "674fb7eeffa9d64b90c4565a3678ffed61a1ddba47dff9b6a618528e2aaa8c67"
+  },
+  "versesWithSpeech": {
+    "kjv": 2028,
+    "web": 2059,
+    "asv": 2017
+  },
+  "method": "Publisher USFM wj spans aligned to existing text. ASV boundaries transferred from KJV by token alignment; ambiguous mixed-speaker replacements rejected. All packaged text remains unchanged. Red-letter boundaries are editorial, including debated speech endpoints such as John 3."
+}
