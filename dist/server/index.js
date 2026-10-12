@@ -10055,6 +10055,389 @@ const EVIDENCE=[
       }
     ],
     "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-two-goat-roles",
+    "mode": "history",
+    "ref": "Leviticus 16:5",
+    "appliesTo": [
+      "Leviticus 16:5",
+      "Leviticus 16:7",
+      "Leviticus 16:8",
+      "Leviticus 16:9",
+      "Leviticus 16:10",
+      "Leviticus 16:15",
+      "Leviticus 16:20",
+      "Leviticus 16:21",
+      "Leviticus 16:22",
+      "Leviticus 16:26"
+    ],
+    "title": "The two goats have distinct roles",
+    "status": "Context",
+    "summary": "One goat is killed for the offering; the other is sent alive into the wilderness.",
+    "text": "Lots distinguish the goats. One supplies sacrificial blood, while the live goat receives the confession and is led away. The KJV chapter’s footnote identifies Azazel behind its scapegoat wording.",
+    "reasoning": "The two actions belong to different animals within one procedure. The passage explicitly instructs release of the live goat; it does not describe killing both.",
+    "scope": "This identifies the stated ritual sequence. The meaning of Azazel, comparative ritual history and later practices require further research; the text alone does not establish a physical mechanism of removing guilt.",
+    "refs": [
+      {
+        "label": "Leviticus 16:5",
+        "book": 2,
+        "chapter": 16,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 16:7",
+        "book": 2,
+        "chapter": 16,
+        "verse": 7
+      },
+      {
+        "label": "Leviticus 16:8",
+        "book": 2,
+        "chapter": 16,
+        "verse": 8
+      },
+      {
+        "label": "Leviticus 16:9",
+        "book": 2,
+        "chapter": 16,
+        "verse": 9
+      },
+      {
+        "label": "Leviticus 16:10",
+        "book": 2,
+        "chapter": 16,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 16:15",
+        "book": 2,
+        "chapter": 16,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 16:20",
+        "book": 2,
+        "chapter": 16,
+        "verse": 20
+      },
+      {
+        "label": "Leviticus 16:21",
+        "book": 2,
+        "chapter": 16,
+        "verse": 21
+      },
+      {
+        "label": "Leviticus 16:22",
+        "book": 2,
+        "chapter": 16,
+        "verse": 22
+      },
+      {
+        "label": "Leviticus 16:26",
+        "book": 2,
+        "chapter": 16,
+        "verse": 26
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 16 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV16.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-annual-sanctuary-access",
+    "mode": "history",
+    "ref": "Leviticus 16:1",
+    "appliesTo": [
+      "Leviticus 16:1",
+      "Leviticus 16:2",
+      "Leviticus 16:3",
+      "Leviticus 16:4",
+      "Leviticus 16:11",
+      "Leviticus 16:12",
+      "Leviticus 16:13",
+      "Leviticus 16:14",
+      "Leviticus 16:15",
+      "Leviticus 16:16",
+      "Leviticus 16:17",
+      "Leviticus 16:23",
+      "Leviticus 16:24",
+      "Leviticus 16:29",
+      "Leviticus 16:31",
+      "Leviticus 16:32",
+      "Leviticus 16:33",
+      "Leviticus 16:34"
+    ],
+    "title": "Entry behind the veil is restricted and procedural",
+    "status": "Context",
+    "summary": "The high-priestly rite uses linen clothing, incense and blood, with others excluded during the entry.",
+    "text": "The chapter follows the deaths of Aaron’s sons, forbids unrestricted entry and specifies preparations. It assigns the rite to a particular annual date and the succession of the anointed priest.",
+    "reasoning": "A priest’s ordinary service and this restricted entry are different settings. The prescribed clothing and exclusion rules need to be read with that special procedure.",
+    "scope": "The law’s schedule and stated danger do not independently show historical observance, explain a biological cause of death or reconstruct all later temple practice.",
+    "refs": [
+      {
+        "label": "Leviticus 16:1",
+        "book": 2,
+        "chapter": 16,
+        "verse": 1
+      },
+      {
+        "label": "Leviticus 16:2",
+        "book": 2,
+        "chapter": 16,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 16:3",
+        "book": 2,
+        "chapter": 16,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 16:4",
+        "book": 2,
+        "chapter": 16,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 16:11",
+        "book": 2,
+        "chapter": 16,
+        "verse": 11
+      },
+      {
+        "label": "Leviticus 16:12",
+        "book": 2,
+        "chapter": 16,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 16:13",
+        "book": 2,
+        "chapter": 16,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 16:14",
+        "book": 2,
+        "chapter": 16,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 16:15",
+        "book": 2,
+        "chapter": 16,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 16:16",
+        "book": 2,
+        "chapter": 16,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 16:17",
+        "book": 2,
+        "chapter": 16,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 16:23",
+        "book": 2,
+        "chapter": 16,
+        "verse": 23
+      },
+      {
+        "label": "Leviticus 16:24",
+        "book": 2,
+        "chapter": 16,
+        "verse": 24
+      },
+      {
+        "label": "Leviticus 16:29",
+        "book": 2,
+        "chapter": 16,
+        "verse": 29
+      },
+      {
+        "label": "Leviticus 16:31",
+        "book": 2,
+        "chapter": 16,
+        "verse": 31
+      },
+      {
+        "label": "Leviticus 16:32",
+        "book": 2,
+        "chapter": 16,
+        "verse": 32
+      },
+      {
+        "label": "Leviticus 16:33",
+        "book": 2,
+        "chapter": 16,
+        "verse": 33
+      },
+      {
+        "label": "Leviticus 16:34",
+        "book": 2,
+        "chapter": 16,
+        "verse": 34
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 16 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV16.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-blood-life-and-atonement",
+    "mode": "science",
+    "ref": "Leviticus 17:10",
+    "appliesTo": [
+      "Leviticus 17:10",
+      "Leviticus 17:11",
+      "Leviticus 17:12",
+      "Leviticus 17:13",
+      "Leviticus 17:14"
+    ],
+    "title": "Blood’s biological role and its ritual role are different claims",
+    "status": "Context",
+    "summary": "The passage connects blood with life and altar atonement while forbidding its consumption.",
+    "text": "Leviticus gives a religious rationale for reserving blood and directs hunters to pour it out. Modern physiology describes blood circulating oxygen through the heart, lungs and body.",
+    "reasoning": "Blood’s role in sustaining the body is compatible with a broad association between blood and life. That biological function does not experimentally establish the separate claim about atonement.",
+    "scope": "The comparison does not show that the passage explains modern circulation, equate life solely with blood or infer a universal food-safety rule. The religious claim requires its own interpretive framework.",
+    "refs": [
+      {
+        "label": "Leviticus 17:10",
+        "book": 2,
+        "chapter": 17,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 17:11",
+        "book": 2,
+        "chapter": 17,
+        "verse": 11
+      },
+      {
+        "label": "Leviticus 17:12",
+        "book": 2,
+        "chapter": 17,
+        "verse": 12
+      },
+      {
+        "label": "Leviticus 17:13",
+        "book": 2,
+        "chapter": 17,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 17:14",
+        "book": 2,
+        "chapter": 17,
+        "verse": 14
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 17 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV17.htm"
+      },
+      {
+        "label": "NHLBI, NIH · blood flow and oxygen circulation",
+        "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-brothers-wife-and-levirate",
+    "mode": "contradictions",
+    "ref": "Leviticus 18:6",
+    "appliesTo": [
+      "Leviticus 18:6",
+      "Leviticus 18:16",
+      "Deuteronomy 25:5",
+      "Deuteronomy 25:6",
+      "Deuteronomy 25:7",
+      "Deuteronomy 25:8",
+      "Deuteronomy 25:9",
+      "Deuteronomy 25:10"
+    ],
+    "title": "A brother’s wife prohibition and a conditional marriage duty",
+    "status": "Context",
+    "summary": "Leviticus prohibits relations with a brother’s wife; Deuteronomy requires marriage in a specified widowhood case.",
+    "text": "Deuteronomy describes brothers dwelling together, one dying without a child, and a surviving brother’s duty to marry the widow to preserve the dead brother’s name. It also gives a public procedure for refusal.",
+    "reasoning": "The conditions support reading the widowhood duty as a limited exception to the kinship prohibition. Leviticus 18:16 does not spell out that exception, so the relationship between these laws still needs interpretation.",
+    "scope": "This identifies the textual tension and a possible contextual reading. It does not prove uniform historical practice, settle later legal applications or justify the arrangement by present-day standards.",
+    "refs": [
+      {
+        "label": "Leviticus 18:6",
+        "book": 2,
+        "chapter": 18,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 18:16",
+        "book": 2,
+        "chapter": 18,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 25:5",
+        "book": 4,
+        "chapter": 25,
+        "verse": 5
+      },
+      {
+        "label": "Deuteronomy 25:6",
+        "book": 4,
+        "chapter": 25,
+        "verse": 6
+      },
+      {
+        "label": "Deuteronomy 25:7",
+        "book": 4,
+        "chapter": 25,
+        "verse": 7
+      },
+      {
+        "label": "Deuteronomy 25:8",
+        "book": 4,
+        "chapter": 25,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 25:9",
+        "book": 4,
+        "chapter": 25,
+        "verse": 9
+      },
+      {
+        "label": "Deuteronomy 25:10",
+        "book": 4,
+        "chapter": 25,
+        "verse": 10
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 18 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/LEV18.htm"
+      },
+      {
+        "label": "Deuteronomy 25 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/DEU25.htm"
+      }
+    ],
+    "checked": "2026-10-12"
   }
 ]
 ;
