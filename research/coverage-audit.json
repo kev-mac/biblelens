@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 292,
+    "evidenceRecords": 316,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 328,
-    "annotatedVerses": 2527
+    "chaptersWithAnnotations": 349,
+    "annotatedVerses": 2564
   },
   "byBook": [
     {
@@ -75,8 +75,8 @@
     {
       "book": "1 Kings",
       "chapters": 22,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 12
+      "chaptersWithAnnotations": 14,
+      "annotatedVerses": 37
     },
     {
       "book": "2 Kings",
@@ -93,8 +93,8 @@
     {
       "book": "2 Chronicles",
       "chapters": 36,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 2
+      "chaptersWithAnnotations": 10,
+      "annotatedVerses": 12
     },
     {
       "book": "Ezra",
@@ -261,8 +261,8 @@
     {
       "book": "Luke",
       "chapters": 24,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 11
+      "chaptersWithAnnotations": 4,
+      "annotatedVerses": 12
     },
     {
       "book": "John",
@@ -363,8 +363,8 @@
     {
       "book": "James",
       "chapters": 5,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 11
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 12
     },
     {
       "book": "1 Peter",
@@ -6674,10 +6674,12 @@
       "bookId": 10,
       "chapter": 4,
       "annotationIds": [
-        "early-stalls"
+        "early-stalls",
+        "solomon-songs-a-thousand-and-five-or-five-thousand"
       ],
       "annotatedVerses": [
-        26
+        26,
+        32
       ],
       "modes": [
         "contradictions"
@@ -6688,45 +6690,85 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hiram-oil-twenty-measures-or-twenty-thousand-baths",
+        "solomon-overseers-thirty-three-hundred-or-thirty-six-hundred"
+      ],
+      "annotatedVerses": [
+        11,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "temple-begun-four-hundred-eightieth-or-four-hundred-fortieth-year",
+        "temple-sixty-by-thirty-cubits-or-forty-by-twenty-five"
+      ],
+      "annotatedVerses": [
+        1,
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "temple-pillars-eighteen-or-thirty-five-cubits",
+        "molten-sea-two-thousand-or-three-thousand-baths",
+        "hiram-craftsman-mother-of-naphtali-or-of-dan"
+      ],
+      "annotatedVerses": [
+        14,
+        15,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "dedication-feast-people-sent-away-eighth-day-or-twenty-third"
+      ],
+      "annotatedVerses": [
+        65
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "solomon-chief-officers-five-hundred-fifty-or-two-hundred-fifty",
+        "ophir-gold-four-hundred-twenty-four-hundred-fifty-or-one-hundred-twenty"
+      ],
+      "annotatedVerses": [
+        23,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6792,27 +6834,52 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "rehoboam-forty-one-and-seventeen-or-sixteen-and-twelve"
+      ],
+      "annotatedVerses": [
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "david-save-only-uriah-greek-lacks-the-exception",
+        "asa-mother-maachah-or-ana",
+        "asa-high-places-not-removed-or-taken-away"
+      ],
+      "annotatedVerses": [
+        5,
+        10,
+        13,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "baasha-dead-by-asa-twenty-sixth-year-or-attacking-in-thirty-sixth",
+        "omri-twelve-years-from-asa-thirty-first-ahab-in-thirty-eighth"
+      ],
+      "annotatedVerses": [
+        8,
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6828,9 +6895,15 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "elijah-drought-ended-in-third-year-or-after-three-years-six-months"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6846,9 +6919,16 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "prophet-disguised-with-ashes-on-face-or-bandage-over-eyes"
+      ],
+      "annotatedVerses": [
+        38,
+        41
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6864,9 +6944,20 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehoshaphat-high-places-not-taken-away-or-taken-away",
+        "jehoshaphat-ships-refused-ahaziah-or-joined-him",
+        "ahab-blood-armour-washed-or-harlots-washed"
+      ],
+      "annotatedVerses": [
+        38,
+        43,
+        48,
+        49
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7454,18 +7545,30 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hiram-craftsman-mother-of-naphtali-or-of-dan"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "temple-pillars-eighteen-or-thirty-five-cubits"
+      ],
+      "annotatedVerses": [
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7508,9 +7611,17 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "cities-solomon-gave-hiram-or-huram-gave-solomon",
+        "solomon-chief-officers-five-hundred-fifty-or-two-hundred-fifty"
+      ],
+      "annotatedVerses": [
+        2,
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7559,18 +7670,31 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "abijam-mother-maachah-of-abishalom-or-michaiah-of-uriel"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "asa-high-places-not-removed-or-taken-away"
+      ],
+      "annotatedVerses": [
+        3,
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7586,18 +7710,30 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "baasha-dead-by-asa-twenty-sixth-year-or-attacking-in-thirty-sixth"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehoshaphat-high-places-not-taken-away-or-taken-away"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7622,9 +7758,15 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehoshaphat-ships-refused-ahaziah-or-joined-him"
+      ],
+      "annotatedVerses": [
+        36
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13369,9 +13511,15 @@
       "book": "Luke",
       "bookId": 41,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "elijah-drought-ended-in-third-year-or-after-three-years-six-months"
+      ],
+      "annotatedVerses": [
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15231,9 +15379,15 @@
       "book": "James",
       "bookId": 58,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "elijah-drought-ended-in-third-year-or-after-three-years-six-months"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

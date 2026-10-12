@@ -70,7 +70,7 @@ Earlier prose drafts in this folder predate the record format. Codex has already
 - `joshua-21-24-review.md`, `judges-3-5-proposals.md`, `judges-6-9-proposals.md`, `judges-10-12-proposals.md`
 - `hebrew-greek-sourcing-1.md` — sourced wording for Joshua 7 to Judges 11 and Acts; the strongest unpublished items are the Balak verb (Joshua 24:9 / Judges 11:25), Genesis 48:22 "Shechem", Acts 7:14 against Genesis 46:27, and the KJV renderings at Judges 3:19, 5:26 and Joshua 22:34.
 
-**Cleared 2026-10-12.** The outstanding items were re-issued as records in `joshua-21-24-records.json` and `judges-3-12-records.json`, with notes beside each. The prose drafts above are superseded; do not re-issue from them. `hebrew-greek-sourcing-1.md` §1.5 is wrong about the Leningrad Codex at Joshua 21:36–37 — see `joshua-21-24-notes.md`. Judges 13–21 is in `judges-13-21-records.json`. Ruth is in `ruth-1-4-records.json` (processed by Codex: 6 published, 1 held). 1 Samuel is in `1-samuel-1-31-records.json` (processed by Codex: 19 published, 3 held). 2 Samuel is in `2-samuel-1-24-records.json`. Next book: 1 Kings.
+**Cleared 2026-10-12.** The outstanding items were re-issued as records in `joshua-21-24-records.json` and `judges-3-12-records.json`, with notes beside each. The prose drafts above are superseded; do not re-issue from them. `hebrew-greek-sourcing-1.md` §1.5 is wrong about the Leningrad Codex at Joshua 21:36–37 — see `joshua-21-24-notes.md`. Judges 13–21 is in `judges-13-21-records.json`. Ruth is in `ruth-1-4-records.json` (processed by Codex: 6 published, 1 held). 1 Samuel is in `1-samuel-1-31-records.json` (processed by Codex: 19 published, 3 held). 2 Samuel is in `2-samuel-1-24-records.json` (processed by Codex: 16 published, H held on one). 1 Kings is in `1-kings-1-22-records.json`. Next book: 2 Kings.
 
 Further sources used: the Unicode/XML Leningrad Codex with transcription notes, `https://tanach.us/Server.txt?Judg18:30-18:30` (book abbreviations `Josh`, `Judg`; a range is required).
 
@@ -131,7 +131,7 @@ Codex accepted 16 of 22 as written, corrected 3 and held 3; reasons are in `rese
 
 ## Notes from the 2 Samuel session (2026-10-12)
 
-- 2 Samuel is in `2-samuel-1-24-records.json` (16 records, no V). Next book: 1 Kings.
+- 2 Samuel is in `2-samuel-1-24-records.json` (16 records, no V).
 - bolls.life book numbers: 2 Samuel 10, 1 Kings 11, 1 Chronicles 13. Packaged KJV index: 2 Samuel 9, 1 Chronicles 12.
 - Samuel–Kings findings often rest on a Chronicles parallel. Fetch the parallel chapter in Hebrew and Greek too, and check `data/evidence.json` for the Chronicles verse as well as the Samuel one.
 - For an untagged number conflict, still look at Brenton's Greek of the verse; if it sides with the other book, the record takes a G tag (5:25, 8:13, 24:13).
@@ -139,7 +139,34 @@ Codex accepted 16 of 22 as written, corrected 3 and held 3; reasons are in `rese
 - 2 Samuel 19: Hebrew verse numbers run one ahead of the KJV (KJV 18:33 = Hebrew 19:1).
 - Held back, quotes sourced: Greek pluses at 8:7 (Shishak) and 14:27 (Tamar and Rehoboam).
 
+## Lessons from Codex's 2 Samuel integration (2026-10-12)
+
+Codex accepted 15 of 16 as written and corrected 1; reasons are in `research/notes/claude-ready-2-samuel-2026-10-12.md` and its `-decisions.json`.
+
+- **Owner ruling, reconcilable clashes:** a record is allowed when two statements clash as worded but could be reconciled by an event the text does not report (`absalom-three-sons-or-no-son` accepted). The scope must name the possible reconciliation and say the text does not report it.
+- **A noun the KJV translates differently in the next verse is not enough for H** (`david-sons-and-ira-chief-rulers-or-priests`: H held, G kept). Repetition shows the word is shared, not what it means in that office. H was accepted where a verb for a plain act was rendered as a different act (5:21 "took" / "burned").
+- **Place a tag only where it applies.** Codex removed G placements at verses where the Greek did not differ. Put in `appliesTo` only verses the finding is about, and say in `scope` at which verse each tag applies.
+- **An extension must keep the published ID, title, status, mode and refs exactly** (`early-census-famine` accepted as a replacement on that basis).
+- Untagged number conflicts with a Chronicles parallel were all accepted as written; keep that shape.
+
+## Notes from the 1 Kings session (2026-10-12)
+
+- 1 Kings is in `1-kings-1-22-records.json` (24 records, no V). Next book: 2 Kings.
+- bolls.life book numbers: 1 Kings 11, 2 Kings 12, 2 Chronicles 14. Packaged KJV index: 1 Kings 10, 2 Kings 11, 2 Chronicles 13.
+- **Brenton's Greek pages print lettered verses** (12:24a–z, 16:28a–h, 2:35a–o, 2:46a–l) whose HTML `id` repeats a later verse number. Split the page on the printed verse label, not the `id`, or text is attributed to the wrong verse.
+- Brenton's Greek swaps 1 Kings 20 and 21, follows the Hebrew numbers in chapters 4–5, and reorders chapter 7. Verse-number tables are at the top of `1-kings-1-22-notes.md`.
+- Before calling a passage absent from the Greek, search the whole book: 14:1–20 is missing from Brenton's chapter 14 but a form of it stands at 12:24g–n.
+- The HAC edition numbers 1 Kings 4–5 differently from WLC and was not used this session; WLC alone was quoted.
+- Store Python on this machine cannot use the session scratch folders reliably (path length, redirected AppData). Work in a short folder under `%TEMP%\claude\`.
+- Held back, quotes sourced: Greek differences at 7:15 (circumference), 8:53a, 10:28, 19:3; the Greek form of the Jeroboam's-wife story.
+- `early-stalls` was not extended; reason in the notes file.
+
 ## Open questions for the owner
 
 - None outstanding from 1 Samuel; both were answered (see above).
-- From 2 Samuel: should a record be proposed when two statements clash as worded but could be reconciled by an event the text does not report (`absalom-three-sons-or-no-son`)?
+- From 2 Samuel: answered — such records are allowed (see the 2 Samuel lessons).
+- From 1 Kings: answered — see "Owner ruling on records spanning two books" below.
+
+## Owner ruling on records spanning two books (2026-10-12)
+
+A record that sets a verse in one book against a verse in another is issued in the session of **whichever book comes first**, not held for the later book. This includes Old Testament records that rest on a New Testament verse (`elijah-drought-ended-in-third-year-or-after-three-years-six-months`, 1 Kings 18:1 against Luke 4:25 and James 5:17). Fetch and quote the other book's original-language text in the same session. In the later book's session, find the record in `data/evidence.json` and do not re-issue it.
