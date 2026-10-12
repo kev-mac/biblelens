@@ -998,12 +998,15 @@ const EVIDENCE=[
       "Deuteronomy 7:20",
       "Deuteronomy 7:22",
       "Deuteronomy 7:23",
-      "Deuteronomy 7:24"
+      "Deuteronomy 7:24",
+      "Deuteronomy 20:16",
+      "Deuteronomy 20:17",
+      "Deuteronomy 20:18"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest.",
     "sources": [
@@ -1034,6 +1037,10 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 7 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU07.htm"
+      },
+      {
+        "label": "Deuteronomy 20 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU20.htm"
       }
     ],
     "refs": [
@@ -1174,6 +1181,24 @@ const EVIDENCE=[
         "book": 4,
         "chapter": 7,
         "verse": 24
+      },
+      {
+        "label": "Deuteronomy 20:16",
+        "book": 4,
+        "chapter": 20,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 20:17",
+        "book": 4,
+        "chapter": 20,
+        "verse": 17
+      },
+      {
+        "label": "Deuteronomy 20:18",
+        "book": 4,
+        "chapter": 20,
+        "verse": 18
       }
     ],
     "checked": "2026-10-12"
@@ -6722,12 +6747,18 @@ const EVIDENCE=[
       "Deuteronomy 1:15",
       "Deuteronomy 1:16",
       "Deuteronomy 1:17",
-      "Deuteronomy 1:18"
+      "Deuteronomy 1:18",
+      "Deuteronomy 17:8",
+      "Deuteronomy 17:9",
+      "Deuteronomy 17:10",
+      "Deuteronomy 17:11",
+      "Deuteronomy 17:12",
+      "Deuteronomy 17:13"
     ],
     "title": "Judging disputes becomes a shared responsibility",
     "status": "Context",
     "summary": "Jethro challenges Moses’s workload and proposes smaller cases be delegated to other judges.",
-    "text": "Exodus 18:13–18 describes a queue lasting all day and Jethro’s warning that the arrangement will exhaust both Moses and the people. Verses 19–26 describe teaching, selection of qualified leaders and escalation of difficult cases. Numbers 11 also addresses Moses’s burden through seventy elders, but narrates a divine gift of spirit and prophecy rather than simply repeating the judicial arrangement. Moses declines to prohibit two listed men prophesying in the camp. Deuteronomy 1 recalls shared judging and Moses’s burden without naming Jethro; tribal selection and impartial treatment of resident outsiders are emphasized. Omission of an adviser does not itself deny that adviser’s role in Exodus.",
+    "text": "Exodus 18:13–18 describes a queue lasting all day and Jethro’s warning that the arrangement will exhaust both Moses and the people. Verses 19–26 describe teaching, selection of qualified leaders and escalation of difficult cases. Numbers 11 also addresses Moses’s burden through seventy elders, but narrates a divine gift of spirit and prophecy rather than simply repeating the judicial arrangement. Moses declines to prohibit two listed men prophesying in the camp. Deuteronomy 1 recalls shared judging and Moses’s burden without naming Jethro; tribal selection and impartial treatment of resident outsiders are emphasized. Omission of an adviser does not itself deny that adviser’s role in Exodus. Deuteronomy 17 sends difficult cases to priests and a judge at the chosen place, with a death sanction for defiance. This is an escalation procedure, not proof of its enforcement.",
     "reasoning": "This is an institutional change inside the narrative, prompted by advice from Moses’s Midianite father-in-law. Verse 23 qualifies the advice with divine command, and verses 24–26 describe its adoption.",
     "scope": "The passage provides textual evidence for the institution portrayed. It does not independently verify an administrative system in a dated historical population or establish that the numerical tiers were implemented uniformly.",
     "refs": [
@@ -6922,6 +6953,42 @@ const EVIDENCE=[
         "book": 4,
         "chapter": 1,
         "verse": 18
+      },
+      {
+        "label": "Deuteronomy 17:8",
+        "book": 4,
+        "chapter": 17,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 17:9",
+        "book": 4,
+        "chapter": 17,
+        "verse": 9
+      },
+      {
+        "label": "Deuteronomy 17:10",
+        "book": 4,
+        "chapter": 17,
+        "verse": 10
+      },
+      {
+        "label": "Deuteronomy 17:11",
+        "book": 4,
+        "chapter": 17,
+        "verse": 11
+      },
+      {
+        "label": "Deuteronomy 17:12",
+        "book": 4,
+        "chapter": 17,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 17:13",
+        "book": 4,
+        "chapter": 17,
+        "verse": 13
       }
     ],
     "sources": [
@@ -6936,6 +7003,10 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 1 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU01.htm"
+      },
+      {
+        "label": "Deuteronomy 17 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU17.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -17001,11 +17072,23 @@ const EVIDENCE=[
       "Numbers 35:32",
       "Deuteronomy 4:41",
       "Deuteronomy 4:42",
-      "Deuteronomy 4:43"
+      "Deuteronomy 4:43",
+      "Deuteronomy 19:2",
+      "Deuteronomy 19:3",
+      "Deuteronomy 19:4",
+      "Deuteronomy 19:5",
+      "Deuteronomy 19:6",
+      "Deuteronomy 19:7",
+      "Deuteronomy 19:8",
+      "Deuteronomy 19:9",
+      "Deuteronomy 19:10",
+      "Deuteronomy 19:11",
+      "Deuteronomy 19:12",
+      "Deuteronomy 19:13"
     ],
     "status": "Context",
     "summary": "Community judgment distinguishes cases; refuge protection requires residence until the high priest’s death.",
-    "text": "The law extends refuge to Israelites and resident outsiders. An avenger may kill the protected slayer outside its boundary without bloodguilt. One witness is insufficient for execution, and ransom cannot buy early return. Deuteronomy 4 names three eastern refuge cities and describes unintentional killing without prior hatred, without repeating every procedural restriction in Numbers 35.",
+    "text": "The law extends refuge to Israelites and resident outsiders. An avenger may kill the protected slayer outside its boundary without bloodguilt. One witness is insufficient for execution, and ransom cannot buy early return. Deuteronomy 4 names three eastern refuge cities and describes unintentional killing without prior hatred, without repeating every procedural restriction in Numbers 35. Deuteronomy 19 gives an accidental axe-head death as a refuge example, requires access routes and adds cities conditionally as territory expands. A deliberate ambush instead leads to removal from refuge and delivery to the avenger. Its omission of Numbers’ high-priest-duration rule is not an explicit repeal.",
     "reasoning": "Protection from immediate vengeance is qualified by location and duration, rather than a declaration that unintentional killing has no consequences.",
     "scope": "This describes the prescribed procedure, not verified enforcement or an ethical justification for killing someone who leaves refuge.",
     "refs": [
@@ -17128,6 +17211,78 @@ const EVIDENCE=[
         "book": 4,
         "chapter": 4,
         "verse": 43
+      },
+      {
+        "label": "Deuteronomy 19:2",
+        "book": 4,
+        "chapter": 19,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 19:3",
+        "book": 4,
+        "chapter": 19,
+        "verse": 3
+      },
+      {
+        "label": "Deuteronomy 19:4",
+        "book": 4,
+        "chapter": 19,
+        "verse": 4
+      },
+      {
+        "label": "Deuteronomy 19:5",
+        "book": 4,
+        "chapter": 19,
+        "verse": 5
+      },
+      {
+        "label": "Deuteronomy 19:6",
+        "book": 4,
+        "chapter": 19,
+        "verse": 6
+      },
+      {
+        "label": "Deuteronomy 19:7",
+        "book": 4,
+        "chapter": 19,
+        "verse": 7
+      },
+      {
+        "label": "Deuteronomy 19:8",
+        "book": 4,
+        "chapter": 19,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 19:9",
+        "book": 4,
+        "chapter": 19,
+        "verse": 9
+      },
+      {
+        "label": "Deuteronomy 19:10",
+        "book": 4,
+        "chapter": 19,
+        "verse": 10
+      },
+      {
+        "label": "Deuteronomy 19:11",
+        "book": 4,
+        "chapter": 19,
+        "verse": 11
+      },
+      {
+        "label": "Deuteronomy 19:12",
+        "book": 4,
+        "chapter": 19,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 19:13",
+        "book": 4,
+        "chapter": 19,
+        "verse": 13
       }
     ],
     "sources": [
@@ -17142,6 +17297,10 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 4 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU04.htm"
+      },
+      {
+        "label": "Deuteronomy 19 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU19.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -18334,6 +18493,362 @@ const EVIDENCE=[
       {
         "label": "Exodus 12 · household rite and later observance",
         "url": "https://ebible.org/eng-kjv/EXO12.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-royal-limits-and-solomon",
+    "mode": "history",
+    "title": "Royal limits contrast with Solomon’s portrayal",
+    "ref": "Deuteronomy 17:16",
+    "appliesTo": [
+      "Deuteronomy 17:16",
+      "Deuteronomy 17:17",
+      "Deuteronomy 17:18",
+      "Deuteronomy 17:19",
+      "Deuteronomy 17:20",
+      "1 Kings 10:14",
+      "1 Kings 10:23",
+      "1 Kings 10:26",
+      "1 Kings 10:28",
+      "1 Kings 10:29",
+      "1 Kings 11:1",
+      "1 Kings 11:2",
+      "1 Kings 11:3",
+      "1 Kings 11:4"
+    ],
+    "status": "Context",
+    "summary": "Deuteronomy limits royal accumulation; Kings portrays Solomon accumulating horses, wealth and wives.",
+    "text": "First Kings 10 describes wealth and Egyptian horse trade; chapter 11 describes wives turning Solomon toward other gods.",
+    "reasoning": "A prohibition and narrated disobedience are not contradictory factual reports. The heart-turning warning provides a close literary comparison.",
+    "scope": "This does not independently verify the quantities, date the law or establish its enforcement.",
+    "refs": [
+      {
+        "label": "Deuteronomy 17:16",
+        "book": 4,
+        "chapter": 17,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 17:17",
+        "book": 4,
+        "chapter": 17,
+        "verse": 17
+      },
+      {
+        "label": "Deuteronomy 17:18",
+        "book": 4,
+        "chapter": 17,
+        "verse": 18
+      },
+      {
+        "label": "Deuteronomy 17:19",
+        "book": 4,
+        "chapter": 17,
+        "verse": 19
+      },
+      {
+        "label": "Deuteronomy 17:20",
+        "book": 4,
+        "chapter": 17,
+        "verse": 20
+      },
+      {
+        "label": "1 Kings 10:14",
+        "book": 10,
+        "chapter": 10,
+        "verse": 14
+      },
+      {
+        "label": "1 Kings 10:23",
+        "book": 10,
+        "chapter": 10,
+        "verse": 23
+      },
+      {
+        "label": "1 Kings 10:26",
+        "book": 10,
+        "chapter": 10,
+        "verse": 26
+      },
+      {
+        "label": "1 Kings 10:28",
+        "book": 10,
+        "chapter": 10,
+        "verse": 28
+      },
+      {
+        "label": "1 Kings 10:29",
+        "book": 10,
+        "chapter": 10,
+        "verse": 29
+      },
+      {
+        "label": "1 Kings 11:1",
+        "book": 10,
+        "chapter": 11,
+        "verse": 1
+      },
+      {
+        "label": "1 Kings 11:2",
+        "book": 10,
+        "chapter": 11,
+        "verse": 2
+      },
+      {
+        "label": "1 Kings 11:3",
+        "book": 10,
+        "chapter": 11,
+        "verse": 3
+      },
+      {
+        "label": "1 Kings 11:4",
+        "book": 10,
+        "chapter": 11,
+        "verse": 4
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 17 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU17.htm"
+      },
+      {
+        "label": "1 Kings 10 · wealth and horses",
+        "url": "https://ebible.org/eng-kjv/1KI10.htm"
+      },
+      {
+        "label": "1 Kings 11 · wives and religious allegiance",
+        "url": "https://ebible.org/eng-kjv/1KI11.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-priestly-meat-portions",
+    "mode": "contradictions",
+    "title": "Priestly meat portions have different specifications",
+    "ref": "Deuteronomy 18:3",
+    "appliesTo": [
+      "Deuteronomy 18:3",
+      "Leviticus 7:29",
+      "Leviticus 7:30",
+      "Leviticus 7:31",
+      "Leviticus 7:32",
+      "Leviticus 7:33",
+      "Leviticus 7:34"
+    ],
+    "status": "Context",
+    "summary": "Deuteronomy names shoulder, cheeks and stomach; Leviticus names breast and right shoulder.",
+    "text": "Leviticus 7:29–34 explicitly concerns peace offerings. Deuteronomy 18:3 gives a priestly due from an ox or sheep sacrifice without naming that offering category.",
+    "reasoning": "If these are exhaustive rules for identical offerings, the portions differ. Different slaughter or offering categories, or cumulative dues, could reconcile them; the passages do not explicitly state that relationship.",
+    "scope": "English anatomical wording alone cannot settle every Hebrew distinction. Actual collection and historical development remain unverified.",
+    "refs": [
+      {
+        "label": "Deuteronomy 18:3",
+        "book": 4,
+        "chapter": 18,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 7:29",
+        "book": 2,
+        "chapter": 7,
+        "verse": 29
+      },
+      {
+        "label": "Leviticus 7:30",
+        "book": 2,
+        "chapter": 7,
+        "verse": 30
+      },
+      {
+        "label": "Leviticus 7:31",
+        "book": 2,
+        "chapter": 7,
+        "verse": 31
+      },
+      {
+        "label": "Leviticus 7:32",
+        "book": 2,
+        "chapter": 7,
+        "verse": 32
+      },
+      {
+        "label": "Leviticus 7:33",
+        "book": 2,
+        "chapter": 7,
+        "verse": 33
+      },
+      {
+        "label": "Leviticus 7:34",
+        "book": 2,
+        "chapter": 7,
+        "verse": 34
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 18 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU18.htm"
+      },
+      {
+        "label": "Leviticus 7 · peace-offering portions",
+        "url": "https://ebible.org/eng-kjv/LEV07.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-witnesses-and-false-testimony",
+    "mode": "history",
+    "title": "Multiple witnesses do not remove the need to investigate false testimony",
+    "ref": "Deuteronomy 17:6",
+    "appliesTo": [
+      "Deuteronomy 17:6",
+      "Deuteronomy 17:7",
+      "Deuteronomy 19:15",
+      "Deuteronomy 19:16",
+      "Deuteronomy 19:17",
+      "Deuteronomy 19:18",
+      "Deuteronomy 19:19",
+      "Deuteronomy 19:20",
+      "Deuteronomy 19:21"
+    ],
+    "status": "Context",
+    "summary": "The law requires multiple witnesses and penalizes a proven malicious witness.",
+    "text": "Judges must investigate; punishment follows the harm the witness intended. Witnesses also initiate the execution in chapter 17.",
+    "reasoning": "A witness-count rule is a procedural requirement, not a guarantee of truth. The false-testimony provision recognizes that evidence can be deceptive.",
+    "scope": "These are prescribed procedures; their fairness or historical enforcement is not established by their presence.",
+    "refs": [
+      {
+        "label": "Deuteronomy 17:6",
+        "book": 4,
+        "chapter": 17,
+        "verse": 6
+      },
+      {
+        "label": "Deuteronomy 17:7",
+        "book": 4,
+        "chapter": 17,
+        "verse": 7
+      },
+      {
+        "label": "Deuteronomy 19:15",
+        "book": 4,
+        "chapter": 19,
+        "verse": 15
+      },
+      {
+        "label": "Deuteronomy 19:16",
+        "book": 4,
+        "chapter": 19,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 19:17",
+        "book": 4,
+        "chapter": 19,
+        "verse": 17
+      },
+      {
+        "label": "Deuteronomy 19:18",
+        "book": 4,
+        "chapter": 19,
+        "verse": 18
+      },
+      {
+        "label": "Deuteronomy 19:19",
+        "book": 4,
+        "chapter": 19,
+        "verse": 19
+      },
+      {
+        "label": "Deuteronomy 19:20",
+        "book": 4,
+        "chapter": 19,
+        "verse": 20
+      },
+      {
+        "label": "Deuteronomy 19:21",
+        "book": 4,
+        "chapter": 19,
+        "verse": 21
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 17 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU17.htm"
+      },
+      {
+        "label": "Deuteronomy 19 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU19.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-distant-city-submission",
+    "mode": "history",
+    "title": "The distant-city peace offer requires tribute and service",
+    "ref": "Deuteronomy 20:10",
+    "appliesTo": [
+      "Deuteronomy 20:10",
+      "Deuteronomy 20:11",
+      "Deuteronomy 20:12",
+      "Deuteronomy 20:13",
+      "Deuteronomy 20:14",
+      "Deuteronomy 20:15"
+    ],
+    "status": "Context",
+    "summary": "A distant city accepting the offer enters tribute and service; resistance brings siege and prescribed killing of males.",
+    "text": "Women and children are taken among the spoils. Verse 15 limits this set of rules to distant cities, distinguishing the named local nations in the following verses.",
+    "reasoning": "Calling the initial offer peace should not obscure its compulsory terms or the coercive alternatives. The geographic distinction matters when comparing warfare passages.",
+    "scope": "This describes the law’s unequal outcomes, without endorsing them or verifying a campaign or consistent enforcement.",
+    "refs": [
+      {
+        "label": "Deuteronomy 20:10",
+        "book": 4,
+        "chapter": 20,
+        "verse": 10
+      },
+      {
+        "label": "Deuteronomy 20:11",
+        "book": 4,
+        "chapter": 20,
+        "verse": 11
+      },
+      {
+        "label": "Deuteronomy 20:12",
+        "book": 4,
+        "chapter": 20,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 20:13",
+        "book": 4,
+        "chapter": 20,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 20:14",
+        "book": 4,
+        "chapter": 20,
+        "verse": 14
+      },
+      {
+        "label": "Deuteronomy 20:15",
+        "book": 4,
+        "chapter": 20,
+        "verse": 15
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 20 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU20.htm"
       }
     ],
     "checked": "2026-10-12"

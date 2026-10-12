@@ -1,0 +1,13 @@
+# Deuteronomy 17–20 checkpoint — 2026-10-12
+
+Read all 83 packaged KJV verses and checked the four eBible primary chapter pages, including chapter 18 opened during the prior batch. Compared 1 Kings 10–11, Leviticus 7 and Numbers 35. Inspected existing conquest, refuge and judicial-delegation records to avoid duplicate assessments.
+
+Added four original sourced findings: royal accumulation limits versus Solomon's literary portrayal; differing priestly meat portions; witness counts alongside malicious-testimony investigation; and the tribute/service terms and coercive outcomes of distant-city warfare rules. Expanded refuge procedure, conquest-command scope and judicial escalation. Chapter 18's prophetic tests already appear in the prior checkpoint and were retained without duplication.
+
+Limits: primary texts establish prescriptions and narrated claims, not independent verification of quantities, penalties, campaigns or historical institutions. Disobedience to a prohibition is not a factual contradiction. Meat-allocation reconciliation depends on whether offering categories or cumulative dues differ; these texts do not supply a complete integrated rule. Witness number alone does not guarantee truthful evidence. The distant-city peace offer has compulsory terms, and description does not endorse the prescribed violence.
+
+Build and checks passed: all 1,189 chapters and comparison modes, 2,008 evidence placements, valid reference bounds and no duplicate IDs. Audit: 205 evidence records, six studies; 221 chapters with annotations, 1,951 distinct verse locations and 968 chapters without annotations. The additional chapter count includes cross-linked Kings material, not certification of full chapters. Exhaustive review remains uncertified.
+
+Unresolved: royal-law dating and textual history; the ruler's law copy and relation to later kingship; precise Hebrew meat terms and ordinary slaughter versus sacrifice; priest/Levite institutional development; prohibited divination practices and comparative evidence; the prophet-like-Moses reception history; conditional territorial expansion and actual refuge implementation; boundary markers; retaliatory penalties and their later interpretation; war exemptions and the victory promise alongside possible soldier deaths; fruit-tree protection and siege practice. No generic notes were added for these questions.
+
+Next sequential batch: Deuteronomy 21–24. Inspect existing captive, servitude, inheritance, sexual-offense, divorce, creditor, outsider and individual-punishment records; research specific comparisons before adding records. Preserve KJV default, WEB/ASV, appearance and blank unannotated verses.
