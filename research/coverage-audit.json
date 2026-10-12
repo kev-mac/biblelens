@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 132,
+    "evidenceRecords": 136,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 153,
-    "annotatedVerses": 1017
+    "chaptersWithAnnotations": 157,
+    "annotatedVerses": 1057
   },
   "byBook": [
     {
@@ -27,8 +27,8 @@
     {
       "book": "Leviticus",
       "chapters": 27,
-      "chaptersWithAnnotations": 16,
-      "annotatedVerses": 181
+      "chaptersWithAnnotations": 19,
+      "annotatedVerses": 215
     },
     {
       "book": "Numbers",
@@ -39,8 +39,8 @@
     {
       "book": "Deuteronomy",
       "chapters": 34,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 3
+      "chaptersWithAnnotations": 4,
+      "annotatedVerses": 9
     },
     {
       "book": "Joshua",
@@ -2387,27 +2387,77 @@
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-two-goat-roles",
+        "leviticus-annual-sanctuary-access"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        29,
+        31,
+        32,
+        33,
+        34
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-blood-life-and-atonement"
+      ],
+      "annotatedVerses": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "modes": [
+        "science"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-brothers-wife-and-levirate"
+      ],
+      "annotatedVerses": [
+        6,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -3069,9 +3119,20 @@
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 25,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-brothers-wife-and-levirate"
+      ],
+      "annotatedVerses": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
