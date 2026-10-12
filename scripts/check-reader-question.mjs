@@ -5,5 +5,6 @@ const before=c.readerQuestionForm();assert.match(before,/Ask about Genesis 1 · 
 listeners.input({target:{id:'reader-question',value:'Changed draft'}});assert.match(c.readerQuestionForm(),/Changed draft/);assert.equal(c.readerQuestionForm(),c.readerQuestionForm());
 let prevented=false;c.submitReaderQuestion({preventDefault(){prevented=true}});assert(prevented);assert.equal(nodes.view,'chat');assert.equal(nodes['#chat-input'].value,'Explain verse 6');assert.equal(nodes.submits,1);assert.equal(c.readerQuestionDraft,'');
 c.chatBusy=true;c.submitReaderQuestion({preventDefault(){}});assert.equal(nodes.submits,1);assert.match(c.readerQuestionForm(),/disabled/);
-assert(source.indexOf('${readerQuestionForm()}')>source.indexOf('<h2>${esc(reading.name)}'));
+assert.match(before,/<input[^>]+type="text"/);assert.doesNotMatch(before,/<textarea|<label/);assert.match(before,/aria-label="Send question"/);
+assert.match(source,/<div class="chapter-heading-row"><h2>.*?<\/h2>\$\{readerQuestionForm\(\)\}<\/div>/);
 console.log('PASS: inline chapter question preserves drafts, selected context, existing Ask submission and busy guard.');

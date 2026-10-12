@@ -139,10 +139,12 @@ body.dark .verse-citation{background:#5a3c24;color:#ffe2b9;border-color:#b78a5a}
 #reader-compare[aria-checked="true"] .switch-track>span{transform:translateX(14px)}
 
 /* Ask directly from the chapter heading. */
-.reader-question-form{margin:14px 0 20px}
-.reader-question-form label{display:block;font:12px/1.5 system-ui;color:var(--muted);margin-bottom:7px}
-.reader-question-form>div{display:flex;align-items:flex-end;gap:10px}
-.reader-question-form textarea{width:100%;min-height:68px;resize:vertical;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--ink);padding:10px 12px;font:14px/1.5 system-ui}
-.reader-question-form button{white-space:nowrap;min-height:44px}
-@media(max-width:500px){.reader-question-form>div{flex-direction:column;align-items:stretch}.reader-question-form button{align-self:flex-end}}
+/* Compact question entry beside the chapter heading. */
+.chapter-heading-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+.chapter-heading-row h2{flex:0 0 auto;margin:0}
+.reader-question-form{display:flex;align-items:center;gap:6px;flex:1 1 220px;max-width:430px;min-width:0;margin:0 0 0 auto;border:1px solid var(--line);border-radius:24px;padding:4px 5px 4px 13px;background:var(--bg)}
+.reader-question-form input{flex:1;min-width:0;width:100%;height:32px;min-height:32px;padding:4px 0;border:0;background:transparent;font:14px/1.4 system-ui}
+.reader-question-form .reader-question-submit{display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;min-height:30px;padding:0;border:0;border-radius:50%;background:var(--green);color:var(--bg)}
+.reader-question-submit:disabled{opacity:.5;cursor:default}
+@media(max-width:500px){.chapter-heading-row{gap:12px}.reader-question-form{flex-basis:140px}.reader-question-form input{font-size:16px!important}}
 body.dark{--bg:#000;--panel:#000}
