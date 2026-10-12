@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 119,
+    "evidenceRecords": 125,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 138,
-    "annotatedVerses": 841
+    "chaptersWithAnnotations": 145,
+    "annotatedVerses": 901
   },
   "byBook": [
     {
@@ -27,8 +27,8 @@
     {
       "book": "Leviticus",
       "chapters": 27,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 5
+      "chaptersWithAnnotations": 8,
+      "annotatedVerses": 65
     },
     {
       "book": "Numbers",
@@ -1983,63 +1983,169 @@
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-offering-portions"
+      ],
+      "annotatedVerses": [
+        9,
+        13,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-offering-portions",
+        "leviticus-meat-offering-grain",
+        "leviticus-leaven-context"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        11,
+        12,
+        14
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-offering-portions"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        5,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-offering-portions",
+        "leviticus-inadvertent-guilt"
+      ],
+      "annotatedVerses": [
+        2,
+        11,
+        12,
+        13,
+        14,
+        21,
+        22,
+        23,
+        27,
+        28
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-inadvertent-guilt",
+        "leviticus-affordable-offerings",
+        "leviticus-restoration-and-offering"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18
+      ],
+      "modes": [
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-offering-portions",
+        "leviticus-meat-offering-grain",
+        "leviticus-restoration-and-offering"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        14,
+        15,
+        16,
+        22,
+        23,
+        26,
+        29,
+        30
+      ],
+      "modes": [
+        "contradictions",
+        "history"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Leviticus",
       "bookId": 2,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-offering-portions",
+        "leviticus-leaven-context"
+      ],
+      "annotatedVerses": [
+        6,
+        8,
+        12,
+        13,
+        14,
+        31,
+        32
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
