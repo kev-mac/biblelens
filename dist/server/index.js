@@ -1137,12 +1137,24 @@ const EVIDENCE=[
       "Judges 2:20",
       "Judges 2:21",
       "Judges 2:22",
-      "Judges 2:23"
+      "Judges 2:23",
+      "Judges 3:1",
+      "Judges 3:2",
+      "Judges 3:3",
+      "Judges 3:4",
+      "Judges 3:5",
+      "Judges 3:6",
+      "Judges 4:2",
+      "Judges 4:17",
+      "Judges 4:23",
+      "Judges 4:24",
+      "Joshua 11:1",
+      "Joshua 11:10"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed. Joshua 6:21 describes destruction encompassing people of both sexes and ages and livestock; 6:24 describes burning the city with designated metals preserved for the treasury. The same account orders Rahab and her household brought out alive. These are explicitly differentiated outcomes, so the totalizing statement should be read together with the exceptions rather than quoted in isolation. Joshua 8:24–26 reports destruction of Ai’s inhabitants, while verses 2 and 27 explicitly permit cattle and spoil to be kept. This permission differs from Jericho’s disposal rule and is stated as an exception to treating the cities alike; it is not a claim that all campaigns used one uniform spoil policy. Joshua 10:20 explicitly mentions survivors entering fortified cities after a totalizing battle description. Verses 1 and 6–7 also retain Gibeon as a protected ally. The southern-city destruction reports in 28–40 should therefore be assessed with their stated targets and these exceptions, rather than expanded into an exhaustive population census. Joshua 11 combines a prolonged war (18), a protected Gibeon (19), and Anakim remaining in three named cities (22) with a whole-land summary (23). It also distinguishes killing inhabitants from burning every city: Hazor is singled out for burning, while cattle and spoil are retained (13–14). Neither totalizing victory language nor an absence of a burn layer alone establishes the fate of every settlement. Joshua 12 lists defeated kings associated with Jerusalem, Gezer, Taanach, Megiddo, and Dor. Later inhabitant reports at those places create tension with an exhaustive reading of territorial possession, but defeating a king does not itself assert permanent occupation or extinction of the population. Joshua 13:1 explicitly says much land remains to be possessed, and 13:6 orders allocation while removal of inhabitants is still promised. Verse 13 names peoples not expelled even in the eastern inheritance. Thus assigning land and occupying it are distinguished within Joshua itself. Caleb’s request at 14:12 anticipates his ability to dislodge the Anakim with divine help; 15:14–17 reports local conquests by Caleb and Othniel. These particulars sit beside the earlier Hebron and Anakim victory summaries in 10:37 and 11:21. Their order and scope require interpretation; the future-looking request alone does not prove the same people survived the earlier battle. Joshua 16:10 explicitly retains Gezer’s Canaanites under tribute, while 10:33 describes defeat of Gezer’s king and his assisting force. The earlier military action is not expressly a report that Gezer’s city population was eliminated; applying its no-survivor wording to every later inhabitant would broaden its stated target. Joshua 17:11–13 names towns whose Canaanite inhabitants remain and become tributaries rather than being expelled; the king-list victories therefore do not by themselves establish their permanent depopulation. The Joseph tribes describe iron chariots as an obstacle (16), but Joshua promises successful displacement despite them (18). This is not a statement that God is physically unable to defeat iron chariots. Joshua 18 calls the land subdued while seven tribes still lack their allotments and are urged to take possession (1–3). Survey and lot allocation follow (9–10). The difference between military subjection, administrative allocation and settled possession is explicit; treating these as identical makes the conquest summaries more exhaustive than these particulars support. Jerusalem’s inclusion in Benjamin’s city list (28) is an allotment statement, not a separate report that its remaining Jebusites had been expelled. Joshua 21:43-45 says Israel possessed the entire promised land, received rest, and saw all the good promises fulfilled; 22:4 invokes that rest when releasing the eastern tribes. These statements must be compared with the land still awaiting possession in 13:1-6 and the inhabitants retained in 16:10 and 17:12-13. An exhaustive claim that every promised district was settled and every enemy population removed conflicts with those particulars. A summary of the decisive victory and provision of inheritance has a narrower scope; the distinction is an interpretation of the statements, not proof that every geographical promise was already physically completed. Joshua 23 places remaining nations and future dispossession (4-7) alongside rest, undefeated victory, and fulfilled promises (1,9,14). It warns that future expulsion can cease if Israel abandons the covenant (12-13). Thus even the farewell speech distinguishes present success from future occupation. The congregation in 24:18 again uses a broad removal summary; its scope should not erase the earlier remaining-nation statements. Judges 1:8 reports Judah taking and burning Jerusalem, yet 1:21 reports Benjamin leaving its Jebusites in residence. A raid or capture need not establish permanent expulsion; the passage does not separately narrate a later return. Verse 19 places Judah’s failure against iron-equipped opponents alongside divine assistance: this does not independently establish that God was physically unable to overcome iron. Verses 24-25 explicitly protect the Bethel informant and his family; 27-35 repeatedly describe continued inhabitants and tribute rather than removal. Judges 2:20-23 attributes retained nations to covenant breach and testing, and expressly says they were not delivered into Joshua’s hand. This is a close verbal tension with the universal delivery summary at Joshua 21:44 if both describe every enemy without qualification. A restricted victory-summary reading and the conditional warnings in Joshua 23 give possible distinctions of scope; they do not independently establish how complete the historical occupation was.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed. Joshua 6:21 describes destruction encompassing people of both sexes and ages and livestock; 6:24 describes burning the city with designated metals preserved for the treasury. The same account orders Rahab and her household brought out alive. These are explicitly differentiated outcomes, so the totalizing statement should be read together with the exceptions rather than quoted in isolation. Joshua 8:24–26 reports destruction of Ai’s inhabitants, while verses 2 and 27 explicitly permit cattle and spoil to be kept. This permission differs from Jericho’s disposal rule and is stated as an exception to treating the cities alike; it is not a claim that all campaigns used one uniform spoil policy. Joshua 10:20 explicitly mentions survivors entering fortified cities after a totalizing battle description. Verses 1 and 6–7 also retain Gibeon as a protected ally. The southern-city destruction reports in 28–40 should therefore be assessed with their stated targets and these exceptions, rather than expanded into an exhaustive population census. Joshua 11 combines a prolonged war (18), a protected Gibeon (19), and Anakim remaining in three named cities (22) with a whole-land summary (23). It also distinguishes killing inhabitants from burning every city: Hazor is singled out for burning, while cattle and spoil are retained (13–14). Neither totalizing victory language nor an absence of a burn layer alone establishes the fate of every settlement. Joshua 12 lists defeated kings associated with Jerusalem, Gezer, Taanach, Megiddo, and Dor. Later inhabitant reports at those places create tension with an exhaustive reading of territorial possession, but defeating a king does not itself assert permanent occupation or extinction of the population. Joshua 13:1 explicitly says much land remains to be possessed, and 13:6 orders allocation while removal of inhabitants is still promised. Verse 13 names peoples not expelled even in the eastern inheritance. Thus assigning land and occupying it are distinguished within Joshua itself. Caleb’s request at 14:12 anticipates his ability to dislodge the Anakim with divine help; 15:14–17 reports local conquests by Caleb and Othniel. These particulars sit beside the earlier Hebron and Anakim victory summaries in 10:37 and 11:21. Their order and scope require interpretation; the future-looking request alone does not prove the same people survived the earlier battle. Joshua 16:10 explicitly retains Gezer’s Canaanites under tribute, while 10:33 describes defeat of Gezer’s king and his assisting force. The earlier military action is not expressly a report that Gezer’s city population was eliminated; applying its no-survivor wording to every later inhabitant would broaden its stated target. Joshua 17:11–13 names towns whose Canaanite inhabitants remain and become tributaries rather than being expelled; the king-list victories therefore do not by themselves establish their permanent depopulation. The Joseph tribes describe iron chariots as an obstacle (16), but Joshua promises successful displacement despite them (18). This is not a statement that God is physically unable to defeat iron chariots. Joshua 18 calls the land subdued while seven tribes still lack their allotments and are urged to take possession (1–3). Survey and lot allocation follow (9–10). The difference between military subjection, administrative allocation and settled possession is explicit; treating these as identical makes the conquest summaries more exhaustive than these particulars support. Jerusalem’s inclusion in Benjamin’s city list (28) is an allotment statement, not a separate report that its remaining Jebusites had been expelled. Joshua 21:43-45 says Israel possessed the entire promised land, received rest, and saw all the good promises fulfilled; 22:4 invokes that rest when releasing the eastern tribes. These statements must be compared with the land still awaiting possession in 13:1-6 and the inhabitants retained in 16:10 and 17:12-13. An exhaustive claim that every promised district was settled and every enemy population removed conflicts with those particulars. A summary of the decisive victory and provision of inheritance has a narrower scope; the distinction is an interpretation of the statements, not proof that every geographical promise was already physically completed. Joshua 23 places remaining nations and future dispossession (4-7) alongside rest, undefeated victory, and fulfilled promises (1,9,14). It warns that future expulsion can cease if Israel abandons the covenant (12-13). Thus even the farewell speech distinguishes present success from future occupation. The congregation in 24:18 again uses a broad removal summary; its scope should not erase the earlier remaining-nation statements. Judges 1:8 reports Judah taking and burning Jerusalem, yet 1:21 reports Benjamin leaving its Jebusites in residence. A raid or capture need not establish permanent expulsion; the passage does not separately narrate a later return. Verse 19 places Judah’s failure against iron-equipped opponents alongside divine assistance: this does not independently establish that God was physically unable to overcome iron. Verses 24-25 explicitly protect the Bethel informant and his family; 27-35 repeatedly describe continued inhabitants and tribute rather than removal. Judges 2:20-23 attributes retained nations to covenant breach and testing, and expressly says they were not delivered into Joshua’s hand. This is a close verbal tension with the universal delivery summary at Joshua 21:44 if both describe every enemy without qualification. A restricted victory-summary reading and the conditional warnings in Joshua 23 give possible distinctions of scope; they do not independently establish how complete the historical occupation was. Judges 3:1-6 retains nations for testing obedience and teaching warfare. These purposes need not exclude the earlier gradual-removal or covenant-judgment explanations; the restrictive wording about teaching war should not be treated as an independently established exclusive cause. Judges 4 again presents a Jabin ruling at Hazor after Joshua 11 names Jabin and reports the king’s death and the city’s burning. The narratives do not identify this as the same individual or say Hazor could never be resettled. Assuming one king creates a chronological conflict; distinct rulers and renewed occupation are possible but their relationship is not narrated. A burn layer alone cannot identify either ruler or date both accounts.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed. This explicit exception qualifies an unqualified reading of destruction language; it does not by itself establish the historical extent of conquest or resolve the moral assessment of the killings.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest. Later presence can be explained by incomplete occupation or subsequent return, but these alternatives are not independently demonstrated here. The king list is not a population census or an archaeological chronology. These local accounts may narrate different stages or recap earlier events; their placement alone does not establish a dated sequence.",
     "sources": [
@@ -1237,6 +1249,14 @@ const EVIDENCE=[
       {
         "label": "Judges 2: retained nations and conditional judgment",
         "url": "https://ebible.org/eng-kjv/JDG02.htm"
+      },
+      {
+        "label": "Judges 3: retained nations and testing",
+        "url": "https://ebible.org/eng-kjv/JDG03.htm"
+      },
+      {
+        "label": "Judges 4: later Jabin at Hazor",
+        "url": "https://ebible.org/eng-kjv/JDG04.htm"
       }
     ],
     "refs": [
@@ -2103,6 +2123,78 @@ const EVIDENCE=[
         "book": 6,
         "chapter": 2,
         "verse": 23
+      },
+      {
+        "label": "Judges 3:1",
+        "book": 6,
+        "chapter": 3,
+        "verse": 1
+      },
+      {
+        "label": "Judges 3:2",
+        "book": 6,
+        "chapter": 3,
+        "verse": 2
+      },
+      {
+        "label": "Judges 3:3",
+        "book": 6,
+        "chapter": 3,
+        "verse": 3
+      },
+      {
+        "label": "Judges 3:4",
+        "book": 6,
+        "chapter": 3,
+        "verse": 4
+      },
+      {
+        "label": "Judges 3:5",
+        "book": 6,
+        "chapter": 3,
+        "verse": 5
+      },
+      {
+        "label": "Judges 3:6",
+        "book": 6,
+        "chapter": 3,
+        "verse": 6
+      },
+      {
+        "label": "Judges 4:2",
+        "book": 6,
+        "chapter": 4,
+        "verse": 2
+      },
+      {
+        "label": "Judges 4:17",
+        "book": 6,
+        "chapter": 4,
+        "verse": 17
+      },
+      {
+        "label": "Judges 4:23",
+        "book": 6,
+        "chapter": 4,
+        "verse": 23
+      },
+      {
+        "label": "Judges 4:24",
+        "book": 6,
+        "chapter": 4,
+        "verse": 24
+      },
+      {
+        "label": "Joshua 11:1",
+        "book": 5,
+        "chapter": 11,
+        "verse": 1
+      },
+      {
+        "label": "Joshua 11:10",
+        "book": 5,
+        "chapter": 11,
+        "verse": 10
       }
     ],
     "checked": "2026-10-12"
@@ -22317,6 +22409,169 @@ const EVIDENCE=[
         "book": 0,
         "chapter": 50,
         "verse": 13
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "sisera-death-prose-and-song",
+    "mode": "contradictions",
+    "title": "Sisera’s death in narrative and song",
+    "status": "Context",
+    "ref": "Judges 4:21",
+    "appliesTo": [
+      "Judges 4:21",
+      "Judges 4:22",
+      "Judges 5:24",
+      "Judges 5:25",
+      "Judges 5:26",
+      "Judges 5:27"
+    ],
+    "summary": "The narrative kills Sisera while he sleeps; the song describes him falling at Jael’s feet. KJV says she struck off his head, while ASV and WEB say she struck through it. A literal sequence needs qualification.",
+    "text": "Judges 4:21-22 describes Jael driving a tent peg through a sleeping Sisera and into the ground; Barak sees the peg in his temples. Judges 5:26-27 poetically repeats his bowing, falling and lying at her feet. The packaged KJV says she smote off his head; the packaged ASV and WEB instead describe striking through his head.",
+    "reasoning": "Treating the song as a precise standing-to-falling chronology creates tension with a sleeper pinned to the ground. Poetic repetition can describe death without specifying an earlier standing posture. The KJV head wording suggests a different action, but the translations show that this stronger contrast is edition-dependent; the narrative also does not explicitly deny any additional blow.",
+    "scope": "Do not assert all translations describe decapitation, that the man must have been standing, or that the two texts prove two deaths. Literary posture and translation choices require interpretation. This is not independent forensic or historical evidence. The poem’s stars and melting mountains are not automatically literal science claims.",
+    "sources": [
+      {
+        "label": "Judges 4: narrative death scene",
+        "url": "https://ebible.org/eng-kjv/JDG04.htm"
+      },
+      {
+        "label": "Judges 5: KJV song wording",
+        "url": "https://ebible.org/eng-kjv/JDG05.htm"
+      },
+      {
+        "label": "Judges 5: WEB struck-through wording",
+        "url": "https://ebible.org/eng-web/JDG05.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 4:21",
+        "book": 6,
+        "chapter": 4,
+        "verse": 21
+      },
+      {
+        "label": "Judges 4:22",
+        "book": 6,
+        "chapter": 4,
+        "verse": 22
+      },
+      {
+        "label": "Judges 5:24",
+        "book": 6,
+        "chapter": 5,
+        "verse": 24
+      },
+      {
+        "label": "Judges 5:25",
+        "book": 6,
+        "chapter": 5,
+        "verse": 25
+      },
+      {
+        "label": "Judges 5:26",
+        "book": 6,
+        "chapter": 5,
+        "verse": 26
+      },
+      {
+        "label": "Judges 5:27",
+        "book": 6,
+        "chapter": 5,
+        "verse": 27
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "moses-father-in-law-names",
+    "mode": "contradictions",
+    "title": "Moses’ relatives and the in-law label",
+    "status": "Context",
+    "ref": "Judges 1:16",
+    "appliesTo": [
+      "Judges 1:16",
+      "Judges 4:11",
+      "Numbers 10:29",
+      "Exodus 2:16",
+      "Exodus 2:18",
+      "Exodus 2:21",
+      "Exodus 3:1"
+    ],
+    "summary": "KJV calls Hobab Moses’ father-in-law; ASV and WEB call him brother-in-law. Exodus names Reuel and Jethro, while Numbers calls Hobab Reuel’s son. The apparent family conflict depends on the kinship reading.",
+    "text": "Exodus 2:18 names the daughters’ father Reuel, and 2:21 gives Zipporah to Moses. Exodus 3:1 calls Jethro Moses’ father-in-law and priest of Midian. Numbers 10:29 introduces Hobab son of Raguel the Midianite, followed by the in-law label. Judges 4:11 calls Hobab father-in-law in the packaged KJV but brother-in-law in the packaged ASV and WEB. Judges 1:16 associates Moses’ in-law family with the Kenites.",
+    "reasoning": "If every in-law label denotes the same paternal relationship, the named father and son create tension. Reading Hobab as brother-in-law avoids that particular generation conflict; equating Jethro and Reuel as two names for one person is a possible explanation, not an explicit identification in these passages. Numbers’ punctuation alone does not prove which antecedent receives the label.",
+    "scope": "This comparison is edition-sensitive. Do not claim all translations make Hobab the father-in-law, or that Kenite and Midianite must be mutually exclusive ethnic identities. No original-language semantic range or family genealogy is established solely from English translations. Alias and clan relationships remain interpretation questions.",
+    "sources": [
+      {
+        "label": "Exodus 2: Reuel and Zipporah",
+        "url": "https://ebible.org/eng-kjv/EXO02.htm"
+      },
+      {
+        "label": "Exodus 3: Jethro label",
+        "url": "https://ebible.org/eng-kjv/EXO03.htm"
+      },
+      {
+        "label": "Numbers 10: Hobab and Raguel",
+        "url": "https://ebible.org/eng-kjv/NUM10.htm"
+      },
+      {
+        "label": "Judges 1: Kenite relative",
+        "url": "https://ebible.org/eng-kjv/JDG01.htm"
+      },
+      {
+        "label": "Judges 4: KJV father-in-law wording",
+        "url": "https://ebible.org/eng-kjv/JDG04.htm"
+      },
+      {
+        "label": "Judges 4: WEB brother-in-law wording",
+        "url": "https://ebible.org/eng-web/JDG04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Judges 1:16",
+        "book": 6,
+        "chapter": 1,
+        "verse": 16
+      },
+      {
+        "label": "Judges 4:11",
+        "book": 6,
+        "chapter": 4,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 10:29",
+        "book": 3,
+        "chapter": 10,
+        "verse": 29
+      },
+      {
+        "label": "Exodus 2:16",
+        "book": 1,
+        "chapter": 2,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 2:18",
+        "book": 1,
+        "chapter": 2,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 2:21",
+        "book": 1,
+        "chapter": 2,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 3:1",
+        "book": 1,
+        "chapter": 3,
+        "verse": 1
       }
     ],
     "checked": "2026-10-12"

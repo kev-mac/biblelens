@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 228,
+    "evidenceRecords": 230,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 265,
-    "annotatedVerses": 2325
+    "chaptersWithAnnotations": 268,
+    "annotatedVerses": 2349
   },
   "byBook": [
     {
@@ -22,7 +22,7 @@
       "book": "Exodus",
       "chapters": 40,
       "chaptersWithAnnotations": 40,
-      "annotatedVerses": 426
+      "annotatedVerses": 430
     },
     {
       "book": "Leviticus",
@@ -46,13 +46,13 @@
       "book": "Joshua",
       "chapters": 24,
       "chaptersWithAnnotations": 23,
-      "annotatedVerses": 195
+      "annotatedVerses": 197
     },
     {
       "book": "Judges",
       "chapters": 21,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 21
+      "chaptersWithAnnotations": 5,
+      "annotatedVerses": 39
     },
     {
       "book": "Ruth",
@@ -989,7 +989,8 @@
       "bookId": 1,
       "chapter": 2,
       "annotationIds": [
-        "exodus-women-rescue"
+        "exodus-women-rescue",
+        "moses-father-in-law-names"
       ],
       "annotatedVerses": [
         2,
@@ -999,10 +1000,14 @@
         7,
         8,
         9,
-        10
+        10,
+        16,
+        18,
+        21
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1012,9 +1017,11 @@
       "chapter": 3,
       "annotationIds": [
         "exodus-divine-name",
-        "exodus-labor-and-response"
+        "exodus-labor-and-response",
+        "moses-father-in-law-names"
       ],
       "annotatedVerses": [
+        1,
         13,
         14,
         15,
@@ -3115,7 +3122,8 @@
       "chapter": 10,
       "annotationIds": [
         "numbers-cloud-and-local-guidance",
-        "numbers-ark-march-position"
+        "numbers-ark-march-position",
+        "moses-father-in-law-names"
       ],
       "annotatedVerses": [
         14,
@@ -5030,7 +5038,9 @@
         "joshua-gibeonite-covenant"
       ],
       "annotatedVerses": [
+        1,
         8,
+        10,
         11,
         12,
         13,
@@ -5323,10 +5333,12 @@
       "bookId": 6,
       "chapter": 1,
       "annotationIds": [
-        "early-conquest"
+        "early-conquest",
+        "moses-father-in-law-names"
       ],
       "annotatedVerses": [
         8,
+        16,
         19,
         21,
         22,
@@ -5371,27 +5383,61 @@
       "book": "Judges",
       "bookId": 6,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Judges",
       "bookId": 6,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest",
+        "sisera-death-prose-and-song",
+        "moses-father-in-law-names"
+      ],
+      "annotatedVerses": [
+        2,
+        11,
+        17,
+        21,
+        22,
+        23,
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Judges",
       "bookId": 6,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sisera-death-prose-and-song"
+      ],
+      "annotatedVerses": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
