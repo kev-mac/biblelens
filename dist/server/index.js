@@ -14457,11 +14457,17 @@ const EVIDENCE=[
       "Numbers 19:19",
       "Numbers 19:20",
       "Numbers 19:21",
-      "Numbers 19:22"
+      "Numbers 19:22",
+      "Numbers 31:19",
+      "Numbers 31:20",
+      "Numbers 31:21",
+      "Numbers 31:22",
+      "Numbers 31:23",
+      "Numbers 31:24"
     ],
     "status": "Context",
     "summary": "The ash-water procedure restores corpse-related purity while some preparation and contact duties incur impurity until evening.",
-    "text": "The priest, burner and ash collector have washing and evening restrictions. The corpse-contaminated person follows a third- and seventh-day process; contact with the purification water also has a stated restriction.",
+    "text": "The priest, burner and ash collector have washing and evening restrictions. The corpse-contaminated person follows a third- and seventh-day process; contact with the purification water also has a stated restriction. Numbers 31 applies the third- and seventh-day process to killers, corpse contact and captives, and combines fire treatment of suitable materials with purification water. This does not by itself demonstrate modern sterilization standards.",
     "reasoning": "The rules differentiate roles and durations. Calling the preparation purifying does not mean every person handling it immediately becomes ritually clean.",
     "scope": "Ritual purity should not be equated with a measured infection state. These instructions alone do not demonstrate disinfectant efficacy, disease transmission or historical practice.",
     "refs": [
@@ -14554,12 +14560,52 @@ const EVIDENCE=[
         "book": 3,
         "chapter": 19,
         "verse": 22
+      },
+      {
+        "label": "Numbers 31:19",
+        "book": 3,
+        "chapter": 31,
+        "verse": 19
+      },
+      {
+        "label": "Numbers 31:20",
+        "book": 3,
+        "chapter": 31,
+        "verse": 20
+      },
+      {
+        "label": "Numbers 31:21",
+        "book": 3,
+        "chapter": 31,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 31:22",
+        "book": 3,
+        "chapter": 31,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 31:23",
+        "book": 3,
+        "chapter": 31,
+        "verse": 23
+      },
+      {
+        "label": "Numbers 31:24",
+        "book": 3,
+        "chapter": 31,
+        "verse": 24
       }
     ],
     "sources": [
       {
         "label": "Numbers 19 · primary text",
         "url": "https://ebible.org/eng-kjv/NUM19.htm"
+      },
+      {
+        "label": "Numbers 31 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM31.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -15431,6 +15477,614 @@ const EVIDENCE=[
       {
         "label": "Leviticus 23 · primary text",
         "url": "https://ebible.org/eng-kjv/LEV23.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-festival-additional-offerings",
+    "mode": "history",
+    "title": "Festival offerings accumulate alongside the continual offering",
+    "ref": "Numbers 29:1",
+    "appliesTo": [
+      "Numbers 29:1",
+      "Numbers 29:6",
+      "Numbers 29:7",
+      "Numbers 29:11",
+      "Numbers 29:12",
+      "Numbers 29:13",
+      "Numbers 29:16",
+      "Numbers 29:17",
+      "Numbers 29:20",
+      "Numbers 29:23",
+      "Numbers 29:26",
+      "Numbers 29:29",
+      "Numbers 29:32",
+      "Numbers 29:34",
+      "Numbers 29:35",
+      "Numbers 29:36",
+      "Numbers 29:38",
+      "Numbers 29:39"
+    ],
+    "status": "Context",
+    "summary": "The seventh-month schedule repeatedly adds offerings; its seven-day bull sequence totals seventy, followed by a distinct eighth-day prescription.",
+    "text": "The first-day offering is additional to both monthly and daily offerings. Atonement-day offerings are additional to its sin offering and the continual offering. The seven-day feast prescribes thirteen through seven bulls, then one bull on the eighth day.",
+    "reasoning": "The additions are explicit, and the seven-day bull total is arithmetic. Treating each festival list as replacing all regular offerings misses the stated accumulation.",
+    "scope": "This does not verify actual performance, historical livestock supply or any symbolic explanation of seventy.",
+    "refs": [
+      {
+        "label": "Numbers 29:1",
+        "book": 3,
+        "chapter": 29,
+        "verse": 1
+      },
+      {
+        "label": "Numbers 29:6",
+        "book": 3,
+        "chapter": 29,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 29:7",
+        "book": 3,
+        "chapter": 29,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 29:11",
+        "book": 3,
+        "chapter": 29,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 29:12",
+        "book": 3,
+        "chapter": 29,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 29:13",
+        "book": 3,
+        "chapter": 29,
+        "verse": 13
+      },
+      {
+        "label": "Numbers 29:16",
+        "book": 3,
+        "chapter": 29,
+        "verse": 16
+      },
+      {
+        "label": "Numbers 29:17",
+        "book": 3,
+        "chapter": 29,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 29:20",
+        "book": 3,
+        "chapter": 29,
+        "verse": 20
+      },
+      {
+        "label": "Numbers 29:23",
+        "book": 3,
+        "chapter": 29,
+        "verse": 23
+      },
+      {
+        "label": "Numbers 29:26",
+        "book": 3,
+        "chapter": 29,
+        "verse": 26
+      },
+      {
+        "label": "Numbers 29:29",
+        "book": 3,
+        "chapter": 29,
+        "verse": 29
+      },
+      {
+        "label": "Numbers 29:32",
+        "book": 3,
+        "chapter": 29,
+        "verse": 32
+      },
+      {
+        "label": "Numbers 29:34",
+        "book": 3,
+        "chapter": 29,
+        "verse": 34
+      },
+      {
+        "label": "Numbers 29:35",
+        "book": 3,
+        "chapter": 29,
+        "verse": 35
+      },
+      {
+        "label": "Numbers 29:36",
+        "book": 3,
+        "chapter": 29,
+        "verse": 36
+      },
+      {
+        "label": "Numbers 29:38",
+        "book": 3,
+        "chapter": 29,
+        "verse": 38
+      },
+      {
+        "label": "Numbers 29:39",
+        "book": 3,
+        "chapter": 29,
+        "verse": 39
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 29 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM29.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-vow-annulment-authority",
+    "mode": "history",
+    "title": "Vow obligations differ with household status and timely annulment",
+    "ref": "Numbers 30:2",
+    "appliesTo": [
+      "Numbers 30:2",
+      "Numbers 30:3",
+      "Numbers 30:4",
+      "Numbers 30:5",
+      "Numbers 30:6",
+      "Numbers 30:7",
+      "Numbers 30:8",
+      "Numbers 30:9",
+      "Numbers 30:10",
+      "Numbers 30:11",
+      "Numbers 30:12",
+      "Numbers 30:13",
+      "Numbers 30:14",
+      "Numbers 30:15",
+      "Numbers 30:16"
+    ],
+    "status": "Context",
+    "summary": "A father or husband can annul specified vows on hearing them; a widow’s or divorced woman’s vows remain binding.",
+    "text": "The law binds a man to his words, then gives a father or husband a time-limited power over the vows of a young daughter at home or a wife. Silence confirms the obligation; later annulment places responsibility on the husband.",
+    "reasoning": "The explicit exceptions qualify a blanket claim that every vow is irrevocable. They also assign unequal household authority rather than extending the same cancellation power to all adults.",
+    "scope": "This describes the prescription without establishing its historical enforcement or justifying the unequal authority. It does not authorize cancellation of any vow at any later time.",
+    "refs": [
+      {
+        "label": "Numbers 30:2",
+        "book": 3,
+        "chapter": 30,
+        "verse": 2
+      },
+      {
+        "label": "Numbers 30:3",
+        "book": 3,
+        "chapter": 30,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 30:4",
+        "book": 3,
+        "chapter": 30,
+        "verse": 4
+      },
+      {
+        "label": "Numbers 30:5",
+        "book": 3,
+        "chapter": 30,
+        "verse": 5
+      },
+      {
+        "label": "Numbers 30:6",
+        "book": 3,
+        "chapter": 30,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 30:7",
+        "book": 3,
+        "chapter": 30,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 30:8",
+        "book": 3,
+        "chapter": 30,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 30:9",
+        "book": 3,
+        "chapter": 30,
+        "verse": 9
+      },
+      {
+        "label": "Numbers 30:10",
+        "book": 3,
+        "chapter": 30,
+        "verse": 10
+      },
+      {
+        "label": "Numbers 30:11",
+        "book": 3,
+        "chapter": 30,
+        "verse": 11
+      },
+      {
+        "label": "Numbers 30:12",
+        "book": 3,
+        "chapter": 30,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 30:13",
+        "book": 3,
+        "chapter": 30,
+        "verse": 13
+      },
+      {
+        "label": "Numbers 30:14",
+        "book": 3,
+        "chapter": 30,
+        "verse": 14
+      },
+      {
+        "label": "Numbers 30:15",
+        "book": 3,
+        "chapter": 30,
+        "verse": 15
+      },
+      {
+        "label": "Numbers 30:16",
+        "book": 3,
+        "chapter": 30,
+        "verse": 16
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 30 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM30.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-midian-captives-and-distribution",
+    "mode": "history",
+    "title": "The Midian account includes captive executions and distribution of survivors",
+    "ref": "Numbers 31:7",
+    "appliesTo": [
+      "Numbers 31:7",
+      "Numbers 31:8",
+      "Numbers 31:9",
+      "Numbers 31:14",
+      "Numbers 31:15",
+      "Numbers 31:16",
+      "Numbers 31:17",
+      "Numbers 31:18",
+      "Numbers 31:26",
+      "Numbers 31:27",
+      "Numbers 31:28",
+      "Numbers 31:29",
+      "Numbers 31:30",
+      "Numbers 31:35",
+      "Numbers 31:40",
+      "Numbers 31:41",
+      "Numbers 31:47",
+      "Numbers 31:49"
+    ],
+    "status": "Context",
+    "summary": "The narrative orders killings after capture and includes surviving female captives in the distribution of spoils.",
+    "text": "After battle, Moses orders the deaths of male children and women who have had sexual relations, retaining other female captives. The spoils list includes 32,000 persons, with levies for the priest and Levites. The officers report no Israelite soldiers missing.",
+    "reasoning": "These are distinct claims: battlefield deaths, subsequent captive killings, distribution and absence of losses on one side. The latter does not make the campaign bloodless.",
+    "scope": "The text supplies no individual culpability for each child, consent of captives or independent casualty verification. It does not specify the later treatment of every survivor; the ethical questions remain.",
+    "refs": [
+      {
+        "label": "Numbers 31:7",
+        "book": 3,
+        "chapter": 31,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 31:8",
+        "book": 3,
+        "chapter": 31,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 31:9",
+        "book": 3,
+        "chapter": 31,
+        "verse": 9
+      },
+      {
+        "label": "Numbers 31:14",
+        "book": 3,
+        "chapter": 31,
+        "verse": 14
+      },
+      {
+        "label": "Numbers 31:15",
+        "book": 3,
+        "chapter": 31,
+        "verse": 15
+      },
+      {
+        "label": "Numbers 31:16",
+        "book": 3,
+        "chapter": 31,
+        "verse": 16
+      },
+      {
+        "label": "Numbers 31:17",
+        "book": 3,
+        "chapter": 31,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 31:18",
+        "book": 3,
+        "chapter": 31,
+        "verse": 18
+      },
+      {
+        "label": "Numbers 31:26",
+        "book": 3,
+        "chapter": 31,
+        "verse": 26
+      },
+      {
+        "label": "Numbers 31:27",
+        "book": 3,
+        "chapter": 31,
+        "verse": 27
+      },
+      {
+        "label": "Numbers 31:28",
+        "book": 3,
+        "chapter": 31,
+        "verse": 28
+      },
+      {
+        "label": "Numbers 31:29",
+        "book": 3,
+        "chapter": 31,
+        "verse": 29
+      },
+      {
+        "label": "Numbers 31:30",
+        "book": 3,
+        "chapter": 31,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 31:35",
+        "book": 3,
+        "chapter": 31,
+        "verse": 35
+      },
+      {
+        "label": "Numbers 31:40",
+        "book": 3,
+        "chapter": 31,
+        "verse": 40
+      },
+      {
+        "label": "Numbers 31:41",
+        "book": 3,
+        "chapter": 31,
+        "verse": 41
+      },
+      {
+        "label": "Numbers 31:47",
+        "book": 3,
+        "chapter": 31,
+        "verse": 47
+      },
+      {
+        "label": "Numbers 31:49",
+        "book": 3,
+        "chapter": 31,
+        "verse": 49
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 31 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM31.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-east-jordan-conditional-settlement",
+    "mode": "contradictions",
+    "title": "Permission to settle east of Jordan is conditional on crossing to fight",
+    "ref": "Numbers 32:5",
+    "appliesTo": [
+      "Numbers 32:5",
+      "Numbers 32:6",
+      "Numbers 32:16",
+      "Numbers 32:17",
+      "Numbers 32:18",
+      "Numbers 32:19",
+      "Numbers 32:20",
+      "Numbers 32:21",
+      "Numbers 32:22",
+      "Numbers 32:23",
+      "Numbers 32:24",
+      "Numbers 32:27",
+      "Numbers 32:29",
+      "Numbers 32:30",
+      "Numbers 32:31",
+      "Numbers 32:32",
+      "Numbers 32:33"
+    ],
+    "status": "Context",
+    "summary": "The request to remain east of Jordan is followed by a commitment to cross armed before returning to that inheritance.",
+    "text": "Moses objects to leaving the other tribes to fight alone. Reuben and Gad distinguish their families and livestock remaining east from their own military participation west of the river; permission follows that condition.",
+    "reasoning": "The refusal and later grant respond to different commitments, so the sequence need not represent an unexplained reversal. Failure to cross brings a different land-allocation provision.",
+    "scope": "This is the narrative’s negotiated condition. Actual participation, settlement chronology and geographical extent require independent investigation.",
+    "refs": [
+      {
+        "label": "Numbers 32:5",
+        "book": 3,
+        "chapter": 32,
+        "verse": 5
+      },
+      {
+        "label": "Numbers 32:6",
+        "book": 3,
+        "chapter": 32,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 32:16",
+        "book": 3,
+        "chapter": 32,
+        "verse": 16
+      },
+      {
+        "label": "Numbers 32:17",
+        "book": 3,
+        "chapter": 32,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 32:18",
+        "book": 3,
+        "chapter": 32,
+        "verse": 18
+      },
+      {
+        "label": "Numbers 32:19",
+        "book": 3,
+        "chapter": 32,
+        "verse": 19
+      },
+      {
+        "label": "Numbers 32:20",
+        "book": 3,
+        "chapter": 32,
+        "verse": 20
+      },
+      {
+        "label": "Numbers 32:21",
+        "book": 3,
+        "chapter": 32,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 32:22",
+        "book": 3,
+        "chapter": 32,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 32:23",
+        "book": 3,
+        "chapter": 32,
+        "verse": 23
+      },
+      {
+        "label": "Numbers 32:24",
+        "book": 3,
+        "chapter": 32,
+        "verse": 24
+      },
+      {
+        "label": "Numbers 32:27",
+        "book": 3,
+        "chapter": 32,
+        "verse": 27
+      },
+      {
+        "label": "Numbers 32:29",
+        "book": 3,
+        "chapter": 32,
+        "verse": 29
+      },
+      {
+        "label": "Numbers 32:30",
+        "book": 3,
+        "chapter": 32,
+        "verse": 30
+      },
+      {
+        "label": "Numbers 32:31",
+        "book": 3,
+        "chapter": 32,
+        "verse": 31
+      },
+      {
+        "label": "Numbers 32:32",
+        "book": 3,
+        "chapter": 32,
+        "verse": 32
+      },
+      {
+        "label": "Numbers 32:33",
+        "book": 3,
+        "chapter": 32,
+        "verse": 33
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 32 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM32.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-gad-ataroth-inscription",
+    "mode": "history",
+    "title": "The Mesha inscription independently names Gad at Ataroth",
+    "ref": "Numbers 32:3",
+    "appliesTo": [
+      "Numbers 32:3",
+      "Numbers 32:34"
+    ],
+    "status": "Context",
+    "summary": "Numbers associates Gad with Ataroth; Mesha’s inscription also connects Gad with that place in a later royal conflict.",
+    "text": "The primary inscription translation says Gad’s people had long occupied the land of Ataroth, describes an Israelite king building there and claims Mesha captured it. The Louvre catalogs the fragmented, reconstructed stela as a ninth-century BCE Moabite inscription.",
+    "reasoning": "The shared people and place provide an external point of comparison. Mesha’s assertion of longstanding residence supplies no exact date of arrival.",
+    "scope": "This does not verify Moses’s grant, the wilderness itinerary or every settlement detail. The royal victory narrative is interested testimony; its theological and totalizing claims are not independently certified here.",
+    "refs": [
+      {
+        "label": "Numbers 32:3",
+        "book": 3,
+        "chapter": 32,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 32:34",
+        "book": 3,
+        "chapter": 32,
+        "verse": 34
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 32 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM32.htm"
+      },
+      {
+        "label": "Mesha stela · primary translation adapted from Klaas Smelik",
+        "url": "https://www.livius.org/sources/content/anet/320-the-stela-of-mesha/"
+      },
+      {
+        "label": "Louvre · Mesha stela AO 5066",
+        "url": "https://collections.louvre.fr/en/ark:/53355/cl010120339"
       }
     ],
     "checked": "2026-10-12"
