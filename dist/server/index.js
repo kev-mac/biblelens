@@ -605,14 +605,26 @@ const EVIDENCE=[
       "Exodus 21:20",
       "Exodus 21:21",
       "Exodus 21:26",
-      "Exodus 21:27"
+      "Exodus 21:27",
+      "Leviticus 25:10",
+      "Leviticus 25:41",
+      "Leviticus 25:42",
+      "Leviticus 25:43",
+      "Leviticus 25:47",
+      "Leviticus 25:48",
+      "Leviticus 25:49",
+      "Leviticus 25:50",
+      "Leviticus 25:51",
+      "Leviticus 25:52",
+      "Leviticus 25:53",
+      "Leviticus 25:54"
     ],
     "title": "Different legal treatment of servants and slaves",
     "status": "Context",
     "summary": "The laws distinguish servants by origin and family status, preserve ownership claims, and specify some release conditions.",
-    "text": "Leviticus distinguishes impoverished Israelites from foreign slaves, allowing foreign slaves to be inherited as property. Exodus 21 also preserves a master’s claim over a provided wife and children, distinguishes immediate death from survival after beating, and orders freedom for specified injuries. These provisions regulate an unequal institution rather than abolish it.",
-    "reasoning": "The temporary service protections for Israelites do not apply equally to the foreign slaves in verses 44–46. Calling every arrangement ordinary paid employment obscures that distinction.",
-    "scope": "These laws are primary evidence for the text's legal categories; they do not establish how consistently those laws were practiced.",
+    "text": "Leviticus distinguishes impoverished Israelites from foreign slaves inherited as property. It provides redemption and Jubilee release for an Israelite sold to a resident stranger. Exodus also preserves ownership claims over families and specifies injury-related release.",
+    "reasoning": "The broad Jubilee proclamation must be read alongside the explicit foreign-slavery provision. Israelite redemption protections do not establish equivalent release for everyone.",
+    "scope": "These unequal legal categories do not establish how consistently the laws were practiced. The scope of the broad liberty proclamation merits further study.",
     "sources": [
       {
         "label": "Leviticus 25 · primary text",
@@ -741,9 +753,81 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 21,
         "verse": 27
+      },
+      {
+        "label": "Leviticus 25:10",
+        "book": 2,
+        "chapter": 25,
+        "verse": 10
+      },
+      {
+        "label": "Leviticus 25:41",
+        "book": 2,
+        "chapter": 25,
+        "verse": 41
+      },
+      {
+        "label": "Leviticus 25:42",
+        "book": 2,
+        "chapter": 25,
+        "verse": 42
+      },
+      {
+        "label": "Leviticus 25:43",
+        "book": 2,
+        "chapter": 25,
+        "verse": 43
+      },
+      {
+        "label": "Leviticus 25:47",
+        "book": 2,
+        "chapter": 25,
+        "verse": 47
+      },
+      {
+        "label": "Leviticus 25:48",
+        "book": 2,
+        "chapter": 25,
+        "verse": 48
+      },
+      {
+        "label": "Leviticus 25:49",
+        "book": 2,
+        "chapter": 25,
+        "verse": 49
+      },
+      {
+        "label": "Leviticus 25:50",
+        "book": 2,
+        "chapter": 25,
+        "verse": 50
+      },
+      {
+        "label": "Leviticus 25:51",
+        "book": 2,
+        "chapter": 25,
+        "verse": 51
+      },
+      {
+        "label": "Leviticus 25:52",
+        "book": 2,
+        "chapter": 25,
+        "verse": 52
+      },
+      {
+        "label": "Leviticus 25:53",
+        "book": 2,
+        "chapter": 25,
+        "verse": 53
+      },
+      {
+        "label": "Leviticus 25:54",
+        "book": 2,
+        "chapter": 25,
+        "verse": 54
       }
     ],
-    "checked": "2026-10-11"
+    "checked": "2026-10-12"
   },
   {
     "id": "early-aaron",
@@ -7040,14 +7124,19 @@ const EVIDENCE=[
       "Exodus 29:41",
       "Exodus 29:42",
       "Exodus 30:7",
-      "Exodus 30:8"
+      "Exodus 30:8",
+      "Leviticus 24:2",
+      "Leviticus 24:3",
+      "Leviticus 24:4",
+      "Leviticus 24:8",
+      "Leviticus 24:9"
     ],
     "title": "Continual service includes recurring morning and evening duties",
     "status": "Context",
     "summary": "The stated schedules help explain language about continual lamps, offerings and incense.",
-    "text": "The lamp instructions specify evening to morning. The daily offering has morning and evening lambs, and incense is tied to morning lamp care and evening lighting.",
-    "reasoning": "In this context, continual service includes repeated scheduled observance. The wording alone should not be treated as proof that every lamp burned uninterrupted for all 24 hours.",
-    "scope": "This is a contextual reading of ritual instructions, not evidence of actual historical observance or a technical reconstruction of lamp operation.",
+    "text": "Exodus specifies evening-to-morning lamp care and recurring morning and evening offerings and incense. Leviticus repeats the lamp schedule and calls the weekly arrangement of bread continual.",
+    "reasoning": "Continual observance can include scheduled repetition. The wording alone does not establish uninterrupted 24-hour lamp operation.",
+    "scope": "This concerns ritual instructions, not proof of historical observance or a technical reconstruction.",
     "refs": [
       {
         "label": "Exodus 27:20",
@@ -7096,6 +7185,36 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 30,
         "verse": 8
+      },
+      {
+        "label": "Leviticus 24:2",
+        "book": 2,
+        "chapter": 24,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 24:3",
+        "book": 2,
+        "chapter": 24,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 24:4",
+        "book": 2,
+        "chapter": 24,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 24:8",
+        "book": 2,
+        "chapter": 24,
+        "verse": 8
+      },
+      {
+        "label": "Leviticus 24:9",
+        "book": 2,
+        "chapter": 24,
+        "verse": 9
       }
     ],
     "sources": [
@@ -7110,6 +7229,10 @@ const EVIDENCE=[
       {
         "label": "Exodus 30 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO30.htm"
+      },
+      {
+        "label": "Leviticus 24 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV24.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -8877,14 +9000,18 @@ const EVIDENCE=[
       "Leviticus 2:12",
       "Leviticus 7:12",
       "Leviticus 7:13",
-      "Leviticus 7:14"
+      "Leviticus 7:14",
+      "Leviticus 23:17",
+      "Leviticus 23:18",
+      "Leviticus 23:19",
+      "Leviticus 23:20"
     ],
     "title": "Leavened thanksgiving bread is not the prohibited altar burning",
     "status": "Context",
     "summary": "A ban on burning leaven accompanies a permission to bring leavened bread with thanksgiving offerings.",
-    "text": "Leviticus 2 prohibits leaven in the grain offering and burning it on the altar. Leviticus 7 permits leavened bread alongside thanksgiving offerings and assigns a contribution to the priest.",
-    "reasoning": "Bringing accompanying bread and burning the altar portion are different actions. The permission does not say that this bread is burned on the altar.",
-    "scope": "This addresses the stated contrast. Wider festival legislation and later interpretation require separate comparison.",
+    "text": "Leviticus 2 prohibits burning leaven on the altar. Thanksgiving bread in chapter 7 and the leavened firstfruits loaves in chapter 23 are brought with sacrifices and assigned to the priest.",
+    "reasoning": "Bringing bread with an offering is distinct from burning that bread on the altar. Chapter 23 does not direct the wave loaves to be burned.",
+    "scope": "This addresses these stated ritual categories; their composition history and later interpretation remain open.",
     "refs": [
       {
         "label": "Leviticus 2:11",
@@ -8915,6 +9042,30 @@ const EVIDENCE=[
         "book": 2,
         "chapter": 7,
         "verse": 14
+      },
+      {
+        "label": "Leviticus 23:17",
+        "book": 2,
+        "chapter": 23,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 23:18",
+        "book": 2,
+        "chapter": 23,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 23:19",
+        "book": 2,
+        "chapter": 23,
+        "verse": 19
+      },
+      {
+        "label": "Leviticus 23:20",
+        "book": 2,
+        "chapter": 23,
+        "verse": 20
       }
     ],
     "sources": [
@@ -8925,6 +9076,10 @@ const EVIDENCE=[
       {
         "label": "Leviticus 7 · primary scripture",
         "url": "https://ebible.org/eng-kjv/LEV07.htm"
+      },
+      {
+        "label": "Leviticus 23 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV23.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -11063,6 +11218,573 @@ const EVIDENCE=[
       {
         "label": "Leviticus 22 · primary scripture",
         "url": "https://ebible.org/eng-kjv/LEV22.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-festival-day-boundaries",
+    "mode": "contradictions",
+    "ref": "Leviticus 23:27",
+    "appliesTo": [
+      "Leviticus 23:27",
+      "Leviticus 23:32",
+      "Leviticus 23:34",
+      "Leviticus 23:36",
+      "Leviticus 23:39",
+      "Leviticus 23:42"
+    ],
+    "title": "Festival lengths and evening boundaries",
+    "status": "Context",
+    "summary": "The calendar distinguishes an evening boundary from a daytime date, and seven days in booths from an eighth-day assembly.",
+    "text": "The atonement observance is assigned to the tenth day, beginning at the preceding evening. Seven days of the booths festival are followed by a separately specified eighth-day assembly.",
+    "reasoning": "The surrounding instructions explain why the ninth evening and tenth day, or seven festival days and an eighth assembly, need not be competing totals.",
+    "scope": "This reading addresses these particular dates. It does not settle ancient calendar disputes, the meaning of Sabbath in the harvest count, or correspondence with modern dates.",
+    "refs": [
+      {
+        "label": "Leviticus 23:27",
+        "book": 2,
+        "chapter": 23,
+        "verse": 27
+      },
+      {
+        "label": "Leviticus 23:32",
+        "book": 2,
+        "chapter": 23,
+        "verse": 32
+      },
+      {
+        "label": "Leviticus 23:34",
+        "book": 2,
+        "chapter": 23,
+        "verse": 34
+      },
+      {
+        "label": "Leviticus 23:36",
+        "book": 2,
+        "chapter": 23,
+        "verse": 36
+      },
+      {
+        "label": "Leviticus 23:39",
+        "book": 2,
+        "chapter": 23,
+        "verse": 39
+      },
+      {
+        "label": "Leviticus 23:42",
+        "book": 2,
+        "chapter": 23,
+        "verse": 42
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 23 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV23.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-common-law-scope",
+    "mode": "contradictions",
+    "ref": "Leviticus 24:16",
+    "appliesTo": [
+      "Leviticus 24:16",
+      "Leviticus 24:17",
+      "Leviticus 24:18",
+      "Leviticus 24:19",
+      "Leviticus 24:20",
+      "Leviticus 24:21",
+      "Leviticus 24:22",
+      "Leviticus 25:39",
+      "Leviticus 25:40",
+      "Leviticus 25:44",
+      "Leviticus 25:45",
+      "Leviticus 25:46"
+    ],
+    "title": "Common penalties coexist with unequal servitude rules",
+    "status": "Context",
+    "summary": "A declaration of common law appears beside penalties; the next chapter differentiates Israelite service and foreign slavery.",
+    "text": "Leviticus 24 applies its stated sanctions to the resident stranger and native. Leviticus 25 gives impoverished Israelites different protections from foreign slaves, who can be inherited.",
+    "reasoning": "Reading the common-law statement within its immediate penalty context explains part of the contrast. A claim that it guarantees identical legal status in every sphere is contradicted by the explicit servitude distinction.",
+    "scope": "The scope of the general statement remains an interpretive question. These texts do not independently establish historical enforcement or endorse those penalties and inequalities.",
+    "refs": [
+      {
+        "label": "Leviticus 24:16",
+        "book": 2,
+        "chapter": 24,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 24:17",
+        "book": 2,
+        "chapter": 24,
+        "verse": 17
+      },
+      {
+        "label": "Leviticus 24:18",
+        "book": 2,
+        "chapter": 24,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 24:19",
+        "book": 2,
+        "chapter": 24,
+        "verse": 19
+      },
+      {
+        "label": "Leviticus 24:20",
+        "book": 2,
+        "chapter": 24,
+        "verse": 20
+      },
+      {
+        "label": "Leviticus 24:21",
+        "book": 2,
+        "chapter": 24,
+        "verse": 21
+      },
+      {
+        "label": "Leviticus 24:22",
+        "book": 2,
+        "chapter": 24,
+        "verse": 22
+      },
+      {
+        "label": "Leviticus 25:39",
+        "book": 2,
+        "chapter": 25,
+        "verse": 39
+      },
+      {
+        "label": "Leviticus 25:40",
+        "book": 2,
+        "chapter": 25,
+        "verse": 40
+      },
+      {
+        "label": "Leviticus 25:44",
+        "book": 2,
+        "chapter": 25,
+        "verse": 44
+      },
+      {
+        "label": "Leviticus 25:45",
+        "book": 2,
+        "chapter": 25,
+        "verse": 45
+      },
+      {
+        "label": "Leviticus 25:46",
+        "book": 2,
+        "chapter": 25,
+        "verse": 46
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 24 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV24.htm"
+      },
+      {
+        "label": "Leviticus 25 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV25.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-jubilee-property-exceptions",
+    "mode": "history",
+    "ref": "Leviticus 25:23",
+    "appliesTo": [
+      "Leviticus 25:23",
+      "Leviticus 25:25",
+      "Leviticus 25:28",
+      "Leviticus 25:29",
+      "Leviticus 25:30",
+      "Leviticus 25:31",
+      "Leviticus 25:32",
+      "Leviticus 25:33",
+      "Leviticus 25:34",
+      "Leviticus 27:20",
+      "Leviticus 27:21",
+      "Leviticus 27:22",
+      "Leviticus 27:24"
+    ],
+    "title": "Jubilee return depends on the property category",
+    "status": "Context",
+    "summary": "Field, house and dedicated-property provisions have different return rules.",
+    "text": "Ancestral fields return at Jubilee, while a walled-city house can pass permanently after its redemption period. Levite holdings have special protections. Dedicated fields have further conditions; a purchased field returns to its original holder.",
+    "reasoning": "A universal claim that every sale is reversed at Jubilee misses the expressly named exceptions.",
+    "scope": "These are prescribed categories. Actual observance and the history of their composition require independent evidence.",
+    "refs": [
+      {
+        "label": "Leviticus 25:23",
+        "book": 2,
+        "chapter": 25,
+        "verse": 23
+      },
+      {
+        "label": "Leviticus 25:25",
+        "book": 2,
+        "chapter": 25,
+        "verse": 25
+      },
+      {
+        "label": "Leviticus 25:28",
+        "book": 2,
+        "chapter": 25,
+        "verse": 28
+      },
+      {
+        "label": "Leviticus 25:29",
+        "book": 2,
+        "chapter": 25,
+        "verse": 29
+      },
+      {
+        "label": "Leviticus 25:30",
+        "book": 2,
+        "chapter": 25,
+        "verse": 30
+      },
+      {
+        "label": "Leviticus 25:31",
+        "book": 2,
+        "chapter": 25,
+        "verse": 31
+      },
+      {
+        "label": "Leviticus 25:32",
+        "book": 2,
+        "chapter": 25,
+        "verse": 32
+      },
+      {
+        "label": "Leviticus 25:33",
+        "book": 2,
+        "chapter": 25,
+        "verse": 33
+      },
+      {
+        "label": "Leviticus 25:34",
+        "book": 2,
+        "chapter": 25,
+        "verse": 34
+      },
+      {
+        "label": "Leviticus 27:20",
+        "book": 2,
+        "chapter": 27,
+        "verse": 20
+      },
+      {
+        "label": "Leviticus 27:21",
+        "book": 2,
+        "chapter": 27,
+        "verse": 21
+      },
+      {
+        "label": "Leviticus 27:22",
+        "book": 2,
+        "chapter": 27,
+        "verse": 22
+      },
+      {
+        "label": "Leviticus 27:24",
+        "book": 2,
+        "chapter": 27,
+        "verse": 24
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 25 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV25.htm"
+      },
+      {
+        "label": "Leviticus 27 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV27.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-covenant-threat-and-retention",
+    "mode": "contradictions",
+    "ref": "Leviticus 26:14",
+    "appliesTo": [
+      "Leviticus 26:14",
+      "Leviticus 26:15",
+      "Leviticus 26:16",
+      "Leviticus 26:18",
+      "Leviticus 26:19",
+      "Leviticus 26:20",
+      "Leviticus 26:21",
+      "Leviticus 26:24",
+      "Leviticus 26:28",
+      "Leviticus 26:29",
+      "Leviticus 26:30",
+      "Leviticus 26:33",
+      "Leviticus 26:34",
+      "Leviticus 26:35",
+      "Leviticus 26:40",
+      "Leviticus 26:41",
+      "Leviticus 26:42",
+      "Leviticus 26:44",
+      "Leviticus 26:45"
+    ],
+    "title": "Severe covenant threats accompany a retained commitment",
+    "status": "Context",
+    "summary": "Threatened devastation is followed by confession, covenant remembrance and a refusal of total destruction.",
+    "text": "The chapter escalates consequences for disobedience, including famine and exile. Its closing section nevertheless preserves the covenant even in the enemies’ land.",
+    "reasoning": "Statements of rejection and retained commitment address different aspects of the conditional narrative. The latter does not cancel the severity of the earlier threats.",
+    "scope": "These are theological claims within the text. The passage alone cannot verify supernatural causation, forecast dates or date its composition relative to historical disasters.",
+    "refs": [
+      {
+        "label": "Leviticus 26:14",
+        "book": 2,
+        "chapter": 26,
+        "verse": 14
+      },
+      {
+        "label": "Leviticus 26:15",
+        "book": 2,
+        "chapter": 26,
+        "verse": 15
+      },
+      {
+        "label": "Leviticus 26:16",
+        "book": 2,
+        "chapter": 26,
+        "verse": 16
+      },
+      {
+        "label": "Leviticus 26:18",
+        "book": 2,
+        "chapter": 26,
+        "verse": 18
+      },
+      {
+        "label": "Leviticus 26:19",
+        "book": 2,
+        "chapter": 26,
+        "verse": 19
+      },
+      {
+        "label": "Leviticus 26:20",
+        "book": 2,
+        "chapter": 26,
+        "verse": 20
+      },
+      {
+        "label": "Leviticus 26:21",
+        "book": 2,
+        "chapter": 26,
+        "verse": 21
+      },
+      {
+        "label": "Leviticus 26:24",
+        "book": 2,
+        "chapter": 26,
+        "verse": 24
+      },
+      {
+        "label": "Leviticus 26:28",
+        "book": 2,
+        "chapter": 26,
+        "verse": 28
+      },
+      {
+        "label": "Leviticus 26:29",
+        "book": 2,
+        "chapter": 26,
+        "verse": 29
+      },
+      {
+        "label": "Leviticus 26:30",
+        "book": 2,
+        "chapter": 26,
+        "verse": 30
+      },
+      {
+        "label": "Leviticus 26:33",
+        "book": 2,
+        "chapter": 26,
+        "verse": 33
+      },
+      {
+        "label": "Leviticus 26:34",
+        "book": 2,
+        "chapter": 26,
+        "verse": 34
+      },
+      {
+        "label": "Leviticus 26:35",
+        "book": 2,
+        "chapter": 26,
+        "verse": 35
+      },
+      {
+        "label": "Leviticus 26:40",
+        "book": 2,
+        "chapter": 26,
+        "verse": 40
+      },
+      {
+        "label": "Leviticus 26:41",
+        "book": 2,
+        "chapter": 26,
+        "verse": 41
+      },
+      {
+        "label": "Leviticus 26:42",
+        "book": 2,
+        "chapter": 26,
+        "verse": 42
+      },
+      {
+        "label": "Leviticus 26:44",
+        "book": 2,
+        "chapter": 26,
+        "verse": 44
+      },
+      {
+        "label": "Leviticus 26:45",
+        "book": 2,
+        "chapter": 26,
+        "verse": 45
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 26 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV26.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-vow-person-valuations",
+    "mode": "history",
+    "ref": "Leviticus 27:2",
+    "appliesTo": [
+      "Leviticus 27:2",
+      "Leviticus 27:3",
+      "Leviticus 27:4",
+      "Leviticus 27:5",
+      "Leviticus 27:6",
+      "Leviticus 27:7",
+      "Leviticus 27:8"
+    ],
+    "title": "Vow valuations vary by age, sex and means",
+    "status": "Context",
+    "summary": "The prescribed amounts differ by age and sex, with an adjustment for poverty.",
+    "text": "Leviticus 27 sets unequal monetary valuations for persons associated with vows. A priest assesses what a poor person can afford.",
+    "reasoning": "The amounts belong to a vow procedure. Treating them as a biological measurement of human worth supplies a claim the passage does not make.",
+    "scope": "The social rationale and historical practice remain unresolved; the valuation differences are explicit.",
+    "refs": [
+      {
+        "label": "Leviticus 27:2",
+        "book": 2,
+        "chapter": 27,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 27:3",
+        "book": 2,
+        "chapter": 27,
+        "verse": 3
+      },
+      {
+        "label": "Leviticus 27:4",
+        "book": 2,
+        "chapter": 27,
+        "verse": 4
+      },
+      {
+        "label": "Leviticus 27:5",
+        "book": 2,
+        "chapter": 27,
+        "verse": 5
+      },
+      {
+        "label": "Leviticus 27:6",
+        "book": 2,
+        "chapter": 27,
+        "verse": 6
+      },
+      {
+        "label": "Leviticus 27:7",
+        "book": 2,
+        "chapter": 27,
+        "verse": 7
+      },
+      {
+        "label": "Leviticus 27:8",
+        "book": 2,
+        "chapter": 27,
+        "verse": 8
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 27 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV27.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "leviticus-vowed-and-devoted-distinction",
+    "mode": "history",
+    "ref": "Leviticus 27:2",
+    "appliesTo": [
+      "Leviticus 27:2",
+      "Leviticus 27:8",
+      "Leviticus 27:28",
+      "Leviticus 27:29"
+    ],
+    "title": "Valued vows and irrevocable devotion are distinct categories",
+    "status": "Context",
+    "summary": "Person valuations and a death provision occur under different dedication categories.",
+    "text": "Earlier verses describe valuations for vows. Verses 28–29 describe irrevocable devotion, including a person who cannot be redeemed and is subject to death.",
+    "reasoning": "Collapsing both categories into an ordinary redeemable vow obscures the distinction and the death provision.",
+    "scope": "The passage does not by itself settle who could authorize devotion or which persons it covered. It should not be taken as proof that any private vow authorized an execution; Hebrew terminology and other legal texts need further comparison.",
+    "refs": [
+      {
+        "label": "Leviticus 27:2",
+        "book": 2,
+        "chapter": 27,
+        "verse": 2
+      },
+      {
+        "label": "Leviticus 27:8",
+        "book": 2,
+        "chapter": 27,
+        "verse": 8
+      },
+      {
+        "label": "Leviticus 27:28",
+        "book": 2,
+        "chapter": 27,
+        "verse": 28
+      },
+      {
+        "label": "Leviticus 27:29",
+        "book": 2,
+        "chapter": 27,
+        "verse": 29
+      }
+    ],
+    "sources": [
+      {
+        "label": "Leviticus 27 · primary text",
+        "url": "https://ebible.org/eng-kjv/LEV27.htm"
       }
     ],
     "checked": "2026-10-12"
