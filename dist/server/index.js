@@ -4875,12 +4875,16 @@ const EVIDENCE=[
       "Exodus 10:20",
       "Exodus 10:27",
       "Exodus 11:9",
-      "Exodus 11:10"
+      "Exodus 11:10",
+      "Exodus 14:4",
+      "Exodus 14:5",
+      "Exodus 14:8",
+      "Exodus 14:17"
     ],
     "title": "Who hardens Pharaoh’s heart?",
     "status": "Context",
     "summary": "The narrative attributes Pharaoh’s resistance both to Pharaoh himself and to God.",
-    "text": "Exodus 7:3 announces divine hardening. Exodus 8:15 and 8:32 explicitly say Pharaoh hardens his own heart; 9:12 attributes hardening to the LORD, while 9:34 again names Pharaoh and his servants. Exodus 10:1–3 places divine hardening beside a demand that Pharaoh humble himself.",
+    "text": "Exodus 7:3 announces divine hardening. Exodus 8:15 and 8:32 explicitly say Pharaoh hardens his own heart; 9:12 attributes hardening to the LORD, while 9:34 again names Pharaoh and his servants. Exodus 10:1–3 places divine hardening beside a demand that Pharaoh humble himself. Exodus 14 again juxtaposes divine hardening (14:4,8,17) with Pharaoh and his servants regretting the release of their workforce (14:5).",
     "reasoning": "These are different assignments of agency within the same narrative. They are not automatically mutually exclusive, but they raise a question about how responsibility and divine intervention are related.",
     "scope": "The verses do not supply a complete theory of free will. A claim that God only hardens an already resistant ruler must also account for the advance announcement; a claim that Pharaoh has no agency must account for passages assigning action and blame to him.",
     "refs": [
@@ -4967,6 +4971,30 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 11,
         "verse": 10
+      },
+      {
+        "label": "Exodus 14:4",
+        "book": 1,
+        "chapter": 14,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 14:5",
+        "book": 1,
+        "chapter": 14,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 14:8",
+        "book": 1,
+        "chapter": 14,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 14:17",
+        "book": 1,
+        "chapter": 14,
+        "verse": 17
       }
     ],
     "sources": [
@@ -4989,6 +5017,10 @@ const EVIDENCE=[
       {
         "label": "Exodus 11 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO11.htm"
+      },
+      {
+        "label": "Exodus 14 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO14.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -5410,12 +5442,21 @@ const EVIDENCE=[
       "Exodus 12:27",
       "Exodus 12:34",
       "Exodus 12:39",
-      "Exodus 12:42"
+      "Exodus 12:42",
+      "Exodus 13:3",
+      "Exodus 13:6",
+      "Exodus 13:7",
+      "Exodus 13:8",
+      "Exodus 13:9",
+      "Exodus 13:10",
+      "Exodus 13:14",
+      "Exodus 13:15",
+      "Exodus 13:16"
     ],
     "title": "An escape story becomes a recurring observance",
     "status": "Context",
     "summary": "Passover instructions connect household ritual, the departure narrative and explanation to future children.",
-    "text": "Exodus 12:14 and 12:24–27 prescribe continuing observance and an answer to children who ask its meaning. The same chapter describes departure in haste and dough that had not risen in 12:34 and 12:39.",
+    "text": "Exodus 12:14 and 12:24–27 prescribe continuing observance and an answer to children who ask its meaning. The same chapter describes departure in haste and dough that had not risen in 12:34 and 12:39. Exodus 13:8–10 and 13:14–16 continue the connection between observance, memory and teaching children.",
     "reasoning": "The chapter presents a ritual with an explanation rooted in the narrated rescue. It combines instructions for commemoration with the story those instructions ask later generations to remember.",
     "scope": "A text prescribing a recurring festival does not independently establish when every element of the festival originated, how uniformly it was practiced or the historicity of the departure.",
     "refs": [
@@ -5490,12 +5531,70 @@ const EVIDENCE=[
         "book": 1,
         "chapter": 12,
         "verse": 42
+      },
+      {
+        "label": "Exodus 13:3",
+        "book": 1,
+        "chapter": 13,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 13:6",
+        "book": 1,
+        "chapter": 13,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 13:7",
+        "book": 1,
+        "chapter": 13,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 13:8",
+        "book": 1,
+        "chapter": 13,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 13:9",
+        "book": 1,
+        "chapter": 13,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 13:10",
+        "book": 1,
+        "chapter": 13,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 13:14",
+        "book": 1,
+        "chapter": 13,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 13:15",
+        "book": 1,
+        "chapter": 13,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 13:16",
+        "book": 1,
+        "chapter": 13,
+        "verse": 16
       }
     ],
     "sources": [
       {
         "label": "Exodus 12 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO12.htm"
+      },
+      {
+        "label": "Exodus 13 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO13.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -5560,6 +5659,655 @@ const EVIDENCE=[
       {
         "label": "Exodus 12 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO12.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-firstborn-redemption",
+    "mode": "history",
+    "ref": "Exodus 13:2",
+    "appliesTo": [
+      "Exodus 13:2",
+      "Exodus 13:12",
+      "Exodus 13:13",
+      "Exodus 13:14",
+      "Exodus 13:15"
+    ],
+    "title": "Firstborn people are redeemed, not offered as animals",
+    "status": "Context",
+    "summary": "The firstborn dedication includes explicit redemption of human children and a separate rule for donkeys.",
+    "text": "Exodus 13:2 dedicates firstborn humans and animals. Verses 12–15 distinguish animal offerings, a donkey redeemed with a lamb or killed, and human firstborn who must be redeemed.",
+    "reasoning": "The general dedication must be read with the specific human-redemption rule. Verse 15 explicitly contrasts animal sacrifice with redeeming the speaker’s children.",
+    "scope": "These verses establish the rule this passage gives. They do not independently reconstruct every ancient practice or settle how redemption was administered in each period.",
+    "refs": [
+      {
+        "label": "Exodus 13:2",
+        "book": 1,
+        "chapter": 13,
+        "verse": 2
+      },
+      {
+        "label": "Exodus 13:12",
+        "book": 1,
+        "chapter": 13,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 13:13",
+        "book": 1,
+        "chapter": 13,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 13:14",
+        "book": 1,
+        "chapter": 13,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 13:15",
+        "book": 1,
+        "chapter": 13,
+        "verse": 15
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 13 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO13.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-wind-setdown",
+    "mode": "science",
+    "ref": "Exodus 14:21",
+    "appliesTo": [
+      "Exodus 14:21",
+      "Exodus 14:22",
+      "Exodus 14:26",
+      "Exodus 14:27",
+      "Exodus 14:28",
+      "Exodus 14:29"
+    ],
+    "title": "A modeled wind effect is not proof of a crossing",
+    "status": "Context",
+    "summary": "Strong wind can expose shallow terrain in a model; the proposed location and conditions remain assumptions.",
+    "text": "Exodus 14:21 describes an east wind acting overnight, and 14:22–29 describes passage between waters and their return. Drews and Han (2010) modeled wind setdown in reconstructed eastern Nile-delta terrain. Their 28 m/s east-wind experiment exposed a temporary land bridge for about four hours.",
+    "reasoning": "The study demonstrates a hydrodynamic possibility under specified geography and forcing. It is a model experiment, not an observation of Moses’s crossing.",
+    "scope": "The model does not establish the biblical site, ancient weather, participants or event. Its shallow-basin results should not be generalized to arbitrary deep-water locations or treated as verification of every narrative detail.",
+    "refs": [
+      {
+        "label": "Exodus 14:21",
+        "book": 1,
+        "chapter": 14,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 14:22",
+        "book": 1,
+        "chapter": 14,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 14:26",
+        "book": 1,
+        "chapter": 14,
+        "verse": 26
+      },
+      {
+        "label": "Exodus 14:27",
+        "book": 1,
+        "chapter": 14,
+        "verse": 27
+      },
+      {
+        "label": "Exodus 14:28",
+        "book": 1,
+        "chapter": 14,
+        "verse": 28
+      },
+      {
+        "label": "Exodus 14:29",
+        "book": 1,
+        "chapter": 14,
+        "verse": 29
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 14 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO14.htm"
+      },
+      {
+        "label": "Drews & Han (2010) · Wind setdown model, PLOS ONE",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0012481"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-sea-song",
+    "mode": "history",
+    "ref": "Exodus 15:1",
+    "appliesTo": [
+      "Exodus 15:1",
+      "Exodus 15:3",
+      "Exodus 15:6",
+      "Exodus 15:8",
+      "Exodus 15:10",
+      "Exodus 15:12",
+      "Exodus 15:19",
+      "Exodus 15:20",
+      "Exodus 15:21"
+    ],
+    "title": "A victory song uses bodily and landscape imagery",
+    "status": "Context",
+    "summary": "The song retells the sea rescue with images of a divine hand, nostrils and the earth swallowing enemies.",
+    "text": "Exodus 15 identifies the passage as a song. Its account of the victory includes a warrior description, a right hand, a blast from nostrils and the earth swallowing enemies. Verse 19 returns to a prose summary of waters covering the Egyptian forces.",
+    "reasoning": "Genre matters: the song’s figurative language and its prose summary describe the victory in different forms. Treating every body-part image as a literal anatomical claim overlooks the explicitly musical setting.",
+    "scope": "Poetic form does not itself prove or disprove the underlying event. The passage alone cannot date the song’s composition or independently confirm the army’s destruction.",
+    "refs": [
+      {
+        "label": "Exodus 15:1",
+        "book": 1,
+        "chapter": 15,
+        "verse": 1
+      },
+      {
+        "label": "Exodus 15:3",
+        "book": 1,
+        "chapter": 15,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 15:6",
+        "book": 1,
+        "chapter": 15,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 15:8",
+        "book": 1,
+        "chapter": 15,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 15:10",
+        "book": 1,
+        "chapter": 15,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 15:12",
+        "book": 1,
+        "chapter": 15,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 15:19",
+        "book": 1,
+        "chapter": 15,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 15:20",
+        "book": 1,
+        "chapter": 15,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 15:21",
+        "book": 1,
+        "chapter": 15,
+        "verse": 21
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 15 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO15.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-bitter-water",
+    "mode": "science",
+    "ref": "Exodus 15:23",
+    "appliesTo": [
+      "Exodus 15:23",
+      "Exodus 15:24",
+      "Exodus 15:25",
+      "Exodus 15:26"
+    ],
+    "title": "Sweetened water without a specified mechanism",
+    "status": "Context",
+    "summary": "The account names a piece of wood and changed water but gives no chemical explanation.",
+    "text": "Exodus 15:23–25 describes bitter water at Marah becoming drinkable after Moses throws in wood shown to him. Verse 26 connects obedience with a promise concerning diseases brought upon Egypt.",
+    "reasoning": "The narrative supplies a sequence and theological interpretation, but does not identify the wood, water chemistry, dose or a reproducible treatment.",
+    "scope": "The passage is insufficient to validate a modern purification method or identify a botanical species. Its promise concerning Egyptian diseases should not be expanded into a universal medical guarantee.",
+    "refs": [
+      {
+        "label": "Exodus 15:23",
+        "book": 1,
+        "chapter": 15,
+        "verse": 23
+      },
+      {
+        "label": "Exodus 15:24",
+        "book": 1,
+        "chapter": 15,
+        "verse": 24
+      },
+      {
+        "label": "Exodus 15:25",
+        "book": 1,
+        "chapter": 15,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 15:26",
+        "book": 1,
+        "chapter": 15,
+        "verse": 26
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 15 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO15.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-manna-storage",
+    "mode": "contradictions",
+    "ref": "Exodus 16:19",
+    "appliesTo": [
+      "Exodus 16:19",
+      "Exodus 16:20",
+      "Exodus 16:22",
+      "Exodus 16:23",
+      "Exodus 16:24",
+      "Exodus 16:25",
+      "Exodus 16:26",
+      "Exodus 16:27",
+      "Exodus 16:28",
+      "Exodus 16:29",
+      "Exodus 16:30"
+    ],
+    "title": "Overnight manna and an explicit Sabbath exception",
+    "status": "Context",
+    "summary": "Ordinary leftovers spoil; the portion kept for the Sabbath is explicitly said to remain usable.",
+    "text": "Exodus 16:19–20 forbids ordinary overnight storage and reports worms and odor when people disobey. Verses 22–26 give different instructions for the sixth day and state that the stored Sabbath portion does not spoil.",
+    "reasoning": "The account describes an explicit exception with its own instructions. The differing outcomes are not conflicting accounts of one identical storage situation.",
+    "scope": "This explains the narrative’s rules. It does not establish a natural preservative mechanism, identify manna scientifically or verify the claimed exceptional behavior.",
+    "refs": [
+      {
+        "label": "Exodus 16:19",
+        "book": 1,
+        "chapter": 16,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 16:20",
+        "book": 1,
+        "chapter": 16,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 16:22",
+        "book": 1,
+        "chapter": 16,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 16:23",
+        "book": 1,
+        "chapter": 16,
+        "verse": 23
+      },
+      {
+        "label": "Exodus 16:24",
+        "book": 1,
+        "chapter": 16,
+        "verse": 24
+      },
+      {
+        "label": "Exodus 16:25",
+        "book": 1,
+        "chapter": 16,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 16:26",
+        "book": 1,
+        "chapter": 16,
+        "verse": 26
+      },
+      {
+        "label": "Exodus 16:27",
+        "book": 1,
+        "chapter": 16,
+        "verse": 27
+      },
+      {
+        "label": "Exodus 16:28",
+        "book": 1,
+        "chapter": 16,
+        "verse": 28
+      },
+      {
+        "label": "Exodus 16:29",
+        "book": 1,
+        "chapter": 16,
+        "verse": 29
+      },
+      {
+        "label": "Exodus 16:30",
+        "book": 1,
+        "chapter": 16,
+        "verse": 30
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 16 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO16.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-amalek-memory",
+    "mode": "history",
+    "ref": "Exodus 17:8",
+    "appliesTo": [
+      "Exodus 17:8",
+      "Exodus 17:9",
+      "Exodus 17:10",
+      "Exodus 17:11",
+      "Exodus 17:12",
+      "Exodus 17:13",
+      "Exodus 17:14",
+      "Exodus 17:15",
+      "Exodus 17:16"
+    ],
+    "title": "A battle is linked to enduring hostility",
+    "status": "Context",
+    "summary": "The account links a battle at Rephidim to a written memorial and continuing war against Amalek.",
+    "text": "Exodus 17:8–13 describes fighting, Moses’s raised hands and assistance from Aaron and Hur. Verses 14–16 turn the episode into a written memorial, a promise to erase Amalek’s remembrance and war extending across generations.",
+    "reasoning": "The transition from a particular battle to continuing hostility is explicit. Joshua fights while others support Moses; the passage assigns different roles rather than attributing victory to only one person.",
+    "scope": "The narrative does not independently establish troop numbers or the battle’s date. A theological explanation of victory does not constitute an experimentally demonstrated military mechanism or settle the ethical implications of perpetual hostility.",
+    "refs": [
+      {
+        "label": "Exodus 17:8",
+        "book": 1,
+        "chapter": 17,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 17:9",
+        "book": 1,
+        "chapter": 17,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 17:10",
+        "book": 1,
+        "chapter": 17,
+        "verse": 10
+      },
+      {
+        "label": "Exodus 17:11",
+        "book": 1,
+        "chapter": 17,
+        "verse": 11
+      },
+      {
+        "label": "Exodus 17:12",
+        "book": 1,
+        "chapter": 17,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 17:13",
+        "book": 1,
+        "chapter": 17,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 17:14",
+        "book": 1,
+        "chapter": 17,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 17:15",
+        "book": 1,
+        "chapter": 17,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 17:16",
+        "book": 1,
+        "chapter": 17,
+        "verse": 16
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 17 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO17.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-jethro-delegation",
+    "mode": "history",
+    "ref": "Exodus 18:13",
+    "appliesTo": [
+      "Exodus 18:13",
+      "Exodus 18:14",
+      "Exodus 18:15",
+      "Exodus 18:16",
+      "Exodus 18:17",
+      "Exodus 18:18",
+      "Exodus 18:19",
+      "Exodus 18:20",
+      "Exodus 18:21",
+      "Exodus 18:22",
+      "Exodus 18:23",
+      "Exodus 18:24",
+      "Exodus 18:25",
+      "Exodus 18:26"
+    ],
+    "title": "Judging disputes becomes a shared responsibility",
+    "status": "Context",
+    "summary": "Jethro challenges Moses’s workload and proposes smaller cases be delegated to other judges.",
+    "text": "Exodus 18:13–18 describes a queue lasting all day and Jethro’s warning that the arrangement will exhaust both Moses and the people. Verses 19–26 describe teaching, selection of qualified leaders and escalation of difficult cases.",
+    "reasoning": "This is an institutional change inside the narrative, prompted by advice from Moses’s Midianite father-in-law. Verse 23 qualifies the advice with divine command, and verses 24–26 describe its adoption.",
+    "scope": "The passage provides textual evidence for the institution portrayed. It does not independently verify an administrative system in a dated historical population or establish that the numerical tiers were implemented uniformly.",
+    "refs": [
+      {
+        "label": "Exodus 18:13",
+        "book": 1,
+        "chapter": 18,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 18:14",
+        "book": 1,
+        "chapter": 18,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 18:15",
+        "book": 1,
+        "chapter": 18,
+        "verse": 15
+      },
+      {
+        "label": "Exodus 18:16",
+        "book": 1,
+        "chapter": 18,
+        "verse": 16
+      },
+      {
+        "label": "Exodus 18:17",
+        "book": 1,
+        "chapter": 18,
+        "verse": 17
+      },
+      {
+        "label": "Exodus 18:18",
+        "book": 1,
+        "chapter": 18,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 18:19",
+        "book": 1,
+        "chapter": 18,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 18:20",
+        "book": 1,
+        "chapter": 18,
+        "verse": 20
+      },
+      {
+        "label": "Exodus 18:21",
+        "book": 1,
+        "chapter": 18,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 18:22",
+        "book": 1,
+        "chapter": 18,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 18:23",
+        "book": 1,
+        "chapter": 18,
+        "verse": 23
+      },
+      {
+        "label": "Exodus 18:24",
+        "book": 1,
+        "chapter": 18,
+        "verse": 24
+      },
+      {
+        "label": "Exodus 18:25",
+        "book": 1,
+        "chapter": 18,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 18:26",
+        "book": 1,
+        "chapter": 18,
+        "verse": 26
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 18 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO18.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "exodus-priesthood-access",
+    "mode": "contradictions",
+    "ref": "Exodus 19:5",
+    "appliesTo": [
+      "Exodus 19:5",
+      "Exodus 19:6",
+      "Exodus 19:8",
+      "Exodus 19:12",
+      "Exodus 19:13",
+      "Exodus 19:21",
+      "Exodus 19:22",
+      "Exodus 19:23",
+      "Exodus 19:24"
+    ],
+    "title": "A kingdom of priests still has restricted access",
+    "status": "Context",
+    "summary": "The people are called a kingdom of priests, while the same chapter limits access to the mountain.",
+    "text": "Exodus 19:5–6 gives a collective covenant designation. Verses 12–13 set a lethal boundary, and 19:21–24 distinguishes Moses, Aaron, priests and the people when regulating approach.",
+    "reasoning": "A designation for the whole people does not automatically grant every individual the same ritual role or physical access. The chapter itself distinguishes these categories.",
+    "scope": "This is a possible contextual distinction, not a full reconstruction of how Israelite priesthood developed. The existence of priests in the narrative before later appointment texts requires separate chronological and compositional research.",
+    "refs": [
+      {
+        "label": "Exodus 19:5",
+        "book": 1,
+        "chapter": 19,
+        "verse": 5
+      },
+      {
+        "label": "Exodus 19:6",
+        "book": 1,
+        "chapter": 19,
+        "verse": 6
+      },
+      {
+        "label": "Exodus 19:8",
+        "book": 1,
+        "chapter": 19,
+        "verse": 8
+      },
+      {
+        "label": "Exodus 19:12",
+        "book": 1,
+        "chapter": 19,
+        "verse": 12
+      },
+      {
+        "label": "Exodus 19:13",
+        "book": 1,
+        "chapter": 19,
+        "verse": 13
+      },
+      {
+        "label": "Exodus 19:21",
+        "book": 1,
+        "chapter": 19,
+        "verse": 21
+      },
+      {
+        "label": "Exodus 19:22",
+        "book": 1,
+        "chapter": 19,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 19:23",
+        "book": 1,
+        "chapter": 19,
+        "verse": 23
+      },
+      {
+        "label": "Exodus 19:24",
+        "book": 1,
+        "chapter": 19,
+        "verse": 24
+      }
+    ],
+    "sources": [
+      {
+        "label": "Exodus 19 · primary scripture",
+        "url": "https://ebible.org/eng-kjv/EXO19.htm"
       }
     ],
     "checked": "2026-10-12"
