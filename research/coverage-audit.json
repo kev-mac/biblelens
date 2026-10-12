@@ -5,24 +5,24 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 226,
+    "evidenceRecords": 228,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 259,
-    "annotatedVerses": 2277
+    "chaptersWithAnnotations": 264,
+    "annotatedVerses": 2309
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 8,
-      "annotatedVerses": 27
+      "chaptersWithAnnotations": 11,
+      "annotatedVerses": 36
     },
     {
       "book": "Exodus",
       "chapters": 40,
       "chaptersWithAnnotations": 40,
-      "annotatedVerses": 425
+      "annotatedVerses": 426
     },
     {
       "book": "Leviticus",
@@ -40,13 +40,13 @@
       "book": "Deuteronomy",
       "chapters": 34,
       "chaptersWithAnnotations": 34,
-      "annotatedVerses": 328
+      "annotatedVerses": 335
     },
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 21,
-      "annotatedVerses": 182
+      "chaptersWithAnnotations": 23,
+      "annotatedVerses": 195
     },
     {
       "book": "Judges",
@@ -274,7 +274,7 @@
       "book": "Acts",
       "chapters": 28,
       "chaptersWithAnnotations": 4,
-      "annotatedVerses": 12
+      "annotatedVerses": 14
     },
     {
       "book": "Romans",
@@ -672,9 +672,19 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "shechem-burial-land-purchaser"
+      ],
+      "annotatedVerses": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -762,9 +772,16 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 33,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "shechem-burial-land-purchaser"
+      ],
+      "annotatedVerses": [
+        18,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -930,9 +947,16 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 50,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "shechem-burial-land-purchaser"
+      ],
+      "annotatedVerses": [
+        12,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -1535,7 +1559,8 @@
       "chapter": 23,
       "annotationIds": [
         "early-conquest",
-        "exodus-impartial-judgment"
+        "exodus-impartial-judgment",
+        "joshua-hornet-and-military-victory"
       ],
       "annotatedVerses": [
         1,
@@ -1544,6 +1569,7 @@
         6,
         7,
         8,
+        28,
         29,
         30,
         31
@@ -3907,7 +3933,8 @@
       "chapter": 2,
       "annotationIds": [
         "deuteronomy-edom-passage-and-provisions",
-        "deuteronomy-provision-and-hunger"
+        "deuteronomy-provision-and-hunger",
+        "joshua-hornet-and-military-victory"
       ],
       "annotatedVerses": [
         4,
@@ -3917,7 +3944,10 @@
         8,
         27,
         28,
-        29
+        29,
+        32,
+        33,
+        34
       ],
       "modes": [
         "contradictions"
@@ -3931,9 +3961,14 @@
       "annotationIds": [
         "numbers-rock-instructions-differ",
         "numbers-east-jordan-conditional-settlement",
-        "deuteronomy-og-bed-and-body-size"
+        "deuteronomy-og-bed-and-body-size",
+        "joshua-hornet-and-military-victory"
       ],
       "annotatedVerses": [
+        1,
+        2,
+        3,
+        8,
         11,
         12,
         13,
@@ -5244,18 +5279,43 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest"
+      ],
+      "annotatedVerses": [
+        1,
+        4,
+        5,
+        7,
+        9,
+        12,
+        13,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Joshua",
       "bookId": 5,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest",
+        "joshua-hornet-and-military-victory",
+        "shechem-burial-land-purchaser"
+      ],
+      "annotatedVerses": [
+        8,
+        11,
+        12,
+        18,
+        32
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13193,10 +13253,13 @@
       "bookId": 43,
       "chapter": 7,
       "annotationIds": [
-        "exodus-family-counts"
+        "exodus-family-counts",
+        "shechem-burial-land-purchaser"
       ],
       "annotatedVerses": [
-        14
+        14,
+        15,
+        16
       ],
       "modes": [
         "contradictions"
