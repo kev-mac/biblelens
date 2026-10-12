@@ -1107,12 +1107,16 @@ const EVIDENCE=[
       "Joshua 18:3",
       "Joshua 18:9",
       "Joshua 18:10",
-      "Joshua 18:28"
+      "Joshua 18:28",
+      "Joshua 21:43",
+      "Joshua 21:44",
+      "Joshua 21:45",
+      "Joshua 22:4"
     ],
     "title": "Complete conquest and continuing inhabitants",
     "status": "Context",
     "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
-    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed. Joshua 6:21 describes destruction encompassing people of both sexes and ages and livestock; 6:24 describes burning the city with designated metals preserved for the treasury. The same account orders Rahab and her household brought out alive. These are explicitly differentiated outcomes, so the totalizing statement should be read together with the exceptions rather than quoted in isolation. Joshua 8:24–26 reports destruction of Ai’s inhabitants, while verses 2 and 27 explicitly permit cattle and spoil to be kept. This permission differs from Jericho’s disposal rule and is stated as an exception to treating the cities alike; it is not a claim that all campaigns used one uniform spoil policy. Joshua 10:20 explicitly mentions survivors entering fortified cities after a totalizing battle description. Verses 1 and 6–7 also retain Gibeon as a protected ally. The southern-city destruction reports in 28–40 should therefore be assessed with their stated targets and these exceptions, rather than expanded into an exhaustive population census. Joshua 11 combines a prolonged war (18), a protected Gibeon (19), and Anakim remaining in three named cities (22) with a whole-land summary (23). It also distinguishes killing inhabitants from burning every city: Hazor is singled out for burning, while cattle and spoil are retained (13–14). Neither totalizing victory language nor an absence of a burn layer alone establishes the fate of every settlement. Joshua 12 lists defeated kings associated with Jerusalem, Gezer, Taanach, Megiddo, and Dor. Later inhabitant reports at those places create tension with an exhaustive reading of territorial possession, but defeating a king does not itself assert permanent occupation or extinction of the population. Joshua 13:1 explicitly says much land remains to be possessed, and 13:6 orders allocation while removal of inhabitants is still promised. Verse 13 names peoples not expelled even in the eastern inheritance. Thus assigning land and occupying it are distinguished within Joshua itself. Caleb’s request at 14:12 anticipates his ability to dislodge the Anakim with divine help; 15:14–17 reports local conquests by Caleb and Othniel. These particulars sit beside the earlier Hebron and Anakim victory summaries in 10:37 and 11:21. Their order and scope require interpretation; the future-looking request alone does not prove the same people survived the earlier battle. Joshua 16:10 explicitly retains Gezer’s Canaanites under tribute, while 10:33 describes defeat of Gezer’s king and his assisting force. The earlier military action is not expressly a report that Gezer’s city population was eliminated; applying its no-survivor wording to every later inhabitant would broaden its stated target. Joshua 17:11–13 names towns whose Canaanite inhabitants remain and become tributaries rather than being expelled; the king-list victories therefore do not by themselves establish their permanent depopulation. The Joseph tribes describe iron chariots as an obstacle (16), but Joshua promises successful displacement despite them (18). This is not a statement that God is physically unable to defeat iron chariots. Joshua 18 calls the land subdued while seven tribes still lack their allotments and are urged to take possession (1–3). Survey and lot allocation follow (9–10). The difference between military subjection, administrative allocation and settled possession is explicit; treating these as identical makes the conquest summaries more exhaustive than these particulars support. Jerusalem’s inclusion in Benjamin’s city list (28) is an allotment statement, not a separate report that its remaining Jebusites had been expelled.",
+    "text": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained. Exodus 23:29–30 explicitly promises gradual removal rather than completion in one year, adding context to later conquest summaries. Numbers 33 commands dispossession and anticipates failure to remove inhabitants. A command or conditional warning is not itself a report that complete removal occurred. Deuteronomy 7 also pairs commands of complete destruction with gradual removal to prevent wild animals increasing. This reinforces the distinction between a stated goal and the pace or extent of a reported historical occupation. Deuteronomy 20 distinguishes distant-city rules from a destruction command concerning named local nations. This is a prescribed policy and rationale, not a report establishing its completion. Joshua 2:12–21 makes a conditional protection agreement for Rahab’s household: secrecy and remaining in the marked house are specified. Joshua 6:17,22–25 explicitly preserves that household as an exception, linking it to protection of the spies and their oath. Joshua 3:10 presents the coming crossing as assurance of displacement of seven named peoples. It is a promise within the narrative, not a census showing that displacement was completed. Joshua 6:21 describes destruction encompassing people of both sexes and ages and livestock; 6:24 describes burning the city with designated metals preserved for the treasury. The same account orders Rahab and her household brought out alive. These are explicitly differentiated outcomes, so the totalizing statement should be read together with the exceptions rather than quoted in isolation. Joshua 8:24–26 reports destruction of Ai’s inhabitants, while verses 2 and 27 explicitly permit cattle and spoil to be kept. This permission differs from Jericho’s disposal rule and is stated as an exception to treating the cities alike; it is not a claim that all campaigns used one uniform spoil policy. Joshua 10:20 explicitly mentions survivors entering fortified cities after a totalizing battle description. Verses 1 and 6–7 also retain Gibeon as a protected ally. The southern-city destruction reports in 28–40 should therefore be assessed with their stated targets and these exceptions, rather than expanded into an exhaustive population census. Joshua 11 combines a prolonged war (18), a protected Gibeon (19), and Anakim remaining in three named cities (22) with a whole-land summary (23). It also distinguishes killing inhabitants from burning every city: Hazor is singled out for burning, while cattle and spoil are retained (13–14). Neither totalizing victory language nor an absence of a burn layer alone establishes the fate of every settlement. Joshua 12 lists defeated kings associated with Jerusalem, Gezer, Taanach, Megiddo, and Dor. Later inhabitant reports at those places create tension with an exhaustive reading of territorial possession, but defeating a king does not itself assert permanent occupation or extinction of the population. Joshua 13:1 explicitly says much land remains to be possessed, and 13:6 orders allocation while removal of inhabitants is still promised. Verse 13 names peoples not expelled even in the eastern inheritance. Thus assigning land and occupying it are distinguished within Joshua itself. Caleb’s request at 14:12 anticipates his ability to dislodge the Anakim with divine help; 15:14–17 reports local conquests by Caleb and Othniel. These particulars sit beside the earlier Hebron and Anakim victory summaries in 10:37 and 11:21. Their order and scope require interpretation; the future-looking request alone does not prove the same people survived the earlier battle. Joshua 16:10 explicitly retains Gezer’s Canaanites under tribute, while 10:33 describes defeat of Gezer’s king and his assisting force. The earlier military action is not expressly a report that Gezer’s city population was eliminated; applying its no-survivor wording to every later inhabitant would broaden its stated target. Joshua 17:11–13 names towns whose Canaanite inhabitants remain and become tributaries rather than being expelled; the king-list victories therefore do not by themselves establish their permanent depopulation. The Joseph tribes describe iron chariots as an obstacle (16), but Joshua promises successful displacement despite them (18). This is not a statement that God is physically unable to defeat iron chariots. Joshua 18 calls the land subdued while seven tribes still lack their allotments and are urged to take possession (1–3). Survey and lot allocation follow (9–10). The difference between military subjection, administrative allocation and settled possession is explicit; treating these as identical makes the conquest summaries more exhaustive than these particulars support. Jerusalem’s inclusion in Benjamin’s city list (28) is an allotment statement, not a separate report that its remaining Jebusites had been expelled. Joshua 21:43-45 says Israel possessed the entire promised land, received rest, and saw all the good promises fulfilled; 22:4 invokes that rest when releasing the eastern tribes. These statements must be compared with the land still awaiting possession in 13:1-6 and the inhabitants retained in 16:10 and 17:12-13. An exhaustive claim that every promised district was settled and every enemy population removed conflicts with those particulars. A summary of the decisive victory and provision of inheritance has a narrower scope; the distinction is an interpretation of the statements, not proof that every geographical promise was already physically completed.",
     "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed. This explicit exception qualifies an unqualified reading of destruction language; it does not by itself establish the historical extent of conquest or resolve the moral assessment of the killings.",
     "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest. Later presence can be explained by incomplete occupation or subsequent return, but these alternatives are not independently demonstrated here. The king list is not a population census or an archaeological chronology. These local accounts may narrate different stages or recap earlier events; their placement alone does not establish a dated sequence.",
     "sources": [
@@ -1187,6 +1191,14 @@ const EVIDENCE=[
       {
         "label": "Joshua 18: remaining inhabitants and possession",
         "url": "https://ebible.org/eng-kjv/JOS18.htm"
+      },
+      {
+        "label": "Joshua 21: fulfillment and rest summary",
+        "url": "https://ebible.org/eng-kjv/JOS21.htm"
+      },
+      {
+        "label": "Joshua 22: fulfillment and rest summary",
+        "url": "https://ebible.org/eng-kjv/JOS22.htm"
       }
     ],
     "refs": [
@@ -1873,6 +1885,30 @@ const EVIDENCE=[
         "book": 5,
         "chapter": 18,
         "verse": 28
+      },
+      {
+        "label": "Joshua 21:43",
+        "book": 5,
+        "chapter": 21,
+        "verse": 43
+      },
+      {
+        "label": "Joshua 21:44",
+        "book": 5,
+        "chapter": 21,
+        "verse": 44
+      },
+      {
+        "label": "Joshua 21:45",
+        "book": 5,
+        "chapter": 21,
+        "verse": 45
+      },
+      {
+        "label": "Joshua 22:4",
+        "book": 5,
+        "chapter": 22,
+        "verse": 4
       }
     ],
     "checked": "2026-10-12"
@@ -21222,8 +21258,8 @@ const EVIDENCE=[
     "title": "Achan’s household and individual punishment",
     "status": "Context",
     "summary": "Achan’s children are included in the judgment scene, while Deuteronomy forbids executing children for a parent’s sin. The narrative does not state their individual guilt.",
-    "text": "Joshua 7 begins with one named man taking prohibited spoil but attributes a trespass to Israel and connects it to the army’s defeat. Achan confesses his own action. Verse 24 lists his sons and daughters among those brought to Achor; verse 25 first describes stoning him and then uses plural objects for burning and stoning. Deuteronomy 24:16 forbids putting children to death for fathers and assigns death to each person’s own sin.",
-    "reasoning": "Reading the plural action as extending to the listed family creates tension with the individual-punishment rule. The passage does not explicitly accuse the children of sharing Achan’s theft. Assuming their complicity supplies a fact not stated in this scene. Distinguishing exceptional divine judgment from ordinary legal proceedings is a proposed difference of scope, not an explicit explanation of each family member’s responsibility here.",
+    "text": "Joshua 7 begins with one named man taking prohibited spoil but attributes a trespass to Israel and connects it to the army’s defeat. Achan confesses his own action. Verse 24 lists his sons and daughters among those brought to Achor; verse 25 first describes stoning him and then uses plural objects for burning and stoning. Deuteronomy 24:16 forbids putting children to death for fathers and assigns death to each person’s own sin. Joshua 22:20 recalls that Achan did not perish alone and that wrath affected the congregation. Joshua 7:5 has already reported roughly thirty-six soldiers killed in the defeat. The later recollection confirms wider fatal consequences; it does not name each additional person or separately describe the death or guilt of each child.",
+    "reasoning": "Reading the plural action as extending to the listed family creates tension with the individual-punishment rule. The passage does not explicitly accuse the children of sharing Achan’s theft. Assuming their complicity supplies a fact not stated in this scene. Distinguishing exceptional divine judgment from ordinary legal proceedings is a proposed difference of scope, not an explicit explanation of each family member’s responsibility here. The retrospective statement therefore cannot settle the household question by itself: the earlier military deaths are also part of the narrative consequences.",
     "scope": "The final actions do not itemize each victim, so do not claim the text separately describes every child’s execution. The household-inclusive reading is a qualified interpretation of the listed group and plural wording. The collective military consequences and the execution rule are related but not identical kinds of responsibility. No independent historical occurrence or geological mechanism is established.",
     "sources": [
       {
@@ -21233,6 +21269,10 @@ const EVIDENCE=[
       {
         "label": "Deuteronomy 24 · individual punishment rule",
         "url": "https://ebible.org/eng-kjv/DEU24.htm"
+      },
+      {
+        "label": "Joshua 22:20: retrospective collective consequences",
+        "url": "https://ebible.org/eng-kjv/JOS22.htm"
       }
     ],
     "ref": "Joshua 7:1",
@@ -21246,7 +21286,9 @@ const EVIDENCE=[
       "Joshua 7:24",
       "Joshua 7:25",
       "Joshua 7:26",
-      "Deuteronomy 24:16"
+      "Deuteronomy 24:16",
+      "Joshua 22:20",
+      "Joshua 7:5"
     ],
     "refs": [
       {
@@ -21308,6 +21350,18 @@ const EVIDENCE=[
         "book": 4,
         "chapter": 24,
         "verse": 16
+      },
+      {
+        "label": "Joshua 22:20",
+        "book": 5,
+        "chapter": 22,
+        "verse": 20
+      },
+      {
+        "label": "Joshua 7:5",
+        "book": 5,
+        "chapter": 7,
+        "verse": 5
       }
     ],
     "checked": "2026-10-12"

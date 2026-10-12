@@ -8,8 +8,8 @@
     "evidenceRecords": 226,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 257,
-    "annotatedVerses": 2271
+    "chaptersWithAnnotations": 259,
+    "annotatedVerses": 2277
   },
   "byBook": [
     {
@@ -45,8 +45,8 @@
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 19,
-      "annotatedVerses": 176
+      "chaptersWithAnnotations": 21,
+      "annotatedVerses": 182
     },
     {
       "book": "Judges",
@@ -4884,6 +4884,7 @@
       ],
       "annotatedVerses": [
         1,
+        5,
         11,
         12,
         15,
@@ -5209,18 +5210,34 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest"
+      ],
+      "annotatedVerses": [
+        43,
+        44,
+        45
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Joshua",
       "bookId": 5,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest",
+        "joshua-achan-household-responsibility"
+      ],
+      "annotatedVerses": [
+        4,
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
