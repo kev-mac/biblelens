@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 225,
+    "evidenceRecords": 226,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 253,
-    "annotatedVerses": 2227
+    "chaptersWithAnnotations": 254,
+    "annotatedVerses": 2245
   },
   "byBook": [
     {
@@ -45,8 +45,8 @@
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 15,
-      "annotatedVerses": 132
+      "chaptersWithAnnotations": 16,
+      "annotatedVerses": 150
     },
     {
       "book": "Judges",
@@ -4971,6 +4971,7 @@
         28,
         30,
         32,
+        33,
         35,
         37,
         39,
@@ -5080,7 +5081,8 @@
       "bookId": 5,
       "chapter": 15,
       "annotationIds": [
-        "early-conquest"
+        "early-conquest",
+        "joshua-judah-town-totals"
       ],
       "annotatedVerses": [
         13,
@@ -5088,6 +5090,22 @@
         15,
         16,
         17,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
         63
       ],
       "modes": [
@@ -5099,9 +5117,15 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "early-conquest"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

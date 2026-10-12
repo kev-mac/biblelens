@@ -1,0 +1,9 @@
+# Joshua 15–16 checkpoint — 2026-10-12
+
+Read all 73 packaged KJV verses, Joshua 15 WEB town lists, publisher pages, and NET translator note/wording for 15:32/36; checked Joshua 19’s Simeon allocation. New town-total record: 38 comma-separated KJV entries at 15:21–32 excluding Hazor alias; WEB groups verse 25 into two compounds and yields 36 versus stated 29. At 15:33–36 KJV separates 15 names while WEB’s Gederah-or-Gederothaim yields 14, agreeing with its total. The record qualifies place-count versus punctuation, proposes no established textual correction, and does not claim Simeon allocation automatically reconciles 29.
+
+Extended existing conquest record to Gezer: 10:33 is defeat of a king and assisting force, whereas 16:10 explicitly retains inhabitants under tribute. No duplicate record and no claim the two passages explicitly describe identical populations. Existing Caleb/Jerusalem findings retained. No generic geography or moral summary.
+
+Unresolved: original list composition, manuscript variants and alternate names, exact southern city identifications, chronology of allocation and tribute. Higher-reasoning review candidate: manuscript/counting analysis; NET’s proposed scribal additions remain a hypothesis. USCCB page returned 403; no repeated retry and no claims sourced to it. Other primary/publisher sources supported this checkpoint. Next sequential Joshua 17–18; inspect allocation, daughters’ inheritance and remaining inhabitants against existing Numbers 27/36 records. Exact audit to append. Annotation presence is not exhaustive review. Latest UI and Ask fixes preserved.
+
+Validated audit: 226 evidence records plus 6 studies; 254/1189 chapters with annotations (21.4%); 2245 unique verse locations; 935 chapters without annotations; 2313 evidence placements. All checks passed.
