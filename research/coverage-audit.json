@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 192,
+    "evidenceRecords": 196,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 209,
-    "annotatedVerses": 1789
+    "chaptersWithAnnotations": 212,
+    "annotatedVerses": 1845
   },
   "byBook": [
     {
@@ -22,13 +22,13 @@
       "book": "Exodus",
       "chapters": 40,
       "chaptersWithAnnotations": 40,
-      "annotatedVerses": 417
+      "annotatedVerses": 421
     },
     {
       "book": "Leviticus",
       "chapters": 27,
       "chaptersWithAnnotations": 27,
-      "annotatedVerses": 358
+      "annotatedVerses": 361
     },
     {
       "book": "Numbers",
@@ -39,8 +39,8 @@
     {
       "book": "Deuteronomy",
       "chapters": 34,
-      "chaptersWithAnnotations": 11,
-      "annotatedVerses": 76
+      "chaptersWithAnnotations": 14,
+      "annotatedVerses": 125
     },
     {
       "book": "Joshua",
@@ -1813,7 +1813,8 @@
       "annotationIds": [
         "exodus-firstborn-redemption",
         "exodus-commanded-cherubim",
-        "exodus-replacement-tablets"
+        "exodus-replacement-tablets",
+        "deuteronomy-forty-days-no-water"
       ],
       "annotatedVerses": [
         1,
@@ -1826,7 +1827,8 @@
       ],
       "modes": [
         "history",
-        "contradictions"
+        "contradictions",
+        "science"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1893,10 +1895,15 @@
       "chapter": 37,
       "annotationIds": [
         "exodus-commanded-cherubim",
-        "exodus-instructions-and-completion"
+        "exodus-instructions-and-completion",
+        "deuteronomy-ark-builder"
       ],
       "annotatedVerses": [
         1,
+        2,
+        3,
+        4,
+        5,
         7,
         8,
         9,
@@ -2440,9 +2447,13 @@
       "bookId": 2,
       "chapter": 17,
       "annotationIds": [
-        "leviticus-blood-life-and-atonement"
+        "leviticus-blood-life-and-atonement",
+        "deuteronomy-local-slaughter-and-sacrifice"
       ],
       "annotatedVerses": [
+        3,
+        4,
+        5,
         10,
         11,
         12,
@@ -2450,7 +2461,8 @@
         14
       ],
       "modes": [
-        "science"
+        "science",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -3482,7 +3494,8 @@
       "annotationIds": [
         "numbers-military-census-scope",
         "numbers-rebellion-household-judgment",
-        "numbers-daughters-inheritance-and-marriage"
+        "numbers-daughters-inheritance-and-marriage",
+        "deuteronomy-eyewitness-audience"
       ],
       "annotatedVerses": [
         1,
@@ -3513,7 +3526,8 @@
         65
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -4023,9 +4037,30 @@
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exodus-intercession-relenting",
+        "exodus-replacement-tablets",
+        "deuteronomy-forty-days-no-water"
+      ],
+      "annotatedVerses": [
+        9,
+        10,
+        14,
+        17,
+        18,
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "modes": [
+        "history",
+        "contradictions",
+        "science"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -4033,13 +4068,28 @@
       "bookId": 4,
       "chapter": 10,
       "annotationIds": [
-        "early-aaron"
+        "early-aaron",
+        "exodus-intercession-relenting",
+        "exodus-replacement-tablets",
+        "numbers-levite-income-and-contribution",
+        "deuteronomy-oaths-and-matthew",
+        "deuteronomy-ark-builder"
       ],
       "annotatedVerses": [
-        6
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        20
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "history"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -4047,18 +4097,62 @@
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "deuteronomy-tefillin-material-evidence",
+        "deuteronomy-eyewitness-audience"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        18,
+        19,
+        20
+      ],
+      "modes": [
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Deuteronomy",
       "bookId": 4,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "leviticus-blood-life-and-atonement",
+        "numbers-levite-income-and-contribution",
+        "deuteronomy-local-slaughter-and-sacrifice"
+      ],
+      "annotatedVerses": [
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27
+      ],
+      "modes": [
+        "science",
+        "history",
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
