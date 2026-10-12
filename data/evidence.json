@@ -21608,13 +21608,25 @@
       "Joshua 15:33",
       "Joshua 15:34",
       "Joshua 15:35",
-      "Joshua 15:36"
+      "Joshua 15:36",
+      "Joshua 19:2",
+      "Joshua 19:3",
+      "Joshua 19:4",
+      "Joshua 19:5",
+      "Joshua 19:6",
+      "Joshua 19:32",
+      "Joshua 19:33",
+      "Joshua 19:34",
+      "Joshua 19:35",
+      "Joshua 19:36",
+      "Joshua 19:37",
+      "Joshua 19:38"
     ],
     "status": "Context",
-    "summary": "The southern town list exceeds its stated total of 29. Compound and alternative names affect the count, so each subtotal must be checked against its wording.",
-    "text": "Verses 21–32 give 38 comma-separated name entries in the packaged KJV, excluding the explicit Hazor alias. WEB joins the four names in verse 25 into two compound names, yielding 36 towns; both editions state 29. Verses 33–36 give 15 separately named entries in KJV but state 14; WEB treats Gederah/Gederothaim as alternative names, yielding 14.",
-    "reasoning": "The southern discrepancy remains after the two compound names are recognized. The NET translator note likewise counts 36 against 29 and proposes alternative names or later additions as explanations. These are proposals, not a verified restoration. The second subtotal illustrates why punctuation alone cannot establish how many distinct places a list identifies.",
-    "scope": "This compares the displayed lists with their subtotals; it does not identify the original manuscript reading or establish ancient administrative boundaries. Joshua 19 says Simeon received part of Judah, but does not explicitly revise this total. No textual correction is made to the packaged Bible.",
+    "summary": "Counting compound names together, Judah’s southern list has 36 towns against a total of 29; Naphtali’s fortified-city list has 16 against 19. Some other totals depend on alternative names.",
+    "text": "Verses 21–32 give 38 comma-separated name entries in the packaged KJV, excluding the explicit Hazor alias. WEB joins the four names in verse 25 into two compound names, yielding 36 towns; both editions state 29. Verses 33–36 give 15 separately named entries in KJV but state 14; WEB treats Gederah/Gederothaim as alternative names, yielding 14. In Joshua 19:2–6 the packaged KJV separately lists Beersheba and Sheba, giving 14 names against 13. WEB treats Sheba as an alternative name, giving 13. The publisher’s eBible KJV page also uses an alternative-name wording here, unlike this packaged KJV dataset. At 19:35–38 both packaged KJV and WEB list 16 fortified-city names, while the stated total is 19; adjacent verses describe boundary locations separately.",
+    "reasoning": "The southern discrepancy remains after the two compound names are recognized. The NET translator note likewise counts 36 against 29 and proposes alternative names or later additions as explanations. These are proposals, not a verified restoration. The second subtotal illustrates why punctuation alone cannot establish how many distinct places a list identifies. The Naphtali subtotal therefore requires an explanation of which places its total includes or how the list was transmitted. Boundary points should not automatically be counted as additional fortified cities. The differing Sheba wording demonstrates why counts must specify the edition being assessed.",
+    "scope": "This compares the displayed lists with their subtotals; it does not identify the original manuscript reading or establish ancient administrative boundaries. Joshua 19 says Simeon received part of Judah, but does not explicitly revise this total. No textual correction is made to the packaged Bible. No omitted Naphtali towns are supplied and no manuscript omission is established by the arithmetic alone.",
     "sources": [
       {
         "label": "Joshua 15: KJV town lists",
@@ -21635,6 +21647,14 @@
       {
         "label": "Joshua 19: Simeon allocation",
         "url": "https://ebible.org/eng-kjv/JOS19.htm"
+      },
+      {
+        "label": "Joshua 19: WEB lists and boundary descriptions",
+        "url": "https://ebible.org/engwebp/JOS19.htm"
+      },
+      {
+        "label": "NET Joshua 19:38: stated total",
+        "url": "https://classic.net.bible.org/passage.php?passage=Jos+19:38&theme=wiki"
       }
     ],
     "refs": [
@@ -21733,6 +21753,78 @@
         "book": 5,
         "chapter": 15,
         "verse": 36
+      },
+      {
+        "label": "Joshua 19:2",
+        "book": 5,
+        "chapter": 19,
+        "verse": 2
+      },
+      {
+        "label": "Joshua 19:3",
+        "book": 5,
+        "chapter": 19,
+        "verse": 3
+      },
+      {
+        "label": "Joshua 19:4",
+        "book": 5,
+        "chapter": 19,
+        "verse": 4
+      },
+      {
+        "label": "Joshua 19:5",
+        "book": 5,
+        "chapter": 19,
+        "verse": 5
+      },
+      {
+        "label": "Joshua 19:6",
+        "book": 5,
+        "chapter": 19,
+        "verse": 6
+      },
+      {
+        "label": "Joshua 19:32",
+        "book": 5,
+        "chapter": 19,
+        "verse": 32
+      },
+      {
+        "label": "Joshua 19:33",
+        "book": 5,
+        "chapter": 19,
+        "verse": 33
+      },
+      {
+        "label": "Joshua 19:34",
+        "book": 5,
+        "chapter": 19,
+        "verse": 34
+      },
+      {
+        "label": "Joshua 19:35",
+        "book": 5,
+        "chapter": 19,
+        "verse": 35
+      },
+      {
+        "label": "Joshua 19:36",
+        "book": 5,
+        "chapter": 19,
+        "verse": 36
+      },
+      {
+        "label": "Joshua 19:37",
+        "book": 5,
+        "chapter": 19,
+        "verse": 37
+      },
+      {
+        "label": "Joshua 19:38",
+        "book": 5,
+        "chapter": 19,
+        "verse": 38
       }
     ],
     "checked": "2026-10-12"

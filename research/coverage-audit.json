@@ -8,8 +8,8 @@
     "evidenceRecords": 226,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 256,
-    "annotatedVerses": 2259
+    "chaptersWithAnnotations": 257,
+    "annotatedVerses": 2271
   },
   "byBook": [
     {
@@ -45,8 +45,8 @@
     {
       "book": "Joshua",
       "chapters": 24,
-      "chaptersWithAnnotations": 18,
-      "annotatedVerses": 164
+      "chaptersWithAnnotations": 19,
+      "annotatedVerses": 176
     },
     {
       "book": "Judges",
@@ -5174,9 +5174,26 @@
       "book": "Joshua",
       "bookId": 5,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "joshua-judah-town-totals"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
