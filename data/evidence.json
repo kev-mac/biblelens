@@ -635,12 +635,18 @@
       "Leviticus 25:51",
       "Leviticus 25:52",
       "Leviticus 25:53",
-      "Leviticus 25:54"
+      "Leviticus 25:54",
+      "Deuteronomy 15:13",
+      "Deuteronomy 15:14",
+      "Deuteronomy 15:15",
+      "Deuteronomy 15:16",
+      "Deuteronomy 15:17",
+      "Deuteronomy 15:18"
     ],
     "title": "Different legal treatment of servants and slaves",
     "status": "Context",
     "summary": "The laws distinguish servants by origin and family status, preserve ownership claims, and specify some release conditions.",
-    "text": "Leviticus distinguishes impoverished Israelites from foreign slaves inherited as property. It provides redemption and Jubilee release for an Israelite sold to a resident stranger. Exodus also preserves ownership claims over families and specifies injury-related release.",
+    "text": "Leviticus distinguishes impoverished Israelites from foreign slaves inherited as property. It provides redemption and Jubilee release for an Israelite sold to a resident stranger. Exodus also preserves ownership claims over families and specifies injury-related release. Deuteronomy 15 explicitly includes Hebrew women in six-year service release, requires departure provisions and describes remaining permanently through an ear-piercing procedure. These protections remain within its specified servant category.",
     "reasoning": "The broad Jubilee proclamation must be read alongside the explicit foreign-slavery provision. Israelite redemption protections do not establish equivalent release for everyone.",
     "scope": "These unequal legal categories do not establish how consistently the laws were practiced. The scope of the broad liberty proclamation merits further study.",
     "sources": [
@@ -843,6 +849,42 @@
         "book": 2,
         "chapter": 25,
         "verse": 54
+      },
+      {
+        "label": "Deuteronomy 15:13",
+        "book": 4,
+        "chapter": 15,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 15:14",
+        "book": 4,
+        "chapter": 15,
+        "verse": 14
+      },
+      {
+        "label": "Deuteronomy 15:15",
+        "book": 4,
+        "chapter": 15,
+        "verse": 15
+      },
+      {
+        "label": "Deuteronomy 15:16",
+        "book": 4,
+        "chapter": 15,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 15:17",
+        "book": 4,
+        "chapter": 15,
+        "verse": 17
+      },
+      {
+        "label": "Deuteronomy 15:18",
+        "book": 4,
+        "chapter": 15,
+        "verse": 18
       }
     ],
     "checked": "2026-10-12"
@@ -5804,12 +5846,15 @@
       "Exodus 13:10",
       "Exodus 13:14",
       "Exodus 13:15",
-      "Exodus 13:16"
+      "Exodus 13:16",
+      "Deuteronomy 16:3",
+      "Deuteronomy 16:4",
+      "Deuteronomy 16:8"
     ],
     "title": "An escape story becomes a recurring observance",
     "status": "Context",
     "summary": "Passover instructions connect household ritual, the departure narrative and explanation to future children.",
-    "text": "Exodus 12:14 and 12:24–27 prescribe continuing observance and an answer to children who ask its meaning. The same chapter describes departure in haste and dough that had not risen in 12:34 and 12:39. Exodus 13:8–10 and 13:14–16 continue the connection between observance, memory and teaching children.",
+    "text": "Exodus 12:14 and 12:24–27 prescribe continuing observance and an answer to children who ask its meaning. The same chapter describes departure in haste and dough that had not risen in 12:34 and 12:39. Exodus 13:8–10 and 13:14–16 continue the connection between observance, memory and teaching children. Deuteronomy 16 again connects unleavened bread with the remembered departure and forbids overnight leftovers; its six days plus seventh-day assembly retain a seven-day framework.",
     "reasoning": "The chapter presents a ritual with an explanation rooted in the narrated rescue. It combines instructions for commemoration with the story those instructions ask later generations to remember.",
     "scope": "A text prescribing a recurring festival does not independently establish when every element of the festival originated, how uniformly it was practiced or the historicity of the departure.",
     "refs": [
@@ -5938,6 +5983,24 @@
         "book": 1,
         "chapter": 13,
         "verse": 16
+      },
+      {
+        "label": "Deuteronomy 16:3",
+        "book": 4,
+        "chapter": 16,
+        "verse": 3
+      },
+      {
+        "label": "Deuteronomy 16:4",
+        "book": 4,
+        "chapter": 16,
+        "verse": 4
+      },
+      {
+        "label": "Deuteronomy 16:8",
+        "book": 4,
+        "chapter": 16,
+        "verse": 8
       }
     ],
     "sources": [
@@ -5948,6 +6011,10 @@
       {
         "label": "Exodus 13 · primary scripture",
         "url": "https://ebible.org/eng-kjv/EXO13.htm"
+      },
+      {
+        "label": "Deuteronomy 16 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU16.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -14800,11 +14867,19 @@
       "Deuteronomy 10:9",
       "Deuteronomy 12:12",
       "Deuteronomy 12:18",
-      "Deuteronomy 12:19"
+      "Deuteronomy 12:19",
+      "Deuteronomy 14:22",
+      "Deuteronomy 14:23",
+      "Deuteronomy 14:24",
+      "Deuteronomy 14:25",
+      "Deuteronomy 14:26",
+      "Deuteronomy 14:27",
+      "Deuteronomy 14:28",
+      "Deuteronomy 14:29"
     ],
     "status": "Context",
     "summary": "Tithes support Levite service, and a tenth of that tithe is assigned onward to Aaron.",
-    "text": "The chapter contrasts a land inheritance with support through tithes. Levites must give a portion of what they receive before their households consume the remainder. Numbers 35 assigns forty-eight Levite towns with surrounding land from other tribes’ possessions. This distinguishes residence and pasture provision from a separate tribal land allotment, while historical implementation remains unverified. Deuteronomy reiterates Levi’s lack of a tribal inheritance and includes Levites in shared meals at the chosen place, with a warning not to forsake them.",
+    "text": "The chapter contrasts a land inheritance with support through tithes. Levites must give a portion of what they receive before their households consume the remainder. Numbers 35 assigns forty-eight Levite towns with surrounding land from other tribes’ possessions. This distinguishes residence and pasture provision from a separate tribal land allotment, while historical implementation remains unverified. Deuteronomy reiterates Levi’s lack of a tribal inheritance and includes Levites in shared meals at the chosen place, with a warning not to forsake them. Deuteronomy 14 instead describes a household tithe meal at the chosen place, including conversion to money when distant, and a third-year local store for Levites and vulnerable residents. Numbers 18 gives the tithe to Levites with an onward priestly portion. Treating these as separate tithes can reconcile the allocations, but their relationship is not explicitly set out here.",
     "reasoning": "Describing this simply as all tithes belonging directly to priests erases the separate recipients and onward obligation.",
     "scope": "This is a prescribed arrangement, not proof of collection or distribution in a particular historical period. Other tithe legislation and land-holding rules require comparison.",
     "refs": [
@@ -14933,6 +15008,54 @@
         "book": 4,
         "chapter": 12,
         "verse": 19
+      },
+      {
+        "label": "Deuteronomy 14:22",
+        "book": 4,
+        "chapter": 14,
+        "verse": 22
+      },
+      {
+        "label": "Deuteronomy 14:23",
+        "book": 4,
+        "chapter": 14,
+        "verse": 23
+      },
+      {
+        "label": "Deuteronomy 14:24",
+        "book": 4,
+        "chapter": 14,
+        "verse": 24
+      },
+      {
+        "label": "Deuteronomy 14:25",
+        "book": 4,
+        "chapter": 14,
+        "verse": 25
+      },
+      {
+        "label": "Deuteronomy 14:26",
+        "book": 4,
+        "chapter": 14,
+        "verse": 26
+      },
+      {
+        "label": "Deuteronomy 14:27",
+        "book": 4,
+        "chapter": 14,
+        "verse": 27
+      },
+      {
+        "label": "Deuteronomy 14:28",
+        "book": 4,
+        "chapter": 14,
+        "verse": 28
+      },
+      {
+        "label": "Deuteronomy 14:29",
+        "book": 4,
+        "chapter": 14,
+        "verse": 29
       }
     ],
     "sources": [
@@ -14951,6 +15074,10 @@
       {
         "label": "Deuteronomy 12 · primary text",
         "url": "https://ebible.org/eng-kjv/DEU12.htm"
+      },
+      {
+        "label": "Deuteronomy 14 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU14.htm"
       }
     ],
     "checked": "2026-10-12"
@@ -17798,6 +17925,412 @@
       {
         "label": "Leviticus 17 · primary text",
         "url": "https://ebible.org/eng-kjv/LEV17.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-prophetic-tests",
+    "mode": "contradictions",
+    "title": "A fulfilled sign is not sufficient under both prophetic tests",
+    "ref": "Deuteronomy 13:1",
+    "appliesTo": [
+      "Deuteronomy 13:1",
+      "Deuteronomy 13:2",
+      "Deuteronomy 13:3",
+      "Deuteronomy 13:4",
+      "Deuteronomy 13:5",
+      "Deuteronomy 18:20",
+      "Deuteronomy 18:21",
+      "Deuteronomy 18:22"
+    ],
+    "status": "Context",
+    "summary": "One passage rejects a prophet despite a fulfilled sign; another rejects an unfulfilled prediction.",
+    "text": "Chapter 13 makes loyalty to God a separate criterion. Chapter 18 treats an unfulfilled prediction spoken in God’s name as evidence against its claimed origin.",
+    "reasoning": "These tests need not contradict: failure can disqualify a claim without success guaranteeing authorization. Both passages also prescribe death for specified unauthorized prophecy.",
+    "scope": "This compares the stated tests; it neither verifies a miracle nor establishes how the penalties were enforced.",
+    "refs": [
+      {
+        "label": "Deuteronomy 13:1",
+        "book": 4,
+        "chapter": 13,
+        "verse": 1
+      },
+      {
+        "label": "Deuteronomy 13:2",
+        "book": 4,
+        "chapter": 13,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 13:3",
+        "book": 4,
+        "chapter": 13,
+        "verse": 3
+      },
+      {
+        "label": "Deuteronomy 13:4",
+        "book": 4,
+        "chapter": 13,
+        "verse": 4
+      },
+      {
+        "label": "Deuteronomy 13:5",
+        "book": 4,
+        "chapter": 13,
+        "verse": 5
+      },
+      {
+        "label": "Deuteronomy 18:20",
+        "book": 4,
+        "chapter": 18,
+        "verse": 20
+      },
+      {
+        "label": "Deuteronomy 18:21",
+        "book": 4,
+        "chapter": 18,
+        "verse": 21
+      },
+      {
+        "label": "Deuteronomy 18:22",
+        "book": 4,
+        "chapter": 18,
+        "verse": 22
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 13 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU13.htm"
+      },
+      {
+        "label": "Deuteronomy 18 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU18.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-city-apostasy-sanction",
+    "mode": "history",
+    "title": "Investigation precedes a collective city-destruction penalty",
+    "ref": "Deuteronomy 13:12",
+    "appliesTo": [
+      "Deuteronomy 13:12",
+      "Deuteronomy 13:13",
+      "Deuteronomy 13:14",
+      "Deuteronomy 13:15",
+      "Deuteronomy 13:16",
+      "Deuteronomy 13:17"
+    ],
+    "status": "Context",
+    "summary": "The law requires inquiry into a city’s alleged apostasy, then prescribes destruction of inhabitants, animals and property.",
+    "text": "Verse 14 demands a confirmed allegation; verses 15–17 extend destruction to the city and prohibit retaining its spoil or rebuilding it.",
+    "reasoning": "An evidentiary requirement does not make the resulting penalty individualized. The passage does not specify separate findings of guilt for each person affected.",
+    "scope": "This is a prescribed sanction, not independent evidence that a particular city underwent it, and describing it does not endorse it.",
+    "refs": [
+      {
+        "label": "Deuteronomy 13:12",
+        "book": 4,
+        "chapter": 13,
+        "verse": 12
+      },
+      {
+        "label": "Deuteronomy 13:13",
+        "book": 4,
+        "chapter": 13,
+        "verse": 13
+      },
+      {
+        "label": "Deuteronomy 13:14",
+        "book": 4,
+        "chapter": 13,
+        "verse": 14
+      },
+      {
+        "label": "Deuteronomy 13:15",
+        "book": 4,
+        "chapter": 13,
+        "verse": 15
+      },
+      {
+        "label": "Deuteronomy 13:16",
+        "book": 4,
+        "chapter": 13,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 13:17",
+        "book": 4,
+        "chapter": 13,
+        "verse": 17
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 13 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU13.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-poverty-conditions",
+    "mode": "contradictions",
+    "title": "The no-poor ideal is conditional alongside continuing need",
+    "ref": "Deuteronomy 15:4",
+    "appliesTo": [
+      "Deuteronomy 15:4",
+      "Deuteronomy 15:5",
+      "Deuteronomy 15:7",
+      "Deuteronomy 15:8",
+      "Deuteronomy 15:9",
+      "Deuteronomy 15:10",
+      "Deuteronomy 15:11"
+    ],
+    "status": "Context",
+    "summary": "The chapter sets out a conditional no-poor ideal while expecting poverty to persist.",
+    "text": "Verses 4–5 connect blessing with obedience. Verses 7–11 require assistance and forbid withholding loans because the release year approaches.",
+    "reasoning": "A conditional ideal and an expectation of continuing poverty are not necessarily incompatible. Verse 11 makes ongoing need a reason for generosity, rather than an exemption from it.",
+    "scope": "The passage does not measure historical poverty or prove that a particular debtor caused their own deprivation.",
+    "refs": [
+      {
+        "label": "Deuteronomy 15:4",
+        "book": 4,
+        "chapter": 15,
+        "verse": 4
+      },
+      {
+        "label": "Deuteronomy 15:5",
+        "book": 4,
+        "chapter": 15,
+        "verse": 5
+      },
+      {
+        "label": "Deuteronomy 15:7",
+        "book": 4,
+        "chapter": 15,
+        "verse": 7
+      },
+      {
+        "label": "Deuteronomy 15:8",
+        "book": 4,
+        "chapter": 15,
+        "verse": 8
+      },
+      {
+        "label": "Deuteronomy 15:9",
+        "book": 4,
+        "chapter": 15,
+        "verse": 9
+      },
+      {
+        "label": "Deuteronomy 15:10",
+        "book": 4,
+        "chapter": 15,
+        "verse": 10
+      },
+      {
+        "label": "Deuteronomy 15:11",
+        "book": 4,
+        "chapter": 15,
+        "verse": 11
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 15 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU15.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-firstling-recipients",
+    "mode": "contradictions",
+    "title": "Firstling meat is assigned to different eaters",
+    "ref": "Deuteronomy 14:23",
+    "appliesTo": [
+      "Deuteronomy 14:23",
+      "Deuteronomy 15:19",
+      "Deuteronomy 15:20",
+      "Deuteronomy 15:21",
+      "Deuteronomy 15:22",
+      "Numbers 18:17",
+      "Numbers 18:18"
+    ],
+    "status": "Context",
+    "summary": "Deuteronomy addresses household consumption of firstlings; Numbers assigns their meat to Aaron.",
+    "text": "Numbers 18:17–18 specifies cattle, sheep and goat firstlings as holy offerings whose flesh belongs to Aaron. Deuteronomy 15 directs the addressed household to eat firstlings at the chosen place; blemished animals may be eaten locally.",
+    "reasoning": "Read as exclusive allocations of the same entire offering, the recipients differ. Shared portions or differing legal arrangements are possible explanations, but these passages do not explicitly combine them.",
+    "scope": "Blemished animals are an explicit exception to sacrifice. The comparison does not establish actual distribution or the date of either law.",
+    "refs": [
+      {
+        "label": "Deuteronomy 14:23",
+        "book": 4,
+        "chapter": 14,
+        "verse": 23
+      },
+      {
+        "label": "Deuteronomy 15:19",
+        "book": 4,
+        "chapter": 15,
+        "verse": 19
+      },
+      {
+        "label": "Deuteronomy 15:20",
+        "book": 4,
+        "chapter": 15,
+        "verse": 20
+      },
+      {
+        "label": "Deuteronomy 15:21",
+        "book": 4,
+        "chapter": 15,
+        "verse": 21
+      },
+      {
+        "label": "Deuteronomy 15:22",
+        "book": 4,
+        "chapter": 15,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 18:17",
+        "book": 3,
+        "chapter": 18,
+        "verse": 17
+      },
+      {
+        "label": "Numbers 18:18",
+        "book": 3,
+        "chapter": 18,
+        "verse": 18
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 14 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU14.htm"
+      },
+      {
+        "label": "Deuteronomy 15 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU15.htm"
+      },
+      {
+        "label": "Numbers 18 · firstling allocation",
+        "url": "https://ebible.org/eng-kjv/NUM18.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "deuteronomy-passover-place",
+    "mode": "contradictions",
+    "title": "Household Passover instructions and the chosen sanctuary differ",
+    "ref": "Deuteronomy 16:1",
+    "appliesTo": [
+      "Deuteronomy 16:1",
+      "Deuteronomy 16:2",
+      "Deuteronomy 16:5",
+      "Deuteronomy 16:6",
+      "Deuteronomy 16:7",
+      "Exodus 12:3",
+      "Exodus 12:7",
+      "Exodus 12:14",
+      "Exodus 12:22",
+      "Exodus 12:24",
+      "Exodus 12:25",
+      "Exodus 12:46"
+    ],
+    "status": "Context",
+    "summary": "Exodus describes Passover in houses; Deuteronomy requires sacrifice at the chosen place.",
+    "text": "Exodus 12 locates the initial meal in Egypt’s households and prescribes continuing observance. Deuteronomy 16 forbids local-town sacrifice and names the chosen place.",
+    "reasoning": "The settings differ: an escape-night household rite and a settlement-era pilgrimage rule. This can explain changed instructions, although Exodus also directs later observance and does not spell out that transition.",
+    "scope": "The texts alone do not identify the sanctuary, date centralization or prove historical enforcement. Cooking terminology and the range of permitted animals remain separate questions.",
+    "refs": [
+      {
+        "label": "Deuteronomy 16:1",
+        "book": 4,
+        "chapter": 16,
+        "verse": 1
+      },
+      {
+        "label": "Deuteronomy 16:2",
+        "book": 4,
+        "chapter": 16,
+        "verse": 2
+      },
+      {
+        "label": "Deuteronomy 16:5",
+        "book": 4,
+        "chapter": 16,
+        "verse": 5
+      },
+      {
+        "label": "Deuteronomy 16:6",
+        "book": 4,
+        "chapter": 16,
+        "verse": 6
+      },
+      {
+        "label": "Deuteronomy 16:7",
+        "book": 4,
+        "chapter": 16,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 12:3",
+        "book": 1,
+        "chapter": 12,
+        "verse": 3
+      },
+      {
+        "label": "Exodus 12:7",
+        "book": 1,
+        "chapter": 12,
+        "verse": 7
+      },
+      {
+        "label": "Exodus 12:14",
+        "book": 1,
+        "chapter": 12,
+        "verse": 14
+      },
+      {
+        "label": "Exodus 12:22",
+        "book": 1,
+        "chapter": 12,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 12:24",
+        "book": 1,
+        "chapter": 12,
+        "verse": 24
+      },
+      {
+        "label": "Exodus 12:25",
+        "book": 1,
+        "chapter": 12,
+        "verse": 25
+      },
+      {
+        "label": "Exodus 12:46",
+        "book": 1,
+        "chapter": 12,
+        "verse": 46
+      }
+    ],
+    "sources": [
+      {
+        "label": "Deuteronomy 16 · primary text",
+        "url": "https://ebible.org/eng-kjv/DEU16.htm"
+      },
+      {
+        "label": "Exodus 12 · household rite and later observance",
+        "url": "https://ebible.org/eng-kjv/EXO12.htm"
       }
     ],
     "checked": "2026-10-12"
