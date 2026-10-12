@@ -14469,6 +14469,355 @@ const EVIDENCE=[
       }
     ],
     "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-serpent-making-and-worship",
+    "mode": "contradictions",
+    "title": "A commissioned serpent later becomes an object of prohibited worship",
+    "ref": "Numbers 21:8",
+    "appliesTo": [
+      "Numbers 21:8",
+      "Numbers 21:9",
+      "2 Kings 18:4"
+    ],
+    "status": "Context",
+    "summary": "Numbers describes its construction for a specific purpose; Kings explains its destruction by reference to incense worship.",
+    "text": "Moses makes the metal serpent in Numbers. In 2 Kings 18:4, Hezekiah breaks the serpent attributed to Moses because the Israelites had been burning incense to it.",
+    "reasoning": "The later account condemns the object’s cultic use, rather than saying that Moses’s original commission was unauthorized.",
+    "scope": "This is an internal narrative comparison. It does not independently verify that the same artifact survived or settle every biblical image prohibition.",
+    "refs": [
+      {
+        "label": "Numbers 21:8",
+        "book": 3,
+        "chapter": 21,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 21:9",
+        "book": 3,
+        "chapter": 21,
+        "verse": 9
+      },
+      {
+        "label": "2 Kings 18:4",
+        "book": 11,
+        "chapter": 18,
+        "verse": 4
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 21 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM21.htm"
+      },
+      {
+        "label": "2 Kings 18 · primary text",
+        "url": "https://ebible.org/eng-kjv/2KI18.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-serpent-healing-and-envenoming",
+    "mode": "science",
+    "title": "Looking at a metal serpent is a miracle claim, not established snakebite treatment",
+    "ref": "Numbers 21:6",
+    "appliesTo": [
+      "Numbers 21:6",
+      "Numbers 21:7",
+      "Numbers 21:8",
+      "Numbers 21:9"
+    ],
+    "status": "Context",
+    "summary": "The narrative attributes survival to looking at the serpent; modern care addresses venom effects medically.",
+    "text": "Numbers says bitten people lived after looking at the metal serpent. WHO identifies appropriate high-quality antivenoms as the most effective treatment to prevent or reverse most venom effects.",
+    "reasoning": "The narrative supplies no controlled evidence that viewing an object neutralizes venom. A theological miracle claim should not be presented as a demonstrated medical procedure.",
+    "scope": "Species, venom exposure, clinical course and independent historicity are unspecified. This comparison does not test supernatural intervention; the passage is not a substitute for medical care.",
+    "refs": [
+      {
+        "label": "Numbers 21:6",
+        "book": 3,
+        "chapter": 21,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 21:7",
+        "book": 3,
+        "chapter": 21,
+        "verse": 7
+      },
+      {
+        "label": "Numbers 21:8",
+        "book": 3,
+        "chapter": 21,
+        "verse": 8
+      },
+      {
+        "label": "Numbers 21:9",
+        "book": 3,
+        "chapter": 21,
+        "verse": 9
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 21 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM21.htm"
+      },
+      {
+        "label": "WHO · Snakebite envenoming",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/snakebite-envenoming"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-balaam-permission-and-anger",
+    "mode": "contradictions",
+    "title": "Permission to travel is followed by anger at the journey",
+    "ref": "Numbers 22:12",
+    "appliesTo": [
+      "Numbers 22:12",
+      "Numbers 22:18",
+      "Numbers 22:19",
+      "Numbers 22:20",
+      "Numbers 22:21",
+      "Numbers 22:22",
+      "Numbers 22:32",
+      "Numbers 22:34",
+      "Numbers 22:35"
+    ],
+    "status": "Context",
+    "summary": "Balaam receives conditional permission, yet the next scene says God is angry because he went.",
+    "text": "The initial refusal changes to permission restricted by obedience to God’s word. The angel later calls Balaam’s way perverse, then again permits him to continue under a speech restriction.",
+    "reasoning": "An objection to Balaam’s motive or manner is a possible reading, but the narrative does not explicitly identify one complete explanation for anger following permission.",
+    "scope": "The tension remains under a simple permission-versus-punishment reading. Translation, literary composition and later portrayals require further comparison; motives should not be invented as settled facts.",
+    "refs": [
+      {
+        "label": "Numbers 22:12",
+        "book": 3,
+        "chapter": 22,
+        "verse": 12
+      },
+      {
+        "label": "Numbers 22:18",
+        "book": 3,
+        "chapter": 22,
+        "verse": 18
+      },
+      {
+        "label": "Numbers 22:19",
+        "book": 3,
+        "chapter": 22,
+        "verse": 19
+      },
+      {
+        "label": "Numbers 22:20",
+        "book": 3,
+        "chapter": 22,
+        "verse": 20
+      },
+      {
+        "label": "Numbers 22:21",
+        "book": 3,
+        "chapter": 22,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 22:22",
+        "book": 3,
+        "chapter": 22,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 22:32",
+        "book": 3,
+        "chapter": 22,
+        "verse": 32
+      },
+      {
+        "label": "Numbers 22:34",
+        "book": 3,
+        "chapter": 22,
+        "verse": 34
+      },
+      {
+        "label": "Numbers 22:35",
+        "book": 3,
+        "chapter": 22,
+        "verse": 35
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 22 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM22.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-balaam-inscription-parallel",
+    "mode": "history",
+    "title": "An inscription preserves a separate Balaam son of Beor tradition",
+    "ref": "Numbers 22:5",
+    "appliesTo": [
+      "Numbers 22:5",
+      "Numbers 24:3",
+      "Numbers 24:4",
+      "Numbers 24:15",
+      "Numbers 24:16"
+    ],
+    "status": "Context",
+    "summary": "The Deir Alla text names a seer with the same name and patronymic, in a different narrative.",
+    "text": "The published inscription translation identifies Balaam son of Beor as a seer who receives a night vision. Its divine assembly and disaster story differ from the Numbers account.",
+    "reasoning": "This is evidence for a related named seer tradition outside the biblical manuscript tradition. It does not independently confirm Balak’s commission, the donkey episode or the oracles in Numbers.",
+    "scope": "Precise dating, fragment restoration and literary dependence remain research questions. The linked primary-text translation is mediated through modern editors; no claim of eyewitness verification is made.",
+    "refs": [
+      {
+        "label": "Numbers 22:5",
+        "book": 3,
+        "chapter": 22,
+        "verse": 5
+      },
+      {
+        "label": "Numbers 24:3",
+        "book": 3,
+        "chapter": 24,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 24:4",
+        "book": 3,
+        "chapter": 24,
+        "verse": 4
+      },
+      {
+        "label": "Numbers 24:15",
+        "book": 3,
+        "chapter": 24,
+        "verse": 15
+      },
+      {
+        "label": "Numbers 24:16",
+        "book": 3,
+        "chapter": 24,
+        "verse": 16
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 22 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM22.htm"
+      },
+      {
+        "label": "Numbers 24 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM24.htm"
+      },
+      {
+        "label": "Deir Alla inscription · Levine and Hoftijzer/van der Kooij translations",
+        "url": "https://www.livius.org/sources/content/deir-alla-inscription/"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-blessing-stability-and-relenting",
+    "mode": "contradictions",
+    "title": "An irreversible blessing contrasts with narratives of divine relenting",
+    "ref": "Numbers 23:19",
+    "appliesTo": [
+      "Numbers 23:19",
+      "Numbers 23:20",
+      "Numbers 23:26",
+      "Exodus 32:14"
+    ],
+    "status": "Context",
+    "summary": "Balaam denies divine lying or repentance while declaring a blessing he cannot reverse; Exodus narrates relenting.",
+    "text": "Numbers 23 links its statement to the reliability of the announced blessing. Exodus 32:14 says God repented of the threatened harm after Moses’s intercession.",
+    "reasoning": "A distinction between a firm blessing and a conditional threat offers a contextual reading. Treating Numbers as an absolute denial of every divine change creates a textual tension with Exodus.",
+    "scope": "The passages do not explicitly formulate one comprehensive doctrine of divine change. Hebrew terms, genre and theological reconciliation remain interpretive questions.",
+    "refs": [
+      {
+        "label": "Numbers 23:19",
+        "book": 3,
+        "chapter": 23,
+        "verse": 19
+      },
+      {
+        "label": "Numbers 23:20",
+        "book": 3,
+        "chapter": 23,
+        "verse": 20
+      },
+      {
+        "label": "Numbers 23:26",
+        "book": 3,
+        "chapter": 23,
+        "verse": 26
+      },
+      {
+        "label": "Exodus 32:14",
+        "book": 1,
+        "chapter": 32,
+        "verse": 14
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 23 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM23.htm"
+      },
+      {
+        "label": "Exodus 32 · primary text",
+        "url": "https://ebible.org/eng-kjv/EXO32.htm"
+      }
+    ],
+    "checked": "2026-10-12"
+  },
+  {
+    "id": "numbers-unicorn-translation",
+    "mode": "history",
+    "title": "The KJV unicorn wording is a translation question",
+    "ref": "Numbers 23:22",
+    "appliesTo": [
+      "Numbers 23:22",
+      "Numbers 24:8"
+    ],
+    "status": "Context",
+    "summary": "The strength comparison uses unicorn in KJV and wild ox in modern translations.",
+    "text": "The NET renders the animal as a wild ox. Its note on Numbers 23:22 explains the horn imagery in terms of strength and power.",
+    "reasoning": "The KJV English word alone is not evidence for the familiar mythical horse-like unicorn. The oracle uses the animal in a comparison of strength.",
+    "scope": "Exact zoological identification and the history of translation require further lexical evidence. The poem is not a fossil report or an anatomical description.",
+    "refs": [
+      {
+        "label": "Numbers 23:22",
+        "book": 3,
+        "chapter": 23,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 24:8",
+        "book": 3,
+        "chapter": 24,
+        "verse": 8
+      }
+    ],
+    "sources": [
+      {
+        "label": "Numbers 23 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM23.htm"
+      },
+      {
+        "label": "Numbers 24 · primary text",
+        "url": "https://ebible.org/eng-kjv/NUM24.htm"
+      },
+      {
+        "label": "NET Numbers 23:22 · translation and notes",
+        "url": "https://classic.net.bible.org/bible.php?book=Num&chapter=23"
+      }
+    ],
+    "checked": "2026-10-12"
   }
 ]
 ;
