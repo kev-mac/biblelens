@@ -161,3 +161,12 @@ body.dark{--bg:#000;--panel:#000}
 /* Keep mouse focus quiet while preserving a visible keyboard focus cue. */
 #chat-input:focus,#chat-input:focus-visible,#reader-question:focus,#reader-question:focus-visible{outline:none;box-shadow:none}
 body.keyboard-navigation #chat-input:focus,body.keyboard-navigation #reader-question:focus{outline:3px solid var(--rust);outline-offset:3px}
+
+/* Distinct source-language and law-violation categories. */
+.verse-comparison[data-tone="hebrew"]{--summary-tint:#f5e4bf;--summary-ink:#5c4012}
+.verse-comparison[data-tone="greek"]{--summary-tint:#ebe0f5;--summary-ink:#50356c}
+.verse-comparison[data-tone="violation"]{--summary-tint:#f9ded8;--summary-ink:#792b22}
+.agreement.hebrew,body.dark .agreement.hebrew{background:#f5e4bf;color:#5c4012}
+.agreement.greek,body.dark .agreement.greek{background:#ebe0f5;color:#50356c}
+.agreement.violation,body.dark .agreement.violation{background:#f9ded8;color:#792b22}
+.language-context{font-weight:600;color:var(--muted)}

@@ -23167,9 +23167,9 @@
     "title": "Jair’s count in two published texts",
     "status": "Context",
     "summary": "The KJV gives Jair thirty sons, mounts and cities; Brenton’s English Septuagint translation gives thirty-two for each. This is a published-text difference, not a verified count of Jair’s household.",
-    "text": "The three matched counts in the packaged KJV are thirty. The linked Brenton translation of Judges 10:4 instead prints thirty-two sons, colts and cities.",
+    "text": "The three matched counts in the packaged KJV are thirty. The linked Brenton translation of Judges 10:4 instead prints thirty-two sons, colts and cities. The cited Brenton Greek edition at 10:4 prints τριάκοντα καὶ δύο for the sons, with τριάκοντα δύο repeated for mounts and cities (thirty-two).",
     "reasoning": "These are different numerical readings of the same verse and group, unlike town totals from different periods or districts. The difference is visible in the named editions without assuming all towns called Jair’s towns describe one unchanged holding.",
-    "scope": "Brenton is an English translation of the Septuagint, not the Greek wording or a critical manuscript apparatus. This note does not establish which Greek witnesses agree, which reading is original, or that the KJV mistranslated an original Greek Old Testament. The Old Testament comparison concerns different textual traditions; Hebrew/Greek edition work remains outstanding.",
+    "scope": "The linked Greek is the named Brenton edition of the Septuagint, an ancient Old Testament translation tradition. It is not a critical manuscript apparatus, and it does not establish that all Greek witnesses agree, which reading is original, or that the KJV mistranslated an original Greek Old Testament. The Hebrew/Greek witness comparison remains distinct from a verified historical count.",
     "sources": [
       {
         "label": "Judges 10: KJV",
@@ -23178,6 +23178,10 @@
       {
         "label": "Judges 10: Brenton English Septuagint translation",
         "url": "https://ebible.org/eng-Brenton/JDG10.htm"
+      },
+      {
+        "label": "Judges 10: Brenton Greek edition",
+        "url": "https://ebible.org/grcbrent/JDG10.htm"
       }
     ],
     "refs": [
@@ -23188,7 +23192,11 @@
         "verse": 4
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition"
   },
   {
     "id": "samson-riddle-timing-witness",

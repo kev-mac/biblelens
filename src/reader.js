@@ -19,9 +19,11 @@ const comparisonCache=new Map();
 const comparisonSelections=new Map();
 const comparisonModes=['history','contradictions','science'];
 const comparisonLabels={history:'Historic',contradictions:'Contradictions',science:'Scientific'};
+const languageTags={H:{label:'Hebrew text comparison',tone:'hebrew'},G:{label:'Greek text comparison',tone:'greek'},V:{label:'Law violation',tone:'violation'}};
+function recordTags(item){return [...new Set(Array.isArray(item.tags)?item.tags:item.tag?[item.tag]:[])].filter(t=>languageTags[t]);}
 function comparisonKey(mode=$('#reader-compare').value){return `${readingBook}:${readingChapter}:${$('#reader-edition').value}:${mode}`;}
 function selectionKey(verse){return `${comparisonKey('tabs')}:${verse}`;}
-function visibleComparison(item){return item.mode==='contradictions'||(item.status!=='Agrees'&&(item.status==='Disagrees'||item.discrepancy===true));}
+function visibleComparison(item){return recordTags(item).length>0||item.mode==='contradictions'||(item.status!=='Agrees'&&(item.status==='Disagrees'||item.discrepancy===true));}
 function verseComparisons(verse){return comparisonModes.flatMap(mode=>(comparisonCache.get(comparisonKey(mode))?.items||[]).filter(i=>i.verse===verse).map((item,index)=>({...item,mode,key:`${mode}-${index}`}))).filter(visibleComparison);}
 
 function scienceDetails(item){if(!item.fields?.length)return '';return `<div class="science-fields"><h4>Relevant fields & why</h4>${item.fields.map(f=>`<section class="science-field"><h5>${esc(f.branch)}</h5><p>${esc(f.text)}</p><div class="field-sources">${f.sources.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')}</div></section>`).join('')}</div>`;}
@@ -35,11 +37,13 @@ function comparisonCell(verse){
  const mode=$('#reader-compare').value;if(mode==='none')return '';
  const items=verseComparisons(verse);
  if(!items.length)return '<div class="comparison-cell" aria-label="No comparison attached"></div>';
- const choices=items;
+ const choices=items.flatMap(item=>{const tags=recordTags(item);return tags.length?tags.map(tag=>({...item,tag,key:`${item.key}-${tag}`})):[item];});
  const selected=comparisonSelections.get(selectionKey(verse))||new Set();
- const tone=item=>item.mode;
- const tabs=choices.map(item=>{const duplicate=choices.filter(i=>i.mode===item.mode).length>1;const label=`${comparisonLabels[item.mode]}${item.status?' · '+item.status:''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;const open=selected.has(item.key);return `<button type="button" class="agreement comparison-tab ${tone(item)}" id="comparison-tab-${verse}-${item.key}" aria-pressed="${open}" aria-expanded="${open}" aria-controls="comparison-panel-${verse}-${item.key}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${comparisonLabels[item.mode][0]}</button>`}).join('');
- const panels=choices.map(active=>`<section class="verse-comparison comparison-panel" data-tone="${tone(active)}" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${selected.has(active.key)?'':'hidden'}>${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(active.summary||active.text)}</p>${comparisonCitations(verse,[active])}<details class="comparison-details"><summary>Details & sources</summary><p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${alternativeReadings(verse)}${active.reasoning?`<p><b>Reasoning:</b> ${esc(active.reasoning)}</p>`:''}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details></section>`).join('');
+ const tone=item=>languageTags[item.tag]?.tone||item.mode;
+ const category=item=>languageTags[item.tag]?.label||comparisonLabels[item.mode];
+ const icon=item=>item.tag||(item.mode==='history'?'↶':comparisonLabels[item.mode][0]);
+ const tabs=choices.map(item=>{const duplicate=choices.filter(i=>category(i)===category(item)).length>1;const label=`${category(item)}${item.status?' · '+item.status:''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;const open=selected.has(item.key);return `<button type="button" class="agreement comparison-tab ${tone(item)}" id="comparison-tab-${verse}-${item.key}" aria-pressed="${open}" aria-expanded="${open}" aria-controls="comparison-panel-${verse}-${item.key}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${icon(item)}</button>`}).join('');
+ const panels=choices.map(active=>`<section class="verse-comparison comparison-panel" data-tone="${tone(active)}" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${selected.has(active.key)?'':'hidden'}>${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(active.summary||active.text)}</p>${comparisonCitations(verse,[active])}<details class="comparison-details"><summary>Details & sources</summary>${active.tag==='H'||active.tag==='G'?`<p class="language-context">${esc(active.languageContext||(active.tag==='H'?'Hebrew Old Testament':readingBook<39?'Greek Old Testament (Septuagint)':'Greek New Testament'))}</p>`:''}<p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${alternativeReadings(verse)}${active.reasoning?`<p><b>Reasoning:</b> ${esc(active.reasoning)}</p>`:''}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details></section>`).join('');
  return `<div class="comparison-cell"><div class="comparison-tabs" role="group" aria-label="Comparisons for verse ${verse}">${tabs}</div>${panels}</div>`;
 }
 function selectComparison(button){
