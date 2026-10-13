@@ -225,6 +225,6 @@ html{font-size:calc(17.6px * var(--text-scale,1))}
 /* Keep comparison and text sizing together when the toolbar wraps. */
 .reader-actions{display:flex;align-items:end;gap:13px;min-width:0}
 .reader-actions .reader-nav{margin:0}
-@media(max-width:650px){.reader-actions{grid-column:1/-1;gap:10px}}
+@media(max-width:650px){.reader-toolbar{grid-template-columns:minmax(0,1fr) minmax(max-content,1fr)}.reader-actions{grid-column:auto;gap:10px}}
 
 .chapter-subtitle{max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.6}
