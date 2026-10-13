@@ -7,14 +7,13 @@
 <label>Book<select id="book-select" aria-label="Bible book"><option>Loading…</option></select></label>
 <label>Chapter<select id="chapter-select" aria-label="Chapter"><option>1</option></select></label>
 <label>Translation<select id="reader-edition"><option value="kjv">KJV</option><option value="web">WEB</option><option value="asv">ASV</option></select></label>
-<div class="compare-control"><span id="compare-label">Compare</span><button type="button" id="reader-compare" role="switch" aria-labelledby="compare-label" aria-checked="true" value="on"><span class="switch-track" aria-hidden="true"><span></span></span><span id="reader-compare-state">On</span></button></div>
-
-<div class="reader-nav"><button id="prev-chapter" class="secondary" aria-label="Previous chapter">←</button><button id="next-chapter" class="secondary" aria-label="Next chapter">→</button><button id="reader-font" class="secondary" aria-label="Change all text size">A+</button></div>
+<div class="reader-actions"><div class="compare-control"><span id="compare-label">Compare</span><button type="button" id="reader-compare" role="switch" aria-labelledby="compare-label" aria-checked="true" value="on"><span class="switch-track" aria-hidden="true"><span></span></span><span id="reader-compare-state">On</span></button></div>
+<div class="reader-nav"><button id="reader-font" class="secondary" aria-label="Change all text size">A+</button></div></div>
 </div>
 <div class="selection-bar"><span id="reader-status" aria-live="polite">Loading chapter…</span><div><button id="clear-selection" class="text-button" hidden>Clear</button><button id="prev-top" class="chapter-round" aria-label="Previous chapter">←</button><button id="next-top" class="chapter-round" aria-label="Next chapter">→</button></div></div>
 <div id="comparison-status" class="comparison-status" aria-live="polite" hidden></div>
 <div id="reader-layout" class="reader-layout no-sidebar"><article id="chapter-text" class="chapter-text" aria-label="Chapter text"><p class="muted">Loading scripture…</p></article></div>
-<div class="chapter-bottom"><button id="prev-bottom" class="secondary">← Previous</button><span id="chapter-footer"></span><button id="next-bottom" class="secondary">Next →</button></div>
+<div class="chapter-bottom"><button id="prev-bottom" class="chapter-round" aria-label="Previous chapter">←</button><span id="chapter-footer"></span><button id="next-bottom" class="chapter-round" aria-label="Next chapter">→</button></div>
 <p class="reader-footnote">KJV, ASV and WEB · 66 books. Annotations cover selected passages across every book; the chapter-by-chapter research remains incomplete. Empty comparison cells mean no comparison is attached, not that the verse has been verified. Select verse numbers to ask about specific passages.</p>
 </section>
 <details class="study-library"><summary>Studies <span>6</span></summary>

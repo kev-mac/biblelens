@@ -221,3 +221,8 @@ html{font-size:calc(17.6px * var(--text-scale,1))}
 .chapter-round{display:grid;place-items:center;width:32px;height:32px;padding:0;border:0;border-radius:50%;background:var(--green);color:var(--panel);font:1.125rem/1 system-ui}
 .chapter-round:disabled{opacity:.35;cursor:default}
 .verse-body:focus-visible{outline:1px solid var(--line);outline-offset:4px}
+
+/* Keep comparison and text sizing together when the toolbar wraps. */
+.reader-actions{display:flex;align-items:end;gap:13px;min-width:0}
+.reader-actions .reader-nav{margin:0}
+@media(max-width:650px){.reader-actions{grid-column:1/-1;gap:10px}}
