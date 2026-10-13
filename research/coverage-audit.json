@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 463,
+    "evidenceRecords": 486,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 401,
-    "annotatedVerses": 2756
+    "chaptersWithAnnotations": 413,
+    "annotatedVerses": 2791
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
       "chaptersWithAnnotations": 35,
-      "annotatedVerses": 110
+      "annotatedVerses": 111
     },
     {
       "book": "Exodus",
@@ -63,14 +63,14 @@
     {
       "book": "1 Samuel",
       "chapters": 31,
-      "chaptersWithAnnotations": 21,
-      "annotatedVerses": 51
+      "chaptersWithAnnotations": 23,
+      "annotatedVerses": 53
     },
     {
       "book": "2 Samuel",
       "chapters": 24,
       "chaptersWithAnnotations": 19,
-      "annotatedVerses": 32
+      "annotatedVerses": 34
     },
     {
       "book": "1 Kings",
@@ -82,13 +82,13 @@
       "book": "2 Kings",
       "chapters": 25,
       "chaptersWithAnnotations": 17,
-      "annotatedVerses": 28
+      "annotatedVerses": 33
     },
     {
       "book": "1 Chronicles",
       "chapters": 29,
-      "chaptersWithAnnotations": 9,
-      "annotatedVerses": 18
+      "chaptersWithAnnotations": 18,
+      "annotatedVerses": 42
     },
     {
       "book": "2 Chronicles",
@@ -99,8 +99,8 @@
     {
       "book": "Ezra",
       "chapters": 10,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 9
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 10
     },
     {
       "book": "Nehemiah",
@@ -992,11 +992,13 @@
       "bookId": 0,
       "chapter": 36,
       "annotationIds": [
-        "bashemath-daughter-of-elon-the-hittite-or-of-ishmael"
+        "bashemath-daughter-of-elon-the-hittite-or-of-ishmael",
+        "timna-son-of-eliphaz-or-his-concubine"
       ],
       "annotatedVerses": [
         2,
-        3
+        3,
+        12
       ],
       "modes": [
         "contradictions"
@@ -6344,18 +6346,30 @@
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "samuel-firstborn-vashni-or-joel"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ner-begat-kish-or-kish-and-ner-sons-of-abiel"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6728,9 +6742,11 @@
       "bookId": 9,
       "chapter": 2,
       "annotationIds": [
-        "saul-reign-age-formula-one-year"
+        "saul-reign-age-formula-one-year",
+        "all-saul-house-died-together-or-ishbosheth-lived"
       ],
       "annotatedVerses": [
+        8,
         10
       ],
       "modes": [
@@ -6843,9 +6859,11 @@
       "bookId": 9,
       "chapter": 10,
       "annotationIds": [
-        "syrian-chariots-seven-hundred-or-seven-thousand"
+        "syrian-chariots-seven-hundred-or-seven-thousand",
+        "ammon-hired-thirty-two-thousand-chariots-or-footmen"
       ],
       "annotatedVerses": [
+        6,
         18
       ],
       "modes": [
@@ -7438,13 +7456,16 @@
       "bookId": 11,
       "chapter": 3,
       "annotationIds": [
-        "moab-fell-every-good-tree-or-do-not-destroy-the-trees"
+        "moab-fell-every-good-tree-or-do-not-destroy-the-trees",
+        "great-indignation-against-israel-whose-indignation-and-why-did-israel-depart"
       ],
       "annotatedVerses": [
-        19
+        19,
+        27
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -7504,13 +7525,16 @@
       "bookId": 11,
       "chapter": 9,
       "annotationIds": [
-        "ahaziah-began-in-joram-twelfth-year-or-eleventh"
+        "ahaziah-began-in-joram-twelfth-year-or-eleventh",
+        "the-blood-of-naboth-and-the-blood-of-his-sons-what-happened-to-naboths-sons"
       ],
       "annotatedVerses": [
+        26,
         29
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -7554,14 +7578,17 @@
       "bookId": 11,
       "chapter": 13,
       "annotationIds": [
-        "jehoahaz-seventeen-years-from-joash-twenty-third-jehoash-in-thirty-seventh"
+        "jehoahaz-seventeen-years-from-joash-twenty-third-jehoash-in-thirty-seventh",
+        "the-lord-gave-israel-a-saviour-who-was-the-saviour"
       ],
       "annotatedVerses": [
         1,
+        5,
         10
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -7685,13 +7712,16 @@
       "bookId": 11,
       "chapter": 22,
       "annotationIds": [
-        "huldah-wife-of-shallum-or-mother-and-keeper-of-the-commandments-greek"
+        "huldah-wife-of-shallum-or-mother-and-keeper-of-the-commandments-greek",
+        "i-have-found-the-book-of-the-law-which-book-and-how-had-it-been-lost"
       ],
       "annotatedVerses": [
+        8,
         14
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -7700,11 +7730,13 @@
       "bookId": 11,
       "chapter": 23,
       "annotationIds": [
-        "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem"
+        "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem",
+        "josiah-sons-third-zedekiah-fourth-shallum-and-their-ages"
       ],
       "annotatedVerses": [
         29,
-        30
+        30,
+        31
       ],
       "modes": [
         "contradictions"
@@ -7753,9 +7785,17 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "uz-hul-gether-sons-of-shem-or-sons-of-aram-greek-shorter",
+        "timna-son-of-eliphaz-or-his-concubine"
+      ],
+      "annotatedVerses": [
+        17,
+        36
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7764,11 +7804,13 @@
       "chapter": 2,
       "annotationIds": [
         "jesse-sons-eight-or-seven",
-        "amasa-father-israelite-ishmeelite-or-jezreelite"
+        "amasa-father-israelite-ishmeelite-or-jezreelite",
+        "hezron-married-at-sixty-or-sixty-five-greek"
       ],
       "annotatedVerses": [
         15,
-        17
+        17,
+        21
       ],
       "modes": [
         "contradictions"
@@ -7779,9 +7821,19 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "zerubbabel-son-of-pedaiah-or-son-of-shealtiel",
+        "sons-of-shemaiah-five-names-counted-as-six",
+        "josiah-sons-third-zedekiah-fourth-shallum-and-their-ages"
+      ],
+      "annotatedVerses": [
+        15,
+        19,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7797,9 +7849,15 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hagarite-spoil-camels-fifty-thousand-or-five-thousand-greek"
+      ],
+      "annotatedVerses": [
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7807,9 +7865,14 @@
       "bookId": 12,
       "chapter": 6,
       "annotationIds": [
-        "levite-city-lists-joshua-chronicles"
+        "levite-city-lists-joshua-chronicles",
+        "korah-son-of-amminadab-or-son-of-izhar",
+        "samuel-firstborn-vashni-or-joel"
       ],
       "annotatedVerses": [
+        22,
+        28,
+        38,
         60,
         61,
         63
@@ -7823,18 +7886,36 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sons-of-benjamin-three-or-five-in-chronicles",
+        "the-men-of-gath-slew-ephraims-sons-when-and-where"
+      ],
+      "annotatedVerses": [
+        6,
+        21,
+        22
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sons-of-benjamin-three-or-five-in-chronicles",
+        "ner-begat-kish-or-kish-and-ner-sons-of-abiel"
+      ],
+      "annotatedVerses": [
+        1,
+        33
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7851,9 +7932,13 @@
       "bookId": 12,
       "chapter": 10,
       "annotationIds": [
-        "saul-enquired-of-the-lord-or-enquired-not"
+        "saul-enquired-of-the-lord-or-enquired-not",
+        "all-saul-house-died-together-or-ishbosheth-lived",
+        "saul-asked-the-familiar-spirit-greek-adds-samuel-answered-him"
       ],
       "annotatedVerses": [
+        6,
+        13,
         14
       ],
       "modes": [
@@ -7880,9 +7965,15 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "danites-at-hebron-28600-or-28800-greek"
+      ],
+      "annotatedVerses": [
+        35
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7960,9 +8051,11 @@
       "bookId": 12,
       "chapter": 19,
       "annotationIds": [
-        "syrian-chariots-seven-hundred-or-seven-thousand"
+        "syrian-chariots-seven-hundred-or-seven-thousand",
+        "ammon-hired-thirty-two-thousand-chariots-or-footmen"
       ],
       "annotatedVerses": [
+        7,
         18
       ],
       "modes": [
@@ -8012,9 +8105,15 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-word-of-the-lord-came-to-me-thou-hast-shed-blood-when-was-it-given"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8039,9 +8138,15 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 25,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sons-of-jeduthun-five-names-counted-as-six"
+      ],
+      "annotatedVerses": [
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8066,9 +8171,18 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 28,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-word-of-the-lord-came-to-me-thou-hast-shed-blood-when-was-it-given",
+        "the-lord-made-me-understand-in-writing-by-his-hand-upon-me-how-did-david-receive-the-pattern"
+      ],
+      "annotatedVerses": [
+        3,
+        12,
+        19
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8552,9 +8666,15 @@
       "book": "Ezra",
       "bookId": 14,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "zerubbabel-son-of-pedaiah-or-son-of-shealtiel"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

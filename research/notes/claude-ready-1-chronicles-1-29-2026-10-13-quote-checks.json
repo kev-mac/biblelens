@@ -1,0 +1,3228 @@
+{
+  "batch": "1-chronicles-1-29",
+  "checks": [
+    {
+      "id": "uz-hul-gether-sons-of-shem-or-sons-of-aram-greek-shorter",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 1:17",
+          "quote": "The sons of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech.",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 10:22",
+          "quote": "The children of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram.",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 10:23",
+          "quote": "And the children of Aram; Uz, and Hul, and Gether, and Mash.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּנֵ֣י שֵׁ֔ם עֵילָ֣ם וְאַשּׁ֔וּר וְאַרְפַּכְשַׁ֖ד וְל֣וּד וַאֲרָ֑ם וְע֥וּץ וְח֖וּל וְגֶ֥תֶר וָמֶֽשֶׁךְ",
+          "stated": {
+            "chapter": 1,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/1/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": 17
+          }
+        },
+        {
+          "quote": "וּבְנֵ֖י אֲרָ֑ם ע֥וּץ וְח֖וּל וְגֶ֥תֶר וָמַֽשׁ",
+          "stated": {
+            "chapter": 10,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/10/",
+              "verse": 23
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": 23
+          }
+        },
+        {
+          "quote": "Υἱοὶ Σὴμ, Αἰλὰμ, καὶ Ἀσσοὺρ",
+          "stated": {
+            "chapter": 1,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH01.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": 17
+          }
+        },
+        {
+          "quote": "καὶ Ἀρφαξὰδ, Σάλα",
+          "stated": {
+            "chapter": 1,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH01.htm",
+              "verse": "24"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": 24
+          }
+        },
+        {
+          "quote": "Καὶ υἱοὶ Ἀρὰμ, Οὒζ, καὶ Οὒλ, καὶ Γατὲρ, καὶ Μοσόχ",
+          "stated": {
+            "chapter": 10,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN10.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": 23
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 1:17",
+          "quote": "and Aram, and Uz, and Hul, and Gether, and Meshech",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Genesis 10:23",
+          "quote": "the children of Aram; Uz, and Hul, and Gether, and Mash",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "The sons of Shem",
+          "matches": [
+            "1 Chronicles 1:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "the children of Aram",
+          "matches": [
+            "Genesis 10:23"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The sons of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech.",
+          "matches": [
+            "1 Chronicles 1:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram.",
+          "matches": [
+            "Genesis 10:22"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the children of Aram; Uz, and Hul, and Gether, and Mash.",
+          "matches": [
+            "Genesis 10:23"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "The sons of Shem",
+          "matches": [
+            "1 Chronicles 1:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "sons",
+          "matches": [
+            "1 Chronicles 1:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "and the children of Aram",
+          "matches": [
+            "Genesis 10:23"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      },
+      "printedLabels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        17,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "id": "timna-son-of-eliphaz-or-his-concubine",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 1:36",
+          "quote": "The sons of Eliphaz; Teman, and Omar, Zephi, and Gatam, Kenaz, and Timna, and Amalek.",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 36:11",
+          "quote": "And the sons of Eliphaz were Teman, Omar, Zepho, and Gatam, and Kenaz.",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 36:12",
+          "quote": "And Timna was concubine to Eliphaz Esau's son; and she bare to Eliphaz Amalek",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 1:39",
+          "quote": "and Timna was Lotan's sister",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּנֵ֖י אֱלִיפָ֑ז תֵּימָ֤ן וְאֹומָר֙ צְפִ֣י וְגַעְתָּ֔ם קְנַ֖ז וְתִמְנָ֥ע וַעֲמָלֵֽק",
+          "stated": {
+            "chapter": 1,
+            "verse": 36
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/1/",
+              "verse": 36
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": 36
+          }
+        },
+        {
+          "quote": "וְתִמְנַ֣ע ׀ הָיְתָ֣ה פִילֶ֗גֶשׁ לֶֽאֱלִיפַז֙ בֶּן־עֵשָׂ֔ו וַתֵּ֥לֶד לֶאֱלִיפַ֖ז אֶת־עֲמָלֵ֑ק",
+          "stated": {
+            "chapter": 36,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/36/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 36,
+            "verse": 12
+          }
+        },
+        {
+          "quote": "καὶ Κενὲζ, καὶ Θαμνὰ, καὶ Ἀμαλήκ",
+          "stated": {
+            "chapter": 1,
+            "verse": 36
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH01.htm",
+              "verse": "36"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": 36
+          }
+        },
+        {
+          "quote": "Θαμνὰ δὲ ἦν παλλακὴ Ἑλιφὰς τοῦ υἱοῦ Ἡσαῦ· καὶ ἔτεκε τῷ Ἑλιφὰς τὸν Ἀμαλήκ",
+          "stated": {
+            "chapter": 36,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN36.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 36,
+            "verse": 12
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 1:36",
+          "quote": "Kenaz, and Timna, and Amalek",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Genesis 36:12",
+          "quote": "Timna was concubine to Eliphaz",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "Timna, and Amalek",
+          "matches": [
+            "1 Chronicles 1:36"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "The sons of Eliphaz",
+          "matches": [
+            "1 Chronicles 1:36"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The sons of Eliphaz; Teman, and Omar, Zephi, and Gatam, Kenaz, and Timna, and Amalek.",
+          "matches": [
+            "1 Chronicles 1:36"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Eliphaz were Teman, Omar, Zepho, and Gatam, and Kenaz.",
+          "matches": [
+            "Genesis 36:11"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And Timna was concubine to Eliphaz Esau's son; and she bare to Eliphaz Amalek",
+          "matches": [
+            "Genesis 36:12"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "and Timna was Lotan's sister",
+          "matches": [
+            "1 Chronicles 1:39"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "The sons of Eliphaz",
+          "matches": [
+            "1 Chronicles 1:36"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "and",
+          "matches": [
+            "1 Chronicles 1:36",
+            "Genesis 36:11",
+            "Genesis 36:12",
+            "1 Chronicles 1:39"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Timna",
+          "matches": [
+            "1 Chronicles 1:36",
+            "Genesis 36:12",
+            "1 Chronicles 1:39"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "zerubbabel-son-of-pedaiah-or-son-of-shealtiel",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 3:17",
+          "quote": "And the sons of Jeconiah; Assir, Salathiel his son,",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 3:18",
+          "quote": "Malchiram also, and Pedaiah, and Shenazar, Jecamiah, Hoshama, and Nedabiah.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 3:19",
+          "quote": "And the sons of Pedaiah were, Zerubbabel, and Shimei",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 3:2",
+          "quote": "Zerubbabel the son of Shealtiel",
+          "exact": true
+        },
+        {
+          "ref": "Haggai 1:1",
+          "quote": "Zerubbabel the son of Shealtiel, governor of Judah",
+          "exact": true
+        },
+        {
+          "ref": "Matthew 1:12",
+          "quote": "Jechonias begat Salathiel; and Salathiel begat Zorobabel",
+          "exact": true
+        },
+        {
+          "ref": "Luke 3:27",
+          "quote": "which was the son of Zorobabel, which was the son of Salathiel, which was the son of Neri",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּבְנֵ֣י פְדָיָ֔ה זְרֻבָּבֶ֖ל וְשִׁמְעִ֑י",
+          "stated": {
+            "chapter": 3,
+            "verse": 19
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/3/",
+              "verse": 19
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 19
+          }
+        },
+        {
+          "quote": "וּזְרֻבָּבֶ֤ל בֶּן־שְׁאַלְתִּיאֵל֙",
+          "stated": {
+            "chapter": 3,
+            "verse": 2
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/3/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 2
+          }
+        },
+        {
+          "quote": "זְרֻבָּבֶ֤ל בֶּן־שְׁאַלְתִּיאֵל֙ פַּחַ֣ת יְהוּדָ֔ה",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/1/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": 1
+          }
+        },
+        {
+          "quote": "Καὶ υἱοὶ Φαδαΐας, Ζοροβάβελ, καὶ Σεμεΐ",
+          "stated": {
+            "chapter": 3,
+            "verse": 19
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH03.htm",
+              "verse": "19"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 19
+          }
+        },
+        {
+          "quote": "Ζοροβάβελ ὁ τοῦ Σαλαθιὴλ",
+          "stated": {
+            "chapter": 3,
+            "verse": 2
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR03.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 2
+          }
+        },
+        {
+          "quote": "Σαλαθιὴλ δὲ ἐγέννησεν τὸν Ζοροβάβελ",
+          "stated": {
+            "chapter": 1,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/1/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": 12
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 3:19",
+          "quote": "the sons of Pedaiah were, Zerubbabel, and Shimei",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Ezra 3:2",
+          "quote": "Zerubbabel the son of Shealtiel",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Matthew 1:12",
+          "quote": "Salathiel begat Zorobabel",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exp-late-36-1-1",
+          "title": "Temple rebuilding and drought",
+          "summary": "Haggai attributes poor harvests to neglect of the temple in a dated prophetic appeal.",
+          "reasoning": "Named officials and a regnal date frame the narrative; divine causation of weather is the oracle’s explanation rather than independently demonstrated meteorology.",
+          "scope": "Distinguishes a historical frame from a verified causal mechanism."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "the sons of Pedaiah",
+          "matches": [
+            "1 Chronicles 3:19"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "Zerubbabel the son of Shealtiel",
+          "matches": [
+            "Ezra 3:2",
+            "Haggai 1:1"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "Salathiel begat Zorobabel",
+          "matches": [
+            "Matthew 1:12"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Jeconiah; Assir, Salathiel his son,",
+          "matches": [
+            "1 Chronicles 3:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Malchiram also, and Pedaiah, and Shenazar, Jecamiah, Hoshama, and Nedabiah.",
+          "matches": [
+            "1 Chronicles 3:18"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Pedaiah were, Zerubbabel, and Shimei",
+          "matches": [
+            "1 Chronicles 3:19"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Zerubbabel the son of Shealtiel",
+          "matches": [
+            "Ezra 3:2",
+            "Haggai 1:1"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Zerubbabel the son of Shealtiel, governor of Judah",
+          "matches": [
+            "Haggai 1:1"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Jechonias begat Salathiel; and Salathiel begat Zorobabel",
+          "matches": [
+            "Matthew 1:12"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "which was the son of Zorobabel, which was the son of Salathiel, which was the son of Neri",
+          "matches": [
+            "Luke 3:27"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "begat",
+          "matches": [
+            "Matthew 1:12"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Zerubbabel",
+          "matches": [
+            "1 Chronicles 3:19",
+            "Ezra 3:2",
+            "Haggai 1:1"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the son of Shealtiel",
+          "matches": [
+            "Ezra 3:2",
+            "Haggai 1:1"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the sons of Pedaiah",
+          "matches": [
+            "1 Chronicles 3:19"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [
+          "exp-late-36-1-1"
+        ],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      },
+      "trComparison": {
+        "url": "https://bolls.life/get-text/TR/40/1/",
+        "printedVerse": 12,
+        "quote": "σαλαθιηλ δε εγεννησεν τον ζοροβαβελ",
+        "verified": true,
+        "note": "TR endpoint is unaccented lowercase; same words verified after accent and case normalization"
+      }
+    },
+    {
+      "id": "sons-of-shemaiah-five-names-counted-as-six",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 3:22",
+          "quote": "And the sons of Shechaniah; Shemaiah: and the sons of Shemaiah; Hattush, and Igeal, and Bariah, and Neariah, and Shaphat, six.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּבְנֵ֣י שְׁמַעְיָ֗ה חַטּ֡וּשׁ וְ֠יִגְאָל וּבָרִ֧יחַ וּנְעַרְיָ֛ה וְשָׁפָ֖ט שִׁשָּֽׁה",
+          "stated": {
+            "chapter": 3,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/3/",
+              "verse": 22
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 22
+          }
+        },
+        {
+          "quote": "καὶ υἱοὶ Σαμαΐα, Χαττοὺς, καὶ Ἰωὴλ, καὶ Βεῤῥὶ, καὶ Νωαδία, καὶ Σαφὰθ, ἕξ",
+          "stated": {
+            "chapter": 3,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH03.htm",
+              "verse": "22"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 22
+          }
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The sons of Shemaiah … six",
+          "matches": [
+            "1 Chronicles 3:22"
+          ],
+          "kind": "KJV fragments with explicit ellipsis and sentence-case typography"
+        },
+        {
+          "field": "summary",
+          "quote": "six",
+          "matches": [
+            "1 Chronicles 3:22"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Shechaniah; Shemaiah: and the sons of Shemaiah; Hattush, and Igeal, and Bariah, and Neariah, and Shaphat, six.",
+          "matches": [
+            "1 Chronicles 3:22"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And Hashubah, and Ohel, and Berechiah, and Hasadiah, Jushabhesed, five.",
+          "matches": [
+            "1 Chronicles 3:20"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "five",
+          "matches": [
+            "1 Chronicles 3:20"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "six",
+          "matches": [
+            "1 Chronicles 3:22"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "sons-of-jeduthun-five-names-counted-as-six",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 25:3",
+          "quote": "the sons of Jeduthun; Gedaliah, and Zeri, and Jeshaiah, Hashabiah, and Mattithiah, six, under the hands of their father Jeduthun",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 25:17",
+          "quote": "The tenth to Shimei, he, his sons, and his brethren, were twelve:",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּנֵ֣י יְדוּת֡וּן גְּדַלְיָ֡הוּ וּצְרִ֡י וִֽ֠ישַׁעְיָהוּ חֲשַׁבְיָ֨הוּ וּמַתִּתְיָ֜הוּ שִׁשָּׁ֗ה",
+          "stated": {
+            "chapter": 25,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/25/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 25,
+            "verse": 3
+          }
+        },
+        {
+          "quote": "הָעֲשִׂירִ֣י שִׁמְעִ֔י",
+          "stated": {
+            "chapter": 25,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/25/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 25,
+            "verse": 17
+          }
+        },
+        {
+          "quote": "υἱοὶ Ἰδιθοὺν, Τοδολίας, καὶ Σουρὶ, καὶ Ἰσέας, καὶ Ἀσαβίας, καὶ Ματθαθίας, ἕξ",
+          "stated": {
+            "chapter": 25,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH25.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 25,
+            "verse": 3
+          }
+        },
+        {
+          "quote": "Ὁ δέκατος Σεμεΐα",
+          "stated": {
+            "chapter": 25,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH25.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 25,
+            "verse": 17
+          }
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The sons of Jeduthun … six",
+          "matches": [
+            "1 Chronicles 25:3"
+          ],
+          "kind": "KJV fragments with explicit ellipsis and sentence-case typography"
+        },
+        {
+          "field": "summary",
+          "quote": "six",
+          "matches": [
+            "1 Chronicles 25:3"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "the sons of Jeduthun; Gedaliah, and Zeri, and Jeshaiah, Hashabiah, and Mattithiah, six, under the hands of their father Jeduthun",
+          "matches": [
+            "1 Chronicles 25:3"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The tenth to Shimei, he, his sons, and his brethren, were twelve:",
+          "matches": [
+            "1 Chronicles 25:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "six",
+          "matches": [
+            "1 Chronicles 25:3"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "sons-of-benjamin-three-or-five-in-chronicles",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 7:6",
+          "quote": "The sons of Benjamin; Bela, and Becher, and Jediael, three.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 8:1",
+          "quote": "Now Benjamin begat Bela his firstborn, Ashbel the second, and Aharah the third,",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 8:2",
+          "quote": "Nohah the fourth, and Rapha the fifth.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בִּנְיָמִ֗ן בֶּ֧לַע וָבֶ֛כֶר וִידִֽיעֲאֵ֖ל שְׁלֹשָֽׁה",
+          "stated": {
+            "chapter": 7,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/7/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 6
+          }
+        },
+        {
+          "quote": "וּבִ֨נְיָמִ֔ן הֹולִ֖יד אֶת־בֶּ֣לַע בְּכֹרֹ֑ו אַשְׁבֵּל֙ הַשֵּׁנִ֔י וְאַחְרַ֖ח הַשְּׁלִישִֽׁי",
+          "stated": {
+            "chapter": 8,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/8/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 1
+          }
+        },
+        {
+          "quote": "נֹוחָה֙ הָֽרְבִיעִ֔י וְרָפָ֖א הַחֲמִישִֽׁי",
+          "stated": {
+            "chapter": 8,
+            "verse": 2
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/8/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 2
+          }
+        },
+        {
+          "quote": "Υἱοὶ Βενιαμὶν, καὶ Βαλὲ, καὶ Βαχὶρ",
+          "stated": {
+            "chapter": 7,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH07.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 6
+          }
+        },
+        {
+          "quote": "τρεῖς",
+          "stated": {
+            "chapter": 7,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH07.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 6
+          }
+        },
+        {
+          "quote": "Νωὰ τὸν τέταρτον, καὶ Ῥαφὰ τὸν πέμπτον",
+          "stated": {
+            "chapter": 8,
+            "verse": 2
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH08.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 2
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 7:6",
+          "quote": "Bela, and Becher, and Jediael, three",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "1 Chronicles 8:1",
+          "quote": "Bela his firstborn, Ashbel the second, and Aharah the third",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "1 Chronicles 8:2",
+          "quote": "Nohah the fourth, and Rapha the fifth",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "benjamin-ten-sons-or-sons-and-grandsons-greek",
+          "title": "Naaman and Ard: sons of Benjamin, or sons of Bela?",
+          "summary": "Genesis in the KJV lists ten sons of Benjamin, among them Naaman and Ard. Numbers calls Ard and Naaman sons of Bela, Benjamin’s son. Brenton’s Greek of Genesis gives Benjamin three sons and makes the rest sons of Bala and one a son of Gera.",
+          "reasoning": "In the KJV of Genesis, Naaman and Ard stand in a list headed “the sons of Benjamin”. In the KJV of Numbers they are sons of Bela, and so Benjamin’s grandsons. The KJV follows the Hebrew in both books. Brenton’s Greek of Genesis divides the list: three sons of Benjamin, five sons of Bala including Noeman, and Arad as a son of Gera. It names nine men where the KJV names ten, and it agrees with Numbers that Noeman is Bala’s son.",
+          "scope": "G applies at Genesis 46:21, where the Greek differs from the KJV. The two KJV verses can be reconciled if “sons” in Genesis takes in grandsons, or if there were two men of each name; Genesis says neither. Whether Arad in the Greek of Genesis and Adar in the Greek of Numbers are the same name is not settled here. The total of persons in Genesis 46 is not examined in this record. The supplied KJV source prints “Ard” at Numbers 26:40; the packaged verse and this quotation were corrected together to match it. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "three",
+          "matches": [
+            "1 Chronicles 7:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The sons of Benjamin; Bela, and Becher, and Jediael, three.",
+          "matches": [
+            "1 Chronicles 7:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Now Benjamin begat Bela his firstborn, Ashbel the second, and Aharah the third,",
+          "matches": [
+            "1 Chronicles 8:1"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Nohah the fourth, and Rapha the fifth.",
+          "matches": [
+            "1 Chronicles 8:2"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Benjamin were Belah, and Becher, and Ashbel, Gera, and Naaman, Ehi, and Rosh, Muppim, and Huppim, and Ard.",
+          "matches": [
+            "Genesis 46:21"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [
+          "benjamin-ten-sons-or-sons-and-grandsons-greek"
+        ],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "ner-begat-kish-or-kish-and-ner-sons-of-abiel",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 8:33",
+          "quote": "And Ner begat Kish, and Kish begat Saul",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 9:36",
+          "quote": "And his firstborn son Abdon, then Zur, and Kish, and Baal, and Ner, and Nadab.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 9:39",
+          "quote": "And Ner begat Kish; and Kish begat Saul",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 9:1",
+          "quote": "whose name was Kish, the son of Abiel",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 14:50",
+          "quote": "Abner, the son of Ner, Saul's uncle",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 14:51",
+          "quote": "And Kish was the father of Saul; and Ner the father of Abner was the son of Abiel.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְנֵר֙ הֹולִ֣יד אֶת־קִ֔ישׁ וְקִ֖ישׁ הֹולִ֣יד אֶת־שָׁא֑וּל",
+          "stated": {
+            "chapter": 8,
+            "verse": 33
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/8/",
+              "verse": 33
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 33
+          }
+        },
+        {
+          "quote": "וּ֠שְׁמֹו קִ֣ישׁ בֶּן־אֲבִיאֵ֞ל",
+          "stated": {
+            "chapter": 9,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/9/9/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 9,
+            "verse": 1
+          }
+        },
+        {
+          "quote": "וְקִ֧ישׁ אֲבִֽי־שָׁא֛וּל וְנֵ֥ר אֲבִֽי־אַבְנֵ֖ר בֶּן־אֲבִיאֵֽל",
+          "stated": {
+            "chapter": 14,
+            "verse": 51
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/9/14/",
+              "verse": 51
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 14,
+            "verse": 51
+          }
+        },
+        {
+          "quote": "Καὶ Νὴρ ἐγέννησε τὸν Κὶς",
+          "stated": {
+            "chapter": 8,
+            "verse": 33
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH08.htm",
+              "verse": "33"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 33
+          }
+        },
+        {
+          "quote": "Καὶ Κὶς πατὴρ Σαοὺλ, καὶ Νὴρ πατὴρ",
+          "stated": {
+            "chapter": 14,
+            "verse": 51
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1SA14.htm",
+              "verse": "51"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 14,
+            "verse": 51
+          }
+        },
+        {
+          "quote": "υἱὸς Ἰαμὶν",
+          "stated": {
+            "chapter": 14,
+            "verse": 51
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1SA14.htm",
+              "verse": "51"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 14,
+            "verse": 51
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 8:33",
+          "quote": "Ner begat Kish, and Kish begat Saul",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "1 Samuel 9:1",
+          "quote": "Kish, the son of Abiel",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "1 Samuel 14:51",
+          "quote": "Ner the father of Abner was the son of Abiel",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "Ner begat Kish, and Kish begat Saul",
+          "matches": [
+            "1 Chronicles 8:33"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "the son of Abiel",
+          "matches": [
+            "1 Samuel 9:1",
+            "1 Samuel 14:51"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "the son of Abiel",
+          "matches": [
+            "1 Samuel 9:1",
+            "1 Samuel 14:51"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "Saul's uncle",
+          "matches": [
+            "1 Samuel 14:50"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And Ner begat Kish, and Kish begat Saul",
+          "matches": [
+            "1 Chronicles 8:33"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And his firstborn son Abdon, then Zur, and Kish, and Baal, and Ner, and Nadab.",
+          "matches": [
+            "1 Chronicles 9:36"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And Ner begat Kish; and Kish begat Saul",
+          "matches": [
+            "1 Chronicles 9:39"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "whose name was Kish, the son of Abiel",
+          "matches": [
+            "1 Samuel 9:1"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Abner, the son of Ner, Saul's uncle",
+          "matches": [
+            "1 Samuel 14:50"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And Kish was the father of Saul; and Ner the father of Abner was the son of Abiel.",
+          "matches": [
+            "1 Samuel 14:51"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Saul's uncle",
+          "matches": [
+            "1 Samuel 14:50"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Ner begat Kish",
+          "matches": [
+            "1 Chronicles 8:33",
+            "1 Chronicles 9:39"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "son of Abiel",
+          "matches": [
+            "1 Samuel 9:1",
+            "1 Samuel 14:51"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Saul’s uncle",
+          "matches": [
+            "1 Samuel 14:50"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "all-saul-house-died-together-or-ishbosheth-lived",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 10:6",
+          "quote": "So Saul died, and his three sons, and all his house died together.",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 31:6",
+          "quote": "So Saul died, and his three sons, and his armourbearer, and all his men, that same day together.",
+          "exact": true
+        },
+        {
+          "ref": "2 Samuel 2:8",
+          "quote": "took Ishbosheth the son of Saul, and brought him over to Mahanaim",
+          "exact": true
+        },
+        {
+          "ref": "2 Samuel 2:10",
+          "quote": "Ishbosheth Saul's son was forty years old when he began to reign over Israel, and reigned two years.",
+          "exact": true
+        },
+        {
+          "ref": "2 Samuel 9:3",
+          "quote": "Is there not yet any of the house of Saul",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיָּ֤מָת שָׁאוּל֙ וּשְׁלֹ֣שֶׁת בָּנָ֔יו וְכָל־בֵּיתֹ֖ו יַחְדָּ֥ו מֵֽתוּ",
+          "stated": {
+            "chapter": 10,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/10/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": 6
+          }
+        },
+        {
+          "quote": "גַּ֧ם כָּל־אֲנָשָׁ֛יו בַּיֹּ֥ום הַה֖וּא יַחְדָּֽו",
+          "stated": {
+            "chapter": 31,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/9/31/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 31,
+            "verse": 6
+          }
+        },
+        {
+          "quote": "καὶ πᾶς ὁ οἶκος αὐτοῦ ἐπὶ τὸ αὐτὸ ἀπέθανε",
+          "stated": {
+            "chapter": 10,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH10.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": 6
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 10:6",
+          "quote": "and all his house died together",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "2 Samuel 2:8",
+          "quote": "took Ishbosheth the son of Saul",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "2 Samuel 2:10",
+          "quote": "Ishbosheth Saul's son was forty years old when he began to reign over Israel, and reigned two years",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "saul-reign-age-formula-one-year",
+          "title": "Saul “reigned one year”, or was “a year old” when he began to reign?",
+          "summary": "The KJV says “Saul reigned one year”. The Hebrew uses the usual formula for a king’s age at accession and reads “a son of a year was Saul in his reigning”. Brenton’s Greek Septuagint has no verse 1 at all.",
+          "reasoning": "At 2 Samuel 2:10 the KJV renders the formula “son of N years … in his reigning” as the king’s age when he began to reign. At 1 Samuel 13:1 the same formula has the number “a year”, and the KJV renders it instead as a length of reign, “reigned one year”. The Hebrew as it stands gives an age, not a length of reign. The named Greek edition omits the verse.",
+          "scope": "This is a finding about what the Hebrew words say, not about Saul’s real age: an age of one year cannot be meant as history, and the Hebrew text may have lost a number, but which number is not established here. The KJV wording avoids that difficulty rather than translating the formula as it does elsewhere. G is tagged only because the named Greek edition lacks the verse. The Hebrew quoted is the Westminster Leningrad Codex digital text, with the consonants-only Aleppo-based edition as a second witness. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined, and the KJV translators’ source for their wording is not established here. English glosses in brackets are the researcher’s plain renderings, not lexicon entries. The Greek is Brenton’s printed edition of the Septuagint; other Greek witnesses were not examined."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "All his house died together",
+          "matches": [
+            "1 Chronicles 10:6"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        },
+        {
+          "field": "summary",
+          "quote": "and all his house died together",
+          "matches": [
+            "1 Chronicles 10:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "all his men",
+          "matches": [
+            "1 Samuel 31:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "So Saul died, and his three sons, and all his house died together.",
+          "matches": [
+            "1 Chronicles 10:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "So Saul died, and his three sons, and his armourbearer, and all his men, that same day together.",
+          "matches": [
+            "1 Samuel 31:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "took Ishbosheth the son of Saul, and brought him over to Mahanaim",
+          "matches": [
+            "2 Samuel 2:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Ishbosheth Saul's son was forty years old when he began to reign over Israel, and reigned two years.",
+          "matches": [
+            "2 Samuel 2:10"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Is there not yet any of the house of Saul",
+          "matches": [
+            "2 Samuel 9:3"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Jonathan hath yet a son",
+          "matches": [
+            "2 Samuel 9:3"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "all his men",
+          "matches": [
+            "1 Samuel 31:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "all his house",
+          "matches": [
+            "1 Chronicles 10:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "all his house",
+          "matches": [
+            "1 Chronicles 10:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of the house of Saul",
+          "matches": [
+            "2 Samuel 9:3"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "all his house",
+          "matches": [
+            "1 Chronicles 10:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "all his house",
+          "matches": [
+            "1 Chronicles 10:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "and all his men",
+          "matches": [
+            "1 Samuel 31:6"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [
+          "saul-reign-age-formula-one-year"
+        ],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "saul-asked-the-familiar-spirit-greek-adds-samuel-answered-him",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 10:13",
+          "quote": "So Saul died for his transgression which he committed against the Lord, even against the word of the Lord, which he kept not, and also for asking counsel of one that had a familiar spirit, to enquire of it;",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 10:14",
+          "quote": "And enquired not of the Lord: therefore he slew him",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְגַם־לִשְׁאֹ֥ול בָּאֹ֖וב לִדְרֹֽושׁ",
+          "stated": {
+            "chapter": 10,
+            "verse": 13
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/10/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": 13
+          }
+        },
+        {
+          "quote": "ὅτι ἐπηρώτησε Σαοὺλ ἐν τῷ ἐγγαστριμύθῳ τοῦ ζητῆσαι, καὶ ἀπεκρίνατο αὐτῷ Σαμουὴλ ὁ προφήτης",
+          "stated": {
+            "chapter": 10,
+            "verse": 13
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH10.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": 13
+          }
+        }
+      ],
+      "sides": [],
+      "overlap": [
+        {
+          "id": "saul-enquired-of-the-lord-or-enquired-not",
+          "title": "Saul “enquired of the LORD”, and Saul “enquired not of the LORD”",
+          "summary": "1 Samuel 28:6 says Saul enquired of the LORD and got no answer. 1 Chronicles 10:14 gives as a reason for his death that he “enquired not of the LORD”.",
+          "reasoning": "In the KJV the same English verb is affirmed in Samuel and denied in Chronicles.",
+          "scope": "The Hebrew uses two different verbs, “asked” in Samuel and “sought” in Chronicles, so the Hebrew does not affirm and deny the same word; 1 Chronicles 10:13 uses both verbs together for consulting the medium. Chronicles may mean that Saul did not seek the LORD in earnest or did not keep seeking. The contrast is clear in the KJV wording and weaker in the Hebrew. The Hebrew quoted is the Westminster Leningrad Codex digital text; a digital named edition is not proof that every manuscript agrees."
+        },
+        {
+          "id": "bring-me-up-samuel-by-what-means-did-samuel-come-up-at-endor",
+          "title": "“Bring me up Samuel” — by what means did Samuel come up at Endor, and why did the woman cry out?",
+          "summary": "The Lord does not answer Saul “by dreams, nor by Urim, nor by prophets”. Saul then asks a woman “that hath a familiar spirit” to bring up Samuel, who is dead. The next sentence says the woman “saw Samuel” and “cried with a loud voice”, and the passage goes on to give words of Samuel that speak in the name of the Lord. The verses compared do not say what the woman did, by whose act Samuel came up, or why she cried out.",
+          "reasoning": "The passage sets two things side by side. The laws quoted forbid consulting one “that hath a familiar spirit”, and 28:6 says the Lord would not answer Saul by the three means it names. Yet from 28:12 the narrative itself uses the name Samuel for what the woman sees and for the speaker (“the woman saw Samuel”, “Samuel said to Saul”), and the words spoken name the Lord and say what will happen the next day. Between the request at 28:11 and the sight at 28:12 no act of the woman is told. So the verses quoted leave unstated whether Samuel came up through the woman’s practice, apart from it, or in some other way, and they give no reason for her cry or for how she then knew her visitor was Saul. Which of these is taken decides how the passage bears on the laws quoted and on the statement that the Lord did not answer.",
+          "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that the woman’s practice brought Samuel up; that Samuel was sent apart from anything she did, which is offered as the reason for her cry; that what appeared was not Samuel, although the narrative uses his name. Limits: the narrative calls the one seen and the speaker “Samuel” at 28:12, 28:15, 28:16 and 28:20, and nothing in these verses says the appearance was false; only the woman is said to see, Saul asks her what she saw, and “Saul perceived that it was Samuel” follows her description; the woman’s words at 28:13 are her report, and the KJV’s “gods” there stands for a Hebrew word that the KJV elsewhere renders “God”, with a plural participle; 28:15 has Samuel say “to bring me up”, which states that he was brought up and does not say by whom; 1 Chronicles 10:13 in the KJV says Saul asked counsel of one that had a familiar spirit and does not say what answered, while Brenton’s Greek of that verse adds that “Samuel the prophet answered him”, a wording difference stated here and not proposed as a separate finding; Brenton’s Greek of 28:14 has “an upright man” where the KJV has “An old man”, and of 28:19 “with you shall fall” where the KJV has “be with me”, both also stated as wording only. Check made: 1 Samuel 28:3 and 28:6–25 were read in the KJV, verses 3 and 6–20 also in the Hebrew and the Greek; a search of the packaged KJV for “familiar spirit” finds Leviticus 19:31, 20:6, 20:27, Deuteronomy 18:11, 1 Samuel 28:3, 28:7, 28:8, 28:9, 2 Kings 21:6, 23:24, 1 Chronicles 10:13, 2 Chronicles 33:6, Isaiah 8:19, 19:3 and 29:4, and a whole-word search for “Endor” finds Joshua 17:11, 1 Samuel 28:7 and Psalms 83:10. Those are word searches and a reading of those verses, not a reading of the whole Bible. These checked verses do not explicitly settle by what means Samuel came up. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "and Samuel the prophet answered him",
+          "matches": [],
+          "kind": "researcher rendering of the verified Greek clause, not KJV"
+        },
+        {
+          "field": "text",
+          "quote": "So Saul died for his transgression which he committed against the Lord, even against the word of the Lord, which he kept not, and also for asking counsel of one that had a familiar spirit, to enquire of it;",
+          "matches": [
+            "1 Chronicles 10:13"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And enquired not of the Lord: therefore he slew him",
+          "matches": [
+            "1 Chronicles 10:14"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [
+          "saul-enquired-of-the-lord-or-enquired-not",
+          "bring-me-up-samuel-by-what-means-did-samuel-come-up-at-endor"
+        ],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "korah-son-of-amminadab-or-son-of-izhar",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 6:22",
+          "quote": "The sons of Kohath; Amminadab his son, Korah his son, Assir his son,",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 6:23",
+          "quote": "Elkanah his son, and Ebiasaph his son, and Assir his son,",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 6:18",
+          "quote": "And the sons of Kohath were, Amram, and Izhar, and Hebron, and Uzziel.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 6:37",
+          "quote": "the son of Ebiasaph, the son of Korah",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 6:38",
+          "quote": "The son of Izhar, the son of Kohath, the son of Levi, the son of Israel.",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 6:21",
+          "quote": "And the sons of Izhar; Korah, and Nepheg, and Zichri.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּנֵ֖י קְהָ֑ת עַמִּינָדָ֣ב בְּנֹ֔ו קֹ֥רַח בְּנֹ֖ו אַסִּ֥יר בְּנֹֽו",
+          "stated": {
+            "chapter": 6,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/6/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 7
+          }
+        },
+        {
+          "quote": "בֶּן־קֹֽרַח",
+          "stated": {
+            "chapter": 6,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/6/",
+              "verse": 22
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 22
+          }
+        },
+        {
+          "quote": "בֶּן־יִצְהָ֣ר בֶּן־קְהָ֔ת",
+          "stated": {
+            "chapter": 6,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/6/",
+              "verse": 23
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 23
+          }
+        },
+        {
+          "quote": "וּבְנֵ֖י יִצְהָ֑ר קֹ֥רַח",
+          "stated": {
+            "chapter": 6,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/2/6/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 21
+          }
+        },
+        {
+          "quote": "Υἱοὶ Καὰθ, Ἀμιναδὰβ υἱὸς αὐτοῦ, Κορὲ υἱὸς αὐτοῦ",
+          "stated": {
+            "chapter": 6,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH06.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 7
+          }
+        },
+        {
+          "quote": "υἱοῦ Κορὲ",
+          "stated": {
+            "chapter": 6,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH06.htm",
+              "verse": "22"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 22
+          }
+        },
+        {
+          "quote": "υἱοῦ Ἰσαὰρ, υἱοῦ Καὰθ",
+          "stated": {
+            "chapter": 6,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH06.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 23
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 6:22",
+          "quote": "Amminadab his son, Korah his son",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "1 Chronicles 6:38",
+          "quote": "The son of Izhar, the son of Kohath",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Exodus 6:21",
+          "quote": "the sons of Izhar; Korah",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "Amminadab his son, Korah his son",
+          "matches": [
+            "1 Chronicles 6:22"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The sons of Kohath; Amminadab his son, Korah his son, Assir his son,",
+          "matches": [
+            "1 Chronicles 6:22"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Elkanah his son, and Ebiasaph his son, and Assir his son,",
+          "matches": [
+            "1 Chronicles 6:23"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Kohath were, Amram, and Izhar, and Hebron, and Uzziel.",
+          "matches": [
+            "1 Chronicles 6:18"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "the son of Ebiasaph, the son of Korah",
+          "matches": [
+            "1 Chronicles 6:37"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The son of Izhar, the son of Kohath, the son of Levi, the son of Israel.",
+          "matches": [
+            "1 Chronicles 6:38"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Izhar; Korah, and Nepheg, and Zichri.",
+          "matches": [
+            "Exodus 6:21"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "samuel-firstborn-vashni-or-joel",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 6:28",
+          "quote": "And the sons of Samuel; the firstborn Vashni, and Abiah.",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 8:2",
+          "quote": "Now the name of his firstborn was Joel; and the name of his second, Abiah",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 6:33",
+          "quote": "Heman a singer, the son of Joel, the son of Shemuel",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 6:34",
+          "quote": "The son of Elkanah, the son of Jeroham",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 1:1",
+          "quote": "his name was Elkanah, the son of Jeroham",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּבְנֵ֧י שְׁמוּאֵ֛ל הַבְּכֹ֥ר וַשְׁנִ֖י וַאֲבִיָּֽה",
+          "stated": {
+            "chapter": 6,
+            "verse": 13
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/6/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 13
+          }
+        },
+        {
+          "quote": "בֶּן־יֹואֵ֖ל בֶּן־שְׁמוּאֵֽל",
+          "stated": {
+            "chapter": 6,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/6/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 18
+          }
+        },
+        {
+          "quote": "שֶׁם־בְּנֹ֤ו הַבְּכֹור֙ יֹואֵ֔ל וְשֵׁ֥ם מִשְׁנֵ֖הוּ אֲבִיָּ֑ה",
+          "stated": {
+            "chapter": 8,
+            "verse": 2
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/9/8/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 2
+          }
+        },
+        {
+          "quote": "Υἱοὶ Σαμουὴλ, ὁ πρωτότοκος Σανὶ, καὶ Ἀβιά",
+          "stated": {
+            "chapter": 6,
+            "verse": 13
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH06.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": 13
+          }
+        },
+        {
+          "quote": "πρωτότοκος Ἰωήλ",
+          "stated": {
+            "chapter": 8,
+            "verse": 2
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1SA08.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 2
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 6:28",
+          "quote": "the firstborn Vashni, and Abiah",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "1 Samuel 8:2",
+          "quote": "the name of his firstborn was Joel",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "the firstborn Vashni, and Abiah",
+          "matches": [
+            "1 Chronicles 6:28"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "the name of his firstborn was Joel; and the name of his second, Abiah",
+          "matches": [
+            "1 Samuel 8:2"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "Joel, the son of Shemuel",
+          "matches": [
+            "1 Chronicles 6:33"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Samuel; the firstborn Vashni, and Abiah.",
+          "matches": [
+            "1 Chronicles 6:28"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Now the name of his firstborn was Joel; and the name of his second, Abiah",
+          "matches": [
+            "1 Samuel 8:2"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Heman a singer, the son of Joel, the son of Shemuel",
+          "matches": [
+            "1 Chronicles 6:33"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The son of Elkanah, the son of Jeroham",
+          "matches": [
+            "1 Chronicles 6:34"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "his name was Elkanah, the son of Jeroham",
+          "matches": [
+            "1 Samuel 1:1"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "ammon-hired-thirty-two-thousand-chariots-or-footmen",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "2 Samuel 10:6",
+          "quote": "And when the children of Ammon saw that they stank before David, the children of Ammon sent and hired the Syrians of Bethrehob and the Syrians of Zoba, twenty thousand footmen, and of king Maacah a thousand men, and of Ishtob twelve thousand men.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 19:6",
+          "quote": "And when the children of Ammon saw that they had made themselves odious to David, Hanun and the children of Ammon sent a thousand talents of silver to hire them chariots and horsemen",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 19:7",
+          "quote": "So they hired thirty and two thousand chariots, and the king of Maachah and his people",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עֶשְׂרִ֥ים אֶ֙לֶף֙ רַגְלִ֔י וְאֶת־מֶ֤לֶךְ מַֽעֲכָה֙ אֶ֣לֶף אִ֔ישׁ וְאִ֣ישׁ טֹ֔וב שְׁנֵים־עָשָׂ֥ר אֶ֖לֶף אִֽישׁ",
+          "stated": {
+            "chapter": 10,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/10/10/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": 6
+          }
+        },
+        {
+          "quote": "וַיִּשְׂכְּר֣וּ לָהֶ֡ם שְׁנַיִם֩ וּשְׁלֹשִׁ֨ים אֶ֜לֶף רֶ֗כֶב וְאֶת־מֶ֤לֶךְ מַעֲכָה֙ וְאֶת־עַמֹּ֔ו",
+          "stated": {
+            "chapter": 19,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/19/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 19,
+            "verse": 7
+          }
+        },
+        {
+          "quote": "εἴκοσι χιλιάδας πεζῶν",
+          "stated": {
+            "chapter": 10,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA10.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": 6
+          }
+        },
+        {
+          "quote": "δώδεκα χιλιάδας ἀνδρῶν",
+          "stated": {
+            "chapter": 10,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/2SA10.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": 6
+          }
+        },
+        {
+          "quote": "δύο καὶ τριάκοντα χιλιάδας ἁρμάτων",
+          "stated": {
+            "chapter": 19,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH19.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 19,
+            "verse": 7
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "2 Samuel 10:6",
+          "quote": "twenty thousand footmen, and of king Maacah a thousand men, and of Ishtob twelve thousand men",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "1 Chronicles 19:7",
+          "quote": "they hired thirty and two thousand chariots",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "thirty and two thousand chariots",
+          "matches": [
+            "1 Chronicles 19:7"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And when the children of Ammon saw that they stank before David, the children of Ammon sent and hired the Syrians of Bethrehob and the Syrians of Zoba, twenty thousand footmen, and of king Maacah a thousand men, and of Ishtob twelve thousand men.",
+          "matches": [
+            "2 Samuel 10:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And when the children of Ammon saw that they had made themselves odious to David, Hanun and the children of Ammon sent a thousand talents of silver to hire them chariots and horsemen",
+          "matches": [
+            "1 Chronicles 19:6"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "So they hired thirty and two thousand chariots, and the king of Maachah and his people",
+          "matches": [
+            "1 Chronicles 19:7"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "josiah-sons-third-zedekiah-fourth-shallum-and-their-ages",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 3:15",
+          "quote": "And the sons of Josiah were, the firstborn Johanan, the second Jehoiakim, the third Zedekiah, the fourth Shallum.",
+          "exact": true
+        },
+        {
+          "ref": "Jeremiah 22:11",
+          "quote": "Shallum the son of Josiah king of Judah, which reigned instead of Josiah his father",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 23:30",
+          "quote": "the people of the land took Jehoahaz the son of Josiah, and anointed him, and made him king in his father's stead",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 23:31",
+          "quote": "Jehoahaz was twenty and three years old when he began to reign; and he reigned three months in Jerusalem.",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 23:36",
+          "quote": "Jehoiakim was twenty and five years old when he began to reign; and he reigned eleven years in Jerusalem.",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 24:8",
+          "quote": "Jehoiachin was eighteen years old when he began to reign, and he reigned in Jerusalem three months.",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 24:17",
+          "quote": "made Mattaniah his father's brother king in his stead, and changed his name to Zedekiah",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 24:18",
+          "quote": "Zedekiah was twenty and one years old when he began to reign",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הַשְּׁלִשִׁי֙ צִדְקִיָּ֔הוּ הָרְבִיעִ֖י שַׁלּֽוּם",
+          "stated": {
+            "chapter": 3,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/3/",
+              "verse": 15
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 15
+          }
+        },
+        {
+          "quote": "בֶּן־עֶשְׂרִ֨ים וְשָׁלֹ֤שׁ שָׁנָה֙ יְהֹואָחָ֣ז בְּמָלְכֹ֔ו",
+          "stated": {
+            "chapter": 23,
+            "verse": 31
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/12/23/",
+              "verse": 31
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 23,
+            "verse": 31
+          }
+        },
+        {
+          "quote": "בֶּן־עֶשְׂרִ֨ים וְאַחַ֤ת שָׁנָה֙ צִדְקִיָּ֣הוּ בְמָלְכֹ֔ו",
+          "stated": {
+            "chapter": 24,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/12/24/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 24,
+            "verse": 18
+          }
+        },
+        {
+          "quote": "שַׁלֻּ֨ם בֶּן־יֹאשִׁיָּ֜הוּ מֶ֣לֶךְ יְהוּדָ֗ה הַמֹּלֵךְ֙ תַּ֚חַת יֹאשִׁיָּ֣הוּ אָבִ֔יו",
+          "stated": {
+            "chapter": 22,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/24/22/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 22,
+            "verse": 11
+          }
+        },
+        {
+          "quote": "ὁ τρίτος Σεδεκίας, ὁ τέταρτος Σαλούμ",
+          "stated": {
+            "chapter": 3,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH03.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 15
+          }
+        },
+        {
+          "quote": "Υἱὸς εἴκοσι καὶ τριῶν ἐτῶν ἦν Ἰωάχαζ",
+          "stated": {
+            "chapter": 23,
+            "verse": 31
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/2KI23.htm",
+              "verse": "31"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 23,
+            "verse": 31
+          }
+        },
+        {
+          "quote": "Υἱὸς εἴκοσι καὶ ἑνὸς ἑνιαυτῶν Σεδεκίας",
+          "stated": {
+            "chapter": 24,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/2KI24.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 24,
+            "verse": 18
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 3:15",
+          "quote": "the third Zedekiah, the fourth Shallum",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "2 Kings 23:31",
+          "quote": "Jehoahaz was twenty and three years old when he began to reign",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "2 Kings 24:18",
+          "quote": "Zedekiah was twenty and one years old when he began to reign",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem",
+          "title": "Josiah’s death: slain at Megiddo and carried away dead, or brought wounded to Jerusalem, where he died?",
+          "summary": "2 Kings says Pharaoh slew Josiah at Megiddo and his servants carried him dead from there. 2 Chronicles says he was wounded, moved to another chariot and brought to Jerusalem, “and he died”.",
+          "reasoning": "Kings places the death at Megiddo and has a dead man carried to Jerusalem. Chronicles has a wounded man speak, be moved, and be brought to Jerusalem, and only then says he died.",
+          "scope": "No tag is proposed: the KJV matches the Hebrew in both books, and the Greek agrees in each. Chronicles does not say in so many words where Josiah died; the order of its clauses puts the death after the journey. If the Hebrew word rendered “dead” in Kings is taken as “dying”, the accounts draw closer; the record does not decide that, and verse 29 still says he was put to death at Megiddo. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        },
+        {
+          "id": "jehoiakim-none-to-sit-on-the-throne-or-his-son-reigned",
+          "title": "Jehoiakim: “none to sit upon the throne of David”, or his son reigned in his stead?",
+          "summary": "Jeremiah says the Lord declared that Jehoiakim would have none to sit on David’s throne. 2 Kings says his son Jehoiachin reigned in his stead, for three months.",
+          "reasoning": "The prophecy says no one of Jehoiakim’s would sit on the throne of David. Kings reports that his son did reign in his place in Jerusalem.",
+          "scope": "No tag is proposed: the KJV matches the Hebrew in both books, and the Greek agrees. Both statements can stand if a reign of three months, ended by exile, is not counted as sitting on the throne, or if the prophecy looks to a lasting line; neither book says so. Brenton’s Greek numbers this chapter of Jeremiah 43. The second half of Jeremiah 36:30, about Jehoiakim’s body, is not compared here. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        },
+        {
+          "id": "jehoiachin-eighteen-or-eight-years-old",
+          "title": "Jehoiachin at his accession: eighteen years old, or eight?",
+          "summary": "2 Kings says Jehoiachin was eighteen when he began to reign. 2 Chronicles says he was eight.",
+          "reasoning": "Both verses open the same three-month reign. The ages differ by ten years.",
+          "scope": "No tag is proposed: the KJV matches the Hebrew in each book, and Brenton’s Greek has eighteen in Kings and eight in Chronicles, as the KJV does. No claim is made about which number is original. The length of the reign (three months, or three months and ten days) is not treated as a conflict. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        },
+        {
+          "id": "zedekiah-jehoiachin-uncle-brother-or-son",
+          "title": "Zedekiah: Jehoiachin’s uncle, his brother, or his son?",
+          "summary": "2 Kings calls the new king Jehoiachin’s father’s brother. 2 Chronicles calls him Jehoiachin’s brother. The Greek of Kings says “his son”, and the Greek of Chronicles says “his father’s brother”.",
+          "reasoning": "The KJV follows the Hebrew in each book and so gives the same man two relationships to Jehoiachin: uncle in Kings, brother in Chronicles. Brenton’s Greek differs from the KJV in both places. In Kings it has “his son”; in Chronicles it has “brother of his father”, which is what the KJV has in Kings.",
+          "scope": "G applies at both verses: “his son” at 2 Kings 24:17 and “brother of his father” at 2 Chronicles 36:10. “Brother” can be used of a kinsman more widely, and if Chronicles uses it so, the two KJV verses agree; Chronicles does not say so. No claim is made about which wording is original. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "the third Zedekiah, the fourth Shallum",
+          "matches": [
+            "1 Chronicles 3:15"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "Shallum",
+          "matches": [
+            "1 Chronicles 3:15",
+            "Jeremiah 22:11"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Josiah were, the firstborn Johanan, the second Jehoiakim, the third Zedekiah, the fourth Shallum.",
+          "matches": [
+            "1 Chronicles 3:15"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Shallum the son of Josiah king of Judah, which reigned instead of Josiah his father",
+          "matches": [
+            "Jeremiah 22:11"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "the people of the land took Jehoahaz the son of Josiah, and anointed him, and made him king in his father's stead",
+          "matches": [
+            "2 Kings 23:30"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Jehoahaz was twenty and three years old when he began to reign; and he reigned three months in Jerusalem.",
+          "matches": [
+            "2 Kings 23:31"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Jehoiakim was twenty and five years old when he began to reign; and he reigned eleven years in Jerusalem.",
+          "matches": [
+            "2 Kings 23:36"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Jehoiachin was eighteen years old when he began to reign, and he reigned in Jerusalem three months.",
+          "matches": [
+            "2 Kings 24:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "made Mattaniah his father's brother king in his stead, and changed his name to Zedekiah",
+          "matches": [
+            "2 Kings 24:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Zedekiah was twenty and one years old when he began to reign",
+          "matches": [
+            "2 Kings 24:18"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "third",
+          "matches": [
+            "1 Chronicles 3:15"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "fourth",
+          "matches": [
+            "1 Chronicles 3:15"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "the second Jehoiakim",
+          "matches": [
+            "1 Chronicles 3:15"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [
+          "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem",
+          "jehoiakim-none-to-sit-on-the-throne-or-his-son-reigned",
+          "jehoiachin-eighteen-or-eight-years-old",
+          "zedekiah-jehoiachin-uncle-brother-or-son"
+        ],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "hezron-married-at-sixty-or-sixty-five-greek",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 2:21",
+          "quote": "whom he married when he was threescore years old",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְה֖וּא בֶּן־שִׁשִּׁ֣ים שָׁנָ֑ה",
+          "stated": {
+            "chapter": 2,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/2/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 21
+          }
+        },
+        {
+          "quote": "καὶ αὐτὸς ἑξηκονταπέντε ἐτῶν ἦν",
+          "stated": {
+            "chapter": 2,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH02.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 21
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 2:21",
+          "quote": "when he was threescore years old",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "when he was threescore years old",
+          "matches": [
+            "1 Chronicles 2:21"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "whom he married when he was threescore years old",
+          "matches": [
+            "1 Chronicles 2:21"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "hagarite-spoil-camels-fifty-thousand-or-five-thousand-greek",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 5:21",
+          "quote": "of their camels fifty thousand, and of sheep two hundred and fifty thousand, and of asses two thousand, and of men an hundred thousand",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "גְּֽמַלֵּיהֶ֞ם חֲמִשִּׁ֥ים אֶ֙לֶף֙",
+          "stated": {
+            "chapter": 5,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/5/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 5,
+            "verse": 21
+          }
+        },
+        {
+          "quote": "καμήλους πεντακισχιλίας",
+          "stated": {
+            "chapter": 5,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH05.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 5,
+            "verse": 21
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 5:21",
+          "quote": "of their camels fifty thousand",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "of their camels fifty thousand",
+          "matches": [
+            "1 Chronicles 5:21"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "of their camels fifty thousand, and of sheep two hundred and fifty thousand, and of asses two thousand, and of men an hundred thousand",
+          "matches": [
+            "1 Chronicles 5:21"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "danites-at-hebron-28600-or-28800-greek",
+      "batch": "1-chronicles-1-29",
+      "english": [
+        {
+          "ref": "1 Chronicles 12:35",
+          "quote": "And of the Danites expert in war twenty and eight thousand and six hundred.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עֶשְׂרִֽים־וּשְׁמֹונָ֥ה אֶ֖לֶף וְשֵׁ֥שׁ מֵאֹֽות",
+          "stated": {
+            "chapter": 12,
+            "verse": 36
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/12/",
+              "verse": 36
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": 36
+          }
+        },
+        {
+          "quote": "εἰκοσιοκτὼ χιλιάδες καὶ ὀκτακόσιοι",
+          "stated": {
+            "chapter": 12,
+            "verse": 36
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH12.htm",
+              "verse": "36"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": 36
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 12:35",
+          "quote": "twenty and eight thousand and six hundred",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "twenty and eight thousand and six hundred",
+          "matches": [
+            "1 Chronicles 12:35"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And of the Danites expert in war twenty and eight thousand and six hundred.",
+          "matches": [
+            "1 Chronicles 12:35"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    }
+  ]
+}

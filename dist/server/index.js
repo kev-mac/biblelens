@@ -40891,6 +40891,1983 @@ const EVIDENCE=[
         "quote": "are they not written in the book of the acts of Solomon?"
       }
     ]
+  },
+  {
+    "id": "great-indignation-against-israel-whose-indignation-and-why-did-israel-depart",
+    "mode": "questions",
+    "ref": "2 Kings 3:27",
+    "appliesTo": [
+      "2 Kings 3:27"
+    ],
+    "title": "“There was great indignation against Israel” — whose indignation, and why did Israel depart?",
+    "status": "Context",
+    "summary": "Israel, Judah and Edom are winning the war against Moab when the king of Moab offers his eldest son as a burnt offering on the wall. The next sentence says “there was great indignation against Israel”, and the armies go home. The verses read do not say whose indignation it was, why it fell on Israel, or how it made the armies leave.",
+    "text": "KJV 2 Kings 3:18: “And this is but a light thing in the sight of the Lord: he will deliver the Moabites also into your hand.” KJV 3:24: “And when they came to the camp of Israel, the Israelites rose up and smote the Moabites, so that they fled before them: but they went forward smiting the Moabites, even in their country.” KJV 3:26: “And when the king of Moab saw that the battle was too sore for him, he took with him seven hundred men that drew swords, to break through even unto the king of Edom: but they could not.” KJV 3:27: “Then he took his eldest son that should have reigned in his stead, and offered him for a burnt offering upon the wall. And there was great indignation against Israel: and they departed from him, and returned to their own land.” Hebrew (WLC) 2 Kings 3:27: וַיְהִ֥י קֶצֶף־גָּדֹ֖ול עַל־יִשְׂרָאֵ֑ל וַיִּסְעוּ֙ מֵֽעָלָ֔יו וַיָּשֻׁ֖בוּ לָאָֽרֶץ [and there was great wrath upon Israel, and they set out from him and returned to the land]. Septuagint (Brenton Greek) 2 Kings 3:27: καὶ ἐγένετο μετάμελος μέγας ἐπὶ Ἰσραήλ. Fetched from https://bolls.life/get-text/WLC/12/3/ and https://ebible.org/grcbrent/2KI03.htm.",
+    "reasoning": "Elisha had said of the Lord, “he will deliver the Moabites also into your hand” (3:18), and the chapter reports the Moabites beaten and driven back into their own country (3:24) and their king unable to break out (3:26). Then one verse reports the offering of the king’s son and, straight after it, “great indignation against Israel”, followed by the withdrawal. The sentence names no one who was indignant. It does not say that the offering caused the indignation, although it is told directly before it, and it does not say what the indignation did. The gap matters to the passage because it is the stated turning point of the campaign: the armies that were winning “departed from him, and returned to their own land”.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that the wrath was the Lord’s, against Israel; that the passage speaks of the wrath of the god of Moab, to whom the son is taken to have been offered; that it was the fury of the Moabites, roused by the act; that it was horror or anger felt by the besiegers themselves, or by Judah and Edom against Israel. Limits: the verse does not name the god to whom the son was offered, and does not say the offering had any effect; no failure of the words at 3:18 is asserted here, since 3:24 reports the Moabites smitten; the Hebrew noun and the Greek noun are quoted as printed and neither names whose feeling is meant; a use of the same Hebrew or Greek noun in another passage would not settle the sense here. Check made: 2 Kings 3:18–19 and 3:24–27 were read in the KJV, and 3:27 also in the Hebrew and the Greek; a phrase search of the packaged KJV for “great indignation” finds Deuteronomy 29:28, 2 Kings 3:27 and Nehemiah 4:1, and a whole-word search for “indignation” in 2 Kings finds 3:27 only. Those are word searches and a reading of the verses listed, not a reading of the whole book. These checked verses do not say whose indignation is meant or why the armies departed. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Kings 3: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI03.htm"
+      },
+      {
+        "label": "2 Kings 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/3/"
+      },
+      {
+        "label": "2 Kings 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Kings 3:27",
+        "book": 11,
+        "chapter": 3,
+        "verse": 27
+      },
+      {
+        "label": "2 Kings 3:18",
+        "book": 11,
+        "chapter": 3,
+        "verse": 18
+      },
+      {
+        "label": "2 Kings 3:24",
+        "book": 11,
+        "chapter": 3,
+        "verse": 24
+      },
+      {
+        "label": "2 Kings 3:26",
+        "book": 11,
+        "chapter": 3,
+        "verse": 26
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Kings 3:27",
+        "quote": "And there was great indignation against Israel: and they departed from him, and returned to their own land."
+      }
+    ]
+  },
+  {
+    "id": "the-blood-of-naboth-and-the-blood-of-his-sons-what-happened-to-naboths-sons",
+    "mode": "questions",
+    "ref": "2 Kings 9:26",
+    "appliesTo": [
+      "2 Kings 9:26"
+    ],
+    "title": "“The blood of Naboth, and the blood of his sons” — what happened to Naboth's sons?",
+    "status": "Context",
+    "summary": "When Jehu has Joram’s body thrown into Naboth’s field, he recalls a word of the Lord about “the blood of Naboth, and the blood of his sons”. The account of Naboth’s death in 1 Kings 21 reports that Naboth was stoned and does not mention any sons. The verses read do not say when, how or by whom Naboth’s sons were killed.",
+    "text": "KJV 2 Kings 9:25: “Then said Jehu to Bidkar his captain, Take up, and cast him in the portion of the field of Naboth the Jezreelite: for remember how that, when I and thou rode together after Ahab his father, the Lord laid this burden upon him;” KJV 9:26: “Surely I have seen yesterday the blood of Naboth, and the blood of his sons, saith the Lord; and I will requite thee in this plat, saith the Lord. Now therefore take and cast him into the plat of ground, according to the word of the Lord.” KJV 1 Kings 21:13: “Then they carried him forth out of the city, and stoned him with stones, that he died.” KJV 21:14: “Then they sent to Jezebel, saying, Naboth is stoned, and is dead.” KJV 21:16: “And it came to pass, when Ahab heard that Naboth was dead, that Ahab rose up to go down to the vineyard of Naboth the Jezreelite, to take possession of it.” KJV 21:19: “Hast thou killed, and also taken possession?” … “In the place where dogs licked the blood of Naboth shall dogs lick thy blood, even thine.” Hebrew (WLC) 2 Kings 9:26: אֶת־דְּמֵ֣י נָבֹות֩ וְאֶת־דְּמֵ֨י בָנָ֜יו רָאִ֤יתִי אֶ֙מֶשׁ֙ [the blood of Naboth and the blood of his sons I saw yesterday]. 1 Kings 21:13: וַיִּסְקְלֻ֥הוּ בָאֲבָנִ֖ים וַיָּמֹֽת [and they stoned him with stones and he died]. Septuagint (Brenton Greek) 2 Kings 9:26: τὰ αἵματα Ναβουθαὶ καὶ τὰ αἵματα τῶν υἱῶν αὐτοῦ εἶδον ἐχθὲς [the blood of Nabuthai and the blood of his sons I saw yesterday]. Brenton’s Greek prints the Naboth chapter as chapter 20; there, at 20:13: καὶ ἐλιθοβόλησαν αὐτὸν ἐν λίθοις, καὶ ἀπέθανε [and they stoned him with stones, and he died]. Fetched from https://bolls.life/get-text/WLC/12/9/, https://bolls.life/get-text/WLC/11/21/, https://ebible.org/grcbrent/2KI09.htm and https://ebible.org/grcbrent/1KI20.htm.",
+    "reasoning": "2 Kings 9:26 gives, as the Lord’s own words, that he had seen “the blood of Naboth, and the blood of his sons”. In 1 Kings 21 the verses read tell of one death: Naboth is accused, carried out of the city and stoned (21:13), the message to Jezebel is “Naboth is stoned, and is dead” (21:14), and Elijah’s charge to Ahab speaks of “the blood of Naboth” (21:19). A whole-word search of 1 Kings 21 in the packaged KJV for “son” or “sons” finds only 21:10, 21:22 and 21:29, and none of those is about Naboth’s children. So the later verse refers to bloodshed that the earlier account, in the verses read, does not report. The gap matters because the sons’ blood is part of the stated ground for what is done to Joram’s body, and because Ahab then goes down “to take possession” of the vineyard (21:16), which Naboth had called the inheritance of his fathers.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that the sons were put to death with Naboth, at the same time, and 1 Kings 21 leaves it out; that they were killed afterwards so that no heir could claim the vineyard; that “the blood of his sons” speaks of the loss done to his descendants and not of a separate killing. Limits: no conflict between the two books is asserted, since an account that reports one death does not deny others; 2 Kings 9:26 does speak of the sons’ blood, so what is missing is any report of the event, not the fact of bloodshed; the words Jehu recalls are not found in those words in 1 Kings 21:19, and whether they are a second saying or another form of the same one is not settled by these verses; “yesterday” is quoted as printed and its reference is not fixed here. Brenton’s Greek of 9:26 has “him” where the KJV has “I will requite thee”; that wording was seen and not examined. Check made: 2 Kings 9:21–26 and 1 Kings 21:3, 21:13–16 and 21:19 were read in the KJV, 1 Kings 21:10, 21:21–22 and 21:29 were read for the word search, and 2 Kings 9:26 and 1 Kings 21:13 were also read in the Hebrew and the Greek; a whole-word search of the packaged KJV for “Naboth” finds the name only in 1 Kings 21 (verses 1–4, 6–9, 12–16, 18 and 19) and 2 Kings 9:21, 9:25 and 9:26. Those are word searches and a reading of the verses listed, not a reading of the whole of either book. These checked verses do not say when, how or by whom Naboth’s sons were killed. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Kings 9: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI09.htm"
+      },
+      {
+        "label": "1 Kings 21: KJV",
+        "url": "https://ebible.org/eng-kjv/1KI21.htm"
+      },
+      {
+        "label": "2 Kings 9: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/9/"
+      },
+      {
+        "label": "1 Kings 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/11/21/"
+      },
+      {
+        "label": "2 Kings 9: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI09.htm"
+      },
+      {
+        "label": "1 Kings 20: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1KI20.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Kings 9:26",
+        "book": 11,
+        "chapter": 9,
+        "verse": 26
+      },
+      {
+        "label": "2 Kings 9:25",
+        "book": 11,
+        "chapter": 9,
+        "verse": 25
+      },
+      {
+        "label": "1 Kings 21:13",
+        "book": 10,
+        "chapter": 21,
+        "verse": 13
+      },
+      {
+        "label": "1 Kings 21:14",
+        "book": 10,
+        "chapter": 21,
+        "verse": 14
+      },
+      {
+        "label": "1 Kings 21:16",
+        "book": 10,
+        "chapter": 21,
+        "verse": 16
+      },
+      {
+        "label": "1 Kings 21:19",
+        "book": 10,
+        "chapter": 21,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Kings 9:26",
+        "quote": "Surely I have seen yesterday the blood of Naboth, and the blood of his sons, saith the Lord"
+      }
+    ]
+  },
+  {
+    "id": "the-lord-gave-israel-a-saviour-who-was-the-saviour",
+    "mode": "questions",
+    "ref": "2 Kings 13:5",
+    "appliesTo": [
+      "2 Kings 13:5"
+    ],
+    "title": "“The Lord gave Israel a saviour” — who was the saviour?",
+    "status": "Context",
+    "summary": "In the account of Jehoahaz the narrator says that “the Lord gave Israel a saviour, so that they went out from under the hand of the Syrians”. The verse does not name him, and the same chapter says that Hazael oppressed Israel “all the days of Jehoahaz”. The verses read do not say who the saviour was or when he came.",
+    "text": "KJV 2 Kings 13:3: “And the anger of the Lord was kindled against Israel, and he delivered them into the hand of Hazael king of Syria, and into the hand of Benhadad the son of Hazael, all their days.” KJV 13:4: “And Jehoahaz besought the Lord, and the Lord hearkened unto him: for he saw the oppression of Israel, because the king of Syria oppressed them.” KJV 13:5: “(And the Lord gave Israel a saviour, so that they went out from under the hand of the Syrians: and the children of Israel dwelt in their tents, as beforetime.” KJV 13:7: “Neither did he leave of the people to Jehoahaz but fifty horsemen, and ten chariots, and ten thousand footmen” KJV 13:22: “But Hazael king of Syria oppressed Israel all the days of Jehoahaz.” KJV 13:25: “And Jehoash the son of Jehoahaz took again out of the hand of Benhadad the son of Hazael the cities, which he had taken out of the hand of Jehoahaz his father by war. Three times did Joash beat him, and recovered the cities of Israel.” KJV 14:27: “but he saved them by the hand of Jeroboam the son of Joash.” Hebrew (WLC) 2 Kings 13:5: וַיִּתֵּ֨ן יְהוָ֤ה לְיִשְׂרָאֵל֙ מֹושִׁ֔יעַ [and the Lord gave to Israel a deliverer]. 14:27: וַיֹּ֣ושִׁיעֵ֔ם בְּיַ֖ד יָרָבְעָ֥ם בֶּן־יֹואָֽשׁ [and he delivered them by the hand of Jeroboam son of Joash]. Septuagint (Brenton Greek) 2 Kings 13:5: Καὶ ἔδωκε Κύριος σωτηρίαν τῷ Ἰσραὴλ [and the Lord gave deliverance to Israel]. 14:27: καὶ ἔσωσεν αὐτοὺς διὰ χειρὸς Ἱεροβοὰμ υἱοῦ Ἰωάς [and he saved them by the hand of Jeroboam son of Joas]. Fetched from https://bolls.life/get-text/WLC/12/13/, https://bolls.life/get-text/WLC/12/14/, https://ebible.org/grcbrent/2KI13.htm and https://ebible.org/grcbrent/2KI14.htm.",
+    "reasoning": "The KJV and the Hebrew of 13:5 speak of a person given to Israel, by whom Israel came out from under Syria. The verse stands inside the account of Jehoahaz, after his prayer (13:4), yet the chapter also says that the king of Syria left Jehoahaz almost no army (13:7) and that Hazael oppressed Israel “all the days of Jehoahaz” (13:22). Relief is then reported under two later kings: Jehoash took back the cities and beat Benhadad three times (13:25), and of Jeroboam the narrator says the Lord “saved them by the hand of Jeroboam” (14:27), with the verb that belongs to the noun at 13:5. None of the verses read says that either king is the saviour of 13:5, and the verse itself gives no name, people or office. The identity matters to the passage because it is the stated answer to the king’s prayer and the stated means of Israel’s release.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state as the meaning of 13:5: that the saviour is Jehoash, whose victories are told at 13:25; that he is Jeroboam the son of Joash, by whose hand the Lord “saved them” at 14:27; that he is Elisha, who foretells the victories in the same chapter; that he is a foreign king whose pressure on Syria relieved Israel, whom the book does not mention in these verses. Limits: 14:27 does name Jeroboam as one by whom the Lord saved Israel, so what is open is whether 13:5 looks ahead to him, to Jehoash, or to someone else, not whether the book names any deliverer at all; a shared Hebrew root between 13:5 and 14:27 does not settle that they speak of the same person; no conflict between 13:5 and 13:22 is asserted, since 13:5 may look past the reign in which it is told; a foreign king is not named in the verses read and no outside record was opened. Brenton’s Greek of 13:5 has an abstract noun, “deliverance”, where the Hebrew and the KJV have a person; that is a wording difference stated here and not proposed as a separate finding. Check made: 2 Kings 13:3–7, 13:14, 13:19, 13:22–25 and 14:26–27 were read in the KJV, and 13:5 and 14:27 also in the Hebrew and the Greek; a whole-word search of the packaged KJV for “saviour” or “saviours” in 2 Kings finds 13:5 only. That is a word search and a reading of the verses listed, not a reading of the whole book. These checked verses do not say who the saviour of 13:5 was. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Kings 13: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI13.htm"
+      },
+      {
+        "label": "2 Kings 14: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI14.htm"
+      },
+      {
+        "label": "2 Kings 13: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/13/"
+      },
+      {
+        "label": "2 Kings 14: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/14/"
+      },
+      {
+        "label": "2 Kings 13: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI13.htm"
+      },
+      {
+        "label": "2 Kings 14: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI14.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Kings 13:5",
+        "book": 11,
+        "chapter": 13,
+        "verse": 5
+      },
+      {
+        "label": "2 Kings 13:3",
+        "book": 11,
+        "chapter": 13,
+        "verse": 3
+      },
+      {
+        "label": "2 Kings 13:4",
+        "book": 11,
+        "chapter": 13,
+        "verse": 4
+      },
+      {
+        "label": "2 Kings 13:7",
+        "book": 11,
+        "chapter": 13,
+        "verse": 7
+      },
+      {
+        "label": "2 Kings 13:22",
+        "book": 11,
+        "chapter": 13,
+        "verse": 22
+      },
+      {
+        "label": "2 Kings 13:25",
+        "book": 11,
+        "chapter": 13,
+        "verse": 25
+      },
+      {
+        "label": "2 Kings 14:27",
+        "book": 11,
+        "chapter": 14,
+        "verse": 27
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Kings 13:5",
+        "quote": "And the Lord gave Israel a saviour, so that they went out from under the hand of the Syrians"
+      }
+    ]
+  },
+  {
+    "id": "i-have-found-the-book-of-the-law-which-book-and-how-had-it-been-lost",
+    "mode": "questions",
+    "ref": "2 Kings 22:8",
+    "appliesTo": [
+      "2 Kings 22:8"
+    ],
+    "title": "“I have found the book of the law in the house of the Lord” — which book was it, and how had it gone out of knowledge?",
+    "status": "Context",
+    "summary": "In Josiah’s eighteenth year the high priest says he has “found the book of the law in the house of the Lord”. The king hears it, rends his clothes and reforms Judah by it. The verses read call it the book of the law and the book of the covenant, and Chronicles calls it a book of the law of the Lord given by Moses; they do not say how much writing it held, where it had been, or how it came to be found at that time.",
+    "text": "KJV 2 Kings 22:8: “And Hilkiah the high priest said unto Shaphan the scribe, I have found the book of the law in the house of the Lord. And Hilkiah gave the book to Shaphan, and he read it.” KJV 22:11: “And it came to pass, when the king had heard the words of the book of the law, that he rent his clothes.” KJV 22:13: “because our fathers have not hearkened unto the words of this book, to do according unto all that which is written concerning us.” KJV 23:2: “and he read in their ears all the words of the book of the covenant which was found in the house of the Lord.” KJV 23:21: “And the king commanded all the people, saying, Keep the passover unto the Lord your God, as it is written in the book of this covenant.” KJV 23:24: “that he might perform the words of the law which were written in the book that Hilkiah the priest found in the house of the Lord.” KJV 14:6: “according unto that which is written in the book of the law of Moses” KJV 2 Chronicles 34:14: “And when they brought out the money that was brought into the house of the Lord, Hilkiah the priest found a book of the law of the Lord given by Moses.” KJV Deuteronomy 31:26: “Take this book of the law, and put it in the side of the ark of the covenant of the Lord your God, that it may be there for a witness against thee.” Hebrew (WLC) 2 Kings 22:8: סֵ֧פֶר הַתֹּורָ֛ה מָצָ֖אתִי בְּבֵ֣ית יְהוָ֑ה [the book of the law I have found in the house of the Lord]. 23:2: סֵ֣פֶר הַבְּרִ֔ית הַנִּמְצָ֖א בְּבֵ֥ית יְהוָֽה [the book of the covenant that was found in the house of the Lord]. 2 Chronicles 34:14: סֵ֥פֶר תֹּֽורַת־יְהוָ֖ה בְּיַד־מֹשֶֽׁה [the book of the law of the Lord by the hand of Moses]. Deuteronomy 31:26: לָקֹ֗חַ אֵ֣ת סֵ֤פֶר הַתֹּורָה֙ הַזֶּ֔ה [take this book of the law]. Septuagint (Brenton Greek) 2 Kings 22:8: βιβλίον τοῦ νόμου εὗρον ἐν οἴκῳ Κυρίου [a book of the law I have found in the house of the Lord]. 23:2: τοῦ βιβλίου τῆς διαθήκης τοῦ εὑρεθέντος ἐν οἴκῳ Κυρίου [of the book of the covenant that was found in the house of the Lord]. 2 Chronicles 34:14: βιβλίον νόμου Κυρίου διὰ χειρὸς Μωυσῆ [a book of the law of the Lord by the hand of Moses]. Fetched from https://bolls.life/get-text/WLC/12/22/, https://bolls.life/get-text/WLC/12/23/, https://bolls.life/get-text/WLC/14/34/, https://bolls.life/get-text/WLC/5/31/, https://ebible.org/grcbrent/2KI22.htm, https://ebible.org/grcbrent/2KI23.htm and https://ebible.org/grcbrent/2CH34.htm.",
+    "reasoning": "The verses read say several things about the book. It was found in the house of the Lord by Hilkiah (22:8; 23:24). It is called “the book of the law” (22:8, 22:11), “the book of the covenant” (23:2) and “the book of this covenant” (23:21), and Chronicles calls it “a book of the law of the Lord given by Moses” (2 Chronicles 34:14). Its words told of wrath because “our fathers have not hearkened” (22:13), it was read aloud to the people at one gathering (23:2), and a passover was kept “as it is written” in it (23:21). What the verses do not give is its extent, the place in the house where it lay, how long it had been unread, or what led to its discovery and the king’s response. Deuteronomy 31:26 tells of “this book of the law” being put beside the ark, and 2 Kings 14:6 has the narrator cite “the book of the law of Moses” for an act of an earlier king; neither verse says what became of that book between then and Josiah. The gap matters because the whole reform of chapters 22 and 23 is said to rest on this book.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that the book was Deuteronomy or a part of it; that it was the whole of the five books of Moses; that it was the copy laid beside the ark, lost or hidden during earlier reigns; that it was a writing first made known at that time. Limits: 2 Chronicles 34:14 does state that it was a book of the law of the Lord by the hand of Moses, so what is open in these verses is which writing and how much of it, and the circumstances of its discovery, not whether the text ascribes it to Moses; the narrator’s citation at 14:6 shows that the book of Kings can refer to a book of the law of Moses for an earlier reign, and does not show who then had a copy or read it; that the book was read out at one gathering does not fix its length; that the king was alarmed does not show that no one in Judah knew the law. Brenton’s Greek prints no article before the word for “book” at 22:8, where the Hebrew and the KJV have “the book”; that is a wording difference stated here and not proposed as a separate finding. Check made: 2 Kings 22:3, 22:8–13, 23:2–3, 23:21–25 and 14:6, 2 Chronicles 34:14–15, 34:21 and 34:30 and Deuteronomy 31:24–26 were read in the KJV, and 2 Kings 22:8 and 23:2, 2 Chronicles 34:14 and Deuteronomy 31:26 also in the Hebrew, and the first three in the Greek; a phrase search of the packaged KJV for “book of the law” finds Deuteronomy 29:21, 30:10 and 31:26, Joshua 1:8, 8:31, 8:34, 23:6 and 24:26, 2 Kings 14:6, 22:8 and 22:11, 2 Chronicles 17:9, 34:14 and 34:15, Nehemiah 8:1, 8:3, 8:18 and 9:3 and Galatians 3:10, and a search for “book of the covenant” or “book of this covenant” finds Exodus 24:7, 2 Kings 23:2 and 23:21 and 2 Chronicles 34:30. Those are phrase searches and a reading of the verses listed, not a reading of the whole Bible; the verses found by the searches outside the passages listed were not read for this record. These checked verses do not say how much writing the book held or the circumstances of its discovery. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Kings 22: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI22.htm"
+      },
+      {
+        "label": "2 Kings 23: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI23.htm"
+      },
+      {
+        "label": "2 Kings 14: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI14.htm"
+      },
+      {
+        "label": "2 Chronicles 34: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH34.htm"
+      },
+      {
+        "label": "Deuteronomy 31: KJV",
+        "url": "https://ebible.org/eng-kjv/DEU31.htm"
+      },
+      {
+        "label": "2 Kings 22: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/22/"
+      },
+      {
+        "label": "2 Kings 23: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/23/"
+      },
+      {
+        "label": "2 Chronicles 34: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/34/"
+      },
+      {
+        "label": "Deuteronomy 31: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/5/31/"
+      },
+      {
+        "label": "2 Kings 22: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI22.htm"
+      },
+      {
+        "label": "2 Kings 23: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI23.htm"
+      },
+      {
+        "label": "2 Chronicles 34: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH34.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Kings 22:8",
+        "book": 11,
+        "chapter": 22,
+        "verse": 8
+      },
+      {
+        "label": "2 Kings 22:11",
+        "book": 11,
+        "chapter": 22,
+        "verse": 11
+      },
+      {
+        "label": "2 Kings 22:13",
+        "book": 11,
+        "chapter": 22,
+        "verse": 13
+      },
+      {
+        "label": "2 Kings 23:2",
+        "book": 11,
+        "chapter": 23,
+        "verse": 2
+      },
+      {
+        "label": "2 Kings 23:21",
+        "book": 11,
+        "chapter": 23,
+        "verse": 21
+      },
+      {
+        "label": "2 Kings 23:24",
+        "book": 11,
+        "chapter": 23,
+        "verse": 24
+      },
+      {
+        "label": "2 Kings 14:6",
+        "book": 11,
+        "chapter": 14,
+        "verse": 6
+      },
+      {
+        "label": "2 Chronicles 34:14",
+        "book": 13,
+        "chapter": 34,
+        "verse": 14
+      },
+      {
+        "label": "Deuteronomy 31:26",
+        "book": 4,
+        "chapter": 31,
+        "verse": 26
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Kings 22:8",
+        "quote": "I have found the book of the law in the house of the Lord."
+      }
+    ]
+  },
+  {
+    "id": "uz-hul-gether-sons-of-shem-or-sons-of-aram-greek-shorter",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 1:17",
+    "appliesTo": [
+      "1 Chronicles 1:17"
+    ],
+    "title": "Uz, Hul and Gether: sons of Shem, or sons of Aram?",
+    "status": "Context",
+    "summary": "Chronicles lists Uz, Hul, Gether and Meshech in one run under “The sons of Shem”. Genesis gives Shem five sons and calls Uz, Hul, Gether and Mash “the children of Aram”. Brenton’s Greek of the Chronicles verse names only the first two sons of Shem and none of the four.",
+    "text": "KJV 1 Chronicles 1:17: “The sons of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech.” KJV Genesis 10:22: “The children of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram.” KJV Genesis 10:23: “And the children of Aram; Uz, and Hul, and Gether, and Mash.” Hebrew (WLC) 1 Chronicles 1:17: בְּנֵ֣י שֵׁ֔ם עֵילָ֣ם וְאַשּׁ֔וּר וְאַרְפַּכְשַׁ֖ד וְל֣וּד וַאֲרָ֑ם וְע֥וּץ וְח֖וּל וְגֶ֥תֶר וָמֶֽשֶׁךְ [sons of Shem: Elam and Asshur and Arphaxad and Lud and Aram and Uz and Hul and Gether and Meshech]. Hebrew (WLC) Genesis 10:23: וּבְנֵ֖י אֲרָ֑ם ע֥וּץ וְח֖וּל וְגֶ֥תֶר וָמַֽשׁ [and the sons of Aram: Uz and Hul and Gether and Mash]. Septuagint (Brenton Greek) 1 Chronicles 1:17, the whole verse as printed: Υἱοὶ Σὴμ, Αἰλὰμ, καὶ Ἀσσοὺρ, [sons of Sem: Ælam and Assur]. The cited page prints verse numbers 1 to 10, then 17, then 24 onward; it prints no verses 11 to 16 or 18 to 23. Verse 24 as printed begins: καὶ Ἀρφαξὰδ, Σάλα, [and Arphaxad, Sala]. Septuagint (Brenton Greek) Genesis 10:23: Καὶ υἱοὶ Ἀρὰμ, Οὒζ, καὶ Οὒλ, καὶ Γατὲρ, καὶ Μοσόχ [and sons of Aram: Uz and Ul and Gater and Mosoch]. Fetched from https://bolls.life/get-text/WLC/13/1/, https://bolls.life/get-text/WLC/1/10/, https://ebible.org/grcbrent/1CH01.htm and https://ebible.org/grcbrent/GEN10.htm.",
+    "reasoning": "In the KJV and the Hebrew of Chronicles nothing separates Aram from the four names that follow: all nine stand under “The sons of Shem”. Genesis ends Shem’s sons at Aram and gives the four to Aram. Brenton’s Greek of the Chronicles verse stops after the second name, so this verse has neither the four names nor Arphaxad, Lud and Aram; the next verse printed, 24, begins with Arphaxad.",
+    "scope": "G applies at 1 Chronicles 1:17, where the Greek verse is much shorter than the KJV. Genesis 10:22–23 is context. The two KJV statements can stand together if “sons” in Chronicles takes in grandsons, or if the Chronicles list is a shortened copy of Genesis that leaves out the words “and the children of Aram”; the verse does not say either. The record does not claim that Meshech and Mash are the same person or different persons. It does not say why the Greek is shorter. No H is proposed: the KJV follows the Hebrew in both books. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 1: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH01.htm"
+      },
+      {
+        "label": "Genesis 10: KJV",
+        "url": "https://ebible.org/eng-kjv/GEN10.htm"
+      },
+      {
+        "label": "1 Chronicles 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/1/"
+      },
+      {
+        "label": "Genesis 10: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/1/10/"
+      },
+      {
+        "label": "1 Chronicles 1: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH01.htm"
+      },
+      {
+        "label": "Genesis 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/GEN10.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 1:17",
+        "book": 12,
+        "chapter": 1,
+        "verse": 17
+      },
+      {
+        "label": "Genesis 10:22",
+        "book": 0,
+        "chapter": 10,
+        "verse": 22
+      },
+      {
+        "label": "Genesis 10:23",
+        "book": 0,
+        "chapter": 10,
+        "verse": 23
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 1:17",
+        "quote": "and Aram, and Uz, and Hul, and Gether, and Meshech"
+      },
+      {
+        "label": "B",
+        "ref": "Genesis 10:23",
+        "quote": "the children of Aram; Uz, and Hul, and Gether, and Mash"
+      }
+    ]
+  },
+  {
+    "id": "timna-son-of-eliphaz-or-his-concubine",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 1:36",
+    "appliesTo": [
+      "1 Chronicles 1:36",
+      "Genesis 36:12"
+    ],
+    "title": "Timna: one of the sons of Eliphaz, or his concubine and the mother of Amalek?",
+    "status": "Textual conflict",
+    "summary": "Chronicles lists “Timna, and Amalek” among “The sons of Eliphaz”. Genesis names five sons and then says that Timna was Eliphaz’s concubine and bore him Amalek.",
+    "text": "KJV 1 Chronicles 1:36: “The sons of Eliphaz; Teman, and Omar, Zephi, and Gatam, Kenaz, and Timna, and Amalek.” KJV Genesis 36:11: “And the sons of Eliphaz were Teman, Omar, Zepho, and Gatam, and Kenaz.” KJV Genesis 36:12: “And Timna was concubine to Eliphaz Esau's son; and she bare to Eliphaz Amalek” KJV 1 Chronicles 1:39: “and Timna was Lotan's sister” Hebrew (WLC) 1 Chronicles 1:36: בְּנֵ֖י אֱלִיפָ֑ז תֵּימָ֤ן וְאֹומָר֙ צְפִ֣י וְגַעְתָּ֔ם קְנַ֖ז וְתִמְנָ֥ע וַעֲמָלֵֽק [sons of Eliphaz: Teman and Omar, Zephi and Gatam, Kenaz and Timna and Amalek]. Hebrew (WLC) Genesis 36:12: וְתִמְנַ֣ע ׀ הָיְתָ֣ה פִילֶ֗גֶשׁ לֶֽאֱלִיפַז֙ בֶּן־עֵשָׂ֔ו וַתֵּ֥לֶד לֶאֱלִיפַ֖ז אֶת־עֲמָלֵ֑ק [and Timna was concubine to Eliphaz son of Esau, and she bore to Eliphaz Amalek]. Septuagint (Brenton Greek) 1 Chronicles 1:36: καὶ Κενὲζ, καὶ Θαμνὰ, καὶ Ἀμαλήκ [and Kenez and Thamna and Amalek]. Genesis 36:12: Θαμνὰ δὲ ἦν παλλακὴ Ἑλιφὰς τοῦ υἱοῦ Ἡσαῦ· καὶ ἔτεκε τῷ Ἑλιφὰς τὸν Ἀμαλήκ [and Thamna was concubine of Eliphas the son of Esau, and she bore to Eliphas Amalek]. Fetched from https://bolls.life/get-text/WLC/13/1/, https://bolls.life/get-text/WLC/1/36/, https://ebible.org/grcbrent/1CH01.htm and https://ebible.org/grcbrent/GEN36.htm.",
+    "reasoning": "The seven names answer to one another in the same order in both books (Zephi is Zepho in Genesis). Genesis divides them: five sons, then a woman, Timna, who bears the seventh, Amalek. Chronicles sets all seven under one heading, “The sons of Eliphaz”, joined by “and”. Three verses later Chronicles itself has a Timna who is a woman, Lotan’s sister.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew in both books and Brenton’s Greek of 1 Chronicles 1:36 has the same seven names under the same heading. The statements can stand together if Eliphaz also had a son named Timna, or if the Chronicles list is a shortened copy of Genesis in which “Timna” still means the mother; the verse says neither. The record does not claim that the Timna of 1:36 and the Timna of 1:39 are the same person. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 1: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH01.htm"
+      },
+      {
+        "label": "Genesis 36: KJV",
+        "url": "https://ebible.org/eng-kjv/GEN36.htm"
+      },
+      {
+        "label": "1 Chronicles 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/1/"
+      },
+      {
+        "label": "Genesis 36: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/1/36/"
+      },
+      {
+        "label": "1 Chronicles 1: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH01.htm"
+      },
+      {
+        "label": "Genesis 36: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/GEN36.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 1:36",
+        "book": 12,
+        "chapter": 1,
+        "verse": 36
+      },
+      {
+        "label": "Genesis 36:11",
+        "book": 0,
+        "chapter": 36,
+        "verse": 11
+      },
+      {
+        "label": "Genesis 36:12",
+        "book": 0,
+        "chapter": 36,
+        "verse": 12
+      },
+      {
+        "label": "1 Chronicles 1:39",
+        "book": 12,
+        "chapter": 1,
+        "verse": 39
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 1:36",
+        "quote": "Kenaz, and Timna, and Amalek"
+      },
+      {
+        "label": "B",
+        "ref": "Genesis 36:12",
+        "quote": "Timna was concubine to Eliphaz"
+      }
+    ]
+  },
+  {
+    "id": "zerubbabel-son-of-pedaiah-or-son-of-shealtiel",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 3:19",
+    "appliesTo": [
+      "1 Chronicles 3:19",
+      "Ezra 3:2"
+    ],
+    "title": "Zerubbabel: son of Pedaiah, or son of Shealtiel?",
+    "status": "Textual conflict",
+    "summary": "Chronicles lists Zerubbabel among “the sons of Pedaiah”, and names Salathiel and Pedaiah separately among the sons of Jeconiah. Ezra and Haggai call him “Zerubbabel the son of Shealtiel”, and Matthew says “Salathiel begat Zorobabel”.",
+    "text": "KJV 1 Chronicles 3:17: “And the sons of Jeconiah; Assir, Salathiel his son,” KJV 3:18: “Malchiram also, and Pedaiah, and Shenazar, Jecamiah, Hoshama, and Nedabiah.” KJV 3:19: “And the sons of Pedaiah were, Zerubbabel, and Shimei” KJV Ezra 3:2: “Zerubbabel the son of Shealtiel” KJV Haggai 1:1: “Zerubbabel the son of Shealtiel, governor of Judah” KJV Matthew 1:12: “Jechonias begat Salathiel; and Salathiel begat Zorobabel” KJV Luke 3:27: “which was the son of Zorobabel, which was the son of Salathiel, which was the son of Neri” Hebrew (WLC) 1 Chronicles 3:19: וּבְנֵ֣י פְדָיָ֔ה זְרֻבָּבֶ֖ל וְשִׁמְעִ֑י [and the sons of Pedaiah: Zerubbabel and Shimei]. Ezra 3:2: וּזְרֻבָּבֶ֤ל בֶּן־שְׁאַלְתִּיאֵל֙ [and Zerubbabel son of Shealtiel]. Haggai 1:1: זְרֻבָּבֶ֤ל בֶּן־שְׁאַלְתִּיאֵל֙ פַּחַ֣ת יְהוּדָ֔ה [Zerubbabel son of Shealtiel, governor of Judah]. Septuagint (Brenton Greek) 1 Chronicles 3:19: Καὶ υἱοὶ Φαδαΐας, Ζοροβάβελ, καὶ Σεμεΐ [and sons of Phadaias: Zorobabel and Semei]. Ezra 3:2: Ζοροβάβελ ὁ τοῦ Σαλαθιὴλ [Zorobabel the son of Salathiel]. Greek New Testament (TISCH) Matthew 1:12: Σαλαθιὴλ δὲ ἐγέννησεν τὸν Ζοροβάβελ [and Salathiel begat Zorobabel]. The Textus Receptus text served has the same words. Fetched from https://bolls.life/get-text/WLC/13/3/, https://bolls.life/get-text/WLC/15/3/, https://bolls.life/get-text/WLC/37/1/, https://ebible.org/grcbrent/1CH03.htm, https://ebible.org/grcbrent/EZR03.htm, https://bolls.life/get-text/TISCH/40/1/ and https://bolls.life/get-text/TR/40/1/.",
+    "reasoning": "Chronicles names Salathiel and Pedaiah as two different men in two successive verses and gives Zerubbabel to Pedaiah. The other passages quoted give him to Shealtiel, and Matthew uses the word “begat”. A search of the packaged KJV for “Zerubbabel” followed by “the son of Shealtiel” finds nine verses (Ezra 3:2, 3:8, 5:2; Nehemiah 12:1; Haggai 1:1, 1:12, 1:14, 2:2, 2:23); “the sons of Pedaiah” with Zerubbabel is found at 1 Chronicles 3:19 only.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew in each book, and Brenton’s Greek of 1 Chronicles 3:19 also has Pedaiah’s name. The statements can stand together if Zerubbabel was the natural son of one brother and was counted to the other, for instance as his heir, or if two men bore the name; none of the quoted verses reports any of these. The record does not claim that the Salathiel of Matthew and of Luke 3:27 is the Salathiel of Chronicles; Luke 3:27 calls Salathiel the son of Neri, where 1 Chronicles 3:17 lists him under Jeconiah. The searches are word searches of the packaged KJV, not a reading of those books. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "1 Chronicles 3: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH03.htm"
+      },
+      {
+        "label": "Ezra 3: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR03.htm"
+      },
+      {
+        "label": "Haggai 1: KJV",
+        "url": "https://ebible.org/eng-kjv/HAG01.htm"
+      },
+      {
+        "label": "Matthew 1: KJV",
+        "url": "https://ebible.org/eng-kjv/MAT01.htm"
+      },
+      {
+        "label": "Luke 3: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK03.htm"
+      },
+      {
+        "label": "1 Chronicles 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/3/"
+      },
+      {
+        "label": "Ezra 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/3/"
+      },
+      {
+        "label": "Haggai 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/37/1/"
+      },
+      {
+        "label": "1 Chronicles 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH03.htm"
+      },
+      {
+        "label": "Ezra 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR03.htm"
+      },
+      {
+        "label": "Matthew 1: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/40/1/"
+      },
+      {
+        "label": "Matthew 1: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/40/1/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 3:17",
+        "book": 12,
+        "chapter": 3,
+        "verse": 17
+      },
+      {
+        "label": "1 Chronicles 3:18",
+        "book": 12,
+        "chapter": 3,
+        "verse": 18
+      },
+      {
+        "label": "1 Chronicles 3:19",
+        "book": 12,
+        "chapter": 3,
+        "verse": 19
+      },
+      {
+        "label": "Ezra 3:2",
+        "book": 14,
+        "chapter": 3,
+        "verse": 2
+      },
+      {
+        "label": "Haggai 1:1",
+        "book": 36,
+        "chapter": 1,
+        "verse": 1
+      },
+      {
+        "label": "Matthew 1:12",
+        "book": 39,
+        "chapter": 1,
+        "verse": 12
+      },
+      {
+        "label": "Luke 3:27",
+        "book": 41,
+        "chapter": 3,
+        "verse": 27
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition; Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 3:19",
+        "quote": "the sons of Pedaiah were, Zerubbabel, and Shimei"
+      },
+      {
+        "label": "B",
+        "ref": "Ezra 3:2",
+        "quote": "Zerubbabel the son of Shealtiel"
+      },
+      {
+        "label": "B",
+        "ref": "Matthew 1:12",
+        "quote": "Salathiel begat Zorobabel"
+      }
+    ]
+  },
+  {
+    "id": "sons-of-shemaiah-five-names-counted-as-six",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 3:22",
+    "appliesTo": [
+      "1 Chronicles 3:22"
+    ],
+    "title": "“The sons of Shemaiah … six” — five names are given",
+    "status": "Textual conflict",
+    "summary": "The verse names five sons of Shemaiah and ends with the total “six”. The Hebrew and Brenton’s Greek have the same five names and the same total.",
+    "text": "KJV 1 Chronicles 3:22: “And the sons of Shechaniah; Shemaiah: and the sons of Shemaiah; Hattush, and Igeal, and Bariah, and Neariah, and Shaphat, six.” KJV 3:20, where the total matches the names: “And Hashubah, and Ohel, and Berechiah, and Hasadiah, Jushabhesed, five.” Hebrew (WLC) 1 Chronicles 3:22: וּבְנֵ֣י שְׁמַעְיָ֗ה חַטּ֡וּשׁ וְ֠יִגְאָל וּבָרִ֧יחַ וּנְעַרְיָ֛ה וְשָׁפָ֖ט שִׁשָּֽׁה [and the sons of Shemaiah: Hattush and Igal and Bariah and Neariah and Shaphat, six]. Septuagint (Brenton Greek) 1 Chronicles 3:22: καὶ υἱοὶ Σαμαΐα, Χαττοὺς, καὶ Ἰωὴλ, καὶ Βεῤῥὶ, καὶ Νωαδία, καὶ Σαφὰθ, ἕξ [and sons of Samaia: Chattus and Joel and Berri and Noadia and Saphath, six]. Fetched from https://bolls.life/get-text/WLC/13/3/ and https://ebible.org/grcbrent/1CH03.htm.",
+    "reasoning": "Hattush, Igeal, Bariah, Neariah and Shaphat are five names. The total stated is six. Two verses earlier the same kind of total, “five”, matches the five names before it.",
+    "scope": "No tag is proposed: the Hebrew and Brenton’s Greek both have five names and “six”. The total is right if it counts Shemaiah together with his five sons as the six descendants of Shechaniah, or if a sixth name once stood in the list; the verse says neither. The record does not claim which is the case. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 3: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH03.htm"
+      },
+      {
+        "label": "1 Chronicles 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/3/"
+      },
+      {
+        "label": "1 Chronicles 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 3:20",
+        "book": 12,
+        "chapter": 3,
+        "verse": 20
+      },
+      {
+        "label": "1 Chronicles 3:22",
+        "book": 12,
+        "chapter": 3,
+        "verse": 22
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "sons-of-jeduthun-five-names-counted-as-six",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 25:3",
+    "appliesTo": [
+      "1 Chronicles 25:3"
+    ],
+    "title": "“The sons of Jeduthun … six” — five names are given",
+    "status": "Textual conflict",
+    "summary": "The verse names five sons of Jeduthun and gives the total “six”. The Hebrew and Brenton’s Greek have the same five names and the same total. A Shimei who is not in the lists of sons receives the tenth lot later in the chapter.",
+    "text": "KJV 1 Chronicles 25:3: “the sons of Jeduthun; Gedaliah, and Zeri, and Jeshaiah, Hashabiah, and Mattithiah, six, under the hands of their father Jeduthun” KJV 25:17: “The tenth to Shimei, he, his sons, and his brethren, were twelve:” Hebrew (WLC) 1 Chronicles 25:3: בְּנֵ֣י יְדוּת֡וּן גְּדַלְיָ֡הוּ וּצְרִ֡י וִֽ֠ישַׁעְיָהוּ חֲשַׁבְיָ֨הוּ וּמַתִּתְיָ֜הוּ שִׁשָּׁ֗ה [the sons of Jeduthun: Gedaliah and Zeri and Jeshaiah, Hashabiah and Mattithiah, six]. 25:17: הָעֲשִׂירִ֣י שִׁמְעִ֔י [the tenth, Shimei]. Septuagint (Brenton Greek) 1 Chronicles 25:3: υἱοὶ Ἰδιθοὺν, Τοδολίας, καὶ Σουρὶ, καὶ Ἰσέας, καὶ Ἀσαβίας, καὶ Ματθαθίας, ἕξ [sons of Idithun: Todolias and Suri and Iseas and Asabias and Matthathias, six]. 25:17: Ὁ δέκατος Σεμεΐα [the tenth, Semeia]. Fetched from https://bolls.life/get-text/WLC/13/25/ and https://ebible.org/grcbrent/1CH25.htm.",
+    "reasoning": "Gedaliah, Zeri, Jeshaiah, Hashabiah and Mattithiah are five names; the total stated is six. In the packaged KJV of this chapter the name Shimei occurs at verse 17 only, as the holder of the tenth lot, and not in the lists of the sons of Asaph, Jeduthun and Heman in verses 2 to 4.",
+    "scope": "No tag is proposed: the Hebrew and Brenton’s Greek both have five names and “six”. The total is right if Shimei of verse 17 is the sixth son and his name is missing from verse 3, or if the count takes in Jeduthun himself; the chapter says neither. The record does not claim that Shimei was a son of Jeduthun. The search is a word search of chapter 25 in the packaged KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 25: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH25.htm"
+      },
+      {
+        "label": "1 Chronicles 25: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/25/"
+      },
+      {
+        "label": "1 Chronicles 25: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH25.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 25:3",
+        "book": 12,
+        "chapter": 25,
+        "verse": 3
+      },
+      {
+        "label": "1 Chronicles 25:17",
+        "book": 12,
+        "chapter": 25,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "sons-of-benjamin-three-or-five-in-chronicles",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 7:6",
+    "appliesTo": [
+      "1 Chronicles 7:6",
+      "1 Chronicles 8:1"
+    ],
+    "title": "The sons of Benjamin in Chronicles: three, or five?",
+    "status": "Textual conflict",
+    "summary": "Chapter 7 names Bela, Becher and Jediael as the sons of Benjamin and counts them “three”. Chapter 8 numbers five sons from first to fifth: Bela, Ashbel, Aharah, Nohah and Rapha. Only Bela is in both lists.",
+    "text": "KJV 1 Chronicles 7:6: “The sons of Benjamin; Bela, and Becher, and Jediael, three.” KJV 8:1: “Now Benjamin begat Bela his firstborn, Ashbel the second, and Aharah the third,” KJV 8:2: “Nohah the fourth, and Rapha the fifth.” KJV Genesis 46:21 names ten: “And the sons of Benjamin were Belah, and Becher, and Ashbel, Gera, and Naaman, Ehi, and Rosh, Muppim, and Huppim, and Ard.” Hebrew (WLC) 1 Chronicles 7:6: בִּנְיָמִ֗ן בֶּ֧לַע וָבֶ֛כֶר וִידִֽיעֲאֵ֖ל שְׁלֹשָֽׁה [Benjamin: Bela and Becher and Jediael, three]. 8:1: וּבִ֨נְיָמִ֔ן הֹולִ֖יד אֶת־בֶּ֣לַע בְּכֹרֹ֑ו אַשְׁבֵּל֙ הַשֵּׁנִ֔י וְאַחְרַ֖ח הַשְּׁלִישִֽׁי [and Benjamin begat Bela his firstborn, Ashbel the second and Aharah the third]. 8:2: נֹוחָה֙ הָֽרְבִיעִ֔י וְרָפָ֖א הַחֲמִישִֽׁי [Nohah the fourth and Rapha the fifth]. Septuagint (Brenton Greek) 1 Chronicles 7:6: Υἱοὶ Βενιαμὶν, καὶ Βαλὲ, καὶ Βαχὶρ … τρεῖς [sons of Benjamin: Bale and Bachir … three]. 8:2: Νωὰ τὸν τέταρτον, καὶ Ῥαφὰ τὸν πέμπτον [Noa the fourth and Rapha the fifth]. Fetched from https://bolls.life/get-text/WLC/13/7/, https://bolls.life/get-text/WLC/13/8/, https://ebible.org/grcbrent/1CH07.htm and https://ebible.org/grcbrent/1CH08.htm.",
+    "reasoning": "Chapter 7 closes its list with a total, three. Chapter 8 gives an ordinal to each of five sons. The second and third sons of chapter 7, Becher and Jediael, are not among the five of chapter 8, and the second to fifth of chapter 8 are not among the three of chapter 7.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew, and Brenton’s Greek has the same totals at the verses quoted. The two lists can stand together if chapter 7 counts only the houses mustered for war in a later day and chapter 8 gives sons by birth, or if some names are alternative names of one man; neither chapter says so. Genesis 46:21 and Numbers 26:38 give further lists, and a published record already compares those two in the Greek; this record concerns only the two lists inside 1 Chronicles. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 7: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH07.htm"
+      },
+      {
+        "label": "1 Chronicles 8: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH08.htm"
+      },
+      {
+        "label": "Genesis 46: KJV",
+        "url": "https://ebible.org/eng-kjv/GEN46.htm"
+      },
+      {
+        "label": "1 Chronicles 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/7/"
+      },
+      {
+        "label": "1 Chronicles 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/8/"
+      },
+      {
+        "label": "1 Chronicles 7: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH07.htm"
+      },
+      {
+        "label": "1 Chronicles 8: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH08.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 7:6",
+        "book": 12,
+        "chapter": 7,
+        "verse": 6
+      },
+      {
+        "label": "1 Chronicles 8:1",
+        "book": 12,
+        "chapter": 8,
+        "verse": 1
+      },
+      {
+        "label": "1 Chronicles 8:2",
+        "book": 12,
+        "chapter": 8,
+        "verse": 2
+      },
+      {
+        "label": "Genesis 46:21",
+        "book": 0,
+        "chapter": 46,
+        "verse": 21
+      },
+      {
+        "label": "Numbers 26:38",
+        "book": 3,
+        "chapter": 26,
+        "verse": 38
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 7:6",
+        "quote": "Bela, and Becher, and Jediael, three"
+      },
+      {
+        "label": "B",
+        "ref": "1 Chronicles 8:1",
+        "quote": "Bela his firstborn, Ashbel the second, and Aharah the third"
+      },
+      {
+        "label": "B",
+        "ref": "1 Chronicles 8:2",
+        "quote": "Nohah the fourth, and Rapha the fifth"
+      }
+    ]
+  },
+  {
+    "id": "ner-begat-kish-or-kish-and-ner-sons-of-abiel",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 8:33",
+    "appliesTo": [
+      "1 Chronicles 8:33",
+      "1 Samuel 9:1"
+    ],
+    "title": "Saul’s father Kish: son of Ner, or son of Abiel and brother of Ner?",
+    "status": "Textual conflict",
+    "summary": "Chronicles says twice “Ner begat Kish, and Kish begat Saul”. Samuel calls Kish “the son of Abiel”, calls Ner “the son of Abiel”, with “Saul's uncle” in the description of Abner son of Ner. Chronicles 9:36 also lists a Kish and a Ner side by side as sons of one father.",
+    "text": "KJV 1 Chronicles 8:33: “And Ner begat Kish, and Kish begat Saul” KJV 9:36: “And his firstborn son Abdon, then Zur, and Kish, and Baal, and Ner, and Nadab.” KJV 9:39: “And Ner begat Kish; and Kish begat Saul” KJV 1 Samuel 9:1: “whose name was Kish, the son of Abiel” KJV 1 Samuel 14:50: “Abner, the son of Ner, Saul's uncle” KJV 1 Samuel 14:51: “And Kish was the father of Saul; and Ner the father of Abner was the son of Abiel.” Hebrew (WLC) 1 Chronicles 8:33: וְנֵר֙ הֹולִ֣יד אֶת־קִ֔ישׁ וְקִ֖ישׁ הֹולִ֣יד אֶת־שָׁא֑וּל [and Ner begat Kish, and Kish begat Saul]. 1 Samuel 9:1: וּ֠שְׁמֹו קִ֣ישׁ בֶּן־אֲבִיאֵ֞ל [and his name was Kish son of Abiel]. 1 Samuel 14:51: וְקִ֧ישׁ אֲבִֽי־שָׁא֛וּל וְנֵ֥ר אֲבִֽי־אַבְנֵ֖ר בֶּן־אֲבִיאֵֽל [and Kish the father of Saul, and Ner the father of Abner, son of Abiel]. Septuagint (Brenton Greek) 1 Chronicles 8:33: Καὶ Νὴρ ἐγέννησε τὸν Κὶς [and Ner begat Kis]. 1 Samuel 14:51: Καὶ Κὶς πατὴρ Σαοὺλ, καὶ Νὴρ πατὴρ [and Kis the father of Saul, and Ner the father] followed by Abner’s name and υἱὸς Ἰαμὶν [son of Jamin] before Abiel’s name. Fetched from https://bolls.life/get-text/WLC/13/8/, https://bolls.life/get-text/WLC/9/9/, https://bolls.life/get-text/WLC/9/14/, https://ebible.org/grcbrent/1CH08.htm and https://ebible.org/grcbrent/1SA14.htm.",
+    "reasoning": "In Chronicles the line runs Ner, Kish, Saul: Ner is Saul’s grandfather. In Samuel Kish is the son of Abiel, Ner is the son of Abiel, and Abner is described as the son of Ner, “Saul's uncle”. If the uncle phrase describes Ner and both references to Abiel indicate immediate fatherhood, Ner is Kish’s brother; those assumptions are not independently established here. Chronicles 9:36 itself names a Kish and a Ner together among the sons of the father of Gibeon, three verses before it says “Ner begat Kish”.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew in both books and Brenton’s Greek of 1 Chronicles 8:33 agrees. Brenton’s Greek of 1 Samuel 14:51 has one more name, Jamin, between Ner and Abiel; that is noted as wording and not tagged. The statements can stand together if there were two men named Ner, a grandfather and an uncle, or if “son of Abiel” at 1 Samuel 9:1 means a later descendant; none of the quoted verses says so. In 1 Samuel 14:50 the words “Saul’s uncle” may describe Ner or Abner; the record does not decide which. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 8: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH08.htm"
+      },
+      {
+        "label": "1 Chronicles 9: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH09.htm"
+      },
+      {
+        "label": "1 Samuel 9: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA09.htm"
+      },
+      {
+        "label": "1 Samuel 14: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA14.htm"
+      },
+      {
+        "label": "1 Chronicles 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/8/"
+      },
+      {
+        "label": "1 Samuel 9: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/9/"
+      },
+      {
+        "label": "1 Samuel 14: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/14/"
+      },
+      {
+        "label": "1 Chronicles 8: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH08.htm"
+      },
+      {
+        "label": "1 Samuel 14: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1SA14.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 8:33",
+        "book": 12,
+        "chapter": 8,
+        "verse": 33
+      },
+      {
+        "label": "1 Chronicles 9:36",
+        "book": 12,
+        "chapter": 9,
+        "verse": 36
+      },
+      {
+        "label": "1 Chronicles 9:39",
+        "book": 12,
+        "chapter": 9,
+        "verse": 39
+      },
+      {
+        "label": "1 Samuel 9:1",
+        "book": 8,
+        "chapter": 9,
+        "verse": 1
+      },
+      {
+        "label": "1 Samuel 14:50",
+        "book": 8,
+        "chapter": 14,
+        "verse": 50
+      },
+      {
+        "label": "1 Samuel 14:51",
+        "book": 8,
+        "chapter": 14,
+        "verse": 51
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 8:33",
+        "quote": "Ner begat Kish, and Kish begat Saul"
+      },
+      {
+        "label": "B",
+        "ref": "1 Samuel 9:1",
+        "quote": "Kish, the son of Abiel"
+      },
+      {
+        "label": "B",
+        "ref": "1 Samuel 14:51",
+        "quote": "Ner the father of Abner was the son of Abiel"
+      }
+    ]
+  },
+  {
+    "id": "all-saul-house-died-together-or-ishbosheth-lived",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 10:6",
+    "appliesTo": [
+      "1 Chronicles 10:6",
+      "2 Samuel 2:8"
+    ],
+    "title": "“All his house died together” — yet Saul’s son Ishbosheth is made king",
+    "status": "Textual conflict",
+    "summary": "Chronicles says that Saul, his three sons “and all his house died together”. The parallel verse in Samuel says “all his men”. Samuel then tells of Saul’s son Ishbosheth reigning two years, and of a living son of Jonathan.",
+    "text": "KJV 1 Chronicles 10:6: “So Saul died, and his three sons, and all his house died together.” KJV 1 Samuel 31:6: “So Saul died, and his three sons, and his armourbearer, and all his men, that same day together.” KJV 2 Samuel 2:8: “took Ishbosheth the son of Saul, and brought him over to Mahanaim” KJV 2 Samuel 2:10: “Ishbosheth Saul's son was forty years old when he began to reign over Israel, and reigned two years.” KJV 2 Samuel 9:3: “Is there not yet any of the house of Saul” … “Jonathan hath yet a son” Hebrew (WLC) 1 Chronicles 10:6: וַיָּ֤מָת שָׁאוּל֙ וּשְׁלֹ֣שֶׁת בָּנָ֔יו וְכָל־בֵּיתֹ֖ו יַחְדָּ֥ו מֵֽתוּ [and Saul died and his three sons, and all his house together died]. 1 Samuel 31:6: גַּ֧ם כָּל־אֲנָשָׁ֛יו בַּיֹּ֥ום הַה֖וּא יַחְדָּֽו [also all his men, on that day together]. Septuagint (Brenton Greek) 1 Chronicles 10:6: καὶ πᾶς ὁ οἶκος αὐτοῦ ἐπὶ τὸ αὐτὸ ἀπέθανε [and all his house died together]. Fetched from https://bolls.life/get-text/WLC/13/10/, https://bolls.life/get-text/WLC/9/31/ and https://ebible.org/grcbrent/1CH10.htm.",
+    "reasoning": "Where Samuel has “all his men”, Chronicles has “all his house”. If “all his house” includes every member of Saul’s family, the Chronicles sentence leaves none alive after the battle; its scope is the point at issue. Samuel goes on to name a son of Saul who reigns two years, and the king later asks for and finds one “of the house of Saul”.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew, and Brenton’s Greek of 1 Chronicles 10:6 also has “all his house”. The statements can stand together if “all his house” means those of his household who were with him in the battle, or the end of his house as a reigning line; the verse does not say so. Brenton’s Greek of 1 Samuel 31:6 was read and has no words for “and all his men”; that is noted and not tagged, since the tag would rest on a verse outside this book’s session. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 10: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH10.htm"
+      },
+      {
+        "label": "1 Samuel 31: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA31.htm"
+      },
+      {
+        "label": "2 Samuel 2: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA02.htm"
+      },
+      {
+        "label": "2 Samuel 9: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA09.htm"
+      },
+      {
+        "label": "1 Chronicles 10: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/10/"
+      },
+      {
+        "label": "1 Samuel 31: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/31/"
+      },
+      {
+        "label": "1 Chronicles 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH10.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 10:6",
+        "book": 12,
+        "chapter": 10,
+        "verse": 6
+      },
+      {
+        "label": "1 Samuel 31:6",
+        "book": 8,
+        "chapter": 31,
+        "verse": 6
+      },
+      {
+        "label": "2 Samuel 2:8",
+        "book": 9,
+        "chapter": 2,
+        "verse": 8
+      },
+      {
+        "label": "2 Samuel 2:10",
+        "book": 9,
+        "chapter": 2,
+        "verse": 10
+      },
+      {
+        "label": "2 Samuel 9:3",
+        "book": 9,
+        "chapter": 9,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 10:6",
+        "quote": "and all his house died together"
+      },
+      {
+        "label": "B",
+        "ref": "2 Samuel 2:8",
+        "quote": "took Ishbosheth the son of Saul"
+      },
+      {
+        "label": "B",
+        "ref": "2 Samuel 2:10",
+        "quote": "Ishbosheth Saul's son was forty years old when he began to reign over Israel, and reigned two years"
+      }
+    ]
+  },
+  {
+    "id": "saul-asked-the-familiar-spirit-greek-adds-samuel-answered-him",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 10:13",
+    "appliesTo": [
+      "1 Chronicles 10:13"
+    ],
+    "title": "Saul’s enquiry of the familiar spirit — the Greek adds “and Samuel the prophet answered him”",
+    "status": "Context",
+    "summary": "The KJV, with the Hebrew, says Saul died for asking counsel of one that had a familiar spirit and says nothing here of any answer. Brenton’s Greek of the verse adds that Samuel the prophet answered him.",
+    "text": "KJV 1 Chronicles 10:13: “So Saul died for his transgression which he committed against the Lord, even against the word of the Lord, which he kept not, and also for asking counsel of one that had a familiar spirit, to enquire of it;” KJV 10:14: “And enquired not of the Lord: therefore he slew him” Hebrew (WLC) 1 Chronicles 10:13, the end of the verse: וְגַם־לִשְׁאֹ֥ול בָּאֹ֖וב לִדְרֹֽושׁ [and also for asking of a familiar spirit, to enquire]. Septuagint (Brenton Greek) 1 Chronicles 10:13, the end of the verse: ὅτι ἐπηρώτησε Σαοὺλ ἐν τῷ ἐγγαστριμύθῳ τοῦ ζητῆσαι, καὶ ἀπεκρίνατο αὐτῷ Σαμουὴλ ὁ προφήτης [because Saul asked of the ventriloquist to enquire, and Samuel the prophet answered him]. Fetched from https://bolls.life/get-text/WLC/13/10/ and https://ebible.org/grcbrent/1CH10.htm.",
+    "reasoning": "The Hebrew verse ends with the enquiry. The Greek verse goes on to a further clause naming Samuel as the one who answered. The two KJV verses quoted do not say who, if anyone, answered Saul.",
+    "scope": "G applies at 1 Chronicles 10:13. The KJV does tell of Samuel speaking to Saul in another book, at 1 Samuel 28:15–19; in this passage it does not. The record compares wording. It does not say that the Greek clause settles what came up at Endor, which a published question record treats, and it does not say which form of the verse is older. No H is proposed: the KJV follows the Hebrew. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 10: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH10.htm"
+      },
+      {
+        "label": "1 Chronicles 10: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/10/"
+      },
+      {
+        "label": "1 Chronicles 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH10.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 10:13",
+        "book": 12,
+        "chapter": 10,
+        "verse": 13
+      },
+      {
+        "label": "1 Chronicles 10:14",
+        "book": 12,
+        "chapter": 10,
+        "verse": 14
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "korah-son-of-amminadab-or-son-of-izhar",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 6:22",
+    "appliesTo": [
+      "1 Chronicles 6:22",
+      "1 Chronicles 6:38"
+    ],
+    "title": "Korah: son of Amminadab, or son of Izhar?",
+    "status": "Textual conflict",
+    "summary": "One list in the chapter runs Kohath, “Amminadab his son, Korah his son”. A second list in the same chapter, and Exodus, make Korah the son of Izhar the son of Kohath. No Amminadab is among the four sons of Kohath named four verses earlier.",
+    "text": "KJV 1 Chronicles 6:22: “The sons of Kohath; Amminadab his son, Korah his son, Assir his son,” KJV 6:23: “Elkanah his son, and Ebiasaph his son, and Assir his son,” KJV 6:18: “And the sons of Kohath were, Amram, and Izhar, and Hebron, and Uzziel.” KJV 6:37: “the son of Ebiasaph, the son of Korah” KJV 6:38: “The son of Izhar, the son of Kohath, the son of Levi, the son of Israel.” KJV Exodus 6:21: “And the sons of Izhar; Korah, and Nepheg, and Zichri.” The Hebrew and Brenton’s Greek number this chapter 15 lower than the KJV: KJV 6:22 is their 6:7, and KJV 6:37–38 is their 6:22–23. Hebrew (WLC) 1 Chronicles 6:7: בְּנֵ֖י קְהָ֑ת עַמִּינָדָ֣ב בְּנֹ֔ו קֹ֥רַח בְּנֹ֖ו אַסִּ֥יר בְּנֹֽו [the sons of Kohath: Amminadab his son, Korah his son, Assir his son]. 6:22: בֶּן־קֹֽרַח [son of Korah]. 6:23: בֶּן־יִצְהָ֣ר בֶּן־קְהָ֔ת [son of Izhar, son of Kohath]. Exodus 6:21: וּבְנֵ֖י יִצְהָ֑ר קֹ֥רַח [and the sons of Izhar: Korah]. Septuagint (Brenton Greek) 1 Chronicles 6:7: Υἱοὶ Καὰθ, Ἀμιναδὰβ υἱὸς αὐτοῦ, Κορὲ υἱὸς αὐτοῦ [sons of Kaath: Aminadab his son, Kore his son]. 6:22–23: υἱοῦ Κορὲ [son of Kore], υἱοῦ Ἰσαὰρ, υἱοῦ Καὰθ [son of Isaar, son of Kaath]. Fetched from https://bolls.life/get-text/WLC/13/6/, https://bolls.life/get-text/WLC/2/6/ and https://ebible.org/grcbrent/1CH06.htm.",
+    "reasoning": "Both lists name Korah, Assir and Ebiasaph, and both go back to Kohath. Between Kohath and Korah the first has Amminadab and the second has Izhar. The chapter’s own list of Kohath’s sons names Amram, Izhar, Hebron and Uzziel.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew, and Brenton’s Greek has Aminadab in the first list and Isaar in the second. The lists can stand together if Amminadab is a second name of Izhar; none of the quoted verses says so. The record does not claim which name is original. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 6: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH06.htm"
+      },
+      {
+        "label": "Exodus 6: KJV",
+        "url": "https://ebible.org/eng-kjv/EXO06.htm"
+      },
+      {
+        "label": "1 Chronicles 6: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/6/"
+      },
+      {
+        "label": "Exodus 6: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/2/6/"
+      },
+      {
+        "label": "1 Chronicles 6: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH06.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 6:18",
+        "book": 12,
+        "chapter": 6,
+        "verse": 18
+      },
+      {
+        "label": "1 Chronicles 6:22",
+        "book": 12,
+        "chapter": 6,
+        "verse": 22
+      },
+      {
+        "label": "1 Chronicles 6:23",
+        "book": 12,
+        "chapter": 6,
+        "verse": 23
+      },
+      {
+        "label": "1 Chronicles 6:37",
+        "book": 12,
+        "chapter": 6,
+        "verse": 37
+      },
+      {
+        "label": "1 Chronicles 6:38",
+        "book": 12,
+        "chapter": 6,
+        "verse": 38
+      },
+      {
+        "label": "Exodus 6:21",
+        "book": 1,
+        "chapter": 6,
+        "verse": 21
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 6:22",
+        "quote": "Amminadab his son, Korah his son"
+      },
+      {
+        "label": "B",
+        "ref": "1 Chronicles 6:38",
+        "quote": "The son of Izhar, the son of Kohath"
+      },
+      {
+        "label": "B",
+        "ref": "Exodus 6:21",
+        "quote": "the sons of Izhar; Korah"
+      }
+    ]
+  },
+  {
+    "id": "samuel-firstborn-vashni-or-joel",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 6:28",
+    "appliesTo": [
+      "1 Chronicles 6:28",
+      "1 Samuel 8:2"
+    ],
+    "title": "Samuel’s firstborn: Vashni, or Joel?",
+    "status": "Textual conflict",
+    "summary": "Chronicles names the sons of Samuel as “the firstborn Vashni, and Abiah”. Samuel says “the name of his firstborn was Joel; and the name of his second, Abiah”. Five verses later Chronicles itself has “Joel, the son of Shemuel”.",
+    "text": "KJV 1 Chronicles 6:28: “And the sons of Samuel; the firstborn Vashni, and Abiah.” KJV 1 Samuel 8:2: “Now the name of his firstborn was Joel; and the name of his second, Abiah” KJV 1 Chronicles 6:33: “Heman a singer, the son of Joel, the son of Shemuel” KJV 6:34: “The son of Elkanah, the son of Jeroham” KJV 1 Samuel 1:1: “his name was Elkanah, the son of Jeroham” The Hebrew and Brenton’s Greek number this chapter 15 lower than the KJV: KJV 6:28 is their 6:13, and KJV 6:33 is their 6:18. Hebrew (WLC) 1 Chronicles 6:13: וּבְנֵ֧י שְׁמוּאֵ֛ל הַבְּכֹ֥ר וַשְׁנִ֖י וַאֲבִיָּֽה [and the sons of Samuel: the firstborn Vashni, and Abiah]. 6:18: בֶּן־יֹואֵ֖ל בֶּן־שְׁמוּאֵֽל [son of Joel, son of Samuel]. 1 Samuel 8:2: שֶׁם־בְּנֹ֤ו הַבְּכֹור֙ יֹואֵ֔ל וְשֵׁ֥ם מִשְׁנֵ֖הוּ אֲבִיָּ֑ה [the name of his firstborn son Joel, and the name of his second Abiah]. Septuagint (Brenton Greek) 1 Chronicles 6:13: Υἱοὶ Σαμουὴλ, ὁ πρωτότοκος Σανὶ, καὶ Ἀβιά [sons of Samuel: the firstborn Sani, and Abia]. 1 Samuel 8:2: πρωτότοκος Ἰωήλ [firstborn Joel]. Fetched from https://bolls.life/get-text/WLC/13/6/, https://bolls.life/get-text/WLC/9/8/, https://ebible.org/grcbrent/1CH06.htm and https://ebible.org/grcbrent/1SA08.htm.",
+    "reasoning": "Both verses name two sons, call the first of them the firstborn, and name the other Abiah. The firstborn is Vashni in one and Joel in the other. In the packaged KJV the name Vashni occurs in this verse only.",
+    "scope": "No tag is proposed: the KJV follows the pointed Hebrew, which gives a name, and Brenton’s Greek also gives a name, Sani. The statements can stand together if the firstborn had two names; no quoted verse says so. The record takes the Samuel of 1 Chronicles 6:28 to be the prophet because verses 33–34 name Shemuel as son of Elkanah son of Jeroham, as 1 Samuel 1:1 does; if they are different men there is no conflict. The search is a word search of the packaged KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 6: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH06.htm"
+      },
+      {
+        "label": "1 Samuel 8: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA08.htm"
+      },
+      {
+        "label": "1 Samuel 1: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA01.htm"
+      },
+      {
+        "label": "1 Chronicles 6: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/6/"
+      },
+      {
+        "label": "1 Samuel 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/8/"
+      },
+      {
+        "label": "1 Chronicles 6: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH06.htm"
+      },
+      {
+        "label": "1 Samuel 8: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1SA08.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 6:28",
+        "book": 12,
+        "chapter": 6,
+        "verse": 28
+      },
+      {
+        "label": "1 Chronicles 6:33",
+        "book": 12,
+        "chapter": 6,
+        "verse": 33
+      },
+      {
+        "label": "1 Chronicles 6:34",
+        "book": 12,
+        "chapter": 6,
+        "verse": 34
+      },
+      {
+        "label": "1 Samuel 8:2",
+        "book": 8,
+        "chapter": 8,
+        "verse": 2
+      },
+      {
+        "label": "1 Samuel 1:1",
+        "book": 8,
+        "chapter": 1,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 6:28",
+        "quote": "the firstborn Vashni, and Abiah"
+      },
+      {
+        "label": "B",
+        "ref": "1 Samuel 8:2",
+        "quote": "the name of his firstborn was Joel"
+      }
+    ]
+  },
+  {
+    "id": "ammon-hired-thirty-two-thousand-chariots-or-footmen",
+    "mode": "contradictions",
+    "ref": "2 Samuel 10:6",
+    "appliesTo": [
+      "2 Samuel 10:6",
+      "1 Chronicles 19:7"
+    ],
+    "title": "Hired by Ammon: thirty-two thousand chariots, or twenty thousand footmen and twelve thousand men?",
+    "status": "Textual conflict",
+    "summary": "In Chronicles the children of Ammon hire “thirty and two thousand chariots”, besides the king of Maachah and his people. In Samuel they hire twenty thousand footmen, a thousand men of king Maacah and twelve thousand men of Ishtob; no chariots are named.",
+    "text": "KJV 2 Samuel 10:6: “And when the children of Ammon saw that they stank before David, the children of Ammon sent and hired the Syrians of Bethrehob and the Syrians of Zoba, twenty thousand footmen, and of king Maacah a thousand men, and of Ishtob twelve thousand men.” KJV 1 Chronicles 19:6: “And when the children of Ammon saw that they had made themselves odious to David, Hanun and the children of Ammon sent a thousand talents of silver to hire them chariots and horsemen” KJV 1 Chronicles 19:7: “So they hired thirty and two thousand chariots, and the king of Maachah and his people” Hebrew (WLC) 2 Samuel 10:6: עֶשְׂרִ֥ים אֶ֙לֶף֙ רַגְלִ֔י וְאֶת־מֶ֤לֶךְ מַֽעֲכָה֙ אֶ֣לֶף אִ֔ישׁ וְאִ֣ישׁ טֹ֔וב שְׁנֵים־עָשָׂ֥ר אֶ֖לֶף אִֽישׁ [twenty thousand footmen, and the king of Maacah, a thousand men, and Ish-tob, twelve thousand men]. 1 Chronicles 19:7: וַיִּשְׂכְּר֣וּ לָהֶ֡ם שְׁנַיִם֩ וּשְׁלֹשִׁ֨ים אֶ֜לֶף רֶ֗כֶב וְאֶת־מֶ֤לֶךְ מַעֲכָה֙ וְאֶת־עַמֹּ֔ו [and they hired for themselves thirty-two thousand chariots, and the king of Maacah and his people]. Septuagint (Brenton Greek) 2 Samuel 10:6: εἴκοσι χιλιάδας πεζῶν [twenty thousand footmen] and δώδεκα χιλιάδας ἀνδρῶν [twelve thousand men]. 1 Chronicles 19:7: δύο καὶ τριάκοντα χιλιάδας ἁρμάτων [thirty-two thousand chariots]. Fetched from https://bolls.life/get-text/WLC/10/10/, https://bolls.life/get-text/WLC/13/19/, https://ebible.org/grcbrent/2SA10.htm and https://ebible.org/grcbrent/1CH19.htm.",
+    "reasoning": "Both accounts open with the children of Ammon seeing that they had become offensive to David, and both then tell of a hiring. Samuel’s twenty thousand and twelve thousand make thirty-two thousand, and they are footmen and men; the king of Maacah’s thousand are counted apart. Chronicles gives the figure thirty-two thousand to chariots and counts the king of Maachah’s people apart without a number.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew in both books, and Brenton’s Greek has footmen in Samuel and chariots in Chronicles. The figures measure different things as worded, footmen in one book and chariots in the other; one possible reconciliation is that the thirty-two thousand of Chronicles are men who served with chariots. Another is that the accounts select different parts of the hired forces. Neither proposed explanation is established by the quoted verses, and neither account explicitly says its list exhausts all hired forces. Samuel names no payment and Chronicles names a thousand talents of silver; that is a detail in one book only and is not set out as a conflict. A published record compares the losses in the same war at 2 Samuel 10:18 and 1 Chronicles 19:18. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Samuel 10: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA10.htm"
+      },
+      {
+        "label": "1 Chronicles 19: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH19.htm"
+      },
+      {
+        "label": "2 Samuel 10: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/10/10/"
+      },
+      {
+        "label": "1 Chronicles 19: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/19/"
+      },
+      {
+        "label": "2 Samuel 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2SA10.htm"
+      },
+      {
+        "label": "1 Chronicles 19: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH19.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Samuel 10:6",
+        "book": 9,
+        "chapter": 10,
+        "verse": 6
+      },
+      {
+        "label": "1 Chronicles 19:6",
+        "book": 12,
+        "chapter": 19,
+        "verse": 6
+      },
+      {
+        "label": "1 Chronicles 19:7",
+        "book": 12,
+        "chapter": 19,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Samuel 10:6",
+        "quote": "twenty thousand footmen, and of king Maacah a thousand men, and of Ishtob twelve thousand men"
+      },
+      {
+        "label": "B",
+        "ref": "1 Chronicles 19:7",
+        "quote": "they hired thirty and two thousand chariots"
+      }
+    ]
+  },
+  {
+    "id": "josiah-sons-third-zedekiah-fourth-shallum-and-their-ages",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 3:15",
+    "appliesTo": [
+      "1 Chronicles 3:15",
+      "2 Kings 23:31"
+    ],
+    "title": "Josiah’s sons: “the third Zedekiah, the fourth Shallum” — but by the ages in Kings Zedekiah is the younger",
+    "status": "Context",
+    "summary": "Chronicles numbers Zedekiah third and Shallum fourth among Josiah’s sons. Jeremiah calls the son who reigned instead of Josiah “Shallum”; Kings calls him Jehoahaz and makes him twenty-three at Josiah’s death. Kings makes Zedekiah twenty-one more than eleven years later, so about ten when Jehoahaz was twenty-three.",
+    "text": "KJV 1 Chronicles 3:15: “And the sons of Josiah were, the firstborn Johanan, the second Jehoiakim, the third Zedekiah, the fourth Shallum.” KJV Jeremiah 22:11: “Shallum the son of Josiah king of Judah, which reigned instead of Josiah his father” KJV 2 Kings 23:30: “the people of the land took Jehoahaz the son of Josiah, and anointed him, and made him king in his father's stead” KJV 2 Kings 23:31: “Jehoahaz was twenty and three years old when he began to reign; and he reigned three months in Jerusalem.” KJV 2 Kings 23:36: “Jehoiakim was twenty and five years old when he began to reign; and he reigned eleven years in Jerusalem.” KJV 2 Kings 24:8: “Jehoiachin was eighteen years old when he began to reign, and he reigned in Jerusalem three months.” KJV 2 Kings 24:17: “made Mattaniah his father's brother king in his stead, and changed his name to Zedekiah” KJV 2 Kings 24:18: “Zedekiah was twenty and one years old when he began to reign” Hebrew (WLC) 1 Chronicles 3:15: הַשְּׁלִשִׁי֙ צִדְקִיָּ֔הוּ הָרְבִיעִ֖י שַׁלּֽוּם [the third Zedekiah, the fourth Shallum]. 2 Kings 23:31: בֶּן־עֶשְׂרִ֨ים וְשָׁלֹ֤שׁ שָׁנָה֙ יְהֹואָחָ֣ז בְּמָלְכֹ֔ו [twenty-three years old was Jehoahaz when he began to reign]. 2 Kings 24:18: בֶּן־עֶשְׂרִ֨ים וְאַחַ֤ת שָׁנָה֙ צִדְקִיָּ֣הוּ בְמָלְכֹ֔ו [twenty-one years old was Zedekiah when he began to reign]. Jeremiah 22:11: שַׁלֻּ֨ם בֶּן־יֹאשִׁיָּ֜הוּ מֶ֣לֶךְ יְהוּדָ֗ה הַמֹּלֵךְ֙ תַּ֚חַת יֹאשִׁיָּ֣הוּ אָבִ֔יו [Shallum son of Josiah king of Judah, who reigned instead of Josiah his father]. Septuagint (Brenton Greek) 1 Chronicles 3:15: ὁ τρίτος Σεδεκίας, ὁ τέταρτος Σαλούμ [the third Sedekias, the fourth Salum]. 2 Kings 23:31: Υἱὸς εἴκοσι καὶ τριῶν ἐτῶν ἦν Ἰωάχαζ [twenty-three years old was Joachaz]. 2 Kings 24:18: Υἱὸς εἴκοσι καὶ ἑνὸς ἑνιαυτῶν Σεδεκίας [twenty-one years old was Sedekias]. Fetched from https://bolls.life/get-text/WLC/13/3/, https://bolls.life/get-text/WLC/12/23/, https://bolls.life/get-text/WLC/12/24/, https://bolls.life/get-text/WLC/24/22/, https://ebible.org/grcbrent/1CH03.htm, https://ebible.org/grcbrent/2KI23.htm and https://ebible.org/grcbrent/2KI24.htm.",
+    "reasoning": "The son who reigned in Josiah’s place is twenty-three at that time. Between his accession and Zedekiah’s accession lie his own three months, Jehoiakim’s eleven years and Jehoiachin’s three months. Zedekiah is twenty-one at the end of that span, so he was about ten at its start. If Shallum is that first son, the son Chronicles numbers fourth was some thirteen years older than the son it numbers third.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew, and Brenton’s Greek has the same order and the same ages at the verses quoted. The arithmetic holds only on three conditions, none of which a single quoted verse states outright: that the Shallum of 1 Chronicles 3:15 is the Shallum of Jeremiah 22:11 and the Jehoahaz of 2 Kings 23:30; that the Zedekiah of 3:15 is the king of 2 Kings 24:17–18; and that “third” and “fourth” give order of birth. If the ordinals give another kind of order, such as rank, or if the men are different, there is no conflict. The ages do agree with “the second Jehoiakim”: he is twenty-five when Jehoahaz is twenty-three. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 3: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH03.htm"
+      },
+      {
+        "label": "Jeremiah 22: KJV",
+        "url": "https://ebible.org/eng-kjv/JER22.htm"
+      },
+      {
+        "label": "2 Kings 23: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI23.htm"
+      },
+      {
+        "label": "2 Kings 24: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI24.htm"
+      },
+      {
+        "label": "1 Chronicles 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/3/"
+      },
+      {
+        "label": "2 Kings 23: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/23/"
+      },
+      {
+        "label": "2 Kings 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/24/"
+      },
+      {
+        "label": "Jeremiah 22: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/24/22/"
+      },
+      {
+        "label": "1 Chronicles 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH03.htm"
+      },
+      {
+        "label": "2 Kings 23: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI23.htm"
+      },
+      {
+        "label": "2 Kings 24: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI24.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 3:15",
+        "book": 12,
+        "chapter": 3,
+        "verse": 15
+      },
+      {
+        "label": "2 Kings 23:30",
+        "book": 11,
+        "chapter": 23,
+        "verse": 30
+      },
+      {
+        "label": "2 Kings 23:31",
+        "book": 11,
+        "chapter": 23,
+        "verse": 31
+      },
+      {
+        "label": "2 Kings 23:36",
+        "book": 11,
+        "chapter": 23,
+        "verse": 36
+      },
+      {
+        "label": "2 Kings 24:8",
+        "book": 11,
+        "chapter": 24,
+        "verse": 8
+      },
+      {
+        "label": "2 Kings 24:17",
+        "book": 11,
+        "chapter": 24,
+        "verse": 17
+      },
+      {
+        "label": "2 Kings 24:18",
+        "book": 11,
+        "chapter": 24,
+        "verse": 18
+      },
+      {
+        "label": "Jeremiah 22:11",
+        "book": 23,
+        "chapter": 22,
+        "verse": 11
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 3:15",
+        "quote": "the third Zedekiah, the fourth Shallum"
+      },
+      {
+        "label": "B",
+        "ref": "2 Kings 23:31",
+        "quote": "Jehoahaz was twenty and three years old when he began to reign"
+      },
+      {
+        "label": "B",
+        "ref": "2 Kings 24:18",
+        "quote": "Zedekiah was twenty and one years old when he began to reign"
+      }
+    ]
+  },
+  {
+    "id": "hezron-married-at-sixty-or-sixty-five-greek",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 2:21",
+    "appliesTo": [
+      "1 Chronicles 2:21"
+    ],
+    "title": "Hezron’s age when he married Machir’s daughter: sixty, or sixty-five?",
+    "status": "Context",
+    "summary": "The KJV, with the Hebrew, says Hezron married the daughter of Machir “when he was threescore years old”. Brenton’s Greek says sixty-five.",
+    "text": "KJV 1 Chronicles 2:21: “whom he married when he was threescore years old” Hebrew (WLC) 1 Chronicles 2:21: וְה֖וּא בֶּן־שִׁשִּׁ֣ים שָׁנָ֑ה [and he was sixty years old]. Septuagint (Brenton Greek) 1 Chronicles 2:21: καὶ αὐτὸς ἑξηκονταπέντε ἐτῶν ἦν [and he was sixty-five years old]. Fetched from https://bolls.life/get-text/WLC/13/2/ and https://ebible.org/grcbrent/1CH02.htm.",
+    "reasoning": "The KJV has the Hebrew figure. Brenton’s Greek of the same verse has a different figure.",
+    "scope": "G applies at 1 Chronicles 2:21. The record states two figures in two named editions. It does not say which is original or how the difference arose. No H is proposed: the KJV follows the Hebrew. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 2: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH02.htm"
+      },
+      {
+        "label": "1 Chronicles 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/2/"
+      },
+      {
+        "label": "1 Chronicles 2: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 2:21",
+        "book": 12,
+        "chapter": 2,
+        "verse": 21
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 2:21",
+        "quote": "when he was threescore years old"
+      }
+    ]
+  },
+  {
+    "id": "hagarite-spoil-camels-fifty-thousand-or-five-thousand-greek",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 5:21",
+    "appliesTo": [
+      "1 Chronicles 5:21"
+    ],
+    "title": "Camels taken from the Hagarites: fifty thousand, or five thousand?",
+    "status": "Context",
+    "summary": "The KJV, with the Hebrew, counts “of their camels fifty thousand” in the spoil. Brenton’s Greek has five thousand camels; the other three figures in the verse are the same.",
+    "text": "KJV 1 Chronicles 5:21: “of their camels fifty thousand, and of sheep two hundred and fifty thousand, and of asses two thousand, and of men an hundred thousand” Hebrew (WLC) 1 Chronicles 5:21: גְּֽמַלֵּיהֶ֞ם חֲמִשִּׁ֥ים אֶ֙לֶף֙ [their camels fifty thousand]. Septuagint (Brenton Greek) 1 Chronicles 5:21: καμήλους πεντακισχιλίας [five thousand camels]. Fetched from https://bolls.life/get-text/WLC/13/5/ and https://ebible.org/grcbrent/1CH05.htm.",
+    "reasoning": "The KJV has the Hebrew figure. Brenton’s Greek of the same verse has a different figure.",
+    "scope": "G applies at 1 Chronicles 5:21. The record states two figures in two named editions. It does not say which is original or how the difference arose. No H is proposed: the KJV follows the Hebrew. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 5: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH05.htm"
+      },
+      {
+        "label": "1 Chronicles 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/5/"
+      },
+      {
+        "label": "1 Chronicles 5: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH05.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 5:21",
+        "book": 12,
+        "chapter": 5,
+        "verse": 21
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 5:21",
+        "quote": "of their camels fifty thousand"
+      }
+    ]
+  },
+  {
+    "id": "danites-at-hebron-28600-or-28800-greek",
+    "mode": "contradictions",
+    "ref": "1 Chronicles 12:35",
+    "appliesTo": [
+      "1 Chronicles 12:35"
+    ],
+    "title": "The Danites who came to David at Hebron: 28,600, or 28,800?",
+    "status": "Context",
+    "summary": "The KJV, with the Hebrew, numbers the Danites “twenty and eight thousand and six hundred”. Brenton’s Greek has twenty-eight thousand and eight hundred.",
+    "text": "KJV 1 Chronicles 12:35: “And of the Danites expert in war twenty and eight thousand and six hundred.” Hebrew (WLC) 1 Chronicles 12:36: עֶשְׂרִֽים־וּשְׁמֹונָ֥ה אֶ֖לֶף וְשֵׁ֥שׁ מֵאֹֽות [twenty-eight thousand and six hundred]. Septuagint (Brenton Greek) 1 Chronicles 12:36: εἰκοσιοκτὼ χιλιάδες καὶ ὀκτακόσιοι [twenty-eight thousand and eight hundred]. In this chapter the Hebrew and Brenton’s Greek run one verse ahead of the KJV from verse 5, so KJV 12:35 is their 12:36. Fetched from https://bolls.life/get-text/WLC/13/12/ and https://ebible.org/grcbrent/1CH12.htm.",
+    "reasoning": "The KJV has the Hebrew figure. Brenton’s Greek of the same verse has a different figure.",
+    "scope": "G applies at 1 Chronicles 12:35. The record states two figures in two named editions. It does not say which is original or how the difference arose. No H is proposed: the KJV follows the Hebrew. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 12: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH12.htm"
+      },
+      {
+        "label": "1 Chronicles 12: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/12/"
+      },
+      {
+        "label": "1 Chronicles 12: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH12.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 12:35",
+        "book": 12,
+        "chapter": 12,
+        "verse": 35
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 12:35",
+        "quote": "twenty and eight thousand and six hundred"
+      }
+    ]
+  },
+  {
+    "id": "the-men-of-gath-slew-ephraims-sons-when-and-where",
+    "mode": "questions",
+    "ref": "1 Chronicles 7:21",
+    "appliesTo": [
+      "1 Chronicles 7:21",
+      "1 Chronicles 7:22"
+    ],
+    "title": "“Whom the men of Gath … slew … And Ephraim their father mourned” — when and where did this happen?",
+    "status": "Context",
+    "summary": "A genealogy of Ephraim breaks off to tell that men of Gath “born in that land” killed Ezer and Elead over cattle, that “Ephraim their father” mourned and was comforted by his brethren, and that a daughter built Bethhoron. Genesis has Ephraim born in Egypt. The verses do not say when or where the raid took place.",
+    "text": "KJV 1 Chronicles 7:20: “And the sons of Ephraim; Shuthelah, and Bered his son, and Tahath his son, and Eladah his son, and Tahath his son,” KJV 7:21: “And Zabad his son, and Shuthelah his son, and Ezer, and Elead, whom the men of Gath that were born in that land slew, because they came down to take away their cattle.” KJV 7:22: “And Ephraim their father mourned many days, and his brethren came to comfort him.” KJV 7:23: “And when he went in to his wife, she conceived, and bare a son, and he called his name Beriah, because it went evil with his house.” KJV 7:24: “(And his daughter was Sherah, who built Bethhoron the nether, and the upper, and Uzzensherah.)” KJV 7:27: “Non his son, Jehoshuah his son.” KJV Genesis 46:20: “And unto Joseph in the land of Egypt were born Manasseh and Ephraim” KJV Genesis 41:52: “For God hath caused me to be fruitful in the land of my affliction” KJV Genesis 50:23: “And Joseph saw Ephraim's children of the third generation” KJV 1 Samuel 6:17, of the Philistines: “for Ashdod one, for Gaza one, for Askelon one, for Gath one, for Ekron one” Hebrew (WLC) 1 Chronicles 7:21: וַהֲרָג֗וּם אַנְשֵׁי־גַת֙ הַנֹּולָדִ֣ים בָּאָ֔רֶץ כִּ֣י יָרְד֔וּ לָקַ֖חַת אֶת־מִקְנֵיהֶֽם [and the men of Gath who were born in the land slew them, because they came down to take their cattle]. 7:22: וַיִּתְאַבֵּ֛ל אֶפְרַ֥יִם אֲבִיהֶ֖ם יָמִ֣ים רַבִּ֑ים [and Ephraim their father mourned many days]. Septuagint (Brenton Greek) 1 Chronicles 7:21: καὶ ἀπέκτειναν αὐτοὺς οἱ ἄνδρες Γὲθ οἱ τεχθέντες ἐν τῇ γῇ, ὅτι κατέβησαν τοῦ λαβεῖν τὰ κτήνη αὐτῶν [and the men of Geth who were born in the land slew them, because they came down to take their cattle]. 7:22: Καὶ ἐπένθησεν Ἐφραὶμ ὁ πατὴρ αὐτῶν ἡμέρας πολλάς [and Ephraim their father mourned many days]. Fetched from https://bolls.life/get-text/WLC/13/7/ and https://ebible.org/grcbrent/1CH07.htm.",
+    "reasoning": "The time and place decide what the passage reports. Genesis places Ephraim’s birth in Egypt, and has Joseph see Ephraim’s children of the third generation. In 1 Samuel 6:17 Gath is named among the cities of the Philistines. If “Ephraim their father” is Joseph’s son himself, the verses tell of members of his family killed by men of Gath, without naming where the killing occurred, and of his daughter building towns in Canaan, although the quoted Genesis verses place his birth in Egypt. The verses name no time, do not say from where “they came down”, and do not say whether “they” are the sons or the men of Gath.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that the event falls in the years in Egypt and Ephraim’s sons went up from Egypt on a raid; that it falls after the settlement in Canaan and “Ephraim” is a later man of that name or the tribe spoken of as a father; that the men of Gath were the ones who “came down”. What the verses do state is the killing, its cause in a dispute over cattle, the mourning, the birth of Beriah and the building by Sherah. Check made: the nine verses quoted were read in the KJV, and 7:21–22 in the Hebrew and in Brenton’s Greek; a whole-word search of the packaged KJV for “Gath” finds no verse in Genesis or Exodus. That is a word search, not a reading of those books. These checked verses do not explicitly settle when or where the killing took place. The KJV has “born in that land”; the Hebrew and Greek quoted have “in the land”. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 7: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH07.htm"
+      },
+      {
+        "label": "Genesis 46: KJV",
+        "url": "https://ebible.org/eng-kjv/GEN46.htm"
+      },
+      {
+        "label": "Genesis 41: KJV",
+        "url": "https://ebible.org/eng-kjv/GEN41.htm"
+      },
+      {
+        "label": "Genesis 50: KJV",
+        "url": "https://ebible.org/eng-kjv/GEN50.htm"
+      },
+      {
+        "label": "1 Samuel 6: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA06.htm"
+      },
+      {
+        "label": "1 Chronicles 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/7/"
+      },
+      {
+        "label": "1 Chronicles 7: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH07.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 7:20",
+        "book": 12,
+        "chapter": 7,
+        "verse": 20
+      },
+      {
+        "label": "1 Chronicles 7:21",
+        "book": 12,
+        "chapter": 7,
+        "verse": 21
+      },
+      {
+        "label": "1 Chronicles 7:22",
+        "book": 12,
+        "chapter": 7,
+        "verse": 22
+      },
+      {
+        "label": "1 Chronicles 7:23",
+        "book": 12,
+        "chapter": 7,
+        "verse": 23
+      },
+      {
+        "label": "1 Chronicles 7:24",
+        "book": 12,
+        "chapter": 7,
+        "verse": 24
+      },
+      {
+        "label": "1 Chronicles 7:27",
+        "book": 12,
+        "chapter": 7,
+        "verse": 27
+      },
+      {
+        "label": "Genesis 41:52",
+        "book": 0,
+        "chapter": 41,
+        "verse": 52
+      },
+      {
+        "label": "Genesis 46:20",
+        "book": 0,
+        "chapter": 46,
+        "verse": 20
+      },
+      {
+        "label": "Genesis 50:23",
+        "book": 0,
+        "chapter": 50,
+        "verse": 23
+      },
+      {
+        "label": "1 Samuel 6:17",
+        "book": 8,
+        "chapter": 6,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 7:21",
+        "quote": "whom the men of Gath that were born in that land slew"
+      },
+      {
+        "label": "A",
+        "ref": "1 Chronicles 7:22",
+        "quote": "Ephraim their father mourned many days"
+      }
+    ]
+  },
+  {
+    "id": "the-word-of-the-lord-came-to-me-thou-hast-shed-blood-when-was-it-given",
+    "mode": "questions",
+    "ref": "1 Chronicles 22:8",
+    "appliesTo": [
+      "1 Chronicles 22:8",
+      "1 Chronicles 28:3"
+    ],
+    "title": "“The word of the Lord came to me, saying, Thou hast shed blood abundantly” — when, and by whom, was this word given?",
+    "status": "Context",
+    "summary": "David twice says that God told him he might not build the house because he had shed blood. Nathan’s message in Chronicles forbids David to build; Samuel presents a question to David, and both messages promise that a son will build, without giving bloodshed as the reason in the excerpts quoted. The verses do not say when or through whom the word about bloodshed came.",
+    "text": "KJV 1 Chronicles 22:8: “But the word of the Lord came to me, saying, Thou hast shed blood abundantly, and hast made great wars: thou shalt not build an house unto my name, because thou hast shed much blood upon the earth in my sight.” KJV 28:3: “But God said unto me, Thou shalt not build an house for my name, because thou hast been a man of war, and hast shed blood.” KJV 1 Chronicles 17:4: “Go and tell David my servant, Thus saith the Lord, Thou shalt not build me an house to dwell in:” KJV 17:12: “He shall build me an house, and I will stablish his throne for ever.” KJV 2 Samuel 7:5: “Shalt thou build me an house for me to dwell in?” KJV 2 Samuel 7:13: “He shall build an house for my name” KJV 1 Kings 5:3: “David my father could not build an house unto the name of the Lord his God for the wars which were about him on every side” KJV 1 Kings 8:18: “thou didst well that it was in thine heart” KJV 1 Kings 8:19: “Nevertheless thou shalt not build the house; but thy son” Hebrew (WLC) 1 Chronicles 22:8: וַיְהִ֨י עָלַ֤י דְּבַר־יְהוָה֙ לֵאמֹ֔ר דָּ֤ם לָרֹב֙ שָׁפַ֔כְתָּ וּמִלְחָמֹ֥ות גְּדֹלֹ֖ות עָשִׂ֑יתָ [and the word of the LORD was upon me, saying, Blood in abundance thou hast shed, and great wars thou hast made]. 28:3: כִּ֣י אִ֧ישׁ מִלְחָמֹ֛ות אַ֖תָּה וְדָמִ֥ים שָׁפָֽכְתָּ [for a man of wars art thou, and blood thou hast shed]. Septuagint (Brenton Greek) 1 Chronicles 22:8: Καὶ ἐγένετό μοι λόγος Κυρίου, λέγων, αἷμα εἰς πλῆθος ἐξέχεας, καὶ πολέμους μεγάλους ἐποίησας [and the word of the Lord came to me, saying, Blood in abundance thou hast shed, and great wars thou hast made]. Fetched from https://bolls.life/get-text/WLC/13/22/, https://bolls.life/get-text/WLC/13/28/ and https://ebible.org/grcbrent/1CH22.htm.",
+    "reasoning": "The reason matters: it explains why the king who planned the temple was not allowed to build it. David gives it as words spoken to him by God. Nathan’s message, is quoted here in both books and has no reference to blood or war as a reason. Solomon, speaking to Hiram, gives the wars around David as what hindered him, and in his prayer reports God’s words to David without a reason.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that a further word came to David, directly or by a prophet, which the narrative does not report; that David is giving the sense he drew from Nathan’s message and from his own wars; that the reason in 1 Kings 5:3 and the reason here are the same thing seen from two sides. What the verses do state is that David attributes the words to God. Check made: the verses quoted were read in the KJV, and 22:8 and 28:3 in the Hebrew and Greek; a search of the packaged KJV for words beginning “blood” finds none in 2 Samuel 7 or 1 Chronicles 17. That is a word search of those two chapters, not of the Bible. These checked passages do not explicitly settle when or through whom the word came. The record does not claim that David’s report conflicts with Nathan’s message. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 22: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH22.htm"
+      },
+      {
+        "label": "1 Chronicles 28: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH28.htm"
+      },
+      {
+        "label": "1 Chronicles 17: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH17.htm"
+      },
+      {
+        "label": "2 Samuel 7: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA07.htm"
+      },
+      {
+        "label": "1 Kings 5: KJV",
+        "url": "https://ebible.org/eng-kjv/1KI05.htm"
+      },
+      {
+        "label": "1 Kings 8: KJV",
+        "url": "https://ebible.org/eng-kjv/1KI08.htm"
+      },
+      {
+        "label": "1 Chronicles 22: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/22/"
+      },
+      {
+        "label": "1 Chronicles 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/28/"
+      },
+      {
+        "label": "1 Chronicles 22: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH22.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 22:8",
+        "book": 12,
+        "chapter": 22,
+        "verse": 8
+      },
+      {
+        "label": "1 Chronicles 28:3",
+        "book": 12,
+        "chapter": 28,
+        "verse": 3
+      },
+      {
+        "label": "1 Chronicles 17:4",
+        "book": 12,
+        "chapter": 17,
+        "verse": 4
+      },
+      {
+        "label": "1 Chronicles 17:12",
+        "book": 12,
+        "chapter": 17,
+        "verse": 12
+      },
+      {
+        "label": "2 Samuel 7:5",
+        "book": 9,
+        "chapter": 7,
+        "verse": 5
+      },
+      {
+        "label": "2 Samuel 7:13",
+        "book": 9,
+        "chapter": 7,
+        "verse": 13
+      },
+      {
+        "label": "1 Kings 5:3",
+        "book": 10,
+        "chapter": 5,
+        "verse": 3
+      },
+      {
+        "label": "1 Kings 8:18",
+        "book": 10,
+        "chapter": 8,
+        "verse": 18
+      },
+      {
+        "label": "1 Kings 8:19",
+        "book": 10,
+        "chapter": 8,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 22:8",
+        "quote": "the word of the Lord came to me, saying, Thou hast shed blood abundantly"
+      },
+      {
+        "label": "A",
+        "ref": "1 Chronicles 28:3",
+        "quote": "because thou hast been a man of war, and hast shed blood"
+      }
+    ]
+  },
+  {
+    "id": "the-lord-made-me-understand-in-writing-by-his-hand-upon-me-how-did-david-receive-the-pattern",
+    "mode": "questions",
+    "ref": "1 Chronicles 28:19",
+    "appliesTo": [
+      "1 Chronicles 28:19",
+      "1 Chronicles 28:12"
+    ],
+    "title": "“The Lord made me understand in writing by his hand upon me” — how did David receive the pattern of the temple?",
+    "status": "Context",
+    "summary": "David gives Solomon the pattern of the temple, “the pattern of all that he had by the spirit”, and says the Lord made him understand all of it “in writing by his hand upon me”. The verses do not say whether a writing came from God, or David wrote, or how the pattern reached him.",
+    "text": "KJV 1 Chronicles 28:11: “Then David gave to Solomon his son the pattern of the porch, and of the houses thereof” KJV 28:12: “And the pattern of all that he had by the spirit, of the courts of the house of the Lord” KJV 28:19: “All this, said David, the Lord made me understand in writing by his hand upon me, even all the works of this pattern.” KJV Exodus 25:40: “And look that thou make them after their pattern, which was shewed thee in the mount.” KJV Exodus 31:18: “tables of stone, written with the finger of God” Hebrew (WLC) 1 Chronicles 28:19, the whole verse: הַכֹּ֥ל בִּכְתָ֛ב מִיַּ֥ד יְהוָ֖ה עָלַ֣י הִשְׂכִּ֑יל כֹּ֖ל מַלְאֲכֹ֥ות הַתַּבְנִֽית [the whole in writing from the hand of the LORD upon me he made understood, all the works of the pattern]. 28:12: וְתַבְנִ֗ית כֹּל֩ אֲשֶׁ֨ר הָיָ֤ה בָר֙וּחַ֙ עִמֹּ֔ו [and the pattern of all that was in the spirit with him]. Septuagint (Brenton Greek) 1 Chronicles 28:19: πάντα ἐν γραφῇ χειρὸς Κυρίου ἔδωκε Δαυὶδ Σαλωμὼν [all in a writing of the hand of the Lord David gave to Solomon]. 28:12: καὶ τὸ παράδειγμα ὃ εἶχεν ἐν πνεύματι αὐτοῦ [and the pattern which he had in his spirit]. Fetched from https://bolls.life/get-text/WLC/13/28/ and https://ebible.org/grcbrent/1CH28.htm.",
+    "reasoning": "The source of the plan bears on the standing of the temple and all its arrangements. The verse joins three things without saying how they relate: a writing, the hand of the Lord, and David’s being made to understand. The tabernacle pattern is said to have been shown to Moses on the mount, and the tables are said to have been written with the finger of God; here no place, no vision and no writer is named.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that David received a document written by God, as Moses received the tables; that David wrote the plan himself while the hand of the Lord was upon him; that “the spirit” of verse 12 is the Spirit of God, or David’s own mind. What the verses do state is that David had a pattern, gave it to Solomon, and attributed his understanding of it to the Lord. Wording noted and not tagged: the Hebrew verse quoted in full has no words answering to the KJV’s “said David”, and Brenton’s Greek has David give all to Solomon “in a writing of the hand of the Lord” and has “his spirit” in verse 12. Check made: 28:11–19 was read in the KJV, and 28:12 and 28:19 in the Hebrew and Greek. These checked verses do not explicitly settle how the pattern reached David. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Chronicles 28: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH28.htm"
+      },
+      {
+        "label": "Exodus 25: KJV",
+        "url": "https://ebible.org/eng-kjv/EXO25.htm"
+      },
+      {
+        "label": "Exodus 31: KJV",
+        "url": "https://ebible.org/eng-kjv/EXO31.htm"
+      },
+      {
+        "label": "1 Chronicles 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/28/"
+      },
+      {
+        "label": "1 Chronicles 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Chronicles 28:11",
+        "book": 12,
+        "chapter": 28,
+        "verse": 11
+      },
+      {
+        "label": "1 Chronicles 28:12",
+        "book": 12,
+        "chapter": 28,
+        "verse": 12
+      },
+      {
+        "label": "1 Chronicles 28:19",
+        "book": 12,
+        "chapter": 28,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 25:40",
+        "book": 1,
+        "chapter": 25,
+        "verse": 40
+      },
+      {
+        "label": "Exodus 31:18",
+        "book": 1,
+        "chapter": 31,
+        "verse": 18
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Chronicles 28:19",
+        "quote": "the Lord made me understand in writing by his hand upon me"
+      },
+      {
+        "label": "A",
+        "ref": "1 Chronicles 28:12",
+        "quote": "the pattern of all that he had by the spirit"
+      }
+    ]
   }
 ]
 ;

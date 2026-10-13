@@ -1,0 +1,804 @@
+{
+  "batch": "1-chronicles-1-29-q",
+  "checks": [
+    {
+      "id": "the-men-of-gath-slew-ephraims-sons-when-and-where",
+      "batch": "1-chronicles-1-29-q",
+      "english": [
+        {
+          "ref": "1 Chronicles 7:20",
+          "quote": "And the sons of Ephraim; Shuthelah, and Bered his son, and Tahath his son, and Eladah his son, and Tahath his son,",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 7:21",
+          "quote": "And Zabad his son, and Shuthelah his son, and Ezer, and Elead, whom the men of Gath that were born in that land slew, because they came down to take away their cattle.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 7:22",
+          "quote": "And Ephraim their father mourned many days, and his brethren came to comfort him.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 7:23",
+          "quote": "And when he went in to his wife, she conceived, and bare a son, and he called his name Beriah, because it went evil with his house.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 7:24",
+          "quote": "(And his daughter was Sherah, who built Bethhoron the nether, and the upper, and Uzzensherah.)",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 7:27",
+          "quote": "Non his son, Jehoshuah his son.",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 46:20",
+          "quote": "And unto Joseph in the land of Egypt were born Manasseh and Ephraim",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 41:52",
+          "quote": "For God hath caused me to be fruitful in the land of my affliction",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 50:23",
+          "quote": "And Joseph saw Ephraim's children of the third generation",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַהֲרָג֗וּם אַנְשֵׁי־גַת֙ הַנֹּולָדִ֣ים בָּאָ֔רֶץ כִּ֣י יָרְד֔וּ לָקַ֖חַת אֶת־מִקְנֵיהֶֽם",
+          "stated": {
+            "chapter": 7,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/7/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 21
+          }
+        },
+        {
+          "quote": "וַיִּתְאַבֵּ֛ל אֶפְרַ֥יִם אֲבִיהֶ֖ם יָמִ֣ים רַבִּ֑ים",
+          "stated": {
+            "chapter": 7,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/7/",
+              "verse": 22
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 22
+          }
+        },
+        {
+          "quote": "καὶ ἀπέκτειναν αὐτοὺς οἱ ἄνδρες Γὲθ οἱ τεχθέντες ἐν τῇ γῇ, ὅτι κατέβησαν τοῦ λαβεῖν τὰ κτήνη αὐτῶν",
+          "stated": {
+            "chapter": 7,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH07.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 21
+          }
+        },
+        {
+          "quote": "Καὶ ἐπένθησεν Ἐφραὶμ ὁ πατὴρ αὐτῶν ἡμέρας πολλάς",
+          "stated": {
+            "chapter": 7,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH07.htm",
+              "verse": "22"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 22
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 7:21",
+          "quote": "whom the men of Gath that were born in that land slew",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "1 Chronicles 7:22",
+          "quote": "Ephraim their father mourned many days",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Whom the men of Gath … slew … And Ephraim their father mourned",
+          "matches": [
+            "1 Chronicles 7:21",
+            "1 Chronicles 7:22"
+          ],
+          "kind": "KJV fragments across 1 Chronicles 7:21–22, explicit ellipses and sentence-case typography"
+        },
+        {
+          "field": "summary",
+          "quote": "born in that land",
+          "matches": [
+            "1 Chronicles 7:21"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "Ephraim their father",
+          "matches": [
+            "1 Chronicles 7:22"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Ephraim; Shuthelah, and Bered his son, and Tahath his son, and Eladah his son, and Tahath his son,",
+          "matches": [
+            "1 Chronicles 7:20"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And Zabad his son, and Shuthelah his son, and Ezer, and Elead, whom the men of Gath that were born in that land slew, because they came down to take away their cattle.",
+          "matches": [
+            "1 Chronicles 7:21"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And Ephraim their father mourned many days, and his brethren came to comfort him.",
+          "matches": [
+            "1 Chronicles 7:22"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And when he went in to his wife, she conceived, and bare a son, and he called his name Beriah, because it went evil with his house.",
+          "matches": [
+            "1 Chronicles 7:23"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "(And his daughter was Sherah, who built Bethhoron the nether, and the upper, and Uzzensherah.)",
+          "matches": [
+            "1 Chronicles 7:24"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Non his son, Jehoshuah his son.",
+          "matches": [
+            "1 Chronicles 7:27"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And unto Joseph in the land of Egypt were born Manasseh and Ephraim",
+          "matches": [
+            "Genesis 46:20"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "For God hath caused me to be fruitful in the land of my affliction",
+          "matches": [
+            "Genesis 41:52"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And Joseph saw Ephraim's children of the third generation",
+          "matches": [
+            "Genesis 50:23"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "for Ashdod one, for Gaza one, for Askelon one, for Gath one, for Ekron one",
+          "matches": [
+            "1 Samuel 6:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Ephraim their father",
+          "matches": [
+            "1 Chronicles 7:22"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they came down",
+          "matches": [
+            "1 Chronicles 7:21"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they",
+          "matches": [
+            "1 Chronicles 7:21"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Ephraim",
+          "matches": [
+            "1 Chronicles 7:20",
+            "1 Chronicles 7:22",
+            "Genesis 41:52",
+            "Genesis 46:20",
+            "Genesis 50:23"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "came down",
+          "matches": [
+            "1 Chronicles 7:21"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Gath",
+          "matches": [
+            "1 Chronicles 7:21",
+            "1 Samuel 6:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "born in that land",
+          "matches": [
+            "1 Chronicles 7:21"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "in the land",
+          "matches": [
+            "Genesis 41:52",
+            "Genesis 46:20"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "the-word-of-the-lord-came-to-me-thou-hast-shed-blood-when-was-it-given",
+      "batch": "1-chronicles-1-29-q",
+      "english": [
+        {
+          "ref": "1 Chronicles 22:8",
+          "quote": "But the word of the Lord came to me, saying, Thou hast shed blood abundantly, and hast made great wars: thou shalt not build an house unto my name, because thou hast shed much blood upon the earth in my sight.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 28:3",
+          "quote": "But God said unto me, Thou shalt not build an house for my name, because thou hast been a man of war, and hast shed blood.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 17:4",
+          "quote": "Go and tell David my servant, Thus saith the Lord, Thou shalt not build me an house to dwell in:",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 17:12",
+          "quote": "He shall build me an house, and I will stablish his throne for ever.",
+          "exact": true
+        },
+        {
+          "ref": "2 Samuel 7:5",
+          "quote": "Shalt thou build me an house for me to dwell in?",
+          "exact": true
+        },
+        {
+          "ref": "2 Samuel 7:13",
+          "quote": "He shall build an house for my name",
+          "exact": true
+        },
+        {
+          "ref": "1 Kings 5:3",
+          "quote": "David my father could not build an house unto the name of the Lord his God for the wars which were about him on every side",
+          "exact": true
+        },
+        {
+          "ref": "1 Kings 8:18",
+          "quote": "thou didst well that it was in thine heart",
+          "exact": true
+        },
+        {
+          "ref": "1 Kings 8:19",
+          "quote": "Nevertheless thou shalt not build the house; but thy son",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיְהִ֨י עָלַ֤י דְּבַר־יְהוָה֙ לֵאמֹ֔ר דָּ֤ם לָרֹב֙ שָׁפַ֔כְתָּ וּמִלְחָמֹ֥ות גְּדֹלֹ֖ות עָשִׂ֑יתָ",
+          "stated": {
+            "chapter": 22,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/22/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 22,
+            "verse": 8
+          }
+        },
+        {
+          "quote": "כִּ֣י אִ֧ישׁ מִלְחָמֹ֛ות אַ֖תָּה וְדָמִ֥ים שָׁפָֽכְתָּ",
+          "stated": {
+            "chapter": 28,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/28/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 28,
+            "verse": 3
+          }
+        },
+        {
+          "quote": "Καὶ ἐγένετό μοι λόγος Κυρίου, λέγων, αἷμα εἰς πλῆθος ἐξέχεας, καὶ πολέμους μεγάλους ἐποίησας",
+          "stated": {
+            "chapter": 22,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH22.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 22,
+            "verse": 8
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 22:8",
+          "quote": "the word of the Lord came to me, saying, Thou hast shed blood abundantly",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "1 Chronicles 28:3",
+          "quote": "because thou hast been a man of war, and hast shed blood",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The word of the Lord came to me, saying, Thou hast shed blood abundantly",
+          "matches": [
+            "1 Chronicles 22:8"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        },
+        {
+          "field": "text",
+          "quote": "But the word of the Lord came to me, saying, Thou hast shed blood abundantly, and hast made great wars: thou shalt not build an house unto my name, because thou hast shed much blood upon the earth in my sight.",
+          "matches": [
+            "1 Chronicles 22:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "But God said unto me, Thou shalt not build an house for my name, because thou hast been a man of war, and hast shed blood.",
+          "matches": [
+            "1 Chronicles 28:3"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Go and tell David my servant, Thus saith the Lord, Thou shalt not build me an house to dwell in:",
+          "matches": [
+            "1 Chronicles 17:4"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "He shall build me an house, and I will stablish his throne for ever.",
+          "matches": [
+            "1 Chronicles 17:12"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Shalt thou build me an house for me to dwell in?",
+          "matches": [
+            "2 Samuel 7:5"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "He shall build an house for my name",
+          "matches": [
+            "2 Samuel 7:13"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "David my father could not build an house unto the name of the Lord his God for the wars which were about him on every side",
+          "matches": [
+            "1 Kings 5:3"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "thou didst well that it was in thine heart",
+          "matches": [
+            "1 Kings 8:18"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Nevertheless thou shalt not build the house; but thy son",
+          "matches": [
+            "1 Kings 8:19"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "blood",
+          "matches": [
+            "1 Chronicles 22:8",
+            "1 Chronicles 28:3"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    },
+    {
+      "id": "the-lord-made-me-understand-in-writing-by-his-hand-upon-me-how-did-david-receive-the-pattern",
+      "batch": "1-chronicles-1-29-q",
+      "english": [
+        {
+          "ref": "1 Chronicles 28:11",
+          "quote": "Then David gave to Solomon his son the pattern of the porch, and of the houses thereof",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 28:12",
+          "quote": "And the pattern of all that he had by the spirit, of the courts of the house of the Lord",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 28:19",
+          "quote": "All this, said David, the Lord made me understand in writing by his hand upon me, even all the works of this pattern.",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 25:40",
+          "quote": "And look that thou make them after their pattern, which was shewed thee in the mount.",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 31:18",
+          "quote": "tables of stone, written with the finger of God",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הַכֹּ֥ל בִּכְתָ֛ב מִיַּ֥ד יְהוָ֖ה עָלַ֣י הִשְׂכִּ֑יל כֹּ֖ל מַלְאֲכֹ֥ות הַתַּבְנִֽית",
+          "stated": {
+            "chapter": 28,
+            "verse": 19
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/28/",
+              "verse": 19
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 28,
+            "verse": 19
+          }
+        },
+        {
+          "quote": "וְתַבְנִ֗ית כֹּל֩ אֲשֶׁ֨ר הָיָ֤ה בָר֙וּחַ֙ עִמֹּ֔ו",
+          "stated": {
+            "chapter": 28,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/28/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 28,
+            "verse": 12
+          }
+        },
+        {
+          "quote": "πάντα ἐν γραφῇ χειρὸς Κυρίου ἔδωκε Δαυὶδ Σαλωμὼν",
+          "stated": {
+            "chapter": 28,
+            "verse": 19
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH28.htm",
+              "verse": "19"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 28,
+            "verse": 19
+          }
+        },
+        {
+          "quote": "καὶ τὸ παράδειγμα ὃ εἶχεν ἐν πνεύματι αὐτοῦ",
+          "stated": {
+            "chapter": 28,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1CH28.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 28,
+            "verse": 12
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "1 Chronicles 28:19",
+          "quote": "the Lord made me understand in writing by his hand upon me",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "1 Chronicles 28:12",
+          "quote": "the pattern of all that he had by the spirit",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exodus-replacement-tablets",
+          "title": "Replacement tablets separate preparation from writing",
+          "summary": "Moses prepares replacement stones; the text attributes writing in more than one way.",
+          "reasoning": "Cutting stone and writing are different actions. The identity of the final writing subject and the relation between covenant words and tablet words are interpretive questions, not resolved merely by noting Moses cut the stones.",
+          "scope": "This identifies attribution and reference questions in the account. Manuscript, Hebrew syntax and composition research remain needed; no definitive authorship or archaeological claim follows."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The Lord made me understand in writing by his hand upon me",
+          "matches": [
+            "1 Chronicles 28:19"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        },
+        {
+          "field": "summary",
+          "quote": "the pattern of all that he had by the spirit",
+          "matches": [
+            "1 Chronicles 28:12"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "in writing by his hand upon me",
+          "matches": [
+            "1 Chronicles 28:19"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Then David gave to Solomon his son the pattern of the porch, and of the houses thereof",
+          "matches": [
+            "1 Chronicles 28:11"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And the pattern of all that he had by the spirit, of the courts of the house of the Lord",
+          "matches": [
+            "1 Chronicles 28:12"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "All this, said David, the Lord made me understand in writing by his hand upon me, even all the works of this pattern.",
+          "matches": [
+            "1 Chronicles 28:19"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And look that thou make them after their pattern, which was shewed thee in the mount.",
+          "matches": [
+            "Exodus 25:40"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "tables of stone, written with the finger of God",
+          "matches": [
+            "Exodus 31:18"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "the spirit",
+          "matches": [
+            "1 Chronicles 28:12"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "said David",
+          "matches": [
+            "1 Chronicles 28:19"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "in a writing of the hand of the Lord",
+          "matches": [],
+          "kind": "researcher rendering of verified Greek, not KJV"
+        },
+        {
+          "field": "scope",
+          "quote": "his spirit",
+          "matches": [],
+          "kind": "researcher rendering of verified Greek, not KJV"
+        }
+      ],
+      "duplicateReview": {
+        "duplicateID": false,
+        "overlapIDs": [
+          "exodus-replacement-tablets"
+        ],
+        "builtInStudiesReviewed": [
+          "seen",
+          "judas",
+          "animals",
+          "plants",
+          "soldiers",
+          "birth"
+        ],
+        "conclusion": "Distinct subject or named-edition wording; overlapping refs do not duplicate the existing findings."
+      }
+    }
+  ]
+}
