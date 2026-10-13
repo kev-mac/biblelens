@@ -19,7 +19,7 @@ const comparisonCache=new Map();
 const comparisonSelections=new Map();
 const comparisonModes=['history','contradictions','science'];
 const comparisonLabels={history:'Historic',contradictions:'Contradictions',science:'Scientific'};
-const languageTags={H:{label:'Hebrew text comparison',tone:'hebrew'},G:{label:'Greek text comparison',tone:'greek'},V:{label:'Law violation',tone:'violation'}};
+const languageTags={H:{label:'Hebrew text comparison',tone:'hebrew'},G:{label:'Greek text comparison',tone:'greek'},V:{label:'Law violation',tone:'violation'},Q:{label:'Unanswered question',tone:'question'}};
 function recordTags(item){return [...new Set(Array.isArray(item.tags)?item.tags:item.tag?[item.tag]:[])].filter(t=>languageTags[t]);}
 function comparisonKey(mode=$('#reader-compare').value){return `${readingBook}:${readingChapter}:${$('#reader-edition').value}:${mode}`;}
 function selectionKey(verse){return `${comparisonKey('tabs')}:${verse}`;}

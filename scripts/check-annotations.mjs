@@ -4,7 +4,7 @@ import worker from '../dist/server/index.js';
 
 const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 const evidence=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
-for(const record of evidence){if(record.tags!==undefined){assert(Array.isArray(record.tags)&&record.tags.length>0);assert(record.tags.every(tag=>['H','G','V'].includes(tag)));assert.equal(new Set(record.tags).size,record.tags.length);}if(record.tag!==undefined)assert(['H','G','V'].includes(record.tag));}
+for(const record of evidence){if(record.tags!==undefined){assert(Array.isArray(record.tags)&&record.tags.length>0);assert(record.tags.every(tag=>['H','G','V','Q'].includes(tag)));assert.equal(new Set(record.tags).size,record.tags.length);}if(record.tag!==undefined)assert(['H','G','V','Q'].includes(record.tag));}
 const request=async path=>{const response=await worker.fetch(new Request('https://scripture.test'+path),{},{});assert.equal(response.status,200,path);return response.json();};
 const byName=new Map(books.map(b=>[b.name,b]));
 const refParts=ref=>{const m=/^(.*?) (\d+):(\d+)$/.exec(ref);return {book:byName.get(m[1]).id,chapter:+m[2],verse:+m[3]};};

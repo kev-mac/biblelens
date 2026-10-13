@@ -181,3 +181,8 @@ body.keyboard-navigation #chat-input:focus,body.keyboard-navigation #reader-ques
 .context-citations [hidden]{display:none}
 .context-citations{margin:10px 0}
 mark.side-quote{color:inherit;background:rgba(255,172,74,.24);border-radius:2px}
+
+/* Q: a material unanswered question, distinct from discrepancy verdicts. */
+.verse-comparison[data-tone="question"]{--summary-tint:#e4ebcb;--summary-ink:#435023}
+.agreement.question,body.dark .agreement.question{background:#e4ebcb;color:#435023}
+.category-question{display:inline-flex;align-items:center;justify-content:center;min-width:28px;min-height:28px;border-radius:5px;background:#e4ebcb;color:#435023;margin-right:8px}

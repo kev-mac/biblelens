@@ -1,0 +1,14 @@
+Work with Codex on Scripture Lens at:
+C:\Users\kevma\Documents\Codex\2026-10-11\referenced-chatgpt-conversation-this-is-an\work\source-check
+
+Read research/notes/claude-integration-workflow.md first and follow its existing owner rulings. You remain the sole researcher; Codex verifies quotations and interpretation limits, integrates accepted proposals, tests and publishes.
+
+New approved category: Q = Unanswered question. It marks a material gap in a passage's explanation, not a verdict of contradiction or scientific error. Use it selectively for consequential unspecified identities, mechanisms, causes or sequences. Exclude trivial missing details, questions answered elsewhere, and gaps that only arise by treating an interpretation as established fact. Do not infer Bible-wide silence from an excerpt.
+
+Deliver Q proposals as ready-to-insert JSON records matching data/evidence.json in research/claude-drafts/<book-or-batch>-q-records.json, with a companion notes file. Use tags: ["Q"], status: "Context", and the closest existing mode (science, history or contradictions); do not invent a new mode. Include a stable ID, primary ref, question-shaped title, concise neutral summary, exact KJV quotations in text, reasoning, scope/interpretation limits, checked date, sources and all relevant refs. Include sides using exact KJV substrings for key verses; retain other verses as context. Supply addresses for Hebrew/Greek quotations if used. Keep hypotheses and theological explanations explicitly qualified. Source the actual issue; do not claim an unspecified miracle is scientifically disproved.
+
+Inspect existing records and drafts first. Avoid duplicating published findings or Q proposals. For an extension, identify the existing ID and describe what changes; leave unrelated wording, tags, status and refs intact. Combine tags only when each independently qualifies. Do not change app code or publish. Record accepted-candidate rationale, rejected candidates and unresolved questions in notes. Do not inflate coverage from annotation presence.
+
+First research candidate: Genesis 1:3–5 describes light and successive days before the celestial lights in 1:14–19, without identifying the earlier light's physical source. Evaluate a bounded Q proposal. Do not assert that the Sun is the only possible source of light. Inspect genesis-1-celestial-sequence: it already addresses literal vegetation/Sun chronology, so avoid duplicating that finding. Possible later candidates include Cain's unidentified feared attackers and unnamed wife; do not assert their kinship as fact. Humanity appearing earlier in narrative order than the Adam account does not by itself establish an earlier population.
+
+Q is implemented with a consistent olive color, initially hidden summary and independent on/off toggle. Codex has not published any new Q findings; your research proposals are needed before Q appears on verses.
