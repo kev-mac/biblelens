@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 459,
+    "evidenceRecords": 463,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 399,
-    "annotatedVerses": 2749
+    "chaptersWithAnnotations": 401,
+    "annotatedVerses": 2756
   },
   "byBook": [
     {
@@ -75,8 +75,8 @@
     {
       "book": "1 Kings",
       "chapters": 22,
-      "chaptersWithAnnotations": 14,
-      "annotatedVerses": 38
+      "chaptersWithAnnotations": 16,
+      "annotatedVerses": 45
     },
     {
       "book": "2 Kings",
@@ -7219,7 +7219,9 @@
       "chapter": 11,
       "annotationIds": [
         "deuteronomy-royal-limits-and-solomon",
-        "jephthah-chemosh-and-ammon"
+        "jephthah-chemosh-and-ammon",
+        "twelve-pieces-ten-tribes-and-one-tribe-which-tribe-is-the-twelfth",
+        "the-book-of-the-acts-of-solomon-what-was-it-and-where-is-it"
       ],
       "annotatedVerses": [
         1,
@@ -7227,11 +7229,16 @@
         3,
         4,
         7,
-        33
+        30,
+        31,
+        32,
+        33,
+        41
       ],
       "modes": [
         "history",
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -7248,9 +7255,15 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "but-he-lied-unto-him-why-did-the-old-prophet-of-bethel-lie"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7333,9 +7346,16 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "elijah-told-to-anoint-hazael-jehu-and-elisha-did-elijah-anoint-any-of-them"
+      ],
+      "annotatedVerses": [
+        15,
+        16
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
