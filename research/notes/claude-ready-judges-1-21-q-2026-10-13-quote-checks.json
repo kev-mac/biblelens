@@ -1,0 +1,949 @@
+{
+  "checks": [
+    {
+      "id": "after-the-death-of-joshua-which-events-of-judges-1-follow-it",
+      "batch": "judges-1-21-q",
+      "english": [
+        {
+          "ref": "Judges 1:1",
+          "quote": "Now after the death of Joshua it came to pass, that the children of Israel asked the Lord, saying, Who shall go up for us against the Canaanites first, to fight against them?",
+          "exact": true
+        },
+        {
+          "ref": "Judges 1:11",
+          "quote": "And from thence he went against the inhabitants of Debir: and the name of Debir before was Kirjathsepher:",
+          "exact": true
+        },
+        {
+          "ref": "Judges 1:12",
+          "quote": "And Caleb said, He that smiteth Kirjathsepher, and taketh it, to him will I give Achsah my daughter to wife.",
+          "exact": true
+        },
+        {
+          "ref": "Judges 1:13",
+          "quote": "took it: and he gave him Achsah his daughter to wife",
+          "exact": true
+        },
+        {
+          "ref": "Judges 2:6",
+          "quote": "And when Joshua had let the people go, the children of Israel went every man unto his inheritance to possess the land.",
+          "exact": true
+        },
+        {
+          "ref": "Judges 2:7",
+          "quote": "And the people served the Lord all the days of Joshua, and all the days of the elders that outlived Joshua",
+          "exact": true
+        },
+        {
+          "ref": "Judges 2:8",
+          "quote": "And Joshua the son of Nun, the servant of the Lord, died, being an hundred and ten years old.",
+          "exact": true
+        },
+        {
+          "ref": "Joshua 15:13",
+          "quote": "And unto Caleb the son of Jephunneh he gave a part among the children of Judah, according to the commandment of the Lord to Joshua",
+          "exact": true
+        },
+        {
+          "ref": "Joshua 15:15",
+          "quote": "And he went up thence to the inhabitants of Debir: and the name of Debir before was Kirjathsepher.",
+          "exact": true
+        },
+        {
+          "ref": "Joshua 15:16",
+          "quote": "And Caleb said, He that smiteth Kirjathsepher, and taketh it, to him will I give Achsah my daughter to wife.",
+          "exact": true
+        },
+        {
+          "ref": "Joshua 15:17",
+          "quote": "took it: and he gave him Achsah his daughter to wife",
+          "exact": true
+        },
+        {
+          "ref": "Joshua 24:28",
+          "quote": "So Joshua let the people depart, every man unto his inheritance.",
+          "exact": true
+        },
+        {
+          "ref": "Joshua 24:29",
+          "quote": "And it came to pass after these things, that Joshua the son of Nun, the servant of the Lord, died, being an hundred and ten years old.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיְהִ֗י אַחֲרֵי֙ מֹ֣ות יְהֹושֻׁ֔עַ",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/7/1/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וַיְשַׁלַּ֥ח יְהֹושֻׁ֖עַ אֶת־הָעָ֑ם",
+          "stated": {
+            "chapter": 2,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/7/2/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וַיָּ֛מָת יְהֹושֻׁ֥עַ בִּן־נ֖וּן עֶ֣בֶד יְהוָ֑ה",
+          "stated": {
+            "chapter": 2,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/7/2/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐγένετο μετὰ τὴν τελευτὴν Ἰησοῦ",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JDG01.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἐξαπέστειλεν Ἰησοῦς τὸν λαὸν",
+          "stated": {
+            "chapter": 2,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JDG02.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἐτελεύτησεν Ἰησοῦς υἱὸς Ναυῆ δοῦλος Κυρίου",
+          "stated": {
+            "chapter": 2,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JDG02.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Judges 1:1",
+          "quote": "Now after the death of Joshua it came to pass",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Judges 2:6",
+          "quote": "And when Joshua had let the people go",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Judges 2:8",
+          "quote": "And Joshua the son of Nun, the servant of the Lord, died",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "early-conquest",
+          "title": "Complete conquest and continuing inhabitants",
+          "summary": "Broad victory summaries in Joshua sit alongside explicit reports that many inhabitants remained.",
+          "reasoning": "Joshua itself preserves an exception at Jerusalem, and Judges lists additional unconquered places. Totalizing military language need not mean every settlement was occupied or every person killed. This explicit exception qualifies an unqualified reading of destruction language; it does not by itself establish the historical extent of conquest or resolve the moral assessment of the killings.",
+          "scope": "A literal exhaustive reading creates tension; a rhetorical summary of victory allows the stated exceptions. This does not independently date the conquest. Later presence can be explained by incomplete occupation or subsequent return, but these alternatives are not independently demonstrated here. The king list is not a population census or an archaeological chronology. These local accounts may narrate different stages or recap earlier events; their placement alone does not establish a dated sequence."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "after the death of Joshua",
+          "matches": [
+            "Judges 1:1"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "after the death of Joshua",
+          "matches": [
+            "Judges 1:1"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "according to the commandment of the Lord to Joshua",
+          "matches": [
+            "Joshua 15:13"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "had",
+          "matches": [
+            "Judges 2:6",
+            "Judges 2:7"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "when Joshua had let the people go",
+          "matches": [
+            "Judges 2:6"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "death of Joshua",
+          "matches": [
+            "Judges 1:1"
+          ],
+          "kind": "KJV substring"
+        }
+      ],
+      "sideValidation": "All supplied sides exact and within refs; multiple side-A entries retained under standing contract.",
+      "sourceLabelValidation": "Verified supplied book and edition addresses and their printed verse labels; no numbering shift in these quotations. Brenton 11:39 quote ends before ordinance clause.",
+      "decision": "accepted as written"
+    },
+    {
+      "id": "gideons-ephod-what-was-it-and-what-did-israel-do-with-it",
+      "batch": "judges-1-21-q",
+      "english": [
+        {
+          "ref": "Judges 8:23",
+          "quote": "I will not rule over you, neither shall my son rule over you: the Lord shall rule over you",
+          "exact": true
+        },
+        {
+          "ref": "Judges 8:24",
+          "quote": "I would desire a request of you, that ye would give me every man the earrings of his prey",
+          "exact": true
+        },
+        {
+          "ref": "Judges 8:26",
+          "quote": "And the weight of the golden earrings that he requested was a thousand and seven hundred shekels of gold",
+          "exact": true
+        },
+        {
+          "ref": "Judges 8:27",
+          "quote": "And Gideon made an ephod thereof, and put it in his city, even in Ophrah: and all Israel went thither a whoring after it: which thing became a snare unto Gideon, and to his house.",
+          "exact": true
+        },
+        {
+          "ref": "Judges 8:33",
+          "quote": "as soon as Gideon was dead, that the children of Israel turned again, and went a whoring after Baalim",
+          "exact": true
+        },
+        {
+          "ref": "Judges 17:5",
+          "quote": "And the man Micah had an house of gods, and made an ephod, and teraphim",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 28:4",
+          "quote": "And these are the garments which they shall make; a breastplate, and an ephod, and a robe",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 28:6",
+          "quote": "And they shall make the ephod of gold, of blue, and of purple, of scarlet, and fine twined linen, with cunning work.",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 2:18",
+          "quote": "girded with a linen ephod",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 23:9",
+          "quote": "he said to Abiathar the priest, Bring hither the ephod",
+          "exact": true
+        },
+        {
+          "ref": "Hosea 3:4",
+          "quote": "without an image, and without an ephod, and without teraphim",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיַּעַשׂ֩ אֹותֹ֨ו גִדְעֹ֜ון לְאֵפֹ֗וד וַיַּצֵּ֨ג אֹותֹ֤ו בְעִירֹו֙ בְּעָפְרָ֔ה וַיִּזְנ֧וּ כָֽל־יִשְׂרָאֵ֛ל אַחֲרָ֖יו שָׁ֑ם",
+          "stated": {
+            "chapter": 8,
+            "verse": 27
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/7/8/",
+              "verse": 27
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְעָשׂ֖וּ אֶת־הָאֵפֹ֑ד",
+          "stated": {
+            "chapter": 28,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/2/28/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἐποίησεν αὐτὸ Γεδεὼν εἰς ἐφὼδ, καὶ ἔστησεν αὐτὸ ἐν πόλει αὐτοῦ ἐν Ἐφραθά",
+          "stated": {
+            "chapter": 8,
+            "verse": 27
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JDG08.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ποιήσουσι τὴν ἐπωμίδα",
+          "stated": {
+            "chapter": 28,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EXO28.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Judges 8:27",
+          "quote": "And Gideon made an ephod thereof, and put it in his city, even in Ophrah: and all Israel went thither a whoring after it",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "midianites-and-ishmaelites",
+          "title": "Who sold Joseph to Potiphar?",
+          "summary": "Genesis names Midianites as Joseph’s sellers to Potiphar, then says Potiphar bought him from Ishmaelites. The different labels could overlap, but the narrative does not explain their relationship.",
+          "reasoning": "The final seller descriptions differ directly. Distinct ancestral names alone do not establish that later social or trading labels were mutually exclusive. Overlapping labels, allied groups or multiple transfers are possible explanations; none is explicitly explained for the final sale. The subject of the transfer verbs in 37:28 should not be treated as resolving every step.",
+          "scope": "This is a wording comparison, not proof of incompatible ethnic identities or independent historical evidence. Broader use of Ishmaelite and interwoven-source explanations remain interpretations; the genealogies do not prove exclusive membership of later groups."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "went thither a whoring after it",
+          "matches": [
+            "Judges 8:27"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "an ephod thereof",
+          "matches": [
+            "Judges 8:27"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "a whoring after it",
+          "matches": [
+            "Judges 8:27"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "girded with a linen ephod",
+          "matches": [
+            "1 Samuel 2:18"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "put",
+          "matches": [
+            "Judges 8:27"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "all Israel",
+          "matches": [
+            "Judges 8:27"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the Lord shall rule over you",
+          "matches": [
+            "Judges 8:23"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "went a whoring after",
+          "matches": [
+            "Judges 8:33"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "an house of gods",
+          "matches": [
+            "Judges 17:5"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "ephod",
+          "matches": [
+            "Judges 8:27",
+            "Judges 17:5",
+            "Exodus 28:4",
+            "Exodus 28:6",
+            "1 Samuel 2:18",
+            "1 Samuel 23:9",
+            "Hosea 3:4"
+          ],
+          "kind": "KJV substring"
+        }
+      ],
+      "sideValidation": "All supplied sides exact and within refs; multiple side-A entries retained under standing contract.",
+      "sourceLabelValidation": "Verified supplied book and edition addresses and their printed verse labels; no numbering shift in these quotations. Brenton 11:39 quote ends before ordinance clause.",
+      "decision": "corrected and accepted"
+    },
+    {
+      "id": "god-sent-an-evil-spirit-between-abimelech-and-shechem-what-was-it",
+      "batch": "judges-1-21-q",
+      "english": [
+        {
+          "ref": "Judges 9:22",
+          "quote": "When Abimelech had reigned three years over Israel,",
+          "exact": true
+        },
+        {
+          "ref": "Judges 9:23",
+          "quote": "Then God sent an evil spirit between Abimelech and the men of Shechem; and the men of Shechem dealt treacherously with Abimelech:",
+          "exact": true
+        },
+        {
+          "ref": "Judges 9:24",
+          "quote": "That the cruelty done to the threescore and ten sons of Jerubbaal might come, and their blood be laid upon Abimelech their brother",
+          "exact": true
+        },
+        {
+          "ref": "Judges 9:25",
+          "quote": "And the men of Shechem set liers in wait for him in the top of the mountains",
+          "exact": true
+        },
+        {
+          "ref": "Judges 9:56",
+          "quote": "Thus God rendered the wickedness of Abimelech",
+          "exact": true
+        },
+        {
+          "ref": "Judges 9:57",
+          "quote": "And all the evil of the men of Shechem did God render upon their heads",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 16:14",
+          "quote": "But the Spirit of the Lord departed from Saul, and an evil spirit from the Lord troubled him.",
+          "exact": true
+        },
+        {
+          "ref": "1 Kings 22:21",
+          "quote": "And there came forth a spirit, and stood before the Lord, and said, I will persuade him.",
+          "exact": true
+        },
+        {
+          "ref": "1 Kings 22:22",
+          "quote": "I will go forth, and I will be a lying spirit in the mouth of all his prophets",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 5:14",
+          "quote": "the spirit of jealousy come upon him",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיִּשְׁלַ֤ח אֱלֹהִים֙ ר֣וּחַ רָעָ֔ה בֵּ֣ין אֲבִימֶ֔לֶךְ וּבֵ֖ין בַּעֲלֵ֣י שְׁכֶ֑ם",
+          "stated": {
+            "chapter": 9,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/7/9/",
+              "verse": 23
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "רֽוּחַ־רָעָ֖ה מֵאֵ֥ת יְהוָֽה",
+          "stated": {
+            "chapter": 16,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/9/16/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ר֣וּחַ שֶׁ֔קֶר",
+          "stated": {
+            "chapter": 22,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/11/22/",
+              "verse": 22
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἐξαπέστειλεν ὁ Θεὸς πνεῦμα πονηρὸν ἀναμέσον Ἀβιμέλεχ καὶ ἀναμέσον τῶν ἀνδρῶν Σικίμων",
+          "stated": {
+            "chapter": 9,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JDG09.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "πνεῦμα πονηρὸν παρὰ Κυρίου",
+          "stated": {
+            "chapter": 16,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/1SA16.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Judges 9:23",
+          "quote": "Then God sent an evil spirit between Abimelech and the men of Shechem",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "numbers-jealousy-ordeal",
+          "title": "A husband’s suspicion initiates a ritual ordeal",
+          "summary": "The procedure concerns an unwitnessed allegation and can begin even when the wife is innocent.",
+          "reasoning": "Suspicion is not established guilt in the passage. Its procedure is asymmetric: it sets out an ordeal for the wife rather than an equivalent test of the husband.",
+          "scope": "The NET translator notes discuss reproductive interpretations of the ambiguous bodily expressions, including miscarriage, without settling the condition. The text alone does not validate a medical test or specify a proven chemical mechanism. Actual practice and effects need independent evidence."
+        },
+        {
+          "id": "gideon-seventy-sons-count",
+          "title": "Seventy brothers, with a survivor?",
+          "summary": "Judges reports seventy brothers killed while explicitly saying Jotham survived. A precise death count conflicts with that exception; seventy may instead describe the household group.",
+          "reasoning": "If seventy excludes Abimelech but includes Jotham, one survivor leaves at most sixty-nine deaths in that group. If it includes both living men, the maximum is sixty-eight. The repeated seventy is therefore difficult as an exact count of dead brothers. A group total with an explicit exception or a rounded household number is a possible reading.",
+          "scope": "The text itself identifies the exception. It does not explain its counting convention, so neither sixty-nine nor sixty-eight is established as the actual death toll. This comparison concerns narrative arithmetic, not independent verification of the event."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "evil spirit",
+          "matches": [
+            "Judges 9:23",
+            "1 Samuel 16:14"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "God sent an evil spirit between Abimelech and the men of Shechem",
+          "matches": [
+            "Judges 9:23"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "evil spirit",
+          "matches": [
+            "Judges 9:23",
+            "1 Samuel 16:14"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "spirit",
+          "matches": [
+            "Judges 9:23",
+            "1 Samuel 16:14",
+            "1 Kings 22:21",
+            "1 Kings 22:22",
+            "Numbers 5:14"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "the spirit of jealousy",
+          "matches": [
+            "Numbers 5:14"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "evil",
+          "matches": [
+            "Judges 9:23",
+            "Judges 9:57",
+            "1 Samuel 16:14"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "evil spirit",
+          "matches": [
+            "Judges 9:23",
+            "1 Samuel 16:14"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "evil spirits",
+          "matches": [],
+          "kind": "word discussed or researcher search term, not claimed scripture excerpt"
+        }
+      ],
+      "sideValidation": "All supplied sides exact and within refs; multiple side-A entries retained under standing contract.",
+      "sourceLabelValidation": "Verified supplied book and edition addresses and their printed verse labels; no numbering shift in these quotations. Brenton 11:39 quote ends before ordinance clause.",
+      "decision": "accepted as written"
+    },
+    {
+      "id": "jephthah-did-with-her-according-to-his-vow-what-was-done-to-his-daughter",
+      "batch": "judges-1-21-q",
+      "english": [
+        {
+          "ref": "Judges 11:30",
+          "quote": "And Jephthah vowed a vow unto the Lord",
+          "exact": true
+        },
+        {
+          "ref": "Judges 11:31",
+          "quote": "Then it shall be, that whatsoever cometh forth of the doors of my house to meet me, when I return in peace from the children of Ammon, shall surely be the Lord's, and I will offer it up for a burnt offering.",
+          "exact": true
+        },
+        {
+          "ref": "Judges 11:34",
+          "quote": "his daughter came out to meet him with timbrels and with dances: and she was his only child",
+          "exact": true
+        },
+        {
+          "ref": "Judges 11:35",
+          "quote": "for I have opened my mouth unto the Lord, and I cannot go back",
+          "exact": true
+        },
+        {
+          "ref": "Judges 11:37",
+          "quote": "let me alone two months, that I may go up and down upon the mountains, and bewail my virginity",
+          "exact": true
+        },
+        {
+          "ref": "Judges 11:38",
+          "quote": "and bewailed her virginity upon the mountains",
+          "exact": true
+        },
+        {
+          "ref": "Judges 11:39",
+          "quote": "And it came to pass at the end of two months, that she returned unto her father, who did with her according to his vow which he had vowed: and she knew no man. And it was a custom in Israel,",
+          "exact": true
+        },
+        {
+          "ref": "Judges 11:40",
+          "quote": "That the daughters of Israel went yearly to lament the daughter of Jephthah the Gileadite four days in a year.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 12:31",
+          "quote": "for even their sons and their daughters they have burnt in the fire to their gods",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 12:11",
+          "quote": "And the Lord sent Jerubbaal, and Bedan, and Jephthah, and Samuel, and delivered you",
+          "exact": true
+        },
+        {
+          "ref": "Hebrews 11:32",
+          "quote": "for the time would fail me to tell of Gedeon, and of Barak, and of Samson, and of Jephthae",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְהָיָה֙ לַֽיהוָ֔ה וְהַעֲלִיתִ֖הוּ עֹולָֽה",
+          "stated": {
+            "chapter": 11,
+            "verse": 31
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/7/11/",
+              "verse": 31
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וַיַּ֣עַשׂ לָ֔הּ אֶת־נִדְרֹ֖ו אֲשֶׁ֣ר נָדָ֑ר וְהִיא֙ לֹא־יָדְעָ֣ה אִ֔ישׁ",
+          "stated": {
+            "chapter": 11,
+            "verse": 39
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/7/11/",
+              "verse": 39
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ ἔσται τῷ Κυρίῳ, ἀνοίσω αὐτὸν ὁλοκαύτωμα",
+          "stated": {
+            "chapter": 11,
+            "verse": 31
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JDG11.htm",
+              "verse": "31"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ ἐποίησεν ἐν αὐτῇ τὴν εὐχὴν αὐτοῦ ἣν ηὔξατο· καὶ αὕτη οὐκ ἔγνω ἄνδρα",
+          "stated": {
+            "chapter": 11,
+            "verse": 39
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JDG11.htm",
+              "verse": "39"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Judges 11:39",
+          "quote": "who did with her according to his vow which he had vowed: and she knew no man",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Judges 11:31",
+          "quote": "shall surely be the Lord's, and I will offer it up for a burnt offering",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "samuel-deliverers-bedan-or-barak",
+          "title": "Samuel’s list of deliverers: Bedan, or Barak?",
+          "summary": "The KJV lists “Jerubbaal, and Bedan, and Jephthah, and Samuel”. The Septuagint has Barak where the KJV has Bedan.",
+          "reasoning": "The second name in the list is a different name in the Greek.",
+          "scope": "The KJV follows the Hebrew. No claim is made here about whether a deliverer named Bedan is recorded elsewhere, or which name is earlier. The Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition, and the Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "did with her according to his vow",
+          "matches": [
+            "Judges 11:39"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "shall surely be the Lord's, and I will offer it up for a burnt offering",
+          "matches": [
+            "Judges 11:31"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "did with her according to his vow which he had vowed: and she knew no man",
+          "matches": [
+            "Judges 11:39"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "and she knew no man",
+          "matches": [
+            "Judges 11:39"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "and she knew no man",
+          "matches": [
+            "Judges 11:39"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "according to",
+          "matches": [
+            "Judges 11:39"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "she knew no man",
+          "matches": [
+            "Judges 11:39"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Jephthah",
+          "matches": [
+            "Judges 11:30",
+            "Judges 11:34",
+            "Judges 11:40",
+            "1 Samuel 12:11"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Jephthae",
+          "matches": [
+            "Hebrews 11:32"
+          ],
+          "kind": "KJV substring"
+        }
+      ],
+      "sideValidation": "All supplied sides exact and within refs; multiple side-A entries retained under standing contract.",
+      "sourceLabelValidation": "Verified supplied book and edition addresses and their printed verse labels; no numbering shift in these quotations. Brenton 11:39 quote ends before ordinance clause.",
+      "decision": "corrected and accepted"
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/7/1/",
+    "https://bolls.life/get-text/WLC/7/2/",
+    "https://ebible.org/grcbrent/JDG01.htm",
+    "https://ebible.org/grcbrent/JDG02.htm",
+    "https://bolls.life/get-text/WLC/7/8/",
+    "https://bolls.life/get-text/WLC/2/28/",
+    "https://ebible.org/grcbrent/JDG08.htm",
+    "https://ebible.org/grcbrent/EXO28.htm",
+    "https://bolls.life/get-text/WLC/7/9/",
+    "https://bolls.life/get-text/WLC/9/16/",
+    "https://bolls.life/get-text/WLC/11/22/",
+    "https://ebible.org/grcbrent/JDG09.htm",
+    "https://ebible.org/grcbrent/1SA16.htm",
+    "https://bolls.life/get-text/WLC/7/11/",
+    "https://ebible.org/grcbrent/JDG11.htm"
+  ],
+  "needsOwner": [],
+  "draftSha256": "a314f306fbe36c65dc28bfb9ebc37ef9c2dd99dd714c3d18a42bfdcf02352923",
+  "priorEvidenceUnchanged": 444
+}
