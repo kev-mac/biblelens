@@ -1,0 +1,378 @@
+{
+  "checks": [
+    {
+      "id": "he-buried-him-who-buried-moses",
+      "batch": "deuteronomy-1-34-q",
+      "english": [
+        {
+          "ref": "Deuteronomy 34:5",
+          "quote": "So Moses the servant of the Lord died there in the land of Moab, according to the word of the Lord.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 34:6",
+          "quote": "And he buried him in a valley in the land of Moab, over against Bethpeor: but no man knoweth of his sepulchre unto this day.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 34:8",
+          "quote": "And the children of Israel wept for Moses in the plains of Moab thirty days",
+          "exact": true
+        },
+        {
+          "ref": "Jude 1:9",
+          "quote": "Michael the archangel, when contending with the devil he disputed about the body of Moses",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיִּקְבֹּ֨ר אֹתֹ֤ו בַגַּיְ֙",
+          "stated": {
+            "chapter": 34,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/34/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְלֹֽא־יָדַ֥ע אִישׁ֙ אֶת־קְבֻ֣רָתֹ֔ו עַ֖ד הַיֹּ֥ום הַזֶּֽה",
+          "stated": {
+            "chapter": 34,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/34/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἔθαψαν αὐτὸν",
+          "stated": {
+            "chapter": 34,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/DEU34.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "διελέγετο περὶ τοῦ Μωϋσέως σώματος",
+          "stated": {
+            "chapter": 1,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/65/1/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "textusReceptus": {
+            "url": "https://bolls.life/get-text/TR/65/1/",
+            "verse": 9,
+            "wordComparisonVerified": true,
+            "policy": "Strong markup stripped; word comparison ignores Greek case, accents and punctuation. Jude name spelling difference retained."
+          }
+        },
+        {
+          "quote": "μωσεως",
+          "stated": {
+            "chapter": 1,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TR/65/1/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Deuteronomy 34:6",
+          "quote": "And he buried him in a valley in the land of Moab",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Jude 1:9",
+          "quote": "he disputed about the body of Moses",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "deuteronomy-law-custody-and-reading",
+          "title": "A written law is entrusted for custody and periodic public reading",
+          "summary": "The narrative attributes law writing to Moses and directs custody beside the ark and a seven-year public reading.",
+          "reasoning": "A narrative attribution to Moses is evidence of the authorship claim made within the book, rather than external verification of the surviving book’s complete composition. The closing narrator’s perspective must be distinguished from the earlier law-writing attribution; this distinction alone does not identify an author, editor or date.",
+          "scope": "This does not identify the deposited manuscript, establish its survival or show how regularly the reading occurred."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed existing overlapping findings and all six ENTRIES studies; subject differs, no duplicate finding."
+    },
+    {
+      "id": "the-host-of-heaven-divided-unto-all-nations-for-what",
+      "batch": "deuteronomy-1-34-q",
+      "english": [
+        {
+          "ref": "Deuteronomy 4:19",
+          "quote": "shouldest be driven to worship them, and serve them, which the Lord thy God hath divided unto all nations under the whole heaven",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 4:20",
+          "quote": "But the Lord hath taken you, and brought you forth out of the iron furnace, even out of Egypt, to be unto him a people of inheritance",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 17:3",
+          "quote": "either the sun, or moon, or any of the host of heaven, which I have not commanded",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 29:26",
+          "quote": "For they went and served other gods, and worshipped them, gods whom they knew not, and whom he had not given unto them:",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 1:17",
+          "quote": "And God set them in the firmament of the heaven to give light upon the earth,",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֲשֶׁ֨ר חָלַ֜ק יְהוָ֤ה אֱלֹהֶ֙יךָ֙ אֹתָ֔ם לְכֹל֙ הָֽעַמִּ֔ים תַּ֖חַת כָּל־הַשָּׁמָֽיִם",
+          "stated": {
+            "chapter": 4,
+            "verse": 19
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/4/",
+              "verse": 19
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "אֱלֹהִים֙ אֲשֶׁ֣ר לֹֽא־יְדָע֔וּם וְלֹ֥א חָלַ֖ק לָהֶֽם",
+          "stated": {
+            "chapter": 29,
+            "verse": 25
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/29/",
+              "verse": 25
+            }
+          ],
+          "kjvVerse": 26,
+          "numberingNote": "WLC 29:25 = KJV 29:26, as supplied in notes.",
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἃ ἀπένειμε Κύριος ὁ Θεός σου αὐτὰ πᾶσι τοῖς ἔθνεσι τοῖς ὑποκάτω τοῦ οὐρανοῦ",
+          "stated": {
+            "chapter": 4,
+            "verse": 19
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/DEU04.htm",
+              "verse": "19"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οὐδὲ διένειμεν αὐτοῖς",
+          "stated": {
+            "chapter": 29,
+            "verse": 26
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/DEU29.htm",
+              "verse": "26"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Deuteronomy 4:19",
+          "quote": "which the Lord thy God hath divided unto all nations under the whole heaven",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "genesis-1-celestial-sequence",
+          "title": "Celestial lights and the creation sequence",
+          "summary": "Read as a physical creation sequence, this passage places the Sun after Earth’s vegetation, conflicting with the scientific account. Calling stars “lights” is not itself an error.",
+          "reasoning": "A literal sequence placing terrestrial vegetation before the Sun conflicts with the solar-system formation model. The issue is the sequence, rather than describing luminous objects as lights.",
+          "scope": "This assessment applies to a literal first-creation chronology. A literary or theological reading does not necessarily make the same scientific claim. Reading this as the later visibility of already-existing lights also changes the claim being evaluated; NASA does not establish that interpretation."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Distinct allotment-purpose Q, not a repeat of the creation sequence finding; reasonable light/time and national-worship readings retained without treating either as established."
+    },
+    {
+      "id": "the-blessing-of-the-tribes-why-is-simeon-not-named",
+      "batch": "deuteronomy-1-34-q",
+      "english": [
+        {
+          "ref": "Deuteronomy 33:1",
+          "quote": "And this is the blessing, wherewith Moses the man of God blessed the children of Israel before his death.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 33:6",
+          "quote": "Let Reuben live, and not die; and let not his men be few.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 33:7",
+          "quote": "And this is the blessing of Judah",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 27:12",
+          "quote": "These shall stand upon mount Gerizim to bless the people, when ye are come over Jordan; Simeon, and Levi, and Judah",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 49:5",
+          "quote": "Simeon and Levi are brethren",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 49:7",
+          "quote": "I will divide them in Jacob, and scatter them in Israel",
+          "exact": true
+        },
+        {
+          "ref": "Joshua 19:1",
+          "quote": "their inheritance was within the inheritance of the children of Judah",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 1:23",
+          "quote": "of the tribe of Simeon, were fifty and nine thousand and three hundred",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 26:14",
+          "quote": "These are the families of the Simeonites, twenty and two thousand and two hundred",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֲשֶׁ֨ר בֵּרַ֥ךְ מֹשֶׁ֛ה אִ֥ישׁ הָאֱלֹהִ֖ים אֶת־בְּנֵ֣י יִשְׂרָאֵ֑ל",
+          "stated": {
+            "chapter": 33,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/33/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "יְחִ֥י רְאוּבֵ֖ן וְאַל־יָמֹ֑ת",
+          "stated": {
+            "chapter": 33,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/33/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ζήτω Ῥουβὴν, καὶ μὴ ἀποθανέτω, καὶ ἔστω πολὺς ἐν ἀριθμῷ",
+          "stated": {
+            "chapter": 33,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/DEU33.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Deuteronomy 33:1",
+          "quote": "blessed the children of Israel before his death",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Deuteronomy 27:12",
+          "quote": "Simeon, and Levi, and Judah",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "numbers-military-census-scope",
+          "title": "The military census is not a count of everyone",
+          "summary": "The 603,550 total counts eligible males from age twenty and excludes the Levites.",
+          "reasoning": "Internal agreement of these totals does not independently verify the ancient population. Treating the number as the size of the whole traveling community overlooks the census criteria.",
+          "scope": "The population scale, Hebrew numerical terminology, chronology and archaeological evidence need separate investigation. No demographic multiplier or historical certification is supplied here."
+        },
+        {
+          "id": "deuteronomy-levi-blessing-and-rebuke",
+          "title": "Levi’s blessing differs from Jacob’s rebuke",
+          "summary": "Genesis rebukes Simeon and Levi together; Deuteronomy gives Levi a positive priestly blessing and no separate blessing named for Simeon.",
+          "reasoning": "The tribal portraits differ, but praise for a later role does not logically deny earlier wrongdoing. The two speeches also have different speakers and narrative occasions.",
+          "scope": "The omission is a feature of this blessing’s list, not proof that Simeon ceased to exist or a secure date for the poem. Historical explanations need further evidence."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Published deuteronomy-levi-blessing-and-rebuke notes Simeon’s omission in a comparison about Levi. This Q examines the material unexplained omission itself with alternatives, not another finding of conflict or disappearance."
+    }
+  ],
+  "policy": "Every explicit KJV-labelled text quotation and side verified against its packaged verse; all original-language fragments verified with supplied addresses and printed labels. NFC and whitespace normalization, markup removal only for quote matching. TR word comparisons separately ignore case/accents/punctuation with the Jude spelling difference stated. WLC Deuteronomy29:25 mapped to KJV29:26. All supplied language pages fetched this run, rate-limited pages retried. No independent research or draft edits.",
+  "needsOwner": []
+}

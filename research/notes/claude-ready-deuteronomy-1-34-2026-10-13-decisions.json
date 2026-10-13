@@ -1,0 +1,160 @@
+[
+  {
+    "id": "love-god-with-heart-soul-might-or-with-mind-soul-strength-greek",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "accepted as written",
+    "reason": "KJV quotes and supplied sides exact; Hebrew/Greek verified at supplied addresses and printed verse labels. Distinct named-edition comparison or material Q; interpretation limits retained.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 6:5"
+    ]
+  },
+  {
+    "id": "serve-him-or-him-only-shalt-thou-serve-greek",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Removed “only” as a qualifying addition because KJV 6:14 already excludes other gods in the same passage; retained the independently supplied cleaving clause, stated by the KJV only in the different 10:20 passage. Stable ID retained.",
+    "changes": [
+      "Removed “only” as a qualifying addition because KJV 6:14 already excludes other gods in the same passage; retained the independently supplied cleaving clause, stated by the KJV only in the different 10:20 passage. Stable ID retained."
+    ],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 6:13"
+    ]
+  },
+  {
+    "id": "passover-thou-shalt-roast-or-boil-and-roast-greek",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "accepted as written",
+    "reason": "Distinct G cooking comparison; published deuteronomy-passover-place explicitly leaves cooking terminology separate. No H inferred from the general Hebrew cooking verb.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 16:7"
+    ]
+  },
+  {
+    "id": "a-syrian-ready-to-perish-was-my-father-or-my-father-abandoned-syria-greek",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "accepted as written",
+    "reason": "KJV quotes and supplied sides exact; Hebrew/Greek verified at supplied addresses and printed verse labels. Distinct named-edition comparison or material Q; interpretation limits retained.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 26:5"
+    ]
+  },
+  {
+    "id": "confirmeth-not-all-the-words-of-this-law-hebrew-has-no-all",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "held",
+    "reason": "Held: the supplied Hebrew lacks an explicit “all”, but “the words of this law” can carry the same total sense. No demonstrated meaning difference supports H under the workflow. Needs owner only if a wording-only H exception is desired; no such ruling has been supplied. Greek agrees on “all”, so no G fallback.",
+    "changes": [],
+    "operation": "none",
+    "tags": [
+      "H"
+    ],
+    "appliesTo": [
+      "Deuteronomy 27:26"
+    ]
+  },
+  {
+    "id": "moses-went-and-spake-or-moses-finished-speaking-greek",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Made the proposed backward reference conditional rather than treating the speech referent as settled.",
+    "changes": [
+      "Made the proposed backward reference conditional rather than treating the speech referent as settled."
+    ],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 31:1"
+    ]
+  },
+  {
+    "id": "bounds-by-the-number-of-the-children-of-israel-or-of-the-angels-of-god-greek",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "accepted as written",
+    "reason": "KJV quotes and supplied sides exact; Hebrew/Greek verified at supplied addresses and printed verse labels. Distinct named-edition comparison or material Q; interpretation limits retained.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 32:8"
+    ]
+  },
+  {
+    "id": "to-me-belongeth-vengeance-or-in-the-day-of-vengeance-i-will-recompense-greek",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "accepted as written",
+    "reason": "KJV quotes and supplied sides exact; Hebrew/Greek verified at supplied addresses and printed verse labels. Distinct named-edition comparison or material Q; interpretation limits retained.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 32:35"
+    ]
+  },
+  {
+    "id": "rejoice-o-ye-nations-greek-adds-let-all-the-angels-of-god-worship-him",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "accepted as written",
+    "reason": "KJV quotes and supplied sides exact; Hebrew/Greek verified at supplied addresses and printed verse labels. Distinct named-edition comparison or material Q; interpretation limits retained.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 32:43"
+    ]
+  },
+  {
+    "id": "from-his-right-hand-went-a-fiery-law-or-angels-with-him-greek",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "accepted as written",
+    "reason": "KJV quotes and supplied sides exact; Hebrew/Greek verified at supplied addresses and printed verse labels. Distinct named-edition comparison or material Q; interpretation limits retained.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 33:2"
+    ]
+  },
+  {
+    "id": "he-buried-him-or-they-buried-him-greek",
+    "file": "deuteronomy-1-34-records.json",
+    "decision": "accepted as written",
+    "reason": "Distinct singular/plural G comparison beside the narrator/custody record and the separate burier-identity Q; neither text identifies its burier.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "G"
+    ],
+    "appliesTo": [
+      "Deuteronomy 34:6"
+    ]
+  }
+]
