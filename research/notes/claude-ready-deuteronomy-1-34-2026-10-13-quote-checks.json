@@ -1008,11 +1008,12 @@
     }
   ],
   "policy": "Every explicit KJV-labelled text quotation and side verified against its packaged verse; all original-language fragments verified with supplied addresses and printed labels. NFC and whitespace normalization, markup removal only for quote matching. TR word comparisons separately ignore case/accents/punctuation with the Jude spelling difference stated. WLC Deuteronomy29:25 mapped to KJV29:26. All supplied language pages fetched this run, rate-limited pages retried. No independent research or draft edits.",
-  "needsOwner": [
+  "needsOwner": [],
+  "ownerRulings": [
     {
-      "id": "confirmeth-not-all-the-words-of-this-law-hebrew-has-no-all",
-      "question": "Whether a wording-only H exception should be allowed when the supplied wording can carry the same meaning. Until a direct ruling or demonstrated meaning difference is supplied, held.",
-      "reason": "Held: the supplied Hebrew lacks an explicit “all”, but “the words of this law” can carry the same total sense. No demonstrated meaning difference supports H under the workflow. Needs owner only if a wording-only H exception is desired; no such ruling has been supplied. Greek agrees on “all”, so no G fallback."
+      "date": "2026-10-13",
+      "source": "Direct owner message in this chat",
+      "text": "H is not allowed for a wording-only difference where the Hebrew can carry the same meaning. Keep confirmeth-not-all-the-words-of-this-law-hebrew-has-no-all held and do not publish it. The standing test stands: H needs a shown difference in meaning."
     }
   ]
 }

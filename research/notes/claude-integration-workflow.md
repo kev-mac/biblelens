@@ -51,3 +51,9 @@ List research/claude-drafts/*-records.json. A batch is READY only when its match
 A proper name qualifies for H when the Hebrew name is made of ordinary words whose meaning the KJV's name does not carry, provided the record states that the place or person may be the same. A difference of spelling or form alone does not qualify.
 
 The owner directly accepts `red-sea-or-sea-of-suph-hebrew` as written under this ruling. This instruction was supplied directly by the owner in chat, not adopted from a researcher note.
+
+## Wording-only differences and H — direct owner ruling, 2026-10-13
+
+H is not allowed for a wording-only difference where the Hebrew can carry the same meaning. Keep confirmeth-not-all-the-words-of-this-law-hebrew-has-no-all held and do not publish it. The standing test stands: H needs a shown difference in meaning.
+
+This ruling was supplied directly by the owner in chat. It does not permit a wording-only exception to H and resolves the Deuteronomy 27:26 owner question; the record stays held.

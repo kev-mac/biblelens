@@ -61,7 +61,7 @@
     "id": "confirmeth-not-all-the-words-of-this-law-hebrew-has-no-all",
     "file": "deuteronomy-1-34-records.json",
     "decision": "held",
-    "reason": "Held: the supplied Hebrew lacks an explicit “all”, but “the words of this law” can carry the same total sense. No demonstrated meaning difference supports H under the workflow. Needs owner only if a wording-only H exception is desired; no such ruling has been supplied. Greek agrees on “all”, so no G fallback.",
+    "reason": "Held under the direct owner ruling of 2026-10-13: the Hebrew can carry the same total meaning despite lacking an explicit word for “all”. Wording alone does not qualify for H; a shown meaning difference is required. Do not publish this record. Owner question resolved; no wording-only exception allowed.",
     "changes": [],
     "operation": "none",
     "tags": [
@@ -69,7 +69,13 @@
     ],
     "appliesTo": [
       "Deuteronomy 27:26"
-    ]
+    ],
+    "priorReason": "Held: the supplied Hebrew lacks an explicit “all”, but “the words of this law” can carry the same total sense. No demonstrated meaning difference supports H under the workflow. Needs owner only if a wording-only H exception is desired; no such ruling has been supplied. Greek agrees on “all”, so no G fallback.",
+    "ownerRuling": {
+      "date": "2026-10-13",
+      "source": "Direct owner message in this chat",
+      "text": "H is not allowed for a wording-only difference where the Hebrew can carry the same meaning. Keep confirmeth-not-all-the-words-of-this-law-hebrew-has-no-all held and do not publish it. The standing test stands: H needs a shown difference in meaning."
+    }
   },
   {
     "id": "moses-went-and-spake-or-moses-finished-speaking-greek",
