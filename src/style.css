@@ -85,12 +85,12 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
   font:400 var(--summary-size,20px)/1.6 var(--serif);
 }
 .comparison-summary,.comparison-cell .comparison-summary,.study-tldr .comparison-summary,.commentary-card .comparison-summary,.evidence-result .comparison-summary{
-  font:400 calc(var(--chapter-size,19px) - 1px)/1.85 system-ui;
+  font:400 calc(var(--chapter-size,19px) - 1px - 1pt)/1.85 system-ui;
   color:var(--ink);
   border:1px solid var(--line);
   border-radius:6px;
   background:var(--soft);
-  padding:12px 16px;
+  padding:8px 10px;
   margin:6px 0 12px;
 }
 
@@ -103,7 +103,7 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 .verse-comparison .comparison-summary{background:var(--summary-tint,#edf3ee);color:var(--summary-ink,#24352d);border-color:color-mix(in srgb,var(--summary-ink,#24352d) 24%,var(--summary-tint,#edf3ee))}
 .comparison-tabs{display:flex;flex-wrap:wrap;gap:7px;margin:2px 0 10px}
 .comparison-tabs .comparison-tab{border:1px solid transparent;cursor:pointer;font:600 13px/1 system-ui;padding:0;width:32px;height:32px;min-height:32px;flex:0 0 32px;display:grid;place-items:center;border-radius:4px;text-align:center}
-.comparison-tab[aria-pressed="true"]{outline:2px solid var(--green);outline-offset:2px;font-weight:700}
+.comparison-tab[aria-pressed="true"]{outline:1px solid var(--line);outline-offset:2px;font-weight:700}
 .comparison-panel[hidden]{display:none}
 .comparison-panel+.comparison-panel{margin-top:16px}
 .comparison-tab.plain,body.dark .comparison-tab.plain{background:#edf3ee;color:#24352d}
@@ -203,3 +203,13 @@ mark.side-quote{color:inherit;background:rgba(255,172,74,.24);border-radius:2px}
 .verse-comparison[data-tone="question"]{--summary-tint:#e4ebcb;--summary-ink:#435023}
 .agreement.question,body.dark .agreement.question{background:#e4ebcb;color:#435023}
 .category-question{display:inline-flex;align-items:center;justify-content:center;min-width:28px;min-height:28px;border-radius:5px;background:#e4ebcb;color:#435023;margin-right:8px}
+
+/* Targeted scripture uses the same fill as its comparison icon. */
+mark.side-quote[data-tone="history"]{background:#f8e8c3}
+mark.side-quote[data-tone="contradictions"]{background:#fbe4d2}
+mark.side-quote[data-tone="science"]{background:#e6f5ed}
+mark.side-quote[data-tone="hebrew"]{background:#f5e4bf}
+mark.side-quote[data-tone="greek"]{background:#ebe0f5}
+mark.side-quote[data-tone="violation"]{background:#f9ded8}
+mark.side-quote[data-tone="question"]{background:#e4ebcb}
+mark.side-quote[data-tone="context"]{background:#e5edf3}

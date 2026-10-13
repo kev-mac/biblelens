@@ -12,7 +12,7 @@ const context={readingBook:0,readingChapter:1,esc:String,
 vm.createContext(context);
 const cacheCode=source.slice(source.indexOf('const comparisonCache='),source.indexOf('function scienceDetails'));
 const rendererCode=source.slice(source.indexOf('function comparisonCell('),source.indexOf("document.addEventListener('click'"));
-vm.runInContext(cacheCode+'\nfunction comparisonCitations(){return "<div class=summary-citations>Citations</div>"} function scienceDetails(){return ""} function alternativeReadings(){return ""}\n'+rendererCode+'\nthis.render=comparisonCell;this.toggle=selectComparison;this.visible=visibleComparison;this.cache=comparisonCache;',context);
+vm.runInContext(cacheCode+'\nfunction refreshVerseHighlights(){} function comparisonCitations(){return "<div class=summary-citations>Citations</div>"} function scienceDetails(){return ""} function alternativeReadings(){return ""}\n'+rendererCode+'\nthis.render=comparisonCell;this.toggle=selectComparison;this.visible=visibleComparison;this.cache=comparisonCache;',context);
 for(const mode of ['history','contradictions','science'])context.cache.set(`0:1:kjv:${mode}`,{items:[
  {verse:1,status:'Disagrees',title:mode,summary:mode+' discrepancy',text:'Reason',sources:[]},
  ...(mode==='contradictions'?[]:[{verse:1,status:'Agrees',summary:'Agreement',sources:[]},{verse:1,status:'Context',summary:'Background',sources:[]}])
