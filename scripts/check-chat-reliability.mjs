@@ -6,6 +6,10 @@ const cases=[
  ['Did Moses kill anyone in Exodus?','#read/1/2','slew the Egyptian'],
  ['Who did Moses kill?','#read/1/2','slew the Egyptian'],
  ['Did Moses slay an Egyptian?','#read/1/2','slew the Egyptian'],
+ ['Why was Cain afraid to go to Nod?','#read/0/4','every one that findeth me shall slay me'],
+ ['Who was Cain afraid would kill him?','#read/0/4','every one that findeth me shall slay me'],
+ ['What was Cain\'s punishment for killing Abel? Was he afraid?','#read/0/4','every one that findeth me shall slay me'],
+ ['Who did Cain marry?','#read/0/4','Cain knew his wife'],
  ['Who did Cain kill?','#read/0/4','slew him'],
  ['Who killed Goliath in 1 Samuel?','#read/8/17','Goliath'],
  ['What was the fourth plague in Exodus?','#read/1/8','flies'],
@@ -21,11 +25,14 @@ for(const [question,url,words]of cases){const sources=await ctx.gather(question,
 assert.deepEqual(Array.from(ctx.books('Explain 1 John 3:16'),b=>b.id),[61]);
 const normal=await ctx.gather('Did Moses kill anyone in Exodus?',4,31,[]),broader=await ctx.gather('Did Moses kill anyone in Exodus?',4,31,[],'',true);assert(broader.reduce((n,s)=>n+s.text.length,0)>normal.reduce((n,s)=>n+s.text.length,0));
 const follow=await ctx.gather('who did moses kill? did he kill a soldier beating a slave?',4,31,[],'who did moses kill?');assert(follow.some(s=>s.url==='#read/1/2'));
+const cainFollow=await ctx.gather("what was cain's punishment for killing abel? was he afraid?",0,1,[],"what was cain's punishment for killing abel?");assert(cainFollow.some(s=>s.url==='#read/0/4'&&s.text.includes('every one that findeth me shall slay me')));
 const old=globalThis.fetch;let calls=0,verifications=0;
 try{
  globalThis.fetch=async(url,options)=>{calls++;const payload=JSON.parse(options.body),verify=payload.text.format.name==='answer_verification';if(verify)verifications++;const answer=verify?{supported:false,reason:'Unsupported book-wide denial'}:{summary:'Moses is not recorded as killing anyone in Exodus.',details:'An unsupported denial [1].',source_ids:[1]};return new Response(JSON.stringify({output:[{content:[{type:'output_text',text:JSON.stringify(answer)}]}]}));};
  const response=await worker.fetch(new Request('https://scripture.test/api/chat',{method:'POST',headers:{'oai-authenticated-user-id':'reliability-negative','content-type':'application/json'},body:JSON.stringify({message:'Did Moses kill anyone in Exodus?'})}),{OPENAI_API_KEY:'fixture-only'},{}),answer=await response.json();assert.equal(response.status,200);assert(answer.answer.startsWith('I couldn’t locate'));assert(!answer.answer.includes('not recorded'));assert.equal(calls,2);assert.equal(verifications,0);assert(answer.details.includes('Passages searched:'));assert(answer.sources.some(s=>s.url==='#read/1/2'));
  calls=0;verifications=0;globalThis.fetch=async(url,options)=>{calls++;const payload=JSON.parse(options.body),verify=payload.text.format.name==='answer_verification';if(verify)verifications++;return new Response(JSON.stringify({output:[{content:[{type:'output_text',text:JSON.stringify(verify?{supported:false,reason:'Claim not supported'}:{summary:'An unsupported positive claim.',details:'Claim [1].',source_ids:[1]})}]}]}));};
  const denied=await worker.fetch(new Request('https://scripture.test/api/chat',{method:'POST',headers:{'oai-authenticated-user-id':'reliability-unsupported','content-type':'application/json'},body:JSON.stringify({message:'Who did Moses kill?'})}),{OPENAI_API_KEY:'fixture-only'},{});assert((await denied.json()).answer.startsWith('I couldn’t locate'));assert.equal(calls,4);assert.equal(verifications,2);
+ calls=0;verifications=0;globalThis.fetch=async(url,options)=>{calls++;const payload=JSON.parse(options.body),verify=payload.text.format.name==='answer_verification';if(verify)verifications++;const result=verify?{supported:true,reason:'Genesis 4 mentions an unnamed wife'}:{summary:'Cain married a woman whose name is not mentioned in the supplied passage.',details:'Genesis 4:17 mentions his wife without identifying her name or family relationship [1].',source_ids:[1]};return new Response(JSON.stringify({output:[{content:[{type:'output_text',text:JSON.stringify(result)}]}]}));};
+ const bounded=await worker.fetch(new Request('https://scripture.test/api/chat',{method:'POST',headers:{'oai-authenticated-user-id':'reliability-unnamed','content-type':'application/json'},body:JSON.stringify({message:'Who did Cain marry?'})}),{OPENAI_API_KEY:'fixture-only'},{});assert((await bounded.json()).answer.includes('whose name is not mentioned'));assert.equal(calls,2);assert.equal(verifications,1);
 }finally{globalThis.fetch=old;}
 console.log(`PASS: ${cases.length} known-passage questions, named-book/numbered-book scope, follow-ups, broader retry, rejected negatives and unsupported positives. Model answers in this check are fixtures; hosted generated-answer tests are separate.`);

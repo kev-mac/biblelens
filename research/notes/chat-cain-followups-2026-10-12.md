@@ -1,0 +1,7 @@
+# Cain Chat follow-up correction — 2026-10-12
+
+Owner screenshots show punishment -> "was he afraid?" and "who did Cain marry?" falling back. Packaged retrieval includes Genesis 4:14–17 for those questions; this is not a missing-Bible-text problem. A broad lexical rejection matched "not mentioned" and other valid limited statements before model verification. Narrowed this guard to completeness claims and unsupported killing denials; all other answers still require citation validation and model evidence review. A fixture confirms an unnamed-wife answer reaches verification instead of forced fallback, while unsupported killing denials remain withheld.
+
+Added fear/afraid word family and guidance to accept faithful emotional paraphrases supported by a speaker's words. Added generic question-premise/event-order correction, separate punishment from protection, and reject unqualified inferred identities/motives/chronology. Relevant primary text: Genesis 4:14 expresses fear of whoever finds Cain killing him, 4:15 describes protection, 4:16 places settlement in Nod afterward, 4:17 mentions his unnamed wife. This does not establish attackers' identities or wife's kinship. No new editorial annotation or external research.
+
+18 deterministic known-passage questions plus follow-up/withholding/bounded-uncertainty checks pass. All existing checks pass. Annotation data unchanged. Actual hosted replies to be recorded after publication; model checks are fallible.
