@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 427,
+    "evidenceRecords": 451,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
     "chaptersWithAnnotations": 394,
-    "annotatedVerses": 2727
+    "annotatedVerses": 2741
   },
   "byBook": [
     {
@@ -40,25 +40,25 @@
       "book": "Deuteronomy",
       "chapters": 34,
       "chaptersWithAnnotations": 34,
-      "annotatedVerses": 343
+      "annotatedVerses": 351
     },
     {
       "book": "Joshua",
       "chapters": 24,
       "chaptersWithAnnotations": 23,
-      "annotatedVerses": 208
+      "annotatedVerses": 209
     },
     {
       "book": "Judges",
       "chapters": 21,
       "chaptersWithAnnotations": 19,
-      "annotatedVerses": 104
+      "annotatedVerses": 108
     },
     {
       "book": "Ruth",
       "chapters": 4,
       "chaptersWithAnnotations": 3,
-      "annotatedVerses": 15
+      "annotatedVerses": 16
     },
     {
       "book": "1 Samuel",
@@ -4367,12 +4367,14 @@
       "annotationIds": [
         "numbers-rock-instructions-differ",
         "numbers-refuge-protection-and-limits",
+        "the-host-of-heaven-divided-unto-all-nations-for-what",
         "study-seen"
       ],
       "annotatedVerses": [
         12,
         15,
         16,
+        19,
         21,
         22,
         41,
@@ -4381,7 +4383,8 @@
       ],
       "modes": [
         "contradictions",
-        "history"
+        "history",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -4414,9 +4417,12 @@
       "chapter": 6,
       "annotationIds": [
         "deuteronomy-oaths-and-matthew",
-        "deuteronomy-tefillin-material-evidence"
+        "deuteronomy-tefillin-material-evidence",
+        "love-god-with-heart-soul-might-or-with-mind-soul-strength-greek",
+        "serve-him-or-him-only-shalt-thou-serve-greek"
       ],
       "annotatedVerses": [
+        5,
         6,
         7,
         8,
@@ -4692,7 +4698,8 @@
       "chapter": 16,
       "annotationIds": [
         "exodus-passover-memory",
-        "deuteronomy-passover-place"
+        "deuteronomy-passover-place",
+        "passover-thou-shalt-roast-or-boil-and-roast-greek"
       ],
       "annotatedVerses": [
         1,
@@ -4946,16 +4953,19 @@
       "bookId": 4,
       "chapter": 26,
       "annotationIds": [
-        "numbers-levite-income-and-contribution"
+        "numbers-levite-income-and-contribution",
+        "a-syrian-ready-to-perish-was-my-father-or-my-father-abandoned-syria-greek"
       ],
       "annotatedVerses": [
+        5,
         12,
         13,
         14,
         15
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5076,9 +5086,11 @@
       "annotationIds": [
         "deuteronomy-presence-promise-and-warning",
         "deuteronomy-law-custody-and-reading",
-        "deuteronomy-moses-capacity-and-vigor"
+        "deuteronomy-moses-capacity-and-vigor",
+        "moses-went-and-spake-or-moses-finished-speaking-greek"
       ],
       "annotatedVerses": [
+        1,
         2,
         3,
         6,
@@ -5106,18 +5118,25 @@
       "bookId": 4,
       "chapter": 32,
       "annotationIds": [
-        "deuteronomy-song-physical-imagery"
+        "deuteronomy-song-physical-imagery",
+        "bounds-by-the-number-of-the-children-of-israel-or-of-the-angels-of-god-greek",
+        "to-me-belongeth-vengeance-or-in-the-day-of-vengeance-i-will-recompense-greek",
+        "rejoice-o-ye-nations-greek-adds-let-all-the-angels-of-god-worship-him"
       ],
       "annotatedVerses": [
         1,
         2,
         4,
+        8,
         14,
+        35,
         42,
+        43,
         44
       ],
       "modes": [
-        "science"
+        "science",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5126,17 +5145,21 @@
       "bookId": 4,
       "chapter": 33,
       "annotationIds": [
-        "deuteronomy-levi-blessing-and-rebuke"
+        "deuteronomy-levi-blessing-and-rebuke",
+        "from-his-right-hand-went-a-fiery-law-or-angels-with-him-greek",
+        "the-blessing-of-the-tribes-why-is-simeon-not-named"
       ],
       "annotatedVerses": [
         1,
+        2,
         8,
         9,
         10,
         11
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5146,7 +5169,9 @@
       "chapter": 34,
       "annotationIds": [
         "deuteronomy-law-custody-and-reading",
-        "deuteronomy-moses-capacity-and-vigor"
+        "deuteronomy-moses-capacity-and-vigor",
+        "he-buried-him-or-they-buried-him-greek",
+        "he-buried-him-who-buried-moses"
       ],
       "annotatedVerses": [
         4,
@@ -5158,7 +5183,8 @@
       ],
       "modes": [
         "history",
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5258,17 +5284,20 @@
       "bookId": 5,
       "chapter": 5,
       "annotationIds": [
-        "joshua-wilderness-circumcision"
+        "joshua-wilderness-circumcision",
+        "captain-of-the-host-of-the-lord-who-is-he"
       ],
       "annotatedVerses": [
         2,
         3,
         5,
         7,
-        8
+        8,
+        14
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5277,7 +5306,8 @@
       "bookId": 5,
       "chapter": 6,
       "annotationIds": [
-        "early-conquest"
+        "early-conquest",
+        "rahabs-house-upon-the-wall-how-was-it-standing-after-the-wall-fell"
       ],
       "annotatedVerses": [
         17,
@@ -5289,7 +5319,8 @@
         25
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5376,7 +5407,8 @@
       "chapter": 10,
       "annotationIds": [
         "early-conquest",
-        "joshua-prolonged-daylight"
+        "joshua-prolonged-daylight",
+        "the-book-of-jasher-what-was-it-and-how-much-of-the-sun-passage-is-from-it"
       ],
       "annotatedVerses": [
         1,
@@ -5400,7 +5432,8 @@
       ],
       "modes": [
         "contradictions",
-        "science"
+        "science",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5703,7 +5736,8 @@
         "shechem-burial-land-purchaser",
         "balak-war-against-israel",
         "joshua-covenant-assembly-shechem-or-shiloh",
-        "jacob-shechem-portion-bought-or-taken"
+        "jacob-shechem-portion-bought-or-taken",
+        "joshua-wrote-these-words-in-the-book-of-the-law-of-god-which-words-in-which-book"
       ],
       "annotatedVerses": [
         1,
@@ -5717,7 +5751,8 @@
         32
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5728,9 +5763,11 @@
       "annotationIds": [
         "early-conquest",
         "moses-father-in-law-names",
-        "hormah-named-in-the-days-of-moses-or-by-judah-and-simeon"
+        "hormah-named-in-the-days-of-moses-or-by-judah-and-simeon",
+        "after-the-death-of-joshua-which-events-of-judges-1-follow-it"
       ],
       "annotatedVerses": [
+        1,
         8,
         16,
         17,
@@ -5750,7 +5787,8 @@
         35
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5880,19 +5918,22 @@
       "annotationIds": [
         "gideon-seventy-sons-count",
         "midian-after-numbers-31",
-        "midianites-and-ishmaelites"
+        "midianites-and-ishmaelites",
+        "gideons-ephod-what-was-it-and-what-did-israel-do-with-it"
       ],
       "annotatedVerses": [
         10,
         12,
         24,
         26,
+        27,
         28,
         30,
         31
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5901,17 +5942,20 @@
       "bookId": 6,
       "chapter": 9,
       "annotationIds": [
-        "gideon-seventy-sons-count"
+        "gideon-seventy-sons-count",
+        "god-sent-an-evil-spirit-between-abimelech-and-shechem-what-was-it"
       ],
       "annotatedVerses": [
         2,
         5,
         18,
+        23,
         24,
         56
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -5946,7 +5990,8 @@
         "deuteronomy-edom-passage-and-provisions",
         "jephthah-chemosh-and-ammon",
         "ammonite-land-taken-or-untouched",
-        "balak-war-against-israel"
+        "balak-war-against-israel",
+        "jephthah-did-with-her-according-to-his-vow-what-was-done-to-his-daughter"
       ],
       "annotatedVerses": [
         12,
@@ -5959,10 +6004,12 @@
         22,
         24,
         25,
-        32
+        32,
+        39
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -6181,7 +6228,10 @@
         "early-ruth-shoe",
         "ruth-kinsman-if-thou-or-he-will-not-redeem",
         "ruth-buy-of-ruth-or-acquire-ruth",
-        "ruth-naomi-land-sells-or-was-given"
+        "ruth-naomi-land-sells-or-was-given",
+        "naomi-selleth-elimelechs-land-how-was-it-hers-to-sell",
+        "redeeming-the-field-and-raising-the-name-of-the-dead-what-joined-them",
+        "obed-born-to-raise-up-the-name-of-the-dead-in-whose-line-was-he-counted"
       ],
       "annotatedVerses": [
         3,
@@ -6190,11 +6240,13 @@
         7,
         8,
         9,
-        10
+        10,
+        17
       ],
       "modes": [
         "history",
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },

@@ -1,0 +1,947 @@
+{
+  "checks": [
+    {
+      "id": "naomi-selleth-elimelechs-land-how-was-it-hers-to-sell",
+      "batch": "ruth-1-4-q",
+      "english": [
+        {
+          "ref": "Ruth 1:3",
+          "quote": "And Elimelech Naomi's husband died; and she was left, and her two sons.",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 1:5",
+          "quote": "And Mahlon and Chilion died also both of them; and the woman was left of her two sons and her husband.",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:3",
+          "quote": "And he said unto the kinsman, Naomi, that is come again out of the country of Moab, selleth a parcel of land, which was our brother Elimelech's:",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:5",
+          "quote": "What day thou buyest the field of the hand of Naomi, thou must buy it also of Ruth the Moabitess, the wife of the dead",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:9",
+          "quote": "And Boaz said unto the elders, and unto all the people, Ye are witnesses this day, that I have bought all that was Elimelech's, and all that was Chilion's and Mahlon's, of the hand of Naomi.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 27:8",
+          "quote": "If a man die, and have no son, then ye shall cause his inheritance to pass unto his daughter",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 27:9",
+          "quote": "And if he have no daughter, then ye shall give his inheritance unto his brethren.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 27:10",
+          "quote": "And if he have no brethren, then ye shall give his inheritance unto his father's brethren.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 27:11",
+          "quote": "And if his father have no brethren, then ye shall give his inheritance unto his kinsman that is next to him of his family, and he shall possess it",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 25:25",
+          "quote": "If thy brother be waxen poor, and hath sold away some of his possession, and if any of his kin come to redeem it, then shall he redeem that which his brother sold.",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 8:3",
+          "quote": "she went forth to cry unto the king for her house and for her land",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 8:6",
+          "quote": "Restore all that was hers, and all the fruits of the field since the day that she left the land, even until now",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "חֶלְקַת֙ הַשָּׂדֶ֔ה אֲשֶׁ֥ר לְאָחִ֖ינוּ לֶאֱלִימֶ֑לֶךְ מָכְרָ֣ה נָעֳמִ֔י",
+          "stated": {
+            "chapter": 4,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/8/4/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "מִיַּ֖ד נָעֳמִֽי",
+          "stated": {
+            "chapter": 4,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/8/4/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τὴν μερίδα τοῦ ἀγροῦ ἥ ἐστι τοῦ ἀδελφοῦ ἡμῶν τοῦ Ἐλιμέλεχ, ἣ δέδοται Νωεμὶν",
+          "stated": {
+            "chapter": 4,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/RUT04.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐκ χειρὸς Νωεμίν",
+          "stated": {
+            "chapter": 4,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/RUT04.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ruth 4:3",
+          "quote": "selleth a parcel of land, which was our brother Elimelech's",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ruth 4:9",
+          "quote": "of the hand of Naomi",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "early-ruth-shoe",
+          "title": "A transfer confirmed with a sandal",
+          "summary": "Ruth explains a sandal exchange as an earlier custom used to confirm redemption and transfer.",
+          "reasoning": "The narrator pauses to explain the practice, then describes witnesses recognizing Boaz's transaction. This supplies the story's own legal and social context.",
+          "scope": "The narrative is evidence for the custom as represented in Ruth, not independent archaeological verification of this transaction."
+        },
+        {
+          "id": "leviticus-jubilee-property-exceptions",
+          "title": "Jubilee return depends on the property category",
+          "summary": "Field, house and dedicated-property provisions have different return rules.",
+          "reasoning": "A universal claim that every sale is reversed at Jubilee misses the expressly named exceptions.",
+          "scope": "These are prescribed categories. Actual observance and the history of their composition require independent evidence."
+        },
+        {
+          "id": "numbers-daughters-inheritance-and-marriage",
+          "title": "Inheritance for daughters comes with a tribal marriage restriction",
+          "summary": "Daughters inherit when there is no son; a later rule restricts inheriting daughters’ marriages to their father’s tribe.",
+          "reasoning": "The grant is significant within a male-priority succession system. The marriage limitation protects tribal landholding while restricting the beneficiaries’ choice; unrestricted equal inheritance is not stated.",
+          "scope": "This describes the law and its narrative rationale. It does not establish historical enforcement, all women’s property rights or an ethical justification for the restriction."
+        },
+        {
+          "id": "ruth-buy-of-ruth-or-acquire-ruth",
+          "title": "The kinsman’s duty: buy the field “of Ruth”, or acquire Ruth?",
+          "summary": "In the KJV Boaz tells the kinsman he must buy the field from Ruth as well as from Naomi. In the Septuagint he must also acquire Ruth herself.",
+          "reasoning": "In the KJV wording of 4:5 the thing bought is the field, and Ruth is a second seller. In the Greek the kinsman must acquire two things: the field and “her”. Only the Greek wording of 4:5 states the duty that Boaz then says he has carried out in 4:10.",
+          "scope": "The KJV follows the Hebrew words “and from Ruth” with no separate “her”; this is a Greek difference, not a claim that the KJV mistranslates the Hebrew. The Hebrew edition prints two forms of the verb (written and read); that marking is quoted for completeness and nothing is built on it. In every version the kinsman declines in 4:6 and Boaz marries Ruth. The Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition, and the Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries."
+        },
+        {
+          "id": "ruth-naomi-land-sells-or-was-given",
+          "title": "Elimelech’s field: Naomi “selleth” it, or it “was given” to her?",
+          "summary": "The KJV says Naomi “selleth” the parcel of land. The Septuagint says the land “has been given” to Naomi, with no word of selling in the verse.",
+          "reasoning": "The two texts say different things about the same field in the same sentence: in the KJV Naomi is disposing of it; in the Greek she has received it.",
+          "scope": "The Greek still has a purchase in the next verses (4:4 “buy it”, 4:5 “from the hand of Naomi”), so both versions end with the field changing hands; the difference is confined to what 4:3 says. Neither text explains how a widow came to hold the land. The Hebrew verb form is not made a separate finding: the KJV’s “selleth” is within what it can mean. The Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition, and the Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "selleth a parcel of land, which was our brother Elimelech's",
+          "matches": [
+            "Ruth 4:3"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "selleth a parcel of land",
+          "matches": [
+            "Ruth 4:3"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "of the hand of Naomi",
+          "matches": [
+            "Ruth 4:5",
+            "Ruth 4:9"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of the hand of Naomi",
+          "matches": [
+            "Ruth 4:5",
+            "Ruth 4:9"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "has been given",
+          "matches": [],
+          "kind": "discussed word, researcher search term, or English gloss of verified Greek; not KJV excerpt"
+        },
+        {
+          "field": "scope",
+          "quote": "hers",
+          "matches": [
+            "2 Kings 8:6"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "has been given",
+          "matches": [],
+          "kind": "discussed word, researcher search term, or English gloss of verified Greek; not KJV excerpt"
+        },
+        {
+          "field": "scope",
+          "quote": "selleth",
+          "matches": [
+            "Ruth 4:3"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Elimelech",
+          "matches": [
+            "Ruth 1:3",
+            "Ruth 4:3",
+            "Ruth 4:9"
+          ],
+          "kind": "KJV substring"
+        }
+      ],
+      "sideValidation": "All supplied sides exact and within refs; multiple A entries retained.",
+      "sourceLabelValidation": "Named supplied book/edition address and printed verse label verified; no numbering shift. Written/read forms at Ruth 4:5 do not overlap the quoted closing phrase.",
+      "decision": "corrected and accepted"
+    },
+    {
+      "id": "redeeming-the-field-and-raising-the-name-of-the-dead-what-joined-them",
+      "batch": "ruth-1-4-q",
+      "english": [
+        {
+          "ref": "Ruth 2:1",
+          "quote": "a kinsman of her husband's, a mighty man of wealth, of the family of Elimelech",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 2:20",
+          "quote": "The man is near of kin unto us, one of our next kinsmen",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 3:9",
+          "quote": "spread therefore thy skirt over thine handmaid; for thou art a near kinsman",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 3:13",
+          "quote": "if he will perform unto thee the part of a kinsman, well; let him do the kinsman's part: but if he will not do the part of a kinsman to thee, then will I do the part of a kinsman to thee",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:3",
+          "quote": "which was our brother Elimelech",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:4",
+          "quote": "And he said, I will redeem it.",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:5",
+          "quote": "Then said Boaz, What day thou buyest the field of the hand of Naomi, thou must buy it also of Ruth the Moabitess, the wife of the dead, to raise up the name of the dead upon his inheritance.",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:6",
+          "quote": "And the kinsman said, I cannot redeem it for myself, lest I mar mine own inheritance: redeem thou my right to thyself; for I cannot redeem it.",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:10",
+          "quote": "Moreover Ruth the Moabitess, the wife of Mahlon, have I purchased to be my wife, to raise up the name of the dead upon his inheritance",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 25:25",
+          "quote": "If thy brother be waxen poor, and hath sold away some of his possession, and if any of his kin come to redeem it, then shall he redeem that which his brother sold.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 25:5",
+          "quote": "If brethren dwell together, and one of them die, and have no child, the wife of the dead shall not marry without unto a stranger: her husband's brother shall go in unto her, and take her to him to wife, and perform the duty of an husband's brother unto her.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 25:6",
+          "quote": "And it shall be, that the firstborn which she beareth shall succeed in the name of his brother which is dead, that his name be not put out of Israel.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 25:7",
+          "quote": "My husband's brother refuseth to raise up unto his brother a name in Israel",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 38:8",
+          "quote": "And Judah said unto Onan, Go in unto thy brother's wife, and marry her, and raise up seed to thy brother.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּ֥י גֹאֵ֖ל אָֽתָּה",
+          "stated": {
+            "chapter": 3,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/8/3/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "לְהָקִ֥ים שֵׁם־הַמֵּ֖ת עַל־נַחֲלָתֹֽו",
+          "stated": {
+            "chapter": 4,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/8/4/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וּבָ֤א גֹֽאֲלֹו֙ הַקָּרֹ֣ב אֵלָ֔יו",
+          "stated": {
+            "chapter": 25,
+            "verse": 25
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/3/25/",
+              "verse": 25
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "יְבָמָהּ֙ יָבֹ֣א עָלֶ֔יהָ",
+          "stated": {
+            "chapter": 25,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/25/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "לְהָקִ֨ים לְאָחִ֥יו שֵׁם֙ בְּיִשְׂרָאֵ֔ל",
+          "stated": {
+            "chapter": 25,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/25/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὅτι ἀγχιστεὺς εἶ σύ",
+          "stated": {
+            "chapter": 3,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/RUT03.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ αὐτὴν κτήσασθαί σε δεῖ, ὥστε ἀναστῆσαι τὸ ὄνομα τοῦ τεθνηκότος ἐπὶ τῆς κληρονομίας αὐτοῦ",
+          "stated": {
+            "chapter": 4,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/RUT04.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὁ ἀδελφὸς τοῦ ἀνδρὸς αὐτῆς εἰσελεύσεται πρὸς αὐτὴν",
+          "stated": {
+            "chapter": 25,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/DEU25.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ruth 4:5",
+          "quote": "thou must buy it also of Ruth the Moabitess, the wife of the dead, to raise up the name of the dead upon his inheritance",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ruth 4:6",
+          "quote": "I cannot redeem it for myself, lest I mar mine own inheritance",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "early-ruth-shoe",
+          "title": "A transfer confirmed with a sandal",
+          "summary": "Ruth explains a sandal exchange as an earlier custom used to confirm redemption and transfer.",
+          "reasoning": "The narrator pauses to explain the practice, then describes witnesses recognizing Boaz's transaction. This supplies the story's own legal and social context.",
+          "scope": "The narrative is evidence for the custom as represented in Ruth, not independent archaeological verification of this transaction."
+        },
+        {
+          "id": "leviticus-brothers-wife-and-levirate",
+          "title": "A brother’s wife prohibition and a conditional marriage duty",
+          "summary": "Leviticus prohibits relations with a brother’s wife; Deuteronomy requires marriage in a specified widowhood case.",
+          "reasoning": "The conditions support reading the widowhood duty as a limited exception to the kinship prohibition. Leviticus 18:16 does not spell out that exception, so the relationship between these laws still needs interpretation.",
+          "scope": "This identifies the textual tension and a possible contextual reading. It does not prove uniform historical practice, settle later legal applications or justify the arrangement by present-day standards."
+        },
+        {
+          "id": "leviticus-jubilee-property-exceptions",
+          "title": "Jubilee return depends on the property category",
+          "summary": "Field, house and dedicated-property provisions have different return rules.",
+          "reasoning": "A universal claim that every sale is reversed at Jubilee misses the expressly named exceptions.",
+          "scope": "These are prescribed categories. Actual observance and the history of their composition require independent evidence."
+        },
+        {
+          "id": "ruth-kinsman-if-thou-or-he-will-not-redeem",
+          "title": "Boaz to the kinsman: “if thou wilt not redeem” or “if he will not redeem”?",
+          "summary": "The KJV has Boaz say to the kinsman “if thou wilt not redeem it”. The Hebrew verb is in the third person: “if he will not redeem”. The Septuagint agrees with the KJV.",
+          "reasoning": "In the Hebrew the first verb is “thou wilt redeem” and the second, four words later, is “he will redeem”: two different forms side by side. The KJV prints “thou” for both. The Greek also has “thou” both times, so the Greek is not a difference from the KJV here.",
+          "scope": "The sense of the conversation is not in doubt: Boaz is asking the kinsman for his decision, and the kinsman answers “I will redeem it”. The record is about the wording only: the KJV’s second “thou” matches the Greek and not the Hebrew of the named editions. Whether the Hebrew “he” is a slip, or Boaz turning to the elders for a moment, is not settled by the verse. The Hebrew quoted is the Westminster Leningrad Codex digital text, with the consonants-only Aleppo-based edition as a second witness. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined, and the KJV translators’ source for their wording is not established here. English glosses in brackets are the researcher’s plain renderings, not lexicon entries. The Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition."
+        },
+        {
+          "id": "ruth-buy-of-ruth-or-acquire-ruth",
+          "title": "The kinsman’s duty: buy the field “of Ruth”, or acquire Ruth?",
+          "summary": "In the KJV Boaz tells the kinsman he must buy the field from Ruth as well as from Naomi. In the Septuagint he must also acquire Ruth herself.",
+          "reasoning": "In the KJV wording of 4:5 the thing bought is the field, and Ruth is a second seller. In the Greek the kinsman must acquire two things: the field and “her”. Only the Greek wording of 4:5 states the duty that Boaz then says he has carried out in 4:10.",
+          "scope": "The KJV follows the Hebrew words “and from Ruth” with no separate “her”; this is a Greek difference, not a claim that the KJV mistranslates the Hebrew. The Hebrew edition prints two forms of the verb (written and read); that marking is quoted for completeness and nothing is built on it. In every version the kinsman declines in 4:6 and Boaz marries Ruth. The Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition, and the Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries."
+        },
+        {
+          "id": "ruth-naomi-land-sells-or-was-given",
+          "title": "Elimelech’s field: Naomi “selleth” it, or it “was given” to her?",
+          "summary": "The KJV says Naomi “selleth” the parcel of land. The Septuagint says the land “has been given” to Naomi, with no word of selling in the verse.",
+          "reasoning": "The two texts say different things about the same field in the same sentence: in the KJV Naomi is disposing of it; in the Greek she has received it.",
+          "scope": "The Greek still has a purchase in the next verses (4:4 “buy it”, 4:5 “from the hand of Naomi”), so both versions end with the field changing hands; the difference is confined to what 4:3 says. Neither text explains how a widow came to hold the land. The Hebrew verb form is not made a separate finding: the KJV’s “selleth” is within what it can mean. The Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition, and the Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "to raise up the name of the dead",
+          "matches": [
+            "Ruth 4:5",
+            "Ruth 4:10"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "the wife of the dead",
+          "matches": [
+            "Ruth 4:5",
+            "Deuteronomy 25:5"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "to raise up the name of the dead upon his inheritance",
+          "matches": [
+            "Ruth 4:5",
+            "Ruth 4:10"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "I will redeem it",
+          "matches": [
+            "Ruth 4:4"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "I cannot redeem it",
+          "matches": [
+            "Ruth 4:6"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "brethren",
+          "matches": [
+            "Ruth 4:10",
+            "Deuteronomy 25:5"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "dwell together",
+          "matches": [
+            "Deuteronomy 25:5"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "husband's brother",
+          "matches": [
+            "Deuteronomy 25:5",
+            "Deuteronomy 25:7"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of the family of Elimelech",
+          "matches": [
+            "Ruth 2:1"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "our brother",
+          "matches": [
+            "Ruth 4:3"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "brethren",
+          "matches": [
+            "Ruth 4:10",
+            "Deuteronomy 25:5"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "our brother",
+          "matches": [
+            "Ruth 4:3"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "of Ruth",
+          "matches": [
+            "Ruth 4:5"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "husband's brother",
+          "matches": [
+            "Deuteronomy 25:5",
+            "Deuteronomy 25:7"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "name of the dead",
+          "matches": [
+            "Ruth 4:5",
+            "Ruth 4:10"
+          ],
+          "kind": "KJV substring"
+        }
+      ],
+      "sideValidation": "All supplied sides exact and within refs; multiple A entries retained.",
+      "sourceLabelValidation": "Named supplied book/edition address and printed verse label verified; no numbering shift. Written/read forms at Ruth 4:5 do not overlap the quoted closing phrase.",
+      "decision": "accepted as written"
+    },
+    {
+      "id": "obed-born-to-raise-up-the-name-of-the-dead-in-whose-line-was-he-counted",
+      "batch": "ruth-1-4-q",
+      "english": [
+        {
+          "ref": "Ruth 4:5",
+          "quote": "to raise up the name of the dead upon his inheritance",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:10",
+          "quote": "Moreover Ruth the Moabitess, the wife of Mahlon, have I purchased to be my wife, to raise up the name of the dead upon his inheritance, that the name of the dead be not cut off from among his brethren, and from the gate of his place: ye are witnesses this day.",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:13",
+          "quote": "So Boaz took Ruth, and she was his wife: and when he went in unto her, the Lord gave her conception, and she bare a son.",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:16",
+          "quote": "And Naomi took the child, and laid it in her bosom, and became nurse unto it.",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:17",
+          "quote": "And the women her neighbours gave it a name, saying, There is a son born to Naomi; and they called his name Obed: he is the father of Jesse, the father of David.",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:21",
+          "quote": "And Salmon begat Boaz, and Boaz begat Obed,",
+          "exact": true
+        },
+        {
+          "ref": "Ruth 4:22",
+          "quote": "And Obed begat Jesse, and Jesse begat David.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 25:6",
+          "quote": "And it shall be, that the firstborn which she beareth shall succeed in the name of his brother which is dead, that his name be not put out of Israel.",
+          "exact": true
+        },
+        {
+          "ref": "1 Chronicles 2:12",
+          "quote": "And Boaz begat Obed, and Obed begat Jesse,",
+          "exact": true
+        },
+        {
+          "ref": "Matthew 1:5",
+          "quote": "and Booz begat Obed of Ruth",
+          "exact": true
+        },
+        {
+          "ref": "Luke 3:32",
+          "quote": "which was the son of Obed, which was the son of Booz",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לְהָקִ֤ים שֵׁם־הַמֵּת֙ עַל־נַ֣חֲלָתֹ֔ו וְלֹא־יִכָּרֵ֧ת שֵׁם־הַמֵּ֛ת מֵעִ֥ם אֶחָ֖יו",
+          "stated": {
+            "chapter": 4,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/8/4/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "יֻלַּד־בֵּ֖ן לְנָעֳמִ֑י",
+          "stated": {
+            "chapter": 4,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/8/4/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וּבֹ֖עַז הֹולִ֥יד אֶת־עֹובֵֽד",
+          "stated": {
+            "chapter": 4,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/8/4/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וּבֹ֙עַז֙ הֹולִ֣יד אֶת־עֹובֵ֔ד",
+          "stated": {
+            "chapter": 2,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/13/2/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τοῦ ἀναστῆσαι τὸ ὄνομα τοῦ τεθνηκότος ἐπὶ τῆς κληρονομίας αὐτοῦ",
+          "stated": {
+            "chapter": 4,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/RUT04.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐτέχθη υἱὸς τῇ Νωεμίν",
+          "stated": {
+            "chapter": 4,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/RUT04.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ Βοὸζ ἐγέννησε τὸν Ὠβήδ",
+          "stated": {
+            "chapter": 4,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/RUT04.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ruth 4:17",
+          "quote": "There is a son born to Naomi",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ruth 4:10",
+          "quote": "to raise up the name of the dead upon his inheritance, that the name of the dead be not cut off from among his brethren",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ruth 4:21",
+          "quote": "Boaz begat Obed",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "early-ruth-shoe",
+          "title": "A transfer confirmed with a sandal",
+          "summary": "Ruth explains a sandal exchange as an earlier custom used to confirm redemption and transfer.",
+          "reasoning": "The narrator pauses to explain the practice, then describes witnesses recognizing Boaz's transaction. This supplies the story's own legal and social context.",
+          "scope": "The narrative is evidence for the custom as represented in Ruth, not independent archaeological verification of this transaction."
+        },
+        {
+          "id": "leviticus-brothers-wife-and-levirate",
+          "title": "A brother’s wife prohibition and a conditional marriage duty",
+          "summary": "Leviticus prohibits relations with a brother’s wife; Deuteronomy requires marriage in a specified widowhood case.",
+          "reasoning": "The conditions support reading the widowhood duty as a limited exception to the kinship prohibition. Leviticus 18:16 does not spell out that exception, so the relationship between these laws still needs interpretation.",
+          "scope": "This identifies the textual tension and a possible contextual reading. It does not prove uniform historical practice, settle later legal applications or justify the arrangement by present-day standards."
+        },
+        {
+          "id": "ruth-buy-of-ruth-or-acquire-ruth",
+          "title": "The kinsman’s duty: buy the field “of Ruth”, or acquire Ruth?",
+          "summary": "In the KJV Boaz tells the kinsman he must buy the field from Ruth as well as from Naomi. In the Septuagint he must also acquire Ruth herself.",
+          "reasoning": "In the KJV wording of 4:5 the thing bought is the field, and Ruth is a second seller. In the Greek the kinsman must acquire two things: the field and “her”. Only the Greek wording of 4:5 states the duty that Boaz then says he has carried out in 4:10.",
+          "scope": "The KJV follows the Hebrew words “and from Ruth” with no separate “her”; this is a Greek difference, not a claim that the KJV mistranslates the Hebrew. The Hebrew edition prints two forms of the verb (written and read); that marking is quoted for completeness and nothing is built on it. In every version the kinsman declines in 4:6 and Boaz marries Ruth. The Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition, and the Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier. English glosses in brackets are the researcher’s plain renderings, not lexicon entries."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "to raise up the name of the dead",
+          "matches": [
+            "Ruth 4:5",
+            "Ruth 4:10"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "title",
+          "quote": "Boaz begat Obed",
+          "matches": [
+            "Ruth 4:21",
+            "1 Chronicles 2:12"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "to raise up the name of the dead upon his inheritance, that the name of the dead be not cut off",
+          "matches": [
+            "Ruth 4:10"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "There is a son born to Naomi",
+          "matches": [
+            "Ruth 4:17"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "Boaz begat Obed",
+          "matches": [
+            "Ruth 4:21",
+            "1 Chronicles 2:12"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "shall succeed in the name of his brother which is dead",
+          "matches": [
+            "Deuteronomy 25:6"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "upon his inheritance",
+          "matches": [
+            "Ruth 4:5",
+            "Ruth 4:10"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "a son born to Naomi",
+          "matches": [
+            "Ruth 4:17"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Mahlon",
+          "matches": [
+            "Ruth 4:10"
+          ],
+          "kind": "KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Elimelech",
+          "matches": [],
+          "kind": "discussed word, researcher search term, or English gloss of verified Greek; not KJV excerpt"
+        }
+      ],
+      "sideValidation": "All supplied sides exact and within refs; multiple A entries retained.",
+      "sourceLabelValidation": "Named supplied book/edition address and printed verse label verified; no numbering shift. Written/read forms at Ruth 4:5 do not overlap the quoted closing phrase.",
+      "decision": "corrected and accepted"
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/8/4/",
+    "https://ebible.org/grcbrent/RUT04.htm",
+    "https://bolls.life/get-text/WLC/8/3/",
+    "https://bolls.life/get-text/WLC/3/25/",
+    "https://bolls.life/get-text/WLC/5/25/",
+    "https://ebible.org/grcbrent/RUT03.htm",
+    "https://ebible.org/grcbrent/DEU25.htm",
+    "https://bolls.life/get-text/WLC/13/2/"
+  ],
+  "needsOwner": [],
+  "draftSha256": "4338aa0b7196939ce504ce3c51b181abe9b880dbf7621b7655cf36fc14727f7d",
+  "priorEvidenceUnchanged": 448
+}
