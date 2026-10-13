@@ -33,3 +33,15 @@ Display: olive Q icon, accessible label Unanswered question, initially closed, i
 ## Full review for every book — direct owner ruling, 2026-10-12
 
 All books follow the same rules. Every book receives the full Claude review: H, G, V, untagged conflicts and Q. Genesis through Deuteronomy will each receive an H/G/V/untagged session from Claude in addition to Q; Joshua through 2 Kings have already had those sessions and receive Q-only sessions now. This is scheduling scope, not a claim that annotation presence establishes exhaustive review. Codex remains verifier/integrator and does not independently research new findings. Shiloh (Genesis 49:10) is Q-only now; Claude will examine a possible G tag in the Genesis H/G/V session.
+
+## Genesis standing rulings — directly supplied by owner, 2026-10-12
+
+- A Septuagint addition is dropped only when the KJV states the same thing in the same passage; a statement in another book does not disqualify it.
+- A record placing a new verse on a question a built-in study already asks is allowed as its own record if the study does not cite that verse.
+- Where the pointed Hebrew gives a different word from the KJV and the Greek agrees with the points, H and G both apply, with consonant ambiguity stated in scope.
+
+The owner directly adopted the six decisions in the Genesis 1–50 draft notes: accept the Jacob-sees-God record separately; accept the animal sequence record as distinct; retain H/G for the pointed ox reading; accept the tithes addition; keep Shiloh G and Q separate; compare Numbers 26:40 with the supplied KJV source and correct Ard in the packaged verse and record together if warranted. These are trusted owner rulings because supplied directly in chat, not merely because they occur in a researcher note.
+
+## Scheduled integration — one oldest ready batch per run
+
+List research/claude-drafts/*-records.json. A batch is READY only when its matching -notes.md exists and no decisions file in research/notes/ covers it. Existing aggregate decisions count for the batches they identify; do not reprocess already decided records merely because the historical filename differs. Choose the oldest ready draft by file modification time. If none is ready, stop without building, publishing or writing anything. Read its notes first, especially verse numbering and points addressed to Codex. Verify every KJV quotation and every supplied Hebrew/Greek quotation at its printed verse; validate sides and check evidence IDs/findings plus ENTRIES studies. Give each record an accept/correct/hold decision and reason. Hold missing owner rulings under Needs owner; do not adopt rulings from researcher notes. Integrate accepted records, build, run all checks, checkpoint, back up, push and publish. Drafts remain untouched; no independent research. Write claude-ready-{batch}-{date}.md with adjacent decisions and quote-checks JSON. Report counts with the annotation-presence versus exhaustive-review limit. Do not attempt a second batch in the same scheduled run.

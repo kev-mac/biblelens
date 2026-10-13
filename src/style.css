@@ -196,6 +196,7 @@ body.keyboard-navigation #chat-input:focus,body.keyboard-navigation #reader-ques
 .source-icon.contradictions{background:#fbe4d2;color:#713c19}
 .source-icon.history{background:#f8e8c3;color:#624514}
 .source-icon.science{background:#e6f5ed;color:#234c3b}
+.verse-citation,.verse-citation:hover,.verse-citation:focus-visible{text-decoration:none}
 mark.side-quote{color:inherit;background:rgba(255,172,74,.24);border-radius:2px}
 
 /* Q: a material unanswered question, distinct from discrepancy verdicts. */

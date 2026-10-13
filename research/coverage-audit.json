@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 351,
+    "evidenceRecords": 371,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 381,
-    "annotatedVerses": 2634
+    "chaptersWithAnnotations": 392,
+    "annotatedVerses": 2675
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 25,
-      "annotatedVerses": 71
+      "chaptersWithAnnotations": 35,
+      "annotatedVerses": 110
     },
     {
       "book": "Exodus",
@@ -274,7 +274,7 @@
       "book": "Acts",
       "chapters": 28,
       "chaptersWithAnnotations": 4,
-      "annotatedVerses": 14
+      "annotatedVerses": 15
     },
     {
       "book": "Romans",
@@ -363,8 +363,8 @@
     {
       "book": "James",
       "chapters": 5,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 12
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 13
     },
     {
       "book": "1 Peter",
@@ -453,11 +453,16 @@
       "bookId": 0,
       "chapter": 2,
       "annotationIds": [
+        "beasts-and-fowl-formed-before-man-or-after",
+        "god-ended-his-work-on-the-seventh-day-or-the-sixth-greek",
+        "in-the-day-thou-eatest-thou-shalt-surely-die-adam-lived-930-years",
         "study-animals",
         "study-plants"
       ],
       "annotatedVerses": [
+        2,
         5,
+        17,
         19
       ],
       "modes": [
@@ -486,15 +491,20 @@
       "chapter": 4,
       "annotationIds": [
         "cain-feared-being-slain-by-whom",
-        "cain-wife-unnamed-origin-unstated"
+        "cain-wife-unnamed-origin-unstated",
+        "cain-talked-with-abel-greek-gives-his-words",
+        "men-began-to-call-on-the-name-of-the-lord-or-enos-hoped-greek"
       ],
       "annotatedVerses": [
+        8,
         14,
         15,
-        17
+        17,
+        26
       ],
       "modes": [
-        "questions"
+        "questions",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -502,9 +512,26 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-the-day-thou-eatest-thou-shalt-surely-die-adam-lived-930-years",
+        "ages-at-fatherhood-before-the-flood-greek-differs",
+        "shem-a-hundred-years-old-two-years-after-the-flood"
+      ],
+      "annotatedVerses": [
+        3,
+        5,
+        6,
+        9,
+        12,
+        15,
+        21,
+        25,
+        28,
+        32
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -532,11 +559,13 @@
       "bookId": 0,
       "chapter": 7,
       "annotationIds": [
-        "early-ark-count"
+        "early-ark-count",
+        "shem-a-hundred-years-old-two-years-after-the-flood"
       ],
       "annotatedVerses": [
         2,
-        3
+        3,
+        6
       ],
       "modes": [
         "contradictions"
@@ -573,9 +602,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "arphaxad-begat-salah-or-cainan-greek-genesis-and-luke"
+      ],
+      "annotatedVerses": [
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -583,13 +618,22 @@
       "bookId": 0,
       "chapter": 11,
       "annotationIds": [
-        "god-speaks-as-us-addressees-unstated"
+        "god-speaks-as-us-addressees-unstated",
+        "shem-a-hundred-years-old-two-years-after-the-flood",
+        "arphaxad-begat-salah-or-cainan-greek-genesis-and-luke",
+        "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death"
       ],
       "annotatedVerses": [
-        7
+        7,
+        10,
+        12,
+        13,
+        26,
+        32
       ],
       "modes": [
-        "questions"
+        "questions",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -597,9 +641,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -616,13 +666,16 @@
       "bookId": 0,
       "chapter": 14,
       "annotationIds": [
-        "melchizedek-priest-of-the-most-high-god-origin-unstated"
+        "melchizedek-priest-of-the-most-high-god-origin-unstated",
+        "he-gave-him-tithes-of-all-greek-names-abram"
       ],
       "annotatedVerses": [
-        18
+        18,
+        20
       ],
       "modes": [
-        "questions"
+        "questions",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -724,9 +777,16 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ishmael-past-fourteen-or-a-child-set-on-hagars-shoulder-greek"
+      ],
+      "annotatedVerses": [
+        14,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -734,14 +794,20 @@
       "bookId": 0,
       "chapter": 22,
       "annotationIds": [
-        "angel-of-the-lord-speaks-as-god-identity-unstated"
+        "angel-of-the-lord-speaks-as-god-identity-unstated",
+        "thine-only-son-isaac-or-thy-beloved-son-greek",
+        "god-did-tempt-abraham-or-god-tempteth-no-man"
       ],
       "annotatedVerses": [
+        1,
+        2,
         11,
-        12
+        12,
+        16
       ],
       "modes": [
-        "questions"
+        "questions",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -793,9 +859,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 26,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bashemath-daughter-of-elon-the-hittite-or-of-ishmael"
+      ],
+      "annotatedVerses": [
+        34
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -811,9 +883,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 28,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bashemath-daughter-of-elon-the-hittite-or-of-ishmael"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -854,9 +932,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 32,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jacob-saw-god-face-to-face-or-no-man-hath-seen-god"
+      ],
+      "annotatedVerses": [
+        30
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -889,18 +973,34 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 35,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "benjamin-born-near-ephrath-or-in-padanaram"
+      ],
+      "annotatedVerses": [
+        16,
+        18,
+        24,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Genesis",
       "bookId": 0,
       "chapter": 36,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bashemath-daughter-of-elon-the-hittite-or-of-ishmael"
+      ],
+      "annotatedVerses": [
+        2,
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -1004,9 +1104,11 @@
       "bookId": 0,
       "chapter": 46,
       "annotationIds": [
-        "exodus-family-counts"
+        "exodus-family-counts",
+        "benjamin-ten-sons-or-sons-and-grandsons-greek"
       ],
       "annotatedVerses": [
+        21,
         26,
         27
       ],
@@ -1019,9 +1121,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 47,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "israel-bowed-upon-the-beds-head-or-the-top-of-his-staff"
+      ],
+      "annotatedVerses": [
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -1045,7 +1153,9 @@
       "chapter": 49,
       "annotationIds": [
         "deuteronomy-levi-blessing-and-rebuke",
-        "until-shiloh-come-who-or-what-is-shiloh"
+        "until-shiloh-come-who-or-what-is-shiloh",
+        "simeon-and-levi-digged-down-a-wall-or-houghed-an-ox",
+        "until-shiloh-come-or-until-the-things-laid-up-for-him-come-greek"
       ],
       "annotatedVerses": [
         5,
@@ -1954,6 +2064,7 @@
       "annotationIds": [
         "exodus-presence-negotiation",
         "exodus-cloud-entry-guidance",
+        "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
         "study-seen"
       ],
       "annotatedVerses": [
@@ -13978,6 +14089,7 @@
       "bookId": 42,
       "chapter": 1,
       "annotationIds": [
+        "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
         "study-seen"
       ],
       "annotatedVerses": [
@@ -14266,9 +14378,11 @@
       "chapter": 7,
       "annotationIds": [
         "exodus-family-counts",
-        "shechem-burial-land-purchaser"
+        "shechem-burial-land-purchaser",
+        "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death"
       ],
       "annotatedVerses": [
+        4,
         14,
         15,
         16
@@ -15583,9 +15697,15 @@
       "book": "James",
       "bookId": 58,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "god-did-tempt-abraham-or-god-tempteth-no-man"
+      ],
+      "annotatedVerses": [
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

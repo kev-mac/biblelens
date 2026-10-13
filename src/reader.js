@@ -48,7 +48,7 @@ function roleCitations(item){
  return `<div class="context-citations"><div class="context-short summary-citations">${visible.map(r=>referenceLink(r,undefined,item)).join('')}${remaining?`<button type="button" class="verse-citation" data-context-expand aria-expanded="false">+${remaining} more</button>`:''}</div>${remaining?`<div class="context-full" hidden>${groups}<button type="button" class="verse-citation" data-context-collapse>Show fewer</button></div>`:''}</div>`;
 }
 function expandContext(button){const parent=button.closest('.context-citations'),open=button.hasAttribute('data-context-expand');parent.querySelector('.context-short').hidden=open;parent.querySelector('.context-full').hidden=!open;parent.querySelector('[data-context-expand]').setAttribute('aria-expanded',String(open));}
-function sideRows(item){return item.sides?.length?`<div class="comparison-sides">${item.sides.map(side=>`<div class="comparison-side"><strong>${esc(side.label)}</strong>${referenceLink(side.ref)}<q>${esc(side.quote)}</q></div>`).join('')}</div>`:'';}
+function sideRows(item){return item.sides?.length?`<div class="comparison-sides">${item.sides.map(side=>`<div class="comparison-side">${referenceLink(side.ref)}<q>${esc(side.quote)}</q></div>`).join('')}</div>`:'';}
 function mergeQuoteRanges(ranges){const merged=[];for(const [a,b]of ranges.sort((x,y)=>x[0]-y[0]||x[1]-y[1])){const last=merged.at(-1);if(last&&a<=last[1])last[1]=Math.max(last[1],b);else merged.push([a,b]);}return merged;}
 function quoteRanges(text,quotes){const ranges=[];for(const quote of quotes){if(!quote)continue;let start=0;while((start=text.indexOf(quote,start))!==-1){ranges.push([start,start+quote.length]);start+=quote.length;}}return mergeQuoteRanges(ranges);}
 
@@ -86,7 +86,7 @@ document.addEventListener('click',ev=>{
  const expand=ev.target.closest('[data-context-expand],[data-context-collapse]');if(expand){expandContext(expand);return;}
  const tab=ev.target.closest('[data-comparison-key]');if(tab){selectComparison(tab);return;}
 });
-function citationButton(ref){const p=typeof ref==='string'?readRef(ref):ref;if(!p)return '';const label=typeof ref==='string'?ref:ref.label||`${books[p.book]?.name||reading.name} ${p.chapter}:${p.verse}`;return `<button type="button" class="verse-citation" data-cite="${p.book}/${p.chapter}/${p.verse}" data-cite-label="${esc(label)}" aria-haspopup="dialog">${esc(label)}</button>`;}
+function citationButton(ref){const p=typeof ref==='string'?readRef(ref):ref;if(!p)return '';const label=typeof ref==='string'?ref:ref.label||`${books[p.book]?.name||reading.name} ${p.chapter}:${p.verse}`;return `<button type="button" class="verse-citation" data-cite="${p.book}/${p.chapter}/${p.verse}" data-cite-label="${esc(label)}" aria-label="${esc(label)}" title="${esc(label)}" aria-haspopup="dialog">${esc(compactCitation(p,label))}</button>`;}
 function comparisonCitations(verse,items){const refs=[{book:readingBook,chapter:readingChapter,verse,label:`${reading.name} ${readingChapter}:${verse}`},...items.flatMap(i=>i.refs||[])];return `<div class="summary-citations">${refs.filter((r,i)=>refs.findIndex(other=>other.book===r.book&&other.chapter===r.chapter&&other.verse===r.verse)===i).map(citationButton).join('')}</div>`;}
 function scriptureHtml(v,edition,book=readingBook,ch=readingChapter){
  const text=v[edition]||'',red=RED_LETTERS[`${book}:${ch}`]?.[v.n]?.[edition]||[];
