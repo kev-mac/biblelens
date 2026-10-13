@@ -125,7 +125,7 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 .agreement.science,body.dark .agreement.science{background:#e6f5ed;color:#234c3b}
 
 /* Neutral gray page, white reader panels, and charcoal controls. */
-:root{--bg:#f2f2f2;--panel:#fff;--ink:#000;--muted:#555;--line:#555;--green:#333;--soft:#e6e6e6;--rust:#444;--jesus:#b32925}
+:root{--bg:#f2f2f2;--panel:#fff;--ink:#4682b4;--muted:#555;--line:#555;--green:#333;--soft:#e6e6e6;--rust:#444;--jesus:#b32925}
 body.dark{--bg:#111;--panel:#1c1c1c;--ink:#f5f5f5;--muted:#ccc;--line:#888;--green:#ccc;--soft:#292929;--rust:#ddd;--jesus:#ff9290}
 body.dark .verse-citation{background:var(--soft);color:var(--ink);border-color:var(--line)}
 .comparison-summary,.study-tldr .comparison-summary,.evidence-result .comparison-summary{background:var(--soft);color:var(--ink);border-color:var(--line)}
