@@ -180,6 +180,22 @@ body.keyboard-navigation #chat-input:focus,body.keyboard-navigation #reader-ques
 .context-book-line{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
 .context-citations [hidden]{display:none}
 .context-citations{margin:10px 0}
+/* Compact book citations and smaller supporting-source markers. */
+.comparison-side .verse-citation,.context-citations .verse-citation{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font:10px/1.35 system-ui;padding:3px 5px;min-height:24px;border-radius:4px}
+.comparison-sides{gap:6px;margin-bottom:10px}
+.comparison-side{gap:6px}
+.primary-tags,.context-tags{display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+.primary-tags:empty,.context-tags:empty{display:none}
+.context-tags{margin-left:auto}
+.comparison-tabs .comparison-tab.context-tag{width:22px;height:22px;min-height:22px;flex-basis:22px;font-size:10px}
+.source-icon{display:inline-grid;place-items:center;width:16px;height:16px;border:1px solid currentColor;border-radius:3px;font:600 9px/1 system-ui;text-decoration:none}
+.source-icon.question{background:#e4ebcb;color:#435023}
+.source-icon.hebrew{background:#f5e4bf;color:#5c4012}
+.source-icon.greek{background:#ebe0f5;color:#50356c}
+.source-icon.violation{background:#f9ded8;color:#792b22}
+.source-icon.contradictions{background:#fbe4d2;color:#713c19}
+.source-icon.history{background:#f8e8c3;color:#624514}
+.source-icon.science{background:#e6f5ed;color:#234c3b}
 mark.side-quote{color:inherit;background:rgba(255,172,74,.24);border-radius:2px}
 
 /* Q: a material unanswered question, distinct from discrepancy verdicts. */
