@@ -301,3 +301,33 @@ body.dark .jesus-words mark.side-quote{color:inherit}
 .brand{font-family:system-ui;font-size:1.375rem}h2,h3,h4,h5{font-family:system-ui} .chapter-heading-row h2{font-family:Georgia}
 
 h1,h2,h3,h4,h5,h6{font-weight:600}h4,h5,h6{font-size:1rem;line-height:1.6}#chat-send,.preview-close{width:40px;height:40px;min-width:40px;min-height:40px;flex-basis:40px;border-radius:50%}.source-icon{width:20px;height:20px}
+
+/* Reader polish: comfortable measure, aligned controls, quieter metadata. */
+header,main,footer{max-width:1000px}header,main{padding-left:32px;padding-right:32px}
+header{height:80px}.brand{gap:10px;letter-spacing:normal}nav{gap:28px}
+.reader-toolbar{gap:14px;padding:20px 0 16px}.reader-toolbar label:first-child{flex:0 1 210px}.reader-toolbar label:first-child select{width:100%}
+.reader-chapter-bar{display:flex;align-items:center;gap:12px}.selection-bar{flex:1;padding:12px 0;min-width:0}.selection-bar>div{gap:8px}
+.comparison-status{gap:6px;margin:0 0 16px;padding:0}.category-filter{min-height:32px;gap:7px;padding:4px 11px}.category-filter:disabled{background:transparent!important;color:var(--muted)!important;border-color:transparent;font-weight:400}
+.category-filter:not(:disabled):hover{outline:1px solid currentColor;outline-offset:1px}
+.chapter-text,.chapter-text.with-comparisons{padding:28px 32px;border-radius:12px}
+.chapter-heading-row{gap:4px;margin-bottom:24px}.chapter-heading-row h2{font-weight:400}.reader-question-form{margin-top:12px;padding:1px 1px 1px 14px}
+.reader-question-form .reader-question-submit{width:40px;height:40px;min-height:40px;flex-basis:40px}.reader-question-form input{height:40px}
+.verse,.with-comparisons .verse{padding:14px 0 14px 36px!important;border-radius:0}.verse-body{position:relative}
+.verse-num{top:.55em;left:-36px;width:24px;text-align:left;line-height:1.85}
+.with-comparisons .verse+.verse{border-top-color:color-mix(in srgb,var(--line) 55%,transparent)}
+.comparison-tabs{margin:10px 0 6px;gap:8px}.comparison-cell{margin-top:4px}.comparison-panel{padding-top:8px}.comparison-sides{margin-top:4px}
+.comparison-summary{border-radius:8px}.context-pointer{white-space:normal;overflow:visible;text-overflow:clip;font-size:.875rem}
+.chapter-bottom{padding:20px 0 12px}.reader-footnote{margin:12px 0 24px}.reader-settings{padding:24px}.reader-settings::backdrop{background:color-mix(in srgb,var(--ink) 42%,transparent);backdrop-filter:blur(3px)}
+.reader-settings .reader-toolbar{background:transparent;border-bottom:0;padding-bottom:0}.sheet-heading h2{font-size:1.375rem}.reader-settings .reader-actions{justify-content:flex-start!important;gap:24px}
+@media(max-width:600px){
+ header{height:auto;padding:12px 16px 0;gap:8px}header .brand{font-size:1.1875rem}nav{gap:12px}nav button{padding:10px 0 12px}main{padding:0 16px}
+ .reader-chapter-bar{gap:8px;margin:12px 0}.reader-picker{width:auto;min-width:0;flex:1;justify-content:flex-start;gap:8px;margin:0;font-size:1rem}.reader-picker svg{flex-shrink:0;color:var(--muted)}
+ .selection-bar{flex:0 0 auto;padding:0}.selection-bar #reader-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+ .comparison-status{margin-bottom:12px;padding:0;gap:4px}.category-filter{padding:4px 10px}
+ .chapter-text,.chapter-text.with-comparisons{padding:20px 16px;border-radius:0}.chapter-heading-row{gap:4px;margin-bottom:20px}.reader-question-form{margin-top:10px}
+ .verse,.with-comparisons .verse{padding:12px 0!important}.verse-num{position:static;display:inline;width:auto;padding-right:7px;line-height:1.6}
+ .reader-settings{padding:20px 20px max(24px,env(safe-area-inset-bottom));border-radius:20px 20px 0 0}.reader-settings .reader-toolbar{gap:16px}.reader-settings .reader-toolbar label:first-child{flex:none}
+ footer{padding-left:16px;padding-right:16px}.chapter-bottom{padding-top:16px}
+}
+
+@media(min-width:601px) and (max-width:650px){header{height:auto}}
