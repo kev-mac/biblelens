@@ -1,0 +1,4044 @@
+{
+  "batch": "psalms-135-150",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "they-that-wasted-us-required-mirth-or-they-that-carried-us-away-asked-a-hymn-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 137:3",
+          "quote": "For there they that carried us away captive required of us a song; and they that wasted us required of us mirth, saying, Sing us one of the songs of Zion.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְתֹולָלֵ֣ינוּ שִׂמְחָ֑ה",
+          "stated": {
+            "chapter": 137,
+            "verse": "3"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/137/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οἱ ἀπαγαγόντες ἡμᾶς, ὕμνον",
+          "stated": {
+            "chapter": 136,
+            "verse": "3"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA136.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 137:3",
+          "quote": "they that wasted us required of us mirth",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA136.htm",
+          "printedLabel": "3",
+          "quote": "they that had carried us away asked a hymn",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ὕμνον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA136.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They that wasted us required of us mirth",
+          "matches": [
+            "Psalms 137:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "they that had carried us away asked a hymn",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA136.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "they that wasted us",
+          "matches": [
+            "Psalms 137:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "mirth",
+          "matches": [
+            "Psalms 137:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "carried us away",
+          "matches": [
+            "Psalms 137:3"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA136.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a hymn",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA136.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "For there they that carried us away captive required of us a song; and they that wasted us required of us mirth, saying, Sing us one of the songs of Zion.",
+          "matches": [
+            "Psalms 137:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "they that had carried us away asked a hymn",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA136.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "wasted",
+          "matches": [
+            "Psalms 137:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "mirth",
+          "matches": [
+            "Psalms 137:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "carried us away",
+          "matches": [
+            "Psalms 137:3"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA136.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "thou-hast-magnified-thy-word-above-all-thy-name-or-thou-hast-magnified-thy-holy-name-above-every-thing-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 138:2",
+          "quote": "I will worship toward thy holy temple, and praise thy name for thy lovingkindness and for thy truth: for thou hast magnified thy word above all thy name.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הִגְדַּ֥לְתָּ עַל־כָּלשִׁ֝־מְךָ֗ אִמְרָתֶֽךָ",
+          "stated": {
+            "chapter": 138,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/138/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐμεγάλυνας ἐπὶ πᾶν τὸ ὄνομα τὸ ἅγιόν σου",
+          "stated": {
+            "chapter": 137,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA137.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 138:2",
+          "quote": "thou hast magnified thy word above all thy name",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+          "printedLabel": "2",
+          "quote": "thou hast magnified thy holy name above every thing",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "τὸ ἅγιόν σου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA137.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἐμεγάλυνας",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA137.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἐπὶ πᾶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA137.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thou hast magnified thy word above all thy name",
+          "matches": [
+            "Psalms 138:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "thou hast magnified thy holy name above every thing",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "thy word",
+          "matches": [
+            "Psalms 138:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "all thy name",
+          "matches": [
+            "Psalms 138:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the name, the holy one of thee",
+          "matches": [],
+          "brenton": [],
+          "kind": "Researcher literal rendering of verified Greek clause, not an exact KJV or Brenton quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "word",
+          "matches": [
+            "Psalms 138:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I will worship toward thy holy temple, and praise thy name for thy lovingkindness and for thy truth: for thou hast magnified thy word above all thy name.",
+          "matches": [
+            "Psalms 138:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "thou hast magnified thy holy name above every thing",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy word",
+          "matches": [
+            "Psalms 138:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "above all thy name",
+          "matches": [
+            "Psalms 138:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "over all",
+          "matches": [],
+          "brenton": [],
+          "kind": "Researcher literal rendering of verified Greek clause, not an exact KJV or Brenton quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "word",
+          "matches": [
+            "Psalms 138:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "holy",
+          "matches": [
+            "Psalms 138:2"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-lord-will-perfect-that-which-concerneth-me-or-o-lord-thou-shalt-recompense-on-my-behalf-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 138:8",
+          "quote": "The Lord will perfect that which concerneth me: thy mercy, O Lord, endureth for ever: forsake not the works of thine own hands.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יְהוָה֮ יִגְמֹ֪ר בַּ֫עֲדִ֥י",
+          "stated": {
+            "chapter": 138,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/138/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Κύριε ἀνταποδώσεις ὑπὲρ ἐμοῦ",
+          "stated": {
+            "chapter": 137,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA137.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 138:8",
+          "quote": "The Lord will perfect that which concerneth me",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+          "printedLabel": "8",
+          "quote": "thou shalt recompense them on my behalf",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+          "printedLabel": "8",
+          "quote": "them",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἀνταποδώσεις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA137.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ὑπὲρ ἐμοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA137.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The Lord will perfect that which concerneth me",
+          "matches": [
+            "Psalms 138:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "O Lord, thou shalt recompense … on my behalf",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "perfect",
+          "matches": [
+            "Psalms 138:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "thou shalt recompense",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "on my behalf",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord will perfect that which concerneth me: thy mercy, O Lord, endureth for ever: forsake not the works of thine own hands.",
+          "matches": [
+            "Psalms 138:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "thou shalt recompense them on my behalf",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "them",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "perfect",
+          "matches": [
+            "Psalms 138:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "that which concerneth me",
+          "matches": [
+            "Psalms 138:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thou shalt recompense",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "on my behalf",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA137.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "there-is-not-a-word-in-my-tongue-or-there-is-no-unrighteous-word-in-my-tongue-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 139:4",
+          "quote": "For there is not a word in my tongue, but, lo, O Lord, thou knowest it altogether.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּ֤י אֵ֣ין מִ֭לָּה בִּלְשֹׁונִ֑י",
+          "stated": {
+            "chapter": 139,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/139/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οὐκ ἔστι λόγος ἄδικος ἐν γλώσσῃ μου",
+          "stated": {
+            "chapter": 138,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 139:4",
+          "quote": "there is not a word in my tongue",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+          "printedLabel": "4",
+          "quote": "there is no unrighteous word in my tongue",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "λόγος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἄδικος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "There is not a word in my tongue",
+          "matches": [
+            "Psalms 139:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "there is no unrighteous word in my tongue",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "unrighteous",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "For there is not a word in my tongue, but, lo, O Lord, thou knowest it altogether.",
+          "matches": [
+            "Psalms 139:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "there is no unrighteous word in my tongue",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "unrighteous",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thou knowest it altogether",
+          "matches": [
+            "Psalms 139:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thou hast known all things",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "if-i-take-the-wings-of-the-morning-or-if-i-take-up-my-wings-straight-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 139:9",
+          "quote": "If I take the wings of the morning, and dwell in the uttermost parts of the sea;",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֶשָּׂ֥א כַנְפֵי־שָׁ֑חַר",
+          "stated": {
+            "chapter": 139,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/139/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἐὰν ἀναλάβω τὰς πτέρυγάς μου κατʼ ὀρθὸν",
+          "stated": {
+            "chapter": 138,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 139:9",
+          "quote": "the wings of the morning",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+          "printedLabel": "9",
+          "quote": "If I should spread my wings to fly straight forward",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "μου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "κατʼ ὀρθὸν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "If I take the wings of the morning",
+          "matches": [
+            "Psalms 139:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "If I should spread my wings",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "title",
+          "quote": "straight forward",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the wings of the morning",
+          "matches": [
+            "Psalms 139:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "my wings",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "straight forward",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "If I take the wings of the morning, and dwell in the uttermost parts of the sea;",
+          "matches": [
+            "Psalms 139:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "If I should spread my wings to fly straight forward",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of the morning",
+          "matches": [
+            "Psalms 139:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "straight forward",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of the morning",
+          "matches": [
+            "Psalms 139:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "dwell in the uttermost parts of the sea",
+          "matches": [
+            "Psalms 139:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "morning",
+          "matches": [
+            "Psalms 139:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "my-substance-was-not-hid-from-thee-or-my-bone-was-not-hid-from-thee-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 139:15",
+          "quote": "My substance was not hid from thee, when I was made in secret, and curiously wrought in the lowest parts of the earth.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לֹא־נִכְחַ֥ד עָצְמִ֗י",
+          "stated": {
+            "chapter": 139,
+            "verse": "15"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/139/",
+              "verse": 15
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Οὐκ ἐκρύβη τὸ ὀστοῦν μου ἀπὸ σοῦ",
+          "stated": {
+            "chapter": 138,
+            "verse": "15"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ ἡ ὑπόστασίς μου",
+          "stated": {
+            "chapter": 138,
+            "verse": "15"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 139:15",
+          "quote": "My substance was not hid from thee",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+          "printedLabel": "15",
+          "quote": "My bones which thou madest in secret were not hidden from thee, nor my substance",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "τὸ ὀστοῦν μου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἡ ὑπόστασίς μου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "My substance was not hid from thee",
+          "matches": [
+            "Psalms 139:15"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "My bones which thou madest in secret were not hidden from thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "15"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "My substance was not hid from thee",
+          "matches": [
+            "Psalms 139:15"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "My bones",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "15"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "my substance",
+          "matches": [
+            "Psalms 139:15"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "15"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "My substance was not hid from thee, when I was made in secret, and curiously wrought in the lowest parts of the earth.",
+          "matches": [
+            "Psalms 139:15"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "My bones which thou madest in secret were not hidden from thee, nor my substance",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "15"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my substance",
+          "matches": [
+            "Psalms 139:15"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "15"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my bone",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "15"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my substance",
+          "matches": [
+            "Psalms 139:15"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "15"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "substance",
+          "matches": [
+            "Psalms 139:15"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "15"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "in-thy-book-all-my-members-were-written-or-in-thy-book-all-shall-be-written-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 139:16",
+          "quote": "Thine eyes did see my substance, yet being unperfect; and in thy book all my members were written, which in continuance were fashioned, when as yet there was none of them.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְעַֽל־סִפְרְךָ֮ כֻּלָּ֪ם יִכָּ֫תֵ֥בוּ",
+          "stated": {
+            "chapter": 139,
+            "verse": "16"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/139/",
+              "verse": 16
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐπὶ τὸ βιβλίον σου πάντες γραφήσονται",
+          "stated": {
+            "chapter": 138,
+            "verse": "16"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "16"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 139:16",
+          "quote": "all my members were written",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+          "printedLabel": "16",
+          "quote": "all men shall be written in thy book",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "πάντες",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "16"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "γραφήσονται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "16"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "In thy book all my members were written",
+          "matches": [
+            "Psalms 139:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "all men shall be written",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "all my members were written",
+          "matches": [
+            "Psalms 139:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "all",
+          "matches": [
+            "Psalms 139:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "all men shall be written in thy book",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Thine eyes did see my substance, yet being unperfect; and in thy book all my members were written, which in continuance were fashioned, when as yet there was none of them.",
+          "matches": [
+            "Psalms 139:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "all men shall be written in thy book",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my members",
+          "matches": [
+            "Psalms 139:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "all",
+          "matches": [
+            "Psalms 139:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "all men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "how-precious-also-are-thy-thoughts-unto-me-or-thy-friends-are-greatly-honoured-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 139:17",
+          "quote": "How precious also are thy thoughts unto me, O God! how great is the sum of them!",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יָּקְר֣וּ רֵעֶ֣יךָ",
+          "stated": {
+            "chapter": 139,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/139/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "מֶ֥ה עָ֝צְמוּ רָאשֵׁיהֶֽם",
+          "stated": {
+            "chapter": 139,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/139/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐτιμήθησαν οἱ φίλοι σου ὁ Θεὸς",
+          "stated": {
+            "chapter": 138,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐκραταιώθησαν αἱ ἀρχαὶ αὐτῶν",
+          "stated": {
+            "chapter": 138,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 139:17",
+          "quote": "How precious also are thy thoughts unto me, O God",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+          "printedLabel": "17",
+          "quote": "thy friends, O God, have been greatly honoured by me",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+          "printedLabel": "17",
+          "quote": "their rule has been greatly strengthened",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "οἱ φίλοι σου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "αἱ ἀρχαὶ αὐτῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "How precious also are thy thoughts unto me, O God",
+          "matches": [
+            "Psalms 139:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "thy friends … have been greatly honoured",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "thoughts",
+          "matches": [
+            "Psalms 139:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "sum of them",
+          "matches": [
+            "Psalms 139:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "thy friends",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "have been greatly honoured",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "their rule has been greatly strengthened",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "How precious also are thy thoughts unto me, O God! how great is the sum of them!",
+          "matches": [
+            "Psalms 139:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "thy friends, O God, have been greatly honoured by me",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "their rule has been greatly strengthened",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy friends",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "their rule",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "thoughts",
+          "matches": [
+            "Psalms 139:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "thine-enemies-take-thy-name-in-vain-or-they-shall-take-thy-cities-in-vain-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 139:20",
+          "quote": "For they speak against thee wickedly, and thine enemies take thy name in vain.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "נָשֻׂ֖א לַשָּׁ֣וְא עָרֶֽיךָ",
+          "stated": {
+            "chapter": 139,
+            "verse": "20"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/139/",
+              "verse": 20
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "λήψονται εἰς ματαιότητα τὰς πόλεις σου",
+          "stated": {
+            "chapter": 138,
+            "verse": "20"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "20"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 139:20",
+          "quote": "thine enemies take thy name in vain",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+          "printedLabel": "20",
+          "quote": "they shall take thy cities in vain",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "τὰς πόλεις σου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "20"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "שם",
+          "matches": [],
+          "printedLabelVerified": true,
+          "kind": "Verified absent search token at supplied WLC verse"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thine enemies take thy name in vain",
+          "matches": [
+            "Psalms 139:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "they shall take thy cities in vain",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "thine enemies take thy name in vain",
+          "matches": [
+            "Psalms 139:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "thy cities",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "name",
+          "matches": [
+            "Psalms 139:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "For they speak against thee wickedly, and thine enemies take thy name in vain.",
+          "matches": [
+            "Psalms 139:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "they shall take thy cities in vain",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thine enemies",
+          "matches": [
+            "Psalms 139:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy name",
+          "matches": [
+            "Psalms 139:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy cities",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "name",
+          "matches": [
+            "Psalms 139:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "enemies",
+          "matches": [
+            "Psalms 139:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "cities",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "try-me-and-know-my-thoughts-or-examine-me-and-know-my-paths-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 139:23",
+          "quote": "Search me, O God, and know my heart: try me, and know my thoughts:",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְדַ֣ע שַׂרְעַפָּֽי",
+          "stated": {
+            "chapter": 139,
+            "verse": "23"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/139/",
+              "verse": 23
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "γνῶθι τὰς τρίβους μου",
+          "stated": {
+            "chapter": 138,
+            "verse": "23"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 139:23",
+          "quote": "know my thoughts",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+          "printedLabel": "23",
+          "quote": "know my paths",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "τρίβους",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τὰς τρίβους μου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA138.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Try me, and know my thoughts",
+          "matches": [
+            "Psalms 139:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "examine me, and know my paths",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "23"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "thoughts",
+          "matches": [
+            "Psalms 139:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "paths",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "23"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Search me, O God, and know my heart: try me, and know my thoughts:",
+          "matches": [
+            "Psalms 139:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "know my paths",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "23"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my thoughts",
+          "matches": [
+            "Psalms 139:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "paths",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA138.htm",
+              "printedLabel": "23"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "thoughts",
+          "matches": [
+            "Psalms 139:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "let-me-not-eat-of-their-dainties-or-let-me-not-unite-with-their-choice-ones-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 141:4",
+          "quote": "Incline not my heart to any evil thing, to practise wicked works with men that work iniquity: and let me not eat of their dainties.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּבַל־אֶ֝לְחַ֗ם בְּמַנְעַמֵּיהֶֽם",
+          "stated": {
+            "chapter": 141,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/141/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οὐ μὴ συνδοιάσω μετὰ τῶν ἐκλεκτῶν αὐτῶν",
+          "stated": {
+            "chapter": 140,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 141:4",
+          "quote": "let me not eat of their dainties",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+          "printedLabel": "4",
+          "quote": "let me not unite with their choice ones",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "μετά",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τῶν ἐκλεκτῶν αὐτῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Let me not eat of their dainties",
+          "matches": [
+            "Psalms 141:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "let me not unite with their choice ones",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "eat of their dainties",
+          "matches": [
+            "Psalms 141:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "unite with",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "choice ones",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "dainties",
+          "matches": [
+            "Psalms 141:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Incline not my heart to any evil thing, to practise wicked works with men that work iniquity: and let me not eat of their dainties.",
+          "matches": [
+            "Psalms 141:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "let me not unite with their choice ones",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "their dainties",
+          "matches": [
+            "Psalms 141:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "unite with",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "their choice ones",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "choice ones",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "it-shall-be-an-excellent-oil-which-shall-not-break-my-head-or-let-not-the-oil-of-the-sinner-anoint-my-head-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 141:5",
+          "quote": "Let the righteous smite me; it shall be a kindness: and let him reprove me; it shall be an excellent oil, which shall not break my head: for yet my prayer also shall be in their calamities.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "שֶׁ֣מֶן רֹ֭אשׁ אַל־יָנִ֣י רֹאשִׁ֑י",
+          "stated": {
+            "chapter": 141,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/141/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וּ֝תְפִלָּתִ֗י בְּרָעֹותֵיהֶֽם",
+          "stated": {
+            "chapter": 141,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/141/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἔλαιον δὲ ἁμαρτωλοῦ μὴ λιπανάτω τὴν κεφαλήν μου",
+          "stated": {
+            "chapter": 140,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐν ταῖς εὐδοκίαις αὐτῶν",
+          "stated": {
+            "chapter": 140,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 141:5",
+          "quote": "it shall be an excellent oil, which shall not break my head",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+          "printedLabel": "5",
+          "quote": "but let not the oil of the sinner anoint my head",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+          "printedLabel": "5",
+          "quote": "in their pleasures",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "εὐδοκίαις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "It shall be an excellent oil, which shall not break my head",
+          "matches": [
+            "Psalms 141:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "let not the oil of the sinner anoint my head",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "shall be an excellent oil",
+          "matches": [
+            "Psalms 141:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "calamities",
+          "matches": [
+            "Psalms 141:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "pleasures",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Let the righteous smite me; it shall be a kindness: and let him reprove me; it shall be an excellent oil, which shall not break my head: for yet my prayer also shall be in their calamities.",
+          "matches": [
+            "Psalms 141:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "but let not the oil of the sinner anoint my head",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "in their pleasures",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "an excellent oil",
+          "matches": [
+            "Psalms 141:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "shall not break my head",
+          "matches": [
+            "Psalms 141:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "in their calamities",
+          "matches": [
+            "Psalms 141:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "pleasures",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "as-when-one-cutteth-and-cleaveth-wood-upon-the-earth-or-as-a-lump-of-earth-is-crushed-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 141:7",
+          "quote": "Our bones are scattered at the grave's mouth, as when one cutteth and cleaveth wood upon the earth.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כְּמֹ֤ו פֹלֵ֣חַ וּבֹקֵ֣עַ בָּאָ֑רֶץ",
+          "stated": {
+            "chapter": 141,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/141/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ὡσεὶ πάχος γῆς διεῤῥάγη ἐπὶ τῆς γῆς",
+          "stated": {
+            "chapter": 140,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 141:7",
+          "quote": "as when one cutteth and cleaveth wood upon the earth",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+          "printedLabel": "7",
+          "quote": "As a lump of earth is crushed upon the ground",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "πάχος γῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "πάχος γῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἐπὶ τῆς γῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA140.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "עץ",
+          "matches": [],
+          "printedLabelVerified": true,
+          "kind": "Verified absent search token at supplied WLC verse"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "As when one cutteth and cleaveth wood upon the earth",
+          "matches": [
+            "Psalms 141:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "As a lump of earth is crushed upon the ground",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "a lump of earth",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Our bones are scattered at the grave's mouth, as when one cutteth and cleaveth wood upon the earth.",
+          "matches": [
+            "Psalms 141:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "As a lump of earth is crushed upon the ground",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "one",
+          "matches": [
+            "Psalms 141:7"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "wood",
+          "matches": [
+            "Psalms 141:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "is crushed",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA140.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "upon the earth",
+          "matches": [
+            "Psalms 141:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "wood",
+          "matches": [
+            "Psalms 141:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "that-our-oxen-may-be-strong-to-labour-or-their-oxen-are-fat-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 144:14",
+          "quote": "That our oxen may be strong to labour; that there be no breaking in, nor going out; that there be no complaining in our streets.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אַלּוּפֵ֗ינוּ מְֽסֻבָּ֫לִ֥ים",
+          "stated": {
+            "chapter": 144,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/144/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Οἱ βόες αὐτῶν παχεῖς",
+          "stated": {
+            "chapter": 143,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA143.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 144:14",
+          "quote": "That our oxen may be strong to labour",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA143.htm",
+          "printedLabel": "14",
+          "quote": "Their oxen are fat",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "παχεῖς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA143.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "That our oxen may be strong to labour",
+          "matches": [
+            "Psalms 144:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "their oxen are fat",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA143.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "strong to labour",
+          "matches": [
+            "Psalms 144:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "fat",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA143.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "That our oxen may be strong to labour; that there be no breaking in, nor going out; that there be no complaining in our streets.",
+          "matches": [
+            "Psalms 144:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Their oxen are fat",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA143.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "strong to labour",
+          "matches": [
+            "Psalms 144:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "fat",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA143.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "no breaking in, nor going out",
+          "matches": [
+            "Psalms 144:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "no complaining in our streets",
+          "matches": [
+            "Psalms 144:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "no falling down of a hedge, nor going out, nor cry in their folds",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA143.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "their",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA143.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "our",
+          "matches": [
+            "Psalms 144:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-lord-is-good-to-all-or-the-lord-is-good-to-those-that-wait-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 145:9",
+          "quote": "The Lord is good to all: and his tender mercies are over all his works.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "טֹוב־יְהוָ֥ה לַכֹּ֑ל",
+          "stated": {
+            "chapter": 145,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/145/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Χρηστὸς Κύριος τοῖς ὑπομένουσι",
+          "stated": {
+            "chapter": 144,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA144.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 145:9",
+          "quote": "The Lord is good to all",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+          "printedLabel": "9",
+          "quote": "The Lord is good to those that wait on him",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "τοῖς ὑπομένουσι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA144.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The Lord is good to all",
+          "matches": [
+            "Psalms 145:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "The Lord is good to those that wait",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "good to all",
+          "matches": [
+            "Psalms 145:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "those that wait",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord is good to all: and his tender mercies are over all his works.",
+          "matches": [
+            "Psalms 145:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord is good to those that wait on him",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "all",
+          "matches": [
+            "Psalms 145:9"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "those that wait on him",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "all his works",
+          "matches": [
+            "Psalms 145:9"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "on him",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "thy-kingdom-is-an-everlasting-kingdom-greek-adds-the-lord-is-faithful-in-his-words",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 145:13",
+          "quote": "Thy kingdom is an everlasting kingdom, and thy dominion endureth throughout all generations.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 145:14",
+          "quote": "The Lord upholdeth all that fall, and raiseth up all those that be bowed down.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 145:17",
+          "quote": "The Lord is righteous in all his ways, and holy in all his works.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּ֝מֶֽמְשֶׁלְתְּךָ֗ בְּכָל־דֹּ֥ור וָדֹֽור",
+          "stated": {
+            "chapter": 145,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/145/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "סֹומֵ֣ךְ יְ֭הוָה",
+          "stated": {
+            "chapter": 145,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/145/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "πιστὸς Κύριος ἐν τοῖς λόγοις αὐτοῦ, καὶ ὅσιος ἐν πᾶσι τοῖς ἔργοις αὐτοῦ",
+          "stated": {
+            "chapter": 144,
+            "verse": "13a"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA144.htm",
+              "verse": "13a"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 145:13",
+          "quote": "Thy kingdom is an everlasting kingdom",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 145:17",
+          "quote": "holy in all his works",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+          "printedLabel": "13a",
+          "quote": "The Lord is faithful in his words, and holy in all his works",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The Lord is faithful in his words, and holy in all his works",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "13a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Thy kingdom is an everlasting kingdom, and thy dominion endureth throughout all generations.",
+          "matches": [
+            "Psalms 145:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord upholdeth all that fall, and raiseth up all those that be bowed down.",
+          "matches": [
+            "Psalms 145:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord is righteous in all his ways, and holy in all his works.",
+          "matches": [
+            "Psalms 145:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord is faithful in his words, and holy in all his works",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "13a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "holy in all his works",
+          "matches": [
+            "Psalms 145:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA144.htm",
+              "printedLabel": "13a"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "righteous in all his ways",
+          "matches": [
+            "Psalms 145:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-lord-openeth-the-eyes-of-the-blind-or-the-lord-giveth-wisdom-to-the-blind-greek",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 146:8",
+          "quote": "The Lord openeth the eyes of the blind: the Lord raiseth them that are bowed down: the Lord loveth the righteous:",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יְהוָ֤ה ׀ פֹּ֘קֵ֤חַ עִוְרִ֗ים",
+          "stated": {
+            "chapter": 146,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/146/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Κύριος σοφοῖ τυφλοὺς",
+          "stated": {
+            "chapter": 145,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA145.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 146:8",
+          "quote": "The Lord openeth the eyes of the blind",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA145.htm",
+          "printedLabel": "8",
+          "quote": "the Lord gives wisdom to the blind",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "σοφοῖ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA145.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τυφλούς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA145.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The Lord openeth the eyes of the blind",
+          "matches": [
+            "Psalms 146:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the Lord gives wisdom to the blind",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA145.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "openeth the eyes of the blind",
+          "matches": [
+            "Psalms 146:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "gives wisdom",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA145.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the blind",
+          "matches": [
+            "Psalms 146:8"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA145.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord openeth the eyes of the blind: the Lord raiseth them that are bowed down: the Lord loveth the righteous:",
+          "matches": [
+            "Psalms 146:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the Lord gives wisdom to the blind",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA145.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the eyes",
+          "matches": [
+            "Psalms 146:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "gives wisdom",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA145.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the blind",
+          "matches": [
+            "Psalms 146:8"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA145.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "who-maketh-grass-to-grow-upon-the-mountains-greek-adds-and-herb-for-the-service-of-men",
+      "batch": "psalms-135-150",
+      "english": [
+        {
+          "ref": "Psalms 147:8",
+          "quote": "Who covereth the heaven with clouds, who prepareth rain for the earth, who maketh grass to grow upon the mountains.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 104:14",
+          "quote": "He causeth the grass to grow for the cattle, and herb for the service of man: that he may bring forth food out of the earth;",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הַמַּצְמִ֖יחַ הָרִ֣ים חָצִֽיר",
+          "stated": {
+            "chapter": 147,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/147/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ χλόην τῇ δουλείᾳ τῶν ἀνθρώπων",
+          "stated": {
+            "chapter": 146,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA146.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 147:8",
+          "quote": "who maketh grass to grow upon the mountains",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA146.htm",
+          "printedLabel": "8",
+          "quote": "and green herb for the service of men",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "καὶ χλόην τῇ δουλείᾳ τῶν ἀνθρώπων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA146.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Who maketh grass to grow upon the mountains",
+          "matches": [
+            "Psalms 147:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "and green herb for the service of men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA146.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "and green herb for the service of men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA146.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Who covereth the heaven with clouds, who prepareth rain for the earth, who maketh grass to grow upon the mountains.",
+          "matches": [
+            "Psalms 147:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "He causeth the grass to grow for the cattle, and herb for the service of man: that he may bring forth food out of the earth;",
+          "matches": [
+            "Psalms 104:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and green herb for the service of men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA146.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "and green herb for the service of men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA146.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "herb for the service of man",
+          "matches": [
+            "Psalms 104:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/19/137/",
+    "https://ebible.org/grcbrent/PSA136.htm",
+    "https://ebible.org/eng-Brenton/PSA136.htm",
+    "https://bolls.life/get-text/WLC/19/138/",
+    "https://ebible.org/grcbrent/PSA137.htm",
+    "https://ebible.org/eng-Brenton/PSA137.htm",
+    "https://bolls.life/get-text/WLC/19/139/",
+    "https://ebible.org/grcbrent/PSA138.htm",
+    "https://ebible.org/eng-Brenton/PSA138.htm",
+    "https://bolls.life/get-text/WLC/19/141/",
+    "https://ebible.org/grcbrent/PSA140.htm",
+    "https://ebible.org/eng-Brenton/PSA140.htm",
+    "https://bolls.life/get-text/WLC/19/144/",
+    "https://ebible.org/grcbrent/PSA143.htm",
+    "https://ebible.org/eng-Brenton/PSA143.htm",
+    "https://bolls.life/get-text/WLC/19/145/",
+    "https://ebible.org/grcbrent/PSA144.htm",
+    "https://ebible.org/eng-Brenton/PSA144.htm",
+    "https://bolls.life/get-text/WLC/19/146/",
+    "https://ebible.org/grcbrent/PSA145.htm",
+    "https://ebible.org/eng-Brenton/PSA145.htm",
+    "https://bolls.life/get-text/WLC/19/147/",
+    "https://ebible.org/grcbrent/PSA146.htm",
+    "https://ebible.org/eng-Brenton/PSA146.htm",
+    "https://bolls.life/get-text/WLC/20/1/",
+    "https://ebible.org/grcbrent/PRO01.htm",
+    "https://ebible.org/eng-Brenton/PRO01.htm",
+    "https://bolls.life/get-text/WLC/20/3/",
+    "https://ebible.org/grcbrent/PRO03.htm",
+    "https://bolls.life/get-text/TISCH/58/12/",
+    "https://bolls.life/get-text/TR/58/12/",
+    "https://ebible.org/eng-Brenton/PRO03.htm",
+    "https://bolls.life/get-text/TISCH/59/4/",
+    "https://bolls.life/get-text/TR/59/4/",
+    "https://bolls.life/get-text/WLC/20/8/",
+    "https://ebible.org/grcbrent/PRO08.htm",
+    "https://ebible.org/eng-Brenton/PRO08.htm",
+    "https://bolls.life/get-text/WLC/20/11/",
+    "https://ebible.org/grcbrent/PRO11.htm",
+    "https://ebible.org/eng-Brenton/PRO11.htm",
+    "https://bolls.life/get-text/TISCH/60/4/",
+    "https://bolls.life/get-text/TR/60/4/",
+    "https://ebible.org/grcbrent/PRO06.htm",
+    "https://ebible.org/eng-Brenton/PRO06.htm",
+    "https://ebible.org/grcbrent/PRO22.htm",
+    "https://bolls.life/get-text/TISCH/47/9/",
+    "https://bolls.life/get-text/TR/47/9/",
+    "https://ebible.org/eng-Brenton/PRO22.htm",
+    "https://bolls.life/get-text/WLC/20/22/",
+    "https://bolls.life/get-text/WLC/20/4/",
+    "https://ebible.org/grcbrent/PRO04.htm",
+    "https://ebible.org/eng-Brenton/PRO04.htm",
+    "https://bolls.life/get-text/WLC/20/23/",
+    "https://ebible.org/grcbrent/PRO23.htm",
+    "https://ebible.org/eng-Brenton/PRO23.htm",
+    "https://bolls.life/get-text/WLC/20/29/",
+    "https://ebible.org/grcbrent/PRO29.htm",
+    "https://ebible.org/eng-Brenton/PRO29.htm",
+    "https://bolls.life/get-text/WLC/20/31/",
+    "https://ebible.org/grcbrent/PRO31.htm",
+    "https://ebible.org/eng-Brenton/PRO31.htm",
+    "https://bolls.life/get-text/WLC/20/30/",
+    "https://ebible.org/grcbrent/PRO24.htm",
+    "https://ebible.org/eng-Brenton/PRO24.htm",
+    "https://bolls.life/get-text/WLC/20/26/",
+    "https://ebible.org/grcbrent/PRO26.htm",
+    "https://ebible.org/eng-Brenton/PRO26.htm",
+    "https://ebible.org/grcbrent/PRO18.htm",
+    "https://ebible.org/eng-Brenton/PRO18.htm",
+    "https://bolls.life/get-text/WLC/20/18/",
+    "https://bolls.life/get-text/WLC/20/28/",
+    "https://ebible.org/grcbrent/PRO28.htm",
+    "https://ebible.org/eng-Brenton/PRO28.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 673,
+  "studiesChecked": 6,
+  "suppliedWordSearchChecks": [
+    {
+      "term": "judgment written",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Psalms 149:9"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "strange children",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Hosea 5:7",
+        "Psalms 144:11",
+        "Psalms 144:7"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "Agur",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Proverbs 30:1"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "Jakeh",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Proverbs 30:1"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "Ucal",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Proverbs 30:1"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "Ithiel",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Nehemiah 11:7",
+        "Proverbs 30:1"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "bee",
+      "book": "Proverbs",
+      "chapter": null,
+      "found": [],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "put away",
+      "book": "Proverbs",
+      "chapter": 18,
+      "found": [],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "adulter",
+      "book": "Proverbs",
+      "chapter": 18,
+      "found": [],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    }
+  ],
+  "draftHashes": {
+    "research/claude-drafts/psalms-135-150-records.json": "05db3a7c641cd24634073c5c8211004b723fa4b08446fcf8f2146ba727b08c89",
+    "research/claude-drafts/psalms-135-150-notes.md": "90998c74ffba84705d8489b1cb572ea3373dac4d3b6fa4ffa5404e971bd01c24",
+    "research/claude-drafts/psalms-135-150-q-records.json": "e9cf6b1b3ccb7d374dfe7c45c9655abb32033222cff2464ea771e9c63be8c82a",
+    "research/claude-drafts/psalms-135-150-q-notes.md": "b253f363a46f82cd0cda9a51129b19ffe7373603aae9842e09e0b90c8d32dff2",
+    "research/claude-drafts/proverbs-1-31-records.json": "d99f4f3d4e99b256aa40b2a8be1f87e4c83355895263e152af0c529cb6e5e35a",
+    "research/claude-drafts/proverbs-1-31-notes.md": "39a40c19e66ef4b7a06b4c2dba36e7568fa3501a265870eb04e10b6022e35c52",
+    "research/claude-drafts/proverbs-1-31-q-records.json": "285b828d1cb9271c82f40388280a193e1af239c9a2f6b5c7e3dc6934d1e95d28",
+    "research/claude-drafts/proverbs-1-31-q-notes.md": "4a9ac40f8f59e86fac733452bc71b3e0e9bda46f6bf163b5c76e10c380d672b0"
+  }
+}

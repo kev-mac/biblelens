@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 673,
+    "evidenceRecords": 714,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 512,
-    "annotatedVerses": 3028
+    "chaptersWithAnnotations": 533,
+    "annotatedVerses": 3066
   },
   "byBook": [
     {
@@ -123,14 +123,14 @@
     {
       "book": "Psalms",
       "chapters": 150,
-      "chaptersWithAnnotations": 61,
-      "annotatedVerses": 109
+      "chaptersWithAnnotations": 70,
+      "annotatedVerses": 128
     },
     {
       "book": "Proverbs",
       "chapters": 31,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 2
+      "chaptersWithAnnotations": 13,
+      "annotatedVerses": 21
     },
     {
       "book": "Ecclesiastes",
@@ -11462,7 +11462,8 @@
       "bookId": 18,
       "chapter": 137,
       "annotationIds": [
-        "exp-late-18-137-1"
+        "exp-late-18-137-1",
+        "they-that-wasted-us-required-mirth-or-they-that-carried-us-away-asked-a-hymn-greek"
       ],
       "annotatedVerses": [
         1,
@@ -11476,7 +11477,8 @@
         9
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -11484,18 +11486,44 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 138,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thou-hast-magnified-thy-word-above-all-thy-name-or-thou-hast-magnified-thy-holy-name-above-every-thing-greek",
+        "the-lord-will-perfect-that-which-concerneth-me-or-o-lord-thou-shalt-recompense-on-my-behalf-greek"
+      ],
+      "annotatedVerses": [
+        2,
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 139,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "there-is-not-a-word-in-my-tongue-or-there-is-no-unrighteous-word-in-my-tongue-greek",
+        "if-i-take-the-wings-of-the-morning-or-if-i-take-up-my-wings-straight-greek",
+        "my-substance-was-not-hid-from-thee-or-my-bone-was-not-hid-from-thee-greek",
+        "in-thy-book-all-my-members-were-written-or-in-thy-book-all-shall-be-written-greek",
+        "how-precious-also-are-thy-thoughts-unto-me-or-thy-friends-are-greatly-honoured-greek",
+        "thine-enemies-take-thy-name-in-vain-or-they-shall-take-thy-cities-in-vain-greek",
+        "try-me-and-know-my-thoughts-or-examine-me-and-know-my-paths-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        9,
+        15,
+        16,
+        17,
+        20,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11511,9 +11539,19 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 141,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "let-me-not-eat-of-their-dainties-or-let-me-not-unite-with-their-choice-ones-greek",
+        "it-shall-be-an-excellent-oil-which-shall-not-break-my-head-or-let-not-the-oil-of-the-sinner-anoint-my-head-greek",
+        "as-when-one-cutteth-and-cleaveth-wood-upon-the-earth-or-as-a-lump-of-earth-is-crushed-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        5,
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11538,54 +11576,92 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 144,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "that-our-oxen-may-be-strong-to-labour-or-their-oxen-are-fat-greek"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 145,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-lord-is-good-to-all-or-the-lord-is-good-to-those-that-wait-greek",
+        "thy-kingdom-is-an-everlasting-kingdom-greek-adds-the-lord-is-faithful-in-his-words"
+      ],
+      "annotatedVerses": [
+        9,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 146,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-lord-openeth-the-eyes-of-the-blind-or-the-lord-giveth-wisdom-to-the-blind-greek"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 147,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "who-maketh-grass-to-grow-upon-the-mountains-greek-adds-and-herb-for-the-service-of-men"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 148,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ye-waters-that-be-above-the-heavens-which-waters-does-psalm-148-4-name"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 149,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "to-execute-upon-them-the-judgment-written-which-writing-does-psalm-149-9-mean"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11601,9 +11677,15 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-fear-of-the-lord-is-the-beginning-of-knowledge-or-the-beginning-of-wisdom-greek"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11619,9 +11701,17 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "even-as-a-father-the-son-in-whom-he-delighteth-or-scourges-every-son-whom-he-receives-greek",
+        "he-scorneth-the-scorners-or-the-lord-resists-the-proud-greek"
+      ],
+      "annotatedVerses": [
+        12,
+        34
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11646,9 +11736,15 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-ant-provideth-her-meat-in-the-summer-or-go-to-the-bee-greek"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11664,9 +11760,17 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-lord-possessed-me-in-the-beginning-of-his-way-or-the-lord-made-me-the-beginning-of-his-ways-greek",
+        "the-lord-possessed-me-in-the-beginning-of-his-way-what-is-the-wisdom-that-speaks-in-proverbs-8"
+      ],
+      "annotatedVerses": [
+        22
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11691,9 +11795,17 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-that-winneth-souls-is-wise-or-the-souls-of-transgressors-are-cut-off-before-their-time-greek",
+        "the-righteous-shall-be-recompensed-in-the-earth-or-if-the-righteous-scarcely-be-saved-greek"
+      ],
+      "annotatedVerses": [
+        30,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11754,9 +11866,17 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "whoso-findeth-a-wife-findeth-a-good-thing-or-he-that-puts-away-a-good-wife-puts-away-a-good-thing-greek",
+        "the-words-of-a-talebearer-are-as-wounds-or-fear-casts-down-the-slothful-greek"
+      ],
+      "annotatedVerses": [
+        8,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11790,18 +11910,30 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-that-soweth-iniquity-shall-reap-vanity-or-god-blesses-a-cheerful-and-liberal-man-greek"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "put-a-knife-to-thy-throat-or-apply-thine-hand-knowing-that-it-behoves-thee-to-prepare-such-meats-greek"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11827,11 +11959,13 @@
       "bookId": 19,
       "chapter": 26,
       "annotationIds": [
-        "exp-late-19-26-4"
+        "exp-late-19-26-4",
+        "the-great-god-that-formed-all-things-rewardeth-the-fool-or-all-the-flesh-of-fools-endures-much-hardship-greek"
       ],
       "annotatedVerses": [
         4,
-        5
+        5,
+        10
       ],
       "modes": [
         "contradictions"
@@ -11851,36 +11985,68 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 28,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-man-that-doeth-violence-to-the-blood-of-any-person-shall-flee-or-he-that-becomes-surety-for-a-man-charged-with-murder-greek"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 29,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "where-there-is-no-vision-the-people-perish-or-there-shall-be-no-interpreter-to-a-sinful-nation-greek"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 30,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-words-of-agur-the-son-of-jakeh-unto-ithiel-and-ucal-or-these-things-says-the-man-to-them-that-trust-in-god-greek",
+        "i-neither-learned-wisdom-or-god-has-taught-me-wisdom-greek",
+        "agur-the-son-of-jakeh-ithiel-and-ucal-who-are-they-in-proverbs-30-1",
+        "what-is-his-name-and-what-is-his-sons-name-who-is-the-one-asked-after-in-proverbs-30-4"
+      ],
+      "annotatedVerses": [
+        1,
+        3,
+        4
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 31,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "she-is-not-afraid-of-the-snow-clothed-with-scarlet-or-her-husband-is-not-anxious-about-those-at-home-greek",
+        "the-words-of-king-lemuel-or-my-words-have-been-spoken-by-god-the-oracular-answer-of-a-king-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

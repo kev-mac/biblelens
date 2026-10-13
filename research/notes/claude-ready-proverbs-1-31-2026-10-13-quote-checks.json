@@ -1,0 +1,3629 @@
+{
+  "batch": "proverbs-1-31",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "the-fear-of-the-lord-is-the-beginning-of-knowledge-or-the-beginning-of-wisdom-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 1:7",
+          "quote": "The fear of the Lord is the beginning of knowledge: but fools despise wisdom and instruction.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יִרְאַ֣ת יְ֭הוָה רֵאשִׁ֣ית דָּ֑עַת",
+          "stated": {
+            "chapter": 1,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/1/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἀρχὴ σοφίας φόβος",
+          "stated": {
+            "chapter": 1,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO01.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 1:7",
+          "quote": "the beginning of knowledge",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO01.htm",
+          "printedLabel": "7",
+          "quote": "The fear of the Lord is the beginning of wisdom; and there is good understanding to all that practise it: and piety toward God is the beginning of discernment",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "σοφίας",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO01.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The beginning of knowledge",
+          "matches": [
+            "Proverbs 1:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the beginning of wisdom",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO01.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the beginning of knowledge",
+          "matches": [
+            "Proverbs 1:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "wisdom and instruction",
+          "matches": [
+            "Proverbs 1:7"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO01.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "wisdom",
+          "matches": [
+            "Proverbs 1:7"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO01.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The fear of the Lord is the beginning of knowledge: but fools despise wisdom and instruction.",
+          "matches": [
+            "Proverbs 1:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The fear of the Lord is the beginning of wisdom; and there is good understanding to all that practise it: and piety toward God is the beginning of discernment",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO01.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "knowledge",
+          "matches": [
+            "Proverbs 1:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "wisdom",
+          "matches": [
+            "Proverbs 1:7"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO01.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "wisdom",
+          "matches": [
+            "Proverbs 1:7"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO01.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the beginning of discernment",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO01.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "even-as-a-father-the-son-in-whom-he-delighteth-or-scourges-every-son-whom-he-receives-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 3:12",
+          "quote": "For whom the Lord loveth he correcteth; even as a father the son in whom he delighteth.",
+          "exact": true
+        },
+        {
+          "ref": "Hebrews 12:6",
+          "quote": "For whom the Lord loveth he chasteneth, and scourgeth every son whom he receiveth.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּ֝כְאָ֗ב אֶת־בֵּ֥ן יִרְצֶֽה",
+          "stated": {
+            "chapter": 3,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/3/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "μαστιγοῖ δὲ πάντα υἱὸν ὃν παραδέχεται",
+          "stated": {
+            "chapter": 3,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO03.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "μαστιγοῖ δὲ πάντα υἱὸν ὃν παραδέχεται",
+          "stated": {
+            "chapter": 12,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/12/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 3:12",
+          "quote": "even as a father the son in whom he delighteth",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Hebrews 12:6",
+          "quote": "scourgeth every son whom he receiveth",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+          "printedLabel": "12",
+          "quote": "for whom the Lord loves, he rebukes, and scourges every son whom he receives",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Even as a father the son in whom he delighteth",
+          "matches": [
+            "Proverbs 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "scourges every son whom he receives",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the son in whom he delighteth",
+          "matches": [
+            "Proverbs 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "scourges every son whom he receives",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "For whom the Lord loveth he correcteth; even as a father the son in whom he delighteth.",
+          "matches": [
+            "Proverbs 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "for whom the Lord loves, he rebukes, and scourges every son whom he receives",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "For whom the Lord loveth he chasteneth, and scourgeth every son whom he receiveth.",
+          "matches": [
+            "Hebrews 12:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "delighteth",
+          "matches": [
+            "Proverbs 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "every son whom he receives",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "scourgeth every son whom he receiveth",
+          "matches": [
+            "Hebrews 12:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [
+        {
+          "url": "https://bolls.life/get-text/TR/58/12/",
+          "printedLabel": "6",
+          "quote": "μαστιγοῖ δὲ πάντα υἱὸν ὃν παραδέχεται",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        }
+      ]
+    },
+    {
+      "id": "he-scorneth-the-scorners-or-the-lord-resists-the-proud-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 3:34",
+          "quote": "Surely he scorneth the scorners: but he giveth grace unto the lowly.",
+          "exact": true
+        },
+        {
+          "ref": "James 4:6",
+          "quote": "But he giveth more grace. Wherefore he saith, God resisteth the proud, but giveth grace unto the humble.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אִם־לַלֵּצִ֥ים הֽוּא־יָלִ֑יץ",
+          "stated": {
+            "chapter": 3,
+            "verse": "34"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/3/",
+              "verse": 34
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Κύριος ὑπερηφάνοις ἀντιτάσσεται, ταπεινοῖς δὲ δίδωσι χάριν",
+          "stated": {
+            "chapter": 3,
+            "verse": "34"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO03.htm",
+              "verse": "34"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὑπερηφάνοις ἀντιτάσσεται, ταπεινοῖς δὲ δίδωσιν χάριν",
+          "stated": {
+            "chapter": 4,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/59/4/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 3:34",
+          "quote": "he scorneth the scorners",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "James 4:6",
+          "quote": "God resisteth the proud",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+          "printedLabel": "34",
+          "quote": "The Lord resists the proud; but he gives grace to the humble",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ὑπερηφάνοις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO03.htm",
+              "verse": "34"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/59/4/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἀντιτάσσεται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO03.htm",
+              "verse": "34"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/59/4/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "He scorneth the scorners",
+          "matches": [
+            "Proverbs 3:34"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the Lord resists the proud",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+              "printedLabel": "34"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "he scorneth the scorners",
+          "matches": [
+            "Proverbs 3:34"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "resists",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+              "printedLabel": "34"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the proud",
+          "matches": [
+            "James 4:6"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+              "printedLabel": "34"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Surely he scorneth the scorners: but he giveth grace unto the lowly.",
+          "matches": [
+            "Proverbs 3:34"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord resists the proud; but he gives grace to the humble",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+              "printedLabel": "34"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "But he giveth more grace. Wherefore he saith, God resisteth the proud, but giveth grace unto the humble.",
+          "matches": [
+            "James 4:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "scorners",
+          "matches": [
+            "Proverbs 3:34"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "God resisteth the proud",
+          "matches": [
+            "James 4:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "scorners",
+          "matches": [
+            "Proverbs 3:34"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "the proud",
+          "matches": [
+            "James 4:6"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO03.htm",
+              "printedLabel": "34"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [
+        {
+          "url": "https://bolls.life/get-text/TR/59/4/",
+          "printedLabel": "6",
+          "quote": "ὑπερηφάνοις ἀντιτάσσεται, ταπεινοῖς δὲ δίδωσιν χάριν",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        }
+      ]
+    },
+    {
+      "id": "the-lord-possessed-me-in-the-beginning-of-his-way-or-the-lord-made-me-the-beginning-of-his-ways-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 8:22",
+          "quote": "The Lord possessed me in the beginning of his way, before his works of old.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יְֽהוָ֗ה קָ֭נָנִי רֵאשִׁ֣ית דַּרְכֹּ֑ו",
+          "stated": {
+            "chapter": 8,
+            "verse": "22"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/8/",
+              "verse": 22
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Κύριος ἔκτισέ με ἀρχὴν ὁδῶν αὐτοῦ εἰς ἔργα αὐτοῦ",
+          "stated": {
+            "chapter": 8,
+            "verse": "22"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO08.htm",
+              "verse": "22"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 8:22",
+          "quote": "The Lord possessed me in the beginning of his way",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO08.htm",
+          "printedLabel": "22",
+          "quote": "The Lord made me the beginning of his ways for his works",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἔκτισε",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO08.htm",
+              "verse": "22"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The Lord possessed me",
+          "matches": [
+            "Proverbs 8:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "The Lord made me",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO08.htm",
+              "printedLabel": "22"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "The Lord possessed me in the beginning of his way, before his works of old",
+          "matches": [
+            "Proverbs 8:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "made",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO08.htm",
+              "printedLabel": "22"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "for his works",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO08.htm",
+              "printedLabel": "22"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord possessed me in the beginning of his way, before his works of old.",
+          "matches": [
+            "Proverbs 8:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord made me the beginning of his ways for his works",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO08.htm",
+              "printedLabel": "22"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "possessed",
+          "matches": [
+            "Proverbs 8:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "before his works of old",
+          "matches": [
+            "Proverbs 8:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "made",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO08.htm",
+              "printedLabel": "22"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "for his works",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO08.htm",
+              "printedLabel": "22"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "before his works of old",
+          "matches": [
+            "Proverbs 8:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "possessed",
+          "matches": [
+            "Proverbs 8:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "made",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO08.htm",
+              "printedLabel": "22"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "he-that-winneth-souls-is-wise-or-the-souls-of-transgressors-are-cut-off-before-their-time-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 11:30",
+          "quote": "The fruit of the righteous is a tree of life; and he that winneth souls is wise.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְלֹקֵ֖חַ נְפָשֹׂ֣ות חָכָֽם",
+          "stated": {
+            "chapter": 11,
+            "verse": "30"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/11/",
+              "verse": 30
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀφαιροῦνται δὲ ἄωροι ψυχαὶ παρανόμων",
+          "stated": {
+            "chapter": 11,
+            "verse": "30"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO11.htm",
+              "verse": "30"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 11:30",
+          "quote": "he that winneth souls is wise",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+          "printedLabel": "30",
+          "quote": "but the souls of transgressors are cut off before their time",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "παρανόμων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO11.htm",
+              "verse": "30"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἄωροι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO11.htm",
+              "verse": "30"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "He that winneth souls is wise",
+          "matches": [
+            "Proverbs 11:30"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the souls of transgressors are cut off before their time",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+              "printedLabel": "30"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "he that winneth souls is wise",
+          "matches": [
+            "Proverbs 11:30"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the souls of transgressors are cut off before their time",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+              "printedLabel": "30"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The fruit of the righteous is a tree of life; and he that winneth souls is wise.",
+          "matches": [
+            "Proverbs 11:30"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "but the souls of transgressors are cut off before their time",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+              "printedLabel": "30"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "souls",
+          "matches": [
+            "Proverbs 11:30"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+              "printedLabel": "30"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "winneth",
+          "matches": [
+            "Proverbs 11:30"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-righteous-shall-be-recompensed-in-the-earth-or-if-the-righteous-scarcely-be-saved-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 11:31",
+          "quote": "Behold, the righteous shall be recompensed in the earth: much more the wicked and the sinner.",
+          "exact": true
+        },
+        {
+          "ref": "1 Peter 4:18",
+          "quote": "And if the righteous scarcely be saved, where shall the ungodly and the sinner appear?",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הֵ֣ן צַ֭דִּיק בָּאָ֣רֶץ יְשֻׁלָּ֑ם אַ֝֗ף כִּֽי־רָשָׁ֥ע וְחֹוטֵֽא",
+          "stated": {
+            "chapter": 11,
+            "verse": "31"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/11/",
+              "verse": 31
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Εἰ ὁ μὲν δίκαιος μόλις σώζεται, ὁ ἀσεβὴς καὶ ἁμαρτωλὸς ποῦ φανεῖται",
+          "stated": {
+            "chapter": 11,
+            "verse": "31"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO11.htm",
+              "verse": "31"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὁ δίκαιος μόλις σῴζεται, ὁ ἀσεβὴς καὶ ἁμαρτωλὸς ποῦ φανεῖται",
+          "stated": {
+            "chapter": 4,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/60/4/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 11:31",
+          "quote": "the righteous shall be recompensed in the earth",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "1 Peter 4:18",
+          "quote": "the righteous scarcely be saved",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+          "printedLabel": "31",
+          "quote": "If the righteous scarcely be saved, where shall the ungodly and the sinner appear?",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The righteous shall be recompensed in the earth",
+          "matches": [
+            "Proverbs 11:31"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "If the righteous scarcely be saved",
+          "matches": [
+            "1 Peter 4:18"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+              "printedLabel": "31"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "shall be recompensed in the earth",
+          "matches": [
+            "Proverbs 11:31"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "where shall the ungodly and the sinner appear?",
+          "matches": [
+            "1 Peter 4:18"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+              "printedLabel": "31"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "If the righteous scarcely be saved",
+          "matches": [
+            "1 Peter 4:18"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+              "printedLabel": "31"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Behold, the righteous shall be recompensed in the earth: much more the wicked and the sinner.",
+          "matches": [
+            "Proverbs 11:31"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "If the righteous scarcely be saved, where shall the ungodly and the sinner appear?",
+          "matches": [
+            "1 Peter 4:18"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+              "printedLabel": "31"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And if the righteous scarcely be saved, where shall the ungodly and the sinner appear?",
+          "matches": [
+            "1 Peter 4:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "much more",
+          "matches": [
+            "Proverbs 11:31"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the righteous scarcely be saved, where shall the ungodly and the sinner appear",
+          "matches": [
+            "1 Peter 4:18"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO11.htm",
+              "printedLabel": "31"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [
+        {
+          "url": "https://bolls.life/get-text/TR/60/4/",
+          "printedLabel": "18",
+          "quote": "ὁ δίκαιος μόλις σῴζεται, ὁ ἀσεβὴς καὶ ἁμαρτωλὸς ποῦ φανεῖται",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        }
+      ]
+    },
+    {
+      "id": "the-ant-provideth-her-meat-in-the-summer-or-go-to-the-bee-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 6:6",
+          "quote": "Go to the ant, thou sluggard; consider her ways, and be wise:",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 6:7",
+          "quote": "Which having no guide, overseer, or ruler,",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 6:8",
+          "quote": "Provideth her meat in the summer, and gathereth her food in the harvest.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "ἢ πορεύθητι πρὸς τὴν μέλισσαν, καὶ μάθε ὡς ἐργάτις ἐστὶ",
+          "stated": {
+            "chapter": 6,
+            "verse": "8a"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO06.htm",
+              "verse": "8a"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τὴν σοφίαν τιμήσασα προήχθη",
+          "stated": {
+            "chapter": 6,
+            "verse": "8c"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO06.htm",
+              "verse": "8c"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 6:8",
+          "quote": "gathereth her food in the harvest",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO06.htm",
+          "printedLabel": "8a",
+          "quote": "Or go to the bee, and learn how diligent she is",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO06.htm",
+          "printedLabel": "8c",
+          "quote": "she is advanced by honouring wisdom",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Go to the ant",
+          "matches": [
+            "Proverbs 6:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "go to the bee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO06.htm",
+              "printedLabel": "8a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "to the bee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO06.htm",
+              "printedLabel": "8a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Go to the ant, thou sluggard; consider her ways, and be wise:",
+          "matches": [
+            "Proverbs 6:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Which having no guide, overseer, or ruler,",
+          "matches": [
+            "Proverbs 6:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Provideth her meat in the summer, and gathereth her food in the harvest.",
+          "matches": [
+            "Proverbs 6:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Or go to the bee, and learn how diligent she is",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO06.htm",
+              "printedLabel": "8a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "she is advanced by honouring wisdom",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO06.htm",
+              "printedLabel": "8c"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "bee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO06.htm",
+              "printedLabel": "8a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "he-that-soweth-iniquity-shall-reap-vanity-or-god-blesses-a-cheerful-and-liberal-man-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 22:8",
+          "quote": "He that soweth iniquity shall reap vanity: and the rod of his anger shall fail.",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 22:9",
+          "quote": "He that hath a bountiful eye shall be blessed; for he giveth of his bread to the poor.",
+          "exact": true
+        },
+        {
+          "ref": "2 Corinthians 9:7",
+          "quote": "Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "ἄνδρα ἱλαρὸν καὶ δότην εὐλογεῖ ὁ Θεὸς",
+          "stated": {
+            "chapter": 22,
+            "verse": "8a"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO22.htm",
+              "verse": "8a"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἱλαρὸν γὰρ δότην ἀγαπᾷ ὁ θεός",
+          "stated": {
+            "chapter": 9,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/47/9/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 22:8",
+          "quote": "He that soweth iniquity shall reap vanity",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "2 Corinthians 9:7",
+          "quote": "God loveth a cheerful giver",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+          "printedLabel": "8a",
+          "quote": "God loves a cheerful and liberal man",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "God loves a cheerful and liberal man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+              "printedLabel": "8a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "He that soweth iniquity shall reap vanity: and the rod of his anger shall fail.",
+          "matches": [
+            "Proverbs 22:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "He that hath a bountiful eye shall be blessed; for he giveth of his bread to the poor.",
+          "matches": [
+            "Proverbs 22:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "God loves a cheerful and liberal man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+              "printedLabel": "8a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver.",
+          "matches": [
+            "2 Corinthians 9:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [
+        {
+          "url": "https://bolls.life/get-text/TR/47/9/",
+          "printedLabel": "7",
+          "quote": "ἱλαρὸν γὰρ δότην ἀγαπᾷ ὁ θεός",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        }
+      ]
+    },
+    {
+      "id": "train-up-a-child-in-the-way-he-should-go-brentons-greek-prints-no-verse-22-6",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 22:5",
+          "quote": "Thorns and snares are in the way of the froward: he that doth keep his soul shall be far from them.",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 22:6",
+          "quote": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 22:7",
+          "quote": "The rich ruleth over the poor, and the borrower is servant to the lender.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "חֲנֹ֣ךְ לַ֭נַּעַר עַל־פִּ֣י דַרְכֹּ֑ו גַּ֥ם כִּֽי־יַ֝זְקִ֗ין לֹֽא־יָס֥וּר מִמֶּֽנָּה",
+          "stated": {
+            "chapter": 22,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/22/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Τρίβολοι καὶ παγίδες ἐν ὁδοῖς σκολιαῖς",
+          "stated": {
+            "chapter": 22,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO22.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Πλούσιοι πτωχῶν ἄρξουσι",
+          "stated": {
+            "chapter": 22,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO22.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 22:6",
+          "quote": "Train up a child in the way he should go",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+          "printedLabel": "5",
+          "quote": "Thistles and snares are in perverse ways",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+          "printedLabel": "7",
+          "quote": "The rich will rule over the poor",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Train up a child in the way he should go",
+          "matches": [
+            "Proverbs 22:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
+          "matches": [
+            "Proverbs 22:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Thorns and snares are in the way of the froward: he that doth keep his soul shall be far from them.",
+          "matches": [
+            "Proverbs 22:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
+          "matches": [
+            "Proverbs 22:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The rich ruleth over the poor, and the borrower is servant to the lender.",
+          "matches": [
+            "Proverbs 22:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Thistles and snares are in perverse ways",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The rich will rule over the poor",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "omissionChecks": [
+        {
+          "url": "https://ebible.org/grcbrent/PRO22.htm",
+          "printedLabel": "6",
+          "absent": true,
+          "limit": "This supplied printed edition only; not a claim about every Greek witness"
+        }
+      ]
+    },
+    {
+      "id": "wisdom-is-the-principal-thing-therefore-get-wisdom-brentons-greek-prints-no-verse-4-7",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 4:6",
+          "quote": "Forsake her not, and she shall preserve thee: love her, and she shall keep thee.",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 4:7",
+          "quote": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 4:8",
+          "quote": "Exalt her, and she shall promote thee: she shall bring thee to honour, when thou dost embrace her.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "רֵאשִׁ֣ית חָ֭כְמָה קְנֵ֣ה חָכְמָ֑ה וּבְכָל־קִ֝נְיָנְךָ֗ קְנֵ֣ה בִינָֽה",
+          "stated": {
+            "chapter": 4,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/4/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "μηδὲ ἐγκαταλίπῃς αὐτὴν, καὶ ἀνθέξεταί σου",
+          "stated": {
+            "chapter": 4,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO04.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Περιχαράκωσον αὐτὴν, καὶ ὑψώσει σε",
+          "stated": {
+            "chapter": 4,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO04.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "κτῆσαι σοφίαν",
+          "classification": "Verified absent search token in supplied chapter 4 page",
+          "matches": [],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 4:7",
+          "quote": "Wisdom is the principal thing",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO04.htm",
+          "printedLabel": "6",
+          "quote": "And forsake it not, and it shall cleave to thee",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO04.htm",
+          "printedLabel": "8",
+          "quote": "Secure it, and it shall exalt thee",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Wisdom is the principal thing; therefore get wisdom",
+          "matches": [
+            "Proverbs 4:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
+          "matches": [
+            "Proverbs 4:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Forsake her not, and she shall preserve thee: love her, and she shall keep thee.",
+          "matches": [
+            "Proverbs 4:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
+          "matches": [
+            "Proverbs 4:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Exalt her, and she shall promote thee: she shall bring thee to honour, when thou dost embrace her.",
+          "matches": [
+            "Proverbs 4:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And forsake it not, and it shall cleave to thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO04.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Secure it, and it shall exalt thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO04.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "omissionChecks": [
+        {
+          "url": "https://ebible.org/grcbrent/PRO04.htm",
+          "printedLabel": "7",
+          "absent": true,
+          "limit": "This supplied printed edition only; not a claim about every Greek witness"
+        }
+      ]
+    },
+    {
+      "id": "put-a-knife-to-thy-throat-or-apply-thine-hand-knowing-that-it-behoves-thee-to-prepare-such-meats-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 23:1",
+          "quote": "When thou sittest to eat with a ruler, consider diligently what is before thee:",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 23:2",
+          "quote": "And put a knife to thy throat, if thou be a man given to appetite.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְשַׂמְתָּ֣ שַׂכִּ֣ין בְּלֹעֶ֑ךָ",
+          "stated": {
+            "chapter": 23,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/23/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἐπίβαλλε τὴν χεῖρά σου, εἰδὼς ὅτι τοιαῦτά σε δεῖ παρασκευάσαι",
+          "stated": {
+            "chapter": 23,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO23.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 23:2",
+          "quote": "put a knife to thy throat",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO23.htm",
+          "printedLabel": "2",
+          "quote": "and apply thine hand, knowing that it behoves thee to prepare such meats",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Put a knife to thy throat",
+          "matches": [
+            "Proverbs 23:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "apply thine hand, knowing that it behoves thee to prepare such meats",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO23.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "put a knife to thy throat",
+          "matches": [
+            "Proverbs 23:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "When thou sittest to eat with a ruler, consider diligently what is before thee:",
+          "matches": [
+            "Proverbs 23:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And put a knife to thy throat, if thou be a man given to appetite.",
+          "matches": [
+            "Proverbs 23:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and apply thine hand, knowing that it behoves thee to prepare such meats",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO23.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "knife",
+          "matches": [
+            "Proverbs 23:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "where-there-is-no-vision-the-people-perish-or-there-shall-be-no-interpreter-to-a-sinful-nation-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 29:18",
+          "quote": "Where there is no vision, the people perish: but he that keepeth the law, happy is he.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּאֵ֣ין חָ֭זֹון יִפָּ֣רַֽע עָ֑ם",
+          "stated": {
+            "chapter": 29,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/29/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Οὐ μὴ ὑπάρξῃ ἐξηγητὴς ἔθνει παρανόμῳ",
+          "stated": {
+            "chapter": 29,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO29.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 29:18",
+          "quote": "Where there is no vision, the people perish",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO29.htm",
+          "printedLabel": "18",
+          "quote": "There shall be no interpreter to a sinful nation",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἐξηγητής",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO29.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Where there is no vision, the people perish",
+          "matches": [
+            "Proverbs 29:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "There shall be no interpreter to a sinful nation",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO29.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Where there is no vision, the people perish",
+          "matches": [
+            "Proverbs 29:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "interpreter",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO29.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "to a sinful nation",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO29.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Where there is no vision, the people perish: but he that keepeth the law, happy is he.",
+          "matches": [
+            "Proverbs 29:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "There shall be no interpreter to a sinful nation",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO29.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "vision",
+          "matches": [
+            "Proverbs 29:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "perish",
+          "matches": [
+            "Proverbs 29:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "she-is-not-afraid-of-the-snow-clothed-with-scarlet-or-her-husband-is-not-anxious-about-those-at-home-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 31:21",
+          "quote": "She is not afraid of the snow for her household: for all her household are clothed with scarlet.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לֹא־תִירָ֣א לְבֵיתָ֣הּ מִשָּׁ֑לֶג כִּ֥י כָל־בֵּ֝יתָ֗הּ לָבֻ֥שׁ שָׁנִֽים",
+          "stated": {
+            "chapter": 31,
+            "verse": "21"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/31/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Οὐ φροντίζει τῶν ἐν οἴκῳ ὁ ἀνὴρ αὐτῆς ὅταν που χρονίζῃ",
+          "stated": {
+            "chapter": 31,
+            "verse": "21"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO31.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 31:21",
+          "quote": "She is not afraid of the snow for her household",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO31.htm",
+          "printedLabel": "21",
+          "quote": "Her husband is not anxious about those at home when he tarries anywhere abroad: for all her household are clothed",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "She is not afraid of the snow for her household",
+          "matches": [
+            "Proverbs 31:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Her husband is not anxious about those at home",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO31.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "She is not afraid of the snow for her household: for all her household are clothed with scarlet.",
+          "matches": [
+            "Proverbs 31:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Her husband is not anxious about those at home when he tarries anywhere abroad: for all her household are clothed",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO31.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "double",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified Brenton English at explicitly supplied scope label 31:22"
+        },
+        {
+          "field": "scope",
+          "quote": "scarlet",
+          "matches": [
+            "Proverbs 31:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-words-of-agur-the-son-of-jakeh-unto-ithiel-and-ucal-or-these-things-says-the-man-to-them-that-trust-in-god-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 30:1",
+          "quote": "The words of Agur the son of Jakeh, even the prophecy: the man spake unto Ithiel, even unto Ithiel and Ucal,",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "דִּבְרֵ֤י ׀ אָג֥וּר בִּן־יָקֶ֗ה",
+          "stated": {
+            "chapter": 30,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/30/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "הַ֭גֶּבֶר לְאִֽיתִיאֵ֑ל לְאִ֖יתִיאֵ֣ל וְאֻכָֽל",
+          "stated": {
+            "chapter": 30,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/30/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Τάδε λέγει ὁ ἀνὴρ τοῖς πιστεύουσι Θεῷ, καὶ παύομαι",
+          "stated": {
+            "chapter": 24,
+            "verse": "22f"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO24.htm",
+              "verse": "22f"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 30:1",
+          "quote": "The words of Agur the son of Jakeh",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+          "printedLabel": "22f",
+          "quote": "These things says the man to them that trust in God; and I cease",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "τοῖς πιστεύουσι Θεῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO24.htm",
+              "verse": "22f"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "παύομαι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO24.htm",
+              "verse": "22f"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The words of Agur the son of Jakeh … unto Ithiel and Ucal",
+          "matches": [
+            "Proverbs 30:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "These things says the man to them that trust in God; and I cease",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "22f"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the man",
+          "matches": [
+            "Proverbs 30:1"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "22f"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "to them that trust in God",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "22f"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "I cease",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "22f"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The words of Agur the son of Jakeh, even the prophecy: the man spake unto Ithiel, even unto Ithiel and Ucal,",
+          "matches": [
+            "Proverbs 30:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "These things says the man to them that trust in God; and I cease",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "22f"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the man",
+          "matches": [
+            "Proverbs 30:1"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "22f"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "I cease",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "22f"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "Ithiel",
+          "matches": [
+            "Proverbs 30:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "Ucal",
+          "matches": [
+            "Proverbs 30:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "i-neither-learned-wisdom-or-god-has-taught-me-wisdom-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 30:2",
+          "quote": "Surely I am more brutish than any man, and have not the understanding of a man.",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 30:3",
+          "quote": "I neither learned wisdom, nor have the knowledge of the holy.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְלֹֽא־לָמַ֥דְתִּי חָכְמָ֑ה וְדַ֖עַת קְדֹשִׁ֣ים אֵדָֽע",
+          "stated": {
+            "chapter": 30,
+            "verse": "3"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/30/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἀφρονέστατος γάρ εἰμι ἁπάντων ἀνθρώπων",
+          "stated": {
+            "chapter": 24,
+            "verse": "22g"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO24.htm",
+              "verse": "22g"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Θεὸς δεδίδαχέ με σοφίαν, καὶ γνῶσιν ἁγίων ἔγνωκα",
+          "stated": {
+            "chapter": 24,
+            "verse": "22h"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO24.htm",
+              "verse": "22h"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 30:3",
+          "quote": "I neither learned wisdom, nor have the knowledge of the holy",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+          "printedLabel": "22h",
+          "quote": "God has taught me wisdom, and I know the knowledge of the holy",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "I neither learned wisdom",
+          "matches": [
+            "Proverbs 30:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "God has taught me wisdom",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "22h"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "I neither learned wisdom, nor have the knowledge of the holy",
+          "matches": [
+            "Proverbs 30:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Surely I am more brutish than any man, and have not the understanding of a man.",
+          "matches": [
+            "Proverbs 30:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I neither learned wisdom, nor have the knowledge of the holy.",
+          "matches": [
+            "Proverbs 30:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "God has taught me wisdom, and I know the knowledge of the holy",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "22h"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-words-of-king-lemuel-or-my-words-have-been-spoken-by-god-the-oracular-answer-of-a-king-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 31:1",
+          "quote": "The words of king Lemuel, the prophecy that his mother taught him.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "דִּ֭בְרֵי לְמוּאֵ֣ל מֶ֑לֶךְ",
+          "stated": {
+            "chapter": 31,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/31/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Οἱ ἐμοὶ λόγοι εἴρηνται ὑπὸ Θεοῦ, βασιλέως χρηματισμὸς",
+          "stated": {
+            "chapter": 24,
+            "verse": "54"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO24.htm",
+              "verse": "54"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 31:1",
+          "quote": "The words of king Lemuel",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+          "printedLabel": "54",
+          "quote": "My words have been spoken by God—the oracular answer of a king, whom his mother instructed",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ὑπὸ Θεοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO24.htm",
+              "verse": "54"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The words of king Lemuel",
+          "matches": [
+            "Proverbs 31:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "My words have been spoken by God",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "54"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "king Lemuel",
+          "matches": [
+            "Proverbs 31:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the prophecy that his mother taught him",
+          "matches": [
+            "Proverbs 31:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "My words have been spoken by God",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "54"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The words of king Lemuel, the prophecy that his mother taught him.",
+          "matches": [
+            "Proverbs 31:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "My words have been spoken by God—the oracular answer of a king, whom his mother instructed",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO24.htm",
+              "printedLabel": "54"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "O Lemuel",
+          "matches": [
+            "Proverbs 31:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-great-god-that-formed-all-things-rewardeth-the-fool-or-all-the-flesh-of-fools-endures-much-hardship-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 26:10",
+          "quote": "The great God that formed all things both rewardeth the fool, and rewardeth transgressors.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "רַ֥ב מְחֹֽולֵֽל־כֹּ֑ל וְשֹׂכֵ֥ר כְּ֝סִ֗יל וְשֹׂכֵ֥ר עֹבְרִֽים",
+          "stated": {
+            "chapter": 26,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/26/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Πολλὰ χειμάζεται πᾶσα σὰρξ ἀφρόνων",
+          "stated": {
+            "chapter": 26,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO26.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 26:10",
+          "quote": "The great God that formed all things",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO26.htm",
+          "printedLabel": "10",
+          "quote": "All the flesh of fools endures much hardship; for their fury is brought to nought",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The great God that formed all things",
+          "matches": [
+            "Proverbs 26:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "All the flesh of fools endures much hardship",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO26.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the great God that formed all things",
+          "matches": [
+            "Proverbs 26:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The great God that formed all things both rewardeth the fool, and rewardeth transgressors.",
+          "matches": [
+            "Proverbs 26:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "All the flesh of fools endures much hardship; for their fury is brought to nought",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO26.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the great God that formed all things",
+          "matches": [
+            "Proverbs 26:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "whoso-findeth-a-wife-findeth-a-good-thing-or-he-that-puts-away-a-good-wife-puts-away-a-good-thing-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 18:22",
+          "quote": "Whoso findeth a wife findeth a good thing, and obtaineth favour of the Lord.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "Ὃς εὗρε γυναῖκα ἀγαθὴν, εὗρε χάριτας",
+          "stated": {
+            "chapter": 18,
+            "verse": "22"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO18.htm",
+              "verse": "22"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὃς ἐκβάλλει γυναῖκα ἀγαθὴν, ἐκβάλλει τὰ ἀγαθὰ, ὁ δὲ κατέχων μοιχαλίδα, ἄφρων καὶ ἀσεβής",
+          "stated": {
+            "chapter": 18,
+            "verse": "22a"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO18.htm",
+              "verse": "22a"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 18:22",
+          "quote": "Whoso findeth a wife findeth a good thing",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+          "printedLabel": "22",
+          "quote": "He that has found a good wife has found favours",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+          "printedLabel": "22a",
+          "quote": "He that puts away a good wife, puts away a good thing, and he that keeps an adulteress is foolish and ungodly",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "He that puts away a good wife, puts away a good thing",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+              "printedLabel": "22a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Whoso findeth a wife findeth a good thing, and obtaineth favour of the Lord.",
+          "matches": [
+            "Proverbs 18:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "He that has found a good wife has found favours",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+              "printedLabel": "22"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "He that puts away a good wife, puts away a good thing, and he that keeps an adulteress is foolish and ungodly",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+              "printedLabel": "22a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "put away",
+          "matches": [],
+          "brenton": [],
+          "kind": "Word-search token, not an asserted quotation"
+        },
+        {
+          "field": "text",
+          "quote": "adulter",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+              "printedLabel": "22a"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-words-of-a-talebearer-are-as-wounds-or-fear-casts-down-the-slothful-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 18:8",
+          "quote": "The words of a talebearer are as wounds, and they go down into the innermost parts of the belly.",
+          "exact": true
+        },
+        {
+          "ref": "Proverbs 26:22",
+          "quote": "The words of a talebearer are as wounds, and they go down into the innermost parts of the belly.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "דִּבְרֵ֣י נִ֭רְגָּן כְּמִֽתְלַהֲמִ֑ים וְ֝הֵ֗ם יָרְד֥וּ חַדְרֵי־בָֽטֶן",
+          "stated": {
+            "chapter": 18,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/18/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ὀκνηροὺς καταβάλλει φόβος",
+          "stated": {
+            "chapter": 18,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO18.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "דִּבְרֵ֣י נִ֭רְגָּן כְּמִֽתְלַהֲמִ֑ים וְ֝הֵ֗ם יָרְד֥וּ חַדְרֵי־בָֽטֶן",
+          "stated": {
+            "chapter": 26,
+            "verse": "22"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/26/",
+              "verse": 22
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 18:8",
+          "quote": "The words of a talebearer are as wounds",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+          "printedLabel": "8",
+          "quote": "Fear casts down the slothful; and the souls of the effeminate shall hunger",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO26.htm",
+          "printedLabel": "22",
+          "quote": "The words of cunning knaves are soft",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The words of a talebearer are as wounds",
+          "matches": [
+            "Proverbs 18:8",
+            "Proverbs 26:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Fear casts down the slothful",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "The words of a talebearer are as wounds",
+          "matches": [
+            "Proverbs 18:8",
+            "Proverbs 26:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Fear casts down the slothful; and the souls of the effeminate shall hunger",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The words of a talebearer are as wounds, and they go down into the innermost parts of the belly.",
+          "matches": [
+            "Proverbs 18:8",
+            "Proverbs 26:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Fear casts down the slothful; and the souls of the effeminate shall hunger",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO18.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The words of a talebearer are as wounds, and they go down into the innermost parts of the belly.",
+          "matches": [
+            "Proverbs 18:8",
+            "Proverbs 26:22"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The words of cunning knaves are soft",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO26.htm",
+              "printedLabel": "22"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "a-man-that-doeth-violence-to-the-blood-of-any-person-shall-flee-or-he-that-becomes-surety-for-a-man-charged-with-murder-greek",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 28:17",
+          "quote": "A man that doeth violence to the blood of any person shall flee to the pit; let no man stay him.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אָ֭דָם עָשֻׁ֣ק בְּדַם־נָ֑פֶשׁ עַד־בֹּ֥ור יָ֝נ֗וּס",
+          "stated": {
+            "chapter": 28,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/28/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἄνδρα τὸν ἐν αἰτίᾳ φόνου ὁ ἐγγυώμενος, φυγὰς ἔσται",
+          "stated": {
+            "chapter": 28,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO28.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 28:17",
+          "quote": "A man that doeth violence to the blood of any person shall flee to the pit",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO28.htm",
+          "printedLabel": "17",
+          "quote": "He that becomes surety for a man charged with murder shall be an exile, and not in safety",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A man that doeth violence to the blood of any person shall flee to the pit",
+          "matches": [
+            "Proverbs 28:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "He that becomes surety for a man charged with murder shall be an exile",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO28.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "A man that doeth violence to the blood of any person shall flee to the pit; let no man stay him.",
+          "matches": [
+            "Proverbs 28:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "He that becomes surety for a man charged with murder shall be an exile, and not in safety",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO28.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/19/137/",
+    "https://ebible.org/grcbrent/PSA136.htm",
+    "https://ebible.org/eng-Brenton/PSA136.htm",
+    "https://bolls.life/get-text/WLC/19/138/",
+    "https://ebible.org/grcbrent/PSA137.htm",
+    "https://ebible.org/eng-Brenton/PSA137.htm",
+    "https://bolls.life/get-text/WLC/19/139/",
+    "https://ebible.org/grcbrent/PSA138.htm",
+    "https://ebible.org/eng-Brenton/PSA138.htm",
+    "https://bolls.life/get-text/WLC/19/141/",
+    "https://ebible.org/grcbrent/PSA140.htm",
+    "https://ebible.org/eng-Brenton/PSA140.htm",
+    "https://bolls.life/get-text/WLC/19/144/",
+    "https://ebible.org/grcbrent/PSA143.htm",
+    "https://ebible.org/eng-Brenton/PSA143.htm",
+    "https://bolls.life/get-text/WLC/19/145/",
+    "https://ebible.org/grcbrent/PSA144.htm",
+    "https://ebible.org/eng-Brenton/PSA144.htm",
+    "https://bolls.life/get-text/WLC/19/146/",
+    "https://ebible.org/grcbrent/PSA145.htm",
+    "https://ebible.org/eng-Brenton/PSA145.htm",
+    "https://bolls.life/get-text/WLC/19/147/",
+    "https://ebible.org/grcbrent/PSA146.htm",
+    "https://ebible.org/eng-Brenton/PSA146.htm",
+    "https://bolls.life/get-text/WLC/20/1/",
+    "https://ebible.org/grcbrent/PRO01.htm",
+    "https://ebible.org/eng-Brenton/PRO01.htm",
+    "https://bolls.life/get-text/WLC/20/3/",
+    "https://ebible.org/grcbrent/PRO03.htm",
+    "https://bolls.life/get-text/TISCH/58/12/",
+    "https://bolls.life/get-text/TR/58/12/",
+    "https://ebible.org/eng-Brenton/PRO03.htm",
+    "https://bolls.life/get-text/TISCH/59/4/",
+    "https://bolls.life/get-text/TR/59/4/",
+    "https://bolls.life/get-text/WLC/20/8/",
+    "https://ebible.org/grcbrent/PRO08.htm",
+    "https://ebible.org/eng-Brenton/PRO08.htm",
+    "https://bolls.life/get-text/WLC/20/11/",
+    "https://ebible.org/grcbrent/PRO11.htm",
+    "https://ebible.org/eng-Brenton/PRO11.htm",
+    "https://bolls.life/get-text/TISCH/60/4/",
+    "https://bolls.life/get-text/TR/60/4/",
+    "https://ebible.org/grcbrent/PRO06.htm",
+    "https://ebible.org/eng-Brenton/PRO06.htm",
+    "https://ebible.org/grcbrent/PRO22.htm",
+    "https://bolls.life/get-text/TISCH/47/9/",
+    "https://bolls.life/get-text/TR/47/9/",
+    "https://ebible.org/eng-Brenton/PRO22.htm",
+    "https://bolls.life/get-text/WLC/20/22/",
+    "https://bolls.life/get-text/WLC/20/4/",
+    "https://ebible.org/grcbrent/PRO04.htm",
+    "https://ebible.org/eng-Brenton/PRO04.htm",
+    "https://bolls.life/get-text/WLC/20/23/",
+    "https://ebible.org/grcbrent/PRO23.htm",
+    "https://ebible.org/eng-Brenton/PRO23.htm",
+    "https://bolls.life/get-text/WLC/20/29/",
+    "https://ebible.org/grcbrent/PRO29.htm",
+    "https://ebible.org/eng-Brenton/PRO29.htm",
+    "https://bolls.life/get-text/WLC/20/31/",
+    "https://ebible.org/grcbrent/PRO31.htm",
+    "https://ebible.org/eng-Brenton/PRO31.htm",
+    "https://bolls.life/get-text/WLC/20/30/",
+    "https://ebible.org/grcbrent/PRO24.htm",
+    "https://ebible.org/eng-Brenton/PRO24.htm",
+    "https://bolls.life/get-text/WLC/20/26/",
+    "https://ebible.org/grcbrent/PRO26.htm",
+    "https://ebible.org/eng-Brenton/PRO26.htm",
+    "https://ebible.org/grcbrent/PRO18.htm",
+    "https://ebible.org/eng-Brenton/PRO18.htm",
+    "https://bolls.life/get-text/WLC/20/18/",
+    "https://bolls.life/get-text/WLC/20/28/",
+    "https://ebible.org/grcbrent/PRO28.htm",
+    "https://ebible.org/eng-Brenton/PRO28.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 673,
+  "studiesChecked": 6,
+  "suppliedWordSearchChecks": [
+    {
+      "term": "judgment written",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Psalms 149:9"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "strange children",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Hosea 5:7",
+        "Psalms 144:11",
+        "Psalms 144:7"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "Agur",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Proverbs 30:1"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "Jakeh",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Proverbs 30:1"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "Ucal",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Proverbs 30:1"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "Ithiel",
+      "book": null,
+      "chapter": null,
+      "found": [
+        "Nehemiah 11:7",
+        "Proverbs 30:1"
+      ],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "bee",
+      "book": "Proverbs",
+      "chapter": null,
+      "found": [],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "put away",
+      "book": "Proverbs",
+      "chapter": 18,
+      "found": [],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    },
+    {
+      "term": "adulter",
+      "book": "Proverbs",
+      "chapter": 18,
+      "found": [],
+      "limit": "Automated verification of supplied word-search claim only; no new findings or chapter reading"
+    }
+  ],
+  "draftHashes": {
+    "research/claude-drafts/psalms-135-150-records.json": "05db3a7c641cd24634073c5c8211004b723fa4b08446fcf8f2146ba727b08c89",
+    "research/claude-drafts/psalms-135-150-notes.md": "90998c74ffba84705d8489b1cb572ea3373dac4d3b6fa4ffa5404e971bd01c24",
+    "research/claude-drafts/psalms-135-150-q-records.json": "e9cf6b1b3ccb7d374dfe7c45c9655abb32033222cff2464ea771e9c63be8c82a",
+    "research/claude-drafts/psalms-135-150-q-notes.md": "b253f363a46f82cd0cda9a51129b19ffe7373603aae9842e09e0b90c8d32dff2",
+    "research/claude-drafts/proverbs-1-31-records.json": "d99f4f3d4e99b256aa40b2a8be1f87e4c83355895263e152af0c529cb6e5e35a",
+    "research/claude-drafts/proverbs-1-31-notes.md": "39a40c19e66ef4b7a06b4c2dba36e7568fa3501a265870eb04e10b6022e35c52",
+    "research/claude-drafts/proverbs-1-31-q-records.json": "285b828d1cb9271c82f40388280a193e1af239c9a2f6b5c7e3dc6934d1e95d28",
+    "research/claude-drafts/proverbs-1-31-q-notes.md": "4a9ac40f8f59e86fac733452bc71b3e0e9bda46f6bf163b5c76e10c380d672b0"
+  }
+}
