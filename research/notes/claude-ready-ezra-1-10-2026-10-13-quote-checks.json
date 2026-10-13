@@ -1,0 +1,2831 @@
+{
+  "batch": "ezra-1-10",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "returned-families-five-more-counts-ezra-or-nehemiah",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 2:1",
+          "quote": "Now these are the children of the province that went up out of the captivity",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:5",
+          "quote": "And I found a register of the genealogy of them which came up at the first, and found written therein",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:8",
+          "quote": "The children of Zattu, nine hundred forty and five.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:13",
+          "quote": "The children of Zattu, eight hundred forty and five.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:12",
+          "quote": "The children of Azgad, a thousand two hundred twenty and two.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:17",
+          "quote": "The children of Azgad, two thousand three hundred twenty and two.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:15",
+          "quote": "The children of Adin, four hundred fifty and four.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:20",
+          "quote": "The children of Adin, six hundred fifty and five.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:35",
+          "quote": "The children of Senaah, three thousand and six hundred and thirty.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:38",
+          "quote": "The children of Senaah, three thousand nine hundred and thirty.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:41",
+          "quote": "The singers: the children of Asaph, an hundred twenty and eight.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:44",
+          "quote": "The singers: the children of Asaph, an hundred forty and eight.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּנֵ֣י זַתּ֔וּא תְּשַׁ֥ע מֵאֹ֖ות וְאַרְבָּעִ֥ים וַחֲמִשָּֽׁה",
+          "stated": {
+            "chapter": 2,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 8
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י זַתּ֔וּא שְׁמֹנֶ֥ה מֵאֹ֖ות אַרְבָּעִ֥ים וַחֲמִשָּֽׁה",
+          "stated": {
+            "chapter": 7,
+            "verse": 13
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 13
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י עַזְגָּ֔ד אֶ֕לֶף מָאתַ֖יִם עֶשְׂרִ֥ים וּשְׁנָֽיִם",
+          "stated": {
+            "chapter": 2,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 12
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י עַזְגָּ֔ד אַלְפַּ֕יִם שְׁלֹ֥שׁ מֵאֹ֖ות עֶשְׂרִ֥ים וּשְׁנָֽיִם",
+          "stated": {
+            "chapter": 7,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 17
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י עָדִ֔ין אַרְבַּ֥ע מֵאֹ֖ות חֲמִשִּׁ֥ים וְאַרְבָּעָֽה",
+          "stated": {
+            "chapter": 2,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 15
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 15
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י עָדִ֔ין שֵׁ֥שׁ מֵאֹ֖ות חֲמִשִּׁ֥ים וַחֲמִשָּֽׁה",
+          "stated": {
+            "chapter": 7,
+            "verse": 20
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 20
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 20
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י סְנָאָ֔ה שְׁלֹ֣שֶׁת אֲלָפִ֔ים וְשֵׁ֥שׁ מֵאֹ֖ות וּשְׁלֹשִֽׁים",
+          "stated": {
+            "chapter": 2,
+            "verse": 35
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 35
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 35
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י סְנָאָ֔ה שְׁלֹ֣שֶׁת אֲלָפִ֔ים תְּשַׁ֥ע מֵאֹ֖ות וּשְׁלֹשִֽׁים",
+          "stated": {
+            "chapter": 7,
+            "verse": 38
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 38
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 38
+          }
+        },
+        {
+          "quote": "הַֽמְשֹׁרְרִ֑ים בְּנֵ֣י אָסָ֔ף מֵאָ֖ה עֶשְׂרִ֥ים וּשְׁמֹנָֽה",
+          "stated": {
+            "chapter": 2,
+            "verse": 41
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 41
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 41
+          }
+        },
+        {
+          "quote": "הַֽמְשֹׁרְרִ֑ים בְּנֵ֣י אָסָ֔ף מֵאָ֖ה אַרְבָּעִ֥ים וּשְׁמֹנָֽה",
+          "stated": {
+            "chapter": 7,
+            "verse": 44
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 44
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 44
+          }
+        },
+        {
+          "quote": "Υἱοὶ Ζατθουὰ, ἐννακόσιοι τεσσαρακονταπέντε",
+          "stated": {
+            "chapter": 2,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 8
+          }
+        },
+        {
+          "quote": "Υἱοὶ Ἀσγὰδ, χίλιοι διακόσιοι εἰκοσιδύο",
+          "stated": {
+            "chapter": 2,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 12
+          }
+        },
+        {
+          "quote": "Υἱοὶ Ἀδδὶν, τετρακόσιοι πεντηκοντατέσσαρες",
+          "stated": {
+            "chapter": 2,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 15
+          }
+        },
+        {
+          "quote": "Υἱοὶ Σεναὰ, τρισχίλιοι ἑξακόσιοι τριάκοντα",
+          "stated": {
+            "chapter": 2,
+            "verse": 35
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "35"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 35
+          }
+        },
+        {
+          "quote": "Οἱ ᾄδοντες υἱοὶ Ἀσὰφ, ἑκατὸν εἰκοσιοκτώ",
+          "stated": {
+            "chapter": 2,
+            "verse": 41
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "41"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 41
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 2:8",
+          "quote": "nine hundred forty and five",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Nehemiah 7:13",
+          "quote": "eight hundred forty and five",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezra 2:12",
+          "quote": "a thousand two hundred twenty and two",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Nehemiah 7:17",
+          "quote": "two thousand three hundred twenty and two",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezra 2:15",
+          "quote": "four hundred fifty and four",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Nehemiah 7:20",
+          "quote": "six hundred fifty and five",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezra 2:35",
+          "quote": "three thousand and six hundred and thirty",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Nehemiah 7:38",
+          "quote": "three thousand nine hundred and thirty",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezra 2:41",
+          "quote": "an hundred twenty and eight",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Nehemiah 7:44",
+          "quote": "an hundred forty and eight",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "text",
+          "quote": "Now these are the children of the province that went up out of the captivity",
+          "matches": [
+            "Ezra 2:1"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And I found a register of the genealogy of them which came up at the first, and found written therein",
+          "matches": [
+            "Nehemiah 7:5"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Zattu, nine hundred forty and five.",
+          "matches": [
+            "Ezra 2:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Zattu, eight hundred forty and five.",
+          "matches": [
+            "Nehemiah 7:13"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Azgad, a thousand two hundred twenty and two.",
+          "matches": [
+            "Ezra 2:12"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Azgad, two thousand three hundred twenty and two.",
+          "matches": [
+            "Nehemiah 7:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Adin, four hundred fifty and four.",
+          "matches": [
+            "Ezra 2:15"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Adin, six hundred fifty and five.",
+          "matches": [
+            "Nehemiah 7:20"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Senaah, three thousand and six hundred and thirty.",
+          "matches": [
+            "Ezra 2:35"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Senaah, three thousand nine hundred and thirty.",
+          "matches": [
+            "Nehemiah 7:38"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The singers: the children of Asaph, an hundred twenty and eight.",
+          "matches": [
+            "Ezra 2:41"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The singers: the children of Asaph, an hundred forty and eight.",
+          "matches": [
+            "Nehemiah 7:44"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "which came up at the first",
+          "matches": [
+            "Nehemiah 7:5"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    },
+    {
+      "id": "whole-congregation-42360-or-the-sum-of-the-counts-given",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 2:64",
+          "quote": "The whole congregation together was forty and two thousand three hundred and threescore,",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:65",
+          "quote": "Beside their servants and their maids, of whom there were seven thousand three hundred thirty and seven",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:66",
+          "quote": "The whole congregation together was forty and two thousand three hundred and threescore,",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:5",
+          "quote": "And I found a register of the genealogy of them which came up at the first, and found written therein",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כָּל־הַקָּהָ֖ל כְּאֶחָ֑ד אַרְבַּ֣ע רִבֹּ֔וא אַלְפַּ֖יִם שְׁלֹשׁ־מֵאֹ֥ות שִׁשִּֽׁים",
+          "stated": {
+            "chapter": 2,
+            "verse": 64
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 64
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 64
+          }
+        },
+        {
+          "quote": "כָּל־הַקָּהָ֖ל כְּאֶחָ֑ד אַרְבַּ֣ע רִבֹּ֔וא אַלְפַּ֖יִם שְׁלֹשׁ־מֵאֹ֥ות וְשִׁשִּֽׁים",
+          "stated": {
+            "chapter": 7,
+            "verse": 66
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 66
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": 66
+          }
+        },
+        {
+          "quote": "Πᾶσα δὲ ἡ ἐκκλησία ὁμοῦ ὡσεὶ τέσσαρες μυριάδες δισχίλιοι τριακόσιοι ἑξήκοντα",
+          "stated": {
+            "chapter": 2,
+            "verse": 64
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "64"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 64
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 2:64",
+          "quote": "forty and two thousand three hundred and threescore",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:66",
+          "quote": "forty and two thousand three hundred and threescore",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The whole congregation together was forty and two thousand three hundred and threescore",
+          "matches": [
+            "Ezra 2:64",
+            "Nehemiah 7:66"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The whole congregation together was forty and two thousand three hundred and threescore,",
+          "matches": [
+            "Ezra 2:64",
+            "Nehemiah 7:66"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Beside their servants and their maids, of whom there were seven thousand three hundred thirty and seven",
+          "matches": [
+            "Ezra 2:65"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The whole congregation together was forty and two thousand three hundred and threescore,",
+          "matches": [
+            "Ezra 2:64",
+            "Nehemiah 7:66"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And I found a register of the genealogy of them which came up at the first, and found written therein",
+          "matches": [
+            "Nehemiah 7:5"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "These sought their register among those that were reckoned by genealogy, but they were not found",
+          "matches": [
+            "Ezra 2:62"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Parosh, two thousand an hundred seventy and two.",
+          "matches": [
+            "Ezra 2:3",
+            "Nehemiah 7:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "six hundred fifty and two",
+          "matches": [
+            "Ezra 2:60"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Parosh, two thousand an hundred seventy and two.",
+          "matches": [
+            "Ezra 2:3",
+            "Nehemiah 7:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "six hundred forty and two",
+          "matches": [
+            "Nehemiah 7:62"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the whole congregation together",
+          "matches": [
+            "Ezra 2:64",
+            "Nehemiah 7:66"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        },
+        {
+          "field": "reasoning",
+          "quote": "beside",
+          "matches": [
+            "Ezra 2:65"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        },
+        {
+          "field": "scope",
+          "quote": "about",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    },
+    {
+      "id": "gifts-to-the-treasure-61000-drams-or-41000",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 2:68",
+          "quote": "And some of the chief of the fathers, when they came to the house of the Lord which is at Jerusalem, offered freely for the house of God",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:69",
+          "quote": "They gave after their ability unto the treasure of the work threescore and one thousand drams of gold, and five thousand pound of silver, and one hundred priests' garments.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:70",
+          "quote": "And some of the chief of the fathers gave unto the work. The Tirshatha gave to the treasure a thousand drams of gold, fifty basons, five hundred and thirty priests' garments.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:71",
+          "quote": "And some of the chief of the fathers gave to the treasure of the work twenty thousand drams of gold, and two thousand and two hundred pound of silver.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:72",
+          "quote": "And that which the rest of the people gave was twenty thousand drams of gold, and two thousand pound of silver, and threescore and seven priests' garments.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:5",
+          "quote": "And I found a register of the genealogy of them which came up at the first, and found written therein",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "זָהָ֗ב דַּרְכְּמֹונִים֙ שֵׁשׁ־רִבֹּ֣אות וָאֶ֔לֶף",
+          "stated": {
+            "chapter": 2,
+            "verse": 69
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 69
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 69
+          }
+        },
+        {
+          "quote": "וְכֶ֕סֶף מָנִ֖ים חֲמֵ֣שֶׁת אֲלָפִ֑ים וְכָתְנֹ֥ת כֹּהֲנִ֖ים מֵאָֽה",
+          "stated": {
+            "chapter": 2,
+            "verse": 69
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 69
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 69
+          }
+        },
+        {
+          "quote": "χρυσίον καθαρὸν μναὶ ἓξ μυριάδες καὶ χίλιαι, καὶ ἀργυρίου μνὰς πεντακισχιλίας, καὶ κόθωνοι τῶν ἱερέων ἑκατόν",
+          "stated": {
+            "chapter": 2,
+            "verse": 69
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "69"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 69
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 2:69",
+          "quote": "threescore and one thousand drams of gold, and five thousand pound of silver",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Nehemiah 7:70",
+          "quote": "a thousand drams of gold",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Nehemiah 7:71",
+          "quote": "twenty thousand drams of gold, and two thousand and two hundred pound of silver",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Nehemiah 7:72",
+          "quote": "twenty thousand drams of gold, and two thousand pound of silver",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "text",
+          "quote": "And some of the chief of the fathers, when they came to the house of the Lord which is at Jerusalem, offered freely for the house of God",
+          "matches": [
+            "Ezra 2:68"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "They gave after their ability unto the treasure of the work threescore and one thousand drams of gold, and five thousand pound of silver, and one hundred priests' garments.",
+          "matches": [
+            "Ezra 2:69"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And some of the chief of the fathers gave unto the work. The Tirshatha gave to the treasure a thousand drams of gold, fifty basons, five hundred and thirty priests' garments.",
+          "matches": [
+            "Nehemiah 7:70"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And some of the chief of the fathers gave to the treasure of the work twenty thousand drams of gold, and two thousand and two hundred pound of silver.",
+          "matches": [
+            "Nehemiah 7:71"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And that which the rest of the people gave was twenty thousand drams of gold, and two thousand pound of silver, and threescore and seven priests' garments.",
+          "matches": [
+            "Nehemiah 7:72"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And I found a register of the genealogy of them which came up at the first, and found written therein",
+          "matches": [
+            "Nehemiah 7:5"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "some of the chief of the fathers",
+          "matches": [
+            "Nehemiah 7:70",
+            "Nehemiah 7:71",
+            "Ezra 2:68"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    },
+    {
+      "id": "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 5:16",
+          "quote": "Then came the same Sheshbazzar, and laid the foundation of the house of God which is in Jerusalem",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 5:14",
+          "quote": "and they were delivered unto one, whose name was Sheshbazzar, whom he had made governor",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 1:8",
+          "quote": "and numbered them unto Sheshbazzar, the prince of Judah",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 1:11",
+          "quote": "All these did Sheshbazzar bring up with them of the captivity that were brought up from Babylon unto Jerusalem",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 3:8",
+          "quote": "Now in the second year of their coming unto the house of God at Jerusalem, in the second month, began Zerubbabel the son of Shealtiel, and Jeshua the son of Jozadak",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 3:10",
+          "quote": "And when the builders laid the foundation of the temple of the Lord",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 5:2",
+          "quote": "Then rose up Zerubbabel the son of Shealtiel, and Jeshua the son of Jozadak, and began to build the house of God which is at Jerusalem",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 4:9",
+          "quote": "The hands of Zerubbabel have laid the foundation of this house; his hands shall also finish it",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֱדַ֙יִן֙ שֵׁשְׁבַּצַּ֣ר דֵּ֔ךְ אֲתָ֗א יְהַ֧ב אֻשַּׁיָּ֛א דִּי־בֵ֥ית אֱלָהָ֖א דִּ֣י בִירוּשְׁלֶ֑ם",
+          "stated": {
+            "chapter": 5,
+            "verse": 16
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/5/",
+              "verse": 16
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 5,
+            "verse": 16
+          }
+        },
+        {
+          "quote": "יְדֵ֣י זְרֻבָּבֶ֗ל יִסְּד֛וּ הַבַּ֥יִת הַזֶּ֖ה",
+          "stated": {
+            "chapter": 4,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/4/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 4,
+            "verse": 9
+          }
+        },
+        {
+          "quote": "וְיִסְּד֥וּ הַבֹּנִ֖ים אֶת־הֵיכַ֣ל יְהוָ֑ה",
+          "stated": {
+            "chapter": 3,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/3/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 10
+          }
+        },
+        {
+          "quote": "Τότε Σαβανασὰρ ἐκεῖνος ἦλθε καὶ ἔδωκε θεμελίους τοῦ οἴκου τοῦ Θεοῦ ἐν Ἱερουσαλὴμ",
+          "stated": {
+            "chapter": 5,
+            "verse": 16
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR05.htm",
+              "verse": "16"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 5,
+            "verse": 16
+          }
+        },
+        {
+          "quote": "αἱ χεῖρες Ζοροβάβελ ἐθεμελίωσαν τὸν οἶκον τοῦτον",
+          "stated": {
+            "chapter": 4,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC04.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 4,
+            "verse": 9
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 5:16",
+          "quote": "Then came the same Sheshbazzar, and laid the foundation of the house of God",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Ezra 3:8",
+          "quote": "began Zerubbabel the son of Shealtiel",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Zechariah 4:9",
+          "quote": "The hands of Zerubbabel have laid the foundation of this house",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "early-vessels",
+          "title": "The listed vessels and the stated total",
+          "summary": "Ezra's itemized figures add to 2,499, while the stated total is 5,400.",
+          "reasoning": "Adding 30 + 1,000 + 29 + 30 + 410 + 1,000 yields 2,499. If the list is exhaustive, its stated total does not match.",
+          "scope": "An incomplete itemization could account for a larger grand total; the text does not explicitly say that categories were omitted."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "The hands of Zerubbabel have laid the foundation of this house",
+          "matches": [
+            "Zechariah 4:9"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Then came the same Sheshbazzar, and laid the foundation of the house of God which is in Jerusalem",
+          "matches": [
+            "Ezra 5:16"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "and they were delivered unto one, whose name was Sheshbazzar, whom he had made governor",
+          "matches": [
+            "Ezra 5:14"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "and numbered them unto Sheshbazzar, the prince of Judah",
+          "matches": [
+            "Ezra 1:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "All these did Sheshbazzar bring up with them of the captivity that were brought up from Babylon unto Jerusalem",
+          "matches": [
+            "Ezra 1:11"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Now in the second year of their coming unto the house of God at Jerusalem, in the second month, began Zerubbabel the son of Shealtiel, and Jeshua the son of Jozadak",
+          "matches": [
+            "Ezra 3:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And when the builders laid the foundation of the temple of the Lord",
+          "matches": [
+            "Ezra 3:10"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Then rose up Zerubbabel the son of Shealtiel, and Jeshua the son of Jozadak, and began to build the house of God which is at Jerusalem",
+          "matches": [
+            "Ezra 5:2"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The hands of Zerubbabel have laid the foundation of this house; his hands shall also finish it",
+          "matches": [
+            "Zechariah 4:9"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the prince of Judah",
+          "matches": [
+            "Ezra 1:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the son of Shealtiel",
+          "matches": [
+            "Ezra 3:8",
+            "Ezra 5:2"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "the builders",
+          "matches": [
+            "Ezra 3:10"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Sheshbazzar",
+          "matches": [
+            "Ezra 5:16",
+            "Ezra 1:8",
+            "Ezra 1:11",
+            "Ezra 5:14"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "overlapDecision": "Shared references provide context; existing subjects concern The listed vessels and the stated total. This record examines a distinct quoted difference or material question."
+    },
+    {
+      "id": "foundation-laid-in-second-year-of-the-return-or-in-second-year-of-darius",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 3:8",
+          "quote": "Now in the second year of their coming unto the house of God at Jerusalem, in the second month",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 3:10",
+          "quote": "And when the builders laid the foundation of the temple of the Lord",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 3:11",
+          "quote": "because the foundation of the house of the Lord was laid",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 4:5",
+          "quote": "all the days of Cyrus king of Persia, even until the reign of Darius king of Persia",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 4:24",
+          "quote": "Then ceased the work of the house of God which is at Jerusalem. So it ceased unto the second year of the reign of Darius king of Persia.",
+          "exact": true
+        },
+        {
+          "ref": "Haggai 2:10",
+          "quote": "In the four and twentieth day of the ninth month, in the second year of Darius",
+          "exact": true
+        },
+        {
+          "ref": "Haggai 2:15",
+          "quote": "consider from this day and upward, from before a stone was laid upon a stone in the temple of the Lord",
+          "exact": true
+        },
+        {
+          "ref": "Haggai 2:18",
+          "quote": "Consider now from this day and upward, from the four and twentieth day of the ninth month, even from the day that the foundation of the Lord's temple was laid, consider it.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מִיֹּום֩ עֶשְׂרִ֨ים וְאַרְבָּעָ֜ה לַתְּשִׁיעִ֗י לְמִן־הַיֹּ֛ום אֲשֶׁר־יֻסַּ֥ד הֵֽיכַל־יְהוָ֖ה",
+          "stated": {
+            "chapter": 2,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 18
+          }
+        },
+        {
+          "quote": "וְיִסְּד֥וּ הַבֹּנִ֖ים אֶת־הֵיכַ֣ל יְהוָ֑ה",
+          "stated": {
+            "chapter": 3,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/3/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 10
+          }
+        },
+        {
+          "quote": "ἀπὸ τῆς τετράδος καὶ εἰκάδος τοῦ ἐννάτου μηνὸς, καὶ ἀπὸ τῆς ἡμέρας ἧς τεθεμελίωται ὁ ναὸς Κυρίου",
+          "stated": {
+            "chapter": 2,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 18
+          }
+        },
+        {
+          "quote": "Καὶ ἐθεμελίωσαν τοῦ οἰκοδομῆσαι τὸν οἶκον Κυρίου",
+          "stated": {
+            "chapter": 3,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR03.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": 10
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 3:10",
+          "quote": "And when the builders laid the foundation of the temple of the Lord",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Haggai 2:18",
+          "quote": "even from the day that the foundation of the Lord's temple was laid",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "even from the day that the foundation of the Lord’s temple was laid",
+          "matches": [
+            "Haggai 2:18"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        },
+        {
+          "field": "summary",
+          "quote": "before a stone was laid upon a stone",
+          "matches": [
+            "Haggai 2:15"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Now in the second year of their coming unto the house of God at Jerusalem, in the second month",
+          "matches": [
+            "Ezra 3:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And when the builders laid the foundation of the temple of the Lord",
+          "matches": [
+            "Ezra 3:10"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "because the foundation of the house of the Lord was laid",
+          "matches": [
+            "Ezra 3:11"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "all the days of Cyrus king of Persia, even until the reign of Darius king of Persia",
+          "matches": [
+            "Ezra 4:5"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Then ceased the work of the house of God which is at Jerusalem. So it ceased unto the second year of the reign of Darius king of Persia.",
+          "matches": [
+            "Ezra 4:24"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "In the four and twentieth day of the ninth month, in the second year of Darius",
+          "matches": [
+            "Haggai 2:10"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "consider from this day and upward, from before a stone was laid upon a stone in the temple of the Lord",
+          "matches": [
+            "Haggai 2:15"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Consider now from this day and upward, from the four and twentieth day of the ninth month, even from the day that the foundation of the Lord's temple was laid, consider it.",
+          "matches": [
+            "Haggai 2:18"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "even from the day that the foundation of the Lord’s temple was laid",
+          "matches": [
+            "Haggai 2:18"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        },
+        {
+          "field": "scope",
+          "quote": "even",
+          "matches": [
+            "Haggai 2:18",
+            "Ezra 4:5"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "from",
+          "matches": [
+            "Haggai 2:18",
+            "Ezra 3:8",
+            "Haggai 2:15"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "the day",
+          "matches": [
+            "Haggai 2:18",
+            "Ezra 4:5"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "and",
+          "matches": [
+            "Ezra 3:10",
+            "Haggai 2:18",
+            "Ezra 3:8",
+            "Ezra 3:11",
+            "Haggai 2:10",
+            "Haggai 2:15"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    },
+    {
+      "id": "sheshbazzar-made-governor-or-the-treasurer-greek",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 5:14",
+          "quote": "and they were delivered unto one, whose name was Sheshbazzar, whom he had made governor",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 1:8",
+          "quote": "Even those did Cyrus king of Persia bring forth by the hand of Mithredath the treasurer, and numbered them unto Sheshbazzar, the prince of Judah.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וִיהִ֙יבוּ֙ לְשֵׁשְׁבַּצַּ֣ר שְׁמֵ֔הּ דִּ֥י פֶחָ֖ה שָׂמֵֽהּ",
+          "stated": {
+            "chapter": 5,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/5/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 5,
+            "verse": 14
+          }
+        },
+        {
+          "quote": "καὶ ἔδωκε τῷ Σαβανασὰρ τῷ θησαυροφύλακι, τῷ ἐπὶ τοῦ θησαυροῦ",
+          "stated": {
+            "chapter": 5,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR05.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 5,
+            "verse": 14
+          }
+        },
+        {
+          "quote": "ἐπὶ χεῖρα Μιθραδάτου γασβαρηνοῦ, καὶ ἠρίθμησεν αὐτὰ τῷ Σασαβασὰρ τῷ ἄρχοντι τοῦ Ἰούδα",
+          "stated": {
+            "chapter": 1,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR01.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": 8
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 5:14",
+          "quote": "whom he had made governor",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "whom he had made governor",
+          "matches": [
+            "Ezra 5:14"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "whom he had made governor",
+          "matches": [
+            "Ezra 5:14"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "Sabanasar the treasure-keeper, who was over the treasure",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "text",
+          "quote": "and they were delivered unto one, whose name was Sheshbazzar, whom he had made governor",
+          "matches": [
+            "Ezra 5:14"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Even those did Cyrus king of Persia bring forth by the hand of Mithredath the treasurer, and numbered them unto Sheshbazzar, the prince of Judah.",
+          "matches": [
+            "Ezra 1:8"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "the treasurer",
+          "matches": [
+            "Ezra 1:8"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    },
+    {
+      "id": "azmaveth-bethel-and-ai-harim-three-counts-differ-in-greek",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 2:24",
+          "quote": "The children of Azmaveth, forty and two.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:28",
+          "quote": "The men of Bethel and Ai, two hundred twenty and three.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:39",
+          "quote": "The children of Harim, a thousand and seventeen.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:28",
+          "quote": "The men of Bethazmaveth, forty and two.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:32",
+          "quote": "The men of Bethel and Ai, an hundred twenty and three.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:42",
+          "quote": "The children of Harim, a thousand and seventeen.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּנֵ֥י עַזְמָ֖וֶת אַרְבָּעִ֥ים וּשְׁנָֽיִם",
+          "stated": {
+            "chapter": 2,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 24
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 24
+          }
+        },
+        {
+          "quote": "אַנְשֵׁ֤י בֵֽית־אֵל֙ וְהָעָ֔י מָאתַ֖יִם עֶשְׂרִ֥ים וּשְׁלֹשָֽׁה",
+          "stated": {
+            "chapter": 2,
+            "verse": 28
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 28
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 28
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י חָרִ֔ם אֶ֖לֶף וְשִׁבְעָ֥ה עָשָֽׂר",
+          "stated": {
+            "chapter": 2,
+            "verse": 39
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 39
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 39
+          }
+        },
+        {
+          "quote": "Υἱοὶ Ἀζμὼθ, τεσσαρακοντατρεῖς",
+          "stated": {
+            "chapter": 2,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "24"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 24
+          }
+        },
+        {
+          "quote": "Ἄνδρες Βαιθὴλ καὶ Ἀϊὰ, τετρακόσιοι εἰκοσιτρεῖς",
+          "stated": {
+            "chapter": 2,
+            "verse": 28
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "28"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 28
+          }
+        },
+        {
+          "quote": "Υἱοὶ Ἠρὲμ, χίλιοι ἑπτά",
+          "stated": {
+            "chapter": 2,
+            "verse": 39
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "39"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": 39
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 2:24",
+          "quote": "forty and two",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezra 2:28",
+          "quote": "two hundred twenty and three",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezra 2:39",
+          "quote": "a thousand and seventeen",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "text",
+          "quote": "The children of Azmaveth, forty and two.",
+          "matches": [
+            "Ezra 2:24"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The men of Bethel and Ai, two hundred twenty and three.",
+          "matches": [
+            "Ezra 2:28"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Harim, a thousand and seventeen.",
+          "matches": [
+            "Ezra 2:39",
+            "Nehemiah 7:42"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The men of Bethazmaveth, forty and two.",
+          "matches": [
+            "Nehemiah 7:28"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The men of Bethel and Ai, an hundred twenty and three.",
+          "matches": [
+            "Nehemiah 7:32"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Harim, a thousand and seventeen.",
+          "matches": [
+            "Ezra 2:39",
+            "Nehemiah 7:42"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    },
+    {
+      "id": "bishlam-mithredath-tabeel-wrote-or-wrote-in-peace-to-mithradates-greek",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 4:7",
+          "quote": "And in the days of Artaxerxes wrote Bishlam, Mithredath, Tabeel, and the rest of their companions, unto Artaxerxes king of Persia",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כָּתַ֨ב בִּשְׁלָ֜ם מִתְרְדָ֤ת טָֽבְאֵל֙ וּשְׁאָ֣ר",
+          "stated": {
+            "chapter": 4,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/4/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 4,
+            "verse": 7
+          }
+        },
+        {
+          "quote": "ἔγραψεν ἐν εἰρήνῃ Μιθραδάτῃ Ταβεὴλ καὶ τοῖς λοιποῖς συνδούλοις· πρὸς Ἀρθασασθὰ βασιλέα Περσῶν ἔγραψεν ὁ φορολόγος γραφὴν Συριστὶ καὶ ἡρμηνευμένην",
+          "stated": {
+            "chapter": 4,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR04.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 4,
+            "verse": 7
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 4:7",
+          "quote": "wrote Bishlam, Mithredath, Tabeel, and the rest of their companions",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Wrote Bishlam, Mithredath, Tabeel",
+          "matches": [
+            "Ezra 4:7"
+          ],
+          "kind": "KJV substring with sentence-case or apostrophe typography"
+        },
+        {
+          "field": "title",
+          "quote": "wrote in peace to Mithradates",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "in peace",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the tribute-gatherer",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "text",
+          "quote": "And in the days of Artaxerxes wrote Bishlam, Mithredath, Tabeel, and the rest of their companions, unto Artaxerxes king of Persia",
+          "matches": [
+            "Ezra 4:7"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the rest of the fellow-servants",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "scope",
+          "quote": "Bishlam",
+          "matches": [
+            "Ezra 4:7"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    },
+    {
+      "id": "then-said-we-unto-them-or-they-said-names-of-the-builders-greek",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 5:3",
+          "quote": "At the same time came to them Tatnai, governor on this side the river, and Shetharboznai and their companions, and said thus unto them",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 5:4",
+          "quote": "Then said we unto them after this manner, What are the names of the men that make this building?",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 5:10",
+          "quote": "We asked their names also, to certify thee",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֱדַ֥יִן כְּנֵ֖מָא אֲמַ֣רְנָא לְּהֹ֑ם",
+          "stated": {
+            "chapter": 5,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/5/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 5,
+            "verse": 4
+          }
+        },
+        {
+          "quote": "דִּֽי־דְנָ֥ה בִנְיָנָ֖א בָּנַֽיִן",
+          "stated": {
+            "chapter": 5,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/5/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 5,
+            "verse": 4
+          }
+        },
+        {
+          "quote": "Τότε ταῦτα εἴποσαν αὐτοῖς, τίνα ἐστὶ τὰ ὀνόματα τῶν ἀνδρῶν τῶν οἰκοδομούντων τὴν πόλιν ταύτην",
+          "stated": {
+            "chapter": 5,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR05.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 5,
+            "verse": 4
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 5:4",
+          "quote": "Then said we unto them after this manner",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Then said we unto them",
+          "matches": [
+            "Ezra 5:4"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "title",
+          "quote": "then they said to them",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "Then said we unto them after this manner, What are the names of the men that make this building?",
+          "matches": [
+            "Ezra 5:4"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "they said",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "this city",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "text",
+          "quote": "At the same time came to them Tatnai, governor on this side the river, and Shetharboznai and their companions, and said thus unto them",
+          "matches": [
+            "Ezra 5:3"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Then said we unto them after this manner, What are the names of the men that make this building?",
+          "matches": [
+            "Ezra 5:4"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Then asked we those elders, and said unto them thus",
+          "matches": [
+            "Ezra 5:9"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "We asked their names also, to certify thee",
+          "matches": [
+            "Ezra 5:10"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "we",
+          "matches": [
+            "Ezra 5:4",
+            "Ezra 5:9",
+            "Ezra 5:10"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "scope",
+          "quote": "we",
+          "matches": [
+            "Ezra 5:4",
+            "Ezra 5:9",
+            "Ezra 5:10"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    },
+    {
+      "id": "sons-of-shechaniah-and-of-shelomith-families-named-in-greek",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 8:5",
+          "quote": "Of the sons of Shechaniah; the son of Jahaziel, and with him three hundred males.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 8:10",
+          "quote": "And of the sons of Shelomith; the son of Josiphiah, and with him an hundred and threescore males.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מִבְּנֵ֥י שְׁכַנְיָ֖ה בֶּן־יַחֲזִיאֵ֑ל וְעִמֹּ֕ו שְׁלֹ֥שׁ מֵאֹ֖ות הַזְּכָרִֽים",
+          "stated": {
+            "chapter": 8,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/8/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 5
+          }
+        },
+        {
+          "quote": "וּמִבְּנֵ֥י שְׁלֹומִ֖ית בֶּן־יֹוסִפְיָ֑ה וְעִמֹּ֕ו מֵאָ֥ה וְשִׁשִּׁ֖ים הַזְּכָרִֽים",
+          "stated": {
+            "chapter": 8,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/8/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 10
+          }
+        },
+        {
+          "quote": "Καὶ ἀπὸ υἱῶν Ζαθόης, Σεχενίας υἱὸς Ἀζιὴλ, καὶ μετʼ αὐτοῦ τριακόσια τὰ ἀρσενικά",
+          "stated": {
+            "chapter": 8,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR08.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 5
+          }
+        },
+        {
+          "quote": "Καὶ ἀπὸ τῶν υἱῶν Βαανὶ, Σελιμοὺθ υἱὸς Ἰωσεφία, καὶ μετʼ αὐτοῦ ἑκατὸν ἑξήκοντα τὰ ἀρσενικά",
+          "stated": {
+            "chapter": 8,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR08.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 10
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 8:5",
+          "quote": "Of the sons of Shechaniah; the son of Jahaziel",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezra 8:10",
+          "quote": "And of the sons of Shelomith; the son of Josiphiah",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Of the sons of Shechaniah; the son of Jahaziel",
+          "matches": [
+            "Ezra 8:5"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "son of",
+          "matches": [
+            "Ezra 8:5",
+            "Ezra 8:10",
+            "Ezra 8:4"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Of the sons of Pahathmoab; Elihoenai the son of Zerahiah, and with him two hundred males",
+          "matches": [
+            "Ezra 8:4"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "Of the sons of Shechaniah; the son of Jahaziel, and with him three hundred males.",
+          "matches": [
+            "Ezra 8:5"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And of the sons of Shelomith; the son of Josiphiah, and with him an hundred and threescore males.",
+          "matches": [
+            "Ezra 8:10"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of the sons of a family; a leader the son of his father, and with him",
+          "matches": [],
+          "kind": "Explicit list-pattern paraphrase, not scripture quotation"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    },
+    {
+      "id": "iddo-the-chief-at-casiphia-or-rulers-with-the-money-of-the-place-greek",
+      "batch": "ezra-1-10",
+      "english": [
+        {
+          "ref": "Ezra 8:15",
+          "quote": "and found there none of the sons of Levi",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 8:17",
+          "quote": "And I sent them with commandment unto Iddo the chief at the place Casiphia, and I told them what they should say unto Iddo, and to his brethren the Nethinims, at the place Casiphia, that they should bring unto us ministers for the house of our God.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֹותָם֙ עַל־אִדֹּ֣ו הָרֹ֔אשׁ בְּכָסִפְיָ֖א הַמָּקֹ֑ום",
+          "stated": {
+            "chapter": 8,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/8/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 17
+          }
+        },
+        {
+          "quote": "לְהָֽבִיא־לָ֥נוּ מְשָׁרְתִ֖ים לְבֵ֥ית אֱלֹהֵֽינוּ",
+          "stated": {
+            "chapter": 8,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/8/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 17
+          }
+        },
+        {
+          "quote": "Καὶ ἐξήνεγκα αὐτοὺς ἐπὶ ἄρχοντας ἐν ἀργυρίῳ τοῦ τόπου, καὶ ἔθηκα ἐν στόματι αὐτῶν λόγους λαλῆσαι πρὸς τοὺς ἀδελφοὺς αὐτῶν τῶν Ἀθινεὶμ ἐν ἀργυρίῳ τοῦ τόπου, τοῦ ἐνέγκαι ἡμῖν ᾄδοντας εἰς οἶκον Θεοῦ ἡμῶν",
+          "stated": {
+            "chapter": 8,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR08.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": 17
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezra 8:17",
+          "quote": "unto Iddo the chief at the place Casiphia",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "unto Iddo the chief at the place Casiphia",
+          "matches": [
+            "Ezra 8:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "title",
+          "quote": "with the money of the place",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "ministers for the house of our God",
+          "matches": [
+            "Ezra 8:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "summary",
+          "quote": "with the money of the place",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "text",
+          "quote": "and found there none of the sons of Levi",
+          "matches": [
+            "Ezra 8:15"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "text",
+          "quote": "And I sent them with commandment unto Iddo the chief at the place Casiphia, and I told them what they should say unto Iddo, and to his brethren the Nethinims, at the place Casiphia, that they should bring unto us ministers for the house of our God.",
+          "matches": [
+            "Ezra 8:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "reasoning",
+          "quote": "rulers",
+          "matches": [],
+          "kind": "Plain rendering of the verified Greek quotation, not KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "at the place Casiphia",
+          "matches": [
+            "Ezra 8:17"
+          ],
+          "kind": "exact KJV substring"
+        },
+        {
+          "field": "scope",
+          "quote": "Casiphia",
+          "matches": [
+            "Ezra 8:17"
+          ],
+          "kind": "exact KJV substring"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Broader ID/title/summary review also checked relevant existing findings."
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/11/7/",
+    "https://bolls.life/get-text/WLC/14/4/",
+    "https://ebible.org/grcbrent/2CH04.htm",
+    "https://bolls.life/get-text/WLC/14/5/",
+    "https://ebible.org/grcbrent/2CH05.htm",
+    "https://bolls.life/get-text/TISCH/58/9/",
+    "https://bolls.life/get-text/TR/58/9/",
+    "https://bolls.life/get-text/WLC/14/9/",
+    "https://bolls.life/get-text/WLC/14/12/",
+    "https://ebible.org/grcbrent/2CH09.htm",
+    "https://ebible.org/grcbrent/2CH12.htm",
+    "https://ebible.org/grcbrent/2CH13.htm",
+    "https://bolls.life/get-text/WLC/11/15/",
+    "https://bolls.life/get-text/WLC/14/15/",
+    "https://ebible.org/grcbrent/1KI15.htm",
+    "https://ebible.org/grcbrent/2CH15.htm",
+    "https://bolls.life/get-text/WLC/14/20/",
+    "https://ebible.org/grcbrent/2CH20.htm",
+    "https://ebible.org/grcbrent/2CH26.htm",
+    "https://bolls.life/get-text/WLC/14/21/",
+    "https://bolls.life/get-text/WLC/14/28/",
+    "https://ebible.org/grcbrent/2CH21.htm",
+    "https://ebible.org/grcbrent/2CH28.htm",
+    "https://bolls.life/get-text/WLC/12/8/",
+    "https://ebible.org/grcbrent/2KI08.htm",
+    "https://bolls.life/get-text/WLC/14/22/",
+    "https://ebible.org/grcbrent/2CH22.htm",
+    "https://bolls.life/get-text/WLC/14/24/",
+    "https://bolls.life/get-text/WLC/12/12/",
+    "https://ebible.org/grcbrent/2CH24.htm",
+    "https://bolls.life/get-text/WLC/12/16/",
+    "https://ebible.org/grcbrent/2KI16.htm",
+    "https://bolls.life/get-text/WLC/14/33/",
+    "https://ebible.org/grcbrent/2CH33.htm",
+    "https://bolls.life/get-text/WLC/12/23/",
+    "https://ebible.org/grcbrent/2KI23.htm",
+    "https://bolls.life/get-text/WLC/14/36/",
+    "https://ebible.org/grcbrent/2CH36.htm",
+    "https://ebible.org/grcbrent/JER22.htm",
+    "https://bolls.life/get-text/WLC/14/35/",
+    "https://ebible.org/grcbrent/2CH35.htm",
+    "https://bolls.life/get-text/WLC/15/2/",
+    "https://bolls.life/get-text/WLC/16/7/",
+    "https://ebible.org/grcbrent/EZR02.htm",
+    "https://bolls.life/get-text/WLC/15/5/",
+    "https://bolls.life/get-text/WLC/38/4/",
+    "https://bolls.life/get-text/WLC/15/3/",
+    "https://ebible.org/grcbrent/EZR05.htm",
+    "https://ebible.org/grcbrent/ZEC04.htm",
+    "https://bolls.life/get-text/WLC/37/2/",
+    "https://ebible.org/grcbrent/HAG02.htm",
+    "https://ebible.org/grcbrent/EZR03.htm",
+    "https://ebible.org/grcbrent/EZR01.htm",
+    "https://bolls.life/get-text/WLC/15/4/",
+    "https://ebible.org/grcbrent/EZR04.htm",
+    "https://bolls.life/get-text/WLC/15/8/",
+    "https://ebible.org/grcbrent/EZR08.htm",
+    "https://bolls.life/get-text/WLC/15/10/",
+    "https://ebible.org/grcbrent/EZR10.htm",
+    "https://bolls.life/get-text/WLC/15/6/",
+    "https://ebible.org/grcbrent/EZR06.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 486,
+  "studiesChecked": 6,
+  "arithmetic": {
+    "ezra": {
+      "components": [
+        {
+          "ref": "Ezra 2:3",
+          "amount": 2172
+        },
+        {
+          "ref": "Ezra 2:4",
+          "amount": 372
+        },
+        {
+          "ref": "Ezra 2:5",
+          "amount": 775
+        },
+        {
+          "ref": "Ezra 2:6",
+          "amount": 2812
+        },
+        {
+          "ref": "Ezra 2:7",
+          "amount": 1254
+        },
+        {
+          "ref": "Ezra 2:8",
+          "amount": 945
+        },
+        {
+          "ref": "Ezra 2:9",
+          "amount": 760
+        },
+        {
+          "ref": "Ezra 2:10",
+          "amount": 642
+        },
+        {
+          "ref": "Ezra 2:11",
+          "amount": 623
+        },
+        {
+          "ref": "Ezra 2:12",
+          "amount": 1222
+        },
+        {
+          "ref": "Ezra 2:13",
+          "amount": 666
+        },
+        {
+          "ref": "Ezra 2:14",
+          "amount": 2056
+        },
+        {
+          "ref": "Ezra 2:15",
+          "amount": 454
+        },
+        {
+          "ref": "Ezra 2:16",
+          "amount": 98
+        },
+        {
+          "ref": "Ezra 2:17",
+          "amount": 323
+        },
+        {
+          "ref": "Ezra 2:18",
+          "amount": 112
+        },
+        {
+          "ref": "Ezra 2:19",
+          "amount": 223
+        },
+        {
+          "ref": "Ezra 2:20",
+          "amount": 95
+        },
+        {
+          "ref": "Ezra 2:21",
+          "amount": 123
+        },
+        {
+          "ref": "Ezra 2:22",
+          "amount": 56
+        },
+        {
+          "ref": "Ezra 2:23",
+          "amount": 128
+        },
+        {
+          "ref": "Ezra 2:24",
+          "amount": 42
+        },
+        {
+          "ref": "Ezra 2:25",
+          "amount": 743
+        },
+        {
+          "ref": "Ezra 2:26",
+          "amount": 621
+        },
+        {
+          "ref": "Ezra 2:27",
+          "amount": 122
+        },
+        {
+          "ref": "Ezra 2:28",
+          "amount": 223
+        },
+        {
+          "ref": "Ezra 2:29",
+          "amount": 52
+        },
+        {
+          "ref": "Ezra 2:30",
+          "amount": 156
+        },
+        {
+          "ref": "Ezra 2:31",
+          "amount": 1254
+        },
+        {
+          "ref": "Ezra 2:32",
+          "amount": 320
+        },
+        {
+          "ref": "Ezra 2:33",
+          "amount": 725
+        },
+        {
+          "ref": "Ezra 2:34",
+          "amount": 345
+        },
+        {
+          "ref": "Ezra 2:35",
+          "amount": 3630
+        },
+        {
+          "ref": "Ezra 2:36",
+          "amount": 973
+        },
+        {
+          "ref": "Ezra 2:37",
+          "amount": 1052
+        },
+        {
+          "ref": "Ezra 2:38",
+          "amount": 1247
+        },
+        {
+          "ref": "Ezra 2:39",
+          "amount": 1017
+        },
+        {
+          "ref": "Ezra 2:40",
+          "amount": 74
+        },
+        {
+          "ref": "Ezra 2:41",
+          "amount": 128
+        },
+        {
+          "ref": "Ezra 2:42",
+          "amount": 139
+        },
+        {
+          "ref": "Ezra 2:58",
+          "amount": 392
+        },
+        {
+          "ref": "Ezra 2:60",
+          "amount": 652
+        }
+      ],
+      "sum": 29818,
+      "total": 42360,
+      "difference": 12542
+    },
+    "nehemiah": {
+      "components": [
+        {
+          "ref": "Nehemiah 7:8",
+          "amount": 2172
+        },
+        {
+          "ref": "Nehemiah 7:9",
+          "amount": 372
+        },
+        {
+          "ref": "Nehemiah 7:10",
+          "amount": 652
+        },
+        {
+          "ref": "Nehemiah 7:11",
+          "amount": 2818
+        },
+        {
+          "ref": "Nehemiah 7:12",
+          "amount": 1254
+        },
+        {
+          "ref": "Nehemiah 7:13",
+          "amount": 845
+        },
+        {
+          "ref": "Nehemiah 7:14",
+          "amount": 760
+        },
+        {
+          "ref": "Nehemiah 7:15",
+          "amount": 648
+        },
+        {
+          "ref": "Nehemiah 7:16",
+          "amount": 628
+        },
+        {
+          "ref": "Nehemiah 7:17",
+          "amount": 2322
+        },
+        {
+          "ref": "Nehemiah 7:18",
+          "amount": 667
+        },
+        {
+          "ref": "Nehemiah 7:19",
+          "amount": 2067
+        },
+        {
+          "ref": "Nehemiah 7:20",
+          "amount": 655
+        },
+        {
+          "ref": "Nehemiah 7:21",
+          "amount": 98
+        },
+        {
+          "ref": "Nehemiah 7:22",
+          "amount": 328
+        },
+        {
+          "ref": "Nehemiah 7:23",
+          "amount": 324
+        },
+        {
+          "ref": "Nehemiah 7:24",
+          "amount": 112
+        },
+        {
+          "ref": "Nehemiah 7:25",
+          "amount": 95
+        },
+        {
+          "ref": "Nehemiah 7:26",
+          "amount": 188
+        },
+        {
+          "ref": "Nehemiah 7:27",
+          "amount": 128
+        },
+        {
+          "ref": "Nehemiah 7:28",
+          "amount": 42
+        },
+        {
+          "ref": "Nehemiah 7:29",
+          "amount": 743
+        },
+        {
+          "ref": "Nehemiah 7:30",
+          "amount": 621
+        },
+        {
+          "ref": "Nehemiah 7:31",
+          "amount": 122
+        },
+        {
+          "ref": "Nehemiah 7:32",
+          "amount": 123
+        },
+        {
+          "ref": "Nehemiah 7:33",
+          "amount": 52
+        },
+        {
+          "ref": "Nehemiah 7:34",
+          "amount": 1254
+        },
+        {
+          "ref": "Nehemiah 7:35",
+          "amount": 320
+        },
+        {
+          "ref": "Nehemiah 7:36",
+          "amount": 345
+        },
+        {
+          "ref": "Nehemiah 7:37",
+          "amount": 721
+        },
+        {
+          "ref": "Nehemiah 7:38",
+          "amount": 3930
+        },
+        {
+          "ref": "Nehemiah 7:39",
+          "amount": 973
+        },
+        {
+          "ref": "Nehemiah 7:40",
+          "amount": 1052
+        },
+        {
+          "ref": "Nehemiah 7:41",
+          "amount": 1247
+        },
+        {
+          "ref": "Nehemiah 7:42",
+          "amount": 1017
+        },
+        {
+          "ref": "Nehemiah 7:43",
+          "amount": 74
+        },
+        {
+          "ref": "Nehemiah 7:44",
+          "amount": 148
+        },
+        {
+          "ref": "Nehemiah 7:45",
+          "amount": 138
+        },
+        {
+          "ref": "Nehemiah 7:60",
+          "amount": 392
+        },
+        {
+          "ref": "Nehemiah 7:62",
+          "amount": 642
+        }
+      ],
+      "sum": 31089,
+      "total": 42360,
+      "difference": 11271
+    },
+    "gifts": {
+      "gold": 41000,
+      "silver": 4200,
+      "garments": 597
+    }
+  }
+}

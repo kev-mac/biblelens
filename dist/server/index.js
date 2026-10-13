@@ -42868,6 +42868,2660 @@ const EVIDENCE=[
         "quote": "the pattern of all that he had by the spirit"
       }
     ]
+  },
+  {
+    "id": "molten-sea-knops-or-oxen-under-the-brim",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 4:3",
+    "appliesTo": [
+      "2 Chronicles 4:3",
+      "1 Kings 7:24"
+    ],
+    "title": "Under the brim of the molten sea: two rows of knops, or two rows of oxen?",
+    "status": "Textual conflict",
+    "summary": "Kings says that knops ran round the sea under its brim, ten in a cubit, cast in two rows. Chronicles describes the same band in the same words but has “the similitude of oxen” and “two rows of oxen”.",
+    "text": "KJV 1 Kings 7:24: “And under the brim of it round about there were knops compassing it, ten in a cubit, compassing the sea round about: the knops were cast in two rows, when it was cast.” KJV 2 Chronicles 4:3: “And under it was the similitude of oxen, which did compass it round about: ten in a cubit, compassing the sea round about. Two rows of oxen were cast, when it was cast.” KJV 2 Chronicles 4:4: “It stood upon twelve oxen” Hebrew (WLC) 1 Kings 7:24: וּפְקָעִים֩ מִתַּ֨חַת לִשְׂפָתֹ֤ו [and knops under its brim] … שְׁנֵ֤י טוּרִים֙ הַפְּקָעִ֔ים יְצֻקִ֖ים בִּיצֻקָתֹֽו [two rows the knops, cast in its casting]. Hebrew (WLC) 2 Chronicles 4:3: וּדְמ֣וּת בְּקָרִים֩ תַּ֨חַת לֹ֜ו [and a likeness of oxen under it] … שְׁנַ֤יִם טוּרִים֙ הַבָּקָ֔ר יְצוּקִ֖ים בְּמֻֽצַקְתֹּֽו [two rows the oxen, cast in its casting]. Septuagint (Brenton Greek) 2 Chronicles 4:3: Καὶ ὁμοίωμα μόσχων ὑποκάτω αὐτῆς [and a likeness of calves beneath it]. Fetched from https://bolls.life/get-text/WLC/11/7/, https://bolls.life/get-text/WLC/14/4/ and https://ebible.org/grcbrent/2CH04.htm.",
+    "reasoning": "The two verses share their frame word for word: round about, ten in a cubit, compassing the sea, two rows, cast when it was cast. At the one point that names the ornament, Kings has knops and Chronicles has oxen. The twelve oxen on which the sea stood are a separate item, named in the next verse of each account.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew in each book, and Brenton’s Greek of the Chronicles verse agrees with the KJV there. Brenton’s Greek of 1 Kings 7 orders the chapter differently and prints other matter at the number 7:24; it was not compared. The two statements can both stand if the knops were shaped like oxen; neither verse says so. The record makes no claim about which wording is earlier. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Kings 7: KJV",
+        "url": "https://ebible.org/eng-kjv/1KI07.htm"
+      },
+      {
+        "label": "2 Chronicles 4: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH04.htm"
+      },
+      {
+        "label": "1 Kings 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/11/7/"
+      },
+      {
+        "label": "2 Chronicles 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/4/"
+      },
+      {
+        "label": "2 Chronicles 4: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 4:3",
+        "book": 13,
+        "chapter": 4,
+        "verse": 3
+      },
+      {
+        "label": "1 Kings 7:24",
+        "book": 10,
+        "chapter": 7,
+        "verse": 24
+      },
+      {
+        "label": "2 Chronicles 4:4",
+        "book": 13,
+        "chapter": 4,
+        "verse": 4
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 4:3",
+        "quote": "Two rows of oxen were cast, when it was cast"
+      },
+      {
+        "label": "B",
+        "ref": "1 Kings 7:24",
+        "quote": "the knops were cast in two rows, when it was cast"
+      }
+    ]
+  },
+  {
+    "id": "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 5:10",
+    "appliesTo": [
+      "2 Chronicles 5:10",
+      "Hebrews 9:4"
+    ],
+    "title": "In the ark: nothing “save the two tables”, or also the pot of manna and Aaron’s rod?",
+    "status": "Textual conflict",
+    "summary": "Chronicles and Kings say that when the ark was set in Solomon’s temple there was nothing in it but the two tables. Hebrews, describing the tabernacle, says of the ark “wherein was the golden pot that had manna, and Aaron’s rod that budded, and the tables of the covenant”. Exodus and Numbers place the pot and the rod “before the Testimony”.",
+    "text": "KJV 2 Chronicles 5:10: “There was nothing in the ark save the two tables which Moses put therein at Horeb, when the Lord made a covenant with the children of Israel, when they came out of Egypt.” KJV 1 Kings 8:9: “There was nothing in the ark save the two tables of stone, which Moses put there at Horeb” KJV Hebrews 9:3: “And after the second veil, the tabernacle which is called the Holiest of all;” KJV Hebrews 9:4: “Which had the golden censer, and the ark of the covenant overlaid round about with gold, wherein was the golden pot that had manna, and Aaron's rod that budded, and the tables of the covenant;” KJV Exodus 16:33: “Take a pot, and put an omer full of manna therein, and lay it up before the Lord” KJV Exodus 16:34: “so Aaron laid it up before the Testimony, to be kept” KJV Numbers 17:10: “Bring Aaron's rod again before the testimony, to be kept for a token against the rebels” Hebrew (WLC) 2 Chronicles 5:10: אֵ֚ין בָּֽאָרֹ֔ון רַ֚ק שְׁנֵ֣י הַלֻּחֹ֔ות אֲשֶׁר־נָתַ֥ן מֹשֶׁ֖ה בְּחֹרֵ֑ב [there was nothing in the ark, only the two tables which Moses put at Horeb]. Septuagint (Brenton Greek) 2 Chronicles 5:10: Οὐκ ἦν ἐν τῇ κιβωτῷ πλὴν δύο πλάκες ἃς ἔθηκε Μωυσῆς ἐν Χωρὴβ [there was nothing in the ark except two tables which Moses put at Horeb]. Greek New Testament (Tischendorf; the Textus Receptus text served has the same words) Hebrews 9:4: ἐν ᾗ στάμνος χρυσῆ ἔχουσα τὸ μάννα καὶ ἡ ῥάβδος Ἀαρὼν ἡ βλαστήσασα καὶ αἱ πλάκες τῆς διαθήκης [in which a golden pot holding the manna, and the rod of Aaron that budded, and the tables of the covenant]. Fetched from https://bolls.life/get-text/WLC/14/5/, https://ebible.org/grcbrent/2CH05.htm, https://bolls.life/get-text/TISCH/58/9/ and https://bolls.life/get-text/TR/58/9/.",
+    "reasoning": "Chronicles and Kings use an excluding phrase: nothing, save the two tables. In the KJV of Hebrews, “wherein” follows “the ark of the covenant” and three things are listed in it. The Exodus and Numbers verses quoted say where the pot and the rod were laid up, and both say “before” the Testimony, not in the ark.",
+    "scope": "No tag is proposed: in each verse the KJV follows the Hebrew or Greek quoted. The two statements speak of different times: Hebrews of the tabernacle, Chronicles of the day the ark entered the temple. They can both stand if the pot and the rod were once inside the ark and had been taken out before Solomon’s day; no verse quoted reports that. The clash also depends on reading the Greek “in which” of Hebrews 9:4 as pointing to the ark, as the KJV’s wording does, and not back to the tabernacle of the verse before. The Numbers verse is 17:25 in the Hebrew numbering; only the KJV is quoted for Exodus and Numbers. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "2 Chronicles 5: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH05.htm"
+      },
+      {
+        "label": "1 Kings 8: KJV",
+        "url": "https://ebible.org/eng-kjv/1KI08.htm"
+      },
+      {
+        "label": "Hebrews 9: KJV",
+        "url": "https://ebible.org/eng-kjv/HEB09.htm"
+      },
+      {
+        "label": "Exodus 16: KJV",
+        "url": "https://ebible.org/eng-kjv/EXO16.htm"
+      },
+      {
+        "label": "Numbers 17: KJV",
+        "url": "https://ebible.org/eng-kjv/NUM17.htm"
+      },
+      {
+        "label": "2 Chronicles 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/5/"
+      },
+      {
+        "label": "2 Chronicles 5: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH05.htm"
+      },
+      {
+        "label": "Hebrews 9: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/58/9/"
+      },
+      {
+        "label": "Hebrews 9: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/58/9/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 5:10",
+        "book": 13,
+        "chapter": 5,
+        "verse": 10
+      },
+      {
+        "label": "Hebrews 9:4",
+        "book": 57,
+        "chapter": 9,
+        "verse": 4
+      },
+      {
+        "label": "Hebrews 9:3",
+        "book": 57,
+        "chapter": 9,
+        "verse": 3
+      },
+      {
+        "label": "1 Kings 8:9",
+        "book": 10,
+        "chapter": 8,
+        "verse": 9
+      },
+      {
+        "label": "Exodus 16:33",
+        "book": 1,
+        "chapter": 16,
+        "verse": 33
+      },
+      {
+        "label": "Exodus 16:34",
+        "book": 1,
+        "chapter": 16,
+        "verse": 34
+      },
+      {
+        "label": "Numbers 17:10",
+        "book": 3,
+        "chapter": 17,
+        "verse": 10
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition; Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 5:10",
+        "quote": "There was nothing in the ark save the two tables"
+      },
+      {
+        "label": "B",
+        "ref": "Hebrews 9:4",
+        "quote": "wherein was the golden pot that had manna, and Aaron's rod that budded, and the tables of the covenant"
+      }
+    ]
+  },
+  {
+    "id": "visions-of-iddo-the-seer-or-of-joel-greek",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 9:29",
+    "appliesTo": [
+      "2 Chronicles 9:29"
+    ],
+    "title": "A source for Solomon’s acts: the visions of “Iddo the seer”, or of Joel?",
+    "status": "Context",
+    "summary": "The KJV names “the visions of Iddo the seer against Jeroboam” as a record of Solomon’s acts. Brenton’s Greek of the same verse names the seer Joel. In the two later verses where the KJV has Iddo, the Greek has Addo.",
+    "text": "KJV 2 Chronicles 9:29: “and in the visions of Iddo the seer against Jeroboam the son of Nebat” KJV 12:15: “and of Iddo the seer concerning genealogies” KJV 13:22: “are written in the story of the prophet Iddo” Hebrew (WLC) 9:29, with its written and read forms as the edition prints them: וּבַחֲזֹות֙ [יֶעְדִּי כ] (יֶעְדֹּ֣ו ק) הַחֹזֶ֔ה [and in the visions of Jedai (written) / Jedo (read) the seer]. 12:15: וְעִדֹּ֥ו הַחֹזֶ֖ה [and Iddo the seer]. Septuagint (Brenton Greek) 9:29: καὶ ἐν ταῖς ὁράσεσιν Ἰωὴλ τοῦ ὁρῶντος περὶ Ἱεροβοὰμ υἱοῦ Ναβάτ [and in the visions of Joel the seer concerning Jeroboam son of Nabat]. 12:15: καὶ Ἀδδὼ τοῦ ὁρῶντος [and of Addo the seer]. 13:22: ἐπὶ βιβλίῳ τοῦ προφήτου Ἀδδώ [in the book of the prophet Addo]. Fetched from https://bolls.life/get-text/WLC/14/9/, https://bolls.life/get-text/WLC/14/12/, https://ebible.org/grcbrent/2CH09.htm, https://ebible.org/grcbrent/2CH12.htm and https://ebible.org/grcbrent/2CH13.htm.",
+    "reasoning": "At 9:29 the Greek prints a different name from the KJV, and a different name from the one the Greek itself prints at 12:15 and 13:22. The printed names alone do not establish whether the seer of 9:29 is the same person as the one named in the later verses.",
+    "scope": "G applies at 2 Chronicles 9:29 only; 12:15 and 13:22 are context. The Hebrew name at 9:29 is spelled differently from the name at 12:15, and the edition prints a written and a read form; those forms are background and are not the finding. The record does not say whether one man or more is meant, and does not say how the Greek name arose. No H is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 9: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH09.htm"
+      },
+      {
+        "label": "2 Chronicles 12: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH12.htm"
+      },
+      {
+        "label": "2 Chronicles 13: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH13.htm"
+      },
+      {
+        "label": "2 Chronicles 9: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/9/"
+      },
+      {
+        "label": "2 Chronicles 12: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/12/"
+      },
+      {
+        "label": "2 Chronicles 9: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH09.htm"
+      },
+      {
+        "label": "2 Chronicles 12: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH12.htm"
+      },
+      {
+        "label": "2 Chronicles 13: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH13.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 9:29",
+        "book": 13,
+        "chapter": 9,
+        "verse": 29
+      },
+      {
+        "label": "2 Chronicles 12:15",
+        "book": 13,
+        "chapter": 12,
+        "verse": 15
+      },
+      {
+        "label": "2 Chronicles 13:22",
+        "book": 13,
+        "chapter": 13,
+        "verse": 22
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 9:29",
+        "quote": "in the visions of Iddo the seer"
+      }
+    ]
+  },
+  {
+    "id": "asa-and-baasha-war-all-their-days-or-no-war-until-the-thirty-fifth-year",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 15:19",
+    "appliesTo": [
+      "2 Chronicles 15:19",
+      "1 Kings 15:16"
+    ],
+    "title": "Asa and Baasha: war “all their days”, or no war until Asa’s thirty-fifth year?",
+    "status": "Textual conflict",
+    "summary": "Kings says twice that there was war between Asa and Baasha all their days, and starts Baasha’s reign in Asa’s third year. Chronicles says there was “no more war” until the thirty-fifth year of Asa’s reign, and then tells of Baasha’s attack in the thirty-sixth.",
+    "text": "KJV 1 Kings 15:16: “And there was war between Asa and Baasha king of Israel all their days.” KJV 1 Kings 15:32: “And there was war between Asa and Baasha king of Israel all their days.” KJV 1 Kings 15:33: “In the third year of Asa king of Judah began Baasha the son of Ahijah to reign over all Israel in Tirzah, twenty and four years” KJV 2 Chronicles 15:19: “And there was no more war unto the five and thirtieth year of the reign of Asa.” KJV 2 Chronicles 16:1: “In the six and thirtieth year of the reign of Asa Baasha king of Israel came up against Judah” Hebrew (WLC) 1 Kings 15:16: וּמִלְחָמָ֨ה הָיְתָ֜ה בֵּ֣ין אָסָ֗א וּבֵ֛ין בַּעְשָׁ֥א מֶֽלֶךְ־יִשְׂרָאֵ֖ל כָּל־יְמֵיהֶֽם [and there was war between Asa and Baasha king of Israel all their days]. Hebrew (WLC) 2 Chronicles 15:19: וּמִלְחָמָ֖ה לֹ֣א הָיָ֑תָה עַ֛ד שְׁנַת־שְׁלֹשִׁ֥ים וְחָמֵ֖שׁ לְמַלְכ֥וּת אָסָֽא [and war there was not until the thirty-fifth year of the reign of Asa]. Septuagint (Brenton Greek) 1 Kings 15:16: Καὶ πόλεμος ἦν ἀναμέσον Ἀσὰ καὶ ἀναμέσον Βαασὰ βασιλέως Ἰσραὴλ πάσας τὰς ἡμέρας αὐτῶν [and there was war between Asa and Baasa king of Israel all their days]. 2 Chronicles 15:19: Καὶ πόλεμος οὖκ ἦν μετʼ αὐτοῦ ἕως τοῦ πέμπτου καὶ τριακοστοῦ ἔτους τῆς βασιλείας Ἀσά [and there was no war with him until the thirty-fifth year of the reign of Asa]. Fetched from https://bolls.life/get-text/WLC/11/15/, https://bolls.life/get-text/WLC/14/15/, https://ebible.org/grcbrent/1KI15.htm and https://ebible.org/grcbrent/2CH15.htm.",
+    "reasoning": "By the Kings verses Baasha’s days as king ran from Asa’s third year for twenty-four years, and war with Asa filled them. Read as an interval without further war, Chronicles describes peace up to Asa’s thirty-fifth year. This contrasts with continuous warfare if “all their days” in Kings denotes active warfare throughout, rather than continuing hostility.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew in both books and the Greek agrees in the verses quoted. The KJV has “no more war”; the Hebrew and Greek quoted have no word for “more”, and that difference is stated as wording only. The statements can both stand if “war” in Kings means a standing enmity and in Chronicles an open campaign, or if the thirty-five years are counted from a point before Asa’s accession; the verse says “of the reign of Asa” and neither book explains. A separate published record deals with the date of Baasha’s attack in 16:1; this record is about war and no war. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Kings 15: KJV",
+        "url": "https://ebible.org/eng-kjv/1KI15.htm"
+      },
+      {
+        "label": "2 Chronicles 15: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH15.htm"
+      },
+      {
+        "label": "2 Chronicles 16: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH16.htm"
+      },
+      {
+        "label": "1 Kings 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/11/15/"
+      },
+      {
+        "label": "2 Chronicles 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/15/"
+      },
+      {
+        "label": "1 Kings 15: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1KI15.htm"
+      },
+      {
+        "label": "2 Chronicles 15: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH15.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 15:19",
+        "book": 13,
+        "chapter": 15,
+        "verse": 19
+      },
+      {
+        "label": "1 Kings 15:16",
+        "book": 10,
+        "chapter": 15,
+        "verse": 16
+      },
+      {
+        "label": "1 Kings 15:32",
+        "book": 10,
+        "chapter": 15,
+        "verse": 32
+      },
+      {
+        "label": "1 Kings 15:33",
+        "book": 10,
+        "chapter": 15,
+        "verse": 33
+      },
+      {
+        "label": "2 Chronicles 16:1",
+        "book": 13,
+        "chapter": 16,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 15:19",
+        "quote": "there was no more war unto the five and thirtieth year of the reign of Asa"
+      },
+      {
+        "label": "B",
+        "ref": "1 Kings 15:16",
+        "quote": "there was war between Asa and Baasha king of Israel all their days"
+      }
+    ]
+  },
+  {
+    "id": "other-beside-the-ammonites-or-some-of-the-minaeans-greek",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 20:1",
+    "appliesTo": [
+      "2 Chronicles 20:1"
+    ],
+    "title": "Jehoshaphat’s invaders: Moab, Ammon and “other beside the Ammonites”, or “some of the Minæans”?",
+    "status": "Context",
+    "summary": "The KJV lists the children of Moab, the children of Ammon, “and with them other beside the Ammonites”. Brenton’s Greek names the third group: “of the Minæans”. Nine verses later the three are Ammon, Moab and mount Seir.",
+    "text": "KJV 2 Chronicles 20:1: “It came to pass after this also, that the children of Moab, and the children of Ammon, and with them other beside the Ammonites, came against Jehoshaphat to battle.” KJV 20:10: “the children of Ammon and Moab and mount Seir” KJV 26:7: “and the Mehunims” Hebrew (WLC) 20:1: בְנֵי־מֹואָב֩ וּבְנֵ֨י עַמֹּ֜ון וְעִמָּהֶ֧ם ׀ מֵֽהָעַמֹּונִ֛ים [the sons of Moab and the sons of Ammon, and with them from the Ammonites]. Septuagint (Brenton Greek) 20:1: οἱ υἱοὶ Μωὰβ, καὶ υἱοὶ Ἀμμὼν, καὶ μετʼ αὐτῶν ἐκ τῶν Μιναίων [the sons of Moab and sons of Ammon, and with them of the Minæans]. 26:7: καὶ ἐπὶ τοὺς Μιναίους [and against the Minæans]. Fetched from https://bolls.life/get-text/WLC/14/20/, https://ebible.org/grcbrent/2CH20.htm and https://ebible.org/grcbrent/2CH26.htm.",
+    "reasoning": "In the KJV the third party has no name; it is only “other beside the Ammonites”. The Greek gives it one, the same name it prints at 26:7 where the KJV has “the Mehunims”. The Hebrew quoted names the Ammonites a second time.",
+    "scope": "G applies at 2 Chronicles 20:1; 20:10 and 26:7 are context. The record does not say that the Minæans of the Greek are the people of mount Seir, or the Mehunims of 26:7 in the KJV; it reports that the Greek uses one name in both verses. No H is proposed: the record does not settle whether the Hebrew phrase can bear the sense the KJV gives it. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 20: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH20.htm"
+      },
+      {
+        "label": "2 Chronicles 26: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH26.htm"
+      },
+      {
+        "label": "2 Chronicles 20: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/20/"
+      },
+      {
+        "label": "2 Chronicles 20: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH20.htm"
+      },
+      {
+        "label": "2 Chronicles 26: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH26.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 20:1",
+        "book": 13,
+        "chapter": 20,
+        "verse": 1
+      },
+      {
+        "label": "2 Chronicles 20:10",
+        "book": 13,
+        "chapter": 20,
+        "verse": 10
+      },
+      {
+        "label": "2 Chronicles 26:7",
+        "book": 13,
+        "chapter": 26,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 20:1",
+        "quote": "and with them other beside the Ammonites"
+      }
+    ]
+  },
+  {
+    "id": "jehoshaphat-and-ahaz-king-of-israel-or-king-of-juda-greek",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 21:2",
+    "appliesTo": [
+      "2 Chronicles 21:2",
+      "2 Chronicles 28:19"
+    ],
+    "title": "Jehoshaphat and Ahaz: “king of Israel”, or king of Juda?",
+    "status": "Context",
+    "summary": "The KJV twice gives a king who reigned in Jerusalem the title “king of Israel”: Jehoshaphat at 21:2 and Ahaz at 28:19. Brenton’s Greek has “king of Juda” in both verses.",
+    "text": "KJV 2 Chronicles 21:2: “all these were the sons of Jehoshaphat king of Israel” KJV 28:19: “For the Lord brought Judah low because of Ahaz king of Israel” KJV 20:31: “And Jehoshaphat reigned over Judah” KJV 16:1: “Baasha king of Israel came up against Judah” KJV 18:3: “And Ahab king of Israel said unto Jehoshaphat king of Judah” Hebrew (WLC) 21:2: כָּל־אֵ֕לֶּה בְּנֵ֥י יְהֹושָׁפָ֖ט מֶ֥לֶךְ־יִשְׂרָאֵֽל [all these, sons of Jehoshaphat king of Israel]. 28:19: בַּעֲב֖וּר אָחָ֣ז מֶֽלֶךְ־יִשְׂרָאֵ֑ל [because of Ahaz king of Israel]. Septuagint (Brenton Greek) 21:2: πάντες οὗτοι υἱοὶ Ἰωσαφὰτ βασιλέως Ἰούδα [all these, sons of Josaphat king of Juda]. 28:19: διὰ Ἄχαζ βασιλέα Ἰούδα [because of Achaz king of Juda]. Fetched from https://bolls.life/get-text/WLC/14/21/, https://bolls.life/get-text/WLC/14/28/, https://ebible.org/grcbrent/2CH21.htm and https://ebible.org/grcbrent/2CH28.htm.",
+    "reasoning": "In both verses the KJV follows the Hebrew, and the Greek has the other kingdom’s name. At 16:1 and 18:3 the same book gives the title “king of Israel” to Baasha and to Ahab, kings of the northern kingdom, and at 18:3 sets it beside “Jehoshaphat king of Judah”.",
+    "scope": "G applies at 21:2 and at 28:19; 20:31, 16:1 and 18:3 are context. No H is proposed: the KJV matches the Hebrew quoted. The record does not say the Hebrew is mistaken; “Israel” may be used there for the whole people, and the book does not explain. It does not say why the Greek differs. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 21: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH21.htm"
+      },
+      {
+        "label": "2 Chronicles 28: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH28.htm"
+      },
+      {
+        "label": "2 Chronicles 20: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH20.htm"
+      },
+      {
+        "label": "2 Chronicles 16: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH16.htm"
+      },
+      {
+        "label": "2 Chronicles 18: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH18.htm"
+      },
+      {
+        "label": "2 Chronicles 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/21/"
+      },
+      {
+        "label": "2 Chronicles 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/28/"
+      },
+      {
+        "label": "2 Chronicles 21: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH21.htm"
+      },
+      {
+        "label": "2 Chronicles 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 21:2",
+        "book": 13,
+        "chapter": 21,
+        "verse": 2
+      },
+      {
+        "label": "2 Chronicles 28:19",
+        "book": 13,
+        "chapter": 28,
+        "verse": 19
+      },
+      {
+        "label": "2 Chronicles 20:31",
+        "book": 13,
+        "chapter": 20,
+        "verse": 31
+      },
+      {
+        "label": "2 Chronicles 16:1",
+        "book": 13,
+        "chapter": 16,
+        "verse": 1
+      },
+      {
+        "label": "2 Chronicles 18:3",
+        "book": 13,
+        "chapter": 18,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 21:2",
+        "quote": "Jehoshaphat king of Israel"
+      },
+      {
+        "label": "A",
+        "ref": "2 Chronicles 28:19",
+        "quote": "Ahaz king of Israel"
+      }
+    ]
+  },
+  {
+    "id": "jehoram-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 21:20",
+    "appliesTo": [
+      "2 Chronicles 21:20",
+      "2 Kings 8:24"
+    ],
+    "title": "Jehoram’s burial: “with his fathers”, or “not in the sepulchres of the kings”?",
+    "status": "Context",
+    "summary": "Kings says Joram of Judah “was buried with his fathers in the city of David”. Chronicles says he was buried in the city of David, “but not in the sepulchres of the kings”.",
+    "text": "KJV 2 Kings 8:24: “And Joram slept with his fathers, and was buried with his fathers in the city of David” KJV 2 Chronicles 21:20: “Howbeit they buried him in the city of David, but not in the sepulchres of the kings” Hebrew (WLC) 2 Kings 8:24: וַיִּקָּבֵ֥ר עִם־אֲבֹתָ֖יו בְּעִ֣יר דָּוִ֑ד [and he was buried with his fathers in the city of David]. 2 Chronicles 21:20: וַֽיִּקְבְּרֻ֙הוּ֙ בְּעִ֣יר דָּוִ֔יד וְלֹ֖א בְּקִבְרֹ֥ות הַמְּלָכִֽים [and they buried him in the city of David, and not in the tombs of the kings]. Septuagint (Brenton Greek) 2 Kings 8:24: καὶ ἐτάφη μετὰ τῶν πατέρων αὐτοῦ ἐν πόλει Δαυὶδ [and he was buried with his fathers in the city of David]. 2 Chronicles 21:20: καὶ ἐτάφη ἐν πόλει Δαυὶδ, καὶ οὐκ ἐν τάφοις τῶν βασιλέων [and he was buried in the city of David, and not in the tombs of the kings]. Fetched from https://bolls.life/get-text/WLC/12/8/, https://bolls.life/get-text/WLC/14/21/, https://ebible.org/grcbrent/2KI08.htm and https://ebible.org/grcbrent/2CH21.htm.",
+    "reasoning": "Jehoram’s fathers were the kings of Judah. Kings places him with them in burial; Chronicles says he was kept out of the kings’ tombs.",
+    "scope": "No tag is proposed: the KJV matches the Hebrew, and the Greek agrees in each book. Both books name the city of David. If “with his fathers” means only the same city and not the same tombs, the statements agree; Kings does not say so. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Kings 8: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI08.htm"
+      },
+      {
+        "label": "2 Chronicles 21: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH21.htm"
+      },
+      {
+        "label": "2 Kings 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/8/"
+      },
+      {
+        "label": "2 Chronicles 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/21/"
+      },
+      {
+        "label": "2 Kings 8: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI08.htm"
+      },
+      {
+        "label": "2 Chronicles 21: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 21:20",
+        "book": 13,
+        "chapter": 21,
+        "verse": 20
+      },
+      {
+        "label": "2 Kings 8:24",
+        "book": 11,
+        "chapter": 8,
+        "verse": 24
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 21:20",
+        "quote": "they buried him in the city of David, but not in the sepulchres of the kings"
+      },
+      {
+        "label": "B",
+        "ref": "2 Kings 8:24",
+        "quote": "was buried with his fathers in the city of David"
+      }
+    ]
+  },
+  {
+    "id": "azariah-or-ahaziah-son-of-jehoram-went-down-to-jezreel",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 22:6",
+    "appliesTo": [
+      "2 Chronicles 22:6"
+    ],
+    "title": "Who went down to Jezreel: “Azariah the son of Jehoram”, or Ahaziah?",
+    "status": "Textual conflict",
+    "summary": "Chronicles names the king of Judah who visited the wounded Joram “Azariah the son of Jehoram”. Verses 1 and 7 of the same chapter call him Ahaziah, and so does the matching verse in Kings. Brenton’s Greek has Ochozias, its form of Ahaziah, in this verse too.",
+    "text": "KJV 2 Chronicles 22:6: “And Azariah the son of Jehoram king of Judah went down to see Jehoram the son of Ahab at Jezreel, because he was sick” KJV 2 Kings 8:29: “And Ahaziah the son of Jehoram king of Judah went down to see Joram the son of Ahab in Jezreel, because he was sick” KJV 2 Chronicles 22:1: “So Ahaziah the son of Jehoram king of Judah reigned” KJV 2 Chronicles 22:7: “And the destruction of Ahaziah was of God by coming to Joram” Hebrew (WLC) 2 Chronicles 22:6: וַעֲזַרְיָ֨הוּ בֶן־יְהֹורָ֜ם מֶ֣לֶךְ יְהוּדָ֗ה יָרַ֡ד [and Azariah son of Jehoram king of Judah went down]. 2 Kings 8:29: וַאֲחַזְיָ֨הוּ בֶן־יְהֹורָ֜ם מֶ֣לֶךְ יְהוּדָ֗ה יָרַ֡ד [and Ahaziah son of Jehoram king of Judah went down]. Septuagint (Brenton Greek) 2 Chronicles 22:6: Καὶ Ὀχοζίας υἱὸς Ἰωρὰμ βασιλεὺς Ἰούδα κατέβη [and Ochozias son of Joram, king of Juda, went down]. 22:1: καὶ ἐβασίλευσεν Ὀχοζίας υἱὸς Ἰωρὰμ βασιλέως Ἰούδα [and Ochozias son of Joram king of Juda reigned]. Fetched from https://bolls.life/get-text/WLC/14/22/, https://bolls.life/get-text/WLC/12/8/ and https://ebible.org/grcbrent/2CH22.htm.",
+    "reasoning": "The Chronicles and Kings verses are the same sentence with one name changed. In the KJV and the Hebrew of Chronicles the visitor is Azariah; everywhere else in the passage, and in Kings, he is Ahaziah. The Greek of Chronicles prints one name throughout.",
+    "scope": "G applies at 2 Chronicles 22:6, where the Greek name differs from the KJV’s. No H is proposed: the KJV follows the Hebrew. One man may have borne two names; no verse quoted says so. The name Jehoahaz at 21:17 is not treated in this record. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 22: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH22.htm"
+      },
+      {
+        "label": "2 Kings 8: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI08.htm"
+      },
+      {
+        "label": "2 Chronicles 22: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/22/"
+      },
+      {
+        "label": "2 Kings 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/8/"
+      },
+      {
+        "label": "2 Chronicles 22: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH22.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 22:6",
+        "book": 13,
+        "chapter": 22,
+        "verse": 6
+      },
+      {
+        "label": "2 Kings 8:29",
+        "book": 11,
+        "chapter": 8,
+        "verse": 29
+      },
+      {
+        "label": "2 Chronicles 22:1",
+        "book": 13,
+        "chapter": 22,
+        "verse": 1
+      },
+      {
+        "label": "2 Chronicles 22:7",
+        "book": 13,
+        "chapter": 22,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 22:6",
+        "quote": "Azariah the son of Jehoram king of Judah went down"
+      },
+      {
+        "label": "B",
+        "ref": "2 Kings 8:29",
+        "quote": "Ahaziah the son of Jehoram king of Judah went down"
+      }
+    ]
+  },
+  {
+    "id": "joash-conspirators-sons-of-an-ammonitess-and-a-moabitess-or-an-ammanite-and-a-moabite-greek",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 24:26",
+    "appliesTo": [
+      "2 Chronicles 24:26"
+    ],
+    "title": "The men who killed Joash: sons of an Ammonitess and a Moabitess, or an Ammanite and a Moabite?",
+    "status": "Context",
+    "summary": "The KJV of Chronicles names the conspirators Zabad son of Shimeath “an Ammonitess” and Jehozabad son of Shimrith “a Moabitess”: the foreign parent is a woman in each case. In Brenton’s Greek the words are masculine and stand with the conspirators’ own names: “the Ammanite”, “the Moabite”. Kings names the two men Jozachar son of Shimeath and Jehozabad son of Shomer and says nothing of Ammon or Moab.",
+    "text": "KJV 2 Chronicles 24:26: “And these are they that conspired against him; Zabad the son of Shimeath an Ammonitess, and Jehozabad the son of Shimrith a Moabitess.” KJV 2 Kings 12:21: “For Jozachar the son of Shimeath, and Jehozabad the son of Shomer, his servants, smote him, and he died” Hebrew (WLC) 2 Chronicles 24:26: זָבָ֗ד בֶּן־שִׁמְעָת֙ הָֽעַמֹּונִ֔ית וִיהֹ֣וזָבָ֔ד בֶּן־שִׁמְרִ֖ית הַמֹּואָבִֽית [Zabad son of Shimeath the Ammonitess, and Jehozabad son of Shimrith the Moabitess]. Septuagint (Brenton Greek) 2 Chronicles 24:26: Ζαβὲδ ὁ τοῦ Σαμαὰθ ὁ Ἀμμανίτης, καὶ Ἰωζαβὲδ ὁ τοῦ Σαμαρὴθ ὁ Μωαβίτης [Zabed the son of Samaath, the Ammanite, and Jozabed the son of Samareth, the Moabite]. Hebrew (WLC) 2 Kings, numbered 12:22: וִיהֹוזָבָ֨ד בֶּן־שֹׁמֵ֤ר ׀ עֲבָדָיו֙ הִכֻּ֣הוּ [and Jehozabad son of Shomer, his servants, struck him]. Fetched from https://bolls.life/get-text/WLC/14/24/, https://bolls.life/get-text/WLC/12/12/ and https://ebible.org/grcbrent/2CH24.htm.",
+    "reasoning": "In the KJV and the Hebrew the two words are feminine and describe Shimeath and Shimrith. In the Greek they are masculine and in the same case as Zabed and Jozabed. By the Greek wording the killers are themselves called a man of Ammon and a man of Moab; by the KJV they are sons of women of those peoples.",
+    "scope": "G applies at 2 Chronicles 24:26. 2 Kings 12:21 is context: it gives the first man another name and has Shomer where Chronicles has Shimrith, and the record does not say whether Shomer and Shimrith are one person. No H is proposed: the KJV follows the Hebrew of Chronicles. In 2 Kings 12 the Hebrew numbers each verse one higher than the KJV. The record does not say how the Greek wording arose. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 24: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH24.htm"
+      },
+      {
+        "label": "2 Kings 12: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI12.htm"
+      },
+      {
+        "label": "2 Chronicles 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/24/"
+      },
+      {
+        "label": "2 Kings 12: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/12/"
+      },
+      {
+        "label": "2 Chronicles 24: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH24.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 24:26",
+        "book": 13,
+        "chapter": 24,
+        "verse": 26
+      },
+      {
+        "label": "2 Kings 12:21",
+        "book": 11,
+        "chapter": 12,
+        "verse": 21
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 24:26",
+        "quote": "Zabad the son of Shimeath an Ammonitess, and Jehozabad the son of Shimrith a Moabitess"
+      }
+    ]
+  },
+  {
+    "id": "captives-of-judah-two-hundred-thousand-or-three-hundred-thousand-greek",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 28:8",
+    "appliesTo": [
+      "2 Chronicles 28:8"
+    ],
+    "title": "Captives taken from Judah: two hundred thousand, or three hundred thousand?",
+    "status": "Context",
+    "summary": "The KJV says Israel carried away “two hundred thousand” of their brethren, women, sons and daughters. Brenton’s Greek of the same verse has three hundred thousand.",
+    "text": "KJV 2 Chronicles 28:8: “And the children of Israel carried away captive of their brethren two hundred thousand, women, sons, and daughters” Hebrew (WLC) 28:8: וַיִּשְׁבּוּ֩ בְנֵֽי־יִשְׂרָאֵ֨ל מֵֽאֲחֵיהֶ֜ם מָאתַ֣יִם אֶ֗לֶף נָשִׁים֙ בָּנִ֣ים וּבָנֹ֔ות [and the sons of Israel took captive from their brethren two hundred thousand, women, sons and daughters]. Septuagint (Brenton Greek) 28:8: Καὶ ᾐχμαλώτισαν οἱ υἱοὶ Ἰσραὴλ ἀπὸ τῶν ἀδελφῶν αὐτῶν τριακοσίας χιλιάδας, γυναῖκας καὶ υἱοὺς καὶ θυγατέρας [and the sons of Israel took captive from their brethren three hundred thousand, women and sons and daughters]. Fetched from https://bolls.life/get-text/WLC/14/28/ and https://ebible.org/grcbrent/2CH28.htm.",
+    "reasoning": "The quoted counts of captives differ by a hundred thousand.",
+    "scope": "G applies at 2 Chronicles 28:8. No H is proposed: the KJV follows the Hebrew quoted. The record does not say which figure is original. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 28: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH28.htm"
+      },
+      {
+        "label": "2 Chronicles 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/28/"
+      },
+      {
+        "label": "2 Chronicles 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 28:8",
+        "book": 13,
+        "chapter": 28,
+        "verse": 8
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "ahaz-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 28:27",
+    "appliesTo": [
+      "2 Chronicles 28:27",
+      "2 Kings 16:20"
+    ],
+    "title": "Ahaz’s burial: “with his fathers in the city of David”, or not brought “into the sepulchres of the kings”?",
+    "status": "Context",
+    "summary": "Kings says Ahaz “was buried with his fathers in the city of David”. Chronicles says they buried him “in the city, even in Jerusalem: but they brought him not into the sepulchres of the kings of Israel”.",
+    "text": "KJV 2 Kings 16:20: “And Ahaz slept with his fathers, and was buried with his fathers in the city of David” KJV 2 Chronicles 28:27: “And Ahaz slept with his fathers, and they buried him in the city, even in Jerusalem: but they brought him not into the sepulchres of the kings of Israel” Hebrew (WLC) 2 Kings 16:20: וַיִּקָּבֵ֥ר עִם־אֲבֹתָ֖יו בְּעִ֣יר דָּוִ֑ד [and he was buried with his fathers in the city of David]. 2 Chronicles 28:27: וַֽיִּקְבְּרֻ֤הוּ בָעִיר֙ בִּיר֣וּשָׁלִַ֔ם כִּ֚י לֹ֣א הֱבִיאֻ֔הוּ לְקִבְרֵ֖י מַלְכֵ֣י יִשְׂרָאֵ֑ל [and they buried him in the city, in Jerusalem, for they did not bring him to the tombs of the kings of Israel]. Septuagint (Brenton Greek) 2 Chronicles 28:27: καὶ ἐτάφη ἐν πόλει Δαυὶδ, ὅτι οὐκ εἰσήνεγκαν αὐτὸν εἰς τοὺς τάφους τῶν βασιλέων Ἰσραὴλ [and he was buried in the city of David, for they did not bring him into the tombs of the kings of Israel]. 2 Kings 16:20: καὶ ἐτάφη ἐν πόλει Δαυὶδ [and he was buried in the city of David]. Fetched from https://bolls.life/get-text/WLC/12/16/, https://bolls.life/get-text/WLC/14/28/, https://ebible.org/grcbrent/2CH28.htm and https://ebible.org/grcbrent/2KI16.htm.",
+    "reasoning": "Ahaz’s fathers were the kings of Judah. Kings places him with them in burial; Chronicles says he was not brought into the kings’ tombs.",
+    "scope": "No tag is proposed. The KJV follows the Hebrew in each book. Brenton’s Greek of Chronicles has “in the city of David” where the KJV has “in the city, even in Jerusalem”, and Brenton’s Greek of the Kings verse does not print the words “with his fathers” after “was buried”; these are stated as wording and the Greek keeps the exclusion from the kings’ tombs. If “with his fathers” means only the same city and not the same tombs, the statements agree; Kings does not say so. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Kings 16: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI16.htm"
+      },
+      {
+        "label": "2 Chronicles 28: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH28.htm"
+      },
+      {
+        "label": "2 Kings 16: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/16/"
+      },
+      {
+        "label": "2 Chronicles 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/28/"
+      },
+      {
+        "label": "2 Chronicles 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH28.htm"
+      },
+      {
+        "label": "2 Kings 16: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI16.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 28:27",
+        "book": 13,
+        "chapter": 28,
+        "verse": 27
+      },
+      {
+        "label": "2 Kings 16:20",
+        "book": 11,
+        "chapter": 16,
+        "verse": 20
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 28:27",
+        "quote": "they brought him not into the sepulchres of the kings of Israel"
+      },
+      {
+        "label": "B",
+        "ref": "2 Kings 16:20",
+        "quote": "was buried with his fathers in the city of David"
+      }
+    ]
+  },
+  {
+    "id": "manasseh-taken-among-the-thorns-or-in-bonds-greek",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 33:11",
+    "appliesTo": [
+      "2 Chronicles 33:11"
+    ],
+    "title": "Manasseh’s capture: taken “among the thorns”, or “in bonds”?",
+    "status": "Context",
+    "summary": "The KJV says the Assyrian captains “took Manasseh among the thorns”, which reads as the place where he was caught. Brenton’s Greek says they took him “in bonds”.",
+    "text": "KJV 2 Chronicles 33:11: “which took Manasseh among the thorns, and bound him with fetters, and carried him to Babylon” Hebrew (WLC) 33:11: וַיִּלְכְּד֥וּ אֶת־מְנַשֶּׁ֖ה בַּחֹחִ֑ים וַיַּֽאַסְרֻ֙הוּ֙ בַּֽנְחֻשְׁתַּ֔יִם [and they captured Manasseh with the hohim, and bound him with bronze fetters]. The Hebrew word is left untranslated in this rendering. Septuagint (Brenton Greek) 33:11: καὶ κατέλαβον τὸν Μανασσῆ ἐν δεσμοῖς, καὶ ἔδησαν αὐτὸν ἐν πέδαις [and they took Manasses in bonds, and bound him in fetters]. Fetched from https://bolls.life/get-text/WLC/14/33/ and https://ebible.org/grcbrent/2CH33.htm.",
+    "reasoning": "The KJV phrase tells where Manasseh was when he was taken. The Greek phrase tells how he was held. The two give the reader different pictures of the capture.",
+    "scope": "G applies at 2 Chronicles 33:11. No H is proposed: the record does not settle the meaning of the Hebrew word, and does not say the KJV’s rendering of it is wrong. It does not say which sense the Greek wording rests on. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 33: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH33.htm"
+      },
+      {
+        "label": "2 Chronicles 33: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/33/"
+      },
+      {
+        "label": "2 Chronicles 33: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH33.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 33:11",
+        "book": 13,
+        "chapter": 33,
+        "verse": 11
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "manasseh-altars-in-the-house-of-the-lord-taken-away-by-him-or-beaten-down-by-josiah",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 33:15",
+    "appliesTo": [
+      "2 Chronicles 33:15",
+      "2 Kings 23:12"
+    ],
+    "title": "Manasseh’s altars in the house of the Lord: taken away by Manasseh, or beaten down by Josiah?",
+    "status": "Textual conflict",
+    "summary": "Both books say Manasseh built altars in the two courts of the house of the Lord. Chronicles says that Manasseh himself later took away all the altars he had built there and cast them out of the city. Kings says that Josiah, two reigns later, beat down “the altars which Manasseh had made in the two courts of the house of the Lord”.",
+    "text": "KJV 2 Chronicles 33:5: “And he built altars for all the host of heaven in the two courts of the house of the Lord.” KJV 2 Kings 21:5: “And he built altars for all the host of heaven in the two courts of the house of the Lord.” KJV 2 Chronicles 33:15: “And he took away the strange gods, and the idol out of the house of the Lord, and all the altars that he had built in the mount of the house of the Lord, and in Jerusalem, and cast them out of the city.” KJV 2 Kings 23:12: “and the altars which Manasseh had made in the two courts of the house of the Lord, did the king beat down” KJV 2 Chronicles 33:22: “for Amon sacrificed unto all the carved images which Manasseh his father had made, and served them” Hebrew (WLC) 2 Chronicles 33:15: וְכָל־הַֽמִּזְבְּחֹ֗ות אֲשֶׁ֥ר בָּנָ֛ה בְּהַ֥ר בֵּית־יְהוָ֖ה וּבִירוּשָׁלִָ֑ם וַיַּשְׁלֵ֖ךְ ח֥וּצָה לָעִֽיר [and all the altars that he had built in the mount of the house of the LORD and in Jerusalem, and he cast them outside the city]. Hebrew (WLC) 2 Kings 23:12: וְאֶת־הַֽמִּזְבְּחֹות֙ אֲשֶׁר־עָשָׂ֣ה מְנַשֶּׁ֔ה בִּשְׁתֵּ֛י חַצְרֹ֥ות בֵּית־יְהוָ֖ה נָתַ֣ץ הַמֶּ֑לֶךְ [and the altars that Manasseh had made in the two courts of the house of the LORD the king pulled down]. Septuagint (Brenton Greek) 2 Chronicles 33:15: καὶ πάντα τὰ θυσιαστήρια, ἃ ᾠκοδόμησεν ἐν ὄρει οἴκου Κυρίου καὶ ἐν Ἱερουσαλὴμ, καὶ ἔξωθεν τῆς πόλεως [and all the altars which he built in the mount of the house of the Lord and in Jerusalem and outside the city]. 2 Kings 23:12: καὶ τὰ θυσιαστήρια ἃ ἐποίησε Μανασσῆς ἐν ταῖς δυσὶν αὐλαῖς οἴκου Κυρίου καθεῖλεν ὁ βασιλεὺς [and the altars which Manasses made in the two courts of the house of the Lord the king pulled down]. Fetched from https://bolls.life/get-text/WLC/14/33/, https://bolls.life/get-text/WLC/12/23/, https://ebible.org/grcbrent/2CH33.htm and https://ebible.org/grcbrent/2KI23.htm.",
+    "reasoning": "Chronicles has “all the altars that he had built in the mount of the house of the Lord” removed and thrown out of the city in Manasseh’s lifetime. Kings has altars that Manasseh made, in the courts of the same house, still standing for Josiah to break down.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew in both books. The statements can both stand if the altars were set up again after Manasseh removed them, for example under Amon; 2 Chronicles 33:22 says that Amon sacrificed to the carved images his father had made, and no verse quoted reports altars being rebuilt. Brenton’s Greek of 33:15 as printed has no verb for casting out and reads “and outside the city” as a third place; that is stated as wording and no G is proposed on it here. The record does not claim that Kings denies Manasseh’s removal; the Kings verses quoted do not mention one. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 33: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH33.htm"
+      },
+      {
+        "label": "2 Kings 21: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI21.htm"
+      },
+      {
+        "label": "2 Kings 23: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI23.htm"
+      },
+      {
+        "label": "2 Chronicles 33: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/33/"
+      },
+      {
+        "label": "2 Kings 23: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/23/"
+      },
+      {
+        "label": "2 Chronicles 33: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH33.htm"
+      },
+      {
+        "label": "2 Kings 23: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI23.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 33:15",
+        "book": 13,
+        "chapter": 33,
+        "verse": 15
+      },
+      {
+        "label": "2 Kings 23:12",
+        "book": 11,
+        "chapter": 23,
+        "verse": 12
+      },
+      {
+        "label": "2 Chronicles 33:5",
+        "book": 13,
+        "chapter": 33,
+        "verse": 5
+      },
+      {
+        "label": "2 Kings 21:5",
+        "book": 11,
+        "chapter": 21,
+        "verse": 5
+      },
+      {
+        "label": "2 Chronicles 33:22",
+        "book": 13,
+        "chapter": 33,
+        "verse": 22
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 33:15",
+        "quote": "all the altars that he had built in the mount of the house of the Lord, and in Jerusalem, and cast them out of the city"
+      },
+      {
+        "label": "B",
+        "ref": "2 Kings 23:12",
+        "quote": "the altars which Manasseh had made in the two courts of the house of the Lord, did the king beat down"
+      }
+    ]
+  },
+  {
+    "id": "jehoiakim-bound-to-be-carried-to-babylon-greek-carried-and-buried-with-his-fathers",
+    "mode": "contradictions",
+    "ref": "2 Chronicles 36:6",
+    "appliesTo": [
+      "2 Chronicles 36:6",
+      "2 Chronicles 36:8"
+    ],
+    "title": "Jehoiakim’s end: bound “to carry him to Babylon” — the Greek says he was carried there, and was buried with his fathers",
+    "status": "Context",
+    "summary": "The KJV of Chronicles says Nebuchadnezzar bound Jehoiakim “to carry him to Babylon” and the quoted Chronicles verses do not describe his death or burial. Brenton’s Greek says the king “carried him away to Babylon”, and two verses later adds that Jehoiakim slept with his fathers “and was buried in Ganozae with his fathers”. Jeremiah had said he would have “the burial of an ass”, cast out beyond the gates.",
+    "text": "KJV 2 Chronicles 36:6: “Against him came up Nebuchadnezzar king of Babylon, and bound him in fetters, to carry him to Babylon.” KJV 36:8: “Now the rest of the acts of Jehoiakim, and his abominations which he did, and that which was found in him, behold, they are written in the book of the kings of Israel and Judah: and Jehoiachin his son reigned in his stead.” KJV 2 Kings 24:6: “So Jehoiakim slept with his fathers: and Jehoiachin his son reigned in his stead.” KJV Jeremiah 22:19: “He shall be buried with the burial of an ass, drawn and cast forth beyond the gates of Jerusalem.” KJV Jeremiah 36:30: “and his dead body shall be cast out in the day to the heat, and in the night to the frost” Hebrew (WLC) 2 Chronicles 36:6: וַיַּֽאַסְרֵ֙הוּ֙ בַּֽנְחֻשְׁתַּ֔יִם לְהֹלִיכֹ֖ו בָּבֶֽלָה [and he bound him in bronze fetters to take him to Babylon]. 36:8 ends: עַל־סֵ֛פֶר מַלְכֵ֥י יִשְׂרָאֵ֖ל וִֽיהוּדָ֑ה וַיִּמְלֹ֛ךְ יְהֹויָכִ֥ין בְּנֹ֖ו תַּחְתָּֽיו [in the book of the kings of Israel and Judah; and Jehoiachin his son reigned in his place]. Septuagint (Brenton Greek) 2 Chronicles 36:6: καὶ ἔδησεν αὐτὸν ἐν χαλκαῖς πέδαις, καὶ ἀπήγαγεν αὐτὸν εἰς Βαβυλῶνα [and bound him in bronze fetters, and carried him away to Babylon]. 36:8: καὶ ἐκοιμήθη Ἰωακὶμ μετὰ τῶν πατέρων αὐτοῦ, καὶ ἐτάφη ἐν γανοζαὴ μετὰ τὼν πατέρων αὐτοῦ, καὶ ἐβασίλευσεν Ἰεχονίας υἱὸς αὐτοῦ ἀντʼ αὐτοῦ [and Joakim slept with his fathers, and was buried in Ganozae with his fathers, and Jechonias his son reigned in his place]. Septuagint (Brenton Greek) Jeremiah 22:19: Ταφὴν ὄνου ταφήσεται [he shall be buried with the burial of an ass]. Fetched from https://bolls.life/get-text/WLC/14/36/, https://ebible.org/grcbrent/2CH36.htm and https://ebible.org/grcbrent/JER22.htm.",
+    "reasoning": "At 36:6 the KJV and the Hebrew state a purpose; the Greek states that it was done. At 36:8 the Greek has a death notice and a burial that the KJV and the Hebrew of the verse lack. The burial matters beside Jeremiah’s two sayings about Jehoiakim’s body: a burial “with his fathers” and “the burial of an ass … beyond the gates of Jerusalem” are different ends.",
+    "scope": "G applies at 2 Chronicles 36:6 for “carried him away”, and at 36:8 for the added death and burial. The KJV states “slept with his fathers” in another book, at 2 Kings 24:6; it states no burial of Jehoiakim in any verse quoted here. The Jeremiah verses are sayings about what would happen, not reports that it happened, and the record does not claim that the Greek of Chronicles contradicts them: a body could be cast out and afterwards buried, and no verse quoted says so. The Greek of 36:8 names a burial place without explaining its location or how the burial relates to the journey to Babylon. These quotations alone do not establish a return from Babylon. The cited Greek page prints lettered verses 2a to 2c, 4a and 5a to 5d in this chapter; the wording quoted is printed at the plain numbers 6 and 8. Brenton’s Greek numbers Jeremiah 36 as chapter 43; only the KJV is quoted for Jeremiah 36:30. A separate published record deals with the words “none to sit upon the throne” in that verse. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 36: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH36.htm"
+      },
+      {
+        "label": "2 Kings 24: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI24.htm"
+      },
+      {
+        "label": "Jeremiah 22: KJV",
+        "url": "https://ebible.org/eng-kjv/JER22.htm"
+      },
+      {
+        "label": "Jeremiah 36: KJV",
+        "url": "https://ebible.org/eng-kjv/JER36.htm"
+      },
+      {
+        "label": "2 Chronicles 36: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/36/"
+      },
+      {
+        "label": "2 Chronicles 36: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH36.htm"
+      },
+      {
+        "label": "Jeremiah 22: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/JER22.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 36:6",
+        "book": 13,
+        "chapter": 36,
+        "verse": 6
+      },
+      {
+        "label": "2 Chronicles 36:8",
+        "book": 13,
+        "chapter": 36,
+        "verse": 8
+      },
+      {
+        "label": "2 Kings 24:6",
+        "book": 11,
+        "chapter": 24,
+        "verse": 6
+      },
+      {
+        "label": "Jeremiah 22:19",
+        "book": 23,
+        "chapter": 22,
+        "verse": 19
+      },
+      {
+        "label": "Jeremiah 36:30",
+        "book": 23,
+        "chapter": 36,
+        "verse": 30
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
+  },
+  {
+    "id": "a-writing-from-elijah-the-prophet-when-was-it-written-and-how-did-it-come",
+    "mode": "questions",
+    "ref": "2 Chronicles 21:12",
+    "appliesTo": [
+      "2 Chronicles 21:12"
+    ],
+    "title": "“There came a writing to him from Elijah the prophet” — when was it written, and how did it reach Jehoram?",
+    "status": "Context",
+    "summary": "Jehoram of Judah receives a writing from Elijah that condemns him for killing his brothers, an act Chronicles places after his father Jehoshaphat’s death. Kings tells of Elijah being taken up into heaven before it tells of a campaign in which Jehoshaphat is still alive. The verses do not say when the writing was made or who carried it.",
+    "text": "KJV 2 Chronicles 21:12: “And there came a writing to him from Elijah the prophet, saying, Thus saith the Lord God of David thy father, Because thou hast not walked in the ways of Jehoshaphat thy father, nor in the ways of Asa king of Judah,” KJV 21:13: “and also hast slain thy brethren of thy father's house, which were better than thyself” KJV 21:1: “Now Jehoshaphat slept with his fathers” KJV 21:4: “Now when Jehoram was risen up to the kingdom of his father, he strengthened himself, and slew all his brethren with the sword” KJV 2 Kings 2:11: “and Elijah went up by a whirlwind into heaven” KJV 2 Kings 3:11: “But Jehoshaphat said, Is there not here a prophet of the Lord” … “Here is Elisha the son of Shaphat, which poured water on the hands of Elijah” KJV 2 Kings 1:17: “And Jehoram reigned in his stead in the second year of Jehoram the son of Jehoshaphat king of Judah” KJV 2 Kings 8:16: “Jehoshaphat being then king of Judah” Hebrew (WLC) 2 Chronicles 21:12: וַיָּבֹ֤א אֵלָיו֙ מִכְתָּ֔ב מֵֽאֵלִיָּ֥הוּ הַנָּבִ֖יא לֵאמֹ֑ר [and there came to him a writing from Elijah the prophet, saying]. Septuagint (Brenton Greek) 2 Chronicles 21:12: Καὶ ἦλθεν αὐτῷ ἐν γραφῇ παρὰ Ἠλιοὺ τοῦ προφήτου, λέγων [and there came to him in writing from Eliu the prophet, saying]. Fetched from https://bolls.life/get-text/WLC/14/21/ and https://ebible.org/grcbrent/2CH21.htm.",
+    "reasoning": "The writing speaks of the killing of Jehoram’s brothers as already done, and Chronicles tells that killing after Jehoshaphat’s death. Kings tells of Elijah’s going up in its second chapter, and in its third has Jehoshaphat alive and Elisha introduced as the man who “poured water on the hands of Elijah”. The timing affects how the event is read: the writing may have arrived during Elijah’s earthly life, or after his departure, including a writing composed beforehand and delivered later. The quoted verses do not settle these possibilities.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that Elijah was still on earth, the order of telling in Kings not being the order of events; that Jehoram had begun to reign while his father lived, as 2 Kings 1:17 and 8:16 may suggest, and the killings fall in that time; that Elijah wrote beforehand and the writing was delivered later; that the writing came from Elijah after he had been taken up; that another man of the name is meant. What the verses do state is that a writing came, that it was from Elijah the prophet, and what it said. The words “poured water on the hands of Elijah” describe Elisha’s past service and do not by themselves say that Elijah was gone. Check made: the eight verses quoted were read in the KJV, and 21:12 in the Hebrew and in Brenton’s Greek; a whole-word search of the packaged KJV for “Elijah” finds 2 Chronicles 21:12 and no other verse in 2 Chronicles. That is a word search, not a reading of the book. These checked verses do not explicitly settle when the writing was made or how it was delivered. A separate published record deals with the two dates for Jehoram of Israel in 2 Kings 1:17 and 3:1; this record is about the writing. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 21: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH21.htm"
+      },
+      {
+        "label": "2 Kings 2: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI02.htm"
+      },
+      {
+        "label": "2 Kings 3: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI03.htm"
+      },
+      {
+        "label": "2 Kings 1: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI01.htm"
+      },
+      {
+        "label": "2 Kings 8: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI08.htm"
+      },
+      {
+        "label": "2 Chronicles 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/21/"
+      },
+      {
+        "label": "2 Chronicles 21: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 21:12",
+        "book": 13,
+        "chapter": 21,
+        "verse": 12
+      },
+      {
+        "label": "2 Chronicles 21:13",
+        "book": 13,
+        "chapter": 21,
+        "verse": 13
+      },
+      {
+        "label": "2 Chronicles 21:1",
+        "book": 13,
+        "chapter": 21,
+        "verse": 1
+      },
+      {
+        "label": "2 Chronicles 21:4",
+        "book": 13,
+        "chapter": 21,
+        "verse": 4
+      },
+      {
+        "label": "2 Kings 2:11",
+        "book": 11,
+        "chapter": 2,
+        "verse": 11
+      },
+      {
+        "label": "2 Kings 3:11",
+        "book": 11,
+        "chapter": 3,
+        "verse": 11
+      },
+      {
+        "label": "2 Kings 1:17",
+        "book": 11,
+        "chapter": 1,
+        "verse": 17
+      },
+      {
+        "label": "2 Kings 8:16",
+        "book": 11,
+        "chapter": 8,
+        "verse": 16
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 21:12",
+        "quote": "And there came a writing to him from Elijah the prophet"
+      }
+    ]
+  },
+  {
+    "id": "the-words-of-necho-from-the-mouth-of-god-how-did-god-speak-by-necho",
+    "mode": "questions",
+    "ref": "2 Chronicles 35:22",
+    "appliesTo": [
+      "2 Chronicles 35:22",
+      "2 Chronicles 35:21"
+    ],
+    "title": "“The words of Necho from the mouth of God” — how did a word of God come to the king of Egypt?",
+    "status": "Context",
+    "summary": "Necho of Egypt tells Josiah that God has commanded him to make haste and warns him not to meddle with God. The narrator then says Josiah “hearkened not unto the words of Necho from the mouth of God”. The verses do not say how the command reached Necho, or by what sign Josiah could have known whose word it was.",
+    "text": "KJV 2 Chronicles 35:20: “Necho king of Egypt came up to fight against Charchemish by Euphrates: and Josiah went out against him” KJV 35:21: “But he sent ambassadors to him, saying, What have I to do with thee, thou king of Judah? I come not against thee this day, but against the house wherewith I have war: for God commanded me to make haste: forbear thee from meddling with God, who is with me, that he destroy thee not.” KJV 35:22: “Nevertheless Josiah would not turn his face from him, but disguised himself, that he might fight with him, and hearkened not unto the words of Necho from the mouth of God, and came to fight in the valley of Megiddo.” KJV 2 Kings 23:29: “and king Josiah went against him; and he slew him at Megiddo, when he had seen him” Hebrew (WLC) 35:21: וֵאלֹהִ֖ים אָמַ֣ר לְבַֽהֲלֵ֑נִי חֲדַל־לְךָ֛ מֵאֱלֹהִ֥ים אֲשֶׁר־עִמִּ֖י וְאַל־יַשְׁחִיתֶֽךָ [and God said to hasten me; cease from God who is with me, and let him not destroy you]. 35:22: וְלֹ֥א שָׁמַ֛ע אֶל־דִּבְרֵ֥י נְכֹ֖ו מִפִּ֣י אֱלֹהִ֑ים [and he did not listen to the words of Necho from the mouth of God]. Septuagint (Brenton Greek) 35:21: καὶ ὁ Θεὸς εἶπε τοῦ κατασπεῦσαι με· πρόσεχε ἀπὸ τοῦ Θεοῦ τοῦ μετʼ ἐμοῦ, μὴ καταφθείρῃ σε [and God said to hasten me; beware of the God who is with me, lest he destroy you]. 35:22: καὶ οὐκ ἤκουσε τῶν λόγων Νεχαὼ διὰ στόματος Θεοῦ [and he did not listen to the words of Nechao through the mouth of God]. Fetched from https://bolls.life/get-text/WLC/14/35/ and https://ebible.org/grcbrent/2CH35.htm.",
+    "reasoning": "In verse 21 the claim to speak for God is Necho’s own. In verse 22 it is the narrator who says the words were from the mouth of God, and the account of Josiah’s death follows at once. The means matters to how the passage is read: the verses name no prophet, dream or sign by which the command came to Necho, and none by which Josiah was to tell it from the claim of a foreign king.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that the God of Israel spoke to Necho directly; that a prophet had brought the word to Necho or to Josiah; that Necho spoke of a god of his own and the narrator judges that the warning was in fact from God; that “God” in Necho’s mouth and “God” in the narrator’s do not mean the same. What the verses do state is that Necho sent ambassadors, what he said, that Josiah did not turn back, and that the narrator calls the words “from the mouth of God”. The Hebrew and the Greek quoted say the same as the KJV on this point. Check made: 35:20–22 were read in the KJV, the Hebrew and Brenton’s Greek, and 2 Kings 23:29 in the KJV; that Kings verse reports no message from Necho. These checked verses do not explicitly settle how the command came to Necho. A separate published record deals with where Josiah died. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 35: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH35.htm"
+      },
+      {
+        "label": "2 Kings 23: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI23.htm"
+      },
+      {
+        "label": "2 Chronicles 35: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/35/"
+      },
+      {
+        "label": "2 Chronicles 35: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH35.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 35:20",
+        "book": 13,
+        "chapter": 35,
+        "verse": 20
+      },
+      {
+        "label": "2 Chronicles 35:21",
+        "book": 13,
+        "chapter": 35,
+        "verse": 21
+      },
+      {
+        "label": "2 Chronicles 35:22",
+        "book": 13,
+        "chapter": 35,
+        "verse": 22
+      },
+      {
+        "label": "2 Kings 23:29",
+        "book": 11,
+        "chapter": 23,
+        "verse": 29
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 35:22",
+        "quote": "hearkened not unto the words of Necho from the mouth of God"
+      },
+      {
+        "label": "A",
+        "ref": "2 Chronicles 35:21",
+        "quote": "for God commanded me to make haste"
+      }
+    ]
+  },
+  {
+    "id": "put-the-holy-ark-in-the-house-where-had-the-ark-been",
+    "mode": "questions",
+    "ref": "2 Chronicles 35:3",
+    "appliesTo": [
+      "2 Chronicles 35:3"
+    ],
+    "title": "“Put the holy ark in the house which Solomon … did build” — where had the ark been?",
+    "status": "Context",
+    "summary": "In Josiah’s eighteenth year the king tells the Levites to put the holy ark in the house Solomon built, and that it shall no longer be a burden on their shoulders. Chronicles had the priests bring the ark into that house at its dedication. The verses checked do not say that the ark had left the house, or where it was when Josiah spoke.",
+    "text": "KJV 2 Chronicles 35:3: “And said unto the Levites that taught all Israel, which were holy unto the Lord, Put the holy ark in the house which Solomon the son of David king of Israel did build; it shall not be a burden upon your shoulders: serve now the Lord your God, and his people Israel,” KJV 5:7: “And the priests brought in the ark of the covenant of the Lord unto his place, to the oracle of the house, into the most holy place” KJV 6:11: “And in it have I put the ark” KJV 8:11: “because the places are holy, whereunto the ark of the Lord hath come” Hebrew (WLC) 35:3: תְּנ֤וּ אֶת־אֲרֹון־הַקֹּ֙דֶשׁ֙ בַּ֠בַּיִת אֲשֶׁ֨ר בָּנָ֜ה שְׁלֹמֹ֤ה בֶן־דָּוִיד֙ מֶ֣לֶךְ יִשְׂרָאֵ֔ל אֵין־לָכֶ֥ם מַשָּׂ֖א בַּכָּתֵ֑ף [put the holy ark in the house that Solomon son of David king of Israel built; you have no burden on the shoulder]. Septuagint (Brenton Greek) 35:3: καὶ ἔθηκαν τὴν κιβωτὸν τὴν ἁγίαν εἰς τὸν οἶκον ὃν ᾠκοδόμησε Σαλωμὼν υἱὸς Δαυὶδ τοῦ βασιλέως Ἰσραήλ [and they put the holy ark in the house that Salomon son of David the king of Israel built]. Fetched from https://bolls.life/get-text/WLC/14/35/ and https://ebible.org/grcbrent/2CH35.htm.",
+    "reasoning": "A command to put the ark in the house, with the remark about carrying it on the shoulder, reads as if the ark were not then in its place. Where it had been, and since when, bears on what had happened to the temple’s chief object in the reigns before Josiah. The verses checked report its entry under Solomon and then this command, without describing its intervening movements in those quotations.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that the ark had been taken out under an earlier king and kept elsewhere; that it had been moved while the house was repaired; that Levites had been carrying it about; that the words mean “leave the ark in the house” and it had never left. What the verses do state is the command, the house named, and that the ark shall not be a burden on the shoulders. Brenton’s Greek has a statement where the KJV and the Hebrew have a command: “and they put the holy ark in the house”; it likewise does not say where the ark had been. Check made: the four verses quoted were read in the KJV, and 35:3 in the Hebrew and in Brenton’s Greek; a whole-word search of the packaged KJV for “ark” finds thirteen verses in 2 Chronicles, none between 8:11 and 35:3, and no verse in 2 Kings. That is a word search, not a reading of those books. These checked verses do not explicitly settle where the ark was before Josiah’s command. The Greek difference is stated as wording; no G is proposed on it in this record. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Chronicles 35: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH35.htm"
+      },
+      {
+        "label": "2 Chronicles 5: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH05.htm"
+      },
+      {
+        "label": "2 Chronicles 6: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH06.htm"
+      },
+      {
+        "label": "2 Chronicles 8: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH08.htm"
+      },
+      {
+        "label": "2 Chronicles 35: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/14/35/"
+      },
+      {
+        "label": "2 Chronicles 35: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2CH35.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Chronicles 35:3",
+        "book": 13,
+        "chapter": 35,
+        "verse": 3
+      },
+      {
+        "label": "2 Chronicles 5:7",
+        "book": 13,
+        "chapter": 5,
+        "verse": 7
+      },
+      {
+        "label": "2 Chronicles 6:11",
+        "book": 13,
+        "chapter": 6,
+        "verse": 11
+      },
+      {
+        "label": "2 Chronicles 8:11",
+        "book": 13,
+        "chapter": 8,
+        "verse": 11
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Chronicles 35:3",
+        "quote": "Put the holy ark in the house which Solomon the son of David king of Israel did build"
+      }
+    ]
+  },
+  {
+    "id": "returned-families-five-more-counts-ezra-or-nehemiah",
+    "mode": "contradictions",
+    "ref": "Ezra 2:8",
+    "appliesTo": [
+      "Ezra 2:8",
+      "Nehemiah 7:13",
+      "Ezra 2:12",
+      "Nehemiah 7:17",
+      "Ezra 2:15",
+      "Nehemiah 7:20",
+      "Ezra 2:35",
+      "Nehemiah 7:38",
+      "Ezra 2:41",
+      "Nehemiah 7:44"
+    ],
+    "title": "The families that returned: five more counts that differ between Ezra 2 and Nehemiah 7",
+    "status": "Textual conflict",
+    "summary": "Nehemiah says he found the register of those who came up at the first and copies it. Set beside the list in Ezra 2, the same family names carry different numbers: Zattu 945 or 845, Azgad 1,222 or 2,322, Adin 454 or 655, Senaah 3,630 or 3,930, and the singers of Asaph 128 or 148.",
+    "text": "KJV Ezra 2:1: “Now these are the children of the province that went up out of the captivity” KJV Nehemiah 7:5: “And I found a register of the genealogy of them which came up at the first, and found written therein”. KJV Ezra 2:8: “The children of Zattu, nine hundred forty and five.” KJV Nehemiah 7:13: “The children of Zattu, eight hundred forty and five.” KJV Ezra 2:12: “The children of Azgad, a thousand two hundred twenty and two.” KJV Nehemiah 7:17: “The children of Azgad, two thousand three hundred twenty and two.” KJV Ezra 2:15: “The children of Adin, four hundred fifty and four.” KJV Nehemiah 7:20: “The children of Adin, six hundred fifty and five.” KJV Ezra 2:35: “The children of Senaah, three thousand and six hundred and thirty.” KJV Nehemiah 7:38: “The children of Senaah, three thousand nine hundred and thirty.” KJV Ezra 2:41: “The singers: the children of Asaph, an hundred twenty and eight.” KJV Nehemiah 7:44: “The singers: the children of Asaph, an hundred forty and eight.” Hebrew (WLC): Ezra 2:8 בְּנֵ֣י זַתּ֔וּא תְּשַׁ֥ע מֵאֹ֖ות וְאַרְבָּעִ֥ים וַחֲמִשָּֽׁה; Nehemiah 7:13 בְּנֵ֣י זַתּ֔וּא שְׁמֹנֶ֥ה מֵאֹ֖ות אַרְבָּעִ֥ים וַחֲמִשָּֽׁה. Ezra 2:12 בְּנֵ֣י עַזְגָּ֔ד אֶ֕לֶף מָאתַ֖יִם עֶשְׂרִ֥ים וּשְׁנָֽיִם; Nehemiah 7:17 בְּנֵ֣י עַזְגָּ֔ד אַלְפַּ֕יִם שְׁלֹ֥שׁ מֵאֹ֖ות עֶשְׂרִ֥ים וּשְׁנָֽיִם. Ezra 2:15 בְּנֵ֣י עָדִ֔ין אַרְבַּ֥ע מֵאֹ֖ות חֲמִשִּׁ֥ים וְאַרְבָּעָֽה; Nehemiah 7:20 בְּנֵ֣י עָדִ֔ין שֵׁ֥שׁ מֵאֹ֖ות חֲמִשִּׁ֥ים וַחֲמִשָּֽׁה. Ezra 2:35 בְּנֵ֣י סְנָאָ֔ה שְׁלֹ֣שֶׁת אֲלָפִ֔ים וְשֵׁ֥שׁ מֵאֹ֖ות וּשְׁלֹשִֽׁים; Nehemiah 7:38 בְּנֵ֣י סְנָאָ֔ה שְׁלֹ֣שֶׁת אֲלָפִ֔ים תְּשַׁ֥ע מֵאֹ֖ות וּשְׁלֹשִֽׁים. Ezra 2:41 הַֽמְשֹׁרְרִ֑ים בְּנֵ֣י אָסָ֔ף מֵאָ֖ה עֶשְׂרִ֥ים וּשְׁמֹנָֽה; Nehemiah 7:44 הַֽמְשֹׁרְרִ֑ים בְּנֵ֣י אָסָ֔ף מֵאָ֖ה אַרְבָּעִ֥ים וּשְׁמֹנָֽה. Septuagint (Brenton Greek), Ezra only: 2:8 Υἱοὶ Ζατθουὰ, ἐννακόσιοι τεσσαρακονταπέντε. 2:12 Υἱοὶ Ἀσγὰδ, χίλιοι διακόσιοι εἰκοσιδύο. 2:15 Υἱοὶ Ἀδδὶν, τετρακόσιοι πεντηκοντατέσσαρες. 2:35 Υἱοὶ Σεναὰ, τρισχίλιοι ἑξακόσιοι τριάκοντα. 2:41 Οἱ ᾄδοντες υἱοὶ Ἀσὰφ, ἑκατὸν εἰκοσιοκτώ. [945; 1,222; 454; 3,630; 128 — the same five figures as the KJV of Ezra]. Fetched from https://bolls.life/get-text/WLC/15/2/, https://bolls.life/get-text/WLC/16/7/ and https://ebible.org/grcbrent/EZR02.htm.",
+    "reasoning": "Each pair names the same family in the same place in the list, and Nehemiah presents his list as a copy of the register of the first return. The two copies give different numbers for it. In each of the ten verses the KJV figure is the figure of the Hebrew quoted.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew in both books, and Brenton’s Greek of Ezra has the same figures as the KJV of Ezra at these five verses. Different times or counting terms are possible reconciliations; neither book says so, and Nehemiah calls his list the register of those “which came up at the first”. Two published records already set out the counts for Arah and Pahathmoab; this record adds five further pairs and is not a full collation. Other pairs in the two lists also differ and are not set out here. Brenton’s Greek of Nehemiah was not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 2: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR02.htm"
+      },
+      {
+        "label": "Nehemiah 7: KJV",
+        "url": "https://ebible.org/eng-kjv/NEH07.htm"
+      },
+      {
+        "label": "Ezra 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/2/"
+      },
+      {
+        "label": "Nehemiah 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/16/7/"
+      },
+      {
+        "label": "Ezra 2: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 2:8",
+        "book": 14,
+        "chapter": 2,
+        "verse": 8
+      },
+      {
+        "label": "Nehemiah 7:13",
+        "book": 15,
+        "chapter": 7,
+        "verse": 13
+      },
+      {
+        "label": "Ezra 2:12",
+        "book": 14,
+        "chapter": 2,
+        "verse": 12
+      },
+      {
+        "label": "Nehemiah 7:17",
+        "book": 15,
+        "chapter": 7,
+        "verse": 17
+      },
+      {
+        "label": "Ezra 2:15",
+        "book": 14,
+        "chapter": 2,
+        "verse": 15
+      },
+      {
+        "label": "Nehemiah 7:20",
+        "book": 15,
+        "chapter": 7,
+        "verse": 20
+      },
+      {
+        "label": "Ezra 2:35",
+        "book": 14,
+        "chapter": 2,
+        "verse": 35
+      },
+      {
+        "label": "Nehemiah 7:38",
+        "book": 15,
+        "chapter": 7,
+        "verse": 38
+      },
+      {
+        "label": "Ezra 2:41",
+        "book": 14,
+        "chapter": 2,
+        "verse": 41
+      },
+      {
+        "label": "Nehemiah 7:44",
+        "book": 15,
+        "chapter": 7,
+        "verse": 44
+      },
+      {
+        "label": "Ezra 2:1",
+        "book": 14,
+        "chapter": 2,
+        "verse": 1
+      },
+      {
+        "label": "Nehemiah 7:5",
+        "book": 15,
+        "chapter": 7,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 2:8",
+        "quote": "nine hundred forty and five"
+      },
+      {
+        "label": "B",
+        "ref": "Nehemiah 7:13",
+        "quote": "eight hundred forty and five"
+      },
+      {
+        "label": "A",
+        "ref": "Ezra 2:12",
+        "quote": "a thousand two hundred twenty and two"
+      },
+      {
+        "label": "B",
+        "ref": "Nehemiah 7:17",
+        "quote": "two thousand three hundred twenty and two"
+      },
+      {
+        "label": "A",
+        "ref": "Ezra 2:15",
+        "quote": "four hundred fifty and four"
+      },
+      {
+        "label": "B",
+        "ref": "Nehemiah 7:20",
+        "quote": "six hundred fifty and five"
+      },
+      {
+        "label": "A",
+        "ref": "Ezra 2:35",
+        "quote": "three thousand and six hundred and thirty"
+      },
+      {
+        "label": "B",
+        "ref": "Nehemiah 7:38",
+        "quote": "three thousand nine hundred and thirty"
+      },
+      {
+        "label": "A",
+        "ref": "Ezra 2:41",
+        "quote": "an hundred twenty and eight"
+      },
+      {
+        "label": "B",
+        "ref": "Nehemiah 7:44",
+        "quote": "an hundred forty and eight"
+      }
+    ]
+  },
+  {
+    "id": "whole-congregation-42360-or-the-sum-of-the-counts-given",
+    "mode": "contradictions",
+    "ref": "Ezra 2:64",
+    "appliesTo": [
+      "Ezra 2:64",
+      "Nehemiah 7:66"
+    ],
+    "title": "“The whole congregation together was forty and two thousand three hundred and threescore” — the counts given add up to far fewer",
+    "status": "Textual conflict",
+    "summary": "Ezra and Nehemiah both give 42,360 as the whole congregation. The counts each book lists before that total add up to 29,818 in Ezra and 31,089 in Nehemiah. Neither list reaches the total, and the two sums differ from each other.",
+    "text": "KJV Ezra 2:64: “The whole congregation together was forty and two thousand three hundred and threescore,” KJV Ezra 2:65: “Beside their servants and their maids, of whom there were seven thousand three hundred thirty and seven” KJV Nehemiah 7:66: “The whole congregation together was forty and two thousand three hundred and threescore,” KJV Nehemiah 7:5: “And I found a register of the genealogy of them which came up at the first, and found written therein”. KJV Ezra 2:62, of three priestly families: “These sought their register among those that were reckoned by genealogy, but they were not found” Addition made for this record from the packaged KJV, by script: the figures in Ezra 2:3–42, 2:58 and 2:60 (every verse of 2:3–60 that carries a figure) add up to 29,818; the figures in Nehemiah 7:8–45, 7:60 and 7:62 (every verse of 7:8–62 that carries a figure) add up to 31,089. The first and last of them: Ezra 2:3 “The children of Parosh, two thousand an hundred seventy and two.” Ezra 2:60 “six hundred fifty and two”. Nehemiah 7:8 “The children of Parosh, two thousand an hundred seventy and two.” Nehemiah 7:62 “six hundred forty and two”. Hebrew (WLC) Ezra 2:64: כָּל־הַקָּהָ֖ל כְּאֶחָ֑ד אַרְבַּ֣ע רִבֹּ֔וא אַלְפַּ֖יִם שְׁלֹשׁ־מֵאֹ֥ות שִׁשִּֽׁים [the whole assembly as one: four ten-thousands, two thousand, three hundred, sixty]. Nehemiah 7:66: כָּל־הַקָּהָ֖ל כְּאֶחָ֑ד אַרְבַּ֣ע רִבֹּ֔וא אַלְפַּ֖יִם שְׁלֹשׁ־מֵאֹ֥ות וְשִׁשִּֽׁים. Septuagint (Brenton Greek) Ezra 2:64: Πᾶσα δὲ ἡ ἐκκλησία ὁμοῦ ὡσεὶ τέσσαρες μυριάδες δισχίλιοι τριακόσιοι ἑξήκοντα, [and all the assembly together, about four ten-thousands, two thousand, three hundred, sixty]. Fetched from https://bolls.life/get-text/WLC/15/2/, https://bolls.life/get-text/WLC/16/7/ and https://ebible.org/grcbrent/EZR02.htm.",
+    "reasoning": "The total is stated at the end of a list of counted groups and is called “the whole congregation together”. The stated total exceeds the sum of the listed counts by 12,542 in Ezra and 11,271 in Nehemiah; the verses do not explicitly identify the listed counts as exhaustive. The servants and maids are counted separately in the next verse, “beside” the total.",
+    "scope": "No tag is proposed: the KJV total is the total of the Hebrew quoted in both books. The verse does not say that the total is the sum of the counts before it. The two can stand together if the congregation included people the list does not count — for example women, or families the list does not name; no verse quoted says who they were. The priestly families of Ezra 2:61–62 are named without a figure. Brenton’s Greek of Ezra 2:64 has a word for “about” before the figure, which the KJV and the Hebrew quoted do not have; that is noted as wording and no G is proposed on it. The sums are the researcher’s addition and rest on the packaged KJV figures; the differences between single counts in the two books are the subject of other records. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 2: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR02.htm"
+      },
+      {
+        "label": "Nehemiah 7: KJV",
+        "url": "https://ebible.org/eng-kjv/NEH07.htm"
+      },
+      {
+        "label": "Ezra 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/2/"
+      },
+      {
+        "label": "Nehemiah 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/16/7/"
+      },
+      {
+        "label": "Ezra 2: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 2:64",
+        "book": 14,
+        "chapter": 2,
+        "verse": 64
+      },
+      {
+        "label": "Nehemiah 7:66",
+        "book": 15,
+        "chapter": 7,
+        "verse": 66
+      },
+      {
+        "label": "Ezra 2:3",
+        "book": 14,
+        "chapter": 2,
+        "verse": 3
+      },
+      {
+        "label": "Ezra 2:42",
+        "book": 14,
+        "chapter": 2,
+        "verse": 42
+      },
+      {
+        "label": "Ezra 2:58",
+        "book": 14,
+        "chapter": 2,
+        "verse": 58
+      },
+      {
+        "label": "Ezra 2:60",
+        "book": 14,
+        "chapter": 2,
+        "verse": 60
+      },
+      {
+        "label": "Ezra 2:62",
+        "book": 14,
+        "chapter": 2,
+        "verse": 62
+      },
+      {
+        "label": "Ezra 2:65",
+        "book": 14,
+        "chapter": 2,
+        "verse": 65
+      },
+      {
+        "label": "Nehemiah 7:8",
+        "book": 15,
+        "chapter": 7,
+        "verse": 8
+      },
+      {
+        "label": "Nehemiah 7:62",
+        "book": 15,
+        "chapter": 7,
+        "verse": 62
+      },
+      {
+        "label": "Nehemiah 7:5",
+        "book": 15,
+        "chapter": 7,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 2:64",
+        "quote": "forty and two thousand three hundred and threescore"
+      },
+      {
+        "label": "A",
+        "ref": "Nehemiah 7:66",
+        "quote": "forty and two thousand three hundred and threescore"
+      }
+    ]
+  },
+  {
+    "id": "gifts-to-the-treasure-61000-drams-or-41000",
+    "mode": "contradictions",
+    "ref": "Ezra 2:69",
+    "appliesTo": [
+      "Ezra 2:69",
+      "Nehemiah 7:70",
+      "Nehemiah 7:71",
+      "Nehemiah 7:72"
+    ],
+    "title": "Gifts to the treasure of the work: 61,000 drams of gold, or 41,000?",
+    "status": "Textual conflict",
+    "summary": "At the end of the list of the first return, Ezra says 61,000 drams of gold, 5,000 pound of silver and 100 priests’ garments were given. Nehemiah’s copy of the register names three sets of givers whose gifts come to 41,000 drams of gold, 4,200 pound of silver and 597 priests’ garments, with fifty basons.",
+    "text": "KJV Ezra 2:68: “And some of the chief of the fathers, when they came to the house of the Lord which is at Jerusalem, offered freely for the house of God” KJV Ezra 2:69: “They gave after their ability unto the treasure of the work threescore and one thousand drams of gold, and five thousand pound of silver, and one hundred priests' garments.” KJV Nehemiah 7:70: “And some of the chief of the fathers gave unto the work. The Tirshatha gave to the treasure a thousand drams of gold, fifty basons, five hundred and thirty priests' garments.” KJV Nehemiah 7:71: “And some of the chief of the fathers gave to the treasure of the work twenty thousand drams of gold, and two thousand and two hundred pound of silver.” KJV Nehemiah 7:72: “And that which the rest of the people gave was twenty thousand drams of gold, and two thousand pound of silver, and threescore and seven priests' garments.” KJV Nehemiah 7:5: “And I found a register of the genealogy of them which came up at the first, and found written therein”. Hebrew (WLC) Ezra 2:69: זָהָ֗ב דַּרְכְּמֹונִים֙ שֵׁשׁ־רִבֹּ֣אות וָאֶ֔לֶף [gold, darkemons, six ten-thousands and a thousand] … וְכֶ֕סֶף מָנִ֖ים חֲמֵ֣שֶׁת אֲלָפִ֑ים וְכָתְנֹ֥ת כֹּהֲנִ֖ים מֵאָֽה [and silver, manehs, five thousand, and priests’ coats, a hundred]. Septuagint (Brenton Greek) Ezra 2:69: χρυσίον καθαρὸν μναὶ ἓξ μυριάδες καὶ χίλιαι, καὶ ἀργυρίου μνὰς πεντακισχιλίας, καὶ κόθωνοι τῶν ἱερέων ἑκατόν [pure gold, sixty-one thousand minas, and five thousand minas of silver, and a hundred priests’ garments]. Fetched from https://bolls.life/get-text/WLC/15/2/ and https://ebible.org/grcbrent/EZR02.htm.",
+    "reasoning": "Nehemiah’s three gifts of gold are 1,000, 20,000 and 20,000 drams, which is 41,000; his silver is 2,200 and 2,000 pound, which is 4,200; his garments are 530 and 67, which is 597. Ezra gives one set of figures, 61,000, 5,000 and 100, and credits them to “some of the chief of the fathers”. Whether Ezra’s figures are set beside Nehemiah’s totals or beside his line for the chief of the fathers alone (20,000 drams and 2,200 pound), they differ.",
+    "scope": "No tag is proposed: the KJV figures of Ezra 2:69 are those of the Hebrew quoted, and Brenton’s Greek has the same three numbers. The Greek names the unit of gold as minas where the KJV has drams; that is noted as wording and no G is proposed on it. The conflict assumes that both passages report the same giving; Nehemiah presents his list as the register of those who came up at the first, and both passages stand at the same point of that list, but neither says in so many words that the gifts are the same. Only the KJV is quoted for Nehemiah 7:70–72, where the Hebrew verse numbers run one lower; Brenton’s Greek of Nehemiah was not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 2: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR02.htm"
+      },
+      {
+        "label": "Nehemiah 7: KJV",
+        "url": "https://ebible.org/eng-kjv/NEH07.htm"
+      },
+      {
+        "label": "Ezra 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/2/"
+      },
+      {
+        "label": "Ezra 2: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 2:69",
+        "book": 14,
+        "chapter": 2,
+        "verse": 69
+      },
+      {
+        "label": "Nehemiah 7:70",
+        "book": 15,
+        "chapter": 7,
+        "verse": 70
+      },
+      {
+        "label": "Nehemiah 7:71",
+        "book": 15,
+        "chapter": 7,
+        "verse": 71
+      },
+      {
+        "label": "Nehemiah 7:72",
+        "book": 15,
+        "chapter": 7,
+        "verse": 72
+      },
+      {
+        "label": "Ezra 2:68",
+        "book": 14,
+        "chapter": 2,
+        "verse": 68
+      },
+      {
+        "label": "Nehemiah 7:5",
+        "book": 15,
+        "chapter": 7,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 2:69",
+        "quote": "threescore and one thousand drams of gold, and five thousand pound of silver"
+      },
+      {
+        "label": "B",
+        "ref": "Nehemiah 7:70",
+        "quote": "a thousand drams of gold"
+      },
+      {
+        "label": "B",
+        "ref": "Nehemiah 7:71",
+        "quote": "twenty thousand drams of gold, and two thousand and two hundred pound of silver"
+      },
+      {
+        "label": "B",
+        "ref": "Nehemiah 7:72",
+        "quote": "twenty thousand drams of gold, and two thousand pound of silver"
+      }
+    ]
+  },
+  {
+    "id": "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel",
+    "mode": "contradictions",
+    "ref": "Ezra 5:16",
+    "appliesTo": [
+      "Ezra 5:16",
+      "Ezra 3:8",
+      "Zechariah 4:9"
+    ],
+    "title": "Who laid the foundation of the house: Sheshbazzar, or Zerubbabel?",
+    "status": "Textual conflict",
+    "summary": "The elders’ answer reported in Tatnai’s letter says that Sheshbazzar came and laid the foundation of the house of God. The narrative of Ezra 3 has Zerubbabel and Jeshua begin the work at which the foundation was laid, and Zechariah says “The hands of Zerubbabel have laid the foundation of this house”.",
+    "text": "KJV Ezra 5:16: “Then came the same Sheshbazzar, and laid the foundation of the house of God which is in Jerusalem” KJV Ezra 5:14: “and they were delivered unto one, whose name was Sheshbazzar, whom he had made governor” KJV Ezra 1:8: “and numbered them unto Sheshbazzar, the prince of Judah” KJV Ezra 1:11: “All these did Sheshbazzar bring up with them of the captivity that were brought up from Babylon unto Jerusalem” KJV Ezra 3:8: “Now in the second year of their coming unto the house of God at Jerusalem, in the second month, began Zerubbabel the son of Shealtiel, and Jeshua the son of Jozadak” KJV Ezra 3:10: “And when the builders laid the foundation of the temple of the Lord” KJV Ezra 5:2: “Then rose up Zerubbabel the son of Shealtiel, and Jeshua the son of Jozadak, and began to build the house of God which is at Jerusalem” KJV Zechariah 4:9: “The hands of Zerubbabel have laid the foundation of this house; his hands shall also finish it” Aramaic of the Hebrew Bible (WLC) Ezra 5:16: אֱדַ֙יִן֙ שֵׁשְׁבַּצַּ֣ר דֵּ֔ךְ אֲתָ֗א יְהַ֧ב אֻשַּׁיָּ֛א דִּי־בֵ֥ית אֱלָהָ֖א דִּ֣י בִירוּשְׁלֶ֑ם [then that Sheshbazzar came; he laid the foundations of the house of God which is in Jerusalem]. Hebrew (WLC) Zechariah 4:9: יְדֵ֣י זְרֻבָּבֶ֗ל יִסְּד֛וּ הַבַּ֥יִת הַזֶּ֖ה [the hands of Zerubbabel founded this house]. Ezra 3:10: וְיִסְּד֥וּ הַבֹּנִ֖ים אֶת־הֵיכַ֣ל יְהוָ֑ה [and the builders founded the temple of the Lord]. Septuagint (Brenton Greek) Ezra 5:16: Τότε Σαβανασὰρ ἐκεῖνος ἦλθε καὶ ἔδωκε θεμελίους τοῦ οἴκου τοῦ Θεοῦ ἐν Ἱερουσαλὴμ [then that Sabanasar came and laid foundations of the house of God in Jerusalem]. Zechariah 4:9: αἱ χεῖρες Ζοροβάβελ ἐθεμελίωσαν τὸν οἶκον τοῦτον [the hands of Zorobabel founded this house]. Fetched from https://bolls.life/get-text/WLC/15/5/, https://bolls.life/get-text/WLC/38/4/, https://bolls.life/get-text/WLC/15/3/, https://ebible.org/grcbrent/EZR05.htm and https://ebible.org/grcbrent/ZEC04.htm.",
+    "reasoning": "Ezra 5:16 names Sheshbazzar as the one who laid the foundation. Ezra 3 names Zerubbabel and Jeshua as those who began the work in which the builders laid it and does not name Sheshbazzar there; Zechariah credits the laying to Zerubbabel’s hands. The book introduces the two under different names and with different descriptions: Sheshbazzar “the prince of Judah”, made governor by Cyrus, and Zerubbabel “the son of Shealtiel”.",
+    "scope": "No tag is proposed: in each verse the KJV follows the Hebrew or Aramaic quoted, and Brenton’s Greek names the same men. The statements can both stand if Sheshbazzar and Zerubbabel are two names of one man, or if both had a part in the laying, one as the governor in charge and one as the builder on the ground; no verse quoted says either. Ezra 5:16 is the elders’ answer as Tatnai’s letter reports it, not the narrator’s own statement. Ezra 3:10 says “the builders” laid the foundation and does not name Zerubbabel in that clause. A whole-word search of the packaged KJV finds “Sheshbazzar” at Ezra 1:8, 1:11, 5:14 and 5:16 only; that is a word search, not a reading of every book. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 5: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR05.htm"
+      },
+      {
+        "label": "Ezra 1: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR01.htm"
+      },
+      {
+        "label": "Ezra 3: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR03.htm"
+      },
+      {
+        "label": "Zechariah 4: KJV",
+        "url": "https://ebible.org/eng-kjv/ZEC04.htm"
+      },
+      {
+        "label": "Ezra 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/5/"
+      },
+      {
+        "label": "Zechariah 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/38/4/"
+      },
+      {
+        "label": "Ezra 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/3/"
+      },
+      {
+        "label": "Ezra 5: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR05.htm"
+      },
+      {
+        "label": "Zechariah 4: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ZEC04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 5:16",
+        "book": 14,
+        "chapter": 5,
+        "verse": 16
+      },
+      {
+        "label": "Ezra 3:8",
+        "book": 14,
+        "chapter": 3,
+        "verse": 8
+      },
+      {
+        "label": "Zechariah 4:9",
+        "book": 37,
+        "chapter": 4,
+        "verse": 9
+      },
+      {
+        "label": "Ezra 3:10",
+        "book": 14,
+        "chapter": 3,
+        "verse": 10
+      },
+      {
+        "label": "Ezra 1:8",
+        "book": 14,
+        "chapter": 1,
+        "verse": 8
+      },
+      {
+        "label": "Ezra 1:11",
+        "book": 14,
+        "chapter": 1,
+        "verse": 11
+      },
+      {
+        "label": "Ezra 5:14",
+        "book": 14,
+        "chapter": 5,
+        "verse": 14
+      },
+      {
+        "label": "Ezra 5:2",
+        "book": 14,
+        "chapter": 5,
+        "verse": 2
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 5:16",
+        "quote": "Then came the same Sheshbazzar, and laid the foundation of the house of God"
+      },
+      {
+        "label": "B",
+        "ref": "Ezra 3:8",
+        "quote": "began Zerubbabel the son of Shealtiel"
+      },
+      {
+        "label": "B",
+        "ref": "Zechariah 4:9",
+        "quote": "The hands of Zerubbabel have laid the foundation of this house"
+      }
+    ]
+  },
+  {
+    "id": "foundation-laid-in-second-year-of-the-return-or-in-second-year-of-darius",
+    "mode": "contradictions",
+    "ref": "Ezra 3:10",
+    "appliesTo": [
+      "Ezra 3:10",
+      "Haggai 2:18"
+    ],
+    "title": "The foundation of the temple: laid in the second year of the return, or on the day Haggai names in the second year of Darius?",
+    "status": "Textual conflict",
+    "summary": "Ezra says the builders laid the foundation of the temple in the second year after the return, and that the work then stopped until the second year of Darius. Haggai, speaking on the twenty-fourth day of the ninth month in the second year of Darius, names that date and adds “even from the day that the foundation of the Lord’s temple was laid”, and looks back to the time “before a stone was laid upon a stone”.",
+    "text": "KJV Ezra 3:8: “Now in the second year of their coming unto the house of God at Jerusalem, in the second month” KJV Ezra 3:10: “And when the builders laid the foundation of the temple of the Lord” KJV Ezra 3:11: “because the foundation of the house of the Lord was laid” KJV Ezra 4:5: “all the days of Cyrus king of Persia, even until the reign of Darius king of Persia” KJV Ezra 4:24: “Then ceased the work of the house of God which is at Jerusalem. So it ceased unto the second year of the reign of Darius king of Persia.” KJV Haggai 2:10: “In the four and twentieth day of the ninth month, in the second year of Darius” KJV Haggai 2:15: “consider from this day and upward, from before a stone was laid upon a stone in the temple of the Lord” KJV Haggai 2:18: “Consider now from this day and upward, from the four and twentieth day of the ninth month, even from the day that the foundation of the Lord's temple was laid, consider it.” Hebrew (WLC) Haggai 2:18: מִיֹּום֩ עֶשְׂרִ֨ים וְאַרְבָּעָ֜ה לַתְּשִׁיעִ֗י לְמִן־הַיֹּ֛ום אֲשֶׁר־יֻסַּ֥ד הֵֽיכַל־יְהוָ֖ה [from the twenty-fourth day of the ninth (month), from the day that the temple of the Lord was founded]. Ezra 3:10: וְיִסְּד֥וּ הַבֹּנִ֖ים אֶת־הֵיכַ֣ל יְהוָ֑ה [and the builders founded the temple of the Lord]. Septuagint (Brenton Greek) Haggai 2:18: ἀπὸ τῆς τετράδος καὶ εἰκάδος τοῦ ἐννάτου μηνὸς, καὶ ἀπὸ τῆς ἡμέρας ἧς τεθεμελίωται ὁ ναὸς Κυρίου [from the twenty-fourth of the ninth month, and from the day on which the temple of the Lord has been founded]. Ezra 3:10: Καὶ ἐθεμελίωσαν τοῦ οἰκοδομῆσαι τὸν οἶκον Κυρίου [and they laid a foundation to build the house of the Lord]. Fetched from https://bolls.life/get-text/WLC/37/2/, https://bolls.life/get-text/WLC/15/3/, https://ebible.org/grcbrent/HAG02.htm and https://ebible.org/grcbrent/EZR03.htm.",
+    "reasoning": "In Ezra the laying of the foundation falls in the second year of the coming to Jerusalem, in the days of Cyrus, and is celebrated as done; the stoppage that follows lasts until the second year of Darius. In the KJV of Haggai the words “even from the day that the foundation of the Lord’s temple was laid” can be read as describing the date in Darius’s second year, and the same speech speaks of a time before stone was laid on stone in the temple.",
+    "scope": "No tag is proposed: the KJV follows the Hebrew quoted in both books. The clash rests on reading the last clause of Haggai 2:18 as naming the same day as the date before it, a reading suggested, but not required, by the KJV’s “even”. The Hebrew sets a second “from” before “the day”, and Brenton’s Greek joins the two with “and”, so the clause can also be read as a second, earlier starting point; on that reading there is no clash. The two can also stand if the foundation was laid in the days of Cyrus and laid or begun again when the work was taken up under Darius; no verse quoted reports a second laying. Ezra 3:8 counts from the coming to Jerusalem, not by a king’s year. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 3: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR03.htm"
+      },
+      {
+        "label": "Ezra 4: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR04.htm"
+      },
+      {
+        "label": "Haggai 2: KJV",
+        "url": "https://ebible.org/eng-kjv/HAG02.htm"
+      },
+      {
+        "label": "Haggai 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/37/2/"
+      },
+      {
+        "label": "Ezra 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/3/"
+      },
+      {
+        "label": "Haggai 2: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/HAG02.htm"
+      },
+      {
+        "label": "Ezra 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 3:10",
+        "book": 14,
+        "chapter": 3,
+        "verse": 10
+      },
+      {
+        "label": "Haggai 2:18",
+        "book": 36,
+        "chapter": 2,
+        "verse": 18
+      },
+      {
+        "label": "Ezra 3:8",
+        "book": 14,
+        "chapter": 3,
+        "verse": 8
+      },
+      {
+        "label": "Ezra 3:11",
+        "book": 14,
+        "chapter": 3,
+        "verse": 11
+      },
+      {
+        "label": "Ezra 4:5",
+        "book": 14,
+        "chapter": 4,
+        "verse": 5
+      },
+      {
+        "label": "Ezra 4:24",
+        "book": 14,
+        "chapter": 4,
+        "verse": 24
+      },
+      {
+        "label": "Haggai 2:10",
+        "book": 36,
+        "chapter": 2,
+        "verse": 10
+      },
+      {
+        "label": "Haggai 2:15",
+        "book": 36,
+        "chapter": 2,
+        "verse": 15
+      }
+    ],
+    "checked": "2026-10-13",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 3:10",
+        "quote": "And when the builders laid the foundation of the temple of the Lord"
+      },
+      {
+        "label": "B",
+        "ref": "Haggai 2:18",
+        "quote": "even from the day that the foundation of the Lord's temple was laid"
+      }
+    ]
+  },
+  {
+    "id": "sheshbazzar-made-governor-or-the-treasurer-greek",
+    "mode": "contradictions",
+    "ref": "Ezra 5:14",
+    "appliesTo": [
+      "Ezra 5:14"
+    ],
+    "title": "Sheshbazzar: “whom he had made governor”, or the keeper of the treasure?",
+    "status": "Context",
+    "summary": "In the KJV the temple vessels are delivered to Sheshbazzar, “whom he had made governor”. Brenton’s Greek of the same verse says they were given to “Sabanasar the treasure-keeper, who was over the treasure”, and has no clause about a governor.",
+    "text": "KJV Ezra 5:14: “and they were delivered unto one, whose name was Sheshbazzar, whom he had made governor” KJV Ezra 1:8: “Even those did Cyrus king of Persia bring forth by the hand of Mithredath the treasurer, and numbered them unto Sheshbazzar, the prince of Judah.” Aramaic of the Hebrew Bible (WLC) Ezra 5:14: וִיהִ֙יבוּ֙ לְשֵׁשְׁבַּצַּ֣ר שְׁמֵ֔הּ דִּ֥י פֶחָ֖ה שָׂמֵֽהּ [and they were given to Sheshbazzar by name, whom he made governor]. Septuagint (Brenton Greek) Ezra 5:14: καὶ ἔδωκε τῷ Σαβανασὰρ τῷ θησαυροφύλακι, τῷ ἐπὶ τοῦ θησαυροῦ [and gave (them) to Sabanasar the treasure-keeper, the one over the treasure]. Ezra 1:8: ἐπὶ χεῖρα Μιθραδάτου γασβαρηνοῦ, καὶ ἠρίθμησεν αὐτὰ τῷ Σασαβασὰρ τῷ ἄρχοντι τοῦ Ἰούδα [by the hand of Mithradates (the) gasbarenos, and he numbered them to Sasabasar the chief of Juda]. Fetched from https://bolls.life/get-text/WLC/15/5/, https://ebible.org/grcbrent/EZR05.htm and https://ebible.org/grcbrent/EZR01.htm.",
+    "reasoning": "The KJV and the Aramaic say what office Cyrus gave the man: governor. The Greek describes him by a different office, keeper of the treasure, and does not say that Cyrus appointed him to anything. A reader of the Greek of this verse is not told that the man who received the vessels governed.",
+    "scope": "G applies at Ezra 5:14 only; 1:8 is context. The KJV follows the Aramaic quoted, so no H is proposed. At 1:8 the Greek, like the KJV, calls him the chief or prince of Judah, and there it is Mithredath whom the KJV calls “the treasurer”; the record does not say how the Greek of 5:14 arose. The Greek spells the name differently in the two verses; spelling is not the finding. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 5: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR05.htm"
+      },
+      {
+        "label": "Ezra 1: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR01.htm"
+      },
+      {
+        "label": "Ezra 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/5/"
+      },
+      {
+        "label": "Ezra 5: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR05.htm"
+      },
+      {
+        "label": "Ezra 1: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 5:14",
+        "book": 14,
+        "chapter": 5,
+        "verse": 14
+      },
+      {
+        "label": "Ezra 1:8",
+        "book": 14,
+        "chapter": 1,
+        "verse": 8
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 5:14",
+        "quote": "whom he had made governor"
+      }
+    ]
+  },
+  {
+    "id": "azmaveth-bethel-and-ai-harim-three-counts-differ-in-greek",
+    "mode": "contradictions",
+    "ref": "Ezra 2:24",
+    "appliesTo": [
+      "Ezra 2:24",
+      "Ezra 2:28",
+      "Ezra 2:39"
+    ],
+    "title": "Azmaveth 42 or 43, Bethel and Ai 223 or 423, Harim 1,017 or 1,007: three counts in the Greek of Ezra 2",
+    "status": "Context",
+    "summary": "At three verses of the list in Ezra 2, Brenton’s Greek prints a different number from the KJV: forty-three for forty-two, four hundred and twenty-three for two hundred and twenty-three, and a thousand and seven for a thousand and seventeen. The KJV of Nehemiah’s copy has 42, 123 and 1,017 for the same entries.",
+    "text": "KJV Ezra 2:24: “The children of Azmaveth, forty and two.” KJV Ezra 2:28: “The men of Bethel and Ai, two hundred twenty and three.” KJV Ezra 2:39: “The children of Harim, a thousand and seventeen.” KJV Nehemiah 7:28: “The men of Bethazmaveth, forty and two.” KJV Nehemiah 7:32: “The men of Bethel and Ai, an hundred twenty and three.” KJV Nehemiah 7:42: “The children of Harim, a thousand and seventeen.” Hebrew (WLC) Ezra 2:24: בְּנֵ֥י עַזְמָ֖וֶת אַרְבָּעִ֥ים וּשְׁנָֽיִם [forty and two]. 2:28: אַנְשֵׁ֤י בֵֽית־אֵל֙ וְהָעָ֔י מָאתַ֖יִם עֶשְׂרִ֥ים וּשְׁלֹשָֽׁה [two hundred, twenty and three]. 2:39: בְּנֵ֣י חָרִ֔ם אֶ֖לֶף וְשִׁבְעָ֥ה עָשָֽׂר [a thousand and seventeen]. Septuagint (Brenton Greek) Ezra 2:24: Υἱοὶ Ἀζμὼθ, τεσσαρακοντατρεῖς. [forty-three]. 2:28: Ἄνδρες Βαιθὴλ καὶ Ἀϊὰ, τετρακόσιοι εἰκοσιτρεῖς. [four hundred twenty-three]. 2:39: Υἱοὶ Ἠρὲμ, χίλιοι ἑπτά. [a thousand and seven]. Fetched from https://bolls.life/get-text/WLC/15/2/ and https://ebible.org/grcbrent/EZR02.htm.",
+    "reasoning": "The KJV gives the figures of the Hebrew quoted. The Greek edition gives a different figure at each of the three verses, so the Greek list and the KJV list do not agree on how many came of these three groups.",
+    "scope": "G applies at Ezra 2:24, 2:28 and 2:39; the Nehemiah verses are context and carry no tag. No H is proposed. At Bethel and Ai the KJV of Ezra (223) and the KJV of Nehemiah (123) already differ, and the Greek of Ezra agrees with neither. The comparison was made by a script that sets the number words of each KJV verse of Ezra beside Brenton’s English of the same verse, and each difference was then read in the Greek; names without figures were not compared. Brenton’s Greek of Nehemiah was not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 2: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR02.htm"
+      },
+      {
+        "label": "Nehemiah 7: KJV",
+        "url": "https://ebible.org/eng-kjv/NEH07.htm"
+      },
+      {
+        "label": "Ezra 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/2/"
+      },
+      {
+        "label": "Ezra 2: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 2:24",
+        "book": 14,
+        "chapter": 2,
+        "verse": 24
+      },
+      {
+        "label": "Ezra 2:28",
+        "book": 14,
+        "chapter": 2,
+        "verse": 28
+      },
+      {
+        "label": "Ezra 2:39",
+        "book": 14,
+        "chapter": 2,
+        "verse": 39
+      },
+      {
+        "label": "Nehemiah 7:28",
+        "book": 15,
+        "chapter": 7,
+        "verse": 28
+      },
+      {
+        "label": "Nehemiah 7:32",
+        "book": 15,
+        "chapter": 7,
+        "verse": 32
+      },
+      {
+        "label": "Nehemiah 7:42",
+        "book": 15,
+        "chapter": 7,
+        "verse": 42
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 2:24",
+        "quote": "forty and two"
+      },
+      {
+        "label": "A",
+        "ref": "Ezra 2:28",
+        "quote": "two hundred twenty and three"
+      },
+      {
+        "label": "A",
+        "ref": "Ezra 2:39",
+        "quote": "a thousand and seventeen"
+      }
+    ]
+  },
+  {
+    "id": "bishlam-mithredath-tabeel-wrote-or-wrote-in-peace-to-mithradates-greek",
+    "mode": "contradictions",
+    "ref": "Ezra 4:7",
+    "appliesTo": [
+      "Ezra 4:7"
+    ],
+    "title": "“Wrote Bishlam, Mithredath, Tabeel” — or “wrote in peace to Mithradates”?",
+    "status": "Context",
+    "summary": "The KJV names three men who wrote to Artaxerxes: Bishlam, Mithredath and Tabeel. Brenton’s Greek has no Bishlam: it says the letter was written “in peace”, puts the name Mithradates in the form of the one written to, and then says that “the tribute-gatherer” wrote to the king.",
+    "text": "KJV Ezra 4:7: “And in the days of Artaxerxes wrote Bishlam, Mithredath, Tabeel, and the rest of their companions, unto Artaxerxes king of Persia” Hebrew (WLC) Ezra 4:7: כָּתַ֨ב בִּשְׁלָ֜ם מִתְרְדָ֤ת טָֽבְאֵל֙ וּשְׁאָ֣ר [wrote Bishlam, Mithredath, Tabeel and the rest of]. Septuagint (Brenton Greek) Ezra 4:7: ἔγραψεν ἐν εἰρήνῃ Μιθραδάτῃ Ταβεὴλ καὶ τοῖς λοιποῖς συνδούλοις· πρὸς Ἀρθασασθὰ βασιλέα Περσῶν ἔγραψεν ὁ φορολόγος γραφὴν Συριστὶ καὶ ἡρμηνευμένην [he wrote in peace to Mithradates, Tabeel and the rest of the fellow-servants; to Arthasastha king of the Persians the tribute-gatherer wrote a writing in Syrian, and interpreted]. Fetched from https://bolls.life/get-text/WLC/15/4/ and https://ebible.org/grcbrent/EZR04.htm.",
+    "reasoning": "In the KJV three named men and their companions are the writers and the king is the one written to. In the Greek the first name is not a name but two ordinary words, Mithradates and “the rest of the fellow-servants” stand in the form used for those written to, and a writer the KJV does not mention, the tribute-gatherer, writes to the king. Who wrote, and to whom, is different in the two texts.",
+    "scope": "G applies at Ezra 4:7. The KJV follows the Hebrew quoted, so no H is proposed. The record does not say how the Greek wording arose or which text is earlier. Tabeel carries no case ending in the Greek, so whether he is a writer or one written to in that text is not settled by the form of the name. A whole-word search of the packaged KJV finds “Bishlam” at Ezra 4:7 only. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 4: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR04.htm"
+      },
+      {
+        "label": "Ezra 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/4/"
+      },
+      {
+        "label": "Ezra 4: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 4:7",
+        "book": 14,
+        "chapter": 4,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 4:7",
+        "quote": "wrote Bishlam, Mithredath, Tabeel, and the rest of their companions"
+      }
+    ]
+  },
+  {
+    "id": "then-said-we-unto-them-or-they-said-names-of-the-builders-greek",
+    "mode": "contradictions",
+    "ref": "Ezra 5:4",
+    "appliesTo": [
+      "Ezra 5:4"
+    ],
+    "title": "“Then said we unto them” — or “then they said to them”? Who asks for the builders’ names",
+    "status": "Context",
+    "summary": "In the KJV the narrative of Tatnai’s visit breaks into the first person: “Then said we unto them after this manner, What are the names of the men that make this building?” Brenton’s Greek has “they said”, and asks about the men building “this city”.",
+    "text": "KJV Ezra 5:3: “At the same time came to them Tatnai, governor on this side the river, and Shetharboznai and their companions, and said thus unto them” KJV Ezra 5:4: “Then said we unto them after this manner, What are the names of the men that make this building?” KJV Ezra 5:9, in Tatnai’s letter: “Then asked we those elders, and said unto them thus” KJV Ezra 5:10: “We asked their names also, to certify thee” Aramaic of the Hebrew Bible (WLC) Ezra 5:4: אֱדַ֥יִן כְּנֵ֖מָא אֲמַ֣רְנָא לְּהֹ֑ם [then thus we said to them] … דִּֽי־דְנָ֥ה בִנְיָנָ֖א בָּנַֽיִן [who are building this building]. Septuagint (Brenton Greek) Ezra 5:4: Τότε ταῦτα εἴποσαν αὐτοῖς, τίνα ἐστὶ τὰ ὀνόματα τῶν ἀνδρῶν τῶν οἰκοδομούντων τὴν πόλιν ταύτην; [then they said these things to them: what are the names of the men who are building this city?]. Fetched from https://bolls.life/get-text/WLC/15/5/ and https://ebible.org/grcbrent/EZR05.htm.",
+    "reasoning": "With “we”, the KJV’s narrator speaks as one of a group, and the verse can be read either as the builders speaking or as Tatnai’s party speaking in their own voice before their letter begins. With “they”, the Greek keeps the third-person narrative of verse 3, and the askers are Tatnai and his companions. The Greek also makes the question about a city where the KJV has a building.",
+    "scope": "G applies at Ezra 5:4; verses 3, 9 and 10 are context. The KJV follows the Aramaic quoted, so no H is proposed. The record does not say who “we” is in the KJV; in verses 9 and 10 the same question is asked by Tatnai’s party in the first person inside their letter. It does not say how the Greek wording arose. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 5: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR05.htm"
+      },
+      {
+        "label": "Ezra 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/5/"
+      },
+      {
+        "label": "Ezra 5: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR05.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 5:4",
+        "book": 14,
+        "chapter": 5,
+        "verse": 4
+      },
+      {
+        "label": "Ezra 5:3",
+        "book": 14,
+        "chapter": 5,
+        "verse": 3
+      },
+      {
+        "label": "Ezra 5:9",
+        "book": 14,
+        "chapter": 5,
+        "verse": 9
+      },
+      {
+        "label": "Ezra 5:10",
+        "book": 14,
+        "chapter": 5,
+        "verse": 10
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 5:4",
+        "quote": "Then said we unto them after this manner"
+      }
+    ]
+  },
+  {
+    "id": "sons-of-shechaniah-and-of-shelomith-families-named-in-greek",
+    "mode": "contradictions",
+    "ref": "Ezra 8:5",
+    "appliesTo": [
+      "Ezra 8:5",
+      "Ezra 8:10"
+    ],
+    "title": "“Of the sons of Shechaniah; the son of Jahaziel” — the Greek names a family and makes Shechaniah its leader",
+    "status": "Context",
+    "summary": "In two entries of the list of those who went up with Ezra, the KJV gives a family and then an unnamed “son of” someone. Brenton’s Greek names a family in each (Zathoes; Baani) and makes the KJV’s family name the name of the leader: Sechenias son of Aziel, Selimuth son of Josephia.",
+    "text": "KJV Ezra 8:4, the pattern of the other entries: “Of the sons of Pahathmoab; Elihoenai the son of Zerahiah, and with him two hundred males” KJV Ezra 8:5: “Of the sons of Shechaniah; the son of Jahaziel, and with him three hundred males.” KJV Ezra 8:10: “And of the sons of Shelomith; the son of Josiphiah, and with him an hundred and threescore males.” Hebrew (WLC) Ezra 8:5: מִבְּנֵ֥י שְׁכַנְיָ֖ה בֶּן־יַחֲזִיאֵ֑ל וְעִמֹּ֕ו שְׁלֹ֥שׁ מֵאֹ֖ות הַזְּכָרִֽים [of the sons of Shechaniah, the son of Jahaziel, and with him three hundred males]. 8:10: וּמִבְּנֵ֥י שְׁלֹומִ֖ית בֶּן־יֹוסִפְיָ֑ה וְעִמֹּ֕ו מֵאָ֥ה וְשִׁשִּׁ֖ים הַזְּכָרִֽים [and of the sons of Shelomith, the son of Josiphiah, and with him a hundred and sixty males]. Septuagint (Brenton Greek) Ezra 8:5: Καὶ ἀπὸ υἱῶν Ζαθόης, Σεχενίας υἱὸς Ἀζιὴλ, καὶ μετʼ αὐτοῦ τριακόσια τὰ ἀρσενικά. [and of the sons of Zathoes: Sechenias son of Aziel, and with him three hundred males]. 8:10: Καὶ ἀπὸ τῶν υἱῶν Βαανὶ, Σελιμοὺθ υἱὸς Ἰωσεφία, καὶ μετʼ αὐτοῦ ἑκατὸν ἑξήκοντα τὰ ἀρσενικά. [and of the sons of Baani: Selimuth son of Josephia, and with him a hundred and sixty males]. Fetched from https://bolls.life/get-text/WLC/15/8/ and https://ebible.org/grcbrent/EZR08.htm.",
+    "reasoning": "The entries of verses 4, 6, 7, 8, 9, 11 and 12 have the form “of the sons of a family; a leader the son of his father, and with him” so many males. At 8:5 and 8:10 the KJV has a family and a father but no leader’s name. The Greek has all three parts, and in it Shechaniah and Shelomith are the leaders, not the families. The Greek therefore names two families that the KJV’s list does not have in these entries.",
+    "scope": "G applies at Ezra 8:5 and 8:10; 8:4 is context. The KJV follows the Hebrew quoted, so no H is proposed. The record does not identify the Greek names with any family named elsewhere in the KJV, and does not say which text is earlier. The numbers of males are the same in both texts. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 8: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR08.htm"
+      },
+      {
+        "label": "Ezra 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/8/"
+      },
+      {
+        "label": "Ezra 8: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR08.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 8:5",
+        "book": 14,
+        "chapter": 8,
+        "verse": 5
+      },
+      {
+        "label": "Ezra 8:10",
+        "book": 14,
+        "chapter": 8,
+        "verse": 10
+      },
+      {
+        "label": "Ezra 8:4",
+        "book": 14,
+        "chapter": 8,
+        "verse": 4
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 8:5",
+        "quote": "Of the sons of Shechaniah; the son of Jahaziel"
+      },
+      {
+        "label": "A",
+        "ref": "Ezra 8:10",
+        "quote": "And of the sons of Shelomith; the son of Josiphiah"
+      }
+    ]
+  },
+  {
+    "id": "iddo-the-chief-at-casiphia-or-rulers-with-the-money-of-the-place-greek",
+    "mode": "contradictions",
+    "ref": "Ezra 8:17",
+    "appliesTo": [
+      "Ezra 8:17"
+    ],
+    "title": "Sent “unto Iddo the chief at the place Casiphia” for ministers — or to rulers “with the money of the place” for singers?",
+    "status": "Context",
+    "summary": "In the KJV Ezra sends to a named man, Iddo, chief at a named place, Casiphia, to bring “ministers for the house of our God”. Brenton’s Greek names no Iddo and no Casiphia: the men are sent to rulers “with the money of the place”, and they are to bring singers.",
+    "text": "KJV Ezra 8:15: “and found there none of the sons of Levi” KJV Ezra 8:17: “And I sent them with commandment unto Iddo the chief at the place Casiphia, and I told them what they should say unto Iddo, and to his brethren the Nethinims, at the place Casiphia, that they should bring unto us ministers for the house of our God.” Hebrew (WLC) Ezra 8:17: אֹותָם֙ עַל־אִדֹּ֣ו הָרֹ֔אשׁ בְּכָסִפְיָ֖א הַמָּקֹ֑ום [them to Iddo the head, at Casiphia the place] … לְהָֽבִיא־לָ֥נוּ מְשָׁרְתִ֖ים לְבֵ֥ית אֱלֹהֵֽינוּ [to bring to us ministers for the house of our God]. Septuagint (Brenton Greek) Ezra 8:17: Καὶ ἐξήνεγκα αὐτοὺς ἐπὶ ἄρχοντας ἐν ἀργυρίῳ τοῦ τόπου, καὶ ἔθηκα ἐν στόματι αὐτῶν λόγους λαλῆσαι πρὸς τοὺς ἀδελφοὺς αὐτῶν τῶν Ἀθινεὶμ ἐν ἀργυρίῳ τοῦ τόπου, τοῦ ἐνέγκαι ἡμῖν ᾄδοντας εἰς οἶκον Θεοῦ ἡμῶν. [and I sent them out to rulers with (the) money of the place, and I put words in their mouth to speak to their brethren the Athinim with (the) money of the place, to bring us singers for the house of our God]. Fetched from https://bolls.life/get-text/WLC/15/8/ and https://ebible.org/grcbrent/EZR08.htm.",
+    "reasoning": "The KJV gives the errand a named addressee and a named place. In the Greek both names are absent: the addressee is “rulers”, and where the KJV twice has “at the place Casiphia” the Greek twice has words about money. What is asked for also differs: ministers in the KJV, singers in the Greek.",
+    "scope": "G applies at Ezra 8:17. The KJV follows the Hebrew quoted, so no H is proposed. The record does not say how the Greek wording arose and does not say that the Greek describes a payment; it reports the words printed. The Hebrew edition prints a written and a read form of the first verb and of the word for the Nethinims; those are background and not the finding. A whole-word search of the packaged KJV finds “Casiphia” at Ezra 8:17 only. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 8: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR08.htm"
+      },
+      {
+        "label": "Ezra 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/8/"
+      },
+      {
+        "label": "Ezra 8: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR08.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 8:17",
+        "book": 14,
+        "chapter": 8,
+        "verse": 17
+      },
+      {
+        "label": "Ezra 8:15",
+        "book": 14,
+        "chapter": 8,
+        "verse": 15
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 8:17",
+        "quote": "unto Iddo the chief at the place Casiphia"
+      }
+    ]
+  },
+  {
+    "id": "ahasuerus-and-artaxerxes-between-cyrus-and-darius-which-kings-are-meant",
+    "mode": "questions",
+    "ref": "Ezra 4:6",
+    "appliesTo": [
+      "Ezra 4:6",
+      "Ezra 4:7"
+    ],
+    "title": "Ahasuerus and Artaxerxes between Cyrus and Darius — which kings are meant, and is the order of telling the order of events?",
+    "status": "Context",
+    "summary": "Ezra 4 tells of opposition from the days of Cyrus “until the reign of Darius”, then of an accusation under Ahasuerus and letters under Artaxerxes about the city and its walls, and then says the work on the house stopped until the second year of Darius. The verses do not say who these two kings are or whether their reigns fall before Darius.",
+    "text": "KJV Ezra 4:5: “all the days of Cyrus king of Persia, even until the reign of Darius king of Persia” KJV Ezra 4:6: “And in the reign of Ahasuerus, in the beginning of his reign, wrote they unto him an accusation against the inhabitants of Judah and Jerusalem.” KJV Ezra 4:7: “And in the days of Artaxerxes wrote Bishlam, Mithredath, Tabeel, and the rest of their companions, unto Artaxerxes king of Persia” KJV Ezra 4:12: “building the rebellious and the bad city, and have set up the walls thereof, and joined the foundations” KJV Ezra 4:21: “Give ye now commandment to cause these men to cease, and that this city be not builded” KJV Ezra 4:24: “Then ceased the work of the house of God which is at Jerusalem. So it ceased unto the second year of the reign of Darius king of Persia.” KJV Ezra 6:14: “according to the commandment of Cyrus, and Darius, and Artaxerxes king of Persia” KJV Ezra 6:15: “in the sixth year of the reign of Darius the king” KJV Ezra 7:1: “Now after these things, in the reign of Artaxerxes king of Persia” KJV Ezra 7:7: “in the seventh year of Artaxerxes the king” KJV Nehemiah 2:1: “in the twentieth year of Artaxerxes the king” KJV Esther 1:1: “Now it came to pass in the days of Ahasuerus” KJV Daniel 9:1: “In the first year of Darius the son of Ahasuerus, of the seed of the Medes” Hebrew (WLC) Ezra 4:6: וּבְמַלְכוּת֙ אֲחַשְׁוֵרֹ֔ושׁ בִּתְחִלַּ֖ת מַלְכוּתֹ֑ו [and in the reign of Ahasuerus, in the beginning of his reign]. 4:7: וּבִימֵ֣י אַרְתַּחְשַׁ֗שְׂתָּא [and in the days of Artaxerxes]. Septuagint (Brenton Greek) Ezra 4:6: Καὶ ἐν βασιλείᾳ Ἀσσουήρου, καὶ ἐν ἀρχῇ βασιλείας αὐτοῦ [and in the reign of Assuerus, and in the beginning of his reign]. 4:7: Καὶ ἐν ἡμέραις Ἀρθασασθὰ [and in the days of Arthasastha]. Fetched from https://bolls.life/get-text/WLC/15/4/ and https://ebible.org/grcbrent/EZR04.htm.",
+    "reasoning": "The answer changes what the chapter reports. If the two kings reigned between Cyrus and Darius, the letters may be read as preceding and contributing to the stoppage of 4:24; sequence alone does not establish that causal link. If they are later kings, the chapter gathers opposition from several reigns and 4:24 takes up again from 4:5; the letters then concern a later building of the city, which is what they speak of: in the KJV of Ezra 4:8–23 the words “house” and “temple” do not occur, and the letters speak of the city and its walls. The book also names an Artaxerxes after Darius among those by whose commandment the house was finished, though it dates the finishing to Darius’s sixth year.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that Ahasuerus and Artaxerxes here are names of kings who reigned between Cyrus and Darius; that they are the kings who bear those names in Esther and in Ezra 7 and Nehemiah, the passage being out of the order of time; that 4:24 resumes 4:5 after a digression. What the verses do state is the order of telling, the names, that the letters speak of the city and its walls, and that the work of the house ceased until the second year of Darius. Check made: the thirteen verses quoted were read in the KJV, and 4:6 and 4:7 in the Hebrew and in Brenton’s Greek. A whole-word search of the packaged KJV finds “Ahasuerus” at Ezra 4:6, in Esther and at Daniel 9:1, and “Artaxerxes” at Ezra 4:7; Ezra 4:8; Ezra 4:11; Ezra 4:23; Ezra 6:14; Ezra 7:1; Ezra 7:7; Ezra 7:11; Ezra 7:12; Ezra 7:21; Ezra 8:1; Nehemiah 2:1; Nehemiah 5:14; Nehemiah 13:6. That is a word search, not a reading of those books. These checked verses do not explicitly settle which kings are meant or where their reigns fall. No date from outside the Bible is used. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 4: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR04.htm"
+      },
+      {
+        "label": "Ezra 6: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR06.htm"
+      },
+      {
+        "label": "Ezra 7: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR07.htm"
+      },
+      {
+        "label": "Nehemiah 2: KJV",
+        "url": "https://ebible.org/eng-kjv/NEH02.htm"
+      },
+      {
+        "label": "Esther 1: KJV",
+        "url": "https://ebible.org/eng-kjv/EST01.htm"
+      },
+      {
+        "label": "Daniel 9: KJV",
+        "url": "https://ebible.org/eng-kjv/DAN09.htm"
+      },
+      {
+        "label": "Ezra 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/4/"
+      },
+      {
+        "label": "Ezra 4: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 4:6",
+        "book": 14,
+        "chapter": 4,
+        "verse": 6
+      },
+      {
+        "label": "Ezra 4:7",
+        "book": 14,
+        "chapter": 4,
+        "verse": 7
+      },
+      {
+        "label": "Ezra 4:5",
+        "book": 14,
+        "chapter": 4,
+        "verse": 5
+      },
+      {
+        "label": "Ezra 4:12",
+        "book": 14,
+        "chapter": 4,
+        "verse": 12
+      },
+      {
+        "label": "Ezra 4:21",
+        "book": 14,
+        "chapter": 4,
+        "verse": 21
+      },
+      {
+        "label": "Ezra 4:24",
+        "book": 14,
+        "chapter": 4,
+        "verse": 24
+      },
+      {
+        "label": "Ezra 6:14",
+        "book": 14,
+        "chapter": 6,
+        "verse": 14
+      },
+      {
+        "label": "Ezra 6:15",
+        "book": 14,
+        "chapter": 6,
+        "verse": 15
+      },
+      {
+        "label": "Ezra 7:1",
+        "book": 14,
+        "chapter": 7,
+        "verse": 1
+      },
+      {
+        "label": "Ezra 7:7",
+        "book": 14,
+        "chapter": 7,
+        "verse": 7
+      },
+      {
+        "label": "Nehemiah 2:1",
+        "book": 15,
+        "chapter": 2,
+        "verse": 1
+      },
+      {
+        "label": "Esther 1:1",
+        "book": 16,
+        "chapter": 1,
+        "verse": 1
+      },
+      {
+        "label": "Daniel 9:1",
+        "book": 26,
+        "chapter": 9,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 4:6",
+        "quote": "And in the reign of Ahasuerus, in the beginning of his reign"
+      },
+      {
+        "label": "A",
+        "ref": "Ezra 4:7",
+        "quote": "And in the days of Artaxerxes"
+      }
+    ]
+  },
+  {
+    "id": "strange-wives-and-their-children-what-became-of-them",
+    "mode": "questions",
+    "ref": "Ezra 10:44",
+    "appliesTo": [
+      "Ezra 10:44"
+    ],
+    "title": "“Some of them had wives by whom they had children” — what became of the wives and the children?",
+    "status": "Context",
+    "summary": "The book proposes a covenant to put away the foreign wives “and such as are born of them”, reports an inquiry that finished on a stated day, records a pledge by the priests first named, lists the men, and ends by saying that some had children by these wives. The verses read do not describe the wives or children being sent away, where they went, or what provision was made for them.",
+    "text": "KJV Ezra 10:3: “Now therefore let us make a covenant with our God to put away all the wives, and such as are born of them” KJV Ezra 10:11: “and separate yourselves from the people of the land, and from the strange wives” KJV Ezra 10:12: “Then all the congregation answered and said with a loud voice, As thou hast said, so must we do.” KJV Ezra 10:18: “And among the sons of the priests there were found that had taken strange wives” KJV Ezra 10:16: “and sat down in the first day of the tenth month to examine the matter” KJV Ezra 10:17: “And they made an end with all the men that had taken strange wives by the first day of the first month.” KJV Ezra 10:19: “And they gave their hands that they would put away their wives” KJV Ezra 10:44: “All these had taken strange wives: and some of them had wives by whom they had children.” Hebrew (WLC) Ezra 10:3: לְהֹוצִ֨יא כָל־נָשִׁ֜ים וְהַנֹּולָ֤ד מֵהֶם֙ [to put out all wives and what is born of them]. 10:19: וַיִּתְּנ֥וּ יָדָ֖ם לְהֹוצִ֣יא נְשֵׁיהֶ֑ם [and they gave their hand to put out their wives]. 10:44: וְיֵ֣שׁ מֵהֶ֣ם נָשִׁ֔ים וַיָּשִׂ֖ימוּ בָּנִֽים [and there were of them wives, and they set sons]. Septuagint (Brenton Greek) Ezra 10:3: ἐκβαλεῖν πάσας τὰς γυναῖκας, καὶ τὰ γενόμενα ἐξ αὐτῶν [to cast out all the wives and those born of them]. 10:19: Καὶ ἔδωκαν χεῖρα αὐτῶν τοῦ ἐξενέγκαι γυναῖκας ἑαυτῶν [and they gave their hand to put out their own wives]. 10:44: Πάντες οὗτοι ἐλάβοσαν γυναῖκας ἀλλοτρίας, καὶ ἐγέννησαν ἐξ αὐτῶν υἱούς. [all these took foreign wives, and begot sons of them]. Fetched from https://bolls.life/get-text/WLC/15/10/ and https://ebible.org/grcbrent/EZR10.htm.",
+    "reasoning": "The proposal covers children as well as wives, and the last words of the book are about children. Whether the families were in fact divided, and what happened to the women and children if they were, bears on how the whole episode is read. The verses quoted report the proposal, the congregation’s assent, the inquiry and its end, a pledge by the priests of verse 18, and a list of names; the putting away is reported as a pledge and an inquiry concluded, not described as an event.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that all the listed men sent away their wives and children; that the wives were sent away and the children stayed, or went with them; that the last verse records an unresolved difficulty. What the verses do state is that the congregation agreed, that the inquiry “made an end with all the men”, and that the priests named in verse 18 gave their hands to put away their wives. The pledge of verse 19 is told of those priests; the verses read do not repeat it for the other men listed. The wording of 10:44 differs between the texts quoted: the KJV has “some of them had wives by whom they had children”, the Hebrew words are given above with a plain rendering, and Brenton’s Greek says of all the men that they begot sons; no tag is proposed on that. Check made: all 44 verses of Ezra 10 were read in Brenton’s English, the eight verses quoted in the KJV, and 10:3, 10:19 and 10:44 in the Hebrew and Greek. Other books were not searched for a later account. These checked verses do not explicitly say what became of the wives and children. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 10: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR10.htm"
+      },
+      {
+        "label": "Ezra 10: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/10/"
+      },
+      {
+        "label": "Ezra 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR10.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 10:44",
+        "book": 14,
+        "chapter": 10,
+        "verse": 44
+      },
+      {
+        "label": "Ezra 10:3",
+        "book": 14,
+        "chapter": 10,
+        "verse": 3
+      },
+      {
+        "label": "Ezra 10:11",
+        "book": 14,
+        "chapter": 10,
+        "verse": 11
+      },
+      {
+        "label": "Ezra 10:12",
+        "book": 14,
+        "chapter": 10,
+        "verse": 12
+      },
+      {
+        "label": "Ezra 10:16",
+        "book": 14,
+        "chapter": 10,
+        "verse": 16
+      },
+      {
+        "label": "Ezra 10:17",
+        "book": 14,
+        "chapter": 10,
+        "verse": 17
+      },
+      {
+        "label": "Ezra 10:18",
+        "book": 14,
+        "chapter": 10,
+        "verse": 18
+      },
+      {
+        "label": "Ezra 10:19",
+        "book": 14,
+        "chapter": 10,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 10:44",
+        "quote": "and some of them had wives by whom they had children"
+      }
+    ]
+  },
+  {
+    "id": "turned-the-heart-of-the-king-of-assyria-which-king",
+    "mode": "questions",
+    "ref": "Ezra 6:22",
+    "appliesTo": [
+      "Ezra 6:22"
+    ],
+    "title": "“Turned the heart of the king of Assyria unto them” — which king, and why is he called king of Assyria?",
+    "status": "Context",
+    "summary": "After the house is finished in the sixth year of Darius and the passover is kept, the narrator says the Lord had “turned the heart of the king of Assyria unto them”. The kings named in the account of the building are kings of Persia. The verse does not name the king or say why he bears this title.",
+    "text": "KJV Ezra 6:22: “And kept the feast of unleavened bread seven days with joy: for the Lord had made them joyful, and turned the heart of the king of Assyria unto them, to strengthen their hands in the work of the house of God, the God of Israel.” KJV Ezra 6:15: “And this house was finished on the third day of the month Adar, which was in the sixth year of the reign of Darius the king.” KJV Ezra 6:14: “according to the commandment of Cyrus, and Darius, and Artaxerxes king of Persia” KJV Ezra 5:13: “But in the first year of Cyrus the king of Babylon the same king Cyrus made a decree to build this house of God” KJV Ezra 4:2: “since the days of Esarhaddon king of Assur, which brought us up hither” KJV Nehemiah 13:6: “in the two and thirtieth year of Artaxerxes king of Babylon” Hebrew (WLC) Ezra 6:22: וְֽהֵסֵ֞ב לֵ֤ב מֶֽלֶךְ־אַשּׁוּר֙ עֲלֵיהֶ֔ם [and turned the heart of the king of Asshur toward them]. Septuagint (Brenton Greek) Ezra 6:22: καὶ ἐπέστρεψε καρδίαν βασιλέως Ἀσσοὺρ ἐπʼ αὐτοὺς [and turned the heart of the king of Assur toward them]. Fetched from https://bolls.life/get-text/WLC/15/6/ and https://ebible.org/grcbrent/EZR06.htm.",
+    "reasoning": "The verse gives the king’s change of heart as the reason for the joy and for the help given to the work, so who he is matters to the account. In the verses quoted Darius is “Darius the king” and the three kings of 6:14 are of Persia, and the one king the book calls king of Assur by name, Esarhaddon, belongs to an earlier time in the story.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verse states: that Darius is meant and is called by the name of an older empire whose lands he held, as Cyrus is called “king of Babylon” at 5:13 and Artaxerxes at Nehemiah 13:6; that another ruler is meant; that the title looks back to the empire that began the exile. What the verse does state is that the Lord turned this king’s heart and that their hands were strengthened in the work of the house. Check made: the six verses quoted were read in the KJV, and 6:22 in the Hebrew and in Brenton’s Greek, both of which have the same title as the KJV. A search of the packaged KJV of Ezra and Nehemiah for “king of Assyria”, “kings of Assyria” or “king of Assur” finds Ezra 4:2; Ezra 6:22; Nehemiah 9:32. That is a word search, not a reading of the two books. These checked verses do not explicitly say which king is meant. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezra 6: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR06.htm"
+      },
+      {
+        "label": "Ezra 5: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR05.htm"
+      },
+      {
+        "label": "Ezra 4: KJV",
+        "url": "https://ebible.org/eng-kjv/EZR04.htm"
+      },
+      {
+        "label": "Nehemiah 13: KJV",
+        "url": "https://ebible.org/eng-kjv/NEH13.htm"
+      },
+      {
+        "label": "Ezra 6: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/15/6/"
+      },
+      {
+        "label": "Ezra 6: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZR06.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezra 6:22",
+        "book": 14,
+        "chapter": 6,
+        "verse": 22
+      },
+      {
+        "label": "Ezra 6:15",
+        "book": 14,
+        "chapter": 6,
+        "verse": 15
+      },
+      {
+        "label": "Ezra 6:14",
+        "book": 14,
+        "chapter": 6,
+        "verse": 14
+      },
+      {
+        "label": "Ezra 5:13",
+        "book": 14,
+        "chapter": 5,
+        "verse": 13
+      },
+      {
+        "label": "Ezra 4:2",
+        "book": 14,
+        "chapter": 4,
+        "verse": 2
+      },
+      {
+        "label": "Nehemiah 13:6",
+        "book": 15,
+        "chapter": 13,
+        "verse": 6
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezra 6:22",
+        "quote": "turned the heart of the king of Assyria unto them"
+      }
+    ]
   }
 ]
 ;

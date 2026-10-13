@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 486,
+    "evidenceRecords": 517,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 413,
-    "annotatedVerses": 2791
+    "chaptersWithAnnotations": 426,
+    "annotatedVerses": 2850
   },
   "byBook": [
     {
@@ -76,13 +76,13 @@
       "book": "1 Kings",
       "chapters": 22,
       "chaptersWithAnnotations": 16,
-      "annotatedVerses": 45
+      "annotatedVerses": 47
     },
     {
       "book": "2 Kings",
       "chapters": 25,
       "chaptersWithAnnotations": 17,
-      "annotatedVerses": 33
+      "annotatedVerses": 36
     },
     {
       "book": "1 Chronicles",
@@ -93,20 +93,20 @@
     {
       "book": "2 Chronicles",
       "chapters": 36,
-      "chaptersWithAnnotations": 15,
-      "annotatedVerses": 23
+      "chaptersWithAnnotations": 20,
+      "annotatedVerses": 43
     },
     {
       "book": "Ezra",
       "chapters": 10,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 10
+      "chaptersWithAnnotations": 8,
+      "annotatedVerses": 32
     },
     {
       "book": "Nehemiah",
       "chapters": 13,
       "chaptersWithAnnotations": 1,
-      "annotatedVerses": 2
+      "annotatedVerses": 11
     },
     {
       "book": "Esther",
@@ -231,14 +231,14 @@
     {
       "book": "Haggai",
       "chapters": 2,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 11
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 12
     },
     {
       "book": "Zechariah",
       "chapters": 14,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 12
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 13
     },
     {
       "book": "Malachi",
@@ -357,8 +357,8 @@
     {
       "book": "Hebrews",
       "chapters": 13,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 8
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 9
     },
     {
       "book": "James",
@@ -7167,12 +7167,14 @@
         "temple-pillars-eighteen-or-thirty-five-cubits",
         "molten-sea-two-thousand-or-three-thousand-baths",
         "hiram-craftsman-mother-of-naphtali-or-of-dan",
-        "pillar-chapiter-three-cubits-or-five"
+        "pillar-chapiter-three-cubits-or-five",
+        "molten-sea-knops-or-oxen-under-the-brim"
       ],
       "annotatedVerses": [
         14,
         15,
         16,
+        24,
         26
       ],
       "modes": [
@@ -7306,13 +7308,15 @@
       "annotationIds": [
         "david-save-only-uriah-greek-lacks-the-exception",
         "asa-mother-maachah-or-ana",
-        "asa-high-places-not-removed-or-taken-away"
+        "asa-high-places-not-removed-or-taken-away",
+        "asa-and-baasha-war-all-their-days-or-no-war-until-the-thirty-fifth-year"
       ],
       "annotatedVerses": [
         5,
         10,
         13,
-        14
+        14,
+        16
       ],
       "modes": [
         "contradictions"
@@ -7510,9 +7514,11 @@
       "bookId": 11,
       "chapter": 8,
       "annotationIds": [
-        "ahaziah-began-in-joram-twelfth-year-or-eleventh"
+        "ahaziah-began-in-joram-twelfth-year-or-eleventh",
+        "jehoram-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings"
       ],
       "annotatedVerses": [
+        24,
         25
       ],
       "modes": [
@@ -7630,10 +7636,12 @@
       "bookId": 11,
       "chapter": 16,
       "annotationIds": [
-        "king-of-assyria-hearkened-to-ahaz-or-helped-him-not"
+        "king-of-assyria-hearkened-to-ahaz-or-helped-him-not",
+        "ahaz-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings"
       ],
       "annotatedVerses": [
-        9
+        9,
+        20
       ],
       "modes": [
         "contradictions"
@@ -7731,9 +7739,11 @@
       "chapter": 23,
       "annotationIds": [
         "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem",
-        "josiah-sons-third-zedekiah-fourth-shallum-and-their-ages"
+        "josiah-sons-third-zedekiah-fourth-shallum-and-their-ages",
+        "manasseh-altars-in-the-house-of-the-lord-taken-away-by-him-or-beaten-down-by-josiah"
       ],
       "annotatedVerses": [
+        12,
         29,
         30,
         31
@@ -8237,18 +8247,30 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "molten-sea-knops-or-oxen-under-the-brim"
+      ],
+      "annotatedVerses": [
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8291,10 +8313,12 @@
       "bookId": 13,
       "chapter": 9,
       "annotationIds": [
-        "early-stalls"
+        "early-stalls",
+        "visions-of-iddo-the-seer-or-of-joel-greek"
       ],
       "annotatedVerses": [
-        25
+        25,
+        29
       ],
       "modes": [
         "contradictions"
@@ -8363,9 +8387,15 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "asa-and-baasha-war-all-their-days-or-no-war-until-the-thirty-fifth-year"
+      ],
+      "annotatedVerses": [
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8421,9 +8451,11 @@
       "bookId": 13,
       "chapter": 20,
       "annotationIds": [
-        "jehoshaphat-ships-refused-ahaziah-or-joined-him"
+        "jehoshaphat-ships-refused-ahaziah-or-joined-him",
+        "other-beside-the-ammonites-or-some-of-the-minaeans-greek"
       ],
       "annotatedVerses": [
+        1,
         36
       ],
       "modes": [
@@ -8435,9 +8467,20 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehoshaphat-and-ahaz-king-of-israel-or-king-of-juda-greek",
+        "jehoram-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings",
+        "a-writing-from-elijah-the-prophet-when-was-it-written-and-how-did-it-come"
+      ],
+      "annotatedVerses": [
+        2,
+        12,
+        20
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8447,10 +8490,12 @@
       "annotationIds": [
         "early-ahaziah",
         "ahaziah-died-at-megiddo-or-caught-hiding-in-samaria",
-        "ahaziah-forty-two-brethren-slain-or-all-his-elder-brothers-already-dead"
+        "ahaziah-forty-two-brethren-slain-or-all-his-elder-brothers-already-dead",
+        "azariah-or-ahaziah-son-of-jehoram-went-down-to-jezreel"
       ],
       "annotatedVerses": [
         2,
+        6,
         8,
         9
       ],
@@ -8474,11 +8519,13 @@
       "chapter": 24,
       "annotationIds": [
         "temple-repair-money-no-vessels-made-or-vessels-made",
-        "joash-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings"
+        "joash-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings",
+        "joash-conspirators-sons-of-an-ammonitess-and-a-moabitess-or-an-ammanite-and-a-moabite-greek"
       ],
       "annotatedVerses": [
         14,
-        25
+        25,
+        26
       ],
       "modes": [
         "contradictions"
@@ -8518,12 +8565,18 @@
       "chapter": 28,
       "annotationIds": [
         "king-of-assyria-hearkened-to-ahaz-or-helped-him-not",
-        "ahaz-twenty-years-old-or-twenty-five-greek-chronicles"
+        "ahaz-twenty-years-old-or-twenty-five-greek-chronicles",
+        "jehoshaphat-and-ahaz-king-of-israel-or-king-of-juda-greek",
+        "captives-of-judah-two-hundred-thousand-or-three-hundred-thousand-greek",
+        "ahaz-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings"
       ],
       "annotatedVerses": [
         1,
+        8,
+        19,
         20,
-        21
+        21,
+        27
       ],
       "modes": [
         "contradictions"
@@ -8570,9 +8623,17 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 33,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "manasseh-taken-among-the-thorns-or-in-bonds-greek",
+        "manasseh-altars-in-the-house-of-the-lord-taken-away-by-him-or-beaten-down-by-josiah"
+      ],
+      "annotatedVerses": [
+        11,
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8595,13 +8656,19 @@
       "bookId": 13,
       "chapter": 35,
       "annotationIds": [
-        "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem"
+        "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem",
+        "the-words-of-necho-from-the-mouth-of-god-how-did-god-speak-by-necho",
+        "put-the-holy-ark-in-the-house-where-had-the-ark-been"
       ],
       "annotatedVerses": [
+        3,
+        21,
+        22,
         24
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -8611,9 +8678,12 @@
       "chapter": 36,
       "annotationIds": [
         "jehoiachin-eighteen-or-eight-years-old",
-        "zedekiah-jehoiachin-uncle-brother-or-son"
+        "zedekiah-jehoiachin-uncle-brother-or-son",
+        "jehoiakim-bound-to-be-carried-to-babylon-greek-carried-and-buried-with-his-fathers"
       ],
       "annotatedVerses": [
+        6,
+        8,
         9,
         10
       ],
@@ -8651,11 +8721,25 @@
       "chapter": 2,
       "annotationIds": [
         "early-arah",
-        "early-pahath"
+        "early-pahath",
+        "returned-families-five-more-counts-ezra-or-nehemiah",
+        "whole-congregation-42360-or-the-sum-of-the-counts-given",
+        "gifts-to-the-treasure-61000-drams-or-41000",
+        "azmaveth-bethel-and-ai-harim-three-counts-differ-in-greek"
       ],
       "annotatedVerses": [
         5,
-        6
+        6,
+        8,
+        12,
+        15,
+        24,
+        28,
+        35,
+        39,
+        41,
+        64,
+        69
       ],
       "modes": [
         "contradictions"
@@ -8667,10 +8751,14 @@
       "bookId": 14,
       "chapter": 3,
       "annotationIds": [
-        "zerubbabel-son-of-pedaiah-or-son-of-shealtiel"
+        "zerubbabel-son-of-pedaiah-or-son-of-shealtiel",
+        "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel",
+        "foundation-laid-in-second-year-of-the-return-or-in-second-year-of-darius"
       ],
       "annotatedVerses": [
-        2
+        2,
+        8,
+        10
       ],
       "modes": [
         "contradictions"
@@ -8681,27 +8769,52 @@
       "book": "Ezra",
       "bookId": 14,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bishlam-mithredath-tabeel-wrote-or-wrote-in-peace-to-mithradates-greek",
+        "ahasuerus-and-artaxerxes-between-cyrus-and-darius-which-kings-are-meant"
+      ],
+      "annotatedVerses": [
+        6,
+        7
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezra",
       "bookId": 14,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel",
+        "sheshbazzar-made-governor-or-the-treasurer-greek",
+        "then-said-we-unto-them-or-they-said-names-of-the-builders-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        14,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezra",
       "bookId": 14,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "turned-the-heart-of-the-king-of-assyria-which-king"
+      ],
+      "annotatedVerses": [
+        22
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8717,9 +8830,18 @@
       "book": "Ezra",
       "bookId": 14,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sons-of-shechaniah-and-of-shelomith-families-named-in-greek",
+        "iddo-the-chief-at-casiphia-or-rulers-with-the-money-of-the-place-greek"
+      ],
+      "annotatedVerses": [
+        5,
+        10,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8735,9 +8857,15 @@
       "book": "Ezra",
       "bookId": 14,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "strange-wives-and-their-children-what-became-of-them"
+      ],
+      "annotatedVerses": [
+        44
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8800,11 +8928,23 @@
       "chapter": 7,
       "annotationIds": [
         "early-arah",
-        "early-pahath"
+        "early-pahath",
+        "returned-families-five-more-counts-ezra-or-nehemiah",
+        "whole-congregation-42360-or-the-sum-of-the-counts-given",
+        "gifts-to-the-treasure-61000-drams-or-41000"
       ],
       "annotatedVerses": [
         10,
-        11
+        11,
+        13,
+        17,
+        20,
+        38,
+        44,
+        66,
+        70,
+        71,
+        72
       ],
       "modes": [
         "contradictions"
@@ -13566,9 +13706,15 @@
       "book": "Haggai",
       "bookId": 36,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "foundation-laid-in-second-year-of-the-return-or-in-second-year-of-darius"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13602,9 +13748,15 @@
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16028,9 +16180,15 @@
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
