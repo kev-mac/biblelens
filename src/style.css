@@ -226,3 +226,5 @@ html{font-size:calc(17.6px * var(--text-scale,1))}
 .reader-actions{display:flex;align-items:end;gap:13px;min-width:0}
 .reader-actions .reader-nav{margin:0}
 @media(max-width:650px){.reader-actions{grid-column:1/-1;gap:10px}}
+
+.chapter-subtitle{max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.6}
