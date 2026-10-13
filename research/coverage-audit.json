@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 344,
+    "evidenceRecords": 351,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 373,
-    "annotatedVerses": 2614
+    "chaptersWithAnnotations": 381,
+    "annotatedVerses": 2634
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 17,
-      "annotatedVerses": 51
+      "chaptersWithAnnotations": 25,
+      "annotatedVerses": 71
     },
     {
       "book": "Exodus",
@@ -421,6 +421,7 @@
         "science-sky-dome",
         "genesis-1-celestial-sequence",
         "genesis-1-light-before-the-lights-source-unstated",
+        "god-speaks-as-us-addressees-unstated",
         "study-animals",
         "study-plants"
       ],
@@ -437,7 +438,8 @@
         17,
         18,
         19,
-        20
+        20,
+        26
       ],
       "modes": [
         "science",
@@ -467,9 +469,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "god-speaks-as-us-addressees-unstated"
+      ],
+      "annotatedVerses": [
+        22
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -504,14 +512,18 @@
       "bookId": 0,
       "chapter": 6,
       "annotationIds": [
-        "early-ark-count"
+        "early-ark-count",
+        "sons-of-god-and-daughters-of-men-identity-unstated"
       ],
       "annotatedVerses": [
+        2,
+        4,
         19,
         20
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -544,9 +556,17 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "canaan-cursed-for-what-ham-did"
+      ],
+      "annotatedVerses": [
+        22,
+        24,
+        25
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -562,9 +582,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "god-speaks-as-us-addressees-unstated"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -589,9 +615,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "melchizedek-priest-of-the-most-high-god-origin-unstated"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -614,13 +646,17 @@
       "bookId": 0,
       "chapter": 16,
       "annotationIds": [
-        "midianites-and-ishmaelites"
+        "midianites-and-ishmaelites",
+        "angel-of-the-lord-speaks-as-god-identity-unstated"
       ],
       "annotatedVerses": [
+        10,
+        13,
         15
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -647,18 +683,32 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "three-men-at-mamre-and-the-lord-relation-unstated"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        22
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Genesis",
       "bookId": 0,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "three-men-at-mamre-and-the-lord-relation-unstated"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -683,9 +733,16 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "angel-of-the-lord-speaks-as-god-identity-unstated"
+      ],
+      "annotatedVerses": [
+        11,
+        12
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -781,9 +838,16 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 31,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "angel-of-the-lord-speaks-as-god-identity-unstated"
+      ],
+      "annotatedVerses": [
+        11,
+        13
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -980,15 +1044,18 @@
       "bookId": 0,
       "chapter": 49,
       "annotationIds": [
-        "deuteronomy-levi-blessing-and-rebuke"
+        "deuteronomy-levi-blessing-and-rebuke",
+        "until-shiloh-come-who-or-what-is-shiloh"
       ],
       "annotatedVerses": [
         5,
         6,
-        7
+        7,
+        10
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },

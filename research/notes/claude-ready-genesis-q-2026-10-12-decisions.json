@@ -11,7 +11,8 @@
       "Genesis 1:4",
       "Genesis 1:5"
     ],
-    "reason": "Material physical-source question, not a scientific-error verdict; distinct from existing vegetation/Sun chronology. Limited word-search check retained."
+    "reason": "Material physical-source question, not a scientific-error verdict; distinct from existing vegetation/Sun chronology. Limited word-search check retained.",
+    "currentRun": "Previously processed; exact draft/published equality confirmed; not inserted again."
   },
   {
     "id": "cain-feared-being-slain-by-whom",
@@ -24,7 +25,8 @@
       "Genesis 4:14",
       "Genesis 4:15"
     ],
-    "reason": "Unidentified attackers, without asserting an earlier population or kinship. Four named people are not an exhaustive population count."
+    "reason": "Unidentified attackers, without asserting an earlier population or kinship. Four named people are not an exhaustive population count.",
+    "currentRun": "Previously processed; exact draft/published equality confirmed; not inserted again."
   },
   {
     "id": "cain-wife-unnamed-origin-unstated",
@@ -36,6 +38,104 @@
     "finalPlacements": [
       "Genesis 4:17"
     ],
-    "reason": "Unidentified wife/origin, without asserting kinship or wedding date. Search limitations retained."
+    "reason": "Unidentified wife/origin, without asserting kinship or wedding date. Search limitations retained.",
+    "currentRun": "Previously processed; exact draft/published equality confirmed; not inserted again."
+  },
+  {
+    "id": "sons-of-god-and-daughters-of-men-identity-unstated",
+    "decision": "accepted as written",
+    "operation": "insert new ID",
+    "reason": "Shared wording does not settle identity; heavenly beings, family lines and rulers remain named readings. The reported word search is explicitly limited, not Bible-wide proof of silence.",
+    "finalPlacements": [
+      "Genesis 6:2",
+      "Genesis 6:4"
+    ],
+    "tags": [
+      "Q"
+    ]
+  },
+  {
+    "id": "canaan-cursed-for-what-ham-did",
+    "decision": "accepted as written",
+    "operation": "insert new ID",
+    "reason": "Cause of the curse remains the question; proposed causes and list-order inference remain unasserted. Limited reported name/curse searches retained.",
+    "finalPlacements": [
+      "Genesis 9:25",
+      "Genesis 9:22",
+      "Genesis 9:24"
+    ],
+    "tags": [
+      "Q"
+    ]
+  },
+  {
+    "id": "god-speaks-as-us-addressees-unstated",
+    "decision": "accepted as written",
+    "operation": "insert new ID",
+    "reason": "Kept Genesis 1:26 and 3:22 in appliesTo and sides with 11:7: same question across passages, no restriction against earlier-chapter placements. No duplicate published question. Only four outside passages were reportedly checked; no whole-Bible search claimed.",
+    "finalPlacements": [
+      "Genesis 11:7",
+      "Genesis 1:26",
+      "Genesis 3:22"
+    ],
+    "tags": [
+      "Q"
+    ]
+  },
+  {
+    "id": "melchizedek-priest-of-the-most-high-god-origin-unstated",
+    "decision": "accepted as written",
+    "operation": "insert new ID",
+    "reason": "Accepted: Hebrews 7:3 explicitly addresses absent descent and continuing priesthood, but does not explain the origin or appointment of the Genesis priesthood. Literal and record-omission readings are retained without asserting either; this is not a claim that Hebrews says nothing about him.",
+    "finalPlacements": [
+      "Genesis 14:18"
+    ],
+    "tags": [
+      "Q"
+    ]
+  },
+  {
+    "id": "angel-of-the-lord-speaks-as-god-identity-unstated",
+    "decision": "corrected and accepted",
+    "operation": "insert new ID",
+    "reason": "Narrowed scope sentence from “None says what the angel of the Lord is.” to “These checked passages do not explicitly settle which of the named readings applies in Genesis.” The former could imply universal ignorance or deny the explicit messenger designation. Quote wording, readings, sources, placements and sides unchanged.",
+    "finalPlacements": [
+      "Genesis 16:10",
+      "Genesis 16:13",
+      "Genesis 22:11",
+      "Genesis 22:12",
+      "Genesis 31:11",
+      "Genesis 31:13"
+    ],
+    "tags": [
+      "Q"
+    ]
+  },
+  {
+    "id": "three-men-at-mamre-and-the-lord-relation-unstated",
+    "decision": "accepted as written",
+    "operation": "insert new ID",
+    "reason": "Narrative relationship remains a question; identifying the two angels with two visitors is expressly an inference. Named readings and limited reported search retained. Distinct from the angel-speaks-as-God record: visitor grouping and sequence versus speaker representation.",
+    "finalPlacements": [
+      "Genesis 18:2",
+      "Genesis 18:1",
+      "Genesis 18:22",
+      "Genesis 19:1"
+    ],
+    "tags": [
+      "Q"
+    ]
+  },
+  {
+    "id": "until-shiloh-come-who-or-what-is-shiloh",
+    "decision": "accepted as written",
+    "operation": "insert new ID",
+    "reason": "Accepted Q-only. Verified full WLC written/read spelling and Brenton phrase; no G qualification inferred. G examination deferred to Claude’s Genesis H/G/V session. Limited reported Shiloh search is not a Bible-wide review.",
+    "finalPlacements": [
+      "Genesis 49:10"
+    ],
+    "tags": [
+      "Q"
+    ]
   }
 ]

@@ -196,12 +196,33 @@ Approved by the owner through Codex's prompt (`outputs/Claude-Q-Research-Prompt.
 ## Owner ruling on Q (2026-10-12)
 
 - **Every book session brings its own Q candidates**, alongside H, G, V and untagged records. Put them in the same session's `{book}-q-records.json` and `-q-notes.md`.
-- **All earlier books are to be reviewed for Q.** Backlog, one session per book, in order: Genesis (chapters 1–4 done in `genesis-1-4-q-records.json`; 5–50 outstanding), Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings. Mark each done here when its file is written. These are Q-only sessions: do not re-open H, G or V for those books.
+- **All earlier books are to be reviewed for Q.** Backlog, one session per book, in order: Genesis (**done**: chapters 1–4 in `genesis-1-4-q-records.json`, 5–50 in `genesis-5-50-q-records.json`), Exodus (next), Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings. Mark each done here when its file is written. For Joshua to 2 Kings these are Q-only sessions: do not re-open H, G or V for those books. Genesis to Deuteronomy also need H, G, V and untagged review — see "Owner ruling: all books follow the same rules".
 - **Unanswered Questions is its own category**, beside Science, History and Contradictions; Q is its visible tag. Q-only records take `mode: "questions"`. This supersedes the earlier instruction (in Codex's prompt and in the Q section of `claude-integration-workflow.md`, until Codex updates it) to file Q under one of the three existing modes. Relayed by the owner from Codex, 2026-10-12.
 - Do not move an established scientific discrepancy or contradiction into `questions` merely because it raises a question. A record that qualifies as both keeps its own mode and may add the Q tag only if Q qualifies by itself.
 - Codex implemented `mode: "questions"` at 21:08 on 2026-10-12 (build validates it; workflow file and saved prompt updated to match). `genesis-1-4-q-records.json` was corrected to the new mode with nothing else changed and is awaiting Codex's quote check; no Q record is published yet.
 
+## Notes from the Genesis 5–50 Q session (2026-10-12)
+
+- `genesis-5-50-q-records.json` holds 7 Q records (sons of God 6:2; Canaan cursed 9:25; God's "us" 11:7 with 1:26 and 3:22; Melchizedek 14:18; angel of the Lord 16:10; three men at Mamre 18:2; Shiloh 49:10). Awaiting Codex. Check it before proposing a Q on those verses, and in Exodus do not re-issue the angel-of-the-Lord question for Exodus 3:2–4; it is quoted there as context.
+- A Q record's tagged `ref` must carry a side A, like any tagged record.
+- Word searches: search case-sensitively and on the whole word. "Shiloh" matched "Taanathshiloh" (Joshua 16:6) until this was done.
+- Typed Hebrew may not match the fetched text character for character because vowel and accent marks can sit in a different order. Compare under Unicode NFD and write out the edition's own characters.
+- The chapters were not read in full; the notes file lists the verses read. Ruled-out items and non-Q items seen in passing are listed there.
+
+## Owner ruling: all books follow the same rules (2026-10-12)
+
+Given by the owner in the Claude session, in answer to the two Genesis questions: "All books should follow the same rules."
+
+Claude's reading of it, to be corrected by the owner if wrong:
+
+- Every book gets the same full review: H, G, V, untagged conflicts and Q. No book is Q-only because of where it falls in the order.
+- Genesis, Exodus, Leviticus, Numbers and Deuteronomy have never had a Claude session for H, G, V or untagged conflicts. Each now gets one. For Exodus to Deuteronomy, do it in the same session as that book's Q review. Genesis needs a separate session, since its Q review is already written; start from the items listed under "Seen in passing" in `genesis-5-50-q-notes.md`.
+- Joshua to 2 Kings have already had their full sessions, so their backlog sessions stay Q-only.
+- Genesis 49:10 (Shiloh) is to be examined for G in the Genesis session, like any other verse where the Greek differs from the KJV. The Q record stands as issued.
+
 ## Open questions for the owner
+
+- From the Genesis 5–50 Q session: both answered — see "Owner ruling: all books follow the same rules".
 
 - None outstanding from 1 Samuel; both were answered (see above).
 - From 2 Samuel: answered — such records are allowed (see the 2 Samuel lessons).
