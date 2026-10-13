@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 614,
+    "evidenceRecords": 633,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 480,
-    "annotatedVerses": 2972
+    "chaptersWithAnnotations": 492,
+    "annotatedVerses": 2992
   },
   "byBook": [
     {
@@ -123,8 +123,8 @@
     {
       "book": "Psalms",
       "chapters": 150,
-      "chaptersWithAnnotations": 29,
-      "annotatedVerses": 53
+      "chaptersWithAnnotations": 41,
+      "annotatedVerses": 73
     },
     {
       "book": "Proverbs",
@@ -10625,18 +10625,39 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 73,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "my-heart-was-grieved-or-my-heart-rejoiced-greek"
+      ],
+      "annotatedVerses": [
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 74,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "lift-up-thy-feet-or-lift-up-thine-hands-greek",
+        "burned-up-all-the-synagogues-of-god-or-abolish-the-feasts-of-the-lord-greek",
+        "neither-is-there-among-us-any-that-knoweth-how-long-or-will-not-know-us-any-more-greek",
+        "meat-to-the-people-inhabiting-the-wilderness-or-meat-to-the-ethiopian-nations-greek",
+        "they-have-cast-fire-into-thy-sanctuary-which-destruction-do-psalms-74-and-79-lament"
+      ],
+      "annotatedVerses": [
+        3,
+        7,
+        8,
+        9,
+        14
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10652,45 +10673,79 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 76,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-wrath-of-man-shall-praise-thee-or-the-inward-thought-of-man-shall-give-thanks-greek"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 77,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-remembered-god-and-was-troubled-or-and-rejoiced-greek",
+        "thou-holdest-mine-eyes-waking-or-all-mine-enemies-set-a-watch-greek"
+      ],
+      "annotatedVerses": [
+        3,
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 78,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-built-his-sanctuary-like-high-palaces-or-as-of-unicorns-greek"
+      ],
+      "annotatedVerses": [
+        69
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 79,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "laid-jerusalem-on-heaps-or-jerusalem-for-a-storehouse-of-fruits-greek",
+        "they-have-cast-fire-into-thy-sanctuary-which-destruction-do-psalms-74-and-79-lament"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 80,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-branch-that-thou-madest-strong-or-the-son-of-man-greek"
+      ],
+      "annotatedVerses": [
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10706,9 +10761,16 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 82,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-have-said-ye-are-gods-who-are-the-gods-among-whom-god-judges-in-psalm-82"
+      ],
+      "annotatedVerses": [
+        1,
+        6
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10724,9 +10786,15 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 84,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "valley-of-baca-make-it-a-well-or-valley-of-weeping-the-lawgiver-will-grant-blessings-greek"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10751,27 +10819,50 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 87,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-singers-and-the-players-all-my-springs-or-the-dwelling-of-all-is-as-of-those-that-rejoice-greek"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 88,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "shall-the-dead-arise-and-praise-thee-or-shall-physicians-raise-them-up-greek"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 89,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thou-hast-profaned-his-crown-or-thou-hast-profaned-his-sanctuary-greek",
+        "the-footsteps-of-thine-anointed-or-the-recompence-of-thine-anointed-greek",
+        "thou-hast-been-wroth-with-thine-anointed-whose-fall-does-psalm-89-lament"
+      ],
+      "annotatedVerses": [
+        38,
+        39,
+        51
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
