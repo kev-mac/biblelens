@@ -1,0 +1,330 @@
+{
+  "checks": [
+    {
+      "id": "which-king-of-egypt-is-the-pharaoh-of-the-exodus-never-named",
+      "batch": "exodus-1-40-q",
+      "english": [
+        {
+          "ref": "Exodus 1:8",
+          "quote": "Now there arose up a new king over Egypt, which knew not Joseph.",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 1:11",
+          "quote": "And they built for Pharaoh treasure cities, Pithom and Raamses.",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 2:23",
+          "quote": "And it came to pass in process of time, that the king of Egypt died",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 5:1",
+          "quote": "And afterward Moses and Aaron went in, and told Pharaoh, Thus saith the Lord God of Israel, Let my people go",
+          "exact": true
+        },
+        {
+          "ref": "1 Kings 6:1",
+          "quote": "in the four hundred and eightieth year after the children of Israel were come out of the land of Egypt, in the fourth year of Solomon",
+          "exact": true
+        },
+        {
+          "ref": "1 Kings 11:40",
+          "quote": "unto Shishak king of Egypt",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 23:29",
+          "quote": "Pharaohnechoh king of Egypt",
+          "exact": true
+        },
+        {
+          "ref": "Jeremiah 44:30",
+          "quote": "Pharaohhophra king of Egypt",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיָּ֥קָם מֶֽלֶךְ־חָדָ֖שׁ עַל־מִצְרָ֑יִם אֲשֶׁ֥ר לֹֽא־יָדַ֖ע אֶת־יֹוסֵֽף",
+          "stated": {
+            "chapter": 1,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/2/1/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἀνέστη δὲ βασιλεὺς ἕτερος ἐπʼ Αἴγυπτον, ὃς οὐκ ᾔδει τὸν Ἰωσήφ",
+          "stated": {
+            "chapter": 1,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EXO01.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Exodus 1:8",
+          "quote": "there arose up a new king over Egypt, which knew not Joseph",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Exodus 2:23",
+          "quote": "the king of Egypt died",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "temple-begun-four-hundred-eightieth-or-four-hundred-fortieth-year",
+          "title": "The temple begun in the 480th year after the exodus, or the 440th?",
+          "summary": "The KJV and the Hebrew date the start of the temple to the 480th year after Israel left Egypt. The Greek has the 440th year.",
+          "reasoning": "The verse is the one place where the book counts the years from the exodus to the temple. The KJV follows the Hebrew figure. Brenton’s Greek has a figure forty years lower.",
+          "scope": "G only. The record compares the two figures as printed and does not test either against other time spans in the Bible. No claim is made about which figure is original. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        },
+        {
+          "id": "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem",
+          "title": "Josiah’s death: slain at Megiddo and carried away dead, or brought wounded to Jerusalem, where he died?",
+          "summary": "2 Kings says Pharaoh slew Josiah at Megiddo and his servants carried him dead from there. 2 Chronicles says he was wounded, moved to another chariot and brought to Jerusalem, “and he died”.",
+          "reasoning": "Kings places the death at Megiddo and has a dead man carried to Jerusalem. Chronicles has a wounded man speak, be moved, and be brought to Jerusalem, and only then says he died.",
+          "scope": "No tag is proposed: the KJV matches the Hebrew in both books, and the Greek agrees in each. Chronicles does not say in so many words where Josiah died; the order of its clauses puts the death after the journey. If the Hebrew word rendered “dead” in Kings is taken as “dying”, the accounts draw closer; the record does not decide that, and verse 29 still says he was put to death at Megiddo. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false
+    },
+    {
+      "id": "priests-at-sinai-before-aaron-was-appointed-who-were-they",
+      "batch": "exodus-1-40-q",
+      "english": [
+        {
+          "ref": "Exodus 19:22",
+          "quote": "And let the priests also, which come near to the Lord, sanctify themselves, lest the Lord break forth upon them.",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 19:24",
+          "quote": "but let not the priests and the people break through to come up unto the Lord",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 19:6",
+          "quote": "And ye shall be unto me a kingdom of priests, and an holy nation.",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 24:5",
+          "quote": "And he sent young men of the children of Israel, which offered burnt offerings, and sacrificed peace offerings of oxen unto the Lord.",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 28:1",
+          "quote": "And take thou unto thee Aaron thy brother, and his sons with him, from among the children of Israel, that he may minister unto me in the priest's office",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 13:2",
+          "quote": "Sanctify unto me all the firstborn",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְגַ֧ם הַכֹּהֲנִ֛ים הַנִּגָּשִׁ֥ים אֶל־יְהוָ֖ה יִתְקַדָּ֑שׁוּ",
+          "stated": {
+            "chapter": 19,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/2/19/",
+              "verse": 22
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ οἱ ἱερεῖς οἱ ἐγγίζοντες Κυρίῳ τῷ Θεῷ ἁγιασθήτωσαν",
+          "stated": {
+            "chapter": 19,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EXO19.htm",
+              "verse": "22"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Exodus 19:22",
+          "quote": "let the priests also, which come near to the Lord, sanctify themselves",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Exodus 19:24",
+          "quote": "let not the priests and the people break through",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exodus-firstborn-redemption",
+          "title": "Firstborn people are redeemed, not offered as animals",
+          "summary": "The firstborn dedication includes explicit redemption of human children and a separate rule for donkeys.",
+          "reasoning": "The general dedication must be read with the specific human-redemption rule. Verse 15 explicitly contrasts animal sacrifice with redeeming the speaker’s children. This is an additional substitution and redemption procedure, not an instruction to kill those firstborn.",
+          "scope": "These verses establish the rule this passage gives. They do not independently reconstruct every ancient practice or settle how redemption was administered in each period."
+        },
+        {
+          "id": "exodus-priesthood-access",
+          "title": "A kingdom of priests still has restricted access",
+          "summary": "The people are called a kingdom of priests, while the same chapter limits access to the mountain.",
+          "reasoning": "A designation for the whole people does not automatically grant every individual the same ritual role or physical access. The chapter itself distinguishes these categories.",
+          "scope": "This is a possible contextual distinction, not a full reconstruction of how Israelite priesthood developed. The existence of priests in the narrative before later appointment texts requires separate chronological and compositional research."
+        },
+        {
+          "id": "exodus-covenant-ratification",
+          "title": "The covenant is narrated through reading and blood",
+          "summary": "Written words, public assent, an altar and blood mark the covenant ceremony.",
+          "reasoning": "The narrator links the obligations to a public ceremony rather than depicting the covenant only as a private experience. The passage attributes writing to Moses, but that narrative attribution is different from externally verifying authorship of the surviving book.",
+          "scope": "The text alone cannot authenticate the ceremony as a dated historical event, reconstruct every ritual detail or establish the authorship and transmission of the final literary work."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false
+    },
+    {
+      "id": "the-urim-and-the-thummim-what-were-they-and-how-did-they-answer",
+      "batch": "exodus-1-40-q",
+      "english": [
+        {
+          "ref": "Exodus 28:30",
+          "quote": "And thou shalt put in the breastplate of judgment the Urim and the Thummim; and they shall be upon Aaron's heart, when he goeth in before the Lord: and Aaron shall bear the judgment of the children of Israel upon his heart before the Lord continually.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 8:8",
+          "quote": "And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 27:21",
+          "quote": "who shall ask counsel for him after the judgment of Urim before the Lord: at his word shall they go out, and at his word they shall come in",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 33:8",
+          "quote": "Let thy Thummim and thy Urim be with thy holy one",
+          "exact": true
+        },
+        {
+          "ref": "1 Samuel 28:6",
+          "quote": "And when Saul enquired of the Lord, the Lord answered him not, neither by dreams, nor by Urim, nor by prophets.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:63",
+          "quote": "till there stood up a priest with Urim and with Thummim",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:65",
+          "quote": "till there stood up a priest with Urim and Thummim",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְנָתַתָּ֞ אֶל־חֹ֣שֶׁן הַמִּשְׁפָּ֗ט אֶת־הָאוּרִים֙ וְאֶת־הַתֻּמִּ֔ים",
+          "stated": {
+            "chapter": 28,
+            "verse": 30
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/2/28/",
+              "verse": 30
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἐπιθήσεις ἐπὶ τὸ λογεῖον τῆς κρίσεως τὴν δήλωσιν καὶ τὴν ἀλήθειαν",
+          "stated": {
+            "chapter": 28,
+            "verse": 30
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EXO28.htm",
+              "verse": "30"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Exodus 28:30",
+          "quote": "thou shalt put in the breastplate of judgment the Urim and the Thummim",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exodus-priestly-tribal-memorial",
+          "title": "Priestly clothing represents the tribes",
+          "summary": "Tribal names appear on shoulder stones and the breastplate as memorials.",
+          "reasoning": "The text supplies a representative purpose for the names, but does not explain the objects or operating procedure of the Urim and Thummim. A precise mechanism would require further evidence.",
+          "scope": "The symbolism is explicit in the passage. It does not authenticate surviving artifacts, establish exact gemstone identifications or prove a particular divination technique."
+        },
+        {
+          "id": "numbers-joshua-priestly-counsel",
+          "title": "Joshua’s commissioning includes priestly counsel",
+          "summary": "Joshua receives public authority, while Eleazar is assigned to seek counsel through the Urim.",
+          "reasoning": "The procedure distributes leadership and priestly consultation rather than describing an unrestricted transfer of every role Moses held.",
+          "scope": "The passage does not explain the Urim’s physical mechanism or independently verify the ceremony, divine selection or historical administration."
+        },
+        {
+          "id": "deuteronomy-levi-blessing-and-rebuke",
+          "title": "Levi’s blessing differs from Jacob’s rebuke",
+          "summary": "Genesis rebukes Simeon and Levi together; Deuteronomy gives Levi a positive priestly blessing and no separate blessing named for Simeon.",
+          "reasoning": "The tribal portraits differ, but praise for a later role does not logically deny earlier wrongdoing. The two speeches also have different speakers and narrative occasions.",
+          "scope": "The omission is a feature of this blessing’s list, not proof that Simeon ceased to exist or a secure date for the poem. Historical explanations need further evidence."
+        },
+        {
+          "id": "saul-enquired-of-the-lord-or-enquired-not",
+          "title": "Saul “enquired of the LORD”, and Saul “enquired not of the LORD”",
+          "summary": "1 Samuel 28:6 says Saul enquired of the LORD and got no answer. 1 Chronicles 10:14 gives as a reason for his death that he “enquired not of the LORD”.",
+          "reasoning": "In the KJV the same English verb is affirmed in Samuel and denied in Chronicles.",
+          "scope": "The Hebrew uses two different verbs, “asked” in Samuel and “sought” in Chronicles, so the Hebrew does not affirm and deny the same word; 1 Chronicles 10:13 uses both verbs together for consulting the medium. Chronicles may mean that Saul did not seek the LORD in earnest or did not keep seeking. The contrast is clear in the KJV wording and weaker in the Hebrew. The Hebrew quoted is the Westminster Leningrad Codex digital text; a digital named edition is not proof that every manuscript agrees."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false
+    }
+  ],
+  "policy": "All explicit KJV quotes exact at the stated packaged verse; sides exact and refs validated. Hebrew/Greek NFC and whitespace only, Strong number markup removed. Printed chapter/verse labels independently constrained; Exodus22 KJV8–9 maps to Hebrew/Greek7–8, Exodus38:26 to Greek39:3, Jonah2:5 to WLC2:6. TR same-word claims compared separately with accent/punctuation normalization. No scripture chapter independently read for new findings.",
+  "needsOwner": []
+}

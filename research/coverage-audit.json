@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 371,
+    "evidenceRecords": 393,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 392,
-    "annotatedVerses": 2675
+    "chaptersWithAnnotations": 393,
+    "annotatedVerses": 2696
   },
   "byBook": [
     {
@@ -22,7 +22,7 @@
       "book": "Exodus",
       "chapters": 40,
       "chaptersWithAnnotations": 40,
-      "annotatedVerses": 430
+      "annotatedVerses": 448
     },
     {
       "book": "Leviticus",
@@ -34,7 +34,7 @@
       "book": "Numbers",
       "chapters": 36,
       "chaptersWithAnnotations": 36,
-      "annotatedVerses": 519
+      "annotatedVerses": 520
     },
     {
       "book": "Deuteronomy",
@@ -165,8 +165,8 @@
     {
       "book": "Ezekiel",
       "chapters": 48,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 10
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 11
     },
     {
       "book": "Daniel",
@@ -358,7 +358,7 @@
       "book": "Hebrews",
       "chapters": 13,
       "chaptersWithAnnotations": 2,
-      "annotatedVerses": 7
+      "annotatedVerses": 8
     },
     {
       "book": "James",
@@ -1191,10 +1191,14 @@
       "chapter": 1,
       "annotationIds": [
         "exodus-family-counts",
-        "exodus-women-rescue"
+        "exodus-women-rescue",
+        "treasure-cities-pithom-and-raamses-greek-adds-on",
+        "which-king-of-egypt-is-the-pharaoh-of-the-exodus-never-named"
       ],
       "annotatedVerses": [
         5,
+        8,
+        11,
         15,
         16,
         17,
@@ -1206,7 +1210,8 @@
       ],
       "modes": [
         "contradictions",
-        "history"
+        "history",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1216,7 +1221,9 @@
       "chapter": 2,
       "annotationIds": [
         "exodus-women-rescue",
-        "moses-father-in-law-names"
+        "moses-father-in-law-names",
+        "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king",
+        "which-king-of-egypt-is-the-pharaoh-of-the-exodus-never-named"
       ],
       "annotatedVerses": [
         2,
@@ -1227,13 +1234,17 @@
         8,
         9,
         10,
+        14,
+        15,
         16,
         18,
-        21
+        21,
+        23
       ],
       "modes": [
         "history",
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1244,7 +1255,8 @@
       "annotationIds": [
         "exodus-divine-name",
         "exodus-labor-and-response",
-        "moses-father-in-law-names"
+        "moses-father-in-law-names",
+        "i-am-that-i-am-or-i-am-the-one-who-is-greek"
       ],
       "annotatedVerses": [
         1,
@@ -1267,7 +1279,8 @@
       "annotationIds": [
         "exodus-signs-purpose",
         "exodus-zipporah",
-        "exodus-labor-and-response"
+        "exodus-labor-and-response",
+        "the-lord-met-him-and-sought-to-kill-him-or-an-angel-of-the-lord-greek"
       ],
       "annotatedVerses": [
         1,
@@ -1288,7 +1301,8 @@
       ],
       "modes": [
         "science",
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1330,7 +1344,9 @@
       "chapter": 6,
       "annotationIds": [
         "exodus-divine-name",
-        "exodus-labor-and-response"
+        "exodus-labor-and-response",
+        "jochebed-his-fathers-sister-or-his-fathers-brothers-daughter-greek",
+        "four-hundred-and-thirty-years-in-egypt-and-the-ages-of-kohath-amram-and-moses"
       ],
       "annotatedVerses": [
         1,
@@ -1339,7 +1355,9 @@
         6,
         7,
         8,
-        9
+        9,
+        18,
+        20
       ],
       "modes": [
         "contradictions",
@@ -1353,11 +1371,13 @@
       "chapter": 7,
       "annotationIds": [
         "exodus-hardening-agency",
-        "exodus-magicians-limits"
+        "exodus-magicians-limits",
+        "four-hundred-and-thirty-years-in-egypt-and-the-ages-of-kohath-amram-and-moses"
       ],
       "annotatedVerses": [
         3,
         4,
+        7,
         9,
         10,
         11,
@@ -1486,7 +1506,9 @@
         "exodus-last-audience",
         "exodus-passover-memory",
         "exodus-passover-membership",
-        "deuteronomy-passover-place"
+        "deuteronomy-passover-place",
+        "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek",
+        "four-hundred-and-thirty-years-in-egypt-and-the-ages-of-kohath-amram-and-moses"
       ],
       "annotatedVerses": [
         3,
@@ -1506,6 +1528,7 @@
         32,
         34,
         39,
+        40,
         42,
         43,
         44,
@@ -1527,7 +1550,8 @@
       "chapter": 13,
       "annotationIds": [
         "exodus-passover-memory",
-        "exodus-firstborn-redemption"
+        "exodus-firstborn-redemption",
+        "israel-went-up-harnessed-or-in-the-fifth-generation-greek"
       ],
       "annotatedVerses": [
         2,
@@ -1541,10 +1565,12 @@
         13,
         14,
         15,
-        16
+        16,
+        18
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1580,7 +1606,8 @@
       "chapter": 15,
       "annotationIds": [
         "exodus-sea-song",
-        "exodus-bitter-water"
+        "exodus-bitter-water",
+        "the-lord-is-a-man-of-war-or-the-lord-who-crushes-wars-greek"
       ],
       "annotatedVerses": [
         1,
@@ -1599,7 +1626,8 @@
       ],
       "modes": [
         "history",
-        "science"
+        "science",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1608,9 +1636,11 @@
       "bookId": 1,
       "chapter": 16,
       "annotationIds": [
-        "exodus-manna-storage"
+        "exodus-manna-storage",
+        "it-is-manna-or-what-is-this-greek"
       ],
       "annotatedVerses": [
+        15,
         19,
         20,
         22,
@@ -1634,7 +1664,8 @@
       "chapter": 17,
       "annotationIds": [
         "exodus-amalek-memory",
-        "numbers-rock-instructions-differ"
+        "numbers-rock-instructions-differ",
+        "because-the-lord-hath-sworn-or-with-a-secret-hand-greek"
       ],
       "annotatedVerses": [
         6,
@@ -1687,7 +1718,8 @@
       "bookId": 1,
       "chapter": 19,
       "annotationIds": [
-        "exodus-priesthood-access"
+        "exodus-priesthood-access",
+        "priests-at-sinai-before-aaron-was-appointed-who-were-they"
       ],
       "annotatedVerses": [
         5,
@@ -1701,7 +1733,8 @@
         24
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1712,13 +1745,18 @@
       "annotationIds": [
         "early-sabbath",
         "exodus-command-and-penalties",
-        "exodus-commanded-cherubim"
+        "exodus-commanded-cherubim",
+        "kill-adultery-steal-or-adultery-steal-kill-greek-order",
+        "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east"
       ],
       "annotatedVerses": [
         4,
         5,
         11,
-        13
+        13,
+        14,
+        15,
+        26
       ],
       "modes": [
         "contradictions"
@@ -1731,7 +1769,9 @@
       "chapter": 21,
       "annotationIds": [
         "early-servitude",
-        "exodus-command-and-penalties"
+        "exodus-command-and-penalties",
+        "brought-unto-the-judges-or-before-god-greek",
+        "no-mischief-follow-or-the-child-not-fully-formed-greek"
       ],
       "annotatedVerses": [
         2,
@@ -1751,6 +1791,8 @@
         17,
         20,
         21,
+        22,
+        23,
         26,
         27
       ],
@@ -1767,13 +1809,16 @@
       "annotationIds": [
         "exodus-firstborn-redemption",
         "exodus-command-and-penalties",
-        "exodus-burglary-restitution"
+        "exodus-burglary-restitution",
+        "brought-unto-the-judges-or-before-god-greek"
       ],
       "annotatedVerses": [
         1,
         2,
         3,
         4,
+        8,
+        9,
         18,
         19,
         20,
@@ -1818,6 +1863,7 @@
       "chapter": 24,
       "annotationIds": [
         "exodus-covenant-ratification",
+        "they-saw-the-god-of-israel-or-the-place-where-he-stood-greek",
         "study-seen"
       ],
       "annotatedVerses": [
@@ -1911,7 +1957,8 @@
       "chapter": 28,
       "annotationIds": [
         "exodus-priestly-tribal-memorial",
-        "exodus-instructions-and-completion"
+        "exodus-instructions-and-completion",
+        "the-urim-and-the-thummim-what-were-they-and-how-did-they-answer"
       ],
       "annotatedVerses": [
         9,
@@ -1924,7 +1971,8 @@
         30
       ],
       "modes": [
-        "history"
+        "history",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -1995,7 +2043,8 @@
         "early-sabbath",
         "exodus-sabbath-sanction",
         "exodus-replacement-tablets",
-        "exodus-instructions-and-completion"
+        "exodus-instructions-and-completion",
+        "he-rested-and-was-refreshed-or-fainteth-not-neither-is-weary"
       ],
       "annotatedVerses": [
         2,
@@ -2065,6 +2114,7 @@
         "exodus-presence-negotiation",
         "exodus-cloud-entry-guidance",
         "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
+        "moses-took-the-tabernacle-or-his-own-tent-greek",
         "study-seen"
       ],
       "annotatedVerses": [
@@ -2205,7 +2255,8 @@
       "annotationIds": [
         "exodus-census-ransom",
         "exodus-voluntary-and-fixed-giving",
-        "exodus-instructions-and-completion"
+        "exodus-instructions-and-completion",
+        "silver-from-603550-numbered-before-the-numbering-of-the-second-month"
       ],
       "annotatedVerses": [
         1,
@@ -3064,9 +3115,11 @@
       "chapter": 1,
       "annotationIds": [
         "numbers-military-census-scope",
-        "numbers-sanctuary-carrying-and-access"
+        "numbers-sanctuary-carrying-and-access",
+        "silver-from-603550-numbered-before-the-numbering-of-the-second-month"
       ],
       "annotatedVerses": [
+        1,
         2,
         3,
         21,
@@ -3089,7 +3142,8 @@
         51
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -12446,9 +12500,15 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 43,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15665,9 +15725,11 @@
       "bookId": 57,
       "chapter": 11,
       "annotationIds": [
-        "coverage-nt-faith-works"
+        "coverage-nt-faith-works",
+        "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king"
       ],
       "annotatedVerses": [
+        27,
         31
       ],
       "modes": [
