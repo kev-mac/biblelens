@@ -1,0 +1,772 @@
+{
+  "batch": "psalms-73-89-q",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "they-have-cast-fire-into-thy-sanctuary-which-destruction-do-psalms-74-and-79-lament",
+      "batch": "psalms-73-89-q",
+      "english": [
+        {
+          "ref": "Psalms 74:7",
+          "quote": "They have cast fire into thy sanctuary, they have defiled by casting down the dwelling place of thy name to the ground.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 74:9",
+          "quote": "We see not our signs: there is no more any prophet: neither is there among us any that knoweth how long.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 79:1",
+          "quote": "the heathen are come into thine inheritance; thy holy temple have they defiled; they have laid Jerusalem on heaps",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 79:2",
+          "quote": "The dead bodies of thy servants have they given to be meat unto the fowls of the heaven",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 25:9",
+          "quote": "And he burnt the house of the Lord",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "שִׁלְח֣וּ בָ֭אֵשׁ מִקְדָּשֶׁ֑ךָ לָ֝אָ֗רֶץ",
+          "stated": {
+            "chapter": 74,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/74/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 74,
+            "verse": "7"
+          }
+        },
+        {
+          "quote": "בָּ֤אוּ גֹויִ֨ם ׀ בְּֽנַחֲלָתֶ֗ךָ טִ֭מְּאוּ",
+          "stated": {
+            "chapter": 79,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/79/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 79,
+            "verse": "1"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 74:7",
+          "quote": "They have cast fire into thy sanctuary",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 79:1",
+          "quote": "the heathen are come into thine inheritance",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They have cast fire into thy sanctuary",
+          "matches": [
+            "Psalms 74:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "They have cast fire into thy sanctuary, they have defiled by casting down the dwelling place of thy name to the ground.",
+          "matches": [
+            "Psalms 74:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "We see not our signs: there is no more any prophet: neither is there among us any that knoweth how long.",
+          "matches": [
+            "Psalms 74:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "the heathen are come into thine inheritance; thy holy temple have they defiled; they have laid Jerusalem on heaps",
+          "matches": [
+            "Psalms 79:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "The dead bodies of thy servants have they given to be meat unto the fowls of the heaven",
+          "matches": [
+            "Psalms 79:2"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "And he burnt the house of the Lord",
+          "matches": [
+            "2 Kings 25:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "there is no more any prophet",
+          "matches": [
+            "Psalms 74:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "cast fire into thy sanctuary",
+          "matches": [
+            "Psalms 74:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "additionalLanguage": []
+    },
+    {
+      "id": "i-have-said-ye-are-gods-who-are-the-gods-among-whom-god-judges-in-psalm-82",
+      "batch": "psalms-73-89-q",
+      "english": [
+        {
+          "ref": "Psalms 82:1",
+          "quote": "God standeth in the congregation of the mighty; he judgeth among the gods.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 82:2",
+          "quote": "How long will ye judge unjustly, and accept the persons of the wicked? Selah.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 82:6",
+          "quote": "I have said, Ye are gods; and all of you are children of the most High.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 82:7",
+          "quote": "But ye shall die like men, and fall like one of the princes.",
+          "exact": true
+        },
+        {
+          "ref": "John 10:34",
+          "quote": "Is it not written in your law, I said, Ye are gods?",
+          "exact": true
+        },
+        {
+          "ref": "John 10:35",
+          "quote": "If he called them gods, unto whom the word of God came, and the scripture cannot be broken",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּקֶ֖רֶב אֱלֹהִ֣ים יִשְׁפֹּֽט",
+          "stated": {
+            "chapter": 82,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/82/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 82,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "אֱלֹהִ֣ים אַתֶּ֑ם",
+          "stated": {
+            "chapter": 82,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/82/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 82,
+            "verse": "6"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 82:1",
+          "quote": "he judgeth among the gods",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 82:6",
+          "quote": "Ye are gods",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "He judgeth among the gods",
+          "matches": [
+            "Psalms 82:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "in the congregation of the mighty",
+          "matches": [
+            "Psalms 82:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "among the gods",
+          "matches": [
+            "Psalms 82:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "Ye are gods",
+          "matches": [
+            "Psalms 82:6",
+            "John 10:34"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "ye shall die like men",
+          "matches": [
+            "Psalms 82:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "the word of God came",
+          "matches": [
+            "John 10:35"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "God standeth in the congregation of the mighty; he judgeth among the gods.",
+          "matches": [
+            "Psalms 82:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "How long will ye judge unjustly, and accept the persons of the wicked? Selah.",
+          "matches": [
+            "Psalms 82:2"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "I have said, Ye are gods; and all of you are children of the most High.",
+          "matches": [
+            "Psalms 82:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "But ye shall die like men, and fall like one of the princes.",
+          "matches": [
+            "Psalms 82:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Is it not written in your law, I said, Ye are gods?",
+          "matches": [
+            "John 10:34"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "If he called them gods, unto whom the word of God came, and the scripture cannot be broken",
+          "matches": [
+            "John 10:35"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "gods",
+          "matches": [
+            "Psalms 82:1",
+            "Psalms 82:6",
+            "John 10:34",
+            "John 10:35"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "gods",
+          "matches": [
+            "Psalms 82:1",
+            "Psalms 82:6",
+            "John 10:34",
+            "John 10:35"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "children of the most High",
+          "matches": [
+            "Psalms 82:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "like men",
+          "matches": [
+            "Psalms 82:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "the congregation of the mighty",
+          "matches": [
+            "Psalms 82:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "the word of God came",
+          "matches": [
+            "John 10:35"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "gods",
+          "matches": [
+            "Psalms 82:1",
+            "Psalms 82:6",
+            "John 10:34",
+            "John 10:35"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "the gods",
+          "matches": [
+            "Psalms 82:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "gods",
+          "matches": [
+            "Psalms 82:1",
+            "Psalms 82:6",
+            "John 10:34",
+            "John 10:35"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "additionalLanguage": []
+    },
+    {
+      "id": "thou-hast-been-wroth-with-thine-anointed-whose-fall-does-psalm-89-lament",
+      "batch": "psalms-73-89-q",
+      "english": [
+        {
+          "ref": "Psalms 89:3",
+          "quote": "I have made a covenant with my chosen, I have sworn unto David my servant,",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 89:4",
+          "quote": "Thy seed will I establish for ever, and build up thy throne to all generations. Selah.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 89:38",
+          "quote": "But thou hast cast off and abhorred, thou hast been wroth with thine anointed.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 89:39",
+          "quote": "Thou hast made void the covenant of thy servant: thou hast profaned his crown by casting it to the ground.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 89:40",
+          "quote": "Thou hast broken down all his hedges; thou hast brought his strong holds to ruin.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 89:51",
+          "quote": "Wherewith thine enemies have reproached, O Lord; wherewith they have reproached the footsteps of thine anointed.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְאַתָּ֣ה זָ֭נַחְתָּ וַתִּמְאָ֑ס הִ֝תְעַבַּ֗רְתָּ עִם־מְשִׁיחֶֽךָ",
+          "stated": {
+            "chapter": 89,
+            "verse": 39
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/89/",
+              "verse": 39
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 89,
+            "verse": "39"
+          }
+        },
+        {
+          "quote": "מְשִׁיחֶֽךָ",
+          "stated": {
+            "chapter": 89,
+            "verse": 52
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/89/",
+              "verse": 52
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 89,
+            "verse": "52"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 89:38",
+          "quote": "thou hast been wroth with thine anointed",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 89:39",
+          "quote": "Thou hast made void the covenant of thy servant",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thou hast been wroth with thine anointed",
+          "matches": [
+            "Psalms 89:38"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "David my servant",
+          "matches": [
+            "Psalms 89:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "thine anointed",
+          "matches": [
+            "Psalms 89:38",
+            "Psalms 89:51"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "the covenant of thy servant",
+          "matches": [
+            "Psalms 89:39"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "I have made a covenant with my chosen, I have sworn unto David my servant,",
+          "matches": [
+            "Psalms 89:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Thy seed will I establish for ever, and build up thy throne to all generations. Selah.",
+          "matches": [
+            "Psalms 89:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "But thou hast cast off and abhorred, thou hast been wroth with thine anointed.",
+          "matches": [
+            "Psalms 89:38"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Thou hast made void the covenant of thy servant: thou hast profaned his crown by casting it to the ground.",
+          "matches": [
+            "Psalms 89:39"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Thou hast broken down all his hedges; thou hast brought his strong holds to ruin.",
+          "matches": [
+            "Psalms 89:40"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Wherewith thine enemies have reproached, O Lord; wherewith they have reproached the footsteps of thine anointed.",
+          "matches": [
+            "Psalms 89:51"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "made void",
+          "matches": [
+            "Psalms 89:39"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "thine anointed",
+          "matches": [
+            "Psalms 89:38",
+            "Psalms 89:51"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "additionalLanguage": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/19/73/",
+    "https://ebible.org/grcbrent/PSA072.htm",
+    "https://ebible.org/eng-Brenton/PSA072.htm",
+    "https://bolls.life/get-text/WLC/19/74/",
+    "https://ebible.org/grcbrent/PSA073.htm",
+    "https://ebible.org/eng-Brenton/PSA073.htm",
+    "https://bolls.life/get-text/WLC/19/76/",
+    "https://ebible.org/grcbrent/PSA075.htm",
+    "https://ebible.org/eng-Brenton/PSA075.htm",
+    "https://bolls.life/get-text/WLC/19/77/",
+    "https://ebible.org/grcbrent/PSA076.htm",
+    "https://ebible.org/eng-Brenton/PSA076.htm",
+    "https://bolls.life/get-text/WLC/19/78/",
+    "https://ebible.org/grcbrent/PSA077.htm",
+    "https://ebible.org/eng-Brenton/PSA077.htm",
+    "https://bolls.life/get-text/WLC/19/79/",
+    "https://ebible.org/grcbrent/PSA078.htm",
+    "https://ebible.org/eng-Brenton/PSA078.htm",
+    "https://bolls.life/get-text/WLC/19/80/",
+    "https://ebible.org/grcbrent/PSA079.htm",
+    "https://ebible.org/eng-Brenton/PSA079.htm",
+    "https://bolls.life/get-text/WLC/19/84/",
+    "https://ebible.org/grcbrent/PSA083.htm",
+    "https://ebible.org/eng-Brenton/PSA083.htm",
+    "https://bolls.life/get-text/WLC/19/87/",
+    "https://ebible.org/grcbrent/PSA086.htm",
+    "https://ebible.org/eng-Brenton/PSA086.htm",
+    "https://bolls.life/get-text/WLC/19/88/",
+    "https://ebible.org/grcbrent/PSA087.htm",
+    "https://ebible.org/eng-Brenton/PSA087.htm",
+    "https://bolls.life/get-text/WLC/19/89/",
+    "https://ebible.org/grcbrent/PSA088.htm",
+    "https://ebible.org/eng-Brenton/PSA088.htm",
+    "https://bolls.life/get-text/WLC/19/82/"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 614,
+  "studiesChecked": 6,
+  "brentonChecks": [
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA072.htm",
+      "printedLabel": "21",
+      "quote": "For my heart has rejoiced, and my reins have been gladdened",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA073.htm",
+      "printedLabel": "3",
+      "quote": "Lift up thine hands against their pride continually",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA073.htm",
+      "printedLabel": "8",
+      "quote": "Come, let us abolish the feasts of the Lord from the earth",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA073.htm",
+      "printedLabel": "9",
+      "quote": "and God will not know us any more",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA073.htm",
+      "printedLabel": "14",
+      "quote": "to the Ethiopian nations",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA075.htm",
+      "printedLabel": "11",
+      "quote": "For the inward thought of man shall give thanks to thee: and the memorial of his inward thought shall keep a feast to thee",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA076.htm",
+      "printedLabel": "4",
+      "quote": "I remembered God, and rejoiced",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA076.htm",
+      "printedLabel": "5",
+      "quote": "All mine enemies set a watch against me: I was troubled, and spoke not",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA077.htm",
+      "printedLabel": "69",
+      "quote": "And he built his sanctuary as the place of unicorns",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA078.htm",
+      "printedLabel": "1",
+      "quote": "they have made Jerusalem a storehouse of fruits",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+      "printedLabel": "16",
+      "quote": "and look on the son of man whom thou didst strengthen for thyself",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA083.htm",
+      "printedLabel": "7",
+      "quote": "the valley of weeping, to the place which he has appointed, for there the law-giver will grant blessings",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA086.htm",
+      "printedLabel": "7",
+      "quote": "The dwelling of all within thee is as the dwelling of those that rejoice",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA087.htm",
+      "printedLabel": "11",
+      "quote": "or shall physicians raise them up, that they shall praise thee",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA088.htm",
+      "printedLabel": "40",
+      "quote": "Thou hast overthrown the covenant of thy servant; thou hast profaned his sanctuary, casting it to the ground",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA088.htm",
+      "printedLabel": "52",
+      "quote": "wherewith they have reviled the recompence of thine anointed",
+      "exact": true
+    }
+  ],
+  "searches": {
+    "cast fire into thy sanctuary": [
+      "Psalms 74:7"
+    ]
+  }
+}

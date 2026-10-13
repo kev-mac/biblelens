@@ -52385,6 +52385,1046 @@ const EVIDENCE=[
         "quote": "Let them be blotted out of the book of the living, and not be written with the righteous"
       }
     ]
+  },
+  {
+    "id": "my-heart-was-grieved-or-my-heart-rejoiced-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 73:21",
+    "appliesTo": [
+      "Psalms 73:21"
+    ],
+    "title": "“My heart was grieved” — the Greek has “my heart rejoiced”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 73:21 has the speaker’s heart “grieved” and his reins “pricked”. In Brenton’s Greek the verb of the first clause is the one Brenton’s own English prints “has rejoiced”.",
+    "text": "KJV Psalms 73:21: “Thus my heart was grieved, and I was pricked in my reins.” Hebrew (WLC) 73:21: כִּ֭י יִתְחַמֵּ֣ץ לְבָבִ֑י וְ֝כִלְיֹותַ֗י אֶשְׁתֹּונָֽן. Brenton’s Greek 72:21: Ὅτι ηὐφράνθη ἡ καρδία μου, καὶ οἱ νεφροί μου ἠλλοιώθησαν. Brenton’s own English (https://ebible.org/eng-Brenton/PSA072.htm) prints: “For my heart has rejoiced, and my reins have been gladdened”. Fetched from https://bolls.life/get-text/WLC/19/73/ and https://ebible.org/grcbrent/PSA072.htm.",
+    "reasoning": "Where the KJV has a heart that “was grieved”, the Greek verb of the clause is rendered by Brenton’s English as a heart that “has rejoiced”. The printed first clauses therefore point in opposite directions, and the second clause of each follows its first.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the Hebrew verb printed at the head of the clause means or why the Greek reads as it does. The next verse (KJV 73:22, “So foolish was I, and ignorant”) is not compared here. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 72 (KJV Psalm 73); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 73: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA073.htm"
+      },
+      {
+        "label": "Psalms 73: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/73/"
+      },
+      {
+        "label": "Psalms 72 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA072.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 73:21",
+        "book": 18,
+        "chapter": 73,
+        "verse": 21
+      },
+      {
+        "label": "Psalms 73:22",
+        "book": 18,
+        "chapter": 73,
+        "verse": 22
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 73:21",
+        "quote": "Thus my heart was grieved, and I was pricked in my reins"
+      }
+    ]
+  },
+  {
+    "id": "lift-up-thy-feet-or-lift-up-thine-hands-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 74:3",
+    "appliesTo": [
+      "Psalms 74:3"
+    ],
+    "title": "“Lift up thy feet unto the perpetual desolations” — the Greek has “lift up thy hands against their pride”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 74:3 asks God to lift up his feet “unto the perpetual desolations”. Brenton’s Greek has hands, and the object of the lifting is “their pride”.",
+    "text": "KJV Psalms 74:3: “Lift up thy feet unto the perpetual desolations; even all that the enemy hath done wickedly in the sanctuary.” Hebrew (WLC) 74:3: הָרִ֣ימָה פְ֭עָמֶיךָ לְמַשֻּׁאֹ֣ות נֶ֑צַח. Brenton’s Greek 73:3: Ἔπαρον τὰς χεῖράς σου ἐπὶ τὰς ὑπερηφανίας αὐτῶν εἰς τέλος. Brenton’s own English (https://ebible.org/eng-Brenton/PSA073.htm) prints: “Lift up thine hands against their pride continually”. Fetched from https://bolls.life/get-text/WLC/19/74/ and https://ebible.org/grcbrent/PSA073.htm.",
+    "reasoning": "Two nouns differ in the first clause. The KJV has “feet” and “perpetual desolations”; the Greek has “hands” (χεῖράς) and “their pride” (ὑπερηφανίας αὐτῶν). The KJV’s “feet” stands in the place of the second Hebrew word of the quotation; the record does not gloss that word.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record states the printed nouns and does not say what the Hebrew word printed third in the quotation means in this verse. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 73 (KJV Psalm 74); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 74: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA074.htm"
+      },
+      {
+        "label": "Psalms 74: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/74/"
+      },
+      {
+        "label": "Psalms 73 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA073.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 74:3",
+        "book": 18,
+        "chapter": 74,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 74:3",
+        "quote": "Lift up thy feet unto the perpetual desolations"
+      }
+    ]
+  },
+  {
+    "id": "burned-up-all-the-synagogues-of-god-or-abolish-the-feasts-of-the-lord-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 74:8",
+    "appliesTo": [
+      "Psalms 74:8"
+    ],
+    "title": "“They have burned up all the synagogues of God” — the Greek has “let us abolish the feasts of the Lord”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 74:8 says of the enemy that “they have burned up all the synagogues of God in the land”. Brenton’s Greek has the enemy say “Come, let us abolish the feasts of the Lord from the earth”.",
+    "text": "KJV Psalms 74:8: “They said in their hearts, Let us destroy them together: they have burned up all the synagogues of God in the land.” Hebrew (WLC) 74:8: שָׂרְפ֖וּ כָל־מֹועֲדֵי־אֵ֣ל בָּאָֽרֶץ. Brenton’s Greek 73:8: δεῦτε, καταπαύσωμεν τὰς ἑορτὰς Κυρίου ἀπὸ τῆς γῆς. Brenton’s own English (https://ebible.org/eng-Brenton/PSA073.htm) prints: “Come, let us abolish the feasts of the Lord from the earth”. Fetched from https://bolls.life/get-text/WLC/19/74/ and https://ebible.org/grcbrent/PSA073.htm.",
+    "reasoning": "The KJV clause reports a burning and names a kind of place; the Greek clause is a proposal to make something cease and names a kind of occasion (ἑορτάς). The Greek of the verse has no word for burning in this clause, where the Hebrew quoted has its verb at the head.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the Hebrew word before “of God” means, and does not say that the places and the feasts could not both be meant. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 73 (KJV Psalm 74); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 74: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA074.htm"
+      },
+      {
+        "label": "Psalms 74: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/74/"
+      },
+      {
+        "label": "Psalms 73 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA073.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 74:8",
+        "book": 18,
+        "chapter": 74,
+        "verse": 8
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 74:8",
+        "quote": "they have burned up all the synagogues of God in the land"
+      }
+    ]
+  },
+  {
+    "id": "neither-is-there-among-us-any-that-knoweth-how-long-or-will-not-know-us-any-more-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 74:9",
+    "appliesTo": [
+      "Psalms 74:9"
+    ],
+    "title": "“Any that knoweth how long” — the Greek has “will not know us any more”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 74:9 ends with a people who have no one among them who knows “how long”. Brenton’s Greek of the last clause has a verb of knowing with “us” as its object and “any more”, and no phrase about how long.",
+    "text": "KJV Psalms 74:9: “We see not our signs: there is no more any prophet: neither is there among us any that knoweth how long.” Hebrew (WLC) 74:9: וְלֹֽא־אִ֝תָּ֗נוּ יֹדֵ֥עַ עַד־מָֽה. Brenton’s Greek 73:9: καὶ ἡμᾶς οὐ γνώσεται ἔτι. Brenton’s own English (https://ebible.org/eng-Brenton/PSA073.htm) prints: “and God will not know us any more”. Fetched from https://bolls.life/get-text/WLC/19/74/ and https://ebible.org/grcbrent/PSA073.htm.",
+    "reasoning": "In the KJV a person among the people is said not to know how long. In the Greek the people (“us”) are the object of a verb of knowing, and the clause says they will not be known “any more” (ἔτι). The Greek clause printed here has no noun for the one who knows; Brenton’s English supplies “God”.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say who the subject of the Greek verb is; the English page supplies “God” and the Greek clause itself prints no noun. It does not say what the Hebrew verb at “knoweth” or the word “how long” means beyond the KJV’s own wording. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 73 (KJV Psalm 74); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 74: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA074.htm"
+      },
+      {
+        "label": "Psalms 74: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/74/"
+      },
+      {
+        "label": "Psalms 73 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA073.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 74:9",
+        "book": 18,
+        "chapter": 74,
+        "verse": 9
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 74:9",
+        "quote": "neither is there among us any that knoweth how long"
+      }
+    ]
+  },
+  {
+    "id": "meat-to-the-people-inhabiting-the-wilderness-or-meat-to-the-ethiopian-nations-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 74:14",
+    "appliesTo": [
+      "Psalms 74:14"
+    ],
+    "title": "“To the people inhabiting the wilderness” — the Greek has “to the Ethiopian nations”",
+    "status": "Context",
+    "summary": "In the KJV of Psalm 74:14 the creature is given “to be meat to the people inhabiting the wilderness”. Brenton’s Greek has the recipients as “Ethiopian” peoples.",
+    "text": "KJV Psalms 74:14: “Thou brakest the heads of leviathan in pieces, and gavest him to be meat to the people inhabiting the wilderness.” Hebrew (WLC) 74:14: תִּתְּנֶ֥נּוּ מַ֝אֲכָ֗ל לְעָ֣ם לְצִיִּֽים. Brenton’s Greek 73:14: ἔδωκας αὐτὸν βρῶμα λαοῖς τοῖς Αἰθίοψι. Brenton’s own English (https://ebible.org/eng-Brenton/PSA073.htm) prints: “to the Ethiopian nations”. Fetched from https://bolls.life/get-text/WLC/19/74/ and https://ebible.org/grcbrent/PSA073.htm.",
+    "reasoning": "The KJV names those who receive the creature by where they live (“inhabiting the wilderness”); the Greek names them by a people (τοῖς Αἰθίοψι). The two phrases are different descriptions of the recipients.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record concerns the last words of the verse only. It does not say what creature “leviathan” is, which is the subject of a separate published question, and it does not say what the Hebrew word printed after “people” means. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 73 (KJV Psalm 74); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 74: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA074.htm"
+      },
+      {
+        "label": "Psalms 74: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/74/"
+      },
+      {
+        "label": "Psalms 73 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA073.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 74:14",
+        "book": 18,
+        "chapter": 74,
+        "verse": 14
+      },
+      {
+        "label": "Psalms 74:13",
+        "book": 18,
+        "chapter": 74,
+        "verse": 13
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 74:14",
+        "quote": "gavest him to be meat to the people inhabiting the wilderness"
+      }
+    ]
+  },
+  {
+    "id": "the-wrath-of-man-shall-praise-thee-or-the-inward-thought-of-man-shall-give-thanks-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 76:10",
+    "appliesTo": [
+      "Psalms 76:10"
+    ],
+    "title": "“The wrath of man shall praise thee” — the Greek has “the inward thought of man shall give thanks to thee”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 76:10 says that “the wrath of man shall praise” God and that the “remainder of wrath” he will restrain. In Brenton’s Greek both clauses have “inward thought” and the second says it “shall keep a feast”.",
+    "text": "KJV Psalms 76:10: “Surely the wrath of man shall praise thee: the remainder of wrath shalt thou restrain.” Hebrew (WLC) 76:11: כִּֽי־חֲמַ֣ת אָדָ֣ם תֹּודֶ֑ךָּ שְׁאֵרִ֖ית חֵמֹ֣ת תַּחְגֹּֽר. Brenton’s Greek 75:11: Ὅτι ἐνθύμιον ἀνθρώπου ἐξομολογήσεταί σοι, καὶ ἐγκατάλειμμα ἐνθυμίου ἑορτάσει σοι. Brenton’s own English (https://ebible.org/eng-Brenton/PSA075.htm) prints: “For the inward thought of man shall give thanks to thee: and the memorial of his inward thought shall keep a feast to thee”. Fetched from https://bolls.life/get-text/WLC/19/76/ and https://ebible.org/grcbrent/PSA075.htm.",
+    "reasoning": "The Hebrew quoted uses related forms rendered “wrath” in both KJV clauses; the Greek uses different inflected forms of the noun Brenton renders “inward thought”. The KJV’s second clause addresses God as restraining the remainder, whereas Brenton’s Greek and English describe the remainder or memorial as keeping a feast to God.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the Hebrew noun means; it states what the two renderings print. It does not say that “wrath” and “inward thought” cannot be the same thing in the speaker’s mind. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 75 (KJV Psalm 76); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 76: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA076.htm"
+      },
+      {
+        "label": "Psalms 76: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/76/"
+      },
+      {
+        "label": "Psalms 75 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA075.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 76:10",
+        "book": 18,
+        "chapter": 76,
+        "verse": 10
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 76:10",
+        "quote": "Surely the wrath of man shall praise thee"
+      }
+    ]
+  },
+  {
+    "id": "i-remembered-god-and-was-troubled-or-and-rejoiced-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 77:3",
+    "appliesTo": [
+      "Psalms 77:3"
+    ],
+    "title": "“I remembered God, and was troubled” — the Greek has “and rejoiced”",
+    "status": "Context",
+    "summary": "In the KJV of Psalm 77:3 the speaker remembers God “and was troubled”. In Brenton’s Greek the verb after “I remembered God” is rendered by Brenton’s English “rejoiced”.",
+    "text": "KJV Psalms 77:3: “I remembered God, and was troubled: I complained, and my spirit was overwhelmed. Selah.” Hebrew (WLC) 77:4: אֶזְכְּרָ֣ה אֱלֹהִ֣ים וְאֶֽהֱמָיָ֑ה. Brenton’s Greek 76:4: Ἐμνήσθην τοῦ Θεοῦ, καὶ εὐφράνθην. Brenton’s own English (https://ebible.org/eng-Brenton/PSA076.htm) prints: “I remembered God, and rejoiced”. Fetched from https://bolls.life/get-text/WLC/19/77/ and https://ebible.org/grcbrent/PSA076.htm.",
+    "reasoning": "The two printed clauses give opposite results of remembering God: trouble in the KJV and gladness in the Greek as Brenton’s English renders it. The complaint and the failing of the spirit are named in both texts, in different words.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the Hebrew verb printed after “God” means, and does not say how the two texts are to be reconciled. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 76 (KJV Psalm 77); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 77: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA077.htm"
+      },
+      {
+        "label": "Psalms 77: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/77/"
+      },
+      {
+        "label": "Psalms 76 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA076.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 77:3",
+        "book": 18,
+        "chapter": 77,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 77:3",
+        "quote": "I remembered God, and was troubled"
+      }
+    ]
+  },
+  {
+    "id": "thou-holdest-mine-eyes-waking-or-all-mine-enemies-set-a-watch-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 77:4",
+    "appliesTo": [
+      "Psalms 77:4"
+    ],
+    "title": "“Thou holdest mine eyes waking” — the Greek has “all mine enemies set a watch against me”",
+    "status": "Context",
+    "summary": "In the KJV of Psalm 77:4 God is addressed as the one who “holdest mine eyes waking”. In Brenton’s Greek the subject of the first clause is “all mine enemies”.",
+    "text": "KJV Psalms 77:4: “Thou holdest mine eyes waking: I am so troubled that I cannot speak.” Hebrew (WLC) 77:5: אָ֭חַזְתָּ שְׁמֻרֹ֣ות עֵינָ֑י נִ֝פְעַ֗מְתִּי וְלֹ֣א אֲדַבֵּֽר. Brenton’s Greek 76:5: Προκατελάβοντο φυλακὰς πάντες οἱ ἐχθροί μου, ἐταράχθην καὶ οὐκ ἐλάλησα. Brenton’s own English (https://ebible.org/eng-Brenton/PSA076.htm) prints: “All mine enemies set a watch against me: I was troubled, and spoke not”. Fetched from https://bolls.life/get-text/WLC/19/77/ and https://ebible.org/grcbrent/PSA076.htm.",
+    "reasoning": "The KJV clause has the one addressed (“Thou”) as the actor and the speaker’s eyes as the object. The Greek clause has “all mine enemies” as the actor and a watch (φυλακάς) as the object. The second clause, the speaker’s trouble and silence, is alike.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record states the printed subjects and objects. It does not say what the Hebrew noun printed second in the quotation means, and does not say that the speaker could not be kept awake by both. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 76 (KJV Psalm 77); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 77: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA077.htm"
+      },
+      {
+        "label": "Psalms 77: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/77/"
+      },
+      {
+        "label": "Psalms 76 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA076.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 77:4",
+        "book": 18,
+        "chapter": 77,
+        "verse": 4
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 77:4",
+        "quote": "Thou holdest mine eyes waking"
+      }
+    ]
+  },
+  {
+    "id": "he-built-his-sanctuary-like-high-palaces-or-as-of-unicorns-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 78:69",
+    "appliesTo": [
+      "Psalms 78:69"
+    ],
+    "title": "“He built his sanctuary like high palaces” — the Greek has “as of unicorns”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 78:69 compares the sanctuary to “high palaces”. Brenton’s Greek has the sanctuary built “as of” a word that Brenton’s English prints “unicorns”.",
+    "text": "KJV Psalms 78:69: “And he built his sanctuary like high palaces, like the earth which he hath established for ever.” Hebrew (WLC) 78:69: וַיִּ֣בֶן כְּמֹו־רָ֭מִים מִקְדָּשֹׁ֑ו. Brenton’s Greek 77:69: Καὶ ᾠκοδόμησεν ὡς μονοκερώτων τὸ ἁγίασμα αὐτοῦ. Brenton’s own English (https://ebible.org/eng-Brenton/PSA077.htm) prints: “And he built his sanctuary as the place of unicorns”. Fetched from https://bolls.life/get-text/WLC/19/78/ and https://ebible.org/grcbrent/PSA077.htm.",
+    "reasoning": "The word after “like” is rendered in the KJV by what is high (“palaces”) and in the Greek by μονοκερώτων, which Brenton’s English prints as “unicorns”. The sanctuary is compared to different things.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the Hebrew word printed after “like” means or what creature the Greek word names. Brenton’s page prints “Σιὼν, ὃ ἠγάπησε” at the head of this verse, which the KJV has in 78:68; that is not part of the comparison. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 77 (KJV Psalm 78); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 78: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA078.htm"
+      },
+      {
+        "label": "Psalms 78: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/78/"
+      },
+      {
+        "label": "Psalms 77 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA077.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 78:69",
+        "book": 18,
+        "chapter": 78,
+        "verse": 69
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 78:69",
+        "quote": "he built his sanctuary like high palaces"
+      }
+    ]
+  },
+  {
+    "id": "laid-jerusalem-on-heaps-or-jerusalem-for-a-storehouse-of-fruits-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 79:1",
+    "appliesTo": [
+      "Psalms 79:1"
+    ],
+    "title": "“They have laid Jerusalem on heaps” — the Greek has “they have made Jerusalem a storehouse of fruits”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 79:1 has the heathen lay Jerusalem “on heaps”. Brenton’s Greek has them make it εἰς ὀπωροφυλάκιον, which Brenton’s English prints “a storehouse of fruits”.",
+    "text": "KJV Psalms 79:1: “O god, the heathen are come into thine inheritance; thy holy temple have they defiled; they have laid Jerusalem on heaps.” Hebrew (WLC) 79:1: שָׂ֖מוּ אֶת־יְרוּשָׁלִַ֣ם לְעִיִּֽים. Brenton’s Greek 78:1: ἔθεντο Ἱερουσαλὴμ εἰς ὀπωροφυλάκιον. Brenton’s own English (https://ebible.org/eng-Brenton/PSA078.htm) prints: “they have made Jerusalem a storehouse of fruits”. Fetched from https://bolls.life/get-text/WLC/19/79/ and https://ebible.org/grcbrent/PSA078.htm.",
+    "reasoning": "The final noun of the verse is “heaps” in the KJV and ὀπωροφυλάκιον (“a storehouse of fruits” in Brenton’s English) in the Greek. The verb and the object (“laid … Jerusalem”) are alike in the two texts.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the Hebrew plural noun means beyond the KJV’s “heaps”, and does not say that heaps and a storehouse could not describe the same ruin. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 78 (KJV Psalm 79); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 79: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA079.htm"
+      },
+      {
+        "label": "Psalms 79: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/79/"
+      },
+      {
+        "label": "Psalms 78 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA078.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 79:1",
+        "book": 18,
+        "chapter": 79,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 79:1",
+        "quote": "they have laid Jerusalem on heaps"
+      }
+    ]
+  },
+  {
+    "id": "the-branch-that-thou-madest-strong-or-the-son-of-man-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 80:15",
+    "appliesTo": [
+      "Psalms 80:15"
+    ],
+    "title": "“The branch that thou madest strong for thyself” — the Greek has “the son of man”, as the KJV has at 80:17",
+    "status": "Context",
+    "summary": "The KJV of Psalm 80:15 has “the branch that thou madest strong for thyself”. At 80:17 the KJV has “the son of man whom thou madest strong for thyself”. Brenton’s Greek has “son of man” in both verses.",
+    "text": "KJV Psalms 80:15: “And the vineyard which thy right hand hath planted, and the branch that thou madest strong for thyself.” KJV 80:17: “upon the son of man whom thou madest strong for thyself”. Hebrew (WLC) 80:16: וְעַל־בֵּ֝֗ן אִמַּ֥צְתָּה לָּֽךְ. Hebrew (WLC) 80:18: עַל־בֶּן־אָ֝דָ֗ם אִמַּ֥צְתָּ לָּֽךְ. Brenton’s Greek 79:16: καὶ ἐπὶ υἱὸν ἀνθρώπου ὃν ἐκραταίωσας σεαυτῷ. Brenton’s Greek 79:18: καὶ ἐπὶ υἱὸν ἀνθρώπου, ὃν ἐκραταίωσας σεαυτῷ. Brenton’s own English (https://ebible.org/eng-Brenton/PSA079.htm) prints at 79:16: “and look on the son of man whom thou didst strengthen for thyself”. Fetched from https://bolls.life/get-text/WLC/19/80/ and https://ebible.org/grcbrent/PSA079.htm.",
+    "reasoning": "The Hebrew clauses share a related noun, the verb of making strong and “for thyself”, but the second includes the additional noun rendered “man” in the KJV. The KJV has “the branch” at 80:15 and “the son of man” at 80:17; the Greek has “son of man” (υἱὸν ἀνθρώπου) in both. The Hebrew clauses and verb forms are not identical.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. In the Hebrew of 80:16 the noun is not followed by a second noun, and in 80:18 it is followed by the word the KJV renders “man”; the Greek of 79:16 prints ἀνθρώπου, which the Hebrew of 80:16 does not. The record does not say what the Hebrew noun means by itself and does not say that the KJV’s “branch” falls outside its range. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 79 (KJV Psalm 80); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 80: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA080.htm"
+      },
+      {
+        "label": "Psalms 80: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/80/"
+      },
+      {
+        "label": "Psalms 79 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA079.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 80:15",
+        "book": 18,
+        "chapter": 80,
+        "verse": 15
+      },
+      {
+        "label": "Psalms 80:17",
+        "book": 18,
+        "chapter": 80,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 80:15",
+        "quote": "the branch that thou madest strong for thyself"
+      },
+      {
+        "label": "B",
+        "ref": "Psalms 80:17",
+        "quote": "the son of man whom thou madest strong for thyself"
+      }
+    ]
+  },
+  {
+    "id": "valley-of-baca-make-it-a-well-or-valley-of-weeping-the-lawgiver-will-grant-blessings-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 84:6",
+    "appliesTo": [
+      "Psalms 84:6"
+    ],
+    "title": "“The valley of Baca … the rain also filleth the pools” — the Greek has “the valley of weeping … the lawgiver will grant blessings”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 84:6 has a name, “Baca”, a well and “the rain”. Brenton’s Greek has “the valley of weeping”, a place that he has appointed, and “the lawgiver” who “will grant blessings”.",
+    "text": "KJV Psalms 84:6: “Who passing through the valley of Baca make it a well; the rain also filleth the pools.” Hebrew (WLC) 84:7: עֹבְרֵ֤י ׀ בְּעֵ֣מֶק הַ֭בָּכָא מַעְיָ֣ן יְשִׁית֑וּהוּ גַּם־בְּ֝רָכֹ֗ות יַעְטֶ֥ה מֹורֶֽה. Brenton’s Greek 83:7: εἰς τὴν κοιλάδα τοῦ κλαυθμῶνος, εἰς τὸν τόπον ὃν ἔθετο· καὶ γὰρ εὐλογίας δώσει ὁ νομοθετῶν. Brenton’s own English (https://ebible.org/eng-Brenton/PSA083.htm) prints: “the valley of weeping, to the place which he has appointed, for there the law-giver will grant blessings”. Fetched from https://bolls.life/get-text/WLC/19/84/ and https://ebible.org/grcbrent/PSA083.htm.",
+    "reasoning": "Three printed differences stand together. The place is a name in the KJV and a described valley in the Greek (κλαυθμῶνος). The KJV has the passers-by make it “a well”; Brenton’s Greek and English speak of the place “he” appointed, without explicitly naming that pronoun’s referent in the quoted clause. The KJV has “the rain” fill the pools; the Greek has “the lawgiver” grant blessings.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The last word of the Hebrew verse is printed once, and the record does not say whether it means rain or a teacher. The Hebrew place-name and the Greek “valley of weeping” may refer to the same valley; this is not issued as an H record because no lexical source for the name is supplied. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 83 (KJV Psalm 84); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 84: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA084.htm"
+      },
+      {
+        "label": "Psalms 84: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/84/"
+      },
+      {
+        "label": "Psalms 83 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA083.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 84:6",
+        "book": 18,
+        "chapter": 84,
+        "verse": 6
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 84:6",
+        "quote": "Who passing through the valley of Baca make it a well; the rain also filleth the pools"
+      }
+    ]
+  },
+  {
+    "id": "the-singers-and-the-players-all-my-springs-or-the-dwelling-of-all-is-as-of-those-that-rejoice-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 87:7",
+    "appliesTo": [
+      "Psalms 87:7"
+    ],
+    "title": "“The singers … the players on instruments … all my springs are in thee” — the Greek has “the dwelling of all … is as of those that rejoice”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 87:7 names singers, players on instruments and “springs”. Brenton’s Greek of the verse has one clause: the dwelling of all is “in thee”, as of those who rejoice.",
+    "text": "KJV Psalms 87:7: “As well the singers as the players on instruments shall be there: all my springs are in thee.” Hebrew (WLC) 87:7: וְשָׁרִ֥ים כְּחֹלְלִ֑ים כָּֽל־מַעְיָנַ֥י בָּֽךְ. Brenton’s Greek 86:7: Ὡς εὐφραινομένων πάντων ἡ κατοικία ἐν σοί. Brenton’s own English (https://ebible.org/eng-Brenton/PSA086.htm) prints: “The dwelling of all within thee is as the dwelling of those that rejoice”. Fetched from https://bolls.life/get-text/WLC/19/87/ and https://ebible.org/grcbrent/PSA086.htm.",
+    "reasoning": "The KJV verse has two groups of musicians and a noun for water. The Greek verse prints none of those three nouns; it has a participle of rejoicing (εὐφραινομένων) and the noun κατοικία (“dwelling”, as Brenton’s English prints it).",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the first two Hebrew words of the verse mean beyond the KJV’s “singers” and “players on instruments”, and does not say that rejoicing and singing are not alike. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 86 (KJV Psalm 87); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 87: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA087.htm"
+      },
+      {
+        "label": "Psalms 87: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/87/"
+      },
+      {
+        "label": "Psalms 86 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA086.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 87:7",
+        "book": 18,
+        "chapter": 87,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 87:7",
+        "quote": "As well the singers as the players on instruments shall be there: all my springs are in thee"
+      }
+    ]
+  },
+  {
+    "id": "shall-the-dead-arise-and-praise-thee-or-shall-physicians-raise-them-up-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 88:10",
+    "appliesTo": [
+      "Psalms 88:10"
+    ],
+    "title": "“Shall the dead arise and praise thee?” — the Greek has “shall physicians raise them up, that they shall praise thee?”",
+    "status": "Context",
+    "summary": "In the KJV of Psalm 88:10 the second question is whether “the dead” will arise and praise God. In Brenton’s Greek the subject of the verb is ἰατροί, which Brenton’s English prints “physicians”.",
+    "text": "KJV Psalms 88:10: “Wilt thou shew wonders to the dead? shall the dead arise and praise thee? Selah.” Hebrew (WLC) 88:11: הֲלַמֵּתִ֥ים תַּעֲשֶׂה־פֶּ֑לֶא אִם־רְ֝פָאִ֗ים יָק֤וּמוּ ׀ יֹוד֬וּךָ. Brenton’s Greek 87:11: Μὴ τοῖς νεκροῖς ποιήσεις θαυμάσια, ἢ ἰατροὶ ἀναστήσουσι καὶ ἐξομολογήσονταί σοι. Brenton’s own English (https://ebible.org/eng-Brenton/PSA087.htm) prints: “or shall physicians raise them up, that they shall praise thee”. Fetched from https://bolls.life/get-text/WLC/19/88/ and https://ebible.org/grcbrent/PSA087.htm.",
+    "reasoning": "Both texts have a first question about wonders for the dead. In the second question the KJV has the dead as the ones who arise and praise; the Greek names physicians in the second question; Brenton’s English supplies “them” after “raise” and presents those raised as praising. The Greek quotation itself does not print that object pronoun, so the comparison distinguishes the printed noun from Brenton’s explanatory English syntax.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the Hebrew word at the head of the second question means, and does not say what the Greek word stands for. It compares the printed wording only. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 87 (KJV Psalm 88); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 88: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA088.htm"
+      },
+      {
+        "label": "Psalms 88: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/88/"
+      },
+      {
+        "label": "Psalms 87 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA087.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 88:10",
+        "book": 18,
+        "chapter": 88,
+        "verse": 10
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 88:10",
+        "quote": "shall the dead arise and praise thee"
+      }
+    ]
+  },
+  {
+    "id": "thou-hast-profaned-his-crown-or-thou-hast-profaned-his-sanctuary-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 89:39",
+    "appliesTo": [
+      "Psalms 89:39"
+    ],
+    "title": "“Thou hast profaned his crown” — the Greek has “thou hast profaned his sanctuary”",
+    "status": "Context",
+    "summary": "The KJV of Psalm 89:39 has God profane “his crown” by casting it to the ground. Brenton’s Greek has τὸ ἁγίασμα αὐτοῦ, which Brenton’s English prints “his sanctuary”, and the covenant is “overthrown” rather than “made void”.",
+    "text": "KJV Psalms 89:39: “Thou hast made void the covenant of thy servant: thou hast profaned his crown by casting it to the ground.” Hebrew (WLC) 89:40: נֵ֭אַרְתָּה בְּרִ֣ית עַבְדֶּ֑ךָ חִלַּ֖לְתָּ לָאָ֣רֶץ נִזְרֹֽו. Brenton’s Greek 88:40: ἐβεβήλωσας εἰς τὴν γῆν τὸ ἁγίασμα αὐτοῦ. Brenton’s own English (https://ebible.org/eng-Brenton/PSA088.htm) prints: “Thou hast overthrown the covenant of thy servant; thou hast profaned his sanctuary, casting it to the ground”. Fetched from https://bolls.life/get-text/WLC/19/89/ and https://ebible.org/grcbrent/PSA088.htm.",
+    "reasoning": "The object of the profaning is “his crown” in the KJV and τὸ ἁγίασμα αὐτοῦ (“his sanctuary”, as Brenton’s English has it) in the Greek. The verb and the casting to the ground are alike. The first clause also differs in its verb: “made void” in the KJV and “overthrown” in Brenton’s English.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the last Hebrew noun of the verse means beyond the KJV’s “crown”, and does not say what the covenant verbs mean. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 88 (KJV Psalm 89); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 89: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA089.htm"
+      },
+      {
+        "label": "Psalms 89: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/89/"
+      },
+      {
+        "label": "Psalms 88 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA088.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 89:39",
+        "book": 18,
+        "chapter": 89,
+        "verse": 39
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 89:39",
+        "quote": "thou hast profaned his crown by casting it to the ground"
+      }
+    ]
+  },
+  {
+    "id": "the-footsteps-of-thine-anointed-or-the-recompence-of-thine-anointed-greek",
+    "mode": "contradictions",
+    "ref": "Psalms 89:51",
+    "appliesTo": [
+      "Psalms 89:51"
+    ],
+    "title": "“The footsteps of thine anointed” — the Greek has “the recompence of thine anointed”",
+    "status": "Context",
+    "summary": "In the KJV of Psalm 89:51 the enemies have reproached “the footsteps of thine anointed”. Brenton’s Greek has τὸ ἀντάλλαγμα τοῦ χριστοῦ σου, which Brenton’s English prints “the recompence of thine anointed”.",
+    "text": "KJV Psalms 89:51: “Wherewith thine enemies have reproached, O Lord; wherewith they have reproached the footsteps of thine anointed.” Hebrew (WLC) 89:52: אֲשֶׁ֥ר חֵ֝רְפ֗וּ עִקְּבֹ֥ות מְשִׁיחֶֽךָ. Brenton’s Greek 88:52: οὗ ὠνείδισαν τὸ ἀντάλλαγμα τοῦ χριστοῦ σου. Brenton’s own English (https://ebible.org/eng-Brenton/PSA088.htm) prints: “wherewith they have reviled the recompence of thine anointed”. Fetched from https://bolls.life/get-text/WLC/19/89/ and https://ebible.org/grcbrent/PSA088.htm.",
+    "reasoning": "What is reproached is “the footsteps” in the KJV and τὸ ἀντάλλαγμα in the Greek. The verb of reproach and the possessor, the anointed, are alike.",
+    "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The record does not say what the Hebrew noun printed after the verb means, and does not say that the footsteps and the recompence are different things in the speaker’s mind. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 88 (KJV Psalm 89); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 89: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA089.htm"
+      },
+      {
+        "label": "Psalms 89: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/89/"
+      },
+      {
+        "label": "Psalms 88 (Greek numbering): Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/PSA088.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 89:51",
+        "book": 18,
+        "chapter": 89,
+        "verse": 51
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "G"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 89:51",
+        "quote": "wherewith they have reproached the footsteps of thine anointed"
+      }
+    ]
+  },
+  {
+    "id": "they-have-cast-fire-into-thy-sanctuary-which-destruction-do-psalms-74-and-79-lament",
+    "mode": "questions",
+    "ref": "Psalms 74:7",
+    "appliesTo": [
+      "Psalms 74:7",
+      "Psalms 79:1"
+    ],
+    "title": "“They have cast fire into thy sanctuary” — which destruction of the sanctuary do Psalms 74 and 79 lament, and by whom?",
+    "status": "Context",
+    "summary": "Psalm 74 describes a fire cast into the sanctuary and the dwelling place of God’s name brought to the ground; Psalm 79 says the heathen have come into the inheritance, defiled the temple and laid Jerusalem on heaps. The verses quoted name neither the enemy nor the occasion.",
+    "text": "KJV Psalms 74:7: “They have cast fire into thy sanctuary, they have defiled by casting down the dwelling place of thy name to the ground.” KJV 74:9: “We see not our signs: there is no more any prophet: neither is there among us any that knoweth how long.” KJV Psalms 79:1: “the heathen are come into thine inheritance; thy holy temple have they defiled; they have laid Jerusalem on heaps”. KJV 79:2: “The dead bodies of thy servants have they given to be meat unto the fowls of the heaven”. KJV 2 Kings 25:9: “And he burnt the house of the Lord”. Hebrew (WLC) 74:7: שִׁלְח֣וּ בָ֭אֵשׁ מִקְדָּשֶׁ֑ךָ לָ֝אָ֗רֶץ. Hebrew (WLC) 79:1: בָּ֤אוּ גֹויִ֨ם ׀ בְּֽנַחֲלָתֶ֗ךָ טִ֭מְּאוּ. Fetched from https://bolls.life/get-text/WLC/19/74/ and https://bolls.life/get-text/WLC/19/79/.",
+    "reasoning": "Both psalms speak of a sanctuary or temple profaned by an enemy. The verses quoted say that fire was cast into the sanctuary (74:7) and that heathen came into the inheritance and laid Jerusalem on heaps (79:1), but they do not name the people who did it, the king or the year, or whether the same event is meant in both psalms. The answer bears on how each psalm is read: as the reaction to a particular fall of the city, or as a lament that fits more than one.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Possible readings: that both psalms speak of the burning of the house of the Lord reported in 2 Kings 25:9; that they speak of another capture of Jerusalem or of its sanctuary; and that the language is not tied to one event. Each is an interpretation; the quoted psalm verses do not identify their occasion with the burning reported in 2 Kings or with another particular event. 2 Kings 25:9 is quoted only as one verse that reports a burning of the house of the Lord; this record does not say that either psalm refers to it. Psalm 74:9 (“there is no more any prophet”) is quoted as a statement of the speakers’ own situation and is not used to date the psalm. The titles of the two psalms are not in the packaged KJV and were not used. Check made: Psalms 74:7–9 and 79:1–2 and 2 Kings 25:9 were read in the packaged KJV, and the packaged KJV was searched for the words “cast fire into thy sanctuary” (this verse only). That is a word search, not a reading of the whole Bible. Two G records compare the Greek of 74:8 and 79:1 with the KJV. Brenton’s Greek numbers this psalm 73 (KJV Psalm 74); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 74: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA074.htm"
+      },
+      {
+        "label": "Psalms 79: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA079.htm"
+      },
+      {
+        "label": "2 Kings 25: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI25.htm"
+      },
+      {
+        "label": "Psalms 74: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/74/"
+      },
+      {
+        "label": "Psalms 79: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/79/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 74:7",
+        "book": 18,
+        "chapter": 74,
+        "verse": 7
+      },
+      {
+        "label": "Psalms 74:9",
+        "book": 18,
+        "chapter": 74,
+        "verse": 9
+      },
+      {
+        "label": "Psalms 79:1",
+        "book": 18,
+        "chapter": 79,
+        "verse": 1
+      },
+      {
+        "label": "Psalms 79:2",
+        "book": 18,
+        "chapter": 79,
+        "verse": 2
+      },
+      {
+        "label": "2 Kings 25:9",
+        "book": 11,
+        "chapter": 25,
+        "verse": 9
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 74:7",
+        "quote": "They have cast fire into thy sanctuary"
+      },
+      {
+        "label": "A",
+        "ref": "Psalms 79:1",
+        "quote": "the heathen are come into thine inheritance"
+      }
+    ]
+  },
+  {
+    "id": "i-have-said-ye-are-gods-who-are-the-gods-among-whom-god-judges-in-psalm-82",
+    "mode": "questions",
+    "ref": "Psalms 82:1",
+    "appliesTo": [
+      "Psalms 82:1",
+      "Psalms 82:6"
+    ],
+    "title": "“He judgeth among the gods” — who are the gods in Psalm 82?",
+    "status": "Context",
+    "summary": "Psalm 82 has God stand “in the congregation of the mighty” and judge “among the gods”, and says to them “Ye are gods” and “ye shall die like men”. The psalm does not name them; John 10:35 says of those called gods that “the word of God came” to them.",
+    "text": "KJV Psalms 82:1: “God standeth in the congregation of the mighty; he judgeth among the gods.” KJV 82:2: “How long will ye judge unjustly, and accept the persons of the wicked? Selah.” KJV 82:6: “I have said, Ye are gods; and all of you are children of the most High.” KJV 82:7: “But ye shall die like men, and fall like one of the princes.” KJV John 10:34: “Is it not written in your law, I said, Ye are gods?” KJV John 10:35: “If he called them gods, unto whom the word of God came, and the scripture cannot be broken”. Hebrew (WLC) 82:1: בְּקֶ֖רֶב אֱלֹהִ֣ים יִשְׁפֹּֽט. Hebrew (WLC) 82:6: אֱלֹהִ֣ים אַתֶּ֑ם. Fetched from https://bolls.life/get-text/WLC/19/82/.",
+    "reasoning": "The psalm addresses a group as “gods”, charges them with judging unjustly (82:2) and says they will die like men (82:7). It does not say whether they are human judges or rulers, other beings, or some other group, nor in what sense they are “gods” and also “children of the most High”. The answer decides what the psalm says about God and the powers it describes.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Possible readings: that the gods are human judges or rulers, as the charge of unjust judging and the death “like men” may suggest; that they are heavenly beings, as “the congregation of the mighty” may suggest; and that the word is used of a group in a figure the psalm does not explain. Each is an interpretation; the verses quoted state none of them. John 10:34–35 quotes the words of 82:6 and says of those called gods that “the word of God came” to them; this record does not say whether that settles who the psalm’s “gods” were in its own setting, and the verses quoted there do not name them. The Hebrew quoted prints the same noun at 82:1 (rendered “the gods”) and at 82:6 (rendered “gods”); this record does not say what the noun means in either place. No H record is made from this. Check made: Psalms 82:1–2 and 82:6–7 and John 10:34–35 were read in the packaged KJV; no other book was searched. Brenton’s Greek numbers this psalm 81 (KJV Psalm 82); the verse numbers of the Hebrew and the Greek match the KJV in this psalm. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 82: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA082.htm"
+      },
+      {
+        "label": "John 10: KJV",
+        "url": "https://ebible.org/eng-kjv/JHN10.htm"
+      },
+      {
+        "label": "Psalms 82: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/82/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 82:1",
+        "book": 18,
+        "chapter": 82,
+        "verse": 1
+      },
+      {
+        "label": "Psalms 82:6",
+        "book": 18,
+        "chapter": 82,
+        "verse": 6
+      },
+      {
+        "label": "Psalms 82:7",
+        "book": 18,
+        "chapter": 82,
+        "verse": 7
+      },
+      {
+        "label": "Psalms 82:2",
+        "book": 18,
+        "chapter": 82,
+        "verse": 2
+      },
+      {
+        "label": "John 10:34",
+        "book": 42,
+        "chapter": 10,
+        "verse": 34
+      },
+      {
+        "label": "John 10:35",
+        "book": 42,
+        "chapter": 10,
+        "verse": 35
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 82:1",
+        "quote": "he judgeth among the gods"
+      },
+      {
+        "label": "A",
+        "ref": "Psalms 82:6",
+        "quote": "Ye are gods"
+      }
+    ]
+  },
+  {
+    "id": "thou-hast-been-wroth-with-thine-anointed-whose-fall-does-psalm-89-lament",
+    "mode": "questions",
+    "ref": "Psalms 89:38",
+    "appliesTo": [
+      "Psalms 89:38"
+    ],
+    "title": "“Thou hast been wroth with thine anointed” — whose casting off does Psalm 89 lament?",
+    "status": "Context",
+    "summary": "Psalm 89 recounts the covenant with “David my servant” and a seed established for ever, then says that God has cast off and abhorred “thine anointed” and made void “the covenant of thy servant”. The verses quoted do not say which king or which event is meant.",
+    "text": "KJV Psalms 89:3: “I have made a covenant with my chosen, I have sworn unto David my servant,” KJV 89:4: “Thy seed will I establish for ever, and build up thy throne to all generations. Selah.” KJV 89:38: “But thou hast cast off and abhorred, thou hast been wroth with thine anointed.” KJV 89:39: “Thou hast made void the covenant of thy servant: thou hast profaned his crown by casting it to the ground.” KJV 89:40: “Thou hast broken down all his hedges; thou hast brought his strong holds to ruin.” KJV 89:51: “Wherewith thine enemies have reproached, O Lord; wherewith they have reproached the footsteps of thine anointed.” Hebrew (WLC) 89:39: וְאַתָּ֣ה זָ֭נַחְתָּ וַתִּמְאָ֑ס הִ֝תְעַבַּ֗רְתָּ עִם־מְשִׁיחֶֽךָ. Hebrew (WLC) 89:52: מְשִׁיחֶֽךָ. Fetched from https://bolls.life/get-text/WLC/19/89/.",
+    "reasoning": "The psalm first states a covenant with David and an everlasting seed and throne, and then, in the same psalm, describes a covenant “made void”, a crown profaned and strong holds brought to ruin. The verses quoted do not name the anointed one who is cast off, the enemies, or the time; and they do not say whether the casting off is of one king or of the line.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Possible readings: that the anointed is a king of David’s line in the psalmist’s own time who has suffered defeat; that the verses speak of the line of David as a whole after a fall of the kingdom; and that the psalm speaks in a general way of any such humbling. Each is an interpretation; the verses quoted state none of them. The Hebrew quoted prints the same word for “thine anointed” at 89:39 and 89:52 (KJV 89:38 and 89:51), and the packaged KJV renders it alike; this record does not say whether both verses point to the same person. The title of the psalm is not in the packaged KJV and was not used. Check made: Psalms 89:3–4, 89:38–40 and 89:51 were read in the packaged KJV; no other book was searched, and the rest of the psalm was not compared verse by verse for this record. A G record compares the Greek of 89:39 with the KJV. Brenton’s Greek numbers this psalm 88 (KJV Psalm 89); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Psalms 89: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA089.htm"
+      },
+      {
+        "label": "Psalms 89: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/19/89/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Psalms 89:38",
+        "book": 18,
+        "chapter": 89,
+        "verse": 38
+      },
+      {
+        "label": "Psalms 89:39",
+        "book": 18,
+        "chapter": 89,
+        "verse": 39
+      },
+      {
+        "label": "Psalms 89:40",
+        "book": 18,
+        "chapter": 89,
+        "verse": 40
+      },
+      {
+        "label": "Psalms 89:3",
+        "book": 18,
+        "chapter": 89,
+        "verse": 3
+      },
+      {
+        "label": "Psalms 89:4",
+        "book": 18,
+        "chapter": 89,
+        "verse": 4
+      },
+      {
+        "label": "Psalms 89:51",
+        "book": 18,
+        "chapter": 89,
+        "verse": 51
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Psalms 89:38",
+        "quote": "thou hast been wroth with thine anointed"
+      },
+      {
+        "label": "A",
+        "ref": "Psalms 89:39",
+        "quote": "Thou hast made void the covenant of thy servant"
+      }
+    ]
   }
 ]
 ;

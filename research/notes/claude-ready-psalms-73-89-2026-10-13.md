@@ -1,0 +1,36 @@
+# Claude integration: psalms-73-89
+
+2026-10-13. 16 accepted (12 unchanged, 4 corrected), 0 held.
+
+Claude is the sole researcher. Both matching notes, verse-number sections and Codex points were read first. Psalms 73–89 main/Q is the sole ready book at selection. Existing per-batch and aggregate decisions exclude all older drafts. No independent research or draft edits. No owner ruling inferred from researcher notes.
+
+- **accepted as written** my-heart-was-grieved-or-my-heart-rejoiced-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** lift-up-thy-feet-or-lift-up-thine-hands-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** burned-up-all-the-synagogues-of-god-or-abolish-the-feasts-of-the-lord-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** neither-is-there-among-us-any-that-knoweth-how-long-or-will-not-know-us-any-more-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** meat-to-the-people-inhabiting-the-wilderness-or-meat-to-the-ethiopian-nations-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. Shared references concern distinct edition comparisons or contextual references: Behemoth and leviathan — what creatures does the Lord point Job to?. No duplicate finding.
+- **corrected and accepted** the-wrath-of-man-shall-praise-thee-or-the-inward-thought-of-man-shall-give-thanks-greek: Distinguished inflected noun forms and the actor in the second clause. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** i-remembered-god-and-was-troubled-or-and-rejoiced-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** thou-holdest-mine-eyes-waking-or-all-mine-enemies-set-a-watch-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** he-built-his-sanctuary-like-high-palaces-or-as-of-unicorns-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** laid-jerusalem-on-heaps-or-jerusalem-for-a-storehouse-of-fruits-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **corrected and accepted** the-branch-that-thou-madest-strong-or-the-son-of-man-greek: Removed the claim that the two Hebrew clauses print the same words; retained the additional noun and verb-form distinction. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **corrected and accepted** valley-of-baca-make-it-a-well-or-valley-of-weeping-the-lawgiver-will-grant-blessings-greek: Did not settle the unstated referent of the Greek pronoun as God. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** the-singers-and-the-players-all-my-springs-or-the-dwelling-of-all-is-as-of-those-that-rejoice-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **corrected and accepted** shall-the-dead-arise-and-praise-thee-or-shall-physicians-raise-them-up-greek: Qualified the supplied object and praise referent as Brenton English rendering rather than explicit Greek pronouns. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** thou-hast-profaned-his-crown-or-thou-hast-profaned-his-sanctuary-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+- **accepted as written** the-footsteps-of-thine-anointed-or-the-recompence-of-thine-anointed-greek: Distinct supplied edition comparison or material question with explicit interpretation limits. No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.
+
+## Needs owner
+
+None for this batch. Already-decided holds are not reprocessed. Unissued researcher candidates are not integrated or researched by Codex. The first Q record uses 2 Kings as contextual support for a possible reading, not as a conflicting cross-book finding; the question concerns the occasions of these Psalms.
+
+## Verification
+
+17 extracted labeled KJV excerpts and 166 quoted fragments across all fields verified or classified. All 34 Hebrew/Greek fragments in record texts verified at supplied addresses and printed labels; 20 repeated language fragments in other fields checked. Sixteen Brenton English quotations verified at supplied addresses and printed labels across the run. Whitespace before punctuation on the supplied English page is normalized; exact KJV excerpts and side quotes match packaged text. Zero unresolved source-page errors across 34 source pages.
+
+Greek psalm numbers and title offsets follow the supplied notes; KJV labels remain on refs and sides. Greek 77:69 includes the Zion clause corresponding to KJV 78:68; the repeated scope quotation was checked under printed 77:69. Greek 73:14 carries the last clause compared by the 74:14 record. The supplied exact-phrase search for cast fire into thy sanctuary was reproduced and returns Psalms 74:7 only; this is a word search, not chapter reading or a Bible-wide absence conclusion.
+
+All sides validated. Psalm 80:17 side B retains the distinction between the Hebrew clauses and verb forms; no H is inferred. The leviathan shared reference concerns a recipients comparison, distinct from the published creature-identity question. Companion G and Q records ask different questions. All six ENTRIES studies and 614 existing evidence records reviewed for duplicate subjects; prior evidence preserved exactly. Four selected draft/notes SHA256 hashes unchanged. No verse-roles.json supplied.
+
+Annotation presence is not exhaustive review. Claude notes limit the extent of original-language review. Build, all checks, checkpoint and publication are recorded in the run report. Fixture checks do not establish live generated-answer correctness.
