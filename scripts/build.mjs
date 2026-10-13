@@ -1,8 +1,10 @@
 import zlib from 'node:zlib';
 import {validateChapterNames} from './chapter-names.mjs';
+import {validateWitnesses} from './witness-labels.mjs';
 import {validateSides} from './verse-roles.mjs';
 import fs from 'node:fs';import vm from 'node:vm';import path from 'node:path';
 validateSides(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
+validateWitnesses(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const chapterNames=JSON.parse(fs.readFileSync('data/chapter-names.json','utf8'));
 console.log('Validated chapter names:',validateChapterNames(chapterNames,JSON.parse(fs.readFileSync('data/books.json','utf8'))));
 const evidenceRecords=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));for(const record of evidenceRecords){if(!['history','contradictions','science','questions'].includes(record.mode))throw Error('Unsupported evidence mode: '+record.mode);if(record.mode==='questions'&&!(record.tags||[record.tag]).includes('Q'))throw Error('Questions record requires Q tag: '+record.id);}

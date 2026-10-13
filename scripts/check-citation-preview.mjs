@@ -8,7 +8,9 @@ vm.createContext(ctx);vm.runInContext(fs.readFileSync('src/citations.js','utf8')
 const chip=(verse,end=verse)=>({dataset:{cite:`0/1/${verse}`,citeEnd:String(end),citeLabel:`Genesis 1:${verse}`},attrs:{},setAttribute(k,v){this.attrs[k]=v;},closest:()=>null,contains:()=>false,getBoundingClientRect:()=>({left:100,top:300,bottom:324})});
 const target=b=>({closest:s=>s.includes('data-cite')?b:null});const settle=()=>new Promise(r=>setImmediate(r));
 const b=chip(1);handlers.pointerover({pointerType:'mouse',target:target(b),relatedTarget:null});await settle();assert(!popup.hidden);assert.equal(child('.preview-text').innerHTML,'Full verse one, beyond the quoted excerpt.');assert.equal(child('a').href,'#read/0/1/1');assert.equal(requests,1);
+b.dataset.citeWitness='Septuagint';b.dataset.citeSummary='The exact original summary.';handlers.focusin({target:target(b)});await settle();assert.equal(child('.preview-summary').textContent,'Septuagint: The exact original summary.');assert.equal(child('.preview-summary').hidden,false);
 const range=chip(1,2);handlers.focusin({target:target(range)});await settle();assert(child('.preview-text').innerHTML.includes('Full verse one, beyond the quoted excerpt.'));assert(child('.preview-text').innerHTML.includes('Full verse two.'));assert.equal(requests,1);
+assert.equal(child('.preview-summary').hidden,true);assert.equal(child('.preview-summary').textContent,'');
 let prevented=false;handlers.click({target:target(range),preventDefault(){prevented=true;}});assert(prevented);assert(popup.hidden);assert.deepEqual(loads.at(-1).ref,[0,1,1]);assert.equal(loads.at(-2).view,'explore');
 handlers.pointerover({pointerType:'touch',target:target(b),relatedTarget:null});await settle();assert(popup.hidden);
 handlers.focusin({target:target(b)});await settle();handlers.keydown({key:'Escape',preventDefault(){}});assert(popup.hidden);

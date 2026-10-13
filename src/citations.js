@@ -1,7 +1,7 @@
 'use strict';
 (() => {
  const popup=document.createElement('section');popup.id='verse-preview';popup.className='verse-preview';popup.hidden=true;popup.setAttribute('role','dialog');popup.setAttribute('aria-label','Cited verse preview');
- popup.innerHTML='<div class="preview-heading"><strong></strong><button type="button" class="preview-close" aria-label="Close verse preview">×</button></div><p class="preview-edition"></p><p class="preview-text" aria-live="polite"></p><a class="preview-link">Read chapter →</a>';
+ popup.innerHTML='<div class="preview-heading"><strong></strong><button type="button" class="preview-close" aria-label="Close verse preview">×</button></div><p class="preview-edition"></p><p class="preview-summary" hidden></p><p class="preview-text" aria-live="polite"></p><a class="preview-link">Read chapter →</a>';
  document.body.append(popup);
  const cache=new Map();let anchor=null,hideTimer=0,requestId=0,suppressedBody=null,suppressedUntil=0;
  function close(){clearTimeout(hideTimer);requestId++;popup.hidden=true;anchor?.setAttribute('aria-expanded','false');anchor=null;}
@@ -9,7 +9,7 @@
  async function show(button){clearTimeout(hideTimer);if(anchor!==button)anchor?.setAttribute('aria-expanded','false');anchor=button;button.setAttribute('aria-expanded','true');button.setAttribute('aria-controls',popup.id);
  const dialog=button.closest('dialog[open]');(dialog||document.body).append(popup);popup.hidden=false;
  const label=button.dataset.citeLabel,edition=button.dataset.citeEdition||document.querySelector('#reader-edition').value;const [book,chapter,verse]=button.dataset.cite.split('/').map(Number);const key=`${book}/${chapter}/${edition}`,id=++requestId;
- popup.querySelector('strong').textContent=label;popup.querySelector('.preview-edition').textContent=edition.toUpperCase();popup.querySelector('.preview-text').textContent='Loading verse…';popup.querySelector('a').href=`#read/${book}/${chapter}/${verse}`;position();
+ const summary=popup.querySelector('.preview-summary');summary.hidden=!(button.dataset.citeWitness&&button.dataset.citeSummary);summary.textContent=summary.hidden?'':button.dataset.citeWitness+': '+button.dataset.citeSummary;popup.querySelector('strong').textContent=label;popup.querySelector('.preview-edition').textContent=edition.toUpperCase();popup.querySelector('.preview-text').textContent='Loading verse…';popup.querySelector('a').href=`#read/${book}/${chapter}/${verse}`;position();
  try{let pending=cache.get(key);if(!pending){pending=fetch(`/api/chapter?book=${book}&chapter=${chapter}`).then(r=>{if(!r.ok)throw Error();return r.json()});cache.set(key,pending);pending.catch(()=>cache.delete(key));}const data=await pending;if(id!==requestId)return;const end=Math.max(verse,Number(button.dataset.citeEnd)||verse),verses=data.verses.filter(v=>v.n>=verse&&v.n<=end);popup.querySelector('.preview-text').innerHTML=verses.length?verses.map(v=>`${end>verse?`<b>${v.n}</b> `:''}${v[edition]?scriptureHtml(v,edition,book,chapter):'This verse is absent from the selected edition’s dataset.'}`).join('<br><br>'):'This verse is absent from the selected edition’s dataset.';position();}catch{if(id!==requestId)return;popup.querySelector('.preview-text').textContent='Could not load this verse. Close and try again.';position();}}
  function later(){clearTimeout(hideTimer);hideTimer=setTimeout(close,180);}
  document.addEventListener('pointerover',ev=>{if(ev.pointerType==='touch')return;const b=ev.target.closest('.verse-citation[data-cite]');if(b&&!b.contains(ev.relatedTarget)){show(b);}});

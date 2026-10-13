@@ -4,7 +4,7 @@ import worker from '../dist/server/index.js';
 
 const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 const evidence=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
-for(const record of evidence){if(record.tags!==undefined){assert(Array.isArray(record.tags)&&record.tags.length>0);assert(record.tags.every(tag=>['H','G','V','Q'].includes(tag)));assert.equal(new Set(record.tags).size,record.tags.length);}if(record.tag!==undefined)assert(['H','G','V','Q'].includes(record.tag));}
+for(const record of evidence){if(record.tags!==undefined){assert(Array.isArray(record.tags)&&record.tags.length>0);assert(record.tags.every(tag=>['H','G','T','V','Q'].includes(tag)));assert.equal(new Set(record.tags).size,record.tags.length);}if(record.tag!==undefined)assert(['H','G','T','V','Q'].includes(record.tag));}
 const request=async path=>{const response=await worker.fetch(new Request('https://scripture.test'+path),{},{});assert.equal(response.status,200,path);return response.json();};
 const byName=new Map(books.map(b=>[b.name,b]));
 const refParts=ref=>{const m=/^(.*?) (\d+):(\d+)$/.exec(ref);return {book:byName.get(m[1]).id,chapter:+m[2],verse:+m[3]};};
@@ -25,7 +25,8 @@ for(const b of books){
      assert.equal(published.placementRole,(e.sides?.length?e.sides.some(s=>s.ref===ref):ref===e.ref)?'key':'context');
      assert.equal(published.keyTarget,e.sides?.find(s=>s.label==='A')?.ref||e.ref);
      if(e.sides)assert.deepEqual(published.sides,e.sides);
-     if(e.tags){assert.deepEqual(published.tags,e.tags,`Lost language tags at ${ref}`);assert.deepEqual(published.activeTags,e.tags.filter(t=>!['H','G','V'].includes(t)||!e.appliesTo||e.appliesTo.includes(ref)),`Incorrect active tags at ${ref}`);}
+     if(e.tags){assert.deepEqual(published.tags,e.tags,`Lost language tags at ${ref}`);assert.deepEqual(published.activeTags,e.tags.filter(t=>!['H','G','T','V'].includes(t)||!e.appliesTo||e.appliesTo.includes(ref)),`Incorrect active tags at ${ref}`);}
+     if(e.witness)assert.equal(published.witness,e.witness);
      if(e.languageContext)assert.equal(published.languageContext,e.languageContext,`Lost edition context at ${ref}`);
      annotationTargets++;
     }

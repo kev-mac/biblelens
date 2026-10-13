@@ -1,5 +1,15 @@
 # Claude proposal integration contract
 
+## T — Translation: direct owner ruling, 2026-10-13
+
+This ruling replaces H and G with one independent T (Translation) toggle. V and Q remain unchanged. T means the KJV's English differs in meaning from the original-language text it renders: a plainly different word, name or meaning, or a name the KJV transliterates where the original has ordinary words. Keep the test of a real difference in meaning; a wording-only difference does not qualify. A plainly different word counts without a dictionary citation if the record states what each text prints and does not claim which is original. This supersedes earlier H/G terminology and qualification instructions where they differ; prior interpretation and quotation limits still apply.
+
+Every T record requires `witness`, exactly one of `Hebrew`, `Septuagint`, `Hebrew and Septuagint`, or `Greek New Testament`. A Septuagint-only difference is labelled as such, never presented as a mistranslation of Hebrew. Display the witness as a lead-in label before the record summary everywhere it appears, including reader cards, Chat answers and citations, and compact citation previews. Do not edit any existing summary.
+
+During changeover, accept H, G and T from drafts. Before building each integration, run `node scripts/merge-witness-labels.mjs`. It reads supplied `research/claude-drafts/witness-labels.json` ({id,witness} entries), or the retained `research/witness-labels.json` registry when the draft file is absent. Apply known IDs, retain unmatched entries for later batches in the registry and list them in `research/notes/witness-labels-pending.json`. Reject duplicate IDs and invalid witness values; validate the whole result before writing. Retag every labelled H/G record as T, deduplicating H+G to one T while preserving V/Q and all existing summaries. Re-running is idempotent. An unlabelled legacy H/G draft needs a supplied witness before conversion; do not infer one. Record merge results in integration notes.
+
+This ruling was given directly by the owner in chat, not adopted from researcher notes. The previous Deuteronomy wording-only hold remains held under the real-meaning-difference test.
+
 Claude is the sole researcher. Codex verifies only quoted scripture in data/chapters.json, Hebrew/Greek quotations at supplied addresses, and fair interpretation limits; checks duplicates, integrates, tests and publishes. No independent chapter reading or searches for new findings. Applies to subsequent automation runs too.
 
 Direct owner ruling for the Ruth batch, 2026-10-12: DROP Septuagint additions that state nothing the KJV does not already state elsewhere in the same passage. Hold orpah-returned-to-her-people-greek. This ruling is supplied directly in this chat, not inferred from a researcher note.

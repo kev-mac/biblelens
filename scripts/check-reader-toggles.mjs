@@ -37,12 +37,12 @@ assert.equal(buttons[2].attributes['aria-pressed'],'false');
 assert(context.visible({mode:'history',status:'Context',discrepancy:true}));
 assert(!context.visible({mode:'science',status:'Agrees',discrepancy:true}));
 assert(source.includes('function chapterOptions(){comparisonSelections.clear();'));
-context.cache.set('0:1:kjv:contradictions',{items:[{verse:2,status:'Context',tags:['H','G','V','Q'],title:'Tagged record',summary:'Tagged finding',text:'Limits',sources:[]}]});
+context.cache.set('0:1:kjv:contradictions',{items:[{verse:2,status:'Context',tags:['H','G','V','Q'],witness:'Hebrew and Septuagint',title:'Tagged record',summary:'Tagged finding',text:'Limits',sources:[]}]});
 const tagged=context.render(2);
-assert.equal((tagged.match(/aria-expanded="false"/g)||[]).length,4);
-for(const [tag,tone]of [['H','hebrew'],['G','greek'],['V','violation'],['Q','question']]){assert(tagged.includes(`class="agreement comparison-tab ${tone}"`));assert(tagged.includes(`>${tag}</button>`));const key=`contradictions-0-${tag}`;panels.set(`comparison-panel-2-${key}`,{hidden:true});const button={dataset:{comparisonVerse:'2',comparisonKey:key},setAttribute(){}};context.toggle(button);assert.equal(panels.get(`comparison-panel-2-${key}`).hidden,false);context.toggle(button);assert.equal(panels.get(`comparison-panel-2-${key}`).hidden,true);}
-assert(tagged.includes('Hebrew Old Testament'));assert(tagged.includes('Greek Old Testament (Septuagint)'));
-context.cache.set('43:1:kjv:contradictions',context.cache.get('0:1:kjv:contradictions'));context.readingBook=43;assert(context.render(2).includes('Greek New Testament'));context.readingBook=0;
+assert.equal((tagged.match(/aria-expanded="false"/g)||[]).length,3);
+for(const [tag,tone]of [['T','translation'],['V','violation'],['Q','question']]){assert(tagged.includes(`class="agreement comparison-tab ${tone}"`));assert(tagged.includes(`>${tag}</button>`));const key=`contradictions-0-${tag}`;panels.set(`comparison-panel-2-${key}`,{hidden:true});const button={dataset:{comparisonVerse:'2',comparisonKey:key},setAttribute(){}};context.toggle(button);assert.equal(panels.get(`comparison-panel-2-${key}`).hidden,false);context.toggle(button);assert.equal(panels.get(`comparison-panel-2-${key}`).hidden,true);}
+assert(tagged.includes('Hebrew and Septuagint: Tagged finding'));assert(!tagged.includes('>H</button>'));assert(!tagged.includes('>G</button>'));
+for(const witness of ['Hebrew','Septuagint','Hebrew and Septuagint','Greek New Testament']){context.cache.set('0:1:kjv:contradictions',{items:[{verse:2,status:'Context',tags:['T'],witness,summary:'Exact unchanged summary',text:'Limits',sources:[]}]});assert(context.render(2).includes(witness+': Exact unchanged summary'));}
 assert(initial.includes('>↶</button>'));
 console.log('PASS: initially closed; independent one/multiple/none toggles; agreements/background hidden; category colors; details preserved; chapter reset.');
 

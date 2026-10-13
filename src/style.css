@@ -228,3 +228,8 @@ html{font-size:calc(17.6px * var(--text-scale,1))}
 @media(max-width:650px){.reader-toolbar{grid-template-columns:minmax(0,1fr) minmax(max-content,1fr)}.reader-actions{grid-column:auto;gap:10px}}
 
 .chapter-subtitle{max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.6}
+
+.verse-comparison[data-tone="translation"]{--summary-tint:#f5e4bf;--summary-ink:#5c4012}
+.agreement.translation,body.dark .agreement.translation,.source-icon.translation{background:#f5e4bf;color:#5c4012}
+mark.side-quote[data-tone="translation"]{background:#f5e4bf}
+.preview-summary,.citation-summary{font-size:0.8125rem;line-height:1.6;overflow-wrap:anywhere}
