@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 451,
+    "evidenceRecords": 459,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 394,
-    "annotatedVerses": 2741
+    "chaptersWithAnnotations": 399,
+    "annotatedVerses": 2749
   },
   "byBook": [
     {
@@ -63,14 +63,14 @@
     {
       "book": "1 Samuel",
       "chapters": 31,
-      "chaptersWithAnnotations": 19,
-      "annotatedVerses": 47
+      "chaptersWithAnnotations": 21,
+      "annotatedVerses": 51
     },
     {
       "book": "2 Samuel",
       "chapters": 24,
-      "chaptersWithAnnotations": 16,
-      "annotatedVerses": 28
+      "chaptersWithAnnotations": 19,
+      "annotatedVerses": 32
     },
     {
       "book": "1 Kings",
@@ -6294,9 +6294,15 @@
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "what-became-of-shiloh-after-the-ark-of-god-was-taken"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6358,15 +6364,18 @@
       "chapter": 10,
       "annotationIds": [
         "early-saul-jabesh",
-        "nahash-held-his-peace-or-a-month-later"
+        "nahash-held-his-peace-or-a-month-later",
+        "samuel-wrote-the-manner-of-the-kingdom-in-a-book-what-did-it-say"
       ],
       "annotatedVerses": [
         24,
+        25,
         27
       ],
       "modes": [
         "history",
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -6526,9 +6535,15 @@
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "michal-took-an-image-what-was-it-and-how-came-it-to-be-in-davids-house"
+      ],
+      "annotatedVerses": [
+        13
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6634,13 +6649,16 @@
       "bookId": 8,
       "chapter": 28,
       "annotationIds": [
-        "saul-enquired-of-the-lord-or-enquired-not"
+        "saul-enquired-of-the-lord-or-enquired-not",
+        "bring-me-up-samuel-by-what-means-did-samuel-come-up-at-endor"
       ],
       "annotatedVerses": [
-        6
+        6,
+        12
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -6891,18 +6909,30 @@
       "book": "2 Samuel",
       "bookId": 9,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "after-forty-years-absalom-forty-years-counted-from-what"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Samuel",
       "bookId": 9,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ziba-or-mephibosheth-whose-account-of-the-day-david-fled-was-true"
+      ],
+      "annotatedVerses": [
+        3
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6939,9 +6969,15 @@
       "book": "2 Samuel",
       "bookId": 9,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ziba-or-mephibosheth-whose-account-of-the-day-david-fled-was-true"
+      ],
+      "annotatedVerses": [
+        27
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6965,14 +7001,17 @@
       "chapter": 21,
       "annotationIds": [
         "elhanan-slew-goliath-brother-supplied",
-        "michal-five-sons-bare-or-brought-up"
+        "michal-five-sons-bare-or-brought-up",
+        "because-he-slew-the-gibeonites-when-and-how-did-saul-slay-them"
       ],
       "annotatedVerses": [
+        1,
         8,
         19
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -7009,6 +7048,7 @@
         "early-census-famine",
         "census-totals-samuel-or-chronicles",
         "threshingfloor-price-fifty-silver-or-six-hundred-gold",
+        "again-the-anger-of-the-lord-was-kindled-against-israel-for-what",
         "study-soldiers"
       ],
       "annotatedVerses": [
@@ -7018,7 +7058,8 @@
         24
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },

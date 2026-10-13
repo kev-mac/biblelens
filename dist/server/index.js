@@ -39205,6 +39205,1206 @@ const EVIDENCE=[
         "quote": "Boaz begat Obed"
       }
     ]
+  },
+  {
+    "id": "bring-me-up-samuel-by-what-means-did-samuel-come-up-at-endor",
+    "mode": "questions",
+    "ref": "1 Samuel 28:12",
+    "appliesTo": [
+      "1 Samuel 28:12"
+    ],
+    "title": "“Bring me up Samuel” — by what means did Samuel come up at Endor, and why did the woman cry out?",
+    "status": "Context",
+    "summary": "The Lord does not answer Saul “by dreams, nor by Urim, nor by prophets”. Saul then asks a woman “that hath a familiar spirit” to bring up Samuel, who is dead. The next sentence says the woman “saw Samuel” and “cried with a loud voice”, and the passage goes on to give words of Samuel that speak in the name of the Lord. The verses compared do not say what the woman did, by whose act Samuel came up, or why she cried out.",
+    "text": "KJV 1 Samuel 28:3: “Now Samuel was dead”; “And Saul had put away those that had familiar spirits, and the wizards, out of the land” KJV 28:6: “And when Saul enquired of the Lord, the Lord answered him not, neither by dreams, nor by Urim, nor by prophets.” KJV 28:7: “Seek me a woman that hath a familiar spirit, that I may go to her, and enquire of her” KJV 28:8: “divine unto me by the familiar spirit, and bring me him up, whom I shall name unto thee” KJV 28:11: “Then said the woman, Whom shall I bring up unto thee? And he said, Bring me up Samuel.” KJV 28:12: “And when the woman saw Samuel, she cried with a loud voice: and the woman spake to Saul, saying, Why hast thou deceived me? for thou art Saul.” KJV 28:13: “I saw gods ascending out of the earth” KJV 28:14: “An old man cometh up; and he is covered with a mantle. And Saul perceived that it was Samuel” KJV 28:15: “And Samuel said to Saul, Why hast thou disquieted me, to bring me up?” KJV 28:16: “Then said Samuel, Wherefore then dost thou ask of me, seeing the Lord is departed from thee, and is become thine enemy?” KJV 28:19: “to morrow shalt thou and thy sons be with me” KJV 28:20: “and was sore afraid, because of the words of Samuel” KJV 1 Chronicles 10:13: “and also for asking counsel of one that had a familiar spirit, to enquire of it” KJV Leviticus 20:27: “A man also or woman that hath a familiar spirit, or that is a wizard, shall surely be put to death” KJV Deuteronomy 18:11: “Or a charmer, or a consulter with familiar spirits, or a wizard, or a necromancer.” KJV Isaiah 8:19: “should not a people seek unto their God? for the living to the dead?” Hebrew (WLC) 1 Samuel 28:7: אֵ֣שֶׁת בַּעֲלַת־אֹ֔וב [a woman, mistress of an ob]. 28:12: וַתֵּ֤רֶא הָֽאִשָּׁה֙ אֶת־שְׁמוּאֵ֔ל וַתִּזְעַ֖ק בְּקֹ֣ול גָּדֹ֑ול [and the woman saw Samuel and cried with a great voice]. 28:13: אֱלֹהִ֥ים רָאִ֖יתִי עֹלִ֥ים מִן־הָאָֽרֶץ [elohim I saw coming up from the earth; the participle is plural]. 28:14: וַיֵּ֤דַע שָׁאוּל֙ כִּֽי־שְׁמוּאֵ֣ל ה֔וּא [and Saul knew that it was Samuel]. 28:15: לָ֥מָּה הִרְגַּזְתַּ֖נִי לְהַעֲלֹ֣ות אֹתִ֑י [why have you disturbed me, to bring me up]. 28:19: וּמָחָ֕ר אַתָּ֥ה וּבָנֶ֖יךָ עִמִּ֑י [and tomorrow you and your sons with me]. Septuagint (Brenton Greek) 1 Samuel 28:12: Καὶ εἶδεν ἡ γυνὴ τὸν Σαμουὴλ, καὶ ἀνεβόησε φωνῇ μεγάλῃ [and the woman saw Samuel, and cried out with a loud voice]. 28:14: ἄνδρα ὄρθιον ἀναβαίνοντα ἐκ τῆς γῆς [an upright man coming up out of the earth]. 28:19: αὔριον σὺ καὶ οἱ υἱοί σου μετὰ σοῦ πεσοῦνται [tomorrow you and your sons with you shall fall]. 1 Chronicles 10:13: ὅτι ἐπηρώτησε Σαοὺλ ἐν τῷ ἐγγαστριμύθῳ τοῦ ζητῆσαι, καὶ ἀπεκρίνατο αὐτῷ Σαμουὴλ ὁ προφήτης [because Saul enquired by the one with a divining spirit, to seek, and Samuel the prophet answered him]. Fetched from https://bolls.life/get-text/WLC/9/28/, https://ebible.org/grcbrent/1SA28.htm and https://ebible.org/grcbrent/1CH10.htm.",
+    "reasoning": "The passage sets two things side by side. The laws quoted forbid consulting one “that hath a familiar spirit”, and 28:6 says the Lord would not answer Saul by the three means it names. Yet from 28:12 the narrative itself uses the name Samuel for what the woman sees and for the speaker (“the woman saw Samuel”, “Samuel said to Saul”), and the words spoken name the Lord and say what will happen the next day. Between the request at 28:11 and the sight at 28:12 no act of the woman is told. So the verses quoted leave unstated whether Samuel came up through the woman’s practice, apart from it, or in some other way, and they give no reason for her cry or for how she then knew her visitor was Saul. Which of these is taken decides how the passage bears on the laws quoted and on the statement that the Lord did not answer.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that the woman’s practice brought Samuel up; that Samuel was sent apart from anything she did, which is offered as the reason for her cry; that what appeared was not Samuel, although the narrative uses his name. Limits: the narrative calls the one seen and the speaker “Samuel” at 28:12, 28:15, 28:16 and 28:20, and nothing in these verses says the appearance was false; only the woman is said to see, Saul asks her what she saw, and “Saul perceived that it was Samuel” follows her description; the woman’s words at 28:13 are her report, and the KJV’s “gods” there stands for a Hebrew word that the KJV elsewhere renders “God”, with a plural participle; 28:15 has Samuel say “to bring me up”, which states that he was brought up and does not say by whom; 1 Chronicles 10:13 in the KJV says Saul asked counsel of one that had a familiar spirit and does not say what answered, while Brenton’s Greek of that verse adds that “Samuel the prophet answered him”, a wording difference stated here and not proposed as a separate finding; Brenton’s Greek of 28:14 has “an upright man” where the KJV has “An old man”, and of 28:19 “with you shall fall” where the KJV has “be with me”, both also stated as wording only. Check made: 1 Samuel 28:3 and 28:6–25 were read in the KJV, verses 3 and 6–20 also in the Hebrew and the Greek; a search of the packaged KJV for “familiar spirit” finds Leviticus 19:31, 20:6, 20:27, Deuteronomy 18:11, 1 Samuel 28:3, 28:7, 28:8, 28:9, 2 Kings 21:6, 23:24, 1 Chronicles 10:13, 2 Chronicles 33:6, Isaiah 8:19, 19:3 and 29:4, and a whole-word search for “Endor” finds Joshua 17:11, 1 Samuel 28:7 and Psalms 83:10. Those are word searches and a reading of those verses, not a reading of the whole Bible. These checked verses do not explicitly settle by what means Samuel came up. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Samuel 28: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA28.htm"
+      },
+      {
+        "label": "1 Chronicles 10: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH10.htm"
+      },
+      {
+        "label": "Leviticus 20: KJV",
+        "url": "https://ebible.org/eng-kjv/LEV20.htm"
+      },
+      {
+        "label": "Deuteronomy 18: KJV",
+        "url": "https://ebible.org/eng-kjv/DEU18.htm"
+      },
+      {
+        "label": "Isaiah 8: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA08.htm"
+      },
+      {
+        "label": "1 Samuel 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/28/"
+      },
+      {
+        "label": "1 Samuel 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1SA28.htm"
+      },
+      {
+        "label": "1 Chronicles 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH10.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Samuel 28:3",
+        "book": 8,
+        "chapter": 28,
+        "verse": 3
+      },
+      {
+        "label": "1 Samuel 28:6",
+        "book": 8,
+        "chapter": 28,
+        "verse": 6
+      },
+      {
+        "label": "1 Samuel 28:7",
+        "book": 8,
+        "chapter": 28,
+        "verse": 7
+      },
+      {
+        "label": "1 Samuel 28:8",
+        "book": 8,
+        "chapter": 28,
+        "verse": 8
+      },
+      {
+        "label": "1 Samuel 28:11",
+        "book": 8,
+        "chapter": 28,
+        "verse": 11
+      },
+      {
+        "label": "1 Samuel 28:12",
+        "book": 8,
+        "chapter": 28,
+        "verse": 12
+      },
+      {
+        "label": "1 Samuel 28:13",
+        "book": 8,
+        "chapter": 28,
+        "verse": 13
+      },
+      {
+        "label": "1 Samuel 28:14",
+        "book": 8,
+        "chapter": 28,
+        "verse": 14
+      },
+      {
+        "label": "1 Samuel 28:15",
+        "book": 8,
+        "chapter": 28,
+        "verse": 15
+      },
+      {
+        "label": "1 Samuel 28:16",
+        "book": 8,
+        "chapter": 28,
+        "verse": 16
+      },
+      {
+        "label": "1 Samuel 28:19",
+        "book": 8,
+        "chapter": 28,
+        "verse": 19
+      },
+      {
+        "label": "1 Samuel 28:20",
+        "book": 8,
+        "chapter": 28,
+        "verse": 20
+      },
+      {
+        "label": "1 Chronicles 10:13",
+        "book": 12,
+        "chapter": 10,
+        "verse": 13
+      },
+      {
+        "label": "Leviticus 20:27",
+        "book": 2,
+        "chapter": 20,
+        "verse": 27
+      },
+      {
+        "label": "Deuteronomy 18:11",
+        "book": 4,
+        "chapter": 18,
+        "verse": 11
+      },
+      {
+        "label": "Isaiah 8:19",
+        "book": 22,
+        "chapter": 8,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Samuel 28:12",
+        "quote": "when the woman saw Samuel, she cried with a loud voice"
+      },
+      {
+        "label": "A",
+        "ref": "1 Samuel 28:15",
+        "quote": "Why hast thou disquieted me, to bring me up?"
+      }
+    ]
+  },
+  {
+    "id": "what-became-of-shiloh-after-the-ark-of-god-was-taken",
+    "mode": "questions",
+    "ref": "1 Samuel 4:11",
+    "appliesTo": [
+      "1 Samuel 4:11"
+    ],
+    "title": "What became of Shiloh, and of the house of the Lord there, after “the ark of God was taken”?",
+    "status": "Context",
+    "summary": "In 1 Samuel 1–4 the yearly worship, Eli’s priesthood and the ark are at Shiloh. The ark is taken in battle and a runner brings the news to Shiloh. The compared passages do not narrate what happened to the sanctuary at Shiloh: the returned ark goes to Kirjathjearim, and priests with the shewbread are later described at Nob. Jeremiah says “see what I did to it” and a psalm says God “forsook the tabernacle of Shiloh”. The verses compared do not say what was done to Shiloh, when, or by whom.",
+    "text": "KJV Joshua 18:1: “assembled together at Shiloh, and set up the tabernacle of the congregation there” KJV 1 Samuel 1:3: “went up out of his city yearly to worship and to sacrifice unto the Lord of hosts in Shiloh” KJV 1:9: “Eli the priest sat upon a seat by a post of the temple of the Lord” KJV 2:22: “the women that assembled at the door of the tabernacle of the congregation” KJV 4:4: “So the people sent to Shiloh, that they might bring from thence the ark of the covenant of the Lord of hosts” KJV 4:11: “And the ark of God was taken; and the two sons of Eli, Hophni and Phinehas, were slain.” KJV 4:12: “came to Shiloh the same day with his clothes rent” KJV 7:1: “And the men of Kirjathjearim came, and fetched up the ark of the Lord, and brought it into the house of Abinadab in the hill” KJV 14:3: “the son of Eli, the Lord's priest in Shiloh, wearing an ephod” KJV 21:1: “Then came David to Nob to Ahimelech the priest” KJV 21:6: “there was no bread there but the shewbread, that was taken from before the Lord” KJV 22:19: “And Nob, the city of the priests, smote he with the edge of the sword” KJV 1 Kings 14:2: “get thee to Shiloh: behold, there is Ahijah the prophet” KJV Psalms 78:60: “So that he forsook the tabernacle of Shiloh, the tent which he placed among men;” KJV 78:61: “And delivered his strength into captivity, and his glory into the enemy's hand.” KJV Jeremiah 7:12: “But go ye now unto my place which was in Shiloh, where I set my name at the first, and see what I did to it for the wickedness of my people Israel.” KJV 7:14: “Therefore will I do unto this house, which is called by my name”; “as I have done to Shiloh” KJV 26:6: “Then will I make this house like Shiloh” KJV 41:5: “there came certain from Shechem, from Shiloh, and from Samaria” KJV 2 Chronicles 1:3: “the high place that was at Gibeon; for there was the tabernacle of the congregation of God, which Moses the servant of the Lord had made in the wilderness” Hebrew (WLC) 1 Samuel 2:22: פֶּ֖תַח אֹ֥הֶל מֹועֵֽד [the door of the tent of meeting]. 14:3: כֹּהֵ֧ן ׀ יְהוָ֛ה בְּשִׁלֹ֖ו נֹשֵׂ֣א אֵפֹ֑וד [priest of the LORD in Shiloh, bearing an ephod]. Septuagint (Brenton Greek) 1 Samuel 14:3: ἱερεὺς τοῦ Θεοῦ ἐν Σηλὼμ αἴρων ἐφούδ [priest of God in Selom, bearing an ephod]. Brenton’s Greek of 2:22 reads in full: Καὶ Ἡλὶ πρεσβύτης σφόδρα· καὶ ἤκουσεν ἃ ἐποίουν οἱ υἱοὶ αὐτοῦ τοῖς υἱοῖς Ἰσραήλ· [And Eli was very old, and he heard what his sons did to the children of Israel]. Fetched from https://bolls.life/get-text/WLC/9/2/, https://bolls.life/get-text/WLC/9/14/, https://ebible.org/grcbrent/1SA14.htm and https://ebible.org/grcbrent/1SA02.htm.",
+    "reasoning": "Shiloh is where the tabernacle was set up (Joshua 18:1) and where the first chapters of 1 Samuel place the sacrifices, the priests and the ark. The cited scene at Shiloh reports the arrival of news that the ark was taken (4:12 and the verses after it). When the ark comes back it is not brought to Shiloh, and priests with the shewbread are later at Nob. Jeremiah points to Shiloh as a place where something was done that his hearers could go and see, and makes it the pattern for what will be done to the house in Jerusalem; Psalm 78 says God forsook the tabernacle of Shiloh. None of the verses compared narrates that event. What it was, and whether it followed the battle of 1 Samuel 4 or came later, bears on how the later priestly setting at Nob, the separate resting place of the ark and Jeremiah’s warning are read; these verses do not directly narrate a move of the priesthood from Shiloh to Nob.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that the Philistines destroyed Shiloh after the battle; that the place was left by the priests without being destroyed, and that what Jeremiah speaks of happened at a later time; that the forsaking in Psalm 78 is the loss of the ark and nothing more. Limits: Jeremiah 7:12 says something was done to “my place which was in Shiloh” because of wickedness and does not say what, when, or by whose hand; Psalms 78:60–61 joins the forsaking of the tabernacle of Shiloh to the delivering of “his strength into captivity” and does not describe the place afterwards; 1 Kings 14:2 and Jeremiah 41:5 speak of people at or from Shiloh in later times, so the verses quoted do not show the place empty for ever; at 1 Samuel 14:3 the words “the Lord's priest in Shiloh” may describe Eli and not Ahiah, and the verse does not say the priesthood was still at Shiloh in Saul’s time; 1 Samuel calls the house at Shiloh “the temple of the Lord” (1:9) and “the tabernacle of the congregation” (2:22), and whether the tabernacle later said to be at Gibeon (2 Chronicles 1:3) was moved from Shiloh, and when, is not told in the verses quoted; Brenton’s Greek of 2:22, quoted in full above, has no clause about the women or the tabernacle, a wording difference stated here and not proposed as a separate finding. Check made: a whole-word search of the packaged KJV for “Shiloh” finds, in 1 Samuel, 1:3, 1:9, 1:24, 2:14, 3:21, 4:3, 4:4, 4:12 and 14:3, and after 1 Samuel, 1 Kings 2:27, 14:2 and 14:4, Psalms 78:60, and Jeremiah 7:12, 7:14, 26:6, 26:9 and 41:5; each of those verses was read in the KJV, with 1 Samuel 4:3–4, 4:10–22, 7:1–2, 21:1–6 and 22:9–19; 1 Samuel 2:22 and 14:3 were also read in the Hebrew and the Greek. That is a word search and a reading of those verses, not a reading of the whole Bible, and a passage that tells of Shiloh without naming it would not be found by it. These checked verses do not explicitly settle what was done to Shiloh or when. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Joshua 18: KJV",
+        "url": "https://ebible.org/eng-kjv/JOS18.htm"
+      },
+      {
+        "label": "1 Samuel 1: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA01.htm"
+      },
+      {
+        "label": "1 Samuel 2: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA02.htm"
+      },
+      {
+        "label": "1 Samuel 4: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA04.htm"
+      },
+      {
+        "label": "1 Samuel 7: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA07.htm"
+      },
+      {
+        "label": "1 Samuel 14: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA14.htm"
+      },
+      {
+        "label": "1 Samuel 21: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA21.htm"
+      },
+      {
+        "label": "1 Samuel 22: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA22.htm"
+      },
+      {
+        "label": "1 Kings 14: KJV",
+        "url": "https://ebible.org/eng-kjv/1KI14.htm"
+      },
+      {
+        "label": "Psalms 78: KJV",
+        "url": "https://ebible.org/eng-kjv/PSA078.htm"
+      },
+      {
+        "label": "Jeremiah 7: KJV",
+        "url": "https://ebible.org/eng-kjv/JER07.htm"
+      },
+      {
+        "label": "Jeremiah 26: KJV",
+        "url": "https://ebible.org/eng-kjv/JER26.htm"
+      },
+      {
+        "label": "Jeremiah 41: KJV",
+        "url": "https://ebible.org/eng-kjv/JER41.htm"
+      },
+      {
+        "label": "2 Chronicles 1: KJV",
+        "url": "https://ebible.org/eng-kjv/2CH01.htm"
+      },
+      {
+        "label": "1 Samuel 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/2/"
+      },
+      {
+        "label": "1 Samuel 14: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/14/"
+      },
+      {
+        "label": "1 Samuel 14: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1SA14.htm"
+      },
+      {
+        "label": "1 Samuel 2: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1SA02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Joshua 18:1",
+        "book": 5,
+        "chapter": 18,
+        "verse": 1
+      },
+      {
+        "label": "1 Samuel 1:3",
+        "book": 8,
+        "chapter": 1,
+        "verse": 3
+      },
+      {
+        "label": "1 Samuel 1:9",
+        "book": 8,
+        "chapter": 1,
+        "verse": 9
+      },
+      {
+        "label": "1 Samuel 2:22",
+        "book": 8,
+        "chapter": 2,
+        "verse": 22
+      },
+      {
+        "label": "1 Samuel 4:4",
+        "book": 8,
+        "chapter": 4,
+        "verse": 4
+      },
+      {
+        "label": "1 Samuel 4:11",
+        "book": 8,
+        "chapter": 4,
+        "verse": 11
+      },
+      {
+        "label": "1 Samuel 4:12",
+        "book": 8,
+        "chapter": 4,
+        "verse": 12
+      },
+      {
+        "label": "1 Samuel 7:1",
+        "book": 8,
+        "chapter": 7,
+        "verse": 1
+      },
+      {
+        "label": "1 Samuel 14:3",
+        "book": 8,
+        "chapter": 14,
+        "verse": 3
+      },
+      {
+        "label": "1 Samuel 21:1",
+        "book": 8,
+        "chapter": 21,
+        "verse": 1
+      },
+      {
+        "label": "1 Samuel 21:6",
+        "book": 8,
+        "chapter": 21,
+        "verse": 6
+      },
+      {
+        "label": "1 Samuel 22:19",
+        "book": 8,
+        "chapter": 22,
+        "verse": 19
+      },
+      {
+        "label": "1 Kings 14:2",
+        "book": 10,
+        "chapter": 14,
+        "verse": 2
+      },
+      {
+        "label": "Psalms 78:60",
+        "book": 18,
+        "chapter": 78,
+        "verse": 60
+      },
+      {
+        "label": "Psalms 78:61",
+        "book": 18,
+        "chapter": 78,
+        "verse": 61
+      },
+      {
+        "label": "Jeremiah 7:12",
+        "book": 23,
+        "chapter": 7,
+        "verse": 12
+      },
+      {
+        "label": "Jeremiah 7:14",
+        "book": 23,
+        "chapter": 7,
+        "verse": 14
+      },
+      {
+        "label": "Jeremiah 26:6",
+        "book": 23,
+        "chapter": 26,
+        "verse": 6
+      },
+      {
+        "label": "Jeremiah 41:5",
+        "book": 23,
+        "chapter": 41,
+        "verse": 5
+      },
+      {
+        "label": "2 Chronicles 1:3",
+        "book": 13,
+        "chapter": 1,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Samuel 4:11",
+        "quote": "the ark of God was taken"
+      },
+      {
+        "label": "A",
+        "ref": "Jeremiah 7:12",
+        "quote": "see what I did to it"
+      }
+    ]
+  },
+  {
+    "id": "michal-took-an-image-what-was-it-and-how-came-it-to-be-in-davids-house",
+    "mode": "questions",
+    "ref": "1 Samuel 19:13",
+    "appliesTo": [
+      "1 Samuel 19:13"
+    ],
+    "title": "“Michal took an image, and laid it in the bed” — what was it, and how did it come to be in David's house?",
+    "status": "Context",
+    "summary": "To cover David’s escape Michal puts “an image” in his bed, and Saul’s messengers find it there. The Hebrew word is the one the KJV prints as “teraphim” in Judges, renders “images” where Rachel steals her father’s and Laban calls them “my gods”, and renders “idolatry” in Samuel’s rebuke of Saul. The verses compared do not say what the object was, whose it was, or what it was kept for.",
+    "text": "KJV 1 Samuel 19:11: “Saul also sent messengers unto David's house, to watch him, and to slay him in the morning” KJV 19:13: “And Michal took an image, and laid it in the bed, and put a pillow of goats' hair for his bolster, and covered it with a cloth.” KJV 19:14: “And when Saul sent messengers to take David, she said, He is sick.” KJV 19:16: “And when the messengers were come in, behold, there was an image in the bed, with a pillow of goats' hair for his bolster.” KJV 15:23: “For rebellion is as the sin of witchcraft, and stubbornness is as iniquity and idolatry” KJV Genesis 31:19: “Rachel had stolen the images that were her father's” KJV 31:30: “yet wherefore hast thou stolen my gods?” KJV 31:34: “Now Rachel had taken the images, and put them in the camel's furniture, and sat upon them” KJV Judges 17:5: “And the man Micah had an house of gods, and made an ephod, and teraphim” KJV 2 Kings 23:24: “the workers with familiar spirits, and the wizards, and the images, and the idols, and all the abominations that were spied in the land of Judah and in Jerusalem, did Josiah put away” Hebrew (WLC) 1 Samuel 19:13: וַתִּקַּ֨ח מִיכַ֜ל אֶת־הַתְּרָפִ֗ים [and Michal took the teraphim]. 19:16: וְהִנֵּ֥ה הַתְּרָפִ֖ים אֶל־הַמִּטָּ֑ה [and behold, the teraphim at the bed]. 15:23: וְאָ֥וֶן וּתְרָפִ֖ים הַפְצַ֑ר [and iniquity and teraphim is stubbornness]. Genesis 31:19: וַתִּגְנֹ֣ב רָחֵ֔ל אֶת־הַתְּרָפִ֖ים [and Rachel stole the teraphim]. 31:34: וְרָחֵ֞ל לָקְחָ֣ה אֶת־הַתְּרָפִ֗ים [and Rachel had taken the teraphim]. Judges 17:5: אֵפֹוד֙ וּתְרָפִ֔ים [an ephod and teraphim]. 2 Kings 23:24: וְאֶת־הַתְּרָפִ֨ים וְאֶת־הַגִּלֻּלִ֜ים [and the teraphim and the idols]. Septuagint (Brenton Greek) 1 Samuel 19:13: Καὶ ἔλαβεν ἡ Μελχὸλ τὰ κενοτάφια [and Melchol took the kenotaphia]. 15:23: θεραφὶν [theraphin, the Hebrew word in Greek letters]. Genesis 31:19: ἔκλεψε δὲ Ῥαχὴλ τὰ εἴδωλα τοῦ πατρὸς αὐτῆς [and Rachel stole her father's idols]. 2 Kings 23:24: καὶ τὰ θεραφὶν, καὶ τὰ εἴδωλα [and the theraphin, and the idols]. Fetched from https://bolls.life/get-text/WLC/9/19/, https://bolls.life/get-text/WLC/9/15/, https://bolls.life/get-text/WLC/1/31/, https://bolls.life/get-text/WLC/7/17/, https://bolls.life/get-text/WLC/12/23/, https://ebible.org/grcbrent/1SA19.htm, https://ebible.org/grcbrent/1SA15.htm, https://ebible.org/grcbrent/GEN31.htm and https://ebible.org/grcbrent/2KI23.htm.",
+    "reasoning": "The object is the means of the escape, and the Hebrew gives it the definite article: “the teraphim”. The article alone does not establish its ownership or prior use in the household. In the other verses quoted the same Hebrew word names things a man calls “my gods” (Genesis 31:30), things made with an ephod for “an house of gods” (Judges 17:5), things Josiah put away with the idols (2 Kings 23:24), and the thing to which Samuel likens Saul’s stubbornness (1 Samuel 15:23). Here it lies in David’s bed, and the verses quoted pass no remark on it. What it was and whose it was decides whether the passage shows an object of worship kept in David’s house, something of Michal’s own, or a thing with another use.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that it was a household figure of the kind Laban calls his gods; that it belonged to Michal and not to David; that it was a figure kept for some use other than worship; that it was large enough to pass for a man in a bed. Limits: a shared Hebrew word does not show that the object in David’s house was the same kind of thing as Laban’s or Micah’s, or that it was used as theirs were; the Hebrew word is plural in form in every verse quoted, and the KJV renders it “an image” here and “images” in Genesis, so its form does not settle whether one object or several is meant; the verses quoted do not say the object had a human shape or size — they say it was laid in the bed and covered, and that Michal said “He is sick”; Rachel sits upon hers (Genesis 31:34), which says something of the size of those and nothing of this one; the passage does not say David knew of the object, and it records no word of blame or of approval; no finding of a broken law is proposed, because the verses quoted do not describe any act of worship. The KJV’s “an image” for the Hebrew “the teraphim”, the KJV’s “idolatry” at 15:23, and Brenton’s Greek word at 19:13 are stated here as wording and are not proposed as separate findings. Check made: a whole-word search of the packaged KJV for “teraphim” finds Judges 17:5, 18:14, 18:17, 18:18, 18:20 and Hosea 3:4 only, so the English word does not lead to this passage; the Hebrew word was confirmed by script in the Westminster Leningrad text of 1 Samuel 19:13, 19:16 and 15:23, Genesis 31:19 and 31:34, Judges 17:5 and 2 Kings 23:24, and the Hebrew Bible was not searched for its other occurrences; 1 Samuel 19:8–18 was read in the KJV. That is a word search and a reading of those verses, not a reading of the whole Bible. These checked verses do not explicitly settle what the image was or whose it was. No H, G or V is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Samuel 19: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA19.htm"
+      },
+      {
+        "label": "1 Samuel 15: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA15.htm"
+      },
+      {
+        "label": "Genesis 31: KJV",
+        "url": "https://ebible.org/eng-kjv/GEN31.htm"
+      },
+      {
+        "label": "Judges 17: KJV",
+        "url": "https://ebible.org/eng-kjv/JDG17.htm"
+      },
+      {
+        "label": "2 Kings 23: KJV",
+        "url": "https://ebible.org/eng-kjv/2KI23.htm"
+      },
+      {
+        "label": "1 Samuel 19: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/19/"
+      },
+      {
+        "label": "1 Samuel 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/15/"
+      },
+      {
+        "label": "Genesis 31: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/1/31/"
+      },
+      {
+        "label": "Judges 17: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/7/17/"
+      },
+      {
+        "label": "2 Kings 23: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/12/23/"
+      },
+      {
+        "label": "1 Samuel 19: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1SA19.htm"
+      },
+      {
+        "label": "1 Samuel 15: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1SA15.htm"
+      },
+      {
+        "label": "Genesis 31: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/GEN31.htm"
+      },
+      {
+        "label": "2 Kings 23: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2KI23.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Samuel 19:11",
+        "book": 8,
+        "chapter": 19,
+        "verse": 11
+      },
+      {
+        "label": "1 Samuel 19:13",
+        "book": 8,
+        "chapter": 19,
+        "verse": 13
+      },
+      {
+        "label": "1 Samuel 19:14",
+        "book": 8,
+        "chapter": 19,
+        "verse": 14
+      },
+      {
+        "label": "1 Samuel 19:16",
+        "book": 8,
+        "chapter": 19,
+        "verse": 16
+      },
+      {
+        "label": "1 Samuel 15:23",
+        "book": 8,
+        "chapter": 15,
+        "verse": 23
+      },
+      {
+        "label": "Genesis 31:19",
+        "book": 0,
+        "chapter": 31,
+        "verse": 19
+      },
+      {
+        "label": "Genesis 31:30",
+        "book": 0,
+        "chapter": 31,
+        "verse": 30
+      },
+      {
+        "label": "Genesis 31:34",
+        "book": 0,
+        "chapter": 31,
+        "verse": 34
+      },
+      {
+        "label": "Judges 17:5",
+        "book": 6,
+        "chapter": 17,
+        "verse": 5
+      },
+      {
+        "label": "2 Kings 23:24",
+        "book": 11,
+        "chapter": 23,
+        "verse": 24
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Samuel 19:13",
+        "quote": "Michal took an image, and laid it in the bed"
+      },
+      {
+        "label": "A",
+        "ref": "1 Samuel 19:16",
+        "quote": "there was an image in the bed"
+      }
+    ]
+  },
+  {
+    "id": "samuel-wrote-the-manner-of-the-kingdom-in-a-book-what-did-it-say",
+    "mode": "questions",
+    "ref": "1 Samuel 10:25",
+    "appliesTo": [
+      "1 Samuel 10:25"
+    ],
+    "title": "Samuel “told the people the manner of the kingdom, and wrote it in a book” — what did the book say?",
+    "status": "Context",
+    "summary": "When Saul is made king, Samuel tells the people “the manner of the kingdom”, writes it in a book and lays it up “before the Lord”. Two chapters earlier Samuel has told them “the manner of the king”: what a king will take from them. Deuteronomy has a law for a king, with limits on him and a book he is to copy. The verses compared do not say what Samuel wrote, or whether it was either of these.",
+    "text": "KJV 1 Samuel 8:9: “protest solemnly unto them, and shew them the manner of the king that shall reign over them” KJV 8:11: “This will be the manner of the king that shall reign over you: He will take your sons, and appoint them for himself” KJV 8:17: “He will take the tenth of your sheep: and ye shall be his servants.” KJV 8:18: “And ye shall cry out in that day because of your king which ye shall have chosen you” KJV 10:24: “And all the people shouted, and said, God save the king” KJV 10:25: “Then Samuel told the people the manner of the kingdom, and wrote it in a book, and laid it up before the Lord. And Samuel sent all the people away, every man to his house.” KJV Deuteronomy 17:14: “and shalt say, I will set a king over me, like as all the nations that are about me” KJV 17:16: “But he shall not multiply horses to himself” KJV 17:18: “And it shall be, when he sitteth upon the throne of his kingdom, that he shall write him a copy of this law in a book out of that which is before the priests the Levites:” Hebrew (WLC) 1 Samuel 10:25: מִשְׁפַּ֣ט הַמְּלֻכָ֔ה וַיִּכְתֹּ֣ב בַּסֵּ֔פֶר וַיַּנַּ֖ח לִפְנֵ֣י יְהוָ֑ה [the mishpat of the kingdom, and he wrote in the book, or in a book, and laid it before the LORD]. 8:9: מִשְׁפַּ֣ט הַמֶּ֔לֶךְ אֲשֶׁ֥ר יִמְלֹ֖ךְ עֲלֵיהֶֽם [the mishpat of the king who shall reign over them]. 8:11: זֶ֗ה יִֽהְיֶה֙ מִשְׁפַּ֣ט הַמֶּ֔לֶךְ [this shall be the mishpat of the king]. Septuagint (Brenton Greek) 1 Samuel 10:25: τὸ δικαίωμα τοῦ βασιλέως, καὶ ἔγραψεν ἐν βιβλίῳ, καὶ ἔθηκεν ἐνώπιον Κυρίου [the dikaioma of the king, and he wrote in a book, and set it before the Lord]. 8:9: τὸ δικαίωμα τοῦ βασιλέως ὃς βασιλεύσει ἐπʼ αὐτούς [the dikaioma of the king who shall reign over them]. 8:11: τοῦτο ἔσται τὸ δικαίωμα τοῦ βασιλέως [this shall be the dikaioma of the king]. Fetched from https://bolls.life/get-text/WLC/9/10/, https://bolls.life/get-text/WLC/9/8/, https://ebible.org/grcbrent/1SA10.htm and https://ebible.org/grcbrent/1SA08.htm.",
+    "reasoning": "The book is made at the founding of the kingdom and is laid up “before the Lord”, so it may bear on the terms of Israel’s kingship. The verse names its subject without reproducing its contents. The same Hebrew noun, mishpat, heads the speech of 8:11–17, where it introduces what a king will take; there the people are warned, and nothing is said of a writing. Deuteronomy 17:14–20 sets limits on a king and speaks of a book he is to copy, and the KJV of those verses does not use the phrase of 10:25. Whether Samuel’s book set out the king’s claims on the people, limits on the king, or something else decides how Saul’s later acts and Samuel’s rebukes of him are to be measured.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that the book repeated the warning of 8:11–17; that it set out duties and limits of the king, like those of Deuteronomy 17:14–20; that it was an agreement between king and people. Limits: the same Hebrew noun in 8:9, 8:11 and 10:25 does not show that the same thing is meant, since 8:9 and 8:11 have “of the king” and 10:25 “of the kingdom”; Brenton’s Greek has “of the king” in all three verses, a wording difference at 10:25 that is stated here and not proposed as a separate finding; the Hebrew of 10:25 as pointed reads “in the book”, which Hebrew can use where English says “a book”, and the verse does not say it was a book already in being; Deuteronomy 17:18 speaks of the king writing a copy of “this law”, and the verses quoted do not say Samuel’s book was that law or that Saul made such a copy; the place where the book was laid up is given only as “before the Lord”. Check made: a search of the packaged KJV for “manner of the kingdom” finds 1 Samuel 10:25 only, and for “manner of the king” 1 Samuel 8:9 and 8:11 only; 1 Samuel 8:5–22, 10:17–27 and 12:1–25 and Deuteronomy 17:14–20 were read in the KJV, and 1 Samuel 8:9, 8:11 and 10:25 also in the Hebrew and the Greek. That is a word search and a reading of those verses, not a reading of the whole Bible, and a later mention of the book under another name would not be found by it. These checked verses do not explicitly settle what the book said. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "1 Samuel 8: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA08.htm"
+      },
+      {
+        "label": "1 Samuel 10: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA10.htm"
+      },
+      {
+        "label": "Deuteronomy 17: KJV",
+        "url": "https://ebible.org/eng-kjv/DEU17.htm"
+      },
+      {
+        "label": "1 Samuel 10: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/10/"
+      },
+      {
+        "label": "1 Samuel 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/9/8/"
+      },
+      {
+        "label": "1 Samuel 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1SA10.htm"
+      },
+      {
+        "label": "1 Samuel 8: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1SA08.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "1 Samuel 8:9",
+        "book": 8,
+        "chapter": 8,
+        "verse": 9
+      },
+      {
+        "label": "1 Samuel 8:11",
+        "book": 8,
+        "chapter": 8,
+        "verse": 11
+      },
+      {
+        "label": "1 Samuel 8:17",
+        "book": 8,
+        "chapter": 8,
+        "verse": 17
+      },
+      {
+        "label": "1 Samuel 8:18",
+        "book": 8,
+        "chapter": 8,
+        "verse": 18
+      },
+      {
+        "label": "1 Samuel 10:24",
+        "book": 8,
+        "chapter": 10,
+        "verse": 24
+      },
+      {
+        "label": "1 Samuel 10:25",
+        "book": 8,
+        "chapter": 10,
+        "verse": 25
+      },
+      {
+        "label": "Deuteronomy 17:14",
+        "book": 4,
+        "chapter": 17,
+        "verse": 14
+      },
+      {
+        "label": "Deuteronomy 17:16",
+        "book": 4,
+        "chapter": 17,
+        "verse": 16
+      },
+      {
+        "label": "Deuteronomy 17:18",
+        "book": 4,
+        "chapter": 17,
+        "verse": 18
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "1 Samuel 10:25",
+        "quote": "told the people the manner of the kingdom, and wrote it in a book, and laid it up before the Lord"
+      }
+    ]
+  },
+  {
+    "id": "because-he-slew-the-gibeonites-when-and-how-did-saul-slay-them",
+    "mode": "questions",
+    "ref": "2 Samuel 21:1",
+    "appliesTo": [
+      "2 Samuel 21:1"
+    ],
+    "title": "“Because he slew the Gibeonites” — when and how did Saul slay them?",
+    "status": "Context",
+    "summary": "A three-year famine is said to be “for Saul, and for his bloody house, because he slew the Gibeonites”, and seven of Saul’s descendants are put to death for it. The chapter says that Saul “sought to slay them” and that he “consumed” them, but the verses compared do not give the time, place, extent or circumstances of the killing; and a word search finds no Gibeonite named in 1 Samuel, the book that tells Saul’s reign.",
+    "text": "KJV 2 Samuel 21:1: “Then there was a famine in the days of David three years, year after year; and David enquired of the Lord. And the Lord answered, It is for Saul, and for his bloody house, because he slew the Gibeonites.” KJV 21:2: “now the Gibeonites were not of the children of Israel, but of the remnant of the Amorites; and the children of Israel had sworn unto them: and Saul sought to slay them in his zeal to the children of Israel and Judah.” KJV 21:5: “And they answered the king, The man that consumed us, and that devised against us that we should be destroyed from remaining in any of the coasts of Israel,” KJV 21:6: “Let seven men of his sons be delivered unto us, and we will hang them up unto the Lord in Gibeah of Saul” KJV 21:9: “And he delivered them into the hands of the Gibeonites, and they hanged them in the hill before the Lord” KJV 21:14: “And after that God was intreated for the land.” KJV Joshua 9:15: “And Joshua made peace with them, and made a league with them, to let them live: and the princes of the congregation sware unto them.” KJV Joshua 9:17: “Now their cities were Gibeon, and Chephirah, and Beeroth, and Kirjathjearim.” KJV Joshua 9:27: “hewers of wood and drawers of water for the congregation, and for the altar of the Lord” KJV 2 Samuel 4:2: “for Beeroth also was reckoned to Benjamin” KJV 2 Samuel 4:3: “And the Beerothites fled to Gittaim, and were sojourners there until this day.” KJV 1 Samuel 22:19: “And Nob, the city of the priests, smote he with the edge of the sword” Hebrew (WLC) 2 Samuel 21:1: עַל־אֲשֶׁר־הֵמִ֖ית אֶת־הַגִּבְעֹנִֽים [because he put the Gibeonites to death]. 21:2: וַיְבַקֵּ֤שׁ שָׁאוּל֙ לְהַכֹּתָ֔ם בְּקַנֹּאתֹ֥ו לִבְנֵֽי־יִשְׂרָאֵ֖ל וִיהוּדָֽה [and Saul sought to strike them in his zeal for the children of Israel and Judah]. 21:5: הָאִישׁ֙ אֲשֶׁ֣ר כִּלָּ֔נוּ [the man who made an end of us]. Septuagint (Brenton Greek) 2 Samuel 21:1: περὶ οὗ ἐθανάτωσε τοὺς Γαβαωνίτας [because he put the Gibeonites to death]. 21:2: καὶ ἐζήτησε Σαοὺλ πατάξαι αὐτοὺς [and Saul sought to smite them]. 21:5: ὁ ἀνὴρ ὃς συνετέλεσεν ἐφʼ ἡμᾶς καὶ ἐδίωξεν ἡμᾶς [the man who made an end upon us and pursued us]. Fetched from https://bolls.life/get-text/WLC/10/21/ and https://ebible.org/grcbrent/2SA21.htm.",
+    "reasoning": "The chapter does state the charge and its ground. The Lord’s answer names the act (“he slew the Gibeonites”), 21:2 names the oath Israel had sworn and Saul’s motive (“in his zeal to the children of Israel and Judah”), and the Gibeonites describe a man who “consumed us” and planned that they should not remain “in any of the coasts of Israel”. The verses compared state that killing occurred but do not give its time in Saul’s reign, place, number killed or detailed circumstances; 21:1 says “slew”, while 21:2 says “sought to slay”. The charge is laid on “his bloody house” as well as on Saul, and no act of the house is told here. The gap matters to the passage, because a famine and the death of seven men, who are not said in these verses to have taken part, rest on an act that the chapter mentions only by reference.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that the killing took place at Nob, the city of the priests smitten in Saul’s reign (1 Samuel 22:19), on the view that Gibeonites served there as the “hewers of wood and drawers of water … for the altar” of Joshua 9:27; that it is connected with the flight of the people of Beeroth, one of the four Gibeonite cities of Joshua 9:17, told at 2 Samuel 4:3; that it was an act of Saul’s reign that no book narrates. Limits: 1 Samuel 22:19 names priests and a city and does not name Gibeonites; 2 Samuel 4:3 gives no cause for the flight and does not name Saul; “slew” at 21:1 and “sought to slay” at 21:2 can both be true of one campaign that killed some and aimed at all, so they are not set against each other here; that the event is not told does not show that it did not happen; the Greek of 21:5 has the added words “and pursued us”, a wording difference stated here and not proposed as a separate finding. Check made: 2 Samuel 21:1–14 was read in the KJV, verses 1–6 also in the Hebrew and the Greek; a whole-word search of the packaged KJV for “Gibeonite” or “Gibeonites” finds 2 Samuel 21:1, 21:2, 21:3, 21:4 and 21:9, 1 Chronicles 12:4 and Nehemiah 3:7; a search for “Gibeon” finds no verse of 1 Samuel; a search for “Beeroth” finds Deuteronomy 10:6, Joshua 9:17 and 18:25, 2 Samuel 4:2, 4:3, 4:5, 4:9 and 23:37, Ezra 2:25 and Nehemiah 7:29. Those are word searches and a reading of the verses quoted, not a reading of 1 Samuel or of the whole Bible; an account that does not use those names would not be found by them. These checked verses do not say when, where or how Saul slew the Gibeonites. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Samuel 21: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA21.htm"
+      },
+      {
+        "label": "Joshua 9: KJV",
+        "url": "https://ebible.org/eng-kjv/JOS09.htm"
+      },
+      {
+        "label": "2 Samuel 4: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA04.htm"
+      },
+      {
+        "label": "1 Samuel 22: KJV",
+        "url": "https://ebible.org/eng-kjv/1SA22.htm"
+      },
+      {
+        "label": "2 Samuel 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/10/21/"
+      },
+      {
+        "label": "2 Samuel 21: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2SA21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Samuel 21:1",
+        "book": 9,
+        "chapter": 21,
+        "verse": 1
+      },
+      {
+        "label": "2 Samuel 21:2",
+        "book": 9,
+        "chapter": 21,
+        "verse": 2
+      },
+      {
+        "label": "2 Samuel 21:5",
+        "book": 9,
+        "chapter": 21,
+        "verse": 5
+      },
+      {
+        "label": "2 Samuel 21:6",
+        "book": 9,
+        "chapter": 21,
+        "verse": 6
+      },
+      {
+        "label": "2 Samuel 21:9",
+        "book": 9,
+        "chapter": 21,
+        "verse": 9
+      },
+      {
+        "label": "2 Samuel 21:14",
+        "book": 9,
+        "chapter": 21,
+        "verse": 14
+      },
+      {
+        "label": "2 Samuel 4:2",
+        "book": 9,
+        "chapter": 4,
+        "verse": 2
+      },
+      {
+        "label": "2 Samuel 4:3",
+        "book": 9,
+        "chapter": 4,
+        "verse": 3
+      },
+      {
+        "label": "Joshua 9:15",
+        "book": 5,
+        "chapter": 9,
+        "verse": 15
+      },
+      {
+        "label": "Joshua 9:17",
+        "book": 5,
+        "chapter": 9,
+        "verse": 17
+      },
+      {
+        "label": "Joshua 9:27",
+        "book": 5,
+        "chapter": 9,
+        "verse": 27
+      },
+      {
+        "label": "1 Samuel 22:19",
+        "book": 8,
+        "chapter": 22,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Samuel 21:1",
+        "quote": "It is for Saul, and for his bloody house, because he slew the Gibeonites"
+      },
+      {
+        "label": "A",
+        "ref": "2 Samuel 21:2",
+        "quote": "Saul sought to slay them in his zeal to the children of Israel and Judah"
+      }
+    ]
+  },
+  {
+    "id": "after-forty-years-absalom-forty-years-counted-from-what",
+    "mode": "questions",
+    "ref": "2 Samuel 15:7",
+    "appliesTo": [
+      "2 Samuel 15:7"
+    ],
+    "title": "“After forty years” — forty years counted from what, before Absalom asked to go to Hebron?",
+    "status": "Context",
+    "summary": "Absalom’s request to go to Hebron, which opens his revolt, is dated “after forty years”. The verse does not say from what the forty years are counted. The time notes just before it are three years and two years, David’s whole reign is given as forty years, and Absalom is listed among the sons born to David in Hebron.",
+    "text": "KJV 2 Samuel 15:7: “And it came to pass after forty years, that Absalom said unto the king, I pray thee, let me go and pay my vow, which I have vowed unto the Lord, in Hebron.” KJV 15:8: “For thy servant vowed a vow while I abode at Geshur in Syria” KJV 15:1: “And it came to pass after this, that Absalom prepared him chariots and horses” KJV 13:38: “So Absalom fled, and went to Geshur, and was there three years.” KJV 14:28: “So Absalom dwelt two full years in Jerusalem, and saw not the king's face.” KJV 3:2: “And unto David were sons born in Hebron” KJV 3:3: “and the third, Absalom the son of Maacah the daughter of Talmai king of Geshur” KJV 5:4: “David was thirty years old when he began to reign, and he reigned forty years.” KJV 5:5: “In Hebron he reigned over Judah seven years and six months” KJV 1 Kings 2:11: “And the days that David reigned over Israel were forty years” Hebrew (WLC) 2 Samuel 15:7: וַיְהִ֕י מִקֵּ֖ץ אַרְבָּעִ֣ים שָׁנָ֑ה [and it came to pass at the end of forty years]. 5:4: אַרְבָּעִ֥ים שָׁנָ֖ה מָלָֽךְ [forty years he reigned]. Septuagint (Brenton Greek) 2 Samuel 15:7: Καὶ ἐγένετο ἀπὸ τέλους τεσσαράκοντα ἐτῶν, καὶ εἶπεν Ἀβεσσαλὼμ πρὸς τὸν πατέρα αὐτοῦ [and it came to pass from the end of forty years, and Abessalom said to his father]. Fetched from https://bolls.life/get-text/WLC/10/15/, https://bolls.life/get-text/WLC/10/5/ and https://ebible.org/grcbrent/2SA15.htm.",
+    "reasoning": "The verse gives a number and no starting point. The periods the narrative has just named are short: three years at Geshur (13:38) and “two full years” in Jerusalem (14:28), followed by “after this” (15:1). The larger figures stated elsewhere do not supply an evident starting point either. David “reigned forty years” in all (5:4; 1 Kings 2:11), and at 15:7 he is still king, with the revolt and what follows it still to come. Absalom is listed among the sons born to David in Hebron (3:2–3), where David reigned seven years and six months (5:5); if he was born during that Hebron reign, forty years counted from his birth would reach the very end of David’s forty years or pass it. So the passage dates the opening of the revolt by a figure whose reference the verses compared leave unstated, and the order and length of the events of David’s reign depend on how it is taken.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that the forty years run from an earlier event that the verse does not name, such as David’s anointing or the beginning of the kingdom; that the number was once a smaller one. Limits: both editions quoted have “forty” at 15:7, and no text with another number was examined in this session; the statement about Absalom’s birth rests on the condition that he was born while David reigned in Hebron, which 3:2–5 places there without giving a year; the chapters after 15 are not shown to stand in order of time, so the figure is not set here against the length of David’s reign as a contradiction; the vow of 15:8 is dated to the stay at Geshur, which 13:38 gives as three years, and that does not give the forty years a starting point. Brenton’s Greek of 15:7 has “to his father” where the KJV has “unto the king”, a wording difference stated here and not proposed as a separate finding. Check made: 2 Samuel 15:1–12 was read in the KJV, 15:7–8 also in the Hebrew and the Greek; a search of the packaged KJV for “forty years” in 2 Samuel finds 2:10, 5:4 and 15:7, and 2:10 gives the age of Ishbosheth. That is a word search and a reading of the verses quoted, not a reading of the whole book. These checked verses do not say from what the forty years are counted. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Samuel 15: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA15.htm"
+      },
+      {
+        "label": "2 Samuel 13: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA13.htm"
+      },
+      {
+        "label": "2 Samuel 14: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA14.htm"
+      },
+      {
+        "label": "2 Samuel 3: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA03.htm"
+      },
+      {
+        "label": "2 Samuel 5: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA05.htm"
+      },
+      {
+        "label": "1 Kings 2: KJV",
+        "url": "https://ebible.org/eng-kjv/1KI02.htm"
+      },
+      {
+        "label": "2 Samuel 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/10/15/"
+      },
+      {
+        "label": "2 Samuel 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/10/5/"
+      },
+      {
+        "label": "2 Samuel 15: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2SA15.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Samuel 15:7",
+        "book": 9,
+        "chapter": 15,
+        "verse": 7
+      },
+      {
+        "label": "2 Samuel 15:8",
+        "book": 9,
+        "chapter": 15,
+        "verse": 8
+      },
+      {
+        "label": "2 Samuel 15:1",
+        "book": 9,
+        "chapter": 15,
+        "verse": 1
+      },
+      {
+        "label": "2 Samuel 13:38",
+        "book": 9,
+        "chapter": 13,
+        "verse": 38
+      },
+      {
+        "label": "2 Samuel 14:28",
+        "book": 9,
+        "chapter": 14,
+        "verse": 28
+      },
+      {
+        "label": "2 Samuel 3:2",
+        "book": 9,
+        "chapter": 3,
+        "verse": 2
+      },
+      {
+        "label": "2 Samuel 3:3",
+        "book": 9,
+        "chapter": 3,
+        "verse": 3
+      },
+      {
+        "label": "2 Samuel 5:4",
+        "book": 9,
+        "chapter": 5,
+        "verse": 4
+      },
+      {
+        "label": "2 Samuel 5:5",
+        "book": 9,
+        "chapter": 5,
+        "verse": 5
+      },
+      {
+        "label": "1 Kings 2:11",
+        "book": 10,
+        "chapter": 2,
+        "verse": 11
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Samuel 15:7",
+        "quote": "And it came to pass after forty years"
+      }
+    ]
+  },
+  {
+    "id": "ziba-or-mephibosheth-whose-account-of-the-day-david-fled-was-true",
+    "mode": "questions",
+    "ref": "2 Samuel 16:3",
+    "appliesTo": [
+      "2 Samuel 16:3",
+      "2 Samuel 19:27"
+    ],
+    "title": "Ziba or Mephibosheth — whose account of the day David fled was true?",
+    "status": "Context",
+    "summary": "When David flees Jerusalem, Ziba tells him that Mephibosheth has stayed behind expecting to be given “the kingdom of my father”, and David gives Ziba all that was Mephibosheth’s. When David returns, Mephibosheth says “my servant deceived me” and that Ziba “hath slandered thy servant”. David answers, “Thou and Ziba divide the land.” The verses compared do not say which of the two accounts was true.",
+    "text": "KJV 2 Samuel 9:9: “I have given unto thy master's son all that pertained to Saul and to all his house.” KJV 9:10: “Thou therefore, and thy sons, and thy servants, shall till the land for him” KJV 9:13: “So Mephibosheth dwelt in Jerusalem”; “and was lame on both his feet” KJV 4:4: “that he fell, and became lame” KJV 16:1: “behold, Ziba the servant of Mephibosheth met him, with a couple of asses saddled” KJV 16:2: “The asses be for the king's household to ride on” KJV 16:3: “And the king said, And where is thy master's son? And Ziba said unto the king, Behold, he abideth at Jerusalem: for he said, To day shall the house of Israel restore me the kingdom of my father.” KJV 16:4: “Then said the king to Ziba, Behold, thine are all that pertained unto Mephibosheth.” KJV 19:17: “and Ziba the servant of the house of Saul, and his fifteen sons and his twenty servants with him; and they went over Jordan before the king” KJV 19:24: “And Mephibosheth the son of Saul came down to meet the king, and had neither dressed his feet, nor trimmed his beard, nor washed his clothes, from the day the king departed until the day he came again in peace.” KJV 19:25: “Wherefore wentest not thou with me, Mephibosheth?” KJV 19:26: “And he answered, My lord, O king, my servant deceived me: for thy servant said, I will saddle me an ass, that I may ride thereon, and go to the king; because thy servant is lame.” KJV 19:27: “And he hath slandered thy servant unto my lord the king; but my lord the king is as an angel of God: do therefore what is good in thine eyes.” KJV 19:29: “And the king said unto him, Why speakest thou any more of thy matters? I have said, Thou and Ziba divide the land.” KJV 19:30: “And Mephibosheth said unto the king, Yea, let him take all, forasmuch as my lord the king is come again in peace unto his own house.” Hebrew (WLC), where chapter 19 is numbered one verse ahead of the KJV. 2 Samuel 16:3: הַיֹּ֗ום יָשִׁ֤יבוּ לִי֙ בֵּ֣ית יִשְׂרָאֵ֔ל אֵ֖ת מַמְלְכ֥וּת אָבִֽי [today the house of Israel will give back to me the kingdom of my father]. 19:25 (KJV 19:24): וְלֹא־עָשָׂ֨ה רַגְלָ֜יו וְלֹא־עָשָׂ֣ה שְׂפָמֹ֗ו וְאֶת־בְּגָדָיו֙ לֹ֣א כִבֵּ֔ס [and he had not done his feet, and had not done his moustache, and his clothes he had not washed]. 19:27 (KJV 19:26): עַבְדִּ֣י רִמָּ֑נִי כִּֽי־אָמַ֨ר עַבְדְּךָ֜ אֶחְבְּשָׁה־לִּי֩ הַחֲמֹ֨ור [my servant deceived me, for your servant said, I will saddle the ass for myself]. 19:28 (KJV 19:27): וַיְרַגֵּ֣ל בְּעַבְדְּךָ֔ אֶל־אֲדֹנִ֖י הַמֶּ֑לֶךְ [and he slandered your servant to my lord the king]. 19:30 (KJV 19:29): אַתָּ֣ה וְצִיבָ֔א תַּחְלְק֖וּ אֶת־הַשָּׂדֶֽה [you and Ziba shall divide the field]. Septuagint (Brenton Greek), numbered as the Hebrew in chapter 19. 2 Samuel 16:3: σήμερον ἐπιστρέψουσί μοι οἶκος Ἰσραὴλ τὴν βασιλείαν τοῦ πατρός μου [today the house of Israel will return to me the kingdom of my father]. 19:27 (KJV 19:26): ὁ δοῦλός μου παρελογίσατό με, ὅτι εἶπεν ὁ παῖς σου αὐτῷ, ἐπίσαξόν μοι τὴν ὄνον [my servant deceived me, for your servant said to him, Saddle the ass for me]. 19:28 (KJV 19:27): Καὶ μεθώδευσεν ἐν τῷ δούλῳ σου πρὸς τὸν κύριόν μου τὸν βασιλέα [and he dealt craftily with your servant before my lord the king]. 19:30 (KJV 19:29): σὺ καὶ Σιβὰ διελεῖσθε τὸν ἀγρόν [you and Siba shall divide the field]. Fetched from https://bolls.life/get-text/WLC/10/16/, https://bolls.life/get-text/WLC/10/19/, https://ebible.org/grcbrent/2SA16.htm and https://ebible.org/grcbrent/2SA19.htm.",
+    "reasoning": "The narrative reports two speeches that give opposite accounts of why Mephibosheth stayed in Jerusalem. Ziba says Mephibosheth stayed in Jerusalem because he expected the kingdom; Mephibosheth says he meant to ride to the king, that his servant deceived him, and that the servant slandered him. The narrator does add one statement in its own voice: Mephibosheth “had neither dressed his feet, nor trimmed his beard, nor washed his clothes, from the day the king departed until the day he came again in peace” (19:24). It does not say what that shows, and it does not say that Ziba lied or that Mephibosheth did. David’s answer, “Thou and Ziba divide the land”, neither restores the grant of chapter 9 nor confirms the grant of 16:4. Which account is true decides how both of David’s decisions are to be read: whether 16:4 took the land from a loyal man on a false report, and whether 19:29 is a judgment or a refusal to judge.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that Ziba lied to obtain the land, for which the narrator’s statement at 19:24 is offered; that Mephibosheth did hope for the kingdom and Ziba reported it truly, for which his remaining in Jerusalem is offered; that David could not tell which was true and divided the land for that reason. Limits: 19:24 is the narrator’s statement about Mephibosheth’s appearance and is consistent with his account, but the passage draws no conclusion from it; Ziba’s words at 16:3 and Mephibosheth’s at 19:26–27 are speeches of the two men, not statements of the narrator; no reason is given for David’s decision at 19:29, and “I have said” there does not identify which earlier word is meant; Mephibosheth’s reply at 19:30 does not say whether the division was carried out. Wording differences stated here and not proposed as separate findings: at KJV 19:26 the Hebrew has “I will saddle” as the KJV does, while Brenton’s Greek has an order given to the servant, “Saddle the ass for me”; at KJV 19:24 Brenton’s Greek has “son of the son of Saul” where the KJV has “the son of Saul”. Check made: a whole-word search of the packaged KJV for “Ziba” finds 2 Samuel 9:2, 9:3, 9:4, 9:9, 9:10, 9:11, 9:12, 16:1, 16:2, 16:3, 16:4, 19:17 and 19:29, and for “Mephibosheth” 2 Samuel 4:4, 9:6, 9:10, 9:11, 9:12, 9:13, 16:1, 16:4, 19:24, 19:25, 19:30, 21:7 and 21:8, where 21:8 names another man, a son of Saul by Rizpah. All of those verses were read in the KJV, with 2 Samuel 9:1–13, 16:1–4 and 19:24–30; 16:3–4 and KJV 19:24–30 were also read in the Hebrew and the Greek. Those are word searches and a reading of those verses, not a reading of the whole Bible. These checked verses do not say whose account was true. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Samuel 9: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA09.htm"
+      },
+      {
+        "label": "2 Samuel 4: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA04.htm"
+      },
+      {
+        "label": "2 Samuel 16: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA16.htm"
+      },
+      {
+        "label": "2 Samuel 19: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA19.htm"
+      },
+      {
+        "label": "2 Samuel 16: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/10/16/"
+      },
+      {
+        "label": "2 Samuel 19: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/10/19/"
+      },
+      {
+        "label": "2 Samuel 16: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2SA16.htm"
+      },
+      {
+        "label": "2 Samuel 19: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2SA19.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Samuel 16:3",
+        "book": 9,
+        "chapter": 16,
+        "verse": 3
+      },
+      {
+        "label": "2 Samuel 16:1",
+        "book": 9,
+        "chapter": 16,
+        "verse": 1
+      },
+      {
+        "label": "2 Samuel 16:2",
+        "book": 9,
+        "chapter": 16,
+        "verse": 2
+      },
+      {
+        "label": "2 Samuel 16:4",
+        "book": 9,
+        "chapter": 16,
+        "verse": 4
+      },
+      {
+        "label": "2 Samuel 19:17",
+        "book": 9,
+        "chapter": 19,
+        "verse": 17
+      },
+      {
+        "label": "2 Samuel 19:24",
+        "book": 9,
+        "chapter": 19,
+        "verse": 24
+      },
+      {
+        "label": "2 Samuel 19:25",
+        "book": 9,
+        "chapter": 19,
+        "verse": 25
+      },
+      {
+        "label": "2 Samuel 19:26",
+        "book": 9,
+        "chapter": 19,
+        "verse": 26
+      },
+      {
+        "label": "2 Samuel 19:27",
+        "book": 9,
+        "chapter": 19,
+        "verse": 27
+      },
+      {
+        "label": "2 Samuel 19:29",
+        "book": 9,
+        "chapter": 19,
+        "verse": 29
+      },
+      {
+        "label": "2 Samuel 19:30",
+        "book": 9,
+        "chapter": 19,
+        "verse": 30
+      },
+      {
+        "label": "2 Samuel 9:9",
+        "book": 9,
+        "chapter": 9,
+        "verse": 9
+      },
+      {
+        "label": "2 Samuel 9:10",
+        "book": 9,
+        "chapter": 9,
+        "verse": 10
+      },
+      {
+        "label": "2 Samuel 9:13",
+        "book": 9,
+        "chapter": 9,
+        "verse": 13
+      },
+      {
+        "label": "2 Samuel 4:4",
+        "book": 9,
+        "chapter": 4,
+        "verse": 4
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Samuel 16:3",
+        "quote": "for he said, To day shall the house of Israel restore me the kingdom of my father"
+      },
+      {
+        "label": "B",
+        "ref": "2 Samuel 19:27",
+        "quote": "And he hath slandered thy servant unto my lord the king"
+      },
+      {
+        "label": "B",
+        "ref": "2 Samuel 19:26",
+        "quote": "my servant deceived me"
+      }
+    ]
+  },
+  {
+    "id": "again-the-anger-of-the-lord-was-kindled-against-israel-for-what",
+    "mode": "questions",
+    "ref": "2 Samuel 24:1",
+    "appliesTo": [
+      "2 Samuel 24:1"
+    ],
+    "title": "“again the anger of the Lord was kindled against Israel” — for what, before David numbered the people?",
+    "status": "Context",
+    "summary": "The chapter opens with the Lord’s anger already kindled “against Israel”, before describing David being moved to number the people. Seventy thousand die. David says the sin is his and asks of the people, “these sheep, what have they done?” The verses compared name no act of Israel that the anger was for, and do not say to what earlier anger “again” looks back.",
+    "text": "KJV 2 Samuel 24:1: “And again the anger of the Lord was kindled against Israel, and he moved David against them to say, Go, number Israel and Judah.” KJV 24:3: “but why doth my lord the king delight in this thing?” KJV 24:10: “I have sinned greatly in that I have done” KJV 24:15: “and there died of the people from Dan even to Beersheba seventy thousand men” KJV 24:17: “Lo, I have sinned, and I have done wickedly: but these sheep, what have they done?” KJV 21:1: “Then there was a famine in the days of David three years, year after year” KJV 6:7: “And the anger of the Lord was kindled against Uzzah” KJV 1 Chronicles 21:1: “And Satan stood up against Israel, and provoked David to number Israel.” KJV 1 Chronicles 21:3: “why will he be a cause of trespass to Israel?” KJV 1 Chronicles 21:7: “And God was displeased with this thing; therefore he smote Israel.” Hebrew (WLC) 2 Samuel 24:1: וַיֹּ֙סֶף֙ אַף־יְהוָ֔ה לַחֲרֹ֖ות בְּיִשְׂרָאֵ֑ל וַיָּ֨סֶת אֶת־דָּוִ֤ד בָּהֶם֙ [and the anger of the LORD burned again against Israel, and he incited David against them]. 24:17: וְאֵ֥לֶּה הַצֹּ֖אן מֶ֣ה עָשׂ֑וּ [and these, the flock, what have they done]. 1 Chronicles 21:1: וַיַּֽעֲמֹ֥ד שָׂטָ֖ן עַל־יִשְׂרָאֵ֑ל [and an adversary, or Satan, stood against Israel]. Septuagint (Brenton Greek) 2 Samuel 24:1: Καὶ προσέθετο ὀργὴν Κύριος ἐκκαῆναι ἐν Ἰσραήλ, καὶ ἐπέσεισε τὸν Δαυὶδ ἐν αὐτοῖς [and the Lord added wrath to burn in Israel, and stirred up David among them]. 1 Chronicles 21:1: Καὶ ἔστη διάβολος ἐν τῷ Ἰσραήλ [and a slanderer, or the devil, stood in Israel]. Fetched from https://bolls.life/get-text/WLC/10/24/, https://bolls.life/get-text/WLC/13/21/, https://ebible.org/grcbrent/2SA24.htm and https://ebible.org/grcbrent/1CH21.htm.",
+    "reasoning": "In the order of 24:1 the anger comes first and the numbering second: the anger is “against Israel”, and David is moved “against them”. In that presentation, the numbering is not identified as the cause of the opening anger; the sentence’s order alone does not establish an independently dated sequence. The sin the chapter does name is David’s (“I have sinned greatly in that I have done”), and David himself separates the people from it (“these sheep, what have they done?”), yet it is the people who die. “Again” says that this anger follows an earlier one, and the verse does not name it. The parallel at 1 Chronicles 21:1 opens without any statement of anger, and 1 Chronicles 21:7 places God’s displeasure after the numbering, “with this thing”. So the verses compared leave unstated what Israel had done, and the answer bears on how the deaths of 24:15 are to be understood.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the verses quoted state: that “again” looks back to the famine of 21:1, which that verse lays to Saul and his house; that the anger was for Israel’s part in the revolts told earlier in the book; that the people shared in some fault of the numbering itself; that the cause is simply not given. Limits: 24:1 states that the anger was against Israel and does not say it was without cause; David’s question at 24:17 is his own speech and is not a statement by the narrator that the people were innocent; Joab’s words at 1 Chronicles 21:3 speak of “a cause of trespass to Israel” that the numbering would bring, which concerns the numbering and not the earlier anger; the only other verse of 2 Samuel found with the phrase is 6:7, where the anger is against Uzzah, a single man. This record does not take up who moved David, on which 2 Samuel 24:1 and 1 Chronicles 21:1 are the subject of a separate record; the two verses are quoted here only for what they say of the anger. Check made: 2 Samuel 24:1–25 and 1 Chronicles 21:1–8 were read in the KJV, 2 Samuel 24:1, 24:3, 24:10, 24:15 and 24:17 and 1 Chronicles 21:1, 21:3 and 21:7 also in the Hebrew and the Greek; a search of the packaged KJV for “anger of the Lord was kindled” in 2 Samuel finds 6:7 and 24:1. That is a word search and a reading of the verses named, not a reading of the whole book. These checked verses do not say for what the anger of the Lord was kindled against Israel. No H or G is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "2 Samuel 24: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA24.htm"
+      },
+      {
+        "label": "2 Samuel 21: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA21.htm"
+      },
+      {
+        "label": "2 Samuel 6: KJV",
+        "url": "https://ebible.org/eng-kjv/2SA06.htm"
+      },
+      {
+        "label": "1 Chronicles 21: KJV",
+        "url": "https://ebible.org/eng-kjv/1CH21.htm"
+      },
+      {
+        "label": "2 Samuel 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/10/24/"
+      },
+      {
+        "label": "1 Chronicles 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/13/21/"
+      },
+      {
+        "label": "2 Samuel 24: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/2SA24.htm"
+      },
+      {
+        "label": "1 Chronicles 21: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/1CH21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "2 Samuel 24:1",
+        "book": 9,
+        "chapter": 24,
+        "verse": 1
+      },
+      {
+        "label": "2 Samuel 24:3",
+        "book": 9,
+        "chapter": 24,
+        "verse": 3
+      },
+      {
+        "label": "2 Samuel 24:10",
+        "book": 9,
+        "chapter": 24,
+        "verse": 10
+      },
+      {
+        "label": "2 Samuel 24:15",
+        "book": 9,
+        "chapter": 24,
+        "verse": 15
+      },
+      {
+        "label": "2 Samuel 24:17",
+        "book": 9,
+        "chapter": 24,
+        "verse": 17
+      },
+      {
+        "label": "2 Samuel 21:1",
+        "book": 9,
+        "chapter": 21,
+        "verse": 1
+      },
+      {
+        "label": "2 Samuel 6:7",
+        "book": 9,
+        "chapter": 6,
+        "verse": 7
+      },
+      {
+        "label": "1 Chronicles 21:1",
+        "book": 12,
+        "chapter": 21,
+        "verse": 1
+      },
+      {
+        "label": "1 Chronicles 21:3",
+        "book": 12,
+        "chapter": 21,
+        "verse": 3
+      },
+      {
+        "label": "1 Chronicles 21:7",
+        "book": 12,
+        "chapter": 21,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "2 Samuel 24:1",
+        "quote": "And again the anger of the Lord was kindled against Israel"
+      },
+      {
+        "label": "A",
+        "ref": "2 Samuel 24:17",
+        "quote": "but these sheep, what have they done?"
+      }
+    ]
   }
 ]
 ;
