@@ -1,0 +1,883 @@
+{
+  "batch": "job-22-42-q",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "elihu-the-son-of-barachel-why-is-he-not-named-in-the-lords-verdict",
+      "batch": "job-22-42-q",
+      "english": [
+        {
+          "ref": "Job 32:2",
+          "quote": "Then was kindled the wrath of Elihu the son of Barachel the Buzite, of the kindred of Ram: against Job was his wrath kindled, because he justified himself rather than God.",
+          "exact": true
+        },
+        {
+          "ref": "Job 32:3",
+          "quote": "Also against his three friends was his wrath kindled, because they had found no answer, and yet had condemned Job.",
+          "exact": true
+        },
+        {
+          "ref": "Job 32:4",
+          "quote": "Now Elihu had waited till Job had spoken, because they were elder than he.",
+          "exact": true
+        },
+        {
+          "ref": "Job 38:1",
+          "quote": "Then the Lord answered Job out of the whirlwind, and said,",
+          "exact": true
+        },
+        {
+          "ref": "Job 38:2",
+          "quote": "Who is this that darkeneth counsel by words without knowledge?",
+          "exact": true
+        },
+        {
+          "ref": "Job 42:7",
+          "quote": "And it was so, that after the Lord had spoken these words unto Job, the Lord said to Eliphaz the Temanite, My wrath is kindled against thee, and against thy two friends: for ye have not spoken of me the thing that is right, as my servant Job hath.",
+          "exact": true
+        },
+        {
+          "ref": "Job 42:9",
+          "quote": "So Eliphaz the Temanite and Bildad the Shuhite and Zophar the Naamathite went, and did according as the Lord commanded them",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "Μετὰ δὲ τὸ παύσασθαι Ἐλιοὺν τῆς λέξεως, εἶπεν ὁ Κύριος τῷ Ἰὼβ διὰ λαίλαπος καὶ νεφῶν",
+          "stated": {
+            "chapter": 38,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOB38.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 38,
+            "verse": "1"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Job 32:2",
+          "quote": "Then was kindled the wrath of Elihu the son of Barachel the Buzite",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Job 42:7",
+          "quote": "My wrath is kindled against thee, and against thy two friends",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exp-late-17-42-7",
+          "title": "The book corrects its own speakers",
+          "summary": "The ending rejects what Job’s friends said about God.",
+          "reasoning": "A character’s statement should not automatically be treated as the final position of the book. Speaker and narrative outcome matter.",
+          "scope": "Internal literary assessment; does not verify historical conversations."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "two friends",
+          "matches": [
+            "Job 42:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Now when Job's three friends heard of all this evil that was come upon him, they came every one from his own place; Eliphaz the Temanite, and Bildad the Shuhite, and Zophar the Naamathite",
+          "matches": [
+            "Job 2:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Then was kindled the wrath of Elihu the son of Barachel the Buzite, of the kindred of Ram: against Job was his wrath kindled, because he justified himself rather than God.",
+          "matches": [
+            "Job 32:2"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Also against his three friends was his wrath kindled, because they had found no answer, and yet had condemned Job.",
+          "matches": [
+            "Job 32:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Now Elihu had waited till Job had spoken, because they were elder than he.",
+          "matches": [
+            "Job 32:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Then the Lord answered Job out of the whirlwind, and said,",
+          "matches": [
+            "Job 38:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Who is this that darkeneth counsel by words without knowledge?",
+          "matches": [
+            "Job 38:2"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "And it was so, that after the Lord had spoken these words unto Job, the Lord said to Eliphaz the Temanite, My wrath is kindled against thee, and against thy two friends: for ye have not spoken of me the thing that is right, as my servant Job hath.",
+          "matches": [
+            "Job 42:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "So Eliphaz the Temanite and Bildad the Shuhite and Zophar the Naamathite went, and did according as the Lord commanded them",
+          "matches": [
+            "Job 42:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "answered … and said",
+          "matches": [
+            "Job 38:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "spake … and said",
+          "matches": [],
+          "kind": "Supplied speaker-introduction search reproduced at Job 32:6, 34:1, 35:1, 36:1"
+        },
+        {
+          "field": "reasoning",
+          "quote": "proceeded, and said",
+          "matches": [],
+          "kind": "Supplied speaker-introduction search reproduced at Job 32:6, 34:1, 35:1, 36:1"
+        },
+        {
+          "field": "scope",
+          "quote": "answered Job",
+          "matches": [
+            "Job 38:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "two friends",
+          "matches": [
+            "Job 42:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "to Job",
+          "matches": [
+            "Job 42:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "Elihu",
+          "matches": [
+            "Job 32:2",
+            "Job 32:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "Shared references concern distinct findings or context: The book corrects its own speakers. No duplicate of the edition contrast or material question."
+    },
+    {
+      "id": "the-thing-that-is-right-as-my-servant-job-hath-which-words-of-job",
+      "batch": "job-22-42-q",
+      "english": [
+        {
+          "ref": "Job 42:7",
+          "quote": "And it was so, that after the Lord had spoken these words unto Job, the Lord said to Eliphaz the Temanite, My wrath is kindled against thee, and against thy two friends: for ye have not spoken of me the thing that is right, as my servant Job hath.",
+          "exact": true
+        },
+        {
+          "ref": "Job 38:2",
+          "quote": "Who is this that darkeneth counsel by words without knowledge?",
+          "exact": true
+        },
+        {
+          "ref": "Job 40:2",
+          "quote": "Shall he that contendeth with the Almighty instruct him? he that reproveth God, let him answer it.",
+          "exact": true
+        },
+        {
+          "ref": "Job 40:8",
+          "quote": "Wilt thou also disannul my judgment? wilt thou condemn me, that thou mayest be righteous?",
+          "exact": true
+        },
+        {
+          "ref": "Job 40:4",
+          "quote": "Behold, I am vile; what shall I answer thee? I will lay mine hand upon my mouth.",
+          "exact": true
+        },
+        {
+          "ref": "Job 42:3",
+          "quote": "Who is he that hideth counsel without knowledge? therefore have I uttered that I understood not; things too wonderful for me, which I knew not.",
+          "exact": true
+        },
+        {
+          "ref": "Job 42:6",
+          "quote": "Wherefore I abhor myself, and repent in dust and ashes.",
+          "exact": true
+        }
+      ],
+      "language": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Job 42:7",
+          "quote": "ye have not spoken of me the thing that is right, as my servant Job hath",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exp-late-17-42-7",
+          "title": "The book corrects its own speakers",
+          "summary": "The ending rejects what Job’s friends said about God.",
+          "reasoning": "A character’s statement should not automatically be treated as the final position of the book. Speaker and narrative outcome matter.",
+          "scope": "Internal literary assessment; does not verify historical conversations."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Ye have not spoken of me the thing that is right, as my servant Job hath",
+          "matches": [
+            "Job 42:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "And it was so, that after the Lord had spoken these words unto Job, the Lord said to Eliphaz the Temanite, My wrath is kindled against thee, and against thy two friends: for ye have not spoken of me the thing that is right, as my servant Job hath.",
+          "matches": [
+            "Job 42:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "in that ye have not spoken of me the thing which is right, like my servant Job",
+          "matches": [
+            "Job 42:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Who is this that darkeneth counsel by words without knowledge?",
+          "matches": [
+            "Job 38:2"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Shall he that contendeth with the Almighty instruct him? he that reproveth God, let him answer it.",
+          "matches": [
+            "Job 40:2"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Wilt thou also disannul my judgment? wilt thou condemn me, that thou mayest be righteous?",
+          "matches": [
+            "Job 40:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Behold, I am vile; what shall I answer thee? I will lay mine hand upon my mouth.",
+          "matches": [
+            "Job 40:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Who is he that hideth counsel without knowledge? therefore have I uttered that I understood not; things too wonderful for me, which I knew not.",
+          "matches": [
+            "Job 42:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Wherefore I abhor myself, and repent in dust and ashes.",
+          "matches": [
+            "Job 42:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "as my servant Job",
+          "matches": [
+            "Job 42:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "Shared references concern distinct findings or context: The book corrects its own speakers. No duplicate of the edition contrast or material question."
+    },
+    {
+      "id": "behemoth-and-leviathan-what-creatures-are-they",
+      "batch": "job-22-42-q",
+      "english": [
+        {
+          "ref": "Job 40:15",
+          "quote": "Behold now behemoth, which I made with thee; he eateth grass as an ox.",
+          "exact": true
+        },
+        {
+          "ref": "Job 40:17",
+          "quote": "He moveth his tail like a cedar",
+          "exact": true
+        },
+        {
+          "ref": "Job 40:23",
+          "quote": "Behold, he drinketh up a river, and hasteth not",
+          "exact": true
+        },
+        {
+          "ref": "Job 41:1",
+          "quote": "Canst thou draw out leviathan with an hook? or his tongue with a cord which thou lettest down?",
+          "exact": true
+        },
+        {
+          "ref": "Job 41:19",
+          "quote": "Out of his mouth go burning lamps, and sparks of fire leap out.",
+          "exact": true
+        },
+        {
+          "ref": "Job 41:21",
+          "quote": "His breath kindleth coals, and a flame goeth out of his mouth.",
+          "exact": true
+        },
+        {
+          "ref": "Job 41:34",
+          "quote": "He beholdeth all high things: he is a king over all the children of pride.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הִנֵּה־נָ֣א בְ֭הֵמֹות",
+          "stated": {
+            "chapter": 40,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/18/40/",
+              "verse": 15
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 40,
+            "verse": "15"
+          }
+        },
+        {
+          "quote": "תִּמְשֹׁ֣ךְ לִוְיָתָ֣ן בְּחַכָּ֑ה",
+          "stated": {
+            "chapter": 40,
+            "verse": 25
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/18/40/",
+              "verse": 25
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 40,
+            "verse": "25"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Job 40:15",
+          "quote": "Behold now behemoth, which I made with thee",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Job 41:1",
+          "quote": "Canst thou draw out leviathan with an hook?",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "text",
+          "quote": "Behold now behemoth, which I made with thee; he eateth grass as an ox.",
+          "matches": [
+            "Job 40:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "He moveth his tail like a cedar",
+          "matches": [
+            "Job 40:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Behold, he drinketh up a river, and hasteth not",
+          "matches": [
+            "Job 40:23"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Canst thou draw out leviathan with an hook? or his tongue with a cord which thou lettest down?",
+          "matches": [
+            "Job 41:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Out of his mouth go burning lamps, and sparks of fire leap out.",
+          "matches": [
+            "Job 41:19"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "His breath kindleth coals, and a flame goeth out of his mouth.",
+          "matches": [
+            "Job 41:21"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "He beholdeth all high things: he is a king over all the children of pride.",
+          "matches": [
+            "Job 41:34"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Thou brakest the heads of leviathan in pieces",
+          "matches": [
+            "Psalms 74:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "There go the ships: there is that leviathan, whom thou hast made to play therein.",
+          "matches": [
+            "Psalms 104:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "shall punish leviathan the piercing serpent, even leviathan that crooked serpent; and he shall slay the dragon that is in the sea",
+          "matches": [
+            "Isaiah 27:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "all the children of pride",
+          "matches": [
+            "Job 41:34"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "the dragon that is in the sea",
+          "matches": [
+            "Isaiah 27:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "beasts",
+          "matches": [],
+          "kind": "Researcher plain rendering of verified Greek wording; not a KJV quotation"
+        },
+        {
+          "field": "scope",
+          "quote": "behemoth",
+          "matches": [
+            "Job 40:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "leviathan",
+          "matches": [
+            "Job 41:1",
+            "Psalms 74:14",
+            "Psalms 104:26",
+            "Isaiah 27:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. All existing titles/subjects and all six ENTRIES studies reviewed."
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/18/1/",
+    "https://bolls.life/get-text/WLC/18/2/",
+    "https://ebible.org/grcbrent/JOB01.htm",
+    "https://ebible.org/grcbrent/JOB02.htm",
+    "https://bolls.life/get-text/WLC/18/3/",
+    "https://bolls.life/get-text/WLC/18/40/",
+    "https://ebible.org/grcbrent/JOB03.htm",
+    "https://bolls.life/get-text/WLC/18/6/",
+    "https://ebible.org/grcbrent/JOB06.htm",
+    "https://bolls.life/get-text/WLC/18/13/",
+    "https://ebible.org/grcbrent/JOB13.htm",
+    "https://bolls.life/get-text/WLC/18/19/",
+    "https://ebible.org/grcbrent/JOB19.htm",
+    "https://ebible.org/grcbrent/JOB42.htm",
+    "https://bolls.life/get-text/WLC/18/38/",
+    "https://ebible.org/grcbrent/JOB38.htm",
+    "https://bolls.life/get-text/WLC/18/26/",
+    "https://ebible.org/grcbrent/JOB26.htm",
+    "https://bolls.life/get-text/WLC/18/29/",
+    "https://ebible.org/grcbrent/JOB29.htm",
+    "https://bolls.life/get-text/WLC/18/33/",
+    "https://ebible.org/grcbrent/JOB33.htm",
+    "https://ebible.org/grcbrent/JOB40.htm",
+    "https://bolls.life/get-text/WLC/18/42/",
+    "https://ebible.org/eng-Brenton/JOB29.htm",
+    "https://ebible.org/eng-Brenton/JOB40.htm",
+    "https://ebible.org/eng-Brenton/JOB42.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 544,
+  "studiesChecked": 6,
+  "brentonChecks": [
+    {
+      "url": "https://ebible.org/eng-Brenton/JOB29.htm",
+      "printedLabel": "18",
+      "quote": "the stem of a palm-tree",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/JOB40.htm",
+      "printedLabel": "25",
+      "quote": "the serpent",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/JOB42.htm",
+      "printedLabel": "11",
+      "quote": "even of unstamped gold",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/JOB42.htm",
+      "printedLabel": "14",
+      "quote": "he called the first, Day, and the second, Casia, and the third, Amalthæa's horn",
+      "exact": true
+    }
+  ],
+  "searches": {
+    "Satan": [
+      "1 Chronicles 21:1",
+      "Job 1:6",
+      "Job 1:7",
+      "Job 1:8",
+      "Job 1:9",
+      "Job 1:12",
+      "Job 2:1",
+      "Job 2:2",
+      "Job 2:3",
+      "Job 2:4",
+      "Job 2:6",
+      "Job 2:7",
+      "Psalms 109:6",
+      "Zechariah 3:1",
+      "Zechariah 3:2",
+      "Matthew 4:10",
+      "Matthew 12:26",
+      "Matthew 16:23",
+      "Mark 1:13",
+      "Mark 3:23",
+      "Mark 3:26",
+      "Mark 4:15",
+      "Mark 8:33",
+      "Luke 4:8",
+      "Luke 10:18",
+      "Luke 11:18",
+      "Luke 13:16",
+      "Luke 22:3",
+      "Luke 22:31",
+      "John 13:27",
+      "Acts 5:3",
+      "Acts 26:18",
+      "Romans 16:20",
+      "1 Corinthians 5:5",
+      "1 Corinthians 7:5",
+      "2 Corinthians 2:11",
+      "2 Corinthians 11:14",
+      "2 Corinthians 12:7",
+      "1 Thessalonians 2:18",
+      "2 Thessalonians 2:9",
+      "1 Timothy 1:20",
+      "1 Timothy 5:15",
+      "Revelation 2:9",
+      "Revelation 2:13",
+      "Revelation 2:24",
+      "Revelation 3:9",
+      "Revelation 12:9",
+      "Revelation 20:2",
+      "Revelation 20:7"
+    ],
+    "Uz": [
+      "Genesis 10:23",
+      "Genesis 36:28",
+      "1 Chronicles 1:17",
+      "1 Chronicles 1:42",
+      "Job 1:1",
+      "Jeremiah 25:20",
+      "Lamentations 4:21"
+    ],
+    "redeemer": [
+      "Job 19:25",
+      "Psalms 19:14",
+      "Psalms 78:35",
+      "Proverbs 23:11",
+      "Isaiah 41:14",
+      "Isaiah 43:14",
+      "Isaiah 44:6",
+      "Isaiah 44:24",
+      "Isaiah 47:4",
+      "Isaiah 48:17",
+      "Isaiah 49:7",
+      "Isaiah 49:26",
+      "Isaiah 54:5",
+      "Isaiah 54:8",
+      "Isaiah 59:20",
+      "Isaiah 60:16",
+      "Isaiah 63:16",
+      "Jeremiah 50:34"
+    ],
+    "Elihu": [
+      "1 Samuel 1:1",
+      "1 Chronicles 12:20",
+      "1 Chronicles 26:7",
+      "1 Chronicles 27:18",
+      "Job 32:2",
+      "Job 32:4",
+      "Job 32:5",
+      "Job 32:6",
+      "Job 34:1",
+      "Job 35:1",
+      "Job 36:1"
+    ],
+    "behemoth": [
+      "Job 40:15"
+    ],
+    "leviathan": [
+      "Job 41:1",
+      "Psalms 74:14",
+      "Psalms 104:26",
+      "Isaiah 27:1"
+    ],
+    "concubine": [
+      "Genesis 22:24",
+      "Genesis 35:22",
+      "Genesis 36:12",
+      "Judges 8:31",
+      "Judges 19:1",
+      "Judges 19:2",
+      "Judges 19:9",
+      "Judges 19:10",
+      "Judges 19:24",
+      "Judges 19:25",
+      "Judges 19:27",
+      "Judges 19:29",
+      "Judges 20:4",
+      "Judges 20:5",
+      "Judges 20:6",
+      "2 Samuel 3:7",
+      "2 Samuel 21:11",
+      "1 Chronicles 1:32",
+      "1 Chronicles 2:46",
+      "1 Chronicles 2:48",
+      "1 Chronicles 7:14"
+    ],
+    "repent": [
+      "Genesis 6:6",
+      "Genesis 6:7",
+      "Exodus 13:17",
+      "Exodus 32:12",
+      "Exodus 32:14",
+      "Numbers 23:19",
+      "Deuteronomy 32:36",
+      "Judges 2:18",
+      "Judges 21:6",
+      "Judges 21:15",
+      "1 Samuel 15:11",
+      "1 Samuel 15:29",
+      "1 Samuel 15:35",
+      "2 Samuel 24:16",
+      "1 Kings 8:47",
+      "1 Chronicles 21:15",
+      "Job 42:6",
+      "Psalms 90:13",
+      "Psalms 106:45",
+      "Psalms 110:4",
+      "Psalms 135:14",
+      "Jeremiah 4:28",
+      "Jeremiah 8:6",
+      "Jeremiah 15:6",
+      "Jeremiah 18:8",
+      "Jeremiah 18:10",
+      "Jeremiah 20:16",
+      "Jeremiah 26:3",
+      "Jeremiah 26:13",
+      "Jeremiah 26:19",
+      "Jeremiah 31:19",
+      "Jeremiah 42:10",
+      "Ezekiel 14:6",
+      "Ezekiel 18:30",
+      "Ezekiel 24:14",
+      "Hosea 11:8",
+      "Hosea 13:14",
+      "Joel 2:13",
+      "Joel 2:14",
+      "Amos 7:3",
+      "Amos 7:6",
+      "Jonah 3:9",
+      "Jonah 3:10",
+      "Jonah 4:2",
+      "Zechariah 8:14",
+      "Matthew 3:2",
+      "Matthew 3:8",
+      "Matthew 3:11",
+      "Matthew 4:17",
+      "Matthew 9:13",
+      "Matthew 11:20",
+      "Matthew 11:21",
+      "Matthew 12:41",
+      "Matthew 21:29",
+      "Matthew 21:32",
+      "Matthew 27:3",
+      "Mark 1:4",
+      "Mark 1:15",
+      "Mark 2:17",
+      "Mark 6:12",
+      "Luke 3:3",
+      "Luke 3:8",
+      "Luke 5:32",
+      "Luke 10:13",
+      "Luke 11:32",
+      "Luke 13:3",
+      "Luke 13:5",
+      "Luke 15:7",
+      "Luke 15:10",
+      "Luke 16:30",
+      "Luke 17:3",
+      "Luke 17:4",
+      "Luke 24:47",
+      "Acts 2:38",
+      "Acts 3:19",
+      "Acts 5:31",
+      "Acts 8:22",
+      "Acts 11:18",
+      "Acts 13:24",
+      "Acts 17:30",
+      "Acts 19:4",
+      "Acts 20:21",
+      "Acts 26:20",
+      "Romans 2:4",
+      "Romans 11:29",
+      "2 Corinthians 7:8",
+      "2 Corinthians 7:9",
+      "2 Corinthians 7:10",
+      "2 Corinthians 12:21",
+      "2 Timothy 2:25",
+      "Hebrews 6:1",
+      "Hebrews 6:6",
+      "Hebrews 7:21",
+      "Hebrews 12:17",
+      "2 Peter 3:9",
+      "Revelation 2:5",
+      "Revelation 2:16",
+      "Revelation 2:21",
+      "Revelation 2:22",
+      "Revelation 3:3",
+      "Revelation 3:19",
+      "Revelation 9:20",
+      "Revelation 9:21",
+      "Revelation 16:9",
+      "Revelation 16:11"
+    ],
+    "speakerIntroductions": [
+      "Job 32:6",
+      "Job 34:1",
+      "Job 35:1",
+      "Job 36:1"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "elihu-the-son-of-barachel-why-is-he-not-named-in-the-lords-verdict",
+    "file": "job-22-42-q-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Removed boilerplate claiming Hebrew quotations that this record does not contain. Shared references concern distinct findings or context: The book corrects its own speakers. No duplicate of the edition contrast or material question.",
+    "tags": [
+      "Q"
+    ],
+    "operation": "new",
+    "needsOwner": false
+  },
+  {
+    "id": "the-thing-that-is-right-as-my-servant-job-hath-which-words-of-job",
+    "file": "job-22-42-q-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Removed empty fetch attribution from KJV-only record. Removed boilerplate claiming Hebrew quotations that this record does not contain. Shared references concern distinct findings or context: The book corrects its own speakers. No duplicate of the edition contrast or material question.",
+    "tags": [
+      "Q"
+    ],
+    "operation": "new",
+    "needsOwner": false
+  },
+  {
+    "id": "behemoth-and-leviathan-what-creatures-are-they",
+    "file": "job-22-42-q-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Made the proposed implications readings rather than a settled division of the text. No shared-reference duplicate. All existing titles/subjects and all six ENTRIES studies reviewed.",
+    "tags": [
+      "Q"
+    ],
+    "operation": "new",
+    "needsOwner": false
+  }
+]

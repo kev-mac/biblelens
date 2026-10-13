@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 544,
+    "evidenceRecords": 575,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 441,
-    "annotatedVerses": 2899
+    "chaptersWithAnnotations": 453,
+    "annotatedVerses": 2929
   },
   "byBook": [
     {
@@ -117,8 +117,8 @@
     {
       "book": "Job",
       "chapters": 42,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 12
+      "chaptersWithAnnotations": 15,
+      "annotatedVerses": 42
     },
     {
       "book": "Psalms",
@@ -9254,27 +9254,66 @@
       "book": "Job",
       "bookId": 17,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sons-of-god-before-the-lord-or-angels-of-god-greek",
+        "he-will-curse-thee-to-thy-face-or-bless-thee-greek",
+        "sabeans-and-chaldeans-or-spoilers-and-horsemen-greek",
+        "job-offered-burnt-offerings-greek-adds-one-calf-for-a-sin-offering",
+        "satan-came-also-among-the-sons-of-god-what-is-his-standing",
+        "a-man-in-the-land-of-uz-where-and-when-did-job-live"
+      ],
+      "annotatedVerses": [
+        1,
+        5,
+        6,
+        11,
+        15,
+        17
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Job",
       "bookId": 17,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sons-of-god-before-the-lord-or-angels-of-god-greek",
+        "he-will-curse-thee-to-thy-face-or-bless-thee-greek",
+        "jobs-wife-curse-god-and-die-greek-has-a-longer-speech",
+        "jobs-three-friends-temanite-shuhite-naamathite-or-kings-greek",
+        "thou-movedst-me-against-him-or-thou-hast-said-to-destroy-his-substance-greek",
+        "satan-came-also-among-the-sons-of-god-what-is-his-standing"
+      ],
+      "annotatedVerses": [
+        1,
+        3,
+        5,
+        9,
+        11
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Job",
       "bookId": 17,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ready-to-raise-up-their-mourning-or-the-great-sea-monster-greek"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9299,9 +9338,15 @@
       "book": "Job",
       "bookId": 17,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "taste-in-the-white-of-an-egg-or-in-empty-words-greek"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9362,9 +9407,15 @@
       "book": "Job",
       "bookId": 17,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "though-he-slay-me-yet-will-i-trust-in-him-greek-has-no-trust"
+      ],
+      "annotatedVerses": [
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9416,9 +9467,20 @@
       "book": "Job",
       "bookId": 17,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "children-of-mine-own-body-or-sons-of-my-concubines-greek",
+        "in-my-flesh-shall-i-see-god-or-to-raise-up-my-skin-greek",
+        "i-know-that-my-redeemer-liveth-who-is-the-redeemer"
+      ],
+      "annotatedVerses": [
+        17,
+        25,
+        26
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9480,9 +9542,12 @@
       "bookId": 17,
       "chapter": 26,
       "annotationIds": [
-        "exp-late-17-26-7"
+        "exp-late-17-26-7",
+        "smiteth-through-the-proud-and-crooked-serpent-or-sea-monster-and-apostate-dragon-greek",
+        "dead-things-are-formed-from-under-the-waters-or-giants-greek"
       ],
       "annotatedVerses": [
+        5,
         7,
         8,
         9,
@@ -9492,7 +9557,8 @@
         13
       ],
       "modes": [
-        "science"
+        "science",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -9518,9 +9584,15 @@
       "book": "Job",
       "bookId": 17,
       "chapter": 29,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "multiply-my-days-as-the-sand-or-as-the-stem-of-a-palm-tree-greek"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9545,18 +9617,30 @@
       "book": "Job",
       "bookId": 17,
       "chapter": 32,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "elihu-the-son-of-barachel-why-is-he-not-named-in-the-lords-verdict"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Job",
       "bookId": 17,
       "chapter": 33,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-messenger-an-interpreter-one-among-a-thousand-or-a-thousand-death-bearing-angels-greek"
+      ],
+      "annotatedVerses": [
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9607,9 +9691,15 @@
       "book": "Job",
       "bookId": 17,
       "chapter": 38,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "morning-stars-sang-together-or-when-the-stars-were-made-greek"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9625,18 +9715,35 @@
       "book": "Job",
       "bookId": 17,
       "chapter": 40,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "behold-now-behemoth-or-wild-beasts-and-played-with-by-his-angels-greek",
+        "behemoth-and-leviathan-what-creatures-are-they"
+      ],
+      "annotatedVerses": [
+        15,
+        19
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Job",
       "bookId": 17,
       "chapter": 41,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "canst-thou-draw-out-leviathan-with-an-hook-or-a-dragon-greek",
+        "behemoth-and-leviathan-what-creatures-are-they"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9644,15 +9751,30 @@
       "bookId": 17,
       "chapter": 42,
       "annotationIds": [
-        "exp-late-17-42-7"
+        "exp-late-17-42-7",
+        "i-abhor-myself-and-repent-in-dust-and-ashes-greek-has-no-repenting",
+        "not-spoken-of-me-the-thing-which-is-right-like-my-servant-job-or-against-my-servant-job-greek",
+        "a-piece-of-money-and-an-earring-of-gold-or-a-lamb-and-four-drachms-of-gold-greek",
+        "jemima-kezia-and-kerenhappuch-or-day-casia-and-amaltheas-horn-greek",
+        "job-lived-an-hundred-and-forty-years-or-a-hundred-and-seventy-greek",
+        "so-job-died-being-old-and-full-of-days-greek-adds-an-ending",
+        "elihu-the-son-of-barachel-why-is-he-not-named-in-the-lords-verdict",
+        "the-thing-that-is-right-as-my-servant-job-hath-which-words-of-job"
       ],
       "annotatedVerses": [
+        6,
         7,
         8,
-        9
+        9,
+        11,
+        14,
+        16,
+        17
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
