@@ -1,0 +1,86 @@
+[
+  {
+    "id": "because-he-slew-the-gibeonites-when-and-how-did-saul-slay-them",
+    "file": "2-samuel-1-24-q-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Distinct Q about the circumstances of Saul’s killing of Gibeonites, not Joshua’s covenant legality. Corrected broad statements that what was done is unknown: killing is stated, while time, place, extent and circumstances are unspecified. Nob/Beeroth links remain possible readings.",
+    "changes": [
+      {
+        "field": "summary",
+        "from": "do not say when this was done, where, or what was done;",
+        "to": "do not give the time, place, extent or circumstances of the killing;"
+      },
+      {
+        "field": "reasoning",
+        "from": "What the verses compared do not give is the event: no time in Saul’s reign, no place, no number, and no account of what was done;",
+        "to": "The verses compared state that killing occurred but do not give its time in Saul’s reign, place, number killed or detailed circumstances;"
+      }
+    ],
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "appliesTo": [
+      "2 Samuel 21:1"
+    ]
+  },
+  {
+    "id": "after-forty-years-absalom-forty-years-counted-from-what",
+    "file": "2-samuel-1-24-q-records.json",
+    "decision": "accepted as written",
+    "reason": "Distinct Q about the unstated starting point of forty years. Conditional birth arithmetic and nonchronological chapter possibilities retained; no alternate number verified or conflict asserted.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "appliesTo": [
+      "2 Samuel 15:7"
+    ]
+  },
+  {
+    "id": "ziba-or-mephibosheth-whose-account-of-the-day-david-fled-was-true",
+    "file": "2-samuel-1-24-q-records.json",
+    "decision": "accepted as written",
+    "reason": "Distinct Q about two reported speeches rather than a narrator contradiction. Retained A and B sides under the standing display contract. Verified WLC/Brenton chapter 19 numbers one ahead of KJV; David’s division is not assumed to establish either account’s truth.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "appliesTo": [
+      "2 Samuel 16:3",
+      "2 Samuel 19:27"
+    ]
+  },
+  {
+    "id": "again-the-anger-of-the-lord-was-kindled-against-israel-for-what",
+    "file": "2-samuel-1-24-q-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Distinct Q about the cause of anger against Israel, not the census agent or totals study. Narrowed prose to narrative presentation instead of establishing an independent event chronology or assuming Israel’s innocence.",
+    "changes": [
+      {
+        "field": "title",
+        "from": "“Again the anger of the Lord was kindled against Israel”",
+        "to": "“again the anger of the Lord was kindled against Israel”"
+      },
+      {
+        "field": "summary",
+        "from": "and only then is David moved to number the people.",
+        "to": "before describing David being moved to number the people."
+      },
+      {
+        "field": "reasoning",
+        "from": "The numbering therefore is not presented as the cause of that anger.",
+        "to": "In that presentation, the numbering is not identified as the cause of the opening anger; the sentence’s order alone does not establish an independently dated sequence."
+      }
+    ],
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "appliesTo": [
+      "2 Samuel 24:1"
+    ]
+  }
+]

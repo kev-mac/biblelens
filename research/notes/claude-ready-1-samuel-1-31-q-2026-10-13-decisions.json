@@ -1,0 +1,91 @@
+[
+  {
+    "id": "bring-me-up-samuel-by-what-means-did-samuel-come-up-at-endor",
+    "file": "1-samuel-1-31-q-records.json",
+    "decision": "accepted as written",
+    "reason": "Distinct Q about how Samuel appeared and why the woman cried, rather than Saul’s enquiry or the Urim. Narrative identification as Samuel and possible readings retained; no act or mechanism inferred.",
+    "changes": [],
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "appliesTo": [
+      "1 Samuel 28:12"
+    ]
+  },
+  {
+    "id": "what-became-of-shiloh-after-the-ark-of-god-was-taken",
+    "file": "1-samuel-1-31-q-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Distinct Q about what happened to the Shiloh sanctuary, rather than the Shechem/Shiloh assembly location or the Shiloh name in Genesis. Narrowed whole-book absence and inferred priesthood movement to the supplied compared passages; Claude explicitly did not read the whole book.",
+    "changes": [
+      {
+        "field": "summary",
+        "from": "After that the book tells nothing done at Shiloh: the returned ark goes to Kirjathjearim, and the priests and the shewbread are next found at Nob.",
+        "to": "The compared passages do not narrate what happened to the sanctuary at Shiloh: the returned ark goes to Kirjathjearim, and priests with the shewbread are later described at Nob."
+      },
+      {
+        "field": "reasoning",
+        "from": "The last thing told there is the arrival of the news that the ark was taken (4:12 and the verses after it).",
+        "to": "The cited scene at Shiloh reports the arrival of news that the ark was taken (4:12 and the verses after it)."
+      },
+      {
+        "field": "reasoning",
+        "from": "decides how the move of the priests to Nob, the separate resting place of the ark and Jeremiah’s warning are to be read.",
+        "to": "bears on how the later priestly setting at Nob, the separate resting place of the ark and Jeremiah’s warning are read; these verses do not directly narrate a move of the priesthood from Shiloh to Nob."
+      }
+    ],
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "appliesTo": [
+      "1 Samuel 4:11"
+    ]
+  },
+  {
+    "id": "michal-took-an-image-what-was-it-and-how-came-it-to-be-in-davids-house",
+    "file": "1-samuel-1-31-q-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Distinct Q about the identity, ownership and use of Michal’s object; Gideon’s ephod is a different object and question. Removed the inference that the definite article establishes prior household knowledge. No act of worship or V qualification inferred. Removed a Brenton English quotation attribution because its English edition address was not supplied; verified Greek retained.",
+    "changes": [
+      {
+        "field": "reasoning",
+        "from": "and the Hebrew gives it the definite article: “the teraphim”, as of a thing known to be in the house.",
+        "to": "and the Hebrew gives it the definite article: “the teraphim”. The article alone does not establish its ownership or prior use in the household."
+      },
+      {
+        "field": "text",
+        "from": "[and Melchol took the kenotaphia; Brenton’s English prints “images”]",
+        "to": "[and Melchol took the kenotaphia]"
+      }
+    ],
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "appliesTo": [
+      "1 Samuel 19:13"
+    ]
+  },
+  {
+    "id": "samuel-wrote-the-manner-of-the-kingdom-in-a-book-what-did-it-say",
+    "file": "1-samuel-1-31-q-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Distinct Q about Samuel’s written royal document, not Saul’s legitimacy or Solomon’s law violations. Replaced the asserted contents and title with a possible bearing on kingship; the verse describes a subject without reproducing the writing.",
+    "changes": [
+      {
+        "field": "reasoning",
+        "from": "so its contents would state on what terms Israel had a king. The verse gives its title and nothing of what it said.",
+        "to": "so it may bear on the terms of Israel’s kingship. The verse names its subject without reproducing its contents."
+      }
+    ],
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "appliesTo": [
+      "1 Samuel 10:25"
+    ]
+  }
+]
