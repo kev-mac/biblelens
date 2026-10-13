@@ -1,15 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover,interactive-widget=resizes-content"><meta name="description" content="Read scripture closely. Compare claims, trace sources, and keep your own research notes."><meta name="theme-color" content="#f2f2f2"><title>Scripture Lens</title><link rel="stylesheet" href="style.css"><script defer src="data.js"></script><script defer src="app.js"></script><script defer src="red-letters.js"></script><script defer src="reader.js"></script><script defer src="mobile.js"></script><script defer src="citations.js"></script></head><body>
 <a class="skip" href="#main">Skip to research</a><header><a class="brand" href="#explore"><span class="mark">SL</span><span>Scripture <b>Lens</b></span></a><nav aria-label="Main navigation"><button data-view="explore" class="active">Read</button><button data-view="chat">Chat</button><button data-view="saved">Saved <span id="save-count">0</span></button><button data-view="method">About</button></nav><button id="theme" class="icon" aria-label="Toggle dark mode">◐</button></header>
 <main id="main"><section id="explore-view">
-<div class="home-heading"><h1>Read</h1><p>Read a chapter. Compare meaning, history, contradictions, science, and unanswered questions.</p></div>
+<div class="home-heading sr-only"><h1>Read</h1><p>Read a chapter. Compare meaning, history, contradictions, science, and unanswered questions.</p></div>
 <section class="chapter-workspace" aria-label="Bible reader">
-<div class="reader-toolbar">
+<button type="button" id="reader-picker" class="reader-picker" aria-haspopup="dialog" aria-controls="reader-settings" aria-expanded="false"><span id="reader-picker-label">Genesis 1</span><span aria-hidden="true">⌄</span></button><div id="reader-toolbar-home"><div class="reader-toolbar">
 <label>Book<select id="book-select" aria-label="Bible book"><option>Loading…</option></select></label>
 <label>Chapter<select id="chapter-select" aria-label="Chapter"><option>1</option></select></label>
 <label>Translation<select id="reader-edition"><option value="kjv">KJV</option><option value="web">WEB</option><option value="asv">ASV</option></select></label>
 <div class="reader-actions"><div class="compare-control"><span id="compare-label">Compare</span><button type="button" id="reader-compare" role="switch" aria-labelledby="compare-label" aria-checked="true" value="on"><span class="switch-track" aria-hidden="true"><span></span></span><span id="reader-compare-state">On</span></button></div>
 <div class="reader-nav"><button id="reader-font" class="secondary" aria-label="Change all text size">A+</button></div></div>
 </div>
+</div><dialog id="reader-settings" class="reader-settings" aria-labelledby="reader-settings-title"><div class="sheet-heading"><h2 id="reader-settings-title">Reader settings</h2><button type="button" id="reader-settings-close" class="icon" aria-label="Close reader settings">✕</button></div><div id="reader-settings-controls"></div></dialog>
 <div class="selection-bar"><span id="reader-status" aria-live="polite">Loading chapter…</span><div><button id="clear-selection" class="text-button" hidden>Clear</button><button id="prev-top" class="chapter-round" aria-label="Previous chapter">←</button><button id="next-top" class="chapter-round" aria-label="Next chapter">→</button></div></div>
 <div id="comparison-status" class="comparison-status" aria-live="polite" hidden></div>
 <div id="reader-layout" class="reader-layout no-sidebar"><article id="chapter-text" class="chapter-text" aria-label="Chapter text"><p class="muted">Loading scripture…</p></article></div>

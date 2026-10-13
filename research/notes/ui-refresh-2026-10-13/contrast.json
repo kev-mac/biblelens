@@ -1,0 +1,121 @@
+{
+  "palettes": {
+    "Light": {
+      "bg": "#f4f5f7",
+      "panel": "#fdfdfe",
+      "body": "#1f252b",
+      "muted": "#5a6570",
+      "primary": "#2f5a82",
+      "red": "#b32925"
+    },
+    "Dark": {
+      "bg": "#14191f",
+      "panel": "#1c232b",
+      "body": "#eaeef2",
+      "muted": "#a8b3bf",
+      "primary": "#8fb4d6",
+      "red": "#ff9290"
+    }
+  },
+  "table": [
+    {
+      "theme": "Light",
+      "text": "body",
+      "panel": 15.214478003720647,
+      "background": 14.178125726695097
+    },
+    {
+      "theme": "Light",
+      "text": "muted",
+      "panel": 5.851776746247825,
+      "background": 5.453176008573089
+    },
+    {
+      "theme": "Light",
+      "text": "primary",
+      "panel": 7.109465655468711,
+      "background": 6.625195940879873
+    },
+    {
+      "theme": "Light",
+      "text": "red",
+      "panel": 6.33552047088734,
+      "background": 5.903968953671932
+    },
+    {
+      "theme": "Dark",
+      "text": "body",
+      "panel": 13.596170103812922,
+      "background": 15.15288925658346
+    },
+    {
+      "theme": "Dark",
+      "text": "muted",
+      "panel": 7.447373138632505,
+      "background": 8.300074179750458
+    },
+    {
+      "theme": "Dark",
+      "text": "primary",
+      "panel": 7.2979893237069975,
+      "background": 8.133586383039429
+    },
+    {
+      "theme": "Dark",
+      "text": "red",
+      "panel": 7.372602484367211,
+      "background": 8.216742518328648
+    }
+  ],
+  "chipRatios": {
+    "T": 7.615381466750956,
+    "V": 7.548467727188989,
+    "Q": 7.071249919533872,
+    "S": 8.600115660352014,
+    "History": 7.276044029927048,
+    "Contradictions": 7.250653485272742,
+    "Context": 7.671679203946466
+  },
+  "redHighlights": {
+    "T": {
+      "light": 5.131575928281729,
+      "dark": 1.713260230519566
+    },
+    "V": {
+      "light": 5.050566241056007,
+      "dark": 1.686213826578481
+    },
+    "Q": {
+      "light": 5.227359141242997,
+      "dark": 1.7452390167270373
+    },
+    "S": {
+      "light": 5.719275973348149,
+      "dark": 1.9094734657437797
+    },
+    "History": {
+      "light": 5.312457757291195,
+      "dark": 1.7736505761749068
+    },
+    "Contradictions": {
+      "light": 5.253534391686418,
+      "dark": 1.7539780505512172
+    },
+    "Context": {
+      "light": 5.44050887457032,
+      "dark": 1.8164025279678877
+    }
+  },
+  "unchanged": {
+    "data/evidence.json": "6f421c3fd4e840b73c31f11b3af5efd28be40815253dbf551a6f664a37491866",
+    "data/chapter-names.json": "5b33bf3262de3c6dce0b398c2d1811d40b8e27658de9c53de78372a38144d339",
+    "data/books.json": "accafc9b2a0a7e300254db22b9011d1091db50fe4ff5a1ba2ecc540297df0700",
+    "data/chapters.json": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+    "src/data.js": "826d6ebcc50261d455a3ae9d54908cd9a3358a9097fe0f0a844f0a0a18ca84c1",
+    "src/app.js": "04976c4e84459f8188a6b652cffd88eca252de4d34bec4e3965c6b5d3233f5fc",
+    "src/citations.js": "87618d7afb1833114d65d49401c761b83a58e34bc320b3960fa8fcb5509cce61",
+    "src/red-letters.js": "cbe6e2b5448716c6469990dd200dd4e22ac8f41ba3109d0eea79c95c230bce89",
+    "worker/index.mjs": "74f094f70a94be8dd635f13d3aeeba2e7d369fddede89e3b51df6099a5f43fe8"
+  },
+  "browserChecks": 8
+}

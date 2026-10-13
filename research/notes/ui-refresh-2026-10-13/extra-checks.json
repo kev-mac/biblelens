@@ -1,0 +1,122 @@
+{
+  "order": [
+    [
+      "Q",
+      "C"
+    ],
+    [
+      "T",
+      "C"
+    ],
+    [
+      "Q",
+      "C"
+    ],
+    [
+      "Q"
+    ],
+    [
+      "T",
+      "Q"
+    ],
+    [
+      "C"
+    ]
+  ],
+  "subtitleCheck": {
+    "total": 1189,
+    "over": []
+  },
+  "witnessSummary": "Hebrew and Septuagint: The KJV says that in their self-will Simeon and Levi digged down a wall. The Hebrew as pointed says they hamstrung an ox, and Brenton’s Greek says they hamstrung a bull.",
+  "computed": [
+    {
+      "dark": false,
+      "chips": [
+        {
+          "key": "T",
+          "color": "rgb(92, 64, 18)",
+          "background": "rgb(245, 228, 191)",
+          "opacity": "1"
+        },
+        {
+          "key": "V",
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)",
+          "opacity": "1"
+        },
+        {
+          "key": "Q",
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)",
+          "opacity": "1"
+        },
+        {
+          "key": "science",
+          "color": "rgb(35, 76, 59)",
+          "background": "rgb(230, 245, 237)",
+          "opacity": "1"
+        },
+        {
+          "key": "history",
+          "color": "rgb(98, 69, 20)",
+          "background": "rgb(248, 232, 195)",
+          "opacity": "1"
+        },
+        {
+          "key": "contradictions",
+          "color": "rgb(113, 60, 25)",
+          "background": "rgb(251, 228, 210)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "dark": true,
+      "chips": [
+        {
+          "key": "T",
+          "color": "rgb(92, 64, 18)",
+          "background": "rgb(245, 228, 191)",
+          "opacity": "1"
+        },
+        {
+          "key": "V",
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)",
+          "opacity": "1"
+        },
+        {
+          "key": "Q",
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)",
+          "opacity": "1"
+        },
+        {
+          "key": "science",
+          "color": "rgb(35, 76, 59)",
+          "background": "rgb(230, 245, 237)",
+          "opacity": "1"
+        },
+        {
+          "key": "history",
+          "color": "rgb(98, 69, 20)",
+          "background": "rgb(248, 232, 195)",
+          "opacity": "1"
+        },
+        {
+          "key": "contradictions",
+          "color": "rgb(113, 60, 25)",
+          "background": "rgb(251, 228, 210)",
+          "opacity": "1"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "category order",
+    "T witness label",
+    "all subtitle names fit three phone lines",
+    "sheet chapter select",
+    "top and bottom navigation"
+  ]
+}
