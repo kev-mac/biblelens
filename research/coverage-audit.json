@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 394,
+    "evidenceRecords": 427,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 393,
-    "annotatedVerses": 2698
+    "chaptersWithAnnotations": 394,
+    "annotatedVerses": 2727
   },
   "byBook": [
     {
@@ -28,19 +28,19 @@
       "book": "Leviticus",
       "chapters": 27,
       "chaptersWithAnnotations": 27,
-      "annotatedVerses": 365
+      "annotatedVerses": 378
     },
     {
       "book": "Numbers",
       "chapters": 36,
       "chaptersWithAnnotations": 36,
-      "annotatedVerses": 520
+      "annotatedVerses": 531
     },
     {
       "book": "Deuteronomy",
       "chapters": 34,
       "chaptersWithAnnotations": 34,
-      "annotatedVerses": 341
+      "annotatedVerses": 343
     },
     {
       "book": "Joshua",
@@ -52,7 +52,7 @@
       "book": "Judges",
       "chapters": 21,
       "chaptersWithAnnotations": 19,
-      "annotatedVerses": 103
+      "annotatedVerses": 104
     },
     {
       "book": "Ruth",
@@ -153,8 +153,8 @@
     {
       "book": "Jeremiah",
       "chapters": 52,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 10
+      "chaptersWithAnnotations": 4,
+      "annotatedVerses": 11
     },
     {
       "book": "Lamentations",
@@ -262,7 +262,7 @@
       "book": "Luke",
       "chapters": 24,
       "chaptersWithAnnotations": 4,
-      "annotatedVerses": 12
+      "annotatedVerses": 13
     },
     {
       "book": "John",
@@ -2396,7 +2396,8 @@
       "chapter": 4,
       "annotationIds": [
         "leviticus-offering-portions",
-        "leviticus-inadvertent-guilt"
+        "leviticus-inadvertent-guilt",
+        "congregation-sin-of-ignorance-a-bullock-for-sin-or-a-bullock-burnt-and-a-kid-for-sin"
       ],
       "annotatedVerses": [
         2,
@@ -2484,7 +2485,8 @@
         "leviticus-offering-portions",
         "leviticus-leaven-context",
         "leviticus-sacrificial-meal-deadlines",
-        "deuteronomy-priestly-meat-portions"
+        "deuteronomy-priestly-meat-portions",
+        "commanded-to-offer-at-sinai-or-commanded-nothing-concerning-burnt-offerings"
       ],
       "annotatedVerses": [
         6,
@@ -2502,7 +2504,8 @@
         31,
         32,
         33,
-        34
+        34,
+        38
       ],
       "modes": [
         "contradictions"
@@ -2594,10 +2597,15 @@
       "bookId": 2,
       "chapter": 11,
       "annotationIds": [
-        "leviticus-carcass-and-food-category"
+        "leviticus-carcass-and-food-category",
+        "second-animal-cheweth-the-cud-or-does-not-chew-the-cud-greek",
+        "flying-creeping-things-some-may-be-eaten-or-none"
       ],
       "annotatedVerses": [
         3,
+        6,
+        21,
+        22,
         24,
         25,
         32,
@@ -2612,7 +2620,8 @@
         47
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -2752,7 +2761,8 @@
       "chapter": 16,
       "annotationIds": [
         "leviticus-two-goat-roles",
-        "leviticus-annual-sanctuary-access"
+        "leviticus-annual-sanctuary-access",
+        "the-other-lot-for-the-scapegoat-for-what-or-for-whom"
       ],
       "annotatedVerses": [
         1,
@@ -2784,7 +2794,8 @@
         34
       ],
       "modes": [
-        "history"
+        "history",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -2794,12 +2805,15 @@
       "chapter": 17,
       "annotationIds": [
         "leviticus-blood-life-and-atonement",
-        "deuteronomy-local-slaughter-and-sacrifice"
+        "deuteronomy-local-slaughter-and-sacrifice",
+        "slaughter-away-from-the-tabernacle-greek-limits-it-to-offerings",
+        "sacrifices-unto-devils-or-to-vain-things-greek"
       ],
       "annotatedVerses": [
         3,
         4,
         5,
+        7,
         10,
         11,
         12,
@@ -2817,11 +2831,13 @@
       "bookId": 2,
       "chapter": 18,
       "annotationIds": [
-        "leviticus-brothers-wife-and-levirate"
+        "leviticus-brothers-wife-and-levirate",
+        "seed-pass-through-the-fire-to-molech-or-given-to-serve-a-ruler-greek"
       ],
       "annotatedVerses": [
         6,
-        16
+        16,
+        21
       ],
       "modes": [
         "contradictions"
@@ -2834,7 +2850,9 @@
       "chapter": 19,
       "annotationIds": [
         "leviticus-poor-and-impartial-judgment",
-        "leviticus-sacrificial-meal-deadlines"
+        "leviticus-sacrificial-meal-deadlines",
+        "she-shall-be-scourged-or-there-shall-be-an-inquiry-for-them-greek",
+        "eat-with-the-blood-or-eat-on-the-mountains-greek"
       ],
       "annotatedVerses": [
         5,
@@ -2847,6 +2865,8 @@
         14,
         15,
         18,
+        20,
+        26,
         33,
         34,
         35,
@@ -2863,10 +2883,12 @@
       "chapter": 20,
       "annotationIds": [
         "leviticus-brothers-wife-and-levirate",
-        "leviticus-distinct-sanctions"
+        "leviticus-distinct-sanctions",
+        "seed-pass-through-the-fire-to-molech-or-given-to-serve-a-ruler-greek"
       ],
       "annotatedVerses": [
         2,
+        3,
         4,
         5,
         9,
@@ -2961,9 +2983,13 @@
       "annotationIds": [
         "leviticus-leaven-context",
         "leviticus-festival-day-boundaries",
-        "numbers-weeks-offering-difference"
+        "numbers-weeks-offering-difference",
+        "morrow-after-the-sabbath-or-morrow-of-the-first-day-greek",
+        "the-morrow-after-the-sabbath-which-sabbath"
       ],
       "annotatedVerses": [
+        11,
+        15,
         16,
         17,
         18,
@@ -2977,7 +3003,8 @@
         42
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -2987,7 +3014,8 @@
       "chapter": 24,
       "annotationIds": [
         "exodus-continuous-service",
-        "leviticus-common-law-scope"
+        "leviticus-common-law-scope",
+        "blasphemeth-the-name-or-names-the-name-greek"
       ],
       "annotatedVerses": [
         2,
@@ -2995,6 +3023,7 @@
         4,
         8,
         9,
+        11,
         16,
         17,
         18,
@@ -3016,10 +3045,12 @@
       "annotationIds": [
         "early-servitude",
         "leviticus-common-law-scope",
-        "leviticus-jubilee-property-exceptions"
+        "leviticus-jubilee-property-exceptions",
+        "the-jubile-fiftieth-year-how-does-it-stand-in-the-count-of-sevens"
       ],
       "annotatedVerses": [
         10,
+        11,
         23,
         25,
         28,
@@ -3048,7 +3079,8 @@
       ],
       "modes": [
         "history",
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -3222,7 +3254,8 @@
       "chapter": 4,
       "annotationIds": [
         "numbers-levite-age-thresholds",
-        "numbers-sanctuary-carrying-and-access"
+        "numbers-sanctuary-carrying-and-access",
+        "levites-serve-from-thirty-years-old-or-from-twenty-five-greek"
       ],
       "annotatedVerses": [
         3,
@@ -3409,9 +3442,12 @@
       "annotationIds": [
         "numbers-cloud-and-local-guidance",
         "numbers-ark-march-position",
-        "moses-father-in-law-names"
+        "moses-father-in-law-names",
+        "alarms-for-the-east-and-south-camps-greek-adds-a-third-and-a-fourth",
+        "thou-mayest-be-to-us-instead-of-eyes-or-an-elder-among-us-greek"
       ],
       "annotatedVerses": [
+        6,
         14,
         17,
         18,
@@ -3436,7 +3472,8 @@
       "chapter": 11,
       "annotationIds": [
         "exodus-jethro-delegation",
-        "numbers-quail-plague-diagnosis-limit"
+        "numbers-quail-plague-diagnosis-limit",
+        "they-prophesied-and-did-not-cease-or-did-so-no-more-hebrew"
       ],
       "annotatedVerses": [
         11,
@@ -3456,7 +3493,8 @@
       ],
       "modes": [
         "history",
-        "science"
+        "science",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -3467,6 +3505,8 @@
       "annotationIds": [
         "leviticus-leprosy-category",
         "numbers-miriam-aaron-different-outcomes",
+        "the-similitude-of-the-lord-shall-he-behold-or-he-saw-the-glory-greek",
+        "the-ethiopian-woman-whom-moses-had-married-who-was-she",
         "study-seen"
       ],
       "annotatedVerses": [
@@ -3484,7 +3524,8 @@
       "modes": [
         "science",
         "history",
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -3517,7 +3558,8 @@
       "chapter": 14,
       "annotationIds": [
         "exodus-intercession-relenting",
-        "numbers-spies-report-and-rhetoric"
+        "numbers-spies-report-and-rhetoric",
+        "amalekites-and-canaanites-dwelt-in-the-valley-or-in-that-hill"
       ],
       "annotatedVerses": [
         6,
@@ -3532,6 +3574,7 @@
         22,
         23,
         24,
+        25,
         29,
         30,
         31,
@@ -3540,10 +3583,12 @@
         34,
         36,
         37,
-        38
+        38,
+        45
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -3553,7 +3598,8 @@
       "chapter": 15,
       "annotationIds": [
         "exodus-sabbath-sanction",
-        "numbers-ignorance-and-defiance"
+        "numbers-ignorance-and-defiance",
+        "congregation-sin-of-ignorance-a-bullock-for-sin-or-a-bullock-burnt-and-a-kid-for-sin"
       ],
       "annotatedVerses": [
         22,
@@ -3572,7 +3618,8 @@
         36
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -3582,7 +3629,8 @@
       "chapter": 16,
       "annotationIds": [
         "numbers-holiness-and-priestly-authority",
-        "numbers-rebellion-household-judgment"
+        "numbers-rebellion-household-judgment",
+        "i-have-not-taken-one-ass-from-them-or-any-desirable-thing-greek"
       ],
       "annotatedVerses": [
         3,
@@ -3590,6 +3638,7 @@
         8,
         9,
         10,
+        15,
         21,
         22,
         24,
@@ -3741,20 +3790,26 @@
         "numbers-serpent-making-and-worship",
         "numbers-serpent-healing-and-envenoming",
         "jephthah-chemosh-and-ammon",
-        "ammonite-land-taken-or-untouched"
+        "ammonite-land-taken-or-untouched",
+        "what-he-did-in-the-red-sea-or-a-war-of-the-lord-set-zoob-on-fire-greek",
+        "hormah-named-in-the-days-of-moses-or-by-judah-and-simeon",
+        "the-book-of-the-wars-of-the-lord-what-was-it"
       ],
       "annotatedVerses": [
+        3,
         6,
         7,
         8,
         9,
+        14,
         24,
         26,
         29
       ],
       "modes": [
         "contradictions",
-        "science"
+        "science",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -3790,9 +3845,11 @@
       "chapter": 23,
       "annotationIds": [
         "numbers-blessing-stability-and-relenting",
-        "numbers-unicorn-translation"
+        "numbers-unicorn-translation",
+        "let-my-last-end-be-like-his-or-my-seed-as-their-seed-greek"
       ],
       "annotatedVerses": [
+        10,
         19,
         20,
         22,
@@ -3810,17 +3867,24 @@
       "chapter": 24,
       "annotationIds": [
         "numbers-balaam-inscription-parallel",
-        "numbers-unicorn-translation"
+        "numbers-unicorn-translation",
+        "water-out-of-his-buckets-and-agag-or-a-man-out-of-his-seed-and-gog-greek",
+        "a-sceptre-shall-rise-out-of-israel-or-a-man-greek",
+        "he-took-up-his-parable-greek-adds-having-seen-og"
       ],
       "annotatedVerses": [
         3,
         4,
+        7,
         8,
         15,
-        16
+        16,
+        17,
+        23
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -4008,7 +4072,8 @@
       "annotationIds": [
         "numbers-purification-and-handler-impurity",
         "numbers-midian-captives-and-distribution",
-        "midian-after-numbers-31"
+        "midian-after-numbers-31",
+        "the-thirty-and-two-persons-given-as-tribute-to-the-priest-what-became-of-them"
       ],
       "annotatedVerses": [
         7,
@@ -4039,7 +4104,8 @@
       ],
       "modes": [
         "contradictions",
-        "history"
+        "history",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -4084,11 +4150,13 @@
       "chapter": 33,
       "annotationIds": [
         "early-aaron",
-        "early-conquest"
+        "early-conquest",
+        "kadesh-in-the-wilderness-of-zin-or-of-paran-greek"
       ],
       "annotatedVerses": [
         30,
         31,
+        36,
         37,
         38,
         39,
@@ -4137,7 +4205,8 @@
       "annotationIds": [
         "numbers-levite-income-and-contribution",
         "numbers-levite-town-measurements",
-        "numbers-refuge-protection-and-limits"
+        "numbers-refuge-protection-and-limits",
+        "suburbs-of-the-levite-cities-a-thousand-cubits-or-two-thousand-greek"
       ],
       "annotatedVerses": [
         2,
@@ -4203,7 +4272,8 @@
       "annotationIds": [
         "exodus-jethro-delegation",
         "numbers-spies-report-and-rhetoric",
-        "numbers-rock-instructions-differ"
+        "numbers-rock-instructions-differ",
+        "amalekites-and-canaanites-dwelt-in-the-valley-or-in-that-hill"
       ],
       "annotatedVerses": [
         9,
@@ -4220,7 +4290,8 @@
         26,
         28,
         29,
-        37
+        37,
+        44
       ],
       "modes": [
         "history",
@@ -4560,9 +4631,11 @@
       "chapter": 14,
       "annotationIds": [
         "numbers-levite-income-and-contribution",
-        "deuteronomy-firstling-recipients"
+        "deuteronomy-firstling-recipients",
+        "flying-creeping-things-some-may-be-eaten-or-none"
       ],
       "annotatedVerses": [
+        19,
         22,
         23,
         24,
@@ -5654,11 +5727,13 @@
       "chapter": 1,
       "annotationIds": [
         "early-conquest",
-        "moses-father-in-law-names"
+        "moses-father-in-law-names",
+        "hormah-named-in-the-days-of-moses-or-by-judah-and-simeon"
       ],
       "annotatedVerses": [
         8,
         16,
+        17,
         19,
         21,
         22,
@@ -11604,9 +11679,15 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "commanded-to-offer-at-sinai-or-commanded-nothing-concerning-burnt-offerings"
+      ],
+      "annotatedVerses": [
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13915,13 +13996,16 @@
       "bookId": 41,
       "chapter": 2,
       "annotationIds": [
-        "legacy-history-10"
+        "legacy-history-10",
+        "her-purification-or-their-purification-greek-new-testament"
       ],
       "annotatedVerses": [
-        2
+        2,
+        22
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },

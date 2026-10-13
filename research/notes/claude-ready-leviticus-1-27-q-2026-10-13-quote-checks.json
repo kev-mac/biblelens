@@ -1,0 +1,431 @@
+{
+  "checks": [
+    {
+      "id": "the-other-lot-for-the-scapegoat-for-what-or-for-whom",
+      "batch": "leviticus-1-27-q",
+      "english": [
+        {
+          "ref": "Leviticus 16:8",
+          "quote": "And Aaron shall cast lots upon the two goats; one lot for the Lord, and the other lot for the scapegoat.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 16:10",
+          "quote": "But the goat, on which the lot fell to be the scapegoat, shall be presented alive before the Lord, to make an atonement with him, and to let him go for a scapegoat into the wilderness.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 16:21",
+          "quote": "and shall send him away by the hand of a fit man into the wilderness",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 16:22",
+          "quote": "And the goat shall bear upon him all their iniquities unto a land not inhabited: and he shall let go the goat in the wilderness.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 16:26",
+          "quote": "And he that let go the goat for the scapegoat shall wash his clothes",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "גֹּורָ֤ל אֶחָד֙ לַיהוָ֔ה וְגֹורָ֥ל אֶחָ֖ד לַעֲזָאזֵֽל",
+          "stated": {
+            "chapter": 16,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/3/16/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "לְשַׁלַּ֥ח אֹתֹ֛ו לַעֲזָאזֵ֖ל הַמִּדְבָּֽרָה",
+          "stated": {
+            "chapter": 16,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/3/16/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְהַֽמְשַׁלֵּ֤חַ אֶת־הַשָּׂעִיר֙ לַֽעֲזָאזֵ֔ל",
+          "stated": {
+            "chapter": 16,
+            "verse": 26
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/3/16/",
+              "verse": 26
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "κλῆρον ἕνα τῷ Κυρίῳ, καὶ κλῆρον ἕνα τῷ ἀποπομπαίῳ",
+          "stated": {
+            "chapter": 16,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/LEV16.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὥστε ἀποστεῖλαι αὐτὸν εἰς τὴν ἀποπομπήν",
+          "stated": {
+            "chapter": 16,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/LEV16.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τὸν χίμαρον τὸν διεσταλμένον εἰς ἄφεσιν",
+          "stated": {
+            "chapter": 16,
+            "verse": 26
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/LEV16.htm",
+              "verse": "26"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Leviticus 16:8",
+          "quote": "the other lot for the scapegoat",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Leviticus 16:10",
+          "quote": "to let him go for a scapegoat into the wilderness",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Leviticus 16:26",
+          "quote": "he that let go the goat for the scapegoat",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "leviticus-two-goat-roles",
+          "title": "The two goats have distinct roles",
+          "summary": "One goat is killed for the offering; the other is sent alive into the wilderness.",
+          "reasoning": "The two actions belong to different animals within one procedure. The passage explicitly instructs release of the live goat; it does not describe killing both.",
+          "scope": "This identifies the stated ritual sequence. The meaning of Azazel, comparative ritual history and later practices require further research; the text alone does not establish a physical mechanism of removing guilt."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Distinct Q about the meaning and referent of the second lot, not a repeat of the published two-goat ritual sequence; that record flags further research but does not set out these identity alternatives. No H/G inferred from unsettled meaning."
+    },
+    {
+      "id": "the-morrow-after-the-sabbath-which-sabbath",
+      "batch": "leviticus-1-27-q",
+      "english": [
+        {
+          "ref": "Leviticus 23:6",
+          "quote": "And on the fifteenth day of the same month is the feast of unleavened bread unto the Lord",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 23:7",
+          "quote": "In the first day ye shall have an holy convocation: ye shall do no servile work therein.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 23:8",
+          "quote": "in the seventh day is an holy convocation",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 23:10",
+          "quote": "When ye be come into the land which I give unto you, and shall reap the harvest thereof, then ye shall bring a sheaf of the firstfruits of your harvest unto the priest",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 23:11",
+          "quote": "And he shall wave the sheaf before the Lord, to be accepted for you: on the morrow after the sabbath the priest shall wave it.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 23:15",
+          "quote": "And ye shall count unto you from the morrow after the sabbath, from the day that ye brought the sheaf of the wave offering; seven sabbaths shall be complete:",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 23:16",
+          "quote": "Even unto the morrow after the seventh sabbath shall ye number fifty days; and ye shall offer a new meat offering unto the Lord.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 23:39",
+          "quote": "on the first day shall be a sabbath, and on the eighth day shall be a sabbath",
+          "exact": true
+        },
+        {
+          "ref": "Joshua 5:11",
+          "quote": "And they did eat of the old corn of the land on the morrow after the passover, unleavened cakes, and parched corn in the selfsame day.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מִֽמָּחֳרַת֙ הַשַּׁבָּ֔ת",
+          "stated": {
+            "chapter": 23,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/3/23/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "עַ֣ד מִֽמָּחֳרַ֤ת הַשַּׁבָּת֙ הַשְּׁבִיעִ֔ת",
+          "stated": {
+            "chapter": 23,
+            "verse": 16
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/3/23/",
+              "verse": 16
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "בַּיֹּ֤ום הָֽרִאשֹׁון֙ שַׁבָּתֹ֔ון",
+          "stated": {
+            "chapter": 23,
+            "verse": 39
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/3/23/",
+              "verse": 39
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τῇ ἐπαύριον τῆς πρώτης",
+          "stated": {
+            "chapter": 23,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/LEV23.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Leviticus 23:11",
+          "quote": "on the morrow after the sabbath the priest shall wave it",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Leviticus 23:15",
+          "quote": "from the morrow after the sabbath",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Leviticus 23:16",
+          "quote": "Even unto the morrow after the seventh sabbath shall ye number fifty days",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "leviticus-festival-day-boundaries",
+          "title": "Festival lengths and evening boundaries",
+          "summary": "The calendar distinguishes an evening boundary from a daytime date, and seven days in booths from an eighth-day assembly.",
+          "reasoning": "The surrounding instructions explain why the ninth evening and tenth day, or seven festival days and an eighth assembly, need not be competing totals.",
+          "scope": "This reading addresses these particular dates. It does not settle ancient calendar disputes, the meaning of Sabbath in the harvest count, or correspondence with modern dates."
+        },
+        {
+          "id": "numbers-weeks-offering-difference",
+          "title": "The festival burnt-offering lists specify different bull and ram counts",
+          "summary": "Numbers prescribes two bulls and one ram; Leviticus’s offering with the firstfruits bread specifies one bull and two rams.",
+          "reasoning": "Separate offerings for different aspects of the same festival could account for both lists. The passages do not explicitly identify these two lists as additions to one another; Numbers explicitly names only the continual offering as additional here.",
+          "scope": "This is a comparison of prescribed lists, not proof that historical sacrifices conflicted. A cumulative reading is possible but requires interpretation."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "the-jubile-fiftieth-year-how-does-it-stand-in-the-count-of-sevens",
+      "batch": "leviticus-1-27-q",
+      "english": [
+        {
+          "ref": "Leviticus 25:4",
+          "quote": "But in the seventh year shall be a sabbath of rest unto the land, a sabbath for the Lord: thou shalt neither sow thy field, nor prune thy vineyard.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 25:8",
+          "quote": "And thou shalt number seven sabbaths of years unto thee, seven times seven years; and the space of the seven sabbaths of years shall be unto thee forty and nine years.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 25:10",
+          "quote": "And ye shall hallow the fiftieth year, and proclaim liberty throughout all the land unto all the inhabitants thereof: it shall be a jubile unto you",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 25:11",
+          "quote": "A jubile shall that fiftieth year be unto you: ye shall not sow, neither reap that which groweth of itself in it, nor gather the grapes in it of thy vine undressed.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 25:20",
+          "quote": "And if ye shall say, What shall we eat the seventh year? behold, we shall not sow, nor gather in our increase:",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 25:21",
+          "quote": "Then I will command my blessing upon you in the sixth year, and it shall bring forth fruit for three years.",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 25:22",
+          "quote": "And ye shall sow the eighth year, and eat yet of old fruit until the ninth year; until her fruits come in ye shall eat of the old store.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "תֵּ֥שַׁע וְאַרְבָּעִ֖ים שָׁנָֽה",
+          "stated": {
+            "chapter": 25,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/3/25/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְקִדַּשְׁתֶּ֗ם אֵ֣ת שְׁנַ֤ת הַחֲמִשִּׁים֙ שָׁנָ֔ה",
+          "stated": {
+            "chapter": 25,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/3/25/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐννέα καὶ τεσσαράκοντα ἔτη",
+          "stated": {
+            "chapter": 25,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/LEV25.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἁγιάσετε τὸ ἔτος τὸν πεντηκοστὸν ἐνιαυτὸν",
+          "stated": {
+            "chapter": 25,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/LEV25.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Leviticus 25:10",
+          "quote": "And ye shall hallow the fiftieth year",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Leviticus 25:11",
+          "quote": "A jubile shall that fiftieth year be unto you: ye shall not sow",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "early-servitude",
+          "title": "Different legal treatment of servants and slaves",
+          "summary": "The laws distinguish servants by origin and family status, preserve ownership claims, and specify some release conditions.",
+          "reasoning": "The broad Jubilee proclamation must be read alongside the explicit foreign-slavery provision. Israelite redemption protections do not establish equivalent release for everyone.",
+          "scope": "These unequal legal categories do not establish how consistently the laws were practiced. The scope of the broad liberty proclamation merits further study."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    }
+  ],
+  "policy": "Every KJV-labelled fragment in record text verified exactly at the packaged verse, including separate fragments after ellipses; sides refs and labels validated. Hebrew/Greek NFC/whitespace only, Strong markup removed; supplied address and printed chapter/verse constrained. Repeated Numbers4 quotation checked at all six named labels as well as separate4:3. All 67 supplied language pages fetched this run. No independent chapter reading or new-finding search. Drafts untouched.",
+  "needsOwner": []
+}

@@ -1,0 +1,1210 @@
+{
+  "checks": [
+    {
+      "id": "levites-serve-from-thirty-years-old-or-from-twenty-five-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 4:3",
+          "quote": "From thirty years old and upward even until fifty years old",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 4:23",
+          "quote": "From thirty years old and upward until fifty years old shalt thou number them",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 8:24",
+          "quote": "from twenty and five years old and upward they shall go in to wait upon the service of the tabernacle of the congregation",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 4:30",
+          "quote": "From thirty years old and upward even unto fifty years old",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 4:35",
+          "quote": "From thirty years old and upward even unto fifty years old",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 4:39",
+          "quote": "From thirty years old and upward even unto fifty years old",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 4:43",
+          "quote": "From thirty years old and upward even unto fifty years old",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 4:47",
+          "quote": "From thirty years old and upward even unto fifty years old",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מִבֶּ֨ן שְׁלֹשִׁ֤ים שָׁנָה֙ וָמַ֔עְלָה",
+          "stated": {
+            "chapter": 4,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/4/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "מִבֶּן֩ חָמֵ֨שׁ וְעֶשְׂרִ֤ים שָׁנָה֙ וָמַ֔עְלָה",
+          "stated": {
+            "chapter": 8,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/8/",
+              "verse": 24
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀπὸ εἴκοσι καὶ πέντε ἐτῶν καὶ ἐπάνω ἕως πεντήκοντα ἐτῶν",
+          "stated": {
+            "chapter": 4,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM04.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀπὸ πέντε καὶ εἰκοσαετοῦς καὶ ἐπάνω ἕως πεντηκονταετοῦς",
+          "stated": {
+            "chapter": 4,
+            "verse": 47
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM04.htm",
+              "verse": 23
+            },
+            {
+              "url": "https://ebible.org/grcbrent/NUM04.htm",
+              "verse": 30
+            },
+            {
+              "url": "https://ebible.org/grcbrent/NUM04.htm",
+              "verse": 35
+            },
+            {
+              "url": "https://ebible.org/grcbrent/NUM04.htm",
+              "verse": 39
+            },
+            {
+              "url": "https://ebible.org/grcbrent/NUM04.htm",
+              "verse": 43
+            },
+            {
+              "url": "https://ebible.org/grcbrent/NUM04.htm",
+              "verse": 47
+            }
+          ],
+          "printedLabelVerified": true,
+          "statedVerses": [
+            23,
+            30,
+            35,
+            39,
+            43,
+            47
+          ]
+        },
+        {
+          "quote": "ἀπὸ πέντε καὶ εἰκοσαετοῦς καὶ ἐπάνω",
+          "stated": {
+            "chapter": 8,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM08.htm",
+              "verse": "24"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Numbers 4:3",
+          "quote": "From thirty years old and upward",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Numbers 8:24",
+          "quote": "from twenty and five years old and upward",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "numbers-levite-age-thresholds",
+          "title": "Different Levite counts and service starting ages",
+          "summary": "Counting Levite males from one month differs from counting workers aged thirty to fifty; another service instruction starts at twenty-five.",
+          "reasoning": "Membership and adult work counts can differ without contradiction. The twenty-five versus thirty starting ages remain a separate tension; a five-year training period is not explicitly prescribed in these verses.",
+          "scope": "Possible role distinctions, translation issues and the history of the legal collections remain open. This note does not present a proposed training explanation as a stated fact."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Distinct G comparison beside the published KJV age tension. Greek checked separately at all seven chapter4 labels and at8:24; no tag placed on the agreeing8:24."
+    },
+    {
+      "id": "suburbs-of-the-levite-cities-a-thousand-cubits-or-two-thousand-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 35:4",
+          "quote": "And the suburbs of the cities, which ye shall give unto the Levites, shall reach from the wall of the city and outward a thousand cubits round about.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 35:5",
+          "quote": "And ye shall measure from without the city on the east side two thousand cubits",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מִקִּ֤יר הָעִיר֙ וָח֔וּצָה אֶ֥לֶף אַמָּ֖ה סָבִֽיב",
+          "stated": {
+            "chapter": 35,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/35/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "אֶת־פְּאַת־קֵ֣דְמָה אַלְפַּ֪יִם בָּֽאַמָּ֟ה",
+          "stated": {
+            "chapter": 35,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/35/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀπὸ τείχους τῆς πόλεως καὶ ἔξω δισχιλίους πήχεις κύκλῳ",
+          "stated": {
+            "chapter": 35,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM35.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τὸ κλίτος τὸ πρὸς ἀνατολὰς δισχιλίους πήχεις",
+          "stated": {
+            "chapter": 35,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM35.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Numbers 35:4",
+          "quote": "from the wall of the city and outward a thousand cubits round about",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Numbers 35:5",
+          "quote": "on the east side two thousand cubits",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "numbers-levite-town-measurements",
+          "title": "The pasture measurements require an interpretation of the layout",
+          "summary": "One verse specifies 1,000 cubits outward from the wall; the next names 2,000 cubits on each side.",
+          "reasoning": "If both figures measure the same outward distance, they conflict. Different dimensions could reconcile them, but that plan is an interpretation rather than an explicit diagram in the passage.",
+          "scope": "This preserves the numerical tension without claiming a settled survey plan, cubit length or archaeological verification."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "alarms-for-the-east-and-south-camps-greek-adds-a-third-and-a-fourth",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 10:5",
+          "quote": "When ye blow an alarm, then the camps that lie on the east parts shall go forward.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 10:6",
+          "quote": "When ye blow an alarm the second time, then the camps that lie on the south side shall take their journey: they shall blow an alarm for their journeys.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 10:22",
+          "quote": "And the standard of the camp of the children of Ephraim set forward",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 10:25",
+          "quote": "And the standard of the camp of the children of Dan set forward, which was the rereward of all the camps",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּתְקַעְתֶּ֤ם תְּרוּעָה֙ שֵׁנִ֔ית וְנָֽסְעוּ֙ הַֽמַּחֲנֹ֔ות הַחֹנִ֖ים תֵּימָ֑נָה תְּרוּעָ֥ה יִתְקְע֖וּ לְמַסְעֵיהֶֽם",
+          "stated": {
+            "chapter": 10,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/10/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ σαλπιεῖτε σημασίαν δευτέραν, καὶ ἐξαροῦσιν αἱ παρεμβολαὶ αἱ παρεμβάλλουσαι Λίβα· καὶ σαλπιεῖτε σημασίαν τρίτην, καὶ ἐξαροῦσιν αἱ παρεμβολαὶ αἱ παρεμβάλλουσαι παρὰ θάλασσαν· καὶ σαλπιεῖτε σημασίαν τετάρτην, καὶ ἐξαροῦσιν αἱ παρεμβολαὶ αἱ παρεμβάλλουσαι πρὸς Βοῤῥᾶν",
+          "stated": {
+            "chapter": 10,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM10.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [],
+      "overlap": [
+        {
+          "id": "numbers-ark-march-position",
+          "title": "The prescribed middle position contrasts with an ark going ahead",
+          "summary": "The camp order places sanctuary transport between groups, while a departure scene says the ark went before them.",
+          "reasoning": "These descriptions create a positional tension under a uniform marching-order reading. An exceptional departure arrangement is possible, but is not explicitly identified as the reason for the difference.",
+          "scope": "This comparison does not settle whether the scenes reflect different situations, literary traditions or figurative leadership language."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "thou-mayest-be-to-us-instead-of-eyes-or-an-elder-among-us-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 10:29",
+          "quote": "And Moses said unto Hobab, the son of Raguel the Midianite, Moses' father in law",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 10:31",
+          "quote": "And he said, Leave us not, I pray thee; forasmuch as thou knowest how we are to encamp in the wilderness, and thou mayest be to us instead of eyes.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּ֣י ׀ עַל־כֵּ֣ן יָדַ֗עְתָּ חֲנֹתֵ֙נוּ֙ בַּמִּדְבָּ֔ר וְהָיִ֥יתָ לָּ֖נוּ לְעֵינָֽיִם",
+          "stated": {
+            "chapter": 10,
+            "verse": 31
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/10/",
+              "verse": 31
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οὗ ἕνεκεν ἦσθα μεθʼ ἡμῶν ἐν τῇ ἐρήμῳ, καὶ ἔσῃ ἐν ἡμῖν πρεσβύτης",
+          "stated": {
+            "chapter": 10,
+            "verse": 31
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM10.htm",
+              "verse": "31"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [],
+      "overlap": [
+        {
+          "id": "numbers-cloud-and-local-guidance",
+          "title": "Divine guidance is narrated alongside practical assistance",
+          "summary": "The cloud determines movement while Moses asks Hobab to help with wilderness camping.",
+          "reasoning": "Departure timing and local camping knowledge can be complementary. This is a possible contextual reading; the text does not give a complete division of navigation responsibilities.",
+          "scope": "The passage does not independently establish miraculous navigation or identify a meteorological mechanism. Hobab’s kinship identification needs further textual comparison."
+        },
+        {
+          "id": "moses-father-in-law-names",
+          "title": "Moses’ relatives and the in-law label",
+          "summary": "KJV calls Hobab Moses’ father-in-law; ASV and WEB call him brother-in-law. Exodus names Reuel and Jethro, while Numbers calls Hobab Reuel’s son. The apparent family conflict depends on the kinship reading.",
+          "reasoning": "If every in-law label denotes the same paternal relationship, the named father and son create tension. Reading Hobab as brother-in-law avoids that particular generation conflict; equating Jethro and Reuel as two names for one person is a possible explanation, not an explicit identification in these passages. Numbers’ punctuation alone does not prove which antecedent receives the label.",
+          "scope": "This comparison is edition-sensitive. Do not claim all translations make Hobab the father-in-law, or that Kenite and Midianite must be mutually exclusive ethnic identities. No original-language semantic range or family genealogy is established solely from English translations. Alias and clan relationships remain interpretation questions. The Greek of Judges 1:16 names Jethro where the Hebrew and KJV name no one, so in the Greek book both Jethro (1:16) and Hobab (4:11) carry the same in-law word. Brenton’s English renders that Greek word “father-in-law” in both verses; the same Greek word is used for the woman’s father at Judges 19:9, so it does not by itself fix the relationship. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "they-prophesied-and-did-not-cease-or-did-so-no-more-hebrew",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 11:25",
+          "quote": "and it came to pass, that, when the spirit rested upon them, they prophesied, and did not cease.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 5:22",
+          "quote": "with a great voice: and he added no more",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיִּֽתְנַבְּא֖וּ וְלֹ֥א יָסָֽפוּ",
+          "stated": {
+            "chapter": 11,
+            "verse": 25
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/11/",
+              "verse": 25
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ ἐπροφήτευσαν, καὶ οὐκ ἔτι προσέθεντο",
+          "stated": {
+            "chapter": 11,
+            "verse": 25
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM11.htm",
+              "verse": "25"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "קֹ֥ול גָּדֹ֖ול וְלֹ֣א יָסָ֑ף",
+          "stated": {
+            "chapter": 5,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/5/",
+              "verse": 22
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "φωνὴ μεγάλη· καὶ οὐ προσέθηκε",
+          "stated": {
+            "chapter": 5,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/DEU05.htm",
+              "verse": "22"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Numbers 11:25",
+          "quote": "they prophesied, and did not cease",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exodus-jethro-delegation",
+          "title": "Judging disputes becomes a shared responsibility",
+          "summary": "Jethro challenges Moses’s workload and proposes smaller cases be delegated to other judges.",
+          "reasoning": "This is an institutional change inside the narrative, prompted by advice from Moses’s Midianite father-in-law. Verse 23 qualifies the advice with divine command, and verses 24–26 describe its adoption.",
+          "scope": "The passage provides textual evidence for the institution portrayed. It does not independently verify an administrative system in a dated historical population or establish that the numerical tiers were implemented uniformly."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "the-similitude-of-the-lord-shall-he-behold-or-he-saw-the-glory-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 12:6",
+          "quote": "I the Lord will make myself known unto him in a vision, and will speak unto him in a dream",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 12:8",
+          "quote": "With him will I speak mouth to mouth, even apparently, and not in dark speeches; and the similitude of the Lord shall he behold",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּתְמֻנַ֥ת יְהוָ֖ה יַבִּ֑יט",
+          "stated": {
+            "chapter": 12,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/12/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ τὴν δόξαν Κυρίου εἶδε",
+          "stated": {
+            "chapter": 12,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM12.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "summary": "Exodus describes Moses speaking with God “face to face”; John says no one has seen God. The tension depends on whether “face to face” means literal sight."
+        }
+      ],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Distinct Greek wording comparison beside the seen study at the same verse; it does not reissue the study’s theological question."
+    },
+    {
+      "id": "i-have-not-taken-one-ass-from-them-or-any-desirable-thing-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 16:15",
+          "quote": "And Moses was very wroth, and said unto the Lord, Respect not thou their offering: I have not taken one ass from them, neither have I hurt one of them.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לֹ֠א חֲמֹ֨ור אֶחָ֤ד מֵהֶם֙ נָשָׂ֔אתִי",
+          "stated": {
+            "chapter": 16,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/16/",
+              "verse": 15
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οὐκ ἐπιθύμημα οὐδενὸς αὐτῶν εἴληφα",
+          "stated": {
+            "chapter": 16,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM16.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "what-he-did-in-the-red-sea-or-a-war-of-the-lord-set-zoob-on-fire-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 21:14",
+          "quote": "Wherefore it is said in the book of the wars of the Lord, What he did in the Red sea, and in the brooks of Arnon,",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 21:15",
+          "quote": "And at the stream of the brooks that goeth down to the dwelling of Ar, and lieth upon the border of Moab.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עַל־כֵּן֙ יֵֽאָמַ֔ר בְּסֵ֖פֶר מִלְחֲמֹ֣ת יְהוָ֑ה אֶת־וָהֵ֣ב בְּסוּפָ֔ה וְאֶת־הַנְּחָלִ֖ים אַרְנֹֽון",
+          "stated": {
+            "chapter": 21,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/21/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Διὰ τοῦτο λέγεται ἐν βιβλίῳ, πόλεμος τοῦ Κυρίου τὴν Ζωὸβ ἐφλόγισε, καὶ τοὺς χιμάῤῥους Ἀρνῶν",
+          "stated": {
+            "chapter": 21,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM21.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "let-my-last-end-be-like-his-or-my-seed-as-their-seed-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 23:10",
+          "quote": "Who can count the dust of Jacob, and the number of the fourth part of Israel? Let me die the death of the righteous, and let my last end be like his!",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "תָּמֹ֤ת נַפְשִׁי֙ מֹ֣ות יְשָׁרִ֔ים וּתְהִ֥י אַחֲרִיתִ֖י כָּמֹֽהוּ",
+          "stated": {
+            "chapter": 23,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/23/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀποθάνοι ἡ ψυχή μου ἐν ψυχαῖς δικαίων, καὶ γένοιτο τὸ σπέρμα μου ὡς τὸ σπέρμα τούτων",
+          "stated": {
+            "chapter": 23,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM23.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "water-out-of-his-buckets-and-agag-or-a-man-out-of-his-seed-and-gog-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 24:7",
+          "quote": "He shall pour the water out of his buckets, and his seed shall be in many waters, and his king shall be higher than Agag, and his kingdom shall be exalted.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יִֽזַּל־מַ֙יִם֙ מִדָּ֣לְיָ֔ו וְזַרְעֹ֖ו בְּמַ֣יִם רַבִּ֑ים וְיָרֹ֤ם מֵֽאֲגַג֙ מַלְכֹּ֔ו וְתִנַּשֵּׂ֖א מַלְכֻתֹֽו",
+          "stated": {
+            "chapter": 24,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/24/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἐξελεύσεται ἄνθρωπος ἐκ τοῦ σπέρματος αὐτοῦ, καὶ κυριεύσει ἐθνῶν πολλῶν· καὶ ὑψωθήσεται ἡ Γὼγ βασιλεία, καὶ αὐξηθήσεται βασιλεία αὐτοῦ",
+          "stated": {
+            "chapter": 24,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM24.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "a-sceptre-shall-rise-out-of-israel-or-a-man-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 24:17",
+          "quote": "there shall come a Star out of Jacob, and a Sceptre shall rise out of Israel, and shall smite the corners of Moab",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "דָּרַ֨ךְ כֹּוכָ֜ב מִֽיַּעֲקֹ֗ב וְקָ֥ם שֵׁ֙בֶט֙ מִיִּשְׂרָאֵ֔ל",
+          "stated": {
+            "chapter": 24,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/24/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀνατελεῖ ἄστρον ἐξ Ἰακὼβ, ἀναστήσεται ἄνθρωπος ἐξ Ἰσραήλ",
+          "stated": {
+            "chapter": 24,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM24.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "he-took-up-his-parable-greek-adds-having-seen-og",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 24:20",
+          "quote": "And when he looked on Amalek, he took up his parable",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 24:21",
+          "quote": "And he looked on the Kenites, and took up his parable",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 24:23",
+          "quote": "And he took up his parable, and said, Alas, who shall live when God doeth this!",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיִּשָּׂ֥א מְשָׁלֹ֖ו וַיֹּאמַ֑ר",
+          "stated": {
+            "chapter": 24,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/24/",
+              "verse": 23
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἰδὼν τὸν Ὢγ, καὶ ἀναλαβὼν τὴν παραβολὴν αὐτοῦ, εἶπεν",
+          "stated": {
+            "chapter": 24,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM24.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "kadesh-in-the-wilderness-of-zin-or-of-paran-greek",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 13:26",
+          "quote": "unto the wilderness of Paran, to Kadesh",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 20:1",
+          "quote": "into the desert of Zin in the first month: and the people abode in Kadesh",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 27:14",
+          "quote": "that is the water of Meribah in Kadesh in the wilderness of Zin",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 33:36",
+          "quote": "And they removed from Eziongaber, and pitched in the wilderness of Zin, which is Kadesh.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֶל־מִדְבַּ֥ר פָּארָ֖ן קָדֵ֑שָׁה",
+          "stated": {
+            "chapter": 13,
+            "verse": 26
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/13/",
+              "verse": 26
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וַיַּחֲנ֥וּ בְמִדְבַּר־צִ֖ן הִ֥וא קָדֵֽשׁ",
+          "stated": {
+            "chapter": 33,
+            "verse": 36
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/33/",
+              "verse": 36
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "εἰς τὴν ἔρημον Φαρὰν Κάδης",
+          "stated": {
+            "chapter": 13,
+            "verse": 26
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM13.htm",
+              "verse": "26"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ παρενέβαλον ἐν τῇ ἐρήμῳ Σίν· καὶ ἀπῇραν ἐκ τῆς ἐρήμου Σὶν, καὶ παρενέβαλον εἰς τὴν ἔρημον Φαράν· αὕτη ἐστὶ Κάδης",
+          "stated": {
+            "chapter": 33,
+            "verse": 36
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM33.htm",
+              "verse": "36"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Numbers 33:36",
+          "quote": "pitched in the wilderness of Zin, which is Kadesh",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Numbers 13:26",
+          "quote": "unto the wilderness of Paran, to Kadesh",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "amalekites-and-canaanites-dwelt-in-the-valley-or-in-that-hill",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 14:25",
+          "quote": "(Now the Amalekites and the Canaanites dwelt in the valley.)",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 14:43",
+          "quote": "For the Amalekites and the Canaanites are there before you",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 14:45",
+          "quote": "Then the Amalekites came down, and the Canaanites which dwelt in that hill, and smote them, and discomfited them, even unto Hormah.",
+          "exact": true
+        },
+        {
+          "ref": "Deuteronomy 1:44",
+          "quote": "And the Amorites, which dwelt in that mountain, came out against you, and chased you, as bees do, and destroyed you in Seir, even unto Hormah.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְהָֽעֲמָלֵקִ֥י וְהַֽכְּנַעֲנִ֖י יֹושֵׁ֣ב בָּעֵ֑מֶק",
+          "stated": {
+            "chapter": 14,
+            "verse": 25
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/14/",
+              "verse": 25
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וַיֵּ֤רֶד הָעֲמָלֵקִי֙ וְהַֽכְּנַעֲנִ֔י הַיֹּשֵׁ֖ב בָּהָ֣ר הַה֑וּא",
+          "stated": {
+            "chapter": 14,
+            "verse": 45
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/14/",
+              "verse": 45
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וַיֵּצֵ֨א הָאֱמֹרִ֜י הַיֹּשֵׁ֨ב בָּהָ֤ר הַהוּא֙",
+          "stated": {
+            "chapter": 1,
+            "verse": 44
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/5/1/",
+              "verse": 44
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ὁ δὲ Ἀμαλὴκ καὶ ὁ Χαναναῖος κατοικοῦσιν ἐν τῇ κοιλάδι",
+          "stated": {
+            "chapter": 14,
+            "verse": 25
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM14.htm",
+              "verse": "25"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ κατέβη ὁ Ἀμαλὴκ καὶ ὁ Χαναναῖος ὁ ἐνκαθήμενος ἐν τῷ ὄρει ἐκείνῳ",
+          "stated": {
+            "chapter": 14,
+            "verse": 45
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM14.htm",
+              "verse": "45"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἐξῆλθεν ὁ Ἀμοῤῥαῖος ὁ κατοικῶν ἐν τῷ ὄρει ἐκείνῳ",
+          "stated": {
+            "chapter": 1,
+            "verse": 44
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/DEU01.htm",
+              "verse": "44"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Numbers 14:25",
+          "quote": "the Amalekites and the Canaanites dwelt in the valley",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Numbers 14:45",
+          "quote": "the Canaanites which dwelt in that hill",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Deuteronomy 1:44",
+          "quote": "the Amorites, which dwelt in that mountain",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "hormah-named-in-the-days-of-moses-or-by-judah-and-simeon",
+      "batch": "numbers-1-36",
+      "english": [
+        {
+          "ref": "Numbers 14:45",
+          "quote": "and smote them, and discomfited them, even unto Hormah",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 21:2",
+          "quote": "then I will utterly destroy their cities",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 21:3",
+          "quote": "And the Lord hearkened to the voice of Israel, and delivered up the Canaanites; and they utterly destroyed them and their cities: and he called the name of the place Hormah.",
+          "exact": true
+        },
+        {
+          "ref": "Judges 1:17",
+          "quote": "And Judah went with Simeon his brother, and they slew the Canaanites that inhabited Zephath, and utterly destroyed it. And the name of the city was called Hormah.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיִּקְרָ֥א שֵׁם־הַמָּקֹ֖ום חָרְמָֽה",
+          "stated": {
+            "chapter": 21,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/21/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וַיִּקְרָ֥א אֶת־שֵׁם־הָעִ֖יר חָרְמָֽה",
+          "stated": {
+            "chapter": 1,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/7/1/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ ἐπεκάλεσαν τὸ ὄνομα τοῦ τόπου ἐκείνου, Ἀνάθεμα",
+          "stated": {
+            "chapter": 21,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM21.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ ἐκάλεσε τὸ ὄνομα τῆς πόλεως, Ἀνάθεμα",
+          "stated": {
+            "chapter": 1,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JDG01.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Numbers 21:3",
+          "quote": "and he called the name of the place Hormah",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Judges 1:17",
+          "quote": "And the name of the city was called Hormah",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    }
+  ],
+  "policy": "Every KJV-labelled fragment in record text verified exactly at the packaged verse, including separate fragments after ellipses; sides refs and labels validated. Hebrew/Greek NFC/whitespace only, Strong markup removed; supplied address and printed chapter/verse constrained. Repeated Numbers4 quotation checked at all six named labels as well as separate4:3. All 67 supplied language pages fetched this run. No independent chapter reading or new-finding search. Drafts untouched.",
+  "needsOwner": []
+}

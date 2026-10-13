@@ -1,0 +1,285 @@
+{
+  "checks": [
+    {
+      "id": "the-ethiopian-woman-whom-moses-had-married-who-was-she",
+      "batch": "numbers-1-36-q",
+      "english": [
+        {
+          "ref": "Numbers 12:1",
+          "quote": "And Miriam and Aaron spake against Moses because of the Ethiopian woman whom he had married: for he had married an Ethiopian woman.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 12:2",
+          "quote": "Hath the Lord indeed spoken only by Moses? hath he not spoken also by us?",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 2:16",
+          "quote": "Now the priest of Midian had seven daughters",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 2:21",
+          "quote": "And Moses was content to dwell with the man: and he gave Moses Zipporah his daughter.",
+          "exact": true
+        },
+        {
+          "ref": "Exodus 18:2",
+          "quote": "took Zipporah, Moses' wife, after he had sent her back",
+          "exact": true
+        },
+        {
+          "ref": "Habakkuk 3:7",
+          "quote": "I saw the tents of Cushan in affliction: and the curtains of the land of Midian did tremble.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עַל־אֹדֹ֛ות הָאִשָּׁ֥ה הַכֻּשִׁ֖ית אֲשֶׁ֣ר לָקָ֑ח כִּֽי־אִשָּׁ֥ה כֻשִׁ֖ית לָקָֽח",
+          "stated": {
+            "chapter": 12,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/12/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἕνεκεν τῆς γυναικὸς τῆς Αἰθιοπίσσης ἣν ἔλαβε Μωυσῆς",
+          "stated": {
+            "chapter": 12,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM12.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Numbers 12:1",
+          "quote": "because of the Ethiopian woman whom he had married",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "numbers-miriam-aaron-different-outcomes",
+          "title": "Miriam and Aaron speak together but have different narrated outcomes",
+          "summary": "Both challenge Moses; Miriam receives the described skin affliction and exclusion.",
+          "reasoning": "The narrative does not report the same bodily punishment for Aaron. Explaining why by gender, leadership or priestly status adds an interpretation not explicitly supplied here.",
+          "scope": "The ethical asymmetry and literary purpose merit further research. The description does not independently verify the event or diagnose a modern disease."
+        },
+        {
+          "id": "moses-father-in-law-names",
+          "title": "Moses’ relatives and the in-law label",
+          "summary": "KJV calls Hobab Moses’ father-in-law; ASV and WEB call him brother-in-law. Exodus names Reuel and Jethro, while Numbers calls Hobab Reuel’s son. The apparent family conflict depends on the kinship reading.",
+          "reasoning": "If every in-law label denotes the same paternal relationship, the named father and son create tension. Reading Hobab as brother-in-law avoids that particular generation conflict; equating Jethro and Reuel as two names for one person is a possible explanation, not an explicit identification in these passages. Numbers’ punctuation alone does not prove which antecedent receives the label.",
+          "scope": "This comparison is edition-sensitive. Do not claim all translations make Hobab the father-in-law, or that Kenite and Midianite must be mutually exclusive ethnic identities. No original-language semantic range or family genealogy is established solely from English translations. Alias and clan relationships remain interpretation questions. The Greek of Judges 1:16 names Jethro where the Hebrew and KJV name no one, so in the Greek book both Jethro (1:16) and Hobab (4:11) carry the same in-law word. Brenton’s English renders that Greek word “father-in-law” in both verses; the same Greek word is used for the woman’s father at Judges 19:9, so it does not by itself fix the relationship. The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition. A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "the-book-of-the-wars-of-the-lord-what-was-it",
+      "batch": "numbers-1-36-q",
+      "english": [
+        {
+          "ref": "Numbers 21:13",
+          "quote": "for Arnon is the border of Moab, between Moab and the Amorites",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 21:14",
+          "quote": "Wherefore it is said in the book of the wars of the Lord, What he did in the Red sea, and in the brooks of Arnon,",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 21:15",
+          "quote": "And at the stream of the brooks that goeth down to the dwelling of Ar, and lieth upon the border of Moab.",
+          "exact": true
+        },
+        {
+          "ref": "Joshua 10:13",
+          "quote": "Is not this written in the book of Jasher?",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עַל־כֵּן֙ יֵֽאָמַ֔ר בְּסֵ֖פֶר מִלְחֲמֹ֣ת יְהוָ֑ה",
+          "stated": {
+            "chapter": 21,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/21/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Διὰ τοῦτο λέγεται ἐν βιβλίῳ, πόλεμος τοῦ Κυρίου",
+          "stated": {
+            "chapter": 21,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM21.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Numbers 21:14",
+          "quote": "Wherefore it is said in the book of the wars of the Lord",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "joshua-prolonged-daylight",
+          "title": "A day with delayed sunset",
+          "summary": "A literal extra day before sunset departs from ordinary Earth rotation. The account gives no physical mechanism; reading the battle language as poetry changes what is being assessed.",
+          "reasoning": "Ordinary apparent daily solar motion is associated with Earth rotation; merely describing the Sun as moving is not the discrepancy. The issue is a literal extension of daylight beyond that cycle, which is not explained by ordinary rotation. The passage cites Jasher and contains elevated battle language, making interpretation relevant.",
+          "scope": "This conditional comparison does not show Earth stopped rotating, calculate physical consequences, identify a historical date, or disprove supernatural intervention. NASA supplies the ordinary physical model, not a reconstruction of this battle. A figurative reading does not assert the same physical event."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Reviewed overlapping records and all ENTRIES studies: different finding, not duplicate."
+    },
+    {
+      "id": "the-thirty-and-two-persons-given-as-tribute-to-the-priest-what-became-of-them",
+      "batch": "numbers-1-36-q",
+      "english": [
+        {
+          "ref": "Numbers 31:28",
+          "quote": "one soul of five hundred, both of the persons, and of the beeves, and of the asses, and of the sheep",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 31:29",
+          "quote": "Take it of their half, and give it unto Eleazar the priest, for an heave offering",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 31:30",
+          "quote": "thou shalt take one portion of fifty, of the persons, of the beeves, of the asses, and of the flocks, of all manner of beasts, and give them unto the Levites, which keep the charge of the tabernacle",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 31:35",
+          "quote": "And thirty and two thousand persons in all, of women that had not known man by lying with him.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 31:40",
+          "quote": "And the persons were sixteen thousand; of which the",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 31:40",
+          "quote": "tribute was thirty and two persons.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 31:41",
+          "quote": "And Moses gave the tribute, which was the",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 31:41",
+          "quote": "heave offering, unto Eleazar the priest",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 31:47",
+          "quote": "Moses took one portion of fifty, both of man and of beast, and gave them unto the Levites",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּמִכְסָם֙ לַֽיהוָ֔ה שְׁנַ֥יִם וּשְׁלֹשִׁ֖ים נָֽפֶשׁ",
+          "stated": {
+            "chapter": 31,
+            "verse": 40
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/4/31/",
+              "verse": 40
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ τὸ τέλος αὐτῶν Κυρίῳ, δύο καὶ τριάκοντα ψυχαί",
+          "stated": {
+            "chapter": 31,
+            "verse": 40
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NUM31.htm",
+              "verse": "40"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Numbers 31:40",
+          "quote": "tribute was thirty and two persons",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Numbers 31:41",
+          "quote": "heave offering, unto Eleazar the priest",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "numbers-midian-captives-and-distribution",
+          "title": "The Midian account includes captive executions and distribution of survivors",
+          "summary": "The narrative orders killings after capture and includes surviving female captives in the distribution of spoils.",
+          "reasoning": "These are distinct claims: battlefield deaths, subsequent captive killings, distribution and absence of losses on one side. The latter does not make the campaign bloodless.",
+          "scope": "The text supplies no individual culpability for each child, consent of captives or independent casualty verification. It does not specify the later treatment of every survivor; the ethical questions remain."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "duplicateFinding": false,
+      "overlapDecision": "Distinct focused Q about Eleazar’s thirty-two-person levy, not a repeat of the campaign/captive-distribution finding. The older record has a general treatment limit; this record compares the specific priestly transfer without asserting a fate."
+    }
+  ],
+  "policy": "Every KJV-labelled fragment in record text verified exactly at the packaged verse, including separate fragments after ellipses; sides refs and labels validated. Hebrew/Greek NFC/whitespace only, Strong markup removed; supplied address and printed chapter/verse constrained. Repeated Numbers4 quotation checked at all six named labels as well as separate4:3. All 67 supplied language pages fetched this run. No independent chapter reading or new-finding search. Drafts untouched.",
+  "needsOwner": []
+}
