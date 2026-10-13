@@ -124,12 +124,13 @@ body.dark .comparison-sources a,body.dark .field-sources a{color:var(--green);te
 .agreement.contradictions,body.dark .agreement.contradictions{background:#fbe4d2;color:#713c19}
 .agreement.science,body.dark .agreement.science{background:#e6f5ed;color:#234c3b}
 
-/* Warm parchment and burnt orange, with a chocolate night palette. */
-:root{--bg:#f1e4d1;--panel:#fff8ed;--ink:#39291e;--muted:#75604c;--line:#c4a98c;--green:#984515;--soft:#e9d5bb;--rust:#b84c19;--jesus:#b32925}
-body.dark{--bg:#21170f;--panel:#33261b;--ink:#fff1dd;--muted:#dbc3a6;--line:#987654;--green:#ffbb78;--soft:#4b3523;--rust:#ffc080;--jesus:#ff9290}
-body.dark .verse-citation{background:#5a3c24;color:#ffe2b9;border-color:#b78a5a}
-.comparison-summary,.study-tldr .comparison-summary,.evidence-result .comparison-summary{background:#f5e7d3;color:#53351c;border-color:#c7aa87}
-.verse-comparison .comparison-summary{background:var(--summary-tint,#f5e7d3);color:var(--summary-ink,#53351c)}
+/* Neutral gray page, white reader panels, and charcoal controls. */
+:root{--bg:#f2f2f2;--panel:#fff;--ink:#000;--muted:#555;--line:#555;--green:#333;--soft:#e6e6e6;--rust:#444;--jesus:#b32925}
+body.dark{--bg:#111;--panel:#1c1c1c;--ink:#f5f5f5;--muted:#ccc;--line:#888;--green:#ccc;--soft:#292929;--rust:#ddd;--jesus:#ff9290}
+body.dark .verse-citation{background:var(--soft);color:var(--ink);border-color:var(--line)}
+.comparison-summary,.study-tldr .comparison-summary,.evidence-result .comparison-summary{background:var(--soft);color:var(--ink);border-color:var(--line)}
+.verse-comparison .comparison-summary{background:var(--summary-tint,var(--soft));color:var(--summary-ink,var(--ink));border-color:var(--line)}
+body:not(.dark) .comparison-summary{color:var(--ink)}
 .jesus-words{color:var(--jesus)}
 .compare-control{display:flex;flex-direction:column;gap:5px;font-size:0.625rem;color:var(--muted)}
 #reader-compare{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:5px;font-size:0.8125rem}
