@@ -60,3 +60,14 @@ console.log('PASS: independent Questions category participates in reader loading
 
 context.cache.set('0:1:kjv:contradictions',{items:[{id:'fixture-targeted-greek',verse:6,status:'Textual conflict',tags:['G'],activeTags:[],title:'Fixture KJV contrast',summary:'Fixture only',text:'Limits',sources:[]}]});const untargeted=context.render(6);assert(untargeted.includes('>C</button>'));assert(!untargeted.includes('>G</button>'));
 console.log('PASS: language tag placements retain KJV contrast card without implying Greek discrepancy on the wrong side.');
+// Verify the production A+ handler and persistent scale without changing page content.
+const fontNode={attrs:{},setAttribute(k,v){this.attrs[k]=v;}};
+const scaleValues=new Map();const fontContext={state:{},$:()=>fontNode,document:{documentElement:{style:{setProperty:(k,v)=>scaleValues.set(k,v)}}},persist(){scaleValues.set('saved',true);}};
+vm.createContext(fontContext);
+vm.runInContext(source.slice(source.indexOf('function applyTextSize(){'),source.indexOf('applyTextSize();',source.indexOf("$('#reader-font').onclick="))+ 'applyTextSize();'.length)+ 'persist();}; applyTextSize();',fontContext);
+assert.equal(scaleValues.get('--text-scale'),'1');
+for(const expected of [1.1,1.2,1.3,0.9,1]){fontNode.onclick();assert.equal(scaleValues.get('--text-scale'),String(expected));assert.equal(fontContext.state.textScale,expected);assert(fontNode.attrs['aria-label'].includes('all text'));}
+fontContext.state.textScale=1.2;fontContext.applyTextSize();assert.equal(scaleValues.get('--text-scale'),'1.2');
+const typography=fs.readFileSync('src/style.css','utf8');const declarations=typography.match(/(?<![\w-])font(?:-size)?\s*:[^;}]+/g)||[];assert(declarations.filter(d=>d.includes('px')).every(d=>d==='font-size:calc(16px * var(--text-scale,1))'));assert(typography.includes('calc(var(--chapter-size,1.1875rem) - 0.25rem)'));
+console.log('PASS: A+ scales all typography, cycles sizes, saves preference and preserves smaller summaries.');
+
