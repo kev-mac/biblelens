@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 652,
+    "evidenceRecords": 673,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 501,
-    "annotatedVerses": 3011
+    "chaptersWithAnnotations": 512,
+    "annotatedVerses": 3028
   },
   "byBook": [
     {
@@ -123,8 +123,8 @@
     {
       "book": "Psalms",
       "chapters": 150,
-      "chaptersWithAnnotations": 50,
-      "annotatedVerses": 92
+      "chaptersWithAnnotations": 61,
+      "annotatedVerses": 109
     },
     {
       "book": "Proverbs",
@@ -9260,7 +9260,8 @@
         "sabeans-and-chaldeans-or-spoilers-and-horsemen-greek",
         "job-offered-burnt-offerings-greek-adds-one-calf-for-a-sin-offering",
         "satan-came-also-among-the-sons-of-god-what-is-his-standing",
-        "a-man-in-the-land-of-uz-where-and-when-did-job-live"
+        "a-man-in-the-land-of-uz-where-and-when-did-job-live",
+        "he-will-curse-thee-to-thy-face-or-he-will-bless-thee-to-thy-face"
       ],
       "annotatedVerses": [
         1,
@@ -9286,7 +9287,8 @@
         "jobs-wife-curse-god-and-die-greek-has-a-longer-speech",
         "jobs-three-friends-temanite-shuhite-naamathite-or-kings-greek",
         "thou-movedst-me-against-him-or-thou-hast-said-to-destroy-his-substance-greek",
-        "satan-came-also-among-the-sons-of-god-what-is-his-standing"
+        "satan-came-also-among-the-sons-of-god-what-is-his-standing",
+        "he-will-curse-thee-to-thy-face-or-he-will-bless-thee-to-thy-face"
       ],
       "annotatedVerses": [
         1,
@@ -9306,7 +9308,8 @@
       "bookId": 17,
       "chapter": 3,
       "annotationIds": [
-        "ready-to-raise-up-their-mourning-or-the-great-sea-monster-greek"
+        "ready-to-raise-up-their-mourning-or-the-great-sea-monster-greek",
+        "who-are-ready-to-raise-up-their-mourning-or-the-word-printed-leviathan"
       ],
       "annotatedVerses": [
         8
@@ -10032,10 +10035,12 @@
       "bookId": 18,
       "chapter": 22,
       "annotationIds": [
-        "my-god-my-god-why-hast-thou-forsaken-me-greek-adds-attend-to-me"
+        "my-god-my-god-why-hast-thou-forsaken-me-greek-adds-attend-to-me",
+        "they-pierced-my-hands-and-my-feet-or-as-a-lion-my-hands-and-my-feet"
       ],
       "annotatedVerses": [
-        1
+        1,
+        16
       ],
       "modes": [
         "contradictions"
@@ -10738,7 +10743,8 @@
       "bookId": 18,
       "chapter": 80,
       "annotationIds": [
-        "the-branch-that-thou-madest-strong-or-the-son-of-man-greek"
+        "the-branch-that-thou-madest-strong-or-the-son-of-man-greek",
+        "the-branch-that-thou-madest-strong-for-thyself-or-the-son-whom-thou-madest-strong"
       ],
       "annotatedVerses": [
         15
@@ -11106,9 +11112,15 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 107,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "fools-because-of-their-transgression-or-he-helped-them-out-of-the-way-of-their-iniquity-greek"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11124,18 +11136,33 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 109,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "who-speaks-the-curses-of-psalm-109-6-19-the-psalmist-or-his-adversaries"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 110,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thy-people-shall-be-willing-in-the-day-of-thy-power-or-with-thee-is-dominion-greek",
+        "the-lord-said-unto-my-lord-who-is-my-lord-in-psalm-110-1"
+      ],
+      "annotatedVerses": [
+        1,
+        3
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11178,9 +11205,15 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 115,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "neither-any-that-go-down-into-silence-or-any-that-go-down-into-hades-greek"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11205,27 +11238,53 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 118,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bind-the-sacrifice-with-cords-or-keep-the-feast-with-thick-branches-greek"
+      ],
+      "annotatedVerses": [
+        27
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 119,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-made-haste-and-delayed-not-or-i-was-prepared-and-was-not-troubled-greek",
+        "their-heart-is-as-fat-as-grease-or-their-heart-was-curdled-like-milk-greek",
+        "the-proud-have-digged-pits-for-me-or-transgressors-told-me-idle-tales-greek",
+        "i-hate-vain-thoughts-or-i-have-hated-transgressors-greek",
+        "thou-puttest-away-all-the-wicked-like-dross-or-i-have-reckoned-all-the-sinners-as-transgressors-greek"
+      ],
+      "annotatedVerses": [
+        60,
+        70,
+        85,
+        113,
+        119
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 120,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-sojourn-in-mesech-or-my-sojourning-is-prolonged-greek"
+      ],
+      "annotatedVerses": [
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11277,18 +11336,32 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 126,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "we-were-like-them-that-dream-or-we-became-as-comforted-ones-greek",
+        "when-the-lord-turned-again-the-captivity-of-zion-which-turning-does-psalm-126-1-recall"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 127,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "to-sit-up-late-or-rise-up-after-sitting-greek"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11304,18 +11377,30 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 129,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-plowers-plowed-upon-my-back-or-the-sinners-wrought-upon-my-back-greek"
+      ],
+      "annotatedVerses": [
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 130,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "that-thou-mayest-be-feared-or-for-thy-names-sake-greek"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

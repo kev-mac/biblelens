@@ -1,0 +1,74 @@
+[
+  {
+    "id": "they-pierced-my-hands-and-my-feet-or-as-a-lion-my-hands-and-my-feet",
+    "file": "t-catch-up-1-records.json",
+    "decision": "accepted as written",
+    "reason": "Accepted supplied plainly different wording or material question under the current owner rules, with stated witness and interpretation limits. No shared-reference overlap.",
+    "operation": "new",
+    "tags": [
+      "T"
+    ],
+    "witness": "Hebrew",
+    "needsOwner": false
+  },
+  {
+    "id": "a-little-lower-than-the-angels-or-a-little-lower-than-the-word-printed-god",
+    "file": "t-catch-up-1-records.json",
+    "decision": "held",
+    "reason": "Hold: the supplied comparison shows a different English rendering of the same Hebrew noun in another context, but explicitly leaves angels within its possible range here. A real meaning difference is not demonstrated; the conditional researcher recommendation is not an owner exception.",
+    "operation": "none",
+    "tags": [
+      "T"
+    ],
+    "witness": "Hebrew",
+    "needsOwner": false
+  },
+  {
+    "id": "the-branch-that-thou-madest-strong-for-thyself-or-the-son-whom-thou-madest-strong",
+    "file": "t-catch-up-1-records.json",
+    "decision": "accepted as written",
+    "reason": "Accepted supplied plainly different wording or material question under the current owner rules, with stated witness and interpretation limits. Shared references reviewed: the-branch-that-thou-madest-strong-or-the-son-of-man-greek. Existing Greek record witnesses Septuagint; new proposal explicitly adds the Hebrew printed noun under the owner’s plainly-different-word T rule, retaining the possible shoot sense and vine imagery. No claim of original reading.",
+    "operation": "new",
+    "tags": [
+      "T"
+    ],
+    "witness": "Hebrew and Septuagint",
+    "needsOwner": false
+  },
+  {
+    "id": "valley-of-baca-or-valley-of-weeping",
+    "file": "t-catch-up-1-records.json",
+    "decision": "held",
+    "reason": "Hold as duplicate: the existing valley-of-baca-make-it-a-well-or-valley-of-weeping-the-lawgiver-will-grant-blessings-greek already states this same name-versus-weeping comparison at this verse with witness Septuagint. This proposal adds no distinct Hebrew comparison or new key verse.",
+    "operation": "none",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "needsOwner": false
+  },
+  {
+    "id": "he-will-curse-thee-to-thy-face-or-he-will-bless-thee-to-thy-face",
+    "file": "t-catch-up-1-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Corrected the description of the supplied speech; no claim of verse poetry is needed. Shared references reviewed: he-will-curse-thee-to-thy-face-or-bless-thee-greek. Existing Greek record witnesses Septuagint; new proposal explicitly adds Hebrew under the owner’s plainly-different-word T rule, retaining the possible opposite-sense manner of speaking. No claim of intended meaning or original reading.",
+    "operation": "new",
+    "tags": [
+      "T"
+    ],
+    "witness": "Hebrew and Septuagint",
+    "needsOwner": false
+  },
+  {
+    "id": "who-are-ready-to-raise-up-their-mourning-or-the-word-printed-leviathan",
+    "file": "t-catch-up-1-records.json",
+    "decision": "accepted as written",
+    "reason": "Accepted supplied plainly different wording or material question under the current owner rules, with stated witness and interpretation limits. Shared references reviewed: ready-to-raise-up-their-mourning-or-the-great-sea-monster-greek, canst-thou-draw-out-leviathan-with-an-hook-or-a-dragon-greek, behemoth-and-leviathan-what-creatures-are-they. Existing Job 3:8 record witnesses Septuagint; the new proposal adds the plainly different Hebrew printed word under the owner T ruling. Creature identity and original reading remain undecided.",
+    "operation": "new",
+    "tags": [
+      "T"
+    ],
+    "witness": "Hebrew and Septuagint",
+    "needsOwner": false
+  }
+]

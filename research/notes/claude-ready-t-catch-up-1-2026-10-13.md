@@ -1,0 +1,28 @@
+# Claude integration: t-catch-up-1
+
+2026-10-13. 4 accepted (3 unchanged, 1 corrected), 2 held.
+
+Claude is the sole researcher. Matching notes were read first, including verse-number sections and Codex points. Selected oldest ready catch-up unit (Job and Psalms) and Psalms107–134 main/Q together: two books in this run. Historical aggregate decisions exclude older drafts. No independent research, no draft edits and no researcher recommendation adopted as an owner ruling. Current direct T/Translation ruling applies; all existing summaries are preserved.
+
+- **accepted as written** they-pierced-my-hands-and-my-feet-or-as-a-lion-my-hands-and-my-feet: Accepted supplied plainly different wording or material question under the current owner rules, with stated witness and interpretation limits. No shared-reference overlap.
+- **held** a-little-lower-than-the-angels-or-a-little-lower-than-the-word-printed-god: Hold: the supplied comparison shows a different English rendering of the same Hebrew noun in another context, but explicitly leaves angels within its possible range here. A real meaning difference is not demonstrated; the conditional researcher recommendation is not an owner exception.
+- **accepted as written** the-branch-that-thou-madest-strong-for-thyself-or-the-son-whom-thou-madest-strong: Accepted supplied plainly different wording or material question under the current owner rules, with stated witness and interpretation limits. Shared references reviewed: the-branch-that-thou-madest-strong-or-the-son-of-man-greek. Existing Greek record witnesses Septuagint; new proposal explicitly adds the Hebrew printed noun under the owner’s plainly-different-word T rule, retaining the possible shoot sense and vine imagery. No claim of original reading.
+- **held** valley-of-baca-or-valley-of-weeping: Hold as duplicate: the existing valley-of-baca-make-it-a-well-or-valley-of-weeping-the-lawgiver-will-grant-blessings-greek already states this same name-versus-weeping comparison at this verse with witness Septuagint. This proposal adds no distinct Hebrew comparison or new key verse.
+- **corrected and accepted** he-will-curse-thee-to-thy-face-or-he-will-bless-thee-to-thy-face: Corrected the description of the supplied speech; no claim of verse poetry is needed. Shared references reviewed: he-will-curse-thee-to-thy-face-or-bless-thee-greek. Existing Greek record witnesses Septuagint; new proposal explicitly adds Hebrew under the owner’s plainly-different-word T rule, retaining the possible opposite-sense manner of speaking. No claim of intended meaning or original reading.
+- **accepted as written** who-are-ready-to-raise-up-their-mourning-or-the-word-printed-leviathan: Accepted supplied plainly different wording or material question under the current owner rules, with stated witness and interpretation limits. Shared references reviewed: ready-to-raise-up-their-mourning-or-the-great-sea-monster-greek, canst-thou-draw-out-leviathan-with-an-hook-or-a-dragon-greek, behemoth-and-leviathan-what-creatures-are-they. Existing Job 3:8 record witnesses Septuagint; the new proposal adds the plainly different Hebrew printed word under the owner T ruling. Creature identity and original reading remain undecided.
+
+## Needs owner
+
+None: the standing real-meaning-difference and duplicate rules resolve these decisions. Held Psalm8 and Psalm107 require further supplied evidence before acceptance, or a direct owner exception if the qualification rule is to change. No exception has been adopted. The Baca proposal repeats an existing comparison. Previously decided holds are not reprocessed.
+
+## Verification
+
+12 labeled KJV excerpts and 75 repeated quoted fragments across all fields checked or classified. 20 Hebrew/Greek text fragments and 4 repeated language fragments verified at supplied addresses and printed labels. 6 Brenton English quotations checked on their supplied pages. All supplied sides validated against packaged KJV; all six ENTRIES studies and existing evidence reviewed for duplicates. Distinct added Hebrew witness comparisons retain uncertainty about intended contextual sense and original wording.
+
+Across the run 53 supplied source pages fetched, zero unresolved errors. KJV checked in data/chapters.json. Language text checks normalize NFC and whitespace; repeated inflected/quoted forms permit stated case/accent normalization only. Psalm115:17 checked at Greek113:25; Job41:1 at Hebrew40:25; psalm title offsets and differing Greek psalm numbers checked where printed. Repeated Greek son-of-man checked at79:16 and79:18. Researcher renderings are classified separately from KJV and Brenton quotations. All 652 prior evidence records and summaries preserved. Six selected draft/notes SHA256 hashes unchanged.
+
+Witness-label and verse-role merges, build, full checks, checkpoint and publication are recorded in integration-report.md. Annotation presence is not exhaustive review. Claude’s notes state that the original-language chapters were not all read in full. Fixture checks do not establish live generated-answer correctness.
+
+## Run validation and merges
+
+Witness-label merge: 271 applied, 0 retagged, 6 pending registry entries retained; all 21 new accepted records already carry their required witness or Q tag. No verse-roles.json supplied; no verse-role merge. One build and the full npm run check suite passed, including 18 chat reliability fixture cases. Totals: 673 evidence records plus6 built-in studies, 512 annotated chapters, 3028 unique annotated verses and4177 evidence placements. Annotation presence is not exhaustive review. No live hosted generated-answer correctness or visual QA claim. Release checkpoint and owner-only deployment are recorded in integration-report.md.

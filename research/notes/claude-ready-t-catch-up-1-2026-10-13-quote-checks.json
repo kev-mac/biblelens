@@ -1,0 +1,1596 @@
+{
+  "batch": "t-catch-up-1",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "they-pierced-my-hands-and-my-feet-or-as-a-lion-my-hands-and-my-feet",
+      "batch": "t-catch-up-1",
+      "english": [
+        {
+          "ref": "Psalms 22:16",
+          "quote": "For dogs have compassed me: the assembly of the wicked have inclosed me: they pierced my hands and my feet.",
+          "exact": true
+        },
+        {
+          "ref": "Isaiah 38:13",
+          "quote": "as a lion, so will he break all my bones",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כָּ֝אֲרִ֗י יָדַ֥י וְרַגְלָֽי",
+          "stated": {
+            "chapter": 22,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/22/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 22,
+            "verse": "17"
+          }
+        },
+        {
+          "quote": "כָּֽאֲרִ֔י",
+          "stated": {
+            "chapter": 38,
+            "verse": 13
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/38/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 38,
+            "verse": "13"
+          }
+        },
+        {
+          "quote": "ὤρυξαν χεῖράς μου, καὶ πόδας",
+          "stated": {
+            "chapter": 21,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA021.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 21,
+            "verse": "17"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 22:16",
+          "quote": "they pierced my hands and my feet",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA021.htm",
+          "printedLabel": "17",
+          "quote": "they pierced my hands and my feet",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They pierced my hands and my feet",
+          "matches": [
+            "Psalms 22:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA021.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "as a lion",
+          "matches": [
+            "Isaiah 38:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "they pierced my hands and my feet",
+          "matches": [
+            "Psalms 22:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA021.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "my hands",
+          "matches": [
+            "Psalms 22:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA021.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "as a lion",
+          "matches": [
+            "Isaiah 38:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "For dogs have compassed me: the assembly of the wicked have inclosed me: they pierced my hands and my feet.",
+          "matches": [
+            "Psalms 22:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "as a lion, so will he break all my bones",
+          "matches": [
+            "Isaiah 38:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "they pierced my hands and my feet",
+          "matches": [
+            "Psalms 22:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA021.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my hands and my feet",
+          "matches": [
+            "Psalms 22:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA021.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my hands",
+          "matches": [
+            "Psalms 22:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA021.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "as a lion",
+          "matches": [
+            "Isaiah 38:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my hands and my feet",
+          "matches": [
+            "Psalms 22:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA021.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "pierced",
+          "matches": [
+            "Psalms 22:16"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA021.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "a-little-lower-than-the-angels-or-a-little-lower-than-the-word-printed-god",
+      "batch": "t-catch-up-1",
+      "english": [
+        {
+          "ref": "Psalms 8:5",
+          "quote": "For thou hast made him a little lower than the angels, and hast crowned him with glory and honour.",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 1:1",
+          "quote": "In the beginning God created",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַתְּחַסְּרֵ֣הוּ מְּ֭עַט מֵאֱלֹהִ֑ים",
+          "stated": {
+            "chapter": 8,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/8/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": "6"
+          }
+        },
+        {
+          "quote": "בָּרָ֣א אֱלֹהִ֑ים",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/1/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "Ἠλάττωσας αὐτὸν βραχύ τι παρʼ ἀγγέλους",
+          "stated": {
+            "chapter": 8,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA008.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": "6"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 8:5",
+          "quote": "a little lower than the angels",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+          "printedLabel": "6",
+          "quote": "Thou madest him a little less than angels",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἀγγέλους",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA008.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A little lower than the angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "God",
+          "matches": [
+            "Genesis 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a little lower than the angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "God",
+          "matches": [
+            "Genesis 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "For thou hast made him a little lower than the angels, and hast crowned him with glory and honour.",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "In the beginning God created",
+          "matches": [
+            "Genesis 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Thou madest him a little less than angels",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "God",
+          "matches": [
+            "Genesis 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "the-branch-that-thou-madest-strong-for-thyself-or-the-son-whom-thou-madest-strong",
+      "batch": "t-catch-up-1",
+      "english": [
+        {
+          "ref": "Psalms 80:15",
+          "quote": "And the vineyard which thy right hand hath planted, and the branch that thou madest strong for thyself.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 80:17",
+          "quote": "upon the son of man whom thou madest strong for thyself",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְעַל־בֵּ֝֗ן אִמַּ֥צְתָּה לָּֽךְ",
+          "stated": {
+            "chapter": 80,
+            "verse": 16
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/80/",
+              "verse": 16
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 80,
+            "verse": "16"
+          }
+        },
+        {
+          "quote": "עַל־בֶּן־אָ֝דָ֗ם אִמַּ֥צְתָּ לָּֽךְ",
+          "stated": {
+            "chapter": 80,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/80/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 80,
+            "verse": "18"
+          }
+        },
+        {
+          "quote": "καὶ ἐπὶ υἱὸν ἀνθρώπου ὃν ἐκραταίωσας σεαυτῷ",
+          "stated": {
+            "chapter": 79,
+            "verse": 16
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA079.htm",
+              "verse": "16"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 79,
+            "verse": "16"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 80:15",
+          "quote": "the branch that thou madest strong for thyself",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "the-branch-that-thou-madest-strong-or-the-son-of-man-greek",
+          "title": "“The branch that thou madest strong for thyself” — the Greek has “the son of man”, as the KJV has at 80:17",
+          "summary": "The KJV of Psalm 80:15 has “the branch that thou madest strong for thyself”. At 80:17 the KJV has “the son of man whom thou madest strong for thyself”. Brenton’s Greek has “son of man” in both verses.",
+          "reasoning": "The Hebrew clauses share a related noun, the verb of making strong and “for thyself”, but the second includes the additional noun rendered “man” in the KJV. The KJV has “the branch” at 80:15 and “the son of man” at 80:17; the Greek has “son of man” (υἱὸν ἀνθρώπου) in both. The Hebrew clauses and verb forms are not identical.",
+          "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. In the Hebrew of 80:16 the noun is not followed by a second noun, and in 80:18 it is followed by the word the KJV renders “man”; the Greek of 79:16 prints ἀνθρώπου, which the Hebrew of 80:16 does not. The record does not say what the Hebrew noun means by itself and does not say that the KJV’s “branch” falls outside its range. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 79 (KJV Psalm 80); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+          "printedLabel": "16",
+          "quote": "and look on the son of man whom thou didst strengthen for thyself",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "υἱὸν ἀνθρώπου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA079.htm",
+              "verse": "16"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The branch that thou madest strong for thyself",
+          "matches": [
+            "Psalms 80:15"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "son",
+          "matches": [
+            "Psalms 80:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the branch",
+          "matches": [
+            "Psalms 80:15"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "son",
+          "matches": [
+            "Psalms 80:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "son of man",
+          "matches": [
+            "Psalms 80:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "son of man",
+          "matches": [
+            "Psalms 80:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And the vineyard which thy right hand hath planted, and the branch that thou madest strong for thyself.",
+          "matches": [
+            "Psalms 80:15"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "upon the son of man whom thou madest strong for thyself",
+          "matches": [
+            "Psalms 80:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and look on the son of man whom thou didst strengthen for thyself",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "branch",
+          "matches": [
+            "Psalms 80:15"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "son",
+          "matches": [
+            "Psalms 80:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "man",
+          "matches": [
+            "Psalms 80:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "son of man",
+          "matches": [
+            "Psalms 80:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "branch",
+          "matches": [
+            "Psalms 80:15"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "branch",
+          "matches": [
+            "Psalms 80:15"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "of man",
+          "matches": [
+            "Psalms 80:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA079.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "Shared references reviewed: the-branch-that-thou-madest-strong-or-the-son-of-man-greek. Existing Greek record witnesses Septuagint; new proposal explicitly adds the Hebrew printed noun under the owner’s plainly-different-word T rule, retaining the possible shoot sense and vine imagery. No claim of original reading.",
+      "repeatedLabelChecks": [
+        {
+          "url": "https://ebible.org/grcbrent/PSA079.htm",
+          "printedLabel": "18",
+          "quote": "υἱὸν ἀνθρώπου",
+          "exact": true,
+          "normalization": "Case/accents only"
+        }
+      ]
+    },
+    {
+      "id": "valley-of-baca-or-valley-of-weeping",
+      "batch": "t-catch-up-1",
+      "english": [
+        {
+          "ref": "Psalms 84:6",
+          "quote": "Who passing through the valley of Baca make it a well; the rain also filleth the pools.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עֹבְרֵ֤י ׀ בְּעֵ֣מֶק הַ֭בָּכָא",
+          "stated": {
+            "chapter": 84,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/84/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 84,
+            "verse": "7"
+          }
+        },
+        {
+          "quote": "εἰς τὴν κοιλάδα τοῦ κλαυθμῶνος",
+          "stated": {
+            "chapter": 83,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA083.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 83,
+            "verse": "7"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 84:6",
+          "quote": "the valley of Baca",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "valley-of-baca-make-it-a-well-or-valley-of-weeping-the-lawgiver-will-grant-blessings-greek",
+          "title": "“The valley of Baca … the rain also filleth the pools” — the Greek has “the valley of weeping … the lawgiver will grant blessings”",
+          "summary": "The KJV of Psalm 84:6 has a name, “Baca”, a well and “the rain”. Brenton’s Greek has “the valley of weeping”, a place that he has appointed, and “the lawgiver” who “will grant blessings”.",
+          "reasoning": "Three printed differences stand together. The place is a name in the KJV and a described valley in the Greek (κλαυθμῶνος). The KJV has the passers-by make it “a well”; Brenton’s Greek and English speak of the place “he” appointed, without explicitly naming that pronoun’s referent in the quoted clause. The KJV has “the rain” fill the pools; the Greek has “the lawgiver” grant blessings.",
+          "scope": "This compares the wording of three texts. It does not show which wording is original. The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted. The last word of the Hebrew verse is printed once, and the record does not say whether it means rain or a teacher. The Hebrew place-name and the Greek “valley of weeping” may refer to the same valley; this is not issued as an H record because no lexical source for the name is supplied. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Brenton’s Greek numbers this psalm 83 (KJV Psalm 84); the Hebrew and the Greek run one verse ahead of the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA083.htm",
+          "printedLabel": "7",
+          "quote": "the valley of weeping",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "τοῦ κλαυθμῶνος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA083.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The valley of Baca",
+          "matches": [
+            "Psalms 84:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the valley of weeping",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA083.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the valley of Baca",
+          "matches": [
+            "Psalms 84:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the valley of weeping",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA083.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Who passing through the valley of Baca make it a well; the rain also filleth the pools.",
+          "matches": [
+            "Psalms 84:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the valley of weeping",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA083.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Baca",
+          "matches": [
+            "Psalms 84:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "valley",
+          "matches": [
+            "Psalms 84:6"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA083.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of weeping",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA083.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Baca",
+          "matches": [
+            "Psalms 84:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "Shared references reviewed: valley-of-baca-make-it-a-well-or-valley-of-weeping-the-lawgiver-will-grant-blessings-greek."
+    },
+    {
+      "id": "he-will-curse-thee-to-thy-face-or-he-will-bless-thee-to-thy-face",
+      "batch": "t-catch-up-1",
+      "english": [
+        {
+          "ref": "Job 1:11",
+          "quote": "and he will curse thee to thy face",
+          "exact": true
+        },
+        {
+          "ref": "Job 2:5",
+          "quote": "and he will curse thee to thy face",
+          "exact": true
+        },
+        {
+          "ref": "Job 1:21",
+          "quote": "blessed be the name of the Lord",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אִם־לֹ֥א עַל־פָּנֶ֖יךָ יְבָרֲכֶֽךָּ",
+          "stated": {
+            "chapter": 1,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/18/1/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "11"
+          }
+        },
+        {
+          "quote": "אִם־לֹ֥א אֶל־פָּנֶ֖יךָ יְבָרֲכֶֽךָּ",
+          "stated": {
+            "chapter": 2,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/18/2/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": "5"
+          }
+        },
+        {
+          "quote": "יְהִ֛י שֵׁ֥ם יְהוָ֖ה מְבֹרָֽךְ",
+          "stated": {
+            "chapter": 1,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/18/1/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "21"
+          }
+        },
+        {
+          "quote": "ἦ μὴν εἰς πρόσωπόν σε εὐλογήσει",
+          "stated": {
+            "chapter": 1,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOB01.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "11"
+          }
+        },
+        {
+          "quote": "ἦ μὴν εἰς πρόσωπόν σε εὐλογήσει",
+          "stated": {
+            "chapter": 2,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOB02.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": "5"
+          }
+        },
+        {
+          "quote": "εἴη τὸ ὄνομα Κυρίου εὐλογημένον",
+          "stated": {
+            "chapter": 1,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOB01.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "21"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Job 1:11",
+          "quote": "and he will curse thee to thy face",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Job 2:5",
+          "quote": "and he will curse thee to thy face",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "he-will-curse-thee-to-thy-face-or-bless-thee-greek",
+          "title": "“He will curse thee to thy face” — the Greek has “he will bless thee to thy face”",
+          "summary": "In the KJV Satan says twice that Job “will curse thee to thy face”. Brenton’s Greek prints in both places the verb of blessing, the verb it uses for “blessed be the name of the Lord” in 1:21.",
+          "reasoning": "At 1:11 and 2:5 the KJV has Satan foretell a curse. The Greek edition prints at both places a form of the verb it prints at 1:21 for blessing the name of the Lord. In the Hebrew edition the verb at 1:11, 2:5, 1:5 and 2:9 is written with the same three root letters (ברך) as the word the KJV renders “blessed” at 1:21.",
+          "scope": "G applies at 1:11 and 2:5, where the Greek word is one of blessing and the KJV word is one of cursing. No H is tagged: a shared root does not settle what a word means in its context, and this record does not establish that the Hebrew verb cannot be used here as a manner of speaking for its opposite. The same caution applies to the Greek: the verb printed is the verb of blessing, and whether it is meant plainly or as a manner of speaking is not stated on the page. This compares the wording of three texts. It does not show which wording is original. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/JOB01.htm",
+          "printedLabel": "11",
+          "quote": "verily he will bless thee to thy face",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "He will curse thee to thy face",
+          "matches": [
+            "Job 1:11",
+            "Job 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "will curse",
+          "matches": [
+            "Job 1:11",
+            "Job 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "blessed",
+          "matches": [
+            "Job 1:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and he will curse thee to thy face",
+          "matches": [
+            "Job 1:11",
+            "Job 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and he will curse thee to thy face",
+          "matches": [
+            "Job 1:11",
+            "Job 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "blessed be the name of the Lord",
+          "matches": [
+            "Job 1:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "verily he will bless thee to thy face",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOB01.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "curse",
+          "matches": [
+            "Job 1:11",
+            "Job 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "blessed",
+          "matches": [
+            "Job 1:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "curse",
+          "matches": [
+            "Job 1:11",
+            "Job 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "blessed",
+          "matches": [
+            "Job 1:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "cursed",
+          "matches": [
+            "Job 1:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring at explicitly supplied scope reference Job 1:5"
+        },
+        {
+          "field": "scope",
+          "quote": "curse",
+          "matches": [
+            "Job 1:11",
+            "Job 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "Shared references reviewed: he-will-curse-thee-to-thy-face-or-bless-thee-greek. Existing Greek record witnesses Septuagint; new proposal explicitly adds Hebrew under the owner’s plainly-different-word T rule, retaining the possible opposite-sense manner of speaking. No claim of intended meaning or original reading."
+    },
+    {
+      "id": "who-are-ready-to-raise-up-their-mourning-or-the-word-printed-leviathan",
+      "batch": "t-catch-up-1",
+      "english": [
+        {
+          "ref": "Job 3:8",
+          "quote": "Let them curse it that curse the day, who are ready to raise up their mourning.",
+          "exact": true
+        },
+        {
+          "ref": "Job 41:1",
+          "quote": "Canst thou draw out leviathan with an hook?",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הָ֝עֲתִידִ֗ים עֹרֵ֥ר לִוְיָתָֽן",
+          "stated": {
+            "chapter": 3,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/18/3/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "8"
+          }
+        },
+        {
+          "quote": "תִּמְשֹׁ֣ךְ לִוְיָתָ֣ן בְּחַכָּ֑ה",
+          "stated": {
+            "chapter": 41,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/18/40/",
+              "verse": 25
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 40,
+            "verse": "25"
+          }
+        },
+        {
+          "quote": "ὁ μέλλων τὸ μέγα κῆτος χειρώσασθαι",
+          "stated": {
+            "chapter": 3,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOB03.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "8"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Job 3:8",
+          "quote": "who are ready to raise up their mourning",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "ready-to-raise-up-their-mourning-or-the-great-sea-monster-greek",
+          "title": "“Ready to raise up their mourning” — the Greek has “the great sea monster”",
+          "summary": "The KJV ends Job 3:8 with “who are ready to raise up their mourning”. Brenton’s Greek ends the verse with one who is about to master “the great sea monster”. The last Hebrew word of the verse has the same letters as the word the KJV prints as “leviathan” at Job 41:1.",
+          "reasoning": "In the KJV those who curse the day are ready to raise “their mourning”. In the Greek the one who curses is about to master a great creature, and no mourning is mentioned. The Hebrew word at the end of 3:8 is written with the same letters as the word at 41:1 (Hebrew 40:25), where the KJV prints the name of a creature.",
+          "scope": "G applies at 3:8. No H is tagged: that the KJV prints a creature’s name for these letters in another chapter shows that the word is shared, not what it means in 3:8, and this record supplies no dictionary source. Which creature the Greek words mean is not identified here. The verse stands in a speech in verse; the comparison is of what the three texts print, not of what the speaker meant beyond the words quoted. This compares the wording of three texts. It does not show which wording is original. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        },
+        {
+          "id": "canst-thou-draw-out-leviathan-with-an-hook-or-a-dragon-greek",
+          "title": "“Canst thou draw out leviathan with an hook?” — the Greek has “a dragon”",
+          "summary": "The KJV prints “leviathan”, preserving the Hebrew term. Brenton’s Greek uses its word for a dragon or serpent, and a halter about the nose where the KJV has a cord for the tongue.",
+          "reasoning": "The KJV preserves the Hebrew creature term. The Greek uses a different creature term, the same noun it prints at Job 26:13 for the creature slain there (quoted in a separate record). The second half of the verse also differs: tongue and cord in the KJV, nose and halter in the Greek.",
+          "scope": "G applies at 41:1 (40:25 in the Hebrew and Greek editions). The KJV’s name and the Greek’s noun may point to the same creature; the comparison does not establish that one must be a proper name and the other cannot be. The tongue/cord versus nose/halter contrast independently qualifies G. Brenton’s own English of the verse has “the serpent” for the Greek noun (https://ebible.org/eng-Brenton/JOB40.htm). The rest of the description (KJV 41:2–34) was not compared with the Greek. A separate record compares Job 3:8, where the same Hebrew letters stand and the KJV has “their mourning”. The verse stands in a speech in verse; the comparison is of what the three texts print, not of what the speaker meant beyond the words quoted. This compares the wording of three texts. It does not show which wording is original. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        },
+        {
+          "id": "behemoth-and-leviathan-what-creatures-are-they",
+          "title": "Behemoth and leviathan — what creatures does the Lord point Job to?",
+          "summary": "The Lord’s speech from the whirlwind (40:6) sets two creatures before Job, behemoth and leviathan, and describes each at length. The KJV keeps both words as names. The verses quoted do not say what kind of creature either one is.",
+          "reasoning": "The speech uses the two creatures to answer Job, so what they are bears on what the answer is. The description joins things said of a grazing animal and a creature of the water (grass, a river, a hook) with things that go beyond that (a flame from the mouth, heads in the plural in the psalm, a kingship over “all the children of pride”). If they are animals Job could see, the speech can be read as pointing to God’s rule over the made world; if they are creatures of another kind, it can be read as pointing to powers beyond ordinary animals. The text names them and does not say which.",
+          "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Possible readings: that they are two known animals described in heightened language; that they are animals no longer known; and that they are creatures of a kind other than ordinary animals, as Isaiah 27:1 speaks of leviathan beside “the dragon that is in the sea”. Each is an interpretation; the verses quoted state none of them, in the KJV or in the Hebrew quoted, and this record asserts none. The speech is in verse, and this record does not test its pictures against natural history. A shared name in the Psalms and Isaiah does not settle that the same creature is meant in Job. Two separate records compare the Greek, which has “beasts” at 40:15 and a common noun for a dragon or serpent at KJV 41:1; the Greek verses quoted in those records keep neither name. Check made for an answer elsewhere: the packaged KJV was searched for the words “behemoth” (Job 40:15 only) and “leviathan” (Job 41:1, Psalms 74:14, Psalms 104:26, Isaiah 27:1), and those verses were read. That is a word search, not a reading of the whole Bible, and Job 40:15–41:34 was not compared with the Hebrew or the Greek verse by verse. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/JOB03.htm",
+          "printedLabel": "8",
+          "quote": "ready to attack the great whale",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "τὸ μέγα κῆτος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOB03.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Ready to raise up their mourning",
+          "matches": [
+            "Job 3:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "leviathan",
+          "matches": [
+            "Job 41:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "ready to raise up their mourning",
+          "matches": [
+            "Job 3:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "leviathan",
+          "matches": [
+            "Job 41:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the great sea monster",
+          "matches": [],
+          "brenton": [],
+          "kind": "Researcher rendering of verified Greek τὸ μέγα κῆτος; supplied Brenton English says great whale. Creature identity remains unspecified."
+        },
+        {
+          "field": "text",
+          "quote": "Let them curse it that curse the day, who are ready to raise up their mourning.",
+          "matches": [
+            "Job 3:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Canst thou draw out leviathan with an hook?",
+          "matches": [
+            "Job 41:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "ready to attack the great whale",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOB03.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "their mourning",
+          "matches": [
+            "Job 3:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "leviathan",
+          "matches": [
+            "Job 41:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "mourning",
+          "matches": [
+            "Job 3:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "mourning",
+          "matches": [
+            "Job 3:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "Shared references reviewed: ready-to-raise-up-their-mourning-or-the-great-sea-monster-greek, canst-thou-draw-out-leviathan-with-an-hook-or-a-dragon-greek, behemoth-and-leviathan-what-creatures-are-they. Existing Job 3:8 record witnesses Septuagint; the new proposal adds the plainly different Hebrew printed word under the owner T ruling. Creature identity and original reading remain undecided."
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/19/22/",
+    "https://bolls.life/get-text/WLC/23/38/",
+    "https://ebible.org/grcbrent/PSA021.htm",
+    "https://ebible.org/eng-Brenton/PSA021.htm",
+    "https://bolls.life/get-text/WLC/19/8/",
+    "https://bolls.life/get-text/WLC/1/1/",
+    "https://ebible.org/grcbrent/PSA008.htm",
+    "https://ebible.org/eng-Brenton/PSA008.htm",
+    "https://bolls.life/get-text/WLC/19/80/",
+    "https://ebible.org/grcbrent/PSA079.htm",
+    "https://ebible.org/eng-Brenton/PSA079.htm",
+    "https://bolls.life/get-text/WLC/19/84/",
+    "https://ebible.org/grcbrent/PSA083.htm",
+    "https://ebible.org/eng-Brenton/PSA083.htm",
+    "https://bolls.life/get-text/WLC/18/1/",
+    "https://bolls.life/get-text/WLC/18/2/",
+    "https://ebible.org/grcbrent/JOB01.htm",
+    "https://ebible.org/grcbrent/JOB02.htm",
+    "https://ebible.org/eng-Brenton/JOB01.htm",
+    "https://bolls.life/get-text/WLC/18/3/",
+    "https://bolls.life/get-text/WLC/18/40/",
+    "https://ebible.org/grcbrent/JOB03.htm",
+    "https://ebible.org/eng-Brenton/JOB03.htm",
+    "https://bolls.life/get-text/WLC/19/107/",
+    "https://ebible.org/grcbrent/PSA106.htm",
+    "https://ebible.org/eng-Brenton/PSA106.htm",
+    "https://bolls.life/get-text/WLC/19/110/",
+    "https://ebible.org/grcbrent/PSA109.htm",
+    "https://ebible.org/eng-Brenton/PSA109.htm",
+    "https://bolls.life/get-text/WLC/19/115/",
+    "https://ebible.org/grcbrent/PSA113.htm",
+    "https://ebible.org/eng-Brenton/PSA113.htm",
+    "https://bolls.life/get-text/WLC/19/118/",
+    "https://ebible.org/grcbrent/PSA117.htm",
+    "https://ebible.org/eng-Brenton/PSA117.htm",
+    "https://bolls.life/get-text/WLC/19/119/",
+    "https://ebible.org/grcbrent/PSA118.htm",
+    "https://ebible.org/eng-Brenton/PSA118.htm",
+    "https://bolls.life/get-text/WLC/19/120/",
+    "https://ebible.org/grcbrent/PSA119.htm",
+    "https://ebible.org/eng-Brenton/PSA119.htm",
+    "https://bolls.life/get-text/WLC/19/126/",
+    "https://ebible.org/grcbrent/PSA125.htm",
+    "https://ebible.org/eng-Brenton/PSA125.htm",
+    "https://bolls.life/get-text/WLC/19/127/",
+    "https://ebible.org/grcbrent/PSA126.htm",
+    "https://ebible.org/eng-Brenton/PSA126.htm",
+    "https://bolls.life/get-text/WLC/19/129/",
+    "https://ebible.org/grcbrent/PSA128.htm",
+    "https://ebible.org/eng-Brenton/PSA128.htm",
+    "https://bolls.life/get-text/WLC/19/130/",
+    "https://ebible.org/grcbrent/PSA129.htm",
+    "https://ebible.org/eng-Brenton/PSA129.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 652,
+  "studiesChecked": 6,
+  "draftHashes": {
+    "research/claude-drafts/t-catch-up-1-records.json": "a33e1fe099862c14c211f8b69c71398e4a7b60bd6cec112200095e114401fa44",
+    "research/claude-drafts/t-catch-up-1-notes.md": "458cd9fba815f07b2fdaa379f53f2001b17bac6b068b3aef83cff814aa911c87",
+    "research/claude-drafts/psalms-107-134-records.json": "08c51d7ddcc5ac6aab994828c756e83351f613e1fa47a3991229720ee4c18095",
+    "research/claude-drafts/psalms-107-134-notes.md": "ac1fc4d098bd1ef9909de296e2c95dc7ee3b987020a1564c44f4bccc80ade6e6",
+    "research/claude-drafts/psalms-107-134-q-records.json": "bfdb87f7eea5cba5a10830129831d450d371fa1979c62223a65895c1051e3ca9",
+    "research/claude-drafts/psalms-107-134-q-notes.md": "56bea7622f31ec99efc73bf10d095ecc18936d5860a094c6076a4e539fbc29f3"
+  }
+}

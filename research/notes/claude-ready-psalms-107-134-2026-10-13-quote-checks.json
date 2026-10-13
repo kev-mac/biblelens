@@ -1,0 +1,2855 @@
+{
+  "batch": "psalms-107-134",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "from-the-north-and-from-the-south-or-from-the-north-and-from-the-sea",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 107:3",
+          "quote": "And gathered them out of the lands, from the east, and from the west, from the north, and from the south.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מִצָּפֹ֥ון וּמִיָּֽם",
+          "stated": {
+            "chapter": 107,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/107/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 107,
+            "verse": "3"
+          }
+        },
+        {
+          "quote": "יֹורְדֵ֣י הַ֭יָּם",
+          "stated": {
+            "chapter": 107,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/107/",
+              "verse": 23
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 107,
+            "verse": "23"
+          }
+        },
+        {
+          "quote": "καὶ βοῤῥᾶ, καὶ θαλάσσης",
+          "stated": {
+            "chapter": 106,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA106.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 106,
+            "verse": "3"
+          }
+        },
+        {
+          "quote": "εἰς θάλασσαν",
+          "stated": {
+            "chapter": 106,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA106.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 106,
+            "verse": "23"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 107:3",
+          "quote": "and from the south",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+          "printedLabel": "3",
+          "quote": "and north, and south",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "θαλάσσης",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA106.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        },
+        {
+          "field": "scope",
+          "quote": "ומים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/107/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "From the north, and from the south",
+          "matches": [
+            "Psalms 107:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "sea",
+          "matches": [
+            "Psalms 107:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "from the south",
+          "matches": [
+            "Psalms 107:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "sea",
+          "matches": [
+            "Psalms 107:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And gathered them out of the lands, from the east, and from the west, from the north, and from the south.",
+          "matches": [
+            "Psalms 107:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "They that go down to the sea in ships",
+          "matches": [
+            "Psalms 107:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and north, and south",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "south",
+          "matches": [
+            "Psalms 107:3"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "sea",
+          "matches": [
+            "Psalms 107:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "sea",
+          "matches": [
+            "Psalms 107:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "south",
+          "matches": [
+            "Psalms 107:3"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "sea",
+          "matches": [
+            "Psalms 107:23"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "south",
+          "matches": [
+            "Psalms 107:3"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "south",
+          "matches": [
+            "Psalms 107:3"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "fools-because-of-their-transgression-or-he-helped-them-out-of-the-way-of-their-iniquity-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 107:17",
+          "quote": "Fools because of their transgression, and because of their iniquities, are afflicted.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֱ֭וִלִים מִדֶּ֣רֶךְ פִּשְׁעָ֑ם",
+          "stated": {
+            "chapter": 107,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/107/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 107,
+            "verse": "17"
+          }
+        },
+        {
+          "quote": "Ἀντελάβετο αὐτῶν ἐξ ὁδοῦ ἀνομίας αὐτῶν",
+          "stated": {
+            "chapter": 106,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA106.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 106,
+            "verse": "17"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 107:17",
+          "quote": "Fools because of their transgression",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+          "printedLabel": "17",
+          "quote": "He helped them out of the way of their iniquity",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "αὐτῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA106.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Fools because of their transgression … are afflicted",
+          "matches": [
+            "Psalms 107:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "He helped them out of the way of their iniquity",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Fools",
+          "matches": [
+            "Psalms 107:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "He helped them",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Fools because of their transgression, and because of their iniquities, are afflicted.",
+          "matches": [
+            "Psalms 107:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "He helped them out of the way of their iniquity",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Fools",
+          "matches": [
+            "Psalms 107:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "them",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA106.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "thy-people-shall-be-willing-in-the-day-of-thy-power-or-with-thee-is-dominion-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 110:3",
+          "quote": "Thy people shall be willing in the day of thy power, in the beauties of holiness from the womb of the morning: thou hast the dew of thy youth.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עַמְּךָ֣ נְדָבֹת֮ בְּיֹ֪ום חֵ֫ילֶ֥ךָ",
+          "stated": {
+            "chapter": 110,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/110/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 110,
+            "verse": "3"
+          }
+        },
+        {
+          "quote": "לְ֝ךָ֗ טַ֣ל יַלְדֻתֶֽיךָ",
+          "stated": {
+            "chapter": 110,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/110/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 110,
+            "verse": "3"
+          }
+        },
+        {
+          "quote": "Μετὰ σοῦ ἡ ἀρχὴ ἐν ἡμέρᾳ τῆς δυνάμεώς σου",
+          "stated": {
+            "chapter": 109,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA109.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 109,
+            "verse": "3"
+          }
+        },
+        {
+          "quote": "ἐκ γαστρὸς πρὸ Ἑωσφόρου ἐγέννησά σε",
+          "stated": {
+            "chapter": 109,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA109.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 109,
+            "verse": "3"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 110:3",
+          "quote": "Thy people shall be willing in the day of thy power",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+          "printedLabel": "3",
+          "quote": "With thee is dominion in the day of thy power",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+          "printedLabel": "3",
+          "quote": "I have begotten thee from the womb before the morning",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thy people shall be willing in the day of thy power",
+          "matches": [
+            "Psalms 110:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "With thee is dominion",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "title",
+          "quote": "I have begotten thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "I have begotten thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Thy people shall be willing in the day of thy power, in the beauties of holiness from the womb of the morning: thou hast the dew of thy youth.",
+          "matches": [
+            "Psalms 110:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "With thee is dominion in the day of thy power",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I have begotten thee from the womb before the morning",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Thy people shall be willing",
+          "matches": [
+            "Psalms 110:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "with thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "dominion",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the dew of thy youth",
+          "matches": [
+            "Psalms 110:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "I have begotten thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA109.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "neither-any-that-go-down-into-silence-or-any-that-go-down-into-hades-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 115:17",
+          "quote": "The dead praise not the Lord, neither any that go down into silence.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְ֝לֹ֗א כָּל־יֹרְדֵ֥י דוּמָֽה",
+          "stated": {
+            "chapter": 115,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/115/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 115,
+            "verse": "17"
+          }
+        },
+        {
+          "quote": "οὐδὲ πάντες οἱ καταβαίνοντες εἰς ᾅδου",
+          "stated": {
+            "chapter": 115,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA113.htm",
+              "verse": "25"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 113,
+            "verse": "25"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 115:17",
+          "quote": "neither any that go down into silence",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA113.htm",
+          "printedLabel": "25",
+          "quote": "nor any that go down to Hades",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ᾅδου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA113.htm",
+              "verse": "25"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Neither any that go down into silence",
+          "matches": [
+            "Psalms 115:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "any that go down to Hades",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA113.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "neither any that go down into silence",
+          "matches": [
+            "Psalms 115:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "silence",
+          "matches": [
+            "Psalms 115:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The dead praise not the Lord, neither any that go down into silence.",
+          "matches": [
+            "Psalms 115:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "nor any that go down to Hades",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA113.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "silence",
+          "matches": [
+            "Psalms 115:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Hades",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA113.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "silence",
+          "matches": [
+            "Psalms 115:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "bind-the-sacrifice-with-cords-or-keep-the-feast-with-thick-branches-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 118:27",
+          "quote": "God is the Lord, which hath shewed us light: bind the sacrifice with cords, even unto the horns of the altar.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אִסְרוּ־חַ֥ג בַּעֲבֹתִ֑ים",
+          "stated": {
+            "chapter": 118,
+            "verse": 27
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/118/",
+              "verse": 27
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 118,
+            "verse": "27"
+          }
+        },
+        {
+          "quote": "συστήσασθε ἑορτὴν ἐν τοῖς πυκάζουσιν",
+          "stated": {
+            "chapter": 117,
+            "verse": 27
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA117.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 117,
+            "verse": "27"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 118:27",
+          "quote": "bind the sacrifice with cords",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA117.htm",
+          "printedLabel": "27",
+          "quote": "celebrate the feast with thick branches",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἑορτήν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA117.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        },
+        {
+          "field": "summary",
+          "quote": "ἐν τοῖς πυκάζουσιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA117.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἑορτήν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA117.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἐν τοῖς πυκάζουσιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA117.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Bind the sacrifice with cords",
+          "matches": [
+            "Psalms 118:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "celebrate the feast with thick branches",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA117.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "celebrate the feast with thick branches",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA117.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "God is the Lord, which hath shewed us light: bind the sacrifice with cords, even unto the horns of the altar.",
+          "matches": [
+            "Psalms 118:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "celebrate the feast with thick branches",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA117.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the sacrifice",
+          "matches": [
+            "Psalms 118:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "cords",
+          "matches": [
+            "Psalms 118:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "feast",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA117.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "with thick branches",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA117.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "i-made-haste-and-delayed-not-or-i-was-prepared-and-was-not-troubled-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 119:60",
+          "quote": "I made haste, and delayed not to keep thy commandments.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "חַ֭שְׁתִּי וְלֹ֣א הִתְמַהְמָ֑הְתִּי",
+          "stated": {
+            "chapter": 119,
+            "verse": 60
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/119/",
+              "verse": 60
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 119,
+            "verse": "60"
+          }
+        },
+        {
+          "quote": "Ἡτοιμάσθην καὶ οὐκ ἐταράχθην",
+          "stated": {
+            "chapter": 118,
+            "verse": 60
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA118.htm",
+              "verse": "60"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 118,
+            "verse": "60"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 119:60",
+          "quote": "I made haste, and delayed not",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+          "printedLabel": "60",
+          "quote": "I prepared myself, (and was not terrified,)",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἐταράχθην",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA118.htm",
+              "verse": "60"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "I made haste, and delayed not",
+          "matches": [
+            "Psalms 119:60"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "I prepared myself, (and was not terrified,)",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "60"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "I made haste, and delayed not",
+          "matches": [
+            "Psalms 119:60"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "I was prepared",
+          "matches": [],
+          "brenton": [],
+          "kind": "Researcher rendering of verified Ἡτοιμάσθην; supplied Brenton English says I prepared myself. Not an exact KJV or Brenton quotation."
+        },
+        {
+          "field": "summary",
+          "quote": "was not terrified",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "60"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I made haste, and delayed not to keep thy commandments.",
+          "matches": [
+            "Psalms 119:60"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I prepared myself, (and was not terrified,)",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "60"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "was not terrified",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "60"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Delayed not",
+          "matches": [
+            "Psalms 119:60"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "was not terrified",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "60"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "their-heart-is-as-fat-as-grease-or-their-heart-was-curdled-like-milk-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 119:70",
+          "quote": "Their heart is as fat as grease; but I delight in thy law.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "טָפַ֣שׁ כַּחֵ֣לֶב לִבָּ֑ם",
+          "stated": {
+            "chapter": 119,
+            "verse": 70
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/119/",
+              "verse": 70
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 119,
+            "verse": "70"
+          }
+        },
+        {
+          "quote": "Ἐτυρώθη ὡς γάλα ἡ καρδία αὐτῶν",
+          "stated": {
+            "chapter": 118,
+            "verse": 70
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA118.htm",
+              "verse": "70"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 118,
+            "verse": "70"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 119:70",
+          "quote": "Their heart is as fat as grease",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+          "printedLabel": "70",
+          "quote": "Their heart has been curdled like milk",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "γάλα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA118.htm",
+              "verse": "70"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        },
+        {
+          "field": "reasoning",
+          "quote": "γάλα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA118.htm",
+              "verse": "70"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Their heart is as fat as grease",
+          "matches": [
+            "Psalms 119:70"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "curdled like milk",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "70"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "milk",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "70"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "curdled",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "70"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Their heart is as fat as grease; but I delight in thy law.",
+          "matches": [
+            "Psalms 119:70"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Their heart has been curdled like milk",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "70"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "grease",
+          "matches": [
+            "Psalms 119:70"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "milk",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "70"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "the-proud-have-digged-pits-for-me-or-transgressors-told-me-idle-tales-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 119:85",
+          "quote": "The proud have digged pits for me, which are not after thy law.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כָּֽרוּ־לִ֣י זֵדִ֣ים שִׁיחֹ֑ות",
+          "stated": {
+            "chapter": 119,
+            "verse": 85
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/119/",
+              "verse": 85
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 119,
+            "verse": "85"
+          }
+        },
+        {
+          "quote": "Διηγήσαντό μοι παράνομοι ἀδολεσχίας",
+          "stated": {
+            "chapter": 118,
+            "verse": 85
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA118.htm",
+              "verse": "85"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 118,
+            "verse": "85"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 119:85",
+          "quote": "The proud have digged pits for me",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+          "printedLabel": "85",
+          "quote": "Transgressors told me idle tales",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἀδολεσχίας",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA118.htm",
+              "verse": "85"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The proud have digged pits for me",
+          "matches": [
+            "Psalms 119:85"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Transgressors told me idle tales",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "85"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "idle tales",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "85"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The proud have digged pits for me, which are not after thy law.",
+          "matches": [
+            "Psalms 119:85"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Transgressors told me idle tales",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "85"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "idle tales",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "85"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "not after thy law",
+          "matches": [
+            "Psalms 119:85"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "not according to thy law",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "85"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "i-hate-vain-thoughts-or-i-have-hated-transgressors-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 119:113",
+          "quote": "I hate vain thoughts: but thy law do I love.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "סֵעֲפִ֥ים שָׂנֵ֑אתִי",
+          "stated": {
+            "chapter": 119,
+            "verse": 113
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/119/",
+              "verse": 113
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 119,
+            "verse": "113"
+          }
+        },
+        {
+          "quote": "Παρανόμους ἐμίσησα",
+          "stated": {
+            "chapter": 118,
+            "verse": 113
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA118.htm",
+              "verse": "113"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 118,
+            "verse": "113"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 119:113",
+          "quote": "I hate vain thoughts",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+          "printedLabel": "113",
+          "quote": "I have hated transgressors",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "I hate vain thoughts",
+          "matches": [
+            "Psalms 119:113"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "I have hated transgressors",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "113"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "vain thoughts",
+          "matches": [
+            "Psalms 119:113"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "transgressors",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "113"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I hate vain thoughts: but thy law do I love.",
+          "matches": [
+            "Psalms 119:113"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I have hated transgressors",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "113"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "thou-puttest-away-all-the-wicked-like-dross-or-i-have-reckoned-all-the-sinners-as-transgressors-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 119:119",
+          "quote": "Thou puttest away all the wicked of the earth like dross: therefore I love thy testimonies.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "סִגִ֗ים הִשְׁבַּ֥תָּ כָל־רִשְׁעֵי־אָ֑רֶץ",
+          "stated": {
+            "chapter": 119,
+            "verse": 119
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/119/",
+              "verse": 119
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 119,
+            "verse": "119"
+          }
+        },
+        {
+          "quote": "Παραβαίνοντας ἐλογισάμην πάντας τοὺς ἁμαρτωλοὺς τῆς γῆς",
+          "stated": {
+            "chapter": 118,
+            "verse": 119
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA118.htm",
+              "verse": "119"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 118,
+            "verse": "119"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 119:119",
+          "quote": "Thou puttest away all the wicked of the earth like dross",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+          "printedLabel": "119",
+          "quote": "I have reckoned all the sinners of the earth as transgressors",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thou puttest away all the wicked of the earth like dross",
+          "matches": [
+            "Psalms 119:119"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "I have reckoned all the sinners of the earth as transgressors",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "119"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Thou",
+          "matches": [
+            "Psalms 119:119"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "I have reckoned",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "119"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "transgressors",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "119"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "dross",
+          "matches": [
+            "Psalms 119:119"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Thou puttest away all the wicked of the earth like dross: therefore I love thy testimonies.",
+          "matches": [
+            "Psalms 119:119"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I have reckoned all the sinners of the earth as transgressors",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "119"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Thou",
+          "matches": [
+            "Psalms 119:119"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "I",
+          "matches": [
+            "Psalms 119:119"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA118.htm",
+              "printedLabel": "119"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "i-sojourn-in-mesech-or-my-sojourning-is-prolonged-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 120:5",
+          "quote": "Woe is me, that I sojourn in Mesech, that I dwell in the tents of Kedar!",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּי־גַ֣רְתִּי מֶ֑שֶׁךְ",
+          "stated": {
+            "chapter": 120,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/120/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 120,
+            "verse": "5"
+          }
+        },
+        {
+          "quote": "ὅτι ἡ παροικία μου ἐμακρύνθη",
+          "stated": {
+            "chapter": 119,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA119.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 119,
+            "verse": "5"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 120:5",
+          "quote": "that I sojourn in Mesech",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA119.htm",
+          "printedLabel": "5",
+          "quote": "my sojourning is prolonged",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "That I sojourn in Mesech",
+          "matches": [
+            "Psalms 120:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "my sojourning is prolonged",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA119.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Mesech",
+          "matches": [
+            "Psalms 120:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "is prolonged",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA119.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Woe is me, that I sojourn in Mesech, that I dwell in the tents of Kedar!",
+          "matches": [
+            "Psalms 120:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "my sojourning is prolonged",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA119.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Mesech",
+          "matches": [
+            "Psalms 120:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "is prolonged",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA119.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my sojourning",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA119.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "we-were-like-them-that-dream-or-we-became-as-comforted-ones-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 126:1",
+          "quote": "When the Lord turned again the captivity of Zion, we were like them that dream.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הָ֝יִ֗ינוּ כְּחֹלְמִֽים",
+          "stated": {
+            "chapter": 126,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/126/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 126,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "ἐγενήθημεν ὡσεὶ παρακεκλημένοι",
+          "stated": {
+            "chapter": 125,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA125.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 125,
+            "verse": "1"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 126:1",
+          "quote": "we were like them that dream",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA125.htm",
+          "printedLabel": "1",
+          "quote": "we became as comforted ones",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "We were like them that dream",
+          "matches": [
+            "Psalms 126:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "we became as comforted ones",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA125.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "them that dream",
+          "matches": [
+            "Psalms 126:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "comforted ones",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA125.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "When the Lord turned again the captivity of Zion, we were like them that dream.",
+          "matches": [
+            "Psalms 126:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "we became as comforted ones",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA125.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "to-sit-up-late-or-rise-up-after-sitting-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 127:2",
+          "quote": "It is vain for you to rise up early, to sit up late, to eat the bread of sorrows: for so he giveth his beloved sleep.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מַשְׁכִּ֪ימֵי ק֡וּם מְאַֽחֲרֵי־שֶׁ֗בֶת",
+          "stated": {
+            "chapter": 127,
+            "verse": 2
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/127/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 127,
+            "verse": "2"
+          }
+        },
+        {
+          "quote": "ἐγείρεσθε μετὰ τὸ καθῆσθαι",
+          "stated": {
+            "chapter": 126,
+            "verse": 2
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA126.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 126,
+            "verse": "2"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 127:2",
+          "quote": "to sit up late",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA126.htm",
+          "printedLabel": "2",
+          "quote": "ye rise up after resting",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἐγείρεσθε",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA126.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "To sit up late",
+          "matches": [
+            "Psalms 127:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "ye rise up after resting",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA126.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "to sit up late",
+          "matches": [
+            "Psalms 127:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "It is vain for you to rise up early, to sit up late, to eat the bread of sorrows: for so he giveth his beloved sleep.",
+          "matches": [
+            "Psalms 127:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "ye rise up after resting",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA126.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "rise",
+          "matches": [
+            "Psalms 127:2"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA126.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "to sit",
+          "matches": [
+            "Psalms 127:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "the-plowers-plowed-upon-my-back-or-the-sinners-wrought-upon-my-back-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 129:3",
+          "quote": "The plowers plowed upon my back: they made long their furrows.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עַל־גַּ֭בִּי חָרְשׁ֣וּ חֹרְשִׁ֑ים הֶ֝אֱרִ֗יכוּ",
+          "stated": {
+            "chapter": 129,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/129/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 129,
+            "verse": "3"
+          }
+        },
+        {
+          "quote": "Ἐπὶ τὸν νῶτόν μου ἐτέκταινον οἱ ἁμαρτωλοὶ, ἐμάκρυναν τὴν ἀνομίαν αὐτῶν",
+          "stated": {
+            "chapter": 128,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA128.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 128,
+            "verse": "3"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 129:3",
+          "quote": "The plowers plowed upon my back",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA128.htm",
+          "printedLabel": "3",
+          "quote": "The sinners wrought upon my back: they prolonged their iniquity",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "οἱ ἁμαρτωλοί",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA128.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The plowers plowed upon my back",
+          "matches": [
+            "Psalms 129:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "The sinners wrought upon my back",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA128.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "plowers",
+          "matches": [
+            "Psalms 129:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the sinners",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA128.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "they prolonged their iniquity",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA128.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The plowers plowed upon my back: they made long their furrows.",
+          "matches": [
+            "Psalms 129:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The sinners wrought upon my back: they prolonged their iniquity",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA128.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "plowers",
+          "matches": [
+            "Psalms 129:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the sinners",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA128.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    },
+    {
+      "id": "that-thou-mayest-be-feared-or-for-thy-names-sake-greek",
+      "batch": "psalms-107-134",
+      "english": [
+        {
+          "ref": "Psalms 130:4",
+          "quote": "But there is forgiveness with thee, that thou mayest be feared.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּֽי־עִמְּךָ֥ הַסְּלִיחָ֑ה לְ֝מַ֗עַן תִּוָּרֵֽא",
+          "stated": {
+            "chapter": 130,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/130/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 130,
+            "verse": "4"
+          }
+        },
+        {
+          "quote": "Ὅτι παρὰ σοὶ ὁ ἱλασμός ἐστιν· ἕνεκεν τοῦ ὀνόματός σου",
+          "stated": {
+            "chapter": 129,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA129.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 129,
+            "verse": "4"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 130:4",
+          "quote": "that thou mayest be feared",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA129.htm",
+          "printedLabel": "4",
+          "quote": "For with thee is forgiveness: for thy name's sake",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἕνεκεν τοῦ ὀνόματός σου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA129.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "That thou mayest be feared",
+          "matches": [
+            "Psalms 130:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "for thy name’s sake",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA129.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "that thou mayest be feared",
+          "matches": [
+            "Psalms 130:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "for thy name’s sake",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA129.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "text",
+          "quote": "But there is forgiveness with thee, that thou mayest be feared.",
+          "matches": [
+            "Psalms 130:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "For with thee is forgiveness: for thy name's sake",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA129.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "for thy name’s sake",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA129.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap."
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/19/22/",
+    "https://bolls.life/get-text/WLC/23/38/",
+    "https://ebible.org/grcbrent/PSA021.htm",
+    "https://ebible.org/eng-Brenton/PSA021.htm",
+    "https://bolls.life/get-text/WLC/19/8/",
+    "https://bolls.life/get-text/WLC/1/1/",
+    "https://ebible.org/grcbrent/PSA008.htm",
+    "https://ebible.org/eng-Brenton/PSA008.htm",
+    "https://bolls.life/get-text/WLC/19/80/",
+    "https://ebible.org/grcbrent/PSA079.htm",
+    "https://ebible.org/eng-Brenton/PSA079.htm",
+    "https://bolls.life/get-text/WLC/19/84/",
+    "https://ebible.org/grcbrent/PSA083.htm",
+    "https://ebible.org/eng-Brenton/PSA083.htm",
+    "https://bolls.life/get-text/WLC/18/1/",
+    "https://bolls.life/get-text/WLC/18/2/",
+    "https://ebible.org/grcbrent/JOB01.htm",
+    "https://ebible.org/grcbrent/JOB02.htm",
+    "https://ebible.org/eng-Brenton/JOB01.htm",
+    "https://bolls.life/get-text/WLC/18/3/",
+    "https://bolls.life/get-text/WLC/18/40/",
+    "https://ebible.org/grcbrent/JOB03.htm",
+    "https://ebible.org/eng-Brenton/JOB03.htm",
+    "https://bolls.life/get-text/WLC/19/107/",
+    "https://ebible.org/grcbrent/PSA106.htm",
+    "https://ebible.org/eng-Brenton/PSA106.htm",
+    "https://bolls.life/get-text/WLC/19/110/",
+    "https://ebible.org/grcbrent/PSA109.htm",
+    "https://ebible.org/eng-Brenton/PSA109.htm",
+    "https://bolls.life/get-text/WLC/19/115/",
+    "https://ebible.org/grcbrent/PSA113.htm",
+    "https://ebible.org/eng-Brenton/PSA113.htm",
+    "https://bolls.life/get-text/WLC/19/118/",
+    "https://ebible.org/grcbrent/PSA117.htm",
+    "https://ebible.org/eng-Brenton/PSA117.htm",
+    "https://bolls.life/get-text/WLC/19/119/",
+    "https://ebible.org/grcbrent/PSA118.htm",
+    "https://ebible.org/eng-Brenton/PSA118.htm",
+    "https://bolls.life/get-text/WLC/19/120/",
+    "https://ebible.org/grcbrent/PSA119.htm",
+    "https://ebible.org/eng-Brenton/PSA119.htm",
+    "https://bolls.life/get-text/WLC/19/126/",
+    "https://ebible.org/grcbrent/PSA125.htm",
+    "https://ebible.org/eng-Brenton/PSA125.htm",
+    "https://bolls.life/get-text/WLC/19/127/",
+    "https://ebible.org/grcbrent/PSA126.htm",
+    "https://ebible.org/eng-Brenton/PSA126.htm",
+    "https://bolls.life/get-text/WLC/19/129/",
+    "https://ebible.org/grcbrent/PSA128.htm",
+    "https://ebible.org/eng-Brenton/PSA128.htm",
+    "https://bolls.life/get-text/WLC/19/130/",
+    "https://ebible.org/grcbrent/PSA129.htm",
+    "https://ebible.org/eng-Brenton/PSA129.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 652,
+  "studiesChecked": 6,
+  "draftHashes": {
+    "research/claude-drafts/t-catch-up-1-records.json": "a33e1fe099862c14c211f8b69c71398e4a7b60bd6cec112200095e114401fa44",
+    "research/claude-drafts/t-catch-up-1-notes.md": "458cd9fba815f07b2fdaa379f53f2001b17bac6b068b3aef83cff814aa911c87",
+    "research/claude-drafts/psalms-107-134-records.json": "08c51d7ddcc5ac6aab994828c756e83351f613e1fa47a3991229720ee4c18095",
+    "research/claude-drafts/psalms-107-134-notes.md": "ac1fc4d098bd1ef9909de296e2c95dc7ee3b987020a1564c44f4bccc80ade6e6",
+    "research/claude-drafts/psalms-107-134-q-records.json": "bfdb87f7eea5cba5a10830129831d450d371fa1979c62223a65895c1051e3ca9",
+    "research/claude-drafts/psalms-107-134-q-notes.md": "56bea7622f31ec99efc73bf10d095ecc18936d5860a094c6076a4e539fbc29f3"
+  }
+}
