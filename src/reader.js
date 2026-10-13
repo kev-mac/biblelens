@@ -27,7 +27,7 @@ function visibleComparison(item){return recordTags(item).length>0||item.mode==='
 function verseComparisons(verse){return comparisonModes.flatMap(mode=>(comparisonCache.get(comparisonKey(mode))?.items||[]).filter(i=>i.verse===verse).map((item,index)=>({...item,mode,key:`${mode}-${index}`}))).filter(visibleComparison);}
 
 
-const CONTEXT_CHIP_LIMIT=4;
+const CONTEXT_CHIP_LIMIT=3;
 const comparisonRecordSelections=new Map();
 const comparisonHighlightOrder=new Map();
 let comparisonHighlightSequence=0;
@@ -36,7 +36,7 @@ const BOOK_CITATION_ABBREVIATIONS='Gen Exo Lev Num Deu Jos Jud Rut 1Sam 2Sam 1Ki
 function compactCitation(p,label){const name=books[p.book]?.name;return name&&label.startsWith(name+' ')?BOOK_CITATION_ABBREVIATIONS[p.book]+label.slice(name.length):label;}
 function comparisonTone(item){return languageTags[item.tag]?.tone||(item.mode==='questions'?'question':item.mode);}
 function comparisonIcon(item){return item.tag||(item.mode==='history'?'↶':comparisonLabels[item.mode][0]);}
-function referenceLink(ref,label,contextItem){const p=typeof ref==='string'?readRef(ref):ref;if(!p)return '';const full=label||ref.label||(typeof ref==='string'?ref:`${books[p.book]?.name} ${p.chapter}:${p.verse}`);return `<a class="verse-citation${contextItem?' context-source':''}" href="#read/${p.book}/${p.chapter}/${p.verse}" aria-label="${esc(full)}" title="${esc(full)}"><span>${esc(compactCitation(p,full))}</span>${contextItem?`<span class="source-icon ${comparisonTone(contextItem)}" aria-hidden="true">${comparisonIcon(contextItem)}</span>`:''}</a>`;}
+function referenceLink(ref,label,contextItem){const p=typeof ref==='string'?readRef(ref):ref;if(!p)return '';const full=label||ref.label||(typeof ref==='string'?ref:`${books[p.book]?.name} ${p.chapter}:${p.verse}`);return `<a class="verse-citation${contextItem?' context-source':''}" href="#read/${p.book}/${p.chapter}/${p.verse}" data-cite="${p.book}/${p.chapter}/${p.verse}" data-cite-end="${p.end||p.verse}" data-cite-label="${esc(full)}" aria-label="${esc(full)}" title="${esc(full)}"><span>${esc(compactCitation(p,full))}</span>${contextItem?`<span class="source-icon ${comparisonTone(contextItem)}" aria-hidden="true">${comparisonIcon(contextItem)}</span>`:''}</a>`;}
 function contextRanges(item){
  const sideRefs=new Set(item.sides?.length?item.sides.map(s=>s.ref):[item.ref]);
  const refs=[...(item.refs||[]),...(item.appliesTo||[])].map(r=>typeof r==='string'?{...readRef(r),label:r}:r).filter(r=>r&&Number.isInteger(r.book)&&!sideRefs.has(r.label||`${books[r.book]?.name} ${r.chapter}:${r.verse}`));
@@ -47,7 +47,7 @@ function contextRanges(item){
 function roleCitations(item){
  const ranges=contextRanges(item),visible=ranges.slice(0,CONTEXT_CHIP_LIMIT),remaining=ranges.length-visible.length;
  const groups=[...new Set(ranges.map(r=>r.book))].map(book=>`<div class="context-book-line">${ranges.filter(r=>r.book===book).map(r=>referenceLink(r,undefined,item)).join('')}</div>`).join('');
- return `<div class="context-citations"><div class="context-short summary-citations">${visible.map(r=>referenceLink(r,undefined,item)).join('')}${remaining?`<button type="button" class="verse-citation" data-context-expand aria-expanded="false">+${remaining} more</button>`:''}</div>${remaining?`<div class="context-full" hidden>${groups}<button type="button" class="verse-citation" data-context-collapse>Show fewer</button></div>`:''}</div>`;
+ return `<div class="context-citations"><div class="context-short summary-citations">${visible.map(r=>referenceLink(r,undefined,item)).join('')}${remaining?`<button type="button" class="verse-citation" data-context-expand aria-expanded="false" aria-label="Show ${remaining} additional citations">+${remaining}</button>`:''}</div>${remaining?`<div class="context-full" hidden>${groups}<button type="button" class="verse-citation" data-context-collapse>Show fewer</button></div>`:''}</div>`;
 }
 function expandContext(button){const parent=button.closest('.context-citations'),open=button.hasAttribute('data-context-expand');parent.querySelector('.context-short').hidden=open;parent.querySelector('.context-full').hidden=!open;parent.querySelector('[data-context-expand]').setAttribute('aria-expanded',String(open));}
 function sideRows(item){return item.sides?.length?`<div class="comparison-sides">${item.sides.map(side=>`<div class="comparison-side">${referenceLink(side.ref)}<q>${esc(side.quote)}</q></div>`).join('')}</div>`:'';}
