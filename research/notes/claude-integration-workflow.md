@@ -45,3 +45,9 @@ The owner directly adopted the six decisions in the Genesis 1–50 draft notes: 
 ## Scheduled integration — one oldest ready batch per run
 
 List research/claude-drafts/*-records.json. A batch is READY only when its matching -notes.md exists and no decisions file in research/notes/ covers it. Existing aggregate decisions count for the batches they identify; do not reprocess already decided records merely because the historical filename differs. Choose the oldest ready draft by file modification time. If none is ready, stop without building, publishing or writing anything. Read its notes first, especially verse numbering and points addressed to Codex. Verify every KJV quotation and every supplied Hebrew/Greek quotation at its printed verse; validate sides and check evidence IDs/findings plus ENTRIES studies. Give each record an accept/correct/hold decision and reason. Hold missing owner rulings under Needs owner; do not adopt rulings from researcher notes. Integrate accepted records, build, run all checks, checkpoint, back up, push and publish. Drafts remain untouched; no independent research. Write claude-ready-{batch}-{date}.md with adjacent decisions and quote-checks JSON. Report counts with the annotation-presence versus exhaustive-review limit. Do not attempt a second batch in the same scheduled run.
+
+## Proper names and H — direct owner ruling, 2026-10-13
+
+A proper name qualifies for H when the Hebrew name is made of ordinary words whose meaning the KJV's name does not carry, provided the record states that the place or person may be the same. A difference of spelling or form alone does not qualify.
+
+The owner directly accepts `red-sea-or-sea-of-suph-hebrew` as written under this ruling. This instruction was supplied directly by the owner in chat, not adopted from a researcher note.

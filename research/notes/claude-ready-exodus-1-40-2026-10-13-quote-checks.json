@@ -2155,7 +2155,12 @@
     }
   ],
   "policy": "All explicit KJV quotes exact at the stated packaged verse; sides exact and refs validated. Hebrew/Greek NFC and whitespace only, Strong number markup removed. Printed chapter/verse labels independently constrained; Exodus22 KJV8–9 maps to Hebrew/Greek7–8, Exodus38:26 to Greek39:3, Jonah2:5 to WLC2:6. TR same-word claims compared separately with accent/punctuation normalization. No scripture chapter independently read for new findings.",
-  "needsOwner": [
-    "red-sea-or-sea-of-suph-hebrew"
-  ]
+  "needsOwner": [],
+  "ownerRuling": {
+    "date": "2026-10-13",
+    "source": "Direct owner message in this chat",
+    "ruling": "A proper name qualifies for H when the Hebrew name is made of ordinary words whose meaning the KJV's name does not carry, provided the record states that the place or person may be the same. A difference of spelling or form alone does not qualify.",
+    "record": "red-sea-or-sea-of-suph-hebrew",
+    "acceptedAsWritten": true
+  }
 }

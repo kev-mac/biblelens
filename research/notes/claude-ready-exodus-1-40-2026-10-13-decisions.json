@@ -282,10 +282,10 @@
   {
     "id": "red-sea-or-sea-of-suph-hebrew",
     "file": "exodus-1-40-records.json",
-    "decision": "held",
-    "reason": "Exact quotations verified, but a literal place-name etymology does not demonstrate a mistranslation in meaning when Red sea may be the conventional name of the same water. No direct owner ruling extending H to such proper-name differences has been supplied.",
+    "decision": "accepted as written",
+    "reason": "Accepted as written under the direct owner ruling supplied 2026-10-13: A proper name qualifies for H when the Hebrew name is made of ordinary words whose meaning the KJV's name does not carry, provided the record states that the place or person may be the same. A difference of spelling or form alone does not qualify. The record states Red sea may be the customary name of the same water. Previously verified quotations remain unchanged.",
     "changes": [],
-    "operation": "none",
+    "operation": "new",
     "tags": [
       "H"
     ],
@@ -294,6 +294,10 @@
       "Exodus 13:18",
       "Exodus 15:4",
       "Exodus 15:22"
-    ]
+    ],
+    "previousDecision": {
+      "decision": "held",
+      "reason": "Exact quotations verified, but a literal place-name etymology does not demonstrate a mistranslation in meaning when Red sea may be the conventional name of the same water. No direct owner ruling extending H to such proper-name differences has been supplied."
+    }
   }
 ]

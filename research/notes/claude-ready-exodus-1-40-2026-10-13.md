@@ -1,6 +1,6 @@
 # Claude exodus-1-40 integration — 2026-10-13
 
-19 accepted: 16 unchanged, 3 corrected; 1 held. Exodus main and Q batches processed together as one book.
+20 accepted: 17 unchanged, 3 corrected; 0 held. Exodus main and Q batches processed together as one book.
 
 - treasure-cities-pithom-and-raamses-greek-adds-on: accepted as written. KJV quotations and sides exact; original-language quotations verified at supplied address and printed verse. Finding distinct from existing evidence/studies; edition and interpretation limits retained.
 - i-am-that-i-am-or-i-am-the-one-who-is-greek: accepted as written. KJV quotations and sides exact; original-language quotations verified at supplied address and printed verse. Finding distinct from existing evidence/studies; edition and interpretation limits retained.
@@ -21,15 +21,20 @@
 - moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king: corrected and accepted. Removed an implication of only one departure and clarified that a shared Greek verb does not settle context. Kept both reconciliations in scope.
 - neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east: accepted as written. KJV quotations and sides exact; original-language quotations verified at supplied address and printed verse. Finding distinct from existing evidence/studies; edition and interpretation limits retained.
 - silver-from-603550-numbered-before-the-numbering-of-the-second-month: accepted as written. Verified 603,550 at KJV Exodus38:26/Greek39:3 and Numbers1:46, and quoted dates. Identical totals do not establish one census: separate numberings/reused count remain possible. Existing payment/population records do not compare these dates.
-- red-sea-or-sea-of-suph-hebrew: held. Exact quotations verified, but a literal place-name etymology does not demonstrate a mistranslation in meaning when Red sea may be the conventional name of the same water. No direct owner ruling extending H to such proper-name differences has been supplied.
+- red-sea-or-sea-of-suph-hebrew: accepted as written. Accepted as written under the direct owner ruling supplied 2026-10-13: A proper name qualifies for H when the Hebrew name is made of ordinary words whose meaning the KJV's name does not carry, provided the record states that the place or person may be the same. A difference of spelling or form alone does not qualify. The record states Red sea may be the customary name of the same water. Previously verified quotations remain unchanged.
 
 ## Needs owner
 
-Whether a conventional proper-name etymology difference qualifies for H without a demonstrated referent or meaning change. Held: red-sea-or-sea-of-suph-hebrew. No researcher ruling adopted.
+None. The owner directly supplied the proper-name H ruling on 2026-10-13 and accepted this record as written; the earlier hold is resolved.
 
 Checked duplicates against data/evidence.json and all six ENTRIES studies. Overlapping references concern different findings; quoted-page edition limits and reconciliations retained. Drafts untouched; no independent findings added. No verse-roles.json is present. Annotation presence is not exhaustive review.
 
 Build, full checks, checkpoint, backup and publication results will be appended after validation.
 
 Validation: npm run build and all npm run check checks passed on 2026-10-13. Chat reliability checked 18 known-passage/retry cases with fixtures; no live generated-answer correctness claimed. Totals: 393 evidence records plus 6 studies, 393 annotated chapters, 2696 unique verses, 3036 evidence placements. Annotation presence is not exhaustive review. No verse-roles.json supplied. Publication targets the existing Scripture Lens Site and preserves access; deployment outcome is recorded in automation run memory.
+
+
+Owner follow-up, 2026-10-13: A proper name qualifies for H when the Hebrew name is made of ordinary words whose meaning the KJV's name does not carry, provided the record states that the place or person may be the same. A difference of spelling or form alone does not qualify. Accepted red-sea-or-sea-of-suph-hebrew as written; no draft fields changed. The previous hold and its reason are retained in the decisions JSON for history. Fresh build/check and publication follow.
+
+Owner-follow-up validation: build and all checks passed. Updated totals supersede the earlier run: 394 evidence records plus 6 studies, 393 annotated chapters, 2698 unique verses, 3042 evidence placements. Annotation presence is not exhaustive review. Record inserted byte-for-byte in its fields from Claude's draft; no new research or draft edits.
 

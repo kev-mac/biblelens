@@ -34436,6 +34436,120 @@ const EVIDENCE=[
         "quote": "thou shalt put in the breastplate of judgment the Urim and the Thummim"
       }
     ]
+  },
+  {
+    "id": "red-sea-or-sea-of-suph-hebrew",
+    "mode": "contradictions",
+    "ref": "Exodus 10:19",
+    "appliesTo": [
+      "Exodus 10:19",
+      "Exodus 13:18",
+      "Exodus 15:4",
+      "Exodus 15:22"
+    ],
+    "title": "The “Red sea” — the Hebrew says “sea of suph”, and has no word for red",
+    "status": "Context",
+    "summary": "Where the KJV has “the Red sea”, the Hebrew has “sea of suph”. The KJV renders the same word suph as “flags” at Exodus 2:3 and “weeds” at Jonah 2:5. The Hebrew has no word for “red” in these verses. Brenton’s Greek has “Red sea”, as the KJV does.",
+    "text": "KJV Exodus 10:19: “cast them into the Red sea”. KJV 13:18: “through the way of the wilderness of the Red sea”. KJV 15:4: “his chosen captains also are drowned in the Red sea”. KJV 15:22: “So Moses brought Israel from the Red sea”. Hebrew (WLC) 10:19: וַיִּתְקָעֵ֖הוּ יָ֣מָּה סּ֑וּף [and drove it to the sea of suph]. 13:18: דֶּ֥רֶךְ הַמִּדְבָּ֖ר יַם־ס֑וּף [by the way of the wilderness, the sea of suph]. 15:4: טֻבְּע֥וּ בְיַם־סֽוּף [were sunk in the sea of suph]. 15:22: מִיַּם־ס֔וּף [from the sea of suph]. KJV Exodus 2:3: “and she laid it in the flags by the river”. Hebrew (WLC) 2:3: וַתָּ֥שֶׂם בַּסּ֖וּף עַל־שְׂפַ֥ת הַיְאֹֽר [and she put it in the suph on the bank of the river]. KJV Jonah 2:5: “the weeds were wrapped about my head”. Hebrew (WLC) 2:6 (KJV 2:5): ס֖וּף חָב֥וּשׁ לְרֹאשִֽׁי [suph was bound to my head]. Septuagint (Brenton Greek) 10:19: εἰς τὴν ἐρυθρὰν θαλάσσαν [into the Red sea]. 13:18: εἰς τὴν ἐρυθρὰν θάλασσαν [to the Red sea]. 15:4: κατεπόθησαν ἐν ἐρυθρᾷ θαλάσσῃ [were swallowed up in the Red sea]. Fetched from https://bolls.life/get-text/WLC/2/10/, https://bolls.life/get-text/WLC/2/13/, https://bolls.life/get-text/WLC/2/15/, https://bolls.life/get-text/WLC/2/2/, https://bolls.life/get-text/WLC/32/2/, https://ebible.org/grcbrent/EXO10.htm, https://ebible.org/grcbrent/EXO13.htm and https://ebible.org/grcbrent/EXO15.htm.",
+    "reasoning": "The Hebrew name of the sea is made of two words: “sea” and suph. Suph is a word for water plants: the KJV itself has “flags” for it where the infant Moses is laid by the river, and “weeds” where Jonah speaks of the deep. So the Hebrew name says “sea of reeds” or “sea of weeds”. “Red” is a different meaning, and no Hebrew word for red stands in any of these verses. The KJV’s “Red sea” matches the Greek name, not the Hebrew one.",
+    "scope": "H applies at Exodus 10:19, 13:18, 15:4 and 15:22, the four verses of Exodus quoted; the name occurs in other verses of the KJV that were not individually compared. Brenton’s Greek agrees with the KJV here, so no G is proposed. The finding is about what the name says, not about where the sea is: “Red sea” may be the customary name of the same water, and this record does not claim that the KJV points to the wrong sea or that the sea crossed was a marsh or a lake. Exodus 2:3 and Jonah 2:5 are quoted only to show how the KJV renders suph by itself; the Greek of Jonah was not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Exodus 10: KJV",
+        "url": "https://ebible.org/eng-kjv/EXO10.htm"
+      },
+      {
+        "label": "Exodus 13: KJV",
+        "url": "https://ebible.org/eng-kjv/EXO13.htm"
+      },
+      {
+        "label": "Exodus 15: KJV",
+        "url": "https://ebible.org/eng-kjv/EXO15.htm"
+      },
+      {
+        "label": "Exodus 2: KJV",
+        "url": "https://ebible.org/eng-kjv/EXO02.htm"
+      },
+      {
+        "label": "Jonah 2: KJV",
+        "url": "https://ebible.org/eng-kjv/JON02.htm"
+      },
+      {
+        "label": "Exodus 10: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/2/10/"
+      },
+      {
+        "label": "Exodus 13: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/2/13/"
+      },
+      {
+        "label": "Exodus 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/2/15/"
+      },
+      {
+        "label": "Exodus 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/2/2/"
+      },
+      {
+        "label": "Jonah 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/32/2/"
+      },
+      {
+        "label": "Exodus 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EXO10.htm"
+      },
+      {
+        "label": "Exodus 13: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EXO13.htm"
+      },
+      {
+        "label": "Exodus 15: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EXO15.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Exodus 10:19",
+        "book": 1,
+        "chapter": 10,
+        "verse": 19
+      },
+      {
+        "label": "Exodus 13:18",
+        "book": 1,
+        "chapter": 13,
+        "verse": 18
+      },
+      {
+        "label": "Exodus 15:4",
+        "book": 1,
+        "chapter": 15,
+        "verse": 4
+      },
+      {
+        "label": "Exodus 15:22",
+        "book": 1,
+        "chapter": 15,
+        "verse": 22
+      },
+      {
+        "label": "Exodus 2:3",
+        "book": 1,
+        "chapter": 2,
+        "verse": 3
+      },
+      {
+        "label": "Jonah 2:5",
+        "book": 31,
+        "chapter": 2,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-12",
+    "tags": [
+      "H"
+    ],
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition"
   }
 ]
 ;
