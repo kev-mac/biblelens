@@ -1,0 +1,118 @@
+{
+  "formula": "WCAG sRGB relative luminance, (lighter + 0.05)/(darker + 0.05)",
+  "light": {
+    "bg": "#f4f5f3",
+    "panel": "#fdfdfc",
+    "ink": "#1e2624",
+    "muted": "#5b6763",
+    "line": "#d9dedb",
+    "green": "#2d5f57",
+    "soft": "#e6eeeb",
+    "rust": "#935c44"
+  },
+  "dark": {
+    "bg": "#151b19",
+    "panel": "#1d2623",
+    "ink": "#ebeeec",
+    "muted": "#a9b4af",
+    "line": "#34413c",
+    "green": "#8fc2b6",
+    "soft": "#26332f",
+    "rust": "#d9a387"
+  },
+  "text": [
+    {
+      "theme": "Light",
+      "role": "Body text",
+      "panel": 15.193997810459585,
+      "background": 14.140551003003576,
+      "target": 4.5
+    },
+    {
+      "theme": "Light",
+      "role": "Muted text",
+      "panel": 5.787299748263776,
+      "background": 5.386048377844168,
+      "target": 4.5
+    },
+    {
+      "theme": "Light",
+      "role": "Primary / links",
+      "panel": 7.148886627794262,
+      "background": 6.65323223262708,
+      "target": 7
+    },
+    {
+      "theme": "Dark",
+      "role": "Body text",
+      "panel": 13.276732606061554,
+      "background": 14.944313428265295,
+      "target": 4.5
+    },
+    {
+      "theme": "Dark",
+      "role": "Muted text",
+      "panel": 7.264622443666852,
+      "background": 8.177071720688433,
+      "target": 4.5
+    },
+    {
+      "theme": "Dark",
+      "role": "Primary / links",
+      "panel": 7.800602382475259,
+      "background": 8.780371676669949,
+      "target": 7
+    }
+  ],
+  "chips": {
+    "T": 7.615381466750956,
+    "V": 7.548467727188989,
+    "Q": 7.071249919533872,
+    "History": 7.276044029927048,
+    "Contradictions": 7.250653485272742,
+    "Science": 8.600115660352014,
+    "Context": 8.000807296550038,
+    "Plain": 11.500652976614546
+  },
+  "redLetters": {
+    "Light": {
+      "panel": 6.327700993268158,
+      "background": 5.888981935055201
+    },
+    "Dark": {
+      "panel": 7.214200898449181,
+      "background": 8.120317141257775
+    }
+  },
+  "redLettersOnTargetedHighlights": {
+    "T": {
+      "light": 5.131575928281729,
+      "dark": 1.713260230519566
+    },
+    "V": {
+      "light": 5.050566241056007,
+      "dark": 1.686213826578481
+    },
+    "Q": {
+      "light": 5.227359141242997,
+      "dark": 1.7452390167270373
+    },
+    "History": {
+      "light": 5.312457757291195,
+      "dark": 1.7736505761749068
+    },
+    "Contradictions": {
+      "light": 5.253534391686418,
+      "dark": 1.7539780505512172
+    },
+    "Science": {
+      "light": 5.719275973348149,
+      "dark": 1.9094734657437797
+    },
+    "Context": {
+      "light": 5.44050887457032,
+      "dark": 1.8164025279678877
+    }
+  },
+  "liveVisualVerification": false
+}
