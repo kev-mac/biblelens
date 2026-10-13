@@ -15,3 +15,13 @@ handlers.focusin({target:target(b)});await settle();handlers.keydown({key:'Escap
 // Closing during an in-flight request cannot reopen a stale preview.
 let resolveFetch;ctx.fetch=()=>new Promise(r=>resolveFetch=r);const delayed=chip(1);delayed.dataset.cite='0/2/1';handlers.pointerover({pointerType:'mouse',target:target(delayed),relatedTarget:null});handlers.click({target:target(delayed),preventDefault(){}});resolveFetch({ok:true,json:async()=>({verses:[{n:1,kjv:'Stale verse'}]})});await settle();assert(popup.hidden);assert.notEqual(child('.preview-text').innerHTML,'Stale verse');
 console.log('PASS: full-verse hover and keyboard previews, ranges, cached fetch, direct click/tap navigation and stale-response cancellation.');
+
+ctx.readingBook=0;ctx.readingChapter=3;ctx.books=[{name:'Genesis'}];ctx.reading={name:'Genesis'};
+ctx.fetch=async()=>({ok:true,json:async()=>({verses:[{n:22,kjv:'KJV fixture',web:'Complete WEB fixture verse.'}]})});ctx.scriptureHtml=(v,ed)=>v[ed];
+const body={...chip(22),closest:s=>s==='.verse'?{id:'verse-22'}:null,matches:s=>s==='.verse-body'};
+const verseTarget={closest:s=>s==='.verse-body'?body:null};
+handlers.pointerdown({button:0,target:verseTarget,pointerId:7,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');assert.equal(child('.preview-text').innerHTML,'Complete WEB fixture verse.');handlers.pointerup();handlers.click({target:verseTarget,preventDefault(){}});assert(!popup.hidden);handlers.keydown({key:'Escape',preventDefault(){}});
+handlers.pointerdown({button:0,target:verseTarget,pointerId:8,clientX:10,clientY:10});handlers.pointermove({pointerId:8,clientX:25,clientY:10});await new Promise(r=>setTimeout(r,550));assert(popup.hidden);
+handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');
+const html=fs.readFileSync('src/index.html','utf8');assert(!html.includes('id="ask-selection"'));for(const id of ['prev-top','next-top','prev-bottom','next-bottom'])assert(html.includes(`id="${id}"`));
+console.log('PASS: WEB hold preview, movement cancellation, keyboard access and top/bottom chapter controls.');

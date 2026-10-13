@@ -68,6 +68,6 @@ vm.runInContext(source.slice(source.indexOf('function applyTextSize(){'),source.
 assert.equal(scaleValues.get('--text-scale'),'1');
 for(const expected of [1.1,1.2,1.3,0.9,1]){fontNode.onclick();assert.equal(scaleValues.get('--text-scale'),String(expected));assert.equal(fontContext.state.textScale,expected);assert(fontNode.attrs['aria-label'].includes('all text'));}
 fontContext.state.textScale=1.2;fontContext.applyTextSize();assert.equal(scaleValues.get('--text-scale'),'1.2');
-const typography=fs.readFileSync('src/style.css','utf8');const declarations=typography.match(/(?<![\w-])font(?:-size)?\s*:[^;}]+/g)||[];assert(declarations.filter(d=>d.includes('px')).every(d=>d==='font-size:calc(16px * var(--text-scale,1))'));assert(typography.includes('calc(var(--chapter-size,1.1875rem) - 0.25rem)'));
+const typography=fs.readFileSync('src/style.css','utf8');const declarations=typography.match(/(?<![\w-])font(?:-size)?\s*:[^;}]+/g)||[];assert(declarations.filter(d=>d.includes('px')).every(d=>d==='font-size:calc(17.6px * var(--text-scale,1))'));assert(typography.includes('calc(var(--chapter-size,1.1875rem) - 0.25rem)'));
 console.log('PASS: A+ scales all typography, cycles sizes, saves preference and preserves smaller summaries.');
 
