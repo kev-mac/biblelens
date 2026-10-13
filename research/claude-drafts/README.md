@@ -70,7 +70,7 @@ Earlier prose drafts in this folder predate the record format. Codex has already
 - `joshua-21-24-review.md`, `judges-3-5-proposals.md`, `judges-6-9-proposals.md`, `judges-10-12-proposals.md`
 - `hebrew-greek-sourcing-1.md` — sourced wording for Joshua 7 to Judges 11 and Acts; the strongest unpublished items are the Balak verb (Joshua 24:9 / Judges 11:25), Genesis 48:22 "Shechem", Acts 7:14 against Genesis 46:27, and the KJV renderings at Judges 3:19, 5:26 and Joshua 22:34.
 
-**Cleared 2026-10-12.** The outstanding items were re-issued as records in `joshua-21-24-records.json` and `judges-3-12-records.json`, with notes beside each. The prose drafts above are superseded; do not re-issue from them. `hebrew-greek-sourcing-1.md` §1.5 is wrong about the Leningrad Codex at Joshua 21:36–37 — see `joshua-21-24-notes.md`. Judges 13–21 is in `judges-13-21-records.json`. Ruth is in `ruth-1-4-records.json` (processed by Codex: 6 published, 1 held). 1 Samuel is in `1-samuel-1-31-records.json` (processed by Codex: 19 published, 3 held). 2 Samuel is in `2-samuel-1-24-records.json` (processed by Codex: 16 published, H held on one). 1 Kings is in `1-kings-1-22-records.json`. Next book: 2 Kings.
+**Cleared 2026-10-12.** The outstanding items were re-issued as records in `joshua-21-24-records.json` and `judges-3-12-records.json`, with notes beside each. The prose drafts above are superseded; do not re-issue from them. `hebrew-greek-sourcing-1.md` §1.5 is wrong about the Leningrad Codex at Joshua 21:36–37 — see `joshua-21-24-notes.md`. Judges 13–21 is in `judges-13-21-records.json`. Ruth is in `ruth-1-4-records.json` (processed by Codex: 6 published, 1 held). 1 Samuel is in `1-samuel-1-31-records.json` (processed by Codex: 19 published, 3 held). 2 Samuel is in `2-samuel-1-24-records.json` (processed by Codex: 16 published, H held on one). 1 Kings is in `1-kings-1-22-records.json` (processed by Codex: 24 published, 9 with tag placement corrected). 2 Kings is in `2-kings-1-25-records.json`. Next book: 1 Chronicles.
 
 Further sources used: the Unicode/XML Leningrad Codex with transcription notes, `https://tanach.us/Server.txt?Judg18:30-18:30` (book abbreviations `Josh`, `Judg`; a range is required).
 
@@ -161,11 +161,34 @@ Codex accepted 15 of 16 as written and corrected 1; reasons are in `research/not
 - Held back, quotes sourced: Greek differences at 7:15 (circumference), 8:53a, 10:28, 19:3; the Greek form of the Jeroboam's-wife story.
 - `early-stalls` was not extended; reason in the notes file.
 
+## Lessons from Codex's 1 Kings integration (2026-10-12)
+
+Codex accepted 15 of 24 as written and corrected 9; none held. Reasons are in `research/notes/claude-ready-1-kings-2026-10-12.md` and its `-decisions.json`.
+
+- **All 9 corrections were tag placement.** In a tagged record, `appliesTo` must list only the verses where the tag itself applies — not the other side of the conflict and not context verses. A G that rests on the Greek of Kings goes on the Kings verse only; the Chronicles verse stays in `refs`.
+- **`ref` must be a tagged verse.** Codex moved the primary `ref` to the tagged verse where the draft had pointed at an untagged one (`omri-…`: 16:23 → 16:29). In a tagged record, make `ref` the first entry of `appliesTo`.
+- **Untagged conflicts keep both sides in `appliesTo`**; all were accepted as written.
+- **Verse roles (`sides`) are now in Codex's contract** (`claude-integration-workflow.md`, "Verse roles"). A record may carry `sides: [{"label":"A"|"B","ref":"Book C:V","quote":"…"}]`. Every side `ref` must be in the record's `refs`; every `quote` must be an exact substring of that verse in `data/chapters.json`, or the build fails. Include side A for the verse `ref` points to. Supply `sides` only where the record really has two sides; validate each quote by script before delivery. Sides for already-published records go in `research/claude-drafts/verse-roles.json` as `{id, sides}` entries — not yet written.
+- Only the side verses and `ref` now show a full card; other `refs` show a pointer. So `refs` can stay generous, but `sides` must be exact.
+
+## Notes from the 2 Kings session (2026-10-12)
+
+- 2 Kings is in `2-kings-1-25-records.json` (27 records: 12 G, 1 H, 14 untagged, no V; 24 carry `sides`). Next book: 1 Chronicles.
+- bolls.life book numbers: Isaiah 23, Jeremiah 24, Hosea 28, Zephaniah 36, John 43. Packaged KJV index is one less.
+- 2 Kings 12: Hebrew and Brenton's Greek run one verse ahead of the KJV. Brenton's Greek numbers Jeremiah 36 as chapter 43, and its Jeremiah 52 page lacks verses 2, 3, 15 and 28–30.
+- 2 Kings 25 repeats in Jeremiah 52, and 2 Kings 18–20 in Isaiah 36–39. The Jeremiah 52 conflicts (52:12, 22, 25, 28, 31) and Isaiah 39:2 are issued here; do not re-issue them in those books' sessions. Isaiah 36–38 was not compared with 2 Kings 18–20 verse by verse.
+- Records already issued that rest on Chronicles verses: 2 Chr 21:17, 22:1, 22:2, 22:8, 22:9, 24:14, 24:25, 28:1, 28:20–21, 34:22, 35:23–24, 36:9, 36:10. Check `data/evidence.json` before proposing anything at these in the Chronicles sessions.
+- A tagged record whose tag sits on the other book's verse takes that verse as `ref`; the 2 Kings verse stays in `refs` and `sides`.
+- `early-ahaziah` was re-issued as an extension with `ref` kept and `appliesTo` narrowed to the tagged verse; left for Codex to settle.
+- A command line long enough to hold a whole build script fails on this machine (ENAMETOOLONG). Write scripts to files under `%TEMP%\claude\` and run them.
+- Held back, quotes sourced: Greek pluses and differences at 2 Chr 36:8 (Jehoiakim's burial), 2 Chr 21:17, 2 Kings 1:18b–d, 2 Chr 36:2a–5d, 2 Kings 3:19.
+
 ## Open questions for the owner
 
 - None outstanding from 1 Samuel; both were answered (see above).
 - From 2 Samuel: answered — such records are allowed (see the 2 Samuel lessons).
 - From 1 Kings: answered — see "Owner ruling on records spanning two books" below.
+- From 2 Kings: should a session write `verse-roles.json` (sides) for the published records?
 
 ## Owner ruling on records spanning two books (2026-10-12)
 
