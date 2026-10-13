@@ -1,0 +1,801 @@
+{
+  "batch": "psalms-90-106-q",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "he-sent-darkness-and-they-rebelled-not-who-is-they-in-psalm-105-28",
+      "batch": "psalms-90-106-q",
+      "english": [
+        {
+          "ref": "Psalms 105:26",
+          "quote": "He sent Moses his servant; and Aaron whom he had chosen.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 105:27",
+          "quote": "They shewed his signs among them, and wonders in the land of Ham.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 105:28",
+          "quote": "He sent darkness, and made it dark; and they rebelled not against his word.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "שָֽׂמוּ־בָ֭ם",
+          "stated": {
+            "chapter": 105,
+            "verse": 27
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/105/",
+              "verse": 27
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 105,
+            "verse": "27"
+          }
+        },
+        {
+          "quote": "וְלֹֽא־מָ֝ר֗וּ אֶת",
+          "stated": {
+            "chapter": 105,
+            "verse": 28
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/105/",
+              "verse": 28
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 105,
+            "verse": "28"
+          }
+        },
+        {
+          "quote": "καὶ παρεπίκραναν τοὺς λόγους αὐτοῦ",
+          "stated": {
+            "chapter": 104,
+            "verse": 28
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA104.htm",
+              "verse": "28"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 104,
+            "verse": "28"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 105:28",
+          "quote": "they rebelled not against his word",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 105:27",
+          "quote": "They shewed his signs among them",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They rebelled not against his word",
+          "matches": [
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "they",
+          "matches": [
+            "Psalms 105:27",
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "they shewed his signs among them … in the land of Ham",
+          "matches": [
+            "Psalms 105:27"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "they rebelled not against his word",
+          "matches": [
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "they",
+          "matches": [
+            "Psalms 105:27",
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "He sent Moses his servant; and Aaron whom he had chosen.",
+          "matches": [
+            "Psalms 105:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "They shewed his signs among them, and wonders in the land of Ham.",
+          "matches": [
+            "Psalms 105:27"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "He sent darkness, and made it dark; and they rebelled not against his word.",
+          "matches": [
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they",
+          "matches": [
+            "Psalms 105:27",
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "among them",
+          "matches": [
+            "Psalms 105:27"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they",
+          "matches": [
+            "Psalms 105:27",
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "them",
+          "matches": [
+            "Psalms 105:27"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they rebelled not",
+          "matches": [
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they",
+          "matches": [
+            "Psalms 105:27",
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "they",
+          "matches": [
+            "Psalms 105:27",
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "they",
+          "matches": [
+            "Psalms 105:27",
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "the-waters-stood-above-the-mountains-which-event-does-psalm-104-6-9-describe",
+      "batch": "psalms-90-106-q",
+      "english": [
+        {
+          "ref": "Psalms 104:5",
+          "quote": "Who laid the foundations of the earth, that it should not be removed for ever.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 104:6",
+          "quote": "Thou coveredst it with the deep as with a garment: the waters stood above the mountains.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 104:7",
+          "quote": "At thy rebuke they fled; at the voice of thy thunder they hasted away.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 104:8",
+          "quote": "They go up by the mountains; they go down by the valleys unto the place which thou hast founded for them.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 104:9",
+          "quote": "Thou hast set a bound that they may not pass over; that they turn not again to cover the earth.",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 1:9",
+          "quote": "Let the waters under the heaven be gathered together unto one place, and let the dry land appear",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 7:19",
+          "quote": "all the high hills, that were under the whole heaven, were covered",
+          "exact": true
+        },
+        {
+          "ref": "Genesis 9:11",
+          "quote": "neither shall there any more be a flood to destroy the earth",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "תְּ֭הֹום כַּלְּב֣וּשׁ כִּסִּיתֹ֑ו",
+          "stated": {
+            "chapter": 104,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/104/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 104,
+            "verse": "6"
+          }
+        },
+        {
+          "quote": "מִן־גַּעֲרָ֣תְךָ֣",
+          "stated": {
+            "chapter": 104,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/104/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 104,
+            "verse": "7"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 104:6",
+          "quote": "the waters stood above the mountains",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 104:9",
+          "quote": "that they turn not again to cover the earth",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The waters stood above the mountains",
+          "matches": [
+            "Psalms 104:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "turn not again to cover the earth",
+          "matches": [
+            "Psalms 104:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Who laid the foundations of the earth, that it should not be removed for ever.",
+          "matches": [
+            "Psalms 104:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Thou coveredst it with the deep as with a garment: the waters stood above the mountains.",
+          "matches": [
+            "Psalms 104:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "At thy rebuke they fled; at the voice of thy thunder they hasted away.",
+          "matches": [
+            "Psalms 104:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "They go up by the mountains; they go down by the valleys unto the place which thou hast founded for them.",
+          "matches": [
+            "Psalms 104:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Thou hast set a bound that they may not pass over; that they turn not again to cover the earth.",
+          "matches": [
+            "Psalms 104:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Let the waters under the heaven be gathered together unto one place, and let the dry land appear",
+          "matches": [
+            "Genesis 1:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "all the high hills, that were under the whole heaven, were covered",
+          "matches": [
+            "Genesis 7:19"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "neither shall there any more be a flood to destroy the earth",
+          "matches": [
+            "Genesis 9:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "to cover the earth",
+          "matches": [
+            "Psalms 104:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "they-provoked-his-spirit-whose-spirit-is-meant-in-psalm-106-33",
+      "batch": "psalms-90-106-q",
+      "english": [
+        {
+          "ref": "Psalms 106:32",
+          "quote": "They angered him also at the waters of strife, so that it went ill with Moses for their sakes:",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 106:33",
+          "quote": "Because they provoked his spirit, so that he spake unadvisedly with his lips.",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 20:10",
+          "quote": "Hear now, ye rebels; must we fetch you water out of this rock?",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 20:12",
+          "quote": "Because ye believed me not, to sanctify me in the eyes of the children of Israel",
+          "exact": true
+        },
+        {
+          "ref": "Isaiah 63:10",
+          "quote": "But they rebelled, and vexed his holy Spirit",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּֽי־הִמְר֥וּ אֶת־רוּחֹ֑ו וַ֝יְבַטֵּ֗א בִּשְׂפָתָֽיו",
+          "stated": {
+            "chapter": 106,
+            "verse": 33
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/106/",
+              "verse": 33
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 106,
+            "verse": "33"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 106:33",
+          "quote": "they provoked his spirit",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 106:32",
+          "quote": "it went ill with Moses for their sakes",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "numbers-rock-instructions-differ",
+          "title": "Striking the rock is commanded in one scene and replaced by speaking in another",
+          "summary": "Exodus commands striking; Numbers commands speaking but narrates two strikes and a rebuke.",
+          "reasoning": "The actions and instructions belong to distinct scenes. An earlier command to strike is not an instruction for the later scene. The rebuke describes the failure more broadly than the physical action alone.",
+          "scope": "The precise offense, relationship of the traditions, water source and historicity remain open; neither text supplies a verified hydrological explanation."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They provoked his spirit",
+          "matches": [
+            "Psalms 106:33"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "they angered him … so that it went ill with Moses",
+          "matches": [
+            "Psalms 106:32"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "they provoked his spirit, so that he spake unadvisedly with his lips",
+          "matches": [
+            "Psalms 106:33"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "They angered him also at the waters of strife, so that it went ill with Moses for their sakes:",
+          "matches": [
+            "Psalms 106:32"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Because they provoked his spirit, so that he spake unadvisedly with his lips.",
+          "matches": [
+            "Psalms 106:33"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Hear now, ye rebels; must we fetch you water out of this rock?",
+          "matches": [
+            "Numbers 20:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Because ye believed me not, to sanctify me in the eyes of the children of Israel",
+          "matches": [
+            "Numbers 20:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "But they rebelled, and vexed his holy Spirit",
+          "matches": [
+            "Isaiah 63:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "him",
+          "matches": [
+            "Psalms 106:32"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Moses",
+          "matches": [
+            "Psalms 106:32",
+            "Numbers 20:10",
+            "Numbers 20:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "his spirit",
+          "matches": [
+            "Psalms 106:33"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "he spake",
+          "matches": [
+            "Psalms 106:33"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "his spirit",
+          "matches": [
+            "Psalms 106:33"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "Shared references concern distinct edition comparisons or contextual references: Striking the rock is commanded in one scene and replaced by speaking in another. No duplicate finding.",
+      "brentonEnglish": [],
+      "additionalLanguage": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/19/90/",
+    "https://ebible.org/grcbrent/PSA089.htm",
+    "https://ebible.org/eng-Brenton/PSA089.htm",
+    "https://bolls.life/get-text/WLC/19/91/",
+    "https://ebible.org/grcbrent/PSA090.htm",
+    "https://ebible.org/eng-Brenton/PSA090.htm",
+    "https://bolls.life/get-text/WLC/19/92/",
+    "https://ebible.org/grcbrent/PSA091.htm",
+    "https://ebible.org/eng-Brenton/PSA091.htm",
+    "https://bolls.life/get-text/WLC/19/94/",
+    "https://ebible.org/grcbrent/PSA093.htm",
+    "https://ebible.org/eng-Brenton/PSA093.htm",
+    "https://bolls.life/get-text/WLC/19/95/",
+    "https://ebible.org/grcbrent/PSA094.htm",
+    "https://ebible.org/eng-Brenton/PSA094.htm",
+    "https://bolls.life/get-text/TISCH/58/3/",
+    "https://bolls.life/get-text/TR/58/3/",
+    "https://bolls.life/get-text/WLC/19/96/",
+    "https://ebible.org/grcbrent/PSA095.htm",
+    "https://ebible.org/eng-Brenton/PSA095.htm",
+    "https://bolls.life/get-text/WLC/19/102/",
+    "https://ebible.org/grcbrent/PSA101.htm",
+    "https://ebible.org/eng-Brenton/PSA101.htm",
+    "https://bolls.life/get-text/TISCH/58/1/",
+    "https://bolls.life/get-text/TR/58/1/",
+    "https://bolls.life/get-text/WLC/19/104/",
+    "https://ebible.org/grcbrent/PSA103.htm",
+    "https://ebible.org/eng-Brenton/PSA103.htm",
+    "https://bolls.life/get-text/WLC/19/105/",
+    "https://ebible.org/grcbrent/PSA104.htm",
+    "https://ebible.org/eng-Brenton/PSA104.htm",
+    "https://bolls.life/get-text/WLC/19/106/",
+    "https://ebible.org/grcbrent/PSA105.htm",
+    "https://ebible.org/eng-Brenton/PSA105.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 633,
+  "studiesChecked": 6,
+  "brentonChecks": [
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+      "printedLabel": "3",
+      "quote": "Turn not man back to his low place, whereas thou saidst, Return, ye sons of men?",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+      "printedLabel": "12",
+      "quote": "and who knows how to number his days because of the fear of thy wrath?",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+      "printedLabel": "12",
+      "quote": "So manifest thy right hand",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA090.htm",
+      "printedLabel": "6",
+      "quote": "nor of calamity, and the evil spirit at noon-day",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA091.htm",
+      "printedLabel": "11",
+      "quote": "and mine old age with rich mercy",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA093.htm",
+      "printedLabel": "17",
+      "quote": "my soul had almost sojourned in Hades",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+      "printedLabel": "3",
+      "quote": "for the Lord will not cast off his people",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+      "printedLabel": "4",
+      "quote": "For the ends of the earth are in his hands",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+      "printedLabel": "8",
+      "quote": "according to the day of irritation in the wilderness",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA095.htm",
+      "printedLabel": "5",
+      "quote": "For all the gods of the heathen are devils",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+      "printedLabel": "24",
+      "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+      "printedLabel": "27",
+      "quote": "as a vesture shalt thou fold them, and they shall be changed",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+      "printedLabel": "12",
+      "quote": "out of the midst of the rocks",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+      "printedLabel": "26",
+      "quote": "this dragon whom thou hast made to play in it",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+      "printedLabel": "18",
+      "quote": "his soul passed into iron",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+      "printedLabel": "28",
+      "quote": "yet they rebelled against his words",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+      "printedLabel": "15",
+      "quote": "and sent fulness into their souls",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+      "printedLabel": "30",
+      "quote": "Then Phinees stood up, and made atonement",
+      "exact": true
+    }
+  ],
+  "ntChecks": [
+    {
+      "id": "the-day-of-temptation-in-the-wilderness-or-the-day-of-irritation-greek-psalm-95-8",
+      "url": "https://bolls.life/get-text/TISCH/58/3/",
+      "printedLabel": "8",
+      "exact": true,
+      "comparison": "πειρασμοῦ and παραπικρασμῷ checked separately in each named edition"
+    },
+    {
+      "id": "the-day-of-temptation-in-the-wilderness-or-the-day-of-irritation-greek-psalm-95-8",
+      "url": "https://bolls.life/get-text/TR/58/3/",
+      "printedLabel": "8",
+      "exact": true,
+      "comparison": "πειρασμοῦ and παραπικρασμῷ checked separately in each named edition"
+    },
+    {
+      "id": "as-a-vesture-shalt-thou-change-them-or-shalt-thou-fold-them-greek-psalm-102-26",
+      "url": "https://bolls.life/get-text/TR/58/1/",
+      "printedLabel": "12",
+      "quote": "ελιξεις αυτους",
+      "exact": true
+    },
+    {
+      "id": "as-a-vesture-shalt-thou-change-them-or-shalt-thou-fold-them-greek-psalm-102-26",
+      "url": "https://bolls.life/get-text/TISCH/58/1/",
+      "printedLabel": "12",
+      "quote": "ἀλλάξεις αὐτούς",
+      "exact": true
+    }
+  ]
+}

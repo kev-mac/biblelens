@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 633,
+    "evidenceRecords": 652,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 492,
-    "annotatedVerses": 2992
+    "chaptersWithAnnotations": 501,
+    "annotatedVerses": 3011
   },
   "byBook": [
     {
@@ -123,8 +123,8 @@
     {
       "book": "Psalms",
       "chapters": 150,
-      "chaptersWithAnnotations": 41,
-      "annotatedVerses": 73
+      "chaptersWithAnnotations": 50,
+      "annotatedVerses": 92
     },
     {
       "book": "Proverbs",
@@ -10869,27 +10869,47 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 90,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thou-turnest-man-to-destruction-or-turn-not-man-back-to-humiliation-greek",
+        "so-teach-us-to-number-our-days-or-so-make-known-thy-right-hand-greek"
+      ],
+      "annotatedVerses": [
+        3,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 91,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "destruction-that-wasteth-at-noonday-or-the-evil-spirit-at-noonday-greek"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 92,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-shall-be-anointed-with-fresh-oil-or-mine-old-age-with-rich-mercy-greek"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10905,27 +10925,47 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 94,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "my-soul-had-almost-dwelt-in-silence-or-my-soul-had-almost-sojourned-in-hades-greek"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 95,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-his-hand-are-the-deep-places-of-the-earth-or-for-the-lord-will-not-cast-off-his-people-greek",
+        "the-day-of-temptation-in-the-wilderness-or-the-day-of-irritation-greek-psalm-95-8"
+      ],
+      "annotatedVerses": [
+        4,
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 96,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "all-the-gods-of-the-nations-are-idols-or-are-devils-greek"
+      ],
+      "annotatedVerses": [
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10977,9 +11017,17 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 102,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-weakened-my-strength-in-the-way-or-he-answered-him-in-the-way-of-his-strength-greek",
+        "as-a-vesture-shalt-thou-change-them-or-shalt-thou-fold-them-greek-psalm-102-26"
+      ],
+      "annotatedVerses": [
+        23,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10996,13 +11044,22 @@
       "bookId": 18,
       "chapter": 104,
       "annotationIds": [
-        "legacy-science-4"
+        "legacy-science-4",
+        "which-sing-among-the-branches-or-from-the-midst-of-the-rocks-greek",
+        "there-is-that-leviathan-or-this-dragon-whom-thou-hast-formed-greek",
+        "the-waters-stood-above-the-mountains-which-event-does-psalm-104-6-9-describe"
       ],
       "annotatedVerses": [
-        5
+        5,
+        6,
+        9,
+        12,
+        26
       ],
       "modes": [
-        "science"
+        "science",
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -11010,18 +11067,39 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 105,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-was-laid-in-iron-or-iron-passed-through-his-soul-greek",
+        "they-rebelled-not-against-his-word-or-they-rebelled-against-his-words-greek",
+        "he-sent-darkness-and-they-rebelled-not-who-is-they-in-psalm-105-28"
+      ],
+      "annotatedVerses": [
+        18,
+        28
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 106,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sent-leanness-into-their-soul-or-sent-fulness-into-their-souls-greek",
+        "phinehas-executed-judgment-or-phinehas-made-atonement-greek",
+        "they-provoked-his-spirit-whose-spirit-is-meant-in-psalm-106-33"
+      ],
+      "annotatedVerses": [
+        15,
+        30,
+        33
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

@@ -1,0 +1,3380 @@
+{
+  "batch": "psalms-90-106",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "thou-turnest-man-to-destruction-or-turn-not-man-back-to-humiliation-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 90:3",
+          "quote": "Thou turnest man to destruction; and sayest, Return, ye children of men.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "תָּשֵׁ֣ב אֱ֭נֹושׁ עַד־דַּכָּ֑א וַ֝תֹּ֗אמֶר",
+          "stated": {
+            "chapter": 90,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/90/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 90,
+            "verse": "3"
+          }
+        },
+        {
+          "quote": "Μὴ ἀποστρέψῃς ἄνθρωπον εἰς ταπείνωσιν, καὶ εἶπας, ἐπιστρέψατε υἱοὶ ἀνθρώπων",
+          "stated": {
+            "chapter": 89,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA089.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 89,
+            "verse": "3"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 90:3",
+          "quote": "Thou turnest man to destruction",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thou turnest man to destruction",
+          "matches": [
+            "Psalms 90:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "Turn not man back to humiliation",
+          "matches": [],
+          "kind": "Researcher rendering or shortened description of verified Greek/Brenton wording; not presented as an exact KJV or Brenton quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "Return",
+          "matches": [
+            "Psalms 90:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Thou turnest man to destruction; and sayest, Return, ye children of men.",
+          "matches": [
+            "Psalms 90:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Turn not man back to his low place, whereas thou saidst, Return, ye sons of men?",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+            "printedLabel": "3",
+            "quote": "Turn not man back to his low place, whereas thou saidst, Return, ye sons of men?",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+          "printedLabel": "3",
+          "quote": "Turn not man back to his low place, whereas thou saidst, Return, ye sons of men?",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "μή",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA089.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "so-teach-us-to-number-our-days-or-so-make-known-thy-right-hand-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 90:12",
+          "quote": "So teach us to number our days, that we may apply our hearts unto wisdom.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לִמְנֹ֣ות יָ֭מֵינוּ כֵּ֣ן הֹודַ֑ע",
+          "stated": {
+            "chapter": 90,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/90/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 90,
+            "verse": "12"
+          }
+        },
+        {
+          "quote": "καὶ ἀπὸ τοῦ φόβου τοῦ θυμοῦ σου ἐξαριθμήσασθαι",
+          "stated": {
+            "chapter": 89,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA089.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 89,
+            "verse": "11"
+          }
+        },
+        {
+          "quote": "τὴν δεξιάν σου οὕτως γνώρισον, καὶ τοὺς πεπαιδευμένους τῇ καρδίᾳ ἐν σοφίᾳ",
+          "stated": {
+            "chapter": 89,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA089.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 89,
+            "verse": "12"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 90:12",
+          "quote": "So teach us to number our days",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "So teach us to number our days",
+          "matches": [
+            "Psalms 90:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "So make known thy right hand",
+          "matches": [],
+          "kind": "Researcher rendering or shortened description of verified Greek/Brenton wording; not presented as an exact KJV or Brenton quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "make known",
+          "matches": [],
+          "kind": "Researcher rendering or shortened description of verified Greek/Brenton wording; not presented as an exact KJV or Brenton quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "thy right hand",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+            "printedLabel": "12",
+            "quote": "So manifest thy right hand",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "So teach us to number our days, that we may apply our hearts unto wisdom.",
+          "matches": [
+            "Psalms 90:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "and who knows how to number his days because of the fear of thy wrath?",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+            "printedLabel": "12",
+            "quote": "and who knows how to number his days because of the fear of thy wrath?",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "So manifest thy right hand",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+            "printedLabel": "12",
+            "quote": "So manifest thy right hand",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "the fear of thy wrath",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+            "printedLabel": "12",
+            "quote": "and who knows how to number his days because of the fear of thy wrath?",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy right hand",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+            "printedLabel": "12",
+            "quote": "So manifest thy right hand",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "our days",
+          "matches": [
+            "Psalms 90:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+          "printedLabel": "12",
+          "quote": "and who knows how to number his days because of the fear of thy wrath?",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+          "printedLabel": "12",
+          "quote": "So manifest thy right hand",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἐξαριθμήσασθαι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA089.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τὴν δεξιάν σου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA089.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "destruction-that-wasteth-at-noonday-or-the-evil-spirit-at-noonday-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 91:6",
+          "quote": "Nor for the pestilence that walketh in darkness; nor for the destruction that wasteth at noonday.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מִ֝קֶּ֗טֶב יָשׁ֥וּד צָהֳרָֽיִם",
+          "stated": {
+            "chapter": 91,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/91/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 91,
+            "verse": "6"
+          }
+        },
+        {
+          "quote": "ἀπὸ συμπτώματος καὶ δαιμονίου μεσημβρινοῦ",
+          "stated": {
+            "chapter": 90,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA090.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 90,
+            "verse": "6"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 91:6",
+          "quote": "the destruction that wasteth at noonday",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The destruction that wasteth at noonday",
+          "matches": [
+            "Psalms 91:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the evil spirit at noon-day",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA090.htm",
+            "printedLabel": "6",
+            "quote": "nor of calamity, and the evil spirit at noon-day",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "the evil spirit at noon-day",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA090.htm",
+            "printedLabel": "6",
+            "quote": "nor of calamity, and the evil spirit at noon-day",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "Nor for the pestilence that walketh in darkness; nor for the destruction that wasteth at noonday.",
+          "matches": [
+            "Psalms 91:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "nor of calamity, and the evil spirit at noon-day",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA090.htm",
+            "printedLabel": "6",
+            "quote": "nor of calamity, and the evil spirit at noon-day",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "destruction",
+          "matches": [
+            "Psalms 91:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the evil spirit",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA090.htm",
+            "printedLabel": "6",
+            "quote": "nor of calamity, and the evil spirit at noon-day",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA090.htm",
+          "printedLabel": "6",
+          "quote": "nor of calamity, and the evil spirit at noon-day",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "καὶ δαιμονίου μεσημβρινοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA090.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "καί",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA090.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "συμπτώματος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA090.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "δαιμονίου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA090.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "i-shall-be-anointed-with-fresh-oil-or-mine-old-age-with-rich-mercy-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 92:10",
+          "quote": "But my horn shalt thou exalt like the horn of an unicorn: I shall be anointed with fresh oil.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בַּ֝לֹּתִ֗י בְּשֶׁ֣מֶן רַעֲנָֽן",
+          "stated": {
+            "chapter": 92,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/92/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 92,
+            "verse": "11"
+          }
+        },
+        {
+          "quote": "καὶ τὸ γῆράς μου ἐν ἐλέῳ πίονι",
+          "stated": {
+            "chapter": 91,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA091.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 91,
+            "verse": "11"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 92:10",
+          "quote": "I shall be anointed with fresh oil",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "I shall be anointed with fresh oil",
+          "matches": [
+            "Psalms 92:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "mine old age with rich mercy",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA091.htm",
+            "printedLabel": "11",
+            "quote": "and mine old age with rich mercy",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "mine old age with rich mercy",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA091.htm",
+            "printedLabel": "11",
+            "quote": "and mine old age with rich mercy",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "But my horn shalt thou exalt like the horn of an unicorn: I shall be anointed with fresh oil.",
+          "matches": [
+            "Psalms 92:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "and mine old age with rich mercy",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA091.htm",
+            "printedLabel": "11",
+            "quote": "and mine old age with rich mercy",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "fresh oil",
+          "matches": [
+            "Psalms 92:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my old age",
+          "matches": [],
+          "kind": "Researcher rendering or shortened description of verified Greek/Brenton wording; not presented as an exact KJV or Brenton quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "mercy",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA091.htm",
+            "printedLabel": "11",
+            "quote": "and mine old age with rich mercy",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "rich",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA091.htm",
+            "printedLabel": "11",
+            "quote": "and mine old age with rich mercy",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "fresh",
+          "matches": [
+            "Psalms 92:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA091.htm",
+          "printedLabel": "11",
+          "quote": "and mine old age with rich mercy",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "τὸ γῆράς μου ἐν ἐλέῳ πίονι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA091.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τὸ γῆράς μου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA091.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἐλέῳ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA091.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "my-soul-had-almost-dwelt-in-silence-or-my-soul-had-almost-sojourned-in-hades-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 94:17",
+          "quote": "Unless the Lord had been my help, my soul had almost dwelt in silence.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּמְעַ֓ט ׀ שָֽׁכְנָ֖ה דוּמָ֣ה נַפְשִֽׁי",
+          "stated": {
+            "chapter": 94,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/94/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 94,
+            "verse": "17"
+          }
+        },
+        {
+          "quote": "παραβραχὺ παρῴκησε τῷ ᾅδῃ ἡ ψυχή μου",
+          "stated": {
+            "chapter": 93,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA093.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 93,
+            "verse": "17"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 94:17",
+          "quote": "my soul had almost dwelt in silence",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "My soul had almost dwelt in silence",
+          "matches": [
+            "Psalms 94:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "my soul had almost sojourned in Hades",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA093.htm",
+            "printedLabel": "17",
+            "quote": "my soul had almost sojourned in Hades",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "in silence",
+          "matches": [
+            "Psalms 94:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "in Hades",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA093.htm",
+            "printedLabel": "17",
+            "quote": "my soul had almost sojourned in Hades",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "Unless the Lord had been my help, my soul had almost dwelt in silence.",
+          "matches": [
+            "Psalms 94:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "my soul had almost sojourned in Hades",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA093.htm",
+            "printedLabel": "17",
+            "quote": "my soul had almost sojourned in Hades",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "silence",
+          "matches": [
+            "Psalms 94:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA093.htm",
+          "printedLabel": "17",
+          "quote": "my soul had almost sojourned in Hades",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "τῷ ᾅδῃ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA093.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τῷ ᾅδῃ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA093.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "in-his-hand-are-the-deep-places-of-the-earth-or-for-the-lord-will-not-cast-off-his-people-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 95:3",
+          "quote": "For the Lord is a great God, and a great King above all gods.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 95:4",
+          "quote": "In his hand are the deep places of the earth: the strength of the hills is his also.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 94:14",
+          "quote": "For the Lord will not cast off his people",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֲשֶׁ֣ר בְּ֭יָדֹו מֶחְקְרֵי־אָ֑רֶץ",
+          "stated": {
+            "chapter": 95,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/95/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 95,
+            "verse": "4"
+          }
+        },
+        {
+          "quote": "ὅτι οὐκ ἀπώσεται Κύριος τὸν λαὸν αὐτοῦ, ὅτι ἐν τῇ χειρὶ αὐτοῦ τὰ πέρατα τῆς γῆς",
+          "stated": {
+            "chapter": 94,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA094.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 94,
+            "verse": "4"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 95:4",
+          "quote": "In his hand are the deep places of the earth",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "In his hand are the deep places of the earth",
+          "matches": [
+            "Psalms 95:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the Lord will not cast off his people",
+          "matches": [
+            "Psalms 94:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the ends of the earth",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+            "printedLabel": "4",
+            "quote": "For the ends of the earth are in his hands",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "for the Lord will not cast off his people",
+          "matches": [
+            "Psalms 94:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "the ends of the earth",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+            "printedLabel": "4",
+            "quote": "For the ends of the earth are in his hands",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "the deep places of the earth",
+          "matches": [
+            "Psalms 95:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "For the Lord is a great God, and a great King above all gods.",
+          "matches": [
+            "Psalms 95:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "In his hand are the deep places of the earth: the strength of the hills is his also.",
+          "matches": [
+            "Psalms 95:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "for the Lord will not cast off his people",
+          "matches": [
+            "Psalms 94:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "For the ends of the earth are in his hands",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+            "printedLabel": "4",
+            "quote": "For the ends of the earth are in his hands",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "For the Lord will not cast off his people",
+          "matches": [
+            "Psalms 94:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the Lord will not cast off his people",
+          "matches": [
+            "Psalms 94:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the ends of the earth",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+            "printedLabel": "4",
+            "quote": "For the ends of the earth are in his hands",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "the deep places of the earth",
+          "matches": [
+            "Psalms 95:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+          "printedLabel": "3",
+          "quote": "for the Lord will not cast off his people",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+          "printedLabel": "4",
+          "quote": "For the ends of the earth are in his hands",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "τὰ πέρατα τῆς γῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA094.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "the-day-of-temptation-in-the-wilderness-or-the-day-of-irritation-greek-psalm-95-8",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 95:8",
+          "quote": "Harden not your heart, as in the provocation, and as in the day of temptation in the wilderness:",
+          "exact": true
+        },
+        {
+          "ref": "Hebrews 3:8",
+          "quote": "in the day of temptation in the wilderness",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כְּיֹ֥ום מַ֝סָּ֗ה בַּמִּדְבָּֽר",
+          "stated": {
+            "chapter": 95,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/95/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 95,
+            "verse": "8"
+          }
+        },
+        {
+          "quote": "ὡς ἐν τῷ παραπικρασμῷ, κατὰ τὴν ἡμέραν τοῦ πικρασμοῦ ἐν τῇ ἐρήμῳ",
+          "stated": {
+            "chapter": 94,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA094.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 94,
+            "verse": "8"
+          }
+        },
+        {
+          "quote": "κατὰ τὴν ἡμέραν τοῦ πειρασμοῦ ἐν τῇ ἐρήμῳ",
+          "stated": {
+            "chapter": 3,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/3/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "8"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 95:8",
+          "quote": "as in the day of temptation in the wilderness",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Hebrews 3:8",
+          "quote": "in the day of temptation in the wilderness",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "As in the day of temptation in the wilderness",
+          "matches": [
+            "Psalms 95:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the day of irritation",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+            "printedLabel": "8",
+            "quote": "according to the day of irritation in the wilderness",
+            "exact": true
+          }
+        },
+        {
+          "field": "title",
+          "quote": "temptation",
+          "matches": [
+            "Psalms 95:8",
+            "Hebrews 3:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "the day of temptation in the wilderness",
+          "matches": [
+            "Psalms 95:8",
+            "Hebrews 3:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "irritation",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+            "printedLabel": "8",
+            "quote": "according to the day of irritation in the wilderness",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "Harden not your heart, as in the provocation, and as in the day of temptation in the wilderness:",
+          "matches": [
+            "Psalms 95:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "in the day of temptation in the wilderness",
+          "matches": [
+            "Psalms 95:8",
+            "Hebrews 3:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "according to the day of irritation in the wilderness",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+            "printedLabel": "8",
+            "quote": "according to the day of irritation in the wilderness",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "temptation",
+          "matches": [
+            "Psalms 95:8",
+            "Hebrews 3:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "irritation",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+            "printedLabel": "8",
+            "quote": "according to the day of irritation in the wilderness",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "the provocation",
+          "matches": [
+            "Psalms 95:8",
+            "Hebrews 3:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+          "printedLabel": "8",
+          "quote": "according to the day of irritation in the wilderness",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "πικρασμοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA094.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "summary",
+          "quote": "πειρασμοῦ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/3/",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τοῦ πικρασμοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA094.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τοῦ πειρασμοῦ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/3/",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "παραπικρασμῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA094.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "all-the-gods-of-the-nations-are-idols-or-are-devils-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 96:5",
+          "quote": "For all the gods of the nations are idols: but the Lord made the heavens.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֱלֹהֵ֣י הָעַמִּ֣ים אֱלִילִ֑ים",
+          "stated": {
+            "chapter": 96,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/96/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 96,
+            "verse": "5"
+          }
+        },
+        {
+          "quote": "πάντες οἱ θεοὶ τῶν ἐθνῶν δαιμόνια",
+          "stated": {
+            "chapter": 95,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA095.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 95,
+            "verse": "5"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 96:5",
+          "quote": "For all the gods of the nations are idols",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "All the gods of the nations are idols",
+          "matches": [
+            "Psalms 96:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "are devils",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA095.htm",
+            "printedLabel": "5",
+            "quote": "For all the gods of the heathen are devils",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "are idols",
+          "matches": [
+            "Psalms 96:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "devils",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA095.htm",
+            "printedLabel": "5",
+            "quote": "For all the gods of the heathen are devils",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "For all the gods of the nations are idols: but the Lord made the heavens.",
+          "matches": [
+            "Psalms 96:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "For all the gods of the heathen are devils",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA095.htm",
+            "printedLabel": "5",
+            "quote": "For all the gods of the heathen are devils",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "idols",
+          "matches": [
+            "Psalms 96:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "devils",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA095.htm",
+            "printedLabel": "5",
+            "quote": "For all the gods of the heathen are devils",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA095.htm",
+          "printedLabel": "5",
+          "quote": "For all the gods of the heathen are devils",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "δαιμόνια",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA095.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "δαιμόνια",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA095.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "he-weakened-my-strength-in-the-way-or-he-answered-him-in-the-way-of-his-strength-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 102:23",
+          "quote": "He weakened my strength in the way; he shortened my days.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עִנָּ֖ה בַדֶּ֥רֶךְ",
+          "stated": {
+            "chapter": 102,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/102/",
+              "verse": 24
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 102,
+            "verse": "24"
+          }
+        },
+        {
+          "quote": "Ἀπεκρίθη αὐτῷ ἐν ὁδῷ ἰσχύος αὐτοῦ, τὴν ὀλιγότητα τῶν ἡμερῶν μου ἀνάγγειλόν μοι",
+          "stated": {
+            "chapter": 101,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA101.htm",
+              "verse": "24"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 101,
+            "verse": "24"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 102:23",
+          "quote": "He weakened my strength in the way; he shortened my days",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "He weakened my strength in the way; he shortened my days",
+          "matches": [
+            "Psalms 102:23"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+            "printedLabel": "24",
+            "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "tell me the fewness of my days",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+            "printedLabel": "24",
+            "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "He weakened my strength in the way; he shortened my days.",
+          "matches": [
+            "Psalms 102:23"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+            "printedLabel": "24",
+            "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "him",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+            "printedLabel": "24",
+            "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "him",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+            "printedLabel": "24",
+            "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+          "printedLabel": "24",
+          "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἀνάγγειλόν μοι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA101.htm",
+              "verse": "24"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "as-a-vesture-shalt-thou-change-them-or-shalt-thou-fold-them-greek-psalm-102-26",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 102:26",
+          "quote": "They shall perish, but thou shalt endure: yea, all of them shall wax old like a garment; as a vesture shalt thou change them, and they shall be changed:",
+          "exact": true
+        },
+        {
+          "ref": "Hebrews 1:12",
+          "quote": "And as a vesture shalt thou fold them up, and they shall be changed",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כַּלְּב֖וּשׁ תַּחֲלִיפֵ֣ם וְֽיַחֲלֹֽפוּ",
+          "stated": {
+            "chapter": 102,
+            "verse": 27
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/102/",
+              "verse": 27
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 102,
+            "verse": "27"
+          }
+        },
+        {
+          "quote": "καὶ ὡσεὶ περιβόλαιον ἑλίξεις αὐτοὺς, καὶ ἀλλαγήσονται",
+          "stated": {
+            "chapter": 101,
+            "verse": 27
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA101.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 101,
+            "verse": "27"
+          }
+        },
+        {
+          "quote": "ελιξεις αυτους",
+          "stated": {
+            "chapter": 1,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TR/58/1/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "12"
+          }
+        },
+        {
+          "quote": "ἀλλάξεις αὐτούς",
+          "stated": {
+            "chapter": 1,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/1/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "12"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 102:26",
+          "quote": "as a vesture shalt thou change them",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Hebrews 1:12",
+          "quote": "as a vesture shalt thou fold them up",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "As a vesture shalt thou change them",
+          "matches": [
+            "Psalms 102:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "shalt thou fold them",
+          "matches": [
+            "Hebrews 1:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "as a vesture",
+          "matches": [
+            "Psalms 102:26",
+            "Hebrews 1:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "fold",
+          "matches": [
+            "Hebrews 1:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "fold them up",
+          "matches": [
+            "Hebrews 1:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "They shall perish, but thou shalt endure: yea, all of them shall wax old like a garment; as a vesture shalt thou change them, and they shall be changed:",
+          "matches": [
+            "Psalms 102:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "And as a vesture shalt thou fold them up, and they shall be changed",
+          "matches": [
+            "Hebrews 1:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "as a vesture shalt thou fold them, and they shall be changed",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+            "printedLabel": "27",
+            "quote": "as a vesture shalt thou fold them, and they shall be changed",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "shalt thou change them",
+          "matches": [
+            "Psalms 102:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they shall be changed",
+          "matches": [
+            "Psalms 102:26",
+            "Hebrews 1:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "fold",
+          "matches": [
+            "Hebrews 1:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "be changed",
+          "matches": [
+            "Psalms 102:26",
+            "Hebrews 1:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "fold them up … be changed",
+          "matches": [
+            "Hebrews 1:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+          "printedLabel": "27",
+          "quote": "as a vesture shalt thou fold them, and they shall be changed",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἑλίξεις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA101.htm",
+              "verse": "27"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/58/1/",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "summary",
+          "quote": "ἑλίξεις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA101.htm",
+              "verse": "27"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/58/1/",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "summary",
+          "quote": "ἀλλάξεις",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/1/",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἑλίξεις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA101.htm",
+              "verse": "27"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/58/1/",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἀλλαγήσονται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA101.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἀλλάξεις",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/1/",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "which-sing-among-the-branches-or-from-the-midst-of-the-rocks-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 104:12",
+          "quote": "By them shall the fowls of the heaven have their habitation, which sing among the branches.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מִבֵּ֥ין עֳ֝פָאיִ֗ם יִתְּנוּ־קֹֽול",
+          "stated": {
+            "chapter": 104,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/104/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 104,
+            "verse": "12"
+          }
+        },
+        {
+          "quote": "ἐκ μέσου τῶν πετρῶν δώσουσι φωνήν",
+          "stated": {
+            "chapter": 103,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA103.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 103,
+            "verse": "12"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 104:12",
+          "quote": "which sing among the branches",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Which sing among the branches",
+          "matches": [
+            "Psalms 104:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "out of the midst of the rocks",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+            "printedLabel": "12",
+            "quote": "out of the midst of the rocks",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "among the branches",
+          "matches": [
+            "Psalms 104:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "out of the midst of the rocks",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+            "printedLabel": "12",
+            "quote": "out of the midst of the rocks",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "By them shall the fowls of the heaven have their habitation, which sing among the branches.",
+          "matches": [
+            "Psalms 104:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "out of the midst of the rocks",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+            "printedLabel": "12",
+            "quote": "out of the midst of the rocks",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "the branches",
+          "matches": [
+            "Psalms 104:12"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the rocks",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+            "printedLabel": "12",
+            "quote": "out of the midst of the rocks",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+          "printedLabel": "12",
+          "quote": "out of the midst of the rocks",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐκ μέσου τῶν πετρῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA103.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τῶν πετρῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA103.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "there-is-that-leviathan-or-this-dragon-whom-thou-hast-formed-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 104:26",
+          "quote": "There go the ships: there is that leviathan, whom thou hast made to play therein.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לִ֝וְיָתָ֗ן זֶֽה־יָצַ֥רְתָּ לְשַֽׂחֶק־בֹּֽו",
+          "stated": {
+            "chapter": 104,
+            "verse": 26
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/104/",
+              "verse": 26
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 104,
+            "verse": "26"
+          }
+        },
+        {
+          "quote": "δράκων οὗτος ὃν ἔπλασας ἐμπαίζειν αὐτῷ",
+          "stated": {
+            "chapter": 103,
+            "verse": 26
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA103.htm",
+              "verse": "26"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 103,
+            "verse": "26"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 104:26",
+          "quote": "there is that leviathan, whom thou hast made to play therein",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "behemoth-and-leviathan-what-creatures-are-they",
+          "title": "Behemoth and leviathan — what creatures does the Lord point Job to?",
+          "summary": "The Lord’s speech from the whirlwind (40:6) sets two creatures before Job, behemoth and leviathan, and describes each at length. The KJV keeps both words as names. The verses quoted do not say what kind of creature either one is.",
+          "reasoning": "The speech uses the two creatures to answer Job, so what they are bears on what the answer is. The description joins things said of a grazing animal and a creature of the water (grass, a river, a hook) with things that go beyond that (a flame from the mouth, heads in the plural in the psalm, a kingship over “all the children of pride”). If they are animals Job could see, the speech can be read as pointing to God’s rule over the made world; if they are creatures of another kind, it can be read as pointing to powers beyond ordinary animals. The text names them and does not say which.",
+          "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Possible readings: that they are two known animals described in heightened language; that they are animals no longer known; and that they are creatures of a kind other than ordinary animals, as Isaiah 27:1 speaks of leviathan beside “the dragon that is in the sea”. Each is an interpretation; the verses quoted state none of them, in the KJV or in the Hebrew quoted, and this record asserts none. The speech is in verse, and this record does not test its pictures against natural history. A shared name in the Psalms and Isaiah does not settle that the same creature is meant in Job. Two separate records compare the Greek, which has “beasts” at 40:15 and a common noun for a dragon or serpent at KJV 41:1; the Greek verses quoted in those records keep neither name. Check made for an answer elsewhere: the packaged KJV was searched for the words “behemoth” (Job 40:15 only) and “leviathan” (Job 41:1, Psalms 74:14, Psalms 104:26, Isaiah 27:1), and those verses were read. That is a word search, not a reading of the whole Bible, and Job 40:15–41:34 was not compared with the Hebrew or the Greek verse by verse. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "There is that leviathan, whom thou hast made to play therein",
+          "matches": [
+            "Psalms 104:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "this dragon whom thou hast made to play in it",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+            "printedLabel": "26",
+            "quote": "this dragon whom thou hast made to play in it",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "that leviathan",
+          "matches": [
+            "Psalms 104:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "this dragon whom thou hast made to play in it",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+            "printedLabel": "26",
+            "quote": "this dragon whom thou hast made to play in it",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "There go the ships: there is that leviathan, whom thou hast made to play therein.",
+          "matches": [
+            "Psalms 104:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "this dragon whom thou hast made to play in it",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+            "printedLabel": "26",
+            "quote": "this dragon whom thou hast made to play in it",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "leviathan",
+          "matches": [
+            "Psalms 104:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "dragon",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+            "printedLabel": "26",
+            "quote": "this dragon whom thou hast made to play in it",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "therein",
+          "matches": [
+            "Psalms 104:26"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "in it",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+            "printedLabel": "26",
+            "quote": "this dragon whom thou hast made to play in it",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "Shared references concern distinct edition comparisons or contextual references: Behemoth and leviathan — what creatures does the Lord point Job to?. No duplicate finding.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+          "printedLabel": "26",
+          "quote": "this dragon whom thou hast made to play in it",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "δράκων οὗτος ὃν ἔπλασας ἐμπαίζειν αὐτῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA103.htm",
+              "verse": "26"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "δράκων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA103.htm",
+              "verse": "26"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "αὐτῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA103.htm",
+              "verse": "26"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "he-was-laid-in-iron-or-iron-passed-through-his-soul-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 105:18",
+          "quote": "Whose feet they hurt with fetters: he was laid in iron:",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בַּ֝רְזֶ֗ל בָּ֣אָה נַפְשֹֽׁו",
+          "stated": {
+            "chapter": 105,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/105/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 105,
+            "verse": "18"
+          }
+        },
+        {
+          "quote": "σίδηρον διῆλθεν ἡ ψυχὴ αὐτοῦ",
+          "stated": {
+            "chapter": 104,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA104.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 104,
+            "verse": "18"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 105:18",
+          "quote": "he was laid in iron",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "He was laid in iron",
+          "matches": [
+            "Psalms 105:18"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "his soul passed into iron",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "18",
+            "quote": "his soul passed into iron",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "he was laid in iron",
+          "matches": [
+            "Psalms 105:18"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "his soul",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "18",
+            "quote": "his soul passed into iron",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "Whose feet they hurt with fetters: he was laid in iron:",
+          "matches": [
+            "Psalms 105:18"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "his soul passed into iron",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "18",
+            "quote": "his soul passed into iron",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "his soul",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "18",
+            "quote": "his soul passed into iron",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "iron",
+          "matches": [
+            "Psalms 105:18"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "his soul",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "18",
+            "quote": "his soul passed into iron",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "his feet",
+          "matches": [],
+          "kind": "Brenton English substring verified in the same supplied verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "18"
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+          "printedLabel": "18",
+          "quote": "his soul passed into iron",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "σίδηρον διῆλθεν ἡ ψυχὴ αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA104.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἡ ψυχὴ αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA104.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "σίδηρον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA104.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "they-rebelled-not-against-his-word-or-they-rebelled-against-his-words-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 105:28",
+          "quote": "He sent darkness, and made it dark; and they rebelled not against his word.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְלֹֽא־מָ֝ר֗וּ אֶת",
+          "stated": {
+            "chapter": 105,
+            "verse": 28
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/105/",
+              "verse": 28
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 105,
+            "verse": "28"
+          }
+        },
+        {
+          "quote": "καὶ παρεπίκραναν τοὺς λόγους αὐτοῦ",
+          "stated": {
+            "chapter": 104,
+            "verse": 28
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA104.htm",
+              "verse": "28"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 104,
+            "verse": "28"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 105:28",
+          "quote": "they rebelled not against his word",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They rebelled not against his word",
+          "matches": [
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "they rebelled against his words",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "28",
+            "quote": "yet they rebelled against his words",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "they rebelled not against his word",
+          "matches": [
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "yet they rebelled against his words",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "28",
+            "quote": "yet they rebelled against his words",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "He sent darkness, and made it dark; and they rebelled not against his word.",
+          "matches": [
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "yet they rebelled against his words",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "28",
+            "quote": "yet they rebelled against his words",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "yet they rebelled",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+            "printedLabel": "28",
+            "quote": "yet they rebelled against his words",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "word",
+          "matches": [
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "they",
+          "matches": [
+            "Psalms 105:28"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+          "printedLabel": "28",
+          "quote": "yet they rebelled against his words",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "καὶ παρεπίκραναν τοὺς λόγους αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA104.htm",
+              "verse": "28"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "sent-leanness-into-their-soul-or-sent-fulness-into-their-souls-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 106:15",
+          "quote": "And he gave them their request; but sent leanness into their soul.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיְשַׁלַּ֖ח רָזֹ֣ון בְּנַפְשָֽׁם",
+          "stated": {
+            "chapter": 106,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/106/",
+              "verse": 15
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 106,
+            "verse": "15"
+          }
+        },
+        {
+          "quote": "καὶ ἐξαπέστειλε πλησμονὴν εἰς τὴν ψυχὴν αὐτῶν",
+          "stated": {
+            "chapter": 105,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA105.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 105,
+            "verse": "15"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 106:15",
+          "quote": "sent leanness into their soul",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Sent leanness into their soul",
+          "matches": [
+            "Psalms 106:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "sent fulness into their souls",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+            "printedLabel": "15",
+            "quote": "and sent fulness into their souls",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "leanness",
+          "matches": [
+            "Psalms 106:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "fulness",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+            "printedLabel": "15",
+            "quote": "and sent fulness into their souls",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "And he gave them their request; but sent leanness into their soul.",
+          "matches": [
+            "Psalms 106:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "and sent fulness into their souls",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+            "printedLabel": "15",
+            "quote": "and sent fulness into their souls",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "leanness",
+          "matches": [
+            "Psalms 106:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "fulness",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+            "printedLabel": "15",
+            "quote": "and sent fulness into their souls",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+          "printedLabel": "15",
+          "quote": "and sent fulness into their souls",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "πλησμονὴν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA105.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "πλησμονήν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA105.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    },
+    {
+      "id": "phinehas-executed-judgment-or-phinehas-made-atonement-greek",
+      "batch": "psalms-90-106",
+      "english": [
+        {
+          "ref": "Psalms 106:30",
+          "quote": "Then stood up Phinehas, and executed judgment: and so the plague was stayed.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיַּעֲמֹ֣ד פִּֽ֭ינְחָס וַיְפַלֵּ֑ל",
+          "stated": {
+            "chapter": 106,
+            "verse": 30
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/106/",
+              "verse": 30
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 106,
+            "verse": "30"
+          }
+        },
+        {
+          "quote": "Καὶ ἔστη Φινεὲς καὶ ἐξιλάσατο",
+          "stated": {
+            "chapter": 105,
+            "verse": 30
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA105.htm",
+              "verse": "30"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 105,
+            "verse": "30"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 106:30",
+          "quote": "stood up Phinehas, and executed judgment",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Then stood up Phinehas, and executed judgment",
+          "matches": [
+            "Psalms 106:30"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "and made atonement",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+            "printedLabel": "30",
+            "quote": "Then Phinees stood up, and made atonement",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "executed judgment",
+          "matches": [
+            "Psalms 106:30"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "and made atonement",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+            "printedLabel": "30",
+            "quote": "Then Phinees stood up, and made atonement",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "Then stood up Phinehas, and executed judgment: and so the plague was stayed.",
+          "matches": [
+            "Psalms 106:30"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Then Phinees stood up, and made atonement",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+            "printedLabel": "30",
+            "quote": "Then Phinees stood up, and made atonement",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "executed judgment",
+          "matches": [
+            "Psalms 106:30"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "made atonement",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed label",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+            "printedLabel": "30",
+            "quote": "Then Phinees stood up, and made atonement",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+          "printedLabel": "30",
+          "quote": "Then Phinees stood up, and made atonement",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "καὶ ἐξιλάσατο",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA105.htm",
+              "verse": "30"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἐξιλάσατο",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA105.htm",
+              "verse": "30"
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Unicode accents and case normalized for repeated forms; text fragments checked in NFC"
+        }
+      ]
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/19/90/",
+    "https://ebible.org/grcbrent/PSA089.htm",
+    "https://ebible.org/eng-Brenton/PSA089.htm",
+    "https://bolls.life/get-text/WLC/19/91/",
+    "https://ebible.org/grcbrent/PSA090.htm",
+    "https://ebible.org/eng-Brenton/PSA090.htm",
+    "https://bolls.life/get-text/WLC/19/92/",
+    "https://ebible.org/grcbrent/PSA091.htm",
+    "https://ebible.org/eng-Brenton/PSA091.htm",
+    "https://bolls.life/get-text/WLC/19/94/",
+    "https://ebible.org/grcbrent/PSA093.htm",
+    "https://ebible.org/eng-Brenton/PSA093.htm",
+    "https://bolls.life/get-text/WLC/19/95/",
+    "https://ebible.org/grcbrent/PSA094.htm",
+    "https://ebible.org/eng-Brenton/PSA094.htm",
+    "https://bolls.life/get-text/TISCH/58/3/",
+    "https://bolls.life/get-text/TR/58/3/",
+    "https://bolls.life/get-text/WLC/19/96/",
+    "https://ebible.org/grcbrent/PSA095.htm",
+    "https://ebible.org/eng-Brenton/PSA095.htm",
+    "https://bolls.life/get-text/WLC/19/102/",
+    "https://ebible.org/grcbrent/PSA101.htm",
+    "https://ebible.org/eng-Brenton/PSA101.htm",
+    "https://bolls.life/get-text/TISCH/58/1/",
+    "https://bolls.life/get-text/TR/58/1/",
+    "https://bolls.life/get-text/WLC/19/104/",
+    "https://ebible.org/grcbrent/PSA103.htm",
+    "https://ebible.org/eng-Brenton/PSA103.htm",
+    "https://bolls.life/get-text/WLC/19/105/",
+    "https://ebible.org/grcbrent/PSA104.htm",
+    "https://ebible.org/eng-Brenton/PSA104.htm",
+    "https://bolls.life/get-text/WLC/19/106/",
+    "https://ebible.org/grcbrent/PSA105.htm",
+    "https://ebible.org/eng-Brenton/PSA105.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 633,
+  "studiesChecked": 6,
+  "brentonChecks": [
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+      "printedLabel": "3",
+      "quote": "Turn not man back to his low place, whereas thou saidst, Return, ye sons of men?",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+      "printedLabel": "12",
+      "quote": "and who knows how to number his days because of the fear of thy wrath?",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA089.htm",
+      "printedLabel": "12",
+      "quote": "So manifest thy right hand",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA090.htm",
+      "printedLabel": "6",
+      "quote": "nor of calamity, and the evil spirit at noon-day",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA091.htm",
+      "printedLabel": "11",
+      "quote": "and mine old age with rich mercy",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA093.htm",
+      "printedLabel": "17",
+      "quote": "my soul had almost sojourned in Hades",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+      "printedLabel": "3",
+      "quote": "for the Lord will not cast off his people",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+      "printedLabel": "4",
+      "quote": "For the ends of the earth are in his hands",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA094.htm",
+      "printedLabel": "8",
+      "quote": "according to the day of irritation in the wilderness",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA095.htm",
+      "printedLabel": "5",
+      "quote": "For all the gods of the heathen are devils",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+      "printedLabel": "24",
+      "quote": "He answered him in the way of his strength: tell me the fewness of my days",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA101.htm",
+      "printedLabel": "27",
+      "quote": "as a vesture shalt thou fold them, and they shall be changed",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+      "printedLabel": "12",
+      "quote": "out of the midst of the rocks",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA103.htm",
+      "printedLabel": "26",
+      "quote": "this dragon whom thou hast made to play in it",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+      "printedLabel": "18",
+      "quote": "his soul passed into iron",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA104.htm",
+      "printedLabel": "28",
+      "quote": "yet they rebelled against his words",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+      "printedLabel": "15",
+      "quote": "and sent fulness into their souls",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA105.htm",
+      "printedLabel": "30",
+      "quote": "Then Phinees stood up, and made atonement",
+      "exact": true
+    }
+  ],
+  "ntChecks": [
+    {
+      "id": "the-day-of-temptation-in-the-wilderness-or-the-day-of-irritation-greek-psalm-95-8",
+      "url": "https://bolls.life/get-text/TISCH/58/3/",
+      "printedLabel": "8",
+      "exact": true,
+      "comparison": "πειρασμοῦ and παραπικρασμῷ checked separately in each named edition"
+    },
+    {
+      "id": "the-day-of-temptation-in-the-wilderness-or-the-day-of-irritation-greek-psalm-95-8",
+      "url": "https://bolls.life/get-text/TR/58/3/",
+      "printedLabel": "8",
+      "exact": true,
+      "comparison": "πειρασμοῦ and παραπικρασμῷ checked separately in each named edition"
+    },
+    {
+      "id": "as-a-vesture-shalt-thou-change-them-or-shalt-thou-fold-them-greek-psalm-102-26",
+      "url": "https://bolls.life/get-text/TR/58/1/",
+      "printedLabel": "12",
+      "quote": "ελιξεις αυτους",
+      "exact": true
+    },
+    {
+      "id": "as-a-vesture-shalt-thou-change-them-or-shalt-thou-fold-them-greek-psalm-102-26",
+      "url": "https://bolls.life/get-text/TISCH/58/1/",
+      "printedLabel": "12",
+      "quote": "ἀλλάξεις αὐτούς",
+      "exact": true
+    }
+  ]
+}
