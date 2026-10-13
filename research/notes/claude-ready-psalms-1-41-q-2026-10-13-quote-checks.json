@@ -1,0 +1,1099 @@
+{
+  "batch": "psalms-1-41-q",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "selah-what-does-the-word-tell-the-reader-or-singer",
+      "batch": "psalms-1-41-q",
+      "english": [
+        {
+          "ref": "Psalms 3:2",
+          "quote": "Many there be which say of my soul, There is no help for him in God. Selah.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 3:4",
+          "quote": "I cried unto the Lord with my voice, and he heard me out of his holy hill. Selah.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 3:8",
+          "quote": "Salvation belongeth unto the Lord: thy blessing is upon thy people. Selah.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 9:16",
+          "quote": "The Lord is known by the judgment which he executeth: the wicked is snared in the work of his own hands. Higgaion. Selah.",
+          "exact": true
+        },
+        {
+          "ref": "Habakkuk 3:3",
+          "quote": "God came from Teman, and the Holy One from mount Paran. Selah.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֵ֤ין יְֽשׁוּעָ֓תָה לֹּ֬ו בֵֽאלֹהִ֬ים סֶֽלָה",
+          "stated": {
+            "chapter": 3,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/3/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "3"
+          }
+        },
+        {
+          "quote": "οὐκ ἔστι σωτηρία αὐτῷ ἐν τῷ Θεῷ αὐτοῦ· διάψαλμα",
+          "stated": {
+            "chapter": 3,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA003.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "3"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 3:2",
+          "quote": "Selah",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Selah",
+          "matches": [
+            "Psalms 3:2",
+            "Psalms 3:4",
+            "Psalms 3:8",
+            "Psalms 9:16",
+            "Habakkuk 3:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "Selah",
+          "matches": [
+            "Psalms 3:2",
+            "Psalms 3:4",
+            "Psalms 3:8",
+            "Psalms 9:16",
+            "Habakkuk 3:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Many there be which say of my soul, There is no help for him in God. Selah.",
+          "matches": [
+            "Psalms 3:2"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "I cried unto the Lord with my voice, and he heard me out of his holy hill. Selah.",
+          "matches": [
+            "Psalms 3:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Salvation belongeth unto the Lord: thy blessing is upon thy people. Selah.",
+          "matches": [
+            "Psalms 3:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "The Lord is known by the judgment which he executeth: the wicked is snared in the work of his own hands. Higgaion. Selah.",
+          "matches": [
+            "Psalms 9:16"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "God came from Teman, and the Holy One from mount Paran. Selah.",
+          "matches": [
+            "Habakkuk 3:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Higgaion. Selah.",
+          "matches": [
+            "Psalms 9:16"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "Selah",
+          "matches": [
+            "Psalms 3:2",
+            "Psalms 3:4",
+            "Psalms 3:8",
+            "Psalms 9:16",
+            "Habakkuk 3:3"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": [
+        {
+          "field": "scope",
+          "quote": "διάψαλμα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA003.htm",
+              "verse": "3"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA003.htm",
+              "verse": "5"
+            }
+          ],
+          "kind": "Repeated word or clause from supplied source; no new research"
+        }
+      ]
+    },
+    {
+      "id": "thou-shalt-keep-them-who-or-what-is-kept",
+      "batch": "psalms-1-41-q",
+      "english": [
+        {
+          "ref": "Psalms 12:5",
+          "quote": "For the oppression of the poor, for the sighing of the needy, now will I arise, saith the Lord; I will set him in safety from him that puffeth at him.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 12:6",
+          "quote": "The words of the Lord are pure words: as silver tried in a furnace of earth, purified seven times.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 12:7",
+          "quote": "Thou shalt keep them, O Lord, thou shalt preserve them from this generation for ever.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 12:1",
+          "quote": "Help, Lord; for the godly man ceaseth; for the faithful fail from among the children of men.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 12:8",
+          "quote": "The wicked walk on every side, when the vilest men are exalted.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אַתָּֽה־יְהוָ֥ה תִּשְׁמְרֵ֑ם תִּצְּרֶ֓נּוּ ׀ מִן־הַדֹּ֖ור ז֣וּ לְעֹולָֽם",
+          "stated": {
+            "chapter": 12,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/12/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "8"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 12:7",
+          "quote": "Thou shalt keep them, O Lord, thou shalt preserve them",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thou shalt keep them, O Lord",
+          "matches": [
+            "Psalms 12:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "them",
+          "matches": [
+            "Psalms 12:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "them",
+          "matches": [
+            "Psalms 12:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "the words of the Lord",
+          "matches": [
+            "Psalms 12:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "For the oppression of the poor, for the sighing of the needy, now will I arise, saith the Lord; I will set him in safety from him that puffeth at him.",
+          "matches": [
+            "Psalms 12:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "The words of the Lord are pure words: as silver tried in a furnace of earth, purified seven times.",
+          "matches": [
+            "Psalms 12:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Thou shalt keep them, O Lord, thou shalt preserve them from this generation for ever.",
+          "matches": [
+            "Psalms 12:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Help, Lord; for the godly man ceaseth; for the faithful fail from among the children of men.",
+          "matches": [
+            "Psalms 12:1"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "The wicked walk on every side, when the vilest men are exalted.",
+          "matches": [
+            "Psalms 12:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "them",
+          "matches": [
+            "Psalms 12:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "this generation",
+          "matches": [
+            "Psalms 12:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "them",
+          "matches": [
+            "Psalms 12:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "them",
+          "matches": [
+            "Psalms 12:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "them",
+          "matches": [
+            "Psalms 12:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "us",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA067.htm",
+            "printedLabel": "18",
+            "quote": "ten thousand fold",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": [
+        {
+          "field": "scope",
+          "quote": "ם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/12/",
+              "verse": 2
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/19/12/",
+              "verse": 6
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/19/12/",
+              "verse": 7
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/19/12/",
+              "verse": 8
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/19/12/",
+              "verse": 9
+            }
+          ],
+          "kind": "Repeated word or clause from supplied source; no new research"
+        },
+        {
+          "field": "scope",
+          "quote": "נו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/12/",
+              "verse": 5
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/19/12/",
+              "verse": 8
+            }
+          ],
+          "kind": "Repeated word or clause from supplied source; no new research"
+        }
+      ]
+    },
+    {
+      "id": "in-the-volume-of-the-book-it-is-written-of-me-which-book",
+      "batch": "psalms-1-41-q",
+      "english": [
+        {
+          "ref": "Psalms 40:6",
+          "quote": "Sacrifice and offering thou didst not desire; mine ears hast thou opened: burnt offering and sin offering hast thou not required.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 40:7",
+          "quote": "Then said I, Lo, I come: in the volume of the book it is written of me,",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 40:8",
+          "quote": "I delight to do thy will, O my God: yea, thy law is within my heart.",
+          "exact": true
+        },
+        {
+          "ref": "Hebrews 10:5",
+          "quote": "Wherefore when he cometh into the world, he saith",
+          "exact": true
+        },
+        {
+          "ref": "Hebrews 10:7",
+          "quote": "Then said I, Lo, I come (in the volume of the book it is written of me,) to do thy will, O God.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בִּמְגִלַּת־סֵ֝֗פֶר כָּת֥וּב עָלָֽי",
+          "stated": {
+            "chapter": 40,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/40/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 40,
+            "verse": "8"
+          }
+        },
+        {
+          "quote": "ἐν κεφαλίδι βιβλίου γέγραπται περὶ ἐμοῦ",
+          "stated": {
+            "chapter": 39,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA039.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 39,
+            "verse": "8"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 40:7",
+          "quote": "in the volume of the book it is written of me",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "In the volume of the book it is written of me",
+          "matches": [
+            "Psalms 40:7",
+            "Hebrews 10:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "in the volume of the book",
+          "matches": [
+            "Psalms 40:7",
+            "Hebrews 10:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Sacrifice and offering thou didst not desire; mine ears hast thou opened: burnt offering and sin offering hast thou not required.",
+          "matches": [
+            "Psalms 40:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Then said I, Lo, I come: in the volume of the book it is written of me,",
+          "matches": [
+            "Psalms 40:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "I delight to do thy will, O my God: yea, thy law is within my heart.",
+          "matches": [
+            "Psalms 40:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Wherefore when he cometh into the world, he saith",
+          "matches": [
+            "Hebrews 10:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Then said I, Lo, I come (in the volume of the book it is written of me,) to do thy will, O God.",
+          "matches": [
+            "Hebrews 10:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Lo, I come",
+          "matches": [
+            "Psalms 40:7",
+            "Hebrews 10:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the volume of the book",
+          "matches": [
+            "Psalms 40:7",
+            "Hebrews 10:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "thy law is within my heart",
+          "matches": [
+            "Psalms 40:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "when he cometh into the world, he saith",
+          "matches": [
+            "Hebrews 10:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "the volume of the book",
+          "matches": [
+            "Psalms 40:7",
+            "Hebrews 10:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "volume of the book",
+          "matches": [
+            "Psalms 40:7",
+            "Hebrews 10:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/19/2/",
+    "https://ebible.org/grcbrent/PSA002.htm",
+    "https://bolls.life/get-text/TISCH/66/2/",
+    "https://bolls.life/get-text/TR/66/2/",
+    "https://bolls.life/get-text/WLC/19/4/",
+    "https://ebible.org/grcbrent/PSA004.htm",
+    "https://bolls.life/get-text/TISCH/49/4/",
+    "https://bolls.life/get-text/TR/49/4/",
+    "https://bolls.life/get-text/WLC/19/7/",
+    "https://ebible.org/grcbrent/PSA007.htm",
+    "https://bolls.life/get-text/WLC/19/8/",
+    "https://ebible.org/grcbrent/PSA008.htm",
+    "https://bolls.life/get-text/TISCH/40/21/",
+    "https://bolls.life/get-text/TR/40/21/",
+    "https://bolls.life/get-text/WLC/19/9/",
+    "https://ebible.org/grcbrent/PSA009.htm",
+    "https://bolls.life/get-text/WLC/19/12/",
+    "https://ebible.org/grcbrent/PSA011.htm",
+    "https://bolls.life/get-text/WLC/19/14/",
+    "https://ebible.org/grcbrent/PSA013.htm",
+    "https://bolls.life/get-text/TISCH/45/3/",
+    "https://bolls.life/get-text/TR/45/3/",
+    "https://bolls.life/get-text/WLC/19/19/",
+    "https://ebible.org/grcbrent/PSA018.htm",
+    "https://bolls.life/get-text/TISCH/45/10/",
+    "https://bolls.life/get-text/TR/45/10/",
+    "https://bolls.life/get-text/WLC/19/22/",
+    "https://ebible.org/grcbrent/PSA021.htm",
+    "https://bolls.life/get-text/TISCH/40/27/",
+    "https://bolls.life/get-text/TR/40/27/",
+    "https://bolls.life/get-text/WLC/19/29/",
+    "https://ebible.org/grcbrent/PSA028.htm",
+    "https://bolls.life/get-text/WLC/19/40/",
+    "https://ebible.org/grcbrent/PSA039.htm",
+    "https://bolls.life/get-text/TISCH/58/10/",
+    "https://bolls.life/get-text/TR/58/10/",
+    "https://bolls.life/get-text/WLC/19/3/",
+    "https://ebible.org/grcbrent/PSA003.htm",
+    "https://bolls.life/get-text/WLC/19/42/",
+    "https://ebible.org/grcbrent/PSA041.htm",
+    "https://bolls.life/get-text/WLC/19/45/",
+    "https://ebible.org/grcbrent/PSA044.htm",
+    "https://bolls.life/get-text/WLC/19/47/",
+    "https://ebible.org/grcbrent/PSA046.htm",
+    "https://bolls.life/get-text/WLC/19/50/",
+    "https://ebible.org/grcbrent/PSA049.htm",
+    "https://bolls.life/get-text/WLC/19/51/",
+    "https://ebible.org/grcbrent/PSA050.htm",
+    "https://bolls.life/get-text/WLC/19/55/",
+    "https://ebible.org/grcbrent/PSA054.htm",
+    "https://bolls.life/get-text/WLC/19/56/",
+    "https://ebible.org/grcbrent/PSA055.htm",
+    "https://bolls.life/get-text/WLC/19/58/",
+    "https://ebible.org/grcbrent/PSA057.htm",
+    "https://bolls.life/get-text/WLC/19/60/",
+    "https://ebible.org/grcbrent/PSA059.htm",
+    "https://bolls.life/get-text/WLC/19/62/",
+    "https://ebible.org/grcbrent/PSA061.htm",
+    "https://bolls.life/get-text/WLC/19/64/",
+    "https://ebible.org/grcbrent/PSA063.htm",
+    "https://bolls.life/get-text/WLC/19/68/",
+    "https://ebible.org/grcbrent/PSA067.htm",
+    "https://bolls.life/get-text/WLC/19/69/",
+    "https://ebible.org/grcbrent/PSA068.htm",
+    "https://bolls.life/get-text/TISCH/45/11/",
+    "https://bolls.life/get-text/TR/45/11/",
+    "https://bolls.life/get-text/WLC/19/71/",
+    "https://ebible.org/grcbrent/PSA070.htm",
+    "https://bolls.life/get-text/WLC/19/72/",
+    "https://ebible.org/grcbrent/PSA071.htm",
+    "https://ebible.org/eng-Brenton/PSA055.htm",
+    "https://ebible.org/eng-Brenton/PSA057.htm",
+    "https://ebible.org/eng-Brenton/PSA063.htm",
+    "https://ebible.org/eng-Brenton/PSA067.htm",
+    "https://ebible.org/eng-Brenton/PSA070.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 575,
+  "studiesChecked": 6,
+  "brentonChecks": [
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA055.htm",
+      "printedLabel": "9",
+      "quote": "according to thy promise",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA057.htm",
+      "printedLabel": "9",
+      "quote": "as melted wax: the fire has fallen",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA063.htm",
+      "printedLabel": "8",
+      "quote": "the weapon of the foolish children",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA067.htm",
+      "printedLabel": "18",
+      "quote": "ten thousand fold",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA067.htm",
+      "printedLabel": "18",
+      "quote": "rejoicing ones",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA070.htm",
+      "printedLabel": "15",
+      "quote": "I am not acquainted with the affairs of men",
+      "exact": true
+    }
+  ],
+  "searches": {
+    "Selah": [
+      {
+        "ref": "2 Kings 14:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 3:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 3:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 3:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 4:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 4:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 7:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 9:16",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 9:20",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 20:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 21:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 24:6",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 24:10",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 32:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 32:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 32:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 39:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 39:11",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 44:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 46:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 46:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 46:11",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 47:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 48:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 49:13",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 49:15",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 50:6",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 52:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 52:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 54:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 55:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 55:19",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 57:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 57:6",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 59:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 59:13",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 60:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 61:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 62:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 62:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 66:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 66:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 66:15",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 67:1",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 67:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 68:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 68:19",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 68:32",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 75:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 76:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 76:9",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 77:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 77:9",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 77:15",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 81:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 82:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 83:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 84:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 84:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 85:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 87:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 87:6",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 88:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 88:10",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 89:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 89:37",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 89:45",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 89:48",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 140:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 140:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 140:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 143:6",
+        "count": 1
+      },
+      {
+        "ref": "Habakkuk 3:3",
+        "count": 1
+      },
+      {
+        "ref": "Habakkuk 3:9",
+        "count": 1
+      },
+      {
+        "ref": "Habakkuk 3:13",
+        "count": 1
+      }
+    ],
+    "Higgaion": [
+      {
+        "ref": "Psalms 9:16",
+        "count": 1
+      }
+    ],
+    "volume of the book": [
+      {
+        "ref": "Psalms 40:7",
+        "count": 1
+      },
+      {
+        "ref": "Hebrews 10:7",
+        "count": 1
+      }
+    ],
+    "book of the living": [
+      {
+        "ref": "Psalms 69:28",
+        "count": 1
+      }
+    ],
+    "book of life": [
+      {
+        "ref": "Philippians 4:3",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 3:5",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 13:8",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 17:8",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 20:12",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 20:15",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 21:27",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 22:19",
+        "count": 1
+      }
+    ]
+  }
+}

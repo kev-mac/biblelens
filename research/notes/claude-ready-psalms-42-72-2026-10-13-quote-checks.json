@@ -1,0 +1,4090 @@
+{
+  "batch": "psalms-42-72",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "the-help-of-his-countenance-or-the-salvation-of-my-countenance-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 42:5",
+          "quote": "Why art thou cast down, O my soul? and why art thou disquieted in me? hope thou in God: for I shall yet praise him for the help of his countenance.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 42:11",
+          "quote": "who is the health of my countenance, and my God",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יְשׁוּעֹ֥ות פָּנָֽיו",
+          "stated": {
+            "chapter": 42,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/42/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 42,
+            "verse": "6"
+          }
+        },
+        {
+          "quote": "יְשׁוּעֹ֥ת פָּ֝נַ֗י וֵֽאלֹהָֽי",
+          "stated": {
+            "chapter": 42,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/42/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 42,
+            "verse": "12"
+          }
+        },
+        {
+          "quote": "σωτήριον τοῦ προσώπου μου",
+          "stated": {
+            "chapter": 41,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA041.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 41,
+            "verse": "6"
+          }
+        },
+        {
+          "quote": "ἡ σωτηρία τοῦ προσώπου μου, καὶ ὁ Θεός μου",
+          "stated": {
+            "chapter": 41,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA041.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 41,
+            "verse": "12"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 42:5",
+          "quote": "for the help of his countenance",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The help of his countenance",
+          "matches": [
+            "Psalms 42:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the salvation of my countenance",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "his countenance",
+          "matches": [
+            "Psalms 42:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "my countenance",
+          "matches": [
+            "Psalms 42:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Why art thou cast down, O my soul? and why art thou disquieted in me? hope thou in God: for I shall yet praise him for the help of his countenance.",
+          "matches": [
+            "Psalms 42:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "who is the health of my countenance, and my God",
+          "matches": [
+            "Psalms 42:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "his",
+          "matches": [
+            "Psalms 42:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my",
+          "matches": [
+            "Psalms 42:5",
+            "Psalms 42:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my",
+          "matches": [
+            "Psalms 42:5",
+            "Psalms 42:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "my face",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "scope",
+          "quote": "my God",
+          "matches": [
+            "Psalms 42:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "and my God",
+          "matches": [
+            "Psalms 42:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "the-kings-daughter-is-all-glorious-within-or-daughter-of-the-king-of-esebon-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 45:13",
+          "quote": "The king's daughter is all glorious within: her clothing is of wrought gold.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כָּל־כְּבוּדָּ֣ה בַת־מֶ֣לֶךְ פְּנִ֑ימָה",
+          "stated": {
+            "chapter": 45,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/45/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 45,
+            "verse": "14"
+          }
+        },
+        {
+          "quote": "Πᾶσα ἡ δόξα αὐτῆς θυγατρὸς τοῦ βασιλέως Ἐσεβὼν",
+          "stated": {
+            "chapter": 44,
+            "verse": 14
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA044.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 44,
+            "verse": "14"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 45:13",
+          "quote": "The king's daughter is all glorious within",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The king’s daughter is all glorious within",
+          "matches": [
+            "Psalms 45:13"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the daughter of the king of Esebon",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "all glorious within",
+          "matches": [
+            "Psalms 45:13"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "the king",
+          "matches": [
+            "Psalms 45:13"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "The king's daughter is all glorious within: her clothing is of wrought gold.",
+          "matches": [
+            "Psalms 45:13"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "within",
+          "matches": [
+            "Psalms 45:13"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "within",
+          "matches": [
+            "Psalms 45:13"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the king",
+          "matches": [
+            "Psalms 45:13"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "Ἐσεβών",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA044.htm",
+              "verse": "14"
+            }
+          ],
+          "kind": "Repeated word or clause from supplied source; no new research"
+        }
+      ]
+    },
+    {
+      "id": "even-the-people-of-the-god-of-abraham-or-with-the-god-of-abraham-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 47:9",
+          "quote": "The princes of the people are gathered together, even the people of the God of Abraham: for the shields of the earth belong unto God: he is greatly exalted.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "נְדִ֘יבֵ֤י עַמִּ֨ים ׀ נֶאֱסָ֗פוּ עַם֮ אֱלֹהֵ֪י אַבְרָ֫הָ֥ם כִּ֣י לֵֽ֭אלֹהִים מָֽגִנֵּי־אֶ֗רֶץ מְאֹ֣ד נַעֲלָֽה",
+          "stated": {
+            "chapter": 47,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/47/",
+              "verse": 10
+            }
+          ],
+          "originalQuote": "נְדִ֘יבֵ֤י עַמִּ֨ים ׀ נֶאֱסָ֗פוּ עַם֮ אֱלֹהֵ֪י אַבְרָ֫הָ֥ם. כִּ֣י לֵֽ֭אלֹהִים מָֽגִנֵּי־אֶ֗רֶץ מְאֹ֣ד נַעֲלָֽה",
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 47,
+            "verse": "10"
+          }
+        },
+        {
+          "quote": "Ἄρχοντες λαῶν συνήχθησαν μετὰ τοῦ Θεοῦ Ἀβραὰμ",
+          "stated": {
+            "chapter": 46,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA046.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 46,
+            "verse": "10"
+          }
+        },
+        {
+          "quote": "ὅτι τοῦ Θεοῦ οἱ κραταιοὶ τῆς γῆς σφόδρα ἐπῄρθησαν",
+          "stated": {
+            "chapter": 46,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA046.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 46,
+            "verse": "10"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 47:9",
+          "quote": "even the people of the God of Abraham",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Even the people of the God of Abraham",
+          "matches": [
+            "Psalms 47:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "with the God of Abraam",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "even the people of the God of Abraham",
+          "matches": [
+            "Psalms 47:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "the shields of the earth",
+          "matches": [
+            "Psalms 47:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "with the God of Abraam",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "the mighty ones of the earth",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "The princes of the people are gathered together, even the people of the God of Abraham: for the shields of the earth belong unto God: he is greatly exalted.",
+          "matches": [
+            "Psalms 47:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "even the people of the God of Abraham",
+          "matches": [
+            "Psalms 47:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "with",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA070.htm",
+            "printedLabel": "15",
+            "quote": "I am not acquainted with the affairs of men",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "shields",
+          "matches": [
+            "Psalms 47:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the mighty ones",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "scope",
+          "quote": "princes of peoples",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "scope",
+          "quote": "the God of Abraham",
+          "matches": [
+            "Psalms 47:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "even the people of",
+          "matches": [
+            "Psalms 47:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "cattle-upon-a-thousand-hills-or-oxen-and-the-beauty-of-the-field-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 50:10",
+          "quote": "For every beast of the forest is mine, and the cattle upon a thousand hills.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 50:11",
+          "quote": "I know all the fowls of the mountains: and the wild beasts of the field are mine.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּ֝הֵמֹ֗ות בְּהַרְרֵי־אָֽלֶף",
+          "stated": {
+            "chapter": 50,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/50/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 50,
+            "verse": "10"
+          }
+        },
+        {
+          "quote": "יָ֭דַעְתִּי כָּל־עֹ֣וף הָרִ֑ים",
+          "stated": {
+            "chapter": 50,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/50/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 50,
+            "verse": "11"
+          }
+        },
+        {
+          "quote": "κτήνη ἐν τοῖς ὄρεσι, καὶ βόες",
+          "stated": {
+            "chapter": 49,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA049.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 49,
+            "verse": "10"
+          }
+        },
+        {
+          "quote": "Ἔγνωκα πάντα τὰ πετεινὰ τοῦ οὐρανοῦ, καὶ ὡραιότης ἀγροῦ μετʼ ἐμοῦ ἐστιν",
+          "stated": {
+            "chapter": 49,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA049.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 49,
+            "verse": "11"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 50:10",
+          "quote": "the cattle upon a thousand hills",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 50:11",
+          "quote": "the wild beasts of the field are mine",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The cattle upon a thousand hills",
+          "matches": [
+            "Psalms 50:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the cattle on the mountains, and oxen",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "title",
+          "quote": "the beauty of the field",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "a thousand hills",
+          "matches": [
+            "Psalms 50:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "the wild beasts of the field",
+          "matches": [
+            "Psalms 50:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "and oxen",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "the beauty of the field",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "of the sky",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "For every beast of the forest is mine, and the cattle upon a thousand hills.",
+          "matches": [
+            "Psalms 50:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "I know all the fowls of the mountains: and the wild beasts of the field are mine.",
+          "matches": [
+            "Psalms 50:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a thousand",
+          "matches": [
+            "Psalms 50:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the mountains",
+          "matches": [
+            "Psalms 50:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the wild beasts of the field",
+          "matches": [
+            "Psalms 50:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the sky",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the beauty of the field",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "be-clear-when-thou-judgest-or-overcome-when-thou-art-judged-greek-and-romans",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 51:4",
+          "quote": "that thou mightest be justified when thou speakest, and be clear when thou judgest",
+          "exact": true
+        },
+        {
+          "ref": "Romans 3:4",
+          "quote": "That thou mightest be justified in thy sayings, and mightest overcome when thou art judged",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לְ֭מַעַן תִּצְדַּ֥ק בְּדָבְרֶ֗ךָ תִּזְכֶּ֥ה בְשָׁפְטֶֽךָ",
+          "stated": {
+            "chapter": 51,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/51/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 51,
+            "verse": "6"
+          }
+        },
+        {
+          "quote": "ὅπως ἂν δικαιωθῇς ἐν τοῖς λόγοις σου, καὶ νικήσῃς ἐν τῷ κρίνεσθαί σε",
+          "stated": {
+            "chapter": 50,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 50,
+            "verse": "6"
+          }
+        },
+        {
+          "quote": "ὅπως ἂν δικαιωθῇς ἐν τοῖς λόγοις σου",
+          "stated": {
+            "chapter": 3,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "4"
+          }
+        },
+        {
+          "quote": "νικήσεις ἐν τῷ κρίνεσθαί σε",
+          "stated": {
+            "chapter": 3,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "4"
+          }
+        },
+        {
+          "quote": "νικησης εν τω κρινεσθαι σε",
+          "stated": {
+            "chapter": 3,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "4"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 51:4",
+          "quote": "and be clear when thou judgest",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Romans 3:4",
+          "quote": "mightest overcome when thou art judged",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Be clear when thou judgest",
+          "matches": [
+            "Psalms 51:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "overcome when thou art judged",
+          "matches": [
+            "Romans 3:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "justified when thou speakest, and be clear when thou judgest",
+          "matches": [
+            "Psalms 51:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "in thy sayings",
+          "matches": [
+            "Romans 3:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "overcome when thou art judged",
+          "matches": [
+            "Romans 3:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "that thou mightest be justified when thou speakest, and be clear when thou judgest",
+          "matches": [
+            "Psalms 51:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "That thou mightest be justified in thy sayings, and mightest overcome when thou art judged",
+          "matches": [
+            "Romans 3:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "when thou art judged",
+          "matches": [
+            "Romans 3:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "thy",
+          "matches": [
+            "Psalms 51:4",
+            "Romans 3:4"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [
+        {
+          "quote": "ὅπως ἂν δικαιωθῇς ἐν τοῖς λόγοις σου",
+          "url": "https://bolls.life/get-text/TR/45/3/",
+          "printedLabel": "4",
+          "sameWordsIgnoringDiacritics": true,
+          "differenceStated": false
+        },
+        {
+          "quote": "νικήσεις ἐν τῷ κρίνεσθαί σε",
+          "url": "https://bolls.life/get-text/TR/45/3/",
+          "printedLabel": "4",
+          "sameWordsIgnoringDiacritics": false,
+          "differenceStated": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "scope",
+          "quote": "εις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "1"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "9"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "10"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "15"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "17"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "18"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "21"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 4
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 7
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 10
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 15
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 22
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 25
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 26
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 30
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 7
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 10
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 15
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 22
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 25
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 26
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 30
+            }
+          ],
+          "kind": "Repeated word or clause from supplied source; no new research"
+        },
+        {
+          "field": "scope",
+          "quote": "ῃς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "4"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "6"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "8"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "13"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "16"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/PSA050.htm",
+              "verse": "21"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 1
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 4
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 17
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 23
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 24
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 25
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 26
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 30
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/3/",
+              "verse": 31
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 1
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 4
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 17
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 23
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 24
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 25
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 26
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 30
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/45/3/",
+              "verse": 31
+            }
+          ],
+          "kind": "Repeated word or clause from supplied source; no new research"
+        }
+      ]
+    },
+    {
+      "id": "we-took-sweet-counsel-together-or-who-sweetened-our-food-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 55:13",
+          "quote": "But it was thou, a man mine equal, my guide, and mine acquaintance.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 55:14",
+          "quote": "We took sweet counsel together, and walked unto the house of God in company.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֲשֶׁ֣ר יַ֭חְדָּו נַמְתִּ֣יק סֹ֑וד",
+          "stated": {
+            "chapter": 55,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/55/",
+              "verse": 15
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 55,
+            "verse": "15"
+          }
+        },
+        {
+          "quote": "ὃς ἐπιτοαυτὸ ἐγλύκανας ἐδέσματα",
+          "stated": {
+            "chapter": 54,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA054.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 54,
+            "verse": "15"
+          }
+        },
+        {
+          "quote": "ἐν τῷ οἴκῳ τοῦ Θεοῦ ἐπορεύθημεν ἐν ὁμονοίᾳ",
+          "stated": {
+            "chapter": 54,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA054.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 54,
+            "verse": "15"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 55:14",
+          "quote": "We took sweet counsel together",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "We took sweet counsel together",
+          "matches": [
+            "Psalms 55:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "thou, who in companionship didst sweeten foods",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "we took sweet counsel together",
+          "matches": [
+            "Psalms 55:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "we",
+          "matches": [
+            "Psalms 55:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "who didst sweeten foods together",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "But it was thou, a man mine equal, my guide, and mine acquaintance.",
+          "matches": [
+            "Psalms 55:13"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "We took sweet counsel together, and walked unto the house of God in company.",
+          "matches": [
+            "Psalms 55:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "we",
+          "matches": [
+            "Psalms 55:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "we walked",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "scope",
+          "quote": "counsel",
+          "matches": [
+            "Psalms 55:14"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "put-thou-my-tears-into-thy-bottle-or-thou-hast-set-my-tears-before-thee-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 56:8",
+          "quote": "Thou tellest my wanderings: put thou my tears into thy bottle: are they not in thy book?",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "נֹדִי֮ סָפַ֪רְתָּ֫ה אָ֥תָּה שִׂ֣ימָה דִמְעָתִ֣י בְנֹאדֶ֑ךָ הֲ֝לֹ֗א בְּסִפְרָתֶֽךָ",
+          "stated": {
+            "chapter": 56,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/56/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 56,
+            "verse": "9"
+          }
+        },
+        {
+          "quote": "τὴν ζωήν μου ἐξήγγειλά σοι, ἔθου τὰ δάκρυά μου ἐνώπιόν σου, ὡς καὶ ἐν τῇ ἐπαγγελίᾳ σου",
+          "stated": {
+            "chapter": 55,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA055.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 55,
+            "verse": "9"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 56:8",
+          "quote": "put thou my tears into thy bottle: are they not in thy book",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Put thou my tears into thy bottle: are they not in thy book?",
+          "matches": [
+            "Psalms 56:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "according to thy promise",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA055.htm",
+            "printedLabel": "9",
+            "quote": "according to thy promise",
+            "exact": true
+          }
+        },
+        {
+          "field": "text",
+          "quote": "Thou tellest my wanderings: put thou my tears into thy bottle: are they not in thy book?",
+          "matches": [
+            "Psalms 56:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "tellest",
+          "matches": [
+            "Psalms 56:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "into thy bottle",
+          "matches": [
+            "Psalms 56:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "before thee",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy book",
+          "matches": [
+            "Psalms 56:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy promise",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA055.htm",
+            "printedLabel": "9",
+            "quote": "according to thy promise",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "according to thy promise",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA055.htm",
+            "printedLabel": "9",
+            "quote": "according to thy promise",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "as-a-snail-which-melteth-or-as-melted-wax-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 58:8",
+          "quote": "As a snail which melteth, let every one of them pass away: like the untimely birth of a woman, that they may not see the sun.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כְּמֹ֣ו בְּלוּל תֶּ֣מֶס יַהֲלֹ֑ךְ נֵ֥פֶל אֵ֝֗שֶׁת בַּל־חָ֥זוּ שָֽׁמֶשׁ",
+          "stated": {
+            "chapter": 58,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/58/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 58,
+            "verse": "9"
+          }
+        },
+        {
+          "quote": "Ὡσεὶ κηρὸς ὁ τακεῖς ἀνταναιρεθήσονται, ἔπεσε πῦρ, καὶ οὐκ εἶδον τὸν ἥλιον",
+          "stated": {
+            "chapter": 57,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA057.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 57,
+            "verse": "9"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 58:8",
+          "quote": "As a snail which melteth, let every one of them pass away",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "As a snail which melteth",
+          "matches": [
+            "Psalms 58:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "as wax that melts",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "title",
+          "quote": "fire has fallen",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA057.htm",
+            "printedLabel": "9",
+            "quote": "as melted wax: the fire has fallen",
+            "exact": true
+          }
+        },
+        {
+          "field": "summary",
+          "quote": "they have not seen the sun",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "As a snail which melteth, let every one of them pass away: like the untimely birth of a woman, that they may not see the sun.",
+          "matches": [
+            "Psalms 58:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "as melted wax: the fire has fallen",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA057.htm",
+            "printedLabel": "9",
+            "quote": "as melted wax: the fire has fallen",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "snail",
+          "matches": [
+            "Psalms 58:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "untimely birth",
+          "matches": [
+            "Psalms 58:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "judah-is-my-lawgiver-or-judas-is-my-king-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 60:7",
+          "quote": "Gilead is mine, and Manasseh is mine; Ephraim also is the strength of mine head; Judah is my lawgiver;",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 60:8",
+          "quote": "Moab is my washpot; over Edom will I cast out my shoe: Philistia, triumph thou because of me.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יְ֝הוּדָ֗ה מְחֹֽקְקִי",
+          "stated": {
+            "chapter": 60,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/60/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 60,
+            "verse": "9"
+          }
+        },
+        {
+          "quote": "מֹואָ֤ב ׀ סִ֬יר רַחְצִ֗י",
+          "stated": {
+            "chapter": 60,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/60/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 60,
+            "verse": "10"
+          }
+        },
+        {
+          "quote": "Ἰούδας βασιλεύς μου",
+          "stated": {
+            "chapter": 59,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA059.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 59,
+            "verse": "9"
+          }
+        },
+        {
+          "quote": "Μωὰβ λέβης τῆς ἐλπίδος μου",
+          "stated": {
+            "chapter": 59,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA059.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 59,
+            "verse": "10"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 60:7",
+          "quote": "Judah is my lawgiver",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 60:8",
+          "quote": "Moab is my washpot",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Judah is my lawgiver",
+          "matches": [
+            "Psalms 60:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "Judas is my king",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "title",
+          "quote": "Moab is the caldron of my hope",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "title",
+          "quote": "my washpot",
+          "matches": [
+            "Psalms 60:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "Judah is my lawgiver",
+          "matches": [
+            "Psalms 60:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "Judas is my king",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "Moab is my washpot",
+          "matches": [
+            "Psalms 60:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "Moab is the caldron of my hope",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "Gilead is mine, and Manasseh is mine; Ephraim also is the strength of mine head; Judah is my lawgiver;",
+          "matches": [
+            "Psalms 60:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Moab is my washpot; over Edom will I cast out my shoe: Philistia, triumph thou because of me.",
+          "matches": [
+            "Psalms 60:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "king",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "scope",
+          "quote": "lawgiver",
+          "matches": [
+            "Psalms 60:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "twice-have-i-heard-this-or-i-have-heard-these-two-things-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 62:11",
+          "quote": "God hath spoken once; twice have I heard this; that power belongeth unto God.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 62:12",
+          "quote": "Also unto thee, O Lord, belongeth mercy",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אַחַ֤ת ׀ דִּבֶּ֬ר אֱלֹהִ֗ים שְׁתַּֽיִם־ז֥וּ שָׁמָ֑עְתִּי",
+          "stated": {
+            "chapter": 62,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/62/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 62,
+            "verse": "12"
+          }
+        },
+        {
+          "quote": "Ἅπαξ ἐλάλησεν ὁ Θεὸς, δύο ταῦτα ἤκουσα",
+          "stated": {
+            "chapter": 61,
+            "verse": 12
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA061.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 61,
+            "verse": "12"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 62:11",
+          "quote": "God hath spoken once; twice have I heard this",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "God hath spoken once; twice have I heard this",
+          "matches": [
+            "Psalms 62:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "I have heard these two things",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "these two things",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "God hath spoken once; twice have I heard this; that power belongeth unto God.",
+          "matches": [
+            "Psalms 62:11"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Also unto thee, O Lord, belongeth mercy",
+          "matches": [
+            "Psalms 62:12"
+          ],
+          "kind": "KJV quotation at supplied text label, outside listed refs"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "god-shall-shoot-at-them-with-an-arrow-or-god-shall-be-exalted-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 64:7",
+          "quote": "But God shall shoot at them with an arrow; suddenly shall they be wounded.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 64:8",
+          "quote": "So they shall make their own tongue to fall upon themselves: all that see them shall flee away.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיֹּרֵ֗ם אֱלֹ֫הִ֥ים חֵ֥ץ פִּתְאֹ֑ום הָ֝י֗וּ מַכֹּותָֽם",
+          "stated": {
+            "chapter": 64,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/64/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 64,
+            "verse": "8"
+          }
+        },
+        {
+          "quote": "וַיַּכְשִׁיל֣וּהוּ עָלֵ֣ימֹו לְשֹׁונָ֑ם",
+          "stated": {
+            "chapter": 64,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/64/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 64,
+            "verse": "9"
+          }
+        },
+        {
+          "quote": "καὶ ὑψωθήσεται ὁ Θεός· βέλος νηπίων ἐγενήθησαν αἱ πληγαὶ αὐτῶν",
+          "stated": {
+            "chapter": 63,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA063.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 63,
+            "verse": "8"
+          }
+        },
+        {
+          "quote": "καὶ ἐξουθένησαν αὐτὸν αἱ γλῶσσαι αὐτῶν· ἐταράχθησαν πάντες οἱ θεωροῦντες αὐτοὺς",
+          "stated": {
+            "chapter": 63,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA063.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 63,
+            "verse": "9"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 64:7",
+          "quote": "But God shall shoot at them with an arrow",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 64:8",
+          "quote": "So they shall make their own tongue to fall upon themselves",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "God shall shoot at them with an arrow",
+          "matches": [
+            "Psalms 64:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "God shall be exalted; their wounds became the weapon of children",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "the weapon of children",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "But God shall shoot at them with an arrow; suddenly shall they be wounded.",
+          "matches": [
+            "Psalms 64:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "So they shall make their own tongue to fall upon themselves: all that see them shall flee away.",
+          "matches": [
+            "Psalms 64:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "shall shoot at them",
+          "matches": [
+            "Psalms 64:7"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "infants",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "him",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "shall flee away",
+          "matches": [
+            "Psalms 64:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "were troubled",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "scope",
+          "quote": "the weapon of the foolish children",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA063.htm",
+            "printedLabel": "8",
+            "quote": "the weapon of the foolish children",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "him",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "the-rebellious-dwell-in-a-dry-land-or-dwell-in-tombs-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 68:6",
+          "quote": "God setteth the solitary in families: he bringeth out those which are bound with chains: but the rebellious dwell in a dry land.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אַ֥ךְ סֹ֝ורֲרִ֗ים שָׁכְנ֥וּ צְחִיחָֽה",
+          "stated": {
+            "chapter": 68,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/68/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 68,
+            "verse": "7"
+          }
+        },
+        {
+          "quote": "ὁμοίως τοὺς παραπικραίνοντας, τοὺς κατοικοῦντας ἐν τάφοις",
+          "stated": {
+            "chapter": 67,
+            "verse": 7
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA067.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 67,
+            "verse": "7"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 68:6",
+          "quote": "but the rebellious dwell in a dry land",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The rebellious dwell in a dry land",
+          "matches": [
+            "Psalms 68:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "in tombs",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "a dry land",
+          "matches": [
+            "Psalms 68:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "who dwell in tombs",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "God setteth the solitary in families: he bringeth out those which are bound with chains: but the rebellious dwell in a dry land.",
+          "matches": [
+            "Psalms 68:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "likewise",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "scope",
+          "quote": "but",
+          "matches": [
+            "Psalms 68:6"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "the-chariots-of-god-are-twenty-thousand-or-ten-thousand-fold-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 68:17",
+          "quote": "The chariots of God are twenty thousand, even thousands of angels: the Lord is among them, as in Sinai, in the holy place.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "רֶ֤כֶב אֱלֹהִ֗ים רִבֹּתַ֣יִם אַלְפֵ֣י שִׁנְאָ֑ן",
+          "stated": {
+            "chapter": 68,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/68/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 68,
+            "verse": "18"
+          }
+        },
+        {
+          "quote": "Τὸ ἅρμα τοῦ Θεοῦ μυριοπλάσιον, χιλιάδες εὐθηνούντων",
+          "stated": {
+            "chapter": 67,
+            "verse": 18
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA067.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 67,
+            "verse": "18"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 68:17",
+          "quote": "The chariots of God are twenty thousand, even thousands of angels",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The chariots of God are twenty thousand",
+          "matches": [
+            "Psalms 68:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the chariot of God is ten-thousand-fold",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "twenty thousand",
+          "matches": [
+            "Psalms 68:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "ten-thousand-fold",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "thousands",
+          "matches": [
+            "Psalms 68:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "angels",
+          "matches": [
+            "Psalms 68:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "The chariots of God are twenty thousand, even thousands of angels: the Lord is among them, as in Sinai, in the holy place.",
+          "matches": [
+            "Psalms 68:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "angels",
+          "matches": [
+            "Psalms 68:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "rejoicing ones",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA067.htm",
+            "printedLabel": "18",
+            "quote": "rejoicing ones",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "ten thousand fold",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA067.htm",
+            "printedLabel": "18",
+            "quote": "ten thousand fold",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "rejoicing ones",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA067.htm",
+            "printedLabel": "18",
+            "quote": "rejoicing ones",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "twenty thousand",
+          "matches": [
+            "Psalms 68:17"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "thou-hast-received-gifts-for-men-or-received-gifts-in-man-greek-and-ephesians",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 68:18",
+          "quote": "thou hast received gifts for men",
+          "exact": true
+        },
+        {
+          "ref": "Ephesians 4:8",
+          "quote": "and gave gifts unto men",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לָקַ֣חְתָּ מַ֭תָּנֹות בָּאָדָ֑ם",
+          "stated": {
+            "chapter": 68,
+            "verse": 19
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/68/",
+              "verse": 19
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 68,
+            "verse": "19"
+          }
+        },
+        {
+          "quote": "ἔλαβες δόματα ἐν ἀνθρώπῳ",
+          "stated": {
+            "chapter": 67,
+            "verse": 19
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA067.htm",
+              "verse": "19"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 67,
+            "verse": "19"
+          }
+        },
+        {
+          "quote": "ἔδωκεν δόματα τοῖς ἀνθρώποις",
+          "stated": {
+            "chapter": 4,
+            "verse": 8
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/49/4/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 4,
+            "verse": "8"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 68:18",
+          "quote": "thou hast received gifts for men",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Ephesians 4:8",
+          "quote": "and gave gifts unto men",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thou hast received gifts for men",
+          "matches": [
+            "Psalms 68:18"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "received gifts in man",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "title",
+          "quote": "gave gifts unto men",
+          "matches": [
+            "Ephesians 4:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "for men",
+          "matches": [
+            "Psalms 68:18"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "in man",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "unto men",
+          "matches": [
+            "Ephesians 4:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "thou hast received gifts for men",
+          "matches": [
+            "Psalms 68:18"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "and gave gifts unto men",
+          "matches": [
+            "Ephesians 4:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "received",
+          "matches": [
+            "Psalms 68:18"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "gave",
+          "matches": [
+            "Ephesians 4:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "for",
+          "matches": [
+            "Psalms 68:18",
+            "Ephesians 4:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "in",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA055.htm",
+            "printedLabel": "9",
+            "quote": "according to thy promise",
+            "exact": true
+          }
+        },
+        {
+          "field": "reasoning",
+          "quote": "men",
+          "matches": [
+            "Psalms 68:18",
+            "Ephesians 4:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "received",
+          "matches": [
+            "Psalms 68:18"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "gave",
+          "matches": [
+            "Ephesians 4:8"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [
+        {
+          "quote": "ἔδωκεν δόματα τοῖς ἀνθρώποις",
+          "url": "https://bolls.life/get-text/TR/49/4/",
+          "printedLabel": "8",
+          "sameWordsIgnoringDiacritics": true,
+          "differenceStated": false
+        }
+      ],
+      "additionalLanguage": []
+    },
+    {
+      "id": "let-their-table-become-a-snare-or-snare-recompence-stumblingblock-greek-and-romans",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 69:22",
+          "quote": "Let their table become a snare before them: and that which should have been for their welfare, let it become a trap.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 69:23",
+          "quote": "Let their eyes be darkened, that they see not; and make their loins continually to shake.",
+          "exact": true
+        },
+        {
+          "ref": "Romans 11:9",
+          "quote": "Let their table be made a snare, and a trap, and a stumblingblock, and a recompence unto them",
+          "exact": true
+        },
+        {
+          "ref": "Romans 11:10",
+          "quote": "bow down their back alway",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יְהִֽי־שֻׁלְחָנָ֣ם לִפְנֵיהֶ֣ם לְפָ֑ח וְלִשְׁלֹומִ֥ים לְמֹוקֵֽשׁ",
+          "stated": {
+            "chapter": 69,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/69/",
+              "verse": 23
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 69,
+            "verse": "23"
+          }
+        },
+        {
+          "quote": "תֶּחְשַׁ֣כְנָה עֵ֭ינֵיהֶם מֵרְאֹ֑ות וּ֝מָתְנֵ֗יהֶם תָּמִ֥יד הַמְעַֽד",
+          "stated": {
+            "chapter": 69,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/69/",
+              "verse": 24
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 69,
+            "verse": "24"
+          }
+        },
+        {
+          "quote": "Γενηθήτω ἡ τράπεζα αὐτῶν ἐνώπιον αὐτῶν εἰς παγίδα, καὶ εἰς ἀνταπόδοσιν, καὶ εἰς σκάνδαλον",
+          "stated": {
+            "chapter": 68,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA068.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 68,
+            "verse": "23"
+          }
+        },
+        {
+          "quote": "τὸν νῶτον αὐτῶν διαπαντὸς σύγκαμψον",
+          "stated": {
+            "chapter": 68,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA068.htm",
+              "verse": "24"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 68,
+            "verse": "24"
+          }
+        },
+        {
+          "quote": "εἰς παγίδα καὶ εἰς θήραν καὶ εἰς σκάνδαλον καὶ εἰς ἀνταπόδομα",
+          "stated": {
+            "chapter": 11,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/11/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "9"
+          }
+        },
+        {
+          "quote": "τὸν νῶτον αὐτῶν διαπαντὸς",
+          "stated": {
+            "chapter": 11,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/11/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "10"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 69:22",
+          "quote": "Let their table become a snare before them",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Romans 11:9",
+          "quote": "a snare, and a trap, and a stumblingblock, and a recompence",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Let their table become a snare",
+          "matches": [
+            "Psalms 69:22"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "a recompence",
+          "matches": [
+            "Romans 11:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "a stumblingblock",
+          "matches": [
+            "Romans 11:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "snare",
+          "matches": [
+            "Psalms 69:22",
+            "Romans 11:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "a trap",
+          "matches": [
+            "Psalms 69:22",
+            "Romans 11:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "a snare … a recompence … a stumbling-block",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "Let their table become a snare before them: and that which should have been for their welfare, let it become a trap.",
+          "matches": [
+            "Psalms 69:22"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Let their eyes be darkened, that they see not; and make their loins continually to shake.",
+          "matches": [
+            "Psalms 69:23"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Let their table be made a snare, and a trap, and a stumblingblock, and a recompence unto them",
+          "matches": [
+            "Romans 11:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "bow down their back alway",
+          "matches": [
+            "Romans 11:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "snare",
+          "matches": [
+            "Psalms 69:22",
+            "Romans 11:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "trap",
+          "matches": [
+            "Psalms 69:22",
+            "Romans 11:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "make their loins continually to shake",
+          "matches": [
+            "Psalms 69:23"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "bow down their back",
+          "matches": [
+            "Romans 11:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "trap",
+          "matches": [
+            "Psalms 69:22",
+            "Romans 11:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "welfare",
+          "matches": [
+            "Psalms 69:22"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [
+        {
+          "quote": "εἰς παγίδα καὶ εἰς θήραν καὶ εἰς σκάνδαλον καὶ εἰς ἀνταπόδομα",
+          "url": "https://bolls.life/get-text/TR/45/11/",
+          "printedLabel": "9",
+          "sameWordsIgnoringDiacritics": true,
+          "differenceStated": false
+        },
+        {
+          "quote": "τὸν νῶτον αὐτῶν διαπαντὸς",
+          "url": "https://bolls.life/get-text/TR/45/11/",
+          "printedLabel": "10",
+          "sameWordsIgnoringDiacritics": true,
+          "differenceStated": false
+        }
+      ],
+      "additionalLanguage": []
+    },
+    {
+      "id": "i-know-not-the-numbers-thereof-or-i-am-not-acquainted-with-affairs-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 71:15",
+          "quote": "My mouth shall shew forth thy righteousness and thy salvation all the day; for I know not the numbers thereof.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּ֤י לֹ֖א יָדַ֣עְתִּי סְפֹרֹֽות",
+          "stated": {
+            "chapter": 71,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/71/",
+              "verse": 15
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 71,
+            "verse": "15"
+          }
+        },
+        {
+          "quote": "ὅτι οὐκ ἔγνων πραγματείας",
+          "stated": {
+            "chapter": 70,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA070.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 70,
+            "verse": "15"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 71:15",
+          "quote": "for I know not the numbers thereof",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "I know not the numbers thereof",
+          "matches": [
+            "Psalms 71:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "I was not acquainted with the affairs of men",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "My mouth shall shew forth thy righteousness and thy salvation all the day; for I know not the numbers thereof.",
+          "matches": [
+            "Psalms 71:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the numbers thereof",
+          "matches": [
+            "Psalms 71:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "affairs of men",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA070.htm",
+            "printedLabel": "15",
+            "quote": "I am not acquainted with the affairs of men",
+            "exact": true
+          }
+        },
+        {
+          "field": "scope",
+          "quote": "I am not acquainted with the affairs of men",
+          "matches": [],
+          "kind": "Brenton English quotation verified at supplied address and printed verse",
+          "source": {
+            "url": "https://ebible.org/eng-Brenton/PSA070.htm",
+            "printedLabel": "15",
+            "quote": "I am not acquainted with the affairs of men",
+            "exact": true
+          }
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "thou-shalt-increase-my-greatness-or-thou-didst-multiply-thy-righteousness-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 71:20",
+          "quote": "shalt bring me up again from the depths of the earth",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 71:21",
+          "quote": "Thou shalt increase my greatness, and comfort me on every side.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "תֶּ֤רֶב ׀ גְּֽדֻלָּתִ֗י וְתִסֹּ֥ב תְּֽנַחֲמֵֽנִי",
+          "stated": {
+            "chapter": 71,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/71/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 71,
+            "verse": "21"
+          }
+        },
+        {
+          "quote": "Ἐπλεόνασας τὴν δικαιοσύνην σου, καὶ ἐπιστρέψας παρεκάλεσάς με, καὶ ἐκ τῶν ἀβύσσων τῆς γῆς πάλιν ἀνήγαγές με",
+          "stated": {
+            "chapter": 70,
+            "verse": 21
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA070.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 70,
+            "verse": "21"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 71:21",
+          "quote": "Thou shalt increase my greatness, and comfort me on every side",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thou shalt increase my greatness",
+          "matches": [
+            "Psalms 71:21"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "thou didst multiply thy righteousness",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "Thou shalt increase my greatness, and comfort me on every side",
+          "matches": [
+            "Psalms 71:21"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "thou didst multiply thy righteousness",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "again out of the depths of the earth",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "shalt bring me up again from the depths of the earth",
+          "matches": [
+            "Psalms 71:20"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "Thou shalt increase my greatness, and comfort me on every side.",
+          "matches": [
+            "Psalms 71:21"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my greatness",
+          "matches": [
+            "Psalms 71:21"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy righteousness",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "they-shall-fear-thee-as-long-as-the-sun-or-he-shall-continue-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 72:5",
+          "quote": "They shall fear thee as long as the sun and moon endure, throughout all generations.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יִֽירָא֥וּךָ עִם־שָׁ֑מֶשׁ וְלִפְנֵ֥י יָ֝רֵ֗חַ דֹּ֣ור דֹּורִֽים",
+          "stated": {
+            "chapter": 72,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/72/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 72,
+            "verse": "5"
+          }
+        },
+        {
+          "quote": "καὶ συμπαραμενεῖ τῷ ἡλίῳ, καὶ πρὸ τῆς σελήνης γενεὰς γενεῶν",
+          "stated": {
+            "chapter": 71,
+            "verse": 5
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA071.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 71,
+            "verse": "5"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 72:5",
+          "quote": "They shall fear thee as long as the sun and moon endure",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They shall fear thee as long as the sun and moon endure",
+          "matches": [
+            "Psalms 72:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "he shall continue as long as the sun",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "he",
+          "matches": [
+            "Psalms 72:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "They shall fear thee as long as the sun and moon endure, throughout all generations.",
+          "matches": [
+            "Psalms 72:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "fear",
+          "matches": [
+            "Psalms 72:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thee",
+          "matches": [
+            "Psalms 72:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "abide with",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thee",
+          "matches": [
+            "Psalms 72:5"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "scope",
+          "quote": "with the sun",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "scope",
+          "quote": "before the moon",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    },
+    {
+      "id": "they-that-dwell-in-the-wilderness-or-the-ethiopians-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 72:9",
+          "quote": "They that dwell in the wilderness shall bow before him; and his enemies shall lick the dust.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לְ֭פָנָיו יִכְרְע֣וּ צִיִּ֑ים וְ֝אֹיְבָ֗יו עָפָ֥ר יְלַחֵֽכוּ",
+          "stated": {
+            "chapter": 72,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/72/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 72,
+            "verse": "9"
+          }
+        },
+        {
+          "quote": "Ἐνώπιον αὐτοῦ προπεσοῦνται Αἰθίοπες, καὶ οἱ ἐχθροὶ αὐτοῦ χοῦν λείξουσι",
+          "stated": {
+            "chapter": 71,
+            "verse": 9
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA071.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 71,
+            "verse": "9"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 72:9",
+          "quote": "They that dwell in the wilderness shall bow before him",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They that dwell in the wilderness shall bow before him",
+          "matches": [
+            "Psalms 72:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the Ethiopians shall fall down before him",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "they that dwell in the wilderness",
+          "matches": [
+            "Psalms 72:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "summary",
+          "quote": "the Ethiopians",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "They that dwell in the wilderness shall bow before him; and his enemies shall lick the dust.",
+          "matches": [
+            "Psalms 72:9"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "Αἰθίοπες",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA071.htm",
+              "verse": "9"
+            }
+          ],
+          "kind": "Repeated word or clause from supplied source; no new research"
+        }
+      ]
+    },
+    {
+      "id": "the-kings-of-sheba-and-seba-or-kings-of-the-arabians-and-saba-greek",
+      "batch": "psalms-42-72",
+      "english": [
+        {
+          "ref": "Psalms 72:10",
+          "quote": "The kings of Tarshish and of the isles shall bring presents: the kings of Sheba and Seba shall offer gifts.",
+          "exact": true
+        },
+        {
+          "ref": "Psalms 72:15",
+          "quote": "to him shall be given of the gold of Sheba",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מַלְכֵ֥י שְׁבָ֥א וּ֝סְבָ֗א אֶשְׁכָּ֥ר יַקְרִֽיבוּ",
+          "stated": {
+            "chapter": 72,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/72/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 72,
+            "verse": "10"
+          }
+        },
+        {
+          "quote": "וְיִתֶּן־לֹו֮ מִזְּהַ֪ב שְׁ֫בָ֥א",
+          "stated": {
+            "chapter": 72,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/72/",
+              "verse": 15
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 72,
+            "verse": "15"
+          }
+        },
+        {
+          "quote": "βασιλεῖς Ἀράβων καὶ Σαβὰ δῶρα προσάξουσι",
+          "stated": {
+            "chapter": 71,
+            "verse": 10
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA071.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 71,
+            "verse": "10"
+          }
+        },
+        {
+          "quote": "ἐκ τοῦ χρυσίου τῆς Ἀραβίας",
+          "stated": {
+            "chapter": 71,
+            "verse": 15
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA071.htm",
+              "verse": "15"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 71,
+            "verse": "15"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 72:10",
+          "quote": "the kings of Sheba and Seba shall offer gifts",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Psalms 72:15",
+          "quote": "to him shall be given of the gold of Sheba",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The kings of Sheba and Seba",
+          "matches": [
+            "Psalms 72:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "the gold of Sheba",
+          "matches": [
+            "Psalms 72:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "title",
+          "quote": "kings of the Arabians and Saba",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "title",
+          "quote": "the gold of Arabia",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "Arabians",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "summary",
+          "quote": "Arabia",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "text",
+          "quote": "The kings of Tarshish and of the isles shall bring presents: the kings of Sheba and Seba shall offer gifts.",
+          "matches": [
+            "Psalms 72:10"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "text",
+          "quote": "to him shall be given of the gold of Sheba",
+          "matches": [
+            "Psalms 72:15"
+          ],
+          "kind": "Verified KJV substring or explicitly ellipsized fragments; case and apostrophe typography normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of Arabians",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Arabia",
+          "matches": [],
+          "kind": "Researcher plain rendering or description of verified Greek/Hebrew wording; not a KJV quotation"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate; existing evidence subjects and all six ENTRIES studies reviewed.",
+      "trComparisons": [],
+      "additionalLanguage": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/19/2/",
+    "https://ebible.org/grcbrent/PSA002.htm",
+    "https://bolls.life/get-text/TISCH/66/2/",
+    "https://bolls.life/get-text/TR/66/2/",
+    "https://bolls.life/get-text/WLC/19/4/",
+    "https://ebible.org/grcbrent/PSA004.htm",
+    "https://bolls.life/get-text/TISCH/49/4/",
+    "https://bolls.life/get-text/TR/49/4/",
+    "https://bolls.life/get-text/WLC/19/7/",
+    "https://ebible.org/grcbrent/PSA007.htm",
+    "https://bolls.life/get-text/WLC/19/8/",
+    "https://ebible.org/grcbrent/PSA008.htm",
+    "https://bolls.life/get-text/TISCH/40/21/",
+    "https://bolls.life/get-text/TR/40/21/",
+    "https://bolls.life/get-text/WLC/19/9/",
+    "https://ebible.org/grcbrent/PSA009.htm",
+    "https://bolls.life/get-text/WLC/19/12/",
+    "https://ebible.org/grcbrent/PSA011.htm",
+    "https://bolls.life/get-text/WLC/19/14/",
+    "https://ebible.org/grcbrent/PSA013.htm",
+    "https://bolls.life/get-text/TISCH/45/3/",
+    "https://bolls.life/get-text/TR/45/3/",
+    "https://bolls.life/get-text/WLC/19/19/",
+    "https://ebible.org/grcbrent/PSA018.htm",
+    "https://bolls.life/get-text/TISCH/45/10/",
+    "https://bolls.life/get-text/TR/45/10/",
+    "https://bolls.life/get-text/WLC/19/22/",
+    "https://ebible.org/grcbrent/PSA021.htm",
+    "https://bolls.life/get-text/TISCH/40/27/",
+    "https://bolls.life/get-text/TR/40/27/",
+    "https://bolls.life/get-text/WLC/19/29/",
+    "https://ebible.org/grcbrent/PSA028.htm",
+    "https://bolls.life/get-text/WLC/19/40/",
+    "https://ebible.org/grcbrent/PSA039.htm",
+    "https://bolls.life/get-text/TISCH/58/10/",
+    "https://bolls.life/get-text/TR/58/10/",
+    "https://bolls.life/get-text/WLC/19/3/",
+    "https://ebible.org/grcbrent/PSA003.htm",
+    "https://bolls.life/get-text/WLC/19/42/",
+    "https://ebible.org/grcbrent/PSA041.htm",
+    "https://bolls.life/get-text/WLC/19/45/",
+    "https://ebible.org/grcbrent/PSA044.htm",
+    "https://bolls.life/get-text/WLC/19/47/",
+    "https://ebible.org/grcbrent/PSA046.htm",
+    "https://bolls.life/get-text/WLC/19/50/",
+    "https://ebible.org/grcbrent/PSA049.htm",
+    "https://bolls.life/get-text/WLC/19/51/",
+    "https://ebible.org/grcbrent/PSA050.htm",
+    "https://bolls.life/get-text/WLC/19/55/",
+    "https://ebible.org/grcbrent/PSA054.htm",
+    "https://bolls.life/get-text/WLC/19/56/",
+    "https://ebible.org/grcbrent/PSA055.htm",
+    "https://bolls.life/get-text/WLC/19/58/",
+    "https://ebible.org/grcbrent/PSA057.htm",
+    "https://bolls.life/get-text/WLC/19/60/",
+    "https://ebible.org/grcbrent/PSA059.htm",
+    "https://bolls.life/get-text/WLC/19/62/",
+    "https://ebible.org/grcbrent/PSA061.htm",
+    "https://bolls.life/get-text/WLC/19/64/",
+    "https://ebible.org/grcbrent/PSA063.htm",
+    "https://bolls.life/get-text/WLC/19/68/",
+    "https://ebible.org/grcbrent/PSA067.htm",
+    "https://bolls.life/get-text/WLC/19/69/",
+    "https://ebible.org/grcbrent/PSA068.htm",
+    "https://bolls.life/get-text/TISCH/45/11/",
+    "https://bolls.life/get-text/TR/45/11/",
+    "https://bolls.life/get-text/WLC/19/71/",
+    "https://ebible.org/grcbrent/PSA070.htm",
+    "https://bolls.life/get-text/WLC/19/72/",
+    "https://ebible.org/grcbrent/PSA071.htm",
+    "https://ebible.org/eng-Brenton/PSA055.htm",
+    "https://ebible.org/eng-Brenton/PSA057.htm",
+    "https://ebible.org/eng-Brenton/PSA063.htm",
+    "https://ebible.org/eng-Brenton/PSA067.htm",
+    "https://ebible.org/eng-Brenton/PSA070.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 575,
+  "studiesChecked": 6,
+  "brentonChecks": [
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA055.htm",
+      "printedLabel": "9",
+      "quote": "according to thy promise",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA057.htm",
+      "printedLabel": "9",
+      "quote": "as melted wax: the fire has fallen",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA063.htm",
+      "printedLabel": "8",
+      "quote": "the weapon of the foolish children",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA067.htm",
+      "printedLabel": "18",
+      "quote": "ten thousand fold",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA067.htm",
+      "printedLabel": "18",
+      "quote": "rejoicing ones",
+      "exact": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA070.htm",
+      "printedLabel": "15",
+      "quote": "I am not acquainted with the affairs of men",
+      "exact": true
+    }
+  ],
+  "searches": {
+    "Selah": [
+      {
+        "ref": "2 Kings 14:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 3:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 3:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 3:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 4:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 4:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 7:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 9:16",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 9:20",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 20:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 21:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 24:6",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 24:10",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 32:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 32:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 32:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 39:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 39:11",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 44:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 46:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 46:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 46:11",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 47:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 48:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 49:13",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 49:15",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 50:6",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 52:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 52:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 54:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 55:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 55:19",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 57:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 57:6",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 59:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 59:13",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 60:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 61:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 62:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 62:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 66:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 66:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 66:15",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 67:1",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 67:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 68:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 68:19",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 68:32",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 75:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 76:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 76:9",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 77:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 77:9",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 77:15",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 81:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 82:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 83:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 84:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 84:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 85:2",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 87:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 87:6",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 88:7",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 88:10",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 89:4",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 89:37",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 89:45",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 89:48",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 140:3",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 140:5",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 140:8",
+        "count": 1
+      },
+      {
+        "ref": "Psalms 143:6",
+        "count": 1
+      },
+      {
+        "ref": "Habakkuk 3:3",
+        "count": 1
+      },
+      {
+        "ref": "Habakkuk 3:9",
+        "count": 1
+      },
+      {
+        "ref": "Habakkuk 3:13",
+        "count": 1
+      }
+    ],
+    "Higgaion": [
+      {
+        "ref": "Psalms 9:16",
+        "count": 1
+      }
+    ],
+    "volume of the book": [
+      {
+        "ref": "Psalms 40:7",
+        "count": 1
+      },
+      {
+        "ref": "Hebrews 10:7",
+        "count": 1
+      }
+    ],
+    "book of the living": [
+      {
+        "ref": "Psalms 69:28",
+        "count": 1
+      }
+    ],
+    "book of life": [
+      {
+        "ref": "Philippians 4:3",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 3:5",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 13:8",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 17:8",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 20:12",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 20:15",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 21:27",
+        "count": 1
+      },
+      {
+        "ref": "Revelation 22:19",
+        "count": 1
+      }
+    ]
+  }
+}
