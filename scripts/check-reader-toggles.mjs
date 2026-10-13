@@ -52,3 +52,8 @@ context.cache.set('0:1:kjv:science',{items:[{id:'fixture-question',verse:3,place
 const pointer=context.render(3);assert(pointer.includes('Context for:'));assert(pointer.includes('>Q</button>'));assert(pointer.includes('Unanswered question'));
 const css=fs.readFileSync('src/style.css','utf8');assert(css.includes('.agreement.question,body.dark .agreement.question'));assert(css.includes('[data-tone="question"]'));
 console.log('PASS: Q tag, accessible label, initially hidden summary, independent on/off, Context pointer and light/dark colors.');
+
+context.cache.set('0:1:kjv:science',{items:[]});
+context.cache.set('0:1:kjv:questions',{items:[{id:'fixture-questions-category',verse:3,status:'Context',tags:['Q'],title:'Fixture unanswered question',summary:'Fixture only',text:'Limits',sources:[],placementRole:'key'},{id:'fixture-questions-category',verse:5,status:'Context',tags:['Q'],title:'Fixture unanswered question',keyTarget:'Genesis 1:3',placementRole:'context'}]});
+const qCard=context.render(3);assert(qCard.includes('Fixture unanswered question'));assert(qCard.includes('comparison-panel-3-questions-0-Q'));assert(qCard.includes('aria-expanded="false"'));assert(context.render(5).includes('Context for:'));assert(source.includes("comparisonModes=['history','contradictions','science','questions']"));
+console.log('PASS: independent Questions category participates in reader loading and Q card/context rendering.');

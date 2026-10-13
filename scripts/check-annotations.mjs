@@ -14,7 +14,7 @@ for(const b of books){
   const chapter=await request(`/api/chapter?book=${b.id}&chapter=${ch}`);chapterRequests++;
   assert.equal(chapter.name,b.name);assert.equal(chapter.chapter,ch);
   const verses=new Set(chapter.verses.map(v=>v.n));
-  for(const mode of ['history','science','contradictions']){
+  for(const mode of ['history','science','contradictions','questions']){
    const result=await request(`/api/comparisons?book=${b.id}&chapter=${ch}&mode=${mode}`);
    const seen=new Set();
    for(const item of result.items){assert(verses.has(item.verse));assert(item.summary&&item.text&&item.sources.length);const key=`${item.id||item.title||item.summary}:${item.verse}`;assert(!seen.has(key),`Duplicate ${key}`);seen.add(key);}

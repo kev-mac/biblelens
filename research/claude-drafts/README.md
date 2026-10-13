@@ -183,12 +183,31 @@ Codex accepted 15 of 24 as written and corrected 9; none held. Reasons are in `r
 - A command line long enough to hold a whole build script fails on this machine (ENAMETOOLONG). Write scripts to files under `%TEMP%\claude\` and run them.
 - Held back, quotes sourced: Greek pluses and differences at 2 Chr 36:8 (Jehoiakim's burial), 2 Chr 21:17, 2 Kings 1:18b–d, 2 Chr 36:2a–5d, 2 Kings 3:19.
 
+## Q — Unanswered question (new category, 2026-10-12)
+
+Approved by the owner through Codex's prompt (`outputs/Claude-Q-Research-Prompt.txt`) and now in Codex's contract (`claude-integration-workflow.md`, Q section). Read that section before proposing any Q.
+
+- **Q** marks a material gap in a passage's explanation: a consequential identity, mechanism, cause or sequence the text leaves unstated. It is not a verdict of contradiction or scientific error.
+- Exclude trivial missing details, questions answered elsewhere, and gaps that exist only if one interpretation is taken as fact. Do not infer Bible-wide silence from an excerpt: state the check actually made and call a word search a word search.
+- Record shape: `mode: "questions"`, `tags: ["Q"]`, `status: "Context"`, a question-shaped title, exact KJV quotations, `sides` on the key verses, hypotheses named as readings and not asserted. Combine Q with another tag only when each qualifies by itself.
+- File names: `{book-or-batch}-q-records.json` and `-q-notes.md`.
+- First batch: `genesis-1-4-q-records.json` (3 records: the first-day light, Cain's feared attackers, Cain's wife). Check it and `data/evidence.json` before proposing a Q on the same verses.
+
+## Owner ruling on Q (2026-10-12)
+
+- **Every book session brings its own Q candidates**, alongside H, G, V and untagged records. Put them in the same session's `{book}-q-records.json` and `-q-notes.md`.
+- **All earlier books are to be reviewed for Q.** Backlog, one session per book, in order: Genesis (chapters 1–4 done in `genesis-1-4-q-records.json`; 5–50 outstanding), Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings. Mark each done here when its file is written. These are Q-only sessions: do not re-open H, G or V for those books.
+- **Unanswered Questions is its own category**, beside Science, History and Contradictions; Q is its visible tag. Q-only records take `mode: "questions"`. This supersedes the earlier instruction (in Codex's prompt and in the Q section of `claude-integration-workflow.md`, until Codex updates it) to file Q under one of the three existing modes. Relayed by the owner from Codex, 2026-10-12.
+- Do not move an established scientific discrepancy or contradiction into `questions` merely because it raises a question. A record that qualifies as both keeps its own mode and may add the Q tag only if Q qualifies by itself.
+- Codex has not yet implemented `mode: "questions"`; Q drafts wait for that. `genesis-1-4-q-records.json` was corrected to the new mode with nothing else changed.
+
 ## Open questions for the owner
 
 - None outstanding from 1 Samuel; both were answered (see above).
 - From 2 Samuel: answered — such records are allowed (see the 2 Samuel lessons).
 - From 1 Kings: answered — see "Owner ruling on records spanning two books" below.
 - From 2 Kings: should a session write `verse-roles.json` (sides) for the published records?
+- From the Q batch: both answered — see "Owner ruling on Q".
 
 ## Owner ruling on records spanning two books (2026-10-12)
 
