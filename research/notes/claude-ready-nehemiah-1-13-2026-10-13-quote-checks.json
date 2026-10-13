@@ -1,0 +1,2594 @@
+{
+  "batch": "nehemiah-1-13",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "tower-of-meah-or-tower-of-the-hundred-hebrew-greek",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 3:1",
+          "quote": "even unto the tower of Meah they sanctified it, unto the tower of Hananeel",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 12:39",
+          "quote": "and the tower of Hananeel, and the tower of Meah, even unto the sheep gate",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְעַד־מִגְדַּ֤ל הַמֵּאָה֙ קִדְּשׁ֔וּהוּ",
+          "stated": {
+            "chapter": 3,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/3/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "וּמִגְדַּ֣ל הַמֵּאָ֔ה",
+          "stated": {
+            "chapter": 12,
+            "verse": 39
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/12/",
+              "verse": 39
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "39"
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י חָרִ֔יף מֵאָ֖ה שְׁנֵ֥ים עָשָֽׂר",
+          "stated": {
+            "chapter": 7,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 24
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "24"
+          }
+        },
+        {
+          "quote": "καὶ ἕως πύργου τῶν ἑκατὸν ἡγίασαν ἕως πύργου Ἀναμεήλ",
+          "stated": {
+            "chapter": 3,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR13.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "Ἐφραὶμ, καὶ ἐπὶ τὴν πύλην ἰχθυρὰν, καὶ πύργῳ Ἁναμεὴλ, καὶ ἕως πύλης τῆς προβατικῆς",
+          "stated": {
+            "chapter": 12,
+            "verse": 39
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR22.htm",
+              "verse": "39"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "39"
+          }
+        },
+        {
+          "quote": "ἑκατὸν δώδεκα",
+          "stated": {
+            "chapter": 7,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "24"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "24"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 3:1",
+          "quote": "the tower of Meah",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 12:39",
+          "quote": "the tower of Meah",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The tower of Meah",
+          "matches": [
+            "Nehemiah 3:1",
+            "Nehemiah 12:39"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "title",
+          "quote": "the tower of the hundred",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the tower of Meah",
+          "matches": [
+            "Nehemiah 3:1",
+            "Nehemiah 12:39"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "the hundred",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the tower of the hundred",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "text",
+          "quote": "even unto the tower of Meah they sanctified it, unto the tower of Hananeel",
+          "matches": [
+            "Nehemiah 3:1"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "and the tower of Hananeel, and the tower of Meah, even unto the sheep gate",
+          "matches": [
+            "Nehemiah 12:39"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Hariph, an hundred and twelve.",
+          "matches": [
+            "Nehemiah 7:24"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "an hundred",
+          "matches": [
+            "Nehemiah 7:24"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Meah",
+          "matches": [
+            "Nehemiah 3:1",
+            "Nehemiah 12:39"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Relevant titles, subjects and all six ENTRIES studies also reviewed."
+    },
+    {
+      "id": "horses-and-mules-of-the-return-not-in-the-hebrew-or-greek-of-nehemiah",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 7:67",
+          "quote": "and they had two hundred forty and five singing men and singing women",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:68",
+          "quote": "Their horses, seven hundred thirty and six: their mules, two hundred forty and five:",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:69",
+          "quote": "Their camels, four hundred thirty and five: six thousand seven hundred and twenty asses.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְלָהֶ֗ם מְשֹֽׁרֲרִים֙ וּמְשֹׁ֣רֲרֹ֔ות מָאתַ֖יִם וְאַרְבָּעִ֥ים וַחֲמִשָּֽׁה",
+          "stated": {
+            "chapter": 7,
+            "verse": 67
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 67
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "67"
+          }
+        },
+        {
+          "quote": "גְּמַלִּ֕ים אַרְבַּ֥ע מֵאֹ֖ות שְׁלֹשִׁ֣ים וַחֲמִשָּׁ֑ה ס חֲמֹרִ֕ים שֵׁ֣שֶׁת אֲלָפִ֔ים שְׁבַ֥ע מֵאֹ֖ות וְעֶשְׂרִֽים",
+          "stated": {
+            "chapter": 7,
+            "verse": 68
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 68
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "68"
+          }
+        },
+        {
+          "quote": "καὶ ᾄδοντες καὶ ᾄδουσαι, διακόσιοι τεσσαρακονταπέντε",
+          "stated": {
+            "chapter": 7,
+            "verse": 68
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "67"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "67"
+          }
+        },
+        {
+          "quote": "Ὄνοι δισχίλιοι ἑπτακόσιοι",
+          "stated": {
+            "chapter": 7,
+            "verse": 68
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "69"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "69"
+          }
+        },
+        {
+          "quote": "סוּסֵיהֶ֕ם שְׁבַ֥ע מֵאֹ֖ות שְׁלֹשִׁ֣ים וְשִׁשָּׁ֑ה פִּרְדֵיהֶ֕ם מָאתַ֖יִם אַרְבָּעִ֥ים וַחֲמִשָּֽׁה",
+          "stated": {
+            "chapter": 2,
+            "verse": 66
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/2/",
+              "verse": 66
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": "66"
+          }
+        },
+        {
+          "quote": "Ἵπποι αὐτῶν, ἑπτακόσιοι τριακονταέξ· ἡμίονοι αὐτῶν, διακόσιοι τεσσαρακονταπέντε·",
+          "stated": {
+            "chapter": 2,
+            "verse": 66
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "66"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": "66"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:68",
+          "quote": "Their horses, seven hundred thirty and six: their mules, two hundred forty and five",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "tagDecision": "H qualifies because the supplied Hebrew edition lacks the substantive animal counts stated here by KJV; not a synonymous or spelling-only difference. G independently qualifies. No manuscript-wide claim.",
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Their horses, seven hundred thirty and six: their mules, two hundred forty and five",
+          "matches": [
+            "Nehemiah 7:68"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "and they had two hundred forty and five singing men and singing women",
+          "matches": [
+            "Nehemiah 7:67"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Their horses, seven hundred thirty and six: their mules, two hundred forty and five:",
+          "matches": [
+            "Nehemiah 7:68"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Their camels, four hundred thirty and five: six thousand seven hundred and twenty asses.",
+          "matches": [
+            "Nehemiah 7:69"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Their horses were seven hundred thirty and six; their mules, two hundred forty and five;",
+          "matches": [
+            "Ezra 2:66"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Relevant titles, subjects and all six ENTRIES studies also reviewed."
+    },
+    {
+      "id": "camels-and-asses-of-the-return-greek-has-no-camels-and-2700-asses",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 7:69",
+          "quote": "Their camels, four hundred thirty and five: six thousand seven hundred and twenty asses.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:67",
+          "quote": "Their camels, four hundred thirty and five; their asses, six thousand seven hundred and twenty.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "גְּמַלִּ֕ים אַרְבַּ֥ע מֵאֹ֖ות שְׁלֹשִׁ֣ים וַחֲמִשָּׁ֑ה ס חֲמֹרִ֕ים שֵׁ֣שֶׁת אֲלָפִ֔ים שְׁבַ֥ע מֵאֹ֖ות וְעֶשְׂרִֽים",
+          "stated": {
+            "chapter": 7,
+            "verse": 68
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 68
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "68"
+          }
+        },
+        {
+          "quote": "Ὄνοι δισχίλιοι ἑπτακόσιοι",
+          "stated": {
+            "chapter": 7,
+            "verse": 69
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "69"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "69"
+          }
+        },
+        {
+          "quote": "Κάμηλοι αὐτῶν, τετρακόσιοι τριακονταπέντε· ὄνοι αὐτῶν, ἑξακισχίλιοι ἑπτακόσιοι εἴκοσι",
+          "stated": {
+            "chapter": 2,
+            "verse": 67
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR02.htm",
+              "verse": "67"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": "67"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:69",
+          "quote": "Their camels, four hundred thirty and five: six thousand seven hundred and twenty asses",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "asses, two thousand seven hundred",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Their camels, four hundred thirty and five: six thousand seven hundred and twenty asses.",
+          "matches": [
+            "Nehemiah 7:69"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Their camels, four hundred thirty and five; their asses, six thousand seven hundred and twenty.",
+          "matches": [
+            "Ezra 2:67"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Relevant titles, subjects and all six ENTRIES studies also reviewed."
+    },
+    {
+      "id": "gifts-to-the-work-in-nehemiah-greek-thirty-garments-and-other-silver",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 7:70",
+          "quote": "And some of the chief of the fathers gave unto the work. The Tirshatha gave to the treasure a thousand drams of gold, fifty basons, five hundred and thirty priests' garments.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:71",
+          "quote": "And some of the chief of the fathers gave to the treasure of the work twenty thousand drams of gold, and two thousand and two hundred pound of silver.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:72",
+          "quote": "And that which the rest of the people gave was twenty thousand drams of gold, and two thousand pound of silver, and threescore and seven priests' garments.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הַתִּרְשָׁ֜תָא נָתַ֣ן לָאֹוצָ֗ר",
+          "stated": {
+            "chapter": 7,
+            "verse": 69
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 69
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "69"
+          }
+        },
+        {
+          "quote": "כָּתְנֹות֙ כֹּֽהֲנִ֔ים שְׁלֹשִׁ֖ים וַחֲמֵ֥שׁ מֵאֹֽות",
+          "stated": {
+            "chapter": 7,
+            "verse": 69
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 69
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "69"
+          }
+        },
+        {
+          "quote": "וְכֶ֕סֶף מָנִ֖ים אַלְפַּ֥יִם וּמָאתָֽיִם",
+          "stated": {
+            "chapter": 7,
+            "verse": 70
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 70
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "70"
+          }
+        },
+        {
+          "quote": "וְכֶ֖סֶף מָנִ֣ים אַלְפָּ֑יִם",
+          "stated": {
+            "chapter": 7,
+            "verse": 71
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 71
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "71"
+          }
+        },
+        {
+          "quote": "Καὶ ἀπὸ μέρους ἀρχηγῶν τῶν πατριῶν ἔδωκαν εἰς τὸ ἐργον τῷ Νεεμίᾳ εἰς θησαυρὸν χρυσοῦς χιλίους, φιάλας πεντήκοντα, καὶ χωθωνὼθ τῶν ἱερέων τριάκοντα",
+          "stated": {
+            "chapter": 7,
+            "verse": 70
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "70"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "70"
+          }
+        },
+        {
+          "quote": "καὶ ἀργυρίου μνᾶς δισχιλίας τριακοσίας",
+          "stated": {
+            "chapter": 7,
+            "verse": 71
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "71"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "71"
+          }
+        },
+        {
+          "quote": "καὶ ἀργυρίου μνᾶς δισχιλίας διακοσίας",
+          "stated": {
+            "chapter": 7,
+            "verse": 72
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "72"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "72"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:70",
+          "quote": "five hundred and thirty priests' garments",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:71",
+          "quote": "two thousand and two hundred pound of silver",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:72",
+          "quote": "two thousand pound of silver",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "gifts-to-the-treasure-61000-drams-or-41000",
+          "title": "Gifts to the treasure of the work: 61,000 drams of gold, or 41,000?",
+          "summary": "At the end of the list of the first return, Ezra says 61,000 drams of gold, 5,000 pound of silver and 100 priests’ garments were given. Nehemiah’s copy of the register names three sets of givers whose gifts come to 41,000 drams of gold, 4,200 pound of silver and 597 priests’ garments, with fifty basons.",
+          "reasoning": "Nehemiah’s three gifts of gold are 1,000, 20,000 and 20,000 drams, which is 41,000; his silver is 2,200 and 2,000 pound, which is 4,200; his garments are 530 and 67, which is 597. Ezra gives one set of figures, 61,000, 5,000 and 100, and credits them to “some of the chief of the fathers”. Whether Ezra’s figures are set beside Nehemiah’s totals or beside his line for the chief of the fathers alone (20,000 drams and 2,200 pound), they differ.",
+          "scope": "No tag is proposed: the KJV figures of Ezra 2:69 are those of the Hebrew quoted, and Brenton’s Greek has the same three numbers. The Greek names the unit of gold as minas where the KJV has drams; that is noted as wording and no G is proposed on it. The conflict assumes that both passages report the same giving; Nehemiah presents his list as the register of those who came up at the first, and both passages stand at the same point of that list, but neither says in so many words that the gifts are the same. Only the KJV is quoted for Nehemiah 7:70–72, where the Hebrew verse numbers run one lower; Brenton’s Greek of Nehemiah was not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "to Nehemiah",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "text",
+          "quote": "And some of the chief of the fathers gave unto the work. The Tirshatha gave to the treasure a thousand drams of gold, fifty basons, five hundred and thirty priests' garments.",
+          "matches": [
+            "Nehemiah 7:70"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And some of the chief of the fathers gave to the treasure of the work twenty thousand drams of gold, and two thousand and two hundred pound of silver.",
+          "matches": [
+            "Nehemiah 7:71"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And that which the rest of the people gave was twenty thousand drams of gold, and two thousand pound of silver, and threescore and seven priests' garments.",
+          "matches": [
+            "Nehemiah 7:72"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "Shared references concern different findings: Gifts to the treasure of the work: 61,000 drams of gold, or 41,000?. This record concerns a distinct edition difference or material question."
+    },
+    {
+      "id": "register-in-nehemiah-five-entries-differ-in-the-greek",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 7:11",
+          "quote": "The children of Pahathmoab, of the children of Jeshua and Joab, two thousand and eight hundred and eighteen.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:24",
+          "quote": "The children of Hariph, an hundred and twelve.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:26",
+          "quote": "The men of Bethlehem and Netophah, an hundred fourscore and eight.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:33",
+          "quote": "The men of the other Nebo, fifty and two.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 7:34",
+          "quote": "The children of the other Elam, a thousand two hundred fifty and four.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:21",
+          "quote": "The children of Bethlehem, an hundred twenty and three.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 2:22",
+          "quote": "The men of Netophah, fifty and six.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּנֵֽי־פַחַ֥ת מֹואָ֛ב לִבְנֵ֥י יֵשׁ֖וּעַ וְיֹואָ֑ב אַלְפַּ֕יִם וּשְׁמֹנֶ֥ה מֵאֹ֖ות שְׁמֹנָ֥ה עָשָֽׂר",
+          "stated": {
+            "chapter": 7,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "11"
+          }
+        },
+        {
+          "quote": "γἱοὶ Φαὰθ Μωὰβ τοῖς υἱοῖς Ἰησοῦ καὶ Ἰωὰβ, δισχίλιοι ἑξακόσιοι δεκαοκτώ",
+          "stated": {
+            "chapter": 7,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "11"
+          }
+        },
+        {
+          "quote": "בְּנֵ֣י חָרִ֔יף מֵאָ֖ה שְׁנֵ֥ים עָשָֽׂר",
+          "stated": {
+            "chapter": 7,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 24
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "24"
+          }
+        },
+        {
+          "quote": "γἱοὶ Ἀρὶφ, ἑκατὸν δώδεκα· υἱοὶ Ἀσὲν, διακόσιοι εἰκοσιτρεῖς",
+          "stated": {
+            "chapter": 7,
+            "verse": 24
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "24"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "24"
+          }
+        },
+        {
+          "quote": "אַנְשֵׁ֤י בֵֽית־לֶ֙חֶם֙ וּנְטֹפָ֔ה מֵאָ֖ה שְׁמֹנִ֥ים וּשְׁמֹנָֽה",
+          "stated": {
+            "chapter": 7,
+            "verse": 26
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 26
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "26"
+          }
+        },
+        {
+          "quote": "γἱοὶ Βαιθαλὲμ, ἑκατὸν εἰκοσιτρεῖς· υἱοὶ Ἀτωφὰ, πεντηκονταέξ",
+          "stated": {
+            "chapter": 7,
+            "verse": 26
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "26"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "26"
+          }
+        },
+        {
+          "quote": "אַנְשֵׁ֥י נְבֹ֛ו אַחֵ֖ר חֲמִשִּׁ֥ים וּשְׁנָֽיִם",
+          "stated": {
+            "chapter": 7,
+            "verse": 33
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 33
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "33"
+          }
+        },
+        {
+          "quote": "Ἄνδρες Ναβία, ἐκατὸν πεντηκονταδύο",
+          "stated": {
+            "chapter": 7,
+            "verse": 33
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "33"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "33"
+          }
+        },
+        {
+          "quote": "בְּנֵי֙ עֵילָ֣ם אַחֵ֔ר אֶ֕לֶף מָאתַ֖יִם חֲמִשִּׁ֥ים וְאַרְבָּעָֽה",
+          "stated": {
+            "chapter": 7,
+            "verse": 34
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/7/",
+              "verse": 34
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "34"
+          }
+        },
+        {
+          "quote": "Ἄνδρες Ἠλαμαὰρ, χίλιοι διακόσιοι πεντηκονταδύο",
+          "stated": {
+            "chapter": 7,
+            "verse": 34
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR17.htm",
+              "verse": "34"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 7,
+            "verse": "34"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:11",
+          "quote": "two thousand and eight hundred and eighteen",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:24",
+          "quote": "The children of Hariph, an hundred and twelve",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:26",
+          "quote": "an hundred fourscore and eight",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:33",
+          "quote": "fifty and two",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 7:34",
+          "quote": "a thousand two hundred fifty and four",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "early-pahath",
+          "title": "Two totals for Pahathmoab",
+          "summary": "Ezra records 2,812 for Pahathmoab's group; Nehemiah records 2,818.",
+          "reasoning": "The matching group name and Jeshua/Joab description make this a parallel entry with a six-person difference.",
+          "scope": "A textual or registration difference is possible; the sources do not identify its cause."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "the children of Asen, 223",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the other Nebo",
+          "matches": [
+            "Nehemiah 7:33"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "the other Elam",
+          "matches": [
+            "Nehemiah 7:34"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Pahathmoab, of the children of Jeshua and Joab, two thousand and eight hundred and eighteen.",
+          "matches": [
+            "Nehemiah 7:11"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Hariph, an hundred and twelve.",
+          "matches": [
+            "Nehemiah 7:24"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The men of Bethlehem and Netophah, an hundred fourscore and eight.",
+          "matches": [
+            "Nehemiah 7:26"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The men of the other Nebo, fifty and two.",
+          "matches": [
+            "Nehemiah 7:33"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The children of the other Elam, a thousand two hundred fifty and four.",
+          "matches": [
+            "Nehemiah 7:34"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The children of Bethlehem, an hundred twenty and three.",
+          "matches": [
+            "Ezra 2:21"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The men of Netophah, fifty and six.",
+          "matches": [
+            "Ezra 2:22"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "Shared references concern different findings: Two totals for Pahathmoab. This record concerns a distinct edition difference or material question."
+    },
+    {
+      "id": "appointed-a-captain-in-their-rebellion-or-in-egypt-greek",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 9:17",
+          "quote": "but hardened their necks, and in their rebellion appointed a captain to return to their bondage",
+          "exact": true
+        },
+        {
+          "ref": "Numbers 14:4",
+          "quote": "And they said one to another, Let us make a captain, and let us return into Egypt.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיַּקְשׁוּ֙ אֶת־עָרְפָּ֔ם וַיִּתְּנוּ־רֹ֛אשׁ לָשׁ֥וּב לְעַבְדֻתָ֖ם בְּמִרְיָ֑ם",
+          "stated": {
+            "chapter": 9,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/9/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 9,
+            "verse": "17"
+          }
+        },
+        {
+          "quote": "καὶ ἐσκλήρυναν τὸν τράχηλον αὐτῶν, καὶ ἔδωκαν ἀρχὴν ἐπιστρέψαι εἰς δουλείαν αὐτῶν ἐν Αἰγύπτῳ",
+          "stated": {
+            "chapter": 9,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR19.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 9,
+            "verse": "17"
+          }
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "In their rebellion appointed a captain to return to their bondage",
+          "matches": [
+            "Nehemiah 9:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "title",
+          "quote": "to their bondage in Egypt",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "title",
+          "quote": "in their rebellion",
+          "matches": [
+            "Nehemiah 9:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "in their rebellion appointed a captain to return to their bondage",
+          "matches": [
+            "Nehemiah 9:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "in their rebellion",
+          "matches": [
+            "Nehemiah 9:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "in Egypt",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "text",
+          "quote": "but hardened their necks, and in their rebellion appointed a captain to return to their bondage",
+          "matches": [
+            "Nehemiah 9:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And they said one to another, Let us make a captain, and let us return into Egypt.",
+          "matches": [
+            "Numbers 14:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "in their rebellion",
+          "matches": [
+            "Nehemiah 9:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Relevant titles, subjects and all six ENTRIES studies also reviewed."
+    },
+    {
+      "id": "ten-times-and-four-times-not-in-the-greek-of-nehemiah",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 4:12",
+          "quote": "And it came to pass, that when the Jews which dwelt by them came, they said unto us ten times, From all places whence ye shall return unto us they will be upon you.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 6:4",
+          "quote": "Yet they sent unto me four times after this sort; and I answered them after the same manner.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיֹּ֤אמְרוּ לָ֙נוּ֙ עֶ֣שֶׂר פְּעָמִ֔ים",
+          "stated": {
+            "chapter": 4,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/4/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 4,
+            "verse": "6"
+          }
+        },
+        {
+          "quote": "καὶ εἴποσαν ἡμῖν, ἀναβαίνουσιν ἐκ πάντων τῶν τόπων ἐφʼ ἡμᾶς",
+          "stated": {
+            "chapter": 4,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR14.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 4,
+            "verse": "6"
+          }
+        },
+        {
+          "quote": "וַיִּשְׁלְח֥וּ אֵלַ֛י כַּדָּבָ֥ר הַזֶּ֖ה אַרְבַּ֣ע פְּעָמִ֑ים",
+          "stated": {
+            "chapter": 6,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/6/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": "4"
+          }
+        },
+        {
+          "quote": "Καὶ ἀπέστειλαν πρὸς μὲ ὡς τὸ ῥῆμα τοῦτο· καὶ ἀπέστειλα αὐτοῖς κατὰ ταῦτα",
+          "stated": {
+            "chapter": 6,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR16.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 6,
+            "verse": "4"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 4:12",
+          "quote": "they said unto us ten times",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 6:4",
+          "quote": "Yet they sent unto me four times after this sort",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They said unto us ten times",
+          "matches": [
+            "Nehemiah 4:12"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "title",
+          "quote": "they sent unto me four times",
+          "matches": [
+            "Nehemiah 6:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "ten times",
+          "matches": [
+            "Nehemiah 4:12"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "four times",
+          "matches": [
+            "Nehemiah 6:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And it came to pass, that when the Jews which dwelt by them came, they said unto us ten times, From all places whence ye shall return unto us they will be upon you.",
+          "matches": [
+            "Nehemiah 4:12"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Yet they sent unto me four times after this sort; and I answered them after the same manner.",
+          "matches": [
+            "Nehemiah 6:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "From all places whence ye shall return unto us they will be upon you",
+          "matches": [
+            "Nehemiah 4:12"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Relevant titles, subjects and all six ENTRIES studies also reviewed."
+    },
+    {
+      "id": "dwellers-in-jerusalem-and-the-villages-nine-verses-not-in-the-greek",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 11:16",
+          "quote": "And Shabbethai and Jozabad, of the chief of the Levites, had the oversight of the outward business of the house of God.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 11:20",
+          "quote": "And the residue of Israel, of the priests, and the Levites, were in all the cities of Judah, every one in his inheritance.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 11:21",
+          "quote": "But the Nethinims dwelt in Ophel: and Ziha and Gispa were over the Nethinims.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 11:28",
+          "quote": "And at Ziklag, and at Mekonah, and in the villages thereof,",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 11:29",
+          "quote": "And at Enrimmon, and at Zareah, and at Jarmuth,",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 11:32",
+          "quote": "And at Anathoth, Nob, Ananiah,",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 11:33",
+          "quote": "Hazor, Ramah, Gittaim,",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 11:34",
+          "quote": "Hadid, Zeboim, Neballat,",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 11:35",
+          "quote": "Lod, and Ono, the valley of craftsmen.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְשַׁבְּתַ֨י וְיֹוזָבָ֜ד עַל־הַמְּלָאכָ֤ה הַחִֽיצֹנָה֙ לְבֵ֣ית הָאֱלֹהִ֔ים מֵרָאשֵׁ֖י הַלְוִיִּֽם",
+          "stated": {
+            "chapter": 11,
+            "verse": 16
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/11/",
+              "verse": 16
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "16"
+          }
+        },
+        {
+          "quote": "וּשְׁאָ֨ר יִשְׂרָאֵ֜ל הַכֹּהֲנִ֤ים הַלְוִיִּם֙ בְּכָל־עָרֵ֣י יְהוּדָ֔ה אִ֖ישׁ בְּנַחֲלָתֹֽו",
+          "stated": {
+            "chapter": 11,
+            "verse": 20
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/11/",
+              "verse": 20
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "20"
+          }
+        },
+        {
+          "quote": "עֲנָתֹ֥ות נֹ֖ב עֲנָֽנְיָֽה",
+          "stated": {
+            "chapter": 11,
+            "verse": 32
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/11/",
+              "verse": 32
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "32"
+          }
+        },
+        {
+          "quote": "חָצֹ֥ור ׀ רָמָ֖ה גִּתָּֽיִם",
+          "stated": {
+            "chapter": 11,
+            "verse": 33
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/11/",
+              "verse": 33
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "33"
+          }
+        },
+        {
+          "quote": "חָדִ֥יד צְבֹעִ֖ים נְבַלָּֽט",
+          "stated": {
+            "chapter": 11,
+            "verse": 34
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/11/",
+              "verse": 34
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "34"
+          }
+        },
+        {
+          "quote": "לֹ֥ד וְאֹונֹ֖ו גֵּ֥י הַחֲרָשִֽׁים",
+          "stated": {
+            "chapter": 11,
+            "verse": 35
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/11/",
+              "verse": 35
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "35"
+          }
+        },
+        {
+          "quote": "καὶ ἐν Βηρσαβεὲ",
+          "stated": {
+            "chapter": 11,
+            "verse": 27
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR21.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "27"
+          }
+        },
+        {
+          "quote": "καὶ ἐπαύλεις αὐτῶν Λαχὶς καὶ ἀγροὶ αὐτῆς· καὶ παρενεβάλοσαν ἐν Βηρσαβεέ",
+          "stated": {
+            "chapter": 11,
+            "verse": 30
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR21.htm",
+              "verse": "30"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "30"
+          }
+        },
+        {
+          "quote": "Καὶ οἱ υἱοὶ Βενιαμὶν ἀπὸ Γαβαὰ Μαχμάς",
+          "stated": {
+            "chapter": 11,
+            "verse": 31
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR21.htm",
+              "verse": "31"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "31"
+          }
+        },
+        {
+          "quote": "Καὶ ἀπὸ τῶν Λευιτῶν μερίδες Ἰούδα τῷ Βενιαμίν",
+          "stated": {
+            "chapter": 11,
+            "verse": 36
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR21.htm",
+              "verse": "36"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 11,
+            "verse": "36"
+          }
+        }
+      ],
+      "sides": [],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "text",
+          "quote": "And Shabbethai and Jozabad, of the chief of the Levites, had the oversight of the outward business of the house of God.",
+          "matches": [
+            "Nehemiah 11:16"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And the residue of Israel, of the priests, and the Levites, were in all the cities of Judah, every one in his inheritance.",
+          "matches": [
+            "Nehemiah 11:20"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "But the Nethinims dwelt in Ophel: and Ziha and Gispa were over the Nethinims.",
+          "matches": [
+            "Nehemiah 11:21"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And at Ziklag, and at Mekonah, and in the villages thereof,",
+          "matches": [
+            "Nehemiah 11:28"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And at Enrimmon, and at Zareah, and at Jarmuth,",
+          "matches": [
+            "Nehemiah 11:29"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And at Anathoth, Nob, Ananiah,",
+          "matches": [
+            "Nehemiah 11:32"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Hazor, Ramah, Gittaim,",
+          "matches": [
+            "Nehemiah 11:33"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Hadid, Zeboim, Neballat,",
+          "matches": [
+            "Nehemiah 11:34"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Lod, and Ono, the valley of craftsmen.",
+          "matches": [
+            "Nehemiah 11:35"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Relevant titles, subjects and all six ENTRIES studies also reviewed."
+    },
+    {
+      "id": "second-company-on-the-wall-and-nehemiah-after-them-not-in-the-greek",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 12:31",
+          "quote": "and appointed two great companies of them that gave thanks, whereof one went on the right hand upon the wall toward the dung gate",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 12:38",
+          "quote": "And the other company of them that gave thanks went over against them, and I after them, and the half of the people upon the wall, from beyond the tower of the furnaces even unto the broad wall;",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 12:40",
+          "quote": "So stood the two companies of them that gave thanks in the house of God, and I, and the half of the rulers with me:",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 12:41",
+          "quote": "And the priests; Eliakim, Maaseiah, Miniamin, Michaiah, Elioenai, Zechariah, and Hananiah, with trumpets;",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְהַתֹּודָ֧ה הַשֵּׁנִ֛ית הַהֹולֶ֥כֶת לְמֹ֖ואל וַאֲנִ֣י אַחֲרֶ֑יהָ",
+          "stated": {
+            "chapter": 12,
+            "verse": 38
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/12/",
+              "verse": 38
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "38"
+          }
+        },
+        {
+          "quote": "וַֽתַּעֲמֹ֛דְנָה שְׁתֵּ֥י הַתֹּודֹ֖ת בְּבֵ֣ית הָאֱלֹהִ֑ים וַאֲנִ֕י וַחֲצִ֥י הַסְּגָנִ֖ים עִמִּֽי",
+          "stated": {
+            "chapter": 12,
+            "verse": 40
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/12/",
+              "verse": 40
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "40"
+          }
+        },
+        {
+          "quote": "τοῦ αἰνεῖν κατέναντι αὐτῶν· καὶ ἀνέβησαν ἐπὶ κλίμακας πόλεως Δαυὶδ ἐν ἀναβάσει τοῦ τείχους ἐπάνωθεν τοῦ οἴκου Δαυὶδ, καὶ ἕως τῆς πύλης τοῦ ὕδατος",
+          "stated": {
+            "chapter": 12,
+            "verse": 37
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR22.htm",
+              "verse": "37"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "37"
+          }
+        },
+        {
+          "quote": "Ἐφραὶμ, καὶ ἐπὶ τὴν πύλην ἰχθυρὰν, καὶ πύργῳ Ἁναμεὴλ, καὶ ἕως πύλης τῆς προβατικῆς",
+          "stated": {
+            "chapter": 12,
+            "verse": 39
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR22.htm",
+              "verse": "39"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "39"
+          }
+        },
+        {
+          "quote": "Καὶ ἠκούσθησαν οἱ ᾄδοντες, καὶ ἐπεσκέπησαν",
+          "stated": {
+            "chapter": 12,
+            "verse": 42
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR22.htm",
+              "verse": "42"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "42"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 12:38",
+          "quote": "And the other company of them that gave thanks went over against them, and I after them",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 12:40",
+          "quote": "So stood the two companies of them that gave thanks in the house of God",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The other company … went over against them, and I after them",
+          "matches": [
+            "Nehemiah 12:38"
+          ],
+          "kind": "KJV fragments separated by explicit ellipsis"
+        },
+        {
+          "field": "text",
+          "quote": "and appointed two great companies of them that gave thanks, whereof one went on the right hand upon the wall toward the dung gate",
+          "matches": [
+            "Nehemiah 12:31"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And the other company of them that gave thanks went over against them, and I after them, and the half of the people upon the wall, from beyond the tower of the furnaces even unto the broad wall;",
+          "matches": [
+            "Nehemiah 12:38"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "So stood the two companies of them that gave thanks in the house of God, and I, and the half of the rulers with me:",
+          "matches": [
+            "Nehemiah 12:40"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And the priests; Eliakim, Maaseiah, Miniamin, Michaiah, Elioenai, Zechariah, and Hananiah, with trumpets;",
+          "matches": [
+            "Nehemiah 12:41"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of Ephraim",
+          "matches": [
+            "Nehemiah 12:39"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Relevant titles, subjects and all six ENTRIES studies also reviewed."
+    },
+    {
+      "id": "booths-not-done-since-jeshua-the-son-of-nun-or-feast-of-tabernacles-kept",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 8:14",
+          "quote": "And they found written in the law which the Lord had commanded by Moses, that the children of Israel should dwell in booths in the feast of the seventh month:",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 8:17",
+          "quote": "And all the congregation of them that were come again out of the captivity made booths, and sat under the booths: for since the days of Jeshua the son of Nun unto that day had not the children of Israel done so. And there was very great gladness.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 3:4",
+          "quote": "They kept also the feast of tabernacles, as it is written",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 23:42",
+          "quote": "Ye shall dwell in booths seven days; all that are Israelites born shall dwell in booths:",
+          "exact": true
+        },
+        {
+          "ref": "2 Chronicles 8:13",
+          "quote": "three times in the year, even in the feast of unleavened bread, and in the feast of weeks, and in the feast of tabernacles",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּ֣י לֹֽא־עָשׂ֡וּ מִימֵי֩ יֵשׁ֨וּעַ בִּן־נ֥וּן כֵּן֙ בְּנֵ֣י יִשְׂרָאֵ֔ל עַ֖ד הַיֹּ֣ום הַה֑וּא",
+          "stated": {
+            "chapter": 8,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/8/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": "17"
+          }
+        },
+        {
+          "quote": "וַֽיַּעֲשׂ֛וּ אֶת־חַ֥ג הַסֻּכֹּ֖ות כַּכָּת֑וּב",
+          "stated": {
+            "chapter": 3,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/3/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "4"
+          }
+        },
+        {
+          "quote": "ὅτι οὐκ ἐποίησαν ἀπὸ ἡμερῶν Ἰησοῦ υἱοῦ Ναυῆ οὕτως οἱ υἱοὶ Ἰσραὴλ ἕως τῆς ἡμέρας ἐκείνης",
+          "stated": {
+            "chapter": 8,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR18.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": "17"
+          }
+        },
+        {
+          "quote": "Καὶ ἐποίησαν τὴν ἑορτὴν τῶν σκηνῶν κατὰ τὸ γεγραμμένον",
+          "stated": {
+            "chapter": 3,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR03.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "4"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 8:17",
+          "quote": "for since the days of Jeshua the son of Nun unto that day had not the children of Israel done so",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Ezra 3:4",
+          "quote": "They kept also the feast of tabernacles, as it is written",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "leviticus-festival-day-boundaries",
+          "title": "Festival lengths and evening boundaries",
+          "summary": "The calendar distinguishes an evening boundary from a daytime date, and seven days in booths from an eighth-day assembly.",
+          "reasoning": "The surrounding instructions explain why the ninth evening and tenth day, or seven festival days and an eighth assembly, need not be competing totals.",
+          "scope": "This reading addresses these particular dates. It does not settle ancient calendar disputes, the meaning of Sabbath in the harvest count, or correspondence with modern dates."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Since the days of Jeshua the son of Nun unto that day had not the children of Israel done so",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "kept also the feast of tabernacles, as it is written",
+          "matches": [
+            "Ezra 3:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And they found written in the law which the Lord had commanded by Moses, that the children of Israel should dwell in booths in the feast of the seventh month:",
+          "matches": [
+            "Nehemiah 8:14"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And all the congregation of them that were come again out of the captivity made booths, and sat under the booths: for since the days of Jeshua the son of Nun unto that day had not the children of Israel done so. And there was very great gladness.",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "They kept also the feast of tabernacles, as it is written",
+          "matches": [
+            "Ezra 3:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Ye shall dwell in booths seven days; all that are Israelites born shall dwell in booths:",
+          "matches": [
+            "Leviticus 23:42"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "three times in the year, even in the feast of unleavened bread, and in the feast of weeks, and in the feast of tabernacles",
+          "matches": [
+            "2 Chronicles 8:13"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "done so",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "as it is written",
+          "matches": [
+            "Ezra 3:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the feast of booths",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "scope",
+          "quote": "done so",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "scope",
+          "quote": "done so",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "Shared references concern different findings: Festival lengths and evening boundaries. This record concerns a distinct edition difference or material question."
+    },
+    {
+      "id": "joiada-begat-jonathan-or-johanan-after-joiada-high-priests",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 12:10",
+          "quote": "And Jeshua begat Joiakim, Joiakim also begat Eliashib, and Eliashib begat Joiada,",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 12:11",
+          "quote": "And Joiada begat Jonathan, and Jonathan begat Jaddua.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 12:22",
+          "quote": "The Levites in the days of Eliashib, Joiada, and Johanan, and Jaddua, were recorded chief of the fathers",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 12:23",
+          "quote": "even until the days of Johanan the son of Eliashib",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 10:6",
+          "quote": "went into the chamber of Johanan the son of Eliashib",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְיֹויָדָע֙ הֹולִ֣יד אֶת־יֹונָתָ֔ן וְיֹונָתָ֖ן הֹולִ֥יד אֶת־יַדּֽוּעַ",
+          "stated": {
+            "chapter": 12,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/12/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "11"
+          }
+        },
+        {
+          "quote": "בִּימֵ֨י אֶלְיָשִׁ֜יב יֹויָדָ֤ע וְיֹוחָנָן֙ וְיַדּ֔וּעַ",
+          "stated": {
+            "chapter": 12,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/12/",
+              "verse": 22
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "22"
+          }
+        },
+        {
+          "quote": "וְעַד־יְמֵ֖י יֹֽוחָנָ֥ן בֶּן־אֶלְיָשִֽׁיב",
+          "stated": {
+            "chapter": 12,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/12/",
+              "verse": 23
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "23"
+          }
+        },
+        {
+          "quote": "καὶ Ἰωδαὲ ἐγέννησε τὸν Ἰωνάθαν, καὶ Ἰωνάθαν ἐγέννησε τὸν Ἰαδού",
+          "stated": {
+            "chapter": 12,
+            "verse": 11
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR22.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "11"
+          }
+        },
+        {
+          "quote": "ἐν ἡμέραις Ἐλιασὶβ, Ἰωαδὰ, καὶ Ἰωὰ, καὶ Ἰωανὰν, καὶ Ἰδούα",
+          "stated": {
+            "chapter": 12,
+            "verse": 22
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR22.htm",
+              "verse": "22"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "22"
+          }
+        },
+        {
+          "quote": "καὶ ἕως ἡμερῶν Ἰωανὰν υἱοῦ Ἐλισουέ",
+          "stated": {
+            "chapter": 12,
+            "verse": 23
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR22.htm",
+              "verse": "23"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 12,
+            "verse": "23"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 12:11",
+          "quote": "And Joiada begat Jonathan, and Jonathan begat Jaddua",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Nehemiah 12:22",
+          "quote": "in the days of Eliashib, Joiada, and Johanan, and Jaddua",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "summary",
+          "quote": "the days of Eliashib, Joiada, and Johanan, and Jaddua",
+          "matches": [
+            "Nehemiah 12:22"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "Johanan the son of Eliashib",
+          "matches": [
+            "Nehemiah 12:23",
+            "Ezra 10:6"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And Jeshua begat Joiakim, Joiakim also begat Eliashib, and Eliashib begat Joiada,",
+          "matches": [
+            "Nehemiah 12:10"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And Joiada begat Jonathan, and Jonathan begat Jaddua.",
+          "matches": [
+            "Nehemiah 12:11"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The Levites in the days of Eliashib, Joiada, and Johanan, and Jaddua, were recorded chief of the fathers",
+          "matches": [
+            "Nehemiah 12:22"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "even until the days of Johanan the son of Eliashib",
+          "matches": [
+            "Nehemiah 12:23"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "went into the chamber of Johanan the son of Eliashib",
+          "matches": [
+            "Ezra 10:6"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the son of Eliashib",
+          "matches": [
+            "Nehemiah 12:23",
+            "Ezra 10:6"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "scope",
+          "quote": "Son of Eliashib",
+          "matches": [
+            "Nehemiah 12:23",
+            "Ezra 10:6"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Relevant titles, subjects and all six ENTRIES studies also reviewed."
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/16/3/",
+    "https://bolls.life/get-text/WLC/16/12/",
+    "https://bolls.life/get-text/WLC/16/7/",
+    "https://ebible.org/grcbrent/EZR13.htm",
+    "https://ebible.org/grcbrent/EZR22.htm",
+    "https://ebible.org/grcbrent/EZR17.htm",
+    "https://bolls.life/get-text/WLC/15/2/",
+    "https://ebible.org/grcbrent/EZR02.htm",
+    "https://bolls.life/get-text/WLC/16/9/",
+    "https://ebible.org/grcbrent/EZR19.htm",
+    "https://bolls.life/get-text/WLC/16/4/",
+    "https://bolls.life/get-text/WLC/16/6/",
+    "https://ebible.org/grcbrent/EZR14.htm",
+    "https://ebible.org/grcbrent/EZR16.htm",
+    "https://bolls.life/get-text/WLC/16/11/",
+    "https://ebible.org/grcbrent/EZR21.htm",
+    "https://bolls.life/get-text/WLC/16/8/",
+    "https://bolls.life/get-text/WLC/15/3/",
+    "https://ebible.org/grcbrent/EZR18.htm",
+    "https://ebible.org/grcbrent/EZR03.htm",
+    "https://bolls.life/get-text/WLC/16/1/",
+    "https://bolls.life/get-text/WLC/16/2/",
+    "https://ebible.org/grcbrent/EZR11.htm",
+    "https://ebible.org/grcbrent/EZR12.htm",
+    "https://bolls.life/get-text/WLC/16/10/",
+    "https://bolls.life/get-text/WLC/16/13/",
+    "https://ebible.org/grcbrent/EZR20.htm",
+    "https://bolls.life/get-text/WLC/17/9/",
+    "https://ebible.org/grcbrent/ESG09.htm",
+    "https://bolls.life/get-text/WLC/17/1/",
+    "https://ebible.org/grcbrent/ESG01.htm",
+    "https://bolls.life/get-text/WLC/17/2/",
+    "https://ebible.org/grcbrent/ESG02.htm",
+    "https://bolls.life/get-text/WLC/17/8/",
+    "https://ebible.org/grcbrent/ESG08.htm",
+    "https://ebible.org/grcbrent/ESG03.htm",
+    "https://bolls.life/get-text/WLC/17/3/",
+    "https://bolls.life/get-text/WLC/17/6/",
+    "https://bolls.life/get-text/WLC/17/4/",
+    "https://ebible.org/grcbrent/ESG06.htm",
+    "https://ebible.org/grcbrent/ESG04.htm",
+    "https://ebible.org/grcbrent/ESG10.htm",
+    "https://ebible.org/grcbrent/EZR04.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 517,
+  "studiesChecked": 6,
+  "omissions": [
+    {
+      "url": "https://ebible.org/grcbrent/EZR17.htm",
+      "absent": [
+        "68"
+      ],
+      "count": 72,
+      "printedLabels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ]
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR21.htm",
+      "absent": [
+        "16",
+        "20",
+        "21",
+        "28",
+        "29",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "count": 27,
+      "printedLabels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "17",
+        "18",
+        "19",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "30",
+        "31",
+        "36"
+      ]
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR22.htm",
+      "absent": [
+        "4",
+        "5",
+        "6",
+        "38",
+        "40",
+        "41"
+      ],
+      "count": 41,
+      "printedLabels": [
+        "1",
+        "2",
+        "3",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "39",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47"
+      ]
+    }
+  ],
+  "searches": {
+    "Chisleu": [
+      "Nehemiah 1:1",
+      "Zechariah 7:1"
+    ],
+    "Nisan": [
+      "Nehemiah 2:1",
+      "Esther 3:7"
+    ],
+    "wood offering": [
+      "Nehemiah 10:34",
+      "Nehemiah 13:31"
+    ],
+    "Jeconiah": [
+      "1 Chronicles 3:16",
+      "1 Chronicles 3:17",
+      "Esther 2:6",
+      "Jeremiah 24:1",
+      "Jeremiah 27:20",
+      "Jeremiah 28:4",
+      "Jeremiah 29:2"
+    ],
+    "EstherGodLord": []
+  }
+}

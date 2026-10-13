@@ -1,0 +1,956 @@
+{
+  "batch": "nehemiah-1-13-q",
+  "checked": "2026-10-13",
+  "checks": [
+    {
+      "id": "chisleu-and-nisan-both-in-the-twentieth-year-how-is-the-year-counted",
+      "batch": "nehemiah-1-13-q",
+      "english": [
+        {
+          "ref": "Nehemiah 1:1",
+          "quote": "The words of Nehemiah the son of Hachaliah. And it came to pass in the month Chisleu, in the twentieth year, as I was in Shushan the palace,",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 2:1",
+          "quote": "And it came to pass in the month Nisan, in the twentieth year of Artaxerxes the king, that wine was before him",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 7:1",
+          "quote": "in the fourth day of the ninth month, even in Chisleu",
+          "exact": true
+        },
+        {
+          "ref": "Esther 3:7",
+          "quote": "In the first month, that is, the month Nisan, in the twelfth year of king Ahasuerus",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 5:14",
+          "quote": "from the twentieth year even unto the two and thirtieth year of Artaxerxes the king, that is, twelve years",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיְהִ֤י בְחֹֽדֶשׁ־",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/1/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "כִּסְלֵו כ",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/1/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "כִּסְלֵיו֙ ק",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/1/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "שְׁנַ֣ת עֶשְׂרִ֔ים",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/1/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "וַיְהִ֣י ׀ בְּחֹ֣דֶשׁ נִיסָ֗ן שְׁנַ֥ת עֶשְׂרִ֛ים לְאַרְתַּחְשַׁ֥סְתְּא הַמֶּ֖לֶךְ",
+          "stated": {
+            "chapter": 2,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/2/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "Καὶ ἐγένετο ἐν μηνὶ Χασελεῦ ἔτους εἰκοστοῦ",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR11.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "1"
+          }
+        },
+        {
+          "quote": "Καὶ ἐγένετο ἐν μηνὶ Νισὰν ἔτους εἰκοστοῦ Ἀρθασασθὰ βασιλεῖ",
+          "stated": {
+            "chapter": 2,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR12.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 2,
+            "verse": "1"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 1:1",
+          "quote": "in the month Chisleu, in the twentieth year",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 2:1",
+          "quote": "in the month Nisan, in the twentieth year of Artaxerxes the king",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "ahasuerus-and-artaxerxes-between-cyrus-and-darius-which-kings-are-meant",
+          "title": "Ahasuerus and Artaxerxes between Cyrus and Darius — which kings are meant, and is the order of telling the order of events?",
+          "summary": "Ezra 4 tells of opposition from the days of Cyrus “until the reign of Darius”, then of an accusation under Ahasuerus and letters under Artaxerxes about the city and its walls, and then says the work on the house stopped until the second year of Darius. The verses do not say who these two kings are or whether their reigns fall before Darius.",
+          "reasoning": "The answer changes what the chapter reports. If the two kings reigned between Cyrus and Darius, the letters may be read as preceding and contributing to the stoppage of 4:24; sequence alone does not establish that causal link. If they are later kings, the chapter gathers opposition from several reigns and 4:24 takes up again from 4:5; the letters then concern a later building of the city, which is what they speak of: in the KJV of Ezra 4:8–23 the words “house” and “temple” do not occur, and the letters speak of the city and its walls. The book also names an Artaxerxes after Darius among those by whose commandment the house was finished, though it dates the finishing to Darius’s sixth year.",
+          "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that Ahasuerus and Artaxerxes here are names of kings who reigned between Cyrus and Darius; that they are the kings who bear those names in Esther and in Ezra 7 and Nehemiah, the passage being out of the order of time; that 4:24 resumes 4:5 after a digression. What the verses do state is the order of telling, the names, that the letters speak of the city and its walls, and that the work of the house ceased until the second year of Darius. Check made: the thirteen verses quoted were read in the KJV, and 4:6 and 4:7 in the Hebrew and in Brenton’s Greek. A whole-word search of the packaged KJV finds “Ahasuerus” at Ezra 4:6, in Esther and at Daniel 9:1, and “Artaxerxes” at Ezra 4:7; Ezra 4:8; Ezra 4:11; Ezra 4:23; Ezra 6:14; Ezra 7:1; Ezra 7:7; Ezra 7:11; Ezra 7:12; Ezra 7:21; Ezra 8:1; Nehemiah 2:1; Nehemiah 5:14; Nehemiah 13:6. That is a word search, not a reading of those books. These checked verses do not explicitly settle which kings are meant or where their reigns fall. No date from outside the Bible is used. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "in the twentieth year",
+          "matches": [
+            "Nehemiah 1:1",
+            "Nehemiah 2:1"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "title",
+          "quote": "in the twentieth year of Artaxerxes",
+          "matches": [
+            "Nehemiah 2:1"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "in the twentieth year",
+          "matches": [
+            "Nehemiah 1:1",
+            "Nehemiah 2:1"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "in the twentieth year of Artaxerxes",
+          "matches": [
+            "Nehemiah 2:1"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "The words of Nehemiah the son of Hachaliah. And it came to pass in the month Chisleu, in the twentieth year, as I was in Shushan the palace,",
+          "matches": [
+            "Nehemiah 1:1"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And it came to pass in the month Nisan, in the twentieth year of Artaxerxes the king, that wine was before him",
+          "matches": [
+            "Nehemiah 2:1"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "in the fourth day of the ninth month, even in Chisleu",
+          "matches": [
+            "Zechariah 7:1"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "In the first month, that is, the month Nisan, in the twelfth year of king Ahasuerus",
+          "matches": [
+            "Esther 3:7"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "from the twentieth year even unto the two and thirtieth year of Artaxerxes the king, that is, twelve years",
+          "matches": [
+            "Nehemiah 5:14"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "scope",
+          "quote": "the twentieth year",
+          "matches": [
+            "Nehemiah 1:1",
+            "Nehemiah 2:1",
+            "Nehemiah 5:14"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "scope",
+          "quote": "twentieth",
+          "matches": [
+            "Nehemiah 1:1",
+            "Nehemiah 2:1",
+            "Nehemiah 5:14"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "Shared references concern different findings: Ahasuerus and Artaxerxes between Cyrus and Darius — which kings are meant, and is the order of telling the order of events?. This record concerns a distinct edition difference or material question."
+    },
+    {
+      "id": "wall-broken-down-and-gates-burned-which-event-is-reported-to-nehemiah",
+      "batch": "nehemiah-1-13-q",
+      "english": [
+        {
+          "ref": "Nehemiah 1:2",
+          "quote": "and I asked them concerning the Jews that had escaped, which were left of the captivity, and concerning Jerusalem",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 1:3",
+          "quote": "And they said unto me, The remnant that are left of the captivity there in the province are in great affliction and reproach: the wall of Jerusalem also is broken down, and the gates thereof are burned with fire.",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 1:4",
+          "quote": "when I heard these words, that I sat down and wept, and mourned certain days",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 2:3",
+          "quote": "when the city, the place of my fathers' sepulchres, lieth waste, and the gates thereof are consumed with fire",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 2:13",
+          "quote": "and viewed the walls of Jerusalem, which were broken down, and the gates thereof were consumed with fire",
+          "exact": true
+        },
+        {
+          "ref": "2 Kings 25:10",
+          "quote": "And all the army of the Chaldees, that were with the captain of the guard, brake down the walls of Jerusalem round about.",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 4:12",
+          "quote": "building the rebellious and the bad city, and have set up the walls thereof, and joined the foundations",
+          "exact": true
+        },
+        {
+          "ref": "Ezra 4:23",
+          "quote": "they went up in haste to Jerusalem unto the Jews, and made them to cease by force and power",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְחֹומַ֤ת יְרוּשָׁלִַ֙ם֙ מְפֹרָ֔צֶת וּשְׁעָרֶ֖יהָ נִצְּת֥וּ בָאֵֽשׁ",
+          "stated": {
+            "chapter": 1,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/1/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "3"
+          }
+        },
+        {
+          "quote": "καὶ τείχη Ἱερουσαλὴμ καθῃρημένα, καὶ αἱ πύλαι αὐτῆς ἐνεπρήσθησαν ἐν πυρί",
+          "stated": {
+            "chapter": 1,
+            "verse": 3
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR11.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "3"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 1:3",
+          "quote": "the wall of Jerusalem also is broken down, and the gates thereof are burned with fire",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "ahasuerus-and-artaxerxes-between-cyrus-and-darius-which-kings-are-meant",
+          "title": "Ahasuerus and Artaxerxes between Cyrus and Darius — which kings are meant, and is the order of telling the order of events?",
+          "summary": "Ezra 4 tells of opposition from the days of Cyrus “until the reign of Darius”, then of an accusation under Ahasuerus and letters under Artaxerxes about the city and its walls, and then says the work on the house stopped until the second year of Darius. The verses do not say who these two kings are or whether their reigns fall before Darius.",
+          "reasoning": "The answer changes what the chapter reports. If the two kings reigned between Cyrus and Darius, the letters may be read as preceding and contributing to the stoppage of 4:24; sequence alone does not establish that causal link. If they are later kings, the chapter gathers opposition from several reigns and 4:24 takes up again from 4:5; the letters then concern a later building of the city, which is what they speak of: in the KJV of Ezra 4:8–23 the words “house” and “temple” do not occur, and the letters speak of the city and its walls. The book also names an Artaxerxes after Darius among those by whose commandment the house was finished, though it dates the finishing to Darius’s sixth year.",
+          "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. Readings that have been proposed, none of which the quoted verses state: that Ahasuerus and Artaxerxes here are names of kings who reigned between Cyrus and Darius; that they are the kings who bear those names in Esther and in Ezra 7 and Nehemiah, the passage being out of the order of time; that 4:24 resumes 4:5 after a digression. What the verses do state is the order of telling, the names, that the letters speak of the city and its walls, and that the work of the house ceased until the second year of Darius. Check made: the thirteen verses quoted were read in the KJV, and 4:6 and 4:7 in the Hebrew and in Brenton’s Greek. A whole-word search of the packaged KJV finds “Ahasuerus” at Ezra 4:6, in Esther and at Daniel 9:1, and “Artaxerxes” at Ezra 4:7; Ezra 4:8; Ezra 4:11; Ezra 4:23; Ezra 6:14; Ezra 7:1; Ezra 7:7; Ezra 7:11; Ezra 7:12; Ezra 7:21; Ezra 8:1; Nehemiah 2:1; Nehemiah 5:14; Nehemiah 13:6. That is a word search, not a reading of those books. These checked verses do not explicitly settle which kings are meant or where their reigns fall. No date from outside the Bible is used. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The wall of Jerusalem also is broken down, and the gates thereof are burned with fire",
+          "matches": [
+            "Nehemiah 1:3"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "and I asked them concerning the Jews that had escaped, which were left of the captivity, and concerning Jerusalem",
+          "matches": [
+            "Nehemiah 1:2"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And they said unto me, The remnant that are left of the captivity there in the province are in great affliction and reproach: the wall of Jerusalem also is broken down, and the gates thereof are burned with fire.",
+          "matches": [
+            "Nehemiah 1:3"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "when I heard these words, that I sat down and wept, and mourned certain days",
+          "matches": [
+            "Nehemiah 1:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "when the city, the place of my fathers' sepulchres, lieth waste, and the gates thereof are consumed with fire",
+          "matches": [
+            "Nehemiah 2:3"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "and viewed the walls of Jerusalem, which were broken down, and the gates thereof were consumed with fire",
+          "matches": [
+            "Nehemiah 2:13"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And all the army of the Chaldees, that were with the captain of the guard, brake down the walls of Jerusalem round about.",
+          "matches": [
+            "2 Kings 25:10"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "building the rebellious and the bad city, and have set up the walls thereof, and joined the foundations",
+          "matches": [
+            "Ezra 4:12"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "they went up in haste to Jerusalem unto the Jews, and made them to cease by force and power",
+          "matches": [
+            "Ezra 4:23"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "have set up the walls",
+          "matches": [
+            "Ezra 4:12"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "by force and power",
+          "matches": [
+            "Ezra 4:23"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "scope",
+          "quote": "walls",
+          "matches": [
+            "Nehemiah 2:13",
+            "2 Kings 25:10",
+            "Ezra 4:12"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "Shared references concern different findings: Ahasuerus and Artaxerxes between Cyrus and Darius — which kings are meant, and is the order of telling the order of events?. This record concerns a distinct edition difference or material question."
+    },
+    {
+      "id": "wood-offering-as-it-is-written-in-the-law-where-is-it-written",
+      "batch": "nehemiah-1-13-q",
+      "english": [
+        {
+          "ref": "Nehemiah 10:34",
+          "quote": "And we cast the lots among the priests, the Levites, and the people, for the wood offering, to bring it into the house of our God, after the houses of our fathers, at times appointed year by year, to burn upon the altar of the Lord our God, as it is written in the law:",
+          "exact": true
+        },
+        {
+          "ref": "Nehemiah 13:31",
+          "quote": "And for the wood offering, at times appointed, and for the firstfruits",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 6:12",
+          "quote": "And the fire upon the altar shall be burning in it; it shall not be put out: and the priest shall burn wood on it every morning",
+          "exact": true
+        },
+        {
+          "ref": "Leviticus 1:7",
+          "quote": "And the sons of Aaron the priest shall put fire upon the altar, and lay the wood in order upon the fire:",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְהַגֹּורָלֹ֨ות הִפַּ֜לְנוּ עַל־קֻרְבַּ֣ן הָעֵצִ֗ים",
+          "stated": {
+            "chapter": 10,
+            "verse": 35
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/10/",
+              "verse": 35
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": "35"
+          }
+        },
+        {
+          "quote": "לְבַעֵ֗ר עַל־מִזְבַּח֙ יְהוָ֣ה אֱלֹהֵ֔ינוּ כַּכָּת֖וּב בַּתֹּורָֽה",
+          "stated": {
+            "chapter": 10,
+            "verse": 35
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/10/",
+              "verse": 35
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": "35"
+          }
+        },
+        {
+          "quote": "וּלְקֻרְבַּ֧ן הָעֵצִ֛ים בְּעִתִּ֥ים מְזֻמָּנֹ֖ות",
+          "stated": {
+            "chapter": 13,
+            "verse": 31
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/13/",
+              "verse": 31
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 13,
+            "verse": "31"
+          }
+        },
+        {
+          "quote": "ἐκκαῦσαι ἑπὶ τὸ θυσιαστήριον Κυρίου Θεοῦ ἡμῶν, ὡς γέγραπται ἐν τῷ νόμῳ",
+          "stated": {
+            "chapter": 10,
+            "verse": 35
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR20.htm",
+              "verse": "35"
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 10,
+            "verse": "35"
+          }
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 10:34",
+          "quote": "for the wood offering",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Nehemiah 10:34",
+          "quote": "as it is written in the law",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The wood offering … as it is written in the law",
+          "matches": [
+            "Nehemiah 10:34"
+          ],
+          "kind": "KJV fragments separated by explicit ellipsis"
+        },
+        {
+          "field": "summary",
+          "quote": "the wood offering",
+          "matches": [
+            "Nehemiah 10:34",
+            "Nehemiah 13:31"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "to burn upon the altar of the Lord our God, as it is written in the law",
+          "matches": [
+            "Nehemiah 10:34"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And we cast the lots among the priests, the Levites, and the people, for the wood offering, to bring it into the house of our God, after the houses of our fathers, at times appointed year by year, to burn upon the altar of the Lord our God, as it is written in the law:",
+          "matches": [
+            "Nehemiah 10:34"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And for the wood offering, at times appointed, and for the firstfruits",
+          "matches": [
+            "Nehemiah 13:31"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And the fire upon the altar shall be burning in it; it shall not be put out: and the priest shall burn wood on it every morning",
+          "matches": [
+            "Leviticus 6:12"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And the sons of Aaron the priest shall put fire upon the altar, and lay the wood in order upon the fire:",
+          "matches": [
+            "Leviticus 1:7"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "as it is written in the law",
+          "matches": [
+            "Nehemiah 10:34"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the law",
+          "matches": [
+            "Nehemiah 10:34"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "scope",
+          "quote": "as it is written",
+          "matches": [
+            "Nehemiah 10:34"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "scope",
+          "quote": "wood offering",
+          "matches": [
+            "Nehemiah 10:34",
+            "Nehemiah 13:31"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "No shared-reference duplicate. Relevant titles, subjects and all six ENTRIES studies also reviewed."
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/16/3/",
+    "https://bolls.life/get-text/WLC/16/12/",
+    "https://bolls.life/get-text/WLC/16/7/",
+    "https://ebible.org/grcbrent/EZR13.htm",
+    "https://ebible.org/grcbrent/EZR22.htm",
+    "https://ebible.org/grcbrent/EZR17.htm",
+    "https://bolls.life/get-text/WLC/15/2/",
+    "https://ebible.org/grcbrent/EZR02.htm",
+    "https://bolls.life/get-text/WLC/16/9/",
+    "https://ebible.org/grcbrent/EZR19.htm",
+    "https://bolls.life/get-text/WLC/16/4/",
+    "https://bolls.life/get-text/WLC/16/6/",
+    "https://ebible.org/grcbrent/EZR14.htm",
+    "https://ebible.org/grcbrent/EZR16.htm",
+    "https://bolls.life/get-text/WLC/16/11/",
+    "https://ebible.org/grcbrent/EZR21.htm",
+    "https://bolls.life/get-text/WLC/16/8/",
+    "https://bolls.life/get-text/WLC/15/3/",
+    "https://ebible.org/grcbrent/EZR18.htm",
+    "https://ebible.org/grcbrent/EZR03.htm",
+    "https://bolls.life/get-text/WLC/16/1/",
+    "https://bolls.life/get-text/WLC/16/2/",
+    "https://ebible.org/grcbrent/EZR11.htm",
+    "https://ebible.org/grcbrent/EZR12.htm",
+    "https://bolls.life/get-text/WLC/16/10/",
+    "https://bolls.life/get-text/WLC/16/13/",
+    "https://ebible.org/grcbrent/EZR20.htm",
+    "https://bolls.life/get-text/WLC/17/9/",
+    "https://ebible.org/grcbrent/ESG09.htm",
+    "https://bolls.life/get-text/WLC/17/1/",
+    "https://ebible.org/grcbrent/ESG01.htm",
+    "https://bolls.life/get-text/WLC/17/2/",
+    "https://ebible.org/grcbrent/ESG02.htm",
+    "https://bolls.life/get-text/WLC/17/8/",
+    "https://ebible.org/grcbrent/ESG08.htm",
+    "https://ebible.org/grcbrent/ESG03.htm",
+    "https://bolls.life/get-text/WLC/17/3/",
+    "https://bolls.life/get-text/WLC/17/6/",
+    "https://bolls.life/get-text/WLC/17/4/",
+    "https://ebible.org/grcbrent/ESG06.htm",
+    "https://ebible.org/grcbrent/ESG04.htm",
+    "https://ebible.org/grcbrent/ESG10.htm",
+    "https://ebible.org/grcbrent/EZR04.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 517,
+  "studiesChecked": 6,
+  "omissions": [
+    {
+      "url": "https://ebible.org/grcbrent/EZR17.htm",
+      "absent": [
+        "68"
+      ],
+      "count": 72,
+      "printedLabels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73"
+      ]
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR21.htm",
+      "absent": [
+        "16",
+        "20",
+        "21",
+        "28",
+        "29",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "count": 27,
+      "printedLabels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "17",
+        "18",
+        "19",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "30",
+        "31",
+        "36"
+      ]
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR22.htm",
+      "absent": [
+        "4",
+        "5",
+        "6",
+        "38",
+        "40",
+        "41"
+      ],
+      "count": 41,
+      "printedLabels": [
+        "1",
+        "2",
+        "3",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "39",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47"
+      ]
+    }
+  ],
+  "searches": {
+    "Chisleu": [
+      "Nehemiah 1:1",
+      "Zechariah 7:1"
+    ],
+    "Nisan": [
+      "Nehemiah 2:1",
+      "Esther 3:7"
+    ],
+    "wood offering": [
+      "Nehemiah 10:34",
+      "Nehemiah 13:31"
+    ],
+    "Jeconiah": [
+      "1 Chronicles 3:16",
+      "1 Chronicles 3:17",
+      "Esther 2:6",
+      "Jeremiah 24:1",
+      "Jeremiah 27:20",
+      "Jeremiah 28:4",
+      "Jeremiah 29:2"
+    ],
+    "EstherGodLord": []
+  }
+}

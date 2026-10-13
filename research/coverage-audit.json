@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 517,
+    "evidenceRecords": 544,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 426,
-    "annotatedVerses": 2850
+    "chaptersWithAnnotations": 441,
+    "annotatedVerses": 2899
   },
   "byBook": [
     {
@@ -105,14 +105,14 @@
     {
       "book": "Nehemiah",
       "chapters": 13,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 11
+      "chaptersWithAnnotations": 10,
+      "annotatedVerses": 40
     },
     {
       "book": "Esther",
       "chapters": 10,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 3
+      "chaptersWithAnnotations": 7,
+      "annotatedVerses": 23
     },
     {
       "book": "Job",
@@ -8872,36 +8872,62 @@
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "chisleu-and-nisan-both-in-the-twentieth-year-how-is-the-year-counted",
+        "wall-broken-down-and-gates-burned-which-event-is-reported-to-nehemiah"
+      ],
+      "annotatedVerses": [
+        1,
+        3
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "chisleu-and-nisan-both-in-the-twentieth-year-how-is-the-year-counted"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "tower-of-meah-or-tower-of-the-hundred-hebrew-greek"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ten-times-and-four-times-not-in-the-greek-of-nehemiah"
+      ],
+      "annotatedVerses": [
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8917,9 +8943,15 @@
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ten-times-and-four-times-not-in-the-greek-of-nehemiah"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8931,7 +8963,11 @@
         "early-pahath",
         "returned-families-five-more-counts-ezra-or-nehemiah",
         "whole-congregation-42360-or-the-sum-of-the-counts-given",
-        "gifts-to-the-treasure-61000-drams-or-41000"
+        "gifts-to-the-treasure-61000-drams-or-41000",
+        "horses-and-mules-of-the-return-not-in-the-hebrew-or-greek-of-nehemiah",
+        "camels-and-asses-of-the-return-greek-has-no-camels-and-2700-asses",
+        "gifts-to-the-work-in-nehemiah-greek-thirty-garments-and-other-silver",
+        "register-in-nehemiah-five-entries-differ-in-the-greek"
       ],
       "annotatedVerses": [
         10,
@@ -8939,9 +8975,15 @@
         13,
         17,
         20,
+        24,
+        26,
+        33,
+        34,
         38,
         44,
         66,
+        68,
+        69,
         70,
         71,
         72
@@ -8964,36 +9006,75 @@
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "appointed-a-captain-in-their-rebellion-or-in-egypt-greek"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "wood-offering-as-it-is-written-in-the-law-where-is-it-written"
+      ],
+      "annotatedVerses": [
+        34
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "dwellers-in-jerusalem-and-the-villages-nine-verses-not-in-the-greek"
+      ],
+      "annotatedVerses": [
+        16,
+        20,
+        21,
+        28,
+        29,
+        32,
+        33,
+        34,
+        35
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "tower-of-meah-or-tower-of-the-hundred-hebrew-greek",
+        "second-company-on-the-wall-and-nehemiah-after-them-not-in-the-greek",
+        "joiada-begat-jonathan-or-johanan-after-joiada-high-priests"
+      ],
+      "annotatedVerses": [
+        11,
+        22,
+        38,
+        39,
+        40,
+        41
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9010,15 +9091,19 @@
       "bookId": 16,
       "chapter": 1,
       "annotationIds": [
-        "early-esther-susa"
+        "early-esther-susa",
+        "feast-in-shushan-seven-days-or-six-days-greek",
+        "king-ahasuerus-in-esther-or-king-artaxerxes-greek"
       ],
       "annotatedVerses": [
+        1,
         2,
         5,
         6
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -9026,27 +9111,64 @@
       "book": "Esther",
       "bookId": 16,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "esther-taken-to-the-king-in-the-tenth-month-tebeth-or-the-twelfth-month-adar-greek",
+        "mordecai-took-esther-for-his-own-daughter-or-brought-her-up-for-a-wife-greek",
+        "esther-the-daughter-of-abihail-or-of-aminadab-greek",
+        "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "who-had-been-carried-away-with-jeconiah-mordecai-or-kish"
+      ],
+      "annotatedVerses": [
+        6,
+        7,
+        15,
+        16,
+        20
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Esther",
       "bookId": 16,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "day-set-to-destroy-the-jews-thirteenth-of-adar-or-fourteenth-greek",
+        "haman-the-agagite-or-the-bugaean-and-the-macedonian-greek",
+        "why-did-mordecai-not-bow-to-haman"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        4,
+        7,
+        13
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Esther",
       "bookId": 16,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "enlargement-and-deliverance-from-another-place-what-place"
+      ],
+      "annotatedVerses": [
+        8,
+        14
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9062,9 +9184,16 @@
       "book": "Esther",
       "bookId": 16,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "god-named-in-the-greek-of-esther-where-the-kjv-names-none"
+      ],
+      "annotatedVerses": [
+        1,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9080,18 +9209,36 @@
       "book": "Esther",
       "bookId": 16,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "second-letters-written-in-the-third-month-sivan-or-the-first-month-nisan-greek"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Esther",
       "bookId": 16,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jews-slew-seventy-five-thousand-or-fifteen-thousand-greek",
+        "esther-the-daughter-of-abihail-or-of-aminadab-greek",
+        "haman-the-agagite-or-the-bugaean-and-the-macedonian-greek",
+        "on-the-spoil-laid-they-not-their-hand-or-they-plundered-greek"
+      ],
+      "annotatedVerses": [
+        10,
+        16,
+        24,
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
