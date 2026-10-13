@@ -20,7 +20,7 @@ const comparisonSelections=new Map();
 const comparisonModes=['history','contradictions','science','questions'];
 const comparisonLabels={history:'Historic',contradictions:'Contradictions',science:'Scientific',questions:'Unanswered Questions'};
 const languageTags={H:{label:'Hebrew text comparison',tone:'hebrew'},G:{label:'Greek text comparison',tone:'greek'},V:{label:'Law violation',tone:'violation'},Q:{label:'Unanswered question',tone:'question'}};
-function recordTags(item){return [...new Set(Array.isArray(item.tags)?item.tags:item.tag?[item.tag]:[])].filter(t=>languageTags[t]);}
+function recordTags(item){return [...new Set(Array.isArray(item.activeTags)?item.activeTags:Array.isArray(item.tags)?item.tags:item.tag?[item.tag]:[])].filter(t=>languageTags[t]);}
 function comparisonKey(mode=$('#reader-compare').value){return `${readingBook}:${readingChapter}:${$('#reader-edition').value}:${mode}`;}
 function selectionKey(verse){return `${comparisonKey('tabs')}:${verse}`;}
 function visibleComparison(item){return recordTags(item).length>0||item.mode==='questions'||item.mode==='contradictions'||(item.status!=='Agrees'&&(item.status==='Disagrees'||item.discrepancy===true));}

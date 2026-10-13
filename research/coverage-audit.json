@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 316,
+    "evidenceRecords": 344,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 349,
-    "annotatedVerses": 2564
+    "chaptersWithAnnotations": 373,
+    "annotatedVerses": 2614
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 16,
-      "annotatedVerses": 45
+      "chaptersWithAnnotations": 17,
+      "annotatedVerses": 51
     },
     {
       "book": "Exodus",
@@ -40,7 +40,7 @@
       "book": "Deuteronomy",
       "chapters": 34,
       "chaptersWithAnnotations": 34,
-      "annotatedVerses": 340
+      "annotatedVerses": 341
     },
     {
       "book": "Joshua",
@@ -76,13 +76,13 @@
       "book": "1 Kings",
       "chapters": 22,
       "chaptersWithAnnotations": 14,
-      "annotatedVerses": 37
+      "annotatedVerses": 38
     },
     {
       "book": "2 Kings",
       "chapters": 25,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 4
+      "chaptersWithAnnotations": 17,
+      "annotatedVerses": 28
     },
     {
       "book": "1 Chronicles",
@@ -93,8 +93,8 @@
     {
       "book": "2 Chronicles",
       "chapters": 36,
-      "chaptersWithAnnotations": 10,
-      "annotatedVerses": 12
+      "chaptersWithAnnotations": 15,
+      "annotatedVerses": 23
     },
     {
       "book": "Ezra",
@@ -153,8 +153,8 @@
     {
       "book": "Jeremiah",
       "chapters": 52,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 4
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 10
     },
     {
       "book": "Lamentations",
@@ -177,8 +177,8 @@
     {
       "book": "Hosea",
       "chapters": 14,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 3
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 4
     },
     {
       "book": "Joel",
@@ -420,10 +420,14 @@
         "legacy-science-3",
         "science-sky-dome",
         "genesis-1-celestial-sequence",
+        "genesis-1-light-before-the-lights-source-unstated",
         "study-animals",
         "study-plants"
       ],
       "annotatedVerses": [
+        3,
+        4,
+        5,
         6,
         7,
         11,
@@ -437,6 +441,7 @@
       ],
       "modes": [
         "science",
+        "questions",
         "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
@@ -471,9 +476,18 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "cain-feared-being-slain-by-whom",
+        "cain-wife-unnamed-origin-unstated"
+      ],
+      "annotatedVerses": [
+        14,
+        15,
+        17
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -4477,7 +4491,8 @@
       "annotationIds": [
         "early-conquest",
         "deuteronomy-distant-city-submission",
-        "joshua-gibeonite-covenant"
+        "joshua-gibeonite-covenant",
+        "moab-fell-every-good-tree-or-do-not-destroy-the-trees"
       ],
       "annotatedVerses": [
         10,
@@ -4488,7 +4503,8 @@
         15,
         16,
         17,
-        18
+        18,
+        19
       ],
       "modes": [
         "contradictions",
@@ -6727,11 +6743,13 @@
       "annotationIds": [
         "temple-pillars-eighteen-or-thirty-five-cubits",
         "molten-sea-two-thousand-or-three-thousand-baths",
-        "hiram-craftsman-mother-of-naphtali-or-of-dan"
+        "hiram-craftsman-mother-of-naphtali-or-of-dan",
+        "pillar-chapiter-three-cubits-or-five"
       ],
       "annotatedVerses": [
         14,
         15,
+        16,
         26
       ],
       "modes": [
@@ -6964,27 +6982,45 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehoram-of-israel-began-in-second-year-of-jehoram-of-judah-or-eighteenth-of-jehoshaphat"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "elijah-went-up-into-heaven-or-no-man-ascended"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "moab-fell-every-good-tree-or-do-not-destroy-the-trees"
+      ],
+      "annotatedVerses": [
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7028,10 +7064,10 @@
       "bookId": 11,
       "chapter": 8,
       "annotationIds": [
-        "early-ahaziah"
+        "ahaziah-began-in-joram-twelfth-year-or-eleventh"
       ],
       "annotatedVerses": [
-        26
+        25
       ],
       "modes": [
         "contradictions"
@@ -7042,9 +7078,15 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ahaziah-began-in-joram-twelfth-year-or-eleventh"
+      ],
+      "annotatedVerses": [
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7069,54 +7111,96 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "temple-repair-money-no-vessels-made-or-vessels-made",
+        "joash-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings"
+      ],
+      "annotatedVerses": [
+        13,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehoahaz-seventeen-years-from-joash-twenty-third-jehoash-in-thirty-seventh"
+      ],
+      "annotatedVerses": [
+        1,
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "azariah-began-in-jeroboam-twenty-seventh-year-or-about-his-fifteenth"
+      ],
+      "annotatedVerses": [
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "azariah-began-in-jeroboam-twenty-seventh-year-or-about-his-fifteenth",
+        "hoshea-began-in-jotham-twentieth-year-yet-jotham-reigned-sixteen"
+      ],
+      "annotatedVerses": [
+        1,
+        30,
+        33
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "king-of-assyria-hearkened-to-ahaz-or-helped-him-not"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hoshea-began-in-jotham-twentieth-year-yet-jotham-reigned-sixteen"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7151,9 +7235,15 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hezekiah-hearkened-to-the-envoys-or-was-glad-of-them"
+      ],
+      "annotatedVerses": [
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7169,36 +7259,69 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "huldah-wife-of-shallum-or-mother-and-keeper-of-the-commandments-greek"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem"
+      ],
+      "annotatedVerses": [
+        29,
+        30
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehoiakim-none-to-sit-on-the-throne-or-his-son-reigned",
+        "jehoiachin-eighteen-or-eight-years-old",
+        "zedekiah-jehoiachin-uncle-brother-or-son"
+      ],
+      "annotatedVerses": [
+        6,
+        8,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 25,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "nebuzaradan-came-on-the-seventh-day-or-the-tenth",
+        "pillar-chapiter-three-cubits-or-five",
+        "five-or-seven-men-of-the-kings-presence-taken"
+      ],
+      "annotatedVerses": [
+        8,
+        17,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7783,10 +7906,14 @@
       "bookId": 13,
       "chapter": 22,
       "annotationIds": [
-        "early-ahaziah"
+        "early-ahaziah",
+        "ahaziah-died-at-megiddo-or-caught-hiding-in-samaria",
+        "ahaziah-forty-two-brethren-slain-or-all-his-elder-brothers-already-dead"
       ],
       "annotatedVerses": [
-        2
+        2,
+        8,
+        9
       ],
       "modes": [
         "contradictions"
@@ -7806,9 +7933,17 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "temple-repair-money-no-vessels-made-or-vessels-made",
+        "joash-buried-with-his-fathers-or-not-in-the-sepulchres-of-the-kings"
+      ],
+      "annotatedVerses": [
+        14,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7842,9 +7977,18 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 28,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "king-of-assyria-hearkened-to-ahaz-or-helped-him-not",
+        "ahaz-twenty-years-old-or-twenty-five-greek-chronicles"
+      ],
+      "annotatedVerses": [
+        1,
+        20,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7896,27 +8040,47 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 34,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "huldah-wife-of-shallum-or-mother-and-keeper-of-the-commandments-greek"
+      ],
+      "annotatedVerses": [
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 35,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "josiah-carried-dead-from-megiddo-or-died-after-reaching-jerusalem"
+      ],
+      "annotatedVerses": [
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 36,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehoiachin-eighteen-or-eight-years-old",
+        "zedekiah-jehoiachin-uncle-brother-or-son"
+      ],
+      "annotatedVerses": [
+        9,
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11473,9 +11637,15 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 36,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehoiakim-none-to-sit-on-the-throne-or-his-son-reigned"
+      ],
+      "annotatedVerses": [
+        30
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11617,9 +11787,23 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 52,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "first-deportation-eighth-year-ten-thousand-or-seventh-year-three-thousand",
+        "nebuzaradan-came-on-the-seventh-day-or-the-tenth",
+        "pillar-chapiter-three-cubits-or-five",
+        "five-or-seven-men-of-the-kings-presence-taken",
+        "jehoiachin-released-on-the-twenty-seventh-day-or-the-twenty-fifth"
+      ],
+      "annotatedVerses": [
+        12,
+        22,
+        25,
+        28,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12254,9 +12438,15 @@
       "book": "Hosea",
       "bookId": 27,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jehu-done-well-to-house-of-ahab-or-blood-of-jezreel-avenged-on-house-of-jehu"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

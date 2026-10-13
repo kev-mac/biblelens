@@ -74,7 +74,7 @@ async function comparisons(book,ch,mode){
  for(const e of EVIDENCE){
   if(e.mode!==mode)continue;
   for(const placement of evidencePlacements(e)){
-   const p=parseRef(placement.ref);if(p?.book===book&&p.chapter===ch)data.push({...e,verse:p.verse,placementRole:placement.placementRole,keyTarget:placement.keyTarget});
+   const p=parseRef(placement.ref);if(p?.book===book&&p.chapter===ch)data.push({...e,activeTags:(e.tags||[e.tag]).filter(t=>t&&(!['H','G','V'].includes(t)||!e.appliesTo||e.appliesTo.includes(placement.ref))),verse:p.verse,placementRole:placement.placementRole,keyTarget:placement.keyTarget});
   }
  }
  return data;

@@ -25,7 +25,7 @@ for(const b of books){
      assert.equal(published.placementRole,(e.sides?.length?e.sides.some(s=>s.ref===ref):ref===e.ref)?'key':'context');
      assert.equal(published.keyTarget,e.sides?.find(s=>s.label==='A')?.ref||e.ref);
      if(e.sides)assert.deepEqual(published.sides,e.sides);
-     if(e.tags)assert.deepEqual(published.tags,e.tags,`Lost language tags at ${ref}`);
+     if(e.tags){assert.deepEqual(published.tags,e.tags,`Lost language tags at ${ref}`);assert.deepEqual(published.activeTags,e.tags.filter(t=>!['H','G','V'].includes(t)||!e.appliesTo||e.appliesTo.includes(ref)),`Incorrect active tags at ${ref}`);}
      if(e.languageContext)assert.equal(published.languageContext,e.languageContext,`Lost edition context at ${ref}`);
      annotationTargets++;
     }

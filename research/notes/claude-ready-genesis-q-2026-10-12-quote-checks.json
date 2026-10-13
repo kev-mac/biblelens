@@ -1,0 +1,464 @@
+{
+  "checks": [
+    {
+      "id": "genesis-1-light-before-the-lights-source-unstated",
+      "english": [
+        {
+          "quote": "And God said, Let there be light: and there was light.",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 1:3"
+          ]
+        },
+        {
+          "quote": "and God divided the light from the darkness",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 1:4"
+          ]
+        },
+        {
+          "quote": "And God called the light Day, and the darkness he called Night. And the evening and the morning were the first day.",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 1:5"
+          ]
+        },
+        {
+          "quote": "And God said, Let there be lights in the firmament of the heaven to divide the day from the night",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 1:14"
+          ]
+        },
+        {
+          "quote": "And God made two great lights; the greater light to rule the day, and the lesser light to rule the night: he made the stars also.",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 1:16"
+          ]
+        },
+        {
+          "quote": "and to divide the light from the darkness",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 1:18"
+          ]
+        },
+        {
+          "quote": "Where is the way where light dwelleth?",
+          "found": true,
+          "exactVerseMatches": [
+            "Job 38:19"
+          ]
+        },
+        {
+          "quote": "I form the light, and create darkness",
+          "found": true,
+          "exactVerseMatches": [
+            "Isaiah 45:7"
+          ]
+        },
+        {
+          "quote": "God, who commanded the light to shine out of darkness",
+          "found": true,
+          "exactVerseMatches": [
+            "2 Corinthians 4:6"
+          ]
+        }
+      ],
+      "language": [
+        {
+          "quote": "יְהִ֣י אֹ֑ור וַֽיְהִי־אֹֽור",
+          "exact": [
+            "https://bolls.life/get-text/WLC/1/1/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/1/1/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/1/",
+              "verse": 3
+            }
+          ],
+          "printedGreekMatches": [],
+          "hebrewOrNtMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/1/",
+              "verse": 3
+            }
+          ]
+        },
+        {
+          "quote": "γενηθήτω φῶς· καὶ ἐγένετο φῶς",
+          "exact": [
+            "https://ebible.org/grcbrent/GEN01.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/GEN01.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN01.htm",
+              "verse": 3
+            }
+          ],
+          "printedGreekMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN01.htm",
+              "label": "3",
+              "htmlId": "V3"
+            }
+          ],
+          "hebrewOrNtMatches": []
+        },
+        {
+          "quote": "יְהִ֤י מְאֹרֹת֙ בִּרְקִ֣יעַ הַשָּׁמַ֔יִם",
+          "exact": [
+            "https://bolls.life/get-text/WLC/1/1/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/1/1/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/1/",
+              "verse": 14
+            }
+          ],
+          "printedGreekMatches": [],
+          "hebrewOrNtMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/1/",
+              "verse": 14
+            }
+          ]
+        },
+        {
+          "quote": "γενηθήτωσαν φωστῆρες ἐν τῷ στερεώματι τοῦ οὐρανοῦ",
+          "exact": [
+            "https://ebible.org/grcbrent/GEN01.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/GEN01.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN01.htm",
+              "verse": 14
+            }
+          ],
+          "printedGreekMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN01.htm",
+              "label": "14",
+              "htmlId": "V14"
+            }
+          ],
+          "hebrewOrNtMatches": []
+        }
+      ],
+      "fullLanguageChecks": [
+        {
+          "quote": "יְהִ֣י אֹ֑ור וַֽיְהִי־אֹֽור",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/1/",
+              "verse": "3"
+            }
+          ]
+        },
+        {
+          "quote": "γενηθήτω φῶς· καὶ ἐγένετο φῶς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN01.htm",
+              "verse": "3"
+            }
+          ]
+        },
+        {
+          "quote": "יְהִ֤י מְאֹרֹת֙ בִּרְקִ֣יעַ הַשָּׁמַ֔יִם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/1/",
+              "verse": "14"
+            }
+          ]
+        },
+        {
+          "quote": "γενηθήτωσαν φωστῆρες ἐν τῷ στερεώματι τοῦ οὐρανοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN01.htm",
+              "verse": "14"
+            }
+          ]
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Genesis 1:3",
+          "quote": "Let there be light: and there was light",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Genesis 1:5",
+          "quote": "And the evening and the morning were the first day",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Genesis 1:14",
+          "quote": "Let there be lights in the firmament of the heaven to divide the day from the night",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "cain-feared-being-slain-by-whom",
+      "english": [
+        {
+          "quote": "And Adam knew Eve his wife; and she conceived, and bare Cain",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 4:1"
+          ]
+        },
+        {
+          "quote": "And she again bare his brother Abel.",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 4:2"
+          ]
+        },
+        {
+          "quote": "and I shall be a fugitive and a vagabond in the earth; and it shall come to pass, that every one that findeth me shall slay me",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 4:14"
+          ]
+        },
+        {
+          "quote": "And the Lord said unto him, Therefore whosoever slayeth Cain, vengeance shall be taken on him sevenfold. And the Lord set a mark upon Cain, lest any finding him should kill him.",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 4:15"
+          ]
+        },
+        {
+          "quote": "And Adam knew his wife again; and she bare a son, and called his name Seth",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 4:25"
+          ]
+        },
+        {
+          "quote": "and he begat sons and daughters",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 5:4"
+          ]
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְהָיָ֥ה כָל־מֹצְאִ֖י יַֽהַרְגֵֽנִי",
+          "exact": [
+            "https://bolls.life/get-text/WLC/1/4/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/1/4/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/4/",
+              "verse": 14
+            }
+          ],
+          "printedGreekMatches": [],
+          "hebrewOrNtMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/4/",
+              "verse": 14
+            }
+          ]
+        },
+        {
+          "quote": "καὶ ἔσται πᾶς ὁ εὑρίσκων με, ἀποκτενεῖ με",
+          "exact": [
+            "https://ebible.org/grcbrent/GEN04.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/GEN04.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN04.htm",
+              "verse": 14
+            }
+          ],
+          "printedGreekMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN04.htm",
+              "label": "14",
+              "htmlId": "V14"
+            }
+          ],
+          "hebrewOrNtMatches": []
+        }
+      ],
+      "fullLanguageChecks": [
+        {
+          "quote": "וְהָיָ֥ה כָל־מֹצְאִ֖י יַֽהַרְגֵֽנִי",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/4/",
+              "verse": "14"
+            }
+          ]
+        },
+        {
+          "quote": "καὶ ἔσται πᾶς ὁ εὑρίσκων με, ἀποκτενεῖ με",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN04.htm",
+              "verse": "14"
+            }
+          ]
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Genesis 4:14",
+          "quote": "every one that findeth me shall slay me",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Genesis 4:15",
+          "quote": "lest any finding him should kill him",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "cain-wife-unnamed-origin-unstated",
+      "english": [
+        {
+          "quote": "And Adam knew Eve his wife; and she conceived, and bare Cain",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 4:1"
+          ]
+        },
+        {
+          "quote": "And Cain went out from the presence of the Lord, and dwelt in the land of Nod, on the east of Eden.",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 4:16"
+          ]
+        },
+        {
+          "quote": "And Cain knew his wife; and she conceived, and bare Enoch: and he builded a city",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 4:17"
+          ]
+        },
+        {
+          "quote": "And the days of Adam after he had begotten Seth were eight hundred years: and he begat sons and daughters",
+          "found": true,
+          "exactVerseMatches": [
+            "Genesis 5:4"
+          ]
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיֵּ֤דַע קַ֙יִן֙ אֶת־אִשְׁתֹּ֔ו",
+          "exact": [
+            "https://bolls.life/get-text/WLC/1/4/"
+          ],
+          "unmarked": [
+            "https://bolls.life/get-text/WLC/1/4/"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/4/",
+              "verse": 17
+            }
+          ],
+          "printedGreekMatches": [],
+          "hebrewOrNtMatches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/4/",
+              "verse": 17
+            }
+          ]
+        },
+        {
+          "quote": "Καὶ ἔγνω Κάϊν τὴν γυναῖκα αὐτοῦ",
+          "exact": [
+            "https://ebible.org/grcbrent/GEN04.htm"
+          ],
+          "unmarked": [
+            "https://ebible.org/grcbrent/GEN04.htm"
+          ],
+          "verseMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN04.htm",
+              "verse": 17
+            }
+          ],
+          "printedGreekMatches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN04.htm",
+              "label": "17",
+              "htmlId": "V17"
+            }
+          ],
+          "hebrewOrNtMatches": []
+        }
+      ],
+      "fullLanguageChecks": [
+        {
+          "quote": "וַיֵּ֤דַע קַ֙יִן֙ אֶת־אִשְׁתֹּ֔ו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/4/",
+              "verse": "17"
+            }
+          ]
+        },
+        {
+          "quote": "Καὶ ἔγνω Κάϊν τὴν γυναῖκα αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/GEN04.htm",
+              "verse": "17"
+            }
+          ]
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Genesis 4:17",
+          "quote": "And Cain knew his wife; and she conceived, and bare Enoch",
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "printedLabels": {},
+  "sourceFetchErrors": [],
+  "policy": "KJV exact case/punctuation substrings in packaged verses; Hebrew/Greek exact after markup removal, whitespace collapse and NFC; complete quotations including Greek elision marks. Printed Greek labels override HTML IDs. English bracketed glosses are researcher renderings, not independent lexicon evidence.",
+  "manualNumbering": [
+    "Genesis Greek1:3/14 and4:14/17 checked by printed labels."
+  ]
+}

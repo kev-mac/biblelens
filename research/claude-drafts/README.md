@@ -199,7 +199,7 @@ Approved by the owner through Codex's prompt (`outputs/Claude-Q-Research-Prompt.
 - **All earlier books are to be reviewed for Q.** Backlog, one session per book, in order: Genesis (chapters 1–4 done in `genesis-1-4-q-records.json`; 5–50 outstanding), Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings. Mark each done here when its file is written. These are Q-only sessions: do not re-open H, G or V for those books.
 - **Unanswered Questions is its own category**, beside Science, History and Contradictions; Q is its visible tag. Q-only records take `mode: "questions"`. This supersedes the earlier instruction (in Codex's prompt and in the Q section of `claude-integration-workflow.md`, until Codex updates it) to file Q under one of the three existing modes. Relayed by the owner from Codex, 2026-10-12.
 - Do not move an established scientific discrepancy or contradiction into `questions` merely because it raises a question. A record that qualifies as both keeps its own mode and may add the Q tag only if Q qualifies by itself.
-- Codex has not yet implemented `mode: "questions"`; Q drafts wait for that. `genesis-1-4-q-records.json` was corrected to the new mode with nothing else changed.
+- Codex implemented `mode: "questions"` at 21:08 on 2026-10-12 (build validates it; workflow file and saved prompt updated to match). `genesis-1-4-q-records.json` was corrected to the new mode with nothing else changed and is awaiting Codex's quote check; no Q record is published yet.
 
 ## Open questions for the owner
 
