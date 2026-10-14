@@ -1,0 +1,3225 @@
+{
+  "checks": [
+    {
+      "width": 320,
+      "dark": false,
+      "geometry": {
+        "width": 320,
+        "scrollWidth": 320,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 64
+            },
+            "icon": {
+              "left": 22,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 58
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 64,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 112
+            },
+            "icon": {
+              "left": 70,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 106
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 112,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 160
+            },
+            "icon": {
+              "left": 118,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 154
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 160,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 208
+            },
+            "icon": {
+              "left": 166,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 202
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 208,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 256
+            },
+            "icon": {
+              "left": 214,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 250
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 256,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 304
+            },
+            "icon": {
+              "left": 262,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 298
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 264,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 304
+        },
+        "next": {
+          "left": 216,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 256
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 227,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 245
+        },
+        "send": {
+          "left": 273,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 291
+        },
+        "brand": "rgb(16, 44, 72)",
+        "brandAccent": "rgb(179, 79, 11)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 954.5
+          },
+          {
+            "left": 84.59375,
+            "top": 954.5
+          },
+          {
+            "left": 153.1875,
+            "top": 954.5
+          },
+          {
+            "left": 221.78125,
+            "top": 954.5
+          },
+          {
+            "left": 16,
+            "top": 987.6875
+          },
+          {
+            "left": 81.671875,
+            "top": 987.6875
+          },
+          {
+            "left": 136.890625,
+            "top": 987.6875
+          },
+          {
+            "left": 205.046875,
+            "top": 987.6875
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 320,
+      "dark": true,
+      "geometry": {
+        "width": 320,
+        "scrollWidth": 320,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 64
+            },
+            "icon": {
+              "left": 22,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 58
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 64,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 112
+            },
+            "icon": {
+              "left": 70,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 106
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 112,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 160
+            },
+            "icon": {
+              "left": 118,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 154
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 160,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 208
+            },
+            "icon": {
+              "left": 166,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 202
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 208,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 256
+            },
+            "icon": {
+              "left": 214,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 250
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 256,
+              "top": 177.390625,
+              "width": 48,
+              "height": 48,
+              "right": 304
+            },
+            "icon": {
+              "left": 262,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 298
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 264,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 304
+        },
+        "next": {
+          "left": 216,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 256
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 227,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 245
+        },
+        "send": {
+          "left": 273,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 291
+        },
+        "brand": "rgb(184, 207, 229)",
+        "brandAccent": "rgb(245, 130, 32)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 954.5
+          },
+          {
+            "left": 84.59375,
+            "top": 954.5
+          },
+          {
+            "left": 153.1875,
+            "top": 954.5
+          },
+          {
+            "left": 221.78125,
+            "top": 954.5
+          },
+          {
+            "left": 16,
+            "top": 987.6875
+          },
+          {
+            "left": 81.671875,
+            "top": 987.6875
+          },
+          {
+            "left": 136.890625,
+            "top": 987.6875
+          },
+          {
+            "left": 205.046875,
+            "top": 987.6875
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 375,
+      "dark": false,
+      "geometry": {
+        "width": 375,
+        "scrollWidth": 375,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 57.15625,
+              "height": 48,
+              "right": 73.15625
+            },
+            "icon": {
+              "left": 26.578125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 62.578125
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 73.15625,
+              "top": 177.390625,
+              "width": 57.171875,
+              "height": 48,
+              "right": 130.328125
+            },
+            "icon": {
+              "left": 83.734375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 119.734375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 130.328125,
+              "top": 177.390625,
+              "width": 57.171875,
+              "height": 48,
+              "right": 187.5
+            },
+            "icon": {
+              "left": 140.90625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 176.90625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 187.5,
+              "top": 177.390625,
+              "width": 57.15625,
+              "height": 48,
+              "right": 244.65625
+            },
+            "icon": {
+              "left": 198.078125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 234.078125
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 244.65625,
+              "top": 177.390625,
+              "width": 57.171875,
+              "height": 48,
+              "right": 301.828125
+            },
+            "icon": {
+              "left": 255.234375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 291.234375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 301.828125,
+              "top": 177.390625,
+              "width": 57.171875,
+              "height": 48,
+              "right": 359
+            },
+            "icon": {
+              "left": 312.40625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 348.40625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 319,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 359
+        },
+        "next": {
+          "left": 271,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 311
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 282,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 300
+        },
+        "send": {
+          "left": 328,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 346
+        },
+        "brand": "rgb(16, 44, 72)",
+        "brandAccent": "rgb(179, 79, 11)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 880.484375
+          },
+          {
+            "left": 84.59375,
+            "top": 880.484375
+          },
+          {
+            "left": 153.1875,
+            "top": 880.484375
+          },
+          {
+            "left": 221.78125,
+            "top": 880.484375
+          },
+          {
+            "left": 298.671875,
+            "top": 880.484375
+          },
+          {
+            "left": 16,
+            "top": 913.671875
+          },
+          {
+            "left": 71.21875,
+            "top": 913.671875
+          },
+          {
+            "left": 139.375,
+            "top": 913.671875
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 375,
+      "dark": true,
+      "geometry": {
+        "width": 375,
+        "scrollWidth": 375,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 57.15625,
+              "height": 48,
+              "right": 73.15625
+            },
+            "icon": {
+              "left": 26.578125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 62.578125
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 73.15625,
+              "top": 177.390625,
+              "width": 57.171875,
+              "height": 48,
+              "right": 130.328125
+            },
+            "icon": {
+              "left": 83.734375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 119.734375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 130.328125,
+              "top": 177.390625,
+              "width": 57.171875,
+              "height": 48,
+              "right": 187.5
+            },
+            "icon": {
+              "left": 140.90625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 176.90625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 187.5,
+              "top": 177.390625,
+              "width": 57.15625,
+              "height": 48,
+              "right": 244.65625
+            },
+            "icon": {
+              "left": 198.078125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 234.078125
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 244.65625,
+              "top": 177.390625,
+              "width": 57.171875,
+              "height": 48,
+              "right": 301.828125
+            },
+            "icon": {
+              "left": 255.234375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 291.234375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 301.828125,
+              "top": 177.390625,
+              "width": 57.171875,
+              "height": 48,
+              "right": 359
+            },
+            "icon": {
+              "left": 312.40625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 348.40625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 319,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 359
+        },
+        "next": {
+          "left": 271,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 311
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 282,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 300
+        },
+        "send": {
+          "left": 328,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 346
+        },
+        "brand": "rgb(184, 207, 229)",
+        "brandAccent": "rgb(245, 130, 32)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 880.484375
+          },
+          {
+            "left": 84.59375,
+            "top": 880.484375
+          },
+          {
+            "left": 153.1875,
+            "top": 880.484375
+          },
+          {
+            "left": 221.78125,
+            "top": 880.484375
+          },
+          {
+            "left": 298.671875,
+            "top": 880.484375
+          },
+          {
+            "left": 16,
+            "top": 913.671875
+          },
+          {
+            "left": 71.21875,
+            "top": 913.671875
+          },
+          {
+            "left": 139.375,
+            "top": 913.671875
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 492,
+      "dark": false,
+      "geometry": {
+        "width": 492,
+        "scrollWidth": 492,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 76.65625,
+              "height": 48,
+              "right": 92.65625
+            },
+            "icon": {
+              "left": 36.328125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 72.328125
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 92.65625,
+              "top": 177.390625,
+              "width": 76.671875,
+              "height": 48,
+              "right": 169.328125
+            },
+            "icon": {
+              "left": 112.984375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 148.984375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 169.328125,
+              "top": 177.390625,
+              "width": 76.65625,
+              "height": 48,
+              "right": 245.984375
+            },
+            "icon": {
+              "left": 189.65625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 225.65625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 245.984375,
+              "top": 177.390625,
+              "width": 76.671875,
+              "height": 48,
+              "right": 322.65625
+            },
+            "icon": {
+              "left": 266.3125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 302.3125
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 322.65625,
+              "top": 177.390625,
+              "width": 76.671875,
+              "height": 48,
+              "right": 399.328125
+            },
+            "icon": {
+              "left": 342.984375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 378.984375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 399.328125,
+              "top": 177.390625,
+              "width": 76.65625,
+              "height": 48,
+              "right": 475.984375
+            },
+            "icon": {
+              "left": 419.65625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 455.65625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 436,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 476
+        },
+        "next": {
+          "left": 388,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 428
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 399,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 417
+        },
+        "send": {
+          "left": 445,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 463
+        },
+        "brand": "rgb(16, 44, 72)",
+        "brandAccent": "rgb(179, 79, 11)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 808.515625
+          },
+          {
+            "left": 84.59375,
+            "top": 808.515625
+          },
+          {
+            "left": 153.1875,
+            "top": 808.515625
+          },
+          {
+            "left": 221.78125,
+            "top": 808.515625
+          },
+          {
+            "left": 298.671875,
+            "top": 808.515625
+          },
+          {
+            "left": 364.34375,
+            "top": 808.515625
+          },
+          {
+            "left": 16,
+            "top": 841.703125
+          },
+          {
+            "left": 84.15625,
+            "top": 841.703125
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 492,
+      "dark": true,
+      "geometry": {
+        "width": 492,
+        "scrollWidth": 492,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 76.65625,
+              "height": 48,
+              "right": 92.65625
+            },
+            "icon": {
+              "left": 36.328125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 72.328125
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 92.65625,
+              "top": 177.390625,
+              "width": 76.671875,
+              "height": 48,
+              "right": 169.328125
+            },
+            "icon": {
+              "left": 112.984375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 148.984375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 169.328125,
+              "top": 177.390625,
+              "width": 76.65625,
+              "height": 48,
+              "right": 245.984375
+            },
+            "icon": {
+              "left": 189.65625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 225.65625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 245.984375,
+              "top": 177.390625,
+              "width": 76.671875,
+              "height": 48,
+              "right": 322.65625
+            },
+            "icon": {
+              "left": 266.3125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 302.3125
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 322.65625,
+              "top": 177.390625,
+              "width": 76.671875,
+              "height": 48,
+              "right": 399.328125
+            },
+            "icon": {
+              "left": 342.984375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 378.984375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 399.328125,
+              "top": 177.390625,
+              "width": 76.65625,
+              "height": 48,
+              "right": 475.984375
+            },
+            "icon": {
+              "left": 419.65625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 455.65625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 436,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 476
+        },
+        "next": {
+          "left": 388,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 428
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 399,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 417
+        },
+        "send": {
+          "left": 445,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 463
+        },
+        "brand": "rgb(184, 207, 229)",
+        "brandAccent": "rgb(245, 130, 32)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 808.515625
+          },
+          {
+            "left": 84.59375,
+            "top": 808.515625
+          },
+          {
+            "left": 153.1875,
+            "top": 808.515625
+          },
+          {
+            "left": 221.78125,
+            "top": 808.515625
+          },
+          {
+            "left": 298.671875,
+            "top": 808.515625
+          },
+          {
+            "left": 364.34375,
+            "top": 808.515625
+          },
+          {
+            "left": 16,
+            "top": 841.703125
+          },
+          {
+            "left": 84.15625,
+            "top": 841.703125
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 534,
+      "dark": false,
+      "geometry": {
+        "width": 534,
+        "scrollWidth": 534,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 83.65625,
+              "height": 48,
+              "right": 99.65625
+            },
+            "icon": {
+              "left": 39.828125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 75.828125
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 99.65625,
+              "top": 177.390625,
+              "width": 83.671875,
+              "height": 48,
+              "right": 183.328125
+            },
+            "icon": {
+              "left": 123.484375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 159.484375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 183.328125,
+              "top": 177.390625,
+              "width": 83.65625,
+              "height": 48,
+              "right": 266.984375
+            },
+            "icon": {
+              "left": 207.15625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 243.15625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 266.984375,
+              "top": 177.390625,
+              "width": 83.671875,
+              "height": 48,
+              "right": 350.65625
+            },
+            "icon": {
+              "left": 290.8125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 326.8125
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 350.65625,
+              "top": 177.390625,
+              "width": 83.671875,
+              "height": 48,
+              "right": 434.328125
+            },
+            "icon": {
+              "left": 374.484375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 410.484375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 434.328125,
+              "top": 177.390625,
+              "width": 83.65625,
+              "height": 48,
+              "right": 517.984375
+            },
+            "icon": {
+              "left": 458.15625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 494.15625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 478,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 518
+        },
+        "next": {
+          "left": 430,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 470
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 441,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 459
+        },
+        "send": {
+          "left": 487,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 505
+        },
+        "brand": "rgb(16, 44, 72)",
+        "brandAccent": "rgb(179, 79, 11)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 808.109375
+          },
+          {
+            "left": 84.59375,
+            "top": 808.109375
+          },
+          {
+            "left": 153.1875,
+            "top": 808.109375
+          },
+          {
+            "left": 221.78125,
+            "top": 808.109375
+          },
+          {
+            "left": 298.671875,
+            "top": 808.109375
+          },
+          {
+            "left": 364.34375,
+            "top": 808.109375
+          },
+          {
+            "left": 419.5625,
+            "top": 808.109375
+          },
+          {
+            "left": 16,
+            "top": 841.296875
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 534,
+      "dark": true,
+      "geometry": {
+        "width": 534,
+        "scrollWidth": 534,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 83.65625,
+              "height": 48,
+              "right": 99.65625
+            },
+            "icon": {
+              "left": 39.828125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 75.828125
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 99.65625,
+              "top": 177.390625,
+              "width": 83.671875,
+              "height": 48,
+              "right": 183.328125
+            },
+            "icon": {
+              "left": 123.484375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 159.484375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 183.328125,
+              "top": 177.390625,
+              "width": 83.65625,
+              "height": 48,
+              "right": 266.984375
+            },
+            "icon": {
+              "left": 207.15625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 243.15625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 266.984375,
+              "top": 177.390625,
+              "width": 83.671875,
+              "height": 48,
+              "right": 350.65625
+            },
+            "icon": {
+              "left": 290.8125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 326.8125
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 350.65625,
+              "top": 177.390625,
+              "width": 83.671875,
+              "height": 48,
+              "right": 434.328125
+            },
+            "icon": {
+              "left": 374.484375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 410.484375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 434.328125,
+              "top": 177.390625,
+              "width": 83.65625,
+              "height": 48,
+              "right": 517.984375
+            },
+            "icon": {
+              "left": 458.15625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 494.15625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 478,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 518
+        },
+        "next": {
+          "left": 430,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 470
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 441,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 459
+        },
+        "send": {
+          "left": 487,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 505
+        },
+        "brand": "rgb(184, 207, 229)",
+        "brandAccent": "rgb(245, 130, 32)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 808.109375
+          },
+          {
+            "left": 84.59375,
+            "top": 808.109375
+          },
+          {
+            "left": 153.1875,
+            "top": 808.109375
+          },
+          {
+            "left": 221.78125,
+            "top": 808.109375
+          },
+          {
+            "left": 298.671875,
+            "top": 808.109375
+          },
+          {
+            "left": 364.34375,
+            "top": 808.109375
+          },
+          {
+            "left": 419.5625,
+            "top": 808.109375
+          },
+          {
+            "left": 16,
+            "top": 841.296875
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 600,
+      "dark": false,
+      "geometry": {
+        "width": 600,
+        "scrollWidth": 600,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 94.65625,
+              "height": 48,
+              "right": 110.65625
+            },
+            "icon": {
+              "left": 45.328125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 81.328125
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 110.65625,
+              "top": 177.390625,
+              "width": 94.671875,
+              "height": 48,
+              "right": 205.328125
+            },
+            "icon": {
+              "left": 139.984375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 175.984375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 205.328125,
+              "top": 177.390625,
+              "width": 94.65625,
+              "height": 48,
+              "right": 299.984375
+            },
+            "icon": {
+              "left": 234.65625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 270.65625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 299.984375,
+              "top": 177.390625,
+              "width": 94.671875,
+              "height": 48,
+              "right": 394.65625
+            },
+            "icon": {
+              "left": 329.3125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 365.3125
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 394.65625,
+              "top": 177.390625,
+              "width": 94.671875,
+              "height": 48,
+              "right": 489.328125
+            },
+            "icon": {
+              "left": 423.984375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 459.984375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 489.328125,
+              "top": 177.390625,
+              "width": 94.65625,
+              "height": 48,
+              "right": 583.984375
+            },
+            "icon": {
+              "left": 518.65625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 554.65625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(47, 90, 130)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 544,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 584
+        },
+        "next": {
+          "left": 496,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 536
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 507,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 525
+        },
+        "send": {
+          "left": 553,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 571
+        },
+        "brand": "rgb(16, 44, 72)",
+        "brandAccent": "rgb(179, 79, 11)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 782.8125
+          },
+          {
+            "left": 84.59375,
+            "top": 782.8125
+          },
+          {
+            "left": 153.1875,
+            "top": 782.8125
+          },
+          {
+            "left": 221.78125,
+            "top": 782.8125
+          },
+          {
+            "left": 298.671875,
+            "top": 782.8125
+          },
+          {
+            "left": 364.34375,
+            "top": 782.8125
+          },
+          {
+            "left": 419.5625,
+            "top": 782.8125
+          },
+          {
+            "left": 487.71875,
+            "top": 782.8125
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 600,
+      "dark": true,
+      "geometry": {
+        "width": 600,
+        "scrollWidth": 600,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 16,
+              "top": 177.390625,
+              "width": 94.65625,
+              "height": 48,
+              "right": 110.65625
+            },
+            "icon": {
+              "left": 45.328125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 81.328125
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 110.65625,
+              "top": 177.390625,
+              "width": 94.671875,
+              "height": 48,
+              "right": 205.328125
+            },
+            "icon": {
+              "left": 139.984375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 175.984375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 205.328125,
+              "top": 177.390625,
+              "width": 94.65625,
+              "height": 48,
+              "right": 299.984375
+            },
+            "icon": {
+              "left": 234.65625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 270.65625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 299.984375,
+              "top": 177.390625,
+              "width": 94.671875,
+              "height": 48,
+              "right": 394.65625
+            },
+            "icon": {
+              "left": 329.3125,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 365.3125
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 394.65625,
+              "top": 177.390625,
+              "width": 94.671875,
+              "height": 48,
+              "right": 489.328125
+            },
+            "icon": {
+              "left": 423.984375,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 459.984375
+            },
+            "border": "1px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 489.328125,
+              "top": 177.390625,
+              "width": 94.65625,
+              "height": 48,
+              "right": 583.984375
+            },
+            "icon": {
+              "left": 518.65625,
+              "top": 183.390625,
+              "width": 36,
+              "height": 36,
+              "right": 554.65625
+            },
+            "border": "3px",
+            "copy": "none",
+            "badge": "grid",
+            "badgeColor": "rgb(143, 180, 214)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 544,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 584
+        },
+        "next": {
+          "left": 496,
+          "top": 117.390625,
+          "width": 40,
+          "height": 40,
+          "right": 536
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 507,
+          "top": 128.390625,
+          "width": 18,
+          "height": 18,
+          "right": 525
+        },
+        "send": {
+          "left": 553,
+          "top": 327.578125,
+          "width": 18,
+          "height": 18,
+          "right": 571
+        },
+        "brand": "rgb(184, 207, 229)",
+        "brandAccent": "rgb(245, 130, 32)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 16,
+            "top": 782.8125
+          },
+          {
+            "left": 84.59375,
+            "top": 782.8125
+          },
+          {
+            "left": 153.1875,
+            "top": 782.8125
+          },
+          {
+            "left": 221.78125,
+            "top": 782.8125
+          },
+          {
+            "left": 298.671875,
+            "top": 782.8125
+          },
+          {
+            "left": 364.34375,
+            "top": 782.8125
+          },
+          {
+            "left": 419.5625,
+            "top": 782.8125
+          },
+          {
+            "left": 487.71875,
+            "top": 782.8125
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "pass",
+      "paging": "pass"
+    },
+    {
+      "width": 601,
+      "dark": false,
+      "geometry": {
+        "width": 601,
+        "scrollWidth": 601,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 32,
+              "top": 299.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 200.328125
+            },
+            "icon": {
+              "left": 32,
+              "top": 301.1875,
+              "width": 36,
+              "height": 36,
+              "right": 68
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 216.328125,
+              "top": 299.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 384.65625
+            },
+            "icon": {
+              "left": 216.328125,
+              "top": 301.1875,
+              "width": 36,
+              "height": 36,
+              "right": 252.328125
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 400.65625,
+              "top": 299.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 568.984375
+            },
+            "icon": {
+              "left": 400.65625,
+              "top": 301.1875,
+              "width": 36,
+              "height": 36,
+              "right": 436.65625
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 32,
+              "top": 349.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 200.328125
+            },
+            "icon": {
+              "left": 32,
+              "top": 351.1875,
+              "width": 36,
+              "height": 36,
+              "right": 68
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 216.328125,
+              "top": 349.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 384.65625
+            },
+            "icon": {
+              "left": 216.328125,
+              "top": 351.1875,
+              "width": 36,
+              "height": 36,
+              "right": 252.328125
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 400.65625,
+              "top": 349.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 568.984375
+            },
+            "icon": {
+              "left": 400.65625,
+              "top": 351.1875,
+              "width": 36,
+              "height": 36,
+              "right": 436.65625
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 0,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0
+        },
+        "next": {
+          "left": 529,
+          "top": 239.1875,
+          "width": 40,
+          "height": 40,
+          "right": 569
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 540,
+          "top": 250.1875,
+          "width": 18,
+          "height": 18,
+          "right": 558
+        },
+        "send": {
+          "left": 505,
+          "top": 502.375,
+          "width": 18,
+          "height": 18,
+          "right": 523
+        },
+        "brand": "rgb(16, 44, 72)",
+        "brandAccent": "rgb(179, 79, 11)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 101,
+            "top": 831.875
+          },
+          {
+            "left": 169.59375,
+            "top": 831.875
+          },
+          {
+            "left": 238.1875,
+            "top": 831.875
+          },
+          {
+            "left": 306.78125,
+            "top": 831.875
+          },
+          {
+            "left": 383.671875,
+            "top": 831.875
+          },
+          {
+            "left": 449.34375,
+            "top": 831.875
+          },
+          {
+            "left": 101,
+            "top": 865.0625
+          },
+          {
+            "left": 169.15625,
+            "top": 865.0625
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "desktop toolbar",
+      "paging": "pass"
+    },
+    {
+      "width": 601,
+      "dark": true,
+      "geometry": {
+        "width": 601,
+        "scrollWidth": 601,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 32,
+              "top": 299.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 200.328125
+            },
+            "icon": {
+              "left": 32,
+              "top": 301.1875,
+              "width": 36,
+              "height": 36,
+              "right": 68
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 216.328125,
+              "top": 299.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 384.65625
+            },
+            "icon": {
+              "left": 216.328125,
+              "top": 301.1875,
+              "width": 36,
+              "height": 36,
+              "right": 252.328125
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 400.65625,
+              "top": 299.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 568.984375
+            },
+            "icon": {
+              "left": 400.65625,
+              "top": 301.1875,
+              "width": 36,
+              "height": 36,
+              "right": 436.65625
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 32,
+              "top": 349.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 200.328125
+            },
+            "icon": {
+              "left": 32,
+              "top": 351.1875,
+              "width": 36,
+              "height": 36,
+              "right": 68
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 216.328125,
+              "top": 349.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 384.65625
+            },
+            "icon": {
+              "left": 216.328125,
+              "top": 351.1875,
+              "width": 36,
+              "height": 36,
+              "right": 252.328125
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 400.65625,
+              "top": 349.1875,
+              "width": 168.328125,
+              "height": 40,
+              "right": 568.984375
+            },
+            "icon": {
+              "left": 400.65625,
+              "top": 351.1875,
+              "width": 36,
+              "height": 36,
+              "right": 436.65625
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 0,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0
+        },
+        "next": {
+          "left": 529,
+          "top": 239.1875,
+          "width": 40,
+          "height": 40,
+          "right": 569
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 540,
+          "top": 250.1875,
+          "width": 18,
+          "height": 18,
+          "right": 558
+        },
+        "send": {
+          "left": 505,
+          "top": 502.375,
+          "width": 18,
+          "height": 18,
+          "right": 523
+        },
+        "brand": "rgb(184, 207, 229)",
+        "brandAccent": "rgb(245, 130, 32)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 101,
+            "top": 831.875
+          },
+          {
+            "left": 169.59375,
+            "top": 831.875
+          },
+          {
+            "left": 238.1875,
+            "top": 831.875
+          },
+          {
+            "left": 306.78125,
+            "top": 831.875
+          },
+          {
+            "left": 383.671875,
+            "top": 831.875
+          },
+          {
+            "left": 449.34375,
+            "top": 831.875
+          },
+          {
+            "left": 101,
+            "top": 865.0625
+          },
+          {
+            "left": 169.15625,
+            "top": 865.0625
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "desktop toolbar",
+      "paging": "pass"
+    },
+    {
+      "width": 1280,
+      "dark": false,
+      "geometry": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 172,
+              "top": 252.1875,
+              "width": 301.328125,
+              "height": 40,
+              "right": 473.328125
+            },
+            "icon": {
+              "left": 172,
+              "top": 254.1875,
+              "width": 36,
+              "height": 36,
+              "right": 208
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 489.328125,
+              "top": 252.1875,
+              "width": 301.328125,
+              "height": 40,
+              "right": 790.65625
+            },
+            "icon": {
+              "left": 489.328125,
+              "top": 254.1875,
+              "width": 36,
+              "height": 36,
+              "right": 525.328125
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 806.65625,
+              "top": 252.1875,
+              "width": 301.34375,
+              "height": 40,
+              "right": 1108
+            },
+            "icon": {
+              "left": 806.65625,
+              "top": 254.1875,
+              "width": 36,
+              "height": 36,
+              "right": 842.65625
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 172,
+              "top": 302.1875,
+              "width": 301.328125,
+              "height": 40,
+              "right": 473.328125
+            },
+            "icon": {
+              "left": 172,
+              "top": 304.1875,
+              "width": 36,
+              "height": 36,
+              "right": 208
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 489.328125,
+              "top": 302.1875,
+              "width": 301.328125,
+              "height": 40,
+              "right": 790.65625
+            },
+            "icon": {
+              "left": 489.328125,
+              "top": 304.1875,
+              "width": 36,
+              "height": 36,
+              "right": 525.328125
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 806.65625,
+              "top": 302.1875,
+              "width": 301.34375,
+              "height": 40,
+              "right": 1108
+            },
+            "icon": {
+              "left": 806.65625,
+              "top": 304.1875,
+              "width": 36,
+              "height": 36,
+              "right": 842.65625
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 0,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0
+        },
+        "next": {
+          "left": 1068,
+          "top": 192.1875,
+          "width": 40,
+          "height": 40,
+          "right": 1108
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 1079,
+          "top": 203.1875,
+          "width": 18,
+          "height": 18,
+          "right": 1097
+        },
+        "send": {
+          "left": 1044,
+          "top": 455.375,
+          "width": 18,
+          "height": 18,
+          "right": 1062
+        },
+        "brand": "rgb(16, 44, 72)",
+        "brandAccent": "rgb(179, 79, 11)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 241,
+            "top": 757.046875
+          },
+          {
+            "left": 309.59375,
+            "top": 757.046875
+          },
+          {
+            "left": 378.1875,
+            "top": 757.046875
+          },
+          {
+            "left": 446.78125,
+            "top": 757.046875
+          },
+          {
+            "left": 523.671875,
+            "top": 757.046875
+          },
+          {
+            "left": 589.34375,
+            "top": 757.046875
+          },
+          {
+            "left": 644.5625,
+            "top": 757.046875
+          },
+          {
+            "left": 712.71875,
+            "top": 757.046875
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "desktop toolbar",
+      "paging": "pass"
+    },
+    {
+      "width": 1280,
+      "dark": true,
+      "geometry": {
+        "width": 1280,
+        "scrollWidth": 1280,
+        "filters": [
+          {
+            "key": "T",
+            "box": {
+              "left": 172,
+              "top": 252.1875,
+              "width": 301.328125,
+              "height": 40,
+              "right": 473.328125
+            },
+            "icon": {
+              "left": 172,
+              "top": 254.1875,
+              "width": 36,
+              "height": 36,
+              "right": 208
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "Translation: 0 comparisons"
+          },
+          {
+            "key": "V",
+            "box": {
+              "left": 489.328125,
+              "top": 252.1875,
+              "width": 301.328125,
+              "height": 40,
+              "right": 790.65625
+            },
+            "icon": {
+              "left": 489.328125,
+              "top": 254.1875,
+              "width": 36,
+              "height": 36,
+              "right": 525.328125
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "Violations: 0 comparisons"
+          },
+          {
+            "key": "Q",
+            "box": {
+              "left": 806.65625,
+              "top": 252.1875,
+              "width": 301.34375,
+              "height": 40,
+              "right": 1108
+            },
+            "icon": {
+              "left": 806.65625,
+              "top": 254.1875,
+              "width": 36,
+              "height": 36,
+              "right": 842.65625
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Question: 5 comparisons"
+          },
+          {
+            "key": "science",
+            "box": {
+              "left": 172,
+              "top": 302.1875,
+              "width": 301.328125,
+              "height": 40,
+              "right": 473.328125
+            },
+            "icon": {
+              "left": 172,
+              "top": 304.1875,
+              "width": 36,
+              "height": 36,
+              "right": 208
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Science: 3 comparisons"
+          },
+          {
+            "key": "history",
+            "box": {
+              "left": 489.328125,
+              "top": 302.1875,
+              "width": 301.328125,
+              "height": 40,
+              "right": 790.65625
+            },
+            "icon": {
+              "left": 489.328125,
+              "top": 304.1875,
+              "width": 36,
+              "height": 36,
+              "right": 525.328125
+            },
+            "border": "1px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": true,
+            "on": "false",
+            "label": "History: 0 comparisons"
+          },
+          {
+            "key": "contradictions",
+            "box": {
+              "left": 806.65625,
+              "top": 302.1875,
+              "width": 301.34375,
+              "height": 40,
+              "right": 1108
+            },
+            "icon": {
+              "left": 806.65625,
+              "top": 304.1875,
+              "width": 36,
+              "height": 36,
+              "right": 842.65625
+            },
+            "border": "3px",
+            "copy": "block",
+            "badge": "none",
+            "badgeColor": "rgba(0, 0, 0, 0)",
+            "disabled": false,
+            "on": "true",
+            "label": "Contradictory: 3 comparisons"
+          }
+        ],
+        "gear": {
+          "left": 0,
+          "top": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0
+        },
+        "next": {
+          "left": 1068,
+          "top": 192.1875,
+          "width": 40,
+          "height": 40,
+          "right": 1108
+        },
+        "description": "The Creation",
+        "arrow": {
+          "left": 1079,
+          "top": 203.1875,
+          "width": 18,
+          "height": 18,
+          "right": 1097
+        },
+        "send": {
+          "left": 1044,
+          "top": 455.375,
+          "width": 18,
+          "height": 18,
+          "right": 1062
+        },
+        "brand": "rgb(184, 207, 229)",
+        "brandAccent": "rgb(245, 130, 32)",
+        "initialHighlights": 0
+      },
+      "citationLayout": {
+        "display": "flex",
+        "wrap": "wrap",
+        "overflow": false,
+        "bookGroups": 0,
+        "rows": [
+          {
+            "left": 241,
+            "top": 757.046875
+          },
+          {
+            "left": 309.59375,
+            "top": 757.046875
+          },
+          {
+            "left": 378.1875,
+            "top": 757.046875
+          },
+          {
+            "left": 446.78125,
+            "top": 757.046875
+          },
+          {
+            "left": 523.671875,
+            "top": 757.046875
+          },
+          {
+            "left": 589.34375,
+            "top": 757.046875
+          },
+          {
+            "left": 644.5625,
+            "top": 757.046875
+          },
+          {
+            "left": 712.71875,
+            "top": 757.046875
+          }
+        ]
+      },
+      "individualHighlight": "pass",
+      "categoryHighlight": "pass",
+      "settings": "desktop toolbar",
+      "paging": "pass"
+    }
+  ],
+  "errors": []
+}
