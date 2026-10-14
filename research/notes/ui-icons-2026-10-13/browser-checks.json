@@ -1,0 +1,2719 @@
+{
+  "checks": [
+    {
+      "width": 375,
+      "dark": false,
+      "book": 0,
+      "chapter": 1,
+      "screenshot": "genesis-1-375-light.png",
+      "geometry": {
+        "page": 375,
+        "viewport": 375,
+        "firstVerseBottom": 578.453125
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 0 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 5 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 3 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 3 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees",
+          "title": "Science · Disagrees",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · 1",
+          "title": "Science · Disagrees · 1",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Contradictions · Apparent / interpretive conflict",
+          "title": "Contradictions · Apparent / interpretive conflict",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "title": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees",
+          "title": "Science · Disagrees",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · 2",
+          "title": "Science · Disagrees · Supporting context · 2",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "title": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Apparent / interpretive conflict",
+          "title": "Contradictions · Apparent / interpretive conflict",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        }
+      ],
+      "witness": null
+    },
+    {
+      "width": 375,
+      "dark": false,
+      "book": 0,
+      "chapter": 49,
+      "screenshot": "genesis-49-375-light.png",
+      "geometry": {
+        "page": 375,
+        "viewport": 375,
+        "firstVerseBottom": 648.734375
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 2 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 2 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 0 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 2 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        }
+      ],
+      "witness": "Hebrew and Septuagint: The KJV says that in their self-will Simeon and Levi digged down a wall. The Hebrew as pointed says they hamstrung an ox, and Brenton’s Greek says they hamstrung a bull."
+    },
+    {
+      "width": 375,
+      "dark": false,
+      "book": 18,
+      "chapter": 22,
+      "screenshot": "psalms-22-375-light.png",
+      "geometry": {
+        "page": 375,
+        "viewport": 375,
+        "firstVerseBottom": 692.734375
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 2 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 0 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 0 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 0 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        }
+      ],
+      "witness": "Septuagint: Brenton’s Greek of the psalm’s opening cry has a request the KJV lacks, “attend to me”, and where the KJV has “the words of my roaring” it has “the words of my transgressions”. The cry at Matthew 27:46 has neither Greek difference."
+    },
+    {
+      "width": 375,
+      "dark": true,
+      "book": 0,
+      "chapter": 1,
+      "screenshot": "genesis-1-375-dark.png",
+      "geometry": {
+        "page": 375,
+        "viewport": 375,
+        "firstVerseBottom": 578.453125
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 0 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 5 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 3 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 3 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees",
+          "title": "Science · Disagrees",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · 1",
+          "title": "Science · Disagrees · 1",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Contradictions · Apparent / interpretive conflict",
+          "title": "Contradictions · Apparent / interpretive conflict",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "title": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees",
+          "title": "Science · Disagrees",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · 2",
+          "title": "Science · Disagrees · Supporting context · 2",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "title": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Apparent / interpretive conflict",
+          "title": "Contradictions · Apparent / interpretive conflict",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        }
+      ],
+      "witness": null
+    },
+    {
+      "width": 375,
+      "dark": true,
+      "book": 0,
+      "chapter": 49,
+      "screenshot": "genesis-49-375-dark.png",
+      "geometry": {
+        "page": 375,
+        "viewport": 375,
+        "firstVerseBottom": 648.734375
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 2 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 2 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 0 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 2 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        }
+      ],
+      "witness": "Hebrew and Septuagint: The KJV says that in their self-will Simeon and Levi digged down a wall. The Hebrew as pointed says they hamstrung an ox, and Brenton’s Greek says they hamstrung a bull."
+    },
+    {
+      "width": 375,
+      "dark": true,
+      "book": 18,
+      "chapter": 22,
+      "screenshot": "psalms-22-375-dark.png",
+      "geometry": {
+        "page": 375,
+        "viewport": 375,
+        "firstVerseBottom": 692.734375
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 2 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 0 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 0 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 0 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        }
+      ],
+      "witness": "Septuagint: Brenton’s Greek of the psalm’s opening cry has a request the KJV lacks, “attend to me”, and where the KJV has “the words of my roaring” it has “the words of my transgressions”. The cry at Matthew 27:46 has neither Greek difference."
+    },
+    {
+      "width": 1280,
+      "dark": false,
+      "book": 0,
+      "chapter": 1,
+      "screenshot": "genesis-1-1280-light.png",
+      "geometry": {
+        "page": 1280,
+        "viewport": 1280,
+        "firstVerseBottom": 595.109375
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 0 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 5 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 3 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 3 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees",
+          "title": "Science · Disagrees",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · 1",
+          "title": "Science · Disagrees · 1",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Contradictions · Apparent / interpretive conflict",
+          "title": "Contradictions · Apparent / interpretive conflict",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "title": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees",
+          "title": "Science · Disagrees",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · 2",
+          "title": "Science · Disagrees · Supporting context · 2",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "title": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Apparent / interpretive conflict",
+          "title": "Contradictions · Apparent / interpretive conflict",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        }
+      ],
+      "witness": null
+    },
+    {
+      "width": 1280,
+      "dark": false,
+      "book": 0,
+      "chapter": 49,
+      "screenshot": "genesis-49-1280-light.png",
+      "geometry": {
+        "page": 1280,
+        "viewport": 1280,
+        "firstVerseBottom": 630.25
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 2 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 2 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 0 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 2 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        }
+      ],
+      "witness": "Hebrew and Septuagint: The KJV says that in their self-will Simeon and Levi digged down a wall. The Hebrew as pointed says they hamstrung an ox, and Brenton’s Greek says they hamstrung a bull."
+    },
+    {
+      "width": 1280,
+      "dark": false,
+      "book": 18,
+      "chapter": 22,
+      "screenshot": "psalms-22-1280-light.png",
+      "geometry": {
+        "page": 1280,
+        "viewport": 1280,
+        "firstVerseBottom": 674.25
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 2 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 0 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 0 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 0 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(47, 90, 130)",
+          "background": "rgb(231, 237, 243)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        }
+      ],
+      "witness": "Septuagint: Brenton’s Greek of the psalm’s opening cry has a request the KJV lacks, “attend to me”, and where the KJV has “the words of my roaring” it has “the words of my transgressions”. The cry at Matthew 27:46 has neither Greek difference."
+    },
+    {
+      "width": 1280,
+      "dark": true,
+      "book": 0,
+      "chapter": 1,
+      "screenshot": "genesis-1-1280-dark.png",
+      "geometry": {
+        "page": 1280,
+        "viewport": 1280,
+        "firstVerseBottom": 595.109375
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 0 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 5 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 3 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 3 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees",
+          "title": "Science · Disagrees",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · 1",
+          "title": "Science · Disagrees · 1",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Contradictions · Apparent / interpretive conflict",
+          "title": "Contradictions · Apparent / interpretive conflict",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "title": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Science · Disagrees",
+          "title": "Science · Disagrees",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "atom"
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · 2",
+          "title": "Science · Disagrees · Supporting context · 2",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "title": "Science · Disagrees · Supporting context · Celestial lights and the creation sequence",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Science · Disagrees · Supporting context",
+          "title": "Science · Disagrees · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Apparent / interpretive conflict",
+          "title": "Contradictions · Apparent / interpretive conflict",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Contradictions · Context",
+          "title": "Contradictions · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "fold-horizontal"
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        }
+      ],
+      "witness": null
+    },
+    {
+      "width": 1280,
+      "dark": true,
+      "book": 0,
+      "chapter": 49,
+      "screenshot": "genesis-49-1280-dark.png",
+      "geometry": {
+        "page": 1280,
+        "viewport": 1280,
+        "firstVerseBottom": 630.25
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 2 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 2 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 0 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 2 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Unanswered question · Context · Supporting context",
+          "title": "Unanswered question · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Unanswered question · Context",
+          "title": "Unanswered question · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "circle-question-mark"
+        },
+        {
+          "label": "Contradictions · Context · Supporting context",
+          "title": "Contradictions · Context · Supporting context",
+          "width": 16,
+          "height": 16,
+          "text": "",
+          "context": true
+        }
+      ],
+      "witness": "Hebrew and Septuagint: The KJV says that in their self-will Simeon and Levi digged down a wall. The Hebrew as pointed says they hamstrung an ox, and Brenton’s Greek says they hamstrung a bull."
+    },
+    {
+      "width": 1280,
+      "dark": true,
+      "book": 18,
+      "chapter": 22,
+      "screenshot": "psalms-22-1280-dark.png",
+      "geometry": {
+        "page": 1280,
+        "viewport": 1280,
+        "firstVerseBottom": 674.25
+      },
+      "category": [
+        {
+          "label": "Translation",
+          "title": "Translation",
+          "aria": "Translation: 2 comparisons",
+          "svg": "languages",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Violation",
+          "title": "Violation",
+          "aria": "Violation: 0 comparisons",
+          "svg": "gavel",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(121, 43, 34)",
+          "background": "rgb(249, 222, 216)"
+        },
+        {
+          "label": "Unanswered question",
+          "title": "Unanswered question",
+          "aria": "Unanswered question: 0 comparisons",
+          "svg": "circle-question-mark",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(67, 80, 35)",
+          "background": "rgb(228, 235, 203)"
+        },
+        {
+          "label": "Science",
+          "title": "Science",
+          "aria": "Science: 0 comparisons",
+          "svg": "atom",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "History",
+          "title": "History",
+          "aria": "History: 0 comparisons",
+          "svg": "history",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        },
+        {
+          "label": "Contradictions",
+          "title": "Contradictions",
+          "aria": "Contradictions: 0 comparisons",
+          "svg": "fold-horizontal",
+          "hidden": "true",
+          "stroke": "2",
+          "width": 36,
+          "height": 36,
+          "color": "rgb(143, 180, 214)",
+          "background": "rgb(37, 47, 58)"
+        }
+      ],
+      "tabs": [
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        },
+        {
+          "label": "Translation · Context",
+          "title": "Translation · Context",
+          "width": 28,
+          "height": 28,
+          "text": "",
+          "context": false,
+          "svg": "languages"
+        }
+      ],
+      "witness": "Septuagint: Brenton’s Greek of the psalm’s opening cry has a request the KJV lacks, “attend to me”, and where the KJV has “the words of my roaring” it has “the words of my transgressions”. The cry at Matthew 27:46 has neither Greek difference."
+    }
+  ],
+  "contrasts": [
+    {
+      "dark": false,
+      "label": "Translation",
+      "title": "Translation",
+      "aria": "Translation: 0 comparisons",
+      "svg": "languages",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(47, 90, 130)",
+      "background": "rgb(231, 237, 243)",
+      "ratio": 6.127896588851448
+    },
+    {
+      "dark": false,
+      "label": "Violation",
+      "title": "Violation",
+      "aria": "Violation: 0 comparisons",
+      "svg": "gavel",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(121, 43, 34)",
+      "background": "rgb(249, 222, 216)",
+      "ratio": 7.548467727188989
+    },
+    {
+      "dark": false,
+      "label": "Unanswered question",
+      "title": "Unanswered question",
+      "aria": "Unanswered question: 5 comparisons",
+      "svg": "circle-question-mark",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(67, 80, 35)",
+      "background": "rgb(228, 235, 203)",
+      "ratio": 7.071249919533872
+    },
+    {
+      "dark": false,
+      "label": "Science",
+      "title": "Science",
+      "aria": "Science: 3 comparisons",
+      "svg": "atom",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(47, 90, 130)",
+      "background": "rgb(231, 237, 243)",
+      "ratio": 6.127896588851448
+    },
+    {
+      "dark": false,
+      "label": "History",
+      "title": "History",
+      "aria": "History: 0 comparisons",
+      "svg": "history",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(47, 90, 130)",
+      "background": "rgb(231, 237, 243)",
+      "ratio": 6.127896588851448
+    },
+    {
+      "dark": false,
+      "label": "Contradictions",
+      "title": "Contradictions",
+      "aria": "Contradictions: 3 comparisons",
+      "svg": "fold-horizontal",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(47, 90, 130)",
+      "background": "rgb(231, 237, 243)",
+      "ratio": 6.127896588851448
+    },
+    {
+      "dark": true,
+      "label": "Translation",
+      "title": "Translation",
+      "aria": "Translation: 0 comparisons",
+      "svg": "languages",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(143, 180, 214)",
+      "background": "rgb(37, 47, 58)",
+      "ratio": 6.251711988929452
+    },
+    {
+      "dark": true,
+      "label": "Violation",
+      "title": "Violation",
+      "aria": "Violation: 0 comparisons",
+      "svg": "gavel",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(121, 43, 34)",
+      "background": "rgb(249, 222, 216)",
+      "ratio": 7.548467727188989
+    },
+    {
+      "dark": true,
+      "label": "Unanswered question",
+      "title": "Unanswered question",
+      "aria": "Unanswered question: 5 comparisons",
+      "svg": "circle-question-mark",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(67, 80, 35)",
+      "background": "rgb(228, 235, 203)",
+      "ratio": 7.071249919533872
+    },
+    {
+      "dark": true,
+      "label": "Science",
+      "title": "Science",
+      "aria": "Science: 3 comparisons",
+      "svg": "atom",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(143, 180, 214)",
+      "background": "rgb(37, 47, 58)",
+      "ratio": 6.251711988929452
+    },
+    {
+      "dark": true,
+      "label": "History",
+      "title": "History",
+      "aria": "History: 0 comparisons",
+      "svg": "history",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(143, 180, 214)",
+      "background": "rgb(37, 47, 58)",
+      "ratio": 6.251711988929452
+    },
+    {
+      "dark": true,
+      "label": "Contradictions",
+      "title": "Contradictions",
+      "aria": "Contradictions: 3 comparisons",
+      "svg": "fold-horizontal",
+      "hidden": "true",
+      "stroke": "2",
+      "width": 36,
+      "height": 36,
+      "color": "rgb(143, 180, 214)",
+      "background": "rgb(37, 47, 58)",
+      "ratio": 6.251711988929452
+    }
+  ],
+  "errors": []
+}
