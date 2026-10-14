@@ -1,0 +1,1051 @@
+{
+  "batch": "owner-rulings",
+  "checked": "2026-10-13",
+  "ownerSource": "Direct chat instructions, not researcher recommendations",
+  "checks": [
+    {
+      "id": "booths-not-done-since-jeshua-the-son-of-nun-or-feast-of-tabernacles-kept",
+      "batch": "nehemiah-1-13",
+      "english": [
+        {
+          "ref": "Nehemiah 8:14",
+          "quote": "And they found written in the law which the Lord had commanded by Moses, that the children of Israel should dwell in booths in the feast of the seventh month:",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "ref": "Nehemiah 8:17",
+          "quote": "And all the congregation of them that were come again out of the captivity made booths, and sat under the booths: for since the days of Jeshua the son of Nun unto that day had not the children of Israel done so. And there was very great gladness.",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "ref": "Ezra 3:4",
+          "quote": "They kept also the feast of tabernacles, as it is written",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "ref": "Leviticus 23:42",
+          "quote": "Ye shall dwell in booths seven days; all that are Israelites born shall dwell in booths:",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "ref": "2 Chronicles 8:13",
+          "quote": "three times in the year, even in the feast of unleavened bread, and in the feast of weeks, and in the feast of tabernacles",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּ֣י לֹֽא־עָשׂ֡וּ מִימֵי֩ יֵשׁ֨וּעַ בִּן־נ֥וּן כֵּן֙ בְּנֵ֣י יִשְׂרָאֵ֔ל עַ֖ד הַיֹּ֣ום הַה֑וּא",
+          "stated": {
+            "chapter": 8,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/16/8/",
+              "verse": 17,
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": "17"
+          },
+          "recheckedExact": true
+        },
+        {
+          "quote": "וַֽיַּעֲשׂ֛וּ אֶת־חַ֥ג הַסֻּכֹּ֖ות כַּכָּת֑וּב",
+          "stated": {
+            "chapter": 3,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/15/3/",
+              "verse": 4,
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "4"
+          },
+          "recheckedExact": true
+        },
+        {
+          "quote": "ὅτι οὐκ ἐποίησαν ἀπὸ ἡμερῶν Ἰησοῦ υἱοῦ Ναυῆ οὕτως οἱ υἱοὶ Ἰσραὴλ ἕως τῆς ἡμέρας ἐκείνης",
+          "stated": {
+            "chapter": 8,
+            "verse": 17
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR18.htm",
+              "verse": "17",
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": "17"
+          },
+          "recheckedExact": true
+        },
+        {
+          "quote": "Καὶ ἐποίησαν τὴν ἑορτὴν τῶν σκηνῶν κατὰ τὸ γεγραμμένον",
+          "stated": {
+            "chapter": 3,
+            "verse": 4
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZR03.htm",
+              "verse": "4",
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 3,
+            "verse": "4"
+          },
+          "recheckedExact": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nehemiah 8:17",
+          "quote": "for since the days of Jeshua the son of Nun unto that day had not the children of Israel done so",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "label": "B",
+          "ref": "Ezra 3:4",
+          "quote": "They kept also the feast of tabernacles, as it is written",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "leviticus-festival-day-boundaries",
+          "title": "Festival lengths and evening boundaries",
+          "summary": "The calendar distinguishes an evening boundary from a daytime date, and seven days in booths from an eighth-day assembly.",
+          "reasoning": "The surrounding instructions explain why the ninth evening and tenth day, or seven festival days and an eighth assembly, need not be competing totals.",
+          "scope": "This reading addresses these particular dates. It does not settle ancient calendar disputes, the meaning of Sabbath in the harvest count, or correspondence with modern dates."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Since the days of Jeshua the son of Nun unto that day had not the children of Israel done so",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "summary",
+          "quote": "kept also the feast of tabernacles, as it is written",
+          "matches": [
+            "Ezra 3:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And they found written in the law which the Lord had commanded by Moses, that the children of Israel should dwell in booths in the feast of the seventh month:",
+          "matches": [
+            "Nehemiah 8:14"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "And all the congregation of them that were come again out of the captivity made booths, and sat under the booths: for since the days of Jeshua the son of Nun unto that day had not the children of Israel done so. And there was very great gladness.",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "They kept also the feast of tabernacles, as it is written",
+          "matches": [
+            "Ezra 3:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "Ye shall dwell in booths seven days; all that are Israelites born shall dwell in booths:",
+          "matches": [
+            "Leviticus 23:42"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "text",
+          "quote": "three times in the year, even in the feast of unleavened bread, and in the feast of weeks, and in the feast of tabernacles",
+          "matches": [
+            "2 Chronicles 8:13"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "done so",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "as it is written",
+          "matches": [
+            "Ezra 3:4"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the feast of booths",
+          "matches": [],
+          "kind": "Plain rendering of verified original-language quotation, not KJV"
+        },
+        {
+          "field": "scope",
+          "quote": "done so",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        },
+        {
+          "field": "scope",
+          "quote": "done so",
+          "matches": [
+            "Nehemiah 8:17"
+          ],
+          "kind": "KJV substring with case/apostrophe typography allowed"
+        }
+      ],
+      "overlapDecision": "Shared references concern different findings: Festival lengths and evening boundaries. This record concerns a distinct edition difference or material question.",
+      "recheckedAt": "2026-10-14T01:32:58.360Z",
+      "ownerHoldResolved": true,
+      "currentOverlaps": [
+        {
+          "id": "leviticus-festival-day-boundaries",
+          "ref": "Leviticus 23:27",
+          "title": "Festival lengths and evening boundaries"
+        }
+      ]
+    },
+    {
+      "id": "train-up-a-child-in-the-way-he-should-go-brentons-greek-prints-no-verse-22-6",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 22:5",
+          "quote": "Thorns and snares are in the way of the froward: he that doth keep his soul shall be far from them.",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "ref": "Proverbs 22:6",
+          "quote": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "ref": "Proverbs 22:7",
+          "quote": "The rich ruleth over the poor, and the borrower is servant to the lender.",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "חֲנֹ֣ךְ לַ֭נַּעַר עַל־פִּ֣י דַרְכֹּ֑ו גַּ֥ם כִּֽי־יַ֝זְקִ֗ין לֹֽא־יָס֥וּר מִמֶּֽנָּה",
+          "stated": {
+            "chapter": 22,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/22/",
+              "verse": 6,
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "recheckedExact": true
+        },
+        {
+          "quote": "Τρίβολοι καὶ παγίδες ἐν ὁδοῖς σκολιαῖς",
+          "stated": {
+            "chapter": 22,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO22.htm",
+              "verse": "5",
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "recheckedExact": true
+        },
+        {
+          "quote": "Πλούσιοι πτωχῶν ἄρξουσι",
+          "stated": {
+            "chapter": 22,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO22.htm",
+              "verse": "7",
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "recheckedExact": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 22:6",
+          "quote": "Train up a child in the way he should go",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+          "printedLabel": "5",
+          "quote": "Thistles and snares are in perverse ways",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+          "printedLabel": "7",
+          "quote": "The rich will rule over the poor",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Train up a child in the way he should go",
+          "matches": [
+            "Proverbs 22:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
+          "matches": [
+            "Proverbs 22:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Thorns and snares are in the way of the froward: he that doth keep his soul shall be far from them.",
+          "matches": [
+            "Proverbs 22:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
+          "matches": [
+            "Proverbs 22:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The rich ruleth over the poor, and the borrower is servant to the lender.",
+          "matches": [
+            "Proverbs 22:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Thistles and snares are in perverse ways",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The rich will rule over the poor",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "omissionChecks": [
+        {
+          "url": "https://ebible.org/grcbrent/PRO22.htm",
+          "printedLabel": "6",
+          "absent": true,
+          "limit": "This supplied printed edition only; not a claim about every Greek witness"
+        }
+      ],
+      "recheckedAt": "2026-10-14T01:33:01.857Z",
+      "ownerHoldResolved": true,
+      "printedLabels": {
+        "url": "https://ebible.org/grcbrent/PRO22.htm",
+        "labels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "7",
+          "8",
+          "8a",
+          "9",
+          "9a",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "14a",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29"
+        ],
+        "absent": "6"
+      },
+      "correction": "Narrowed whole-book search assertions to the cited page; added its complete printed verse-label list. Published summaries are unchanged.",
+      "currentOverlaps": []
+    },
+    {
+      "id": "wisdom-is-the-principal-thing-therefore-get-wisdom-brentons-greek-prints-no-verse-4-7",
+      "batch": "proverbs-1-31",
+      "english": [
+        {
+          "ref": "Proverbs 4:6",
+          "quote": "Forsake her not, and she shall preserve thee: love her, and she shall keep thee.",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "ref": "Proverbs 4:7",
+          "quote": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "ref": "Proverbs 4:8",
+          "quote": "Exalt her, and she shall promote thee: she shall bring thee to honour, when thou dost embrace her.",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "רֵאשִׁ֣ית חָ֭כְמָה קְנֵ֣ה חָכְמָ֑ה וּבְכָל־קִ֝נְיָנְךָ֗ קְנֵ֣ה בִינָֽה",
+          "stated": {
+            "chapter": 4,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/20/4/",
+              "verse": 7,
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "recheckedExact": true
+        },
+        {
+          "quote": "μηδὲ ἐγκαταλίπῃς αὐτὴν, καὶ ἀνθέξεταί σου",
+          "stated": {
+            "chapter": 4,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO04.htm",
+              "verse": "6",
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "recheckedExact": true
+        },
+        {
+          "quote": "Περιχαράκωσον αὐτὴν, καὶ ὑψώσει σε",
+          "stated": {
+            "chapter": 4,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PRO04.htm",
+              "verse": "8",
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "recheckedExact": true
+        },
+        {
+          "quote": "κτῆσαι σοφίαν",
+          "classification": "Verified absent search token in supplied chapter 4 page",
+          "matches": [],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Proverbs 4:7",
+          "quote": "Wisdom is the principal thing",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO04.htm",
+          "printedLabel": "6",
+          "quote": "And forsake it not, and it shall cleave to thee",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/PRO04.htm",
+          "printedLabel": "8",
+          "quote": "Secure it, and it shall exalt thee",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Wisdom is the principal thing; therefore get wisdom",
+          "matches": [
+            "Proverbs 4:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
+          "matches": [
+            "Proverbs 4:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Forsake her not, and she shall preserve thee: love her, and she shall keep thee.",
+          "matches": [
+            "Proverbs 4:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
+          "matches": [
+            "Proverbs 4:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Exalt her, and she shall promote thee: she shall bring thee to honour, when thou dost embrace her.",
+          "matches": [
+            "Proverbs 4:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And forsake it not, and it shall cleave to thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO04.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Secure it, and it shall exalt thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PRO04.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "omissionChecks": [
+        {
+          "url": "https://ebible.org/grcbrent/PRO04.htm",
+          "printedLabel": "7",
+          "absent": true,
+          "limit": "This supplied printed edition only; not a claim about every Greek witness"
+        }
+      ],
+      "recheckedAt": "2026-10-14T01:33:03.400Z",
+      "ownerHoldResolved": true,
+      "printedLabels": {
+        "url": "https://ebible.org/grcbrent/PRO04.htm",
+        "labels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "27a",
+          "27b"
+        ],
+        "absent": "7"
+      },
+      "correction": "Narrowed whole-book search assertions to the cited page; added its complete printed verse-label list. Published summaries are unchanged.",
+      "currentOverlaps": []
+    },
+    {
+      "id": "a-little-lower-than-the-angels-or-a-little-lower-than-the-word-printed-god",
+      "batch": "t-catch-up-1",
+      "english": [
+        {
+          "ref": "Psalms 8:5",
+          "quote": "For thou hast made him a little lower than the angels, and hast crowned him with glory and honour.",
+          "exact": true,
+          "recheckedExact": true
+        },
+        {
+          "ref": "Genesis 1:1",
+          "quote": "In the beginning God created",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַתְּחַסְּרֵ֣הוּ מְּ֭עַט מֵאֱלֹהִ֑ים",
+          "stated": {
+            "chapter": 8,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/19/8/",
+              "verse": 6,
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": "6"
+          },
+          "recheckedExact": true
+        },
+        {
+          "quote": "בָּרָ֣א אֱלֹהִ֑ים",
+          "stated": {
+            "chapter": 1,
+            "verse": 1
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/1/1/",
+              "verse": 1,
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 1,
+            "verse": "1"
+          },
+          "recheckedExact": true
+        },
+        {
+          "quote": "Ἠλάττωσας αὐτὸν βραχύ τι παρʼ ἀγγέλους",
+          "stated": {
+            "chapter": 8,
+            "verse": 6
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA008.htm",
+              "verse": "6",
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "verifiedLabel": {
+            "chapter": 8,
+            "verse": "6"
+          },
+          "recheckedExact": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Psalms 8:5",
+          "quote": "a little lower than the angels",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+          "printedLabel": "6",
+          "quote": "Thou madest him a little less than angels",
+          "exact": true,
+          "recheckedExact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "ἀγγέλους",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/PSA008.htm",
+              "verse": "6",
+              "recheckedPrintedLabel": true
+            }
+          ],
+          "printedLabelVerified": true,
+          "normalization": "Accents/case normalized only for repeated forms",
+          "recheckedExact": true
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A little lower than the angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "God",
+          "matches": [
+            "Genesis 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a little lower than the angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "God",
+          "matches": [
+            "Genesis 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "For thou hast made him a little lower than the angels, and hast crowned him with glory and honour.",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "In the beginning God created",
+          "matches": [
+            "Genesis 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Thou madest him a little less than angels",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English substring at printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "God",
+          "matches": [
+            "Genesis 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "angels",
+          "matches": [
+            "Psalms 8:5"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "recheckedAt": "2026-10-14T01:33:04.984Z",
+      "ownerHoldResolved": true,
+      "currentOverlaps": []
+    }
+  ],
+  "studies": [
+    {
+      "id": "seen",
+      "title": "Can God be seen?",
+      "overlaps": []
+    },
+    {
+      "id": "judas",
+      "title": "Judas and the field of blood",
+      "overlaps": []
+    },
+    {
+      "id": "animals",
+      "title": "Water or ground: the animals’ origin",
+      "overlaps": []
+    },
+    {
+      "id": "plants",
+      "title": "Plants before people—or after?",
+      "overlaps": []
+    },
+    {
+      "id": "soldiers",
+      "title": "David’s census: two different totals",
+      "overlaps": []
+    },
+    {
+      "id": "birth",
+      "title": "Herod, Quirinius, and the birth chronology",
+      "overlaps": []
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bolls.life/get-text/WLC/16/8/",
+      "sha256": "9fe9a438372c048718886974fbaeac8f3b75d9c9f4c339971d95bb7df628e72b"
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/15/3/",
+      "sha256": "138ea416bf3ffd088933baf1d24050af6a7f580fbcd09698eaf2d5493e127bd2"
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR18.htm",
+      "sha256": "6b0f69b5f2cf14ba309195f8de1ba2012f1990597883f58df338026e5a9dc343"
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR03.htm",
+      "sha256": "b68f2be053c343154be6b754c097f5af9154e06bbd1e4ab65b1832466352e57b"
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/20/22/",
+      "sha256": "4da5c432ded49acdd8f0394ffceed53228969ff7c94fbfdedba600cd905ffd2f"
+    },
+    {
+      "url": "https://ebible.org/grcbrent/PRO22.htm",
+      "sha256": "1ecdb47d5fc9670d069b1866412f76298255d4bc4ef39d8010e1258400a63954"
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PRO22.htm",
+      "sha256": "26eb41052cd0e0ff4cbe8040c4079ba0a1095a7f77f1b25d76c77f506153f03a"
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/20/4/",
+      "sha256": "8f2cebb1759abf17e1deca9dda730d9dc0b84a124a4960b07d76e5e92e01081e"
+    },
+    {
+      "url": "https://ebible.org/grcbrent/PRO04.htm",
+      "sha256": "29662d3aad8d45ff48fccade9aac88632eb462ce76c38415d26f1653e3581254"
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PRO04.htm",
+      "sha256": "ff57996ae617260fe29829d635abaaef685d2d2a7cbdfab77fed6216afebbef8"
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/19/8/",
+      "sha256": "e46e637b1251e7eb508a1b9873bbcc734530a690e868117a1bdafcdf5d326667"
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/1/1/",
+      "sha256": "6de742aaaa008ba225284492b09afad1f889e5d9a0da02582e5f1bfe7c983b97"
+    },
+    {
+      "url": "https://ebible.org/grcbrent/PSA008.htm",
+      "sha256": "d582b86648c484b6fbd448a45bc474cda0e96fa20c2e31d42a347c120ebcfdcf"
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/PSA008.htm",
+      "sha256": "58e959f16b6515fe4b9082de4c6ef9cdce8fd4b6603ab609e902b63ef8a0ff50"
+    }
+  ],
+  "draftHashes": {
+    "research/claude-drafts/nehemiah-1-13-records.json": "274e55c854f4c411b61297275db85364e878adff374938fcbdcc1905c3fe9c4e",
+    "research/claude-drafts/nehemiah-1-13-notes.md": "4890879fb331dc8f1a40a16ee78a27e639bcaed4dc8c8f9ac1aa6c6ad26b7593",
+    "research/claude-drafts/proverbs-1-31-records.json": "7737cca6c509ea441b262c14993532aefa3d5ac521c2f24cdb87447441b5f3cd",
+    "research/claude-drafts/proverbs-1-31-notes.md": "9e67d9fc3fd2072f8ddb7eb275d5844154b78d4af557f7e363c8e5d617eb53f9",
+    "research/claude-drafts/t-catch-up-1-records.json": "c81b88adf6f3f3d4c104ae6220c36d1d92cc6a0324dd60311aa75cb00fbbb345",
+    "research/claude-drafts/t-catch-up-1-notes.md": "e1d988e2bf962ec97d8e1d75e55fdf4959174aef0c45d0e1fe8850fda14c0d70"
+  },
+  "beforeCount": 714,
+  "afterCount": 718
+}

@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 714,
+    "evidenceRecords": 718,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 533,
-    "annotatedVerses": 3066
+    "chaptersWithAnnotations": 535,
+    "annotatedVerses": 3071
   },
   "byBook": [
     {
@@ -100,13 +100,13 @@
       "book": "Ezra",
       "chapters": 10,
       "chaptersWithAnnotations": 8,
-      "annotatedVerses": 32
+      "annotatedVerses": 33
     },
     {
       "book": "Nehemiah",
       "chapters": 13,
-      "chaptersWithAnnotations": 10,
-      "annotatedVerses": 40
+      "chaptersWithAnnotations": 11,
+      "annotatedVerses": 41
     },
     {
       "book": "Esther",
@@ -124,13 +124,13 @@
       "book": "Psalms",
       "chapters": 150,
       "chaptersWithAnnotations": 70,
-      "annotatedVerses": 128
+      "annotatedVerses": 129
     },
     {
       "book": "Proverbs",
       "chapters": 31,
-      "chaptersWithAnnotations": 13,
-      "annotatedVerses": 21
+      "chaptersWithAnnotations": 14,
+      "annotatedVerses": 23
     },
     {
       "book": "Ecclesiastes",
@@ -8753,10 +8753,12 @@
       "annotationIds": [
         "zerubbabel-son-of-pedaiah-or-son-of-shealtiel",
         "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel",
-        "foundation-laid-in-second-year-of-the-return-or-in-second-year-of-darius"
+        "foundation-laid-in-second-year-of-the-return-or-in-second-year-of-darius",
+        "booths-not-done-since-jeshua-the-son-of-nun-or-feast-of-tabernacles-kept"
       ],
       "annotatedVerses": [
         2,
+        4,
         8,
         10
       ],
@@ -8997,9 +8999,15 @@
       "book": "Nehemiah",
       "bookId": 15,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "booths-not-done-since-jeshua-the-son-of-nun-or-feast-of-tabernacles-kept"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9877,10 +9885,12 @@
       "bookId": 18,
       "chapter": 8,
       "annotationIds": [
-        "out-of-the-mouth-of-babes-ordained-strength-or-perfected-praise-greek-and-matthew"
+        "out-of-the-mouth-of-babes-ordained-strength-or-perfected-praise-greek-and-matthew",
+        "a-little-lower-than-the-angels-or-a-little-lower-than-the-word-printed-god"
       ],
       "annotatedVerses": [
-        2
+        2,
+        5
       ],
       "modes": [
         "contradictions"
@@ -11718,9 +11728,15 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "wisdom-is-the-principal-thing-therefore-get-wisdom-brentons-greek-prints-no-verse-4-7"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11911,9 +11927,11 @@
       "bookId": 19,
       "chapter": 22,
       "annotationIds": [
-        "he-that-soweth-iniquity-shall-reap-vanity-or-god-blesses-a-cheerful-and-liberal-man-greek"
+        "he-that-soweth-iniquity-shall-reap-vanity-or-god-blesses-a-cheerful-and-liberal-man-greek",
+        "train-up-a-child-in-the-way-he-should-go-brentons-greek-prints-no-verse-22-6"
       ],
       "annotatedVerses": [
+        6,
         8
       ],
       "modes": [

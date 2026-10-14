@@ -1,0 +1,47 @@
+[
+  {
+    "id": "booths-not-done-since-jeshua-the-son-of-nun-or-feast-of-tabernacles-kept",
+    "file": "nehemiah-1-13-records.json",
+    "decision": "accepted",
+    "operation": "insert",
+    "reason": "Direct owner acceptance resolves later-book scheduling hold; preserve the conditional done-so reading. Shared festival reference is a distinct finding.",
+    "tags": [],
+    "needsOwner": false
+  },
+  {
+    "id": "train-up-a-child-in-the-way-he-should-go-brentons-greek-prints-no-verse-22-6",
+    "file": "proverbs-1-31-records.json",
+    "decision": "corrected and accepted",
+    "operation": "insert",
+    "reason": "Direct owner ruling accepts a cited-page verse omission as T, witness Septuagint. Add complete printed label list and narrow unsupported whole-book absence claims to supplied page. No universal Greek or Hebrew-mistranslation claim.",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "needsOwner": false
+  },
+  {
+    "id": "wisdom-is-the-principal-thing-therefore-get-wisdom-brentons-greek-prints-no-verse-4-7",
+    "file": "proverbs-1-31-records.json",
+    "decision": "corrected and accepted",
+    "operation": "insert",
+    "reason": "Direct owner ruling accepts a cited-page verse omission as T, witness Septuagint. Add complete printed label list and narrow unsupported whole-book absence claims to supplied page. No universal Greek or Hebrew-mistranslation claim.",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "needsOwner": false
+  },
+  {
+    "id": "a-little-lower-than-the-angels-or-a-little-lower-than-the-word-printed-god",
+    "file": "t-catch-up-1-records.json",
+    "decision": "accepted",
+    "operation": "insert",
+    "reason": "Direct owner acceptance resolves semantic hold; preserve the explicit limit that angels is not excluded. Hebrew witness only; no lexicon or original-reading claim.",
+    "tags": [
+      "T"
+    ],
+    "witness": "Hebrew",
+    "needsOwner": false
+  }
+]

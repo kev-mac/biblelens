@@ -1,5 +1,15 @@
 # Claude proposal integration contract
 
+## Open questions — direct owner rulings, 2026-10-13
+
+The owner supplied these decisions directly in chat, explicitly adopting the open-question leans. They are not inferred from researcher notes. These rulings supersede earlier conflicting holds or scheduling restrictions, but quotation checks, edition limits, duplicate checks and the standing integration contract still apply.
+
+1. **Cross-book scheduling and Nehemiah booths:** publish `booths-not-done-since-jeshua-the-son-of-nun-or-feast-of-tabernacles-kept` from `nehemiah-1-13-records.json` (Nehemiah 8:17 versus Ezra 3:4), keeping its qualified reading of “done so”. A comparison between two books may be issued in the later book's session when the earlier book's batch has already been decided. This is an explicit exception to the earlier-book scheduling rule; the Nehemiah hold is resolved.
+2. **Untranslated ordinary-word names:** a name the KJV leaves untranslated qualifies as T when the Hebrew consists of ordinary words, even if another KJV verse gives the meaning. Immanuel at Isaiah 8:8 and 8:10 is approved under this rule, with witness `Hebrew`; Claude will issue the record with the Jeremiah 1–29 batch. Codex must not create or research that future record independently.
+3. **Septuagint page omissions:** a verse the cited Septuagint page does not print qualifies as a T difference with witness `Septuagint`, provided the record says which verse numbers that page prints. Keep the Proverbs 22:6 and 4:7 records. State the printed-edition limit; do not claim every Greek witness omits the verse, identify an original reading, or present this as a Hebrew mistranslation.
+4. **Explicit exclusions:** “virgin” at Isaiah 7:14 is not T; the Q record stands. “Lucifer” at Isaiah 14:12, Psalm 151, and 2 Chronicles 34:14 receive no record. Do not generate or integrate records for these excluded findings under these rulings.
+5. **Psalm 8:5:** keep `a-little-lower-than-the-angels-or-a-little-lower-than-the-word-printed-god` with witness `Hebrew` and its stated limit: the comparison does not establish that the Hebrew noun cannot denote beings other than God or that “angels” is excluded. The Septuagint agrees with the KJV here and is not a differing witness. This direct owner acceptance resolves the earlier hold without removing that limit.
+
 ## T — Translation: direct owner ruling, 2026-10-13
 
 This ruling replaces H and G with one independent T (Translation) toggle. V and Q remain unchanged. T means the KJV's English differs in meaning from the original-language text it renders: a plainly different word, name or meaning, or a name the KJV transliterates where the original has ordinary words. Keep the test of a real difference in meaning; a wording-only difference does not qualify. A plainly different word counts without a dictionary citation if the record states what each text prints and does not claim which is original. This supersedes earlier H/G terminology and qualification instructions where they differ; prior interpretation and quotation limits still apply.
