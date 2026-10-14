@@ -3,6 +3,12 @@
 A log, newest first. Nothing here stops the work. Each entry says what was decided by the standing rules and what to tell Codex to decide otherwise. Entries marked ANSWERED were settled by the owner.
 
 
+## 2026-10-14 — V rule updated: two defaults taken (no V check has been run)
+
+Question: your example (from Gemini) includes (a) Jesus and the Sabbath and (b) the Hebrew midwives and Rahab. Under the updated V test, (a) the same texts argue the act was lawful, so it is not clearly broken; (b) the midwives acted before Sinai (Exodus 1) and Rahab was not an Israelite, both excluded by the rule.
+Decided: both stay out (the stricter reading). Hezekiah’s Passover and David’s shewbread are the clear cases and are the starting candidates.
+To decide otherwise: tell Claude and Codex that an act the same texts defend still counts as V when it plainly breaks the written law (Jesus and the Sabbath), and/or that the pre-Sinai and non-Israelite exclusions are lifted for V.
+
 ## 2026-10-14 — Research plan finished (no record)
 
 Every unit in the Session plan is done (Revelation 1–22 was the last), and `ALL-DONE.txt` is written. The scheduled task `scripture-lens-next-book` can be switched off. Codex still has ten or more batches waiting (Matthew through Revelation).

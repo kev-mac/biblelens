@@ -16,7 +16,7 @@ Last updated 2026-10-14 (after the Revelation session; the plan is finished). Re
 - **Tags** (H and G are replaced by T from 2026-10-13; see “Tag T replaces H and G” below)
   - **H** — the KJV differs in meaning from the Hebrew.
   - **G** — the Greek differs from the KJV. State "Septuagint" (Old Testament) or "Greek New Testament".
-  - **V** — a law, statute or commandment clearly broken and clearly unchecked anywhere in the Bible, by someone under the Law at the time. Pre-Sinai acts and non-Israelites do not qualify. Acts God commands in the story are contradictions, not violations.
+  - **V** — a law, statute or commandment clearly broken and clearly unchecked anywhere in the Bible, by someone under the Law at the time. **(Updated 2026-10-14: see “Owner ruling: V updated”.)** Pre-Sinai acts and non-Israelites do not qualify. Acts God commands in the story are contradictions, not violations.
   - Untagged records are allowed for direct contradictions that involve no translation or law issue.
 
 ## What to propose
@@ -123,7 +123,7 @@ Codex accepted 5 of 7 as written, corrected 1 and held 1; reasons are in `resear
 Codex accepted 16 of 22 as written, corrected 3 and held 3; reasons are in `research/notes/claude-ready-1-samuel-2026-10-12.md` and its `-decisions.json`. 2 Samuel 21:8 and 21:19 are published.
 
 - **Owner ruling, H and G together:** when the Greek agrees with the Hebrew against the KJV, tag both H and G. Confirmed.
-- **Owner ruling, V:** a later verse that calls an act "not lawful" without condemning it does not by itself count as a check. But `david-shewbread-not-lawful` was still held, because the record limited its search for a rebuke to two passages. **A V record must state a whole-Bible check and what it covered.** If that check cannot be made and described, do not propose the V.
+- **Owner ruling, V:** a later verse that calls an act "not lawful" without condemning it does not by itself count as a check. But `david-shewbread-not-lawful` was still held, because the record limited its search for a rebuke to two passages. [Superseded 2026-10-14 by “Owner ruling: V updated”: a V record states the check actually made; a whole-Bible check is no longer required.] If the check actually made cannot be stated plainly, do not propose the V.
 - **No claims about translators or print.** Do not say why the KJV translators chose a wording, and do not assert what is in italics in printed KJVs; the packaged text does not show italics. Say only what the three texts print.
 - **No claims about what a character knew or meant** beyond the quoted words (`saul-asks-whose-son-david-greek-lacks` was corrected for this).
 - **Quote every word the gloss depends on**, including a negation (`οὐκ` was missing at 1 Samuel 10:27).
@@ -227,6 +227,27 @@ Codex integrates through a scheduled task in the ChatGPT app, not by hand. Each 
 - Do not rewrite a records file after its notes file exists; Codex may already have taken it. Issue corrections as a new batch file.
 - One batch per run, oldest first. A batch may wait for the next run; that is normal.
 - Codex holds any record that needs an owner ruling it has not been given and lists it under "Needs owner" in its notes. Check for that list at the start of each session and bring it to the owner.
+
+## Owner ruling: V updated (2026-10-14)
+
+Given by the owner after the first full pass found no V record in 66 books. The owner's example of the intended standard: **a person under the Law clearly broke a specific commandment, and the Bible records no reproach or punishment from God.** (Examples the owner gave: David and the shewbread; Hezekiah’s Passover.) **No V check has been run under this rule yet. Do not run one until the owner says go.**
+
+### The updated V test
+A record qualifies as V when all of these hold:
+1. **A specific law is identified** by verse (a commandment, statute or ritual rule), and the record says what it requires.
+2. **The act is described** in the text, and it clearly breaks that law as worded. A shared verb or a similar theme is not enough; an act the text never describes is not clearly broken.
+3. **The person was under the Law at the time:** an Israelite after Sinai. Acts before Sinai and acts by non-Israelites do not qualify (unchanged).
+4. **No reproach or punishment from God follows.** All of these count as unchecked: silence, commendation, blessing, healing, or a pardon granted at the person’s request. These do count as a check: a rebuke or punishment from God; a rebuke by a prophet or by the narrator speaking for God; an evaluative remark by the narrator against the act (Judges 17:6 stands). **Reproach from other people does not count as a check.**
+5. **The check is the one actually made, stated plainly.** The record says what was read: the passage and its chapter, the verses that cite or comment on the act (cross-references and a word search on the person and the key terms), and that this is not a reading of the whole Bible. The earlier requirement of a “whole-Bible check” is withdrawn: it could not be met and no record was ever possible under it.
+6. **Acts God commands in the story** are contradictions, not violations (unchanged).
+7. **Where a later text calls the act “not lawful”** and does not condemn it, that still does not count as a check (unchanged; this is the David case, Matthew 12:4).
+
+### Two defaults the owner can overturn (logged in owner-questions.md)
+- **An act the same texts argue was lawful is not “clearly broken”** (Jesus and the Sabbath, Matthew 12; Mark 2): not a V. Default stricter.
+- **The exclusions for pre-Sinai acts and non-Israelites stay** (the Hebrew midwives, Exodus 1; Rahab, Joshua 2). Default stricter.
+
+### When the owner says go
+One dedicated session (or a few) collects every V candidate the notes files already name, applies this test uniformly, and issues V records with the statement of the check made. Candidates to start from: `david-shewbread-not-lawful` (1 Samuel 21:6, held earlier because its search was limited to two passages) and Hezekiah’s Passover (2 Chronicles 30:18–20 with Numbers 9:10–13). **Status: not started.**
 
 ## Session plan (owner-approved 2026-10-13)
 
