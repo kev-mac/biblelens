@@ -1,0 +1,308 @@
+{
+  "batch": "mark-1-16",
+  "completeBatch": true,
+  "pendingRecords": [],
+  "checked": "2026-10-14T13:05:23.535Z",
+  "draftHashes": {
+    "mark-1-16-records.json": "9dc505e95a0cb2b23664fa2ae96ca9df93067b81093f000a379108ac69d327ae",
+    "mark-1-16-q-records.json": "4e14807f3eb2bc0cf167ecaef5ff152271e8d567bb97ae250de7c4403d951d2a",
+    "mark-1-16-notes.md": "ee65eabcd6dc269e4055f2d8555a9fcf00c20cc2f0567c25b2f82a287ff58cd5",
+    "mark-1-16-q-notes.md": "05f60eeff7965078857fb2ce57fdea6a9839e172da6fd0b4b497add9c1b73061"
+  },
+  "sourceCount": 46,
+  "sourceErrors": [],
+  "counts": {
+    "records": 47,
+    "sides": 63,
+    "greekQuotedForms": 137,
+    "exactGreekForms": 137,
+    "englishQuotedFragments": null,
+    "exactKjvFragments": null,
+    "classifiedEnglishGlossesParaphrasesOrCrossVerse": 46
+  },
+  "sideErrors": [],
+  "greekAddressErrors": [],
+  "greekQuoteErrors": [],
+  "englishClassifications": [
+    {
+      "id": "as-it-is-written-in-the-prophets-or-in-isaiah-the-prophet-mark-1-2-greek-new-testament",
+      "quote": "in Isaiah the prophet",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "the-gospel-of-the-kingdom-of-god-or-the-gospel-of-god-mark-1-14-greek-new-testament",
+      "quote": "the gospel of God",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "in-danger-of-eternal-damnation-or-liable-to-an-eternal-sin-mark-3-29-greek-new-testament",
+      "quote": "an eternal sin",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "in-danger-of-eternal-damnation-or-liable-to-an-eternal-sin-mark-3-29-greek-new-testament",
+      "quote": "eternal judgment",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "thy-mother-and-thy-brethren-or-and-thy-sisters-mark-3-32-greek-new-testament",
+      "quote": "and thy sisters",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "thy-mother-and-thy-brethren-or-and-thy-sisters-mark-3-32-greek-new-testament",
+      "quote": "and your sisters",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "unto-you-that-hear-shall-more-be-given-or-no-that-hear-mark-4-24-greek-new-testament",
+      "quote": "more will be added to you",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "unto-you-that-hear-shall-more-be-given-or-no-that-hear-mark-4-24-greek-new-testament",
+      "quote": "to you who hear",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "he-did-many-things-or-he-was-greatly-perplexed-mark-6-20-greek-new-testament",
+      "quote": "he was greatly perplexed",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "he-did-many-things-or-he-was-greatly-perplexed-mark-6-20-greek-new-testament",
+      "quote": "was perplexed",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "wash-their-hands-oft-or-with-the-fist-mark-7-3-greek-new-testament",
+      "quote": "frequently",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "purging-all-meats-or-declaring-all-foods-participle-mark-7-19-greek-new-testament",
+      "quote": "all the foods",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "tyre-and-sidon-or-tyre-and-through-sidon-mark-7-24-7-31-greek-new-testament",
+      "quote": "through Sidon",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "nor-tell-it-to-any-in-the-town-or-clause-absent-mark-8-26-greek-new-testament",
+      "quote": "do not enter the village",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "if-thou-canst-believe-or-if-you-can-mark-9-23-greek-new-testament",
+      "quote": "If you can?",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "if-thou-canst-believe-or-if-you-can-mark-9-23-greek-new-testament",
+      "quote": "can believe",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "if-thou-canst-believe-or-if-you-can-mark-9-23-greek-new-testament",
+      "quote": "If you can",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "if-thou-canst-believe-or-if-you-can-mark-9-23-greek-new-testament",
+      "quote": "If you can believe",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "with-tears-lord-i-believe-or-i-believe-mark-9-24-greek-new-testament",
+      "quote": "I believe; help my unbelief",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "rise-the-third-day-or-after-three-days-mark-9-31-10-34-greek-new-testament",
+      "quote": "on the third day",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "into-the-fire-that-never-shall-be-quenched-or-into-gehenna-mark-9-45-greek-new-testament",
+      "quote": "into Gehenna",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "into-the-fire-that-never-shall-be-quenched-or-into-gehenna-mark-9-45-greek-new-testament",
+      "quote": "into the unquenchable fire",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "and-cleave-to-his-wife-or-clause-absent-mark-10-7-greek-new-testament",
+      "quote": "his father and his mother",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "and-cleave-to-his-wife-or-clause-absent-mark-10-7-greek-new-testament",
+      "quote": "And they twain shall be one flesh",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "take-up-the-cross-or-follow-me-only-mark-10-21-greek-new-testament",
+      "quote": "come, follow me",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "take-up-the-cross-or-follow-me-only-mark-10-21-greek-new-testament",
+      "quote": "having taken up the cross",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "for-them-that-trust-in-riches-or-no-qualifier-mark-10-24-greek-new-testament",
+      "quote": "those who trust in riches",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "cast-stones-and-wounded-in-the-head-or-struck-and-dishonoured-mark-12-4-greek-new-testament",
+      "quote": "having stoned",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "cast-stones-and-wounded-in-the-head-or-struck-and-dishonoured-mark-12-4-greek-new-testament",
+      "quote": "sent away",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "cast-stones-and-wounded-in-the-head-or-struck-and-dishonoured-mark-12-4-greek-new-testament",
+      "quote": "dishonoured",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "the-first-of-all-the-commandments-or-the-first-is-mark-12-29-12-30-greek-new-testament",
+      "quote": "the first is",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "neither-do-ye-premeditate-or-no-premeditate-mark-13-11-greek-new-testament",
+      "quote": "nor premeditate",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "and-thy-speech-agreeth-thereto-or-clause-absent-mark-14-70-greek-new-testament",
+      "quote": "and your speech is like it",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "and-thy-speech-agreeth-thereto-or-clause-absent-mark-14-70-greek-new-testament",
+      "quote": "for you are a Galilean",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "the-multitude-crying-aloud-or-the-multitude-going-up-mark-15-8-greek-new-testament",
+      "quote": "the crowd having gone up",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "the-multitude-crying-aloud-or-the-multitude-going-up-mark-15-8-greek-new-testament",
+      "quote": "having cried out",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "the-multitude-crying-aloud-or-the-multitude-going-up-mark-15-8-greek-new-testament",
+      "quote": "having gone up",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "and-the-scripture-was-fulfilled-numbered-with-the-transgressors-or-no-text-mark-15-28-greek-new-testament",
+      "quote": "the scripture was fulfilled, And he was numbered with the transgressors",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "that-he-so-cried-out-and-gave-up-the-ghost-or-that-he-so-gave-up-the-ghost-mark-15-39-greek-new-testament",
+      "quote": "saw that he so expired",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "that-he-so-cried-out-and-gave-up-the-ghost-or-that-he-so-gave-up-the-ghost-mark-15-39-greek-new-testament",
+      "quote": "having cried out",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "neither-said-they-any-thing-to-any-man-or-did-run-to-bring-his-disciples-word-mark-16-8-matthew-28-8",
+      "quote": "said nothing to any man",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "neither-said-they-any-thing-to-any-man-or-did-run-to-bring-his-disciples-word-mark-16-8-matthew-28-8",
+      "quote": "ran to bring his disciples word",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "and-thaddaeus-or-judas-the-brother-of-james-mark-3-18-luke-6-16",
+      "quote": "Judas of James",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "presently-withered-away-or-in-the-morning-dried-up-from-the-roots-matthew-21-19-mark-11-20",
+      "quote": "presently withered away",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "presently-withered-away-or-in-the-morning-dried-up-from-the-roots-matthew-21-19-mark-11-20",
+      "quote": "How soon",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    },
+    {
+      "id": "herod-would-have-put-him-to-death-or-herodias-would-have-killed-him-but-she-could-not-matthew-14-5-mark-6-19",
+      "quote": "would have killed him; but she could not: for Herod feared John, knowing that he was a just man and an holy, and observed him",
+      "matches": [],
+      "classification": "Greek rendering, paraphrase, grammatical gloss, ellipsis, or quotation spanning more than one packaged verse; exact KJV sides were checked separately."
+    }
+  ],
+  "duplicateIds": [],
+  "existingEvidenceCount": 1075,
+  "builtInStudyReview": "Reviewed all six ENTRIES studies; no Mark proposal duplicates a built-in study.",
+  "interpretationLimits": "Accepted records retain edition-specific, reconciliation, and Q limits. Annotation presence is not exhaustive review."
+}

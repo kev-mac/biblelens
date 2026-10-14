@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1075,
+    "evidenceRecords": 1125,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 714,
-    "annotatedVerses": 3479
+    "chaptersWithAnnotations": 728,
+    "annotatedVerses": 3542
   },
   "byBook": [
     {
@@ -249,26 +249,26 @@
     {
       "book": "Matthew",
       "chapters": 28,
-      "chaptersWithAnnotations": 23,
-      "annotatedVerses": 69
+      "chaptersWithAnnotations": 24,
+      "annotatedVerses": 72
     },
     {
       "book": "Mark",
       "chapters": 16,
-      "chaptersWithAnnotations": 8,
-      "annotatedVerses": 19
+      "chaptersWithAnnotations": 16,
+      "annotatedVerses": 71
     },
     {
       "book": "Luke",
       "chapters": 24,
-      "chaptersWithAnnotations": 6,
-      "annotatedVerses": 18
+      "chaptersWithAnnotations": 9,
+      "annotatedVerses": 21
     },
     {
       "book": "John",
       "chapters": 21,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 10
+      "chaptersWithAnnotations": 5,
+      "annotatedVerses": 15
     },
     {
       "book": "Acts",
@@ -16361,9 +16361,15 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "herod-would-have-put-him-to-death-or-herodias-would-have-killed-him-but-she-could-not-matthew-14-5-mark-6-19"
+      ],
+      "annotatedVerses": [
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16473,10 +16479,12 @@
       "bookId": 39,
       "chapter": 21,
       "annotationIds": [
-        "an-ass-and-a-colt-or-a-colt-matthew-21-2-mark-11-2"
+        "an-ass-and-a-colt-or-a-colt-matthew-21-2-mark-11-2",
+        "presently-withered-away-or-in-the-morning-dried-up-from-the-roots-matthew-21-19-mark-11-20"
       ],
       "annotatedVerses": [
-        2
+        2,
+        19
       ],
       "modes": [
         "contradictions"
@@ -16599,10 +16607,12 @@
       "chapter": 28,
       "annotationIds": [
         "the-end-of-the-world-or-the-completion-of-the-age-matthew-13-39-24-3-28-20-greek-new-testament",
-        "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1"
+        "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1",
+        "neither-said-they-any-thing-to-any-man-or-did-run-to-bring-his-disciples-word-mark-16-8-matthew-28-8"
       ],
       "annotatedVerses": [
         1,
+        8,
         20
       ],
       "modes": [
@@ -16614,9 +16624,19 @@
       "book": "Mark",
       "bookId": 40,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-son-of-god-or-no-title-mark-1-1-greek-new-testament",
+        "as-it-is-written-in-the-prophets-or-in-isaiah-the-prophet-mark-1-2-greek-new-testament",
+        "the-gospel-of-the-kingdom-of-god-or-the-gospel-of-god-mark-1-14-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16638,18 +16658,34 @@
       "book": "Mark",
       "bookId": 40,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-danger-of-eternal-damnation-or-liable-to-an-eternal-sin-mark-3-29-greek-new-testament",
+        "thy-mother-and-thy-brethren-or-and-thy-sisters-mark-3-32-greek-new-testament",
+        "and-thaddaeus-or-judas-the-brother-of-james-mark-3-18-luke-6-16"
+      ],
+      "annotatedVerses": [
+        18,
+        29,
+        32
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Mark",
       "bookId": 40,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "unto-you-that-hear-shall-more-be-given-or-no-that-hear-mark-4-24-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16674,10 +16710,16 @@
       "bookId": 40,
       "chapter": 6,
       "annotationIds": [
-        "neither-staves-or-save-a-staff-only-matthew-10-10-mark-6-8"
+        "neither-staves-or-save-a-staff-only-matthew-10-10-mark-6-8",
+        "more-tolerable-for-sodom-and-gomorrha-or-verse-ends-mark-6-11-greek-new-testament",
+        "he-did-many-things-or-he-was-greatly-perplexed-mark-6-20-greek-new-testament",
+        "herod-would-have-put-him-to-death-or-herodias-would-have-killed-him-but-she-could-not-matthew-14-5-mark-6-19"
       ],
       "annotatedVerses": [
-        8
+        8,
+        11,
+        19,
+        20
       ],
       "modes": [
         "contradictions"
@@ -16688,27 +16730,69 @@
       "book": "Mark",
       "bookId": 40,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "wash-their-hands-oft-or-with-the-fist-mark-7-3-greek-new-testament",
+        "as-the-washing-of-pots-and-cups-or-verse-ends-mark-7-8-greek-new-testament",
+        "purging-all-meats-or-declaring-all-foods-participle-mark-7-19-greek-new-testament",
+        "tyre-and-sidon-or-tyre-and-through-sidon-mark-7-24-7-31-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        3,
+        8,
+        19,
+        24,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Mark",
       "bookId": 40,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "nor-tell-it-to-any-in-the-town-or-clause-absent-mark-8-26-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Mark",
       "bookId": 40,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "exceeding-white-as-snow-or-no-snow-mark-9-3-greek-new-testament",
+        "if-thou-canst-believe-or-if-you-can-mark-9-23-greek-new-testament",
+        "with-tears-lord-i-believe-or-i-believe-mark-9-24-greek-new-testament",
+        "rise-the-third-day-or-after-three-days-mark-9-31-10-34-greek-new-testament",
+        "where-their-worm-dieth-not-or-no-text-mark-9-44-9-46-greek-new-testament",
+        "into-the-fire-that-never-shall-be-quenched-or-into-gehenna-mark-9-45-greek-new-testament",
+        "every-sacrifice-shall-be-salted-with-salt-or-clause-absent-mark-9-49-greek-new-testament",
+        "after-six-days-or-about-an-eight-days-after-mark-9-2-luke-9-28",
+        "every-one-shall-be-salted-with-fire-who-and-what-is-the-salting-mark-9-49"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        23,
+        24,
+        31,
+        44,
+        45,
+        46,
+        49
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16719,12 +16803,20 @@
         "coverage-nt-jericho",
         "coverage-nt-divorce",
         "two-blind-men-or-a-certain-blind-man-matthew-20-30-mark-10-46-luke-18-35",
-        "the-mother-of-zebedees-children-or-james-and-john-matthew-20-20-mark-10-35"
+        "the-mother-of-zebedees-children-or-james-and-john-matthew-20-20-mark-10-35",
+        "rise-the-third-day-or-after-three-days-mark-9-31-10-34-greek-new-testament",
+        "and-cleave-to-his-wife-or-clause-absent-mark-10-7-greek-new-testament",
+        "take-up-the-cross-or-follow-me-only-mark-10-21-greek-new-testament",
+        "for-them-that-trust-in-riches-or-no-qualifier-mark-10-24-greek-new-testament"
       ],
       "annotatedVerses": [
+        7,
         10,
         11,
         12,
+        21,
+        24,
+        34,
         35,
         46,
         47,
@@ -16744,10 +16836,18 @@
       "bookId": 40,
       "chapter": 11,
       "annotationIds": [
-        "an-ass-and-a-colt-or-a-colt-matthew-21-2-mark-11-2"
+        "an-ass-and-a-colt-or-a-colt-matthew-21-2-mark-11-2",
+        "that-cometh-in-the-name-of-the-lord-or-no-name-mark-11-10-greek-new-testament",
+        "if-ye-do-not-forgive-neither-will-your-father-or-no-text-mark-11-26-greek-new-testament",
+        "presently-withered-away-or-in-the-morning-dried-up-from-the-roots-matthew-21-19-mark-11-20",
+        "cleansing-the-temple-in-the-last-week-or-at-the-first-passover-mark-11-15-john-2-15"
       ],
       "annotatedVerses": [
-        2
+        2,
+        10,
+        15,
+        20,
+        26
       ],
       "modes": [
         "contradictions"
@@ -16758,29 +16858,16 @@
       "book": "Mark",
       "bookId": 40,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
-      "researchStatus": "exhaustive-review-not-certified"
-    },
-    {
-      "book": "Mark",
-      "bookId": 40,
-      "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
-      "researchStatus": "exhaustive-review-not-certified"
-    },
-    {
-      "book": "Mark",
-      "bookId": 40,
-      "chapter": 14,
       "annotationIds": [
-        "before-the-cock-crow-thrice-or-before-the-cock-crow-twice-matthew-26-34-mark-14-30"
+        "cast-stones-and-wounded-in-the-head-or-struck-and-dishonoured-mark-12-4-greek-new-testament",
+        "the-first-of-all-the-commandments-or-the-first-is-mark-12-29-12-30-greek-new-testament",
+        "and-with-all-the-soul-or-no-soul-mark-12-33-greek-new-testament"
       ],
       "annotatedVerses": [
-        30
+        4,
+        29,
+        30,
+        33
       ],
       "modes": [
         "contradictions"
@@ -16790,12 +16877,69 @@
     {
       "book": "Mark",
       "bookId": 40,
-      "chapter": 15,
+      "chapter": 13,
       "annotationIds": [
-        "this-is-jesus-the-king-of-the-jews-or-the-king-of-the-jews-or-jesus-of-nazareth-matthew-27-37-john-19-19"
+        "famines-and-troubles-the-beginnings-of-sorrows-or-ends-at-famines-mark-13-8-greek-new-testament",
+        "neither-do-ye-premeditate-or-no-premeditate-mark-13-11-greek-new-testament",
+        "spoken-of-by-daniel-the-prophet-or-no-name-mark-13-14-greek-new-testament",
+        "watch-and-pray-or-watch-only-mark-13-33-greek-new-testament",
+        "let-him-that-readeth-understand-who-is-the-reader-mark-13-14"
       ],
       "annotatedVerses": [
-        26
+        8,
+        11,
+        14,
+        33
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
+      "researchStatus": "exhaustive-review-not-certified"
+    },
+    {
+      "book": "Mark",
+      "bookId": 40,
+      "chapter": 14,
+      "annotationIds": [
+        "before-the-cock-crow-thrice-or-before-the-cock-crow-twice-matthew-26-34-mark-14-30",
+        "and-thy-speech-agreeth-thereto-or-clause-absent-mark-14-70-greek-new-testament",
+        "the-passover-killed-on-the-first-day-of-unleavened-bread-or-not-yet-eaten-mark-14-12-john-18-28",
+        "a-certain-young-man-with-a-linen-cloth-who-was-he-mark-14-51"
+      ],
+      "annotatedVerses": [
+        12,
+        30,
+        51,
+        70
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
+      "researchStatus": "exhaustive-review-not-certified"
+    },
+    {
+      "book": "Mark",
+      "bookId": 40,
+      "chapter": 15,
+      "annotationIds": [
+        "this-is-jesus-the-king-of-the-jews-or-the-king-of-the-jews-or-jesus-of-nazareth-matthew-27-37-john-19-19",
+        "the-multitude-crying-aloud-or-the-multitude-going-up-mark-15-8-greek-new-testament",
+        "and-the-scripture-was-fulfilled-numbered-with-the-transgressors-or-no-text-mark-15-28-greek-new-testament",
+        "that-he-so-cried-out-and-gave-up-the-ghost-or-that-he-so-gave-up-the-ghost-mark-15-39-greek-new-testament",
+        "the-third-hour-or-about-the-sixth-hour-mark-15-25-john-19-14",
+        "simon-compelled-to-bear-his-cross-or-he-bearing-his-cross-mark-15-21-john-19-17",
+        "women-looking-on-afar-off-or-stood-by-the-cross-mark-15-40-john-19-25"
+      ],
+      "annotatedVerses": [
+        8,
+        21,
+        25,
+        26,
+        28,
+        39,
+        40
       ],
       "modes": [
         "contradictions"
@@ -16807,10 +16951,14 @@
       "bookId": 40,
       "chapter": 16,
       "annotationIds": [
-        "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1"
+        "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1",
+        "neither-said-they-any-thing-to-any-man-or-did-run-to-bring-his-disciples-word-mark-16-8-matthew-28-8",
+        "a-young-man-sitting-on-the-right-side-or-two-men-in-shining-garments-mark-16-5-luke-24-4"
       ],
       "annotatedVerses": [
-        2
+        2,
+        5,
+        8
       ],
       "modes": [
         "contradictions"
@@ -16893,9 +17041,15 @@
       "book": "Luke",
       "bookId": 41,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-thaddaeus-or-judas-the-brother-of-james-mark-3-18-luke-6-16"
+      ],
+      "annotatedVerses": [
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16926,9 +17080,15 @@
       "book": "Luke",
       "bookId": 41,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "after-six-days-or-about-an-eight-days-after-mark-9-2-luke-9-28"
+      ],
+      "annotatedVerses": [
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -17081,9 +17241,15 @@
       "book": "Luke",
       "bookId": 41,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-young-man-sitting-on-the-right-side-or-two-men-in-shining-garments-mark-16-5-luke-24-4"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -17108,9 +17274,15 @@
       "book": "John",
       "bookId": 42,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "cleansing-the-temple-in-the-last-week-or-at-the-first-passover-mark-11-15-john-2-15"
+      ],
+      "annotatedVerses": [
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -17252,9 +17424,15 @@
       "book": "John",
       "bookId": 42,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-passover-killed-on-the-first-day-of-unleavened-bread-or-not-yet-eaten-mark-14-12-john-18-28"
+      ],
+      "annotatedVerses": [
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -17263,10 +17441,16 @@
       "chapter": 19,
       "annotationIds": [
         "look-upon-me-whom-they-have-pierced-or-look-on-him-whom-they-pierced-zechariah-12-10",
-        "this-is-jesus-the-king-of-the-jews-or-the-king-of-the-jews-or-jesus-of-nazareth-matthew-27-37-john-19-19"
+        "this-is-jesus-the-king-of-the-jews-or-the-king-of-the-jews-or-jesus-of-nazareth-matthew-27-37-john-19-19",
+        "the-third-hour-or-about-the-sixth-hour-mark-15-25-john-19-14",
+        "simon-compelled-to-bear-his-cross-or-he-bearing-his-cross-mark-15-21-john-19-17",
+        "women-looking-on-afar-off-or-stood-by-the-cross-mark-15-40-john-19-25"
       ],
       "annotatedVerses": [
+        14,
+        17,
         19,
+        25,
         37
       ],
       "modes": [
