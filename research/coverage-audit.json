@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 999,
+    "evidenceRecords": 1021,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 675,
-    "annotatedVerses": 3380
+    "chaptersWithAnnotations": 684,
+    "annotatedVerses": 3404
   },
   "byBook": [
     {
@@ -232,13 +232,13 @@
       "book": "Haggai",
       "chapters": 2,
       "chaptersWithAnnotations": 2,
-      "annotatedVerses": 12
+      "annotatedVerses": 14
     },
     {
       "book": "Zechariah",
       "chapters": 14,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 13
+      "chaptersWithAnnotations": 10,
+      "annotatedVerses": 33
     },
     {
       "book": "Malachi",
@@ -250,7 +250,7 @@
       "book": "Matthew",
       "chapters": 28,
       "chaptersWithAnnotations": 4,
-      "annotatedVerses": 17
+      "annotatedVerses": 18
     },
     {
       "book": "Mark",
@@ -267,8 +267,8 @@
     {
       "book": "John",
       "chapters": 21,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 6
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 7
     },
     {
       "book": "Acts",
@@ -15794,7 +15794,8 @@
       "bookId": 36,
       "chapter": 1,
       "annotationIds": [
-        "exp-late-36-1-1"
+        "exp-late-36-1-1",
+        "i-called-for-a-drought-or-i-will-bring-a-sword-haggai-1-11-greek"
       ],
       "annotatedVerses": [
         1,
@@ -15810,7 +15811,8 @@
         11
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -15819,9 +15821,13 @@
       "bookId": 36,
       "chapter": 2,
       "annotationIds": [
-        "foundation-laid-in-second-year-of-the-return-or-in-second-year-of-darius"
+        "foundation-laid-in-second-year-of-the-return-or-in-second-year-of-darius",
+        "in-this-place-will-i-give-peace-or-peace-of-soul-for-a-possession-haggai-2-9-greek",
+        "according-to-the-word-that-i-covenanted-with-you-brentons-greek-prints-no-such-clause-haggai-2-5"
       ],
       "annotatedVerses": [
+        5,
+        9,
         18
       ],
       "modes": [
@@ -15833,9 +15839,15 @@
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "among-the-myrtle-trees-or-between-the-shady-mountains-zechariah-1-8-greek"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15861,13 +15873,18 @@
       "bookId": 37,
       "chapter": 4,
       "annotationIds": [
-        "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel"
+        "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel",
+        "before-zerubbabel-thou-shalt-become-a-plain-or-that-thou-shouldest-prosper-zechariah-4-7-greek",
+        "these-are-the-two-anointed-ones-who-are-the-two-anointed-ones-zechariah-4-14"
       ],
       "annotatedVerses": [
-        9
+        7,
+        9,
+        14
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -15875,18 +15892,38 @@
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-flying-roll-or-a-flying-sickle-zechariah-5-1-greek",
+        "this-is-their-resemblance-or-this-is-their-iniquity-zechariah-5-6-greek",
+        "this-is-a-woman-that-sitteth-in-the-midst-of-the-ephah-who-or-what-is-she-zechariah-5-7"
+      ],
+      "annotatedVerses": [
+        1,
+        6,
+        7
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "heldai-tobijah-and-jedaiah-or-the-chief-men-and-the-useful-men-zechariah-6-10-and-6-14-greek",
+        "he-shall-be-a-priest-upon-his-throne-or-a-priest-on-his-right-hand-zechariah-6-13-greek"
+      ],
+      "annotatedVerses": [
+        10,
+        13,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15937,45 +15974,87 @@
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "because-there-was-no-shepherd-or-because-there-was-no-healing-zechariah-10-2-greek"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-poor-of-the-flock-or-the-chananites-zechariah-11-7-and-11-11-greek",
+        "cast-it-unto-the-potter-or-drop-them-into-the-furnace-zechariah-11-13-greek",
+        "spoken-by-jeremy-the-prophet-or-the-thirty-pieces-of-silver-in-zechariah-matthew-27-9"
+      ],
+      "annotatedVerses": [
+        7,
+        11,
+        12,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "look-upon-me-whom-they-have-pierced-or-because-they-have-mocked-me-zechariah-12-10-greek",
+        "the-mourning-of-hadadrimmon-or-the-pomegranate-grove-cut-down-zechariah-12-11-greek",
+        "look-upon-me-whom-they-have-pierced-or-look-on-him-whom-they-pierced-zechariah-12-10"
+      ],
+      "annotatedVerses": [
+        10,
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-fountain-opened-for-sin-and-for-uncleanness-or-every-place-opened-for-removal-and-separation-zechariah-13-1-greek",
+        "smite-the-shepherd-and-the-sheep-shall-be-scattered-or-smite-the-shepherds-and-draw-out-the-sheep-zechariah-13-7-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "flee-to-the-valley-of-the-mountains-or-the-valley-of-my-mountains-shall-be-closed-up-zechariah-14-5-greek",
+        "even-upon-them-shall-be-no-rain-or-even-these-shall-be-added-to-the-others-zechariah-14-17-greek"
+      ],
+      "annotatedVerses": [
+        5,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16292,6 +16371,7 @@
       "bookId": 39,
       "chapter": 27,
       "annotationIds": [
+        "spoken-by-jeremy-the-prophet-or-the-thirty-pieces-of-silver-in-zechariah-matthew-27-9",
         "study-judas"
       ],
       "annotatedVerses": [
@@ -16300,7 +16380,8 @@
         5,
         6,
         7,
-        8
+        8,
+        9
       ],
       "modes": [
         "contradictions"
@@ -16906,9 +16987,15 @@
       "book": "John",
       "bookId": 42,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "look-upon-me-whom-they-have-pierced-or-look-on-him-whom-they-pierced-zechariah-12-10"
+      ],
+      "annotatedVerses": [
+        37
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

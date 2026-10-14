@@ -1,0 +1,4626 @@
+{
+  "batch": "nahum-to-malachi",
+  "subsetBooks": [
+    "Haggai",
+    "Zechariah"
+  ],
+  "completeBatch": false,
+  "pendingRecords": [
+    {
+      "id": "by-malachi-or-by-the-hand-of-his-messenger-malachi-1-1-greek",
+      "ref": "Malachi 1:1"
+    },
+    {
+      "id": "laid-his-mountains-waste-for-the-dragons-or-laid-waste-his-borders-as-dwellings-of-the-wilderness-malachi-1-3-greek",
+      "ref": "Malachi 1:3"
+    },
+    {
+      "id": "i-will-corrupt-your-seed-or-i-turn-my-back-upon-you-malachi-2-3-greek",
+      "ref": "Malachi 2:3"
+    },
+    {
+      "id": "the-lord-hateth-putting-away-or-if-thou-shouldest-hate-and-put-her-away-malachi-2-16-greek",
+      "ref": "Malachi 2:16"
+    },
+    {
+      "id": "will-a-man-rob-god-or-will-a-man-insult-god-malachi-3-8-and-3-9-greek",
+      "ref": "Malachi 3:8"
+    },
+    {
+      "id": "bring-ye-all-the-tithes-into-the-storehouse-or-the-year-is-completed-malachi-3-10-greek",
+      "ref": "Malachi 3:10"
+    },
+    {
+      "id": "the-proud-happy-or-strangers-blessed-malachi-3-15-and-4-1-greek",
+      "ref": "Malachi 3:15"
+    },
+    {
+      "id": "when-i-make-up-my-jewels-or-for-a-peculiar-possession-malachi-3-17-greek",
+      "ref": "Malachi 3:17"
+    },
+    {
+      "id": "elijah-the-prophet-and-the-dreadful-day-or-elias-the-thesbite-and-the-glorious-day-malachi-4-5-greek",
+      "ref": "Malachi 4:5"
+    },
+    {
+      "id": "prepare-the-way-before-me-or-prepare-thy-way-before-thee-malachi-3-1",
+      "ref": "Malachi 3:1"
+    }
+  ],
+  "checked": "2026-10-14T11:09:16.241Z",
+  "checks": [
+    {
+      "id": "i-called-for-a-drought-or-i-will-bring-a-sword-haggai-1-11-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Haggai 1:11",
+          "quote": "And I called for a drought upon the land",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וָאֶקְרָ֨א חֹ֜רֶב עַל־הָאָ֣רֶץ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/1/",
+              "printedLabel": "1:11",
+              "printed": "וָאֶקְרָ֨א חֹ֜רֶב עַל־הָאָ֣רֶץ וְעַל־הֶהָרִ֗ים וְעַל־הַדָּגָן֙ וְעַל־הַתִּירֹ֣ושׁ וְעַל־הַיִּצְהָ֔ר וְעַ֛ל אֲשֶׁ֥ר תֹּוצִ֖יא הָאֲדָמָ֑ה וְעַל־הָֽאָדָם֙ וְעַל־הַבְּהֵמָ֔ה וְעַ֖ל כָּל־יְגִ֥יעַ כַּפָּֽיִם׃    ס"
+            }
+          ]
+        },
+        {
+          "quote": "Καὶ ἐπάξω ῥομφαίαν ἐπὶ τὴν γῆν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG01.htm",
+              "printedLabel": "1:11",
+              "printed": "Καὶ ἐπάξω ῥομφαίαν ἐπὶ τὴν γῆν, καὶ ἐπὶ τὰ ὄρη, καὶ ἐπὶ τὸν σῖτον, καὶ ἐπὶ τὸν οἶνον, καὶ ἐπὶ τὸ ἔλαιον, καὶ ὅσα ἐκφέρει ἡ γῆ, καὶ ἐπὶ τοὺς ἀνθρώπους, καὶ ἐπὶ τὰ κτήνη, καὶ ἐπὶ πάντας τοὺς πόνους τῶν χειρῶν αὐτῶν."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAG01.htm",
+          "printedLabel": "1:11",
+          "quote": "And I will bring a sword upon the land",
+          "printed": "And I will bring a sword upon the land, and upon the mountains, and upon the corn, and upon the wine, and upon the oil, and all that the earth produces, and upon the men, and upon the cattle, and upon all the labours of their hands.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Haggai 1:11",
+          "quote": "And I called for a drought upon the land",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ῥομφαίαν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG01.htm",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וָאֶקְרָ֨א חֹ֜רֶב עַל־הָאָ֣רֶץ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/1/",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Καὶ ἐπάξω ῥομφαίαν ἐπὶ τὴν γῆν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG01.htm",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ואקרא חרב על הארץ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/1/",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "חֹרֶב",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/1/",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "scope",
+          "quote": "חרב",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/1/",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "I called for a drought upon the land",
+          "ref": "Haggai 1:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "I will bring a sword upon the land",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "I called for a drought upon the land",
+          "ref": "Haggai 1:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "a sword",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "And I called for a drought upon the land",
+          "ref": "Haggai 1:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "And I will bring a sword upon the land",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exp-late-36-1-1",
+          "title": "Temple rebuilding and drought",
+          "summary": "Haggai attributes poor harvests to neglect of the temple in a dated prophetic appeal.",
+          "reasoning": "Named officials and a regnal date frame the narrative; divine causation of weather is the oracle’s explanation rather than independently demonstrated meteorology.",
+          "decision": "Distinct supplied finding: prior context or question does not make this specific wording comparison or ask this specific explanatory question."
+        }
+      ],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "the-desire-of-all-nations-shall-come-or-the-choice-portions-of-all-the-nations-shall-come-haggai-2-7-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Haggai 2:7",
+          "quote": "the desire of all nations shall come",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וּבָ֖אוּ חֶמְדַּ֣ת כָּל־הַגֹּויִ֑ם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:7",
+              "printed": "וְהִרְעַשְׁתִּי֙ אֶת־כָּל־הַגֹּויִ֔ם וּבָ֖אוּ חֶמְדַּ֣ת כָּל־הַגֹּויִ֑ם וּמִלֵּאתִ֞י אֶת־הַבַּ֤יִת הַזֶּה֙ כָּבֹ֔וד אָמַ֖ר יְהוָ֥ה צְבָאֹֽות׃"
+            }
+          ]
+        },
+        {
+          "quote": "καὶ ἥξει τὰ ἐκλεκτὰ πάντων τῶν ἐθνῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:7",
+              "printed": "καὶ συσσείσω πάντα τὰ ἔθνη, καὶ ἥξει τὰ ἐκλεκτὰ πάντων τῶν ἐθνῶν· καὶ πλήσω τὸν οἶκον τοῦτον δόξης, λέγει Κύριος παντοκράτωρ."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAG02.htm",
+          "printedLabel": "2:7",
+          "quote": "and the choice portions of all the nations shall come",
+          "printed": "and I will shake all nations, and the choice portions of all the nations shall come: and I will fill this house with glory, saith the Lord Almighty.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Haggai 2:7",
+          "quote": "the desire of all nations shall come",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "τὰ ἐκλεκτὰ πάντων τῶν ἐθνῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וּבָ֖אוּ חֶמְדַּ֣ת כָּל־הַגֹּויִ֑ם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καὶ ἥξει τὰ ἐκλεκτὰ πάντων τῶν ἐθνῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ובאו חמדת כל הגוים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:7"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τὰ ἐκλεκτά",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἥξει",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "the desire of all nations shall come",
+          "ref": "Haggai 2:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the choice portions of all the nations shall come",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the desire of all nations shall come",
+          "ref": "Haggai 2:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the choice portions of all the nations",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "the desire of all nations shall come",
+          "ref": "Haggai 2:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "and the choice portions of all the nations shall come",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the desire",
+          "ref": "Haggai 2:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the choice portions",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Hold: the singular English noun desire may be collective and does not establish one entity. Desired things and choice portions may carry the same sense; the supplied comparison does not demonstrate the real meaning difference required for T. Needs direct owner ruling for any exception, or a revised Claude proposal establishing a difference."
+    },
+    {
+      "id": "in-this-place-will-i-give-peace-or-peace-of-soul-for-a-possession-haggai-2-9-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Haggai 2:9",
+          "quote": "and in this place will I give peace, saith the Lord of hosts",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וּבַמָּקֹ֤ום הַזֶּה֙ אֶתֵּ֣ן שָׁלֹ֔ום נְאֻ֖ם יְהוָ֥ה צְבָאֹֽות",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:9",
+              "printed": "גָּדֹ֣ול יִֽהְיֶ֡ה כְּבֹוד֩ הַבַּ֨יִת הַזֶּ֤ה הָאַֽחֲרֹון֙ מִן־הָ֣רִאשֹׁ֔ון אָמַ֖ר יְהוָ֣ה צְבָאֹ֑ות וּבַמָּקֹ֤ום הַזֶּה֙ אֶתֵּ֣ן שָׁלֹ֔ום נְאֻ֖ם יְהוָ֥ה צְבָאֹֽות׃  פ"
+            }
+          ]
+        },
+        {
+          "quote": "καὶ εἰρήνην ψυχῆς εἰς περιποίησιν παντὶ τῷ κτίζοντι, τοῦ ἀναστῆσαι τὸν ναὸν τοῦτον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:9",
+              "printed": "Διότι μεγάλη ἔσται ἡ δόξα τοῦ οἴκου τούτου, ἡ ἐσχάτη ὑπὲρ τὴν πρώτην, λέγει Κύριος παντοκράτωρ· καὶ ἐν τῷ τόπῳ τούτῳ δώσω εἰρήνην, λέγει Κύριος παντοκράτωρ, καὶ εἰρήνην ψυχῆς εἰς περιποίησιν παντὶ τῷ κτίζοντι, τοῦ ἀναστῆσαι τὸν ναὸν τοῦτον."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAG02.htm",
+          "printedLabel": "2:9",
+          "quote": "even peace of soul for a possession to every one that builds, to raise up this temple",
+          "printed": "For the glory of this house shall be great, the latter more than the former, saith the Lord Almighty: and in this place will I give peace, saith the Lord Almighty, even peace of soul for a possession to every one that builds, to raise up this temple.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Haggai 2:9",
+          "quote": "and in this place will I give peace, saith the Lord of hosts",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "וּבַמָּקֹ֤ום הַזֶּה֙ אֶתֵּ֣ן שָׁלֹ֔ום נְאֻ֖ם יְהוָ֥ה צְבָאֹֽות",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καὶ εἰρήνην ψυχῆς εἰς περιποίησιν παντὶ τῷ κτίζοντι, τοῦ ἀναστῆσαι τὸν ναὸν τοῦτον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ובמקום הזה אתן שלום נאם יהוה צבאות",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "καὶ εἰρήνην ψυχῆς εἰς περιποίησιν παντὶ τῷ κτίζοντι, τοῦ ἀναστῆσαι τὸν ναὸν τοῦτον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "in this place will I give peace",
+          "ref": "Haggai 2:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "peace of soul for a possession to every one that builds, to raise up this temple",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "and in this place will I give peace, saith the Lord of hosts",
+          "ref": "Haggai 2:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "even peace of soul for a possession to every one that builds, to raise up this temple",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "and in this place will I give peace, saith the Lord of hosts",
+          "ref": "Haggai 2:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "even peace of soul for a possession to every one that builds, to raise up this temple",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of soul",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "according-to-the-word-that-i-covenanted-with-you-brentons-greek-prints-no-such-clause-haggai-2-5",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Haggai 2:5",
+          "quote": "According to the word that I covenanted with you when ye came out of Egypt",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "אֶֽת־הַדָּבָ֞ר אֲשֶׁר־כָּרַ֤תִּי אִתְּכֶם֙ בְּצֵאתְכֶ֣ם מִמִּצְרַ֔יִם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:5",
+              "printed": "אֶֽת־הַדָּבָ֞ר אֲשֶׁר־כָּרַ֤תִּי אִתְּכֶם֙ בְּצֵאתְכֶ֣ם מִמִּצְרַ֔יִם וְרוּחִ֖י עֹמֶ֣דֶת בְּתֹוכְכֶ֑ם אַל־תִּירָֽאוּ׃    ס"
+            }
+          ]
+        },
+        {
+          "quote": "καὶ τὸ πνεῦμά μου ἐφέστηκεν ἐν μέσῳ ὑμῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:5",
+              "printed": "καὶ τὸ πνεῦμά μου ἐφέστηκεν ἐν μέσῳ ὑμῶν· θαρσεῖτε,"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAG02.htm",
+          "printedLabel": "2:5",
+          "quote": "and my Spirit remains in the midst of you",
+          "printed": "and my Spirit remains in the midst of you; be of good courage.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Haggai 2:5",
+          "quote": "According to the word that I covenanted with you when ye came out of Egypt",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "אֶֽת־הַדָּבָ֞ר אֲשֶׁר־כָּרַ֤תִּי אִתְּכֶם֙ בְּצֵאתְכֶ֣ם מִמִּצְרַ֔יִם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καὶ τὸ πνεῦμά μου ἐφέστηκεν ἐν μέσῳ ὑμῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "את הדבר אשר כרתי אתכם בצאתכם ממצרים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:5"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ורוחי עמדת בתוככם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/37/2/",
+              "printedLabel": "2:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "καὶ τὸ πνεῦμά μου ἐφέστηκεν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAG02.htm",
+              "printedLabel": "2:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "According to the word that I covenanted with you when ye came out of Egypt",
+          "ref": "Haggai 2:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "According to the word that I covenanted with you when ye came out of Egypt, so my spirit remaineth among you",
+          "ref": "Haggai 2:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "and my Spirit remains in the midst of you",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "According to the word that I covenanted with you when ye came out of Egypt",
+          "ref": "Haggai 2:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "and my Spirit remains in the midst of you",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "among-the-myrtle-trees-or-between-the-shady-mountains-zechariah-1-8-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 1:8",
+          "quote": "he stood among the myrtle trees that were in the bottom",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְה֣וּא עֹמֵ֔ד בֵּ֥ין הַהֲדַסִּ֖ים אֲשֶׁ֣ר בַּמְּצֻלָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/1/",
+              "printedLabel": "1:8",
+              "printed": "רָאִ֣יתִי ׀ הַלַּ֗יְלָה וְהִנֵּה־אִישׁ֙ רֹכֵב֙ עַל־ס֣וּס אָדֹ֔ם וְה֣וּא עֹמֵ֔ד בֵּ֥ין הַהֲדַסִּ֖ים אֲשֶׁ֣ר בַּמְּצֻלָ֑ה וְאַחֲרָיו֙ סוּסִ֣ים אֲדֻמִּ֔ים שְׂרֻקִּ֖ים וּלְבָנִֽים׃"
+            }
+          ]
+        },
+        {
+          "quote": "οὗτος εἱστήκει ἀναμέσον τῶν ὀρέων τῶν κατασκίων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC01.htm",
+              "printedLabel": "1:8",
+              "printed": "Ἑώρακα τὴν νύκτα, καὶ ἰδοὺ ἀνὴρ ἐπιβεβηκὼς ἐπὶ ἵππον πυῤῥὸν, καὶ οὗτος εἱστήκει ἀναμέσον τῶν ὀρέων τῶν κατασκίων, καὶ ὀπίσω αὐτοῦ ἵπποι πυῤῥοὶ, καὶ ψαροὶ, καὶ ποικίλοι, καὶ λευκοί."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC01.htm",
+          "printedLabel": "1:8",
+          "quote": "he stood between the shady mountains",
+          "printed": "I saw by night, and behold a man mounted on a red horse, and he stood between the shady mountains; and behind him were red horses, and grey, and piebald, and white.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 1:8",
+          "quote": "he stood among the myrtle trees that were in the bottom",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἀναμέσον τῶν ὀρέων τῶν κατασκίων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC01.htm",
+              "printedLabel": "1:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְה֣וּא עֹמֵ֔ד בֵּ֥ין הַהֲדַסִּ֖ים אֲשֶׁ֣ר בַּמְּצֻלָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/1/",
+              "printedLabel": "1:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "οὗτος εἱστήκει ἀναμέσον τῶν ὀρέων τῶν κατασκίων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC01.htm",
+              "printedLabel": "1:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והוא עמד בין ההדסים אשר במצלה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/1/",
+              "printedLabel": "1:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ὀρέων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC01.htm",
+              "printedLabel": "1:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "among the myrtle trees that were in the bottom",
+          "ref": "Zechariah 1:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "between the shady mountains",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "among the myrtle trees that were in the bottom",
+          "ref": "Zechariah 1:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "between the shady mountains",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "he stood among the myrtle trees that were in the bottom",
+          "ref": "Zechariah 1:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "he stood between the shady mountains",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the bottom",
+          "ref": "Zechariah 1:8",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "before-zerubbabel-thou-shalt-become-a-plain-or-that-thou-shouldest-prosper-zechariah-4-7-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 4:7",
+          "quote": "before Zerubbabel thou shalt become a plain",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 4:7",
+          "quote": "he shall bring forth the headstone thereof with shoutings, crying, Grace, grace unto it",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "לִפְנֵ֥י זְרֻבָּבֶ֖ל לְמִישֹׁ֑ר … וְהֹוצִיא֙ אֶת־הָאֶ֣בֶן הָרֹאשָׁ֔ה תְּשֻׁאֹ֕ות חֵ֥ן חֵ֖ן לָֽהּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/4/",
+              "printedLabel": "4:7",
+              "printed": "מִֽי־אַתָּ֧ה הַֽר־הַגָּדֹ֛ול לִפְנֵ֥י זְרֻבָּבֶ֖ל לְמִישֹׁ֑ר וְהֹוצִיא֙ אֶת־הָאֶ֣בֶן הָרֹאשָׁ֔ה תְּשֻׁאֹ֕ות חֵ֥ן חֵ֖ן לָֽהּ׃  פ"
+            }
+          ]
+        },
+        {
+          "quote": "τὸ πρὸ προσώπου Ζοροβάβελ τοῦ κατορθῶσαι … καὶ ἐξοίσω τὸν λίθον τῆς κληρονομίας, ἰσότητα χάριτος χάριτα αὐτῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC04.htm",
+              "printedLabel": "4:7",
+              "printed": "Τίς εἶ σὺ τὸ ὄρος τὸ μέγα τὸ πρὸ προσώπου Ζοροβάβελ τοῦ κατορθῶσαι; καὶ ἐξοίσω τὸν λίθον τῆς κληρονομίας, ἰσότητα χάριτος χάριτα αὐτῆς."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC04.htm",
+          "printedLabel": "4:7",
+          "quote": "before Zorobabel, that thou shouldest prosper",
+          "printed": "Who art thou, the great mountain before Zorobabel, that thou shouldest prosper? whereas I will bring out the stone of the inheritance, the grace of it the equal of my grace.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC04.htm",
+          "printedLabel": "4:7",
+          "quote": "I will bring out the stone of the inheritance, the grace of it the equal of my grace",
+          "printed": "Who art thou, the great mountain before Zorobabel, that thou shouldest prosper? whereas I will bring out the stone of the inheritance, the grace of it the equal of my grace.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 4:7",
+          "quote": "before Zerubbabel thou shalt become a plain",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "τοῦ κατορθῶσαι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC04.htm",
+              "printedLabel": "4:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "τὸν λίθον τῆς κληρονομίας",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC04.htm",
+              "printedLabel": "4:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "לִפְנֵ֥י זְרֻבָּבֶ֖ל לְמִישֹׁ֑ר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/4/",
+              "printedLabel": "4:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְהֹוצִיא֙ אֶת־הָאֶ֣בֶן הָרֹאשָׁ֔ה תְּשֻׁאֹ֕ות חֵ֥ן חֵ֖ן לָֽהּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/4/",
+              "printedLabel": "4:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "τὸ πρὸ προσώπου Ζοροβάβελ τοῦ κατορθῶσαι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC04.htm",
+              "printedLabel": "4:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καὶ ἐξοίσω τὸν λίθον τῆς κληρονομίας, ἰσότητα χάριτος χάριτα αὐτῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC04.htm",
+              "printedLabel": "4:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "לפני זרבבל למישר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/4/",
+              "printedLabel": "4:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והוציא את האבן הראשה תשאות חן חן לה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/4/",
+              "printedLabel": "4:7"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "thou shalt become a plain",
+          "ref": "Zechariah 4:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the headstone thereof with shoutings",
+          "ref": "Zechariah 4:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "that thou shouldest prosper",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "title",
+          "quote": "the stone of the inheritance",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "become a plain",
+          "ref": "Zechariah 4:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the headstone",
+          "ref": "Zechariah 4:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "with shoutings, crying, Grace, grace unto it",
+          "ref": "Zechariah 4:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "that thou shouldest prosper",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the stone of the inheritance",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "before Zerubbabel thou shalt become a plain",
+          "ref": "Zechariah 4:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "he shall bring forth the headstone thereof with shoutings, crying, Grace, grace unto it",
+          "ref": "Zechariah 4:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "before Zorobabel, that thou shouldest prosper",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "I will bring out the stone of the inheritance, the grace of it the equal of my grace",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "prosper",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the stone of the inheritance",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Remove the unsupported inference that the Greek makes the mountain prosper; retain the stone and shoutings contrast."
+    },
+    {
+      "id": "a-flying-roll-or-a-flying-sickle-zechariah-5-1-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 5:1",
+          "quote": "behold a flying roll",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְהִנֵּ֖ה מְגִלָּ֥ה עָפָֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/5/",
+              "printedLabel": "5:1",
+              "printed": "וָאָשׁ֕וּב וָאֶשָּׂ֥א עֵינַ֖י וָֽאֶרְאֶ֑ה וְהִנֵּ֖ה מְגִלָּ֥ה עָפָֽה׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἰδοὺ δρέπανον πετόμενον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC05.htm",
+              "printedLabel": "5:1",
+              "printed": "Καὶ ἐπέστρεψα, καὶ ᾖρα τοὺς ὀφθαλμούς μου, καὶ ἴδον, καὶ ἰδοὺ δρέπανον πετόμενον."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC05.htm",
+          "printedLabel": "5:1",
+          "quote": "behold a flying sickle",
+          "printed": "And I turned, and lifted up mine eyes, and looked and behold a flying sickle.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 5:1",
+          "quote": "behold a flying roll",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "δρέπανον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC05.htm",
+              "printedLabel": "5:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְהִנֵּ֖ה מְגִלָּ֥ה עָפָֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/5/",
+              "printedLabel": "5:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἰδοὺ δρέπανον πετόμενον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC05.htm",
+              "printedLabel": "5:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והנה מגלה עפה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/5/",
+              "printedLabel": "5:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "behold a flying roll",
+          "ref": "Zechariah 5:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "behold a flying sickle",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "a flying roll",
+          "ref": "Zechariah 5:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "a sickle",
+          "ref": null,
+          "classification": "Researcher plain rendering; the printed English has flying sickle"
+        },
+        {
+          "field": "text",
+          "quote": "behold a flying roll",
+          "ref": "Zechariah 5:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "behold a flying sickle",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "this-is-their-resemblance-or-this-is-their-iniquity-zechariah-5-6-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 5:6",
+          "quote": "This is their resemblance through all the earth",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "זֹ֥את עֵינָ֖ם בְּכָל־הָאָֽרֶץ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/5/",
+              "printedLabel": "5:6",
+              "printed": "וָאֹמַ֖ר מַה־הִ֑יא וַיֹּ֗אמֶר זֹ֤את הָֽאֵיפָה֙ הַיֹּוצֵ֔את וַיֹּ֕אמֶר זֹ֥את עֵינָ֖ם בְּכָל־הָאָֽרֶץ׃"
+            }
+          ]
+        },
+        {
+          "quote": "αὕτη ἡ ἀδικία αὐτῶν ἐν πάσῃ τῇ γῇ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC05.htm",
+              "printedLabel": "5:6",
+              "printed": "Καὶ εἶπα, τί ἐστι; καὶ εἶπε, τοῦτο τὸ μέτρον τὸ ἐκπορευόμενον· καὶ εἶπεν, αὕτη ἡ ἀδικία αὐτῶν ἐν πάσῃ τῇ γῇ."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC05.htm",
+          "printedLabel": "5:6",
+          "quote": "This is their iniquity in all the earth",
+          "printed": "And I said, What is it? And he said, This is the measure that goes forth. And he said, This is their iniquity in all the earth.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 5:6",
+          "quote": "This is their resemblance through all the earth",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἡ ἀδικία αὐτῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC05.htm",
+              "printedLabel": "5:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "זֹ֥את עֵינָ֖ם בְּכָל־הָאָֽרֶץ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/5/",
+              "printedLabel": "5:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "αὕτη ἡ ἀδικία αὐτῶν ἐν πάσῃ τῇ γῇ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC05.htm",
+              "printedLabel": "5:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "זאת עינם בכל הארץ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/5/",
+              "printedLabel": "5:6"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "This is their resemblance through all the earth",
+          "ref": "Zechariah 5:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "This is their iniquity in all the earth",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "This is their resemblance through all the earth",
+          "ref": "Zechariah 5:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "their iniquity",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "This is their resemblance through all the earth",
+          "ref": "Zechariah 5:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "This is their iniquity in all the earth",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "resemblance",
+          "ref": "Zechariah 5:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "iniquity",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "heldai-tobijah-and-jedaiah-or-the-chief-men-and-the-useful-men-zechariah-6-10-and-6-14-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 6:10",
+          "quote": "of Heldai, of Tobijah, and of Jedaiah",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 6:14",
+          "quote": "to Helem, and to Tobijah, and to Jedaiah, and to Hen the son of Zephaniah",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "מֵחֶלְדַּ֕י וּמֵאֵ֥ת טֹובִיָּ֖ה וּמֵאֵ֣ת יְדַֽעְיָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/6/",
+              "printedLabel": "6:10",
+              "printed": "לָקֹ֙וחַ֙ מֵאֵ֣ת הַגֹּולָ֔ה מֵחֶלְדַּ֕י וּמֵאֵ֥ת טֹובִיָּ֖ה וּמֵאֵ֣ת יְדַֽעְיָ֑ה וּבָאתָ֤ אַתָּה֙ בַּיֹּ֣ום הַה֔וּא וּבָ֗אתָ בֵּ֚ית יֹאשִׁיָּ֣ה בֶן־צְפַנְיָ֔ה אֲשֶׁר־בָּ֖אוּ מִבָּבֶֽל׃"
+            }
+          ]
+        },
+        {
+          "quote": "παρὰ τῶν ἀρχόντων, καὶ παρὰ τῶν χρησίμων αὐτῆς, καὶ παρὰ τῶν ἐπεγνωκότων αὐτὴν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC06.htm",
+              "printedLabel": "6:10",
+              "printed": "λάβε τὰ ἐκ τῆς αἰχμαλωσίας παρὰ τῶν ἀρχόντων, καὶ παρὰ τῶν χρησίμων αὐτῆς, καὶ παρὰ τῶν ἐπεγνωκότων αὐτὴν, καὶ εἰσελεύσῃ σὺ ἐν τῇ ἡμέρᾳ ἐκείνῃ εἰς τὸν οἶκον Ἰωσίου τοῦ Σοφονίου τοῦ ἥκοντος ἐκ Βαβυλῶνος,"
+            }
+          ]
+        },
+        {
+          "quote": "לְחֵ֙לֶם֙ וּלְטֹובִיָּ֣ה וְלִידַֽעְיָ֔ה וּלְחֵ֖ן בֶּן־צְפַנְיָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/6/",
+              "printedLabel": "6:14",
+              "printed": "וְהָעֲטָרֹ֗ת תִּֽהְיֶה֙ לְחֵ֙לֶם֙ וּלְטֹובִיָּ֣ה וְלִידַֽעְיָ֔ה וּלְחֵ֖ן בֶּן־צְפַנְיָ֑ה לְזִכָּרֹ֖ון בְּהֵיכַ֥ל יְהוָֽה׃"
+            }
+          ]
+        },
+        {
+          "quote": "τοῖς ὑπομένουσι, καὶ τοῖς χρησίμοις αὐτῆς, καὶ τοῖς ἐπεγνωκόσιν αὐτὴν, καὶ εἰς χάριτα υἱοῦ Σοφονίου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC06.htm",
+              "printedLabel": "6:14",
+              "printed": "Ὁ δὲ στέφανος ἔσται τοῖς ὑπομένουσι, καὶ τοῖς χρησίμοις αὐτῆς, καὶ τοῖς ἐπεγνωκόσιν αὐτὴν, καὶ εἰς χάριτα υἱοῦ Σοφονίου, καὶ εἰς ψαλμὸν ἐν οἴκῳ Κυρίου."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC06.htm",
+          "printedLabel": "6:10",
+          "quote": "from the chief men, and from the useful men of it, and from them that have understood it",
+          "printed": "Take the things of the captivity from the chief men, and from the useful men of it, and from them that have understood it; and thou shalt enter in that day into the house of Josias the son of Sophonias that came out of Babylon.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC06.htm",
+          "printedLabel": "6:14",
+          "quote": "to them that wait patiently, and to the useful men of the captivity, and to them that have known it, and for the favour of the son of Sophonias",
+          "printed": "And the crown shall be to them that wait patiently, and to the useful men of the captivity, and to them that have known it, and for the favour of the son of Sophonias, and for a psalm in the house of the Lord.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 6:10",
+          "quote": "of Heldai, of Tobijah, and of Jedaiah",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Zechariah 6:14",
+          "quote": "to Helem, and to Tobijah, and to Jedaiah, and to Hen the son of Zephaniah",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "מֵחֶלְדַּ֕י וּמֵאֵ֥ת טֹובִיָּ֖ה וּמֵאֵ֣ת יְדַֽעְיָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/6/",
+              "printedLabel": "6:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "παρὰ τῶν ἀρχόντων, καὶ παρὰ τῶν χρησίμων αὐτῆς, καὶ παρὰ τῶν ἐπεγνωκότων αὐτὴν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC06.htm",
+              "printedLabel": "6:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "לְחֵ֙לֶם֙ וּלְטֹובִיָּ֣ה וְלִידַֽעְיָ֔ה וּלְחֵ֖ן בֶּן־צְפַנְיָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/6/",
+              "printedLabel": "6:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "τοῖς ὑπομένουσι, καὶ τοῖς χρησίμοις αὐτῆς, καὶ τοῖς ἐπεγνωκόσιν αὐτὴν, καὶ εἰς χάριτα υἱοῦ Σοφονίου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC06.htm",
+              "printedLabel": "6:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "מחלדי ומאת טוביה ומאת ידעיה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/6/",
+              "printedLabel": "6:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "לחלם ולטוביה ולידעיה ולחן בן צפניה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/6/",
+              "printedLabel": "6:14"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "Heldai, Tobijah, and Jedaiah",
+          "ref": null,
+          "classification": "Condensed researcher list of KJV names, not a verbatim excerpt"
+        },
+        {
+          "field": "title",
+          "quote": "Helem, … Tobijah, … Jedaiah, … Hen",
+          "ref": "Zechariah 6:14",
+          "classification": "KJV ellipsis or apostrophe typography, each fragment verified"
+        },
+        {
+          "field": "title",
+          "quote": "the chief men",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "title",
+          "quote": "the useful men",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Heldai … Tobijah … Jedaiah",
+          "ref": "Zechariah 6:10",
+          "classification": "KJV ellipsis or apostrophe typography, each fragment verified"
+        },
+        {
+          "field": "summary",
+          "quote": "Helem … Tobijah … Jedaiah … Hen the son of Zephaniah",
+          "ref": "Zechariah 6:14",
+          "classification": "KJV ellipsis or apostrophe typography, each fragment verified"
+        },
+        {
+          "field": "summary",
+          "quote": "the chief men",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the useful men",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "them that have understood it",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "them that wait patiently",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the favour of the son of Sophonias",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "of Heldai, of Tobijah, and of Jedaiah",
+          "ref": "Zechariah 6:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "from the chief men, and from the useful men of it, and from them that have understood it",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "to Helem, and to Tobijah, and to Jedaiah, and to Hen the son of Zephaniah",
+          "ref": "Zechariah 6:14",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "to them that wait patiently, and to the useful men of the captivity, and to them that have known it, and for the favour of the son of Sophonias",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Correct the contributor/recipient claim and avoid inferring different people from names versus descriptions."
+    },
+    {
+      "id": "he-shall-be-a-priest-upon-his-throne-or-a-priest-on-his-right-hand-zechariah-6-13-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 6:13",
+          "quote": "and he shall be a priest upon his throne",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְהָיָ֤ה כֹהֵן֙ עַל־כִּסְאֹ֔ו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/6/",
+              "printedLabel": "6:13",
+              "printed": "וְ֠הוּא יִבְנֶ֞ה אֶת־הֵיכַ֤ל יְהוָה֙ וְהֽוּא־יִשָּׂ֣א הֹ֔וד וְיָשַׁ֥ב וּמָשַׁ֖ל עַל־כִּסְאֹ֑ו וְהָיָ֤ה כֹהֵן֙ עַל־כִּסְאֹ֔ו וַעֲצַ֣ת שָׁלֹ֔ום תִּהְיֶ֖ה בֵּ֥ין שְׁנֵיהֶֽם׃"
+            }
+          ]
+        },
+        {
+          "quote": "καὶ ἔσται ἱερεὺς ἐκ δεξιῶν αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC06.htm",
+              "printedLabel": "6:13",
+              "printed": "καὶ αὐτὸς λήψεται ἀρετὴν, καὶ καθιεῖται, καὶ κατάρξει ἐπὶ τοῦ θρόνου αὐτοῦ, καὶ ἔσται ἱερεὺς ἐκ δεξιῶν αὐτοῦ, καὶ βουλὴ εἰρηνικὴ ἔσται ἀναμέσον ἀμφοτέρων·"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC06.htm",
+          "printedLabel": "6:13",
+          "quote": "and there shall be a priest on his right hand",
+          "printed": "And he shall receive power, and shall sit and rule upon his throne; and there shall be a priest on his right hand, and a peaceable counsel shall be between them both.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 6:13",
+          "quote": "and he shall be a priest upon his throne",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἱερεὺς ἐκ δεξιῶν αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC06.htm",
+              "printedLabel": "6:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְהָיָ֤ה כֹהֵן֙ עַל־כִּסְאֹ֔ו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/6/",
+              "printedLabel": "6:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καὶ ἔσται ἱερεὺς ἐκ δεξιῶν αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC06.htm",
+              "printedLabel": "6:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והיה כהן על כסאו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/6/",
+              "printedLabel": "6:13"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "he shall be a priest upon his throne",
+          "ref": "Zechariah 6:13",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "there shall be a priest on his right hand",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "be a priest upon his throne",
+          "ref": "Zechariah 6:13",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "a priest on his right hand",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "and he shall be a priest upon his throne",
+          "ref": "Zechariah 6:13",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "and there shall be a priest on his right hand",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "because-there-was-no-shepherd-or-because-there-was-no-healing-zechariah-10-2-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 10:2",
+          "quote": "the idols have spoken vanity",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 10:2",
+          "quote": "because there was no shepherd",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "הַתְּרָפִ֣ים דִּבְּרוּ־אָ֗וֶן … כִּֽי־אֵ֥ין רֹעֶֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/10/",
+              "printedLabel": "10:2",
+              "printed": "כִּ֧י הַתְּרָפִ֣ים דִּבְּרוּ־אָ֗וֶן וְהַקֹּֽוסְמִים֙ חָ֣זוּ שֶׁ֔קֶר וַֽחֲלֹמֹות֙ הַשָּׁ֣וא יְדַבֵּ֔רוּ הֶ֖בֶל יְנַֽחֵמ֑וּן עַל־כֵּן֙ נָסְע֣וּ כְמֹו־צֹ֔אן יַעֲנ֖וּ כִּֽי־אֵ֥ין רֹעֶֽה׃  פ"
+            }
+          ]
+        },
+        {
+          "quote": "οἱ ἀποφθεγγόμενοι ἐλάλησαν κόπους … διότι οὐκ ἦν ἴασις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC10.htm",
+              "printedLabel": "10:2",
+              "printed": "Διότι οἱ ἀποφθεγγόμενοι ἐλάλησαν κόπους, καὶ οἱ μάντεις ὁράσεις ψευδεῖς, καὶ τὰ ἐνύπνια ψευδῆ ἐλάλουν, μάταια παρεκάλουν· διατοῦτο ἐξηράνθησαν ὡς πρόβατα, καὶ ἐκακώθησαν, διότι οὐκ ἦν ἴασις."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC10.htm",
+          "printedLabel": "10:2",
+          "quote": "the speakers have uttered grievous things",
+          "printed": "For the speakers have uttered grievous things, and the diviners have seen false visions, and they have spoken false dreams, they have given vain comfort: therefore have they fallen away like sheep, and been afflicted, because there was no healing.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC10.htm",
+          "printedLabel": "10:2",
+          "quote": "because there was no healing",
+          "printed": "For the speakers have uttered grievous things, and the diviners have seen false visions, and they have spoken false dreams, they have given vain comfort: therefore have they fallen away like sheep, and been afflicted, because there was no healing.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 10:2",
+          "quote": "because there was no shepherd",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "οὐκ ἦν ἴασις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC10.htm",
+              "printedLabel": "10:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "οἱ ἀποφθεγγόμενοι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC10.htm",
+              "printedLabel": "10:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "הַתְּרָפִ֣ים דִּבְּרוּ־אָ֗וֶן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/10/",
+              "printedLabel": "10:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כִּֽי־אֵ֥ין רֹעֶֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/10/",
+              "printedLabel": "10:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "οἱ ἀποφθεγγόμενοι ἐλάλησαν κόπους",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC10.htm",
+              "printedLabel": "10:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "διότι οὐκ ἦν ἴασις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC10.htm",
+              "printedLabel": "10:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "התרפים דברו און",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/10/",
+              "printedLabel": "10:2"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כי אין רעה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/10/",
+              "printedLabel": "10:2"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "because there was no shepherd",
+          "ref": "Zechariah 10:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "because there was no healing",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "because there was no shepherd",
+          "ref": "Zechariah 10:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the idols have spoken vanity",
+          "ref": "Zechariah 10:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "there was no healing",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the speakers",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "the idols have spoken vanity",
+          "ref": "Zechariah 10:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "because there was no shepherd",
+          "ref": "Zechariah 10:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "the speakers have uttered grievous things",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "because there was no healing",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the speakers",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "the-poor-of-the-flock-or-the-chananites-zechariah-11-7-and-11-11-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 11:7",
+          "quote": "even you, O poor of the flock",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 11:11",
+          "quote": "the poor of the flock that waited upon me",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "לָכֵ֖ן עֲנִיֵּ֣י הַצֹּ֑אן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:7",
+              "printed": "וָֽאֶרְעֶה֙ אֶת־צֹ֣אן הַֽהֲרֵגָ֔ה לָכֵ֖ן עֲנִיֵּ֣י הַצֹּ֑אן וָאֶקַּֽח־לִ֞י שְׁנֵ֣י מַקְלֹ֗ות לְאַחַ֞ד קָרָ֤אתִי נֹ֙עַם֙ וּלְאַחַד֙ קָרָ֣אתִי חֹֽבְלִ֔ים וָאֶרְעֶ֖ה אֶת־הַצֹּֽאן׃"
+            }
+          ]
+        },
+        {
+          "quote": "εἰς τὴν Χαναανίτιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:7",
+              "printed": "Καὶ ποιμανῶ τὰ πρόβατα τῆς σφαγῆς εἰς τὴν Χαναανίτιν· καὶ λήψομαι ἐμαυτῷ δύο ῥάβδους, τὴν μὲν μίαν ἐκάλεσα Κάλλος, καὶ τὴν ἑτέραν ἐκάλεσα Σχοίνισμα, καὶ ποιμανῶ τὰ πρόβατα."
+            }
+          ]
+        },
+        {
+          "quote": "עֲנִיֵּ֤י הַצֹּאן֙ הַשֹּׁמְרִ֣ים אֹתִ֔י",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:11",
+              "printed": "וַתֻּפַ֖ר בַּיֹּ֣ום הַה֑וּא וַיֵּדְע֨וּ כֵ֜ן עֲנִיֵּ֤י הַצֹּאן֙ הַשֹּׁמְרִ֣ים אֹתִ֔י כִּ֥י דְבַר־יְהוָ֖ה הֽוּא׃"
+            }
+          ]
+        },
+        {
+          "quote": "οἱ Χαναναῖοι τὰ πρόβατα τὰ φυλασσόμενά μοι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:11",
+              "printed": "καὶ διασκεδασθήσεται ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ γνώσονται οἱ Χαναναῖοι τὰ πρόβατα τὰ φυλασσόμενά μοι, διότι λόγος Κυρίου ἐστί."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC11.htm",
+          "printedLabel": "11:7",
+          "quote": "in the land of Chanaan",
+          "printed": "And I will tend the flock of slaughter in the land of Chanaan: and I will take for myself two rods; the one I called Beauty, and the other I called Line; and I will tend the flock.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC11.htm",
+          "printedLabel": "11:11",
+          "quote": "the Chananites, the sheep that are kept for me",
+          "printed": "And it shall be broken in that day; and the Chananites, the sheep that are kept for me, shall know that it is the word of the Lord.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 11:7",
+          "quote": "even you, O poor of the flock",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Zechariah 11:11",
+          "quote": "the poor of the flock that waited upon me",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "εἰς τὴν Χαναανίτιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "οἱ Χαναναῖοι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "לָכֵ֖ן עֲנִיֵּ֣י הַצֹּ֑אן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "εἰς τὴν Χαναανίτιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "עֲנִיֵּ֤י הַצֹּאן֙ הַשֹּׁמְרִ֣ים אֹתִ֔י",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "οἱ Χαναναῖοι τὰ πρόβατα τὰ φυλασσόμενά μοι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "לכן עניי הצאן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "עניי הצאן השמרים אתי",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "O poor of the flock",
+          "ref": "Zechariah 11:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the poor of the flock that waited upon me",
+          "ref": "Zechariah 11:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "in the land of Chanaan",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "title",
+          "quote": "the Chananites",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the poor of the flock",
+          "ref": "Zechariah 11:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "in the land of Chanaan",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the Chananites",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "even you, O poor of the flock",
+          "ref": "Zechariah 11:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "in the land of Chanaan",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "the poor of the flock that waited upon me",
+          "ref": "Zechariah 11:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "the Chananites, the sheep that are kept for me",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Compare condition with geographic or people labels without asserting different persons."
+    },
+    {
+      "id": "cast-it-unto-the-potter-or-drop-them-into-the-furnace-zechariah-11-13-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 11:13",
+          "quote": "Cast it unto the potter",
+          "exact": true
+        },
+        {
+          "ref": "Matthew 27:10",
+          "quote": "gave them for the potter's field",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 11:13",
+          "quote": "cast them to the potter in the house of the Lord",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "הַשְׁלִיכֵ֙הוּ֙ אֶל־הַיֹּוצֵ֔ר … וָאַשְׁלִ֥יךְ אֹתֹ֛ו בֵּ֥ית יְהוָ֖ה אֶל־הַיֹּוצֵֽר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:13",
+              "printed": "וַיֹּ֨אמֶר יְהוָ֜ה אֵלַ֗י הַשְׁלִיכֵ֙הוּ֙ אֶל־הַיֹּוצֵ֔ר אֶ֣דֶר הַיְקָ֔ר אֲשֶׁ֥ר יָקַ֖רְתִּי מֵֽעֲלֵיהֶ֑ם וָֽאֶקְחָה֙ שְׁלֹשִׁ֣ים הַכֶּ֔סֶף וָאַשְׁלִ֥יךְ אֹתֹ֛ו בֵּ֥ית יְהוָ֖ה אֶל־הַיֹּוצֵֽר׃"
+            }
+          ]
+        },
+        {
+          "quote": "κάθες αὐτοὺς εἰς τὸ χωνευτήριον … ἐνέβαλον αὐτοὺς εἰς τὸν οἶκον Κυρίου εἰς τὸ χωνευτήριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:13",
+              "printed": "Καὶ εἶπε Κύριος πρὸς μὲ, κάθες αὐτοὺς εἰς τὸ χωνευτήριον, καὶ σκέψομαι εἰ δόκιμόν ἐστιν, ὃν τρόπον ἐδοκιμάσθην ὑπὲρ αὐτῶν, καὶ ἔλαβον τοὺς τριάκοντα ἀργυροῦς, καὶ ἐνέβαλον αὐτοὺς εἰς τὸν οἶκον Κυρίου εἰς τὸ χωνευτήριον."
+            }
+          ]
+        },
+        {
+          "quote": "εἰς τὸν ἀγρὸν τοῦ κεραμέως",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/27/",
+              "printedLabel": "27:10",
+              "printed": "καὶ<S>2532</S> ἔδωκαν<S>1325</S> αὐτὰ<S>846</S> εἰς<S>1519</S> τὸν<S>3588</S> ἀγρὸν<S>68</S> τοῦ<S>3588</S> κεραμέως,<S>2763</S> καθὰ<S>2505</S> συνέταξέν<S>4929</S> μοι<S>1473</S> κύριος.<S>2962</S>"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/27/",
+              "printedLabel": "27:10",
+              "printed": "και εδωκαν αυτα εις τον αγρον του κεραμεως καθα συνεταξεν μοι κυριος"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC11.htm",
+          "printedLabel": "11:13",
+          "quote": "Drop them into the furnace",
+          "printed": "And the Lord said to me, Drop them into the furnace, and I will see if it is good metal , as I was proved for their sakes. And I took the thirty pieces of silver, and cast them into the furnace in the house of the Lord.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC11.htm",
+          "printedLabel": "11:13",
+          "quote": "cast them into the furnace in the house of the Lord",
+          "printed": "And the Lord said to me, Drop them into the furnace, and I will see if it is good metal , as I was proved for their sakes. And I took the thirty pieces of silver, and cast them into the furnace in the house of the Lord.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 11:13",
+          "quote": "Cast it unto the potter",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Matthew 27:10",
+          "quote": "gave them for the potter's field",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "εἰς τὸ χωνευτήριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "τοῦ κεραμέως",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/27/",
+              "printedLabel": "27:10"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/27/",
+              "printedLabel": "27:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "הַשְׁלִיכֵ֙הוּ֙ אֶל־הַיֹּוצֵ֔ר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וָאַשְׁלִ֥יךְ אֹתֹ֛ו בֵּ֥ית יְהוָ֖ה אֶל־הַיֹּוצֵֽר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "κάθες αὐτοὺς εἰς τὸ χωνευτήριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἐνέβαλον αὐτοὺς εἰς τὸν οἶκον Κυρίου εἰς τὸ χωνευτήριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "εἰς τὸν ἀγρὸν τοῦ κεραμέως",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/27/",
+              "printedLabel": "27:10"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/27/",
+              "printedLabel": "27:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "השליכהו אל היוצר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:13"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ואשליך אתו בית יהוה אל היוצר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:13"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "χωνευτήριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC11.htm",
+              "printedLabel": "11:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "Cast it unto the potter",
+          "ref": "Zechariah 11:13",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "Drop them into the furnace",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Cast it unto the potter",
+          "ref": "Zechariah 11:13",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "to the potter in the house of the Lord",
+          "ref": "Zechariah 11:13",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "into the furnace",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the potter’s",
+          "ref": "Matthew 27:10",
+          "classification": "KJV ellipsis or apostrophe typography, each fragment verified"
+        },
+        {
+          "field": "summary",
+          "quote": "the potter’s field",
+          "ref": "Matthew 27:10",
+          "classification": "KJV ellipsis or apostrophe typography, each fragment verified"
+        },
+        {
+          "field": "text",
+          "quote": "Cast it unto the potter",
+          "ref": "Zechariah 11:13",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "cast them to the potter in the house of the Lord",
+          "ref": "Zechariah 11:13",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Drop them into the furnace",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "cast them into the furnace in the house of the Lord",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "gave them for the potter's field",
+          "ref": "Matthew 27:10",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "look-upon-me-whom-they-have-pierced-or-because-they-have-mocked-me-zechariah-12-10-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 12:10",
+          "quote": "they shall look upon me whom they have pierced",
+          "exact": true
+        },
+        {
+          "ref": "John 19:37",
+          "quote": "They shall look on him whom they pierced",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 12:10",
+          "quote": "as one mourneth for his only son",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְהִבִּ֥יטוּ אֵלַ֖י אֵ֣ת אֲשֶׁר־דָּקָ֑רוּ … כְּמִסְפֵּד֙ עַל־הַיָּחִ֔יד",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:10",
+              "printed": "וְשָׁפַכְתִּי֩ עַל־בֵּ֨ית דָּוִ֜יד וְעַ֣ל ׀ יֹושֵׁ֣ב יְרוּשָׁלִַ֗ם ר֤וּחַ חֵן֙ וְתַ֣חֲנוּנִ֔ים וְהִבִּ֥יטוּ אֵלַ֖י אֵ֣ת אֲשֶׁר־דָּקָ֑רוּ וְסָפְד֣וּ עָלָ֗יו כְּמִסְפֵּד֙ עַל־הַיָּחִ֔יד וְהָמֵ֥ר עָלָ֖יו כְּהָמֵ֥ר עַֽל־הַבְּכֹֽור׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἐπιβλέψονται πρὸς μὲ, ἀνθʼ ὧν κατωρχήσαντο … ὡς ἐπʼ ἀγαπητῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC12.htm",
+              "printedLabel": "12:10",
+              "printed": "Καὶ ἐκχεῶ ἐπὶ τὸν οἶκον Δαυὶδ, καὶ ἐπὶ τοὺς κατοικοῦντας Ἱερουσαλὴμ πνεῦμα χάριτος καὶ οἰκτιρμοῦ· καὶ ἐπιβλέψονται πρὸς μὲ, ἀνθʼ ὧν κατωρχήσαντο· καὶ κόψονται ἐπʼ αὐτὸν κοπετὸν, ὡς ἐπʼ ἀγαπητῷ, καὶ ὀδυνηθήσονται ὀδύνην, ὡς ἐπὶ τῷ πρωτοτόκῳ."
+            }
+          ]
+        },
+        {
+          "quote": "ὄψονται εἰς ὃν ἐξεκέντησαν",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/43/19/",
+              "printedLabel": "19:37",
+              "printed": "καὶ<S>2532</S> πάλιν<S>3825</S> ἑτέρα<S>2087</S> γραφὴ<S>1124</S> λέγει·<S>3004</S> ὄψονται<S>3708</S> εἰς<S>1519</S> ὃν<S>3739</S> ἐξεκέντησαν.<S>1574</S>"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/43/19/",
+              "printedLabel": "19:37",
+              "printed": "και παλιν ετερα γραφη λεγει οψονται εις ον εξεκεντησαν"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC12.htm",
+          "printedLabel": "12:10",
+          "quote": "they shall look upon me, because they have mocked me",
+          "printed": "And I will pour upon the house of David, and upon the inhabitants of Jerusalem, the spirit of grace and compassion: and they shall look upon me, because they have mocked me , and they shall make lamentation for him, as for a beloved friend , and they shall grieve intensely, as for a first-born son .",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC12.htm",
+          "printedLabel": "12:10",
+          "quote": "as for a beloved friend",
+          "printed": "And I will pour upon the house of David, and upon the inhabitants of Jerusalem, the spirit of grace and compassion: and they shall look upon me, because they have mocked me , and they shall make lamentation for him, as for a beloved friend , and they shall grieve intensely, as for a first-born son .",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 12:10",
+          "quote": "they shall look upon me whom they have pierced",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "John 19:37",
+          "quote": "They shall look on him whom they pierced",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἀνθʼ ὧν κατωρχήσαντο",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC12.htm",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "ὡς ἐπʼ ἀγαπητῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC12.htm",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "ὃν ἐξεκέντησαν",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/43/19/",
+              "printedLabel": "19:37"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/43/19/",
+              "printedLabel": "19:37"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְהִבִּ֥יטוּ אֵלַ֖י אֵ֣ת אֲשֶׁר־דָּקָ֑רוּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כְּמִסְפֵּד֙ עַל־הַיָּחִ֔יד",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἐπιβλέψονται πρὸς μὲ, ἀνθʼ ὧν κατωρχήσαντο",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC12.htm",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὡς ἐπʼ ἀγαπητῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC12.htm",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὄψονται εἰς ὃν ἐξεκέντησαν",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/43/19/",
+              "printedLabel": "19:37"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/43/19/",
+              "printedLabel": "19:37"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והביטו אלי את אשר דקרו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כמספד על היחיד",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "they shall look upon me whom they have pierced",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "they shall look upon me, because they have mocked me",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "they shall look upon me whom they have pierced",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "as one mourneth for his only son",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "because they have mocked me",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "as for a beloved friend",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "whom they pierced",
+          "ref": "John 19:37",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "they shall look upon me whom they have pierced",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "as one mourneth for his only son",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "they shall look upon me, because they have mocked me",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "as for a beloved friend",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "They shall look on him whom they pierced",
+          "ref": "John 19:37",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "mocked",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "the-mourning-of-hadadrimmon-or-the-pomegranate-grove-cut-down-zechariah-12-11-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 12:11",
+          "quote": "as the mourning of Hadadrimmon in the valley of Megiddon",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "כְּמִסְפַּ֥ד הֲדַדְ־רִמֹּ֖ון בְּבִקְעַ֥ת מְגִדֹּֽון",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:11",
+              "printed": "בַּיֹּ֣ום הַה֗וּא יִגְדַּ֤ל הַמִּסְפֵּד֙ בִּיר֣וּשָׁלִַ֔ם כְּמִסְפַּ֥ד הֲדַדְ־רִמֹּ֖ון בְּבִקְעַ֥ת מְגִדֹּֽון׃"
+            }
+          ]
+        },
+        {
+          "quote": "ὡς κοπετὸς ῥοῶνος ἐν πεδίῳ ἐκκοπτομένου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC12.htm",
+              "printedLabel": "12:11",
+              "printed": "Ἐν τῇ ἡμέρᾳ ἐκείνῃ μεγαλυνθήσεται ὁ κοπετὸς ἐν Ἱερουσαλὴμ, ὡς κοπετὸς ῥοῶνος ἐν πεδίῳ ἐκκοπτομένου."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC12.htm",
+          "printedLabel": "12:11",
+          "quote": "as the mourning for the pomegranate grove cut down in the plain",
+          "printed": "In that day the lamentation in Jerusalem shall be very great, as the mourning for the pomegranate grove cut down in the plain.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 12:11",
+          "quote": "as the mourning of Hadadrimmon in the valley of Megiddon",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ῥοῶνος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC12.htm",
+              "printedLabel": "12:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "πεδίῳ ἐκκοπτομένου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC12.htm",
+              "printedLabel": "12:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כְּמִסְפַּ֥ד הֲדַדְ־רִמֹּ֖ון בְּבִקְעַ֥ת מְגִדֹּֽון",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὡς κοπετὸς ῥοῶνος ἐν πεδίῳ ἐκκοπτομένου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC12.htm",
+              "printedLabel": "12:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כמספד הדד רמון בבקעת מגדון",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:11"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "the mourning of Hadadrimmon in the valley of Megiddon",
+          "ref": "Zechariah 12:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the mourning for the pomegranate grove cut down in the plain",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the mourning of Hadadrimmon in the valley of Megiddon",
+          "ref": "Zechariah 12:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the pomegranate grove cut down in the plain",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "as the mourning of Hadadrimmon in the valley of Megiddon",
+          "ref": "Zechariah 12:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "as the mourning for the pomegranate grove cut down in the plain",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Allow the place name and described grove to concern the same location."
+    },
+    {
+      "id": "a-fountain-opened-for-sin-and-for-uncleanness-or-every-place-opened-for-removal-and-separation-zechariah-13-1-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 13:1",
+          "quote": "a fountain opened",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 13:1",
+          "quote": "for sin and for uncleanness",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "מָקֹ֣ור נִפְתָּ֔ח … לְחַטַּ֖את וּלְנִדָּֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:1",
+              "printed": "בַּיֹּ֣ום הַה֗וּא יִֽהְיֶה֙ מָקֹ֣ור נִפְתָּ֔ח לְבֵ֥ית דָּוִ֖יד וּלְיֹשְׁבֵ֣י יְרֽוּשָׁלִָ֑ם לְחַטַּ֖את וּלְנִדָּֽה׃"
+            }
+          ]
+        },
+        {
+          "quote": "πᾶς τόπος διανοιγόμενος … εἰς τὴν μετακίνησιν, καὶ εἰς τὸν χωρισμόν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC13.htm",
+              "printedLabel": "13:1",
+              "printed": "Ἐν τῇ ἡμέρᾳ ἐκείνῃ ἔσται πᾶς τόπος διανοιγόμενος τῷ οἴκῳ Δαυὶδ, καὶ τοῖς κατοικοῦσιν Ἱερουσαλὴμ εἰς τὴν μετακίνησιν, καὶ εἰς τὸν χωρισμόν."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC13.htm",
+          "printedLabel": "13:1",
+          "quote": "every place shall be opened",
+          "printed": "In that day every place shall be opened to the house of David and to the inhabitants of Jerusalem for removal and for separation.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC13.htm",
+          "printedLabel": "13:1",
+          "quote": "for removal and for separation",
+          "printed": "In that day every place shall be opened to the house of David and to the inhabitants of Jerusalem for removal and for separation.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 13:1",
+          "quote": "a fountain opened",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "πᾶς τόπος διανοιγόμενος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC13.htm",
+              "printedLabel": "13:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "εἰς τὴν μετακίνησιν, καὶ εἰς τὸν χωρισμόν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC13.htm",
+              "printedLabel": "13:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "מָקֹ֣ור נִפְתָּ֔ח",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "לְחַטַּ֖את וּלְנִדָּֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "πᾶς τόπος διανοιγόμενος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC13.htm",
+              "printedLabel": "13:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "εἰς τὴν μετακίνησιν, καὶ εἰς τὸν χωρισμόν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC13.htm",
+              "printedLabel": "13:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "מקור נפתח",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "לחטאת ולנדה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "a fountain opened … for sin and for uncleanness",
+          "ref": "Zechariah 13:1",
+          "classification": "KJV ellipsis or apostrophe typography, each fragment verified"
+        },
+        {
+          "field": "title",
+          "quote": "every place shall be opened … for removal and for separation",
+          "ref": null,
+          "classification": "Brenton English ellipsis fragments verified"
+        },
+        {
+          "field": "summary",
+          "quote": "a fountain opened … for sin and for uncleanness",
+          "ref": "Zechariah 13:1",
+          "classification": "KJV ellipsis or apostrophe typography, each fragment verified"
+        },
+        {
+          "field": "summary",
+          "quote": "every place shall be opened",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "for removal and for separation",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "a fountain opened",
+          "ref": "Zechariah 13:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "for sin and for uncleanness",
+          "ref": "Zechariah 13:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "every place shall be opened",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "for removal and for separation",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "smite-the-shepherd-and-the-sheep-shall-be-scattered-or-smite-the-shepherds-and-draw-out-the-sheep-zechariah-13-7-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 13:7",
+          "quote": "against my shepherd, and against the man that is my fellow",
+          "exact": true
+        },
+        {
+          "ref": "Matthew 26:31",
+          "quote": "I will smite the shepherd, and the sheep of the flock shall be scattered abroad",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 13:7",
+          "quote": "smite the shepherd, and the sheep shall be scattered",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "עַל־רֹעִי֙ וְעַל־גֶּ֣בֶר עֲמִיתִ֔י … הַ֤ךְ אֶת־הָֽרֹעֶה֙ וּתְפוּצֶ֣יןָ הַצֹּ֔אן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:7",
+              "printed": "חֶ֗רֶב עוּרִ֤י עַל־רֹעִי֙ וְעַל־גֶּ֣בֶר עֲמִיתִ֔י נְאֻ֖ם יְהוָ֣ה צְבָאֹ֑ות הַ֤ךְ אֶת־הָֽרֹעֶה֙ וּתְפוּצֶ֣יןָ הַצֹּ֔אן וַהֲשִׁבֹתִ֥י יָדִ֖י עַל־הַצֹּעֲרִֽים׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἐπὶ τοὺς ποιμένας μου, καὶ ἐπὶ ἄνδρα πολίτην μου … πατάξατε τοὺς ποιμένας, καὶ ἐκσπάσατε τὰ πρόβατα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC13.htm",
+              "printedLabel": "13:7",
+              "printed": "Ῥομφαία ἐξεγέρθητι ἐπὶ τοὺς ποιμένας μου, καὶ ἐπὶ ἄνδρα πολίτην μου, λέγει Κύριος παντοκράτωρ, πατάξατε τοὺς ποιμένας, καὶ ἐκσπάσατε τὰ πρόβατα· καὶ ἐπάξω τὴν χεῖρά μου ἐπὶ τοὺς μικρούς."
+            }
+          ]
+        },
+        {
+          "quote": "πατάξω τὸν ποιμένα",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/26/",
+              "printedLabel": "26:31",
+              "printed": "τότε<S>5119</S> λέγει<S>3004</S> αὐτοῖς<S>846</S> ὁ<S>3588</S> Ἰησοῦς·<S>2424</S> πάντες<S>3956</S> ὑμεῖς<S>5210</S> σκανδαλισθήσεσθε<S>4624</S> ἐν<S>1722</S> ἐμοὶ<S>1473</S> ἐν<S>1722</S> τῇ<S>3588</S> νυκτὶ<S>3571</S> ταύτῃ,<S>3778</S> γέγραπται<S>1125</S> γάρ·<S>1063</S> πατάξω<S>3960</S> τὸν<S>3588</S> ποιμένα,<S>4166</S> καὶ<S>2532</S> διασκορπισθήσονται<S>1287</S> τὰ<S>3588</S> πρόβατα<S>4263</S> τῆς<S>3588</S> ποίμνης.<S>4167</S>"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/26/",
+              "printedLabel": "26:31",
+              "printed": "τοτε λεγει αυτοις ο ιησους παντες υμεις σκανδαλισθησεσθε εν εμοι εν τη νυκτι ταυτη γεγραπται γαρ παταξω τον ποιμενα και διασκορπισθησεται τα προβατα της ποιμνης"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC13.htm",
+          "printedLabel": "13:7",
+          "quote": "against my shepherds, and against the man who is my citizen",
+          "printed": "Awake, O sword, against my shepherds, and against the man who is my citizen, saith the Lord Almighty: smite the shepherds, and draw out the sheep: and I will bring mine hand upon the little ones.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC13.htm",
+          "printedLabel": "13:7",
+          "quote": "smite the shepherds, and draw out the sheep",
+          "printed": "Awake, O sword, against my shepherds, and against the man who is my citizen, saith the Lord Almighty: smite the shepherds, and draw out the sheep: and I will bring mine hand upon the little ones.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 13:7",
+          "quote": "smite the shepherd, and the sheep shall be scattered",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Matthew 26:31",
+          "quote": "I will smite the shepherd, and the sheep of the flock shall be scattered abroad",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "τοὺς ποιμένας",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC13.htm",
+              "printedLabel": "13:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "πατάξω τὸν ποιμένα",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/26/",
+              "printedLabel": "26:31"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/26/",
+              "printedLabel": "26:31"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "עַל־רֹעִי֙ וְעַל־גֶּ֣בֶר עֲמִיתִ֔י",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "הַ֤ךְ אֶת־הָֽרֹעֶה֙ וּתְפוּצֶ֣יןָ הַצֹּ֔אן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἐπὶ τοὺς ποιμένας μου, καὶ ἐπὶ ἄνδρα πολίτην μου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC13.htm",
+              "printedLabel": "13:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "πατάξατε τοὺς ποιμένας, καὶ ἐκσπάσατε τὰ πρόβατα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC13.htm",
+              "printedLabel": "13:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "πατάξω τὸν ποιμένα",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/26/",
+              "printedLabel": "26:31"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/26/",
+              "printedLabel": "26:31"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "על רעי ועל גבר עמיתי",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:7"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הך את הרעה ותפוצין הצאן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/13/",
+              "printedLabel": "13:7"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "smite the shepherd, and the sheep shall be scattered",
+          "ref": "Zechariah 13:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "smite the shepherds, and draw out the sheep",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "my shepherd",
+          "ref": "Zechariah 13:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the man that is my fellow",
+          "ref": "Zechariah 13:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "smite the shepherd, and the sheep shall be scattered",
+          "ref": "Zechariah 13:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "draw out the sheep",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "my citizen",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "my fellow",
+          "ref": "Zechariah 13:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "I will smite the shepherd",
+          "ref": "Matthew 26:31",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "against my shepherd, and against the man that is my fellow",
+          "ref": "Zechariah 13:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "smite the shepherd, and the sheep shall be scattered",
+          "ref": "Zechariah 13:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "against my shepherds, and against the man who is my citizen",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "smite the shepherds, and draw out the sheep",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "I will smite the shepherd, and the sheep of the flock shall be scattered abroad",
+          "ref": "Matthew 26:31",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "flee-to-the-valley-of-the-mountains-or-the-valley-of-my-mountains-shall-be-closed-up-zechariah-14-5-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 14:5",
+          "quote": "ye shall flee to the valley of the mountains; for the valley of the mountains shall reach unto Azal",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְנַסְתֶּ֣ם גֵּֽיא־הָרַ֗י כִּֽי־יַגִּ֣יעַ גֵּי־הָרִים֮ אֶל־אָצַל֒",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/14/",
+              "printedLabel": "14:5",
+              "printed": "וְנַסְתֶּ֣ם גֵּֽיא־הָרַ֗י כִּֽי־יַגִּ֣יעַ גֵּי־הָרִים֮ אֶל־אָצַל֒ וְנַסְתֶּ֗ם כַּאֲשֶׁ֤ר נַסְתֶּם֙ מִפְּנֵ֣י הָרַ֔עַשׁ בִּימֵ֖י עֻזִּיָּ֣ה מֶֽלֶךְ־יְהוּדָ֑ה וּבָא֙ יְהוָ֣ה אֱלֹהַ֔י כָּל־קְדֹשִׁ֖ים עִמָּֽךְ׃"
+            }
+          ]
+        },
+        {
+          "quote": "Καὶ φραχθήσεται ἡ φάραγξ τῶν ὀρέων μου, καὶ ἐγκολληθήσεται φάραγξ ὀρέων ἕως Ἰασὸδ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC14.htm",
+              "printedLabel": "14:5",
+              "printed": "Καὶ φραχθήσεται ἡ φάραγξ τῶν ὀρέων μου, καὶ ἐγκολληθήσεται φάραγξ ὀρέων ἕως Ἰασὸδ, καὶ ἐνφραχθήσεται καθὼς ἐνεφράγη ἐν ταῖς ἡμέραις τοῦ συσσεισμοῦ, ἐν ἡμέραις Ὀζίου βασιλέως Ἰούδα· καὶ ἥξει Κύριος ὁ Θεός μου, καὶ πάντες οἱ ἅγιοι μετʼ αὐτοῦ."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC14.htm",
+          "printedLabel": "14:5",
+          "quote": "And the valley of my mountains shall be closed up, and the valley of the mountains shall be joined on to Jasod",
+          "printed": "And the valley of my mountains shall be closed up, and the valley of the mountains shall be joined on to Jasod, and shall be blocked up as it was blocked up in the days of the earthquake, in the days of Ozias king of Juda; and the Lord my God shall come, and all the saints with him.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 14:5",
+          "quote": "ye shall flee to the valley of the mountains; for the valley of the mountains shall reach unto Azal",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "וְנַסְתֶּ֣ם גֵּֽיא־הָרַ֗י כִּֽי־יַגִּ֣יעַ גֵּי־הָרִים֮ אֶל־אָצַל֒",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/14/",
+              "printedLabel": "14:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Καὶ φραχθήσεται ἡ φάραγξ τῶν ὀρέων μου, καὶ ἐγκολληθήσεται φάραγξ ὀρέων ἕως Ἰασὸδ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC14.htm",
+              "printedLabel": "14:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ונסתם גיא הרי כי יגיע גי הרים אל אצל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/14/",
+              "printedLabel": "14:5"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "ye shall flee to the valley of the mountains",
+          "ref": "Zechariah 14:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the valley of my mountains shall be closed up",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "ye shall flee to the valley of the mountains",
+          "ref": "Zechariah 14:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "shall be closed up",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Jasod",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "ye shall flee to the valley of the mountains; for the valley of the mountains shall reach unto Azal",
+          "ref": "Zechariah 14:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "And the valley of my mountains shall be closed up, and the valley of the mountains shall be joined on to Jasod",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "flee",
+          "ref": "Zechariah 14:5",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Keep fleeing versus closure as the qualifying difference; name forms alone do not qualify."
+    },
+    {
+      "id": "even-upon-them-shall-be-no-rain-or-even-these-shall-be-added-to-the-others-zechariah-14-17-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 14:17",
+          "quote": "even upon them shall be no rain",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְלֹ֥א עֲלֵיהֶ֖ם יִהְיֶ֥ה הַגָּֽשֶׁם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/14/",
+              "printedLabel": "14:17",
+              "printed": "וְ֠הָיָה אֲשֶׁ֨ר לֹֽא־יַעֲלֶ֜ה מֵאֵ֨ת מִשְׁפְּחֹ֤ות הָאָ֙רֶץ֙ אֶל־יְר֣וּשָׁלִַ֔ם לְהִֽשְׁתַּחֲוֹ֔ת לְמֶ֖לֶךְ יְהוָ֣ה צְבָאֹ֑ות וְלֹ֥א עֲלֵיהֶ֖ם יִהְיֶ֥ה הַגָּֽשֶׁם׃"
+            }
+          ]
+        },
+        {
+          "quote": "καὶ οὗτοι ἐκείνοις προστεθήσονται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC14.htm",
+              "printedLabel": "14:17",
+              "printed": "Καὶ ἔσται, ὅσοι ἐὰν μὴ ἀναβῶσιν ἐκ πασῶν τῶν φυλῶν τῆς γῆς εἰς Ἱερουσαλὴμ, τοῦ προσκυνῆσαι τῷ βασιλεῖ Κυρίῳ παντοκράτορι, καὶ οὗτοι ἐκείνοις προστεθήσονται."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEC14.htm",
+          "printedLabel": "14:17",
+          "quote": "even these shall be added to the others",
+          "printed": "And it shall come to pass, that whosoever of all the families of the earth shall not come up to Jerusalem to worship the king, the Lord Almighty, even these shall be added to the others.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 14:17",
+          "quote": "even upon them shall be no rain",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "καὶ οὗτοι ἐκείνοις προστεθήσονται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC14.htm",
+              "printedLabel": "14:17"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְלֹ֥א עֲלֵיהֶ֖ם יִהְיֶ֥ה הַגָּֽשֶׁם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/14/",
+              "printedLabel": "14:17"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καὶ οὗτοι ἐκείνοις προστεθήσονται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEC14.htm",
+              "printedLabel": "14:17"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ולא עליהם יהיה הגשם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/14/",
+              "printedLabel": "14:17"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "even upon them shall be no rain",
+          "ref": "Zechariah 14:17",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "even these shall be added to the others",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "even upon them shall be no rain",
+          "ref": "Zechariah 14:17",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "even these shall be added to the others",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "even upon them shall be no rain",
+          "ref": "Zechariah 14:17",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "even these shall be added to the others",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "spoken-by-jeremy-the-prophet-or-the-thirty-pieces-of-silver-in-zechariah-matthew-27-9",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Matthew 27:9",
+          "quote": "Then was fulfilled that which was spoken by Jeremy the prophet, saying, And they took the thirty pieces of silver",
+          "exact": true
+        },
+        {
+          "ref": "Matthew 27:10",
+          "quote": "And gave them for the potter's field",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 11:12",
+          "quote": "So they weighed for my price thirty pieces of silver",
+          "exact": true
+        },
+        {
+          "ref": "Zechariah 11:13",
+          "quote": "I took the thirty pieces of silver, and cast them to the potter in the house of the Lord",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "διὰ Ἰερεμίου τοῦ προφήτου",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/27/",
+              "printedLabel": "27:9",
+              "printed": "τότε<S>5119</S> ἐπληρώθη<S>4137</S> τὸ<S>3588</S> ῥηθὲν<S>2046</S> διὰ<S>1223</S> Ἰερεμίου<S>2408</S> τοῦ<S>3588</S> προφήτου<S>4396</S> λέγοντος·<S>3004</S> καὶ<S>2532</S> ἔλαβον<S>2983</S> τὰ<S>3588</S> τριάκοντα<S>5144</S> ἀργύρια,<S>694</S> τὴν<S>3588</S> τιμὴν<S>5092</S> τοῦ<S>3588</S> τετιμημένου<S>5091</S> ὃν<S>3739</S> ἐτιμήσαντο<S>5091</S> ἀπὸ<S>575</S> υἱῶν<S>5207</S> Ἰσραήλ,<S>2474</S>"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/27/",
+              "printedLabel": "27:9",
+              "printed": "τοτε επληρωθη το ρηθεν δια ιερεμιου του προφητου λεγοντος και ελαβον τα τριακοντα αργυρια την τιμην του τετιμημενου ον ετιμησαντο απο υιων ισραηλ"
+            }
+          ]
+        },
+        {
+          "quote": "שְׁלֹשִׁ֥ים כָּֽסֶף",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:12",
+              "printed": "וָאֹמַ֣ר אֲלֵיהֶ֗ם אִם־טֹ֧וב בְּעֵינֵיכֶ֛ם הָב֥וּ שְׂכָרִ֖י וְאִם־לֹ֣א ׀ חֲדָ֑לוּ וַיִּשְׁקְל֥וּ אֶת־שְׂכָרִ֖י שְׁלֹשִׁ֥ים כָּֽסֶף׃"
+            }
+          ]
+        },
+        {
+          "quote": "שְׁלֹשִׁ֣ים הַכֶּ֔סֶף",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:13",
+              "printed": "וַיֹּ֨אמֶר יְהוָ֜ה אֵלַ֗י הַשְׁלִיכֵ֙הוּ֙ אֶל־הַיֹּוצֵ֔ר אֶ֣דֶר הַיְקָ֔ר אֲשֶׁ֥ר יָקַ֖רְתִּי מֵֽעֲלֵיהֶ֑ם וָֽאֶקְחָה֙ שְׁלֹשִׁ֣ים הַכֶּ֔סֶף וָאַשְׁלִ֥יךְ אֹתֹ֛ו בֵּ֥ית יְהוָ֖ה אֶל־הַיֹּוצֵֽר׃"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Matthew 27:9",
+          "quote": "spoken by Jeremy the prophet",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Zechariah 11:12",
+          "quote": "thirty pieces of silver",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "διὰ Ἰερεμίου τοῦ προφήτου",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/27/",
+              "printedLabel": "27:9"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/27/",
+              "printedLabel": "27:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "שְׁלֹשִׁ֥ים כָּֽסֶף",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "שְׁלֹשִׁ֣ים הַכֶּ֔סֶף",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/11/",
+              "printedLabel": "11:13"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Ἰερεμίου",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/27/",
+              "printedLabel": "27:9"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/27/",
+              "printedLabel": "27:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "spoken by Jeremy the prophet",
+          "ref": "Matthew 27:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "that which was spoken by Jeremy the prophet",
+          "ref": "Matthew 27:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "And they took the thirty pieces of silver",
+          "ref": "Matthew 27:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "thirty pieces of silver",
+          "ref": "Matthew 27:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Then was fulfilled that which was spoken by Jeremy the prophet, saying, And they took the thirty pieces of silver",
+          "ref": "Matthew 27:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "And gave them for the potter's field",
+          "ref": "Matthew 27:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "So they weighed for my price thirty pieces of silver",
+          "ref": "Zechariah 11:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "I took the thirty pieces of silver, and cast them to the potter in the house of the Lord",
+          "ref": "Zechariah 11:13",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they took the thirty pieces of silver",
+          "ref": "Matthew 27:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thirty pieces of silver",
+          "ref": "Matthew 27:9",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Meaning difference or significant question verified with the stated edition and interpretation limits."
+    },
+    {
+      "id": "look-upon-me-whom-they-have-pierced-or-look-on-him-whom-they-pierced-zechariah-12-10",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zechariah 12:10",
+          "quote": "they shall look upon me whom they have pierced",
+          "exact": true
+        },
+        {
+          "ref": "John 19:37",
+          "quote": "They shall look on him whom they pierced",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְהִבִּ֥יטוּ אֵלַ֖י אֵ֣ת אֲשֶׁר־דָּקָ֑רוּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:10",
+              "printed": "וְשָׁפַכְתִּי֩ עַל־בֵּ֨ית דָּוִ֜יד וְעַ֣ל ׀ יֹושֵׁ֣ב יְרוּשָׁלִַ֗ם ר֤וּחַ חֵן֙ וְתַ֣חֲנוּנִ֔ים וְהִבִּ֥יטוּ אֵלַ֖י אֵ֣ת אֲשֶׁר־דָּקָ֑רוּ וְסָפְד֣וּ עָלָ֗יו כְּמִסְפֵּד֙ עַל־הַיָּחִ֔יד וְהָמֵ֥ר עָלָ֖יו כְּהָמֵ֥ר עַֽל־הַבְּכֹֽור׃"
+            }
+          ]
+        },
+        {
+          "quote": "ὄψονται εἰς ὃν ἐξεκέντησαν",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/43/19/",
+              "printedLabel": "19:37",
+              "printed": "καὶ<S>2532</S> πάλιν<S>3825</S> ἑτέρα<S>2087</S> γραφὴ<S>1124</S> λέγει·<S>3004</S> ὄψονται<S>3708</S> εἰς<S>1519</S> ὃν<S>3739</S> ἐξεκέντησαν.<S>1574</S>"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/43/19/",
+              "printedLabel": "19:37",
+              "printed": "και παλιν ετερα γραφη λεγει οψονται εις ον εξεκεντησαν"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zechariah 12:10",
+          "quote": "they shall look upon me whom they have pierced",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "John 19:37",
+          "quote": "They shall look on him whom they pierced",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "וְהִבִּ֥יטוּ אֵלַ֖י אֵ֣ת אֲשֶׁר־דָּקָ֑רוּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὄψονται εἰς ὃν ἐξεκέντησαν",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/43/19/",
+              "printedLabel": "19:37"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/43/19/",
+              "printedLabel": "19:37"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "אלי",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/38/12/",
+              "printedLabel": "12:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "look upon me whom they have pierced",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "look on him whom they pierced",
+          "ref": "John 19:37",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "they shall look upon me whom they have pierced",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "They shall look on him whom they pierced",
+          "ref": "John 19:37",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "they shall look upon me whom they have pierced",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "They shall look on him whom they pierced",
+          "ref": "John 19:37",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "me",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "to me",
+          "ref": null,
+          "classification": "Researcher Hebrew gloss; not a KJV quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "him",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "scope",
+          "quote": "pierced",
+          "ref": "Zechariah 12:10",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ],
+      "interpretationDecision": "Clarify that first versus third grammatical person does not establish a different individual."
+    }
+  ],
+  "draftHashes": {
+    "nahum-to-malachi-records.json": "a3ebbe7636a143cacc79d2a6acc0e06bb442d9103415b70b98d2965a9fddea1a",
+    "nahum-to-malachi-notes.md": "cab1da1d4555696673077f676b619ca89d87145dcd5832dd00146dc3545e7363",
+    "nahum-to-malachi-q-records.json": "3861008b04de5e76ef1ae99917e46a0e7f5be8d13082159d9ebccfd00b9dde62",
+    "nahum-to-malachi-q-notes.md": "1f6f2fe79184193ae68cc0633f5d3e28933c0ab6748f9e8c4c0e18a8658bc26f"
+  },
+  "sourceCount": 39,
+  "sourceErrors": [],
+  "normalization": "Exact labelled KJV and sides; ellipsis fragments checked individually. Language accents, punctuation and Hebrew maqaf normalized for repeated forms. Every match retains supplied address and printed label. Greek NT checked in both TISCH and TR.",
+  "needsOwner": [
+    {
+      "id": "the-desire-of-all-nations-shall-come-or-the-choice-portions-of-all-the-nations-shall-come-haggai-2-7-greek",
+      "file": "nahum-to-malachi-records.json",
+      "decision": "held",
+      "reason": "Hold: the singular English noun desire may be collective and does not establish one entity. Desired things and choice portions may carry the same sense; the supplied comparison does not demonstrate the real meaning difference required for T. Needs direct owner ruling for any exception, or a revised Claude proposal establishing a difference.",
+      "operation": "hold",
+      "tags": [
+        "T"
+      ],
+      "witness": "Septuagint",
+      "needsOwner": true
+    }
+  ]
+}
