@@ -51,6 +51,11 @@ assert(context.visible({mode:'science',status:'Context',tags:['Q']}));
 context.cache.set('0:1:kjv:science',{items:[{id:'fixture-question',verse:3,placementRole:'context',keyTarget:'Genesis 1:1',status:'Context',tags:['Q'],title:'Fixture question',refs:[],sources:[]}]});
 const pointer=context.render(3);assert(pointer.includes('Context for:'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('Unanswered question'));
 const css=fs.readFileSync('src/style.css','utf8');assert(css.includes('.agreement.question,body.dark .agreement.question'));assert(css.includes('[data-tone="question"]'));
+const html=fs.readFileSync('src/index.html','utf8');
+assert(html.indexOf('id="theme"')>html.indexOf('id="reader-settings"'),'Theme control belongs inside Reader settings');
+assert(css.includes('.comparison-dock{position:sticky'),'Comparison filters must remain joined below the sticky header');
+assert(css.includes('border-bottom:1px solid var(--line)'),'Read divider belongs below the comparison filters');
+assert(css.includes('border:1px solid var(--brand-accent)!important'),'Filter icons need visible burnt-orange borders');
 console.log('PASS: Q tag, accessible label, initially hidden summary, independent on/off, Context pointer and light/dark colors.');
 
 context.cache.set('0:1:kjv:science',{items:[]});

@@ -18,4 +18,6 @@ start();handlers.touchcancel();end(100,200);assert.equal(moves.length,0,'Cancell
 start();now=1600;handlers.touchend(event(touch(100,200)));assert.equal(moves.length,0,'Long press');
 assert.equal(context.chapterSwipeDirection(-69,0,200),0);assert.equal(context.chapterSwipeDirection(-90,65,200),0);
 const vertical=event(touch(255,250));start();handlers.touchmove(vertical);assert(!vertical.prevented);
+assert(source.includes("loadChapter(book,ch,null,true,direction)"),'Swipe and paging navigation must identify direction');
+assert(source.includes("chapter-enter-next")&&source.includes("chapter-enter-previous"),'Chapter navigation must animate in the matching direction');
 console.log('PASS: chapter swipe direction, threshold, diagonal/vertical/tap/edge/control/selection/multitouch/cancel/long-press guards.');

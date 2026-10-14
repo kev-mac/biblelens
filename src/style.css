@@ -421,9 +421,17 @@ body.dark .brand{color:#b8cfe5}body.dark .brand b{color:#f58220}
 .brand b,body.dark .brand b,.brand .mark-letter-l{color:var(--brand-accent)}
 nav button.active{color:var(--brand-accent);box-shadow:0 2px var(--brand-accent)}
 body>header{position:sticky;top:0;z-index:40;background:var(--bg)}
-.comparison-dock{height:var(--comparison-dock-height,72px)}
-.comparison-dock .comparison-status{position:fixed;top:var(--site-header-height,80px);left:50%;transform:translateX(-50%);z-index:30;width:calc(100% - 64px);max-width:936px;margin:0;padding:12px 0;background:var(--bg)}
-.comparison-status .category-filter .filter-icon{border:0!important}
+.read-view>header{border-bottom-color:transparent}
+.comparison-dock{position:sticky;top:var(--site-header-height,80px);z-index:35;width:100vw;height:var(--comparison-dock-height,72px);margin-left:calc(50% - 50vw);background:var(--bg);border-bottom:1px solid var(--line)}
+.comparison-dock .comparison-status{width:calc(100% - 64px);max-width:936px;margin:0 auto;padding:12px 0;background:var(--bg)}
+.comparison-status .category-filter .filter-icon{border:1px solid var(--brand-accent)!important}
+.comparison-status .category-filter[aria-pressed="true"] .filter-icon{border-width:2px!important}
 .comparison-status .category-filter[aria-pressed="false"] .filter-icon,.comparison-status .category-filter:disabled .filter-icon{background:transparent;color:var(--muted)}
 html{scroll-padding-top:calc(var(--site-header-height,80px) + var(--comparison-dock-height,0px) + 16px)}
 @media(max-width:600px){.comparison-dock .comparison-status{width:calc(100% - 32px)}}
+
+.settings-theme{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:18px}
+.chapter-text{will-change:transform,opacity;transition:transform .24s ease,opacity .24s ease}
+.chapter-text.chapter-enter-next{transform:translateX(42px);opacity:.2}
+.chapter-text.chapter-enter-previous{transform:translateX(-42px);opacity:.2}
+@media(prefers-reduced-motion:reduce){.chapter-text{transition:none}.chapter-text.chapter-enter-next,.chapter-text.chapter-enter-previous{transform:none;opacity:1}}
