@@ -1,0 +1,86 @@
+{
+  "batch": "joel-to-micah-q",
+  "subsetBooks": [
+    "Obadiah",
+    "Jonah"
+  ],
+  "completeBatch": false,
+  "pendingRecords": [
+    {
+      "id": "until-she-which-travaileth-hath-brought-forth-who-is-she-micah-5-3",
+      "ref": "Micah 5:3"
+    }
+  ],
+  "checked": "2026-10-14T09:05:37.103Z",
+  "checks": [
+    {
+      "id": "the-captivity-of-jerusalem-which-is-in-sepharad-where-is-sepharad-obadiah-1-20",
+      "english": [
+        {
+          "ref": "Obadiah 1:20",
+          "quote": "And the captivity of this host of the children of Israel shall possess that of the Canaanites, even unto Zarephath; and the captivity of Jerusalem, which is in Sepharad, shall possess the cities of the south.",
+          "exact": true
+        },
+        {
+          "quote": "the captivity of Jerusalem, which is in Sepharad",
+          "ref": "Obadiah 1:20",
+          "classification": "exact KJV fragment",
+          "exact": true
+        },
+        {
+          "quote": "the captivity of Jerusalem, which is in Sepharad",
+          "ref": "Obadiah 1:20",
+          "classification": "exact KJV fragment",
+          "exact": true
+        },
+        {
+          "quote": "the cities of the south",
+          "ref": "Obadiah 1:20",
+          "classification": "exact KJV fragment",
+          "exact": true
+        },
+        {
+          "quote": "And the captivity of this host of the children of Israel shall possess that of the Canaanites, even unto Zarephath; and the captivity of Jerusalem, which is in Sepharad, shall possess the cities of the south.",
+          "ref": "Obadiah 1:20",
+          "classification": "exact KJV fragment",
+          "exact": true
+        },
+        {
+          "quote": "in Sepharad",
+          "ref": "Obadiah 1:20",
+          "classification": "exact KJV fragment",
+          "exact": true
+        }
+      ],
+      "languages": [],
+      "brentonEnglish": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Obadiah 1:20",
+          "quote": "the captivity of Jerusalem, which is in Sepharad",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        "seen",
+        "judas",
+        "animals",
+        "plants",
+        "soldiers",
+        "birth"
+      ],
+      "repeatedLanguageForms": []
+    }
+  ],
+  "draftHashes": {
+    "joel-to-micah-records.json": "4f4532778fa77e726c8a5d172404c1bf0dec148ca8f09e7e500ea22c9cf12627",
+    "joel-to-micah-q-records.json": "aa2be6460a807433695706a5867327e36f463a04b9f4d5f81f1445fe413a78ee",
+    "joel-to-micah-notes.md": "12486ee07609bedae47134a662a94cbfc81e274e25f783fdd5322675a23c0f8b",
+    "joel-to-micah-q-notes.md": "07d76ddb0de7d38634753880bd5e8833a13b8a29a0752def736d95b76c6ae3dd"
+  },
+  "sourceErrors": [],
+  "normalization": "Exact KJV substrings; original-language matches retain printed labels and normalize accents, punctuation and page whitespace. Repeated language fragments in summary and reasoning were checked against the same supplied printed verse.",
+  "needsOwner": []
+}
