@@ -1,0 +1,38 @@
+{
+  "batch": "john-1-21-q",
+  "completeBatch": true,
+  "checked": "2026-10-14T22:24:18.705Z",
+  "draftHashes": {
+    "john-1-21-records.json": "e79e481e6821c4689dfcd9249d770482c9628ca589337c9f6aa2ced002dff5f4",
+    "john-1-21-q-records.json": "35ffb86e4ee6fd0cb211f330cac3093920a06a6ce3c3c9098e18cb4d2fe5c0d3",
+    "john-1-21-notes.md": "383bcc9400020fe88918045acb61c564109db5e5d5ac27df6cac925146fffeac",
+    "john-1-21-q-notes.md": "22de6138ef63f1a12ae71e3559a8beb5ba38899899d9f008069561cb1ae3c76f"
+  },
+  "records": 3,
+  "sourcePages": 46,
+  "sourceErrors": [],
+  "sideChecks": 4,
+  "sideErrors": [],
+  "greekQuotedForms": 237,
+  "greekQuoteErrors": [],
+  "greekAddressErrors": [],
+  "classifications": {
+    "greekLexicalForm": [
+      {
+        "id": "they-held-him-by-the-feet-or-touch-me-not-matthew-28-9-john-20-17",
+        "form": "ἅπτομαι",
+        "reason": "Lexical form named in reasoning, not presented as an exact verse quotation."
+      }
+    ],
+    "crossBookGreekAddresses": [
+      "Matthew 28:9",
+      "Matthew 3:14",
+      "Matthew 26:57"
+    ],
+    "englishRenderingsGlossesEllipses": 0
+  },
+  "duplicateIds": [],
+  "existingEvidenceCount": 1174,
+  "builtInStudyReview": "Reviewed all six ENTRIES studies and existing evidence; no proposal duplicates an existing finding. Shared verses are separately scoped.",
+  "interpretationLimits": "Edition-specific and Q/reconciliation limits retained. Annotation presence is not exhaustive review."
+}
