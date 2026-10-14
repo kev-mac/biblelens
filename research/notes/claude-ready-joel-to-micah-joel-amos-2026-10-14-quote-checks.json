@@ -1,0 +1,6533 @@
+{
+  "batch": "joel-to-micah",
+  "subsetBooks": [
+    "Joel",
+    "Amos"
+  ],
+  "completeBatch": false,
+  "pendingRecords": [
+    {
+      "id": "the-captivity-of-jerusalem-which-is-in-sepharad-or-the-captives-of-jerusalem-as-far-as-ephratha-obadiah-1-20-greek",
+      "ref": "Obadiah 1:20"
+    },
+    {
+      "id": "i-am-an-hebrew-or-i-am-a-servant-of-the-lord-jonah-1-9-greek",
+      "ref": "Jonah 1:9"
+    },
+    {
+      "id": "yet-forty-days-or-yet-three-days-jonah-3-4-greek",
+      "ref": "Jonah 3:4"
+    },
+    {
+      "id": "an-heap-of-the-field-and-heaps-or-a-store-house-of-the-fruits-and-a-storehouse-of-fruits-micah-1-6-and-3-12-greek",
+      "ref": "Micah 1:6"
+    },
+    {
+      "id": "in-the-name-of-his-god-or-in-his-own-way-micah-4-5-greek",
+      "ref": "Micah 4:5"
+    },
+    {
+      "id": "the-judge-of-israel-or-the-tribes-of-israel-micah-5-1-greek",
+      "ref": "Micah 5:1"
+    },
+    {
+      "id": "seven-shepherds-and-eight-principal-men-or-eight-attacks-of-men-micah-5-5-greek",
+      "ref": "Micah 5:5"
+    },
+    {
+      "id": "as-the-showers-upon-the-grass-or-as-lambs-on-the-grass-micah-5-7-greek",
+      "ref": "Micah 5:7"
+    },
+    {
+      "id": "ten-thousands-of-rivers-of-oil-or-ten-thousands-of-fat-goats-micah-6-7-greek",
+      "ref": "Micah 6:7"
+    },
+    {
+      "id": "to-walk-humbly-with-thy-god-or-to-be-ready-to-walk-with-the-lord-thy-god-micah-6-8-greek",
+      "ref": "Micah 6:8"
+    },
+    {
+      "id": "as-the-sheep-of-bozrah-or-as-sheep-in-trouble-micah-2-12-greek",
+      "ref": "Micah 2:12"
+    },
+    {
+      "id": "though-thou-be-little-among-the-thousands-of-judah-or-art-not-the-least-among-the-princes-of-juda-micah-5-2",
+      "ref": "Micah 5:2"
+    }
+  ],
+  "checked": "2026-10-14T07:04:52.349Z",
+  "checks": [
+    {
+      "id": "the-seed-is-rotten-under-their-clods-or-the-heifers-have-started-at-their-mangers-joel-1-17-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Joel 1:17",
+          "quote": "The seed is rotten under their clods, the garners are laid desolate",
+          "exact": true
+        },
+        {
+          "ref": "Joel 1:18",
+          "quote": "How do the beasts groan! the herds of cattle are perplexed",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עָבְשׁ֣וּ פְרֻדֹ֗ות תַּ֚חַת מֶגְרְפֹ֣תֵיהֶ֔ם נָשַׁ֙מּוּ֙",
+          "stated": {
+            "chapter": 1,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/1/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἐσκίρτησαν δαμάλεις ἐπὶ ταῖς φάτναις αὐτῶν, ἠφανίσθησαν θησαυροὶ",
+          "stated": {
+            "chapter": 1,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL01.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "מַה־נֶּאֶנְחָ֣ה בְהֵמָ֗ה נָבֹ֙כוּ֙ עֶדְרֵ֣י בָקָ֔ר",
+          "stated": {
+            "chapter": 1,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/1/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Τί ἀποθήσομεν ἑαυτοῖς; ἔκλαυσαν βουκόλια βοῶν",
+          "stated": {
+            "chapter": 1,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL01.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Joel 1:17",
+          "quote": "The seed is rotten under their clods, the garners are laid desolate",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Joel 1:18",
+          "quote": "How do the beasts groan! the herds of cattle are perplexed",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/JOL01.htm",
+          "printedLabel": "17",
+          "quote": "The heifers have started at their mangers, the treasures are abolished",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/JOL01.htm",
+          "printedLabel": "18",
+          "quote": "What shall we store up for ourselves? the herds of cattle have mourned",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "עבשו פרדות תחת מגרפתיהם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/1/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "δαμάλεις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL01.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "φάτναις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL01.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The seed is rotten under their clods",
+          "matches": [
+            "Joel 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the heifers have started at their mangers",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL01.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "The seed is rotten under their clods",
+          "matches": [
+            "Joel 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "heifers",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL01.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "mangers",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL01.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "How do the beasts groan!",
+          "matches": [
+            "Joel 1:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "What shall we store up for ourselves?",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL01.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "The seed is rotten under their clods, the garners are laid desolate",
+          "matches": [
+            "Joel 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The heifers have started at their mangers, the treasures are abolished",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL01.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "How do the beasts groan! the herds of cattle are perplexed",
+          "matches": [
+            "Joel 1:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "What shall we store up for ourselves? the herds of cattle have mourned",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL01.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "seed",
+          "matches": [
+            "Joel 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "clods",
+          "matches": [
+            "Joel 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "great-and-very-terrible-or-great-very-glorious-joel-2-11-and-2-31-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Joel 2:11",
+          "quote": "the day of the Lord is great and very terrible",
+          "exact": true
+        },
+        {
+          "ref": "Joel 2:31",
+          "quote": "the great and terrible day of the Lord",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "גָדֹ֧ול יֹום־יְהוָ֛ה וְנֹורָ֥א מְאֹ֖ד",
+          "stated": {
+            "chapter": 2,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/2/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "μεγάλη ἡ ἡμέρα Κυρίου, ἐπιφανὴς σφόδρα",
+          "stated": {
+            "chapter": 2,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL02.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "יֹ֣ום יְהוָ֔ה הַגָּדֹ֖ול וְהַנֹּורָֽא",
+          "stated": {
+            "chapter": 3,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/3/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τὴν ἡμέραν Κυρίου τὴν μεγάλην, καὶ ἐπιφανῆ",
+          "stated": {
+            "chapter": 3,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL03.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Joel 2:11",
+          "quote": "the day of the Lord is great and very terrible",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Joel 2:31",
+          "quote": "the great and terrible day of the Lord",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/JOL02.htm",
+          "printedLabel": "11",
+          "quote": "the day of the Lord is great, very glorious",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+          "printedLabel": "4",
+          "quote": "the great and glorious day of the Lord",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐπιφανής",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL02.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "summary",
+          "quote": "ἐπιφανῆ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL02.htm",
+              "verse": "11"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/JOL03.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "גדול יום יהוה ונורא מאד",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/2/",
+              "verse": 11,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "יום יהוה הגדול והנורא",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/3/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἐπιφανής",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL02.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "μεγάλη, μεγάλην",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL03.htm",
+              "verse": "4",
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "very terrible",
+          "matches": [
+            "Joel 2:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "terrible",
+          "matches": [
+            "Joel 2:11",
+            "Joel 2:31"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "very glorious",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL02.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "title",
+          "quote": "glorious",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL02.htm",
+              "printedLabel": "11"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "very terrible",
+          "matches": [
+            "Joel 2:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "terrible",
+          "matches": [
+            "Joel 2:11",
+            "Joel 2:31"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "very glorious",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL02.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "glorious",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL02.htm",
+              "printedLabel": "11"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "the day of the Lord is great and very terrible",
+          "matches": [
+            "Joel 2:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the day of the Lord is great, very glorious",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL02.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "the great and terrible day of the Lord",
+          "matches": [
+            "Joel 2:31"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the great and glorious day of the Lord",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "great",
+          "matches": [
+            "Joel 2:11",
+            "Joel 2:31"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL02.htm",
+              "printedLabel": "11"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "terrible",
+          "matches": [
+            "Joel 2:11",
+            "Joel 2:31"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "glorious",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL02.htm",
+              "printedLabel": "11"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "and-in-the-remnant-whom-the-lord-shall-call-or-they-that-have-glad-tidings-preached-to-them-joel-2-32-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Joel 2:32",
+          "quote": "and in the remnant whom the Lord shall call",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּבַ֨שְּׂרִידִ֔ים אֲשֶׁ֥ר יְהוָ֖ה קֹרֵֽא",
+          "stated": {
+            "chapter": 3,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/3/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ εὐαγγελιζόμενοι οὓς Κύριος προσκέκληται",
+          "stated": {
+            "chapter": 3,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL03.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Joel 2:32",
+          "quote": "and in the remnant whom the Lord shall call",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+          "printedLabel": "5",
+          "quote": "and they that have glad tidings preached to them, whom the Lord has called",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "εὐαγγελιζόμενοι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL03.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ובשרידים אשר יהוה קרא",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/3/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "and in the remnant whom the Lord shall call",
+          "matches": [
+            "Joel 2:32"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "they that have glad tidings preached to them",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "and in the remnant whom the Lord shall call",
+          "matches": [
+            "Joel 2:32"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "they that have glad tidings preached to them",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "whom the Lord has called",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "and in the remnant whom the Lord shall call",
+          "matches": [
+            "Joel 2:32"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and they that have glad tidings preached to them, whom the Lord has called",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "remnant",
+          "matches": [
+            "Joel 2:32"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "glad tidings preached",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-valley-of-shittim-or-the-valley-of-flags-joel-3-18-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Joel 3:18",
+          "quote": "shall water the valley of Shittim",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְהִשְׁקָ֖ה אֶת־נַ֥חַל הַשִּׁטִּֽים",
+          "stated": {
+            "chapter": 4,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/4/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ ποτιεῖ τὸν χειμάῤῥουν τῶν σχοίνων",
+          "stated": {
+            "chapter": 4,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL04.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Joel 3:18",
+          "quote": "shall water the valley of Shittim",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+          "printedLabel": "18",
+          "quote": "and water the valley of flags",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "σχοίνων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL04.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והשקה את נחל השטים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/4/",
+              "verse": 18,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τῶν σχοίνων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL04.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "the valley of Shittim",
+          "matches": [
+            "Joel 3:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the valley of flags",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "shall water the valley of Shittim",
+          "matches": [
+            "Joel 3:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "flags",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "shall water the valley of Shittim",
+          "matches": [
+            "Joel 3:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and water the valley of flags",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "flags",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "i-will-cleanse-their-blood-that-i-have-not-cleansed-or-i-will-make-inquisition-for-their-blood-joel-3-21-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Joel 3:21",
+          "quote": "I will cleanse their blood that I have not cleansed",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְנִקֵּ֖יתִי דָּמָ֣ם לֹֽא־נִקֵּ֑יתִי",
+          "stated": {
+            "chapter": 4,
+            "verse": "21"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/4/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἐκζητήσω τὸ αἷμα αὐτῶν, καὶ οὐ μὴ ἀθωώσω",
+          "stated": {
+            "chapter": 4,
+            "verse": "21"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL04.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Joel 3:21",
+          "quote": "I will cleanse their blood that I have not cleansed",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+          "printedLabel": "21",
+          "quote": "And I will make inquisition for their blood, and will by no means leave it unavenged",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐκζητήσω",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL04.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "summary",
+          "quote": "οὐ μὴ ἀθωώσω",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL04.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ונקיתי דמם לא נקיתי",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/4/",
+              "verse": 21,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἐκζητήσω",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL04.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "I will cleanse their blood that I have not cleansed",
+          "matches": [
+            "Joel 3:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "I will make inquisition for their blood",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "I will cleanse their blood that I have not cleansed",
+          "matches": [
+            "Joel 3:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "I will make inquisition for",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I will cleanse their blood that I have not cleansed",
+          "matches": [
+            "Joel 3:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And I will make inquisition for their blood, and will by no means leave it unavenged",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "cleanse",
+          "matches": [
+            "Joel 3:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "will by no means leave it unavenged",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JOL04.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "which-he-saw-concerning-israel-or-which-he-saw-concerning-jerusalem-amos-1-1-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 1:1",
+          "quote": "which he saw concerning Israel",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "חָזָ֨ה עַל־יִשְׂרָאֵ֜ל",
+          "stated": {
+            "chapter": 1,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οὓς εἶδεν ὑπὲρ Ἱερουσαλὴμ",
+          "stated": {
+            "chapter": 1,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 1:1",
+          "quote": "which he saw concerning Israel",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "1",
+          "quote": "which he saw concerning Jerusalem",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ὑπὲρ Ἱερουσαλήμ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "חזה על ישראל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 1,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "which he saw concerning Israel",
+          "matches": [
+            "Amos 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "which he saw concerning Jerusalem",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "concerning Israel",
+          "matches": [
+            "Amos 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "concerning Jerusalem",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "which he saw concerning Israel",
+          "matches": [
+            "Amos 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "which he saw concerning Jerusalem",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Jeroboam the son of Joas king of Israel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "threshed-gilead-with-threshing-instruments-of-iron-or-sawed-with-iron-saws-the-women-with-child-amos-1-3-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 1:3",
+          "quote": "because they have threshed Gilead with threshing instruments of iron",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עַל־דּוּשָׁ֛ם בַּחֲרֻצֹ֥ות הַבַּרְזֶ֖ל אֶת־הַגִּלְעָֽד",
+          "stated": {
+            "chapter": 1,
+            "verse": "3"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀνθʼ ὧν ἔπριζον πριοσι σιδηροῖς τὰς ἐν γαστρὶ ἐχούσας τῶν ἐν Γαλαάδ",
+          "stated": {
+            "chapter": 1,
+            "verse": "3"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 1:3",
+          "quote": "because they have threshed Gilead with threshing instruments of iron",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "3",
+          "quote": "because they sawed with iron saws the women with child of the Galaadites",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "על דושם בחרצות הברזל את הגלעד",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 3,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τὰς ἐν γαστρὶ ἐχούσας",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "threshed Gilead with threshing instruments of iron",
+          "matches": [
+            "Amos 1:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "sawed with iron saws the women with child",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "threshed Gilead with threshing instruments of iron",
+          "matches": [
+            "Amos 1:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "sawed",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "iron saws",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the women with child of the Galaadites",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "because they have threshed Gilead with threshing instruments of iron",
+          "matches": [
+            "Amos 1:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "because they sawed with iron saws the women with child of the Galaadites",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-whole-captivity-or-the-captivity-of-solomon-amos-1-6-and-1-9-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 1:6",
+          "quote": "they carried away captive the whole captivity",
+          "exact": true
+        },
+        {
+          "ref": "Amos 1:9",
+          "quote": "they delivered up the whole captivity to Edom",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הַגְלֹותָ֛ם גָּל֥וּת שְׁלֵמָ֖ה",
+          "stated": {
+            "chapter": 1,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "αἰχμαλωτεῦσαι αὐτοὺς αἰχμαλωσίαν τοῦ Σαλωμὼν",
+          "stated": {
+            "chapter": 1,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "הַסְגִּירָ֞ם גָּל֤וּת שְׁלֵמָה֙ לֶאֱדֹ֔ום",
+          "stated": {
+            "chapter": 1,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "συνέκλεισαν αἰχμαλωσίαν τοῦ Σαλωμὼν εἰς τὴν Ἰδουμαίαν",
+          "stated": {
+            "chapter": 1,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 1:6",
+          "quote": "they carried away captive the whole captivity",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Amos 1:9",
+          "quote": "they delivered up the whole captivity to Edom",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "6",
+          "quote": "they took prisoners the captivity of Solomon",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "9",
+          "quote": "they shut up the prisoners of Solomon into Idumea",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "τοῦ Σαλωμών",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "6"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הגלותם גלות שלמה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הסגירם גלות שלמה לאדום",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "the whole captivity",
+          "matches": [
+            "Amos 1:6",
+            "Amos 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the captivity of Solomon",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the whole captivity",
+          "matches": [
+            "Amos 1:6",
+            "Amos 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "of Solomon",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "6"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "they carried away captive the whole captivity",
+          "matches": [
+            "Amos 1:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "they took prisoners the captivity of Solomon",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "they delivered up the whole captivity to Edom",
+          "matches": [
+            "Amos 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "they shut up the prisoners of Solomon into Idumea",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "captivity",
+          "matches": [
+            "Amos 1:6",
+            "Amos 1:9"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "whole",
+          "matches": [
+            "Amos 1:6",
+            "Amos 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "and-did-cast-off-all-pity-or-and-destroyed-the-mother-upon-the-earth-amos-1-11-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 1:11",
+          "quote": "and did cast off all pity",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְשִׁחֵ֣ת רַחֲמָ֔יו",
+          "stated": {
+            "chapter": 1,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ ἐλυμήνατο μητέρα ἐπὶ γῆς",
+          "stated": {
+            "chapter": 1,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 1:11",
+          "quote": "and did cast off all pity",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "11",
+          "quote": "and destroyed the mother upon the earth",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐλυμήνατο μητέρα ἐπὶ γῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ושחת רחמיו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "and did cast off all pity",
+          "matches": [
+            "Amos 1:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "and destroyed the mother upon the earth",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "did cast off all pity",
+          "matches": [
+            "Amos 1:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "destroyed the mother upon the earth",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "and did cast off all pity",
+          "matches": [
+            "Amos 1:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and destroyed the mother upon the earth",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "shall-devour-the-palaces-or-shall-devour-the-foundations-amos-1-4-and-others-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 1:4",
+          "quote": "shall devour the palaces of Benhadad",
+          "exact": true
+        },
+        {
+          "ref": "Amos 1:7",
+          "quote": "shall devour the palaces thereof",
+          "exact": true
+        },
+        {
+          "ref": "Amos 1:10",
+          "quote": "shall devour the palaces thereof",
+          "exact": true
+        },
+        {
+          "ref": "Amos 1:12",
+          "quote": "shall devour the palaces of Bozrah",
+          "exact": true
+        },
+        {
+          "ref": "Amos 1:14",
+          "quote": "it shall devour the palaces thereof",
+          "exact": true
+        },
+        {
+          "ref": "Amos 2:5",
+          "quote": "it shall devour the palaces of Jerusalem",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְאָכְלָ֖ה אַרְמְנֹ֥ות בֶּן־הֲדָֽד",
+          "stated": {
+            "chapter": 1,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ καταφάγεται τὰ θεμέλια υἱοῦ Ἄδερ",
+          "stated": {
+            "chapter": 1,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְאָכְלָ֖ה אַרְמְנֹתֶֽיהָ",
+          "stated": {
+            "chapter": 1,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ καταφάγεται τὰ θεμέλια αὐτῆς",
+          "stated": {
+            "chapter": 1,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְאָכְלָ֖ה אַרְמְנֹתֶֽיהָ",
+          "stated": {
+            "chapter": 1,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ καταφάγεται τὰ θεμέλια αὐτῆς",
+          "stated": {
+            "chapter": 1,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְאָכְלָ֖ה אַרְמְנֹ֥ות בָּצְרָֽה",
+          "stated": {
+            "chapter": 1,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ καταφάγεται θεμέλια τειχέων αὐτῆς",
+          "stated": {
+            "chapter": 1,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְאָכְלָ֖ה אַרְמְנֹותֶ֑יהָ",
+          "stated": {
+            "chapter": 1,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ καταφάγεται θεμέλια αὐτῆς",
+          "stated": {
+            "chapter": 1,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְאָכְלָ֖ה אַרְמְנֹ֥ות יְרוּשָׁלִָֽם",
+          "stated": {
+            "chapter": 2,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/2/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ καταφάγεται θεμέλια Ἱερουσαλήμ",
+          "stated": {
+            "chapter": 2,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO02.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 1:4",
+          "quote": "shall devour the palaces of Benhadad",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Amos 1:7",
+          "quote": "shall devour the palaces thereof",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Amos 1:10",
+          "quote": "shall devour the palaces thereof",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Amos 1:12",
+          "quote": "shall devour the palaces of Bozrah",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Amos 1:14",
+          "quote": "it shall devour the palaces thereof",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Amos 2:5",
+          "quote": "it shall devour the palaces of Jerusalem",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "4",
+          "quote": "and it shall devour the foundations of the son of Ader",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "7",
+          "quote": "and it shall devour its foundations",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "10",
+          "quote": "and it shall devour the foundations of it",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "12",
+          "quote": "and it shall devour the foundations of her walls",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+          "printedLabel": "14",
+          "quote": "and it shall devour her foundations",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO02.htm",
+          "printedLabel": "5",
+          "quote": "and it shall devour the foundations of Jerusalem",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "θεμέλια",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "4"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "7"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "10"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "12"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "14"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO02.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ארמנות",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 4
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 12
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 14
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/2/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ארמנתיה, ארמנותיה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 4,
+              "normalization": "Repeated Hebrew unpointed forms verified within supplied language fragments"
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 7,
+              "normalization": "Repeated Hebrew unpointed forms verified within supplied language fragments"
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 10,
+              "normalization": "Repeated Hebrew unpointed forms verified within supplied language fragments"
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 12,
+              "normalization": "Repeated Hebrew unpointed forms verified within supplied language fragments"
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 14,
+              "normalization": "Repeated Hebrew unpointed forms verified within supplied language fragments"
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/2/",
+              "verse": 5,
+              "normalization": "Repeated Hebrew unpointed forms verified within supplied language fragments"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "θεμέλια",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "4"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "7"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "10"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "12"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "14"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO02.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "scope",
+          "quote": "υἱοῦ Ἄδερ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO01.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "shall devour the palaces",
+          "matches": [
+            "Amos 1:4",
+            "Amos 1:7",
+            "Amos 1:10",
+            "Amos 1:12",
+            "Amos 1:14",
+            "Amos 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "shall devour the foundations",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "4"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "10"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "12"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO02.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "devour the palaces",
+          "matches": [
+            "Amos 1:4",
+            "Amos 1:7",
+            "Amos 1:10",
+            "Amos 1:12",
+            "Amos 1:14",
+            "Amos 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "foundations",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "4"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "7"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "10"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "12"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "14"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO02.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "shall devour the palaces of Benhadad",
+          "matches": [
+            "Amos 1:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and it shall devour the foundations of the son of Ader",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "shall devour the palaces thereof",
+          "matches": [
+            "Amos 1:7",
+            "Amos 1:10",
+            "Amos 1:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and it shall devour its foundations",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "shall devour the palaces thereof",
+          "matches": [
+            "Amos 1:7",
+            "Amos 1:10",
+            "Amos 1:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and it shall devour the foundations of it",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "shall devour the palaces of Bozrah",
+          "matches": [
+            "Amos 1:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and it shall devour the foundations of her walls",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "it shall devour the palaces thereof",
+          "matches": [
+            "Amos 1:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and it shall devour her foundations",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "it shall devour the palaces of Jerusalem",
+          "matches": [
+            "Amos 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and it shall devour the foundations of Jerusalem",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO02.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "palaces",
+          "matches": [
+            "Amos 1:4",
+            "Amos 1:7",
+            "Amos 1:10",
+            "Amos 1:12",
+            "Amos 1:14",
+            "Amos 2:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "foundations",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "4"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "7"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "10"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "12"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO01.htm",
+              "printedLabel": "14"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO02.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "except-they-be-agreed-or-if-they-do-not-know-one-another-amos-3-3-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 3:3",
+          "quote": "except they be agreed",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בִּלְתִּ֖י אִם־נֹועָֽדוּ",
+          "stated": {
+            "chapter": 3,
+            "verse": "3"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/3/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐὰν μὴ γνωρίσωσιν ἑαυτούς",
+          "stated": {
+            "chapter": 3,
+            "verse": "3"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO03.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 3:3",
+          "quote": "except they be agreed",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+          "printedLabel": "3",
+          "quote": "if they do not know one another",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐὰν μὴ γνωρίσωσιν ἑαυτούς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO03.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "בלתי אם נועדו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/3/",
+              "verse": 3,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "except they be agreed",
+          "matches": [
+            "Amos 3:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "if they do not know one another",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Can two walk together, except they be agreed?",
+          "matches": [
+            "Amos 3:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "if they do not know one another",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "except they be agreed",
+          "matches": [
+            "Amos 3:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "if they do not know one another",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "publish-in-the-palaces-at-ashdod-or-proclaim-it-to-the-regions-among-the-assyrians-amos-3-9-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 3:9",
+          "quote": "Publish in the palaces at Ashdod",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הַשְׁמִ֙יעוּ֙ עַל־אַרְמְנֹ֣ות בְּאַשְׁדֹּ֔וד",
+          "stated": {
+            "chapter": 3,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/3/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἀναγγείλατε χώραις ἐν Ἀσσυρίοις",
+          "stated": {
+            "chapter": 3,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO03.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 3:9",
+          "quote": "Publish in the palaces at Ashdod",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+          "printedLabel": "9",
+          "quote": "Proclaim it to the regions among the Assyrians",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐν Ἀσσυρίοις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO03.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "השמיעו על ארמנות באשדוד",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/3/",
+              "verse": 9,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "χώραις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO03.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Publish in the palaces at Ashdod",
+          "matches": [
+            "Amos 3:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Proclaim it to the regions among the Assyrians",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "in the palaces at Ashdod",
+          "matches": [
+            "Amos 3:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "among the Assyrians",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "regions",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Publish in the palaces at Ashdod",
+          "matches": [
+            "Amos 3:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Proclaim it to the regions among the Assyrians",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "palaces",
+          "matches": [
+            "Amos 3:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "an-adversary-or-o-tyre-amos-3-11-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 3:11",
+          "quote": "An adversary there shall be even round about the land",
+          "exact": true
+        },
+        {
+          "ref": "Amos 1:9",
+          "quote": "For three transgressions of Tyrus",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "צַ֖ר וּסְבִ֣יב הָאָ֑רֶץ",
+          "stated": {
+            "chapter": 3,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/3/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Τύρος κυκλόθεν ἡ γῆ σου ἐρημωθήσεται",
+          "stated": {
+            "chapter": 3,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO03.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "צֹ֔ר",
+          "stated": {
+            "chapter": 1,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 3:11",
+          "quote": "An adversary there shall be even round about the land",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+          "printedLabel": "11",
+          "quote": "O Tyre, thy land shall be made desolate round about thee",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "Τύρος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO03.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "צר וסביב הארץ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/3/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Τύρος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO03.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "scope",
+          "quote": "צר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/3/",
+              "verse": 11
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "An adversary there shall be even round about the land",
+          "matches": [
+            "Amos 3:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "O Tyre",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "An adversary there shall be even round about the land",
+          "matches": [
+            "Amos 3:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "O Tyre, thy land shall be made desolate round about thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "An adversary there shall be even round about the land",
+          "matches": [
+            "Amos 3:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "O Tyre, thy land shall be made desolate round about thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO03.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "For three transgressions of Tyrus",
+          "matches": [
+            "Amos 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "An adversary",
+          "matches": [
+            "Amos 3:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Tyrus",
+          "matches": [
+            "Amos 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "and-your-tithes-after-three-years-or-and-your-tithes-every-third-day-amos-4-4-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 4:4",
+          "quote": "and your tithes after three years",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לִשְׁלֹ֥שֶׁת יָמִ֖ים מַעְשְׂרֹֽתֵיכֶֽם",
+          "stated": {
+            "chapter": 4,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/4/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "εἰς τὴν τριημερίαν τὰ ἐπιδέκατα ὑμῶν",
+          "stated": {
+            "chapter": 4,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 4:4",
+          "quote": "and your tithes after three years",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+          "printedLabel": "4",
+          "quote": "your tithes every third day",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "εἰς τὴν τριημερίαν τὰ ἐπιδέκατα ὑμῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "לשלשת ימים מעשרתיכם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/4/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τριημερίαν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "scope",
+          "quote": "ימים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/4/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "your tithes after three years",
+          "matches": [
+            "Amos 4:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "your tithes every third day",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "your sacrifices every morning, and your tithes after three years",
+          "matches": [
+            "Amos 4:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "your tithes every third day",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "and your tithes after three years",
+          "matches": [
+            "Amos 4:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "your tithes every third day",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "every third day",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "prepare-to-meet-thy-god-or-prepare-to-call-on-thy-god-amos-4-12-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 4:12",
+          "quote": "prepare to meet thy God",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הִכֹּ֥ון לִקְרַאת־אֱלֹהֶ֖יךָ",
+          "stated": {
+            "chapter": 4,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/4/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἑτοιμάζου τοῦ ἐπικαλεῖσθαι τὸν Θεόν σου",
+          "stated": {
+            "chapter": 4,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 4:12",
+          "quote": "prepare to meet thy God",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+          "printedLabel": "12",
+          "quote": "prepare to call on thy God",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἑτοιμάζου τοῦ ἐπικαλεῖσθαι τὸν Θεόν σου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הכון לקראת אלהיך",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/4/",
+              "verse": 12,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "prepare to meet thy God",
+          "matches": [
+            "Amos 4:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "prepare to call on thy God",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "prepare to meet thy God, O Israel",
+          "matches": [
+            "Amos 4:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "prepare to call on thy God",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "prepare to meet thy God",
+          "matches": [
+            "Amos 4:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "prepare to call on thy God",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "meet",
+          "matches": [
+            "Amos 4:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "declareth-unto-man-what-is-his-thought-or-proclaims-to-men-his-christ-amos-4-13-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 4:13",
+          "quote": "declareth unto man what is his thought",
+          "exact": true
+        },
+        {
+          "ref": "Amos 4:13",
+          "quote": "he that formeth the mountains, and createth the wind",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּמַגִּ֤יד לְאָדָם֙ מַה־שֵּׂחֹ֔ו",
+          "stated": {
+            "chapter": 4,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/4/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "יֹוצֵ֨ר הָרִ֜ים וּבֹרֵ֣א ר֗וּחַ",
+          "stated": {
+            "chapter": 4,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/4/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀπαγγέλλων εἰς ἀνθρώπους τὸν χριστὸν αὐτοῦ",
+          "stated": {
+            "chapter": 4,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐγὼ στερεῶν βροντὴν, καὶ κτίζων πνεῦμα",
+          "stated": {
+            "chapter": 4,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 4:13",
+          "quote": "declareth unto man what is his thought",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+          "printedLabel": "13",
+          "quote": "proclaims to men his Christ",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+          "printedLabel": "13",
+          "quote": "I am he that strengthens the thunder, and creates the wind",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "τὸν χριστὸν αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ומגיד לאדם מה שחו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/4/",
+              "verse": 13,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τὸν χριστὸν αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "יוצר הרים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/4/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "στερεῶν βροντήν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO04.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "declareth unto man what is his thought",
+          "matches": [
+            "Amos 4:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "proclaims to men his Christ",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "declareth unto man what is his thought",
+          "matches": [
+            "Amos 4:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "his Christ",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "formeth the mountains",
+          "matches": [
+            "Amos 4:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "strengthens the thunder",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "declareth unto man what is his thought",
+          "matches": [
+            "Amos 4:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "he that formeth the mountains, and createth the wind",
+          "matches": [
+            "Amos 4:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "proclaims to men his Christ",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I am he that strengthens the thunder, and creates the wind",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "what is his thought",
+          "matches": [
+            "Amos 4:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "his Christ",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Christ",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO04.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "formeth the mountains",
+          "matches": [
+            "Amos 4:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "ye-who-turn-judgment-to-wormwood-or-it-is-he-that-executes-judgment-in-the-height-amos-5-7-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 5:7",
+          "quote": "Ye who turn judgment to wormwood",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הַהֹפְכִ֥ים לְלַעֲנָ֖ה מִשְׁפָּ֑ט",
+          "stated": {
+            "chapter": 5,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/5/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ὁ ποιῶν εἰς ὕψος κρίμα",
+          "stated": {
+            "chapter": 5,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO05.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 5:7",
+          "quote": "Ye who turn judgment to wormwood",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO05.htm",
+          "printedLabel": "7",
+          "quote": "It is he that executes judgment in the height above",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "Ὁ ποιῶν εἰς ὕψος κρίμα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO05.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ההפכים ללענה משפט",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/5/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "εἰς ὕψος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO05.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Ye who turn judgment to wormwood",
+          "matches": [
+            "Amos 5:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "It is he that executes judgment in the height above",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO05.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Ye who turn judgment to wormwood",
+          "matches": [
+            "Amos 5:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "It is he that executes judgment in the height above",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO05.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Ye who turn judgment to wormwood",
+          "matches": [
+            "Amos 5:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "It is he that executes judgment in the height above",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO05.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "in the height",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO05.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "that-are-at-ease-in-zion-or-that-set-at-nought-sion-amos-6-1-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 6:1",
+          "quote": "Woe to them that are at ease in Zion",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הֹ֚וי הַשַּׁאֲנַנִּ֣ים בְּצִיֹּ֔ון",
+          "stated": {
+            "chapter": 6,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/6/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Οὐαὶ τοῖς ἐξουθενοῦσι Σιὼν",
+          "stated": {
+            "chapter": 6,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO06.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 6:1",
+          "quote": "Woe to them that are at ease in Zion",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO06.htm",
+          "printedLabel": "1",
+          "quote": "Woe to them that set at nought Sion",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "τοῖς ἐξουθενοῦσι Σιών",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO06.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הוי השאננים בציון",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/6/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Woe to them that are at ease in Zion",
+          "matches": [
+            "Amos 6:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Woe to them that set at nought Sion",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO06.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Woe to them that are at ease in Zion",
+          "matches": [
+            "Amos 6:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "them that set at nought Sion",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO06.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Woe to them that are at ease in Zion",
+          "matches": [
+            "Amos 6:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Woe to them that set at nought Sion",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO06.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "he-formed-grasshoppers-or-one-caterpillar-king-gog-amos-7-1-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 7:1",
+          "quote": "he formed grasshoppers in the beginning of the shooting up of the latter growth",
+          "exact": true
+        },
+        {
+          "ref": "Amos 7:1",
+          "quote": "the latter growth after the king's mowings",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יֹוצֵ֣ר גֹּבַ֔י בִּתְחִלַּ֖ת עֲלֹ֣ות הַלָּ֑קֶשׁ",
+          "stated": {
+            "chapter": 7,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/7/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְהִ֨נֵּה־לֶ֔קֶשׁ אַחַ֖ר גִּזֵּ֥י הַמֶּֽלֶךְ",
+          "stated": {
+            "chapter": 7,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/7/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐπιγονὴ ἀκρίδων ἐρχομένη ἑωθινὴ, καὶ ἰδοὺ βροῦχος εἷς, Γὼγ ὁ βασιλεύς",
+          "stated": {
+            "chapter": 7,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO07.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 7:1",
+          "quote": "he formed grasshoppers in the beginning of the shooting up of the latter growth",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+          "printedLabel": "1",
+          "quote": "a swarm of locusts coming from the east; and, behold, one caterpillar, king Gog",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "Γὼγ ὁ βασιλεύς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO07.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "יוצר גבי בתחלת עלות הלקש והנה לקש אחר גזי המלך",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/7/",
+              "verse": 1,
+              "normalization": "Repeated Hebrew unpointed forms verified within supplied language fragments"
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/7/",
+              "verse": 1,
+              "normalization": "Repeated Hebrew unpointed forms verified within supplied language fragments"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "the latter growth after the king’s mowings",
+          "matches": [
+            "Amos 7:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "one caterpillar, king Gog",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "in the beginning of the shooting up of the latter growth",
+          "matches": [
+            "Amos 7:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the latter growth after the king’s mowings",
+          "matches": [
+            "Amos 7:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "from the east",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "one caterpillar",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "king Gog",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "he formed grasshoppers in the beginning of the shooting up of the latter growth",
+          "matches": [
+            "Amos 7:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the latter growth after the king's mowings",
+          "matches": [
+            "Amos 7:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "a swarm of locusts coming from the east; and, behold, one caterpillar, king Gog",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-house-of-isaac-or-the-house-of-jacob-amos-7-16-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 7:16",
+          "quote": "drop not thy word against the house of Isaac",
+          "exact": true
+        },
+        {
+          "ref": "Amos 7:9",
+          "quote": "the high places of Isaac shall be desolate",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְלֹ֥א תַטִּ֖יף עַל־בֵּ֥ית יִשְׂחָֽק",
+          "stated": {
+            "chapter": 7,
+            "verse": "16"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/7/",
+              "verse": 16
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οὐ μὴ ὀχλαγωγήσῃς ἐπὶ τὸν οἶκον Ἰακώβ",
+          "stated": {
+            "chapter": 7,
+            "verse": "16"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO07.htm",
+              "verse": "16"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "בָּמֹ֣ות יִשְׂחָ֔ק",
+          "stated": {
+            "chapter": 7,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/7/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "βωμοὶ τοῦ γέλωτος",
+          "stated": {
+            "chapter": 7,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO07.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 7:16",
+          "quote": "drop not thy word against the house of Isaac",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+          "printedLabel": "16",
+          "quote": "raise not a tumult against the house of Jacob",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+          "printedLabel": "9",
+          "quote": "the joyful altars",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐπὶ τὸν οἶκον Ἰακώβ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO07.htm",
+              "verse": "16"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ולא תטיף על בית ישחק",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/7/",
+              "verse": 16,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "βωμοὶ τοῦ γέλωτος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO07.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "the house of Isaac",
+          "matches": [
+            "Amos 7:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the house of Jacob",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "drop not thy word against the house of Isaac",
+          "matches": [
+            "Amos 7:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "against the house of Jacob",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "drop not thy word against the house of Isaac",
+          "matches": [
+            "Amos 7:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "raise not a tumult against the house of Jacob",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "the high places of Isaac shall be desolate",
+          "matches": [
+            "Amos 7:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the joyful altars",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the high places of Isaac",
+          "matches": [
+            "Amos 7:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "joyful altars",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO07.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "a-basket-of-summer-fruit-or-a-fowlers-basket-amos-8-1-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 8:1",
+          "quote": "behold a basket of summer fruit",
+          "exact": true
+        },
+        {
+          "ref": "Amos 8:2",
+          "quote": "A basket of summer fruit",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְהִנֵּ֖ה כְּל֥וּב קָֽיִץ",
+          "stated": {
+            "chapter": 8,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/8/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἰδοὺ ἄγγος ἰξευτοῦ",
+          "stated": {
+            "chapter": 8,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ εἶπα, ἄγγος ἰξευτοῦ",
+          "stated": {
+            "chapter": 8,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "כְּל֣וּב קָ֑יִץ",
+          "stated": {
+            "chapter": 8,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/8/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 8:1",
+          "quote": "behold a basket of summer fruit",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+          "printedLabel": "1",
+          "quote": "And behold a fowler's basket",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἄγγος ἰξευτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "1"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והנה כלוב קיץ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/8/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כלוב קיץ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/8/",
+              "verse": 1
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/8/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἄγγος ἰξευτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "1"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "a basket of summer fruit",
+          "matches": [
+            "Amos 8:1",
+            "Amos 8:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a fowler’s basket",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "a basket of summer fruit",
+          "matches": [
+            "Amos 8:1",
+            "Amos 8:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a fowler’s basket",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "behold a basket of summer fruit",
+          "matches": [
+            "Amos 8:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And behold a fowler's basket",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "A basket of summer fruit",
+          "matches": [
+            "Amos 8:1",
+            "Amos 8:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "And I said, A fowler’s basket.",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified Brenton English at explicitly supplied scope label 8:2"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-manner-of-beersheba-liveth-or-thy-god-o-bersabee-lives-amos-8-14-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 8:14",
+          "quote": "the sin of Samaria",
+          "exact": true
+        },
+        {
+          "ref": "Amos 8:14",
+          "quote": "The manner of Beersheba liveth",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בְּאַשְׁמַ֣ת שֹֽׁמְרֹ֔ון",
+          "stated": {
+            "chapter": 8,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/8/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "וְחֵ֖י דֶּ֣רֶךְ בְּאֵֽר־שָׁ֑בַע",
+          "stated": {
+            "chapter": 8,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/8/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "κατὰ τοῦ ἱλασμοῦ Σαμαρείας",
+          "stated": {
+            "chapter": 8,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ζῇ ὁ θεός σου Βηρσαβεέ",
+          "stated": {
+            "chapter": 8,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 8:14",
+          "quote": "The manner of Beersheba liveth",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+          "printedLabel": "14",
+          "quote": "by the propitiation of Samaria",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+          "printedLabel": "14",
+          "quote": "Thy god, O Bersabee, lives",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "τοῦ ἱλασμοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "summary",
+          "quote": "ὁ θεός σου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO08.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "באשמת שמרון",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/8/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "וחי דרך באר שבע",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/8/",
+              "verse": 14,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The manner of Beersheba liveth",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Thy god, O Bersabee, lives",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "by the sin of Samaria",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "The manner of Beersheba liveth",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "propitiation",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Thy god",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the sin of Samaria",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The manner of Beersheba liveth",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "by the propitiation of Samaria",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Thy god, O Bersabee, lives",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the manner",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy god",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Thy god, O Dan, liveth",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "sin",
+          "matches": [
+            "Amos 8:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "propitiation",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO08.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "smite-the-lintel-of-the-door-or-smite-the-mercy-seat-amos-9-1-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 9:1",
+          "quote": "Smite the lintel of the door, that the posts may shake",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "הַ֨ךְ הַכַּפְתֹּ֜ור וְיִרְעֲשׁ֣וּ הַסִּפִּ֗ים",
+          "stated": {
+            "chapter": 9,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/9/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Πάταξον ἐπὶ τὸ ἱλαστήριον, καὶ σεισθήσεται τὰ πρόπυλα",
+          "stated": {
+            "chapter": 9,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 9:1",
+          "quote": "Smite the lintel of the door, that the posts may shake",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+          "printedLabel": "1",
+          "quote": "Smite the mercy-seat, and the porch shall be shaken",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐπὶ τὸ ἱλαστήριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "summary",
+          "quote": "τὰ πρόπυλα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הך הכפתור וירעשו הספים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/9/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἱλαστήριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Smite the lintel of the door",
+          "matches": [
+            "Amos 9:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Smite the mercy-seat",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Smite the lintel of the door, that the posts may shake",
+          "matches": [
+            "Amos 9:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the mercy-seat",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the porch",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Smite the lintel of the door, that the posts may shake",
+          "matches": [
+            "Amos 9:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Smite the mercy-seat, and the porch shall be shaken",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "mercy-seat",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-syrians-from-kir-or-the-syrians-out-of-the-deep-amos-9-7-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 9:7",
+          "quote": "the Philistines from Caphtor, and the Syrians from Kir",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּפְלִשְׁתִּיִּ֥ים מִכַּפְתֹּ֖ור וַאֲרָ֥ם מִקִּֽיר",
+          "stated": {
+            "chapter": 9,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/9/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τοὺς ἀλλοφύλους ἐκ Καππαδοκίας, καὶ τοὺς Σύρους ἐκ βόθρου",
+          "stated": {
+            "chapter": 9,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 9:7",
+          "quote": "the Philistines from Caphtor, and the Syrians from Kir",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+          "printedLabel": "7",
+          "quote": "the Philistines from Cappadocia, and the Syrians out of the deep",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐκ Καππαδοκίας",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "summary",
+          "quote": "ἐκ βόθρου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ופלשתיים מכפתור וארם מקיר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/9/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "βόθρου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "the Philistines from Caphtor, and the Syrians from Kir",
+          "matches": [
+            "Amos 9:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "from Cappadocia",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "title",
+          "quote": "out of the deep",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "from Caphtor",
+          "matches": [
+            "Amos 9:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "from Kir",
+          "matches": [
+            "Amos 9:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "from Cappadocia",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "out of the deep",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "the Philistines from Caphtor, and the Syrians from Kir",
+          "matches": [
+            "Amos 9:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the Philistines from Cappadocia, and the Syrians out of the deep",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-remnant-of-edom-or-the-remnant-of-men-amos-9-12-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Amos 9:12",
+          "quote": "That they may possess the remnant of Edom",
+          "exact": true
+        },
+        {
+          "ref": "Acts 15:17",
+          "quote": "That the residue of men might seek after the Lord",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לְמַ֨עַן יִֽירְשׁ֜וּ אֶת־שְׁאֵרִ֤ית אֱדֹום֙",
+          "stated": {
+            "chapter": 9,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/9/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ὅπως ἐκζητήσωσιν οἱ κατάλοιποι τῶν ἀνθρώπων",
+          "stated": {
+            "chapter": 9,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὅπως ἂν ἐκζητήσωσιν οἱ κατάλοιποι τῶν ἀνθρώπων τὸν κύριον",
+          "stated": {
+            "chapter": 15,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/15/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Amos 9:12",
+          "quote": "That they may possess the remnant of Edom",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Acts 15:17",
+          "quote": "That the residue of men might seek after the Lord",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+          "printedLabel": "12",
+          "quote": "that the remnant of men",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+          "printedLabel": "12",
+          "quote": "may earnestly seek me",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "summary",
+          "quote": "οἱ κατάλοιποι τῶν ἀνθρώπων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "12"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/15/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "למען יירשו את שארית אדום",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/9/",
+              "verse": 12,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἀνθρώπων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/AMO09.htm",
+              "verse": "12"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/15/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "scope",
+          "quote": "אדום",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/9/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "That they may possess the remnant of Edom",
+          "matches": [
+            "Amos 9:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "that the remnant of men … may earnestly seek me",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "That they may possess the remnant of Edom",
+          "matches": [
+            "Amos 9:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "may earnestly seek me",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "That the residue of men might seek after the Lord",
+          "matches": [
+            "Acts 15:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the remnant of men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "That they may possess the remnant of Edom",
+          "matches": [
+            "Amos 9:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "that the remnant of men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "may earnestly seek me",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "That the residue of men might seek after the Lord",
+          "matches": [
+            "Acts 15:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "possess",
+          "matches": [
+            "Amos 9:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of men",
+          "matches": [
+            "Acts 15:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/AMO09.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [
+        {
+          "url": "https://bolls.life/get-text/TR/44/15/",
+          "printedLabel": "17",
+          "quote": "ὅπως ἂν ἐκζητήσωσιν οἱ κατάλοιποι τῶν ἀνθρώπων τὸν κύριον",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        }
+      ]
+    },
+    {
+      "id": "beat-your-plowshares-into-swords-or-beat-their-swords-into-plowshares-joel-3-10",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Joel 3:10",
+          "quote": "Beat your plowshares into swords and your pruninghooks into spears",
+          "exact": true
+        },
+        {
+          "ref": "Micah 4:3",
+          "quote": "they shall beat their swords into plowshares, and their spears into pruninghooks",
+          "exact": true
+        },
+        {
+          "ref": "Isaiah 2:4",
+          "quote": "they shall beat their swords into plowshares, and their spears into pruninghooks",
+          "exact": true
+        }
+      ],
+      "language": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Joel 3:10",
+          "quote": "Beat your plowshares into swords and your pruninghooks into spears",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Micah 4:3",
+          "quote": "they shall beat their swords into plowshares, and their spears into pruninghooks",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Beat your plowshares into swords",
+          "matches": [
+            "Joel 3:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "they shall beat their swords into plowshares",
+          "matches": [
+            "Micah 4:3",
+            "Isaiah 2:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Beat your plowshares into swords and your pruninghooks into spears",
+          "matches": [
+            "Joel 3:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Beat your plowshares into swords and your pruninghooks into spears",
+          "matches": [
+            "Joel 3:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "they shall beat their swords into plowshares, and their spears into pruninghooks",
+          "matches": [
+            "Micah 4:3",
+            "Isaiah 2:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "they shall beat their swords into plowshares, and their spears into pruninghooks",
+          "matches": [
+            "Micah 4:3",
+            "Isaiah 2:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "it-shall-come-to-pass-afterward-or-in-the-last-days-joel-2-28",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Joel 2:28",
+          "quote": "it shall come to pass afterward, that I will pour out my spirit upon all flesh",
+          "exact": true
+        },
+        {
+          "ref": "Acts 2:17",
+          "quote": "it shall come to pass in the last days, saith God, I will pour out of my Spirit upon all flesh",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְהָיָ֣ה אַֽחֲרֵי־כֵ֗ן",
+          "stated": {
+            "chapter": 3,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/3/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Καὶ ἔσται μετὰ ταῦτα",
+          "stated": {
+            "chapter": 3,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL03.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐν ταῖς ἐσχάταις ἡμέραις",
+          "stated": {
+            "chapter": 2,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/2/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Joel 2:28",
+          "quote": "it shall come to pass afterward",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Acts 2:17",
+          "quote": "in the last days",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "coverage-nt-women-speaking",
+          "title": "Teaching restrictions and women's prophecy",
+          "summary": "First Timothy restricts women's teaching; other passages envision women praying or prophesying.",
+          "reasoning": "A blanket claim that all female religious speech is forbidden does not capture all these passages. Distinguishing prophecy from authoritative teaching is one interpretive response.",
+          "scope": "The texts support a difference in permissions and activities; they do not by themselves settle modern debates over ordination."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "אחרי כן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/29/3/",
+              "verse": 1,
+              "normalization": "Accent punctuation and spacing normalized for repeated form"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        },
+        {
+          "field": "reasoning",
+          "quote": "μετὰ ταῦτα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JOL03.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "it shall come to pass afterward",
+          "matches": [
+            "Joel 2:28"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "in the last days, saith God",
+          "matches": [
+            "Acts 2:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "afterward",
+          "matches": [
+            "Joel 2:28"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "in the last days, saith God",
+          "matches": [
+            "Acts 2:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "it shall come to pass afterward, that I will pour out my spirit upon all flesh",
+          "matches": [
+            "Joel 2:28"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "it shall come to pass in the last days, saith God, I will pour out of my Spirit upon all flesh",
+          "matches": [
+            "Acts 2:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "afterward",
+          "matches": [
+            "Joel 2:28"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "in the last days",
+          "matches": [
+            "Acts 2:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "afterward",
+          "matches": [
+            "Joel 2:28"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "Shared references reviewed: coverage-nt-women-speaking. Distinct key verse or question; contextual overlaps do not repeat the finding.",
+      "ntEditionChecks": [
+        {
+          "url": "https://bolls.life/get-text/TR/44/2/",
+          "printedLabel": "17",
+          "quote": "ἐν ταῖς ἐσχάταις ἡμέραις",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        }
+      ]
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/29/1/",
+    "https://ebible.org/grcbrent/JOL01.htm",
+    "https://ebible.org/eng-Brenton/JOL01.htm",
+    "https://bolls.life/get-text/WLC/29/2/",
+    "https://bolls.life/get-text/WLC/29/3/",
+    "https://ebible.org/grcbrent/JOL02.htm",
+    "https://ebible.org/grcbrent/JOL03.htm",
+    "https://ebible.org/eng-Brenton/JOL02.htm",
+    "https://ebible.org/eng-Brenton/JOL03.htm",
+    "https://bolls.life/get-text/WLC/29/4/",
+    "https://ebible.org/grcbrent/JOL04.htm",
+    "https://ebible.org/eng-Brenton/JOL04.htm",
+    "https://bolls.life/get-text/WLC/30/1/",
+    "https://ebible.org/grcbrent/AMO01.htm",
+    "https://ebible.org/eng-Brenton/AMO01.htm",
+    "https://bolls.life/get-text/WLC/30/2/",
+    "https://ebible.org/grcbrent/AMO02.htm",
+    "https://ebible.org/eng-Brenton/AMO02.htm",
+    "https://bolls.life/get-text/WLC/30/3/",
+    "https://ebible.org/grcbrent/AMO03.htm",
+    "https://ebible.org/eng-Brenton/AMO03.htm",
+    "https://bolls.life/get-text/WLC/30/4/",
+    "https://ebible.org/grcbrent/AMO04.htm",
+    "https://ebible.org/eng-Brenton/AMO04.htm",
+    "https://bolls.life/get-text/WLC/30/5/",
+    "https://ebible.org/grcbrent/AMO05.htm",
+    "https://ebible.org/eng-Brenton/AMO05.htm",
+    "https://bolls.life/get-text/WLC/30/6/",
+    "https://ebible.org/grcbrent/AMO06.htm",
+    "https://ebible.org/eng-Brenton/AMO06.htm",
+    "https://bolls.life/get-text/WLC/30/7/",
+    "https://ebible.org/grcbrent/AMO07.htm",
+    "https://ebible.org/eng-Brenton/AMO07.htm",
+    "https://bolls.life/get-text/WLC/30/8/",
+    "https://ebible.org/grcbrent/AMO08.htm",
+    "https://ebible.org/eng-Brenton/AMO08.htm",
+    "https://bolls.life/get-text/WLC/30/9/",
+    "https://ebible.org/grcbrent/AMO09.htm",
+    "https://ebible.org/eng-Brenton/AMO09.htm",
+    "https://bolls.life/get-text/TISCH/44/15/",
+    "https://bolls.life/get-text/TR/44/15/",
+    "https://bolls.life/get-text/TISCH/44/2/",
+    "https://bolls.life/get-text/TR/44/2/"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 939,
+  "studiesChecked": 6,
+  "studies": [
+    {
+      "id": "seen",
+      "title": "Can God be seen?",
+      "summary": "Exodus describes Moses speaking with God “face to face”; John says no one has seen God. The tension depends on whether “face to face” means literal sight.",
+      "refs": [
+        "Exodus 33:11",
+        "John 1:18",
+        "Exodus 33:20",
+        "Exodus 33:23",
+        "Exodus 24:9",
+        "Exodus 24:10",
+        "Exodus 24:11",
+        "Numbers 12:8",
+        "Deuteronomy 4:12",
+        "Deuteronomy 4:15",
+        "Deuteronomy 4:16",
+        "Deuteronomy 5:4",
+        "Deuteronomy 5:5",
+        "Deuteronomy 5:24",
+        "Deuteronomy 5:27"
+      ]
+    },
+    {
+      "id": "judas",
+      "title": "Judas and the field of blood",
+      "summary": "Matthew and Acts give different accounts of Judas's death and the field purchase.",
+      "refs": [
+        "Matthew 27:5",
+        "Acts 1:18",
+        "Matthew 27:3",
+        "Matthew 27:4",
+        "Matthew 27:6",
+        "Matthew 27:7",
+        "Matthew 27:8",
+        "Acts 1:19"
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Water or ground: the animals’ origin",
+      "summary": "Genesis 1 can sound like birds came from water, while Genesis 2 says ground. The apparent conflict depends on how Genesis 1:20 is translated.",
+      "refs": [
+        "Genesis 1:20",
+        "Genesis 2:19"
+      ]
+    },
+    {
+      "id": "plants",
+      "title": "Plants before people—or after?",
+      "summary": "Genesis 1 places vegetation before people; Genesis 2 describes no field plants before a cultivator. Whether this conflicts depends on which plants are meant.",
+      "refs": [
+        "Genesis 1:11",
+        "Genesis 2:5"
+      ]
+    },
+    {
+      "id": "soldiers",
+      "title": "David’s census: two different totals",
+      "summary": "The census totals differ: Israel is 800,000 versus 1.1 million; Judah is 500,000 versus 470,000. Different counting rules are proposed but not established here.",
+      "refs": [
+        "2 Samuel 24:9",
+        "1 Chronicles 21:5",
+        "1 Chronicles 21:6"
+      ]
+    },
+    {
+      "id": "birth",
+      "title": "Herod, Quirinius, and the birth chronology",
+      "summary": "Matthew places Jesus’s birth under Herod; Luke links it to Quirinius’s census. The historical chronology creates a tension if the same census is intended.",
+      "refs": [
+        "Matthew 2:1",
+        "Luke 2:2"
+      ]
+    }
+  ],
+  "draftHashes": {
+    "research/claude-drafts/joel-to-micah-records.json": "4f4532778fa77e726c8a5d172404c1bf0dec148ca8f09e7e500ea22c9cf12627",
+    "research/claude-drafts/joel-to-micah-notes.md": "12486ee07609bedae47134a662a94cbfc81e274e25f783fdd5322675a23c0f8b",
+    "research/claude-drafts/joel-to-micah-q-records.json": "aa2be6460a807433695706a5867327e36f463a04b9f4d5f81f1445fe413a78ee",
+    "research/claude-drafts/joel-to-micah-q-notes.md": "07d76ddb0de7d38634753880bd5e8833a13b8a29a0752def736d95b76c6ae3dd"
+  }
+}

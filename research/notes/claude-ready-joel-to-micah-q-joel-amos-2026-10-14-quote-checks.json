@@ -1,0 +1,305 @@
+{
+  "batch": "joel-to-micah-q",
+  "subsetBooks": [
+    "Joel",
+    "Amos"
+  ],
+  "completeBatch": false,
+  "pendingRecords": [
+    {
+      "id": "the-captivity-of-jerusalem-which-is-in-sepharad-where-is-sepharad-obadiah-1-20",
+      "ref": "Obadiah 1:20"
+    },
+    {
+      "id": "until-she-which-travaileth-hath-brought-forth-who-is-she-micah-5-3",
+      "ref": "Micah 5:3"
+    }
+  ],
+  "checked": "2026-10-14T07:04:52.363Z",
+  "checks": [
+    {
+      "id": "the-northern-army-who-or-what-is-the-northern-army-joel-2-20",
+      "batch": "joel-to-micah-q",
+      "english": [
+        {
+          "ref": "Joel 2:20",
+          "quote": "I will remove far off from you the northern army",
+          "exact": true
+        },
+        {
+          "ref": "Joel 1:6",
+          "quote": "a nation is come up upon my land, strong, and without number",
+          "exact": true
+        },
+        {
+          "ref": "Joel 2:25",
+          "quote": "my great army which I sent among you",
+          "exact": true
+        },
+        {
+          "ref": "Joel 2:11",
+          "quote": "the Lord shall utter his voice before his army",
+          "exact": true
+        }
+      ],
+      "language": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Joel 2:20",
+          "quote": "I will remove far off from you the northern army",
+          "exact": true
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exp-late-28-2-4",
+          "title": "Locust and army imagery",
+          "summary": "Joel describes devastation with military comparisons and later calls locusts God’s army.",
+          "reasoning": "The repeated comparisons support agricultural and poetic readings. The passage does not identify a modern army or a dated astronomical event.",
+          "scope": "Interpretations vary over literal plague and symbolic invasion."
+        }
+      ],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "the northern army",
+          "matches": [
+            "Joel 2:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "remove far off from you the northern army",
+          "matches": [
+            "Joel 2:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a nation … come up upon my land",
+          "matches": [
+            "Joel 1:6"
+          ],
+          "brenton": [],
+          "kind": "Verified ellipsized fragments across supplied KJV verse labels"
+        },
+        {
+          "field": "summary",
+          "quote": "my great army which I sent among you",
+          "matches": [
+            "Joel 2:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I will remove far off from you the northern army",
+          "matches": [
+            "Joel 2:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "a nation is come up upon my land, strong, and without number",
+          "matches": [
+            "Joel 1:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "my great army which I sent among you",
+          "matches": [
+            "Joel 2:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the Lord shall utter his voice before his army",
+          "matches": [
+            "Joel 2:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "his stink",
+          "matches": [
+            "Joel 2:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my great army",
+          "matches": [
+            "Joel 2:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "army",
+          "matches": [
+            "Joel 2:20",
+            "Joel 2:25",
+            "Joel 2:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "Shared references reviewed: exp-late-28-2-4. Distinct key verse or question; contextual overlaps do not repeat the finding.",
+      "ntEditionChecks": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/29/1/",
+    "https://ebible.org/grcbrent/JOL01.htm",
+    "https://ebible.org/eng-Brenton/JOL01.htm",
+    "https://bolls.life/get-text/WLC/29/2/",
+    "https://bolls.life/get-text/WLC/29/3/",
+    "https://ebible.org/grcbrent/JOL02.htm",
+    "https://ebible.org/grcbrent/JOL03.htm",
+    "https://ebible.org/eng-Brenton/JOL02.htm",
+    "https://ebible.org/eng-Brenton/JOL03.htm",
+    "https://bolls.life/get-text/WLC/29/4/",
+    "https://ebible.org/grcbrent/JOL04.htm",
+    "https://ebible.org/eng-Brenton/JOL04.htm",
+    "https://bolls.life/get-text/WLC/30/1/",
+    "https://ebible.org/grcbrent/AMO01.htm",
+    "https://ebible.org/eng-Brenton/AMO01.htm",
+    "https://bolls.life/get-text/WLC/30/2/",
+    "https://ebible.org/grcbrent/AMO02.htm",
+    "https://ebible.org/eng-Brenton/AMO02.htm",
+    "https://bolls.life/get-text/WLC/30/3/",
+    "https://ebible.org/grcbrent/AMO03.htm",
+    "https://ebible.org/eng-Brenton/AMO03.htm",
+    "https://bolls.life/get-text/WLC/30/4/",
+    "https://ebible.org/grcbrent/AMO04.htm",
+    "https://ebible.org/eng-Brenton/AMO04.htm",
+    "https://bolls.life/get-text/WLC/30/5/",
+    "https://ebible.org/grcbrent/AMO05.htm",
+    "https://ebible.org/eng-Brenton/AMO05.htm",
+    "https://bolls.life/get-text/WLC/30/6/",
+    "https://ebible.org/grcbrent/AMO06.htm",
+    "https://ebible.org/eng-Brenton/AMO06.htm",
+    "https://bolls.life/get-text/WLC/30/7/",
+    "https://ebible.org/grcbrent/AMO07.htm",
+    "https://ebible.org/eng-Brenton/AMO07.htm",
+    "https://bolls.life/get-text/WLC/30/8/",
+    "https://ebible.org/grcbrent/AMO08.htm",
+    "https://ebible.org/eng-Brenton/AMO08.htm",
+    "https://bolls.life/get-text/WLC/30/9/",
+    "https://ebible.org/grcbrent/AMO09.htm",
+    "https://ebible.org/eng-Brenton/AMO09.htm",
+    "https://bolls.life/get-text/TISCH/44/15/",
+    "https://bolls.life/get-text/TR/44/15/",
+    "https://bolls.life/get-text/TISCH/44/2/",
+    "https://bolls.life/get-text/TR/44/2/"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 939,
+  "studiesChecked": 6,
+  "studies": [
+    {
+      "id": "seen",
+      "title": "Can God be seen?",
+      "summary": "Exodus describes Moses speaking with God “face to face”; John says no one has seen God. The tension depends on whether “face to face” means literal sight.",
+      "refs": [
+        "Exodus 33:11",
+        "John 1:18",
+        "Exodus 33:20",
+        "Exodus 33:23",
+        "Exodus 24:9",
+        "Exodus 24:10",
+        "Exodus 24:11",
+        "Numbers 12:8",
+        "Deuteronomy 4:12",
+        "Deuteronomy 4:15",
+        "Deuteronomy 4:16",
+        "Deuteronomy 5:4",
+        "Deuteronomy 5:5",
+        "Deuteronomy 5:24",
+        "Deuteronomy 5:27"
+      ]
+    },
+    {
+      "id": "judas",
+      "title": "Judas and the field of blood",
+      "summary": "Matthew and Acts give different accounts of Judas's death and the field purchase.",
+      "refs": [
+        "Matthew 27:5",
+        "Acts 1:18",
+        "Matthew 27:3",
+        "Matthew 27:4",
+        "Matthew 27:6",
+        "Matthew 27:7",
+        "Matthew 27:8",
+        "Acts 1:19"
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Water or ground: the animals’ origin",
+      "summary": "Genesis 1 can sound like birds came from water, while Genesis 2 says ground. The apparent conflict depends on how Genesis 1:20 is translated.",
+      "refs": [
+        "Genesis 1:20",
+        "Genesis 2:19"
+      ]
+    },
+    {
+      "id": "plants",
+      "title": "Plants before people—or after?",
+      "summary": "Genesis 1 places vegetation before people; Genesis 2 describes no field plants before a cultivator. Whether this conflicts depends on which plants are meant.",
+      "refs": [
+        "Genesis 1:11",
+        "Genesis 2:5"
+      ]
+    },
+    {
+      "id": "soldiers",
+      "title": "David’s census: two different totals",
+      "summary": "The census totals differ: Israel is 800,000 versus 1.1 million; Judah is 500,000 versus 470,000. Different counting rules are proposed but not established here.",
+      "refs": [
+        "2 Samuel 24:9",
+        "1 Chronicles 21:5",
+        "1 Chronicles 21:6"
+      ]
+    },
+    {
+      "id": "birth",
+      "title": "Herod, Quirinius, and the birth chronology",
+      "summary": "Matthew places Jesus’s birth under Herod; Luke links it to Quirinius’s census. The historical chronology creates a tension if the same census is intended.",
+      "refs": [
+        "Matthew 2:1",
+        "Luke 2:2"
+      ]
+    }
+  ],
+  "draftHashes": {
+    "research/claude-drafts/joel-to-micah-records.json": "4f4532778fa77e726c8a5d172404c1bf0dec148ca8f09e7e500ea22c9cf12627",
+    "research/claude-drafts/joel-to-micah-notes.md": "12486ee07609bedae47134a662a94cbfc81e274e25f783fdd5322675a23c0f8b",
+    "research/claude-drafts/joel-to-micah-q-records.json": "aa2be6460a807433695706a5867327e36f463a04b9f4d5f81f1445fe413a78ee",
+    "research/claude-drafts/joel-to-micah-q-notes.md": "07d76ddb0de7d38634753880bd5e8833a13b8a29a0752def736d95b76c6ae3dd"
+  }
+}

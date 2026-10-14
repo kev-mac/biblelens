@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 939,
+    "evidenceRecords": 967,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 655,
-    "annotatedVerses": 3318
+    "chaptersWithAnnotations": 665,
+    "annotatedVerses": 3353
   },
   "byBook": [
     {
@@ -183,14 +183,14 @@
     {
       "book": "Joel",
       "chapters": 3,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 8
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 17
     },
     {
       "book": "Amos",
       "chapters": 9,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 4
+      "chaptersWithAnnotations": 9,
+      "annotatedVerses": 30
     },
     {
       "book": "Obadiah",
@@ -15170,9 +15170,16 @@
       "book": "Joel",
       "bookId": 28,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-seed-is-rotten-under-their-clods-or-the-heifers-have-started-at-their-mangers-joel-1-17-greek"
+      ],
+      "annotatedVerses": [
+        17,
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15180,7 +15187,11 @@
       "bookId": 28,
       "chapter": 2,
       "annotationIds": [
-        "exp-late-28-2-4"
+        "exp-late-28-2-4",
+        "great-and-very-terrible-or-great-very-glorious-joel-2-11-and-2-31-greek",
+        "and-in-the-remnant-whom-the-lord-shall-call-or-they-that-have-glad-tidings-preached-to-them-joel-2-32-greek",
+        "it-shall-come-to-pass-afterward-or-in-the-last-days-joel-2-28",
+        "the-northern-army-who-or-what-is-the-northern-army-joel-2-20"
       ],
       "annotatedVerses": [
         4,
@@ -15190,10 +15201,16 @@
         8,
         9,
         10,
-        11
+        11,
+        20,
+        28,
+        31,
+        32
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -15201,45 +15218,100 @@
       "book": "Joel",
       "bookId": 28,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-valley-of-shittim-or-the-valley-of-flags-joel-3-18-greek",
+        "i-will-cleanse-their-blood-that-i-have-not-cleansed-or-i-will-make-inquisition-for-their-blood-joel-3-21-greek",
+        "beat-your-plowshares-into-swords-or-beat-their-swords-into-plowshares-joel-3-10"
+      ],
+      "annotatedVerses": [
+        10,
+        18,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Amos",
       "bookId": 29,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "which-he-saw-concerning-israel-or-which-he-saw-concerning-jerusalem-amos-1-1-greek",
+        "threshed-gilead-with-threshing-instruments-of-iron-or-sawed-with-iron-saws-the-women-with-child-amos-1-3-greek",
+        "the-whole-captivity-or-the-captivity-of-solomon-amos-1-6-and-1-9-greek",
+        "and-did-cast-off-all-pity-or-and-destroyed-the-mother-upon-the-earth-amos-1-11-greek",
+        "shall-devour-the-palaces-or-shall-devour-the-foundations-amos-1-4-and-others-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Amos",
       "bookId": 29,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "shall-devour-the-palaces-or-shall-devour-the-foundations-amos-1-4-and-others-greek"
+      ],
+      "annotatedVerses": [
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Amos",
       "bookId": 29,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "except-they-be-agreed-or-if-they-do-not-know-one-another-amos-3-3-greek",
+        "publish-in-the-palaces-at-ashdod-or-proclaim-it-to-the-regions-among-the-assyrians-amos-3-9-greek",
+        "an-adversary-or-o-tyre-amos-3-11-greek"
+      ],
+      "annotatedVerses": [
+        3,
+        9,
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Amos",
       "bookId": 29,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-your-tithes-after-three-years-or-and-your-tithes-every-third-day-amos-4-4-greek",
+        "prepare-to-meet-thy-god-or-prepare-to-call-on-thy-god-amos-4-12-greek",
+        "declareth-unto-man-what-is-his-thought-or-proclaims-to-men-his-christ-amos-4-13-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        12,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15247,16 +15319,19 @@
       "bookId": 29,
       "chapter": 5,
       "annotationIds": [
-        "exp-late-29-5-21"
+        "exp-late-29-5-21",
+        "ye-who-turn-judgment-to-wormwood-or-it-is-he-that-executes-judgment-in-the-height-amos-5-7-greek"
       ],
       "annotatedVerses": [
+        7,
         21,
         22,
         23,
         24
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -15264,36 +15339,68 @@
       "book": "Amos",
       "bookId": 29,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "that-are-at-ease-in-zion-or-that-set-at-nought-sion-amos-6-1-greek"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Amos",
       "bookId": 29,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-formed-grasshoppers-or-one-caterpillar-king-gog-amos-7-1-greek",
+        "the-house-of-isaac-or-the-house-of-jacob-amos-7-16-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Amos",
       "bookId": 29,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-basket-of-summer-fruit-or-a-fowlers-basket-amos-8-1-greek",
+        "the-manner-of-beersheba-liveth-or-thy-god-o-bersabee-lives-amos-8-14-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Amos",
       "bookId": 29,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "smite-the-lintel-of-the-door-or-smite-the-mercy-seat-amos-9-1-greek",
+        "the-syrians-from-kir-or-the-syrians-out-of-the-deep-amos-9-7-greek",
+        "the-remnant-of-edom-or-the-remnant-of-men-amos-9-12-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        7,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15411,7 +15518,8 @@
       "bookId": 32,
       "chapter": 4,
       "annotationIds": [
-        "exp-late-32-4-1"
+        "exp-late-32-4-1",
+        "beat-your-plowshares-into-swords-or-beat-their-swords-into-plowshares-joel-3-10"
       ],
       "annotatedVerses": [
         1,
@@ -15419,7 +15527,8 @@
         3
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -16744,7 +16853,8 @@
       "chapter": 2,
       "annotationIds": [
         "coverage-nt-spirit-timing",
-        "coverage-nt-women-speaking"
+        "coverage-nt-women-speaking",
+        "it-shall-come-to-pass-afterward-or-in-the-last-days-joel-2-28"
       ],
       "annotatedVerses": [
         1,
