@@ -1,0 +1,38 @@
+[
+  {
+    "id": "i-am-the-man-that-hath-seen-affliction-who-is-the-man-lamentations-3-1",
+    "file": "lamentations-1-5-q-records.json",
+    "decision": "corrected and accepted",
+    "reason": "Bounded absence claim to the three supplied verses. No shared-reference overlap.",
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "witness": null,
+    "needsOwner": false
+  },
+  {
+    "id": "the-breath-of-our-nostrils-the-anointed-of-the-lord-who-is-the-anointed-lamentations-4-20",
+    "file": "lamentations-1-5-q-records.json",
+    "decision": "accepted as written",
+    "reason": "Accepted supplied material wording difference or explanatory question, with stated witness and interpretation limits. No shared-reference overlap.",
+    "operation": "new",
+    "tags": [
+      "Q"
+    ],
+    "witness": null,
+    "needsOwner": false
+  },
+  {
+    "id": "thou-wilt-bring-the-day-that-thou-hast-called-which-day-lamentations-1-21",
+    "file": "lamentations-1-5-q-records.json",
+    "decision": "held",
+    "reason": "Held: the supplied adjacent verse explains reciprocal judgment on the enemies. An unspecified date or prior occasion of calling the day does not independently establish a material Q gap.",
+    "operation": "none",
+    "tags": [
+      "Q"
+    ],
+    "witness": null,
+    "needsOwner": false
+  }
+]
