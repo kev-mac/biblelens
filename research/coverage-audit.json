@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1021,
+    "evidenceRecords": 1030,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 684,
-    "annotatedVerses": 3404
+    "chaptersWithAnnotations": 688,
+    "annotatedVerses": 3413
   },
   "byBook": [
     {
@@ -243,14 +243,14 @@
     {
       "book": "Malachi",
       "chapters": 4,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 5
+      "chaptersWithAnnotations": 4,
+      "annotatedVerses": 13
     },
     {
       "book": "Matthew",
       "chapters": 28,
-      "chaptersWithAnnotations": 4,
-      "annotatedVerses": 18
+      "chaptersWithAnnotations": 5,
+      "annotatedVerses": 19
     },
     {
       "book": "Mark",
@@ -16061,18 +16061,34 @@
       "book": "Malachi",
       "bookId": 38,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "by-malachi-or-by-the-hand-of-his-messenger-malachi-1-1-greek",
+        "laid-his-mountains-waste-for-the-dragons-or-laid-waste-his-borders-as-dwellings-of-the-wilderness-malachi-1-3-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Malachi",
       "bookId": 38,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-will-corrupt-your-seed-or-i-turn-my-back-upon-you-malachi-2-3-greek",
+        "the-lord-hateth-putting-away-or-if-thou-shouldest-hate-and-put-her-away-malachi-2-16-greek"
+      ],
+      "annotatedVerses": [
+        3,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16080,17 +16096,24 @@
       "bookId": 38,
       "chapter": 3,
       "annotationIds": [
-        "exp-late-38-3-8"
+        "exp-late-38-3-8",
+        "will-a-man-rob-god-or-will-a-man-insult-god-malachi-3-8-and-3-9-greek",
+        "bring-ye-all-the-tithes-into-the-storehouse-or-the-year-is-completed-malachi-3-10-greek",
+        "the-proud-happy-or-strangers-blessed-malachi-3-15-and-4-1-greek",
+        "prepare-the-way-before-me-or-prepare-thy-way-before-thee-malachi-3-1"
       ],
       "annotatedVerses": [
+        1,
         8,
         9,
         10,
         11,
-        12
+        12,
+        15
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -16098,9 +16121,17 @@
       "book": "Malachi",
       "bookId": 38,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-proud-happy-or-strangers-blessed-malachi-3-15-and-4-1-greek",
+        "elijah-the-prophet-and-the-dreadful-day-or-elias-the-thesbite-and-the-glorious-day-malachi-4-5-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16218,9 +16249,15 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "prepare-the-way-before-me-or-prepare-thy-way-before-thee-malachi-3-1"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

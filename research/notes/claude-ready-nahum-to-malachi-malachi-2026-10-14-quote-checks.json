@@ -1,0 +1,2306 @@
+{
+  "batch": "nahum-to-malachi",
+  "subsetBooks": [
+    "Malachi"
+  ],
+  "completeBatch": true,
+  "pendingRecords": [],
+  "checked": "2026-10-14T12:32:21.372Z",
+  "draftHashes": {
+    "nahum-to-malachi-records.json": "a3ebbe7636a143cacc79d2a6acc0e06bb442d9103415b70b98d2965a9fddea1a",
+    "nahum-to-malachi-notes.md": "cab1da1d4555696673077f676b619ca89d87145dcd5832dd00146dc3545e7363",
+    "nahum-to-malachi-q-records.json": "3861008b04de5e76ef1ae99917e46a0e7f5be8d13082159d9ebccfd00b9dde62",
+    "nahum-to-malachi-q-notes.md": "1f6f2fe79184193ae68cc0633f5d3e28933c0ab6748f9e8c4c0e18a8658bc26f"
+  },
+  "sourceCount": 11,
+  "sourceErrors": [],
+  "checks": [
+    {
+      "id": "by-malachi-or-by-the-hand-of-his-messenger-malachi-1-1-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 1:1",
+          "quote": "by Malachi",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "בְּיַ֖ד מַלְאָכִֽי",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/1/",
+              "printedLabel": "1:1",
+              "printed": "מַשָּׂ֥א דְבַר־יְהוָ֖ה אֶל־יִשְׂרָאֵ֑ל בְּיַ֖ד מַלְאָכִֽי׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἐν χειρὶ ἀγγέλου αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL01.htm",
+              "printedLabel": "1:1",
+              "printed": "ΛΗΜΜΑ λόγου Κυρίου ἐπὶ τὸν Ἰσραὴλ ἐν χειρὶ ἀγγέλου αὐτοῦ, θέσθε δὴ ἐπὶ τὰς καρδίας ὑμῶν."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL01.htm",
+          "printedLabel": "1:1",
+          "quote": "by the hand of his messenger",
+          "printed": "The burden of the word of the Lord to Israel by the hand of his messenger. Lay it , I pray you, to heart.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 1:1",
+          "quote": "by Malachi",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐν χειρὶ ἀγγέλου αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL01.htm",
+              "printedLabel": "1:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "בְּיַ֖ד מַלְאָכִֽי",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/1/",
+              "printedLabel": "1:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἐν χειρὶ ἀγγέλου αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL01.htm",
+              "printedLabel": "1:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ביד מלאכי",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/1/",
+              "printedLabel": "1:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἀγγέλου αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL01.htm",
+              "printedLabel": "1:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "by Malachi",
+          "ref": "Malachi 1:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "by the hand of his messenger",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "by Malachi",
+          "ref": "Malachi 1:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "by the hand of his messenger",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "by Malachi",
+          "ref": "Malachi 1:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "by the hand of his messenger",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "his messenger",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "his messenger",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "interpretationDecision": "Allow the personal name and the messenger description to refer to the same person."
+    },
+    {
+      "id": "laid-his-mountains-waste-for-the-dragons-or-laid-waste-his-borders-as-dwellings-of-the-wilderness-malachi-1-3-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 1:3",
+          "quote": "laid his mountains and his heritage waste",
+          "exact": true
+        },
+        {
+          "ref": "Malachi 1:3",
+          "quote": "for the dragons of the wilderness",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "אֶת־הָרָיו֙ שְׁמָמָ֔ה וְאֶת־נַחֲלָתֹ֖ו … לְתַנֹּ֥ות מִדְבָּֽר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/1/",
+              "printedLabel": "1:3",
+              "printed": "וְאֶת־עֵשָׂ֖ו שָׂנֵ֑אתִי וָאָשִׂ֤ים אֶת־הָרָיו֙ שְׁמָמָ֔ה וְאֶת־נַחֲלָתֹ֖ו לְתַנֹּ֥ות מִדְבָּֽר׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἔταξα τὰ ὅρια αὐτοῦ εἰς ἀφανισμὸν, καὶ τὴν κληρονομίαν αὐτοῦ εἰς δώματα ἐρήμου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL01.htm",
+              "printedLabel": "1:3",
+              "printed": "τὸν δὲ Ἠσαῦ ἐμίσησα, καὶ ἔταξα τὰ ὅρια αὐτοῦ εἰς ἀφανισμὸν, καὶ τὴν κληρονομίαν αὐτοῦ εἰς δώματα ἐρήμου;"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL01.htm",
+          "printedLabel": "1:3",
+          "quote": "laid waste his borders, and made his heritage as dwellings of the wilderness",
+          "printed": "and hated Esau, and laid waste his borders, and made his heritage as dwellings of the wilderness?",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 1:3",
+          "quote": "for the dragons of the wilderness",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "τὰ ὅρια",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL01.htm",
+              "printedLabel": "1:3"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "εἰς δώματα ἐρήμου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL01.htm",
+              "printedLabel": "1:3"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "אֶת־הָרָיו֙ שְׁמָמָ֔ה וְאֶת־נַחֲלָתֹ֖ו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/1/",
+              "printedLabel": "1:3"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "לְתַנֹּ֥ות מִדְבָּֽר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/1/",
+              "printedLabel": "1:3"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἔταξα τὰ ὅρια αὐτοῦ εἰς ἀφανισμὸν, καὶ τὴν κληρονομίαν αὐτοῦ εἰς δώματα ἐρήμου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL01.htm",
+              "printedLabel": "1:3"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "את הריו שממה ואת נחלתו לתנות מדבר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/1/",
+              "printedLabel": "1:3"
+            }
+          ],
+          "classification": "Consonantal repetition verified with accents and maqaf normalized"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "his mountains … for the dragons of the wilderness",
+          "ref": "Malachi 1:3",
+          "classification": "KJV ellipsis fragments verified"
+        },
+        {
+          "field": "title",
+          "quote": "his borders … as dwellings of the wilderness",
+          "ref": null,
+          "classification": "Brenton English ellipsis fragments verified"
+        },
+        {
+          "field": "summary",
+          "quote": "mountains and his heritage",
+          "ref": "Malachi 1:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "for the dragons of the wilderness",
+          "ref": "Malachi 1:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "his borders",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "as dwellings of the wilderness",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "laid his mountains and his heritage waste",
+          "ref": "Malachi 1:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "for the dragons of the wilderness",
+          "ref": "Malachi 1:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "laid waste his borders, and made his heritage as dwellings of the wilderness",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "mountains",
+          "ref": "Malachi 1:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "dragons",
+          "ref": "Malachi 1:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "borders",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "interpretationDecision": "Accept supplied explicit meaning or word contrast with named-edition limits."
+    },
+    {
+      "id": "i-will-corrupt-your-seed-or-i-turn-my-back-upon-you-malachi-2-3-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 2:3",
+          "quote": "I will corrupt your seed",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "גֹעֵ֤ר לָכֶם֙ אֶת־הַזֶּ֔רַע",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/2/",
+              "printedLabel": "2:3",
+              "printed": "הִנְנִ֨י גֹעֵ֤ר לָכֶם֙ אֶת־הַזֶּ֔רַע וְזֵרִ֤יתִי פֶ֙רֶשׁ֙ עַל־פְּנֵיכֶ֔ם פֶּ֖רֶשׁ חַגֵּיכֶ֑ם וְנָשָׂ֥א אֶתְכֶ֖ם אֵלָֽיו׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἀφορίζω ὑμῖν τὸν ὦμον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL02.htm",
+              "printedLabel": "2:3",
+              "printed": "Ἰδοὺ ἐγὼ ἀφορίζω ὑμῖν τὸν ὦμον, καὶ σκορπιῶ ἔνυστρον ἐπὶ τὰ πρόσωπα ὑμῶν, ἔνυστρον ἑορτῶν, ὑμῶν, καὶ λήψομαι ὑμᾶς εἰς τὸ αὐτό·"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL02.htm",
+          "printedLabel": "2:3",
+          "quote": "I turn my back upon you",
+          "printed": "Behold, I turn my back upon you, and I will scatter dung upon your faces, the dung of your feasts, and I will carry you away at the same time.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 2:3",
+          "quote": "I will corrupt your seed",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἀφορίζω ὑμῖν τὸν ὦμον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL02.htm",
+              "printedLabel": "2:3"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "גֹעֵ֤ר לָכֶם֙ אֶת־הַזֶּ֔רַע",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/2/",
+              "printedLabel": "2:3"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἀφορίζω ὑμῖν τὸν ὦμον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL02.htm",
+              "printedLabel": "2:3"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הנני גער לכם את הזרע",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/2/",
+              "printedLabel": "2:3"
+            }
+          ],
+          "classification": "Consonantal repetition verified with accents and maqaf normalized"
+        },
+        {
+          "field": "reasoning",
+          "quote": "τὸν ὦμον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL02.htm",
+              "printedLabel": "2:3"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "I will corrupt your seed",
+          "ref": "Malachi 2:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "I turn my back upon you",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Behold, I will corrupt your seed",
+          "ref": "Malachi 2:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "I turn my back upon you",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "I will corrupt your seed",
+          "ref": "Malachi 2:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "I turn my back upon you",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "interpretationDecision": "Accept supplied explicit meaning or word contrast with named-edition limits."
+    },
+    {
+      "id": "the-lord-hateth-putting-away-or-if-thou-shouldest-hate-and-put-her-away-malachi-2-16-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 2:16",
+          "quote": "the Lord, the God of Israel, saith that he hateth putting away",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "כִּֽי־שָׂנֵ֣א שַׁלַּ֗ח אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/2/",
+              "printedLabel": "2:16",
+              "printed": "כִּֽי־שָׂנֵ֣א שַׁלַּ֗ח אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל וְכִסָּ֤ה חָמָס֙ עַל־לְבוּשֹׁ֔ו אָמַ֖ר יְהוָ֣ה צְבָאֹ֑ות וְנִשְׁמַרְתֶּ֥ם בְּרוּחֲכֶ֖ם וְלֹ֥א תִבְגֹּֽדוּ׃    ס"
+            }
+          ]
+        },
+        {
+          "quote": "Ἀλλὰ ἐὰν μισήσας ἐξαποστείλῃς, λέγει Κύριος ὁ Θεὸς τοῦ Ἰσραὴλ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL02.htm",
+              "printedLabel": "2:16",
+              "printed": "Ἀλλὰ ἐὰν μισήσας ἐξαποστείλῃς, λέγει Κύριος ὁ Θεὸς τοῦ Ἰσραὴλ, καὶ καλύψει ἀσέβεια ἐπὶ τὰ ἐνθυμήματά σου, λέγει Κύριος παντοκράτωρ. καὶ φυλάξασθε ἐν τῷ πνεύματι ὑμῶν, καὶ οὐ μὴ ἐγκαταλίπητε"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL02.htm",
+          "printedLabel": "2:16",
+          "quote": "if thou shouldest hate thy wife and put her away, saith the Lord God of Israel",
+          "printed": "But if thou shouldest hate thy wife and put her away, saith the Lord God of Israel, then ungodliness shall cover thy thoughts, saith the Lord Almighty: therefore take ye heed to your spirit, and forsake them not,",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 2:16",
+          "quote": "the Lord, the God of Israel, saith that he hateth putting away",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐὰν μισήσας ἐξαποστείλῃς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL02.htm",
+              "printedLabel": "2:16"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כִּֽי־שָׂנֵ֣א שַׁלַּ֗ח אָמַ֤ר יְהוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/2/",
+              "printedLabel": "2:16"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Ἀλλὰ ἐὰν μισήσας ἐξαποστείλῃς, λέγει Κύριος ὁ Θεὸς τοῦ Ἰσραὴλ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL02.htm",
+              "printedLabel": "2:16"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כי שנא שלח אמר יהוה אלהי ישראל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/2/",
+              "printedLabel": "2:16"
+            }
+          ],
+          "classification": "Consonantal repetition verified with accents and maqaf normalized"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "the Lord, the God of Israel, saith that he hateth putting away",
+          "ref": "Malachi 2:16",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "if thou shouldest hate thy wife and put her away, saith the Lord God of Israel",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "that he hateth putting away",
+          "ref": "Malachi 2:16",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "if thou shouldest hate thy wife and put her away",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "saith the Lord",
+          "ref": "Malachi 2:16",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "the Lord, the God of Israel, saith that he hateth putting away",
+          "ref": "Malachi 2:16",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "if thou shouldest hate thy wife and put her away, saith the Lord God of Israel",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "scope",
+          "quote": "thy wife",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "interpretationDecision": "Accept supplied explicit meaning or word contrast with named-edition limits."
+    },
+    {
+      "id": "will-a-man-rob-god-or-will-a-man-insult-god-malachi-3-8-and-3-9-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 3:8",
+          "quote": "Will a man rob God?",
+          "exact": true
+        },
+        {
+          "ref": "Malachi 3:9",
+          "quote": "Ye are cursed with a curse",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "הֲיִקְבַּ֨ע אָדָ֜ם אֱלֹהִ֗ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:8",
+              "printed": "הֲיִקְבַּ֨ע אָדָ֜ם אֱלֹהִ֗ים כִּ֤י אַתֶּם֙ קֹבְעִ֣ים אֹתִ֔י וַאֲמַרְתֶּ֖ם בַּמֶּ֣ה קְבַעֲנ֑וּךָ הַֽמַּעֲשֵׂ֖ר וְהַתְּרוּמָֽה׃"
+            }
+          ]
+        },
+        {
+          "quote": "Μήτι πτερνιεῖ ἄνθρωπος Θεόν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:8",
+              "printed": "Μήτι πτερνιεῖ ἄνθρωπος Θεόν; διότι ὑμεῖς πτερνίζετέ με· καὶ ἐρεῖτε, ἐν τίνι ἐπτερνίσαμέν σε; ὅτι τὰ ἐπιδέκατα, καὶ αἱ ἀπαρχαὶ μεθʼ ὑμῶν εἰσι."
+            }
+          ]
+        },
+        {
+          "quote": "בַּמְּאֵרָה֙ אַתֶּ֣ם נֵֽאָרִ֔ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:9",
+              "printed": "בַּמְּאֵרָה֙ אַתֶּ֣ם נֵֽאָרִ֔ים וְאֹתִ֖י אַתֶּ֣ם קֹבְעִ֑ים הַגֹּ֖וי כֻּלֹּֽו׃"
+            }
+          ]
+        },
+        {
+          "quote": "Καὶ ἀποβλέποντες ὑμεῖς ἀποβλέπετε",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:9",
+              "printed": "Καὶ ἀποβλέποντες ὑμεῖς ἀποβλέπετε, καὶ ἐμὲ ὑμεῖς πτερνίζετε."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL03.htm",
+          "printedLabel": "3:8",
+          "quote": "Will a man insult God",
+          "printed": "Will a man insult God? for ye insult me. But ye say, Wherein have we insulted thee? In that the tithes and first-fruits are with you still .",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL03.htm",
+          "printedLabel": "3:9",
+          "quote": "And ye do surely look off from me",
+          "printed": "And ye do surely look off from me, and ye insult me.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 3:8",
+          "quote": "Will a man rob God?",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Malachi 3:9",
+          "quote": "Ye are cursed with a curse",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἀποβλέποντες ὑμεῖς ἀποβλέπετε",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "הֲיִקְבַּ֨ע אָדָ֜ם אֱלֹהִ֗ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Μήτι πτερνιεῖ ἄνθρωπος Θεόν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "בַּמְּאֵרָה֙ אַתֶּ֣ם נֵֽאָרִ֔ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Καὶ ἀποβλέποντες ὑμεῖς ἀποβλέπετε",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "היקבע אדם אלהים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "במארה אתם נארים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "Will a man rob God?",
+          "ref": "Malachi 3:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "Ye are cursed with a curse",
+          "ref": "Malachi 3:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "Will a man insult God?",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "title",
+          "quote": "ye do surely look off from me",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Will a man rob God?",
+          "ref": "Malachi 3:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "Ye are cursed with a curse",
+          "ref": "Malachi 3:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "insult",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "ye do surely look off from me",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "Will a man rob God?",
+          "ref": "Malachi 3:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Will a man insult God",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "Ye are cursed with a curse",
+          "ref": "Malachi 3:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "And ye do surely look off from me",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "insult",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exp-late-38-3-8",
+          "title": "Tithes in an agricultural setting",
+          "summary": "The promised blessing concerns food stores, crops, vines, and crop destroyers.",
+          "reasoning": "Its agricultural setting matters. A guaranteed modern investment return is an extension beyond the immediate text.",
+          "scope": "Theological promise, not a financial or scientific guarantee.",
+          "decision": "Distinct finding: agricultural promise context does not compare these Greek wordings."
+        }
+      ],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "interpretationDecision": "Accept supplied explicit meaning or word contrast with named-edition limits."
+    },
+    {
+      "id": "bring-ye-all-the-tithes-into-the-storehouse-or-the-year-is-completed-malachi-3-10-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 3:10",
+          "quote": "Bring ye all the tithes into the storehouse, that there may be meat in mine house",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "הָבִ֨יאוּ אֶת־כָּל־הַֽמַּעֲשֵׂ֜ר אֶל־בֵּ֣ית הָאֹוצָ֗ר וִיהִ֥י טֶ֙רֶף֙ בְּבֵיתִ֔י",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:10",
+              "printed": "הָבִ֨יאוּ אֶת־כָּל־הַֽמַּעֲשֵׂ֜ר אֶל־בֵּ֣ית הָאֹוצָ֗ר וִיהִ֥י טֶ֙רֶף֙ בְּבֵיתִ֔י וּבְחָנ֤וּנִי נָא֙ בָּזֹ֔את אָמַ֖ר יְהוָ֣ה צְבָאֹ֑ות אִם־לֹ֧א אֶפְתַּ֣ח לָכֶ֗ם אֵ֚ת אֲרֻבֹּ֣ות הַשָּׁמַ֔יִם וַהֲרִיקֹתִ֥י לָכֶ֛ם בְּרָכָ֖ה עַד־בְּלִי־דָֽי׃"
+            }
+          ]
+        },
+        {
+          "quote": "Τὸ ἔτος συνετελέσθη, καὶ εἰσηνέγκατε πάντα τὰ ἐκφόρια εἰς τοὺς θησαυροὺς, καὶ ἔσται ἡ διαρπαγὴ αὐτοῦ ἐν τῷ οἴκῳ αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:10",
+              "printed": "Τὸ ἔτος συνετελέσθη, καὶ εἰσηνέγκατε πάντα τὰ ἐκφόρια εἰς τοὺς θησαυροὺς, καὶ ἔσται ἡ διαρπαγὴ αὐτοῦ ἐν τῷ οἴκῳ αὐτοῦ· ἐπιστρέψατε δὴ ἐν τούτῳ, λέγει Κύριος παντοκράτωρ· ἐὰν μὴ ἀνοίξω ὑμῖν τοὺς καταῤῥάκτας τοῦ οὐρανοῦ, καὶ ἐκχεῶ τὴν εὐλογίαν μου ὑμῖν, ἕως τοῦ ἱκανωθῆναι·"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL03.htm",
+          "printedLabel": "3:10",
+          "quote": "The year is completed, and ye have brought all the produce into the storehouses; but there shall be the plunder thereof in its house",
+          "printed": "The year is completed, and ye have brought all the produce into the storehouses; but there shall be the plunder thereof in its house: return now on this behalf, saith the Lord Almighty, see if I will not open to you the torrents of heaven, and pour out my blessing upon you, until ye are satisfied.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 3:10",
+          "quote": "Bring ye all the tithes into the storehouse, that there may be meat in mine house",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "הָבִ֨יאוּ אֶת־כָּל־הַֽמַּעֲשֵׂ֜ר אֶל־בֵּ֣ית הָאֹוצָ֗ר וִיהִ֥י טֶ֙רֶף֙ בְּבֵיתִ֔י",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Τὸ ἔτος συνετελέσθη, καὶ εἰσηνέγκατε πάντα τὰ ἐκφόρια εἰς τοὺς θησαυροὺς, καὶ ἔσται ἡ διαρπαγὴ αὐτοῦ ἐν τῷ οἴκῳ αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הביאו את כל המעשר אל בית האוצר ויהי טרף בביתי",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:10"
+            }
+          ],
+          "classification": "Consonantal repetition verified with accents and maqaf normalized"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "Bring ye all the tithes into the storehouse",
+          "ref": "Malachi 3:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "The year is completed, and ye have brought all the produce into the storehouses",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Bring ye all the tithes into the storehouse, that there may be meat in mine house",
+          "ref": "Malachi 3:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "The year is completed, and ye have brought all the produce into the storehouses; but there shall be the plunder thereof in its house",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "Bring ye all the tithes into the storehouse, that there may be meat in mine house",
+          "ref": "Malachi 3:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "The year is completed, and ye have brought all the produce into the storehouses; but there shall be the plunder thereof in its house",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exp-late-38-3-8",
+          "title": "Tithes in an agricultural setting",
+          "summary": "The promised blessing concerns food stores, crops, vines, and crop destroyers.",
+          "reasoning": "Its agricultural setting matters. A guaranteed modern investment return is an extension beyond the immediate text.",
+          "scope": "Theological promise, not a financial or scientific guarantee.",
+          "decision": "Distinct finding: agricultural promise context does not compare these Greek wordings."
+        }
+      ],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "interpretationDecision": "Accept supplied explicit meaning or word contrast with named-edition limits."
+    },
+    {
+      "id": "the-proud-happy-or-strangers-blessed-malachi-3-15-and-4-1-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 3:15",
+          "quote": "we call the proud happy",
+          "exact": true
+        },
+        {
+          "ref": "Malachi 4:1",
+          "quote": "all the proud, yea, and all that do wickedly, shall be stubble",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "מְאַשְּׁרִ֣ים זֵדִ֑ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:15",
+              "printed": "וְעַתָּ֕ה אֲנַ֖חְנוּ מְאַשְּׁרִ֣ים זֵדִ֑ים גַּם־נִבְנוּ֙ עֹשֵׂ֣י רִשְׁעָ֔ה גַּ֧ם בָּחֲנ֛וּ אֱלֹהִ֖ים וַיִּמָּלֵֽטוּ׃"
+            }
+          ]
+        },
+        {
+          "quote": "μακαρίζομεν ἀλλοτρίους",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:15",
+              "printed": "Καὶ νῦν ἡμεῖς μακαρίζομεν ἀλλοτρίους, καὶ ἀνοικοδομοῦνται πάντες ποιοῦντες ἄνομα, καὶ ἀντέστησαν τῷ Θεῷ, καὶ ἐσώθησαν."
+            }
+          ]
+        },
+        {
+          "quote": "כָל־זֵדִ֜ים וְכָל־עֹשֵׂ֤ה רִשְׁעָה֙ קַ֔שׁ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:19",
+              "printed": "כִּֽי־הִנֵּ֤ה הַיֹּום֙ בָּ֔א בֹּעֵ֖ר כַּתַּנּ֑וּר וְהָי֨וּ כָל־זֵדִ֜ים וְכָל־עֹשֵׂ֤ה רִשְׁעָה֙ קַ֔שׁ וְלִהַ֨ט אֹתָ֜ם הַיֹּ֣ום הַבָּ֗א אָמַר֙ יְהוָ֣ה צְבָאֹ֔ות אֲשֶׁ֛ר לֹא־יַעֲזֹ֥ב לָהֶ֖ם שֹׁ֥רֶשׁ וְעָנָֽף׃"
+            }
+          ]
+        },
+        {
+          "quote": "πάντες οἱ ἀλλογενεῖς, καὶ πάντες οἱ ποιοῦντες ἄνομα, καλάμη",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:19",
+              "printed": "Διότι ἰδοὺ ἡμέρα ἔρχεται καιομένη ὡς κλίβανος καὶ φλέξει αὐτοὺς, καὶ ἔσονται πάντες οἱ ἀλλογενεῖς, καὶ πάντες οἱ ποιοῦντες ἄνομα, καλάμη, καὶ ἀνάψει αὐτοὺς ἡ ἡμέρα ἡ ἐρχομένη, λέγει Κύριος παντοκράτωρ, καὶ οὐ μὴ ὑπολειφθῇ ἐξ αὐτῶν ῥίζα οὐδὲ κλῆμα."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL03.htm",
+          "printedLabel": "3:15",
+          "quote": "we pronounce strangers blessed",
+          "printed": "And now we pronounce strangers blessed; and all they who act unlawfully are built up; and they have resisted God, and yet have been delivered.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL03.htm",
+          "printedLabel": "3:19",
+          "quote": "all the aliens, and all that do wickedly, shall be stubble",
+          "printed": "For, behold, a day comes burning as an oven, and it shall consume them; and all the aliens, and all that do wickedly, shall be stubble: and the day that is coming shall set them on fire, saith the Lord Almighty, and there shall not be left of them root or branch.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 3:15",
+          "quote": "we call the proud happy",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Malachi 4:1",
+          "quote": "all the proud, yea, and all that do wickedly, shall be stubble",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἀλλοτρίους",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:15"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "οἱ ἀλλογενεῖς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:19"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "מְאַשְּׁרִ֣ים זֵדִ֑ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:15"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "μακαρίζομεν ἀλλοτρίους",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:15"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כָל־זֵדִ֜ים וְכָל־עֹשֵׂ֤ה רִשְׁעָה֙ קַ֔שׁ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:19"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "πάντες οἱ ἀλλογενεῖς, καὶ πάντες οἱ ποιοῦντες ἄνομα, καλάμη",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:19"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "מאשרים זדים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:15"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כל זדים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:19"
+            }
+          ],
+          "classification": "Consonantal repetition verified with accents and maqaf normalized"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "the proud",
+          "ref": "Malachi 3:15",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "strangers",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "title",
+          "quote": "aliens",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "we call the proud happy",
+          "ref": "Malachi 3:15",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "all the proud … shall be stubble",
+          "ref": "Malachi 4:1",
+          "classification": "KJV ellipsis fragments verified"
+        },
+        {
+          "field": "summary",
+          "quote": "strangers",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the aliens",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "we call the proud happy",
+          "ref": "Malachi 3:15",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "we pronounce strangers blessed",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "all the proud, yea, and all that do wickedly, shall be stubble",
+          "ref": "Malachi 4:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "all the aliens, and all that do wickedly, shall be stubble",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the proud",
+          "ref": "Malachi 3:15",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "strangers",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "aliens",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "interpretationDecision": "Remove the unsupported claim that the descriptions identify different groups of people."
+    },
+    {
+      "id": "when-i-make-up-my-jewels-or-for-a-peculiar-possession-malachi-3-17-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 3:17",
+          "quote": "in that day when I make up my jewels",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "לַיֹּ֕ום אֲשֶׁ֥ר אֲנִ֖י עֹשֶׂ֣ה סְגֻלָּ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:17",
+              "printed": "וְהָ֣יוּ לִ֗י אָמַר֙ יְהוָ֣ה צְבָאֹ֔ות לַיֹּ֕ום אֲשֶׁ֥ר אֲנִ֖י עֹשֶׂ֣ה סְגֻלָּ֑ה וְחָמַלְתִּ֣י עֲלֵיהֶ֔ם כַּֽאֲשֶׁר֙ יַחְמֹ֣ל אִ֔ישׁ עַל־בְּנֹ֖ו הָעֹבֵ֥ד  אֹתֹֽו׃"
+            }
+          ]
+        },
+        {
+          "quote": "εἰς ἡμέραν, ἣν ἐγὼ ποιῶ, εἰς περιποίησιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:17",
+              "printed": "Καὶ ἔσονταί μοι, λέγει Κύριος παντοκράτωρ, εἰς ἡμέραν, ἣν ἐγὼ ποιῶ, εἰς περιποίησιν, καὶ αἱρετιῶ αὐτοὺς, ὃν τρόπον αἱρετίζει ἄνθρωπος τὸν υἱὸν αὐτοῦ, τὸν δουλεύοντα αὐτῷ."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL03.htm",
+          "printedLabel": "3:17",
+          "quote": "in the day which I appoint for a peculiar possession",
+          "printed": "And they shall be mine, saith the Lord Almighty, in the day which I appoint for a peculiar possession; and I will make choice of them, as a man makes choice of his son that serves him.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 3:17",
+          "quote": "in that day when I make up my jewels",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "εἰς περιποίησιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:17"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "לַיֹּ֕ום אֲשֶׁ֥ר אֲנִ֖י עֹשֶׂ֣ה סְגֻלָּ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:17"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "εἰς ἡμέραν, ἣν ἐγὼ ποιῶ, εἰς περιποίησιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:17"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ליום אשר אני עשה סגלה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:17"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "περιποίησις",
+          "matches": [],
+          "classification": "Researcher nominative lemma; printed form is περιποίησιν. Record held; no lexical inference published."
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "in that day when I make up my jewels",
+          "ref": "Malachi 3:17",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "in the day which I appoint for a peculiar possession",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "in that day when I make up my jewels",
+          "ref": "Malachi 3:17",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "for a peculiar possession",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "in that day when I make up my jewels",
+          "ref": "Malachi 3:17",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "in the day which I appoint for a peculiar possession",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "jewels",
+          "ref": "Malachi 3:17",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "interpretationDecision": "The KJV jewels may describe people as treasured possessions, which can carry the same meaning as peculiar possession. The supplied material establishes different wording but not the real meaning difference required for T. Needs owner: a direct exception or revised Claude evidence showing a meaning difference is required before publication."
+    },
+    {
+      "id": "elijah-the-prophet-and-the-dreadful-day-or-elias-the-thesbite-and-the-glorious-day-malachi-4-5-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 4:5",
+          "quote": "Elijah the prophet",
+          "exact": true
+        },
+        {
+          "ref": "Malachi 4:5",
+          "quote": "the great and dreadful day of the Lord",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "אֵלִיָּ֣ה הַנָּבִ֑יא … הַגָּדֹ֖ול וְהַנֹּורָֽא",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:23",
+              "printed": "הִנֵּ֤ה אָֽנֹכִי֙ שֹׁלֵ֣חַ לָכֶ֔ם אֵ֖ת אֵלִיָּ֣ה הַנָּבִ֑יא לִפְנֵ֗י בֹּ֚וא יֹ֣ום יְהוָ֔ה הַגָּדֹ֖ול וְהַנֹּורָֽא׃"
+            }
+          ]
+        },
+        {
+          "quote": "Ἠλίαν τὸν Θεσβίτην … τὴν ἡμέραν Κυρίου τὴν μεγάλην καὶ ἐπιφανῆ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:22",
+              "printed": "Καὶ ἰδοὺ ἐγὼ ἀποστελῶ ὑμῖν Ἠλίαν τὸν Θεσβίτην, πρὶν ἐλθεῖν τὴν ἡμέραν Κυρίου τὴν μεγάλην καὶ ἐπιφανῆ,"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL03.htm",
+          "printedLabel": "3:22",
+          "quote": "Elias the Thesbite",
+          "printed": "And, behold, I will send to you Elias the Thesbite, before the great and glorious day of the Lord comes;",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/MAL03.htm",
+          "printedLabel": "3:22",
+          "quote": "the great and glorious day of the Lord",
+          "printed": "And, behold, I will send to you Elias the Thesbite, before the great and glorious day of the Lord comes;",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 4:5",
+          "quote": "Elijah the prophet",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "Ἠλίαν τὸν Θεσβίτην",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:22"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "summary",
+          "quote": "τὴν μεγάλην καὶ ἐπιφανῆ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:22"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "אֵלִיָּ֣ה הַנָּבִ֑יא",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:23"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "הַגָּדֹ֖ול וְהַנֹּורָֽא",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:23"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Ἠλίαν τὸν Θεσβίτην",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:22"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "τὴν ἡμέραν Κυρίου τὴν μεγάλην καὶ ἐπιφανῆ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:22"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "אליה הנביא",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:23"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הגדול והנורא",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:23"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "Elijah the prophet",
+          "ref": "Malachi 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the great and dreadful day of the Lord",
+          "ref": "Malachi 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "Elias the Thesbite",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "title",
+          "quote": "the great and glorious day of the Lord",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Elijah the prophet",
+          "ref": "Malachi 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the great and dreadful day of the Lord",
+          "ref": "Malachi 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "Elias the Thesbite",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the great and glorious",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "Elijah the prophet",
+          "ref": "Malachi 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "the great and dreadful day of the Lord",
+          "ref": "Malachi 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Elias the Thesbite",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "the great and glorious day of the Lord",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the prophet",
+          "ref": "Malachi 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "dreadful",
+          "ref": "Malachi 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the Thesbite",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "glorious",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "interpretationDecision": "Preserve the different descriptions while avoiding distinct-person and incompatible-day inferences."
+    },
+    {
+      "id": "prepare-the-way-before-me-or-prepare-thy-way-before-thee-malachi-3-1",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Malachi 3:1",
+          "quote": "he shall prepare the way before me",
+          "exact": true
+        },
+        {
+          "ref": "Matthew 11:10",
+          "quote": "which shall prepare thy way before thee",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וּפִנָּה־דֶ֖רֶךְ לְפָנָ֑י",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:1",
+              "printed": "הִנְנִ֤י שֹׁלֵחַ֙ מַלְאָכִ֔י וּפִנָּה־דֶ֖רֶךְ לְפָנָ֑י וּפִתְאֹם֩ יָבֹ֨וא אֶל־הֵיכָלֹ֜ו הָאָדֹ֣ון ׀ אֲשֶׁר־אַתֶּ֣ם מְבַקְשִׁ֗ים וּמַלְאַ֨ךְ הַבְּרִ֜ית אֲשֶׁר־אַתֶּ֤ם חֲפֵצִים֙ הִנֵּה־בָ֔א אָמַ֖ר יְהוָ֥ה צְבָאֹֽות׃"
+            }
+          ]
+        },
+        {
+          "quote": "πρὸ προσώπου μου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:1",
+              "printed": "Ἰδοὺ ἐξαποστέλλω τὸν ἄγγελόν μου, καὶ ἐπιβλέψεται ὁδὸν πρὸ προσώπου μου, καὶ ἐξαίφνης ἥξει εἰς τὸν ναὸν ἑαυτοῦ Κύριος, ὃν ὑμεῖς ζητεῖτε, καὶ ὁ ἄγγελος τῆς διαθήκης, ὃν ὑμεῖς θέλετε· ἰδοὺ ἔρχεται, λέγει Κύριος παντοκράτωρ,"
+            }
+          ]
+        },
+        {
+          "quote": "ὃς κατασκευάσει τὴν ὁδόν σου",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/11/",
+              "printedLabel": "11:10",
+              "printed": "οὗτός<S>3778</S> ἐστιν<S>1510</S> περὶ<S>4012</S> οὗ<S>3739</S> γέγραπται·<S>1125</S> ἰδοὺ<S>3708</S> ἐγὼ<S>1473</S> ἀποστέλλω<S>649</S> τὸν<S>3588</S> ἄγγελόν<S>32</S> μου<S>1473</S> πρὸ<S>4253</S> προσώπου<S>4383</S> σου,<S>4771</S> ὃς<S>3739</S> κατασκευάσει<S>2680</S> τὴν<S>3588</S> ὁδόν<S>3598</S> σου<S>4771</S> ἔμπροσθέν<S>1715</S> σου.<S>4771</S>"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/11/",
+              "printedLabel": "11:10",
+              "printed": "ουτος γαρ εστιν περι ου γεγραπται ιδου εγω αποστελλω τον αγγελον μου προ προσωπου σου ος κατασκευασει την οδον σου εμπροσθεν σου"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Malachi 3:1",
+          "quote": "he shall prepare the way before me",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Matthew 11:10",
+          "quote": "which shall prepare thy way before thee",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "וּפִנָּה־דֶ֖רֶךְ לְפָנָ֑י",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/39/3/",
+              "printedLabel": "3:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "πρὸ προσώπου μου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MAL03.htm",
+              "printedLabel": "3:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὃς κατασκευάσει τὴν ὁδόν σου",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/11/",
+              "printedLabel": "11:10"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/11/",
+              "printedLabel": "11:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "prepare the way before me",
+          "ref": "Malachi 3:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "prepare thy way before thee",
+          "ref": "Matthew 11:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "shall prepare the way before me",
+          "ref": "Malachi 3:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "which shall prepare thy way before thee",
+          "ref": "Matthew 11:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "he shall prepare the way before me",
+          "ref": "Malachi 3:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "which shall prepare thy way before thee",
+          "ref": "Matthew 11:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the way",
+          "ref": "Malachi 3:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy way",
+          "ref": "Matthew 11:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thee",
+          "ref": "Matthew 11:10",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology",
+          "overlappingRefs": [],
+          "decision": "No duplicate finding in this study."
+        }
+      ],
+      "context": [
+        {
+          "ref": "Matthew 11:10",
+          "quote": "of whom it is written",
+          "exact": true
+        }
+      ],
+      "interpretationDecision": "Correct the denial of quotation framing: Matthew explicitly introduces written scripture. Distinguish grammatical person from different referents."
+    }
+  ],
+  "needsOwner": [
+    {
+      "id": "when-i-make-up-my-jewels-or-for-a-peculiar-possession-malachi-3-17-greek",
+      "file": "nahum-to-malachi-records.json",
+      "decision": "held",
+      "reason": "The KJV jewels may describe people as treasured possessions, which can carry the same meaning as peculiar possession. The supplied material establishes different wording but not the real meaning difference required for T. Needs owner: a direct exception or revised Claude evidence showing a meaning difference is required before publication.",
+      "operation": "hold",
+      "tags": [
+        "T"
+      ],
+      "witness": "Septuagint",
+      "needsOwner": true
+    }
+  ],
+  "normalization": "KJV and sides exact; ellipsis fragments checked individually. Hebrew marks and maqaf and Greek accents/punctuation normalized; every language check retains the supplied address and printed label. Both TISCH and TR checked. Researcher lemma explicitly classified on held record.",
+  "siblingQ": {
+    "complete": true,
+    "records": [
+      "these-are-the-two-anointed-ones-who-are-the-two-anointed-ones-zechariah-4-14",
+      "this-is-a-woman-that-sitteth-in-the-midst-of-the-ephah-who-or-what-is-she-zechariah-5-7",
+      "the-lord-hath-prepared-a-sacrifice-he-hath-bid-his-guests-who-are-the-guests-zephaniah-1-7"
+    ],
+    "action": "Already decided; not reprocessed."
+  }
+}
