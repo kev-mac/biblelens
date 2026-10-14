@@ -18,8 +18,8 @@ for(const mode of ['history','contradictions','science'])context.cache.set(`0:1:
  ...(mode==='contradictions'?[]:[{verse:1,status:'Agrees',summary:'Agreement',sources:[]},{verse:1,status:'Context',summary:'Background',sources:[]}])
 ]});
 const initial=context.render(1);
-assert.equal((initial.match(/ hidden/g)||[]).length,3);
-assert.equal((initial.match(/aria-expanded="false"/g)||[]).length,3);
+assert.equal((initial.match(/ hidden/g)||[]).length,0);
+assert.equal((initial.match(/aria-expanded="true"/g)||[]).length,3);
 assert(!initial.includes('Agreement'));assert(!initial.includes('Background'));
 for(const mode of ['history','contradictions','science'])assert(initial.includes(`class="agreement comparison-tab ${mode}"`));
 const buttons=['history','contradictions','science'].map(mode=>({dataset:{comparisonVerse:'1',comparisonKey:`${mode}-0`},attributes:{},setAttribute(k,v){this.attributes[k]=v;}}));
@@ -39,12 +39,15 @@ assert(!context.visible({mode:'science',status:'Agrees',discrepancy:true}));
 assert(source.includes('function chapterOptions(){comparisonSelections.clear();'));
 context.cache.set('0:1:kjv:contradictions',{items:[{verse:2,status:'Context',tags:['H','G','V','Q'],witness:'Hebrew and Septuagint',title:'Tagged record',summary:'Tagged finding',text:'Limits',sources:[]}]});
 const tagged=context.render(2);
-assert.equal((tagged.match(/aria-expanded="false"/g)||[]).length,3);
+assert.equal((tagged.match(/aria-expanded="true"/g)||[]).length,3);
 for(const [tag,tone]of [['T','translation'],['V','violation'],['Q','question']]){assert(tagged.includes(`class="agreement comparison-tab ${tone}"`));assert(tagged.includes(`data-icon="${{T:'languages',V:'gavel',Q:'circle-question-mark'}[tag]}"`));const key=`contradictions-0-${tag}`;panels.set(`comparison-panel-2-${key}`,{hidden:true});const button={dataset:{comparisonVerse:'2',comparisonKey:key},setAttribute(){}};context.toggle(button);assert.equal(panels.get(`comparison-panel-2-${key}`).hidden,false);context.toggle(button);assert.equal(panels.get(`comparison-panel-2-${key}`).hidden,true);}
 assert(tagged.includes('Hebrew and Septuagint: Tagged finding'));assert(!tagged.includes('>H</button>'));assert(!tagged.includes('>G</button>'));
 for(const witness of ['Hebrew','Septuagint','Hebrew and Septuagint','Greek New Testament']){context.cache.set('0:1:kjv:contradictions',{items:[{verse:2,status:'Context',tags:['T'],witness,summary:'Exact unchanged summary',text:'Limits',sources:[]}]});assert(context.render(2).includes(witness+': Exact unchanged summary'));}
 assert(initial.includes('data-icon="history"'));
-console.log('PASS: initially closed; independent one/multiple/none toggles; agreements/background hidden; category colors; details preserved; chapter reset.');
+vm.runInContext('this.filters=categoryFilters;',context);
+context.cache.set('0:1:kjv:contradictions',{items:[{id:'category-q',verse:2,status:'Context',tags:['Q'],summary:'Category fixture',sources:[]}]});
+context.filters.delete('Q');const categoryOff=context.render(2);assert(categoryOff.includes('data-icon="circle-question-mark"'));assert(categoryOff.includes('comparison-panel-2-contradictions-0-Q'));assert(categoryOff.includes('aria-expanded="false"'));context.filters.add('Q');assert(context.render(2).includes('aria-expanded="true"'));
+console.log('PASS: summaries open by default; category-off retains verse icons; independent toggles, details preservation and chapter reset.');
 
 // Q is a visible Context observation, without fabricating published findings.
 assert(context.visible({mode:'science',status:'Context',tags:['Q']}));
@@ -65,7 +68,7 @@ console.log('PASS: Q tag, accessible label, initially hidden summary, independen
 
 context.cache.set('0:1:kjv:science',{items:[]});
 context.cache.set('0:1:kjv:questions',{items:[{id:'fixture-questions-category',verse:3,status:'Context',tags:['Q'],title:'Fixture unanswered question',summary:'Fixture only',text:'Limits',sources:[],placementRole:'key'},{id:'fixture-questions-category',verse:5,status:'Context',tags:['Q'],title:'Fixture unanswered question',keyTarget:'Genesis 1:3',placementRole:'context'}]});
-const qCard=context.render(3);assert(qCard.includes('Fixture unanswered question'));assert(qCard.includes('comparison-panel-3-questions-0-Q'));assert(qCard.includes('aria-expanded="false"'));assert(context.render(5).includes('Context for:'));assert(source.includes("comparisonModes=['history','contradictions','science','questions']"));
+const qCard=context.render(3);assert(qCard.includes('Fixture unanswered question'));assert(qCard.includes('comparison-panel-3-questions-0-Q'));assert(qCard.includes('aria-expanded="true"'));assert(context.render(5).includes('Context for:'));assert(source.includes("comparisonModes=['history','contradictions','science','questions']"));
 console.log('PASS: independent Questions category participates in reader loading and Q card/context rendering.');
 
 context.cache.set('0:1:kjv:contradictions',{items:[{id:'fixture-targeted-greek',verse:6,status:'Textual conflict',tags:['G'],activeTags:[],title:'Fixture KJV contrast',summary:'Fixture only',text:'Limits',sources:[]}]});const untargeted=context.render(6);assert(untargeted.includes('data-icon="fold-horizontal"'));assert(!untargeted.includes('>G</button>'));

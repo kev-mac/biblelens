@@ -14,8 +14,8 @@ function readRef(ref){const m=/^(.*?) (\d+):(\d+)/.exec(ref);const book=m&&books
 function chapterStudies(){if(!reading)return [];return ENTRIES.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter}));}
 function applicableStudies(){const entries=chapterStudies();if(!selectedVerses.size)return entries;const matching=entries.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter&&selectedVerses.has(p.verse)}));return matching.length?matching:entries;}
 function chapterOptions(){comparisonSelections.clear();comparisonRecordSelections.clear();comparisonHighlightOrder.clear();const book=books[readingBook];$('#chapter-select').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===readingChapter?'selected':''}>${i+1}</option>`).join('');$('#book-select').value=String(readingBook);}
-function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;$('#reader-picker').setAttribute('aria-label',`Reader settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;for(const id of ['#prev-bottom','#edge-prev'])$(id).disabled=first;for(const id of ['#next-bottom','#edge-next'])$(id).disabled=last;}
-async function loadChapter(book,ch,verse=null,updateHash=true){const b=books[book];if(!b||!Number.isInteger(ch)||ch<1||ch>b.chapters)return;const version=++loadVersion;readingBook=book;readingChapter=ch;selectedVerses.clear();chapterOptions();$('#reader-status').textContent='Loading chapter…';$('#chapter-text').innerHTML='<p class="chapter-loading">Loading chapter…</p>';$('#comparison-status').hidden=true;try{const response=await fetch(`/api/chapter?book=${book}&chapter=${ch}`);if(!response.ok)throw Error('Chapter could not be loaded');const data=await response.json();if(version!==loadVersion)return;reading=data;if(verse&&data.verses.some(v=>v.n===verse))selectedVerses.add(verse);state.reading={book,chapter:ch};persist();renderReader();if(updateHash)history.replaceState(null,'',`#read/${book}/${ch}${verse?'/'+verse:''}`);if(verse)requestAnimationFrame(()=>$(`#verse-${verse}`)?.scrollIntoView({block:'center',behavior:'smooth'}));else window.scrollTo({top:0,behavior:'instant'});}catch(err){if(version!==loadVersion)return;reading=null;$('#chapter-text').innerHTML='<div class="reader-error"><p>Could not load this chapter.</p><button id="retry-chapter" class="primary">Retry</button></div>';$('#retry-chapter').onclick=()=>loadChapter(book,ch,verse,updateHash);$('#reader-status').textContent='Chapter unavailable. Try again.';}}
+function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;$('#reader-picker').setAttribute('aria-label',`Reader settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;$('#edge-prev').setAttribute('data-boundary',String(first));$('#edge-next').setAttribute('data-boundary',String(last));}
+async function loadChapter(book,ch,verse=null,updateHash=true){const b=books[book];if(!b||!Number.isInteger(ch)||ch<1||ch>b.chapters)return;stagePassageDock();const version=++loadVersion;readingBook=book;readingChapter=ch;selectedVerses.clear();chapterOptions();$('#reader-status').textContent='Loading chapter…';$('#chapter-text').innerHTML='<p class="chapter-loading">Loading chapter…</p>';$('#comparison-status').hidden=true;try{const response=await fetch(`/api/chapter?book=${book}&chapter=${ch}`);if(!response.ok)throw Error('Chapter could not be loaded');const data=await response.json();if(version!==loadVersion)return;reading=data;if(verse&&data.verses.some(v=>v.n===verse))selectedVerses.add(verse);state.reading={book,chapter:ch};persist();renderReader();if(updateHash)history.replaceState(null,'',`#read/${book}/${ch}${verse?'/'+verse:''}`);if(verse)requestAnimationFrame(()=>$(`#verse-${verse}`)?.scrollIntoView({block:'center',behavior:'smooth'}));else window.scrollTo({top:0,behavior:'instant'});}catch(err){if(version!==loadVersion)return;reading=null;$('#chapter-text').innerHTML='<div class="reader-error"><p>Could not load this chapter.</p><button id="retry-chapter" class="primary">Retry</button></div>';$('#retry-chapter').onclick=()=>loadChapter(book,ch,verse,updateHash);$('#reader-status').textContent='Chapter unavailable. Try again.';}}
 const comparisonCache=new Map();
 const comparisonSelections=new Map();
 const categoryFilters=new Set(['T','V','Q','science','history','contradictions']);
@@ -122,11 +122,11 @@ function comparisonCell(verse){
  if(!items.length)return '<div class="comparison-cell" aria-label="No comparison attached"></div>';
  const choices=items.flatMap(item=>{const tags=recordTags(item);return tags.length?tags.map(tag=>({...item,tag,key:`${item.key}-${tag}`})):item.mode==='questions'?[{...item,tag:'Q',key:`${item.key}-Q`}]:[item];});
  const selected=comparisonSelections.get(selectionKey(verse))||new Set();
- const isOpen=item=>comparisonRecordSelections.get(recordSelection(item))??selected.has(item.key);
+ const isOpen=item=>categoryFilters.has(filterCategory(item))&&(comparisonRecordSelections.get(recordSelection(item))??true);
  const tone=comparisonTone;
  const category=item=>languageTags[item.tag]?.label||comparisonLabels[item.mode];
  const icon=comparisonIcon;
- const shownChoices=choices.sort((a,b)=>categoryRank(a)-categoryRank(b)).filter(item=>categoryFilters.has(filterCategory(item)));
+ const shownChoices=choices.sort((a,b)=>categoryRank(a)-categoryRank(b));
  const tabs=shownChoices.map(item=>{const duplicate=choices.filter(i=>category(i)===category(item)).length>1;const label=`${category(item)}${item.status?' · '+item.status:''}${item.placementRole==='context'?' · Supporting context':''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;const open=isOpen(item);return `<button type="button" class="agreement comparison-tab ${tone(item)}${item.placementRole==='context'?' context-tag':''}" id="comparison-tab-${verse}-${item.key}" aria-pressed="${open}" aria-expanded="${open}" aria-controls="comparison-panel-${verse}-${item.key}" data-comparison-record="${esc(recordSelection(item))}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${item.placementRole==='context'?'':icon(item)}</button>`});
  const panels=shownChoices.map(active=>active.placementRole==='context'?`<div class="comparison-panel context-pointer" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${isOpen(active)?'':'hidden'}>Context for: <a href="#read/${Object.values(readRef(active.keyTarget)||{}).join('/')}" title="${esc(active.title||active.ref)}">${esc(active.title||active.ref)}</a></div>`:`<section class="verse-comparison comparison-panel" data-tone="${tone(active)}" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${isOpen(active)?'':'hidden'}>${sideRows(active)}${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(summaryText(active))}</p>${active.placementRole?roleCitations(active):comparisonCitations(verse,[active])}<details class="comparison-details"><summary>Details & sources</summary>${active.tag==='T'?`<p class="language-context">${esc(active.witness)}</p>`:''}<p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${alternativeReadings(verse)}${active.reasoning?`<p><b>Reasoning:</b> ${esc(active.reasoning)}</p>`:''}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details></section>`).join('');
  return `<div class="comparison-cell"><div class="comparison-tabs" role="group" aria-label="Comparisons for verse ${verse}"><span class="primary-tags">${tabs.filter((_,i)=>shownChoices[i].placementRole!=='context').join('')}</span><span class="context-tags">${tabs.filter((_,i)=>shownChoices[i].placementRole==='context').join('')}</span></div>${panels}</div>`;
@@ -134,7 +134,7 @@ function comparisonCell(verse){
 function selectComparison(button){
  const verse=Number(button.dataset.comparisonVerse),key=button.dataset.comparisonKey;
  const selected=comparisonSelections.get(selectionKey(verse))||new Set();
- const wasOpen=button.dataset.comparisonRecord?(comparisonRecordSelections.get(button.dataset.comparisonRecord)??selected.has(key)):selected.has(key);
+ const wasOpen=button.dataset.comparisonRecord?(comparisonRecordSelections.get(button.dataset.comparisonRecord)??true):selected.has(key);
  if(wasOpen)selected.delete(key);else selected.add(key);
  comparisonSelections.set(selectionKey(verse),selected);
  const open=selected.has(key);if(button.dataset.comparisonRecord){comparisonRecordSelections.set(button.dataset.comparisonRecord,open);for(const peer of document.querySelectorAll?.('[data-comparison-record]')||[]){if(peer.dataset.comparisonRecord!==button.dataset.comparisonRecord)continue;peer.setAttribute('aria-pressed',String(open));peer.setAttribute('aria-expanded',String(open));const peerSet=comparisonSelections.get(selectionKey(Number(peer.dataset.comparisonVerse)))||new Set();if(open)peerSet.add(peer.dataset.comparisonKey);else peerSet.delete(peer.dataset.comparisonKey);comparisonSelections.set(selectionKey(Number(peer.dataset.comparisonVerse)),peerSet);const peerPanel=document.getElementById(peer.getAttribute('aria-controls'));if(peerPanel)peerPanel.hidden=!open;}}button.setAttribute('aria-pressed',String(open));button.setAttribute('aria-expanded',String(open));
@@ -143,8 +143,16 @@ function selectComparison(button){
  if(open)comparisonHighlightOrder.set(record,++comparisonHighlightSequence);else comparisonHighlightOrder.delete(record);
  refreshVerseHighlights();
 }
+function toggleComparisonCategory(key){
+ const open=!categoryFilters.has(key);if(open)categoryFilters.add(key);else categoryFilters.delete(key);
+ for(const v of reading.verses)for(const item of verseComparisons(v.n)){
+  const tags=recordTags(item),choices=tags.length?tags.map(tag=>({...item,tag,key:`${item.key}-${tag}`})):[item];
+  for(const choice of choices)if(filterCategory(choice)===key){comparisonRecordSelections.set(recordSelection(choice),open);if(open)comparisonHighlightOrder.set(recordSelection(choice),++comparisonHighlightSequence);else comparisonHighlightOrder.delete(recordSelection(choice));}
+ }
+ renderReader(true);
+}
 document.addEventListener('click',ev=>{
- const filter=ev.target.closest('[data-category-filter]');if(filter){const key=filter.dataset.categoryFilter;if(categoryFilters.has(key))categoryFilters.delete(key);else categoryFilters.add(key);renderReader(true);document.querySelector(`[data-category-filter="${key}"]`)?.focus({preventScroll:true});return;}
+ const filter=ev.target.closest('[data-category-filter]');if(filter){const key=filter.dataset.categoryFilter;toggleComparisonCategory(key);document.querySelector(`[data-category-filter="${key}"]`)?.focus({preventScroll:true});return;}
  const expand=ev.target.closest('[data-context-expand],[data-context-collapse]');if(expand){expandContext(expand);return;}
  const tab=ev.target.closest('[data-comparison-key]');if(tab){selectComparison(tab);return;}
 });
@@ -156,7 +164,7 @@ function scriptureHtml(v,edition,book=readingBook,ch=readingChapter){
  const targets=edition==='kjv'&&book===readingBook&&ch===readingChapter&&$('#reader-compare').value!=='none'?verseComparisons(v.n).flatMap(item=>{
   const tags=recordTags(item),choices=tags.length?tags.map(tag=>({...item,tag,key:`${item.key}-${tag}`})):[item];
   const selected=comparisonSelections.get(selectionKey(v.n))||new Set();
-  return choices.filter(choice=>categoryFilters.has(filterCategory(choice))&&(comparisonRecordSelections.get(recordSelection(choice))??selected.has(choice.key))).flatMap(choice=>quoteRanges(text,(choice.sides||[]).filter(s=>s.ref===ref).map(s=>s.quote)).map(([a,b])=>({a,b,tone:comparisonTone(choice),order:comparisonHighlightOrder.get(recordSelection(choice))||comparisonHighlightOrder.get(`${v.n}:${choice.key}`)||0})));
+  return choices.filter(choice=>categoryFilters.has(filterCategory(choice))&&(comparisonRecordSelections.get(recordSelection(choice))??true)).flatMap(choice=>quoteRanges(text,(choice.sides||[]).filter(s=>s.ref===ref).map(s=>s.quote)).map(([a,b])=>({a,b,tone:comparisonTone(choice),order:comparisonHighlightOrder.get(recordSelection(choice))||comparisonHighlightOrder.get(`${v.n}:${choice.key}`)||0})));
  }):[];
  const points=[...new Set([0,text.length,...red.flat(),...targets.flatMap(t=>[t.a,t.b])])].sort((a,b)=>a-b);
  const segments=points.slice(0,-1).map((a,i)=>{const b=points[i+1],target=targets.filter(t=>a>=t.a&&b<=t.b).sort((x,y)=>y.order-x.order)[0];return {a,b,tone:target?.tone,red:red.some(([x,y])=>a>=x&&b<=y)};});
@@ -168,8 +176,8 @@ function refreshVerseHighlights(){
  const edition=$('#reader-edition').value;
  for(const verse of reading.verses){const body=document.getElementById(`verse-${verse.n}`)?.querySelector?.('.verse-body');if(body&&verse[edition])body.innerHTML=verseNumber(verse)+scriptureHtml(verse,edition);}
 }
-function verseNumber(v){return `<button class="verse-num" data-verse="${v.n}" aria-label="${selectedVerses.has(v.n)?'Deselect':'Select'} verse ${v.n}" aria-pressed="${selectedVerses.has(v.n)}">${v.n}</button>`;}
-function verseText(v,edition){return `<div class="verse-body" tabindex="0" aria-label="Verse ${v.n}. Hold or press Enter for WEB translation">${verseNumber(v)}${v[edition]?scriptureHtml(v,edition):'<span class="missing-verse">This verse number is absent from the supplied edition’s dataset.</span>'}</div>`;}
+function verseNumber(v){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<button class="verse-num${saved?' verse-bookmarked':''}" data-verse="${v.n}" aria-label="${selectedVerses.has(v.n)?'Deselect':'Select'} verse ${v.n}${saved?', bookmarked':''}" aria-pressed="${selectedVerses.has(v.n)}">${v.n}</button>`;}
+function verseText(v,edition){const highlighted=!!state.verseHighlights?.[`${readingBook}:${readingChapter}:${v.n}`];return `<div class="verse-body${highlighted?' verse-highlighted':''}" tabindex="0" aria-label="Verse ${v.n}. Hold or press Enter for verse actions and WEB translation">${verseNumber(v)}${v[edition]?scriptureHtml(v,edition):'<span class="missing-verse">This verse number is absent from the supplied edition’s dataset.</span>'}</div>`;}
 function comparisonStatus(){
  const mode=$('#reader-compare').value,status=$('#comparison-status');status.hidden=mode==='none';if(mode==='none'){status.innerHTML='';return;}
  const records=comparisonModes.map(m=>comparisonCache.get(comparisonKey(m)));
@@ -196,14 +204,41 @@ async function ensureComparisons(){
  comparisonStatus();if(!jobs.length)return;await Promise.all(jobs);
  if(reading&&book===readingBook&&ch===readingChapter&&edition===$('#reader-edition').value)renderReader(true);
 }
-function readerQuestionForm(){return `<form id="reader-question-form" autocomplete="off" class="reader-question-form"><input id="reader-question" type="text" autocomplete="off" maxlength="2500" required aria-label="Ask about the Bible" placeholder="Ask about the Bible..." value="${esc(readerQuestionDraft)}" ${chatBusy?'disabled':''}><button type="submit" class="reader-question-submit" aria-label="Send question" title="Send question" ${chatBusy?'disabled':''}><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></form>`;}
+function readerQuestionForm(){return `<form id="reader-question-form" autocomplete="off" class="reader-question-form"><button type="button" class="passage-picker-trigger" aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14m-10-3V3h6a4 4 0 0 1 4 4 4 4 0 0 1 4-4h6v15h-6a4 4 0 0 0-4 3 4 4 0 0 0-4-3Z"/></svg></button><input id="reader-question" type="text" autocomplete="off" maxlength="2500" required aria-label="Ask about the Bible" placeholder="Ask about the Bible..." value="${esc(readerQuestionDraft)}" ${chatBusy?'disabled':''}><button type="submit" class="reader-question-submit" aria-label="Send question" title="Send question" ${chatBusy?'disabled':''}><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></form>`;}
 function submitReaderQuestion(ev){ev.preventDefault();if(chatBusy||!reading)return;const question=$('#reader-question').value.trim();if(!question)return;readerQuestionDraft=question;$('#chat-input').value=question;setView('chat');window.scrollTo({top:0,behavior:'instant'});$('#chat-form').requestSubmit();readerQuestionDraft='';}
 document.addEventListener('input',ev=>{if(ev.target.id==='reader-question')readerQuestionDraft=ev.target.value;});
 document.addEventListener('submit',ev=>{if(ev.target.id==='reader-question-form')submitReaderQuestion(ev);});
 document.addEventListener('keydown',ev=>{if(ev.target.id==='reader-question'&&ev.key==='Enter'&&!ev.shiftKey){ev.preventDefault();ev.target.closest('form').requestSubmit();}});
-function renderReader(preserve=false){if(!reading)return;const scroll=window.scrollY;const edition=$('#reader-edition').value,mode=$('#reader-compare').value;const comparing=mode!=='none';const label={history:'Historic',contradictions:'Contradictions',science:'Scientific',questions:'Unanswered Questions'}[mode];$('#chapter-text').classList.toggle('with-comparisons',comparing);$('#chapter-text').innerHTML=`<div class="chapter-heading-row"><h2>${esc(reading.name)} ${reading.chapter}</h2><p class="chapter-subtitle">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p>${readerQuestionForm()}</div>${reading.verses.map(v=>`<div class="verse ${selectedVerses.has(v.n)?'selected':''}" id="verse-${v.n}"><div class="verse-content-grid ${comparing?'is-comparing':''}">${verseText(v,edition)}${comparing?comparisonCell(v.n):''}</div></div>`).join('')}`;updateContext();comparisonStatus();if(preserve)requestAnimationFrame(()=>window.scrollTo({top:scroll,behavior:'instant'}));ensureComparisons();}
+function renderReader(preserve=false){if(!reading)return;stagePassageDock();const scroll=window.scrollY;const edition=$('#reader-edition').value,mode=$('#reader-compare').value;const comparing=mode!=='none';const label={history:'Historic',contradictions:'Contradictions',science:'Scientific',questions:'Unanswered Questions'}[mode];$('#chapter-text').classList.toggle('with-comparisons',comparing);$('#chapter-text').innerHTML=`<div class="chapter-heading-row"><div class="passage-heading"><div><h2>${esc(reading.name)} ${reading.chapter}</h2><p class="passage-eyebrow passage-description">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p></div><button class="chapter-round passage-bookmark" data-passage-save aria-label="Save this passage" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg></button></div><p class="chapter-subtitle">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p>${readerQuestionForm()}</div>${reading.verses.map(v=>`<div class="verse ${selectedVerses.has(v.n)?'selected':''}" id="verse-${v.n}"><div class="verse-content-grid ${comparing?'is-comparing':''}">${verseText(v,edition)}${comparing?comparisonCell(v.n):''}</div></div>`).join('')}`;updateContext();comparisonStatus();syncPassageTools();if(preserve)requestAnimationFrame(()=>window.scrollTo({top:scroll,behavior:'instant'}));ensureComparisons();}
 $('#reader-compare').onclick=()=>{readerPreferences.compare=readerPreferences.compare==='none'?'on':'none';state.readerPreferences=readerPreferences;comparisonSelections.clear();comparisonRecordSelections.clear();comparisonHighlightOrder.clear();updateCompareToggle();persist();renderReader(true);};
-function moveChapter(direction){let book=readingBook,ch=readingChapter+direction;if(ch<1&&book>0){book--;ch=books[book].chapters}else if(ch>books[book].chapters&&book<books.length-1){book++;ch=1}loadChapter(book,ch);}
+let chapterPaging=false;
+function chapterPagingBlocked(){return view!=='explore'||!!document.querySelector('dialog[open],.verse-preview:not([hidden])');}
+async function chapterMotion(frames,duration){
+ const article=$('#chapter-text');
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches||!article.animate)return;
+ const animation=article.animate(frames,{duration,easing:'cubic-bezier(0.25, 1, 0.5, 1)'});
+ try{await animation.finished;}catch{}finally{animation.cancel();}
+}
+async function moveChapter(direction){
+ if(chapterPaging||chapterPagingBlocked()||!books.length||!reading)return;
+ let book=readingBook,ch=readingChapter+direction;
+ if(ch<1&&book>0){book--;ch=books[book].chapters}
+ else if(ch>books[book].chapters&&book<books.length-1){book++;ch=1}
+ chapterPaging=true;
+ try{
+  if(ch<1||ch>books[book].chapters){
+   toast(direction<0?'You are at the first chapter.':'You are at the last chapter.');
+   const x=direction<0?8:-8;
+   await chapterMotion([{transform:'translate3d(0,0,0)'},{transform:`translate3d(${x}px,0,0)`},{transform:`translate3d(${-x*5/8}px,0,0)`},{transform:'translate3d(0,0,0)'}],300);
+   return;
+  }
+  const version=loadVersion;
+  await chapterMotion([{transform:'translate3d(0,0,0)',opacity:1},{transform:`translate3d(${-direction*12}%,0,0)`,opacity:0}],120);
+  if(version!==loadVersion||chapterPagingBlocked())return;
+  await loadChapter(book,ch);
+  if(loadVersion===version+1)await chapterMotion([{transform:`translate3d(${direction*12}%,0,0)`,opacity:0},{transform:'translate3d(0,0,0)',opacity:1}],220);
+ }finally{chapterPaging=false;}
+}
 $('#book-select').onchange=ev=>loadChapter(Number(ev.target.value),1);$('#chapter-select').onchange=ev=>loadChapter(readingBook,Number(ev.target.value));for(const [id,key]of [['#reader-edition','edition']])$(id).onchange=()=>{readerPreferences[key]=$(id).value;if(key==='compare')comparisonSelections.clear();state.readerPreferences=readerPreferences;persist();renderReader(true)};for(const id of ['#prev-bottom'])$(id).onclick=()=>moveChapter(-1);for(const id of ['#next-bottom'])$(id).onclick=()=>moveChapter(1);function applyTextSize(){
  if(state.textScaleBaseline!=='110-v2'){state.textScale=1;state.textScaleBaseline='110-v2';persist();}
  const scale=[0.9,1,1.1,1.2,1.3].includes(state.textScale)?state.textScale:1;
@@ -230,6 +265,28 @@ document.addEventListener('keydown',ev=>{if(ev.key==='Tab')document.body.classLi
 document.addEventListener('pointerdown',()=>document.body.classList.remove('keyboard-navigation'));
 
 // Reuse the same controls and handlers in the mobile sheet and desktop row.
+// Passage navigation uses a separate glass dialog so reader settings stay independent.
+let passagePicker=null,passagePickerRequest=0;
+async function updatePassagePickerVerses(preferred=1){
+ const book=Number($('#passage-book').value),chapter=Number($('#passage-chapter').value),request=++passagePickerRequest;
+ const field=$('#passage-verse');field.disabled=true;$('#passage-go').disabled=true;field.innerHTML='<option>Loading…</option>';
+ try{const response=await fetch(`/api/chapter?book=${book}&chapter=${chapter}`);if(!response.ok)throw Error();const data=await response.json();if(request!==passagePickerRequest)return;
+  field.innerHTML=data.verses.map(v=>`<option value="${v.n}" ${v.n===preferred?'selected':''}>${v.n}</option>`).join('');field.disabled=false;$('#passage-go').disabled=false;
+ }catch{if(request===passagePickerRequest)field.innerHTML='<option>Could not load verses</option>';}
+}
+function updatePassagePickerChapters(chapter=1){const book=books[Number($('#passage-book').value)];$('#passage-chapter').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===chapter?'selected':''}>${i+1}</option>`).join('');}
+function openPassagePicker(){
+ if(!books.length)return;
+ if(!passagePicker){passagePicker=document.createElement('dialog');passagePicker.id='passage-picker';passagePicker.className='glass-dialog';passagePicker.setAttribute('aria-labelledby','passage-picker-title');
+  passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><label>Book<select id="passage-book"></select></label><div class="passage-picker-fields"><label>Chapter<select id="passage-chapter"></select></label><label>Verse<select id="passage-verse"></select></label></div><button type="submit" id="passage-go" class="primary">Read passage</button></form>';document.body.append(passagePicker);
+  $('#passage-book').onchange=()=>{updatePassagePickerChapters();updatePassagePickerVerses();};$('#passage-chapter').onchange=()=>updatePassagePickerVerses();
+  passagePicker.querySelector('[data-picker-close]').onclick=()=>passagePicker.close();
+  $('#passage-picker-form').onsubmit=ev=>{ev.preventDefault();if($('#passage-go').disabled)return;const b=Number($('#passage-book').value),ch=Number($('#passage-chapter').value),v=Number($('#passage-verse').value);passagePicker.close();setView('explore',false);loadChapter(b,ch,v);};
+  passagePicker.addEventListener('close',()=>{passagePickerRequest++;document.querySelector('.passage-picker-trigger')?.focus({preventScroll:true});});
+ }
+ $('#passage-book').innerHTML=books.map(b=>`<option value="${b.id}" ${b.id===readingBook?'selected':''}>${esc(b.name)}</option>`).join('');updatePassagePickerChapters(readingChapter);updatePassagePickerVerses([...selectedVerses][0]||1);passagePicker.showModal();
+}
+document.addEventListener('click',ev=>{if(ev.target.closest('.passage-picker-trigger'))openPassagePicker();});
 const readerSheet=$('#reader-settings'),readerToolbar=document.querySelector('.reader-toolbar');
 const mobileReader=matchMedia('(max-width:600px)');
 function placeReaderControls(){if(!mobileReader.matches&&readerSheet.open)readerSheet.close();$(mobileReader.matches?'#reader-settings-controls':'#reader-toolbar-home').append(readerToolbar);}
@@ -239,16 +296,50 @@ $('#reader-settings-close').onclick=()=>readerSheet.close();
 readerSheet.addEventListener('close',()=>$('#reader-picker').setAttribute('aria-expanded','false'));
 readerSheet.addEventListener('click',ev=>{if(ev.target===readerSheet){const r=readerSheet.getBoundingClientRect();if(ev.clientX<r.left||ev.clientX>r.right||ev.clientY<r.top||ev.clientY>r.bottom)readerSheet.close();}});
 
-// Edge controls stay visually quiet until tapped, then accept a second tap to page.
+// Edge controls and article gestures share the chapter dispatcher.
 (() => {
- let hideTimer;
+ const article=$('#chapter-text');
+ let gesture=null,suppressClickUntil=0;
  const buttons=[[$('#edge-prev'),-1],[$('#edge-next'),1]];
- function hide(){for(const [button]of buttons){button.classList.remove('revealed');button.setAttribute('aria-label',button.id==='edge-prev'?'Show previous chapter control':'Show next chapter control');}}
- for(const [button,direction]of buttons)button.addEventListener('click',()=>{
-  if(!button.classList.contains('revealed')){hide();button.classList.add('revealed');button.setAttribute('aria-label',direction<0?'Previous chapter':'Next chapter');clearTimeout(hideTimer);hideTimer=setTimeout(hide,2800);return;}
-  clearTimeout(hideTimer);hide();moveChapter(direction);
- });
- document.addEventListener('pointerdown',ev=>{if(!ev.target.closest('.edge-page'))hide();});
+ function feedback(button,x,y){
+  if(chapterPagingBlocked())return;
+  const ripple=document.createElement('span');ripple.className='edge-ripple';ripple.setAttribute('aria-hidden','true');
+  const rect=button.getBoundingClientRect();
+  ripple.style.left=(x-rect.left)+'px';ripple.style.top=(y-rect.top)+'px';button.append(ripple);
+  setTimeout(()=>ripple.remove(),300);
+  button.classList.remove('edge-pulse');void button.offsetWidth;button.classList.add('edge-pulse');
+  clearTimeout(button.pulseTimer);button.pulseTimer=setTimeout(()=>button.classList.remove('edge-pulse'),300);
+ }
+ for(const [button,direction]of buttons){
+  button.setAttribute('aria-label',direction<0?'Previous chapter':'Next chapter');
+  button.addEventListener('touchstart',ev=>{
+   if(ev.touches.length!==1)return;
+   const touch=ev.touches[0];button.feedbackAt=Date.now();feedback(button,touch.clientX,touch.clientY);
+  },{passive:true});
+  button.addEventListener('click',ev=>{
+   if(Date.now()-(button.feedbackAt||0)>700){const rect=button.getBoundingClientRect();feedback(button,ev.detail?ev.clientX:rect.left+rect.width/2,ev.detail?ev.clientY:rect.top+rect.height/2);}
+   moveChapter(direction);
+  });
+ }
+ const selectionActive=()=>!!window.getSelection()?.toString();
+ article.addEventListener('touchstart',ev=>{
+  gesture=null;
+  if(ev.touches.length!==1||chapterPagingBlocked()||chapterPaging||selectionActive()||ev.target.closest('button,a,input,textarea,select,[contenteditable],.comparison-panel,.verse-preview'))return;
+  const touch=ev.touches[0];gesture={x:touch.clientX,y:touch.clientY,time:Date.now()};
+ },{passive:true});
+ article.addEventListener('touchmove',ev=>{
+  if(!gesture)return;
+  if(ev.touches.length!==1||Math.abs(ev.touches[0].clientY-gesture.y)>=30)gesture=null;
+ },{passive:true});
+ article.addEventListener('touchcancel',()=>{gesture=null;},{passive:true});
+ article.addEventListener('touchend',ev=>{
+  const start=gesture;gesture=null;
+  if(!start||ev.touches.length||ev.changedTouches.length!==1||Date.now()-start.time>650||selectionActive()||chapterPagingBlocked())return;
+  const touch=ev.changedTouches[0],dx=touch.clientX-start.x,dy=touch.clientY-start.y;
+  if(Math.abs(dx)<50||Math.abs(dy)>=30)return;
+  suppressClickUntil=Date.now()+500;moveChapter(dx<0?1:-1);
+ },{passive:true});
+ article.addEventListener('click',ev=>{if(Date.now()<suppressClickUntil){ev.preventDefault();ev.stopImmediatePropagation();}},true);
 })();
 
 // The category tray can collapse to a small chevron while remaining available.

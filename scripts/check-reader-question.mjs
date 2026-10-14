@@ -6,5 +6,7 @@ listeners.input({target:{id:'reader-question',value:'Changed draft'}});assert.ma
 let prevented=false;c.submitReaderQuestion({preventDefault(){prevented=true}});assert(prevented);assert.equal(nodes.view,'chat');assert.equal(nodes['#chat-input'].value,'Explain verse 6');assert.equal(nodes.submits,1);assert.equal(c.readerQuestionDraft,'');
 c.chatBusy=true;c.submitReaderQuestion({preventDefault(){}});assert.equal(nodes.submits,1);assert.match(c.readerQuestionForm(),/disabled/);
 assert.match(before,/<input[^>]+type="text"/);assert.doesNotMatch(before,/<textarea|<label/);assert.match(before,/aria-label="Send question"/);
-assert.match(source,/<div class="chapter-heading-row"><h2>.*?<\/h2><p class="chapter-subtitle">.*?<\/p>\$\{readerQuestionForm\(\)\}<\/div>/);
+assert.match(source,/<div class="chapter-heading-row"><div class="passage-heading">/);
+assert.match(source,/data-passage-save/);
+assert.match(source,/\$\{readerQuestionForm\(\)\}<\/div>/);
 console.log('PASS: inline chapter question preserves drafts, selected context, existing Ask submission and busy guard.');
