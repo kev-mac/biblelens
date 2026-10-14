@@ -22,8 +22,8 @@ const categoryFilters=new Set(['T','V','Q','science','history','contradictions']
 function filterCategory(item){return item.tag|| (item.mode==='questions'?'Q':item.mode);}
 function categoryRank(item){return ['T','V','Q','science','history','contradictions'].indexOf(filterCategory(item));}
 const comparisonModes=['history','contradictions','science','questions'];
-const comparisonLabels={history:'Historic',contradictions:'Contradictions',science:'Scientific',questions:'Unanswered Questions'};
-const languageTags={T:{label:'Translation',tone:'translation'},V:{label:'Law violation',tone:'violation'},Q:{label:'Unanswered question',tone:'question'}};
+const comparisonLabels={history:'History',contradictions:'Contradictions',science:'Science',questions:'Unanswered Questions'};
+const languageTags={T:{label:'Translation',tone:'translation'},V:{label:'Violation',tone:'violation'},Q:{label:'Unanswered question',tone:'question'}};
 function recordTags(item){return [...new Set(Array.isArray(item.activeTags)?item.activeTags:Array.isArray(item.tags)?item.tags:item.tag?[item.tag]:[])].map(t=>['H','G'].includes(t)?'T':t).filter((t,i,a)=>languageTags[t]&&a.indexOf(t)===i);}
 function witnessLabel(item){return (item.tags||[item.tag]).some(t=>['H','G','T'].includes(t))&&item.witness?item.witness+': ':'';}
 function summaryText(item){return witnessLabel(item)+(item.summary||item.text||'');}
@@ -41,7 +41,56 @@ function recordSelection(item){return `${item.id||item.key}:${item.tag||item.mod
 const BOOK_CITATION_ABBREVIATIONS='Gen Exo Lev Num Deu Jos Jud Rut 1Sam 2Sam 1Kin 2Kin 1Chr 2Chr Ezr Neh Est Job Psa Pro Ecc Son Isa Jer Lam Eze Dan Hos Joe Amo Oba Jon Mic Nah Hab Zep Hag Zec Mal Mat Mar Luk Joh Act Rom 1Cor 2Cor Gal Eph Phi Col 1The 2The 1Tim 2Tim Tit Phm Heb Jam 1Pet 2Pet 1Joh 2Joh 3Joh Jud Rev'.split(' ');
 function compactCitation(p,label){const name=books[p.book]?.name;return name&&label.startsWith(name+' ')?BOOK_CITATION_ABBREVIATIONS[p.book]+label.slice(name.length):label;}
 function comparisonTone(item){return languageTags[item.tag]?.tone||(item.mode==='questions'?'question':item.mode);}
-function comparisonIcon(item){return item.tag||(item.mode==='history'?'↶':comparisonLabels[item.mode][0]);}
+/* Category SVGs: Lucide, ISC. Source paths unchanged; common stroke-width 2.
+ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+const CATEGORY_ICON_PATHS={"T":"<path d=\"m5 8 6 6\" />\n  <path d=\"m4 14 6-6 2-3\" />\n  <path d=\"M2 5h12\" />\n  <path d=\"M7 2h1\" />\n  <path d=\"m22 22-5-10-5 10\" />\n  <path d=\"M14 18h6\" />","V":"<path d=\"m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381\" />\n  <path d=\"m16 16 6-6\" />\n  <path d=\"m21.5 10.5-8-8\" />\n  <path d=\"m8 8 6-6\" />\n  <path d=\"m8.5 7.5 8 8\" />","Q":"<circle cx=\"12\" cy=\"12\" r=\"10\" />\n  <path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\" />\n  <path d=\"M12 17h.01\" />","science":"<circle cx=\"12\" cy=\"12\" r=\"1\" />\n  <path d=\"M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z\" />\n  <path d=\"M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z\" />","history":"<path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\" />\n  <path d=\"M3 3v5h5\" />\n  <path d=\"M12 7v5l4 2\" />","contradictions":"<path d=\"M2 12h6\" />\n  <path d=\"M22 12h-6\" />\n  <path d=\"M12 2v2\" />\n  <path d=\"M12 8v2\" />\n  <path d=\"M12 14v2\" />\n  <path d=\"M12 20v2\" />\n  <path d=\"m19 9-3 3 3 3\" />\n  <path d=\"m5 15 3-3-3-3\" />"};
+const CATEGORY_ICON_NAMES={"T":"languages","V":"gavel","Q":"circle-question-mark","science":"atom","history":"history","contradictions":"fold-horizontal"};
+function categoryIcon(key){const normalized=key==='questions'?'Q':key;return `<svg class="category-icon" data-icon="${CATEGORY_ICON_NAMES[normalized]}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${CATEGORY_ICON_PATHS[normalized]}</svg>`;}
+function comparisonIcon(item){return categoryIcon(filterCategory(item));}
 function referenceLink(ref,label,contextItem){const p=typeof ref==='string'?readRef(ref):ref;if(!p)return '';const full=label||ref.label||(typeof ref==='string'?ref:`${books[p.book]?.name} ${p.chapter}:${p.verse}`);return `<a class="verse-citation${contextItem?' context-source':''}" href="#read/${p.book}/${p.chapter}/${p.verse}" data-cite="${p.book}/${p.chapter}/${p.verse}" data-cite-end="${p.end||p.verse}" data-cite-label="${esc(full)}"${contextItem&&witnessLabel(contextItem)?` data-cite-witness="${esc(contextItem.witness)}" data-cite-summary="${esc(contextItem.summary||contextItem.text)}"`:``} aria-label="${esc(full)}" title="${esc(full)}"><span>${esc(compactCitation(p,full))}</span>${contextItem?`<span class="source-icon ${comparisonTone(contextItem)}" aria-hidden="true">${comparisonIcon(contextItem)}</span>`:''}</a>`;}
 function contextRanges(item){
  const sideRefs=new Set(item.sides?.length?item.sides.map(s=>s.ref):[item.ref]);
@@ -78,9 +127,9 @@ function comparisonCell(verse){
  const category=item=>languageTags[item.tag]?.label||comparisonLabels[item.mode];
  const icon=comparisonIcon;
  const shownChoices=choices.sort((a,b)=>categoryRank(a)-categoryRank(b)).filter(item=>categoryFilters.has(filterCategory(item)));
- const tabs=shownChoices.map(item=>{const duplicate=choices.filter(i=>category(i)===category(item)).length>1;const label=`${category(item)}${item.status?' · '+item.status:''}${item.placementRole==='context'?' · Supporting context':''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;const open=isOpen(item);return `<button type="button" class="agreement comparison-tab ${tone(item)}${item.placementRole==='context'?' context-tag':''}" id="comparison-tab-${verse}-${item.key}" aria-pressed="${open}" aria-expanded="${open}" aria-controls="comparison-panel-${verse}-${item.key}" data-comparison-record="${esc(recordSelection(item))}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${icon(item)}</button>`});
+ const tabs=shownChoices.map(item=>{const duplicate=choices.filter(i=>category(i)===category(item)).length>1;const label=`${category(item)}${item.status?' · '+item.status:''}${item.placementRole==='context'?' · Supporting context':''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;const open=isOpen(item);return `<button type="button" class="agreement comparison-tab ${tone(item)}${item.placementRole==='context'?' context-tag':''}" id="comparison-tab-${verse}-${item.key}" aria-pressed="${open}" aria-expanded="${open}" aria-controls="comparison-panel-${verse}-${item.key}" data-comparison-record="${esc(recordSelection(item))}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${item.placementRole==='context'?'':icon(item)}</button>`});
  const panels=shownChoices.map(active=>active.placementRole==='context'?`<div class="comparison-panel context-pointer" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${isOpen(active)?'':'hidden'}>Context for: <a href="#read/${Object.values(readRef(active.keyTarget)||{}).join('/')}" title="${esc(active.title||active.ref)}">${esc(active.title||active.ref)}</a></div>`:`<section class="verse-comparison comparison-panel" data-tone="${tone(active)}" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${isOpen(active)?'':'hidden'}>${sideRows(active)}${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(summaryText(active))}</p>${active.placementRole?roleCitations(active):comparisonCitations(verse,[active])}<details class="comparison-details"><summary>Details & sources</summary>${active.tag==='T'?`<p class="language-context">${esc(active.witness)}</p>`:''}<p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${alternativeReadings(verse)}${active.reasoning?`<p><b>Reasoning:</b> ${esc(active.reasoning)}</p>`:''}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details></section>`).join('');
- return `<div class="comparison-cell"><div class="comparison-tabs" role="group" aria-label="Comparisons for verse ${verse}">${tabs.map((tab,i)=>shownChoices[i].placementRole==='context'?`<span class="context-tags">${tab}</span>`:tab).join('')}</div>${panels}</div>`;
+ return `<div class="comparison-cell"><div class="comparison-tabs" role="group" aria-label="Comparisons for verse ${verse}"><span class="primary-tags">${tabs.filter((_,i)=>shownChoices[i].placementRole!=='context').join('')}</span><span class="context-tags">${tabs.filter((_,i)=>shownChoices[i].placementRole==='context').join('')}</span></div>${panels}</div>`;
 }
 function selectComparison(button){
  const verse=Number(button.dataset.comparisonVerse),key=button.dataset.comparisonKey;
@@ -128,8 +177,8 @@ function comparisonStatus(){
  if(records.some(r=>!r||r.status==='loading')){status.textContent='Loading comparison tags…';return;}
  const count=new Set(records.flatMap((r,index)=>(r.items||[]).filter(item=>visibleComparison({...item,mode:comparisonModes[index]})).map(item=>item.id||`${comparisonModes[index]}:${item.title||''}:${item.summary}`))).size;
  const all=records.flatMap((r,index)=>(r.items||[]).map(item=>({...item,mode:comparisonModes[index]}))).filter(visibleComparison);
- const categories=[['T','Translation','translation'],['V','Law violation','violation'],['Q','Unanswered question','question'],['science','Scientific','science'],['history','Historic','history'],['contradictions','Contradictions','contradictions']];
- status.innerHTML=categories.map(([key,label,tone])=>{const matches=all.filter(item=>recordTags(item).length?recordTags(item).includes(key):filterCategory(item)===key);const total=new Set(matches.map(item=>item.id||item.title||item.summary)).size;return `<button type="button" class="agreement category-filter ${tone}" data-category-filter="${key}" aria-pressed="${categoryFilters.has(key)}" aria-label="${label}: ${total} comparisons" title="${label}" ${total?'':'disabled'}><span>${key==='science'?'S':key==='history'?'↶':key==='contradictions'?'C':key}</span><span>${total}</span></button>`}).join('');
+ const categories=[['T','Translation','translation'],['V','Violation','violation'],['Q','Unanswered question','question'],['science','Science','science'],['history','History','history'],['contradictions','Contradictions','contradictions']];
+ status.innerHTML=categories.map(([key,label,tone])=>{const matches=all.filter(item=>recordTags(item).length?recordTags(item).includes(key):filterCategory(item)===key);const total=new Set(matches.map(item=>item.id||item.title||item.summary)).size;return `<button type="button" class="agreement category-filter ${tone}" data-category-filter="${key}" aria-pressed="${categoryFilters.has(key)}" aria-label="${label}: ${total} comparisons" title="${label}" ${total?'':'disabled'}><span class="filter-icon">${categoryIcon(key)}</span><span class="filter-copy"><span class="filter-label">${label}</span> <span class="filter-count">${total}</span></span></button>`}).join('');
 }
 async function ensureComparisons(){
  if(!reading||$('#reader-compare').value==='none')return;
@@ -146,7 +195,7 @@ async function ensureComparisons(){
  comparisonStatus();if(!jobs.length)return;await Promise.all(jobs);
  if(reading&&book===readingBook&&ch===readingChapter&&edition===$('#reader-edition').value)renderReader(true);
 }
-function readerQuestionForm(){return `<form id="reader-question-form" autocomplete="off" class="reader-question-form"><input id="reader-question" type="text" autocomplete="off" maxlength="2500" required aria-label="Ask about ${esc(reading.name)} ${readingChapter}${selectedVerses.size?' · selected verses':''}" placeholder="Ask about ${esc(reading.name)} ${readingChapter}..." value="${esc(readerQuestionDraft)}" ${chatBusy?'disabled':''}><button type="submit" class="reader-question-submit" aria-label="Send question" title="Send question" ${chatBusy?'disabled':''}><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></form>`;}
+function readerQuestionForm(){return `<form id="reader-question-form" autocomplete="off" class="reader-question-form"><input id="reader-question" type="text" autocomplete="off" maxlength="2500" required aria-label="Ask about the Bible" placeholder="Ask about the Bible..." value="${esc(readerQuestionDraft)}" ${chatBusy?'disabled':''}><button type="submit" class="reader-question-submit" aria-label="Send question" title="Send question" ${chatBusy?'disabled':''}><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></form>`;}
 function submitReaderQuestion(ev){ev.preventDefault();if(chatBusy||!reading)return;const question=$('#reader-question').value.trim();if(!question)return;readerQuestionDraft=question;$('#chat-input').value=question;setView('chat');window.scrollTo({top:0,behavior:'instant'});$('#chat-form').requestSubmit();readerQuestionDraft='';}
 document.addEventListener('input',ev=>{if(ev.target.id==='reader-question')readerQuestionDraft=ev.target.value;});
 document.addEventListener('submit',ev=>{if(ev.target.id==='reader-question-form')submitReaderQuestion(ev);});

@@ -331,3 +331,22 @@ header{height:80px}.brand{gap:10px;letter-spacing:normal}nav{gap:28px}
 }
 
 @media(min-width:601px) and (max-width:650px){header{height:auto}}
+
+/* Lucide category icons: one outline set and shared stroke weight. */
+.category-icon{display:block;width:18px;height:18px;flex-shrink:0;pointer-events:none}
+.comparison-tabs .comparison-tab,.comparison-tabs .comparison-tab.context-tag{width:28px;height:28px;min-height:28px;flex:0 0 28px;border-radius:50%}
+.agreement.translation,.agreement.science,.agreement.history,.agreement.contradictions,body.dark .agreement.translation,body.dark .agreement.science,body.dark .agreement.history,body.dark .agreement.contradictions,.source-icon.translation,.source-icon.science,.source-icon.history,.source-icon.contradictions{background:var(--soft);color:var(--green)}
+.source-icon{width:36px;height:36px;border:0;border-radius:50%;flex-shrink:0}.source-icon .category-icon{width:16px;height:16px}.category-question{width:36px;height:36px;min-width:36px;border-radius:50%}
+.comparison-status{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 16px;margin:0 0 20px}
+.category-filter,.category-filter:disabled,.category-filter[aria-pressed="false"]{display:flex;align-items:center;gap:10px;width:100%;padding:0;min-height:40px;border:0;border-radius:0;background:transparent!important;text-align:left;outline-offset:4px;opacity:1}
+.category-filter .filter-icon{display:grid;place-items:center;width:36px;height:36px;flex:0 0 36px;border-radius:50%;background:var(--soft);color:var(--green);border:1px solid transparent}
+.category-filter .filter-icon .category-icon{width:20px;height:20px}.filter-copy{font:400 var(--caption-size)/1.6 system-ui;color:var(--ink);min-width:0}.filter-count{font-weight:600;white-space:nowrap;margin-left:4px;color:var(--muted)}
+.category-filter.question .filter-icon{background:#e4ebcb;color:#435023}.category-filter.violation .filter-icon{background:#f9ded8;color:#792b22}
+.category-filter[aria-pressed="false"] .filter-icon{border-color:currentColor;border-style:dashed}.category-filter[aria-pressed="false"] .filter-label{text-decoration:line-through}
+.category-filter:disabled .filter-copy{color:var(--muted)}.category-filter:not(:disabled):hover{outline:0}.category-filter:not(:disabled):hover .filter-label{text-decoration:underline}
+.category-filter:focus-visible{outline:2px solid var(--green)}
+@media(max-width:600px){.comparison-status{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;margin-bottom:16px}.category-filter{gap:8px;min-height:40px}}
+
+/* Owner correction: key icons left, small symbol-free context markers right. */
+.comparison-tabs{align-items:center;flex-wrap:nowrap;gap:12px}.primary-tags{display:flex;flex:1;min-width:0;flex-wrap:wrap;gap:8px}.context-tags{display:flex;flex:0 0 auto;margin-left:auto;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px;max-width:40%}
+.comparison-tabs .comparison-tab.context-tag{position:relative;width:16px;height:16px;min-height:16px;flex:0 0 16px;border:1px solid currentColor}.comparison-tab.context-tag::after{content:'';position:absolute;inset:-6px;border-radius:50%}
