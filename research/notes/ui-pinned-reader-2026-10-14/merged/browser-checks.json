@@ -1,0 +1,283 @@
+{
+  "checks": [
+    {
+      "width": 543,
+      "dark": false,
+      "geometry": {
+        "header": {
+          "top": 0,
+          "bottom": 105.390625,
+          "height": 105.390625
+        },
+        "strip": {
+          "top": 106,
+          "bottom": 178,
+          "height": 72
+        },
+        "overflow": false,
+        "word": "ScriptureLens",
+        "accent": "rgb(179, 79, 11)",
+        "l": "rgb(179, 79, 11)",
+        "nav": "rgb(179, 79, 11)",
+        "indicator": "rgb(179, 79, 11) 0px 2px 0px 0px",
+        "filters": [
+          {
+            "key": "T",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "V",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "Q",
+            "disabled": false,
+            "on": "true",
+            "badge": "1",
+            "border": "0px",
+            "fill": "rgb(228, 235, 203)"
+          },
+          {
+            "key": "science",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "history",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "contradictions",
+            "disabled": false,
+            "on": "true",
+            "badge": "1",
+            "border": "0px",
+            "fill": "rgb(251, 228, 210)"
+          }
+        ]
+      },
+      "scaled": {
+        "header": {
+          "top": 0,
+          "bottom": 109.875,
+          "height": 109.875
+        },
+        "strip": {
+          "top": 110,
+          "bottom": 182,
+          "height": 72
+        },
+        "overflow": false,
+        "word": "ScriptureLens",
+        "accent": "rgb(179, 79, 11)",
+        "l": "rgb(179, 79, 11)",
+        "nav": "rgb(179, 79, 11)",
+        "indicator": "rgb(179, 79, 11) 0px 2px 0px 0px",
+        "filters": [
+          {
+            "key": "T",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "V",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "Q",
+            "disabled": false,
+            "on": "true",
+            "badge": "1",
+            "border": "0px",
+            "fill": "rgb(228, 235, 203)"
+          },
+          {
+            "key": "science",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "history",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "contradictions",
+            "disabled": false,
+            "on": "true",
+            "badge": "1",
+            "border": "0px",
+            "fill": "rgb(251, 228, 210)"
+          }
+        ]
+      },
+      "sortedSides": [
+        "Genesis 2:17",
+        "Genesis 3:6",
+        "Genesis 5:5"
+      ],
+      "allViewHeader": "pass",
+      "footerPinned": "pass"
+    },
+    {
+      "width": 543,
+      "dark": true,
+      "geometry": {
+        "header": {
+          "top": 0,
+          "bottom": 105.390625,
+          "height": 105.390625
+        },
+        "strip": {
+          "top": 106,
+          "bottom": 178,
+          "height": 72
+        },
+        "overflow": false,
+        "word": "ScriptureLens",
+        "accent": "rgb(210, 122, 58)",
+        "l": "rgb(210, 122, 58)",
+        "nav": "rgb(210, 122, 58)",
+        "indicator": "rgb(210, 122, 58) 0px 2px 0px 0px",
+        "filters": [
+          {
+            "key": "T",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "V",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "Q",
+            "disabled": false,
+            "on": "true",
+            "badge": "1",
+            "border": "0px",
+            "fill": "rgb(228, 235, 203)"
+          },
+          {
+            "key": "science",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "history",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "contradictions",
+            "disabled": false,
+            "on": "true",
+            "badge": "1",
+            "border": "0px",
+            "fill": "rgb(251, 228, 210)"
+          }
+        ]
+      },
+      "scaled": {
+        "header": {
+          "top": 0,
+          "bottom": 109.875,
+          "height": 109.875
+        },
+        "strip": {
+          "top": 110,
+          "bottom": 182,
+          "height": 72
+        },
+        "overflow": false,
+        "word": "ScriptureLens",
+        "accent": "rgb(210, 122, 58)",
+        "l": "rgb(210, 122, 58)",
+        "nav": "rgb(210, 122, 58)",
+        "indicator": "rgb(210, 122, 58) 0px 2px 0px 0px",
+        "filters": [
+          {
+            "key": "T",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "V",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "Q",
+            "disabled": false,
+            "on": "true",
+            "badge": "1",
+            "border": "0px",
+            "fill": "rgb(228, 235, 203)"
+          },
+          {
+            "key": "science",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "history",
+            "disabled": true,
+            "on": "false",
+            "border": "0px",
+            "fill": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "key": "contradictions",
+            "disabled": false,
+            "on": "true",
+            "badge": "1",
+            "border": "0px",
+            "fill": "rgb(251, 228, 210)"
+          }
+        ]
+      },
+      "sortedSides": [
+        "Genesis 2:17",
+        "Genesis 3:6",
+        "Genesis 5:5"
+      ],
+      "allViewHeader": "pass",
+      "footerPinned": "pass"
+    }
+  ],
+  "errors": []
+}
