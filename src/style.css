@@ -394,3 +394,15 @@ body.dark .brand{color:#b8cfe5}body.dark .brand b{color:#f58220}
  .filter-badge{display:grid;place-items:center;position:absolute;top:-7px;right:-7px;width:20px;height:20px;border:2px solid var(--bg);border-radius:50%;background:var(--green);color:var(--panel);font:600 .625rem/1 system-ui}
  .category-filter:disabled .filter-badge{background:var(--green);color:var(--panel)}
 }
+
+
+/* Owner follow-up: filters before paging, settings beside theme, outlined SL. */
+.header-actions{display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0}
+.header-actions .reader-picker.chapter-round{display:none}
+.brand .mark{display:flex;align-items:center;justify-content:center;background:transparent;border-color:#102c48}
+.brand .mark-letter-s{color:#f58220}.brand .mark-letter-l{color:#102c48}
+@media(max-width:600px){
+ .header-actions .reader-picker.chapter-round{display:grid}
+ .reader-chapter-bar{grid-template-columns:40px minmax(0,1fr) 40px}
+ .comparison-status{margin-top:12px}
+}
