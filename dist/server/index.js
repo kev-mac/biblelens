@@ -66799,6 +66799,1806 @@ const EVIDENCE=[
         "quote": "I the Lord have deceived that prophet"
       }
     ]
+  },
+  {
+    "id": "moab-and-seir-the-house-of-judah-or-moab-the-house-of-israel-and-juda-ezekiel-25-8-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 25:8",
+    "appliesTo": [
+      "Ezekiel 25:8"
+    ],
+    "title": "“Moab and Seir … the house of Judah” — the Greek names Moab alone and “the house of Israel and Juda”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 25:8 names “Moab and Seir” as speakers and “the house of Judah” as the subject of their saying. Brenton’s Greek names Moab alone as speaker, and prints “the house of Israel and Juda”.",
+    "text": "KJV Ezekiel 25:8: “Moab and Seir do say, Behold, the house of Judah is like unto all the heathen”. Hebrew (WLC) 25:8: אֲמֹ֤ר מֹואָב֙ וְשֵׂעִ֔יר הִנֵּ֥ה כְּכָֽל־הַגֹּויִ֖ם בֵּ֥ית יְהוּדָֽה. Brenton’s Greek 25:8: εἶπε Μωάβ, ἰδοὺ, οὐχ ὃν τρόπον πάντα τὰ ἔθνη, οἶκος Ἰσραὴλ καὶ Ἰούδα. Brenton’s own English (https://ebible.org/eng-Brenton/EZK25.htm) prints: “Moab has said, Behold, are not the house of Israel and Juda like all the other nations?”. Fetched from https://bolls.life/get-text/WLC/26/25/ and https://ebible.org/grcbrent/EZK25.htm.",
+    "reasoning": "Both texts give the same reason clause for the judgment in 25:8. The KJV and the Hebrew quoted name two speakers, Moab and Seir, and one house, Judah. Brenton’s Greek, as rendered in its English edition, names one speaker, Moab, and two names for the house, Israel and Juda. The names printed differ at both places.",
+    "scope": "T applies at Ezekiel 25:8. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Greek also reads as a question in Brenton’s English; the question form is not the finding. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 25: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK25.htm"
+      },
+      {
+        "label": "Ezekiel 25: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/25/"
+      },
+      {
+        "label": "Ezekiel 25: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK25.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 25:8",
+        "book": 25,
+        "chapter": 25,
+        "verse": 8
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 25:8",
+        "quote": "Moab and Seir do say, Behold, the house of Judah is like unto all the heathen"
+      }
+    ]
+  },
+  {
+    "id": "tarshish-was-thy-merchant-or-the-carthaginians-were-thy-merchants-ezekiel-27-12-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 27:12",
+    "appliesTo": [
+      "Ezekiel 27:12",
+      "Ezekiel 38:13"
+    ],
+    "title": "“Tarshish was thy merchant” — the Greek has “the Carthaginians”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 27:12 and 38:13 names Tarshish among the merchants. Brenton’s Greek prints a word that Brenton’s English renders “Carthaginians” at both verses.",
+    "text": "KJV Ezekiel 27:12: “Tarshish was thy merchant”. Hebrew (WLC) 27:12: תַּרְשִׁ֥ישׁ סֹחַרְתֵּ֖ךְ. Brenton’s Greek 27:12: Καρχηδόνιοι ἔμποροί σου. Brenton’s own English (https://ebible.org/eng-Brenton/EZK27.htm) prints: “The Carthaginians were thy merchants”. KJV Ezekiel 38:13: “the merchants of Tarshish”. Hebrew (WLC) 38:13: וְסֹחֲרֵ֨י תַרְשִׁ֤ישׁ. Brenton’s Greek 38:13: ἔμποροι Καρχηδόνιοι. Brenton’s own English (https://ebible.org/eng-Brenton/EZK38.htm) prints: “Carthaginian merchants”. Fetched from https://bolls.life/get-text/WLC/26/27/, https://bolls.life/get-text/WLC/26/38/, https://ebible.org/grcbrent/EZK27.htm and https://ebible.org/grcbrent/EZK38.htm.",
+    "reasoning": "The Hebrew quoted prints the name Tarshish at both verses, as the KJV does. The Greek prints “Καρχηδόνιοι” at both, a different name. The two texts name different peoples or places on their face.",
+    "scope": "T applies at Ezekiel 27:12 and Ezekiel 38:13. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say whether the two names are meant for the same place. The KJV prints Tarshish at 27:25 as well; that verse is not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 27: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK27.htm"
+      },
+      {
+        "label": "Ezekiel 38: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK38.htm"
+      },
+      {
+        "label": "Ezekiel 27: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/27/"
+      },
+      {
+        "label": "Ezekiel 38: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/38/"
+      },
+      {
+        "label": "Ezekiel 27: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK27.htm"
+      },
+      {
+        "label": "Ezekiel 38: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK38.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 27:12",
+        "book": 25,
+        "chapter": 27,
+        "verse": 12
+      },
+      {
+        "label": "Ezekiel 38:13",
+        "book": 25,
+        "chapter": 38,
+        "verse": 13
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 27:12",
+        "quote": "Tarshish was thy merchant"
+      },
+      {
+        "label": "A",
+        "ref": "Ezekiel 38:13",
+        "quote": "the merchants of Tarshish"
+      }
+    ]
+  },
+  {
+    "id": "the-men-of-dedan-or-the-sons-of-the-rhodians-ezekiel-27-15-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 27:15",
+    "appliesTo": [
+      "Ezekiel 27:15"
+    ],
+    "title": "“The men of Dedan were thy merchants” — the Greek has “the sons of the Rhodians”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 27:15 names “the men of Dedan” as merchants. Brenton’s Greek prints “Υἱοὶ Ῥοδίων”, which Brenton’s English renders “the sons of the Rhodians”.",
+    "text": "KJV Ezekiel 27:15: “The men of Dedan were thy merchants”. Hebrew (WLC) 27:15: בְּנֵ֤י דְדָן֙ רֹֽכְלַ֔יִךְ. Brenton’s Greek 27:15: Υἱοὶ Ῥοδίων ἔμποροί σου. Brenton’s own English (https://ebible.org/eng-Brenton/EZK27.htm) prints: “The sons of the Rhodians were thy merchants”. KJV Ezekiel 27:20: “Dedan was thy merchant”. Hebrew (WLC) 27:20: דְּדָן֙ רֹֽכַלְתֵּ֔ךְ. Brenton’s Greek 27:20: Δαιδὰν ἔμποροί σου. Brenton’s own English (https://ebible.org/eng-Brenton/EZK27.htm) prints: “The people of Dædan were thy merchants”. Fetched from https://bolls.life/get-text/WLC/26/27/ and https://ebible.org/grcbrent/EZK27.htm.",
+    "reasoning": "The Hebrew quoted prints Dedan at 27:15 and again at 27:20. At 27:20 the Greek prints a form of the name Dedan. At 27:15 the Greek prints a different name, Rhodians. So the Greek prints a form of the name Dedan at 27:20 and a different name at 27:15, where the KJV prints Dedan at both.",
+    "scope": "T applies at Ezekiel 27:15. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Verse 27:20 is context only and is not tagged. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 27: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK27.htm"
+      },
+      {
+        "label": "Ezekiel 27: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/27/"
+      },
+      {
+        "label": "Ezekiel 27: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK27.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 27:15",
+        "book": 25,
+        "chapter": 27,
+        "verse": 15
+      },
+      {
+        "label": "Ezekiel 27:20",
+        "book": 25,
+        "chapter": 27,
+        "verse": 20
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 27:15",
+        "quote": "The men of Dedan were thy merchants"
+      }
+    ]
+  },
+  {
+    "id": "ethiopia-libya-lydia-and-chub-or-persians-cretans-lydians-and-libyans-ezekiel-30-5-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 30:5",
+    "appliesTo": [
+      "Ezekiel 30:5"
+    ],
+    "title": "“Ethiopia, and Libya, and Lydia … and Chub” — the Greek lists “Persians, and Cretans, and Lydians, and Libyans”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 30:5 lists Ethiopia, Libya, Lydia and Chub among those who fall with Egypt. Brenton’s Greek lists Persians, Cretans, Lydians and Libyans.",
+    "text": "KJV Ezekiel 30:5: “Ethiopia, and Libya, and Lydia, and all the mingled people, and Chub”. Hebrew (WLC) 30:5: כּ֣וּשׁ וּפ֤וּט וְלוּד֙ וְכָל־הָעֶ֣רֶב וְכ֔וּב. Brenton’s Greek 30:5: Πέρσαι, καὶ Κρῆτες, καὶ Λυδοὶ, καὶ Λίβυες, καὶ πάντες οἱ ἐπίμικτοι. Brenton’s own English (https://ebible.org/eng-Brenton/EZK30.htm) prints: “Persians, and Cretans, and Lydians, and Libyans, and all the mixed multitude”. Fetched from https://bolls.life/get-text/WLC/26/30/ and https://ebible.org/grcbrent/EZK30.htm.",
+    "reasoning": "The Hebrew quoted prints three names (כוש, פוט, לוד), “all the mingled people”, and another name (כוב). The KJV prints Ethiopia, Libya, Lydia and Chub. The Greek prints Persians and Cretans, and does not print the name Ethiopia or the name Chub. Libya, Lydia and the mingled people stand in both lists; the Greek has Persians and Cretans where the KJV has Ethiopia and Chub.",
+    "scope": "T applies at Ezekiel 30:5. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say which Hebrew name each Greek name stands for. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 30: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK30.htm"
+      },
+      {
+        "label": "Ezekiel 30: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/30/"
+      },
+      {
+        "label": "Ezekiel 30: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK30.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 30:5",
+        "book": 25,
+        "chapter": 30,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 30:5",
+        "quote": "Ethiopia, and Libya, and Lydia, and all the mingled people, and Chub"
+      }
+    ]
+  },
+  {
+    "id": "these-cities-shall-go-into-captivity-or-the-women-shall-go-into-captivity-ezekiel-30-17-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 30:17",
+    "appliesTo": [
+      "Ezekiel 30:17"
+    ],
+    "title": "“These cities shall go into captivity” — the Greek has “the women shall go into captivity”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 30:17 says “these cities shall go into captivity”. Brenton’s Greek prints “αἱ γυναῖκες”, which Brenton’s English renders “the women”, and names “Heliopolis and Bubastum” where the KJV has “Aven and … Pibeseth”.",
+    "text": "KJV Ezekiel 30:17: “The young men of Aven and of Pibeseth” … “these cities shall go into captivity”. Hebrew (WLC) 30:17: בַּח֥וּרֵי אָ֛וֶן וּפִי־בֶ֖סֶת … וְהֵ֖נָּה בַּשְּׁבִ֥י תֵלַֽכְנָה. Brenton’s Greek 30:17: Νεανίσκοι Ἡλιουπόλεως καὶ Βουβάστου … αἱ γυναῖκες ἐν αἰχμαλωσίᾳ πορεύσονται. Brenton’s own English (https://ebible.org/eng-Brenton/EZK30.htm) prints: “The youths of Heliopolis and Bubastum” … “the women shall go into captivity”. Fetched from https://bolls.life/get-text/WLC/26/30/ and https://ebible.org/grcbrent/EZK30.htm.",
+    "reasoning": "After the young men fall by the sword, the KJV gives the captives as “these cities”. The Greek gives them as “the women”. The names of the two places also differ: the KJV and the Hebrew quoted print Aven and Pibeseth, and the Greek prints Heliopolis and Bubastum. Both the subject of the captivity and the place names differ.",
+    "scope": "T applies at Ezekiel 30:17. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say that Aven and Heliopolis, or Pibeseth and Bubastum, are different places. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 30: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK30.htm"
+      },
+      {
+        "label": "Ezekiel 30: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/30/"
+      },
+      {
+        "label": "Ezekiel 30: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK30.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 30:17",
+        "book": 25,
+        "chapter": 30,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 30:17",
+        "quote": "these cities shall go into captivity"
+      }
+    ]
+  },
+  {
+    "id": "the-tenth-year-the-twelfth-day-or-the-twelfth-year-the-first-day-ezekiel-29-1-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 29:1",
+    "appliesTo": [
+      "Ezekiel 29:1"
+    ],
+    "title": "“In the tenth year … in the twelfth day” — the Greek has “the twelfth year … the first day”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 29:1 dates the word “in the tenth year, in the tenth month, in the twelfth day of the month”. Brenton’s Greek prints the twelfth year, the tenth month and the first day.",
+    "text": "KJV Ezekiel 29:1: “In the tenth year, in the tenth month, in the twelfth day of the month”. Hebrew (WLC) 29:1: בַּשָּׁנָה֙ הָעֲשִׂירִ֔ית בָּעֲשִׂרִ֕י בִּשְׁנֵ֥ים עָשָׂ֖ר לַחֹ֑דֶשׁ. Brenton’s Greek 29:1: Ἐν τῷ ἔτει τῷ δωδεκάτῳ, ἐν τῷ δεκάτῳ μηνὶ, μιᾷ τοῦ μηνὸς. Brenton’s own English (https://ebible.org/eng-Brenton/EZK29.htm) prints: “In the twelfth year, in the tenth month, on the first day of the month”. Fetched from https://bolls.life/get-text/WLC/26/29/ and https://ebible.org/grcbrent/EZK29.htm.",
+    "reasoning": "The month is the tenth in both texts. The year differs, tenth in the KJV and twelfth in the Greek, and the day differs, twelfth in the KJV and first in the Greek.",
+    "scope": "T applies at Ezekiel 29:1. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not compare this date with the dates at 30:20, 31:1 or 32:1, and does not say which year is correct. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 29: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK29.htm"
+      },
+      {
+        "label": "Ezekiel 29: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/29/"
+      },
+      {
+        "label": "Ezekiel 29: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK29.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 29:1",
+        "book": 25,
+        "chapter": 29,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 29:1",
+        "quote": "In the tenth year, in the tenth month, in the twelfth day of the month"
+      }
+    ]
+  },
+  {
+    "id": "in-the-twelfth-month-or-in-the-tenth-month-ezekiel-32-1-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 32:1",
+    "appliesTo": [
+      "Ezekiel 32:1"
+    ],
+    "title": "“In the twelfth month” — the Greek has “in the tenth month”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 32:1 dates the word “in the twelfth year, in the twelfth month, in the first day of the month”. Brenton’s Greek prints the tenth month.",
+    "text": "KJV Ezekiel 32:1: “in the twelfth month”. Hebrew (WLC) 32:1: בִּשְׁנֵי־עָשָׂ֥ר חֹ֖דֶשׁ. Brenton’s Greek 32:1: ἐν τῷ δεκάτῳ μηνὶ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK32.htm) prints: “in the tenth month”. Fetched from https://bolls.life/get-text/WLC/26/32/ and https://ebible.org/grcbrent/EZK32.htm.",
+    "reasoning": "The Hebrew quoted prints a number that the KJV renders twelfth for the month. The Greek prints “δεκάτῳ”, which Brenton’s English renders “tenth”. The two texts give different months for the same word of the Lord.",
+    "scope": "T applies at Ezekiel 32:1. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The year is not compared: Brenton’s Greek prints “δεκάτῳ ἔτει” at 32:1 while Brenton’s own English prints “twelfth year”, so the edition’s two pages differ there. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 32: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK32.htm"
+      },
+      {
+        "label": "Ezekiel 32: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/32/"
+      },
+      {
+        "label": "Ezekiel 32: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK32.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 32:1",
+        "book": 25,
+        "chapter": 32,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 32:1",
+        "quote": "in the twelfth month"
+      }
+    ]
+  },
+  {
+    "id": "in-the-fifteenth-day-of-the-month-or-in-the-first-month-on-the-fifteenth-day-ezekiel-32-17-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 32:17",
+    "appliesTo": [
+      "Ezekiel 32:17"
+    ],
+    "title": "“In the twelfth year, in the fifteenth day of the month” — the Greek adds “in the first month”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 32:17 gives a year and a day of the month and no month. Brenton’s Greek prints “τοῦ πρώτου μηνὸς”, “in the first month”, before the day.",
+    "text": "KJV Ezekiel 32:17: “in the twelfth year, in the fifteenth day of the month”. Hebrew (WLC) 32:17: בִּשְׁתֵּ֣י עֶשְׂרֵ֣ה שָׁנָ֔ה בַּחֲמִשָּׁ֥ה עָשָׂ֖ר לַחֹ֑דֶשׁ. Brenton’s Greek 32:17: ἐν τῷ δωδεκάτῳ ἔτει τοῦ πρώτου μηνὸς, πεντεκαιδεκάτῃ τοῦ μηνὸς. Brenton’s own English (https://ebible.org/eng-Brenton/EZK32.htm) prints: “in the twelfth year, in the first month, on the fifteenth day of the month”. Fetched from https://bolls.life/get-text/WLC/26/32/ and https://ebible.org/grcbrent/EZK32.htm.",
+    "reasoning": "The Hebrew quoted gives the year and “the fifteenth … of the month” and no named month, as the KJV does. The Greek gives a month, the first. The KJV of 32:17 names no month for this date, so the month the Greek prints is not stated there.",
+    "scope": "T applies at Ezekiel 32:17. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Greek reads “τοῦ πρώτου μηνὸς” after the year, in a phrase that belongs to the date. The record does not say that a month was lost from the Hebrew. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 32: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK32.htm"
+      },
+      {
+        "label": "Ezekiel 32: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/32/"
+      },
+      {
+        "label": "Ezekiel 32: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK32.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 32:17",
+        "book": 25,
+        "chapter": 32,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 32:17",
+        "quote": "in the twelfth year, in the fifteenth day of the month"
+      }
+    ]
+  },
+  {
+    "id": "eden-the-garden-of-god-or-the-delight-of-the-paradise-of-god-ezekiel-28-13-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 28:13",
+    "appliesTo": [
+      "Ezekiel 28:13",
+      "Ezekiel 36:35"
+    ],
+    "title": "“Eden the garden of God” — the Greek has “the delight of the paradise of God”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 28:13 says “in Eden the garden of God” and of 36:35 “the garden of Eden”. Brenton’s Greek prints no name Eden at either verse and prints “τρυφῇ”, which Brenton’s English renders “delight”.",
+    "text": "KJV Ezekiel 28:13: “Thou hast been in Eden the garden of God”. Hebrew (WLC) 28:13: בְּעֵ֨דֶן גַּן־אֱלֹהִ֜ים הָיִ֗יתָ. Brenton’s Greek 28:13: ἐν τῇ τρυφῇ τοῦ παραδείσου τοῦ Θεοῦ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK28.htm) prints: “Thou wast in the delight of the paradise of God”. KJV Ezekiel 36:35: “like the garden of Eden”. Hebrew (WLC) 36:35: כְּגַן־עֵ֑דֶן. Brenton’s Greek 36:35: ὡς κῆπος τρυφῆς. Brenton’s own English (https://ebible.org/eng-Brenton/EZK36.htm) prints: “like a garden of delight”. Fetched from https://bolls.life/get-text/WLC/26/28/, https://bolls.life/get-text/WLC/26/36/, https://ebible.org/grcbrent/EZK28.htm and https://ebible.org/grcbrent/EZK36.htm.",
+    "reasoning": "The Hebrew quoted prints the word עדן at both verses, and the KJV prints it as the name Eden. The Greek prints a common noun, “delight”, in place of the name: “the delight of the paradise of God” at 28:13 and “a garden of delight” at 36:35.",
+    "scope": "T applies at Ezekiel 28:13 and Ezekiel 36:35. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The KJV also prints Eden at 31:9, 31:16 and 31:18; those verses are not placed here. The record does not say that the Greek meaning of the noun excludes a place name. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 28: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK28.htm"
+      },
+      {
+        "label": "Ezekiel 36: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK36.htm"
+      },
+      {
+        "label": "Ezekiel 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/28/"
+      },
+      {
+        "label": "Ezekiel 36: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/36/"
+      },
+      {
+        "label": "Ezekiel 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK28.htm"
+      },
+      {
+        "label": "Ezekiel 36: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK36.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 28:13",
+        "book": 25,
+        "chapter": 28,
+        "verse": 13
+      },
+      {
+        "label": "Ezekiel 36:35",
+        "book": 25,
+        "chapter": 36,
+        "verse": 35
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 28:13",
+        "quote": "Thou hast been in Eden the garden of God"
+      },
+      {
+        "label": "A",
+        "ref": "Ezekiel 36:35",
+        "quote": "like the garden of Eden"
+      }
+    ]
+  },
+  {
+    "id": "thou-art-the-anointed-cherub-or-thou-wast-with-the-cherub-ezekiel-28-14-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 28:14",
+    "appliesTo": [
+      "Ezekiel 28:14",
+      "Ezekiel 28:16"
+    ],
+    "title": "“Thou art the anointed cherub” — the Greek has “thou wast with the cherub”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 28:14 says to the one addressed “Thou art the anointed cherub that covereth” and of 28:16 “I will destroy thee, O covering cherub”. Brenton’s Greek has the addressee “with the cherub” at 28:14, and the cherub as the one who “has brought thee out” at 28:16.",
+    "text": "KJV Ezekiel 28:14: “Thou art the anointed cherub that covereth”. Hebrew (WLC) 28:14: אַ֨תְּ־כְּר֔וּב מִמְשַׁ֖ח הַסֹּוכֵ֑ךְ. Brenton’s Greek 28:14: σὺ μετὰ τοῦ χερούβ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK28.htm) prints: “thou wast with the cherub”. KJV Ezekiel 28:16: “I will destroy thee, O covering cherub”. Hebrew (WLC) 28:16: וָֽאַבֶּדְךָ֙ כְּר֣וּב הַסֹּכֵ֔ךְ. Brenton’s Greek 28:16: ἤγαγέ σε τὸ χεροὺβ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK28.htm) prints: “the cherub has brought thee out”. Fetched from https://bolls.life/get-text/WLC/26/28/ and https://ebible.org/grcbrent/EZK28.htm.",
+    "reasoning": "In the KJV the cherub is the one addressed, at both verses. In the Greek the cherub is a second party: the addressee is “with the cherub” at 28:14, and at 28:16 the cherub is the subject of the verb that removes the addressee from the stones of fire. The relation of the addressee to the cherub differs between the texts.",
+    "scope": "T applies at Ezekiel 28:14 and Ezekiel 28:16. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say who the king of Tyrus is or what the cherub is; the question is the subject of a separate Q record. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 28: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK28.htm"
+      },
+      {
+        "label": "Ezekiel 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/28/"
+      },
+      {
+        "label": "Ezekiel 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 28:14",
+        "book": 25,
+        "chapter": 28,
+        "verse": 14
+      },
+      {
+        "label": "Ezekiel 28:16",
+        "book": 25,
+        "chapter": 28,
+        "verse": 16
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 28:14",
+        "quote": "Thou art the anointed cherub that covereth"
+      },
+      {
+        "label": "A",
+        "ref": "Ezekiel 28:16",
+        "quote": "I will destroy thee, O covering cherub"
+      }
+    ]
+  },
+  {
+    "id": "the-assyrian-was-a-cedar-in-lebanon-or-the-assyrian-was-a-cypress-in-libanus-ezekiel-31-3-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 31:3",
+    "appliesTo": [
+      "Ezekiel 31:3"
+    ],
+    "title": "“The Assyrian was a cedar in Lebanon” — the Greek has “a cypress”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 31:3 says “the Assyrian was a cedar in Lebanon”. Brenton’s Greek prints “κυπάρισσος”, which Brenton’s English renders “cypress”.",
+    "text": "KJV Ezekiel 31:3: “the Assyrian was a cedar in Lebanon”. Hebrew (WLC) 31:3: אַשּׁ֜וּר אֶ֣רֶז בַּלְּבָנֹ֗ון. Brenton’s Greek 31:3: Ἀσσοὺρ κυπάρισσος ἐν τῷ Λιβάνῳ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK31.htm) prints: “the Assyrian was a cypress in Libanus”. Fetched from https://bolls.life/get-text/WLC/26/31/ and https://ebible.org/grcbrent/EZK31.htm.",
+    "reasoning": "The Hebrew quoted prints the word the KJV renders “cedar”. The Greek prints a word for a different tree, the cypress. The tree named for the Assyrian differs between the KJV and the Greek.",
+    "scope": "T applies at Ezekiel 31:3. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The KJV prints “cedars” at 31:8 as well; that verse is not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 31: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK31.htm"
+      },
+      {
+        "label": "Ezekiel 31: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/31/"
+      },
+      {
+        "label": "Ezekiel 31: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK31.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 31:3",
+        "book": 25,
+        "chapter": 31,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 31:3",
+        "quote": "the Assyrian was a cedar in Lebanon"
+      }
+    ]
+  },
+  {
+    "id": "there-is-edom-and-all-the-zidonians-or-the-princes-of-assur-ezekiel-32-29-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 32:29",
+    "appliesTo": [
+      "Ezekiel 32:29",
+      "Ezekiel 32:30"
+    ],
+    "title": "“There is Edom … and all the Zidonians” — the Greek has “the princes of Assur” and “the captains of Assur”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 32:29 names Edom, and 32:30 “all the Zidonians”, among those in the pit. Brenton’s Greek names “the princes of Assur” at 32:29 and “all the captains of Assur” at 32:30.",
+    "text": "KJV Ezekiel 32:29: “There is Edom, her kings, and all her princes”. Hebrew (WLC) 32:29: שָׁ֣מָּה אֱדֹ֗ום מְלָכֶ֙יהָ֙ וְכָל־נְשִׂיאֶ֔יהָ. Brenton’s Greek 32:29: οἱ ἄρχοντες Ἀσσοὺρ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK32.htm) prints: “the princes of Assur”. KJV Ezekiel 32:30: “all the Zidonians”. Hebrew (WLC) 32:30: וְכָל־צִֽדֹנִ֑י. Brenton’s Greek 32:30: πάντες στρατηγοὶ Ἀσσοὺρ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK32.htm) prints: “all the captains of Assur”. Fetched from https://bolls.life/get-text/WLC/26/32/ and https://ebible.org/grcbrent/EZK32.htm.",
+    "reasoning": "The Hebrew quoted prints the names Edom (32:29) and Zidonians (32:30), as the KJV does. The Greek prints Assur at both verses. Both texts name Asshur at 32:22 (Brenton prints “Assur”), a verse that is not compared. At 32:29 and 32:30 the two texts name different peoples in the pit.",
+    "scope": "T applies at Ezekiel 32:29 and Ezekiel 32:30. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say that the Greek lacks the other names in the same verses beyond those quoted. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 32: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK32.htm"
+      },
+      {
+        "label": "Ezekiel 32: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/32/"
+      },
+      {
+        "label": "Ezekiel 32: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK32.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 32:29",
+        "book": 25,
+        "chapter": 32,
+        "verse": 29
+      },
+      {
+        "label": "Ezekiel 32:30",
+        "book": 25,
+        "chapter": 32,
+        "verse": 30
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 32:29",
+        "quote": "There is Edom, her kings, and all her princes"
+      },
+      {
+        "label": "A",
+        "ref": "Ezekiel 32:30",
+        "quote": "all the Zidonians"
+      }
+    ]
+  },
+  {
+    "id": "i-will-destroy-the-fat-and-the-strong-or-i-will-guard-the-strong-ezekiel-34-16-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 34:16",
+    "appliesTo": [
+      "Ezekiel 34:16"
+    ],
+    "title": "“I will destroy the fat and the strong” — the Greek has “will guard the strong”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 34:16 has the Lord “destroy the fat and the strong”. Brenton’s Greek prints “φυλάξω”, which Brenton’s English renders “guard”, with “the strong” as its object, and prints no counterpart of “the fat”.",
+    "text": "KJV Ezekiel 34:16: “I will destroy the fat and the strong”. Hebrew (WLC) 34:16: וְאֶת־הַשְּׁמֵנָ֧ה וְאֶת־הַחֲזָקָ֛ה אַשְׁמִ֖יד. Brenton’s Greek 34:16: τὸ ἰσχυρὸν φυλάξω. Brenton’s own English (https://ebible.org/eng-Brenton/EZK34.htm) prints: “will guard the strong”. Fetched from https://bolls.life/get-text/WLC/26/34/ and https://ebible.org/grcbrent/EZK34.htm.",
+    "reasoning": "The Hebrew quoted prints a verb that the KJV renders “destroy” and two objects, “the fat” and “the strong”. The Greek has a verb of keeping and one object, “the strong”. What is done to the strong sheep is the opposite in the two texts.",
+    "scope": "T applies at Ezekiel 34:16. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say what the fat and the strong stand for; the surrounding verses (34:17–22) are not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 34: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK34.htm"
+      },
+      {
+        "label": "Ezekiel 34: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/34/"
+      },
+      {
+        "label": "Ezekiel 34: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK34.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 34:16",
+        "book": 25,
+        "chapter": 34,
+        "verse": 16
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 34:16",
+        "quote": "I will destroy the fat and the strong"
+      }
+    ]
+  },
+  {
+    "id": "a-covenant-of-peace-with-them-or-with-david-ezekiel-34-25-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 34:25",
+    "appliesTo": [
+      "Ezekiel 34:25"
+    ],
+    "title": "“A covenant of peace” with “them” — the Greek has it “with David”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 34:25 has the Lord make “with them a covenant of peace”. Brenton’s Greek names David as the party: “with David”.",
+    "text": "KJV Ezekiel 34:25: “I will make with them a covenant of peace”. Hebrew (WLC) 34:25: וְכָרַתִּ֤י לָהֶם֙ בְּרִ֣ית שָׁלֹ֔ום. Brenton’s Greek 34:25: διαθήσομαι τῷ Δαυὶδ διαθήκην εἰρήνης. Brenton’s own English (https://ebible.org/eng-Brenton/EZK34.htm) prints: “I will make with David a covenant of peace”. Fetched from https://bolls.life/get-text/WLC/26/34/ and https://ebible.org/grcbrent/EZK34.htm.",
+    "reasoning": "The Hebrew quoted has “to them” where the Greek has “τῷ Δαυὶδ”. The KJV names David at 34:23–24 as the shepherd and the prince; at 34:25 it makes the covenant with “them”, the flock. The Greek makes the covenant with David himself.",
+    "scope": "T applies at Ezekiel 34:25. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say whether the covenant with David and a covenant with the flock exclude each other. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 34: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK34.htm"
+      },
+      {
+        "label": "Ezekiel 34: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/34/"
+      },
+      {
+        "label": "Ezekiel 34: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK34.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 34:25",
+        "book": 25,
+        "chapter": 34,
+        "verse": 25
+      },
+      {
+        "label": "Ezekiel 34:23",
+        "book": 25,
+        "chapter": 34,
+        "verse": 23
+      },
+      {
+        "label": "Ezekiel 34:24",
+        "book": 25,
+        "chapter": 34,
+        "verse": 24
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 34:25",
+        "quote": "I will make with them a covenant of peace"
+      }
+    ]
+  },
+  {
+    "id": "the-stick-of-joseph-or-the-tribe-of-joseph-ezekiel-37-19-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 37:19",
+    "appliesTo": [
+      "Ezekiel 37:19"
+    ],
+    "title": "“The stick of Joseph” — the Greek has “the tribe of Joseph”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 37:19 has the Lord take “the stick of Joseph”. Brenton’s Greek prints “τὴν φυλὴν”, which Brenton’s English renders “the tribe”.",
+    "text": "KJV Ezekiel 37:19: “I will take the stick of Joseph”. Hebrew (WLC) 37:19: לֹקֵ֜חַ אֶת־עֵ֤ץ יֹוסֵף֙. Brenton’s Greek 37:19: ἰδοὺ ἐγὼ λήψομαι τὴν φυλὴν Ἰωσὴφ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK37.htm) prints: “I will take the tribe of Joseph”. Fetched from https://bolls.life/get-text/WLC/26/37/ and https://ebible.org/grcbrent/EZK37.htm.",
+    "reasoning": "Verses 37:16–17 in the KJV have the prophet take a stick and write on it. At 37:19 the Hebrew quoted prints the word the KJV renders “stick” (עץ). The Greek prints “tribe” here, and prints “ῥάβδον”, “rod”, later in the same verse for the one stick. The object the Lord takes differs: a stick in the KJV, a tribe in the Greek.",
+    "scope": "T applies at Ezekiel 37:19. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Greek of 37:16–17 is not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. This compares an object word with an interpreted collective; it does not deny that the stick symbolizes a tribe.",
+    "sources": [
+      {
+        "label": "Ezekiel 37: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK37.htm"
+      },
+      {
+        "label": "Ezekiel 37: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/37/"
+      },
+      {
+        "label": "Ezekiel 37: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK37.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 37:19",
+        "book": 25,
+        "chapter": 37,
+        "verse": 19
+      },
+      {
+        "label": "Ezekiel 37:16",
+        "book": 25,
+        "chapter": 37,
+        "verse": 16
+      },
+      {
+        "label": "Ezekiel 37:17",
+        "book": 25,
+        "chapter": 37,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 37:19",
+        "quote": "I will take the stick of Joseph"
+      }
+    ]
+  },
+  {
+    "id": "one-king-shall-be-king-to-them-all-or-they-shall-have-one-prince-ezekiel-37-22-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 37:22",
+    "appliesTo": [
+      "Ezekiel 37:22",
+      "Ezekiel 37:24"
+    ],
+    "title": "“One king shall be king to them all” — the Greek has “one prince”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 37:22 and 37:24 says there will be “one king” and that “David my servant shall be king over them”. Brenton’s Greek prints “ἄρχων”, which Brenton’s English renders “prince”, at both verses.",
+    "text": "KJV Ezekiel 37:22: “one king shall be king to them all”. Hebrew (WLC) 37:22: וּמֶ֧לֶךְ אֶחָ֛ד יִֽהְיֶ֥ה לְכֻלָּ֖ם לְמֶ֑לֶךְ. Brenton’s Greek 37:22: ἄρχων εἷς ἔσται αὐτῶν. Brenton’s own English (https://ebible.org/eng-Brenton/EZK37.htm) prints: “they shall have one prince”. KJV Ezekiel 37:24: “David my servant shall be king over them”. Hebrew (WLC) 37:24: וְעַבְדִּ֤י דָוִד֙ מֶ֣לֶךְ עֲלֵיהֶ֔ם. Brenton’s Greek 37:24: ὁ δοῦλός μου Δαυὶδ ἄρχων ἐν μέσῳ αὐτῶν. Brenton’s own English (https://ebible.org/eng-Brenton/EZK37.htm) prints: “my servant David shall be a prince in the midst of them”. Fetched from https://bolls.life/get-text/WLC/26/37/ and https://ebible.org/grcbrent/EZK37.htm.",
+    "reasoning": "The Hebrew quoted prints the word for king (מלך) at both verses. The Greek prints a word for a ruler or prince. The Greek of 37:22 prints “βασιλείας”, “kingdoms”, in the same verse for the two kingdoms. So the Greek has the word for kingdoms in 37:22 but the word for prince where the KJV has “king”.",
+    "scope": "T applies at Ezekiel 37:22 and Ezekiel 37:24. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say that “prince” excludes the office of a king. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 37: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK37.htm"
+      },
+      {
+        "label": "Ezekiel 37: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/37/"
+      },
+      {
+        "label": "Ezekiel 37: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK37.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 37:22",
+        "book": 25,
+        "chapter": 37,
+        "verse": 22
+      },
+      {
+        "label": "Ezekiel 37:24",
+        "book": 25,
+        "chapter": 37,
+        "verse": 24
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 37:22",
+        "quote": "one king shall be king to them all"
+      },
+      {
+        "label": "A",
+        "ref": "Ezekiel 37:24",
+        "quote": "David my servant shall be king over them"
+      }
+    ]
+  },
+  {
+    "id": "the-chief-prince-of-meshech-and-tubal-or-rhos-prince-of-mesoch-and-thobel-ezekiel-38-2-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 38:2",
+    "appliesTo": [
+      "Ezekiel 38:2",
+      "Ezekiel 39:1"
+    ],
+    "title": "“The chief prince of Meshech and Tubal” — the Greek prints “Rhos” as a name",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 38:2 and 39:1 has “the chief prince of Meshech and Tubal”. Brenton’s Greek prints “Ῥὼς”, which Brenton’s English prints as “Rhos”, before “prince of Mesoch and Thobel”.",
+    "text": "KJV Ezekiel 38:2: “the chief prince of Meshech and Tubal”. Hebrew (WLC) 38:2: נְשִׂ֕יא רֹ֖אשׁ מֶ֣שֶׁךְ וְתֻבָ֑ל. Brenton’s Greek 38:2: ἄρχοντα Ῥὼς Μεσὸχ, καὶ Θοβὲλ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK38.htm) prints: “Rhos, prince of Mesoch and Thobel”. KJV Ezekiel 39:1: “the chief prince of Meshech and Tubal”. Hebrew (WLC) 39:1: נְשִׂ֕יא רֹ֖אשׁ מֶ֥שֶׁךְ וְתֻבָֽל. Brenton’s Greek 39:1: ἄρχοντα Ῥὼς, Μεσὸχ, καὶ Θοβέλ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK39.htm) prints: “Rhos prince of Mesoch and Thobel”. Fetched from https://bolls.life/get-text/WLC/26/38/, https://bolls.life/get-text/WLC/26/39/, https://ebible.org/grcbrent/EZK38.htm and https://ebible.org/grcbrent/EZK39.htm.",
+    "reasoning": "The Hebrew quoted prints two words before Meshech: the word for prince and the word ראש. The KJV renders the second “chief”. The Greek prints it as a name, “Rhos”, so that the Greek has a name where the KJV has an adjective.",
+    "scope": "T applies at Ezekiel 38:2 and Ezekiel 39:1. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say that the Hebrew word ראש is a name or that it is not; it says only what each text prints. Brenton’s Greek page prints no counterpart of the Rhos name at 38:3, so that verse is not placed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 38: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK38.htm"
+      },
+      {
+        "label": "Ezekiel 39: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK39.htm"
+      },
+      {
+        "label": "Ezekiel 38: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/38/"
+      },
+      {
+        "label": "Ezekiel 39: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/39/"
+      },
+      {
+        "label": "Ezekiel 38: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK38.htm"
+      },
+      {
+        "label": "Ezekiel 39: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK39.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 38:2",
+        "book": 25,
+        "chapter": 38,
+        "verse": 2
+      },
+      {
+        "label": "Ezekiel 39:1",
+        "book": 25,
+        "chapter": 39,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 38:2",
+        "quote": "the chief prince of Meshech and Tubal"
+      },
+      {
+        "label": "A",
+        "ref": "Ezekiel 39:1",
+        "quote": "the chief prince of Meshech and Tubal"
+      }
+    ]
+  },
+  {
+    "id": "the-valley-of-hamongog-or-the-burial-place-of-gog-ezekiel-39-11",
+    "mode": "contradictions",
+    "ref": "Ezekiel 39:11",
+    "appliesTo": [
+      "Ezekiel 39:11",
+      "Ezekiel 39:16"
+    ],
+    "title": "“The valley of Hamongog” and “Hamonah” — names the KJV leaves untranslated; the Greek has “the burial-place of Gog”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 39:11 and 39:16 prints the names “Hamongog” and “Hamonah”. The Hebrew prints words that include the one the KJV renders “multitude” in the same verse. Brenton’s Greek prints “the burial-place of Gog” and “Burial-place”.",
+    "text": "KJV Ezekiel 39:11: “all his multitude” … “The valley of Hamongog”. Hebrew (WLC) 39:11: הֲמֹונֹ֔ה … גֵּ֖יא הֲמֹ֥ון גֹּֽוג. Brenton’s Greek 39:11: Τὸ πολυάνδριον τοῦ Γώγ. Brenton’s own English (https://ebible.org/eng-Brenton/EZK39.htm) prints: “the burial-place of Gog”. KJV Ezekiel 39:16: “the name of the city shall be Hamonah”. Hebrew (WLC) 39:16: שֶׁם־עִ֛יר הֲמֹונָ֖ה. Brenton’s Greek 39:16: τὸ ὄνομα τῆς πόλεως, Πολυάνδριον. Brenton’s own English (https://ebible.org/eng-Brenton/EZK39.htm) prints: “the name of the city shall be Burial-place”. Fetched from https://bolls.life/get-text/WLC/26/39/ and https://ebible.org/grcbrent/EZK39.htm.",
+    "reasoning": "At 39:11 the KJV renders the Hebrew word המונה as “multitude” (“all his multitude”) and prints the name Hamongog for the three words “גיא המון גוג”. At 39:16 it prints the name Hamonah for one word. The Greek prints a common noun, “πολυάνδριον”, which Brenton’s English renders “burial-place”, for both. So the KJV leaves the Hebrew words untranslated as names, and the Greek replaces them with a noun of a different meaning.",
+    "scope": "T applies at Ezekiel 39:11 and Ezekiel 39:16. The Hebrew names are quoted from the edition; the record does not say that a transliterated name is an error, and does not say what the names signified to those who gave them. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The KJV also prints “Hamongog” at 39:15; that verse is not placed. The Greek verse numbers agree with the KJV. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 39: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK39.htm"
+      },
+      {
+        "label": "Ezekiel 39: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/39/"
+      },
+      {
+        "label": "Ezekiel 39: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK39.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 39:11",
+        "book": 25,
+        "chapter": 39,
+        "verse": 11
+      },
+      {
+        "label": "Ezekiel 39:16",
+        "book": 25,
+        "chapter": 39,
+        "verse": 16
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Hebrew and Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 39:11",
+        "quote": "The valley of Hamongog"
+      },
+      {
+        "label": "A",
+        "ref": "Ezekiel 39:16",
+        "quote": "the name of the city shall be Hamonah"
+      }
+    ]
+  },
+  {
+    "id": "posts-of-threescore-cubits-or-twenty-cubits-ezekiel-40-14-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 40:14",
+    "appliesTo": [
+      "Ezekiel 40:14"
+    ],
+    "title": "“Posts of threescore cubits” — the Greek has “twenty cubits”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 40:14 gives “threescore cubits”. Brenton’s Greek prints “πήχεις εἴκοσι”, which Brenton’s English renders “twenty cubits”.",
+    "text": "KJV Ezekiel 40:14: “posts of threescore cubits”. Hebrew (WLC) 40:14: אֵילִ֖ים שִׁשִּׁ֣ים אַמָּ֑ה. Brenton’s Greek 40:14: πήχεις εἴκοσι. Brenton’s own English (https://ebible.org/eng-Brenton/EZK40.htm) prints: “twenty cubits”. Fetched from https://bolls.life/get-text/WLC/26/40/ and https://ebible.org/grcbrent/EZK40.htm.",
+    "reasoning": "Both texts give a figure in cubits in this verse. The KJV and the Hebrew quoted give sixty; the Greek gives twenty. The Greek verse also words the thing measured differently (“the open space of the porch of the gate”), so the record compares the figure only.",
+    "scope": "T applies at Ezekiel 40:14. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say what the figure measures in either text. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The numbers accompany differently described objects; this does not establish two measurements of the same dimension.",
+    "sources": [
+      {
+        "label": "Ezekiel 40: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK40.htm"
+      },
+      {
+        "label": "Ezekiel 40: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/40/"
+      },
+      {
+        "label": "Ezekiel 40: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK40.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 40:14",
+        "book": 25,
+        "chapter": 40,
+        "verse": 14
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 40:14",
+        "quote": "posts of threescore cubits"
+      }
+    ]
+  },
+  {
+    "id": "the-breadth-eleven-cubits-or-the-breadth-twelve-cubits-ezekiel-40-49-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 40:49",
+    "appliesTo": [
+      "Ezekiel 40:49"
+    ],
+    "title": "“The breadth eleven cubits” — the Greek has “twelve cubits”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 40:49 gives the porch’s breadth as “eleven cubits”. Brenton’s Greek prints “δώδεκα”, which Brenton’s English renders “twelve”.",
+    "text": "KJV Ezekiel 40:49: “the breadth eleven cubits”. Hebrew (WLC) 40:49: וְרֹ֙חַב֙ עַשְׁתֵּ֣י עֶשְׂרֵ֣ה אַמָּ֔ה. Brenton’s Greek 40:49: τὸ εὖρος πηχῶν δώδεκα. Brenton’s own English (https://ebible.org/eng-Brenton/EZK40.htm) prints: “the breadth twelve cubits”. Fetched from https://bolls.life/get-text/WLC/26/40/ and https://ebible.org/grcbrent/EZK40.htm.",
+    "reasoning": "The length is twenty cubits in both texts. The breadth is eleven in the KJV and the Hebrew quoted, and twelve in the Greek.",
+    "scope": "T applies at Ezekiel 40:49. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 40: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK40.htm"
+      },
+      {
+        "label": "Ezekiel 40: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/40/"
+      },
+      {
+        "label": "Ezekiel 40: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK40.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 40:49",
+        "book": 25,
+        "chapter": 40,
+        "verse": 49
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 40:49",
+        "quote": "the breadth eleven cubits"
+      }
+    ]
+  },
+  {
+    "id": "the-length-twenty-cubits-or-the-length-of-the-doors-forty-cubits-ezekiel-41-4-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 41:4",
+    "appliesTo": [
+      "Ezekiel 41:4"
+    ],
+    "title": "“The length thereof, twenty cubits” — the Greek has “the length of the doors, forty cubits”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 41:4 gives the length as “twenty cubits”. Brenton’s Greek prints “τεσσαράκοντα”, which Brenton’s English renders “forty”.",
+    "text": "KJV Ezekiel 41:4: “measured the length thereof, twenty cubits”. Hebrew (WLC) 41:4: וַיָּ֨מָד אֶת־אָרְכֹּ֜ו עֶשְׂרִ֣ים אַמָּ֗ה. Brenton’s Greek 41:4: τὸ μῆκος τῶν θυρῶν πηχῶν τεσσαράκοντα. Brenton’s own English (https://ebible.org/eng-Brenton/EZK41.htm) prints: “the length of the doors, forty cubits”. Fetched from https://bolls.life/get-text/WLC/26/41/ and https://ebible.org/grcbrent/EZK41.htm.",
+    "reasoning": "The breadth is twenty cubits in both texts. The length is twenty in the KJV and the Hebrew quoted, and forty in the Greek, which also names the thing measured as “the doors”.",
+    "scope": "T applies at Ezekiel 41:4. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say what the figure measures beyond what each text prints. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The numbers accompany differently described objects; this does not establish two measurements of the same dimension.",
+    "sources": [
+      {
+        "label": "Ezekiel 41: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK41.htm"
+      },
+      {
+        "label": "Ezekiel 41: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/41/"
+      },
+      {
+        "label": "Ezekiel 41: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK41.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 41:4",
+        "book": 25,
+        "chapter": 41,
+        "verse": 4
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 41:4",
+        "quote": "measured the length thereof, twenty cubits"
+      }
+    ]
+  },
+  {
+    "id": "the-breadth-ten-thousand-or-the-breadth-twenty-thousand-ezekiel-45-1-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 45:1",
+    "appliesTo": [
+      "Ezekiel 45:1",
+      "Ezekiel 45:3",
+      "Ezekiel 45:5"
+    ],
+    "title": "“the breadth shall be ten thousand” — the Greek has “twenty thousand” at 45:1, 45:3 and 45:5",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 45:1, 45:3 and 45:5 gives the holy portion’s breadth as ten thousand. Brenton’s Greek prints “εἴκοσι χιλιάδας”, which Brenton’s English renders “twenty thousand”, at each.",
+    "text": "KJV Ezekiel 45:1: “the breadth shall be ten thousand”. Hebrew (WLC) 45:1: וְרֹ֖חַב עֲשָׂ֣רָה אָ֑לֶף. Brenton’s Greek 45:1: καὶ εὖρος εἴκοσι χιλιάδας. Brenton’s own English (https://ebible.org/eng-Brenton/EZK45.htm) prints: “in breadth twenty thousand”. KJV Ezekiel 45:3: “the breadth of ten thousand”. Hebrew (WLC) 45:3: וְרֹ֖חַב עֲשֶׂ֣רֶת אֲלָפִ֑ים. Brenton’s Greek 45:3: καὶ εὖρος εἴκοσι χιλιάδας. Brenton’s own English (https://ebible.org/eng-Brenton/EZK45.htm) prints: “the breadth twenty thousand”. KJV Ezekiel 45:5: “the ten thousand of breadth”. Hebrew (WLC) 45:5: וַעֲשֶׂ֥רֶת אֲלָפִ֖ים רֹ֑חַב. Brenton’s Greek 45:5: καὶ εὖρος εἴκοσι χιλιάδες. Brenton’s own English (https://ebible.org/eng-Brenton/EZK45.htm) prints: “the breadth twenty thousand”. Fetched from https://bolls.life/get-text/WLC/26/45/ and https://ebible.org/grcbrent/EZK45.htm.",
+    "reasoning": "The length is five and twenty thousand in both texts at each verse. The breadth is ten thousand in the KJV and the Hebrew quoted, and twenty thousand in the Greek, at three verses in a row.",
+    "scope": "T applies at Ezekiel 45:1, Ezekiel 45:3 and Ezekiel 45:5. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew of 45:3 has written and read forms for the word “five”, and that of 45:5 has them for “shall be”; they are not part of the finding. Verse 48:9 is a separate record. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 45: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK45.htm"
+      },
+      {
+        "label": "Ezekiel 45: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/45/"
+      },
+      {
+        "label": "Ezekiel 45: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK45.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 45:1",
+        "book": 25,
+        "chapter": 45,
+        "verse": 1
+      },
+      {
+        "label": "Ezekiel 45:3",
+        "book": 25,
+        "chapter": 45,
+        "verse": 3
+      },
+      {
+        "label": "Ezekiel 45:5",
+        "book": 25,
+        "chapter": 45,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 45:1",
+        "quote": "the breadth shall be ten thousand"
+      },
+      {
+        "label": "A",
+        "ref": "Ezekiel 45:3",
+        "quote": "the breadth of ten thousand"
+      },
+      {
+        "label": "A",
+        "ref": "Ezekiel 45:5",
+        "quote": "the ten thousand of breadth"
+      }
+    ]
+  },
+  {
+    "id": "for-twenty-chambers-or-cities-to-dwell-in-ezekiel-45-5-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 45:5",
+    "appliesTo": [
+      "Ezekiel 45:5"
+    ],
+    "title": "“For a possession for twenty chambers” — the Greek has “cities to dwell in”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 45:5 gives the Levites “twenty chambers” for a possession. Brenton’s Greek prints “πόλεις τοῦ κατοικεῖν”, which Brenton’s English renders “cities to dwell in”.",
+    "text": "KJV Ezekiel 45:5: “for a possession for twenty chambers”. Hebrew (WLC) 45:5: לָהֶ֛ם לַאֲחֻזָּ֖ה עֶשְׂרִ֥ים לְשָׁכֹֽת. Brenton’s Greek 45:5: εἰς κατάσχεσιν πόλεις τοῦ κατοικεῖν. Brenton’s own English (https://ebible.org/eng-Brenton/EZK45.htm) prints: “cities to dwell in for a possession”. Fetched from https://bolls.life/get-text/WLC/26/45/ and https://ebible.org/grcbrent/EZK45.htm.",
+    "reasoning": "Both texts say what the Levites have as a possession. The Hebrew quoted prints a number and a word the KJV renders “chambers”. The Greek prints a word for cities, with no number. A reader of the two texts is told the Levites hold chambers, or cities.",
+    "scope": "T applies at Ezekiel 45:5. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say what the Hebrew word translated “chambers” means beyond the KJV’s rendering. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 45: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK45.htm"
+      },
+      {
+        "label": "Ezekiel 45: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/45/"
+      },
+      {
+        "label": "Ezekiel 45: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK45.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 45:5",
+        "book": 25,
+        "chapter": 45,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 45:5",
+        "quote": "for a possession for twenty chambers"
+      }
+    ]
+  },
+  {
+    "id": "out-of-two-hundred-or-out-of-ten-ezekiel-45-15-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 45:15",
+    "appliesTo": [
+      "Ezekiel 45:15"
+    ],
+    "title": "“One lamb out of the flock, out of two hundred” — the Greek has “out of ten”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 45:15 has one lamb “out of two hundred”. Brenton’s Greek prints “ἀπὸ δέκα”, which Brenton’s English renders “out of ten”.",
+    "text": "KJV Ezekiel 45:15: “one lamb out of the flock, out of two hundred”. Hebrew (WLC) 45:15: וְשֶׂה־אַחַ֨ת מִן־הַצֹּ֤אן מִן־הַמָּאתַ֙יִם֙. Brenton’s Greek 45:15: πρόβατον ἀπὸ τῶν προβάτων ἀπὸ δέκα. Brenton’s own English (https://ebible.org/eng-Brenton/EZK45.htm) prints: “one sheep from the flock out of ten”. Fetched from https://bolls.life/get-text/WLC/26/45/ and https://ebible.org/grcbrent/EZK45.htm.",
+    "reasoning": "Both texts give a proportion for the lamb from the flock. The KJV and the Hebrew quoted give one in two hundred. The Greek gives one in ten.",
+    "scope": "T applies at Ezekiel 45:15. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 45: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK45.htm"
+      },
+      {
+        "label": "Ezekiel 45: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/45/"
+      },
+      {
+        "label": "Ezekiel 45: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK45.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 45:15",
+        "book": 25,
+        "chapter": 45,
+        "verse": 15
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 45:15",
+        "quote": "one lamb out of the flock, out of two hundred"
+      }
+    ]
+  },
+  {
+    "id": "ten-thousand-in-breadth-or-twenty-five-thousand-in-breadth-ezekiel-48-9-greek",
+    "mode": "contradictions",
+    "ref": "Ezekiel 48:9",
+    "appliesTo": [
+      "Ezekiel 48:9"
+    ],
+    "title": "“Of ten thousand in breadth” — the Greek has “twenty-five thousand”",
+    "status": "Context",
+    "summary": "The KJV of Ezekiel 48:9 gives the oblation as five and twenty thousand in length and ten thousand in breadth. Brenton’s Greek prints twenty-five thousand for the breadth as well.",
+    "text": "KJV Ezekiel 48:9: “of five and twenty thousand in length, and of ten thousand in breadth”. Hebrew (WLC) 48:9: אֹ֗רֶךְ חֲמִשָּׁ֤ה וְעֶשְׂרִים֙ אֶ֔לֶף וְרֹ֖חַב עֲשֶׂ֥רֶת אֲלָפִֽים. Brenton’s Greek 48:9: μῆκος πέντε καὶ εἴκοσι χιλιάδες, καὶ εὖρος εἴκοσι πέντε χιλιάδες. Brenton’s own English (https://ebible.org/eng-Brenton/EZK48.htm) prints: “in length twenty-five thousand, and in breadth twenty-five thousand”. Fetched from https://bolls.life/get-text/WLC/26/48/ and https://ebible.org/grcbrent/EZK48.htm.",
+    "reasoning": "The length is five and twenty thousand in both texts. The breadth is ten thousand in the KJV and the Hebrew quoted, and twenty-five thousand in the Greek, which makes the Greek breadth equal to its length. The KJV’s later verses (48:10, 48:13) give the priests and the Levites ten thousand in breadth.",
+    "scope": "T applies at Ezekiel 48:9. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not work out how the parts of the portion fit together in either text. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Ezekiel 48: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK48.htm"
+      },
+      {
+        "label": "Ezekiel 48: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/26/48/"
+      },
+      {
+        "label": "Ezekiel 48: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/EZK48.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 48:9",
+        "book": 25,
+        "chapter": 48,
+        "verse": 9
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 48:9",
+        "quote": "of five and twenty thousand in length, and of ten thousand in breadth"
+      }
+    ]
+  },
+  {
+    "id": "six-lambs-and-a-ram-on-the-sabbath-or-two-lambs-on-the-sabbath-ezekiel-46-4",
+    "mode": "contradictions",
+    "ref": "Ezekiel 46:4",
+    "appliesTo": [
+      "Ezekiel 46:4",
+      "Numbers 28:9"
+    ],
+    "title": "The sabbath burnt offering: “six lambs … and a ram”, or “two lambs”?",
+    "status": "Context",
+    "summary": "Ezekiel 46:4 gives the prince’s sabbath burnt offering as “six lambs without blemish, and a ram without blemish”. Numbers 28:9 gives the sabbath offering as “two lambs of the first year without spot”.",
+    "text": "KJV Ezekiel 46:4: “shall be six lambs without blemish, and a ram without blemish”. KJV Numbers 28:9: “on the sabbath day two lambs of the first year without spot”.",
+    "reasoning": "Both verses give the burnt offering for the sabbath day. Numbers names two lambs and no ram; Ezekiel names six lambs and a ram. The two can both stand if they are offerings of different persons or different ordinances: Numbers 28 is addressed to the people at large, and Ezekiel 46:4 names “the prince”. The verses quoted do not say that the Ezekiel offering is added to the Numbers offering or replaces it.",
+    "scope": "No tag is proposed: the record compares two statements in the KJV only. It does not say that either is a mistake, does not say which law governs, and does not say that Ezekiel’s temple is or is not to be built. It does not rest on the Hebrew or the Greek.",
+    "sources": [
+      {
+        "label": "Ezekiel 46: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK46.htm"
+      },
+      {
+        "label": "Numbers 28: KJV",
+        "url": "https://ebible.org/eng-kjv/NUM28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 46:4",
+        "book": 25,
+        "chapter": 46,
+        "verse": 4
+      },
+      {
+        "label": "Numbers 28:9",
+        "book": 3,
+        "chapter": 28,
+        "verse": 9
+      }
+    ],
+    "checked": "2026-10-13",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 46:4",
+        "quote": "shall be six lambs without blemish, and a ram without blemish"
+      },
+      {
+        "label": "B",
+        "ref": "Numbers 28:9",
+        "quote": "on the sabbath day two lambs of the first year without spot"
+      }
+    ]
+  },
+  {
+    "id": "a-young-bullock-six-lambs-and-a-ram-or-two-young-bullocks-one-ram-seven-lambs-ezekiel-46-6",
+    "mode": "contradictions",
+    "ref": "Ezekiel 46:6",
+    "appliesTo": [
+      "Ezekiel 46:6",
+      "Numbers 28:11"
+    ],
+    "title": "The new moon burnt offering: “a young bullock … six lambs, and a ram”, or “two young bullocks, and one ram, seven lambs”?",
+    "status": "Context",
+    "summary": "Ezekiel 46:6 gives the new moon offering as “a young bullock without blemish, and six lambs, and a ram”. Numbers 28:11 gives it as “two young bullocks, and one ram, seven lambs of the first year without spot”.",
+    "text": "KJV Ezekiel 46:6: “a young bullock without blemish, and six lambs, and a ram”. KJV Numbers 28:11: “two young bullocks, and one ram, seven lambs of the first year without spot”.",
+    "reasoning": "Both verses give the burnt offering for the day of the new moon. The animals are the same three kinds; the numbers differ: one bullock against two, six lambs against seven, and one ram in both. The two can both stand if they are different ordinances or offered by different persons; the verses quoted do not say whether the Ezekiel figures are additional to, or in place of, those of Numbers.",
+    "scope": "No tag is proposed: the record compares two statements in the KJV only. It does not say that either is a mistake and does not say which governs. It does not rest on the Hebrew or the Greek.",
+    "sources": [
+      {
+        "label": "Ezekiel 46: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK46.htm"
+      },
+      {
+        "label": "Numbers 28: KJV",
+        "url": "https://ebible.org/eng-kjv/NUM28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 46:6",
+        "book": 25,
+        "chapter": 46,
+        "verse": 6
+      },
+      {
+        "label": "Numbers 28:11",
+        "book": 3,
+        "chapter": 28,
+        "verse": 11
+      }
+    ],
+    "checked": "2026-10-13",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 46:6",
+        "quote": "a young bullock without blemish, and six lambs, and a ram"
+      },
+      {
+        "label": "B",
+        "ref": "Numbers 28:11",
+        "quote": "two young bullocks, and one ram, seven lambs of the first year without spot"
+      }
+    ]
+  },
+  {
+    "id": "a-lamb-every-morning-or-two-lambs-morning-and-even-ezekiel-46-13",
+    "mode": "contradictions",
+    "ref": "Ezekiel 46:13",
+    "appliesTo": [
+      "Ezekiel 46:13",
+      "Numbers 28:3"
+    ],
+    "title": "The daily burnt offering: “a lamb … every morning”, or “two lambs” offered “in the morning” and “at even”?",
+    "status": "Context",
+    "summary": "Ezekiel 46:13 has the daily burnt offering as one lamb, prepared “every morning”. Numbers 28:3–4 has two lambs a day, one in the morning and the other “at even”.",
+    "text": "KJV Ezekiel 46:13: “a lamb of the first year without blemish: thou shalt prepare it every morning”. KJV Numbers 28:3: “two lambs of the first year without spot day by day, for a continual burnt offering”. KJV Numbers 28:4: “The one lamb shalt thou offer in the morning, and the other lamb shalt thou offer at even”.",
+    "reasoning": "Both passages give the continual burnt offering. Numbers has an evening lamb; Ezekiel 46:13–15 names the morning only, three times (“every morning”, “every morning”, “every morning”). The two can both stand if Ezekiel 46 names one part of a daily offering and leaves the evening lamb unmentioned, or is a different ordinance; the verses quoted do not say which.",
+    "scope": "No tag is proposed: the record compares statements in the KJV only. It does not say that either is a mistake. A silence about the evening in Ezekiel is not asserted as a denial of it; the record states only that the evening lamb is named in Numbers and not in the three verses of Ezekiel 46:13–15. It does not rest on the Hebrew or the Greek.",
+    "sources": [
+      {
+        "label": "Ezekiel 46: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK46.htm"
+      },
+      {
+        "label": "Numbers 28: KJV",
+        "url": "https://ebible.org/eng-kjv/NUM28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 46:13",
+        "book": 25,
+        "chapter": 46,
+        "verse": 13
+      },
+      {
+        "label": "Numbers 28:3",
+        "book": 3,
+        "chapter": 28,
+        "verse": 3
+      },
+      {
+        "label": "Numbers 28:4",
+        "book": 3,
+        "chapter": 28,
+        "verse": 4
+      },
+      {
+        "label": "Ezekiel 46:14",
+        "book": 25,
+        "chapter": 46,
+        "verse": 14
+      },
+      {
+        "label": "Ezekiel 46:15",
+        "book": 25,
+        "chapter": 46,
+        "verse": 15
+      }
+    ],
+    "checked": "2026-10-13",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 46:13",
+        "quote": "a lamb of the first year without blemish: thou shalt prepare it every morning"
+      },
+      {
+        "label": "B",
+        "ref": "Numbers 28:3",
+        "quote": "two lambs of the first year without spot day by day, for a continual burnt offering"
+      }
+    ]
+  },
+  {
+    "id": "seven-bullocks-and-seven-rams-daily-or-two-young-bullocks-one-ram-seven-lambs-ezekiel-45-23",
+    "mode": "contradictions",
+    "ref": "Ezekiel 45:23",
+    "appliesTo": [
+      "Ezekiel 45:23",
+      "Numbers 28:19"
+    ],
+    "title": "The seven days of the passover feast: “seven bullocks and seven rams … daily”, or “two young bullocks, and one ram, and seven lambs”?",
+    "status": "Context",
+    "summary": "Ezekiel 45:23 gives the burnt offering for each of the seven days of the feast as “seven bullocks and seven rams”. Numbers 28:19 gives it as “two young bullocks, and one ram, and seven lambs”. Ezekiel 45:22 names a bullock for the prince and people on that day; 45:23 names a goat daily, as Numbers 28:22 also does.",
+    "text": "KJV Ezekiel 45:23: “seven bullocks and seven rams without blemish daily the seven days”. KJV Numbers 28:19: “two young bullocks, and one ram, and seven lambs of the first year”. KJV Ezekiel 45:22: “a bullock for a sin offering”. KJV Numbers 28:22: “one goat for a sin offering”.",
+    "reasoning": "Both passages give the daily offering for the seven days of unleavened bread. Ezekiel has seven bullocks and seven rams a day and no lambs; Numbers has two bullocks, one ram and seven lambs. Ezekiel 45:22 specifies a bullock on that day for the prince and people, while 45:23 specifies a goat daily. Numbers 28:22 also specifies a goat; the quoted bullock is not established as a competing daily sin offering. The two can both stand if they are different ordinances; the verses quoted do not say that one replaces the other.",
+    "scope": "No tag is proposed: the record compares statements in the KJV only. It does not say that either is a mistake and does not say which governs. It does not rest on the Hebrew or the Greek. Ezekiel 45:23 also names “a kid of the goats daily for a sin offering”, which is not set against Numbers 28:22 as a conflict.",
+    "sources": [
+      {
+        "label": "Ezekiel 45: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK45.htm"
+      },
+      {
+        "label": "Numbers 28: KJV",
+        "url": "https://ebible.org/eng-kjv/NUM28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 45:23",
+        "book": 25,
+        "chapter": 45,
+        "verse": 23
+      },
+      {
+        "label": "Numbers 28:19",
+        "book": 3,
+        "chapter": 28,
+        "verse": 19
+      },
+      {
+        "label": "Ezekiel 45:22",
+        "book": 25,
+        "chapter": 45,
+        "verse": 22
+      },
+      {
+        "label": "Numbers 28:22",
+        "book": 3,
+        "chapter": 28,
+        "verse": 22
+      }
+    ],
+    "checked": "2026-10-13",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 45:23",
+        "quote": "seven bullocks and seven rams without blemish daily the seven days"
+      },
+      {
+        "label": "B",
+        "ref": "Numbers 28:19",
+        "quote": "two young bullocks, and one ram, and seven lambs of the first year"
+      }
+    ]
+  },
+  {
+    "id": "thou-hast-been-in-eden-the-anointed-cherub-who-is-the-king-of-tyrus-addressed-as-ezekiel-28-13",
+    "mode": "questions",
+    "ref": "Ezekiel 28:13",
+    "appliesTo": [
+      "Ezekiel 28:13"
+    ],
+    "title": "“Thou hast been in Eden the garden of God … the anointed cherub” — of whom is this said?",
+    "status": "Context",
+    "summary": "Ezekiel 28:12 begins a lamentation “upon the king of Tyrus”. Verses 13–14 say of the one addressed that he has been “in Eden the garden of God” and is “the anointed cherub”. The verses do not say how a king of Tyrus is said to have been there.",
+    "text": "KJV Ezekiel 28:2: “say unto the prince of Tyrus”. KJV Ezekiel 28:12: “Son of man, take up a lamentation upon the king of Tyrus, and say unto him, Thus saith the Lord God; Thou sealest up the sum, full of wisdom, and perfect in beauty.” KJV Ezekiel 28:13: “Thou hast been in Eden the garden of God”. KJV Ezekiel 28:14: “Thou art the anointed cherub that covereth”.",
+    "reasoning": "Verse 2 addresses “the prince of Tyrus” and verse 12 “the king of Tyrus”. Verses 13–14 describe the garden of God, a day of creation, an anointed cherub and a holy mountain. The passage does not say whether the king of Tyrus is described in figures taken from another story, whether it addresses a being behind the king, or whether the king is the speaker’s subject throughout. Possible readings, named only as readings: a human ruler addressed in the language of a garden story; a figure drawn from an earlier account of a first state; a being other than a man addressed through the king. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not examine Genesis 2–3 or Isaiah 14, does not say that any reading is the right one, and does not claim that no other passage says more about the one addressed. The wording differences of the Greek at 28:13–16 are the subject of a separate T record.",
+    "sources": [
+      {
+        "label": "Ezekiel 28: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 28:13",
+        "book": 25,
+        "chapter": 28,
+        "verse": 13
+      },
+      {
+        "label": "Ezekiel 28:12",
+        "book": 25,
+        "chapter": 28,
+        "verse": 12
+      },
+      {
+        "label": "Ezekiel 28:14",
+        "book": 25,
+        "chapter": 28,
+        "verse": 14
+      },
+      {
+        "label": "Ezekiel 28:2",
+        "book": 25,
+        "chapter": 28,
+        "verse": 2
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 28:13",
+        "quote": "Thou hast been in Eden the garden of God"
+      }
+    ]
+  },
+  {
+    "id": "gog-of-the-land-of-magog-who-is-gog-and-when-is-the-latter-years-ezekiel-38-2",
+    "mode": "questions",
+    "ref": "Ezekiel 38:2",
+    "appliesTo": [
+      "Ezekiel 38:2"
+    ],
+    "title": "“Gog, the land of Magog” — who is Gog, and when are “the latter years”?",
+    "status": "Context",
+    "summary": "Ezekiel 38:2 names “Gog, the land of Magog, the chief prince of Meshech and Tubal”. Verse 8 puts the coming “after many days … in the latter years”. The verses do not say who Gog is or when the latter years are.",
+    "text": "KJV Ezekiel 38:2: “Son of man, set thy face against Gog, the land of Magog, the chief prince of Meshech and Tubal, and prophesy against him,” KJV Ezekiel 38:8: “After many days thou shalt be visited: in the latter years thou shalt come into the land”. KJV Ezekiel 38:16: “it shall be in the latter days”.",
+    "reasoning": "The quoted verses name a ruler, a land and two peoples, and gives times as “after many days”, “the latter years” and “the latter days”. The quoted verses do not identify Gog with an independently named person or give a reckoning for those times. Possible readings, named only as readings: a ruler of the prophet’s own period under a name used for him; a ruler of a time after the prophet; a name that stands for a host, without one person behind it. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek (the Greek of 38:2 and 39:1 is the subject of a separate T record), and does not claim that no other passage says more about Gog.",
+    "sources": [
+      {
+        "label": "Ezekiel 38: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK38.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 38:2",
+        "book": 25,
+        "chapter": 38,
+        "verse": 2
+      },
+      {
+        "label": "Ezekiel 38:8",
+        "book": 25,
+        "chapter": 38,
+        "verse": 8
+      },
+      {
+        "label": "Ezekiel 38:16",
+        "book": 25,
+        "chapter": 38,
+        "verse": 16
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 38:2",
+        "quote": "Gog, the land of Magog, the chief prince of Meshech and Tubal"
+      }
+    ]
+  },
+  {
+    "id": "shew-the-house-to-the-house-of-israel-is-the-house-to-be-built-ezekiel-43-10",
+    "mode": "questions",
+    "ref": "Ezekiel 43:10",
+    "appliesTo": [
+      "Ezekiel 43:10"
+    ],
+    "title": "“Shew the house to the house of Israel … let them measure the pattern” — is the house to be built, and by whom?",
+    "status": "Context",
+    "summary": "Ezekiel 43:10–11 has the prophet “shew the house” and “let them measure the pattern” and “write it in their sight, that they may keep the whole form”. The verses do not say whether, when or by whom the house is to be built.",
+    "text": "KJV Ezekiel 40:4: “declare all that thou seest to the house of Israel”. KJV Ezekiel 43:10: “Thou son of man, shew the house to the house of Israel, that they may be ashamed of their iniquities: and let them measure the pattern.” KJV Ezekiel 43:11: “And if they be ashamed of all that they have done, shew them the form of the house, and the fashion thereof, and the goings out thereof, and the comings in thereof, and all the forms thereof, and all the ordinances thereof, and all the forms thereof, and all the laws thereof: and write it in their sight, that they may keep the whole form thereof, and all the ordinances thereof, and do them.”",
+    "reasoning": "The prophet is told to declare and to write the form and its ordinances so that they may be kept and done. The verses give a purpose (that the people be ashamed and keep the form) and a duty (to measure the pattern), and they do not say that a house is to be built to the measures, or that it is a plan to be read. Possible readings, named only as readings: a plan for a house to be built; a vision of an order described for its teaching; a plan whose building is left to another time. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, and does not claim that no other passage says more about the house.",
+    "sources": [
+      {
+        "label": "Ezekiel 40: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK40.htm"
+      },
+      {
+        "label": "Ezekiel 43: KJV",
+        "url": "https://ebible.org/eng-kjv/EZK43.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Ezekiel 43:10",
+        "book": 25,
+        "chapter": 43,
+        "verse": 10
+      },
+      {
+        "label": "Ezekiel 43:11",
+        "book": 25,
+        "chapter": 43,
+        "verse": 11
+      },
+      {
+        "label": "Ezekiel 40:4",
+        "book": 25,
+        "chapter": 40,
+        "verse": 4
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Ezekiel 43:10",
+        "quote": "shew the house to the house of Israel"
+      }
+    ]
   }
 ]
 ;
