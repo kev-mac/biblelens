@@ -1,0 +1,21 @@
+import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
+const source=fs.readFileSync('src/reader.js','utf8'),handlers={},moves=[];let selected=false,now=0;
+const context={$:()=>({addEventListener:(name,fn)=>handlers[name]=fn}),matchMedia:()=>({matches:true}),window:{innerWidth:509,getSelection:()=>({isCollapsed:!selected})},performance:{now:()=>now},moveChapter:d=>moves.push(d)};
+vm.createContext(context);vm.runInContext(source.slice(source.indexOf('function chapterSwipeDirection(')),context);
+const touch=(x,y,id=1)=>({clientX:x,clientY:y,identifier:id});
+const event=(t,control=false)=>({touches:[t],changedTouches:[t],target:{closest:()=>control?{}:null},cancelable:true,preventDefault(){this.prevented=true;}});
+const start=(x=250,y=200,control=false)=>{now=0;handlers.touchstart(event(touch(x,y),control));};
+const end=(x,y)=>{now=300;const e=event(touch(x,y));handlers.touchend(e);return e;};
+start();assert(end(120,205).prevented);assert.equal(moves.pop(),1);
+start();assert(end(380,205).prevented);assert.equal(moves.pop(),-1);
+for(const [x,y] of [[240,202],[230,330],[170,275]]){start();end(x,y);assert.equal(moves.length,0);}
+start();handlers.touchmove(event(touch(255,250)));end(100,255);assert.equal(moves.length,0,'A scroll becoming diagonal must not navigate');
+start(10);end(150,200);assert.equal(moves.length,0,'Screen edge gesture');
+start(250,200,true);end(100,200);assert.equal(moves.length,0,'Interactive controls');
+selected=true;start();end(100,200);assert.equal(moves.length,0,'Selected text');selected=false;
+start();handlers.touchmove({...event(touch(200,200)),touches:[touch(200,200),touch(300,200,2)]});end(100,200);assert.equal(moves.length,0,'Multiple touches');
+start();handlers.touchcancel();end(100,200);assert.equal(moves.length,0,'Cancelled touch');
+start();now=1600;handlers.touchend(event(touch(100,200)));assert.equal(moves.length,0,'Long press');
+assert.equal(context.chapterSwipeDirection(-69,0,200),0);assert.equal(context.chapterSwipeDirection(-90,65,200),0);
+const vertical=event(touch(255,250));start();handlers.touchmove(vertical);assert(!vertical.prevented);
+console.log('PASS: chapter swipe direction, threshold, diagonal/vertical/tap/edge/control/selection/multitouch/cancel/long-press guards.');

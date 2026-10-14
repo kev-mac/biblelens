@@ -406,3 +406,11 @@ body.dark .brand{color:#b8cfe5}body.dark .brand b{color:#f58220}
  .reader-chapter-bar{grid-template-columns:40px minmax(0,1fr) 40px}
  .comparison-status{margin-top:12px}
 }
+
+
+/* Owner follow-up: blue/orange monogram, inverted settings, title description. */
+.brand .mark{border-color:var(--green)}.brand .mark-letter-s{color:var(--green);font-weight:700}.brand .mark-letter-l{color:#f58220;font-weight:700}
+.header-actions .reader-picker.chapter-round{background:var(--panel);color:var(--green);border:1px solid var(--green)}
+.chapter-heading-row .chapter-subtitle{display:block}
+.reader-selection-bar{padding:0}.reader-selection-bar:has(#clear-selection[hidden]){display:none}
+#chapter-text{touch-action:pan-y pinch-zoom}

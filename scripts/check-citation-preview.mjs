@@ -25,5 +25,7 @@ const verseTarget={closest:s=>s==='.verse-body'?body:null};
 handlers.pointerdown({button:0,target:verseTarget,pointerId:7,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');assert.equal(child('.preview-text').innerHTML,'Complete WEB fixture verse.');handlers.pointerup();handlers.click({target:verseTarget,preventDefault(){}});assert(!popup.hidden);handlers.keydown({key:'Escape',preventDefault(){}});
 handlers.pointerdown({button:0,target:verseTarget,pointerId:8,clientX:10,clientY:10});handlers.pointermove({pointerId:8,clientX:25,clientY:10});await new Promise(r=>setTimeout(r,550));assert(popup.hidden);
 handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');
-const html=fs.readFileSync('src/index.html','utf8');assert(!html.includes('id="ask-selection"'));for(const id of ['prev-top','next-top','prev-bottom','next-bottom'])assert(html.includes(`id="${id}"`));
+const html=fs.readFileSync('src/index.html','utf8');assert(!html.includes('id="ask-selection"'));for(const id of ['prev-bottom','next-bottom'])assert(html.includes(`id="${id}"`));
 console.log('PASS: WEB hold preview, movement cancellation, keyboard access and top/bottom chapter controls.');
+
+assert(!html.includes('id="prev-top"'));assert(!html.includes('id="next-top"'));
