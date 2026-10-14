@@ -26,4 +26,5 @@ Witness/verse-role merge results, one build/full checks, checkpoint and publicat
 
 ## Validation and release
 
-Witness-label merge: 271 applied, 0 retagged, 6 retained pending labels. No verse-roles.json supplied. One build and the full npm run check suite passed, including 18 chat reliability fixture cases. Totals: 740 evidence records plus 6 built-in studies, 545 annotated chapters, 3096 unique annotated verses, 4306 evidence placements. Annotation presence is not exhaustive review. No live generated-answer or visual correctness claim. Checkpoint/publication details are in the delivered integration report.
+Witness-label merge: 271 applied, 0 retagged, 6 retained pending labels. No verse-roles.json supplied. The initial build and full npm run check suite passed. A concurrent owner UI release eb726b7 advanced remote before push; its source and checks were preserved by merge, generated Worker conflict resolved by rebuilding from combined source, and the full suite passed again, including 18 chat reliability fixture cases. Totals: 740 evidence records plus 6 built-in studies, 545 annotated chapters, 3096 unique annotated verses, 4306 evidence placements. Annotation presence is not exhaustive review. No live generated-answer or visual correctness claim. Checkpoint/publication details are in the delivered integration report.
+

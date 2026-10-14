@@ -1,0 +1,416 @@
+[
+  {
+    "width": 375,
+    "dark": false,
+    "labels": [
+      "Translation",
+      "Violations",
+      "Question",
+      "Science",
+      "History",
+      "Contradictory"
+    ],
+    "colors": [
+      {
+        "label": "Translation",
+        "color": "rgb(80, 53, 108)",
+        "background": "rgb(235, 224, 245)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.9894465068179015
+      },
+      {
+        "label": "Violations",
+        "color": "rgb(121, 43, 34)",
+        "background": "rgb(249, 222, 216)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.548467727188989
+      },
+      {
+        "label": "Question",
+        "color": "rgb(67, 80, 35)",
+        "background": "rgb(228, 235, 203)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.071249919533872
+      },
+      {
+        "label": "Science",
+        "color": "rgb(35, 76, 59)",
+        "background": "rgb(230, 245, 237)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 8.600115660352014
+      },
+      {
+        "label": "History",
+        "color": "rgb(98, 69, 20)",
+        "background": "rgb(248, 232, 195)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.276044029927048
+      },
+      {
+        "label": "Contradictory",
+        "color": "rgb(113, 60, 25)",
+        "background": "rgb(251, 228, 210)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.250653485272742
+      }
+    ],
+    "citation": {
+      "height": 27.1875,
+      "color": "rgb(67, 80, 35)",
+      "background": "rgb(228, 235, 203)"
+    },
+    "contextSize": 12,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "dark": true,
+    "labels": [
+      "Translation",
+      "Violations",
+      "Question",
+      "Science",
+      "History",
+      "Contradictory"
+    ],
+    "colors": [
+      {
+        "label": "Translation",
+        "color": "rgb(80, 53, 108)",
+        "background": "rgb(235, 224, 245)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.9894465068179015
+      },
+      {
+        "label": "Violations",
+        "color": "rgb(121, 43, 34)",
+        "background": "rgb(249, 222, 216)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.548467727188989
+      },
+      {
+        "label": "Question",
+        "color": "rgb(67, 80, 35)",
+        "background": "rgb(228, 235, 203)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.071249919533872
+      },
+      {
+        "label": "Science",
+        "color": "rgb(35, 76, 59)",
+        "background": "rgb(230, 245, 237)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 8.600115660352014
+      },
+      {
+        "label": "History",
+        "color": "rgb(98, 69, 20)",
+        "background": "rgb(248, 232, 195)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.276044029927048
+      },
+      {
+        "label": "Contradictory",
+        "color": "rgb(113, 60, 25)",
+        "background": "rgb(251, 228, 210)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.250653485272742
+      }
+    ],
+    "citation": {
+      "height": 27.1875,
+      "color": "rgb(67, 80, 35)",
+      "background": "rgb(228, 235, 203)"
+    },
+    "contextSize": 12,
+    "errors": []
+  },
+  {
+    "width": 531,
+    "dark": false,
+    "labels": [
+      "Translation",
+      "Violations",
+      "Question",
+      "Science",
+      "History",
+      "Contradictory"
+    ],
+    "colors": [
+      {
+        "label": "Translation",
+        "color": "rgb(80, 53, 108)",
+        "background": "rgb(235, 224, 245)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.9894465068179015
+      },
+      {
+        "label": "Violations",
+        "color": "rgb(121, 43, 34)",
+        "background": "rgb(249, 222, 216)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.548467727188989
+      },
+      {
+        "label": "Question",
+        "color": "rgb(67, 80, 35)",
+        "background": "rgb(228, 235, 203)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.071249919533872
+      },
+      {
+        "label": "Science",
+        "color": "rgb(35, 76, 59)",
+        "background": "rgb(230, 245, 237)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 8.600115660352014
+      },
+      {
+        "label": "History",
+        "color": "rgb(98, 69, 20)",
+        "background": "rgb(248, 232, 195)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.276044029927048
+      },
+      {
+        "label": "Contradictory",
+        "color": "rgb(113, 60, 25)",
+        "background": "rgb(251, 228, 210)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.250653485272742
+      }
+    ],
+    "citation": {
+      "height": 27.1875,
+      "color": "rgb(67, 80, 35)",
+      "background": "rgb(228, 235, 203)"
+    },
+    "contextSize": 12,
+    "errors": []
+  },
+  {
+    "width": 531,
+    "dark": true,
+    "labels": [
+      "Translation",
+      "Violations",
+      "Question",
+      "Science",
+      "History",
+      "Contradictory"
+    ],
+    "colors": [
+      {
+        "label": "Translation",
+        "color": "rgb(80, 53, 108)",
+        "background": "rgb(235, 224, 245)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.9894465068179015
+      },
+      {
+        "label": "Violations",
+        "color": "rgb(121, 43, 34)",
+        "background": "rgb(249, 222, 216)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.548467727188989
+      },
+      {
+        "label": "Question",
+        "color": "rgb(67, 80, 35)",
+        "background": "rgb(228, 235, 203)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.071249919533872
+      },
+      {
+        "label": "Science",
+        "color": "rgb(35, 76, 59)",
+        "background": "rgb(230, 245, 237)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 8.600115660352014
+      },
+      {
+        "label": "History",
+        "color": "rgb(98, 69, 20)",
+        "background": "rgb(248, 232, 195)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.276044029927048
+      },
+      {
+        "label": "Contradictory",
+        "color": "rgb(113, 60, 25)",
+        "background": "rgb(251, 228, 210)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.250653485272742
+      }
+    ],
+    "citation": {
+      "height": 27.1875,
+      "color": "rgb(67, 80, 35)",
+      "background": "rgb(228, 235, 203)"
+    },
+    "contextSize": 12,
+    "errors": []
+  },
+  {
+    "width": 1280,
+    "dark": false,
+    "labels": [
+      "Translation",
+      "Violations",
+      "Question",
+      "Science",
+      "History",
+      "Contradictory"
+    ],
+    "colors": [
+      {
+        "label": "Translation",
+        "color": "rgb(80, 53, 108)",
+        "background": "rgb(235, 224, 245)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.9894465068179015
+      },
+      {
+        "label": "Violations",
+        "color": "rgb(121, 43, 34)",
+        "background": "rgb(249, 222, 216)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.548467727188989
+      },
+      {
+        "label": "Question",
+        "color": "rgb(67, 80, 35)",
+        "background": "rgb(228, 235, 203)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.071249919533872
+      },
+      {
+        "label": "Science",
+        "color": "rgb(35, 76, 59)",
+        "background": "rgb(230, 245, 237)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 8.600115660352014
+      },
+      {
+        "label": "History",
+        "color": "rgb(98, 69, 20)",
+        "background": "rgb(248, 232, 195)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.276044029927048
+      },
+      {
+        "label": "Contradictory",
+        "color": "rgb(113, 60, 25)",
+        "background": "rgb(251, 228, 210)",
+        "border": "rgb(90, 101, 112)",
+        "borderWidth": "2px",
+        "contrast": 7.250653485272742
+      }
+    ],
+    "citation": {
+      "height": 27.1875,
+      "color": "rgb(67, 80, 35)",
+      "background": "rgb(228, 235, 203)"
+    },
+    "contextSize": 12,
+    "errors": []
+  },
+  {
+    "width": 1280,
+    "dark": true,
+    "labels": [
+      "Translation",
+      "Violations",
+      "Question",
+      "Science",
+      "History",
+      "Contradictory"
+    ],
+    "colors": [
+      {
+        "label": "Translation",
+        "color": "rgb(80, 53, 108)",
+        "background": "rgb(235, 224, 245)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.9894465068179015
+      },
+      {
+        "label": "Violations",
+        "color": "rgb(121, 43, 34)",
+        "background": "rgb(249, 222, 216)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.548467727188989
+      },
+      {
+        "label": "Question",
+        "color": "rgb(67, 80, 35)",
+        "background": "rgb(228, 235, 203)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.071249919533872
+      },
+      {
+        "label": "Science",
+        "color": "rgb(35, 76, 59)",
+        "background": "rgb(230, 245, 237)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 8.600115660352014
+      },
+      {
+        "label": "History",
+        "color": "rgb(98, 69, 20)",
+        "background": "rgb(248, 232, 195)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.276044029927048
+      },
+      {
+        "label": "Contradictory",
+        "color": "rgb(113, 60, 25)",
+        "background": "rgb(251, 228, 210)",
+        "border": "rgb(168, 179, 191)",
+        "borderWidth": "2px",
+        "contrast": 7.250653485272742
+      }
+    ],
+    "citation": {
+      "height": 27.1875,
+      "color": "rgb(67, 80, 35)",
+      "background": "rgb(228, 235, 203)"
+    },
+    "contextSize": 12,
+    "errors": []
+  }
+]

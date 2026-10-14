@@ -350,3 +350,20 @@ header{height:80px}.brand{gap:10px;letter-spacing:normal}nav{gap:28px}
 /* Owner correction: key icons left, small symbol-free context markers right. */
 .comparison-tabs{align-items:center;flex-wrap:nowrap;gap:12px}.primary-tags{display:flex;flex:1;min-width:0;flex-wrap:wrap;gap:8px}.context-tags{display:flex;flex:0 0 auto;margin-left:auto;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px;max-width:40%}
 .comparison-tabs .comparison-tab.context-tag{position:relative;width:16px;height:16px;min-height:16px;flex:0 0 16px;border:1px solid currentColor}.comparison-tab.context-tag::after{content:'';position:absolute;inset:-6px;border-radius:50%}
+
+/* Owner icon refinements: pastel cues and a border that reflects selection. */
+.agreement.question,body.dark .agreement.question,.category-filter.question .filter-icon,.verse-citation[data-tone="question"],body.dark .verse-citation[data-tone="question"]{background:#e4ebcb;color:#435023}
+.agreement.violation,body.dark .agreement.violation,.category-filter.violation .filter-icon,.verse-citation[data-tone="violation"],body.dark .verse-citation[data-tone="violation"]{background:#f9ded8;color:#792b22}
+.agreement.science,body.dark .agreement.science,.category-filter.science .filter-icon,.verse-citation[data-tone="science"],body.dark .verse-citation[data-tone="science"]{background:#e6f5ed;color:#234c3b}
+.agreement.history,body.dark .agreement.history,.category-filter.history .filter-icon,.verse-citation[data-tone="history"],body.dark .verse-citation[data-tone="history"]{background:#f8e8c3;color:#624514}
+.agreement.contradictions,body.dark .agreement.contradictions,.category-filter.contradictions .filter-icon,.verse-citation[data-tone="contradictions"],body.dark .verse-citation[data-tone="contradictions"]{background:#fbe4d2;color:#713c19}
+.agreement.translation,body.dark .agreement.translation,.category-filter.translation .filter-icon,.verse-citation[data-tone="translation"],body.dark .verse-citation[data-tone="translation"]{background:#ebe0f5;color:#50356c}
+.category-filter .filter-icon{border:1px solid var(--muted)}.category-filter[aria-pressed="true"] .filter-icon{border-width:2px}.category-filter[aria-pressed="false"] .filter-icon{border-color:var(--muted);border-style:solid}.category-filter[aria-pressed="false"] .filter-label{text-decoration:none}
+
+.comparison-tabs .comparison-tab{border:1px solid var(--muted)}.comparison-tabs .comparison-tab[aria-pressed="true"]{border-width:2px;outline:none}.comparison-tabs .comparison-tab:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
+
+.comparison-tabs .comparison-tab.context-tag{width:12px;height:12px;min-height:12px;flex-basis:12px;border-color:var(--muted)}.comparison-tab.context-tag::after{inset:-8px}
+
+.comparison-side .verse-citation,.context-citations .verse-citation,.summary-citations .verse-citation{min-height:24px;padding:3px 7px;gap:0;border-radius:999px;font-size:var(--caption-size);line-height:1.6;white-space:nowrap}
+
+.category-icon[data-icon="circle-question-mark"]{transform:scale(1.5);transform-origin:center}
