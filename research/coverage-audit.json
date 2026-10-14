@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 906,
+    "evidenceRecords": 939,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 636,
-    "annotatedVerses": 3276
+    "chaptersWithAnnotations": 655,
+    "annotatedVerses": 3318
   },
   "byBook": [
     {
@@ -154,7 +154,7 @@
       "book": "Jeremiah",
       "chapters": 52,
       "chaptersWithAnnotations": 28,
-      "annotatedVerses": 50
+      "annotatedVerses": 51
     },
     {
       "book": "Lamentations",
@@ -171,14 +171,14 @@
     {
       "book": "Daniel",
       "chapters": 12,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 3
+      "chaptersWithAnnotations": 10,
+      "annotatedVerses": 21
     },
     {
       "book": "Hosea",
       "chapters": 14,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 4
+      "chaptersWithAnnotations": 12,
+      "annotatedVerses": 27
     },
     {
       "book": "Joel",
@@ -13551,14 +13551,17 @@
       "chapter": 25,
       "annotationIds": [
         "the-king-of-sheshach-shall-drink-after-them-who-or-what-is-sheshach-jeremiah-25-26",
-        "when-seventy-years-be-accomplished-from-what-event-are-the-seventy-years-counted-jeremiah-25-11-12"
+        "when-seventy-years-be-accomplished-from-what-event-are-the-seventy-years-counted-jeremiah-25-11-12",
+        "in-the-third-year-of-jehoiakim-nebuchadnezzar-came-or-the-fourth-year-was-the-first-year-of-nebuchadrezzar-daniel-1-1"
       ],
       "annotatedVerses": [
+        1,
         11,
         26
       ],
       "modes": [
-        "questions"
+        "questions",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -14752,9 +14755,15 @@
       "book": "Daniel",
       "bookId": 26,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-the-third-year-of-jehoiakim-nebuchadnezzar-came-or-the-fourth-year-was-the-first-year-of-nebuchadrezzar-daniel-1-1"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14770,54 +14779,105 @@
       "book": "Daniel",
       "bookId": 26,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "nebuchadnezzar-the-king-made-an-image-or-in-his-eighteenth-year-daniel-3-1-greek",
+        "between-daniel-3-23-and-3-24-the-greek-page-prints-a-prayer-and-a-song"
+      ],
+      "annotatedVerses": [
+        1,
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Daniel",
       "bookId": 26,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-spirit-of-the-holy-gods-or-the-holy-spirit-of-god-daniel-4-8-greek",
+        "his-hairs-like-eagles-feathers-or-his-hairs-like-lions-daniel-4-33-greek"
+      ],
+      "annotatedVerses": [
+        8,
+        9,
+        18,
+        33
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Daniel",
       "bookId": 26,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-spirit-of-the-holy-gods-or-the-holy-spirit-of-god-daniel-4-8-greek",
+        "darius-the-mede-took-the-kingdom-who-is-darius-the-mede-and-how-does-he-stand-to-cyrus-daniel-5-31"
+      ],
+      "annotatedVerses": [
+        14,
+        31
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Daniel",
       "bookId": 26,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "instruments-of-musick-or-they-brought-him-no-food-daniel-6-18-greek"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Daniel",
       "bookId": 26,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "four-kings-or-four-kingdoms-daniel-7-17-greek"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Daniel",
       "bookId": 26,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "two-thousand-and-three-hundred-days-or-two-thousand-and-four-hundred-days-daniel-8-14-greek",
+        "a-little-horn-toward-the-pleasant-land-or-one-strong-horn-toward-the-host-daniel-8-9-greek",
+        "he-shall-be-broken-without-hand-or-shall-crush-them-as-eggs-in-his-hand-daniel-8-25-greek",
+        "the-kings-of-media-and-persia-or-the-king-of-the-medes-and-persians-daniel-8-20-greek"
+      ],
+      "annotatedVerses": [
+        9,
+        14,
+        20,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14833,18 +14893,30 @@
       "book": "Daniel",
       "bookId": 26,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-remained-there-with-the-kings-of-persia-or-i-left-him-there-with-the-prince-of-the-kingdom-of-the-persians-daniel-10-13-greek"
+      ],
+      "annotatedVerses": [
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Daniel",
       "bookId": 26,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-the-first-year-of-darius-the-mede-or-in-the-first-year-of-cyrus-daniel-11-1-greek"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14852,15 +14924,19 @@
       "bookId": 26,
       "chapter": 12,
       "annotationIds": [
-        "exp-late-26-12-1"
+        "exp-late-26-12-1",
+        "they-that-turn-many-to-righteousness-or-some-of-the-many-righteous-daniel-12-3-greek",
+        "many-shall-run-to-and-fro-or-until-many-are-taught-daniel-12-4-greek"
       ],
       "annotatedVerses": [
         1,
         2,
-        3
+        3,
+        4
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -14869,10 +14945,13 @@
       "bookId": 27,
       "chapter": 1,
       "annotationIds": [
-        "jehu-done-well-to-house-of-ahab-or-blood-of-jezreel-avenged-on-house-of-jehu"
+        "jehu-done-well-to-house-of-ahab-or-blood-of-jezreel-avenged-on-house-of-jehu",
+        "loruhamah-and-loammi-or-not-pitied-and-not-my-people-hosea-1-6-hebrew-and-greek"
       ],
       "annotatedVerses": [
-        4
+        4,
+        6,
+        9
       ],
       "modes": [
         "contradictions"
@@ -14883,36 +14962,70 @@
       "book": "Hosea",
       "bookId": 27,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "loruhamah-and-loammi-or-not-pitied-and-not-my-people-hosea-1-6-hebrew-and-greek",
+        "she-shall-sing-there-or-she-shall-be-afflicted-there-hosea-2-15-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        15,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hosea",
       "bookId": 27,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "an-half-homer-of-barley-or-a-flagon-of-wine-hosea-3-2-greek",
+        "without-an-image-an-ephod-and-teraphim-or-without-an-altar-a-priesthood-and-manifestations-hosea-3-4-greek"
+      ],
+      "annotatedVerses": [
+        2,
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hosea",
       "bookId": 27,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "their-drink-is-sour-and-he-is-a-merchant-or-the-chananites-and-chanaan-hosea-4-18-and-12-7-greek"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hosea",
       "bookId": 27,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "now-shall-a-month-devour-them-or-the-cankerworm-shall-devour-them-hosea-5-7-greek",
+        "as-a-lion-or-as-a-panther-hosea-5-14-and-13-7-greek",
+        "sent-to-king-jareb-who-is-king-jareb-hosea-5-13"
+      ],
+      "annotatedVerses": [
+        7,
+        13,
+        14
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14920,15 +15033,18 @@
       "bookId": 27,
       "chapter": 6,
       "annotationIds": [
-        "exp-late-27-6-4"
+        "exp-late-27-6-4",
+        "murder-in-the-way-by-consent-or-they-have-murdered-sicima-hosea-6-9-greek"
       ],
       "annotatedVerses": [
         4,
         5,
-        6
+        6,
+        9
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -14954,54 +15070,100 @@
       "book": "Hosea",
       "bookId": 27,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "memphis-shall-bury-them-the-pleasant-places-or-machmas-shall-bury-them-hosea-9-6-greek",
+        "as-i-saw-tyrus-or-even-as-i-saw-hosea-9-13-greek"
+      ],
+      "annotatedVerses": [
+        6,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hosea",
       "bookId": 27,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "as-shalman-spoiled-betharbel-or-out-of-the-house-of-jeroboam-hosea-10-14-greek",
+        "bethel-or-the-house-of-israel-or-the-house-of-on-hosea-10-15-and-12-4-greek"
+      ],
+      "annotatedVerses": [
+        14,
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hosea",
       "bookId": 27,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "called-my-son-out-of-egypt-or-called-his-children-out-of-egypt-hosea-11-1-greek"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hosea",
       "bookId": 27,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bethel-or-the-house-of-israel-or-the-house-of-on-hosea-10-15-and-12-4-greek",
+        "their-drink-is-sour-and-he-is-a-merchant-or-the-chananites-and-chanaan-hosea-4-18-and-12-7-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hosea",
       "bookId": 27,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "as-a-lion-or-as-a-panther-hosea-5-14-and-13-7-greek",
+        "he-is-an-unwise-son-or-he-is-thy-wise-son-hosea-13-13-greek",
+        "o-death-i-will-be-thy-plagues-or-where-is-thy-penalty-o-death-hosea-13-14-greek"
+      ],
+      "annotatedVerses": [
+        7,
+        13,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hosea",
       "bookId": 27,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "so-will-we-render-the-calves-of-our-lips-or-we-will-render-the-fruit-of-our-lips-hosea-14-2-greek"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
