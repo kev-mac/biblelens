@@ -55,9 +55,11 @@ const html=fs.readFileSync('src/index.html','utf8');
 assert(html.indexOf('id="theme"')>html.indexOf('id="reader-settings"'),'Theme control belongs inside Reader settings');
 assert(css.includes('.comparison-dock{position:sticky'),'Comparison filters must remain joined below the sticky header');
 assert(css.includes('border-bottom:1px solid var(--line)'),'Read divider belongs below the comparison filters');
-assert(css.includes('border:1px solid var(--brand-accent)!important'),'Filter icons need visible burnt-orange borders');
+assert(css.includes('border:1px solid var(--green)!important')&&css.includes('border-color:var(--brand-accent)!important'),'Inactive filter icons need thin blue borders and active icons need burnt-orange borders');
 assert(html.includes('id="comparison-dock-toggle"')&&source.includes("classList.toggle('collapsed')"),'Comparison categories need a chevron show/hide control');
-assert(css.includes('.filter-icon{width:42px;height:42px}'),'Mobile comparison icons should be larger');
+assert(css.includes('.filter-icon{width:42px;height:42px;flex:0 0 42px;aspect-ratio:1}'),'Mobile comparison icons should be larger and remain round');
+assert(css.includes('.comparison-status{margin-top:0}'),'Mobile comparison tray must join the menu without a gap');
+assert(css.includes('.verse-comparison[data-tone="translation"]{--summary-tint:#ebe0f5;--summary-ink:#50356c}'),'Translation summaries must use the translation icon palette');
 assert(css.includes('.reader-picker.chapter-round{background:transparent;border:0;border-radius:0}'),'Settings cog should not have an outside circle');
 console.log('PASS: Q tag, accessible label, initially hidden summary, independent on/off, Context pointer and light/dark colors.');
 
