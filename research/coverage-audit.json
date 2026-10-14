@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 852,
+    "evidenceRecords": 874,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 606,
-    "annotatedVerses": 3208
+    "chaptersWithAnnotations": 620,
+    "annotatedVerses": 3234
   },
   "byBook": [
     {
@@ -165,8 +165,8 @@
     {
       "book": "Ezekiel",
       "chapters": 48,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 11
+      "chaptersWithAnnotations": 17,
+      "annotatedVerses": 37
     },
     {
       "book": "Daniel",
@@ -14037,9 +14037,18 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-face-of-an-ox-or-the-first-face-the-face-of-a-cherub-ezekiel-1-10",
+        "in-the-thirtieth-year-whose-thirtieth-year-ezekiel-1-1"
+      ],
+      "annotatedVerses": [
+        1,
+        10
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14064,18 +14073,34 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "three-hundred-and-ninety-days-or-a-hundred-and-ninety-days-ezekiel-4-5-greek",
+        "three-hundred-and-ninety-days-each-day-for-a-year-which-years-ezekiel-4-5"
+      ],
+      "annotatedVerses": [
+        5,
+        9
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-third-part-or-a-fourth-part-ezekiel-5-2-greek"
+      ],
+      "annotatedVerses": [
+        2,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14100,36 +14125,70 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-the-sixth-month-or-in-the-fifth-month-ezekiel-8-1-greek",
+        "a-likeness-as-the-appearance-of-fire-or-the-likeness-of-a-man-ezekiel-8-2-greek",
+        "about-five-and-twenty-men-or-about-twenty-men-ezekiel-8-16-greek",
+        "they-put-the-branch-to-their-nose-or-these-are-as-scorners-ezekiel-8-17-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        16,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-writers-inkhorn-by-his-side-or-a-sapphire-girdle-on-his-loins-ezekiel-9-2-greek"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-colour-of-a-beryl-stone-or-a-carbuncle-stone-ezekiel-10-9-greek",
+        "every-one-four-wings-or-each-one-eight-wings-ezekiel-10-21-greek",
+        "the-face-of-an-ox-or-the-first-face-the-face-of-a-cherub-ezekiel-1-10"
+      ],
+      "annotatedVerses": [
+        9,
+        14,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "one-heart-or-another-heart-ezekiel-11-19-greek"
+      ],
+      "annotatedVerses": [
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14154,9 +14213,15 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-the-lord-have-deceived-that-prophet-how-ezekiel-14-9"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14172,18 +14237,30 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-jewel-on-thy-forehead-or-a-pendant-on-thy-nostril-ezekiel-16-12-greek"
+      ],
+      "annotatedVerses": [
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-land-of-traffick-or-the-land-of-chanaan-ezekiel-17-4-greek"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14191,9 +14268,11 @@
       "bookId": 25,
       "chapter": 18,
       "annotationIds": [
-        "exp-late-25-18-19"
+        "exp-late-25-18-19",
+        "the-just-shall-surely-live-or-i-will-cut-off-the-righteous-and-the-wicked-ezekiel-21-3"
       ],
       "annotatedVerses": [
+        9,
         19,
         20,
         21,
@@ -14202,7 +14281,8 @@
         24
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -14210,27 +14290,50 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "what-is-thy-mother-a-lioness-or-why-is-thy-mother-become-a-whelp-ezekiel-19-2-greek",
+        "like-a-vine-in-thy-blood-or-as-a-vine-and-as-a-blossom-on-a-pomegranate-ezekiel-19-10-greek"
+      ],
+      "annotatedVerses": [
+        2,
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-the-fifth-month-the-tenth-day-or-on-the-fifteenth-day-ezekiel-20-1-greek",
+        "statutes-which-if-a-man-do-he-shall-live-or-statutes-not-good-whereby-they-should-not-live-ezekiel-20-11"
+      ],
+      "annotatedVerses": [
+        1,
+        11,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-just-shall-surely-live-or-i-will-cut-off-the-righteous-and-the-wicked-ezekiel-21-3"
+      ],
+      "annotatedVerses": [
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14246,9 +14349,15 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "she-doted-upon-their-paramours-or-thou-didst-dote-upon-the-chaldeans-ezekiel-23-20-greek"
+      ],
+      "annotatedVerses": [
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

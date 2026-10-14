@@ -1,0 +1,3482 @@
+{
+  "batch": "ezekiel-1-24",
+  "checked": "2026-10-14T02:47:27.943Z",
+  "checks": [
+    {
+      "id": "three-hundred-and-ninety-days-or-a-hundred-and-ninety-days-ezekiel-4-5-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 4:5",
+          "quote": "three hundred and ninety days",
+          "exact": true
+        },
+        {
+          "ref": "Ezekiel 4:9",
+          "quote": "three hundred and ninety days shalt thou eat thereof",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "שְׁלֹשׁ־מֵאֹ֥ות וְתִשְׁעִ֖ים יֹ֑ום",
+          "stated": {
+            "chapter": 4,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/4/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐννενήκοντα καὶ ἑκατὸν ἡμέρας",
+          "stated": {
+            "chapter": 4,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK04.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "שְׁלֹשׁ־מֵאֹ֧ות וְתִשְׁעִ֛ים יֹ֖ום",
+          "stated": {
+            "chapter": 4,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/4/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐννενήκοντα καὶ ἑκατὸν ἡμέρας",
+          "stated": {
+            "chapter": 4,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK04.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 4:5",
+          "quote": "three hundred and ninety days",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezekiel 4:9",
+          "quote": "three hundred and ninety days shalt thou eat thereof",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK04.htm",
+          "printedLabel": "5",
+          "quote": "for a hundred and ninety days",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK04.htm",
+          "printedLabel": "9",
+          "quote": "a hundred and ninety days",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Three hundred and ninety days",
+          "matches": [
+            "Ezekiel 4:5",
+            "Ezekiel 4:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a hundred and ninety days",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK04.htm",
+              "printedLabel": "5"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK04.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "three hundred and ninety",
+          "matches": [
+            "Ezekiel 4:5",
+            "Ezekiel 4:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a hundred and ninety days",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK04.htm",
+              "printedLabel": "5"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK04.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "three hundred and ninety days",
+          "matches": [
+            "Ezekiel 4:5",
+            "Ezekiel 4:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "for a hundred and ninety days",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK04.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "three hundred and ninety days shalt thou eat thereof",
+          "matches": [
+            "Ezekiel 4:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "a hundred and ninety days",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK04.htm",
+              "printedLabel": "5"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK04.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "a-third-part-or-a-fourth-part-ezekiel-5-2-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 5:2",
+          "quote": "a third part",
+          "exact": true
+        },
+        {
+          "ref": "Ezekiel 5:12",
+          "quote": "A third part of thee shall die with the pestilence",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "שְׁלִשִׁ֗ית",
+          "stated": {
+            "chapter": 5,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/5/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Τὸ τέταρτον",
+          "stated": {
+            "chapter": 5,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK05.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "שְׁלִשִׁתֵ֞יךְ",
+          "stated": {
+            "chapter": 5,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/5/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Τὸ τέταρτόν σου",
+          "stated": {
+            "chapter": 5,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK05.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 5:2",
+          "quote": "a third part",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezekiel 5:12",
+          "quote": "A third part of thee shall die with the pestilence",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK05.htm",
+          "printedLabel": "2",
+          "quote": "A fourth part thou shalt burn in the fire",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK05.htm",
+          "printedLabel": "12",
+          "quote": "A fourth part of thee shall be cut off by pestilence",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A third part",
+          "matches": [
+            "Ezekiel 5:2",
+            "Ezekiel 5:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a fourth part",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK05.htm",
+              "printedLabel": "2"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK05.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "a third part",
+          "matches": [
+            "Ezekiel 5:2",
+            "Ezekiel 5:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a fourth part",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK05.htm",
+              "printedLabel": "2"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK05.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "a third part",
+          "matches": [
+            "Ezekiel 5:2",
+            "Ezekiel 5:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "A fourth part thou shalt burn in the fire",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK05.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "A third part of thee shall die with the pestilence",
+          "matches": [
+            "Ezekiel 5:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "A fourth part of thee shall be cut off by pestilence",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK05.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "in-the-sixth-month-or-in-the-fifth-month-ezekiel-8-1-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 8:1",
+          "quote": "in the sixth month",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בַּשִּׁשִּׁי֙",
+          "stated": {
+            "chapter": 8,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/8/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐν τῷ πέμπτῳ μηνὶ",
+          "stated": {
+            "chapter": 8,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK08.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 8:1",
+          "quote": "in the sixth month",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+          "printedLabel": "1",
+          "quote": "in the fifth month",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "In the sixth month",
+          "matches": [
+            "Ezekiel 8:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "in the fifth month",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "in the sixth year, in the sixth month, in the fifth day of the month",
+          "matches": [
+            "Ezekiel 8:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "in the sixth year, in the fifth month, on the fifth day of the month",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "in the sixth month",
+          "matches": [
+            "Ezekiel 8:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "in the fifth month",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "a-likeness-as-the-appearance-of-fire-or-the-likeness-of-a-man-ezekiel-8-2-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 8:2",
+          "quote": "a likeness as the appearance of fire",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "דְמוּת֙ כְּמַרְאֵה־אֵ֔שׁ",
+          "stated": {
+            "chapter": 8,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/8/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὁμοίωμα ἀνδρὸς",
+          "stated": {
+            "chapter": 8,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK08.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 8:2",
+          "quote": "a likeness as the appearance of fire",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+          "printedLabel": "2",
+          "quote": "the likeness of a man",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A likeness as the appearance of fire",
+          "matches": [
+            "Ezekiel 8:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the likeness of a man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "a likeness as the appearance of fire",
+          "matches": [
+            "Ezekiel 8:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the likeness of a man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "a likeness as the appearance of fire",
+          "matches": [
+            "Ezekiel 8:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the likeness of a man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "as the appearance of fire",
+          "matches": [
+            "Ezekiel 8:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of a man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "jaazaniah-the-son-of-shaphan-or-jechonias-the-son-of-saphan-ezekiel-8-11-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 8:11",
+          "quote": "Jaazaniah the son of Shaphan",
+          "exact": true
+        },
+        {
+          "ref": "Ezekiel 11:1",
+          "quote": "Jaazaniah the son of Azur",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְיַאֲזַנְיָ֨הוּ בֶן־שָׁפָ֜ן",
+          "stated": {
+            "chapter": 8,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/8/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἰεχονίας ὁ τοῦ Σαφὰν",
+          "stated": {
+            "chapter": 8,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK08.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "יַאֲזַנְיָ֧ה בֶן־עַזֻּ֛ר",
+          "stated": {
+            "chapter": 11,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/11/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τὸν Ἰεχονίαν τὸν τοῦ Ἔζερ",
+          "stated": {
+            "chapter": 11,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK11.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 8:11",
+          "quote": "Jaazaniah the son of Shaphan",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Ezekiel 11:1",
+          "quote": "Jaazaniah the son of Azur",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+          "printedLabel": "11",
+          "quote": "Jechonias the son of Saphan",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+          "printedLabel": "1",
+          "quote": "Jechonias the son of Ezer",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Jaazaniah",
+          "matches": [
+            "Ezekiel 8:11",
+            "Ezekiel 11:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Jechonias",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "11"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Jaazaniah",
+          "matches": [
+            "Ezekiel 8:11",
+            "Ezekiel 11:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Jechonias",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "11"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Jaazaniah the son of Shaphan",
+          "matches": [
+            "Ezekiel 8:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Jechonias the son of Saphan",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Jaazaniah the son of Azur",
+          "matches": [
+            "Ezekiel 11:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Jechonias the son of Ezer",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the son of Shaphan",
+          "matches": [
+            "Ezekiel 8:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the son of Azur",
+          "matches": [
+            "Ezekiel 11:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the son of Saphan",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the son of Ezer",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "about-five-and-twenty-men-or-about-twenty-men-ezekiel-8-16-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 8:16",
+          "quote": "about five and twenty men",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כְּעֶשְׂרִ֥ים וַחֲמִשָּׁ֖ה אִ֑ישׁ",
+          "stated": {
+            "chapter": 8,
+            "verse": "16"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/8/",
+              "verse": 16
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὡς εἴκοσι ἄνδρες",
+          "stated": {
+            "chapter": 8,
+            "verse": "16"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK08.htm",
+              "verse": "16"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 8:16",
+          "quote": "about five and twenty men",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+          "printedLabel": "16",
+          "quote": "about twenty men",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "About five and twenty men",
+          "matches": [
+            "Ezekiel 8:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "about twenty men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "about five and twenty men",
+          "matches": [
+            "Ezekiel 8:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "about twenty men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "about five and twenty men",
+          "matches": [
+            "Ezekiel 8:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "about twenty men",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "16"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "five and twenty",
+          "matches": [
+            "Ezekiel 8:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "they-put-the-branch-to-their-nose-or-these-are-as-scorners-ezekiel-8-17-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 8:17",
+          "quote": "they put the branch to their nose",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְהִנָּ֛ם שֹׁלְחִ֥ים אֶת־הַזְּמֹורָ֖ה אֶל־אַפָּֽם",
+          "stated": {
+            "chapter": 8,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/8/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "αὐτοὶ ὡς μυκτηρίζοντες",
+          "stated": {
+            "chapter": 8,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK08.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 8:17",
+          "quote": "they put the branch to their nose",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+          "printedLabel": "17",
+          "quote": "these are as scorners",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They put the branch to their nose",
+          "matches": [
+            "Ezekiel 8:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "these are as scorners",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "they put the branch to their nose",
+          "matches": [
+            "Ezekiel 8:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "these are as scorners",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "they put the branch to their nose",
+          "matches": [
+            "Ezekiel 8:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "these are as scorners",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "put the branch to their nose",
+          "matches": [
+            "Ezekiel 8:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "these are as scorners",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "a-writers-inkhorn-by-his-side-or-a-sapphire-girdle-on-his-loins-ezekiel-9-2-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 9:2",
+          "quote": "with a writer's inkhorn by his side",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְקֶ֥סֶת הַסֹּפֵ֖ר בְּמָתְנָ֑יו",
+          "stated": {
+            "chapter": 9,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/9/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ζώνη σαπφείρου ἐπὶ τῆς ὀσφύος αὐτοῦ",
+          "stated": {
+            "chapter": 9,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK09.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 9:2",
+          "quote": "with a writer's inkhorn by his side",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK09.htm",
+          "printedLabel": "2",
+          "quote": "a sapphire girdle was on his loins",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A writer’s inkhorn by his side",
+          "matches": [
+            "Ezekiel 9:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a sapphire girdle … on his loins",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK09.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "with a writer’s inkhorn by his side",
+          "matches": [
+            "Ezekiel 9:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a sapphire girdle was on his loins",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK09.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "with a writer's inkhorn by his side",
+          "matches": [
+            "Ezekiel 9:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "a sapphire girdle was on his loins",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK09.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a writer’s inkhorn",
+          "matches": [
+            "Ezekiel 9:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a sapphire girdle",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK09.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "by his side",
+          "matches": [
+            "Ezekiel 9:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "on his loins",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK09.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-colour-of-a-beryl-stone-or-a-carbuncle-stone-ezekiel-10-9-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 10:9",
+          "quote": "the colour of a beryl stone",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כְּעֵ֖ין אֶ֥בֶן תַּרְשִֽׁישׁ",
+          "stated": {
+            "chapter": 10,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/10/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὡς ὄψις λίθου ἄνθρακος",
+          "stated": {
+            "chapter": 10,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK10.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 10:9",
+          "quote": "the colour of a beryl stone",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+          "printedLabel": "9",
+          "quote": "as the appearance of a carbuncle stone",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A beryl stone",
+          "matches": [
+            "Ezekiel 10:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a carbuncle stone",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the colour of a beryl stone",
+          "matches": [
+            "Ezekiel 10:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "as the appearance of a carbuncle stone",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "the colour of a beryl stone",
+          "matches": [
+            "Ezekiel 10:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "as the appearance of a carbuncle stone",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "o-wheel-or-called-gelgel-ezekiel-10-13-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 10:13",
+          "quote": "it was cried unto them in my hearing, O wheel",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "קֹורָ֥א הַגַּלְגַּ֖ל בְּאָזְנָֽי",
+          "stated": {
+            "chapter": 10,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/10/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐπεκλήθη Γελγὲλ ἀκούοντός μου",
+          "stated": {
+            "chapter": 10,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK10.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 10:13",
+          "quote": "it was cried unto them in my hearing, O wheel",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+          "printedLabel": "13",
+          "quote": "were called Gelgel in my hearing",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "O wheel",
+          "matches": [
+            "Ezekiel 10:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "called Gelgel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "it was cried unto them in my hearing, O wheel",
+          "matches": [
+            "Ezekiel 10:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "these wheels were called Gelgel in my hearing",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "it was cried unto them in my hearing, O wheel",
+          "matches": [
+            "Ezekiel 10:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "were called Gelgel in my hearing",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "O wheel",
+          "matches": [
+            "Ezekiel 10:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Gelgel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "were called",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "every-one-four-wings-or-each-one-eight-wings-ezekiel-10-21-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 10:21",
+          "quote": "every one four wings",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְאַרְבַּ֥ע כְּנָפַ֖יִם לְאֶחָ֑ד",
+          "stated": {
+            "chapter": 10,
+            "verse": "21"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/10/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὀκτὼ πτέρυγες τῷ ἑνὶ",
+          "stated": {
+            "chapter": 10,
+            "verse": "21"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK10.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 10:21",
+          "quote": "every one four wings",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+          "printedLabel": "21",
+          "quote": "each one had eight wings",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Every one four wings",
+          "matches": [
+            "Ezekiel 10:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "eight wings",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "every one four wings",
+          "matches": [
+            "Ezekiel 10:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "each one had eight wings",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "every one four wings",
+          "matches": [
+            "Ezekiel 10:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "each one had eight wings",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "one-heart-or-another-heart-ezekiel-11-19-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 11:19",
+          "quote": "I will give them one heart",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לֵ֣ב אֶחָ֔ד",
+          "stated": {
+            "chapter": 11,
+            "verse": "19"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/11/",
+              "verse": 19
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καρδίαν ἑτέραν",
+          "stated": {
+            "chapter": 11,
+            "verse": "19"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK11.htm",
+              "verse": "19"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 11:19",
+          "quote": "I will give them one heart",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+          "printedLabel": "19",
+          "quote": "I will give them another heart",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "One heart",
+          "matches": [
+            "Ezekiel 11:19"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "another heart",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+              "printedLabel": "19"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "I will give them one heart",
+          "matches": [
+            "Ezekiel 11:19"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "I will give them another heart",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+              "printedLabel": "19"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I will give them one heart",
+          "matches": [
+            "Ezekiel 11:19"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I will give them another heart",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+              "printedLabel": "19"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "one heart",
+          "matches": [
+            "Ezekiel 11:19"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "another heart",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK11.htm",
+              "printedLabel": "19"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "a-jewel-on-thy-forehead-or-a-pendant-on-thy-nostril-ezekiel-16-12-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 16:12",
+          "quote": "a jewel on thy forehead",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "נֶ֙זֶם֙ עַל־אַפֵּ֔ךְ",
+          "stated": {
+            "chapter": 16,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/16/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐνώτιον περὶ τὸν μυκτῆρά σου",
+          "stated": {
+            "chapter": 16,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK16.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 16:12",
+          "quote": "a jewel on thy forehead",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK16.htm",
+          "printedLabel": "12",
+          "quote": "a pendant on thy nostril",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A jewel on thy forehead",
+          "matches": [
+            "Ezekiel 16:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a pendant on thy nostril",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK16.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "a jewel on thy forehead",
+          "matches": [
+            "Ezekiel 16:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a pendant on thy nostril",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK16.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "a jewel on thy forehead",
+          "matches": [
+            "Ezekiel 16:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "a pendant on thy nostril",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK16.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "on thy forehead",
+          "matches": [
+            "Ezekiel 16:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy nostril",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK16.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "a-land-of-traffick-or-the-land-of-chanaan-ezekiel-17-4-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 17:4",
+          "quote": "a land of traffick; he set it in a city of merchants",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֶ֣רֶץ כְּנַ֔עַן בְּעִ֥יר רֹכְלִ֖ים",
+          "stated": {
+            "chapter": 17,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/17/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "εἰς γῆν Χαναὰν, εἰς πόλιν τετειχισμένην",
+          "stated": {
+            "chapter": 17,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK17.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 17:4",
+          "quote": "a land of traffick; he set it in a city of merchants",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK17.htm",
+          "printedLabel": "4",
+          "quote": "into the land of Chanaan; he laid them up in a walled city",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A land of traffick … a city of merchants",
+          "matches": [
+            "Ezekiel 17:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the land of Chanaan … a walled city",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK17.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "a land of traffick; he set it in a city of merchants",
+          "matches": [
+            "Ezekiel 17:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "into the land of Chanaan; he laid them up in a walled city",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK17.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "a land of traffick; he set it in a city of merchants",
+          "matches": [
+            "Ezekiel 17:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "into the land of Chanaan; he laid them up in a walled city",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK17.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "traffick",
+          "matches": [
+            "Ezekiel 17:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "merchants",
+          "matches": [
+            "Ezekiel 17:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Chanaan",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK17.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a walled city",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK17.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "land of Canaan",
+          "matches": [
+            "Ezekiel 16:29"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "what-is-thy-mother-a-lioness-or-why-is-thy-mother-become-a-whelp-ezekiel-19-2-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 19:2",
+          "quote": "What is thy mother? A lioness",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "מָ֤ה אִמְּךָ֙ לְבִיָּ֔א",
+          "stated": {
+            "chapter": 19,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/19/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τί ἡ μήτηρ σου σκύμνος",
+          "stated": {
+            "chapter": 19,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK19.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 19:2",
+          "quote": "What is thy mother? A lioness",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+          "printedLabel": "2",
+          "quote": "Why is thy mother become a whelp",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A lioness",
+          "matches": [
+            "Ezekiel 19:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a whelp",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "What is thy mother? A lioness",
+          "matches": [
+            "Ezekiel 19:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Why is thy mother become a whelp in the midst of lions?",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "What is thy mother? A lioness",
+          "matches": [
+            "Ezekiel 19:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Why is thy mother become a whelp",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "A lioness",
+          "matches": [
+            "Ezekiel 19:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "become a whelp",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "like-a-vine-in-thy-blood-or-as-a-vine-and-as-a-blossom-on-a-pomegranate-ezekiel-19-10-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 19:10",
+          "quote": "like a vine in thy blood",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כַגֶּ֛פֶן בְּדָמְךָ֖",
+          "stated": {
+            "chapter": 19,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/19/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὡς ἄμπελος καὶ ὡς ἄνθος ἐν ῥοᾷ",
+          "stated": {
+            "chapter": 19,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK19.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 19:10",
+          "quote": "like a vine in thy blood",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+          "printedLabel": "10",
+          "quote": "as a vine and as a blossom on a pomegranate tree",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Like a vine in thy blood",
+          "matches": [
+            "Ezekiel 19:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "as a vine and as a blossom on a pomegranate tree",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "like a vine in thy blood",
+          "matches": [
+            "Ezekiel 19:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "as a vine and as a blossom on a pomegranate tree",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "like a vine in thy blood",
+          "matches": [
+            "Ezekiel 19:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "as a vine and as a blossom on a pomegranate tree",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a vine",
+          "matches": [
+            "Ezekiel 19:10"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "in thy blood",
+          "matches": [
+            "Ezekiel 19:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a vine",
+          "matches": [
+            "Ezekiel 19:10"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a blossom on a pomegranate tree",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK19.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "in-the-fifth-month-the-tenth-day-or-on-the-fifteenth-day-ezekiel-20-1-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 20:1",
+          "quote": "in the fifth month, the tenth day of the month",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בַּֽחֲמִשִׁי֙ בֶּעָשֹׂ֣ור לַחֹ֔דֶשׁ",
+          "stated": {
+            "chapter": 20,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/20/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τῇ πεντεκαιδεκάτῃ τοῦ μηνὸς",
+          "stated": {
+            "chapter": 20,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK20.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 20:1",
+          "quote": "in the fifth month, the tenth day of the month",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK20.htm",
+          "printedLabel": "1",
+          "quote": "on the fifteenth day of the month",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "In the fifth month, the tenth day",
+          "matches": [
+            "Ezekiel 20:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the fifteenth day of the month",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK20.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "in the fifth month, the tenth day of the month",
+          "matches": [
+            "Ezekiel 20:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "on the fifteenth day of the month",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK20.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "in the fifth month, the tenth day of the month",
+          "matches": [
+            "Ezekiel 20:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "on the fifteenth day of the month",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK20.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "she-doted-upon-their-paramours-or-thou-didst-dote-upon-the-chaldeans-ezekiel-23-20-greek",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 23:20",
+          "quote": "she doted upon their paramours",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַֽתַּעְגְּבָ֔ה עַ֖ל פִּֽלַגְשֵׁיהֶ֑ם",
+          "stated": {
+            "chapter": 23,
+            "verse": "20"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/26/23/",
+              "verse": 20
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐπέθου ἐπὶ τοὺς Χαλδαίους",
+          "stated": {
+            "chapter": 23,
+            "verse": "20"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/EZK23.htm",
+              "verse": "20"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 23:20",
+          "quote": "she doted upon their paramours",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/EZK23.htm",
+          "printedLabel": "20",
+          "quote": "thou didst dote upon the Chaldeans",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Doted upon their paramours",
+          "matches": [
+            "Ezekiel 23:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "dote upon the Chaldeans",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK23.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "she doted upon their paramours",
+          "matches": [
+            "Ezekiel 23:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "thou didst dote upon the Chaldeans",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK23.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "she doted upon their paramours",
+          "matches": [
+            "Ezekiel 23:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "thou didst dote upon the Chaldeans",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK23.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "paramours",
+          "matches": [
+            "Ezekiel 23:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the Chaldeans",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK23.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "she",
+          "matches": [
+            "Ezekiel 23:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thou",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/EZK23.htm",
+              "printedLabel": "20"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-face-of-an-ox-or-the-first-face-the-face-of-a-cherub-ezekiel-1-10",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 1:10",
+          "quote": "they four had the face of an ox on the left side",
+          "exact": true
+        },
+        {
+          "ref": "Ezekiel 10:14",
+          "quote": "the first face was the face of a cherub",
+          "exact": true
+        },
+        {
+          "ref": "Ezekiel 10:20",
+          "quote": "I knew that they were the cherubims",
+          "exact": true
+        }
+      ],
+      "language": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 1:10",
+          "quote": "they four had the face of an ox on the left side",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Ezekiel 10:14",
+          "quote": "the first face was the face of a cherub",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "the face of an ox",
+          "matches": [
+            "Ezekiel 1:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the face of a cherub",
+          "matches": [
+            "Ezekiel 10:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "I knew that they were the cherubims",
+          "matches": [
+            "Ezekiel 10:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "they four had the face of an ox on the left side",
+          "matches": [
+            "Ezekiel 1:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the first face was the face of a cherub",
+          "matches": [
+            "Ezekiel 10:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I knew that they were the cherubims",
+          "matches": [
+            "Ezekiel 10:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the face of an ox",
+          "matches": [
+            "Ezekiel 1:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the face of a cherub",
+          "matches": [
+            "Ezekiel 10:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "cherub",
+          "matches": [
+            "Ezekiel 10:14",
+            "Ezekiel 10:20"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-just-shall-surely-live-or-i-will-cut-off-the-righteous-and-the-wicked-ezekiel-21-3",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 18:9",
+          "quote": "he is just, he shall surely live",
+          "exact": true
+        },
+        {
+          "ref": "Ezekiel 21:3",
+          "quote": "will cut off from thee the righteous and the wicked",
+          "exact": true
+        },
+        {
+          "ref": "Ezekiel 9:6",
+          "quote": "come not near any man upon whom is the mark",
+          "exact": true
+        }
+      ],
+      "language": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 21:3",
+          "quote": "will cut off from thee the righteous and the wicked",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Ezekiel 18:9",
+          "quote": "he is just, he shall surely live",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "He is just, he shall surely live",
+          "matches": [
+            "Ezekiel 18:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "will cut off from thee the righteous and the wicked",
+          "matches": [
+            "Ezekiel 21:3",
+            "Ezekiel 21:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "he is just, he shall surely live",
+          "matches": [
+            "Ezekiel 18:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "will cut off from thee the righteous and the wicked",
+          "matches": [
+            "Ezekiel 21:3",
+            "Ezekiel 21:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "he is just, he shall surely live",
+          "matches": [
+            "Ezekiel 18:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "will cut off from thee the righteous and the wicked",
+          "matches": [
+            "Ezekiel 21:3",
+            "Ezekiel 21:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "come not near any man upon whom is the mark",
+          "matches": [
+            "Ezekiel 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the righteous and the wicked",
+          "matches": [
+            "Ezekiel 21:3",
+            "Ezekiel 21:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "cut off",
+          "matches": [
+            "Ezekiel 21:3",
+            "Ezekiel 21:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the righteous",
+          "matches": [
+            "Ezekiel 21:3",
+            "Ezekiel 21:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "statutes-which-if-a-man-do-he-shall-live-or-statutes-not-good-whereby-they-should-not-live-ezekiel-20-11",
+      "batch": "ezekiel-1-24",
+      "english": [
+        {
+          "ref": "Ezekiel 20:11",
+          "quote": "which if a man do, he shall even live in them",
+          "exact": true
+        },
+        {
+          "ref": "Ezekiel 20:25",
+          "quote": "I gave them also statutes that were not good, and judgments whereby they should not live",
+          "exact": true
+        }
+      ],
+      "language": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ezekiel 20:11",
+          "quote": "which if a man do, he shall even live in them",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Ezekiel 20:25",
+          "quote": "statutes that were not good, and judgments whereby they should not live",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "which if a man do, he shall even live in them",
+          "matches": [
+            "Ezekiel 20:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "whereby they should not live",
+          "matches": [
+            "Ezekiel 20:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "which if a man do, he shall even live in them",
+          "matches": [
+            "Ezekiel 20:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "I gave them also statutes that were not good, and judgments whereby they should not live",
+          "matches": [
+            "Ezekiel 20:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "which if a man do, he shall even live in them",
+          "matches": [
+            "Ezekiel 20:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I gave them also statutes that were not good, and judgments whereby they should not live",
+          "matches": [
+            "Ezekiel 20:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "gave",
+          "matches": [
+            "Ezekiel 20:11",
+            "Ezekiel 20:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "whereby they should not live",
+          "matches": [
+            "Ezekiel 20:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "also",
+          "matches": [
+            "Ezekiel 20:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/26/4/",
+    "https://ebible.org/grcbrent/EZK04.htm",
+    "https://ebible.org/eng-Brenton/EZK04.htm",
+    "https://bolls.life/get-text/WLC/26/5/",
+    "https://ebible.org/grcbrent/EZK05.htm",
+    "https://ebible.org/eng-Brenton/EZK05.htm",
+    "https://bolls.life/get-text/WLC/26/8/",
+    "https://ebible.org/grcbrent/EZK08.htm",
+    "https://ebible.org/eng-Brenton/EZK08.htm",
+    "https://bolls.life/get-text/WLC/26/11/",
+    "https://ebible.org/grcbrent/EZK11.htm",
+    "https://ebible.org/eng-Brenton/EZK11.htm",
+    "https://bolls.life/get-text/WLC/26/9/",
+    "https://ebible.org/grcbrent/EZK09.htm",
+    "https://ebible.org/eng-Brenton/EZK09.htm",
+    "https://bolls.life/get-text/WLC/26/10/",
+    "https://ebible.org/grcbrent/EZK10.htm",
+    "https://ebible.org/eng-Brenton/EZK10.htm",
+    "https://bolls.life/get-text/WLC/26/16/",
+    "https://ebible.org/grcbrent/EZK16.htm",
+    "https://ebible.org/eng-Brenton/EZK16.htm",
+    "https://bolls.life/get-text/WLC/26/17/",
+    "https://ebible.org/grcbrent/EZK17.htm",
+    "https://ebible.org/eng-Brenton/EZK17.htm",
+    "https://bolls.life/get-text/WLC/26/19/",
+    "https://ebible.org/grcbrent/EZK19.htm",
+    "https://ebible.org/eng-Brenton/EZK19.htm",
+    "https://bolls.life/get-text/WLC/26/20/",
+    "https://ebible.org/grcbrent/EZK20.htm",
+    "https://ebible.org/eng-Brenton/EZK20.htm",
+    "https://bolls.life/get-text/WLC/26/23/",
+    "https://ebible.org/grcbrent/EZK23.htm",
+    "https://ebible.org/eng-Brenton/EZK23.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 852,
+  "studiesChecked": 6,
+  "studies": [
+    {
+      "id": "seen",
+      "title": "Can God be seen?",
+      "summary": "Exodus describes Moses speaking with God “face to face”; John says no one has seen God. The tension depends on whether “face to face” means literal sight.",
+      "refs": [
+        "Exodus 33:11",
+        "John 1:18",
+        "Exodus 33:20",
+        "Exodus 33:23",
+        "Exodus 24:9",
+        "Exodus 24:10",
+        "Exodus 24:11",
+        "Numbers 12:8",
+        "Deuteronomy 4:12",
+        "Deuteronomy 4:15",
+        "Deuteronomy 4:16",
+        "Deuteronomy 5:4",
+        "Deuteronomy 5:5",
+        "Deuteronomy 5:24",
+        "Deuteronomy 5:27"
+      ]
+    },
+    {
+      "id": "judas",
+      "title": "Judas and the field of blood",
+      "summary": "Matthew and Acts give different accounts of Judas's death and the field purchase.",
+      "refs": [
+        "Matthew 27:5",
+        "Acts 1:18",
+        "Matthew 27:3",
+        "Matthew 27:4",
+        "Matthew 27:6",
+        "Matthew 27:7",
+        "Matthew 27:8",
+        "Acts 1:19"
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Water or ground: the animals’ origin",
+      "summary": "Genesis 1 can sound like birds came from water, while Genesis 2 says ground. The apparent conflict depends on how Genesis 1:20 is translated.",
+      "refs": [
+        "Genesis 1:20",
+        "Genesis 2:19"
+      ]
+    },
+    {
+      "id": "plants",
+      "title": "Plants before people—or after?",
+      "summary": "Genesis 1 places vegetation before people; Genesis 2 describes no field plants before a cultivator. Whether this conflicts depends on which plants are meant.",
+      "refs": [
+        "Genesis 1:11",
+        "Genesis 2:5"
+      ]
+    },
+    {
+      "id": "soldiers",
+      "title": "David’s census: two different totals",
+      "summary": "The census totals differ: Israel is 800,000 versus 1.1 million; Judah is 500,000 versus 470,000. Different counting rules are proposed but not established here.",
+      "refs": [
+        "2 Samuel 24:9",
+        "1 Chronicles 21:5",
+        "1 Chronicles 21:6"
+      ]
+    },
+    {
+      "id": "birth",
+      "title": "Herod, Quirinius, and the birth chronology",
+      "summary": "Matthew places Jesus’s birth under Herod; Luke links it to Quirinius’s census. The historical chronology creates a tension if the same census is intended.",
+      "refs": [
+        "Matthew 2:1",
+        "Luke 2:2"
+      ]
+    }
+  ],
+  "suppliedContextChecks": [
+    {
+      "ref": "Ezekiel 9:3",
+      "quote": "writer's inkhorn",
+      "exact": true
+    },
+    {
+      "ref": "Ezekiel 9:11",
+      "quote": "inkhorn by his side",
+      "exact": true
+    },
+    {
+      "ref": "Ezekiel 21:4",
+      "quote": "the righteous and the wicked",
+      "exact": true
+    },
+    {
+      "ref": "Ezekiel 16:29",
+      "quote": "land of Canaan",
+      "exact": true
+    },
+    {
+      "ref": "Ezekiel 8:1",
+      "quote": "in the sixth year",
+      "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+      "printedLabel": "1",
+      "brentonQuote": "in the sixth year",
+      "exact": true
+    },
+    {
+      "ref": "Ezekiel 8:2",
+      "quote": "from the appearance of his loins even downward, fire",
+      "url": "https://ebible.org/eng-Brenton/EZK08.htm",
+      "printedLabel": "2",
+      "brentonQuote": "from his loins and downwards there was fire",
+      "exact": true
+    },
+    {
+      "ref": "Ezekiel 10:21",
+      "quote": "Every one had four faces",
+      "url": "https://ebible.org/eng-Brenton/EZK10.htm",
+      "printedLabel": "21",
+      "brentonQuote": "Each one had four faces",
+      "exact": true
+    },
+    {
+      "ref": "Ezekiel 20:1",
+      "quote": "in the seventh year",
+      "url": "https://ebible.org/eng-Brenton/EZK20.htm",
+      "printedLabel": "1",
+      "brentonQuote": "in the seventh year",
+      "exact": true
+    }
+  ],
+  "draftHashes": {
+    "research/claude-drafts/ezekiel-1-24-records.json": "7f9737f78f83cd6f825be7c8eb2e6009ebb858969fcafc9272a86e6f09ba71f2",
+    "research/claude-drafts/ezekiel-1-24-notes.md": "27e238cc8b853c1e6193d4f058b973efadc7876087e838cc094e7071848ef2e5",
+    "research/claude-drafts/ezekiel-1-24-q-records.json": "f613d6739f86c32275efea208bd9941285799b52eecaf7613e6e4e30b34142d1",
+    "research/claude-drafts/ezekiel-1-24-q-notes.md": "a27b12ff6b66405aebde5a5870b90b28c6b119217c285d2d4ecc9b287b549875"
+  }
+}
