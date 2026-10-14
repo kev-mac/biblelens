@@ -72282,6 +72282,762 @@ const EVIDENCE=[
         "quote": "the captivity of Jerusalem, which is in Sepharad"
       }
     ]
+  },
+  {
+    "id": "an-heap-of-the-field-and-heaps-or-a-store-house-of-the-fruits-and-a-storehouse-of-fruits-micah-1-6-and-3-12-greek",
+    "mode": "contradictions",
+    "ref": "Micah 1:6",
+    "appliesTo": [
+      "Micah 1:6",
+      "Micah 3:12"
+    ],
+    "title": "“an heap of the field” and “heaps” — the Greek has “a store-house of the fruits” (Micah 1:6 and 3:12)",
+    "status": "Context",
+    "summary": "At Micah 1:6 the KJV has Samaria made “as an heap of the field”, and at 3:12 Jerusalem “shall become heaps”. Brenton’s Greek prints ὀπωροφυλάκιον at both places, which Brenton’s own English renders “a store-house of the fruits” and “a storehouse of fruits”.",
+    "text": "KJV Micah 1:6: “I will make Samaria as an heap of the field”. Hebrew (WLC) 1:6: וְשַׂמְתִּ֥י שֹׁמְרֹ֛ון לְעִ֥י הַשָּׂדֶ֖ה. Brenton’s Greek 1:6: Καὶ θήσομαι Σαμάρειαν εἰς ὀπωροφυλάκιον ἀγροῦ. Brenton’s own English (https://ebible.org/eng-Brenton/MIC01.htm) prints: “I will make Samaria as a store-house of the fruits of the field”. KJV Micah 3:12: “Jerusalem shall become heaps”. Hebrew (WLC) 3:12: וִירוּשָׁלִַ֙ם֙ עִיִּ֣ין תִּֽהְיֶ֔ה. Brenton’s Greek 3:12: καὶ Ἱερουσαλὴμ ὡς ὀπωροφυλάκιον ἔσται. Brenton’s own English (https://ebible.org/eng-Brenton/MIC03.htm) prints: “and Jerusalem shall be as a storehouse of fruits”. Fetched from https://bolls.life/get-text/WLC/33/1/, https://bolls.life/get-text/WLC/33/3/, https://ebible.org/grcbrent/MIC01.htm and https://ebible.org/grcbrent/MIC03.htm.",
+    "reasoning": "At 1:6 the Hebrew quoted prints ושמתי שמרון לעי השדה and at 3:12 וירושלם עיין תהיה. The KJV’s noun at both places is “heap” or “heaps”, a pile of ruin. The Greek’s noun at both is a building for keeping fruit. A heap and a store for fruit are different things.",
+    "scope": "T applies at Micah 1:6 and Micah 3:12. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Micah 1: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC01.htm"
+      },
+      {
+        "label": "Micah 3: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC03.htm"
+      },
+      {
+        "label": "Micah 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/1/"
+      },
+      {
+        "label": "Micah 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/3/"
+      },
+      {
+        "label": "Micah 1: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC01.htm"
+      },
+      {
+        "label": "Micah 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 1:6",
+        "book": 32,
+        "chapter": 1,
+        "verse": 6
+      },
+      {
+        "label": "Micah 3:12",
+        "book": 32,
+        "chapter": 3,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 1:6",
+        "quote": "I will make Samaria as an heap of the field"
+      },
+      {
+        "label": "A",
+        "ref": "Micah 3:12",
+        "quote": "Jerusalem shall become heaps"
+      }
+    ]
+  },
+  {
+    "id": "in-the-name-of-his-god-or-in-his-own-way-micah-4-5-greek",
+    "mode": "contradictions",
+    "ref": "Micah 4:5",
+    "appliesTo": [
+      "Micah 4:5"
+    ],
+    "title": "“every one in the name of his god” — the Greek has “every one in his own way”",
+    "status": "Context",
+    "summary": "The KJV of Micah 4:5 has all people walking “every one in the name of his god”. Brenton’s Greek prints τὴν ὁδὸν αὐτοῦ, which Brenton’s own English renders “in his own way”, with no name or god in that first-half clause.",
+    "text": "KJV Micah 4:5: “all people will walk every one in the name of his god”. Hebrew (WLC) 4:5: כָּל־הָ֣עַמִּ֔ים יֵלְכ֕וּ אִ֖ישׁ בְּשֵׁ֣ם אֱלֹהָ֑יו. Brenton’s Greek 4:5: πάντες οἱ λαοὶ πορεύσονται ἕκαστος τὴν ὁδὸν αὐτοῦ. Brenton’s own English (https://ebible.org/eng-Brenton/MIC04.htm) prints: “all other nations shall walk every one in his own way”. Fetched from https://bolls.life/get-text/WLC/33/4/ and https://ebible.org/grcbrent/MIC04.htm.",
+    "reasoning": "The Hebrew quoted prints כל העמים ילכו איש בשם אלהיו. The KJV’s phrase is “in the name of his god”. The Greek words quoted have the way of each one (ὁδόν) in place of a name and a god. The second half of the verse prints “we will walk in the name of the Lord our God” in the KJV and ἐν ὀνόματι Κυρίου Θεοῦ ἡμῶν in the Greek, so the difference sits in the first half.",
+    "scope": "T applies at Micah 4:5. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Micah 4: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC04.htm"
+      },
+      {
+        "label": "Micah 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/4/"
+      },
+      {
+        "label": "Micah 4: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 4:5",
+        "book": 32,
+        "chapter": 4,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 4:5",
+        "quote": "all people will walk every one in the name of his god"
+      }
+    ]
+  },
+  {
+    "id": "the-judge-of-israel-or-the-tribes-of-israel-micah-5-1-greek",
+    "mode": "contradictions",
+    "ref": "Micah 5:1",
+    "appliesTo": [
+      "Micah 5:1"
+    ],
+    "title": "“the judge of Israel” — the Greek has “the tribes of Israel”",
+    "status": "Context",
+    "summary": "The KJV of Micah 5:1 has them smite “the judge of Israel” with a rod upon the cheek. Brenton’s Greek prints τὰς φυλάς, which Brenton’s own English renders “the tribes”.",
+    "text": "KJV Micah 5:1: “they shall smite the judge of Israel with a rod upon the cheek”. Hebrew (WLC) 4:14: בַּשֵּׁ֙בֶט֙ יַכּ֣וּ עַֽל־הַלְּחִ֔י אֵ֖ת שֹׁפֵ֥ט יִשְׂרָאֵֽל. Brenton’s Greek 4:14: ἐν ῥάβδῳ πατάξουσιν ἐπὶ σιαγόνα τὰς φυλὰς τοῦ Ἰσραήλ. Brenton’s own English (https://ebible.org/eng-Brenton/MIC04.htm) prints: “they shall smite the tribes of Israel with a rod upon the cheek”. Fetched from https://bolls.life/get-text/WLC/33/4/ and https://ebible.org/grcbrent/MIC04.htm.",
+    "reasoning": "The Hebrew quoted prints בשבט יכו על הלחי את שפט ישראל. The KJV’s object of the smiting is one person, a judge. The Greek’s object is a plural group, the tribes (φυλάς). One person and a plural group are different objects.",
+    "scope": "T applies at Micah 5:1. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. Micah’s verse numbers differ between the KJV and the Hebrew text from 5:1 (the KJV’s 5:1 is 4:14 and the KJV’s 5:n is 5:(n−1) in the Hebrew and in Brenton’s Greek); the numbers quoted in the text lines are the numbers of the text quoted, and the refs use the KJV numbering. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Micah 5: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC05.htm"
+      },
+      {
+        "label": "Micah 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/4/"
+      },
+      {
+        "label": "Micah 4: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 5:1",
+        "book": 32,
+        "chapter": 5,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 5:1",
+        "quote": "they shall smite the judge of Israel with a rod upon the cheek"
+      }
+    ]
+  },
+  {
+    "id": "seven-shepherds-and-eight-principal-men-or-eight-attacks-of-men-micah-5-5-greek",
+    "mode": "contradictions",
+    "ref": "Micah 5:5",
+    "appliesTo": [
+      "Micah 5:5"
+    ],
+    "title": "“eight principal men” — the Greek has “eight attacks of men”",
+    "status": "Context",
+    "summary": "The KJV of Micah 5:5 has “seven shepherds, and eight principal men” raised against the Assyrian. Brenton’s Greek prints δήγματα ἀνθρώπων, which Brenton’s own English renders “attacks of men”.",
+    "text": "KJV Micah 5:5: “seven shepherds, and eight principal men”. Hebrew (WLC) 5:4: שִׁבְעָ֣ה רֹעִ֔ים וּשְׁמֹנָ֖ה נְסִיכֵ֥י אָדָֽם. Brenton’s Greek 5:4: ἑπτὰ ποιμένες, καὶ ὀκτὼ δήγματα ἀνθρώπων. Brenton’s own English (https://ebible.org/eng-Brenton/MIC05.htm) prints: “seven shepherds, and eight attacks of men”. Fetched from https://bolls.life/get-text/WLC/33/5/ and https://ebible.org/grcbrent/MIC05.htm.",
+    "reasoning": "The Hebrew quoted prints שבעה רעים ושמנה נסיכי אדם. The KJV’s second group is eight men of rank. The Greek’s second item is a noun that Brenton’s own English renders “attacks”, with “of men” after it. Persons of rank and attacks are different kinds of thing.",
+    "scope": "T applies at Micah 5:5. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. Micah’s verse numbers differ between the KJV and the Hebrew text from 5:1 (the KJV’s 5:1 is 4:14 and the KJV’s 5:n is 5:(n−1) in the Hebrew and in Brenton’s Greek); the numbers quoted in the text lines are the numbers of the text quoted, and the refs use the KJV numbering. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Micah 5: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC05.htm"
+      },
+      {
+        "label": "Micah 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/5/"
+      },
+      {
+        "label": "Micah 5: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC05.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 5:5",
+        "book": 32,
+        "chapter": 5,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 5:5",
+        "quote": "seven shepherds, and eight principal men"
+      }
+    ]
+  },
+  {
+    "id": "as-the-showers-upon-the-grass-or-as-lambs-on-the-grass-micah-5-7-greek",
+    "mode": "contradictions",
+    "ref": "Micah 5:7",
+    "appliesTo": [
+      "Micah 5:7"
+    ],
+    "title": "“as the showers upon the grass” — the Greek has “as lambs on the grass”",
+    "status": "Context",
+    "summary": "The KJV of Micah 5:7 compares the remnant of Jacob to “a dew from the Lord, as the showers upon the grass”. Brenton’s Greek prints ἄρνες, which Brenton’s own English renders “lambs”, where the KJV has “showers”.",
+    "text": "KJV Micah 5:7: “as a dew from the Lord, as the showers upon the grass”. Hebrew (WLC) 5:6: כְּטַל֙ מֵאֵ֣ת יְהוָ֔ה כִּרְבִיבִ֖ים עֲלֵי־עֵ֑שֶׂב. Brenton’s Greek 5:6: ὡς δρόσος παρὰ Κυρίου πίπτουσα, καὶ ὡς ἄρνες ἐπὶ ἄγρωστιν. Brenton’s own English (https://ebible.org/eng-Brenton/MIC05.htm) prints: “as dew falling from the Lord, and as lambs on the grass”. Fetched from https://bolls.life/get-text/WLC/33/5/ and https://ebible.org/grcbrent/MIC05.htm.",
+    "reasoning": "The Hebrew quoted prints כטל מאת יהוה כרביבים עלי עשב. The KJV’s two comparisons are dew and showers, both water. The Greek’s two comparisons are dew and lambs, a water and an animal. The second comparison names a different thing.",
+    "scope": "T applies at Micah 5:7. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. Micah’s verse numbers differ between the KJV and the Hebrew text from 5:1 (the KJV’s 5:1 is 4:14 and the KJV’s 5:n is 5:(n−1) in the Hebrew and in Brenton’s Greek); the numbers quoted in the text lines are the numbers of the text quoted, and the refs use the KJV numbering. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Micah 5: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC05.htm"
+      },
+      {
+        "label": "Micah 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/5/"
+      },
+      {
+        "label": "Micah 5: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC05.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 5:7",
+        "book": 32,
+        "chapter": 5,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 5:7",
+        "quote": "as a dew from the Lord, as the showers upon the grass"
+      }
+    ]
+  },
+  {
+    "id": "ten-thousands-of-rivers-of-oil-or-ten-thousands-of-fat-goats-micah-6-7-greek",
+    "mode": "contradictions",
+    "ref": "Micah 6:7",
+    "appliesTo": [
+      "Micah 6:7"
+    ],
+    "title": "“ten thousands of rivers of oil” — the Greek has “ten thousands of fat goats”",
+    "status": "Context",
+    "summary": "The KJV of Micah 6:7 asks whether the Lord will be pleased “with ten thousands of rivers of oil”. Brenton’s Greek prints μυριάσι χιμάρων πιόνων, which Brenton’s own English renders “ten thousands of fat goats”.",
+    "text": "KJV Micah 6:7: “ten thousands of rivers of oil”. Hebrew (WLC) 6:7: בְּרִֽבְבֹ֖ות נַֽחֲלֵי־שָׁ֑מֶן. Brenton’s Greek 6:7: ἐν μυριάσι χιμάρων πιόνων. Brenton’s own English (https://ebible.org/eng-Brenton/MIC06.htm) prints: “ten thousands of fat goats”. Fetched from https://bolls.life/get-text/WLC/33/6/ and https://ebible.org/grcbrent/MIC06.htm.",
+    "reasoning": "The Hebrew quoted prints ברבבות נחלי שמן. The KJV’s offering is oil in rivers. The Greek words quoted print goats (χιμάρων) with an adjective for fatness, and no oil. Oil and goats are different offerings.",
+    "scope": "T applies at Micah 6:7. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Micah 6: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC06.htm"
+      },
+      {
+        "label": "Micah 6: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/6/"
+      },
+      {
+        "label": "Micah 6: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC06.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 6:7",
+        "book": 32,
+        "chapter": 6,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 6:7",
+        "quote": "ten thousands of rivers of oil"
+      }
+    ]
+  },
+  {
+    "id": "to-walk-humbly-with-thy-god-or-to-be-ready-to-walk-with-the-lord-thy-god-micah-6-8-greek",
+    "mode": "contradictions",
+    "ref": "Micah 6:8",
+    "appliesTo": [
+      "Micah 6:8"
+    ],
+    "title": "“to walk humbly with thy God” — the Greek has “be ready to walk with the Lord thy God”",
+    "status": "Context",
+    "summary": "The KJV of Micah 6:8 has the Lord require “to walk humbly with thy God”. Brenton’s Greek prints ἕτοιμον εἶναι τοῦ πορεύεσθαι, which Brenton’s own English renders “be ready to walk”.",
+    "text": "KJV Micah 6:8: “to walk humbly with thy God”. Hebrew (WLC) 6:8: וְהַצְנֵ֥עַ לֶ֖כֶת עִם־אֱלֹהֶֽיךָ. Brenton’s Greek 6:8: καὶ ἕτοιμον εἶναι τοῦ πορεύεσθαι μετὰ Κυρίου Θεοῦ σου. Brenton’s own English (https://ebible.org/eng-Brenton/MIC06.htm) prints: “and be ready to walk with the Lord thy God”. Fetched from https://bolls.life/get-text/WLC/33/6/ and https://ebible.org/grcbrent/MIC06.htm.",
+    "reasoning": "The Hebrew quoted prints והצנע לכת עם אלהיך. The KJV’s adverb describes the manner of the walking, humbly. The Greek has no such adverb; it has an adjective for readiness with the verb for walking. Humility and readiness are different qualities.",
+    "scope": "T applies at Micah 6:8. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Micah 6: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC06.htm"
+      },
+      {
+        "label": "Micah 6: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/6/"
+      },
+      {
+        "label": "Micah 6: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC06.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 6:8",
+        "book": 32,
+        "chapter": 6,
+        "verse": 8
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 6:8",
+        "quote": "to walk humbly with thy God"
+      }
+    ]
+  },
+  {
+    "id": "as-the-sheep-of-bozrah-or-as-sheep-in-trouble-micah-2-12-greek",
+    "mode": "contradictions",
+    "ref": "Micah 2:12",
+    "appliesTo": [
+      "Micah 2:12"
+    ],
+    "title": "“as the sheep of Bozrah” — the Greek has “as sheep in trouble”",
+    "status": "Context",
+    "summary": "The KJV of Micah 2:12 has the remnant put together “as the sheep of Bozrah”, with a place name. Brenton’s Greek prints ἐν θλίψει, which Brenton’s own English renders “in trouble”, and no name.",
+    "text": "KJV Micah 2:12: “as the sheep of Bozrah”. Hebrew (WLC) 2:12: כְּצֹ֣אן בָּצְרָ֑ה. Brenton’s Greek 2:12: ὡς πρόβατα ἐν θλίψει. Brenton’s own English (https://ebible.org/eng-Brenton/MIC02.htm) prints: “as sheep in trouble”. KJV Amos 1:12: “shall devour the palaces of Bozrah”. Hebrew (WLC) 1:12: בָּצְרָֽה. Fetched from https://bolls.life/get-text/WLC/33/2/, https://bolls.life/get-text/WLC/30/1/ and https://ebible.org/grcbrent/MIC02.htm.",
+    "reasoning": "The Hebrew quoted prints כצאן בצרה. The KJV prints the name Bozrah, the name it also prints for the Edomite city at Amos 1:12, where the Hebrew prints the same consonants (בצרה). The Greek prints a noun for affliction, θλίψει, after “in”. A place name and a noun for trouble are different words.",
+    "scope": "T applies at Micah 2:12. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say what the Hebrew word בצרה means at Micah 2:12 and does not say that the KJV is wrong to print the name. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Micah 2: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC02.htm"
+      },
+      {
+        "label": "Amos 1: KJV",
+        "url": "https://ebible.org/eng-kjv/AMO01.htm"
+      },
+      {
+        "label": "Micah 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/2/"
+      },
+      {
+        "label": "Amos 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/30/1/"
+      },
+      {
+        "label": "Micah 2: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 2:12",
+        "book": 32,
+        "chapter": 2,
+        "verse": 12
+      },
+      {
+        "label": "Amos 1:12",
+        "book": 29,
+        "chapter": 1,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 2:12",
+        "quote": "as the sheep of Bozrah"
+      }
+    ]
+  },
+  {
+    "id": "though-thou-be-little-among-the-thousands-of-judah-or-art-not-the-least-among-the-princes-of-juda-micah-5-2",
+    "mode": "contradictions",
+    "ref": "Micah 5:2",
+    "appliesTo": [
+      "Micah 5:2",
+      "Matthew 2:6"
+    ],
+    "title": "“though thou be little among the thousands of Judah” (Micah) or “art not the least among the princes of Juda” (Matthew)?",
+    "status": "Context",
+    "summary": "The KJV of Micah 5:2 has Bethlehem “little among the thousands of Judah”. The KJV of Matthew 2:6 has Bethlehem “not the least among the princes of Juda”.",
+    "text": "KJV Micah 5:2: “though thou be little among the thousands of Judah”. Hebrew (WLC) 5:1: צָעִיר֙ לִֽהְיֹות֙ בְּאַלְפֵ֣י יְהוּדָ֔ה. Brenton’s Greek 5:1: ὀλιγοστὸς εἶ τοῦ εἶναι ἐν χιλιάσιν Ἰούδα. KJV Matthew 2:6: “art not the least among the princes of Juda”. Greek New Testament Matthew 2:6 (Tischendorf, eighth edition): οὐδαμῶς ἐλαχίστη εἶ ἐν τοῖς ἡγεμόσιν Ἰούδα. Fetched from https://bolls.life/get-text/WLC/33/5/, https://ebible.org/grcbrent/MIC05.htm, https://bolls.life/get-text/TISCH/40/2/ and https://bolls.life/get-text/TR/40/2/.",
+    "reasoning": "Micah’s clause says Bethlehem is “little” (Hebrew צעיר, Greek ὀλιγοστός) “among the thousands of Judah”. Matthew’s clause says Bethlehem is “not the least” (οὐδαμῶς ἐλαχίστη) “among the princes of Juda” (ἡγεμόσιν). The statement of size is the reverse in form, little against not least, and the group differs: thousands against princes (or rulers). The two could both stand if the first measures a clan by its numbers and the second measures a town by its place among the rulers’ cities; neither passage says what the measure is.",
+    "scope": "No tag is proposed: this record compares the verified wording of two passages without establishing a translation error. It does not say that either is mistaken and does not examine how Matthew 2 uses Micah. The Hebrew quoted is the Westminster Leningrad Codex digital text; the Greek of Micah is Brenton’s printed edition of the Septuagint; the Greek of Matthew is Tischendorf’s eighth edition as served by bolls.life, with the Textus Receptus there carrying the same words. None of these is a critical apparatus. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Micah 5: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC05.htm"
+      },
+      {
+        "label": "Matthew 2: KJV",
+        "url": "https://ebible.org/eng-kjv/MAT02.htm"
+      },
+      {
+        "label": "Micah 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/33/5/"
+      },
+      {
+        "label": "Micah 5: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/MIC05.htm"
+      },
+      {
+        "label": "Matthew 2: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/40/2/"
+      },
+      {
+        "label": "Matthew 2: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/40/2/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 5:2",
+        "book": 32,
+        "chapter": 5,
+        "verse": 2
+      },
+      {
+        "label": "Matthew 2:6",
+        "book": 39,
+        "chapter": 2,
+        "verse": 6
+      }
+    ],
+    "checked": "2026-10-14",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition; Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 5:2",
+        "quote": "though thou be little among the thousands of Judah"
+      },
+      {
+        "label": "B",
+        "ref": "Matthew 2:6",
+        "quote": "art not the least among the princes of Juda"
+      }
+    ]
+  },
+  {
+    "id": "until-she-which-travaileth-hath-brought-forth-who-is-she-micah-5-3",
+    "mode": "questions",
+    "ref": "Micah 5:3",
+    "appliesTo": [
+      "Micah 5:3"
+    ],
+    "title": "“until the time that she which travaileth hath brought forth” — who is she?",
+    "status": "Context",
+    "summary": "Micah 5:3 says he will give them up “until the time that she which travaileth hath brought forth”, after 5:2 speaks of one who is to come forth out of Bethlehem. The verse does not say who she is or whom she brings forth.",
+    "text": "KJV Micah 5:3: “Therefore will he give them up, until the time that she which travaileth hath brought forth”. KJV Micah 5:2: “out of thee shall he come forth unto me that is to be ruler in Israel”. KJV Micah 4:10: “Be in pain, and labour to bring forth, O daughter of Zion, like a woman in travail”.",
+    "reasoning": "The verse names a woman by her act, travailing and bringing forth, and ties the giving up to the time of it. The passage does not say whether she is the mother of the ruler of 5:2, whether she is the daughter of Zion who is told at 4:10 to labour like a woman in travail, or whether the travail is a figure. Possible readings, named only as readings: the mother of the one who comes forth at 5:2; Zion or the people personified; a figure of the pain of the time before the deliverance. The record does not decide between them. Identifying the figure matters to whether the stated end of the giving up is tied to an individual birth or to Zion’s restoration; the record does not establish either chronology.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, does not examine how Matthew 2:6 uses Micah 5:2 (the separate wording record on that pair does not ask this question), and does not claim that no other passage says more.",
+    "sources": [
+      {
+        "label": "Micah 5: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC05.htm"
+      },
+      {
+        "label": "Micah 4: KJV",
+        "url": "https://ebible.org/eng-kjv/MIC04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Micah 5:3",
+        "book": 32,
+        "chapter": 5,
+        "verse": 3
+      },
+      {
+        "label": "Micah 5:2",
+        "book": 32,
+        "chapter": 5,
+        "verse": 2
+      },
+      {
+        "label": "Micah 4:9",
+        "book": 32,
+        "chapter": 4,
+        "verse": 9
+      },
+      {
+        "label": "Micah 4:10",
+        "book": 32,
+        "chapter": 4,
+        "verse": 10
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Micah 5:3",
+        "quote": "until the time that she which travaileth hath brought forth"
+      }
+    ]
+  },
+  {
+    "id": "for-thou-art-vile-or-for-they-are-swift-nahum-1-14-greek",
+    "mode": "contradictions",
+    "ref": "Nahum 1:14",
+    "appliesTo": [
+      "Nahum 1:14"
+    ],
+    "title": "“for thou art vile” — the Greek has “for they are swift”",
+    "status": "Context",
+    "summary": "The KJV of Nahum 1:14 ends the verse “I will make thy grave; for thou art vile”. Brenton’s Greek prints ὅτι ταχεῖς, which Brenton’s own English renders “for they are swift”.",
+    "text": "KJV Nahum 1:14: “for thou art vile”. Hebrew (WLC) 1:14: כִּ֥י קַלֹּֽותָ. Brenton’s Greek 1:14: ὅτι ταχεῖς. Brenton’s own English (https://ebible.org/eng-Brenton/NAM01.htm) prints: “for they are swift”. Fetched from https://bolls.life/get-text/WLC/34/1/ and https://ebible.org/grcbrent/NAM01.htm.",
+    "reasoning": "The Hebrew quoted prints כי קלות. The KJV gives a reason for the grave in the second person, “thou art vile”, a statement about the one addressed. The Greek gives a reason in the plural third person with an adjective that Brenton’s own English renders “swift”. A moral estimate of the one addressed and the speed of others are different statements.",
+    "scope": "T applies at Nahum 1:14. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Nahum 1: KJV",
+        "url": "https://ebible.org/eng-kjv/NAM01.htm"
+      },
+      {
+        "label": "Nahum 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/34/1/"
+      },
+      {
+        "label": "Nahum 1: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/NAM01.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Nahum 1:14",
+        "book": 33,
+        "chapter": 1,
+        "verse": 14
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Nahum 1:14",
+        "quote": "for thou art vile"
+      }
+    ]
+  },
+  {
+    "id": "the-fir-trees-shall-be-terribly-shaken-or-the-horsemen-shall-be-thrown-into-confusion-nahum-2-3-greek",
+    "mode": "contradictions",
+    "ref": "Nahum 2:3",
+    "appliesTo": [
+      "Nahum 2:3"
+    ],
+    "title": "“the fir trees shall be terribly shaken” — the Greek has “the horsemen shall be thrown into confusion”",
+    "status": "Context",
+    "summary": "The KJV of Nahum 2:3 ends “and the fir trees shall be terribly shaken”. Brenton’s Greek prints οἱ ἱππεῖς, which Brenton’s own English renders “the horsemen”, in the place of the fir trees, and a verb that Brenton’s own English renders “shall be thrown into confusion”.",
+    "text": "KJV Nahum 2:3: “and the fir trees shall be terribly shaken”. Hebrew (WLC) 2:4: וְהַבְּרֹשִׁ֖ים הָרְעָֽלוּ. Brenton’s Greek 2:4: καὶ οἱ ἱππεῖς θορυβηθήσονται. Brenton’s own English (https://ebible.org/eng-Brenton/NAM02.htm) prints: “and the horsemen shall be thrown into confusion”. Fetched from https://bolls.life/get-text/WLC/34/2/ and https://ebible.org/grcbrent/NAM02.htm.",
+    "reasoning": "The Hebrew quoted prints והברשים הרעלו (Hebrew verse 2:4). The KJV’s subject is a kind of tree. The Greek’s subject is οἱ ἱππεῖς, riders on horses. Trees and horsemen are different things, and in a verse about chariots in the day of preparation the difference changes what is said to be shaken.",
+    "scope": "T applies at Nahum 2:3. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. Nahum’s verse numbers differ between the KJV and the Hebrew text from 1:15 (the KJV’s 1:15 is 2:1 in the Hebrew and in Brenton’s Greek, and the KJV’s 2:n is 2:(n+1)); the numbers quoted in the text lines are the numbers of the text quoted, and the refs use the KJV numbering. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Nahum 2: KJV",
+        "url": "https://ebible.org/eng-kjv/NAM02.htm"
+      },
+      {
+        "label": "Nahum 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/34/2/"
+      },
+      {
+        "label": "Nahum 2: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/NAM02.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Nahum 2:3",
+        "book": 33,
+        "chapter": 2,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Nahum 2:3",
+        "quote": "and the fir trees shall be terribly shaken"
+      }
+    ]
+  },
+  {
+    "id": "art-thou-better-than-populous-no-or-prepare-a-portion-for-ammon-nahum-3-8-greek",
+    "mode": "contradictions",
+    "ref": "Nahum 3:8",
+    "appliesTo": [
+      "Nahum 3:8"
+    ],
+    "title": "“Art thou better than populous No” — the Greek has “Prepare thee a portion, tune the chord, prepare a portion for Ammon”",
+    "status": "Context",
+    "summary": "The KJV of Nahum 3:8 begins with a question, “Art thou better than populous No”. Brenton’s Greek begins with commands that Brenton’s own English renders “Prepare thee a portion, tune the chord, prepare a portion for Ammon”.",
+    "text": "KJV Nahum 3:8: “Art thou better than populous No”. Hebrew (WLC) 3:8: הֲתֵֽיטְבִי֙ מִנֹּ֣א אָמֹ֔ון. Brenton’s Greek 3:8: Ἑτοιμασὰι μερίδα, ἁρμόσαι χορδὴν, ἑτοιμάσαι μερίδα Ἀμμών. Brenton’s own English (https://ebible.org/eng-Brenton/NAM03.htm) prints: “Prepare thee a portion, tune the chord, prepare a portion for Ammon”. Fetched from https://bolls.life/get-text/WLC/34/3/ and https://ebible.org/grcbrent/NAM03.htm.",
+    "reasoning": "The Hebrew quoted prints התיטבי מנא אמון. The KJV asks a question about the city it names “populous No”. The Greek prints three imperatives about a portion and a chord, and the name Ἀμμών where the KJV has No. A question to Nineveh about another city and an instruction about a portion for Ammon are different statements.",
+    "scope": "T applies at Nahum 3:8. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say whether No and Ammon are one city. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Nahum 3: KJV",
+        "url": "https://ebible.org/eng-kjv/NAM03.htm"
+      },
+      {
+        "label": "Nahum 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/34/3/"
+      },
+      {
+        "label": "Nahum 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/NAM03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Nahum 3:8",
+        "book": 33,
+        "chapter": 3,
+        "verse": 8
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Nahum 3:8",
+        "quote": "Art thou better than populous No"
+      }
+    ]
+  },
+  {
+    "id": "fig-trees-with-the-firstripe-figs-or-fig-trees-having-watchers-nahum-3-12-greek",
+    "mode": "contradictions",
+    "ref": "Nahum 3:12",
+    "appliesTo": [
+      "Nahum 3:12"
+    ],
+    "title": "“fig trees with the firstripe figs” — the Greek has “fig-trees having watchers”",
+    "status": "Context",
+    "summary": "The KJV of Nahum 3:12 has the strong holds “like fig trees with the firstripe figs”. Brenton’s Greek prints σκοποὺς ἔχουσαι, which Brenton’s own English renders “having watchers”.",
+    "text": "KJV Nahum 3:12: “like fig trees with the firstripe figs”. Hebrew (WLC) 3:12: תְּאֵנִ֖ים עִם־בִּכּוּרִ֑ים. Brenton’s Greek 3:12: συκαῖ σκοποὺς ἔχουσαι. Brenton’s own English (https://ebible.org/eng-Brenton/NAM03.htm) prints: “as fig-trees having watchers”. Fetched from https://bolls.life/get-text/WLC/34/3/ and https://ebible.org/grcbrent/NAM03.htm.",
+    "reasoning": "The Hebrew quoted prints תאנים עם בכורים. The KJV’s fig trees carry early fruit that falls into the eater’s mouth when shaken. The Greek’s fig-trees have σκοπούς, the word Brenton’s own English renders “watchers”, people who look out. Early figs and watchers are different things.",
+    "scope": "T applies at Nahum 3:12. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Nahum 3: KJV",
+        "url": "https://ebible.org/eng-kjv/NAM03.htm"
+      },
+      {
+        "label": "Nahum 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/34/3/"
+      },
+      {
+        "label": "Nahum 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/NAM03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Nahum 3:12",
+        "book": 33,
+        "chapter": 3,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Nahum 3:12",
+        "quote": "like fig trees with the firstripe figs"
+      }
+    ]
   }
 ]
 ;

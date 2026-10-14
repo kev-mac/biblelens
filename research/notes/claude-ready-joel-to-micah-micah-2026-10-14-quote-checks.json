@@ -1,0 +1,1856 @@
+{
+  "batch": "joel-to-micah",
+  "subsetBooks": [
+    "micah"
+  ],
+  "completeBatch": true,
+  "pendingRecords": [],
+  "checked": "2026-10-14T10:08:25.618Z",
+  "checks": [
+    {
+      "id": "an-heap-of-the-field-and-heaps-or-a-store-house-of-the-fruits-and-a-storehouse-of-fruits-micah-1-6-and-3-12-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Micah 1:6",
+          "quote": "I will make Samaria as an heap of the field",
+          "exact": true
+        },
+        {
+          "ref": "Micah 3:12",
+          "quote": "Jerusalem shall become heaps",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְשַׂמְתִּ֥י שֹׁמְרֹ֛ון לְעִ֥י הַשָּׂדֶ֖ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/1/",
+              "printedLabel": "1:6",
+              "printed": "וְשַׂמְתִּ֥י שֹׁמְרֹ֛ון לְעִ֥י הַשָּׂדֶ֖ה לְמַטָּ֣עֵי כָ֑רֶם וְהִגַּרְתִּ֤י לַגַּי֙ אֲבָנֶ֔יהָ וִיסֹדֶ֖יהָ אֲגַלֶּֽה׃"
+            }
+          ]
+        },
+        {
+          "quote": "Καὶ θήσομαι Σαμάρειαν εἰς ὀπωροφυλάκιον ἀγροῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC01.htm",
+              "printedLabel": "1:6",
+              "printed": "Καὶ θήσομαι Σαμάρειαν εἰς ὀπωροφυλάκιον ἀγροῦ, καὶ εἰς φυτείαν ἀμπελῶνος, καὶ κατασπάσω εἰς χάος τοὺς λίθους αὐτῆς, καὶ τὰ θεμέλια αὐτῆς ἀποκαλύψω."
+            }
+          ]
+        },
+        {
+          "quote": "וִירוּשָׁלִַ֙ם֙ עִיִּ֣ין תִּֽהְיֶ֔ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/3/",
+              "printedLabel": "3:12",
+              "printed": "לָכֵן֙ בִּגְלַלְכֶ֔ם צִיֹּ֖ון שָׂדֶ֣ה תֵֽחָרֵ֑שׁ וִירוּשָׁלִַ֙ם֙ עִיִּ֣ין תִּֽהְיֶ֔ה וְהַ֥ר הַבַּ֖יִת לְבָמֹ֥ות יָֽעַר׃  פ"
+            }
+          ]
+        },
+        {
+          "quote": "καὶ Ἱερουσαλὴμ ὡς ὀπωροφυλάκιον ἔσται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC03.htm",
+              "printedLabel": "3:12",
+              "printed": "Διατοῦτο διʼ ὑμᾶς Σιὼν ὡς ἀγρὸς ἀροτριαθήσεται, καὶ Ἱερουσαλὴμ ὡς ὀπωροφυλάκιον ἔσται, καὶ τὸ ὄρος τοῦ οἴκου εἰς ἄλσος δρυμοῦ. ΜΙΧΑΙΑΣ. Γʹ &lt; 3 &gt; Public Domain"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MIC01.htm",
+          "printedLabel": "1:6",
+          "quote": "I will make Samaria as a store-house of the fruits of the field",
+          "printed": "Therefore I will make Samaria as a store-house of the fruits of the field, and as a planting of a vineyard: and I will utterly demolish her stones, and I will expose her foundations.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/MIC03.htm",
+          "printedLabel": "3:12",
+          "quote": "and Jerusalem shall be as a storehouse of fruits",
+          "printed": "Therefore on your account Sion shall be ploughed as a field, and Jerusalem shall be as a storehouse of fruits, and the mountain of the house as a grove of the forest. Michæas &lt; 3 &gt; Public Domain",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 1:6",
+          "quote": "I will make Samaria as an heap of the field",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Micah 3:12",
+          "quote": "Jerusalem shall become heaps",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ὀπωροφυλάκιον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC01.htm",
+              "printedLabel": "1:6"
+            },
+            {
+              "url": "https://ebible.org/grcbrent/MIC03.htm",
+              "printedLabel": "3:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְשַׂמְתִּ֥י שֹׁמְרֹ֛ון לְעִ֥י הַשָּׂדֶ֖ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/1/",
+              "printedLabel": "1:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Καὶ θήσομαι Σαμάρειαν εἰς ὀπωροφυλάκιον ἀγροῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC01.htm",
+              "printedLabel": "1:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וִירוּשָׁלִַ֙ם֙ עִיִּ֣ין תִּֽהְיֶ֔ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/3/",
+              "printedLabel": "3:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καὶ Ἱερουσαλὴμ ὡς ὀπωροφυλάκιον ἔσται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC03.htm",
+              "printedLabel": "3:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ושמתי שמרון לעי השדה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/1/",
+              "printedLabel": "1:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "וירושלם עיין תהיה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/3/",
+              "printedLabel": "3:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "an heap of the field",
+          "ref": "Micah 1:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "heaps",
+          "ref": "Micah 3:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "a store-house of the fruits",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "as an heap of the field",
+          "ref": "Micah 1:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "shall become heaps",
+          "ref": "Micah 3:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "a store-house of the fruits",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "a storehouse of fruits",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "I will make Samaria as an heap of the field",
+          "ref": "Micah 1:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "I will make Samaria as a store-house of the fruits of the field",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "Jerusalem shall become heaps",
+          "ref": "Micah 3:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "and Jerusalem shall be as a storehouse of fruits",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "heap",
+          "ref": "Micah 1:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "heaps",
+          "ref": "Micah 3:12",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "in-the-name-of-his-god-or-in-his-own-way-micah-4-5-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Micah 4:5",
+          "quote": "all people will walk every one in the name of his god",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "כָּל־הָ֣עַמִּ֔ים יֵלְכ֕וּ אִ֖ישׁ בְּשֵׁ֣ם אֱלֹהָ֑יו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/4/",
+              "printedLabel": "4:5",
+              "printed": "כִּ֚י כָּל־הָ֣עַמִּ֔ים יֵלְכ֕וּ אִ֖ישׁ בְּשֵׁ֣ם אֱלֹהָ֑יו וַאֲנַ֗חְנוּ נֵלֵ֛ךְ בְּשֵׁם־יְהוָ֥ה אֱלֹהֵ֖ינוּ לְעֹולָ֥ם וָעֶֽד׃  פ"
+            }
+          ]
+        },
+        {
+          "quote": "πάντες οἱ λαοὶ πορεύσονται ἕκαστος τὴν ὁδὸν αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC04.htm",
+              "printedLabel": "4:5",
+              "printed": "Ὅτι πάντες οἱ λαοὶ πορεύσονται ἕκαστος τὴν ὁδὸν αὐτοῦ, ἡμεῖς δὲ πορευσόμεθα ἐν ὀνόματι Κυρίου Θεοῦ ἡμῶν εἰς τὸν αἰῶνα, καὶ ἐπέκεινα."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MIC04.htm",
+          "printedLabel": "4:5",
+          "quote": "all other nations shall walk every one in his own way",
+          "printed": "For all other nations shall walk every one in his own way, but we will walk in the name of the Lord our God for ever and ever.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 4:5",
+          "quote": "all people will walk every one in the name of his god",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "τὴν ὁδὸν αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC04.htm",
+              "printedLabel": "4:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כָּל־הָ֣עַמִּ֔ים יֵלְכ֕וּ אִ֖ישׁ בְּשֵׁ֣ם אֱלֹהָ֑יו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/4/",
+              "printedLabel": "4:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "πάντες οἱ λαοὶ πορεύσονται ἕκαστος τὴν ὁδὸν αὐτοῦ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC04.htm",
+              "printedLabel": "4:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כל העמים ילכו איש בשם אלהיו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/4/",
+              "printedLabel": "4:5"
+            }
+          ],
+          "classification": "Hebrew consonantal repetition; maqaf normalized to word boundary"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ὁδόν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC04.htm",
+              "printedLabel": "4:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἐν ὀνόματι Κυρίου Θεοῦ ἡμῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC04.htm",
+              "printedLabel": "4:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "every one in the name of his god",
+          "ref": "Micah 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "every one in his own way",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "every one in the name of his god",
+          "ref": "Micah 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "in his own way",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "all people will walk every one in the name of his god",
+          "ref": "Micah 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "all other nations shall walk every one in his own way",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "in the name of his god",
+          "ref": "Micah 4:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "we will walk in the name of the Lord our God",
+          "ref": "Micah 4:5",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "the-judge-of-israel-or-the-tribes-of-israel-micah-5-1-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Micah 5:1",
+          "quote": "they shall smite the judge of Israel with a rod upon the cheek",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "בַּשֵּׁ֙בֶט֙ יַכּ֣וּ עַֽל־הַלְּחִ֔י אֵ֖ת שֹׁפֵ֥ט יִשְׂרָאֵֽל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/4/",
+              "printedLabel": "4:14",
+              "printed": "עַתָּה֙ תִּתְגֹּדְדִ֣י בַת־גְּד֔וּד מָצֹ֖ור שָׂ֣ם עָלֵ֑ינוּ בַּשֵּׁ֙בֶט֙ יַכּ֣וּ עַֽל־הַלְּחִ֔י אֵ֖ת שֹׁפֵ֥ט יִשְׂרָאֵֽל׃    ס"
+            }
+          ]
+        },
+        {
+          "quote": "ἐν ῥάβδῳ πατάξουσιν ἐπὶ σιαγόνα τὰς φυλὰς τοῦ Ἰσραήλ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC04.htm",
+              "printedLabel": "4:14",
+              "printed": "Νῦν ἐμφραχθήσεται θυγάτηρ ἐμφραγμῷ, συνοχὴν ἔταξεν ἐφʼ ἡμᾶς, ἐν ῥάβδῳ πατάξουσιν ἐπὶ σιαγόνα τὰς φυλὰς τοῦ Ἰσραήλ. ΜΙΧΑΙΑΣ. Γʹ &lt; 4 &gt; Public Domain"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MIC04.htm",
+          "printedLabel": "4:14",
+          "quote": "they shall smite the tribes of Israel with a rod upon the cheek",
+          "printed": "Now shall the daughter of Sion be completely hedged in: he has laid siege against us: they shall smite the tribes of Israel with a rod upon the cheek. Michæas &lt; 4 &gt; Public Domain",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 5:1",
+          "quote": "they shall smite the judge of Israel with a rod upon the cheek",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "τὰς φυλάς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC04.htm",
+              "printedLabel": "4:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "בַּשֵּׁ֙בֶט֙ יַכּ֣וּ עַֽל־הַלְּחִ֔י אֵ֖ת שֹׁפֵ֥ט יִשְׂרָאֵֽל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/4/",
+              "printedLabel": "4:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἐν ῥάβδῳ πατάξουσιν ἐπὶ σιαγόνα τὰς φυλὰς τοῦ Ἰσραήλ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC04.htm",
+              "printedLabel": "4:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "בשבט יכו על הלחי את שפט ישראל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/4/",
+              "printedLabel": "4:14"
+            }
+          ],
+          "classification": "Hebrew consonantal repetition; maqaf normalized to word boundary"
+        },
+        {
+          "field": "reasoning",
+          "quote": "φυλάς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC04.htm",
+              "printedLabel": "4:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "the judge of Israel",
+          "ref": "Micah 5:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the tribes of Israel",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the judge of Israel",
+          "ref": "Micah 5:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the tribes",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "they shall smite the judge of Israel with a rod upon the cheek",
+          "ref": "Micah 5:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "they shall smite the tribes of Israel with a rod upon the cheek",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "seven-shepherds-and-eight-principal-men-or-eight-attacks-of-men-micah-5-5-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Micah 5:5",
+          "quote": "seven shepherds, and eight principal men",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "שִׁבְעָ֣ה רֹעִ֔ים וּשְׁמֹנָ֖ה נְסִיכֵ֥י אָדָֽם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/5/",
+              "printedLabel": "5:4",
+              "printed": "וְהָיָ֥ה זֶ֖ה שָׁלֹ֑ום אַשּׁ֣וּר ׀ כִּֽי־יָבֹ֣וא בְאַרְצֵ֗נוּ וְכִ֤י יִדְרֹךְ֙ בְּאַרְמְנֹתֵ֔ינוּ וַהֲקֵמֹ֤נוּ עָלָיו֙ שִׁבְעָ֣ה רֹעִ֔ים וּשְׁמֹנָ֖ה נְסִיכֵ֥י אָדָֽם׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἑπτὰ ποιμένες, καὶ ὀκτὼ δήγματα ἀνθρώπων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC05.htm",
+              "printedLabel": "5:4",
+              "printed": "Καὶ ἔσται αὐτῇ εἰρήνη, Ἀσσοὺρ ὅταν ἐπέλθῃ ἐπὶ τὴν γῆν ὑμῶν, καὶ ὅταν ἐπιβῇ ἐπὶ τὴν χώραν ὑμῶν, καὶ ἐπεγερθήσονται ἐπʼ αὐτὸν ἑπτὰ ποιμένες, καὶ ὀκτὼ δήγματα ἀνθρώπων,"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MIC05.htm",
+          "printedLabel": "5:4",
+          "quote": "seven shepherds, and eight attacks of men",
+          "printed": "And she shall have peace when Assur shall come into your land, and when he shall come up upon your country; and there shall be raised up against him seven shepherds, and eight attacks of men.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 5:5",
+          "quote": "seven shepherds, and eight principal men",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "δήγματα ἀνθρώπων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC05.htm",
+              "printedLabel": "5:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "שִׁבְעָ֣ה רֹעִ֔ים וּשְׁמֹנָ֖ה נְסִיכֵ֥י אָדָֽם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/5/",
+              "printedLabel": "5:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἑπτὰ ποιμένες, καὶ ὀκτὼ δήγματα ἀνθρώπων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC05.htm",
+              "printedLabel": "5:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "שבעה רעים ושמנה נסיכי אדם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/5/",
+              "printedLabel": "5:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "eight principal men",
+          "ref": "Micah 5:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "eight attacks of men",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "seven shepherds, and eight principal men",
+          "ref": "Micah 5:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "attacks of men",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "seven shepherds, and eight principal men",
+          "ref": "Micah 5:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "seven shepherds, and eight attacks of men",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "attacks",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of men",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "as-the-showers-upon-the-grass-or-as-lambs-on-the-grass-micah-5-7-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Micah 5:7",
+          "quote": "as a dew from the Lord, as the showers upon the grass",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "כְּטַל֙ מֵאֵ֣ת יְהוָ֔ה כִּרְבִיבִ֖ים עֲלֵי־עֵ֑שֶׂב",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/5/",
+              "printedLabel": "5:6",
+              "printed": "וְהָיָ֣ה ׀ שְׁאֵרִ֣ית יַעֲקֹ֗ב בְּקֶ֙רֶב֙ עַמִּ֣ים רַבִּ֔ים כְּטַל֙ מֵאֵ֣ת יְהוָ֔ה כִּרְבִיבִ֖ים עֲלֵי־עֵ֑שֶׂב אֲשֶׁ֤ר לֹֽא־יְקַוֶּה֙ לְאִ֔ישׁ וְלֹ֥א יְיַחֵ֖ל לִבְנֵ֥י אָדָֽם׃"
+            }
+          ]
+        },
+        {
+          "quote": "ὡς δρόσος παρὰ Κυρίου πίπτουσα, καὶ ὡς ἄρνες ἐπὶ ἄγρωστιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC05.htm",
+              "printedLabel": "5:6",
+              "printed": "Καὶ ἔσται τὸ ὑπόλειμμα τοῦ Ἰακὼβ ἐν τοῖς ἔθνεσιν ἐν μέσῳ λαῶν πολλῶν, ὡς δρόσος παρὰ Κυρίου πίπτουσα, καὶ ὡς ἄρνες ἐπὶ ἄγρωστιν, ὅπως μὴ συναχθῇ μηδεὶς, μηδὲ ὑποστῇ ἐν υἱοῖς ἀνθρώπων."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MIC05.htm",
+          "printedLabel": "5:6",
+          "quote": "as dew falling from the Lord, and as lambs on the grass",
+          "printed": "And the remnant of Jacob shall be among the Gentiles in the midst of many peoples, as dew falling from the Lord, and as lambs on the grass; that none may assemble nor resist among the sons of men.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 5:7",
+          "quote": "as a dew from the Lord, as the showers upon the grass",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἄρνες",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC05.htm",
+              "printedLabel": "5:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כְּטַל֙ מֵאֵ֣ת יְהוָ֔ה כִּרְבִיבִ֖ים עֲלֵי־עֵ֑שֶׂב",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/5/",
+              "printedLabel": "5:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὡς δρόσος παρὰ Κυρίου πίπτουσα, καὶ ὡς ἄρνες ἐπὶ ἄγρωστιν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC05.htm",
+              "printedLabel": "5:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כטל מאת יהוה כרביבים עלי עשב",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/5/",
+              "printedLabel": "5:6"
+            }
+          ],
+          "classification": "Hebrew consonantal repetition; maqaf normalized to word boundary"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "as the showers upon the grass",
+          "ref": "Micah 5:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "as lambs on the grass",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "a dew from the Lord, as the showers upon the grass",
+          "ref": "Micah 5:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "lambs",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "showers",
+          "ref": "Micah 5:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "as a dew from the Lord, as the showers upon the grass",
+          "ref": "Micah 5:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "as dew falling from the Lord, and as lambs on the grass",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "ten-thousands-of-rivers-of-oil-or-ten-thousands-of-fat-goats-micah-6-7-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Micah 6:7",
+          "quote": "ten thousands of rivers of oil",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "בְּרִֽבְבֹ֖ות נַֽחֲלֵי־שָׁ֑מֶן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/6/",
+              "printedLabel": "6:7",
+              "printed": "הֲיִרְצֶ֤ה יְהוָה֙ בְּאַלְפֵ֣י אֵילִ֔ים בְּרִֽבְבֹ֖ות נַֽחֲלֵי־שָׁ֑מֶן הַאֶתֵּ֤ן בְּכֹורִי֙ פִּשְׁעִ֔י פְּרִ֥י בִטְנִ֖י חַטַּ֥את נַפְשִֽׁי׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἐν μυριάσι χιμάρων πιόνων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC06.htm",
+              "printedLabel": "6:7",
+              "printed": "Εἰ προσδέξεται Κύριος ἐν χιλιάσι κριῶν; ἢ ἐν μυριάσι χιμάρων πιόνων; εἰ δῶ πρωτότοκά μου ὑπὲρ ἀσεβείας, καρπὸν κοιλίας μου ὑπὲρ ἁμαρτίας ψυχῆς μου;"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MIC06.htm",
+          "printedLabel": "6:7",
+          "quote": "ten thousands of fat goats",
+          "printed": "Will the Lord accept thousands of rams, or ten thousands of fat goats? should I give my first-born for ungodliness, the fruit of my body for the sin of my soul?",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 6:7",
+          "quote": "ten thousands of rivers of oil",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "μυριάσι χιμάρων πιόνων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC06.htm",
+              "printedLabel": "6:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "בְּרִֽבְבֹ֖ות נַֽחֲלֵי־שָׁ֑מֶן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/6/",
+              "printedLabel": "6:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἐν μυριάσι χιμάρων πιόνων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC06.htm",
+              "printedLabel": "6:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ברבבות נחלי שמן",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/6/",
+              "printedLabel": "6:7"
+            }
+          ],
+          "classification": "Hebrew consonantal repetition; maqaf normalized to word boundary"
+        },
+        {
+          "field": "reasoning",
+          "quote": "χιμάρων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC06.htm",
+              "printedLabel": "6:7"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "ten thousands of rivers of oil",
+          "ref": "Micah 6:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "ten thousands of fat goats",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "with ten thousands of rivers of oil",
+          "ref": "Micah 6:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "ten thousands of fat goats",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "ten thousands of rivers of oil",
+          "ref": "Micah 6:7",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "ten thousands of fat goats",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "to-walk-humbly-with-thy-god-or-to-be-ready-to-walk-with-the-lord-thy-god-micah-6-8-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Micah 6:8",
+          "quote": "to walk humbly with thy God",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְהַצְנֵ֥עַ לֶ֖כֶת עִם־אֱלֹהֶֽיךָ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/6/",
+              "printedLabel": "6:8",
+              "printed": "הִגִּ֥יד לְךָ֛ אָדָ֖ם מַה־טֹּ֑וב וּמָֽה־יְהוָ֞ה דֹּורֵ֣שׁ מִמְּךָ֗ כִּ֣י אִם־עֲשֹׂ֤ות מִשְׁפָּט֙ וְאַ֣הֲבַת חֶ֔סֶד וְהַצְנֵ֥עַ לֶ֖כֶת עִם־אֱלֹהֶֽיךָ׃  פ"
+            }
+          ]
+        },
+        {
+          "quote": "καὶ ἕτοιμον εἶναι τοῦ πορεύεσθαι μετὰ Κυρίου Θεοῦ σου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC06.htm",
+              "printedLabel": "6:8",
+              "printed": "Εἰ ἀνηγγέλη σοι ἄνθρωπε τί καλόν; ἢ τί Κύριος ἐκζητεῖ παρὰ σοῦ, ἀλλʼ ἢ τοῦ ποιεῖν κρίμα, καὶ ἀγαπᾷν ἔλεον, καὶ ἕτοιμον εἶναι τοῦ πορεύεσθαι μετὰ Κυρίου Θεοῦ σου;"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MIC06.htm",
+          "printedLabel": "6:8",
+          "quote": "and be ready to walk with the Lord thy God",
+          "printed": "Has it not been told thee, O man, what is good? or what does the Lord require of thee, but to do justice, and love mercy, and be ready to walk with the Lord thy God?",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 6:8",
+          "quote": "to walk humbly with thy God",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἕτοιμον εἶναι τοῦ πορεύεσθαι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC06.htm",
+              "printedLabel": "6:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְהַצְנֵ֥עַ לֶ֖כֶת עִם־אֱלֹהֶֽיךָ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/6/",
+              "printedLabel": "6:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καὶ ἕτοιμον εἶναι τοῦ πορεύεσθαι μετὰ Κυρίου Θεοῦ σου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC06.htm",
+              "printedLabel": "6:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והצנע לכת עם אלהיך",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/6/",
+              "printedLabel": "6:8"
+            }
+          ],
+          "classification": "Hebrew consonantal repetition; maqaf normalized to word boundary"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "to walk humbly with thy God",
+          "ref": "Micah 6:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "be ready to walk with the Lord thy God",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "to walk humbly with thy God",
+          "ref": "Micah 6:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "be ready to walk",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "to walk humbly with thy God",
+          "ref": "Micah 6:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "and be ready to walk with the Lord thy God",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exp-late-27-6-4",
+          "title": "Mercy and ritual",
+          "summary": "Hosea prioritizes enduring loyalty and knowledge of God over offerings.",
+          "reasoning": "The immediate criticism concerns unreliable loyalty and ritual as a substitute for faithfulness; it need not prohibit every sacrifice.",
+          "scope": "Prophetic ethical rhetoric in its context.",
+          "decision": "Distinct finding: ethical ritual comparison or Amos palace/foundation wording does not cover this Micah wording."
+        },
+        {
+          "id": "exp-late-29-5-21",
+          "title": "Worship rejected without justice",
+          "summary": "Amos juxtaposes rejected rituals with a demand for justice.",
+          "reasoning": "The contrast is ethical; its river language is metaphorical, not hydrological. Hosea and Micah offer related critiques.",
+          "scope": "Primary-text comparison, not independent verification of divine speech.",
+          "decision": "Distinct finding: ethical ritual comparison or Amos palace/foundation wording does not cover this Micah wording."
+        }
+      ],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "as-the-sheep-of-bozrah-or-as-sheep-in-trouble-micah-2-12-greek",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Micah 2:12",
+          "quote": "as the sheep of Bozrah",
+          "exact": true
+        },
+        {
+          "ref": "Amos 1:12",
+          "quote": "shall devour the palaces of Bozrah",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "כְּצֹ֣אן בָּצְרָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/2/",
+              "printedLabel": "2:12",
+              "printed": "אָסֹ֨ף אֶאֱסֹ֜ף יַעֲקֹ֣ב כֻּלָּ֗ךְ קַבֵּ֤ץ אֲקַבֵּץ֙ שְׁאֵרִ֣ית יִשְׂרָאֵ֔ל יַ֥חַד אֲשִׂימֶ֖נּוּ כְּצֹ֣אן בָּצְרָ֑ה כְּעֵ֙דֶר֙ בְּתֹ֣וךְ הַדָּֽבְרֹ֔ו תְּהִימֶ֖נָה מֵאָדָֽם׃"
+            }
+          ]
+        },
+        {
+          "quote": "ὡς πρόβατα ἐν θλίψει",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC02.htm",
+              "printedLabel": "2:12",
+              "printed": "συναγόμενος συναχθήσεται Ἰακὼβ σὺν πᾶσιν· ἐκδεχόμενος ἐκδέξομαι τοὺς καταλοίπους τοῦ Ἰσραὴλ, ἐπιτοαυτὸ θήσομαι τὴν ἀποστροφὴν αὐτοῦ· ὡς πρόβατα ἐν θλίψει, ὡς ποίμνιον ἐν μέσῳ κοίτης αὐτῶν· ἐξαλοῦνται ἐξ ἀνθρώπων"
+            }
+          ]
+        },
+        {
+          "quote": "בָּצְרָֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "printedLabel": "1:12",
+              "printed": "וְשִׁלַּ֥חְתִּי אֵ֖שׁ בְּתֵימָ֑ן וְאָכְלָ֖ה אַרְמְנֹ֥ות בָּצְרָֽה׃  פ"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/MIC02.htm",
+          "printedLabel": "2:12",
+          "quote": "as sheep in trouble",
+          "printed": "Jacob shall be completely gathered with all his people : I will surely receive the remnant of Israel; I will cause them to return together, as sheep in trouble, as a flock in the midst of their fold: they shall rush forth from among men through the breach made before them:",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 2:12",
+          "quote": "as the sheep of Bozrah",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐν θλίψει",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC02.htm",
+              "printedLabel": "2:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כְּצֹ֣אן בָּצְרָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/2/",
+              "printedLabel": "2:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὡς πρόβατα ἐν θλίψει",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC02.htm",
+              "printedLabel": "2:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "בָּצְרָֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/2/",
+              "printedLabel": "2:12"
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "printedLabel": "1:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כצאן בצרה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/2/",
+              "printedLabel": "2:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "בצרה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/2/",
+              "printedLabel": "2:12"
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "printedLabel": "1:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "θλίψις",
+          "matches": [],
+          "classification": "dictionary form replaced with supplied printed θλίψει in accepted reasoning"
+        },
+        {
+          "field": "scope",
+          "quote": "בצרה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/2/",
+              "printedLabel": "2:12"
+            },
+            {
+              "url": "https://bolls.life/get-text/WLC/30/1/",
+              "printedLabel": "1:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "as the sheep of Bozrah",
+          "ref": "Micah 2:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "as sheep in trouble",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "as the sheep of Bozrah",
+          "ref": "Micah 2:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "in trouble",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "as the sheep of Bozrah",
+          "ref": "Micah 2:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "as sheep in trouble",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "shall devour the palaces of Bozrah",
+          "ref": "Amos 1:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "in",
+          "ref": "Micah 2:12",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [
+        {
+          "id": "shall-devour-the-palaces-or-shall-devour-the-foundations-amos-1-4-and-others-greek",
+          "title": "“shall devour the palaces” — the Greek has “shall devour the foundations” (Amos 1:4, 1:7, 1:10, 1:12, 1:14 and 2:5)",
+          "summary": "In the refrain of Amos 1–2 the KJV has the fire “devour the palaces” of Hazael’s house, Gaza, Tyrus, Bozrah, Rabbah and Jerusalem. Brenton’s Greek prints θεμέλια at each of these verses, which Brenton’s own English renders “foundations”.",
+          "reasoning": "At each verse the Hebrew quoted prints ארמנות (ארמנתיה, ארמנותיה) after the verb for devouring, and the KJV renders it “palaces”. The Greek prints θεμέλια, “foundations”, at the same place at each verse. A palace is a building and a foundation is the base of one; the two nouns name different things.",
+          "scope": "T applies at Amos 1:4, Amos 1:7, Amos 1:10, Amos 1:12, Amos 1:14 and Amos 2:5. The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word. This compares the wording of the texts quoted. It does not show which wording is original. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The same Greek noun is printed at all six verses; the record does not say how the Greek of other verses of Amos 1–2 compares. At 1:4 Brenton’s Greek prints υἱοῦ Ἄδερ where the KJV prints Benhadad; that is a difference of form in a name and is not the finding. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "decision": "Distinct finding: ethical ritual comparison or Amos palace/foundation wording does not cover this Micah wording."
+        }
+      ],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "though-thou-be-little-among-the-thousands-of-judah-or-art-not-the-least-among-the-princes-of-juda-micah-5-2",
+      "batch": "joel-to-micah",
+      "english": [
+        {
+          "ref": "Micah 5:2",
+          "quote": "though thou be little among the thousands of Judah",
+          "exact": true
+        },
+        {
+          "ref": "Matthew 2:6",
+          "quote": "art not the least among the princes of Juda",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "צָעִיר֙ לִֽהְיֹות֙ בְּאַלְפֵ֣י יְהוּדָ֔ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/5/",
+              "printedLabel": "5:1",
+              "printed": "וְאַתָּ֞ה בֵּֽית־לֶ֣חֶם אֶפְרָ֗תָה צָעִיר֙ לִֽהְיֹות֙ בְּאַלְפֵ֣י יְהוּדָ֔ה מִמְּךָ֙ לִ֣י יֵצֵ֔א לִֽהְיֹ֥ות מֹושֵׁ֖ל בְּיִשְׂרָאֵ֑ל וּמֹוצָאֹתָ֥יו מִקֶּ֖דֶם מִימֵ֥י עֹולָֽם׃"
+            }
+          ]
+        },
+        {
+          "quote": "ὀλιγοστὸς εἶ τοῦ εἶναι ἐν χιλιάσιν Ἰούδα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC05.htm",
+              "printedLabel": "5:1",
+              "printed": "Καὶ σὺ Βηθλεὲμ οἶκος Ἐφραθὰ, ὀλιγοστὸς εἶ τοῦ εἶναι ἐν χιλιάσιν Ἰούδα· ἐκ σοῦ μοι ἐξελεύσεται, τοῦ εἶναι εἰς ἄρχοντα τοῦ Ἰσραὴλ, καὶ ἔξοδοι αὐτοῦ ἀπʼ ἀρχῆς ἐξ ἡμερῶν αἰῶνος."
+            }
+          ]
+        },
+        {
+          "quote": "οὐδαμῶς ἐλαχίστη εἶ ἐν τοῖς ἡγεμόσιν Ἰούδα",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/2/",
+              "printedLabel": "2:6",
+              "printed": "καὶ<S>2532</S> σύ,<S>4771</S> Βηθλέεμ<S>965</S> γῆ<S>1093</S> Ἰούδα,<S>2448</S> οὐδαμῶς<S>3760</S> ἐλαχίστη<S>1646</S> εἶ<S>1510</S> ἐν<S>1722</S> τοῖς<S>3588</S> ἡγεμόσιν<S>2232</S> Ἰούδα·<S>2448</S> ἐκ<S>1537</S> σοῦ<S>4771</S> γὰρ<S>1063</S> ἐξελεύσεται<S>1831</S> ἡγούμενος,<S>2233</S> ὅστις<S>3748</S> ποιμανεῖ<S>4165</S> τὸν<S>3588</S> λαόν<S>2992</S> μου<S>1473</S> τὸν<S>3588</S> Ἰσραήλ.<S>2474</S>"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/2/",
+              "printedLabel": "2:6",
+              "printed": "και συ βηθλεεμ γη ιουδα ουδαμως ελαχιστη ει εν τοις ηγεμοσιν ιουδα εκ σου γαρ εξελευσεται ηγουμενος οστις ποιμανει τον λαον μου τον ισραηλ"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 5:2",
+          "quote": "though thou be little among the thousands of Judah",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Matthew 2:6",
+          "quote": "art not the least among the princes of Juda",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "צָעִיר֙ לִֽהְיֹות֙ בְּאַלְפֵ֣י יְהוּדָ֔ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/5/",
+              "printedLabel": "5:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὀλιγοστὸς εἶ τοῦ εἶναι ἐν χιλιάσιν Ἰούδα",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC05.htm",
+              "printedLabel": "5:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "οὐδαμῶς ἐλαχίστη εἶ ἐν τοῖς ἡγεμόσιν Ἰούδα",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/2/",
+              "printedLabel": "2:6"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/2/",
+              "printedLabel": "2:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "צעיר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/33/5/",
+              "printedLabel": "5:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ὀλιγοστός",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/MIC05.htm",
+              "printedLabel": "5:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "οὐδαμῶς ἐλαχίστη",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/2/",
+              "printedLabel": "2:6"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/2/",
+              "printedLabel": "2:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ἡγεμόσιν",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/40/2/",
+              "printedLabel": "2:6"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/40/2/",
+              "printedLabel": "2:6"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "though thou be little among the thousands of Judah",
+          "ref": "Micah 5:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "art not the least among the princes of Juda",
+          "ref": "Matthew 2:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "little among the thousands of Judah",
+          "ref": "Micah 5:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "not the least among the princes of Juda",
+          "ref": "Matthew 2:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "though thou be little among the thousands of Judah",
+          "ref": "Micah 5:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "art not the least among the princes of Juda",
+          "ref": "Matthew 2:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "little",
+          "ref": "Micah 5:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "among the thousands of Judah",
+          "ref": "Micah 5:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "not the least",
+          "ref": "Matthew 2:6",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "among the princes of Juda",
+          "ref": "Matthew 2:6",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    }
+  ],
+  "draftHashes": {
+    "joel-to-micah-records.json": "4f4532778fa77e726c8a5d172404c1bf0dec148ca8f09e7e500ea22c9cf12627",
+    "joel-to-micah-notes.md": "12486ee07609bedae47134a662a94cbfc81e274e25f783fdd5322675a23c0f8b",
+    "joel-to-micah-q-records.json": "aa2be6460a807433695706a5867327e36f463a04b9f4d5f81f1445fe413a78ee",
+    "joel-to-micah-q-notes.md": "07d76ddb0de7d38634753880bd5e8833a13b8a29a0752def736d95b76c6ae3dd",
+    "nahum-to-malachi-records.json": "a3ebbe7636a143cacc79d2a6acc0e06bb442d9103415b70b98d2965a9fddea1a",
+    "nahum-to-malachi-notes.md": "cab1da1d4555696673077f676b619ca89d87145dcd5832dd00146dc3545e7363",
+    "nahum-to-malachi-q-records.json": "3861008b04de5e76ef1ae99917e46a0e7f5be8d13082159d9ebccfd00b9dde62",
+    "nahum-to-malachi-q-notes.md": "1f6f2fe79184193ae68cc0633f5d3e28933c0ab6748f9e8c4c0e18a8658bc26f"
+  },
+  "sourceCount": 30,
+  "sourceErrors": [],
+  "normalization": "Exact KJV substrings and side references. Named language texts normalized for accents and punctuation; consonantal Hebrew normalizes maqaf to spaces. All matches preserve supplied address and printed verse label. Greek dictionary form explicitly corrected.",
+  "needsOwner": []
+}

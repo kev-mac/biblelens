@@ -1,0 +1,116 @@
+{
+  "batch": "joel-to-micah-q",
+  "subsetBooks": [
+    "micah"
+  ],
+  "completeBatch": true,
+  "pendingRecords": [],
+  "checked": "2026-10-14T10:08:25.618Z",
+  "checks": [
+    {
+      "id": "until-she-which-travaileth-hath-brought-forth-who-is-she-micah-5-3",
+      "batch": "joel-to-micah-q",
+      "english": [
+        {
+          "ref": "Micah 5:3",
+          "quote": "Therefore will he give them up, until the time that she which travaileth hath brought forth",
+          "exact": true
+        },
+        {
+          "ref": "Micah 5:2",
+          "quote": "out of thee shall he come forth unto me that is to be ruler in Israel",
+          "exact": true
+        },
+        {
+          "ref": "Micah 4:10",
+          "quote": "Be in pain, and labour to bring forth, O daughter of Zion, like a woman in travail",
+          "exact": true
+        }
+      ],
+      "languages": [],
+      "brentonEnglish": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Micah 5:3",
+          "quote": "until the time that she which travaileth hath brought forth",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "until the time that she which travaileth hath brought forth",
+          "ref": "Micah 5:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "until the time that she which travaileth hath brought forth",
+          "ref": "Micah 5:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Therefore will he give them up, until the time that she which travaileth hath brought forth",
+          "ref": "Micah 5:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "out of thee shall he come forth unto me that is to be ruler in Israel",
+          "ref": "Micah 5:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Be in pain, and labour to bring forth, O daughter of Zion, like a woman in travail",
+          "ref": "Micah 4:10",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    }
+  ],
+  "draftHashes": {
+    "joel-to-micah-records.json": "4f4532778fa77e726c8a5d172404c1bf0dec148ca8f09e7e500ea22c9cf12627",
+    "joel-to-micah-notes.md": "12486ee07609bedae47134a662a94cbfc81e274e25f783fdd5322675a23c0f8b",
+    "joel-to-micah-q-records.json": "aa2be6460a807433695706a5867327e36f463a04b9f4d5f81f1445fe413a78ee",
+    "joel-to-micah-q-notes.md": "07d76ddb0de7d38634753880bd5e8833a13b8a29a0752def736d95b76c6ae3dd",
+    "nahum-to-malachi-records.json": "a3ebbe7636a143cacc79d2a6acc0e06bb442d9103415b70b98d2965a9fddea1a",
+    "nahum-to-malachi-notes.md": "cab1da1d4555696673077f676b619ca89d87145dcd5832dd00146dc3545e7363",
+    "nahum-to-malachi-q-records.json": "3861008b04de5e76ef1ae99917e46a0e7f5be8d13082159d9ebccfd00b9dde62",
+    "nahum-to-malachi-q-notes.md": "1f6f2fe79184193ae68cc0633f5d3e28933c0ab6748f9e8c4c0e18a8658bc26f"
+  },
+  "sourceCount": 30,
+  "sourceErrors": [],
+  "normalization": "Exact KJV substrings and side references. Named language texts normalized for accents and punctuation; consonantal Hebrew normalizes maqaf to spaces. All matches preserve supplied address and printed verse label. Greek dictionary form explicitly corrected.",
+  "needsOwner": []
+}

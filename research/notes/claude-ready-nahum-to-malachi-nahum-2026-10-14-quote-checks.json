@@ -1,0 +1,898 @@
+{
+  "batch": "nahum-to-malachi",
+  "subsetBooks": [
+    "nahum"
+  ],
+  "completeBatch": false,
+  "pendingRecords": [
+    {
+      "id": "behold-ye-among-the-heathen-or-behold-ye-despisers-habakkuk-1-5-greek",
+      "ref": "Habakkuk 1:5"
+    },
+    {
+      "id": "his-soul-which-is-lifted-up-or-if-he-should-draw-back-my-soul-habakkuk-2-4-greek",
+      "ref": "Habakkuk 2:4"
+    },
+    {
+      "id": "because-he-transgresseth-by-wine-or-the-arrogant-man-and-the-scorner-habakkuk-2-5-greek",
+      "ref": "Habakkuk 2:5"
+    },
+    {
+      "id": "the-beam-out-of-the-timber-or-the-beetle-out-of-the-timber-habakkuk-2-11-greek",
+      "ref": "Habakkuk 2:11"
+    },
+    {
+      "id": "let-thy-foreskin-be-uncovered-or-shake-o-heart-and-quake-habakkuk-2-16-greek",
+      "ref": "Habakkuk 2:16"
+    },
+    {
+      "id": "revive-thy-work-in-the-midst-of-the-years-or-thou-shalt-be-known-between-the-two-living-creatures-habakkuk-3-2-greek",
+      "ref": "Habakkuk 3:2"
+    },
+    {
+      "id": "before-him-went-the-pestilence-or-before-his-face-shall-go-a-report-habakkuk-3-5-greek",
+      "ref": "Habakkuk 3:5"
+    },
+    {
+      "id": "swear-by-malcham-or-swear-by-their-king-zephaniah-1-5-greek",
+      "ref": "Zephaniah 1:5"
+    },
+    {
+      "id": "the-fish-gate-or-the-gate-of-men-slaying-zephaniah-1-10-greek",
+      "ref": "Zephaniah 1:10"
+    },
+    {
+      "id": "inhabitants-of-maktesh-and-the-merchant-people-or-the-city-broken-down-and-like-chanaan-zephaniah-1-11-greek",
+      "ref": "Zephaniah 1:11"
+    },
+    {
+      "id": "to-her-that-is-filthy-and-polluted-or-alas-the-glorious-and-ransomed-city-zephaniah-3-1-greek",
+      "ref": "Zephaniah 3:1"
+    },
+    {
+      "id": "until-the-day-that-i-rise-up-to-the-prey-or-for-a-witness-zephaniah-3-8-greek",
+      "ref": "Zephaniah 3:8"
+    },
+    {
+      "id": "a-pure-language-or-a-tongue-for-her-generation-zephaniah-3-9-greek",
+      "ref": "Zephaniah 3:9"
+    },
+    {
+      "id": "i-called-for-a-drought-or-i-will-bring-a-sword-haggai-1-11-greek",
+      "ref": "Haggai 1:11"
+    },
+    {
+      "id": "the-desire-of-all-nations-shall-come-or-the-choice-portions-of-all-the-nations-shall-come-haggai-2-7-greek",
+      "ref": "Haggai 2:7"
+    },
+    {
+      "id": "in-this-place-will-i-give-peace-or-peace-of-soul-for-a-possession-haggai-2-9-greek",
+      "ref": "Haggai 2:9"
+    },
+    {
+      "id": "according-to-the-word-that-i-covenanted-with-you-brentons-greek-prints-no-such-clause-haggai-2-5",
+      "ref": "Haggai 2:5"
+    },
+    {
+      "id": "among-the-myrtle-trees-or-between-the-shady-mountains-zechariah-1-8-greek",
+      "ref": "Zechariah 1:8"
+    },
+    {
+      "id": "before-zerubbabel-thou-shalt-become-a-plain-or-that-thou-shouldest-prosper-zechariah-4-7-greek",
+      "ref": "Zechariah 4:7"
+    },
+    {
+      "id": "a-flying-roll-or-a-flying-sickle-zechariah-5-1-greek",
+      "ref": "Zechariah 5:1"
+    },
+    {
+      "id": "this-is-their-resemblance-or-this-is-their-iniquity-zechariah-5-6-greek",
+      "ref": "Zechariah 5:6"
+    },
+    {
+      "id": "heldai-tobijah-and-jedaiah-or-the-chief-men-and-the-useful-men-zechariah-6-10-and-6-14-greek",
+      "ref": "Zechariah 6:10"
+    },
+    {
+      "id": "he-shall-be-a-priest-upon-his-throne-or-a-priest-on-his-right-hand-zechariah-6-13-greek",
+      "ref": "Zechariah 6:13"
+    },
+    {
+      "id": "because-there-was-no-shepherd-or-because-there-was-no-healing-zechariah-10-2-greek",
+      "ref": "Zechariah 10:2"
+    },
+    {
+      "id": "the-poor-of-the-flock-or-the-chananites-zechariah-11-7-and-11-11-greek",
+      "ref": "Zechariah 11:7"
+    },
+    {
+      "id": "cast-it-unto-the-potter-or-drop-them-into-the-furnace-zechariah-11-13-greek",
+      "ref": "Zechariah 11:13"
+    },
+    {
+      "id": "look-upon-me-whom-they-have-pierced-or-because-they-have-mocked-me-zechariah-12-10-greek",
+      "ref": "Zechariah 12:10"
+    },
+    {
+      "id": "the-mourning-of-hadadrimmon-or-the-pomegranate-grove-cut-down-zechariah-12-11-greek",
+      "ref": "Zechariah 12:11"
+    },
+    {
+      "id": "a-fountain-opened-for-sin-and-for-uncleanness-or-every-place-opened-for-removal-and-separation-zechariah-13-1-greek",
+      "ref": "Zechariah 13:1"
+    },
+    {
+      "id": "smite-the-shepherd-and-the-sheep-shall-be-scattered-or-smite-the-shepherds-and-draw-out-the-sheep-zechariah-13-7-greek",
+      "ref": "Zechariah 13:7"
+    },
+    {
+      "id": "flee-to-the-valley-of-the-mountains-or-the-valley-of-my-mountains-shall-be-closed-up-zechariah-14-5-greek",
+      "ref": "Zechariah 14:5"
+    },
+    {
+      "id": "even-upon-them-shall-be-no-rain-or-even-these-shall-be-added-to-the-others-zechariah-14-17-greek",
+      "ref": "Zechariah 14:17"
+    },
+    {
+      "id": "by-malachi-or-by-the-hand-of-his-messenger-malachi-1-1-greek",
+      "ref": "Malachi 1:1"
+    },
+    {
+      "id": "laid-his-mountains-waste-for-the-dragons-or-laid-waste-his-borders-as-dwellings-of-the-wilderness-malachi-1-3-greek",
+      "ref": "Malachi 1:3"
+    },
+    {
+      "id": "i-will-corrupt-your-seed-or-i-turn-my-back-upon-you-malachi-2-3-greek",
+      "ref": "Malachi 2:3"
+    },
+    {
+      "id": "the-lord-hateth-putting-away-or-if-thou-shouldest-hate-and-put-her-away-malachi-2-16-greek",
+      "ref": "Malachi 2:16"
+    },
+    {
+      "id": "will-a-man-rob-god-or-will-a-man-insult-god-malachi-3-8-and-3-9-greek",
+      "ref": "Malachi 3:8"
+    },
+    {
+      "id": "bring-ye-all-the-tithes-into-the-storehouse-or-the-year-is-completed-malachi-3-10-greek",
+      "ref": "Malachi 3:10"
+    },
+    {
+      "id": "the-proud-happy-or-strangers-blessed-malachi-3-15-and-4-1-greek",
+      "ref": "Malachi 3:15"
+    },
+    {
+      "id": "when-i-make-up-my-jewels-or-for-a-peculiar-possession-malachi-3-17-greek",
+      "ref": "Malachi 3:17"
+    },
+    {
+      "id": "elijah-the-prophet-and-the-dreadful-day-or-elias-the-thesbite-and-the-glorious-day-malachi-4-5-greek",
+      "ref": "Malachi 4:5"
+    },
+    {
+      "id": "spoken-by-jeremy-the-prophet-or-the-thirty-pieces-of-silver-in-zechariah-matthew-27-9",
+      "ref": "Matthew 27:9"
+    },
+    {
+      "id": "prepare-the-way-before-me-or-prepare-thy-way-before-thee-malachi-3-1",
+      "ref": "Malachi 3:1"
+    },
+    {
+      "id": "look-upon-me-whom-they-have-pierced-or-look-on-him-whom-they-pierced-zechariah-12-10",
+      "ref": "Zechariah 12:10"
+    }
+  ],
+  "checked": "2026-10-14T10:08:25.618Z",
+  "checks": [
+    {
+      "id": "for-thou-art-vile-or-for-they-are-swift-nahum-1-14-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Nahum 1:14",
+          "quote": "for thou art vile",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "כִּ֥י קַלֹּֽותָ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/1/",
+              "printedLabel": "1:14",
+              "printed": "וְצִוָּ֤ה עָלֶ֙יךָ֙ יְהוָ֔ה לֹֽא־יִזָּרַ֥ע מִשִּׁמְךָ֖ עֹ֑וד מִבֵּ֨ית אֱלֹהֶ֜יךָ אַכְרִ֨ית פֶּ֧סֶל וּמַסֵּכָ֛ה אָשִׂ֥ים קִבְרֶ֖ךָ כִּ֥י קַלֹּֽותָ׃  פ"
+            }
+          ]
+        },
+        {
+          "quote": "ὅτι ταχεῖς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM01.htm",
+              "printedLabel": "1:14",
+              "printed": "Καὶ ἐντελεῖται περὶ σοῦ Κύριος, οὐ σπαρήσεται ἐκ τοῦ ὀνόματός σου ἔτι· ἐξ οἴκου θεοῦ σου ἐξολοθρεύσω τὰ γλυπτὰ, καὶ χωνευτὰ, θήσομαι ταφήν σου, ὅτι ταχεῖς. ΝΑΟΥΜ. Ζʹ &lt; 1 &gt; Public Domain"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/NAM01.htm",
+          "printedLabel": "1:14",
+          "quote": "for they are swift",
+          "printed": "And the Lord shall give a command concerning thee; there shall no more of thy name be scattered: I will utterly destroy the graven images out of the house of thy god, and the molten images : I will make thy grave; for they are swift. Naum &lt; 1 &gt; Public Domain",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nahum 1:14",
+          "quote": "for thou art vile",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ὅτι ταχεῖς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM01.htm",
+              "printedLabel": "1:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כִּ֥י קַלֹּֽותָ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/1/",
+              "printedLabel": "1:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὅτι ταχεῖς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM01.htm",
+              "printedLabel": "1:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כי קלות",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/1/",
+              "printedLabel": "1:14"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "for thou art vile",
+          "ref": "Nahum 1:14",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "for they are swift",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "I will make thy grave; for thou art vile",
+          "ref": "Nahum 1:14",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "for they are swift",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "for thou art vile",
+          "ref": "Nahum 1:14",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "for they are swift",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thou art vile",
+          "ref": "Nahum 1:14",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "swift",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "the-fir-trees-shall-be-terribly-shaken-or-the-horsemen-shall-be-thrown-into-confusion-nahum-2-3-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Nahum 2:3",
+          "quote": "and the fir trees shall be terribly shaken",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְהַבְּרֹשִׁ֖ים הָרְעָֽלוּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/2/",
+              "printedLabel": "2:4",
+              "printed": "מָגֵ֨ן גִּבֹּרֵ֜יהוּ מְאָדָּ֗ם אַנְשֵׁי־חַ֙יִל֙ מְתֻלָּעִ֔ים בְּאֵשׁ־פְּלָדֹ֥ות הָרֶ֖כֶב בְּיֹ֣ום הֲכִינֹ֑ו וְהַבְּרֹשִׁ֖ים הָרְעָֽלוּ׃"
+            }
+          ]
+        },
+        {
+          "quote": "καὶ οἱ ἱππεῖς θορυβηθήσονται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM02.htm",
+              "printedLabel": "2:4",
+              "printed": "Ὅπλα δυναστείας αὐτῶν ἐξ ἀνθρώπων, ἄνδρας δυνατοὺς ἐμπαίζοντας ἐν πυρί· αἱ ἡνίαι τῶν ἁρμάτων αὐτῶν ἐν ἡμέρᾳ ἑτοιμασίας αὐτοῦ, καὶ οἱ ἱππεῖς θορυβηθήσονται"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/NAM02.htm",
+          "printedLabel": "2:4",
+          "quote": "and the horsemen shall be thrown into confusion",
+          "printed": "They have destroyed the arms of their power from among men, their mighty men sporting with fire: the reins of their chariots shall be destroyed in the day of his preparation, and the horsemen shall be thrown into confusion",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nahum 2:3",
+          "quote": "and the fir trees shall be terribly shaken",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "οἱ ἱππεῖς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM02.htm",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְהַבְּרֹשִׁ֖ים הָרְעָֽלוּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/2/",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καὶ οἱ ἱππεῖς θορυβηθήσονται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM02.htm",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והברשים הרעלו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/2/",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "οἱ ἱππεῖς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM02.htm",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "the fir trees shall be terribly shaken",
+          "ref": "Nahum 2:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the horsemen shall be thrown into confusion",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "and the fir trees shall be terribly shaken",
+          "ref": "Nahum 2:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the horsemen",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "shall be thrown into confusion",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "and the fir trees shall be terribly shaken",
+          "ref": "Nahum 2:3",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "and the horsemen shall be thrown into confusion",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "art-thou-better-than-populous-no-or-prepare-a-portion-for-ammon-nahum-3-8-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Nahum 3:8",
+          "quote": "Art thou better than populous No",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "הֲתֵֽיטְבִי֙ מִנֹּ֣א אָמֹ֔ון",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/3/",
+              "printedLabel": "3:8",
+              "printed": "הֲתֵֽיטְבִי֙ מִנֹּ֣א אָמֹ֔ון הַיֹּֽשְׁבָה֙ בַּיְאֹרִ֔ים מַ֖יִם סָבִ֣יב לָ֑הּ אֲשֶׁר־חֵ֣יל יָ֔ם מִיָּ֖ם חֹומָתָֽהּ׃"
+            }
+          ]
+        },
+        {
+          "quote": "Ἑτοιμασὰι μερίδα, ἁρμόσαι χορδὴν, ἑτοιμάσαι μερίδα Ἀμμών",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM03.htm",
+              "printedLabel": "3:8",
+              "printed": "Ἑτοιμασὰι μερίδα, ἁρμόσαι χορδὴν, ἑτοιμάσαι μερίδα Ἀμμών· ἡ κατοικοῦσα ἐν ποταμοῖς, ὕδωρ κύκλῳ αὐτῆς, ἧς ἡ ἀρχὴ θάλασσα, καὶ ὕδωρ τὰ τείχη αὐτῆς,"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/NAM03.htm",
+          "printedLabel": "3:8",
+          "quote": "Prepare thee a portion, tune the chord, prepare a portion for Ammon",
+          "printed": "Prepare thee a portion, tune the chord, prepare a portion for Ammon: she that dwells among the rivers, water is round about her, whose dominion is the sea, and whose walls are water.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nahum 3:8",
+          "quote": "Art thou better than populous No",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "הֲתֵֽיטְבִי֙ מִנֹּ֣א אָמֹ֔ון",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/3/",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Ἑτοιμασὰι μερίδα, ἁρμόσαι χορδὴν, ἑτοιμάσαι μερίδα Ἀμμών",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM03.htm",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "התיטבי מנא אמון",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/3/",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Ἀμμών",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM03.htm",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "Art thou better than populous No",
+          "ref": "Nahum 3:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "Prepare thee a portion, tune the chord, prepare a portion for Ammon",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Art thou better than populous No",
+          "ref": "Nahum 3:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "Prepare thee a portion, tune the chord, prepare a portion for Ammon",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "Art thou better than populous No",
+          "ref": "Nahum 3:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Prepare thee a portion, tune the chord, prepare a portion for Ammon",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "populous No",
+          "ref": "Nahum 3:8",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "fig-trees-with-the-firstripe-figs-or-fig-trees-having-watchers-nahum-3-12-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Nahum 3:12",
+          "quote": "like fig trees with the firstripe figs",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "תְּאֵנִ֖ים עִם־בִּכּוּרִ֑ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/3/",
+              "printedLabel": "3:12",
+              "printed": "כָּ֨ל־מִבְצָרַ֔יִךְ תְּאֵנִ֖ים עִם־בִּכּוּרִ֑ים אִם־יִנֹּ֕ועוּ וְנָפְל֖וּ עַל־פִּ֥י אֹוכֵֽל׃"
+            }
+          ]
+        },
+        {
+          "quote": "συκαῖ σκοποὺς ἔχουσαι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM03.htm",
+              "printedLabel": "3:12",
+              "printed": "Πάντα τὰ ὀχυρώματά σου συκαῖ σκοποὺς ἔχουσαι· ἐὰν σαλευθῶσι, πεσοῦνται εἰς στόμα ἔσθοντος."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/NAM03.htm",
+          "printedLabel": "3:12",
+          "quote": "as fig-trees having watchers",
+          "printed": "All thy strong-holds are as fig-trees having watchers: if they be shaken, they shall fall into the mouth of the eater.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Nahum 3:12",
+          "quote": "like fig trees with the firstripe figs",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "σκοποὺς ἔχουσαι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM03.htm",
+              "printedLabel": "3:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "תְּאֵנִ֖ים עִם־בִּכּוּרִ֑ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/3/",
+              "printedLabel": "3:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "συκαῖ σκοποὺς ἔχουσαι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM03.htm",
+              "printedLabel": "3:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "תאנים עם בכורים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/34/3/",
+              "printedLabel": "3:12"
+            }
+          ],
+          "classification": "Hebrew consonantal repetition; maqaf normalized to word boundary"
+        },
+        {
+          "field": "reasoning",
+          "quote": "σκοπούς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/NAM03.htm",
+              "printedLabel": "3:12"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "fig trees with the firstripe figs",
+          "ref": "Nahum 3:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "fig-trees having watchers",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "like fig trees with the firstripe figs",
+          "ref": "Nahum 3:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "having watchers",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "like fig trees with the firstripe figs",
+          "ref": "Nahum 3:12",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "as fig-trees having watchers",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "watchers",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    }
+  ],
+  "draftHashes": {
+    "joel-to-micah-records.json": "4f4532778fa77e726c8a5d172404c1bf0dec148ca8f09e7e500ea22c9cf12627",
+    "joel-to-micah-notes.md": "12486ee07609bedae47134a662a94cbfc81e274e25f783fdd5322675a23c0f8b",
+    "joel-to-micah-q-records.json": "aa2be6460a807433695706a5867327e36f463a04b9f4d5f81f1445fe413a78ee",
+    "joel-to-micah-q-notes.md": "07d76ddb0de7d38634753880bd5e8833a13b8a29a0752def736d95b76c6ae3dd",
+    "nahum-to-malachi-records.json": "a3ebbe7636a143cacc79d2a6acc0e06bb442d9103415b70b98d2965a9fddea1a",
+    "nahum-to-malachi-notes.md": "cab1da1d4555696673077f676b619ca89d87145dcd5832dd00146dc3545e7363",
+    "nahum-to-malachi-q-records.json": "3861008b04de5e76ef1ae99917e46a0e7f5be8d13082159d9ebccfd00b9dde62",
+    "nahum-to-malachi-q-notes.md": "1f6f2fe79184193ae68cc0633f5d3e28933c0ab6748f9e8c4c0e18a8658bc26f"
+  },
+  "sourceCount": 30,
+  "sourceErrors": [],
+  "normalization": "Exact KJV substrings and side references. Named language texts normalized for accents and punctuation; consonantal Hebrew normalizes maqaf to spaces. All matches preserve supplied address and printed verse label. Greek dictionary form explicitly corrected.",
+  "needsOwner": []
+}
