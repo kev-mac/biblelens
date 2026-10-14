@@ -431,7 +431,24 @@ html{scroll-padding-top:calc(var(--site-header-height,80px) + var(--comparison-d
 @media(max-width:600px){.comparison-dock .comparison-status{width:calc(100% - 32px)}}
 
 .settings-theme{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:18px}
-.chapter-text{will-change:transform,opacity;transition:transform .24s ease,opacity .24s ease}
-.chapter-text.chapter-enter-next{transform:translateX(42px);opacity:.2}
-.chapter-text.chapter-enter-previous{transform:translateX(-42px);opacity:.2}
-@media(prefers-reduced-motion:reduce){.chapter-text{transition:none}.chapter-text.chapter-enter-next,.chapter-text.chapter-enter-previous{transform:none;opacity:1}}
+
+/* Owner follow-up: larger controls, collapsible comparison tray and discoverable edge paging. */
+.header-actions .reader-picker.chapter-round{background:transparent;border:0;border-radius:0}
+.header-actions .reader-picker.chapter-round svg{width:22px;height:22px}
+.comparison-dock{height:auto;min-height:30px}
+.comparison-dock .comparison-status{padding:10px 0 6px}
+.comparison-status .category-filter .filter-icon{width:42px;height:42px}
+.comparison-status .category-filter .filter-icon svg{width:22px;height:22px}
+.comparison-dock-toggle{display:grid;place-items:center;width:36px;height:22px;margin:0 auto;padding:0;border:0;background:transparent;color:var(--muted)}
+.comparison-dock-toggle svg{transition:transform .18s ease}
+.comparison-dock.collapsed .comparison-status{display:none}
+.comparison-dock.collapsed .comparison-dock-toggle{height:30px}
+.comparison-dock.collapsed .comparison-dock-toggle svg{transform:rotate(180deg)}
+.edge-page{display:none}
+@media(max-width:850px){
+ .edge-page{display:grid;place-items:center;position:fixed;z-index:32;top:52%;width:38px;height:64px;padding:0;border:1px solid transparent;background:transparent;color:transparent;opacity:0;transition:opacity .16s ease,background .16s ease,color .16s ease,border-color .16s ease;touch-action:manipulation}
+ .edge-page-prev{left:0;border-radius:0 22px 22px 0}
+ .edge-page-next{right:0;border-radius:22px 0 0 22px}
+ .edge-page.revealed{opacity:1;background:var(--panel);color:var(--brand-accent);border-color:var(--brand-accent);box-shadow:0 2px 12px rgba(16,44,72,.2)}
+ .edge-page:disabled{display:none}
+}

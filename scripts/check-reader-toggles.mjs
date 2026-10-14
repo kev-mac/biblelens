@@ -56,6 +56,9 @@ assert(html.indexOf('id="theme"')>html.indexOf('id="reader-settings"'),'Theme co
 assert(css.includes('.comparison-dock{position:sticky'),'Comparison filters must remain joined below the sticky header');
 assert(css.includes('border-bottom:1px solid var(--line)'),'Read divider belongs below the comparison filters');
 assert(css.includes('border:1px solid var(--brand-accent)!important'),'Filter icons need visible burnt-orange borders');
+assert(html.includes('id="comparison-dock-toggle"')&&source.includes("classList.toggle('collapsed')"),'Comparison categories need a chevron show/hide control');
+assert(css.includes('.filter-icon{width:42px;height:42px}'),'Mobile comparison icons should be larger');
+assert(css.includes('.reader-picker.chapter-round{background:transparent;border:0;border-radius:0}'),'Settings cog should not have an outside circle');
 console.log('PASS: Q tag, accessible label, initially hidden summary, independent on/off, Context pointer and light/dark colors.');
 
 context.cache.set('0:1:kjv:science',{items:[]});
