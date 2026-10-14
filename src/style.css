@@ -414,3 +414,16 @@ body.dark .brand{color:#b8cfe5}body.dark .brand b{color:#f58220}
 .chapter-heading-row .chapter-subtitle{display:block}
 .reader-selection-bar{padding:0}.reader-selection-bar:has(#clear-selection[hidden]){display:none}
 #chapter-text{touch-action:pan-y pinch-zoom}
+
+
+/* Owner follow-up: pinned menus, burnt-orange identity and fill-only filters. */
+:root{--brand-accent:#b34f0b}body.dark{--brand-accent:#d27a3a}
+.brand b,body.dark .brand b,.brand .mark-letter-l{color:var(--brand-accent)}
+nav button.active{color:var(--brand-accent);box-shadow:0 2px var(--brand-accent)}
+body>header{position:sticky;top:0;z-index:40;background:var(--bg)}
+.comparison-dock{height:var(--comparison-dock-height,72px)}
+.comparison-dock .comparison-status{position:fixed;top:var(--site-header-height,80px);left:50%;transform:translateX(-50%);z-index:30;width:calc(100% - 64px);max-width:936px;margin:0;padding:12px 0;background:var(--bg)}
+.comparison-status .category-filter .filter-icon{border:0!important}
+.comparison-status .category-filter[aria-pressed="false"] .filter-icon,.comparison-status .category-filter:disabled .filter-icon{background:transparent;color:var(--muted)}
+html{scroll-padding-top:calc(var(--site-header-height,80px) + var(--comparison-dock-height,0px) + 16px)}
+@media(max-width:600px){.comparison-dock .comparison-status{width:calc(100% - 32px)}}

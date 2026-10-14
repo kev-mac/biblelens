@@ -105,7 +105,7 @@ function roleCitations(item){
  return `<div class="context-citations"><div class="context-short summary-citations">${visible.map(r=>referenceLink(r,undefined,item)).join('')}${remaining?`<button type="button" class="verse-citation" data-tone="${comparisonTone(item)}" data-context-expand aria-expanded="false" aria-label="Show ${remaining} additional citations">+${remaining}</button>`:''}</div>${remaining?`<div class="context-full" hidden>${groups}<button type="button" class="verse-citation" data-tone="${comparisonTone(item)}" data-context-collapse>Show fewer</button></div>`:''}</div>`;
 }
 function expandContext(button){const parent=button.closest('.context-citations'),open=button.hasAttribute('data-context-expand');parent.querySelector('.context-short').hidden=open;parent.querySelector('.context-full').hidden=!open;parent.querySelector('[data-context-expand]').setAttribute('aria-expanded',String(open));}
-function sideRows(item){return item.sides?.length?`<div class="comparison-sides">${item.sides.map(side=>`<div class="comparison-side">${referenceLink(side.ref,undefined,item)}<q>${esc(side.quote)}</q></div>`).join('')}</div>`:'';}
+function sideRows(item){return item.sides?.length?`<div class="comparison-sides">${item.sides.slice().sort((a,b)=>{const x=readRef(a.ref),y=readRef(b.ref);return x&&y?x.book-y.book||x.chapter-y.chapter||x.verse-y.verse:0;}).map(side=>`<div class="comparison-side">${referenceLink(side.ref,undefined,item)}<q>${esc(side.quote)}</q></div>`).join('')}</div>`:'';}
 function mergeQuoteRanges(ranges){const merged=[];for(const [a,b]of ranges.sort((x,y)=>x[0]-y[0]||x[1]-y[1])){const last=merged.at(-1);if(last&&a<=last[1])last[1]=Math.max(last[1],b);else merged.push([a,b]);}return merged;}
 function quoteRanges(text,quotes){const ranges=[];for(const quote of quotes){if(!quote)continue;let start=0;while((start=text.indexOf(quote,start))!==-1){ranges.push([start,start+quote.length]);start+=quote.length;}}return mergeQuoteRanges(ranges);}
 
@@ -179,7 +179,7 @@ function comparisonStatus(){
  const count=new Set(records.flatMap((r,index)=>(r.items||[]).filter(item=>visibleComparison({...item,mode:comparisonModes[index]})).map(item=>item.id||`${comparisonModes[index]}:${item.title||''}:${item.summary}`))).size;
  const all=records.flatMap((r,index)=>(r.items||[]).map(item=>({...item,mode:comparisonModes[index]}))).filter(visibleComparison);
  const categories=[['T','Translation','translation'],['V','Violations','violation'],['Q','Question','question'],['science','Science','science'],['history','History','history'],['contradictions','Contradictory','contradictions']];
- status.innerHTML=categories.map(([key,label,tone])=>{const matches=all.filter(item=>recordTags(item).length?recordTags(item).includes(key):filterCategory(item)===key);const total=new Set(matches.map(item=>item.id||item.title||item.summary)).size;return `<button type="button" class="agreement category-filter ${tone}" data-category-filter="${key}" aria-pressed="${total>0&&categoryFilters.has(key)}" aria-label="${label}: ${total} comparisons" title="${label}: ${total} comparisons" ${total?'':'disabled'}><span class="filter-icon">${categoryIcon(key)}<span class="filter-badge" aria-hidden="true">${total}</span></span><span class="filter-copy"><span class="filter-label">${label}</span> <span class="filter-count">${total}</span></span></button>`}).join('');
+ status.innerHTML=categories.map(([key,label,tone])=>{const matches=all.filter(item=>recordTags(item).length?recordTags(item).includes(key):filterCategory(item)===key);const total=new Set(matches.map(item=>item.id||item.title||item.summary)).size;return `<button type="button" class="agreement category-filter ${tone}" data-category-filter="${key}" aria-pressed="${total>0&&categoryFilters.has(key)}" aria-label="${label}: ${total} comparisons" title="${label}: ${total} comparisons" ${total?'':'disabled'}><span class="filter-icon">${categoryIcon(key)}${total?`<span class="filter-badge" aria-hidden="true">${total}</span>`:""}</span><span class="filter-copy"><span class="filter-label">${label}</span>${total?` <span class="filter-count">${total}</span>`:""}</span></button>`}).join('');
 }
 async function ensureComparisons(){
  if(!reading||$('#reader-compare').value==='none')return;
@@ -263,4 +263,17 @@ function chapterSwipeDirection(dx,dy,elapsed){return elapsed<=1200&&Math.abs(dx)
   if(direction){if(ev.cancelable)ev.preventDefault();moveChapter(direction);}
  },{passive:false});
  surface.addEventListener('touchcancel',()=>{swipe=null;},{passive:true});
+})();
+
+
+// Pinned reader controls resize with the header, filters and text-size setting.
+(() => {
+ const header=document.querySelector('body > header'),status=$('#comparison-status'),dock=document.querySelector('.comparison-dock'),root=document.documentElement;
+ function measurePinnedControls(){
+  root.style.setProperty('--site-header-height',Math.ceil(header.getBoundingClientRect().height)+'px');
+  const height=Math.ceil(status.getBoundingClientRect().height);
+  root.style.setProperty('--comparison-dock-height',height+'px');dock.style.height=height+'px';
+ }
+ if(typeof ResizeObserver!=='undefined'){const observer=new ResizeObserver(measurePinnedControls);observer.observe(header);observer.observe(status);}
+ window.addEventListener('resize',measurePinnedControls);window.addEventListener('viewchange',()=>requestAnimationFrame(measurePinnedControls));measurePinnedControls();
 })();

@@ -1,7 +1,7 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
 const source=fs.readFileSync('src/reader.js','utf8'),handlers={},moves=[];let selected=false,now=0;
 const context={$:()=>({addEventListener:(name,fn)=>handlers[name]=fn}),matchMedia:()=>({matches:true}),window:{innerWidth:509,getSelection:()=>({isCollapsed:!selected})},performance:{now:()=>now},moveChapter:d=>moves.push(d)};
-vm.createContext(context);vm.runInContext(source.slice(source.indexOf('function chapterSwipeDirection(')),context);
+vm.createContext(context);vm.runInContext(source.slice(source.indexOf('function chapterSwipeDirection('),source.indexOf('// Pinned reader controls')),context);
 const touch=(x,y,id=1)=>({clientX:x,clientY:y,identifier:id});
 const event=(t,control=false)=>({touches:[t],changedTouches:[t],target:{closest:()=>control?{}:null},cancelable:true,preventDefault(){this.prevented=true;}});
 const start=(x=250,y=200,control=false)=>{now=0;handlers.touchstart(event(touch(x,y),control));};
