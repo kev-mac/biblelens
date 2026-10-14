@@ -1,0 +1,411 @@
+{
+  "batch": "luke-1-24",
+  "completeBatch": true,
+  "pendingRecords": [],
+  "checked": "2026-10-14T17:40:59.333Z",
+  "sourceErrors": [],
+  "sideErrors": [],
+  "greekAddressErrors": [],
+  "greekQuoteErrors": [],
+  "draftHashes": {
+    "luke-1-24-records.json": "adc28448d947e5c189b2fefd9518e461f9d2a29d2d788fdaea2d11fa88f6f597",
+    "luke-1-24-q-records.json": "16ddf51a26c72205929d4930b15ed02c0d9d5e445ed7100195bd8f95e52e6d2c",
+    "luke-1-24-notes.md": "ce5b56e57e988671ac3a05fa8a6aa09a817017139fa632bd4bafaaa619f404ff",
+    "luke-1-24-q-notes.md": "63d82d6bde26e6327fbbc6c79c901b1ba9478b2f3bdf35ea947a6a1a6de4d3c6"
+  },
+  "sourceCount": 52,
+  "counts": {
+    "records": 47,
+    "sides": 68,
+    "greekQuotedForms": 187,
+    "englishQuotedFragments": 247
+  },
+  "greekClassifications": [
+    {
+      "id": "inn-and-guestchamber-for-one-greek-word-luke-2-7-22-11-greek-new-testament",
+      "quote": "πανδοχεῖον",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "inn-and-guestchamber-for-one-greek-word-luke-2-7-22-11-greek-new-testament",
+      "quote": "πανδοκίον",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "hell-for-hades-and-gehenna-luke-10-15-12-5-16-23-greek-new-testament",
+      "quote": "ᾅδης (",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "the-sun-was-darkened-or-the-suns-light-failing-luke-23-45-greek-new-testament",
+      "quote": "ἐκλείπω.",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    }
+  ],
+  "englishClassifications": [
+    {
+      "id": "blessed-art-thou-among-women-or-verse-ends-luke-1-28-greek-new-testament",
+      "quote": "blessed are you among women",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "blessed-art-thou-among-women-or-verse-ends-luke-1-28-greek-new-testament",
+      "quote": "the Lord is with you",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "good-will-toward-men-or-among-men-of-good-pleasure-luke-2-14-greek-new-testament",
+      "quote": "among men of good pleasure",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "good-will-toward-men-or-among-men-of-good-pleasure-luke-2-14-greek-new-testament",
+      "quote": "good pleasure",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "good-will-toward-men-or-among-men-of-good-pleasure-luke-2-14-greek-new-testament",
+      "quote": "of good pleasure",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "joseph-and-his-mother-or-his-father-and-his-mother-luke-2-33-2-43-greek-new-testament",
+      "quote": "his father and his mother",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "joseph-and-his-mother-or-his-father-and-his-mother-luke-2-33-2-43-greek-new-testament",
+      "quote": "his parents",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "joseph-and-his-mother-or-his-father-and-his-mother-luke-2-33-2-43-greek-new-testament",
+      "quote": "his father",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "inn-and-guestchamber-for-one-greek-word-luke-2-7-22-11-greek-new-testament",
+      "quote": "an inn",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "his-brother-philips-wife-or-the-wife-of-his-brother-luke-3-19-greek-new-testament",
+      "quote": "the wife of his brother",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "but-by-every-word-of-god-or-verse-ends-luke-4-4-greek-new-testament",
+      "quote": "but on every word of God",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "to-heal-the-brokenhearted-or-clause-absent-luke-4-18-greek-new-testament",
+      "quote": "he has sent me",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "thou-art-christ-the-son-of-god-or-thou-art-the-son-of-god-luke-4-41-greek-new-testament",
+      "quote": "Thou art the Son of God",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "thou-art-christ-the-son-of-god-or-thou-art-the-son-of-god-luke-4-41-greek-new-testament",
+      "quote": "the Christ",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "and-both-are-preserved-and-the-old-is-better-luke-5-38-5-39-greek-new-testament",
+      "quote": "new wineskins",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "and-both-are-preserved-and-the-old-is-better-luke-5-38-5-39-greek-new-testament",
+      "quote": "good",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "hoping-for-nothing-again-or-despairing-of-no-one-luke-6-35-greek-new-testament",
+      "quote": "no one",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "it-was-founded-upon-a-rock-or-because-it-was-well-built-luke-6-48-greek-new-testament",
+      "quote": "because it had been well built",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "sent-them-to-jesus-or-sent-them-to-the-lord-luke-7-19-greek-new-testament",
+      "quote": "to the Lord",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "a-desert-place-of-the-city-bethsaida-or-a-city-called-bethsaida-luke-9-10-greek-new-testament",
+      "quote": "into a city called Bethsaida",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "a-desert-place-of-the-city-bethsaida-or-a-city-called-bethsaida-luke-9-10-greek-new-testament",
+      "quote": "to a city called Bethsaida",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "a-desert-place-of-the-city-bethsaida-or-a-city-called-bethsaida-luke-9-10-greek-new-testament",
+      "quote": "we are here in a desert place",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "my-beloved-son-or-my-chosen-son-luke-9-35-greek-new-testament",
+      "quote": "my chosen Son",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "my-beloved-son-or-my-chosen-son-luke-9-35-greek-new-testament",
+      "quote": "the beloved",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "my-beloved-son-or-my-chosen-son-luke-9-35-greek-new-testament",
+      "quote": "the chosen",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "my-beloved-son-or-my-chosen-son-luke-9-35-greek-new-testament",
+      "quote": "my Son",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "my-beloved-son-or-my-chosen-son-luke-9-35-greek-new-testament",
+      "quote": "chosen",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "even-as-elias-did-and-the-son-of-man-is-not-come-to-destroy-luke-9-54-9-56-greek-new-testament",
+      "quote": "he rebuked them",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "which-art-exalted-to-heaven-or-shalt-thou-be-exalted-to-heaven-luke-10-15-greek-new-testament",
+      "quote": "shalt thou be exalted to heaven?",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "which-art-exalted-to-heaven-or-shalt-thou-be-exalted-to-heaven-luke-10-15-greek-new-testament",
+      "quote": "who have been exalted to heaven",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "which-art-exalted-to-heaven-or-shalt-thou-be-exalted-to-heaven-luke-10-15-greek-new-testament",
+      "quote": "shall you be exalted to heaven?",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "jesus-rejoiced-in-spirit-or-rejoiced-in-the-holy-spirit-luke-10-21-greek-new-testament",
+      "quote": "rejoiced in the Holy Spirit",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "jesus-rejoiced-in-spirit-or-rejoiced-in-the-holy-spirit-luke-10-21-greek-new-testament",
+      "quote": "Jesus rejoiced in the spirit",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "jesus-rejoiced-in-spirit-or-rejoiced-in-the-holy-spirit-luke-10-21-greek-new-testament",
+      "quote": "Holy",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "as-he-said-these-things-unto-them-or-when-he-went-out-from-there-luke-11-53-11-54-greek-new-testament",
+      "quote": "And when he had gone out from there",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "as-he-said-these-things-unto-them-or-when-he-went-out-from-there-luke-11-53-11-54-greek-new-testament",
+      "quote": "when he went out from there",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "they-toil-not-they-spin-not-or-neither-spin-nor-weave-luke-12-27-greek-new-testament",
+      "quote": "they neither spin nor weave",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "they-toil-not-they-spin-not-or-neither-spin-nor-weave-luke-12-27-greek-new-testament",
+      "quote": "how they neither spin nor weave",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "an-ass-or-an-ox-or-a-son-or-an-ox-luke-14-5-greek-new-testament",
+      "quote": "a son or an ox",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "when-ye-fail-or-when-it-fails-luke-16-9-greek-new-testament",
+      "quote": "when it fails",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "when-ye-fail-or-when-it-fails-luke-16-9-greek-new-testament",
+      "quote": "when you fail",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "we-have-left-all-or-having-left-our-own-luke-18-28-greek-new-testament",
+      "quote": "having left our own things",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "we-have-left-all-or-having-left-our-own-luke-18-28-greek-new-testament",
+      "quote": "we left all",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "we-have-left-all-or-having-left-our-own-luke-18-28-greek-new-testament",
+      "quote": "our own",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "accounted-worthy-to-escape-or-have-strength-to-escape-luke-21-36-greek-new-testament",
+      "quote": "have strength to escape",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "accounted-worthy-to-escape-or-have-strength-to-escape-luke-21-36-greek-new-testament",
+      "quote": "that you may be counted worthy to escape",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "accounted-worthy-to-escape-or-have-strength-to-escape-luke-21-36-greek-new-testament",
+      "quote": "that you may have strength to escape",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "the-twelve-apostles-or-the-apostles-luke-22-14-greek-new-testament",
+      "quote": "the apostles",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "for-i-sent-you-to-him-or-for-he-sent-him-back-to-us-luke-23-15-greek-new-testament",
+      "quote": "for he sent him back to us",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "lord-remember-me-or-jesus-remember-me-luke-23-42-greek-new-testament",
+      "quote": "Jesus, remember me",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "lord-remember-me-or-jesus-remember-me-luke-23-42-greek-new-testament",
+      "quote": "to Jesus, remember me, Lord",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "lord-remember-me-or-jesus-remember-me-luke-23-42-greek-new-testament",
+      "quote": "he said, Jesus, remember me",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "the-sun-was-darkened-or-the-suns-light-failing-luke-23-45-greek-new-testament",
+      "quote": "the sun failing",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "and-certain-others-with-them-or-verse-ends-luke-24-1-greek-new-testament",
+      "quote": "and other women that were with them",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "then-arose-peter-and-ran-or-no-text-luke-24-12-greek-new-testament",
+      "quote": "certain of them which were with us went to the sepulchre",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "as-ye-walk-and-are-sad-or-they-stood-still-looking-sad-luke-24-17-greek-new-testament",
+      "quote": "And they stood still, looking sad",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "as-ye-walk-and-are-sad-or-they-stood-still-looking-sad-luke-24-17-greek-new-testament",
+      "quote": "as you walk, and are sad-faced",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "as-ye-walk-and-are-sad-or-they-stood-still-looking-sad-luke-24-17-greek-new-testament",
+      "quote": "as you walk",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "as-ye-walk-and-are-sad-or-they-stood-still-looking-sad-luke-24-17-greek-new-testament",
+      "quote": "and they stood still, sad-faced",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "he-shewed-them-his-hands-and-his-feet-or-no-text-luke-24-40-greek-new-testament",
+      "quote": "Behold my hands and my feet",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    }
+  ]
+}

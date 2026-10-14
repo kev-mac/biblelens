@@ -1,0 +1,36 @@
+{
+  "batch": "luke-1-24-q",
+  "completeBatch": true,
+  "pendingRecords": [],
+  "checked": "2026-10-14T17:40:59.333Z",
+  "sourceErrors": [],
+  "sideErrors": [],
+  "greekAddressErrors": [],
+  "greekQuoteErrors": [],
+  "draftHashes": {
+    "luke-1-24-records.json": "adc28448d947e5c189b2fefd9518e461f9d2a29d2d788fdaea2d11fa88f6f597",
+    "luke-1-24-q-records.json": "16ddf51a26c72205929d4930b15ed02c0d9d5e445ed7100195bd8f95e52e6d2c",
+    "luke-1-24-notes.md": "ce5b56e57e988671ac3a05fa8a6aa09a817017139fa632bd4bafaaa619f404ff",
+    "luke-1-24-q-notes.md": "63d82d6bde26e6327fbbc6c79c901b1ba9478b2f3bdf35ea947a6a1a6de4d3c6"
+  },
+  "sourceCount": 52,
+  "counts": {
+    "records": 3,
+    "sides": 3
+  },
+  "greekClassifications": [],
+  "englishClassifications": [
+    {
+      "id": "the-kingdom-of-god-is-within-you-who-and-where-luke-17-21",
+      "quote": "And he said unto the disciples",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    },
+    {
+      "id": "the-kingdom-of-god-is-within-you-who-and-where-luke-17-21",
+      "quote": "among",
+      "matches": [],
+      "classification": "Greek rendering, lexical lemma, paraphrase, ellipsis, or cross-verse quotation; exact KJV sides and cited Greek forms were checked separately."
+    }
+  ]
+}

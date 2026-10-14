@@ -81555,6 +81555,2782 @@ const EVIDENCE=[
         "quote": "For every one shall be salted with fire"
       }
     ]
+  },
+  {
+    "id": "blessed-art-thou-among-women-or-verse-ends-luke-1-28-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 1:28",
+    "appliesTo": [
+      "Luke 1:28"
+    ],
+    "title": "“blessed art thou among women” — Tischendorf’s Greek ends at 1:28 with “the Lord is with thee”",
+    "status": "Context",
+    "summary": "The KJV of Luke 1:28 ends the angel’s greeting “the Lord is with thee: blessed art thou among women”. The Textus Receptus text served prints εὐλογημένη σὺ ἐν γυναιξίν, “blessed are you among women”; Tischendorf’s text ends the verse at “the Lord is with you”.",
+    "text": "KJV Luke 1:28: “blessed art thou among women”. Greek New Testament (Tischendorf, eighth edition) Luke 1:28: ὁ κύριος μετὰ σοῦ [the Lord is with you — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 1:28: ευλογημενη συ εν γυναιξιν [blessed are you among women]. KJV Luke 1:42: “Blessed art thou among women”. Greek New Testament (Tischendorf, eighth edition) Luke 1:42: εὐλογημένη σὺ ἐν γυναιξίν. The Textus Receptus text served prints the same words. Fetched from https://bolls.life/get-text/TISCH/42/1/ and https://bolls.life/get-text/TR/42/1/.",
+    "reasoning": "The clause is in the angel’s greeting in one edition and not in the other. In the KJV and in both editions the same words are spoken by Elisabeth at 1:42, so the question is whether Gabriel says them as well.",
+    "scope": "T applies at Luke 1:28. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not examine the words at 1:42, which both editions print. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 1: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK01.htm"
+      },
+      {
+        "label": "Luke 1: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/1/"
+      },
+      {
+        "label": "Luke 1: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/1/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 1:28",
+        "book": 41,
+        "chapter": 1,
+        "verse": 28
+      },
+      {
+        "label": "Luke 1:42",
+        "book": 41,
+        "chapter": 1,
+        "verse": 42
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 1:28",
+        "quote": "blessed art thou among women"
+      }
+    ]
+  },
+  {
+    "id": "good-will-toward-men-or-among-men-of-good-pleasure-luke-2-14-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 2:14",
+    "appliesTo": [
+      "Luke 2:14"
+    ],
+    "title": "“good will toward men” — Tischendorf’s Greek has “among men of good pleasure”",
+    "status": "Context",
+    "summary": "The KJV of Luke 2:14 has the angels say “on earth peace, good will toward men”. The Textus Receptus text served prints ἐν ἀνθρώποις εὐδοκία, with “good pleasure” as a third item of the saying; Tischendorf’s text prints ἐν ἀνθρώποις εὐδοκίας, “of good pleasure”, which belongs with “men”.",
+    "text": "KJV Luke 2:14: “good will toward men”. Greek New Testament (Tischendorf, eighth edition) Luke 2:14: ἐν ἀνθρώποις εὐδοκίας [among men of good pleasure]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 2:14: εν ανθρωποις ευδοκια [among men, good pleasure]. Fetched from https://bolls.life/get-text/TISCH/42/2/ and https://bolls.life/get-text/TR/42/2/.",
+    "reasoning": "The two editions differ by one letter, and the letter changes what the saying is about. With the nominative the verse names three things (glory, peace, good will); with the genitive it names two and says on which men the peace rests.",
+    "scope": "T applies at Luke 2:14. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say what “good pleasure” refers to or whose it is, and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 2: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK02.htm"
+      },
+      {
+        "label": "Luke 2: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/2/"
+      },
+      {
+        "label": "Luke 2: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/2/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 2:14",
+        "book": 41,
+        "chapter": 2,
+        "verse": 14
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 2:14",
+        "quote": "good will toward men"
+      }
+    ]
+  },
+  {
+    "id": "joseph-and-his-mother-or-his-father-and-his-mother-luke-2-33-2-43-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 2:33",
+    "appliesTo": [
+      "Luke 2:33",
+      "Luke 2:43"
+    ],
+    "title": "“Joseph and his mother” — Tischendorf’s Greek has “his father and his mother” at 2:33 and “his parents” at 2:43",
+    "status": "Context",
+    "summary": "The KJV names Joseph at Luke 2:33, “Joseph and his mother marvelled”, and at 2:43, “Joseph and his mother knew not of it”. The Textus Receptus text served prints Ἰωσήφ at both; Tischendorf’s text prints “his father” (ὁ πατὴρ αὐτοῦ) at 2:33 and “his parents” (οἱ γονεῖς αὐτοῦ) at 2:43.",
+    "text": "KJV Luke 2:33: “Joseph and his mother marvelled”. Greek New Testament (Tischendorf, eighth edition) Luke 2:33: ὁ πατὴρ αὐτοῦ καὶ ἡ μήτηρ αὐτοῦ [his father and his mother]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 2:33: ιωσηφ και η μητηρ αυτου [Joseph and his mother]. KJV Luke 2:43: “Joseph and his mother knew not of it”. Greek New Testament (Tischendorf, eighth edition) Luke 2:43: οὐκ ἔγνωσαν οἱ γονεῖς αὐτοῦ [his parents did not know]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 2:43: ουκ εγνω ιωσηφ και η μητηρ αυτου [Joseph and his mother did not know]. Fetched from https://bolls.life/get-text/TISCH/42/2/ and https://bolls.life/get-text/TR/42/2/.",
+    "reasoning": "One edition names the man; the other describes him by his relation to the child. The verses are two of the places where the account calls Joseph by that relation or by name, and the two editions part company at both.",
+    "scope": "T applies at Luke 2:33 and Luke 2:43. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not examine the other places in Luke 2 where Jesus’ parents are named, and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 2: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK02.htm"
+      },
+      {
+        "label": "Luke 2: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/2/"
+      },
+      {
+        "label": "Luke 2: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/2/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 2:33",
+        "book": 41,
+        "chapter": 2,
+        "verse": 33
+      },
+      {
+        "label": "Luke 2:43",
+        "book": 41,
+        "chapter": 2,
+        "verse": 43
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 2:33",
+        "quote": "Joseph and his mother"
+      },
+      {
+        "label": "A",
+        "ref": "Luke 2:43",
+        "quote": "Joseph and his mother knew not of it"
+      }
+    ]
+  },
+  {
+    "id": "annas-and-caiaphas-being-the-high-priests-or-the-high-priest-luke-3-2-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 3:2",
+    "appliesTo": [
+      "Luke 3:2"
+    ],
+    "title": "“being the high priests” — Tischendorf’s Greek has “the high priest”, singular",
+    "status": "Context",
+    "summary": "The KJV of Luke 3:2 has “Annas and Caiaphas being the high priests”. The Textus Receptus text served prints ἐπ’ ἀρχιερέων, the plural; Tischendorf’s text prints ἐπὶ ἀρχιερέως, the singular, before the two names.",
+    "text": "KJV Luke 3:2: “Annas and Caiaphas being the high priests”. Greek New Testament (Tischendorf, eighth edition) Luke 3:2: ἐπὶ ἀρχιερέως Ἅννα καὶ Καϊάφα [in the time of the high priest Annas and Caiaphas]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 3:2: επ αρχιερεων αννα και καιαφα [in the time of the high priests Annas and Caiaphas]. Fetched from https://bolls.life/get-text/TISCH/42/3/ and https://bolls.life/get-text/TR/42/3/.",
+    "reasoning": "One edition has two high priests named together; the other has one high priest with two names after it. The difference is one letter in the form of the word.",
+    "scope": "T applies at Luke 3:2. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say who held the office, and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 3: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK03.htm"
+      },
+      {
+        "label": "Luke 3: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/3/"
+      },
+      {
+        "label": "Luke 3: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/3/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 3:2",
+        "book": 41,
+        "chapter": 3,
+        "verse": 2
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 3:2",
+        "quote": "Annas and Caiaphas being the high priests"
+      }
+    ]
+  },
+  {
+    "id": "his-brother-philips-wife-or-the-wife-of-his-brother-luke-3-19-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 3:19",
+    "appliesTo": [
+      "Luke 3:19"
+    ],
+    "title": "“his brother Philip’s wife” — Tischendorf’s Greek has “the wife of his brother”",
+    "status": "Context",
+    "summary": "The KJV of Luke 3:19 says Herod was reproved “for Herodias his brother Philip’s wife”. The Textus Receptus text served prints τῆς γυναικὸς Φιλίππου τοῦ ἀδελφοῦ αὐτοῦ, with the name Philip; Tischendorf’s text prints τῆς γυναικὸς τοῦ ἀδελφοῦ αὐτοῦ, “the wife of his brother”, with no name.",
+    "text": "KJV Luke 3:19: “Herodias his brother Philip's wife”. Greek New Testament (Tischendorf, eighth edition) Luke 3:19: τῆς γυναικὸς τοῦ ἀδελφοῦ αὐτοῦ [the wife of his brother]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 3:19: της γυναικος φιλιππου του αδελφου αυτου [the wife of Philip his brother]. Fetched from https://bolls.life/get-text/TISCH/42/3/ and https://bolls.life/get-text/TR/42/3/.",
+    "reasoning": "The brother is named in one edition and not named in the other.",
+    "scope": "T applies at Luke 3:19. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not examine Matthew 14:3 or Mark 6:17, where the KJV names Philip, and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 3: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK03.htm"
+      },
+      {
+        "label": "Luke 3: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/3/"
+      },
+      {
+        "label": "Luke 3: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/3/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 3:19",
+        "book": 41,
+        "chapter": 3,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 3:19",
+        "quote": "Herodias his brother Philip's wife"
+      }
+    ]
+  },
+  {
+    "id": "but-by-every-word-of-god-or-verse-ends-luke-4-4-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 4:4",
+    "appliesTo": [
+      "Luke 4:4"
+    ],
+    "title": "“but by every word of God” — Tischendorf’s Greek ends at “bread alone”",
+    "status": "Context",
+    "summary": "The KJV of Luke 4:4 has Jesus answer “It is written, That man shall not live by bread alone, but by every word of God”. The Textus Receptus text served prints ἀλλ’ ἐπὶ παντὶ ῥήματι θεοῦ, “but on every word of God”; Tischendorf’s text ends the quotation at “bread alone”.",
+    "text": "KJV Luke 4:4: “but by every word of God”. Greek New Testament (Tischendorf, eighth edition) Luke 4:4: οὐκ ἐπ’ ἄρτῳ μόνῳ ζήσεται ὁ ἄνθρωπος [man shall not live on bread alone — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 4:4: αλλ επι παντι ρηματι θεου [but on every word of God]. Fetched from https://bolls.life/get-text/TISCH/42/4/ and https://bolls.life/get-text/TR/42/4/.",
+    "reasoning": "The second half of the saying is in one edition and absent from the other, which quotes only the negative.",
+    "scope": "T applies at Luke 4:4. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not examine Matthew 4:4 or Deuteronomy 8:3 and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 4: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK04.htm"
+      },
+      {
+        "label": "Luke 4: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/4/"
+      },
+      {
+        "label": "Luke 4: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/4/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 4:4",
+        "book": 41,
+        "chapter": 4,
+        "verse": 4
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 4:4",
+        "quote": "but by every word of God"
+      }
+    ]
+  },
+  {
+    "id": "get-thee-behind-me-satan-or-no-clause-luke-4-8-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 4:8",
+    "appliesTo": [
+      "Luke 4:8"
+    ],
+    "title": "“Get thee behind me, Satan” — Tischendorf’s Greek has no such words at 4:8",
+    "status": "Context",
+    "summary": "The KJV of Luke 4:8 has Jesus say “Get thee behind me, Satan: for it is written”. The Textus Receptus text served prints ὕπαγε ὀπίσω μου σατανᾶ before “it is written”; Tischendorf’s text prints no such words, and the answer begins “It is written”.",
+    "text": "KJV Luke 4:8: “Get thee behind me, Satan”. Greek New Testament (Tischendorf, eighth edition) Luke 4:8: εἶπεν αὐτῷ· γέγραπται [said to him, It is written]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 4:8: υπαγε οπισω μου σατανα [Get behind me, Satan]. Fetched from https://bolls.life/get-text/TISCH/42/4/ and https://bolls.life/get-text/TR/42/4/.",
+    "reasoning": "The command to Satan is in one edition and not in the other.",
+    "scope": "T applies at Luke 4:8. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. It does not examine Matthew 4:10, where the command is in both editions, and does not examine Luke 4:5–9, which carries its own record about the order of the temptations. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 4: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK04.htm"
+      },
+      {
+        "label": "Luke 4: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/4/"
+      },
+      {
+        "label": "Luke 4: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/4/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 4:8",
+        "book": 41,
+        "chapter": 4,
+        "verse": 8
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 4:8",
+        "quote": "Get thee behind me, Satan"
+      }
+    ]
+  },
+  {
+    "id": "to-heal-the-brokenhearted-or-clause-absent-luke-4-18-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 4:18",
+    "appliesTo": [
+      "Luke 4:18"
+    ],
+    "title": "“to heal the brokenhearted” — absent from Tischendorf’s Greek of Luke 4:18",
+    "status": "Context",
+    "summary": "The KJV of Luke 4:18 has “he hath sent me to heal the brokenhearted”. The Textus Receptus text served prints ἰάσασθαι τοὺς συντετριμμένους τὴν καρδίαν; Tischendorf’s text ends the verse at “he has sent me” and carries the clauses about the captives and the blind into 4:19.",
+    "text": "KJV Luke 4:18: “he hath sent me to heal the brokenhearted”. Greek New Testament (Tischendorf, eighth edition) Luke 4:18: ἀπέσταλκέν με [he has sent me — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 4:18: ιασασθαι τους συντετριμμενους την καρδιαν [to heal the crushed in heart]. KJV Luke 4:19: “To preach the acceptable year of the Lord”. Greek New Testament (Tischendorf, eighth edition) Luke 4:19: κηρύξαι αἰχμαλώτοις ἄφεσιν καὶ τυφλοῖς ἀνάβλεψιν [to proclaim to captives release and to the blind sight]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 4:19: κηρυξαι ενιαυτον κυριου δεκτον [to proclaim an acceptable year of the Lord]. Fetched from https://bolls.life/get-text/TISCH/42/4/ and https://bolls.life/get-text/TR/42/4/.",
+    "reasoning": "One clause of the reading from Isaiah is in one edition and not in the other. In Tischendorf’s text the verse division also falls differently, so the clause about the captives and the blind stands at 4:19.",
+    "scope": "T applies at Luke 4:18. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record is about the Greek of Luke 4:18 in the two New Testament editions. It does not examine the Hebrew or Septuagint of Isaiah 61:1, which another record treats, and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 4: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK04.htm"
+      },
+      {
+        "label": "Luke 4: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/4/"
+      },
+      {
+        "label": "Luke 4: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/4/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 4:18",
+        "book": 41,
+        "chapter": 4,
+        "verse": 18
+      },
+      {
+        "label": "Luke 4:19",
+        "book": 41,
+        "chapter": 4,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 4:18",
+        "quote": "to heal the brokenhearted"
+      },
+      {
+        "label": "B",
+        "ref": "Luke 4:19",
+        "quote": "To preach the acceptable year of the Lord"
+      }
+    ]
+  },
+  {
+    "id": "thou-art-christ-the-son-of-god-or-thou-art-the-son-of-god-luke-4-41-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 4:41",
+    "appliesTo": [
+      "Luke 4:41"
+    ],
+    "title": "“Thou art Christ the Son of God” — Tischendorf’s Greek has “Thou art the Son of God”",
+    "status": "Context",
+    "summary": "The KJV of Luke 4:41 has the devils cry out “Thou art Christ the Son of God”. The Textus Receptus text served prints σὺ εἶ ὁ χριστὸς ὁ υἱὸς τοῦ θεοῦ; Tischendorf’s text prints σὺ εἶ ὁ υἱὸς τοῦ θεοῦ, without “the Christ”.",
+    "text": "KJV Luke 4:41: “Thou art Christ the Son of God”. Greek New Testament (Tischendorf, eighth edition) Luke 4:41: σὺ εἶ ὁ υἱὸς τοῦ θεοῦ [You are the Son of God]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 4:41: συ ει ο χριστος ο υιος του θεου [You are the Christ, the Son of God]. Fetched from https://bolls.life/get-text/TISCH/42/4/ and https://bolls.life/get-text/TR/42/4/.",
+    "reasoning": "One edition has two titles in the cry; the other has one. Both editions print τὸν Χριστόν in the next clause, where the KJV has “for they knew that he was Christ”.",
+    "scope": "T applies at Luke 4:41. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 4: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK04.htm"
+      },
+      {
+        "label": "Luke 4: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/4/"
+      },
+      {
+        "label": "Luke 4: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/4/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 4:41",
+        "book": 41,
+        "chapter": 4,
+        "verse": 41
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 4:41",
+        "quote": "Thou art Christ the Son of God"
+      }
+    ]
+  },
+  {
+    "id": "and-both-are-preserved-and-the-old-is-better-luke-5-38-5-39-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 5:38",
+    "appliesTo": [
+      "Luke 5:38",
+      "Luke 5:39"
+    ],
+    "title": "“and both are preserved” and “The old is better” — Tischendorf’s Greek has neither",
+    "status": "Context",
+    "summary": "The KJV of Luke 5:38–39 ends the sayings about wine with “and both are preserved” (5:38) and “The old is better” (5:39). The Textus Receptus text served prints καὶ ἀμφότεροι συντηροῦνται at 5:38 and χρηστότερος, “better”, at 5:39; Tischendorf’s text ends 5:38 at “new wineskins” and prints χρηστός, “good”, at 5:39.",
+    "text": "KJV Luke 5:38: “and both are preserved”. Greek New Testament (Tischendorf, eighth edition) Luke 5:38: οἶνον νέον εἰς ἀσκοὺς καινοὺς βλητέον [new wine must be put into new wineskins — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 5:38: και αμφοτεροι συντηρουνται [and both are preserved]. KJV Luke 5:39: “The old is better”. Greek New Testament (Tischendorf, eighth edition) Luke 5:39: ὁ παλαιὸς χρηστός ἐστιν [the old is good]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 5:39: ο παλαιος χρηστοτερος εστιν [the old is better]. Fetched from https://bolls.life/get-text/TISCH/42/5/ and https://bolls.life/get-text/TR/42/5/.",
+    "reasoning": "At 5:38 a clause is in one edition and absent from the other. At 5:39 the word is the comparative in one edition and the plain adjective in the other, so the old wine is called better in one and good in the other.",
+    "scope": "T applies at Luke 5:38 and Luke 5:39. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not examine Matthew 9:17 or Mark 2:22. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 5: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK05.htm"
+      },
+      {
+        "label": "Luke 5: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/5/"
+      },
+      {
+        "label": "Luke 5: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/5/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 5:38",
+        "book": 41,
+        "chapter": 5,
+        "verse": 38
+      },
+      {
+        "label": "Luke 5:39",
+        "book": 41,
+        "chapter": 5,
+        "verse": 39
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 5:38",
+        "quote": "and both are preserved"
+      },
+      {
+        "label": "A",
+        "ref": "Luke 5:39",
+        "quote": "The old is better"
+      }
+    ]
+  },
+  {
+    "id": "hoping-for-nothing-again-or-despairing-of-no-one-luke-6-35-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 6:35",
+    "appliesTo": [
+      "Luke 6:35"
+    ],
+    "title": "“hoping for nothing again” — Tischendorf’s Greek has “no one” as the object",
+    "status": "Context",
+    "summary": "The KJV of Luke 6:35 has “lend, hoping for nothing again”. The Textus Receptus text served prints μηδὲν ἀπελπίζοντες, with the neuter μηδέν, “nothing”; Tischendorf’s text prints μηδένα ἀπελπίζοντες, with the masculine μηδένα, “no one”.",
+    "text": "KJV Luke 6:35: “hoping for nothing again”. Greek New Testament (Tischendorf, eighth edition) Luke 6:35: μηδένα ἀπελπίζοντες [giving up on no one]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 6:35: μηδεν απελπιζοντες [hoping for nothing back]. Fetched from https://bolls.life/get-text/TISCH/42/6/ and https://bolls.life/get-text/TR/42/6/.",
+    "reasoning": "The participle is the same in both editions and the pronoun differs by one letter. With “nothing” the lender asks nothing back; with “no one” the clause is about not giving up on anyone.",
+    "scope": "T applies at Luke 6:35. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original or what the participle means. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 6: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK06.htm"
+      },
+      {
+        "label": "Luke 6: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/6/"
+      },
+      {
+        "label": "Luke 6: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/6/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 6:35",
+        "book": 41,
+        "chapter": 6,
+        "verse": 35
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 6:35",
+        "quote": "hoping for nothing again"
+      }
+    ]
+  },
+  {
+    "id": "it-was-founded-upon-a-rock-or-because-it-was-well-built-luke-6-48-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 6:48",
+    "appliesTo": [
+      "Luke 6:48"
+    ],
+    "title": "“for it was founded upon a rock” — Tischendorf’s Greek has “because it had been well built”",
+    "status": "Context",
+    "summary": "The KJV of Luke 6:48 says the house stood “for it was founded upon a rock”. The Textus Receptus text served prints τεθεμελίωτο γὰρ ἐπὶ τὴν πέτραν; Tischendorf’s text prints διὰ τὸ καλῶς οἰκοδομῆσθαι αὐτήν, “because it had been well built”.",
+    "text": "KJV Luke 6:48: “for it was founded upon a rock”. Greek New Testament (Tischendorf, eighth edition) Luke 6:48: διὰ τὸ καλῶς οἰκοδομῆσθαι αὐτήν [because it had been well built]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 6:48: τεθεμελιωτο γαρ επι την πετραν [for it had been founded on the rock]. Fetched from https://bolls.life/get-text/TISCH/42/6/ and https://bolls.life/get-text/TR/42/6/.",
+    "reasoning": "The reason given for the house’s standing is a different one in each edition: that it was founded on the rock, or that it was well built. Both editions have the man who “laid the foundation on a rock” earlier in the same verse.",
+    "scope": "T applies at Luke 6:48. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not examine Matthew 7:25. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 6: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK06.htm"
+      },
+      {
+        "label": "Luke 6: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/6/"
+      },
+      {
+        "label": "Luke 6: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/6/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 6:48",
+        "book": 41,
+        "chapter": 6,
+        "verse": 48
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 6:48",
+        "quote": "for it was founded upon a rock"
+      }
+    ]
+  },
+  {
+    "id": "sent-them-to-jesus-or-sent-them-to-the-lord-luke-7-19-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 7:19",
+    "appliesTo": [
+      "Luke 7:19"
+    ],
+    "title": "“sent them to Jesus” — Tischendorf’s Greek has “to the Lord”",
+    "status": "Context",
+    "summary": "The KJV of Luke 7:19 says John “sent them to Jesus”. The Textus Receptus text served prints πρὸς τὸν Ἰησοῦν; Tischendorf’s text prints πρὸς τὸν κύριον, “to the Lord”.",
+    "text": "KJV Luke 7:19: “sent them to Jesus”. Greek New Testament (Tischendorf, eighth edition) Luke 7:19: ἔπεμψεν πρὸς τὸν κύριον [sent them to the Lord]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 7:19: επεμψεν προς τον ιησουν [sent them to Jesus]. Fetched from https://bolls.life/get-text/TISCH/42/7/ and https://bolls.life/get-text/TR/42/7/.",
+    "reasoning": "One edition names Jesus; the other uses the title. The two editions print the same clause and the same question that follows.",
+    "scope": "T applies at Luke 7:19. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 7: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK07.htm"
+      },
+      {
+        "label": "Luke 7: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/7/"
+      },
+      {
+        "label": "Luke 7: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/7/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 7:19",
+        "book": 41,
+        "chapter": 7,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 7:19",
+        "quote": "sent them to Jesus"
+      }
+    ]
+  },
+  {
+    "id": "a-desert-place-of-the-city-bethsaida-or-a-city-called-bethsaida-luke-9-10-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 9:10",
+    "appliesTo": [
+      "Luke 9:10"
+    ],
+    "title": "“into a desert place belonging to the city called Bethsaida” — Tischendorf’s Greek has “into a city called Bethsaida”",
+    "status": "Context",
+    "summary": "The KJV of Luke 9:10 has Jesus go aside “into a desert place belonging to the city called Bethsaida”. The Textus Receptus text served prints εἰς τόπον ἔρημον πόλεως καλουμένης Βηθσαϊδά; Tischendorf’s text prints εἰς πόλιν καλουμένην Βηθσαϊδά, “to a city called Bethsaida”, with no desert place.",
+    "text": "KJV Luke 9:10: “into a desert place belonging to the city called Bethsaida”. Greek New Testament (Tischendorf, eighth edition) Luke 9:10: εἰς πόλιν καλουμένην Βηθσαϊδά [to a city called Bethsaida]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 9:10: εις τοπον ερημον πολεως καλουμενης βηθσαιδα [to a deserted place of a city called Bethsaida]. Fetched from https://bolls.life/get-text/TISCH/42/9/ and https://bolls.life/get-text/TR/42/9/.",
+    "reasoning": "One edition has them withdraw to a deserted place near the town; the other has them withdraw to the town. The next verses in both editions have the crowd follow and the apostles say that “we are here in a desert place” (9:12 in the KJV).",
+    "scope": "T applies at Luke 9:10. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not examine Mark 6:31–32 or John 6:1. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 9: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK09.htm"
+      },
+      {
+        "label": "Luke 9: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/9/"
+      },
+      {
+        "label": "Luke 9: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/9/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 9:10",
+        "book": 41,
+        "chapter": 9,
+        "verse": 10
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 9:10",
+        "quote": "a desert place belonging to the city called Bethsaida"
+      }
+    ]
+  },
+  {
+    "id": "my-beloved-son-or-my-chosen-son-luke-9-35-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 9:35",
+    "appliesTo": [
+      "Luke 9:35"
+    ],
+    "title": "“This is my beloved Son” — Tischendorf’s Greek has “my chosen Son”",
+    "status": "Context",
+    "summary": "The KJV of Luke 9:35 has the voice say “This is my beloved Son: hear him”. The Textus Receptus text served prints ὁ ἀγαπητός, “the beloved”; Tischendorf’s text prints ὁ ἐκλελεγμένος, “the chosen”.",
+    "text": "KJV Luke 9:35: “This is my beloved Son”. Greek New Testament (Tischendorf, eighth edition) Luke 9:35: ὁ υἱός μου ὁ ἐκλελεγμένος [my Son, the chosen one]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 9:35: ο υιος μου ο αγαπητος [my Son, the beloved]. Fetched from https://bolls.life/get-text/TISCH/42/9/ and https://bolls.life/get-text/TR/42/9/.",
+    "reasoning": "The word after “my Son” differs: “beloved” in one edition, “chosen” in the other.",
+    "scope": "T applies at Luke 9:35. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not examine Luke 3:22, Matthew 17:5 or Mark 9:7. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 9: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK09.htm"
+      },
+      {
+        "label": "Luke 9: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/9/"
+      },
+      {
+        "label": "Luke 9: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/9/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 9:35",
+        "book": 41,
+        "chapter": 9,
+        "verse": 35
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 9:35",
+        "quote": "This is my beloved Son"
+      }
+    ]
+  },
+  {
+    "id": "even-as-elias-did-and-the-son-of-man-is-not-come-to-destroy-luke-9-54-9-56-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 9:54",
+    "appliesTo": [
+      "Luke 9:54",
+      "Luke 9:55",
+      "Luke 9:56"
+    ],
+    "title": "“even as Elias did”, “Ye know not what manner of spirit ye are of” and “the Son of man is not come to destroy” — absent from Tischendorf’s Greek",
+    "status": "Context",
+    "summary": "In the KJV of Luke 9:54–56 the disciples ask about fire “even as Elias did”, Jesus says “Ye know not what manner of spirit ye are of”, and adds “For the Son of man is not come to destroy men’s lives, but to save them”. The Textus Receptus text served prints all three; Tischendorf’s text ends 9:54 at “consume them”, ends 9:55 at “he rebuked them”, and prints at 9:56 only “And they went to another village”.",
+    "text": "KJV Luke 9:54: “even as Elias did”. Greek New Testament (Tischendorf, eighth edition) Luke 9:54: ἀναλῶσαι αὐτούς [and consume them? — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 9:54: ως και ηλιας εποιησεν [as Elijah also did]. KJV Luke 9:55: “Ye know not what manner of spirit ye are of”. Greek New Testament (Tischendorf, eighth edition) Luke 9:55: ἐπετίμησεν αὐτοῖς [he rebuked them — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 9:55: ουκ οιδατε οιου πνευματος εστε υμεις [you do not know of what spirit you are]. KJV Luke 9:56: “For the Son of man is not come to destroy men's lives, but to save them”. Greek New Testament (Tischendorf, eighth edition) Luke 9:56: καὶ ἐπορεύθησαν εἰς ἑτέραν κώμην [And they went to another village — the whole verse]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 9:56: ο γαρ υιος του ανθρωπου ουκ ηλθεν ψυχας ανθρωπων απολεσαι αλλα σωσαι [for the Son of man did not come to destroy the lives of men but to save]. Fetched from https://bolls.life/get-text/TISCH/42/9/ and https://bolls.life/get-text/TR/42/9/.",
+    "reasoning": "Three pieces of the KJV are in one edition and absent from the other: the comparison with Elijah, Jesus’ words about the disciples’ spirit, and his statement of why he came. In Tischendorf’s text the rebuke is stated without its words.",
+    "scope": "T applies at Luke 9:54, Luke 9:55 and Luke 9:56. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not examine 2 Kings 1:10–12 or Luke 19:10. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 9: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK09.htm"
+      },
+      {
+        "label": "Luke 9: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/9/"
+      },
+      {
+        "label": "Luke 9: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/9/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 9:54",
+        "book": 41,
+        "chapter": 9,
+        "verse": 54
+      },
+      {
+        "label": "Luke 9:55",
+        "book": 41,
+        "chapter": 9,
+        "verse": 55
+      },
+      {
+        "label": "Luke 9:56",
+        "book": 41,
+        "chapter": 9,
+        "verse": 56
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 9:54",
+        "quote": "even as Elias did"
+      },
+      {
+        "label": "A",
+        "ref": "Luke 9:55",
+        "quote": "Ye know not what manner of spirit ye are of"
+      },
+      {
+        "label": "A",
+        "ref": "Luke 9:56",
+        "quote": "For the Son of man is not come to destroy men's lives, but to save them"
+      }
+    ]
+  },
+  {
+    "id": "hell-for-hades-and-gehenna-luke-10-15-12-5-16-23-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 10:15",
+    "appliesTo": [
+      "Luke 10:15",
+      "Luke 12:5",
+      "Luke 16:23"
+    ],
+    "title": "“hell” — the Greek of Luke prints Hades at 10:15 and 16:23 and Gehenna at 12:5",
+    "status": "Context",
+    "summary": "The KJV prints “hell” at Luke 10:15, 12:5 and 16:23. Both served Greek editions print ᾅδης (Hades) at 10:15 and 16:23 and γέεννα (Gehenna) at 12:5, two different words.",
+    "text": "KJV Luke 10:15: “shalt be thrust down to hell”. Greek New Testament (Tischendorf, eighth edition) Luke 10:15: ἕως ᾅδου καταβιβασθήσῃ [as far as Hades you will be brought down]. KJV Luke 12:5: “power to cast into hell”. Greek New Testament (Tischendorf, eighth edition) Luke 12:5: εἰς τὴν γέενναν [into the Gehenna]. KJV Luke 16:23: “in hell he lift up his eyes”. Greek New Testament (Tischendorf, eighth edition) Luke 16:23: ἐν τῷ ᾅδῃ [in Hades]. Fetched from https://bolls.life/get-text/TISCH/42/10/, https://bolls.life/get-text/TR/42/10/, https://bolls.life/get-text/TISCH/42/12/, https://bolls.life/get-text/TR/42/12/, https://bolls.life/get-text/TISCH/42/16/ and https://bolls.life/get-text/TR/42/16/.",
+    "reasoning": "The English is one word; the Greek is two. At 12:5 the one to be feared has power “to cast into” Gehenna after the killing. At 10:15 and 16:23 the Greek has Hades, in a clause about being brought down to it and in the account of the rich man. The English reader of the KJV cannot see from the English that two Greek words stand behind “hell”.",
+    "scope": "T applies at Luke 10:15, Luke 12:5 and Luke 16:23. The Textus Receptus text and Tischendorf’s text served print the same Greek in the places quoted; the difference is between that Greek and the English the KJV prints for it. This record does not say what the Greek or the English means beyond the words quoted, and two digital editions are not a survey of manuscripts. The record does not say what Gehenna or Hades denotes and does not say that the KJV’s “hell” is wrong; it records only that one English word renders two different Greek words in the verses quoted. The same pair is the subject of the Matthew record for Matthew 5:22, 11:23 and 16:18. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 10: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK10.htm"
+      },
+      {
+        "label": "Luke 12: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK12.htm"
+      },
+      {
+        "label": "Luke 16: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK16.htm"
+      },
+      {
+        "label": "Luke 10: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/10/"
+      },
+      {
+        "label": "Luke 10: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/10/"
+      },
+      {
+        "label": "Luke 12: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/12/"
+      },
+      {
+        "label": "Luke 12: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/12/"
+      },
+      {
+        "label": "Luke 16: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/16/"
+      },
+      {
+        "label": "Luke 16: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/16/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 10:15",
+        "book": 41,
+        "chapter": 10,
+        "verse": 15
+      },
+      {
+        "label": "Luke 12:5",
+        "book": 41,
+        "chapter": 12,
+        "verse": 5
+      },
+      {
+        "label": "Luke 16:23",
+        "book": 41,
+        "chapter": 16,
+        "verse": 23
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 10:15",
+        "quote": "shalt be thrust down to hell"
+      },
+      {
+        "label": "A",
+        "ref": "Luke 12:5",
+        "quote": "power to cast into hell"
+      },
+      {
+        "label": "A",
+        "ref": "Luke 16:23",
+        "quote": "in hell he lift up his eyes"
+      }
+    ]
+  },
+  {
+    "id": "which-art-exalted-to-heaven-or-shalt-thou-be-exalted-to-heaven-luke-10-15-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 10:15",
+    "appliesTo": [
+      "Luke 10:15"
+    ],
+    "title": "“which art exalted to heaven” — Tischendorf’s Greek has a question, “shalt thou be exalted to heaven?”",
+    "status": "Context",
+    "summary": "The KJV of Luke 10:15 says “thou, Capernaum, which art exalted to heaven, shalt be thrust down to hell”. The Textus Receptus text served prints ἡ ἕως τοῦ οὐρανοῦ ὑψωθεῖσα, “who have been exalted to heaven”; Tischendorf’s text prints μὴ ἕως οὐρανοῦ ὑψωθήσῃ; “shall you be exalted to heaven?”, a question with the future tense.",
+    "text": "KJV Luke 10:15: “which art exalted to heaven”. Greek New Testament (Tischendorf, eighth edition) Luke 10:15: μὴ ἕως οὐρανοῦ ὑψωθήσῃ; [will you be exalted to heaven?]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 10:15: η εως του ουρανου υψωθεισα [who have been exalted to heaven]. Fetched from https://bolls.life/get-text/TISCH/42/10/ and https://bolls.life/get-text/TR/42/10/.",
+    "reasoning": "One edition describes what Capernaum is; the other asks whether it will be. The clause that follows, in both editions, is the same: it will be brought down.",
+    "scope": "T applies at Luke 10:15. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not say what the question expects as its answer. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 10: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK10.htm"
+      },
+      {
+        "label": "Luke 10: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/10/"
+      },
+      {
+        "label": "Luke 10: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/10/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 10:15",
+        "book": 41,
+        "chapter": 10,
+        "verse": 15
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 10:15",
+        "quote": "which art exalted to heaven"
+      }
+    ]
+  },
+  {
+    "id": "jesus-rejoiced-in-spirit-or-rejoiced-in-the-holy-spirit-luke-10-21-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 10:21",
+    "appliesTo": [
+      "Luke 10:21"
+    ],
+    "title": "“Jesus rejoiced in spirit” — Tischendorf’s Greek has “rejoiced in the Holy Spirit”",
+    "status": "Context",
+    "summary": "The KJV of Luke 10:21 has “Jesus rejoiced in spirit”. The Textus Receptus text served prints ἠγαλλιάσατο τῷ πνεύματι ὁ Ἰησοῦς, “Jesus rejoiced in the spirit”; Tischendorf’s text prints ἠγαλλιάσατο ἐν τῷ πνεύματι τῷ ἁγίῳ, “rejoiced in the Holy Spirit”, without the name.",
+    "text": "KJV Luke 10:21: “Jesus rejoiced in spirit”. Greek New Testament (Tischendorf, eighth edition) Luke 10:21: ἠγαλλιάσατο ἐν τῷ πνεύματι τῷ ἁγίῳ [rejoiced in the Holy Spirit]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 10:21: ηγαλλιασατο τω πνευματι ο ιησους [Jesus rejoiced in the spirit]. Fetched from https://bolls.life/get-text/TISCH/42/10/ and https://bolls.life/get-text/TR/42/10/.",
+    "reasoning": "One edition has the name and no title for the spirit; the other has the title “Holy” for the spirit and no name.",
+    "scope": "T applies at Luke 10:21. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 10: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK10.htm"
+      },
+      {
+        "label": "Luke 10: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/10/"
+      },
+      {
+        "label": "Luke 10: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/10/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 10:21",
+        "book": 41,
+        "chapter": 10,
+        "verse": 21
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 10:21",
+        "quote": "Jesus rejoiced in spirit"
+      }
+    ]
+  },
+  {
+    "id": "our-father-which-art-in-heaven-and-thy-will-be-done-or-shorter-prayer-luke-11-2-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 11:2",
+    "appliesTo": [
+      "Luke 11:2"
+    ],
+    "title": "the prayer at Luke 11:2 — Tischendorf’s Greek has “Father” and omits “Thy will be done, as in heaven, so in earth”",
+    "status": "Context",
+    "summary": "The KJV of Luke 11:2 has “Our Father which art in heaven, Hallowed be thy name. Thy kingdom come. Thy will be done, as in heaven, so in earth.” The Textus Receptus text served prints πάτερ ἡμῶν ὁ ἐν τοῖς οὐρανοῖς and the clause γενηθήτω τὸ θέλημά σου ὡς ἐν οὐρανῷ καὶ ἐπὶ τῆς γῆς; Tischendorf’s text prints πάτερ, “Father”, and ends the verse at “thy kingdom come”.",
+    "text": "KJV Luke 11:2: “Our Father which art in heaven” … “Thy will be done, as in heaven, so in earth”. Greek New Testament (Tischendorf, eighth edition) Luke 11:2: πάτερ, ἁγιασθήτω τὸ ὄνομά σου [Father, hallowed be your name; your kingdom come — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 11:2: πατερ ημων ο εν τοις ουρανοις … γενηθητω το θελημα σου ως εν ουρανω και επι της γης [Our Father who is in the heavens … your will be done as in heaven also on the earth]. Fetched from https://bolls.life/get-text/TISCH/42/11/ and https://bolls.life/get-text/TR/42/11/.",
+    "reasoning": "Two pieces of the KJV’s wording are in one edition and not in the other: the longer address and the petition about the will. In Tischendorf’s text the prayer at 11:2 has the address “Father” and two petitions.",
+    "scope": "T applies at Luke 11:2. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. It does not examine Matthew 6:9–10, where the KJV has the same words, and 11:4 is the subject of the record on Matthew 6:13. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 11: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK11.htm"
+      },
+      {
+        "label": "Luke 11: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/11/"
+      },
+      {
+        "label": "Luke 11: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/11/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 11:2",
+        "book": 41,
+        "chapter": 11,
+        "verse": 2
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 11:2",
+        "quote": "Our Father which art in heaven"
+      }
+    ]
+  },
+  {
+    "id": "as-he-said-these-things-unto-them-or-when-he-went-out-from-there-luke-11-53-11-54-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 11:53",
+    "appliesTo": [
+      "Luke 11:53",
+      "Luke 11:54"
+    ],
+    "title": "“And as he said these things unto them” and “that they might accuse him” — Tischendorf’s Greek differs at 11:53 and 11:54",
+    "status": "Context",
+    "summary": "The KJV of Luke 11:53–54 has “And as he said these things unto them” and ends with “that they might accuse him”. The Textus Receptus text served prints λέγοντος δὲ αὐτοῦ ταῦτα πρὸς αὐτούς and ἵνα κατηγορήσωσιν αὐτοῦ; Tischendorf’s text prints Κἀκεῖθεν ἐξελθόντος αὐτοῦ, “And when he had gone out from there”, and ends 11:54 at “to catch something out of his mouth”.",
+    "text": "KJV Luke 11:53: “And as he said these things unto them”. Greek New Testament (Tischendorf, eighth edition) Luke 11:53: Κἀκεῖθεν ἐξελθόντος αὐτοῦ [And when he had gone out from there]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 11:53: λεγοντος δε αυτου ταυτα προς αυτους [And as he said these things to them]. KJV Luke 11:54: “that they might accuse him”. Greek New Testament (Tischendorf, eighth edition) Luke 11:54: θηρεῦσαί τι ἐκ τοῦ στόματος αὐτοῦ [to catch something out of his mouth — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 11:54: ινα κατηγορησωσιν αυτου [that they might accuse him]. Fetched from https://bolls.life/get-text/TISCH/42/11/ and https://bolls.life/get-text/TR/42/11/.",
+    "reasoning": "The occasion differs, “as he said these things” or “when he went out from there”, and the purpose clause is in one edition and absent from the other.",
+    "scope": "T applies at Luke 11:53 and Luke 11:54. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 11: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK11.htm"
+      },
+      {
+        "label": "Luke 11: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/11/"
+      },
+      {
+        "label": "Luke 11: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/11/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 11:53",
+        "book": 41,
+        "chapter": 11,
+        "verse": 53
+      },
+      {
+        "label": "Luke 11:54",
+        "book": 41,
+        "chapter": 11,
+        "verse": 54
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 11:53",
+        "quote": "And as he said these things unto them"
+      },
+      {
+        "label": "A",
+        "ref": "Luke 11:54",
+        "quote": "that they might accuse him"
+      }
+    ]
+  },
+  {
+    "id": "they-toil-not-they-spin-not-or-neither-spin-nor-weave-luke-12-27-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 12:27",
+    "appliesTo": [
+      "Luke 12:27"
+    ],
+    "title": "“they toil not, they spin not” — Tischendorf’s Greek has “they neither spin nor weave”",
+    "status": "Context",
+    "summary": "The KJV of Luke 12:27 says of the lilies “how they grow: they toil not, they spin not”. The Textus Receptus text served prints πῶς αὐξάνει· οὐ κοπιᾷ οὐδὲ νήθει; Tischendorf’s text prints πῶς οὔτε νήθει οὔτε ὑφαίνει, “how they neither spin nor weave”, with no “grow” and no “toil”.",
+    "text": "KJV Luke 12:27: “how they grow: they toil not, they spin not”. Greek New Testament (Tischendorf, eighth edition) Luke 12:27: πῶς οὔτε νήθει οὔτε ὑφαίνει [how they neither spin nor weave]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 12:27: πως αυξανει ου κοπια ουδε νηθει [how they grow: they do not toil nor spin]. Fetched from https://bolls.life/get-text/TISCH/42/12/ and https://bolls.life/get-text/TR/42/12/.",
+    "reasoning": "The lilies are said to do two things in each edition, but they are different pairs: toiling and spinning in one, spinning and weaving in the other. The clause about growing is in one edition and not in the other.",
+    "scope": "T applies at Luke 12:27. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not examine Matthew 6:28 and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 12: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK12.htm"
+      },
+      {
+        "label": "Luke 12: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/12/"
+      },
+      {
+        "label": "Luke 12: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/12/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 12:27",
+        "book": 41,
+        "chapter": 12,
+        "verse": 27
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 12:27",
+        "quote": "they toil not, they spin not"
+      }
+    ]
+  },
+  {
+    "id": "your-house-is-left-unto-you-desolate-or-left-unto-you-luke-13-35-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 13:35",
+    "appliesTo": [
+      "Luke 13:35"
+    ],
+    "title": "“your house is left unto you desolate” — Tischendorf’s Greek has no “desolate”",
+    "status": "Context",
+    "summary": "The KJV of Luke 13:35 has “Behold, your house is left unto you desolate”. The Textus Receptus text served prints ὁ οἶκος ὑμῶν ἔρημος, with “desolate”; Tischendorf’s text prints ἰδοὺ ἀφίεται ὑμῖν ὁ οἶκος ὑμῶν and has no such word.",
+    "text": "KJV Luke 13:35: “your house is left unto you desolate”. Greek New Testament (Tischendorf, eighth edition) Luke 13:35: ἰδοὺ ἀφίεται ὑμῖν ὁ οἶκος ὑμῶν [behold, your house is left to you]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 13:35: ο οικος υμων ερημος [your house is left to you desolate]. Fetched from https://bolls.life/get-text/TISCH/42/13/ and https://bolls.life/get-text/TR/42/13/.",
+    "reasoning": "The word describing the house is in one edition and absent from the other.",
+    "scope": "T applies at Luke 13:35. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not examine Matthew 23:38 and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 13: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK13.htm"
+      },
+      {
+        "label": "Luke 13: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/13/"
+      },
+      {
+        "label": "Luke 13: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/13/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 13:35",
+        "book": 41,
+        "chapter": 13,
+        "verse": 35
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 13:35",
+        "quote": "your house is left unto you desolate"
+      }
+    ]
+  },
+  {
+    "id": "an-ass-or-an-ox-or-a-son-or-an-ox-luke-14-5-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 14:5",
+    "appliesTo": [
+      "Luke 14:5"
+    ],
+    "title": "“an ass or an ox” — Tischendorf’s Greek has “a son or an ox”",
+    "status": "Context",
+    "summary": "The KJV of Luke 14:5 has “Which of you shall have an ass or an ox fallen into a pit”. The Textus Receptus text served prints ὄνος ἢ βοῦς, “an ass or an ox”; Tischendorf’s text prints υἱὸς ἢ βοῦς, “a son or an ox”.",
+    "text": "KJV Luke 14:5: “an ass or an ox”. Greek New Testament (Tischendorf, eighth edition) Luke 14:5: υἱὸς ἢ βοῦς [a son or an ox]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 14:5: ονος η βους [an ass or an ox]. Fetched from https://bolls.life/get-text/TISCH/42/14/ and https://bolls.life/get-text/TR/42/14/.",
+    "reasoning": "The first of the two things that fall into the pit is a different one in each edition: an animal, or a child.",
+    "scope": "T applies at Luke 14:5. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not examine Matthew 12:11 or Luke 13:15. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 14: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK14.htm"
+      },
+      {
+        "label": "Luke 14: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/14/"
+      },
+      {
+        "label": "Luke 14: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/14/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 14:5",
+        "book": 41,
+        "chapter": 14,
+        "verse": 5
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 14:5",
+        "quote": "an ass or an ox"
+      }
+    ]
+  },
+  {
+    "id": "when-ye-fail-or-when-it-fails-luke-16-9-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 16:9",
+    "appliesTo": [
+      "Luke 16:9"
+    ],
+    "title": "“when ye fail” — Tischendorf’s Greek has “when it fails”",
+    "status": "Context",
+    "summary": "The KJV of Luke 16:9 says “that, when ye fail, they may receive you into everlasting habitations”. The Textus Receptus text served prints ὅταν ἐκλίπητε, “when you fail”; Tischendorf’s text prints ὅταν ἐκλίπῃ, “when it fails”, with a singular verb.",
+    "text": "KJV Luke 16:9: “when ye fail, they may receive you”. Greek New Testament (Tischendorf, eighth edition) Luke 16:9: ὅταν ἐκλίπῃ δέξωνται ὑμᾶς [when it fails, they may receive you]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 16:9: οταν εκλιπητε δεξωνται υμας [when you fail, they may receive you]. Fetched from https://bolls.life/get-text/TISCH/42/16/ and https://bolls.life/get-text/TR/42/16/.",
+    "reasoning": "What fails is the persons addressed in one edition and a singular subject in the other; the nearest singular noun in the verse is “the mammon of unrighteousness”.",
+    "scope": "T applies at Luke 16:9. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not say what the subject of the singular verb is. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 16: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK16.htm"
+      },
+      {
+        "label": "Luke 16: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/16/"
+      },
+      {
+        "label": "Luke 16: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/16/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 16:9",
+        "book": 41,
+        "chapter": 16,
+        "verse": 9
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 16:9",
+        "quote": "when ye fail, they may receive you"
+      }
+    ]
+  },
+  {
+    "id": "two-men-shall-be-in-the-field-or-no-text-luke-17-36-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 17:36",
+    "appliesTo": [
+      "Luke 17:36"
+    ],
+    "title": "“Two men shall be in the field” — Tischendorf’s page prints no text at Luke 17:36",
+    "status": "Context",
+    "summary": "The KJV of Luke 17:36 has “Two men shall be in the field; the one shall be taken, and the other left”. The Textus Receptus text served prints the sentence; the Tischendorf page served prints the verse number 36 with no text.",
+    "text": "KJV Luke 17:36: “Two men shall be in the field; the one shall be taken, and the other left”. Greek New Testament (Tischendorf, eighth edition) Luke 17:36: the page served prints the verse number with no text. KJV Luke 17:35: “the one shall be taken, and the other left”. Greek New Testament (Tischendorf, eighth edition) Luke 17:35: ἡ μία παραλημφθήσεται ἡ δὲ ἑτέρα ἀφεθήσεται [the one will be taken, but the other left]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 17:35: η μια παραληφθησεται και η ετερα αφεθησεται [the one will be taken and the other left]. Fetched from https://bolls.life/get-text/TISCH/42/17/ and https://bolls.life/get-text/TR/42/17/.",
+    "reasoning": "In the KJV the verse is the third of three pictures of the day of the Son of man: one bed, two women grinding, two men in the field. In the Tischendorf page as served the third is not printed; the first two, at 17:34 and 17:35, are.",
+    "scope": "T applies at Luke 17:36. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record states what the one served page prints; it does not claim that every Greek manuscript or edition lacks the verse. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 17: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK17.htm"
+      },
+      {
+        "label": "Luke 17: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/17/"
+      },
+      {
+        "label": "Luke 17: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/17/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 17:36",
+        "book": 41,
+        "chapter": 17,
+        "verse": 36
+      },
+      {
+        "label": "Luke 17:35",
+        "book": 41,
+        "chapter": 17,
+        "verse": 35
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 17:36",
+        "quote": "Two men shall be in the field; the one shall be taken, and the other left"
+      },
+      {
+        "label": "B",
+        "ref": "Luke 17:35",
+        "quote": "the one shall be taken, and the other left"
+      }
+    ]
+  },
+  {
+    "id": "we-have-left-all-or-having-left-our-own-luke-18-28-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 18:28",
+    "appliesTo": [
+      "Luke 18:28"
+    ],
+    "title": "“we have left all” — Tischendorf’s Greek has “having left our own things”",
+    "status": "Context",
+    "summary": "The KJV of Luke 18:28 has Peter say “Lo, we have left all, and followed thee”. The Textus Receptus text served prints ἀφήκαμεν πάντα, “we left all”; Tischendorf’s text prints ἀφέντες τὰ ἴδια, “having left our own things”.",
+    "text": "KJV Luke 18:28: “Lo, we have left all, and followed thee”. Greek New Testament (Tischendorf, eighth edition) Luke 18:28: ἡμεῖς ἀφέντες τὰ ἴδια ἠκολουθήσαμέν σοι [we, having left our own things, followed you]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 18:28: ημεις αφηκαμεν παντα και ηκολουθησαμεν σοι [we left all and followed you]. Fetched from https://bolls.life/get-text/TISCH/42/18/ and https://bolls.life/get-text/TR/42/18/.",
+    "reasoning": "The object of the leaving is “all” in one edition and “our own” in the other.",
+    "scope": "T applies at Luke 18:28. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not examine Matthew 19:27 or Mark 10:28 and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 18: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK18.htm"
+      },
+      {
+        "label": "Luke 18: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/18/"
+      },
+      {
+        "label": "Luke 18: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/18/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 18:28",
+        "book": 41,
+        "chapter": 18,
+        "verse": 28
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 18:28",
+        "quote": "we have left all, and followed thee"
+      }
+    ]
+  },
+  {
+    "id": "accounted-worthy-to-escape-or-have-strength-to-escape-luke-21-36-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 21:36",
+    "appliesTo": [
+      "Luke 21:36"
+    ],
+    "title": "“accounted worthy to escape” — Tischendorf’s Greek has “have strength to escape”",
+    "status": "Context",
+    "summary": "The KJV of Luke 21:36 has “that ye may be accounted worthy to escape all these things”. The Textus Receptus text served prints ἵνα καταξιωθῆτε ἐκφυγεῖν, “that you may be counted worthy to escape”; Tischendorf’s text prints ἵνα κατισχύσητε ἐκφυγεῖν, “that you may have strength to escape”.",
+    "text": "KJV Luke 21:36: “that ye may be accounted worthy to escape all these things”. Greek New Testament (Tischendorf, eighth edition) Luke 21:36: ἵνα κατισχύσητε ἐκφυγεῖν [that you may have strength to escape]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 21:36: ινα καταξιωθητε εκφυγειν [that you may be counted worthy to escape]. Fetched from https://bolls.life/get-text/TISCH/42/21/ and https://bolls.life/get-text/TR/42/21/.",
+    "reasoning": "The verb before “escape” is a different one in each edition: being counted worthy, which is something granted, or having strength, which is something the disciples have.",
+    "scope": "T applies at Luke 21:36. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 21: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK21.htm"
+      },
+      {
+        "label": "Luke 21: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/21/"
+      },
+      {
+        "label": "Luke 21: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/21/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 21:36",
+        "book": 41,
+        "chapter": 21,
+        "verse": 36
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 21:36",
+        "quote": "that ye may be accounted worthy to escape all these things"
+      }
+    ]
+  },
+  {
+    "id": "the-twelve-apostles-or-the-apostles-luke-22-14-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 22:14",
+    "appliesTo": [
+      "Luke 22:14"
+    ],
+    "title": "“the twelve apostles” — Tischendorf’s Greek has “the apostles”",
+    "status": "Context",
+    "summary": "The KJV of Luke 22:14 has Jesus sit down “and the twelve apostles with him”. The Textus Receptus text served prints οἱ δώδεκα ἀπόστολοι, “the twelve apostles”; Tischendorf’s text prints οἱ ἀπόστολοι, “the apostles”, without the number.",
+    "text": "KJV Luke 22:14: “the twelve apostles with him”. Greek New Testament (Tischendorf, eighth edition) Luke 22:14: οἱ ἀπόστολοι σὺν αὐτῷ [the apostles with him]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 22:14: οι δωδεκα αποστολοι συν αυτω [the twelve apostles with him]. Fetched from https://bolls.life/get-text/TISCH/42/22/ and https://bolls.life/get-text/TR/42/22/.",
+    "reasoning": "The number is in one edition and not in the other.",
+    "scope": "T applies at Luke 22:14. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 22: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK22.htm"
+      },
+      {
+        "label": "Luke 22: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/22/"
+      },
+      {
+        "label": "Luke 22: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/22/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 22:14",
+        "book": 41,
+        "chapter": 22,
+        "verse": 14
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 22:14",
+        "quote": "the twelve apostles with him"
+      }
+    ]
+  },
+  {
+    "id": "for-i-sent-you-to-him-or-for-he-sent-him-back-to-us-luke-23-15-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 23:15",
+    "appliesTo": [
+      "Luke 23:15"
+    ],
+    "title": "“for I sent you to him” — Tischendorf’s Greek has “for he sent him back to us”",
+    "status": "Context",
+    "summary": "The KJV of Luke 23:15 has Pilate say of Herod “for I sent you to him”. The Textus Receptus text served prints ἀνέπεμψα γὰρ ὑμᾶς πρὸς αὐτόν; Tischendorf’s text prints ἀνέπεμψεν γὰρ αὐτὸν πρὸς ἡμᾶς, “for he sent him back to us”.",
+    "text": "KJV Luke 23:15: “for I sent you to him”. Greek New Testament (Tischendorf, eighth edition) Luke 23:15: ἀνέπεμψεν γὰρ αὐτὸν πρὸς ἡμᾶς [for he sent him back to us]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 23:15: ανεπεμψα γαρ υμας προς αυτον [for I sent you to him]. Fetched from https://bolls.life/get-text/TISCH/42/23/ and https://bolls.life/get-text/TR/42/23/.",
+    "reasoning": "The sender and the one sent differ in the two editions: Pilate sending the accusers to Herod, or Herod sending Jesus back to Pilate. The verb is the same compound in both.",
+    "scope": "T applies at Luke 23:15. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not examine Luke 23:7–11. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 23: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK23.htm"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/23/"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/23/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 23:15",
+        "book": 41,
+        "chapter": 23,
+        "verse": 15
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 23:15",
+        "quote": "for I sent you to him"
+      }
+    ]
+  },
+  {
+    "id": "of-necessity-he-must-release-one-or-no-text-luke-23-17-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 23:17",
+    "appliesTo": [
+      "Luke 23:17"
+    ],
+    "title": "“of necessity he must release one unto them at the feast” — Tischendorf’s page prints no text at Luke 23:17",
+    "status": "Context",
+    "summary": "The KJV of Luke 23:17 has “(For of necessity he must release one unto them at the feast.)”. The Textus Receptus text served prints the sentence; the Tischendorf page served prints the verse number 17 with no text.",
+    "text": "KJV Luke 23:17: “of necessity he must release one unto them at the feast”. Greek New Testament (Tischendorf, eighth edition) Luke 23:17: the page served prints the verse number with no text. Fetched from https://bolls.life/get-text/TISCH/42/23/ and https://bolls.life/get-text/TR/42/23/.",
+    "reasoning": "The verse explains why Pilate was expected to release a prisoner. In the Tischendorf page as served it is not printed, and the cry at 23:18 follows 23:16 directly.",
+    "scope": "T applies at Luke 23:17. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record states what the one served page prints; it does not claim that every Greek manuscript or edition lacks the verse, and does not examine Matthew 27:15 or Mark 15:6. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 23: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK23.htm"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/23/"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/23/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 23:17",
+        "book": 41,
+        "chapter": 23,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 23:17",
+        "quote": "of necessity he must release one unto them at the feast"
+      }
+    ]
+  },
+  {
+    "id": "lord-remember-me-or-jesus-remember-me-luke-23-42-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 23:42",
+    "appliesTo": [
+      "Luke 23:42"
+    ],
+    "title": "“Lord, remember me” — Tischendorf’s Greek has “Jesus, remember me”",
+    "status": "Context",
+    "summary": "The KJV of Luke 23:42 has the thief say “Lord, remember me when thou comest into thy kingdom”. The Textus Receptus text served prints τῷ Ἰησοῦ· μνήσθητί μου κύριε, “to Jesus, remember me, Lord”; Tischendorf’s text prints ἔλεγεν· Ἰησοῦ, μνήσθητί μου, “he said, Jesus, remember me”, with no title.",
+    "text": "KJV Luke 23:42: “Lord, remember me”. Greek New Testament (Tischendorf, eighth edition) Luke 23:42: ἔλεγεν· Ἰησοῦ, μνήσθητί μου ὅταν [And he said, Jesus, remember me when]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 23:42: μνησθητι μου κυριε [remember me, Lord]. Fetched from https://bolls.life/get-text/TISCH/42/23/ and https://bolls.life/get-text/TR/42/23/.",
+    "reasoning": "The form of address is the title “Lord” in one edition; in the other the man calls Jesus by name and the title is not printed.",
+    "scope": "T applies at Luke 23:42. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 23: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK23.htm"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/23/"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/23/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 23:42",
+        "book": 41,
+        "chapter": 23,
+        "verse": 42
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 23:42",
+        "quote": "Lord, remember me"
+      }
+    ]
+  },
+  {
+    "id": "the-sun-was-darkened-or-the-suns-light-failing-luke-23-45-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 23:45",
+    "appliesTo": [
+      "Luke 23:45"
+    ],
+    "title": "“the sun was darkened” — Tischendorf’s Greek has “the sun failing”",
+    "status": "Context",
+    "summary": "The KJV of Luke 23:45 has “And the sun was darkened, and the veil of the temple was rent in the midst”. The Textus Receptus text served prints καὶ ἐσκοτίσθη ὁ ἥλιος, “and the sun was darkened”; Tischendorf’s text prints τοῦ ἡλίου ἐκλιπόντος, “the sun failing”, with a participle of ἐκλείπω.",
+    "text": "KJV Luke 23:45: “the sun was darkened”. Greek New Testament (Tischendorf, eighth edition) Luke 23:45: τοῦ ἡλίου ἐκλιπόντος [the sun failing]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 23:45: και εσκοτισθη ο ηλιος [and the sun was darkened]. Fetched from https://bolls.life/get-text/TISCH/42/23/ and https://bolls.life/get-text/TR/42/23/.",
+    "reasoning": "One edition has the verb for being darkened; the other has the verb for failing or giving out. The next clause is in both editions: the veil was rent.",
+    "scope": "T applies at Luke 23:45. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not say what the verb of Tischendorf’s text means beyond the words quoted. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 23: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK23.htm"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/23/"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/23/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 23:45",
+        "book": 41,
+        "chapter": 23,
+        "verse": 45
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 23:45",
+        "quote": "the sun was darkened"
+      }
+    ]
+  },
+  {
+    "id": "and-certain-others-with-them-or-verse-ends-luke-24-1-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 24:1",
+    "appliesTo": [
+      "Luke 24:1"
+    ],
+    "title": "“and certain others with them” — Tischendorf’s Greek ends at “the spices which they had prepared”",
+    "status": "Context",
+    "summary": "The KJV of Luke 24:1 ends “bringing the spices which they had prepared, and certain others with them”. The Textus Receptus text served prints καὶ τινὲς σὺν αὐταῖς; Tischendorf’s text ends the verse at “the spices which they had prepared”.",
+    "text": "KJV Luke 24:1: “and certain others with them”. Greek New Testament (Tischendorf, eighth edition) Luke 24:1: φέρουσαι ἃ ἡτοίμασαν ἀρώματα [bringing the spices which they had prepared — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 24:1: και τινες συν αυταις [and some with them]. Fetched from https://bolls.life/get-text/TISCH/42/24/ and https://bolls.life/get-text/TR/42/24/.",
+    "reasoning": "The company that came to the sepulchre is the women alone in one edition and the women with others in the other. In both editions 24:10 names the women and adds “and other women that were with them”.",
+    "scope": "T applies at Luke 24:1. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 24: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK24.htm"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/24/"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/24/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 24:1",
+        "book": 41,
+        "chapter": 24,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 24:1",
+        "quote": "and certain others with them"
+      }
+    ]
+  },
+  {
+    "id": "then-arose-peter-and-ran-or-no-text-luke-24-12-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 24:12",
+    "appliesTo": [
+      "Luke 24:12"
+    ],
+    "title": "“Then arose Peter, and ran unto the sepulchre” — Tischendorf’s page prints no text at Luke 24:12",
+    "status": "Context",
+    "summary": "The KJV of Luke 24:12 has “Then arose Peter, and ran unto the sepulchre; and stooping down, he beheld the linen clothes laid by themselves, and departed, wondering in himself at that which was come to pass”. The Textus Receptus text served prints the verse; the Tischendorf page served prints the verse number 12 with no text.",
+    "text": "KJV Luke 24:12: “Then arose Peter, and ran unto the sepulchre”. Greek New Testament (Tischendorf, eighth edition) Luke 24:12: the page served prints the verse number with no text. Fetched from https://bolls.life/get-text/TISCH/42/24/ and https://bolls.life/get-text/TR/42/24/.",
+    "reasoning": "The verse tells that Peter went to the sepulchre. In the Tischendorf page as served it is not printed. Luke 24:24, in both editions, says that “certain of them which were with us went to the sepulchre”.",
+    "scope": "T applies at Luke 24:12. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record states what the one served page prints; it does not claim that every Greek manuscript or edition lacks the verse, and does not examine John 20:3–10. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 24: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK24.htm"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/24/"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/24/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 24:12",
+        "book": 41,
+        "chapter": 24,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 24:12",
+        "quote": "Then arose Peter, and ran unto the sepulchre"
+      }
+    ]
+  },
+  {
+    "id": "as-ye-walk-and-are-sad-or-they-stood-still-looking-sad-luke-24-17-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 24:17",
+    "appliesTo": [
+      "Luke 24:17"
+    ],
+    "title": "“as ye walk, and are sad” — Tischendorf’s Greek has “And they stood still, looking sad”",
+    "status": "Context",
+    "summary": "The KJV of Luke 24:17 has Jesus ask “What manner of communications are these that ye have one to another, as ye walk, and are sad?” The Textus Receptus text served prints περιπατοῦντες καὶ ἐστὲ σκυθρωποί, “as you walk, and are sad-faced”; Tischendorf’s text closes the question at “as you walk” and prints καὶ ἐστάθησαν σκυθρωποί, “and they stood still, sad-faced”.",
+    "text": "KJV Luke 24:17: “as ye walk, and are sad”. Greek New Testament (Tischendorf, eighth edition) Luke 24:17: περιπατοῦντες; καὶ ἐστάθησαν σκυθρωποί [as you walk? And they stood still, sad-faced]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 24:17: περιπατουντες και εστε σκυθρωποι [as you walk, and are sad-faced]. Fetched from https://bolls.life/get-text/TISCH/42/24/ and https://bolls.life/get-text/TR/42/24/.",
+    "reasoning": "In one edition the sadness is part of what Jesus asks about. In the other it is stated by the narrator, after the question, together with the fact that they stopped.",
+    "scope": "T applies at Luke 24:17. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 24: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK24.htm"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/24/"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/24/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 24:17",
+        "book": 41,
+        "chapter": 24,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 24:17",
+        "quote": "as ye walk, and are sad"
+      }
+    ]
+  },
+  {
+    "id": "and-saith-unto-them-peace-be-unto-you-or-verse-ends-luke-24-36-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 24:36",
+    "appliesTo": [
+      "Luke 24:36"
+    ],
+    "title": "“and saith unto them, Peace be unto you” — Tischendorf’s Greek ends at “stood in the midst of them”",
+    "status": "Context",
+    "summary": "The KJV of Luke 24:36 ends “Jesus himself stood in the midst of them, and saith unto them, Peace be unto you”. The Textus Receptus text served prints καὶ λέγει αὐτοῖς· εἰρήνη ὑμῖν; Tischendorf’s text ends the verse at “stood in the midst of them”.",
+    "text": "KJV Luke 24:36: “and saith unto them, Peace be unto you”. Greek New Testament (Tischendorf, eighth edition) Luke 24:36: ἔστη ἐν μέσῳ αὐτῶν [stood in the midst of them — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 24:36: ο ιησους εστη εν μεσω αυτων και λεγει αυτοις ειρηνη υμιν [Jesus stood in the midst of them and says to them, Peace to you]. Fetched from https://bolls.life/get-text/TISCH/42/24/ and https://bolls.life/get-text/TR/42/24/.",
+    "reasoning": "The greeting is in one edition and absent from the other.",
+    "scope": "T applies at Luke 24:36. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not examine John 20:19, where the greeting is in both editions, and does not say which reading is original. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 24: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK24.htm"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/24/"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/24/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 24:36",
+        "book": 41,
+        "chapter": 24,
+        "verse": 36
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 24:36",
+        "quote": "and saith unto them, Peace be unto you"
+      }
+    ]
+  },
+  {
+    "id": "he-shewed-them-his-hands-and-his-feet-or-no-text-luke-24-40-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 24:40",
+    "appliesTo": [
+      "Luke 24:40"
+    ],
+    "title": "“he shewed them his hands and his feet” — Tischendorf’s page prints no text at Luke 24:40",
+    "status": "Context",
+    "summary": "The KJV of Luke 24:40 has “And when he had thus spoken, he shewed them his hands and his feet”. The Textus Receptus text served prints the verse; the Tischendorf page served prints the verse number 40 with no text.",
+    "text": "KJV Luke 24:40: “he shewed them his hands and his feet”. Greek New Testament (Tischendorf, eighth edition) Luke 24:40: the page served prints the verse number with no text. Fetched from https://bolls.life/get-text/TISCH/42/24/ and https://bolls.life/get-text/TR/42/24/.",
+    "reasoning": "The verse says that Jesus showed his hands and his feet. In the Tischendorf page as served it is not printed; at 24:39 the preceding verse, in both editions, has him say “Behold my hands and my feet”.",
+    "scope": "T applies at Luke 24:40. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record states what the one served page prints; it does not claim that every Greek manuscript or edition lacks the verse. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 24: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK24.htm"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/24/"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/24/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 24:40",
+        "book": 41,
+        "chapter": 24,
+        "verse": 40
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 24:40",
+        "quote": "he shewed them his hands and his feet"
+      }
+    ]
+  },
+  {
+    "id": "and-carried-up-into-heaven-and-they-worshipped-him-luke-24-51-24-52-greek-new-testament",
+    "mode": "contradictions",
+    "ref": "Luke 24:51",
+    "appliesTo": [
+      "Luke 24:51",
+      "Luke 24:52"
+    ],
+    "title": "“and carried up into heaven” and “worshipped him” — Tischendorf’s Greek has neither at Luke 24:51–52",
+    "status": "Context",
+    "summary": "The KJV of Luke 24:51–52 has Jesus “parted from them, and carried up into heaven”, and the disciples “worshipped him, and returned to Jerusalem with great joy”. The Textus Receptus text served prints καὶ ἀνεφέρετο εἰς τὸν οὐρανόν at 24:51 and προσκυνήσαντες αὐτόν at 24:52; Tischendorf’s text prints neither.",
+    "text": "KJV Luke 24:51: “and carried up into heaven”. Greek New Testament (Tischendorf, eighth edition) Luke 24:51: διέστη ἀπ’ αὐτῶν [he parted from them — the verse ends here]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 24:51: διεστη απ αυτων και ανεφερετο εις τον ουρανον [he parted from them and was carried up into heaven]. KJV Luke 24:52: “they worshipped him, and returned to Jerusalem”. Greek New Testament (Tischendorf, eighth edition) Luke 24:52: ὑπέστρεψαν εἰς Ἱερουσαλὴμ μετὰ χαρᾶς μεγάλης [returned to Jerusalem with great joy]. Greek New Testament (Textus Receptus as served, printed there without accents) Luke 24:52: προσκυνησαντες αυτον υπεστρεψαν εις ιερουσαλημ [having worshipped him they returned to Jerusalem]. Fetched from https://bolls.life/get-text/TISCH/42/24/ and https://bolls.life/get-text/TR/42/24/.",
+    "reasoning": "In Tischendorf’s text the parting is stated without the words that he was carried up, and the return follows without the worship. The two clauses are in one edition and absent from the other.",
+    "scope": "T applies at Luke 24:51 and Luke 24:52. The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not. This record does not say which reading is original, and two digital editions are not a survey of manuscripts. The record does not say which reading is original and does not examine Acts 1:9–11. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 24: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK24.htm"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/24/"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/24/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 24:51",
+        "book": 41,
+        "chapter": 24,
+        "verse": 51
+      },
+      {
+        "label": "Luke 24:52",
+        "book": 41,
+        "chapter": 24,
+        "verse": 52
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "T"
+    ],
+    "witness": "Greek New Testament",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 24:51",
+        "quote": "and carried up into heaven"
+      },
+      {
+        "label": "A",
+        "ref": "Luke 24:52",
+        "quote": "they worshipped him, and returned to Jerusalem"
+      }
+    ]
+  },
+  {
+    "id": "he-went-up-into-a-mountain-or-stood-in-the-plain-matthew-5-1-luke-6-17",
+    "mode": "contradictions",
+    "ref": "Matthew 5:1",
+    "appliesTo": [
+      "Matthew 5:1",
+      "Luke 6:17"
+    ],
+    "title": "“he went up into a mountain” (Matthew) or “stood in the plain” (Luke) at the teaching that follows?",
+    "status": "Context",
+    "summary": "The KJV of Matthew 5:1 has Jesus, seeing the multitudes, go “up into a mountain”, where his disciples come to him; the teaching follows. The KJV of Luke 6:17 has him come down with the twelve and stand “in the plain” with a great multitude, and the teaching follows from 6:20.",
+    "text": "KJV Matthew 5:1: “he went up into a mountain”. Greek New Testament (Tischendorf, eighth edition) Matthew 5:1: ἀνέβη εἰς τὸ ὄρος. KJV Luke 6:17: “stood in the plain”. Greek New Testament (Tischendorf, eighth edition) Luke 6:17: ἔστη ἐπὶ τόπου πεδινοῦ. KJV Luke 6:12: “he went out into a mountain to pray”. Fetched from https://bolls.life/get-text/TISCH/40/5/, https://bolls.life/get-text/TR/40/5/, https://bolls.life/get-text/TISCH/42/6/ and https://bolls.life/get-text/TR/42/6/.",
+    "reasoning": "Both accounts give a place for the teaching that begins with the blessings, and the places are named by contrasting words: a mountain and a plain. Luke 6:12 has him go out “into a mountain” to pray before he comes down. The two can stand together if “the plain” is a level place on the mountain’s side or if the accounts speak of different occasions; neither verse says which.",
+    "scope": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not say what “the plain” (τόπου πεδινοῦ) denotes and does not say that the two accounts are of one occasion. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Matthew 5: KJV",
+        "url": "https://ebible.org/eng-kjv/MAT05.htm"
+      },
+      {
+        "label": "Luke 6: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK06.htm"
+      },
+      {
+        "label": "Matthew 5: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/40/5/"
+      },
+      {
+        "label": "Matthew 5: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/40/5/"
+      },
+      {
+        "label": "Luke 6: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/6/"
+      },
+      {
+        "label": "Luke 6: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/6/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Matthew 5:1",
+        "book": 39,
+        "chapter": 5,
+        "verse": 1
+      },
+      {
+        "label": "Luke 6:17",
+        "book": 41,
+        "chapter": 6,
+        "verse": 17
+      },
+      {
+        "label": "Luke 6:12",
+        "book": 41,
+        "chapter": 6,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-14",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Matthew 5:1",
+        "quote": "he went up into a mountain"
+      },
+      {
+        "label": "B",
+        "ref": "Luke 6:17",
+        "quote": "stood in the plain"
+      }
+    ]
+  },
+  {
+    "id": "the-eleven-gathered-together-or-thomas-not-with-them-luke-24-33-john-20-24",
+    "mode": "contradictions",
+    "ref": "Luke 24:33",
+    "appliesTo": [
+      "Luke 24:33",
+      "John 20:24"
+    ],
+    "title": "“the eleven gathered together” (Luke) or Thomas “not with them when Jesus came” (John)?",
+    "status": "Context",
+    "summary": "The KJV of Luke 24:33 has the two who came from Emmaus find “the eleven gathered together, and them that were with them”, on the evening of the first day. The KJV of John 20:24 says that “Thomas, one of the twelve”, “was not with them when Jesus came” on that evening.",
+    "text": "KJV Luke 24:33: “found the eleven gathered together”. Greek New Testament (Tischendorf, eighth edition) Luke 24:33: τοὺς ἕνδεκα καὶ τοὺς σὺν αὐτοῖς. KJV John 20:24: “Thomas, one of the twelve” … “was not with them when Jesus came”. Greek New Testament (Tischendorf, eighth edition) John 20:24: Θωμᾶς δὲ εἷς ἐκ τῶν δώδεκα … οὐκ ἦν μετ’ αὐτῶν ὅτε ἦλθεν. Fetched from https://bolls.life/get-text/TISCH/42/24/, https://bolls.life/get-text/TR/42/24/, https://bolls.life/get-text/TISCH/43/20/ and https://bolls.life/get-text/TR/43/20/.",
+    "reasoning": "Luke names the group as the eleven; John says one of the twelve was absent when Jesus came to the disciples on that evening. “The eleven” would include Thomas. The two statements can stand together if Luke names the group by its usual title and not by who was in the room at the moment Jesus came; neither verse says so.",
+    "scope": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not say who was present at each moment of the evening and does not examine Luke 24:36–43 or John 20:19–23 beyond the verses quoted. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 24: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK24.htm"
+      },
+      {
+        "label": "John 20: KJV",
+        "url": "https://ebible.org/eng-kjv/JHN20.htm"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/24/"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/24/"
+      },
+      {
+        "label": "John 20: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/43/20/"
+      },
+      {
+        "label": "John 20: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/43/20/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 24:33",
+        "book": 41,
+        "chapter": 24,
+        "verse": 33
+      },
+      {
+        "label": "John 20:24",
+        "book": 42,
+        "chapter": 20,
+        "verse": 24
+      }
+    ],
+    "checked": "2026-10-14",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 24:33",
+        "quote": "found the eleven gathered together"
+      },
+      {
+        "label": "B",
+        "ref": "John 20:24",
+        "quote": "was not with them when Jesus came"
+      }
+    ]
+  },
+  {
+    "id": "then-entered-satan-into-judas-or-after-the-sop-satan-entered-into-him-luke-22-3-john-13-27",
+    "mode": "contradictions",
+    "ref": "Luke 22:3",
+    "appliesTo": [
+      "Luke 22:3",
+      "John 13:27"
+    ],
+    "title": "Satan entered into Judas before the bargain with the chief priests (Luke) or “after the sop” at the supper (John)?",
+    "status": "Context",
+    "summary": "The KJV of Luke 22:3 has “Then entered Satan into Judas surnamed Iscariot”, and the verses that follow have him go to the chief priests to agree on a price (22:4–6), before the supper at 22:14. The KJV of John 13:27 has “after the sop Satan entered into him”, at the supper.",
+    "text": "KJV Luke 22:3: “Then entered Satan into Judas surnamed Iscariot”. Greek New Testament (Tischendorf, eighth edition) Luke 22:3: εἰς Ἰούδαν. KJV John 13:27: “after the sop Satan entered into him”. Greek New Testament (Tischendorf, eighth edition) John 13:27: μετὰ τὸ ψωμίον, τότε εἰσῆλθεν εἰς ἐκεῖνον ὁ σατανᾶς. Fetched from https://bolls.life/get-text/TISCH/42/22/, https://bolls.life/get-text/TR/42/22/, https://bolls.life/get-text/TISCH/43/13/ and https://bolls.life/get-text/TR/43/13/.",
+    "reasoning": "Both verses say that Satan entered Judas, and they put it at different points: before the bargain with the chief priests in Luke, and at the giving of the sop in John. The two can stand if Satan entered him more than once, or if John 13:27 names a later and fuller entry; neither verse says which.",
+    "scope": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not examine John 13:2, which has the devil already put the betrayal into the heart of Judas, and does not say what the entering means. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 22: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK22.htm"
+      },
+      {
+        "label": "John 13: KJV",
+        "url": "https://ebible.org/eng-kjv/JHN13.htm"
+      },
+      {
+        "label": "Luke 22: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/22/"
+      },
+      {
+        "label": "Luke 22: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/22/"
+      },
+      {
+        "label": "John 13: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/43/13/"
+      },
+      {
+        "label": "John 13: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/43/13/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 22:3",
+        "book": 41,
+        "chapter": 22,
+        "verse": 3
+      },
+      {
+        "label": "John 13:27",
+        "book": 42,
+        "chapter": 13,
+        "verse": 27
+      }
+    ],
+    "checked": "2026-10-14",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 22:3",
+        "quote": "Then entered Satan into Judas surnamed Iscariot"
+      },
+      {
+        "label": "B",
+        "ref": "John 13:27",
+        "quote": "after the sop Satan entered into him"
+      }
+    ]
+  },
+  {
+    "id": "had-bought-sweet-spices-when-the-sabbath-was-past-or-prepared-spices-and-rested-the-sabbath-mark-16-1-luke-23-56",
+    "mode": "contradictions",
+    "ref": "Mark 16:1",
+    "appliesTo": [
+      "Mark 16:1",
+      "Luke 23:56"
+    ],
+    "title": "the spices bought “when the sabbath was past” (Mark) or prepared and then “rested the sabbath day” (Luke)?",
+    "status": "Context",
+    "summary": "The KJV of Mark 16:1 has the women, “when the sabbath was past”, buying “sweet spices, that they might come and anoint him”. The KJV of Luke 23:56 has them return from the burial, prepare “spices and ointments”, and then rest “the sabbath day according to the commandment”.",
+    "text": "KJV Mark 16:1: “when the sabbath was past” … “had bought sweet spices”. Greek New Testament (Tischendorf, eighth edition) Mark 16:1: Καὶ διαγενομένου τοῦ σαββάτου … ἠγόρασαν ἀρώματα. KJV Luke 23:56: “prepared spices and ointments; and rested the sabbath day”. Greek New Testament (Tischendorf, eighth edition) Luke 23:56: ἡτοίμασαν ἀρώματα. Fetched from https://bolls.life/get-text/TISCH/41/16/, https://bolls.life/get-text/TR/41/16/, https://bolls.life/get-text/TISCH/42/23/ and https://bolls.life/get-text/TR/42/23/.",
+    "reasoning": "Mark puts the buying of the spices after the sabbath; Luke puts the preparing of spices and ointments before it, and has the sabbath rest follow. The two can stand together if the women bought some spices after the sabbath and had prepared others before it, or if the verbs name different steps; neither verse says which.",
+    "scope": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not say what the preparing consisted of and does not examine Luke 24:1. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Mark 16: KJV",
+        "url": "https://ebible.org/eng-kjv/MRK16.htm"
+      },
+      {
+        "label": "Luke 23: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK23.htm"
+      },
+      {
+        "label": "Mark 16: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/41/16/"
+      },
+      {
+        "label": "Mark 16: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/41/16/"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/23/"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/23/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Mark 16:1",
+        "book": 40,
+        "chapter": 16,
+        "verse": 1
+      },
+      {
+        "label": "Luke 23:56",
+        "book": 41,
+        "chapter": 23,
+        "verse": 56
+      }
+    ],
+    "checked": "2026-10-14",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Mark 16:1",
+        "quote": "had bought sweet spices"
+      },
+      {
+        "label": "B",
+        "ref": "Luke 23:56",
+        "quote": "prepared spices and ointments; and rested the sabbath day"
+      }
+    ]
+  },
+  {
+    "id": "neither-believed-they-them-or-the-lord-is-risen-indeed-mark-16-13-luke-24-34",
+    "mode": "contradictions",
+    "ref": "Mark 16:13",
+    "appliesTo": [
+      "Mark 16:13",
+      "Luke 24:34"
+    ],
+    "title": "“neither believed they them” (Mark) or the eleven saying “The Lord is risen indeed” (Luke) when the two disciples came?",
+    "status": "Context",
+    "summary": "The KJV of Mark 16:13 says that the two who walked into the country “went and told it unto the residue: neither believed they them”. The KJV of Luke 24:33–34 has the same two return to Jerusalem and find “the eleven gathered together”, who are saying “The Lord is risen indeed, and hath appeared to Simon”.",
+    "text": "KJV Mark 16:13: “neither believed they them”. Greek New Testament (Tischendorf, eighth edition) Mark 16:13: οὐδὲ ἐκείνοις ἐπίστευσαν. KJV Luke 24:34: “The Lord is risen indeed, and hath appeared to Simon”. Greek New Testament (Tischendorf, eighth edition) Luke 24:34: ἠγέρθη ὁ κύριος. KJV Luke 24:33: “found the eleven gathered together”. Fetched from https://bolls.life/get-text/TISCH/41/16/, https://bolls.life/get-text/TR/41/16/, https://bolls.life/get-text/TISCH/42/24/ and https://bolls.life/get-text/TR/42/24/.",
+    "reasoning": "In Mark the residue did not believe the two. In Luke the eleven are already saying that the Lord is risen when the two arrive. The two can stand together if the “residue” of Mark is a different group from those who spoke at Luke 24:34, or if the account in Mark is of a later telling; neither verse says which.",
+    "scope": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not examine whether Mark 16:9–20 belongs to the first writing of that Gospel and does not say who the residue are. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Mark 16: KJV",
+        "url": "https://ebible.org/eng-kjv/MRK16.htm"
+      },
+      {
+        "label": "Luke 24: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK24.htm"
+      },
+      {
+        "label": "Mark 16: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/41/16/"
+      },
+      {
+        "label": "Mark 16: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/41/16/"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/24/"
+      },
+      {
+        "label": "Luke 24: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/24/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Mark 16:13",
+        "book": 40,
+        "chapter": 16,
+        "verse": 13
+      },
+      {
+        "label": "Luke 24:34",
+        "book": 41,
+        "chapter": 24,
+        "verse": 34
+      },
+      {
+        "label": "Luke 24:33",
+        "book": 41,
+        "chapter": 24,
+        "verse": 33
+      }
+    ],
+    "checked": "2026-10-14",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Mark 16:13",
+        "quote": "neither believed they them"
+      },
+      {
+        "label": "B",
+        "ref": "Luke 24:34",
+        "quote": "The Lord is risen indeed, and hath appeared to Simon"
+      }
+    ]
+  },
+  {
+    "id": "the-veil-rent-after-he-yielded-up-the-ghost-or-before-he-gave-up-the-ghost-matthew-27-50-27-51-luke-23-45-23-46",
+    "mode": "contradictions",
+    "ref": "Matthew 27:50",
+    "appliesTo": [
+      "Matthew 27:50",
+      "Matthew 27:51",
+      "Luke 23:45",
+      "Luke 23:46"
+    ],
+    "title": "the veil rent after Jesus “yielded up the ghost” (Matthew) or before he “gave up the ghost” (Luke)?",
+    "status": "Context",
+    "summary": "In the KJV of Matthew 27:50–51 Jesus “yielded up the ghost” and then “the veil of the temple was rent in twain from the top to the bottom”. In the KJV of Luke 23:45–46 “the veil of the temple was rent in the midst” and then Jesus cries with a loud voice and “gave up the ghost”.",
+    "text": "KJV Matthew 27:50: “yielded up the ghost”. Greek New Testament (Tischendorf, eighth edition) Matthew 27:50: ἀφῆκεν τὸ πνεῦμα. KJV Matthew 27:51: “the veil of the temple was rent in twain”. Greek New Testament (Tischendorf, eighth edition) Matthew 27:51: τὸ καταπέτασμα τοῦ ναοῦ ἐσχίσθη. KJV Luke 23:45: “the veil of the temple was rent in the midst”. Greek New Testament (Tischendorf, eighth edition) Luke 23:45: τὸ καταπέτασμα τοῦ ναοῦ μέσον. KJV Luke 23:46: “he gave up the ghost”. Greek New Testament (Tischendorf, eighth edition) Luke 23:46: ἐξέπνευσεν. Fetched from https://bolls.life/get-text/TISCH/40/27/, https://bolls.life/get-text/TR/40/27/, https://bolls.life/get-text/TISCH/42/23/ and https://bolls.life/get-text/TR/42/23/.",
+    "reasoning": "Matthew has the rending of the veil follow the death; Luke has it come before the cry and the death. The two can stand together if Luke groups the events by subject and not by time; neither verse says which order is the order of events.",
+    "scope": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not examine Mark 15:37–38, where the two are told in the same order as in Matthew. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Matthew 27: KJV",
+        "url": "https://ebible.org/eng-kjv/MAT27.htm"
+      },
+      {
+        "label": "Luke 23: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK23.htm"
+      },
+      {
+        "label": "Matthew 27: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/40/27/"
+      },
+      {
+        "label": "Matthew 27: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/40/27/"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/23/"
+      },
+      {
+        "label": "Luke 23: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/23/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Matthew 27:50",
+        "book": 39,
+        "chapter": 27,
+        "verse": 50
+      },
+      {
+        "label": "Matthew 27:51",
+        "book": 39,
+        "chapter": 27,
+        "verse": 51
+      },
+      {
+        "label": "Luke 23:45",
+        "book": 41,
+        "chapter": 23,
+        "verse": 45
+      },
+      {
+        "label": "Luke 23:46",
+        "book": 41,
+        "chapter": 23,
+        "verse": 46
+      }
+    ],
+    "checked": "2026-10-14",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Matthew 27:50",
+        "quote": "yielded up the ghost"
+      },
+      {
+        "label": "A",
+        "ref": "Matthew 27:51",
+        "quote": "the veil of the temple was rent in twain"
+      },
+      {
+        "label": "B",
+        "ref": "Luke 23:45",
+        "quote": "the veil of the temple was rent in the midst"
+      },
+      {
+        "label": "B",
+        "ref": "Luke 23:46",
+        "quote": "he gave up the ghost"
+      }
+    ]
+  },
+  {
+    "id": "behold-the-lamb-of-god-or-art-thou-he-that-should-come-john-1-29-john-1-34-luke-7-20",
+    "mode": "contradictions",
+    "ref": "John 1:29",
+    "appliesTo": [
+      "John 1:29",
+      "John 1:34",
+      "Luke 7:20"
+    ],
+    "title": "John says “Behold the Lamb of God” (John 1) and later sends to ask “Art thou he that should come?” (Luke 7)",
+    "status": "Context",
+    "summary": "In the KJV of John 1:29 and 1:34 John the Baptist says of Jesus “Behold the Lamb of God” and “this is the Son of God”. In the KJV of Luke 7:19–20 John sends two disciples to ask “Art thou he that should come? or look we for another?”",
+    "text": "KJV John 1:29: “Behold the Lamb of God”. Greek New Testament (Tischendorf, eighth edition) John 1:29: ἴδε ὁ ἀμνὸς τοῦ θεοῦ. KJV John 1:34: “this is the Son of God”. Greek New Testament (Tischendorf, eighth edition) John 1:34: οὗτός ἐστιν ὁ υἱὸς τοῦ θεοῦ. KJV Luke 7:20: “Art thou he that should come? or look we for another?”. Greek New Testament (Tischendorf, eighth edition) Luke 7:20: σὺ εἶ ὁ ἐρχόμενος. Fetched from https://bolls.life/get-text/TISCH/43/1/, https://bolls.life/get-text/TR/43/1/, https://bolls.life/get-text/TISCH/42/7/ and https://bolls.life/get-text/TR/42/7/.",
+    "reasoning": "The statements of John in the Gospel of John are declarations; the message in Luke is a question about whether Jesus is the one to come. The two can stand together if the question was asked later and from prison, or if John wished his disciples to hear the answer from Jesus; neither passage says which.",
+    "scope": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not say why John sent the question and does not examine Matthew 11:2–3, where the same question is asked. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "John 1: KJV",
+        "url": "https://ebible.org/eng-kjv/JHN01.htm"
+      },
+      {
+        "label": "Luke 7: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK07.htm"
+      },
+      {
+        "label": "John 1: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/43/1/"
+      },
+      {
+        "label": "John 1: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/43/1/"
+      },
+      {
+        "label": "Luke 7: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/7/"
+      },
+      {
+        "label": "Luke 7: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/7/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "John 1:29",
+        "book": 42,
+        "chapter": 1,
+        "verse": 29
+      },
+      {
+        "label": "John 1:34",
+        "book": 42,
+        "chapter": 1,
+        "verse": 34
+      },
+      {
+        "label": "Luke 7:20",
+        "book": 41,
+        "chapter": 7,
+        "verse": 20
+      }
+    ],
+    "checked": "2026-10-14",
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "John 1:29",
+        "quote": "Behold the Lamb of God"
+      },
+      {
+        "label": "A",
+        "ref": "John 1:34",
+        "quote": "this is the Son of God"
+      },
+      {
+        "label": "B",
+        "ref": "Luke 7:20",
+        "quote": "Art thou he that should come? or look we for another?"
+      }
+    ]
+  },
+  {
+    "id": "the-lord-commended-the-unjust-steward-which-lord-luke-16-8",
+    "mode": "questions",
+    "ref": "Luke 16:8",
+    "appliesTo": [
+      "Luke 16:8"
+    ],
+    "title": "“the lord commended the unjust steward” — which lord?",
+    "status": "Context",
+    "summary": "Luke 16:8 says “the lord commended the unjust steward, because he had done wisely”. In the parable the steward’s master is called “my lord” (16:3, 16:5), and in 16:9 Jesus begins “And I say unto you”. The verse does not say whether “the lord” of 16:8 is the master in the parable or the one telling it.",
+    "text": "KJV Luke 16:8: “the lord commended the unjust steward, because he had done wisely”. Greek New Testament (Tischendorf, eighth edition) Luke 16:8: ἐπῄνεσεν ὁ κύριος [the lord commended]. KJV Luke 16:3: “my lord taketh away from me the stewardship”. KJV Luke 16:5: “every one of his lord's debtors”. KJV Luke 16:9: “And I say unto you”. Fetched from https://bolls.life/get-text/TISCH/42/16/ and https://bolls.life/get-text/TR/42/16/.",
+    "reasoning": "The master in the parable is called “my lord” by the steward (16:3, 16:5) and “his lord” by the narrator (16:5), and the word of 16:8 is the same word, ὁ κύριος. Two readings are named only as readings: that the master of the parable commends the steward for acting shrewdly in his own interest, and that the teller of the parable (“the Lord”) commends the steward’s shrewdness as an example, which the “I say unto you” of 16:9 would then continue. The verse does not say which, and the commendation is of the steward’s wisdom in dealing, not of what he did.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say that either reading is the right one, does not say what the commendation approves beyond the words “because he had done wisely”, and does not claim that no other passage of the Bible says more. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 16: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK16.htm"
+      },
+      {
+        "label": "Luke 16: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/16/"
+      },
+      {
+        "label": "Luke 16: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/16/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 16:8",
+        "book": 41,
+        "chapter": 16,
+        "verse": 8
+      },
+      {
+        "label": "Luke 16:3",
+        "book": 41,
+        "chapter": 16,
+        "verse": 3
+      },
+      {
+        "label": "Luke 16:5",
+        "book": 41,
+        "chapter": 16,
+        "verse": 5
+      },
+      {
+        "label": "Luke 16:9",
+        "book": 41,
+        "chapter": 16,
+        "verse": 9
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 16:8",
+        "quote": "the lord commended the unjust steward, because he had done wisely"
+      }
+    ]
+  },
+  {
+    "id": "two-swords-it-is-enough-what-is-enough-luke-22-38",
+    "mode": "questions",
+    "ref": "Luke 22:38",
+    "appliesTo": [
+      "Luke 22:38"
+    ],
+    "title": "“Lord, behold, here are two swords. And he said unto them, It is enough.” — what is enough?",
+    "status": "Context",
+    "summary": "After telling the disciples that “he that hath no sword, let him sell his garment, and buy one” (22:36), Jesus is told “Lord, behold, here are two swords”, and answers “It is enough” (22:38). The verse does not say what is enough, for what, or why.",
+    "text": "KJV Luke 22:36: “he that hath no sword, let him sell his garment, and buy one”. KJV Luke 22:38: “Lord, behold, here are two swords. And he said unto them, It is enough”. Greek New Testament (Tischendorf, eighth edition) Luke 22:38: ἱκανόν ἐστιν [it is sufficient]. KJV Luke 22:49: “Lord, shall we smite with the sword?”. KJV Luke 22:51: “Suffer ye thus far”. Fetched from https://bolls.life/get-text/TISCH/42/22/ and https://bolls.life/get-text/TR/42/22/.",
+    "reasoning": "The instruction at 22:36 is to buy a sword, and the answer at 22:38 is given to a count of two. “It is enough” can be read as saying two swords are sufficient for what is to come, or as closing the conversation, which would not be a statement about the number. At 22:49–51 the disciples ask about using the sword and Jesus answers “Suffer ye thus far”. The verse does not say which reading is meant.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say that either reading is right, does not say what the swords were for, and does not claim that no other passage of the Bible says more. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 22: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK22.htm"
+      },
+      {
+        "label": "Luke 22: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/22/"
+      },
+      {
+        "label": "Luke 22: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/22/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 22:38",
+        "book": 41,
+        "chapter": 22,
+        "verse": 38
+      },
+      {
+        "label": "Luke 22:36",
+        "book": 41,
+        "chapter": 22,
+        "verse": 36
+      },
+      {
+        "label": "Luke 22:49",
+        "book": 41,
+        "chapter": 22,
+        "verse": 49
+      },
+      {
+        "label": "Luke 22:51",
+        "book": 41,
+        "chapter": 22,
+        "verse": 51
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 22:38",
+        "quote": "It is enough"
+      }
+    ]
+  },
+  {
+    "id": "the-kingdom-of-god-is-within-you-who-and-where-luke-17-21",
+    "mode": "questions",
+    "ref": "Luke 17:21",
+    "appliesTo": [
+      "Luke 17:21"
+    ],
+    "title": "“the kingdom of God is within you” — within whom, or where?",
+    "status": "Context",
+    "summary": "At Luke 17:20 the Pharisees ask when the kingdom of God should come, and Jesus answers that it “cometh not with observation”; at 17:21 he adds “the kingdom of God is within you”. The verse does not say who “you” is, or whether the kingdom is inside them or among them.",
+    "text": "KJV Luke 17:20: “he was demanded of the Pharisees, when the kingdom of God should come”. KJV Luke 17:21: “the kingdom of God is within you”. Greek New Testament (Tischendorf, eighth edition) Luke 17:21: ἐντὸς ὑμῶν ἐστιν [is within or among you]. Fetched from https://bolls.life/get-text/TISCH/42/17/ and https://bolls.life/get-text/TR/42/17/.",
+    "reasoning": "The one addressed at 17:20 is the Pharisees, who asked the question, and the plural “you” at 17:21 is the same people unless the saying turns to the disciples (17:22 begins “And he said unto the disciples”). The preposition rendered “within” is one the KJV could also have rendered “among”. Two readings are named only as readings: that the kingdom is a present inward reality in those addressed, and that it is present in the midst of them in the person speaking. The verse does not say which.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say which reading is the right one, does not say what the kingdom is, and does not claim that no other passage of the Bible says more. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Luke 17: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK17.htm"
+      },
+      {
+        "label": "Luke 17: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/42/17/"
+      },
+      {
+        "label": "Luke 17: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/42/17/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Luke 17:21",
+        "book": 41,
+        "chapter": 17,
+        "verse": 21
+      },
+      {
+        "label": "Luke 17:20",
+        "book": 41,
+        "chapter": 17,
+        "verse": 20
+      }
+    ],
+    "checked": "2026-10-14",
+    "tags": [
+      "Q"
+    ],
+    "languageContext": "Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Luke 17:21",
+        "quote": "the kingdom of God is within you"
+      }
+    ]
   }
 ]
 ;
