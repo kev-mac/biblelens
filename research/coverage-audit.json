@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 985,
+    "evidenceRecords": 999,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 672,
-    "annotatedVerses": 3368
+    "chaptersWithAnnotations": 675,
+    "annotatedVerses": 3380
   },
   "byBook": [
     {
@@ -219,14 +219,14 @@
     {
       "book": "Habakkuk",
       "chapters": 3,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 8
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 15
     },
     {
       "book": "Zephaniah",
       "chapters": 3,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 6
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 11
     },
     {
       "book": "Haggai",
@@ -15674,18 +15674,36 @@
       "book": "Habakkuk",
       "bookId": 34,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "behold-ye-among-the-heathen-or-behold-ye-despisers-habakkuk-1-5-greek"
+      ],
+      "annotatedVerses": [
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Habakkuk",
       "bookId": 34,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "his-soul-which-is-lifted-up-or-if-he-should-draw-back-my-soul-habakkuk-2-4-greek",
+        "because-he-transgresseth-by-wine-or-the-arrogant-man-and-the-scorner-habakkuk-2-5-greek",
+        "the-beam-out-of-the-timber-or-the-beetle-out-of-the-timber-habakkuk-2-11-greek",
+        "let-thy-foreskin-be-uncovered-or-shake-o-heart-and-quake-habakkuk-2-16-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        5,
+        11,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15693,9 +15711,13 @@
       "bookId": 34,
       "chapter": 3,
       "annotationIds": [
-        "exp-late-34-3-8"
+        "exp-late-34-3-8",
+        "revive-thy-work-in-the-midst-of-the-years-or-thou-shalt-be-known-between-the-two-living-creatures-habakkuk-3-2-greek",
+        "before-him-went-the-pestilence-or-before-his-face-shall-go-a-report-habakkuk-3-5-greek"
       ],
       "annotatedVerses": [
+        2,
+        5,
         8,
         9,
         10,
@@ -15706,7 +15728,8 @@
         15
       ],
       "modes": [
-        "science"
+        "science",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -15714,9 +15737,22 @@
       "book": "Zephaniah",
       "bookId": 35,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "swear-by-malcham-or-swear-by-their-king-zephaniah-1-5-greek",
+        "the-fish-gate-or-the-gate-of-men-slaying-zephaniah-1-10-greek",
+        "inhabitants-of-maktesh-and-the-merchant-people-or-the-city-broken-down-and-like-chanaan-zephaniah-1-11-greek",
+        "the-lord-hath-prepared-a-sacrifice-he-hath-bid-his-guests-who-are-the-guests-zephaniah-1-7"
+      ],
+      "annotatedVerses": [
+        5,
+        7,
+        10,
+        11
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15733,9 +15769,13 @@
       "bookId": 35,
       "chapter": 3,
       "annotationIds": [
-        "exp-late-35-3-8"
+        "exp-late-35-3-8",
+        "to-her-that-is-filthy-and-polluted-or-alas-the-glorious-and-ransomed-city-zephaniah-3-1-greek",
+        "until-the-day-that-i-rise-up-to-the-prey-or-for-a-witness-zephaniah-3-8-greek",
+        "a-pure-language-or-a-tongue-for-her-generation-zephaniah-3-9-greek"
       ],
       "annotatedVerses": [
+        1,
         8,
         9,
         10,
@@ -15744,7 +15784,8 @@
         13
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },

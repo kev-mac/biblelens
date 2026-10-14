@@ -1,0 +1,2637 @@
+{
+  "batch": "nahum-to-malachi",
+  "subsetBooks": [
+    "Habakkuk",
+    "Zephaniah"
+  ],
+  "completeBatch": false,
+  "pendingRecords": [
+    {
+      "id": "i-called-for-a-drought-or-i-will-bring-a-sword-haggai-1-11-greek",
+      "ref": "Haggai 1:11"
+    },
+    {
+      "id": "the-desire-of-all-nations-shall-come-or-the-choice-portions-of-all-the-nations-shall-come-haggai-2-7-greek",
+      "ref": "Haggai 2:7"
+    },
+    {
+      "id": "in-this-place-will-i-give-peace-or-peace-of-soul-for-a-possession-haggai-2-9-greek",
+      "ref": "Haggai 2:9"
+    },
+    {
+      "id": "according-to-the-word-that-i-covenanted-with-you-brentons-greek-prints-no-such-clause-haggai-2-5",
+      "ref": "Haggai 2:5"
+    },
+    {
+      "id": "among-the-myrtle-trees-or-between-the-shady-mountains-zechariah-1-8-greek",
+      "ref": "Zechariah 1:8"
+    },
+    {
+      "id": "before-zerubbabel-thou-shalt-become-a-plain-or-that-thou-shouldest-prosper-zechariah-4-7-greek",
+      "ref": "Zechariah 4:7"
+    },
+    {
+      "id": "a-flying-roll-or-a-flying-sickle-zechariah-5-1-greek",
+      "ref": "Zechariah 5:1"
+    },
+    {
+      "id": "this-is-their-resemblance-or-this-is-their-iniquity-zechariah-5-6-greek",
+      "ref": "Zechariah 5:6"
+    },
+    {
+      "id": "heldai-tobijah-and-jedaiah-or-the-chief-men-and-the-useful-men-zechariah-6-10-and-6-14-greek",
+      "ref": "Zechariah 6:10"
+    },
+    {
+      "id": "he-shall-be-a-priest-upon-his-throne-or-a-priest-on-his-right-hand-zechariah-6-13-greek",
+      "ref": "Zechariah 6:13"
+    },
+    {
+      "id": "because-there-was-no-shepherd-or-because-there-was-no-healing-zechariah-10-2-greek",
+      "ref": "Zechariah 10:2"
+    },
+    {
+      "id": "the-poor-of-the-flock-or-the-chananites-zechariah-11-7-and-11-11-greek",
+      "ref": "Zechariah 11:7"
+    },
+    {
+      "id": "cast-it-unto-the-potter-or-drop-them-into-the-furnace-zechariah-11-13-greek",
+      "ref": "Zechariah 11:13"
+    },
+    {
+      "id": "look-upon-me-whom-they-have-pierced-or-because-they-have-mocked-me-zechariah-12-10-greek",
+      "ref": "Zechariah 12:10"
+    },
+    {
+      "id": "the-mourning-of-hadadrimmon-or-the-pomegranate-grove-cut-down-zechariah-12-11-greek",
+      "ref": "Zechariah 12:11"
+    },
+    {
+      "id": "a-fountain-opened-for-sin-and-for-uncleanness-or-every-place-opened-for-removal-and-separation-zechariah-13-1-greek",
+      "ref": "Zechariah 13:1"
+    },
+    {
+      "id": "smite-the-shepherd-and-the-sheep-shall-be-scattered-or-smite-the-shepherds-and-draw-out-the-sheep-zechariah-13-7-greek",
+      "ref": "Zechariah 13:7"
+    },
+    {
+      "id": "flee-to-the-valley-of-the-mountains-or-the-valley-of-my-mountains-shall-be-closed-up-zechariah-14-5-greek",
+      "ref": "Zechariah 14:5"
+    },
+    {
+      "id": "even-upon-them-shall-be-no-rain-or-even-these-shall-be-added-to-the-others-zechariah-14-17-greek",
+      "ref": "Zechariah 14:17"
+    },
+    {
+      "id": "by-malachi-or-by-the-hand-of-his-messenger-malachi-1-1-greek",
+      "ref": "Malachi 1:1"
+    },
+    {
+      "id": "laid-his-mountains-waste-for-the-dragons-or-laid-waste-his-borders-as-dwellings-of-the-wilderness-malachi-1-3-greek",
+      "ref": "Malachi 1:3"
+    },
+    {
+      "id": "i-will-corrupt-your-seed-or-i-turn-my-back-upon-you-malachi-2-3-greek",
+      "ref": "Malachi 2:3"
+    },
+    {
+      "id": "the-lord-hateth-putting-away-or-if-thou-shouldest-hate-and-put-her-away-malachi-2-16-greek",
+      "ref": "Malachi 2:16"
+    },
+    {
+      "id": "will-a-man-rob-god-or-will-a-man-insult-god-malachi-3-8-and-3-9-greek",
+      "ref": "Malachi 3:8"
+    },
+    {
+      "id": "bring-ye-all-the-tithes-into-the-storehouse-or-the-year-is-completed-malachi-3-10-greek",
+      "ref": "Malachi 3:10"
+    },
+    {
+      "id": "the-proud-happy-or-strangers-blessed-malachi-3-15-and-4-1-greek",
+      "ref": "Malachi 3:15"
+    },
+    {
+      "id": "when-i-make-up-my-jewels-or-for-a-peculiar-possession-malachi-3-17-greek",
+      "ref": "Malachi 3:17"
+    },
+    {
+      "id": "elijah-the-prophet-and-the-dreadful-day-or-elias-the-thesbite-and-the-glorious-day-malachi-4-5-greek",
+      "ref": "Malachi 4:5"
+    },
+    {
+      "id": "spoken-by-jeremy-the-prophet-or-the-thirty-pieces-of-silver-in-zechariah-matthew-27-9",
+      "ref": "Matthew 27:9"
+    },
+    {
+      "id": "prepare-the-way-before-me-or-prepare-thy-way-before-thee-malachi-3-1",
+      "ref": "Malachi 3:1"
+    },
+    {
+      "id": "look-upon-me-whom-they-have-pierced-or-look-on-him-whom-they-pierced-zechariah-12-10",
+      "ref": "Zechariah 12:10"
+    }
+  ],
+  "checked": "2026-10-14T10:58:31.967Z",
+  "checks": [
+    {
+      "id": "behold-ye-among-the-heathen-or-behold-ye-despisers-habakkuk-1-5-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Habakkuk 1:5",
+          "quote": "Behold ye among the heathen",
+          "exact": true
+        },
+        {
+          "ref": "Acts 13:41",
+          "quote": "Behold, ye despisers",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "רְא֤וּ בַגֹּויִם֙",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/1/",
+              "printedLabel": "1:5",
+              "printed": "רְא֤וּ בַגֹּויִם֙ וְֽהַבִּ֔יטוּ וְהִֽתַּמְּה֖וּ תְּמָ֑הוּ כִּי־פֹ֙עַל֙ פֹּעֵ֣ל בִּֽימֵיכֶ֔ם לֹ֥א תַאֲמִ֖ינוּ כִּ֥י יְסֻפָּֽר׃"
+            }
+          ]
+        },
+        {
+          "quote": "Ἴδετε οἱ καταφρονηταὶ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB01.htm",
+              "printedLabel": "1:5",
+              "printed": "Ἴδετε οἱ καταφρονηταὶ, καὶ ἐπιβλέψατε, καὶ θαυμάσατε θαυμάσια, καὶ ἀφανίσθητε· διότι ἔργον ἐγὼ ἐργάζομαι ἐν ταῖς ἡμέραις ὑμῶν, ὃ οὐ μὴ πιστεύσητε, ἐάν τις ἐκδιηγῆται."
+            }
+          ]
+        },
+        {
+          "quote": "ἴδετε, οἱ καταφρονηταί",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/13/",
+              "printedLabel": "13:41",
+              "printed": "ἴδετε,<S>3708</S> οἱ<S>3588</S> καταφρονηταί,<S>2707</S> καὶ<S>2532</S> θαυμάσατε<S>2296</S> καὶ<S>2532</S> ἀφανίσθητε,<S>853</S> ὅτι<S>3754</S> ἔργον<S>2041</S> ἐργάζομαι<S>2038</S> ἐγὼ<S>1473</S> ἐν<S>1722</S> ταῖς<S>3588</S> ἡμέραις<S>2250</S> ὑμῶν,<S>5210</S> ἔργον<S>2041</S> ὃ<S>3739</S> οὐ<S>3756</S> μὴ<S>3361</S> πιστεύσητε<S>4100</S> ἐάν<S>1437</S> τις<S>5100</S> ἐκδιηγῆται<S>1555</S> ὑμῖν.<S>5210</S>"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/44/13/",
+              "printedLabel": "13:41",
+              "printed": "ιδετε οι καταφρονηται και θαυμασατε και αφανισθητε οτι εργον εγω εργαζομαι εν ταις ημεραις υμων εργον ω ου μη πιστευσητε εαν τις εκδιηγηται υμιν"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAB01.htm",
+          "printedLabel": "1:5",
+          "quote": "Behold, ye despisers",
+          "printed": "Behold, ye despisers, and look, and wonder marvellously, and vanish: for I work a work in your days, which ye will in no wise believe, though a man declare it to you .",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Habakkuk 1:5",
+          "quote": "Behold ye among the heathen",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Acts 13:41",
+          "quote": "Behold, ye despisers",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "οἱ καταφρονηταί",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB01.htm",
+              "printedLabel": "1:5"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/13/",
+              "printedLabel": "13:41"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/44/13/",
+              "printedLabel": "13:41"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "רְא֤וּ בַגֹּויִם֙",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/1/",
+              "printedLabel": "1:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Ἴδετε οἱ καταφρονηταὶ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB01.htm",
+              "printedLabel": "1:5"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/13/",
+              "printedLabel": "13:41"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/44/13/",
+              "printedLabel": "13:41"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἴδετε, οἱ καταφρονηταί",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB01.htm",
+              "printedLabel": "1:5"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/13/",
+              "printedLabel": "13:41"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/44/13/",
+              "printedLabel": "13:41"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ראו בגוים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/1/",
+              "printedLabel": "1:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "Behold ye among the heathen",
+          "ref": "Habakkuk 1:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "Behold, ye despisers",
+          "ref": "Acts 13:41",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "Behold ye among the heathen",
+          "ref": "Habakkuk 1:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "ye despisers",
+          "ref": "Acts 13:41",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "Behold, ye despisers",
+          "ref": "Acts 13:41",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Behold ye among the heathen",
+          "ref": "Habakkuk 1:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Behold, ye despisers",
+          "ref": "Acts 13:41",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Behold, ye despisers",
+          "ref": "Acts 13:41",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the heathen",
+          "ref": "Habakkuk 1:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "despisers",
+          "ref": "Acts 13:41",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "his-soul-which-is-lifted-up-or-if-he-should-draw-back-my-soul-habakkuk-2-4-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Habakkuk 2:4",
+          "quote": "his soul which is lifted up is not upright in him",
+          "exact": true
+        },
+        {
+          "ref": "Hebrews 10:38",
+          "quote": "if any man draw back, my soul shall have no pleasure in him",
+          "exact": true
+        },
+        {
+          "ref": "Habakkuk 2:4",
+          "quote": "but the just shall live by his faith",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "עֻפְּלָ֔ה לֹא־יָשְׁרָ֥ה נַפְשֹׁ֖ו בֹּ֑ו … וְצַדִּ֖יק בֶּאֱמוּנָתֹ֥ו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:4",
+              "printed": "הִנֵּ֣ה עֻפְּלָ֔ה לֹא־יָשְׁרָ֥ה נַפְשֹׁ֖ו בֹּ֑ו וְצַדִּ֖יק בֶּאֱמוּנָתֹ֥ו יִחְיֶֽה׃"
+            }
+          ]
+        },
+        {
+          "quote": "Ἐὰν ὑποστείληται, οὐκ εὐδοκεῖ ἡ ψυχή μου ἐν αὐτῷ … ἐκ πίστεώς μου ζήσεται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:4",
+              "printed": "Ἐὰν ὑποστείληται, οὐκ εὐδοκεῖ ἡ ψυχή μου ἐν αὐτῷ· ὁ δὲ δίκαιος ἐκ πίστεώς μου ζήσεται."
+            }
+          ]
+        },
+        {
+          "quote": "οὐκ εὐδοκεῖ ἡ ψυχή μου ἐν αὐτῷ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/10/",
+              "printedLabel": "10:38",
+              "printed": "ὁ<S>3588</S> δὲ<S>1161</S> δίκαιός<S>1342</S> μου<S>1473</S> ἐκ<S>1537</S> πίστεως<S>4102</S> ζήσεται,<S>2198</S> καὶ<S>2532</S> ἐὰν<S>1437</S> ὑποστείληται,<S>5288</S> οὐκ<S>3756</S> εὐδοκεῖ<S>2106</S> ἡ<S>3588</S> ψυχή<S>5590</S> μου<S>1473</S> ἐν<S>1722</S> αὐτῷ.<S>846</S>"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/58/10/",
+              "printedLabel": "10:38",
+              "printed": "ο δε δικαιος εκ πιστεως ζησεται και εαν υποστειληται ουκ ευδοκει η ψυχη μου εν αυτω"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAB02.htm",
+          "printedLabel": "2:4",
+          "quote": "If he should draw back, my soul has no pleasure in him",
+          "printed": "If he should draw back, my soul has no pleasure in him: but the just shall live by my faith.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/HAB02.htm",
+          "printedLabel": "2:4",
+          "quote": "live by my faith",
+          "printed": "If he should draw back, my soul has no pleasure in him: but the just shall live by my faith.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Habakkuk 2:4",
+          "quote": "but the just shall live by his faith",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Hebrews 10:38",
+          "quote": "my soul shall have no pleasure in him",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "οὐκ εὐδοκεῖ ἡ ψυχή μου ἐν αὐτῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:4"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/10/",
+              "printedLabel": "10:38"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/58/10/",
+              "printedLabel": "10:38"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "עֻפְּלָ֔ה לֹא־יָשְׁרָ֥ה נַפְשֹׁ֖ו בֹּ֑ו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְצַדִּ֖יק בֶּאֱמוּנָתֹ֥ו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Ἐὰν ὑποστείληται, οὐκ εὐδοκεῖ ἡ ψυχή μου ἐν αὐτῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:4"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/10/",
+              "printedLabel": "10:38"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/58/10/",
+              "printedLabel": "10:38"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἐκ πίστεώς μου ζήσεται",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "οὐκ εὐδοκεῖ ἡ ψυχή μου ἐν αὐτῷ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:4"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/10/",
+              "printedLabel": "10:38"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/58/10/",
+              "printedLabel": "10:38"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "עפלה לא ישרה נפשו בו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "וצדיק באמונתו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:4"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "μου",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:4"
+            },
+            {
+              "url": "https://bolls.life/get-text/TISCH/58/10/",
+              "printedLabel": "10:38"
+            },
+            {
+              "url": "https://bolls.life/get-text/TR/58/10/",
+              "printedLabel": "10:38"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "his soul which is lifted up is not upright in him: but the just shall live by his faith",
+          "ref": "Habakkuk 2:4",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "If he should draw back, my soul has no pleasure in him: but the just shall live by my faith",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "his soul which is lifted up is not upright in him",
+          "ref": "Habakkuk 2:4",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the just shall live by his faith",
+          "ref": "Habakkuk 2:4",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "If he should draw back, my soul has no pleasure in him",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the just shall live by my faith",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "my soul shall have no pleasure in him",
+          "ref": "Hebrews 10:38",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "his soul which is lifted up is not upright in him",
+          "ref": "Habakkuk 2:4",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "but the just shall live by his faith",
+          "ref": "Habakkuk 2:4",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "If he should draw back, my soul has no pleasure in him",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "live by my faith",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "if any man draw back, my soul shall have no pleasure in him",
+          "ref": "Hebrews 10:38",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "his faith",
+          "ref": "Habakkuk 2:4",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my",
+          "ref": "Hebrews 10:38",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "his",
+          "ref": "Habakkuk 2:4",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "scope",
+          "quote": "faith",
+          "ref": "Habakkuk 2:4",
+          "classification": "exact KJV"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "because-he-transgresseth-by-wine-or-the-arrogant-man-and-the-scorner-habakkuk-2-5-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Habakkuk 2:5",
+          "quote": "because he transgresseth by wine, he is a proud man",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "כִּֽי־הַיַּ֣יִן בֹּוגֵ֔ד גֶּ֥בֶר יָהִ֖יר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:5",
+              "printed": "וְאַף֙ כִּֽי־הַיַּ֣יִן בֹּוגֵ֔ד גֶּ֥בֶר יָהִ֖יר וְלֹ֣א יִנְוֶ֑ה אֲשֶׁר֩ הִרְחִ֨יב כִּשְׁאֹ֜ול נַפְשֹׁ֗ו וְה֤וּא כַמָּ֙וֶת֙ וְלֹ֣א יִשְׂבָּ֔ע וַיֶּאֱסֹ֤ף אֵלָיו֙ כָּל־הַגֹּויִ֔ם וַיִּקְבֹּ֥ץ אֵלָ֖יו כָּל־הָעַמִּֽים׃"
+            }
+          ]
+        },
+        {
+          "quote": "Ὁ δὲ κατοιόμενος, καὶ καταφρονητὴς, ἀνὴρ ἀλαζὼν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:5",
+              "printed": "Ὁ δὲ κατοιόμενος, καὶ καταφρονητὴς, ἀνὴρ ἀλαζὼν, οὐθὲν μὴ περάνῃ· ὃς ἐπλάτυνε καθὼς ᾅδης τὴν ψυχὴν αὐτοῦ, καὶ οὗτος ὡς θάνατος οὐκ ἐμπιπλάμενος, καὶ ἐπισυνάξει ἐπʼ αὐτὸν πάντα τὰ ἔθνη, καὶ εἰσδέξεται πρὸς αὐτὸν πάντας τοὺς λαούς."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAB02.htm",
+          "printedLabel": "2:5",
+          "quote": "But the arrogant man and the scorner, the boastful man",
+          "printed": "But the arrogant man and the scorner, the boastful man, shall not finish anything; who has enlarged his desire as the grave, and like death he is never satisfied, and he will gather to himself all the nations, and will receive to himself all the peoples.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Habakkuk 2:5",
+          "quote": "because he transgresseth by wine, he is a proud man",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "כִּֽי־הַיַּ֣יִן בֹּוגֵ֔ד גֶּ֥בֶר יָהִ֖יר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Ὁ δὲ κατοιόμενος, καὶ καταφρονητὴς, ἀνὴρ ἀλαζὼν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "כי היין בוגד גבר יהיר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:5"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "because he transgresseth by wine, he is a proud man",
+          "ref": "Habakkuk 2:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the arrogant man and the scorner, the boastful man",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "because he transgresseth by wine, he is a proud man",
+          "ref": "Habakkuk 2:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "But the arrogant man and the scorner, the boastful man",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "because he transgresseth by wine, he is a proud man",
+          "ref": "Habakkuk 2:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "But the arrogant man and the scorner, the boastful man",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "scorner",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "the-beam-out-of-the-timber-or-the-beetle-out-of-the-timber-habakkuk-2-11-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Habakkuk 2:11",
+          "quote": "the beam out of the timber shall answer it",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְכָפִ֖יס מֵעֵ֥ץ יַעֲנֶֽנָּה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:11",
+              "printed": "כִּי־אֶ֖בֶן מִקִּ֣יר תִּזְעָ֑ק וְכָפִ֖יס מֵעֵ֥ץ יַעֲנֶֽנָּה׃  פ"
+            }
+          ]
+        },
+        {
+          "quote": "κάνθαρος ἐκ ξύλου φθέγξεται αὐτά",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:11",
+              "printed": "Διότι λίθος ἐκ τοίχου βοήσεται, καὶ κάνθαρος ἐκ ξύλου φθέγξεται αὐτά."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAB02.htm",
+          "printedLabel": "2:11",
+          "quote": "the beetle out of the timber shall speak",
+          "printed": "For the stone shall cry out of the wall, and the beetle out of the timber shall speak.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Habakkuk 2:11",
+          "quote": "the beam out of the timber shall answer it",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "κάνθαρος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְכָפִ֖יס מֵעֵ֥ץ יַעֲנֶֽנָּה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "κάνθαρος ἐκ ξύλου φθέγξεται αὐτά",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "וכפיס מעץ יעננה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "the beam out of the timber",
+          "ref": "Habakkuk 2:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "the beetle out of the timber",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "the beam out of the timber shall answer it",
+          "ref": "Habakkuk 2:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the beetle",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "the beam out of the timber shall answer it",
+          "ref": "Habakkuk 2:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "the beetle out of the timber shall speak",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "let-thy-foreskin-be-uncovered-or-shake-o-heart-and-quake-habakkuk-2-16-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Habakkuk 2:16",
+          "quote": "let thy foreskin be uncovered",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְהֵֽעָרֵ֑ל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:16",
+              "printed": "שָׂבַ֤עְתָּ קָלֹון֙ מִכָּבֹ֔וד שְׁתֵ֥ה גַם־אַ֖תָּה וְהֵֽעָרֵ֑ל תִּסֹּ֣וב עָלֶ֗יךָ כֹּ֚וס יְמִ֣ין יְהוָ֔ה וְקִיקָלֹ֖ון עַל־כְּבֹודֶֽךָ׃"
+            }
+          ]
+        },
+        {
+          "quote": "καρδία σαλεύθητι, καὶ σείσθητι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:16",
+              "printed": "Πλησμονὴν ἀτιμίας ἐκ δόξης πίε καὶ σύ· καρδία σαλεύθητι, καὶ σείσθητι· ἐκύκλωσεν ἐπὶ σὲ ποτήριον δεξιᾶς Κυρίου, καὶ συνήχθη ἀτιμία ἐπὶ τὴν δόξαν σου."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAB02.htm",
+          "printedLabel": "2:16",
+          "quote": "shake, O heart, and quake",
+          "printed": "Drink thou also thy fill of disgrace instead of glory: shake, O heart, and quake, the cup of the right hand of the Lord has come round upon thee, and dishonour has gathered upon thy glory.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Habakkuk 2:16",
+          "quote": "let thy foreskin be uncovered",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "καρδία σαλεύθητι, καὶ σείσθητι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:16"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְהֵֽעָרֵ֑ל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:16"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "καρδία σαλεύθητι, καὶ σείσθητι",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB02.htm",
+              "printedLabel": "2:16"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והערל",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/2/",
+              "printedLabel": "2:16"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "let thy foreskin be uncovered",
+          "ref": "Habakkuk 2:16",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "shake, O heart, and quake",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "drink thou also, and let thy foreskin be uncovered",
+          "ref": "Habakkuk 2:16",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "shake, O heart, and quake",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "let thy foreskin be uncovered",
+          "ref": "Habakkuk 2:16",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "shake, O heart, and quake",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "revive-thy-work-in-the-midst-of-the-years-or-thou-shalt-be-known-between-the-two-living-creatures-habakkuk-3-2-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Habakkuk 3:2",
+          "quote": "revive thy work in the midst of the years",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "פָּֽעָלְךָ֙ בְּקֶ֤רֶב שָׁנִים֙ חַיֵּ֔יהוּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/3/",
+              "printedLabel": "3:2",
+              "printed": "יְהוָ֗ה שָׁמַ֣עְתִּי שִׁמְעֲךָ֮ יָרֵאתִי֒ יְהוָ֗ה פָּֽעָלְךָ֙ בְּקֶ֤רֶב שָׁנִים֙ חַיֵּ֔יהוּ בְּקֶ֥רֶב שָׁנִ֖ים תֹּודִ֑יעַ בְּרֹ֖גֶז רַחֵ֥ם תִּזְכֹּֽור׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἐν μέσῳ δύο ζώων γνωσθήσῃ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB03.htm",
+              "printedLabel": "3:2",
+              "printed": "Κύριε εἰσακήκοα τὴν ἀκοήν σου, καὶ ἐφοβήθην· κατενόησα τὰ ἔργα σου, καὶ ἐξέστην· ἐν μέσῳ δύο ζώων γνωσθήσῃ, ἐν τῷ ἐγγίζειν τὰ ἔτη ἐπιγνωσθήσῃ· ἐν τῷ παρεῖναι τὸν καιρὸν ἀναδειχθήσῃ· ἐν τῷ ταραχθῆναι τὴν ψυχήν μου, ἐν ὀργῇ ἐλέους μνησθήσῃ."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAB03.htm",
+          "printedLabel": "3:2",
+          "quote": "thou shalt be known between the two living creatures",
+          "printed": "O Lord, I have heard thy report, and was afraid: I considered thy works, and was amazed: thou shalt be known between the two living creatures, thou shalt be acknowledged when the years draw nigh; thou shalt be manifested when the time is come; when my soul is troubled, thou wilt in wrath remember mercy.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Habakkuk 3:2",
+          "quote": "revive thy work in the midst of the years",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἐν μέσῳ δύο ζώων γνωσθήσῃ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB03.htm",
+              "printedLabel": "3:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "פָּֽעָלְךָ֙ בְּקֶ֤רֶב שָׁנִים֙ חַיֵּ֔יהוּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/3/",
+              "printedLabel": "3:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἐν μέσῳ δύο ζώων γνωσθήσῃ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB03.htm",
+              "printedLabel": "3:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "פעלך בקרב שנים חייהו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/3/",
+              "printedLabel": "3:2"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "revive thy work in the midst of the years",
+          "ref": "Habakkuk 3:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "thou shalt be known between the two living creatures",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "O Lord, revive thy work in the midst of the years",
+          "ref": "Habakkuk 3:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "thou shalt be known between the two living creatures",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "revive thy work in the midst of the years",
+          "ref": "Habakkuk 3:2",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "thou shalt be known between the two living creatures",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "before-him-went-the-pestilence-or-before-his-face-shall-go-a-report-habakkuk-3-5-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Habakkuk 3:5",
+          "quote": "Before him went the pestilence",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "לְפָנָ֖יו יֵ֣לֶךְ דָּ֑בֶר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/3/",
+              "printedLabel": "3:5",
+              "printed": "לְפָנָ֖יו יֵ֣לֶךְ דָּ֑בֶר וְיֵצֵ֥א רֶ֖שֶׁף לְרַגְלָֽיו׃"
+            }
+          ]
+        },
+        {
+          "quote": "Πρὸ προσώπου αὐτοῦ πορεύσεται λόγος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB03.htm",
+              "printedLabel": "3:5",
+              "printed": "Πρὸ προσώπου αὐτοῦ πορεύσεται λόγος, καὶ ἐξελεύσεται εἰς πεδία· κατὰ πόδας αὐτοῦ"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/HAB03.htm",
+          "printedLabel": "3:5",
+          "quote": "Before his face shall go a report",
+          "printed": "Before his face shall go a report, and it shall go forth into the plains,",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Habakkuk 3:5",
+          "quote": "Before him went the pestilence",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "λόγος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB03.htm",
+              "printedLabel": "3:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "לְפָנָ֖יו יֵ֣לֶךְ דָּ֑בֶר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/3/",
+              "printedLabel": "3:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Πρὸ προσώπου αὐτοῦ πορεύσεται λόγος",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/HAB03.htm",
+              "printedLabel": "3:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "לפניו ילך דבר",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/35/3/",
+              "printedLabel": "3:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "Before him went the pestilence",
+          "ref": "Habakkuk 3:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "Before his face shall go a report",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Before him went the pestilence",
+          "ref": "Habakkuk 3:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "a report",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "Before him went the pestilence",
+          "ref": "Habakkuk 3:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Before his face shall go a report",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "swear-by-malcham-or-swear-by-their-king-zephaniah-1-5-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zephaniah 1:5",
+          "quote": "that swear by Malcham",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "וְהַנִּשְׁבָּעִ֖ים בְּמַלְכָּֽם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:5",
+              "printed": "וְאֶת־הַמִּשְׁתַּחֲוִ֥ים עַל־הַגַּגֹּ֖ות לִצְבָ֣א הַשָּׁמָ֑יִם וְאֶת־הַמִּֽשְׁתַּחֲוִים֙ הַנִּשְׁבָּעִ֣ים לַֽיהוָ֔ה וְהַנִּשְׁבָּעִ֖ים בְּמַלְכָּֽם׃"
+            }
+          ]
+        },
+        {
+          "quote": "τοὺς ὀμνύοντας κατὰ τοῦ βασιλέως αὐτῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:5",
+              "printed": "καὶ τοὺς προσκυνοῦντας ἐπὶ τὰ δώματα τῇ στρατιᾷ τοῦ οὐρανοῦ, καὶ τοὺς προσκυνοῦντας καὶ τοὺς ὀμνύοντας κατὰ τοῦ Κυρίου, καὶ τοὺς ὀμνύοντας κατὰ τοῦ βασιλέως αὐτῶν,"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEP01.htm",
+          "printedLabel": "1:5",
+          "quote": "them that swear by their king",
+          "printed": "and them that worship the host of heaven upon the house-tops; and them that worship and swear by the Lord, and them that swear by their king;",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zephaniah 1:5",
+          "quote": "that swear by Malcham",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "κατὰ τοῦ βασιλέως αὐτῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "וְהַנִּשְׁבָּעִ֖ים בְּמַלְכָּֽם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "τοὺς ὀμνύοντας κατὰ τοῦ βασιλέως αὐτῶν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "והנשבעים במלכם",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:5"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "that swear by Malcham",
+          "ref": "Zephaniah 1:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "them that swear by their king",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "that swear by Malcham",
+          "ref": "Zephaniah 1:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "by their king",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "that swear by Malcham",
+          "ref": "Zephaniah 1:5",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "them that swear by their king",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "their king",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "their king",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "the-fish-gate-or-the-gate-of-men-slaying-zephaniah-1-10-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zephaniah 1:10",
+          "quote": "from the fish gate",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "מִשַּׁ֣עַר הַדָּגִ֔ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:10",
+              "printed": "וְהָיָה֩ בַיֹּ֨ום הַה֜וּא נְאֻם־יְהוָ֗ה קֹ֤ול צְעָקָה֙ מִשַּׁ֣עַר הַדָּגִ֔ים וִֽילָלָ֖ה מִן־הַמִּשְׁנֶ֑ה וְשֶׁ֥בֶר גָּדֹ֖ול מֵהַגְּבָעֹֽות׃"
+            }
+          ]
+        },
+        {
+          "quote": "ἀπὸ πύλης ἀποκεντούντων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:10",
+              "printed": "Καὶ ἔσται ἐν τῇ ἡμέρᾳ ἐκείνῃ, λέγει Κύριος, φωνὴ κραυγῆς ἀπὸ πύλης ἀποκεντούντων, καὶ ὀλολυγμὸς ἀπὸ τῆς δευτέρας, καὶ συντριμμὸς μέγας ἀπὸ τῶν βουνῶν."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEP01.htm",
+          "printedLabel": "1:10",
+          "quote": "from the gate of men slaying",
+          "printed": "And there shall be in that day, saith the Lord, the sound of a cry from the gate of men slaying, and a howling from the second gate , and a great crashing from the hills.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zephaniah 1:10",
+          "quote": "from the fish gate",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἀπὸ πύλης ἀποκεντούντων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "מִשַּׁ֣עַר הַדָּגִ֔ים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ἀπὸ πύλης ἀποκεντούντων",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "משער הדגים",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:10"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "from the fish gate",
+          "ref": "Zephaniah 1:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "from the gate of men slaying",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "a cry from the fish gate",
+          "ref": "Zephaniah 1:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "from the gate of men slaying",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "from the fish gate",
+          "ref": "Zephaniah 1:10",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "from the gate of men slaying",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "men slaying",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "inhabitants-of-maktesh-and-the-merchant-people-or-the-city-broken-down-and-like-chanaan-zephaniah-1-11-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zephaniah 1:11",
+          "quote": "ye inhabitants of Maktesh",
+          "exact": true
+        },
+        {
+          "ref": "Zephaniah 1:11",
+          "quote": "all the merchant people are cut down",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "יֹשְׁבֵ֣י הַמַּכְתֵּ֑שׁ … כִּ֤י נִדְמָה֙ כָּל־עַ֣ם כְּנַ֔עַן נִכְרְת֖וּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:11",
+              "printed": "הֵילִ֖ילוּ יֹשְׁבֵ֣י הַמַּכְתֵּ֑שׁ כִּ֤י נִדְמָה֙ כָּל־עַ֣ם כְּנַ֔עַן נִכְרְת֖וּ כָּל־נְטִ֥ילֵי כָֽסֶף׃"
+            }
+          ]
+        },
+        {
+          "quote": "οἱ κατοικοῦντες τὴν κατακεκομμένην … ὅτι ὡμοιώθη πᾶς ὁ λαὸς Χαναὰν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:11",
+              "printed": "Θρηνήσατε οἱ κατοικοῦντες τὴν κατακεκομμένην, ὅτι ὡμοιώθη πᾶς ὁ λαὸς Χαναὰν, καὶ ἐξωλοθρεύθησαν πάντες οἱ ἐπῃρμένοι ἀργυρίῳ."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEP01.htm",
+          "printedLabel": "1:11",
+          "quote": "ye that inhabit the city that has been broken down",
+          "printed": "Lament, ye that inhabit the city that has been broken down, for all the people has become like Chanaan; and all that were exalted by silver have been utterly destroyed.",
+          "normalizedMatch": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEP01.htm",
+          "printedLabel": "1:11",
+          "quote": "for all the people has become like Chanaan",
+          "printed": "Lament, ye that inhabit the city that has been broken down, for all the people has become like Chanaan; and all that were exalted by silver have been utterly destroyed.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zephaniah 1:11",
+          "quote": "ye inhabitants of Maktesh",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "text",
+          "quote": "יֹשְׁבֵ֣י הַמַּכְתֵּ֑שׁ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "כִּ֤י נִדְמָה֙ כָּל־עַ֣ם כְּנַ֔עַן נִכְרְת֖וּ",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "οἱ κατοικοῦντες τὴν κατακεκομμένην",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "ὅτι ὡμοιώθη πᾶς ὁ λαὸς Χαναὰν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ישבי המכתש כי נדמה כל עם כנען נכרתו",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/1/",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "Consonantal Hebrew repetition; maqaf normalized to spaces"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Χαναάν",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP01.htm",
+              "printedLabel": "1:11"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "ye inhabitants of Maktesh, for all the merchant people are cut down",
+          "ref": "Zephaniah 1:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "ye that inhabit the city that has been broken down, for all the people has become like Chanaan",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "ye inhabitants of Maktesh, for all the merchant people are cut down",
+          "ref": "Zephaniah 1:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "merchant",
+          "ref": "Zephaniah 1:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "ye that inhabit the city that has been broken down, for all the people has become like Chanaan",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "ye inhabitants of Maktesh",
+          "ref": "Zephaniah 1:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "all the merchant people are cut down",
+          "ref": "Zephaniah 1:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "ye that inhabit the city that has been broken down",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "for all the people has become like Chanaan",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "merchant people",
+          "ref": "Zephaniah 1:11",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "broken down",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Chanaan",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "to-her-that-is-filthy-and-polluted-or-alas-the-glorious-and-ransomed-city-zephaniah-3-1-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zephaniah 3:1",
+          "quote": "Woe to her that is filthy and polluted, to the oppressing city!",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "הֹ֥וי מֹרְאָ֖ה וְנִגְאָלָ֑ה הָעִ֖יר הַיֹּונָֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/3/",
+              "printedLabel": "3:1",
+              "printed": "הֹ֥וי מֹרְאָ֖ה וְנִגְאָלָ֑ה הָעִ֖יר הַיֹּונָֽה׃"
+            }
+          ]
+        },
+        {
+          "quote": "Ὢ ἡ ἐπιφανὴς καὶ ἀπολελυτρωμένη πόλις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:1",
+              "printed": "Ὢ ἡ ἐπιφανὴς καὶ ἀπολελυτρωμένη πόλις,"
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEP03.htm",
+          "printedLabel": "3:1",
+          "quote": "Alas the glorious and ransomed city",
+          "printed": "Alas the glorious and ransomed city.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zephaniah 3:1",
+          "quote": "Woe to her that is filthy and polluted, to the oppressing city!",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "ἡ ἐπιφανὴς καὶ ἀπολελυτρωμένη πόλις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "הֹ֥וי מֹרְאָ֖ה וְנִגְאָלָ֑ה הָעִ֖יר הַיֹּונָֽה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/3/",
+              "printedLabel": "3:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "Ὢ ἡ ἐπιφανὴς καὶ ἀπολελυτρωμένη πόλις",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "הוי מראה ונגאלה העיר היונה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/3/",
+              "printedLabel": "3:1"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "Woe to her that is filthy and polluted, to the oppressing city!",
+          "ref": "Zephaniah 3:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "Alas the glorious and ransomed city",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "Woe to her that is filthy and polluted, to the oppressing city!",
+          "ref": "Zephaniah 3:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "the glorious and ransomed city",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "Woe to her that is filthy and polluted, to the oppressing city!",
+          "ref": "Zephaniah 3:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "Alas the glorious and ransomed city",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "filthy and polluted",
+          "ref": "Zephaniah 3:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "oppressing",
+          "ref": "Zephaniah 3:1",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "reasoning",
+          "quote": "glorious and ransomed",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "until-the-day-that-i-rise-up-to-the-prey-or-for-a-witness-zephaniah-3-8-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zephaniah 3:8",
+          "quote": "until the day that I rise up to the prey",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "לְיֹ֖ום קוּמִ֣י לְעַ֑ד",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/3/",
+              "printedLabel": "3:8",
+              "printed": "לָכֵ֤ן חַכּוּ־לִי֙ נְאֻם־יְהוָ֔ה לְיֹ֖ום קוּמִ֣י לְעַ֑ד כִּ֣י מִשְׁפָּטִי֩ לֶאֱסֹ֨ף גֹּויִ֜ם לְקָבְצִ֣י מַמְלָכֹ֗ות לִשְׁפֹּ֨ךְ עֲלֵיהֶ֤ם זַעְמִי֙ כֹּ֚ל חֲרֹ֣ון אַפִּ֔י כִּ֚י בְּאֵ֣שׁ קִנְאָתִ֔י תֵּאָכֵ֖ל כָּל־הָאָֽרֶץ׃"
+            }
+          ]
+        },
+        {
+          "quote": "εἰς ἡμέραν ἀναστάσεώς μου εἰς μαρτύριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:8",
+              "printed": "Διατοῦτο ὑπόμεινόν με, λέγει Κύριος, εἰς ἡμέραν ἀναστάσεώς μου εἰς μαρτύριον· διὸ τὸ κρίμα μου εἰς συναγωγὰς ἐθνῶν, τοῦ εἰσδέκασθαι βασιλεῖς, τοῦ ἐκχέαι ἐπʼ αὐτοὺς πᾶσαν ὀργὴν θυμοῦ· διότι ἐν πυρὶ ζήλου μου καταναλωθήσεται πᾶσα ἡ γῆ."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEP03.htm",
+          "printedLabel": "3:8",
+          "quote": "until the day when I rise up for a witness",
+          "printed": "Therefore wait upon me, saith the Lord, until the day when I rise up for a witness: because my judgment shall be on the gatherings of the nations, to draw to me kings, to pour out upon them all my fierce anger: for the whole earth shall be consumed with the fire of my jealousy.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zephaniah 3:8",
+          "quote": "until the day that I rise up to the prey",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "εἰς μαρτύριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "לְיֹ֖ום קוּמִ֣י לְעַ֑ד",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/3/",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "εἰς ἡμέραν ἀναστάσεώς μου εἰς μαρτύριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "ליום קומי לעד",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/3/",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "μαρτύριον",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:8"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "until the day that I rise up to the prey",
+          "ref": "Zephaniah 3:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "until the day when I rise up for a witness",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "to the prey",
+          "ref": "Zephaniah 3:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "for a witness",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "until the day that I rise up to the prey",
+          "ref": "Zephaniah 3:8",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "until the day when I rise up for a witness",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [
+        {
+          "id": "exp-late-35-3-8",
+          "title": "Sweeping judgment and a surviving remnant",
+          "summary": "Universal destruction language is followed immediately by peoples worshiping and survivors.",
+          "reasoning": "The continuation complicates an interpretation in which every person is physically destroyed. Comprehensive rhetoric coexists with restoration.",
+          "scope": "Internal context; does not identify a particular future physical event.",
+          "decision": "Distinct: existing judgment/remnant interpretation does not compare prey with witness in the printed Greek."
+        }
+      ],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    },
+    {
+      "id": "a-pure-language-or-a-tongue-for-her-generation-zephaniah-3-9-greek",
+      "batch": "nahum-to-malachi",
+      "english": [
+        {
+          "ref": "Zephaniah 3:9",
+          "quote": "a pure language",
+          "exact": true
+        }
+      ],
+      "languages": [
+        {
+          "quote": "שָׂפָ֣ה בְרוּרָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/3/",
+              "printedLabel": "3:9",
+              "printed": "כִּֽי־אָ֛ז אֶהְפֹּ֥ךְ אֶל־עַמִּ֖ים שָׂפָ֣ה בְרוּרָ֑ה לִקְרֹ֤א כֻלָּם֙ בְּשֵׁ֣ם יְהוָ֔ה לְעָבְדֹ֖ו שְׁכֶ֥ם אֶחָֽד׃"
+            }
+          ]
+        },
+        {
+          "quote": "γλῶσσαν εἰς γενεὰν αὐτῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:9",
+              "printed": "Ὅτι τότε μεταστρέψω ἐπὶ λαοὺς γλῶσσαν εἰς γενεὰν αὐτῆς, τοῦ ἐπικαλεῖσθαι πάντας τὸ ὄνομα Κυρίου, τοῦ δουλεύειν αὐτῷ ὑπὸ ζυγὸν ἕνα."
+            }
+          ]
+        }
+      ],
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ZEP03.htm",
+          "printedLabel": "3:9",
+          "quote": "a tongue for her generation",
+          "printed": "For then will I turn to the peoples a tongue for her generation, that all may call on the name of the Lord, to serve him under one yoke.",
+          "normalizedMatch": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Zephaniah 3:9",
+          "quote": "a pure language",
+          "exact": true
+        }
+      ],
+      "repeatedLanguage": [
+        {
+          "field": "summary",
+          "quote": "γλῶσσαν εἰς γενεὰν αὐτῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "שָׂפָ֣ה בְרוּרָ֑ה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/3/",
+              "printedLabel": "3:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "text",
+          "quote": "γλῶσσαν εἰς γενεὰν αὐτῆς",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ZEP03.htm",
+              "printedLabel": "3:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        },
+        {
+          "field": "reasoning",
+          "quote": "שפה ברורה",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/36/3/",
+              "printedLabel": "3:9"
+            }
+          ],
+          "classification": "supplied printed verse"
+        }
+      ],
+      "englishFragments": [
+        {
+          "field": "title",
+          "quote": "a pure language",
+          "ref": "Zephaniah 3:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "title",
+          "quote": "a tongue for her generation",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "summary",
+          "quote": "a pure language",
+          "ref": "Zephaniah 3:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "summary",
+          "quote": "a tongue for her generation",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "text",
+          "quote": "a pure language",
+          "ref": "Zephaniah 3:9",
+          "classification": "exact KJV"
+        },
+        {
+          "field": "text",
+          "quote": "a tongue for her generation",
+          "ref": null,
+          "classification": "Brenton English"
+        },
+        {
+          "field": "reasoning",
+          "quote": "for her generation",
+          "ref": null,
+          "classification": "Brenton English"
+        }
+      ],
+      "overlap": [],
+      "studiesReviewed": [
+        {
+          "id": "seen",
+          "title": "Can God be seen?"
+        },
+        {
+          "id": "judas",
+          "title": "Judas and the field of blood"
+        },
+        {
+          "id": "animals",
+          "title": "Water or ground: the animals’ origin"
+        },
+        {
+          "id": "plants",
+          "title": "Plants before people—or after?"
+        },
+        {
+          "id": "soldiers",
+          "title": "David’s census: two different totals"
+        },
+        {
+          "id": "birth",
+          "title": "Herod, Quirinius, and the birth chronology"
+        }
+      ]
+    }
+  ],
+  "draftHashes": {
+    "nahum-to-malachi-records.json": "a3ebbe7636a143cacc79d2a6acc0e06bb442d9103415b70b98d2965a9fddea1a",
+    "nahum-to-malachi-notes.md": "cab1da1d4555696673077f676b619ca89d87145dcd5832dd00146dc3545e7363",
+    "nahum-to-malachi-q-records.json": "3861008b04de5e76ef1ae99917e46a0e7f5be8d13082159d9ebccfd00b9dde62",
+    "nahum-to-malachi-q-notes.md": "1f6f2fe79184193ae68cc0633f5d3e28933c0ab6748f9e8c4c0e18a8658bc26f"
+  },
+  "sourceCount": 19,
+  "sourceErrors": [],
+  "normalization": "Exact KJV and sides, ellipsis fragments individually checked. Language and Brenton English accents/punctuation normalized; every match retains supplied address and printed verse label. Repeated consonantal Hebrew normalizes maqaf to spaces.",
+  "needsOwner": []
+}
