@@ -1,0 +1,738 @@
+{
+  "batch": "ecclesiastes-to-song-of-solomon-q",
+  "checked": "2026-10-14T02:03:48.619Z",
+  "checks": [
+    {
+      "id": "the-words-of-the-preacher-the-son-of-david-king-in-jerusalem-who-is-the-preacher",
+      "batch": "ecclesiastes-to-song-of-solomon-q",
+      "english": [
+        {
+          "ref": "Ecclesiastes 1:1",
+          "quote": "The words of the Preacher, the son of David, king in Jerusalem.",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 1:12",
+          "quote": "I the Preacher was king over Israel in Jerusalem.",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 1:16",
+          "quote": "I communed with mine own heart, saying, Lo, I am come to great estate, and have gotten more wisdom than all they that have been before me in Jerusalem: yea, my heart had great experience of wisdom and knowledge.",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 2:7",
+          "quote": "I got me servants and maidens, and had servants born in my house; also I had great possessions of great and small cattle above all that were in Jerusalem before me:",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 2:8",
+          "quote": "I gathered me also silver and gold, and the peculiar treasure of kings and of the provinces: I gat me men singers and women singers, and the delights of the sons of men, as musical instruments, and that of all sorts.",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 2:9",
+          "quote": "So I was great, and increased more than all that were before me in Jerusalem: also my wisdom remained with me.",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 12:9",
+          "quote": "And moreover, because the preacher was wise, he still taught the people knowledge; yea, he gave good heed, and sought out, and set in order many proverbs.",
+          "exact": true
+        }
+      ],
+      "language": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 1:1",
+          "quote": "The words of the Preacher, the son of David, king in Jerusalem",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The words of the Preacher, the son of David, king in Jerusalem",
+          "matches": [
+            "Ecclesiastes 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the Preacher, the son of David, king in Jerusalem",
+          "matches": [
+            "Ecclesiastes 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "was king over Israel in Jerusalem",
+          "matches": [
+            "Ecclesiastes 1:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The words of the Preacher, the son of David, king in Jerusalem.",
+          "matches": [
+            "Ecclesiastes 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I the Preacher was king over Israel in Jerusalem.",
+          "matches": [
+            "Ecclesiastes 1:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I communed with mine own heart, saying, Lo, I am come to great estate, and have gotten more wisdom than all they that have been before me in Jerusalem: yea, my heart had great experience of wisdom and knowledge.",
+          "matches": [
+            "Ecclesiastes 1:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I got me servants and maidens, and had servants born in my house; also I had great possessions of great and small cattle above all that were in Jerusalem before me:",
+          "matches": [
+            "Ecclesiastes 2:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I gathered me also silver and gold, and the peculiar treasure of kings and of the provinces: I gat me men singers and women singers, and the delights of the sons of men, as musical instruments, and that of all sorts.",
+          "matches": [
+            "Ecclesiastes 2:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "So I was great, and increased more than all that were before me in Jerusalem: also my wisdom remained with me.",
+          "matches": [
+            "Ecclesiastes 2:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And moreover, because the preacher was wise, he still taught the people knowledge; yea, he gave good heed, and sought out, and set in order many proverbs.",
+          "matches": [
+            "Ecclesiastes 12:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Solomon",
+          "matches": [],
+          "brenton": [],
+          "kind": "Supplied packaged word-search token; verified separately, not a quotation"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the Preacher",
+          "matches": [
+            "Ecclesiastes 1:1",
+            "Ecclesiastes 1:12",
+            "Ecclesiastes 12:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "was king over Israel in Jerusalem",
+          "matches": [
+            "Ecclesiastes 1:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "all they that have been before me in Jerusalem",
+          "matches": [
+            "Ecclesiastes 1:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "which-are-given-from-one-shepherd-who-is-the-one-shepherd-in-ecclesiastes-12-11",
+      "batch": "ecclesiastes-to-song-of-solomon-q",
+      "english": [
+        {
+          "ref": "Ecclesiastes 12:9",
+          "quote": "And moreover, because the preacher was wise, he still taught the people knowledge; yea, he gave good heed, and sought out, and set in order many proverbs.",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 12:10",
+          "quote": "The preacher sought to find out acceptable words: and that which was written was upright, even words of truth.",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 12:11",
+          "quote": "The words of the wise are as goads, and as nails fastened by the masters of assemblies, which are given from one shepherd.",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 12:12",
+          "quote": "And further, by these, my son, be admonished: of making many books there is no end; and much study is a weariness of the flesh.",
+          "exact": true
+        },
+        {
+          "ref": "Ecclesiastes 12:13",
+          "quote": "Let us hear the conclusion of the whole matter: Fear God, and keep his commandments: for this is the whole duty of man.",
+          "exact": true
+        }
+      ],
+      "language": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 12:11",
+          "quote": "which are given from one shepherd",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Which are given from one shepherd",
+          "matches": [
+            "Ecclesiastes 12:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "are given from one shepherd",
+          "matches": [
+            "Ecclesiastes 12:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And moreover, because the preacher was wise, he still taught the people knowledge; yea, he gave good heed, and sought out, and set in order many proverbs.",
+          "matches": [
+            "Ecclesiastes 12:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The preacher sought to find out acceptable words: and that which was written was upright, even words of truth.",
+          "matches": [
+            "Ecclesiastes 12:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The words of the wise are as goads, and as nails fastened by the masters of assemblies, which are given from one shepherd.",
+          "matches": [
+            "Ecclesiastes 12:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And further, by these, my son, be admonished: of making many books there is no end; and much study is a weariness of the flesh.",
+          "matches": [
+            "Ecclesiastes 12:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Let us hear the conclusion of the whole matter: Fear God, and keep his commandments: for this is the whole duty of man.",
+          "matches": [
+            "Ecclesiastes 12:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "shepherd",
+          "matches": [
+            "Ecclesiastes 12:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "are given from one shepherd",
+          "matches": [
+            "Ecclesiastes 12:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "my-beloved-and-the-king-solomon-are-they-the-same-person-in-the-song-of-solomon",
+      "batch": "ecclesiastes-to-song-of-solomon-q",
+      "english": [
+        {
+          "ref": "Song of Solomon 1:1",
+          "quote": "The song of songs, which is Solomon's.",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 1:4",
+          "quote": "Draw me, we will run after thee: the king hath brought me into his chambers: we will be glad and rejoice in thee, we will remember thy love more than wine: the upright love thee.",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 1:7",
+          "quote": "Tell me, O thou whom my soul loveth, where thou feedest, where thou makest thy flock to rest at noon: for why should I be as one that turneth aside by the flocks of thy companions?",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 1:12",
+          "quote": "While the king sitteth at his table, my spikenard sendeth forth the smell thereof.",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 2:16",
+          "quote": "My beloved is mine, and I am his: he feedeth among the lilies.",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 3:7",
+          "quote": "Behold his bed, which is Solomon's; threescore valiant men are about it, of the valiant of Israel.",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 3:11",
+          "quote": "Go forth, O ye daughters of Zion, and behold king Solomon with the crown wherewith his mother crowned him in the day of his espousals, and in the day of the gladness of his heart.",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 8:12",
+          "quote": "My vineyard, which is mine, is before me: thou, O Solomon, must have a thousand, and those that keep the fruit thereof two hundred.",
+          "exact": true
+        }
+      ],
+      "language": [],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Song of Solomon 1:4",
+          "quote": "the king hath brought me into his chambers",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The king hath brought me into his chambers",
+          "matches": [
+            "Song of Solomon 1:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "my beloved",
+          "matches": [
+            "Song of Solomon 2:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the king",
+          "matches": [
+            "Song of Solomon 1:4",
+            "Song of Solomon 1:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "king Solomon",
+          "matches": [
+            "Song of Solomon 3:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "my beloved",
+          "matches": [
+            "Song of Solomon 2:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The song of songs, which is Solomon's.",
+          "matches": [
+            "Song of Solomon 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Draw me, we will run after thee: the king hath brought me into his chambers: we will be glad and rejoice in thee, we will remember thy love more than wine: the upright love thee.",
+          "matches": [
+            "Song of Solomon 1:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Tell me, O thou whom my soul loveth, where thou feedest, where thou makest thy flock to rest at noon: for why should I be as one that turneth aside by the flocks of thy companions?",
+          "matches": [
+            "Song of Solomon 1:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "While the king sitteth at his table, my spikenard sendeth forth the smell thereof.",
+          "matches": [
+            "Song of Solomon 1:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "My beloved is mine, and I am his: he feedeth among the lilies.",
+          "matches": [
+            "Song of Solomon 2:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Behold his bed, which is Solomon's; threescore valiant men are about it, of the valiant of Israel.",
+          "matches": [
+            "Song of Solomon 3:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Go forth, O ye daughters of Zion, and behold king Solomon with the crown wherewith his mother crowned him in the day of his espousals, and in the day of the gladness of his heart.",
+          "matches": [
+            "Song of Solomon 3:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "My vineyard, which is mine, is before me: thou, O Solomon, must have a thousand, and those that keep the fruit thereof two hundred.",
+          "matches": [
+            "Song of Solomon 8:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my beloved",
+          "matches": [
+            "Song of Solomon 2:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thou whom my soul loveth",
+          "matches": [
+            "Song of Solomon 1:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "he feedeth among the lilies",
+          "matches": [
+            "Song of Solomon 2:16"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the king",
+          "matches": [
+            "Song of Solomon 1:4",
+            "Song of Solomon 1:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "hath brought me into his chambers",
+          "matches": [
+            "Song of Solomon 1:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "sitteth at his table",
+          "matches": [
+            "Song of Solomon 1:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "behold king Solomon",
+          "matches": [
+            "Song of Solomon 3:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "O Solomon",
+          "matches": [
+            "Song of Solomon 8:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "king",
+          "matches": [
+            "Song of Solomon 1:4",
+            "Song of Solomon 1:12",
+            "Song of Solomon 3:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Solomon",
+          "matches": [
+            "Song of Solomon 3:7",
+            "Song of Solomon 3:11",
+            "Song of Solomon 8:12",
+            "Song of Solomon 1:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/21/1/",
+    "https://ebible.org/grcbrent/ECC01.htm",
+    "https://ebible.org/grcbrent/ECC02.htm",
+    "https://ebible.org/eng-Brenton/ECC01.htm",
+    "https://ebible.org/eng-Brenton/ECC02.htm",
+    "https://bolls.life/get-text/WLC/21/2/",
+    "https://bolls.life/get-text/WLC/21/3/",
+    "https://ebible.org/grcbrent/ECC03.htm",
+    "https://ebible.org/eng-Brenton/ECC03.htm",
+    "https://bolls.life/get-text/WLC/21/8/",
+    "https://ebible.org/grcbrent/ECC08.htm",
+    "https://ebible.org/eng-Brenton/ECC08.htm",
+    "https://bolls.life/get-text/WLC/21/10/",
+    "https://ebible.org/grcbrent/ECC10.htm",
+    "https://ebible.org/eng-Brenton/ECC10.htm",
+    "https://bolls.life/get-text/WLC/21/12/",
+    "https://ebible.org/grcbrent/ECC12.htm",
+    "https://ebible.org/eng-Brenton/ECC12.htm",
+    "https://bolls.life/get-text/WLC/22/1/",
+    "https://bolls.life/get-text/WLC/22/4/",
+    "https://bolls.life/get-text/WLC/22/7/",
+    "https://ebible.org/grcbrent/SNG01.htm",
+    "https://ebible.org/grcbrent/SNG04.htm",
+    "https://ebible.org/grcbrent/SNG07.htm",
+    "https://ebible.org/eng-Brenton/SNG01.htm",
+    "https://bolls.life/get-text/WLC/22/2/",
+    "https://ebible.org/grcbrent/SNG02.htm",
+    "https://ebible.org/grcbrent/SNG03.htm",
+    "https://ebible.org/eng-Brenton/SNG02.htm",
+    "https://ebible.org/eng-Brenton/SNG03.htm",
+    "https://bolls.life/get-text/WLC/22/6/",
+    "https://ebible.org/grcbrent/SNG06.htm",
+    "https://ebible.org/eng-Brenton/SNG06.htm",
+    "https://ebible.org/eng-Brenton/SNG07.htm",
+    "https://ebible.org/eng-Brenton/SNG04.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 718,
+  "studiesChecked": 6,
+  "studies": [
+    {
+      "id": "seen",
+      "title": "Can God be seen?",
+      "summary": "Exodus describes Moses speaking with God “face to face”; John says no one has seen God. The tension depends on whether “face to face” means literal sight.",
+      "refs": [
+        "Exodus 33:11",
+        "John 1:18",
+        "Exodus 33:20",
+        "Exodus 33:23",
+        "Exodus 24:9",
+        "Exodus 24:10",
+        "Exodus 24:11",
+        "Numbers 12:8",
+        "Deuteronomy 4:12",
+        "Deuteronomy 4:15",
+        "Deuteronomy 4:16",
+        "Deuteronomy 5:4",
+        "Deuteronomy 5:5",
+        "Deuteronomy 5:24",
+        "Deuteronomy 5:27"
+      ]
+    },
+    {
+      "id": "judas",
+      "title": "Judas and the field of blood",
+      "summary": "Matthew and Acts give different accounts of Judas's death and the field purchase.",
+      "refs": [
+        "Matthew 27:5",
+        "Acts 1:18",
+        "Matthew 27:3",
+        "Matthew 27:4",
+        "Matthew 27:6",
+        "Matthew 27:7",
+        "Matthew 27:8",
+        "Acts 1:19"
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Water or ground: the animals’ origin",
+      "summary": "Genesis 1 can sound like birds came from water, while Genesis 2 says ground. The apparent conflict depends on how Genesis 1:20 is translated.",
+      "refs": [
+        "Genesis 1:20",
+        "Genesis 2:19"
+      ]
+    },
+    {
+      "id": "plants",
+      "title": "Plants before people—or after?",
+      "summary": "Genesis 1 places vegetation before people; Genesis 2 describes no field plants before a cultivator. Whether this conflicts depends on which plants are meant.",
+      "refs": [
+        "Genesis 1:11",
+        "Genesis 2:5"
+      ]
+    },
+    {
+      "id": "soldiers",
+      "title": "David’s census: two different totals",
+      "summary": "The census totals differ: Israel is 800,000 versus 1.1 million; Judah is 500,000 versus 470,000. Different counting rules are proposed but not established here.",
+      "refs": [
+        "2 Samuel 24:9",
+        "1 Chronicles 21:5",
+        "1 Chronicles 21:6"
+      ]
+    },
+    {
+      "id": "birth",
+      "title": "Herod, Quirinius, and the birth chronology",
+      "summary": "Matthew places Jesus’s birth under Herod; Luke links it to Quirinius’s census. The historical chronology creates a tension if the same census is intended.",
+      "refs": [
+        "Matthew 2:1",
+        "Luke 2:2"
+      ]
+    }
+  ],
+  "suppliedWordSearchChecks": [
+    {
+      "term": "Solomon",
+      "book": "Ecclesiastes",
+      "found": [],
+      "limit": "Verification of supplied packaged word-search claim only; no new findings or prose chapter reading"
+    },
+    {
+      "term": "shepherd",
+      "book": "Ecclesiastes",
+      "found": [
+        "Ecclesiastes 12:11"
+      ],
+      "limit": "Verification of supplied packaged word-search claim only; no new findings or prose chapter reading"
+    }
+  ],
+  "draftHashes": {
+    "research/claude-drafts/ecclesiastes-to-song-of-solomon-records.json": "d5bd44490640c1b8815ec04ac9e3fdfff8e587f80e05e7e48e8e72b4012edf40",
+    "research/claude-drafts/ecclesiastes-to-song-of-solomon-notes.md": "102883ba25b9bf4c0e341ca84e7337ac330e8cc48f2eb8c90637426ed1f73ef2",
+    "research/claude-drafts/ecclesiastes-to-song-of-solomon-q-records.json": "b4df35577045dc9e26712fb30301aab0d70dbc5705036cc0b6a68ed29289ec02",
+    "research/claude-drafts/ecclesiastes-to-song-of-solomon-q-notes.md": "0f9a8373e27d8e4d48104ac6d011f719b347d8e2c156b2ef7a8f514fb61c8f6c"
+  }
+}

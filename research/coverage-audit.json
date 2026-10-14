@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 718,
+    "evidenceRecords": 740,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 535,
-    "annotatedVerses": 3071
+    "chaptersWithAnnotations": 545,
+    "annotatedVerses": 3096
   },
   "byBook": [
     {
@@ -135,14 +135,14 @@
     {
       "book": "Ecclesiastes",
       "chapters": 12,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 7
+      "chaptersWithAnnotations": 7,
+      "annotatedVerses": 21
     },
     {
       "book": "Song of Solomon",
       "chapters": 8,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 7
+      "chaptersWithAnnotations": 6,
+      "annotatedVerses": 18
     },
     {
       "book": "Isaiah",
@@ -12072,13 +12072,19 @@
       "bookId": 20,
       "chapter": 1,
       "annotationIds": [
-        "legacy-science-5"
+        "legacy-science-5",
+        "to-know-madness-and-folly-or-parables-and-understanding-greek",
+        "the-words-of-the-preacher-the-son-of-david-king-in-jerusalem-who-is-the-preacher"
       ],
       "annotatedVerses": [
-        7
+        1,
+        7,
+        17
       ],
       "modes": [
-        "science"
+        "science",
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -12086,18 +12092,34 @@
       "book": "Ecclesiastes",
       "bookId": 20,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "as-musical-instruments-or-a-butler-and-female-cupbearers-greek",
+        "what-can-the-man-do-that-cometh-after-the-king-or-who-will-follow-after-counsel-greek",
+        "who-else-can-hasten-hereunto-more-than-i-or-who-shall-drink-without-him-greek"
+      ],
+      "annotatedVerses": [
+        8,
+        12,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ecclesiastes",
       "bookId": 20,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "that-god-might-manifest-them-or-god-will-judge-them-greek"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12140,9 +12162,19 @@
       "book": "Ecclesiastes",
       "bookId": 20,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-boldness-of-his-face-shall-be-changed-or-a-man-of-shameless-countenance-will-be-hated-greek",
+        "they-were-forgotten-in-the-city-or-they-were-praised-in-the-city-greek",
+        "though-a-sinner-do-evil-an-hundred-times-or-he-that-has-sinned-has-done-evil-from-that-time-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        10,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12169,9 +12201,19 @@
       "book": "Ecclesiastes",
       "bookId": 20,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "so-doth-a-little-folly-him-that-is-in-reputation-or-a-little-wisdom-is-more-precious-than-great-glory-of-folly-greek",
+        "but-wisdom-is-profitable-to-direct-or-skill-is-of-no-advantage-greek",
+        "and-a-babbler-is-no-better-or-there-is-no-advantage-to-the-charmer-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        10,
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12187,36 +12229,70 @@
       "book": "Ecclesiastes",
       "bookId": 20,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-grasshopper-shall-be-a-burden-and-desire-shall-fail-or-the-locust-shall-increase-and-the-caper-shall-be-scattered-greek",
+        "which-are-given-from-one-shepherd-who-is-the-one-shepherd-in-ecclesiastes-12-11"
+      ],
+      "annotatedVerses": [
+        5,
+        11
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Song of Solomon",
       "bookId": 21,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thy-love-is-better-than-wine-or-thy-breasts-are-better-than-wine-greek",
+        "thy-cheeks-are-comely-with-rows-of-jewels-or-thy-cheeks-are-beautiful-as-those-of-a-dove-greek",
+        "my-beloved-and-the-king-solomon-are-they-the-same-person-in-the-song-of-solomon"
+      ],
+      "annotatedVerses": [
+        2,
+        4,
+        10
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Song of Solomon",
       "bookId": 21,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "by-the-roes-and-by-the-hinds-of-the-field-or-by-the-powers-and-by-the-virtues-of-the-field-greek",
+        "the-time-of-the-singing-of-birds-is-come-or-the-time-of-pruning-has-arrived-greek"
+      ],
+      "annotatedVerses": [
+        7,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Song of Solomon",
       "bookId": 21,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "by-the-roes-and-by-the-hinds-of-the-field-or-by-the-powers-and-by-the-virtues-of-the-field-greek"
+      ],
+      "annotatedVerses": [
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12224,7 +12300,8 @@
       "bookId": 21,
       "chapter": 4,
       "annotationIds": [
-        "exp-late-21-4-1"
+        "exp-late-21-4-1",
+        "thy-love-is-better-than-wine-or-thy-breasts-are-better-than-wine-greek"
       ],
       "annotatedVerses": [
         1,
@@ -12233,10 +12310,12 @@
         4,
         5,
         6,
-        7
+        7,
+        10
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -12253,18 +12332,34 @@
       "book": "Song of Solomon",
       "bookId": 21,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "beautiful-as-tirzah-or-as-pleasure-greek",
+        "are-thy-temples-within-thy-locks-or-being-seen-without-thy-veil-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Song of Solomon",
       "bookId": 21,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thy-love-is-better-than-wine-or-thy-breasts-are-better-than-wine-greek",
+        "causing-the-lips-of-those-that-are-asleep-to-speak-or-suiting-my-lips-and-teeth-greek"
+      ],
+      "annotatedVerses": [
+        9,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

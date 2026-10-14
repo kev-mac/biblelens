@@ -1,0 +1,3829 @@
+{
+  "batch": "ecclesiastes-to-song-of-solomon",
+  "checked": "2026-10-14T02:03:48.613Z",
+  "checks": [
+    {
+      "id": "to-know-madness-and-folly-or-parables-and-understanding-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 1:17",
+          "quote": "And I gave my heart to know wisdom, and to know madness and folly: I perceived that this also is vexation of spirit.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לָדַ֣עַת חָכְמָ֔ה וְדַ֥עַת הֹולֵלֹ֖ות וְשִׂכְל֑וּת",
+          "stated": {
+            "chapter": 1,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/1/",
+              "verse": 17
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "σοφίαν καὶ γνῶσιν, παραβολὰς καὶ ἐπιστήμην",
+          "stated": {
+            "chapter": 1,
+            "verse": "17"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC01.htm",
+              "verse": "17"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "σοφίαν καὶ παραφορὰν καὶ ἀφροσύνην",
+          "stated": {
+            "chapter": 2,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC02.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 1:17",
+          "quote": "to know wisdom, and to know madness and folly",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC01.htm",
+          "printedLabel": "17",
+          "quote": "wisdom, and knowledge, parables and understanding",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+          "printedLabel": "12",
+          "quote": "wisdom, and madness, and folly",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "To know madness and folly",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "parables and understanding",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC01.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "to know wisdom, and to know madness and folly",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "parables and understanding",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC01.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "madness and folly",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And I gave my heart to know wisdom, and to know madness and folly: I perceived that this also is vexation of spirit.",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "wisdom, and knowledge, parables and understanding",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC01.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "wisdom, and madness, and folly",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "wisdom",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC01.htm",
+              "printedLabel": "17"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "madness and folly",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "wisdom, and knowledge",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC01.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "parables and understanding",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC01.htm",
+              "printedLabel": "17"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "madness",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "folly",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "madness",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "folly",
+          "matches": [
+            "Ecclesiastes 1:17"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "wisdom, and madness, and folly",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "as-musical-instruments-or-a-butler-and-female-cupbearers-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 2:8",
+          "quote": "I gathered me also silver and gold, and the peculiar treasure of kings and of the provinces: I gat me men singers and women singers, and the delights of the sons of men, as musical instruments, and that of all sorts.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "שִׁדָּ֥ה וְשִׁדֹּֽות",
+          "stated": {
+            "chapter": 2,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/2/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οἰνοχόον καὶ οἰνοχόας",
+          "stated": {
+            "chapter": 2,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC02.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 2:8",
+          "quote": "as musical instruments, and that of all sorts",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+          "printedLabel": "8",
+          "quote": "a butler and female cupbearers",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "As musical instruments, and that of all sorts",
+          "matches": [
+            "Ecclesiastes 2:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a butler and female cupbearers",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "as musical instruments, and that of all sorts",
+          "matches": [
+            "Ecclesiastes 2:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a butler and female cupbearers",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I gathered me also silver and gold, and the peculiar treasure of kings and of the provinces: I gat me men singers and women singers, and the delights of the sons of men, as musical instruments, and that of all sorts.",
+          "matches": [
+            "Ecclesiastes 2:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "a butler and female cupbearers",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "musical instruments",
+          "matches": [
+            "Ecclesiastes 2:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a butler and female cupbearers",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "what-can-the-man-do-that-cometh-after-the-king-or-who-will-follow-after-counsel-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 2:12",
+          "quote": "And I turned myself to behold wisdom, and madness, and folly: for what can the man do that cometh after the king? even that which hath been already done.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּ֣י ׀ מֶ֣ה הָאָדָ֗ם שֶׁיָּבֹוא֙ אַחֲרֵ֣י הַמֶּ֔לֶךְ",
+          "stated": {
+            "chapter": 2,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/2/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τίς ἄνθρωπος ὅς ἐπελεύσεται ὀπίσω τῆς βουλῆς",
+          "stated": {
+            "chapter": 2,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC02.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 2:12",
+          "quote": "what can the man do that cometh after the king?",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+          "printedLabel": "12",
+          "quote": "who is the man who will follow after counsel",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "That cometh after the king",
+          "matches": [
+            "Ecclesiastes 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "after counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "what can the man do that cometh after the king?",
+          "matches": [
+            "Ecclesiastes 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "who will follow after counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the king",
+          "matches": [
+            "Ecclesiastes 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And I turned myself to behold wisdom, and madness, and folly: for what can the man do that cometh after the king? even that which hath been already done.",
+          "matches": [
+            "Ecclesiastes 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "who is the man who will follow after counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the king",
+          "matches": [
+            "Ecclesiastes 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "king",
+          "matches": [
+            "Ecclesiastes 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "what can the man do",
+          "matches": [
+            "Ecclesiastes 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "who is the man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "who-else-can-hasten-hereunto-more-than-i-or-who-shall-drink-without-him-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 2:25",
+          "quote": "For who can eat, or who else can hasten hereunto, more than I?",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּמִ֥י יָח֖וּשׁ ח֥וּץ מִמֶּֽנִּי",
+          "stated": {
+            "chapter": 2,
+            "verse": "25"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/2/",
+              "verse": 25
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τίς πίεται πάρεξ αὐτοῦ",
+          "stated": {
+            "chapter": 2,
+            "verse": "25"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC02.htm",
+              "verse": "25"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 2:25",
+          "quote": "who else can hasten hereunto, more than I?",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+          "printedLabel": "25",
+          "quote": "who shall drink, without him",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Who else can hasten hereunto, more than I?",
+          "matches": [
+            "Ecclesiastes 2:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "who shall drink, without him?",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "who can eat, or who else can hasten hereunto, more than I?",
+          "matches": [
+            "Ecclesiastes 2:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "without him",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "For who can eat, or who else can hasten hereunto, more than I?",
+          "matches": [
+            "Ecclesiastes 2:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "who shall drink, without him",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "hasten hereunto",
+          "matches": [
+            "Ecclesiastes 2:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "I",
+          "matches": [
+            "Ecclesiastes 2:25"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "him",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC02.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "that-god-might-manifest-them-or-god-will-judge-them-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 3:18",
+          "quote": "I said in mine heart concerning the estate of the sons of men, that God might manifest them, and that they might see that they themselves are beasts.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לְבָרָ֖ם הָאֱלֹהִ֑ים",
+          "stated": {
+            "chapter": 3,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/3/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "διακρινεῖ αὐτοὺς ὁ Θεὸς",
+          "stated": {
+            "chapter": 3,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC03.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 3:18",
+          "quote": "that God might manifest them",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC03.htm",
+          "printedLabel": "18",
+          "quote": "God will judge them",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "That God might manifest them",
+          "matches": [
+            "Ecclesiastes 3:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "God will judge them",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC03.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "that God might manifest them",
+          "matches": [
+            "Ecclesiastes 3:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "God will judge them",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC03.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I said in mine heart concerning the estate of the sons of men, that God might manifest them, and that they might see that they themselves are beasts.",
+          "matches": [
+            "Ecclesiastes 3:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "God will judge them",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC03.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "manifest",
+          "matches": [
+            "Ecclesiastes 3:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "will judge",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC03.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-boldness-of-his-face-shall-be-changed-or-a-man-of-shameless-countenance-will-be-hated-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 8:1",
+          "quote": "Who is as the wise man? and who knoweth the interpretation of a thing? a man's wisdom maketh his face to shine, and the boldness of his face shall be changed.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְעֹ֥ז פָּנָ֖יו יְשֻׁנֶּֽא",
+          "stated": {
+            "chapter": 8,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/8/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀναιδὴς προσώπῳ αὐτοῦ μισηθήσεται",
+          "stated": {
+            "chapter": 8,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC08.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Σοφία ἀνθρώπου φωτιεῖ πρόσωπον αὐτοῦ",
+          "stated": {
+            "chapter": 8,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC08.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 8:1",
+          "quote": "the boldness of his face shall be changed",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+          "printedLabel": "1",
+          "quote": "a man of shameless countenance will be hated",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The boldness of his face shall be changed",
+          "matches": [
+            "Ecclesiastes 8:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a man of shameless countenance will be hated",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the boldness of his face shall be changed",
+          "matches": [
+            "Ecclesiastes 8:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a man of shameless countenance will be hated",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Who is as the wise man? and who knoweth the interpretation of a thing? a man's wisdom maketh his face to shine, and the boldness of his face shall be changed.",
+          "matches": [
+            "Ecclesiastes 8:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "a man of shameless countenance will be hated",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "shall be changed",
+          "matches": [
+            "Ecclesiastes 8:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "will be hated",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Who is as the wise man? and who knoweth the interpretation of a thing?",
+          "matches": [
+            "Ecclesiastes 8:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "they-were-forgotten-in-the-city-or-they-were-praised-in-the-city-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 8:10",
+          "quote": "And so I saw the wicked buried, who had come and gone from the place of the holy, and they were forgotten in the city where they had so done: this is also vanity.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְיִֽשְׁתַּכְּח֥וּ בָעִ֖יר אֲשֶׁ֣ר כֵּן־עָשׂ֑וּ",
+          "stated": {
+            "chapter": 8,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/8/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐπῃνέθησαν ἐν τῇ πόλει, ὅτι οὕτως ἐποίησαν",
+          "stated": {
+            "chapter": 8,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC08.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 8:10",
+          "quote": "they were forgotten in the city where they had so done",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+          "printedLabel": "10",
+          "quote": "were praised in the city, because they had done thus",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They were forgotten in the city",
+          "matches": [
+            "Ecclesiastes 8:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "were praised in the city",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "were forgotten in the city where they had so done",
+          "matches": [
+            "Ecclesiastes 8:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "were praised in the city, because they had done thus",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "And so I saw the wicked buried, who had come and gone from the place of the holy, and they were forgotten in the city where they had so done: this is also vanity.",
+          "matches": [
+            "Ecclesiastes 8:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "were praised in the city, because they had done thus",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "were forgotten",
+          "matches": [
+            "Ecclesiastes 8:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "were praised",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "though-a-sinner-do-evil-an-hundred-times-or-he-that-has-sinned-has-done-evil-from-that-time-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 8:12",
+          "quote": "Though a sinner do evil an hundred times, and his days be prolonged, yet surely I know that it shall be well with them that fear God, which fear before him:",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אֲשֶׁ֣ר חֹטֶ֗א עֹשֶׂ֥ה רָ֛ע מְאַ֖ת",
+          "stated": {
+            "chapter": 8,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/8/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ὃς ἥμαρτεν ἐποίησε τὸ πονηρὸν ἀπὸ τότε",
+          "stated": {
+            "chapter": 8,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC08.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 8:12",
+          "quote": "Though a sinner do evil an hundred times",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+          "printedLabel": "12",
+          "quote": "He that has sinned has done evil from that time",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Though a sinner do evil an hundred times",
+          "matches": [
+            "Ecclesiastes 8:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "he that has sinned has done evil from that time",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Though a sinner do evil an hundred times",
+          "matches": [
+            "Ecclesiastes 8:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "he that has sinned has done evil from that time",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Though a sinner do evil an hundred times, and his days be prolonged, yet surely I know that it shall be well with them that fear God, which fear before him:",
+          "matches": [
+            "Ecclesiastes 8:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "He that has sinned has done evil from that time",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "an hundred times",
+          "matches": [
+            "Ecclesiastes 8:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "from that time",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC08.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "numberCheck": {
+        "url": "https://ebible.org/grcbrent/ECC08.htm",
+        "printedLabel": "12",
+        "text": "Ὃς ἥμαρτεν ἐποίησε τὸ πονηρὸν ἀπὸ τότε καὶ ἀπὸ μακρότητος αὐτῶν· ὅτι καὶ γινώσκω ἐγὼ, ὅτι ἐστὶν ἀγαθὸν τοῖς φοβουμένοις τὸν Θεὸν, ὅπως φοβῶνται ἀπὸ προσώπου αὐτοῦ·",
+        "verified": true,
+        "limit": "Supplied verse prints no hundred or numeral; no manuscript-wide claim"
+      }
+    },
+    {
+      "id": "so-doth-a-little-folly-him-that-is-in-reputation-or-a-little-wisdom-is-more-precious-than-great-glory-of-folly-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 10:1",
+          "quote": "Dead flies cause the ointment of the apothecary to send forth a stinking savour: so doth a little folly him that is in reputation for wisdom and honour.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יָקָ֛ר מֵחָכְמָ֥ה מִכָּבֹ֖וד סִכְל֥וּת מְעָֽט",
+          "stated": {
+            "chapter": 10,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/10/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τίμιον ὀλίγον σοφίας ὑπὲρ δόξαν ἀφροσύνης μεγάλην",
+          "stated": {
+            "chapter": 10,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC10.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 10:1",
+          "quote": "so doth a little folly him that is in reputation for wisdom and honour",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+          "printedLabel": "1",
+          "quote": "a little wisdom is more precious than great glory of folly",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "So doth a little folly him that is in reputation for wisdom and honour",
+          "matches": [
+            "Ecclesiastes 10:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a little wisdom is more precious than great glory of folly",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "so doth a little folly him that is in reputation for wisdom and honour",
+          "matches": [
+            "Ecclesiastes 10:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a little wisdom is more precious than great glory of folly",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Dead flies cause the ointment of the apothecary to send forth a stinking savour: so doth a little folly him that is in reputation for wisdom and honour.",
+          "matches": [
+            "Ecclesiastes 10:1"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "a little wisdom is more precious than great glory of folly",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "but-wisdom-is-profitable-to-direct-or-skill-is-of-no-advantage-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 10:10",
+          "quote": "If the iron be blunt, and he do not whet the edge, then must he put to more strength: but wisdom is profitable to direct.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְיִתְרֹ֥ון הַכְשֵׁ֖יר חָכְמָֽה",
+          "stated": {
+            "chapter": 10,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/10/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ περίσσεια τῷ ἀνδρὶ οὐ σοφία",
+          "stated": {
+            "chapter": 10,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC10.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 10:10",
+          "quote": "but wisdom is profitable to direct",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+          "printedLabel": "10",
+          "quote": "in that case skill is of no advantage to a man",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "οὐ",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC10.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "But wisdom is profitable to direct",
+          "matches": [
+            "Ecclesiastes 10:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "skill is of no advantage to a man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "but wisdom is profitable to direct",
+          "matches": [
+            "Ecclesiastes 10:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "in that case skill is of no advantage to a man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "If the iron be blunt, and he do not whet the edge, then must he put to more strength: but wisdom is profitable to direct.",
+          "matches": [
+            "Ecclesiastes 10:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "in that case skill is of no advantage to a man",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "of no advantage",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the iron be blunt",
+          "matches": [
+            "Ecclesiastes 10:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the axe-head should fall off",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "and-a-babbler-is-no-better-or-there-is-no-advantage-to-the-charmer-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 10:11",
+          "quote": "Surely the serpent will bite without enchantment; and a babbler is no better.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְאֵ֣ין יִתְרֹ֔ון לְבַ֖עַל הַלָּשֹֽׁון",
+          "stated": {
+            "chapter": 10,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/10/",
+              "verse": 11
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ οὐκ ἔστι περίσσεια τῷ ἐπᾴδοντι",
+          "stated": {
+            "chapter": 10,
+            "verse": "11"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC10.htm",
+              "verse": "11"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 10:11",
+          "quote": "and a babbler is no better",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+          "printedLabel": "11",
+          "quote": "then there is no advantage to the charmer",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "And a babbler is no better",
+          "matches": [
+            "Ecclesiastes 10:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "no advantage to the charmer",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Surely the serpent will bite without enchantment; and a babbler is no better",
+          "matches": [
+            "Ecclesiastes 10:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the charmer",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "a babbler",
+          "matches": [
+            "Ecclesiastes 10:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Surely the serpent will bite without enchantment; and a babbler is no better.",
+          "matches": [
+            "Ecclesiastes 10:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "then there is no advantage to the charmer",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a babbler",
+          "matches": [
+            "Ecclesiastes 10:11"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the charmer",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC10.htm",
+              "printedLabel": "11"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-grasshopper-shall-be-a-burden-and-desire-shall-fail-or-the-locust-shall-increase-and-the-caper-shall-be-scattered-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Ecclesiastes 12:5",
+          "quote": "Also when they shall be afraid of that which is high, and fears shall be in the way, and the almond tree shall flourish, and the grasshopper shall be a burden, and desire shall fail: because man goeth to his long home, and the mourners go about the streets:",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְיִסְתַּבֵּ֣ל הֶֽחָגָ֔ב וְתָפֵ֖ר הָֽאֲבִיֹּונָ֑ה",
+          "stated": {
+            "chapter": 12,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/21/12/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ παχυνθῇ ἡ ἀκρὶς, καὶ διασκεδασθῇ ἡ κάππαρις",
+          "stated": {
+            "chapter": 12,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ECC12.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Ecclesiastes 12:5",
+          "quote": "and desire shall fail",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ECC12.htm",
+          "printedLabel": "5",
+          "quote": "and the locust shall increase, and the caper shall be scattered",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "And desire shall fail",
+          "matches": [
+            "Ecclesiastes 12:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "and the caper shall be scattered",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC12.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the grasshopper shall be a burden, and desire shall fail",
+          "matches": [
+            "Ecclesiastes 12:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the caper",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC12.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "desire",
+          "matches": [
+            "Ecclesiastes 12:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Also when they shall be afraid of that which is high, and fears shall be in the way, and the almond tree shall flourish, and the grasshopper shall be a burden, and desire shall fail: because man goeth to his long home, and the mourners go about the streets:",
+          "matches": [
+            "Ecclesiastes 12:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and the locust shall increase, and the caper shall be scattered",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC12.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "desire",
+          "matches": [
+            "Ecclesiastes 12:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "fail",
+          "matches": [
+            "Ecclesiastes 12:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "shall be scattered",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC12.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "shall be a burden",
+          "matches": [
+            "Ecclesiastes 12:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "shall increase",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ECC12.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "thy-love-is-better-than-wine-or-thy-breasts-are-better-than-wine-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Song of Solomon 1:2",
+          "quote": "Let him kiss me with the kisses of his mouth: for thy love is better than wine.",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 4:10",
+          "quote": "How fair is thy love, my sister, my spouse! how much better is thy love than wine! and the smell of thine ointments than all spices!",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 7:12",
+          "quote": "Let us get up early to the vineyards; let us see if the vine flourish, whether the tender grape appear, and the pomegranates bud forth: there will I give thee my loves.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כִּֽי־טֹובִ֥ים דֹּדֶ֖יךָ מִיָּֽיִן",
+          "stated": {
+            "chapter": 1,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/1/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὅτι ἀγαθοὶ μαστοί σου ὑπὲρ οἶνον",
+          "stated": {
+            "chapter": 1,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG01.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "מַה־טֹּ֤בוּ דֹדַ֙יִךְ֙ מִיַּ֔יִן",
+          "stated": {
+            "chapter": 4,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/4/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "τί ἐκαλλιώθησαν μαστοί σου ἀπὸ οἴνου",
+          "stated": {
+            "chapter": 4,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG04.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "שָׁ֛ם אֶתֵּ֥ן אֶת־דֹּדַ֖י לָֽךְ",
+          "stated": {
+            "chapter": 7,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/7/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐκεῖ δώσω τοὺς μαστούς μου σοί",
+          "stated": {
+            "chapter": 7,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG07.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Song of Solomon 1:2",
+          "quote": "thy love is better than wine",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+          "printedLabel": "2",
+          "quote": "thy breasts are better than wine",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG04.htm",
+          "printedLabel": "10",
+          "quote": "how much more beautiful are thy breasts than wine",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+          "printedLabel": "13",
+          "quote": "there will I give thee my breasts",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thy love is better than wine",
+          "matches": [
+            "Song of Solomon 1:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "thy breasts are better than wine",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "thy love is better than wine",
+          "matches": [
+            "Song of Solomon 1:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "breasts",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+              "printedLabel": "2"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG04.htm",
+              "printedLabel": "10"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "love",
+          "matches": [
+            "Song of Solomon 1:2",
+            "Song of Solomon 4:10",
+            "Song of Solomon 7:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Let him kiss me with the kisses of his mouth: for thy love is better than wine.",
+          "matches": [
+            "Song of Solomon 1:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "thy breasts are better than wine",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "How fair is thy love, my sister, my spouse! how much better is thy love than wine! and the smell of thine ointments than all spices!",
+          "matches": [
+            "Song of Solomon 4:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "how much more beautiful are thy breasts than wine",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG04.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Let us get up early to the vineyards; let us see if the vine flourish, whether the tender grape appear, and the pomegranates bud forth: there will I give thee my loves.",
+          "matches": [
+            "Song of Solomon 7:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "there will I give thee my breasts",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "love",
+          "matches": [
+            "Song of Solomon 1:2",
+            "Song of Solomon 4:10",
+            "Song of Solomon 7:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "loves",
+          "matches": [
+            "Song of Solomon 7:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "breasts",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+              "printedLabel": "2"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG04.htm",
+              "printedLabel": "10"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my loves",
+          "matches": [
+            "Song of Solomon 7:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my breasts",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "thy-cheeks-are-comely-with-rows-of-jewels-or-thy-cheeks-are-beautiful-as-those-of-a-dove-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Song of Solomon 1:10",
+          "quote": "Thy cheeks are comely with rows of jewels, thy neck with chains of gold.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לְחָיַ֙יִךְ֙ בַּתֹּרִ֔ים צַוָּארֵ֖ךְ בַּחֲרוּזִֽים",
+          "stated": {
+            "chapter": 1,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/1/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "σιαγόνες σου ὡς τρυγόνος, τράχηλός σου ὡς ὁρμίσκοι",
+          "stated": {
+            "chapter": 1,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG01.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Song of Solomon 1:10",
+          "quote": "Thy cheeks are comely with rows of jewels",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+          "printedLabel": "10",
+          "quote": "thy cheeks beautiful as those of a dove, thy neck as chains",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thy cheeks are comely with rows of jewels",
+          "matches": [
+            "Song of Solomon 1:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "as those of a dove",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "thy cheeks are comely with rows of jewels, thy neck with chains of gold",
+          "matches": [
+            "Song of Solomon 1:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a dove",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "rows of jewels",
+          "matches": [
+            "Song of Solomon 1:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Thy cheeks are comely with rows of jewels, thy neck with chains of gold.",
+          "matches": [
+            "Song of Solomon 1:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "thy cheeks beautiful as those of a dove, thy neck as chains",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "rows of jewels",
+          "matches": [
+            "Song of Solomon 1:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "those of a dove",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "chains",
+          "matches": [
+            "Song of Solomon 1:10"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG01.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "by-the-roes-and-by-the-hinds-of-the-field-or-by-the-powers-and-by-the-virtues-of-the-field-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Song of Solomon 2:7",
+          "quote": "I charge you, O ye daughters of Jerusalem, by the roes, and by the hinds of the field, that ye stir not up, nor awake my love, till he please.",
+          "exact": true
+        },
+        {
+          "ref": "Song of Solomon 3:5",
+          "quote": "I charge you, O ye daughters of Jerusalem, by the roes, and by the hinds of the field, that ye stir not up, nor awake my love, till he please.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בִּצְבָאֹ֔ות אֹ֖ו בְּאַיְלֹ֣ות הַשָּׂדֶ֑ה",
+          "stated": {
+            "chapter": 2,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/2/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐν δυνάμεσι καὶ ἐν ἰσχύσεσι τοῦ ἀγροῦ",
+          "stated": {
+            "chapter": 2,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG02.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐν ταῖς δυνάμεσι, καὶ ἐν ταῖς ἰσχύσεσι τοῦ ἀγροῦ",
+          "stated": {
+            "chapter": 3,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG03.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Song of Solomon 2:7",
+          "quote": "by the roes, and by the hinds of the field",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+          "printedLabel": "7",
+          "quote": "by the powers and by the virtues of the field",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG03.htm",
+          "printedLabel": "5",
+          "quote": "by the powers and by the virtues of the field",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "By the roes, and by the hinds of the field",
+          "matches": [
+            "Song of Solomon 2:7",
+            "Song of Solomon 3:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "by the powers and by the virtues of the field",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "7"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "by the roes, and by the hinds of the field",
+          "matches": [
+            "Song of Solomon 2:7",
+            "Song of Solomon 3:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the powers",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "7"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the virtues",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "7"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I charge you, O ye daughters of Jerusalem, by the roes, and by the hinds of the field, that ye stir not up, nor awake my love, till he please.",
+          "matches": [
+            "Song of Solomon 2:7",
+            "Song of Solomon 3:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "by the powers and by the virtues of the field",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "7"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "I charge you, O ye daughters of Jerusalem, by the roes, and by the hinds of the field, that ye stir not up, nor awake my love, till he please.",
+          "matches": [
+            "Song of Solomon 2:7",
+            "Song of Solomon 3:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "by the powers and by the virtues of the field",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "7"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the roes",
+          "matches": [
+            "Song of Solomon 2:7",
+            "Song of Solomon 3:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the hinds",
+          "matches": [
+            "Song of Solomon 2:7",
+            "Song of Solomon 3:5"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the powers",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "7"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the virtues",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "7"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG03.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "the-time-of-the-singing-of-birds-is-come-or-the-time-of-pruning-has-arrived-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Song of Solomon 2:12",
+          "quote": "The flowers appear on the earth; the time of the singing of birds is come, and the voice of the turtle is heard in our land;",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עֵ֥ת הַזָּמִ֖יר הִגִּ֑יעַ",
+          "stated": {
+            "chapter": 2,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/2/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καιρὸς τῆς τομῆς ἔφθακε",
+          "stated": {
+            "chapter": 2,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG02.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Song of Solomon 2:12",
+          "quote": "the time of the singing of birds is come",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+          "printedLabel": "12",
+          "quote": "the time of pruning has arrived",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The time of the singing of birds is come",
+          "matches": [
+            "Song of Solomon 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the time of pruning has arrived",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the time of the singing of birds is come",
+          "matches": [
+            "Song of Solomon 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "pruning",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the singing of birds",
+          "matches": [
+            "Song of Solomon 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "The flowers appear on the earth; the time of the singing of birds is come, and the voice of the turtle is heard in our land;",
+          "matches": [
+            "Song of Solomon 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the time of pruning has arrived",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the singing of birds",
+          "matches": [
+            "Song of Solomon 2:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "pruning",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "turtle-dove",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG02.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "beautiful-as-tirzah-or-as-pleasure-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Song of Solomon 6:4",
+          "quote": "Thou art beautiful, O my love, as Tirzah, comely as Jerusalem, terrible as an army with banners.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "כְּתִרְצָ֔ה",
+          "stated": {
+            "chapter": 6,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/6/",
+              "verse": 4
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὡς εὐδοκία",
+          "stated": {
+            "chapter": 6,
+            "verse": "4"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG06.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Song of Solomon 6:4",
+          "quote": "as Tirzah",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+          "printedLabel": "4",
+          "quote": "as Pleasure",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "reasoning",
+          "quote": "εὐδοκία",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG06.htm",
+              "verse": "4"
+            }
+          ],
+          "printedLabelVerified": true,
+          "kind": "Verified repeated form"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "As Tirzah",
+          "matches": [
+            "Song of Solomon 6:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "as Pleasure",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Thou art beautiful, O my love, as Tirzah",
+          "matches": [
+            "Song of Solomon 6:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Pleasure",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Thou art beautiful, O my love, as Tirzah, comely as Jerusalem, terrible as an army with banners.",
+          "matches": [
+            "Song of Solomon 6:4"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "as Pleasure",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Pleasure",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "4"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "are-thy-temples-within-thy-locks-or-being-seen-without-thy-veil-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Song of Solomon 6:7",
+          "quote": "As a piece of a pomegranate are thy temples within thy locks.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "רַקָּתֵ֔ךְ מִבַּ֖עַד לְצַמָּתֵֽךְ",
+          "stated": {
+            "chapter": 6,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/6/",
+              "verse": 7
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "μῆλόν σου ἐκτὸς τῆς σιωπήσεώς σου",
+          "stated": {
+            "chapter": 6,
+            "verse": "7"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG06.htm",
+              "verse": "7"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Song of Solomon 6:7",
+          "quote": "thy temples within thy locks",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+          "printedLabel": "7",
+          "quote": "being seen without thy veil",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Thy temples within thy locks",
+          "matches": [
+            "Song of Solomon 6:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "being seen without thy veil",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "as a piece of a pomegranate are thy temples within thy locks",
+          "matches": [
+            "Song of Solomon 6:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "without thy veil",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "within thy locks",
+          "matches": [
+            "Song of Solomon 6:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "As a piece of a pomegranate are thy temples within thy locks.",
+          "matches": [
+            "Song of Solomon 6:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "being seen without thy veil",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy temples",
+          "matches": [
+            "Song of Solomon 6:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy cheek",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy locks",
+          "matches": [
+            "Song of Solomon 6:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "thy veil",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "within",
+          "matches": [
+            "Song of Solomon 6:7"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "without",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG06.htm",
+              "printedLabel": "7"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "return-return-o-shulamite-or-return-return-o-sunamite-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Song of Solomon 6:13",
+          "quote": "Return, return, O Shulamite; return, return, that we may look upon thee. What will ye see in the Shulamite? As it were the company of two armies.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "שׁ֤וּבִי שׁ֙וּבִי֙ הַשּׁ֣וּלַמִּ֔ית",
+          "stated": {
+            "chapter": 7,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/7/",
+              "verse": 1
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἐπίστρεφε ἐπίστρεφε ἡ Σουναμίτις",
+          "stated": {
+            "chapter": 7,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG07.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐν τῇ Σουναμίτιδι",
+          "stated": {
+            "chapter": 7,
+            "verse": "1"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG07.htm",
+              "verse": "1"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Song of Solomon 6:13",
+          "quote": "Return, return, O Shulamite",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+          "printedLabel": "1",
+          "quote": "Return, return, O Sunamite",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+          "printedLabel": "1",
+          "quote": "in the Sunamite",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Return, return, O Shulamite",
+          "matches": [
+            "Song of Solomon 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "O Sunamite",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "1"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the Shulamite",
+          "matches": [
+            "Song of Solomon 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Sunamite",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "1"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Return, return, O Shulamite; return, return, that we may look upon thee. What will ye see in the Shulamite? As it were the company of two armies.",
+          "matches": [
+            "Song of Solomon 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Return, return, O Sunamite",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "1"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "in the Sunamite",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "1"
+            },
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "1"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    },
+    {
+      "id": "causing-the-lips-of-those-that-are-asleep-to-speak-or-suiting-my-lips-and-teeth-greek",
+      "batch": "ecclesiastes-to-song-of-solomon",
+      "english": [
+        {
+          "ref": "Song of Solomon 7:9",
+          "quote": "And the roof of thy mouth like the best wine for my beloved, that goeth down sweetly, causing the lips of those that are asleep to speak.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "דֹּובֵ֖ב שִׂפְתֵ֥י יְשֵׁנִֽים",
+          "stated": {
+            "chapter": 7,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/22/7/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἱκανούμενος χείλεσί μου καὶ ὀδοῦσιν",
+          "stated": {
+            "chapter": 7,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/SNG07.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Song of Solomon 7:9",
+          "quote": "causing the lips of those that are asleep to speak",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+          "printedLabel": "10",
+          "quote": "suiting my lips and teeth",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Causing the lips of those that are asleep to speak",
+          "matches": [
+            "Song of Solomon 7:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "suiting my lips and teeth",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "causing the lips of those that are asleep to speak",
+          "matches": [
+            "Song of Solomon 7:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "suiting my lips and teeth",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "And the roof of thy mouth like the best wine for my beloved, that goeth down sweetly, causing the lips of those that are asleep to speak.",
+          "matches": [
+            "Song of Solomon 7:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "suiting my lips and teeth",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the lips of those that are asleep",
+          "matches": [
+            "Song of Solomon 7:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my lips and teeth",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/SNG07.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": []
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/21/1/",
+    "https://ebible.org/grcbrent/ECC01.htm",
+    "https://ebible.org/grcbrent/ECC02.htm",
+    "https://ebible.org/eng-Brenton/ECC01.htm",
+    "https://ebible.org/eng-Brenton/ECC02.htm",
+    "https://bolls.life/get-text/WLC/21/2/",
+    "https://bolls.life/get-text/WLC/21/3/",
+    "https://ebible.org/grcbrent/ECC03.htm",
+    "https://ebible.org/eng-Brenton/ECC03.htm",
+    "https://bolls.life/get-text/WLC/21/8/",
+    "https://ebible.org/grcbrent/ECC08.htm",
+    "https://ebible.org/eng-Brenton/ECC08.htm",
+    "https://bolls.life/get-text/WLC/21/10/",
+    "https://ebible.org/grcbrent/ECC10.htm",
+    "https://ebible.org/eng-Brenton/ECC10.htm",
+    "https://bolls.life/get-text/WLC/21/12/",
+    "https://ebible.org/grcbrent/ECC12.htm",
+    "https://ebible.org/eng-Brenton/ECC12.htm",
+    "https://bolls.life/get-text/WLC/22/1/",
+    "https://bolls.life/get-text/WLC/22/4/",
+    "https://bolls.life/get-text/WLC/22/7/",
+    "https://ebible.org/grcbrent/SNG01.htm",
+    "https://ebible.org/grcbrent/SNG04.htm",
+    "https://ebible.org/grcbrent/SNG07.htm",
+    "https://ebible.org/eng-Brenton/SNG01.htm",
+    "https://bolls.life/get-text/WLC/22/2/",
+    "https://ebible.org/grcbrent/SNG02.htm",
+    "https://ebible.org/grcbrent/SNG03.htm",
+    "https://ebible.org/eng-Brenton/SNG02.htm",
+    "https://ebible.org/eng-Brenton/SNG03.htm",
+    "https://bolls.life/get-text/WLC/22/6/",
+    "https://ebible.org/grcbrent/SNG06.htm",
+    "https://ebible.org/eng-Brenton/SNG06.htm",
+    "https://ebible.org/eng-Brenton/SNG07.htm",
+    "https://ebible.org/eng-Brenton/SNG04.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 718,
+  "studiesChecked": 6,
+  "studies": [
+    {
+      "id": "seen",
+      "title": "Can God be seen?",
+      "summary": "Exodus describes Moses speaking with God “face to face”; John says no one has seen God. The tension depends on whether “face to face” means literal sight.",
+      "refs": [
+        "Exodus 33:11",
+        "John 1:18",
+        "Exodus 33:20",
+        "Exodus 33:23",
+        "Exodus 24:9",
+        "Exodus 24:10",
+        "Exodus 24:11",
+        "Numbers 12:8",
+        "Deuteronomy 4:12",
+        "Deuteronomy 4:15",
+        "Deuteronomy 4:16",
+        "Deuteronomy 5:4",
+        "Deuteronomy 5:5",
+        "Deuteronomy 5:24",
+        "Deuteronomy 5:27"
+      ]
+    },
+    {
+      "id": "judas",
+      "title": "Judas and the field of blood",
+      "summary": "Matthew and Acts give different accounts of Judas's death and the field purchase.",
+      "refs": [
+        "Matthew 27:5",
+        "Acts 1:18",
+        "Matthew 27:3",
+        "Matthew 27:4",
+        "Matthew 27:6",
+        "Matthew 27:7",
+        "Matthew 27:8",
+        "Acts 1:19"
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Water or ground: the animals’ origin",
+      "summary": "Genesis 1 can sound like birds came from water, while Genesis 2 says ground. The apparent conflict depends on how Genesis 1:20 is translated.",
+      "refs": [
+        "Genesis 1:20",
+        "Genesis 2:19"
+      ]
+    },
+    {
+      "id": "plants",
+      "title": "Plants before people—or after?",
+      "summary": "Genesis 1 places vegetation before people; Genesis 2 describes no field plants before a cultivator. Whether this conflicts depends on which plants are meant.",
+      "refs": [
+        "Genesis 1:11",
+        "Genesis 2:5"
+      ]
+    },
+    {
+      "id": "soldiers",
+      "title": "David’s census: two different totals",
+      "summary": "The census totals differ: Israel is 800,000 versus 1.1 million; Judah is 500,000 versus 470,000. Different counting rules are proposed but not established here.",
+      "refs": [
+        "2 Samuel 24:9",
+        "1 Chronicles 21:5",
+        "1 Chronicles 21:6"
+      ]
+    },
+    {
+      "id": "birth",
+      "title": "Herod, Quirinius, and the birth chronology",
+      "summary": "Matthew places Jesus’s birth under Herod; Luke links it to Quirinius’s census. The historical chronology creates a tension if the same census is intended.",
+      "refs": [
+        "Matthew 2:1",
+        "Luke 2:2"
+      ]
+    }
+  ],
+  "suppliedWordSearchChecks": [
+    {
+      "term": "Solomon",
+      "book": "Ecclesiastes",
+      "found": [],
+      "limit": "Verification of supplied packaged word-search claim only; no new findings or prose chapter reading"
+    },
+    {
+      "term": "shepherd",
+      "book": "Ecclesiastes",
+      "found": [
+        "Ecclesiastes 12:11"
+      ],
+      "limit": "Verification of supplied packaged word-search claim only; no new findings or prose chapter reading"
+    }
+  ],
+  "draftHashes": {
+    "research/claude-drafts/ecclesiastes-to-song-of-solomon-records.json": "d5bd44490640c1b8815ec04ac9e3fdfff8e587f80e05e7e48e8e72b4012edf40",
+    "research/claude-drafts/ecclesiastes-to-song-of-solomon-notes.md": "102883ba25b9bf4c0e341ca84e7337ac330e8cc48f2eb8c90637426ed1f73ef2",
+    "research/claude-drafts/ecclesiastes-to-song-of-solomon-q-records.json": "b4df35577045dc9e26712fb30301aab0d70dbc5705036cc0b6a68ed29289ec02",
+    "research/claude-drafts/ecclesiastes-to-song-of-solomon-q-notes.md": "0f9a8373e27d8e4d48104ac6d011f719b347d8e2c156b2ef7a8f514fb61c8f6c"
+  }
+}
