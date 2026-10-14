@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 740,
+    "evidenceRecords": 795,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 545,
-    "annotatedVerses": 3096
+    "chaptersWithAnnotations": 577,
+    "annotatedVerses": 3152
   },
   "byBook": [
     {
@@ -147,8 +147,8 @@
     {
       "book": "Isaiah",
       "chapters": 66,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 11
+      "chaptersWithAnnotations": 35,
+      "annotatedVerses": 67
     },
     {
       "book": "Jeremiah",
@@ -12375,9 +12375,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-very-small-remnant-or-a-seed-greek"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12393,18 +12399,32 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "say-ye-to-the-righteous-or-let-us-bind-the-just-greek",
+        "women-rule-over-them-or-extortioners-rule-over-you-greek"
+      ],
+      "annotatedVerses": [
+        10,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-branch-of-the-lord-or-god-shall-shine-gloriously-in-counsel-greek"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12420,18 +12440,33 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hear-ye-indeed-but-understand-not-or-by-hearing-ye-shall-hear-greek",
+        "the-holy-seed-shall-be-the-substance-thereof-greek-has-no-holy-seed"
+      ],
+      "annotatedVerses": [
+        9,
+        10,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-virgin-shall-conceive-and-bear-a-son-which-child-does-isaiah-7-14-mean"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12447,18 +12482,30 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "wonderful-counsellor-the-mighty-god-or-messenger-of-great-counsel-greek"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "because-of-the-anointing-or-his-fear-from-thee-greek"
+      ],
+      "annotatedVerses": [
+        27
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12483,9 +12530,17 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "my-sanctified-ones-and-my-mighty-ones-or-giants-are-coming-greek",
+        "satyrs-shall-dance-there-or-devils-shall-dance-there-greek"
+      ],
+      "annotatedVerses": [
+        3,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12528,18 +12583,32 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "woe-to-the-land-shadowing-with-wings-beyond-the-rivers-of-ethiopia-which-land-is-meant"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-city-of-destruction-or-the-city-of-asedec-greek",
+        "blessed-be-egypt-my-people-and-assyria-the-work-of-my-hands-or-my-people-in-egypt-greek"
+      ],
+      "annotatedVerses": [
+        18,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12555,9 +12624,18 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-he-cried-a-lion-or-call-thou-urias-to-the-watch-tower-greek",
+        "watchman-what-of-the-night-who-calls-and-who-answers-in-isaiah-21-11-12"
+      ],
+      "annotatedVerses": [
+        8,
+        11
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12573,9 +12651,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "pass-ye-over-to-tarshish-or-depart-ye-to-carthage-greek"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12591,18 +12675,30 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 25,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-will-swallow-up-death-in-victory-or-death-having-prevailed-has-swallowed-men-up-greek"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 26,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "they-are-deceased-they-shall-not-rise-or-neither-shall-physicians-raise-them-up-greek"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12618,45 +12714,97 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 28,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "drunkards-of-ephraim-or-hirelings-of-ephraim-greek",
+        "tables-full-of-vomit-or-a-curse-shall-devour-this-counsel-greek",
+        "precept-upon-precept-or-affliction-on-affliction-greek",
+        "he-that-believeth-shall-not-make-haste-or-shall-not-be-ashamed-greek",
+        "the-bed-is-shorter-than-a-man-can-stretch-or-we-cannot-fight-greek",
+        "mount-perazim-or-a-mountain-of-ungodly-men-greek",
+        "bread-corn-is-bruised-or-i-will-not-be-wroth-for-ever-greek",
+        "i-lay-in-zion-a-stone-a-tried-stone-who-or-what-is-the-stone-of-isaiah-28-16"
+      ],
+      "annotatedVerses": [
+        1,
+        8,
+        10,
+        13,
+        16,
+        20,
+        21,
+        28
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 29,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-city-where-david-dwelt-or-which-david-besieged-greek"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 30,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-returning-and-rest-shall-ye-be-saved-or-turn-and-mourn-greek",
+        "thou-shalt-weep-no-more-or-jerusalem-has-wept-bitterly-greek",
+        "tophet-is-ordained-of-old-for-the-king-or-thou-shalt-be-required-before-thy-time-greek"
+      ],
+      "annotatedVerses": [
+        15,
+        19,
+        33
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 31,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "whose-fire-is-in-zion-or-blessed-is-he-that-has-a-seed-in-sion-greek"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 32,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-man-shall-be-as-an-hiding-place-or-a-man-shall-hide-his-words-greek",
+        "a-king-shall-reign-in-righteousness-which-king-does-isaiah-32-1-mean"
+      ],
+      "annotatedVerses": [
+        1,
+        2
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12672,9 +12820,17 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 34,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-unicorns-shall-come-down-or-the-mighty-ones-shall-fall-greek",
+        "wild-beasts-of-the-desert-meet-wild-beasts-of-the-island-or-devils-meet-satyrs-greek"
+      ],
+      "annotatedVerses": [
+        7,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12707,9 +12863,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 37,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-have-digged-and-drunk-water-or-i-have-made-a-bridge-greek"
+      ],
+      "annotatedVerses": [
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12734,27 +12896,49 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 40,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "goodliness-thereof-or-glory-of-man-isaiah-40-6-greek",
+        "who-hath-directed-the-spirit-of-the-lord-or-who-hath-known-the-mind-greek",
+        "power-to-the-faint-or-strength-to-the-hungry-isaiah-40-29-greek"
+      ],
+      "annotatedVerses": [
+        6,
+        13,
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 41,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "molten-images-wind-and-confusion-or-your-makers-isaiah-41-29-greek"
+      ],
+      "annotatedVerses": [
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 42,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "magnify-the-law-or-magnify-his-praise-isaiah-42-21-greek"
+      ],
+      "annotatedVerses": [
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12816,18 +13000,35 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 48,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "defer-mine-anger-or-shew-thee-my-wrath-isaiah-48-9-greek"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 49,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "land-of-sinim-or-land-of-the-persians-isaiah-49-12-greek",
+        "the-lawful-captive-or-a-man-taken-captive-unjustly-isaiah-49-24-greek",
+        "thou-art-my-servant-o-israel-and-bring-jacob-again-who-is-the-servant-of-isaiah-49-3-6"
+      ],
+      "annotatedVerses": [
+        3,
+        12,
+        24
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12861,18 +13062,35 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 53,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "borne-our-griefs-or-bears-our-sins-isaiah-53-4-greek",
+        "to-bruise-him-and-offering-for-sin-or-purge-him-from-his-stroke-isaiah-53-10-greek",
+        "who-hath-believed-our-report-whose-voice-says-we-in-isaiah-53-1"
+      ],
+      "annotatedVerses": [
+        1,
+        4,
+        10
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 54,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "not-by-me-or-by-me-isaiah-54-15-greek"
+      ],
+      "annotatedVerses": [
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12905,9 +13123,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 57,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "rest-in-their-beds-or-his-burial-shall-be-in-peace-isaiah-57-2-greek"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12923,9 +13147,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 59,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "turn-from-transgression-in-jacob-or-turn-away-ungodliness-from-jacob-isaiah-59-20-greek"
+      ],
+      "annotatedVerses": [
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12941,9 +13171,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 61,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "opening-of-the-prison-or-recovery-of-sight-to-the-blind-isaiah-61-1-greek"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12959,9 +13195,18 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 63,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-angel-of-his-presence-or-not-an-ambassador-nor-a-messenger-isaiah-63-9-greek",
+        "who-is-this-that-cometh-from-edom-with-dyed-garments-from-bozrah-isaiah-63-1"
+      ],
+      "annotatedVerses": [
+        1,
+        9
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {

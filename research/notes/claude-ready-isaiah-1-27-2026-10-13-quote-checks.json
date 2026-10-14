@@ -1,0 +1,3754 @@
+{
+  "batch": "isaiah-1-27",
+  "checked": "2026-10-14T02:27:06.466Z",
+  "checks": [
+    {
+      "id": "a-very-small-remnant-or-a-seed-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 1:9",
+          "quote": "Except the Lord of hosts had left unto us a very small remnant, we should have been as Sodom, and we should have been like unto Gomorrah.",
+          "exact": true
+        },
+        {
+          "ref": "Romans 9:29",
+          "quote": "had left us a seed",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "שָׂרִ֖יד כִּמְעָ֑ט",
+          "stated": {
+            "chapter": 1,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/1/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐγκατέλιπεν ἡμῖν σπέρμα",
+          "stated": {
+            "chapter": 1,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA01.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἡμῖν σπέρμα",
+          "stated": {
+            "chapter": 9,
+            "verse": "29"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/45/9/",
+              "verse": 29
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 1:9",
+          "quote": "a very small remnant",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Romans 9:29",
+          "quote": "had left us a seed",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA01.htm",
+          "printedLabel": "9",
+          "quote": "had not left us a seed",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "A very small remnant",
+          "matches": [
+            "Isaiah 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "a seed",
+          "matches": [
+            "Romans 9:29"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA01.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "had left unto us a very small remnant",
+          "matches": [
+            "Isaiah 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "a seed",
+          "matches": [
+            "Romans 9:29"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA01.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Except the Lord of hosts had left unto us a very small remnant, we should have been as Sodom, and we should have been like unto Gomorrah.",
+          "matches": [
+            "Isaiah 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "had not left us a seed",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA01.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "had left us a seed",
+          "matches": [
+            "Romans 9:29"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a very small remnant",
+          "matches": [
+            "Isaiah 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a seed",
+          "matches": [
+            "Romans 9:29"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA01.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "remnant",
+          "matches": [
+            "Isaiah 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "small",
+          "matches": [
+            "Isaiah 1:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "us",
+          "matches": [
+            "Isaiah 1:9",
+            "Romans 9:29"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA01.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "a seed",
+          "matches": [
+            "Romans 9:29"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA01.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [
+        {
+          "url": "https://bolls.life/get-text/TR/45/9/",
+          "printedLabel": "29",
+          "quote": "ἡμῖν σπέρμα",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        }
+      ],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 1:9",
+          "quote": "Except the Lord of hosts had left unto us a very small remnant, we should have been as Sodom, and we should have been like unto Gomorrah.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "say-ye-to-the-righteous-or-let-us-bind-the-just-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 3:10",
+          "quote": "Say ye to the righteous, that it shall be well with him: for they shall eat the fruit of their doings.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "אִמְר֥וּ צַדִּ֖יק כִּי־טֹ֑וב",
+          "stated": {
+            "chapter": 3,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/3/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "δήσωμεν τὸν δίκαιον, ὅτι δύσχρηστος ἡμῖν ἐστι",
+          "stated": {
+            "chapter": 3,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA03.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 3:10",
+          "quote": "Say ye to the righteous, that it shall be well with him",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+          "printedLabel": "10",
+          "quote": "Let us bind the just, for he is burdensome to us",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Say ye to the righteous, that it shall be well with him",
+          "matches": [
+            "Isaiah 3:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Let us bind the just",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Let us bind the just, for he is burdensome to us",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Say ye to the righteous, that it shall be well with him: for they shall eat the fruit of their doings.",
+          "matches": [
+            "Isaiah 3:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Let us bind the just, for he is burdensome to us",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "it shall be well with him",
+          "matches": [
+            "Isaiah 3:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "for he is burdensome to us",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "they shall eat the fruit of their doings",
+          "matches": [
+            "Isaiah 3:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 3:10",
+          "quote": "Say ye to the righteous, that it shall be well with him: for they shall eat the fruit of their doings.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "women-rule-over-them-or-extortioners-rule-over-you-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 3:12",
+          "quote": "As for my people, children are their oppressors, and women rule over them. O my people, they which lead thee cause thee to err, and destroy the way of thy paths.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְנָשִׁ֖ים מָ֣שְׁלוּ בֹ֑ו",
+          "stated": {
+            "chapter": 3,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/3/",
+              "verse": 12
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οἱ ἀπαιτοῦντες κυριεύουσιν ὑμῶν",
+          "stated": {
+            "chapter": 3,
+            "verse": "12"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA03.htm",
+              "verse": "12"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 3:12",
+          "quote": "and women rule over them",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+          "printedLabel": "12",
+          "quote": "extortioners rule over you",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "And women rule over them",
+          "matches": [
+            "Isaiah 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "extortioners rule over you",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "women rule over them",
+          "matches": [
+            "Isaiah 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "extortioners",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "As for my people, children are their oppressors, and women rule over them. O my people, they which lead thee cause thee to err, and destroy the way of thy paths.",
+          "matches": [
+            "Isaiah 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "extortioners rule over you",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "extortioners",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA03.htm",
+              "printedLabel": "12"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "women",
+          "matches": [
+            "Isaiah 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "women",
+          "matches": [
+            "Isaiah 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "children are their oppressors",
+          "matches": [
+            "Isaiah 3:12"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 3:12",
+          "quote": "As for my people, children are their oppressors, and women rule over them. O my people, they which lead thee cause thee to err, and destroy the way of thy paths.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "the-branch-of-the-lord-or-god-shall-shine-gloriously-in-counsel-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 4:2",
+          "quote": "In that day shall the branch of the Lord be beautiful and glorious, and the fruit of the earth shall be excellent and comely for them that are escaped of Israel.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "יִֽהְיֶה֙ צֶ֣מַח יְהוָ֔ה",
+          "stated": {
+            "chapter": 4,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/4/",
+              "verse": 2
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐπιλάμψει ὁ Θεὸς ἐν βουλῇ μετὰ δόξης",
+          "stated": {
+            "chapter": 4,
+            "verse": "2"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA04.htm",
+              "verse": "2"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 4:2",
+          "quote": "shall the branch of the Lord be beautiful and glorious",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA04.htm",
+          "printedLabel": "2",
+          "quote": "God shall shine gloriously in counsel",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The branch of the Lord",
+          "matches": [
+            "Isaiah 4:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "God shall shine gloriously in counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA04.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the branch of the Lord",
+          "matches": [
+            "Isaiah 4:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "God shall shine gloriously in counsel on the earth",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA04.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "In that day shall the branch of the Lord be beautiful and glorious, and the fruit of the earth shall be excellent and comely for them that are escaped of Israel.",
+          "matches": [
+            "Isaiah 4:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "God shall shine gloriously in counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA04.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the branch of the Lord",
+          "matches": [
+            "Isaiah 4:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "beautiful and glorious",
+          "matches": [
+            "Isaiah 4:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "shall shine gloriously in counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA04.htm",
+              "printedLabel": "2"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "branch",
+          "matches": [
+            "Isaiah 4:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "the fruit of the earth … for them that are escaped of Israel",
+          "matches": [
+            "Isaiah 4:2"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 4:2",
+          "quote": "In that day shall the branch of the Lord be beautiful and glorious, and the fruit of the earth shall be excellent and comely for them that are escaped of Israel.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "hear-ye-indeed-but-understand-not-or-by-hearing-ye-shall-hear-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 6:9",
+          "quote": "And he said, Go, and tell this people, Hear ye indeed, but understand not; and see ye indeed, but perceive not.",
+          "exact": true
+        },
+        {
+          "ref": "Isaiah 6:10",
+          "quote": "Make the heart of this people fat, and make their ears heavy, and shut their eyes; lest they see with their eyes, and hear with their ears, and understand with their heart, and convert, and be healed.",
+          "exact": true
+        },
+        {
+          "ref": "Acts 28:26",
+          "quote": "Hearing ye shall hear, and shall not understand",
+          "exact": true
+        },
+        {
+          "ref": "Acts 28:27",
+          "quote": "the heart of this people is waxed gross",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "שִׁמְע֤וּ שָׁמֹ֙ועַ֙ וְאַל־תָּבִ֔ינוּ",
+          "stated": {
+            "chapter": 6,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/6/",
+              "verse": 9
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀκοῇ ἀκούσετε, καὶ οὐ μὴ συνῆτε",
+          "stated": {
+            "chapter": 6,
+            "verse": "9"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA06.htm",
+              "verse": "9"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "הַשְׁמֵן֙ לֵב־הָעָ֣ם הַזֶּ֔ה",
+          "stated": {
+            "chapter": 6,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/6/",
+              "verse": 10
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου",
+          "stated": {
+            "chapter": 6,
+            "verse": "10"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA06.htm",
+              "verse": "10"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἀκοῇ ἀκούσετε καὶ οὐ μὴ συνῆτε",
+          "stated": {
+            "chapter": 28,
+            "verse": "26"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/28/",
+              "verse": 26
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου",
+          "stated": {
+            "chapter": 28,
+            "verse": "27"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/44/28/",
+              "verse": 27
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 6:9",
+          "quote": "Hear ye indeed, but understand not",
+          "exact": true
+        },
+        {
+          "label": "A",
+          "ref": "Isaiah 6:10",
+          "quote": "Make the heart of this people fat",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Acts 28:26",
+          "quote": "Hearing ye shall hear, and shall not understand",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "Acts 28:27",
+          "quote": "the heart of this people is waxed gross",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+          "printedLabel": "9",
+          "quote": "Ye shall hear indeed, but ye shall not understand",
+          "exact": true
+        },
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+          "printedLabel": "10",
+          "quote": "For the heart of this people has become gross",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Hear ye indeed, but understand not",
+          "matches": [
+            "Isaiah 6:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Ye shall hear indeed",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Hear ye indeed, but understand not",
+          "matches": [
+            "Isaiah 6:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Make the heart of this people fat",
+          "matches": [
+            "Isaiah 6:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Ye shall hear indeed, but ye shall not understand",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "the heart of this people has become gross",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "And he said, Go, and tell this people, Hear ye indeed, but understand not; and see ye indeed, but perceive not.",
+          "matches": [
+            "Isaiah 6:9"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Ye shall hear indeed, but ye shall not understand",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Make the heart of this people fat, and make their ears heavy, and shut their eyes; lest they see with their eyes, and hear with their ears, and understand with their heart, and convert, and be healed.",
+          "matches": [
+            "Isaiah 6:10"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "For the heart of this people has become gross",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Hearing ye shall hear, and shall not understand",
+          "matches": [
+            "Acts 28:26"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "the heart of this people is waxed gross",
+          "matches": [
+            "Acts 28:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Ye shall hear … ye shall not understand",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+              "printedLabel": "9"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the heart of this people has become gross",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+              "printedLabel": "10"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [
+        {
+          "url": "https://bolls.life/get-text/TR/44/28/",
+          "printedLabel": "26",
+          "quote": "ἀκοῇ ἀκούσετε καὶ οὐ μὴ συνῆτε",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        },
+        {
+          "url": "https://bolls.life/get-text/TR/44/28/",
+          "printedLabel": "27",
+          "quote": "ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        }
+      ],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 6:9",
+          "quote": "And he said, Go, and tell this people, Hear ye indeed, but understand not; and see ye indeed, but perceive not.",
+          "exact": true
+        },
+        {
+          "ref": "Isaiah 6:10",
+          "quote": "Make the heart of this people fat, and make their ears heavy, and shut their eyes; lest they see with their eyes, and hear with their ears, and understand with their heart, and convert, and be healed.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "the-holy-seed-shall-be-the-substance-thereof-greek-has-no-holy-seed",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 6:13",
+          "quote": "But yet in it shall be a tenth, and it shall return, and shall be eaten: as a teil tree, and as an oak, whose substance is in them, when they cast their leaves: so the holy seed shall be the substance thereof.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "זֶ֥רַע קֹ֖דֶשׁ מַצַּבְתָּֽהּ",
+          "stated": {
+            "chapter": 6,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/6/",
+              "verse": 13
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὡς βάλανος ὅταν ἐκπέσῃ ἐκ τῆς θήκης αὐτῆς",
+          "stated": {
+            "chapter": 6,
+            "verse": "13"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA06.htm",
+              "verse": "13"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 6:13",
+          "quote": "so the holy seed shall be the substance thereof",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+          "printedLabel": "13",
+          "quote": "as an acorn when it falls out of its husk",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [
+        {
+          "field": "scope",
+          "quote": "σπέρμα",
+          "matches": [],
+          "printedLabelVerified": true,
+          "kind": "Verified absent search token at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "ἅγιο",
+          "matches": [],
+          "printedLabelVerified": true,
+          "kind": "Verified absent search token at supplied printed label"
+        }
+      ],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "So the holy seed shall be the substance thereof",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "as an acorn when it falls out of its husk",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "so the holy seed shall be the substance thereof",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "holy seed",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "But yet in it shall be a tenth, and it shall return, and shall be eaten: as a teil tree, and as an oak, whose substance is in them, when they cast their leaves: so the holy seed shall be the substance thereof.",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "as an acorn when it falls out of its husk",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+              "printedLabel": "13"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the holy seed",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the substance",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "seed",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "holy",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the holy seed shall be the substance thereof",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "σπέρμα",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified absent search token at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "ἅγιο",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified absent search token at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "seed",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "holy",
+          "matches": [
+            "Isaiah 6:13"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 6:13",
+          "quote": "But yet in it shall be a tenth, and it shall return, and shall be eaten: as a teil tree, and as an oak, whose substance is in them, when they cast their leaves: so the holy seed shall be the substance thereof.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "wonderful-counsellor-the-mighty-god-or-messenger-of-great-counsel-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 9:6",
+          "quote": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיִּקְרָ֨א שְׁמֹ֜ו פֶּ֠לֶא יֹועֵץ֙ אֵ֣ל גִּבֹּ֔ור אֲבִיעַ֖ד שַׂר־שָׁלֹֽום",
+          "stated": {
+            "chapter": 9,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/9/",
+              "verse": 5
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καλεῖται τὸ ὄνομα αὐτοῦ, Μεγάλης βουλῆς ἄγγελος",
+          "stated": {
+            "chapter": 9,
+            "verse": "5"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA09.htm",
+              "verse": "5"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 9:6",
+          "quote": "his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA09.htm",
+          "printedLabel": "5",
+          "quote": "his name is called the Messenger of great counsel",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Messenger of great counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA09.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the Messenger of great counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA09.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "his name is called the Messenger of great counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA09.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "mighty",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Father",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Wonderful",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "The mighty God",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "The everlasting Father",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the Messenger of great counsel",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA09.htm",
+              "printedLabel": "5"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "mighty God",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "everlasting Father",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Prince of Peace",
+          "matches": [
+            "Isaiah 9:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 9:6",
+          "quote": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "because-of-the-anointing-or-his-fear-from-thee-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 10:27",
+          "quote": "And it shall come to pass in that day, that his burden shall be taken away from off thy shoulder, and his yoke from off thy neck, and the yoke shall be destroyed because of the anointing.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וְחֻבַּ֥ל עֹ֖ל מִפְּנֵי־שָֽׁמֶן",
+          "stated": {
+            "chapter": 10,
+            "verse": "27"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/10/",
+              "verse": 27
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ὁ φόβος αὐτοῦ ἀπό σου",
+          "stated": {
+            "chapter": 10,
+            "verse": "27"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA10.htm",
+              "verse": "27"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἔλαι",
+          "stated": {
+            "chapter": 10,
+            "verse": "27"
+          },
+          "classification": "Verified absent search token at supplied printed label",
+          "matches": [],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "χρῖσ",
+          "stated": {
+            "chapter": 10,
+            "verse": "27"
+          },
+          "classification": "Verified absent search token at supplied printed label",
+          "matches": [],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 10:27",
+          "quote": "the yoke shall be destroyed because of the anointing",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA10.htm",
+          "printedLabel": "27",
+          "quote": "his fear from thee",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Because of the anointing",
+          "matches": [
+            "Isaiah 10:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "his fear from thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA10.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "because of the anointing",
+          "matches": [
+            "Isaiah 10:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "and his fear from thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA10.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "from off your shoulders",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA10.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "anointing",
+          "matches": [
+            "Isaiah 10:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "And it shall come to pass in that day, that his burden shall be taken away from off thy shoulder, and his yoke from off thy neck, and the yoke shall be destroyed because of the anointing.",
+          "matches": [
+            "Isaiah 10:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "his fear from thee",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA10.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "anoint",
+          "matches": [
+            "Isaiah 10:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "oil",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified absent search token at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "ἔλαι",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified absent search token at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "χρῖσ",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified absent search token at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "because of the anointing",
+          "matches": [
+            "Isaiah 10:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "his fear",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA10.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "from off your shoulders",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA10.htm",
+              "printedLabel": "27"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "anointing",
+          "matches": [
+            "Isaiah 10:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "oil",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified absent search token at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "because of the anointing",
+          "matches": [
+            "Isaiah 10:27"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 10:27",
+          "quote": "And it shall come to pass in that day, that his burden shall be taken away from off thy shoulder, and his yoke from off thy neck, and the yoke shall be destroyed because of the anointing.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "my-sanctified-ones-and-my-mighty-ones-or-giants-are-coming-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 13:3",
+          "quote": "I have commanded my sanctified ones, I have also called my mighty ones for mine anger, even them that rejoice in my highness.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "לִמְקֻדָּשָׁ֑י גַּ֣ם קָרָ֤אתִי גִבֹּורַי֙",
+          "stated": {
+            "chapter": 13,
+            "verse": "3"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/13/",
+              "verse": 3
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "γίγαντες ἔρχονται πληρῶσαι τὸν θυμόν μου",
+          "stated": {
+            "chapter": 13,
+            "verse": "3"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA13.htm",
+              "verse": "3"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "ἁγι",
+          "stated": {
+            "chapter": 13,
+            "verse": "3"
+          },
+          "classification": "Verified absent search token at supplied printed label",
+          "matches": [],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 13:3",
+          "quote": "I have commanded my sanctified ones, I have also called my mighty ones for mine anger",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+          "printedLabel": "3",
+          "quote": "giants are coming to fulfil my wrath",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "My sanctified ones … my mighty ones",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "giants are coming",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "my sanctified ones",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "my mighty ones",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "giants are coming to fulfil my wrath",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "sanctified",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "I have commanded my sanctified ones, I have also called my mighty ones for mine anger, even them that rejoice in my highness.",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "giants are coming to fulfil my wrath",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "sanctif",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "holy",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified absent search token at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "ἁγι",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified absent search token at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my sanctified ones",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my mighty ones",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "giants",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "sanctified",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "sanctified ones",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "giants",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "3"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "scope",
+          "quote": "mighty ones",
+          "matches": [
+            "Isaiah 13:3"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 13:3",
+          "quote": "I have commanded my sanctified ones, I have also called my mighty ones for mine anger, even them that rejoice in my highness.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "satyrs-shall-dance-there-or-devils-shall-dance-there-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 13:21",
+          "quote": "But wild beasts of the desert shall lie there; and their houses shall be full of doleful creatures; and owls shall dwell there, and satyrs shall dance there.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וּשְׂעִירִ֖ים יְרַקְּדוּ־שָֽׁם",
+          "stated": {
+            "chapter": 13,
+            "verse": "21"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/13/",
+              "verse": 21
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ δαιμόνια ἐκεῖ ὀρχήσονται",
+          "stated": {
+            "chapter": 13,
+            "verse": "21"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA13.htm",
+              "verse": "21"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 13:21",
+          "quote": "and satyrs shall dance there",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+          "printedLabel": "21",
+          "quote": "and devils shall dance there",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "And satyrs shall dance there",
+          "matches": [
+            "Isaiah 13:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "devils shall dance there",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "satyrs shall dance there",
+          "matches": [
+            "Isaiah 13:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "devils",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "But wild beasts of the desert shall lie there; and their houses shall be full of doleful creatures; and owls shall dwell there, and satyrs shall dance there.",
+          "matches": [
+            "Isaiah 13:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "and devils shall dance there",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "satyrs",
+          "matches": [
+            "Isaiah 13:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "devils",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "satyrs",
+          "matches": [
+            "Isaiah 13:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "devils",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+              "printedLabel": "21"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "satyrs",
+          "matches": [
+            "Isaiah 13:21"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 13:21",
+          "quote": "But wild beasts of the desert shall lie there; and their houses shall be full of doleful creatures; and owls shall dwell there, and satyrs shall dance there.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "the-city-of-destruction-or-the-city-of-asedec-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 19:18",
+          "quote": "In that day shall five cities in the land of Egypt speak the language of Canaan, and swear to the Lord of hosts; one shall be called, The city of destruction.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עִ֣יר הַהֶ֔רֶס יֵאָמֵ֖ר",
+          "stated": {
+            "chapter": 19,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/19/",
+              "verse": 18
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "πόλις ἀσεδὲκ κληθήσεται ἡ μία πόλις",
+          "stated": {
+            "chapter": 19,
+            "verse": "18"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA19.htm",
+              "verse": "18"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 19:18",
+          "quote": "The city of destruction",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+          "printedLabel": "18",
+          "quote": "one city shall be called the city of Asedec",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "The city of destruction",
+          "matches": [
+            "Isaiah 19:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "the city of Asedec",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "shall be called, The city of destruction",
+          "matches": [
+            "Isaiah 19:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "the city of Asedec",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "In that day shall five cities in the land of Egypt speak the language of Canaan, and swear to the Lord of hosts; one shall be called, The city of destruction.",
+          "matches": [
+            "Isaiah 19:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "one city shall be called the city of Asedec",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "destruction",
+          "matches": [
+            "Isaiah 19:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Asedec",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "18"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "destruction",
+          "matches": [
+            "Isaiah 19:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "The city of destruction",
+          "matches": [
+            "Isaiah 19:18"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 19:18",
+          "quote": "In that day shall five cities in the land of Egypt speak the language of Canaan, and swear to the Lord of hosts; one shall be called, The city of destruction.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "blessed-be-egypt-my-people-and-assyria-the-work-of-my-hands-or-my-people-in-egypt-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 19:25",
+          "quote": "Whom the Lord of hosts shall bless, saying, Blessed be Egypt my people, and Assyria the work of my hands, and Israel mine inheritance.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בָּר֨וּךְ עַמִּ֜י מִצְרַ֗יִם וּמַעֲשֵׂ֤ה יָדַי֙ אַשּׁ֔וּר",
+          "stated": {
+            "chapter": 19,
+            "verse": "25"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/19/",
+              "verse": 25
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "εὐλογημένος ὁ λαός μου ὁ ἐν Αἰγύπτῳ, καὶ ὁ ἐν Ἀσσυρίοις",
+          "stated": {
+            "chapter": 19,
+            "verse": "25"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA19.htm",
+              "verse": "25"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 19:25",
+          "quote": "Blessed be Egypt my people, and Assyria the work of my hands",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+          "printedLabel": "25",
+          "quote": "Blessed be my people that is in Egypt, and that is among the Assyrians",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Blessed be Egypt my people, and Assyria the work of my hands",
+          "matches": [
+            "Isaiah 19:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "my people that is in Egypt, and that is among the Assyrians",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Egypt my people, and Assyria the work of my hands",
+          "matches": [
+            "Isaiah 19:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "my people that is in Egypt, and that is among the Assyrians",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Whom the Lord of hosts shall bless, saying, Blessed be Egypt my people, and Assyria the work of my hands, and Israel mine inheritance.",
+          "matches": [
+            "Isaiah 19:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Blessed be my people that is in Egypt, and that is among the Assyrians",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my people",
+          "matches": [
+            "Isaiah 19:25"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the work of my hands",
+          "matches": [
+            "Isaiah 19:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "my people",
+          "matches": [
+            "Isaiah 19:25"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "the work of my hands",
+          "matches": [
+            "Isaiah 19:25"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "and Israel mine inheritance",
+          "matches": [
+            "Isaiah 19:25"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA19.htm",
+              "printedLabel": "25"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 19:25",
+          "quote": "Whom the Lord of hosts shall bless, saying, Blessed be Egypt my people, and Assyria the work of my hands, and Israel mine inheritance.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "and-he-cried-a-lion-or-call-thou-urias-to-the-watch-tower-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 21:8",
+          "quote": "And he cried, A lion: My lord, I stand continually upon the watchtower in the daytime, and I am set in my ward whole nights:",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "וַיִּקְרָ֖א אַרְיֵ֑ה",
+          "stated": {
+            "chapter": 21,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/21/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "καὶ κάλεσον Οὐρίαν εἰς τὴν σκοπιάν",
+          "stated": {
+            "chapter": 21,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA21.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 21:8",
+          "quote": "And he cried, A lion",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA21.htm",
+          "printedLabel": "8",
+          "quote": "call thou Urias to the watch-tower",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "And he cried, A lion",
+          "matches": [
+            "Isaiah 21:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "call thou Urias to the watch-tower",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA21.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "A lion",
+          "matches": [
+            "Isaiah 21:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "call thou Urias to the watch-tower",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA21.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "And he cried, A lion: My lord, I stand continually upon the watchtower in the daytime, and I am set in my ward whole nights:",
+          "matches": [
+            "Isaiah 21:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "call thou Urias to the watch-tower",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA21.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "A lion",
+          "matches": [
+            "Isaiah 21:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "lion",
+          "matches": [
+            "Isaiah 21:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "A lion",
+          "matches": [
+            "Isaiah 21:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 21:8",
+          "quote": "And he cried, A lion: My lord, I stand continually upon the watchtower in the daytime, and I am set in my ward whole nights:",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "pass-ye-over-to-tarshish-or-depart-ye-to-carthage-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 23:6",
+          "quote": "Pass ye over to Tarshish; howl, ye inhabitants of the isle.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "עִבְר֖וּ תַּרְשִׁ֑ישָׁה",
+          "stated": {
+            "chapter": 23,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/23/",
+              "verse": 6
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Ἀπέλθατε εἰς Καρχηδόνα",
+          "stated": {
+            "chapter": 23,
+            "verse": "6"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA23.htm",
+              "verse": "6"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 23:6",
+          "quote": "Pass ye over to Tarshish",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA23.htm",
+          "printedLabel": "6",
+          "quote": "Depart ye to Carthage",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "Pass ye over to Tarshish",
+          "matches": [
+            "Isaiah 23:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Depart ye to Carthage",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA23.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "Pass ye over to Tarshish",
+          "matches": [
+            "Isaiah 23:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Carthage",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA23.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Pass ye over to Tarshish; howl, ye inhabitants of the isle.",
+          "matches": [
+            "Isaiah 23:6"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Depart ye to Carthage",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA23.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Carthage",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA23.htm",
+              "printedLabel": "6"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "Tarshish",
+          "matches": [
+            "Isaiah 23:6",
+            "Isaiah 23:1",
+            "Isaiah 23:10",
+            "Isaiah 23:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "ships of Tarshish",
+          "matches": [
+            "Isaiah 23:1",
+            "Isaiah 23:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "ships of Carthage",
+          "matches": [],
+          "brenton": [],
+          "kind": "Verified Brenton English at supplied scope label 23:1"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 23:6",
+          "quote": "Pass ye over to Tarshish; howl, ye inhabitants of the isle.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "he-will-swallow-up-death-in-victory-or-death-having-prevailed-has-swallowed-men-up-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 25:8",
+          "quote": "He will swallow up death in victory; and the Lord God will wipe away tears from off all faces; and the rebuke of his people shall he take away from off all the earth: for the Lord hath spoken it.",
+          "exact": true
+        },
+        {
+          "ref": "1 Corinthians 15:54",
+          "quote": "Death is swallowed up in victory",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "בִּלַּ֤ע הַמָּ֙וֶת֙ לָנֶ֔צַח",
+          "stated": {
+            "chapter": 25,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/25/",
+              "verse": 8
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "Κατέπιεν ὁ θάνατος ἰσχύσας",
+          "stated": {
+            "chapter": 25,
+            "verse": "8"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA25.htm",
+              "verse": "8"
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "κατεπόθη ὁ θάνατος εἰς νῖκος",
+          "stated": {
+            "chapter": 15,
+            "verse": "54"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/TISCH/46/15/",
+              "verse": 54
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 25:8",
+          "quote": "He will swallow up death in victory",
+          "exact": true
+        },
+        {
+          "label": "B",
+          "ref": "1 Corinthians 15:54",
+          "quote": "Death is swallowed up in victory",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA25.htm",
+          "printedLabel": "8",
+          "quote": "Death has prevailed and swallowed men up",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "He will swallow up death in victory",
+          "matches": [
+            "Isaiah 25:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "Death has prevailed and swallowed men up",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA25.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "He will swallow up death in victory",
+          "matches": [
+            "Isaiah 25:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "Death has prevailed and swallowed men up",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA25.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "He will swallow up death in victory; and the Lord God will wipe away tears from off all faces; and the rebuke of his people shall he take away from off all the earth: for the Lord hath spoken it.",
+          "matches": [
+            "Isaiah 25:8"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "Death has prevailed and swallowed men up",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA25.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "Death is swallowed up in victory",
+          "matches": [
+            "1 Corinthians 15:54"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "he",
+          "matches": [
+            "Isaiah 25:8",
+            "1 Corinthians 15:54"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA25.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "death",
+          "matches": [
+            "Isaiah 25:8",
+            "1 Corinthians 15:54"
+          ],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA25.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "prevailed",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA25.htm",
+              "printedLabel": "8"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [
+        {
+          "url": "https://bolls.life/get-text/TR/46/15/",
+          "printedLabel": "54",
+          "quote": "κατεπόθη ὁ θάνατος εἰς νῖκος",
+          "exact": true,
+          "normalization": "Strip Strong metadata and normalize accents/case for stated TR word comparison"
+        }
+      ],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 25:8",
+          "quote": "He will swallow up death in victory; and the Lord God will wipe away tears from off all faces; and the rebuke of his people shall he take away from off all the earth: for the Lord hath spoken it.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "they-are-deceased-they-shall-not-rise-or-neither-shall-physicians-raise-them-up-greek",
+      "batch": "isaiah-1-27",
+      "english": [
+        {
+          "ref": "Isaiah 26:14",
+          "quote": "They are dead, they shall not live; they are deceased, they shall not rise: therefore hast thou visited and destroyed them, and made all their memory to perish.",
+          "exact": true
+        }
+      ],
+      "language": [
+        {
+          "quote": "רְפָאִ֖ים בַּל־יָקֻ֑מוּ",
+          "stated": {
+            "chapter": 26,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/23/26/",
+              "verse": 14
+            }
+          ],
+          "printedLabelVerified": true
+        },
+        {
+          "quote": "οὐδὲ ἰατροὶ οὐ μὴ ἀναστήσουσι",
+          "stated": {
+            "chapter": 26,
+            "verse": "14"
+          },
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA26.htm",
+              "verse": "14"
+            }
+          ],
+          "printedLabelVerified": true
+        }
+      ],
+      "sides": [
+        {
+          "label": "A",
+          "ref": "Isaiah 26:14",
+          "quote": "they are deceased, they shall not rise",
+          "exact": true
+        }
+      ],
+      "overlap": [],
+      "studies": [],
+      "duplicateID": false,
+      "brentonEnglish": [
+        {
+          "url": "https://ebible.org/eng-Brenton/ISA26.htm",
+          "printedLabel": "14",
+          "quote": "neither shall physicians by any means raise them up",
+          "exact": true
+        }
+      ],
+      "additionalLanguage": [],
+      "additionalEnglish": [
+        {
+          "field": "title",
+          "quote": "They are deceased, they shall not rise",
+          "matches": [
+            "Isaiah 26:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "title",
+          "quote": "neither shall physicians by any means raise them up",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA26.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "summary",
+          "quote": "they are deceased, they shall not rise",
+          "matches": [
+            "Isaiah 26:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "summary",
+          "quote": "physicians",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA26.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "text",
+          "quote": "They are dead, they shall not live; they are deceased, they shall not rise: therefore hast thou visited and destroyed them, and made all their memory to perish.",
+          "matches": [
+            "Isaiah 26:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "text",
+          "quote": "neither shall physicians by any means raise them up",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA26.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "they are deceased",
+          "matches": [
+            "Isaiah 26:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "reasoning",
+          "quote": "physicians",
+          "matches": [],
+          "brenton": [
+            {
+              "url": "https://ebible.org/eng-Brenton/ISA26.htm",
+              "printedLabel": "14"
+            }
+          ],
+          "kind": "Verified Brenton English at supplied printed label"
+        },
+        {
+          "field": "reasoning",
+          "quote": "deceased",
+          "matches": [
+            "Isaiah 26:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        },
+        {
+          "field": "scope",
+          "quote": "They are dead, they shall not live",
+          "matches": [
+            "Isaiah 26:14"
+          ],
+          "brenton": [],
+          "kind": "Verified KJV substring or ellipsized fragments"
+        }
+      ],
+      "overlapDecision": "No shared-reference overlap.",
+      "ntEditionChecks": [],
+      "continuationKJV": [
+        {
+          "ref": "Isaiah 26:14",
+          "quote": "They are dead, they shall not live; they are deceased, they shall not rise: therefore hast thou visited and destroyed them, and made all their memory to perish.",
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "sourcePages": [
+    "https://bolls.life/get-text/WLC/23/1/",
+    "https://ebible.org/grcbrent/ISA01.htm",
+    "https://bolls.life/get-text/TISCH/45/9/",
+    "https://bolls.life/get-text/TR/45/9/",
+    "https://ebible.org/eng-Brenton/ISA01.htm",
+    "https://bolls.life/get-text/WLC/23/3/",
+    "https://ebible.org/grcbrent/ISA03.htm",
+    "https://ebible.org/eng-Brenton/ISA03.htm",
+    "https://bolls.life/get-text/WLC/23/4/",
+    "https://ebible.org/grcbrent/ISA04.htm",
+    "https://ebible.org/eng-Brenton/ISA04.htm",
+    "https://bolls.life/get-text/WLC/23/6/",
+    "https://ebible.org/grcbrent/ISA06.htm",
+    "https://bolls.life/get-text/TISCH/44/28/",
+    "https://bolls.life/get-text/TR/44/28/",
+    "https://ebible.org/eng-Brenton/ISA06.htm",
+    "https://bolls.life/get-text/WLC/23/9/",
+    "https://ebible.org/grcbrent/ISA09.htm",
+    "https://ebible.org/eng-Brenton/ISA09.htm",
+    "https://bolls.life/get-text/WLC/23/10/",
+    "https://ebible.org/grcbrent/ISA10.htm",
+    "https://ebible.org/eng-Brenton/ISA10.htm",
+    "https://bolls.life/get-text/WLC/23/13/",
+    "https://ebible.org/grcbrent/ISA13.htm",
+    "https://ebible.org/eng-Brenton/ISA13.htm",
+    "https://bolls.life/get-text/WLC/23/19/",
+    "https://ebible.org/grcbrent/ISA19.htm",
+    "https://ebible.org/eng-Brenton/ISA19.htm",
+    "https://bolls.life/get-text/WLC/23/21/",
+    "https://ebible.org/grcbrent/ISA21.htm",
+    "https://ebible.org/eng-Brenton/ISA21.htm",
+    "https://bolls.life/get-text/WLC/23/23/",
+    "https://ebible.org/grcbrent/ISA23.htm",
+    "https://ebible.org/eng-Brenton/ISA23.htm",
+    "https://bolls.life/get-text/WLC/23/25/",
+    "https://ebible.org/grcbrent/ISA25.htm",
+    "https://bolls.life/get-text/TISCH/46/15/",
+    "https://bolls.life/get-text/TR/46/15/",
+    "https://ebible.org/eng-Brenton/ISA25.htm",
+    "https://bolls.life/get-text/WLC/23/26/",
+    "https://ebible.org/grcbrent/ISA26.htm",
+    "https://ebible.org/eng-Brenton/ISA26.htm",
+    "https://bolls.life/get-text/WLC/23/28/",
+    "https://ebible.org/grcbrent/ISA28.htm",
+    "https://ebible.org/eng-Brenton/ISA28.htm",
+    "https://bolls.life/get-text/WLC/23/29/",
+    "https://ebible.org/grcbrent/ISA29.htm",
+    "https://ebible.org/eng-Brenton/ISA29.htm",
+    "https://bolls.life/get-text/WLC/23/30/",
+    "https://ebible.org/grcbrent/ISA30.htm",
+    "https://ebible.org/eng-Brenton/ISA30.htm",
+    "https://bolls.life/get-text/WLC/23/31/",
+    "https://ebible.org/grcbrent/ISA31.htm",
+    "https://ebible.org/eng-Brenton/ISA31.htm",
+    "https://bolls.life/get-text/WLC/23/32/",
+    "https://ebible.org/grcbrent/ISA32.htm",
+    "https://ebible.org/eng-Brenton/ISA32.htm",
+    "https://bolls.life/get-text/WLC/23/34/",
+    "https://ebible.org/grcbrent/ISA34.htm",
+    "https://ebible.org/eng-Brenton/ISA34.htm",
+    "https://bolls.life/get-text/WLC/23/37/",
+    "https://ebible.org/grcbrent/ISA37.htm",
+    "https://ebible.org/eng-Brenton/ISA37.htm",
+    "https://bolls.life/get-text/WLC/23/40/",
+    "https://ebible.org/grcbrent/ISA40.htm",
+    "https://ebible.org/eng-Brenton/ISA40.htm",
+    "https://bolls.life/get-text/WLC/23/41/",
+    "https://ebible.org/grcbrent/ISA41.htm",
+    "https://ebible.org/eng-Brenton/ISA41.htm",
+    "https://bolls.life/get-text/WLC/23/42/",
+    "https://ebible.org/grcbrent/ISA42.htm",
+    "https://ebible.org/eng-Brenton/ISA42.htm",
+    "https://bolls.life/get-text/WLC/23/48/",
+    "https://ebible.org/grcbrent/ISA48.htm",
+    "https://ebible.org/eng-Brenton/ISA48.htm",
+    "https://bolls.life/get-text/WLC/23/49/",
+    "https://ebible.org/grcbrent/ISA49.htm",
+    "https://ebible.org/eng-Brenton/ISA49.htm",
+    "https://bolls.life/get-text/WLC/23/53/",
+    "https://ebible.org/grcbrent/ISA53.htm",
+    "https://ebible.org/eng-Brenton/ISA53.htm",
+    "https://bolls.life/get-text/WLC/23/54/",
+    "https://ebible.org/grcbrent/ISA54.htm",
+    "https://ebible.org/eng-Brenton/ISA54.htm",
+    "https://bolls.life/get-text/WLC/23/57/",
+    "https://ebible.org/grcbrent/ISA57.htm",
+    "https://ebible.org/eng-Brenton/ISA57.htm",
+    "https://bolls.life/get-text/WLC/23/58/",
+    "https://ebible.org/grcbrent/ISA58.htm",
+    "https://ebible.org/eng-Brenton/ISA58.htm",
+    "https://bolls.life/get-text/WLC/23/59/",
+    "https://ebible.org/grcbrent/ISA59.htm",
+    "https://ebible.org/eng-Brenton/ISA59.htm",
+    "https://bolls.life/get-text/WLC/23/61/",
+    "https://ebible.org/grcbrent/ISA61.htm",
+    "https://ebible.org/eng-Brenton/ISA61.htm",
+    "https://bolls.life/get-text/WLC/23/63/",
+    "https://ebible.org/grcbrent/ISA63.htm",
+    "https://ebible.org/eng-Brenton/ISA63.htm"
+  ],
+  "sourcePageErrors": [],
+  "sidesValid": true,
+  "existingEvidencePreserved": 740,
+  "studiesChecked": 6,
+  "studies": [
+    {
+      "id": "seen",
+      "title": "Can God be seen?",
+      "summary": "Exodus describes Moses speaking with God “face to face”; John says no one has seen God. The tension depends on whether “face to face” means literal sight.",
+      "refs": [
+        "Exodus 33:11",
+        "John 1:18",
+        "Exodus 33:20",
+        "Exodus 33:23",
+        "Exodus 24:9",
+        "Exodus 24:10",
+        "Exodus 24:11",
+        "Numbers 12:8",
+        "Deuteronomy 4:12",
+        "Deuteronomy 4:15",
+        "Deuteronomy 4:16",
+        "Deuteronomy 5:4",
+        "Deuteronomy 5:5",
+        "Deuteronomy 5:24",
+        "Deuteronomy 5:27"
+      ]
+    },
+    {
+      "id": "judas",
+      "title": "Judas and the field of blood",
+      "summary": "Matthew and Acts give different accounts of Judas's death and the field purchase.",
+      "refs": [
+        "Matthew 27:5",
+        "Acts 1:18",
+        "Matthew 27:3",
+        "Matthew 27:4",
+        "Matthew 27:6",
+        "Matthew 27:7",
+        "Matthew 27:8",
+        "Acts 1:19"
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Water or ground: the animals’ origin",
+      "summary": "Genesis 1 can sound like birds came from water, while Genesis 2 says ground. The apparent conflict depends on how Genesis 1:20 is translated.",
+      "refs": [
+        "Genesis 1:20",
+        "Genesis 2:19"
+      ]
+    },
+    {
+      "id": "plants",
+      "title": "Plants before people—or after?",
+      "summary": "Genesis 1 places vegetation before people; Genesis 2 describes no field plants before a cultivator. Whether this conflicts depends on which plants are meant.",
+      "refs": [
+        "Genesis 1:11",
+        "Genesis 2:5"
+      ]
+    },
+    {
+      "id": "soldiers",
+      "title": "David’s census: two different totals",
+      "summary": "The census totals differ: Israel is 800,000 versus 1.1 million; Judah is 500,000 versus 470,000. Different counting rules are proposed but not established here.",
+      "refs": [
+        "2 Samuel 24:9",
+        "1 Chronicles 21:5",
+        "1 Chronicles 21:6"
+      ]
+    },
+    {
+      "id": "birth",
+      "title": "Herod, Quirinius, and the birth chronology",
+      "summary": "Matthew places Jesus’s birth under Herod; Luke links it to Quirinius’s census. The historical chronology creates a tension if the same census is intended.",
+      "refs": [
+        "Matthew 2:1",
+        "Luke 2:2"
+      ]
+    }
+  ],
+  "suppliedWordSearchChecks": [
+    {
+      "term": "virgin",
+      "chapters": [
+        1,
+        27
+      ],
+      "found": [
+        "7:14",
+        "23:4",
+        "23:12"
+      ],
+      "verified": true,
+      "search": "Case-insensitive substring; virgin includes virgins",
+      "limit": "Mechanical verification of supplied search assertion only"
+    },
+    {
+      "term": "Immanuel",
+      "chapters": [
+        1,
+        27
+      ],
+      "found": [
+        "7:14",
+        "8:8"
+      ],
+      "verified": true,
+      "search": "Case-insensitive substring; virgin includes virgins",
+      "limit": "Mechanical verification of supplied search assertion only"
+    },
+    {
+      "term": "shadowing with wings",
+      "chapters": [
+        1,
+        27
+      ],
+      "found": [
+        "18:1"
+      ],
+      "verified": true,
+      "search": "Case-insensitive substring; virgin includes virgins",
+      "limit": "Mechanical verification of supplied search assertion only"
+    },
+    {
+      "term": "Dumah",
+      "chapters": [
+        1,
+        27
+      ],
+      "found": [
+        "21:11"
+      ],
+      "verified": true,
+      "search": "Case-insensitive substring; virgin includes virgins",
+      "limit": "Mechanical verification of supplied search assertion only"
+    },
+    {
+      "term": "Seir",
+      "chapters": [
+        1,
+        27
+      ],
+      "found": [
+        "21:11"
+      ],
+      "verified": true,
+      "search": "Case-insensitive substring; virgin includes virgins",
+      "limit": "Mechanical verification of supplied search assertion only"
+    },
+    {
+      "term": "corner stone",
+      "chapters": [
+        28,
+        39
+      ],
+      "found": [
+        "28:16"
+      ],
+      "verified": true,
+      "search": "Case-insensitive substring; virgin includes virgins",
+      "limit": "Mechanical verification of supplied search assertion only"
+    },
+    {
+      "term": "tried stone",
+      "chapters": [
+        28,
+        39
+      ],
+      "found": [
+        "28:16"
+      ],
+      "verified": true,
+      "search": "Case-insensitive substring; virgin includes virgins",
+      "limit": "Mechanical verification of supplied search assertion only"
+    },
+    {
+      "term": "Tophet",
+      "chapters": [
+        28,
+        39
+      ],
+      "found": [
+        "30:33"
+      ],
+      "verified": true,
+      "search": "Case-insensitive substring; virgin includes virgins",
+      "limit": "Mechanical verification of supplied search assertion only"
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ISA06.htm",
+      "printedLabel": 13,
+      "term": "σπέρμα",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ISA06.htm",
+      "printedLabel": 13,
+      "term": "ἅγιο",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+      "printedLabel": 13,
+      "term": "seed",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ISA06.htm",
+      "printedLabel": 13,
+      "term": "holy",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ISA09.htm",
+      "printedLabel": 5,
+      "term": "mighty",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ISA09.htm",
+      "printedLabel": 5,
+      "term": "Father",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ISA09.htm",
+      "printedLabel": 5,
+      "term": "Wonderful",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ISA10.htm",
+      "printedLabel": 27,
+      "term": "anoint",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ISA10.htm",
+      "printedLabel": 27,
+      "term": "oil",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ISA10.htm",
+      "printedLabel": 27,
+      "term": "ἔλαι",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ISA10.htm",
+      "printedLabel": 27,
+      "term": "χρῖσ",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+      "printedLabel": 3,
+      "term": "sanctif",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ISA13.htm",
+      "printedLabel": 3,
+      "term": "holy",
+      "absent": true,
+      "verified": true
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ISA13.htm",
+      "printedLabel": 3,
+      "term": "ἁγι",
+      "absent": true,
+      "verified": true
+    }
+  ],
+  "draftHashes": {
+    "research/claude-drafts/isaiah-1-27-records.json": "466b51fb89c27f792970bace5e71a59d6649186e55fa0bc69bda3ea9450d849b",
+    "research/claude-drafts/isaiah-1-27-notes.md": "7b4a7e4e9fdb8010ac4cfa3438c8b61b9e2222002a706bbcd00d86482d889d31",
+    "research/claude-drafts/isaiah-1-27-q-records.json": "d346c9a8a4b91d96dd5ac5c0be5f75481bd83c342c2fde3568bff994fa2c4955",
+    "research/claude-drafts/isaiah-1-27-q-notes.md": "cd35c92cf34afd1c5432e85bb4f307a3df39f91e89bab3643fc8713eb560bccb",
+    "research/claude-drafts/isaiah-28-39-records.json": "fd9e88ada2c9160f7443919a9b5483f1a5c5ec98dbba26cd4f98783f2ed27d43",
+    "research/claude-drafts/isaiah-28-39-notes.md": "0c7b5cc36719fb55077f938a9787dc6e42c8164a4b1b4da034a9e719ebfa137c",
+    "research/claude-drafts/isaiah-28-39-q-records.json": "ea25b79f79ea70a71547e7561d72235ffd3fad0b497f07dc29724ceff0adfb5d",
+    "research/claude-drafts/isaiah-28-39-q-notes.md": "c3624b64092ae5a12da2a6679a274b3be715a3bc1c2a149cf9cace14032d5f2f",
+    "research/claude-drafts/isaiah-40-66-records.json": "f94edf5fab42bdb79372dfbf6a9b93760eee3c243f9b0d553a56b8e30df44e35",
+    "research/claude-drafts/isaiah-40-66-notes.md": "1e3ff2b132d6c0180d2192b67595e06d24d49090b697df958fe40caf8c3a939b",
+    "research/claude-drafts/isaiah-40-66-q-records.json": "6b4af0e7f37bccb39274b8d20d6fa506c1794d7b54dcafd36558ea1a8795b79d",
+    "research/claude-drafts/isaiah-40-66-q-notes.md": "8e196ba3b6db71c06231e1b16da1700a45f86e13c0c4467f7e4516f8c59b7e66"
+  }
+}

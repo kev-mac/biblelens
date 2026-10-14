@@ -59723,6 +59723,3062 @@ const EVIDENCE=[
         "quote": "the king hath brought me into his chambers"
       }
     ]
+  },
+  {
+    "id": "a-very-small-remnant-or-a-seed-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 1:9",
+    "appliesTo": [
+      "Isaiah 1:9"
+    ],
+    "title": "“A very small remnant” — the Greek has “a seed”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 1:9 says the Lord of hosts “had left unto us a very small remnant”. Brenton’s Greek prints a word that Brenton’s English renders “a seed”, and the Greek New Testament prints that word where it quotes the clause at Romans 9:29.",
+    "text": "KJV Isaiah 1:9: “Except the Lord of hosts had left unto us a very small remnant, we should have been as Sodom, and we should have been like unto Gomorrah.” Hebrew (WLC) 1:9: שָׂרִ֖יד כִּמְעָ֑ט. Brenton’s Greek 1:9: ἐγκατέλιπεν ἡμῖν σπέρμα. Brenton’s own English (https://ebible.org/eng-Brenton/ISA01.htm) prints: “had not left us a seed”. KJV Romans 9:29: “had left us a seed”. Greek New Testament Romans 9:29: ἡμῖν σπέρμα. Fetched from https://bolls.life/get-text/WLC/23/1/, https://ebible.org/grcbrent/ISA01.htm, https://bolls.life/get-text/TISCH/45/9/ and https://bolls.life/get-text/TR/45/9/.",
+    "reasoning": "The KJV’s Isaiah 1:9 words what was left as “a very small remnant”. The Greek words it as one word that Brenton’s English renders “a seed”, with nothing that the English renders “remnant” or “small”. The Greek New Testament wording at Romans 9:29 prints the same two words after “us”, and the KJV’s Romans 9:29 reads “a seed”. The KJV’s Isaiah 1:9 and its Romans 9:29 therefore word the same clause differently.",
+    "scope": "T applies at Isaiah 1:9. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say which text the writer of Romans followed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Isaiah 1: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA01.htm"
+      },
+      {
+        "label": "Romans 9: KJV",
+        "url": "https://ebible.org/eng-kjv/ROM09.htm"
+      },
+      {
+        "label": "Isaiah 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/1/"
+      },
+      {
+        "label": "Isaiah 1: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA01.htm"
+      },
+      {
+        "label": "Romans 9: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/45/9/"
+      },
+      {
+        "label": "Romans 9: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/45/9/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 1:9",
+        "book": 22,
+        "chapter": 1,
+        "verse": 9
+      },
+      {
+        "label": "Romans 9:29",
+        "book": 44,
+        "chapter": 9,
+        "verse": 29
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition; Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 1:9",
+        "quote": "a very small remnant"
+      },
+      {
+        "label": "B",
+        "ref": "Romans 9:29",
+        "quote": "had left us a seed"
+      }
+    ]
+  },
+  {
+    "id": "say-ye-to-the-righteous-or-let-us-bind-the-just-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 3:10",
+    "appliesTo": [
+      "Isaiah 3:10"
+    ],
+    "title": "“Say ye to the righteous, that it shall be well with him” — the Greek has “Let us bind the just”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 3:10 tells the hearers to say to the righteous that it shall be well with him. Brenton’s Greek prints words that Brenton’s English renders “Let us bind the just, for he is burdensome to us”.",
+    "text": "KJV Isaiah 3:10: “Say ye to the righteous, that it shall be well with him: for they shall eat the fruit of their doings.” Hebrew (WLC) 3:10: אִמְר֥וּ צַדִּ֖יק כִּי־טֹ֑וב. Brenton’s Greek 3:10: δήσωμεν τὸν δίκαιον, ὅτι δύσχρηστος ἡμῖν ἐστι. Brenton’s own English (https://ebible.org/eng-Brenton/ISA03.htm) prints: “Let us bind the just, for he is burdensome to us”. Fetched from https://bolls.life/get-text/WLC/23/3/ and https://ebible.org/grcbrent/ISA03.htm.",
+    "reasoning": "In the KJV the righteous man is the one spoken well of: “it shall be well with him”. In the Greek the speakers resolve to bind the just man, “for he is burdensome to us”. The KJV has no binding and no complaint against him; the Greek has no statement that it shall be well with him. The two texts give the righteous man opposite treatment in the same clause position.",
+    "scope": "T applies at Isaiah 3:10. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The second half of the verse (“they shall eat the fruit of their doings”) is not part of the comparison. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 3: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA03.htm"
+      },
+      {
+        "label": "Isaiah 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/3/"
+      },
+      {
+        "label": "Isaiah 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 3:10",
+        "book": 22,
+        "chapter": 3,
+        "verse": 10
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 3:10",
+        "quote": "Say ye to the righteous, that it shall be well with him"
+      }
+    ]
+  },
+  {
+    "id": "women-rule-over-them-or-extortioners-rule-over-you-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 3:12",
+    "appliesTo": [
+      "Isaiah 3:12"
+    ],
+    "title": "“And women rule over them” — the Greek has “extortioners rule over you”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 3:12 says “women rule over them”. Brenton’s Greek prints a word that Brenton’s English renders “extortioners” as the rulers.",
+    "text": "KJV Isaiah 3:12: “As for my people, children are their oppressors, and women rule over them. O my people, they which lead thee cause thee to err, and destroy the way of thy paths.” Hebrew (WLC) 3:12: וְנָשִׁ֖ים מָ֣שְׁלוּ בֹ֑ו. Brenton’s Greek 3:12: οἱ ἀπαιτοῦντες κυριεύουσιν ὑμῶν. Brenton’s own English (https://ebible.org/eng-Brenton/ISA03.htm) prints: “extortioners rule over you”. Fetched from https://bolls.life/get-text/WLC/23/3/ and https://ebible.org/grcbrent/ISA03.htm.",
+    "reasoning": "The KJV names women as those who rule. The Greek clause names a different group, a word Brenton’s English renders “extortioners”, as those who rule; no word of the Greek clause is rendered “women”. The Hebrew printed at that place has a word that the KJV renders “women”.",
+    "scope": "T applies at Isaiah 3:12. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The first clause of the verse (“children are their oppressors”) is not part of the comparison. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 3: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA03.htm"
+      },
+      {
+        "label": "Isaiah 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/3/"
+      },
+      {
+        "label": "Isaiah 3: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA03.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 3:12",
+        "book": 22,
+        "chapter": 3,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 3:12",
+        "quote": "and women rule over them"
+      }
+    ]
+  },
+  {
+    "id": "the-branch-of-the-lord-or-god-shall-shine-gloriously-in-counsel-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 4:2",
+    "appliesTo": [
+      "Isaiah 4:2"
+    ],
+    "title": "“The branch of the Lord” — the Greek has “God shall shine gloriously in counsel”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 4:2 says “the branch of the Lord” shall be beautiful and glorious. Brenton’s Greek prints a clause that Brenton’s English renders “God shall shine gloriously in counsel on the earth”.",
+    "text": "KJV Isaiah 4:2: “In that day shall the branch of the Lord be beautiful and glorious, and the fruit of the earth shall be excellent and comely for them that are escaped of Israel.” Hebrew (WLC) 4:2: יִֽהְיֶה֙ צֶ֣מַח יְהוָ֔ה. Brenton’s Greek 4:2: ἐπιλάμψει ὁ Θεὸς ἐν βουλῇ μετὰ δόξης. Brenton’s own English (https://ebible.org/eng-Brenton/ISA04.htm) prints: “God shall shine gloriously in counsel”. Fetched from https://bolls.life/get-text/WLC/23/4/ and https://ebible.org/grcbrent/ISA04.htm.",
+    "reasoning": "In the KJV the subject of the clause is “the branch of the Lord”, which is “beautiful and glorious”. In the Greek the subject is God, who “shall shine gloriously in counsel”; no word of the Greek clause is rendered “branch”. The two texts name different subjects for the day’s event.",
+    "scope": "T applies at Isaiah 4:2. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The rest of the verse (“the fruit of the earth … for them that are escaped of Israel”) is not part of the comparison. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 4: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA04.htm"
+      },
+      {
+        "label": "Isaiah 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/4/"
+      },
+      {
+        "label": "Isaiah 4: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA04.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 4:2",
+        "book": 22,
+        "chapter": 4,
+        "verse": 2
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 4:2",
+        "quote": "shall the branch of the Lord be beautiful and glorious"
+      }
+    ]
+  },
+  {
+    "id": "hear-ye-indeed-but-understand-not-or-by-hearing-ye-shall-hear-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 6:9",
+    "appliesTo": [
+      "Isaiah 6:9",
+      "Isaiah 6:10"
+    ],
+    "title": "“Hear ye indeed, but understand not” — the Greek has “Ye shall hear indeed”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 6:9–10 gives commands: “Hear ye indeed, but understand not” and “Make the heart of this people fat”. Brenton’s Greek prints statements: “Ye shall hear indeed, but ye shall not understand” and “the heart of this people has become gross”, as the Greek New Testament prints at Acts 28:26–27.",
+    "text": "KJV Isaiah 6:9: “And he said, Go, and tell this people, Hear ye indeed, but understand not; and see ye indeed, but perceive not.” Hebrew (WLC) 6:9: שִׁמְע֤וּ שָׁמֹ֙ועַ֙ וְאַל־תָּבִ֔ינוּ. Brenton’s Greek 6:9: ἀκοῇ ἀκούσετε, καὶ οὐ μὴ συνῆτε. Brenton’s own English (https://ebible.org/eng-Brenton/ISA06.htm) prints: “Ye shall hear indeed, but ye shall not understand”. KJV Isaiah 6:10: “Make the heart of this people fat, and make their ears heavy, and shut their eyes; lest they see with their eyes, and hear with their ears, and understand with their heart, and convert, and be healed.” Hebrew (WLC) 6:10: הַשְׁמֵן֙ לֵב־הָעָ֣ם הַזֶּ֔ה. Brenton’s Greek 6:10: Ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου. Brenton’s own English prints: “For the heart of this people has become gross”. KJV Acts 28:26: “Hearing ye shall hear, and shall not understand”. Greek New Testament Acts 28:26: ἀκοῇ ἀκούσετε καὶ οὐ μὴ συνῆτε. KJV Acts 28:27: “the heart of this people is waxed gross”. Greek New Testament Acts 28:27: ἐπαχύνθη γὰρ ἡ καρδία τοῦ λαοῦ τούτου. Fetched from https://bolls.life/get-text/WLC/23/6/, https://ebible.org/grcbrent/ISA06.htm, https://bolls.life/get-text/TISCH/44/28/ and https://bolls.life/get-text/TR/44/28/.",
+    "reasoning": "The KJV’s Isaiah 6:9 and 6:10 are commands: the hearers are told to hear and not understand, and the prophet is told to make the heart of the people fat. The Greek of both verses states what will happen and what has become: “Ye shall hear … ye shall not understand”, “the heart of this people has become gross”, with no command to make it so. The Greek New Testament prints at Acts 28:26–27 the same words as Brenton’s Greek of Isaiah for these clauses, and the KJV’s Acts 28:26–27 words them as statements. The KJV’s Isaiah and its Acts therefore word the same clauses differently.",
+    "scope": "T applies at Isaiah 6:9 and 6:10. The record does not say which text the writer of Acts followed, and does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. John 12:40 and Matthew 13:14–15 are not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Isaiah 6: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA06.htm"
+      },
+      {
+        "label": "Acts 28: KJV",
+        "url": "https://ebible.org/eng-kjv/ACT28.htm"
+      },
+      {
+        "label": "Isaiah 6: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/6/"
+      },
+      {
+        "label": "Isaiah 6: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA06.htm"
+      },
+      {
+        "label": "Acts 28: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/44/28/"
+      },
+      {
+        "label": "Acts 28: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/44/28/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 6:9",
+        "book": 22,
+        "chapter": 6,
+        "verse": 9
+      },
+      {
+        "label": "Isaiah 6:10",
+        "book": 22,
+        "chapter": 6,
+        "verse": 10
+      },
+      {
+        "label": "Acts 28:26",
+        "book": 43,
+        "chapter": 28,
+        "verse": 26
+      },
+      {
+        "label": "Acts 28:27",
+        "book": 43,
+        "chapter": 28,
+        "verse": 27
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition; Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 6:9",
+        "quote": "Hear ye indeed, but understand not"
+      },
+      {
+        "label": "A",
+        "ref": "Isaiah 6:10",
+        "quote": "Make the heart of this people fat"
+      },
+      {
+        "label": "B",
+        "ref": "Acts 28:26",
+        "quote": "Hearing ye shall hear, and shall not understand"
+      },
+      {
+        "label": "B",
+        "ref": "Acts 28:27",
+        "quote": "the heart of this people is waxed gross"
+      }
+    ]
+  },
+  {
+    "id": "the-holy-seed-shall-be-the-substance-thereof-greek-has-no-holy-seed",
+    "mode": "contradictions",
+    "ref": "Isaiah 6:13",
+    "appliesTo": [
+      "Isaiah 6:13"
+    ],
+    "title": "“So the holy seed shall be the substance thereof” — the Greek verse ends “as an acorn when it falls out of its husk”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 6:13 ends “so the holy seed shall be the substance thereof”. Brenton’s Greek verse ends with the tree and the acorn and prints no clause that Brenton’s English renders “holy seed”.",
+    "text": "KJV Isaiah 6:13: “But yet in it shall be a tenth, and it shall return, and shall be eaten: as a teil tree, and as an oak, whose substance is in them, when they cast their leaves: so the holy seed shall be the substance thereof.” Hebrew (WLC) 6:13: זֶ֥רַע קֹ֖דֶשׁ מַצַּבְתָּֽהּ. Brenton’s Greek 6:13: ὡς βάλανος ὅταν ἐκπέσῃ ἐκ τῆς θήκης αὐτῆς. Brenton’s own English (https://ebible.org/eng-Brenton/ISA06.htm) prints: “as an acorn when it falls out of its husk”. Fetched from https://bolls.life/get-text/WLC/23/6/ and https://ebible.org/grcbrent/ISA06.htm.",
+    "reasoning": "The KJV’s verse closes with a clause naming “the holy seed” as “the substance” of the tree. The Greek verse closes with the comparison to the terebinth and the acorn falling from its husk; neither the Greek of the verse nor Brenton’s English of it contains the word “seed” or the word “holy”. The Hebrew text printed at the same place has a clause of three words that the KJV renders “the holy seed shall be the substance thereof”.",
+    "scope": "T applies at Isaiah 6:13. A search of Brenton’s Greek and English of this verse for “σπέρμα”, “ἅγιο”, “seed” and “holy” finds nothing. The record does not say what the Hebrew words quoted mean and does not say which wording is original. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 6: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA06.htm"
+      },
+      {
+        "label": "Isaiah 6: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/6/"
+      },
+      {
+        "label": "Isaiah 6: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA06.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 6:13",
+        "book": 22,
+        "chapter": 6,
+        "verse": 13
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 6:13",
+        "quote": "so the holy seed shall be the substance thereof"
+      }
+    ]
+  },
+  {
+    "id": "wonderful-counsellor-the-mighty-god-or-messenger-of-great-counsel-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 9:6",
+    "appliesTo": [
+      "Isaiah 9:6"
+    ],
+    "title": "“Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace” — the Greek has “Messenger of great counsel”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 9:6 gives five names: “Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace”. Brenton’s Greek prints one name, which Brenton’s English renders “the Messenger of great counsel”.",
+    "text": "KJV Isaiah 9:6: “For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.” Hebrew (WLC) 9:5: וַיִּקְרָ֨א שְׁמֹ֜ו פֶּ֠לֶא יֹועֵץ֙ אֵ֣ל גִּבֹּ֔ור אֲבִיעַ֖ד שַׂר־שָׁלֹֽום. Brenton’s Greek 9:5: καλεῖται τὸ ὄνομα αὐτοῦ, Μεγάλης βουλῆς ἄγγελος. Brenton’s own English (https://ebible.org/eng-Brenton/ISA09.htm) prints: “his name is called the Messenger of great counsel”. A search of Brenton’s Greek and English of this verse for “mighty”, “Father” and “Wonderful” finds nothing. Fetched from https://bolls.life/get-text/WLC/23/9/ and https://ebible.org/grcbrent/ISA09.htm.",
+    "reasoning": "The KJV names five titles, among them “The mighty God” and “The everlasting Father”. The Greek verse prints a single title, which Brenton’s English renders “the Messenger of great counsel”, and continues with a statement about bringing peace on the princes. No word of the Greek verse is rendered “mighty God”, “everlasting Father” or “Prince of Peace” by Brenton’s English.",
+    "scope": "T applies at Isaiah 9:6. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The KJV’s verse 9:6 is verse 9:5 in the Hebrew edition and in Brenton’s Greek, which place KJV 9:1 at 8:23. Whether the Hebrew titles are to be understood as one name or several is not examined here. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 9: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA09.htm"
+      },
+      {
+        "label": "Isaiah 9: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/9/"
+      },
+      {
+        "label": "Isaiah 9: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA09.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 9:6",
+        "book": 22,
+        "chapter": 9,
+        "verse": 6
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 9:6",
+        "quote": "his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace"
+      }
+    ]
+  },
+  {
+    "id": "because-of-the-anointing-or-his-fear-from-thee-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 10:27",
+    "appliesTo": [
+      "Isaiah 10:27"
+    ],
+    "title": "“Because of the anointing” — the Greek has “his fear from thee”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 10:27 says the yoke shall be destroyed “because of the anointing”. Brenton’s Greek prints a clause, “and his fear from thee”, and ends with the yoke destroyed “from off your shoulders”, with no word that Brenton’s English renders “anointing”.",
+    "text": "KJV Isaiah 10:27: “And it shall come to pass in that day, that his burden shall be taken away from off thy shoulder, and his yoke from off thy neck, and the yoke shall be destroyed because of the anointing.” Hebrew (WLC) 10:27: וְחֻבַּ֥ל עֹ֖ל מִפְּנֵי־שָֽׁמֶן. Brenton’s Greek 10:27: ὁ φόβος αὐτοῦ ἀπό σου. Brenton’s own English (https://ebible.org/eng-Brenton/ISA10.htm) prints: “his fear from thee”. A search of Brenton’s Greek and English of this verse for “anoint”, “oil”, “ἔλαι” and “χρῖσ” finds nothing. Fetched from https://bolls.life/get-text/WLC/23/10/ and https://ebible.org/grcbrent/ISA10.htm.",
+    "reasoning": "The KJV gives a reason for the yoke’s destruction: “because of the anointing”. The Greek verse has a second item taken away, “his fear”, and says the yoke shall be destroyed “from off your shoulders”; it prints no word that Brenton’s English renders “anointing” or “oil”. The Hebrew printed at the end of the verse has a phrase that the KJV renders “because of the anointing”.",
+    "scope": "T applies at Isaiah 10:27. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say what the Hebrew word printed there means. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 10: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA10.htm"
+      },
+      {
+        "label": "Isaiah 10: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/10/"
+      },
+      {
+        "label": "Isaiah 10: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA10.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 10:27",
+        "book": 22,
+        "chapter": 10,
+        "verse": 27
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 10:27",
+        "quote": "the yoke shall be destroyed because of the anointing"
+      }
+    ]
+  },
+  {
+    "id": "my-sanctified-ones-and-my-mighty-ones-or-giants-are-coming-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 13:3",
+    "appliesTo": [
+      "Isaiah 13:3"
+    ],
+    "title": "“My sanctified ones … my mighty ones” — the Greek has “giants are coming”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 13:3 has the Lord command “my sanctified ones” and call “my mighty ones”. Brenton’s Greek prints a clause that Brenton’s English renders “giants are coming to fulfil my wrath”, with no word rendered “sanctified”.",
+    "text": "KJV Isaiah 13:3: “I have commanded my sanctified ones, I have also called my mighty ones for mine anger, even them that rejoice in my highness.” Hebrew (WLC) 13:3: לִמְקֻדָּשָׁ֑י גַּ֣ם קָרָ֤אתִי גִבֹּורַי֙. Brenton’s Greek 13:3: γίγαντες ἔρχονται πληρῶσαι τὸν θυμόν μου. Brenton’s own English (https://ebible.org/eng-Brenton/ISA13.htm) prints: “giants are coming to fulfil my wrath”. A search of Brenton’s Greek and English of this verse for “sanctif”, “holy” and “ἁγι” finds nothing. Fetched from https://bolls.life/get-text/WLC/23/13/ and https://ebible.org/grcbrent/ISA13.htm.",
+    "reasoning": "The KJV’s verse names two groups the Lord addresses, “my sanctified ones” and “my mighty ones”. The Greek verse names one group, a word that Brenton’s English renders “giants”, who come to fulfil his wrath; it prints no word rendered “sanctified”. The Hebrew printed at that place has a word that the KJV renders “sanctified ones”.",
+    "scope": "T applies at Isaiah 13:3. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Whether the Greek word for “giants” renders the Hebrew word for “mighty ones” in other verses is not examined here. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 13: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA13.htm"
+      },
+      {
+        "label": "Isaiah 13: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/13/"
+      },
+      {
+        "label": "Isaiah 13: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA13.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 13:3",
+        "book": 22,
+        "chapter": 13,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 13:3",
+        "quote": "I have commanded my sanctified ones, I have also called my mighty ones for mine anger"
+      }
+    ]
+  },
+  {
+    "id": "satyrs-shall-dance-there-or-devils-shall-dance-there-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 13:21",
+    "appliesTo": [
+      "Isaiah 13:21"
+    ],
+    "title": "“And satyrs shall dance there” — the Greek has “devils shall dance there”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 13:21 says “satyrs shall dance there”. Brenton’s Greek prints a word that Brenton’s English renders “devils” in the same place.",
+    "text": "KJV Isaiah 13:21: “But wild beasts of the desert shall lie there; and their houses shall be full of doleful creatures; and owls shall dwell there, and satyrs shall dance there.” Hebrew (WLC) 13:21: וּשְׂעִירִ֖ים יְרַקְּדוּ־שָֽׁם. Brenton’s Greek 13:21: καὶ δαιμόνια ἐκεῖ ὀρχήσονται. Brenton’s own English (https://ebible.org/eng-Brenton/ISA13.htm) prints: “and devils shall dance there”. Fetched from https://bolls.life/get-text/WLC/23/13/ and https://ebible.org/grcbrent/ISA13.htm.",
+    "reasoning": "The KJV names “satyrs” as those who dance in the ruins. The Greek names a word that Brenton’s English renders “devils”. The KJV’s “satyrs” and the Greek’s “devils” are different printed words; this comparison does not establish that they denote different beings in this context. The Hebrew printed at that place is a word that the KJV renders “satyrs”.",
+    "scope": "T applies at Isaiah 13:21. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. Isaiah 34:14 is not compared. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 13: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA13.htm"
+      },
+      {
+        "label": "Isaiah 13: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/13/"
+      },
+      {
+        "label": "Isaiah 13: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA13.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 13:21",
+        "book": 22,
+        "chapter": 13,
+        "verse": 21
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 13:21",
+        "quote": "and satyrs shall dance there"
+      }
+    ]
+  },
+  {
+    "id": "the-city-of-destruction-or-the-city-of-asedec-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 19:18",
+    "appliesTo": [
+      "Isaiah 19:18"
+    ],
+    "title": "“The city of destruction” — the Greek has “the city of Asedec”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 19:18 says one of five cities in Egypt “shall be called, The city of destruction”. Brenton’s Greek prints a name that Brenton’s English renders “the city of Asedec”.",
+    "text": "KJV Isaiah 19:18: “In that day shall five cities in the land of Egypt speak the language of Canaan, and swear to the Lord of hosts; one shall be called, The city of destruction.” Hebrew (WLC) 19:18: עִ֣יר הַהֶ֔רֶס יֵאָמֵ֖ר. Brenton’s Greek 19:18: πόλις ἀσεδὲκ κληθήσεται ἡ μία πόλις. Brenton’s own English (https://ebible.org/eng-Brenton/ISA19.htm) prints: “one city shall be called the city of Asedec”. Fetched from https://bolls.life/get-text/WLC/23/19/ and https://ebible.org/grcbrent/ISA19.htm.",
+    "reasoning": "The KJV gives the city a name that carries the word “destruction”. The Greek gives it a name that Brenton’s English prints as “Asedec” and that carries no word rendered “destruction”. The Hebrew printed at that place is a two-word phrase that the KJV renders “The city of destruction”.",
+    "scope": "T applies at Isaiah 19:18. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say how either name arose and does not say what the Hebrew word printed there means. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 19: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA19.htm"
+      },
+      {
+        "label": "Isaiah 19: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/19/"
+      },
+      {
+        "label": "Isaiah 19: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA19.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 19:18",
+        "book": 22,
+        "chapter": 19,
+        "verse": 18
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 19:18",
+        "quote": "The city of destruction"
+      }
+    ]
+  },
+  {
+    "id": "blessed-be-egypt-my-people-and-assyria-the-work-of-my-hands-or-my-people-in-egypt-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 19:25",
+    "appliesTo": [
+      "Isaiah 19:25"
+    ],
+    "title": "“Blessed be Egypt my people, and Assyria the work of my hands” — the Greek has “my people that is in Egypt, and that is among the Assyrians”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 19:25 blesses “Egypt my people, and Assyria the work of my hands”. Brenton’s Greek prints a blessing on “my people that is in Egypt, and that is among the Assyrians”.",
+    "text": "KJV Isaiah 19:25: “Whom the Lord of hosts shall bless, saying, Blessed be Egypt my people, and Assyria the work of my hands, and Israel mine inheritance.” Hebrew (WLC) 19:25: בָּר֨וּךְ עַמִּ֜י מִצְרַ֗יִם וּמַעֲשֵׂ֤ה יָדַי֙ אַשּׁ֔וּר. Brenton’s Greek 19:25: εὐλογημένος ὁ λαός μου ὁ ἐν Αἰγύπτῳ, καὶ ὁ ἐν Ἀσσυρίοις. Brenton’s own English (https://ebible.org/eng-Brenton/ISA19.htm) prints: “Blessed be my people that is in Egypt, and that is among the Assyrians”. Fetched from https://bolls.life/get-text/WLC/23/19/ and https://ebible.org/grcbrent/ISA19.htm.",
+    "reasoning": "In the KJV Egypt is “my people” and Assyria is “the work of my hands”: two nations named as the objects of the blessing. In the Greek the object is “my people”, described as those in Egypt and those among the Assyrians; no word of the Greek is rendered “the work of my hands”, and the nations are places where the people are, not the ones named as God’s people and his handiwork.",
+    "scope": "T applies at Isaiah 19:25. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The last clause (“and Israel mine inheritance”) has the same sense in both and is not part of the comparison. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 19: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA19.htm"
+      },
+      {
+        "label": "Isaiah 19: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/19/"
+      },
+      {
+        "label": "Isaiah 19: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA19.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 19:25",
+        "book": 22,
+        "chapter": 19,
+        "verse": 25
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 19:25",
+        "quote": "Blessed be Egypt my people, and Assyria the work of my hands"
+      }
+    ]
+  },
+  {
+    "id": "and-he-cried-a-lion-or-call-thou-urias-to-the-watch-tower-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 21:8",
+    "appliesTo": [
+      "Isaiah 21:8"
+    ],
+    "title": "“And he cried, A lion” — the Greek has “call thou Urias to the watch-tower”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 21:8 has the watchman cry “A lion”. Brenton’s Greek prints a command that Brenton’s English renders “call thou Urias to the watch-tower”, naming a man.",
+    "text": "KJV Isaiah 21:8: “And he cried, A lion: My lord, I stand continually upon the watchtower in the daytime, and I am set in my ward whole nights:” Hebrew (WLC) 21:8: וַיִּקְרָ֖א אַרְיֵ֑ה. Brenton’s Greek 21:8: καὶ κάλεσον Οὐρίαν εἰς τὴν σκοπιάν. Brenton’s own English (https://ebible.org/eng-Brenton/ISA21.htm) prints: “call thou Urias to the watch-tower”. Fetched from https://bolls.life/get-text/WLC/23/21/ and https://ebible.org/grcbrent/ISA21.htm.",
+    "reasoning": "The KJV’s first clause is a cry, “A lion”. The Greek’s first clause is an order to call a man by name, Urias, to the watch-tower; no word of it is rendered “lion”. The Hebrew printed at that place has a word that the KJV renders “A lion”.",
+    "scope": "T applies at Isaiah 21:8. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say who Urias is and does not say what the Hebrew word printed there means. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 21: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA21.htm"
+      },
+      {
+        "label": "Isaiah 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/21/"
+      },
+      {
+        "label": "Isaiah 21: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 21:8",
+        "book": 22,
+        "chapter": 21,
+        "verse": 8
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 21:8",
+        "quote": "And he cried, A lion"
+      }
+    ]
+  },
+  {
+    "id": "pass-ye-over-to-tarshish-or-depart-ye-to-carthage-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 23:6",
+    "appliesTo": [
+      "Isaiah 23:6"
+    ],
+    "title": "“Pass ye over to Tarshish” — the Greek has “Depart ye to Carthage”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 23:6 says “Pass ye over to Tarshish”. Brenton’s Greek prints a place name that Brenton’s English renders “Carthage”.",
+    "text": "KJV Isaiah 23:6: “Pass ye over to Tarshish; howl, ye inhabitants of the isle.” Hebrew (WLC) 23:6: עִבְר֖וּ תַּרְשִׁ֑ישָׁה. Brenton’s Greek 23:6: Ἀπέλθατε εἰς Καρχηδόνα. Brenton’s own English (https://ebible.org/eng-Brenton/ISA23.htm) prints: “Depart ye to Carthage”. Fetched from https://bolls.life/get-text/WLC/23/23/ and https://ebible.org/grcbrent/ISA23.htm.",
+    "reasoning": "The KJV names Tarshish as the place to which they are to pass. The Greek names a place that Brenton’s English renders “Carthage”. The Hebrew printed at that place is a word that the KJV renders “Tarshish”. The two texts print different place names; this comparison does not establish that they denote different places.",
+    "scope": "T applies at Isaiah 23:6. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The same difference occurs at 23:1 (“ships of Tarshish” against “ships of Carthage” in Brenton’s English), 23:10 and 23:14; the record is placed at 23:6 only. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 23: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA23.htm"
+      },
+      {
+        "label": "Isaiah 23: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/23/"
+      },
+      {
+        "label": "Isaiah 23: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA23.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 23:6",
+        "book": 22,
+        "chapter": 23,
+        "verse": 6
+      },
+      {
+        "label": "Isaiah 23:1",
+        "book": 22,
+        "chapter": 23,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 23:10",
+        "book": 22,
+        "chapter": 23,
+        "verse": 10
+      },
+      {
+        "label": "Isaiah 23:14",
+        "book": 22,
+        "chapter": 23,
+        "verse": 14
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 23:6",
+        "quote": "Pass ye over to Tarshish"
+      }
+    ]
+  },
+  {
+    "id": "he-will-swallow-up-death-in-victory-or-death-having-prevailed-has-swallowed-men-up-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 25:8",
+    "appliesTo": [
+      "Isaiah 25:8"
+    ],
+    "title": "“He will swallow up death in victory” — the Greek has “Death has prevailed and swallowed men up”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 25:8 says “He will swallow up death in victory”. Brenton’s Greek has death as the one that swallows: Brenton’s English renders it “Death has prevailed and swallowed men up”.",
+    "text": "KJV Isaiah 25:8: “He will swallow up death in victory; and the Lord God will wipe away tears from off all faces; and the rebuke of his people shall he take away from off all the earth: for the Lord hath spoken it.” Hebrew (WLC) 25:8: בִּלַּ֤ע הַמָּ֙וֶת֙ לָנֶ֔צַח. Brenton’s Greek 25:8: Κατέπιεν ὁ θάνατος ἰσχύσας. Brenton’s own English (https://ebible.org/eng-Brenton/ISA25.htm) prints: “Death has prevailed and swallowed men up”. KJV 1 Corinthians 15:54: “Death is swallowed up in victory”. Greek New Testament 1 Corinthians 15:54: κατεπόθη ὁ θάνατος εἰς νῖκος. Fetched from https://bolls.life/get-text/WLC/23/25/, https://ebible.org/grcbrent/ISA25.htm, https://bolls.life/get-text/TISCH/46/15/ and https://bolls.life/get-text/TR/46/15/.",
+    "reasoning": "In the KJV the one who swallows is “he”, the Lord, and death is what is swallowed up. In the Greek the subject of the verb is “death” itself, with a participle that Brenton’s English renders “prevailed”, and the object is not death. The Greek New Testament wording at 1 Corinthians 15:54 has death as what is swallowed up, in agreement with the object of the KJV’s Isaiah 25:8 clause, while Brenton’s Greek of Isaiah has death as the one swallowing.",
+    "scope": "T applies at Isaiah 25:8. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say which text the writer of 1 Corinthians followed and does not say what the Hebrew words quoted mean. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Isaiah 25: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA25.htm"
+      },
+      {
+        "label": "1 Corinthians 15: KJV",
+        "url": "https://ebible.org/eng-kjv/1CO15.htm"
+      },
+      {
+        "label": "Isaiah 25: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/25/"
+      },
+      {
+        "label": "Isaiah 25: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA25.htm"
+      },
+      {
+        "label": "1 Corinthians 15: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/46/15/"
+      },
+      {
+        "label": "1 Corinthians 15: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/46/15/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 25:8",
+        "book": 22,
+        "chapter": 25,
+        "verse": 8
+      },
+      {
+        "label": "1 Corinthians 15:54",
+        "book": 45,
+        "chapter": 15,
+        "verse": 54
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition; Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 25:8",
+        "quote": "He will swallow up death in victory"
+      },
+      {
+        "label": "B",
+        "ref": "1 Corinthians 15:54",
+        "quote": "Death is swallowed up in victory"
+      }
+    ]
+  },
+  {
+    "id": "they-are-deceased-they-shall-not-rise-or-neither-shall-physicians-raise-them-up-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 26:14",
+    "appliesTo": [
+      "Isaiah 26:14"
+    ],
+    "title": "“They are deceased, they shall not rise” — the Greek has “neither shall physicians by any means raise them up”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 26:14 says of the dead “they are deceased, they shall not rise”. Brenton’s Greek prints a word that Brenton’s English renders “physicians” as those who shall not raise them up.",
+    "text": "KJV Isaiah 26:14: “They are dead, they shall not live; they are deceased, they shall not rise: therefore hast thou visited and destroyed them, and made all their memory to perish.” Hebrew (WLC) 26:14: רְפָאִ֖ים בַּל־יָקֻ֑מוּ. Brenton’s Greek 26:14: οὐδὲ ἰατροὶ οὐ μὴ ἀναστήσουσι. Brenton’s own English (https://ebible.org/eng-Brenton/ISA26.htm) prints: “neither shall physicians by any means raise them up”. Fetched from https://bolls.life/get-text/WLC/23/26/ and https://ebible.org/grcbrent/ISA26.htm.",
+    "reasoning": "The KJV’s second clause describes the dead again with “they are deceased”, that they shall not rise. The Greek’s second clause names “physicians”, a different kind of person, as those who shall not raise them up. The Greek has no word rendered “deceased”, and it adds an agent, the physicians, that the KJV’s clause does not have.",
+    "scope": "T applies at Isaiah 26:14. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The first clause (“They are dead, they shall not live”) is not part of the comparison. The record does not say what the Hebrew word printed in the second clause means. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 26: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA26.htm"
+      },
+      {
+        "label": "Isaiah 26: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/26/"
+      },
+      {
+        "label": "Isaiah 26: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA26.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 26:14",
+        "book": 22,
+        "chapter": 26,
+        "verse": 14
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 26:14",
+        "quote": "they are deceased, they shall not rise"
+      }
+    ]
+  },
+  {
+    "id": "a-virgin-shall-conceive-and-bear-a-son-which-child-does-isaiah-7-14-mean",
+    "mode": "questions",
+    "ref": "Isaiah 7:14",
+    "appliesTo": [
+      "Isaiah 7:14"
+    ],
+    "title": "“A virgin shall conceive, and bear a son” — which child does Isaiah 7:14 mean?",
+    "status": "Context",
+    "summary": "Isaiah 7:14 gives Ahaz a sign: “a virgin shall conceive, and bear a son, and shall call his name Immanuel”. The verses quoted do not say who the woman is, when the child is born, or whether he is the child of 8:3–4.",
+    "text": "KJV Isaiah 7:10–14: “Moreover the Lord spake again unto Ahaz, saying,” “Ask thee a sign of the Lord thy God; ask it either in the depth, or in the height above.” “But Ahaz said, I will not ask, neither will I tempt the Lord.” “And he said, Hear ye now, O house of David; Is it a small thing for you to weary men, but will ye weary my God also?” “Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel.” KJV Isaiah 7:15–16: “Butter and honey shall he eat, that he may know to refuse the evil, and choose the good.” “For before the child shall know to refuse the evil, and choose the good, the land that thou abhorrest shall be forsaken of both her kings.” KJV Isaiah 8:3–4: “And I went unto the prophetess; and she conceived, and bare a son. Then said the Lord to me, Call his name Mahershalalhashbaz.” “For before the child shall have knowledge to cry, My father, and my mother, the riches of Damascus and the spoil of Samaria shall be taken away before the king of Assyria.” KJV Isaiah 8:8: “And he shall pass through Judah; he shall overflow and go over, he shall reach even to the neck; and the stretching out of his wings shall fill the breadth of thy land, O Immanuel.” KJV Isaiah 8:10: “Take counsel together, and it shall come to nought; speak the word, and it shall not stand: for God is with us.” KJV Isaiah 8:18: “Behold, I and the children whom the Lord hath given me are for signs and for wonders in Israel from the Lord of hosts, which dwelleth in mount Zion.” A search of the packaged KJV text of Isaiah 1–27 for “virgin” finds 7:14, 23:4 and 23:12 (23:4 and 23:12 are not about this sign); for “Immanuel” it finds 7:14 and 8:8.",
+    "reasoning": "The sign is given to “you”, the house of David (7:13–14); verse 16 says that before “the child” knows to refuse the evil “the land that thou abhorrest shall be forsaken of both her kings”. The verses name no mother and no father, and give no year. In chapter 8 the prophet goes to “the prophetess”, who conceives and bears a son named Mahershalalhashbaz, and verse 4 gives a similar timing (“before the child shall have knowledge to cry, My father, and my mother”); verse 8 addresses “O Immanuel”, and verse 18 says the prophet and “the children whom the Lord hath given me” are signs. Possible readings: a child born in the time of Ahaz to a woman of the court or of the prophet’s household, whom the text does not name; the child of 8:3–4 under another name; or a child still future from Ahaz’s time. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted; the word search covers the packaged KJV text of Isaiah 1–27 only and is a word search. The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, and does not examine how another book uses the verse.",
+    "sources": [
+      {
+        "label": "Isaiah 7: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA07.htm"
+      },
+      {
+        "label": "Isaiah 8: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA08.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 7:10",
+        "book": 22,
+        "chapter": 7,
+        "verse": 10
+      },
+      {
+        "label": "Isaiah 7:13",
+        "book": 22,
+        "chapter": 7,
+        "verse": 13
+      },
+      {
+        "label": "Isaiah 7:14",
+        "book": 22,
+        "chapter": 7,
+        "verse": 14
+      },
+      {
+        "label": "Isaiah 7:15",
+        "book": 22,
+        "chapter": 7,
+        "verse": 15
+      },
+      {
+        "label": "Isaiah 7:16",
+        "book": 22,
+        "chapter": 7,
+        "verse": 16
+      },
+      {
+        "label": "Isaiah 8:3",
+        "book": 22,
+        "chapter": 8,
+        "verse": 3
+      },
+      {
+        "label": "Isaiah 8:4",
+        "book": 22,
+        "chapter": 8,
+        "verse": 4
+      },
+      {
+        "label": "Isaiah 8:8",
+        "book": 22,
+        "chapter": 8,
+        "verse": 8
+      },
+      {
+        "label": "Isaiah 8:10",
+        "book": 22,
+        "chapter": 8,
+        "verse": 10
+      },
+      {
+        "label": "Isaiah 8:18",
+        "book": 22,
+        "chapter": 8,
+        "verse": 18
+      },
+      {
+        "label": "Isaiah 7:11",
+        "book": 22,
+        "chapter": 7,
+        "verse": 11
+      },
+      {
+        "label": "Isaiah 7:12",
+        "book": 22,
+        "chapter": 7,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 7:14",
+        "quote": "a virgin shall conceive, and bear a son, and shall call his name Immanuel"
+      }
+    ]
+  },
+  {
+    "id": "woe-to-the-land-shadowing-with-wings-beyond-the-rivers-of-ethiopia-which-land-is-meant",
+    "mode": "questions",
+    "ref": "Isaiah 18:1",
+    "appliesTo": [
+      "Isaiah 18:1"
+    ],
+    "title": "“The land shadowing with wings, which is beyond the rivers of Ethiopia” — which land is meant?",
+    "status": "Context",
+    "summary": "Isaiah 18:1 addresses “the land shadowing with wings, which is beyond the rivers of Ethiopia”. The verses quoted do not name the land that is addressed.",
+    "text": "KJV Isaiah 18:1–2: “Woe to the land shadowing with wings, which is beyond the rivers of Ethiopia:” “That sendeth ambassadors by the sea, even in vessels of bulrushes upon the waters, saying, Go, ye swift messengers, to a nation scattered and peeled, to a people terrible from their beginning hitherto; a nation meted out and trodden down, whose land the rivers have spoiled!” KJV Isaiah 18:7: “In that time shall the present be brought unto the Lord of hosts of a people scattered and peeled, and from a people terrible from their beginning hitherto; a nation meted out and trodden under foot, whose land the rivers have spoiled, to the place of the name of the Lord of hosts, the mount Zion.” KJV Isaiah 13:1: “The burden of Babylon”; 15:1: “The burden of Moab”; 17:1: “The burden of Damascus”; 19:1: “The burden of Egypt”; 23:1: “The burden of Tyre”. A search of the packaged KJV text of Isaiah 1–27 for “shadowing with wings” finds 18:1 only.",
+    "reasoning": "Other burdens in these chapters name their subject in the opening line: Babylon (13:1), Moab (15:1), Damascus (17:1), Egypt (19:1) and Tyre (23:1). Chapter 18 begins with a description and a position, “beyond the rivers of Ethiopia”, and not with a name. The people are sent ambassadors “by the sea” (18:2) and a present is brought “to the place of the name of the Lord of hosts, the mount Zion” (18:7). Possible readings: a land south of Egypt that the verse describes by the rivers of Ethiopia; Ethiopia itself; or a people that the verse describes by a position and a description and not by a name. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted; the word search covers the packaged KJV text of Isaiah 1–27 only and is a word search. The record does not say that any reading is the right one, and does not rest on the Hebrew or the Greek.",
+    "sources": [
+      {
+        "label": "Isaiah 18: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA18.htm"
+      },
+      {
+        "label": "Isaiah 13: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA13.htm"
+      },
+      {
+        "label": "Isaiah 15: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA15.htm"
+      },
+      {
+        "label": "Isaiah 17: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA17.htm"
+      },
+      {
+        "label": "Isaiah 19: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA19.htm"
+      },
+      {
+        "label": "Isaiah 23: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA23.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 13:1",
+        "book": 22,
+        "chapter": 13,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 15:1",
+        "book": 22,
+        "chapter": 15,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 17:1",
+        "book": 22,
+        "chapter": 17,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 18:1",
+        "book": 22,
+        "chapter": 18,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 18:2",
+        "book": 22,
+        "chapter": 18,
+        "verse": 2
+      },
+      {
+        "label": "Isaiah 18:7",
+        "book": 22,
+        "chapter": 18,
+        "verse": 7
+      },
+      {
+        "label": "Isaiah 19:1",
+        "book": 22,
+        "chapter": 19,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 23:1",
+        "book": 22,
+        "chapter": 23,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 18:1",
+        "quote": "the land shadowing with wings, which is beyond the rivers of Ethiopia"
+      }
+    ]
+  },
+  {
+    "id": "watchman-what-of-the-night-who-calls-and-who-answers-in-isaiah-21-11-12",
+    "mode": "questions",
+    "ref": "Isaiah 21:11",
+    "appliesTo": [
+      "Isaiah 21:11"
+    ],
+    "title": "“Watchman, what of the night?” — who calls, who answers, and what are the morning and the night?",
+    "status": "Context",
+    "summary": "Isaiah 21:11–12 has a voice call “out of Seir” to the watchman, and the watchman answers “The morning cometh, and also the night”. The verses quoted do not say who calls, what the morning and the night are, or what the invitation to “enquire” leads to.",
+    "text": "KJV Isaiah 21:6: “For thus hath the Lord said unto me, Go, set a watchman, let him declare what he seeth.” KJV Isaiah 21:11–12: “The burden of Dumah. He calleth to me out of Seir, Watchman, what of the night? Watchman, what of the night?” “The watchman said, The morning cometh, and also the night: if ye will enquire, enquire ye: return, come.” A search of the packaged KJV text of Isaiah 1–27 for “Dumah” finds 21:11 only, and for “Seir” 21:11 only.",
+    "reasoning": "The verse is headed “The burden of Dumah”, and the call comes “out of Seir”; 21:6 also tells the prophet to set a watchman, but these quotations do not establish that the two watchmen are the same. The verses do not say who “he” is who calls to the prophet, whether the question is asked for Dumah or for Seir, or what the morning and the night stand for: relief followed by trouble, a change of rule, or two events the verse leaves unnamed. The watchman’s reply also invites a further enquiry (“if ye will enquire, enquire ye: return, come”), which the verses do not carry on. Possible readings: a call from Edom to the prophet for news of the night’s end; a call to the watchman of the prophet’s own people from a land that is not his; or a call from Seir whose speaker the verses leave unnamed. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted; the word search covers the packaged KJV text of Isaiah 1–27 only and is a word search. The record does not say that any reading is the right one, and does not rest on the Hebrew or the Greek.",
+    "sources": [
+      {
+        "label": "Isaiah 21: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA21.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 21:6",
+        "book": 22,
+        "chapter": 21,
+        "verse": 6
+      },
+      {
+        "label": "Isaiah 21:11",
+        "book": 22,
+        "chapter": 21,
+        "verse": 11
+      },
+      {
+        "label": "Isaiah 21:12",
+        "book": 22,
+        "chapter": 21,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 21:11",
+        "quote": "Watchman, what of the night?"
+      }
+    ]
+  },
+  {
+    "id": "drunkards-of-ephraim-or-hirelings-of-ephraim-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 28:1",
+    "appliesTo": [
+      "Isaiah 28:1"
+    ],
+    "title": "“The drunkards of Ephraim” — the Greek has “the hirelings of Ephraim”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 28:1 names “the drunkards of Ephraim”, “overcome with wine”. Brenton’s Greek prints a word that Brenton’s English renders “hirelings”, and says they are drunken “without wine”.",
+    "text": "KJV Isaiah 28:1: “Woe to the crown of pride, to the drunkards of Ephraim, whose glorious beauty is a fading flower, which are on the head of the fat valleys of them that are overcome with wine!” Hebrew (WLC) 28:1: שִׁכֹּרֵ֣י אֶפְרַ֔יִם … הֲל֥וּמֵי יָֽיִן. Brenton’s Greek 28:1: οἱ μισθωτοὶ Ἐφραῒμ … ἄνευ οἴνου. Brenton’s own English (https://ebible.org/eng-Brenton/ISA28.htm) prints: “the hirelings of Ephraim” … “they that are drunken without wine”. Fetched from https://bolls.life/get-text/WLC/23/28/ and https://ebible.org/grcbrent/ISA28.htm.",
+    "reasoning": "The KJV’s Isaiah 28:1 gives the people of Ephraim a name drawn from drink and says they are overcome with wine. The Greek prints for the same place a word that Brenton’s English renders “hirelings”, and a phrase that Brenton’s English renders “drunken without wine”. The two texts therefore describe Ephraim’s people with different words, and the Greek has no wine in the people’s condition.",
+    "scope": "T applies at Isaiah 28:1. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 28: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA28.htm"
+      },
+      {
+        "label": "Isaiah 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/28/"
+      },
+      {
+        "label": "Isaiah 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 28:1",
+        "book": 22,
+        "chapter": 28,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 28:1",
+        "quote": "the drunkards of Ephraim"
+      }
+    ]
+  },
+  {
+    "id": "tables-full-of-vomit-or-a-curse-shall-devour-this-counsel-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 28:8",
+    "appliesTo": [
+      "Isaiah 28:8"
+    ],
+    "title": "“All tables are full of vomit and filthiness” — the Greek has “A curse shall devour this counsel”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 28:8 says “all tables are full of vomit and filthiness, so that there is no place clean”. Brenton’s Greek prints words that Brenton’s English renders “A curse shall devour this counsel, for this is their counsel for the sake of covetousness”.",
+    "text": "KJV Isaiah 28:8: “For all tables are full of vomit and filthiness, so that there is no place clean.” Hebrew (WLC) 28:8: כִּ֚י כָּל־שֻׁלְחָנֹ֔ות מָלְא֖וּ קִ֣יא צֹאָ֑ה בְּלִ֖י מָקֹֽום׃ ס. Brenton’s Greek 28:8: Ἀρὰ ἔδεται ταύτην τὴν βουλήν. Brenton’s own English (https://ebible.org/eng-Brenton/ISA28.htm) prints: “A curse shall devour this counsel”. Fetched from https://bolls.life/get-text/WLC/23/28/ and https://ebible.org/grcbrent/ISA28.htm.",
+    "reasoning": "The KJV’s verse describes tables covered with vomit and filth. The Greek prints a curse that devours a counsel, and gives covetousness as the counsel’s motive. Neither tables nor vomit are in the Greek page’s verse, and neither a curse nor a counsel is in the KJV’s verse.",
+    "scope": "T applies at Isaiah 28:8. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 28: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA28.htm"
+      },
+      {
+        "label": "Isaiah 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/28/"
+      },
+      {
+        "label": "Isaiah 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 28:8",
+        "book": 22,
+        "chapter": 28,
+        "verse": 8
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 28:8",
+        "quote": "all tables are full of vomit and filthiness, so that there is no place clean"
+      }
+    ]
+  },
+  {
+    "id": "precept-upon-precept-or-affliction-on-affliction-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 28:10",
+    "appliesTo": [
+      "Isaiah 28:10",
+      "Isaiah 28:13"
+    ],
+    "title": "“Precept upon precept; line upon line” — the Greek has “affliction on affliction, hope upon hope”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 28:10 and 28:13 twice repeats “precept upon precept” and “line upon line”. Brenton’s Greek prints, at both verses, words that Brenton’s English renders “affliction on affliction, hope upon hope”.",
+    "text": "KJV Isaiah 28:10: “For precept must be upon precept, precept upon precept; line upon line, line upon line; here a little, and there a little:” Hebrew (WLC) 28:10: צַ֤ו לָצָו֙ צַ֣ו לָצָ֔ו קַ֥ו לָקָ֖ו קַ֣ו לָקָ֑ו. Brenton’s Greek 28:10: Θλίψιν ἐπὶ θλίψιν προσδέχου, ἐλπίδα ἐπʼ ἐλπίδι. Brenton’s own English (https://ebible.org/eng-Brenton/ISA28.htm) prints: “Expect thou affliction on affliction, hope upon hope”. KJV Isaiah 28:13: “But the word of the Lord was unto them precept upon precept, precept upon precept; line upon line, line upon line; here a little, and there a little; that they might go, and fall backward, and be broken, and snared, and taken.” Hebrew (WLC) 28:13: צַ֣ו לָצָ֞ו צַ֤ו לָצָו֙ קַ֤ו לָקָו֙ קַ֣ו לָקָ֔ו. Brenton’s Greek 28:13: θλίψις ἐπὶ θλίψιν, ἐλπὶς ἐπʼ ἐλπίδι. Brenton’s own English (https://ebible.org/eng-Brenton/ISA28.htm) prints: “affliction on affliction, hope on hope”. Fetched from https://bolls.life/get-text/WLC/23/28/ and https://ebible.org/grcbrent/ISA28.htm.",
+    "reasoning": "In the KJV the repeated pairs are named “precept” and “line”. In the Greek the repeated pairs are named by words that Brenton’s English renders “affliction” and “hope”. The two sets of words are not the same words, at 28:10 and at 28:13.",
+    "scope": "T applies at Isaiah 28:10 and Isaiah 28:13. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew of both verses prints the same short repeated words; the record quotes them and does not gloss them. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 28: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA28.htm"
+      },
+      {
+        "label": "Isaiah 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/28/"
+      },
+      {
+        "label": "Isaiah 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 28:10",
+        "book": 22,
+        "chapter": 28,
+        "verse": 10
+      },
+      {
+        "label": "Isaiah 28:13",
+        "book": 22,
+        "chapter": 28,
+        "verse": 13
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 28:10",
+        "quote": "precept must be upon precept, precept upon precept; line upon line, line upon line"
+      }
+    ]
+  },
+  {
+    "id": "he-that-believeth-shall-not-make-haste-or-shall-not-be-ashamed-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 28:16",
+    "appliesTo": [
+      "Isaiah 28:16"
+    ],
+    "title": "“He that believeth shall not make haste” — the Greek has “shall by no means be ashamed”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 28:16 ends “he that believeth shall not make haste”. Brenton’s Greek prints words that Brenton’s English renders “he that believes on him shall by no means be ashamed”, and the KJV’s Romans 9:33 has “shall not be ashamed”.",
+    "text": "KJV Isaiah 28:16: “Therefore thus saith the Lord God, Behold, I lay in Zion for a foundation a stone, a tried stone, a precious corner stone, a sure foundation: he that believeth shall not make haste.” Hebrew (WLC) 28:16: הַֽמַּאֲמִ֖ין לֹ֥א יָחִֽישׁ. Brenton’s Greek 28:16: ὁ πιστεύων οὐ μὴ καταισχυνθῇ. Brenton’s own English (https://ebible.org/eng-Brenton/ISA28.htm) prints: “he that believes on him shall by no means be ashamed”. KJV Romans 9:33: “whosoever believeth on him shall not be ashamed”. Greek New Testament Romans 9:33: οὐ καταισχυνθήσεται. Fetched from https://bolls.life/get-text/WLC/23/28/, https://ebible.org/grcbrent/ISA28.htm, https://bolls.life/get-text/TISCH/45/9/ and https://bolls.life/get-text/TR/45/9/.",
+    "reasoning": "The KJV’s Isaiah 28:16 closes with “shall not make haste”. The Greek closes with a verb that Brenton’s English renders “be ashamed”, and Romans 9:33 prints a verb of the same root, which the KJV’s Romans 9:33 renders “be ashamed”. “Make haste” and “be ashamed” are different things to say of the one who believes.",
+    "scope": "T applies at Isaiah 28:16. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say which text the writer of Romans followed, and Romans 9:33 prints other words of its own that the verse in Isaiah does not. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "sources": [
+      {
+        "label": "Isaiah 28: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA28.htm"
+      },
+      {
+        "label": "Romans 9: KJV",
+        "url": "https://ebible.org/eng-kjv/ROM09.htm"
+      },
+      {
+        "label": "Isaiah 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/28/"
+      },
+      {
+        "label": "Isaiah 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA28.htm"
+      },
+      {
+        "label": "Romans 9: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+        "url": "https://bolls.life/get-text/TISCH/45/9/"
+      },
+      {
+        "label": "Romans 9: Greek New Testament, Textus Receptus (bolls.life)",
+        "url": "https://bolls.life/get-text/TR/45/9/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 28:16",
+        "book": 22,
+        "chapter": 28,
+        "verse": 16
+      },
+      {
+        "label": "Romans 9:33",
+        "book": 44,
+        "chapter": 9,
+        "verse": 33
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition; Greek New Testament · Tischendorf 8th edition (TISCH) and Textus Receptus (TR) as served by bolls.life",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 28:16",
+        "quote": "he that believeth shall not make haste"
+      },
+      {
+        "label": "B",
+        "ref": "Romans 9:33",
+        "quote": "whosoever believeth on him shall not be ashamed"
+      }
+    ]
+  },
+  {
+    "id": "the-bed-is-shorter-than-a-man-can-stretch-or-we-cannot-fight-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 28:20",
+    "appliesTo": [
+      "Isaiah 28:20"
+    ],
+    "title": "“The bed is shorter than that a man can stretch himself on it” — the Greek has “we cannot fight”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 28:20 says the bed is too short and the covering too narrow. Brenton’s Greek prints words that Brenton’s English renders “we cannot fight, but we are ourselves too weak for you to be gathered”.",
+    "text": "KJV Isaiah 28:20: “For the bed is shorter than that a man can stretch himself on it: and the covering narrower than that he can wrap himself in it.” Hebrew (WLC) 28:20: קָצַ֥ר הַמַּצָּ֖ע מֵֽהִשְׂתָּרֵ֑עַ וְהַמַּסֵּכָ֥ה צָ֖רָה כְּהִתְכַּנֵּֽס. Brenton’s Greek 28:20: Οὐ δυνάμεθα μάχεσθαι. Brenton’s own English (https://ebible.org/eng-Brenton/ISA28.htm) prints: “we cannot fight, but we are ourselves too weak for you to be gathered”. Fetched from https://bolls.life/get-text/WLC/23/28/ and https://ebible.org/grcbrent/ISA28.htm.",
+    "reasoning": "The KJV’s verse is about a bed and a covering that do not fit a man. The Greek’s verse has speakers who say they cannot fight and are too weak. The Greek has no bed and no covering, and the KJV has no fighting and no weakness.",
+    "scope": "T applies at Isaiah 28:20. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 28: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA28.htm"
+      },
+      {
+        "label": "Isaiah 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/28/"
+      },
+      {
+        "label": "Isaiah 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 28:20",
+        "book": 22,
+        "chapter": 28,
+        "verse": 20
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 28:20",
+        "quote": "the bed is shorter than that a man can stretch himself on it"
+      }
+    ]
+  },
+  {
+    "id": "mount-perazim-or-a-mountain-of-ungodly-men-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 28:21",
+    "appliesTo": [
+      "Isaiah 28:21"
+    ],
+    "title": "“As in mount Perazim” — the Greek has “as a mountain of ungodly men”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 28:21 says the Lord shall rise up “as in mount Perazim”. Brenton’s Greek prints words that Brenton’s English renders “as a mountain of ungodly men”, with no place-name.",
+    "text": "KJV Isaiah 28:21: “For the Lord shall rise up as in mount Perazim, he shall be wroth as in the valley of Gibeon, that he may do his work, his strange work; and bring to pass his act, his strange act.” Hebrew (WLC) 28:21: כְהַר־פְּרָצִים֙. Brenton’s Greek 28:21: Ὥσπερ ὄρος ἀσεβῶν ἀναστήσεται Κύριος. Brenton’s own English (https://ebible.org/eng-Brenton/ISA28.htm) prints: “The Lord shall rise up as a mountain of ungodly men”. Fetched from https://bolls.life/get-text/WLC/23/28/ and https://ebible.org/grcbrent/ISA28.htm.",
+    "reasoning": "The KJV gives a place, “mount Perazim”. The Greek prints a word that Brenton’s English renders “ungodly men” after “mountain”, and no name stands in its place. In the same verse both texts have a valley whose name the KJV spells Gibeon and Brenton’s English spells Gabaon.",
+    "scope": "T applies at Isaiah 28:21. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say that the KJV’s “Perazim” and the Greek’s word name the same mountain. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 28: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA28.htm"
+      },
+      {
+        "label": "Isaiah 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/28/"
+      },
+      {
+        "label": "Isaiah 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 28:21",
+        "book": 22,
+        "chapter": 28,
+        "verse": 21
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 28:21",
+        "quote": "as in mount Perazim"
+      }
+    ]
+  },
+  {
+    "id": "bread-corn-is-bruised-or-i-will-not-be-wroth-for-ever-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 28:28",
+    "appliesTo": [
+      "Isaiah 28:28"
+    ],
+    "title": "“Bread corn is bruised” — the Greek has “I will not be wroth with you for ever”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 28:28 closes the farmer’s lesson with bread corn that is bruised but “not ever” threshed. Brenton’s Greek prints a speaker who says “I will not be wroth with you for ever”.",
+    "text": "KJV Isaiah 28:28: “Bread corn is bruised; because he will not ever be threshing it, nor break it with the wheel of his cart, nor bruise it with his horsemen.” Hebrew (WLC) 28:28: לֶ֣חֶם יוּדָ֔ק … כִּ֛י לֹ֥א לָנֶ֖צַח אָדֹ֣ושׁ יְדוּשֶׁ֑נּוּ. Brenton’s Greek 28:28: οὐ γὰρ εἰς τὸν αἰῶνα ἐγώ εἰμι ὑμῖν ὀργισθήσομαι … οὐδὲ φωνὴ τῆς πικρίας μου καταπατήσει ὑμᾶς. Brenton’s own English (https://ebible.org/eng-Brenton/ISA28.htm) prints: “for I will not be wroth with you for ever” … “neither shall the voice of my anger crush you”. Fetched from https://bolls.life/get-text/WLC/23/28/ and https://ebible.org/grcbrent/ISA28.htm.",
+    "reasoning": "In the KJV the verse is about grain and the care taken in threshing it. In the Greek the verse has a first-person speaker and his anger, with no grain, cart wheel or horsemen.",
+    "scope": "T applies at Isaiah 28:28. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 28: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA28.htm"
+      },
+      {
+        "label": "Isaiah 28: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/28/"
+      },
+      {
+        "label": "Isaiah 28: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 28:28",
+        "book": 22,
+        "chapter": 28,
+        "verse": 28
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 28:28",
+        "quote": "Bread corn is bruised"
+      }
+    ]
+  },
+  {
+    "id": "the-city-where-david-dwelt-or-which-david-besieged-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 29:1",
+    "appliesTo": [
+      "Isaiah 29:1"
+    ],
+    "title": "“The city where David dwelt” — the Greek has “which David besieged”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 29:1 calls Ariel “the city where David dwelt”. Brenton’s Greek prints a verb that Brenton’s English renders “besieged”.",
+    "text": "KJV Isaiah 29:1: “Woe to Ariel, to Ariel, the city where David dwelt! add ye year to year; let them kill sacrifices.” Hebrew (WLC) 29:1: קִרְיַ֖ת חָנָ֣ה דָוִ֑ד. Brenton’s Greek 29:1: πόλις, ἣν ἐπολέμησε Δαυείδ. Brenton’s own English (https://ebible.org/eng-Brenton/ISA29.htm) prints: “the city Ariel, which David besieged”. Fetched from https://bolls.life/get-text/WLC/23/29/ and https://ebible.org/grcbrent/ISA29.htm.",
+    "reasoning": "The KJV says David dwelt in the city. The Greek says David made war on it, which Brenton’s English words as “besieged”. Dwelling in a city and attacking it are different things to say of David.",
+    "scope": "T applies at Isaiah 29:1. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 29: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA29.htm"
+      },
+      {
+        "label": "Isaiah 29: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/29/"
+      },
+      {
+        "label": "Isaiah 29: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA29.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 29:1",
+        "book": 22,
+        "chapter": 29,
+        "verse": 1
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 29:1",
+        "quote": "the city where David dwelt"
+      }
+    ]
+  },
+  {
+    "id": "in-returning-and-rest-shall-ye-be-saved-or-turn-and-mourn-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 30:15",
+    "appliesTo": [
+      "Isaiah 30:15"
+    ],
+    "title": "“In returning and rest shall ye be saved” — the Greek has “when thou shalt turn and mourn”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 30:15 says “in quietness and in confidence shall be your strength”. Brenton’s Greek prints words that Brenton’s English renders “When thou shalt turn and mourn, then thou shalt be saved … then your strength became vain”.",
+    "text": "KJV Isaiah 30:15: “For thus saith the Lord God, the Holy One of Israel; In returning and rest shall ye be saved; in quietness and in confidence shall be your strength: and ye would not.” Hebrew (WLC) 30:15: בְּשׁוּבָ֤ה וָנַ֙חַת֙ תִּוָּ֣שֵׁע֔וּן … בְּהַשְׁקֵט֙ וּבְבִטְחָ֔ה תִּֽהְיֶ֖ה גְּבֽוּרַתְכֶ֑ם. Brenton’s Greek 30:15: ὅταν ἀποστραφεὶς στενάξῃς, τότε σωθήσῃ … ματαία ἡ ἰσχὺς ὑμῶν ἐγενήθη. Brenton’s own English (https://ebible.org/eng-Brenton/ISA30.htm) prints: “When thou shalt turn and mourn, then thou shalt be saved” … “then your strength became vain”. Fetched from https://bolls.life/get-text/WLC/23/30/ and https://ebible.org/grcbrent/ISA30.htm.",
+    "reasoning": "In the KJV the condition of salvation is “returning and rest”, and the strength comes “in quietness and in confidence”. In the Greek the condition is turning and mourning, and the strength has become vain. The KJV’s strength is a result to be had; the Greek’s strength is a loss.",
+    "scope": "T applies at Isaiah 30:15. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 30: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA30.htm"
+      },
+      {
+        "label": "Isaiah 30: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/30/"
+      },
+      {
+        "label": "Isaiah 30: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA30.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 30:15",
+        "book": 22,
+        "chapter": 30,
+        "verse": 15
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 30:15",
+        "quote": "in quietness and in confidence shall be your strength"
+      }
+    ]
+  },
+  {
+    "id": "thou-shalt-weep-no-more-or-jerusalem-has-wept-bitterly-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 30:19",
+    "appliesTo": [
+      "Isaiah 30:19"
+    ],
+    "title": "“Thou shalt weep no more” — the Greek has “Jerusalem has wept bitterly, saying, Pity me”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 30:19 says “thou shalt weep no more”. Brenton’s Greek prints words that Brenton’s English renders “Jerusalem has wept bitterly, saying, Pity me”.",
+    "text": "KJV Isaiah 30:19: “For the people shall dwell in Zion at Jerusalem: thou shalt weep no more: he will be very gracious unto thee at the voice of thy cry; when he shall hear it, he will answer thee.” Hebrew (WLC) 30:19: בָּכֹ֣ו לֹֽא־תִבְכֶּ֗ה. Brenton’s Greek 30:19: Ἰερουσαλὴμ κλαυθμῷ ἔκλαυσεν, ἐλέησόν με. Brenton’s own English (https://ebible.org/eng-Brenton/ISA30.htm) prints: “Jerusalem has wept bitterly, saying, Pity me”. Fetched from https://bolls.life/get-text/WLC/23/30/ and https://ebible.org/grcbrent/ISA30.htm.",
+    "reasoning": "The KJV promises that weeping will stop. The Greek, as Brenton’s English renders it, reports that Jerusalem wept and asked for pity, and the promise that follows is that the Lord will pity. The two texts quoted do not say the same about the weeping.",
+    "scope": "T applies at Isaiah 30:19. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 30: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA30.htm"
+      },
+      {
+        "label": "Isaiah 30: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/30/"
+      },
+      {
+        "label": "Isaiah 30: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA30.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 30:19",
+        "book": 22,
+        "chapter": 30,
+        "verse": 19
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 30:19",
+        "quote": "thou shalt weep no more"
+      }
+    ]
+  },
+  {
+    "id": "tophet-is-ordained-of-old-for-the-king-or-thou-shalt-be-required-before-thy-time-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 30:33",
+    "appliesTo": [
+      "Isaiah 30:33"
+    ],
+    "title": "“Tophet is ordained of old; yea, for the king it is prepared” — the Greek has “thou shalt be required before thy time”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 30:33 says “Tophet is ordained of old; yea, for the king it is prepared”. Brenton’s Greek prints no place-name, a person addressed as “thou”, and words that Brenton’s English renders “has it been prepared for thee also to reign?”.",
+    "text": "KJV Isaiah 30:33: “For Tophet is ordained of old; yea, for the king it is prepared; he hath made it deep and large: the pile thereof is fire and much wood; the breath of the Lord, like a stream of brimstone, doth kindle it.” Hebrew (WLC) 30:33: עָר֤וּךְ מֵֽאֶתְמוּל֙ תָּפְתֶּ֔ה … לַמֶּ֥לֶךְ הוּכָ֖ן. Brenton’s Greek 30:33: Σὺ γὰρ πρὸ ἡμερῶν ἀπαιτηθήσῃ … μὴ καί σοὶ ἡτοιμάσθη βασιλεύειν. Brenton’s own English (https://ebible.org/eng-Brenton/ISA30.htm) prints: “For thou shalt be required before thy time” … “has it been prepared for thee also to reign”. Fetched from https://bolls.life/get-text/WLC/23/30/ and https://ebible.org/grcbrent/ISA30.htm.",
+    "reasoning": "The KJV gives a place, Tophet, ordained long ago and prepared for the king. The Greek addresses “thou”, says he shall be required before his time, and asks whether it was prepared for him also to reign. The name “Tophet” is not printed in the Greek, and the KJV has no question about reigning.",
+    "scope": "T applies at Isaiah 30:33. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew of this verse has a written and a read form of one word; the record quotes neither. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 30: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA30.htm"
+      },
+      {
+        "label": "Isaiah 30: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/30/"
+      },
+      {
+        "label": "Isaiah 30: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA30.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 30:33",
+        "book": 22,
+        "chapter": 30,
+        "verse": 33
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 30:33",
+        "quote": "Tophet is ordained of old"
+      }
+    ]
+  },
+  {
+    "id": "whose-fire-is-in-zion-or-blessed-is-he-that-has-a-seed-in-sion-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 31:9",
+    "appliesTo": [
+      "Isaiah 31:9"
+    ],
+    "title": "“Whose fire is in Zion, and his furnace in Jerusalem” — the Greek has “Blessed is he that has a seed in Sion”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 31:9 ends “saith the Lord, whose fire is in Zion, and his furnace in Jerusalem”. Brenton’s Greek prints words that Brenton’s English renders “Blessed is he that has a seed in Sion, and household friends in Jerusalem”.",
+    "text": "KJV Isaiah 31:9: “And he shall pass over to his strong hold for fear, and his princes shall be afraid of the ensign, saith the Lord, whose fire is in Zion, and his furnace in Jerusalem.” Hebrew (WLC) 31:9: אֲשֶׁר־א֥וּר לֹו֙ בְּצִיֹּ֔ון וְתַנּ֥וּר לֹ֖ו בִּירוּשָׁלִָֽם. Brenton’s Greek 31:9: μακάριος ὃς ἔχει ἐν Σιὼν σπέρμα, καὶ οἰκείους ἐν Ἱερουσαλήμ. Brenton’s own English (https://ebible.org/eng-Brenton/ISA31.htm) prints: “Blessed is he that has a seed in Sion, and household friends in Jerusalem”. Fetched from https://bolls.life/get-text/WLC/23/31/ and https://ebible.org/grcbrent/ISA31.htm.",
+    "reasoning": "In the KJV the Lord has a fire and a furnace in Zion and Jerusalem. In the Greek a person who has a seed in Zion and household friends in Jerusalem is called blessed. Neither fire nor furnace stands in the Greek, and no blessing stands in the KJV.",
+    "scope": "T applies at Isaiah 31:9. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 31: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA31.htm"
+      },
+      {
+        "label": "Isaiah 31: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/31/"
+      },
+      {
+        "label": "Isaiah 31: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA31.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 31:9",
+        "book": 22,
+        "chapter": 31,
+        "verse": 9
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 31:9",
+        "quote": "whose fire is in Zion, and his furnace in Jerusalem"
+      }
+    ]
+  },
+  {
+    "id": "a-man-shall-be-as-an-hiding-place-or-a-man-shall-hide-his-words-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 32:2",
+    "appliesTo": [
+      "Isaiah 32:2"
+    ],
+    "title": "“A man shall be as an hiding place from the wind” — the Greek has “a man shall hide his words”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 32:2 says “a man shall be as an hiding place from the wind, and a covert from the tempest”. Brenton’s Greek prints words that Brenton’s English renders “And a man shall hide his words, and be hidden, as from rushing water”.",
+    "text": "KJV Isaiah 32:2: “And a man shall be as an hiding place from the wind, and a covert from the tempest; as rivers of water in a dry place, as the shadow of a great rock in a weary land.” Hebrew (WLC) 32:2: אִ֥ישׁ כְּמַֽחֲבֵא־ר֖וּחַ וְסֵ֣תֶר. Brenton’s Greek 32:2: Καὶ ἔσται ὁ ἄνθρωπος κρύπτων τοὺς λόγους αὐτοῦ. Brenton’s own English (https://ebible.org/eng-Brenton/ISA32.htm) prints: “And a man shall hide his words”. Fetched from https://bolls.life/get-text/WLC/23/32/ and https://ebible.org/grcbrent/ISA32.htm.",
+    "reasoning": "In the KJV the man is a shelter for others. In the Greek the man hides his own words and is himself hidden. One text makes the man a hiding place; the other makes him the one hiding.",
+    "scope": "T applies at Isaiah 32:2. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 32: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA32.htm"
+      },
+      {
+        "label": "Isaiah 32: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/32/"
+      },
+      {
+        "label": "Isaiah 32: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA32.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 32:2",
+        "book": 22,
+        "chapter": 32,
+        "verse": 2
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 32:2",
+        "quote": "a man shall be as an hiding place from the wind"
+      }
+    ]
+  },
+  {
+    "id": "the-unicorns-shall-come-down-or-the-mighty-ones-shall-fall-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 34:7",
+    "appliesTo": [
+      "Isaiah 34:7"
+    ],
+    "title": "“The unicorns shall come down with them” — the Greek has “the mighty ones shall fall with them”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 34:7 says “the unicorns shall come down with them”. Brenton’s Greek prints a word that Brenton’s English renders “the mighty ones”, and “rams” for what the KJV renders “bullocks”.",
+    "text": "KJV Isaiah 34:7: “And the unicorns shall come down with them, and the bullocks with the bulls; and their land shall be soaked with blood, and their dust made fat with fatness.” Hebrew (WLC) 34:7: וְיָרְד֤וּ רְאֵמִים֙ עִמָּ֔ם. Brenton’s Greek 34:7: Καὶ συνπεσοῦνται οἱ ἁδροὶ μετʼ αὐτῶν. Brenton’s own English (https://ebible.org/eng-Brenton/ISA34.htm) prints: “And the mighty ones shall fall with them”. Fetched from https://bolls.life/get-text/WLC/23/34/ and https://ebible.org/grcbrent/ISA34.htm.",
+    "reasoning": "The KJV names an animal, unicorns, that comes down with them. The Greek names persons or beings described as mighty, and Brenton’s English renders the next group “rams”, where the KJV has “bullocks”. The texts name different things in the same place.",
+    "scope": "T applies at Isaiah 34:7. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The KJV’s “unicorns” is also discussed in the published record on Numbers 23:22; this record does not repeat that comparison. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 34: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA34.htm"
+      },
+      {
+        "label": "Isaiah 34: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/34/"
+      },
+      {
+        "label": "Isaiah 34: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA34.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 34:7",
+        "book": 22,
+        "chapter": 34,
+        "verse": 7
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 34:7",
+        "quote": "the unicorns shall come down with them"
+      }
+    ]
+  },
+  {
+    "id": "wild-beasts-of-the-desert-meet-wild-beasts-of-the-island-or-devils-meet-satyrs-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 34:14",
+    "appliesTo": [
+      "Isaiah 34:14"
+    ],
+    "title": "“The wild beasts of the desert shall also meet with the wild beasts of the island” — the Greek has “devils shall meet with satyrs”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 34:14 says “the wild beasts of the desert shall also meet with the wild beasts of the island”. Brenton’s Greek prints words that Brenton’s English renders “devils shall meet with satyrs”.",
+    "text": "KJV Isaiah 34:14: “The wild beasts of the desert shall also meet with the wild beasts of the island, and the satyr shall cry to his fellow; the screech owl also shall rest there, and find for herself a place of rest.” Hebrew (WLC) 34:14: וּפָגְשׁ֤וּ צִיִּים֙ אֶת־אִיִּ֔ים. Brenton’s Greek 34:14: Καὶ συναντήσουσι δαιμόνια ὀνοκενταύροις. Brenton’s own English (https://ebible.org/eng-Brenton/ISA34.htm) prints: “And devils shall meet with satyrs”. Fetched from https://bolls.life/get-text/WLC/23/34/ and https://ebible.org/grcbrent/ISA34.htm.",
+    "reasoning": "The KJV’s two parties are wild beasts of two places. The Greek’s two parties are a word that Brenton’s English renders “devils” and a word it renders “satyrs”. The KJV’s “the satyr shall cry to his fellow” has a satyr as one of the beasts; in the Greek the satyrs are a separate party from the devils.",
+    "scope": "T applies at Isaiah 34:14. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 34: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA34.htm"
+      },
+      {
+        "label": "Isaiah 34: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/34/"
+      },
+      {
+        "label": "Isaiah 34: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA34.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 34:14",
+        "book": 22,
+        "chapter": 34,
+        "verse": 14
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 34:14",
+        "quote": "The wild beasts of the desert shall also meet with the wild beasts of the island"
+      }
+    ]
+  },
+  {
+    "id": "i-have-digged-and-drunk-water-or-i-have-made-a-bridge-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 37:25",
+    "appliesTo": [
+      "Isaiah 37:25"
+    ],
+    "title": "“I have digged, and drunk water” — the Greek has “I have made a bridge”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 37:25, in the boast of the king of Assyria, says “I have digged, and drunk water”. Brenton’s Greek prints words that Brenton’s English renders “and I have made a bridge, and dried up the waters”.",
+    "text": "KJV Isaiah 37:25: “I have digged, and drunk water; and with the sole of my feet have I dried up all the rivers of the besieged places.” Hebrew (WLC) 37:25: קַ֖רְתִּי וְשָׁתִ֣יתִי מָ֑יִם. Brenton’s Greek 37:25: καὶ ἔθηκα γέφυραν, καὶ ἠρήμωσα ὕδατα. Brenton’s own English (https://ebible.org/eng-Brenton/ISA37.htm) prints: “and I have made a bridge, and dried up the waters”. Fetched from https://bolls.life/get-text/WLC/23/37/ and https://ebible.org/grcbrent/ISA37.htm.",
+    "reasoning": "In the KJV the boast is of digging and drinking. In the Greek it is of making a bridge. Both texts go on to speak of drying up water. “Digged” and “drunk” are not printed in the Greek, and “bridge” is not printed in the KJV.",
+    "scope": "T applies at Isaiah 37:25. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 37: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA37.htm"
+      },
+      {
+        "label": "Isaiah 37: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/37/"
+      },
+      {
+        "label": "Isaiah 37: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA37.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 37:25",
+        "book": 22,
+        "chapter": 37,
+        "verse": 25
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 37:25",
+        "quote": "I have digged, and drunk water"
+      }
+    ]
+  },
+  {
+    "id": "i-lay-in-zion-a-stone-a-tried-stone-who-or-what-is-the-stone-of-isaiah-28-16",
+    "mode": "questions",
+    "ref": "Isaiah 28:16",
+    "appliesTo": [
+      "Isaiah 28:16"
+    ],
+    "title": "“I lay in Zion for a foundation a stone, a tried stone” — who or what is the stone?",
+    "status": "Context",
+    "summary": "Isaiah 28:16 has the Lord say “I lay in Zion for a foundation a stone, a tried stone, a precious corner stone, a sure foundation”. The verses quoted do not say who or what the stone is, or what “he that believeth” is to believe.",
+    "text": "KJV Isaiah 28:15–17: “Because ye have said, We have made a covenant with death, and with hell are we at agreement; when the overflowing scourge shall pass through, it shall not come unto us: for we have made lies our refuge, and under falsehood have we hid ourselves:” “Therefore thus saith the Lord God, Behold, I lay in Zion for a foundation a stone, a tried stone, a precious corner stone, a sure foundation: he that believeth shall not make haste.” “Judgment also will I lay to the line, and righteousness to the plummet: and the hail shall sweep away the refuge of lies, and the waters shall overflow the hiding place.” A search of the packaged KJV text of Isaiah 28–39 for “corner stone” finds 28:16 only, and for “tried stone” 28:16 only.",
+    "reasoning": "The verse is set against the leaders who say “we have made lies our refuge” (28:15). It names a stone laid “in Zion” by the speaker and says the one who believes “shall not make haste”, and the next verse says judgment and righteousness are laid “to the line”. It does not say whether the stone is a person, a king, a nation, a promise, the city or the temple, nor what the belief is directed to. Possible readings: a person or ruler; the Lord’s promise to Zion; Zion or its temple itself. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted; the word search covers the packaged KJV text of Isaiah 28–39 only and is a word search. The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, and does not examine how another book uses the verse.",
+    "sources": [
+      {
+        "label": "Isaiah 28: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA28.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 28:15",
+        "book": 22,
+        "chapter": 28,
+        "verse": 15
+      },
+      {
+        "label": "Isaiah 28:16",
+        "book": 22,
+        "chapter": 28,
+        "verse": 16
+      },
+      {
+        "label": "Isaiah 28:17",
+        "book": 22,
+        "chapter": 28,
+        "verse": 17
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 28:16",
+        "quote": "I lay in Zion for a foundation a stone, a tried stone, a precious corner stone, a sure foundation"
+      }
+    ]
+  },
+  {
+    "id": "a-king-shall-reign-in-righteousness-which-king-does-isaiah-32-1-mean",
+    "mode": "questions",
+    "ref": "Isaiah 32:1",
+    "appliesTo": [
+      "Isaiah 32:1"
+    ],
+    "title": "“A king shall reign in righteousness” — which king does Isaiah 32:1 mean?",
+    "status": "Context",
+    "summary": "Isaiah 32:1 says “Behold, a king shall reign in righteousness, and princes shall rule in judgment”. The verses quoted do not say who the king is, or when he reigns.",
+    "text": "KJV Isaiah 32:1–2: “Behold, a king shall reign in righteousness, and princes shall rule in judgment.” “And a man shall be as an hiding place from the wind, and a covert from the tempest; as rivers of water in a dry place, as the shadow of a great rock in a weary land.” KJV Isaiah 33:17: “Thine eyes shall see the king in his beauty: they shall behold the land that is very far off.” KJV Isaiah 33:22: “For the Lord is our judge, the Lord is our lawgiver, the Lord is our king; he will save us.”",
+    "reasoning": "The verse names no king and gives no date: it opens with “Behold” and speaks of a king who “shall reign”. The book names Hezekiah elsewhere in these chapters (36–39), but 32:1 does not name him. Chapter 33 speaks of eyes that “shall see the king in his beauty” (33:17) and of the Lord as “our king” (33:22). Possible readings: a king of David’s line in the prophet’s own time; a later king; the Lord himself as king. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, and does not examine how another book uses the verse.",
+    "sources": [
+      {
+        "label": "Isaiah 32: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA32.htm"
+      },
+      {
+        "label": "Isaiah 33: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA33.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 32:1",
+        "book": 22,
+        "chapter": 32,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 32:2",
+        "book": 22,
+        "chapter": 32,
+        "verse": 2
+      },
+      {
+        "label": "Isaiah 33:17",
+        "book": 22,
+        "chapter": 33,
+        "verse": 17
+      },
+      {
+        "label": "Isaiah 33:22",
+        "book": 22,
+        "chapter": 33,
+        "verse": 22
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 32:1",
+        "quote": "Behold, a king shall reign in righteousness, and princes shall rule in judgment"
+      }
+    ]
+  },
+  {
+    "id": "goodliness-thereof-or-glory-of-man-isaiah-40-6-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 40:6",
+    "appliesTo": [
+      "Isaiah 40:6"
+    ],
+    "title": "“All the goodliness thereof” — the Greek has “all the glory of man”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 40:6 says “all the goodliness thereof is as the flower of the field”. Brenton’s Greek prints a phrase that Brenton’s English renders “all the glory of man as the flower of grass”.",
+    "text": "KJV Isaiah 40:6: “The voice said, Cry. And he said, What shall I cry? All flesh is grass, and all the goodliness thereof is as the flower of the field:” Hebrew (WLC) 40:6: וְכָל־חַסְדֹּ֖ו כְּצִ֥יץ הַשָּׂדֶֽה. Brenton’s Greek 40:6: πᾶσα δόξα ἀνθρώπου ὡς ἄνθος χόρτου. Brenton’s own English (https://ebible.org/eng-Brenton/ISA40.htm) prints: “all the glory of man as the flower of grass”. KJV 1 Peter 1:24: “For all flesh is as grass, and all the glory of man as the flower of grass. The grass withereth, and the flower thereof falleth away:” Fetched from https://bolls.life/get-text/WLC/23/40/ and https://ebible.org/grcbrent/ISA40.htm.",
+    "reasoning": "The KJV’s clause has “goodliness” as the thing that is like a flower, and the flower is “of the field”. The Greek names the glory “of man” and says the flower is “of grass”. The two texts therefore word what is compared with the flower, and what kind of flower, differently. The KJV of 1 Peter 1:24 words the matter as “all the glory of man as the flower of grass”.",
+    "scope": "T applies at Isaiah 40:6. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Greek of the New Testament verse in side B was not examined; its KJV wording is quoted only to show how it words the same matter. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 40: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA40.htm"
+      },
+      {
+        "label": "1 Peter 1: KJV",
+        "url": "https://ebible.org/eng-kjv/1PE01.htm"
+      },
+      {
+        "label": "Isaiah 40: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/40/"
+      },
+      {
+        "label": "Isaiah 40: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA40.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 40:6",
+        "book": 22,
+        "chapter": 40,
+        "verse": 6
+      },
+      {
+        "label": "1 Peter 1:24",
+        "book": 59,
+        "chapter": 1,
+        "verse": 24
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 40:6",
+        "quote": "all the goodliness thereof is as the flower of the field"
+      },
+      {
+        "label": "B",
+        "ref": "1 Peter 1:24",
+        "quote": "all the glory of man as the flower of grass"
+      }
+    ]
+  },
+  {
+    "id": "who-hath-directed-the-spirit-of-the-lord-or-who-hath-known-the-mind-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 40:13",
+    "appliesTo": [
+      "Isaiah 40:13"
+    ],
+    "title": "“Who hath directed the Spirit of the Lord” — the Greek has “Who has known the mind of the Lord”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 40:13 asks “Who hath directed the Spirit of the Lord”. Brenton’s Greek prints a question that Brenton’s English renders “Who has known the mind of the Lord?”.",
+    "text": "KJV Isaiah 40:13: “Who hath directed the Spirit of the Lord, or being his counsellor hath taught him?” Hebrew (WLC) 40:13: מִֽי־תִכֵּ֥ן אֶת־ר֖וּחַ יְהוָ֑ה. Brenton’s Greek 40:13: Τίς ἔγνω νοῦν Κυρίου. Brenton’s own English (https://ebible.org/eng-Brenton/ISA40.htm) prints: “Who has known the mind of the Lord”. KJV Romans 11:34: “For who hath known the mind of the Lord? or who hath been his counsellor?” Fetched from https://bolls.life/get-text/WLC/23/40/ and https://ebible.org/grcbrent/ISA40.htm.",
+    "reasoning": "The KJV asks who has directed the Spirit of the Lord. The Greek asks who has known the mind of the Lord, with a different verb and a different noun. The KJV of Romans 11:34 asks “who hath known the mind of the Lord?”, which is worded like the Greek and unlike the KJV of Isaiah 40:13.",
+    "scope": "T applies at Isaiah 40:13. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Greek of the New Testament verse in side B was not examined; its KJV wording is quoted only to show how it words the same matter. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 40: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA40.htm"
+      },
+      {
+        "label": "Romans 11: KJV",
+        "url": "https://ebible.org/eng-kjv/ROM11.htm"
+      },
+      {
+        "label": "Isaiah 40: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/40/"
+      },
+      {
+        "label": "Isaiah 40: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA40.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 40:13",
+        "book": 22,
+        "chapter": 40,
+        "verse": 13
+      },
+      {
+        "label": "Romans 11:34",
+        "book": 44,
+        "chapter": 11,
+        "verse": 34
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 40:13",
+        "quote": "Who hath directed the Spirit of the Lord"
+      },
+      {
+        "label": "B",
+        "ref": "Romans 11:34",
+        "quote": "who hath known the mind of the Lord"
+      }
+    ]
+  },
+  {
+    "id": "power-to-the-faint-or-strength-to-the-hungry-isaiah-40-29-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 40:29",
+    "appliesTo": [
+      "Isaiah 40:29"
+    ],
+    "title": "“He giveth power to the faint” — the Greek gives strength “to the hungry” and “sorrow” to those not suffering",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 40:29 says the Lord gives power to the faint and increases strength to them that have no might. Brenton’s Greek prints that he gives strength to the hungry, and sorrow to them that are not suffering.",
+    "text": "KJV Isaiah 40:29: “He giveth power to the faint; and to them that have no might he increaseth strength.” Hebrew (WLC) 40:29: נֹתֵ֥ן לַיָּעֵ֖ף כֹּ֑חַ … וּלְאֵ֥ין אֹונִ֖ים עָצְמָ֥ה יַרְבֶּֽה. Brenton’s Greek 40:29: διδοὺς τοῖς πεινῶσιν ἰσχὺν … καὶ τοῖς μὴ ὀδυνωμένοις λύπην. Brenton’s own English (https://ebible.org/eng-Brenton/ISA40.htm) prints: “He gives strength to the hungry” … “and sorrow to them that are not suffering”. Fetched from https://bolls.life/get-text/WLC/23/40/ and https://ebible.org/grcbrent/ISA40.htm.",
+    "reasoning": "In the KJV both halves give something good: power to the faint and strength to those without might. In Brenton’s English the first half gives strength to “the hungry” and the second gives “sorrow” to “them that are not suffering”. The recipients are named differently in the first half, and what is given in the second half differs.",
+    "scope": "T applies at Isaiah 40:29. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 40: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA40.htm"
+      },
+      {
+        "label": "Isaiah 40: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/40/"
+      },
+      {
+        "label": "Isaiah 40: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA40.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 40:29",
+        "book": 22,
+        "chapter": 40,
+        "verse": 29
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 40:29",
+        "quote": "He giveth power to the faint; and to them that have no might he increaseth strength"
+      }
+    ]
+  },
+  {
+    "id": "molten-images-wind-and-confusion-or-your-makers-isaiah-41-29-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 41:29",
+    "appliesTo": [
+      "Isaiah 41:29"
+    ],
+    "title": "“Their molten images are wind and confusion” — the Greek speaks of “your makers” who “cause you to err”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 41:29 ends “their molten images are wind and confusion”. Brenton’s Greek prints a sentence that Brenton’s English renders “For these are your makers, as ye think, and they that cause you to err in vain”.",
+    "text": "KJV Isaiah 41:29: “Behold, they are all vanity; their works are nothing: their molten images are wind and confusion.” Hebrew (WLC) 41:29: מַעֲשֵׂיהֶ֑ם ר֥וּחַ וָתֹ֖הוּ נִסְכֵּיהֶֽם. Brenton’s Greek 41:29: Εἰσὶ γὰρ οἱ ποιοῦντες ὑμᾶς, καὶ μάτην οἱ πλανῶντες ὑμᾶς. Brenton’s own English (https://ebible.org/eng-Brenton/ISA41.htm) prints: “For these are your makers, as ye think, and they that cause you to err in vain”. Fetched from https://bolls.life/get-text/WLC/23/41/ and https://ebible.org/grcbrent/ISA41.htm.",
+    "reasoning": "The KJV’s verse calls the works and molten images of the idols nothing, wind and confusion. The Greek, in Brenton’s English, speaks of persons, “your makers” and “they that cause you to err”, and has no molten images or wind. The two texts name different things as the subject of the verse’s second half.",
+    "scope": "T applies at Isaiah 41:29. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 41: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA41.htm"
+      },
+      {
+        "label": "Isaiah 41: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/41/"
+      },
+      {
+        "label": "Isaiah 41: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA41.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 41:29",
+        "book": 22,
+        "chapter": 41,
+        "verse": 29
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 41:29",
+        "quote": "their molten images are wind and confusion"
+      }
+    ]
+  },
+  {
+    "id": "magnify-the-law-or-magnify-his-praise-isaiah-42-21-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 42:21",
+    "appliesTo": [
+      "Isaiah 42:21"
+    ],
+    "title": "“He will magnify the law” — the Greek has “that he might be justified, and might magnify his praise”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 42:21 says the Lord “will magnify the law, and make it honourable”. Brenton’s Greek prints a clause that Brenton’s English renders “that he might be justified, and might magnify his praise”.",
+    "text": "KJV Isaiah 42:21: “The Lord is well pleased for his righteousness' sake; he will magnify the law, and make it honourable.” Hebrew (WLC) 42:21: יַגְדִּ֥יל תֹּורָ֖ה וְיַאְדִּֽיר. Brenton’s Greek 42:21: ἵνα δικαιωθῇ, καὶ μεγαλύνῃ αἴνεσιν. Brenton’s own English (https://ebible.org/eng-Brenton/ISA42.htm) prints: “that he might be justified, and might magnify his praise”. Fetched from https://bolls.life/get-text/WLC/23/42/ and https://ebible.org/grcbrent/ISA42.htm.",
+    "reasoning": "The KJV has the Lord magnify “the law” and make it honourable. The Greek in Brenton’s English has the Lord “justified” and has him magnify “his praise”. The word “law” does not stand in Brenton’s English of the verse, and what is magnified differs.",
+    "scope": "T applies at Isaiah 42:21. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 42: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA42.htm"
+      },
+      {
+        "label": "Isaiah 42: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/42/"
+      },
+      {
+        "label": "Isaiah 42: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA42.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 42:21",
+        "book": 22,
+        "chapter": 42,
+        "verse": 21
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 42:21",
+        "quote": "he will magnify the law, and make it honourable"
+      }
+    ]
+  },
+  {
+    "id": "defer-mine-anger-or-shew-thee-my-wrath-isaiah-48-9-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 48:9",
+    "appliesTo": [
+      "Isaiah 48:9"
+    ],
+    "title": "“Will I defer mine anger” — the Greek has “will I shew thee my wrath”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 48:9 says “For my name’s sake will I defer mine anger”. Brenton’s Greek prints a clause that Brenton’s English renders “For mine own sake will I shew thee my wrath”.",
+    "text": "KJV Isaiah 48:9: “For my name's sake will I defer mine anger, and for my praise will I refrain for thee, that I cut thee not off.” Hebrew (WLC) 48:9: לְמַ֤עַן שְׁמִי֙ אַאֲרִ֣יךְ אַפִּ֔י וּתְהִלָּתִ֖י אֶחֱטָם־לָ֑ךְ. Brenton’s Greek 48:9: δείξω σοι τὸν θυμόν μου. Brenton’s own English (https://ebible.org/eng-Brenton/ISA48.htm) prints: “will I shew thee my wrath”. Fetched from https://bolls.life/get-text/WLC/23/48/ and https://ebible.org/grcbrent/ISA48.htm.",
+    "reasoning": "The KJV has the Lord put off his anger. The Greek in Brenton’s English has him show his wrath to the one addressed. Both clauses end with a purpose that the one addressed is not cut off or destroyed, but the first clause differs: the KJV holds anger back, the Greek shows wrath.",
+    "scope": "T applies at Isaiah 48:9. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 48: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA48.htm"
+      },
+      {
+        "label": "Isaiah 48: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/48/"
+      },
+      {
+        "label": "Isaiah 48: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA48.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 48:9",
+        "book": 22,
+        "chapter": 48,
+        "verse": 9
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 48:9",
+        "quote": "will I defer mine anger, and for my praise will I refrain for thee"
+      }
+    ]
+  },
+  {
+    "id": "land-of-sinim-or-land-of-the-persians-isaiah-49-12-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 49:12",
+    "appliesTo": [
+      "Isaiah 49:12"
+    ],
+    "title": "“The land of Sinim” — the Greek has “the land of the Persians”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 49:12 ends “these from the land of Sinim”. Brenton’s Greek prints a place name that Brenton’s English renders “from the land of the Persians”.",
+    "text": "KJV Isaiah 49:12: “Behold, these shall come from far: and, lo, these from the north and from the west; and these from the land of Sinim.” Hebrew (WLC) 49:12: וְאֵ֖לֶּה מֵאֶ֥רֶץ סִינִֽים. Brenton’s Greek 49:12: ἐκ γῆς Περσῶν. Brenton’s own English (https://ebible.org/eng-Brenton/ISA49.htm) prints: “from the land of the Persians”. Fetched from https://bolls.life/get-text/WLC/23/49/ and https://ebible.org/grcbrent/ISA49.htm.",
+    "reasoning": "The KJV prints “Sinim” and the Hebrew prints the same name. The Greek prints a different name, which Brenton’s English renders “the Persians”. The three texts name the far land differently; the record does not say which land the Hebrew name denotes.",
+    "scope": "T applies at Isaiah 49:12. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The record does not say that the two names denote different lands. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 49: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA49.htm"
+      },
+      {
+        "label": "Isaiah 49: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/49/"
+      },
+      {
+        "label": "Isaiah 49: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA49.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 49:12",
+        "book": 22,
+        "chapter": 49,
+        "verse": 12
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 49:12",
+        "quote": "these from the land of Sinim"
+      }
+    ]
+  },
+  {
+    "id": "the-lawful-captive-or-a-man-taken-captive-unjustly-isaiah-49-24-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 49:24",
+    "appliesTo": [
+      "Isaiah 49:24"
+    ],
+    "title": "“The lawful captive” — the Greek has one who “should take a man captive unjustly”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 49:24 asks whether “the lawful captive” shall be delivered. Brenton’s Greek prints a clause that Brenton’s English renders “if one should take a man captive unjustly, shall he be delivered?”.",
+    "text": "KJV Isaiah 49:24: “Shall the prey be taken from the mighty, or the lawful captive delivered?” Hebrew (WLC) 49:24: וְאִם־שְׁבִ֥י צַדִּ֖יק יִמָּלֵֽט. Brenton’s Greek 49:24: ἐὰν αἰχμαλωτεύσῃ τις ἀδίκως, σωθήσεται. Brenton’s own English (https://ebible.org/eng-Brenton/ISA49.htm) prints: “if one should take a man captive unjustly, shall he be delivered”. Fetched from https://bolls.life/get-text/WLC/23/49/ and https://ebible.org/grcbrent/ISA49.htm.",
+    "reasoning": "In the KJV the question is about a captive who is “lawful”. In Brenton’s English the question is about a man taken captive “unjustly”. The qualifier differs, and so does the one it qualifies: in the KJV the captive is lawful, in the Greek the taking is unjust.",
+    "scope": "T applies at Isaiah 49:24. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 49: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA49.htm"
+      },
+      {
+        "label": "Isaiah 49: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/49/"
+      },
+      {
+        "label": "Isaiah 49: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA49.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 49:24",
+        "book": 22,
+        "chapter": 49,
+        "verse": 24
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 49:24",
+        "quote": "or the lawful captive delivered"
+      }
+    ]
+  },
+  {
+    "id": "borne-our-griefs-or-bears-our-sins-isaiah-53-4-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 53:4",
+    "appliesTo": [
+      "Isaiah 53:4"
+    ],
+    "title": "“He hath borne our griefs, and carried our sorrows” — the Greek has “He bears our sins, and is pained for us”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 53:4 says “Surely he hath borne our griefs, and carried our sorrows”. Brenton’s Greek prints a sentence that Brenton’s English renders “He bears our sins, and is pained for us”.",
+    "text": "KJV Isaiah 53:4: “Surely he hath borne our griefs, and carried our sorrows: yet we did esteem him stricken, smitten of God, and afflicted.” Hebrew (WLC) 53:4: אָכֵ֤ן חֳלָיֵ֙נוּ֙ ה֣וּא נָשָׂ֔א וּמַכְאֹבֵ֖ינוּ סְבָלָ֑ם. Brenton’s Greek 53:4: Οὗτος τὰς ἁμαρτίας ἡμῶν φέρει, καὶ περὶ ἡμῶν ὀδυνᾶται. Brenton’s own English (https://ebible.org/eng-Brenton/ISA53.htm) prints: “He bears our sins, and is pained for us”. Fetched from https://bolls.life/get-text/WLC/23/53/ and https://ebible.org/grcbrent/ISA53.htm.",
+    "reasoning": "The KJV names what is borne as “griefs” and carried as “sorrows”. The Greek in Brenton’s English names it “our sins”, and says he “is pained for us”. What is borne differs. The KJV of 53:11 says “he shall bear their iniquities”, so the KJV has the bearing of iniquities in the same chapter, at a different verse.",
+    "scope": "T applies at Isaiah 53:4. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 53: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA53.htm"
+      },
+      {
+        "label": "Isaiah 53: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/53/"
+      },
+      {
+        "label": "Isaiah 53: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA53.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 53:4",
+        "book": 22,
+        "chapter": 53,
+        "verse": 4
+      },
+      {
+        "label": "Isaiah 53:11",
+        "book": 22,
+        "chapter": 53,
+        "verse": 11
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 53:4",
+        "quote": "Surely he hath borne our griefs, and carried our sorrows"
+      }
+    ]
+  },
+  {
+    "id": "to-bruise-him-and-offering-for-sin-or-purge-him-from-his-stroke-isaiah-53-10-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 53:10",
+    "appliesTo": [
+      "Isaiah 53:10"
+    ],
+    "title": "“It pleased the Lord to bruise him” — the Greek has “to purge him from his stroke”, and “If ye can give an offering for sin, your soul shall see a long-lived seed”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 53:10 has the Lord pleased “to bruise him”, and “thou” making “his soul an offering for sin”. Brenton’s Greek, in Brenton’s English, has the Lord pleased to “purge him from his stroke”, and “ye” giving “an offering for sin”, so that “your soul shall see a long-lived seed”.",
+    "text": "KJV Isaiah 53:10: “Yet it pleased the Lord to bruise him; he hath put him to grief: when thou shalt make his soul an offering for sin, he shall see his seed, he shall prolong his days, and the pleasure of the Lord shall prosper in his hand.” Hebrew (WLC) 53:10: וַיהוָ֞ה חָפֵ֤ץ דַּכְּאֹו֙ הֶֽחֱלִ֔י … אִם־תָּשִׂ֤ים אָשָׁם֙ נַפְשֹׁ֔ו יִרְאֶ֥ה זֶ֖רַע. Brenton’s Greek 53:10: Καὶ Κύριος βούλεται καθαρίσαι αὐτὸν τῆς πληγῆς … ἐὰν δῶτε περὶ ἁμαρτίας, ἡ ψυχὴ ὑμῶν ὄψεται σπέρμα μακρόβιον. Brenton’s own English (https://ebible.org/eng-Brenton/ISA53.htm) prints: “The Lord also is pleased to purge him from his stroke” … “If ye can give an offering for sin, your soul shall see a long-lived seed”. Fetched from https://bolls.life/get-text/WLC/23/53/ and https://ebible.org/grcbrent/ISA53.htm.",
+    "reasoning": "The KJV’s first clause is that it pleased the Lord to bruise him; the Greek’s is that the Lord is pleased to purge him from his stroke. In the second clause the KJV has one addressed, “thou”, who makes “his soul” an offering, and the one who sees seed is the person described by “he shall see his seed”. The Greek has several addressed, “ye”, who give an offering for sin, and the soul that sees seed is “your soul”. The two texts differ in what the Lord is pleased to do, in who gives, and in whose soul sees.",
+    "scope": "T applies at Isaiah 53:10. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 53: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA53.htm"
+      },
+      {
+        "label": "Isaiah 53: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/53/"
+      },
+      {
+        "label": "Isaiah 53: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA53.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 53:10",
+        "book": 22,
+        "chapter": 53,
+        "verse": 10
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 53:10",
+        "quote": "Yet it pleased the Lord to bruise him"
+      }
+    ]
+  },
+  {
+    "id": "not-by-me-or-by-me-isaiah-54-15-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 54:15",
+    "appliesTo": [
+      "Isaiah 54:15"
+    ],
+    "title": "“They shall surely gather together, but not by me” — the Greek has “strangers shall come to thee by me”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 54:15 says “they shall surely gather together, but not by me”. Brenton’s Greek prints a clause that Brenton’s English renders “Behold, strangers shall come to thee by me”.",
+    "text": "KJV Isaiah 54:15: “Behold, they shall surely gather together, but not by me: whosoever shall gather together against thee shall fall for thy sake.” Hebrew (WLC) 54:15: הֵ֣ן גֹּ֥ור יָג֛וּר אֶ֖פֶס מֵֽאֹותִ֑י. Brenton’s Greek 54:15: Ἰδοὺ προσήλυτοι προσελεύσονταί σοι διʼ ἐμοῦ. Brenton’s own English (https://ebible.org/eng-Brenton/ISA54.htm) prints: “Behold, strangers shall come to thee by me”. Fetched from https://bolls.life/get-text/WLC/23/54/ and https://ebible.org/grcbrent/ISA54.htm.",
+    "reasoning": "The KJV says those who gather do so “not by me”. The Greek in Brenton’s English says the strangers come to the one addressed “by me”. The origin of the gathering is stated in opposite terms, and the next clause of each text gives the outcome for the one gathered against (KJV, “shall fall for thy sake”) or for the one to whom strangers come (Brenton’s English, “shall sojourn with thee”).",
+    "scope": "T applies at Isaiah 54:15. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 54: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA54.htm"
+      },
+      {
+        "label": "Isaiah 54: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/54/"
+      },
+      {
+        "label": "Isaiah 54: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA54.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 54:15",
+        "book": 22,
+        "chapter": 54,
+        "verse": 15
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 54:15",
+        "quote": "they shall surely gather together, but not by me"
+      }
+    ]
+  },
+  {
+    "id": "rest-in-their-beds-or-his-burial-shall-be-in-peace-isaiah-57-2-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 57:2",
+    "appliesTo": [
+      "Isaiah 57:2"
+    ],
+    "title": "“They shall rest in their beds” — the Greek has “His burial shall be in peace”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 57:2 says “He shall enter into peace: they shall rest in their beds”. Brenton’s Greek prints a clause that Brenton’s English renders “His burial shall be in peace”.",
+    "text": "KJV Isaiah 57:2: “He shall enter into peace: they shall rest in their beds, each one walking in his uprightness.” Hebrew (WLC) 57:2: יָבֹ֣וא שָׁלֹ֔ום יָנ֖וּחוּ עַל־מִשְׁכְּבֹותָ֑ם. Brenton’s Greek 57:2: Ἔσται ἐν εἰρήνῃ ἡ ταφὴ αὐτοῦ. Brenton’s own English (https://ebible.org/eng-Brenton/ISA57.htm) prints: “His burial shall be in peace”. Fetched from https://bolls.life/get-text/WLC/23/57/ and https://ebible.org/grcbrent/ISA57.htm.",
+    "reasoning": "The KJV has the righteous one enter into peace and “they” rest “in their beds”. The Greek in Brenton’s English has “his burial” in peace. The resting place is stated as beds in the KJV and as burial in Brenton’s English, and the KJV has a plural “they” where the Greek has a single “his”.",
+    "scope": "T applies at Isaiah 57:2. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 57: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA57.htm"
+      },
+      {
+        "label": "Isaiah 57: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/57/"
+      },
+      {
+        "label": "Isaiah 57: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA57.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 57:2",
+        "book": 22,
+        "chapter": 57,
+        "verse": 2
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 57:2",
+        "quote": "He shall enter into peace: they shall rest in their beds"
+      }
+    ]
+  },
+  {
+    "id": "turn-from-transgression-in-jacob-or-turn-away-ungodliness-from-jacob-isaiah-59-20-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 59:20",
+    "appliesTo": [
+      "Isaiah 59:20"
+    ],
+    "title": "“Unto them that turn from transgression in Jacob” — the Greek has “shall turn away ungodliness from Jacob”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 59:20 says the Redeemer shall come “unto them that turn from transgression in Jacob”. Brenton’s Greek prints a clause that Brenton’s English renders “shall turn away ungodliness from Jacob”.",
+    "text": "KJV Isaiah 59:20: “And the Redeemer shall come to Zion, and unto them that turn from transgression in Jacob, saith the Lord.” Hebrew (WLC) 59:20: וּלְשָׁבֵ֥י פֶ֖שַׁע בְּיַֽעֲקֹ֑ב. Brenton’s Greek 59:20: ἀποστρέψει ἀσεβείας ἀπὸ Ἰακώβ. Brenton’s own English (https://ebible.org/eng-Brenton/ISA59.htm) prints: “shall turn away ungodliness from Jacob”. KJV Romans 11:26: “And so all Israel shall be saved: as it is written, There shall come out of Sion the Deliverer, and shall turn away ungodliness from Jacob:” Fetched from https://bolls.life/get-text/WLC/23/59/ and https://ebible.org/grcbrent/ISA59.htm.",
+    "reasoning": "In the KJV the people of Jacob turn from transgression, and the Redeemer comes to them. In Brenton’s English the deliverer is the one who “shall turn away ungodliness from Jacob”. Who turns, and what is turned, differs. The KJV of Romans 11:26 words a quotation as “shall turn away ungodliness from Jacob”, like the Greek and unlike the KJV of Isaiah 59:20.",
+    "scope": "T applies at Isaiah 59:20. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Greek of the New Testament verse in side B was not examined; its KJV wording is quoted only to show how it words the same matter. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 59: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA59.htm"
+      },
+      {
+        "label": "Romans 11: KJV",
+        "url": "https://ebible.org/eng-kjv/ROM11.htm"
+      },
+      {
+        "label": "Isaiah 59: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/59/"
+      },
+      {
+        "label": "Isaiah 59: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA59.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 59:20",
+        "book": 22,
+        "chapter": 59,
+        "verse": 20
+      },
+      {
+        "label": "Romans 11:26",
+        "book": 44,
+        "chapter": 11,
+        "verse": 26
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 59:20",
+        "quote": "unto them that turn from transgression in Jacob"
+      },
+      {
+        "label": "B",
+        "ref": "Romans 11:26",
+        "quote": "shall turn away ungodliness from Jacob"
+      }
+    ]
+  },
+  {
+    "id": "opening-of-the-prison-or-recovery-of-sight-to-the-blind-isaiah-61-1-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 61:1",
+    "appliesTo": [
+      "Isaiah 61:1"
+    ],
+    "title": "“The opening of the prison to them that are bound” — the Greek has “recovery of sight to the blind”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 61:1 ends “the opening of the prison to them that are bound”. Brenton’s Greek prints a clause that Brenton’s English renders “and recovery of sight to the blind”.",
+    "text": "KJV Isaiah 61:1: “The Spirit of the Lord God is upon me; because the Lord hath anointed me to preach good tidings unto the meek; he hath sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to them that are bound;” Hebrew (WLC) 61:1: וְלַאֲסוּרִ֖ים פְּקַח־קֹֽוחַ. Brenton’s Greek 61:1: καὶ τυφλοῖς ἀνάβλεψιν. Brenton’s own English (https://ebible.org/eng-Brenton/ISA61.htm) prints: “and recovery of sight to the blind”. KJV Luke 4:18: “The Spirit of the Lord is upon me, because he hath anointed me to preach the gospel to the poor; he hath sent me to heal the brokenhearted, to preach deliverance to the captives, and recovering of sight to the blind, to set at liberty them that are bruised,” Fetched from https://bolls.life/get-text/WLC/23/61/ and https://ebible.org/grcbrent/ISA61.htm.",
+    "reasoning": "The KJV’s last clause is about those who are bound and the opening of a prison. The Greek in Brenton’s English is about “the blind” and “recovery of sight”. The recipients and what they receive differ. The KJV of Luke 4:18 has “recovering of sight to the blind”.",
+    "scope": "T applies at Isaiah 61:1. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Greek of the New Testament verse in side B was not examined; its KJV wording is quoted only to show how it words the same matter. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 61: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA61.htm"
+      },
+      {
+        "label": "Luke 4: KJV",
+        "url": "https://ebible.org/eng-kjv/LUK04.htm"
+      },
+      {
+        "label": "Isaiah 61: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/61/"
+      },
+      {
+        "label": "Isaiah 61: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA61.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 61:1",
+        "book": 22,
+        "chapter": 61,
+        "verse": 1
+      },
+      {
+        "label": "Luke 4:18",
+        "book": 41,
+        "chapter": 4,
+        "verse": 18
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 61:1",
+        "quote": "the opening of the prison to them that are bound"
+      },
+      {
+        "label": "B",
+        "ref": "Luke 4:18",
+        "quote": "recovering of sight to the blind"
+      }
+    ]
+  },
+  {
+    "id": "the-angel-of-his-presence-or-not-an-ambassador-nor-a-messenger-isaiah-63-9-greek",
+    "mode": "contradictions",
+    "ref": "Isaiah 63:9",
+    "appliesTo": [
+      "Isaiah 63:9"
+    ],
+    "title": "“The angel of his presence saved them” — the Greek has “not an ambassador, nor a messenger, but himself saved them”",
+    "status": "Context",
+    "summary": "The KJV of Isaiah 63:9 says “the angel of his presence saved them”. Brenton’s Greek prints a clause that Brenton’s English renders “not an ambassador, nor a messenger, but himself saved them”.",
+    "text": "KJV Isaiah 63:9: “In all their affliction he was afflicted, and the angel of his presence saved them: in his love and in his pity he redeemed them; and he bare them, and carried them all the days of old.” Hebrew (WLC) 63:9: וּמַלְאַ֤ךְ פָּנָיו֙ הֹֽושִׁיעָ֔ם. Brenton’s Greek 63:9: οὐ πρέσβυς, οὐδὲ ἄγγελος, ἀλλʼ αὐτὸς ἔσωσεν αὐτοὺς. Brenton’s own English (https://ebible.org/eng-Brenton/ISA63.htm) prints: “not an ambassador, nor a messenger, but himself saved them”. Fetched from https://bolls.life/get-text/WLC/23/63/ and https://ebible.org/grcbrent/ISA63.htm.",
+    "reasoning": "The KJV names “the angel of his presence” as the one who saved. The Greek in Brenton’s English says “not an ambassador, nor a messenger” saved them, “but himself”. A messenger is the saviour in the KJV and is excluded as the saviour in Brenton’s English.",
+    "scope": "T applies at Isaiah 63:9. The record does not say what the Hebrew words quoted mean. This compares the wording of the texts quoted. It does not show which wording is original. The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted. The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "sources": [
+      {
+        "label": "Isaiah 63: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA63.htm"
+      },
+      {
+        "label": "Isaiah 63: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+        "url": "https://bolls.life/get-text/WLC/23/63/"
+      },
+      {
+        "label": "Isaiah 63: Brenton Greek edition of the Septuagint",
+        "url": "https://ebible.org/grcbrent/ISA63.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 63:9",
+        "book": 22,
+        "chapter": 63,
+        "verse": 9
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "T"
+    ],
+    "witness": "Septuagint",
+    "languageContext": "Hebrew Old Testament · Westminster Leningrad Codex (WLC) digital text; Greek Old Testament (Septuagint) · Brenton Greek edition",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 63:9",
+        "quote": "and the angel of his presence saved them"
+      }
+    ]
+  },
+  {
+    "id": "thou-art-my-servant-o-israel-and-bring-jacob-again-who-is-the-servant-of-isaiah-49-3-6",
+    "mode": "questions",
+    "ref": "Isaiah 49:3",
+    "appliesTo": [
+      "Isaiah 49:3"
+    ],
+    "title": "“Thou art my servant, O Israel” — and sent “to bring Jacob again to him”: who is the servant of Isaiah 49:3–6?",
+    "status": "Context",
+    "summary": "Isaiah 49:3 has the Lord say “Thou art my servant, O Israel”. Verses 5 and 6 have the servant sent “to bring Jacob again to him” and “to raise up the tribes of Jacob”. The verses quoted do not say whether the servant is the nation, a part of it, or one person.",
+    "text": "KJV Isaiah 49:3–6: “And said unto me, Thou art my servant, O Israel, in whom I will be glorified.” “Then I said, I have laboured in vain, I have spent my strength for nought, and in vain: yet surely my judgment is with the Lord, and my work with my God.” “And now, saith the Lord that formed me from the womb to be his servant, to bring Jacob again to him, Though Israel be not gathered, yet shall I be glorious in the eyes of the Lord, and my God shall be my strength.” “And he said, It is a light thing that thou shouldest be my servant to raise up the tribes of Jacob, and to restore the preserved of Israel: I will also give thee for a light to the Gentiles, that thou mayest be my salvation unto the end of the earth.”",
+    "reasoning": "Verse 3 names the servant “Israel”. Verse 5 says the servant was formed from the womb “to bring Jacob again to him”, with “Israel” named as not yet gathered, and verse 6 says it is “a light thing” that he should “raise up the tribes of Jacob” and “restore the preserved of Israel”. The same name is used for the servant and for those he is sent to. The verses do not say whether “Israel” in verse 3 is the whole people, a faithful part of it, or a single person who bears the name. Possible readings: the nation; a faithful remnant; an individual figure. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, and does not examine other servant passages of the book or how another book uses these verses.",
+    "sources": [
+      {
+        "label": "Isaiah 49: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA49.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 49:3",
+        "book": 22,
+        "chapter": 49,
+        "verse": 3
+      },
+      {
+        "label": "Isaiah 49:4",
+        "book": 22,
+        "chapter": 49,
+        "verse": 4
+      },
+      {
+        "label": "Isaiah 49:5",
+        "book": 22,
+        "chapter": 49,
+        "verse": 5
+      },
+      {
+        "label": "Isaiah 49:6",
+        "book": 22,
+        "chapter": 49,
+        "verse": 6
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 49:3",
+        "quote": "Thou art my servant, O Israel, in whom I will be glorified"
+      },
+      {
+        "label": "B",
+        "ref": "Isaiah 49:5",
+        "quote": "to bring Jacob again to him"
+      }
+    ]
+  },
+  {
+    "id": "who-is-this-that-cometh-from-edom-with-dyed-garments-from-bozrah-isaiah-63-1",
+    "mode": "questions",
+    "ref": "Isaiah 63:1",
+    "appliesTo": [
+      "Isaiah 63:1"
+    ],
+    "title": "“Who is this that cometh from Edom, with dyed garments from Bozrah?” — who is the one who answers?",
+    "status": "Context",
+    "summary": "Isaiah 63:1 asks “Who is this that cometh from Edom, with dyed garments from Bozrah?” and the one who comes replies “I that speak in righteousness, mighty to save”. The verses quoted do not name him.",
+    "text": "KJV Isaiah 63:1–3: “Who is this that cometh from Edom, with dyed garments from Bozrah? this that is glorious in his apparel, travelling in the greatness of his strength? I that speak in righteousness, mighty to save.” “Wherefore art thou red in thine apparel, and thy garments like him that treadeth in the winefat?” “I have trodden the winepress alone; and of the people there was none with me: for I will tread them in mine anger, and trample them in my fury; and their blood shall be sprinkled upon my garments, and I will stain all my raiment.”",
+    "reasoning": "The question is asked in verse 1 and the answer given in the same verse describes the speaker by what he does (“speak in righteousness”) and what he is (“mighty to save”), not by name. Verses 2 and 3 describe his garments and say that he trod the winepress alone and that “of the people there was none with me”. The verses do not say whether the figure is the Lord himself, a human champion, or an agent of the Lord. Possible readings: the Lord; a warrior sent by the Lord; a figure of the nations’ judgment. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, and does not examine other verses that name Edom or Bozrah or how another book uses the passage.",
+    "sources": [
+      {
+        "label": "Isaiah 63: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA63.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 63:1",
+        "book": 22,
+        "chapter": 63,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 63:2",
+        "book": 22,
+        "chapter": 63,
+        "verse": 2
+      },
+      {
+        "label": "Isaiah 63:3",
+        "book": 22,
+        "chapter": 63,
+        "verse": 3
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 63:1",
+        "quote": "I that speak in righteousness, mighty to save"
+      }
+    ]
+  },
+  {
+    "id": "who-hath-believed-our-report-whose-voice-says-we-in-isaiah-53-1",
+    "mode": "questions",
+    "ref": "Isaiah 53:1",
+    "appliesTo": [
+      "Isaiah 53:1"
+    ],
+    "title": "“Who hath believed our report?” — who is the “we” of Isaiah 53?",
+    "status": "Context",
+    "summary": "Isaiah 52:13 has the Lord speak of “my servant”. Isaiah 53:1 asks “Who hath believed our report?” and verse 4 says “we did esteem him stricken”. The verses quoted do not say who “we” and “our” are.",
+    "text": "KJV Isaiah 52:13: “Behold, my servant shall deal prudently, he shall be exalted and extolled, and be very high.” KJV Isaiah 52:15: “So shall he sprinkle many nations; the kings shall shut their mouths at him: for that which had not been told them shall they see; and that which they had not heard shall they consider.” KJV Isaiah 53:1: “Who hath believed our report? and to whom is the arm of the Lord revealed?” KJV Isaiah 53:4: “Surely he hath borne our griefs, and carried our sorrows: yet we did esteem him stricken, smitten of God, and afflicted.”",
+    "reasoning": "Isaiah 52:13 is in the voice of the Lord, who says “my servant”. Isaiah 53:1 changes to “our report” and “to whom is the arm of the Lord revealed”, and verse 4 says “we did esteem him stricken, smitten of God”. The verses do not say who speaks as “we”. Isaiah 52:15 speaks of kings who “shut their mouths” at him, and “that which had not been told them shall they see”. Possible readings: the prophet and his hearers; the people of Israel; the kings and nations of 52:15. The record does not decide between them.",
+    "scope": "Q marks a question the passage leaves open. It is not a finding of contradiction or of scientific error. The question is limited to the verses quoted. The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, and does not examine how another book uses the passage.",
+    "sources": [
+      {
+        "label": "Isaiah 52: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA52.htm"
+      },
+      {
+        "label": "Isaiah 53: KJV",
+        "url": "https://ebible.org/eng-kjv/ISA53.htm"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Isaiah 52:13",
+        "book": 22,
+        "chapter": 52,
+        "verse": 13
+      },
+      {
+        "label": "Isaiah 52:15",
+        "book": 22,
+        "chapter": 52,
+        "verse": 15
+      },
+      {
+        "label": "Isaiah 53:1",
+        "book": 22,
+        "chapter": 53,
+        "verse": 1
+      },
+      {
+        "label": "Isaiah 53:4",
+        "book": 22,
+        "chapter": 53,
+        "verse": 4
+      }
+    ],
+    "checked": "2026-10-13",
+    "tags": [
+      "Q"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Isaiah 53:1",
+        "quote": "Who hath believed our report? and to whom is the arm of the Lord revealed?"
+      }
+    ]
   }
 ]
 ;
