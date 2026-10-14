@@ -1,0 +1,704 @@
+{
+  "batch": "matthew-1-28",
+  "completeBatch": true,
+  "pendingRecords": [],
+  "checked": "2026-10-14T12:50:39.983Z",
+  "draftHashes": {
+    "matthew-1-28-records.json": "7dcde2d56652f4d622958475a4f8392072550276a4f4c3c31234a323547ececb",
+    "matthew-1-28-q-records.json": "68fff59d0064b2f6101c1ed8a439450a853aa85d6d21678adcf73ba95b8462ba",
+    "matthew-1-28-notes.md": "74494c814e505b00d619f6277573cfdad44950730cb99d855ef8a16a09a7d2d4",
+    "matthew-1-28-q-notes.md": "0fa826d146b4eb8ab313c3e364d5a4423dd0b35b49f9f07e60512ff61c927166"
+  },
+  "sourceCount": 64,
+  "sourceErrors": [],
+  "counts": {
+    "records": 45,
+    "sides": 76,
+    "englishQuotedFragments": 257,
+    "exactKjvFragments": 231,
+    "classifiedEnglishGlossesOrEllipses": 26,
+    "greekQuotedForms": 140,
+    "exactGreekForms": 134,
+    "classifiedGreekLemmas": 6
+  },
+  "sideErrors": [],
+  "greekAddressErrors": [],
+  "greekLemmaClassifications": [
+    {
+      "id": "hell-for-gehenna-and-hades-matthew-5-22-11-23-16-18-greek-new-testament",
+      "quote": "ᾅδης",
+      "matches": []
+    },
+    {
+      "id": "hell-for-gehenna-and-hades-matthew-5-22-11-23-16-18-greek-new-testament",
+      "quote": "ᾅδης,",
+      "matches": []
+    },
+    {
+      "id": "farthing-for-kodrantes-and-for-assarion-matthew-5-26-10-29-greek-new-testament",
+      "quote": "κοδράντης",
+      "matches": []
+    },
+    {
+      "id": "farthing-for-kodrantes-and-for-assarion-matthew-5-26-10-29-greek-new-testament",
+      "quote": "ἀσσάριον,",
+      "matches": []
+    },
+    {
+      "id": "tribute-for-didrachma-and-for-kenson-matthew-17-24-22-17-greek-new-testament",
+      "quote": "κῆνσος.",
+      "matches": []
+    },
+    {
+      "id": "neither-staves-or-save-a-staff-only-matthew-10-10-mark-6-8",
+      "quote": "ῥάβδος,",
+      "matches": []
+    }
+  ],
+  "englishClassifications": [
+    {
+      "id": "her-firstborn-son-or-a-son-matthew-1-25-greek-new-testament",
+      "quote": "a son",
+      "matches": []
+    },
+    {
+      "id": "her-firstborn-son-or-a-son-matthew-1-25-greek-new-testament",
+      "quote": "her son, the firstborn",
+      "matches": []
+    },
+    {
+      "id": "without-a-cause-or-no-qualifier-matthew-5-22-greek-new-testament",
+      "quote": "without cause",
+      "matches": []
+    },
+    {
+      "id": "do-not-even-the-publicans-so-or-the-gentiles-matthew-5-47-greek-new-testament",
+      "quote": "the Gentiles",
+      "matches": []
+    },
+    {
+      "id": "do-not-your-alms-or-your-righteousness-matthew-6-1-greek-new-testament",
+      "quote": "righteousness",
+      "matches": []
+    },
+    {
+      "id": "for-thine-is-the-kingdom-and-the-power-or-the-prayer-ends-matthew-6-13-greek-new-testament",
+      "quote": "but deliver us from the evil",
+      "matches": []
+    },
+    {
+      "id": "for-thine-is-the-kingdom-and-the-power-or-the-prayer-ends-matthew-6-13-greek-new-testament",
+      "quote": "the evil one",
+      "matches": []
+    },
+    {
+      "id": "which-art-exalted-unto-heaven-or-shall-you-be-exalted-matthew-11-23-greek-new-testament",
+      "quote": "having been exalted",
+      "matches": []
+    },
+    {
+      "id": "spoken-by-the-prophet-or-spoken-through-isaiah-the-prophet-matthew-13-35-greek-new-testament",
+      "quote": "Isaiah the prophet",
+      "matches": []
+    },
+    {
+      "id": "because-of-your-unbelief-or-because-of-your-little-faith-matthew-17-20-greek-new-testament",
+      "quote": "because of your little faith",
+      "matches": []
+    },
+    {
+      "id": "except-it-be-for-fornication-and-whoso-marrieth-her-or-not-for-fornication-matthew-19-9-greek-new-testament",
+      "quote": "commits adultery",
+      "matches": []
+    },
+    {
+      "id": "why-callest-thou-me-good-or-why-askest-thou-me-about-the-good-matthew-19-17-greek-new-testament",
+      "quote": "Why askest thou me concerning the good?",
+      "matches": []
+    },
+    {
+      "id": "why-callest-thou-me-good-or-why-askest-thou-me-about-the-good-matthew-19-17-greek-new-testament",
+      "quote": "Why do you ask me about the good? There is one who is good",
+      "matches": []
+    },
+    {
+      "id": "why-callest-thou-me-good-or-why-askest-thou-me-about-the-good-matthew-19-17-greek-new-testament",
+      "quote": "the good",
+      "matches": []
+    },
+    {
+      "id": "for-many-be-called-but-few-chosen-matthew-20-16-greek-new-testament",
+      "quote": "many are called, few chosen",
+      "matches": []
+    },
+    {
+      "id": "no-not-the-angels-of-heaven-but-my-father-only-or-nor-the-son-matthew-24-36-greek-new-testament",
+      "quote": "nor the Son",
+      "matches": []
+    },
+    {
+      "id": "no-not-the-angels-of-heaven-but-my-father-only-or-nor-the-son-matthew-24-36-greek-new-testament",
+      "quote": "the angels of the heavens",
+      "matches": []
+    },
+    {
+      "id": "what-hour-your-lord-doth-come-or-what-day-matthew-24-42-greek-new-testament",
+      "quote": "what day",
+      "matches": []
+    },
+    {
+      "id": "what-hour-your-lord-doth-come-or-what-day-matthew-24-42-greek-new-testament",
+      "quote": "that day and hour",
+      "matches": []
+    },
+    {
+      "id": "vinegar-to-drink-mingled-with-gall-or-wine-mingled-with-gall-matthew-27-34-greek-new-testament",
+      "quote": "vinegar … mingled with gall",
+      "matches": []
+    },
+    {
+      "id": "hell-for-gehenna-and-hades-matthew-5-22-11-23-16-18-greek-new-testament",
+      "quote": "the Gehenna of fire",
+      "matches": []
+    },
+    {
+      "id": "the-end-of-the-world-or-the-completion-of-the-age-matthew-13-39-24-3-28-20-greek-new-testament",
+      "quote": "the completion of the age",
+      "matches": []
+    },
+    {
+      "id": "strain-at-a-gnat-or-straining-out-the-gnat-matthew-23-24-greek-new-testament",
+      "quote": "strain out the gnat",
+      "matches": []
+    },
+    {
+      "id": "strain-at-a-gnat-or-straining-out-the-gnat-matthew-23-24-greek-new-testament",
+      "quote": "through",
+      "matches": []
+    },
+    {
+      "id": "strain-at-a-gnat-or-straining-out-the-gnat-matthew-23-24-greek-new-testament",
+      "quote": "strain out",
+      "matches": []
+    },
+    {
+      "id": "the-thieves-also-cast-the-same-in-his-teeth-or-the-other-rebuked-him-matthew-27-44-luke-23-39",
+      "quote": "The thieves also … cast the same in his teeth",
+      "matches": []
+    }
+  ],
+  "decisions": [
+    {
+      "id": "her-firstborn-son-or-a-son-matthew-1-25-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "without-a-cause-or-no-qualifier-matthew-5-22-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "bless-them-that-curse-you-or-love-your-enemies-and-pray-matthew-5-44-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "do-not-even-the-publicans-so-or-the-gentiles-matthew-5-47-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "do-not-your-alms-or-your-righteousness-matthew-6-1-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "for-thine-is-the-kingdom-and-the-power-or-the-prayer-ends-matthew-6-13-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "the-country-of-the-gergesenes-or-the-gadarenes-matthew-8-28-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "which-art-exalted-unto-heaven-or-shall-you-be-exalted-matthew-11-23-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "spoken-by-the-prophet-or-spoken-through-isaiah-the-prophet-matthew-13-35-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "because-of-your-unbelief-or-because-of-your-little-faith-matthew-17-20-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "this-kind-goeth-not-out-but-by-prayer-and-fasting-matthew-17-21-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "the-son-of-man-is-come-to-save-that-which-was-lost-matthew-18-11-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "except-it-be-for-fornication-and-whoso-marrieth-her-or-not-for-fornication-matthew-19-9-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "why-callest-thou-me-good-or-why-askest-thou-me-about-the-good-matthew-19-17-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "for-many-be-called-but-few-chosen-matthew-20-16-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "baptized-with-the-baptism-that-i-am-baptized-with-matthew-20-22-20-23-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "woe-unto-you-ye-devour-widows-houses-matthew-23-14-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "no-not-the-angels-of-heaven-but-my-father-only-or-nor-the-son-matthew-24-36-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "what-hour-your-lord-doth-come-or-what-day-matthew-24-42-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "my-blood-of-the-new-testament-or-my-blood-of-the-covenant-matthew-26-28-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "vinegar-to-drink-mingled-with-gall-or-wine-mingled-with-gall-matthew-27-34-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "that-it-might-be-fulfilled-they-parted-my-garments-matthew-27-35-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "hell-for-gehenna-and-hades-matthew-5-22-11-23-16-18-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "the-end-of-the-world-or-the-completion-of-the-age-matthew-13-39-24-3-28-20-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "farthing-for-kodrantes-and-for-assarion-matthew-5-26-10-29-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "tribute-for-didrachma-and-for-kenson-matthew-17-24-22-17-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "strain-at-a-gnat-or-straining-out-the-gnat-matthew-23-24-greek-new-testament",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted under T: exact KJV and supplied Greek quotations verified at the cited printed verses; the stated meaning difference and edition limits are preserved.",
+      "operation": "new",
+      "tags": [
+        "T"
+      ],
+      "witness": "Greek New Testament",
+      "needsOwner": false
+    },
+    {
+      "id": "neither-staves-or-save-a-staff-only-matthew-10-10-mark-6-8",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "before-the-cock-crow-thrice-or-before-the-cock-crow-twice-matthew-26-34-mark-14-30",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "the-thieves-also-cast-the-same-in-his-teeth-or-the-other-rebuked-him-matthew-27-44-luke-23-39",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "two-blind-men-or-a-certain-blind-man-matthew-20-30-mark-10-46-luke-18-35",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "two-possessed-with-devils-or-a-man-with-an-unclean-spirit-matthew-8-28-mark-5-2",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "pinnacle-second-and-mountain-third-or-mountain-second-and-pinnacle-third-matthew-4-5-luke-4-5",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "three-days-and-three-nights-or-the-third-day-matthew-12-40-matthew-16-21",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "this-is-elias-or-i-am-not-matthew-11-14-john-1-21",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "jacob-begat-joseph-or-joseph-which-was-the-son-of-heli-matthew-1-16-luke-3-23",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "my-daughter-is-even-now-dead-or-lieth-at-the-point-of-death-matthew-9-18-mark-5-23",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "there-came-unto-him-a-centurion-or-he-sent-unto-him-the-elders-matthew-8-5-luke-7-3",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "the-mother-of-zebedees-children-or-james-and-john-matthew-20-20-mark-10-35",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "an-ass-and-a-colt-or-a-colt-matthew-21-2-mark-11-2",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "this-is-jesus-the-king-of-the-jews-or-the-king-of-the-jews-or-jesus-of-nazareth-matthew-27-37-john-19-19",
+      "file": "matthew-1-28-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded passage comparison: exact KJV, supplied Greek quotations and sides verified; the record preserves possible harmonizations and does not claim which account is mistaken.",
+      "operation": "new",
+      "tags": [],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "he-shall-be-called-a-nazarene-which-prophets-and-which-words-matthew-2-23",
+      "file": "matthew-1-28-q-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded unanswered question: exact KJV quotations and sides verified, alternatives remain readings, and no answer is asserted.",
+      "operation": "new",
+      "tags": [
+        "Q"
+      ],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "many-bodies-of-the-saints-which-slept-arose-who-were-they-and-what-became-of-them-matthew-27-52",
+      "file": "matthew-1-28-q-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded unanswered question: exact KJV quotations and sides verified, alternatives remain readings, and no answer is asserted.",
+      "operation": "new",
+      "tags": [
+        "Q"
+      ],
+      "witness": null,
+      "needsOwner": false
+    },
+    {
+      "id": "we-have-seen-his-star-in-the-east-what-was-the-star-matthew-2-2",
+      "file": "matthew-1-28-q-records.json",
+      "decision": "accepted",
+      "reason": "Accepted as a bounded unanswered question: exact KJV quotations and sides verified, alternatives remain readings, and no answer is asserted.",
+      "operation": "new",
+      "tags": [
+        "Q"
+      ],
+      "witness": null,
+      "needsOwner": false
+    }
+  ],
+  "needsOwner": [],
+  "normalization": "KJV sides exact. Curly-quoted English checked against all supplied refs; unmatched items are Greek glosses, paraphrases or explicit ellipses. Greek accents and punctuation normalized; exact forms matched a supplied page and printed verse. Six unmatched Greek tokens are explicitly named lemmas, while their printed inflected forms were separately verified."
+}

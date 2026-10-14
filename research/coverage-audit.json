@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1030,
+    "evidenceRecords": 1075,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 688,
-    "annotatedVerses": 3413
+    "chaptersWithAnnotations": 714,
+    "annotatedVerses": 3479
   },
   "byBook": [
     {
@@ -249,26 +249,26 @@
     {
       "book": "Matthew",
       "chapters": 28,
-      "chaptersWithAnnotations": 5,
-      "annotatedVerses": 19
+      "chaptersWithAnnotations": 23,
+      "annotatedVerses": 69
     },
     {
       "book": "Mark",
       "chapters": 16,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 11
+      "chaptersWithAnnotations": 8,
+      "annotatedVerses": 19
     },
     {
       "book": "Luke",
       "chapters": 24,
-      "chaptersWithAnnotations": 4,
-      "annotatedVerses": 13
+      "chaptersWithAnnotations": 6,
+      "annotatedVerses": 18
     },
     {
       "book": "John",
       "chapters": 21,
       "chaptersWithAnnotations": 3,
-      "annotatedVerses": 7
+      "annotatedVerses": 10
     },
     {
       "book": "Acts",
@@ -16138,9 +16138,17 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "her-firstborn-son-or-a-son-matthew-1-25-greek-new-testament",
+        "jacob-begat-joseph-or-joseph-which-was-the-son-of-heli-matthew-1-16-luke-3-23"
+      ],
+      "annotatedVerses": [
+        16,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16150,16 +16158,21 @@
       "annotationIds": [
         "legacy-history-8",
         "legacy-history-9",
-        "though-thou-be-little-among-the-thousands-of-judah-or-art-not-the-least-among-the-princes-of-juda-micah-5-2"
+        "though-thou-be-little-among-the-thousands-of-judah-or-art-not-the-least-among-the-princes-of-juda-micah-5-2",
+        "he-shall-be-called-a-nazarene-which-prophets-and-which-words-matthew-2-23",
+        "we-have-seen-his-star-in-the-east-what-was-the-star-matthew-2-2"
       ],
       "annotatedVerses": [
         1,
+        2,
         6,
-        22
+        22,
+        23
       ],
       "modes": [
         "history",
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -16176,9 +16189,16 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "pinnacle-second-and-mountain-third-or-mountain-second-and-pinnacle-third-matthew-4-5-luke-4-5"
+      ],
+      "annotatedVerses": [
+        5,
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16186,14 +16206,23 @@
       "bookId": 39,
       "chapter": 5,
       "annotationIds": [
-        "deuteronomy-oaths-and-matthew"
+        "deuteronomy-oaths-and-matthew",
+        "without-a-cause-or-no-qualifier-matthew-5-22-greek-new-testament",
+        "bless-them-that-curse-you-or-love-your-enemies-and-pray-matthew-5-44-greek-new-testament",
+        "do-not-even-the-publicans-so-or-the-gentiles-matthew-5-47-greek-new-testament",
+        "hell-for-gehenna-and-hades-matthew-5-22-11-23-16-18-greek-new-testament",
+        "farthing-for-kodrantes-and-for-assarion-matthew-5-26-10-29-greek-new-testament"
       ],
       "annotatedVerses": [
+        22,
+        26,
         33,
         34,
         35,
         36,
-        37
+        37,
+        44,
+        47
       ],
       "modes": [
         "contradictions"
@@ -16204,9 +16233,17 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "do-not-your-alms-or-your-righteousness-matthew-6-1-greek-new-testament",
+        "for-thine-is-the-kingdom-and-the-power-or-the-prayer-ends-matthew-6-13-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        1,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16222,27 +16259,50 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-country-of-the-gergesenes-or-the-gadarenes-matthew-8-28-greek-new-testament",
+        "two-possessed-with-devils-or-a-man-with-an-unclean-spirit-matthew-8-28-mark-5-2",
+        "there-came-unto-him-a-centurion-or-he-sent-unto-him-the-elders-matthew-8-5-luke-7-3"
+      ],
+      "annotatedVerses": [
+        5,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Matthew",
       "bookId": 39,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "my-daughter-is-even-now-dead-or-lieth-at-the-point-of-death-matthew-9-18-mark-5-23"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Matthew",
       "bookId": 39,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "farthing-for-kodrantes-and-for-assarion-matthew-5-26-10-29-greek-new-testament",
+        "neither-staves-or-save-a-staff-only-matthew-10-10-mark-6-8"
+      ],
+      "annotatedVerses": [
+        10,
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16250,10 +16310,15 @@
       "bookId": 39,
       "chapter": 11,
       "annotationIds": [
-        "prepare-the-way-before-me-or-prepare-thy-way-before-thee-malachi-3-1"
+        "prepare-the-way-before-me-or-prepare-thy-way-before-thee-malachi-3-1",
+        "which-art-exalted-unto-heaven-or-shall-you-be-exalted-matthew-11-23-greek-new-testament",
+        "hell-for-gehenna-and-hades-matthew-5-22-11-23-16-18-greek-new-testament",
+        "this-is-elias-or-i-am-not-matthew-11-14-john-1-21"
       ],
       "annotatedVerses": [
-        10
+        10,
+        14,
+        23
       ],
       "modes": [
         "contradictions"
@@ -16264,18 +16329,32 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "three-days-and-three-nights-or-the-third-day-matthew-12-40-matthew-16-21"
+      ],
+      "annotatedVerses": [
+        40
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Matthew",
       "bookId": 39,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "spoken-by-the-prophet-or-spoken-through-isaiah-the-prophet-matthew-13-35-greek-new-testament",
+        "the-end-of-the-world-or-the-completion-of-the-age-matthew-13-39-24-3-28-20-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        35,
+        39
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16300,27 +16379,51 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hell-for-gehenna-and-hades-matthew-5-22-11-23-16-18-greek-new-testament",
+        "three-days-and-three-nights-or-the-third-day-matthew-12-40-matthew-16-21"
+      ],
+      "annotatedVerses": [
+        18,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Matthew",
       "bookId": 39,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "because-of-your-unbelief-or-because-of-your-little-faith-matthew-17-20-greek-new-testament",
+        "this-kind-goeth-not-out-but-by-prayer-and-fasting-matthew-17-21-greek-new-testament",
+        "tribute-for-didrachma-and-for-kenson-matthew-17-24-22-17-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        20,
+        21,
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Matthew",
       "bookId": 39,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-son-of-man-is-come-to-save-that-which-was-lost-matthew-18-11-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16328,12 +16431,15 @@
       "bookId": 39,
       "chapter": 19,
       "annotationIds": [
-        "coverage-nt-divorce"
+        "coverage-nt-divorce",
+        "except-it-be-for-fornication-and-whoso-marrieth-her-or-not-for-fornication-matthew-19-9-greek-new-testament",
+        "why-callest-thou-me-good-or-why-askest-thou-me-about-the-good-matthew-19-17-greek-new-testament"
       ],
       "annotatedVerses": [
         7,
         8,
-        9
+        9,
+        17
       ],
       "modes": [
         "contradictions"
@@ -16344,45 +16450,88 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "for-many-be-called-but-few-chosen-matthew-20-16-greek-new-testament",
+        "baptized-with-the-baptism-that-i-am-baptized-with-matthew-20-22-20-23-greek-new-testament",
+        "two-blind-men-or-a-certain-blind-man-matthew-20-30-mark-10-46-luke-18-35",
+        "the-mother-of-zebedees-children-or-james-and-john-matthew-20-20-mark-10-35"
+      ],
+      "annotatedVerses": [
+        16,
+        20,
+        22,
+        23,
+        30
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Matthew",
       "bookId": 39,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "an-ass-and-a-colt-or-a-colt-matthew-21-2-mark-11-2"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Matthew",
       "bookId": 39,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "tribute-for-didrachma-and-for-kenson-matthew-17-24-22-17-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Matthew",
       "bookId": 39,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "woe-unto-you-ye-devour-widows-houses-matthew-23-14-greek-new-testament",
+        "strain-at-a-gnat-or-straining-out-the-gnat-matthew-23-24-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        14,
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Matthew",
       "bookId": 39,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "no-not-the-angels-of-heaven-but-my-father-only-or-nor-the-son-matthew-24-36-greek-new-testament",
+        "what-hour-your-lord-doth-come-or-what-day-matthew-24-42-greek-new-testament",
+        "the-end-of-the-world-or-the-completion-of-the-age-matthew-13-39-24-3-28-20-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        3,
+        36,
+        42
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16398,27 +16547,13 @@
       "book": "Matthew",
       "bookId": 39,
       "chapter": 26,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
-      "researchStatus": "exhaustive-review-not-certified"
-    },
-    {
-      "book": "Matthew",
-      "bookId": 39,
-      "chapter": 27,
       "annotationIds": [
-        "spoken-by-jeremy-the-prophet-or-the-thirty-pieces-of-silver-in-zechariah-matthew-27-9",
-        "study-judas"
+        "my-blood-of-the-new-testament-or-my-blood-of-the-covenant-matthew-26-28-greek-new-testament",
+        "before-the-cock-crow-thrice-or-before-the-cock-crow-twice-matthew-26-34-mark-14-30"
       ],
       "annotatedVerses": [
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
+        28,
+        34
       ],
       "modes": [
         "contradictions"
@@ -16428,10 +16563,51 @@
     {
       "book": "Matthew",
       "bookId": 39,
+      "chapter": 27,
+      "annotationIds": [
+        "spoken-by-jeremy-the-prophet-or-the-thirty-pieces-of-silver-in-zechariah-matthew-27-9",
+        "vinegar-to-drink-mingled-with-gall-or-wine-mingled-with-gall-matthew-27-34-greek-new-testament",
+        "that-it-might-be-fulfilled-they-parted-my-garments-matthew-27-35-greek-new-testament",
+        "the-thieves-also-cast-the-same-in-his-teeth-or-the-other-rebuked-him-matthew-27-44-luke-23-39",
+        "this-is-jesus-the-king-of-the-jews-or-the-king-of-the-jews-or-jesus-of-nazareth-matthew-27-37-john-19-19",
+        "many-bodies-of-the-saints-which-slept-arose-who-were-they-and-what-became-of-them-matthew-27-52",
+        "study-judas"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        34,
+        35,
+        37,
+        44,
+        52
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
+      "researchStatus": "exhaustive-review-not-certified"
+    },
+    {
+      "book": "Matthew",
+      "bookId": 39,
       "chapter": 28,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-end-of-the-world-or-the-completion-of-the-age-matthew-13-39-24-3-28-20-greek-new-testament",
+        "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1"
+      ],
+      "annotatedVerses": [
+        1,
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16480,18 +16656,32 @@
       "book": "Mark",
       "bookId": 40,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "two-possessed-with-devils-or-a-man-with-an-unclean-spirit-matthew-8-28-mark-5-2",
+        "my-daughter-is-even-now-dead-or-lieth-at-the-point-of-death-matthew-9-18-mark-5-23"
+      ],
+      "annotatedVerses": [
+        2,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Mark",
       "bookId": 40,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "neither-staves-or-save-a-staff-only-matthew-10-10-mark-6-8"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16527,12 +16717,15 @@
       "chapter": 10,
       "annotationIds": [
         "coverage-nt-jericho",
-        "coverage-nt-divorce"
+        "coverage-nt-divorce",
+        "two-blind-men-or-a-certain-blind-man-matthew-20-30-mark-10-46-luke-18-35",
+        "the-mother-of-zebedees-children-or-james-and-john-matthew-20-20-mark-10-35"
       ],
       "annotatedVerses": [
         10,
         11,
         12,
+        35,
         46,
         47,
         48,
@@ -16550,9 +16743,15 @@
       "book": "Mark",
       "bookId": 40,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "an-ass-and-a-colt-or-a-colt-matthew-21-2-mark-11-2"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16577,27 +16776,45 @@
       "book": "Mark",
       "bookId": 40,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "before-the-cock-crow-thrice-or-before-the-cock-crow-twice-matthew-26-34-mark-14-30"
+      ],
+      "annotatedVerses": [
+        30
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Mark",
       "bookId": 40,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "this-is-jesus-the-king-of-the-jews-or-the-king-of-the-jews-or-jesus-of-nazareth-matthew-27-37-john-19-19"
+      ],
+      "annotatedVerses": [
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Mark",
       "bookId": 40,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16632,13 +16849,16 @@
       "bookId": 41,
       "chapter": 3,
       "annotationIds": [
-        "legacy-history-11"
+        "legacy-history-11",
+        "jacob-begat-joseph-or-joseph-which-was-the-son-of-heli-matthew-1-16-luke-3-23"
       ],
       "annotatedVerses": [
-        1
+        1,
+        23
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -16647,9 +16867,12 @@
       "bookId": 41,
       "chapter": 4,
       "annotationIds": [
-        "elijah-drought-ended-in-third-year-or-after-three-years-six-months"
+        "elijah-drought-ended-in-third-year-or-after-three-years-six-months",
+        "pinnacle-second-and-mountain-third-or-mountain-second-and-pinnacle-third-matthew-4-5-luke-4-5"
       ],
       "annotatedVerses": [
+        5,
+        9,
         25
       ],
       "modes": [
@@ -16679,9 +16902,15 @@
       "book": "Luke",
       "bookId": 41,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "there-came-unto-him-a-centurion-or-he-sent-unto-him-the-elders-matthew-8-5-luke-7-3"
+      ],
+      "annotatedVerses": [
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16837,9 +17066,15 @@
       "book": "Luke",
       "bookId": 41,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-thieves-also-cast-the-same-in-his-teeth-or-the-other-rebuked-him-matthew-27-44-luke-23-39"
+      ],
+      "annotatedVerses": [
+        40
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16857,10 +17092,12 @@
       "chapter": 1,
       "annotationIds": [
         "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
+        "this-is-elias-or-i-am-not-matthew-11-14-john-1-21",
         "study-seen"
       ],
       "annotatedVerses": [
-        18
+        18,
+        21
       ],
       "modes": [
         "contradictions"
@@ -17025,9 +17262,11 @@
       "bookId": 42,
       "chapter": 19,
       "annotationIds": [
-        "look-upon-me-whom-they-have-pierced-or-look-on-him-whom-they-pierced-zechariah-12-10"
+        "look-upon-me-whom-they-have-pierced-or-look-on-him-whom-they-pierced-zechariah-12-10",
+        "this-is-jesus-the-king-of-the-jews-or-the-king-of-the-jews-or-jesus-of-nazareth-matthew-27-37-john-19-19"
       ],
       "annotatedVerses": [
+        19,
         37
       ],
       "modes": [
@@ -17040,9 +17279,11 @@
       "bookId": 42,
       "chapter": 20,
       "annotationIds": [
-        "coverage-nt-spirit-timing"
+        "coverage-nt-spirit-timing",
+        "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1"
       ],
       "annotatedVerses": [
+        1,
         19,
         20,
         21,
