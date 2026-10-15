@@ -1,0 +1,7 @@
+# Full-pane bookmark glass — 2026-10-14
+
+Applied the owner's screenshot and browser comment: the complete bookmarked verse pane now receives one yellow glass surface, including when selected. The former inner background/border is cleared. Typography matches comparison summaries (Inter, 1rem/1.6), with the same 16px 18px card padding and 20px corner radius. The shared dark glass gradient and shadow use yellow RGB234,179,8; light mode retains pale glass with yellow glow. Scripture verse typography also follows the requested summary font/spacing.
+
+Removed the underline/bottom border from highlighted scripture in both themes. Paging arrows and page action buttons now use glass gradients, inset highlights and blur; category cues, verse numbers and the borderless settings trigger retain their existing roles. Paging geometry and interactions are unchanged.
+
+Build and full npm checks passed, including 18 deterministic Chat fixtures. Actual browser QA at541x1004 confirmed summary/verse font16px and line-height25.6px, identical 16px18px pane padding, 20px radius, one outer yellow radial gradient, no inner background, zero highlight border/decoration, and paging blur14px. Selected+bookmarked dark-mode screenshot saved. Light and dark modes checked;320px and1280px showed no horizontal overflow; browser console clean. No scripture, evidence, study, red-letter, Worker logic or Claude draft changes. Live generated-answer correctness was not evaluated.

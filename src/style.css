@@ -734,3 +734,21 @@ body .context-preview[hidden]{display:none}
 body .context-preview-link{display:grid;gap:7px;color:inherit;text-decoration:none;font:.875rem/1.5 "Inter",system-ui}
 body .context-preview-link span{color:var(--green);font-size:.75rem}
 body .verse-share-link{width:100%;margin-top:10px;padding:8px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px}
+
+/* One summary-style yellow glass surface around the entire bookmarked pane. */
+body .verse-body,body .with-comparisons .verse-body{font:400 1rem/1.6 "Inter",system-ui,sans-serif}
+body .verse:has(.verse-body.verse-bookmarked){
+ --theme-rgb:234,179,8;
+ background:radial-gradient(ellipse at 50% 30%,rgba(var(--theme-rgb),.28) 0%,rgba(12,17,26,.85) 90%)!important;background-color:#0c111a!important;
+ border:1.5px solid rgba(var(--theme-rgb),.5);border-radius:20px;
+ box-shadow:0 8px 32px rgba(0,0,0,.55),0 0 20px rgba(var(--theme-rgb),.25),inset 0 1px 2px rgba(255,255,255,.4),inset 0 0 15px rgba(var(--theme-rgb),.2);
+ -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);color:#fff;padding:16px 18px!important;text-shadow:0 1px 2px rgba(0,0,0,.6)
+}
+body:not(.dark) .verse:has(.verse-body.verse-bookmarked){background:radial-gradient(ellipse at 50% 0%,rgba(var(--theme-rgb),.12),rgba(255,255,255,.82) 85%)!important;background-color:#f7faff!important;color:var(--ink);text-shadow:none;border-color:rgba(var(--theme-rgb),.32);box-shadow:0 5px 18px rgba(16,44,72,.09),0 0 20px rgba(var(--theme-rgb),.18),inset 0 1px 2px rgba(255,255,255,.8)}
+body .verse-body.verse-bookmarked{background:none;border:0;border-radius:0;box-shadow:none;padding:0;backdrop-filter:none;-webkit-backdrop-filter:none}
+body:not(.dark) mark.side-quote[data-tone],body.dark mark.side-quote[data-tone]{border:0;text-decoration:none;box-shadow:none}
+body .edge-page svg{background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.25),rgba(15,23,34,.7));background-color:#0f1722;border:1px solid rgba(59,130,246,.5);box-shadow:0 0 14px rgba(59,130,246,.25),inset 0 1px 1.5px rgba(255,255,255,.45),inset 0 -1px 2px rgba(0,0,0,.35);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:var(--control-text)}
+body:not(.dark) .edge-page svg{background:linear-gradient(rgba(59,130,246,.10),rgba(255,255,255,.85));background-color:#f7faff;box-shadow:0 2px 10px rgba(59,130,246,.18),inset 0 1px 2px #fff}
+body button:not(.category-filter):not(.comparison-tab):not(.verse-num):not(.edge-page):not(#reader-picker):not([data-context-expand]):not([data-context-collapse]){background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.2),rgba(15,23,34,.65));background-color:#0f1722;border-color:rgba(59,130,246,.4);box-shadow:0 0 12px rgba(59,130,246,.16),inset 0 1px 1.5px rgba(255,255,255,.35);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+body:not(.dark) button:not(.category-filter):not(.comparison-tab):not(.verse-num):not(.edge-page):not(#reader-picker):not([data-context-expand]):not([data-context-collapse]){background:linear-gradient(rgba(59,130,246,.10),rgba(255,255,255,.85));background-color:#f7faff;box-shadow:0 2px 10px rgba(59,130,246,.12),inset 0 1px 2px #fff}
+body nav button.active{background-color:var(--control-active)!important;box-shadow:0 0 14px rgba(56,189,248,.22),inset 0 1px 2px #ffffff66!important}
