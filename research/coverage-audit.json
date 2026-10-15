@@ -5,30 +5,30 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1232,
+    "evidenceRecords": 1348,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 755,
-    "annotatedVerses": 3673
+    "chaptersWithAnnotations": 793,
+    "annotatedVerses": 3799
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
       "chaptersWithAnnotations": 35,
-      "annotatedVerses": 111
+      "annotatedVerses": 112
     },
     {
       "book": "Exodus",
       "chapters": 40,
       "chaptersWithAnnotations": 40,
-      "annotatedVerses": 450
+      "annotatedVerses": 451
     },
     {
       "book": "Leviticus",
       "chapters": 27,
       "chaptersWithAnnotations": 27,
-      "annotatedVerses": 378
+      "annotatedVerses": 379
     },
     {
       "book": "Numbers",
@@ -123,8 +123,8 @@
     {
       "book": "Psalms",
       "chapters": 150,
-      "chaptersWithAnnotations": 70,
-      "annotatedVerses": 129
+      "chaptersWithAnnotations": 71,
+      "annotatedVerses": 130
     },
     {
       "book": "Proverbs",
@@ -148,7 +148,7 @@
       "book": "Isaiah",
       "chapters": 66,
       "chaptersWithAnnotations": 36,
-      "annotatedVerses": 68
+      "annotatedVerses": 69
     },
     {
       "book": "Jeremiah",
@@ -177,8 +177,8 @@
     {
       "book": "Hosea",
       "chapters": 14,
-      "chaptersWithAnnotations": 12,
-      "annotatedVerses": 27
+      "chaptersWithAnnotations": 13,
+      "annotatedVerses": 28
     },
     {
       "book": "Joel",
@@ -190,7 +190,7 @@
       "book": "Amos",
       "chapters": 9,
       "chaptersWithAnnotations": 9,
-      "annotatedVerses": 30
+      "annotatedVerses": 31
     },
     {
       "book": "Obadiah",
@@ -262,7 +262,7 @@
       "book": "Luke",
       "chapters": 24,
       "chaptersWithAnnotations": 20,
-      "annotatedVerses": 77
+      "annotatedVerses": 78
     },
     {
       "book": "John",
@@ -273,14 +273,14 @@
     {
       "book": "Acts",
       "chapters": 28,
-      "chaptersWithAnnotations": 4,
-      "annotatedVerses": 15
+      "chaptersWithAnnotations": 26,
+      "annotatedVerses": 84
     },
     {
       "book": "Romans",
       "chapters": 16,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 10
+      "chaptersWithAnnotations": 15,
+      "annotatedVerses": 58
     },
     {
       "book": "1 Corinthians",
@@ -297,8 +297,8 @@
     {
       "book": "Galatians",
       "chapters": 6,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 11
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 12
     },
     {
       "book": "Ephesians",
@@ -540,11 +540,13 @@
       "chapter": 6,
       "annotationIds": [
         "early-ark-count",
-        "sons-of-god-and-daughters-of-men-identity-unstated"
+        "sons-of-god-and-daughters-of-men-identity-unstated",
+        "the-earth-is-filled-with-violence-through-them-or-sin-is-not-imputed-when-there-is-no-law-genesis-6-13-romans-5-13"
       ],
       "annotatedVerses": [
         2,
         4,
+        13,
         19,
         20
       ],
@@ -1282,7 +1284,8 @@
         "exodus-signs-purpose",
         "exodus-zipporah",
         "exodus-labor-and-response",
-        "the-lord-met-him-and-sought-to-kill-him-or-an-angel-of-the-lord-greek"
+        "the-lord-met-him-and-sought-to-kill-him-or-an-angel-of-the-lord-greek",
+        "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
       ],
       "annotatedVerses": [
         1,
@@ -1294,6 +1297,7 @@
         7,
         8,
         9,
+        10,
         19,
         24,
         25,
@@ -2601,11 +2605,13 @@
       "annotationIds": [
         "leviticus-carcass-and-food-category",
         "second-animal-cheweth-the-cud-or-does-not-chew-the-cud-greek",
-        "flying-creeping-things-some-may-be-eaten-or-none"
+        "flying-creeping-things-some-may-be-eaten-or-none",
+        "they-are-unclean-to-you-or-there-is-nothing-unclean-of-itself-leviticus-11-8-romans-14-14"
       ],
       "annotatedVerses": [
         3,
         6,
+        8,
         21,
         22,
         24,
@@ -9992,9 +9998,15 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "my-glory-rejoiceth-or-my-tongue-was-glad-psalms-16-9-acts-2-26"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13079,11 +13091,13 @@
       "annotationIds": [
         "borne-our-griefs-or-bears-our-sins-isaiah-53-4-greek",
         "to-bruise-him-and-offering-for-sin-or-purge-him-from-his-stroke-isaiah-53-10-greek",
-        "who-hath-believed-our-report-whose-voice-says-we-in-isaiah-53-1"
+        "who-hath-believed-our-report-whose-voice-says-we-in-isaiah-53-1",
+        "he-was-taken-from-prison-and-from-judgment-or-his-judgment-was-taken-away-isaiah-53-8-acts-8-33"
       ],
       "annotatedVerses": [
         1,
         4,
+        8,
         10
       ],
       "modes": [
@@ -15061,9 +15075,15 @@
       "book": "Hosea",
       "bookId": 27,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "they-have-set-up-kings-but-not-by-me-or-the-powers-that-be-are-ordained-of-god-hosea-8-4-romans-13-1"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -15320,14 +15340,16 @@
       "chapter": 5,
       "annotationIds": [
         "exp-late-29-5-21",
-        "ye-who-turn-judgment-to-wormwood-or-it-is-he-that-executes-judgment-in-the-height-amos-5-7-greek"
+        "ye-who-turn-judgment-to-wormwood-or-it-is-he-that-executes-judgment-in-the-height-amos-5-7-greek",
+        "i-will-carry-you-away-beyond-babylon-or-beyond-damascus-acts-7-43-amos-5-27"
       ],
       "annotatedVerses": [
         7,
         21,
         22,
         23,
-        24
+        24,
+        27
       ],
       "modes": [
         "history",
@@ -16590,6 +16612,8 @@
         "this-is-jesus-the-king-of-the-jews-or-the-king-of-the-jews-or-jesus-of-nazareth-matthew-27-37-john-19-19",
         "many-bodies-of-the-saints-which-slept-arose-who-were-they-and-what-became-of-them-matthew-27-52",
         "the-veil-rent-after-he-yielded-up-the-ghost-or-before-he-gave-up-the-ghost-matthew-27-50-27-51-luke-23-45-23-46",
+        "judas-hanged-himself-or-falling-headlong-he-burst-asunder-matthew-27-5-acts-1-18",
+        "the-chief-priests-bought-the-potters-field-or-this-man-purchased-a-field-matthew-27-7-acts-1-18",
         "study-judas"
       ],
       "annotatedVerses": [
@@ -16989,9 +17013,11 @@
       "bookId": 41,
       "chapter": 1,
       "annotationIds": [
-        "blessed-art-thou-among-women-or-verse-ends-luke-1-28-greek-new-testament"
+        "blessed-art-thou-among-women-or-verse-ends-luke-1-28-greek-new-testament",
+        "there-is-none-righteous-no-not-one-or-they-were-both-righteous-before-god-luke-1-6-romans-3-10"
       ],
       "annotatedVerses": [
+        6,
         28
       ],
       "modes": [
@@ -17862,11 +17888,15 @@
       "chapter": 1,
       "annotationIds": [
         "coverage-nt-spirit-timing",
+        "in-the-midst-of-the-disciples-or-brethren-acts-1-15-greek-new-testament",
+        "judas-hanged-himself-or-falling-headlong-he-burst-asunder-matthew-27-5-acts-1-18",
+        "the-chief-priests-bought-the-potters-field-or-this-man-purchased-a-field-matthew-27-7-acts-1-18",
         "study-judas"
       ],
       "annotatedVerses": [
         4,
         5,
+        15,
         18,
         19
       ],
@@ -17882,7 +17912,10 @@
       "annotationIds": [
         "coverage-nt-spirit-timing",
         "coverage-nt-women-speaking",
-        "it-shall-come-to-pass-afterward-or-in-the-last-days-joel-2-28"
+        "it-shall-come-to-pass-afterward-or-in-the-last-days-joel-2-28",
+        "according-to-the-flesh-he-would-raise-up-christ-acts-2-30-greek-new-testament",
+        "added-to-the-church-daily-or-daily-upon-the-same-acts-2-47-greek-new-testament",
+        "my-glory-rejoiceth-or-my-tongue-was-glad-psalms-16-9-acts-2-26"
       ],
       "annotatedVerses": [
         1,
@@ -17890,7 +17923,10 @@
         3,
         4,
         17,
-        18
+        18,
+        26,
+        30,
+        47
       ],
       "modes": [
         "contradictions"
@@ -17901,18 +17937,34 @@
       "book": "Acts",
       "bookId": 43,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jesus-christ-which-before-was-preached-or-appointed-beforehand-acts-3-20-greek-new-testament",
+        "his-son-jesus-or-his-servant-without-the-name-acts-3-26-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        20,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "lord-thou-art-god-which-hast-made-heaven-acts-4-24-greek-new-testament",
+        "by-the-mouth-of-thy-servant-david-or-by-the-holy-spirit-our-father-david-acts-4-25-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        24,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -17920,13 +17972,16 @@
       "bookId": 43,
       "chapter": 5,
       "annotationIds": [
-        "legacy-history-12"
+        "legacy-history-12",
+        "to-put-the-apostles-forth-or-the-men-forth-acts-5-34-greek-new-testament"
       ],
       "annotatedVerses": [
+        34,
         37
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -17934,9 +17989,15 @@
       "book": "Acts",
       "bookId": 43,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "stephen-full-of-faith-and-power-or-full-of-grace-and-power-acts-6-8-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -17946,13 +18007,24 @@
       "annotationIds": [
         "exodus-family-counts",
         "shechem-burial-land-purchaser",
-        "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death"
+        "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death",
+        "emmor-the-father-of-sychem-or-hamor-in-sychem-acts-7-16-greek-new-testament",
+        "an-angel-of-the-lord-in-a-flame-or-an-angel-in-a-flame-acts-7-30-greek-new-testament",
+        "a-prophet-shall-the-lord-your-god-raise-up-him-shall-ye-hear-acts-7-37-greek-new-testament",
+        "the-god-of-jacob-or-the-house-of-jacob-acts-7-46-greek-new-testament",
+        "i-will-carry-you-away-beyond-babylon-or-beyond-damascus-acts-7-43-amos-5-27",
+        "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
       ],
       "annotatedVerses": [
         4,
         14,
         15,
-        16
+        16,
+        22,
+        30,
+        37,
+        43,
+        46
       ],
       "modes": [
         "contradictions"
@@ -17963,54 +18035,125 @@
       "book": "Acts",
       "bookId": 43,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-holy-ghost-was-given-or-the-spirit-is-given-acts-8-18-greek-new-testament",
+        "repent-and-pray-god-or-pray-the-lord-acts-8-22-greek-new-testament",
+        "if-thou-believest-with-all-thine-heart-thou-mayest-verse-not-printed-acts-8-37-greek-new-testament",
+        "he-was-taken-from-prison-and-from-judgment-or-his-judgment-was-taken-away-isaiah-53-8-acts-8-33",
+        "why-had-the-holy-ghost-not-yet-fallen-on-the-baptized-samaritans-acts-8-16"
+      ],
+      "annotatedVerses": [
+        16,
+        18,
+        22,
+        33,
+        37
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "it-is-hard-for-thee-to-kick-against-the-pricks-acts-9-5-9-6-greek-new-testament",
+        "he-preached-christ-in-the-synagogues-or-jesus-acts-9-20-greek-new-testament",
+        "then-had-the-churches-rest-or-the-church-had-peace-acts-9-31-greek-new-testament",
+        "stood-speechless-hearing-a-voice-or-they-heard-not-the-voice-acts-9-7-acts-22-9",
+        "the-men-stood-speechless-or-we-were-all-fallen-to-the-earth-acts-9-7-acts-26-14",
+        "barnabas-brought-him-to-the-apostles-or-other-of-the-apostles-saw-i-none-acts-9-27-galatians-1-19"
+      ],
+      "annotatedVerses": [
+        5,
+        6,
+        7,
+        20,
+        27,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-shall-tell-thee-what-thou-oughtest-to-do-not-printed-acts-10-6-greek-new-testament",
+        "and-wild-beasts-not-printed-acts-10-12-greek-new-testament",
+        "behold-three-men-seek-thee-or-men-seek-thee-acts-10-19-greek-new-testament",
+        "the-men-which-were-sent-unto-him-from-cornelius-not-printed-acts-10-21-greek-new-testament",
+        "who-when-he-cometh-shall-speak-unto-thee-not-printed-acts-10-32-greek-new-testament",
+        "commanded-thee-of-god-or-of-the-lord-acts-10-33-greek-new-testament",
+        "baptized-in-the-name-of-the-lord-or-of-jesus-christ-acts-10-48-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        6,
+        12,
+        19,
+        21,
+        32,
+        33,
+        48
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "spake-unto-the-grecians-or-unto-the-greeks-acts-11-20-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "intending-after-easter-or-after-the-passover-acts-12-4-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "god-raised-unto-israel-a-saviour-or-brought-acts-13-23-greek-new-testament",
+        "written-in-the-second-psalm-or-the-first-psalm-acts-13-33-greek-new-testament",
+        "the-word-of-god-or-the-word-of-the-lord-acts-13-44-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        23,
+        33,
+        44
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18026,90 +18169,185 @@
       "book": "Acts",
       "bookId": 43,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "known-unto-god-are-all-his-works-from-the-beginning-of-the-world-acts-15-18-greek-new-testament",
+        "saying-ye-must-be-circumcised-and-keep-the-law-not-printed-acts-15-24-greek-new-testament",
+        "it-pleased-silas-to-abide-there-still-verse-not-printed-acts-15-34-greek-new-testament",
+        "the-grace-of-god-or-the-grace-of-the-lord-acts-15-40-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        18,
+        24,
+        34,
+        40
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-spirit-suffered-them-not-or-the-spirit-of-jesus-acts-16-7-greek-new-testament",
+        "the-lord-had-called-us-or-god-had-called-us-acts-16-10-greek-new-testament",
+        "out-of-the-city-by-a-river-side-or-outside-the-gate-acts-16-13-greek-new-testament",
+        "forbidden-of-the-holy-ghost-to-preach-in-asia-how-acts-16-6-16-7"
+      ],
+      "annotatedVerses": [
+        6,
+        7,
+        10,
+        13
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hath-made-of-one-blood-or-of-one-acts-17-26-greek-new-testament",
+        "that-they-should-seek-the-lord-or-seek-god-acts-17-27-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        26,
+        27
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 18,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "pressed-in-the-spirit-or-pressed-by-the-word-acts-18-5-greek-new-testament",
+        "i-must-by-all-means-keep-this-feast-not-printed-acts-18-21-greek-new-testament",
+        "having-shorn-his-head-in-cenchrea-for-he-had-a-vow-whose-vow-acts-18-18"
+      ],
+      "annotatedVerses": [
+        5,
+        18,
+        21
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "your-goddess-or-our-goddess-acts-19-37-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        37
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sopater-of-berea-or-sopater-of-pyrrhus-of-berea-acts-20-4-greek-new-testament",
+        "when-the-disciples-came-together-or-when-we-came-together-acts-20-7-greek-new-testament",
+        "and-tarried-at-trogyllium-not-printed-acts-20-15-greek-new-testament",
+        "the-church-of-god-or-the-church-of-the-lord-acts-20-28-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        4,
+        7,
+        15,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "they-glorified-the-lord-or-glorified-god-acts-21-20-greek-new-testament",
+        "they-observe-no-such-thing-save-only-not-printed-acts-21-25-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        20,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-were-afraid-not-printed-acts-22-9-greek-new-testament",
+        "calling-on-the-name-of-the-lord-or-on-his-name-acts-22-16-greek-new-testament",
+        "stood-speechless-hearing-a-voice-or-they-heard-not-the-voice-acts-9-7-acts-22-9"
+      ],
+      "annotatedVerses": [
+        9,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "let-us-not-fight-against-god-not-printed-acts-23-9-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-would-have-judged-according-to-our-law-acts-24-6-24-8-greek-new-testament",
+        "a-resurrection-of-the-dead-or-a-resurrection-of-the-just-and-unjust-acts-24-15-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        6,
+        7,
+        8,
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18125,45 +18363,85 @@
       "book": "Acts",
       "bookId": 43,
       "chapter": 26,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-men-stood-speechless-or-we-were-all-fallen-to-the-earth-acts-9-7-acts-26-14"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 27,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "called-euroclydon-or-euraquilo-acts-27-14-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Acts",
       "bookId": 43,
       "chapter": 28,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-centurion-delivered-the-prisoners-to-the-captain-of-the-guard-not-printed-acts-28-16-greek-new-testament",
+        "the-jews-departed-and-had-great-reasoning-among-themselves-verse-not-printed-acts-28-29-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        16,
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-gospel-of-christ-or-the-gospel-romans-1-16-greek-new-testament",
+        "fornication-in-the-list-of-unrighteousness-romans-1-29-greek-new-testament",
+        "implacable-in-the-list-of-romans-1-31-romans-1-31-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        16,
+        29,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "behold-thou-art-called-a-jew-or-but-if-thou-bearest-the-name-romans-2-17-greek-new-testament",
+        "the-doers-of-the-law-shall-be-justified-or-by-the-deeds-of-the-law-shall-no-flesh-be-justified-romans-2-13-romans-3-20",
+        "no-respect-of-persons-with-god-or-jacob-have-i-loved-but-esau-have-i-hated-romans-2-11-romans-9-13"
+      ],
+      "annotatedVerses": [
+        11,
+        13,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18171,10 +18449,15 @@
       "bookId": 44,
       "chapter": 3,
       "annotationIds": [
-        "coverage-nt-faith-works"
+        "coverage-nt-faith-works",
+        "unto-all-and-upon-all-or-unto-all-romans-3-22-greek-new-testament",
+        "the-doers-of-the-law-shall-be-justified-or-by-the-deeds-of-the-law-shall-no-flesh-be-justified-romans-2-13-romans-3-20",
+        "there-is-none-righteous-no-not-one-or-they-were-both-righteous-before-god-luke-1-6-romans-3-10"
       ],
       "annotatedVerses": [
+        10,
         20,
+        22,
         27,
         28,
         29,
@@ -18190,54 +18473,108 @@
       "book": "Romans",
       "bookId": 44,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "abraham-our-father-or-abraham-our-forefather-romans-4-1-greek-new-testament",
+        "considered-not-his-own-body-or-considered-his-own-body-romans-4-19-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        1,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "we-have-peace-or-let-us-have-peace-romans-5-1-greek-new-testament",
+        "the-earth-is-filled-with-violence-through-them-or-sin-is-not-imputed-when-there-is-no-law-genesis-6-13-romans-5-13"
+      ],
+      "annotatedVerses": [
+        1,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "through-jesus-christ-our-lord-or-in-christ-jesus-romans-6-11-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "that-being-dead-wherein-we-were-held-or-having-died-to-that-romans-7-6-greek-new-testament",
+        "who-is-the-i-of-romans-7-i-am-carnal-sold-under-sin-romans-7-14"
+      ],
+      "annotatedVerses": [
+        6,
+        14
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "who-walk-not-after-the-flesh-or-no-such-clause-romans-8-1-greek-new-testament",
+        "hath-made-me-free-or-hath-made-thee-free-romans-8-2-greek-new-testament",
+        "helpeth-our-infirmities-intercession-for-us-or-our-infirmity-romans-8-26-greek-new-testament",
+        "who-hath-subjected-the-creature-to-vanity-romans-8-20"
+      ],
+      "annotatedVerses": [
+        1,
+        2,
+        20,
+        26
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "good-or-evil-or-good-or-bad-romans-9-11-greek-new-testament",
+        "in-righteousness-because-a-short-work-or-no-such-words-romans-9-28-greek-new-testament",
+        "no-respect-of-persons-with-god-or-jacob-have-i-loved-but-esau-have-i-hated-romans-2-11-romans-9-13"
+      ],
+      "annotatedVerses": [
+        11,
+        13,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18245,16 +18582,23 @@
       "bookId": 44,
       "chapter": 10,
       "annotationIds": [
-        "deuteronomy-near-word-in-romans"
+        "deuteronomy-near-word-in-romans",
+        "for-israel-or-for-them-romans-10-1-greek-new-testament",
+        "preach-the-gospel-of-peace-or-preach-the-good-things-romans-10-15-greek-new-testament",
+        "the-word-of-god-or-the-word-of-christ-romans-10-17-greek-new-testament"
       ],
       "annotatedVerses": [
+        1,
         6,
         7,
         8,
-        9
+        9,
+        15,
+        17
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -18262,9 +18606,19 @@
       "book": "Romans",
       "bookId": 44,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "but-if-it-be-of-works-then-it-is-no-more-grace-romans-11-6-greek-new-testament",
+        "take-heed-lest-he-also-spare-not-thee-or-neither-will-he-spare-thee-romans-11-21-greek-new-testament",
+        "through-your-mercy-or-by-the-mercy-shown-to-you-romans-11-31-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        6,
+        21,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18280,36 +18634,93 @@
       "book": "Romans",
       "bookId": 44,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thou-shalt-not-bear-false-witness-in-romans-13-9-romans-13-9-greek-new-testament",
+        "they-have-set-up-kings-but-not-by-me-or-the-powers-that-be-are-ordained-of-god-hosea-8-4-romans-13-1"
+      ],
+      "annotatedVerses": [
+        1,
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "for-god-is-able-or-for-the-lord-is-able-romans-14-4-greek-new-testament",
+        "and-he-that-regardeth-not-the-day-or-no-such-clause-romans-14-6-greek-new-testament",
+        "died-and-rose-and-revived-or-died-and-lived-romans-14-9-greek-new-testament",
+        "judgment-seat-of-christ-or-of-god-romans-14-10-greek-new-testament",
+        "or-is-offended-or-is-made-weak-in-romans-14-21-romans-14-21-greek-new-testament",
+        "hast-thou-faith-have-it-or-the-faith-which-thou-hast-romans-14-22-greek-new-testament",
+        "they-are-unclean-to-you-or-there-is-nothing-unclean-of-itself-leviticus-11-8-romans-14-14"
+      ],
+      "annotatedVerses": [
+        4,
+        6,
+        9,
+        10,
+        14,
+        21,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "as-christ-also-received-us-or-received-you-romans-15-7-greek-new-testament",
+        "nevertheless-brethren-or-no-brethren-romans-15-15-greek-new-testament",
+        "i-will-come-to-you-whensoever-i-take-my-journey-into-spain-romans-15-24-greek-new-testament",
+        "the-blessing-of-the-gospel-of-christ-or-the-blessing-of-christ-romans-15-29-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        7,
+        15,
+        24,
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Romans",
       "bookId": 44,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "firstfruits-of-achaia-or-of-asia-romans-16-5-greek-new-testament",
+        "bestowed-much-labour-on-us-or-on-you-romans-16-6-greek-new-testament",
+        "the-churches-of-christ-or-all-the-churches-of-christ-romans-16-16-greek-new-testament",
+        "our-lord-jesus-christ-or-our-christ-romans-16-18-romans-16-18-greek-new-testament",
+        "the-grace-of-our-lord-jesus-christ-be-with-you-amen-romans-16-20-romans-16-20-greek-new-testament",
+        "the-grace-of-our-lord-jesus-christ-be-with-you-all-romans-16-24-romans-16-24-greek-new-testament",
+        "andronicus-and-junia-of-note-among-the-apostles-in-what-sense-romans-16-7"
+      ],
+      "annotatedVerses": [
+        5,
+        6,
+        7,
+        16,
+        18,
+        20,
+        24
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18633,9 +19044,15 @@
       "book": "Galatians",
       "bookId": 47,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "barnabas-brought-him-to-the-apostles-or-other-of-the-apostles-saw-i-none-acts-9-27-galatians-1-19"
+      ],
+      "annotatedVerses": [
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
