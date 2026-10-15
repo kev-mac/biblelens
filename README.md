@@ -22,7 +22,7 @@ npm run check
 npm start
 ```
 
-Open http://127.0.0.1:8787 after starting. The local reader and packaged annotations work without internet after extracting this package. External source links require internet. Hosted AI Chat requires its existing authenticated Sites environment and configured API access; it is unavailable in the local reader. No credentials are included.
+Open http://127.0.0.1:8787 after starting. The local reader and packaged annotations work without internet after extracting this package. External source links require internet. Chat searches packaged passages and studies locally, with conversational excerpts and source links. It needs no account, API key, paid AI service, or internet connection. No credentials are included.
 
 The automated check exercises all 1,189 chapters and every comparison mode, verifies reference bounds, confirms each evidence placement and checks duplicate annotation IDs. These checks do not certify scholarly completeness or visual browser behavior.
 
@@ -30,6 +30,6 @@ The automated check exercises all 1,189 chapters and every comparison mode, veri
 
 https://scripture-lens.kvn-mcgwn.chatgpt.site
 
-The existing private audience is preserved. Source identity is retained in `.openai/hosting.json`; it is not an authentication credential.
+The existing hosted audience is preserved. Source identity is retained in `.openai/hosting.json`; it is not an authentication credential.
 
 Compare is an on/off switch enabled by default. Read and Ask replace Explore and Chat. Both themes use warm tan/orange palettes. Red-letter markup preserves the packaged text and follows publisher speech spans; see data/red-letter-provenance.json and research/notes/reader-warm-red-letters.md for attribution and boundary limits.

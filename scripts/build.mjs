@@ -16,5 +16,5 @@ const searchIndex={};for(const [key,encoded] of Object.entries(JSON.parse(fs.rea
 worker=worker.replace('/*__SEARCH__*/{}',JSON.stringify(searchIndex));
 worker=worker.replace('/*__STUDIES__*/[]',JSON.stringify(context.studies)).replace('/*__ASSETS__*/{}',JSON.stringify(assets));if(worker.includes('/*__'))throw Error('Unresolved build placeholder');fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist/server',{recursive:true});fs.mkdirSync('dist/.openai',{recursive:true});fs.writeFileSync('dist/server/index.js',worker);fs.copyFileSync('.openai/hosting.json','dist/.openai/hosting.json');console.log('Built Worker:',Buffer.byteLength(worker),'bytes');
 
-// Every build checks retrieval and the rejection/retry paths without API charges.
+// Every build checks packaged retrieval and conversational responses without external requests.
 await import('./check-chat-reliability.mjs');
