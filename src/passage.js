@@ -61,7 +61,8 @@ function syncPassageTools(){
  button?.setAttribute('aria-pressed',String(saved));button?.setAttribute('aria-label',saved?'Remove saved passage':'Save this passage');
  $('#passage-export').disabled=!state.passageNotes[key]?.text&&!saved;
  const dock=document.querySelector('.comparison-dock'),question=document.querySelector('#chapter-text #reader-question-form');
- if(dock)document.querySelector('.chapter-heading-row')?.append(dock);
+ if(dock)$('#reader-layout').before(dock);
+ const picker=question?.querySelector?.('.passage-picker-trigger');if(picker)document.querySelector('.passage-heading')?.append(picker);
  if(question){let host=$('#reader-question-host');if(!host){host=document.createElement('div');host.id='reader-question-host';document.querySelector('body > header').append(host);}host.replaceChildren(question);}
  document.querySelector('.passage-bookmark')?.remove();
  renderPassageSaved();

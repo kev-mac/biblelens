@@ -4,10 +4,10 @@ const child=s=>{if(!children.has(s))children.set(s,{setAttribute(){}});return ch
 const popup={style:{},hidden:true,setAttribute(){},querySelector:child,contains:n=>n===popup,getBoundingClientRect:()=>({width:360,height:180}),addEventListener:(type,fn)=>popupHandlers[type]=fn};
 const doc={createElement:()=>popup,body:{append(){}},querySelector:s=>s==='#reader-edition'?{value:'kjv'}:null,addEventListener:(type,fn,capture)=>handlers[type+(capture===true?':capture':'')]=fn};
 const ctx={state:{verseBookmarks:{},verseHighlights:{}},document:doc,window:{innerWidth:780,innerHeight:1004,addEventListener(){}},setTimeout,clearTimeout,scriptureHtml:v=>v.kjv,setView:(v,update)=>loads.push({view:v,update}),loadChapter:(...ref)=>loads.push({ref}),fetch:async()=>{requests++;return{ok:true,json:async()=>({verses:[{n:1,kjv:'Full verse one, beyond the quoted excerpt.'},{n:2,kjv:'Full verse two.'}]})}}};
-vm.createContext(ctx);vm.runInContext(fs.readFileSync('src/citations.js','utf8'),ctx);
+vm.createContext(ctx);vm.runInContext(fs.readFileSync('src/citations.js','utf8').split('// Supporting-context markers')[0],ctx);
 const chip=(verse,end=verse)=>({dataset:{cite:`0/1/${verse}`,citeEnd:String(end),citeLabel:`Genesis 1:${verse}`},attrs:{},setAttribute(k,v){this.attrs[k]=v;},closest:()=>null,contains:()=>false,getBoundingClientRect:()=>({left:100,top:300,bottom:324})});
 const target=b=>({closest:s=>s.includes('data-cite')?b:null});const settle=()=>new Promise(r=>setImmediate(r));
-const b=chip(1);handlers.pointerover({pointerType:'mouse',target:target(b),relatedTarget:null});await settle();assert(!popup.hidden);assert.equal(child('.preview-text').innerHTML,'Full verse one, beyond the quoted excerpt.');assert.equal(child('a').href,'#read/0/1/1');assert.equal(requests,1);
+const b=chip(1);handlers.pointerover({pointerType:'mouse',target:target(b),relatedTarget:null});await settle();assert(!popup.hidden);assert.equal(child('.preview-text').innerHTML,'Full verse one, beyond the quoted excerpt.');assert(!popup.innerHTML.includes('preview-link'));assert(!popup.innerHTML.includes('Highlight verse'));assert(popup.innerHTML.includes('Share verse'));assert.equal(requests,1);
 b.dataset.citeWitness='Septuagint';b.dataset.citeSummary='The exact original summary.';handlers.focusin({target:target(b)});await settle();assert.equal(child('.preview-summary').textContent,'Septuagint: The exact original summary.');assert.equal(child('.preview-summary').hidden,false);
 const range=chip(1,2);handlers.focusin({target:target(range)});await settle();assert(child('.preview-text').innerHTML.includes('Full verse one, beyond the quoted excerpt.'));assert(child('.preview-text').innerHTML.includes('Full verse two.'));assert.equal(requests,1);
 assert.equal(child('.preview-summary').hidden,true);assert.equal(child('.preview-summary').textContent,'');
@@ -27,5 +27,19 @@ handlers.pointerdown({button:0,target:verseTarget,pointerId:8,clientX:10,clientY
 handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');
 const html=fs.readFileSync('src/index.html','utf8');assert(!html.includes('id="ask-selection"'));for(const id of ['prev-bottom','next-bottom'])assert(html.includes(`id="${id}"`));
 console.log('PASS: WEB hold preview, movement cancellation, keyboard access and top/bottom chapter controls.');
+const copied=[];ctx.navigator={clipboard:{writeText:async url=>copied.push(url)}};ctx.location={href:'https://example.com/#explore'};ctx.URL=URL;ctx.toast=()=>{};
+await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'share'}})}});assert.equal(copied[0],'https://example.com/#read/0/3/22');assert(popup.hidden);
+console.log('PASS: verse sharing copies a verse-specific link without private notes.');
 
 assert(!html.includes('id="prev-top"'));assert(!html.includes('id="next-top"'));
+
+// Hover/tap context preview contains a real destination and no inline context panel.
+const tipHandlers={},tipEvents={},tipNodes=new Map(),tipLoads=[];
+const tipChild=s=>{if(!tipNodes.has(s))tipNodes.set(s,{});return tipNodes.get(s);};
+const tip={hidden:true,style:{},setAttribute(){},querySelector:tipChild,getBoundingClientRect:()=>({width:280,height:90}),contains:n=>n===tip,addEventListener:(type,fn)=>tipEvents[type]=fn};
+const tc={document:{createElement:()=>tip,body:{append(){}},addEventListener:(type,fn)=>tipHandlers[type]=fn},window:{addEventListener(){}},innerWidth:513,innerHeight:1004,setTimeout,clearTimeout,readRef:ref=>ref==='Exodus 32:2'?{book:1,chapter:32,verse:2}:null,setView(){},loadChapter:(...r)=>tipLoads.push(r)};
+vm.createContext(tc);vm.runInContext(fs.readFileSync('src/citations.js','utf8').split('// Supporting-context markers')[1].split('\n').slice(1).join('\n'),tc);
+const marker={dataset:{contextRef:'Exodus 32:2',contextTitle:'Aaron’s explanation'},attrs:{},setAttribute(k,v){this.attrs[k]=v},getBoundingClientRect:()=>({right:450,bottom:500})};
+tipHandlers.pointerover({pointerType:'mouse',target:{closest:()=>marker}});assert(!tip.hidden);assert.equal(tipChild('a').href,'#read/1/32/2');assert.equal(tipChild('strong').textContent,'Aaron’s explanation');
+tipEvents.click({target:{closest:()=>tipChild('a')},preventDefault(){}});assert(tip.hidden);assert.deepEqual(tipLoads.pop(),[1,32,2]);
+console.log('PASS: context markers open small navigable glass previews without inline context rows.');

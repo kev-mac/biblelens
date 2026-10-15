@@ -52,7 +52,7 @@ console.log('PASS: summaries open by default; category-off retains verse icons; 
 // Q is a visible Context observation, without fabricating published findings.
 assert(context.visible({mode:'science',status:'Context',tags:['Q']}));
 context.cache.set('0:1:kjv:science',{items:[{id:'fixture-question',verse:3,placementRole:'context',keyTarget:'Genesis 1:1',status:'Context',tags:['Q'],title:'Fixture question',refs:[],sources:[]}]});
-const pointer=context.render(3);assert(pointer.includes('Context for:'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('Unanswered question'));
+const pointer=context.render(3);assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-ref="Genesis 1:1"'));assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('Unanswered question'));
 const css=fs.readFileSync('src/style.css','utf8');assert(css.includes('.agreement.question,body.dark .agreement.question'));assert(css.includes('[data-tone="question"]'));
 const html=fs.readFileSync('src/index.html','utf8');
 assert(html.indexOf('id="theme"')>html.indexOf('id="reader-settings"'),'Theme control belongs inside Reader settings');
@@ -68,7 +68,7 @@ console.log('PASS: Q tag, accessible label, initially hidden summary, independen
 
 context.cache.set('0:1:kjv:science',{items:[]});
 context.cache.set('0:1:kjv:questions',{items:[{id:'fixture-questions-category',verse:3,status:'Context',tags:['Q'],title:'Fixture unanswered question',summary:'Fixture only',text:'Limits',sources:[],placementRole:'key'},{id:'fixture-questions-category',verse:5,status:'Context',tags:['Q'],title:'Fixture unanswered question',keyTarget:'Genesis 1:3',placementRole:'context'}]});
-const qCard=context.render(3);assert(qCard.includes('Fixture unanswered question'));assert(qCard.includes('comparison-panel-3-questions-0-Q'));assert(qCard.includes('aria-expanded="true"'));assert(context.render(5).includes('Context for:'));assert(source.includes("comparisonModes=['history','contradictions','science','questions']"));
+const qCard=context.render(3);assert(qCard.includes('Fixture unanswered question'));assert(qCard.includes('comparison-panel-3-questions-0-Q'));assert(qCard.includes('aria-expanded="true"'));assert(context.render(5).includes('data-context-ref="Genesis 1:3"'));assert(!context.render(5).includes('Context for:'));assert(source.includes("comparisonModes=['history','contradictions','science','questions']"));
 console.log('PASS: independent Questions category participates in reader loading and Q card/context rendering.');
 
 context.cache.set('0:1:kjv:contradictions',{items:[{id:'fixture-targeted-greek',verse:6,status:'Textual conflict',tags:['G'],activeTags:[],title:'Fixture KJV contrast',summary:'Fixture only',text:'Limits',sources:[]}]});const untargeted=context.render(6);assert(untargeted.includes('data-icon="fold-horizontal"'));assert(!untargeted.includes('>G</button>'));
@@ -83,4 +83,12 @@ for(const expected of [1.1,1.2,1.3,0.9,1]){fontNode.onclick();assert.equal(scale
 fontContext.state.textScale=1.2;fontContext.applyTextSize();assert.equal(scaleValues.get('--text-scale'),'1.2');
 const typography=fs.readFileSync('src/style.css','utf8');const declarations=typography.match(/(?<![\w-])font(?:-size)?\s*:[^;}]+/g)||[];assert(declarations.filter(d=>d.includes('px')).every(d=>d==='font-size:calc(16px * var(--text-scale,1))'));assert(typography.includes('var(--chapter-size,1.1875rem)'));
 console.log('PASS: A+ scales all typography, cycles sizes, saves preference and preserves smaller summaries.');
+
+const statusNode={};context.$=selector=>selector==='#comparison-status'?statusNode:{value:selector==='#reader-edition'?'kjv':'on'};
+context.cache.clear();for(const mode of ['history','contradictions','science','questions'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
+context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'context-only',verse:1,placementRole:'context',tags:['Q'],status:'Context'}]});
+vm.runInContext(source.slice(source.indexOf('function comparisonStatus('),source.indexOf('async function ensureComparisons(')),context);context.comparisonStatus();
+const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(!qFilter.includes('disabled'));assert(qFilter.includes('aria-pressed="true"'));
+context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'key-one',verse:1,placementRole:'key',tags:['Q'],status:'Context'},{id:'key-one',verse:2,placementRole:'key',tags:['Q'],status:'Context'},{id:'context-only',verse:3,placementRole:'context',tags:['Q'],status:'Context'}]});context.comparisonStatus();assert(statusNode.innerHTML.includes('Question: 1 summaries'));
+console.log('PASS: badges count distinct summary records only; context-only categories remain available without a badge.');
 

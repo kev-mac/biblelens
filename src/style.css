@@ -716,3 +716,21 @@ body.dark .verse-num.verse-bookmarked{color:#ed8c42}
 body .edge-page{width:44px;top:52%;bottom:auto;height:64px}
 body .edge-page svg{width:38px;height:54px;padding:8px}
 @media(min-width:768px){body .edge-page{width:64px}}
+
+/* Follow-up: compact context previews, heading picker and gold bookmarks. */
+body .chapter-bottom,body .reader-footnote,body .study-library{display:none!important}
+body .comparison-dock{position:static;top:auto;width:100%;height:auto!important;min-height:0;margin:0 0 12px;border:0;background:transparent}
+body .comparison-dock .comparison-status{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));width:100%;max-width:none;margin:0;padding:12px 20px 0;gap:4px;background:transparent}
+body .comparison-dock-toggle{display:none}
+body .passage-heading .passage-picker-trigger{margin-left:auto;flex:0 0 40px}
+body .verse-body.verse-bookmarked{background:linear-gradient(135deg,rgba(245,190,35,.24),rgba(255,224,120,.13));border:1px solid rgba(204,157,27,.4);border-radius:12px;box-shadow:inset 0 1px 2px #fff7,0 4px 16px #b8871520;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+body .verse-num,body .verse.selected .verse-num{color:var(--muted)!important;font-weight:400;text-shadow:none!important}
+body .edge-page{top:max(56px,var(--site-header-height,56px));bottom:env(safe-area-inset-bottom,0px);width:32px;height:auto}
+body .edge-page svg{width:28px;height:40px;padding:4px}
+@media(min-width:768px){body .edge-page{width:56px}}
+body .context-preview{position:fixed;z-index:1001;width:min(310px,calc(100vw - 24px));padding:14px 16px;border-radius:16px;background:rgba(248,251,255,.9);color:var(--ink);border:1px solid rgba(130,166,197,.4);box-shadow:0 8px 28px #102c482b,inset 0 1px 1px #fffc;backdrop-filter:blur(20px)}
+body.dark .context-preview{background:rgba(15,25,40,.86);border-color:rgba(148,183,215,.35);box-shadow:0 8px 28px #0006}
+body .context-preview[hidden]{display:none}
+body .context-preview-link{display:grid;gap:7px;color:inherit;text-decoration:none;font:.875rem/1.5 "Inter",system-ui}
+body .context-preview-link span{color:var(--green);font-size:.75rem}
+body .verse-share-link{width:100%;margin-top:10px;padding:8px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px}

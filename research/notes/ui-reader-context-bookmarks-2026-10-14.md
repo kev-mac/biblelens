@@ -1,0 +1,9 @@
+# Reader context and bookmark follow-up — 2026-10-14
+
+Implemented all thirteen direct owner comments. Inline context rows were removed; supporting markers now open compact glass previews on hover, focus or tap, with a clickable summary-verse destination. Summary badges count distinct key records only. Context-only categories remain available without a badge.
+
+Moved category buttons below the header question field and above the chapter heading. The open-book passage picker is right-aligned beside the chapter title. Restored the previous full-height edge paging geometry (32px mobile, 56px desktop; 28x40px arrows). The lower chapter navigation, reader footnote and Studies section are hidden. Existing study records remain intact. A one-time thread reminder to revisit Studies was created for tomorrow at 10 a.m. Eastern, automation `revisit-scripture-lens-studies`.
+
+Removed Highlight verse and Read chapter from the verse action window. Long press/keyboard Enter offers bookmarking/unmarking and sharing a verse-specific link. Bookmarked verses use yellow/gold glass; verse numbers retain their normal appearance. Clicking numbers still selects/unselects independently. Existing browser data is retained.
+
+Build and the full npm check suite passed. New regressions cover context preview navigation, summary-only badges with enabled context-only categories, and verse share links. Actual mobile browser QA verified ordering and right-aligned picker at 513px, no context panels, Exodus 32 badge count1 with no Q badge, context navigation from Exodus34:1 to31:18, gold bookmark glass at596px, and identical verse-number color before/after bookmarking. Scripture, evidence, built-in studies, red-letter data and Worker source were preserved. Eighteen chat fixture cases passed; live generated-answer correctness was not evaluated. Annotation presence is not exhaustive review.

@@ -21,7 +21,7 @@ vm.runInContext(source.slice(source.indexOf('const comparisonCache='),source.ind
 ctx.cache.set('0:1:kjv:contradictions',{items:[{...fixture,verse:1,placementRole:'key',keyTarget:'Genesis 1:1'},{...fixture,verse:2,placementRole:'context',keyTarget:'Genesis 1:1'},{...fallback,verse:1,placementRole:'key',keyTarget:'Genesis 1:1'}]});
 const card=ctx.render(1),pointer=ctx.render(2);
 assert.equal((card.match(/class="verse-comparison comparison-panel"/g)||[]).length,2);assert(card.includes('comparison-side'));assert(card.indexOf('comparison-sides')<card.indexOf('Fixture summary'));
-assert(pointer.includes('Context for:'));assert(pointer.includes('href="#read/0/1/1"'));assert(!pointer.includes('Fixture summary'));assert(!pointer.includes('Details & sources'));
+assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-ref="Genesis 1:1"'));assert(pointer.includes('data-context-title="Fixture title"'));assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('Fixture summary'));assert(!pointer.includes('Details & sources'));
 assert(card.includes('<span>Gen 1:1</span>'));assert(card.includes('aria-label="Genesis 1:1"'));assert(card.includes('title="Genesis 1:1"'));
 assert(!card.includes('<strong>A</strong>'));assert(!card.includes('<strong>B</strong>'));
 vm.runInContext(source.slice(source.indexOf('function citationButton('),source.indexOf('function comparisonCitations('))+'this.legacyCitation=citationButton;',ctx);
