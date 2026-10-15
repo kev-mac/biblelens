@@ -1,0 +1,28 @@
+# Offline reference aids
+
+These are third-party reference datasets, not Scripture Lens research annotations, and are kept separate from `evidence.json`, Bible text, and Claude drafts.
+
+Run `node scripts/import-reference-resources.mjs` explicitly to refresh the snapshot. Ordinary builds call `loadReferenceResources()` from `scripts/reference-resources.mjs` without contacting upstream. Theographic is pinned to the revision in `provenance.json`; changing that revision is deliberate. CCEL has no revision identifier: its downloaded SHA-256 and import date are recorded.
+
+## Data contract
+
+- `people.json`: stable upstream IDs, names, labels, aliases, gender, upstream status, ambiguity marker, limited passage contexts, father/mother/children links, upstream source record and URL. Each scripture reference is `[zeroBasedBookId, chapter, verse]`, matching `data/books.json`.
+- `topics.json`: Nave headings, scripture references, cross-topic labels and provenance URL. A topic reference is `[zeroBasedBookId, chapter, verse, endChapter, endVerse]`. A starting verse of zero means an entire chapter. End coordinates of zero mean no range. Do not silently turn a chapter into verse 1.
+- `notices.json`: attribution text and license links intended to be included with any distributed dataset.
+- `provenance.json`: source URLs, hashes, counts, import time and limits.
+
+The relationship edges are upstream assertions. `contextRefs` identifies verses where upstream tags mention both records, **not a claim that those verses establish the asserted relationship**. Before answering a family question, verify the retrieved text supports its direction and requested relation. An empty context list is not evidence that a relationship is absent. Context lists are bounded to twelve shared verses per edge and sixteen per person; they are not exhaustive concordances. The upstream table has no spouse edge, so none is invented.
+
+Duplicate names remain distinct: for example Noah the patriarch and Noah the daughter of Zelophehad have different IDs, statuses, labels and passage contexts. Upstream `wip` records are retained visibly; they must not receive the same confidence as a validated local answer. Importer assertions verify data structure, not scholarly correctness.
+
+Nave's topics are historical editorial classifications, not independently established answers or automatic support for permission/ethical claims. Topic ranges must be expanded within valid chapter and verse bounds by the consumer. This compact subset omits Nave's commentary and subheading prose; direct related-topic links are retained when supplied in the XML. Topical retrieval must be followed by passage relevance checks.
+
+## Attribution and licensing
+
+**Theographic:** Robert Rouse / Viz.Bible and contributors, [Theographic Bible Metadata](https://github.com/robertrouse/theographic-bible-metadata), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). `people.json` is an adapted dataset under the same license. Changes select fields, preserve IDs, flatten names, limit passage contexts, and convert references. Retain the attribution, license link, change notice and access to this adapted data when distributing it. This notice does not relicense Scripture Lens application code or unrelated datasets.
+
+The upstream [bibliography](https://github.com/robertrouse/theographic-bible-metadata/blob/52e049efb3b95e4f1da52d11a3303fbd2d648922/docs/data-source-bibliography.md) credits STEPBible TIPNR / Tyndale House ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)), Marshall Genealogy, and Complete Bible Genealogy for people/relationships/verse tags. A complete upstream bibliography and Theographic license are included alongside these files. Chronology, places, dictionary prose and external linked content are not imported. Upstream bibliography lists no separate license for the two genealogy sources; this subset relies on Theographic's published CC BY-SA distribution, retaining its full provenance rather than asserting those original sites are public domain.
+
+**Nave:** Orville J. Nave, *Nave's Topical Bible* (1896/1897), public-domain headings and references, via [Christian Classics Ethereal Library XML](https://ccel.org/ccel/n/nave/bible.xml). [CrossWire module copyright information](https://www.crosswire.org/sword/copyright/ModInfoCopyright.jsp?modName=Nave) identifies the text source as that XML and distribution license as Public Domain. Only headings/references are extracted; CCEL's copyrighted introductory and editorial prose is omitted. Reference conversion and deduplication are the local changes.
+
+Keep notices available in the generated site's source/details panel and distributed source package. None of these sources replaces the Claude-only research workflow.

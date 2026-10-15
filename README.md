@@ -14,9 +14,10 @@ Reader tags start closed and independently toggle their summary, citations and D
 
 ## Build and check
 
-Requires Node.js 22 or later; no dependency installation is needed.
+Requires Node.js 22 or later. Install the pinned dependencies before building.
 
 ```text
+npm ci
 npm run build
 npm run check
 npm start
@@ -25,6 +26,27 @@ npm start
 Open http://127.0.0.1:8787 after starting. The local reader and packaged annotations work without internet after extracting this package. External source links require internet. Chat searches packaged passages and studies locally, with conversational excerpts and source links. It needs no account, API key, paid AI service, or internet connection. No credentials are included.
 
 The automated check exercises all 1,189 chapters and every comparison mode, verifies reference bounds, confirms each evidence placement and checks duplicate annotation IDs. These checks do not certify scholarly completeness or visual browser behavior.
+
+## Mobile app development
+
+The Capacitor target bundles the reader, scripture, annotations, reference aids and search in `www/`. Its `/api/` requests are handled inside a local Web Worker. There is no remote `server.url`, paid inference API, account requirement or hosted backend in this target. Source links remain external and require internet when opened.
+
+```text
+npm run build:mobile
+npm run check:mobile
+npx cap sync
+npm run preview:mobile
+```
+
+The preview serves static files at `http://127.0.0.1:8788`; it deliberately has no server API. `npm run mobile:android` opens the generated Android project. `npm run mobile:ios` opens the iOS project on a Mac. Android builds require Android Studio, SDK 36 and JDK 21. This checkout uses Android API 28 as its minimum because of the optional local AI plugin. iOS builds require macOS and a Swift 6.2-capable Xcode installation.
+
+`com.scripturelens.app` is a development application identifier. Confirm an identifier under the owner's control before creating store listings or signing a release. Signing keys, store accounts, final icons, release privacy declarations and store submission have not been configured.
+
+Optional on-device explanations are enabled from Reader settings for the current session. The MIT-licensed experimental `@capacitor/local-llm` plugin uses Apple Intelligence on supported iOS 26 devices and Gemini Nano on supported Android hardware. The app does not download a model automatically. Android may offer an explicit model download through Google Play Services; iOS model readiness is managed in system settings. Once the device model is available, inference runs on the device with no per-message API bill. Unsupported or unavailable models, malformed output and inference errors fall back to packaged search.
+
+Generated explanations are labelled in Details & sources. Output checks confirm structure and cited source IDs; they do not prove that generated prose correctly interprets scripture. Qualified dietary, family and permission answers are retained without model rewriting. Native inference and performance require physical device testing; desktop worker checks do not verify them.
+
+The current mobile build and worker checks pass locally. Android/iOS project creation and sync have been verified. No APK, AAB, IPA or store release has been built or published on this Windows host, which currently lacks Java and the Android SDK. Browser QA verifies offline reading and the shark question against static files only.
 
 ## Hosted version
 

@@ -27,9 +27,11 @@ handlers.pointerdown({button:0,target:verseTarget,pointerId:8,clientX:10,clientY
 handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');
 const html=fs.readFileSync('src/index.html','utf8');assert(!html.includes('id="ask-selection"'));for(const id of ['prev-bottom','next-bottom'])assert(html.includes(`id="${id}"`));
 console.log('PASS: WEB hold preview, movement cancellation, keyboard access and top/bottom chapter controls.');
-const copied=[];ctx.navigator={clipboard:{writeText:async url=>copied.push(url)}};ctx.location={href:'https://example.com/#explore'};ctx.URL=URL;ctx.toast=()=>{};
-await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'share'}})}});assert.equal(copied[0],'https://example.com/#read/0/3/22');assert(popup.hidden);
-console.log('PASS: verse sharing copies a verse-specific link without private notes.');
+const shared=[];ctx.selectedVerseNumbers=()=>[21,22];ctx.shareVerseSelection=async(book,chapter,verses)=>{shared.push({book,chapter,verses:Array.from(verses)});return true;};
+await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'share'}})}});assert.deepEqual(shared[0],{book:0,chapter:3,verses:[22]});assert(popup.hidden);
+handlers.focusin({target:target(body)});await settle();
+await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'share-selected'}})}});assert.deepEqual(shared[1],{book:0,chapter:3,verses:[21,22]});assert(popup.hidden);
+console.log('PASS: popup shares the exact verse or selected set through the privacy-preserving text/link helper.');
 
 assert(!html.includes('id="prev-top"'));assert(!html.includes('id="next-top"'));
 
