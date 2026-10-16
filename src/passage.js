@@ -26,7 +26,12 @@ if(hadLegacyVerseHighlights)persist();
 function toggleVerseMark(kind,book,chapter,verse){
  if(kind!=='bookmark')return false;
  const key=`${book}:${chapter}:${verse}`,registry=state.verseBookmarks;
- if(registry[key])delete registry[key];else registry[key]={book,chapter,verse,name:books[book].name};
+ if(registry[key]){
+  const label=books[book].name+' '+chapter+':'+verse,hasNote=!!state.verseNotes[key];
+  const warning=hasNote?'Unmark '+label+'? This will permanently delete your personal note and its title for this verse.':'Unmark '+label+'?';
+  if(!confirm(warning))return null;
+  delete registry[key];delete state.verseNotes[key];
+ }else registry[key]={book,chapter,verse,name:books[book].name};
  persist();renderReader(true);renderPassageSaved();return !!registry[key];
 }
 let activePassageKey=null;
@@ -94,9 +99,10 @@ function stagePassageDock(){
 }
 function syncPassageTools(){
  if(!reading)return;
+ const count=selectedVerseNumbers().length;$('#passage-tools').hidden=!count;$('#share-selected-label').textContent=`Copy selected (${count})`;$('#passage-share').disabled=!count;
  const key=passageKey(),changed=key!==activePassageKey;
  activePassageKey=key;
- if(changed){$('#passage-note-editor').hidden=true;$('#passage-note-toggle').setAttribute('aria-expanded','false');}
+ if(changed||!count){$('#passage-note-editor').hidden=true;$('#passage-note-toggle').setAttribute('aria-expanded','false');}
  $('#passage-note').value=state.passageNotes[key]?.text||'';
  if($('#passage-note-title-input'))$('#passage-note-title-input').value=state.passageNotes[key]?.title||'';
  $('#passage-note-status').textContent=state.passageNotes[key]?'Note saved in this browser.':'';
@@ -137,7 +143,7 @@ document.addEventListener('click',ev=>{
   const [book,chapter,verse]=edit.dataset.editMarkedNote.split('/').map(Number);
   if(verse){openVerseNote(book,chapter,verse);return;}
   setView('explore',false);
-  loadChapter(book,chapter).then(()=>{if(readingBook===book&&readingChapter===chapter&&reading){$('#passage-note-editor').hidden=false;$('#passage-note-toggle').setAttribute('aria-expanded','true');$('#passage-note-title-input').focus();}});
+  loadChapter(book,chapter).then(()=>{if(readingBook===book&&readingChapter===chapter&&reading){selectedVerses.add(reading.verses[0].n);renderReader(true);$('#passage-note-editor').hidden=false;$('#passage-note-toggle').setAttribute('aria-expanded','true');$('#passage-note-title-input').focus();}});
   return;
  }
  const button=ev.target.closest('[data-passage-save]');if(!button||!reading)return;

@@ -17,6 +17,7 @@ for(const mode of ['history','contradictions','science'])context.cache.set(`0:1:
  {verse:1,status:'Disagrees',title:mode,summary:mode+' discrepancy',text:'Reason',sources:[]},
  ...(mode==='contradictions'?[]:[{verse:1,status:'Agrees',summary:'Agreement',sources:[]},{verse:1,status:'Context',summary:'Background',sources:[]}])
 ]});
+assert.equal(context.render(176),'');
 const initial=context.render(1);
 // A saved personal note opens as a comparison summary after loading the page.
 context.state={verseBookmarks:{'0:1:14':{book:0,chapter:1,verse:14}},verseNotes:{'0:1:14':{text:'Existing private note'}}};
@@ -64,6 +65,7 @@ console.log('PASS: summaries collapsed by default; category-off retains verse ic
 // Q is a visible Context observation, without fabricating published findings.
 assert(context.visible({mode:'science',status:'Context',tags:['Q']}));
 context.cache.set('0:1:kjv:science',{items:[{id:'fixture-question',verse:3,placementRole:'context',keyTarget:'Genesis 1:1',status:'Context',tags:['Q'],title:'Fixture question',refs:[],sources:[]}]});
+context.filters.delete('Q');assert.equal(context.render(3),'');context.filters.add('Q');
 const pointer=context.render(3);assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-ref="Genesis 1:1"'));assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('Unanswered question'));
 const css=fs.readFileSync('src/style.css','utf8');assert(css.includes('.agreement.question,body.dark .agreement.question'));assert(css.includes('[data-tone="question"]'));
 const html=fs.readFileSync('src/index.html','utf8');
@@ -85,16 +87,17 @@ console.log('PASS: independent Questions category participates in reader loading
 
 context.cache.set('0:1:kjv:contradictions',{items:[{id:'fixture-targeted-greek',verse:6,status:'Textual conflict',tags:['G'],activeTags:[],title:'Fixture KJV contrast',summary:'Fixture only',text:'Limits',sources:[]}]});const untargeted=context.render(6);assert(untargeted.includes('data-icon="fold-horizontal"'));assert(!untargeted.includes('>G</button>'));
 console.log('PASS: language tag placements retain KJV contrast card without implying Greek discrepancy on the wrong side.');
-// Verify the production A+ handler and persistent scale without changing page content.
-const fontNode={attrs:{},setAttribute(k,v){this.attrs[k]=v;}};
-const scaleValues=new Map();const fontContext={state:{},$:()=>fontNode,document:{documentElement:{style:{setProperty:(k,v)=>scaleValues.set(k,v)}}},persist(){scaleValues.set('saved',true);}};
+// Verify the production range input, proportional scale and saved preference.
+const fontNode={attrs:{},setAttribute(k,v){this.attrs[k]=v;}},fontOutput={};
+const scaleValues=new Map();const fontContext={state:{},$:s=>s==='#reader-font-value'?fontOutput:fontNode,document:{documentElement:{style:{setProperty:(k,v)=>scaleValues.set(k,v)}}},persist(){scaleValues.set('saved',true);}};
 vm.createContext(fontContext);
-vm.runInContext(source.slice(source.indexOf('function applyTextSize(){'),source.indexOf('applyTextSize();',source.indexOf("$('#reader-font').onclick="))+ 'applyTextSize();'.length)+ 'persist();}; applyTextSize();',fontContext);
-assert.equal(scaleValues.get('--text-scale'),'1');
-for(const expected of [1.1,1.2,1.3,0.9,1]){fontNode.onclick();assert.equal(scaleValues.get('--text-scale'),String(expected));assert.equal(fontContext.state.textScale,expected);assert(fontNode.attrs['aria-label'].includes('all text'));}
-fontContext.state.textScale=1.2;fontContext.applyTextSize();assert.equal(scaleValues.get('--text-scale'),'1.2');
-const typography=fs.readFileSync('src/style.css','utf8');const declarations=typography.match(/(?<![\w-])font(?:-size)?\s*:[^;}]+/g)||[];assert(declarations.filter(d=>d.includes('px')).every(d=>d==='font-size:calc(16px * var(--text-scale,1))'));assert(typography.includes('var(--chapter-size,1.1875rem)'));
-console.log('PASS: A+ scales all typography, cycles sizes, saves preference and preserves smaller summaries.');
+vm.runInContext(source.slice(source.indexOf('function applyTextSize(){'),source.indexOf("$('#clear-selection').onclick")),fontContext);
+assert.equal(scaleValues.get('--text-scale'),'1');assert.equal(fontOutput.textContent,'100%');
+for(const percent of [85,95,100,115,130,150]){fontNode.oninput({target:{value:String(percent)}});assert.equal(scaleValues.get('--text-scale'),String(percent/100));assert.equal(fontContext.state.textScale,percent/100);assert.equal(fontOutput.textContent,percent+'%');assert.equal(fontNode.attrs['aria-valuetext'],percent+' percent');}
+fontNode.onchange();assert(scaleValues.get('saved'));
+fontContext.state.textScale=Infinity;fontContext.applyTextSize();assert.equal(scaleValues.get('--text-scale'),'1');
+assert(html.includes('id="reader-font" type="range"'));
+console.log('PASS: text-size slider scales live from 85 to 150 percent, labels values and persists on change.');
 
 const statusNode={};context.$=selector=>selector==='#comparison-status'?statusNode:{value:selector==='#reader-edition'?'kjv':'on'};
 context.cache.clear();for(const mode of ['history','contradictions','science','questions'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});

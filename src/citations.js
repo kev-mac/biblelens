@@ -32,7 +32,7 @@
  if(action.dataset.verseAction==='copy'||action.dataset.verseAction==='copy-selected'){
  const numbers=action.dataset.verseAction==='copy-selected'?selectedVerseNumbers():[verse];
  if(await copyVerseSelection(book,chapter,numbers))close();return;
- }close();const active=toggleVerseMark('bookmark',book,chapter,verse);toast(active?'Verse marked':'Verse unmarked');});
+ }const active=toggleVerseMark('bookmark',book,chapter,verse);if(active===null)return;close();toast(active?'Verse marked':'Verse unmarked');});
  document.addEventListener('pointerdown',ev=>{if(ev.button!==0)return;const link=ev.target.closest('[data-cite]'),body=ev.target.closest('.verse-body');if(!body&&!link)return;cancelPress();press={body,link,x:ev.clientX,y:ev.clientY,id:ev.pointerId,shown:false};pressTimer=setTimeout(()=>{if(!press)return;press.shown=true;if(link)show(link);else showWeb(body);},500);});
  document.addEventListener('pointermove',ev=>{if(press&&ev.pointerId===press.id&&Math.hypot(ev.clientX-press.x,ev.clientY-press.y)>8)cancelPress();});
  document.addEventListener('pointerup',()=>{if(press?.shown){suppressedBody=press.body;suppressedLink=press.link;suppressedUntil=Date.now()+750;}cancelPress();});

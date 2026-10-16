@@ -19,8 +19,8 @@ function readRef(ref){const m=/^(.*?) (\d+):(\d+)/.exec(ref);const book=m&&books
 function chapterStudies(){if(!reading)return [];return ENTRIES.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter}));}
 function applicableStudies(){const entries=chapterStudies();if(!selectedVerses.size)return entries;const matching=entries.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter&&selectedVerses.has(p.verse)}));return matching.length?matching:entries;}
 function chapterOptions(){comparisonSelections.clear();comparisonRecordSelections.clear();comparisonHighlightOrder.clear();const book=books[readingBook];$('#chapter-select').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===readingChapter?'selected':''}>${i+1}</option>`).join('');$('#book-select').value=String(readingBook);}
-function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;$('#reader-picker').setAttribute('aria-label',`Reader settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;$('#edge-prev').setAttribute('data-boundary',String(first));$('#edge-next').setAttribute('data-boundary',String(last));}
-async function loadChapter(book,ch,verse=null,updateHash=true){const b=books[book];if(!b||!Number.isInteger(ch)||ch<1||ch>b.chapters)return;stagePassageDock();const version=++loadVersion;readingBook=book;readingChapter=ch;selectedVerses.clear();chapterOptions();$('#reader-status').textContent='Loading chapter…';$('#chapter-text').innerHTML='<p class="chapter-loading">Loading chapter…</p>';$('#comparison-status').hidden=true;try{const response=await fetch(`/api/chapter?book=${book}&chapter=${ch}`);if(!response.ok)throw Error('Chapter could not be loaded');const data=await response.json();if(version!==loadVersion)return;reading=data;state.reading={book,chapter:ch};persist();renderReader();if(updateHash)history.replaceState(null,'',`#read/${book}/${ch}${verse?'/'+verse:''}`);if(verse)requestAnimationFrame(()=>$(`#verse-${verse}`)?.scrollIntoView({block:'center',behavior:'smooth'}));else window.scrollTo({top:0,behavior:'instant'});}catch(err){if(version!==loadVersion)return;reading=null;$('#chapter-text').innerHTML='<div class="reader-error"><p>Could not load this chapter.</p><button id="retry-chapter" class="primary">Retry</button></div>';$('#retry-chapter').onclick=()=>loadChapter(book,ch,verse,updateHash);$('#reader-status').textContent='Chapter unavailable. Try again.';}}
+function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;const context=$('#header-context');context.dataset.passage=`${label} (${$('#reader-edition').value.toUpperCase()})`;if(view==='explore')context.textContent=context.dataset.passage;$('#reader-picker').setAttribute('aria-label',`Reader settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;}
+async function loadChapter(book,ch,verse=null,updateHash=true){const b=books[book];if(!b||!Number.isInteger(ch)||ch<1||ch>b.chapters)return;stagePassageDock();const version=++loadVersion;readingBook=book;readingChapter=ch;selectedVerses.clear();$('#passage-tools').hidden=true;chapterOptions();$('#reader-status').textContent='Loading chapter…';$('#chapter-text').innerHTML='<p class="chapter-loading">Loading chapter…</p>';$('#comparison-status').hidden=true;try{const response=await fetch(`/api/chapter?book=${book}&chapter=${ch}`);if(!response.ok)throw Error('Chapter could not be loaded');const data=await response.json();if(version!==loadVersion)return;reading=data;state.reading={book,chapter:ch};persist();renderReader();if(updateHash)history.replaceState(null,'',`#read/${book}/${ch}${verse?'/'+verse:''}`);if(verse)requestAnimationFrame(()=>$(`#verse-${verse}`)?.scrollIntoView({block:'center',behavior:'smooth'}));else window.scrollTo({top:0,behavior:'instant'});}catch(err){if(version!==loadVersion)return;reading=null;$('#chapter-text').innerHTML='<div class="reader-error"><p>Could not load this chapter.</p><button id="retry-chapter" class="primary">Retry</button></div>';$('#retry-chapter').onclick=()=>loadChapter(book,ch,verse,updateHash);$('#reader-status').textContent='Chapter unavailable. Try again.';}}
 const comparisonCache=new Map();
 const comparisonSelections=new Map();
 const categoryFilters=new Set(['bookmark']);
@@ -129,14 +129,14 @@ function alternativeReadings(verse){
 function comparisonCell(verse){
  const mode=$('#reader-compare').value;if(mode==='none')return '';
  const items=verseComparisons(verse);
- if(!items.length)return '<div class="comparison-cell" aria-label="No comparison attached"></div>';
+ if(!items.length)return '';
  const choices=items.flatMap(item=>{const tags=recordTags(item);return tags.length?tags.map(tag=>({...item,tag,key:`${item.key}-${tag}`})):item.mode==='questions'?[{...item,tag:'Q',key:`${item.key}-Q`}]:[item];});
  const selected=comparisonSelections.get(selectionKey(verse))||new Set();
  const isOpen=item=>categoryFilters.has(filterCategory(item))&&(comparisonRecordSelections.get(recordSelection(item))??(item.mode==='bookmark'));
  const tone=comparisonTone;
  const category=item=>languageTags[item.tag]?.label||comparisonLabels[item.mode];
  const icon=comparisonIcon;
- const shownChoices=choices.sort((a,b)=>categoryRank(a)-categoryRank(b));
+ const shownChoices=choices.filter(item=>item.placementRole!=='context'||categoryFilters.has(filterCategory(item))).sort((a,b)=>categoryRank(a)-categoryRank(b));if(!shownChoices.length)return '';
  const tabs=shownChoices.map(item=>{const duplicate=choices.filter(i=>category(i)===category(item)).length>1;const label=`${category(item)}${item.status?' · '+item.status:''}${item.placementRole==='context'?' · Supporting context':''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;const open=isOpen(item);if(item.mode==='bookmark'&&!item.summary)return `<button type="button" class="agreement comparison-tab bookmark" data-bookmark-menu="${verse}" aria-label="Bookmarked verse ${verse}: add note, unmark or share" aria-haspopup="dialog">${icon(item)}</button>`;if(item.placementRole==='context')return `<button type="button" class="agreement comparison-tab ${tone(item)} context-tag" id="comparison-tab-${verse}-${item.key}" aria-pressed="${categoryFilters.has(filterCategory(item))}" aria-label="${esc(label)}" aria-haspopup="dialog" data-context-ref="${esc(item.keyTarget||item.ref)}" data-context-title="${esc(item.title||item.summary||item.ref)}"></button>`;return `<button type="button" class="agreement comparison-tab ${tone(item)}" id="comparison-tab-${verse}-${item.key}" aria-pressed="${open}" aria-expanded="${open}" aria-controls="comparison-panel-${verse}-${item.key}" data-comparison-category="${filterCategory(item)}" data-comparison-record="${esc(recordSelection(item))}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${icon(item)}</button>`});
  const panels=shownChoices.filter(active=>active.placementRole!=='context'&&(active.mode!=='bookmark'||active.summary)).map(active=>`<section class="verse-comparison comparison-panel" data-tone="${tone(active)}" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${isOpen(active)?'':'hidden'}>${sideRows(active)}${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(summaryText(active))}</p>${active.mode==='bookmark'?'':active.placementRole?roleCitations(active):comparisonCitations(verse,[active])}${active.mode==='bookmark'?`<button type="button" class="text-button" data-edit-verse-note="${verse}">Edit note</button>`:''}<details class="comparison-details" ${active.mode==='bookmark'?'hidden':''}><summary>Details & sources</summary>${active.tag==='T'?`<p class="language-context">${esc(active.witness)}</p>`:''}<p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${alternativeReadings(verse)}${active.reasoning?`<p><b>Reasoning:</b> ${esc(active.reasoning)}</p>`:''}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details></section>`).join('');
  return `<div class="comparison-cell"><div class="comparison-tabs" role="group" aria-label="Comparisons for verse ${verse}"><span class="primary-tags">${tabs.filter((_,i)=>shownChoices[i].placementRole!=='context').join('')}</span><span class="context-tags">${tabs.filter((_,i)=>shownChoices[i].placementRole==='context').join('')}</span></div>${panels}</div>`;
@@ -189,7 +189,7 @@ function refreshVerseHighlights(){
 function verseNumber(v){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<button class="verse-num" data-verse="${v.n}" aria-label="${selectedVerses.has(v.n)?'Deselect':'Select'} verse ${v.n}${saved?', bookmarked':''}" aria-pressed="${selectedVerses.has(v.n)}">${v.n}</button>`;}
 function verseText(v,edition){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<div class="verse-body${saved?' verse-bookmarked':''}" tabindex="0" aria-label="Verse ${v.n}. Tap to select; hold or press Enter to mark or share">${verseNumber(v)}${v[edition]?scriptureHtml(v,edition):'<span class="missing-verse">This verse number is absent from the supplied edition’s dataset.</span>'}</div>`;}
 function comparisonStatus(){
- const mode=$('#reader-compare').value,status=$('#comparison-status');status.hidden=false;if(mode==='none'){status.innerHTML=chapterBookmarkButton();return;}
+ const mode=$('#reader-compare').value,status=$('#comparison-status');status.hidden=false;if(mode==='none'){status.hidden=true;status.innerHTML='';return;}
  const records=comparisonModes.map(m=>comparisonCache.get(comparisonKey(m)));
  const failures=records.filter(r=>r?.status==='error');
  if(failures.length){status.innerHTML='Some comparison tags could not load. <button class="text-button" id="retry-comparison">Retry</button>';$('#retry-comparison').onclick=()=>{for(const m of comparisonModes)if(comparisonCache.get(comparisonKey(m))?.status==='error')comparisonCache.delete(comparisonKey(m));ensureComparisons();};return;}
@@ -214,7 +214,7 @@ async function ensureComparisons(){
  comparisonStatus();if(!jobs.length)return;await Promise.all(jobs);
  if(reading&&book===readingBook&&ch===readingChapter&&edition===$('#reader-edition').value)renderReader(true);
 }
-function renderReader(preserve=false){if(!reading)return;stagePassageDock();const scroll=window.scrollY;const edition=$('#reader-edition').value,mode=$('#reader-compare').value;const comparing=mode!=='none';const label={history:'Historic',contradictions:'Contradictions',science:'Scientific',questions:'Unanswered Questions'}[mode];$('#chapter-text').classList.toggle('with-comparisons',comparing);$('#chapter-text').innerHTML=`<div class="chapter-heading-row"><div class="passage-heading"><div><h2>${esc(reading.name)} ${reading.chapter}</h2><p class="passage-eyebrow passage-description">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p></div><button type="button" class="passage-picker-trigger" aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14m-10-3V3h6a4 4 0 0 1 4 4 4 4 0 0 1 4-4h6v15h-6a4 4 0 0 0-4 3 4 4 0 0 0-4-3Z"/></svg></button><button class="chapter-round passage-bookmark" data-passage-save aria-label="Save this passage" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg></button></div><p class="chapter-subtitle">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p></div>${reading.verses.map(v=>`<div class="verse ${selectedVerses.has(v.n)?'selected':''}" id="verse-${v.n}"><div class="verse-content-grid ${comparing?'is-comparing':''}">${verseText(v,edition)}${comparing?comparisonCell(v.n):''}</div></div>`).join('')}`;updateContext();comparisonStatus();syncPassageTools();if(preserve)requestAnimationFrame(()=>window.scrollTo({top:scroll,behavior:'instant'}));ensureComparisons();}
+function renderReader(preserve=false){if(!reading)return;stagePassageDock();const scroll=window.scrollY;const edition=$('#reader-edition').value,mode=$('#reader-compare').value;const comparing=mode!=='none';const label={history:'Historic',contradictions:'Contradictions',science:'Scientific',questions:'Unanswered Questions'}[mode];document.body.classList.toggle('compare-active',comparing);$('#chapter-text').classList.toggle('with-comparisons',comparing);$('#chapter-text').innerHTML=`<div class="chapter-heading-row"><div class="passage-heading"><div><h2><button type="button" class="passage-heading-picker" aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker">${esc(reading.name)} ${reading.chapter}</button></h2><p class="passage-eyebrow passage-description">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p></div><button type="button" class="passage-picker-trigger" aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14m-10-3V3h6a4 4 0 0 1 4 4 4 4 0 0 1 4-4h6v15h-6a4 4 0 0 0-4 3 4 4 0 0 0-4-3Z"/></svg></button><button class="chapter-round passage-bookmark" data-passage-save aria-label="Save this passage" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg></button></div><p class="chapter-subtitle">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p></div>${reading.verses.map(v=>{const comparison=comparing?comparisonCell(v.n):'';return `<div class="verse ${selectedVerses.has(v.n)?'selected':''}" id="verse-${v.n}"><div class="verse-content-grid ${comparison?'is-comparing':''}">${verseText(v,edition)}${comparison}</div></div>`;}).join('')}`;updateContext();comparisonStatus();syncPassageTools();if(preserve)requestAnimationFrame(()=>window.scrollTo({top:scroll,behavior:'instant'}));ensureComparisons();}
 $('#reader-compare').onclick=()=>{readerPreferences.compare=readerPreferences.compare==='none'?'on':'none';state.readerPreferences=readerPreferences;comparisonSelections.clear();comparisonRecordSelections.clear();comparisonHighlightOrder.clear();updateCompareToggle();persist();renderReader(true);};
 let chapterPaging=false;
 function chapterPagingBlocked(){return view!=='explore'||!!document.querySelector('dialog[open],.verse-preview:not([hidden])');}
@@ -224,7 +224,7 @@ async function chapterMotion(frames,duration){
  const animation=article.animate(frames,{duration,easing:'cubic-bezier(0.25, 1, 0.5, 1)'});
  try{await animation.finished;}catch{}finally{animation.cancel();}
 }
-async function moveChapter(direction){
+async function moveChapter(direction,dragOffset=0){
  if(chapterPaging||chapterPagingBlocked()||!books.length||!reading)return;
  let book=readingBook,ch=readingChapter+direction;
  if(ch<1&&book>0){book--;ch=books[book].chapters}
@@ -238,20 +238,25 @@ async function moveChapter(direction){
    return;
   }
   const version=loadVersion;
-  await chapterMotion([{transform:'translate3d(0,0,0)',opacity:1},{transform:`translate3d(${-direction*12}%,0,0)`,opacity:0}],120);
+  await chapterMotion([{transform:`translate3d(${dragOffset}px,0,0)`,opacity:1},{transform:`translate3d(${-direction*100}%,0,0)`,opacity:0}],160);
+  const article=$('#chapter-text');article.style.transform='';article.style.opacity='0';article.classList.remove('is-swiping');
   if(version!==loadVersion||chapterPagingBlocked())return;
   await loadChapter(book,ch);
-  if(loadVersion===version+1)await chapterMotion([{transform:`translate3d(${direction*12}%,0,0)`,opacity:0},{transform:'translate3d(0,0,0)',opacity:1}],220);
- }finally{chapterPaging=false;}
+  article.style.opacity='';
+  if(loadVersion===version+1)await chapterMotion([{transform:`translate3d(${direction*100}%,0,0)`,opacity:0},{transform:'translate3d(0,0,0)',opacity:1}],220);
+ }finally{const article=$('#chapter-text');article.style.transform='';article.style.opacity='';article.classList.remove('is-swiping');chapterPaging=false;}
 }
 $('#book-select').onchange=ev=>loadChapter(Number(ev.target.value),1);$('#chapter-select').onchange=ev=>loadChapter(readingBook,Number(ev.target.value));for(const [id,key]of [['#reader-edition','edition']])$(id).onchange=()=>{readerPreferences[key]=$(id).value;if(key==='compare')comparisonSelections.clear();state.readerPreferences=readerPreferences;persist();renderReader(true)};for(const id of ['#prev-bottom'])$(id).onclick=()=>moveChapter(-1);for(const id of ['#next-bottom'])$(id).onclick=()=>moveChapter(1);function applyTextSize(){
  if(state.textScaleBaseline!=='110-v2'){state.textScale=1;state.textScaleBaseline='110-v2';persist();}
- const scale=[0.9,1,1.1,1.2,1.3].includes(state.textScale)?state.textScale:1;
+ const raw=Number(state.textScale),scale=Number.isFinite(raw)?Math.round(Math.max(.85,Math.min(1.5,raw))*20)/20:1;
+ state.textScale=scale;
  document.documentElement.style.setProperty('--text-scale',String(scale));
- $('#reader-font').setAttribute('aria-label',`Change all text size (currently ${Math.round(scale*100)} percent)`);
- $('#reader-font').title=`All text size: ${Math.round(scale*100)}%`;
+ const percent=Math.round(scale*100),slider=$('#reader-font');
+ slider.value=String(percent);slider.setAttribute('aria-valuetext',percent+' percent');
+ $('#reader-font-value').textContent=percent+'%';
 }
-$('#reader-font').onclick=()=>{const sizes=[0.9,1,1.1,1.2,1.3],current=sizes.includes(state.textScale)?state.textScale:1;state.textScale=sizes[(sizes.indexOf(current)+1)%sizes.length];applyTextSize();persist();};
+$('#reader-font').oninput=ev=>{state.textScale=Number(ev.target.value)/100;applyTextSize();};
+$('#reader-font').onchange=()=>persist();
 applyTextSize();
 $('#clear-selection').onclick=()=>{selectedVerses.clear();renderReader(true)};
 document.addEventListener('click',ev=>{const button=ev.target.closest('button');if(!button)return;if(button.dataset.verse){const n=Number(button.dataset.verse);if(selectedVerses.has(n))selectedVerses.delete(n);else selectedVerses.add(n);renderReader(true)}if(button.dataset.read){setView('explore');const [b,ch,v]=button.dataset.read.split('/').map(Number);loadChapter(b,ch,v)}if(button.dataset.prompt){$('#chat-input').value=button.dataset.prompt;$('#chat-form').requestSubmit()}});
@@ -332,11 +337,11 @@ function openPassagePicker(){
   $('#passage-book').onchange=()=>{updatePassagePickerChapters();updatePassagePickerVerses();};$('#passage-chapter').onchange=()=>updatePassagePickerVerses();
   passagePicker.querySelector('[data-picker-close]').onclick=()=>passagePicker.close();
   $('#passage-picker-form').onsubmit=ev=>{ev.preventDefault();if($('#passage-go').disabled)return;const b=Number($('#passage-book').value),ch=Number($('#passage-chapter').value),v=Number($('#passage-verse').value);passagePicker.close();setView('explore',false);loadChapter(b,ch,v);};
-  passagePicker.addEventListener('close',()=>{passagePickerRequest++;document.querySelector('.passage-picker-trigger')?.focus({preventScroll:true});});
+  passagePicker.addEventListener('close',()=>{passagePickerRequest++;document.querySelector('.passage-heading-picker')?.focus({preventScroll:true});});
  }
  $('#passage-book').innerHTML=books.map(b=>`<option value="${b.id}" ${b.id===readingBook?'selected':''}>${esc(b.name)}</option>`).join('');updatePassagePickerChapters(readingChapter);updatePassagePickerVerses([...selectedVerses][0]||1);passagePicker.showModal();
 }
-document.addEventListener('click',ev=>{if(ev.target.closest('.passage-picker-trigger'))openPassagePicker();});
+document.addEventListener('click',ev=>{if(ev.target.closest('.passage-picker-trigger,.passage-heading-picker'))openPassagePicker();});
 const readerSheet=$('#reader-settings'),readerToolbar=document.querySelector('.reader-toolbar');
 // Settings is shared by Read, Chat and Marked; never leave it under a hidden page.
 document.body.append(readerSheet);
@@ -351,57 +356,58 @@ applyBookPickerPosition();
 $('#book-picker-position').onchange=ev=>{state.bookPickerPosition=ev.target.value;persist();applyBookPickerPosition();};
 $('#reader-picker').onclick=()=>{
  if(readerSheet.open)return;
- document.activeElement?.blur();
  readerSheet.showModal();$('#reader-picker').setAttribute('aria-expanded','true');
 };
 $('#reader-settings-close').onclick=()=>readerSheet.close();
-readerSheet.addEventListener('close',()=>$('#reader-picker').setAttribute('aria-expanded','false'));
+readerSheet.addEventListener('close',()=>{$('#reader-picker').setAttribute('aria-expanded','false');$('#reader-picker').focus({preventScroll:true});});
 readerSheet.addEventListener('click',ev=>{if(ev.target===readerSheet){const r=readerSheet.getBoundingClientRect();if(ev.clientX<r.left||ev.clientX>r.right||ev.clientY<r.top||ev.clientY>r.bottom)readerSheet.close();}});
 
-// Edge controls and article gestures share the chapter dispatcher.
+// Edge controls are replaced by finger-tracked dragging and footer navigation.
 (() => {
- const article=$('#chapter-text');
+ const article=$('#chapter-text'),peek=$('#chapter-swipe-peek');
  let gesture=null,suppressClickUntil=0;
- const buttons=[[$('#edge-prev'),-1],[$('#edge-next'),1]];
- function feedback(button,x,y){
-  if(chapterPagingBlocked())return;
-  const ripple=document.createElement('span');ripple.className='edge-ripple';ripple.setAttribute('aria-hidden','true');
-  const rect=button.getBoundingClientRect();
-  ripple.style.left=(x-rect.left)+'px';ripple.style.top=(y-rect.top)+'px';button.append(ripple);
-  setTimeout(()=>ripple.remove(),300);
-  button.classList.remove('edge-pulse');void button.offsetWidth;button.classList.add('edge-pulse');
-  clearTimeout(button.pulseTimer);button.pulseTimer=setTimeout(()=>button.classList.remove('edge-pulse'),300);
+ function destination(direction){
+  let book=readingBook,chapter=readingChapter+direction;
+  if(chapter<1&&book>0){book--;chapter=books[book].chapters;}
+  else if(chapter>books[book].chapters&&book<books.length-1){book++;chapter=1;}
+  return books[book]&&chapter>0&&chapter<=books[book].chapters?{book,chapter}:null;
  }
- for(const [button,direction]of buttons){
-  button.setAttribute('aria-label',direction<0?'Previous chapter':'Next chapter');
-  button.addEventListener('touchstart',ev=>{
-   if(ev.touches.length!==1)return;
-   const touch=ev.touches[0];button.feedbackAt=Date.now();feedback(button,touch.clientX,touch.clientY);
-  },{passive:true});
-  button.addEventListener('click',ev=>{
-   if(Date.now()-(button.feedbackAt||0)>700){const rect=button.getBoundingClientRect();feedback(button,ev.detail?ev.clientX:rect.left+rect.width/2,ev.detail?ev.clientY:rect.top+rect.height/2);}
-   moveChapter(direction);
-  });
- }
- const selectionActive=()=>!!window.getSelection()?.toString();
+ function reset(){gesture=null;article.classList.remove('is-swiping');article.style.transform='';peek.hidden=true;peek.classList.remove('ready');}
  article.addEventListener('touchstart',ev=>{
-  gesture=null;
-  if(ev.touches.length!==1||chapterPagingBlocked()||chapterPaging||selectionActive()||ev.target.closest('button,a,input,textarea,select,[contenteditable],.comparison-panel,.verse-preview'))return;
-  const touch=ev.touches[0];gesture={x:touch.clientX,y:touch.clientY,time:Date.now()};
+  if(chapterPaging)return;
+  reset();
+  if(ev.touches.length!==1||chapterPagingBlocked()||!reading||window.getSelection()?.toString()||ev.target.closest('button,a,input,textarea,select,[contenteditable],.comparison-panel,.verse-preview'))return;
+  const touch=ev.touches[0];gesture={x:touch.clientX,y:touch.clientY,axis:null,dx:0,version:loadVersion};
  },{passive:true});
  article.addEventListener('touchmove',ev=>{
   if(!gesture)return;
-  if(ev.touches.length!==1||Math.abs(ev.touches[0].clientY-gesture.y)>=30)gesture=null;
- },{passive:true});
- article.addEventListener('touchcancel',()=>{gesture=null;},{passive:true});
+  if(ev.touches.length!==1||chapterPagingBlocked()||gesture.version!==loadVersion){reset();return;}
+  const touch=ev.touches[0],dx=touch.clientX-gesture.x,dy=touch.clientY-gesture.y;
+  if(!gesture.axis){
+   if(Math.max(Math.abs(dx),Math.abs(dy))<10)return;
+   if(Math.abs(dx)<=Math.abs(dy)*1.3){reset();return;}
+   gesture.axis='x';article.classList.add('is-swiping');
+  }
+  if(ev.cancelable)ev.preventDefault();
+  const target=destination(dx<0?1:-1),limit=article.getBoundingClientRect().width*.8;
+  gesture.dx=Math.sign(dx)*Math.min(Math.abs(dx)*(target?1:.2),limit);
+  article.style.transform='translate3d('+gesture.dx+'px,0,0)';
+  if(!target){peek.hidden=true;return;}
+  peek.textContent=books[target.book].name+' '+target.chapter+(dx<0?' →':' ←');
+  peek.dataset.direction=dx<0?'next':'previous';peek.style.setProperty('--swipe-progress',String(Math.min(1,Math.abs(gesture.dx)/80)));
+  peek.classList.toggle('ready',Math.abs(gesture.dx)>=80);peek.hidden=false;
+ },{passive:false});
+ article.addEventListener('touchcancel',reset,{passive:true});
  article.addEventListener('touchend',ev=>{
-  const start=gesture;gesture=null;
-  if(!start||ev.touches.length||ev.changedTouches.length!==1||Date.now()-start.time>650||selectionActive()||chapterPagingBlocked())return;
-  const touch=ev.changedTouches[0],dx=touch.clientX-start.x,dy=touch.clientY-start.y;
-  if(Math.abs(dx)<50||Math.abs(dy)>=30)return;
-  suppressClickUntil=Date.now()+500;moveChapter(dx<0?1:-1);
+  const start=gesture;
+  if(!start)return;
+  gesture=null;peek.hidden=true;
+  if(start.axis==='x')suppressClickUntil=Date.now()+500;
+  if(ev.touches.length||start.axis!=='x'||Math.abs(start.dx)<80||start.version!==loadVersion||chapterPagingBlocked()||!destination(start.dx<0?1:-1)){reset();return;}
+  moveChapter(start.dx<0?1:-1,start.dx);
  },{passive:true});
  article.addEventListener('click',ev=>{if(Date.now()<suppressClickUntil){ev.preventDefault();ev.stopImmediatePropagation();}},true);
+ window.addEventListener('viewchange',reset);window.addEventListener('resize',reset);
 })();
 
 // The category tray can collapse to a small chevron while remaining available.
@@ -434,7 +440,6 @@ $('#chapter-bookmark-list').addEventListener('click',ev=>{if(ev.target.closest('
   const heading=document.querySelector('.passage-heading'),text=heading?.querySelector(':scope > div');if(!heading||!text)return;
   const height=Math.ceil(text.getBoundingClientRect().height);
   if(height>0&&heading.style.getPropertyValue('--passage-book-diameter')!==height+'px')heading.style.setProperty('--passage-book-diameter',height+'px');
-  const count=selectedVerseNumbers().length,label=$('#share-selected-label');if(label)label.textContent='Copy selected ('+count+')';$('#passage-share').disabled=!count;
  });};
  const resize=typeof ResizeObserver==='function'?new ResizeObserver(size):null;
  new MutationObserver(()=>{const target=document.querySelector('.passage-heading > div');if(target!==observed){if(observed)resize?.unobserve(observed);observed=target;if(target)resize?.observe(target);}size();}).observe($('#chapter-text'),{childList:true});
