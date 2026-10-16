@@ -170,4 +170,25 @@ async function comparisons(book,ch,mode){
  return data;
 }
 
-export default {async fetch(request,env,ctx){const url=new URL(request.url);if(url.pathname==='/reference/people.json')return json(PEOPLE);if(url.pathname==='/reference/topics.json')return json(TOPICS);if(url.pathname==='/api/comparisons'){const b=Number(url.searchParams.get('book')),c=Number(url.searchParams.get('chapter')),mode=url.searchParams.get('mode');if(!Number.isInteger(b)||!Number.isInteger(c)||!CHAPTERS[`${b}:${c}`]||!['history','science','contradictions','questions'].includes(mode))return json({error:'Invalid comparison request'},400);return json({items:await comparisons(b,c,mode),book:b,chapter:c,mode})}if(url.pathname==='/api/chat'){if(request.method!=='POST')return json({error:'Method not allowed'},405);return chat(request,env)}if(url.pathname==='/api/books')return json(BOOKS);if(url.pathname==='/api/chapter'){const b=Number(url.searchParams.get('book')),c=Number(url.searchParams.get('chapter'));if(!Number.isInteger(b)||!Number.isInteger(c))return json({error:'Invalid chapter'},400);const data=await chapter(b,c);return data?json(data):json({error:'Chapter not found'},404)}const asset=ASSETS[url.pathname==='/index.html'?'/':url.pathname];if(!asset)return new Response('Not found',{status:404});return new Response(asset.body,{headers:{'content-type':asset.type,'cache-control':'no-cache','x-content-type-options':'nosniff','referrer-policy':'strict-origin-when-cross-origin'}})}};
+const markedBookCache=new Map();
+async function markedBook(book){
+ if(markedBookCache.has(book))return markedBookCache.get(book);
+ const records=new Map(),verses={};
+ for(let ch=1;ch<=BOOKS[book].chapters;ch++){
+  const chapterRecords=[];
+  for(const mode of ['history','contradictions','science','questions'])for(const item of await comparisons(book,ch,mode)){
+   const key=mode+':'+item.id;
+   if(!records.has(key))records.set(key,{...item,mode,key,placements:[]});
+   const record=records.get(key);
+   if(!record.placements.some(p=>p.chapter===ch&&p.verse===item.verse))record.placements.push({chapter:ch,verse:item.verse,placementRole:item.placementRole||'key',activeTags:item.activeTags});
+   chapterRecords.push(item.verse);
+  }
+  if(chapterRecords.length){const data=await chapter(book,ch);for(const n of new Set(chapterRecords)){const verse=data.verses.find(v=>v.n===n);if(verse)verses[ch+':'+n]=verse;}}
+ }
+ for(const record of records.values())record.placements.sort((a,b)=>a.chapter-b.chapter||a.verse-b.verse);
+ const result={book,records:[...records.values()].sort((a,b)=>a.placements[0].chapter-b.placements[0].chapter||a.placements[0].verse-b.placements[0].verse),verses};
+ markedBookCache.set(book,result);if(markedBookCache.size>3)markedBookCache.delete(markedBookCache.keys().next().value);return result;
+}
+
+/*__SYNC__*/
+export default {async fetch(request,env,ctx){const url=new URL(request.url);if(url.pathname.startsWith('/api/sync'))return syncRequest(request,env);if(url.pathname==='/release.json')return new Response(ASSETS['/release.json'].body,{headers:{'content-type':'application/json','cache-control':'no-store','access-control-allow-origin':'*'}});if(url.pathname==='/api/marked-comparisons'){const book=Number(url.searchParams.get('book'));if(!url.searchParams.has('book')||!Number.isInteger(book)||!BOOKS[book])return json({error:'Invalid book'},400);return json(await markedBook(book));}if(url.pathname==='/reference/people.json')return json(PEOPLE);if(url.pathname==='/reference/topics.json')return json(TOPICS);if(url.pathname==='/api/comparisons'){const b=Number(url.searchParams.get('book')),c=Number(url.searchParams.get('chapter')),mode=url.searchParams.get('mode');if(!Number.isInteger(b)||!Number.isInteger(c)||!CHAPTERS[`${b}:${c}`]||!['history','science','contradictions','questions'].includes(mode))return json({error:'Invalid comparison request'},400);return json({items:await comparisons(b,c,mode),book:b,chapter:c,mode})}if(url.pathname==='/api/chat'){if(request.method!=='POST')return json({error:'Method not allowed'},405);return chat(request,env)}if(url.pathname==='/api/books')return json(BOOKS);if(url.pathname==='/api/chapter'){const b=Number(url.searchParams.get('book')),c=Number(url.searchParams.get('chapter'));if(!Number.isInteger(b)||!Number.isInteger(c))return json({error:'Invalid chapter'},400);const data=await chapter(b,c);return data?json(data):json({error:'Chapter not found'},404)}const asset=ASSETS[url.pathname==='/index.html'?'/':url.pathname];if(!asset)return new Response('Not found',{status:404});return new Response(asset.body,{headers:{'content-type':asset.type,'cache-control':'no-cache','x-content-type-options':'nosniff','referrer-policy':'strict-origin-when-cross-origin'}})}};

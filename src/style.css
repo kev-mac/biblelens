@@ -839,7 +839,7 @@ html.native-ios ::-webkit-scrollbar-thumb{background:rgba(0,0,0,.45);border-radi
 /* Shared Settings modal: explicitly centered, independent of the active page. */
 body #reader-settings[open]{position:fixed;inset:calc(env(safe-area-inset-top,0px) + 16px) 12px calc(env(safe-area-inset-bottom,0px) + 16px);margin:auto;width:min(620px,calc(100vw - 24px));height:fit-content;max-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 32px);overflow:auto;border-radius:24px}
 
-/* ScriptureLens branding, clear verse glass and inline chat references. */
+/* BibleLens branding, clear verse glass and inline chat references. */
 body .brand b,body.dark .brand b,body .brand .mark-letter-l{color:#c46128}
 body .brand .mark-letter-s{color:#fff}
 body .passage-heading h2{text-shadow:0 0 10px rgba(196,97,40,.26),0 0 22px rgba(255,255,255,.2)}
@@ -884,8 +884,8 @@ body #chapter-text .verse:not(.selected):not(:has(.verse-body.verse-bookmarked))
 body #chapter-text .verse.selected{--theme-rgb:255,255,255;background:radial-gradient(ellipse at 50% 30%,rgba(var(--theme-rgb),.28) 0%,rgba(12,17,26,.85) 90%)!important;background-color:#0c111a!important}
 body:not(.dark) #chapter-text .verse.selected{background:radial-gradient(ellipse at 50% 0%,rgba(var(--theme-rgb),.12),rgba(255,255,255,.82) 85%)!important;background-color:#f7faff!important}
 body #chapter-text .comparison-tabs{margin:6px 0 2px}
-body #chapter-text .comparison-tabs .comparison-tab:not(.context-tag){width:24px;height:24px;min-width:24px;min-height:24px;flex:0 0 24px;padding:0}
-body #chapter-text .comparison-tabs .comparison-tab:not(.context-tag) svg{width:14px;height:14px}
+body #chapter-text .comparison-tabs .comparison-tab:not(.context-tag){width:36px;height:36px;min-width:36px;min-height:36px;flex:0 0 36px;padding:4px}
+body #chapter-text .comparison-tabs .comparison-tab:not(.context-tag) svg{width:28px;height:28px}
 body #chapter-text .comparison-tabs .context-tag{width:10px;height:10px;min-width:10px;min-height:10px;flex:0 0 10px}
 body #chapter-text .comparison-tabs .context-tag::after{inset:-9px}
 body>header nav #reader-picker{color:#7dd3fc!important}
@@ -963,7 +963,7 @@ body .comparison-context-heading button{min-width:36px;min-height:36px}
 body .comparison-context-content{font-size:1rem;line-height:1.6}
 body .comparison-context-dialog::backdrop{background:#0007;backdrop-filter:blur(8px)}
 body .comparison-dock,body.compare-active .comparison-dock,html.native-ios body.compare-active .comparison-dock{position:fixed;top:auto;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,20px);z-index:40;width:max-content;max-width:calc(100vw - 24px);height:auto!important;margin:0;padding:4px 10px;border:1px solid rgba(125,211,252,.25);border-radius:999px;background:rgba(15,23,34,.9);box-shadow:0 6px 28px #0005;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);visibility:hidden;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s,visibility .18s}
-body.read-view.comparison-menu-visible .comparison-dock{visibility:visible;opacity:1;pointer-events:auto;transform:translate(-50%,0)}
+body.read-view.comparison-menu-visible .comparison-dock,html.native-ios body.read-view.comparison-menu-visible .comparison-dock{visibility:visible;opacity:1;pointer-events:auto;transform:translate(-50%,0)}
 body .comparison-dock #comparison-status,body.compare-active .comparison-dock #comparison-status{gap:2px;padding:0;min-height:40px;overflow:visible}
 body .comparison-dock .category-filter,body.compare-active #comparison-status .category-filter{width:38px;min-width:38px;min-height:40px;flex-basis:38px}
 body #comparison-status .category-filter .filter-icon svg{width:22px;height:22px}
@@ -1003,3 +1003,185 @@ body .comparison-dock.pill-expanded #comparison-status .category-filter[data-bri
 body .comparison-dock .category-filter:disabled{opacity:1}
 body .comparison-dock:not(.pill-expanded) #comparison-status .category-filter .filter-icon{width:12px;height:12px;min-width:12px;min-height:12px;max-width:12px;flex:0 0 12px;border:0!important;box-sizing:border-box}
 body .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon{color:rgb(var(--theme-rgb,148,163,184))!important;border:0!important}
+
+/* Reader review: shared icon ink, transparent symbols, and summary disclosure. */
+body>header nav #reader-picker,body>header nav button{color:var(--control-text,var(--ink))!important}
+body>header nav button svg{color:inherit!important}
+body .passage-bullet{display:inline-block;font-size:.5em;vertical-align:middle;margin:0 2px}
+body .brand .mark-letter-s{color:inherit;font-weight:700}
+body .brand .mark-letter-l{color:#c46128;font-weight:700}
+body .comparison-dock.pill-expanded #comparison-status .category-filter,
+body .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon,
+body.dark .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon{background:transparent!important;border:0!important;border-radius:0;box-shadow:none!important;backdrop-filter:none!important;filter:none!important}
+body .comparison-dock.pill-expanded #comparison-status .category-filter[data-brightness="open"] .filter-icon svg{filter:drop-shadow(0 0 5px rgba(var(--theme-rgb),.8))}
+body .comparison-dock.pill-expanded #comparison-status .category-filter[data-brightness="empty"] .filter-icon{opacity:.3}
+body:not(.dark) .comparison-dock{background:rgba(248,250,252,.95);border-color:#94a3b855;box-shadow:0 6px 24px #33415522}
+body:not(.dark) .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon{color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,#172033)!important}
+body .comparison-tabs .comparison-tab:not(.context-tag){display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;min-width:32px;min-height:32px;padding:4px;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;color:rgb(var(--theme-rgb,148,163,184));filter:none!important}
+body .comparison-tabs .comparison-tab:not(.context-tag) svg{width:24px;height:24px}
+body .comparison-tabs .comparison-tab[aria-pressed="true"] svg{filter:drop-shadow(0 0 4px rgba(var(--theme-rgb),.85))}
+body:not(.dark) .comparison-tabs .comparison-tab:not(.context-tag){color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,#172033)}
+body .comparison-tabs .context-tag{width:12px;height:12px;min-width:12px;min-height:12px;padding:0;border:0!important;border-radius:50%;background:rgb(var(--theme-rgb,148,163,184))!important;box-shadow:none!important;filter:none}
+body .comparison-tabs .context-tag::before,body .comparison-tabs .context-tag::after{content:none}
+body .comparison-tabs .context-tag[data-context-local="true"]{opacity:1;box-shadow:0 0 7px rgba(var(--theme-rgb),.65)!important}
+body .comparison-tabs .context-tag[data-context-local="false"]{opacity:.3;cursor:default}
+body .preview-verse-actions{display:flex;flex-wrap:nowrap;gap:6px;align-items:center}
+body .preview-verse-actions button{display:inline-flex;align-items:center;justify-content:center;flex:0 1 40px;width:40px;min-width:28px;height:40px;min-height:40px;padding:7px;background:transparent!important;border:0!important;border-radius:0;box-shadow:none!important;backdrop-filter:none!important;color:var(--control-text,var(--ink))}
+body .preview-verse-actions button svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+body .comparison-context-heading h2{font:600 1.1rem/1.5 "Inter",system-ui}
+body .citations-disclosure>summary{display:inline-block;cursor:pointer;color:var(--control-text);text-decoration:underline;font:400 .875rem/1.5 "Inter",system-ui;margin:8px 0}
+body .comparison-summary .comparison-evidence{margin-top:12px}
+body .context-short.summary-citations{display:flex;flex-wrap:nowrap;gap:6px;overflow:hidden;width:100%}
+body .context-short.summary-citations>*{flex:none}
+body [hidden]{display:none!important}
+/* One selection grid at a time, with no nested scrollers. */
+body #passage-picker{width:min(680px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:18px;overflow:visible;box-sizing:border-box}
+body #passage-picker-form{display:flex;flex-direction:column;gap:12px;margin-top:10px}
+body #passage-picker-form fieldset{min-width:0;border:0;margin:0;padding:0}
+body #passage-picker-form legend{font:.875rem/1.4 "Inter",system-ui;color:var(--muted);margin-bottom:6px}
+body .passage-steps{display:flex;gap:6px;justify-content:stretch}
+body .passage-steps button{flex:1;min-width:0;min-height:36px;padding:6px;font:.8rem/1.3 "Inter",system-ui}
+body .passage-steps button[aria-pressed="true"]{outline:1px solid var(--control-text)}
+body .passage-book-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+body .passage-number-grid{max-height:none;overflow:visible;padding:0;gap:4px}
+body .passage-book-grid .passage-number span{font-size:.7rem;padding:3px 1px;min-height:clamp(20px,calc((100dvh - 290px)/17 - 4px),32px)}
+body .passage-number-grid .passage-number span{min-height:clamp(18px,calc((100dvh - 290px)/18 - 4px),32px)}
+body #passage-picker .passage-number{margin:0}
+body #passage-picker .passage-number span{box-sizing:border-box}
+body #passage-picker .passage-picker-fields{display:block}
+body #chapter-text,body .comparison-cell,body .comparison-summary,body .comparison-evidence{min-width:0;box-sizing:border-box}
+body .reader-layout{grid-template-columns:minmax(0,1fr)}
+body .comparison-sides,body .comparison-side{min-width:0;max-width:100%}
+body #passage-picker-form>*{order:0}
+body #passage-picker-form>.passage-steps{position:static;order:0;width:100%;margin:0;padding:0}
+body #passage-picker-form>#passage-go{order:1}
+body .brand .mark{color:inherit!important}
+
+/* Keep verse symbols close to menu size and preserve each category’s ink. */
+body #chapter-text .comparison-tabs .comparison-tab:not(.context-tag){color:rgb(var(--theme-rgb,148,163,184))!important}
+body:not(.dark) #chapter-text .comparison-tabs .comparison-tab:not(.context-tag){color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,#172033)!important}
+body #chapter-text .verse-content-grid.is-comparing{row-gap:4px}
+body #chapter-text .comparison-cell{margin-top:0}
+body #chapter-text .comparison-tabs{margin:2px 0 0}
+body #chapter-text .comparison-panel{padding-top:0}
+body #chapter-text .comparison-panel h3{margin:2px 0 6px}
+body #chapter-text .comparison-panel .comparison-summary{position:relative;margin-top:0;padding-bottom:42px}
+body #chapter-text .comparison-summary .summary-inspect{position:absolute;right:10px;bottom:8px;margin:0;width:28px;height:28px}
+
+/* A centered disclosure hint becomes the source inspector after expansion. */
+body #chapter-text [data-summary-toggle][aria-expanded="false"] .summary-inspect{display:none!important}
+body #chapter-text .summary-expand{display:flex;position:absolute;left:50%;bottom:8px;transform:translateX(-50%);align-items:center;justify-content:center;width:28px;height:28px;min-height:28px;padding:4px;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;color:var(--control-text,var(--ink))}
+body #chapter-text .summary-expand svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+body #chapter-text .summary-expand{color:rgba(var(--theme-rgb),.5)}
+body:not(.dark) #chapter-text .summary-expand{color:rgba(var(--theme-rgb),.32)}
+
+body a,body a:hover,body a:focus-visible,body.dark .comparison-sources a,body.dark .field-sources a,body .context-pointer a,body .citations-disclosure>summary{text-decoration:none}
+body>footer,html.native-ios body>footer{padding:8px 16px max(8px,env(safe-area-inset-bottom,0px));gap:12px}
+
+body #chapter-text .comparison-summary h3{margin:0 0 10px;font:600 1rem/1.5 "Inter",system-ui;letter-spacing:normal}
+body #chapter-text [data-summary-toggle][aria-expanded="true"] .summary-expand svg{transform:rotate(180deg)}
+body #chapter-text .summary-inspect{color:rgba(var(--theme-rgb),.5)}
+body:not(.dark) #chapter-text .summary-inspect{color:rgba(var(--theme-rgb),.32)}
+
+/* Shared disclosure cards on Marked and Chat. */
+body :is(#saved-view,#chat-view) h2,body :is(#saved-view,#chat-view) h3{font-family:"Inter",system-ui,sans-serif!important;letter-spacing:normal}
+body :is(#saved-view,#chat-view) h2{font-size:1.15rem;font-weight:600;margin:20px 0 12px}
+body :is(#saved-view,#chat-view) .comparison-summary{position:relative;padding:18px 18px 46px;margin:8px 0 16px;min-width:0;box-sizing:border-box}
+body :is(#saved-view,#chat-view) .comparison-summary h3{font:600 .95rem/1.5 "Inter",system-ui;margin:0 0 10px}
+body :is(#saved-view,#chat-view) .comparison-summary p{margin:8px 0;white-space:pre-wrap}
+body :is(#saved-view,#chat-view) [data-summary-toggle][aria-expanded="false"] .summary-inspect{display:none!important}
+body :is(#saved-view,#chat-view) .summary-expand{display:flex;position:absolute;left:50%;bottom:8px;transform:translateX(-50%);align-items:center;justify-content:center;width:28px;height:28px;min-height:28px;padding:4px;border:0!important;border-radius:0;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;color:rgba(var(--theme-rgb),.5)}
+body :is(#saved-view,#chat-view) .summary-expand svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+body :is(#saved-view,#chat-view) [data-summary-toggle][aria-expanded="true"] .summary-expand svg{transform:rotate(180deg)}
+body :is(#saved-view,#chat-view) .summary-inspect{position:absolute;right:10px;bottom:8px;color:rgba(var(--theme-rgb),.5)}
+body:not(.dark) :is(#saved-view,#chat-view) :is(.summary-expand,.summary-inspect){color:rgba(var(--theme-rgb),.32)}
+body :is(#saved-view,#chat-view) .comparison-panel>.comparison-details{display:none!important}
+body :is(#saved-view,#chat-view) .comparison-evidence{margin-top:14px}
+body #marked-context{position:sticky;top:var(--site-header-height,52px);z-index:30;background:var(--bg);padding:10px 0;margin-bottom:10px}
+body #marked-filter-open{display:flex;align-items:center;gap:10px;width:100%;text-align:left;padding:10px 14px;font-size:.85rem}
+body #marked-filter-open svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;flex:none}
+body #saved-view .marked-comparison-card{margin:0 0 28px;scroll-margin-top:130px;outline-offset:5px}
+body #saved-view .marked-comparison-card:focus{outline:1px solid var(--control-text)}
+body #saved-view .marked-verse-row{padding:8px 0;min-width:0}
+body #saved-view .marked-verse-text{font:400 1rem/1.6 "Inter",system-ui;margin:10px 0}
+body #saved-view .marked-bookmark{margin-bottom:14px}
+body #saved-view .marked-verse-icons{gap:8px;min-height:32px}
+body #saved-view .marked-verse-icons:empty{display:none}
+body #saved-view .comparison-tab{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;min-width:36px;min-height:36px;padding:4px;border:0!important;background:transparent!important;box-shadow:none!important;color:rgb(var(--theme-rgb))!important;border-radius:0}
+body:not(.dark) #saved-view .comparison-tab{color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,#172033)!important}
+body #saved-view .comparison-tab svg{width:28px;height:28px}
+body .marked-count{font-size:.8rem;color:var(--muted);font-weight:400;margin-left:6px}
+body #marked-filter-dialog{box-sizing:border-box;width:min(660px,calc(100vw - 24px));max-height:88dvh;overflow:auto;padding:20px;color:var(--ink)}
+body #marked-filter-dialog h2{font-family:"Inter",system-ui,sans-serif!important;font:600 1.15rem/1.5 "Inter",system-ui;margin:0}
+body #marked-filter-dialog fieldset{border:0;padding:0;margin:14px 0}
+body #marked-filter-dialog label{display:block;margin:12px 0;font-size:.875rem}
+body #marked-filter-dialog select{display:block;width:100%;margin-top:6px}
+body .marked-book-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+body .marked-book-grid button{min-width:0;min-height:32px;padding:5px 2px;font-size:.7rem;border-radius:7px}
+body .marked-book-grid [aria-pressed="true"]{outline:2px solid var(--control-text)}
+body #marked-filter-apply{width:100%;margin-top:8px}
+body #chat-view{padding-top:24px}
+body #chat-view .chat-message.assistant{padding:0;background:none!important;border:0;box-shadow:none!important}
+body #chat-view .chat-answer{margin:0}
+body #chat-view .chat-reasoning{margin-top:12px;white-space:pre-wrap}
+body #chat-status:empty{display:none}
+body #clear-chat{position:fixed;z-index:45;top:calc(var(--site-header-height,52px) + 12px);right:max(16px,calc((100vw - 1000px)/2 + 16px));display:grid;place-items:center;width:44px;height:44px;min-height:44px;padding:11px;border-radius:50%}
+body #clear-chat svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+body #chat-messages{padding-top:42px}
+body #saved-view .comparison-summary{scroll-margin-top:130px}
+body #chat-view .chat-answer .message-body{font:400 1rem/1.6 "Inter",system-ui}
+
+/* Use the full picker width for comfortable chapter and verse targets. */
+body #passage-picker{overflow:auto}
+body #passage-picker-form{align-items:stretch;gap:14px}
+body #passage-picker .passage-picker-fields{display:block;width:100%}
+body #passage-picker .passage-number-grid{display:grid;grid-template-columns:repeat(var(--number-columns,10),minmax(0,1fr));width:100%;gap:4px;max-height:none;overflow:visible}
+body #passage-picker .passage-number{width:100%}
+body #passage-picker .passage-number span{width:100%;height:auto;min-height:0;aspect-ratio:1;border-radius:50%;padding:0;font:500 .875rem/1 "Inter",system-ui}
+body #passage-picker .passage-book-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+body #passage-picker .passage-book-grid .passage-number span{height:44px;min-height:44px;aspect-ratio:auto;border-radius:8px;padding:5px;font-size:.8rem;line-height:1.2;text-align:center;white-space:normal}
+body #passage-picker .passage-testaments{display:flex;gap:8px;margin-bottom:12px}
+body #passage-picker .passage-testaments button{flex:1;min-width:0;min-height:38px;padding:7px;font-size:.8rem}
+body #passage-picker .passage-testaments [aria-pressed="true"]{outline:1px solid var(--control-text)}
+/* Category panes are simple dividers, with independent disclosure cards below. */
+body #saved-view .marked-category-pane{margin:12px 0 22px;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+body #saved-view .marked-category-pane>summary{display:flex;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);list-style:none;font:600 1rem/1.5 "Inter",system-ui;cursor:pointer;color:var(--ink)}
+body #saved-view .marked-category-pane>summary::-webkit-details-marker{display:none}
+body #saved-view .marked-category-pane>summary::before{content:'›';display:inline-block;margin-right:10px;font-size:1.4rem;line-height:1;transform:rotate(0deg)}
+body #saved-view .marked-category-pane[open]>summary::before{transform:rotate(90deg)}
+body #saved-view .marked-category-pane>summary .marked-count{margin-left:auto}
+body #saved-view .marked-category-content{padding-top:14px}
+body #saved-view .marked-comparison-card{margin-bottom:16px}
+body #saved-view .marked-comparison-card .comparison-summary{margin:0 0 14px}
+body #saved-view .comparison-side{align-items:flex-start;gap:8px}
+body #saved-view .comparison-side q{white-space:normal}
+
+/* Compact book choices share the same staged navigation in Read and Marked. */
+body #passage-picker .passage-book-grid,body #marked-filter-dialog .marked-book-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+body #passage-picker .passage-book-grid .passage-number span{height:40px;min-height:40px;font-size:.85rem}
+body #marked-filter-dialog{width:min(680px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:18px}
+body #marked-filter-dialog .passage-steps{margin-top:14px}
+body #marked-filter-dialog fieldset{min-width:0}
+body #marked-filter-dialog legend{font:.875rem/1.4 "Inter",system-ui;color:var(--muted);margin-bottom:8px}
+body #marked-filter-dialog .passage-testaments{display:flex;gap:8px;margin-bottom:12px}
+body #marked-filter-dialog .passage-testaments button{flex:1;min-width:0;min-height:38px;font-size:.8rem;padding:7px}
+body #marked-filter-dialog .marked-book-grid button{height:40px;min-height:40px;padding:5px;font-size:.85rem;border-radius:8px}
+body #marked-filter-dialog [aria-pressed="true"]{outline:1px solid var(--control-text)}
+body #marked-filter-dialog .marked-chapter-grid{display:grid;grid-template-columns:repeat(var(--number-columns,10),minmax(0,1fr));gap:4px}
+body #marked-filter-dialog .marked-chapter-grid button{aspect-ratio:1;width:100%;height:auto;min-height:0;min-width:0;padding:0;border-radius:50%;font:500 .875rem/1 "Inter",system-ui}
+body #marked-filter-dialog .marked-chapter-grid .marked-all-chapters{grid-column:1/-1;aspect-ratio:auto;height:36px;border-radius:18px;margin-bottom:8px}
+body #marked-filter-dialog .marked-kind-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+body #marked-filter-dialog .marked-kind-grid button{display:flex;align-items:center;gap:8px;font-size:.85rem;min-height:44px;padding:8px}
+body #marked-filter-dialog .category-icon{width:24px;height:24px;color:rgb(var(--theme-rgb));flex:none}
+body #saved-view .marked-category-icon{display:inline-flex;color:rgb(var(--theme-rgb));margin-right:10px}
+body #saved-view .marked-category-icon svg{width:26px;height:26px}
+body #saved-view .marked-bookmark{--theme-rgb:234,179,8;background:radial-gradient(ellipse at 50% 0%,rgba(var(--theme-rgb),.28),rgba(12,17,26,.85) 90%);border:1.5px solid rgba(var(--theme-rgb),.5);box-shadow:0 0 20px rgba(var(--theme-rgb),.2),inset 0 1px 2px #fff6}
+body:not(.dark) #saved-view .marked-bookmark{background:radial-gradient(ellipse at 50% 0%,rgba(var(--theme-rgb),.18),#f7faff 90%);border-color:rgba(var(--theme-rgb),.5);box-shadow:0 3px 14px rgba(var(--theme-rgb),.14)}
+body #saved-view .marked-bookmark .verse-citation{--theme-rgb:234,179,8}
+body .reader-font-settings{display:grid;gap:12px;margin:14px 0}
+body .reader-font-settings label{display:grid;gap:6px;font:.875rem/1.5 "Inter",system-ui;color:var(--muted)}
+body .reader-font-settings select{width:100%;min-height:42px}
+body .verse-body,body .marked-verse-text,body .comparison-side q,body .verse-preview blockquote{font-family:var(--verse-font-family,"Inter",system-ui,sans-serif)!important}
+body .comparison-summary,body :is(#chapter-text,#saved-view,#chat-view) .comparison-summary :is(h3,p,.message-body,.chat-reasoning),body .comparison-evidence,body .comparison-context-content{font-family:var(--category-font-family,"Inter",system-ui,sans-serif)!important}
+
+.cloud-sync-settings,.release-settings{border-top:1px solid var(--line);margin-top:20px;padding-top:16px;min-width:0}.cloud-sync-settings h3,.release-settings h3{font:600 1rem/1.5 Inter,system-ui}.cloud-sync-settings p,.release-settings p{font-size:.85rem;line-height:1.5}.sync-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.sync-actions a{color:var(--green)}.sync-pair input{width:100%;box-sizing:border-box;font:1rem/1.5 ui-monospace,monospace;user-select:text}.sync-pair{margin-block:12px}

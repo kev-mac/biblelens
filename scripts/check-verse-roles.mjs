@@ -22,7 +22,7 @@ ctx.cache.set('0:1:kjv:contradictions',{items:[{...fixture,verse:1,placementRole
 assert.equal(ctx.render(2),'');vm.runInContext("categoryFilters.add('contradictions')",ctx);
 const card=ctx.render(1),pointer=ctx.render(2);
 assert.equal((card.match(/class="verse-comparison comparison-panel"/g)||[]).length,2);assert(card.includes('comparison-side'));assert(card.indexOf('comparison-sides')>card.indexOf('Fixture summary'));
-assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-ref="Genesis 1:1"'));assert(pointer.includes('data-context-title="Fixture title"'));assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('Fixture summary'));assert(!pointer.includes('Details & sources'));
+assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-local="true"'));assert(pointer.includes('data-context-jump="1"'));assert(pointer.includes('title="Genesis 1:1"'));assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('Fixture summary'));assert(!pointer.includes('Details & sources'));
 assert(card.includes('<span>Gen 1:1</span>'));assert(card.includes('aria-label="Genesis 1:1"'));assert(card.includes('title="Genesis 1:1"'));
 assert(!card.includes('<strong>A</strong>'));assert(!card.includes('<strong>B</strong>'));
 vm.runInContext(source.slice(source.indexOf('function citationButton('),source.indexOf('function comparisonCitations('))+'this.legacyCitation=citationButton;',ctx);
@@ -31,10 +31,10 @@ assert(pointer.includes('contradictions context-tag'));assert(pointer.includes('
 const makeButton=(verse,key)=>({dataset:{comparisonVerse:String(verse),comparisonKey:key,comparisonCategory:'contradictions',comparisonRecord:'fixture-only:contradictions'},attrs:{'aria-controls':`comparison-panel-${verse}-${key}`},setAttribute(k,v){this.attrs[k]=v;},getAttribute(k){return this.attrs[k];}});
 buttons.push(makeButton(1,'contradictions-0'),makeButton(2,'contradictions-0'));for(const b of buttons)panels.set(b.attrs['aria-controls'],{hidden:false});ctx.toggle(buttons[0]);assert([...panels.values()].every(p=>!p.hidden));ctx.toggle(buttons[1]);assert([...panels.values()].every(p=>p.hidden));
 const many={...fallback,appliesTo:[],refs:[...Array.from({length:25},(_,i)=>parts(`Genesis 1:${i+1}`)),...['Exodus 1:1','Exodus 1:3','Exodus 2:1','Numbers 32:16','Numbers 32:17','Numbers 32:18','Numbers 32:24'].map(parts)]};
-const chips=ctx.chips(many);assert(chips.includes('Genesis 1:2–25'));assert(chips.includes('>+3</button>'));assert(!chips.includes(' more</button>'));assert.equal((chips.split('context-full')[0].match(/href=/g)||[]).length,3);assert(chips.includes('Show fewer'));assert(chips.indexOf('Exodus 1:1')<chips.indexOf('Numbers 32:16'));assert(chips.includes('Numbers 32:16–18'));assert(chips.includes('Numbers 32:24'));
+const chips=ctx.chips(many);assert(chips.includes('Genesis 1:2–25'));assert(chips.includes('data-context-expand'));assert(!chips.includes(' more</button>'));assert((chips.split('context-full')[0].match(/href=/g)||[]).length>3);assert(chips.includes('Show fewer'));assert(chips.indexOf('Exodus 1:1')<chips.indexOf('Numbers 32:16'));assert(chips.includes('Numbers 32:16–18'));assert(chips.includes('Numbers 32:24'));
 assert(chips.includes('<span>Gen 1:2–25</span>'));assert(chips.includes('data-cite="0/1/2" data-cite-end="25"'));assert(card.includes('data-cite="0/1/1"'));assert(chips.includes('<span>Num 32:16–18</span>'));assert(chips.includes('data-tone="contradictions"'));assert(!chips.includes('source-icon'));assert(!chips.includes('<svg'));
 const short={hidden:false},full={hidden:true},control={setAttribute(k,v){this[k]=v;}},parent={querySelector:s=>s==='.context-short'?short:s==='.context-full'?full:control};ctx.expand({closest:()=>parent,hasAttribute:()=>true});assert(short.hidden&&!full.hidden);assert.equal(control['aria-expanded'],'true');ctx.expand({closest:()=>parent,hasAttribute:()=>false});assert(!short.hidden&&full.hidden);
-const three={...fallback,appliesTo:[],refs:['Genesis 1:1','Genesis 1:3','Genesis 2:1','Exodus 1:1'].map(parts)};assert.equal(ctx.ranges(three).length,3);assert(!ctx.chips(three).includes('data-context-expand'));assert(!ctx.chips(three).includes('context-full'));
+const three={...fallback,appliesTo:[],refs:['Genesis 1:1','Genesis 1:3','Genesis 2:1','Exodus 1:1'].map(parts)};assert.equal(ctx.ranges(three).length,3);assert(ctx.chips(three).includes('data-context-expand'));assert.equal((ctx.chips(three).split('context-full')[0].match(/href=/g)||[]).length,3);
 ctx.cache.set('0:1:kjv:science',{items:[{...fixture,id:'overlap-fixture',mode:'science',status:'Disagrees',verse:1,sides:[{label:'A',ref:'Genesis 1:1',quote:'the beginning God'}]}]});
 assert(!ctx.html({n:1,kjv:text('Genesis 1:1')},'kjv').includes('<mark'),'Default collapsed comparisons do not highlight quotations');
 vm.runInContext("for(const item of verseComparisons(1))comparisonRecordSelections.set(recordSelection(item),false)",ctx);
@@ -58,3 +58,18 @@ vm.runInContext('this.rows=sideRows;',ctx);
 const unordered={sides:[{ref:'Genesis 5:5',quote:'five'},{ref:'Exodus 1:1',quote:'exodus'},{ref:'Genesis 3:6',quote:'three'},{ref:'Genesis 2:17',quote:'two'}]};
 const ordered=ctx.rows(unordered);assert(ordered.indexOf('Genesis 2:17')<ordered.indexOf('Genesis 3:6'));assert(ordered.indexOf('Genesis 3:6')<ordered.indexOf('Genesis 5:5'));assert(ordered.indexOf('Genesis 5:5')<ordered.indexOf('Exodus 1:1'));assert.equal(unordered.sides[0].ref,'Genesis 5:5');
 console.log('PASS: displayed side quotations sort by canonical book/chapter/verse without changing record sides.');
+
+const sky=evidence.find(e=>e.id==='science-sky-dome');
+validateSides([sky],books,chapters);
+ctx.cache.clear();ctx.cache.set('0:1:kjv:science',{items:sky.sides.map(side=>({...sky,verse:parts(side.ref).verse,placementRole:'key'}))});
+vm.runInContext("categoryFilters.add('academic');comparisonRecordSelections.set('science-sky-dome:science',true)",ctx);
+for(const side of sky.sides){const verse=parts(side.ref).verse,html=ctx.html({n:verse,kjv:text(side.ref)},'kjv');assert(html.includes('<mark class="side-quote" data-tone="academic">'+side.quote+'</mark>'));assert(ctx.render(verse).includes('<q>'+side.quote+'</q>'));assert.equal(html.replace(/<[^>]*>/g,''),text(side.ref));}
+console.log('PASS: sky-dome comparison quotes and highlights the exact Genesis 1:6–7 excerpts without altering scripture.');
+
+// Older science comparisons quote the primary verse directly from the local chapter.
+ctx.reading.verses=[11,14].map(n=>({n,kjv:text('Genesis 1:'+n)}));ctx.RED_LETTERS={};
+for(const [id,n]of [['legacy-science-1',11],['genesis-1-celestial-sequence',14]]){
+ const record={...evidence.find(e=>e.id===id),verse:n,placementRole:'key'};ctx.cache.clear();ctx.cache.set('0:1:kjv:science',{items:[record]});vm.runInContext(`categoryFilters.add('academic');comparisonRecordSelections.set('${id}:science',true)`,ctx);
+ const html=ctx.html(ctx.reading.verses.find(v=>v.n===n),'kjv'),card=ctx.render(n);assert(card.includes('<q>'+text('Genesis 1:'+n)+'</q>'));assert(html.includes('<mark class="side-quote" data-tone="academic">'));assert.equal(html.replace(/<[^>]*>/g,''),text('Genesis 1:'+n));assert(card.indexOf('comparison-summary')<card.indexOf('<h3>'));
+}
+console.log('PASS: older primary citations quote and highlight packaged scripture; headings appear inside summary blocks.');

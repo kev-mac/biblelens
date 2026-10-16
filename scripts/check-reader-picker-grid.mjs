@@ -8,14 +8,13 @@ const old=c.updatePassagePickerVerses(8);node('#passage-chapter').value='14';con
 pending[1]({ok:true,json:async()=>({verses:[{n:1},{n:2},{n:3}]})});await fresh;assert.equal(node('#passage-verse').value,'2');assert(!node('#passage-go').disabled);
 pending[0]({ok:true,json:async()=>({verses:[{n:8}]})});await old;assert.equal(node('#passage-verse').value,'2','Stale chapter response must not replace current grid');
 c.passageNumberGrid('passage-verse',[1,2],99);assert.equal(node('#passage-verse').value,'1');
-const handlers={},docHandlers={},dockHandlers={},expandHandlers={};
+const handlers={};
 function classes(){const set=new Set();return {add:x=>set.add(x),remove:x=>set.delete(x),contains:x=>set.has(x)};}
-const body={classList:classes()},expand={setAttribute(){},addEventListener:(t,f)=>expandHandlers[t]=f},dock={classList:classes(),append(){},contains:x=>x===expand,querySelector:()=>({focus(){}}),addEventListener:(t,f)=>dockHandlers[t]=f};
-const d={window:{scrollY:100,addEventListener:(t,f)=>handlers[t]=f},document:{body,querySelector:()=>dock,createElement:()=>expand,addEventListener:(t,f)=>docHandlers[t]=f}};vm.createContext(d);vm.runInContext(source.slice(source.indexOf('// Reveal comparison dots while scrolling back;')),d);
+const body={classList:classes()},dock={classList:classes()};
+const d={window:{scrollY:100,addEventListener:(t,f)=>handlers[t]=f},document:{body,querySelector:()=>dock}};vm.createContext(d);vm.runInContext(source.slice(source.indexOf('// Reveal the full category icon row')),d);
+assert(dock.classList.contains('pill-expanded'),'The dock always uses category icons');
 d.window.scrollY=180;handlers.scroll();assert(!body.classList.contains('comparison-menu-visible'));
-d.window.scrollY=130;handlers.scroll();assert(body.classList.contains('comparison-menu-visible'));assert(!dock.classList.contains('pill-expanded'));
-expandHandlers.click();assert(dock.classList.contains('pill-expanded'));docHandlers.pointerdown({target:{}});assert(!dock.classList.contains('pill-expanded'));
-expandHandlers.click();d.window.scrollY=170;handlers.scroll();assert(!body.classList.contains('comparison-menu-visible'));assert(!dock.classList.contains('pill-expanded'));
-d.window.scrollY=120;handlers.scroll();expandHandlers.click();dockHandlers.focusout({relatedTarget:null});assert(!dock.classList.contains('pill-expanded'));
+d.window.scrollY=130;handlers.scroll();assert(body.classList.contains('comparison-menu-visible'));assert(dock.classList.contains('pill-expanded'));
+d.window.scrollY=170;handlers.scroll();assert(!body.classList.contains('comparison-menu-visible'));
 d.window.scrollY=0;handlers.scroll();assert(!body.classList.contains('comparison-menu-visible'));
-console.log('PASS: chapter/verse grids, selected values, stale fetch protection, upward-only reveal, touch expansion, outside/focus collapse, and downward hide.');
+console.log('PASS: chapter/verse grids, selected values, stale fetch protection, full category icons on upward scroll and downward hide.');

@@ -23,3 +23,10 @@ android/local.properties
 # macOS metadata and duplicate Xcode export
 .DS_Store
 ios/App/App/config 2.xml
+
+# Release and local preview state
+.release/
+.wrangler/
+
+# Generated release output; publish archives through Sites
+/dist/

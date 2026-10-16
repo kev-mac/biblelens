@@ -25,4 +25,4 @@ const nativeNotices=['@capacitor/core','@capacitor/android','@capacitor/ios','@c
 fs.writeFileSync(path.join(output,'native-licenses.txt'),nativeNotices);
 html=html.replace('No language model download is needed for Chat.','<a href="/native-licenses.txt" target="_blank" rel="noopener">Native component licenses</a>. No language model download is needed for reading and search.');
 fs.writeFileSync(path.join(output,'index.html'),html);
-console.log('Mobile web bundle ready:',output,'(no hosted API or inference server)');
+console.log('Mobile web bundle ready:',output,'(offline reading/search; optional cloud sync)');

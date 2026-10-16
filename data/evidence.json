@@ -53,7 +53,8 @@
         "label": "Genesis 1:16"
       }
     ],
-    "id": "legacy-science-1"
+    "id": "legacy-science-1",
+    "title": "Plants before the Sun?"
   },
   {
     "mode": "science",
@@ -365,6 +366,12 @@
       {
         "book": 0,
         "chapter": 1,
+        "verse": 6,
+        "label": "Genesis 1:6"
+      },
+      {
+        "book": 0,
+        "chapter": 1,
         "verse": 7,
         "label": "Genesis 1:7"
       }
@@ -374,6 +381,18 @@
     "appliesTo": [
       "Genesis 1:6",
       "Genesis 1:7"
+    ],
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Genesis 1:6",
+        "quote": "a firmament in the midst of the waters, and let it divide the waters from the waters"
+      },
+      {
+        "label": "A",
+        "ref": "Genesis 1:7",
+        "quote": "divided the waters which were under the firmament from the waters which were above the firmament"
+      }
     ]
   },
   {

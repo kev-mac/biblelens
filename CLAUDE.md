@@ -17,3 +17,6 @@ When asked for status, report briefly:
 5. New entries in research/claude-drafts/owner-questions.md.
 6. Stuck signs: runs with no output, Codex far behind, errors.
 End with the percentage of 1,189 chapters researched and published and a one-line verdict: on track, slow, or stuck.
+
+## Shared app source and releases
+GitHub main is the canonical development source; Sites is a deployment mirror. Read RELEASING.md and AGENTS.md before build/sync work. Both app versions expose the same source fingerprint in Settings. Cloud sync is optional and preserves local/offline edits. Do not assume a GitHub pull includes independent newer Sites edits.

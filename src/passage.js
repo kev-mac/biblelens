@@ -1,5 +1,5 @@
 'use strict';
-// Passage notes and bookmarks remain browser-local, like study notes.
+// Passage notes and bookmarks use local storage; optional cloud sync preserves offline edits.
 function normalizePassageRecords(value){
  const clean={};
  if(!value||typeof value!=='object'||Array.isArray(value))return clean;
@@ -78,7 +78,7 @@ async function hydrateMarkedVerseTexts(generation=markedRenderGeneration){
     chapterData=await request;
    }
    if(generation!==markedRenderGeneration)return;
-   for(const {field,verse}of group.fields){const item=chapterData.verses?.find(item=>item.n===verse),used=item?.[edition]?edition:'kjv',value=item?.[used];field.textContent=value?String(value).replace(/\{[HG]\d+\}/g,'').replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim()+' ('+used.toUpperCase()+')':'This verse is unavailable in the supplied edition. Open the passage to read it.';field.setAttribute('aria-busy','false');}
+   for(const {field,verse}of group.fields){const item=chapterData.verses?.find(item=>item.n===verse),chosen=field.dataset.markedEdition||edition,used=item?.[chosen]?chosen:'kjv',value=item?.[used];field.textContent=value?String(value).replace(/\{[HG]\d+\}/g,'').replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim()+' ('+used.toUpperCase()+')':'This verse is unavailable in the supplied edition. Open the passage to read it.';field.setAttribute('aria-busy','false');}
   }catch{if(generation!==markedRenderGeneration)return;for(const {field}of group.fields){field.textContent='Verse text could not load. Open this verse to read it.';field.setAttribute('aria-busy','false');}}
  }}
  await Promise.all(Array.from({length:Math.min(3,pending.length)},()=>hydrateGroup()));
@@ -98,9 +98,9 @@ function deletePersonalNote(ref){
 function renderPassageSaved(){
  const box=$('#saved-passages');if(!box)return;
  const records={...state.passageBookmarks,...state.passageNotes},items=Object.entries(records);
- box.innerHTML=items.length?'<h2>Marked Passages</h2><div class="passage-saved-grid">'+items.map(([key,item])=>'<article class="passage-saved-card">'+(item.title?'<h3>'+esc(item.title)+'</h3>':'')+'<button class="secondary" data-read="'+item.book+'/'+item.chapter+'">'+esc(item.name)+' '+item.chapter+'</button>'+(item.text?'<p class="passage-saved-note">'+esc(item.text)+'</p>':'<p>Bookmarked passage</p>')+noteActionButtons(item.book+'/'+item.chapter)+'</article>').join('')+'</div>':'';
+ box.innerHTML=items.length?'<h2>Marked Passages</h2><div class="passage-saved-grid">'+items.map(([key,item])=>'<article class="passage-saved-card">'+(item.title?'<h3>'+esc(item.title)+'</h3>':'')+'<button class="secondary" data-read="'+item.book+'/'+item.chapter+'">'+esc(item.name)+' '+item.chapter+'</button>'+(item.text?'<p class="passage-saved-note">'+esc(item.text)+'</p>':'')+noteActionButtons(item.book+'/'+item.chapter)+'</article>').join('')+'</div>':'';
  const marked=Object.entries({...state.verseBookmarks,...state.verseNotes});
- if(marked.length)box.innerHTML+='<h2>Marked Verses</h2><div class="passage-saved-grid">'+marked.map(([key,item])=>`<article class="passage-saved-card">${item.title?`<h3>${esc(item.title)}</h3>`:''}<button class="secondary" data-read="${item.book}/${item.chapter}/${item.verse}">${esc(item.name)} ${item.chapter}:${item.verse}</button><p class="marked-verse-text" data-marked-verse-text="${item.book}/${item.chapter}/${item.verse}" aria-live="polite" aria-busy="true">Loading verse text…</p><p>${state.verseBookmarks[key]?'Bookmarked verse':'Verse note'}</p>${state.verseNotes[key]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[key].text)}</p>`:''}${noteActionButtons(`${item.book}/${item.chapter}/${item.verse}`)}</article>`).join('')+'</div>';
+ if(marked.length)box.innerHTML+='<h2>Marked Verses</h2><div class="passage-saved-grid">'+marked.map(([key,item])=>`<article class="passage-saved-card">${item.title?`<h3>${esc(item.title)}</h3>`:''}<button class="secondary" data-read="${item.book}/${item.chapter}/${item.verse}">${esc(item.name)} ${item.chapter}:${item.verse}</button><p class="marked-verse-text" data-marked-verse-text="${item.book}/${item.chapter}/${item.verse}" aria-live="polite" aria-busy="true">Loading verse text…</p>${state.verseNotes[key]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[key].text)}</p>`:''}${noteActionButtons(`${item.book}/${item.chapter}/${item.verse}`)}</article>`).join('')+'</div>';
  const studyCount=ENTRIES.filter(e=>state.bookmarks.includes(e.id)||state.notes[e.id]).length;
  $('#save-count').textContent=studyCount+items.length+marked.length;
  const empty=$('#saved-cards .empty');if(empty)empty.hidden=items.length+marked.length>0;

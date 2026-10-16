@@ -33,7 +33,7 @@ vm.runInContext("comparisonRecordSelections.set('bookmark-0:1:14:bookmark',false
 assert(context.render(14).includes('id="comparison-panel-14-bookmark" aria-labelledby="comparison-tab-14-bookmark" hidden'));
 assert.equal((initial.match(/aria-labelledby="comparison-tab-[^"]+" hidden/g)||[]).length,3);
 assert.equal((initial.match(/aria-expanded="true"/g)||[]).length,0);
-assert.equal((initial.match(/class="comparison-evidence" hidden/g)||[]).length,3);assert(initial.indexOf('comparison-summary')<initial.indexOf('comparison-evidence'));assert(initial.includes('data-comparison-inspect'));assert(!initial.includes('Agreement'));assert(!initial.includes('Background'));
+assert.equal((initial.match(/class="comparison-evidence"[^>]* hidden/g)||[]).length,3);assert(initial.indexOf('comparison-summary')<initial.indexOf('comparison-evidence'));assert(initial.includes('data-comparison-inspect'));assert(!initial.includes('Agreement'));assert(!initial.includes('Background'));
 for(const mode of ['history','contradictions','science'])assert(initial.includes(`class="agreement comparison-tab ${mode==='contradictions'?mode:'academic'}"`));
 const buttons=['history','contradictions','science'].map(mode=>({dataset:{comparisonVerse:'1',comparisonKey:`${mode}-0`},attributes:{},setAttribute(k,v){this.attributes[k]=v;}}));
 for(const mode of ['history','contradictions','science'])panels.set(`comparison-panel-1-${mode}-0`,{hidden:true,detailsOpen:true});
@@ -66,7 +66,7 @@ console.log('PASS: summaries collapsed by default; category-off retains verse ic
 assert(context.visible({mode:'science',status:'Context',tags:['Q']}));
 context.cache.set('0:1:kjv:science',{items:[{id:'fixture-question',verse:3,placementRole:'context',keyTarget:'Genesis 1:1',status:'Context',tags:['Q'],title:'Fixture question',refs:[],sources:[]}]});
 context.filters.delete('Q');assert.equal(context.render(3),'');context.filters.add('Q');
-const pointer=context.render(3);assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-ref="Genesis 1:1"'));assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('Unanswered question'));
+const pointer=context.render(3);assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-local="false"'));assert(pointer.includes('aria-disabled="true"'));context.readRef=()=>({book:0,chapter:1,verse:1});const local=context.render(3);assert(local.includes('data-context-jump="1"'));assert(local.includes('data-context-local="true"'));context.readRef=()=>null;assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('Unanswered question'));
 const css=fs.readFileSync('src/style.css','utf8');assert(css.includes('.agreement.question,body.dark .agreement.question'));assert(css.includes('[data-tone="question"]'));
 const html=fs.readFileSync('src/index.html','utf8');
 assert(html.indexOf('id="theme"')>html.indexOf('id="reader-settings"'),'Theme control belongs inside Reader settings');
@@ -82,7 +82,7 @@ console.log('PASS: Q tag, accessible label, initially hidden summary, independen
 
 context.cache.set('0:1:kjv:science',{items:[]});
 context.cache.set('0:1:kjv:questions',{items:[{id:'fixture-questions-category',verse:3,status:'Context',tags:['Q'],title:'Fixture unanswered question',summary:'Fixture only',text:'Limits',sources:[],placementRole:'key'},{id:'fixture-questions-category',verse:5,status:'Context',tags:['Q'],title:'Fixture unanswered question',keyTarget:'Genesis 1:3',placementRole:'context'}]});
-const qCard=context.render(3);assert(qCard.includes('Fixture unanswered question'));assert(qCard.includes('comparison-panel-3-questions-0-Q'));assert(qCard.includes('aria-expanded="false"'));assert(context.render(5).includes('data-context-ref="Genesis 1:3"'));assert(!context.render(5).includes('Context for:'));assert(source.includes("comparisonModes=['history','contradictions','science','questions']"));
+const qCard=context.render(3);assert(qCard.includes('Fixture unanswered question'));assert(qCard.includes('comparison-panel-3-questions-0-Q'));assert(qCard.includes('aria-expanded="false"'));assert(context.render(5).includes('data-context-local="false"'));assert(!context.render(5).includes('Context for:'));assert(source.includes("comparisonModes=['history','contradictions','science','questions']"));
 console.log('PASS: independent Questions category participates in reader loading and Q card/context rendering.');
 
 context.cache.set('0:1:kjv:contradictions',{items:[{id:'fixture-targeted-greek',verse:6,status:'Textual conflict',tags:['G'],activeTags:[],title:'Fixture KJV contrast',summary:'Fixture only',text:'Limits',sources:[]}]});const untargeted=context.render(6);assert(untargeted.includes('data-icon="fold-horizontal"'));assert(!untargeted.includes('>G</button>'));
@@ -103,12 +103,13 @@ const statusNode={};context.$=selector=>selector==='#comparison-status'?statusNo
 context.cache.clear();for(const mode of ['history','contradictions','science','questions'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
 context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'context-only',verse:1,placementRole:'context',tags:['Q'],status:'Context'}]});
 vm.runInContext(source.slice(source.indexOf('function comparisonStatus('),source.indexOf('async function ensureComparisons(')),context);context.comparisonStatus();
-const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(!qFilter.includes('disabled'));assert(qFilter.includes('data-brightness="closed"'));assert(qFilter.includes('aria-pressed="false"'));
+const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(qFilter.includes('disabled'));assert(qFilter.includes('data-brightness="empty"'));assert(qFilter.includes('aria-pressed="false"'));
 context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'key-one',verse:1,placementRole:'key',tags:['Q'],status:'Context'},{id:'key-one',verse:2,placementRole:'key',tags:['Q'],status:'Context'},{id:'context-only',verse:3,placementRole:'context',tags:['Q'],status:'Context'}]});context.comparisonStatus();assert(statusNode.innerHTML.includes('Question: 1 summaries'));
 context.reading.verses=[{n:1},{n:2},{n:3}];context.comparisonStatus();assert(statusNode.innerHTML.includes('data-brightness="empty"'));
 vm.runInContext("categoryFilters.add('Q');comparisonRecordSelections.set('key-one:Q',true)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="open"/));
-vm.runInContext("comparisonRecordSelections.set('key-one:Q',false)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="closed"/));
-console.log('PASS: badges count distinct summary records only; context-only categories remain available without a badge.');
+vm.runInContext("comparisonRecordSelections.set('key-one:Q',false)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="open"/));
+let visited=[];context.renderReader=()=>{};context.fitChatCitations=()=>{};context.requestAnimationFrame=fn=>fn();panels.set('verse-1',{scrollIntoView(){visited.push(1);}});panels.set('verse-2',{scrollIntoView(){visited.push(2);}});context.visitCategoryVerse('Q');context.visitCategoryVerse('Q');context.visitCategoryVerse('Q');assert.deepEqual(visited,[1,2,1]);context.visitCategoryVerse('T');assert.deepEqual(visited,[1,2,1]);
+console.log('PASS: active categories cycle through matching verses; empty categories do nothing; context-only categories stay off.');
 
 // Temporary selection survives reader rerenders, but never view changes or reload.
 const selectionContext={selectedVerses:new Set([9,2,4]),reading:{},renderReader(){},window:{addEventListener(type,listener){this[type]=listener;}}};
@@ -130,3 +131,47 @@ assert.equal(settingNodes.get('#book-picker-position').value,'floating');
 settingNodes.get('#book-picker-position').onchange({target:{value:'fixed'}});
 assert.equal(settingsContext.state.bookPickerPosition,'fixed');
 console.log('PASS: Settings contains appearance controls only; floating book picker is the default and its fixed preference persists.');
+
+// Legacy cards use their stored explanation when they predate the reasoning field.
+assert.equal(context.comparisonReasoning({text:'Existing explanation'}),'Existing explanation');
+assert.equal(context.comparisonReasoning({reasoning:'Specific reasoning',text:'Full source text'}),'Specific reasoning');
+assert.equal(context.comparisonReasoning({scope:'Existing assessment'}),'Existing assessment');
+context.cache.clear();context.cache.set('0:1:kjv:contradictions',{items:[{id:'legacy-evidence',verse:20,title:'Legacy card',summary:'Short summary',text:'Stored explanation',refs:[{book:0,chapter:2,verse:19,label:'Genesis 2:19'}],sources:[]}]});
+vm.runInContext("comparisonEvidenceOpen.add('0:1:20:contradictions-0')",context);
+vm.runInContext(source.slice(source.indexOf('function citationButton('),source.indexOf('function scriptureHtml(')),context);
+const expanded=context.render(20);assert(expanded.includes('<b>Reasoning:</b> Stored explanation'));assert(expanded.includes('Genesis 2:19'));assert(expanded.includes('id="comparison-evidence-20-contradictions-0" >'));
+assert(context.render(20).includes('id="comparison-evidence-20-contradictions-0" >'),'Evidence expansion survives rerendering');
+console.log('PASS: legacy reasoning fallback, citation rendering and retained evidence expansion.');
+// Exercise touch double-taps and keyboard disclosure with the production handlers.
+const disclosureHandlers={};
+const detailDialog={className:'',setAttribute(){},addEventListener(){}};
+context.document={createElement:()=>detailDialog,body:{append(){}},querySelectorAll:()=>[],addEventListener:(type,fn)=>disclosureHandlers[type]=fn};
+vm.runInContext(source.slice(source.indexOf('// Summary evidence stays'),source.indexOf('// Reveal the full category icon row')),context);
+const disclosureControl={attrs:{},setAttribute(k,v){this.attrs[k]=v;}};
+const evidence={hidden:true},summary={dataset:{evidenceKey:'touch-fixture'},attrs:{},querySelector:s=>s==='.comparison-evidence'?evidence:disclosureControl,setAttribute(k,v){this.attrs[k]=v;},matches:()=>true};
+const touchTarget={closest:s=>s==='button,a'?null:summary};
+const touch={pointerType:'touch',target:touchTarget,clientX:50,clientY:60};
+for(let i=0;i<2;i++){disclosureHandlers.pointerdown(touch);disclosureHandlers.pointerup(touch);}
+assert(!evidence.hidden);assert.equal(summary.attrs['aria-expanded'],'true');
+disclosureHandlers.dblclick({target:touchTarget,preventDefault(){}});assert(!evidence.hidden,'A synthesized dblclick must not undo the touch expansion');
+disclosureHandlers.keydown({key:'Enter',target:summary,preventDefault(){}});assert(evidence.hidden);
+console.log('PASS: touch double-tap expands once, synthetic dblclick is deduplicated, and keyboard collapses evidence.');
+
+const expandButton={closest:()=>summary};
+disclosureHandlers.click({target:{closest:s=>s==='[data-summary-expand]'?expandButton:null}});
+assert(!evidence.hidden);assert.equal(summary.attrs['aria-expanded'],'true');
+assert(initial.includes('class="summary-expand"'));assert(!initial.includes('${esc(evidenceKey'));assert(initial.includes('data-evidence-key="0:1:1:history-0"'));assert(expanded.includes('aria-expanded="true"'));assert(initial.includes('aria-label="Expand references and reasoning"'));
+console.log('PASS: centered disclosure button expands references and reasoning.');
+
+assert(expanded.indexOf('summary-reasoning')<expanded.indexOf('class="summary-citations"'),'Secondary references follow the reasoning');
+
+assert.equal(disclosureControl.attrs['aria-label'],'Collapse references and reasoning');assert.equal(disclosureControl.attrs['aria-expanded'],'true');
+assert(expanded.indexOf('comparison-summary')<expanded.indexOf('<h3>Legacy card</h3>'));
+
+// Font settings are independent and accept only the bundled or system families.
+const fontNodes=new Map(),fontProperties=new Map();let fontSaves=0;
+const fontsContext={readerPreferences:{verseFont:'invalid',categoryFont:'georgia'},state:{},persist:()=>fontSaves++,document:{documentElement:{style:{setProperty:(key,value)=>fontProperties.set(key,value)}}},$:id=>{if(!fontNodes.has(id))fontNodes.set(id,{});return fontNodes.get(id)}};vm.createContext(fontsContext);
+vm.runInContext(source.slice(source.indexOf('const READER_FONTS='),source.indexOf('function applyTextSize(')),fontsContext);
+assert.equal(fontNodes.get('#verse-font-family').value,'inter');assert.equal(fontNodes.get('#category-font-family').value,'georgia');
+fontNodes.get('#verse-font-family').onchange({target:{value:'lora'}});assert.equal(fontsContext.readerPreferences.verseFont,'lora');assert.equal(fontsContext.readerPreferences.categoryFont,'georgia');assert.equal(fontSaves,1);assert(fontProperties.get('--verse-font-family').includes('Lora'));assert(fontProperties.get('--category-font-family').includes('Georgia'));
+console.log('PASS: independent verse/category fonts, safe fallback and persisted preferences.');
