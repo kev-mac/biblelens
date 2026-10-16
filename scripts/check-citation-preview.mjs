@@ -7,13 +7,16 @@ const ctx={state:{verseBookmarks:{},verseHighlights:{}},document:doc,window:{inn
 vm.createContext(ctx);vm.runInContext(fs.readFileSync('src/citations.js','utf8').split('// Supporting-context markers')[0],ctx);
 const chip=(verse,end=verse)=>({dataset:{cite:`0/1/${verse}`,citeEnd:String(end),citeLabel:`Genesis 1:${verse}`},attrs:{},setAttribute(k,v){this.attrs[k]=v;},closest:()=>null,contains:()=>false,getBoundingClientRect:()=>({left:100,top:300,bottom:324})});
 const target=b=>({closest:s=>s.includes('data-cite')?b:null});const settle=()=>new Promise(r=>setImmediate(r));
-const b=chip(1);handlers.pointerover({pointerType:'mouse',target:target(b),relatedTarget:null});await settle();assert(!popup.hidden);assert.equal(child('.preview-text').innerHTML,'Full verse one, beyond the quoted excerpt.');assert(!popup.innerHTML.includes('preview-link'));assert(!popup.innerHTML.includes('Highlight verse'));assert(popup.innerHTML.includes('Share verse'));assert.equal(requests,1);
+const b=chip(1);handlers.pointerover({pointerType:'mouse',target:target(b),relatedTarget:null});await settle();assert(!popup.hidden);assert.equal(child('.preview-text').innerHTML,'Full verse one, beyond the quoted excerpt.');assert(!popup.innerHTML.includes('preview-link'));assert(!popup.innerHTML.includes('Highlight verse'));assert(popup.innerHTML.includes('data-verse-action="copy"'));assert.equal(requests,1);
 b.dataset.citeWitness='Septuagint';b.dataset.citeSummary='The exact original summary.';handlers.focusin({target:target(b)});await settle();assert.equal(child('.preview-summary').textContent,'Septuagint: The exact original summary.');assert.equal(child('.preview-summary').hidden,false);
 const range=chip(1,2);handlers.focusin({target:target(range)});await settle();assert(child('.preview-text').innerHTML.includes('Full verse one, beyond the quoted excerpt.'));assert(child('.preview-text').innerHTML.includes('Full verse two.'));assert.equal(requests,1);
 assert.equal(child('.preview-summary').hidden,true);assert.equal(child('.preview-summary').textContent,'');
 let prevented=false;handlers.click({target:target(range),preventDefault(){prevented=true;}});assert(prevented);assert(popup.hidden);assert.deepEqual(loads.at(-1).ref,[0,1,1]);assert.equal(loads.at(-2).view,'explore');
 handlers.pointerover({pointerType:'touch',target:target(b),relatedTarget:null});await settle();assert(popup.hidden);
 handlers.focusin({target:target(b)});await settle();handlers.keydown({key:'Escape',preventDefault(){}});assert(popup.hidden);
+// Long-pressing a citation previews it and moving away cancels the hold.
+handlers.pointerdown({button:0,target:target(b),pointerId:10,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);handlers.pointerup();handlers.keydown({key:'Escape',preventDefault(){}});
+handlers.pointerdown({button:0,target:target(b),pointerId:11,clientX:10,clientY:10});handlers.pointermove({pointerId:11,clientX:30,clientY:10});await new Promise(r=>setTimeout(r,550));assert(popup.hidden);
 // Closing during an in-flight request cannot reopen a stale preview.
 let resolveFetch;ctx.fetch=()=>new Promise(r=>resolveFetch=r);const delayed=chip(1);delayed.dataset.cite='0/2/1';handlers.pointerover({pointerType:'mouse',target:target(delayed),relatedTarget:null});handlers.click({target:target(delayed),preventDefault(){}});resolveFetch({ok:true,json:async()=>({verses:[{n:1,kjv:'Stale verse'}]})});await settle();assert(popup.hidden);assert.notEqual(child('.preview-text').innerHTML,'Stale verse');
 console.log('PASS: full-verse hover and keyboard previews, ranges, cached fetch, direct click/tap navigation and stale-response cancellation.');
@@ -27,11 +30,12 @@ handlers.pointerdown({button:0,target:verseTarget,pointerId:8,clientX:10,clientY
 handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');
 const html=fs.readFileSync('src/index.html','utf8');assert(!html.includes('id="ask-selection"'));for(const id of ['prev-bottom','next-bottom'])assert(html.includes(`id="${id}"`));
 console.log('PASS: WEB hold preview, movement cancellation, keyboard access and top/bottom chapter controls.');
-const shared=[];ctx.selectedVerseNumbers=()=>[21,22];ctx.shareVerseSelection=async(book,chapter,verses)=>{shared.push({book,chapter,verses:Array.from(verses)});return true;};
-await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'share'}})}});assert.deepEqual(shared[0],{book:0,chapter:3,verses:[22]});assert(popup.hidden);
+const shared=[];ctx.selectedVerseNumbers=()=>[21,22];ctx.copyVerseSelection=async(book,chapter,verses)=>{shared.push({book,chapter,verses:Array.from(verses)});return true;};
+await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'copy'}})}});assert.deepEqual(shared[0],{book:0,chapter:3,verses:[22]});assert(popup.hidden);
 handlers.focusin({target:target(body)});await settle();
-await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'share-selected'}})}});assert.deepEqual(shared[1],{book:0,chapter:3,verses:[21,22]});assert(popup.hidden);
-console.log('PASS: popup shares the exact verse or selected set through the privacy-preserving text/link helper.');
+await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'copy-selected'}})}});assert.deepEqual(shared[1],{book:0,chapter:3,verses:[21,22]});assert(popup.hidden);
+const asks=[];ctx.askAboutVerse=(...args)=>asks.push(args);handlers.focusin({target:target(body)});await settle();await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'ask'}})}});assert.deepEqual(asks[0],[0,3,22]);assert(popup.hidden);
+console.log('PASS: verse menu copies the selected verse range without private notes and Ask opens a verse-specific draft.');
 
 assert(!html.includes('id="prev-top"'));assert(!html.includes('id="next-top"'));
 

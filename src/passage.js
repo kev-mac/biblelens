@@ -96,13 +96,12 @@ function syncPassageTools(){
  if(!reading)return;
  const key=passageKey(),changed=key!==activePassageKey;
  activePassageKey=key;
- if(changed){$('#passage-note-editor').hidden=true;$('#passage-note-toggle').setAttribute('aria-expanded','false');$('#passage-share-link').hidden=true;}
+ if(changed){$('#passage-note-editor').hidden=true;$('#passage-note-toggle').setAttribute('aria-expanded','false');}
  $('#passage-note').value=state.passageNotes[key]?.text||'';
  if($('#passage-note-title-input'))$('#passage-note-title-input').value=state.passageNotes[key]?.title||'';
  $('#passage-note-status').textContent=state.passageNotes[key]?'Note saved in this browser.':'';
  const saved=!!state.passageBookmarks[key],button=document.querySelector('[data-passage-save]');
  button?.setAttribute('aria-pressed',String(saved));button?.setAttribute('aria-label',saved?'Unmark this passage':'Mark this passage');
- $('#passage-export').disabled=!state.passageNotes[key]&&!saved;
  const dock=document.querySelector('.comparison-dock');
  if(dock)$('#reader-layout').before(dock);
  document.querySelector('.passage-bookmark')?.remove();
@@ -127,8 +126,8 @@ function savePassageNote(){
  if(!reading)return;
  const key=passageKey(),text=$('#passage-note').value.slice(0,100000),title=($('#passage-note-title-input')?.value||'').slice(0,200);
  if(text.trim()||title.trim())state.passageNotes[key]=passageRecord(text,title);else delete state.passageNotes[key];
- persist();$('#passage-note-status').textContent=storageAvailable?(text.trim()||title.trim()?'Note saved in this browser.':'Note cleared.'):'Storage unavailable. Export your note to keep it.';
- $('#passage-export').disabled=!text.trim()&&!title.trim()&&!state.passageBookmarks[key];renderPassageSaved();
+ persist();$('#passage-note-status').textContent=storageAvailable?(text.trim()||title.trim()?'Note saved in this browser.':'Note cleared.'):'Storage unavailable. Copy your note to keep it.';
+ renderPassageSaved();
 }
 $('#passage-note').addEventListener('input',savePassageNote);
 $('#passage-note-title-input')?.addEventListener('input',savePassageNote);
@@ -149,13 +148,8 @@ document.addEventListener('click',ev=>{
 $('#passage-share').onclick=async()=>{
  if(!reading)return;
  const verses=typeof selectedVerseNumbers==='function'?selectedVerseNumbers():[];
- if(!verses.length){toast('Select a verse to share.');return;}
- await shareVerseSelection(readingBook,readingChapter,verses);
-};
-$('#passage-export').onclick=()=>{
- if(!reading)return;
- const key=passageKey(),record=state.passageNotes[key]||state.passageBookmarks[key];
- if(record)download(record.name+'-'+record.chapter+'-notes.md',passageMarkdown(record),'text/markdown');
+ if(!verses.length){toast('Select a verse to copy.');return;}
+ await copyVerseSelection(readingBook,readingChapter,verses);
 };
 renderPassageSaved();
 
@@ -185,14 +179,17 @@ function buildVerseShareUrl(book,chapter,verses){
  ranges.push(start===end?String(start):`${start}-${end}`);
  const url=new URL(location.href);url.hash=`read/${book}/${chapter}/${ranges.join(',')}`;return url.href;
 }
-async function shareVerseSelection(book,chapter,verses){
+async function copyVerseSelection(book,chapter,verses){
  const url=buildVerseShareUrl(book,chapter,verses),reference=new URL(url).hash.split('/').pop(),title=`${books[book].name} ${chapter}:${reference}`;
  let chapterData=book===readingBook&&chapter===readingChapter?reading:null;
  if(!chapterData){try{const response=await fetch(`/api/chapter?book=${book}&chapter=${chapter}`);if(!response.ok)throw Error();chapterData=await response.json();}catch{toast('Could not load the selected verses. Please try again.');return false;}}
  const selected=[...new Set(verses)].sort((a,b)=>a-b),edition=$('#reader-edition')?.value||'kjv',lines=[];
  for(const verse of selected){const item=chapterData?.verses?.find(item=>item.n===verse),value=item?.[edition]||item?.kjv;if(!value){toast('A selected verse is unavailable. Choose another verse.');return false;}const plain=String(value).replace(/\{[HG]\d+\}/g,'').replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();lines.push(`${books[book].name} ${chapter}:${verse} (${(item?.[edition]?edition:'kjv').toUpperCase()})\n${plain}`);}
  const text=lines.join('\n\n'),clipboardText=text+'\n\n'+url;
- if(navigator.share){try{await navigator.share({title,text,url});return true;}catch(error){if(error.name==='AbortError')return false;}}
- try{await navigator.clipboard.writeText(clipboardText);toast('Verse text and link copied. Your notes stay private.');return true;}
- catch{const field=$('#passage-share-link');if(field){field.value=clipboardText;field.hidden=false;field.focus();field.select();toast('Copy the verse text and link. Your notes stay private.');}return false;}
+ try{await navigator.clipboard.writeText(clipboardText);toast('Copied');return true;}
+ catch{
+  const field=document.createElement('textarea');field.value=clipboardText;field.readOnly=true;field.setAttribute('aria-hidden','true');field.style.cssText='position:fixed;opacity:0;pointer-events:none;left:-9999px;top:0';document.body.append(field);
+  try{field.select();const copied=document.execCommand('copy');toast(copied?'Copied':'Could not copy. Please try again.');return copied;}
+  finally{field.remove();window.getSelection()?.removeAllRanges();}
+ }
 }

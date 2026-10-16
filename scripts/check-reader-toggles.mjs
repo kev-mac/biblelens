@@ -113,10 +113,14 @@ selectionContext.window.viewchange({detail:'explore'});assert.equal(selectionCon
 selectionContext.window.viewchange({detail:'chat'});assert.equal(selectionContext.selectedVerses.size,0);
 const chapterLoader=source.slice(source.indexOf('async function loadChapter('),source.indexOf('const comparisonCache='));
 assert(!chapterLoader.includes('selectedVerses.add('),'Opening a verse URL must scroll without restoring selection');
-const settingsTarget={append(node){this.child=node;}},toolbar={};
-const settingsContext={$:selector=>{assert.equal(selector,'#reader-settings-controls');return settingsTarget;},readerToolbar:toolbar};
+const settingsTarget={append(node){this.child=node;}},actions={};
+const toolbar={querySelector:selector=>{assert.equal(selector,'.reader-actions');return actions;}};
+const settingNodes=new Map();
+const settingsContext={state:{},persist(){},document:{body:{classList:{toggle(){}}}},$:selector=>{if(selector==='#reader-settings-controls')return settingsTarget;if(!settingNodes.has(selector))settingNodes.set(selector,{});return settingNodes.get(selector);},readerToolbar:toolbar};
 vm.createContext(settingsContext);
 vm.runInContext(source.slice(source.indexOf('function placeReaderControls('),source.indexOf("$('#reader-picker').onclick=")),settingsContext);
-assert.equal(settingsTarget.child,toolbar);
-console.log('PASS: note titles and note-only cards render expanded; view changes clear selection; Settings owns reader controls at every viewport.');
-
+assert.equal(settingsTarget.child,actions);
+assert.equal(settingNodes.get('#book-picker-position').value,'floating');
+settingNodes.get('#book-picker-position').onchange({target:{value:'fixed'}});
+assert.equal(settingsContext.state.bookPickerPosition,'fixed');
+console.log('PASS: Settings contains appearance controls only; floating book picker is the default and its fixed preference persists.');

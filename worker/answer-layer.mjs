@@ -146,10 +146,25 @@ async function violenceReply(message){
  return referenceResponse('No. Do not hit or abuse another person. A narrative describing violence does not give you permission to do it.',primary.slice(0,3),reference,{mode:'permission'});
 }
 
+// Named sections need their indexed location, rather than literal word matches.
+async function namedPassageReply(message){
+ if(!/\bsermon\s+on\s+(?:the\s+)?mount\b/i.test(message))return null;
+ const scope=namedBooks(message);if(scope.length&&!scope.some(book=>book.id===39))return null;
+ const index=TOPICS.find(topic=>topic.label==='SERMON');
+ const refs=index?.refs.filter(([book,ch])=>book===39&&ch>=5&&ch<=7)||[];
+ const primary=[];
+ for(const [book,ch]of refs){const data=await chapter(book,ch);if(!data)continue;
+  primary.push({label:data.name+' '+ch,text:data.verses.slice(0,3).map(v=>cleanExcerpt(v.kjv||v.web)).join(' '),url:'#read/'+book+'/'+ch,kind:'Primary scripture text · KJV'});
+ }
+ if(!primary.length)return null;
+ return referenceResponse('The Sermon on the Mount is recorded in Matthew 5–7. Open the chapter chips to read the complete teaching in context.',primary,[],{mode:'named-passage'});
+}
+
 async function answerIntent(message,previous){
  const intent=questionIntent(message);
  if(intent.violence)return violenceReply(message);
  const family=familyQuestion(message,previous);if(family)return familyReply(family);
+ if(!queryReferences(message).length){const named=await namedPassageReply(message);if(named)return named;}
  // Explicit passages retain priority over topic routing. Carry the food subject
  // only through a short dependent follow-up, never into a new named subject.
  if(!queryReferences(message).length){

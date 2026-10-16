@@ -3,8 +3,13 @@ import {LocalLLM} from '@capacitor/local-llm';
 import {installDeviceApi} from './device-api.js';
 import {conversationInput,conversationalResult,conversationInstructions} from './device-conversation.js';
 
+const nativeIOS=Capacitor.isNativePlatform()&&Capacitor.getPlatform()==='ios';
+if(nativeIOS)document.documentElement.classList.add('native-ios');
+
 installDeviceApi();
 let enabled=false,busy=false,availability='unknown';
+let aiPreferred=true;try{aiPreferred=localStorage.getItem('scripturelens-device-ai')!=='off';}catch{}
+function saveAI(value){aiPreferred=value;try{localStorage.setItem('scripturelens-device-ai',value?'on':'off');}catch{}}
 const offlineFetch=globalThis.fetch;
 globalThis.fetch=async(input,init)=>{
  const response=await offlineFetch(input,init);
@@ -25,22 +30,29 @@ globalThis.fetch=async(input,init)=>{
 };
 
 document.addEventListener('DOMContentLoaded',()=>{
+ if(nativeIOS){
+  const syncAppearance=()=>window.webkit?.messageHandlers?.scriptureAppearance?.postMessage(document.body.classList.contains('dark')?'dark':'light');
+  new MutationObserver(syncAppearance).observe(document.body,{attributes:true,attributeFilter:['class']});
+  syncAppearance();
+ }
  const settings=document.querySelector('#reader-settings');if(!settings)return;
  const control=document.createElement('button');control.type='button';control.className='secondary';control.textContent='Enable on-device AI';
  const status=document.createElement('p');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
- status.textContent='Reading and search work offline. Optional AI uses a supported device’s own model.';
+ status.textContent='Optional AI explains retrieved passages using this iPhone’s own model. No paid API or backend. It is enabled by default when the device model is ready.';
  settings.append(control,status);
  if(!Capacitor.isNativePlatform()){control.disabled=true;status.textContent='On-device AI is available in the native app on supported phones. Offline reading and search are ready in this preview.';return;}
  control.onclick=async()=>{
-  if(enabled){enabled=false;control.textContent='Enable on-device AI';status.textContent='On-device AI is off. Reading and search remain available offline.';return;}
+  if(enabled){enabled=false;saveAI(false);control.textContent='Enable on-device AI';status.textContent='On-device AI is off. Reading and search remain available offline.';return;}
   control.disabled=true;
   try{
    if(availability==='downloadable'){status.textContent='Downloading the device’s AI model. Reading and search remain available.';await LocalLLM.download();}
    ({status:availability}=await LocalLLM.systemAvailability());
-   if(availability==='available'){enabled=true;control.textContent='Disable on-device AI';status.textContent='On-device AI is enabled for this session. Explanations are generated locally; check the linked sources.';}
+   if(availability==='available'){enabled=true;saveAI(true);control.textContent='Disable on-device AI';status.textContent='On-device AI is enabled. Explanations are generated locally; check the linked sources.';}
    else if(availability==='downloadable'){control.textContent='Download on-device AI model';status.textContent='Your device needs a model download through Google Play Services. Tap Download to proceed; mobile data charges may apply.';}
    else {control.textContent='Check on-device AI availability';status.textContent=availability==='notready'?'The device model is not ready. Check again after setup finishes.':'This device’s AI model is unavailable. Offline reading and search still work.';}
   }catch{status.textContent='On-device AI could not start. Offline reading and search still work.';}
   finally{control.disabled=false;}
  };
+ // Check the existing system model automatically; a required download stays explicit.
+ if(aiPreferred)control.click();
 });

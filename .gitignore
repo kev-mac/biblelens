@@ -19,3 +19,7 @@ android/local.properties
 *.pfx
 *.pem
 *.key
+
+# macOS metadata and duplicate Xcode export
+.DS_Store
+ios/App/App/config 2.xml

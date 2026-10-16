@@ -1,7 +1,7 @@
 {
   "appId": "com.scripturelens.app",
-  "appName": "Scripture Lens",
+  "appName": "ScriptureLens",
   "webDir": "www",
   "android": { "allowMixedContent": false },
-  "ios": { "contentInset": "automatic" }
+  "ios": { "contentInset": "never", "backgroundColor": "#05080e" }
 }

@@ -55,3 +55,24 @@
   document.addEventListener('touchmove',ev=>{if(smallScreen()&&ev.touches.length>1&&ev.cancelable)ev.preventDefault()},{passive:false});
   settle();
 })();
+
+// A discreet page indicator replaces UIKit's wider automatic scrollbar on iOS.
+if(document.documentElement.classList.contains('native-ios')){
+ const indicator=document.createElement('div');indicator.className='native-scroll-indicator';indicator.setAttribute('aria-hidden','true');document.body.append(indicator);
+ let indicatorFrame=0;
+ const measureIndicator=()=>{
+  indicatorFrame=0;
+  const scroller=document.scrollingElement,viewport=window.visualViewport?.height||innerHeight;
+  const top=(document.querySelector('body>header')?.getBoundingClientRect().bottom||0)+6;
+  const track=Math.max(0,viewport-top-12),range=scroller.scrollHeight-viewport;
+  indicator.hidden=range<=1||track<30;
+  if(indicator.hidden)return;
+  const height=Math.max(24,Math.min(track,track*viewport/scroller.scrollHeight));
+  indicator.style.height=height+'px';indicator.style.top='0';
+  indicator.style.transform=`translateY(${top+Math.max(0,Math.min(1,scrollY/range))*(track-height)}px)`;
+ };
+ const scheduleIndicator=()=>{if(!indicatorFrame)indicatorFrame=requestAnimationFrame(measureIndicator);};
+ window.addEventListener('scroll',scheduleIndicator,{passive:true});window.addEventListener('resize',scheduleIndicator);
+ window.visualViewport?.addEventListener('resize',scheduleIndicator);
+ new ResizeObserver(scheduleIndicator).observe(document.body);scheduleIndicator();
+}

@@ -29,6 +29,9 @@ try{
  const comparison=await (await target.fetch('/api/comparisons?book=0&chapter=1&mode=questions')).json();assert(Array.isArray(comparison.items));
  const [shark,john]=await Promise.all(['can we eat shark','Explain John 3:16'].map(async message=>(await target.fetch('/api/chat',{method:'POST',body:JSON.stringify({message})})).json()));
  assert.equal(shark.mode,'dietary');assert(!shark.answer.includes('honey'));assert(john.answer.includes('God so loved'));
+ const sermon=await (await target.fetch('/api/chat',{method:'POST',body:JSON.stringify({message:'Sermon on the Mount'})})).json();
+ assert.equal(sermon.mode,'named-passage');assert.match(sermon.answer,/Matthew 5–7/);
+ for(const chapter of [5,6,7])assert(sermon.sources.some(source=>source.url==='#read/39/'+chapter));
  const input=conversationInput('Explain John 3:16',john,[{role:'user',content:'Who is speaking?'}]);assert(input.sources.length);
  const output=JSON.stringify({answer:'This passage describes God’s love and the promise of life.',sourceIds:[input.sources[0].id]});assert(conversationalResult(output,input));
  assert.equal(conversationalResult(JSON.stringify({answer:'An unsupported citation appears here.',sourceIds:['invented']}),input),null);

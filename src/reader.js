@@ -257,31 +257,54 @@ $('#clear-selection').onclick=()=>{selectedVerses.clear();renderReader(true)};
 document.addEventListener('click',ev=>{const button=ev.target.closest('button');if(!button)return;if(button.dataset.verse){const n=Number(button.dataset.verse);if(selectedVerses.has(n))selectedVerses.delete(n);else selectedVerses.add(n);renderReader(true)}if(button.dataset.read){setView('explore');const [b,ch,v]=button.dataset.read.split('/').map(Number);loadChapter(b,ch,v)}if(button.dataset.prompt){$('#chat-input').value=button.dataset.prompt;$('#chat-form').requestSubmit()}});
 document.addEventListener('click',ev=>{const body=ev.target.closest('.verse-body');if(!body||ev.target.closest('button,a,input,select,textarea')||window.getSelection()?.toString())return;const verse=Number(body.closest('.verse')?.id.replace('verse-',''));if(!verse)return;if(selectedVerses.has(verse))selectedVerses.delete(verse);else selectedVerses.add(verse);renderReader(true);});
 window.addEventListener('viewchange',ev=>{if(lastView==='explore')readingScroll=window.scrollY;if(ev.detail==='chat')updateContext();if(ev.detail==='explore'&&lastView!=='explore')requestAnimationFrame(()=>window.scrollTo({top:readingScroll,behavior:'instant'}));lastView=ev.detail;});
+function askAboutVerse(book,chapter,verse){
+ const reference=`${books[book].name} ${chapter}:${verse}`;
+ setView('chat');
+ $('#chat-input').value=`In ${reference}, `;
+ $('#chat-status').textContent=`What would you like to ask about ${reference}?`;
+ $('#chat-input').focus();
+}
 function sourceHtml(source){return sourceLinkHtml(source)+(source.witness&&source.summary?`<p class="citation-summary">${esc(source.witness)}: ${esc(source.summary)}</p>`:``);}
 function parseVerseSpec(spec){
  if(typeof spec!=='string'||spec.length>1000||!/^\d{1,3}(?:-\d{1,3})?(?:,\d{1,3}(?:-\d{1,3})?)*$/.test(spec))return null;
  const numbers=[];for(const part of spec.split(',')){const [first,last=first]=part.split('-').map(Number);if(first<1||last>199||last<first)return null;for(let n=first;n<=last;n++)numbers.push(n);if(numbers.length>199)return null;}
  return [...new Set(numbers)].sort((a,b)=>a-b);
 }
-function chatReferenceHtml(book,chapter,spec,label,source={}){
+function chatReferenceHtml(book,chapter,spec,label,source={},chip=false){
  const verses=spec?parseVerseSpec(spec):null;if(!book||!Number.isInteger(chapter)||chapter<1||chapter>(book.chapters||199)||(spec&&!verses))return esc(label);
  const url='#read/'+book.id+'/'+chapter+(spec?'/'+spec:'');
- return '<a class="verse-citation chat-citation" href="'+esc(url)+'"'+(verses?' data-cite="'+book.id+'/'+chapter+'/'+verses[0]+'" data-cite-end="'+verses[verses.length-1]+'"':'')+' data-cite-label="'+esc(label)+'"'+(source.witness?' data-cite-witness="'+esc(source.witness)+'" data-cite-summary="'+esc(source.summary||'')+'"':'')+'>'+esc(label)+'</a>';
+ return '<a class="'+(chip?'verse-citation chat-citation':'verse-link')+'" href="'+esc(url)+'"'+(verses?' data-cite="'+book.id+'/'+chapter+'/'+verses[0]+'" data-cite-end="'+verses[verses.length-1]+'"':'')+' data-cite-label="'+esc(label)+'"'+(source.witness?' data-cite-witness="'+esc(source.witness)+'" data-cite-summary="'+esc(source.summary||'')+'"':'')+' aria-label="'+esc(label)+'">'+esc(chip?compactCitation({book:book.id},label):label)+'</a>';
 }
 function sourceLinkHtml(source){
  const url=source.url||'',match=/^#read\/(\d+)\/(\d+)(?:\/([\d,-]+))?$/.exec(url);
- if(match){const book=books.find(b=>b.id===Number(match[1]));const chapter=Number(match[2]),spec=match[3]||'';return chatReferenceHtml(book,chapter,spec,(book?.name||source.label)+' '+chapter+(spec?':'+spec:''),source);}
+ if(match){const book=books.find(b=>b.id===Number(match[1]));const chapter=Number(match[2]),spec=match[3]||'';return chatReferenceHtml(book,chapter,spec,(book?.name||source.label)+' '+chapter+(spec?':'+spec:''),source,true);}
  if(!url.startsWith('#study/')&&!url.startsWith('https://'))return '';
  return '<a class="verse-citation chat-citation" href="'+esc(url)+'" title="'+esc(source.kind||'')+'" '+(url.startsWith('https://')?'target="_blank" rel="noopener"':'')+'>'+esc(source.label||'Source')+' ↗</a>';
 }
 function chatSummary(text){return String(text||'').replace(/\[(?:source(?: ID)?\s*)?\d+\]/gi,'').replace(/^I found (?:a related passage|related passages|these related passages)[,:]?\s*/i,'').trim();}
 function chatTextHtml(text){
  text=String(text||'');const names=books.map(b=>b.name).sort((a,b)=>b.length-a.length).map(name=>name.replace(/[.*+?^$()|[\]\\]/g,'\\$&'));if(!names.length)return esc(text);
- const pattern=new RegExp('\\b('+names.join('|')+')\\s+(\\d{1,3})(?::(\\d{1,3}(?:\\s*[-\u2013]\\s*\\d{1,3})?(?:\\s*,\\s*\\d{1,3}(?:\\s*[-\u2013]\\s*\\d{1,3})?)*))?(?![\\d:])','gi');
+ const pattern=new RegExp('\\b('+names.join('|')+')\\s+(\\d{1,3})(?::(\\d{1,3}(?:\\s*[-\u2013]\\s*\\d{1,3})?(?:\\s*,\\s*\\d{1,3}(?:\\s*[-\u2013]\\s*\\d{1,3})?)*))?(?!\\d|:\\d)','gi');
  let result='',offset=0;for(const match of text.matchAll(pattern)){result+=esc(text.slice(offset,match.index));const book=books.find(b=>b.name.toLowerCase()===match[1].toLowerCase());result+=chatReferenceHtml(book,Number(match[2]),(match[3]||'').replace(/\s/g,'').replace(/\u2013/g,'-'),match[0]);offset=match.index+match[0].length;}return result+esc(text.slice(offset));
 }
 function chatWitnessText(text,sources=[]){let result=text||'';const seen=new Set();for(const source of sources){if(!source.witness||!source.summary||seen.has(source.recordId||source.summary))continue;seen.add(source.recordId||source.summary);const label=source.witness+': ';result=result.replaceAll(source.summary,label+source.summary).replaceAll(label+label,label);}return result;}
-function renderChat(){if(!chatMessages.length)return;$('#chat-messages').style.setProperty('--receiver-rgb',conversationTone);$('#chat-messages').innerHTML=chatMessages.map(m=>`<article class="chat-message glass-summary ${m.role}"><div class="message-label"><strong>${m.role==='user'?'You':'Scripture Lens'}</strong></div><div class="message-body">${m.role==='assistant'?chatTextHtml(chatSummary(chatWitnessText(m.content,m.sources))):esc(m.content)}</div>${m.role==='assistant'&&(m.details||m.sources?.length)?`<details class="comparison-details chat-details"><summary>Details & sources</summary>${m.details?`<div class="message-body">${chatTextHtml(chatWitnessText(m.details,m.sources))}</div>`:''}${m.sources?.length?`<div class="chat-sources">${m.sources.map(sourceHtml).join('')}</div>`:''}</details>`:''}</article>`).join('');}
+function compactChatDetails(text,sources=[]){
+ // Full scripture excerpts are available in chip previews; retain reasoning and limits.
+ return String(text||'').split(/\n\s*\n/).filter(paragraph=>!sources.some(source=>source.url?.startsWith('#read/')&&paragraph.startsWith(source.label+':'))).join('\n\n').replace(/\s*\[(?:source(?: ID)?\s*)?\d+\]/gi,'');
+}
+function renderChat(){
+ if(!chatMessages.length)return;
+ $('#chat-messages').style.setProperty('--receiver-rgb',conversationTone);
+ $('#chat-messages').innerHTML=chatMessages.map(m=>{
+  if(m.role==='user')return `<article class="chat-message glass-summary user"><div class="message-label"><strong>You</strong></div><div class="message-body">${esc(m.content)}</div></article>`;
+  const sources=(m.sources||[]).filter((source,index,all)=>all.findIndex(item=>item.url===source.url)===index);
+  const summary=chatTextHtml(chatSummary(chatWitnessText(m.content,sources)));
+  const chips=sources.map(sourceLinkHtml).filter(Boolean).join('');
+  const details=compactChatDetails(chatWitnessText(m.details,sources),sources);
+  return `<article class="chat-message glass-summary assistant"><div class="message-label"><strong>ScriptureLens</strong></div><div class="message-body">${summary}</div>${chips?`<div class="chat-summary-sources">${chips}</div>`:''}${details?`<details class="comparison-details chat-details"><summary>Details & sources</summary><div class="message-body">${chatTextHtml(details)}</div></details>`:''}</article>`;
+ }).join('');
+ fitChatCitations();
+}
 $('#chat-form').onsubmit=async ev=>{ev.preventDefault();if(chatBusy)return;const question=$('#chat-input').value.trim();if(!question){$('#chat-status').textContent='Enter a question.';return}chatBusy=true;$('#chat-send').disabled=true;$('#chat-input').disabled=true;$('#clear-chat').disabled=true;$('#chat-status').textContent='Finding relevant passages and sources…';$('#chat-messages').setAttribute('aria-busy','true');const history=chatMessages.slice(-8).map(m=>({role:m.role,content:m.content}));const book=readingBook,ch=readingChapter,selection=[],context='Whole Bible';chatMessages.push({role:'user',content:question,context});renderChat();$('#chat-input').value='';try{const response=await fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:question,book,chapter:ch,selected:selection,history}),signal:AbortSignal.timeout(55000)});const data=await response.json();if(!response.ok)throw Error(data.error||'Could not get an answer.');chatMessages.push({role:'assistant',content:data.answer,details:data.details,sources:data.sources,context});renderChat();$('#chat-status').textContent=data.mode==='reference'?'Relationship checked against the linked scripture.':data.sources?.length?'Related passages and references are linked below.':'No supported answer found. Try a name, topic, or passage reference.';}catch(err){chatMessages.pop();if(chatMessages.length)renderChat();else $('#chat-messages').innerHTML='';$('#chat-input').value=question;$('#chat-status').textContent=err.name==='TimeoutError'?'The request timed out. Your question is preserved; send it again.':err.message;}finally{chatBusy=false;$('#chat-send').disabled=false;$('#chat-input').disabled=false;$('#clear-chat').disabled=false;$('#chat-messages').setAttribute('aria-busy','false');if(view==='chat'&&!window.matchMedia('(max-width: 850px)').matches)$('#chat-input').focus();}};
 $('#chat-input').addEventListener('keydown',ev=>{if(ev.key==='Enter'&&!ev.shiftKey){ev.preventDefault();$('#chat-form').requestSubmit()}});$('#clear-chat').onclick=()=>{conversationTone=randomConversationTone();chatMessages.length=0;$('#chat-messages').innerHTML='';$('#chat-status').textContent='';$('#chat-input').value='';$('#chat-input').focus()};
 function readerRoute(){const match=/^#read\/(\d+)\/(\d+)(?:\/([\d,-]+))?$/.exec(location.hash);if(match&&books.length&&(!match[3]||parseVerseSpec(match[3]))){setView('explore',false);loadChapter(+match[1],+match[2],match[3]?parseVerseSpec(match[3])?.[0]||null:null,false)}}window.addEventListener('hashchange',readerRoute);
@@ -304,7 +327,8 @@ function updatePassagePickerChapters(chapter=1){const book=books[Number($('#pass
 function openPassagePicker(){
  if(!books.length)return;
  if(!passagePicker){passagePicker=document.createElement('dialog');passagePicker.id='passage-picker';passagePicker.className='glass-dialog';passagePicker.setAttribute('aria-labelledby','passage-picker-title');
-  passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><label>Book<select id="passage-book"></select></label><div class="passage-picker-fields"><label>Chapter<select id="passage-chapter"></select></label><label>Verse<select id="passage-verse"></select></label></div><button type="submit" id="passage-go" class="primary">Read passage</button></form>';document.body.append(passagePicker);
+  passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><div id="passage-translation"></div><label>Book<select id="passage-book"></select></label><div class="passage-picker-fields"><label>Chapter<select id="passage-chapter"></select></label><label>Verse<select id="passage-verse"></select></label></div><button type="submit" id="passage-go" class="primary">Read passage</button></form>';document.body.append(passagePicker);
+  $('#passage-translation').append($('#reader-edition').closest('label'));
   $('#passage-book').onchange=()=>{updatePassagePickerChapters();updatePassagePickerVerses();};$('#passage-chapter').onchange=()=>updatePassagePickerVerses();
   passagePicker.querySelector('[data-picker-close]').onclick=()=>passagePicker.close();
   $('#passage-picker-form').onsubmit=ev=>{ev.preventDefault();if($('#passage-go').disabled)return;const b=Number($('#passage-book').value),ch=Number($('#passage-chapter').value),v=Number($('#passage-verse').value);passagePicker.close();setView('explore',false);loadChapter(b,ch,v);};
@@ -314,9 +338,22 @@ function openPassagePicker(){
 }
 document.addEventListener('click',ev=>{if(ev.target.closest('.passage-picker-trigger'))openPassagePicker();});
 const readerSheet=$('#reader-settings'),readerToolbar=document.querySelector('.reader-toolbar');
-function placeReaderControls(){$('#reader-settings-controls').append(readerToolbar);}
+// Settings is shared by Read, Chat and Marked; never leave it under a hidden page.
+document.body.append(readerSheet);
+function placeReaderControls(){$('#reader-settings-controls').append(readerToolbar.querySelector('.reader-actions'));}
 placeReaderControls();
-$('#reader-picker').onclick=()=>{readerSheet.showModal();$('#reader-picker').setAttribute('aria-expanded','true');};
+function applyBookPickerPosition(){
+ const position=state.bookPickerPosition==='fixed'?'fixed':'floating';
+ document.body.classList.toggle('book-picker-floating',position==='floating');
+ $('#book-picker-position').value=position;
+}
+applyBookPickerPosition();
+$('#book-picker-position').onchange=ev=>{state.bookPickerPosition=ev.target.value;persist();applyBookPickerPosition();};
+$('#reader-picker').onclick=()=>{
+ if(readerSheet.open)return;
+ document.activeElement?.blur();
+ readerSheet.showModal();$('#reader-picker').setAttribute('aria-expanded','true');
+};
 $('#reader-settings-close').onclick=()=>readerSheet.close();
 readerSheet.addEventListener('close',()=>$('#reader-picker').setAttribute('aria-expanded','false'));
 readerSheet.addEventListener('click',ev=>{if(ev.target===readerSheet){const r=readerSheet.getBoundingClientRect();if(ev.clientX<r.left||ev.clientX>r.right||ev.clientY<r.top||ev.clientY>r.bottom)readerSheet.close();}});
@@ -397,9 +434,30 @@ $('#chapter-bookmark-list').addEventListener('click',ev=>{if(ev.target.closest('
   const heading=document.querySelector('.passage-heading'),text=heading?.querySelector(':scope > div');if(!heading||!text)return;
   const height=Math.ceil(text.getBoundingClientRect().height);
   if(height>0&&heading.style.getPropertyValue('--passage-book-diameter')!==height+'px')heading.style.setProperty('--passage-book-diameter',height+'px');
-  const count=selectedVerseNumbers().length,label=$('#share-selected-label');if(label)label.textContent='Share selected ('+count+')';$('#passage-share').disabled=!count;
+  const count=selectedVerseNumbers().length,label=$('#share-selected-label');if(label)label.textContent='Copy selected ('+count+')';$('#passage-share').disabled=!count;
  });};
  const resize=typeof ResizeObserver==='function'?new ResizeObserver(size):null;
  new MutationObserver(()=>{const target=document.querySelector('.passage-heading > div');if(target!==observed){if(observed)resize?.unobserve(observed);observed=target;if(target)resize?.observe(target);}size();}).observe($('#chapter-text'),{childList:true});
  window.addEventListener('resize',size);window.addEventListener('viewchange',size);size();
 })();
+
+// Measure citation rows so the overflow count follows the available space.
+function fitChatCitations(){
+ document.querySelectorAll('.chat-summary-sources').forEach(row=>{
+  row.querySelector('[data-chat-more]')?.remove();
+  const links=[...row.children];links.forEach(link=>link.hidden=false);
+  if(!links.length||!row.clientWidth||row.scrollWidth<=row.clientWidth)return;
+  const more=document.createElement('button');more.type='button';more.className='chat-citation verse-citation';more.dataset.chatMore='';more.setAttribute('aria-haspopup','dialog');row.append(more);
+  let hidden=0;
+  do{links[links.length-1-hidden].hidden=true;hidden++;more.textContent='(+'+hidden+')';}while(hidden<links.length&&row.scrollWidth>row.clientWidth);
+  more.setAttribute('aria-label','Show '+hidden+' more citations');
+  more.onclick=()=>{
+   let dialog=document.querySelector('#chat-citations-dialog');
+   if(!dialog){dialog=document.createElement('dialog');dialog.id='chat-citations-dialog';dialog.className='glass-dialog';dialog.setAttribute('aria-label','Response citations');document.body.append(dialog);}
+   dialog.innerHTML='<div class="sheet-heading"><h2>Citations</h2><button type="button" class="preview-close" aria-label="Close citations">×</button></div><div class="chat-all-citations"></div>';
+   links.forEach(link=>{const copy=link.cloneNode(true);copy.hidden=false;dialog.querySelector('.chat-all-citations').append(copy);});
+   dialog.querySelector('button').onclick=()=>dialog.close();dialog.showModal();
+  };
+ });
+}
+new ResizeObserver(fitChatCitations).observe(document.querySelector('#chat-messages'));
