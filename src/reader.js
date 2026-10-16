@@ -19,7 +19,7 @@ function readRef(ref){const m=/^(.*?) (\d+):(\d+)/.exec(ref);const book=m&&books
 function chapterStudies(){if(!reading)return [];return ENTRIES.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter}));}
 function applicableStudies(){const entries=chapterStudies();if(!selectedVerses.size)return entries;const matching=entries.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter&&selectedVerses.has(p.verse)}));return matching.length?matching:entries;}
 function chapterOptions(){comparisonSelections.clear();comparisonRecordSelections.clear();comparisonHighlightOrder.clear();const book=books[readingBook];$('#chapter-select').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===readingChapter?'selected':''}>${i+1}</option>`).join('');$('#book-select').value=String(readingBook);}
-function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;const context=$('#header-context');context.dataset.passage=`${label} (${$('#reader-edition').value.toUpperCase()})`;if(view==='explore')context.textContent=context.dataset.passage;$('#reader-picker').setAttribute('aria-label',`Reader settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;}
+function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;const context=$('#header-context');context.dataset.passage=`${label} • ${$('#reader-edition').value.toUpperCase()}`;if(view==='explore')context.textContent=context.dataset.passage;$('#reader-picker').setAttribute('aria-label',`Reader settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;}
 async function loadChapter(book,ch,verse=null,updateHash=true){const b=books[book];if(!b||!Number.isInteger(ch)||ch<1||ch>b.chapters)return;stagePassageDock();const version=++loadVersion;readingBook=book;readingChapter=ch;selectedVerses.clear();$('#passage-tools').hidden=true;chapterOptions();$('#reader-status').textContent='Loading chapter…';$('#chapter-text').innerHTML='<p class="chapter-loading">Loading chapter…</p>';$('#comparison-status').hidden=true;try{const response=await fetch(`/api/chapter?book=${book}&chapter=${ch}`);if(!response.ok)throw Error('Chapter could not be loaded');const data=await response.json();if(version!==loadVersion)return;reading=data;state.reading={book,chapter:ch};persist();renderReader();if(updateHash)history.replaceState(null,'',`#read/${book}/${ch}${verse?'/'+verse:''}`);if(verse)requestAnimationFrame(()=>$(`#verse-${verse}`)?.scrollIntoView({block:'center',behavior:'smooth'}));else window.scrollTo({top:0,behavior:'instant'});}catch(err){if(version!==loadVersion)return;reading=null;$('#chapter-text').innerHTML='<div class="reader-error"><p>Could not load this chapter.</p><button id="retry-chapter" class="primary">Retry</button></div>';$('#retry-chapter').onclick=()=>loadChapter(book,ch,verse,updateHash);$('#reader-status').textContent='Chapter unavailable. Try again.';}}
 const comparisonCache=new Map();
 const comparisonSelections=new Map();
@@ -35,8 +35,14 @@ function summaryText(item){return witnessLabel(item)+(item.summary||item.text||'
 function comparisonKey(mode=$('#reader-compare').value){return `${readingBook}:${readingChapter}:${$('#reader-edition').value}:${mode}`;}
 function selectionKey(verse){return `${comparisonKey('tabs')}:${verse}`;}
 function visibleComparison(item){return item.mode==='bookmark'||recordTags(item).length>0||item.mode==='questions'||item.mode==='contradictions'||(item.status!=='Agrees'&&(item.status==='Disagrees'||item.discrepancy===true));}
-function verseBookmarkComparisons(verse){const key=`${readingBook}:${readingChapter}:${verse}`;if(typeof state==='undefined')return [];const note=state.verseNotes?.[key];if(!state.verseBookmarks?.[key]&&!note?.text)return [];return [{id:'bookmark-'+key,verse,mode:'bookmark',key:'bookmark',title:note?.title||'My note',summary:note?.text||'',text:'',sources:[]}];}
-function chapterBookmarkButton(){const total=typeof state==='undefined'?0:new Set([...Object.keys(state.verseBookmarks||{}),...Object.keys(state.verseNotes||{}).filter(key=>state.verseNotes[key]?.text)].filter(key=>key.startsWith(`${readingBook}:${readingChapter}:`))).size;return `<button id="chapter-bookmarks" type="button" class="agreement category-filter bookmark" data-category-filter="bookmark" aria-pressed="${categoryFilters.has('bookmark')}" aria-label="Bookmarks: ${total} bookmarked verses in this chapter" title="Bookmarks: ${total}" ${total?'':'disabled'}><span class="filter-icon">${categoryIcon('bookmark')}<span id="chapter-bookmark-count" class="filter-badge" aria-hidden="true" ${total?'':'hidden'}>${total}</span></span><span class="filter-copy"><span class="filter-label">Bookmarks</span></span></button>`;}
+function verseBookmarkComparisons(verse){const key=`${readingBook}:${readingChapter}:${verse}`;if(typeof state==='undefined')return [];const note=state.verseNotes?.[key];if(!state.verseBookmarks?.[key]&&!note?.text)return [];return [{id:'bookmark-'+key,verse,mode:'bookmark',key:'bookmark',title:note?.title||'Note',summary:note?.text||'',text:'',sources:[]}];}
+function comparisonCategoryOpen(key){
+ return !!reading?.verses?.some(v=>verseComparisons(v.n).some(item=>{
+  const tags=recordTags(item),choices=tags.length?tags.map(tag=>({...item,tag})):item.mode==='questions'?[{...item,tag:'Q'}]:[item];
+  return choices.some(choice=>choice.placementRole!=='context'&&filterCategory(choice)===key&&categoryFilters.has(key)&&(comparisonRecordSelections.get(recordSelection(choice))??(choice.mode==='bookmark'&&!!choice.summary)));
+ }));
+}
+function chapterBookmarkButton(){const total=typeof state==='undefined'?0:new Set([...Object.keys(state.verseBookmarks||{}),...Object.keys(state.verseNotes||{}).filter(key=>state.verseNotes[key]?.text)].filter(key=>key.startsWith(`${readingBook}:${readingChapter}:`))).size;return `<button id="chapter-bookmarks" type="button" class="agreement category-filter bookmark" data-category-filter="bookmark" data-brightness="${!total?'empty':comparisonCategoryOpen('bookmark')?'open':'closed'}" aria-pressed="${comparisonCategoryOpen('bookmark')}" aria-label="Bookmarks: ${total} bookmarked verses in this chapter" title="Bookmarks: ${total}" ${total?'':'disabled'}><span class="filter-icon">${categoryIcon('bookmark')}<span id="chapter-bookmark-count" class="filter-badge" aria-hidden="true" ${total?'':'hidden'}>${total}</span></span><span class="filter-copy"><span class="filter-label">Bookmarks</span></span></button>`;}
 function verseComparisons(verse){return [...verseBookmarkComparisons(verse),...comparisonModes.flatMap(mode=>(comparisonCache.get(comparisonKey(mode))?.items||[]).filter(i=>i.verse===verse).map((item,index)=>({...item,mode,key:`${mode}-${index}`}))).filter(visibleComparison)];}
 
 
@@ -138,7 +144,7 @@ function comparisonCell(verse){
  const icon=comparisonIcon;
  const shownChoices=choices.filter(item=>item.placementRole!=='context'||categoryFilters.has(filterCategory(item))).sort((a,b)=>categoryRank(a)-categoryRank(b));if(!shownChoices.length)return '';
  const tabs=shownChoices.map(item=>{const duplicate=choices.filter(i=>category(i)===category(item)).length>1;const label=`${category(item)}${item.status?' · '+item.status:''}${item.placementRole==='context'?' · Supporting context':''}${duplicate?' · '+(item.title||String(choices.indexOf(item)+1)):''}`;const open=isOpen(item);if(item.mode==='bookmark'&&!item.summary)return `<button type="button" class="agreement comparison-tab bookmark" data-bookmark-menu="${verse}" aria-label="Bookmarked verse ${verse}: add note, unmark or share" aria-haspopup="dialog">${icon(item)}</button>`;if(item.placementRole==='context')return `<button type="button" class="agreement comparison-tab ${tone(item)} context-tag" id="comparison-tab-${verse}-${item.key}" aria-pressed="${categoryFilters.has(filterCategory(item))}" aria-label="${esc(label)}" aria-haspopup="dialog" data-context-ref="${esc(item.keyTarget||item.ref)}" data-context-title="${esc(item.title||item.summary||item.ref)}"></button>`;return `<button type="button" class="agreement comparison-tab ${tone(item)}" id="comparison-tab-${verse}-${item.key}" aria-pressed="${open}" aria-expanded="${open}" aria-controls="comparison-panel-${verse}-${item.key}" data-comparison-category="${filterCategory(item)}" data-comparison-record="${esc(recordSelection(item))}" data-comparison-verse="${verse}" data-comparison-key="${item.key}" aria-label="${esc(label)}" title="${esc(label)}">${icon(item)}</button>`});
- const panels=shownChoices.filter(active=>active.placementRole!=='context'&&(active.mode!=='bookmark'||active.summary)).map(active=>`<section class="verse-comparison comparison-panel" data-tone="${tone(active)}" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${isOpen(active)?'':'hidden'}>${sideRows(active)}${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary">${esc(summaryText(active))}</p>${active.mode==='bookmark'?'':active.placementRole?roleCitations(active):comparisonCitations(verse,[active])}${active.mode==='bookmark'?`<button type="button" class="text-button" data-edit-verse-note="${verse}">Edit note</button>`:''}<details class="comparison-details" ${active.mode==='bookmark'?'hidden':''}><summary>Details & sources</summary>${active.tag==='T'?`<p class="language-context">${esc(active.witness)}</p>`:''}<p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${alternativeReadings(verse)}${active.reasoning?`<p><b>Reasoning:</b> ${esc(active.reasoning)}</p>`:''}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details></section>`).join('');
+ const panels=shownChoices.filter(active=>active.placementRole!=='context'&&(active.mode!=='bookmark'||active.summary)).map(active=>`<section class="verse-comparison comparison-panel" data-tone="${tone(active)}" id="comparison-panel-${verse}-${active.key}" aria-labelledby="comparison-tab-${verse}-${active.key}" ${isOpen(active)?'':'hidden'}>${active.title?`<h3>${esc(active.title)}</h3>`:''}<p class="comparison-summary" ${active.mode==='bookmark'?'':'tabindex="0" data-summary-toggle aria-expanded="false" aria-label="Comparison summary. Double-click or press Enter to show evidence."'}>${esc(summaryText(active))}${active.reasoning?`<span class="summary-reasoning"><b>Reasoning:</b> ${esc(active.reasoning)}</span>`:''}${active.mode==='bookmark'?'':` <button type="button" class="summary-inspect" data-comparison-inspect aria-label="Details & sources" title="Details & sources" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button>`}</p>${active.mode==='bookmark'?'':`<div class="comparison-evidence" hidden>${sideRows(active)}${active.placementRole?roleCitations(active):comparisonCitations(verse,[active])}</div>`}${active.mode==='bookmark'?`${noteActionButtons(`${readingBook}/${readingChapter}/${verse}`)}`:''}<details class="comparison-details" ${active.mode==='bookmark'?'hidden':''}><summary>Details & sources</summary>${active.tag==='T'?`<p class="language-context">${esc(active.witness)}</p>`:''}<p><b>Comparison explanation:</b> ${esc(active.text)}</p>${scienceDetails(active)}${alternativeReadings(verse)}${active.scope?`<p class="comparison-scope"><b>Our assessment:</b> ${esc(active.scope)}</p>`:''}<div class="comparison-sources">${active.sources?.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')||''}</div></details></section>`).join('');
  return `<div class="comparison-cell"><div class="comparison-tabs" role="group" aria-label="Comparisons for verse ${verse}"><span class="primary-tags">${tabs.filter((_,i)=>shownChoices[i].placementRole!=='context').join('')}</span><span class="context-tags">${tabs.filter((_,i)=>shownChoices[i].placementRole==='context').join('')}</span></div>${panels}</div>`;
 }
 function selectComparison(button){
@@ -151,10 +157,10 @@ function selectComparison(button){
  const panel=document.getElementById(`comparison-panel-${verse}-${key}`);if(panel)panel.hidden=!open;
  const record=button.dataset.comparisonRecord||`${verse}:${key}`;
  if(open)comparisonHighlightOrder.set(record,++comparisonHighlightSequence);else comparisonHighlightOrder.delete(record);
- refreshVerseHighlights();
+ refreshVerseHighlights();if(typeof comparisonStatus==='function')comparisonStatus();
 }
 function toggleComparisonCategory(key){
- const open=!categoryFilters.has(key);if(open)categoryFilters.add(key);else categoryFilters.delete(key);
+ const open=!comparisonCategoryOpen(key);if(open)categoryFilters.add(key);else categoryFilters.delete(key);
  for(const v of reading.verses)for(const item of verseComparisons(v.n)){
   const tags=recordTags(item),choices=tags.length?tags.map(tag=>({...item,tag,key:`${item.key}-${tag}`})):[item];
   for(const choice of choices)if(filterCategory(choice)===key){comparisonRecordSelections.set(recordSelection(choice),open);if(open)comparisonHighlightOrder.set(recordSelection(choice),++comparisonHighlightSequence);else comparisonHighlightOrder.delete(recordSelection(choice));}
@@ -186,8 +192,8 @@ function refreshVerseHighlights(){
  const edition=$('#reader-edition').value;
  for(const verse of reading.verses){const body=document.getElementById(`verse-${verse.n}`)?.querySelector?.('.verse-body');if(body&&verse[edition])body.innerHTML=verseNumber(verse)+scriptureHtml(verse,edition);}
 }
-function verseNumber(v){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<button class="verse-num" data-verse="${v.n}" aria-label="${selectedVerses.has(v.n)?'Deselect':'Select'} verse ${v.n}${saved?', bookmarked':''}" aria-pressed="${selectedVerses.has(v.n)}">${v.n}</button>`;}
-function verseText(v,edition){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<div class="verse-body${saved?' verse-bookmarked':''}" tabindex="0" aria-label="Verse ${v.n}. Tap to select; hold or press Enter to mark or share">${verseNumber(v)}${v[edition]?scriptureHtml(v,edition):'<span class="missing-verse">This verse number is absent from the supplied edition’s dataset.</span>'}</div>`;}
+function verseNumber(v){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<span class="verse-num" aria-hidden="true">${v.n}</span>`;}
+function verseText(v,edition){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<div class="verse-body${saved?' verse-bookmarked':''}" tabindex="0" aria-label="Verse ${v.n}. Double-tap to bookmark; hold or press Enter for verse actions">${verseNumber(v)}${v[edition]?scriptureHtml(v,edition):'<span class="missing-verse">This verse number is absent from the supplied edition’s dataset.</span>'}</div>`;}
 function comparisonStatus(){
  const mode=$('#reader-compare').value,status=$('#comparison-status');status.hidden=false;if(mode==='none'){status.hidden=true;status.innerHTML='';return;}
  const records=comparisonModes.map(m=>comparisonCache.get(comparisonKey(m)));
@@ -197,7 +203,7 @@ function comparisonStatus(){
  const count=new Set(records.flatMap((r,index)=>(r.items||[]).filter(item=>visibleComparison({...item,mode:comparisonModes[index]})).map(item=>item.id||`${comparisonModes[index]}:${item.title||''}:${item.summary}`))).size;
  const all=records.flatMap((r,index)=>(r.items||[]).map(item=>({...item,mode:comparisonModes[index]}))).filter(visibleComparison);
  const categories=[['T','Translation','translation'],['V','Violations','violation'],['Q','Question','question'],['academic','Academic','academic'],['contradictions','Contradictory','contradictions']];
- status.innerHTML=chapterBookmarkButton()+categories.map(([key,label,tone])=>{const matches=all.filter(item=>recordTags(item).length?recordTags(item).includes(key):filterCategory(item)===key);const total=new Set(matches.filter(item=>item.placementRole!=='context').map(item=>item.id||item.title||item.summary)).size;return `<button type="button" class="agreement category-filter ${tone}" data-category-filter="${key}" aria-pressed="${matches.length>0&&categoryFilters.has(key)}" aria-label="${label}: ${total} summaries" title="${label}: ${total} summaries" ${matches.length?'':'disabled'}><span class="filter-icon">${categoryIcon(key)}${total?`<span class="filter-badge" aria-hidden="true">${total}</span>`:""}</span><span class="filter-copy"><span class="filter-label">${label}</span>${total?` <span class="filter-count">${total}</span>`:""}</span></button>`}).join('');
+ status.innerHTML=chapterBookmarkButton()+categories.map(([key,label,tone])=>{const matches=all.filter(item=>recordTags(item).length?recordTags(item).includes(key):filterCategory(item)===key);const total=new Set(matches.filter(item=>item.placementRole!=='context').map(item=>item.id||item.title||item.summary)).size;return `<button type="button" class="agreement category-filter ${tone}" data-category-filter="${key}" data-brightness="${!matches.length?'empty':comparisonCategoryOpen(key)?'open':'closed'}" aria-pressed="${comparisonCategoryOpen(key)}" aria-label="${label}: ${total} summaries" title="${label}: ${total} summaries" ${matches.length?'':'disabled'}><span class="filter-icon">${categoryIcon(key)}${total?`<span class="filter-badge" aria-hidden="true">${total}</span>`:""}</span><span class="filter-copy"><span class="filter-label">${label}</span>${total?` <span class="filter-count">${total}</span>`:""}</span></button>`}).join('');
 }
 async function ensureComparisons(){
  if(!reading||$('#reader-compare').value==='none')return;
@@ -259,8 +265,23 @@ $('#reader-font').oninput=ev=>{state.textScale=Number(ev.target.value)/100;apply
 $('#reader-font').onchange=()=>persist();
 applyTextSize();
 $('#clear-selection').onclick=()=>{selectedVerses.clear();renderReader(true)};
-document.addEventListener('click',ev=>{const button=ev.target.closest('button');if(!button)return;if(button.dataset.verse){const n=Number(button.dataset.verse);if(selectedVerses.has(n))selectedVerses.delete(n);else selectedVerses.add(n);renderReader(true)}if(button.dataset.read){setView('explore');const [b,ch,v]=button.dataset.read.split('/').map(Number);loadChapter(b,ch,v)}if(button.dataset.prompt){$('#chat-input').value=button.dataset.prompt;$('#chat-form').requestSubmit()}});
-document.addEventListener('click',ev=>{const body=ev.target.closest('.verse-body');if(!body||ev.target.closest('button,a,input,select,textarea')||window.getSelection()?.toString())return;const verse=Number(body.closest('.verse')?.id.replace('verse-',''));if(!verse)return;if(selectedVerses.has(verse))selectedVerses.delete(verse);else selectedVerses.add(verse);renderReader(true);});
+document.addEventListener('click',ev=>{const button=ev.target.closest('button');if(!button)return;if(button.dataset.read){setView('explore');const [b,ch,v]=button.dataset.read.split('/').map(Number);loadChapter(b,ch,v)}if(button.dataset.prompt){$('#chat-input').value=button.dataset.prompt;$('#chat-form').requestSubmit()}});
+// Bookmark with a double click/tap; a single tap leaves the verse unchanged.
+(() => {
+ let start=null,lastTap=null,lastTouchBookmark=0;
+ function verseAt(target){const card=target.closest('.verse'),body=target.closest('.verse-body')||(card?.querySelector('.verse-body.verse-bookmarked'));if(!body||target.closest('a,button,input,select,textarea,[data-verse-action],[data-summary-toggle],.comparison-evidence,.comparison-details')||document.querySelector('dialog[open],.verse-preview:not([hidden])'))return null;return Number(body.closest('.verse')?.id.replace('verse-',''))||null;}
+ function bookmark(verse){toggleVerseMark('bookmark',readingBook,readingChapter,verse);}
+ document.addEventListener('dblclick',ev=>{const verse=verseAt(ev.target);if(!verse)return;ev.preventDefault();if(Date.now()-lastTouchBookmark>700)bookmark(verse);});
+ document.addEventListener('pointerdown',ev=>{if(ev.pointerType!=='touch')return;const verse=verseAt(ev.target);start=verse?{verse,id:ev.pointerId,x:ev.clientX,y:ev.clientY,time:Date.now()}:null;});
+ document.addEventListener('pointermove',ev=>{if(start&&start.id===ev.pointerId&&Math.hypot(ev.clientX-start.x,ev.clientY-start.y)>16){start=null;lastTap=null;}});
+ document.addEventListener('pointercancel',()=>{start=null;lastTap=null;});
+ document.addEventListener('pointerup',ev=>{
+  if(!start||start.id!==ev.pointerId)return;const tap=start;start=null;const now=Date.now(),verse=verseAt(ev.target);
+  if(verse!==tap.verse||now-tap.time>350){lastTap=null;return;}
+  if(lastTap&&lastTap.verse===verse&&now-lastTap.time<=320&&Math.hypot(tap.x-lastTap.x,tap.y-lastTap.y)<24){lastTap=null;lastTouchBookmark=now;bookmark(verse);}else lastTap={...tap,time:now};
+ });
+ window.addEventListener('viewchange',()=>{start=null;lastTap=null;});
+})();
 window.addEventListener('viewchange',ev=>{if(lastView==='explore')readingScroll=window.scrollY;if(ev.detail==='chat')updateContext();if(ev.detail==='explore'&&lastView!=='explore')requestAnimationFrame(()=>window.scrollTo({top:readingScroll,behavior:'instant'}));lastView=ev.detail;});
 function askAboutVerse(book,chapter,verse){
  const reference=`${books[book].name} ${chapter}:${verse}`;
@@ -321,20 +342,25 @@ document.addEventListener('pointerdown',()=>document.body.classList.remove('keyb
 // Keep the same reader controls in Settings at every viewport width.
 // Passage navigation uses a separate glass dialog so reader settings stay independent.
 let passagePicker=null,passagePickerRequest=0;
+function passageNumberGrid(field,numbers,preferred){
+ const selected=numbers.includes(preferred)?preferred:numbers[0];
+ $('#'+field).value=String(selected||'');
+ $('#'+field+'-grid').innerHTML=numbers.map(n=>`<label class="passage-number"><input type="radio" name="${field}-choice" value="${n}" ${n===selected?'checked':''}><span>${n}</span></label>`).join('');
+}
 async function updatePassagePickerVerses(preferred=1){
  const book=Number($('#passage-book').value),chapter=Number($('#passage-chapter').value),request=++passagePickerRequest;
- const field=$('#passage-verse');field.disabled=true;$('#passage-go').disabled=true;field.innerHTML='<option>Loading…</option>';
+ const field=$('#passage-verse');field.disabled=true;$('#passage-go').disabled=true;$('#passage-verse-grid').innerHTML='<span class="number-grid-status">Loading…</span>';
  try{const response=await fetch(`/api/chapter?book=${book}&chapter=${chapter}`);if(!response.ok)throw Error();const data=await response.json();if(request!==passagePickerRequest)return;
-  field.innerHTML=data.verses.map(v=>`<option value="${v.n}" ${v.n===preferred?'selected':''}>${v.n}</option>`).join('');field.disabled=false;$('#passage-go').disabled=false;
- }catch{if(request===passagePickerRequest)field.innerHTML='<option>Could not load verses</option>';}
+  passageNumberGrid('passage-verse',data.verses.map(v=>v.n),preferred);field.disabled=false;$('#passage-go').disabled=false;
+ }catch{if(request===passagePickerRequest)$('#passage-verse-grid').innerHTML='<span class="number-grid-status">Could not load verses. Choose the chapter to retry.</span>';}
 }
-function updatePassagePickerChapters(chapter=1){const book=books[Number($('#passage-book').value)];$('#passage-chapter').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===chapter?'selected':''}>${i+1}</option>`).join('');}
+function updatePassagePickerChapters(chapter=1){const book=books[Number($('#passage-book').value)];passageNumberGrid('passage-chapter',Array.from({length:book.chapters},(_,i)=>i+1),chapter);}
 function openPassagePicker(){
  if(!books.length)return;
  if(!passagePicker){passagePicker=document.createElement('dialog');passagePicker.id='passage-picker';passagePicker.className='glass-dialog';passagePicker.setAttribute('aria-labelledby','passage-picker-title');
-  passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><div id="passage-translation"></div><label>Book<select id="passage-book"></select></label><div class="passage-picker-fields"><label>Chapter<select id="passage-chapter"></select></label><label>Verse<select id="passage-verse"></select></label></div><button type="submit" id="passage-go" class="primary">Read passage</button></form>';document.body.append(passagePicker);
+  passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><div id="passage-translation"></div><label>Book<select id="passage-book"></select></label><div class="passage-picker-fields"><fieldset><legend>Chapter</legend><input type="hidden" id="passage-chapter"><div id="passage-chapter-grid" class="passage-number-grid"></div></fieldset><fieldset><legend>Verse</legend><input type="hidden" id="passage-verse"><div id="passage-verse-grid" class="passage-number-grid" aria-live="polite"></div></fieldset></div><button type="submit" id="passage-go" class="primary">Read passage</button></form>';document.body.append(passagePicker);
   $('#passage-translation').append($('#reader-edition').closest('label'));
-  $('#passage-book').onchange=()=>{updatePassagePickerChapters();updatePassagePickerVerses();};$('#passage-chapter').onchange=()=>updatePassagePickerVerses();
+  $('#passage-book').onchange=()=>{updatePassagePickerChapters();updatePassagePickerVerses();};passagePicker.addEventListener('change',ev=>{if(ev.target.name==='passage-chapter-choice'){$('#passage-chapter').value=ev.target.value;updatePassagePickerVerses();}if(ev.target.name==='passage-verse-choice')$('#passage-verse').value=ev.target.value;});
   passagePicker.querySelector('[data-picker-close]').onclick=()=>passagePicker.close();
   $('#passage-picker-form').onsubmit=ev=>{ev.preventDefault();if($('#passage-go').disabled)return;const b=Number($('#passage-book').value),ch=Number($('#passage-chapter').value),v=Number($('#passage-verse').value);passagePicker.close();setView('explore',false);loadChapter(b,ch,v);};
   passagePicker.addEventListener('close',()=>{passagePickerRequest++;document.querySelector('.passage-heading-picker')?.focus({preventScroll:true});});
@@ -466,3 +492,29 @@ function fitChatCitations(){
  });
 }
 new ResizeObserver(fitChatCitations).observe(document.querySelector('#chat-messages'));
+
+// Summary evidence stays below its summary; detailed sources open in a context dialog.
+(() => {
+ const dialog=document.createElement('dialog');dialog.className='comparison-context-dialog';dialog.setAttribute('aria-labelledby','comparison-context-title');document.body.append(dialog);
+ let opener=null;
+ function toggle(summary){const evidence=summary.parentElement.querySelector('.comparison-evidence');if(!evidence)return;evidence.hidden=!evidence.hidden;summary.setAttribute('aria-expanded',String(!evidence.hidden));}
+ document.addEventListener('dblclick',ev=>{const summary=ev.target.closest('[data-summary-toggle]');if(summary&&!ev.target.closest('button,a')){ev.preventDefault();toggle(summary);}});
+ document.addEventListener('keydown',ev=>{if((ev.key==='Enter'||ev.key===' ')&&ev.target.matches('[data-summary-toggle]')){ev.preventDefault();toggle(ev.target);}});
+ document.addEventListener('click',ev=>{const button=ev.target.closest('[data-comparison-inspect]');if(!button)return;const panel=button.closest('.comparison-panel'),details=panel.querySelector('.comparison-details');opener=button;dialog.innerHTML='<div class="comparison-context-heading"><h2 id="comparison-context-title">Details & sources</h2><button type="button" data-close-comparison aria-label="Close details and sources">×</button></div><div class="comparison-context-content"></div>';const content=dialog.querySelector('.comparison-context-content');for(const child of details.children)if(child.tagName!=='SUMMARY')content.append(child.cloneNode(true));dialog.showModal();});
+ dialog.addEventListener('click',ev=>{if(ev.target===dialog||ev.target.closest('[data-close-comparison]'))dialog.close();});dialog.addEventListener('close',()=>opener?.focus({preventScroll:true}));
+})();
+
+// Reveal comparison dots while scrolling back; touch to expand the controls.
+(() => {
+ const dock=document.querySelector('.comparison-dock'),expand=document.createElement('button');
+ expand.type='button';expand.className='comparison-pill-expand';expand.setAttribute('aria-label','Expand comparison categories');expand.setAttribute('aria-expanded','false');dock.append(expand);
+ let lastY=window.scrollY;
+ function collapse(){dock.classList.remove('pill-expanded');expand.setAttribute('aria-expanded','false');}
+ function hide(){collapse();document.body.classList.remove('comparison-menu-visible');}
+ function syncDock(){const y=window.scrollY,delta=y-lastY;if(y<20){hide();lastY=y;return;}if(Math.abs(delta)<4)return;if(delta<0)document.body.classList.add('comparison-menu-visible');else hide();lastY=y;}
+ expand.addEventListener('click',()=>{dock.classList.add('pill-expanded');expand.setAttribute('aria-expanded','true');dock.querySelector('.category-filter:not(:disabled)')?.focus({preventScroll:true});});
+ document.addEventListener('pointerdown',ev=>{if(!dock.contains(ev.target))collapse();});
+ dock.addEventListener('focusout',ev=>{if(!dock.contains(ev.relatedTarget))collapse();});
+ document.addEventListener('keydown',ev=>{if(ev.key==='Escape')collapse();});
+ window.addEventListener('scroll',syncDock,{passive:true});window.addEventListener('viewchange',()=>{hide();lastY=window.scrollY;});
+})();

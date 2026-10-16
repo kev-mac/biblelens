@@ -2,7 +2,7 @@ import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:asser
 const handlers={},popupHandlers={},children=new Map(),loads=[];let requests=0;
 const child=s=>{if(!children.has(s))children.set(s,{setAttribute(){}});return children.get(s);};
 const popup={style:{},hidden:true,setAttribute(){},querySelector:child,contains:n=>n===popup,getBoundingClientRect:()=>({width:360,height:180}),addEventListener:(type,fn)=>popupHandlers[type]=fn};
-const doc={createElement:()=>popup,body:{append(){}},querySelector:s=>s==='#reader-edition'?{value:'kjv'}:null,addEventListener:(type,fn,capture)=>handlers[type+(capture===true?':capture':'')]=fn};
+const doc={createElement:()=>popup,body:{append(){}},querySelector:s=>s==='#reader-edition'?{value:'kjv'}:null,addEventListener:(type,fn,capture)=>{const key=type+(capture===true?':capture':'');const previous=handlers[key];handlers[key]=previous?ev=>{previous(ev);fn(ev);}:fn;}};
 const ctx={state:{verseBookmarks:{},verseHighlights:{}},document:doc,window:{innerWidth:780,innerHeight:1004,addEventListener(){}},setTimeout,clearTimeout,scriptureHtml:v=>v.kjv,setView:(v,update)=>loads.push({view:v,update}),loadChapter:(...ref)=>loads.push({ref}),fetch:async()=>{requests++;return{ok:true,json:async()=>({verses:[{n:1,kjv:'Full verse one, beyond the quoted excerpt.'},{n:2,kjv:'Full verse two.'}]})}}};
 vm.createContext(ctx);vm.runInContext(fs.readFileSync('src/citations.js','utf8').split('// Supporting-context markers')[0],ctx);
 const chip=(verse,end=verse)=>({dataset:{cite:`0/1/${verse}`,citeEnd:String(end),citeLabel:`Genesis 1:${verse}`},attrs:{},setAttribute(k,v){this.attrs[k]=v;},closest:()=>null,contains:()=>false,getBoundingClientRect:()=>({left:100,top:300,bottom:324})});
@@ -17,6 +17,17 @@ handlers.focusin({target:target(b)});await settle();handlers.keydown({key:'Escap
 // Long-pressing a citation previews it and moving away cancels the hold.
 handlers.pointerdown({button:0,target:target(b),pointerId:10,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);handlers.pointerup();handlers.keydown({key:'Escape',preventDefault(){}});
 handlers.pointerdown({button:0,target:target(b),pointerId:11,clientX:10,clientY:10});handlers.pointermove({pointerId:11,clientX:30,clientY:10});await new Promise(r=>setTimeout(r,550));assert(popup.hidden);
+// iOS sends pointerout on finger lift; explicit long-press previews must stay open.
+handlers.pointerdown({button:0,pointerType:'touch',target:target(b),pointerId:12,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));
+handlers.pointerup();handlers.pointerout({pointerType:'touch',target:target(b),relatedTarget:null});
+handlers.focusout({target:target(b),relatedTarget:null});popupHandlers.pointerleave({pointerType:'touch'});
+await new Promise(r=>setTimeout(r,250));assert(!popup.hidden,'Finger release must not dismiss a long-press preview');
+let releaseStopped=false;handlers['click:capture']({target:target(b),preventDefault(){},stopImmediatePropagation(){releaseStopped=true;}});
+assert(releaseStopped,'The compatibility click must not navigate or close the preview');assert(!popup.hidden);
+handlers.click({target:{closest:()=>null},preventDefault(){}});assert(popup.hidden,'An outside tap still dismisses the preview');
+// Mouse hover retains its normal leave-to-dismiss behavior.
+handlers.pointerover({pointerType:'mouse',target:target(b),relatedTarget:null});await settle();
+handlers.pointerout({pointerType:'mouse',target:target(b),relatedTarget:null});await new Promise(r=>setTimeout(r,250));assert(popup.hidden);
 // Closing during an in-flight request cannot reopen a stale preview.
 let resolveFetch;ctx.fetch=()=>new Promise(r=>resolveFetch=r);const delayed=chip(1);delayed.dataset.cite='0/2/1';handlers.pointerover({pointerType:'mouse',target:target(delayed),relatedTarget:null});handlers.click({target:target(delayed),preventDefault(){}});resolveFetch({ok:true,json:async()=>({verses:[{n:1,kjv:'Stale verse'}]})});await settle();assert(popup.hidden);assert.notEqual(child('.preview-text').innerHTML,'Stale verse');
 console.log('PASS: full-verse hover and keyboard previews, ranges, cached fetch, direct click/tap navigation and stale-response cancellation.');
@@ -25,11 +36,17 @@ ctx.readingBook=0;ctx.readingChapter=3;ctx.books=[{name:'Genesis'}];ctx.reading=
 ctx.fetch=async()=>({ok:true,json:async()=>({verses:[{n:22,kjv:'KJV fixture',web:'Complete WEB fixture verse.'}]})});ctx.scriptureHtml=(v,ed)=>v[ed];
 const body={...chip(22),closest:s=>s==='.verse'?{id:'verse-22'}:null,matches:s=>s==='.verse-body'};
 const verseTarget={closest:s=>s==='.verse-body'?body:null};
-handlers.pointerdown({button:0,target:verseTarget,pointerId:7,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');assert.equal(child('.preview-text').innerHTML,'Complete WEB fixture verse.');handlers.pointerup();handlers.click({target:verseTarget,preventDefault(){}});assert(!popup.hidden);handlers.keydown({key:'Escape',preventDefault(){}});
+handlers.pointerdown({button:0,target:verseTarget,pointerId:7,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');assert.equal(child('.preview-text').innerHTML,'Complete WEB fixture verse.');handlers.pointercancel();handlers.pointerup();handlers.pointerout({pointerType:'touch',target:target(body),relatedTarget:null});popupHandlers.pointerleave({pointerType:'touch'});await new Promise(r=>setTimeout(r,250));let bodyReleaseStopped=false;handlers['click:capture']({target:verseTarget,preventDefault(){},stopImmediatePropagation(){bodyReleaseStopped=true;}});assert(bodyReleaseStopped);assert(!popup.hidden);handlers.keydown({key:'Escape',preventDefault(){}});
 handlers.pointerdown({button:0,target:verseTarget,pointerId:8,clientX:10,clientY:10});handlers.pointermove({pointerId:8,clientX:25,clientY:10});await new Promise(r=>setTimeout(r,550));assert(popup.hidden);
 handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');
 const html=fs.readFileSync('src/index.html','utf8');assert(!html.includes('id="ask-selection"'));for(const id of ['prev-bottom','next-bottom'])assert(html.includes(`id="${id}"`));
-console.log('PASS: WEB hold preview, movement cancellation, keyboard access and top/bottom chapter controls.');
+// Marked-card padding and note surfaces share the verse's long-press target.
+handlers.keydown({key:'Escape',preventDefault(){}});
+const markedCard={id:'verse-22',querySelector:()=>markedBody};
+const markedBody={...body,closest:s=>s==='.verse'?markedCard:null};
+const paddingTarget={closest:s=>s==='.verse'?markedCard:null};
+handlers.pointerdown({button:0,target:paddingTarget,pointerId:9,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);handlers.pointerup();let paddingReleaseStopped=false;handlers['click:capture']({target:{closest:()=>null},preventDefault(){},stopImmediatePropagation(){paddingReleaseStopped=true;}});assert(paddingReleaseStopped);assert(!popup.hidden);handlers.keydown({key:'Escape',preventDefault(){}});handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();
+console.log('PASS: touch release/cancel keeps verse menus and citation previews open; outside taps dismiss; mouse hover still dismisses on leave; movement cancels pending holds.');
 const shared=[];ctx.selectedVerseNumbers=()=>[21,22];ctx.copyVerseSelection=async(book,chapter,verses)=>{shared.push({book,chapter,verses:Array.from(verses)});return true;};
 await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'copy'}})}});assert.deepEqual(shared[0],{book:0,chapter:3,verses:[22]});assert(popup.hidden);
 handlers.focusin({target:target(body)});await settle();

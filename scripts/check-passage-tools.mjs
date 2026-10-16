@@ -1,9 +1,9 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
 const nodes=new Map(),handlers={},downloads=[],links=[];
-const node=id=>{if(!nodes.has(id))nodes.set(id,{id,value:'',hidden:false,disabled:false,attrs:{},setAttribute(k,v){this.attrs[k]=v},addEventListener(type,fn){handlers[id+':'+type]=fn},append(){},replaceChildren(){},remove(){},before(){},focus(){},select(){}});return nodes.get(id)};
+const node=id=>{if(!nodes.has(id))nodes.set(id,{id,value:'',hidden:false,disabled:false,attrs:{},setAttribute(k,v){this.attrs[k]=v},addEventListener(type,fn){handlers[id+':'+type]=fn},append(){},replaceChildren(){},remove(){},before(){},focus(){},select(){},showModal(){this.open=true;},close(){this.open=false;}});return nodes.get(id)};
 const bookmark=node('bookmark'),dock=node('dock');
 const c={state:{bookmarks:[],notes:{}},ENTRIES:[],readingBook:0,readingChapter:8,books:[{name:'Genesis'}],reading:{name:'Genesis'},storageAvailable:true,confirm:()=>true,selectedVerseNumbers:()=>[],$:node,esc:s=>String(s).replaceAll('<','&lt;').replaceAll('>','&gt;'),persist(){c.saves++},saves:0,toast(){},download:(...args)=>downloads.push(args),navigator:{clipboard:{writeText:async text=>links.push(text)}},location:{href:'https://example.com/#read/0/8'},URL,document:{querySelector:selector=>selector==='[data-passage-save]'?bookmark:dock,addEventListener:(type,fn)=>handlers['document:'+type]=fn}};
-vm.createContext(c);vm.runInContext(fs.readFileSync('src/passage.js','utf8'),c);
+vm.createContext(c);const appSource=fs.readFileSync('src/app.js','utf8');vm.runInContext(appSource.slice(appSource.indexOf('function confirmNoteAction('),appSource.indexOf('function persist(')),c);vm.runInContext(fs.readFileSync('src/passage.js','utf8'),c);
 node('#passage-note-editor').hidden=true;node('#passage-note-toggle').onclick();assert.equal(node('#passage-note-editor').hidden,false);
 node('#passage-note').value='Private <note>';
 handlers['#passage-note:input']({target:node('#passage-note')});
@@ -25,15 +25,17 @@ c.renderReader=()=>{};
 assert.equal(c.toggleVerseMark('bookmark',0,9,2),true);assert(c.state.verseBookmarks['0:9:2']);assert(node('#saved-passages').innerHTML.includes('Genesis 9:2'));
 assert.equal(c.toggleVerseMark('highlight',0,9,2),false);assert(!c.state.verseHighlights['0:9:2']);assert(!c.passageResearchMarkdown().includes('Highlighted verse'));
 c.state.verseNotes['0:9:2']={book:0,chapter:9,verse:2,name:'Genesis',title:'Keep until confirmed',text:'Private note'};
-const savesBeforeCancel=c.saves;let warning='';c.confirm=message=>{warning=message;assert(c.state.verseBookmarks['0:9:2']);assert(c.state.verseNotes['0:9:2']);return false;};
-assert.equal(c.toggleVerseMark('bookmark',0,9,2),null);assert(c.state.verseBookmarks['0:9:2']);assert(c.state.verseNotes['0:9:2']);assert.equal(c.saves,savesBeforeCancel);assert(warning.includes('permanently delete'));assert(warning.includes('Genesis 9:2'));
-c.state.verseNotes['0:9:4']={book:0,chapter:9,verse:4,name:'Genesis',text:'Other note'};c.confirm=()=>true;
-assert.equal(c.toggleVerseMark('bookmark',0,9,2),false);assert(!c.state.verseBookmarks['0:9:2']);assert(!c.state.verseNotes['0:9:2']);assert(c.state.verseNotes['0:9:4']);assert(!c.passageResearchMarkdown().includes('Keep until confirmed'));
+const savesBeforeCancel=c.saves;
+assert.equal(c.toggleVerseMark('bookmark',0,9,2),null);assert(c.state.verseBookmarks['0:9:2']);assert(c.state.verseNotes['0:9:2']);assert.equal(c.saves,savesBeforeCancel);assert(node('#note-confirm-dialog').open);assert(node('#note-confirm-message').textContent.includes('permanently delete'));assert(node('#note-confirm-message').textContent.includes('Genesis 9:2'));
+node('#note-confirm-cancel').onclick();assert(c.state.verseBookmarks['0:9:2']);assert(c.state.verseNotes['0:9:2']);assert.equal(c.saves,savesBeforeCancel);
+c.state.verseNotes['0:9:4']={book:0,chapter:9,verse:4,name:'Genesis',text:'Other note'};
+assert.equal(c.toggleVerseMark('bookmark',0,9,2),null);node('#note-confirm-accept').onclick();assert(!c.state.verseBookmarks['0:9:2']);assert(!c.state.verseNotes['0:9:2']);assert(c.state.verseNotes['0:9:4']);assert(!c.passageResearchMarkdown().includes('Keep until confirmed'));
+assert.equal(c.toggleVerseMark('bookmark',0,9,7),true);assert.equal(c.toggleVerseMark('bookmark',0,9,7),false);assert(!node('#note-confirm-dialog').open,'Unmarking without a note must not show a warning');
 console.log('PASS: unmark cancellation preserves bookmark/note/title and avoids writes; confirmation removes only the target bookmark and personal note.');
 c.mergePassageBackup({verseBookmarks:{'0:9:3':{book:0,chapter:9,verse:3,name:'Genesis'}},verseHighlights:{'bad':{book:0,chapter:9,verse:0,name:'Genesis'}}});assert(c.state.verseBookmarks['0:9:3']);assert(!c.state.verseHighlights.bad);
 const html=fs.readFileSync('src/index.html','utf8');
 assert.equal((html.match(/data-view="method"/g)||[]).length,0);
-assert(html.includes('href="#method"'));assert(html.includes('passage.js?v=reader-picker-v12'));
+assert(html.includes('href="#method"'));assert(html.includes('passage.js?v=reader-picker-grid-v14'));
 for(const direction of ['m15 5-7 7 7 7','m9 5 7 7-7 7'])assert(html.includes(direction));
 console.log('PASS: private passage notes persist, escape, export and merge; chapter bookmarks, separate chapter state, and note-free share links.');
 node('#verse-note-dialog').showModal=()=>{node('#verse-note-dialog').hidden=false};
@@ -97,3 +99,11 @@ c.renderPassageSaved();const newField=verseField('0/12/1');fields=[newField];c.r
 assert.equal(oldField.textContent,'Loading verse text…');assert.equal(newField.textContent,'Latest rendered verse. (KJV)');
 fields=[verseField('0/13/1')];c.fetch=async()=>{throw Error('Offline')};await c.hydrateMarkedVerseTexts();assert(fields[0].textContent.includes('could not load'));assert.equal(fields[0].attrs['aria-busy'],'false');
 console.log('PASS: marked verse text expands from cached chapter data, preserves edition fallback, and rejects stale render updates with accessible network failures.');
+
+// Deleting a note preserves its bookmark and can be cancelled without a write.
+c.state.verseBookmarks['0:9:3']={book:0,chapter:9,verse:3,name:'Genesis'};
+const noteBefore=c.state.verseNotes['0:9:3'];assert.equal(c.deletePersonalNote('0/9/3'),null);node('#note-confirm-cancel').onclick();assert.equal(c.state.verseNotes['0:9:3'],noteBefore);
+assert.equal(c.deletePersonalNote('0/9/3'),null);node('#note-confirm-accept').onclick();assert(!c.state.verseNotes['0:9:3']);assert(c.state.verseBookmarks['0:9:3']);
+node('#verse-note-dialog').showModal=()=>{};node('#verse-note-text').focus=()=>{};c.openVerseNote(0,9,6);assert.equal(node('#verse-note-title-input').value,'Note');
+assert.equal(c.noteActionButtons('0/9/6'),'','No edit action without a saved note');c.state.verseNotes['0:9:6']={text:'Saved note'};const controls=c.noteActionButtons('0/9/6');assert(controls.indexOf('Delete note')<controls.indexOf('Edit note'));assert(controls.includes('aria-label="Edit note"'));assert(controls.includes('aria-label="Delete note"'));assert(controls.includes('<svg'));
+console.log('PASS: default Note title, icon note controls, cancellation and note-only deletion preserve bookmarks.');

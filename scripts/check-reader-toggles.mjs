@@ -9,7 +9,7 @@ const context={readingBook:0,readingChapter:1,esc:String,
  $:selector=>({value:selector==='#reader-edition'?'kjv':'science'}),
  document:{getElementById:id=>panels.get(id)},
  reading:{name:'Genesis'},ENTRIES:[],books:[],readRef:()=>null};
-vm.createContext(context);
+vm.createContext(context);const noteSource=fs.readFileSync('src/passage.js','utf8');vm.runInContext(noteSource.slice(noteSource.indexOf('function noteActionButtons('),noteSource.indexOf('function deletePersonalNote(')),context);
 const cacheCode=source.slice(source.indexOf('const comparisonCache='),source.indexOf('function scienceDetails'));
 const rendererCode=source.slice(source.indexOf('function comparisonCell('),source.indexOf("document.addEventListener('click'"));
 vm.runInContext(cacheCode+'\nfunction refreshVerseHighlights(){} function comparisonCitations(){return "<div class=summary-citations>Citations</div>"} function scienceDetails(){return ""} function alternativeReadings(){return ""}\n'+rendererCode+'\nthis.render=comparisonCell;this.toggle=selectComparison;this.visible=visibleComparison;this.cache=comparisonCache;',context);
@@ -31,9 +31,9 @@ assert(noteOnly.includes('Note without a bookmark'));
 assert(noteOnly.includes('id="comparison-panel-15-bookmark" aria-labelledby="comparison-tab-15-bookmark" >'));
 vm.runInContext("comparisonRecordSelections.set('bookmark-0:1:14:bookmark',false)",context);
 assert(context.render(14).includes('id="comparison-panel-14-bookmark" aria-labelledby="comparison-tab-14-bookmark" hidden'));
-assert.equal((initial.match(/ hidden/g)||[]).length,3);
+assert.equal((initial.match(/aria-labelledby="comparison-tab-[^"]+" hidden/g)||[]).length,3);
 assert.equal((initial.match(/aria-expanded="true"/g)||[]).length,0);
-assert(!initial.includes('Agreement'));assert(!initial.includes('Background'));
+assert.equal((initial.match(/class="comparison-evidence" hidden/g)||[]).length,3);assert(initial.indexOf('comparison-summary')<initial.indexOf('comparison-evidence'));assert(initial.includes('data-comparison-inspect'));assert(!initial.includes('Agreement'));assert(!initial.includes('Background'));
 for(const mode of ['history','contradictions','science'])assert(initial.includes(`class="agreement comparison-tab ${mode==='contradictions'?mode:'academic'}"`));
 const buttons=['history','contradictions','science'].map(mode=>({dataset:{comparisonVerse:'1',comparisonKey:`${mode}-0`},attributes:{},setAttribute(k,v){this.attributes[k]=v;}}));
 for(const mode of ['history','contradictions','science'])panels.set(`comparison-panel-1-${mode}-0`,{hidden:true,detailsOpen:true});
@@ -103,8 +103,11 @@ const statusNode={};context.$=selector=>selector==='#comparison-status'?statusNo
 context.cache.clear();for(const mode of ['history','contradictions','science','questions'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
 context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'context-only',verse:1,placementRole:'context',tags:['Q'],status:'Context'}]});
 vm.runInContext(source.slice(source.indexOf('function comparisonStatus('),source.indexOf('async function ensureComparisons(')),context);context.comparisonStatus();
-const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(!qFilter.includes('disabled'));assert(qFilter.includes('aria-pressed="true"'));
+const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(!qFilter.includes('disabled'));assert(qFilter.includes('data-brightness="closed"'));assert(qFilter.includes('aria-pressed="false"'));
 context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'key-one',verse:1,placementRole:'key',tags:['Q'],status:'Context'},{id:'key-one',verse:2,placementRole:'key',tags:['Q'],status:'Context'},{id:'context-only',verse:3,placementRole:'context',tags:['Q'],status:'Context'}]});context.comparisonStatus();assert(statusNode.innerHTML.includes('Question: 1 summaries'));
+context.reading.verses=[{n:1},{n:2},{n:3}];context.comparisonStatus();assert(statusNode.innerHTML.includes('data-brightness="empty"'));
+vm.runInContext("categoryFilters.add('Q');comparisonRecordSelections.set('key-one:Q',true)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="open"/));
+vm.runInContext("comparisonRecordSelections.set('key-one:Q',false)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="closed"/));
 console.log('PASS: badges count distinct summary records only; context-only categories remain available without a badge.');
 
 // Temporary selection survives reader rerenders, but never view changes or reload.
