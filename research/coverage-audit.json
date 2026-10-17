@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1495,
+    "evidenceRecords": 1503,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 838,
-    "annotatedVerses": 3995
+    "chaptersWithAnnotations": 841,
+    "annotatedVerses": 4004
   },
   "byBook": [
     {
@@ -76,7 +76,7 @@
       "book": "1 Kings",
       "chapters": 22,
       "chaptersWithAnnotations": 16,
-      "annotatedVerses": 47
+      "annotatedVerses": 48
     },
     {
       "book": "2 Kings",
@@ -345,20 +345,20 @@
     {
       "book": "Titus",
       "chapters": 3,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 4
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 8
     },
     {
       "book": "Philemon",
       "chapters": 1,
       "chaptersWithAnnotations": 1,
-      "annotatedVerses": 14
+      "annotatedVerses": 17
     },
     {
       "book": "Hebrews",
       "chapters": 13,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 9
+      "chaptersWithAnnotations": 4,
+      "annotatedVerses": 10
     },
     {
       "book": "James",
@@ -7592,9 +7592,11 @@
       "annotationIds": [
         "jehoshaphat-high-places-not-taken-away-or-taken-away",
         "jehoshaphat-ships-refused-ahaziah-or-joined-him",
-        "ahab-blood-armour-washed-or-harlots-washed"
+        "ahab-blood-armour-washed-or-harlots-washed",
+        "god-that-cannot-lie-or-the-lord-hath-put-a-lying-spirit-titus-1-2-hebrews-6-18-1-kings-22-23"
       ],
       "annotatedVerses": [
+        23,
         38,
         43,
         48,
@@ -20073,18 +20075,34 @@
       "book": "Titus",
       "bookId": 55,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "grace-mercy-and-peace-or-grace-and-peace-titus-1-4-greek-new-testament",
+        "god-that-cannot-lie-or-the-lord-hath-put-a-lying-spirit-titus-1-2-hebrews-6-18-1-kings-22-23"
+      ],
+      "annotatedVerses": [
+        2,
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Titus",
       "bookId": 55,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "keepers-at-home-or-workers-at-home-titus-2-5-greek-new-testament",
+        "no-evil-thing-to-say-of-you-or-of-us-titus-2-8-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        5,
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -20111,11 +20129,17 @@
       "chapter": 1,
       "annotationIds": [
         "coverage-nt-colossian-network",
-        "coverage-nt-philemon-freedom"
+        "coverage-nt-philemon-freedom",
+        "our-beloved-apphia-or-apphia-the-sister-philemon-1-2-greek-new-testament",
+        "in-you-in-christ-jesus-or-in-us-to-christ-philemon-1-6-greek-new-testament",
+        "we-have-great-joy-or-i-had-much-joy-philemon-1-7-greek-new-testament",
+        "refresh-my-bowels-in-the-lord-or-in-christ-philemon-1-20-greek-new-testament"
       ],
       "annotatedVerses": [
         1,
         2,
+        6,
+        7,
         10,
         12,
         13,
@@ -20125,12 +20149,14 @@
         17,
         18,
         19,
+        20,
         21,
         23,
         24
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -20183,9 +20209,15 @@
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "god-that-cannot-lie-or-the-lord-hath-put-a-lying-spirit-titus-1-2-hebrews-6-18-1-kings-22-23"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
