@@ -32,3 +32,20 @@ assert(expanded.indexOf('verse-citation')<expanded.indexOf('Reasoning:'));assert
 console.log('PASS: Marked expansion shows reference chips before reasoning and keeps assessment metadata in Details.');
 
 const linkedCard=context.markedSummary({...data.records.find(r=>r.relatedPassages),key:"related-test"});assert(linkedCard.includes("Related passages"));
+
+// Empty books keep every category visible, ordered by label; selecting one keeps its empty pane.
+{
+ const box={},cards={};
+ const ctx={state:{verseBookmarks:{},verseNotes:{},passageBookmarks:{},passageNotes:{},notes:{}},ENTRIES:[],markedBookSelection:0,markedChapterSelection:0,markedKind:'all',markedData:{records:[]},markedRenderGeneration:0,renderMarkedContext(){},$:s=>s==='#saved-passages'?box:cards,markedRecordVisible:()=>true,markedCommandmentMatches:()=>true,languageTags:{},comparisonTone:x=>x.mode,categoryIcon:()=>'',markedCommandmentTypeChips:()=>'',hydrateMarkedVerseTexts(){},requestAnimationFrame(){},fitContextCitations(){}};
+ vm.createContext(ctx);
+ vm.runInContext(source.slice(source.indexOf('const MARKED_CATEGORIES='),source.indexOf('function markedChoices')),ctx);
+ vm.runInContext(source.slice(source.indexOf('function renderMarkedResults('),source.indexOf('async function renderMarkedWorkspace(')),ctx);
+ ctx.renderMarkedResults();
+ const labels=[...box.innerHTML.matchAll(/<\/span>([^<]+)<span class="marked-count">0<\/span>/g)].map(m=>m[1]);
+ assert.deepEqual(labels,['Academic','Commandments','Contradictions','Marked','Questions','Translation','Violations']);
+ assert.equal((box.innerHTML.match(/No results for these filters\./g)||[]).length,7);
+ ctx.markedKind='commandments';ctx.renderMarkedResults();
+ assert.equal((box.innerHTML.match(/<details /g)||[]).length,1);
+ assert(box.innerHTML.includes('Commandments<span class="marked-count">0'));
+ console.log('PASS: alphabetical categories and zero-result panes, including a selected empty category.');
+}
