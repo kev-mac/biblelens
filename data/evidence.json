@@ -94717,5 +94717,90 @@
         "quote": "the sons of Benjamin were Belah, and Becher, and Ashbel, Gera, and Naaman, Ehi, and Rosh, Muppim, and Huppim, and Ard"
       }
     ]
+  },
+  {
+    "id": "genesis-1-birds-before-land-animals",
+    "mode": "science",
+    "ref": "Genesis 1:21",
+    "appliesTo": [
+      "Genesis 1:21",
+      "Genesis 1:23",
+      "Genesis 1:24",
+      "Genesis 1:25",
+      "Genesis 1:31"
+    ],
+    "title": "Birds before land animals?",
+    "status": "Disagrees",
+    "summary": "Read as the first physical appearance of these groups, Genesis places birds before land animals. The scientific account places the terrestrial dinosaur ancestors of birds before birds.",
+    "text": "KJV Genesis 1:21: “and every winged fowl after his kind”. KJV Genesis 1:23: “And the evening and the morning were the fifth day.” KJV Genesis 1:24: “Let the earth bring forth the living creature after his kind, cattle, and creeping thing, and beast of the earth after his kind”. KJV Genesis 1:25: “And God made the beast of the earth after his kind”. KJV Genesis 1:31: “And the evening and the morning were the sixth day.” OpenStax Biology 2e describes birds as evolving within theropod dinosaurs; this places their terrestrial ancestors before birds.",
+    "reasoning": "If day five introduces birds and day six introduces all land animals for the first time, the sequence puts birds before the terrestrial animals from which the scientific account derives them. The comparison concerns relative order, not a calculation of the length of a day. It does not require every modern land-animal species to predate every bird species.",
+    "scope": "A literary or theological arrangement, a later appearance of already-existing creatures, or miraculous creation changes the claim being evaluated; none is established by the science source. The KJV categories are ordinary descriptions, not modern taxonomic ranks: the conditional comparison assumes the day-six land animals include terrestrial ancestors of birds. No Hebrew or Greek lexical finding is claimed. Science models natural processes and cannot independently test an unspecified miracle. This does not reconstruct events, assign a date or give a verdict on the whole passage.",
+    "sources": [
+      {
+        "label": "Genesis 1 · KJV creation sequence",
+        "url": "https://ebible.org/eng-kjv/GEN01.htm"
+      },
+      {
+        "label": "OpenStax Biology 2e · 29.5 Birds, Evolution of Birds",
+        "url": "https://openstax.org/books/biology-2e/pages/29-5-birds"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Genesis 1:21",
+        "book": 0,
+        "chapter": 1,
+        "verse": 21
+      },
+      {
+        "label": "Genesis 1:23",
+        "book": 0,
+        "chapter": 1,
+        "verse": 23
+      },
+      {
+        "label": "Genesis 1:24",
+        "book": 0,
+        "chapter": 1,
+        "verse": 24
+      },
+      {
+        "label": "Genesis 1:25",
+        "book": 0,
+        "chapter": 1,
+        "verse": 25
+      },
+      {
+        "label": "Genesis 1:31",
+        "book": 0,
+        "chapter": 1,
+        "verse": 31
+      }
+    ],
+    "checked": "2026-10-17",
+    "sides": [
+      {
+        "label": "A",
+        "ref": "Genesis 1:21",
+        "quote": "and every winged fowl after his kind"
+      },
+      {
+        "label": "B",
+        "ref": "Genesis 1:24",
+        "quote": "cattle, and creeping thing, and beast of the earth after his kind"
+      }
+    ],
+    "fields": [
+      {
+        "branch": "Evolutionary biology",
+        "text": "OpenStax describes birds as descendants of theropod dinosaurs. That ancestry requires those terrestrial ancestors to precede their avian descendants. This conditional comparison does not identify a biblical kind with a particular fossil species.",
+        "sources": [
+          {
+            "label": "OpenStax Biology 2e · 29.5 Birds, Evolution of Birds",
+            "url": "https://openstax.org/books/biology-2e/pages/29-5-birds"
+          }
+        ]
+      }
+    ]
   }
 ]

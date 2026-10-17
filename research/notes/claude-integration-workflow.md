@@ -1,5 +1,9 @@
 # Claude proposal integration contract
 
+## Science and History — direct owner clarification, 2026-10-17
+
+The owner states: “Science (along with History) is now categorized as Academic.” Retain the existing science/history storage modes and their Academic display group. This does not itself require a language-comparison tag or migrate existing T/witness metadata. For the explicitly requested Science research task, Codex may research and integrate one Genesis 1–11 batch; the research exception does not extend to Contradictions, History or Q. The Science prompt's source, quotation, duplicate and interpretation checks remain required.
+
 ## Genesis SAB A — direct owner rulings, 2026-10-16
 
 These instructions were supplied directly by the owner in this integration chat. For new H/G drafts, retain the stored H/G codes and display H as Academic and G as Translation; Q displays as (Unanswered) Questions. Existing T records and witness metadata remain unchanged. This supersedes the automatic H/G-to-T conversion instruction for this batch. The witness-label merge still runs and does not retag unlabelled H/G records.

@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1362,
+    "evidenceRecords": 1363,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
     "chaptersWithAnnotations": 797,
-    "annotatedVerses": 3836
+    "annotatedVerses": 3840
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
       "chaptersWithAnnotations": 38,
-      "annotatedVerses": 145
+      "annotatedVerses": 149
     },
     {
       "book": "Exodus",
@@ -424,6 +424,7 @@
         "god-speaks-as-us-addressees-unstated",
         "fowl-from-the-waters-or-from-the-ground-hebrew-says-the-waters-swarm",
         "woman-made-with-man-or-after-the-animals",
+        "genesis-1-birds-before-land-animals",
         "study-animals",
         "study-plants"
       ],
@@ -442,8 +443,12 @@
         19,
         20,
         21,
+        23,
+        24,
+        25,
         26,
-        27
+        27,
+        31
       ],
       "modes": [
         "science",

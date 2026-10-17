@@ -4,6 +4,8 @@ GitHub `kev-mac/biblelens`, branch `main`, is the canonical development source. 
 
 Before work, fetch GitHub and open the Sites source with the Sites skill. If the Sites mirror has independent new work, compare and integrate it into the canonical checkout first. Preserve dirty files and stashes. Never overwrite a newer Site with an older GitHub snapshot.
 
+Reuse the local Sites mirror at `.release/sites-mirror` when present. Open it with a fresh source credential before each release so Git fetches changes incrementally; do not create a new full-history checkout for every batch. This cache is ignored and is never copied into deployment source or backups.
+
 ## Release
 
 1. Commit reviewed source changes on the canonical checkout. Run `npm run release:prepare -- --ios --install` on Kevin's Mac with the iPhone connected. Omit the flags when only preparing artifacts. The script rejects dirty source and newer upstream GitHub commits, runs checks, builds both bundles from one source state, and optionally builds/installs iOS. Keep credentials outside the repository.
@@ -11,7 +13,7 @@ Before work, fetch GitHub and open the Sites source with the Sites skill. If the
 3. Use the Sites source helper to commit/push/package that exact state, then save and deploy through native Sites tools, preserving the public audience. Push the canonical source to GitHub. Generated dist output is excluded from source control and published only in the release archive. Sites may have a different commit history; `release.json` identifies the identical source contents used for both builds.
 4. Run `npm run release:verify -- /absolute/path/to/Sites-checkout`. It checks the live website, canonical source, mobile assets and deployment mirror against one source fingerprint. Compare the signed app's `public` directory with `www` before installation. A release is incomplete if either platform is stale.
 
-The shared build number is `package.json` → `buildNumber` (currently 219). It is stable across documentation/checkpoint commits. Increment it for the next app release. `scripts/release-info.mjs` supplies this same value to web/mobile release.json and to iOS CFBundleVersion; never derive it from the Sites version or Git commit count.
+The shared build number is `package.json` → `buildNumber` (currently 220). It is stable across documentation/checkpoint commits. Increment it for the next app release. `scripts/release-info.mjs` supplies this same value to web/mobile release.json and to iOS CFBundleVersion; never derive it from the Sites version or Git commit count.
 
 Settings → App version shows the version, build number and source fingerprint on both platforms. The iPhone checks the website and reports mismatches; it cannot install a native update automatically. Website publication does not update an installed iPhone binary. TestFlight/App Store distribution requires a separate Apple distribution setup.
 
