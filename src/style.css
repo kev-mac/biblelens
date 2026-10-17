@@ -1196,3 +1196,15 @@ body #marked-context{width:max-content;margin-left:auto;background:none;transiti
 body #marked-filter-open{width:auto;gap:6px;padding:7px 12px;min-height:36px;font-size:.8rem;background:var(--panel);box-shadow:none;opacity:.85}
 body:not(.marked-filter-visible) #marked-context:not(:focus-within){opacity:0;transform:translateY(-8px);visibility:hidden;pointer-events:none}
 @media(prefers-reduced-motion:reduce){body #marked-context{transition:none}}
+
+/* Clearer type hierarchy and a bottom filter dock on Marked. */
+body .comparison-summary,body #chapter-text .comparison-cell .comparison-summary,body .study-tldr .comparison-summary,body .preview-summary,body .citation-summary{font-size:.95rem!important;font-weight:400;text-shadow:none!important}
+body .comparison-summary :is(p,.message-body,.chat-reasoning){font-size:inherit!important;font-weight:400;text-shadow:none}
+body .comparison-summary :is(b,strong){font-weight:600}
+body #chapter-text .passage-heading h2,body #chapter-text .passage-heading-picker,body #comparison-context-title{font-family:"Inter",system-ui,sans-serif!important}
+body #marked-filter-dialog{width:min(680px,calc(100vw - 16px));max-width:calc(100vw - 16px);padding:16px}
+body #marked-filter-dialog .passage-steps{display:grid;grid-template-columns:1fr 1fr 1.18fr;gap:6px}
+body #marked-filter-dialog .passage-steps button{padding-inline:5px;white-space:normal;overflow-wrap:anywhere}
+body #marked-context{position:fixed;top:auto;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:50%;right:auto;transform:translateX(-50%);margin:0;padding:0;z-index:45}
+body:not(.marked-filter-visible) #marked-context:not(:focus-within){transform:translate(-50%,8px)}
+body #saved-view{padding-bottom:88px}

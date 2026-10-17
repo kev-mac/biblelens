@@ -25,14 +25,14 @@ function markedPrimaryReferences(record){
  }
  return [...byRef.values()].sort((a,b)=>a.book-b.book||a.chapter-b.chapter||a.verse-b.verse);
 }
-function markedPrimaryRows(primary,choice){return '<div class="comparison-sides">'+primary.map(ref=>`<div class="comparison-side">${referenceLink(ref,undefined,choice)}<div>${ref.quotes.length?ref.quotes.map(quote=>`<q>${esc(quote)}</q>`).join(' '):`<q data-marked-verse-text="${ref.book}/${ref.chapter}/${ref.verse}" data-marked-edition="kjv" aria-busy="true">Loading verse text…</q>`}</div></div>`).join('')+'</div>';}
+function markedPrimaryRows(primary,choice){return '<div class="summary-citations">'+primary.map(ref=>referenceLink(ref,undefined,choice)).join('')+'</div>';}
 function markedSummary(record){
  const placement=markedMatchingPlacements(record)[0],selected=markedChoices(record,placement).find(c=>visibleComparison(c)&&(markedKind==='all'||filterCategory(c)===markedKind))||record;
  const group=markedGroup(record),choice={...selected,tag:languageTags[group]?group:undefined,mode:group==='academic'?'science':group};
  const key='marked:'+markedBookSelection+':'+record.key,open=comparisonEvidenceOpen.has(key),id=markedCardId(record),title=record.title||`${books[markedBookSelection].name} ${placement.chapter}:${placement.verse}`;
  const primary=markedPrimaryReferences(record);
  const secondary=roleCitations({...choice,sides:primary.map(ref=>({ref:ref.label,quote:ref.quotes.join(' ')}))});
- return `<article class="marked-comparison-card comparison-panel" id="${id}" data-tone="${comparisonTone(choice)}" tabindex="-1"><div class="comparison-summary" tabindex="0" data-summary-toggle data-evidence-key="${esc(key)}" aria-expanded="${open}" aria-label="Category summary. Double-click or press Enter for details."><h3>${esc(title)}</h3><p>${esc(summaryText(record))}</p><button type="button" class="summary-expand" data-summary-expand aria-label="${open?'Collapse':'Expand'} references and reasoning" aria-expanded="${open}" aria-controls="${id}-evidence"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><button type="button" class="summary-inspect" data-comparison-inspect aria-label="Details & sources" title="Details & sources"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><div class="comparison-evidence" id="${id}-evidence" ${open?'':'hidden'}>${markedPrimaryRows(primary,choice)}${comparisonReasoning(record)?`<p class="summary-reasoning"><b>Reasoning:</b> ${esc(comparisonReasoning(record))}</p>`:''}${record.scope?`<p>${esc(record.scope)}</p>`:''}${secondary}</div></div><details class="comparison-details" hidden><summary>Details & sources</summary><p>${esc(record.text||record.summary)}</p>${scienceDetails(record)}${record.scope?`<p>${esc(record.scope)}</p>`:''}<div class="comparison-sources">${(record.sources||[]).map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')}</div></details></article>`;
+ return `<article class="marked-comparison-card comparison-panel" id="${id}" data-tone="${comparisonTone(choice)}" tabindex="-1"><div class="comparison-summary" tabindex="0" data-summary-toggle data-evidence-key="${esc(key)}" aria-expanded="${open}" aria-label="Category summary. Double-click or press Enter for details."><h3>${esc(title)}</h3><p>${esc(summaryText(record))}</p><button type="button" class="summary-expand" data-summary-expand aria-label="${open?'Collapse':'Expand'} references and reasoning" aria-expanded="${open}" aria-controls="${id}-evidence"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><button type="button" class="summary-inspect" data-comparison-inspect aria-label="Details & sources" title="Details & sources"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><div class="comparison-evidence" id="${id}-evidence" ${open?'':'hidden'}>${markedPrimaryRows(primary,choice)}${secondary}${comparisonReasoning(record)?`<p class="summary-reasoning"><b>Reasoning:</b> ${esc(comparisonReasoning(record))}</p>`:''}</div></div><details class="comparison-details" hidden><summary>Details & sources</summary><p>${esc(record.text||record.summary)}</p>${scienceDetails(record)}${record.scope?`<p>${esc(record.scope)}</p>`:''}<div class="comparison-sources">${(record.sources||[]).map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')}</div></details></article>`;
 }
 function renderMarkedContext(){
  const summary=[books[markedBookSelection].name,markedChapterSelection?String(markedChapterSelection):'',markedKind==='all'?'':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1]].filter(Boolean).join(' · ');
@@ -97,14 +97,14 @@ renderPassageSaved=function(){renderSavedPassagesLegacy();if(view==='saved')rend
 window.addEventListener('viewchange',ev=>{if(ev.detail==='saved')renderMarkedWorkspace();else markedWorkspaceGeneration++;});
 if(view==='saved')renderMarkedWorkspace();
 
-// Reveal filters at the top and when the reader reverses direction toward the top.
+// Match the Read category menu: reveal at the bottom while scrolling toward the top.
 (() => {
  let lastY=window.scrollY;
- function reveal(){document.body.classList.add('marked-filter-visible');}
+ function reveal(){document.body.classList.toggle('marked-filter-visible',view==='saved'&&window.scrollY>=20);}
  window.addEventListener('scroll',()=>{
   const y=Math.max(0,window.scrollY),delta=y-lastY;
   if(view!=='saved'){lastY=y;return;}
-  if(y<20)reveal();
+  if(y<20)document.body.classList.remove('marked-filter-visible');
   else if(Math.abs(delta)>=4){if(delta>0&&document.activeElement===$('#marked-filter-open'))document.activeElement.blur();document.body.classList.toggle('marked-filter-visible',delta<0);}
   if(Math.abs(delta)>=4||y<20)lastY=y;
  },{passive:true});
