@@ -47,4 +47,15 @@ Build and full npm check pass, including scripts/check-chat-reliability.mjs and 
 
 New totals: 1,362 evidence records plus 6 built-in studies; 797 annotated chapters across all 66 books; 3,836 unique annotated verses; 5,365 evidence placements (1,800 key cards and 3,565 context pointers). Annotation presence is not exhaustive review.
 
-Release preparation, backup, publication and hosted verification are recorded below when complete.
+## Release completed (2026-10-17, America/New_York)
+
+Canonical application checkpoint: `6d2a8c24658df8f9832a5698308dde64c5fd5fac`, pushed to GitHub main. GitHub origin now uses the repository’s canonical moved address, https://github.com/kev-mac/biblelens.git. Backup: BibleLens-checkpoint-219.zip; final evidence checkpoint backup is BibleLens-checkpoint-220.zip.
+
+Public Sites version 198, source commit `c26349146719ee996b6bcd87bfd773daf7a10b5b`, deployed successfully at https://scripture-lens.kvn-mcgwn.chatgpt.site. Deployment ID: `appgdep_6ad2f7a0fc488191bf5b5686d9926ed7`. Existing public audience preserved. Source fingerprint: `ac3756203a48e93c64c1738041086b26b442c857d75b4ffebee11a0c54f47f3d`.
+
+`npm run release:verify -- <Sites-checkout>` passed: live site, Sites application source, www/mobile assets and canonical source match. The native cache still referenced the old ScriptureLens path; a fresh .release/ios-genesis-219 cache produced a successful signed build, without changing application source. All 27 signed App.app/public files matched www byte-for-byte before installation. iPhone installation succeeded. Launch was refused because the device was locked; no native visual-runtime claim is made.
+
+Hosted checks confirmed: both Isaac key cards returned for Genesis 22:2; new fowl record opened from Genesis 1:20; Academic, Translation and (Unanswered) Questions controls/accessibility labels present; citation preview text exactly equals packaged KJV Genesis 1:20; rendered paragraph preserves source-order Hebrew code points and both Brenton Greek excerpts. NETS remains a paraphrase and source link; its PDF was never downloaded. Screenshots and machine-readable hosted checks are in `research/notes/genesis-sab-a-2026-10-17/`. No live generated-answer correctness is claimed.
+
+The Sites checkout’s Git refresh was unusually slow. Its staged source was preserved, accidental filesystem permission changes were reconciled against canonical Git modes, and temporary assume-unchanged flags allowed the helper to finish its own commit/push/package flow; those flags were cleared afterwards. The prepared dist was never rebuilt separately in Sites.
+
