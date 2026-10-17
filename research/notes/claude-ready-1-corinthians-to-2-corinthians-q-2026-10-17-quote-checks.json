@@ -1,0 +1,28 @@
+{
+  "batch": "1-corinthians-to-2-corinthians-q",
+  "completeBatch": true,
+  "checked": "2026-10-17T06:36:15.584Z",
+  "draftHashes": {
+    "1-corinthians-to-2-corinthians-q-records.json": "a8d3b1cfeee32a4fe3fecc431f63c2b45875ee954517cd1a5a10da89c77bfaa5",
+    "1-corinthians-to-2-corinthians-q-notes.md": "3835827e90c23a24b413934781e47a3902e8823f7072c3d0d4e7f415709a09a1"
+  },
+  "records": 3,
+  "sourcePages": 50,
+  "sourceErrors": [],
+  "sideChecks": 6,
+  "sideErrors": [],
+  "kjvQuotedFragments": 59,
+  "originalLanguageFragments": 157,
+  "originalLanguageQuoteErrors": [
+    {
+      "id": "because-of-the-angels-what-is-meant-1-corinthians-11-10",
+      "action": "corrected",
+      "detail": "Draft reasoning used nominative lemma ἄγγελοι; printed verse has accusative ἀγγέλους. Integrated wording now identifies the printed inflected form."
+    }
+  ],
+  "addressErrors": [],
+  "duplicateIds": [],
+  "existingEvidenceCount": 1366,
+  "builtInStudyReview": "Reviewed all six ENTRIES studies and existing evidence; shared verses concern separately scoped questions or edition comparisons, and no proposal duplicates an existing finding.",
+  "interpretationLimits": "Edition-specific, reconciliation, and Q limits retained. Annotation presence is not exhaustive review."
+}

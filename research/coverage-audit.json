@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1366,
+    "evidenceRecords": 1413,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 798,
-    "annotatedVerses": 3852
+    "chaptersWithAnnotations": 814,
+    "annotatedVerses": 3899
   },
   "byBook": [
     {
@@ -250,7 +250,7 @@
       "book": "Matthew",
       "chapters": 28,
       "chaptersWithAnnotations": 25,
-      "annotatedVerses": 78
+      "annotatedVerses": 79
     },
     {
       "book": "Mark",
@@ -274,7 +274,7 @@
       "book": "Acts",
       "chapters": 28,
       "chaptersWithAnnotations": 26,
-      "annotatedVerses": 84
+      "annotatedVerses": 86
     },
     {
       "book": "Romans",
@@ -285,14 +285,14 @@
     {
       "book": "1 Corinthians",
       "chapters": 16,
-      "chaptersWithAnnotations": 4,
-      "annotatedVerses": 17
+      "chaptersWithAnnotations": 14,
+      "annotatedVerses": 48
     },
     {
       "book": "2 Corinthians",
       "chapters": 13,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 9
+      "chaptersWithAnnotations": 8,
+      "annotatedVerses": 22
     },
     {
       "book": "Galatians",
@@ -16756,12 +16756,14 @@
         "the-end-of-the-world-or-the-completion-of-the-age-matthew-13-39-24-3-28-20-greek-new-testament",
         "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1",
         "neither-said-they-any-thing-to-any-man-or-did-run-to-bring-his-disciples-word-mark-16-8-matthew-28-8",
-        "they-held-him-by-the-feet-or-touch-me-not-matthew-28-9-john-20-17"
+        "they-held-him-by-the-feet-or-touch-me-not-matthew-28-9-john-20-17",
+        "the-eleven-disciples-or-then-of-the-twelve-matthew-28-16-1-corinthians-15-5"
       ],
       "annotatedVerses": [
         1,
         8,
         9,
+        16,
         20
       ],
       "modes": [
@@ -18177,13 +18179,15 @@
         "then-had-the-churches-rest-or-the-church-had-peace-acts-9-31-greek-new-testament",
         "stood-speechless-hearing-a-voice-or-they-heard-not-the-voice-acts-9-7-acts-22-9",
         "the-men-stood-speechless-or-we-were-all-fallen-to-the-earth-acts-9-7-acts-26-14",
-        "barnabas-brought-him-to-the-apostles-or-other-of-the-apostles-saw-i-none-acts-9-27-galatians-1-19"
+        "barnabas-brought-him-to-the-apostles-or-other-of-the-apostles-saw-i-none-acts-9-27-galatians-1-19",
+        "the-jews-took-counsel-to-kill-saul-or-the-governor-under-aretas-kept-the-city-acts-9-23-2-corinthians-11-32"
       ],
       "annotatedVerses": [
         5,
         6,
         7,
         20,
+        23,
         27,
         31
       ],
@@ -18326,11 +18330,13 @@
       "chapter": 17,
       "annotationIds": [
         "hath-made-of-one-blood-or-of-one-acts-17-26-greek-new-testament",
-        "that-they-should-seek-the-lord-or-seek-god-acts-17-27-greek-new-testament"
+        "that-they-should-seek-the-lord-or-seek-god-acts-17-27-greek-new-testament",
+        "among-the-which-was-dionysius-the-areopagite-or-the-firstfruits-of-achaia-acts-17-34-1-corinthians-16-15"
       ],
       "annotatedVerses": [
         26,
-        27
+        27,
+        34
       ],
       "modes": [
         "contradictions"
@@ -18839,27 +18845,53 @@
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-thank-god-that-i-baptized-none-or-i-thank-that-i-baptized-none-1-corinthians-1-14-greek-new-testament",
+        "i-had-baptized-in-mine-own-name-or-ye-were-baptized-in-my-name-1-corinthians-1-15-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        14,
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "enticing-words-of-mans-wisdom-or-persuasive-words-of-wisdom-1-corinthians-2-4-greek-new-testament",
+        "which-the-holy-ghost-teacheth-or-which-the-spirit-teacheth-1-corinthians-2-13-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        4,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "envying-and-strife-and-divisions-or-envying-and-strife-1-corinthians-3-3-greek-new-testament",
+        "are-ye-not-carnal-or-are-ye-not-men-1-corinthians-3-4-greek-new-testament",
+        "who-then-is-paul-and-who-is-apollos-or-what-then-is-apollos-1-corinthians-3-5-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18875,18 +18907,34 @@
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "not-so-much-as-named-among-the-gentiles-or-not-even-among-the-gentiles-1-corinthians-5-1-greek-new-testament",
+        "in-the-name-of-our-lord-jesus-christ-or-in-the-name-of-the-lord-jesus-1-corinthians-5-4-greek-new-testament",
+        "christ-our-passover-is-sacrificed-for-us-or-christ-our-passover-was-sacrificed-1-corinthians-5-7-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        1,
+        4,
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-in-your-spirit-which-are-gods-or-glorify-god-in-your-body-1-corinthians-6-20-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18894,15 +18942,22 @@
       "bookId": 45,
       "chapter": 7,
       "annotationIds": [
-        "coverage-nt-divorce"
+        "coverage-nt-divorce",
+        "due-benevolence-or-the-debt-1-corinthians-7-3-greek-new-testament",
+        "to-fasting-and-prayer-or-to-prayer-1-corinthians-7-5-greek-new-testament",
+        "sanctified-by-the-husband-or-sanctified-in-the-brother-1-corinthians-7-14-greek-new-testament",
+        "the-wife-is-bound-by-the-law-or-the-wife-is-bound-1-corinthians-7-39-greek-new-testament"
       ],
       "annotatedVerses": [
+        3,
+        5,
         10,
         11,
         12,
         13,
         14,
-        15
+        15,
+        39
       ],
       "modes": [
         "contradictions"
@@ -18913,9 +18968,15 @@
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "some-with-conscience-of-the-idol-or-some-with-the-custom-of-the-idol-1-corinthians-8-7-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18923,7 +18984,8 @@
       "bookId": 45,
       "chapter": 9,
       "annotationIds": [
-        "deuteronomy-ox-rule-reuse"
+        "deuteronomy-ox-rule-reuse",
+        "to-them-that-are-under-the-law-as-under-the-law-or-not-being-myself-under-the-law-1-corinthians-9-20-greek-new-testament"
       ],
       "annotatedVerses": [
         9,
@@ -18932,10 +18994,12 @@
         12,
         13,
         14,
-        15
+        15,
+        20
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -18944,10 +19008,15 @@
       "bookId": 45,
       "chapter": 10,
       "annotationIds": [
-        "numbers-peor-death-count"
+        "numbers-peor-death-count",
+        "neither-let-us-tempt-christ-or-neither-let-us-tempt-the-lord-1-corinthians-10-9-greek-new-testament",
+        "offered-in-sacrifice-unto-idols-or-offered-in-sacrifice-1-corinthians-10-28-greek-new-testament",
+        "for-the-earth-is-the-lords-and-the-fulness-thereof-or-ends-at-conscience-sake-1-corinthians-10-28-greek-new-testament"
       ],
       "annotatedVerses": [
-        8
+        8,
+        9,
+        28
       ],
       "modes": [
         "contradictions"
@@ -18959,15 +19028,23 @@
       "bookId": 45,
       "chapter": 11,
       "annotationIds": [
-        "coverage-nt-women-speaking"
+        "coverage-nt-women-speaking",
+        "take-eat-this-is-my-body-which-is-broken-for-you-or-this-is-my-body-which-is-for-you-1-corinthians-11-24-greek-new-testament",
+        "eateth-and-drinketh-unworthily-or-eateth-and-drinketh-judgment-to-himself-1-corinthians-11-29-greek-new-testament",
+        "every-woman-that-prayeth-or-prophesieth-or-let-your-women-keep-silence-in-the-churches-1-corinthians-11-5-1-corinthians-14-34",
+        "because-of-the-angels-what-is-meant-1-corinthians-11-10"
       ],
       "annotatedVerses": [
         4,
         5,
-        6
+        6,
+        10,
+        24,
+        29
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -18975,9 +19052,15 @@
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "covet-earnestly-the-best-gifts-or-the-greater-gifts-1-corinthians-12-31-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -18993,36 +19076,76 @@
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "let-your-women-keep-silence-or-let-the-women-keep-silence-1-corinthians-14-34-greek-new-testament",
+        "let-him-be-ignorant-or-he-is-not-recognized-1-corinthians-14-38-greek-new-testament",
+        "every-woman-that-prayeth-or-prophesieth-or-let-your-women-keep-silence-in-the-churches-1-corinthians-11-5-1-corinthians-14-34"
+      ],
+      "annotatedVerses": [
+        34,
+        38
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "there-is-a-natural-body-or-if-there-is-a-natural-body-1-corinthians-15-44-greek-new-testament",
+        "the-second-man-is-the-lord-from-heaven-or-the-second-man-from-heaven-1-corinthians-15-47-greek-new-testament",
+        "o-death-where-is-thy-sting-o-grave-where-is-thy-victory-or-o-death-where-is-thy-victory-1-corinthians-15-55-greek-new-testament",
+        "the-eleven-disciples-or-then-of-the-twelve-matthew-28-16-1-corinthians-15-5",
+        "who-are-they-which-are-baptized-for-the-dead-1-corinthians-15-29"
+      ],
+      "annotatedVerses": [
+        5,
+        29,
+        44,
+        47,
+        55
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Corinthians",
       "bookId": 45,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "if-any-man-love-not-the-lord-jesus-christ-or-if-any-man-love-not-the-lord-1-corinthians-16-22-greek-new-testament",
+        "among-the-which-was-dionysius-the-areopagite-or-the-firstfruits-of-achaia-acts-17-34-1-corinthians-16-15"
+      ],
+      "annotatedVerses": [
+        15,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Corinthians",
       "bookId": 46,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-doth-deliver-or-and-will-deliver-2-corinthians-1-10-greek-new-testament",
+        "simplicity-and-godly-sincerity-or-holiness-and-sincerity-of-god-2-corinthians-1-12-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        10,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -19047,27 +19170,47 @@
       "book": "2 Corinthians",
       "bookId": 46,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-light-of-the-knowledge-in-the-face-of-jesus-christ-or-in-the-face-of-christ-2-corinthians-4-6-greek-new-testament",
+        "the-dying-of-the-lord-jesus-or-the-dying-of-jesus-2-corinthians-4-10-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        6,
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Corinthians",
       "bookId": 46,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "all-things-are-become-new-or-new-things-have-come-2-corinthians-5-17-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Corinthians",
       "bookId": 46,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ye-are-the-temple-of-the-living-god-or-we-are-the-temple-of-the-living-god-2-corinthians-6-16-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -19084,9 +19227,11 @@
       "bookId": 46,
       "chapter": 8,
       "annotationIds": [
-        "coverage-nt-collection"
+        "coverage-nt-collection",
+        "that-we-would-receive-the-gift-or-the-gift-and-fellowship-2-corinthians-8-4-greek-new-testament"
       ],
       "annotatedVerses": [
+        4,
         12,
         13,
         14,
@@ -19096,7 +19241,8 @@
         21
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -19123,14 +19269,19 @@
       "bookId": 46,
       "chapter": 11,
       "annotationIds": [
-        "deuteronomy-lash-limit-and-paul"
+        "deuteronomy-lash-limit-and-paul",
+        "our-lord-jesus-christ-which-is-blessed-or-the-lord-jesus-2-corinthians-11-31-greek-new-testament",
+        "the-jews-took-counsel-to-kill-saul-or-the-governor-under-aretas-kept-the-city-acts-9-23-2-corinthians-11-32"
       ],
       "annotatedVerses": [
         24,
-        25
+        25,
+        31,
+        32
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -19138,18 +19289,35 @@
       "book": "2 Corinthians",
       "bookId": 46,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "it-is-not-expedient-for-me-doubtless-to-glory-or-it-is-necessary-to-boast-2-corinthians-12-1-greek-new-testament",
+        "again-think-ye-that-we-excuse-ourselves-or-long-ago-think-ye-2-corinthians-12-19-greek-new-testament",
+        "what-was-the-thorn-in-the-flesh-2-corinthians-12-7"
+      ],
+      "annotatedVerses": [
+        1,
+        7,
+        19
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Corinthians",
       "bookId": 46,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "now-i-pray-to-god-or-now-we-pray-to-god-2-corinthians-13-7-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
