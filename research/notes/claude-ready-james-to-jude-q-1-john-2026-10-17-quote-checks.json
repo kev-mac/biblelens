@@ -1,0 +1,30 @@
+{
+  "batch": "claude-ready-james-to-jude-q-1-john-2026-10-17",
+  "completeBatch": true,
+  "booksCovered": "1 John Q",
+  "checked": "2026-10-17T08:48:42.180Z",
+  "draftHashes": {
+    "james-to-jude-records.json": "e296521a51397734dc76920923081365fb4a1ccc6c8edd22408bb7f2de524d48",
+    "james-to-jude-notes.md": "f596915da210f25f64e065e0b76f239de897fd32b5f3aa3cd42835c2bf76a10c",
+    "james-to-jude-q-records.json": "a34cbcbf8e5da878a4a8f502a166ba24db75c8ec33df319a3685a85295b2cbbd",
+    "james-to-jude-q-notes.md": "537182030fd1f5f676974b8b0d2234a325edf6436dbef619fe57c6ab9ad2c477"
+  },
+  "sourceErrors": [],
+  "sideErrors": [],
+  "kjvQuoteErrors": [],
+  "originalLanguageQuoteErrors": [],
+  "addressErrors": [],
+  "duplicateIds": [],
+  "pendingRecords": 0,
+  "existingEvidenceCount": 1559,
+  "builtInStudyReview": "All six built-in ENTRIES studies were reviewed. None duplicates these 2 Peter or 1 John records. The 2 Peter 3:3, 3:9 and 3:10 records share verses with coverage-nt-peter-delay but address separate Greek-edition wording differences.",
+  "interpretationLimits": "Edition-specific limits are retained; the served TR and Tischendorf editions are not treated as a critical apparatus or proof of the original reading. The Balaam record allows that Bosor and Beor may be forms of one name. The Q record names possible readings without selecting one. Annotation presence is not exhaustive review.",
+  "records": 1,
+  "accepted": 1,
+  "corrected": 0,
+  "held": 0,
+  "sourcePages": 2,
+  "sideChecks": 1,
+  "kjvQuotedFragments": 2,
+  "originalLanguageFragments": 1
+}
