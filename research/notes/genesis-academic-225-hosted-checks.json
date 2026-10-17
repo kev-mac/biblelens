@@ -1,0 +1,65 @@
+{
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 225,
+    "sourceHash": "cbec340ea18f5d75aeacfeb8dfe7068a0ff3b437b642fc64775c555e6a98f57c"
+  },
+  "results": [
+    {
+      "id": "genesis-7-worldwide-flood",
+      "keyVerse": "Genesis 7:19",
+      "status": "Disagrees",
+      "passed": true
+    },
+    {
+      "id": "genesis-9-humanity-from-noahs-family",
+      "keyVerse": "Genesis 9:19",
+      "status": "Disagrees",
+      "passed": true
+    },
+    {
+      "id": "genesis-1-creation-and-earth-age",
+      "keyVerse": "Genesis 1:31",
+      "status": "Disagrees",
+      "passed": true
+    },
+    {
+      "id": "genesis-30-striped-rods-and-inheritance",
+      "keyVerse": "Genesis 30:39",
+      "status": "Disagrees",
+      "passed": true
+    },
+    {
+      "id": "genesis-5-patriarchal-lifespans",
+      "keyVerse": "Genesis 5:27",
+      "status": "Context",
+      "passed": true
+    },
+    {
+      "id": "genesis-24-patriarchal-camels",
+      "keyVerse": "Genesis 24:10",
+      "status": "Context",
+      "passed": true
+    },
+    {
+      "id": "genesis-26-patriarchal-philistines",
+      "keyVerse": "Genesis 26:1",
+      "status": "Context",
+      "passed": true
+    },
+    {
+      "id": "genesis-41-joseph-famine-evidence",
+      "keyVerse": "Genesis 41:54",
+      "status": "Context",
+      "passed": true
+    },
+    {
+      "id": "genesis-47-joseph-land-acquisition",
+      "keyVerse": "Genesis 47:20",
+      "status": "Context",
+      "passed": true
+    }
+  ],
+  "liveUi": "Flood card, references, details dialog and all five scientific fields visually verified; Joseph summary visually verified in local preview.",
+  "nativeRuntime": "Installed successfully; automatic launch denied because iPhone was locked."
+}
