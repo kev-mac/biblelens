@@ -1,0 +1,29 @@
+{
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 220,
+    "sourceHash": "c7a2d355ab1ccc8e98f4ab309a2db9e5e8b716f996ec99690bd189c09a032f4b"
+  },
+  "keyRecord": "genesis-1-birds-before-land-animals",
+  "keyVerse": 21,
+  "placementRole": "key",
+  "hostedKJVMatchesPackaged": true,
+  "kjv": "And God created great whales, and every living creature that moveth, which the waters brought forth abundantly, after their kind, and every winged fowl after his kind: and God saw that it was good.",
+  "sources": [
+    {
+      "label": "Genesis 1 · KJV creation sequence",
+      "url": "https://ebible.org/eng-kjv/GEN01.htm"
+    },
+    {
+      "label": "OpenStax Biology 2e · 29.5 Birds, Evolution of Birds",
+      "url": "https://openstax.org/books/biology-2e/pages/29-5-birds"
+    }
+  ],
+  "browser": {
+    "keyCardOpened": true,
+    "academicLabel": true,
+    "citationPreviewMatchesPackaged": true,
+    "scientificSourceTitle": "29.5 Birds - Biology 2e | OpenStax",
+    "kjvSourceTitle": "King James Version + Apocrypha Genesis 1"
+  }
+}

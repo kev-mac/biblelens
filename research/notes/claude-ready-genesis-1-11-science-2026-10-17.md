@@ -23,3 +23,15 @@ Witness merge: 271 applied, 0 retagged, 6 pending retained. No verse-roles.json 
 Before changes, GitHub main b5b03b95c9d037c203041a56db7b27fa4b054e57 and Sites dd93285b31e953e1853ff2b09ece67c9bec4efe7 matched application source hash 05278d03cfb6f4eec2ad6f84663fedcb2ac3aa11671052c571efe7ca0acfa8ae (build 219). No independent application changes required reconciliation. Preparing build 220 from one canonical source state; publication and native verification results will be appended after completion. No live generated-answer correctness is claimed.
 
 The initial Sites checkout fetched full history. Retain it at .release/sites-mirror after publication for incremental future fetches. Credentials remain outside saved source and notes. The pre-existing untracked research prompt and both prior stashes are preserved.
+
+## Release completed
+
+Canonical application checkpoint: 4d01fa924e8f9dcb53be5e05d78b9e284757fc60, pushed to GitHub main. Backups: outputs/BibleLens-checkpoint-221.zip and -222.zip; final evidence backup is -223.zip. Public Sites version 200, source commit 250cb682e1261f846260ceb7b8500060d9909c64, deployed successfully at https://scripture-lens.kvn-mcgwn.chatgpt.site; deployment appgdep_6ad306d565ec81919856c86feb1ca31c. Public audience preserved.
+
+Build 220 source fingerprint: c7a2d355ab1ccc8e98f4ab309a2db9e5e8b716f996ec99690bd189c09a032f4b. release:prepare -- --ios passed full application, sync, release, mobile and build-time reliability checks and produced a successfully signed native build. release:verify passed for live site, canonical source, Sites mirror and mobile release assets after publication/installation. iPhone installation and process launch both succeeded; no native visual-runtime inspection is claimed.
+
+Platform file-set difference: all 27 www files match signed App.app/public byte-for-byte, with no missing or differing shared file. Signed public additionally contains two zero-byte Capacitor-generated files, cordova.js and cordova_plugins.js. The directories are therefore not identical; signed-assets.json explicitly records wholeDirectoryMatch=false. Release fingerprints match despite those two native-only shims. The native code signature passed verification.
+
+Hosted browser checks: opened the new Academic card from Genesis 1:21; expanded references and reasoning; checked the citation preview against the exact packaged full KJV verse; opened both the KJV and OpenStax source URLs and verified page titles. Screenshot: genesis-1-11-science-2026-10-17/citation-preview.jpg. hosted-checks.json records these results. No live generated-answer correctness is claimed.
+
+Retained the clean published Sites checkout at /Users/kevin/git/BibleLens/.release/sites-mirror for incremental future fetches. RELEASING.md documents reuse. Research control files were not changed. The original untracked Science prompt was temporarily preserved in a task-specific stash during clean-source release preparation, then restored; the two pre-existing stashes remain intact. One batch completed; no second batch started.

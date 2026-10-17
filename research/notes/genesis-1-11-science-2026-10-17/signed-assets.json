@@ -1,0 +1,51 @@
+{
+  "sharedAssetsMatch": true,
+  "wholeDirectoryMatch": false,
+  "sharedFileCount": 27,
+  "missing": [],
+  "different": [],
+  "nativeOnly": [
+    {
+      "file": "cordova.js",
+      "bytes": 0
+    },
+    {
+      "file": "cordova_plugins.js",
+      "bytes": 0
+    }
+  ],
+  "files": {
+    "mobile.js": "044066a398167f4b0dce5a2b90d9dc1baf6ea1db0585b02fb9179ae3e723a02e",
+    "index.html": "08dd3df674ca17f965ba2b29853185214212c43997b4f1956a1aa3dd3be404a1",
+    "sync-core.js": "3f96e08a3e575cfcbc0ef67d187425b6e238ebfca68cb34a110d5b3608f84134",
+    "native-licenses.txt": "f2eb8302569e44d3ea7d5a25512eae533b1d47fc6fc024aea04e3c7804ba53be",
+    "sync.js": "5921872ce0a4ff87ab3e3ef3f3b9f74c2a62d0d77de75bfe5ae416407046b41c",
+    "citations.js": "aee67c1b31af18b8463a72cbe3f7c14e1c97919c3ff9143db714f636076604da",
+    "red-letters.js": "8715794297ede2c3d0130b0623d91f0ed7cf4c59b5cdc4a479206f52f25928e5",
+    "device-api-worker.js": "71a186ba79580db41a4eb5ed0c09846a3b10fd2db1a28d98b72016ca349b2d0f",
+    "passage.js": "47bfe6d1e772fef1de110ccaf8cf492f039b70d3a5b2d9363f22417450c29dca",
+    "release.js": "01d24a4ac9594a35cf239b10577ed58ad4f421fd20e521726d3467bbcf2ffdb8",
+    "marked.js": "226ba89d3acc03c5ea2ff0cf977ecf7c159b9b017d67ec42fd9882dbb0a301e6",
+    "device-bootstrap.js": "8d8d08bfa586d0b8597018e50d2768a5ec677eefbb336208b6e4ca017aeb0b14",
+    "release.json": "7c3996efa6129c183260e31b26714076bfb87a27321d435bdcf98e0a62f8acb1",
+    "search-licenses.txt": "0187486544f166df1de7ff92a3a193237b230c89c7953323ef07660c0526e898",
+    "device-engine.js": "27933bee8957fea5053aacb3d09c9b1c9008eb6c5f3c954fdec2f04924fc1469",
+    "data.js": "0ea56edd09d9d997e9485093ccb5d1ea3772b4f7d1a7b79944395b69592f7cab",
+    "style.css": "648104afa8b9a85c9d6815d34e412f98d73894207f0bbefe19b3739a63724c4f",
+    "reader.js": "24c3e8e095f79671edbf2d72e2a86b70c7d63f329d9d05e178e32c8b719db08a",
+    "fonts.css": "de8016558b718bd93af08113e6e4a3fc4b6e1c72dbb324bbece6725ef5a38e67",
+    "app.js": "79fc8efdeef45ca7c602c2ee07af8a597404804fd1a0540fa96e6e40ce785ed5",
+    "reference/THEOGRAPHIC-LICENSE.txt": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "reference/provenance.json": "1892efa252404a5d5e2ae3d3104ee185474da41fa4a406f031ecd11cb1349ffa",
+    "reference/notices.json": "89a3081818ddd92922680950176e75f74f08c8a5e96ce31b3a5de26984bb3a0e",
+    "reference/README.md": "ce470e95662ab40131d2eeab8fabd591ea82a7487ad0d42c7c847bb5627d2aac",
+    "reference/THEOGRAPHIC-SOURCES.md": "0d50db3748a7761038ca2c1c528f5e554c63fcba48cedae3369de1d6f0b188ab",
+    "reference/people.json": "f42c40185fe8d78fd95f5dd8d751447f7be65e2d0e632abb5a376231e0b7dbe5",
+    "reference/topics.json": "9494b8102ab8828c63b9326af27dd688271a4c5ec573b07adb8ce72951fc0a67"
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 220,
+    "sourceHash": "c7a2d355ab1ccc8e98f4ab309a2db9e5e8b716f996ec99690bd189c09a032f4b"
+  }
+}
