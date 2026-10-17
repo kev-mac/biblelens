@@ -35,7 +35,9 @@ function markedSummary(record){
  return `<article class="marked-comparison-card comparison-panel" id="${id}" data-tone="${comparisonTone(choice)}" tabindex="-1"><div class="comparison-summary" tabindex="0" data-summary-toggle data-evidence-key="${esc(key)}" aria-expanded="${open}" aria-label="Category summary. Double-click or press Enter for details."><h3>${esc(title)}</h3><p>${esc(summaryText(record))}</p><button type="button" class="summary-expand" data-summary-expand aria-label="${open?'Collapse':'Expand'} references and reasoning" aria-expanded="${open}" aria-controls="${id}-evidence"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><button type="button" class="summary-inspect" data-comparison-inspect aria-label="Details & sources" title="Details & sources"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><div class="comparison-evidence" id="${id}-evidence" ${open?'':'hidden'}>${markedPrimaryRows(primary,choice)}${comparisonReasoning(record)?`<p class="summary-reasoning"><b>Reasoning:</b> ${esc(comparisonReasoning(record))}</p>`:''}${record.scope?`<p>${esc(record.scope)}</p>`:''}${secondary}</div></div><details class="comparison-details" hidden><summary>Details & sources</summary><p>${esc(record.text||record.summary)}</p>${scienceDetails(record)}${record.scope?`<p>${esc(record.scope)}</p>`:''}<div class="comparison-sources">${(record.sources||[]).map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')}</div></details></article>`;
 }
 function renderMarkedContext(){
- $('#marked-context').innerHTML=`<button type="button" id="marked-filter-open" class="secondary" aria-haspopup="dialog" aria-label="Filter marked verses and categories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg><span>${esc(books[markedBookSelection].name)} · ${markedChapterSelection?'Chapter '+markedChapterSelection:'All chapters'} · ${MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1]}</span></button>`;
+ const summary=[books[markedBookSelection].name,markedChapterSelection?String(markedChapterSelection):'',markedKind==='all'?'':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1]].filter(Boolean).join(' · ');
+ const context=$('#header-context');context.dataset.marked=summary;if(view==='saved'){context.textContent=summary;context.parentElement?.setAttribute('aria-label',summary+' — Filter');}
+ $('#marked-context').innerHTML=`<button type="button" id="marked-filter-open" class="secondary" aria-haspopup="dialog" aria-controls="marked-filter-dialog" aria-label="Filter marked verses and categories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg><span>Filter</span></button>`;
  $('#marked-filter-open').onclick=openMarkedFilters;
 }
 function renderMarkedResults(){
@@ -70,13 +72,13 @@ async function renderMarkedWorkspace(){
 function openMarkedFilters(){
  let dialog=$('#marked-filter-dialog');if(!dialog){dialog=document.createElement('dialog');dialog.id='marked-filter-dialog';dialog.className='glass-dialog';dialog.setAttribute('aria-labelledby','marked-filter-title');document.body.append(dialog);}
  let chosen=markedBookSelection,chapter=markedChapterSelection,kind=markedKind,testament=chosen<39?'old':'new',step='book';
- dialog.innerHTML=`<div class="sheet-heading"><h2 id="marked-filter-title">Filter Marked</h2><button type="button" data-marked-filter-close aria-label="Close filters">×</button></div><nav class="passage-steps" aria-label="Filter selection"><button type="button" data-marked-step="book"></button><button type="button" data-marked-step="chapter"></button><button type="button" data-marked-step="category"></button></nav><fieldset data-marked-pane="book"><legend>Book</legend><div class="passage-testaments"><button type="button" data-marked-testament="old">Old Testament</button><button type="button" data-marked-testament="new">New Testament</button></div><div class="marked-book-grid"></div></fieldset><fieldset data-marked-pane="chapter" hidden><legend>Chapter</legend><div class="marked-chapter-grid"></div></fieldset><fieldset data-marked-pane="category" hidden><legend>Category</legend><div class="marked-kind-grid"></div></fieldset><button type="button" id="marked-filter-apply" class="primary">Apply filters</button>`;
+ dialog.innerHTML=`<div class="sheet-heading"><h2 id="marked-filter-title">Filter</h2><button type="button" data-marked-filter-close aria-label="Close filters">×</button></div><nav class="passage-steps" aria-label="Filter selection"><button type="button" data-marked-step="book"></button><button type="button" data-marked-step="chapter"></button><button type="button" data-marked-step="category"></button></nav><fieldset data-marked-pane="book"><legend>Book</legend><div class="passage-testaments"><button type="button" data-marked-testament="old">Old Testament</button><button type="button" data-marked-testament="new">New Testament</button></div><div class="marked-book-grid"></div></fieldset><fieldset data-marked-pane="chapter" hidden><legend>Chapter</legend><div class="marked-chapter-grid"></div></fieldset><fieldset data-marked-pane="category" hidden><legend>Category</legend><div class="marked-kind-grid"></div></fieldset><button type="button" id="marked-filter-apply" class="primary">Apply filters</button>`;
  function render(){
   dialog.querySelectorAll('[data-marked-step]').forEach(button=>{button.textContent=button.dataset.markedStep==='book'?books[chosen].name:button.dataset.markedStep==='chapter'?(chapter?'Chapter '+chapter:'All chapters'):MARKED_CATEGORIES.find(c=>c[0]===kind)[1];button.setAttribute('aria-pressed',String(button.dataset.markedStep===step));});
   dialog.querySelectorAll('[data-marked-pane]').forEach(pane=>pane.hidden=pane.dataset.markedPane!==step);
   dialog.querySelectorAll('[data-marked-testament]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.markedTestament===testament)));
   dialog.querySelector('.marked-book-grid').innerHTML=books.filter(b=>testament==='old'?b.id<39:b.id>=39).map(b=>`<button type="button" data-marked-book="${b.id}" aria-label="${esc(b.name)}" title="${esc(b.name)}" aria-pressed="${b.id===chosen}">${BOOK_CITATION_ABBREVIATIONS[b.id]}</button>`).join('');
-  dialog.querySelector('.marked-chapter-grid').style.setProperty('--number-columns',books[chosen].chapters>100?'12':'10');
+  dialog.querySelector('.marked-chapter-grid').style.setProperty('--number-columns',books[chosen].chapters>100?'9':'8');
   dialog.querySelector('.marked-chapter-grid').innerHTML=`<button type="button" class="marked-all-chapters" data-marked-chapter="0" aria-pressed="${chapter===0}">All chapters</button>`+Array.from({length:books[chosen].chapters},(_,i)=>`<button type="button" data-marked-chapter="${i+1}" aria-pressed="${chapter===i+1}">${i+1}</button>`).join('');
   dialog.querySelector('.marked-kind-grid').innerHTML=MARKED_CATEGORIES.map(([key,label])=>`<button type="button" data-marked-kind="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}" aria-pressed="${kind===key}">${key==='all'?'':categoryIcon(key)}${label}</button>`).join('');
  }
@@ -94,3 +96,17 @@ const renderSavedPassagesLegacy=renderPassageSaved;
 renderPassageSaved=function(){renderSavedPassagesLegacy();if(view==='saved')renderMarkedWorkspace();};
 window.addEventListener('viewchange',ev=>{if(ev.detail==='saved')renderMarkedWorkspace();else markedWorkspaceGeneration++;});
 if(view==='saved')renderMarkedWorkspace();
+
+// Reveal filters at the top and when the reader reverses direction toward the top.
+(() => {
+ let lastY=window.scrollY;
+ function reveal(){document.body.classList.add('marked-filter-visible');}
+ window.addEventListener('scroll',()=>{
+  const y=Math.max(0,window.scrollY),delta=y-lastY;
+  if(view!=='saved'){lastY=y;return;}
+  if(y<20)reveal();
+  else if(Math.abs(delta)>=4){if(delta>0&&document.activeElement===$('#marked-filter-open'))document.activeElement.blur();document.body.classList.toggle('marked-filter-visible',delta<0);}
+  if(Math.abs(delta)>=4||y<20)lastY=y;
+ },{passive:true});
+ window.addEventListener('viewchange',()=>{lastY=window.scrollY;reveal();});reveal();
+})();

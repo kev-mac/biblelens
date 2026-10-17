@@ -123,7 +123,8 @@ assert(!chapterLoader.includes('selectedVerses.add('),'Opening a verse URL must 
 const settingsTarget={append(node){this.child=node;}},actions={};
 const toolbar={querySelector:selector=>{assert.equal(selector,'.reader-actions');return actions;}};
 const settingNodes=new Map();
-const settingsContext={state:{},persist(){},document:{body:{classList:{toggle(){}}}},$:selector=>{if(selector==='#reader-settings-controls')return settingsTarget;if(!settingNodes.has(selector))settingNodes.set(selector,{});return settingNodes.get(selector);},readerToolbar:toolbar};
+const pointerHandlers={},positionStyles=new Map(),bodyClasses=new Set();let positionSaves=0;
+const settingsContext={state:{},persist(){positionSaves++;},Date,window:{innerWidth:414,innerHeight:810,addEventListener(){}},document:{addEventListener(type,fn,options){pointerHandlers[type+(options?.capture?':capture':'')]=fn;},body:{style:{setProperty(k,v){positionStyles.set(k,v);},removeProperty(k){positionStyles.delete(k);}},classList:{toggle(k,on){if(on)bodyClasses.add(k);else bodyClasses.delete(k);},contains(k){return bodyClasses.has(k);}}}},$:selector=>{if(selector==='#reader-settings-controls')return settingsTarget;if(!settingNodes.has(selector))settingNodes.set(selector,{});return settingNodes.get(selector);},readerToolbar:toolbar};
 vm.createContext(settingsContext);
 vm.runInContext(source.slice(source.indexOf('function placeReaderControls('),source.indexOf("$('#reader-picker').onclick=")),settingsContext);
 assert.equal(settingsTarget.child,actions);
@@ -131,6 +132,17 @@ assert.equal(settingNodes.get('#book-picker-position').value,'floating');
 settingNodes.get('#book-picker-position').onchange({target:{value:'fixed'}});
 assert.equal(settingsContext.state.bookPickerPosition,'fixed');
 console.log('PASS: Settings contains appearance controls only; floating book picker is the default and its fixed preference persists.');
+settingNodes.get('#book-picker-position').onchange({target:{value:'floating'}});
+const floatButton={getBoundingClientRect:()=>({left:336,top:612}),setPointerCapture(){},classList:{add(){},remove(){}}};
+const dragPointer={target:{closest:()=>floatButton},pointerId:1,isPrimary:true,button:0,clientX:365,clientY:641,preventDefault(){}};
+const beforeDrag=positionSaves;pointerHandlers.pointerdown(dragPointer);pointerHandlers.pointermove({...dragPointer,clientX:367});pointerHandlers.pointerup(dragPointer);assert.equal(positionSaves,beforeDrag,'A tap must not save a drag position');
+pointerHandlers.pointerdown(dragPointer);pointerHandlers.pointermove({...dragPointer,clientX:82,clientY:480});pointerHandlers.pointerup(dragPointer);
+assert.equal(positionSaves,beforeDrag+1);assert.equal(positionStyles.get('--book-picker-left'),'53px');assert.equal(positionStyles.get('--book-picker-top'),'451px');
+let clickSuppressed=false;pointerHandlers['click:capture']({...dragPointer,stopImmediatePropagation(){clickSuppressed=true;}});assert(clickSuppressed,'Finishing a drag must not open the picker');
+settingsContext.window.innerWidth=320;settingsContext.window.innerHeight=480;settingsContext.positionBookPicker();assert(parseFloat(positionStyles.get('--book-picker-left'))<=254);assert(parseFloat(positionStyles.get('--book-picker-top'))<=414);
+const savedAnchor=JSON.stringify(settingsContext.state.bookPickerAnchor);pointerHandlers.pointerdown(dragPointer);pointerHandlers.pointermove({...dragPointer,clientX:-900,clientY:-900});pointerHandlers.pointercancel({...dragPointer,type:'pointercancel'});assert.equal(JSON.stringify(settingsContext.state.bookPickerAnchor),savedAnchor,'Cancellation must preserve the saved position');
+console.log('PASS: floating control ignores tap jitter, saves drag positions, suppresses post-drag clicks, clamps after resize and preserves position on cancellation.');
+
 
 // Legacy cards use their stored explanation when they predate the reasoning field.
 assert.equal(context.comparisonReasoning({text:'Existing explanation'}),'Existing explanation');

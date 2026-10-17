@@ -19,7 +19,7 @@ function readRef(ref){const m=/^(.*?) (\d+):(\d+)/.exec(ref);const book=m&&books
 function chapterStudies(){if(!reading)return [];return ENTRIES.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter}));}
 function applicableStudies(){const entries=chapterStudies();if(!selectedVerses.size)return entries;const matching=entries.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter&&selectedVerses.has(p.verse)}));return matching.length?matching:entries;}
 function chapterOptions(){comparisonSelections.clear();comparisonEvidenceOpen.clear();comparisonRecordSelections.clear();comparisonHighlightOrder.clear();const book=books[readingBook];$('#chapter-select').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===readingChapter?'selected':''}>${i+1}</option>`).join('');$('#book-select').value=String(readingBook);}
-function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;const context=$('#header-context');context.dataset.passage=`${label} · ${$('#reader-edition').value.toUpperCase()}`;if(view==='explore')context.innerHTML=esc(label)+' <span class="passage-bullet">•</span> '+esc($('#reader-edition').value.toUpperCase());$('#reader-picker').setAttribute('aria-label',`Reader settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;}
+function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;const context=$('#header-context');context.dataset.passage=`${label} · ${$('#reader-edition').value.toUpperCase()}`;if(view==='explore'){context.innerHTML=esc(label)+' <span class="passage-bullet">•</span> '+esc($('#reader-edition').value.toUpperCase());context.parentElement?.setAttribute('aria-label',label+' — Choose book, chapter and verse');}$('#reader-picker').setAttribute('aria-label',`Reader settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;}
 async function loadChapter(book,ch,verse=null,updateHash=true){const b=books[book];if(!b||!Number.isInteger(ch)||ch<1||ch>b.chapters)return;stagePassageDock();const version=++loadVersion;readingBook=book;readingChapter=ch;selectedVerses.clear();$('#passage-tools').hidden=true;chapterOptions();$('#reader-status').textContent='Loading chapter…';$('#chapter-text').innerHTML='<p class="chapter-loading">Loading chapter…</p>';$('#comparison-status').hidden=true;try{const response=await fetch(`/api/chapter?book=${book}&chapter=${ch}`);if(!response.ok)throw Error('Chapter could not be loaded');const data=await response.json();if(version!==loadVersion)return;reading=data;state.reading={book,chapter:ch};persist();renderReader();if(updateHash)history.replaceState(null,'',`#read/${book}/${ch}${verse?'/'+verse:''}`);if(verse)requestAnimationFrame(()=>$(`#verse-${verse}`)?.scrollIntoView({block:'center',behavior:'smooth'}));else window.scrollTo({top:0,behavior:'instant'});}catch(err){if(version!==loadVersion)return;reading=null;$('#chapter-text').innerHTML='<div class="reader-error"><p>Could not load this chapter.</p><button id="retry-chapter" class="primary">Retry</button></div>';$('#retry-chapter').onclick=()=>loadChapter(book,ch,verse,updateHash);$('#reader-status').textContent='Chapter unavailable. Try again.';}}
 const comparisonCache=new Map();
 const comparisonSelections=new Map();
@@ -251,7 +251,7 @@ async function ensureComparisons(){
  comparisonStatus();if(!jobs.length)return;await Promise.all(jobs);
  if(reading&&book===readingBook&&ch===readingChapter&&edition===$('#reader-edition').value)renderReader(true);
 }
-function renderReader(preserve=false){if(!reading)return;stagePassageDock();const scroll=window.scrollY;const edition=$('#reader-edition').value,mode=$('#reader-compare').value;const comparing=mode!=='none';const label={history:'Historic',contradictions:'Contradictions',science:'Scientific',questions:'Unanswered Questions'}[mode];document.body.classList.toggle('compare-active',comparing);$('#chapter-text').classList.toggle('with-comparisons',comparing);$('#chapter-text').innerHTML=`<div class="chapter-heading-row"><div class="passage-heading"><div><h2><button type="button" class="passage-heading-picker" aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker">${esc(reading.name)} ${reading.chapter}</button></h2><p class="passage-eyebrow passage-description">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p></div><button type="button" class="passage-picker-trigger" aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14m-10-3V3h6a4 4 0 0 1 4 4 4 4 0 0 1 4-4h6v15h-6a4 4 0 0 0-4 3 4 4 0 0 0-4-3Z"/></svg></button><button class="chapter-round passage-bookmark" data-passage-save aria-label="Save this passage" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg></button></div><p class="chapter-subtitle">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p></div>${reading.verses.map(v=>{const comparison=comparing?comparisonCell(v.n):'';return `<div class="verse ${selectedVerses.has(v.n)?'selected':''}" id="verse-${v.n}"><div class="verse-content-grid ${comparison?'is-comparing':''}">${verseText(v,edition)}${comparison}</div></div>`;}).join('')}`;updateContext();comparisonStatus();syncPassageTools();if(preserve)requestAnimationFrame(()=>window.scrollTo({top:scroll,behavior:'instant'}));ensureComparisons();}
+function renderReader(preserve=false){if(!reading)return;stagePassageDock();const scroll=window.scrollY;const edition=$('#reader-edition').value,mode=$('#reader-compare').value;const comparing=mode!=='none';const label={history:'Historic',contradictions:'Contradictions',science:'Scientific',questions:'Unanswered Questions'}[mode];document.body.classList.toggle('compare-active',comparing);$('#chapter-text').classList.toggle('with-comparisons',comparing);$('#chapter-text').innerHTML=`<div class="chapter-heading-row"><div class="passage-heading"><div><h2><button type="button" class="passage-heading-picker" aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker">${esc(reading.name)} ${reading.chapter}</button></h2><p class="passage-eyebrow passage-description">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p></div><button type="button" class="passage-picker-trigger" title="Choose passage. Drag or use arrow keys to move the floating button." aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14m-10-3V3h6a4 4 0 0 1 4 4 4 4 0 0 1 4-4h6v15h-6a4 4 0 0 0-4 3 4 4 0 0 0-4-3Z"/></svg></button><button class="chapter-round passage-bookmark" data-passage-save aria-label="Save this passage" aria-pressed="false"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg></button></div><p class="chapter-subtitle">${esc(CHAPTER_NAMES[reading.name][reading.chapter])}</p></div>${reading.verses.map(v=>{const comparison=comparing?comparisonCell(v.n):'';return `<div class="verse ${selectedVerses.has(v.n)?'selected':''}" id="verse-${v.n}"><div class="verse-content-grid ${comparison?'is-comparing':''}">${verseText(v,edition)}${comparison}</div></div>`;}).join('')}`;updateContext();comparisonStatus();syncPassageTools();if(preserve)requestAnimationFrame(()=>window.scrollTo({top:scroll,behavior:'instant'}));ensureComparisons();}
 $('#reader-compare').onclick=()=>{readerPreferences.compare=readerPreferences.compare==='none'?'on':'none';state.readerPreferences=readerPreferences;comparisonSelections.clear();comparisonRecordSelections.clear();comparisonHighlightOrder.clear();updateCompareToggle();persist();renderReader(true);};
 let chapterPaging=false;
 function chapterPagingBlocked(){return view!=='explore'||!!document.querySelector('dialog[open],.verse-preview:not([hidden])');}
@@ -386,7 +386,7 @@ let passagePicker=null,passagePickerRequest=0;
 function passageNumberGrid(field,numbers,preferred){
  const selected=numbers.includes(preferred)?preferred:numbers[0];
  $('#'+field).value=String(selected||'');
- $('#'+field+'-grid').style?.setProperty('--number-columns',numbers.length>100?'12':'10');
+ $('#'+field+'-grid').style?.setProperty('--number-columns',numbers.length>100?'9':'8');
  $('#'+field+'-grid').innerHTML=numbers.map(n=>`<label class="passage-number"><input type="radio" name="${field}-choice" value="${n}" ${n===selected?'checked':''}><span>${n}</span></label>`).join('');
 }
 async function updatePassagePickerVerses(preferred=1){
@@ -413,14 +413,25 @@ function openPassagePicker(){
  if(!passagePicker){passagePicker=document.createElement('dialog');passagePicker.id='passage-picker';passagePicker.className='glass-dialog';passagePicker.setAttribute('aria-labelledby','passage-picker-title');
   passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><div id="passage-translation"></div><nav class="passage-steps" aria-label="Passage selection"><button type="button" data-passage-step="book">Book</button><button type="button" data-passage-step="chapter">Chapter</button><button type="button" data-passage-step="verse">Verse</button></nav><fieldset data-passage-pane="book"><legend>Book</legend><input type="hidden" id="passage-book"><div class="passage-testaments" role="group" aria-label="Book collection"><button type="button" data-book-testament="old">Old Testament</button><button type="button" data-book-testament="new">New Testament</button></div><div id="passage-book-grid" class="passage-book-grid"></div></fieldset><div class="passage-picker-fields"><fieldset data-passage-pane="chapter"><legend>Chapter</legend><input type="hidden" id="passage-chapter"><div id="passage-chapter-grid" class="passage-number-grid"></div></fieldset><fieldset data-passage-pane="verse"><legend>Verse</legend><input type="hidden" id="passage-verse"><div id="passage-verse-grid" class="passage-number-grid" aria-live="polite"></div></fieldset></div><button type="submit" id="passage-go" class="primary">Read passage</button></form>';document.body.append(passagePicker);
   $('#passage-translation').append($('#reader-edition').closest('label'));
-  passagePicker.addEventListener('click',ev=>{const testament=ev.target.closest('[data-book-testament]');if(testament){renderPassageBooks(testament.dataset.bookTestament);return;}const step=ev.target.closest('[data-passage-step]');if(step)setPassageStep(step.dataset.passageStep);});passagePicker.addEventListener('change',ev=>{if(ev.target.name==='passage-book-choice'){$('#passage-book').value=ev.target.value;updatePassagePickerChapters();updatePassagePickerVerses();setPassageStep('chapter');}if(ev.target.name==='passage-chapter-choice'){$('#passage-chapter').value=ev.target.value;updatePassagePickerVerses();setPassageStep('verse');}if(ev.target.name==='passage-verse-choice'){$('#passage-verse').value=ev.target.value;setPassageStep('verse');}});
+  passagePicker.addEventListener('click',ev=>{const testament=ev.target.closest('[data-book-testament]');if(testament){renderPassageBooks(testament.dataset.bookTestament);return;}const step=ev.target.closest('[data-passage-step]');if(step)setPassageStep(step.dataset.passageStep);});passagePicker.addEventListener('click',ev=>{
+   // Radio changes omit an already-selected choice; clicks also cover that tap and keyboard activation.
+   const choice=ev.target;if(!choice.matches('input[type="radio"]'))return;
+   if(choice.name==='passage-book-choice'){$('#passage-book').value=choice.value;updatePassagePickerChapters();updatePassagePickerVerses();setPassageStep('chapter');}
+   if(choice.name==='passage-chapter-choice'){$('#passage-chapter').value=choice.value;updatePassagePickerVerses();setPassageStep('verse');}
+   if(choice.name==='passage-verse-choice'){$('#passage-verse').value=choice.value;$('#passage-picker-form').requestSubmit();}
+  });
   passagePicker.querySelector('[data-picker-close]').onclick=()=>passagePicker.close();
   $('#passage-picker-form').onsubmit=ev=>{ev.preventDefault();if($('#passage-go').disabled)return;const b=Number($('#passage-book').value),ch=Number($('#passage-chapter').value),v=Number($('#passage-verse').value);passagePicker.close();setView('explore',false);loadChapter(b,ch,v);};
   passagePicker.addEventListener('close',()=>{passagePickerRequest++;document.querySelector('.passage-heading-picker')?.focus({preventScroll:true});});
  }
  $('#passage-book').value=readingBook;renderPassageBooks();setPassageStep('book');updatePassagePickerChapters(readingChapter);updatePassagePickerVerses([...selectedVerses][0]||1);setPassageStep('book');passagePicker.showModal();
 }
-document.addEventListener('click',ev=>{if(ev.target.closest('.passage-picker-trigger,.passage-heading-picker'))openPassagePicker();});
+document.addEventListener('click',ev=>{
+ const header=ev.target.closest('header .brand');
+ if(header&&view==='explore'){ev.preventDefault();openPassagePicker();return;}
+ if(header&&view==='saved'){ev.preventDefault();openMarkedFilters();return;}
+ if(ev.target.closest('.passage-picker-trigger,.passage-heading-picker'))openPassagePicker();
+});
 const readerSheet=$('#reader-settings'),readerToolbar=document.querySelector('.reader-toolbar');
 // Settings is shared by Read, Chat and Marked; never leave it under a hidden page.
 document.body.append(readerSheet);
@@ -430,7 +441,46 @@ function applyBookPickerPosition(){
  const position=state.bookPickerPosition==='fixed'?'fixed':'floating';
  document.body.classList.toggle('book-picker-floating',position==='floating');
  $('#book-picker-position').value=position;
+ positionBookPicker();
 }
+// Keep the floating control within the viewport, including after rotation or a chapter render.
+function positionBookPicker(anchor=state.bookPickerAnchor){
+ const style=document.body.style;
+ if(!anchor||!Number.isFinite(anchor.x)||!Number.isFinite(anchor.y)){style.removeProperty('--book-picker-left');style.removeProperty('--book-picker-top');return;}
+ const roomX=Math.max(0,window.innerWidth-74),roomY=Math.max(0,window.innerHeight-74);
+ style.setProperty('--book-picker-left',(8+Math.max(0,Math.min(1,anchor.x))*roomX)+'px');
+ style.setProperty('--book-picker-top',(8+Math.max(0,Math.min(1,anchor.y))*roomY)+'px');
+}
+(() => {
+ let drag=null,suppressUntil=0;
+ function anchorAt(x,y){return {x:Math.max(0,Math.min(1,(x-8)/Math.max(1,window.innerWidth-74))),y:Math.max(0,Math.min(1,(y-8)/Math.max(1,window.innerHeight-74)))};}
+ document.addEventListener('pointerdown',ev=>{
+  const button=ev.target.closest('.passage-picker-trigger');
+  if(!button||!document.body.classList.contains('book-picker-floating')||!ev.isPrimary||ev.button!==0)return;
+  const rect=button.getBoundingClientRect();drag={button,id:ev.pointerId,x:ev.clientX,y:ev.clientY,left:rect.left,top:rect.top,moved:false,anchor:null};button.setPointerCapture(ev.pointerId);
+ });
+ document.addEventListener('pointermove',ev=>{
+  if(!drag||drag.id!==ev.pointerId)return;
+  const dx=ev.clientX-drag.x,dy=ev.clientY-drag.y;
+  if(!drag.moved&&Math.hypot(dx,dy)<6)return;
+  drag.moved=true;drag.button.classList.add('is-dragging');ev.preventDefault();
+  drag.anchor=anchorAt(drag.left+dx,drag.top+dy);positionBookPicker(drag.anchor);
+ },{passive:false});
+ function finish(ev){
+  if(!drag||drag.id!==ev.pointerId)return;
+  if(drag.moved){suppressUntil=Date.now()+500;if(ev.type==='pointercancel')positionBookPicker();else{state.bookPickerAnchor=drag.anchor;persist();}}
+  drag.button.classList.remove('is-dragging');drag=null;
+ }
+ document.addEventListener('pointerup',finish);document.addEventListener('pointercancel',finish);
+ document.addEventListener('click',ev=>{if(Date.now()<suppressUntil&&ev.target.closest('.passage-picker-trigger')){ev.preventDefault();ev.stopImmediatePropagation();}},{capture:true});
+ document.addEventListener('keydown',ev=>{
+  const button=ev.target.closest('.passage-picker-trigger'),directions={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]};
+  if(!button||!document.body.classList.contains('book-picker-floating')||!directions[ev.key])return;
+  ev.preventDefault();const rect=button.getBoundingClientRect(),[dx,dy]=directions[ev.key],step=ev.shiftKey?30:10;
+  state.bookPickerAnchor=anchorAt(rect.left+dx*step,rect.top+dy*step);positionBookPicker();persist();
+ });
+ window.addEventListener('resize',()=>positionBookPicker());
+})();
 applyBookPickerPosition();
 $('#book-picker-position').onchange=ev=>{state.bookPickerPosition=ev.target.value;persist();applyBookPickerPosition();};
 $('#reader-picker').onclick=()=>{

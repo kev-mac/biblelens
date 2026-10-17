@@ -1,6 +1,6 @@
 # BibleLens shared releases
 
-GitHub `kev-mac/scripturelens`, branch `main`, is the canonical development source. The Sites repository for `appgprj_6acba627a6cc8191932fbbc47db8895d` is a deployment mirror. Do not develop separate web and iPhone versions. The same `src/`, `worker/`, `data/`, schema, and build scripts produce both outputs.
+GitHub `kev-mac/biblelens`, branch `main`, is the canonical development source. The Sites repository for `appgprj_6acba627a6cc8191932fbbc47db8895d` is a deployment mirror. Do not develop separate web and iPhone versions. The same `src/`, `worker/`, `data/`, schema, and build scripts produce both outputs.
 
 Before work, fetch GitHub and open the Sites source with the Sites skill. If the Sites mirror has independent new work, compare and integrate it into the canonical checkout first. Preserve dirty files and stashes. Never overwrite a newer Site with an older GitHub snapshot.
 
