@@ -1208,3 +1208,6 @@ body #marked-filter-dialog .passage-steps button{padding-inline:5px;white-space:
 body #marked-context{position:fixed;top:auto;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:50%;right:auto;transform:translateX(-50%);margin:0;padding:0;z-index:45}
 body:not(.marked-filter-visible) #marked-context:not(:focus-within){transform:translate(-50%,8px)}
 body #saved-view{padding-bottom:88px}
+
+/* Settings section headings use the shared interface typeface. */
+body #reader-settings .cloud-sync-settings h3,body #reader-settings .release-settings h3{font-family:"Inter",system-ui,sans-serif!important}
