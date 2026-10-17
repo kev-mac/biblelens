@@ -1224,3 +1224,16 @@ html.native-ios body #clear-chat{top:calc(var(--visual-offset-top,0px) + env(saf
  html:not(.native-ios).mobile-editing body{padding-top:var(--site-header-height,52px)}
  html:not(.native-ios).mobile-editing body>header{position:fixed;top:var(--visual-offset-top,0px);left:0;right:0;width:auto;max-width:none;z-index:60}
 }
+
+/* Chat starts near the top; an active conversation keeps its composer in reach. */
+body #chat-view #clear-chat{position:fixed;top:auto;right:20px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:45;width:58px;height:58px;min-height:58px;padding:0;border-radius:50%;box-shadow:0 6px 24px #0005}
+body #chat-view #chat-messages:empty{min-height:0;padding:0}
+body #chat-view:not(:has(.chat-message)) #chat-form{margin-top:clamp(32px,10dvh,110px)}
+body #chat-view:has(.chat-message){padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}
+body #chat-view:has(.chat-message) #chat-form{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:44;width:calc(100% - 32px);max-width:940px;margin:0;box-sizing:border-box}
+body #chat-view:has(.chat-message) #clear-chat{bottom:calc(86px + env(safe-area-inset-bottom,0px))}
+body #chat-view:has(.chat-message) #chat-status{margin-bottom:16px}
+
+body #chat-view #clear-chat{touch-action:none;user-select:none;left:var(--chat-button-left,auto);top:var(--chat-button-top,auto)}
+body #chat-view #clear-chat.is-dragging{cursor:grabbing}
+html.mobile-editing body #chat-view:has(.chat-message) #chat-form{bottom:auto;top:calc(var(--visual-offset-top,0px) + var(--visual-height,100dvh) - 64px - env(safe-area-inset-bottom,0px))}

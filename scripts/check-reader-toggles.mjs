@@ -19,6 +19,24 @@ for(const mode of ['history','contradictions','science'])context.cache.set(`0:1:
 ]});
 assert.equal(context.render(176),'');
 const initial=context.render(1);
+// Multiple records share one category button while keeping every summary available.
+context.cache.set('0:1:kjv:contradictions',{items:[
+ {id:'group-first',verse:60,placementRole:'key',status:'Disagrees',summary:'First grouped summary',sources:[]},
+ {id:'group-second',verse:60,status:'Disagrees',summary:'Second grouped summary',sources:[]}
+]});
+const grouped=context.render(60);
+assert.equal((grouped.match(/data-comparison-category="contradictions"/g)||[]).length,1);
+assert(grouped.includes('First grouped summary'));assert(grouped.includes('Second grouped summary'));
+assert(grouped.includes('aria-controls="comparison-panel-60-contradictions-0 comparison-panel-60-contradictions-1"'));
+let groupedRenders=0;context.renderReader=()=>groupedRenders++;
+const groupButton={dataset:{comparisonRecords:JSON.stringify(['group-first:contradictions','group-second:contradictions']),comparisonCategory:'contradictions'},getAttribute:()=> 'false'};
+context.toggle(groupButton);assert.equal((context.render(60).match(/class="verse-comparison comparison-panel"[^>]* hidden/g)||[]).length,0);
+groupButton.getAttribute=()=> 'true';context.toggle(groupButton);
+assert.equal((context.render(60).match(/class="verse-comparison comparison-panel"[^>]* hidden/g)||[]).length,2);
+assert.equal(groupedRenders,2);
+// Restore the existing fixtures used below.
+context.cache.set('0:1:kjv:contradictions',{items:[{verse:1,status:'Disagrees',title:'contradictions',summary:'contradictions discrepancy',text:'Reason',sources:[]}]});
+console.log('PASS: one category icon controls all summaries across mixed placement roles.');
 // A saved personal note opens as a comparison summary after loading the page.
 context.state={verseBookmarks:{'0:1:14':{book:0,chapter:1,verse:14}},verseNotes:{'0:1:14':{text:'Existing private note'}}};
 const savedNote=context.render(14);
@@ -68,7 +86,7 @@ console.log('PASS: summaries collapsed by default; category-off retains verse ic
 assert(context.visible({mode:'science',status:'Context',tags:['Q']}));
 context.cache.set('0:1:kjv:science',{items:[{id:'fixture-question',verse:3,placementRole:'context',keyTarget:'Genesis 1:1',status:'Context',tags:['Q'],title:'Fixture question',refs:[],sources:[]}]});
 context.filters.delete('Q');assert.equal(context.render(3),'');context.filters.add('Q');
-const pointer=context.render(3);assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-local="false"'));assert(pointer.includes('aria-disabled="true"'));context.readRef=()=>({book:0,chapter:1,verse:1});const local=context.render(3);assert(local.includes('data-context-jump="1"'));assert(local.includes('data-context-local="true"'));context.readRef=()=>null;assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('(Unanswered) Questions'));
+const pointer=context.render(3);assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-local="false"'));assert(pointer.includes('aria-disabled="true"'));context.readRef=()=>({book:0,chapter:1,verse:1});const local=context.render(3);assert(local.includes('data-context-jump="1"'));assert(local.includes('data-context-local="true"'));context.readRef=()=>null;assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('Questions'));
 const css=fs.readFileSync('src/style.css','utf8');assert(css.includes('.agreement.question,body.dark .agreement.question'));assert(css.includes('[data-tone="question"]'));
 const html=fs.readFileSync('src/index.html','utf8');
 assert(html.indexOf('id="theme"')>html.indexOf('id="reader-settings"'),'Theme control belongs inside Reader settings');
@@ -106,7 +124,7 @@ context.cache.clear();for(const mode of ['history','contradictions','science','q
 context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'context-only',verse:1,placementRole:'context',tags:['Q'],status:'Context'}]});
 vm.runInContext(source.slice(source.indexOf('function comparisonStatus('),source.indexOf('async function ensureComparisons(')),context);context.comparisonStatus();
 const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(qFilter.includes('disabled'));assert(qFilter.includes('data-brightness="empty"'));assert(qFilter.includes('aria-pressed="false"'));
-context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'key-one',verse:1,placementRole:'key',tags:['Q'],status:'Context'},{id:'key-one',verse:2,placementRole:'key',tags:['Q'],status:'Context'},{id:'context-only',verse:3,placementRole:'context',tags:['Q'],status:'Context'}]});context.comparisonStatus();assert(statusNode.innerHTML.includes('(Unanswered) Questions: 1 summaries'));
+context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'key-one',verse:1,placementRole:'key',tags:['Q'],status:'Context'},{id:'key-one',verse:2,placementRole:'key',tags:['Q'],status:'Context'},{id:'context-only',verse:3,placementRole:'context',tags:['Q'],status:'Context'}]});context.comparisonStatus();assert(statusNode.innerHTML.includes('Questions: 1 summaries'));
 context.reading.verses=[{n:1},{n:2},{n:3}];context.comparisonStatus();assert(statusNode.innerHTML.includes('data-brightness="empty"'));
 vm.runInContext("categoryFilters.add('Q');comparisonRecordSelections.set('key-one:Q',true)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="open"/));
 vm.runInContext("comparisonRecordSelections.set('key-one:Q',false)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="open"/));
@@ -194,7 +212,7 @@ console.log('PASS: independent verse/category fonts, safe fallback and persisted
 vm.runInContext("this.tags=recordTags;this.group=filterCategory;this.languageLabels=languageTags",context);
 assert.deepEqual(Array.from(context.tags({tags:['H','G']})),['H','G']);
 assert.equal(context.group({tag:'H'}),'academic');assert.equal(context.group({tag:'G'}),'T');
-assert.equal(context.languageLabels.H.label,'Academic');assert.equal(context.languageLabels.G.label,'Translation');assert.equal(context.languageLabels.Q.label,'(Unanswered) Questions');
+assert.equal(context.languageLabels.H.label,'Academic');assert.equal(context.languageLabels.G.label,'Translation');assert.equal(context.languageLabels.Q.label,'Questions');
 context.cache.clear();for(const mode of ['history','contradictions','science','questions'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
 context.cache.set('0:1:kjv:contradictions',{status:'ready',items:[{id:'dual-language-fixture',verse:1,placementRole:'key',tags:['H','G'],status:'Context',title:'Dual-language fixture',summary:'Fixture only',text:'Limits',sources:[]}]});
 vm.runInContext("categoryFilters.add('academic');categoryFilters.add('T')",context);
