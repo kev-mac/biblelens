@@ -1,0 +1,30 @@
+{
+  "batch": "claude-ready-james-to-jude-2-john-3-john-2026-10-17",
+  "completeBatch": true,
+  "booksCovered": "2 John and 3 John",
+  "checked": "2026-10-17T08:58:53.438Z",
+  "draftHashes": {
+    "james-to-jude-records.json": "e296521a51397734dc76920923081365fb4a1ccc6c8edd22408bb7f2de524d48",
+    "james-to-jude-notes.md": "f596915da210f25f64e065e0b76f239de897fd32b5f3aa3cd42835c2bf76a10c",
+    "james-to-jude-q-records.json": "a34cbcbf8e5da878a4a8f502a166ba24db75c8ec33df319a3685a85295b2cbbd",
+    "james-to-jude-q-notes.md": "537182030fd1f5f676974b8b0d2234a325edf6436dbef619fe57c6ab9ad2c477"
+  },
+  "sourceErrors": [],
+  "sideErrors": [],
+  "kjvQuoteErrors": [],
+  "originalLanguageQuoteErrors": [],
+  "addressErrors": [],
+  "duplicateIds": [],
+  "pendingRecords": 0,
+  "existingEvidenceCount": 1581,
+  "builtInStudyReview": "All six built-in ENTRIES studies were reviewed. None duplicates these 2 John or 3 John records. The 2 John 1:7 and 1:9 records share verses with coverage-nt-hospitality but address separate Greek-edition wording differences.",
+  "interpretationLimits": "Edition-specific limits are retained; the served TR and Tischendorf editions are not treated as a critical apparatus or proof of the original reading. Annotation presence is not exhaustive review.",
+  "records": 6,
+  "accepted": 6,
+  "corrected": 0,
+  "held": 0,
+  "sourcePages": 4,
+  "sideChecks": 6,
+  "kjvQuotedFragments": 6,
+  "originalLanguageFragments": 12
+}

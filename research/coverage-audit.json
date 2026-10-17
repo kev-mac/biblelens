@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1581,
+    "evidenceRecords": 1587,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
     "chaptersWithAnnotations": 859,
-    "annotatedVerses": 4078
+    "annotatedVerses": 4082
   },
   "byBook": [
     {
@@ -388,13 +388,13 @@
       "book": "2 John",
       "chapters": 1,
       "chaptersWithAnnotations": 1,
-      "annotatedVerses": 4
+      "annotatedVerses": 7
     },
     {
       "book": "3 John",
       "chapters": 1,
       "chaptersWithAnnotations": 1,
-      "annotatedVerses": 6
+      "annotatedVerses": 7
     },
     {
       "book": "Jude",
@@ -20770,13 +20770,21 @@
       "bookId": 62,
       "chapter": 1,
       "annotationIds": [
-        "coverage-nt-hospitality"
+        "coverage-nt-hospitality",
+        "grace-be-with-you-from-the-lord-jesus-christ-or-with-us-2-john-1-3-greek-new-testament",
+        "are-entered-into-the-world-or-are-gone-out-2-john-1-7-greek-new-testament",
+        "that-we-lose-not-or-that-ye-lose-not-2-john-1-8-greek-new-testament",
+        "whosoever-transgresseth-or-whosoever-goeth-onward-2-john-1-9-greek-new-testament",
+        "i-trust-to-come-unto-you-or-to-be-with-you-2-john-1-12-greek-new-testament"
       ],
       "annotatedVerses": [
+        3,
         7,
+        8,
         9,
         10,
-        11
+        11,
+        12
       ],
       "modes": [
         "contradictions"
@@ -20788,7 +20796,8 @@
       "bookId": 63,
       "chapter": 1,
       "annotationIds": [
-        "coverage-nt-hospitality"
+        "coverage-nt-hospitality",
+        "ye-know-or-thou-knowest-3-john-1-12-greek-new-testament"
       ],
       "annotatedVerses": [
         5,
@@ -20796,7 +20805,8 @@
         7,
         8,
         9,
-        10
+        10,
+        12
       ],
       "modes": [
         "contradictions"
