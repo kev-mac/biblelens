@@ -123,8 +123,9 @@ console.log('PASS: text-size slider scales live from 85 to 150 percent, labels v
 const statusNode={};context.$=selector=>selector==='#comparison-status'?statusNode:{value:selector==='#reader-edition'?'kjv':'on'};
 context.cache.clear();for(const mode of ['history','contradictions','science','questions','commandments'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
 context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'context-only',verse:1,placementRole:'context',tags:['Q'],status:'Context'}]});
+context.storiesFilterButton=()=>'<button data-category-filter="stories">Stories</button>';
 vm.runInContext(source.slice(source.indexOf('function comparisonStatus('),source.indexOf('async function ensureComparisons(')),context);context.comparisonStatus();
-const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(qFilter.includes('disabled'));assert(qFilter.includes('data-brightness="empty"'));assert(qFilter.includes('aria-pressed="false"'));
+const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(!qFilter.includes('disabled'),'Empty categories remain selectable');assert(qFilter.includes('data-brightness="empty"'));assert(qFilter.includes('aria-pressed="false"'));
 context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'key-one',verse:1,placementRole:'key',tags:['Q'],status:'Context'},{id:'key-one',verse:2,placementRole:'key',tags:['Q'],status:'Context'},{id:'context-only',verse:3,placementRole:'context',tags:['Q'],status:'Context'}]});context.comparisonStatus();assert(statusNode.innerHTML.includes('Questions: 1 summaries'));
 context.reading.verses=[{n:1},{n:2},{n:3}];context.comparisonStatus();assert(statusNode.innerHTML.includes('data-brightness="empty"'));
 vm.runInContext("categoryFilters.add('Q');comparisonRecordSelections.set('key-one:Q',true)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="open"/));

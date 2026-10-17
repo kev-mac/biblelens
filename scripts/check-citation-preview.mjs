@@ -1,6 +1,6 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
 const handlers={},popupHandlers={},children=new Map(),loads=[];let requests=0;
-const child=s=>{if(!children.has(s))children.set(s,{setAttribute(){}});return children.get(s);};
+const child=s=>{if(!children.has(s))children.set(s,{setAttribute(){},focus(){}});return children.get(s);};
 const popup={style:{},hidden:true,setAttribute(){},querySelector:child,querySelectorAll:()=>[],contains:n=>n===popup,getBoundingClientRect:()=>({width:360,height:180}),addEventListener:(type,fn)=>popupHandlers[type]=fn};
 const doc={createElement:()=>popup,body:{append(){}},querySelector:s=>s==='#reader-edition'?{value:'kjv'}:null,addEventListener:(type,fn,capture)=>{const key=type+(capture===true?':capture':'');const previous=handlers[key];handlers[key]=previous?ev=>{previous(ev);fn(ev);}:fn;}};
 const ctx={state:{verseBookmarks:{},verseHighlights:{}},document:doc,window:{innerWidth:780,innerHeight:1004,addEventListener(){}},setTimeout,clearTimeout,scriptureHtml:v=>v.kjv,setView:(v,update)=>loads.push({view:v,update}),loadChapter:(...ref)=>loads.push({ref}),fetch:async()=>{requests++;return{ok:true,json:async()=>({verses:[{n:1,kjv:'Full verse one, beyond the quoted excerpt.'},{n:2,kjv:'Full verse two.'}]})}}};
@@ -12,6 +12,13 @@ b.dataset.citeWitness='Septuagint';b.dataset.citeSummary='The exact original sum
 const range=chip(1,2);handlers.focusin({target:target(range)});await settle();assert(child('.preview-text').innerHTML.includes('Full verse one, beyond the quoted excerpt.'));assert(child('.preview-text').innerHTML.includes('Full verse two.'));assert.equal(requests,1);
 assert.equal(child('.preview-summary').hidden,true);assert.equal(child('.preview-summary').textContent,'');
 let prevented=false;handlers.click({target:target(range),preventDefault(){prevented=true;}});assert(prevented);assert(popup.hidden);assert.deepEqual(loads.at(-1).ref,[0,1,1]);assert.equal(loads.at(-2).view,'explore');
+// Stories references stay in the reader's floating preview on click and Enter.
+const story=chip(1,2);story.dataset.citePreview='';const beforeStory=loads.length;
+handlers.click({target:target(story),preventDefault(){}});await settle();
+assert(!popup.hidden);assert.equal(loads.length,beforeStory);assert(child('.preview-text').innerHTML.includes('Full verse two.'));
+handlers.focusout({target:target(story),relatedTarget:null});await new Promise(r=>setTimeout(r,220));assert(!popup.hidden,'Story previews remain open after focus moves');
+handlers.keydown({key:'Escape',preventDefault(){}});assert(popup.hidden);
+
 handlers.pointerover({pointerType:'touch',target:target(b),relatedTarget:null});await settle();assert(popup.hidden);
 handlers.focusin({target:target(b)});await settle();handlers.keydown({key:'Escape',preventDefault(){}});assert(popup.hidden);
 // Long-pressing a citation previews it and moving away cancels the hold.
