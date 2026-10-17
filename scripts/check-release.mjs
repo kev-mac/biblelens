@@ -7,7 +7,11 @@ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'biblelens-release-'));
 try{
  for(const f of ['package.json','package-lock.json','capacitor.config.json','.openai/hosting.json']){fs.mkdirSync(path.dirname(path.join(dir,f)),{recursive:true});fs.writeFileSync(path.join(dir,f),f==='package.json'?'{"version":"1.0.0","buildNumber":219}':'{}');}
  fs.mkdirSync(path.join(dir,'src'));fs.writeFileSync(path.join(dir,'src/app.js'),'first');
+ fs.writeFileSync(path.join(dir,'src/app.js'),'first\nsecond\n');
  const first=releaseInfo(dir);assert.equal(first.sourceHash,releaseInfo(dir).sourceHash);
+ fs.writeFileSync(path.join(dir,'src/app.js'),'first\r\nsecond\r\n');
+ assert.equal(first.sourceHash,releaseInfo(dir).sourceHash,'Windows CRLF and Unix LF must identify the same release');
+ fs.writeFileSync(path.join(dir,'src/app.js'),'first\nsecond\n');
  fs.mkdirSync(path.join(dir,'dist'));fs.writeFileSync(path.join(dir,'dist/generated.js'),'generated');assert.equal(first.sourceHash,releaseInfo(dir).sourceHash,'Generated output cannot change the source fingerprint');
  fs.writeFileSync(path.join(dir,'src/app.js'),'changed');assert.notEqual(first.sourceHash,releaseInfo(dir).sourceHash,'A runtime change must change the release identity');
  assert.equal(first.version,'1.0.0');assert.equal(first.buildNumber,219);
