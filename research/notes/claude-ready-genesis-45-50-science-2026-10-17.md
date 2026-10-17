@@ -17,3 +17,13 @@ Pre-development GitHub main 55b426b and cached Sites source 5c29cce8fd5c8be3db5f
 Validation and release evidence will be appended after completion. Simulated Chat checks do not constitute live generated-answer evaluation; no such claim is made.
 
 Full npm run build passed, including Chat reliability, vocabulary, reference-answer and understanding checks. Full npm run check and a separate scripts/check-verse-roles.mjs passed. Prior-record deep equality, unique ID, reference coordinates and exact KJV quotation checks passed. No side claims invented.
+
+## Release completed
+
+Canonical application checkpoint abafbb8d702031d2040486aa9c611f9e58185ae6 is pushed to GitHub main. Build 223 is live at https://scripture-lens.kvn-mcgwn.chatgpt.site, public audience preserved; Sites version 203, mirror source 78b3417197c6ea698d66a3ab12df678f02010949, deployment appgdep_6ad30da882bc8191b5c84ffb0fa5f5e2 succeeded. Source fingerprint e39e1bcac334f2eb488e6d60a6328dddf6f449988e07bc6659774ee1b9fb0069 matches canonical, mirror, live and mobile assets through release:verify.
+
+release:prepare -- --ios passed full shared, sync, release, mobile and signing checks. All 27 www files match their signed counterparts byte-for-byte; signed CFBundleVersion is 223 and signature verifies. Signed public additionally contains two zero-byte native shims, cordova.js and cordova_plugins.js: whole directories are not identical. Installation succeeded. Launch failed because the device is locked, so native runtime/visual behavior is unverified.
+
+Hosted card opened from Genesis 48:10 under Academic with Agrees status. The complete citation preview equals the packaged KJV verse exactly. Linked KJV chapter and National Eye Institute sources opened successfully in browser tabs. Evidence: hosted-checks.json, signed-assets.json, release-verification.json and citation-preview.jpg in genesis-45-50-science-2026-10-17/. Screenshot inspected. No live generated-answer claim.
+
+Backups: outputs/BibleLens-checkpoint-227.zip (research/application checkpoint), -228.zip (final release evidence). Original untracked prompt and both prior stashes preserved. No second batch performed.
