@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {releaseInfo} from './release-info.mjs';
-const npmCommand=process.platform==='win32'?'npm.cmd':'npm';
 const run=(name,args)=>execFileSync(name,args,{stdio:'inherit'});
+const runNpm=args=>execFileSync(process.execPath,[process.env.npm_execpath,...args],{stdio:'inherit'});
 const git=args=>execFileSync('git',args,{encoding:'utf8'}).trim();
 const flags=new Set(process.argv.slice(2));
 if([...flags].some(f=>!['--ios','--install'].includes(f)))throw Error('Supported options: --ios --install');
@@ -11,7 +11,7 @@ if(git(['status','--porcelain']))throw Error('Commit or preserve local edits bef
 run('git',['fetch','origin']);
 if(git(['rev-list','--count','HEAD..origin/main'])!=='0')throw Error('GitHub has newer commits. Integrate them before releasing.');
 const commit=git(['rev-parse','HEAD']);
-for(const cmd of [['run','build'],['run','check'],['run','check:sync'],['run','check:release'],['run','build:mobile'],['run','check:mobile']])run(npmCommand,cmd);
+for(const cmd of [['run','build'],['run','check'],['run','check:sync'],['run','check:release'],['run','build:mobile'],['run','check:mobile']])runNpm(cmd);
 const release=JSON.parse(fs.readFileSync('www/release.json','utf8'));
 if(release.sourceHash!==releaseInfo().sourceHash)throw Error('Source changed while building. Start the release again.');
 if(flags.has('--ios')){
