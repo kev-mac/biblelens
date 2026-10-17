@@ -1,0 +1,30 @@
+{
+  "batch": "claude-ready-1-timothy-to-hebrews-hebrews-2026-10-17",
+  "completeBatch": true,
+  "booksCovered": "Hebrews",
+  "checked": "2026-10-17T08:32:10.996Z",
+  "draftHashes": {
+    "1-timothy-to-hebrews-records.json": "8a1455323971c738e8531b59ba999bdd0204237dcc1f3514239be7ccc5cbeccc",
+    "1-timothy-to-hebrews-notes.md": "cfbed11c0780c8630055c902587419c5116d1ef9fb8d61ef91fa4c5932638f1b",
+    "1-timothy-to-hebrews-q-records.json": "face02c0839e00c565598811327385566eb1bf38b4eb903af3090ab8ca6bf4ee",
+    "1-timothy-to-hebrews-q-notes.md": "086319c08cd4e9ebc99b975e185b01274ab65748f8eb86680e8b473de382cfbc"
+  },
+  "sourceErrors": [],
+  "sideErrors": [],
+  "kjvQuoteErrors": [],
+  "originalLanguageQuoteErrors": [],
+  "addressErrors": [],
+  "duplicateIds": [],
+  "pendingRecords": 0,
+  "existingEvidenceCount": 1503,
+  "builtInStudyReview": "All six built-in ENTRIES studies were reviewed. None duplicates these Hebrews records. Shared references with coverage-nt-new-covenant, the vengeance translation record and other published evidence concern different clauses or questions and remain separately scoped.",
+  "interpretationLimits": "Edition-specific limits retained; neither served Greek edition is treated as a critical apparatus or proof of the original reading. The Q record preserves multiple readings without choosing one. The Jeremiah cross-book record is held for an owner scheduling ruling. Annotation presence is not exhaustive review.",
+  "records": 24,
+  "accepted": 23,
+  "corrected": 0,
+  "held": 1,
+  "sourcePages": 24,
+  "sideChecks": 25,
+  "kjvQuotedFragments": 27,
+  "originalLanguageFragments": 51
+}

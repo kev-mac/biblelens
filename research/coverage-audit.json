@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1503,
+    "evidenceRecords": 1527,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 841,
-    "annotatedVerses": 4004
+    "chaptersWithAnnotations": 848,
+    "annotatedVerses": 4026
   },
   "byBook": [
     {
@@ -357,8 +357,8 @@
     {
       "book": "Hebrews",
       "chapters": 13,
-      "chaptersWithAnnotations": 4,
-      "annotatedVerses": 10
+      "chaptersWithAnnotations": 11,
+      "annotatedVerses": 32
     },
     {
       "book": "James",
@@ -20164,27 +20164,49 @@
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "by-himself-purged-our-sins-or-purification-of-sins-hebrews-1-3-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-didst-set-him-over-the-works-of-thy-hands-or-not-printed-hebrews-2-7-greek-new-testament",
+        "took-not-on-him-the-nature-of-angels-or-takes-hold-of-angels-hebrews-2-16-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        7,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "christ-jesus-or-jesus-hebrews-3-1-greek-new-testament",
+        "that-generation-or-this-generation-hebrews-3-10-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        1,
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -20210,9 +20232,11 @@
       "bookId": 57,
       "chapter": 6,
       "annotationIds": [
-        "god-that-cannot-lie-or-the-lord-hath-put-a-lying-spirit-titus-1-2-hebrews-6-18-1-kings-22-23"
+        "god-that-cannot-lie-or-the-lord-hath-put-a-lying-spirit-titus-1-2-hebrews-6-18-1-kings-22-23",
+        "your-work-and-labour-of-love-or-your-work-and-love-hebrews-6-10-greek-new-testament"
       ],
       "annotatedVerses": [
+        10,
         18
       ],
       "modes": [
@@ -20224,9 +20248,19 @@
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "nothing-concerning-priesthood-or-nothing-about-priests-hebrews-7-14-greek-new-testament",
+        "after-the-order-of-melchisedec-or-not-printed-hebrews-7-21-greek-new-testament",
+        "became-us-or-became-you-hebrews-7-26-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        14,
+        21,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -20234,9 +20268,13 @@
       "bookId": 57,
       "chapter": 8,
       "annotationIds": [
-        "coverage-nt-new-covenant"
+        "coverage-nt-new-covenant",
+        "priests-that-offer-gifts-or-those-who-offer-the-gifts-hebrews-8-4-greek-new-testament",
+        "his-neighbour-or-his-fellow-citizen-hebrews-8-11-greek-new-testament",
+        "and-their-iniquities-or-not-printed-hebrews-8-12-greek-new-testament"
       ],
       "annotatedVerses": [
+        4,
         8,
         9,
         10,
@@ -20254,9 +20292,11 @@
       "bookId": 57,
       "chapter": 9,
       "annotationIds": [
-        "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also"
+        "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also",
+        "the-first-covenant-or-the-first-tabernacle-hebrews-9-1-greek-new-testament"
       ],
       "annotatedVerses": [
+        1,
         4
       ],
       "modes": [
@@ -20268,9 +20308,19 @@
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "lo-i-come-to-do-thy-will-o-god-or-not-printed-hebrews-10-9-greek-new-testament",
+        "compassion-of-me-in-my-bonds-or-with-the-prisoners-hebrews-10-34-greek-new-testament",
+        "saith-the-lord-or-not-printed-hebrews-10-30-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        9,
+        30,
+        34
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -20279,9 +20329,13 @@
       "chapter": 11,
       "annotationIds": [
         "coverage-nt-faith-works",
-        "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king"
+        "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king",
+        "and-was-delivered-of-a-child-or-not-printed-hebrews-11-11-greek-new-testament",
+        "and-were-persuaded-of-them-or-not-printed-hebrews-11-13-greek-new-testament"
       ],
       "annotatedVerses": [
+        11,
+        13,
         27,
         31
       ],
@@ -20294,18 +20348,39 @@
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-mount-that-might-be-touched-or-what-may-be-touched-hebrews-12-18-greek-new-testament",
+        "or-thrust-through-with-a-dart-or-not-printed-hebrews-12-20-greek-new-testament",
+        "reverence-and-godly-fear-or-reverence-and-awe-hebrews-12-28-greek-new-testament",
+        "if-ye-endure-chastening-or-ye-endure-for-chastening-hebrews-12-7-greek-new-testament",
+        "he-found-no-place-of-repentance-whose-repentance-and-what-he-sought-hebrews-12-17"
+      ],
+      "annotatedVerses": [
+        7,
+        17,
+        18,
+        20,
+        28
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Hebrews",
       "bookId": 57,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "working-in-you-or-working-in-us-hebrews-13-21-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
