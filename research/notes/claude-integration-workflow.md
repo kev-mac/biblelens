@@ -1,5 +1,11 @@
 # Claude proposal integration contract
 
+## Genesis SAB A — direct owner rulings, 2026-10-16
+
+These instructions were supplied directly by the owner in this integration chat. For new H/G drafts, retain the stored H/G codes and display H as Academic and G as Translation; Q displays as (Unanswered) Questions. Existing T records and witness metadata remain unchanged. This supersedes the automatic H/G-to-T conversion instruction for this batch. The witness-label merge still runs and does not retag unlabelled H/G records.
+
+The Isaac-offering record may share Genesis 22:2 if the reader can show two cards on a key verse (verified). Keep Jacob’s burial separate from the land-purchaser record, with reciprocal cross-references. Remove the quoted NETS phrase from the fowl record and retain only the owner’s one-sentence paraphrase and NETS source link. Brenton remains the Greek source. Do not download the NETS PDF. Do not Unicode-normalise the WLC Hebrew.
+
 ## Open questions — direct owner rulings, 2026-10-13
 
 The owner supplied these decisions directly in chat, explicitly adopting the open-question leans. They are not inferred from researcher notes. These rulings supersede earlier conflicting holds or scheduling restrictions, but quotation checks, edition limits, duplicate checks and the standing integration contract still apply.

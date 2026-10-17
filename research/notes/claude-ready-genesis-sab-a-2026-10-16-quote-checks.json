@@ -1,0 +1,849 @@
+{
+  "batchSha256": "a8ab6ce192596cd9872e1db659bf7894ecdb8a2f3c10667ce145ee0037765c92",
+  "normalization": "None; original-language strings compared as UTF-8 byte substrings.",
+  "records": [
+    {
+      "id": "fowl-from-the-waters-or-from-the-ground-hebrew-says-the-waters-swarm",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 1:20",
+          "quote": "Let the waters bring forth abundantly the moving creature that hath life, and fowl that may fly above the earth",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 1:21",
+          "quote": "which the waters brought forth abundantly",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 2:19",
+          "quote": "out of the ground the Lord God formed every beast of the field, and every fowl of the air",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 1:20",
+          "quote": "Let the waters bring forth abundantly the moving creature that hath life, and fowl that may fly above the earth",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 2:19",
+          "quote": "out of the ground the Lord God formed every beast of the field, and every fowl of the air",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": [
+        {
+          "id": "beasts-and-fowl-formed-before-man-or-after",
+          "ref": "Genesis 2:19",
+          "summary": "Genesis 1 has the fowl made on the fifth day and the beasts on the sixth, and then man. Genesis 2, as worded, has man formed, then the beasts and fowl formed and brought to him. Brenton’s Greek of 2:19 has a word the KJV lacks: God formed them “further”.",
+          "shared": [
+            "Genesis 1:21",
+            "Genesis 2:19"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "woman-made-with-man-or-after-the-animals",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 1:27",
+          "quote": "male and female created he them",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 2:18",
+          "quote": "It is not good that the man should be alone",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 2:19",
+          "quote": "brought them unto Adam to see what he would call them",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 2:22",
+          "quote": "made he a woman",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 1:27",
+          "quote": "male and female created he them",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 2:22",
+          "quote": "made he a woman",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": [
+        {
+          "id": "beasts-and-fowl-formed-before-man-or-after",
+          "ref": "Genesis 2:19",
+          "summary": "Genesis 1 has the fowl made on the fifth day and the beasts on the sixth, and then man. Genesis 2, as worded, has man formed, then the beasts and fowl formed and brought to him. Brenton’s Greek of 2:19 has a word the KJV lacks: God formed them “further”.",
+          "shared": [
+            "Genesis 1:27",
+            "Genesis 2:18",
+            "Genesis 2:19"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lord-appeared-to-abram-or-no-man-hath-seen-god",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 12:7",
+          "quote": "the Lord appeared unto Abram",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 17:1",
+          "quote": "the Lord appeared to Abram",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 18:1",
+          "quote": "the Lord appeared unto him in the plains of Mamre",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Exodus 33:20",
+          "quote": "there shall no man see me, and live",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "John 1:18",
+          "quote": "No man hath seen God at any time",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "1 Timothy 6:16",
+          "quote": "whom no man hath seen, nor can see",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 12:7",
+          "quote": "the Lord appeared unto Abram",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Exodus 33:20",
+          "quote": "there shall no man see me, and live",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "John 1:18",
+          "quote": "No man hath seen God at any time",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": [
+        {
+          "id": "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
+          "ref": "Genesis 32:30",
+          "summary": "Jacob says he has seen God face to face and lived. Exodus says no man shall see God and live, and John says no man has seen God at any time.",
+          "shared": [
+            "Exodus 33:20",
+            "John 1:18"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cain-fugitive-and-vagabond-yet-builds-a-city",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 4:12",
+          "quote": "a fugitive and a vagabond shalt thou be in the earth",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 4:16",
+          "quote": "dwelt in the land of Nod",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 4:17",
+          "quote": "he builded a city",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 4:12",
+          "quote": "a fugitive and a vagabond shalt thou be in the earth",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 4:17",
+          "quote": "he builded a city",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": [
+        {
+          "id": "cain-wife-unnamed-origin-unstated",
+          "ref": "Genesis 4:17",
+          "summary": "Genesis says Cain knew his wife and she bore Enoch. It does not name her or say who her parents were, and no woman other than Eve has been mentioned before this verse.",
+          "shared": [
+            "Genesis 4:16",
+            "Genesis 4:17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "it-repented-the-lord-or-god-is-not-a-man-that-he-should-repent",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 6:6",
+          "quote": "it repented the Lord that he had made man on the earth",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Numbers 23:19",
+          "quote": "neither the son of man, that he should repent",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "1 Samuel 15:11",
+          "quote": "It repenteth me that I have set up Saul to be king",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "1 Samuel 15:29",
+          "quote": "he is not a man, that he should repent",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 6:6",
+          "quote": "it repented the Lord that he had made man on the earth",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Numbers 23:19",
+          "quote": "neither the son of man, that he should repent",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "1 Samuel 15:29",
+          "quote": "he is not a man, that he should repent",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": [
+        {
+          "id": "lord-repented-of-saul-not-a-man-to-repent",
+          "ref": "1 Samuel 15:29",
+          "summary": "In one chapter the LORD says “It repenteth me that I have set up Saul”, Samuel says God “will not … repent: for he is not a man, that he should repent”, and the narrator says “the LORD repented that he had made Saul king”.",
+          "shared": [
+            "1 Samuel 15:11",
+            "1 Samuel 15:29"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noah-entered-the-ark-seven-days-before-or-the-day-the-flood-began",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 7:7",
+          "quote": "Noah went in, and his sons",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 7:10",
+          "quote": "after seven days, that the waters of the flood were upon the earth",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 7:11",
+          "quote": "the same day were all the fountains of the great deep broken up",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 7:13",
+          "quote": "In the selfsame day entered Noah",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 7:10",
+          "quote": "after seven days, that the waters of the flood were upon the earth",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 7:13",
+          "quote": "In the selfsame day entered Noah",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": []
+    },
+    {
+      "id": "nations-after-their-tongues-before-babel",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 10:5",
+          "quote": "every one after his tongue",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 10:20",
+          "quote": "after their tongues",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 10:31",
+          "quote": "after their tongues",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 11:1",
+          "quote": "the whole earth was of one language",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 11:9",
+          "quote": "the Lord did there confound the language of all the earth",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 10:5",
+          "quote": "every one after his tongue",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 11:1",
+          "quote": "the whole earth was of one language",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": []
+    },
+    {
+      "id": "uz-hul-gether-sons-of-aram-or-sons-of-shem",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 10:22",
+          "quote": "The children of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 10:23",
+          "quote": "the children of Aram; Uz, and Hul, and Gether, and Mash",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "1 Chronicles 1:17",
+          "quote": "The sons of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 10:23",
+          "quote": "the children of Aram; Uz, and Hul, and Gether, and Mash",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "1 Chronicles 1:17",
+          "quote": "The sons of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": [
+        {
+          "id": "uz-hul-gether-sons-of-shem-or-sons-of-aram-greek-shorter",
+          "ref": "1 Chronicles 1:17",
+          "summary": "Chronicles lists Uz, Hul, Gether and Meshech in one run under “The sons of Shem”. Genesis gives Shem five sons and calls Uz, Hul, Gether and Mash “the children of Aram”. Brenton’s Greek of the Chronicles verse names only the first two sons of Shem and none of the four.",
+          "shared": [
+            "1 Chronicles 1:17",
+            "Genesis 10:22",
+            "Genesis 10:23"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "four-hundred-years-or-four-hundred-and-thirty",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 15:13",
+          "quote": "they shall afflict them four hundred years",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Exodus 12:40",
+          "quote": "was four hundred and thirty years",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Galatians 3:17",
+          "quote": "the law, which was four hundred and thirty years after",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Acts 7:6",
+          "quote": "entreat them evil four hundred years",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 15:13",
+          "quote": "they shall afflict them four hundred years",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Exodus 12:40",
+          "quote": "was four hundred and thirty years",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": [
+        {
+          "id": "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek",
+          "ref": "Exodus 12:40",
+          "summary": "Exodus says the sojourning of Israel, who dwelt in Egypt, was 430 years. Genesis and Acts say 400 years. Galatians counts 430 years from the promise to Abraham to the law. Brenton’s Greek of Exodus makes the 430 years cover Egypt and Canaan together.",
+          "shared": [
+            "Acts 7:6",
+            "Exodus 12:40",
+            "Galatians 3:17",
+            "Genesis 15:13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "who-named-beersheba-abraham-or-isaac",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 21:31",
+          "quote": "he called that place Beersheba; because there they sware both of them",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 26:33",
+          "quote": "he called it Shebah: therefore the name of the city is Beersheba unto this day",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 21:31",
+          "quote": "he called that place Beersheba; because there they sware both of them",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 26:33",
+          "quote": "he called it Shebah: therefore the name of the city is Beersheba unto this day",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": []
+    },
+    {
+      "id": "commanded-to-offer-isaac-yet-child-burning-commanded-not",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 22:2",
+          "quote": "offer him there for a burnt offering",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Jeremiah 7:31",
+          "quote": "to burn their sons and their daughters in the fire; which I commanded them not, neither came it into my heart",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Jeremiah 19:5",
+          "quote": "to burn their sons with fire for burnt offerings unto Baal, which I commanded not, nor spake it, neither came it into my mind",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Deuteronomy 12:31",
+          "quote": "their sons and their daughters they have burnt in the fire to their gods",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 22:2",
+          "quote": "offer him there for a burnt offering",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Jeremiah 19:5",
+          "quote": "which I commanded not, nor spake it, neither came it into my mind",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": []
+    },
+    {
+      "id": "jacob-buried-at-machpelah-or-at-sychem",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 50:13",
+          "quote": "buried him in the cave of the field of Machpelah",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 49:29",
+          "quote": "bury me with my fathers in the cave",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Acts 7:15",
+          "quote": "Jacob went down into Egypt, and died, he, and our fathers",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Acts 7:16",
+          "quote": "were carried over into Sychem",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 50:13",
+          "quote": "buried him in the cave of the field of Machpelah",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Acts 7:16",
+          "quote": "were carried over into Sychem",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": [
+        {
+          "id": "shechem-burial-land-purchaser",
+          "ref": "Joshua 24:32",
+          "summary": "Joshua and Genesis name Jacob as purchaser of the Shechem land; Acts names Abraham as purchaser of a Shechem tomb. The texts do not explicitly explain the different purchaser.",
+          "shared": [
+            "Acts 7:15",
+            "Acts 7:16",
+            "Genesis 50:13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anah-brother-of-zibeon-or-son-of-zibeon",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 36:20",
+          "quote": "the sons of Seir the Horite, who inhabited the land; Lotan, and Shobal, and Zibeon, and Anah",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 36:24",
+          "quote": "the children of Zibeon; both Ajah, and Anah",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 36:2",
+          "quote": "Aholibamah the daughter of Anah the daughter of Zibeon the Hivite",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 36:20",
+          "quote": "the sons of Seir the Horite, who inhabited the land; Lotan, and Shobal, and Zibeon, and Anah",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 36:24",
+          "quote": "the children of Zibeon; both Ajah, and Anah",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": []
+    },
+    {
+      "id": "dishon-son-of-seir-or-son-of-anah",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 36:21",
+          "quote": "Dishon, and Ezer, and Dishan: these are the dukes of the Horites, the children of Seir",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 36:25",
+          "quote": "the children of Anah were these; Dishon, and Aholibamah the daughter of Anah",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 36:21",
+          "quote": "Dishon, and Ezer, and Dishan: these are the dukes of the Horites, the children of Seir",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 36:25",
+          "quote": "the children of Anah were these; Dishon, and Aholibamah the daughter of Anah",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": []
+    },
+    {
+      "id": "korah-son-of-esau-or-chief-of-eliphaz",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 36:5",
+          "quote": "Aholibamah bare Jeush, and Jaalam, and Korah: these are the sons of Esau",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 36:16",
+          "quote": "Duke Korah, duke Gatam, and duke Amalek: these are the dukes that came of Eliphaz",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 36:14",
+          "quote": "she bare to Esau Jeush, and Jaalam, and Korah",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 36:5",
+          "quote": "Aholibamah bare Jeush, and Jaalam, and Korah: these are the sons of Esau",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 36:16",
+          "quote": "Duke Korah, duke Gatam, and duke Amalek: these are the dukes that came of Eliphaz",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": []
+    },
+    {
+      "id": "benjamin-a-little-one-or-father-of-ten-sons",
+      "checks": [
+        {
+          "kind": "text",
+          "ref": "Genesis 44:20",
+          "quote": "a child of his old age, a little one",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 44:22",
+          "quote": "The lad cannot leave his father",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 46:21",
+          "quote": "the sons of Benjamin were Belah, and Becher, and Ashbel, Gera, and Naaman, Ehi, and Rosh, Muppim, and Huppim, and Ard",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 35:18",
+          "quote": "his father called him Benjamin",
+          "exact": true
+        },
+        {
+          "kind": "text",
+          "ref": "Genesis 41:46",
+          "quote": "Joseph was thirty years old when he stood before Pharaoh",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "A",
+          "ref": "Genesis 44:20",
+          "quote": "a child of his old age, a little one",
+          "exact": true
+        },
+        {
+          "kind": "side",
+          "label": "B",
+          "ref": "Genesis 46:21",
+          "quote": "the sons of Benjamin were Belah, and Becher, and Ashbel, Gera, and Naaman, Ehi, and Rosh, Muppim, and Huppim, and Ard",
+          "exact": true
+        }
+      ],
+      "referencesValid": true,
+      "uniqueID": true,
+      "overlapCandidates": []
+    }
+  ],
+  "originalLanguage": [
+    {
+      "edition": "WLC",
+      "chapter": 1,
+      "verse": 20,
+      "quote": "יִשְׁרְצ֣וּ הַמַּ֔יִם שֶׁ֖רֶץ נֶ֣פֶשׁ חַיָּ֑ה",
+      "exactBytes": true
+    },
+    {
+      "edition": "WLC",
+      "chapter": 1,
+      "verse": 20,
+      "quote": "וְעֹוף֙ יְעֹופֵ֣ף עַל־הָאָ֔רֶץ",
+      "exactBytes": true
+    },
+    {
+      "edition": "WLC",
+      "chapter": 2,
+      "verse": 19,
+      "quote": "מִן־הָֽאֲדָמָ֗ה כָּל־חַיַּ֤ת הַשָּׂדֶה֙ וְאֵת֙ כָּל־עֹ֣וף הַשָּׁמַ֔יִם",
+      "exactBytes": true
+    },
+    {
+      "edition": "Brenton Greek",
+      "chapter": 1,
+      "verse": 20,
+      "quote": "ἐξαγαγέτω τὰ ὕδατα ἑρπετὰ ψυχῶν ζωσῶν, καὶ πετεινὰ πετόμενα ἐπὶ τῆς γῆς",
+      "exactBytes": true
+    },
+    {
+      "edition": "Brenton Greek",
+      "chapter": 2,
+      "verse": 19,
+      "quote": "ἔπλασεν ὁ Θεὸς ἔτι ἐκ τῆς γῆς πάντα τὰ θηρία τοῦ ἀγροῦ, καὶ πάντα τὰ πετεινὰ τοῦ οὐρανοῦ",
+      "exactBytes": true
+    }
+  ],
+  "NETS": "PDF not downloaded. Quotation removed per direct owner instruction; retained only supplied paraphrase and source link."
+}

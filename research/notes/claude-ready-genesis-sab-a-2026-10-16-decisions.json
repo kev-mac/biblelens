@@ -1,0 +1,97 @@
+{
+  "batch": "genesis-sab-a-records.json",
+  "sha256": "a8ab6ce192596cd9872e1db659bf7894ecdb8a2f3c10667ce145ee0037765c92",
+  "decisions": [
+    {
+      "id": "fowl-from-the-waters-or-from-the-ground-hebrew-says-the-waters-swarm",
+      "decision": "correct",
+      "reason": "Correct: remove quoted NETS wording and replace it with the owner-approved paraphrase; retain NETS link and Brenton as Greek source. Five original-language byte checks pass. H/G retained. Adds the supplied original-language comparison to the question also covered by built-in animals study; study remains visible as context."
+    },
+    {
+      "id": "woman-made-with-man-or-after-the-animals",
+      "decision": "correct",
+      "reason": "Correct: qualify the claim that chapter 1 describes a single act; it groups male/female without specifying simultaneity. Woman/rib sequence differs from the existing animal/man sequence; Genesis 2:22 is new."
+    },
+    {
+      "id": "lord-appeared-to-abram-or-no-man-hath-seen-god",
+      "decision": "accept",
+      "reason": "Accept: Genesis 12:7, 17:1 and 18:1 occur in neither the Jacob record nor the built-in seen study; standing new-verse ruling applies."
+    },
+    {
+      "id": "cain-fugitive-and-vagabond-yet-builds-a-city",
+      "decision": "accept",
+      "reason": "Exact KJV quotations, valid sides/references, distinct finding, and qualified reconciling readings retained."
+    },
+    {
+      "id": "it-repented-the-lord-or-god-is-not-a-man-that-he-should-repent",
+      "decision": "accept",
+      "reason": "Accept untagged at KJV level. Existing Saul record lacks Genesis 6:6 and Numbers 23:19; new-verse ruling applies, with regret/change-of-purpose readings retained."
+    },
+    {
+      "id": "noah-entered-the-ark-seven-days-before-or-the-day-the-flood-began",
+      "decision": "accept",
+      "reason": "Exact KJV quotations, valid sides/references, distinct finding, and qualified reconciling readings retained."
+    },
+    {
+      "id": "nations-after-their-tongues-before-babel",
+      "decision": "accept",
+      "reason": "Exact KJV quotations, valid sides/references, distinct finding, and qualified reconciling readings retained."
+    },
+    {
+      "id": "uz-hul-gether-sons-of-aram-or-sons-of-shem",
+      "decision": "hold",
+      "reason": "Duplicates the already-published KJV genealogy comparison in uz-hul-gether-sons-of-shem-or-sons-of-aram-greek-shorter, including the same side verses. No second record inserted.",
+      "needsOwner": false
+    },
+    {
+      "id": "four-hundred-years-or-four-hundred-and-thirty",
+      "decision": "hold",
+      "reason": "Duplicates all four comparison verses and the number/starting-point finding in sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek. No second record inserted; unverified variant-report sentence is not adopted.",
+      "needsOwner": false
+    },
+    {
+      "id": "who-named-beersheba-abraham-or-isaac",
+      "decision": "accept",
+      "reason": "Exact KJV quotations, valid sides/references, distinct finding, and qualified reconciling readings retained."
+    },
+    {
+      "id": "commanded-to-offer-isaac-yet-child-burning-commanded-not",
+      "decision": "correct",
+      "reason": "Correct: direct owner permits sharing Genesis 22:2 if two cards work. Existing multiple-card validation plus batch-specific rendered-card check verifies support. Retain stopped test versus sacrifices to other gods distinction."
+    },
+    {
+      "id": "jacob-buried-at-machpelah-or-at-sychem",
+      "decision": "correct",
+      "reason": "Correct: direct owner approves separate burial record and reciprocal cross-reference with purchaser record. Preserve ambiguity of Acts plural subject."
+    },
+    {
+      "id": "anah-brother-of-zibeon-or-son-of-zibeon",
+      "decision": "accept",
+      "reason": "Exact KJV quotations, valid sides/references, distinct finding, and qualified reconciling readings retained."
+    },
+    {
+      "id": "dishon-son-of-seir-or-son-of-anah",
+      "decision": "accept",
+      "reason": "Exact KJV quotations, valid sides/references, distinct finding, and qualified reconciling readings retained."
+    },
+    {
+      "id": "korah-son-of-esau-or-chief-of-eliphaz",
+      "decision": "accept",
+      "reason": "Exact KJV quotations, valid sides/references, distinct finding, and qualified reconciling readings retained."
+    },
+    {
+      "id": "benjamin-a-little-one-or-father-of-ten-sons",
+      "decision": "accept",
+      "reason": "Exact KJV quotations, valid sides/references, distinct finding, and qualified reconciling readings retained."
+    }
+  ],
+  "ownerRulings": [
+    "Isaac offering may share Genesis 22:2 if reader supports two cards.",
+    "Keep Jacob burial separate with reciprocal cross-reference.",
+    "Remove quoted NETS phrase, use one-sentence paraphrase and source link; do not download PDF.",
+    "Keep H/G/Q stored codes and display H as Academic, G as Translation, Q as (Unanswered) Questions."
+  ],
+  "existingRecordExtensions": [
+    "shechem-burial-land-purchaser"
+  ]
+}

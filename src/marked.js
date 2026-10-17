@@ -2,7 +2,7 @@
 // Book-scoped comparison browsing uses public records; personal marks use local storage with optional cloud sync.
 const markedComparisonCache=new Map();
 let markedBookSelection=null,markedChapterSelection=0,markedKind='all',markedWorkspaceGeneration=0,markedData=null;
-const MARKED_CATEGORIES=[['all','All categories'],['bookmark','Marked'],['T','Translation'],['V','Violations'],['Q','Questions'],['academic','Academic'],['contradictions','Contradictions']];
+const MARKED_CATEGORIES=[['all','All categories'],['bookmark','Marked'],['T','Translation'],['V','Violations'],['Q','(Unanswered) Questions'],['academic','Academic'],['contradictions','Contradictions']];
 function markedChoices(record,placement){const item={...record,...placement},tags=recordTags(item);return tags.length?tags.map(tag=>({...item,tag})):item.mode==='questions'?[{...item,tag:'Q'}]:[item];}
 function markedRecordVisible(record){return record.placements.some(p=>markedChoices(record,p).some(visibleComparison));}
 function markedMatchingPlacements(record){return record.placements.filter(p=>(!markedChapterSelection||p.chapter===markedChapterSelection)&&markedChoices(record,p).some(choice=>visibleComparison(choice)&&(markedKind==='all'||filterCategory(choice)===markedKind)));}

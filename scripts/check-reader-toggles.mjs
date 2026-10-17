@@ -66,7 +66,7 @@ console.log('PASS: summaries collapsed by default; category-off retains verse ic
 assert(context.visible({mode:'science',status:'Context',tags:['Q']}));
 context.cache.set('0:1:kjv:science',{items:[{id:'fixture-question',verse:3,placementRole:'context',keyTarget:'Genesis 1:1',status:'Context',tags:['Q'],title:'Fixture question',refs:[],sources:[]}]});
 context.filters.delete('Q');assert.equal(context.render(3),'');context.filters.add('Q');
-const pointer=context.render(3);assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-local="false"'));assert(pointer.includes('aria-disabled="true"'));context.readRef=()=>({book:0,chapter:1,verse:1});const local=context.render(3);assert(local.includes('data-context-jump="1"'));assert(local.includes('data-context-local="true"'));context.readRef=()=>null;assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('Unanswered question'));
+const pointer=context.render(3);assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-local="false"'));assert(pointer.includes('aria-disabled="true"'));context.readRef=()=>({book:0,chapter:1,verse:1});const local=context.render(3);assert(local.includes('data-context-jump="1"'));assert(local.includes('data-context-local="true"'));context.readRef=()=>null;assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('(Unanswered) Questions'));
 const css=fs.readFileSync('src/style.css','utf8');assert(css.includes('.agreement.question,body.dark .agreement.question'));assert(css.includes('[data-tone="question"]'));
 const html=fs.readFileSync('src/index.html','utf8');
 assert(html.indexOf('id="theme"')>html.indexOf('id="reader-settings"'),'Theme control belongs inside Reader settings');
@@ -104,7 +104,7 @@ context.cache.clear();for(const mode of ['history','contradictions','science','q
 context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'context-only',verse:1,placementRole:'context',tags:['Q'],status:'Context'}]});
 vm.runInContext(source.slice(source.indexOf('function comparisonStatus('),source.indexOf('async function ensureComparisons(')),context);context.comparisonStatus();
 const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(qFilter.includes('disabled'));assert(qFilter.includes('data-brightness="empty"'));assert(qFilter.includes('aria-pressed="false"'));
-context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'key-one',verse:1,placementRole:'key',tags:['Q'],status:'Context'},{id:'key-one',verse:2,placementRole:'key',tags:['Q'],status:'Context'},{id:'context-only',verse:3,placementRole:'context',tags:['Q'],status:'Context'}]});context.comparisonStatus();assert(statusNode.innerHTML.includes('Question: 1 summaries'));
+context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'key-one',verse:1,placementRole:'key',tags:['Q'],status:'Context'},{id:'key-one',verse:2,placementRole:'key',tags:['Q'],status:'Context'},{id:'context-only',verse:3,placementRole:'context',tags:['Q'],status:'Context'}]});context.comparisonStatus();assert(statusNode.innerHTML.includes('(Unanswered) Questions: 1 summaries'));
 context.reading.verses=[{n:1},{n:2},{n:3}];context.comparisonStatus();assert(statusNode.innerHTML.includes('data-brightness="empty"'));
 vm.runInContext("categoryFilters.add('Q');comparisonRecordSelections.set('key-one:Q',true)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="open"/));
 vm.runInContext("comparisonRecordSelections.set('key-one:Q',false)",context);context.comparisonStatus();assert(statusNode.innerHTML.match(/data-category-filter="Q"[^>]*data-brightness="open"/));
@@ -187,3 +187,17 @@ vm.runInContext(source.slice(source.indexOf('const READER_FONTS='),source.indexO
 assert.equal(fontNodes.get('#verse-font-family').value,'inter');assert.equal(fontNodes.get('#category-font-family').value,'georgia');
 fontNodes.get('#verse-font-family').onchange({target:{value:'lora'}});assert.equal(fontsContext.readerPreferences.verseFont,'lora');assert.equal(fontsContext.readerPreferences.categoryFont,'georgia');assert.equal(fontSaves,1);assert(fontProperties.get('--verse-font-family').includes('Lora'));assert(fontProperties.get('--category-font-family').includes('Georgia'));
 console.log('PASS: independent verse/category fonts, safe fallback and persisted preferences.');
+
+// Legacy stored H/G codes keep distinct display groups and toggle independently.
+vm.runInContext("this.tags=recordTags;this.group=filterCategory;this.languageLabels=languageTags",context);
+assert.deepEqual(Array.from(context.tags({tags:['H','G']})),['H','G']);
+assert.equal(context.group({tag:'H'}),'academic');assert.equal(context.group({tag:'G'}),'T');
+assert.equal(context.languageLabels.H.label,'Academic');assert.equal(context.languageLabels.G.label,'Translation');assert.equal(context.languageLabels.Q.label,'(Unanswered) Questions');
+context.cache.clear();for(const mode of ['history','contradictions','science','questions'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
+context.cache.set('0:1:kjv:contradictions',{status:'ready',items:[{id:'dual-language-fixture',verse:1,placementRole:'key',tags:['H','G'],status:'Context',title:'Dual-language fixture',summary:'Fixture only',text:'Limits',sources:[]}]});
+vm.runInContext("categoryFilters.add('academic');categoryFilters.add('T')",context);
+const dual=context.render(1);assert(dual.includes('data-comparison-record="dual-language-fixture:H"'));assert(dual.includes('data-comparison-record="dual-language-fixture:G"'));assert(dual.includes('aria-label="Academic'));assert(dual.includes('aria-label="Translation'));
+context.comparisonStatus();assert(statusNode.innerHTML.includes('Academic: 1 summaries'));assert(statusNode.innerHTML.includes('Translation: 1 summaries'));
+vm.runInContext("comparisonRecordSelections.set('dual-language-fixture:H',true);comparisonRecordSelections.set('dual-language-fixture:G',false)",context);
+const onlyH=context.render(1);assert(onlyH.includes('comparison-panel-1-contradictions-0-H" aria-labelledby="comparison-tab-1-contradictions-0-H" >'));assert(onlyH.includes('comparison-panel-1-contradictions-0-G" aria-labelledby="comparison-tab-1-contradictions-0-G" hidden'));
+console.log('PASS: H/G codes retained; Academic/Translation cards and independent toggle groups; Q display name.');

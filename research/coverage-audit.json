@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1348,
+    "evidenceRecords": 1362,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 793,
-    "annotatedVerses": 3799
+    "chaptersWithAnnotations": 797,
+    "annotatedVerses": 3836
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 35,
-      "annotatedVerses": 112
+      "chaptersWithAnnotations": 38,
+      "annotatedVerses": 145
     },
     {
       "book": "Exodus",
@@ -40,7 +40,7 @@
       "book": "Deuteronomy",
       "chapters": 34,
       "chaptersWithAnnotations": 34,
-      "annotatedVerses": 351
+      "annotatedVerses": 352
     },
     {
       "book": "Joshua",
@@ -154,7 +154,7 @@
       "book": "Jeremiah",
       "chapters": 52,
       "chaptersWithAnnotations": 28,
-      "annotatedVerses": 51
+      "annotatedVerses": 53
     },
     {
       "book": "Lamentations",
@@ -333,8 +333,8 @@
     {
       "book": "1 Timothy",
       "chapters": 6,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 4
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 5
     },
     {
       "book": "2 Timothy",
@@ -422,6 +422,8 @@
         "genesis-1-celestial-sequence",
         "genesis-1-light-before-the-lights-source-unstated",
         "god-speaks-as-us-addressees-unstated",
+        "fowl-from-the-waters-or-from-the-ground-hebrew-says-the-waters-swarm",
+        "woman-made-with-man-or-after-the-animals",
         "study-animals",
         "study-plants"
       ],
@@ -439,7 +441,9 @@
         18,
         19,
         20,
-        26
+        21,
+        26,
+        27
       ],
       "modes": [
         "science",
@@ -456,6 +460,8 @@
         "beasts-and-fowl-formed-before-man-or-after",
         "god-ended-his-work-on-the-seventh-day-or-the-sixth-greek",
         "in-the-day-thou-eatest-thou-shalt-surely-die-adam-lived-930-years",
+        "fowl-from-the-waters-or-from-the-ground-hebrew-says-the-waters-swarm",
+        "woman-made-with-man-or-after-the-animals",
         "study-animals",
         "study-plants"
       ],
@@ -463,7 +469,9 @@
         2,
         5,
         17,
-        19
+        18,
+        19,
+        22
       ],
       "modes": [
         "contradictions"
@@ -493,12 +501,15 @@
         "cain-feared-being-slain-by-whom",
         "cain-wife-unnamed-origin-unstated",
         "cain-talked-with-abel-greek-gives-his-words",
-        "men-began-to-call-on-the-name-of-the-lord-or-enos-hoped-greek"
+        "men-began-to-call-on-the-name-of-the-lord-or-enos-hoped-greek",
+        "cain-fugitive-and-vagabond-yet-builds-a-city"
       ],
       "annotatedVerses": [
         8,
+        12,
         14,
         15,
+        16,
         17,
         26
       ],
@@ -541,11 +552,13 @@
       "annotationIds": [
         "early-ark-count",
         "sons-of-god-and-daughters-of-men-identity-unstated",
-        "the-earth-is-filled-with-violence-through-them-or-sin-is-not-imputed-when-there-is-no-law-genesis-6-13-romans-5-13"
+        "the-earth-is-filled-with-violence-through-them-or-sin-is-not-imputed-when-there-is-no-law-genesis-6-13-romans-5-13",
+        "it-repented-the-lord-or-god-is-not-a-man-that-he-should-repent"
       ],
       "annotatedVerses": [
         2,
         4,
+        6,
         13,
         19,
         20
@@ -562,12 +575,17 @@
       "chapter": 7,
       "annotationIds": [
         "early-ark-count",
-        "shem-a-hundred-years-old-two-years-after-the-flood"
+        "shem-a-hundred-years-old-two-years-after-the-flood",
+        "noah-entered-the-ark-seven-days-before-or-the-day-the-flood-began"
       ],
       "annotatedVerses": [
         2,
         3,
-        6
+        6,
+        7,
+        10,
+        11,
+        13
       ],
       "modes": [
         "contradictions"
@@ -605,10 +623,14 @@
       "bookId": 0,
       "chapter": 10,
       "annotationIds": [
-        "arphaxad-begat-salah-or-cainan-greek-genesis-and-luke"
+        "arphaxad-begat-salah-or-cainan-greek-genesis-and-luke",
+        "nations-after-their-tongues-before-babel"
       ],
       "annotatedVerses": [
-        24
+        5,
+        20,
+        24,
+        31
       ],
       "modes": [
         "contradictions"
@@ -623,10 +645,13 @@
         "god-speaks-as-us-addressees-unstated",
         "shem-a-hundred-years-old-two-years-after-the-flood",
         "arphaxad-begat-salah-or-cainan-greek-genesis-and-luke",
-        "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death"
+        "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death",
+        "nations-after-their-tongues-before-babel"
       ],
       "annotatedVerses": [
+        1,
         7,
+        9,
         10,
         12,
         13,
@@ -644,10 +669,12 @@
       "bookId": 0,
       "chapter": 12,
       "annotationIds": [
-        "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death"
+        "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death",
+        "lord-appeared-to-abram-or-no-man-hath-seen-god"
       ],
       "annotatedVerses": [
-        4
+        4,
+        7
       ],
       "modes": [
         "contradictions"
@@ -720,9 +747,11 @@
       "bookId": 0,
       "chapter": 17,
       "annotationIds": [
-        "joshua-wilderness-circumcision"
+        "joshua-wilderness-circumcision",
+        "lord-appeared-to-abram-or-no-man-hath-seen-god"
       ],
       "annotatedVerses": [
+        1,
         10,
         11,
         12,
@@ -739,7 +768,8 @@
       "bookId": 0,
       "chapter": 18,
       "annotationIds": [
-        "three-men-at-mamre-and-the-lord-relation-unstated"
+        "three-men-at-mamre-and-the-lord-relation-unstated",
+        "lord-appeared-to-abram-or-no-man-hath-seen-god"
       ],
       "annotatedVerses": [
         1,
@@ -747,7 +777,8 @@
         22
       ],
       "modes": [
-        "questions"
+        "questions",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -780,11 +811,13 @@
       "bookId": 0,
       "chapter": 21,
       "annotationIds": [
-        "ishmael-past-fourteen-or-a-child-set-on-hagars-shoulder-greek"
+        "ishmael-past-fourteen-or-a-child-set-on-hagars-shoulder-greek",
+        "who-named-beersheba-abraham-or-isaac"
       ],
       "annotatedVerses": [
         14,
-        16
+        16,
+        31
       ],
       "modes": [
         "contradictions"
@@ -798,7 +831,8 @@
       "annotationIds": [
         "angel-of-the-lord-speaks-as-god-identity-unstated",
         "thine-only-son-isaac-or-thy-beloved-son-greek",
-        "god-did-tempt-abraham-or-god-tempteth-no-man"
+        "god-did-tempt-abraham-or-god-tempteth-no-man",
+        "commanded-to-offer-isaac-yet-child-burning-commanded-not"
       ],
       "annotatedVerses": [
         1,
@@ -862,9 +896,12 @@
       "bookId": 0,
       "chapter": 26,
       "annotationIds": [
-        "bashemath-daughter-of-elon-the-hittite-or-of-ishmael"
+        "bashemath-daughter-of-elon-the-hittite-or-of-ishmael",
+        "who-named-beersheba-abraham-or-isaac"
       ],
       "annotatedVerses": [
+        32,
+        33,
         34
       ],
       "modes": [
@@ -976,7 +1013,8 @@
       "bookId": 0,
       "chapter": 35,
       "annotationIds": [
-        "benjamin-born-near-ephrath-or-in-padanaram"
+        "benjamin-born-near-ephrath-or-in-padanaram",
+        "benjamin-a-little-one-or-father-of-ten-sons"
       ],
       "annotatedVerses": [
         16,
@@ -995,12 +1033,22 @@
       "chapter": 36,
       "annotationIds": [
         "bashemath-daughter-of-elon-the-hittite-or-of-ishmael",
-        "timna-son-of-eliphaz-or-his-concubine"
+        "timna-son-of-eliphaz-or-his-concubine",
+        "anah-brother-of-zibeon-or-son-of-zibeon",
+        "dishon-son-of-seir-or-son-of-anah",
+        "korah-son-of-esau-or-chief-of-eliphaz"
       ],
       "annotatedVerses": [
         2,
         3,
-        12
+        5,
+        12,
+        14,
+        16,
+        20,
+        21,
+        24,
+        25
       ],
       "modes": [
         "contradictions"
@@ -1062,9 +1110,15 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 41,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "benjamin-a-little-one-or-father-of-ten-sons"
+      ],
+      "annotatedVerses": [
+        46
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -1089,18 +1143,31 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 44,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "benjamin-a-little-one-or-father-of-ten-sons"
+      ],
+      "annotatedVerses": [
+        20,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Genesis",
       "bookId": 0,
       "chapter": 45,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "benjamin-a-little-one-or-father-of-ten-sons"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -1109,7 +1176,8 @@
       "chapter": 46,
       "annotationIds": [
         "exodus-family-counts",
-        "benjamin-ten-sons-or-sons-and-grandsons-greek"
+        "benjamin-ten-sons-or-sons-and-grandsons-greek",
+        "benjamin-a-little-one-or-father-of-ten-sons"
       ],
       "annotatedVerses": [
         21,
@@ -1159,13 +1227,15 @@
         "deuteronomy-levi-blessing-and-rebuke",
         "until-shiloh-come-who-or-what-is-shiloh",
         "simeon-and-levi-digged-down-a-wall-or-houghed-an-ox",
-        "until-shiloh-come-or-until-the-things-laid-up-for-him-come-greek"
+        "until-shiloh-come-or-until-the-things-laid-up-for-him-come-greek",
+        "jacob-buried-at-machpelah-or-at-sychem"
       ],
       "annotatedVerses": [
         5,
         6,
         7,
-        10
+        10,
+        29
       ],
       "modes": [
         "contradictions",
@@ -1178,7 +1248,8 @@
       "bookId": 0,
       "chapter": 50,
       "annotationIds": [
-        "shechem-burial-land-purchaser"
+        "shechem-burial-land-purchaser",
+        "jacob-buried-at-machpelah-or-at-sychem"
       ],
       "annotatedVerses": [
         12,
@@ -2126,6 +2197,7 @@
         "exodus-cloud-entry-guidance",
         "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
         "moses-took-the-tabernacle-or-his-own-tent-greek",
+        "lord-appeared-to-abram-or-no-man-hath-seen-god",
         "study-seen"
       ],
       "annotatedVerses": [
@@ -3854,7 +3926,8 @@
       "annotationIds": [
         "numbers-blessing-stability-and-relenting",
         "numbers-unicorn-translation",
-        "let-my-last-end-be-like-his-or-my-seed-as-their-seed-greek"
+        "let-my-last-end-be-like-his-or-my-seed-as-their-seed-greek",
+        "it-repented-the-lord-or-god-is-not-a-man-that-he-should-repent"
       ],
       "annotatedVerses": [
         10,
@@ -4590,7 +4663,8 @@
       "annotationIds": [
         "leviticus-blood-life-and-atonement",
         "numbers-levite-income-and-contribution",
-        "deuteronomy-local-slaughter-and-sacrifice"
+        "deuteronomy-local-slaughter-and-sacrifice",
+        "commanded-to-offer-isaac-yet-child-burning-commanded-not"
       ],
       "annotatedVerses": [
         5,
@@ -4611,7 +4685,8 @@
         23,
         24,
         26,
-        27
+        27,
+        31
       ],
       "modes": [
         "science",
@@ -6485,7 +6560,8 @@
       "chapter": 15,
       "annotationIds": [
         "lord-repented-of-saul-not-a-man-to-repent",
-        "amalekites-utterly-destroyed-then-raiding"
+        "amalekites-utterly-destroyed-then-raiding",
+        "it-repented-the-lord-or-god-is-not-a-man-that-he-should-repent"
       ],
       "annotatedVerses": [
         7,
@@ -13349,10 +13425,12 @@
       "bookId": 23,
       "chapter": 7,
       "annotationIds": [
-        "commanded-to-offer-at-sinai-or-commanded-nothing-concerning-burnt-offerings"
+        "commanded-to-offer-at-sinai-or-commanded-nothing-concerning-burnt-offerings",
+        "commanded-to-offer-isaac-yet-child-burning-commanded-not"
       ],
       "annotatedVerses": [
-        22
+        22,
+        31
       ],
       "modes": [
         "contradictions"
@@ -13484,10 +13562,12 @@
       "bookId": 23,
       "chapter": 19,
       "annotationIds": [
-        "by-the-entry-of-the-east-gate-or-at-the-gate-of-charsith-jeremiah-19-2-greek"
+        "by-the-entry-of-the-east-gate-or-at-the-gate-of-charsith-jeremiah-19-2-greek",
+        "commanded-to-offer-isaac-yet-child-burning-commanded-not"
       ],
       "annotatedVerses": [
-        2
+        2,
+        5
       ],
       "modes": [
         "contradictions"
@@ -17464,6 +17544,7 @@
         "bethabara-or-bethany-beyond-jordan-john-1-28-greek-new-testament",
         "simon-son-of-jona-or-son-of-john-john-1-42-21-15-21-16-21-17-greek-new-testament",
         "i-have-need-to-be-baptized-of-thee-or-i-knew-him-not-matthew-3-14-john-1-33",
+        "lord-appeared-to-abram-or-no-man-hath-seen-god",
         "study-seen"
       ],
       "annotatedVerses": [
@@ -18013,7 +18094,8 @@
         "a-prophet-shall-the-lord-your-god-raise-up-him-shall-ye-hear-acts-7-37-greek-new-testament",
         "the-god-of-jacob-or-the-house-of-jacob-acts-7-46-greek-new-testament",
         "i-will-carry-you-away-beyond-babylon-or-beyond-damascus-acts-7-43-amos-5-27",
-        "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+        "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22",
+        "jacob-buried-at-machpelah-or-at-sychem"
       ],
       "annotatedVerses": [
         4,
@@ -19431,9 +19513,15 @@
       "book": "1 Timothy",
       "bookId": 53,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "lord-appeared-to-abram-or-no-man-hath-seen-god"
+      ],
+      "annotatedVerses": [
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
