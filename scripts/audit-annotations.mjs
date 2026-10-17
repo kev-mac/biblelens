@@ -16,7 +16,7 @@ function resolve(ref){const m=/^(.*?) (\d+):(\d+)$/.exec(ref||'');const book=m&&
 function record(ref,id,mode){const match=resolve(ref);if(match){match.row.annotations.add(id);match.row.verses.add(match.verse);match.row.modes.add(mode);}}
 for(const [index,e] of evidence.entries()){
  const id=e.id||`legacy-evidence-${index}`;if(ids.has(id))errors.push(`Duplicate annotation ID: ${id}`);ids.add(id);
- if(!['science','history','contradictions','questions'].includes(e.mode))errors.push(`Invalid mode: ${id}`);
+ if(!['science','history','contradictions','questions','commandments'].includes(e.mode))errors.push(`Invalid mode: ${id}`);
  for(const name of ['summary','text','scope'])if(!e[name]?.trim())errors.push(`Missing ${name}: ${id}`);
  if(!e.sources?.length)errors.push(`Missing sources: ${id}`);
  for(const source of e.sources||[])if(!source.label||!/^https:\/\//.test(source.url))errors.push(`Invalid source: ${id}`);

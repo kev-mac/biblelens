@@ -2,7 +2,7 @@ import {validateSides} from './verse-roles.mjs';
 import zlib from 'node:zlib';
 export const WITNESSES=['Hebrew','Septuagint','Hebrew and Septuagint','Greek New Testament'];
 export function validateWitnesses(records,books,chapters){
- const ids=new Set(),cache=new Map(),modes=['history','contradictions','science','questions'];
+ const ids=new Set(),cache=new Map(),modes=['history','contradictions','science','questions','commandments'];
  for(const r of records){
   if(!r.id||ids.has(r.id))throw Error('Missing or duplicate evidence ID: '+r.id);ids.add(r.id);
   if(!modes.includes(r.mode)||typeof r.summary!=='string'||!r.summary||typeof r.text!=='string'||(r.refs!==undefined&&!Array.isArray(r.refs))||!Array.isArray(r.sources))throw Error(r.id+': invalid evidence record');

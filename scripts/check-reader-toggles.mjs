@@ -103,7 +103,7 @@ console.log('PASS: Q tag, accessible label, initially hidden summary, independen
 
 context.cache.set('0:1:kjv:science',{items:[]});
 context.cache.set('0:1:kjv:questions',{items:[{id:'fixture-questions-category',verse:3,status:'Context',tags:['Q'],title:'Fixture unanswered question',summary:'Fixture only',text:'Limits',sources:[],placementRole:'key'},{id:'fixture-questions-category',verse:5,status:'Context',tags:['Q'],title:'Fixture unanswered question',keyTarget:'Genesis 1:3',placementRole:'context'}]});
-const qCard=context.render(3);assert(qCard.includes('Fixture unanswered question'));assert(qCard.includes('comparison-panel-3-questions-0-Q'));assert(qCard.includes('aria-expanded="false"'));assert(context.render(5).includes('data-context-local="false"'));assert(!context.render(5).includes('Context for:'));assert(source.includes("comparisonModes=['history','contradictions','science','questions']"));
+const qCard=context.render(3);assert(qCard.includes('Fixture unanswered question'));assert(qCard.includes('comparison-panel-3-questions-0-Q'));assert(qCard.includes('aria-expanded="false"'));assert(context.render(5).includes('data-context-local="false"'));assert(!context.render(5).includes('Context for:'));assert(source.includes("comparisonModes=['history','contradictions','science','questions','commandments']"));
 console.log('PASS: independent Questions category participates in reader loading and Q card/context rendering.');
 
 context.cache.set('0:1:kjv:contradictions',{items:[{id:'fixture-targeted-greek',verse:6,status:'Textual conflict',tags:['G'],activeTags:[],title:'Fixture KJV contrast',summary:'Fixture only',text:'Limits',sources:[]}]});const untargeted=context.render(6);assert(untargeted.includes('data-icon="fold-horizontal"'));assert(!untargeted.includes('>G</button>'));
@@ -121,7 +121,7 @@ assert(html.includes('id="reader-font" type="range"'));
 console.log('PASS: text-size slider scales live from 85 to 150 percent, labels values and persists on change.');
 
 const statusNode={};context.$=selector=>selector==='#comparison-status'?statusNode:{value:selector==='#reader-edition'?'kjv':'on'};
-context.cache.clear();for(const mode of ['history','contradictions','science','questions'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
+context.cache.clear();for(const mode of ['history','contradictions','science','questions','commandments'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
 context.cache.set('0:1:kjv:questions',{status:'ready',items:[{id:'context-only',verse:1,placementRole:'context',tags:['Q'],status:'Context'}]});
 vm.runInContext(source.slice(source.indexOf('function comparisonStatus('),source.indexOf('async function ensureComparisons(')),context);context.comparisonStatus();
 const qFilter=statusNode.innerHTML.match(/<button[^>]*data-category-filter="Q"[\s\S]*?<\/button>/)[0];assert(!qFilter.includes('filter-badge'));assert(qFilter.includes('disabled'));assert(qFilter.includes('data-brightness="empty"'));assert(qFilter.includes('aria-pressed="false"'));
@@ -214,7 +214,7 @@ vm.runInContext("this.tags=recordTags;this.group=filterCategory;this.languageLab
 assert.deepEqual(Array.from(context.tags({tags:['H','G']})),['H','G']);
 assert.equal(context.group({tag:'H'}),'academic');assert.equal(context.group({tag:'G'}),'T');
 assert.equal(context.languageLabels.H.label,'Academic');assert.equal(context.languageLabels.G.label,'Translation');assert.equal(context.languageLabels.Q.label,'Questions');
-context.cache.clear();for(const mode of ['history','contradictions','science','questions'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
+context.cache.clear();for(const mode of ['history','contradictions','science','questions','commandments'])context.cache.set(`0:1:kjv:${mode}`,{status:'ready',items:[]});
 context.cache.set('0:1:kjv:contradictions',{status:'ready',items:[{id:'dual-language-fixture',verse:1,placementRole:'key',tags:['H','G'],status:'Context',title:'Dual-language fixture',summary:'Fixture only',text:'Limits',sources:[]}]});
 vm.runInContext("categoryFilters.add('academic');categoryFilters.add('T')",context);
 const dual=context.render(1);assert(dual.includes('data-comparison-record="dual-language-fixture:H"'));assert(dual.includes('data-comparison-record="dual-language-fixture:G"'));assert(dual.includes('aria-label="Academic'));assert(dual.includes('aria-label="Translation'));

@@ -1,4 +1,6 @@
+import {validateCommandments} from './commandments.mjs';
 import zlib from 'node:zlib';
+import {validateRelatedPassages} from './study-relationships.mjs';
 import {releaseInfo} from './release-info.mjs';
 import MiniSearch from 'minisearch';
 import {buildVocabulary,searchLicenses} from './search-vocabulary.mjs';
@@ -11,8 +13,10 @@ validateSides(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.pars
 validateWitnesses(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const chapterNames=JSON.parse(fs.readFileSync('data/chapter-names.json','utf8'));
 console.log('Validated chapter names:',validateChapterNames(chapterNames,JSON.parse(fs.readFileSync('data/books.json','utf8'))));
-const evidenceRecords=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));for(const record of evidenceRecords){if(!['history','contradictions','science','questions'].includes(record.mode))throw Error('Unsupported evidence mode: '+record.mode);if(record.mode==='questions'&&!(record.tags||[record.tag]).includes('Q'))throw Error('Questions record requires Q tag: '+record.id);}
+const evidenceRecords=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));for(const record of evidenceRecords){if(!['history','contradictions','science','questions','commandments'].includes(record.mode))throw Error('Unsupported evidence mode: '+record.mode);if(record.mode==='questions'&&!(record.tags||[record.tag]).includes('Q'))throw Error('Questions record requires Q tag: '+record.id);}
+validateCommandments(evidenceRecords,JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const root=process.cwd();const context={};vm.createContext(context);vm.runInContext(fs.readFileSync('src/data.js','utf8')+'\nthis.studies=ENTRIES;',context);
+validateRelatedPassages([...evidenceRecords,...context.studies],JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const assets={};for(const [name,type]of Object.entries({'index.html':'text/html; charset=utf-8','fonts.css':'text/css; charset=utf-8','style.css':'text/css; charset=utf-8','app.js':'application/javascript; charset=utf-8','data.js':'application/javascript; charset=utf-8','red-letters.js':'application/javascript; charset=utf-8','passage.js':'application/javascript; charset=utf-8','reader.js':'application/javascript; charset=utf-8','marked.js':'application/javascript; charset=utf-8','sync-core.js':'application/javascript; charset=utf-8','sync.js':'application/javascript; charset=utf-8','release.js':'application/javascript; charset=utf-8','mobile.js':'application/javascript; charset=utf-8','citations.js':'application/javascript; charset=utf-8'})){assets[name==='index.html'?'/':'/'+name]={type,body:fs.readFileSync('src/'+name,'utf8')}}
 assets['/release.json']={type:'application/json; charset=utf-8',body:JSON.stringify(releaseInfo())};
 assets['/reader.js'].body=assets['/reader.js'].body.replace('/*__CHAPTER_NAMES__*/{}',JSON.stringify(Object.fromEntries(Object.entries(chapterNames).filter(([key])=>!key.startsWith('_')))));

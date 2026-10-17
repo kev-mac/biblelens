@@ -1237,3 +1237,17 @@ body #chat-view:has(.chat-message) #chat-status{margin-bottom:16px}
 body #chat-view #clear-chat{touch-action:none;user-select:none;left:var(--chat-button-left,auto);top:var(--chat-button-top,auto)}
 body #chat-view #clear-chat.is-dragging{cursor:grabbing}
 html.mobile-editing body #chat-view:has(.chat-message) #chat-form{bottom:auto;top:calc(var(--visual-offset-top,0px) + var(--visual-height,100dvh) - 64px - env(safe-area-inset-bottom,0px))}
+
+/* Commandments are reference cards grouped by theme. */
+body :is(.commandments,[data-tone="commandments"]){--theme-rgb:20,184,166;--tone-start:#14b8a6;--tone-bright:#5eead4;--tone-fade:#0f766e;--tone-end:#134e4a;--tone-ink:#fff}
+body .comparison-dock .comparison-status{grid-template-columns:repeat(7,minmax(0,1fr))}
+body #saved-view .marked-theme-heading{display:flex;align-items:center;gap:10px;font-size:1rem;margin:22px 0 12px;color:inherit}
+body #saved-view .marked-theme-group .marked-comparison-card h3{font-size:1.05rem}
+.commandment-labels,.commandment-filter-chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
+.commandment-labels span{font-size:.72rem;border:1px solid rgba(var(--theme-rgb),.45);border-radius:20px;padding:3px 8px}
+body .commandment-filter-chips button{border:1px solid rgba(var(--theme-rgb),.4);border-radius:20px;padding:7px 12px;background:transparent;color:inherit}
+body .commandment-filter-chips button[aria-pressed="true"]{background:rgba(var(--theme-rgb),.22);border-color:rgb(var(--theme-rgb))}
+.commandment-repetitions{margin:12px 0;font-size:.85rem}
+.commandment-dialog-filters label{display:grid;gap:6px;margin:14px 0}
+.commandment-dialog-filters select{width:100%;min-width:0;padding:10px;border-radius:10px}
+.commandment-dialog-filters p{font-size:.85rem}

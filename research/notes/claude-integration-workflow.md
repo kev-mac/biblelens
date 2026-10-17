@@ -1,5 +1,11 @@
 # Claude proposal integration contract
 
+## Commandments - direct owner instructions, 2026-10-17
+
+Support mode `commandments` as a plain reference category with Context status and no T, V or Q tags. Theme groups span both testaments; commandmentType (moral/civil/ritual) is an optional editorial browsing aid, not a ruling on present-day application. Pin Ten Commandments within each theme. Derive Words of Jesus from `src/red-letters.js`, not a researcher's flag. Reserve relatedRecords for phase two.
+
+For this owner-requested pilot, Codex is expressly authorized to verify the supplied repeatedIn references against packaged KJV text and review theme/type assignments. This does not authorize new findings or independent chapter research. The owner explicitly permits renaming the pilot draft JSON and notes to commandments-pilot-records.json and commandments-pilot-notes.md when integration is ready; preserve their contents. See claude-ready-commandments-pilot-2026-10-17.md and its decisions/quote checks.
+
 ## Genesis Academic gap review — direct owner instruction, 2026-10-17
 
 The owner explicitly requested Codex to review Genesis for scientific, mathematical and historical conflicts, then instructed “start working on these additional entries,” including Joseph’s famine. This authorizes Codex research and integration for this focused Genesis batch, including History. Retain conditional scientific assessments and Context for unverified history; do not label absence of corroboration a disproof. The owner also explicitly removed all eight existing Science Agrees entries, superseding their prior inclusion. New reviewed History Context records opt into Academic visibility with `academicAssessment: true`; no false discrepancy flag or language tag is added. Other History display rules remain unchanged. See genesis-academic-additions-2026-10-17.md for decisions and source limits.
