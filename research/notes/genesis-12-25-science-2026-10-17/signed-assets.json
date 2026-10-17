@@ -14,6 +14,7 @@
       "bytes": 0
     }
   ],
+  "nativeBuildNumber": "222",
   "files": {
     "mobile.js": "044066a398167f4b0dce5a2b90d9dc1baf6ea1db0585b02fb9179ae3e723a02e",
     "index.html": "08dd3df674ca17f965ba2b29853185214212c43997b4f1956a1aa3dd3be404a1",
@@ -27,12 +28,12 @@
     "release.js": "01d24a4ac9594a35cf239b10577ed58ad4f421fd20e521726d3467bbcf2ffdb8",
     "marked.js": "226ba89d3acc03c5ea2ff0cf977ecf7c159b9b017d67ec42fd9882dbb0a301e6",
     "device-bootstrap.js": "8d8d08bfa586d0b8597018e50d2768a5ec677eefbb336208b6e4ca017aeb0b14",
-    "release.json": "cf47b2d93d16c3bb5bca01b2e8ff299e2c6e84a92385426e9f0ae6cd1ac4c546",
+    "release.json": "b901fed34b4db32251db0d30d14cb3b869ec7b5f3e651f5409b7b0a57d7e88b2",
     "search-licenses.txt": "0187486544f166df1de7ff92a3a193237b230c89c7953323ef07660c0526e898",
     "device-engine.js": "eec5862349397dc7cc87ae1b513122508f56d6562c3dbe9c441b2db5635ddee1",
     "data.js": "0ea56edd09d9d997e9485093ccb5d1ea3772b4f7d1a7b79944395b69592f7cab",
     "style.css": "648104afa8b9a85c9d6815d34e412f98d73894207f0bbefe19b3739a63724c4f",
-    "reader.js": "24c3e8e095f79671edbf2d72e2a86b70c7d63f329d9d05e178e32c8b719db08a",
+    "reader.js": "70e9e2b011ad8963e084b334c97ac311ff92f257d53e527147b489d63139aeb8",
     "fonts.css": "de8016558b718bd93af08113e6e4a3fc4b6e1c72dbb324bbece6725ef5a38e67",
     "app.js": "79fc8efdeef45ca7c602c2ee07af8a597404804fd1a0540fa96e6e40ce785ed5",
     "reference/THEOGRAPHIC-LICENSE.txt": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
@@ -45,7 +46,7 @@
   },
   "release": {
     "version": "1.1.0",
-    "buildNumber": 221,
-    "sourceHash": "511b26514c872e2c876551bbdc713723a9f90cfbbc1c0f9e7fbf56c6a2d912a2"
+    "buildNumber": 222,
+    "sourceHash": "3f62b41f6d54125472089343fdc34030df39d03108435e8161019d05b6c3179d"
   }
 }

@@ -1,8 +1,8 @@
 {
   "release": {
     "version": "1.1.0",
-    "buildNumber": 221,
-    "sourceHash": "511b26514c872e2c876551bbdc713723a9f90cfbbc1c0f9e7fbf56c6a2d912a2"
+    "buildNumber": 222,
+    "sourceHash": "3f62b41f6d54125472089343fdc34030df39d03108435e8161019d05b6c3179d"
   },
   "records": [
     {
@@ -53,5 +53,29 @@
         }
       ]
     }
-  ]
+  ],
+  "browser": {
+    "academicAgreesKeyCardOpened": true,
+    "keyRef": "Genesis 13:6",
+    "citationPreviewMatchesPackaged": true,
+    "statusUnchanged": "Agrees",
+    "sourcesOpened": [
+      {
+        "url": "https://www.nrcs.usda.gov/sites/default/files/2022-10/Determining%20Carry%20Capacity%20and%20Stocking%20Rates%20_ND.pdf",
+        "title": "nrcs.usda.gov/sites/default/files/2022-10/Determining Carry Capacity and Stocking Rates _ND.pdf"
+      },
+      {
+        "url": "https://ebible.org/eng-kjv/GEN13.htm",
+        "title": "King James Version + Apocrypha Genesis 13"
+      },
+      {
+        "url": "https://medlineplus.gov/menopause.html",
+        "title": "Menopause | Menopause Symptoms | MedlinePlus"
+      }
+    ],
+    "academicContextKeyCardOpened": true,
+    "contextKeyRef": "Genesis 18:11",
+    "contextStatusUnchanged": "Context"
+  },
+  "ownerApprovedVisibility": "All Science statuses under Academic; History filtering unchanged"
 }
