@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1527,
+    "evidenceRecords": 1559,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 848,
-    "annotatedVerses": 4026
+    "chaptersWithAnnotations": 854,
+    "annotatedVerses": 4058
   },
   "byBook": [
     {
@@ -363,14 +363,14 @@
     {
       "book": "James",
       "chapters": 5,
-      "chaptersWithAnnotations": 3,
-      "annotatedVerses": 13
+      "chaptersWithAnnotations": 5,
+      "annotatedVerses": 27
     },
     {
       "book": "1 Peter",
       "chapters": 5,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 3
+      "chaptersWithAnnotations": 5,
+      "annotatedVerses": 21
     },
     {
       "book": "2 Peter",
@@ -20388,10 +20388,16 @@
       "bookId": 58,
       "chapter": 1,
       "annotationIds": [
-        "god-did-tempt-abraham-or-god-tempteth-no-man"
+        "god-did-tempt-abraham-or-god-tempteth-no-man",
+        "which-the-lord-hath-promised-or-which-he-promised-james-1-12-greek-new-testament",
+        "wherefore-my-beloved-brethren-or-know-this-james-1-19-greek-new-testament",
+        "if-any-man-among-you-or-if-any-man-james-1-26-greek-new-testament"
       ],
       "annotatedVerses": [
-        13
+        12,
+        13,
+        19,
+        26
       ],
       "modes": [
         "contradictions"
@@ -20404,14 +20410,18 @@
       "chapter": 2,
       "annotationIds": [
         "coverage-nt-faith-works",
-        "coverage-nt-titus-works"
+        "coverage-nt-titus-works",
+        "the-poor-of-this-world-or-the-poor-to-the-world-james-2-5-greek-new-testament",
+        "faith-without-works-is-dead-or-is-barren-james-2-20-greek-new-testament"
       ],
       "annotatedVerses": [
+        5,
         14,
         15,
         16,
         17,
         18,
+        20,
         21,
         22,
         23,
@@ -20428,18 +20438,40 @@
       "book": "James",
       "bookId": 58,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "behold-we-put-bits-or-if-we-put-bits-james-3-3-greek-new-testament",
+        "an-unruly-evil-or-an-unstable-evil-james-3-8-greek-new-testament",
+        "god-even-the-father-or-the-lord-and-father-james-3-9-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        3,
+        8,
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "James",
       "bookId": 58,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ye-adulterers-and-adulteresses-or-adulteresses-james-4-4-greek-new-testament",
+        "the-spirit-that-dwelleth-in-us-or-made-to-dwell-in-us-james-4-5-greek-new-testament",
+        "who-art-thou-that-judgest-another-or-judgest-thy-neighbour-james-4-12-greek-new-testament",
+        "it-is-even-a-vapour-or-ye-are-a-vapour-james-4-14-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        4,
+        5,
+        12,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -20447,9 +20479,13 @@
       "bookId": 58,
       "chapter": 5,
       "annotationIds": [
-        "elijah-drought-ended-in-third-year-or-after-three-years-six-months"
+        "elijah-drought-ended-in-third-year-or-after-three-years-six-months",
+        "lest-ye-be-condemned-or-lest-ye-be-judged-james-5-9-greek-new-testament",
+        "confess-your-faults-or-confess-your-sins-james-5-16-greek-new-testament"
       ],
       "annotatedVerses": [
+        9,
+        16,
         17
       ],
       "modes": [
@@ -20461,9 +20497,19 @@
       "book": "1 Peter",
       "bookId": 59,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "be-ye-holy-or-ye-shall-be-holy-1-peter-1-16-greek-new-testament",
+        "through-the-spirit-or-not-printed-1-peter-1-22-greek-new-testament",
+        "abideth-for-ever-or-not-printed-1-peter-1-23-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        16,
+        22,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -20471,15 +20517,20 @@
       "bookId": 59,
       "chapter": 2,
       "annotationIds": [
-        "coverage-nt-household-slavery"
+        "coverage-nt-household-slavery",
+        "that-ye-may-grow-thereby-or-grow-unto-salvation-1-peter-2-2-greek-new-testament",
+        "which-be-disobedient-or-which-disbelieve-1-peter-2-7-greek-new-testament"
       ],
       "annotatedVerses": [
+        2,
+        7,
         18,
         19,
         20
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -20487,27 +20538,67 @@
       "book": "1 Peter",
       "bookId": 59,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "be-pitiful-be-courteous-or-humble-minded-1-peter-3-8-greek-new-testament",
+        "followers-of-that-which-is-good-or-zealous-1-peter-3-13-greek-new-testament",
+        "sanctify-the-lord-god-or-the-lord-christ-1-peter-3-15-greek-new-testament",
+        "whereas-they-speak-evil-of-you-or-in-what-ye-are-spoken-against-1-peter-3-16-greek-new-testament",
+        "christ-hath-once-suffered-for-sins-or-died-1-peter-3-18-greek-new-testament",
+        "preached-unto-the-spirits-in-prison-who-where-when-and-what-1-peter-3-19-20"
+      ],
+      "annotatedVerses": [
+        8,
+        13,
+        15,
+        16,
+        18,
+        19
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Peter",
       "bookId": 59,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "christ-hath-suffered-for-us-or-not-printed-1-peter-4-1-greek-new-testament",
+        "on-their-part-evil-spoken-of-or-not-printed-1-peter-4-14-greek-new-testament",
+        "on-this-behalf-or-in-this-name-1-peter-4-16-greek-new-testament",
+        "the-gospel-preached-also-to-them-that-are-dead-who-and-when-1-peter-4-6"
+      ],
+      "annotatedVerses": [
+        1,
+        6,
+        14,
+        16
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Peter",
       "bookId": 59,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "taking-the-oversight-or-according-to-god-1-peter-5-2-greek-new-testament",
+        "make-you-perfect-stablish-or-will-make-you-perfect-1-peter-5-10-greek-new-testament",
+        "glory-and-dominion-or-dominion-1-peter-5-11-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        2,
+        10,
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
