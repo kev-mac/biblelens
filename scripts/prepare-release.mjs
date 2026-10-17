@@ -15,12 +15,12 @@ const release=JSON.parse(fs.readFileSync('www/release.json','utf8'));
 if(release.sourceHash!==releaseInfo().sourceHash)throw Error('Source changed while building. Start the release again.');
 if(flags.has('--ios')){
  run(process.execPath,['node_modules/@capacitor/cli/bin/capacitor','sync','ios']);
- run('xcodebuild',['-project','ios/App/App.xcodeproj','-scheme','App','-configuration','Debug','-destination','generic/platform=iOS','-derivedDataPath','.release/ios','-allowProvisioningUpdates','MARKETING_VERSION='+release.version,'CURRENT_PROJECT_VERSION='+git(['rev-list','--count','HEAD']),'build']);
+ run('xcodebuild',['-project','ios/App/App.xcodeproj','-scheme','App','-configuration','Debug','-destination','generic/platform=iOS','-derivedDataPath','.release/ios','-allowProvisioningUpdates','MARKETING_VERSION='+release.version,'CURRENT_PROJECT_VERSION='+release.buildNumber,'build']);
  if(flags.has('--install')){
   run('xcrun',['devicectl','device','install','app','--device','Kevins-iPhone.coredevice.local','.release/ios/Build/Products/Debug-iphoneos/App.app']);
   run('xcrun',['devicectl','device','process','launch','--device','Kevins-iPhone.coredevice.local','--terminate-existing','com.scripturelens.app']);
  }
 }
 fs.mkdirSync('.release',{recursive:true});fs.writeFileSync('.release/candidate.json',JSON.stringify({canonicalCommit:commit,...release},null,2)+'\n');
-console.log('Release candidate ready:',release.version,release.sourceHash.slice(0,12));
+console.log('Release candidate ready:',release.version,'build',release.buildNumber,release.sourceHash.slice(0,12));
 console.log('Next: publish the exact prepared dist through the Sites workflow; mirror the canonical source, then run npm run release:verify -- <Sites-checkout>.');
