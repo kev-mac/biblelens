@@ -66,6 +66,7 @@ context.toggle(buttons[2]);assert([...panels.values()].every(p=>p.hidden));
 assert.equal(buttons[2].attributes['aria-expanded'],'false');
 assert.equal(buttons[2].attributes['aria-pressed'],'false');
 assert(context.visible({mode:'history',status:'Context',discrepancy:true}));
+assert(context.visible({mode:'history',status:'Context',academicAssessment:true}));
 for(const status of ['Agrees','Context','Disagrees'])assert(context.visible({mode:'science',status}),status+' Science must be available under Academic');
 assert(!context.visible({mode:'history',status:'Agrees',discrepancy:true}));
 assert(!context.visible({mode:'history',status:'Context'}));

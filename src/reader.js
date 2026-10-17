@@ -37,7 +37,7 @@ function comparisonReasoning(item){return item.reasoning?.trim()||item.text?.tri
 function evidenceKey(verse,item){return `${readingBook}:${readingChapter}:${verse}:${item.key}`;}
 function comparisonKey(mode=$('#reader-compare').value){return `${readingBook}:${readingChapter}:${$('#reader-edition').value}:${mode}`;}
 function selectionKey(verse){return `${comparisonKey('tabs')}:${verse}`;}
-function visibleComparison(item){return item.mode==='bookmark'||recordTags(item).length>0||item.mode==='questions'||item.mode==='contradictions'||item.mode==='science'||(item.status!=='Agrees'&&(item.status==='Disagrees'||item.discrepancy===true));}
+function visibleComparison(item){return (item.mode==='history'&&item.academicAssessment===true)||item.mode==='bookmark'||recordTags(item).length>0||item.mode==='questions'||item.mode==='contradictions'||item.mode==='science'||(item.status!=='Agrees'&&(item.status==='Disagrees'||item.discrepancy===true));}
 function verseBookmarkComparisons(verse){const key=`${readingBook}:${readingChapter}:${verse}`;if(typeof state==='undefined')return [];const note=state.verseNotes?.[key];if(!state.verseBookmarks?.[key]&&!note?.text)return [];return [{id:'bookmark-'+key,verse,mode:'bookmark',key:'bookmark',title:note?.title||'Note',summary:note?.text||'',text:'',sources:[]}];}
 function comparisonCategoryOpen(key){
  return !!reading?.verses?.some(v=>verseComparisons(v.n).some(item=>{

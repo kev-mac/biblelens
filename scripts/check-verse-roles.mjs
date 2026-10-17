@@ -50,7 +50,7 @@ ctx.toggle(scienceButton);assert(!ctx.html({n:1,kjv:text('Genesis 1:1')},'kjv').
 const style=fs.readFileSync('src/style.css','utf8');for(const tone of ['history','contradictions','science','hebrew','greek','violation','question'])assert(style.includes(`mark.side-quote[data-tone="${tone}"]`));
 assert(!ctx.html({n:1,web:text('Genesis 1:1')},'web').includes('<mark'));ctx.RED_LETTERS={'0:1':{1:{kjv:[[0,16]]}}};const mixed=ctx.html({n:1,kjv:text('Genesis 1:1')},'kjv');assert(mixed.includes('jesus-words'));assert.equal(mixed.replace(/<[^>]*>/g,''),text('Genesis 1:1'));
 const before=evidence.reduce((n,e)=>n+new Set(e.appliesTo||[e.ref]).size,0),after=evidence.flatMap(e=>w.place(e)),cards=after.filter(p=>p.placementRole==='key').length,pointers=after.length-cards,converted=evidence.reduce((n,e)=>n+[...new Set(e.appliesTo||[e.ref])].filter(ref=>w.place(e).find(p=>p.ref===ref)?.placementRole==='context').length,0);
-const visible=evidence.filter(i=>(i.tags?.some(t=>['H','G','T','V'].includes(t))||['H','G','T','V'].includes(i.tag))||i.mode==='contradictions'||i.mode==='science'||(i.status!=='Agrees'&&(i.status==='Disagrees'||i.discrepancy===true)));const shown=visible.flatMap(e=>w.place(e)),visibleCards=shown.filter(p=>p.placementRole==='key').length;
+const visible=evidence.filter(i=>(i.tags?.some(t=>['H','G','T','V'].includes(t))||['H','G','T','V'].includes(i.tag))||i.mode==='contradictions'||i.mode==='science'||(i.mode==='history'&&i.academicAssessment===true)||(i.status!=='Agrees'&&(i.status==='Disagrees'||i.discrepancy===true)));const shown=visible.flatMap(e=>w.place(e)),visibleCards=shown.filter(p=>p.placementRole==='key').length;
 const counts={visibleEvidenceBeforeFullCards:visible.reduce((n,e)=>n+new Set(e.appliesTo||[e.ref]).size,0),visibleEvidenceBeforePointers:0,visibleEvidenceAfterFullCards:visibleCards,visibleEvidenceAfterPointers:shown.length-visibleCards,visibleEvidenceFullCardsBecamePointers:visible.reduce((n,e)=>n+[...new Set(e.appliesTo||[e.ref])].filter(ref=>w.place(e).find(p=>p.ref===ref)?.placementRole==='context').length,0),beforeFullCards:before,beforePointers:0,afterFullCards:cards,afterPointers:pointers,fullCardsBecamePointers:converted,newContextPointers:pointers-converted,evidenceRecords:evidence.length,recordsWithSides:evidence.filter(e=>e.sides).length};fs.writeFileSync('research/notes/verse-role-placement-counts.json',JSON.stringify(counts,null,2)+'\n');
 console.log('PASS: exact-quote failures, atomic merge, sides/fallback placement, two records, synced toggles, 32-ref fixture/cap, exactly three chips, overlapping highlights/red letters.');console.log(JSON.stringify(counts));
 
@@ -74,12 +74,12 @@ for(const [id,n]of [['legacy-science-1',11],['genesis-1-celestial-sequence',14]]
 }
 console.log('PASS: older primary citations quote and highlight packaged scripture; headings appear inside summary blocks.');
 
-// Owner-approved Science visibility must expose the actual Agrees and Context
+// Science visibility must expose the retained Context
 // records at their key verses without changing statuses or adding language tags.
-for(const [id,chapter,verse]of [['genesis-13-herds-and-land-capacity',13,6],['genesis-18-sarah-reproductive-aging',18,11]]){
+for(const [id,chapter,verse]of [['genesis-18-sarah-reproductive-aging',18,11],['genesis-7-worldwide-flood',7,19]]){
  const record=evidence.find(e=>e.id===id);assert(record&&!record.tags,id);
  ctx.readingChapter=chapter;ctx.reading={name:'Genesis',verses:JSON.parse(zlib.gunzipSync(Buffer.from(chapters[`0:${chapter}`],'base64'))).verses};ctx.cache.clear();
  ctx.cache.set(`0:${chapter}:kjv:science`,{items:[{...record,verse,placementRole:'key',keyTarget:record.ref}]});
  const rendered=ctx.render(verse);assert(rendered.includes('<h3>'+record.title+'</h3>'));assert(rendered.includes('Academic · '+record.status));assert(rendered.includes('aria-expanded="false"'));assert(rendered.includes(record.sources.at(-1).url));
 }
-console.log('PASS: actual Genesis Agrees and Context Science records render as collapsed Academic key cards with their sources and unchanged statuses.');
+console.log('PASS: actual Genesis Science records render as collapsed Academic key cards with their sources and unchanged statuses.');

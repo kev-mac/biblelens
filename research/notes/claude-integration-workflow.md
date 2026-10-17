@@ -1,5 +1,9 @@
 # Claude proposal integration contract
 
+## Genesis Academic gap review — direct owner instruction, 2026-10-17
+
+The owner explicitly requested Codex to review Genesis for scientific, mathematical and historical conflicts, then instructed “start working on these additional entries,” including Joseph’s famine. This authorizes Codex research and integration for this focused Genesis batch, including History. Retain conditional scientific assessments and Context for unverified history; do not label absence of corroboration a disproof. The owner also explicitly removed all eight existing Science Agrees entries, superseding their prior inclusion. New reviewed History Context records opt into Academic visibility with `academicAssessment: true`; no false discrepancy flag or language tag is added. Other History display rules remain unchanged. See genesis-academic-additions-2026-10-17.md for decisions and source limits.
+
 ## Science and History — direct owner clarification, 2026-10-17
 
 During hosted verification of Genesis 12–25, the owner explicitly selected “Show all Science statuses under Academic” in response to the earlier discrepancies-only display rule. All Science Agrees, Context and Disagrees records are now eligible for reader and Marked display under Academic; their existing statuses and data remain unchanged. This supersedes the Science display restriction recorded in reader-discrepancy-toggles.md. History retains its existing display restriction. No discrepancy flag or language tag is to be invented to make a Science record visible.
