@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1365,
+    "evidenceRecords": 1366,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
     "chaptersWithAnnotations": 798,
-    "annotatedVerses": 3849
+    "annotatedVerses": 3852
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
       "chaptersWithAnnotations": 39,
-      "annotatedVerses": 158
+      "annotatedVerses": 161
     },
     {
       "book": "Exodus",
@@ -1234,13 +1234,18 @@
       "bookId": 0,
       "chapter": 48,
       "annotationIds": [
-        "jacob-shechem-portion-bought-or-taken"
+        "jacob-shechem-portion-bought-or-taken",
+        "genesis-48-jacob-aging-and-sight"
       ],
       "annotatedVerses": [
+        8,
+        9,
+        10,
         22
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "science"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
