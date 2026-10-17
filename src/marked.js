@@ -107,11 +107,11 @@ if(view==='saved')renderMarkedWorkspace();
 // Match the Read category menu: reveal at the bottom while scrolling toward the top.
 (() => {
  let lastY=window.scrollY;
- function reveal(){document.body.classList.toggle('marked-filter-visible',view==='saved'&&window.scrollY>=20);}
+ function reveal(){document.body.classList.toggle('marked-filter-visible',view==='saved'&&window.scrollY<20);}
  window.addEventListener('scroll',()=>{
   const y=Math.max(0,window.scrollY),delta=y-lastY;
   if(view!=='saved'){lastY=y;return;}
-  if(y<20)document.body.classList.remove('marked-filter-visible');
+  if(y<20)document.body.classList.add('marked-filter-visible');
   else if(Math.abs(delta)>=4){if(delta>0&&document.activeElement===$('#marked-filter-open'))document.activeElement.blur();document.body.classList.toggle('marked-filter-visible',delta<0);}
   if(Math.abs(delta)>=4||y<20)lastY=y;
  },{passive:true});
