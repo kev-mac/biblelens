@@ -2,7 +2,7 @@
 
 ## Science and History — direct owner clarification, 2026-10-17
 
-The owner states: “Science (along with History) is now categorized as Academic.” Retain the existing science/history storage modes and their Academic display group. This does not itself require a language-comparison tag or migrate existing T/witness metadata. For the explicitly requested Science research task, Codex may research and integrate one Genesis 1–11 batch; the research exception does not extend to Contradictions, History or Q. The Science prompt's source, quotation, duplicate and interpretation checks remain required.
+The owner states: “Science (along with History) is now categorized as Academic.” Retain the existing science/history storage modes and their Academic display group. This does not itself require a language-comparison tag or migrate existing T/witness metadata. For the explicitly requested Science research task, Codex may research and integrate one batch per run; Genesis 1–11 was authorized first, and the owner subsequently authorized Genesis 12–25 with the same prompt. The research exception does not extend to Contradictions, History or Q. The Science prompt's source, quotation, duplicate and interpretation checks remain required.
 
 ## Genesis SAB A — direct owner rulings, 2026-10-16
 

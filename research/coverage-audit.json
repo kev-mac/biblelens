@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1363,
+    "evidenceRecords": 1365,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 797,
-    "annotatedVerses": 3840
+    "chaptersWithAnnotations": 798,
+    "annotatedVerses": 3849
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
-      "chaptersWithAnnotations": 38,
-      "annotatedVerses": 149
+      "chaptersWithAnnotations": 39,
+      "annotatedVerses": 158
     },
     {
       "book": "Exodus",
@@ -690,9 +690,18 @@
       "book": "Genesis",
       "bookId": 0,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "genesis-13-herds-and-land-capacity"
+      ],
+      "annotatedVerses": [
+        5,
+        6,
+        7,
+        9
+      ],
+      "modes": [
+        "science"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -753,7 +762,8 @@
       "chapter": 17,
       "annotationIds": [
         "joshua-wilderness-circumcision",
-        "lord-appeared-to-abram-or-no-man-hath-seen-god"
+        "lord-appeared-to-abram-or-no-man-hath-seen-god",
+        "genesis-18-sarah-reproductive-aging"
       ],
       "annotatedVerses": [
         1,
@@ -761,10 +771,12 @@
         11,
         12,
         13,
-        14
+        14,
+        17
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "science"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -774,16 +786,20 @@
       "chapter": 18,
       "annotationIds": [
         "three-men-at-mamre-and-the-lord-relation-unstated",
-        "lord-appeared-to-abram-or-no-man-hath-seen-god"
+        "lord-appeared-to-abram-or-no-man-hath-seen-god",
+        "genesis-18-sarah-reproductive-aging"
       ],
       "annotatedVerses": [
         1,
         2,
+        11,
+        14,
         22
       ],
       "modes": [
         "questions",
-        "contradictions"
+        "contradictions",
+        "science"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -817,15 +833,19 @@
       "chapter": 21,
       "annotationIds": [
         "ishmael-past-fourteen-or-a-child-set-on-hagars-shoulder-greek",
-        "who-named-beersheba-abraham-or-isaac"
+        "who-named-beersheba-abraham-or-isaac",
+        "genesis-18-sarah-reproductive-aging"
       ],
       "annotatedVerses": [
+        1,
+        2,
         14,
         16,
         31
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "science"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
