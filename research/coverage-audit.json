@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1634,
+    "evidenceRecords": 1692,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 861,
-    "annotatedVerses": 4169
+    "chaptersWithAnnotations": 879,
+    "annotatedVerses": 4231
   },
   "byBook": [
     {
@@ -400,13 +400,13 @@
       "book": "Jude",
       "chapters": 1,
       "chaptersWithAnnotations": 1,
-      "annotatedVerses": 2
+      "annotatedVerses": 9
     },
     {
       "book": "Revelation",
       "chapters": 22,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 6
+      "chaptersWithAnnotations": 19,
+      "annotatedVerses": 61
     }
   ],
   "chapters": [
@@ -20970,14 +20970,29 @@
       "bookId": 64,
       "chapter": 1,
       "annotationIds": [
-        "coverage-nt-jude-metaphor"
+        "coverage-nt-jude-metaphor",
+        "sanctified-by-god-the-father-or-beloved-in-god-the-father-jude-1-1-greek-new-testament",
+        "the-only-lord-god-or-the-only-master-and-lord-jude-1-4-greek-new-testament",
+        "though-ye-once-knew-this-or-all-things-jude-1-5-greek-new-testament",
+        "who-separate-themselves-or-who-separate-jude-1-19-greek-new-testament",
+        "have-compassion-making-a-difference-or-reprove-jude-1-22-greek-new-testament",
+        "others-save-with-fear-or-have-mercy-with-fear-jude-1-23-greek-new-testament",
+        "to-the-only-wise-god-or-to-the-only-god-jude-1-25-greek-new-testament"
       ],
       "annotatedVerses": [
+        1,
+        4,
+        5,
         12,
-        13
+        13,
+        19,
+        22,
+        23,
+        25
       ],
       "modes": [
-        "science"
+        "science",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -20986,9 +21001,19 @@
       "bookId": 65,
       "chapter": 1,
       "annotationIds": [
-        "coverage-nt-revelation-symbols"
+        "coverage-nt-revelation-symbols",
+        "washed-us-or-freed-us-from-our-sins-revelation-1-5-greek-new-testament",
+        "kings-and-priests-or-a-kingdom-priests-revelation-1-6-greek-new-testament",
+        "the-beginning-and-the-ending-or-lord-god-revelation-1-8-greek-new-testament",
+        "in-the-kingdom-and-patience-of-jesus-christ-or-in-jesus-revelation-1-9-greek-new-testament",
+        "i-am-alpha-and-omega-the-first-and-the-last-revelation-1-11-greek-new-testament"
       ],
       "annotatedVerses": [
+        5,
+        6,
+        8,
+        9,
+        11,
         12,
         13,
         14,
@@ -20997,7 +21022,8 @@
         20
       ],
       "modes": [
-        "science"
+        "science",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -21005,9 +21031,24 @@
       "book": "Revelation",
       "bookId": 65,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-will-come-unto-thee-quickly-or-i-come-to-you-revelation-2-5-greek-new-testament",
+        "i-know-thy-works-or-i-know-thy-tribulation-revelation-2-9-and-2-13-greek-new-testament",
+        "which-thing-i-hate-or-likewise-revelation-2-15-greek-new-testament",
+        "and-she-repented-not-or-she-is-unwilling-to-repent-revelation-2-21-greek-new-testament",
+        "their-deeds-or-her-deeds-revelation-2-22-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        5,
+        9,
+        13,
+        15,
+        21,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -21023,45 +21064,87 @@
       "book": "Revelation",
       "bookId": 65,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "o-lord-or-our-lord-and-our-god-revelation-4-11-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hast-redeemed-us-to-god-or-hast-bought-to-god-revelation-5-9-greek-new-testament",
+        "us-kings-and-priests-we-shall-reign-or-them-a-kingdom-they-shall-reign-revelation-5-10-greek-new-testament",
+        "four-and-twenty-elders-worshipped-him-that-liveth-for-ever-revelation-5-14-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        9,
+        10,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "come-and-see-or-come-six-1-3-5-7-revelation-greek-new-testament",
+        "his-wrath-or-their-wrath-revelation-6-17-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        1,
+        3,
+        5,
+        7,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "living-fountains-of-waters-or-fountains-of-waters-of-life-revelation-7-17-greek-new-testament",
+        "the-hundred-and-forty-and-four-thousand-sealed-who-are-they-revelation-7-4-14-1"
+      ],
+      "annotatedVerses": [
+        4,
+        17
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "an-angel-flying-or-an-eagle-flying-revelation-8-13-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -21077,72 +21160,139 @@
       "book": "Revelation",
       "bookId": 65,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-he-said-unto-me-or-and-they-say-to-me-revelation-10-11-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "god-of-the-earth-or-lord-of-the-earth-revelation-11-4-greek-new-testament",
+        "our-lord-or-their-lord-was-crucified-revelation-11-8-greek-new-testament",
+        "the-kingdoms-of-this-world-or-the-kingdom-of-the-world-revelation-11-15-greek-new-testament",
+        "and-art-to-come-or-who-is-and-who-was-revelation-11-17-greek-new-testament",
+        "my-two-witnesses-who-are-they-and-where-and-when-revelation-11-3-12"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        8,
+        15,
+        17
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "inhabiters-of-the-earth-and-of-the-sea-or-the-earth-and-the-sea-revelation-12-12-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-number-of-the-beast-whose-name-does-it-count-revelation-13-17-18"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "his-fathers-name-or-his-name-and-his-fathers-name-revelation-14-1-greek-new-testament",
+        "no-guile-or-no-lie-revelation-14-5-greek-new-testament",
+        "that-great-city-or-babylon-the-great-revelation-14-8-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        1,
+        5,
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-over-his-mark-or-his-image-and-the-number-revelation-15-2-greek-new-testament",
+        "king-of-saints-or-king-of-nations-revelation-15-3-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        2,
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-shalt-be-or-the-holy-one-revelation-16-5-greek-new-testament",
+        "kings-of-the-earth-and-of-the-whole-world-or-kings-of-the-whole-world-revelation-16-14-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        5,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-yet-is-or-and-shall-come-revelation-17-8-greek-new-testament",
+        "upon-the-beast-or-and-the-beast-revelation-17-16-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        8,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -21158,36 +21308,82 @@
       "book": "Revelation",
       "bookId": 65,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "salvation-and-glory-and-honour-and-power-unto-the-lord-our-god-revelation-19-1-greek-new-testament",
+        "a-vesture-dipped-in-blood-or-sprinkled-with-blood-revelation-19-13-greek-new-testament",
+        "the-supper-of-the-great-god-or-the-great-supper-of-god-revelation-19-17-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        1,
+        13,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "fire-came-down-from-god-out-of-heaven-or-out-of-heaven-revelation-20-9-greek-new-testament",
+        "stand-before-god-or-stand-before-the-throne-revelation-20-12-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        9,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-i-john-saw-or-and-the-holy-city-i-saw-revelation-21-2-greek-new-testament",
+        "a-great-voice-out-of-heaven-or-out-of-the-throne-revelation-21-3-greek-new-testament",
+        "inherit-all-things-or-inherit-these-things-revelation-21-7-greek-new-testament",
+        "of-them-which-are-saved-and-honour-or-by-its-light-revelation-21-24-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        2,
+        3,
+        7,
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Revelation",
       "bookId": 65,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "no-night-there-or-no-night-any-more-revelation-22-5-greek-new-testament",
+        "god-of-the-holy-prophets-or-god-of-the-spirits-of-the-prophets-revelation-22-6-greek-new-testament",
+        "let-him-be-righteous-still-or-let-him-do-righteousness-still-revelation-22-11-greek-new-testament",
+        "blessed-are-they-that-do-his-commandments-or-wash-their-robes-revelation-22-14-greek-new-testament",
+        "out-of-the-book-of-life-or-from-the-tree-of-life-revelation-22-19-greek-new-testament",
+        "the-grace-of-our-lord-jesus-christ-be-with-you-all-or-with-all-revelation-22-21-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        5,
+        6,
+        11,
+        14,
+        19,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     }
   ],
