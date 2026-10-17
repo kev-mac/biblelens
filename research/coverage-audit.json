@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1414,
+    "evidenceRecords": 1440,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 815,
-    "annotatedVerses": 3918
+    "chaptersWithAnnotations": 822,
+    "annotatedVerses": 3946
   },
   "byBook": [
     {
@@ -22,7 +22,7 @@
       "book": "Exodus",
       "chapters": 40,
       "chaptersWithAnnotations": 40,
-      "annotatedVerses": 449
+      "annotatedVerses": 450
     },
     {
       "book": "Leviticus",
@@ -297,14 +297,14 @@
     {
       "book": "Galatians",
       "chapters": 6,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 12
+      "chaptersWithAnnotations": 5,
+      "annotatedVerses": 26
     },
     {
       "book": "Ephesians",
       "chapters": 6,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 5
+      "chaptersWithAnnotations": 5,
+      "annotatedVerses": 18
     },
     {
       "book": "Philippians",
@@ -1916,11 +1916,13 @@
         "exodus-command-and-penalties",
         "exodus-commanded-cherubim",
         "kill-adultery-steal-or-adultery-steal-kill-greek-order",
-        "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east"
+        "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east",
+        "honour-thy-father-the-first-commandment-with-promise-or-mercy-unto-thousands-ephesians-6-2-exodus-20-6"
       ],
       "annotatedVerses": [
         4,
         5,
+        6,
         11,
         13,
         14,
@@ -19371,9 +19373,11 @@
       "bookId": 47,
       "chapter": 1,
       "annotationIds": [
-        "barnabas-brought-him-to-the-apostles-or-other-of-the-apostles-saw-i-none-acts-9-27-galatians-1-19"
+        "barnabas-brought-him-to-the-apostles-or-other-of-the-apostles-saw-i-none-acts-9-27-galatians-1-19",
+        "when-it-pleased-god-or-when-it-pleased-him-galatians-1-15-greek-new-testament"
       ],
       "annotatedVerses": [
+        15,
         19
       ],
       "modes": [
@@ -19396,9 +19400,13 @@
       "chapter": 3,
       "annotationIds": [
         "coverage-nt-abraham-seed",
-        "deuteronomy-covenant-curse-in-galatians"
+        "deuteronomy-covenant-curse-in-galatians",
+        "that-ye-should-not-obey-the-truth-or-not-printed-galatians-3-1-greek-new-testament",
+        "confirmed-before-of-god-in-christ-or-confirmed-before-of-god-galatians-3-17-greek-new-testament",
+        "ordained-by-angels-in-the-hand-of-a-mediator-galatians-3-19-20"
       ],
       "annotatedVerses": [
+        1,
         6,
         7,
         8,
@@ -19408,12 +19416,15 @@
         13,
         14,
         16,
+        17,
+        19,
         28,
         29
       ],
       "modes": [
         "contradictions",
-        "history"
+        "history",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -19421,36 +19432,73 @@
       "book": "Galatians",
       "bookId": 47,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "into-your-hearts-or-into-our-hearts-galatians-4-6-greek-new-testament",
+        "an-heir-of-god-through-christ-or-an-heir-through-god-galatians-4-7-greek-new-testament",
+        "the-mother-of-us-all-or-our-mother-galatians-4-26-greek-new-testament",
+        "now-we-brethren-or-now-you-brethren-children-of-promise-galatians-4-28-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        6,
+        7,
+        26,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Galatians",
       "bookId": 47,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "adultery-fornication-or-fornication-uncleanness-galatians-5-19-greek-new-testament",
+        "envyings-murders-drunkenness-or-envyings-drunkenness-galatians-5-21-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        19,
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Galatians",
       "bookId": 47,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-christ-jesus-neither-circumcision-or-neither-circumcision-galatians-6-15-greek-new-testament",
+        "the-marks-of-the-lord-jesus-or-the-marks-of-jesus-galatians-6-17-greek-new-testament",
+        "bear-ye-one-anothers-burdens-or-every-man-shall-bear-his-own-burden-galatians-6-2-6-5"
+      ],
+      "annotatedVerses": [
+        2,
+        5,
+        15,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ephesians",
       "bookId": 48,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-eyes-of-your-understanding-or-the-eyes-of-your-heart-ephesians-1-18-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -19466,27 +19514,57 @@
       "book": "Ephesians",
       "bookId": 48,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "what-is-the-fellowship-of-the-mystery-or-what-is-the-dispensation-of-the-mystery-ephesians-3-9-greek-new-testament",
+        "the-father-of-our-lord-jesus-christ-or-the-father-ephesians-3-14-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        9,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ephesians",
       "bookId": 48,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-in-you-all-or-and-in-all-ephesians-4-6-greek-new-testament",
+        "he-also-descended-first-or-he-also-descended-ephesians-4-9-greek-new-testament",
+        "as-other-gentiles-walk-or-as-the-gentiles-walk-ephesians-4-17-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        6,
+        9,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ephesians",
       "bookId": 48,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "as-christ-also-hath-loved-us-or-loved-you-ephesians-5-2-greek-new-testament",
+        "the-fruit-of-the-spirit-or-the-fruit-of-the-light-ephesians-5-9-greek-new-testament",
+        "in-the-fear-of-god-or-in-the-fear-of-christ-ephesians-5-21-greek-new-testament",
+        "of-his-flesh-and-of-his-bones-or-not-printed-ephesians-5-30-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        2,
+        9,
+        21,
+        30
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -19494,17 +19572,24 @@
       "bookId": 48,
       "chapter": 6,
       "annotationIds": [
-        "coverage-nt-household-slavery"
+        "coverage-nt-household-slavery",
+        "finally-my-brethren-or-finally-ephesians-6-10-greek-new-testament",
+        "the-rulers-of-the-darkness-of-this-world-or-of-this-darkness-ephesians-6-12-greek-new-testament",
+        "honour-thy-father-the-first-commandment-with-promise-or-mercy-unto-thousands-ephesians-6-2-exodus-20-6"
       ],
       "annotatedVerses": [
+        2,
         5,
         6,
         7,
         8,
-        9
+        9,
+        10,
+        12
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
