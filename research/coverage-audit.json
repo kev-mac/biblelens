@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1472,
+    "evidenceRecords": 1495,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 831,
-    "annotatedVerses": 3973
+    "chaptersWithAnnotations": 838,
+    "annotatedVerses": 3995
   },
   "byBook": [
     {
@@ -333,14 +333,14 @@
     {
       "book": "1 Timothy",
       "chapters": 6,
-      "chaptersWithAnnotations": 2,
-      "annotatedVerses": 5
+      "chaptersWithAnnotations": 6,
+      "annotatedVerses": 20
     },
     {
       "book": "2 Timothy",
       "chapters": 4,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 1
+      "chaptersWithAnnotations": 4,
+      "annotatedVerses": 8
     },
     {
       "book": "Titus",
@@ -2035,6 +2035,7 @@
       "annotationIds": [
         "exodus-covenant-ratification",
         "they-saw-the-god-of-israel-or-the-place-where-he-stood-greek",
+        "whom-no-man-hath-seen-nor-can-see-or-they-saw-the-god-of-israel-1-timothy-6-16-exodus-24-10",
         "study-seen"
       ],
       "annotatedVerses": [
@@ -19886,23 +19887,15 @@
       "book": "1 Timothy",
       "bookId": 53,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
-      "researchStatus": "exhaustive-review-not-certified"
-    },
-    {
-      "book": "1 Timothy",
-      "bookId": 53,
-      "chapter": 2,
       "annotationIds": [
-        "coverage-nt-women-speaking"
+        "and-lord-jesus-christ-or-and-christ-jesus-1-timothy-1-1-greek-new-testament",
+        "godly-edifying-or-the-stewardship-of-god-1-timothy-1-4-greek-new-testament",
+        "the-only-wise-god-or-the-only-god-1-timothy-1-17-greek-new-testament"
       ],
       "annotatedVerses": [
-        11,
-        12,
-        13,
-        14
+        1,
+        4,
+        17
       ],
       "modes": [
         "contradictions"
@@ -19912,28 +19905,75 @@
     {
       "book": "1 Timothy",
       "bookId": 53,
+      "chapter": 2,
+      "annotationIds": [
+        "coverage-nt-women-speaking",
+        "in-christ-or-not-printed-1-timothy-2-7-greek-new-testament",
+        "saved-in-childbearing-who-is-she-and-from-what-1-timothy-2-15"
+      ],
+      "annotatedVerses": [
+        7,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "modes": [
+        "contradictions",
+        "questions"
+      ],
+      "researchStatus": "exhaustive-review-not-certified"
+    },
+    {
+      "book": "1 Timothy",
+      "bookId": 53,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "not-greedy-of-filthy-lucre-or-not-printed-1-timothy-3-3-greek-new-testament",
+        "god-was-manifest-in-the-flesh-or-who-was-manifested-1-timothy-3-16-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        3,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Timothy",
       "bookId": 53,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "labour-and-suffer-reproach-or-labour-and-strive-1-timothy-4-10-greek-new-testament",
+        "in-charity-in-spirit-in-faith-or-no-in-spirit-1-timothy-4-12-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        10,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Timothy",
       "bookId": 53,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "good-and-acceptable-or-acceptable-before-god-1-timothy-5-4-greek-new-testament",
+        "any-man-or-woman-that-believeth-or-any-believing-woman-1-timothy-5-16-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        4,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -19941,10 +19981,19 @@
       "bookId": 53,
       "chapter": 6,
       "annotationIds": [
-        "lord-appeared-to-abram-or-no-man-hath-seen-god"
+        "lord-appeared-to-abram-or-no-man-hath-seen-god",
+        "from-such-withdraw-thyself-or-not-printed-1-timothy-6-5-greek-new-testament",
+        "and-it-is-certain-or-because-we-can-carry-nothing-1-timothy-6-7-greek-new-testament",
+        "nor-trust-in-uncertain-riches-but-in-the-living-god-1-timothy-6-17-greek-new-testament",
+        "eternal-life-or-the-life-that-is-really-life-1-timothy-6-19-greek-new-testament",
+        "whom-no-man-hath-seen-nor-can-see-or-they-saw-the-god-of-israel-1-timothy-6-16-exodus-24-10"
       ],
       "annotatedVerses": [
-        16
+        5,
+        7,
+        16,
+        17,
+        19
       ],
       "modes": [
         "contradictions"
@@ -19955,27 +20004,47 @@
       "book": "2 Timothy",
       "bookId": 54,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-teacher-of-the-gentiles-or-a-teacher-2-timothy-1-11-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Timothy",
       "bookId": 54,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "before-the-lord-or-before-god-2-timothy-2-14-greek-new-testament",
+        "the-name-of-christ-or-the-name-of-the-lord-2-timothy-2-19-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        14,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Timothy",
       "bookId": 54,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jannes-and-jambres-who-were-they-2-timothy-3-8"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "questions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -19983,13 +20052,20 @@
       "bookId": 54,
       "chapter": 4,
       "annotationIds": [
-        "coverage-nt-illness"
+        "coverage-nt-illness",
+        "before-god-and-the-lord-jesus-christ-at-his-appearing-2-timothy-4-1-greek-new-testament",
+        "crescens-to-galatia-or-crescens-to-gaul-2-timothy-4-10-greek-new-testament",
+        "the-lord-jesus-christ-be-with-thy-spirit-or-the-lord-2-timothy-4-22-greek-new-testament"
       ],
       "annotatedVerses": [
-        20
+        1,
+        10,
+        20,
+        22
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
