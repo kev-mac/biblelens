@@ -1,0 +1,31 @@
+{
+  "buildNumber": 221,
+  "sourceHash": "511b26514c872e2c876551bbdc713723a9f90cfbbc1c0f9e7fbf56c6a2d912a2",
+  "canonicalCheckpoint": "bd3409a9f14ebb23547eef4169cb91a51bb1c01b",
+  "siteVersion": 201,
+  "siteSource": "5dd9dcde2964a7f2d2de6b2225dfc210fd4d2b18",
+  "deploymentId": "appgdep_6ad30950db008191894b9fee2ae2a7d5",
+  "releaseVerifyPassed": true,
+  "signedBuildPassed": true,
+  "signatureVerified": true,
+  "iphoneInstalled": true,
+  "iphoneProcessLaunched": false,
+  "launchBlocker": "Device locked",
+  "nativeVisualInspection": false,
+  "sharedAssetCount": 27,
+  "nativeOnlyEmptyFiles": [
+    "cordova.js",
+    "cordova_plugins.js"
+  ],
+  "directoryByteIdentity": false,
+  "apiChecksPassed": true,
+  "browserKeyCardOpened": false,
+  "browserCitationPreviewVerified": false,
+  "displayPolicyDecisionRequired": false,
+  "displayPolicySource": "research/notes/reader-discrepancy-toggles.md",
+  "displayPolicy": "History/Science summaries only for discrepancies",
+  "recordsAccepted": 2,
+  "recordsHeldForResearch": 0,
+  "deliveryHold": "Owner decision resolved; hosted card checks await build 222",
+  "ownerDecision": "Show all Science statuses under Academic"
+}

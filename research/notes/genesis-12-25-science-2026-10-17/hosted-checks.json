@@ -1,0 +1,57 @@
+{
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 221,
+    "sourceHash": "511b26514c872e2c876551bbdc713723a9f90cfbbc1c0f9e7fbf56c6a2d912a2"
+  },
+  "records": [
+    {
+      "id": "genesis-13-herds-and-land-capacity",
+      "keyRef": "Genesis 13:6",
+      "keyVerse": 6,
+      "keyChapter": 13,
+      "placementRole": "key",
+      "summaryMatchesCanonical": true,
+      "hostedKJVMatchesPackaged": true,
+      "kjv": "And the land was not able to bear them, that they might dwell together: for their substance was great, so that they could not dwell together.",
+      "sources": [
+        {
+          "label": "Genesis 13 · KJV",
+          "url": "https://ebible.org/eng-kjv/GEN13.htm"
+        },
+        {
+          "label": "NDSU Extension / USDA NRCS · Carrying capacity and stocking rates, pp. 1–2",
+          "url": "https://www.nrcs.usda.gov/sites/default/files/2022-10/Determining%20Carry%20Capacity%20and%20Stocking%20Rates%20_ND.pdf"
+        }
+      ]
+    },
+    {
+      "id": "genesis-18-sarah-reproductive-aging",
+      "keyRef": "Genesis 18:11",
+      "keyVerse": 11,
+      "keyChapter": 18,
+      "placementRole": "key",
+      "summaryMatchesCanonical": true,
+      "hostedKJVMatchesPackaged": true,
+      "kjv": "Now Abraham and Sarah were old and well stricken in age; and it ceased to be with Sarah after the manner of women.",
+      "sources": [
+        {
+          "label": "Genesis 17 · KJV",
+          "url": "https://ebible.org/eng-kjv/GEN17.htm"
+        },
+        {
+          "label": "Genesis 18 · KJV",
+          "url": "https://ebible.org/eng-kjv/GEN18.htm"
+        },
+        {
+          "label": "Genesis 21 · KJV",
+          "url": "https://ebible.org/eng-kjv/GEN21.htm"
+        },
+        {
+          "label": "MedlinePlus, National Library of Medicine · Menopause",
+          "url": "https://medlineplus.gov/menopause.html"
+        }
+      ]
+    }
+  ]
+}

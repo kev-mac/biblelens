@@ -15,7 +15,7 @@ const rendererCode=source.slice(source.indexOf('function comparisonCell('),sourc
 vm.runInContext(cacheCode+'\nfunction refreshVerseHighlights(){} function comparisonCitations(){return "<div class=summary-citations>Citations</div>"} function scienceDetails(){return ""} function alternativeReadings(){return ""}\n'+rendererCode+'\nthis.render=comparisonCell;this.toggle=selectComparison;this.visible=visibleComparison;this.cache=comparisonCache;',context);
 for(const mode of ['history','contradictions','science'])context.cache.set(`0:1:kjv:${mode}`,{items:[
  {verse:1,status:'Disagrees',title:mode,summary:mode+' discrepancy',text:'Reason',sources:[]},
- ...(mode==='contradictions'?[]:[{verse:1,status:'Agrees',summary:'Agreement',sources:[]},{verse:1,status:'Context',summary:'Background',sources:[]}])
+ ...(mode==='contradictions'?[]:[{verse:1,status:'Agrees',summary:mode+' Agreement',sources:[]},{verse:1,status:'Context',summary:mode+' Background',sources:[]}])
 ]});
 assert.equal(context.render(176),'');
 const initial=context.render(1);
@@ -31,9 +31,9 @@ assert(noteOnly.includes('Note without a bookmark'));
 assert(noteOnly.includes('id="comparison-panel-15-bookmark" aria-labelledby="comparison-tab-15-bookmark" >'));
 vm.runInContext("comparisonRecordSelections.set('bookmark-0:1:14:bookmark',false)",context);
 assert(context.render(14).includes('id="comparison-panel-14-bookmark" aria-labelledby="comparison-tab-14-bookmark" hidden'));
-assert.equal((initial.match(/aria-labelledby="comparison-tab-[^"]+" hidden/g)||[]).length,3);
+assert.equal((initial.match(/aria-labelledby="comparison-tab-[^"]+" hidden/g)||[]).length,5);
 assert.equal((initial.match(/aria-expanded="true"/g)||[]).length,0);
-assert.equal((initial.match(/class="comparison-evidence"[^>]* hidden/g)||[]).length,3);assert(initial.indexOf('comparison-summary')<initial.indexOf('comparison-evidence'));assert(initial.includes('data-comparison-inspect'));assert(!initial.includes('Agreement'));assert(!initial.includes('Background'));
+assert.equal((initial.match(/class="comparison-evidence"[^>]* hidden/g)||[]).length,5);assert(initial.indexOf('comparison-summary')<initial.indexOf('comparison-evidence'));assert(initial.includes('data-comparison-inspect'));assert(initial.includes('science Agreement'));assert(initial.includes('science Background'));assert(!initial.includes('history Agreement'));assert(!initial.includes('history Background'));
 for(const mode of ['history','contradictions','science'])assert(initial.includes(`class="agreement comparison-tab ${mode==='contradictions'?mode:'academic'}"`));
 const buttons=['history','contradictions','science'].map(mode=>({dataset:{comparisonVerse:'1',comparisonKey:`${mode}-0`},attributes:{},setAttribute(k,v){this.attributes[k]=v;}}));
 for(const mode of ['history','contradictions','science'])panels.set(`comparison-panel-1-${mode}-0`,{hidden:true,detailsOpen:true});
@@ -48,7 +48,9 @@ context.toggle(buttons[2]);assert([...panels.values()].every(p=>p.hidden));
 assert.equal(buttons[2].attributes['aria-expanded'],'false');
 assert.equal(buttons[2].attributes['aria-pressed'],'false');
 assert(context.visible({mode:'history',status:'Context',discrepancy:true}));
-assert(!context.visible({mode:'science',status:'Agrees',discrepancy:true}));
+for(const status of ['Agrees','Context','Disagrees'])assert(context.visible({mode:'science',status}),status+' Science must be available under Academic');
+assert(!context.visible({mode:'history',status:'Agrees',discrepancy:true}));
+assert(!context.visible({mode:'history',status:'Context'}));
 assert(source.includes('function chapterOptions(){comparisonSelections.clear();'));
 context.cache.set('0:1:kjv:contradictions',{items:[{verse:2,status:'Context',tags:['H','G','V','Q'],witness:'Hebrew and Septuagint',title:'Tagged record',summary:'Tagged finding',text:'Limits',sources:[]}]});
 const tagged=context.render(2);
