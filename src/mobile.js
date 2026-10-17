@@ -22,7 +22,12 @@
     else if(rect.top<minTop)delta=rect.top-minTop;
     if(Math.abs(delta)>2)(dialog||window).scrollBy({top:delta,behavior:'instant'});
   }
+  function syncVisualChrome(){
+    // iOS can pan the visual viewport without moving the layout viewport when the keyboard opens.
+    root.style.setProperty('--visual-offset-top',`${Math.max(0,viewport?.offsetTop||0)}px`);
+  }
   function settle(){
+    syncVisualChrome();
     clearTimeout(settleTimer);
     settleTimer=setTimeout(()=>{
       root.style.setProperty('--visual-height',`${viewport?.height||window.innerHeight}px`);
@@ -48,6 +53,7 @@
   document.addEventListener('keydown',ev=>{if(smallScreen()&&ev.key==='Enter'&&ev.target.id==='search')ev.target.blur()});
   document.addEventListener('submit',ev=>{if(smallScreen()&&ev.target.id==='evidence-form')document.activeElement?.blur()});
   viewport?.addEventListener('resize',settle);
+  viewport?.addEventListener('scroll',syncVisualChrome,{passive:true});
   window.addEventListener('resize',settle);
   window.addEventListener('orientationchange',settle);
   // Safari gesture events supplement CSS touch-action while preserving one-finger scroll.

@@ -1211,3 +1211,16 @@ body #saved-view{padding-bottom:88px}
 
 /* Settings section headings use the shared interface typeface. */
 body #reader-settings .cloud-sync-settings h3,body #reader-settings .release-settings h3{font-family:"Inter",system-ui,sans-serif!important}
+
+/* Shared translucent category dock, including the more specific native Compare surface. */
+body:not(.dark) .comparison-dock,body:not(.dark).compare-active .comparison-dock,html.native-ios body:not(.dark).compare-active .comparison-dock{background:rgba(248,250,252,.62);border-color:rgba(148,163,184,.24);box-shadow:0 6px 24px #33415518}
+body.dark .comparison-dock,body.dark.compare-active .comparison-dock,html.native-ios body.dark.compare-active .comparison-dock{background:rgba(15,23,34,.58);border-color:rgba(125,211,252,.2);box-shadow:0 6px 24px #0003}
+/* Keep mobile navigation in the visible viewport while iOS pans for the keyboard. */
+body #clear-chat{top:calc(var(--visual-offset-top,0px) + var(--site-header-height,52px) + 12px)}
+html.native-ios body>header{top:calc(var(--visual-offset-top,0px) + env(safe-area-inset-top,0px))}
+html.native-ios::before{top:var(--visual-offset-top,0px)}
+html.native-ios body #clear-chat{top:calc(var(--visual-offset-top,0px) + env(safe-area-inset-top,0px) + var(--site-header-height,52px) + 12px);z-index:65}
+@media(max-width:850px){
+ html:not(.native-ios).mobile-editing body{padding-top:var(--site-header-height,52px)}
+ html:not(.native-ios).mobile-editing body>header{position:fixed;top:var(--visual-offset-top,0px);left:0;right:0;width:auto;max-width:none;z-index:60}
+}
