@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1462,
+    "evidenceRecords": 1472,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 828,
-    "annotatedVerses": 3967
+    "chaptersWithAnnotations": 831,
+    "annotatedVerses": 3973
   },
   "byBook": [
     {
@@ -321,14 +321,14 @@
     {
       "book": "1 Thessalonians",
       "chapters": 5,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 6
+      "chaptersWithAnnotations": 3,
+      "annotatedVerses": 9
     },
     {
       "book": "2 Thessalonians",
       "chapters": 3,
-      "chaptersWithAnnotations": 1,
-      "annotatedVerses": 4
+      "chaptersWithAnnotations": 2,
+      "annotatedVerses": 7
     },
     {
       "book": "1 Timothy",
@@ -19765,9 +19765,15 @@
       "book": "1 Thessalonians",
       "bookId": 51,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "from-god-our-father-and-the-lord-jesus-christ-or-grace-to-you-and-peace-1-thessalonians-1-1-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -19783,9 +19789,15 @@
       "book": "1 Thessalonians",
       "bookId": 51,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "and-our-fellowlabourer-in-the-gospel-of-christ-or-not-printed-1-thessalonians-3-2-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -19793,9 +19805,12 @@
       "bookId": 51,
       "chapter": 4,
       "annotationIds": [
-        "coverage-nt-return-expectation"
+        "coverage-nt-return-expectation",
+        "given-unto-us-his-holy-spirit-or-given-unto-you-1-thessalonians-4-8-greek-new-testament",
+        "but-i-would-not-have-you-to-be-ignorant-or-we-would-not-1-thessalonians-4-13-greek-new-testament"
       ],
       "annotatedVerses": [
+        8,
         13,
         14,
         15,
@@ -19831,16 +19846,24 @@
       "bookId": 52,
       "chapter": 2,
       "annotationIds": [
-        "coverage-nt-return-expectation"
+        "coverage-nt-return-expectation",
+        "the-day-of-christ-or-the-day-of-the-lord-2-thessalonians-2-2-greek-new-testament",
+        "that-man-of-sin-or-the-man-of-lawlessness-2-thessalonians-2-3-greek-new-testament",
+        "he-as-god-sitteth-in-the-temple-of-god-or-sit-in-the-temple-of-god-2-thessalonians-2-4-greek-new-testament",
+        "whom-the-lord-shall-consume-or-the-lord-jesus-shall-slay-2-thessalonians-2-8-greek-new-testament",
+        "what-withholdeth-and-who-now-letteth-2-thessalonians-2-6-7"
       ],
       "annotatedVerses": [
         1,
         2,
         3,
-        4
+        4,
+        6,
+        8
       ],
       "modes": [
-        "contradictions"
+        "contradictions",
+        "questions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -19848,9 +19871,15 @@
       "book": "2 Thessalonians",
       "bookId": 52,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-tradition-which-he-received-of-us-or-which-they-received-2-thessalonians-3-6-greek-new-testament"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
