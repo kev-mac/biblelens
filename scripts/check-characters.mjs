@@ -1,0 +1,53 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import {build} from 'esbuild';
+import {validateCharacters} from './characters.mjs';
+
+const total=validateCharacters();
+const result=await build({entryPoints:['src/components/characters/CharactersView.tsx'],bundle:true,write:false,format:'esm',platform:'node'});
+const {characters,filterCharacters}=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
+assert.equal(total,38);
+assert.equal(filterCharacters('').length,total);
+assert(filterCharacters('  PARAN  ').some(person=>person.name==='Ishmael'));
+assert(filterCharacters('Rebekah Isaac','Patriarchal').some(person=>person.name==='Jacob'));
+assert(filterCharacters('Noah','Primeval').some(person=>person.name==='Shem'));
+assert.equal(filterCharacters('Abraham','Primeval').length,0);
+assert.equal(filterCharacters('unmatched name').length,0);
+assert.equal(filterCharacters('','Exodus').length,0);
+assert.equal(characters.filter(person=>person.lineage?.tribe).length,12);
+assert(characters.find(person=>person.name==='Enoch').lineage.parents.includes('Jared'));
+
+const cardBundle=await build({entryPoints:['src/components/characters/CharacterCard.tsx'],bundle:true,write:false,format:'iife',globalName:'Cards'});
+const node=tag=>({tag,className:'',textContent:'',children:[],dataset:{},attributes:{},append(...children){this.children.push(...children);},setAttribute(key,value){this.attributes[key]=value;}});
+const context={document:{createElement:node}};
+vm.createContext(context);vm.runInContext(cardBundle.outputFiles[0].text,context);
+const malicious={...characters[0],name:'<img src=x onerror=bad()>',summary:'<script>bad()</script>'};
+const card=context.Cards.CharacterCard(malicious);
+assert.equal(card.children[1].children[0].textContent,malicious.name);
+assert.equal(card.children[2].textContent,malicious.summary);
+assert.equal(card.children[1].children[0].href,'#characters/adam');
+const chip=context.Cards.StoryAnchor(characters[0].narrative_anchors.linked_stories[0]);
+assert.equal(chip.href,'#stories/genesis/the-fall-of-man');
+assert.equal(chip.dataset.characterStory,'genesis-the-fall-of-man');
+
+// Story routes must work before reader books have finished loading.
+const catalog=JSON.parse(fs.readFileSync('data/stories.json','utf8'));
+const nodes=new Map();const $=key=>{if(!nodes.has(key))nodes.set(key,{hidden:true,innerHTML:''});return nodes.get(key);};
+let focused=false,scrolled=false;
+const storyContext={books:[],readingBook:0,$,esc:String,readRef:()=>null,location:{hash:'#stories/genesis/joseph-in-egypt'},window:{addEventListener(){}},document:{body:{classList:{toggle(){}}},addEventListener(){},getElementById:id=>{assert.equal(id,'story-joseph-in-egypt');return {classList:{add(){}},focus(){focused=true;},scrollIntoView(){scrolled=true;}};}},fetch:async()=>({ok:true,json:async()=>catalog})};
+vm.createContext(storyContext);vm.runInContext(fs.readFileSync('src/stories.js','utf8'),storyContext);
+await storyContext.routeLinkedStory();
+assert(focused&&scrolled);assert(!$('#stories-view').hidden);assert($('#reader-layout').hidden);
+assert($('#stories-list').innerHTML.includes('id="story-joseph-in-egypt"'));
+storyContext.location.hash='#stories/genesis/missing';await storyContext.routeLinkedStory();assert($('#stories-list').innerHTML.includes('Story not found'));
+storyContext.location.hash='#read/0/1/1';await storyContext.routeLinkedStory();assert($('#stories-view').hidden);assert(!$('#reader-layout').hidden);
+const loads=[];
+storyContext.books=[{name:'Genesis',id:0}];
+storyContext.readRef=()=>({book:0,chapter:39,verse:1});
+storyContext.loadChapter=async(...args)=>loads.push(args);
+storyContext.location.hash='#stories/genesis/joseph-in-egypt';await storyContext.routeLinkedStory();
+assert.deepEqual(loads,[[0,39,1,false]],'Linked stories must align the reader book and chapter without replacing their route');
+const app=fs.readFileSync('src/app.js','utf8');assert(app.includes("setView('characters',false)"));
+const html=fs.readFileSync('src/index.html','utf8');assert(html.includes('data-view="characters"'));assert(html.includes('src="characters.js"'));
+console.log(`PASS: ${total} character profiles, verse bounds, 25 story destinations, combined filters, text-safe cards, and fresh-load story routing.`);

@@ -1,0 +1,1894 @@
+[
+  {
+    "id": "adam",
+    "name": "Adam",
+    "era": "Primeval",
+    "summary": "The man formed from the ground in Genesis; father of Cain, Abel, Seth, and other unnamed children.",
+    "lineage": {
+      "children": [
+        "Cain",
+        "Abel",
+        "Seth",
+        "Other sons and daughters (unnamed)"
+      ]
+    },
+    "geography": {
+      "origin": "Ground outside the garden; location unspecified (Genesis 2:7–8)",
+      "residence": [
+        "Garden of Eden",
+        "East of Eden"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 2:7",
+        "Genesis 3:23",
+        "Genesis 5:4"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-the-fall-of-man",
+          "title": "The Fall of Man",
+          "passage": "Genesis 3:1 - 3:24",
+          "route": "#stories/genesis/the-fall-of-man"
+        },
+        {
+          "story_id": "genesis-the-line-of-seth",
+          "title": "The Line of Seth",
+          "passage": "Genesis 4:25 - 5:32",
+          "route": "#stories/genesis/the-line-of-seth"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eve",
+    "name": "Eve",
+    "era": "Primeval",
+    "summary": "The woman formed as Adam’s companion and named as the mother of all living.",
+    "lineage": {
+      "children": [
+        "Cain",
+        "Abel",
+        "Seth",
+        "Other sons and daughters (unnamed)"
+      ]
+    },
+    "geography": {
+      "origin": "Garden of Eden",
+      "residence": [
+        "Garden of Eden",
+        "East of Eden"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 2:22",
+        "Genesis 3:20",
+        "Genesis 4:1",
+        "Genesis 4:25"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-the-fall-of-man",
+          "title": "The Fall of Man",
+          "passage": "Genesis 3:1 - 3:24",
+          "route": "#stories/genesis/the-fall-of-man"
+        },
+        {
+          "story_id": "genesis-cain-and-abel",
+          "title": "Cain and Abel",
+          "passage": "Genesis 4:1 - 4:16",
+          "route": "#stories/genesis/cain-and-abel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cain",
+    "name": "Cain",
+    "era": "Primeval",
+    "summary": "Adam and Eve’s son, a cultivator who kills Abel and settles east of Eden.",
+    "lineage": {
+      "parents": [
+        "Adam",
+        "Eve"
+      ],
+      "children": [
+        "Enoch (son of Cain)"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "East of Eden",
+        "Land of Nod"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 4:1",
+        "Genesis 4:8",
+        "Genesis 4:16",
+        "Genesis 4:17"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-cain-and-abel",
+          "title": "Cain and Abel",
+          "passage": "Genesis 4:1 - 4:16",
+          "route": "#stories/genesis/cain-and-abel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "abel",
+    "name": "Abel",
+    "era": "Primeval",
+    "summary": "Adam and Eve’s son, a keeper of sheep killed by his brother Cain.",
+    "lineage": {
+      "parents": [
+        "Adam",
+        "Eve"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Not specified"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 4:2",
+        "Genesis 4:8"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-cain-and-abel",
+          "title": "Cain and Abel",
+          "passage": "Genesis 4:1 - 4:16",
+          "route": "#stories/genesis/cain-and-abel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "seth",
+    "name": "Seth",
+    "era": "Primeval",
+    "summary": "A son born to Adam and Eve after Abel’s death; his genealogy leads to Noah.",
+    "lineage": {
+      "parents": [
+        "Adam",
+        "Eve"
+      ],
+      "children": [
+        "Enosh (Enos)"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Not specified"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 4:25",
+        "Genesis 5:6"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-the-line-of-seth",
+          "title": "The Line of Seth",
+          "passage": "Genesis 4:25 - 5:32",
+          "route": "#stories/genesis/the-line-of-seth"
+        }
+      ]
+    }
+  },
+  {
+    "id": "enoch",
+    "name": "Enoch",
+    "era": "Primeval",
+    "summary": "The descendant of Seth described as walking with God; distinct from Cain’s son of the same name.",
+    "lineage": {
+      "parents": [
+        "Jared"
+      ],
+      "children": [
+        "Methuselah",
+        "Other sons and daughters (unnamed)"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Not specified"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 5:18",
+        "Genesis 5:21",
+        "Genesis 5:24"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-the-line-of-seth",
+          "title": "The Line of Seth",
+          "passage": "Genesis 4:25 - 5:32",
+          "route": "#stories/genesis/the-line-of-seth"
+        }
+      ]
+    }
+  },
+  {
+    "id": "noah",
+    "name": "Noah",
+    "era": "Primeval",
+    "summary": "Lamech’s son who builds the ark and receives the covenant after the flood.",
+    "lineage": {
+      "parents": [
+        "Lamech (father of Noah)"
+      ],
+      "children": [
+        "Shem",
+        "Ham",
+        "Japheth"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Location before the flood unspecified",
+        "Mountains of Ararat after the flood"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 5:28",
+        "Genesis 6:9",
+        "Genesis 8:4",
+        "Genesis 9:18"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-noah-and-the-flood",
+          "title": "Noah and the Flood",
+          "passage": "Genesis 6:9 - 9:17",
+          "route": "#stories/genesis/noah-and-the-flood"
+        },
+        {
+          "story_id": "genesis-the-family-of-noah",
+          "title": "The Family of Noah",
+          "passage": "Genesis 9:18 - 10:32",
+          "route": "#stories/genesis/the-family-of-noah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shem",
+    "name": "Shem",
+    "era": "Primeval",
+    "summary": "A son of Noah whose genealogy is traced toward Terah and Abram.",
+    "lineage": {
+      "parents": [
+        "Noah"
+      ],
+      "children": [
+        "Elam",
+        "Asshur",
+        "Arphaxad",
+        "Lud",
+        "Aram",
+        "Other sons and daughters (unnamed)"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Not specified"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 10:21",
+        "Genesis 10:22",
+        "Genesis 11:10",
+        "Genesis 11:11"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-noah-and-the-flood",
+          "title": "Noah and the Flood",
+          "passage": "Genesis 6:9 - 9:17",
+          "route": "#stories/genesis/noah-and-the-flood"
+        },
+        {
+          "story_id": "genesis-the-family-of-noah",
+          "title": "The Family of Noah",
+          "passage": "Genesis 9:18 - 10:32",
+          "route": "#stories/genesis/the-family-of-noah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ham",
+    "name": "Ham",
+    "era": "Primeval",
+    "summary": "A son of Noah and father of Cush, Mizraim, Put, and Canaan.",
+    "lineage": {
+      "parents": [
+        "Noah"
+      ],
+      "children": [
+        "Cush",
+        "Mizraim",
+        "Put (Phut)",
+        "Canaan"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Not specified"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 9:18",
+        "Genesis 10:6"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-noah-and-the-flood",
+          "title": "Noah and the Flood",
+          "passage": "Genesis 6:9 - 9:17",
+          "route": "#stories/genesis/noah-and-the-flood"
+        },
+        {
+          "story_id": "genesis-the-family-of-noah",
+          "title": "The Family of Noah",
+          "passage": "Genesis 9:18 - 10:32",
+          "route": "#stories/genesis/the-family-of-noah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "japheth",
+    "name": "Japheth",
+    "era": "Primeval",
+    "summary": "A son of Noah; Genesis lists the peoples descended from his sons.",
+    "lineage": {
+      "parents": [
+        "Noah"
+      ],
+      "children": [
+        "Gomer",
+        "Magog",
+        "Madai",
+        "Javan",
+        "Tubal",
+        "Meshech",
+        "Tiras"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Not specified"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 9:18",
+        "Genesis 10:2"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-noah-and-the-flood",
+          "title": "Noah and the Flood",
+          "passage": "Genesis 6:9 - 9:17",
+          "route": "#stories/genesis/noah-and-the-flood"
+        },
+        {
+          "story_id": "genesis-the-family-of-noah",
+          "title": "The Family of Noah",
+          "passage": "Genesis 9:18 - 10:32",
+          "route": "#stories/genesis/the-family-of-noah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "terah",
+    "name": "Terah",
+    "era": "Patriarchal",
+    "summary": "Father of Abram, Nahor, and Haran; leads his family from Ur to Haran.",
+    "lineage": {
+      "parents": [
+        "Nahor (father of Terah)"
+      ],
+      "children": [
+        "Abram (Abraham)",
+        "Nahor (brother of Abram)",
+        "Haran",
+        "Sarai (Sarah; inferred from Genesis 20:12)"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Ur of the Chaldeans",
+        "Haran"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 11:24",
+        "Genesis 11:26",
+        "Genesis 11:31",
+        "Genesis 20:12"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-the-call-of-abram",
+          "title": "The Call of Abram",
+          "passage": "Genesis 11:27 - 12:9",
+          "route": "#stories/genesis/the-call-of-abram"
+        }
+      ]
+    }
+  },
+  {
+    "id": "abraham",
+    "name": "Abraham",
+    "era": "Patriarchal",
+    "summary": "Also called Abram; travels from his family’s home to Canaan and receives covenant promises.",
+    "lineage": {
+      "parents": [
+        "Terah"
+      ],
+      "children": [
+        "Ishmael",
+        "Isaac",
+        "Zimran",
+        "Jokshan",
+        "Medan",
+        "Midian",
+        "Ishbak",
+        "Shuah"
+      ]
+    },
+    "geography": {
+      "origin": "Ur of the Chaldeans",
+      "residence": [
+        "Ur of the Chaldeans",
+        "Haran",
+        "Canaan",
+        "Egypt (sojourn)",
+        "Gerar",
+        "Beersheba"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 11:31",
+        "Genesis 12:1",
+        "Genesis 17:5",
+        "Genesis 25:1",
+        "Genesis 25:2"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-the-call-of-abram",
+          "title": "The Call of Abram",
+          "passage": "Genesis 11:27 - 12:9",
+          "route": "#stories/genesis/the-call-of-abram"
+        },
+        {
+          "story_id": "genesis-abraham-and-sarah-s-covenant",
+          "title": "Abraham and Sarah’s Covenant",
+          "passage": "Genesis 17:1 - 18:15",
+          "route": "#stories/genesis/abraham-and-sarah-s-covenant"
+        },
+        {
+          "story_id": "genesis-the-binding-of-isaac",
+          "title": "The Binding of Isaac",
+          "passage": "Genesis 22:1 - 22:19",
+          "route": "#stories/genesis/the-binding-of-isaac"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sarah",
+    "name": "Sarah",
+    "era": "Patriarchal",
+    "summary": "Also called Sarai; Abraham’s wife and Isaac’s mother, renamed in the covenant narrative.",
+    "lineage": {
+      "parents": [
+        "Terah (inferred from Genesis 20:12)",
+        "Mother unnamed; different from Abraham’s"
+      ],
+      "children": [
+        "Isaac"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Ur of the Chaldeans",
+        "Haran",
+        "Canaan",
+        "Egypt (sojourn)",
+        "Gerar"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 11:31",
+        "Genesis 17:15",
+        "Genesis 20:12",
+        "Genesis 21:2"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-the-call-of-abram",
+          "title": "The Call of Abram",
+          "passage": "Genesis 11:27 - 12:9",
+          "route": "#stories/genesis/the-call-of-abram"
+        },
+        {
+          "story_id": "genesis-abraham-and-sarah-s-covenant",
+          "title": "Abraham and Sarah’s Covenant",
+          "passage": "Genesis 17:1 - 18:15",
+          "route": "#stories/genesis/abraham-and-sarah-s-covenant"
+        },
+        {
+          "story_id": "genesis-isaac-and-ishmael",
+          "title": "Isaac and Ishmael",
+          "passage": "Genesis 21:1 - 21:21",
+          "route": "#stories/genesis/isaac-and-ishmael"
+        }
+      ]
+    }
+  },
+  {
+    "id": "lot",
+    "name": "Lot",
+    "era": "Patriarchal",
+    "summary": "Haran’s son and Abraham’s nephew; separates from Abraham and later escapes Sodom.",
+    "lineage": {
+      "parents": [
+        "Haran"
+      ],
+      "children": [
+        "Two daughters (unnamed; survived Sodom)"
+      ]
+    },
+    "geography": {
+      "origin": "Ur of the Chaldeans",
+      "residence": [
+        "Ur of the Chaldeans",
+        "Haran",
+        "Canaan",
+        "Sodom",
+        "Zoar",
+        "Mountains near Zoar"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 11:27",
+        "Genesis 11:31",
+        "Genesis 13:12",
+        "Genesis 19:30"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-abram-and-lot",
+          "title": "Abram and Lot",
+          "passage": "Genesis 13:1 - 14:24",
+          "route": "#stories/genesis/abram-and-lot"
+        },
+        {
+          "story_id": "genesis-lot-leaves-sodom",
+          "title": "Lot Leaves Sodom",
+          "passage": "Genesis 19:1 - 19:38",
+          "route": "#stories/genesis/lot-leaves-sodom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hagar",
+    "name": "Hagar",
+    "era": "Patriarchal",
+    "summary": "Sarah’s Egyptian servant and Ishmael’s mother; encounters divine provision in the wilderness.",
+    "lineage": {
+      "children": [
+        "Ishmael"
+      ]
+    },
+    "geography": {
+      "origin": "Egypt",
+      "residence": [
+        "Abraham’s household in Canaan",
+        "Wilderness near Shur",
+        "Wilderness of Beersheba",
+        "Wilderness of Paran"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 16:1",
+        "Genesis 16:7",
+        "Genesis 16:15",
+        "Genesis 21:14",
+        "Genesis 21:21"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-hagar-and-ishmael",
+          "title": "Hagar and Ishmael",
+          "passage": "Genesis 16:1 - 16:16",
+          "route": "#stories/genesis/hagar-and-ishmael"
+        },
+        {
+          "story_id": "genesis-isaac-and-ishmael",
+          "title": "Isaac and Ishmael",
+          "passage": "Genesis 21:1 - 21:21",
+          "route": "#stories/genesis/isaac-and-ishmael"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ishmael",
+    "name": "Ishmael",
+    "era": "Patriarchal",
+    "summary": "Abraham and Hagar’s son, whose twelve sons are listed as princes.",
+    "lineage": {
+      "parents": [
+        "Abraham",
+        "Hagar"
+      ],
+      "children": [
+        "Nebaioth",
+        "Kedar",
+        "Adbeel",
+        "Mibsam",
+        "Mishma",
+        "Dumah",
+        "Massa",
+        "Hadad (Hadar in KJV)",
+        "Tema",
+        "Jetur",
+        "Naphish",
+        "Kedemah",
+        "Mahalath (Genesis 28:9); Basemath (Genesis 36:3)"
+      ]
+    },
+    "geography": {
+      "origin": "Canaan, in Abraham’s household",
+      "residence": [
+        "Wilderness of Beersheba",
+        "Wilderness of Paran"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 16:15",
+        "Genesis 21:20",
+        "Genesis 21:21",
+        "Genesis 25:13",
+        "Genesis 25:14",
+        "Genesis 25:15",
+        "Genesis 28:9",
+        "Genesis 36:3"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-hagar-and-ishmael",
+          "title": "Hagar and Ishmael",
+          "passage": "Genesis 16:1 - 16:16",
+          "route": "#stories/genesis/hagar-and-ishmael"
+        },
+        {
+          "story_id": "genesis-isaac-and-ishmael",
+          "title": "Isaac and Ishmael",
+          "passage": "Genesis 21:1 - 21:21",
+          "route": "#stories/genesis/isaac-and-ishmael"
+        }
+      ]
+    }
+  },
+  {
+    "id": "isaac",
+    "name": "Isaac",
+    "era": "Patriarchal",
+    "summary": "Abraham and Sarah’s son; husband of Rebekah and father of Esau and Jacob.",
+    "lineage": {
+      "parents": [
+        "Abraham",
+        "Sarah"
+      ],
+      "children": [
+        "Esau",
+        "Jacob"
+      ]
+    },
+    "geography": {
+      "origin": "Abraham’s household; location not explicitly named at birth",
+      "residence": [
+        "Negev",
+        "Beer-lahai-roi",
+        "Gerar",
+        "Beersheba",
+        "Hebron"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 21:3",
+        "Genesis 24:62",
+        "Genesis 25:26",
+        "Genesis 26:6",
+        "Genesis 35:27"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-isaac-and-ishmael",
+          "title": "Isaac and Ishmael",
+          "passage": "Genesis 21:1 - 21:21",
+          "route": "#stories/genesis/isaac-and-ishmael"
+        },
+        {
+          "story_id": "genesis-the-binding-of-isaac",
+          "title": "The Binding of Isaac",
+          "passage": "Genesis 22:1 - 22:19",
+          "route": "#stories/genesis/the-binding-of-isaac"
+        },
+        {
+          "story_id": "genesis-isaac-and-rebekah",
+          "title": "Isaac and Rebekah",
+          "passage": "Genesis 24:1 - 24:67",
+          "route": "#stories/genesis/isaac-and-rebekah"
+        },
+        {
+          "story_id": "genesis-jacob-and-esau",
+          "title": "Jacob and Esau",
+          "passage": "Genesis 25:19 - 28:9",
+          "route": "#stories/genesis/jacob-and-esau"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rebekah",
+    "name": "Rebekah",
+    "era": "Patriarchal",
+    "summary": "Bethuel’s daughter, Isaac’s wife, and mother of the twins Esau and Jacob.",
+    "lineage": {
+      "parents": [
+        "Bethuel"
+      ],
+      "children": [
+        "Esau",
+        "Jacob"
+      ]
+    },
+    "geography": {
+      "origin": "Aram-naharaim, town of Nahor (family home)",
+      "residence": [
+        "Town of Nahor",
+        "Negev",
+        "Gerar"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 24:10",
+        "Genesis 24:15",
+        "Genesis 24:67",
+        "Genesis 25:20",
+        "Genesis 25:26"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-isaac-and-rebekah",
+          "title": "Isaac and Rebekah",
+          "passage": "Genesis 24:1 - 24:67",
+          "route": "#stories/genesis/isaac-and-rebekah"
+        },
+        {
+          "story_id": "genesis-jacob-and-esau",
+          "title": "Jacob and Esau",
+          "passage": "Genesis 25:19 - 28:9",
+          "route": "#stories/genesis/jacob-and-esau"
+        }
+      ]
+    }
+  },
+  {
+    "id": "esau",
+    "name": "Esau",
+    "era": "Patriarchal",
+    "summary": "Also called Edom; Isaac and Rebekah’s older son, who settles in Seir.",
+    "lineage": {
+      "parents": [
+        "Isaac",
+        "Rebekah"
+      ],
+      "children": [
+        "Eliphaz",
+        "Reuel",
+        "Jeush",
+        "Jalam",
+        "Korah"
+      ]
+    },
+    "geography": {
+      "origin": "Canaan",
+      "residence": [
+        "Canaan",
+        "Seir (Edom)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 25:25",
+        "Genesis 36:4",
+        "Genesis 36:5",
+        "Genesis 36:8"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-and-esau",
+          "title": "Jacob and Esau",
+          "passage": "Genesis 25:19 - 28:9",
+          "route": "#stories/genesis/jacob-and-esau"
+        },
+        {
+          "story_id": "genesis-jacob-returns-to-canaan",
+          "title": "Jacob Returns to Canaan",
+          "passage": "Genesis 31:1 - 33:20",
+          "route": "#stories/genesis/jacob-returns-to-canaan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jacob",
+    "name": "Jacob",
+    "era": "Patriarchal",
+    "summary": "Also called Israel; Isaac and Rebekah’s son and father of the twelve sons associated with Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Isaac",
+        "Rebekah"
+      ],
+      "children": [
+        "Reuben",
+        "Simeon",
+        "Levi",
+        "Judah",
+        "Dan",
+        "Naphtali",
+        "Gad",
+        "Asher",
+        "Issachar",
+        "Zebulun",
+        "Dinah",
+        "Joseph",
+        "Benjamin"
+      ]
+    },
+    "geography": {
+      "origin": "Canaan",
+      "residence": [
+        "Canaan",
+        "Paddan-aram",
+        "Shechem",
+        "Bethel",
+        "Hebron",
+        "Goshen in Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 25:26",
+        "Genesis 32:28",
+        "Genesis 35:23",
+        "Genesis 35:24",
+        "Genesis 35:25",
+        "Genesis 35:26",
+        "Genesis 46:7"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-and-esau",
+          "title": "Jacob and Esau",
+          "passage": "Genesis 25:19 - 28:9",
+          "route": "#stories/genesis/jacob-and-esau"
+        },
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-returns-to-canaan",
+          "title": "Jacob Returns to Canaan",
+          "passage": "Genesis 31:1 - 33:20",
+          "route": "#stories/genesis/jacob-returns-to-canaan"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "leah",
+    "name": "Leah",
+    "era": "Patriarchal",
+    "summary": "Laban’s daughter and Jacob’s wife; mother of six sons and Dinah.",
+    "lineage": {
+      "parents": [
+        "Laban"
+      ],
+      "children": [
+        "Reuben",
+        "Simeon",
+        "Levi",
+        "Judah",
+        "Issachar",
+        "Zebulun",
+        "Dinah"
+      ]
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 29:16",
+        "Genesis 29:23",
+        "Genesis 30:21",
+        "Genesis 35:23"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-returns-to-canaan",
+          "title": "Jacob Returns to Canaan",
+          "passage": "Genesis 31:1 - 33:20",
+          "route": "#stories/genesis/jacob-returns-to-canaan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rachel",
+    "name": "Rachel",
+    "era": "Patriarchal",
+    "summary": "Laban’s daughter and Jacob’s wife; mother of Joseph and Benjamin.",
+    "lineage": {
+      "parents": [
+        "Laban"
+      ],
+      "children": [
+        "Joseph",
+        "Benjamin"
+      ]
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 29:16",
+        "Genesis 30:24",
+        "Genesis 35:18"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-the-death-of-rachel",
+          "title": "The Death of Rachel",
+          "passage": "Genesis 35:1 - 35:29",
+          "route": "#stories/genesis/the-death-of-rachel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bilhah",
+    "name": "Bilhah",
+    "era": "Patriarchal",
+    "summary": "Rachel’s servant, given to Jacob as a wife; mother of Dan and Naphtali.",
+    "lineage": {
+      "children": [
+        "Dan",
+        "Naphtali"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Laban’s household in Paddan-aram",
+        "Jacob’s household in Canaan"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 29:29",
+        "Genesis 30:4",
+        "Genesis 35:25"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        }
+      ]
+    }
+  },
+  {
+    "id": "zilpah",
+    "name": "Zilpah",
+    "era": "Patriarchal",
+    "summary": "Leah’s servant, given to Jacob as a wife; mother of Gad and Asher.",
+    "lineage": {
+      "children": [
+        "Gad",
+        "Asher"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Laban’s household in Paddan-aram",
+        "Jacob’s household in Canaan"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 29:24",
+        "Genesis 30:9",
+        "Genesis 35:26"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        }
+      ]
+    }
+  },
+  {
+    "id": "reuben",
+    "name": "Reuben",
+    "era": "Patriarchal",
+    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Leah"
+      ],
+      "children": [
+        "Hanoch",
+        "Pallu",
+        "Hezron",
+        "Carmi"
+      ],
+      "tribe": "Reuben"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:23",
+        "Genesis 46:9",
+        "Genesis 37:21"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "simeon",
+    "name": "Simeon",
+    "era": "Patriarchal",
+    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Leah"
+      ],
+      "children": [
+        "Jemuel",
+        "Jamin",
+        "Ohad",
+        "Jachin",
+        "Zohar",
+        "Shaul"
+      ],
+      "tribe": "Simeon"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:23",
+        "Genesis 46:10",
+        "Genesis 34:25"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "levi",
+    "name": "Levi",
+    "era": "Patriarchal",
+    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Leah"
+      ],
+      "children": [
+        "Gershon",
+        "Kohath",
+        "Merari"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:23",
+        "Genesis 46:11",
+        "Genesis 34:25"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "judah",
+    "name": "Judah",
+    "era": "Patriarchal",
+    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Leah"
+      ],
+      "children": [
+        "Er",
+        "Onan",
+        "Shelah",
+        "Perez",
+        "Zerah"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:23",
+        "Genesis 46:12",
+        "Genesis 38:26",
+        "Genesis 44:33",
+        "Genesis 49:8"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-judah-and-tamar",
+          "title": "Judah and Tamar",
+          "passage": "Genesis 38:1 - 38:30",
+          "route": "#stories/genesis/judah-and-tamar"
+        },
+        {
+          "story_id": "genesis-joseph-reunites-his-family",
+          "title": "Joseph Reunites His Family",
+          "passage": "Genesis 42:1 - 47:12",
+          "route": "#stories/genesis/joseph-reunites-his-family"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dan",
+    "name": "Dan",
+    "era": "Patriarchal",
+    "summary": "Jacob and Bilhah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Bilhah"
+      ],
+      "children": [
+        "Hushim"
+      ],
+      "tribe": "Dan"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:25",
+        "Genesis 46:23"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "naphtali",
+    "name": "Naphtali",
+    "era": "Patriarchal",
+    "summary": "Jacob and Bilhah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Bilhah"
+      ],
+      "children": [
+        "Jahzeel",
+        "Guni",
+        "Jezer",
+        "Shillem"
+      ],
+      "tribe": "Naphtali"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:25",
+        "Genesis 46:24"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "gad",
+    "name": "Gad",
+    "era": "Patriarchal",
+    "summary": "Jacob and Zilpah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Zilpah"
+      ],
+      "children": [
+        "Ziphion",
+        "Haggi",
+        "Shuni",
+        "Ezbon",
+        "Eri",
+        "Arodi",
+        "Areli"
+      ],
+      "tribe": "Gad"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:26",
+        "Genesis 46:16"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "asher",
+    "name": "Asher",
+    "era": "Patriarchal",
+    "summary": "Jacob and Zilpah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Zilpah"
+      ],
+      "children": [
+        "Imnah (Jimnah)",
+        "Ishvah",
+        "Ishvi",
+        "Beriah",
+        "Serah"
+      ],
+      "tribe": "Asher"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:26",
+        "Genesis 46:17"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "issachar",
+    "name": "Issachar",
+    "era": "Patriarchal",
+    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Leah"
+      ],
+      "children": [
+        "Tola",
+        "Puvah",
+        "Job",
+        "Shimron"
+      ],
+      "tribe": "Issachar"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:23",
+        "Genesis 46:13"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "zebulun",
+    "name": "Zebulun",
+    "era": "Patriarchal",
+    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Leah"
+      ],
+      "children": [
+        "Sered",
+        "Elon",
+        "Jahleel"
+      ],
+      "tribe": "Zebulun"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:23",
+        "Genesis 46:14"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-jacob-blesses-his-family",
+          "title": "Jacob Blesses His Family",
+          "passage": "Genesis 48:1 - 50:26",
+          "route": "#stories/genesis/jacob-blesses-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "joseph",
+    "name": "Joseph",
+    "era": "Patriarchal",
+    "summary": "Jacob and Rachel’s son; sold into Egypt, he rises to authority and preserves his family during famine.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Rachel"
+      ],
+      "children": [
+        "Manasseh",
+        "Ephraim"
+      ],
+      "tribe": "Joseph (represented by Ephraim and Manasseh)"
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:24",
+        "Genesis 46:20",
+        "Genesis 30:24",
+        "Genesis 37:3",
+        "Genesis 41:41",
+        "Genesis 45:4"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-joseph-and-his-brothers",
+          "title": "Joseph and His Brothers",
+          "passage": "Genesis 37:1 - 37:36",
+          "route": "#stories/genesis/joseph-and-his-brothers"
+        },
+        {
+          "story_id": "genesis-joseph-in-egypt",
+          "title": "Joseph in Egypt",
+          "passage": "Genesis 39:1 - 41:57",
+          "route": "#stories/genesis/joseph-in-egypt"
+        },
+        {
+          "story_id": "genesis-joseph-reunites-his-family",
+          "title": "Joseph Reunites His Family",
+          "passage": "Genesis 42:1 - 47:12",
+          "route": "#stories/genesis/joseph-reunites-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "benjamin",
+    "name": "Benjamin",
+    "era": "Patriarchal",
+    "summary": "Jacob and Rachel’s youngest son, born as Rachel dies; later travels with his brothers to Egypt.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Rachel"
+      ],
+      "children": [
+        "Bela",
+        "Becher",
+        "Ashbel",
+        "Gera",
+        "Naaman",
+        "Ehi",
+        "Rosh",
+        "Muppim",
+        "Huppim",
+        "Ard"
+      ],
+      "tribe": "Benjamin"
+    },
+    "geography": {
+      "origin": "Near Bethlehem in Canaan",
+      "residence": [
+        "Canaan",
+        "Egypt"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 35:24",
+        "Genesis 46:21",
+        "Genesis 35:18",
+        "Genesis 44:30"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-the-death-of-rachel",
+          "title": "The Death of Rachel",
+          "passage": "Genesis 35:1 - 35:29",
+          "route": "#stories/genesis/the-death-of-rachel"
+        },
+        {
+          "story_id": "genesis-joseph-reunites-his-family",
+          "title": "Joseph Reunites His Family",
+          "passage": "Genesis 42:1 - 47:12",
+          "route": "#stories/genesis/joseph-reunites-his-family"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dinah",
+    "name": "Dinah",
+    "era": "Patriarchal",
+    "summary": "Jacob and Leah’s daughter; the Shechem narrative centres on her and her brothers’ response.",
+    "lineage": {
+      "parents": [
+        "Jacob",
+        "Leah"
+      ]
+    },
+    "geography": {
+      "origin": "Paddan-aram",
+      "residence": [
+        "Paddan-aram",
+        "Canaan",
+        "Egypt (Jacob’s daughters accompany him; Genesis 46:7)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 30:21",
+        "Genesis 34:1",
+        "Genesis 46:7",
+        "Genesis 46:15"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-jacob-s-household",
+          "title": "Jacob’s Household",
+          "passage": "Genesis 29:1 - 30:24",
+          "route": "#stories/genesis/jacob-s-household"
+        },
+        {
+          "story_id": "genesis-dinah-at-shechem",
+          "title": "Dinah at Shechem",
+          "passage": "Genesis 34:1 - 34:31",
+          "route": "#stories/genesis/dinah-at-shechem"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tamar",
+    "name": "Tamar",
+    "era": "Patriarchal",
+    "summary": "Judah’s daughter-in-law and mother of his sons Perez and Zerah; Judah acknowledges her claim.",
+    "lineage": {
+      "children": [
+        "Perez",
+        "Zerah"
+      ]
+    },
+    "geography": {
+      "origin": "Not specified",
+      "residence": [
+        "Judah’s family in Canaan",
+        "Her father’s house (location unspecified)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Genesis"
+      ],
+      "key_verses": [
+        "Genesis 38:6",
+        "Genesis 38:11",
+        "Genesis 38:26",
+        "Genesis 38:29",
+        "Genesis 38:30"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "genesis-judah-and-tamar",
+          "title": "Judah and Tamar",
+          "passage": "Genesis 38:1 - 38:30",
+          "route": "#stories/genesis/judah-and-tamar"
+        }
+      ]
+    }
+  }
+]

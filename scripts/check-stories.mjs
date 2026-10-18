@@ -8,7 +8,7 @@ const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 const chapters=JSON.parse(fs.readFileSync('data/chapters.json','utf8'));
 const nodes=new Map(),handlers={},loads=[];
 const node=id=>{if(!nodes.has(id))nodes.set(id,{hidden:false,innerHTML:'',textContent:''});return nodes.get(id);};
-const c={books,readingBook:0,$:node,esc:s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),categoryIcon:()=>'<svg></svg>',document:{body:{classList:{toggle(){}}},addEventListener:(type,fn)=>{handlers[type]=fn;}},setView(){},loadChapter:(...args)=>loads.push(args),fetch:async()=>({ok:true,json:async()=>catalog})};
+const c={window:{addEventListener(){}},location:{hash:''},books,readingBook:0,$:node,esc:s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),categoryIcon:()=>'<svg></svg>',document:{body:{classList:{toggle(){}}},addEventListener:(type,fn)=>{handlers[type]=fn;}},setView(){},loadChapter:(...args)=>loads.push(args),fetch:async()=>({ok:true,json:async()=>catalog})};
 c.readRef=reference=>{const match=/^(.*?) (\d+):(\d+)/.exec(reference),book=match&&books.find(b=>b.name===match[1]);return book?{book:book.id,chapter:+match[2],verse:+match[3]}:null;};
 vm.createContext(c);vm.runInContext(fs.readFileSync('src/stories.js','utf8'),c);
 const seen=new Set();
@@ -30,7 +30,7 @@ for(const entry of catalog){
  }
 }
 vm.runInContext('storiesActive=true',c);await c.renderStoriesView();
-assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,4);
+assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,catalog[0].stories.length);
 assert(node('#reader-layout').hidden);assert(!node('#stories-view').hidden);
 assert(node('#stories-list').innerHTML.includes('data-cite="42/1/1" data-cite-end="3"'));
 assert(c.storiesFilterButton().includes('aria-pressed="true"'));

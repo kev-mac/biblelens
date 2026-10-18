@@ -1,3 +1,5 @@
+import {build} from 'esbuild';
+import {validateCharacters} from './characters.mjs';
 import {validateCommandments} from './commandments.mjs';
 import zlib from 'node:zlib';
 import {validateRelatedPassages} from './study-relationships.mjs';
@@ -10,6 +12,7 @@ import {validateWitnesses} from './witness-labels.mjs';
 import {validateSides} from './verse-roles.mjs';
 import fs from 'node:fs';import vm from 'node:vm';import path from 'node:path';
 validateSides(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
+console.log('Validated characters:',validateCharacters());
 validateWitnesses(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const chapterNames=JSON.parse(fs.readFileSync('data/chapter-names.json','utf8'));
 console.log('Validated chapter names:',validateChapterNames(chapterNames,JSON.parse(fs.readFileSync('data/books.json','utf8'))));
@@ -18,6 +21,9 @@ validateCommandments(evidenceRecords,JSON.parse(fs.readFileSync('data/books.json
 const root=process.cwd();const context={};vm.createContext(context);vm.runInContext(fs.readFileSync('src/data.js','utf8')+'\nthis.studies=ENTRIES;',context);
 validateRelatedPassages([...evidenceRecords,...context.studies],JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const assets={};for(const [name,type]of Object.entries({'index.html':'text/html; charset=utf-8','fonts.css':'text/css; charset=utf-8','style.css':'text/css; charset=utf-8','app.js':'application/javascript; charset=utf-8','data.js':'application/javascript; charset=utf-8','red-letters.js':'application/javascript; charset=utf-8','passage.js':'application/javascript; charset=utf-8','reader.js':'application/javascript; charset=utf-8','stories.js':'application/javascript; charset=utf-8','commandments.js':'application/javascript; charset=utf-8','marked.js':'application/javascript; charset=utf-8','sync-core.js':'application/javascript; charset=utf-8','sync.js':'application/javascript; charset=utf-8','release.js':'application/javascript; charset=utf-8','mobile.js':'application/javascript; charset=utf-8','citations.js':'application/javascript; charset=utf-8'})){assets[name==='index.html'?'/':'/'+name]={type,body:fs.readFileSync('src/'+name,'utf8')}}
+const charactersBundle=await build({entryPoints:['src/components/characters/CharactersView.tsx'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
+assets['/characters.js']={type:'application/javascript; charset=utf-8',body:charactersBundle.outputFiles[0].text};
+assets['/characters.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('src/data/characters.json','utf8')};
 assets['/stories.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('data/stories.json','utf8')};
 assets['/release.json']={type:'application/json; charset=utf-8',body:JSON.stringify(releaseInfo())};
 assets['/reader.js'].body=assets['/reader.js'].body.replace('/*__CHAPTER_NAMES__*/{}',JSON.stringify(Object.fromEntries(Object.entries(chapterNames).filter(([key])=>!key.startsWith('_')))));
