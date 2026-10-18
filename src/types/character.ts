@@ -29,7 +29,7 @@ export interface CharacterProfile {
   name: string;
   aliases?: string[];
   sex: 'female' | 'male' | 'unspecified';
-  era: 'Primeval' | 'Patriarchal' | 'Exodus' | 'Conquest' | 'Judges' | 'Monarchy' | 'Prophets' | 'Gospels' | 'Apostolic' | 'Across scripture';
+  era: 'Primeval' | 'Patriarchal' | 'Exodus' | 'Conquest' | 'Judges' | 'Monarchy' | 'Wisdom' | 'Prophets' | 'Gospels' | 'Apostolic' | 'Across scripture';
   summary: string;
   lineage?: CharacterLineage;
   geography: CharacterGeography;

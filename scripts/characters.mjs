@@ -9,7 +9,7 @@ export function validateCharacters() {
  const seen=new Set();
  const nonempty=value=>typeof value==='string'&&value.trim().length>0;
  const strings=value=>Array.isArray(value)&&value.length>0&&value.every(nonempty);
- const eras=['Primeval','Patriarchal','Exodus','Conquest','Judges','Monarchy','Prophets','Gospels','Apostolic','Across scripture'];
+ const eras=['Primeval','Patriarchal','Exodus','Conquest','Judges','Monarchy','Wisdom','Prophets','Gospels','Apostolic','Across scripture'];
  for(const profile of profiles){
   const fail=message=>{throw Error(`Character ${profile.id}: ${message}`);};
   if(!nonempty(profile.id)||!/^[a-z0-9-]+$/.test(profile.id)||seen.has(profile.id))fail('invalid or duplicate ID');seen.add(profile.id);

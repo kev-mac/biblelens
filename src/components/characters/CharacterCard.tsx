@@ -52,21 +52,38 @@ export function CharacterCard(profile: CharacterProfile): HTMLElement {
   open.href = `#characters/${profile.id}`;
   open.setAttribute('aria-haspopup', 'dialog');
   heading.append(open);
-  card.append(element('span', 'character-era', profile.era), heading,
-    element('p', 'character-summary', profile.summary), LineageBadges(profile));
-  card.append(element('p', 'character-origin', `Origin · ${profile.geography.origin}`));
-  card.append(element('p', 'character-books', `In ${profile.narrative_anchors.books.join(', ')}`));
+  const details = element('div', 'character-card-details');
+  const summary = element('p', 'character-summary', profile.summary);
+  details.id = `character-details-${profile.id}`; details.hidden = true;
+  const toggle = element('button', 'character-summary-toggle'); toggle.type = 'button';
+  toggle.setAttribute('aria-controls', details.id); toggle.setAttribute('aria-expanded', 'false');
+  const chevron = element('span', 'character-summary-chevron', '⌄'); chevron.setAttribute('aria-hidden', 'true');
+  toggle.append(element('span', '', 'Details'), chevron);
+  function toggleSummary(): void {
+    details.hidden = !details.hidden;
+    toggle.setAttribute('aria-expanded', String(!details.hidden));
+    toggle.setAttribute('aria-label', `${details.hidden ? 'Expand' : 'Collapse'} ${profile.name} details`);
+  }
+  toggle.setAttribute('aria-label', `Expand ${profile.name} details`);
+  toggle.addEventListener('click', toggleSummary);
+  card.addEventListener('dblclick', event => {
+    if (!(event.target as HTMLElement).closest('a,button,input,select,textarea')) { event.preventDefault(); toggleSummary(); }
+  });
+  card.append(element('span', 'character-era', profile.era), heading, summary, toggle, details);
+  details.append(LineageBadges(profile));
+  details.append(element('p', 'character-origin', `Origin · ${profile.geography.origin}`));
+  details.append(element('p', 'character-books', `In ${profile.narrative_anchors.books.join(', ')}`));
   const stories = element('div', 'character-stories');
   stories.setAttribute('aria-label', `Stories featuring ${profile.name}`);
   for (const anchor of profile.narrative_anchors.linked_stories) stories.append(StoryAnchor(anchor));
-  if (profile.narrative_anchors.linked_stories.length) card.append(stories);
+  if (profile.narrative_anchors.linked_stories.length) details.append(stories);
   else {
     const verses = element('div', 'character-verses');
     for (const reference of profile.narrative_anchors.key_verses.slice(0, 3)) {
       const route = characterVerseRoute(reference); if (!route) continue;
       const link = element('a', 'character-story-chip', reference); link.href = route; verses.append(link);
     }
-    card.append(verses);
+    details.append(verses);
   }
   return card;
 }

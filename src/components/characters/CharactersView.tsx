@@ -41,7 +41,7 @@ function mountCharacters(): void {
   const searchBox = element('div', 'characters-search-box');
   searchBox.append(label, search);
   host.append(heading, note, searchBox, filters, results, list);
-  const eraOrder = ['Primeval','Patriarchal','Exodus','Conquest','Judges','Monarchy','Prophets','Gospels','Apostolic','Across scripture'];
+  const eraOrder = ['Primeval','Patriarchal','Exodus','Conquest','Judges','Monarchy','Wisdom','Prophets','Gospels','Apostolic','Across scripture'];
   const eras = ['All Eras', ...eraOrder.filter(era => characters.some(profile => profile.era === era))];
   for (const name of eras) {
     const button = element('button', '', name); button.type = 'button'; button.dataset.era = name;
@@ -101,6 +101,7 @@ function mountCharacters(): void {
       if (target) {
         search.value = ''; era = 'All Eras'; womenOnly = false; render();
         const card = document.getElementById(`character-card-${target.id}`);
+        card?.querySelector<HTMLButtonElement>('.character-summary-toggle[aria-expanded="false"]')?.click();
         card?.focus({preventScroll:true}); card?.scrollIntoView({behavior:'smooth', block:'start'});
       }
       return;

@@ -1,14 +1,10 @@
 'use strict';
-// UI fixtures, not a reviewed enumeration of the traditional 613 commandments.
-const COMMANDMENT_SAMPLES = [
- {id:143,title:'Leave field corners for the poor',passage:'Leviticus 19:9',summary:'Leave the edges of the harvest and its gleanings for the poor and the stranger.',taxonomy:{polarity:'Positive',sphere:'Humanity',applicability:['Land of Israel Only'],topics:['Agriculture','Poverty','Generosity']},lens:[{reference:'2 Corinthians 9:7',type:'Expansion',description:'A thematic connection to willing generosity toward those in need.'}]},
- {id:144,title:'Do not charge interest to the poor',passage:'Exodus 22:25',summary:'When lending to the poor among your people, do not act as an exacting creditor or impose interest.',taxonomy:{polarity:'Negative',sphere:'Humanity',applicability:['Universal / Today'],topics:['Business','Poverty','Justice']},lens:[{reference:'Luke 6:35',type:'Expansion',description:'Jesus connects lending with love and generosity, expecting nothing in return.'}]},
- {id:145,title:'Offer the daily sacrifice',passage:'Numbers 28:3',summary:'Present two unblemished year-old lambs each day as the regular burnt offering.',taxonomy:{polarity:'Positive',sphere:'God',applicability:['Temple Era Only','Specific Roles'],topics:['Worship','Sacrifice','Priesthood']},lens:[{reference:'Hebrews 10:11',type:'Fulfillment',description:'Hebrews contrasts repeated priestly sacrifices with the offering of Christ.'}]}
-];
+// Bundled from the retained, public-domain historical enumeration.
+const COMMANDMENTS = /*__COMMANDMENTS__*/[];
 const COMMANDMENT_FACETS = {
  polarity:['Positive','Negative'],sphere:['God','Humanity'],
- applicability:['Universal / Today','Temple Era Only','Land of Israel Only','Specific Roles'],
- topics:[...new Set(COMMANDMENT_SAMPLES.flatMap(item=>item.taxonomy.topics))].sort()
+ applicability:['Universal / Today','Temple Era Only','Land of Israel Only','Specific Roles','Context dependent'],
+ topics:[...new Set(COMMANDMENTS.flatMap(item=>item.taxonomy.topics))].sort()
 };
 // Ignore the candidate's own dimension when counting available matches. Selected
 // values stay removable, even when a typed search leaves no matching records.
@@ -25,11 +21,11 @@ function filterCommandments(records,filters,query='') {
   const selected=filters[dimension]||[];
   const values=[].concat(item.taxonomy[dimension]||[]);
   return !selected.length||selected.some(value=>values.includes(value));
- })&&words.every(word=>[item.id,item.title,item.passage,item.summary,...Object.values(item.taxonomy).flat(),...(item.lens||[]).flatMap(link=>[link.reference,link.type,link.description])].join(' ').toLocaleLowerCase().includes(word)));
+ })&&words.every(word=>[item.id,item.code,item.title,item.passage,item.summary,...Object.values(item.taxonomy).flat(),...(item.lens||[]).flatMap(link=>[link.reference,link.type,link.description])].join(' ').toLocaleLowerCase().includes(word)));
 }
 function commandmentCard(item) {
  const passage=reference=>`<button type="button" class="commandment-passage" data-commandment-passage="${esc(reference)}" aria-label="Read ${esc(reference)}">${esc(reference)}</button>`;
- return `<article class="commandment-card"><div class="commandment-card-heading"><span class="commandment-number">Mitzvah #${esc(item.id)}</span><h2>${esc(item.title)}</h2></div>${passage(item.passage)}<p>${esc(item.summary)}</p>${item.lens?.length?`<section class="commandment-lens" aria-label="New Testament lens"><h3>New Testament lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${passage(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
+ return `<article class="commandment-card"><div class="commandment-card-heading"><span class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</span><h2>${esc(item.title)}</h2></div>${passage(item.passage)}<details class="commandment-summary"><summary>Passage · KJV</summary><p>${esc(item.summary)}</p></details>${item.lens?.length?`<section class="commandment-lens" aria-label="New Testament lens"><h3>New Testament lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${passage(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
 }
 function initCommandments() {
  const root=document.querySelector('#commandments-view');if(!root)return;
@@ -38,15 +34,16 @@ function initCommandments() {
  const filters=Object.fromEntries(Object.keys(COMMANDMENT_FACETS).map(key=>[key,[]]));
  matrix.innerHTML=Object.entries(COMMANDMENT_FACETS).map(([dimension,values])=>`<fieldset><legend>${dimension[0].toUpperCase()+dimension.slice(1)}</legend><div class="commandments-options">${values.map(value=>`<button type="button" class="secondary commandment-facet-toggle" data-commandment-dimension="${dimension}" data-value="${esc(value)}" aria-pressed="false"><span>${esc(value)}</span></button>`).join('')}</div></fieldset>`).join('');
  root.querySelectorAll('[data-commandment-quick]').forEach(button=>button.classList.add('commandment-facet-toggle'));
+ let visibleCount=60;
  function render() {
-  const items=filterCommandments(COMMANDMENT_SAMPLES,filters,search.value);
-  document.querySelector('#commandments-list').innerHTML=items.length?items.map(commandmentCard).join(''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
-  document.querySelector('#commandments-count').textContent=`${items.length} of ${COMMANDMENT_SAMPLES.length} sample commandments`;
+  const items=filterCommandments(COMMANDMENTS,filters,search.value);
+  document.querySelector('#commandments-list').innerHTML=items.length?items.slice(0,visibleCount).map(commandmentCard).join('')+(items.length>visibleCount?'<button type="button" id="commandments-load-more">Show more commandments</button>':''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
+  document.querySelector('#commandments-count').textContent=`${items.length} of ${COMMANDMENTS.length} commandments${items.length>visibleCount?` · showing 1–${visibleCount}`:''}`;
   for(const button of [...root.querySelectorAll('[data-commandment-quick]'),...matrix.querySelectorAll('[data-commandment-dimension]')]){
    const dimension=button.dataset.commandmentQuick||button.dataset.commandmentDimension,value=button.dataset.value;
    button.setAttribute('aria-pressed',String(filters[dimension].includes(value)));
-   button.disabled=commandmentFacetDisabled(COMMANDMENT_SAMPLES,filters,search.value,dimension,value);
-   button.title=`${value} · ${commandmentFacetCount(COMMANDMENT_SAMPLES,filters,search.value,dimension,value)} matching commandments`;
+   button.disabled=commandmentFacetDisabled(COMMANDMENTS,filters,search.value,dimension,value);
+   button.title=`${value} · ${commandmentFacetCount(COMMANDMENTS,filters,search.value,dimension,value)} matching commandments`;
   }
   const count=Object.values(filters).reduce((sum,values)=>sum+values.length,0);
   more.textContent=`More Filters${count?' ('+count+')':''}`;
@@ -54,7 +51,7 @@ function initCommandments() {
  }
  function toggle(dimension,value,enabled) {
   const selected=new Set(filters[dimension]);if(enabled)selected.add(value);else selected.delete(value);
-  filters[dimension]=[...selected];render();
+  filters[dimension]=[...selected];visibleCount=60;render();
  }
  root.addEventListener('click',event=>{
   const button=event.target.closest('[data-commandment-quick]');if(!button||button.disabled)return;
@@ -62,8 +59,8 @@ function initCommandments() {
   toggle(dimension,value,!filters[dimension].includes(value));
  });
  matrix.addEventListener('click',event=>{const button=event.target.closest('[data-commandment-dimension]');if(button&&!button.disabled)toggle(button.dataset.commandmentDimension,button.dataset.value,!filters[button.dataset.commandmentDimension].includes(button.dataset.value));});
- search.addEventListener('input',render);
- function clear(){Object.keys(filters).forEach(key=>{filters[key]=[];});render();}
+ search.addEventListener('input',()=>{visibleCount=60;render();});
+ function clear(){visibleCount=60;Object.keys(filters).forEach(key=>{filters[key]=[];});render();}
  document.querySelector('#commandments-reset').onclick=()=>{search.value='';clear();};
  document.querySelector('#commandments-clear').onclick=clear;
  more.onclick=()=>{sheet.showModal();more.setAttribute('aria-expanded','true');document.body.classList.add('commandments-filter-open');};
@@ -81,6 +78,7 @@ function initCommandments() {
  handle.addEventListener('pointerup',event=>{if(drag?.id===event.pointerId&&event.clientY-drag.y>60)close();drag=null;});
  handle.addEventListener('pointercancel',()=>{drag=null;});
  root.addEventListener('click',event=>{
+  if(event.target.closest('#commandments-load-more')){visibleCount+=60;render();return;}
   const button=event.target.closest('[data-commandment-passage]');if(!button)return;
   const ref=readRef(button.dataset.commandmentPassage);if(!ref){toast('Passage reader is still loading. Please try again.');return;}
   storiesActive=false;renderStoriesView();setView('explore',false);loadChapter(ref.book,ref.chapter,ref.verse);

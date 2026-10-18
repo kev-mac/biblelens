@@ -10,6 +10,8 @@ const aliases: Record<string, string> = {
   'Terah (inferred from Genesis 20:12)': 'terah',
 };
 export function lineageCharacter(name: string): CharacterProfile | undefined {
+  // Genesis 46:13 names Issachar’s son Job; do not identify him with Job of Uz.
+  if (name === 'Job') return undefined;
   const baseName = name.replace(/ \((?:paternal )?half-(?:brother|sister)\)$/, '');
   return characters.find(person => person.name === baseName || person.id === aliases[name]);
 }
