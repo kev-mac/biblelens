@@ -20,7 +20,7 @@ export function parsePlaces(data){
 }
 // These words also denote common words, people or tribes. Plain text alone cannot
 // identify their geographic sense; keep them accessible by ID rather than auto-linking.
-const contextDependentNames=new Set('lord,god,put,straight,destruction,place,pool,river,tower,mount,mountain,rahab,abel,adam,dan,gad,asher,benjamin,joseph,judah,israel,manasseh,naphtali,ephraim,zebulun,simeon,reuben,ham,shem,lot,teman,edom,uz,on,no,sin,er,ram,ar,an,ur'.split(','));
+const contextDependentNames=new Set('there,lord,god,put,straight,destruction,place,pool,river,tower,mount,mountain,rahab,abel,adam,dan,gad,asher,benjamin,joseph,judah,israel,manasseh,naphtali,ephraim,zebulun,simeon,reuben,ham,shem,lot,teman,edom,uz,on,no,sin,er,ram,ar,an,ur'.split(','));
 export function createPlaceMatcher(places){
  const index=new Map();
  const excluded=new Set(contextDependentNames);

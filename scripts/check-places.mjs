@@ -4,6 +4,7 @@ import {parsePlaces,createPlaceMatcher,wrapLocationNames,getLocationDetails,load
 const places=parsePlaces(JSON.parse(fs.readFileSync('data/reference/places.json','utf8'))),match=createPlaceMatcher(places);
 assert.equal(places.size,1298);
 assert.equal(match('The Lord put Rahab straight before Israel.').length,0,'Do not turn people, tribes or common words into geographic claims');
+assert.equal(match('Let there be light; and there was light.').length,0,'Ordinary words must not become location chips');
 const jericho=[...places.values()].find(p=>p.name==='Jericho');assert.deepEqual(jericho.coordinates,{latitude:31.8700465,longitude:35.443876});
 assert.equal(jericho.modern_name,null);assert(!/\]\(/.test(jericho.description));
 assert.equal(match('Jericho, JERICHO; notJericho')[0].id,jericho.id);assert.equal(match('Jericho, JERICHO; notJericho').length,2);
