@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-18",
+  "scope": "Ten selected chronology cases from the existing annotations. Narrative order, not a uniform absolute chronology. No flag does not establish historicity. This is not an exhaustive academic audit of all biblical events.",
+  "events": [
+    {
+      "id": "patriarchal-camels",
+      "title": "Camels in Abraham’s household",
+      "evidence_id": "genesis-24-patriarchal-camels",
+      "traditional_date": "Patriarchal / traditionally Bronze Age; no absolute date in Genesis",
+      "reviewed": "2026-10-18",
+      "review_status": "Qualified historical discrepancy",
+      "discrepancy_kind": "possible-anachronism",
+      "academic_consensus": "Significant domestic use in the Aravah: last third of the tenth century BCE or later"
+    },
+    {
+      "id": "patriarchal-philistines",
+      "title": "Isaac meets the king of the Philistines",
+      "evidence_id": "genesis-26-patriarchal-philistines",
+      "traditional_date": "Patriarchal / traditionally Bronze Age; no absolute date in Genesis",
+      "reviewed": "2026-10-18",
+      "review_status": "Qualified historical discrepancy",
+      "discrepancy_kind": "possible-anachronism",
+      "academic_consensus": "Philistine cultural transition at Ashkelon: early Iron Age, twelfth century BCE",
+      "additional_sources": [
+        {
+          "label": "Feldman et al. (2019) · full research article",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6609216/"
+        }
+      ]
+    },
+    {
+      "id": "joseph-famine",
+      "title": "Joseph’s seven-year famine",
+      "evidence_id": "genesis-41-joseph-famine-evidence",
+      "traditional_date": "Joseph’s lifetime; no absolute date in Genesis",
+      "reviewed": "2026-10-18",
+      "review_status": "No independent date established",
+      "discrepancy_kind": null
+    },
+    {
+      "id": "joseph-land",
+      "title": "Joseph’s land acquisition",
+      "evidence_id": "genesis-47-joseph-land-acquisition",
+      "traditional_date": "During the famine; no absolute date in Genesis",
+      "reviewed": "2026-10-18",
+      "review_status": "No independent date established",
+      "discrepancy_kind": null
+    },
+    {
+      "id": "jericho",
+      "title": "The fall of Jericho",
+      "evidence_id": "history-jericho-destruction-date",
+      "traditional_date": "After the wilderness journey; c.1400 BCE in an early-conquest reconstruction",
+      "reviewed": "2026-10-18",
+      "review_status": "Qualified historical discrepancy",
+      "discrepancy_kind": "conditional-date-conflict",
+      "academic_consensus": "Sampled Middle Bronze destruction: late seventeenth / sixteenth century BCE (1995 calibration)"
+    },
+    {
+      "id": "sennacherib",
+      "title": "Sennacherib’s campaign in Judah",
+      "evidence_id": "exp-late-22-36-1",
+      "traditional_date": "Hezekiah’s fourteenth year; conventionally 701 BCE",
+      "reviewed": "2026-10-18",
+      "review_status": "Campaign date corroborated; narrative details require separate assessment",
+      "discrepancy_kind": null
+    },
+    {
+      "id": "darius-mede",
+      "title": "Darius the Mede receives the kingdom",
+      "evidence_id": "history-darius-mede-succession",
+      "traditional_date": "After Belshazzar’s death; apparently before Cyrus in Daniel 5–6",
+      "reviewed": "2026-10-18",
+      "review_status": "Qualified historical discrepancy",
+      "discrepancy_kind": "succession-problem",
+      "academic_consensus": "Cyrus’s conquest of Babylon: 539 BCE"
+    },
+    {
+      "id": "cyrus-return",
+      "title": "Cyrus’s proclamation and the return",
+      "evidence_id": "early-cyrus",
+      "traditional_date": "Cyrus’s first year over Babylon; conventionally 538 BCE",
+      "reviewed": "2026-10-18",
+      "review_status": "Compatible setting; the Cylinder does not name Judah or date this return",
+      "discrepancy_kind": null,
+      "additional_sources": [
+        {
+          "label": "Cyrus Cylinder, lines 30–33 · scholarly translation",
+          "url": "https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/"
+        }
+      ]
+    },
+    {
+      "id": "quirinius-census",
+      "title": "The census in Luke’s birth narrative",
+      "evidence_id": "legacy-history-10",
+      "traditional_date": "Herod-era birth setting; before his conventionally dated death in 4 BCE",
+      "reviewed": "2026-10-18",
+      "review_status": "Qualified historical discrepancy",
+      "discrepancy_kind": "conditional-date-conflict",
+      "academic_consensus": "Quirinius’s provincial census: 6–7 CE",
+      "additional_sources": [
+        {
+          "label": "NABRE scholarly note · Luke 2:1–2",
+          "url": "https://bible.usccb.org/bible/luke/2"
+        }
+      ]
+    },
+    {
+      "id": "theudas",
+      "title": "Theudas’s revolt in Gamaliel’s speech",
+      "evidence_id": "history-theudas-revolt-order",
+      "traditional_date": "Before Judas’s census revolt in the sequence of Acts 5:36–37",
+      "reviewed": "2026-10-18",
+      "review_status": "Qualified historical discrepancy",
+      "discrepancy_kind": "identity-dependent-conflict",
+      "academic_consensus": "Josephus places Theudas under Fadus: 44–46 CE"
+    }
+  ]
+}

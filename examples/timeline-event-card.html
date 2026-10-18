@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScriptureLens Timeline Event Card</title>
+  <link rel="stylesheet" href="../src/style.css">
+  <link rel="stylesheet" href="../src/components/timeline/TimelineEventCard.css">
+  <style>
+    body{margin:0;padding:32px 20px;min-height:100vh;box-sizing:border-box}
+    main{max-width:760px;margin:auto}h1{font-size:1.5rem}
+    #timeline{display:grid;gap:28px;margin-top:28px}
+  </style>
+</head>
+<body class="dark">
+  <main>
+    <h1>Timeline Event Card</h1>
+    <p>Component examples with illustrative placeholder dates and summaries.</p>
+    <div id="timeline" aria-label="Example biblical timeline"></div>
+  </main>
+  <script type="module">
+    import {createTimelineEventCard} from '../src/components/timeline/TimelineEventCard.js';
+    const events = [
+      {title:'Event with an academic discrepancy',traditional_date:'Traditional dating',
+        discrepancy:{academic_consensus:'Academic dating or range',
+          summary:'Describe the dating discrepancy and the supporting historical evidence here. These placeholders demonstrate the layout; they do not assert a historical consensus.'}},
+      {title:'Event without a dating discrepancy',traditional_date:'Traditional dating'}
+    ];
+    events.forEach((event,index) => {
+      const node = createTimelineEventCard(event);
+      node.classList.add(index ? 'theme-purple' : 'theme-blue');
+      document.querySelector('#timeline').append(node);
+    });
+  </script>
+</body>
+</html>

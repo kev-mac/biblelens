@@ -112051,5 +112051,122 @@
         "quote": "it is the number of a man"
       }
     ]
+  },
+  {
+    "id": "history-jericho-destruction-date",
+    "mode": "history",
+    "ref": "Joshua 6:24",
+    "title": "Which destruction layer could match Jericho’s fall?",
+    "status": "Context",
+    "summary": "Radiocarbon measurements place the sampled Middle Bronze destruction before a proposed c.1400 BCE conquest. Associating that layer with Joshua therefore creates a dating conflict.",
+    "text": "KJV Joshua 6:24: “And they burnt the city with fire, and all that was therein: only the silver, and the gold, and the vessels of brass and of iron, they put into the treasury of the house of the Lord.” Bruins and van der Plicht (1995), pp. 213, 218–219, report charred grain at 3306 ± 7 radiocarbon years BP, calibrated then to the late seventeenth or sixteenth century BCE; their results do not support c.1400 BCE for that layer.",
+    "scope": "The flag is conditional on identifying Joshua’s destruction with the sampled Middle Bronze layer. The calibration ranges in this study are preliminary, not an exact year. This is not a claim that Jericho had no later occupation or that a burn layer identifies its attackers. Joshua supplies no BCE year.",
+    "sources": [
+      {
+        "label": "KJV · Joshua 6",
+        "url": "https://ebible.org/eng-kjv/JOS06.htm"
+      },
+      {
+        "label": "Bruins and van der Plicht (1995), Radiocarbon 37, pp. 213–220",
+        "url": "https://pure.rug.nl/ws/portalfiles/portal/6807335/1995RadiocarbonBruins.pdf"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Joshua 6:20",
+        "book": 5,
+        "chapter": 6,
+        "verse": 20
+      },
+      {
+        "label": "Joshua 6:24",
+        "book": 5,
+        "chapter": 6,
+        "verse": 24
+      }
+    ],
+    "checked": "2026-10-18"
+  },
+  {
+    "id": "history-darius-mede-succession",
+    "mode": "history",
+    "ref": "Daniel 5:31",
+    "title": "Darius the Mede and the succession at Babylon",
+    "status": "Context",
+    "summary": "Daniel’s apparent sequence puts Darius the Mede before Cyrus. Babylonian evidence records Cyrus’s takeover in 539 BCE; a separate preceding Median kingship does not fit that reconstruction.",
+    "text": "KJV Daniel 5:31: “And Darius the Median took the kingdom, being about threescore and two years old.” KJV Daniel 6:28: “So this Daniel prospered in the reign of Darius, and in the reign of Cyrus the Persian.” The Nabonidus Chronicle, column iii.15–20, describes Cyrus’s army entering Babylon and Cyrus’s subsequent entry. Frye discusses the resulting succession problem and alternative readings of Daniel 6:28.",
+    "scope": "A separate Median king before Cyrus is the disputed reading. Identification with Cyrus or a subordinate official has been proposed; the chronicle alone cannot rule out every identification. Darius the Mede must not be silently equated with the later Darius I.",
+    "sources": [
+      {
+        "label": "KJV · Daniel 5–6",
+        "url": "https://ebible.org/eng-kjv/DAN05.htm"
+      },
+      {
+        "label": "Nabonidus Chronicle, column iii.15–20 · scholarly translation",
+        "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-7-nabonidus-chronicle/"
+      },
+      {
+        "label": "Richard N. Frye · Darius the Mede, Encyclopaedia Iranica",
+        "url": "https://www.iranicaonline.org/articles/darius-ii/"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Daniel 5:31",
+        "book": 26,
+        "chapter": 5,
+        "verse": 31
+      },
+      {
+        "label": "Daniel 6:28",
+        "book": 26,
+        "chapter": 6,
+        "verse": 28
+      }
+    ],
+    "checked": "2026-10-18"
+  },
+  {
+    "id": "history-theudas-revolt-order",
+    "mode": "history",
+    "ref": "Acts 5:36",
+    "title": "Theudas before or after Judas’s census revolt?",
+    "status": "Context",
+    "summary": "Acts puts Theudas before Judas’s census revolt. Josephus places Theudas under Fadus in 44–46 CE, after that census. The dates conflict if the two accounts mean the same Theudas.",
+    "text": "KJV Acts 5:36: “For before these days rose up Theudas, boasting himself to be somebody; to whom a number of men, about four hundred, joined themselves: who was slain; and all, as many as obeyed him, were scattered, and brought to nought.” KJV Acts 5:37: “After this man rose up Judas of Galilee in the days of the taxing, and drew away much people after him: he also perished; and all, even as many as obeyed him, were dispersed.” Josephus, Antiquities 20.5.1 (§§97–99), places Theudas’s suppression under Fadus. Antiquities 18.1.1 associates Judas with the assessment following Archelaus’s removal. The NABRE Acts 5:36–37 note dates Fadus’s administration to 44–46 CE and identifies the sequence problem.",
+    "scope": "This is a chronological conflict conditional on a shared identity. Acts does not give Theudas an absolute year; the earlier date is inferred from its sequence. Another earlier man of the same name is a proposed explanation, not an independently demonstrated identification.",
+    "sources": [
+      {
+        "label": "KJV · Acts 5",
+        "url": "https://ebible.org/eng-kjv/ACT05.htm"
+      },
+      {
+        "label": "Josephus · Antiquities 20.5.1 (§§97–99)",
+        "url": "https://penelope.uchicago.edu/josephus/ant-20.html"
+      },
+      {
+        "label": "Josephus · Antiquities 18.1.1",
+        "url": "https://penelope.uchicago.edu/josephus/ant-18.html"
+      },
+      {
+        "label": "NABRE scholarly note · Acts 5:36–37",
+        "url": "https://bible.usccb.org/bible/acts/5"
+      }
+    ],
+    "refs": [
+      {
+        "label": "Acts 5:36",
+        "book": 43,
+        "chapter": 5,
+        "verse": 36
+      },
+      {
+        "label": "Acts 5:37",
+        "book": 43,
+        "chapter": 5,
+        "verse": 37
+      }
+    ],
+    "checked": "2026-10-18"
   }
 ]

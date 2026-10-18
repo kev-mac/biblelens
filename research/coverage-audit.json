@@ -5,11 +5,11 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1692,
+    "evidenceRecords": 1695,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
     "chaptersWithAnnotations": 879,
-    "annotatedVerses": 4231
+    "annotatedVerses": 4232
   },
   "byBook": [
     {
@@ -274,7 +274,7 @@
       "book": "Acts",
       "chapters": 28,
       "chaptersWithAnnotations": 26,
-      "annotatedVerses": 86
+      "annotatedVerses": 87
     },
     {
       "book": "Romans",
@@ -5561,7 +5561,8 @@
       "chapter": 6,
       "annotationIds": [
         "early-conquest",
-        "rahabs-house-upon-the-wall-how-was-it-standing-after-the-wall-fell"
+        "rahabs-house-upon-the-wall-how-was-it-standing-after-the-wall-fell",
+        "history-jericho-destruction-date"
       ],
       "annotatedVerses": [
         17,
@@ -5574,7 +5575,8 @@
       ],
       "modes": [
         "contradictions",
-        "questions"
+        "questions",
+        "history"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -15065,7 +15067,8 @@
       "chapter": 5,
       "annotationIds": [
         "the-spirit-of-the-holy-gods-or-the-holy-spirit-of-god-daniel-4-8-greek",
-        "darius-the-mede-took-the-kingdom-who-is-darius-the-mede-and-how-does-he-stand-to-cyrus-daniel-5-31"
+        "darius-the-mede-took-the-kingdom-who-is-darius-the-mede-and-how-does-he-stand-to-cyrus-daniel-5-31",
+        "history-darius-mede-succession"
       ],
       "annotatedVerses": [
         14,
@@ -15073,7 +15076,8 @@
       ],
       "modes": [
         "contradictions",
-        "questions"
+        "questions",
+        "history"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -18290,10 +18294,12 @@
       "chapter": 5,
       "annotationIds": [
         "legacy-history-12",
-        "to-put-the-apostles-forth-or-the-men-forth-acts-5-34-greek-new-testament"
+        "to-put-the-apostles-forth-or-the-men-forth-acts-5-34-greek-new-testament",
+        "history-theudas-revolt-order"
       ],
       "annotatedVerses": [
         34,
+        36,
         37
       ],
       "modes": [

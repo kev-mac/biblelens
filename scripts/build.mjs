@@ -1,3 +1,4 @@
+import {loadTimelineCatalog} from './timeline-catalog.mjs';
 import {tagStoryCatalog,loadTopicOptions} from './story-topics.mjs';
 import {build} from 'esbuild';
 import {validateCommandmentsCatalog} from './commandments-catalog.mjs';
@@ -32,6 +33,11 @@ assets['/reference/LEAFLET-LICENSE.txt']={type:'text/plain; charset=utf-8',body:
 for(const name of ['places','places-provenance'])assets['/reference/'+name+'.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('data/reference/'+name+'.json','utf8')};
 const timelineBundle=await build({entryPoints:['src/timeline.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/timeline.js']={type:'application/javascript; charset=utf-8',body:timelineBundle.outputFiles[0].text};
+const reviewedTimelineSource=fs.readFileSync('src/reviewed-timeline.js','utf8').replace('/*__TIMELINE__*/{}',()=>JSON.stringify(loadTimelineCatalog()));
+const reviewedTimelineBundle=await build({stdin:{contents:reviewedTimelineSource,resolveDir:path.resolve('src'),sourcefile:'reviewed-timeline.js'},bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
+assets['/reviewed-timeline.js']={type:'application/javascript; charset=utf-8',body:reviewedTimelineBundle.outputFiles[0].text};
+assets['/timeline.css']={type:'text/css; charset=utf-8',body:fs.readFileSync('src/components/timeline/TimelineEventCard.css','utf8')};
+
 for(const name of ['events','timeline-provenance','people','relationships'])assets['/reference/'+name+'.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('data/reference/'+name+'.json','utf8')};
 const prophecyBundle=await build({entryPoints:['src/prophecies.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/prophecies.js']={type:'application/javascript; charset=utf-8',body:prophecyBundle.outputFiles[0].text};

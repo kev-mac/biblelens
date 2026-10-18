@@ -133,6 +133,32 @@ function mountCharacters(): void {
   }
   host.addEventListener('click', repeatFamilyNavigation);
   sheet.addEventListener('click', repeatFamilyNavigation);
+  sheet.addEventListener('click', event => {
+    const chip = (event.target as HTMLElement).closest<HTMLButtonElement>('button[data-relative-id]');
+    if (!chip || !currentId || chip.dataset.relativeId === currentId) return;
+    familyHistory.push({id: currentId, tab: activeTab});
+    history.replaceState(null, '', `#characters/${chip.dataset.relativeId}`);
+    void handleRoute();
+  });
+  async function handleRoute(): Promise<void> {
+    const version = ++routeVersion;
+    const cardRoute = /^#characters\/card\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
+    if (cardRoute) {
+      if (sheet.open) sheet.close();
+      const target = people.find(person => person.id === cardRoute[1]) || characters.find(person => person.id === cardRoute[1]);
+      if (target) {
+        search.value = ''; womenOnly = false;
+        page = Math.max(0, Math.floor(people.indexOf(target as DirectoryPerson) / CHARACTER_PAGE_SIZE)); render();
+        if (!people.includes(target as DirectoryPerson)) {
+          list.replaceChildren(CharacterCard(target));
+          count.textContent = `${target.name} · Curated profile`; pagination.hidden = true;
+        }
+        const card = document.getElementById(`character-card-${target.id}`);
+        card?.querySelector<HTMLButtonElement>('.character-summary-toggle[aria-expanded="false"]')?.click();
+        card?.focus({preventScroll:true}); card?.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+      return;
+    }
     const match = /^#characters\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
     if (!match) { if (sheet.open) sheet.close(); return; }
     profileRoute = location.hash;
@@ -201,3 +227,37 @@ function mountCharacters(): void {
       for (const place of profile.geography.residence) residences.append(element('li', '', place));
       overview.append(element('h4', '', 'Residences & sojourns'), residences,
         element('h3', '', 'Scripture anchors'), element('p', '', `Books · ${profile.narrative_anchors.books.join(', ')}`));
+      const verses = element('div', 'character-verses');
+      for (const verse of profile.narrative_anchors.key_verses) {
+        const route = characterVerseRoute(verse);
+        if (!route) continue;
+        const link = element('a', '', verse); link.href = route; verses.append(link);
+      }
+      const stories = element('div', 'character-stories');
+      for (const anchor of profile.narrative_anchors.linked_stories) stories.append(StoryAnchor(anchor));
+      overview.append(element('h4', '', 'Key verses'), verses);
+      connections.append(element('h3', '', 'Key passages'), verses.cloneNode(true));
+      if (graph) connections.append(FamilyConnections(graph.getCharacterConnections(referenceId(profile.id))));
+      else {
+        const message = element('p', '', 'Family connections could not be loaded. Try again when the reference data is available.');
+        const retry = element('button', 'character-connections-retry', 'Retry connections'); retry.type = 'button';
+        retry.addEventListener('click', () => { activeTab = 'connections'; void handleRoute(); });
+        connections.append(message, retry);
+      }
+      if (profile.narrative_anchors.linked_stories.length) overview.append(element('h4', '', 'Linked stories'), stories);
+    }
+    if (!profile && !graph) {
+      const retry = element('button', 'character-connections-retry', 'Retry profile'); retry.type = 'button';
+      retry.addEventListener('click', () => { void handleRoute(); }); body.append(retry);
+    }
+    body.scrollTop = 0;
+    if (wasOpen) {
+      title.focus({preventScroll: true});
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) body.animate([{opacity: .3, transform: 'translateY(6px)'}, {opacity: 1, transform: 'translateY(0)'}], {duration: 160, easing: 'ease-out'});
+    }
+  }
+  window.addEventListener('hashchange', handleRoute);
+  window.addEventListener('viewchange', ((event: CustomEvent<string>) => { if (event.detail !== 'characters' && sheet.open) sheet.close(); }) as EventListener);
+  void load();
+}
+if (typeof document !== 'undefined') mountCharacters();
