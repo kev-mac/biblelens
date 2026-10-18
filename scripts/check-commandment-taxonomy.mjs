@@ -38,5 +38,5 @@ assert(!context.commandmentFacetDisabled(context.samples,{polarity:['Negative']}
 assert(context.commandmentFacetDisabled(context.samples,{},'unmatched','polarity','Positive'));
 assert.equal(context.commandmentFacetCount(context.samples,{polarity:['Negative'],topics:['Business']},'','polarity','Positive'),0);
 const tagged=context.commandmentCard(context.samples[1]);
-assert(tagged.includes('class="taxonomy-dot"'));assert(tagged.includes('aria-label="Filter by Negative"'));assert(!tagged.includes('commandment-micro'));
-console.log('PASS: sample taxonomy, AND/OR search, escaped cards, passage coordinates, accessible color dots, zero-match disabling and removable selections.');
+assert(!tagged.includes('taxonomy-dot'));assert(!tagged.includes('commandment-tag'));assert(!tagged.includes('commandment-metadata'));assert(!code.includes('--tag-rgb'));
+console.log('PASS: sample taxonomy, AND/OR search, escaped cards, passage coordinates, uncluttered cards, zero-match disabling and removable selections.');
