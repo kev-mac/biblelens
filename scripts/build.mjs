@@ -3,6 +3,7 @@ import {tagStoryCatalog,loadTopicOptions} from './story-topics.mjs';
 import {build} from 'esbuild';
 import {validateCommandmentsCatalog} from './commandments-catalog.mjs';
 import {validateCharacters} from './characters.mjs';
+import {validateStories} from './stories.mjs';
 import {validateCommandments} from './commandments.mjs';
 import zlib from 'node:zlib';
 import {validateRelatedPassages} from './study-relationships.mjs';
@@ -17,6 +18,11 @@ import fs from 'node:fs';import vm from 'node:vm';import path from 'node:path';
 validateSides(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 console.log('Validated commandment catalog:',validateCommandmentsCatalog());
 console.log('Validated characters:',validateCharacters());
+console.log('Validated stories:',validateStories(JSON.parse(fs.readFileSync('data/stories.json','utf8')),{
+ books:JSON.parse(fs.readFileSync('data/books.json','utf8')),
+ chapters:JSON.parse(fs.readFileSync('data/chapters.json','utf8')),
+ topics:JSON.parse(fs.readFileSync('data/reference/topics.json','utf8'))
+}));
 validateWitnesses(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const chapterNames=JSON.parse(fs.readFileSync('data/chapter-names.json','utf8'));
 console.log('Validated chapter names:',validateChapterNames(chapterNames,JSON.parse(fs.readFileSync('data/books.json','utf8'))));

@@ -1,0 +1,179 @@
+{
+  "batch": "exodus-stories.json",
+  "draftSha256": "a2034904bca29ec54190a23563c2c5429d8c4c6f1a1483ba30b6ea503a38eb7b",
+  "decisions": [
+    {
+      "title": "Israel Oppressed in Egypt",
+      "passage": "Exodus 1:1 - 1:22",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "The Birth and Rescue of Moses",
+      "passage": "Exodus 2:1 - 2:10",
+      "decision": "correct",
+      "reason": "Exodus 2:3 places the basket among the reeds at the riverbank; it does not describe setting it afloat.",
+      "published": {
+        "title": "The Birth and Rescue of Moses",
+        "passage": "Exodus 2:1 - 2:10",
+        "summary": "A Levite woman hides her baby for three months, then places him in a basket among the reeds by the riverbank. Pharaoh's daughter finds him, his sister arranges for his own mother to nurse him, and he becomes the princess's son and is named Moses.",
+        "cross_references": [
+          "Acts 7:20-22",
+          "Hebrews 11:23"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Moses Flees to Midian",
+      "passage": "Exodus 2:11 - 2:25",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "The Burning Bush",
+      "passage": "Exodus 3:1 - 4:17",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "Moses Returns to Egypt",
+      "passage": "Exodus 4:18 - 4:31",
+      "decision": "correct",
+      "reason": "Exodus 4:24–26 does not explicitly name the threatened person. Preserve that uncertainty instead of identifying Moses as the victim.",
+      "published": {
+        "title": "Moses Returns to Egypt",
+        "passage": "Exodus 4:18 - 4:31",
+        "summary": "Moses leaves Midian with his family and the staff of God. During a dangerous encounter with the LORD on the journey, Zipporah circumcises her son. Aaron meets Moses, and the people of Israel believe the signs.",
+        "cross_references": [
+          "Genesis 17:9-14"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Moses and Aaron Before Pharaoh",
+      "passage": "Exodus 5:1 - 6:13",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "The Plagues of Egypt",
+      "passage": "Exodus 7:14 - 10:29",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "The Passover and the Death of the Firstborn",
+      "passage": "Exodus 11:1 - 12:36",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "The Exodus from Egypt",
+      "passage": "Exodus 12:37 - 13:22",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "Crossing the Sea",
+      "passage": "Exodus 14:1 - 15:21",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "Bitter Water, Manna and Quail",
+      "passage": "Exodus 15:22 - 16:36",
+      "decision": "correct",
+      "reason": "Exodus 16:12–13 distinguishes evening quail from morning manna; 16:22 identifies the double portion.",
+      "published": {
+        "title": "Bitter Water, Manna and Quail",
+        "passage": "Exodus 15:22 - 16:36",
+        "summary": "Israel finds bitter water at Marah, which is made sweet, and then grumbles for food in the wilderness. Quail arrive in the evening and manna in the morning, with a double portion of manna gathered before the Sabbath.",
+        "cross_references": [
+          "John 6:30-35",
+          "Numbers 11:4-9"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Water from the Rock and the Battle with Amalek",
+      "passage": "Exodus 17:1 - 17:16",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "Jethro Advises Moses",
+      "passage": "Exodus 18:1 - 18:27",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "The Covenant and Ten Commandments at Sinai",
+      "passage": "Exodus 19:1 - 20:26",
+      "decision": "correct",
+      "reason": "Keep the Sinai arrival, divine appearance, commandments as speech within the event, and the people’s response; omit the subsequent altar instructions.",
+      "published": {
+        "title": "The Covenant and Ten Commandments at Sinai",
+        "passage": "Exodus 19:1 - 20:21",
+        "summary": "Israel camps before Mount Sinai and is told to prepare. The LORD descends in fire and speaks the Ten Commandments to the people, who fear and ask Moses to speak to them instead.",
+        "cross_references": [
+          "Deuteronomy 5:1-22",
+          "Hebrews 12:18-21"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Book of the Covenant",
+      "passage": "Exodus 21:1 - 24:18",
+      "decision": "correct",
+      "reason": "Narrow the law block to the supplied ratification narrative in Exodus 24; omit the laws of chapters 21–23 under the narrative-only rule.",
+      "published": {
+        "title": "The Covenant Is Sealed at Sinai",
+        "passage": "Exodus 24:1 - 24:18",
+        "summary": "Moses reads the book of the covenant to the people, who agree to obey, and seals the covenant with blood. Moses, Aaron and the elders ascend the mountain; Moses then enters the cloud and remains on the mountain for forty days and nights.",
+        "cross_references": [
+          "Hebrews 9:18-20",
+          "Matthew 26:28"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Instructions for the Tabernacle",
+      "passage": "Exodus 25:1 - 31:18",
+      "decision": "hold",
+      "reason": "Exodus 25–31 is predominantly sanctuary and priestly instruction. Hold this standalone instructional entry under the narrative-only rule; the actual construction narrative remains in Building the Tabernacle."
+    },
+    {
+      "title": "The Golden Calf",
+      "passage": "Exodus 32:1 - 32:35",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "Moses Sees God's Glory",
+      "passage": "Exodus 33:1 - 34:35",
+      "decision": "accept",
+      "reason": "Neutral narrative paraphrase consistent with the supplied passage; all reference bounds checked."
+    },
+    {
+      "title": "Building the Tabernacle",
+      "passage": "Exodus 35:1 - 40:38",
+      "decision": "correct",
+      "reason": "Use the packaged KJV forms Bezaleel and Aholiab (Exodus 35:30,34) and specify the second year (40:17).",
+      "published": {
+        "title": "Building the Tabernacle",
+        "passage": "Exodus 35:1 - 40:38",
+        "summary": "The people bring more than enough materials, and Bezaleel and Aholiab oversee the work. The tabernacle is set up on the first day of the first month in the second year, and the cloud and glory of the LORD fill it.",
+        "cross_references": [
+          "Numbers 9:15-23",
+          "1 Kings 8:10-11"
+        ],
+        "topics": []
+      }
+    }
+  ]
+}

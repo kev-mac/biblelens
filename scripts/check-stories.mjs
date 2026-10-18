@@ -2,13 +2,29 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import zlib from 'node:zlib';
 import assert from 'node:assert/strict';
+import {validateStories} from './stories.mjs';
 
 const catalog=JSON.parse(fs.readFileSync('data/stories.json','utf8'));
 const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 const chapters=JSON.parse(fs.readFileSync('data/chapters.json','utf8'));
+const topics=JSON.parse(fs.readFileSync('data/reference/topics.json','utf8'));
+const options={books,chapters,topics};
+const total=validateStories(catalog,options);
+const genesis=catalog.find(entry=>entry.book==='Genesis');
+const exodus=catalog.find(entry=>entry.book==='Exodus');
+assert(genesis&&exodus,'Both reviewed story batches must be present');
+const changed=mutate=>{const copy=structuredClone(catalog);mutate(copy);return copy;};
+assert.throws(()=>validateStories(changed(c=>c.reverse()),options),/book order/);
+assert.throws(()=>validateStories(changed(c=>c[1].stories[0].title=c[0].stories[0].title),options),/Duplicate story/);
+assert.throws(()=>validateStories(changed(c=>c[0].stories.push({...c[0].stories[0],title:c[0].stories[0].title+'!'})),options),/Duplicate story/);
+assert.throws(()=>validateStories(changed(c=>c[1].stories[0].passage='Genesis 1:1'),options),/Wrong story book/);
+assert.throws(()=>validateStories(changed(c=>c[1].stories[0].passage='Exodus 1:1-41:1'),options),/Missing story chapter/);
+assert.throws(()=>validateStories(changed(c=>c[1].stories[0].cross_references=['Acts 7:999']),options),/Missing story verse/);
+assert.throws(()=>validateStories(changed(c=>c[1].stories[0].topics=['Invented theme']),options),/Invalid story topics/);
+assert.throws(()=>validateStories(changed(c=>c[1].stories[0].passage='Exodus 2:1-1:1'),options),/Reversed story passage/);
 const nodes=new Map(),handlers={},loads=[];
 const node=id=>{if(!nodes.has(id))nodes.set(id,{hidden:false,innerHTML:'',textContent:'',addEventListener(){},focus(){},showModal(){this.open=true;},close(){this.open=false;}});return nodes.get(id);};
-const c={window:{addEventListener(){}},location:{hash:''},books,readingBook:0,$:node,esc:s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),categoryIcon:()=>'<svg></svg>',document:{body:{classList:{toggle(){},add(){},remove(){}}},addEventListener:(type,fn)=>{handlers[type]=fn;}},setView(){},loadChapter:(...args)=>loads.push(args),fetch:async()=>({ok:true,json:async()=>catalog})};
+const c={window:{addEventListener(){}},location:{hash:''},books,readingBook:0,$:node,esc:s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),categoryIcon:()=>'<svg></svg>',document:{body:{classList:{toggle(){},add(){},remove(){}}},getElementById:id=>({...node(id),classList:{add(){}},scrollIntoView(){}}),addEventListener:(type,fn)=>{handlers[type]=fn;}},setView(){},loadChapter:(...args)=>loads.push(args),fetch:async()=>({ok:true,json:async()=>catalog})};
 c.readRef=reference=>{const match=/^(.*?) (\d+):(\d+)/.exec(reference),book=match&&books.find(b=>b.name===match[1]);return book?{book:book.id,chapter:+match[2],verse:+match[3]}:null;};
 vm.createContext(c);vm.runInContext(fs.readFileSync('src/stories.js','utf8'),c);
 const seen=new Set();
@@ -31,13 +47,19 @@ for(const entry of catalog){
  }
 }
 vm.runInContext('storiesActive=true',c);await c.renderStoriesView();
-assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,catalog[0].stories.length);
+assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,total);
 assert(!node('#reader-layout').hidden);assert(!node('#stories-view').hidden);
 assert(node('#stories-list').innerHTML.includes('data-cite="42/1/1" data-cite-end="3"'));
 assert.equal(c.storiesFilterButton(),'');
-const malicious=c.storyCard({...catalog[0].stories[0],title:'<img onerror="bad">'});assert(!malicious.includes('<img'));
-vm.runInContext("storiesBook='Exodus'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories match'));
-vm.runInContext("storiesBook='Genesis';storiesTheme='Obedience'",c);await c.renderStoriesView();assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,catalog[0].stories.filter(story=>story.topics.includes('Obedience')).length);
+const malicious=c.storyCard({...genesis.stories[0],title:'<img onerror="bad">'});assert(!malicious.includes('<img'));
+for(const entry of catalog){
+ vm.runInContext('storiesBook='+JSON.stringify(entry.book),c);await c.renderStoriesView();
+ assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,entry.stories.length);
+ assert(node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(entry.stories[0].title)+'"'));
+}
+vm.runInContext("storiesBook='Exodus';storiesSearch='no matches for this query'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories match'));
+vm.runInContext("storiesSearch=''",c);
+vm.runInContext("storiesBook='Genesis';storiesTheme='Obedience'",c);await c.renderStoriesView();assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,genesis.stories.filter(story=>story.topics.includes('Obedience')).length);
 vm.runInContext("storiesTheme='';storiesSearch='noah'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('Noah'));
 vm.runInContext("storiesSearch=''",c);
 handlers.click({target:{closest:s=>s==='[data-story-passage]'?{dataset:{storyPassage:'Genesis 6:9 - 9:17'}}:null}});
@@ -45,11 +67,21 @@ assert.deepEqual(loads,[[0,6,9]]);assert(!node('#reader-layout').hidden);assert(
 // A delayed catalog response cannot replace the newly selected book.
 let resolve;vm.runInContext('storiesRequest=null;storiesActive=true',c);c.readingBook=0;vm.runInContext("storiesBook='Genesis'",c);c.fetch=()=>new Promise(r=>{resolve=r;});
 const stale=c.renderStoriesView();c.readingBook=1;vm.runInContext("storiesBook='Exodus'",c);const fresh=c.renderStoriesView();resolve({ok:true,json:async()=>catalog});await Promise.all([stale,fresh]);
-assert(node('#stories-list').innerHTML.includes('No stories match'));
-console.log('PASS: Genesis story bounds, escaped cards, book-wide selection, empty books, passage navigation and stale-response protection.');
+assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,exodus.stories.length);
+assert(!node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(genesis.stories[0].title)+'"'));
+console.log(`PASS: ${total} stories in canon order, unique titles/slugs, reference bounds, topic vocabulary, per-book/all-book selection, empty search, passage navigation and stale-response protection.`);
 
-const origin=catalog[0].stories.find(s=>s.topics.some(t=>catalog[0].stories.some(other=>other!==s&&other.topics.includes(t))));
-const theme=origin.topics.find(t=>catalog[0].stories.some(other=>other!==origin&&other.topics.includes(t)));
+c.location.hash='#stories/exodus/the-burning-bush';
+await c.routeLinkedStory();
+assert(node('#stories-list').innerHTML.includes('id="story-the-burning-bush"'));
+assert.equal(node('#stories-book').value,'Exodus');
+assert(!node('#stories-list').innerHTML.includes('Story not found'));
+c.location.hash='';
+handlers.click({target:{closest:s=>s==='[data-story-passage]'?{dataset:{storyPassage:'Exodus 3:1 - 4:17'}}:null}});
+assert.deepEqual(loads.at(-1),[1,3,1]);
+
+const origin=genesis.stories.find(s=>s.topics.some(t=>genesis.stories.some(other=>other!==s&&other.topics.includes(t))));
+const theme=origin.topics.find(t=>genesis.stories.some(other=>other!==origin&&other.topics.includes(t)));
 await c.openStoryTopic(theme,origin.passage);
 assert(node('#story-topic-sheet').open);assert.equal(node('#story-topic-heading').textContent,theme);
 assert(!node('#story-topic-body').innerHTML.includes(`data-story-passage="${origin.passage}"`));
@@ -57,4 +89,9 @@ assert(node('#story-topic-body').innerHTML.includes('data-story-topic='));
 await c.openStoryTopic('No matches',origin.passage);assert(node('#story-topic-body').innerHTML.includes('No other stories'));
 c.closeStoryTopic();assert(!node('#story-topic-sheet').open);
 const unsafe=c.storyCard({...origin,topics:['<script>"&']});assert(!unsafe.includes('<script>'));
+const shared=exodus.stories.find(story=>story.topics.some(topic=>genesis.stories.some(other=>other.topics.includes(topic))));
+assert(shared,'Reviewed books must exercise cross-book topic navigation');
+const sharedTopic=shared.topics.find(topic=>genesis.stories.some(other=>other.topics.includes(topic)));
+await c.openStoryTopic(sharedTopic,shared.passage);
+assert(node('#story-topic-body').innerHTML.includes(genesis.stories.find(story=>story.topics.includes(sharedTopic)).passage));
 console.log('PASS: Topic pivot filters, origin exclusion, empty results, closing and escaped themes.');
