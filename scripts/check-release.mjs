@@ -23,12 +23,13 @@ console.log('PASS: deterministic release identity, generated-output exclusion an
 // Web and iOS execute the same settings renderer and show the same build metadata.
 const {default:vm}=await import('node:vm');
 for(const native of [false,true]){
- const version={},status={},button={};let ready;
+ const version={},status={},button={},footer={};let ready;
  const panel={querySelector:selector=>selector==='[data-release-version]'?version:selector==='[data-release-status]'?status:button};
  const installed={version:'1.1.0',buildNumber:219,sourceHash:'abcdef0123456789'};
  let remote={...installed};
- const context={AbortSignal,document:{addEventListener:(event,fn)=>ready=fn,createElement:()=>panel,querySelector:()=>({append(){}}),documentElement:{classList:{contains:()=>native}}},fetch:async url=>({json:async()=>url==='/release.json'?installed:remote})};
+ const context={AbortSignal,document:{addEventListener:(event,fn)=>ready=fn,createElement:()=>panel,querySelector:selector=>selector==='[data-footer-version]'?footer:{append(){}},documentElement:{classList:{contains:()=>native}}},fetch:async url=>({json:async()=>url==='/release.json'?installed:remote})};
  vm.createContext(context);vm.runInContext(fs.readFileSync('src/release.js','utf8'),context);await ready();await button.onclick();
+ assert.equal(footer.textContent,'v1.1.0 · Build 219');
  assert.equal(version.textContent,'1.1.0 · Build 219 · abcdef012345');assert.equal(status.textContent,'This app matches the website release.');
  remote={...installed,buildNumber:220};await button.onclick();assert(status.textContent.includes(native?'Install the latest iPhone build':'Reload this page'));
 }

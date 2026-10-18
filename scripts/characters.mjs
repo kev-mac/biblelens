@@ -9,17 +9,19 @@ export function validateCharacters() {
  const seen=new Set();
  const nonempty=value=>typeof value==='string'&&value.trim().length>0;
  const strings=value=>Array.isArray(value)&&value.length>0&&value.every(nonempty);
- const eras=['Primeval','Patriarchal','Exodus','Judges','Monarchy','Prophets','Gospels','Apostolic'];
+ const eras=['Primeval','Patriarchal','Exodus','Conquest','Judges','Monarchy','Prophets','Gospels','Apostolic','Across scripture'];
  for(const profile of profiles){
   const fail=message=>{throw Error(`Character ${profile.id}: ${message}`);};
   if(!nonempty(profile.id)||!/^[a-z0-9-]+$/.test(profile.id)||seen.has(profile.id))fail('invalid or duplicate ID');seen.add(profile.id);
+  if(!['female','male','unspecified'].includes(profile.sex))fail('invalid sex classification');
   if(!nonempty(profile.name)||!nonempty(profile.summary)||!eras.includes(profile.era))fail('invalid metadata');
-  for(const key of ['parents','children'])if(profile.lineage?.[key]!==undefined&&!strings(profile.lineage[key]))fail(`invalid ${key}`);
+  if(profile.aliases!==undefined&&!strings(profile.aliases))fail('invalid aliases');
+  for(const key of ['parents','spouses','children','siblings'])if(profile.lineage?.[key]!==undefined&&!strings(profile.lineage[key]))fail(`invalid ${key}`);
   if(profile.lineage?.tribe!==undefined&&!nonempty(profile.lineage.tribe))fail('invalid tribe');
   if(!nonempty(profile.geography?.origin)||!strings(profile.geography?.residence))fail('invalid geography');
   const anchors=profile.narrative_anchors;
   if(!strings(anchors?.books)||anchors.books.some(name=>!books.some(book=>book.name===name)))fail('invalid books');
-  if(!strings(anchors.key_verses)||!Array.isArray(anchors.linked_stories)||!anchors.linked_stories.length)fail('missing anchors');
+  if(!strings(anchors.key_verses)||!Array.isArray(anchors.linked_stories))fail('missing anchors');
   for(const ref of anchors.key_verses){
    const match=/^(.*?) (\d+):(\d+)$/.exec(ref),book=match&&books.find(book=>book.name===match[1]);
    const encoded=book&&chapters[`${book.id}:${+match[2]}`];

@@ -2,14 +2,18 @@
   {
     "id": "adam",
     "name": "Adam",
+    "sex": "male",
     "era": "Primeval",
-    "summary": "The man formed from the ground in Genesis; father of Cain, Abel, Seth, and other unnamed children.",
+    "summary": "The man formed from the ground and placed in Eden. He eats the forbidden fruit after Eve gives it to him; Genesis connects his disobedience with toil, mortality and expulsion from the garden. His family begins the genealogies that lead to Noah.",
     "lineage": {
       "children": [
         "Cain",
         "Abel",
         "Seth",
         "Other sons and daughters (unnamed)"
+      ],
+      "spouses": [
+        "Eve"
       ]
     },
     "geography": {
@@ -26,7 +30,10 @@
       "key_verses": [
         "Genesis 2:7",
         "Genesis 3:23",
-        "Genesis 5:4"
+        "Genesis 5:4",
+        "Genesis 3:6",
+        "Genesis 3:17",
+        "Genesis 3:19"
       ],
       "linked_stories": [
         {
@@ -47,14 +54,18 @@
   {
     "id": "eve",
     "name": "Eve",
+    "sex": "female",
     "era": "Primeval",
-    "summary": "The woman formed as Adam’s companion and named as the mother of all living.",
+    "summary": "Adam’s wife, named as the mother of all living. She eats the forbidden fruit and gives it to Adam, bringing both into the judgment and expulsion narrative. After Cain kills Abel, she describes Seth’s birth as the gift of another child in Abel’s place.",
     "lineage": {
       "children": [
         "Cain",
         "Abel",
         "Seth",
         "Other sons and daughters (unnamed)"
+      ],
+      "spouses": [
+        "Adam"
       ]
     },
     "geography": {
@@ -72,7 +83,8 @@
         "Genesis 2:22",
         "Genesis 3:20",
         "Genesis 4:1",
-        "Genesis 4:25"
+        "Genesis 4:25",
+        "Genesis 3:6"
       ],
       "linked_stories": [
         {
@@ -93,8 +105,9 @@
   {
     "id": "cain",
     "name": "Cain",
+    "sex": "male",
     "era": "Primeval",
-    "summary": "Adam and Eve’s son, a cultivator who kills Abel and settles east of Eden.",
+    "summary": "Adam and Eve’s son, a cultivator whose offering is not accepted as Abel’s is. He kills his brother and is sentenced to wandering, yet receives a protective mark against revenge. His later family and city begin a separate line of descendants.",
     "lineage": {
       "parents": [
         "Adam",
@@ -102,6 +115,13 @@
       ],
       "children": [
         "Enoch (son of Cain)"
+      ],
+      "siblings": [
+        "Abel",
+        "Seth"
+      ],
+      "spouses": [
+        "Wife (unnamed)"
       ]
     },
     "geography": {
@@ -119,7 +139,12 @@
         "Genesis 4:1",
         "Genesis 4:8",
         "Genesis 4:16",
-        "Genesis 4:17"
+        "Genesis 4:17",
+        "Genesis 4:4",
+        "Genesis 4:5",
+        "Genesis 4:12",
+        "Genesis 4:15",
+        "Genesis 5:4"
       ],
       "linked_stories": [
         {
@@ -134,12 +159,17 @@
   {
     "id": "abel",
     "name": "Abel",
+    "sex": "male",
     "era": "Primeval",
-    "summary": "Adam and Eve’s son, a keeper of sheep killed by his brother Cain.",
+    "summary": "Adam and Eve’s son, a keeper of sheep whose offering God accepts. Cain kills him after the contrasting reception of their offerings, making Abel the victim of the first killing narrated in Genesis. Eve later names Seth in connection with the loss of Abel.",
     "lineage": {
       "parents": [
         "Adam",
         "Eve"
+      ],
+      "siblings": [
+        "Cain",
+        "Seth"
       ]
     },
     "geography": {
@@ -154,7 +184,10 @@
       ],
       "key_verses": [
         "Genesis 4:2",
-        "Genesis 4:8"
+        "Genesis 4:8",
+        "Genesis 4:4",
+        "Genesis 4:25",
+        "Genesis 5:4"
       ],
       "linked_stories": [
         {
@@ -169,8 +202,9 @@
   {
     "id": "seth",
     "name": "Seth",
+    "sex": "male",
     "era": "Primeval",
-    "summary": "A son born to Adam and Eve after Abel’s death; his genealogy leads to Noah.",
+    "summary": "Adam and Eve’s son born after Abel’s death; Eve describes him as another child appointed in Abel’s place. His family line, rather than Cain’s, is followed through Enoch and Methuselah toward Noah in Genesis 5.",
     "lineage": {
       "parents": [
         "Adam",
@@ -178,6 +212,10 @@
       ],
       "children": [
         "Enosh (Enos)"
+      ],
+      "siblings": [
+        "Cain",
+        "Abel"
       ]
     },
     "geography": {
@@ -192,7 +230,11 @@
       ],
       "key_verses": [
         "Genesis 4:25",
-        "Genesis 5:6"
+        "Genesis 5:6",
+        "Genesis 5:18",
+        "Genesis 5:28",
+        "Genesis 5:29",
+        "Genesis 5:4"
       ],
       "linked_stories": [
         {
@@ -207,8 +249,9 @@
   {
     "id": "enoch",
     "name": "Enoch",
+    "sex": "male",
     "era": "Primeval",
-    "summary": "The descendant of Seth described as walking with God; distinct from Cain’s son of the same name.",
+    "summary": "Jared’s son and Methuselah’s father in Seth’s family line, distinct from Cain’s son Enoch. Genesis describes him as walking with God and says God took him, interrupting the genealogy’s repeated pattern of reporting each man’s death.",
     "lineage": {
       "parents": [
         "Jared"
@@ -231,7 +274,8 @@
       "key_verses": [
         "Genesis 5:18",
         "Genesis 5:21",
-        "Genesis 5:24"
+        "Genesis 5:24",
+        "Genesis 5:22"
       ],
       "linked_stories": [
         {
@@ -246,8 +290,9 @@
   {
     "id": "noah",
     "name": "Noah",
+    "sex": "male",
     "era": "Primeval",
-    "summary": "Lamech’s son who builds the ark and receives the covenant after the flood.",
+    "summary": "Described as righteous and walking with God, Noah brings his family into the ark through the flood. God’s covenant afterward promises no further flood to destroy all flesh and gives the rainbow as its sign. His later drunkenness leads into the episode in which he curses Canaan.",
     "lineage": {
       "parents": [
         "Lamech (father of Noah)"
@@ -256,6 +301,9 @@
         "Shem",
         "Ham",
         "Japheth"
+      ],
+      "spouses": [
+        "Wife (unnamed)"
       ]
     },
     "geography": {
@@ -273,7 +321,13 @@
         "Genesis 5:28",
         "Genesis 6:9",
         "Genesis 8:4",
-        "Genesis 9:18"
+        "Genesis 9:18",
+        "Genesis 7:7",
+        "Genesis 9:11",
+        "Genesis 9:13",
+        "Genesis 9:20",
+        "Genesis 9:25",
+        "Genesis 7:13"
       ],
       "linked_stories": [
         {
@@ -294,8 +348,9 @@
   {
     "id": "shem",
     "name": "Shem",
+    "sex": "male",
     "era": "Primeval",
-    "summary": "A son of Noah whose genealogy is traced toward Terah and Abram.",
+    "summary": "Noah’s son who survives the flood with his wife. With Japheth he covers Noah without looking at his nakedness; Noah’s subsequent words bless the God of Shem. His genealogy leads through Terah to Abraham.",
     "lineage": {
       "parents": [
         "Noah"
@@ -307,6 +362,13 @@
         "Lud",
         "Aram",
         "Other sons and daughters (unnamed)"
+      ],
+      "siblings": [
+        "Ham",
+        "Japheth"
+      ],
+      "spouses": [
+        "Wife (unnamed)"
       ]
     },
     "geography": {
@@ -323,7 +385,11 @@
         "Genesis 10:21",
         "Genesis 10:22",
         "Genesis 11:10",
-        "Genesis 11:11"
+        "Genesis 11:11",
+        "Genesis 7:13",
+        "Genesis 9:23",
+        "Genesis 9:26",
+        "Genesis 11:26"
       ],
       "linked_stories": [
         {
@@ -344,8 +410,9 @@
   {
     "id": "ham",
     "name": "Ham",
+    "sex": "male",
     "era": "Primeval",
-    "summary": "A son of Noah and father of Cush, Mizraim, Put, and Canaan.",
+    "summary": "Noah’s son and the father of Cush, Mizraim, Put and Canaan. He sees Noah’s nakedness and tells his brothers; after waking, Noah curses Canaan, Ham’s son. Genesis 9 names Canaan as the recipient of that curse, not Ham.",
     "lineage": {
       "parents": [
         "Noah"
@@ -355,6 +422,13 @@
         "Mizraim",
         "Put (Phut)",
         "Canaan"
+      ],
+      "siblings": [
+        "Shem",
+        "Japheth"
+      ],
+      "spouses": [
+        "Wife (unnamed)"
       ]
     },
     "geography": {
@@ -369,7 +443,11 @@
       ],
       "key_verses": [
         "Genesis 9:18",
-        "Genesis 10:6"
+        "Genesis 10:6",
+        "Genesis 9:22",
+        "Genesis 9:24",
+        "Genesis 9:25",
+        "Genesis 7:13"
       ],
       "linked_stories": [
         {
@@ -390,8 +468,9 @@
   {
     "id": "japheth",
     "name": "Japheth",
+    "sex": "male",
     "era": "Primeval",
-    "summary": "A son of Noah; Genesis lists the peoples descended from his sons.",
+    "summary": "Noah’s son who survives the flood with his wife. He and Shem cover their father while avoiding looking at his nakedness. Noah’s ensuing words ask God to enlarge Japheth and connect his future with Shem’s tents.",
     "lineage": {
       "parents": [
         "Noah"
@@ -404,6 +483,13 @@
         "Tubal",
         "Meshech",
         "Tiras"
+      ],
+      "siblings": [
+        "Shem",
+        "Ham"
+      ],
+      "spouses": [
+        "Wife (unnamed)"
       ]
     },
     "geography": {
@@ -418,7 +504,10 @@
       ],
       "key_verses": [
         "Genesis 9:18",
-        "Genesis 10:2"
+        "Genesis 10:2",
+        "Genesis 7:13",
+        "Genesis 9:23",
+        "Genesis 9:27"
       ],
       "linked_stories": [
         {
@@ -439,8 +528,9 @@
   {
     "id": "terah",
     "name": "Terah",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Father of Abram, Nahor, and Haran; leads his family from Ur to Haran.",
+    "summary": "Father of Abram, Nahor and Haran, and grandfather of Lot. He leads Abram, Sarai and Lot out of Ur toward Canaan but settles and dies in Haran. His household provides the family setting for Abraham’s journey and later marriage connections.",
     "lineage": {
       "parents": [
         "Nahor (father of Terah)"
@@ -467,7 +557,10 @@
         "Genesis 11:24",
         "Genesis 11:26",
         "Genesis 11:31",
-        "Genesis 20:12"
+        "Genesis 20:12",
+        "Genesis 11:27",
+        "Genesis 11:29",
+        "Genesis 11:32"
       ],
       "linked_stories": [
         {
@@ -482,8 +575,9 @@
   {
     "id": "abraham",
     "name": "Abraham",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Also called Abram; travels from his family’s home to Canaan and receives covenant promises.",
+    "summary": "Also called Abram; the recipient of promises of land, descendants and blessing for the families of the earth. The covenant narrative introduces circumcision and identifies Isaac as Sarah’s promised son. Abraham’s willingness to offer Isaac becomes a central test, stopped before the child is killed.",
     "lineage": {
       "parents": [
         "Terah"
@@ -497,6 +591,16 @@
         "Midian",
         "Ishbak",
         "Shuah"
+      ],
+      "spouses": [
+        "Sarah",
+        "Hagar",
+        "Keturah"
+      ],
+      "siblings": [
+        "Nahor (brother of Abram)",
+        "Haran",
+        "Sarah (paternal half-sister)"
       ]
     },
     "geography": {
@@ -519,7 +623,15 @@
         "Genesis 12:1",
         "Genesis 17:5",
         "Genesis 25:1",
-        "Genesis 25:2"
+        "Genesis 25:2",
+        "Genesis 12:2",
+        "Genesis 12:3",
+        "Genesis 17:10",
+        "Genesis 17:21",
+        "Genesis 22:2",
+        "Genesis 22:12",
+        "Genesis 22:13",
+        "Genesis 20:12"
       ],
       "linked_stories": [
         {
@@ -546,8 +658,9 @@
   {
     "id": "sarah",
     "name": "Sarah",
+    "sex": "female",
     "era": "Patriarchal",
-    "summary": "Also called Sarai; Abraham’s wife and Isaac’s mother, renamed in the covenant narrative.",
+    "summary": "Also called Sarai; Abraham’s wife and the mother of Isaac, born in their old age as the promised covenant child. Abraham also identifies her as his paternal half-sister. Her conflict with Hagar and demand that Hagar and Ishmael leave shape the household’s inheritance story.",
     "lineage": {
       "parents": [
         "Terah (inferred from Genesis 20:12)",
@@ -555,6 +668,12 @@
       ],
       "children": [
         "Isaac"
+      ],
+      "spouses": [
+        "Abraham"
+      ],
+      "siblings": [
+        "Abraham (paternal half-brother)"
       ]
     },
     "geography": {
@@ -575,7 +694,10 @@
         "Genesis 11:31",
         "Genesis 17:15",
         "Genesis 20:12",
-        "Genesis 21:2"
+        "Genesis 21:2",
+        "Genesis 17:16",
+        "Genesis 17:21",
+        "Genesis 21:10"
       ],
       "linked_stories": [
         {
@@ -602,14 +724,22 @@
   {
     "id": "lot",
     "name": "Lot",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Haran’s son and Abraham’s nephew; separates from Abraham and later escapes Sodom.",
+    "summary": "Haran’s son and Abraham’s nephew, who escapes Sodom with his wife and two daughters. His unnamed wife looks back and becomes a pillar of salt. Later his daughters become pregnant by him; their sons Moab and Ben-ammi are presented as ancestors of the Moabites and Ammonites.",
     "lineage": {
       "parents": [
         "Haran"
       ],
       "children": [
         "Two daughters (unnamed; survived Sodom)"
+      ],
+      "siblings": [
+        "Milcah",
+        "Iscah"
+      ],
+      "spouses": [
+        "Wife (unnamed)"
       ]
     },
     "geography": {
@@ -631,7 +761,13 @@
         "Genesis 11:27",
         "Genesis 11:31",
         "Genesis 13:12",
-        "Genesis 19:30"
+        "Genesis 19:30",
+        "Genesis 19:15",
+        "Genesis 19:26",
+        "Genesis 19:36",
+        "Genesis 19:37",
+        "Genesis 19:38",
+        "Genesis 11:29"
       ],
       "linked_stories": [
         {
@@ -652,11 +788,15 @@
   {
     "id": "hagar",
     "name": "Hagar",
+    "sex": "female",
     "era": "Patriarchal",
-    "summary": "Sarah’s Egyptian servant and Ishmael’s mother; encounters divine provision in the wilderness.",
+    "summary": "Sarah’s Egyptian servant, given to Abraham as a wife, and the mother of Ishmael. She flees Sarah’s harsh treatment and receives a promise of numerous descendants. Later expelled with Ishmael, she encounters divine provision in the wilderness as his future is reaffirmed.",
     "lineage": {
       "children": [
         "Ishmael"
+      ],
+      "spouses": [
+        "Abraham"
       ]
     },
     "geography": {
@@ -677,7 +817,13 @@
         "Genesis 16:7",
         "Genesis 16:15",
         "Genesis 21:14",
-        "Genesis 21:21"
+        "Genesis 21:21",
+        "Genesis 16:3",
+        "Genesis 16:6",
+        "Genesis 16:10",
+        "Genesis 21:17",
+        "Genesis 21:18",
+        "Genesis 21:19"
       ],
       "linked_stories": [
         {
@@ -698,8 +844,9 @@
   {
     "id": "ishmael",
     "name": "Ishmael",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Abraham and Hagar’s son, whose twelve sons are listed as princes.",
+    "summary": "Abraham and Hagar’s son, promised numerous descendants and twelve princes, while the covenant is assigned to Isaac. Sent away with Hagar, he survives in the wilderness and becomes an archer. His descendants form a distinct branch of Abraham’s family.",
     "lineage": {
       "parents": [
         "Abraham",
@@ -719,6 +866,15 @@
         "Naphish",
         "Kedemah",
         "Mahalath (Genesis 28:9); Basemath (Genesis 36:3)"
+      ],
+      "siblings": [
+        "Isaac (half-brother)",
+        "Zimran (half-brother)",
+        "Jokshan (half-brother)",
+        "Medan (half-brother)",
+        "Midian (half-brother)",
+        "Ishbak (half-brother)",
+        "Shuah (half-brother)"
       ]
     },
     "geography": {
@@ -740,7 +896,15 @@
         "Genesis 25:14",
         "Genesis 25:15",
         "Genesis 28:9",
-        "Genesis 36:3"
+        "Genesis 36:3",
+        "Genesis 17:20",
+        "Genesis 17:21",
+        "Genesis 21:14",
+        "Genesis 21:18",
+        "Genesis 25:12",
+        "Genesis 25:16",
+        "Genesis 25:1",
+        "Genesis 25:2"
       ],
       "linked_stories": [
         {
@@ -761,8 +925,9 @@
   {
     "id": "isaac",
     "name": "Isaac",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Abraham and Sarah’s son; husband of Rebekah and father of Esau and Jacob.",
+    "summary": "Abraham and Sarah’s promised son and the father of Esau and Jacob with Rebekah. He survives Abraham’s attempted offering when a ram is substituted. Later, Jacob’s deception leads Isaac to give him the blessing intended for Esau, intensifying the brothers’ conflict.",
     "lineage": {
       "parents": [
         "Abraham",
@@ -771,6 +936,18 @@
       "children": [
         "Esau",
         "Jacob"
+      ],
+      "spouses": [
+        "Rebekah"
+      ],
+      "siblings": [
+        "Ishmael (half-brother)",
+        "Zimran (half-brother)",
+        "Jokshan (half-brother)",
+        "Medan (half-brother)",
+        "Midian (half-brother)",
+        "Ishbak (half-brother)",
+        "Shuah (half-brother)"
       ]
     },
     "geography": {
@@ -792,7 +969,17 @@
         "Genesis 24:62",
         "Genesis 25:26",
         "Genesis 26:6",
-        "Genesis 35:27"
+        "Genesis 35:27",
+        "Genesis 17:21",
+        "Genesis 22:12",
+        "Genesis 22:13",
+        "Genesis 24:67",
+        "Genesis 25:25",
+        "Genesis 27:19",
+        "Genesis 27:23",
+        "Genesis 27:35",
+        "Genesis 25:1",
+        "Genesis 25:2"
       ],
       "linked_stories": [
         {
@@ -825,8 +1012,9 @@
   {
     "id": "rebekah",
     "name": "Rebekah",
+    "sex": "female",
     "era": "Patriarchal",
-    "summary": "Bethuel’s daughter, Isaac’s wife, and mother of the twins Esau and Jacob.",
+    "summary": "Bethuel’s daughter and Laban’s sister, who agrees to leave her family and marry Isaac. An oracle about her twins says the elder will serve the younger. She later helps Jacob obtain Isaac’s blessing by disguising him as Esau.",
     "lineage": {
       "parents": [
         "Bethuel"
@@ -834,6 +1022,12 @@
       "children": [
         "Esau",
         "Jacob"
+      ],
+      "spouses": [
+        "Isaac"
+      ],
+      "siblings": [
+        "Laban"
       ]
     },
     "geography": {
@@ -853,7 +1047,13 @@
         "Genesis 24:15",
         "Genesis 24:67",
         "Genesis 25:20",
-        "Genesis 25:26"
+        "Genesis 25:26",
+        "Genesis 24:29",
+        "Genesis 24:58",
+        "Genesis 25:23",
+        "Genesis 27:6",
+        "Genesis 27:15",
+        "Genesis 27:17"
       ],
       "linked_stories": [
         {
@@ -874,8 +1074,9 @@
   {
     "id": "esau",
     "name": "Esau",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Also called Edom; Isaac and Rebekah’s older son, who settles in Seir.",
+    "summary": "Isaac and Rebekah’s older twin, also called Edom. He sells his birthright to Jacob for a meal, then loses his father’s blessing through Jacob’s deception. Though he initially intends revenge, their later reunion is an embrace; Genesis traces his family’s settlement in Seir.",
     "lineage": {
       "parents": [
         "Isaac",
@@ -887,6 +1088,14 @@
         "Jeush",
         "Jalam",
         "Korah"
+      ],
+      "siblings": [
+        "Jacob"
+      ],
+      "spouses": [
+        "Judith (Genesis 26:34)",
+        "Bashemath (Genesis 26:34)",
+        "Mahalath (Genesis 28:9)"
       ]
     },
     "geography": {
@@ -904,7 +1113,15 @@
         "Genesis 25:25",
         "Genesis 36:4",
         "Genesis 36:5",
-        "Genesis 36:8"
+        "Genesis 36:8",
+        "Genesis 25:33",
+        "Genesis 25:34",
+        "Genesis 27:35",
+        "Genesis 27:41",
+        "Genesis 33:4",
+        "Genesis 26:34",
+        "Genesis 28:9",
+        "Genesis 25:26"
       ],
       "linked_stories": [
         {
@@ -925,8 +1142,9 @@
   {
     "id": "jacob",
     "name": "Jacob",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Also called Israel; Isaac and Rebekah’s son and father of the twelve sons associated with Israel’s tribes.",
+    "summary": "Isaac and Rebekah’s son, later named Israel, and the father of twelve sons and Dinah. His deception over Esau’s blessing drives him from home; encounters at Bethel and his wrestling encounter frame his return. He reconciles with Esau, while his children’s rivalries lead the family toward Egypt.",
     "lineage": {
       "parents": [
         "Isaac",
@@ -946,6 +1164,15 @@
         "Dinah",
         "Joseph",
         "Benjamin"
+      ],
+      "spouses": [
+        "Leah",
+        "Rachel",
+        "Bilhah",
+        "Zilpah"
+      ],
+      "siblings": [
+        "Esau"
       ]
     },
     "geography": {
@@ -970,7 +1197,15 @@
         "Genesis 35:24",
         "Genesis 35:25",
         "Genesis 35:26",
-        "Genesis 46:7"
+        "Genesis 46:7",
+        "Genesis 27:19",
+        "Genesis 27:41",
+        "Genesis 28:12",
+        "Genesis 28:13",
+        "Genesis 28:15",
+        "Genesis 33:4",
+        "Genesis 46:6",
+        "Genesis 25:25"
       ],
       "linked_stories": [
         {
@@ -1003,8 +1238,9 @@
   {
     "id": "leah",
     "name": "Leah",
+    "sex": "female",
     "era": "Patriarchal",
-    "summary": "Laban’s daughter and Jacob’s wife; mother of six sons and Dinah.",
+    "summary": "Laban’s elder daughter, given to Jacob before Rachel in a marriage Jacob says was arranged deceptively. Her search for affection and rivalry with Rachel shape the household. She bears six sons, including Levi and Judah, and the daughter Dinah.",
     "lineage": {
       "parents": [
         "Laban"
@@ -1017,6 +1253,12 @@
         "Issachar",
         "Zebulun",
         "Dinah"
+      ],
+      "spouses": [
+        "Jacob"
+      ],
+      "siblings": [
+        "Rachel"
       ]
     },
     "geography": {
@@ -1034,7 +1276,13 @@
         "Genesis 29:16",
         "Genesis 29:23",
         "Genesis 30:21",
-        "Genesis 35:23"
+        "Genesis 35:23",
+        "Genesis 29:25",
+        "Genesis 29:31",
+        "Genesis 29:32",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:20"
       ],
       "linked_stories": [
         {
@@ -1055,8 +1303,9 @@
   {
     "id": "rachel",
     "name": "Rachel",
+    "sex": "female",
     "era": "Patriarchal",
-    "summary": "Laban’s daughter and Jacob’s wife; mother of Joseph and Benjamin.",
+    "summary": "Laban’s younger daughter and Jacob’s loved wife, whose rivalry with Leah includes giving Bilhah to Jacob. After a period without children she bears Joseph. She dies giving birth to Benjamin and is buried on the way to Bethlehem.",
     "lineage": {
       "parents": [
         "Laban"
@@ -1064,6 +1313,12 @@
       "children": [
         "Joseph",
         "Benjamin"
+      ],
+      "spouses": [
+        "Jacob"
+      ],
+      "siblings": [
+        "Leah"
       ]
     },
     "geography": {
@@ -1080,7 +1335,12 @@
       "key_verses": [
         "Genesis 29:16",
         "Genesis 30:24",
-        "Genesis 35:18"
+        "Genesis 35:18",
+        "Genesis 29:18",
+        "Genesis 30:3",
+        "Genesis 30:4",
+        "Genesis 30:22",
+        "Genesis 35:19"
       ],
       "linked_stories": [
         {
@@ -1101,12 +1361,16 @@
   {
     "id": "bilhah",
     "name": "Bilhah",
+    "sex": "female",
     "era": "Patriarchal",
-    "summary": "Rachel’s servant, given to Jacob as a wife; mother of Dan and Naphtali.",
+    "summary": "Rachel’s servant, given to Jacob as a wife, and mother of Dan and Naphtali. Her sons become two of the family lines associated with Israel’s tribes. Reuben later sleeps with her, an act recalled in Jacob’s condemnation of his firstborn.",
     "lineage": {
       "children": [
         "Dan",
         "Naphtali"
+      ],
+      "spouses": [
+        "Jacob"
       ]
     },
     "geography": {
@@ -1123,7 +1387,12 @@
       "key_verses": [
         "Genesis 29:29",
         "Genesis 30:4",
-        "Genesis 35:25"
+        "Genesis 35:25",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 35:22",
+        "Genesis 49:3",
+        "Genesis 49:4"
       ],
       "linked_stories": [
         {
@@ -1138,12 +1407,16 @@
   {
     "id": "zilpah",
     "name": "Zilpah",
+    "sex": "female",
     "era": "Patriarchal",
-    "summary": "Leah’s servant, given to Jacob as a wife; mother of Gad and Asher.",
+    "summary": "Leah’s servant, given to Jacob as a wife during Leah and Rachel’s rivalry over children. She bears Gad and Asher, whose births Leah celebrates through their names. Those sons become two of the family lines associated with Israel’s tribes.",
     "lineage": {
       "children": [
         "Gad",
         "Asher"
+      ],
+      "spouses": [
+        "Jacob"
       ]
     },
     "geography": {
@@ -1160,7 +1433,13 @@
       "key_verses": [
         "Genesis 29:24",
         "Genesis 30:9",
-        "Genesis 35:26"
+        "Genesis 35:26",
+        "Genesis 30:10",
+        "Genesis 30:11",
+        "Genesis 30:12",
+        "Genesis 30:13",
+        "Genesis 49:19",
+        "Genesis 49:20"
       ],
       "linked_stories": [
         {
@@ -1175,8 +1454,9 @@
   {
     "id": "reuben",
     "name": "Reuben",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Leah’s firstborn, who intervenes to stop his brothers from killing Joseph. He also sleeps with Bilhah, his father’s concubine. Jacob’s final words explicitly connect that act with Reuben’s loss of preeminence.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1188,7 +1468,21 @@
         "Hezron",
         "Carmi"
       ],
-      "tribe": "Reuben"
+      "tribe": "Reuben",
+      "siblings": [
+        "Simeon",
+        "Levi",
+        "Judah",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar",
+        "Zebulun",
+        "Dinah",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1205,7 +1499,24 @@
       "key_verses": [
         "Genesis 35:23",
         "Genesis 46:9",
-        "Genesis 37:21"
+        "Genesis 37:21",
+        "Genesis 29:32",
+        "Genesis 35:22",
+        "Genesis 37:22",
+        "Genesis 49:3",
+        "Genesis 49:4",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1226,8 +1537,9 @@
   {
     "id": "simeon",
     "name": "Simeon",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Leah’s son, who joins Levi in killing the men of Shechem after Dinah’s violation. Jacob later condemns their violent anger and announces their scattering. In the Joseph narrative, Simeon is held in Egypt while his brothers return for Benjamin.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1241,7 +1553,21 @@
         "Zohar",
         "Shaul"
       ],
-      "tribe": "Simeon"
+      "tribe": "Simeon",
+      "siblings": [
+        "Reuben",
+        "Levi",
+        "Judah",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar",
+        "Zebulun",
+        "Dinah",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1258,7 +1584,25 @@
       "key_verses": [
         "Genesis 35:23",
         "Genesis 46:10",
-        "Genesis 34:25"
+        "Genesis 34:25",
+        "Genesis 29:33",
+        "Genesis 34:2",
+        "Genesis 42:19",
+        "Genesis 42:24",
+        "Genesis 49:5",
+        "Genesis 49:7",
+        "Genesis 29:32",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1279,8 +1623,9 @@
   {
     "id": "levi",
     "name": "Levi",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Leah’s son, who joins Simeon in the attack on Shechem after Dinah’s violation. Jacob’s final words condemn their violent anger and speak of their scattering in Israel. He is the named ancestor of the Levi family line, one of Israel’s tribal ancestors.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1291,7 +1636,21 @@
         "Kohath",
         "Merari"
       ],
-      "tribe": "Levi"
+      "tribe": "Levi",
+      "siblings": [
+        "Reuben",
+        "Simeon",
+        "Judah",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar",
+        "Zebulun",
+        "Dinah",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1308,7 +1667,24 @@
       "key_verses": [
         "Genesis 35:23",
         "Genesis 46:11",
-        "Genesis 34:25"
+        "Genesis 34:25",
+        "Genesis 29:34",
+        "Genesis 34:2",
+        "Genesis 49:5",
+        "Genesis 49:7",
+        "Genesis 49:28",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1329,8 +1705,9 @@
   {
     "id": "judah",
     "name": "Judah",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Leah’s son who proposes selling Joseph rather than killing him. In Tamar’s story he acknowledges that she is more righteous than he is; later he offers himself in Benjamin’s place. Jacob’s final words associate Judah with leadership, a lion and the sceptre.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1343,7 +1720,24 @@
         "Perez",
         "Zerah"
       ],
-      "tribe": "Judah"
+      "tribe": "Judah",
+      "siblings": [
+        "Reuben",
+        "Simeon",
+        "Levi",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar",
+        "Zebulun",
+        "Dinah",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ],
+      "spouses": [
+        "Shuah’s daughter (unnamed)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1362,7 +1756,25 @@
         "Genesis 46:12",
         "Genesis 38:26",
         "Genesis 44:33",
-        "Genesis 49:8"
+        "Genesis 49:8",
+        "Genesis 29:35",
+        "Genesis 37:26",
+        "Genesis 37:27",
+        "Genesis 49:9",
+        "Genesis 49:10",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18",
+        "Genesis 38:2"
       ],
       "linked_stories": [
         {
@@ -1395,8 +1807,9 @@
   {
     "id": "dan",
     "name": "Dan",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Bilhah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Bilhah’s son, named by Rachel in connection with God’s judgment in her favor. He becomes a tribal ancestor. Jacob’s final words say Dan will judge his people and use the image of a serpent striking a horse’s heels.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1405,7 +1818,21 @@
       "children": [
         "Hushim"
       ],
-      "tribe": "Dan"
+      "tribe": "Dan",
+      "siblings": [
+        "Reuben (half-brother)",
+        "Simeon (half-brother)",
+        "Levi (half-brother)",
+        "Judah (half-brother)",
+        "Naphtali",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar (half-brother)",
+        "Zebulun (half-brother)",
+        "Dinah (half-sister)",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1421,7 +1848,23 @@
       ],
       "key_verses": [
         "Genesis 35:25",
-        "Genesis 46:23"
+        "Genesis 46:23",
+        "Genesis 30:4",
+        "Genesis 30:6",
+        "Genesis 49:16",
+        "Genesis 49:17",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1442,8 +1885,9 @@
   {
     "id": "naphtali",
     "name": "Naphtali",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Bilhah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Bilhah’s son, named by Rachel in connection with her struggles with Leah. He becomes a tribal ancestor. Jacob’s final words portray Naphtali as a released doe and associate him with beautiful words.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1455,7 +1899,21 @@
         "Jezer",
         "Shillem"
       ],
-      "tribe": "Naphtali"
+      "tribe": "Naphtali",
+      "siblings": [
+        "Reuben (half-brother)",
+        "Simeon (half-brother)",
+        "Levi (half-brother)",
+        "Judah (half-brother)",
+        "Dan",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar (half-brother)",
+        "Zebulun (half-brother)",
+        "Dinah (half-sister)",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1471,7 +1929,23 @@
       ],
       "key_verses": [
         "Genesis 35:25",
-        "Genesis 46:24"
+        "Genesis 46:24",
+        "Genesis 30:7",
+        "Genesis 30:8",
+        "Genesis 49:21",
+        "Genesis 49:28",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1492,8 +1966,9 @@
   {
     "id": "gad",
     "name": "Gad",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Zilpah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Zilpah’s son, whose birth Leah celebrates with a name linked to a troop in the KJV. He becomes a tribal ancestor. Jacob’s final words describe Gad as attacked by a troop but overcoming at the last.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1508,7 +1983,21 @@
         "Arodi",
         "Areli"
       ],
-      "tribe": "Gad"
+      "tribe": "Gad",
+      "siblings": [
+        "Reuben (half-brother)",
+        "Simeon (half-brother)",
+        "Levi (half-brother)",
+        "Judah (half-brother)",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Asher",
+        "Issachar (half-brother)",
+        "Zebulun (half-brother)",
+        "Dinah (half-sister)",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1524,7 +2013,24 @@
       ],
       "key_verses": [
         "Genesis 35:26",
-        "Genesis 46:16"
+        "Genesis 46:16",
+        "Genesis 30:9",
+        "Genesis 30:10",
+        "Genesis 30:11",
+        "Genesis 49:19",
+        "Genesis 49:28",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1545,8 +2051,9 @@
   {
     "id": "asher",
     "name": "Asher",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Zilpah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Zilpah’s son, named by Leah in connection with her happiness. He becomes a tribal ancestor. Jacob’s final words associate Asher with rich food and royal delicacies.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1559,7 +2066,21 @@
         "Beriah",
         "Serah"
       ],
-      "tribe": "Asher"
+      "tribe": "Asher",
+      "siblings": [
+        "Reuben (half-brother)",
+        "Simeon (half-brother)",
+        "Levi (half-brother)",
+        "Judah (half-brother)",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad",
+        "Issachar (half-brother)",
+        "Zebulun (half-brother)",
+        "Dinah (half-sister)",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1575,7 +2096,23 @@
       ],
       "key_verses": [
         "Genesis 35:26",
-        "Genesis 46:17"
+        "Genesis 46:17",
+        "Genesis 30:12",
+        "Genesis 30:13",
+        "Genesis 49:20",
+        "Genesis 49:28",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1596,8 +2133,9 @@
   {
     "id": "issachar",
     "name": "Issachar",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Leah’s son, born during the household rivalry involving Leah, Rachel and the mandrakes. He becomes a tribal ancestor. Jacob’s final words compare him to a strong donkey and connect pleasant land with bearing burdens and tribute.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1609,7 +2147,21 @@
         "Job",
         "Shimron"
       ],
-      "tribe": "Issachar"
+      "tribe": "Issachar",
+      "siblings": [
+        "Reuben",
+        "Simeon",
+        "Levi",
+        "Judah",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Zebulun",
+        "Dinah",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1625,7 +2177,26 @@
       ],
       "key_verses": [
         "Genesis 35:23",
-        "Genesis 46:13"
+        "Genesis 46:13",
+        "Genesis 30:14",
+        "Genesis 30:15",
+        "Genesis 30:16",
+        "Genesis 30:18",
+        "Genesis 49:14",
+        "Genesis 49:15",
+        "Genesis 49:28",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1646,8 +2217,9 @@
   {
     "id": "zebulun",
     "name": "Zebulun",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Leah’s son, named among the ancestors of Israel’s tribes.",
+    "summary": "Jacob and Leah’s sixth son, whose birth Leah links to her hope of being honored by her husband. He becomes a tribal ancestor. Jacob’s final words associate Zebulun with the seashore, ships and a border toward Sidon.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1658,7 +2230,21 @@
         "Elon",
         "Jahleel"
       ],
-      "tribe": "Zebulun"
+      "tribe": "Zebulun",
+      "siblings": [
+        "Reuben",
+        "Simeon",
+        "Levi",
+        "Judah",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar",
+        "Dinah",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1674,7 +2260,23 @@
       ],
       "key_verses": [
         "Genesis 35:23",
-        "Genesis 46:14"
+        "Genesis 46:14",
+        "Genesis 30:19",
+        "Genesis 30:20",
+        "Genesis 49:13",
+        "Genesis 49:28",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:21",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1695,8 +2297,9 @@
   {
     "id": "joseph",
     "name": "Joseph",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Rachel’s son; sold into Egypt, he rises to authority and preserves his family during famine.",
+    "summary": "Jacob and Rachel’s son whose dreams deepen his brothers’ hostility before he is sold into Egypt. After imprisonment he rises to authority under Pharaoh and manages grain supplies for famine. His reunion with his brothers brings the family to Egypt, and he interprets his suffering as part of preserving their lives.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1706,7 +2309,24 @@
         "Manasseh",
         "Ephraim"
       ],
-      "tribe": "Joseph (represented by Ephraim and Manasseh)"
+      "tribe": "Joseph (represented by Ephraim and Manasseh)",
+      "siblings": [
+        "Reuben (half-brother)",
+        "Simeon (half-brother)",
+        "Levi (half-brother)",
+        "Judah (half-brother)",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar (half-brother)",
+        "Zebulun (half-brother)",
+        "Dinah (half-sister)",
+        "Benjamin"
+      ],
+      "spouses": [
+        "Asenath"
+      ]
     },
     "geography": {
       "origin": "Paddan-aram",
@@ -1726,7 +2346,29 @@
         "Genesis 30:24",
         "Genesis 37:3",
         "Genesis 41:41",
-        "Genesis 45:4"
+        "Genesis 45:4",
+        "Genesis 37:5",
+        "Genesis 37:28",
+        "Genesis 39:20",
+        "Genesis 41:39",
+        "Genesis 41:40",
+        "Genesis 41:49",
+        "Genesis 45:5",
+        "Genesis 45:7",
+        "Genesis 46:6",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 35:18",
+        "Genesis 41:45"
       ],
       "linked_stories": [
         {
@@ -1753,8 +2395,9 @@
   {
     "id": "benjamin",
     "name": "Benjamin",
+    "sex": "male",
     "era": "Patriarchal",
-    "summary": "Jacob and Rachel’s youngest son, born as Rachel dies; later travels with his brothers to Egypt.",
+    "summary": "Jacob and Rachel’s youngest son, born as Rachel dies; Jacob gives him the name Benjamin rather than Ben-oni. Joseph’s demand to see him and the planted cup test his brothers’ loyalties, leading Judah to offer himself in Benjamin’s place. He becomes a tribal ancestor.",
     "lineage": {
       "parents": [
         "Jacob",
@@ -1772,7 +2415,21 @@
         "Huppim",
         "Ard"
       ],
-      "tribe": "Benjamin"
+      "tribe": "Benjamin",
+      "siblings": [
+        "Reuben (half-brother)",
+        "Simeon (half-brother)",
+        "Levi (half-brother)",
+        "Judah (half-brother)",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar (half-brother)",
+        "Zebulun (half-brother)",
+        "Dinah (half-sister)",
+        "Joseph"
+      ]
     },
     "geography": {
       "origin": "Near Bethlehem in Canaan",
@@ -1789,7 +2446,25 @@
         "Genesis 35:24",
         "Genesis 46:21",
         "Genesis 35:18",
-        "Genesis 44:30"
+        "Genesis 44:30",
+        "Genesis 42:20",
+        "Genesis 44:2",
+        "Genesis 44:12",
+        "Genesis 44:33",
+        "Genesis 49:27",
+        "Genesis 49:28",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:21",
+        "Genesis 30:24"
       ],
       "linked_stories": [
         {
@@ -1810,12 +2485,27 @@
   {
     "id": "dinah",
     "name": "Dinah",
+    "sex": "female",
     "era": "Patriarchal",
-    "summary": "Jacob and Leah’s daughter; the Shechem narrative centres on her and her brothers’ response.",
+    "summary": "Jacob and Leah’s daughter, whose violation by Shechem leads to marriage negotiations and a deadly response by her brothers Simeon and Levi. Their attack and Jacob’s reaction make her story central to the family’s conflict with Shechem.",
     "lineage": {
       "parents": [
         "Jacob",
         "Leah"
+      ],
+      "siblings": [
+        "Reuben",
+        "Simeon",
+        "Levi",
+        "Judah",
+        "Dan (half-brother)",
+        "Naphtali (half-brother)",
+        "Gad (half-brother)",
+        "Asher (half-brother)",
+        "Issachar",
+        "Zebulun",
+        "Joseph (half-brother)",
+        "Benjamin (half-brother)"
       ]
     },
     "geography": {
@@ -1834,7 +2524,25 @@
         "Genesis 30:21",
         "Genesis 34:1",
         "Genesis 46:7",
-        "Genesis 46:15"
+        "Genesis 46:15",
+        "Genesis 34:2",
+        "Genesis 34:6",
+        "Genesis 34:13",
+        "Genesis 34:25",
+        "Genesis 34:26",
+        "Genesis 34:30",
+        "Genesis 29:32",
+        "Genesis 29:33",
+        "Genesis 29:34",
+        "Genesis 29:35",
+        "Genesis 30:6",
+        "Genesis 30:8",
+        "Genesis 30:11",
+        "Genesis 30:13",
+        "Genesis 30:18",
+        "Genesis 30:20",
+        "Genesis 30:24",
+        "Genesis 35:18"
       ],
       "linked_stories": [
         {
@@ -1855,12 +2563,17 @@
   {
     "id": "tamar",
     "name": "Tamar",
+    "sex": "female",
     "era": "Patriarchal",
-    "summary": "Judah’s daughter-in-law and mother of his sons Perez and Zerah; Judah acknowledges her claim.",
+    "summary": "Judah’s daughter-in-law, widowed after marriage to Er and then Onan, and denied the promised marriage to Shelah. She disguises herself and becomes pregnant by Judah, retaining his possessions as evidence. When accused, she reveals them; Judah acknowledges her claim, and she bears Perez and Zerah.",
     "lineage": {
       "children": [
         "Perez",
         "Zerah"
+      ],
+      "spouses": [
+        "Er",
+        "Onan"
       ]
     },
     "geography": {
@@ -1879,7 +2592,13 @@
         "Genesis 38:11",
         "Genesis 38:26",
         "Genesis 38:29",
-        "Genesis 38:30"
+        "Genesis 38:30",
+        "Genesis 38:8",
+        "Genesis 38:10",
+        "Genesis 38:14",
+        "Genesis 38:18",
+        "Genesis 38:24",
+        "Genesis 38:25"
       ],
       "linked_stories": [
         {
@@ -1889,6 +2608,414 @@
           "route": "#stories/genesis/judah-and-tamar"
         }
       ]
+    }
+  },
+  {
+    "id": "paul",
+    "name": "Paul",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "Also called Saul, a persecutor of Jesus’ followers who becomes a witness to Jesus and a missionary to the Gentiles. Acts follows his missionary work and imprisonment through his arrival in Rome. His letters identify him as an apostle and address Gentile inclusion, faith and the law, the resurrection, and the life of the communities he writes to.",
+    "lineage": {
+      "siblings": [
+        "Sister (unnamed)"
+      ],
+      "tribe": "Benjamin"
+    },
+    "geography": {
+      "origin": "Tarsus in Cilicia (Acts 21:39)",
+      "residence": [
+        "Jerusalem (Acts 23:16)",
+        "Rome, under guard (Acts 28:16, 30–31)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts",
+        "Romans",
+        "1 Corinthians",
+        "Galatians",
+        "Philippians"
+      ],
+      "key_verses": [
+        "Acts 9:1",
+        "Acts 9:5",
+        "Acts 9:15",
+        "Acts 13:9",
+        "Acts 13:46",
+        "Acts 21:39",
+        "Acts 23:16",
+        "Acts 28:16",
+        "Acts 28:30",
+        "Acts 28:31",
+        "Romans 1:1",
+        "Galatians 1:13",
+        "Galatians 1:16",
+        "Philippians 3:5",
+        "Galatians 2:3",
+        "Galatians 2:16",
+        "1 Corinthians 15:3",
+        "1 Corinthians 15:4",
+        "1 Corinthians 15:12",
+        "1 Corinthians 15:20"
+      ],
+      "linked_stories": []
+    },
+    "aliases": [
+      "Saul"
+    ]
+  },
+  {
+    "id": "satan",
+    "name": "Satan",
+    "sex": "unspecified",
+    "era": "Across scripture",
+    "summary": "An adversary who challenges Job’s faithfulness and is permitted to test him within limits; Zechariah depicts Satan opposing the high priest. In the New Testament he tempts Jesus and is identified with the Devil. Revelation identifies the dragon and ancient serpent with Satan and portrays his final defeat. These passages give different narrative settings; Genesis itself does not name its serpent Satan.",
+    "lineage": {},
+    "geography": {
+      "origin": "No birthplace or human parentage specified in these passages",
+      "residence": [
+        "Appears in the heavenly assembly and describes roaming the earth (Job 1:6–7)",
+        "Tempts Jesus in the wilderness (Matthew 4:1–11)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Job",
+        "Zechariah",
+        "Matthew",
+        "Mark",
+        "Revelation"
+      ],
+      "key_verses": [
+        "Job 1:6",
+        "Matthew 4:10",
+        "Revelation 12:9",
+        "Job 1:7",
+        "Job 1:9",
+        "Job 1:12",
+        "Job 2:6",
+        "Job 2:7",
+        "Zechariah 3:1",
+        "Matthew 4:1",
+        "Mark 1:13",
+        "Revelation 20:10"
+      ],
+      "linked_stories": []
+    },
+    "aliases": [
+      "Devil"
+    ]
+  },
+  {
+    "id": "elisha",
+    "name": "Elisha",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "Shaphat’s son from Abel-meholah, called from plowing to follow Elijah and recognized as his successor after taking up his mantle. His stories include provision for a widow, restoring a child to life, Naaman’s healing, and a curse followed by bears mauling forty-two mockers. He also intervenes in royal affairs and sends a prophet to anoint Jehu.",
+    "lineage": {
+      "parents": [
+        "Shaphat"
+      ]
+    },
+    "geography": {
+      "origin": "Abel-meholah (1 Kings 19:16)",
+      "residence": [
+        "Follows Elijah after leaving his farm (1 Kings 19:19–21)",
+        "Gilgal (2 Kings 4:38)",
+        "Samaria (2 Kings 6:24, 32)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Kings",
+        "2 Kings",
+        "Luke"
+      ],
+      "key_verses": [
+        "1 Kings 19:19",
+        "2 Kings 2:15",
+        "2 Kings 5:14",
+        "1 Kings 19:16",
+        "1 Kings 19:21",
+        "2 Kings 2:9",
+        "2 Kings 2:13",
+        "2 Kings 2:23",
+        "2 Kings 2:24",
+        "2 Kings 4:7",
+        "2 Kings 4:32",
+        "2 Kings 4:35",
+        "2 Kings 4:38",
+        "2 Kings 5:10",
+        "2 Kings 6:24",
+        "2 Kings 6:32",
+        "2 Kings 9:1",
+        "2 Kings 9:3",
+        "Luke 4:27"
+      ],
+      "linked_stories": []
+    },
+    "aliases": [
+      "Eliseus"
+    ]
+  },
+  {
+    "id": "moses",
+    "name": "Moses",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "A Levite born in Egypt, adopted by Pharaoh’s daughter, and called at the burning bush to lead Israel out of Egypt. He leads the people through the sea and mediates the Sinai covenant and law. After the wilderness journey, he is barred from leading Israel into Canaan because of the Meribah episode; he dies in Moab, and Joshua succeeds him.",
+    "lineage": {
+      "parents": [
+        "Amram",
+        "Jochebed"
+      ],
+      "spouses": [
+        "Zipporah"
+      ],
+      "children": [
+        "Gershom",
+        "Eliezer"
+      ],
+      "siblings": [
+        "Aaron",
+        "Miriam"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Egypt; hidden by the river as an infant (Exodus 2:1–10)",
+      "residence": [
+        "Egypt (Exodus 2:10)",
+        "Midian (Exodus 2:15)",
+        "Sinai and the wilderness (Exodus 19:3)",
+        "Plains of Moab (Deuteronomy 34:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "Numbers",
+        "Deuteronomy"
+      ],
+      "key_verses": [
+        "Exodus 3:10",
+        "Exodus 14:21",
+        "Exodus 24:12",
+        "Exodus 2:1",
+        "Exodus 2:3",
+        "Exodus 2:10",
+        "Exodus 2:15",
+        "Exodus 2:21",
+        "Exodus 3:4",
+        "Exodus 6:20",
+        "Exodus 14:22",
+        "Exodus 18:3",
+        "Exodus 18:4",
+        "Exodus 19:3",
+        "Numbers 20:12",
+        "Numbers 26:59",
+        "Deuteronomy 34:1",
+        "Deuteronomy 34:4",
+        "Deuteronomy 34:5",
+        "Deuteronomy 34:9"
+      ],
+      "linked_stories": []
+    }
+  },
+  {
+    "id": "joshua",
+    "name": "Joshua",
+    "sex": "male",
+    "era": "Conquest",
+    "summary": "Nun’s son from Ephraim, also called Oshea and Jehoshua, who serves Moses and is commissioned as his successor. He leads Israel across the Jordan and in the conquest narratives, including Jericho’s capture and the killing of its inhabitants. His leadership also concerns dividing the land and renewing the covenant at Shechem, where he calls the people to choose whom they will serve.",
+    "lineage": {
+      "parents": [
+        "Nun"
+      ],
+      "tribe": "Ephraim"
+    },
+    "geography": {
+      "origin": "An Ephraimite; birthplace not specified in the cited passages (Numbers 13:8)",
+      "residence": [
+        "With Moses during the wilderness journey (Numbers 11:28)",
+        "Leads Israel into Canaan (Joshua 1:2)",
+        "Covenant assembly at Shechem (Joshua 24:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Numbers",
+        "Deuteronomy",
+        "Joshua"
+      ],
+      "key_verses": [
+        "Numbers 27:18",
+        "Joshua 1:2",
+        "Joshua 6:20",
+        "Numbers 11:28",
+        "Numbers 13:8",
+        "Numbers 13:16",
+        "Numbers 27:23",
+        "Deuteronomy 34:9",
+        "Joshua 1:1",
+        "Joshua 1:6",
+        "Joshua 3:16",
+        "Joshua 3:17",
+        "Joshua 6:21",
+        "Joshua 24:1",
+        "Joshua 24:15",
+        "Joshua 24:26",
+        "Joshua 24:29"
+      ],
+      "linked_stories": []
+    },
+    "aliases": [
+      "Oshea",
+      "Jehoshua"
+    ]
+  },
+  {
+    "id": "elijah",
+    "name": "Elijah",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "A Tishbite from Gilead who announces drought and confronts Ahab and the worship of Baal. At Carmel, fire consumes his offering and he orders the captured prophets of Baal killed. After fleeing into the wilderness, he encounters God at Horeb and calls Elisha; his story ends with his being taken up by a whirlwind as a fiery chariot separates them.",
+    "lineage": {},
+    "geography": {
+      "origin": "Tishbite from Gilead (1 Kings 17:1)",
+      "residence": [
+        "Brook Cherith (1 Kings 17:3–5)",
+        "Zarephath (1 Kings 17:9)",
+        "Horeb during his flight (1 Kings 19:8–9)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Kings",
+        "2 Kings",
+        "Mark"
+      ],
+      "key_verses": [
+        "1 Kings 17:1",
+        "1 Kings 18:38",
+        "2 Kings 2:11",
+        "1 Kings 17:3",
+        "1 Kings 17:5",
+        "1 Kings 17:9",
+        "1 Kings 18:21",
+        "1 Kings 18:40",
+        "1 Kings 19:3",
+        "1 Kings 19:8",
+        "1 Kings 19:9",
+        "1 Kings 19:12",
+        "1 Kings 19:19",
+        "Mark 9:4"
+      ],
+      "linked_stories": []
+    },
+    "aliases": [
+      "Elias"
+    ]
+  },
+  {
+    "id": "aaron",
+    "name": "Aaron",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "Moses’ older brother and spokesman, appointed with his sons to the priestly office. While Moses is on the mountain, Aaron makes the golden calf and proclaims a feast, making him central to that breach of worship. Like Moses he is barred from entering Canaan after Meribah; his priestly garments pass to Eleazar before he dies on Mount Hor.",
+    "lineage": {
+      "parents": [
+        "Amram",
+        "Jochebed"
+      ],
+      "spouses": [
+        "Elisheba"
+      ],
+      "children": [
+        "Nadab",
+        "Abihu",
+        "Eleazar",
+        "Ithamar"
+      ],
+      "siblings": [
+        "Moses",
+        "Miriam"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Born to Amram and Jochebed in Israel’s Egyptian setting (Exodus 6:20)",
+      "residence": [
+        "Egypt during the confrontation with Pharaoh (Exodus 7:7)",
+        "The wilderness with Israel (Exodus 32:1)",
+        "Dies on Mount Hor (Numbers 20:28)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "Numbers"
+      ],
+      "key_verses": [
+        "Exodus 4:16",
+        "Exodus 28:1",
+        "Exodus 32:4",
+        "Exodus 4:14",
+        "Exodus 6:20",
+        "Exodus 6:23",
+        "Exodus 7:7",
+        "Exodus 32:1",
+        "Exodus 32:5",
+        "Numbers 20:12",
+        "Numbers 20:24",
+        "Numbers 20:28",
+        "Numbers 26:59"
+      ],
+      "linked_stories": []
+    }
+  },
+  {
+    "id": "miriam",
+    "name": "Miriam",
+    "sex": "female",
+    "era": "Exodus",
+    "summary": "Moses and Aaron’s sister, identified as a prophetess who leads the women in song and dance after the sea crossing. She and Aaron later challenge Moses; the account describes her becoming leprous, Moses praying for her healing, and the camp waiting through her seven-day exclusion. She dies and is buried at Kadesh.",
+    "lineage": {
+      "parents": [
+        "Amram",
+        "Jochebed"
+      ],
+      "siblings": [
+        "Moses",
+        "Aaron"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Daughter of Amram and Jochebed in the Exodus family (Numbers 26:59)",
+      "residence": [
+        "With Israel after the sea crossing (Exodus 15:20–21)",
+        "In the wilderness camp (Numbers 12:15)",
+        "Dies at Kadesh (Numbers 20:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "Numbers"
+      ],
+      "key_verses": [
+        "Exodus 15:20",
+        "Numbers 12:10",
+        "Numbers 20:1",
+        "Exodus 15:21",
+        "Numbers 12:1",
+        "Numbers 12:13",
+        "Numbers 12:15",
+        "Numbers 26:59"
+      ],
+      "linked_stories": []
     }
   }
 ]
