@@ -1,12 +1,12 @@
 {
   "name": "scripture-lens",
   "version": "1.1.0",
-  "buildNumber": 235,
+  "buildNumber": 236,
   "private": true,
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/check-witness-labels.mjs && node scripts/check-chapter-names.mjs && node scripts/audit-annotations.mjs && node scripts/check-annotations.mjs && node scripts/check-reader-toggles.mjs && node scripts/check-red-letters.mjs && node scripts/check-reader-question.mjs && node scripts/check-global-chat.mjs && node scripts/check-verse-roles.mjs && node scripts/check-questions-category.mjs && node scripts/check-citation-preview.mjs && node scripts/check-reader-swipes.mjs && node scripts/check-reader-bookmarks.mjs && node scripts/check-passage-tools.mjs && node scripts/check-marked-workspace.mjs && node scripts/check-commandments.mjs && node scripts/check-commandment-taxonomy.mjs && node scripts/check-genesis-academic.mjs && node scripts/check-study-relationships.mjs && node scripts/check-stories.mjs && node scripts/check-characters.mjs",
+    "check": "node scripts/check-witness-labels.mjs && node scripts/check-chapter-names.mjs && node scripts/audit-annotations.mjs && node scripts/check-annotations.mjs && node scripts/check-reader-toggles.mjs && node scripts/check-red-letters.mjs && node scripts/check-reader-question.mjs && node scripts/check-global-chat.mjs && node scripts/check-verse-roles.mjs && node scripts/check-questions-category.mjs && node scripts/check-citation-preview.mjs && node scripts/check-reader-swipes.mjs && node scripts/check-reader-bookmarks.mjs && node scripts/check-passage-tools.mjs && node scripts/check-marked-workspace.mjs && node scripts/check-commandments.mjs && node scripts/check-commandment-taxonomy.mjs && node scripts/check-genesis-academic.mjs && node scripts/check-study-relationships.mjs && node scripts/check-stories.mjs && node scripts/check-characters.mjs && node scripts/check-prophecies.mjs && node scripts/check-reader-picker-grid.mjs",
     "start": "node scripts/serve.mjs",
     "build:mobile": "node scripts/build-mobile.mjs",
     "check:mobile": "node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs",

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prophecy",
+  "description": "One editorial prophecy record. Classifications describe an interpretation, not independent proof of fulfillment. IDs must be unique within the collection.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "prediction_passage", "fulfillment_passage", "summary", "taxonomy"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "prediction_passage": { "type": "string", "minLength": 1 },
+    "fulfillment_passage": { "type": ["string", "null"], "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "taxonomy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "target", "type"],
+      "properties": {
+        "status": { "enum": ["Historical", "New Testament", "Unfulfilled", "Disputed"] },
+        "target": { "enum": ["Messianic", "Israel", "The Nations"] },
+        "type": { "enum": ["Direct", "Typological", "Conditional"] }
+      }
+    }
+  },
+  "allOf": [{
+    "if": { "properties": { "taxonomy": { "properties": { "status": { "const": "Unfulfilled" } } } } },
+    "then": { "properties": { "fulfillment_passage": { "type": "null" } } }
+  }]
+}

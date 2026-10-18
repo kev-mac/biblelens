@@ -1,0 +1,15 @@
+{
+  "canonicalBase": "703729f5e918792a1ebc635a7291f38cf2d84bf8",
+  "sitesBase": "24ff3bcb6a2a6649adc9cd7ba1d1ad80b10b6740",
+  "version": "1.1.0",
+  "buildNumber": 236,
+  "handoffs": [
+    {"branch":"codex/session-stories-reference-ui-handoff-20261017","commit":"703729f5e918792a1ebc635a7291f38cf2d84bf8","disposition":"Already present: Stories, primary quotes, secondary reference ordering, testament labels and expanded collapsible Commandments themes. Preserve newer explicit no-results disabling from Commandments session; reader passage navigation remains unrestricted. Repair standalone picker test scope and add it to application checks."},
+    {"branch":"codex/session-48d7-prophecies-characters-handoff","commit":"5352cbdbb3b16f8f9e03582646a81ec51108b39f","disposition":"Merge missing Prophecies, 46-profile Characters expansion, family navigation, header navigation and footer identity. Retain both CSS additions and all newer canonical reference/theme behavior. Depends on already present Characters commit 3d3665661fd88e50c3a2929355d7c3c97e612db5."},
+    {"branch":"codex/session-1988-integration-handoff","commit":"ded65bf7c156489b459daa028c3ca55baccc8bd4","disposition":"Status-only; no application commits. Ancestor baseline already retained; do not replay Stories commits."},
+    {"branch":"codex/session-b4af-status-pull-handoff","commit":"92bab3f0e3c61d993a17d66b2339a9846f182351","disposition":"Status/pull-only; no application commits. Already retained Commandments taxonomy, default filters, no card tags and disabled empty choices."},
+    {"branch":"codex/session-install-229-handoff","commit":"c208e01ee603c2d842186d26b8b35f0def19cc56","disposition":"Installation-only; no application changes. Rechecked iPhone 235 and iPad 229 before release. Do not merge old source or generated machine-specific Package.swift path. Replace both installed apps with same signed 236 app without uninstalling."}
+  ],
+  "preservation": "Original worktrees, branches, local edits and two stashes left intact. New isolated integration worktree and unique branch.",
+  "verificationPolicy": "Release verification checks canonical source, Sites mirror, live release and mobile assets. Signed app assets and codesign checked independently before installation. Device inventory and launch do not prove runtime content fingerprint or all native behaviors. Native model inference and real-account multi-device sync require separate runtime verification."
+}

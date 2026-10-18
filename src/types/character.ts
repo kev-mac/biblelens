@@ -7,6 +7,8 @@ export interface LinkedStoryAnchor {
 
 export interface CharacterLineage {
   parents?: string[];
+  spouses?: string[];
+  siblings?: string[];
   children?: string[];
   tribe?: string;
 }
@@ -25,7 +27,9 @@ export interface NarrativeAnchors {
 export interface CharacterProfile {
   id: string;
   name: string;
-  era: 'Primeval' | 'Patriarchal' | 'Exodus' | 'Judges' | 'Monarchy' | 'Prophets' | 'Gospels' | 'Apostolic';
+  aliases?: string[];
+  sex: 'female' | 'male' | 'unspecified';
+  era: 'Primeval' | 'Patriarchal' | 'Exodus' | 'Conquest' | 'Judges' | 'Monarchy' | 'Prophets' | 'Gospels' | 'Apostolic' | 'Across scripture';
   summary: string;
   lineage?: CharacterLineage;
   geography: CharacterGeography;

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "born-in-bethlehem",
+    "title": "Born in Bethlehem",
+    "prediction_passage": "Micah 5:2",
+    "fulfillment_passage": "Matthew 2:1-6",
+    "summary": "Matthew connects Jesus’ birth in Bethlehem with Micah’s promise of a ruler from Bethlehem. This is a New Testament interpretation of the earlier passage.",
+    "taxonomy": { "status": "New Testament", "target": "Messianic", "type": "Direct" }
+  },
+  {
+    "id": "fall-of-babylon",
+    "title": "The fall of Babylon",
+    "prediction_passage": "Jeremiah 51:11",
+    "fulfillment_passage": "Daniel 5:30-31",
+    "summary": "Jeremiah names the Medes in an oracle against Babylon. Daniel narrates the fall of Belshazzar’s kingdom and its reception by Darius the Mede. This sample links the biblical accounts; it does not establish independent historical corroboration.",
+    "taxonomy": { "status": "Historical", "target": "The Nations", "type": "Direct" }
+  },
+  {
+    "id": "immanuel-sign",
+    "title": "The sign of Immanuel",
+    "prediction_passage": "Isaiah 7:14",
+    "fulfillment_passage": "Matthew 1:22-23",
+    "summary": "Matthew applies Isaiah’s Immanuel sign to Jesus’ birth. How that application relates to Isaiah’s immediate setting and the wording of the Hebrew and Greek texts is disputed.",
+    "taxonomy": { "status": "Disputed", "target": "Messianic", "type": "Typological" }
+  }
+]

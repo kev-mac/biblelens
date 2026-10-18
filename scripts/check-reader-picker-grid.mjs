@@ -11,7 +11,7 @@ c.passageNumberGrid('passage-verse',[1,2],99);assert.equal(node('#passage-verse'
 const handlers={};
 function classes(){const set=new Set();return {add:x=>set.add(x),remove:x=>set.delete(x),contains:x=>set.has(x)};}
 const body={classList:classes()},dock={classList:classes()};
-const d={window:{scrollY:100,addEventListener:(t,f)=>handlers[t]=f},document:{body,querySelector:()=>dock}};vm.createContext(d);vm.runInContext(source.slice(source.indexOf('// Reveal the full category icon row')),d);
+const d={window:{scrollY:100,addEventListener:(t,f)=>handlers[t]=f},document:{body,querySelector:()=>dock}};vm.createContext(d);vm.runInContext(source.slice(source.indexOf('// Reveal the full category icon row'),source.indexOf("// Match the reader's draggable floating control")),d);
 assert(dock.classList.contains('pill-expanded'),'The dock always uses category icons');
 d.window.scrollY=180;handlers.scroll();assert(!body.classList.contains('comparison-menu-visible'));
 d.window.scrollY=130;handlers.scroll();assert(body.classList.contains('comparison-menu-visible'));assert(dock.classList.contains('pill-expanded'));
