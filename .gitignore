@@ -30,3 +30,6 @@ ios/App/App/config 2.xml
 
 # Generated release output; publish archives through Sites
 /dist/
+
+# Local remediation working lock
+research/claude-drafts/remediation.lock
