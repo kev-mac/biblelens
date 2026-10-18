@@ -127,3 +127,45 @@ assert.deepEqual(loads,[],'Opening a story page must not move the Bible reader')
 const app=fs.readFileSync('src/app.js','utf8');assert(app.includes("setView('characters',false)"));
 const html=fs.readFileSync('src/index.html','utf8');assert(html.includes('data-view="characters"'));assert(html.includes('src="characters.js"'));
 console.log(`PASS: ${total} character profiles, verse bounds, 25 story destinations, combined era/Women filters, gender colors, sibling/spouse links, Paul/Saul search, cross-book verse links, text-safe cards, and fresh-load story routing.`);
+
+// Reference-backed directory: use the actual adapted schema, preserve duplicate
+// names as distinct people, and bound the DOM independently of dataset size.
+const peopleBundle=await build({entryPoints:['src/components/characters/people.ts'],bundle:true,write:false,format:'iife',globalName:'People'});
+let requests=0;
+const referencePeople=JSON.parse(fs.readFileSync('data/reference/people.json','utf8'));
+const peopleContext={fetch:async url=>{assert.equal(url,'/reference/people.json');requests++;return {ok:requests>1,status:503,json:async()=>referencePeople};}};
+vm.createContext(peopleContext);vm.runInContext(peopleBundle.outputFiles[0].text,peopleContext);
+const {mapPeople,fetchPeople,createPeopleSearch,characterPage,CHARACTER_PAGE_SIZE}=peopleContext.People;
+await assert.rejects(fetchPeople(),/503/);
+const firstLoad=fetchPeople();assert.equal(fetchPeople(),firstLoad,'Concurrent loads share one request');
+const people=await firstLoad;assert.equal(requests,2);assert.equal(await fetchPeople(),people);
+assert.equal(people.length,referencePeople.length);
+assert.equal(people.find(p=>p.name==='Aaron').key_passages[0],'Exodus 4:14');
+assert.equal(people.find(p=>p.name==='Aaron').summary,'','Do not invent a biography');
+assert(people.filter(p=>p.name==='Abdi').length>1,'Distinct IDs with the same name must survive');
+const findPeople=createPeopleSearch(people);
+assert(findPeople(' jeezer ').some(p=>p.name==='Abiezer'),'Search aliases, ignoring case and surrounding whitespace');
+assert.equal(findPeople('AARON')[0].name,'Aaron');
+assert.equal(findPeople('unmatched-person-name').length,0);
+assert(findPeople('',true).every(p=>p.sex==='female'));
+assert.equal(characterPage(people,0).length,CHARACTER_PAGE_SIZE);
+assert.notEqual(characterPage(people,0)[0].id,characterPage(people,1)[0].id);
+const paged=Array.from({length:Math.ceil(people.length/CHARACTER_PAGE_SIZE)},(_,page)=>characterPage(people,page)).flat();
+assert.equal(new Set(paged.map(p=>p.id)).size,people.length,'Every person is reachable through pagination');
+assert.equal(characterPage([],0).length,0);
+const unusual=mapPeople([{id:'safe',name:'Élodie',aliases:['Ellie','Élodie',null],title:'A title',refs:[[0,1,1],[0,1,1],[99,1,1],[0,0,1],[0,1,-1],null]},null,{id:'missing-name'}]);
+assert.equal(unusual.length,1);assert.equal(unusual[0].summary,'A title');assert.equal(unusual[0].aliases.length,1);assert.equal(unusual[0].key_passages.length,1);
+assert.equal(createPeopleSearch(unusual)('elodie').length,1);
+assert.throws(()=>mapPeople({people:[]}),/Invalid people directory/);
+const referenceCard=context.Cards.CharacterCard({...people[0],name:'<img src=x>',aliases:['<script>bad()</script>'],summary:'<b>Plain text</b>'});
+assert.equal(referenceCard.children[0].children[0].children[0].textContent,'<img src=x>');
+assert.equal(referenceCard.children[0].children[1].textContent,'<script>bad()</script>');
+assert.equal(referenceCard.children[1].textContent,'<b>Plain text</b>');
+const passageButtons=referenceCard.children[2].children;
+assert(passageButtons.length<=3);assert.equal(passageButtons[0].tag,'button');
+assert.equal('#read/'+passageButtons[0].dataset.cite,characterVerseRoute(people[0].key_passages[0]));
+assert(fs.readFileSync('src/citations.js','utf8').includes("ev.target.closest('[data-cite]')"),'Passage buttons use the existing delegated reader handler');
+const directorySource=fs.readFileSync('src/components/characters/CharactersView.tsx','utf8');
+assert(directorySource.includes('characterPage(matches, page).map(CharacterCard)'));
+assert(!directorySource.includes('matches.map(CharacterCard)'));
+console.log(`PASS: ${people.length} fetched Theographic people, alias search, safe text, reader passage buttons, bounded ${CHARACTER_PAGE_SIZE}-card pages, request caching and retry.`);

@@ -1489,53 +1489,16 @@ body>header nav #reader-picker[aria-expanded="true"] svg{filter:drop-shadow(0 0 
 .character-summary-toggle[aria-expanded="true"] .character-summary-chevron{transform:rotate(180deg)}
 .character-card-details[hidden]{display:none!important}
 
-/* Story themes use the same indigo glass as the reader's Stories category. */
-.story-themes{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:16px 0}
-.story-themes-label{font-size:.8rem;color:var(--muted);margin-right:2px}
-body .story-theme{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:6px 11px;border:1px solid rgba(var(--theme-rgb),.35);border-radius:999px;background:rgba(var(--theme-rgb),.1);color:var(--ink);font:500 .75rem/1.4 "Inter",system-ui,sans-serif;overflow-wrap:anywhere;max-width:100%;white-space:normal;box-shadow:inset 0 1px 1px #ffffff40;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
-body .story-theme:hover{background:rgba(var(--theme-rgb),.22);border-color:rgba(var(--theme-rgb),.7)}
-.story-theme:focus-visible,.story-topic-sheet button:focus-visible{outline:2px solid rgb(var(--theme-rgb));outline-offset:3px}
-body.story-topic-open{overflow:hidden}
-body dialog.story-topic-sheet{--theme-rgb:99,102,241;position:fixed;inset:auto 0 0;margin:0 auto;width:min(100%,880px);max-width:100%;height:80vh;height:80dvh;max-height:80dvh;box-sizing:border-box;padding:0;border:1px solid rgba(var(--theme-rgb),.35);border-bottom:0;border-radius:26px 26px 0 0;color:var(--ink);background:color-mix(in srgb,var(--panel) 94%,transparent);box-shadow:0 -12px 48px rgba(var(--theme-rgb),.15);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);overflow:hidden}
-.story-topic-sheet[open]{display:flex;flex-direction:column}
-.story-topic-sheet::backdrop{background:rgba(4,9,18,.65);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
-.story-topic-header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none;padding:16px 22px;border-bottom:1px solid var(--line)}
-body .story-topic-header h2{margin:0;font:600 1.15rem/1.5 "Inter",system-ui,sans-serif;overflow-wrap:anywhere}
-.story-topic-header p{margin:4px 0 0;color:var(--muted);font-size:.8rem}
-.story-topic-header button{flex:none;min-width:44px;min-height:44px}
-.story-topic-body{display:grid;align-content:start;gap:20px;overflow-y:auto;overscroll-behavior:contain;min-height:0;flex:1;padding:20px 22px max(24px,env(safe-area-inset-bottom))}
-@media(max-width:480px){.story-topic-header{padding:16px}.story-topic-body{padding-left:12px;padding-right:12px}}
-/* Timeline shares the Academic chip; historical critique gets its own warm tint. */
-.timeline-controls{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:24px}
-.timeline-controls label{display:grid;gap:6px;flex:1;min-width:180px}
-.timeline-controls input{width:100%}
-.timeline-list{display:grid;gap:18px;max-width:900px;margin-inline:auto}
-.timeline-card{padding:22px;border:1px solid color-mix(in srgb,var(--ink) 18%,transparent);border-radius:20px;background:color-mix(in srgb,var(--panel) 80%,transparent);box-shadow:0 8px 32px rgba(0,0,0,.08);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
-.timeline-card-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.timeline-card h2{font-size:1.25rem;line-height:1.4;margin:14px 0}
-.timeline-history-chip{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;min-height:44px}
-.timeline-history-chip .category-icon{width:20px;height:20px}
-.timeline-duration,.timeline-limits{font-size:.875rem;color:var(--muted)}
-.timeline-academic{--critique-rgb:200,90,23;margin-top:18px;padding:18px;border:1px solid rgba(var(--critique-rgb),.32);border-radius:14px;background:rgba(var(--critique-rgb),.09)}
-body.dark .timeline-academic{background:rgba(var(--critique-rgb),.16)}
-.timeline-date-comparison{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0}
-.timeline-date-comparison div{min-width:0}
-.timeline-date-comparison dt{font-weight:650;margin-bottom:6px}
-.timeline-date-comparison dd{margin:0;overflow-wrap:anywhere}
-.timeline-sources{padding-left:20px;margin-bottom:0}
-.timeline-attribution{margin:24px auto;max-width:900px}
-@media(max-width:520px){.timeline-card{padding:16px}.timeline-date-comparison{grid-template-columns:1fr}.timeline-controls>button{width:100%}}
-
-/* Stories has its own page and independent filters. */
-.stories-filters{display:grid;grid-template-columns:minmax(160px,2fr) repeat(2,minmax(120px,1fr)) auto;gap:12px;align-items:end}
-.stories-filters label{display:grid;gap:6px;font-size:.85rem}
-.stories-filters :is(input,select){width:100%;min-width:0;min-height:44px}
-#stories-view .stories-list{max-height:none;overflow:visible;padding:0;min-height:0}
-@media(max-width:600px){.stories-view{padding:16px}.stories-filters{grid-template-columns:1fr 1fr}.stories-filters label:first-child{grid-column:1/-1}.stories-filters button{grid-column:1/-1}}
-
-/* One shared footer rests below content and at the bottom of short pages. */
-body{min-height:100dvh;display:flex;flex-direction:column}
-body>main{flex:1 0 auto;width:100%}
-body>header{width:100%;flex-shrink:0}
-body>footer,html.native-ios body>footer{width:100%;flex-shrink:0;flex-wrap:nowrap;margin:10px auto 0;border-top:1px solid var(--line)}
-body>footer .brand{flex-shrink:0}
+/* Reference-backed character directory: bounded pages and touch-friendly passage chips. */
+body #characters-view .character-card-header{position:static;display:block;margin:0;padding:0;border:0;background:transparent;box-shadow:none;backdrop-filter:none;color:inherit}
+.character-card-header h2{margin:0;font-size:1.35rem}
+.character-aliases{margin:5px 0 12px;color:var(--muted);font-size:.85rem;line-height:1.5}
+.character-passages{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+body #characters-view .character-passage,.characters-pagination button,body #characters-view .character-more-passages{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:48px;min-height:48px;padding:10px 14px;border:1px solid rgba(var(--theme-rgb),.45);border-radius:18px;background:linear-gradient(135deg,rgba(var(--theme-rgb),.24),rgba(var(--theme-rgb),.1));box-shadow:inset 0 1px 1px #ffffff60,0 3px 12px rgba(var(--theme-rgb),.12);color:var(--ink);font:inherit;font-size:.875rem;white-space:normal;overflow-wrap:anywhere;cursor:pointer}
+body #characters-view .character-passage:hover{background:rgba(var(--theme-rgb),.3)}
+body #characters-view .character-more-passages{margin-top:10px;background:transparent;box-shadow:none}
+.characters-pagination{display:flex;justify-content:center;gap:12px;margin:24px 0}
+.characters-pagination[hidden]{display:none}
+.characters-pagination button:disabled{opacity:.45;cursor:default}
+#characters-list{scroll-margin-top:85px}
+.character-sheet .character-verses a{min-height:48px}

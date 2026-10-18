@@ -1,3 +1,5 @@
+import { fetchPeople, createPeopleSearch, characterPage, CHARACTER_PAGE_SIZE } from './people';
+import type { DirectoryPerson } from './people';
 import type { CharacterProfile } from '../../types/character';
 import { characters, characterVerseRoute } from './directory';
 export { characters } from './directory';
@@ -19,19 +21,23 @@ export function filterCharacters(query: string, era: string = 'All Eras', womenO
 function mountCharacters(): void {
   const host = document.getElementById('characters-view');
   if (!host) return;
-  let era = 'All Eras';
+  let people: DirectoryPerson[] = [];
+  let findPeople = createPeopleSearch(people);
+  let page = 0;
+  let loading = true;
+  let failed = false;
   let womenOnly = false;
   let profileRoute = '';
   let opener: HTMLElement | null = null;
   const heading = element('div', 'page-heading');
   heading.append(element('p', 'eyebrow', 'PEOPLE & CONNECTIONS'), element('h1', '', 'Characters'),
-    element('p', '', 'Follow the families, places, and stories of scripture.'));
-  const note = element('p', 'characters-note', 'Growing directory · Profiles across the Old and New Testaments; coverage is not yet complete. Family links follow the cited passages; missing relationships are left open. Tribe labels identify family associations.');
-  const label = element('label', 'sr-only', 'Search characters, family, places, or passages');
+    element('p', '', 'Find people by name and follow their scripture passages.'));
+  const note = element('p', 'characters-note', 'Adapted from Theographic Bible Metadata. Names and passage references come from the reference directory; biographical summaries may be unavailable.');
+  const label = element('label', 'sr-only', 'Search characters by name or alias');
   label.htmlFor = 'characters-search';
   const search = element('input');
   search.id = 'characters-search'; search.type = 'search';
-  search.placeholder = 'Search people, family, places, passages…';
+  search.placeholder = 'Search names or aliases…';
   const filters = element('div', 'characters-filters');
   filters.setAttribute('role', 'group'); filters.setAttribute('aria-label', 'Filter characters');
   const count = element('p', 'characters-count'); count.setAttribute('role', 'status');
@@ -41,27 +47,44 @@ function mountCharacters(): void {
   const searchBox = element('div', 'characters-search-box');
   searchBox.append(label, search);
   host.append(heading, note, searchBox, filters, results, list);
-  const eraOrder = ['Primeval','Patriarchal','Exodus','Conquest','Judges','Monarchy','Wisdom','Prophets','Gospels','Apostolic','Across scripture'];
-  const eras = ['All Eras', ...eraOrder.filter(era => characters.some(profile => profile.era === era))];
-  for (const name of eras) {
-    const button = element('button', '', name); button.type = 'button'; button.dataset.era = name;
-    button.setAttribute('aria-controls', list.id);
-    button.addEventListener('click', () => { era = name; render(); }); filters.append(button);
-  }
   const women = element('button', 'characters-women character-female', 'Women'); women.type = 'button';
   women.setAttribute('aria-controls', list.id);
-  women.addEventListener('click', () => { womenOnly = !womenOnly; render(); }); filters.append(women);
+  women.addEventListener('click', () => { womenOnly = !womenOnly; page = 0; render(); }); filters.append(women);
+  const pagination = element('div', 'characters-pagination');
+  const previous = element('button', '', 'Previous'); previous.type = 'button';
+  const next = element('button', '', 'Next'); next.type = 'button';
+  const retry = element('button', '', 'Retry loading characters'); retry.type = 'button';
+  previous.setAttribute('aria-controls', list.id); next.setAttribute('aria-controls', list.id);
+  pagination.append(previous, next); host.append(pagination, retry);
+  list.tabIndex = -1;
   function render(): void {
-    const matches = filterCharacters(search.value, era, womenOnly);
-    list.replaceChildren(...matches.map(CharacterCard));
-    count.textContent = `${matches.length} of ${characters.length} characters`;
-    reset.hidden = !search.value && era === 'All Eras' && !womenOnly;
+    const matches = findPeople(search.value, womenOnly);
+    page = Math.min(page, Math.max(0, Math.ceil(matches.length / CHARACTER_PAGE_SIZE) - 1));
+    list.replaceChildren(...characterPage(matches, page).map(CharacterCard));
+    count.textContent = loading ? 'Loading characters…' : failed ? 'Characters could not be loaded. Please retry.'
+      : `${matches.length ? page * CHARACTER_PAGE_SIZE + 1 : 0}–${Math.min((page + 1) * CHARACTER_PAGE_SIZE, matches.length)} of ${matches.length} characters`;
+    list.setAttribute('aria-busy', String(loading));
+    reset.hidden = !search.value && !womenOnly;
     women.setAttribute('aria-pressed', String(womenOnly));
-    for (const button of filters.querySelectorAll('[data-era]')) button.setAttribute('aria-pressed', String(button.dataset.era === era));
-    if (!matches.length) list.append(element('p', 'characters-empty', 'No characters match these filters. Try another name, place, or era, or reset the filters. This directory is still growing; a missing name may not have a profile yet.'));
+    previous.disabled = page === 0; next.disabled = (page + 1) * CHARACTER_PAGE_SIZE >= matches.length;
+    pagination.hidden = loading || failed || matches.length <= CHARACTER_PAGE_SIZE;
+    retry.hidden = !failed;
+    if (!loading && !failed && !matches.length) list.append(element('p', 'characters-empty', 'No characters match. Try another name or alias, or reset the filters.'));
   }
-  search.addEventListener('input', render);
-  reset.addEventListener('click', () => { search.value = ''; era = 'All Eras'; womenOnly = false; render(); search.focus(); });
+  let searchTimer: ReturnType<typeof setTimeout>;
+  search.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { page = 0; render(); }, 100); });
+  reset.addEventListener('click', () => { clearTimeout(searchTimer); search.value = ''; womenOnly = false; page = 0; render(); search.focus(); });
+  function movePage(offset: number): void {
+    clearTimeout(searchTimer); page += offset; render(); list.focus({preventScroll:true}); list.scrollIntoView({block:'start'});
+  }
+  previous.addEventListener('click', () => movePage(-1)); next.addEventListener('click', () => movePage(1));
+  async function load(): Promise<void> {
+    loading = true; failed = false; render();
+    try { people = await fetchPeople(); findPeople = createPeopleSearch(people); }
+    catch { failed = true; }
+    loading = false; render(); handleRoute();
+  }
+  retry.addEventListener('click', () => { void load(); });
   render();
 
   const sheet = element('dialog', 'character-sheet'); sheet.id = 'character-sheet';
@@ -84,7 +107,7 @@ function mountCharacters(): void {
     if (location.hash === '#characters' && opener?.isConnected && !host.hidden) opener.focus();
   });
   host.addEventListener('click', event => {
-    const target = (event.target as HTMLElement).closest<HTMLAnchorElement>('a.character-name');
+    const target = (event.target as HTMLElement).closest<HTMLAnchorElement>('a.character-name,a.character-more-passages');
     if (target) opener = target;
   });
   function repeatFamilyNavigation(event: MouseEvent): void {
@@ -94,35 +117,44 @@ function mountCharacters(): void {
   host.addEventListener('click', repeatFamilyNavigation);
   sheet.addEventListener('click', repeatFamilyNavigation);
   function handleRoute(): void {
-    const cardRoute = /^#characters\/card\/([a-z0-9-]+)$/.exec(location.hash);
+    const cardRoute = /^#characters\/card\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
     if (cardRoute) {
       if (sheet.open) sheet.close();
-      const target = characters.find(person => person.id === cardRoute[1]);
+      const target = people.find(person => person.id === cardRoute[1]) || characters.find(person => person.id === cardRoute[1]);
       if (target) {
-        search.value = ''; era = 'All Eras'; womenOnly = false; render();
+        search.value = ''; womenOnly = false;
+        page = Math.max(0, Math.floor(people.indexOf(target as DirectoryPerson) / CHARACTER_PAGE_SIZE)); render();
+        if (!people.includes(target as DirectoryPerson)) {
+          list.replaceChildren(CharacterCard(target));
+          count.textContent = `${target.name} · Curated profile`; pagination.hidden = true;
+        }
         const card = document.getElementById(`character-card-${target.id}`);
         card?.querySelector<HTMLButtonElement>('.character-summary-toggle[aria-expanded="false"]')?.click();
         card?.focus({preventScroll:true}); card?.scrollIntoView({behavior:'smooth', block:'start'});
       }
       return;
     }
-    const match = /^#characters\/([a-z0-9-]+)$/.exec(location.hash);
+    const match = /^#characters\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
     if (!match) { if (sheet.open) sheet.close(); return; }
     profileRoute = location.hash;
-    const profile = characters.find(person => person.id === match[1]);
+    const profile = people.find(person => person.id === match[1]) || characters.find(person => person.id === match[1]);
     sheet.classList.toggle('character-female', profile?.sex === 'female');
     sheet.classList.toggle('character-neutral', profile?.sex !== 'female');
     body.replaceChildren();
-    const title = element('h2', '', profile?.name || 'Character not found'); title.id = 'character-detail-name';
+    const title = element('h2', '', profile?.name || (loading ? 'Loading character…' : 'Character not found')); title.id = 'character-detail-name';
     body.append(title);
-    if (!profile) body.append(element('p', '', 'This character does not have a profile in this growing directory. Close this sheet to browse the available characters.'));
+    if (!profile) body.append(element('p', '', loading ? 'Loading the reference directory…' : 'This character could not be found. Close this sheet to browse or retry loading the directory.'));
     else {
-      body.append(element('span', 'character-era', profile.era), element('p', '', profile.summary), LineageBadges(profile));
-      body.append(element('h3', '', 'Places'), element('p', '', `Origin · ${profile.geography.origin}`));
+      if (profile.aliases?.length) body.append(element('p', 'character-aliases', profile.aliases.join(' · ')));
+      if (!('key_passages' in profile)) body.append(element('span', 'character-era', profile.era));
+      if (profile.summary) body.append(element('p', '', profile.summary));
+      if (profile.lineage) body.append(LineageBadges(profile));
+      if (profile.geography.origin) body.append(element('h3', '', 'Places'), element('p', '', `Origin · ${profile.geography.origin}`));
       const residences = element('ul');
       for (const place of profile.geography.residence) residences.append(element('li', '', place));
-      body.append(element('h4', '', 'Residences & sojourns'), residences,
-        element('h3', '', 'Scripture anchors'), element('p', '', `Books · ${profile.narrative_anchors.books.join(', ')}`));
+      if (profile.geography.residence.length) body.append(element('h4', '', 'Residences & sojourns'), residences);
+      body.append(element('h3', '', 'Scripture anchors'));
+      if (profile.narrative_anchors.books.length) body.append(element('p', '', `Books · ${profile.narrative_anchors.books.join(', ')}`));
       const verses = element('div', 'character-verses');
       for (const verse of profile.narrative_anchors.key_verses) {
         const route = characterVerseRoute(verse);
@@ -140,5 +172,6 @@ function mountCharacters(): void {
   window.addEventListener('hashchange', handleRoute);
   window.addEventListener('viewchange', ((event: CustomEvent<string>) => { if (event.detail !== 'characters' && sheet.open) sheet.close(); }) as EventListener);
   handleRoute();
+  void load();
 }
 if (typeof document !== 'undefined') mountCharacters();

@@ -1,4 +1,5 @@
 import { lineageCharacter, isFemaleLineage, characterVerseRoute } from './directory';
+import type { DirectoryPerson } from './people';
 import type { CharacterProfile, LinkedStoryAnchor } from '../../types/character';
 
 // Typed DOM components fit the existing reader without adding a second UI runtime.
@@ -52,6 +53,31 @@ export function CharacterCard(profile: CharacterProfile): HTMLElement {
   open.href = `#characters/${profile.id}`;
   open.setAttribute('aria-haspopup', 'dialog');
   heading.append(open);
+  if ('key_passages' in profile) {
+    const person = profile as DirectoryPerson;
+    const header = element('div', 'character-card-header');
+    header.append(heading);
+    if (person.aliases?.length) header.append(element('p', 'character-aliases', person.aliases.join(' · ')));
+    card.append(header);
+    if (person.summary) card.append(element('p', 'character-summary', person.summary));
+    const passages = element('div', 'character-passages');
+    passages.setAttribute('aria-label', `Key passages for ${person.name}`);
+    for (const reference of person.key_passages.slice(0, 3)) {
+      const route = characterVerseRoute(reference);
+      if (!route) continue;
+      const chip = element('button', 'character-passage', reference); chip.type = 'button';
+      chip.setAttribute('aria-label', `Read ${reference}`);
+      // Reuse the app's delegated citation handler, which calls loadChapter.
+      chip.dataset.cite = route.slice('#read/'.length);
+      passages.append(chip);
+    }
+    card.append(passages);
+    if (person.key_passages.length > 3) {
+      const more = element('a', 'character-more-passages', `All ${person.key_passages.length} passages →`);
+      more.href = open.href; more.setAttribute('aria-haspopup', 'dialog'); card.append(more);
+    }
+    return card;
+  }
   const details = element('div', 'character-card-details');
   const summary = element('p', 'character-summary', profile.summary);
   details.id = `character-details-${profile.id}`; details.hidden = true;
