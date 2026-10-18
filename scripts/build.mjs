@@ -1,3 +1,4 @@
+import {tagStoryCatalog,loadTopicOptions} from './story-topics.mjs';
 import {build} from 'esbuild';
 import {validateCommandmentsCatalog} from './commandments-catalog.mjs';
 import {validateCharacters} from './characters.mjs';
@@ -29,7 +30,7 @@ assets['/prophecies.js']={type:'application/javascript; charset=utf-8',body:prop
 const charactersBundle=await build({entryPoints:['src/components/characters/CharactersView.tsx'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/characters.js']={type:'application/javascript; charset=utf-8',body:charactersBundle.outputFiles[0].text};
 assets['/characters.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('src/data/characters.json','utf8')};
-assets['/stories.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('data/stories.json','utf8')};
+assets['/stories.json']={type:'application/json; charset=utf-8',body:JSON.stringify(tagStoryCatalog(JSON.parse(fs.readFileSync('data/stories.json','utf8')),JSON.parse(fs.readFileSync('data/reference/topics.json','utf8')),loadTopicOptions()))};
 assets['/release.json']={type:'application/json; charset=utf-8',body:JSON.stringify(releaseInfo())};
 assets['/reader.js'].body=assets['/reader.js'].body.replace('/*__CHAPTER_NAMES__*/{}',JSON.stringify(Object.fromEntries(Object.entries(chapterNames).filter(([key])=>!key.startsWith('_')))));
 let worker=fs.readFileSync('worker/index.mjs','utf8').replace('/*__SYNC__*/',()=>fs.readFileSync('worker/sync.mjs','utf8').replace('export async function','async function'));for(const [marker,file]of [['BOOKS','data/books.json'],['CHAPTERS','data/chapters.json'],['EVIDENCE','data/evidence.json']])worker=worker.replace(new RegExp('/\\*__'+marker+'__\\*/'+(['BOOKS','EVIDENCE'].includes(marker)?'\\[\\]':'\\{\\}')),fs.readFileSync(file,'utf8'));

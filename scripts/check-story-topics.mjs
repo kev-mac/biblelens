@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {mergeStoryTopics,referenceVerses,passageReference,loadTopicOptions,tagStoryCatalog} from './story-topics.mjs';
+import fs from 'node:fs';
+const options={books:[{id:0,name:'Genesis'},{id:1,name:'Exodus'}],chapters:{'0:37':[1,2,3],'0:38':[1,2,3],'0:50':[25,26],'1:1':[1]}};
+const topic=(label,refs)=>({label,refs:[...refs,[1,1,1,0,0]]});
+const topics=[topic('JEALOUSY',[[0,37,2,0,0]]),topic('FAMILY',[[0,38,0,0,0]]),topic('GOD',[[0,37,2,0,0]]),topic('OUTSIDE',[[0,50,26,0,0]])];
+const stories=[{title:'Joseph',summary:'Family jealousy',passage:'Genesis 37:2-38:2'}];
+const merged=mergeStoryTopics(stories,topics,options);
+assert(merged[0].topics.includes('JEALOUSY'));assert(merged[0].topics.includes('FAMILY'));assert(!merged[0].topics.includes('GOD'));assert(!merged[0].topics.includes('OUTSIDE'));assert(!('topics' in stories[0]));
+assert.deepEqual(referenceVerses([0,38,0,0,0],options.chapters),['0:38:1','0:38:2','0:38:3']);
+assert.deepEqual(referenceVerses([0,37,2,38,2],options.chapters),['0:37:2','0:37:3','0:38:1','0:38:2']);
+assert.deepEqual(passageReference('Genesis 37:1-50:26',options.books),[0,37,1,50,26]);
+assert.throws(()=>passageReference('Genesis 38:2-37:1',options.books));
+assert.equal(mergeStoryTopics(stories,topics,{...options,maxTopics:1})[0].topics.length,1);
+const catalog=JSON.parse(fs.readFileSync('data/stories.json'));
+assert.deepEqual(tagStoryCatalog(catalog,JSON.parse(fs.readFileSync('data/reference/topics.json')),loadTopicOptions()),catalog);
+console.log('PASS: Inclusive range and chapter intersections, book isolation, generic filtering, caps, immutable merge and reproducible catalog.');

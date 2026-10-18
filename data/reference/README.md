@@ -26,3 +26,9 @@ The upstream [bibliography](https://github.com/robertrouse/theographic-bible-met
 **Nave:** Orville J. Nave, *Nave's Topical Bible* (1896/1897), public-domain headings and references, via [Christian Classics Ethereal Library XML](https://ccel.org/ccel/n/nave/bible.xml). [CrossWire module copyright information](https://www.crosswire.org/sword/copyright/ModInfoCopyright.jsp?modName=Nave) identifies the text source as that XML and distribution license as Public Domain. Only headings/references are extracted; CCEL's copyrighted introductory and editorial prose is omitted. Reference conversion and deduplication are the local changes.
 
 Keep notices available in the generated site's source/details panel and distributed source package. None of these sources replaces the Claude-only research workflow.
+
+## Story themes
+
+`npm run stories:tag` updates `data/stories.json` with up to five Nave topic labels per story. The shared web/native build repeats the merge automatically. `scripts/story-topics.mjs` also accepts a flat Story array: `node scripts/story-topics.mjs stories.json data/reference/topics.json tagged-stories.json`. Run from the repository root so the bundled books, chapters and people are available.
+
+The merger expands inclusive verse ranges and chapter-only references against the packaged verse bounds, deduplicates overlaps, excludes broad headings and person names, and ranks by overlapping verse count divided by the square root of total topic coverage. Matching words in a story title or summary receive a boost; headings limited to one book require this lexical match. `genericTopics`, `exclude`, and `maxTopics` control filtering. Fewer than three results are retained when evidence is sparse rather than adding unrelated tags. These automatic browsing labels retain Nave's historical wording and are not independently reviewed interpretations.

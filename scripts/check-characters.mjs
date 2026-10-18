@@ -109,7 +109,7 @@ assert.equal(chip.dataset.characterStory,'genesis-the-fall-of-man');
 
 // Story routes must work before reader books have finished loading.
 const catalog=JSON.parse(fs.readFileSync('data/stories.json','utf8'));
-const nodes=new Map();const $=key=>{if(!nodes.has(key))nodes.set(key,{hidden:true,innerHTML:''});return nodes.get(key);};
+const nodes=new Map();const $=key=>{if(!nodes.has(key))nodes.set(key,{hidden:true,innerHTML:'',addEventListener(){}});return nodes.get(key);};
 let focused=false,scrolled=false;
 const storyContext={books:[],readingBook:0,$,esc:String,readRef:()=>null,location:{hash:'#stories/genesis/joseph-in-egypt'},window:{addEventListener(){}},document:{body:{classList:{toggle(){}}},addEventListener(){},getElementById:id=>{assert.equal(id,'story-joseph-in-egypt');return {classList:{add(){}},focus(){focused=true;},scrollIntoView(){scrolled=true;}};}},fetch:async()=>({ok:true,json:async()=>catalog})};
 vm.createContext(storyContext);vm.runInContext(fs.readFileSync('src/stories.js','utf8'),storyContext);

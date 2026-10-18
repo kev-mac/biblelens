@@ -17,11 +17,12 @@ function storyReference(reference){
 }
 function storySlug(value){return value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
 function storyRoute(){return /^#stories\/([a-z0-9-]+)\/([a-z0-9-]+)$/.exec(location.hash);}
-function storyCard(story){
+function storyCard(story, pivot=false){
  const reference=storyReference(story.passage);
  const passage=reference?`<button type="button" class="story-passage" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.passage)} starting at verse ${reference.verse}">${esc(story.passage)} →</button>`:`<span>${esc(story.passage)}</span>`;
+ const topics=(story.topics||[]).map(topic=>`<button type="button" class="story-theme" data-story-topic="${esc(topic)}" data-story-origin="${esc(story.passage)}" aria-haspopup="dialog" aria-controls="story-topic-sheet"><span aria-hidden="true">#</span> ${esc(topic)}</button>`).join('');
  const references=story.cross_references.map(label=>{const ref=storyReference(label);return ref?`<button type="button" class="verse-citation story-reference" data-cite="${ref.book}/${ref.chapter}/${ref.verse}" data-cite-end="${ref.endVerse}" data-cite-end-chapter="${ref.endChapter}" data-cite-label="${esc(label)}" data-cite-preview aria-haspopup="dialog" aria-expanded="false">${esc(label)}</button>`:'';}).join('');
- return `<article class="story-card" id="story-${storySlug(story.title)}" tabindex="-1"><h3>${esc(story.title)}</h3>${passage}<p>${esc(story.summary)}</p>${references?`<div class="story-references"><span>Referenced in:</span> ${references}</div>`:''}</article>`;
+ return `<article class="story-card" id="${pivot?'topic-story-':'story-'}${storySlug(story.title)}" tabindex="-1"><h3>${esc(story.title)}</h3>${passage}<p>${esc(story.summary)}</p>${topics?`<div class="story-themes"><span class="story-themes-label">Themes</span>${topics}</div>`:''}${references?`<div class="story-references"><span>Referenced in:</span> ${references}</div>`:''}</article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
@@ -35,15 +36,16 @@ async function renderStoriesView(){
  try{
   const catalog=await loadStories();if(generation!==storiesGeneration||!storiesActive)return;
   const stories=catalog.find(entry=>entry.book===name)?.stories||[];
-  list.innerHTML=stories.length?stories.map(storyCard).join(''):'<p class="empty">No stories have been added for this book yet. You can still read every chapter and verse.</p>';
+  list.innerHTML=stories.length?stories.map(story=>storyCard(story)).join(''):'<p class="empty">No stories have been added for this book yet. You can still read every chapter and verse.</p>';
   if(route){const selected=stories.find(story=>storySlug(story.title)===route[2]);if(selected){const card=document.getElementById('story-'+route[2]);card?.classList.add('story-linked');card?.focus({preventScroll:true});section.scrollIntoView?.({block:'start'});card?.scrollIntoView({block:'nearest'});}else list.innerHTML='<p class="empty">Story not found. Choose another story from the Characters directory.</p>';}
  }catch{if(generation===storiesGeneration)list.innerHTML='<p>Could not load stories. <button type="button" data-stories-retry>Retry</button></p>';}
 }
 document.addEventListener('click',event=>{
+ const chip=event.target.closest('[data-story-topic]');if(chip){openStoryTopic(chip.dataset.storyTopic,chip.dataset.storyOrigin);return;}
  if(event.target.closest('[data-stories-retry]')){renderStoriesView();return;}
  const button=event.target.closest('[data-story-passage]');if(!button)return;
  const ref=storyReference(button.dataset.storyPassage);if(!ref)return;
- storiesActive=false;renderStoriesView();setView('explore',false);loadChapter(ref.book,ref.chapter,ref.verse);
+ closeStoryTopic();storiesActive=false;renderStoriesView();setView('explore',false);loadChapter(ref.book,ref.chapter,ref.verse);
 });
 
 // Shared character anchors resolve to the full story card, including on a fresh load.
@@ -66,3 +68,23 @@ async function routeLinkedStory(){
 window.addEventListener('hashchange',routeLinkedStory);
 window.addEventListener('DOMContentLoaded',routeLinkedStory);
 window.addEventListener('viewchange',event=>{if(event.detail!=='explore'){storiesActive=false;renderStoriesView();}});
+
+function closeStoryTopic(){const sheet=$('#story-topic-sheet');if(sheet?.open)sheet.close();}
+async function openStoryTopic(topic,origin){
+ const catalog=await loadStories();
+ const matches=catalog.flatMap(entry=>entry.stories).filter(story=>story.passage!==origin&&(story.topics||[]).includes(topic));
+ const sheet=$('#story-topic-sheet');
+ $('#story-topic-heading').textContent=topic;
+ $('#story-topic-results').textContent=`${matches.length} other ${matches.length===1?'story':'stories'}`;
+ $('#story-topic-body').innerHTML=matches.length?matches.map(story=>storyCard(story,true)).join(''):'<p class="empty">No other stories share this theme yet.</p>';
+ if(!sheet.open)sheet.showModal();
+ document.body.classList.add('story-topic-open');
+ $('#story-topic-body').scrollTop=0;
+ $('#story-topic-close').focus();
+}
+$('#story-topic-close').onclick=closeStoryTopic;
+$('#story-topic-sheet').addEventListener('click',event=>{if(event.target!==event.currentTarget)return;const rect=event.currentTarget.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)closeStoryTopic();});
+$('#story-topic-sheet').addEventListener('close',()=>document.body.classList.remove('story-topic-open'));
+$('#story-topic-sheet').addEventListener('cancel',()=>document.body.classList.remove('story-topic-open'));
+window.addEventListener('hashchange',closeStoryTopic);
+window.addEventListener('viewchange',closeStoryTopic);
