@@ -1363,3 +1363,9 @@ body dialog.character-sheet[open]{display:flex;flex-direction:column}
 body .marked-primary-passages .comparison-side{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin:0 0 14px}
 body .marked-primary-passages .comparison-side q{display:block;margin:0;line-height:1.65}
 .comparison-evidence .context-citations{margin-top:18px}
+
+body #saved-view .marked-theme-heading{list-style:none;cursor:pointer;min-height:44px}
+body #saved-view .marked-theme-heading::-webkit-details-marker{display:none}
+body #saved-view .marked-theme-heading::before{content:'›';display:inline-block;font-size:1.35rem;line-height:1;transform:rotate(0deg)}
+body #saved-view .marked-theme-group[open]>.marked-theme-heading::before{transform:rotate(90deg)}
+body #saved-view .marked-theme-heading h3{margin:0;font:600 1rem/1.5 "Inter",system-ui,sans-serif;font-family:"Inter",system-ui,sans-serif!important}
