@@ -1,11 +1,8 @@
 'use strict';
 // Book-wide narratives are separate from verse-aligned evidence classifications.
 let storiesActive=false,storiesRequest=null,storiesGeneration=0,storiesCatalog=null;
-function storiesFilterButton(){
- if(!storiesRequest)loadStories().then(()=>comparisonStatus()).catch(()=>{});
- const available=storiesCatalog===null||!!storiesCatalog.find(entry=>entry.book===books[readingBook]?.name)?.stories.length;
- return `<button type="button" class="agreement category-filter stories" data-category-filter="stories" data-brightness="${available?'open':'empty'}" aria-pressed="${storiesActive}" aria-controls="stories-view" aria-label="Stories" title="Stories" ${!available&&!storiesActive?'disabled':''}><span class="filter-icon">${categoryIcon('stories')}</span><span class="filter-copy"><span class="filter-label">Stories</span></span></button>`;
-}
+function storiesFilterButton(){return '';}
+let storiesBook='',storiesTheme='',storiesSearch='';
 function loadStories(){
  if(!storiesRequest){storiesRequest=fetch('/stories.json').then(response=>{if(!response.ok)throw Error('Stories unavailable');return response.json();}).then(catalog=>{storiesCatalog=catalog;return catalog;});storiesRequest.catch(()=>{storiesRequest=null;});}
  return storiesRequest;
@@ -27,19 +24,32 @@ function storyCard(story, pivot=false){
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
  const generation=++storiesGeneration;
- section.hidden=!storiesActive;$('#reader-layout').hidden=storiesActive;document.body.classList.toggle('stories-active',storiesActive);
+ section.hidden=!storiesActive;
  if(!storiesActive)return;
  const route=typeof location==='undefined'?null:storyRoute();
- const name=route?route[1].replace(/(^|-)([a-z])/g,(_,dash,letter)=>(dash?' ':'')+letter.toUpperCase()):books[readingBook]?.name;
- $('#stories-heading').innerHTML=`Stories in <button type="button" class="passage-heading-picker" aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker">${esc(name)}</button>`;
  const list=$('#stories-list');list.innerHTML='<p role="status">Loading stories…</p>';
  try{
   const catalog=await loadStories();if(generation!==storiesGeneration||!storiesActive)return;
-  const stories=catalog.find(entry=>entry.book===name)?.stories||[];
-  list.innerHTML=stories.length?stories.map(story=>storyCard(story)).join(''):'<p class="empty">No stories have been added for this book yet. You can still read every chapter and verse.</p>';
-  if(route){const selected=stories.find(story=>storySlug(story.title)===route[2]);if(selected){const card=document.getElementById('story-'+route[2]);card?.classList.add('story-linked');card?.focus({preventScroll:true});section.scrollIntoView?.({block:'start'});card?.scrollIntoView({block:'nearest'});}else list.innerHTML='<p class="empty">Story not found. Choose another story from the Characters directory.</p>';}
+  const themes=[...new Set(catalog.flatMap(entry=>entry.stories.flatMap(story=>story.topics||[])))].sort();
+  $('#stories-book').innerHTML='<option value="">All books</option>'+catalog.map(entry=>`<option value="${esc(entry.book)}">${esc(entry.book)}</option>`).join('');
+  $('#stories-theme').innerHTML='<option value="">All themes</option>'+themes.map(theme=>`<option value="${esc(theme)}">${esc(theme)}</option>`).join('');
+  $('#stories-book').value=storiesBook;$('#stories-theme').value=storiesTheme;$('#stories-search').value=storiesSearch;
+  const query=storiesSearch.trim().toLowerCase();
+  const stories=catalog.filter(entry=>!storiesBook||entry.book===storiesBook).flatMap(entry=>entry.stories).filter(story=>(!storiesTheme||(story.topics||[]).includes(storiesTheme))&&(!query||[story.title,story.summary,story.passage,...(story.topics||[])].join(' ').toLowerCase().includes(query)));
+  $('#stories-results').textContent=`${stories.length} ${stories.length===1?'story':'stories'}`;
+  list.innerHTML=stories.length?stories.map(story=>storyCard(story)).join(''):'<p class="empty">No stories match these filters. Try another book or theme, or clear your search.</p>';
+  if(route){const selected=stories.find(story=>storySlug(story.title)===route[2]);if(selected){const card=document.getElementById('story-'+route[2]);card?.classList.add('story-linked');card?.focus({preventScroll:true});card?.scrollIntoView({block:'nearest'});}else list.innerHTML='<p class="empty">Story not found. Clear filters to explore other stories.</p>';}
  }catch{if(generation===storiesGeneration)list.innerHTML='<p>Could not load stories. <button type="button" data-stories-retry>Retry</button></p>';}
 }
+function updateStoriesFilters(){
+ storiesBook=$('#stories-book').value;storiesTheme=$('#stories-theme').value;storiesSearch=$('#stories-search').value;
+ if(storyRoute())history.replaceState(null,'','#stories');
+ renderStoriesView();
+}
+$('#stories-search').addEventListener('input',updateStoriesFilters);
+$('#stories-book').addEventListener('change',updateStoriesFilters);
+$('#stories-theme').addEventListener('change',updateStoriesFilters);
+$('#stories-reset').addEventListener('click',()=>{storiesBook='';storiesTheme='';storiesSearch='';if(storyRoute())history.replaceState(null,'','#stories');renderStoriesView();});
 document.addEventListener('click',event=>{
  const chip=event.target.closest('[data-story-topic]');if(chip){openStoryTopic(chip.dataset.storyTopic,chip.dataset.storyOrigin);return;}
  if(event.target.closest('[data-stories-retry]')){renderStoriesView();return;}
@@ -51,23 +61,16 @@ document.addEventListener('click',event=>{
 // Shared character anchors resolve to the full story card, including on a fresh load.
 async function routeLinkedStory(){
  const route=storyRoute();
+ storiesActive=location.hash==='#stories'||!!route;
  if(route){
-  storiesActive=true;
   const hash=location.hash;
-  try{
-   const catalog=await loadStories();if(location.hash!==hash)return;
-   const entry=catalog.find(entry=>storySlug(entry.book)===route[1]);
-   const story=entry?.stories.find(story=>storySlug(story.title)===route[2]);
-   const ref=story&&storyReference(story.passage);
-   if(ref){await loadChapter(ref.book,ref.chapter,ref.verse,false);return;}
-  }catch{}
-  if(location.hash===hash)await renderStoriesView();
+  try{const catalog=await loadStories();if(location.hash!==hash)return;storiesBook=catalog.find(entry=>storySlug(entry.book)===route[1])?.book||'';storiesTheme='';storiesSearch='';}catch{}
  }
- else{storiesActive=false;renderStoriesView();}
+ await renderStoriesView();
 }
 window.addEventListener('hashchange',routeLinkedStory);
 window.addEventListener('DOMContentLoaded',routeLinkedStory);
-window.addEventListener('viewchange',event=>{if(event.detail!=='explore'){storiesActive=false;renderStoriesView();}});
+window.addEventListener('viewchange',event=>{storiesActive=event.detail==='stories';renderStoriesView();});
 
 function closeStoryTopic(){const sheet=$('#story-topic-sheet');if(sheet?.open)sheet.close();}
 async function openStoryTopic(topic,origin){

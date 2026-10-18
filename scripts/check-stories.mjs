@@ -32,17 +32,20 @@ for(const entry of catalog){
 }
 vm.runInContext('storiesActive=true',c);await c.renderStoriesView();
 assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,catalog[0].stories.length);
-assert(node('#reader-layout').hidden);assert(!node('#stories-view').hidden);
+assert(!node('#reader-layout').hidden);assert(!node('#stories-view').hidden);
 assert(node('#stories-list').innerHTML.includes('data-cite="42/1/1" data-cite-end="3"'));
-assert(c.storiesFilterButton().includes('aria-pressed="true"'));
+assert.equal(c.storiesFilterButton(),'');
 const malicious=c.storyCard({...catalog[0].stories[0],title:'<img onerror="bad">'});assert(!malicious.includes('<img'));
-c.readingBook=1;await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories have been added'));
+vm.runInContext("storiesBook='Exodus'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories match'));
+vm.runInContext("storiesBook='Genesis';storiesTheme='Obedience'",c);await c.renderStoriesView();assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,catalog[0].stories.filter(story=>story.topics.includes('Obedience')).length);
+vm.runInContext("storiesTheme='';storiesSearch='noah'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('Noah'));
+vm.runInContext("storiesSearch=''",c);
 handlers.click({target:{closest:s=>s==='[data-story-passage]'?{dataset:{storyPassage:'Genesis 6:9 - 9:17'}}:null}});
 assert.deepEqual(loads,[[0,6,9]]);assert(!node('#reader-layout').hidden);assert(node('#stories-view').hidden);
 // A delayed catalog response cannot replace the newly selected book.
-let resolve;vm.runInContext('storiesRequest=null;storiesActive=true',c);c.readingBook=0;c.fetch=()=>new Promise(r=>{resolve=r;});
-const stale=c.renderStoriesView();c.readingBook=1;const fresh=c.renderStoriesView();resolve({ok:true,json:async()=>catalog});await Promise.all([stale,fresh]);
-assert(node('#stories-list').innerHTML.includes('No stories have been added'));
+let resolve;vm.runInContext('storiesRequest=null;storiesActive=true',c);c.readingBook=0;vm.runInContext("storiesBook='Genesis'",c);c.fetch=()=>new Promise(r=>{resolve=r;});
+const stale=c.renderStoriesView();c.readingBook=1;vm.runInContext("storiesBook='Exodus'",c);const fresh=c.renderStoriesView();resolve({ok:true,json:async()=>catalog});await Promise.all([stale,fresh]);
+assert(node('#stories-list').innerHTML.includes('No stories match'));
 console.log('PASS: Genesis story bounds, escaped cards, book-wide selection, empty books, passage navigation and stale-response protection.');
 
 const origin=catalog[0].stories.find(s=>s.topics.some(t=>catalog[0].stories.some(other=>other!==s&&other.topics.includes(t))));

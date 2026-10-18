@@ -12,7 +12,7 @@
  trigger.setAttribute('aria-controls', sheet.id);
  trigger.setAttribute('aria-expanded', 'false');
  const grid = sheet.querySelector('.navigation-grid');
- const pages = [['explore','Read'],['chat','Chat'],['saved','Marked'],['characters','Characters'],['prophecies','Prophecies'],['timeline','Timeline'],['commandments','Commandments'],['method','About']];
+ const pages = [['explore','Read'],['stories','Stories'],['chat','Chat'],['saved','Marked'],['characters','Characters'],['prophecies','Prophecies'],['timeline','Timeline'],['commandments','Commandments'],['method','About']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
   const icon = document.querySelector(`header nav [data-view="${page}"] svg`);

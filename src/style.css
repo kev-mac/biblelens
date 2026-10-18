@@ -1525,3 +1525,17 @@ body.dark .timeline-academic{background:rgba(var(--critique-rgb),.16)}
 .timeline-sources{padding-left:20px;margin-bottom:0}
 .timeline-attribution{margin:24px auto;max-width:900px}
 @media(max-width:520px){.timeline-card{padding:16px}.timeline-date-comparison{grid-template-columns:1fr}.timeline-controls>button{width:100%}}
+
+/* Stories has its own page and independent filters. */
+.stories-filters{display:grid;grid-template-columns:minmax(160px,2fr) repeat(2,minmax(120px,1fr)) auto;gap:12px;align-items:end}
+.stories-filters label{display:grid;gap:6px;font-size:.85rem}
+.stories-filters :is(input,select){width:100%;min-width:0;min-height:44px}
+#stories-view .stories-list{max-height:none;overflow:visible;padding:0;min-height:0}
+@media(max-width:600px){.stories-view{padding:16px}.stories-filters{grid-template-columns:1fr 1fr}.stories-filters label:first-child{grid-column:1/-1}.stories-filters button{grid-column:1/-1}}
+
+/* One shared footer rests below content and at the bottom of short pages. */
+body{min-height:100dvh;display:flex;flex-direction:column}
+body>main{flex:1 0 auto;width:100%}
+body>header{width:100%;flex-shrink:0}
+body>footer,html.native-ios body>footer{width:100%;flex-shrink:0;flex-wrap:nowrap;margin:10px auto 0;border-top:1px solid var(--line)}
+body>footer .brand{flex-shrink:0}
