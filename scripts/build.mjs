@@ -27,7 +27,7 @@ const assets={};for(const [name,type]of Object.entries({'index.html':'text/html;
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
 const timelineBundle=await build({entryPoints:['src/timeline.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/timeline.js']={type:'application/javascript; charset=utf-8',body:timelineBundle.outputFiles[0].text};
-for(const name of ['events','timeline-provenance'])assets['/reference/'+name+'.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('data/reference/'+name+'.json','utf8')};
+for(const name of ['events','timeline-provenance','people','relationships'])assets['/reference/'+name+'.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('data/reference/'+name+'.json','utf8')};
 const prophecyBundle=await build({entryPoints:['src/prophecies.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/prophecies.js']={type:'application/javascript; charset=utf-8',body:prophecyBundle.outputFiles[0].text};
 const charactersBundle=await build({entryPoints:['src/components/characters/CharactersView.tsx'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});

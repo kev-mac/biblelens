@@ -3,7 +3,9 @@ import type { DirectoryPerson } from './people';
 import type { CharacterProfile } from '../../types/character';
 import { characters, characterVerseRoute } from './directory';
 export { characters } from './directory';
-import { CharacterCard, element, LineageBadges, StoryAnchor } from './CharacterCard';
+import { CharacterCard, element, StoryAnchor } from './CharacterCard';
+import {loadCharacterGraph} from '../../character-connections.js';
+import {FamilyConnections, connectionProfile, referenceId} from './Connections';
 
 export function filterCharacters(query: string, era: string = 'All Eras', womenOnly = false): CharacterProfile[] {
   const normalized = query.trim().toLocaleLowerCase();
@@ -29,6 +31,10 @@ function mountCharacters(): void {
   let womenOnly = false;
   let profileRoute = '';
   let opener: HTMLElement | null = null;
+  let activeTab: 'overview' | 'connections' = 'overview';
+  let currentId = '';
+  let routeVersion = 0;
+  const familyHistory: {id: string; tab: typeof activeTab}[] = [];
   const heading = element('div', 'page-heading');
   heading.append(element('p', 'eyebrow', 'PEOPLE & CONNECTIONS'), element('h1', '', 'Characters'),
     element('p', '', 'Find people by name and follow their scripture passages.'));
@@ -90,7 +96,16 @@ function mountCharacters(): void {
   const sheet = element('dialog', 'character-sheet'); sheet.id = 'character-sheet';
   sheet.setAttribute('aria-labelledby', 'character-detail-name');
   const header = element('div', 'character-sheet-header');
-  header.append(element('span', 'eyebrow', 'CHARACTER PROFILE'));
+  const back = element('button', 'character-family-back', '← Back'); back.type = 'button'; back.hidden = true;
+  back.setAttribute('aria-label', 'Back to previous character');
+  header.append(back, element('span', 'eyebrow', 'CHARACTER PROFILE'));
+  back.addEventListener('click', () => {
+    const previous = familyHistory.pop();
+    if (!previous) return;
+    activeTab = previous.tab;
+    history.replaceState(null, '', `#characters/${previous.id}`);
+    void handleRoute();
+  });
   const close = element('button', '', '✕'); close.type = 'button'; close.autofocus = true;
   close.setAttribute('aria-label', 'Close character details'); header.append(close);
   const body = element('div', 'character-sheet-body');
@@ -103,6 +118,8 @@ function mountCharacters(): void {
   });
   sheet.addEventListener('close', () => {
     document.body.classList.remove('character-sheet-open');
+    familyHistory.length = 0; currentId = ''; activeTab = 'overview'; routeVersion++;
+    back.hidden = true;
     if (location.hash === profileRoute) history.replaceState(null, '', '#characters');
     if (location.hash === '#characters' && opener?.isConnected && !host.hidden) opener.focus();
   });
@@ -116,62 +133,71 @@ function mountCharacters(): void {
   }
   host.addEventListener('click', repeatFamilyNavigation);
   sheet.addEventListener('click', repeatFamilyNavigation);
-  function handleRoute(): void {
-    const cardRoute = /^#characters\/card\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
-    if (cardRoute) {
-      if (sheet.open) sheet.close();
-      const target = people.find(person => person.id === cardRoute[1]) || characters.find(person => person.id === cardRoute[1]);
-      if (target) {
-        search.value = ''; womenOnly = false;
-        page = Math.max(0, Math.floor(people.indexOf(target as DirectoryPerson) / CHARACTER_PAGE_SIZE)); render();
-        if (!people.includes(target as DirectoryPerson)) {
-          list.replaceChildren(CharacterCard(target));
-          count.textContent = `${target.name} · Curated profile`; pagination.hidden = true;
-        }
-        const card = document.getElementById(`character-card-${target.id}`);
-        card?.querySelector<HTMLButtonElement>('.character-summary-toggle[aria-expanded="false"]')?.click();
-        card?.focus({preventScroll:true}); card?.scrollIntoView({behavior:'smooth', block:'start'});
-      }
-      return;
-    }
     const match = /^#characters\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
     if (!match) { if (sheet.open) sheet.close(); return; }
     profileRoute = location.hash;
-    const profile = people.find(person => person.id === match[1]) || characters.find(person => person.id === match[1]);
+    const wasOpen = sheet.open;
+    currentId = match[1];
+    back.hidden = !familyHistory.length;
+    let profile = characters.find(person => person.id === currentId);
+    const loadingTitle = element('h2', '', profile?.name || 'Character profile');
+    loadingTitle.id = 'character-detail-name';
+    body.replaceChildren(loadingTitle, element('p', '', 'Loading character connections…'));
+    body.setAttribute('aria-busy', 'true');
+    if (!sheet.open) { sheet.showModal(); document.body.classList.add('character-sheet-open'); }
+    let graph: Awaited<ReturnType<typeof loadCharacterGraph>> | undefined;
+    try {
+      graph = await loadCharacterGraph();
+      if (version !== routeVersion) return;
+      const person = graph.getPerson(referenceId(currentId));
+      if (!profile && person) profile = connectionProfile(person);
+    } catch {
+      if (version !== routeVersion) return;
+    }
+    body.removeAttribute('aria-busy');
     sheet.classList.toggle('character-female', profile?.sex === 'female');
     sheet.classList.toggle('character-neutral', profile?.sex !== 'female');
     body.replaceChildren();
-    const title = element('h2', '', profile?.name || (loading ? 'Loading character…' : 'Character not found')); title.id = 'character-detail-name';
+    const title = element('h2', '', profile?.name || 'Character not found'); title.id = 'character-detail-name';
+    title.tabIndex = -1;
     body.append(title);
-    if (!profile) body.append(element('p', '', loading ? 'Loading the reference directory…' : 'This character could not be found. Close this sheet to browse or retry loading the directory.'));
+    if (!profile) body.append(element('p', '', graph
+      ? 'This character does not have a profile in this growing directory. Close this sheet to browse the available characters.'
+      : 'The reference profile could not be loaded. Try again when the reference data is available.'));
     else {
-      if (profile.aliases?.length) body.append(element('p', 'character-aliases', profile.aliases.join(' · ')));
-      if (!('key_passages' in profile)) body.append(element('span', 'character-era', profile.era));
-      if (profile.summary) body.append(element('p', '', profile.summary));
-      if (profile.lineage) body.append(LineageBadges(profile));
-      if (profile.geography.origin) body.append(element('h3', '', 'Places'), element('p', '', `Origin · ${profile.geography.origin}`));
+      body.append(element('span', 'character-era', profile.era), element('p', '', profile.summary));
+      const tabs = element('div', 'character-profile-tabs'); tabs.setAttribute('role', 'tablist');
+      tabs.setAttribute('aria-label', 'Character profile sections');
+      const overview = element('section'); overview.id = 'character-overview-panel';
+      const connections = element('section'); connections.id = 'character-connections-panel';
+      const panels = {overview, connections};
+      const tabButtons = new Map<string, HTMLButtonElement>();
+      function selectTab(name: typeof activeTab): void {
+        activeTab = name;
+        for (const key of ['overview', 'connections'] as const) {
+          panels[key].hidden = key !== name;
+          tabButtons.get(key)?.setAttribute('aria-selected', String(key === name));
+          if (tabButtons.get(key)) tabButtons.get(key)!.tabIndex = key === name ? 0 : -1;
+        }
+      }
+      for (const [name, label] of [['overview', 'Overview'], ['connections', 'Connections']] as const) {
+        const button = element('button', '', label); button.type = 'button'; button.id = `character-${name}-tab`;
+        button.setAttribute('role', 'tab'); button.setAttribute('aria-controls', panels[name].id);
+        panels[name].setAttribute('role', 'tabpanel'); panels[name].setAttribute('aria-labelledby', button.id);
+        button.addEventListener('click', () => selectTab(name));
+        button.addEventListener('keydown', event => {
+          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+          event.preventDefault();
+          const target = event.key === 'Home' ? 'overview' : event.key === 'End' ? 'connections' : activeTab === 'overview' ? 'connections' : 'overview';
+          selectTab(target); tabButtons.get(target)?.focus();
+        });
+        tabButtons.set(name, button); tabs.append(button);
+      }
+      body.append(tabs, overview, connections);
+      selectTab(activeTab);
+      overview.append(element('h3', '', 'Places'), element('p', '', `Origin · ${profile.geography.origin}`));
+      if (profile.lineage?.tribe) overview.append(element('p', '', `Tribe · ${profile.lineage.tribe}`));
       const residences = element('ul');
       for (const place of profile.geography.residence) residences.append(element('li', '', place));
-      if (profile.geography.residence.length) body.append(element('h4', '', 'Residences & sojourns'), residences);
-      body.append(element('h3', '', 'Scripture anchors'));
-      if (profile.narrative_anchors.books.length) body.append(element('p', '', `Books · ${profile.narrative_anchors.books.join(', ')}`));
-      const verses = element('div', 'character-verses');
-      for (const verse of profile.narrative_anchors.key_verses) {
-        const route = characterVerseRoute(verse);
-        if (!route) continue;
-        const link = element('a', '', verse); link.href = route; verses.append(link);
-      }
-      const stories = element('div', 'character-stories');
-      for (const anchor of profile.narrative_anchors.linked_stories) stories.append(StoryAnchor(anchor));
-      body.append(element('h4', '', 'Key verses'), verses);
-      if (profile.narrative_anchors.linked_stories.length) body.append(element('h4', '', 'Linked stories'), stories);
-    }
-    if (!sheet.open) { sheet.showModal(); document.body.classList.add('character-sheet-open'); }
-    body.scrollTop = 0;
-  }
-  window.addEventListener('hashchange', handleRoute);
-  window.addEventListener('viewchange', ((event: CustomEvent<string>) => { if (event.detail !== 'characters' && sheet.open) sheet.close(); }) as EventListener);
-  handleRoute();
-  void load();
-}
-if (typeof document !== 'undefined') mountCharacters();
+      overview.append(element('h4', '', 'Residences & sojourns'), residences,
+        element('h3', '', 'Scripture anchors'), element('p', '', `Books · ${profile.narrative_anchors.books.join(', ')}`));

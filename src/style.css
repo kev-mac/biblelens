@@ -1351,6 +1351,19 @@ body dialog.character-sheet[open]{display:flex;flex-direction:column}
 .character-sheet-body h3{margin:24px 0 8px;font-size:1.1rem}
 .character-sheet-body h4{font-size:.85rem;margin:16px 0 8px;color:var(--muted)}
 .character-sheet-body li{margin:6px 0}
+.character-profile-tabs{display:flex;gap:8px;margin:20px 0;flex-wrap:wrap}
+body .character-profile-tabs button,body .character-connections-retry{min-height:48px;padding:10px 18px;border:1px solid rgba(var(--theme-rgb),.4);border-radius:24px;background:rgba(var(--theme-rgb),.1);color:var(--ink);font:inherit;cursor:pointer}
+.character-profile-tabs [aria-selected="true"]{box-shadow:inset 0 0 0 2px rgb(var(--theme-rgb));background:rgba(var(--theme-rgb),.22)}
+.character-connection-row{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 12px;margin:16px 0}
+.character-connection-row h4{flex:0 0 72px;margin:0}
+.character-relative-chips{display:flex;flex:1 1 200px;flex-wrap:wrap;gap:8px;min-width:0}
+body .character-relative-chip{--relative-rgb:139,116,211;display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;min-width:48px;min-height:48px;max-width:100%;box-sizing:border-box;padding:10px 14px;border:1px solid rgba(var(--relative-rgb),.65);border-radius:24px;color:var(--ink);background:radial-gradient(ellipse at top left,rgba(var(--relative-rgb),.22),transparent 80%),rgba(var(--theme-rgb),.08);box-shadow:inset 0 1px 1px #ffffff60,0 0 18px rgba(var(--relative-rgb),.13);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);font:inherit;font-size:.875rem;cursor:pointer;overflow-wrap:anywhere}
+body .character-relative-chip:hover{background:rgba(var(--relative-rgb),.24);border-color:rgb(var(--relative-rgb))}
+.character-relative-chip small{font-size:.7rem;color:var(--muted)}
+.character-person-icon{display:inline-flex;flex:0 0 18px;width:18px;height:18px}
+.character-person-icon svg{width:100%;height:100%}
+.character-sheet-header .character-family-back{min-width:48px;min-height:48px}
+.character-family-back[hidden],.character-sheet-body [role="tabpanel"][hidden]{display:none}
 .character-verses{display:flex;flex-wrap:wrap;gap:8px}
 .character-verses a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;color:var(--ink);border:1px solid rgba(var(--theme-rgb),.3);border-radius:10px}
 :is(#characters-view,.character-sheet) :is(button,a,input):focus-visible{outline:2px solid var(--control-text,var(--green));outline-offset:3px}
