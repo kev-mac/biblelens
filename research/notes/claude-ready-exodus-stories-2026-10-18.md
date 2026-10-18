@@ -25,3 +25,14 @@ E: There are two academic paths. `data/academic-discrepancies.json` has six keye
 ## Validation and release
 
 Targeted story, topic and character checks pass. Build 242 is reserved for this batch. Full release preparation builds both outputs from the same committed source, runs the repository checks, sync and release checks, and mobile checks. Publication and signed-iOS verification are recorded separately after execution. The iPhone was unavailable at the initial device check; no install is claimed.
+
+### Executed release results
+
+- Source checkpoint: `308aa7b835c1e677294238d3de6f116f97096eb9`, fast-forwarded onto canonical local main and pushed to GitHub main. Source backup: `.release/source-build-242.tar.gz` in the integration worktree.
+- `npm run release:prepare -- --ios` passed: web build, full `npm run check`, `check:sync`, `check:release`, mobile build and `check:mobile`, Capacitor sync and signed Xcode build. The first attempt found that the older main checkout dependency directory lacked Leaflet; reusing the complete dependency directory from the already-integrated 241 worktree resolved it without a package or lockfile change. Capacitor's generated machine-specific Package.swift path was restored to its tracked relative form after building.
+- Sites version 234, source `9f4d09c2df845e2abcb443d3b1a77f70f5a52d52`, deployment `appgdep_6ad54f03ec808191813c2005a6242a97`, succeeded at 2026-10-18T22:58:25Z. URL: https://scripture-lens.kvn-mcgwn.chatgpt.site. Existing public audience preserved. The archive contains the already-built canonical dist; the mirror was not independently rebuilt.
+- `npm run release:verify -- /Users/kevin/git/BibleLens/.release/sites-mirror` passed. Live web, canonical source, mirror and mobile assets agree on build 242, source fingerprint `fb0e460c94019a71eeda1da91df342429258f2b8a5d7330f5d03eac04db3e106`. Live `/stories.json` equals the reviewed source catalog.
+- All 45 files in `www` match their corresponding files inside `.release/ios/Build/Products/Debug-iphoneos/App.app/public`; `codesign --verify --deep --strict` passed and CFBundleVersion is 242.
+- Browser checks confirmed the local Exodus story route, opening Exodus 3:1 in the reader, and the published page showing Exodus, 18 stories, The Burning Bush and Build 242. No generated-answer correctness claim is made; this batch changes no Chat behavior.
+- Installation remains pending. `xcrun devicectl list devices` reported Kevin's iPhone unavailable at both checks. No installation was attempted and the installed phone's version is not verified. A matching signed app is ready in the integration worktree path above. This is a verified web release and prepared native release, not a synchronized installed release.
+- Draft files, internal ledger, notes-sync data, scheduling and stashes were preserved. Research progress and annotation counts are unchanged.
