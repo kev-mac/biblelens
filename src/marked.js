@@ -7,7 +7,23 @@ function markedChoices(record,placement){const item={...record,...placement},tag
 const COMMANDMENT_THEMES=["Worship of God","Sabbath and rest","Family","Life and violence","Marriage and sexual conduct","Property and economics","Truth and justice","Food and purity","Festivals and sacrifice","Care for the poor and the stranger","Love of God and neighbor","Prayer and fasting","Baptism and the Lord's Supper","Church life and order"];
 function markedCommandmentMatches(record){return record.mode!=='commandments'||((markedTheme==='all'||record.theme===markedTheme)&&(markedCommandmentType==='all'||record.commandmentType===markedCommandmentType));}
 function markedCommandmentGroups(matches){return COMMANDMENT_THEMES.map(theme=>{const group=matches.filter(r=>r.theme===theme).sort((a,b)=>Number(!!b.tenCommandments)-Number(!!a.tenCommandments));return group.length?'<section class="marked-theme-group"><h3 class="marked-theme-heading">'+esc(theme)+' <span class="marked-count">'+group.length+'</span></h3>'+group.map(markedSummary).join('')+'</section>':'';}).join('');}
-function markedCommandmentTypeChips(){return '<div class="commandment-filter-chips" role="group" aria-label="Commandment type">'+[['all','All types'],['moral','Moral'],['civil','Civil'],['ritual','Ritual']].map(([key,label])=>'<button type="button" data-commandment-type="'+key+'" aria-pressed="'+(markedCommandmentType===key)+'">'+label+'</button>').join('')+'</div>';}
+function markedCommandmentTypeChips(){return '<div class="commandment-filter-chips" role="group" aria-label="Commandment type">'+[['all','All types'],['moral','Moral'],['civil','Civil'],['ritual','Ritual']].map(([key,label])=>'<button type="button" data-commandment-type="'+key+'" aria-pressed="'+(markedCommandmentType===key)+'" '+(key!=='all'&&key!==markedCommandmentType&&!markedFilterHasResults(markedData,{book:markedBookSelection,chapter:markedChapterSelection,kind:'commandments',theme:markedTheme,type:key})?'disabled':'')+'>'+label+'</button>').join('')+'</div>';}
+// Evaluate draft filter choices without mutating the active Marked workspace.
+function markedFilterHasResults(data,{book,chapter=0,kind='all',theme='all',type='all'},personal=state){
+ if(!data)return true; // Unknown availability must never masquerade as an empty result.
+ if(kind==='all'||kind==='bookmark'){
+  const inScope=item=>item.book===book&&(!chapter||item.chapter===chapter);
+  if(Object.values({...personal.verseBookmarks,...personal.verseNotes}).some(inScope)||Object.values({...personal.passageBookmarks,...personal.passageNotes}).some(inScope))return true;
+  if(ENTRIES.some(e=>(personal.notes?.[e.id]||personal.noteTitles?.[e.id])&&e.refs.some(ref=>readRef(ref)?.book===book)))return true;
+ }
+ if(kind==='bookmark')return false;
+ return data.records.some(record=>(record.mode!=='commandments'||((theme==='all'||record.theme===theme)&&(type==='all'||record.commandmentType===type)))&&record.placements.some(p=>(!chapter||p.chapter===chapter)&&markedChoices(record,p).some(choice=>visibleComparison(choice)&&(kind==='all'||filterCategory(choice)===kind))));
+}
+function requestMarkedBookData(book){
+ let request=markedComparisonCache.get(book);
+ if(!request){request=fetch('/api/marked-comparisons?book='+book).then(r=>{if(!r.ok)throw Error();return r.json();});markedComparisonCache.set(book,request);request.catch(()=>markedComparisonCache.delete(book));if(markedComparisonCache.size>4)markedComparisonCache.delete(markedComparisonCache.keys().next().value);}
+ return request;
+}
 function markedRecordVisible(record){return record.placements.some(p=>markedChoices(record,p).some(visibleComparison));}
 function markedMatchingPlacements(record){return record.placements.filter(p=>(!markedChapterSelection||p.chapter===markedChapterSelection)&&markedChoices(record,p).some(choice=>visibleComparison(choice)&&(markedKind==='all'||filterCategory(choice)===markedKind)));}
 function markedCardId(record){return 'marked-comparison-'+markedData.records.findIndex(r=>r.key===record.key);}
@@ -74,17 +90,21 @@ async function renderMarkedWorkspace(){
   if(generation!==markedWorkspaceGeneration)return;
   if(markedBookSelection===null)markedBookSelection=readingBook;
   renderMarkedContext();$('#saved-passages').innerHTML='<p role="status">Loading categories…</p>';$('#saved-cards').hidden=true;
-  let request=markedComparisonCache.get(markedBookSelection);
-  if(!request){request=fetch('/api/marked-comparisons?book='+markedBookSelection).then(r=>{if(!r.ok)throw Error();return r.json();});markedComparisonCache.set(markedBookSelection,request);request.catch(()=>markedComparisonCache.delete(markedBookSelection));if(markedComparisonCache.size>4)markedComparisonCache.delete(markedComparisonCache.keys().next().value);}
+  const request=requestMarkedBookData(markedBookSelection);
   const data=await request;if(generation!==markedWorkspaceGeneration||view!=='saved')return;markedData=data;renderMarkedResults();
  }catch{if(generation===markedWorkspaceGeneration){$('#saved-passages').innerHTML='<p>Could not load categories. <button type="button" id="marked-retry">Try again</button></p>';$('#marked-retry').onclick=renderMarkedWorkspace;}}
 }
 function openMarkedFilters(){
  let dialog=$('#marked-filter-dialog');if(!dialog){dialog=document.createElement('dialog');dialog.id='marked-filter-dialog';dialog.className='glass-dialog';dialog.setAttribute('aria-labelledby','marked-filter-title');document.body.append(dialog);}
- let chosen=markedBookSelection,chapter=markedChapterSelection,kind=markedKind,theme=markedTheme,type=markedCommandmentType,testament=chosen<39?'old':'new',step='book';
+ let chosen=markedBookSelection,chapter=markedChapterSelection,kind=markedKind,theme=markedTheme,type=markedCommandmentType,testament=chosen<39?'old':'new',step='book',draftData=null,dataBook=null,requestBook=null,requestVersion=0;
  dialog.innerHTML=`<div class="sheet-heading"><h2 id="marked-filter-title">Filter</h2><button type="button" data-marked-filter-close aria-label="Close filters">×</button></div><nav class="passage-steps" aria-label="Filter selection"><button type="button" data-marked-step="book"></button><button type="button" data-marked-step="chapter"></button><button type="button" data-marked-step="category"></button></nav><fieldset data-marked-pane="book"><legend>Book</legend><div class="passage-testaments"><button type="button" data-marked-testament="old">Old Testament</button><button type="button" data-marked-testament="new">New Testament</button></div><div class="marked-book-grid"></div></fieldset><fieldset data-marked-pane="chapter" hidden><legend>Chapter</legend><div class="marked-chapter-grid"></div></fieldset><fieldset data-marked-pane="category" hidden><legend>Category</legend><div class="marked-kind-grid"></div><div class="commandment-dialog-filters" hidden><p>Types are browsing aids; they do not decide present-day applicability.</p><label>Theme<select id="marked-theme-filter">${[['all','All themes'],...COMMANDMENT_THEMES.map(t=>[t,t])].map(([value,label])=>`<option value="${esc(value)}">${esc(label)}</option>`).join('')}</select></label><label>Commandment type<select id="marked-type-filter"><option value="all">All types</option><option value="moral">Moral</option><option value="civil">Civil</option><option value="ritual">Ritual</option></select></label></div></fieldset><button type="button" id="marked-filter-apply" class="primary">Apply filters</button>`;
- dialog.onchange=()=>{theme=dialog.querySelector('#marked-theme-filter').value;type=dialog.querySelector('#marked-type-filter').value;};
+ dialog.onchange=()=>{theme=dialog.querySelector('#marked-theme-filter').value;type=dialog.querySelector('#marked-type-filter').value;render();};
  function render(){
+  if(requestBook!==chosen){
+   requestBook=chosen;const book=chosen,version=++requestVersion;draftData=null;
+   requestMarkedBookData(book).then(data=>{if(version!==requestVersion||!dialog.open)return;draftData=data;dataBook=book;render();}).catch(()=>{});
+  }
+
   dialog.querySelector('.commandment-dialog-filters').hidden=!['all','commandments'].includes(kind);dialog.querySelector('#marked-theme-filter').value=theme;dialog.querySelector('#marked-type-filter').value=type;
   dialog.querySelectorAll('[data-marked-step]').forEach(button=>{button.textContent=button.dataset.markedStep==='book'?books[chosen].name:button.dataset.markedStep==='chapter'?(chapter?'Chapter '+chapter:'All chapters'):MARKED_CATEGORIES.find(c=>c[0]===kind)[1];button.setAttribute('aria-pressed',String(button.dataset.markedStep===step));});
   dialog.querySelectorAll('[data-marked-pane]').forEach(pane=>pane.hidden=pane.dataset.markedPane!==step);
@@ -93,8 +113,14 @@ function openMarkedFilters(){
   dialog.querySelector('.marked-chapter-grid').style.setProperty('--number-columns',books[chosen].chapters>100?'9':'8');
   dialog.querySelector('.marked-chapter-grid').innerHTML=`<button type="button" class="marked-all-chapters" data-marked-chapter="0" aria-pressed="${chapter===0}">All chapters</button>`+Array.from({length:books[chosen].chapters},(_,i)=>`<button type="button" data-marked-chapter="${i+1}" aria-pressed="${chapter===i+1}">${i+1}</button>`).join('');
   dialog.querySelector('.marked-kind-grid').innerHTML=MARKED_CATEGORIES.map(([key,label])=>`<button type="button" data-marked-kind="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}" aria-pressed="${kind===key}">${key==='all'?'':categoryIcon(key)}${label}</button>`).join('');
+  const available=choice=>dataBook!==chosen||!draftData||markedFilterHasResults(draftData,{book:chosen,chapter,kind,theme,type,...choice});
+  dialog.querySelectorAll('[data-marked-kind]').forEach(button=>{const value=button.dataset.markedKind;button.disabled=value!=='all'&&value!==kind&&!available({kind:value});});
+  dialog.querySelectorAll('[data-marked-chapter]').forEach(button=>{const value=Number(button.dataset.markedChapter);button.disabled=value!==0&&value!==chapter&&!available({chapter:value});});
+  for(const [id,key,current] of [['marked-theme-filter','theme',theme],['marked-type-filter','type',type]])for(const option of dialog.querySelector('#'+id).options){option.disabled=option.value!=='all'&&option.value!==current&&!available({[key]:option.value,kind:'commandments'});}
+  dialog.querySelector('#marked-filter-apply').disabled=!available({});
+
  }
- dialog.onclick=ev=>{const button=ev.target.closest('button');if(!button)return;if(button.hasAttribute('data-marked-filter-close')){dialog.close();return;}if(button.id==='marked-filter-apply'){markedBookSelection=chosen;markedChapterSelection=chapter;markedKind=kind;markedTheme=theme;markedCommandmentType=type;dialog.close();renderMarkedWorkspace();window.scrollTo({top:0,behavior:'instant'});return;}
+ dialog.onclick=ev=>{const button=ev.target.closest('button');if(!button||button.disabled)return;if(button.hasAttribute('data-marked-filter-close')){dialog.close();return;}if(button.id==='marked-filter-apply'){markedBookSelection=chosen;markedChapterSelection=chapter;markedKind=kind;markedTheme=theme;markedCommandmentType=type;dialog.close();renderMarkedWorkspace();window.scrollTo({top:0,behavior:'instant'});return;}
   if(button.dataset.markedStep)step=button.dataset.markedStep;
   if(button.dataset.markedTestament)testament=button.dataset.markedTestament;
   if(button.dataset.markedBook!==undefined){chosen=Number(button.dataset.markedBook);chapter=0;step='chapter';}

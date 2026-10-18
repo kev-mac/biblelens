@@ -10,6 +10,22 @@ const COMMANDMENT_FACETS = {
  applicability:['Universal / Today','Temple Era Only','Land of Israel Only','Specific Roles'],
  topics:[...new Set(COMMANDMENT_SAMPLES.flatMap(item=>item.taxonomy.topics))].sort()
 };
+// Shared legend: each value keeps the same color in filters and card dots.
+const COMMANDMENT_COLORS = {
+ 'Positive':'52,211,153','Negative':'192,132,252','God':'251,146,60','Humanity':'56,189,248',
+ 'Universal / Today':'251,191,36','Temple Era Only':'244,114,182','Land of Israel Only':'163,230,53','Specific Roles':'129,140,248',
+ 'Agriculture':'132,204,22','Business':'45,212,191','Generosity':'250,204,21','Justice':'96,165,250',
+ 'Poverty':'251,146,60','Priesthood':'232,121,249','Sacrifice':'248,113,113','Worship':'167,139,250'
+};
+function commandmentColor(value){return COMMANDMENT_COLORS[value]||'148,163,184';}
+// Ignore the candidate's own dimension when counting available matches. Selected
+// values stay removable, even when a typed search leaves no matching records.
+function commandmentFacetCount(records,filters,query,dimension,value){
+ return filterCommandments(records,{...filters,[dimension]:[value]},query).length;
+}
+function commandmentFacetDisabled(records,filters,query,dimension,value){
+ return !(filters[dimension]||[]).includes(value)&&commandmentFacetCount(records,filters,query,dimension,value)===0;
+}
 // One source of truth for both tiers. OR within dimensions; AND between dimensions.
 function filterCommandments(records,filters,query='') {
  const words=query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
@@ -20,7 +36,7 @@ function filterCommandments(records,filters,query='') {
  })&&words.every(word=>[item.id,item.title,item.passage,item.summary,...Object.values(item.taxonomy).flat(),...(item.lens||[]).flatMap(link=>[link.reference,link.type,link.description])].join(' ').toLocaleLowerCase().includes(word)));
 }
 function commandmentCard(item) {
- const chip=(value,dimension)=>`<span class="commandment-micro" data-dimension="${dimension}">${esc(value)}</span>`;
+ const chip=(value,dimension)=>`<button type="button" class="commandment-tag" data-commandment-tag="${dimension}" data-value="${esc(value)}" style="--tag-rgb:${commandmentColor(value)}" aria-label="Filter by ${esc(value)}" title="${esc(value)}"><span class="taxonomy-dot" aria-hidden="true"></span></button>`;
  const passage=reference=>`<button type="button" class="commandment-passage" data-commandment-passage="${esc(reference)}" aria-label="Read ${esc(reference)}">${esc(reference)}</button>`;
  return `<article class="commandment-card"><div class="commandment-card-heading"><span class="commandment-number">Mitzvah #${esc(item.id)}</span><h2>${esc(item.title)}</h2></div>${passage(item.passage)}<p>${esc(item.summary)}</p><div class="commandment-metadata" aria-label="Taxonomy">${Object.entries(item.taxonomy).flatMap(([dimension,values])=>[].concat(values).map(value=>chip(value,dimension))).join('')}</div>${item.lens?.length?`<section class="commandment-lens" aria-label="New Testament lens"><h3>New Testament lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${passage(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
 }
@@ -29,13 +45,22 @@ function initCommandments() {
  const sheet=document.querySelector('#commandments-filters'),matrix=document.querySelector('#commandments-matrix');
  const search=document.querySelector('#commandments-search'),more=document.querySelector('#commandments-more');
  const filters=Object.fromEntries(Object.keys(COMMANDMENT_FACETS).map(key=>[key,[]]));
- matrix.innerHTML=Object.entries(COMMANDMENT_FACETS).map(([dimension,values])=>`<fieldset><legend>${dimension[0].toUpperCase()+dimension.slice(1)}</legend><div class="commandments-options">${values.map(value=>`<label><input type="checkbox" data-commandment-dimension="${dimension}" value="${esc(value)}"><span>${esc(value)}</span></label>`).join('')}</div></fieldset>`).join('');
+ matrix.innerHTML=Object.entries(COMMANDMENT_FACETS).map(([dimension,values])=>`<fieldset><legend>${dimension[0].toUpperCase()+dimension.slice(1)}</legend><div class="commandments-options">${values.map(value=>`<button type="button" class="secondary commandment-facet-toggle" data-commandment-dimension="${dimension}" data-value="${esc(value)}" style="--tag-rgb:${commandmentColor(value)}" aria-pressed="false"><span class="taxonomy-dot" aria-hidden="true"></span><span>${esc(value)}</span></button>`).join('')}</div></fieldset>`).join('');
+ root.querySelectorAll('[data-commandment-quick]').forEach(button=>{
+  button.classList.add('commandment-facet-toggle');button.style.setProperty('--tag-rgb',commandmentColor(button.dataset.value));
+  const dot=document.createElement('span');dot.className='taxonomy-dot';dot.setAttribute('aria-hidden','true');button.prepend(dot);
+ });
  function render() {
   const items=filterCommandments(COMMANDMENT_SAMPLES,filters,search.value);
   document.querySelector('#commandments-list').innerHTML=items.length?items.map(commandmentCard).join(''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
   document.querySelector('#commandments-count').textContent=`${items.length} of ${COMMANDMENT_SAMPLES.length} sample commandments`;
-  root.querySelectorAll('[data-commandment-quick]').forEach(button=>button.setAttribute('aria-pressed',String(filters[button.dataset.commandmentQuick].includes(button.dataset.value))));
-  matrix.querySelectorAll('input').forEach(input=>{input.checked=filters[input.dataset.commandmentDimension].includes(input.value);});
+  for(const button of [...root.querySelectorAll('[data-commandment-quick]'),...matrix.querySelectorAll('[data-commandment-dimension]')]){
+   const dimension=button.dataset.commandmentQuick||button.dataset.commandmentDimension,value=button.dataset.value;
+   button.setAttribute('aria-pressed',String(filters[dimension].includes(value)));
+   button.disabled=commandmentFacetDisabled(COMMANDMENT_SAMPLES,filters,search.value,dimension,value);
+   button.title=`${value} · ${commandmentFacetCount(COMMANDMENT_SAMPLES,filters,search.value,dimension,value)} matching commandments`;
+  }
+  root.querySelectorAll('[data-commandment-tag]').forEach(button=>button.setAttribute('aria-pressed',String(filters[button.dataset.commandmentTag].includes(button.dataset.value))));
   const count=Object.values(filters).reduce((sum,values)=>sum+values.length,0);
   more.textContent=`More Filters${count?' ('+count+')':''}`;
   document.querySelector('#commandments-done').textContent=`Show ${items.length} ${items.length===1?'result':'results'}`;
@@ -45,11 +70,12 @@ function initCommandments() {
   filters[dimension]=[...selected];render();
  }
  root.addEventListener('click',event=>{
-  const button=event.target.closest('[data-commandment-quick]');if(!button)return;
-  const dimension=button.dataset.commandmentQuick,value=button.dataset.value;
+  const button=event.target.closest('[data-commandment-quick],[data-commandment-tag]');if(!button||button.disabled)return;
+  const dimension=button.dataset.commandmentQuick||button.dataset.commandmentTag,value=button.dataset.value;
   toggle(dimension,value,!filters[dimension].includes(value));
+  if(button.dataset.commandmentTag)Array.from(root.querySelectorAll('[data-commandment-tag]')).find(tag=>tag.dataset.commandmentTag===dimension&&tag.dataset.value===value)?.focus({preventScroll:true});
  });
- matrix.addEventListener('change',event=>{const input=event.target.closest('[data-commandment-dimension]');if(input)toggle(input.dataset.commandmentDimension,input.value,input.checked);});
+ matrix.addEventListener('click',event=>{const button=event.target.closest('[data-commandment-dimension]');if(button&&!button.disabled)toggle(button.dataset.commandmentDimension,button.dataset.value,!filters[button.dataset.commandmentDimension].includes(button.dataset.value));});
  search.addEventListener('input',render);
  function clear(){Object.keys(filters).forEach(key=>{filters[key]=[];});render();}
  document.querySelector('#commandments-reset').onclick=()=>{search.value='';clear();};

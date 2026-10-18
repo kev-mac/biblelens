@@ -1,9 +1,13 @@
 'use strict';
 // Book-wide narratives are separate from verse-aligned evidence classifications.
-let storiesActive=false,storiesRequest=null,storiesGeneration=0;
-function storiesFilterButton(){return `<button type="button" class="agreement category-filter stories" data-category-filter="stories" data-brightness="open" aria-pressed="${storiesActive}" aria-controls="stories-view" aria-label="Stories" title="Stories"><span class="filter-icon">${categoryIcon('stories')}</span><span class="filter-copy"><span class="filter-label">Stories</span></span></button>`;}
+let storiesActive=false,storiesRequest=null,storiesGeneration=0,storiesCatalog=null;
+function storiesFilterButton(){
+ if(!storiesRequest)loadStories().then(()=>comparisonStatus()).catch(()=>{});
+ const available=storiesCatalog===null||!!storiesCatalog.find(entry=>entry.book===books[readingBook]?.name)?.stories.length;
+ return `<button type="button" class="agreement category-filter stories" data-category-filter="stories" data-brightness="${available?'open':'empty'}" aria-pressed="${storiesActive}" aria-controls="stories-view" aria-label="Stories" title="Stories" ${!available&&!storiesActive?'disabled':''}><span class="filter-icon">${categoryIcon('stories')}</span><span class="filter-copy"><span class="filter-label">Stories</span></span></button>`;
+}
 function loadStories(){
- if(!storiesRequest){storiesRequest=fetch('/stories.json').then(response=>{if(!response.ok)throw Error('Stories unavailable');return response.json();});storiesRequest.catch(()=>{storiesRequest=null;});}
+ if(!storiesRequest){storiesRequest=fetch('/stories.json').then(response=>{if(!response.ok)throw Error('Stories unavailable');return response.json();}).then(catalog=>{storiesCatalog=catalog;return catalog;});storiesRequest.catch(()=>{storiesRequest=null;});}
  return storiesRequest;
 }
 function storyReference(reference){

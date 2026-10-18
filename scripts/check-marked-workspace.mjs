@@ -49,3 +49,17 @@ const linkedCard=context.markedSummary({...data.records.find(r=>r.relatedPassage
  assert(box.innerHTML.includes('Commandments<span class="marked-count">0'));
  console.log('PASS: alphabetical categories and zero-result panes, including a selected empty category.');
 }
+
+// Draft availability respects chapter, category, commandment facets and personal marks.
+const availability={state:{},ENTRIES:[],markedChoices:(record,placement)=>[{...record,...placement}],visibleComparison:item=>!item.hidden,filterCategory:item=>item.tag||item.mode};
+vm.createContext(availability);
+vm.runInContext(source.slice(source.indexOf('function markedFilterHasResults'),source.indexOf('function requestMarkedBookData')),availability);
+const sample={records:[{mode:'commandments',theme:'Family',commandmentType:'moral',placements:[{chapter:2,verse:1}]}]};
+const has=(choice,personal={})=>availability.markedFilterHasResults(sample,{book:0,...choice},personal);
+assert(has({kind:'commandments',chapter:2,theme:'Family',type:'moral'}));
+assert(!has({kind:'commandments',chapter:1}));assert(!has({kind:'T'}));
+assert(!has({kind:'commandments',theme:'Worship of God'}));assert(!has({kind:'commandments',type:'ritual'}));
+assert(has({kind:'bookmark',chapter:1},{verseBookmarks:{test:{book:0,chapter:1}}}));
+assert(!has({kind:'bookmark',chapter:2},{verseBookmarks:{test:{book:0,chapter:1}}}));
+assert(availability.markedFilterHasResults(null,{book:0},{}));
+console.log('PASS: zero-result draft filters respect categories, chapters, personal marks and commandment facets; unknown availability stays selectable.');

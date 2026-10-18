@@ -30,4 +30,13 @@ const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 const chapters=JSON.parse(fs.readFileSync('data/chapters.json','utf8'));
 const {expandCommandmentRef}=await import('./commandments.mjs');
 for(const item of context.samples)for(const ref of [item.passage,...item.lens.map(link=>link.reference)])assert(expandCommandmentRef(ref,books,chapters).length);
-console.log('PASS: sample taxonomy, faceted AND/OR search, lens search, empty states, escaped cards, and all passage coordinates.');
+// Empty candidate values are disabled independently of same-dimension OR choices.
+assert(context.commandmentFacetDisabled(context.samples,{polarity:['Negative']},'', 'sphere','God'));
+assert(!context.commandmentFacetDisabled(context.samples,{polarity:['Negative']},'', 'topics','Business'));
+assert(context.commandmentFacetDisabled(context.samples,{topics:['Business']},'', 'polarity','Positive'));
+assert(!context.commandmentFacetDisabled(context.samples,{polarity:['Negative']},'unmatched','polarity','Negative'));
+assert(context.commandmentFacetDisabled(context.samples,{},'unmatched','polarity','Positive'));
+assert.equal(context.commandmentFacetCount(context.samples,{polarity:['Negative'],topics:['Business']},'','polarity','Positive'),0);
+const tagged=context.commandmentCard(context.samples[1]);
+assert(tagged.includes('class="taxonomy-dot"'));assert(tagged.includes('aria-label="Filter by Negative"'));assert(!tagged.includes('commandment-micro'));
+console.log('PASS: sample taxonomy, AND/OR search, escaped cards, passage coordinates, accessible color dots, zero-match disabling and removable selections.');
