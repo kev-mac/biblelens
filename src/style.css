@@ -1963,3 +1963,5 @@ body #saved-view .marked-category-pane[data-category-page="V"] .marked-category-
 body.dark #saved-view .marked-category-pane[data-category-page="V"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="V"] svg{color:#ff7897}
 body.navigation-colored>header nav [data-view=prophecies]{--nav-color:#5d761a}
 body.dark.navigation-colored>header nav [data-view=prophecies]{--nav-color:#c8d76b}
+
+body #marked-filter-dialog [data-marked-pane=book]>.marked-all-books{width:100%;min-height:44px;margin-bottom:12px}
