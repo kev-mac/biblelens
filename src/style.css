@@ -2066,3 +2066,6 @@ body .atlas-sources>summary::-webkit-details-marker{display:none}
 
 body .timeline-event-card>.card-disclosure{grid-column:1/-1}
 body dialog.atlas-sheet{height:fit-content}
+/* Close icons stay unframed, including when iOS autofocuses a dialog. */
+html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]){border:0!important;outline:none!important;box-shadow:none!important;background:transparent!important}
+html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]):focus-visible{text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:5px!important}
