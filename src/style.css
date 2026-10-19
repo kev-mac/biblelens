@@ -2049,3 +2049,20 @@ body .highlight-color-picker[data-docked="true"] .highlight-color-label{display:
 body .highlight-color-picker[data-docked="true"] button{grid-row:2;justify-self:center;min-width:44px;min-height:44px;width:44px;height:44px}
 body .highlight-color-picker[data-docked="true"] [data-highlight-close]{grid-column:6;grid-row:1}
 body.highlight-selecting .passage-picker-trigger{visibility:hidden!important;pointer-events:none!important}
+
+/* Directory cards start closed, matching the reader's evidence disclosures. */
+body .card-disclosure{width:100%;min-width:0}
+body .card-disclosure-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;cursor:pointer;list-style:none;font-family:var(--ui-font)}
+body .card-disclosure-heading::-webkit-details-marker{display:none}
+body .card-disclosure-heading :is(h2,h3){margin:0;min-width:0}
+body .card-disclosure-label{display:inline-flex;align-items:center;gap:8px;color:var(--ui-link);font-size:.875rem;white-space:nowrap}
+body .card-disclosure-label::after{content:'⌄';font-size:1.2rem}
+body .card-disclosure[open]>.card-disclosure-heading .card-disclosure-label::after{transform:rotate(180deg)}
+body .card-disclosure-content{padding-top:16px}
+body .card-disclosure:not([open])>.card-disclosure-content{display:none}
+body .card-disclosure-heading:focus-visible,body .atlas-sources>summary:focus-visible{outline:2px solid var(--ui-link);outline-offset:5px;border-radius:4px}
+body .atlas-sources>summary{display:inline-flex;align-items:center;min-height:44px;color:var(--ui-link);text-decoration:underline;cursor:pointer;list-style:none}
+body .atlas-sources>summary::-webkit-details-marker{display:none}
+
+body .timeline-event-card>.card-disclosure{grid-column:1/-1}
+body dialog.atlas-sheet{height:fit-content}

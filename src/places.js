@@ -23,6 +23,7 @@ function colorMap(){
 }
 new MutationObserver(colorMap).observe(document.body,{attributes:true,attributeFilter:['class']});
 async function openAtlas(id,button){
+ document.querySelector('#atlas-sources').open=false;
  const token=++request;anchor?.setAttribute('aria-expanded','false');anchor=button;button.setAttribute('aria-expanded','true');
  document.querySelector('#atlas-name').textContent='Loading place…';document.querySelector('#atlas-names').textContent='';document.querySelector('#atlas-description').textContent='';status.textContent='';mapNotice.textContent='';mapNode.hidden=true;document.querySelector('#atlas-external').hidden=true;
  if(!sheet.open)sheet.showModal();document.querySelector('#atlas-close').focus({preventScroll:true});sheet.querySelector('.atlas-scroll').scrollTop=0;
@@ -97,7 +98,7 @@ async function initializeChips(){
   const match=createPlaceMatcher(await loadPlaces());
   let people=[];try{const response=await fetch('/reference/people.json');if(response.ok)people=await response.json();}catch{}
   const matchPeople=createPersonMatcher(people);
-  const scopes='.verse-body,.story-card > p';
+  const scopes='.verse-body,.story-card p';
   function decorate(root){
    const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(node){return node.parentElement.closest('button,a,script,style,textarea,.verse-num,[contenteditable]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;}}),nodes=[];
    while(walker.nextNode())nodes.push(walker.currentNode);
