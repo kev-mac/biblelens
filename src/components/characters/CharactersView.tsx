@@ -191,8 +191,7 @@ function mountCharacters(): void {
       : 'The reference profile could not be loaded. Try again when the reference data is available.'));
     else {
       const {details, content} = ProfileDisclosure();
-      body.append(element('span', 'character-era', profile.era), details);
-      content.append(element('p', 'character-profile-biography', profile.summary));
+      body.append(element('span', 'character-era', profile.era), element('p', 'character-profile-biography', profile.summary), details);
       const tabs = element('div', 'character-profile-tabs'); tabs.setAttribute('role', 'tablist');
       tabs.setAttribute('aria-label', 'Character profile sections');
       const overview = element('section'); overview.id = 'character-overview-panel';

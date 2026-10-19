@@ -7,13 +7,15 @@ function collapseDirectoryCard(card){
  const title=card.querySelector('h2,h3,[data-open],.verse-citation,[data-read]');
  if(!title)return;
  collapsedCards.add(card);
+ const preview=document.createElement('div');preview.className='card-disclosure-preview';
+ preview.append(title);
+ const summaryText=card.querySelector('.character-summary,.commandment-summary,.passage-saved-note,.timeline-event-summary,:scope > p:not(.eyebrow)');
+ if(summaryText)preview.append(summaryText);
  const disclosure=document.createElement('details');disclosure.className='card-disclosure';
  const summary=document.createElement('summary');summary.className='card-disclosure-heading';
- // Keep the existing node and its listeners, including People profile links.
- summary.append(title);
  const label=document.createElement('span');label.className='card-disclosure-label';label.textContent='Details';summary.append(label);
  const content=document.createElement('div');content.className='card-disclosure-content';
- content.append(...card.childNodes);disclosure.append(summary,content);card.append(disclosure);
+ content.append(...card.childNodes);disclosure.append(summary,content);card.append(preview,disclosure);
 }
 function collapseDirectoryCards(root){
  if(root.nodeType!==1)return;

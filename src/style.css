@@ -2076,3 +2076,9 @@ body .character-profile-expand::after{content:'⌄';text-decoration:none}
 body .character-profile-disclosure[open]>.character-profile-expand::after{transform:rotate(180deg)}
 body .character-profile-content{padding-top:4px}
 body dialog.character-sheet{height:fit-content}
+
+/* The summary stays visible; only supporting material is disclosed. */
+body .card-disclosure-preview :is(h2,h3){margin-top:0}
+body .card-disclosure-preview p{margin-bottom:12px}
+body .card-disclosure-heading{justify-content:center}
+body .timeline-event-card>.card-disclosure-preview{grid-column:1/-1}
