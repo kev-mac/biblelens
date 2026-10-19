@@ -22,6 +22,7 @@ context.collapseDirectoryCard(initial.node);assert.equal(initial.node.childNodes
 const late=card();observed[0]([{addedNodes:[late.node]}]);assert.equal(late.node.childNodes[1].tagName,'details','Search and pagination results also start closed');
 events.viewchange();assert.equal(opened.open,false);assert.equal(evidence.hidden,true);assert.equal(context.comparisonEvidenceOpen.size,0);assert.equal(toggle.attributes['aria-expanded'],'false');
 assert(!fs.readFileSync('src/card-disclosures.js','utf8').split('const collapsedCards=')[0].includes('.commandment-card'),'Commandments have no Details disclosure');
+assert(!fs.readFileSync('src/card-disclosures.js','utf8').split('const collapsedCards=')[0].includes('.story-card'),'Stories have no Details disclosure');
 const html=fs.readFileSync('src/index.html','utf8');assert.match(html,/<details id="atlas-sources" class="atlas-sources"><summary>Sources<\/summary>/);assert(!/<details id="atlas-sources"[^>]*\bopen\b/.test(html));assert(html.indexOf('id="atlas-description"')<html.indexOf('id="atlas-sources"'),'Place summary stays visible before Sources');
 const places=fs.readFileSync('src/places.js','utf8');assert.match(places,/querySelector\('#atlas-sources'\)\.open=false/);
 console.log('PASS: initial/dynamic cards start closed, preserve interactive nodes, avoid duplicate wrapping, reset on navigation, and Places Sources starts closed per opening.');

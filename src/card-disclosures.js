@@ -1,6 +1,6 @@
 'use strict';
 // Native disclosures keep touch, mouse and keyboard behavior consistent across directories.
-const COLLAPSED_CARD_SELECTOR='.story-card,.prophecy-card,.character-card,.timeline-card,.timeline-event-card,.passage-saved-card,.category-directory-card,#cards > .card,#saved-cards > .card';
+const COLLAPSED_CARD_SELECTOR='.prophecy-card,.character-card,.timeline-card,.timeline-event-card,.passage-saved-card,.category-directory-card,#cards > .card,#saved-cards > .card';
 const collapsedCards=new WeakSet();
 function collapseDirectoryCard(card){
  if(collapsedCards.has(card))return;
