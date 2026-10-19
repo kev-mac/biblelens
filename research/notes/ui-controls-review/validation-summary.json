@@ -1,0 +1,16 @@
+{
+  "groups": 16,
+  "comparisonSheets": 26,
+  "sourceFamilies": 144,
+  "gapCaptures": 59,
+  "checks": [
+    "All worksheet asset links resolve",
+    "Worksheet scripts parse",
+    "Multiple selections and usage rules work in plain-JavaScript validation",
+    "No styles preselected",
+    "Main search/summary/card/panel sheets visually checked",
+    "Blank fixed-popover crop replaced with a verified viewport crop",
+    "Application tracked diff is empty"
+  ],
+  "limitations": "Local HTML browser rendering not tested; see coverage-gaps.md for source-only states."
+}

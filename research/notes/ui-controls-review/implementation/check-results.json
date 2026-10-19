@@ -1,0 +1,103 @@
+[
+  {
+    "script": "scripts/check-questions-category.mjs",
+    "exit": 0,
+    "output": "PASS: Questions endpoint returns Q key/context placements without leaking into other categories; fixture never published.\n"
+  },
+  {
+    "script": "scripts/check-character-connections.mjs",
+    "exit": 1,
+    "output": "node:internal/modules/package_json_reader:301\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'esbuild' imported from /Users/kevin/.codex/worktrees/ce6c/BibleLens/scripts/check-character-connections.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:764:81)\n    at moduleResolve (node:internal/modules/esm/resolve:855:18)\n    at defaultResolve (node:internal/modules/esm/resolve:988:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)\n    at #resolve (node:internal/modules/esm/loader:679:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v25.8.1\n"
+  },
+  {
+    "script": "scripts/check-prophecies.mjs",
+    "exit": 1,
+    "output": "node:internal/modules/package_json_reader:301\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'esbuild' imported from /Users/kevin/.codex/worktrees/ce6c/BibleLens/scripts/check-prophecies.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:764:81)\n    at moduleResolve (node:internal/modules/esm/resolve:855:18)\n    at defaultResolve (node:internal/modules/esm/resolve:988:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)\n    at #resolve (node:internal/modules/esm/loader:679:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v25.8.1\n"
+  },
+  {
+    "script": "scripts/check-verse-roles.mjs",
+    "exit": 1,
+    "output": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(failed.stderr.includes('not an exact KJV substring'))\n\n    at file:///Users/kevin/.codex/worktrees/ce6c/BibleLens/scripts/check-verse-roles.mjs:10:502\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: false,\n  expected: true,\n  operator: '==',\n  diff: 'simple'\n}\n\nNode.js v25.8.1\n",
+    "limitation": "This test invokes the build guard internally. It failed at dependency resolution; no bundle or dist output was created. It was not rerun because building is prohibited."
+  },
+  {
+    "script": "scripts/check-reader-question.mjs",
+    "exit": 0,
+    "output": "PASS: reader question box removed, book picker retained, global chat excludes implicit reader selection.\n"
+  },
+  {
+    "script": "scripts/check-stories.mjs",
+    "exit": 0,
+    "output": "PASS: Genesis story bounds, escaped cards, book-wide selection, empty books, passage navigation and stale-response protection.\nPASS: Topic pivot filters, origin exclusion, empty results, closing and escaped themes.\n"
+  },
+  {
+    "script": "scripts/check-reader-toggles.mjs",
+    "exit": 0,
+    "output": "Passed after retaining the existing optional double-tap behavior; one click on the expand button and Enter/Space continue to work."
+  },
+  {
+    "script": "scripts/check-local-ai.mjs",
+    "exit": 1,
+    "output": "node:internal/modules/package_json_reader:301\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package '@mlc-ai/web-llm' imported from /Users/kevin/.codex/worktrees/ce6c/BibleLens/src/local-ai.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:764:81)\n    at moduleResolve (node:internal/modules/esm/resolve:855:18)\n    at defaultResolve (node:internal/modules/esm/resolve:988:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)\n    at #resolve (node:internal/modules/esm/loader:679:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v25.8.1\n"
+  },
+  {
+    "script": "scripts/check-passage-tools.mjs",
+    "exit": 0,
+    "output": "PASS: unmark cancellation preserves bookmark/note/title and avoids writes; confirmation removes only the target bookmark and personal note.\nPASS: private passage notes persist, escape, export and merge; chapter bookmarks, separate chapter state, and note-free share links.\nPASS: verse notes save, reopen, escape, export and merge without losing existing notes.\nPASS: editable note titles survive serialization and backup merge; note-only marks render expanded; selected verse links retain exact ranges and omit personal notes.\nPASS: reload migration removes stale highlighting without manufacturing bookmarks or losing existing marks and written notes.\nPASS: marked verse text expands from cached chapter data, preserves edition fallback, and rejects stale render updates with accessible network failures.\nPASS: default Note title, icon note controls, cancellation and note-only deletion preserve bookmarks.\n"
+  },
+  {
+    "script": "scripts/check-reader-bookmarks.mjs",
+    "exit": 0,
+    "output": "PASS: single taps do nothing; double click/tap toggles bookmarks; long holds, different verses, and open dialogs are guarded.\n"
+  },
+  {
+    "script": "scripts/check-red-letters.mjs",
+    "exit": 0,
+    "output": "PASS: 6104 red-letter verse/edition spans preserve exact text; mixed speakers, risen Jesus, migration and Compare on/off.\n"
+  },
+  {
+    "script": "scripts/check-global-chat.mjs",
+    "exit": 0,
+    "output": "PASS: global retrieval across chapters, plague sequence, named references, no reading prerequisite, separate summary/details and safe citation chips.\nPASS: assistant references are actual escaped hyperlinks, user text stays plain, and bounded range/list routes focus the first verse.\nPASS: unique source chips appear with the answer; repeated excerpts are omitted while context and limits remain.\n"
+  },
+  {
+    "script": "scripts/check-citation-preview.mjs",
+    "exit": 0,
+    "output": "PASS: full-verse hover and keyboard previews, ranges, cached fetch, direct click/tap navigation and stale-response cancellation.\nPASS: touch release/cancel keeps verse menus and citation previews open; outside taps dismiss; mouse hover still dismisses on leave; movement cancels pending holds.\nPASS: verse menu copies the selected verse range without private notes and Ask opens a verse-specific draft.\nPASS: context markers open small navigable glass previews without inline context rows.\n"
+  },
+  {
+    "script": "scripts/check-characters.mjs",
+    "exit": 1,
+    "output": "node:internal/modules/package_json_reader:301\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'esbuild' imported from /Users/kevin/.codex/worktrees/ce6c/BibleLens/scripts/check-characters.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:764:81)\n    at moduleResolve (node:internal/modules/esm/resolve:855:18)\n    at defaultResolve (node:internal/modules/esm/resolve:988:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)\n    at #resolve (node:internal/modules/esm/loader:679:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v25.8.1\n"
+  },
+  {
+    "script": "scripts/check-reader-picker-grid.mjs",
+    "exit": 0,
+    "output": "PASS: chapter/verse grids, selected values, stale fetch protection, full category icons on upward scroll and downward hide.\n"
+  },
+  {
+    "script": "scripts/check-story-topics.mjs",
+    "exit": 0,
+    "output": "PASS: Inclusive range and chapter intersections, book isolation, generic filtering, caps, immutable merge and reproducible catalog.\n"
+  },
+  {
+    "script": "scripts/check-places.mjs",
+    "exit": 0,
+    "output": "Places checks passed: dataset, aliases, boundaries, ambiguity, coordinates, escaping, fetch retry and cache.\n"
+  },
+  {
+    "script": "scripts/check-witness-labels.mjs",
+    "exit": 0,
+    "output": "PASS: 1093 T records; 6 retained future labels; duplicate/invalid rejection; idempotent merge; single toggle; witness display metadata.\n"
+  },
+  {
+    "script": "scripts/check-timeline.mjs",
+    "exit": 1,
+    "output": "node:internal/modules/package_json_reader:301\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'esbuild' imported from /Users/kevin/.codex/worktrees/ce6c/BibleLens/scripts/check-timeline.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:764:81)\n    at moduleResolve (node:internal/modules/esm/resolve:855:18)\n    at defaultResolve (node:internal/modules/esm/resolve:988:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)\n    at #resolve (node:internal/modules/esm/loader:679:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v25.8.1\n"
+  },
+  {
+    "script": "scripts/check-reader-swipes.mjs",
+    "exit": 0,
+    "output": "PASS: finger tracking, axis lock, 80px threshold, edge cue, cancel/snap back, click suppression, boundaries, modal/selection guards, and serialized chapter loading.\n"
+  }
+]

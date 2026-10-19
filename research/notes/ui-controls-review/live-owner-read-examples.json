@@ -1,0 +1,104 @@
+{
+  "academic": {
+    "primaryReferenceSection": {
+      "background": "rgba(0, 0, 0, 0)",
+      "blur": "none",
+      "border": "0px none rgb(255, 255, 255)",
+      "display": "grid",
+      "fontSize": "17.48px",
+      "gradient": "none",
+      "lineHeight": "27.968px",
+      "padding": "0px",
+      "radius": "0px",
+      "rect": {
+        "height": 145.84375,
+        "width": 481,
+        "x": 36,
+        "y": 497.21875
+      },
+      "selector": "div.comparison-sides",
+      "shadow": "none"
+    },
+    "quote": {
+      "background": "rgba(0, 0, 0, 0)",
+      "blur": "none",
+      "border": "0px none rgb(255, 255, 255)",
+      "display": "block",
+      "fontSize": "17.48px",
+      "gradient": "none",
+      "lineHeight": "27.968px",
+      "padding": "0px",
+      "radius": "0px",
+      "rect": {
+        "height": 55.9375,
+        "width": 410.5,
+        "x": 106.5,
+        "y": 497.21875
+      },
+      "selector": "q.",
+      "shadow": "none"
+    },
+    "reference": {
+      "background": "rgb(15, 23, 34)",
+      "blur": "blur(14px)",
+      "border": "1px solid rgba(59, 130, 246, 0.65)",
+      "display": "flex",
+      "fontSize": "13.8px",
+      "gradient": "radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.4) 0%, rgba(15, 23, 34, 0.7) 100%)",
+      "lineHeight": "22.08px",
+      "padding": "3px 7px",
+      "radius": "9999px",
+      "rect": {
+        "height": 30.0625,
+        "width": 64.5,
+        "x": 36,
+        "y": 497.21875
+      },
+      "selector": "a.verse-citation.context-source",
+      "shadow": "rgba(59, 130, 246, 0.35) 0px 0px 16px 0px, rgba(255, 255, 255, 0.5) 0px 1px 1.5px 0px inset, rgba(0, 0, 0, 0.4) 0px -1px 2px 0px inset"
+    },
+    "summary": {
+      "background": "rgb(12, 17, 26)",
+      "blur": "blur(18px)",
+      "border": "1px solid rgba(59, 130, 246, 0.5)",
+      "display": "block",
+      "fontSize": "17.48px",
+      "gradient": "radial-gradient(at 50% 30%, rgba(59, 130, 246, 0.28) 0%, rgba(12, 17, 26, 0.85) 90%)",
+      "lineHeight": "27.968px",
+      "padding": "16px 18px 42px",
+      "radius": "20px",
+      "rect": {
+        "height": 526.171875,
+        "width": 519,
+        "x": 17,
+        "y": 346.703125
+      },
+      "selector": "div.comparison-summary",
+      "shadow": "rgba(0, 0, 0, 0.55) 0px 8px 32px 0px, rgba(59, 130, 246, 0.25) 0px 0px 20px 0px, rgba(255, 255, 255, 0.4) 0px 1px 2px 0px inset, rgba(59, 130, 246, 0.2) 0px 0px 15px 0px inset"
+    },
+    "title": {
+      "background": "rgba(0, 0, 0, 0)",
+      "blur": "none",
+      "border": "0px none rgb(255, 255, 255)",
+      "display": "block",
+      "fontSize": "18.4px",
+      "gradient": "none",
+      "lineHeight": "27.6px",
+      "padding": "0px",
+      "radius": "0px",
+      "rect": {
+        "height": 27.609375,
+        "width": 481,
+        "x": 36,
+        "y": 363.703125
+      },
+      "selector": "h3.",
+      "shadow": "none"
+    }
+  },
+  "theme": "dark",
+  "viewport": {
+    "height": 1027,
+    "width": 568
+  }
+}

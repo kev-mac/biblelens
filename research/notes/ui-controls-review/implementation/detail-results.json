@@ -1,0 +1,4006 @@
+[
+  {
+    "name": "read-expanded",
+    "width": 1280,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "active",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "reader-picker",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "chapter-bookmarks",
+        "cls": "agreement category-filter bookmark",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter translation",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter violation",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter commandments",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter question",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter academic",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter contradictions",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "passage-heading-picker",
+        "w": 146.21875,
+        "h": 36
+      },
+      {
+        "id": "",
+        "cls": "passage-picker-trigger",
+        "w": 48,
+        "h": 48
+      },
+      {
+        "id": "comparison-tab-3-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-5-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-6-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-7-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-11-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-11-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "",
+        "cls": "summary-expand",
+        "w": 32,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "summary-inspect",
+        "w": 32,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "verse-citation",
+        "w": 60.71875,
+        "h": 27.1875
+      },
+      {
+        "id": "comparison-tab-14-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-14-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-20-contradictions-1-G",
+        "cls": "agreement comparison-tab translation",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-20-contradictions-1-H",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-20-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-21-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-21-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-24-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-25-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-26-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-27-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-31-science-1",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "prev-bottom",
+        "cls": "chapter-round",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "next-bottom",
+        "cls": "chapter-round",
+        "w": 40,
+        "h": 40
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "commandment-filters",
+    "width": 1280,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "commandments-close",
+        "cls": "",
+        "w": 40,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 73.78125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 80.890625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 49.421875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 85.203125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 137.109375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 130.234375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 146.15625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 115.765625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 148.953125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 94.984375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 81.4375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 97.8125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 64.765625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 79.6875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 55.078125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 71.921875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 69.796875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 135.65625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 72.96875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 93.515625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 60.75,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 76.859375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 80.375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 57.9375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 76.390625,
+        "h": 33
+      },
+      {
+        "id": "commandments-clear",
+        "cls": "",
+        "w": 110.421875,
+        "h": 48
+      },
+      {
+        "id": "commandments-done",
+        "cls": "",
+        "w": 146.0625,
+        "h": 48
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "prophecy-filters",
+    "width": 1280,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "prophecy-close",
+        "cls": "",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-amber",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-emerald",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-slate",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-rose",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-purple",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-blue",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-orange",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-blue",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-purple",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-amber",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "prophecy-clear",
+        "cls": "",
+        "w": 107.671875,
+        "h": 44
+      },
+      {
+        "id": "prophecy-done",
+        "cls": "",
+        "w": 128.78125,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "marked-filters",
+    "width": 1280,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 199.359375,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 199.375,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 235.265625,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 319,
+        "h": 38
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 319,
+        "h": 38
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "marked-filter-apply",
+        "cls": "primary",
+        "w": 646,
+        "h": 40
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "theme-stories",
+    "width": 1280,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "story-topic-close",
+        "cls": "icon",
+        "w": 40,
+        "h": 40
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "navigation",
+    "width": 1280,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "connections",
+    "width": 1280,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "character-overview-tab",
+        "cls": "",
+        "w": 89.53125,
+        "h": 37.09375
+      },
+      {
+        "id": "character-connections-tab",
+        "cls": "",
+        "w": 110.578125,
+        "h": 37.09375
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.421875,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 98.21875,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84.734375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.09375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.84375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84.734375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 81.34375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 90.359375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 97.921875,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 102.6875,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 92.03125,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 90.859375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 164.375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 92.65625,
+        "h": 32
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "read-expanded",
+    "width": 1280,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "active",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "reader-picker",
+        "cls": "",
+        "w": 34,
+        "h": 34
+      },
+      {
+        "id": "chapter-bookmarks",
+        "cls": "agreement category-filter bookmark",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter translation",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter violation",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter commandments",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter question",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter academic",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter contradictions",
+        "w": 44,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "passage-heading-picker",
+        "w": 146.21875,
+        "h": 36
+      },
+      {
+        "id": "",
+        "cls": "passage-picker-trigger",
+        "w": 48,
+        "h": 48
+      },
+      {
+        "id": "comparison-tab-3-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-5-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-6-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-7-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-11-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-11-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "",
+        "cls": "summary-expand",
+        "w": 32,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "summary-inspect",
+        "w": 32,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "verse-citation",
+        "w": 60.71875,
+        "h": 27.1875
+      },
+      {
+        "id": "comparison-tab-14-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-14-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-20-contradictions-1-G",
+        "cls": "agreement comparison-tab translation",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-20-contradictions-1-H",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-20-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-21-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-21-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-24-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-25-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-26-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-27-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "comparison-tab-31-science-1",
+        "cls": "agreement comparison-tab academic",
+        "w": 36,
+        "h": 36
+      },
+      {
+        "id": "prev-bottom",
+        "cls": "chapter-round",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "next-bottom",
+        "cls": "chapter-round",
+        "w": 40,
+        "h": 40
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "commandment-filters",
+    "width": 1280,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "commandments-close",
+        "cls": "",
+        "w": 40,
+        "h": 48
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 73.78125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 80.890625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 49.421875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 85.203125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 137.109375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 130.234375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 146.15625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 115.765625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 148.953125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 94.984375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 81.4375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 97.8125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 64.765625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 79.6875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 55.078125,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 71.921875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 69.796875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 135.65625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 72.96875,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 93.515625,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 60.75,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 76.859375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 80.375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 57.9375,
+        "h": 33
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 76.390625,
+        "h": 33
+      },
+      {
+        "id": "commandments-clear",
+        "cls": "",
+        "w": 110.421875,
+        "h": 48
+      },
+      {
+        "id": "commandments-done",
+        "cls": "",
+        "w": 146.0625,
+        "h": 48
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "prophecy-filters",
+    "width": 1280,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "prophecy-close",
+        "cls": "",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-amber",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-emerald",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-slate",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-rose",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-purple",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-blue",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-orange",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-blue",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-purple",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-amber",
+        "w": 206,
+        "h": 32
+      },
+      {
+        "id": "prophecy-clear",
+        "cls": "",
+        "w": 107.671875,
+        "h": 44
+      },
+      {
+        "id": "prophecy-done",
+        "cls": "",
+        "w": 128.78125,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "marked-filters",
+    "width": 1280,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 199.359375,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 199.375,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 235.265625,
+        "h": 34
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 319,
+        "h": 38
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 319,
+        "h": 38
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.390625,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 124.40625,
+        "h": 40
+      },
+      {
+        "id": "marked-filter-apply",
+        "cls": "primary",
+        "w": 646,
+        "h": 40
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "theme-stories",
+    "width": 1280,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "story-topic-close",
+        "cls": "icon",
+        "w": 40,
+        "h": 40
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "navigation",
+    "width": 1280,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 150.5,
+        "h": 100
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "connections",
+    "width": 1280,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 40,
+        "h": 40
+      },
+      {
+        "id": "character-overview-tab",
+        "cls": "",
+        "w": 89.53125,
+        "h": 37.09375
+      },
+      {
+        "id": "character-connections-tab",
+        "cls": "",
+        "w": 110.578125,
+        "h": 37.09375
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.421875,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 98.21875,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84.734375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.09375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.84375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84.734375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 81.34375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 90.359375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 97.921875,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 102.6875,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 92.03125,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 90.859375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 164.375,
+        "h": 32
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 92.65625,
+        "h": 32
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "read-expanded",
+    "width": 375,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "active",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "reader-picker",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "chapter-bookmarks",
+        "cls": "agreement category-filter bookmark",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter translation",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter violation",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter commandments",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "passage-heading-picker",
+        "w": 146.21875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "passage-picker-trigger",
+        "w": 48,
+        "h": 48
+      },
+      {
+        "id": "comparison-tab-3-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-5-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-6-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-7-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-11-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-11-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "summary-expand",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "summary-inspect",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "verse-citation",
+        "w": 60.71875,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-14-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-14-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-20-contradictions-1-G",
+        "cls": "agreement comparison-tab translation",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-20-contradictions-1-H",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-20-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-21-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-21-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-24-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-25-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-26-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-27-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-31-science-1",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "prev-bottom",
+        "cls": "chapter-round",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "next-bottom",
+        "cls": "chapter-round",
+        "w": 44,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "commandment-filters",
+    "width": 375,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "commandments-close",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 73.78125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 80.890625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 49.421875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 85.203125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 137.109375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 130.234375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 146.15625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 115.765625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 148.953125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 94.984375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 81.4375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 97.8125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 64.765625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 79.6875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 55.078125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 71.921875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 69.796875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 135.65625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 72.96875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 93.515625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 60.75,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 76.859375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 80.375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 57.9375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 76.390625,
+        "h": 44
+      },
+      {
+        "id": "commandments-clear",
+        "cls": "",
+        "w": 110.421875,
+        "h": 44
+      },
+      {
+        "id": "commandments-done",
+        "cls": "",
+        "w": 146.0625,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "prophecy-filters",
+    "width": 375,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "prophecy-close",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-amber",
+        "w": 104.328125,
+        "h": 47.34375
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-emerald",
+        "w": 104.328125,
+        "h": 47.34375
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-slate",
+        "w": 104.34375,
+        "h": 47.34375
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-rose",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-purple",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-blue",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-orange",
+        "w": 104.34375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-blue",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-purple",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-amber",
+        "w": 104.34375,
+        "h": 44
+      },
+      {
+        "id": "prophecy-clear",
+        "cls": "",
+        "w": 107.671875,
+        "h": 44
+      },
+      {
+        "id": "prophecy-done",
+        "cls": "",
+        "w": 128.78125,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "marked-filters",
+    "width": 375,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103.453125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103.453125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 122.09375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 166.5,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 166.5,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "marked-filter-apply",
+        "cls": "primary",
+        "w": 341,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "theme-stories",
+    "width": 375,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "story-topic-close",
+        "cls": "icon",
+        "w": 44,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "navigation",
+    "width": 375,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "connections",
+    "width": 375,
+    "theme": "dark",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "character-overview-tab",
+        "cls": "",
+        "w": 89.53125,
+        "h": 44
+      },
+      {
+        "id": "character-connections-tab",
+        "cls": "",
+        "w": 110.578125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.421875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 98.21875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84.734375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.09375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.84375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84.734375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 81.34375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 90.359375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 97.921875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 102.6875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 92.03125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 90.859375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 164.375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 92.65625,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "read-expanded",
+    "width": 375,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "active",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "reader-picker",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "chapter-bookmarks",
+        "cls": "agreement category-filter bookmark",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter translation",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter violation",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter commandments",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "agreement category-filter contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "passage-heading-picker",
+        "w": 146.21875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "passage-picker-trigger",
+        "w": 48,
+        "h": 48
+      },
+      {
+        "id": "comparison-tab-3-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-5-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-6-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-7-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-11-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-11-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "summary-expand",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "summary-inspect",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "verse-citation",
+        "w": 60.71875,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-14-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-14-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-20-contradictions-1-G",
+        "cls": "agreement comparison-tab translation",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-20-contradictions-1-H",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-20-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-21-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-21-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-24-science-0",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-25-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-26-questions-0-Q",
+        "cls": "agreement comparison-tab question",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-27-contradictions-0",
+        "cls": "agreement comparison-tab contradictions",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "comparison-tab-31-science-1",
+        "cls": "agreement comparison-tab academic",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "prev-bottom",
+        "cls": "chapter-round",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "next-bottom",
+        "cls": "chapter-round",
+        "w": 44,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "commandment-filters",
+    "width": 375,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "commandments-close",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 73.78125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 80.890625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 49.421875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 85.203125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 137.109375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 130.234375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 146.15625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 115.765625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 148.953125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 94.984375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 81.4375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 97.8125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 64.765625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 79.6875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 55.078125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 71.921875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 69.796875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 135.65625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 72.96875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 93.515625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 60.75,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 76.859375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 80.375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 57.9375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "secondary commandment-facet-toggle",
+        "w": 76.390625,
+        "h": 44
+      },
+      {
+        "id": "commandments-clear",
+        "cls": "",
+        "w": 110.421875,
+        "h": 44
+      },
+      {
+        "id": "commandments-done",
+        "cls": "",
+        "w": 146.0625,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "prophecy-filters",
+    "width": 375,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "prophecy-close",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-amber",
+        "w": 104.328125,
+        "h": 47.34375
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-emerald",
+        "w": 104.328125,
+        "h": 47.34375
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-slate",
+        "w": 104.34375,
+        "h": 47.34375
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-rose",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-purple",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-blue",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-orange",
+        "w": 104.34375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-blue",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-purple",
+        "w": 104.328125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "prophecy-facet theme-amber",
+        "w": 104.34375,
+        "h": 44
+      },
+      {
+        "id": "prophecy-clear",
+        "cls": "",
+        "w": 107.671875,
+        "h": 44
+      },
+      {
+        "id": "prophecy-done",
+        "cls": "",
+        "w": 128.78125,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "marked-filters",
+    "width": 375,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103.453125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103.453125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 122.09375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 166.5,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 166.5,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.390625,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 63.40625,
+        "h": 44
+      },
+      {
+        "id": "marked-filter-apply",
+        "cls": "primary",
+        "w": 341,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "theme-stories",
+    "width": 375,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "story-topic-close",
+        "cls": "icon",
+        "w": 44,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "navigation",
+    "width": 375,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      },
+      {
+        "id": "",
+        "cls": "",
+        "w": 103,
+        "h": 81.03125
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "name": "connections",
+    "width": 375,
+    "theme": "light",
+    "buttons": [
+      {
+        "id": "",
+        "cls": "",
+        "w": 44,
+        "h": 44
+      },
+      {
+        "id": "character-overview-tab",
+        "cls": "",
+        "w": 89.53125,
+        "h": 44
+      },
+      {
+        "id": "character-connections-tab",
+        "cls": "",
+        "w": 110.578125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.421875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 98.21875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84.734375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.09375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 86.84375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 84.734375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 81.34375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 90.359375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 97.921875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 102.6875,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 92.03125,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 90.859375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 164.375,
+        "h": 44
+      },
+      {
+        "id": "",
+        "cls": "character-relative-chip",
+        "w": 92.65625,
+        "h": 44
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "test": "Chat error clears typing dots and preserves question",
+    "pass": true
+  },
+  {
+    "test": "D17 persists independently across reload",
+    "pass": true
+  },
+  {
+    "test": "D17 reset restores both defaults",
+    "pass": true
+  }
+]

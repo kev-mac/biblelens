@@ -1,0 +1,35 @@
+{
+  "id": "D17",
+  "status": "owner-approved-design-only",
+  "baseOpacity": {
+    "stepsPercent": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "defaultPercent": 10
+  },
+  "gradientStrength": {
+    "stepsPercent": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "defaultPercent": 15
+  },
+  "visibleNumbers": false,
+  "combinedOpacityReadout": false,
+  "reset": {
+    "iconOnly": true,
+    "position": "right of Base opacity label",
+    "resets": "both sliders",
+    "accessibleName": true
+  },
+  "effects": "plain tinted surfaces; no glass effects",
+  "preview": "D17-approved-preview.html",
+  "appChangesAuthorized": false
+}

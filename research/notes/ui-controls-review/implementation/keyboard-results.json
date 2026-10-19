@@ -1,0 +1,31 @@
+[
+  {
+    "test": "Keyboard skip link reveals a non-overlapping 44px focus target",
+    "pass": true
+  },
+  {
+    "test": "Native book radios work with arrow keys",
+    "before": "0",
+    "after": "1"
+  },
+  {
+    "test": "Whole composer focus remains visible while typing",
+    "width": "2px",
+    "offset": "2px",
+    "color": "rgb(140, 200, 255)"
+  },
+  {
+    "test": "Profile tabs support arrow keys and Home",
+    "pass": true
+  },
+  {
+    "test": "Story wrapping at 115% text, phone",
+    "theme": "dark",
+    "pass": true
+  },
+  {
+    "test": "Story wrapping at 115% text, phone",
+    "theme": "light",
+    "pass": true
+  }
+]

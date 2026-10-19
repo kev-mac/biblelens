@@ -1,0 +1,105 @@
+{
+  "scope": "Local implementation in ce6c/BibleLens of approved D1\u2013D17 and D2 mapping. Existing review evidence and both stashes preserved.",
+  "sourceComparison": {
+    "github": "Fetched origin/main; its src/ and worker/ match the review baseline before these edits.",
+    "live": "Existing public release is build 242; this checkout is build 241. No synchronization or release is claimed.",
+    "preview": "Edited HTML/CSS/JS served directly, with an already-existing build 241 bundle supplying unchanged modules and read-only data. No bundle was created. Preview release/account responses are clearly local fixtures. Chat success/error are browser fixtures."
+  },
+  "implemented": {
+    "D1": "Shared plain assessment and biography surfaces; retained Chat and section-introduction roles.",
+    "D2": "Compact standalone profile/directory/commandment/prophecy/story references; Timeline text links; inline prose links; existing destinations and previews retained.",
+    "D3": "References above italic quotation wording, paired prophecy layout retained, commentary/chronology roles retained.",
+    "D4": "48px search pills with magnifiers and 16px text; Chat composer and send action.",
+    "D5\u2013D6": "Compact category-colored quick and panel pills; brighter selection; no added check indicators; measured phone targets.",
+    "D7": "Standalone related navigation retained; underlined prose links, no inline pin glyphs; quieter noninteractive badges.",
+    "D8": "Compact dropdowns/grids/steps and heading cue. Book-cell merge is gated by merge-picker-inputs in app.js/style.css; remove that class to revert its styling independently, retaining source radio/label roles and data.",
+    "D9": "Compact tabs, 20px verse action icons; original On/Off switch and text-size percentage retained.",
+    "D10": "Shared disclosure/inspection controls; one click on expand buttons; existing optional double-tap and Enter/Space retained. Commandment catalogue contents are always visible.",
+    "D11\u2013D12": "Ribbon Bookmark, chain-link Copy link, overlapping-paper Copy text; consistent close/floating/navigation icons and phone targets.",
+    "D13": "Sans serif note editors/title fields, 12px corners, original save flow and native file chooser retained.",
+    "D14": "24px plain panels; desktop centering and phone bottom sheets; 18px verse previews; taller map and closer starting zoom.",
+    "D15": "22px category-tinted cards and sans serif headings; quieter inner sections; Chat tails and three-dot thinking state.",
+    "D16": "Blue 2px focus rings with 2px gap; whole-field search/composer focus while typing.",
+    "D17": "Five steps per slider (0/5/10/15/20), defaults 10/15, no visible setting values, one reset icon beside Base opacity. Device-local persistence separate from notes/sync revisions. Plain tint/gradient only, opaque text."
+  },
+  "map": {
+    "source": "Natural Earth 5.1.2 1:50m land and lakes, public domain; retained Theographic English place names and coordinates. Geometry unchanged.",
+    "sourceFile": "src/data/atlas-land-provenance.json",
+    "limitations": "Generalized modern outlines are contextual, not ancient geography. No streets, terrain, elevations, paid provider, signup, or online tiles. Inland views can be sparse at starting zoom 13; zoom out for regional context. Source attribution and historical uncertainty remain.",
+    "resize": "Pin containment checked after map reopen and desktop-to-phone resize."
+  },
+  "verification": {
+    "widths": [
+      1280,
+      375
+    ],
+    "themes": [
+      "dark",
+      "light"
+    ],
+    "textScale": "100% main matrix; additional Story wrapping at 115% on phone.",
+    "uiSnapshots": 62,
+    "extraDetailSnapshots": 28,
+    "browserErrors": [],
+    "pageOverflows": [],
+    "overlappingVisibleButtons": [],
+    "smallPhoneButtons": [],
+    "textContrast": {
+      "samples": 1172,
+      "failures": 0,
+      "minimumMeasuredRatio": 5.01,
+      "method": "Text fill temporarily hidden, backgrounds captured at representative text positions, computed text color/ancestor opacity composited against captured pixels; default and maximum tint. Finite visible samples, not every possible content state."
+    },
+    "keyboard": "Arrow-key native radios; profile arrows/Home; Settings Escape focus return; whole-field composer focus while typing; range step/reset/reload; Chat success/error clears dots and preserves failed question.",
+    "phoneKeyboard": "Editor at 375\u00d7560 reduced viewport with Save reachable; actual native keyboard untested.",
+    "sourceChecksPassed": 14,
+    "sourceChecksUnavailable": 6,
+    "fullSuite": "npm run check stops at missing dist/server/index.js. Some other scripts require absent test dependencies. One existing verse-role test invokes a build guard internally and failed dependency resolution before producing any bundle; not rerun. No application build output was generated. Syntax checks and git diff --check pass.",
+    "standaloneLinks": "The only below-size anchor in the main snapshots was the offscreen keyboard-only skip link (41px). It was then raised to 44px and checked separately by keyboard with a screenshot. Other measured standalone anchors met 44px; prose links keep text geometry by owner instruction.",
+    "compactReferences": {
+      "stories": [
+        34.3,
+        34.3,
+        34.3
+      ],
+      "characters": [
+        35,
+        35,
+        35
+      ],
+      "prophecies": [
+        34,
+        34,
+        34
+      ],
+      "commandments": [
+        35,
+        35,
+        35
+      ]
+    },
+    "keyboardSkipLink": "Final isolated keyboard check confirms 44px focus target; screenshot keyboard-skip-focus-375.png."
+  },
+  "unverified": [
+    "Built web/native integration and complete build-dependent check suite (build forbidden).",
+    "Actual iPhone keyboard, gestures and signed app assets.",
+    "Authenticated cloud sync/pairing/revocation (unchanged, not exercised).",
+    "Every possible content wrap, transient state and opacity combination."
+  ],
+  "prohibitedActions": "No release bundle created, publication, installation, commit, or push. No existing owner notes/bookmarks/account state touched. Both stashes retained.",
+  "sourceFiles": {
+    "src/app.js": "43ffd86f9a72fa764531c9e8a21fc4dc96a08c9cfc2df73c7a469816b7e3affb",
+    "src/reader.js": "340b0fa5c9763c8c2ec1289c95a61a80b1bb41834311460fa7727a3341a733d1",
+    "src/style.css": "0d3929a23acd2446cf33b59577d5c410e2e2646a787922d41a192eda2beddc63",
+    "src/places.js": "54c4ab9c5036b4de5c369e0ba9556e101b4edcb5f83c58034f77def6d662ca87",
+    "src/commandments.js": "c0791c40ac61497108f763da27bd382d3630382ba24914aa091af84c607c20e3",
+    "src/index.html": "199497b6b08909505eca4dd4990e2ddf6ccd4c8b610b32810a91321d52d8be3c",
+    "src/data/atlas-land.json": "2340de600effe045249970a64a2c3867bbd179b9c8a542d112dc9bfd3f905979"
+  },
+  "typographyCorrection": {
+    "ownerInstruction": "No serif anywhere in the project by default.",
+    "implementation": "All default CSS serif stacks and the legacy serif variable replaced with the shared Inter/system sans serif stack. Explicit reader font choices remain opt-in. Standing rule recorded in AGENTS.md.",
+    "verification": "Browser computed-style checks on source markup and representative samples in dark/light at 1280px and 375px; reader-font checks passed. See typography-defaults.json.",
+    "screenshots": "Earlier screenshots predate this final default-typography correction."
+  }
+}
