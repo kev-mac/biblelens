@@ -12,7 +12,7 @@
  trigger.setAttribute('aria-controls', sheet.id);
  trigger.setAttribute('aria-expanded', 'false');
  const grid = sheet.querySelector('.navigation-grid');
- const pages = [['explore','Read'],['chat','Chat'],['saved','Categories'],['stories','Stories'],['characters','People'],['commandments','Commandments'],['prophecies','Prophecies'],['timeline','Timeline']];
+ const pages = [['explore','Read'],['chat','Chat'],['saved','Categories'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['commandments','Commandments'],['prophecies','Prophecies'],['timeline','Timeline']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
   const icon = document.querySelector(`header nav [data-view="${page}"] svg`);
@@ -51,7 +51,7 @@
 // The header has one row of evenly spaced destinations; Settings stays last.
 (() => {
  const nav=document.querySelector('header nav');
- for(const page of ['explore','chat','saved','stories','characters','commandments','prophecies'])nav.append(nav.querySelector(`[data-view="${page}"]`));
+ for(const page of ['explore','chat','saved','bookmarks','stories','characters','commandments','prophecies'])nav.append(nav.querySelector(`[data-view="${page}"]`));
  nav.append(document.querySelector('#reader-picker'));
  let lastY=window.scrollY;
  function update(){

@@ -1914,3 +1914,52 @@ body.read-view .dock-pagination button{flex:0 0 58px!important;width:58px!import
 body.read-view .comparison-dock,html.native-ios body.read-view .comparison-dock{transform:translate(-50%,0)!important;transition:opacity .15s,visibility .15s}
 html:has(dialog[open]){overscroll-behavior:none}
 body :is(.location-chip,.verse-citation,.verse-link){-webkit-touch-callout:none}
+
+/* Categories heading controls, directory results and the Bookmarks destination. */
+body #saved-view>.page-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+body #saved-view>.page-heading h1{margin:0}
+body #marked-filter-top{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 12px;flex:none}
+body #marked-filter-top svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8}
+body #marked-context[hidden]{display:none!important}
+body #marked-context{transition:none}
+body .category-directory-card{padding:20px;margin:18px 0;border:1px solid var(--border);border-radius:20px;background:var(--panel)}
+body .category-directory-card h3{margin:0 0 12px}
+body .category-directory-card p{line-height:1.65}
+body .category-directory-card .text-button{display:inline-flex;align-items:center;min-height:44px;margin-top:8px}
+body .category-directory-references{display:flex;flex-wrap:wrap;gap:8px}
+body .category-prophecy-status{font-size:.85rem;color:var(--muted)}
+body #bookmarks-list>.passage-saved-card{margin-bottom:16px}
+body>header nav{grid-template-columns:repeat(9,minmax(0,1fr))}
+body>header nav button,body>header nav #reader-picker{width:100%;max-width:44px;min-width:0;padding:7px}
+body.navigation-colored>header nav [data-view=bookmarks]{--nav-color:#947000}
+body.dark.navigation-colored>header nav [data-view=bookmarks]{--nav-color:#ffd36d}
+body .marked-category-pane[data-category-page=stories] .marked-category-icon{color:#a65c15}
+body .marked-category-pane[data-category-page=characters] .marked-category-icon{color:#a33e78}
+body .marked-category-pane[data-category-page=prophecies] .marked-category-icon{color:#9b7410}
+body.dark .marked-category-pane[data-category-page=stories] .marked-category-icon{color:#f9b678}
+body.dark .marked-category-pane[data-category-page=characters] .marked-category-icon{color:#f6a5d1}
+body.dark .marked-category-pane[data-category-page=prophecies] .marked-category-icon{color:#efd576}
+
+/* Distinct category hues, including icons copied from navigation. */
+body #saved-view .marked-category-pane[data-category-page="academic"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="academic"] svg{color:#2366b4}
+body.dark #saved-view .marked-category-pane[data-category-page="academic"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="academic"] svg{color:#75b8ff}
+body #saved-view .marked-category-pane[data-category-page="commandments"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="commandments"] svg{color:#087d78}
+body.dark #saved-view .marked-category-pane[data-category-page="commandments"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="commandments"] svg{color:#72d9cc}
+body #saved-view .marked-category-pane[data-category-page="contradictions"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="contradictions"] svg{color:#b6560a}
+body.dark #saved-view .marked-category-pane[data-category-page="contradictions"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="contradictions"] svg{color:#ff9a50}
+body #saved-view .marked-category-pane[data-category-page="bookmark"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="bookmark"] svg{color:#876600}
+body.dark #saved-view .marked-category-pane[data-category-page="bookmark"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="bookmark"] svg{color:#ffd36d}
+body #saved-view .marked-category-pane[data-category-page="characters"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="characters"] svg{color:#a33e78}
+body.dark #saved-view .marked-category-pane[data-category-page="characters"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="characters"] svg{color:#f6a5d1}
+body #saved-view .marked-category-pane[data-category-page="prophecies"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="prophecies"] svg{color:#5d761a}
+body.dark #saved-view .marked-category-pane[data-category-page="prophecies"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="prophecies"] svg{color:#c8d76b}
+body #saved-view .marked-category-pane[data-category-page="Q"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="Q"] svg{color:#00815c}
+body.dark #saved-view .marked-category-pane[data-category-page="Q"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="Q"] svg{color:#55d4a3}
+body #saved-view .marked-category-pane[data-category-page="stories"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="stories"] svg{color:#9c5832}
+body.dark #saved-view .marked-category-pane[data-category-page="stories"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="stories"] svg{color:#e6ab88}
+body #saved-view .marked-category-pane[data-category-page="T"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="T"] svg{color:#7a46c4}
+body.dark #saved-view .marked-category-pane[data-category-page="T"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="T"] svg{color:#c59bff}
+body #saved-view .marked-category-pane[data-category-page="V"] .marked-category-icon,body #marked-filter-dialog [data-marked-kind="V"] svg{color:#ba2947}
+body.dark #saved-view .marked-category-pane[data-category-page="V"] .marked-category-icon,body.dark #marked-filter-dialog [data-marked-kind="V"] svg{color:#ff7897}
+body.navigation-colored>header nav [data-view=prophecies]{--nav-color:#5d761a}
+body.dark.navigation-colored>header nav [data-view=prophecies]{--nav-color:#c8d76b}

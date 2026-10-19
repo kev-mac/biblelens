@@ -1,7 +1,8 @@
 // Public evidence only. Private notes are paged locally and never enter this index.
-const categoryOrder=['T','V','commandments','Q','academic','contradictions'];
+const categoryOrder=['T','V','commandments','Q','academic','contradictions','stories','characters','prophecies'];
 export function categoryKinds(record,placements=record.placements){
  const kinds=new Set();
+ if(['stories','characters','prophecies'].includes(record.mode))return [record.mode];
  for(const p of placements){
   const tags=p.activeTags??record.tags??(record.tag?[record.tag]:[]);
   if(record.mode==='commandments'){kinds.add('commandments');continue;}
@@ -14,7 +15,7 @@ export function categoryKinds(record,placements=record.placements){
  }
  return categoryOrder.filter(kind=>kinds.has(kind));
 }
-export function createCategoryCatalog(evidence,studies,parseRef,readingSources){
+export function createCategoryCatalog(evidence,studies,parseRef,readingSources,directory={}){
  const records=[];
  for(const record of evidence){
   const keys=record.sides?.length?record.sides.map(side=>side.ref):[record.ref];
@@ -27,6 +28,25 @@ export function createCategoryCatalog(evidence,studies,parseRef,readingSources){
   if(study.type==='Historical / chronological')continue;
   const placements=study.refs.map(parseRef).filter(Boolean).map(p=>({...p,placementRole:'key'}));
   if(placements.length)records.push({id:'study-'+study.id,key:'contradictions:study-'+study.id,mode:'contradictions',status:study.type==='Textual conflict'?'Textual conflict':'Apparent / interpretive conflict',title:study.title,summary:study.summary,text:study.context,reasoning:study.reasoning,scope:study.assessment,refs:study.refs.map(label=>({label,...parseRef(label)})),sources:[...study.refs.map(label=>{const p=parseRef(label);return {label:label+' — scripture',url:`#read/${p.book}/${p.chapter}/${p.verse}`};}),...(study.sources||[])],classification:study.type,relatedPassages:study.relatedPassages,placements});
+ }
+ // Narratives cover their full passage range; people use recorded verse references.
+ const placementsFor=ref=>{
+  const first=parseRef(ref);if(!first)return [];
+  const range=/[-–]\s*(?:(\d+):)?(\d+)\s*$/.exec(ref);
+  const end=range?.[1]?Number(range[1]):first.chapter;
+  return Array.from({length:Math.max(1,end-first.chapter+1)},(_,i)=>({...first,chapter:first.chapter+i,verse:i?1:first.verse,placementRole:'key'}));
+ };
+ for(const group of directory.stories||[])for(const story of group.stories||[]){
+  const placements=placementsFor(story.passage);
+  if(placements.length)records.push({...story,id:story.passage,key:'stories:'+story.passage,mode:'stories',placements});
+ }
+ for(const person of directory.people||[]){
+  const placements=(person.refs||[]).filter(ref=>Array.isArray(ref)&&ref.length===3&&ref.every(Number.isInteger)&&ref[0]>=0&&ref[0]<=65&&ref[1]>0&&ref[2]>0).map(([book,chapter,verse])=>({book,chapter,verse,placementRole:'key'}));
+  if(placements.length)records.push({id:person.id,key:'characters:'+person.id,mode:'characters',title:person.name,summary:directory.summaries?.[person.id]||person.summary||'',aliases:person.aliases||[],placements});
+ }
+ for(const item of directory.prophecies||[]){
+  const placements=[item.prediction_passage,item.fulfillment_passage].filter(Boolean).flatMap(placementsFor);
+  if(placements.length)records.push({...item,key:'prophecies:'+item.id,mode:'prophecies',placements});
  }
  return records;
 }

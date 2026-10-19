@@ -17,7 +17,7 @@ for(const record of data.records)assert(context.markedMatchingPlacements(record)
 context.markedKind='academic';for(const record of data.records)for(const p of context.markedMatchingPlacements(record))assert(context.markedChoices(record,p).some(c=>context.filterCategory(c)==='academic'));
 for(const [id,chapter] of [['genesis-7-worldwide-flood',7],['genesis-18-sarah-reproductive-aging',18],['genesis-41-joseph-famine-evidence',41],['genesis-47-joseph-land-acquisition',47]]){context.markedChapterSelection=chapter;const record=data.records.find(r=>r.id===id);assert(record,id);assert(context.markedRecordVisible(record));assert(context.markedMatchingPlacements(record).some(p=>p.placementRole==='key'));}context.markedChapterSelection=1;
 assert(!source.includes('data-marked-record='));assert(source.includes('class="marked-category-pane" data-tone='));assert(!source.includes('class="marked-category-pane" open'));assert(source.includes('${markedPrimaryRows(primary,choice)}${comparisonReasoning(record)'));
-assert(source.includes("view==='saved'&&window.scrollY<20"));assert(source.includes("if(y<20)document.body.classList.add('marked-filter-visible')"));
+
 const groups=new Map();context.categoryRank=item=>['bookmark','T','V','commandments','Q','academic','contradictions'].indexOf(context.filterCategory(item));vm.runInContext(source.slice(source.indexOf('function markedGroup'),source.indexOf('function markedSummary')),context);context.markedKind='all';for(const record of data.records.filter(r=>context.markedRecordVisible(r)&&context.markedMatchingPlacements(r).length)){const group=context.markedGroup(record);assert(['T','V','commandments','Q','academic','contradictions'].includes(group));groups.set(record.key,group);}assert(groups.size>0);
 console.log('PASS: book-scoped comparison retrieval, one row per verse/comparison, canonical verse text, invalid filters, chapter/category filtering and collapsible category groups without comparison icons.');
 
@@ -58,8 +58,8 @@ const linkedCard=context.markedSummary({...data.records.find(r=>r.relatedPassage
  vm.runInContext(source.slice(source.indexOf('function renderMarkedResults('),source.indexOf('async function renderMarkedWorkspace(')),ctx);
  ctx.renderMarkedResults();
  const labels=[...box.innerHTML.matchAll(/<\/span>([^<]+)<span class="marked-count">0<\/span>/g)].map(m=>m[1]);
- assert.deepEqual(labels,['Academic','Commandments','Contradictions','Marked','Questions','Translation','Violations']);
- assert.equal((box.innerHTML.match(/No results for these filters\./g)||[]).length,7);
+ assert.deepEqual(labels,['Academic','Commandments','Contradictions','Marked','People','Prophecies','Questions','Stories','Translation','Violations']);
+ assert.equal((box.innerHTML.match(/No results for these filters\./g)||[]).length,10);
  ctx.markedKind='commandments';ctx.renderMarkedResults();
  assert.equal((box.innerHTML.match(/<details /g)||[]).length,1);
  assert(box.innerHTML.includes('Commandments<span class="marked-count">0'));

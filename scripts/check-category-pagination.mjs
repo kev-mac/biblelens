@@ -15,3 +15,17 @@ for(const query of ['book=66','page=-1','limit=1000','kind=notes','chapter=-2'])
 assert.deepEqual(request('book=all&limit=0').records,[],'Collapsed categories return counts only');
 assert.equal(request('book=all&kind=T&page=999').page,2,'Out-of-range pages are clamped');
 console.log('PASS: bounded category pages, counts-only metadata, cross-book paging, scope filters, key-only qualifications and invalid query rejection.');
+
+const directory={stories:[{stories:[{title:'Creation',passage:'Genesis 1:1 - 2:3',summary:'Narrative',cross_references:[]}]}],people:Array.from({length:30},(_,i)=>({id:'person-'+i,name:'Person '+i,refs:[[0,2,i+1],[1,1,1]]})),prophecies:[{id:'test',prediction_passage:'Genesis 1:1',fulfillment_passage:'Exodus 2:1',title:'Linked accounts'}]};
+const parseRange=ref=>parse(ref?.split(/ [-–] /)[0]);
+const expanded=createCategoryCatalog([],[],parseRange,()=>[],directory);
+const browse=query=>categoryPage(expanded,new URLSearchParams(query));
+assert.equal(browse('book=0&chapter=2&kind=stories').total,1,'Full story ranges include their closing chapter');
+assert.equal(browse('book=1&kind=stories').total,0);
+assert.equal(browse('book=all&kind=characters').records.length,24);
+assert.equal(browse('book=all&kind=characters&page=1').records.length,6);
+assert.equal(browse('book=1&chapter=2&kind=prophecies').total,1,'Linked fulfillment is included');
+assert.equal(browse('book=all&kind=prophecies').total,1,'Cross-book links count once');
+assert.equal(browse('book=0&chapter=1&kind=characters').total,0,'People respect chapter references');
+assert.equal(browse('book=all&limit=0').counts.characters,30);
+console.log('PASS: narrative chapter ranges, scoped people pagination and cross-book prophecy links.');

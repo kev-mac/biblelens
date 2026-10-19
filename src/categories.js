@@ -2,11 +2,11 @@
 // Fetch at most 24 public records for one open category. Notes stay on-device.
 const categoryPages=new Map();
 let categoryRequest=0,categoryScope='';
-function categoryPersonalItems(){
- const inScope=item=>(markedBookSelection===-1||item.book===markedBookSelection)&&(!markedChapterSelection||item.chapter===markedChapterSelection);
- const verses=Object.values({...state.verseBookmarks,...state.verseNotes}).filter(inScope).map(item=>({kind:'verse',item}));
- const passages=Object.values({...state.passageBookmarks,...state.passageNotes}).filter(inScope).map(item=>({kind:'passage',item}));
- const studies=ENTRIES.filter(e=>(state.notes[e.id]||state.noteTitles?.[e.id])&&e.refs.some(ref=>markedBookSelection===-1||readRef(ref)?.book===markedBookSelection)).map(item=>({kind:'study',item}));
+function categoryPersonalItems({book=markedBookSelection,chapter=markedChapterSelection,bookmarksOnly=false}={}){
+ const inScope=item=>(book===-1||item.book===book)&&(!chapter||item.chapter===chapter);
+ const verses=Object.values({...state.verseBookmarks,...(bookmarksOnly?{}:state.verseNotes)}).filter(inScope).map(item=>({kind:'verse',item}));
+ const passages=Object.values({...state.passageBookmarks,...(bookmarksOnly?{}:state.passageNotes)}).filter(inScope).map(item=>({kind:'passage',item}));
+ const studies=ENTRIES.filter(e=>(state.bookmarks.includes(e.id)||!bookmarksOnly&&(state.notes[e.id]||state.noteTitles?.[e.id]))&&e.refs.some(ref=>{const p=readRef(ref);return p&&(book===-1||p.book===book)&&(!chapter||p.chapter===chapter);})).map(item=>({kind:'study',item}));
  return [...verses,...passages,...studies];
 }
 function categoryPersonalCard({kind,item}){
@@ -43,7 +43,7 @@ async function renderPagedCategories(){
     if(token!==categoryRequest||!pane.open)return;
     categoryPages.set(key,current);
     const pages=Math.ceil(total/24);
-    content.innerHTML=(records.length?records.map(record=>key==='bookmark'?categoryPersonalCard(record):markedSummary(record,key)).join(''):'<p class="marked-empty">No results for these filters.</p>')+(pages>1?`<nav class="category-pagination" aria-label="${pane.querySelector('summary').textContent.replace(/\d+$/,'').trim()} results"><button type="button" data-category-offset="-1" ${current===0?'disabled':''}>← Previous</button><span role="status">${current+1} / ${pages}</span><button type="button" data-category-offset="1" ${current+1>=pages?'disabled':''}>Next →</button></nav>`:'');
+    content.innerHTML=(records.length?records.map(record=>key==='bookmark'?categoryPersonalCard(record):['stories','characters','prophecies'].includes(key)?categoryDirectoryCard(record,key):markedSummary(record,key)).join(''):'<p class="marked-empty">No results for these filters.</p>')+(pages>1?`<nav class="category-pagination" aria-label="${pane.querySelector('summary').textContent.replace(/\d+$/,'').trim()} results"><button type="button" data-category-offset="-1" ${current===0?'disabled':''}>← Previous</button><span role="status">${current+1} / ${pages}</span><button type="button" data-category-offset="1" ${current+1>=pages?'disabled':''}>Next →</button></nav>`:'');
     hydrateMarkedVerseTexts(++markedRenderGeneration);requestAnimationFrame(fitContextCitations);
    }catch{if(token===categoryRequest&&pane.open)content.innerHTML='<p>Results could not load. <button type="button" data-category-retry>Retry</button></p>';}
   }
@@ -62,3 +62,32 @@ async function renderPagedCategories(){
 let categoryListeners;
 function categoryListenerSignal(){categoryListeners?.abort();categoryListeners=new AbortController();return categoryListeners.signal;}
 if(view==='saved')renderPagedCategories();
+
+function categoryDirectoryCard(record,kind){
+ if(kind==='stories')return storyCard(record);
+ const refs=kind==='characters'?record.placements.slice(0,3).map(p=>({label:`${books[p.book].name} ${p.chapter}:${p.verse}`,ref:p})):[record.prediction_passage,record.fulfillment_passage].filter(Boolean).map(label=>({label,ref:readRef(label)}));
+ const citations=refs.filter(r=>r.ref).map(({label,ref})=>`<button type="button" class="verse-citation" data-read="${ref.book}/${ref.chapter}/${ref.verse}">${esc(label)}</button>`).join(' ');
+ return `<article class="category-directory-card" data-directory-kind="${kind}"><h3>${esc(record.title)}</h3>${record.summary?`<p>${esc(record.summary)}</p>`:''}<div class="category-directory-references">${citations}</div>${kind==='characters'?`<a class="text-button" href="#characters/${encodeURIComponent(record.id)}" aria-label="Full profile for ${esc(record.title)}">Details ↓</a>`:`<p class="category-prophecy-status">${esc(Object.values(record.taxonomy||{}).join(' · '))}</p>`}</article>`;
+}
+let bookmarksPage=0,bookmarksGeneration=0;
+async function renderBookmarks(){
+ const generation=++bookmarksGeneration,box=$('#bookmarks-list');if(view!=='bookmarks')return;
+ try{
+  if(!books.length){const response=await fetch('/api/books');if(!response.ok)throw Error();books=await response.json();}
+  if(generation!==bookmarksGeneration||view!=='bookmarks')return;
+  const items=categoryPersonalItems({book:-1,chapter:0,bookmarksOnly:true});
+  bookmarksPage=Math.min(bookmarksPage,Math.max(0,Math.ceil(items.length/24)-1));
+  const pages=Math.ceil(items.length/24);
+  box.innerHTML=items.length?`<p role="status">${items.length} ${items.length===1?'bookmark':'bookmarks'}</p>`+items.slice(bookmarksPage*24,(bookmarksPage+1)*24).map(categoryPersonalCard).join('')+(pages>1?`<nav class="category-pagination" aria-label="Bookmarks results"><button type="button" data-bookmarks-offset="-1" ${bookmarksPage===0?'disabled':''}>← Previous</button><span role="status">${bookmarksPage+1} / ${pages}</span><button type="button" data-bookmarks-offset="1" ${bookmarksPage+1>=pages?'disabled':''}>Next →</button></nav>`:''):'<p class="empty">No bookmarks yet. Bookmark a verse, chapter or study to keep it here.</p>';
+  hydrateMarkedVerseTexts(++markedRenderGeneration);
+ }catch{box.innerHTML='<p>Bookmarks could not load. <button type="button" data-bookmarks-retry>Retry</button></p>';}
+}
+$('#bookmarks-list').addEventListener('click',event=>{
+ const button=event.target.closest('[data-bookmarks-offset],[data-bookmarks-retry]');if(!button||button.disabled)return;
+ if(button.dataset.bookmarksOffset)bookmarksPage+=Number(button.dataset.bookmarksOffset);
+ void renderBookmarks();window.scrollTo({top:0,behavior:'instant'});
+});
+window.addEventListener('viewchange',event=>{if(event.detail==='bookmarks')void renderBookmarks();else bookmarksGeneration++;});
+const renderPassagesBeforeBookmarks=renderPassageSaved;
+renderPassageSaved=function(){renderPassagesBeforeBookmarks();if(view==='bookmarks')void renderBookmarks();};
+if(view==='bookmarks')void renderBookmarks();
