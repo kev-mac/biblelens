@@ -2086,3 +2086,4 @@ body .timeline-event-card>.card-disclosure-preview{grid-column:1/-1}
 body #saved-view .marked-category-content{grid-template-columns:minmax(0,1fr)}
 body #saved-view .marked-category-content>article{min-width:0;max-width:100%}
 body #saved-view .comparison-summary{overflow-wrap:anywhere}
+body .context-citations [hidden]{display:none!important}
