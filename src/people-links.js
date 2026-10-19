@@ -1,12 +1,13 @@
 // A name shared by several people needs passage evidence before it can link.
 const escapeHTML=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const commonNames=new Set(['on','no','an','as','is','us','and','the','all','or','so','he','her','his','she','him','it','can','may','will','god','lord','israel','judah','edom']);
+const titleAliases=new Set('son,lamb,saviour,holy,word,prophet,master,light,prince,branch,root,judge,sun,king,messiah,wonderful,counsellor,sceptre,star,shiloh,father,fathers,hosts,host,almighty,last,lawgiver,dayspring,ancient,spirits,comforter'.split(','));
 export function createPersonMatcher(people){
  const names=new Map();
  for(const person of people){
   if(!person||typeof person.id!=='string'||typeof person.name!=='string')continue;
   for(const label of new Set([person.name,...(Array.isArray(person.aliases)?person.aliases:[])])){
-   if(typeof label!=='string'||label.length<3||commonNames.has(label.toLowerCase()))continue;
+   if(typeof label!=='string'||label.length<3||commonNames.has(label.toLowerCase())||(label.toLowerCase()!==person.name.toLowerCase()&&titleAliases.has(label.toLowerCase())))continue;
    const key=label.toLowerCase(),matches=names.get(key)||new Map();matches.set(person.id,person);names.set(key,matches);
   }
  }

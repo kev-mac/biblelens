@@ -12,11 +12,11 @@ assert.equal(context.saveTextHighlights([{book:0,chapter:1,verse:1,highlights:[f
 assert.equal(context.saveTextHighlights([{book:0,chapter:1,verse:1,highlights:[first]}]),false,'Unchanged selection does not write twice');
 const stored=context.normalizeVerseRecords(JSON.parse(JSON.stringify(context.state.verseBookmarks)));
 assert.equal(stored['0:1:1'].highlights[0].text,first.text,'Exact selected words survive reload');
-assert(context.savedHighlightHtml(0,1,1).includes('&lt;word'));
+assert.equal(context.markedVerseTextParts(first.text,'kjv',0,1,1)[0].highlight.color,'yellow');
 context.saveTextHighlights([{book:0,chapter:1,verse:1,highlights:[{...first,color:'pink'}]}]);
 assert.equal(context.state.verseBookmarks['0:1:1'].highlights.length,1,'Recoloring updates the selected range instead of duplicating it');
 assert.equal(context.normalizeVerseRecords(JSON.parse(JSON.stringify(context.state.verseBookmarks)))['0:1:1'].highlights[0].color,'pink','Selected color survives reload');
-assert(context.savedHighlightHtml(0,1,1).includes('data-highlight-color="pink"'));
+assert.equal(context.markedVerseTextParts(first.text,'kjv',0,1,1)[0].highlight.color,'pink');
 const second={edition:'web',start:13,end:17,text:'word'};
 context.saveTextHighlights([{book:0,chapter:1,verse:1,highlights:[second]}]);assert.equal(context.state.verseBookmarks['0:1:1'].highlights.length,2,'Different editions retain their own ranges');
 const people=[{id:'j1',name:'James',refs:[[39,4,21]]},{id:'j2',name:'James',refs:[[44,1,13]]},{id:'moses',name:'Moses',refs:[[1,3,4]],aliases:['Moshe']},{id:'on',name:'On'}];
@@ -39,3 +39,23 @@ assert(context.editTextHighlight(0,1,1,first,null));assert.equal(context.state.v
 assert(context.state.verseBookmarks['0:1:1']);assert.equal(context.state.verseNotes['0:1:1'].text,'Personal note');
 assert(!context.editTextHighlight(0,1,1,first,'not-a-color'));
 console.log('PASS: context menu recoloring and removal affect only the matching highlight and preserve its bookmark and private note.');
+
+// Bookmarks render one whole verse per saved edition, with source-positioned
+// highlights rather than a duplicate excerpt below the verse.
+const rawVerse='And God made the firmament, and divided the waters which were under the firmament from the waters which were above the firmament: and it was so.';
+const phrase='firmament from the waters',offset=rawVerse.indexOf(phrase);
+context.state.verseBookmarks['0:1:7']={book:0,chapter:1,verse:7,name:'Genesis',highlights:[{edition:'kjv',start:offset,end:offset+phrase.length,text:phrase,color:'green'}]};
+const parts=context.markedVerseTextParts(rawVerse,'kjv',0,1,7);
+assert.equal(parts.map(p=>p.text).join(''),rawVerse);assert.equal(parts.filter(p=>p.highlight).map(p=>p.text).join(''),phrase);
+assert.equal(context.markedVerseTextParts(rawVerse,'web',0,1,7).filter(p=>p.highlight).length,0,'Do not apply offsets from a different translation');
+assert(!context.bookmarkVerseTextHtml(0,1,7).includes('saved-highlight'));
+assert(context.bookmarkVerseTextHtml(0,1,7).includes('data-marked-edition="kjv"'),'Saved KJV highlight stays visible even when reader edition changes');
+const safeNode=()=>{const node={dataset:{},textContent:''};Object.defineProperty(node,'innerHTML',{set(){throw Error('Source text must never be assigned as HTML')}});return node;};
+context.document={createElement:safeNode,createTextNode:text=>({textContent:text})};
+const field={replaceChildren(...children){this.children=children}};
+context.fillMarkedVerseText(field,rawVerse,'kjv',0,1,7);assert.equal(field.children.map(n=>n.textContent).join(''),rawVerse+' (KJV)');
+assert.equal(field.children.filter(n=>n.className==='text-highlight').length,1);assert.equal(field.children.find(n=>n.className==='text-highlight').dataset.highlightColor,'green');
+assert.equal(context.markedVerseTextParts(' Public <b>verse</b> {H123} text. ','kjv',0,1,8).map(p=>p.text).join(''),'Public verse text.');
+for(const text of ['Light and darkness','The Word','The King','The Sun','The Son'])assert.equal(real(text).length,0,'A descriptive title is not a person name: '+text);
+assert(real('Jesus',{book:45,chapter:1,verse:1}).length);assert(real('Amittai',{book:31,chapter:1,verse:1}).length);assert(real('Abel').length);
+console.log('PASS: bookmark verse contains the original highlight once, keeps its saved edition and context-menu metadata, uses safe text nodes, and excludes title aliases such as Light.');

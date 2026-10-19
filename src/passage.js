@@ -23,9 +23,33 @@ function normalizeTextHighlights(value){
  return clean;
 }
 function combineTextHighlights(first,second){return normalizeTextHighlights([...(first||[]),...(second||[])]);}
-function savedHighlightHtml(book,chapter,verse){
+function bookmarkVerseTextHtml(book,chapter,verse){
  const ranges=normalizeTextHighlights(state.verseBookmarks?.[`${book}:${chapter}:${verse}`]?.highlights);
- return ranges.map(item=>`<p class="saved-highlight"><mark class="text-highlight" data-highlight-book="${book}" data-highlight-chapter="${chapter}" data-highlight-verse="${verse}" data-highlight-start="${item.start}" data-highlight-end="${item.end}" data-highlight-edition="${item.edition}" data-highlight-color="${item.color}">${esc(item.text)}</mark> <small>${item.edition.toUpperCase()} · Marked</small></p>`).join('');
+ const editions=[...new Set(ranges.map(h=>h.edition))];
+ return (editions.length?editions:['']).map(edition=>`<p class="marked-verse-text" data-marked-verse-text="${book}/${chapter}/${verse}"${edition?` data-marked-edition="${edition}"`:''} aria-live="polite" aria-busy="true">Loading verse text…</p>`).join('');
+}
+function markedVerseTextParts(value,edition,book,chapter,verse){
+ const source=String(value),ranges=normalizeTextHighlights(state.verseBookmarks?.[`${book}:${chapter}:${verse}`]?.highlights).filter(h=>h.edition===edition&&source.slice(h.start,h.end)===h.text),parts=[];
+ // Keep source offsets while removing only reference markup and collapsing
+ // display whitespace. Source text is always assigned through textContent.
+ for(const match of source.matchAll(/\{[HG]\d+\}|<[^>]*>|\s+|[^]/g)){
+  const raw=match[0];if(/^\{[HG]\d+\}$/.test(raw)||/^<[^>]*>$/.test(raw))continue;
+  if(/^\s+$/.test(raw)&&parts.at(-1)?.text.endsWith(' '))continue;
+  const text=/^\s+$/.test(raw)?' ':raw,highlight=ranges.filter(h=>match.index>=h.start&&match.index<h.end).at(-1),last=parts.at(-1);
+  if(last&&last.highlight===highlight)last.text+=text;else parts.push({text,highlight});
+ }
+ if(parts.length){parts[0].text=parts[0].text.trimStart();parts.at(-1).text=parts.at(-1).text.trimEnd();}
+ return parts.filter(part=>part.text);
+}
+function fillMarkedVerseText(field,value,edition,book,chapter,verse){
+ const parts=markedVerseTextParts(value,edition,book,chapter,verse);
+ if(!parts.some(part=>part.highlight)){field.textContent=parts.map(part=>part.text).join('')+' ('+edition.toUpperCase()+')';return;}
+ const nodes=parts.map(part=>{
+  if(!part.highlight)return document.createTextNode(part.text);
+  const mark=document.createElement('mark'),h=part.highlight;mark.className='text-highlight';mark.textContent=part.text;
+  Object.assign(mark.dataset,{highlightBook:String(book),highlightChapter:String(chapter),highlightVerse:String(verse),highlightStart:String(h.start),highlightEnd:String(h.end),highlightEdition:h.edition,highlightColor:h.color});return mark;
+ });
+ field.replaceChildren(...nodes,document.createTextNode(' ('+edition.toUpperCase()+')'));
 }
 function saveTextHighlights(entries){
  let changed=false;
@@ -115,7 +139,7 @@ async function hydrateMarkedVerseTexts(generation=markedRenderGeneration){
     chapterData=await request;
    }
    if(generation!==markedRenderGeneration)return;
-   for(const {field,verse}of group.fields){const item=chapterData.verses?.find(item=>item.n===verse),chosen=field.dataset.markedEdition||edition,used=item?.[chosen]?chosen:'kjv',value=item?.[used];field.textContent=value?String(value).replace(/\{[HG]\d+\}/g,'').replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim()+' ('+used.toUpperCase()+')':'This verse is unavailable in the supplied edition. Open the passage to read it.';field.setAttribute('aria-busy','false');}
+   for(const {field,verse}of group.fields){const item=chapterData.verses?.find(item=>item.n===verse),chosen=field.dataset.markedEdition||edition,used=item?.[chosen]?chosen:'kjv',value=item?.[used];if(value)fillMarkedVerseText(field,value,used,group.book,group.chapter,verse);else field.textContent='This verse is unavailable in the supplied edition. Open the passage to read it.';field.setAttribute('aria-busy','false');}
   }catch{if(generation!==markedRenderGeneration)return;for(const {field}of group.fields){field.textContent='Verse text could not load. Open this verse to read it.';field.setAttribute('aria-busy','false');}}
  }}
  await Promise.all(Array.from({length:Math.min(3,pending.length)},()=>hydrateGroup()));
@@ -137,7 +161,7 @@ function renderPassageSaved(){
  const records={...state.passageBookmarks,...state.passageNotes},items=Object.entries(records);
  box.innerHTML=items.length?'<h2>Marked Passages</h2><div class="passage-saved-grid">'+items.map(([key,item])=>'<article class="passage-saved-card">'+(item.title?'<h3>'+esc(item.title)+'</h3>':'')+'<button class="secondary" data-read="'+item.book+'/'+item.chapter+'">'+esc(item.name)+' '+item.chapter+'</button>'+(item.text?'<p class="passage-saved-note">'+esc(item.text)+'</p>':'')+noteActionButtons(item.book+'/'+item.chapter)+'</article>').join('')+'</div>':'';
  const marked=Object.entries({...state.verseBookmarks,...state.verseNotes});
- if(marked.length)box.innerHTML+='<h2>Marked Verses</h2><div class="passage-saved-grid">'+marked.map(([key,item])=>`<article class="passage-saved-card">${item.title?`<h3>${esc(item.title)}</h3>`:''}<button class="secondary" data-read="${item.book}/${item.chapter}/${item.verse}">${esc(item.name)} ${item.chapter}:${item.verse}</button><p class="marked-verse-text" data-marked-verse-text="${item.book}/${item.chapter}/${item.verse}" aria-live="polite" aria-busy="true">Loading verse text…</p>${savedHighlightHtml(item.book,item.chapter,item.verse)}${state.verseNotes[key]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[key].text)}</p>`:''}${noteActionButtons(`${item.book}/${item.chapter}/${item.verse}`)}</article>`).join('')+'</div>';
+ if(marked.length)box.innerHTML+='<h2>Marked Verses</h2><div class="passage-saved-grid">'+marked.map(([key,item])=>`<article class="passage-saved-card">${item.title?`<h3>${esc(item.title)}</h3>`:''}<button class="secondary" data-read="${item.book}/${item.chapter}/${item.verse}">${esc(item.name)} ${item.chapter}:${item.verse}</button>${bookmarkVerseTextHtml(item.book,item.chapter,item.verse)}${state.verseNotes[key]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[key].text)}</p>`:''}${noteActionButtons(`${item.book}/${item.chapter}/${item.verse}`)}</article>`).join('')+'</div>';
  const studyCount=ENTRIES.filter(e=>state.bookmarks.includes(e.id)||state.notes[e.id]).length;
  $('#save-count').textContent=studyCount+items.length+marked.length;
  const empty=$('#saved-cards .empty');if(empty)empty.hidden=items.length+marked.length>0;

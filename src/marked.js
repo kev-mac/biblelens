@@ -31,9 +31,9 @@ function requestMarkedBookData(book,chapter=0){
 function markedRecordVisible(record){return record.placements.some(p=>markedChoices(record,p).some(visibleComparison));}
 function markedMatchingPlacements(record){return record.placements.filter(p=>(!markedChapterSelection||p.chapter===markedChapterSelection)&&markedChoices(record,p).some(choice=>visibleComparison(choice)&&(markedKind==='all'||filterCategory(choice)===markedKind)));}
 function markedCardId(record){return 'marked-comparison-'+markedData.records.findIndex(r=>r.key===record.key);}
-function markedVerseRow(chapter,verse){
+function markedVerseRow(chapter,verse,personal=false){
  const book=markedBookSelection,label=`${books[book].name} ${chapter}:${verse}`,item=markedData.verses[chapter+':'+verse],edition=$('#reader-edition').value||'kjv',text=item?.[edition]||item?.kjv;
- return `<div class="marked-verse-row"><button type="button" class="verse-citation" data-read="${book}/${chapter}/${verse}">${esc(label)}</button>${text?`<p class="marked-verse-text">${esc(String(text).replace(/\{[HG]\d+\}/g,''))}</p>`:`<p class="marked-verse-text" data-marked-verse-text="${book}/${chapter}/${verse}" aria-busy="true">Loading verse text…</p>`}</div>`;
+ return `<div class="marked-verse-row"><button type="button" class="verse-citation" data-read="${book}/${chapter}/${verse}">${esc(label)}</button>${personal?bookmarkVerseTextHtml(book,chapter,verse):text?`<p class="marked-verse-text">${esc(String(text).replace(/\{[HG]\d+\}/g,''))}</p>`:`<p class="marked-verse-text" data-marked-verse-text="${book}/${chapter}/${verse}" aria-busy="true">Loading verse text…</p>`}</div>`;
 }
 function markedGroup(record){
  const choices=markedMatchingPlacements(record).flatMap(p=>markedChoices(record,p)).filter(visibleComparison);
@@ -73,7 +73,7 @@ function renderMarkedResults(){
  const passages=Object.values({...state.passageBookmarks,...state.passageNotes}).filter(v=>v.book===book&&(!markedChapterSelection||v.chapter===markedChapterSelection));
  const records=markedKind==='bookmark'?[]:markedData.records.filter(markedRecordVisible).filter(markedCommandmentMatches).filter(record=>markedMatchingPlacements(record).length);
  const showMarks=markedKind==='all'||markedKind==='bookmark';
- let html=showMarks&&marks.length?`<h2>Marked</h2><div class="marked-bookmarks">${marks.map(item=>`<article class="passage-saved-card marked-bookmark" data-tone="bookmark">${markedVerseRow(item.chapter,item.verse)}${savedHighlightHtml(book,item.chapter,item.verse)}${state.verseNotes[`${book}:${item.chapter}:${item.verse}`]?.title?`<h3>${esc(state.verseNotes[`${book}:${item.chapter}:${item.verse}`].title)}</h3>`:''}${state.verseNotes[`${book}:${item.chapter}:${item.verse}`]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[`${book}:${item.chapter}:${item.verse}`].text)}</p>`:''}${noteActionButtons(`${book}/${item.chapter}/${item.verse}`)}</article>`).join('')}</div>`:'';
+ let html=showMarks&&marks.length?`<h2>Marked</h2><div class="marked-bookmarks">${marks.map(item=>`<article class="passage-saved-card marked-bookmark" data-tone="bookmark">${markedVerseRow(item.chapter,item.verse,true)}${state.verseNotes[`${book}:${item.chapter}:${item.verse}`]?.title?`<h3>${esc(state.verseNotes[`${book}:${item.chapter}:${item.verse}`].title)}</h3>`:''}${state.verseNotes[`${book}:${item.chapter}:${item.verse}`]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[`${book}:${item.chapter}:${item.verse}`].text)}</p>`:''}${noteActionButtons(`${book}/${item.chapter}/${item.verse}`)}</article>`).join('')}</div>`:'';
  if(showMarks&&passages.length)html+=`<h2>Marked Passages</h2>${passages.map(item=>`<article class="passage-saved-card marked-bookmark" data-tone="bookmark"><button class="verse-citation" data-read="${book}/${item.chapter}">${esc(item.name)} ${item.chapter}</button>${item.title?`<h3>${esc(item.title)}</h3>`:''}${item.text?`<p>${esc(item.text)}</p>`:''}${noteActionButtons(`${book}/${item.chapter}`)}</article>`).join('')}`;
  const personal=html;html='';
  const notes=ENTRIES.filter(e=>(state.notes[e.id]||state.noteTitles?.[e.id])&&e.refs.some(ref=>(book===-1||readRef(ref)?.book===book)));

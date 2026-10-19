@@ -1571,9 +1571,9 @@ body .character-relative-chip:hover{background:rgba(var(--relative-rgb),.24);bor
 
 
 /* Places & Geography: inline reader chips and the shared glass bottom sheet. */
-body .location-chip{display:inline-flex;vertical-align:baseline;align-items:center;justify-content:center;gap:3px;min-width:48px;min-height:48px;box-sizing:border-box;margin:1px 2px;padding:3px 8px;border:1px solid rgba(var(--theme-rgb),.18);border-radius:14px;background:rgba(var(--theme-rgb),.06);color:inherit;font:inherit;line-height:inherit;white-space:normal;text-align:start;cursor:pointer;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);touch-action:manipulation}
-body .location-chip:hover{background:rgba(var(--theme-rgb),.14)}
-.location-chip:focus-visible,.atlas-sheet button:focus-visible,.atlas-sheet a:focus-visible{outline:2px solid rgb(var(--theme-rgb));outline-offset:3px}
+body :is(.location-chip,.person-chip){display:inline-flex;vertical-align:baseline;align-items:center;justify-content:center;gap:3px;min-width:48px;min-height:48px;box-sizing:border-box;margin:1px 2px;padding:3px 8px;border:1px solid rgba(var(--theme-rgb),.18);border-radius:14px;background:rgba(var(--theme-rgb),.06);color:inherit;font:inherit;line-height:inherit;white-space:normal;text-align:start;cursor:pointer;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);touch-action:manipulation}
+body :is(.location-chip,.person-chip):hover{background:rgba(var(--theme-rgb),.14)}
+:is(.location-chip,.person-chip):focus-visible,.atlas-sheet button:focus-visible,.atlas-sheet a:focus-visible{outline:2px solid rgb(var(--theme-rgb));outline-offset:3px}
 body dialog.atlas-sheet{position:fixed;inset:auto 0 0;margin:0 auto;width:min(100%,760px);max-width:100%;height:80vh;height:80dvh;max-height:80dvh;box-sizing:border-box;padding:0;border:1px solid rgba(var(--theme-rgb),.35);border-bottom:0;border-radius:26px 26px 0 0;color:var(--ink);background:color-mix(in srgb,var(--panel) 94%,transparent);box-shadow:0 -12px 48px rgba(var(--theme-rgb),.15);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);overflow:hidden}
 .atlas-sheet[open]{display:flex;flex-direction:column}
 .atlas-sheet::backdrop{background:rgba(4,9,18,.65);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
@@ -1599,7 +1599,7 @@ body .atlas-sheet .leaflet-control-attribution a{color:#005477}
 body{--surface-base:.1;--surface-gradient:.15;--focus-blue:#1263bc;--ui-link:#174e8c;--control-text:var(--ink);background:var(--bg)}
 body.dark{--focus-blue:#8cc8ff;--ui-link:#9acbff;--control-text:var(--ink)}
 body :is(button,a,input,select,textarea,summary,[tabindex]){text-shadow:none}
-body :is(button,.glass-pill,.chip,.agreement,.story-theme,.character-story-chip,.character-relative-chip,.location-chip){box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+body :is(button,.glass-pill,.chip,.agreement,.story-theme,.character-story-chip,.character-relative-chip,.location-chip,.person-chip){box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
 body :is(.glass-summary,.comparison-summary,.assessment,.character-sheet-body>p,.character-summary,.card,.story-card,.character-card,.commandment-card,.prophecy-card,.timeline-card,.timeline-event-card,.saved-passage-card,.passage,.analysis-box,.method-grid article){
  background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,99,102,241),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,99,102,241),var(--surface-base))!important;
  border:1px solid rgba(var(--theme-rgb,99,102,241),.35);border-radius:22px;padding:18px;
@@ -1617,8 +1617,8 @@ body :is(.character-verses a,.character-passage,.commandment-passage,.prophecy-p
 body :is(.summary-citations,.chat-summary-sources,.marked-citations) :is(a,button),body .citation-chip{border-radius:999px;padding:4px 9px;background:rgba(var(--theme-rgb,99,102,241),var(--surface-base))!important;box-shadow:none!important}
 body :is(.timeline-passage,.character-name){background:none!important;border:0!important;padding-inline:0;color:var(--ui-link)!important;text-decoration:none!important;text-underline-offset:3px}
 /* Running text must remain selectable. Inline links deliberately retain text geometry. */
-body :is(p,q,blockquote,.verse-body,.message-body,.comparison-summary-text) :is(a,button[data-cite],.location-chip),body .location-chip{display:inline;min-width:0;min-height:0;width:auto;height:auto;margin:0;padding:0;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;color:var(--ui-link)!important;font:inherit;line-height:inherit;text-decoration:none;text-underline-offset:3px;vertical-align:baseline}
-body .location-chip>span[aria-hidden]{display:none}
+body :is(p,q,blockquote,.verse-body,.message-body,.comparison-summary-text) :is(a,button[data-cite],.location-chip,.person-chip),body :is(.location-chip,.person-chip){display:inline;min-width:0;min-height:0;width:auto;height:auto;margin:0;padding:0;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;color:var(--ui-link)!important;font:inherit;line-height:inherit;text-decoration:none;text-underline-offset:3px;vertical-align:baseline}
+body :is(.location-chip,.person-chip)>span[aria-hidden]{display:none}
 /* D4 search and composer share one whole-field focus boundary. */
 body input[type=search],body .characters-search-box,body #chat-form{min-height:48px;border-radius:24px;border:1px solid var(--line);background:var(--panel);font-size:16px}
 body input[type=search]{padding:10px 16px}
@@ -1715,7 +1715,7 @@ body #chat-view .chat-typing{background:var(--panel)!important;border:1px solid 
  body #atlas-map{height:52dvh;min-height:300px}
  body .story-card,body .character-card,body .commandment-card,body .prophecy-card{padding:16px}
  /* Inline prose links remain text-sized and do not cover neighboring text. */
- body :is(p,q,blockquote,.verse-body,.message-body) :is(button[data-cite],.location-chip){min-width:0;min-height:0}
+ body :is(p,q,blockquote,.verse-body,.message-body) :is(button[data-cite],.location-chip,.person-chip){min-width:0;min-height:0}
 }
 body :is(.study-actions button,.passage-actions button){display:inline-flex;align-items:center;justify-content:center;gap:8px}
 body .bookmark svg{display:block;width:20px;height:20px}
@@ -1736,7 +1736,7 @@ body span.character-badge{background:none!important;border:0;padding:0;min-heigh
 @media(max-width:600px){
  body button,body select,body input:not([type=radio]):not([type=checkbox]){min-height:44px}
  body :is(.comparison-sources,.timeline-sources,.atlas-attribution) a{display:inline-flex;align-items:center;min-height:44px}
- body :is(p,q,blockquote,.verse-body,.message-body) :is(button[data-cite],.location-chip){min-width:0;min-height:0}
+ body :is(p,q,blockquote,.verse-body,.message-body) :is(button[data-cite],.location-chip,.person-chip){min-width:0;min-height:0}
 }
 body *{filter:none!important}
 body .passage-saved-card{border-radius:22px;background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,99,102,241),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,99,102,241),var(--surface-base));padding:18px}
@@ -1763,7 +1763,7 @@ body #timeline-reviewed{min-width:0;max-width:100%;width:100%}
  body :is(.timeline-date-comparison,.timeline-discrepancy-content){grid-template-columns:1fr;min-width:0}
  body .timeline-event-card.has-discrepancy .timeline-event-body{padding-right:0;padding-top:44px}
  body .timeline-event-card{width:100%;min-width:0}
- body :is(p,q,blockquote,.verse-body,.message-body) :is(button[data-cite],.location-chip){min-height:0!important;min-width:0!important}
+ body :is(p,q,blockquote,.verse-body,.message-body) :is(button[data-cite],.location-chip,.person-chip){min-height:0!important;min-width:0!important}
 }
 body .leaflet-tooltip{opacity:1!important}
 body>header nav :is([data-view],#reader-picker){opacity:1}
@@ -1803,9 +1803,11 @@ body span.character-badge{min-height:0!important;padding:0!important}
 body .skip{display:inline-flex;align-items:center;min-height:44px}
 
 /* Owner browser follow-up: shared sizes, readable menus and restrained link styling. */
-body :is(a,a:hover,a:focus,a:visited,button.location-chip,button[data-cite]),body :is(#reset,#stories-reset,#prophecy-reset,#commandments-reset,#commandments-clear){text-decoration:none!important}
+body :is(a,a:hover,a:focus,a:visited,button:is(.location-chip,.person-chip),button[data-cite]),body :is(#reset,#stories-reset,#prophecy-reset,#commandments-reset,#commandments-clear){text-decoration:none!important}
 body .passage-picker-trigger,body #chat-view #clear-chat{width:58px!important;height:58px!important;min-width:58px!important;min-height:58px!important;padding:16px!important}
-body .passage-picker-trigger svg,body #chat-view #clear-chat svg{width:24px;height:24px}
+body .passage-picker-trigger svg{width:1em;height:1em;flex-shrink:0}
+body #chat-view #clear-chat svg{width:24px;height:24px}
+body .passage-picker-trigger{padding:14px!important;font-size:28px}
 body #reader-font,body .surface-settings input[type=range]{accent-color:var(--focus-blue)}
 body #reader-compare[aria-checked=true] .switch-track{background:var(--focus-blue);border-color:var(--focus-blue)}
 body .results-line{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
@@ -1913,7 +1915,7 @@ body .stories-list{padding:0;max-height:none!important;overflow:visible!importan
 body.read-view .dock-pagination button{flex:0 0 58px!important;width:58px!important;max-width:58px!important;min-width:58px!important;height:58px!important;border-radius:50%!important}
 body.read-view .comparison-dock,html.native-ios body.read-view .comparison-dock{transform:translate(-50%,0)!important;transition:opacity .15s,visibility .15s}
 html:has(dialog[open]){overscroll-behavior:none}
-body :is(.location-chip,.verse-citation,.verse-link){-webkit-touch-callout:none}
+body :is(.location-chip,.person-chip,.verse-citation,.verse-link){-webkit-touch-callout:none}
 
 /* Categories heading controls, directory results and the Bookmarks destination. */
 body #saved-view>.page-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
@@ -1973,9 +1975,9 @@ body .story-card{--theme-rgb:156,88,50}
 body.dark .story-card{--theme-rgb:230,171,136}
 
 /* Passage links stay quiet; keyboard focus uses an underline rather than a box. */
-html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip){border:0!important;box-shadow:none!important}
-html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):is(:hover,:focus,:focus-visible){outline:none!important}
-html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):focus-visible{text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:4px!important}
+html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip){border:0!important;box-shadow:none!important}
+html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):is(:hover,:focus,:focus-visible){outline:none!important}
+html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):focus-visible{text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:4px!important}
 
 /* The Bookmarks destination carries the same gold accent as its navigation icon. */
 body #bookmarks-view{--theme-rgb:234,179,8;--line:rgba(184,134,11,.55);--border:var(--line)}
@@ -1985,9 +1987,8 @@ body.dark #bookmarks-view{--line:rgba(234,179,8,.55)}
 body #chapter-text .verse:has(.verse-body.verse-bookmarked){background:transparent!important;background-color:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;backdrop-filter:none;-webkit-backdrop-filter:none;color:inherit;text-shadow:none;padding:8px 0!important}
 body #chapter-text [data-scripture],body #chapter-text [data-scripture] *{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
 body #chapter-text [data-scripture] [aria-hidden="true"],body #chapter-text .verse-num{-webkit-user-select:none;user-select:none}
-body .text-highlight,.saved-highlight mark{background:rgba(234,179,8,.28);color:inherit;border:0;border-radius:2px;box-shadow:none;padding:0}
-.saved-highlight{white-space:pre-wrap}.saved-highlight small{color:var(--muted);font-size:.75rem}
-body .person-chip{display:inline;border:0;border-bottom:1px dotted currentColor;border-radius:0;background:none;color:var(--green);font:inherit;line-height:inherit;padding:0;cursor:pointer;text-align:inherit;touch-action:manipulation}
+body .text-highlight{background:rgba(234,179,8,.28);color:inherit;border:0;border-radius:2px;box-shadow:none;padding:0}
+
 body #chapter-text .verse-num{cursor:pointer}
 /* A compact palette follows the selected words; cards retain their gold frame. */
 .highlight-color-picker{position:fixed;z-index:90;display:flex;align-items:center;gap:5px;padding:6px;border:1px solid var(--line);border-radius:999px;background:var(--panel);box-shadow:0 4px 22px #0004;touch-action:manipulation}
@@ -2005,5 +2006,5 @@ body .highlight-menu-heading button{min-width:28px;min-height:28px;width:28px;he
 body .highlight-menu-colors button{display:grid;place-items:center;min-width:32px;min-height:32px;width:32px;height:32px;padding:0;border:2px solid transparent;border-radius:50%;background:var(--swatch)!important;color:#132131;box-shadow:none!important}
 .highlight-menu-colors button span{opacity:0}body .highlight-menu-colors button[aria-pressed="true"]{border-color:var(--ink)}.highlight-menu-colors button[aria-pressed="true"] span{opacity:1}
 .highlight-menu-actions{display:flex;gap:8px;margin-top:10px}body .highlight-menu-actions button{min-height:36px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--soft)!important;font-size:.8rem;color:inherit;box-shadow:none!important}
-body .saved-highlight .text-highlight{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+body .marked-verse-text .text-highlight{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 body #chapter-text .comparison-panel[data-tone="bookmark"],body #chapter-text .verse-comparison[data-tone="bookmark"] .comparison-summary{border:0!important;box-shadow:none!important;background:transparent!important}
