@@ -64,7 +64,7 @@ function markedSummary(record,category=markedKind){
 function renderMarkedContext(){
  const summary=[markedBookSelection===-1?'All Books':books[markedBookSelection].name,markedChapterSelection?String(markedChapterSelection):'',markedKind==='all'?'':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1],markedTheme==='all'?'':markedTheme,markedCommandmentType==='all'?'':markedCommandmentType].filter(Boolean).join(' · ');
  const criteria=$('#category-filter-summary');if(criteria)criteria.textContent='Showing: '+[markedBookSelection===-1?'All books':books[markedBookSelection].name,markedChapterSelection?'Chapter '+markedChapterSelection:'All chapters',markedKind==='all'?'All categories':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1],markedTheme==='all'?'':'Theme: '+markedTheme,markedCommandmentType==='all'?'':'Type: '+markedCommandmentType].filter(Boolean).join(' · ');
- const context=$('#header-context');context.dataset.marked=summary;if(view==='saved'){context.textContent=summary;context.parentElement?.setAttribute('aria-label',summary+' — Open navigation');}
+ const context=$('#header-context');context.dataset.marked=summary;if(view==='saved')updateHeaderContext();
  $('#marked-context').innerHTML=`<button type="button" id="marked-filter-open" class="secondary" aria-haspopup="dialog" aria-controls="marked-filter-dialog" aria-label="Filter marked verses and categories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg><span>Filter</span></button>`;
  $('#marked-filter-open').onclick=openMarkedFilters;
 }

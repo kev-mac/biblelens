@@ -46,7 +46,7 @@ async function renderPagedCategories(){
   const meta=await response.json();if(generation!==markedWorkspaceGeneration||view!=='saved')return;
   markedData=meta;const personal=categoryPersonalItems(),counts={...meta.counts,bookmark:personal.length};
   if(!route){
-   box.innerHTML='<div class="marked-comparisons">'+MARKED_CATEGORIES.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>`<a class="marked-category-pane category-page-link" href="${esc(categoryLocation(key))}" data-category-page="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}"><span class="marked-category-icon">${categoryIcon(key)}</span><span>${label}</span><span class="marked-count">${counts[key]||0}</span><span aria-hidden="true">→</span></a>`).join('')+'</div>';
+   box.innerHTML='<div class="marked-comparisons">'+MARKED_CATEGORIES.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>`<a class="marked-category-pane category-page-link" href="${esc(categoryLocation(key))}" data-category-page="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}"><span class="marked-category-icon">${categoryIcon(key)}</span><span>${label}</span><span class="marked-count">${counts[key]||0}</span></a>`).join('')+'</div>';
    box.onclick=null;return;
   }
   const key=route.key;

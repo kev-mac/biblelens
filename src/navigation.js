@@ -1,16 +1,18 @@
 'use strict';
 // The header label opens a touch-friendly overview; compact header shortcuts remain available.
 (() => {
- const trigger = document.querySelector('#settings-navigation');
+ const triggers = [document.querySelector('#settings-navigation'), document.querySelector('header .brand')];
  const sheet = document.createElement('dialog');
  sheet.id = 'navigation-sheet'; sheet.className = 'navigation-sheet';
  sheet.setAttribute('aria-labelledby', 'navigation-heading');
  sheet.innerHTML = '<div class="navigation-heading"><h2 id="navigation-heading">Menu</h2><button type="button" data-navigation-close aria-label="Close navigation" autofocus>✕</button></div><div class="navigation-grid"></div>';
  document.body.append(sheet);
+ for(const trigger of triggers){
  trigger.setAttribute('role', 'button');
  trigger.setAttribute('aria-haspopup', 'dialog');
  trigger.setAttribute('aria-controls', sheet.id);
  trigger.setAttribute('aria-expanded', 'false');
+ }
  const grid = sheet.querySelector('.navigation-grid');
  const pages = [['explore','Read'],['chat','Chat'],['saved','Categories'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['commandments','Commandments'],['prophecies','Prophecies'],['timeline','Timeline']];
  for (const [page, label] of pages) {
@@ -29,10 +31,12 @@
    if (button.dataset.navigationView === view) button.setAttribute('aria-current', 'page');
    else button.removeAttribute('aria-current');
   }
-  document.querySelector('#reader-settings').close();sheet.showModal(); trigger.setAttribute('aria-expanded', 'true'); document.body.classList.add('navigation-open');
+  document.querySelector('#reader-settings').close();sheet.showModal(); for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'true'); document.body.classList.add('navigation-open');
  }
+ for(const trigger of triggers){
  trigger.addEventListener('click', event => { event.preventDefault(); open(); });
  trigger.addEventListener('keydown', event => { if (event.key === ' ') { event.preventDefault(); open(); } });
+ }
  sheet.querySelector('[data-navigation-close]').addEventListener('click', () => sheet.close());
  grid.addEventListener('click', event => {
   const button = event.target.closest('button'); if (!button) return;
@@ -40,7 +44,7 @@
   if (button.dataset.navigationView) { setView(button.dataset.navigationView); window.scrollTo({top:0,behavior:'smooth'}); }
   else if (button.hasAttribute('data-navigation-settings')) requestAnimationFrame(() => document.querySelector('#reader-picker').click());
  });
- sheet.addEventListener('close', () => { trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');document.querySelector('#reader-picker').focus({preventScroll:true}); });
+ sheet.addEventListener('close', () => { for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');document.querySelector('#reader-picker').focus({preventScroll:true}); });
  const outside = event => { const r = sheet.getBoundingClientRect(); return event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom; };
  let backdropStart = false;
  sheet.addEventListener('pointerdown', event => { backdropStart = event.target === sheet && outside(event); });
@@ -48,7 +52,7 @@
  window.addEventListener('viewchange', () => { if (sheet.open) sheet.close(); });
 })();
 
-// The header has one row of evenly spaced destinations; Settings stays last.
+// Keep shortcuts in one row; Settings stays last.
 (() => {
  const nav=document.querySelector('header nav');
  for(const page of ['explore','chat','saved','bookmarks','stories','characters','commandments','prophecies'])nav.append(nav.querySelector(`[data-view="${page}"]`));

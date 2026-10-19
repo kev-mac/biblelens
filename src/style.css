@@ -2031,3 +2031,15 @@ body .category-results{color:var(--muted);font-size:.9rem}
 body #stories-list{margin-top:18px}
 
 .stories-pagination{display:flex;justify-content:center;align-items:center;gap:12px;margin:24px 0;flex-wrap:wrap}body #stories-list{scroll-margin-top:calc(var(--site-header-height,60px) + 16px)}
+
+/* Page context on the left, retained shortcuts on the right. */
+html body>header,html body.dark>header{display:flex;flex-wrap:nowrap;align-items:center;height:60px;min-height:60px;max-height:60px;padding:6px 16px;gap:8px}
+html body>header .brand{display:flex!important;flex:1 1 auto;min-width:0;width:auto;min-height:44px;margin:0;padding:0;gap:0;text-decoration:none}
+html body>header .header-context{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:500 .9rem/1.4 var(--ui-font);color:var(--ink);letter-spacing:normal;text-align:left}
+html body>header .header-page-icon{display:inline-flex;align-items:center;margin-left:7px;vertical-align:middle}
+html body>header .header-page-icon svg{width:18px;height:18px}
+html body>header nav{display:flex;flex:0 0 auto;align-items:center;justify-content:flex-end;width:auto;max-width:none;margin:0 0 0 auto;gap:2px;overflow:visible;order:initial}
+html body>header nav :is(button,#reader-picker){width:44px;min-width:44px;max-width:44px;flex:0 0 44px;padding:10px}
+@media(max-width:420px){html body>header,html body.dark>header{padding:6px 8px;gap:4px}html body>header nav{gap:0}html body>header .header-context{font-size:.85rem}}
+
+@media(max-width:420px){html body>header .header-context{white-space:normal;max-height:40px;line-height:1.3}}
