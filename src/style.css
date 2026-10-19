@@ -2082,3 +2082,7 @@ body .card-disclosure-preview :is(h2,h3){margin-top:0}
 body .card-disclosure-preview p{margin-bottom:12px}
 body .card-disclosure-heading{justify-content:center}
 body .timeline-event-card>.card-disclosure-preview{grid-column:1/-1}
+/* Expanded evidence must not enlarge the category grid past the viewport. */
+body #saved-view .marked-category-content{grid-template-columns:minmax(0,1fr)}
+body #saved-view .marked-category-content>article{min-width:0;max-width:100%}
+body #saved-view .comparison-summary{overflow-wrap:anywhere}
