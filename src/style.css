@@ -2025,7 +2025,6 @@ body #saved-view a.category-page-link{display:flex;align-items:center;gap:12px;m
 body .category-page-link .marked-count{margin-left:auto;color:var(--muted);font-size:.875rem}
 body .category-page-link:hover,body .category-page-link:focus-visible{background:var(--soft)}
 body .category-filter-summary{color:var(--muted);font-size:.9rem;margin:0 0 24px}
-body .category-back{display:inline-block;margin:0 0 20px;color:var(--ui-link)}
 body .category-results{color:var(--muted);font-size:.9rem}
 
 body #stories-list{margin-top:18px}

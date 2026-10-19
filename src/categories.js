@@ -25,6 +25,7 @@ function categoryLocation(key, index=false){
  return '#categories'+(index?'':'/'+key)+'?'+params;
 }
 async function renderPagedCategories(){
+ const directory=categoryDirectoryLocation(categoryRoute()?.key);if(directory){history.replaceState(null,'',directory);setView(directory.slice(1),false);return;}
  const generation=++markedWorkspaceGeneration;categoryRequest++;
  const box=$('#saved-passages'),route=categoryRoute();
  try{
@@ -48,11 +49,11 @@ async function renderPagedCategories(){
   if(!route){
    const links=[...MARKED_CATEGORIES,['timeline','Timeline']].sort(([a,al],[b,bl])=>al.localeCompare(bl));
    const timelineIcon='<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18M5 6h6m-6 6h10m-10 6h6"/><circle cx="14" cy="6" r="2"/><circle cx="18" cy="12" r="2"/><circle cx="14" cy="18" r="2"/></svg>';
-   box.innerHTML='<div class="marked-comparisons">'+links.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>`<a class="marked-category-pane category-page-link" href="${key==='timeline'?'#timeline':esc(categoryLocation(key))}" data-category-page="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}"><span class="marked-category-icon">${key==='timeline'?timelineIcon:categoryIcon(key)}</span><span>${label}</span><span class="marked-count">${key==='timeline'?'All events':counts[key]||0}</span></a>`).join('')+'</div>';
+   box.innerHTML='<div class="marked-comparisons">'+links.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>`<a class="marked-category-pane category-page-link" href="${key==='timeline'?'#timeline':esc(categoryDirectoryLocation(key)||categoryLocation(key))}" data-category-page="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}"><span class="marked-category-icon">${key==='timeline'?timelineIcon:categoryIcon(key)}</span><span>${label}</span><span class="marked-count">${key==='timeline'?'All events':counts[key]||0}</span></a>`).join('')+'</div>';
    box.onclick=null;return;
   }
   const key=route.key;
-  box.innerHTML=`<a class="category-back" href="${esc(categoryLocation('all',true))}">← Categories</a><div class="marked-category-content" aria-live="polite"></div>`;
+  box.innerHTML='<div class="marked-category-content" aria-live="polite"></div>';
   const content=box.querySelector('.marked-category-content');
   async function fill(page){
    const token=++categoryRequest;

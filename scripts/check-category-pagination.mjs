@@ -42,3 +42,16 @@ const resultUrl=client.categoryLocation('T');assert(resultUrl.startsWith('#categ
 const backUrl=client.categoryLocation('all',true);assert(backUrl.startsWith('#categories?'));assert(backUrl.includes('book=1'));assert(backUrl.includes('kind=all'));
 client.location.hash='#categories/unknown';assert.equal(client.categoryRoute(),null);
 console.log('PASS: independent category routes and filter-preserving page/back links.');
+
+// The Categories index must open the original directories, including old bookmarks.
+const app=fs.readFileSync('src/app.js','utf8');
+const directories={};vm.createContext(directories);
+vm.runInContext(app.slice(app.indexOf('const CATEGORY_DIRECTORY_VIEWS='),app.indexOf('function updateHeaderContext()')),directories);
+for(const [key,url] of Object.entries({stories:'#stories',characters:'#people',commandments:'#commandments',prophecies:'#prophecies'}))assert.equal(directories.categoryDirectoryLocation(key),url);
+assert.equal(directories.categoryDirectoryLocation('academic'),null);
+const routes=[];
+Object.assign(directories,{location:{hash:'#categories/stories?book=0&chapter=1'},history:{replaceState(_a,_b,url){directories.location.hash=url;}},setView:(...args)=>routes.push(args),window:{scrollTo(){},addEventListener(){}}});
+vm.runInContext(app.slice(app.indexOf('function route(){'),app.indexOf('function route(){')+app.slice(app.indexOf('function route(){')).indexOf("window.addEventListener('hashchange',route)")),directories);
+for(const [key,view] of Object.entries({stories:'stories',characters:'characters',commandments:'commandments',prophecies:'prophecies'})){directories.location.hash='#categories/'+key+'?book=0';directories.route();assert.equal(routes.at(-1)[0],view);assert.equal(directories.location.hash,directories.categoryDirectoryLocation(key));}
+assert(!fs.readFileSync('src/categories.js','utf8').includes('class="category-back"'));
+console.log('PASS: category links and legacy routes restore the original directory controls without a body back link.');
