@@ -1903,7 +1903,7 @@ body .characters-filters{display:flex;flex-wrap:wrap;gap:8px}
 body .character-detail-toggle{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;margin-top:14px;color:var(--ui-link);border-top:1px solid var(--line)}
 body .character-detail-toggle svg{display:block;width:20px;height:20px}
 body #characters-search{color:var(--ink)!important}
-body #characters-search::placeholder{color:var(--muted);opacity:1}
+body #characters-search::placeholder{color:color-mix(in srgb,var(--muted) 80%,#000);font-style:italic;opacity:1}
 body .category-pagination{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 4px;padding:0}
 body .category-pagination button{min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink)}
 body .category-pagination span{font-size:.875rem;color:var(--muted)}
