@@ -46,7 +46,9 @@ async function renderPagedCategories(){
   const meta=await response.json();if(generation!==markedWorkspaceGeneration||view!=='saved')return;
   markedData=meta;const personal=categoryPersonalItems(),counts={...meta.counts,bookmark:personal.length};
   if(!route){
-   box.innerHTML='<div class="marked-comparisons">'+MARKED_CATEGORIES.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>`<a class="marked-category-pane category-page-link" href="${esc(categoryLocation(key))}" data-category-page="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}"><span class="marked-category-icon">${categoryIcon(key)}</span><span>${label}</span><span class="marked-count">${counts[key]||0}</span></a>`).join('')+'</div>';
+   const links=[...MARKED_CATEGORIES,['timeline','Timeline']].sort(([a,al],[b,bl])=>al.localeCompare(bl));
+   const timelineIcon='<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18M5 6h6m-6 6h10m-10 6h6"/><circle cx="14" cy="6" r="2"/><circle cx="18" cy="12" r="2"/><circle cx="14" cy="18" r="2"/></svg>';
+   box.innerHTML='<div class="marked-comparisons">'+links.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>`<a class="marked-category-pane category-page-link" href="${key==='timeline'?'#timeline':esc(categoryLocation(key))}" data-category-page="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}"><span class="marked-category-icon">${key==='timeline'?timelineIcon:categoryIcon(key)}</span><span>${label}</span><span class="marked-count">${key==='timeline'?'All events':counts[key]||0}</span></a>`).join('')+'</div>';
    box.onclick=null;return;
   }
   const key=route.key;
