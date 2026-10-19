@@ -2,7 +2,7 @@
 // Book-wide narratives are separate from verse-aligned evidence classifications.
 let storiesActive=false,storiesRequest=null,storiesGeneration=0,storiesCatalog=null;
 function storiesFilterButton(){return '';}
-let storiesBook='',storiesTheme='',storiesSearch='';
+let storiesBook='',storiesTheme='',storiesSearch='',storiesExample=null;
 function loadStories(){
  if(!storiesRequest){storiesRequest=fetch('/stories.json').then(response=>{if(!response.ok)throw Error('Stories unavailable');return response.json();}).then(catalog=>{storiesCatalog=catalog;return catalog;});storiesRequest.catch(()=>{storiesRequest=null;});}
  return storiesRequest;
@@ -34,7 +34,15 @@ async function renderStoriesView(){
   $('#stories-theme').innerHTML='<option value="">All themes</option>'+themes.map(theme=>`<option value="${esc(theme)}">${esc(theme)}</option>`).join('');
   $('#stories-book').value=storiesBook;$('#stories-theme').value=storiesTheme;$('#stories-search').value=storiesSearch;
   const query=storiesSearch.trim().toLowerCase();
-  const stories=catalog.filter(entry=>!storiesBook||entry.book===storiesBook).flatMap(entry=>entry.stories).filter(story=>(!storiesTheme||(story.topics||[]).includes(storiesTheme))&&(!query||[story.title,story.summary,story.passage,...(story.topics||[])].join(' ').toLowerCase().includes(query)));
+  const allStories=catalog.flatMap(entry=>entry.stories);
+  if(!storiesExample)storiesExample=allStories[Math.floor(Math.random()*allStories.length)];
+  $('#stories-search').placeholder=storiesExample?'Ex. '+storiesExample.title:'Search stories';
+  const filtered=!!(query||storiesBook||storiesTheme||route);
+  let stories=catalog.filter(entry=>!storiesBook||entry.book===storiesBook).flatMap(entry=>entry.stories).filter(story=>(!storiesTheme||(story.topics||[]).includes(storiesTheme))&&(!query||[story.title,story.summary,story.passage,...(story.topics||[])].join(' ').toLowerCase().includes(query)));
+  if(!filtered&&storiesExample)stories=[storiesExample];
+  if(route)stories=stories.filter(story=>storySlug(story.title)===route[2]);
+  $('#stories-results').hidden=!filtered;
+  $('#stories-reset').hidden=!filtered;
   $('#stories-results').textContent=`${stories.length} ${stories.length===1?'story':'stories'}`;
   list.innerHTML=stories.length?stories.map(story=>storyCard(story)).join(''):'<p class="empty">No stories match these filters. Try another book or theme, or clear your search.</p>';
   if(route){const selected=stories.find(story=>storySlug(story.title)===route[2]);if(selected){const card=document.getElementById('story-'+route[2]);card?.classList.add('story-linked');card?.focus({preventScroll:true});card?.scrollIntoView({block:'nearest'});}else list.innerHTML='<p class="empty">Story not found. Clear filters to explore other stories.</p>';}

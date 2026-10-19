@@ -63,6 +63,7 @@ function markedSummary(record,category=markedKind){
 }
 function renderMarkedContext(){
  const summary=[markedBookSelection===-1?'All Books':books[markedBookSelection].name,markedChapterSelection?String(markedChapterSelection):'',markedKind==='all'?'':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1],markedTheme==='all'?'':markedTheme,markedCommandmentType==='all'?'':markedCommandmentType].filter(Boolean).join(' · ');
+ const criteria=$('#category-filter-summary');if(criteria)criteria.textContent='Showing: '+[markedBookSelection===-1?'All books':books[markedBookSelection].name,markedChapterSelection?'Chapter '+markedChapterSelection:'All chapters',markedKind==='all'?'All categories':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1],markedTheme==='all'?'':'Theme: '+markedTheme,markedCommandmentType==='all'?'':'Type: '+markedCommandmentType].filter(Boolean).join(' · ');
  const context=$('#header-context');context.dataset.marked=summary;if(view==='saved'){context.textContent=summary;context.parentElement?.setAttribute('aria-label',summary+' — Open navigation');}
  $('#marked-context').innerHTML=`<button type="button" id="marked-filter-open" class="secondary" aria-haspopup="dialog" aria-controls="marked-filter-dialog" aria-label="Filter marked verses and categories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg><span>Filter</span></button>`;
  $('#marked-filter-open').onclick=openMarkedFilters;
@@ -128,7 +129,7 @@ function openMarkedFilters(){
   for(const [id,key,current] of [['marked-theme-filter','theme',theme],['marked-type-filter','type',type]])for(const option of dialog.querySelector('#'+id).options){option.disabled=option.value!=='all'&&option.value!==current&&!available({[key]:option.value,kind:'commandments'});}
   dialog.querySelector('#marked-filter-apply').disabled=!available({});
  }
- dialog.onclick=ev=>{const button=ev.target.closest('button');if(!button||button.disabled)return;if(button.hasAttribute('data-marked-filter-close')){dialog.close();return;}if(button.id==='marked-filter-apply'){markedBookSelection=chosen;markedChapterSelection=chapter;markedKind=kind;markedTheme=theme;markedCommandmentType=type;dialog.close();renderMarkedWorkspace();window.scrollTo({top:0,behavior:'instant'});return;}
+ dialog.onclick=ev=>{const button=ev.target.closest('button');if(!button||button.disabled)return;if(button.hasAttribute('data-marked-filter-close')){dialog.close();return;}if(button.id==='marked-filter-apply'){markedBookSelection=chosen;markedChapterSelection=chapter;markedKind=kind;markedTheme=theme;markedCommandmentType=type;dialog.close();if(typeof categoryLocation==='function')history.replaceState(null,'',categoryLocation(kind,kind==='all'||!categoryRoute()));renderMarkedWorkspace();window.scrollTo({top:0,behavior:'instant'});return;}
   if(button.dataset.markedStep)step=button.dataset.markedStep;
   if(button.dataset.markedTestament)testament=button.dataset.markedTestament;
   if(button.dataset.markedBook!==undefined){chosen=Number(button.dataset.markedBook);chapter=0;step='chapter';}

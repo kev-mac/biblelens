@@ -2008,3 +2008,24 @@ body .highlight-menu-colors button{display:grid;place-items:center;min-width:32p
 .highlight-menu-actions{display:flex;gap:8px;margin-top:10px}body .highlight-menu-actions button{min-height:36px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--soft)!important;font-size:.8rem;color:inherit;box-shadow:none!important}
 body .marked-verse-text .text-highlight{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 body #chapter-text .comparison-panel[data-tone="bookmark"],body #chapter-text .verse-comparison[data-tone="bookmark"] .comparison-summary{border:0!important;box-shadow:none!important;background:transparent!important}
+
+/* Two-line story links and in-place People profiles. */
+html body .character-story-chip{border-radius:12px!important;padding:10px 14px!important;align-items:flex-start;text-align:left}
+body .character-detail-toggle{width:100%;background:none;border:0;border-radius:0;font:inherit;cursor:pointer}
+body .character-detail-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+body .character-inline-profile{margin-top:16px;border-top:1px solid var(--line);padding-top:18px;animation:profile-reveal .18s ease-out}
+body .character-inline-profile h3{margin:20px 0 10px}
+body .character-inline-profile h4{margin:16px 0 8px}
+body .character-inline-profile .character-verses{display:flex;gap:8px;flex-wrap:wrap}
+body #stories-search::placeholder{color:color-mix(in srgb,var(--muted) 80%,#000);font-style:italic;opacity:1}
+@keyframes profile-reveal{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){body .character-inline-profile{animation:none}}
+
+body #saved-view a.category-page-link{display:flex;align-items:center;gap:12px;min-height:60px;padding:14px 0;margin:0;border-bottom:1px solid var(--line)!important;font-weight:600;text-decoration:none;color:var(--ink)}
+body .category-page-link .marked-count{margin-left:auto;color:var(--muted);font-size:.875rem}
+body .category-page-link:hover,body .category-page-link:focus-visible{background:var(--soft)}
+body .category-filter-summary{color:var(--muted);font-size:.9rem;margin:0 0 24px}
+body .category-back{display:inline-block;margin:0 0 20px;color:var(--ui-link)}
+body .category-results{color:var(--muted);font-size:.9rem}
+
+body #stories-list{margin-top:18px}

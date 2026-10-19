@@ -38,10 +38,10 @@ export function connectionProfile(person: ReferencePerson): CharacterProfile {
   };
 }
 
-export function FamilyConnections(connections: Connections): HTMLElement {
+export function FamilyConnections(connections: Connections, prefix = 'character'): HTMLElement {
   const section = element('section', 'character-connections');
-  section.setAttribute('aria-labelledby', 'character-family-heading');
-  const heading = element('h3', '', 'Family & Connections'); heading.id = 'character-family-heading';
+  section.setAttribute('aria-labelledby', `${prefix}-family-heading`);
+  const heading = element('h3', '', 'Family & Connections'); heading.id = `${prefix}-family-heading`;
   section.append(heading);
   let count = 0;
   for (const [category, label] of [['parents', 'Parents'], ['spouses', 'Spouses'], ['siblings', 'Siblings'], ['children', 'Children']] as const) {
@@ -49,7 +49,7 @@ export function FamilyConnections(connections: Connections): HTMLElement {
     if (!relatives.length) continue;
     count += relatives.length;
     const row = element('div', 'character-connection-row');
-    const labelNode = element('h4', '', `${label}:`); labelNode.id = `character-${category}-label`;
+    const labelNode = element('h4', '', `${label}:`); labelNode.id = `${prefix}-${category}-label`;
     const chips = element('div', 'character-relative-chips');
     chips.setAttribute('role', 'group'); chips.setAttribute('aria-labelledby', labelNode.id);
     for (const relative of relatives) {

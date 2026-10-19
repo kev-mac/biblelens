@@ -153,7 +153,7 @@ function mountCharacters(): void {
           count.textContent = `${target.name} · Curated profile`; pagination.hidden = true;
         }
         const card = document.getElementById(`character-card-${target.id}`);
-        card?.querySelector<HTMLButtonElement>('.character-summary-toggle[aria-expanded="false"]')?.click();
+        card?.querySelector<HTMLButtonElement>('.character-summary-toggle[aria-expanded="false"],.character-detail-toggle[aria-expanded="false"]')?.click();
         card?.focus({preventScroll:true}); card?.scrollIntoView({behavior:'smooth', block:'start'});
       }
       return;

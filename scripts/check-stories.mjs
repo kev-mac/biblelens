@@ -48,9 +48,11 @@ for(const entry of catalog){
  }
 }
 vm.runInContext('storiesActive=true',c);await c.renderStoriesView();
-assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,total);
+assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,1,'The unfiltered Stories page starts with one random example');
+assert.match(node('#stories-search').placeholder,/^Ex\. /);
+assert.equal(node('#stories-results').hidden,true);
 assert(!node('#reader-layout').hidden);assert(!node('#stories-view').hidden);
-assert(node('#stories-list').innerHTML.includes('data-cite="42/1/1" data-cite-end="3"'));
+assert(c.storyCard(genesis.stories[0]).includes('data-cite="42/1/1" data-cite-end="3"'));
 assert.equal(c.storiesFilterButton(),'');
 const malicious=c.storyCard({...genesis.stories[0],title:'<img onerror="bad">'});assert(!malicious.includes('<img'));
 for(const entry of catalog){

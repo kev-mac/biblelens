@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import {createCategoryCatalog,categoryPage} from '../worker/categories.mjs';
 const parse=ref=>{const m=/^(Genesis|Exodus) (\d+):(\d+)$/.exec(ref||'');return m?{book:m[1]==='Genesis'?0:1,chapter:+m[2],verse:+m[3]}:null;};
@@ -29,3 +31,14 @@ assert.equal(browse('book=all&kind=prophecies').total,1,'Cross-book links count 
 assert.equal(browse('book=0&chapter=1&kind=characters').total,0,'People respect chapter references');
 assert.equal(browse('book=all&limit=0').counts.characters,30);
 console.log('PASS: narrative chapter ranges, scoped people pagination and cross-book prophecy links.');
+
+// Category pages preserve scope when opened directly or returned to the index.
+const client={URLSearchParams,location:{hash:'#categories/T?book=1&chapter=2&theme=all&type=all'},markedBookSelection:1,markedChapterSelection:2,markedKind:'T',markedTheme:'all',markedCommandmentType:'all',MARKED_CATEGORIES:[['all','All categories'],['T','Translation'],['bookmark','Marked']]};
+vm.createContext(client);
+vm.runInContext(fs.readFileSync('src/categories.js','utf8').split('async function renderPagedCategories()')[0],client);
+assert.equal(client.categoryRoute().key,'T');
+assert.equal(client.categoryRoute().params.get('book'),'1');
+const resultUrl=client.categoryLocation('T');assert(resultUrl.startsWith('#categories/T?'));assert(resultUrl.includes('chapter=2'));
+const backUrl=client.categoryLocation('all',true);assert(backUrl.startsWith('#categories?'));assert(backUrl.includes('book=1'));assert(backUrl.includes('kind=all'));
+client.location.hash='#categories/unknown';assert.equal(client.categoryRoute(),null);
+console.log('PASS: independent category routes and filter-preserving page/back links.');

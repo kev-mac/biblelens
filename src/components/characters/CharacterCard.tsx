@@ -1,3 +1,4 @@
+import {mountInlineProfile} from './InlineProfile';
 import { lineageCharacter, isFemaleLineage, characterVerseRoute } from './directory';
 import type { DirectoryPerson } from './people';
 import type { CharacterProfile, LinkedStoryAnchor } from '../../types/character';
@@ -60,7 +61,14 @@ export function CharacterCard(profile: CharacterProfile): HTMLElement {
     if (person.aliases?.length) header.append(element('p', 'character-aliases', person.aliases.join(' · ')));
     card.append(header);
     card.append(element('p','character-summary',person.summary || 'A written biography is not yet available for this person. Open details for the recorded passages and family links.'));
-    const expand=element('a','character-detail-toggle');expand.href=open.href;expand.setAttribute('aria-haspopup','dialog');expand.setAttribute('aria-label',`Show full details for ${person.name}`);
+    const details = element('div', 'character-inline-profile'); details.id = `character-inline-${person.id}`; details.hidden = true;
+    const expand=element('button','character-detail-toggle'); expand.type='button'; expand.setAttribute('aria-controls', details.id); expand.setAttribute('aria-expanded', 'false'); expand.setAttribute('aria-label',`Expand ${person.name} profile`);
+    let mounted = false;
+    expand.addEventListener('click', () => {
+      details.hidden = !details.hidden; expand.setAttribute('aria-expanded', String(!details.hidden));
+      expand.setAttribute('aria-label', `${details.hidden ? 'Expand' : 'Collapse'} ${person.name} profile`);
+      if (!details.hidden && !mounted) { mounted = true; mountInlineProfile(details, person.id); }
+    });
     const arrow=element('span');arrow.setAttribute('aria-hidden','true');arrow.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>';expand.append(element('span','','Details'),arrow);
     const passages = element('div', 'character-passages');
     passages.setAttribute('aria-label', `Key passages for ${person.name}`);
@@ -74,7 +82,7 @@ export function CharacterCard(profile: CharacterProfile): HTMLElement {
       passages.append(chip);
     }
     card.append(passages);
-    card.append(expand);return card;
+    card.append(expand, details);return card;
   }
   const details = element('div', 'character-card-details');
   const summary = element('p', 'character-summary', profile.summary);
