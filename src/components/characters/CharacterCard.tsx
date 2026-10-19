@@ -11,6 +11,15 @@ export function element<K extends keyof HTMLElementTagNameMap>(tag: K, className
   return node;
 }
 
+// A fresh native disclosure resets every full profile opening, including reader links.
+export function ProfileDisclosure(): {details: HTMLDetailsElement; content: HTMLDivElement} {
+  const details = element('details', 'character-profile-disclosure'); details.open = false;
+  const summary = element('summary', 'character-profile-expand', 'Details');
+  const content = element('div', 'character-profile-content');
+  details.append(summary, content);
+  return {details, content};
+}
+
 export function StoryAnchor(anchor: LinkedStoryAnchor): HTMLAnchorElement {
   const link = element('a', 'character-story-chip');
   link.href = anchor.route;

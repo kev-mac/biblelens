@@ -64,6 +64,11 @@ const cardBundle=await build({entryPoints:['src/components/characters/CharacterC
 const node=tag=>({tag,className:'',textContent:'',children:[],dataset:{},attributes:{},events:{},addEventListener(type,fn){this.events[type]=fn;},append(...children){this.children.push(...children);},setAttribute(key,value){this.attributes[key]=value;}});
 const context={document:{createElement:node}};
 vm.createContext(context);vm.runInContext(cardBundle.outputFiles[0].text,context);
+const profileDisclosure=context.Cards.ProfileDisclosure();
+assert.equal(profileDisclosure.details.tag,'details');assert.equal(profileDisclosure.details.open,false);
+assert.equal(profileDisclosure.details.children[0].tag,'summary');assert.equal(profileDisclosure.details.children[0].textContent,'Details');
+assert.equal(profileDisclosure.details.children[1],profileDisclosure.content);
+profileDisclosure.details.open=true;assert.equal(context.Cards.ProfileDisclosure().details.open,false,'Reopening or switching profiles starts collapsed');
 const malicious={...characters[0],name:'<img src=x onerror=bad()>',summary:'<script>bad()</script>'};
 const card=context.Cards.CharacterCard(malicious);
 assert.equal(card.children[1].children[0].textContent,malicious.name);

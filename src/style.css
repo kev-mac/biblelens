@@ -1600,14 +1600,14 @@ body{--surface-base:.1;--surface-gradient:.15;--focus-blue:#1263bc;--ui-link:#17
 body.dark{--focus-blue:#8cc8ff;--ui-link:#9acbff;--control-text:var(--ink)}
 body :is(button,a,input,select,textarea,summary,[tabindex]){text-shadow:none}
 body :is(button,.glass-pill,.chip,.agreement,.story-theme,.character-story-chip,.character-relative-chip,.location-chip,.person-chip){box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
-body :is(.glass-summary,.comparison-summary,.assessment,.character-sheet-body>p,.character-summary,.card,.story-card,.character-card,.commandment-card,.prophecy-card,.timeline-card,.timeline-event-card,.saved-passage-card,.passage,.analysis-box,.method-grid article){
+body :is(.glass-summary,.comparison-summary,.assessment,:is(.character-sheet-body>p,.character-profile-biography),.character-summary,.card,.story-card,.character-card,.commandment-card,.prophecy-card,.timeline-card,.timeline-event-card,.saved-passage-card,.passage,.analysis-box,.method-grid article){
  background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,99,102,241),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,99,102,241),var(--surface-base))!important;
  border:1px solid rgba(var(--theme-rgb,99,102,241),.35);border-radius:22px;padding:18px;
  box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;color:var(--ink);opacity:1;
 }
 body :is(.character-card,.story-card,.commandment-card,.prophecy-card,.timeline-card,.timeline-event-card,.comparison-summary,.passage,.analysis-box,.assessment,.method-grid article) :is(h2,h3,h4),body .character-sheet :is(h2,h3,h4){font-family:var(--ui-font)!important;letter-spacing:normal}
 body .character-card .character-summary{background:transparent!important;border:0;border-radius:0;padding:0}
-body .character-sheet-body>p{line-height:1.65}
+body :is(.character-sheet-body>p,.character-profile-biography){line-height:1.65}
 body .comparison-evidence{background:none;box-shadow:none;border-radius:12px;padding:12px 0 0}
 body :is(.comparison-side q,.comparison-side blockquote,.passage blockquote,.original blockquote,.citation-verse,.citation-text){font-style:italic}
 body :is(.comparison-side,.evidence-reference-label){display:block}
@@ -1721,7 +1721,7 @@ body :is(.study-actions button,.passage-actions button){display:inline-flex;alig
 body .bookmark svg{display:block;width:20px;height:20px}
 body .bookmark[aria-pressed=true] svg{fill:currentColor}
 body .comparison-side q{color:var(--ink)}
-body .character-sheet-body>p{background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,99,102,241),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,99,102,241),var(--surface-base))!important;border:1px solid rgba(var(--theme-rgb,99,102,241),.35);border-radius:22px;padding:18px}
+body :is(.character-sheet-body>p,.character-profile-biography){background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,99,102,241),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,99,102,241),var(--surface-base))!important;border:1px solid rgba(var(--theme-rgb,99,102,241),.35);border-radius:22px;padding:18px}
 /* Remove the former glass lighting, including header and heading effects. */
 body{background:var(--bg)!important}
 body *{text-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:none!important}
@@ -2069,3 +2069,10 @@ body dialog.atlas-sheet{height:fit-content}
 /* Close icons stay unframed, including when iOS autofocuses a dialog. */
 html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]){border:0!important;outline:none!important;box-shadow:none!important;background:transparent!important}
 html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]):focus-visible{text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:5px!important}
+
+body .character-profile-expand{display:inline-flex;align-items:center;gap:10px;min-height:44px;color:var(--ui-link);cursor:pointer;list-style:none;text-decoration:underline;text-underline-offset:4px}
+body .character-profile-expand::-webkit-details-marker{display:none}
+body .character-profile-expand::after{content:'⌄';text-decoration:none}
+body .character-profile-disclosure[open]>.character-profile-expand::after{transform:rotate(180deg)}
+body .character-profile-content{padding-top:4px}
+body dialog.character-sheet{height:fit-content}

@@ -3,7 +3,7 @@ import type { DirectoryPerson } from './people';
 import type { CharacterProfile } from '../../types/character';
 import { characters, characterVerseRoute } from './directory';
 export { characters } from './directory';
-import { CharacterCard, element, StoryAnchor } from './CharacterCard';
+import { CharacterCard, element, StoryAnchor, ProfileDisclosure } from './CharacterCard';
 import {loadCharacterGraph} from '../../character-connections.js';
 import {FamilyConnections, connectionProfile, referenceId} from './Connections';
 
@@ -190,7 +190,9 @@ function mountCharacters(): void {
       ? 'This character does not have a profile in this growing directory. Close this sheet to browse the available characters.'
       : 'The reference profile could not be loaded. Try again when the reference data is available.'));
     else {
-      body.append(element('span', 'character-era', profile.era), element('p', '', profile.summary));
+      const {details, content} = ProfileDisclosure();
+      body.append(element('span', 'character-era', profile.era), details);
+      content.append(element('p', 'character-profile-biography', profile.summary));
       const tabs = element('div', 'character-profile-tabs'); tabs.setAttribute('role', 'tablist');
       tabs.setAttribute('aria-label', 'Character profile sections');
       const overview = element('section'); overview.id = 'character-overview-panel';
@@ -218,7 +220,7 @@ function mountCharacters(): void {
         });
         tabButtons.set(name, button); tabs.append(button);
       }
-      body.append(tabs, overview, connections);
+      content.append(tabs, overview, connections);
       selectTab(activeTab);
       overview.append(element('h3', '', 'Places'), element('p', '', `Origin · ${profile.geography.origin}`));
       if (profile.lineage?.tribe) overview.append(element('p', '', `Tribe · ${profile.lineage.tribe}`));
