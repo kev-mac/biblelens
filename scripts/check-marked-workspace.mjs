@@ -43,7 +43,7 @@ assert.equal(primary[0].quotes[0],data.verses['1:14'].kjv);
 const celestialCard=context.markedSummary(celestial);
 assert(celestialCard.includes('<q>'+data.verses['1:14'].kjv+'</q>'));
 assert(celestialCard.includes('Genesis 1:11–13'));assert(celestialCard.includes('Genesis 1:15–19'));
-assert(celestialCard.indexOf('Reasoning:')<celestialCard.indexOf('Secondary references'));
+assert(celestialCard.indexOf('Reasoning:')<celestialCard.indexOf('Secondary References'));
 const emptySecondary=context.roleCitations({ref:'Genesis 1:14',refs:[],sides:[{ref:'Genesis 1:14'}]});assert.equal(emptySecondary,'');
 
 

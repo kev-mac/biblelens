@@ -73,8 +73,20 @@ async function openAtlas(id,button){
 
  }catch(error){if(token!==request)return;document.querySelector('#atlas-name').textContent='Place unavailable';status.textContent=error.message;}
 }
+// Holding a place opens its in-app contents, and scrolling cancels the hold.
+let placePress=null,placeTimer=0,suppressPlaceUntil=0;
+function cancelPlacePress(){clearTimeout(placeTimer);placePress=null;}
+document.addEventListener('pointerdown',event=>{
+ const chip=event.target.closest('[data-place-id]');if(!chip||event.button!==0)return;
+ cancelPlacePress();placePress={chip,id:event.pointerId,x:event.clientX,y:event.clientY};
+ placeTimer=setTimeout(()=>{if(!placePress)return;suppressPlaceUntil=Date.now()+1000;openAtlas(chip.dataset.placeId,chip);cancelPlacePress();},500);
+},true);
+document.addEventListener('pointermove',event=>{if(placePress&&placePress.id===event.pointerId&&Math.hypot(event.clientX-placePress.x,event.clientY-placePress.y)>8)cancelPlacePress();},true);
+for(const type of ['pointerup','pointercancel'])document.addEventListener(type,cancelPlacePress,true);
+document.addEventListener('scroll',cancelPlacePress,true);
+document.addEventListener('contextmenu',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();cancelPlacePress();suppressPlaceUntil=Date.now()+1000;if(!sheet.open)openAtlas(chip.dataset.placeId,chip);},true);
 // Capture prevents reader verse gestures and citation navigation from handling a chip tap.
-document.addEventListener('click',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();openAtlas(chip.dataset.placeId,chip);},true);
+document.addEventListener('click',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(Date.now()<suppressPlaceUntil)return;openAtlas(chip.dataset.placeId,chip);},true);
 for(const type of ['pointerdown','dblclick','contextmenu'])document.addEventListener(type,event=>{if(event.target.closest('[data-place-id]'))event.stopImmediatePropagation();},true);
 async function initializeChips(){
  try{

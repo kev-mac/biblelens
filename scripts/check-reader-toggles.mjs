@@ -155,16 +155,10 @@ settingsContext.state.bookPickerPosition='fixed';settingsContext.applyBookPicker
 assert(bodyClasses.has('book-picker-floating'),'Retired fixed preference must not hide the floating control');
 assert(!fs.readFileSync('src/index.html','utf8').includes('id="book-picker-position"'),'The retired position setting is removed');
 console.log('PASS: Settings contains appearance controls; book picker stays floating, including with a legacy fixed preference.');
-const floatButton={getBoundingClientRect:()=>({left:336,top:612}),setPointerCapture(){},classList:{add(){},remove(){}}};
-const dragPointer={target:{closest:()=>floatButton},pointerId:1,isPrimary:true,button:0,clientX:365,clientY:641,preventDefault(){}};
-const beforeDrag=positionSaves;pointerHandlers.pointerdown(dragPointer);pointerHandlers.pointermove({...dragPointer,clientX:367});pointerHandlers.pointerup(dragPointer);assert.equal(positionSaves,beforeDrag,'A tap must not save a drag position');
-pointerHandlers.pointerdown(dragPointer);pointerHandlers.pointermove({...dragPointer,clientX:82,clientY:480});pointerHandlers.pointerup(dragPointer);
-assert.equal(positionSaves,beforeDrag+1);assert.equal(positionStyles.get('--book-picker-left'),'53px');assert.equal(positionStyles.get('--book-picker-top'),'451px');
-let clickSuppressed=false;pointerHandlers['click:capture']({...dragPointer,stopImmediatePropagation(){clickSuppressed=true;}});assert(clickSuppressed,'Finishing a drag must not open the picker');
-settingsContext.window.innerWidth=320;settingsContext.window.innerHeight=480;settingsContext.positionBookPicker();assert(parseFloat(positionStyles.get('--book-picker-left'))<=254);assert(parseFloat(positionStyles.get('--book-picker-top'))<=414);
-const savedAnchor=JSON.stringify(settingsContext.state.bookPickerAnchor);pointerHandlers.pointerdown(dragPointer);pointerHandlers.pointermove({...dragPointer,clientX:-900,clientY:-900});pointerHandlers.pointercancel({...dragPointer,type:'pointercancel'});assert.equal(JSON.stringify(settingsContext.state.bookPickerAnchor),savedAnchor,'Cancellation must preserve the saved position');
-console.log('PASS: floating control ignores tap jitter, saves drag positions, suppresses post-drag clicks, clamps after resize and preserves position on cancellation.');
-
+settingsContext.state.bookPickerAnchor={x:.8,y:.8};settingsContext.positionBookPicker();
+assert(!positionStyles.has('--book-picker-left'));assert(!positionStyles.has('--book-picker-top'));
+assert.deepEqual(settingsContext.state.bookPickerAnchor,{x:.8,y:.8},'Retain saved anchors without using them for the fixed control');
+console.log('PASS: fixed reader control ignores legacy anchors while preserving stored user preferences.');
 
 // Legacy cards use their stored explanation when they predate the reasoning field.
 assert.equal(context.comparisonReasoning({text:'Existing explanation'}),'Existing explanation');
@@ -197,7 +191,7 @@ assert(!evidence.hidden);assert.equal(summary.attrs['aria-expanded'],'true');
 assert(initial.includes('class="summary-expand"'));assert(!initial.includes('${esc(evidenceKey'));assert(initial.includes('data-evidence-key="0:1:1:history-0"'));assert(expanded.includes('aria-expanded="true"'));assert(initial.includes('aria-label="Expand references and reasoning"'));
 console.log('PASS: centered disclosure button expands references and reasoning.');
 
-assert(expanded.indexOf('summary-reasoning')<expanded.indexOf('class="summary-citations"'),'Secondary references follow the reasoning');
+assert(expanded.indexOf('summary-reasoning')<expanded.indexOf('class="summary-citations"'),'Secondary References follow the reasoning');
 
 assert.equal(disclosureControl.attrs['aria-label'],'Collapse references and reasoning');assert.equal(disclosureControl.attrs['aria-expanded'],'true');
 assert(expanded.indexOf('comparison-summary')<expanded.indexOf('<h3>Legacy card</h3>'));

@@ -25,7 +25,7 @@ function filterCommandments(records,filters,query='') {
 }
 function commandmentCard(item) {
  const passage=reference=>`<button type="button" class="commandment-passage" data-commandment-passage="${esc(reference)}" aria-label="Read ${esc(reference)}">${esc(reference)}</button>`;
- return `<article class="commandment-card"><div class="commandment-card-heading"><span class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</span><h2>${esc(item.title)}</h2></div>${passage(item.passage)}<section class="commandment-summary" aria-label="Passage · KJV"><h3>Passage · KJV</h3><p>${esc(item.summary)}</p></section>${item.lens?.length?`<section class="commandment-lens" aria-label="New Testament lens"><h3>New Testament lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${passage(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
+ return `<article class="commandment-card"><div class="commandment-card-heading"><h2>${esc(item.title)}</h2></div><section class="commandment-summary" aria-label="Passage text"><p>${esc(item.summary)}</p></section>${item.lens?.length?`<section class="commandment-lens" aria-label="New Testament lens"><h3>New Testament lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${passage(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}<div class="commandment-card-footer">${passage(item.passage)}<span class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</span></div></article>`;
 }
 function initCommandments() {
  const root=document.querySelector('#commandments-view');if(!root)return;

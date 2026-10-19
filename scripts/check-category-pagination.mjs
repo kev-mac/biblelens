@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {createCategoryCatalog,categoryPage} from '../worker/categories.mjs';
+const parse=ref=>{const m=/^(Genesis|Exodus) (\d+):(\d+)$/.exec(ref||'');return m?{book:m[1]==='Genesis'?0:1,chapter:+m[2],verse:+m[3]}:null;};
+const source=Array.from({length:70},(_,i)=>({id:'record-'+i,mode:'history',tags:['T'],title:'Record '+i,ref:(i%2?'Exodus':'Genesis')+' 1:'+(i+1),summary:'Public text',status:'Disagrees',sources:[]}));
+source.push({id:'qualified',mode:'history',tags:['T','V'],ref:'Genesis 2:1',appliesTo:['Genesis 2:1'],refs:[{label:'Exodus 2:1'}],summary:'Qualified',status:'Disagrees'});
+const catalog=createCategoryCatalog(source,[],parse,r=>r.sources||[]);
+const request=query=>categoryPage(catalog,new URLSearchParams(query));
+assert.equal(request('book=all&limit=0').counts.T,71);
+assert.equal(request('book=all&kind=T').records.length,24);
+const pages=[0,1,2].flatMap(page=>request('book=all&kind=T&page='+page).records.map(r=>r.key));assert.equal(new Set(pages).size,71);assert.equal(pages.length,71);
+assert(request('book=1&kind=T').records.every(r=>r.placements.every(p=>p.book===1)));
+assert.equal(request('book=1&chapter=2&kind=V').total,0,'Context placement cannot inherit a key-only violation');
+assert.equal(request('book=0&chapter=2&kind=V').total,1);
+for(const query of ['book=66','page=-1','limit=1000','kind=notes','chapter=-2'])assert.equal(request(query),null);
+assert.deepEqual(request('book=all&limit=0').records,[],'Collapsed categories return counts only');
+assert.equal(request('book=all&kind=T&page=999').page,2,'Out-of-range pages are clamped');
+console.log('PASS: bounded category pages, counts-only metadata, cross-book paging, scope filters, key-only qualifications and invalid query rejection.');
