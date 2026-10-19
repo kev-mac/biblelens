@@ -150,11 +150,11 @@ const settingsContext={state:{},persist(){positionSaves++;},Date,window:{innerWi
 vm.createContext(settingsContext);
 vm.runInContext(source.slice(source.indexOf('function placeReaderControls('),source.indexOf("$('#reader-picker').onclick=")),settingsContext);
 assert.equal(settingsTarget.child,actions);
-assert.equal(settingNodes.get('#book-picker-position').value,'floating');
-settingNodes.get('#book-picker-position').onchange({target:{value:'fixed'}});
-assert.equal(settingsContext.state.bookPickerPosition,'fixed');
-console.log('PASS: Settings contains appearance controls only; floating book picker is the default and its fixed preference persists.');
-settingNodes.get('#book-picker-position').onchange({target:{value:'floating'}});
+assert(bodyClasses.has('book-picker-floating'));
+settingsContext.state.bookPickerPosition='fixed';settingsContext.applyBookPickerPosition();
+assert(bodyClasses.has('book-picker-floating'),'Retired fixed preference must not hide the floating control');
+assert(!fs.readFileSync('src/index.html','utf8').includes('id="book-picker-position"'),'The retired position setting is removed');
+console.log('PASS: Settings contains appearance controls; book picker stays floating, including with a legacy fixed preference.');
 const floatButton={getBoundingClientRect:()=>({left:336,top:612}),setPointerCapture(){},classList:{add(){},remove(){}}};
 const dragPointer={target:{closest:()=>floatButton},pointerId:1,isPrimary:true,button:0,clientX:365,clientY:641,preventDefault(){}};
 const beforeDrag=positionSaves;pointerHandlers.pointerdown(dragPointer);pointerHandlers.pointermove({...dragPointer,clientX:367});pointerHandlers.pointerup(dragPointer);assert.equal(positionSaves,beforeDrag,'A tap must not save a drag position');
@@ -202,13 +202,17 @@ assert(expanded.indexOf('summary-reasoning')<expanded.indexOf('class="summary-ci
 assert.equal(disclosureControl.attrs['aria-label'],'Collapse references and reasoning');assert.equal(disclosureControl.attrs['aria-expanded'],'true');
 assert(expanded.indexOf('comparison-summary')<expanded.indexOf('<h3>Legacy card</h3>'));
 
-// Font settings are independent and accept only the bundled or system families.
+// One universal font; legacy choices migrate safely and old clients retain compatibility.
 const fontNodes=new Map(),fontProperties=new Map();let fontSaves=0;
 const fontsContext={readerPreferences:{verseFont:'invalid',categoryFont:'georgia'},state:{},persist:()=>fontSaves++,document:{documentElement:{style:{setProperty:(key,value)=>fontProperties.set(key,value)}}},$:id=>{if(!fontNodes.has(id))fontNodes.set(id,{});return fontNodes.get(id)}};vm.createContext(fontsContext);
 vm.runInContext(source.slice(source.indexOf('const READER_FONTS='),source.indexOf('function applyTextSize(')),fontsContext);
-assert.equal(fontNodes.get('#verse-font-family').value,'inter');assert.equal(fontNodes.get('#category-font-family').value,'georgia');
-fontNodes.get('#verse-font-family').onchange({target:{value:'lora'}});assert.equal(fontsContext.readerPreferences.verseFont,'lora');assert.equal(fontsContext.readerPreferences.categoryFont,'georgia');assert.equal(fontSaves,1);assert(fontProperties.get('--verse-font-family').includes('Lora'));assert(fontProperties.get('--category-font-family').includes('Georgia'));
-console.log('PASS: independent verse/category fonts, safe fallback and persisted preferences.');
+assert.equal(fontNodes.get('#app-font-family').value,'inter','Invalid stored font falls back to sans serif');
+fontsContext.readerPreferences.verseFont='georgia';fontsContext.applyReaderFonts();assert.equal(fontNodes.get('#app-font-family').value,'georgia','Retain an explicit legacy choice');
+fontNodes.get('#app-font-family').onchange({target:{value:'lora'}});
+for(const key of ['font','verseFont','categoryFont'])assert.equal(fontsContext.readerPreferences[key],'lora');
+for(const key of ['--ui-font','--verse-font-family','--category-font-family'])assert(fontProperties.get(key).includes('Lora'));
+assert.equal(fontSaves,1);
+console.log('PASS: universal font, sans-serif fallback, legacy migration and backward-compatible persistence.');
 
 // Legacy stored H/G codes keep distinct display groups and toggle independently.
 vm.runInContext("this.tags=recordTags;this.group=filterCategory;this.languageLabels=languageTags",context);

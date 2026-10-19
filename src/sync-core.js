@@ -41,7 +41,7 @@
   if(Number.isFinite(prefs.textScale))state.textScale=Math.min(1.5,Math.max(.85,prefs.textScale));
   if(['fixed','floating'].includes(prefs.bookPickerPosition))state.bookPickerPosition=prefs.bookPickerPosition;
   state.readerPreferences={...state.readerPreferences};
-  for(const key of ['edition','compare','commentary','verseFont','categoryFont'])if(typeof prefs[key]==='string')state.readerPreferences[key]=prefs[key];
+  for(const key of ['edition','compare','commentary','font','verseFont','categoryFont'])if(typeof prefs[key]==='string')state.readerPreferences[key]=prefs[key];
  }
  root.BibleLensSync={snapshot,merge,apply,equal};
 })(typeof window==='undefined'?globalThis:window);

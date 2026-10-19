@@ -34,8 +34,8 @@ const assets={};for(const [name,type]of Object.entries({'index.html':'text/html;
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
 const placesBundle=await build({entryPoints:['src/places.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/places.js']={type:'application/javascript; charset=utf-8',body:placesBundle.outputFiles[0].text};
-assets['/leaflet.css']={type:'text/css; charset=utf-8',body:fs.readFileSync('node_modules/leaflet/dist/leaflet.css','utf8')};
-assets['/reference/LEAFLET-LICENSE.txt']={type:'text/plain; charset=utf-8',body:fs.readFileSync('node_modules/leaflet/LICENSE','utf8')};
+// Pinned browser distribution; retain module-relative worker URLs for web and iOS.
+for(const name of ['maplibre-gl.mjs','maplibre-gl-worker.mjs','maplibre-gl.css','MAPLIBRE-LICENSE.txt','OPENFREEMAP-STYLES-LICENSE.txt','OSM-LIBERTY-LICENSE.txt'])assets['/vendor/'+name]={type:name.endsWith('.css')?'text/css; charset=utf-8':name.endsWith('.txt')?'text/plain; charset=utf-8':'application/javascript; charset=utf-8',body:fs.readFileSync('src/vendor/'+name,'utf8')};
 for(const name of ['places','places-provenance'])assets['/reference/'+name+'.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('data/reference/'+name+'.json','utf8')};
 const timelineBundle=await build({entryPoints:['src/timeline.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/timeline.js']={type:'application/javascript; charset=utf-8',body:timelineBundle.outputFiles[0].text};

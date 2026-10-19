@@ -5,10 +5,14 @@ const places=parsePlaces(JSON.parse(fs.readFileSync('data/reference/places.json'
 assert.equal(places.size,1298);
 assert.equal(match('The Lord put Rahab straight before Israel.').length,0,'Do not turn people, tribes or common words into geographic claims');
 assert.equal(match('Let there be light; and there was light.').length,0,'Ordinary words must not become location chips');
+assert.equal(match('pillars and judgment. Pillars support the roof. Judgment is given. Salt and beer.').length,0);
+assert.equal(match('jericho and egypt').length,0,'Lowercase ordinary words must not become claims');
+assert.equal(match('India and Egypt and Jericho').length,3,'Confirmed place types and the sourced India region remain available');
+assert.equal(match('Madmen went out. The Arab spoke.').length,0,'Sentence capitalization alone cannot disambiguate ordinary words');
 const jericho=[...places.values()].find(p=>p.name==='Jericho');assert.deepEqual(jericho.coordinates,{latitude:31.8700465,longitude:35.443876});
 assert.equal(jericho.modern_name,null);assert(!/\]\(/.test(jericho.description));
 assert.equal(match('Jericho, JERICHO; notJericho')[0].id,jericho.id);assert.equal(match('Jericho, JERICHO; notJericho').length,2);
-const fixture=parsePlaces([{id:'a',name:'Sea of Galilee',aliases:['Galilee sea'],modern_name:'Lake Kinneret',latitude:0,longitude:0},{id:'b',name:'Galilee'},{id:'c',name:'Bethany'},{id:'d',name:'Bethany'},{id:'e',name:'Missing',latitude:'',longitude:'12'},{id:'f',name:'Invalid',latitude:91,longitude:0},{id:'g',name:'Unknown',latitude:null,longitude:null}]);
+const fixture=parsePlaces([{id:'a',name:'Sea of Galilee',featureType:'Water',aliases:['Galilee sea'],modern_name:'Lake Kinneret',latitude:0,longitude:0},{id:'b',name:'Galilee',featureType:'Region'},{id:'c',name:'Bethany',featureType:'City'},{id:'d',name:'Bethany',featureType:'City'},{id:'e',name:'Missing',latitude:'',longitude:'12'},{id:'f',name:'Invalid',latitude:91,longitude:0},{id:'g',name:'Unknown',latitude:null,longitude:null}]);
 assert.deepEqual(fixture.get('a').coordinates,{latitude:0,longitude:0});assert.equal(fixture.get('a').modern_name,'Lake Kinneret');
 for(const id of ['e','f','g'])assert.equal(fixture.get(id).coordinates,null);
 const fm=createPlaceMatcher(fixture);assert.equal(fm('Sea of Galilee')[0].id,'a');assert.equal(fm('Galilee sea')[0].id,'a');assert.equal(fm('Bethany').length,0);
@@ -17,4 +21,12 @@ assert(wrapLocationNames(['Jericho','Unknown'],match).includes('</button>, Unkno
 let calls=0;globalThis.fetch=async()=>{calls++;if(calls===1)throw Error('offline');return {ok:true,json:async()=>[{id:'a',name:'Jericho'}]};};
 await assert.rejects(loadPlaces(),/offline/);const [a,b]=await Promise.all([getLocationDetails('a'),getLocationDetails('a')]);assert.equal(a,b);assert.equal(calls,2);assert.equal(await getLocationDetails('absent'),null);
 const htmlSource=fs.readFileSync('src/index.html','utf8'),build=fs.readFileSync('scripts/build.mjs','utf8');assert(htmlSource.includes('id="atlas-sheet"'));assert(build.includes("['places','places-provenance']"));
+const style=JSON.parse(fs.readFileSync('src/data/atlas-style.json','utf8'));
+const allowedLayers=new Set(['water','waterway','water_name','boundary','place']);
+assert(style.layers.every(layer=>layer.type==='background'||allowedLayers.has(layer['source-layer'])),'Atlas must omit roads, buildings, terrain and modern POIs');
+assert(Object.values(style.sources).every(source=>source.type==='vector'),'No terrain raster sources');
+assert(style.sources.openmaptiles.attribution.includes('OpenStreetMap'));
+for(const layer of style.layers.filter(layer=>layer.type==='symbol'))assert.deepEqual(layer.layout['text-field'],['coalesce',['get','name:en'],['get','name_en'],['get','name:latin'],'']);
+assert(build.includes("'maplibre-gl-worker.mjs'"),'Ship the local map worker on both platforms');
+assert(htmlSource.includes('/vendor/MAPLIBRE-LICENSE.txt'));
 console.log('Places checks passed: dataset, aliases, boundaries, ambiguity, coordinates, escaping, fetch retry and cache.');

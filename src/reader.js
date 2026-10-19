@@ -294,12 +294,17 @@ async function moveChapter(direction,dragOffset=0){
 }
 $('#book-select').onchange=ev=>loadChapter(Number(ev.target.value),1);$('#chapter-select').onchange=ev=>loadChapter(readingBook,Number(ev.target.value));for(const [id,key]of [['#reader-edition','edition']])$(id).onchange=()=>{readerPreferences[key]=$(id).value;if(key==='compare')comparisonSelections.clear();state.readerPreferences=readerPreferences;persist();renderReader(true)};for(const id of ['#prev-bottom'])$(id).onclick=()=>moveChapter(-1);for(const id of ['#next-bottom'])$(id).onclick=()=>moveChapter(1);const READER_FONTS={inter:'"Inter",system-ui,sans-serif',lora:'"Lora",Georgia,serif',georgia:'Georgia,serif',system:'system-ui,sans-serif',mono:'ui-monospace,monospace'};
 function applyReaderFonts(){
- for(const [key,id,property] of [['verseFont','verse-font-family','--verse-font-family'],['categoryFont','category-font-family','--category-font-family']]){
-  const value=Object.hasOwn(READER_FONTS,readerPreferences[key])?readerPreferences[key]:'inter';
-  document.documentElement.style.setProperty(property,READER_FONTS[value]);$('#'+id).value=value;
- }
+ // Old separate choices migrate to the verse choice; one preference now governs all UI.
+ const saved=readerPreferences.font||readerPreferences.verseFont||readerPreferences.categoryFont;
+ const value=Object.hasOwn(READER_FONTS,saved)?saved:'inter';
+ for(const property of ['--ui-font','--verse-font-family','--category-font-family'])document.documentElement.style.setProperty(property,READER_FONTS[value]);
+ $('#app-font-family').value=value;
 }
-for(const [key,id] of [['verseFont','verse-font-family'],['categoryFont','category-font-family']])$('#'+id).onchange=ev=>{readerPreferences[key]=ev.target.value;state.readerPreferences=readerPreferences;applyReaderFonts();persist();};
+$('#app-font-family').onchange=ev=>{
+ // Mirror legacy keys so older installed clients retain the chosen font too.
+ readerPreferences.font=readerPreferences.verseFont=readerPreferences.categoryFont=ev.target.value;
+ state.readerPreferences=readerPreferences;applyReaderFonts();persist();
+};
 applyReaderFonts();
 function applyTextSize(){
  if(state.textScaleBaseline!=='110-v2'){state.textScale=1;state.textScaleBaseline='110-v2';persist();}
@@ -444,9 +449,8 @@ document.body.append(readerSheet);
 function placeReaderControls(){$('#reader-settings-controls').append(readerToolbar.querySelector('.reader-actions'));}
 placeReaderControls();
 function applyBookPickerPosition(){
- const position=state.bookPickerPosition==='fixed'?'fixed':'floating';
+ const position='floating';
  document.body.classList.toggle('book-picker-floating',position==='floating');
- $('#book-picker-position').value=position;
  positionBookPicker();
 }
 // Keep the floating control within the viewport, including after rotation or a chapter render.
@@ -488,7 +492,6 @@ function positionBookPicker(anchor=state.bookPickerAnchor){
  window.addEventListener('resize',()=>positionBookPicker());
 })();
 applyBookPickerPosition();
-$('#book-picker-position').onchange=ev=>{state.bookPickerPosition=ev.target.value;persist();applyBookPickerPosition();};
 $('#reader-picker').onclick=()=>{
  if(readerSheet.open)return;
  readerSheet.showModal();$('#reader-picker').setAttribute('aria-expanded','true');
@@ -589,7 +592,7 @@ function fitChatCitations(){
   if(!links.length||!row.clientWidth||row.scrollWidth<=row.clientWidth)return;
   const more=document.createElement('button');more.type='button';more.className='chat-citation verse-citation';more.dataset.chatMore='';more.setAttribute('aria-haspopup','dialog');row.append(more);
   let hidden=0;
-  do{links[links.length-1-hidden].hidden=true;hidden++;more.textContent='(+'+hidden+')';}while(hidden<links.length&&row.scrollWidth>row.clientWidth);
+  do{links[links.length-1-hidden].hidden=true;hidden++;more.textContent='+'+hidden;}while(hidden<links.length&&row.scrollWidth>row.clientWidth);
   more.setAttribute('aria-label','Show '+hidden+' more citations');
   more.onclick=()=>{
    let dialog=document.querySelector('#chat-citations-dialog');
@@ -627,6 +630,27 @@ window.addEventListener('resize',fitContextCitations);
  function hide(){document.body.classList.remove('comparison-menu-visible');}
  function syncDock(){const y=window.scrollY,delta=y-lastY;if(y<20){hide();lastY=y;return;}if(Math.abs(delta)<4)return;if(delta<0)document.body.classList.add('comparison-menu-visible');else hide();lastY=y;}
  window.addEventListener('scroll',syncDock,{passive:true});window.addEventListener('viewchange',()=>{hide();lastY=window.scrollY;});
+})();
+
+// Keep chapter navigation alongside the revealed dock only while its original
+// buttons are outside the viewport. Reuse their actions and boundary state.
+(() => {
+ const dock=document.querySelector('.comparison-dock'),originals=[$('#prev-bottom'),$('#next-bottom')];
+ const nav=document.createElement('nav');nav.className='dock-pagination';nav.setAttribute('aria-label','Chapter navigation');nav.hidden=true;
+ for(const [index,label] of ['Previous chapter','Next chapter'].entries()){
+  const button=document.createElement('button');button.type='button';button.textContent=index?'Next →':'← Previous';button.setAttribute('aria-label',label);
+  button.addEventListener('click',()=>originals[index].click());nav.append(button);
+ }
+ dock.prepend(nav);
+ const visible=element=>{const r=element.getBoundingClientRect();return r.width>0&&r.height>0&&r.bottom>0&&r.top<window.innerHeight;};
+ function update(){
+  nav.hidden=!document.body.classList.contains('read-view')||!document.body.classList.contains('comparison-menu-visible')||originals.some(visible);
+  [...nav.children].forEach((button,index)=>button.disabled=originals[index].disabled);
+ }
+ const observer=new IntersectionObserver(update);originals.forEach(button=>observer.observe(button));
+ new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});
+ originals.forEach(button=>new MutationObserver(update).observe(button,{attributes:true,attributeFilter:['disabled']}));
+ window.addEventListener('resize',update);window.addEventListener('scroll',update,{passive:true});update();
 })();
 
 // Match the reader's draggable floating control, with a separate saved position.

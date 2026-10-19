@@ -14,6 +14,7 @@ export function validateStories(catalog, {books, chapters, topics}) {
   seenBooks.add(entry.book); previous = index;
   for (const story of entry.stories) {
    if (Object.keys(story).sort().join(',') !== 'cross_references,passage,summary,title,topics' || !['title','passage','summary'].every(key => nonempty(story[key]))) throw Error('Invalid story metadata');
+   if(story.summary.trim().split(/\s+/).length>300)throw Error(`Story exceeds 300 words: ${story.title}`);
    const title = story.title.trim().toLowerCase(), id = slug(story.title);
    if (!id || titles.has(title) || slugs.has(id)) throw Error(`Duplicate story title or slug: ${story.title}`);
    titles.add(title); slugs.add(id);

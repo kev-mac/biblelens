@@ -5,14 +5,14 @@
  const sheet = document.createElement('dialog');
  sheet.id = 'navigation-sheet'; sheet.className = 'navigation-sheet';
  sheet.setAttribute('aria-labelledby', 'navigation-heading');
- sheet.innerHTML = '<div class="navigation-heading"><h2 id="navigation-heading">Go to</h2><button type="button" data-navigation-close aria-label="Close navigation" autofocus>✕</button></div><div class="navigation-grid"></div>';
+ sheet.innerHTML = '<div class="navigation-heading"><h2 id="navigation-heading">Menu</h2><button type="button" data-navigation-close aria-label="Close navigation" autofocus>✕</button></div><div class="navigation-grid"></div>';
  document.body.append(sheet);
  trigger.setAttribute('role', 'button');
  trigger.setAttribute('aria-haspopup', 'dialog');
  trigger.setAttribute('aria-controls', sheet.id);
  trigger.setAttribute('aria-expanded', 'false');
  const grid = sheet.querySelector('.navigation-grid');
- const pages = [['explore','Read'],['stories','Stories'],['chat','Chat'],['saved','Marked'],['characters','Characters'],['prophecies','Prophecies'],['timeline','Timeline'],['commandments','Commandments'],['method','About']];
+ const pages = [['explore','Read'],['stories','Stories'],['chat','Chat'],['saved','Marked'],['characters','Characters'],['prophecies','Prophecies'],['timeline','Timeline'],['commandments','Commandments']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
   const icon = document.querySelector(`header nav [data-view="${page}"] svg`);
