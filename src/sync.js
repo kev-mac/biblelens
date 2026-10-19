@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     // A user may edit while network requests are in flight. Keep those edits queued.
     const latest=core.snapshot(state),next=core.merge(captured,latest,merged.data);
     applying=true;
-    try{core.apply(state,next.data);Object.assign(readerPreferences,state.readerPreferences);$('#reader-edition').value=readerPreferences.edition;updateCompareToggle();applyTheme();applyTextSize();applyReaderFonts();applyBookPickerPosition();persist();renderCards();if(reading)renderReader(true);renderPassageSaved();}
+    try{core.apply(state,next.data);Object.assign(readerPreferences,state.readerPreferences);$('#reader-edition').value=readerPreferences.edition;updateCompareToggle();applyTheme();applyTextSize();applyReaderFonts();if(typeof applyNavigationAppearance==='function')applyNavigationAppearance();applyBookPickerPosition();persist();renderCards();if(reading)renderReader(true);renderPassageSaved();}
     finally{applying=false;}
     meta.base=merged.data;meta.revision=revision;meta.lastSync=Date.now();saveMeta();
     say((merged.conflicts||next.conflicts?'Both versions of conflicting notes were kept. ':'')+'Synced '+new Date(meta.lastSync).toLocaleTimeString()+'.');

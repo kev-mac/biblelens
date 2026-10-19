@@ -27,6 +27,8 @@ try{
  const books=await (await target.fetch('/api/books')).json();assert.equal(books.length,66);
  const chapter=await (await target.fetch('/api/chapter?book=42&chapter=3')).json();assert(chapter.verses.some(v=>v.n===16&&v.kjv.includes('God so loved')));
  const comparison=await (await target.fetch('/api/comparisons?book=0&chapter=1&mode=questions')).json();assert(Array.isArray(comparison.items));
+ const categories=await (await target.fetch('/api/categories?book=all&kind=T')).json();assert.equal(categories.records.length,24);assert(categories.total>24);const next=await (await target.fetch('/api/categories?book=all&kind=T&page=1')).json();assert.equal(next.records.length,24);assert.notEqual(next.records[0].key,categories.records[0].key);
+ for(const [kind,minimum] of [['stories',1],['characters',3000],['prophecies',3]]){const page=await (await target.fetch('/api/categories?book=all&kind='+kind)).json();assert(page.total>=minimum,kind);assert(page.records.length<=24);assert(page.records.every(record=>record.mode===kind));}
  const [shark,john]=await Promise.all(['can we eat shark','Explain John 3:16'].map(async message=>(await target.fetch('/api/chat',{method:'POST',body:JSON.stringify({message})})).json()));
  assert.equal(shark.mode,'dietary');assert(!shark.answer.includes('honey'));assert(john.answer.includes('God so loved'));
  const sermon=await (await target.fetch('/api/chat',{method:'POST',body:JSON.stringify({message:'Sermon on the Mount'})})).json();

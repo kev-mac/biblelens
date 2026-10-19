@@ -59,7 +59,9 @@ export function CharacterCard(profile: CharacterProfile): HTMLElement {
     header.append(heading);
     if (person.aliases?.length) header.append(element('p', 'character-aliases', person.aliases.join(' · ')));
     card.append(header);
-    if (person.summary) card.append(element('p', 'character-summary', person.summary));
+    card.append(element('p','character-summary',person.summary || 'A written biography is not yet available for this person. Open details for the recorded passages and family links.'));
+    const expand=element('a','character-detail-toggle');expand.href=open.href;expand.setAttribute('aria-haspopup','dialog');expand.setAttribute('aria-label',`Show full details for ${person.name}`);
+    const arrow=element('span');arrow.setAttribute('aria-hidden','true');arrow.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>';expand.append(element('span','','Details'),arrow);
     const passages = element('div', 'character-passages');
     passages.setAttribute('aria-label', `Key passages for ${person.name}`);
     for (const reference of person.key_passages.slice(0, 3)) {
@@ -72,11 +74,7 @@ export function CharacterCard(profile: CharacterProfile): HTMLElement {
       passages.append(chip);
     }
     card.append(passages);
-    if (person.key_passages.length > 3) {
-      const more = element('a', 'character-more-passages', `All ${person.key_passages.length} passages →`);
-      more.href = open.href; more.setAttribute('aria-haspopup', 'dialog'); card.append(more);
-    }
-    return card;
+    card.append(expand);return card;
   }
   const details = element('div', 'character-card-details');
   const summary = element('p', 'character-summary', profile.summary);

@@ -11,12 +11,12 @@
 }
 .timeline-event-body{min-height:48px}
 .timeline-event-card.has-discrepancy .timeline-event-body{padding-right:100px}
-.timeline-event-title{margin:0 0 8px;font:600 1.1rem/1.4 "Inter",system-ui,sans-serif}
+.timeline-event-title{margin:0 0 8px;font:600 1.1rem/1.4 var(--ui-font)}
 .timeline-event-date{margin:0;font-size:.9rem;line-height:1.5}
 body .timeline-history{
   position:absolute;top:12px;right:12px;display:inline-flex;align-items:center;justify-content:center;
   box-sizing:border-box;min-width:48px;min-height:48px;padding:10px 14px;
-  font:600 .8rem/1.4 "Inter",system-ui,sans-serif;cursor:pointer;touch-action:manipulation;
+  font:600 .8rem/1.4 var(--ui-font);cursor:pointer;touch-action:manipulation;
 }
 .timeline-history:focus-visible{outline:2px solid rgb(var(--theme-rgb));outline-offset:3px}
 .timeline-discrepancy{
@@ -29,7 +29,7 @@ body .timeline-history{
   margin-top:18px;padding:16px;border:1px solid rgba(255,50,50,.15);
   border-radius:14px;background:rgba(255,50,50,.05);
 }
-.timeline-discrepancy-content h4{margin:0 0 14px;font:600 .9rem/1.4 "Inter",system-ui,sans-serif}
+.timeline-discrepancy-content h4{margin:0 0 14px;font:600 .9rem/1.4 var(--ui-font)}
 .timeline-date-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0}
 .timeline-date-comparison dt{font-size:.8rem;font-weight:600;line-height:1.4}
 .timeline-date-comparison dd{margin:6px 0 0;line-height:1.5}
@@ -38,12 +38,12 @@ body .timeline-history{
 
 #timeline-reviewed{max-width:860px;margin:0 auto;padding:24px 0 48px}
 #timeline-list{display:grid;gap:24px;margin-top:24px}
-body #timeline-reviewed :is(h1,h2,h3,h4){font-family:"Inter",system-ui,sans-serif!important}
+body #timeline-reviewed :is(h1,h2,h3,h4){font-family:var(--ui-font)!important}
 .timeline-review-status,.timeline-reviewed,.timeline-discrepancy-kind{font-size:.8rem;line-height:1.5}
 .timeline-discrepancy-kind{margin:0 0 10px;text-transform:capitalize;font-weight:600}
 .timeline-scope{font-size:.875rem;line-height:1.65}
 .timeline-sources{list-style:none;margin:12px 0 0;padding:0}
 .timeline-sources a,.timeline-passage{display:flex;align-items:center;box-sizing:border-box;min-height:48px;padding:8px 0;color:inherit;line-height:1.5}
 .timeline-sources a:focus-visible,.timeline-passage:focus-visible{outline:2px solid rgb(var(--theme-rgb));outline-offset:3px}
-.timeline-sources a{font-size:.8rem;text-decoration:underline;text-underline-offset:3px}
+.timeline-sources a{font-size:.8rem;text-decoration:none;text-underline-offset:3px}
 .timeline-view-intro{line-height:1.65}

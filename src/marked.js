@@ -2,7 +2,7 @@
 // Book-scoped comparison browsing uses public records; personal marks use local storage with optional cloud sync.
 const markedComparisonCache=new Map();
 let markedBookSelection=null,markedChapterSelection=0,markedKind='all',markedTheme='all',markedCommandmentType='all',markedWorkspaceGeneration=0,markedData=null;
-const MARKED_CATEGORIES=[['all','All categories'],['bookmark','Marked'],['T','Translation'],['V','Violations'],['commandments','Commandments'],['Q','Questions'],['academic','Academic'],['contradictions','Contradictions']].sort(([a,al],[b,bl])=>a==='all'?-1:b==='all'?1:al.localeCompare(bl));
+const MARKED_CATEGORIES=[['all','All categories'],['bookmark','Marked'],['T','Translation'],['V','Violations'],['commandments','Commandments'],['Q','Questions'],['academic','Academic'],['contradictions','Contradictions'],['stories','Stories'],['characters','People'],['prophecies','Prophecies']].sort(([a,al],[b,bl])=>a==='all'?-1:b==='all'?1:al.localeCompare(bl));
 function markedChoices(record,placement){const item={...record,...placement},tags=recordTags(item);return tags.length?tags.map(tag=>({...item,tag})):item.mode==='questions'?[{...item,tag:'Q'}]:[item];}
 const COMMANDMENT_THEMES=["Worship of God","Sabbath and rest","Family","Life and violence","Marriage and sexual conduct","Property and economics","Truth and justice","Food and purity","Festivals and sacrifice","Care for the poor and the stranger","Love of God and neighbor","Prayer and fasting","Baptism and the Lord's Supper","Church life and order"];
 function markedCommandmentMatches(record){return record.mode!=='commandments'||((markedTheme==='all'||record.theme===markedTheme)&&(markedCommandmentType==='all'||record.commandmentType===markedCommandmentType));}
@@ -12,17 +12,21 @@ function markedCommandmentTypeChips(){return '<div class="commandment-filter-chi
 function markedFilterHasResults(data,{book,chapter=0,kind='all',theme='all',type='all'},personal=state){
  if(!data)return true; // Unknown availability must never masquerade as an empty result.
  if(kind==='all'||kind==='bookmark'){
-  const inScope=item=>item.book===book&&(!chapter||item.chapter===chapter);
+  const inScope=item=>(book===-1||item.book===book)&&(!chapter||item.chapter===chapter);
   if(Object.values({...personal.verseBookmarks,...personal.verseNotes}).some(inScope)||Object.values({...personal.passageBookmarks,...personal.passageNotes}).some(inScope))return true;
-  if(ENTRIES.some(e=>(personal.notes?.[e.id]||personal.noteTitles?.[e.id])&&e.refs.some(ref=>readRef(ref)?.book===book)))return true;
+  if(ENTRIES.some(e=>(personal.bookmarks?.includes(e.id)||personal.notes?.[e.id]||personal.noteTitles?.[e.id])&&e.refs.some(ref=>(book===-1||readRef(ref)?.book===book))))return true;
  }
  if(kind==='bookmark')return false;
+ if(kind==='all'&&['stories','characters','prophecies'].some(key=>data.counts?.[key]))return true;
+ if(data.counts&&(!data.records?.length||['stories','characters','prophecies'].includes(kind)))return kind==='all'?Object.values(data.counts).some(Boolean):!!data.counts[kind];
  return data.records.some(record=>(record.mode!=='commandments'||((theme==='all'||record.theme===theme)&&(type==='all'||record.commandmentType===type)))&&record.placements.some(p=>(!chapter||p.chapter===chapter)&&markedChoices(record,p).some(choice=>visibleComparison(choice)&&(kind==='all'||filterCategory(choice)===kind))));
 }
-function requestMarkedBookData(book){
+function requestMarkedBookData(book,chapter=0){
+ const metadata=fetch('/api/categories?'+new URLSearchParams({book:book===-1?'all':String(book),chapter:String(chapter),limit:'0'})).then(r=>{if(!r.ok)throw Error();return r.json();});
+ if(book===-1)return metadata;
  let request=markedComparisonCache.get(book);
  if(!request){request=fetch('/api/marked-comparisons?book='+book).then(r=>{if(!r.ok)throw Error();return r.json();});markedComparisonCache.set(book,request);request.catch(()=>markedComparisonCache.delete(book));if(markedComparisonCache.size>4)markedComparisonCache.delete(markedComparisonCache.keys().next().value);}
- return request;
+ return Promise.all([request,metadata]).then(([data,meta])=>({...data,counts:meta.counts}));
 }
 function markedRecordVisible(record){return record.placements.some(p=>markedChoices(record,p).some(visibleComparison));}
 function markedMatchingPlacements(record){return record.placements.filter(p=>(!markedChapterSelection||p.chapter===markedChapterSelection)&&markedChoices(record,p).some(choice=>visibleComparison(choice)&&(markedKind==='all'||filterCategory(choice)===markedKind)));}
@@ -40,7 +44,7 @@ function markedPrimaryReferences(record){
  if(record.sides?.length){for(const side of record.sides){const ref=readRef(side.ref);if(!ref)continue;const key=`${ref.book}/${ref.chapter}/${ref.verse}`;if(!byRef.has(key))byRef.set(key,{...ref,label:side.ref,quotes:[]});const quotes=byRef.get(key).quotes;if(!quotes.includes(side.quote))quotes.push(side.quote);}}
  else{
   const placements=record.placements.filter(p=>p.placementRole==='key');
-  const primary=placements.length?placements.map(p=>({book:markedBookSelection,chapter:p.chapter,verse:p.verse})):record.ref?[readRef(record.ref)].filter(Boolean):[];
+  const primary=placements.length?placements.map(p=>({book:p.book??markedBookSelection,chapter:p.chapter,verse:p.verse})):record.ref?[readRef(record.ref)].filter(Boolean):[];
   for(const ref of primary){const key=`${ref.book}/${ref.chapter}/${ref.verse}`,verse=ref.book===markedBookSelection?markedData.verses[ref.chapter+':'+ref.verse]:null;byRef.set(key,{...ref,label:`${books[ref.book].name} ${ref.chapter}:${ref.verse}`,quotes:verse?.kjv?[verse.kjv]:[]});}
  }
  return [...byRef.values()].sort((a,b)=>a.book-b.book||a.chapter-b.chapter||a.verse-b.verse);
@@ -49,16 +53,16 @@ function markedPrimaryRows(primary,choice){
  if(!primary.length)return '';
  return '<section class="comparison-sides marked-primary-passages" aria-label="Primary passages"><div class="evidence-reference-label">Primary passages · KJV</div>'+primary.map(ref=>'<div class="comparison-side">'+referenceLink(ref,undefined,choice)+(ref.quotes.length?ref.quotes.map(quote=>'<q>'+esc(String(quote).replace(/\{[HG]\d+\}/g,''))+'</q>').join(''):'<q data-marked-verse-text="'+ref.book+'/'+ref.chapter+'/'+ref.verse+'" data-marked-edition="kjv" aria-busy="true">Loading verse text…</q>')+'</div>').join('')+'</section>';
 }
-function markedSummary(record){
- const placement=markedMatchingPlacements(record)[0],selected=markedChoices(record,placement).find(c=>visibleComparison(c)&&(markedKind==='all'||filterCategory(c)===markedKind))||record;
- const group=markedGroup(record),choice={...selected,tag:languageTags[group]?group:undefined,mode:group==='academic'?'science':group};
- const key='marked:'+markedBookSelection+':'+record.key,open=comparisonEvidenceOpen.has(key),id=markedCardId(record),title=record.title||`${books[markedBookSelection].name} ${placement.chapter}:${placement.verse}`;
+function markedSummary(record,category=markedKind){
+ const placement=markedMatchingPlacements(record).find(p=>markedChoices(record,p).some(c=>visibleComparison(c)&&(category==='all'||filterCategory(c)===category)))||markedMatchingPlacements(record)[0],selected=markedChoices(record,placement).find(c=>visibleComparison(c)&&(category==='all'||filterCategory(c)===category))||record;
+ const group=category==='all'?markedGroup(record):category,choice={...selected,tag:languageTags[group]?group:undefined,mode:group==='academic'?'science':group};
+ const key='marked:'+markedBookSelection+':'+record.key,open=comparisonEvidenceOpen.has(key),id=markedCardId(record),title=record.title||`${books[record.book??markedBookSelection].name} ${placement.chapter}:${placement.verse}`;
  const primary=markedPrimaryReferences(record);
  const secondary=roleCitations({...choice,sides:primary.map(ref=>({ref:ref.label,quote:ref.quotes.join(' ')}))});
  return `<article class="marked-comparison-card comparison-panel" id="${id}" data-tone="${comparisonTone(choice)}" tabindex="-1"><div class="comparison-summary" tabindex="0" data-summary-toggle data-evidence-key="${esc(key)}" aria-expanded="${open}" aria-label="Category summary. Double-click or press Enter for details."><h3>${esc(title)}</h3>${commandmentLabels(record)}<p>${esc(summaryText(record))}</p><button type="button" class="summary-expand" data-summary-expand aria-label="${open?'Collapse':'Expand'} references and reasoning" aria-expanded="${open}" aria-controls="${id}-evidence"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><button type="button" class="summary-inspect" data-comparison-inspect aria-label="Details & sources" title="Details & sources"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><div class="comparison-evidence" id="${id}-evidence" ${open?'':'hidden'}>${markedPrimaryRows(primary,choice)}${comparisonReasoning(record)?`<p class="summary-reasoning"><b>Reasoning:</b> ${esc(comparisonReasoning(record))}</p>`:''}${secondary}${relatedStudyPassages(record)}${commandmentRepetitions(record)}</div></div><details class="comparison-details" hidden><summary>Details & sources</summary><p>${esc(record.text||record.summary)}</p>${relatedStudyPassages(record)}${scienceDetails(record)}${record.scope?`<p>${esc(record.scope)}</p>`:''}<div class="comparison-sources">${(record.sources||[]).map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)} ↗</a>`).join('')}</div></details></article>`;
 }
 function renderMarkedContext(){
- const summary=[books[markedBookSelection].name,markedChapterSelection?String(markedChapterSelection):'',markedKind==='all'?'':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1],markedTheme==='all'?'':markedTheme,markedCommandmentType==='all'?'':markedCommandmentType].filter(Boolean).join(' · ');
+ const summary=[markedBookSelection===-1?'All Books':books[markedBookSelection].name,markedChapterSelection?String(markedChapterSelection):'',markedKind==='all'?'':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1],markedTheme==='all'?'':markedTheme,markedCommandmentType==='all'?'':markedCommandmentType].filter(Boolean).join(' · ');
  const context=$('#header-context');context.dataset.marked=summary;if(view==='saved'){context.textContent=summary;context.parentElement?.setAttribute('aria-label',summary+' — Open navigation');}
  $('#marked-context').innerHTML=`<button type="button" id="marked-filter-open" class="secondary" aria-haspopup="dialog" aria-controls="marked-filter-dialog" aria-label="Filter marked verses and categories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg><span>Filter</span></button>`;
  $('#marked-filter-open').onclick=openMarkedFilters;
@@ -72,7 +76,7 @@ function renderMarkedResults(){
  let html=showMarks&&marks.length?`<h2>Marked</h2><div class="marked-bookmarks">${marks.map(item=>`<article class="passage-saved-card marked-bookmark" data-tone="bookmark">${markedVerseRow(item.chapter,item.verse)}${state.verseNotes[`${book}:${item.chapter}:${item.verse}`]?.title?`<h3>${esc(state.verseNotes[`${book}:${item.chapter}:${item.verse}`].title)}</h3>`:''}${state.verseNotes[`${book}:${item.chapter}:${item.verse}`]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[`${book}:${item.chapter}:${item.verse}`].text)}</p>`:''}${noteActionButtons(`${book}/${item.chapter}/${item.verse}`)}</article>`).join('')}</div>`:'';
  if(showMarks&&passages.length)html+=`<h2>Marked Passages</h2>${passages.map(item=>`<article class="passage-saved-card marked-bookmark" data-tone="bookmark"><button class="verse-citation" data-read="${book}/${item.chapter}">${esc(item.name)} ${item.chapter}</button>${item.title?`<h3>${esc(item.title)}</h3>`:''}${item.text?`<p>${esc(item.text)}</p>`:''}${noteActionButtons(`${book}/${item.chapter}`)}</article>`).join('')}`;
  const personal=html;html='';
- const notes=ENTRIES.filter(e=>(state.notes[e.id]||state.noteTitles?.[e.id])&&e.refs.some(ref=>readRef(ref)?.book===book));
+ const notes=ENTRIES.filter(e=>(state.notes[e.id]||state.noteTitles?.[e.id])&&e.refs.some(ref=>(book===-1||readRef(ref)?.book===book)));
  const studyNotes=showMarks&&notes.length?'<h2>Study Notes</h2>'+notes.map(e=>`<article class="passage-saved-card"><button class="text-button" data-open="${e.id}">${esc(state.noteTitles?.[e.id]||e.title)}</button><p>${esc(state.notes[e.id]||'')}</p></article>`).join(''):'';
  html='<div class="marked-comparisons">'+MARKED_CATEGORIES.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>{
   const matches=records.filter(record=>markedGroup(record)===key);
@@ -86,6 +90,7 @@ function renderMarkedResults(){
  $('#saved-cards').hidden=true;hydrateMarkedVerseTexts(++markedRenderGeneration);requestAnimationFrame(fitContextCitations);
 }
 async function renderMarkedWorkspace(){
+ if(typeof renderPagedCategories==='function')return renderPagedCategories();
  for(const key of comparisonEvidenceOpen)if(key.startsWith('marked:'))comparisonEvidenceOpen.delete(key);
  const generation=++markedWorkspaceGeneration;
  try{
@@ -100,28 +105,28 @@ async function renderMarkedWorkspace(){
 function openMarkedFilters(){
  let dialog=$('#marked-filter-dialog');if(!dialog){dialog=document.createElement('dialog');dialog.id='marked-filter-dialog';dialog.className='glass-dialog';dialog.setAttribute('aria-labelledby','marked-filter-title');document.body.append(dialog);}
  let chosen=markedBookSelection,chapter=markedChapterSelection,kind=markedKind,theme=markedTheme,type=markedCommandmentType,testament=chosen<39?'old':'new',step='book',draftData=null,dataBook=null,requestBook=null,requestVersion=0;
- dialog.innerHTML=`<div class="sheet-heading"><h2 id="marked-filter-title">Filter</h2><button type="button" data-marked-filter-close aria-label="Close filters">×</button></div><nav class="passage-steps" aria-label="Filter selection"><button type="button" data-marked-step="book"></button><button type="button" data-marked-step="chapter"></button><button type="button" data-marked-step="category"></button></nav><fieldset data-marked-pane="book"><legend>Book</legend><div class="passage-testaments"><button type="button" data-marked-testament="old">Old Testament</button><button type="button" data-marked-testament="new">New Testament</button></div><div class="marked-book-grid"></div></fieldset><fieldset data-marked-pane="chapter" hidden><legend>Chapter</legend><div class="marked-chapter-grid"></div></fieldset><fieldset data-marked-pane="category" hidden><legend>Category</legend><div class="marked-kind-grid"></div><div class="commandment-dialog-filters" hidden><p>Types are browsing aids; they do not decide present-day applicability.</p><label>Theme<select id="marked-theme-filter">${[['all','All themes'],...COMMANDMENT_THEMES.map(t=>[t,t])].map(([value,label])=>`<option value="${esc(value)}">${esc(label)}</option>`).join('')}</select></label><label>Commandment type<select id="marked-type-filter"><option value="all">All types</option><option value="moral">Moral</option><option value="civil">Civil</option><option value="ritual">Ritual</option></select></label></div></fieldset><button type="button" id="marked-filter-apply" class="primary">Apply filters</button>`;
+ dialog.innerHTML=`<div class="sheet-heading"><h2 id="marked-filter-title">Filter</h2><button type="button" data-marked-filter-close aria-label="Close filters">×</button></div><nav class="passage-steps" aria-label="Filter selection"><button type="button" data-marked-step="book"></button><button type="button" data-marked-step="chapter"></button><button type="button" data-marked-step="category"></button></nav><fieldset data-marked-pane="book"><legend>Book</legend><button type="button" class="marked-all-books" data-marked-book="-1">All Books</button><div class="passage-testaments"><button type="button" data-marked-testament="old">Old Testament</button><button type="button" data-marked-testament="new">New Testament</button></div><div class="marked-book-grid"></div></fieldset><fieldset data-marked-pane="chapter" hidden><legend>Chapter</legend><div class="marked-chapter-grid"></div></fieldset><fieldset data-marked-pane="category" hidden><legend>Category</legend><div class="marked-kind-grid"></div><div class="commandment-dialog-filters" hidden><p>Types are browsing aids; they do not decide present-day applicability.</p><label>Theme<select id="marked-theme-filter">${[['all','All themes'],...COMMANDMENT_THEMES.map(t=>[t,t])].map(([value,label])=>`<option value="${esc(value)}">${esc(label)}</option>`).join('')}</select></label><label>Commandment type<select id="marked-type-filter"><option value="all">All types</option><option value="moral">Moral</option><option value="civil">Civil</option><option value="ritual">Ritual</option></select></label></div></fieldset><button type="button" id="marked-filter-apply" class="primary">Apply filters</button>`;
  dialog.onchange=()=>{theme=dialog.querySelector('#marked-theme-filter').value;type=dialog.querySelector('#marked-type-filter').value;render();};
  function render(){
-  if(requestBook!==chosen){
-   requestBook=chosen;const book=chosen,version=++requestVersion;draftData=null;
-   requestMarkedBookData(book).then(data=>{if(version!==requestVersion||!dialog.open)return;draftData=data;dataBook=book;render();}).catch(()=>{});
+  if(requestBook!==chosen+':'+chapter){
+   const book=chosen,requestedChapter=chapter,version=++requestVersion;requestBook=book+':'+chapter;draftData=null;
+   requestMarkedBookData(book,requestedChapter).then(data=>{if(version!==requestVersion||!dialog.open)return;draftData=data;dataBook=book;render();}).catch(()=>{});
   }
 
   dialog.querySelector('.commandment-dialog-filters').hidden=!['all','commandments'].includes(kind);dialog.querySelector('#marked-theme-filter').value=theme;dialog.querySelector('#marked-type-filter').value=type;
-  dialog.querySelectorAll('[data-marked-step]').forEach(button=>{button.textContent=button.dataset.markedStep==='book'?books[chosen].name:button.dataset.markedStep==='chapter'?(chapter?'Chapter '+chapter:'All chapters'):MARKED_CATEGORIES.find(c=>c[0]===kind)[1];button.setAttribute('aria-pressed',String(button.dataset.markedStep===step));});
+  dialog.querySelectorAll('[data-marked-step]').forEach(button=>{button.textContent=({book:'Book',chapter:'Chapter',category:'Category'})[button.dataset.markedStep];button.setAttribute('aria-pressed',String(button.dataset.markedStep===step));});
   dialog.querySelectorAll('[data-marked-pane]').forEach(pane=>pane.hidden=pane.dataset.markedPane!==step);
   dialog.querySelectorAll('[data-marked-testament]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.markedTestament===testament)));
+  dialog.querySelector('[data-marked-book="-1"]').setAttribute('aria-pressed',String(chosen===-1));
   dialog.querySelector('.marked-book-grid').innerHTML=books.filter(b=>testament==='old'?b.id<39:b.id>=39).map(b=>`<button type="button" data-marked-book="${b.id}" aria-label="${esc(b.name)}" title="${esc(b.name)}" aria-pressed="${b.id===chosen}">${BOOK_CITATION_ABBREVIATIONS[b.id]}</button>`).join('');
-  dialog.querySelector('.marked-chapter-grid').style.setProperty('--number-columns',books[chosen].chapters>100?'9':'8');
-  dialog.querySelector('.marked-chapter-grid').innerHTML=`<button type="button" class="marked-all-chapters" data-marked-chapter="0" aria-pressed="${chapter===0}">All chapters</button>`+Array.from({length:books[chosen].chapters},(_,i)=>`<button type="button" data-marked-chapter="${i+1}" aria-pressed="${chapter===i+1}">${i+1}</button>`).join('');
+  dialog.querySelector('.marked-chapter-grid').style.setProperty('--number-columns',(books[chosen]?.chapters||0)>100?'9':'8');
+  dialog.querySelector('.marked-chapter-grid').innerHTML=`<button type="button" class="marked-all-chapters" data-marked-chapter="0" aria-pressed="${chapter===0}">All chapters</button>`+Array.from({length:books[chosen]?.chapters||0},(_,i)=>`<button type="button" data-marked-chapter="${i+1}" aria-pressed="${chapter===i+1}">${i+1}</button>`).join('');
   dialog.querySelector('.marked-kind-grid').innerHTML=MARKED_CATEGORIES.map(([key,label])=>`<button type="button" data-marked-kind="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}" aria-pressed="${kind===key}">${key==='all'?'':categoryIcon(key)}${label}</button>`).join('');
   const available=choice=>dataBook!==chosen||!draftData||markedFilterHasResults(draftData,{book:chosen,chapter,kind,theme,type,...choice});
   dialog.querySelectorAll('[data-marked-kind]').forEach(button=>{const value=button.dataset.markedKind;button.disabled=value!=='all'&&value!==kind&&!available({kind:value});});
-  dialog.querySelectorAll('[data-marked-chapter]').forEach(button=>{const value=Number(button.dataset.markedChapter);button.disabled=value!==0&&value!==chapter&&!available({chapter:value});});
+  if(!['stories','characters','prophecies'].includes(kind))dialog.querySelectorAll('[data-marked-chapter]').forEach(button=>{const value=Number(button.dataset.markedChapter);button.disabled=value!==0&&value!==chapter&&!available({chapter:value});});
   for(const [id,key,current] of [['marked-theme-filter','theme',theme],['marked-type-filter','type',type]])for(const option of dialog.querySelector('#'+id).options){option.disabled=option.value!=='all'&&option.value!==current&&!available({[key]:option.value,kind:'commandments'});}
   dialog.querySelector('#marked-filter-apply').disabled=!available({});
-
  }
  dialog.onclick=ev=>{const button=ev.target.closest('button');if(!button||button.disabled)return;if(button.hasAttribute('data-marked-filter-close')){dialog.close();return;}if(button.id==='marked-filter-apply'){markedBookSelection=chosen;markedChapterSelection=chapter;markedKind=kind;markedTheme=theme;markedCommandmentType=type;dialog.close();renderMarkedWorkspace();window.scrollTo({top:0,behavior:'instant'});return;}
   if(button.dataset.markedStep)step=button.dataset.markedStep;
@@ -138,16 +143,19 @@ renderPassageSaved=function(){renderSavedPassagesLegacy();if(view==='saved')rend
 window.addEventListener('viewchange',ev=>{if(ev.detail==='saved')renderMarkedWorkspace();else markedWorkspaceGeneration++;});
 if(view==='saved')renderMarkedWorkspace();
 
-// Match the Read category menu: reveal at the bottom while scrolling toward the top.
+// The floating copy is available only after the heading's Filter leaves view.
 (() => {
- let lastY=window.scrollY;
- function reveal(){document.body.classList.toggle('marked-filter-visible',view==='saved'&&window.scrollY<20);}
- window.addEventListener('scroll',()=>{
-  const y=Math.max(0,window.scrollY),delta=y-lastY;
-  if(view!=='saved'){lastY=y;return;}
-  if(y<20)document.body.classList.add('marked-filter-visible');
-  else if(Math.abs(delta)>=4){if(delta>0&&document.activeElement===$('#marked-filter-open'))document.activeElement.blur();document.body.classList.toggle('marked-filter-visible',delta<0);}
-  if(Math.abs(delta)>=4||y<20)lastY=y;
- },{passive:true});
- window.addEventListener('viewchange',()=>{lastY=window.scrollY;reveal();});reveal();
+ const top=$('#marked-filter-top'),floating=$('#marked-context');
+ top.addEventListener('click',openMarkedFilters);
+ const observer=new IntersectionObserver(entries=>{
+  const visible=entries[0].isIntersecting;
+  floating.hidden=visible||view!=='saved';
+  document.body.classList.toggle('marked-filter-visible',!visible&&view==='saved');
+ },{rootMargin:'-60px 0px 0px 0px',threshold:0});
+ observer.observe(top);
+ window.addEventListener('viewchange',()=>{
+  const r=top.getBoundingClientRect(),visible=view==='saved'&&r.bottom>60&&r.top<innerHeight;
+  floating.hidden=view!=='saved'||visible;
+  document.body.classList.toggle('marked-filter-visible',view==='saved'&&!visible);
+ });
 })();

@@ -141,7 +141,7 @@ const firstLoad=fetchPeople();assert.equal(fetchPeople(),firstLoad,'Concurrent l
 const people=await firstLoad;assert.equal(requests,2);assert.equal(await fetchPeople(),people);
 assert.equal(people.length,referencePeople.length);
 assert.equal(people.find(p=>p.name==='Aaron').key_passages[0],'Exodus 4:14');
-assert.equal(people.find(p=>p.name==='Aaron').summary,'','Do not invent a biography');
+assert.equal(people.find(p=>p.name==='Aaron').summary,characters.find(p=>p.id==='aaron').summary,'Use the reviewed biography only through the explicit reference-ID mapping');
 assert(people.filter(p=>p.name==='Abdi').length>1,'Distinct IDs with the same name must survive');
 const findPeople=createPeopleSearch(people);
 assert(findPeople(' jeezer ').some(p=>p.name==='Abiezer'),'Search aliases, ignoring case and surrounding whitespace');

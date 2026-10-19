@@ -17,9 +17,8 @@ function storyRoute(){return /^#stories\/([a-z0-9-]+)\/([a-z0-9-]+)$/.exec(locat
 function storyCard(story, pivot=false){
  const reference=storyReference(story.passage);
  const passage=reference?`<button type="button" class="story-passage" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.passage)} starting at verse ${reference.verse}">${esc(story.passage)} →</button>`:`<span>${esc(story.passage)}</span>`;
- const topics=(story.topics||[]).map(topic=>`<button type="button" class="story-theme" data-story-topic="${esc(topic)}" data-story-origin="${esc(story.passage)}" aria-haspopup="dialog" aria-controls="story-topic-sheet"><span aria-hidden="true">#</span> ${esc(topic)}</button>`).join('');
  const references=story.cross_references.map(label=>{const ref=storyReference(label);return ref?`<button type="button" class="verse-citation story-reference" data-cite="${ref.book}/${ref.chapter}/${ref.verse}" data-cite-end="${ref.endVerse}" data-cite-end-chapter="${ref.endChapter}" data-cite-label="${esc(label)}" data-cite-preview aria-haspopup="dialog" aria-expanded="false">${esc(label)}</button>`:'';}).join('');
- return `<article class="story-card" id="${pivot?'topic-story-':'story-'}${storySlug(story.title)}" tabindex="-1"><h3>${esc(story.title)}</h3>${passage}<p>${esc(story.summary)}</p>${topics?`<div class="story-themes"><span class="story-themes-label">Themes</span>${topics}</div>`:''}${references?`<div class="story-references"><span>Referenced in:</span> ${references}</div>`:''}</article>`;
+ return `<article class="story-card" id="${pivot?'topic-story-':'story-'}${storySlug(story.title)}" tabindex="-1"><h3>${esc(story.title)}</h3>${passage}<p>${esc(story.summary)}</p>${references?`<div class="story-references"><span>Referenced in:</span> ${references}</div>`:''}</article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;

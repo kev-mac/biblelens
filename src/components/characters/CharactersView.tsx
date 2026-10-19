@@ -29,6 +29,8 @@ function mountCharacters(): void {
   let loading = true;
   let failed = false;
   let womenOnly = false;
+  let menOnly=false,testament='',biographyOnly=false,example:DirectoryPerson|undefined;
+  const extraFilters=new Map<string,HTMLButtonElement>();
   let profileRoute = '';
   let opener: HTMLElement | null = null;
   let activeTab: 'overview' | 'connections' = 'overview';
@@ -36,16 +38,16 @@ function mountCharacters(): void {
   let routeVersion = 0;
   const familyHistory: {id: string; tab: typeof activeTab}[] = [];
   const heading = element('div', 'page-heading');
-  heading.append(element('p', 'eyebrow', 'PEOPLE & CONNECTIONS'), element('h1', '', 'Characters'),
+  heading.append(element('h1', '', 'People'),
     element('p', '', 'Find people by name and follow their scripture passages.'));
   const note = element('p', 'characters-note', 'Adapted from Theographic Bible Metadata. Names and passage references come from the reference directory; biographical summaries may be unavailable.');
-  const label = element('label', 'sr-only', 'Search characters by name or alias');
+  const label = element('label', 'sr-only', 'Search people by name or alias');
   label.htmlFor = 'characters-search';
   const search = element('input');
   search.id = 'characters-search'; search.type = 'search';
   search.placeholder = 'Search names or aliases…';
   const filters = element('div', 'characters-filters');
-  filters.setAttribute('role', 'group'); filters.setAttribute('aria-label', 'Filter characters');
+  filters.setAttribute('role', 'group'); filters.setAttribute('aria-label', 'Filter people');
   const count = element('p', 'characters-count'); count.setAttribute('role', 'status');
   const list = element('div', 'characters-grid'); list.id = 'characters-list';
   const reset = element('button', 'characters-reset', 'Reset filters'); reset.type = 'button';
@@ -55,7 +57,13 @@ function mountCharacters(): void {
   host.append(heading, note, searchBox, filters, results, list);
   const women = element('button', 'characters-women character-female', 'Women'); women.type = 'button';
   women.setAttribute('aria-controls', list.id);
-  women.addEventListener('click', () => { womenOnly = !womenOnly; page = 0; render(); }); filters.append(women);
+  women.addEventListener('click', () => { womenOnly = !womenOnly;menOnly=false; page = 0; render(); }); filters.append(women);
+  for(const [key,text] of [['men','Men'],['old','Old Testament'],['new','New Testament'],['biography','With biography']]){
+    const button=element('button','characters-filter',text);button.type='button';button.setAttribute('aria-controls',list.id);button.setAttribute('aria-pressed','false');
+    button.addEventListener('click',()=>{if(key==='men'){menOnly=!menOnly;womenOnly=false;}else if(key==='biography')biographyOnly=!biographyOnly;else testament=testament===key?'':key;page=0;render();});
+    if(key==='old'||key==='new')button.title='People with recorded references in the '+(key==='old'?'Old':'New')+' Testament';
+    extraFilters.set(key,button);filters.append(button);
+  }
   const pagination = element('div', 'characters-pagination');
   const previous = element('button', '', 'Previous'); previous.type = 'button';
   const next = element('button', '', 'Next'); next.type = 'button';
@@ -64,29 +72,32 @@ function mountCharacters(): void {
   pagination.append(previous, next); host.append(pagination, retry);
   list.tabIndex = -1;
   function render(): void {
-    const matches = findPeople(search.value, womenOnly);
+    const filtered=!!search.value.trim()||womenOnly||menOnly||!!testament||biographyOnly;
+    const matches = !filtered&&example?[example]:findPeople(search.value,womenOnly).filter(person=>(!menOnly||person.sex==='male')&&(!testament||person.testaments.includes(testament as 'old'|'new'))&&(!biographyOnly||!!person.summary));
+    search.placeholder=example?.name||'Search names or aliases…';
+    for(const [key,button] of extraFilters)button.setAttribute('aria-pressed',String(key==='men'?menOnly:key==='biography'?biographyOnly:testament===key));
     page = Math.min(page, Math.max(0, Math.ceil(matches.length / CHARACTER_PAGE_SIZE) - 1));
     list.replaceChildren(...characterPage(matches, page).map(CharacterCard));
-    count.textContent = loading ? 'Loading characters…' : failed ? 'Characters could not be loaded. Please retry.'
-      : `${matches.length ? page * CHARACTER_PAGE_SIZE + 1 : 0}–${Math.min((page + 1) * CHARACTER_PAGE_SIZE, matches.length)} of ${matches.length} characters`;
+    count.textContent = loading ? 'Loading people…' : failed ? 'People could not be loaded. Please retry.'
+      : !filtered&&example?`Example · ${example.name}` : `${matches.length ? page * CHARACTER_PAGE_SIZE + 1 : 0}–${Math.min((page + 1) * CHARACTER_PAGE_SIZE, matches.length)} of ${matches.length} people`;
     list.setAttribute('aria-busy', String(loading));
-    reset.hidden = !search.value && !womenOnly;
+    reset.hidden = !filtered;
     women.setAttribute('aria-pressed', String(womenOnly));
     previous.disabled = page === 0; next.disabled = (page + 1) * CHARACTER_PAGE_SIZE >= matches.length;
     pagination.hidden = loading || failed || matches.length <= CHARACTER_PAGE_SIZE;
     retry.hidden = !failed;
-    if (!loading && !failed && !matches.length) list.append(element('p', 'characters-empty', 'No characters match. Try another name or alias, or reset the filters.'));
+    if (!loading && !failed && !matches.length) list.append(element('p', 'characters-empty', 'No people match. Try another name or alias, or reset the filters.'));
   }
   let searchTimer: ReturnType<typeof setTimeout>;
   search.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { page = 0; render(); }, 100); });
-  reset.addEventListener('click', () => { clearTimeout(searchTimer); search.value = ''; womenOnly = false; page = 0; render(); search.focus(); });
+  reset.addEventListener('click', () => { clearTimeout(searchTimer); search.value = ''; womenOnly = false;menOnly=false;testament='';biographyOnly=false; page = 0; render(); search.focus(); });
   function movePage(offset: number): void {
     clearTimeout(searchTimer); page += offset; render(); list.focus({preventScroll:true}); list.scrollIntoView({block:'start'});
   }
   previous.addEventListener('click', () => movePage(-1)); next.addEventListener('click', () => movePage(1));
   async function load(): Promise<void> {
     loading = true; failed = false; render();
-    try { people = await fetchPeople(); findPeople = createPeopleSearch(people); }
+    try { people = await fetchPeople(); findPeople = createPeopleSearch(people);const examples=people.filter(person=>!!person.summary);example=examples[Math.floor(Math.random()*examples.length)]||people[0]; }
     catch { failed = true; }
     loading = false; render(); handleRoute();
   }
@@ -124,7 +135,7 @@ function mountCharacters(): void {
     if (location.hash === '#characters' && opener?.isConnected && !host.hidden) opener.focus();
   });
   host.addEventListener('click', event => {
-    const target = (event.target as HTMLElement).closest<HTMLAnchorElement>('a.character-name,a.character-more-passages');
+    const target = (event.target as HTMLElement).closest<HTMLAnchorElement>('a.character-name,a.character-more-passages,a.character-detail-toggle');
     if (target) opener = target;
   });
   function repeatFamilyNavigation(event: MouseEvent): void {
@@ -147,7 +158,7 @@ function mountCharacters(): void {
       if (sheet.open) sheet.close();
       const target = people.find(person => person.id === cardRoute[1]) || characters.find(person => person.id === cardRoute[1]);
       if (target) {
-        search.value = ''; womenOnly = false;
+        search.value = target.name; womenOnly = false;menOnly=false;testament='';biographyOnly=false;
         page = Math.max(0, Math.floor(people.indexOf(target as DirectoryPerson) / CHARACTER_PAGE_SIZE)); render();
         if (!people.includes(target as DirectoryPerson)) {
           list.replaceChildren(CharacterCard(target));

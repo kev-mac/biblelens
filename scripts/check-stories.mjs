@@ -35,6 +35,7 @@ for(const entry of catalog){
   assert.deepEqual(Object.keys(story).sort(),['cross_references','passage','summary','title','topics']);
   for(const field of ['title','passage','summary'])assert.equal(typeof story[field],'string');
   assert(Array.isArray(story.cross_references));
+  assert(story.summary.trim().split(/\s+/).length<=300,story.title+' exceeds the approved word limit');
   assert(story.topics.length<=5);assert.equal(new Set(story.topics).size,story.topics.length);
   for(const label of [story.passage,...story.cross_references]){
    const ref=c.storyReference(label);assert(ref,label);
@@ -85,7 +86,7 @@ const theme=origin.topics.find(t=>genesis.stories.some(other=>other!==origin&&ot
 await c.openStoryTopic(theme,origin.passage);
 assert(node('#story-topic-sheet').open);assert.equal(node('#story-topic-heading').textContent,theme);
 assert(!node('#story-topic-body').innerHTML.includes(`data-story-passage="${origin.passage}"`));
-assert(node('#story-topic-body').innerHTML.includes('data-story-topic='));
+assert(!node('#story-topic-body').innerHTML.includes('class="story-themes"'),'Story cards reserve this space for narrative');
 await c.openStoryTopic('No matches',origin.passage);assert(node('#story-topic-body').innerHTML.includes('No other stories'));
 c.closeStoryTopic();assert(!node('#story-topic-sheet').open);
 const unsafe=c.storyCard({...origin,topics:['<script>"&']});assert(!unsafe.includes('<script>'));

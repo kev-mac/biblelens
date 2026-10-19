@@ -1,0 +1,61 @@
+<div id="biblelens-story-opacity-preview" aria-label="Current Story card background compared with adjustable background opacity">
+  <style>
+    #biblelens-story-opacity-preview {--bl-ink:#e8eef6;--bl-muted:#9aadc3;--bl-panel:#172232;--bl-line:#29384a;--bl-link:#7dd3fc;--bl-story:99,102,241;--bl-base-alpha:.1;--bl-gradient-alpha:.15;color:var(--bl-ink);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.6;color-scheme:dark;}
+    #biblelens-story-opacity-preview *{box-sizing:border-box;}
+    #biblelens-story-opacity-preview .bl-setting{background:var(--bl-panel);border:1px solid var(--bl-line);border-radius:24px;padding:16px 20px;margin-bottom:18px;max-width:480px;}
+    #biblelens-story-opacity-preview label{display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:500;}
+    #biblelens-story-opacity-preview output{color:var(--bl-link);}
+    #biblelens-story-opacity-preview input{width:100%;accent-color:var(--bl-link);margin:12px 0 4px;min-height:44px;}
+    #biblelens-story-opacity-preview .bl-control-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;}
+    #biblelens-story-opacity-preview .bl-reset{display:grid;place-items:center;width:44px;height:44px;padding:10px;border:0;border-radius:50%;background:transparent;color:var(--bl-link);}
+    #biblelens-story-opacity-preview .bl-reset svg{width:20px;height:20px;}
+    #biblelens-story-opacity-preview .bl-ends{display:flex;justify-content:space-between;color:var(--bl-muted);font-size:14px;}
+    #biblelens-story-opacity-preview .bl-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+    #biblelens-story-opacity-preview .bl-example{min-width:0;}
+    #biblelens-story-opacity-preview .bl-caption{color:light-dark(#243246,#e8eef6);font-weight:500;margin:0 0 10px;}
+    #biblelens-story-opacity-preview .bl-stage{padding:24px 18px;border-radius:24px;background:radial-gradient(ellipse at 75% 85%,rgba(200,90,23,.18) 0%,#0d1522 45%,#05080e 100%);background-color:#05080e;}
+    #biblelens-story-opacity-preview .bl-page{display:block;font-weight:500;margin:0 4px 20px;}
+    #biblelens-story-opacity-preview .bl-surface{position:relative;isolation:isolate;border-radius:22px;padding:24px;border:1px solid rgba(var(--bl-story),.35);background:radial-gradient(ellipse at top left,rgba(var(--bl-story),var(--bl-gradient-alpha)),transparent 75%),rgba(var(--bl-story),var(--bl-base-alpha));box-shadow:none;backdrop-filter:none;}
+    #biblelens-story-opacity-preview .bl-current{--bl-base-alpha:.1;--bl-gradient-alpha:.18;}
+    #biblelens-story-opacity-preview h3{font-size:19.2px;line-height:1.5;font-weight:500;margin:0 0 14px;}
+    #biblelens-story-opacity-preview .bl-reference{display:inline-block;color:var(--bl-link);background:#0f1722;border:1px solid rgba(var(--bl-story),.6);border-radius:24px;padding:7px 13px;margin-bottom:0;}
+    #biblelens-story-opacity-preview p{line-height:1.65;margin:16px 0;}
+    #biblelens-story-opacity-preview .bl-themes{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px;color:var(--bl-link);}
+    #biblelens-story-opacity-preview .bl-themes span:first-child{color:var(--bl-muted);}
+    #biblelens-story-opacity-preview .bl-theme{background:#0f1722;border:1px solid rgba(var(--bl-story),.6);border-radius:999px;padding:4px 9px;}
+    @media(max-width:640px){#biblelens-story-opacity-preview .bl-comparison{grid-template-columns:1fr;}#biblelens-story-opacity-preview .bl-surface{padding:18px;}}
+  </style>
+  <section class="bl-setting" aria-label="Story surface opacity preview setting">
+    <div class="bl-control-heading"><label for="bl-story-opacity-range">Base opacity</label><button id="bl-story-reset" class="bl-reset cursor-interaction" type="button" aria-label="Reset opacity and gradient to defaults"><i data-lucide="rotate-ccw" aria-hidden="true"></i></button></div>
+    <input class="cursor-interaction" id="bl-story-opacity-range" type="range" min="1" max="5" step="1" value="3" aria-valuetext="Level 3 of 5, default">
+    <label for="bl-story-gradient-range" style="margin-top:18px">Gradient strength</label>
+    <input class="cursor-interaction" id="bl-story-gradient-range" type="range" min="1" max="5" step="1" value="4" aria-valuetext="Level 4 of 5, default">
+  </section>
+  <div class="bl-comparison">
+    <section class="bl-example"><div class="bl-caption">Current Story card</div><div class="bl-stage"><span class="bl-page">Stories</span><article class="bl-surface bl-current"><h3>The Line of Seth</h3><span class="bl-reference">Genesis 4:25–5:32 →</span><p>The genealogy traces the line from Adam through Seth to Noah. Enoch walks with God, and Noah is introduced with his three sons.</p><div class="bl-themes"><span>Themes</span><span class="bl-theme"># GENEALOGY</span><span class="bl-theme"># LONGEVITY</span></div></article></div></section>
+    <section class="bl-example"><div class="bl-caption">Adjustable</div><div class="bl-stage"><span class="bl-page">Stories</span><article class="bl-surface"><h3>The Line of Seth</h3><span class="bl-reference">Genesis 4:25–5:32 →</span><p>The genealogy traces the line from Adam through Seth to Noah. Enoch walks with God, and Noah is introduced with his three sons.</p><div class="bl-themes"><span>Themes</span><span class="bl-theme"># GENEALOGY</span><span class="bl-theme"># LONGEVITY</span></div></article></div></section>
+  </div>
+  <script>
+    (()=>{
+      const root=document.getElementById('biblelens-story-opacity-preview');
+      const input=root.querySelector('#bl-story-opacity-range');
+      const gradient=root.querySelector('#bl-story-gradient-range');
+      const reset=root.querySelector('#bl-story-reset');
+      const saved=window.openai?.widgetState?.modelContent;
+      if(saved?.previewVersion==='story-levels-v1'){
+        if(Number.isInteger(saved.opacityLevel)&&saved.opacityLevel>=1&&saved.opacityLevel<=5)input.value=String(saved.opacityLevel);
+        if(Number.isInteger(saved.gradientLevel)&&saved.gradientLevel>=1&&saved.gradientLevel<=5)gradient.value=String(saved.gradientLevel);
+      }
+      function render(){
+        const opacityLevel=Number(input.value),gradientLevel=Number(gradient.value);
+        root.style.setProperty('--bl-base-alpha',String((opacityLevel-1)*.05));
+        root.style.setProperty('--bl-gradient-alpha',String((gradientLevel-1)*.05));
+        input.setAttribute('aria-valuetext','Level '+opacityLevel+' of 5'+(opacityLevel===3?', default':''));
+        gradient.setAttribute('aria-valuetext','Level '+gradientLevel+' of 5'+(gradientLevel===4?', default':''));
+      }
+      function changed(){render();window.openai?.setWidgetState?.({modelContent:{opacityLevel:Number(input.value),gradientLevel:Number(gradient.value),previewVersion:'story-levels-v1'},privateContent:null}).catch(()=>{});}
+      render();input.addEventListener('input',changed);gradient.addEventListener('input',changed);
+      reset.addEventListener('click',()=>{input.value='3';gradient.value='4';changed();});
+    })();
+  </script>
+</div>

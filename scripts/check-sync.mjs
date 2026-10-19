@@ -47,5 +47,9 @@ const deleted=core.merge(base,removed,base);assert(!Object.hasOwn(deleted.data.n
 const withUnsafe=JSON.parse('{"notes":{"__proto__":{"polluted":true}}}');assert(!Object.hasOwn(core.merge({},withUnsafe,{}).data.notes,'__proto__'));
 assert.equal({}.polluted,undefined);
 const afterUpload=structuredClone(merged.data);afterUpload.notes.study='Typed while syncing';assert.equal(core.merge(local,afterUpload,merged.data).data.notes.study,'Typed while syncing');
+const fontState={readerPreferences:{verseFont:'inter',categoryFont:'inter'}};
+core.apply(fontState,{preferences:{navColors:'off',font:'system',verseFont:'system',categoryFont:'system'}});
+assert.equal(fontState.readerPreferences.navColors,'off');assert.equal(core.snapshot(fontState).preferences.navColors,'off');assert.equal(fontState.readerPreferences.font,'system');assert.equal(core.snapshot(fontState).preferences.font,'system');
+assert.deepEqual(fontState.verseNotes,{},'Font preference sync must not add note data');
 sqlite.close();
 console.log('PASS: schema migrations, account isolation, CSRF/origin checks, single-use/expiring device codes, hashed/revocable tokens, revision conflicts, offline edits, deletions and preservation of concurrent note text.');

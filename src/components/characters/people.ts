@@ -1,8 +1,12 @@
 import books from '../../../data/books.json';
+import {characters} from './directory';
+import referenceIds from '../../data/character-reference-ids.json';
+const writtenByReference=new Map(characters.map(profile=>[(referenceIds as Record<string,string>)[profile.id],profile]));
 import type { CharacterProfile } from '../../types/character';
 
 export interface DirectoryPerson extends CharacterProfile {
   key_passages: string[];
+  testaments: ('old'|'new')[];
 }
 const normalize = (value: string): string => value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
@@ -14,19 +18,21 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
     if (!record || typeof record.id !== 'string' || !record.id || typeof record.name !== 'string' || !record.name.trim() || seen.has(record.id)) return [];
     seen.add(record.id);
     const aliases = [...new Set<string>((Array.isArray(record.aliases) ? record.aliases : []).filter((name: unknown): name is string => typeof name === 'string' && !!name.trim()))].filter(name => normalize(name) !== normalize(record.name));
-    const passages = new Set<string>();
+    const passages = new Set<string>(),referenceBooks=new Set<number>();
     for (const ref of Array.isArray(record.refs) ? record.refs : []) {
       if (!Array.isArray(ref) || ref.length !== 3 || !ref.every(Number.isInteger)) continue;
       const [bookId, chapter, verse] = ref;
       const book = books.find(book => book.id === bookId);
-      if (book && chapter > 0 && chapter <= book.chapters && verse > 0) passages.add(`${book.name} ${chapter}:${verse}`);
+      if (book && chapter > 0 && chapter <= book.chapters && verse > 0) {passages.add(`${book.name} ${chapter}:${verse}`);referenceBooks.add(bookId);}
     }
-    const summary = [record.summary, record.description, record.title].find(value => typeof value === 'string' && value.trim()) || '';
+    const written=writtenByReference.get(record.id);
+    const summary = [record.summary, record.description, record.title].find(value => typeof value === 'string' && value.trim()) || written?.summary || '';
     const key_passages = [...passages];
     return [{id: record.id, name: record.name.trim(), aliases, summary, key_passages,
       sex: record.gender === 'Female' ? 'female' : record.gender === 'Male' ? 'male' : 'unspecified',
-      era: 'Across scripture', geography: {origin: '', residence: []},
-      narrative_anchors: {books: [], key_verses: key_passages, linked_stories: []}} as DirectoryPerson];
+      era: written?.era || 'Across scripture', geography: written?.geography || {origin: '', residence: []},
+      testaments: [...new Set([...referenceBooks].map(book=>book<39?'old':'new'))],
+      narrative_anchors: {books: written?.narrative_anchors.books || [], key_verses: key_passages, linked_stories: written?.narrative_anchors.linked_stories || []}} as DirectoryPerson];
   }).sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
 }
 

@@ -1,0 +1,74 @@
+<div id="biblelens-glass-preview" aria-label="BibleLens glass appearance comparison with stronger frost, depth and simulated edge refraction">
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden"><defs>
+    <filter id="bl-glass-refraction" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.018 0.035" numOctaves="2" seed="7" result="warp"/><feDisplacementMap id="bl-refraction-scale" in="SourceGraphic" in2="warp" scale="18" xChannelSelector="R" yChannelSelector="G"/></filter>
+    <filter id="bl-glass-grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs></svg>
+  <style>
+    #biblelens-glass-preview { --bl-ink:light-dark(#142438,#e8eef6);--bl-muted:light-dark(#4b6076,#a7b9cb);--bl-ground:light-dark(#e8eff7,#0c1421);--bl-panel:light-dark(#f7faff,#131f30);--bl-line:light-dark(#b0c0d3,#3b506c);--bl-link:light-dark(#075b89,#7dd3fc);--bl-violet:light-dark(#7043af,#b89bff);color:var(--bl-ink);font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.55;}
+    #biblelens-glass-preview * {box-sizing:border-box;}
+    #biblelens-glass-preview .bl-setting {background:var(--bl-panel);border:1px solid var(--bl-line);border-radius:24px;padding:16px 20px;max-width:480px;margin:0 0 22px;}
+    #biblelens-glass-preview .bl-setting label {display:flex;justify-content:space-between;gap:16px;align-items:center;font-weight:500;}
+    #biblelens-glass-preview .bl-setting output {color:var(--bl-link);}
+    #biblelens-glass-preview .bl-range {width:100%;accent-color:var(--bl-link);margin:15px 0 5px;min-height:28px;}
+    #biblelens-glass-preview .bl-stops {display:flex;justify-content:space-between;color:var(--bl-muted);}
+    #biblelens-glass-preview .bl-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+    #biblelens-glass-preview .bl-column {min-width:0;}
+    #biblelens-glass-preview .bl-label {display:flex;justify-content:space-between;align-items:center;min-height:35px;margin-bottom:9px;font-weight:500;}
+    #biblelens-glass-preview .bl-default {font-weight:400;color:var(--bl-muted);}
+    #biblelens-glass-preview .bl-stage {position:relative;isolation:isolate;overflow:hidden;border-radius:24px;background:var(--bl-ground);border:1px solid var(--bl-line);padding:20px 14px;min-height:478px;}
+    #biblelens-glass-preview .bl-stage::before {content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 0% 20%,light-dark(#479bd54d,#237fd580),transparent 70%),radial-gradient(ellipse at 100% 70%,light-dark(#a95dc64d,#ab508777),transparent 68%);}
+    #biblelens-glass-preview .bl-stage::after {content:"";position:absolute;z-index:-1;left:12%;top:-30px;width:110px;height:600px;transform:rotate(29deg);background:linear-gradient(90deg,transparent,light-dark(#91c6ed66,#80b6f033) 35%,light-dark(#d6a0d74d,#c696ed40) 65%,transparent);pointer-events:none;}
+    #biblelens-glass-preview .bl-page-label {display:block;font-weight:500;margin:0 4px 23px;}
+    #biblelens-glass-preview .bl-content {position:relative;border-radius:22px;padding:18px;min-height:310px;}
+    #biblelens-glass-preview .bl-title {font-size:18px;font-weight:500;line-height:1.35;margin:0 0 15px;}
+    #biblelens-glass-preview .bl-passage {display:inline-block;color:var(--bl-link);background:var(--bl-ground);border:1px solid var(--bl-line);border-radius:999px;padding:5px 10px;margin-bottom:14px;}
+    #biblelens-glass-preview .bl-copy {margin:0 0 15px;}
+    #biblelens-glass-preview .bl-quote {margin:0;font-style:italic;}
+    #biblelens-glass-preview .bl-footer {margin-top:18px;padding:11px 12px;border-radius:16px;display:flex;justify-content:space-between;gap:8px;align-items:center;color:var(--bl-muted);}
+    #biblelens-glass-preview .bl-filter {color:var(--bl-link);padding:4px 10px;border-radius:999px;border:1px solid var(--bl-line);background:var(--bl-ground);}
+    #biblelens-glass-preview [data-glass="off"] .bl-material {background:var(--bl-panel);border:1px solid var(--bl-line);box-shadow:none;}
+    #biblelens-glass-preview [data-glass="subtle"] .bl-material {background:linear-gradient(150deg,light-dark(#ffffff66,#d5e5ff12),transparent 65%),light-dark(#eef4ffd9,#17243bd9);border:1px solid light-dark(#ffffffcc,#a8c8fa55);backdrop-filter:blur(16px) saturate(115%);-webkit-backdrop-filter:blur(16px) saturate(115%);box-shadow:inset 0 1px 2px light-dark(#ffffff,#ffffff38),inset 0 -1px 2px #00000010,0 9px 18px #00000020;}
+    #biblelens-glass-preview [data-glass="liquid"] .bl-material {isolation:isolate;background:linear-gradient(135deg,light-dark(#ffffff9c,#e0edff36),transparent 48%,light-dark(#d8e4f54d,#a5c2eb12)),light-dark(#e8f0ffb3,#24334bb3);border:1px solid light-dark(#ffffffdd,#dceaff80);backdrop-filter:blur(var(--bl-frost,30px)) saturate(150%);-webkit-backdrop-filter:blur(var(--bl-frost,30px)) saturate(150%);box-shadow:0 var(--bl-depth,22px) 32px -13px #00000070,0 6px 12px #00000026,inset 0 2px 5px light-dark(#ffffff,#ffffff88),inset 0 -3px 7px light-dark(#89a4c455,#07112188);}
+    #biblelens-glass-preview [data-glass="liquid"] .bl-material::before {content:"";position:absolute;z-index:-1;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(125deg,light-dark(#ffffffdd,#edf5ffb3),transparent 28%,transparent 66%,light-dark(#ffffffaa,#bbd8ff70));padding:8px;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;backdrop-filter:url(#bl-glass-refraction) blur(0.5px) saturate(160%);-webkit-backdrop-filter:blur(0.5px) saturate(160%);opacity:0.68;}
+    #biblelens-glass-preview [data-glass="liquid"] .bl-material::after {content:"";position:absolute;z-index:-1;inset:0;border-radius:inherit;pointer-events:none;filter:url(#bl-glass-grain);opacity:0.045;mix-blend-mode:soft-light;}
+    #biblelens-glass-preview .bl-column[data-preview-selected="true"] .bl-label {color:var(--bl-link);}
+    #biblelens-glass-preview .bl-material {color:var(--bl-ink);}
+    @media(max-width:720px){#biblelens-glass-preview .bl-grid{grid-template-columns:1fr;}#biblelens-glass-preview .bl-stage{min-height:0;}#biblelens-glass-preview .bl-content{min-height:0;}#biblelens-glass-preview .bl-range{min-height:44px;}}
+  </style>
+  <section class="bl-setting" aria-label="Glass appearance setting preview">
+    <label for="bl-glass-range">Glass appearance <output id="bl-glass-value" for="bl-glass-range" aria-live="polite">Subtle · default</output></label>
+    <input class="bl-range cursor-interaction" id="bl-glass-range" type="range" min="0" max="2" step="1" value="1" aria-valuetext="Subtle, default">
+    <div class="bl-stops"><span>Off</span><span>Subtle</span><span>Liquid</span></div>
+  </section>
+  <div class="bl-grid" aria-label="Identical card content with three glass levels">
+    <section class="bl-column" data-glass="off" aria-label="Off glass appearance">
+      <div class="bl-label">Off</div>
+      <div class="bl-stage"><span class="bl-page-label">Stories</span><article class="bl-content bl-material"><h3 class="bl-title">The Line of Seth</h3><span class="bl-passage">Genesis 4:25–5:32 →</span><p class="bl-copy">The genealogy traces the line from Adam through Seth to Noah. Enoch walks with God, and Noah is introduced with his three sons.</p><p class="bl-quote">“And Enoch walked with God: and he was not; for God took him.”</p></article><div class="bl-footer bl-material"><span>Themes</span><span class="bl-filter"># Genealogy</span></div></div>
+    </section>
+    <section class="bl-column" data-glass="subtle" data-preview-selected="true" aria-label="Subtle glass appearance, default">
+      <div class="bl-label">Subtle <span class="bl-default">Default</span></div>
+      <div class="bl-stage"><span class="bl-page-label">Stories</span><article class="bl-content bl-material"><h3 class="bl-title">The Line of Seth</h3><span class="bl-passage">Genesis 4:25–5:32 →</span><p class="bl-copy">The genealogy traces the line from Adam through Seth to Noah. Enoch walks with God, and Noah is introduced with his three sons.</p><p class="bl-quote">“And Enoch walked with God: and he was not; for God took him.”</p></article><div class="bl-footer bl-material"><span>Themes</span><span class="bl-filter"># Genealogy</span></div></div>
+    </section>
+    <section class="bl-column" data-glass="liquid" aria-label="Liquid glass appearance">
+      <div class="bl-label">Liquid</div>
+      <div class="bl-stage"><span class="bl-page-label">Stories</span><article class="bl-content bl-material"><h3 class="bl-title">The Line of Seth</h3><span class="bl-passage">Genesis 4:25–5:32 →</span><p class="bl-copy">The genealogy traces the line from Adam through Seth to Noah. Enoch walks with God, and Noah is introduced with his three sons.</p><p class="bl-quote">“And Enoch walked with God: and he was not; for God took him.”</p></article><div class="bl-footer bl-material"><span>Themes</span><span class="bl-filter"># Genealogy</span></div></div>
+    </section>
+  </div>
+  <script>
+    (()=>{
+      const root=document.getElementById('biblelens-glass-preview');
+      const input=root.querySelector('#bl-glass-range');
+      const output=root.querySelector('#bl-glass-value');
+      const names=['Off','Subtle','Liquid'];
+      const saved=window.openai?.widgetState?.modelContent?.glassPreviewLevel;
+      if(names.includes(saved))input.value=String(names.indexOf(saved));
+      function render(){const index=Number(input.value);const name=names[index];output.textContent=name+(index===1?' · default':'');input.setAttribute('aria-valuetext',name);root.querySelectorAll('.bl-column').forEach((e,i)=>e.dataset.previewSelected=String(i===index));}
+      const optics={frost:30,depth:22,refraction:18};
+      function renderOptics(){root.style.setProperty('--bl-frost',optics.frost+'px');root.style.setProperty('--bl-depth',optics.depth+'px');root.querySelector('#bl-refraction-scale').setAttribute('scale',String(optics.refraction));}
+      renderOptics();
+      if(typeof Tweak!=='undefined'){const tweaks=new Tweak({container:root,onChange:renderOptics});tweaks.addSlider(optics,'frost',{label:'Liquid frost',min:12,max:44,unit:'px'});tweaks.addSlider(optics,'depth',{label:'Liquid depth',min:8,max:34,unit:'px'});tweaks.addSlider(optics,'refraction',{label:'Liquid edge distortion',min:0,max:28});}
+      render();
+      input.addEventListener('input',()=>{render();window.openai?.setWidgetState?.({modelContent:{glassPreviewLevel:names[Number(input.value)]},privateContent:null}).catch(()=>{});});
+    })();
+  </script>
+</div>
