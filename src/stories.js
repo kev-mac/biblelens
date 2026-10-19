@@ -2,7 +2,8 @@
 // Book-wide narratives are separate from verse-aligned evidence classifications.
 let storiesActive=false,storiesRequest=null,storiesGeneration=0,storiesCatalog=null;
 function storiesFilterButton(){return '';}
-let storiesBook='',storiesTheme='',storiesSearch='',storiesExample=null;
+let storiesBook='',storiesTheme='',storiesSearch='',storiesExample=null,storiesPage=0;
+const STORIES_PAGE_SIZE=10;
 function loadStories(){
  if(!storiesRequest){storiesRequest=fetch('/stories.json').then(response=>{if(!response.ok)throw Error('Stories unavailable');return response.json();}).then(catalog=>{storiesCatalog=catalog;return catalog;});storiesRequest.catch(()=>{storiesRequest=null;});}
  return storiesRequest;
@@ -24,6 +25,7 @@ async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
  const generation=++storiesGeneration;
  section.hidden=!storiesActive;
+ $('#stories-pagination').hidden=true;
  if(!storiesActive)return;
  const route=typeof location==='undefined'?null:storyRoute();
  const list=$('#stories-list');list.innerHTML='<p role="status">Loading stories…</p>';
@@ -43,21 +45,34 @@ async function renderStoriesView(){
   if(route)stories=stories.filter(story=>storySlug(story.title)===route[2]);
   $('#stories-results').hidden=!filtered;
   $('#stories-reset').hidden=!filtered;
-  $('#stories-results').textContent=`${stories.length} ${stories.length===1?'story':'stories'}`;
-  list.innerHTML=stories.length?stories.map(story=>storyCard(story)).join(''):'<p class="empty">No stories match these filters. Try another book or theme, or clear your search.</p>';
+  const pages=Math.ceil(stories.length/STORIES_PAGE_SIZE);
+  storiesPage=Math.max(0,Math.min(storiesPage,Math.max(0,pages-1)));
+  const start=storiesPage*STORIES_PAGE_SIZE,visible=stories.slice(start,start+STORIES_PAGE_SIZE);
+  $('#stories-results').textContent=pages>1?`${start+1}–${start+visible.length} of ${stories.length} stories`:`${stories.length} ${stories.length===1?'story':'stories'}`;
+  $('#stories-pagination').hidden=pages<=1;
+  $('#stories-previous').disabled=storiesPage===0;$('#stories-next').disabled=storiesPage>=pages-1;
+  $('#stories-page-status').textContent=pages>1?`${storiesPage+1} / ${pages}`:'';
+  list.innerHTML=stories.length?visible.map(story=>storyCard(story)).join(''):'<p class="empty">No stories match these filters. Try another book or theme, or clear your search.</p>';
   if(route){const selected=stories.find(story=>storySlug(story.title)===route[2]);if(selected){const card=document.getElementById('story-'+route[2]);card?.classList.add('story-linked');card?.focus({preventScroll:true});card?.scrollIntoView({block:'nearest'});}else list.innerHTML='<p class="empty">Story not found. Clear filters to explore other stories.</p>';}
  }catch{if(generation===storiesGeneration)list.innerHTML='<p>Could not load stories. <button type="button" data-stories-retry>Retry</button></p>';}
 }
 function updateStoriesFilters(){
- storiesBook=$('#stories-book').value;storiesTheme=$('#stories-theme').value;storiesSearch=$('#stories-search').value;
+ storiesPage=0;storiesBook=$('#stories-book').value;storiesTheme=$('#stories-theme').value;storiesSearch=$('#stories-search').value;
  if(storyRoute())history.replaceState(null,'','#stories');
  renderStoriesView();
 }
 $('#stories-search').addEventListener('input',updateStoriesFilters);
 $('#stories-book').addEventListener('change',updateStoriesFilters);
 $('#stories-theme').addEventListener('change',updateStoriesFilters);
-$('#stories-reset').addEventListener('click',()=>{storiesBook='';storiesTheme='';storiesSearch='';if(storyRoute())history.replaceState(null,'','#stories');renderStoriesView();});
-document.addEventListener('click',event=>{
+$('#stories-reset').addEventListener('click',()=>{storiesPage=0;storiesBook='';storiesTheme='';storiesSearch='';if(storyRoute())history.replaceState(null,'','#stories');renderStoriesView();});
+document.addEventListener('click',async event=>{
+ const paging=event.target.closest('[data-stories-page]');
+ if(paging){
+  if(paging.disabled)return;
+  storiesPage+=Number(paging.dataset.storiesPage);
+  await renderStoriesView();
+  if(storiesActive){$('#stories-list').focus({preventScroll:true});$('#stories-list').scrollIntoView?.({block:'start',behavior:'smooth'});}return;
+ }
  const chip=event.target.closest('[data-story-topic]');if(chip){openStoryTopic(chip.dataset.storyTopic,chip.dataset.storyOrigin);return;}
  if(event.target.closest('[data-stories-retry]')){renderStoriesView();return;}
  const button=event.target.closest('[data-story-passage]');if(!button)return;
@@ -70,6 +85,7 @@ async function routeLinkedStory(){
  const route=storyRoute();
  storiesActive=location.hash==='#stories'||!!route;
  if(route){
+  storiesPage=0;
   const hash=location.hash;
   try{const catalog=await loadStories();if(location.hash!==hash)return;storiesBook=catalog.find(entry=>storySlug(entry.book)===route[1])?.book||'';storiesTheme='';storiesSearch='';}catch{}
  }

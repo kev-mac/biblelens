@@ -902,7 +902,7 @@ body #chapter-text .verse-body,body #chapter-text .verse-body *,body [data-cite]
 body #chapter-text .verse-content-grid{display:block}
 body #chapter-text .comparison-cell{margin:8px 0 0;padding:0;border:0}
 body #chapter-text .comparison-cell:empty{display:none}
-@media(min-width:1000px){body #chapter-text .verse-content-grid.is-comparing{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}body #chapter-text .comparison-cell{margin:0}}
+/* Verse text keeps the full reader width; category details stack below it. */
 body.compare-active .comparison-dock{position:sticky;top:var(--site-header-height,52px);z-index:35;width:100%;height:auto!important;min-height:0;margin:0 0 12px;background:color-mix(in srgb,var(--bg) 80%,transparent);border:0;border-radius:0;box-shadow:none;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 body.compare-active .comparison-dock #comparison-status{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;-ms-overflow-style:none;width:100%;max-width:none;margin:0;padding:7px 10px;background:transparent;min-height:48px}
 body.compare-active .comparison-dock #comparison-status::-webkit-scrollbar{display:none;width:0;height:0}
@@ -945,7 +945,7 @@ body .note-confirm-dialog::backdrop{background:rgba(0,0,0,.45);backdrop-filter:b
 /* Compact chapter surface and scroll-triggered comparison menu. */
 body>header .header-context::before{content:none;margin:0}
 body #chapter-text,body #chapter-text.with-comparisons{padding:12px 12px 8px!important}
-body #chapter-text .verse{padding:6px 5px!important}
+body #chapter-text .verse{width:100%;min-width:0;box-sizing:border-box;padding:6px 0!important;border:0!important}
 body #chapter-text .passage-heading h2,body #chapter-text .chapter-subtitle{text-shadow:0 0 8px rgba(125,211,252,.45),0 0 22px rgba(125,211,252,.25)}
 body .note-actions{display:flex;gap:4px;margin:0 0 2px}
 body .note-actions .note-icon,body .note-actions .note-icon[data-edit-marked-note],body .note-actions .note-icon[data-edit-verse-note],body .note-actions .note-icon[data-delete-note]{color:var(--control-text,#7dd3fc)!important;width:32px;height:32px;min-height:32px;padding:7px;background:transparent!important;border:0!important;box-shadow:none!important}
@@ -1984,7 +1984,7 @@ body #bookmarks-view{--theme-rgb:234,179,8;--line:rgba(184,134,11,.55);--border:
 body.dark #bookmarks-view{--line:rgba(234,179,8,.55)}
 
 /* Saved marks identify words and tags; reading verses have no gold frame. */
-body #chapter-text .verse:has(.verse-body.verse-bookmarked){background:transparent!important;background-color:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;backdrop-filter:none;-webkit-backdrop-filter:none;color:inherit;text-shadow:none;padding:8px 0!important}
+body #chapter-text .verse:has(.verse-body.verse-bookmarked){background:transparent!important;background-color:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;backdrop-filter:none;-webkit-backdrop-filter:none;color:inherit;text-shadow:none}
 body #chapter-text [data-scripture],body #chapter-text [data-scripture] *{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
 body #chapter-text [data-scripture] [aria-hidden="true"],body #chapter-text .verse-num{-webkit-user-select:none;user-select:none}
 body .text-highlight{background:rgba(234,179,8,.28);color:inherit;border:0;border-radius:2px;box-shadow:none;padding:0}
@@ -2029,3 +2029,5 @@ body .category-back{display:inline-block;margin:0 0 20px;color:var(--ui-link)}
 body .category-results{color:var(--muted);font-size:.9rem}
 
 body #stories-list{margin-top:18px}
+
+.stories-pagination{display:flex;justify-content:center;align-items:center;gap:12px;margin:24px 0;flex-wrap:wrap}body #stories-list{scroll-margin-top:calc(var(--site-header-height,60px) + 16px)}

@@ -57,12 +57,12 @@ assert.equal(c.storiesFilterButton(),'');
 const malicious=c.storyCard({...genesis.stories[0],title:'<img onerror="bad">'});assert(!malicious.includes('<img'));
 for(const entry of catalog){
  vm.runInContext('storiesBook='+JSON.stringify(entry.book),c);await c.renderStoriesView();
- assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,entry.stories.length);
+ assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,Math.min(10,entry.stories.length));
  assert(node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(entry.stories[0].title)+'"'));
 }
 vm.runInContext("storiesBook='Exodus';storiesSearch='no matches for this query'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories match'));
 vm.runInContext("storiesSearch=''",c);
-vm.runInContext("storiesBook='Genesis';storiesTheme='Obedience'",c);await c.renderStoriesView();assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,genesis.stories.filter(story=>story.topics.includes('Obedience')).length);
+vm.runInContext("storiesBook='Genesis';storiesTheme='Obedience'",c);await c.renderStoriesView();assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,Math.min(10,genesis.stories.filter(story=>story.topics.includes('Obedience')).length));
 vm.runInContext("storiesTheme='';storiesSearch='noah'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('Noah'));
 vm.runInContext("storiesSearch=''",c);
 handlers.click({target:{closest:s=>s==='[data-story-passage]'?{dataset:{storyPassage:'Genesis 6:9 - 9:17'}}:null}});
@@ -70,7 +70,7 @@ assert.deepEqual(loads,[[0,6,9]]);assert(!node('#reader-layout').hidden);assert(
 // A delayed catalog response cannot replace the newly selected book.
 let resolve;vm.runInContext('storiesRequest=null;storiesActive=true',c);c.readingBook=0;vm.runInContext("storiesBook='Genesis'",c);c.fetch=()=>new Promise(r=>{resolve=r;});
 const stale=c.renderStoriesView();c.readingBook=1;vm.runInContext("storiesBook='Exodus'",c);const fresh=c.renderStoriesView();resolve({ok:true,json:async()=>catalog});await Promise.all([stale,fresh]);
-assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,exodus.stories.length);
+assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,Math.min(10,exodus.stories.length));
 assert(!node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(genesis.stories[0].title)+'"'));
 console.log(`PASS: ${total} stories in canon order, unique titles/slugs, reference bounds, topic vocabulary, per-book/all-book selection, empty search, passage navigation and stale-response protection.`);
 
@@ -98,3 +98,22 @@ const sharedTopic=shared.topics.find(topic=>genesis.stories.some(other=>other.to
 await c.openStoryTopic(sharedTopic,shared.passage);
 assert(node('#story-topic-body').innerHTML.includes(genesis.stories.find(story=>story.topics.includes(sharedTopic)).passage));
 console.log('PASS: Topic pivot filters, origin exclusion, empty results, closing and escaped themes.');
+
+// Pagination is bounded, preserves filters, resets on filter changes, and keeps
+// direct story routes working even when the target is past the first ten.
+c.location.hash='';vm.runInContext("storiesActive=true;storiesBook='Genesis';storiesTheme='';storiesSearch='';storiesPage=0",c);
+await c.renderStoriesView();
+assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,10);
+assert(node('#stories-previous').disabled);assert(!node('#stories-next').disabled);assert(!node('#stories-pagination').hidden);
+const page1=node('#stories-list').innerHTML;
+await handlers.click({target:{closest:selector=>selector==='[data-stories-page]'?{disabled:false,dataset:{storiesPage:'1'}}:null}});
+assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,10);
+assert(!node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(genesis.stories[0].title)+'"'));
+assert(node('#stories-results').textContent.startsWith('11–20 of '));assert(!node('#stories-previous').disabled);
+await handlers.click({target:{closest:selector=>selector==='[data-stories-page]'?{disabled:false,dataset:{storiesPage:'-1'}}:null}});assert.equal(node('#stories-list').innerHTML,page1,'Previous returns to the same first-page stories');
+vm.runInContext('storiesPage=999',c);await c.renderStoriesView();assert(node('#stories-next').disabled);assert((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length<=10);
+node('#stories-book').value='Genesis';node('#stories-search').value='no matches';node('#stories-theme').value='';c.updateStoriesFilters();await c.renderStoriesView();
+assert.equal(vm.runInContext('storiesPage',c),0);assert(node('#stories-pagination').hidden);assert(node('#stories-list').innerHTML.includes('No stories match'));
+c.location.hash='#stories/genesis/'+c.storySlug(genesis.stories.at(-1).title);await c.routeLinkedStory();
+assert(node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(genesis.stories.at(-1).title)+'"'));assert(node('#stories-pagination').hidden);
+console.log('PASS: ten-story pages, page bounds, next/previous state, result ranges, filter resets, empty results, and late-story deep links.');
