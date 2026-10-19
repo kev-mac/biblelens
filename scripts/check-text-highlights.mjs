@@ -59,3 +59,48 @@ assert.equal(context.markedVerseTextParts(' Public <b>verse</b> {H123} text. ','
 for(const text of ['Light and darkness','The Word','The King','The Sun','The Son'])assert.equal(real(text).length,0,'A descriptive title is not a person name: '+text);
 assert(real('Jesus',{book:45,chapter:1,verse:1}).length);assert(real('Amittai',{book:31,chapter:1,verse:1}).length);assert(real('Abel').length);
 console.log('PASS: bookmark verse contains the original highlight once, keeps its saved edition and context-menu metadata, uses safe text nodes, and excludes title aliases such as Light.');
+
+// Exercise the real selection controller: selecting/closing/navigation never
+// writes; only an explicit color choice may save the current source offsets.
+{
+ const reader=fs.readFileSync('src/reader.js','utf8');
+ const controller=reader.slice(reader.indexOf('// Native text selection keeps'),reader.indexOf('// A saved highlight has its own menu;'));
+ const text='In the beginning God created the heaven and the earth.';
+ const body={dataset:{book:'0',chapter:'1',verse:'1'}},scripture={nodeType:1,closest:()=>body};
+ scripture.closest=selector=>selector.includes('[data-scripture]')?scripture:body;
+ const textNode={nodeType:3,parentElement:scripture};
+ let start=3,end=16,coarse=true,collapsed=false;
+ const range={startContainer:textNode,endContainer:textNode,get startOffset(){return start},get endOffset(){return end},getBoundingClientRect:()=>({left:30,top:160,bottom:200,width:120}),intersectsNode:()=>true,compareBoundaryPoints:kind=>kind===0?1:-1};
+ const selection={get rangeCount(){return collapsed?0:1},get isCollapsed(){return collapsed},anchorNode:textNode,focusNode:textNode,getRangeAt:()=>range,removeAllRanges(){collapsed=true;emit('selectionchange');}};
+ const properties={},classes=new Set(),events={},windowEvents={},viewportEvents={},timers=new Map(),writes=[];let sequence=0,renders=0;
+ const buttons=['yellow','green','blue','pink','purple','orange'].map(color=>({dataset:{highlightChoice:color},attributes:{},setAttribute(key,value){this.attributes[key]=value;}}));
+ const picker={hidden:true,dataset:{},style:{},events:{},setAttribute(){},addEventListener(name,fn){this.events[name]=fn},querySelectorAll:()=>buttons,getBoundingClientRect(){return {width:parseFloat(this.style.width)||270,height:this.dataset.docked==='true'?112:46}}};
+ const document={createElement:()=>picker,body:{append(){},classList:{add:key=>classes.add(key),remove:key=>classes.delete(key)}},documentElement:{style:{setProperty:(key,value)=>properties[key]=value,removeProperty:key=>delete properties[key]}},querySelector:selector=>selector==='body>header'?{getBoundingClientRect:()=>({bottom:100})}:null,querySelectorAll:()=>[scripture],addEventListener(name,fn){(events[name]??=[]).push(fn)},createRange(){return {startContainer:textNode,startOffset:0,endOffset:text.length,selectNodeContents(){},setStart(node,offset){this.startOffset=offset},setEnd(node,offset){this.endOffset=offset},cloneContents(){return {textContent:text.slice(this.startOffset,this.endOffset),querySelectorAll:()=>[]}}}}};
+ function emit(name,event={}){for(const handler of events[name]||[])handler(event);}
+ function flush(){let count=0;while(timers.size){assert(count++<20);const [id,callback]=timers.entries().next().value;timers.delete(id);callback();}}
+ const window={getSelection:()=>selection,matchMedia:()=>({matches:coarse}),innerWidth:375,innerHeight:800,visualViewport:{offsetTop:40,offsetLeft:0,width:375,height:600,addEventListener(name,fn){viewportEvents[name]=fn}},addEventListener(name,fn){windowEvents[name]=fn}};
+ const c={document,window,Range:{START_TO_START:0,END_TO_END:2},readingBook:0,readingChapter:1,reading:{verses:[{n:1,kjv:text}]},$:()=>({value:'kjv'}),setTimeout:callback=>{const id=++sequence;timers.set(id,callback);return id},clearTimeout:id=>timers.delete(id),saveTextHighlights:entries=>{writes.push(JSON.parse(JSON.stringify(entries)));return true},comparisonStatus(){},renderReader(){renders++}};
+ vm.createContext(c);vm.runInContext(controller,c);
+ emit('selectionchange');flush();
+ assert.equal(writes.length,0,'Merely selecting text must not save a default highlight');
+ assert(buttons.every(button=>button.attributes['aria-pressed']==='false'));
+ assert.equal(picker.dataset.docked,'true');assert.equal(picker.hidden,false);assert(classes.has('highlight-selecting'));
+ assert.equal(parseFloat(picker.style.top)+112,40+600-8,'Touch toolbar stays above the visible viewport bottom');
+ const click=key=>picker.events.click({target:{closest:selector=>selector==='[data-highlight-choice]'&&key!=='close'?buttons.find(button=>button.dataset.highlightChoice===key):selector==='[data-highlight-close]'&&key==='close'?{}:null}});
+ click('close');flush();assert.equal(writes.length,0);assert(!classes.has('highlight-selecting'));
+ collapsed=false;emit('selectionchange');flush();
+ // Select different words immediately before a swatch tap, ahead of debounce.
+ start=17;end=28;click('blue');
+ assert.equal(writes.length,1);assert.equal(writes[0][0].highlights[0].text,text.slice(17,28));assert.equal(writes[0][0].highlights[0].color,'blue');
+ assert.equal(renders,0,'Saving leaves the native selection and drag handles intact');
+ emit('selectionchange');flush();assert.equal(writes.length,1,'Selection notifications do not write again');
+ start=29;end=35;emit('selectionchange');flush();
+ assert(buttons.every(button=>button.attributes['aria-pressed']==='false'),'Changing the range requires a fresh color choice');
+ windowEvents.viewchange();flush();assert.equal(writes.length,1,'Leaving an unconfirmed range does not save it');assert.equal(renders,1);assert(!classes.has('highlight-selecting'));
+ coarse=false;collapsed=false;start=3;end=16;emit('selectionchange');flush();assert.equal(picker.dataset.docked,'false');assert.equal(picker.style.width,'');
+ assert.equal(writes.length,1,'Mouse selections also require an explicit color');
+ coarse=true;viewportEvents.resize();assert.equal(picker.dataset.docked,'true');
+ window.visualViewport.height=450;viewportEvents.scroll();assert.equal(parseFloat(picker.style.top)+112,40+450-8);
+ collapsed=true;emit('selectionchange');flush();assert.equal(writes.length,1);assert.equal(picker.hidden,true);assert(!classes.has('highlight-selecting'));
+ console.log('PASS: opt-in highlight saving, no default swatch, cancel/navigation safety, live range validation, preserved selection, touch docking, viewport changes, and mouse fallback.');
+}

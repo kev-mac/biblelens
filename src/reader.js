@@ -662,29 +662,41 @@ function positionChatButton(anchor=state.chatButtonAnchor){
 positionChatButton();
 
 // Native text selection keeps iOS selection handles and vertical scrolling.
-// Persist the exact source offsets only after selection settles; render after
-// it collapses so saving never destroys a selection or its drag handles.
+// A color tap is the only save action. Render after selection collapses so
+// saving never destroys a selection or its drag handles.
 (() => {
- let timer=0,dirty=false,selecting=false,pendingEntries=[],color='yellow';
+ let timer=0,dirty=false,selecting=false,pendingEntries=[],pendingKey='',color=null;
  const colors={yellow:'#facc15',green:'#4ade80',blue:'#60a5fa',pink:'#f472b6',purple:'#c084fc',orange:'#fb923c'};
  const picker=document.createElement('div');picker.className='highlight-color-picker';picker.hidden=true;picker.setAttribute('role','toolbar');picker.setAttribute('aria-label','Highlight color');
- picker.innerHTML=Object.entries(colors).map(([key,hex])=>`<button type="button" data-highlight-choice="${key}" style="--swatch:${hex};background:${hex}!important;color:#132131!important" aria-label="${key[0].toUpperCase()+key.slice(1)} highlight" aria-pressed="${key===color}"><span aria-hidden="true">✓</span></button>`).join('')+'<button type="button" data-highlight-close aria-label="Close highlight colors">×</button>';
+ picker.innerHTML='<span class="highlight-color-label">Choose a color to save</span>'+Object.entries(colors).map(([key,hex])=>`<button type="button" data-highlight-choice="${key}" style="--swatch:${hex};background:${hex}!important;color:#132131!important" aria-label="${key[0].toUpperCase()+key.slice(1)} highlight" aria-pressed="${key===color}"><span aria-hidden="true">✓</span></button>`).join('')+'<button type="button" data-highlight-close aria-label="Close highlight colors">×</button>';
  document.body.append(picker);
  // Keep selection handles and the selected text when a swatch receives a tap.
  picker.addEventListener('pointerdown',event=>event.preventDefault());
  picker.addEventListener('click',event=>{
   const choice=event.target.closest('[data-highlight-choice]');
-  if(choice){color=choice.dataset.highlightChoice;for(const entry of pendingEntries)for(const range of entry.highlights)range.color=color;document.documentElement.style.setProperty('--selection-highlight-color',colors[color]+'80');save();showPicker();}
-  if(event.target.closest('[data-highlight-close]')){save();picker.hidden=true;window.getSelection()?.removeAllRanges();}
+  if(choice&&Object.hasOwn(colors,choice.dataset.highlightChoice)){
+   const entries=selectionEntries();if(!entries.length)return;
+   color=choice.dataset.highlightChoice;pendingEntries=entries;pendingKey=selectionKey(entries);
+   for(const entry of pendingEntries)for(const range of entry.highlights)range.color=color;
+   document.documentElement.style.setProperty('--selection-highlight-color',colors[color]+'80');
+   if(saveTextHighlights(pendingEntries)){dirty=true;comparisonStatus();}showPicker();
+  }
+  if(event.target.closest('[data-highlight-close]')){picker.hidden=true;document.body.classList.remove('highlight-selecting');window.getSelection()?.removeAllRanges();}
  });
  function showPicker(){
   const selection=window.getSelection();
   if(!pendingEntries.length||!selection?.rangeCount||selection.isCollapsed){picker.hidden=true;return;}
   const rect=selection.getRangeAt(0).getBoundingClientRect();
   const viewport=window.visualViewport,top=viewport?.offsetTop||0,left=viewport?.offsetLeft||0,width=viewport?.width||window.innerWidth,height=viewport?.height||window.innerHeight;
-  picker.hidden=false;
+  const docked=window.matchMedia('(any-pointer: coarse)').matches;
+  picker.dataset.docked=String(docked);picker.style.width=docked?Math.min(440,width-16)+'px':'';
+  picker.hidden=false;document.body.classList.add('highlight-selecting');
   for(const button of picker.querySelectorAll('[data-highlight-choice]'))button.setAttribute('aria-pressed',String(button.dataset.highlightChoice===color));
   const box=picker.getBoundingClientRect(),header=document.querySelector('body>header')?.getBoundingClientRect().bottom||top;
+  if(docked){
+   picker.style.left=left+(width-box.width)/2+'px';
+   picker.style.top=Math.max(top+8,top+height-box.height-8)+'px';return;
+  }
   picker.style.left=Math.max(left+8,Math.min(rect.left+rect.width/2-box.width/2,left+width-box.width-8))+'px';
   const y=rect.bottom+10+box.height<=top+height-8?rect.bottom+10:rect.top-box.height-10;
   picker.style.top=Math.max(header+8,Math.min(y,top+height-box.height-8))+'px';
@@ -709,26 +721,35 @@ positionChatButton();
   }
   return entries;
  }
- function save(){clearTimeout(timer);if(pendingEntries.length&&saveTextHighlights(pendingEntries)){dirty=true;comparisonStatus();}}
+ function selectionKey(entries){return JSON.stringify(entries.map(entry=>({...entry,highlights:entry.highlights.map(({color,...range})=>range)})));}
+ function resetChoice(){color=null;document.documentElement.style.removeProperty('--selection-highlight-color');}
  function changed(){
   clearTimeout(timer);
   const entries=selectionEntries();
   if(!entries.length){
    if(selecting){picker.hidden=true;return;}
-   save();pendingEntries=[];picker.hidden=true;
+   pendingEntries=[];pendingKey='';resetChoice();picker.hidden=true;document.body.classList.remove('highlight-selecting');
    if(dirty){dirty=false;renderReader(true);}return;
   }
-  pendingEntries=entries;picker.hidden=true;if(!selecting)timer=setTimeout(()=>{showPicker();save();},400);
+  const key=selectionKey(entries);if(key!==pendingKey)resetChoice();
+  pendingKey=key;pendingEntries=entries;document.body.classList.add('highlight-selecting');
+  picker.hidden=true;if(!selecting)timer=setTimeout(showPicker,400);
  }
  document.addEventListener('selectionchange',changed);
- document.addEventListener('pointerdown',event=>{if(event.target.closest('#chapter-text [data-scripture]')){selecting=true;picker.hidden=true;clearTimeout(timer);}},{capture:true});
+ document.addEventListener('pointerdown',event=>{if(event.target.closest('#chapter-text [data-scripture]')){selecting=true;pendingKey='';resetChoice();picker.hidden=true;document.body.classList.add('highlight-selecting');clearTimeout(timer);}},{capture:true});
  function finishSelection(){selecting=false;clearTimeout(timer);timer=setTimeout(()=>{changed();},80);}
  document.addEventListener('pointerup',finishSelection);
  document.addEventListener('pointercancel',finishSelection);
  document.addEventListener('touchend',finishSelection,{passive:true});
- window.addEventListener('viewchange',()=>{save();clearTimeout(timer);pendingEntries=[];picker.hidden=true;dirty=false;});
- window.addEventListener('resize',showPicker);
- document.addEventListener('scroll',()=>{if(!picker.hidden)showPicker();},{passive:true,capture:true});
+ window.addEventListener('viewchange',()=>{
+  clearTimeout(timer);selecting=false;pendingEntries=[];pendingKey='';resetChoice();picker.hidden=true;document.body.classList.remove('highlight-selecting');
+  if(dirty){dirty=false;renderReader(true);}
+ });
+ const reposition=()=>{if(!picker.hidden&&!selecting)showPicker();};
+ window.addEventListener('resize',reposition);
+ window.visualViewport?.addEventListener('resize',reposition);
+ window.visualViewport?.addEventListener('scroll',reposition);
+ document.addEventListener('scroll',reposition,{passive:true,capture:true});
 })();
 
 // A saved highlight has its own menu; verse-number actions remain separate.
