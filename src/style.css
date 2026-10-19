@@ -1971,3 +1971,12 @@ body #saved-view .marked-category-content{display:grid;gap:24px;padding-block:16
 body #saved-view .marked-category-content>article{margin:0!important}
 body .story-card{--theme-rgb:156,88,50}
 body.dark .story-card{--theme-rgb:230,171,136}
+
+/* Passage links stay quiet; keyboard focus uses an underline rather than a box. */
+body :is(a,.verse-citation,.verse-link,.location-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip){border:0!important;box-shadow:none!important}
+body :is(a,.verse-citation,.verse-link,.location-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):is(:hover,:focus,:focus-visible){outline:none!important}
+body :is(a,.verse-citation,.verse-link,.location-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):focus-visible{text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:4px!important}
+
+/* The Bookmarks destination carries the same gold accent as its navigation icon. */
+body #bookmarks-view{--theme-rgb:234,179,8;--line:rgba(184,134,11,.55);--border:var(--line)}
+body.dark #bookmarks-view{--line:rgba(234,179,8,.55)}
