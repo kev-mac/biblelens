@@ -32,6 +32,7 @@ function mountCharacters(): void {
   let menOnly=false,testament='',biographyOnly=false,example:DirectoryPerson|undefined;
   const extraFilters=new Map<string,HTMLButtonElement>();
   let profileRoute = '';
+  let inlinePerson='';
   let opener: HTMLElement | null = null;
   let activeTab: 'overview' | 'connections' = 'overview';
   let currentId = '';
@@ -114,7 +115,7 @@ function mountCharacters(): void {
     const previous = familyHistory.pop();
     if (!previous) return;
     activeTab = previous.tab;
-    history.replaceState(null, '', `#characters/${previous.id}`);
+    if(inlinePerson)inlinePerson=previous.id;else history.replaceState(null, '', `#characters/${previous.id}`);
     void handleRoute();
   });
   const close = element('button', '', '✕'); close.type = 'button'; close.autofocus = true;
@@ -131,7 +132,9 @@ function mountCharacters(): void {
     document.body.classList.remove('character-sheet-open');
     familyHistory.length = 0; currentId = ''; activeTab = 'overview'; routeVersion++;
     back.hidden = true;
-    if (location.hash === profileRoute) history.replaceState(null, '', '#characters');
+    const wasInline=!!inlinePerson;inlinePerson='';
+    if (!wasInline&&location.hash === profileRoute) history.replaceState(null, '', '#characters');
+    if(wasInline&&opener?.isConnected)opener.focus({preventScroll:true});
     if (location.hash === '#characters' && opener?.isConnected && !host.hidden) opener.focus();
   });
   host.addEventListener('click', event => {
@@ -148,12 +151,12 @@ function mountCharacters(): void {
     const chip = (event.target as HTMLElement).closest<HTMLButtonElement>('button[data-relative-id]');
     if (!chip || !currentId || chip.dataset.relativeId === currentId) return;
     familyHistory.push({id: currentId, tab: activeTab});
-    history.replaceState(null, '', `#characters/${chip.dataset.relativeId}`);
+    if(inlinePerson)inlinePerson=chip.dataset.relativeId!;else history.replaceState(null, '', `#characters/${chip.dataset.relativeId}`);
     void handleRoute();
   });
   async function handleRoute(): Promise<void> {
     const version = ++routeVersion;
-    const cardRoute = /^#characters\/card\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
+    const cardRoute = !inlinePerson && /^#characters\/card\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
     if (cardRoute) {
       if (sheet.open) sheet.close();
       const target = people.find(person => person.id === cardRoute[1]) || characters.find(person => person.id === cardRoute[1]);
@@ -170,7 +173,7 @@ function mountCharacters(): void {
       }
       return;
     }
-    const match = /^#characters\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
+    const match = inlinePerson?['',inlinePerson]:/^#characters\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
     if (!match) { if (sheet.open) sheet.close(); return; }
     profileRoute = location.hash;
     const wasOpen = sheet.open;
@@ -267,7 +270,8 @@ function mountCharacters(): void {
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) body.animate([{opacity: .3, transform: 'translateY(6px)'}, {opacity: 1, transform: 'translateY(0)'}], {duration: 160, easing: 'ease-out'});
     }
   }
-  window.addEventListener('hashchange', handleRoute);
+  window.addEventListener('open-person',((event:CustomEvent<{id:string;opener:HTMLElement}>)=>{inlinePerson=event.detail.id;opener=event.detail.opener;familyHistory.length=0;activeTab='overview';void handleRoute();}) as EventListener);
+  window.addEventListener('hashchange',()=>{inlinePerson='';void handleRoute();});
   window.addEventListener('viewchange', ((event: CustomEvent<string>) => { if (event.detail !== 'characters' && sheet.open) sheet.close(); }) as EventListener);
   void load();
 }

@@ -11,9 +11,46 @@ function normalizePassageRecords(value){
 }
 state.passageNotes=normalizePassageRecords(state.passageNotes);
 state.passageBookmarks=normalizePassageRecords(state.passageBookmarks);
+function normalizeTextHighlights(value){
+ if(!Array.isArray(value))return [];
+ const clean=[];
+ for(const item of value.slice(0,200)){
+  if(!item||!['kjv','web','asv'].includes(item.edition)||!Number.isSafeInteger(item.start)||!Number.isSafeInteger(item.end)||item.start<0||item.end<=item.start||item.end>100000||typeof item.text!=='string'||item.text.length!==item.end-item.start||!item.text.trim())continue;
+  const range={edition:item.edition,start:item.start,end:item.end,text:item.text,color:['yellow','green','blue','pink','purple','orange'].includes(item.color)?item.color:'yellow'};
+  const existing=clean.findIndex(old=>old.edition===range.edition&&old.start===range.start&&old.end===range.end&&old.text===range.text);
+  if(existing>=0)clean[existing]=range;else clean.push(range);
+ }
+ return clean;
+}
+function combineTextHighlights(first,second){return normalizeTextHighlights([...(first||[]),...(second||[])]);}
+function savedHighlightHtml(book,chapter,verse){
+ const ranges=normalizeTextHighlights(state.verseBookmarks?.[`${book}:${chapter}:${verse}`]?.highlights);
+ return ranges.map(item=>`<p class="saved-highlight"><mark class="text-highlight" data-highlight-book="${book}" data-highlight-chapter="${chapter}" data-highlight-verse="${verse}" data-highlight-start="${item.start}" data-highlight-end="${item.end}" data-highlight-edition="${item.edition}" data-highlight-color="${item.color}">${esc(item.text)}</mark> <small>${item.edition.toUpperCase()} · Marked</small></p>`).join('');
+}
+function saveTextHighlights(entries){
+ let changed=false;
+ for(const {book,chapter,verse,highlights} of entries){
+  const clean=normalizeTextHighlights(highlights);if(!clean.length)continue;
+  const key=`${book}:${chapter}:${verse}`,old=state.verseBookmarks[key];
+  const merged=combineTextHighlights(old?.highlights,clean);
+  if(old&&JSON.stringify(old.highlights||[])===JSON.stringify(merged))continue;
+  state.verseBookmarks[key]={...old,book,chapter,verse,name:books[book].name,highlights:merged};changed=true;
+ }
+ if(changed){persist();renderPassageSaved();if(storageAvailable)toast('Highlight saved to Bookmarks');}
+ return changed;
+}
+function editTextHighlight(book,chapter,verse,range,color){
+ const key=`${book}:${chapter}:${verse}`,bookmark=state.verseBookmarks[key];if(!bookmark)return false;
+ const old=normalizeTextHighlights(bookmark.highlights),matches=h=>h.edition===range.edition&&h.start===range.start&&h.end===range.end&&h.text===range.text;
+ if(!old.some(matches))return false;
+ if(color!==null&&!['yellow','green','blue','pink','purple','orange'].includes(color))return false;
+ const highlights=color===null?old.filter(h=>!matches(h)):old.map(h=>matches(h)?{...h,color}:h);
+ state.verseBookmarks[key]={...bookmark,highlights};persist();renderPassageSaved();renderReader(true);
+ if(storageAvailable)toast(color===null?'Highlight removed. Bookmark kept.':'Highlight color saved');return true;
+}
 function normalizeVerseRecords(value){
  const clean={};if(!value||typeof value!=='object'||Array.isArray(value))return clean;
- for(const [key,item]of Object.entries(value)){if(!item||!Number.isInteger(item.book)||item.book<0||item.book>65||!Number.isInteger(item.chapter)||item.chapter<1||item.chapter>150||!Number.isInteger(item.verse)||item.verse<1||item.verse>176||key!==`${item.book}:${item.chapter}:${item.verse}`||typeof item.name!=='string'||item.name.length>80)continue;clean[key]={book:item.book,chapter:item.chapter,verse:item.verse,name:item.name,title:typeof item.title==='string'?item.title.slice(0,200):'',text:typeof item.text==='string'?item.text.slice(0,100000):''};}return clean;
+ for(const [key,item]of Object.entries(value)){if(!item||!Number.isInteger(item.book)||item.book<0||item.book>65||!Number.isInteger(item.chapter)||item.chapter<1||item.chapter>150||!Number.isInteger(item.verse)||item.verse<1||item.verse>176||key!==`${item.book}:${item.chapter}:${item.verse}`||typeof item.name!=='string'||item.name.length>80)continue;clean[key]={book:item.book,chapter:item.chapter,verse:item.verse,name:item.name,title:typeof item.title==='string'?item.title.slice(0,200):'',text:typeof item.text==='string'?item.text.slice(0,100000):'',...(normalizeTextHighlights(item.highlights).length?{highlights:normalizeTextHighlights(item.highlights)}:{})};}return clean;
 }
 state.verseBookmarks=normalizeVerseRecords(state.verseBookmarks);
 // Retire highlight-only state; bookmarks and all note text remain intact.
@@ -47,7 +84,7 @@ function mergePersonalNote(old,note){
 }
 function passageResearchMarkdown(){
  const passages=Object.values({...state.passageBookmarks,...state.passageNotes}).map(item=>passageMarkdown(item));
- const verses=Object.entries({...state.verseBookmarks,...state.verseNotes}).map(([key,item])=>`# ${item.name} ${item.chapter}:${item.verse}\n\n${item.title?'## '+item.title+'\n\n':''}${state.verseBookmarks[key]?'Bookmarked verse. ':''}\n\n${state.verseNotes[key]?.text||''}\n`);
+ const verses=Object.entries({...state.verseBookmarks,...state.verseNotes}).map(([key,item])=>`# ${item.name} ${item.chapter}:${item.verse}\n\n${item.title?'## '+item.title+'\n\n':''}${state.verseBookmarks[key]?'Bookmarked verse. ':''}\n\n${normalizeTextHighlights(state.verseBookmarks[key]?.highlights).map(h=>'Highlighted ('+h.edition.toUpperCase()+'): '+h.text).join('\n\n')}\n\n${state.verseNotes[key]?.text||''}\n`);
  return [...passages,...verses].join('\n---\n\n');
 }
 function mergePassageBackup(backup){
@@ -58,7 +95,7 @@ function mergePassageBackup(backup){
  }
  for(const [key,note]of Object.entries(normalizeVerseRecords(backup.verseNotes))){state.verseNotes[key]=mergePersonalNote(state.verseNotes[key],note);}
  for(const [key,item]of Object.entries(normalizeVerseRecords(backup.verseHighlights))){if(item.text||item.title)state.verseNotes[key]=mergePersonalNote(state.verseNotes[key],item);}
- Object.assign(state.verseBookmarks,normalizeVerseRecords(backup.verseBookmarks));state.verseHighlights={};
+ for(const [key,item] of Object.entries(normalizeVerseRecords(backup.verseBookmarks))){const highlights=combineTextHighlights(state.verseBookmarks[key]?.highlights,item.highlights);state.verseBookmarks[key]={...item,...(highlights.length?{highlights}:{})};}state.verseHighlights={};
 }
 const markedChapterCache=new Map();
 let markedRenderGeneration=0;
@@ -100,7 +137,7 @@ function renderPassageSaved(){
  const records={...state.passageBookmarks,...state.passageNotes},items=Object.entries(records);
  box.innerHTML=items.length?'<h2>Marked Passages</h2><div class="passage-saved-grid">'+items.map(([key,item])=>'<article class="passage-saved-card">'+(item.title?'<h3>'+esc(item.title)+'</h3>':'')+'<button class="secondary" data-read="'+item.book+'/'+item.chapter+'">'+esc(item.name)+' '+item.chapter+'</button>'+(item.text?'<p class="passage-saved-note">'+esc(item.text)+'</p>':'')+noteActionButtons(item.book+'/'+item.chapter)+'</article>').join('')+'</div>':'';
  const marked=Object.entries({...state.verseBookmarks,...state.verseNotes});
- if(marked.length)box.innerHTML+='<h2>Marked Verses</h2><div class="passage-saved-grid">'+marked.map(([key,item])=>`<article class="passage-saved-card">${item.title?`<h3>${esc(item.title)}</h3>`:''}<button class="secondary" data-read="${item.book}/${item.chapter}/${item.verse}">${esc(item.name)} ${item.chapter}:${item.verse}</button><p class="marked-verse-text" data-marked-verse-text="${item.book}/${item.chapter}/${item.verse}" aria-live="polite" aria-busy="true">Loading verse text…</p>${state.verseNotes[key]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[key].text)}</p>`:''}${noteActionButtons(`${item.book}/${item.chapter}/${item.verse}`)}</article>`).join('')+'</div>';
+ if(marked.length)box.innerHTML+='<h2>Marked Verses</h2><div class="passage-saved-grid">'+marked.map(([key,item])=>`<article class="passage-saved-card">${item.title?`<h3>${esc(item.title)}</h3>`:''}<button class="secondary" data-read="${item.book}/${item.chapter}/${item.verse}">${esc(item.name)} ${item.chapter}:${item.verse}</button><p class="marked-verse-text" data-marked-verse-text="${item.book}/${item.chapter}/${item.verse}" aria-live="polite" aria-busy="true">Loading verse text…</p>${savedHighlightHtml(item.book,item.chapter,item.verse)}${state.verseNotes[key]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[key].text)}</p>`:''}${noteActionButtons(`${item.book}/${item.chapter}/${item.verse}`)}</article>`).join('')+'</div>';
  const studyCount=ENTRIES.filter(e=>state.bookmarks.includes(e.id)||state.notes[e.id]).length;
  $('#save-count').textContent=studyCount+items.length+marked.length;
  const empty=$('#saved-cards .empty');if(empty)empty.hidden=items.length+marked.length>0;

@@ -26,6 +26,7 @@
     let value;
     if(equal(l[key],b[key]))value=r[key];
     else if(equal(r[key],b[key])||equal(l[key],r[key]))value=l[key];
+    else if(namespace==='verseBookmarks'&&l[key]&&r[key]){const highlights=[...(l[key].highlights||[]),...(r[key].highlights||[])];value={...r[key],...l[key],highlights:highlights.filter((h,i)=>highlights.findIndex(other=>h.edition===other.edition&&h.start===other.start&&h.end===other.end&&h.text===other.text)===i).slice(0,200)};}
     else if(['notes','passageNotes','verseNotes','noteTitles'].includes(namespace)){value=preserve(l[key],r[key]);conflicts++;}
     else value=l[key];
     if(value!==undefined)out[key]=copy(value);

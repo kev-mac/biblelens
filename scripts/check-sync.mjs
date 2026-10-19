@@ -53,3 +53,17 @@ assert.equal(fontState.readerPreferences.navColors,'off');assert.equal(core.snap
 assert.deepEqual(fontState.verseNotes,{},'Font preference sync must not add note data');
 sqlite.close();
 console.log('PASS: schema migrations, account isolation, CSRF/origin checks, single-use/expiring device codes, hashed/revocable tokens, revision conflicts, offline edits, deletions and preservation of concurrent note text.');
+const bookmarkBase=core.snapshot({bookmarks:[],verseBookmarks:{'0:1:1':{book:0,chapter:1,verse:1,name:'Genesis'}}});
+const highlightLocal=structuredClone(bookmarkBase),highlightRemote=structuredClone(bookmarkBase);
+highlightLocal.verseBookmarks['0:1:1'].highlights=[{edition:'kjv',start:0,end:2,text:'In'}];
+highlightRemote.verseBookmarks['0:1:1'].highlights=[{edition:'kjv',start:3,end:6,text:'the'}];
+const highlightMerge=core.merge(bookmarkBase,highlightLocal,highlightRemote).data;
+assert.equal(highlightMerge.verseBookmarks['0:1:1'].highlights.length,2,'Concurrent selections on the same verse survive on both devices');
+const removedHighlight=structuredClone(highlightLocal);delete removedHighlight.verseBookmarks['0:1:1'];
+assert(!core.merge(highlightLocal,removedHighlight,highlightLocal).data.verseBookmarks['0:1:1'],'Non-conflicting unmarking still propagates');
+console.log('PASS: concurrent saved text highlights merge without losing offline selections; bookmark deletions still propagate.');
+
+const sameRange=structuredClone(highlightLocal);sameRange.verseBookmarks['0:1:1'].highlights[0].color='pink';
+const recolored=structuredClone(highlightLocal);recolored.verseBookmarks['0:1:1'].highlights[0].color='blue';
+const colorMerge=core.merge(bookmarkBase,sameRange,recolored).data.verseBookmarks['0:1:1'].highlights;
+assert.equal(colorMerge.length,1);assert.equal(colorMerge[0].color,'pink','Concurrent recolors use the local choice without duplicating the range');

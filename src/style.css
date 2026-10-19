@@ -1980,3 +1980,30 @@ html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location
 /* The Bookmarks destination carries the same gold accent as its navigation icon. */
 body #bookmarks-view{--theme-rgb:234,179,8;--line:rgba(184,134,11,.55);--border:var(--line)}
 body.dark #bookmarks-view{--line:rgba(234,179,8,.55)}
+
+/* Saved marks identify words and tags; reading verses have no gold frame. */
+body #chapter-text .verse:has(.verse-body.verse-bookmarked){background:transparent!important;background-color:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;backdrop-filter:none;-webkit-backdrop-filter:none;color:inherit;text-shadow:none;padding:8px 0!important}
+body #chapter-text [data-scripture],body #chapter-text [data-scripture] *{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
+body #chapter-text [data-scripture] [aria-hidden="true"],body #chapter-text .verse-num{-webkit-user-select:none;user-select:none}
+body .text-highlight,.saved-highlight mark{background:rgba(234,179,8,.28);color:inherit;border:0;border-radius:2px;box-shadow:none;padding:0}
+.saved-highlight{white-space:pre-wrap}.saved-highlight small{color:var(--muted);font-size:.75rem}
+body .person-chip{display:inline;border:0;border-bottom:1px dotted currentColor;border-radius:0;background:none;color:var(--green);font:inherit;line-height:inherit;padding:0;cursor:pointer;text-align:inherit;touch-action:manipulation}
+body #chapter-text .verse-num{cursor:pointer}
+/* A compact palette follows the selected words; cards retain their gold frame. */
+.highlight-color-picker{position:fixed;z-index:90;display:flex;align-items:center;gap:5px;padding:6px;border:1px solid var(--line);border-radius:999px;background:var(--panel);box-shadow:0 4px 22px #0004;touch-action:manipulation}
+body .highlight-color-picker button{display:grid;place-items:center;flex:none;min-width:32px;min-height:32px;width:32px;height:32px;padding:0;border:2px solid transparent;border-radius:50%;background:var(--swatch,transparent)!important;color:#132131;box-shadow:none!important;font:600 1rem/1 system-ui;touch-action:manipulation}
+body .highlight-color-picker button span{opacity:0}body .highlight-color-picker button[aria-pressed="true"]{border-color:var(--ink)}body .highlight-color-picker button[aria-pressed="true"] span{opacity:1}
+body .highlight-color-picker [data-highlight-close]{color:var(--ink)}
+body #chapter-text [data-scripture]::selection,body #chapter-text [data-scripture] *::selection{background:var(--selection-highlight-color,#facc1580);color:inherit}
+body mark[data-highlight-color="yellow"]{background:#facc1547}body mark[data-highlight-color="green"]{background:#4ade8047}body mark[data-highlight-color="blue"]{background:#60a5fa47}body mark[data-highlight-color="pink"]{background:#f472b647}body mark[data-highlight-color="purple"]{background:#c084fc47}body mark[data-highlight-color="orange"]{background:#fb923c47}
+body #bookmarks-view .marked-bookmark{border:1px solid rgba(234,179,8,.65);border-radius:18px;box-shadow:0 3px 16px rgba(184,134,11,.12)}
+body #chapter-text .text-highlight,body #chapter-text .text-highlight *{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+.highlight-context-menu{position:fixed;z-index:95;max-width:calc(100vw - 16px);padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--panel);color:var(--ink);box-shadow:0 5px 26px #0005}
+.highlight-menu-heading{display:flex;align-items:center;justify-content:space-between;font-size:.8rem;margin-bottom:6px}
+body .highlight-menu-heading button{min-width:28px;min-height:28px;width:28px;height:28px;border:0;background:transparent!important;padding:0;color:inherit;box-shadow:none!important}
+.highlight-menu-colors{display:flex;gap:6px}
+body .highlight-menu-colors button{display:grid;place-items:center;min-width:32px;min-height:32px;width:32px;height:32px;padding:0;border:2px solid transparent;border-radius:50%;background:var(--swatch)!important;color:#132131;box-shadow:none!important}
+.highlight-menu-colors button span{opacity:0}body .highlight-menu-colors button[aria-pressed="true"]{border-color:var(--ink)}.highlight-menu-colors button[aria-pressed="true"] span{opacity:1}
+.highlight-menu-actions{display:flex;gap:8px;margin-top:10px}body .highlight-menu-actions button{min-height:36px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--soft)!important;font-size:.8rem;color:inherit;box-shadow:none!important}
+body .saved-highlight .text-highlight{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+body #chapter-text .comparison-panel[data-tone="bookmark"],body #chapter-text .verse-comparison[data-tone="bookmark"] .comparison-summary{border:0!important;box-shadow:none!important;background:transparent!important}

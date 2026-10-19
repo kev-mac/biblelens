@@ -38,7 +38,7 @@ function evidenceKey(verse,item){return `${readingBook}:${readingChapter}:${vers
 function comparisonKey(mode=$('#reader-compare').value){return `${readingBook}:${readingChapter}:${$('#reader-edition').value}:${mode}`;}
 function selectionKey(verse){return `${comparisonKey('tabs')}:${verse}`;}
 function visibleComparison(item){return item.mode==='commandments'||(item.mode==='history'&&item.academicAssessment===true)||item.mode==='bookmark'||recordTags(item).length>0||item.mode==='questions'||item.mode==='contradictions'||item.mode==='science'||(item.status!=='Agrees'&&(item.status==='Disagrees'||item.discrepancy===true));}
-function verseBookmarkComparisons(verse){const key=`${readingBook}:${readingChapter}:${verse}`;if(typeof state==='undefined')return [];const note=state.verseNotes?.[key];if(!state.verseBookmarks?.[key]&&!note?.text)return [];return [{id:'bookmark-'+key,verse,mode:'bookmark',key:'bookmark',title:note?.title||'Note',summary:note?.text||'',text:'',sources:[]}];}
+function verseBookmarkComparisons(verse){const key=`${readingBook}:${readingChapter}:${verse}`;if(typeof state==='undefined')return [];const note=state.verseNotes?.[key];if(!state.verseBookmarks?.[key]&&!note?.text)return [];return [{id:'bookmark-'+key,verse,mode:'bookmark',key:'bookmark',title:note?.title||(state.verseBookmarks[key]?.highlights?.length?'Highlight':'Note'),summary:note?.text||'',text:'',sources:[]}];}
 function comparisonCategoryOpen(key){
  return !!reading?.verses?.some(v=>verseComparisons(v.n).some(item=>{
   const tags=recordTags(item),choices=tags.length?tags.map(tag=>({...item,tag})):item.mode==='questions'?[{...item,tag:'Q'}]:[item];
@@ -222,18 +222,19 @@ function scriptureHtml(v,edition,book=readingBook,ch=readingChapter){
   const selected=comparisonSelections.get(selectionKey(v.n))||new Set();
   return choices.filter(choice=>categoryFilters.has(filterCategory(choice))&&(comparisonRecordSelections.get(recordSelection(choice))??false)).flatMap(choice=>quoteRanges(text,comparisonSides(choice).filter(s=>s.ref===ref).map(s=>s.quote)).map(([a,b])=>({a,b,tone:comparisonTone(choice),order:comparisonHighlightOrder.get(recordSelection(choice))||comparisonHighlightOrder.get(`${v.n}:${choice.key}`)||0})));
  }):[];
- const points=[...new Set([0,text.length,...red.flat(),...targets.flatMap(t=>[t.a,t.b])])].sort((a,b)=>a-b);
- const segments=points.slice(0,-1).map((a,i)=>{const b=points[i+1],target=targets.filter(t=>a>=t.a&&b<=t.b).sort((x,y)=>y.order-x.order)[0];return {a,b,tone:target?.tone,red:red.some(([x,y])=>a>=x&&b<=y)};});
- const merged=[];for(const part of segments){const last=merged.at(-1);if(last&&last.tone===part.tone&&last.red===part.red)last.b=part.b;else merged.push({...part});}
- return merged.map(({a,b,tone,red})=>{let html=esc(text.slice(a,b));if(tone)html=`<mark class="side-quote" data-tone="${tone}">${html}</mark>`;if(red)html=`<span class="jesus-words">${html}</span>`;return html;}).join('');
+ const highlights=typeof normalizeTextHighlights==='function'?normalizeTextHighlights(state.verseBookmarks?.[`${book}:${ch}:${v.n}`]?.highlights).filter(h=>h.edition===edition&&text.slice(h.start,h.end)===h.text):[];
+ const points=[...new Set([0,text.length,...red.flat(),...targets.flatMap(t=>[t.a,t.b]),...highlights.flatMap(h=>[h.start,h.end])])].sort((a,b)=>a-b);
+ const segments=points.slice(0,-1).map((a,i)=>{const b=points[i+1],target=targets.filter(t=>a>=t.a&&b<=t.b).sort((x,y)=>y.order-x.order)[0];return {a,b,highlight:highlights.filter(h=>a>=h.start&&b<=h.end).at(-1),tone:target?.tone,red:red.some(([x,y])=>a>=x&&b<=y)};});
+ const merged=[];for(const part of segments){const last=merged.at(-1);if(last&&last.tone===part.tone&&last.red===part.red&&last.highlight===part.highlight)last.b=part.b;else merged.push({...part});}
+ return merged.map(({a,b,tone,red,highlight})=>{let html=esc(text.slice(a,b));if(highlight)html=`<mark class="text-highlight" data-highlight-book="${book}" data-highlight-chapter="${ch}" data-highlight-verse="${v.n}" data-highlight-color="${highlight.color}" data-highlight-start="${highlight.start}" data-highlight-end="${highlight.end}" data-highlight-edition="${highlight.edition}">${html}</mark>`;if(tone)html=`<mark class="side-quote" data-tone="${tone}">${html}</mark>`;if(red)html=`<span class="jesus-words">${html}</span>`;return html;}).join('');
 }
 function refreshVerseHighlights(){
  if(!reading?.verses)return;
  const edition=$('#reader-edition').value;
- for(const verse of reading.verses){const body=document.getElementById(`verse-${verse.n}`)?.querySelector?.('.verse-body');if(body&&verse[edition])body.innerHTML=verseNumber(verse)+scriptureHtml(verse,edition);}
+ for(const verse of reading.verses){const body=document.getElementById(`verse-${verse.n}`)?.querySelector?.('.verse-body');if(body&&verse[edition])body.innerHTML=verseNumber(verse)+'<span data-scripture>'+scriptureHtml(verse,edition)+'</span>';}
 }
-function verseNumber(v){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<span class="verse-num" aria-hidden="true">${v.n}</span>`;}
-function verseText(v,edition){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<div class="verse-body${saved?' verse-bookmarked':''}" tabindex="0" aria-label="Verse ${v.n}. Double-tap to bookmark; hold or press Enter for verse actions">${verseNumber(v)}${v[edition]?scriptureHtml(v,edition):'<span class="missing-verse">This verse number is absent from the supplied edition’s dataset.</span>'}</div>`;}
+function verseNumber(v){return `<button type="button" class="verse-num" data-bookmark-menu aria-label="Actions for verse ${v.n}">${v.n}</button>`;}
+function verseText(v,edition){const saved=!!state.verseBookmarks?.[`${readingBook}:${readingChapter}:${v.n}`];return `<div class="verse-body${saved?' verse-bookmarked':''}" data-book="${readingBook}" data-chapter="${readingChapter}" data-verse="${v.n}" tabindex="0" aria-label="Verse ${v.n}. Hold and drag text to highlight and save; tap the verse number for actions">${verseNumber(v)}<span data-scripture>${v[edition]?scriptureHtml(v,edition):'<span class="missing-verse">This verse number is absent from the supplied edition’s dataset.</span>'}</span></div>`;}
 function comparisonStatus(){
  const mode=$('#reader-compare').value,status=$('#comparison-status');status.hidden=false;if(mode==='none'){status.hidden=true;status.innerHTML='';return;}
  const records=comparisonModes.map(m=>comparisonCache.get(comparisonKey(m)));
@@ -325,7 +326,7 @@ document.addEventListener('click',ev=>{const button=ev.target.closest('button');
  let start=null,lastTap=null,lastTouchBookmark=0;
  function verseAt(target){const card=target.closest('.verse'),body=target.closest('.verse-body')||(card?.querySelector('.verse-body.verse-bookmarked'));if(!body||target.closest('a,button,input,select,textarea,[data-verse-action],[data-summary-toggle],.comparison-evidence,.comparison-details')||document.querySelector('dialog[open],.verse-preview:not([hidden])'))return null;return Number(body.closest('.verse')?.id.replace('verse-',''))||null;}
  function bookmark(verse){toggleVerseMark('bookmark',readingBook,readingChapter,verse);}
- document.addEventListener('dblclick',ev=>{const verse=verseAt(ev.target);if(!verse)return;ev.preventDefault();if(Date.now()-lastTouchBookmark>700)bookmark(verse);});
+ document.addEventListener('dblclick',ev=>{const verse=verseAt(ev.target);if(!verse||window.getSelection?.()?.toString())return;ev.preventDefault();if(Date.now()-lastTouchBookmark>700)bookmark(verse);});
  document.addEventListener('pointerdown',ev=>{if(ev.pointerType!=='touch')return;const verse=verseAt(ev.target);start=verse?{verse,id:ev.pointerId,x:ev.clientX,y:ev.clientY,time:Date.now()}:null;});
  document.addEventListener('pointermove',ev=>{if(start&&start.id===ev.pointerId&&Math.hypot(ev.clientX-start.x,ev.clientY-start.y)>16){start=null;lastTap=null;}});
  document.addEventListener('pointercancel',()=>{start=null;lastTap=null;});
@@ -486,7 +487,7 @@ readerSheet.addEventListener('click',ev=>{if(ev.target===readerSheet){const r=re
  },{passive:true});
  article.addEventListener('touchmove',ev=>{
   if(!gesture)return;
-  if(ev.touches.length!==1||chapterPagingBlocked()||gesture.version!==loadVersion){reset();return;}
+  if(ev.touches.length!==1||chapterPagingBlocked()||window.getSelection()?.toString()||gesture.version!==loadVersion){reset();return;}
   const touch=ev.touches[0],dx=touch.clientX-gesture.x,dy=touch.clientY-gesture.y;
   if(!gesture.axis){
    if(Math.max(Math.abs(dx),Math.abs(dy))<10)return;
@@ -659,3 +660,126 @@ function positionChatButton(anchor=state.chatButtonAnchor){
  window.addEventListener('resize',()=>positionChatButton());
 })();
 positionChatButton();
+
+// Native text selection keeps iOS selection handles and vertical scrolling.
+// Persist the exact source offsets only after selection settles; render after
+// it collapses so saving never destroys a selection or its drag handles.
+(() => {
+ let timer=0,dirty=false,selecting=false,pendingEntries=[],color='yellow';
+ const colors={yellow:'#facc15',green:'#4ade80',blue:'#60a5fa',pink:'#f472b6',purple:'#c084fc',orange:'#fb923c'};
+ const picker=document.createElement('div');picker.className='highlight-color-picker';picker.hidden=true;picker.setAttribute('role','toolbar');picker.setAttribute('aria-label','Highlight color');
+ picker.innerHTML=Object.entries(colors).map(([key,hex])=>`<button type="button" data-highlight-choice="${key}" style="--swatch:${hex};background:${hex}!important;color:#132131!important" aria-label="${key[0].toUpperCase()+key.slice(1)} highlight" aria-pressed="${key===color}"><span aria-hidden="true">✓</span></button>`).join('')+'<button type="button" data-highlight-close aria-label="Close highlight colors">×</button>';
+ document.body.append(picker);
+ // Keep selection handles and the selected text when a swatch receives a tap.
+ picker.addEventListener('pointerdown',event=>event.preventDefault());
+ picker.addEventListener('click',event=>{
+  const choice=event.target.closest('[data-highlight-choice]');
+  if(choice){color=choice.dataset.highlightChoice;for(const entry of pendingEntries)for(const range of entry.highlights)range.color=color;document.documentElement.style.setProperty('--selection-highlight-color',colors[color]+'80');save();showPicker();}
+  if(event.target.closest('[data-highlight-close]')){save();picker.hidden=true;window.getSelection()?.removeAllRanges();}
+ });
+ function showPicker(){
+  const selection=window.getSelection();
+  if(!pendingEntries.length||!selection?.rangeCount||selection.isCollapsed){picker.hidden=true;return;}
+  const rect=selection.getRangeAt(0).getBoundingClientRect();
+  const viewport=window.visualViewport,top=viewport?.offsetTop||0,left=viewport?.offsetLeft||0,width=viewport?.width||window.innerWidth,height=viewport?.height||window.innerHeight;
+  picker.hidden=false;
+  for(const button of picker.querySelectorAll('[data-highlight-choice]'))button.setAttribute('aria-pressed',String(button.dataset.highlightChoice===color));
+  const box=picker.getBoundingClientRect(),header=document.querySelector('body>header')?.getBoundingClientRect().bottom||top;
+  picker.style.left=Math.max(left+8,Math.min(rect.left+rect.width/2-box.width/2,left+width-box.width-8))+'px';
+  const y=rect.bottom+10+box.height<=top+height-8?rect.bottom+10:rect.top-box.height-10;
+  picker.style.top=Math.max(header+8,Math.min(y,top+height-box.height-8))+'px';
+ }
+ const scriptureAt=node=>{const element=node?.nodeType===1?node:node?.parentElement;return element?.closest('#chapter-text [data-scripture]')||(element?.matches('#chapter-text .verse-body')?element.querySelector('[data-scripture]'):null);};
+ function textOf(fragment){for(const icon of fragment.querySelectorAll('[aria-hidden="true"]'))icon.remove();return fragment.textContent||'';}
+ function selectionEntries(){
+  const selection=window.getSelection();
+  if(!selection?.rangeCount||selection.isCollapsed||!scriptureAt(selection.anchorNode)||!scriptureAt(selection.focusNode)||document.querySelector('dialog[open]'))return [];
+  const range=selection.getRangeAt(0),edition=$('#reader-edition').value,entries=[];
+  for(const scripture of document.querySelectorAll('#chapter-text [data-scripture]')){
+   if(!range.intersectsNode(scripture))continue;
+   const body=scripture.closest('.verse-body'),book=Number(body.dataset.book),chapter=Number(body.dataset.chapter),verse=Number(body.dataset.verse);
+   if(book!==readingBook||chapter!==readingChapter)continue;
+   const clipped=document.createRange();clipped.selectNodeContents(scripture);
+   if(range.compareBoundaryPoints(Range.START_TO_START,clipped)>0)clipped.setStart(range.startContainer,range.startOffset);
+   if(range.compareBoundaryPoints(Range.END_TO_END,clipped)<0)clipped.setEnd(range.endContainer,range.endOffset);
+   const prefix=document.createRange();prefix.selectNodeContents(scripture);prefix.setEnd(clipped.startContainer,clipped.startOffset);
+   const start=textOf(prefix.cloneContents()),text=textOf(clipped.cloneContents()),source=reading.verses.find(v=>v.n===verse)?.[edition];
+   if(!text.trim()||typeof source!=='string'||source.slice(start.length,start.length+text.length)!==text)continue;
+   entries.push({book,chapter,verse,highlights:[{edition,start:start.length,end:start.length+text.length,text,color}]});
+  }
+  return entries;
+ }
+ function save(){clearTimeout(timer);if(pendingEntries.length&&saveTextHighlights(pendingEntries)){dirty=true;comparisonStatus();}}
+ function changed(){
+  clearTimeout(timer);
+  const entries=selectionEntries();
+  if(!entries.length){
+   if(selecting){picker.hidden=true;return;}
+   save();pendingEntries=[];picker.hidden=true;
+   if(dirty){dirty=false;renderReader(true);}return;
+  }
+  pendingEntries=entries;picker.hidden=true;if(!selecting)timer=setTimeout(()=>{showPicker();save();},400);
+ }
+ document.addEventListener('selectionchange',changed);
+ document.addEventListener('pointerdown',event=>{if(event.target.closest('#chapter-text [data-scripture]')){selecting=true;picker.hidden=true;clearTimeout(timer);}},{capture:true});
+ function finishSelection(){selecting=false;clearTimeout(timer);timer=setTimeout(()=>{changed();},80);}
+ document.addEventListener('pointerup',finishSelection);
+ document.addEventListener('pointercancel',finishSelection);
+ document.addEventListener('touchend',finishSelection,{passive:true});
+ window.addEventListener('viewchange',()=>{save();clearTimeout(timer);pendingEntries=[];picker.hidden=true;dirty=false;});
+ window.addEventListener('resize',showPicker);
+ document.addEventListener('scroll',()=>{if(!picker.hidden)showPicker();},{passive:true,capture:true});
+})();
+
+// A saved highlight has its own menu; verse-number actions remain separate.
+(() => {
+ const colors={yellow:'#facc15',green:'#4ade80',blue:'#60a5fa',pink:'#f472b6',purple:'#c084fc',orange:'#fb923c'};
+ const menu=document.createElement('div');menu.className='highlight-context-menu';menu.hidden=true;menu.setAttribute('role','dialog');menu.setAttribute('aria-label','Highlight actions');
+ menu.innerHTML='<div class="highlight-menu-heading"><span>Highlight</span><button type="button" data-highlight-dismiss aria-label="Close highlight actions">×</button></div><div class="highlight-menu-colors" role="group" aria-label="Highlight color">'+Object.entries(colors).map(([key,hex])=>`<button type="button" data-highlight-recolor="${key}" style="--swatch:${hex};background:${hex}!important;color:#132131!important" aria-label="${key[0].toUpperCase()+key.slice(1)} highlight" aria-pressed="false"><span aria-hidden="true">✓</span></button>`).join('')+'</div><div class="highlight-menu-actions"><button type="button" data-highlight-copy>Copy</button><button type="button" data-highlight-remove>Remove highlighting</button></div>';
+ document.body.append(menu);
+ let press=null,timer=0,active=null,suppressUntil=0;
+ function cancel(){clearTimeout(timer);press=null;}
+ function close(){menu.hidden=true;active=null;cancel();}
+ function show(mark,x,y,keyboard=false){
+  const book=Number(mark.dataset.highlightBook),chapter=Number(mark.dataset.highlightChapter),verse=Number(mark.dataset.highlightVerse);
+  const range=normalizeTextHighlights(state.verseBookmarks[`${book}:${chapter}:${verse}`]?.highlights).find(h=>h.edition===mark.dataset.highlightEdition&&h.start===Number(mark.dataset.highlightStart)&&h.end===Number(mark.dataset.highlightEnd));
+  if(!range)return;
+  active={book,chapter,verse,range};suppressUntil=Date.now()+800;cancel();window.getSelection()?.removeAllRanges();
+  for(const button of menu.querySelectorAll('[data-highlight-recolor]'))button.setAttribute('aria-pressed',String(button.dataset.highlightRecolor===range.color));
+  menu.hidden=false;
+  const viewport=window.visualViewport,left=viewport?.offsetLeft||0,top=viewport?.offsetTop||0,width=viewport?.width||window.innerWidth,height=viewport?.height||window.innerHeight;
+  const box=menu.getBoundingClientRect();menu.style.left=Math.max(left+8,Math.min(x-box.width/2,left+width-box.width-8))+'px';
+  menu.style.top=Math.max(top+64,Math.min(y+12,top+height-box.height-8))+'px';
+  if(keyboard)menu.querySelector('[data-highlight-copy]').focus({preventScroll:true});
+ }
+ document.addEventListener('pointerdown',event=>{
+  if(menu.contains(event.target))return;
+  if(!menu.hidden){close();return;}
+  const mark=event.target.closest('.text-highlight[data-highlight-start]');if(!mark||event.button!==0)return;
+  press={mark,id:event.pointerId,x:event.clientX,y:event.clientY};timer=setTimeout(()=>{if(press)show(press.mark,press.x,press.y);},500);
+ },true);
+ document.addEventListener('pointermove',event=>{if(press&&event.pointerId===press.id&&Math.hypot(event.clientX-press.x,event.clientY-press.y)>8)cancel();},true);
+ for(const type of ['pointerup','pointercancel'])document.addEventListener(type,cancel,true);
+ document.addEventListener('contextmenu',event=>{const mark=event.target.closest('.text-highlight[data-highlight-start]');if(!mark)return;event.preventDefault();event.stopImmediatePropagation();if(menu.hidden)show(mark,event.clientX,event.clientY);},true);
+ document.addEventListener('click',event=>{if(Date.now()<suppressUntil&&event.target.closest('.text-highlight[data-highlight-start]')){event.preventDefault();event.stopImmediatePropagation();}},true);
+ document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&!menu.hidden){event.preventDefault();close();return;}
+  if(event.key==='F10'&&event.shiftKey){const mark=event.target.closest('.verse-body')?.querySelector('.text-highlight');if(mark){event.preventDefault();const rect=mark.getBoundingClientRect();show(mark,rect.left,rect.bottom,true);}}
+ });
+ menu.addEventListener('click',async event=>{
+  if(event.target.closest('[data-highlight-dismiss]')){close();return;}
+  if(!active)return;const {book,chapter,verse,range}=active;
+  const recolor=event.target.closest('[data-highlight-recolor]');
+  if(recolor){editTextHighlight(book,chapter,verse,range,recolor.dataset.highlightRecolor);close();return;}
+  if(event.target.closest('[data-highlight-remove]')){editTextHighlight(book,chapter,verse,range,null);close();return;}
+  if(event.target.closest('[data-highlight-copy]')){
+   try{
+    if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(range.text);
+    else{const input=document.createElement('textarea');input.value=range.text;input.style.position='fixed';input.style.opacity='0';document.body.append(input);input.select();const copied=document.execCommand('copy');input.remove();if(!copied)throw Error('Copy unavailable');}
+    toast('Highlighted text copied');close();
+   }catch{toast('Could not copy. Try selecting the text and using Copy.');}
+  }
+ });
+ document.addEventListener('scroll',()=>{cancel();if(!menu.hidden)close();},{passive:true,capture:true});
+ window.addEventListener('viewchange',close);window.addEventListener('resize',close);
+})();

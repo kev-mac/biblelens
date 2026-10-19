@@ -1,4 +1,5 @@
 import atlasStyle from './data/atlas-style.json';
+import {createPersonMatcher,wrapReferenceNames} from './people-links.js';
 import {loadPlaces,getLocationDetails,createPlaceMatcher,wrapLocationNames} from './places-core.js';
 const sheet=document.querySelector('#atlas-sheet'),mapNode=document.querySelector('#atlas-map'),status=document.querySelector('#atlas-status');
 let map,marker,anchor,request=0,workerURL,mapFailed=false;
@@ -88,14 +89,19 @@ document.addEventListener('contextmenu',event=>{const chip=event.target.closest(
 // Capture prevents reader verse gestures and citation navigation from handling a chip tap.
 document.addEventListener('click',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(Date.now()<suppressPlaceUntil)return;openAtlas(chip.dataset.placeId,chip);},true);
 for(const type of ['pointerdown','dblclick','contextmenu'])document.addEventListener(type,event=>{if(event.target.closest('[data-place-id]'))event.stopImmediatePropagation();},true);
+// People cards open over the current reading position, like the atlas.
+document.addEventListener('click',event=>{const chip=event.target.closest('[data-person-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(window.getSelection()?.toString())return;window.dispatchEvent(new CustomEvent('open-person',{detail:{id:chip.dataset.personId,opener:chip}}));},true);
+for(const type of ['pointerdown','dblclick'])document.addEventListener(type,event=>{if(event.target.closest('[data-person-id]'))event.stopImmediatePropagation();},true);
 async function initializeChips(){
  try{
   const match=createPlaceMatcher(await loadPlaces());
+  let people=[];try{const response=await fetch('/reference/people.json');if(response.ok)people=await response.json();}catch{}
+  const matchPeople=createPersonMatcher(people);
   const scopes='.verse-body,.story-card > p';
   function decorate(root){
    const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(node){return node.parentElement.closest('button,a,script,style,textarea,.verse-num,[contenteditable]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;}}),nodes=[];
    while(walker.nextNode())nodes.push(walker.currentNode);
-   for(const node of nodes){if(!match(node.data).length)continue;const template=document.createElement('template');template.innerHTML=wrapLocationNames(node.data,match);node.replaceWith(template.content);}
+   for(const node of nodes){const body=node.parentElement.closest('.verse-body'),context=body?{book:Number(body.dataset.book),chapter:Number(body.dataset.chapter),verse:Number(body.dataset.verse)}:{};if(!match(node.data).length&&!matchPeople(node.data,context).length)continue;const template=document.createElement('template');template.innerHTML=wrapReferenceNames(node.data,match,matchPeople,context);node.replaceWith(template.content);}
   }
   const roots=new Set();let queued=false;
   const enqueue=node=>{const el=node.nodeType===1?node:node.parentElement;if(!el)return;const parent=el.closest(scopes);if(parent)roots.add(parent);for(const root of el.querySelectorAll?.(scopes)||[])roots.add(root);if(!queued&&roots.size){queued=true;queueMicrotask(()=>{observer.disconnect();for(const root of roots)if(root.isConnected)decorate(root);roots.clear();queued=false;observer.observe(document.body,{childList:true,subtree:true,characterData:true});});}};

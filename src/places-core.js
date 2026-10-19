@@ -40,7 +40,7 @@ export function createPlaceMatcher(places){
  const pattern=alternatives.length?new RegExp(`(?<![\\p{L}\\p{N}_])(?:${alternatives.join('|')})(?![\\p{L}\\p{N}_])`,'giu'):null;
  return text=>pattern?[...String(text).matchAll(pattern)].filter(m=>/^\p{Lu}/u.test(m[0])).map(m=>({start:m.index,end:m.index+m[0].length,label:m[0],id:unique.get(m[0].toLocaleLowerCase())})):[];
 }
-export function locationChip(id,label){return `<button type="button" class="location-chip" data-place-id="${escapeHTML(id)}" aria-haspopup="dialog" aria-controls="atlas-sheet" aria-label="Explore ${escapeHTML(label)} in the atlas"><span aria-hidden="true">📍</span> ${escapeHTML(label)}</button>`;}
+export function locationChip(id,label){return `<button type="button" class="location-chip" data-place-id="${escapeHTML(id)}" aria-haspopup="dialog" aria-controls="atlas-sheet" aria-label="Explore ${escapeHTML(label)} in the atlas"><span aria-hidden="true">📍</span>${escapeHTML(label)}</button>`;}
 // Input is plain text, never markup. Existing markup is handled with a DOM walker.
 export function wrapLocationNames(textOrNames,match){
  if(Array.isArray(textOrNames))return textOrNames.map(text=>wrapLocationNames(text,match)).join(', ');
