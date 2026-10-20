@@ -18,6 +18,11 @@ export function parsePlaces(data){
  }
  return places;
 }
+// Feature-type placeholders add no information beneath a map.
+export function atlasDescription(place){
+ const description=String(place.description||'').trim();
+ return /^(city|region|mountain|water|valley|island|place|location)[.!]?$/i.test(description)?'':description;
+}
 // These words also denote common words, people or tribes. Plain text alone cannot
 // identify their geographic sense; keep them accessible by ID rather than auto-linking.
 const contextDependentNames=new Set('judgment,pillars,salt,beer,madmen,arab,there,lord,god,put,straight,destruction,place,pool,river,tower,mount,mountain,rahab,abel,adam,dan,gad,asher,benjamin,joseph,judah,israel,manasseh,naphtali,ephraim,zebulun,simeon,reuben,ham,shem,lot,teman,edom,uz,on,no,sin,er,ram,ar,an,ur'.split(','));

@@ -27,6 +27,13 @@ Object.assign(context,{markedBookSelection:0,books:[{name:'Genesis'}],languageTa
 vm.runInContext(readerSource.slice(readerSource.indexOf('function relatedStudyPassages('),readerSource.indexOf('function scienceDetails(')),context);
 context.markedKind='all';context.markedMatchingPlacements=()=>[{chapter:49,verse:10}];context.markedChoices=r=>[{...r,tag:'T'}];context.markedGroup=()=> 'T';
 vm.runInContext(source.slice(source.indexOf('function markedPrimaryRows'),source.indexOf('function renderMarkedContext')),context);
+// Prose links preserve chapter/range navigation and escape user-facing text.
+context.books=[{name:'Genesis',chapters:50}];
+context.esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+assert.equal(context.markedInlineScriptureLinks('Genesis 2:5–9'),'<a class="comparison-inline-reference" href="#read/0/2/5-9">Genesis 2:5–9</a>');
+assert(context.markedInlineScriptureLinks('Genesis 1 and Genesis').includes('href="#read/0/1"'));
+assert.equal(context.markedInlineScriptureLinks('<b>Genesis 51</b>'),'&lt;b&gt;Genesis 51&lt;/b&gt;');
+assert.equal(context.markedInlineScriptureLinks('Genesis 2:9–5'),'Genesis 2:9–5');
 const rendered=context.markedSummary({key:'test',title:'Finding',summary:'Short summary',reasoning:'Reasoned comparison',scope:'Assessment metadata',text:'Detailed evidence',sources:[]});
 const expanded=rendered.slice(rendered.indexOf('<div class="comparison-evidence"'),rendered.indexOf('<details class="comparison-details"'));
 assert(expanded.indexOf('verse-citation')<expanded.indexOf('Reasoning:'));assert(expanded.includes('Supporting reference'));assert(!expanded.includes('Assessment metadata'));assert(expanded.includes('<q>Full scripture quotation</q>'));assert(expanded.indexOf('Reasoning:')<expanded.indexOf('Supporting reference'));assert(rendered.slice(rendered.indexOf('<details class="comparison-details"')).includes('Assessment metadata'));

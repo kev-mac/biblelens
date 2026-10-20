@@ -1,6 +1,6 @@
 'use strict';
 // Native disclosures keep touch, mouse and keyboard behavior consistent across directories.
-const COLLAPSED_CARD_SELECTOR='.prophecy-card,.character-card,.timeline-card,.timeline-event-card,.passage-saved-card,.category-directory-card,#cards > .card,#saved-cards > .card';
+const COLLAPSED_CARD_SELECTOR='.prophecy-card,.timeline-card,.timeline-event-card,.passage-saved-card,.category-directory-card,#cards > .card,#saved-cards > .card';
 const collapsedCards=new WeakSet();
 function collapseDirectoryCard(card){
  if(collapsedCards.has(card))return;
@@ -25,7 +25,7 @@ function collapseDirectoryCards(root){
 function resetCardDisclosures(){
  document.querySelectorAll('main details[open],#story-topic-sheet details[open],#atlas-sources[open]').forEach(node=>{node.open=false;});
  if(typeof comparisonEvidenceOpen!=='undefined')comparisonEvidenceOpen.clear();
- document.querySelectorAll('.character-detail-toggle,.character-summary-toggle,[data-timeline-history],.timeline-history').forEach(button=>{
+ document.querySelectorAll('.person-section-toggle,.character-detail-toggle,.character-summary-toggle,[data-timeline-history],.timeline-history').forEach(button=>{
   button.setAttribute('aria-expanded','false');const label=button.getAttribute('aria-label');if(label?.startsWith('Collapse '))button.setAttribute('aria-label','Expand '+label.slice(9));const panel=document.getElementById(button.getAttribute('aria-controls'));
   if(panel){if(panel.classList.contains('timeline-discrepancy')){panel.classList.remove('is-expanded');panel.setAttribute('aria-hidden','true');panel.inert=true;}else panel.hidden=true;}
  });

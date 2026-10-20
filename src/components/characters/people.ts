@@ -14,7 +14,7 @@ const normalize = (value: string): string => value.normalize('NFKD').replace(/[\
 export function mapPeople(raw: unknown): DirectoryPerson[] {
   if (!Array.isArray(raw)) throw new Error('Invalid people directory');
   const seen = new Set<string>();
-  return raw.flatMap(record => {
+  const mapped: DirectoryPerson[] = raw.flatMap(record => {
     if (!record || typeof record.id !== 'string' || !record.id || typeof record.name !== 'string' || !record.name.trim() || seen.has(record.id)) return [];
     seen.add(record.id);
     const aliases = [...new Set<string>((Array.isArray(record.aliases) ? record.aliases : []).filter((name: unknown): name is string => typeof name === 'string' && !!name.trim()))].filter(name => normalize(name) !== normalize(record.name));
@@ -28,12 +28,18 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
     const written=writtenByReference.get(record.id);
     const summary = [record.summary, record.description, record.title].find(value => typeof value === 'string' && value.trim()) || written?.summary || '';
     const key_passages = [...passages];
-    return [{id: record.id, name: record.name.trim(), aliases, summary, key_passages,
+    let label=typeof record.label==='string'&&record.label!==record.name?record.label:'';
+    if(label.startsWith(record.name+' (')&&label.endsWith(')'))label=label.slice(record.name.length+2,-1);
+    return [{id: record.id, name: record.name.trim(), identity_context:[label,key_passages[0]].filter(Boolean).join(' · '), aliases, summary, key_passages,
       sex: record.gender === 'Female' ? 'female' : record.gender === 'Male' ? 'male' : 'unspecified',
       era: written?.era || 'Across scripture', geography: written?.geography || {origin: '', residence: []},
       testaments: [...new Set([...referenceBooks].map(book=>book<39?'old':'new'))],
       narrative_anchors: {books: written?.narrative_anchors.books || [], key_verses: key_passages, linked_stories: written?.narrative_anchors.linked_stories || []}} as DirectoryPerson];
   }).sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
+  const counts=new Map<string,number>();
+  for(const person of mapped)counts.set(normalize(person.name),(counts.get(normalize(person.name))||0)+1);
+  for(const person of mapped)if(counts.get(normalize(person.name))===1)delete person.identity_context;
+  return mapped;
 }
 
 let pending: Promise<DirectoryPerson[]> | undefined;

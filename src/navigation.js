@@ -14,11 +14,12 @@
  trigger.setAttribute('aria-expanded', 'false');
  }
  const grid = sheet.querySelector('.navigation-grid');
- const pages = [['explore','Read'],['chat','Chat'],['saved','Categories'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['commandments','Commandments'],['prophecies','Prophecies'],['timeline','Timeline']];
+ const pages = [['explore','Read'],['chat','Chat'],['saved','Categories'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['prophecies','Prophecies'],['timeline','Timeline']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
   const icon = document.querySelector(`header nav [data-view="${page}"] svg`);
   if (icon) button.append(icon.cloneNode(true));
+  else if(page==='places')button.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
   else button.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg>';
   const text = document.createElement('span'); text.textContent = label; button.append(text); grid.append(button);
  }

@@ -28,6 +28,7 @@ export interface CharacterProfile {
   id: string;
   name: string;
   aliases?: string[];
+  identity_context?: string;
   sex: 'female' | 'male' | 'unspecified';
   era: 'Primeval' | 'Patriarchal' | 'Exodus' | 'Conquest' | 'Judges' | 'Monarchy' | 'Wisdom' | 'Prophets' | 'Gospels' | 'Apostolic' | 'Across scripture';
   summary: string;

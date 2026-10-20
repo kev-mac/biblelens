@@ -53,7 +53,7 @@ export function FamilyConnections(connections: Connections, prefix = 'character'
     const chips = element('div', 'character-relative-chips');
     chips.setAttribute('role', 'group'); chips.setAttribute('aria-labelledby', labelNode.id);
     for (const relative of relatives) {
-      const chip = element('button', 'character-relative-chip'); chip.type = 'button';
+      const chip = element('button', `character-relative-chip${relative.gender === 'Female' ? ' character-relative-female' : ''}`); chip.type = 'button';
       chip.dataset.relativeId = connectionProfileId(relative.id);
       const [book, chapter, verse] = relative.refs[0] || [];
       const context = books[book] ? `${books[book].name} ${chapter}:${verse}` : '';
@@ -75,6 +75,17 @@ export function FamilyConnections(connections: Connections, prefix = 'character'
   const source = element('a', '', 'Theographic Bible Metadata · CC BY-SA 4.0');
   source.href = 'reference/README.md'; source.target = '_blank'; source.rel = 'noopener';
   attribution.append(source, document.createTextNode('. Siblings include half-siblings. Spouse links come from the existing cited profiles. Coverage is incomplete; genealogy links do not distinguish biological and legal parentage.'));
-  section.append(attribution);
+  const sourceToggle=element('button','character-source-toggle','Source');sourceToggle.type='button';
+  const popover=element('div','character-source-popover');popover.id=`${prefix}-family-source`;
+  popover.setAttribute('popover','auto');popover.setAttribute('role','dialog');popover.setAttribute('aria-labelledby',`${prefix}-family-source-title`);
+  sourceToggle.setAttribute('popovertarget',popover.id);
+  const popoverHeader=element('div','character-source-header');
+  const sourceTitle=element('h3','','Family Data Source');sourceTitle.id=`${prefix}-family-source-title`;
+  const close=element('button','','×');close.type='button';close.autofocus=true;
+  close.setAttribute('aria-label','Close family source');close.setAttribute('popovertarget',popover.id);close.setAttribute('popovertargetaction','hide');
+  popoverHeader.append(sourceTitle,close);
+  const license=element('a','character-source-license','Read the CC BY-SA 4.0 license');
+  license.href='reference/THEOGRAPHIC-LICENSE.txt';license.target='_blank';license.rel='noopener';
+  popover.append(popoverHeader,attribution,license);section.append(sourceToggle,popover);
   return section;
 }

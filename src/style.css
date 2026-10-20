@@ -1977,7 +1977,7 @@ body.dark .story-card{--theme-rgb:230,171,136}
 /* Passage links stay quiet; keyboard focus uses an underline rather than a box. */
 html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip){border:0!important;box-shadow:none!important}
 html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):is(:hover,:focus,:focus-visible){outline:none!important}
-html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):focus-visible{text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:4px!important}
+html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):focus-visible{text-decoration:none!important;text-decoration-thickness:2px!important;text-underline-offset:4px!important}
 
 /* The Bookmarks destination carries the same gold accent as its navigation icon. */
 body #bookmarks-view{--theme-rgb:234,179,8;--line:rgba(184,134,11,.55);--border:var(--line)}
@@ -2068,7 +2068,7 @@ body .timeline-event-card>.card-disclosure{grid-column:1/-1}
 body dialog.atlas-sheet{height:fit-content}
 /* Close icons stay unframed, including when iOS autofocuses a dialog. */
 html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]){border:0!important;outline:none!important;box-shadow:none!important;background:transparent!important}
-html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]):focus-visible{outline:none!important;box-shadow:none!important;text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:5px!important}
+html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]):focus-visible{outline:none!important;box-shadow:none!important;text-decoration:none!important;text-decoration-thickness:2px!important;text-underline-offset:5px!important}
 
 body .character-profile-expand{display:inline-flex;align-items:center;gap:10px;min-height:44px;color:var(--ui-link);cursor:pointer;list-style:none;text-decoration:underline;text-underline-offset:4px}
 body .character-profile-expand::-webkit-details-marker{display:none}
@@ -2087,3 +2087,190 @@ body #saved-view .marked-category-content{grid-template-columns:minmax(0,1fr)}
 body #saved-view .marked-category-content>article{min-width:0;max-width:100%}
 body #saved-view .comparison-summary{overflow-wrap:anywhere}
 body .context-citations [hidden]{display:none!important}
+
+/* Review example: independent profile sections stay visible below the summary. */
+body .person-section-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:18px 0 4px}
+body .person-section-toggle{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-height:68px;min-width:0;padding:10px 4px;border:1px solid transparent;border-radius:12px;background:transparent;color:var(--muted);font-family:var(--ui-font);cursor:pointer}
+body .person-section-icon{display:flex;align-items:center;justify-content:center;width:26px;height:26px}
+body .person-section-icon svg{width:26px;height:26px}
+body .person-section-label{font-size:.72rem;line-height:1.2;font-weight:500}
+body .person-section-toggle[aria-expanded=true]{color:var(--ui-link);background:var(--soft);border-color:var(--line)}
+body .person-section-panel{margin-top:16px;padding:16px;border:1px solid var(--line);border-radius:16px}
+body .person-section-panel[hidden]{display:none!important}
+body .person-section-panel>h3,body .person-section-panel .character-connections>h3{margin:0 0 14px;font-size:1rem}
+body .person-section-panel p{margin:8px 0}
+body .person-section-caption{font-size:.85rem;color:var(--muted)}
+html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]){border:1px solid var(--line)!important;border-radius:50%;width:44px;height:44px;min-width:44px;min-height:44px;padding:8px;outline:none!important;box-shadow:none!important;text-decoration:none!important}
+html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]):focus-visible{outline:none!important;box-shadow:none!important;text-decoration:none!important;background:var(--soft)!important}
+html body :is(a,button,summary):is(:link,:visited,:hover,:focus,:focus-visible),html body :is(a,summary){text-decoration:none!important}
+html body a:focus-visible{background:var(--soft)}
+body .person-section-toggle{border:0!important;border-radius:12px!important;background:transparent!important;box-shadow:none!important}
+body .person-section-toggle[aria-expanded=true]{background:var(--soft)!important;color:var(--ui-link)!important}
+html body .person-section-toggle:disabled{color:#626a75!important;opacity:1!important;background:transparent!important;border:0!important;box-shadow:none!important;cursor:default;pointer-events:none}
+
+/* Profile review refinements. */
+html body #characters-view .characters-search-box:focus-within{outline:none!important;box-shadow:none!important;border-color:var(--line)}
+html body .character-relative-chip.character-relative-female{color:#f6a4ce!important}
+body .person-section-toggle[aria-expanded=true] .person-section-icon{filter:drop-shadow(0 0 4px currentColor) drop-shadow(0 0 9px currentColor)!important}
+body .person-section-toggle[aria-expanded=true] .person-section-label{text-shadow:0 0 4px currentColor,0 0 10px currentColor!important}
+body.read-view .passage-picker-trigger{width:72px!important;height:72px!important;min-width:72px!important;min-height:72px!important;padding:18px!important}
+body.read-view .passage-picker-trigger svg{width:32px;height:32px}
+body.read-view .dock-pagination button{flex:0 0 44px!important;width:44px!important;max-width:44px!important;min-width:44px!important;height:44px!important;min-height:44px!important;padding:10px!important}
+body.read-view .dock-pagination svg{width:20px;height:20px}
+html body>header .header-description{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:3px;color:var(--muted);font:400 .68rem/1.25 var(--ui-font);letter-spacing:normal}
+@media(max-width:420px){html body.read-view>header .header-context{max-height:none;white-space:nowrap}}
+html body .person-section-panel a.character-place-citation{color:var(--ui-link)!important}
+
+/* Reader context replaces the page title only after that title leaves the viewport. */
+html body.read-view.reader-scrolled:not(.navigation-enlarged)>header{height:48px;min-height:48px;max-height:48px;padding-top:2px;padding-bottom:2px}
+body .character-sheet-body{padding-top:20px}
+body .character-female .person-section-panel{border-color:rgba(var(--theme-rgb),.4)}
+html body .character-relative-chip{--theme-rgb:59,130,246;background:rgba(59,130,246,var(--surface-base))!important}
+body .character-identity-context{margin:0 0 8px;color:var(--muted);font-size:.8rem;font-weight:400}
+
+/* The profile name and close control share the top row. */
+body .character-sheet-header{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:start;gap:12px;padding:22px 22px 10px;border-bottom:0}
+body .character-sheet-header h2{margin:0;font-size:1.5rem;line-height:1.3;overflow-wrap:anywhere}
+body .character-sheet-header>button[aria-label="Close character details"]{justify-self:end;align-self:start}
+body .character-sheet-header .character-family-back{grid-column:1/-1;justify-self:start}
+body .character-sheet-body{padding-top:0}
+html body>header nav :is(button,#reader-picker){padding:8px}
+html body>header nav :is(button,#reader-picker) svg{width:28px;height:28px;flex-shrink:0}
+html body.read-view.reader-scrolled:not(.navigation-enlarged)>header nav :is(button,#reader-picker) svg{width:20px;height:20px}
+/* Reserve the normal header's document space so resizing does not look like a scroll gesture. */
+html body.read-view>header{margin-bottom:0}
+html body.read-view.reader-scrolled:not(.navigation-enlarged)>header{margin-bottom:12px}
+html.native-ios body.read-view{padding-top:calc(env(safe-area-inset-top,0px) + 60px)}
+html:not(.native-ios).mobile-editing body.read-view{padding-top:60px}
+/* Profile controls follow summary text; the active section is distinguished by glow. */
+html body .character-card .character-name{color:var(--ink)!important}
+html body .person-section-toggle,html body .person-section-toggle[aria-expanded=true]{background:transparent!important;color:var(--ink)!important}
+html body .person-section-controls:has([aria-expanded=true]) .person-section-toggle[aria-expanded=false]:not(:disabled){color:var(--muted)!important;opacity:1}
+body .person-sections{--profile-glow:#367fc3}
+body.dark .person-sections{--profile-glow:#8cc8ff}
+html body .person-section-toggle[aria-expanded=true] .person-section-icon{filter:drop-shadow(0 0 4px color-mix(in srgb,var(--profile-glow) 65%,transparent))!important}
+html body .person-section-toggle[aria-expanded=true] .person-section-label{text-shadow:0 0 5px color-mix(in srgb,var(--profile-glow) 65%,transparent)!important}
+html body .person-section-panel{background:#fff!important}
+html body.dark .person-section-panel{background:#142235!important}
+/* Story links share the Clear Search surface and interaction treatment. */
+html body :is(.characters-reset,.person-section-panel .character-story-chip,.person-section-panel .character-relative-chip,.person-section-panel .character-verses a){background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.12),rgba(255,255,255,.85)) #fff!important;border:1px solid rgba(59,130,246,.4)!important;color:var(--ink)!important;box-shadow:none!important}
+html body.dark :is(.characters-reset,.person-section-panel .character-story-chip,.person-section-panel .character-relative-chip,.person-section-panel .character-verses a){background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.2),rgba(15,23,34,.65)) #0f1722!important}
+html body :is(.characters-reset,.person-section-panel .character-story-chip,.person-section-panel .character-relative-chip,.person-section-panel .character-verses a):is(:hover,:focus-visible){border-color:rgba(59,130,246,.8)!important;background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.22),rgba(255,255,255,.9)) #fff!important}
+html body.dark :is(.characters-reset,.person-section-panel .character-story-chip,.person-section-panel .character-relative-chip,.person-section-panel .character-verses a):is(:hover,:focus-visible){background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.32),rgba(15,23,34,.65)) #0f1722!important}
+html body:not(.dark) .character-relative-chip.character-relative-female{color:#a32161!important}
+html body .character-female .person-section-panel :is(.character-story-chip,.character-relative-chip,.character-verses a){border-color:rgba(236,72,153,.55)!important}
+html body .character-female .person-section-panel :is(.character-story-chip,.character-relative-chip,.character-verses a):is(:hover,:focus-visible){border-color:rgba(236,72,153,.85)!important}
+html body .character-relative-chip{border-radius:10px!important}
+
+html body .person-section-panel .character-relative-chip{border-radius:12px!important;padding:10px 14px!important;min-height:44px!important}
+html body .person-section-panel .character-relative-chip.character-relative-female{color:#a32161!important}
+html body.dark .person-section-panel .character-relative-chip.character-relative-female{color:#f6a4ce!important}
+/* Family tag borders follow the relative, independently of the enclosing profile. */
+html body .person-section-panel .character-relative-chip,
+html body .character-female .person-section-panel .character-relative-chip{border-color:rgba(59,130,246,.55)!important}
+html body .person-section-panel .character-relative-chip:is(:hover,:focus-visible),
+html body .character-female .person-section-panel .character-relative-chip:is(:hover,:focus-visible){border-color:rgba(59,130,246,.85)!important}
+html body .person-section-panel .character-relative-chip.character-relative-female,
+html body .character-female .person-section-panel .character-relative-chip.character-relative-female{border-color:rgba(236,72,153,.55)!important}
+html body .person-section-panel .character-relative-chip.character-relative-female:is(:hover,:focus-visible),
+html body .character-female .person-section-panel .character-relative-chip.character-relative-female:is(:hover,:focus-visible){border-color:rgba(236,72,153,.85)!important}
+html body .person-section-panel .character-relative-chip{padding:9px 12.6px!important;min-height:39.6px!important;font-size:.7875rem!important;gap:5.4px;border-radius:10.8px!important}
+html body .person-section-panel .character-relative-chip .character-person-icon{flex-basis:16.2px;width:16.2px;height:16.2px}
+html body .person-section-panel .character-relative-chip small{font-size:.63rem}
+
+html body.dark .person-section-controls:has([aria-expanded=true]) .person-section-toggle[aria-expanded=false]:not(:disabled){color:#b4c3d5!important}
+html body:not(.dark) .person-section-controls:has([aria-expanded=true]) .person-section-toggle[aria-expanded=false]:not(:disabled){color:#4f6075!important}
+html body:not(.dark) .person-section-toggle:disabled{color:#9ba5b2!important}
+html body .person-section-toggle:disabled :is(.person-section-icon,.person-section-label){opacity:.4}
+html body .person-section-toggle[aria-expanded=true]{color:#fff!important}
+html body .person-section-toggle[aria-expanded=true] .person-section-icon{filter:drop-shadow(0 0 4px var(--profile-glow)) drop-shadow(0 0 7px color-mix(in srgb,var(--profile-glow) 70%,transparent))!important}
+html body:not(.dark) .person-section-toggle[aria-expanded=true]{color:#102d4b!important}
+html body .person-section-toggle[aria-expanded=true] .person-section-label{text-shadow:0 0 4px var(--profile-glow),0 0 7px color-mix(in srgb,var(--profile-glow) 70%,transparent)!important}
+
+html body button.character-source-toggle{display:inline-flex;align-items:center;min-height:44px;padding:0;margin-top:8px;background:transparent!important;border:0;border-radius:0;color:var(--ui-link);font-size:.8rem}
+html body .character-source-popover{position:fixed;inset:0;width:min(380px,calc(100vw - 32px));max-height:calc(100dvh - 48px);margin:auto;padding:20px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:16px;overflow:auto;font-family:var(--ui-font);font-size:.85rem;line-height:1.6}
+body .character-source-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:12px}
+body .character-source-header h3{margin:0;font-size:1rem}
+body .character-source-popover .characters-note{margin:0 0 12px}
+body .character-source-license{color:var(--ui-link)}
+html body button.character-source-toggle{border:0!important;border-radius:0!important;color:var(--ui-link)!important;width:auto!important;min-width:0!important;outline:none!important}
+html body button.character-source-toggle:focus-visible{background:var(--soft)!important}
+
+html body button.character-source-toggle{padding:0!important;margin:0!important;min-height:0!important;height:auto!important;line-height:1.4}
+html body .person-section-panel .character-verses a{display:inline-flex;align-items:center;padding:9px 12.6px!important;min-height:39.6px!important;border-radius:10.8px!important;font-size:.7875rem!important;font-weight:400}
+/* Match the Bookmarks surface treatment while retaining People’s blue/pink accents. */
+html body .character-card{background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,59,130,246),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,59,130,246),var(--surface-base))!important;border:1px solid rgba(var(--theme-rgb,59,130,246),.65)}
+html body .person-section-panel .character-verses a{border-color:rgba(59,130,246,.55)!important}
+html body .person-section-panel .character-verses a:is(:hover,:focus-visible){border-color:rgba(59,130,246,.85)!important}
+html body .character-card:is(:focus,:focus-visible),
+html body .person-section-panel:is(:focus,:focus-visible){outline:none!important;box-shadow:none!important}
+html body .person-section-panel{border-color:rgba(59,130,246,.65)}
+html body .character-female .person-section-panel{border-color:rgba(236,72,153,.65)}
+/* Gender accents belong to the person icon and frame; names stay white. */
+html body .person-section-panel .character-relative-chip>span:not(.character-person-icon){color:#fff!important}
+html body .person-section-panel .character-relative-chip .character-person-icon{color:#8cc8ff}
+html body .person-section-panel .character-relative-chip.character-relative-female .character-person-icon{color:#f6a4ce}
+html body:not(.dark) .person-section-panel .character-relative-chip{background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.2),rgba(15,23,34,.65)) #0f1722!important}
+html body:not(.dark) .person-section-panel .character-relative-chip:is(:hover,:focus-visible){background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.32),rgba(15,23,34,.65)) #0f1722!important}
+html body .person-section-panel .character-relative-chip small{color:#fff!important;opacity:.8}
+
+html body button.character-place-link{display:inline!important;vertical-align:baseline;padding:0!important;margin:0!important;width:auto!important;height:auto!important;min-width:0!important;min-height:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:var(--ui-link)!important;font:inherit;line-height:inherit;white-space:normal}
+html body button.character-place-link:focus-visible{outline:none!important;background:var(--soft)!important}
+
+body #places-view{--theme-rgb:59,130,246;padding:26px 0 40px}
+body #places-search{display:block;width:100%;min-height:48px;border-radius:24px;margin:24px 0 16px}
+body #places-count{color:var(--muted);font-size:.875rem;scroll-margin-top:calc(var(--site-header-height,60px) + 16px)}
+body .places-directory-list{list-style:none;padding:0;margin:0}
+html body #places-view .place-directory-entry{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;min-height:60px;margin:0;padding:14px 0!important;border:0!important;border-bottom:1px solid var(--line)!important;border-radius:0!important;background:transparent!important;color:var(--ink);text-align:left}
+body .place-directory-entry span{font-weight:500;overflow-wrap:anywhere}
+body .place-directory-entry small{color:var(--muted);font-size:.75rem;flex-shrink:0}
+html body #places-view .place-directory-entry:hover{background:var(--soft)!important}
+body .places-directory-pagination{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:24px 0}
+body .places-directory-pagination[hidden]{display:none}
+body .places-directory-pagination button{min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:12px}
+body .places-directory-pagination button:disabled{opacity:.4}
+body .category-page-link[data-category-page=places] .marked-category-icon{color:#8cc8ff}
+body:not(.dark) .category-page-link[data-category-page=places] .marked-category-icon{color:#236eb1}
+
+/* Category comparison typography scales with the UI root, independently of reader preferences. */
+html body #saved-view .marked-comparison-card .comparison-summary{background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb),var(--surface-base))!important;border:1px solid rgba(var(--theme-rgb),.65)!important}
+html body #saved-view .marked-comparison-card .comparison-summary h3{font-size:1.25rem!important}
+html body #saved-view .marked-comparison-card .comparison-summary p{font-size:1rem!important}
+html body #saved-view .marked-comparison-card .marked-primary-passages q{font-size:.8125rem!important}
+html body #saved-view .marked-comparison-card .comparison-inline-reference{color:var(--ui-link)!important;text-decoration:none;font:inherit}
+html body #saved-view .marked-comparison-card .comparison-inline-reference:hover{text-decoration:underline}
+/* Category scripture citations share compact text links instead of framed tags. */
+html body #saved-view .marked-comparison-card .verse-citation{display:inline;padding:0!important;margin:0!important;min-height:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:var(--ui-link)!important;font-size:.8125rem!important;font-weight:400}
+html body #saved-view .marked-comparison-card .verse-citation:hover{text-decoration:underline}
+html body #saved-view .marked-comparison-card .comparison-summary{padding:14px 14px 42px!important}
+html body #saved-view .marked-comparison-card:is(:focus,:focus-visible),
+html body #saved-view .marked-comparison-card :is(button,a,[tabindex]):is(:focus,:focus-visible){outline:none!important;box-shadow:none!important}
+html body #saved-view .marked-comparison-card :is(.comparison-inline-reference,.summary-expand,.summary-inspect):focus-visible{background:var(--soft)!important}
+/* Keep primary citations and their quotations in one wrapping text flow. */
+html body #saved-view .marked-comparison-card .marked-primary-passages .comparison-side{display:block}
+html body #saved-view .marked-comparison-card .marked-primary-passages .comparison-side q{display:inline;margin:0 0 0 .4em}
+
+/* Relative frames follow the relative's gender, including inside female profiles. */
+html body .character-card .person-section-panel .character-relative-chip:not(.character-relative-female){border-color:rgba(59,130,246,.55)!important}
+html body .character-card .person-section-panel .character-relative-chip:not(.character-relative-female):is(:hover,:focus-visible){border-color:rgba(59,130,246,.85)!important}
+html body .character-connections>button.character-source-toggle,
+html body .place-profile-card>button.character-source-toggle{display:flex;margin-left:auto!important}
+/* Places use the same profile surfaces, search spacing and icon controls as People. */
+body #places-view .characters-search-box{margin:48px 0 14px}
+html body #places-search{border:0!important;background:transparent!important;margin:0;min-height:46px;padding:0;border-radius:0}
+html body #places-search:focus,html body #places-view .characters-search-box:focus-within{outline:none!important;box-shadow:none!important}
+body #places-search::placeholder{color:color-mix(in srgb,var(--muted) 80%,#000);font-style:italic;opacity:1}
+body .places-directory-list{display:grid;gap:20px}
+html body .place-profile-card{--theme-rgb:59,130,246;padding:18px;border-radius:22px}
+body .place-profile-card h2{margin:4px 0 16px;font-size:1.35rem}
+body .place-profile-card .character-summary{font-size:.875rem;line-height:1.65}
+body .place-profile-card .person-section-controls{display:flex;justify-content:space-evenly;margin:18px 0 12px}
+body .place-profile-card .person-section-toggle{flex:0 1 100px}
+body .place-profile-card .person-section-panel{margin:16px 0;padding:16px;border-radius:16px;border:1px solid rgba(59,130,246,.65)}
+body .place-profile-card .person-section-panel h3{margin:0 0 12px;font-size:1rem}
+body .place-profile-card .person-section-panel p{font-size:.875rem}
+html body .place-profile-card{display:block;--profile-glow:#367fc3}
+html body.dark .place-profile-card{--profile-glow:#8cc8ff}
+html body .place-profile-card .character-summary{margin:14px 0}
+html body #places-view .person-section-toggle:is(:focus,:focus-visible),
+html body #places-view .person-section-panel:is(:focus,:focus-visible){outline:none!important;box-shadow:none!important}

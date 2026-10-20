@@ -1,6 +1,7 @@
+import {searchPlaces} from '../src/places-directory.js';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {parsePlaces,createPlaceMatcher,wrapLocationNames,getLocationDetails,loadPlaces} from '../src/places-core.js';
+import {parsePlaces,createPlaceMatcher,wrapLocationNames,getLocationDetails,loadPlaces,atlasDescription} from '../src/places-core.js';
 const places=parsePlaces(JSON.parse(fs.readFileSync('data/reference/places.json','utf8'))),match=createPlaceMatcher(places);
 assert.equal(places.size,1298);
 assert.equal(match('The Lord put Rahab straight before Israel.').length,0,'Do not turn people, tribes or common words into geographic claims');
@@ -30,3 +31,18 @@ for(const layer of style.layers.filter(layer=>layer.type==='symbol'))assert.deep
 assert(build.includes("'maplibre-gl-worker.mjs'"),'Ship the local map worker on both platforms');
 assert(htmlSource.includes('/vendor/MAPLIBRE-LICENSE.txt'));
 console.log('Places checks passed: dataset, aliases, boundaries, ambiguity, coordinates, escaping, fetch retry and cache.');
+
+assert.equal(searchPlaces(places).length,places.size);
+assert.equal(searchPlaces(places,'  PROMISED LAND  ')[0].name,'Canaan','Search location aliases without case sensitivity');
+assert.equal(searchPlaces(places,'Jericho')[0].name,'Jericho','Exact place names sort first');
+assert.equal(searchPlaces(places,'not-a-real-place-name').length,0);
+const accented=new Map([['accent',{id:'accent',name:'Élodie',aliases:['A friendly place'],modern_name:'Modern name'}]]);
+assert.equal(searchPlaces(accented,'elodie')[0].id,'accent');
+assert.equal(searchPlaces(accented,'friendly place')[0].id,'accent');
+console.log('PASS: Places directory search, aliases, accent folding, exact matches and empty results.');
+
+assert.equal(atlasDescription({description:'region'}),'');
+assert.equal(atlasDescription({description:'City.'}),'');
+assert.equal(atlasDescription({description:'A region mentioned in Genesis.'}),'A region mentioned in Genesis.');
+assert.equal(atlasDescription({description:''}),'');
+console.log('PASS: atlas hides generic feature labels while preserving meaningful descriptions.');

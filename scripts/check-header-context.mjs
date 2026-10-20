@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const source=fs.readFileSync('src/app.js','utf8');
+const parent={setAttribute(key,value){this[key]=value;}};
+const contextNode={dataset:{passage:'Genesis 15 · KJV',description:'God’s Covenant with Abram'},parentElement:parent,children:[],set textContent(text){this.text=text;this.children=[];},append(node){this.children.push(node);}};
+let rect={top:80,bottom:145};
+const context={view:'explore',location:{hash:'#explore'},window:{innerHeight:800},document:{querySelector:()=>({getBoundingClientRect:()=>({bottom:48})}),createElement:()=>({})},$:selector=>selector==='#header-context'?contextNode:{getBoundingClientRect:()=>rect}};
+vm.createContext(context);
+vm.runInContext(source.slice(source.indexOf('function updateHeaderContext(){'),source.indexOf('let headerContextFrame=0;')),context);
+const update=()=>vm.runInContext('updateHeaderContext()',context);
+update();assert.equal(contextNode.text,'Read');assert.equal(contextNode.children.length,0);
+rect={top:-50,bottom:49};update();assert.equal(contextNode.text,'Read','Partially visible description still supplies page context');
+rect={top:-50,bottom:48};update();assert.equal(contextNode.text,'Genesis 15 · KJV');assert.equal(contextNode.children[0].textContent,contextNode.dataset.description);
+rect={top:80,bottom:145};update();assert.equal(contextNode.text,'Read','Returning to the heading restores Read');assert.equal(contextNode.children.length,0);
+context.view='characters';rect={top:-50,bottom:0};update();assert.equal(contextNode.text,'People');assert.equal(contextNode.children.length,0);
+context.view='saved';context.location.hash='#categories/academic';update();assert.equal(contextNode.text,'Categories · Academic');
+console.log('PASS: reader header follows title/description visibility, returns to Read, and preserves other page contexts.');

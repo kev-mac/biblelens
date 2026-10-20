@@ -1,6 +1,7 @@
+import {mountPlacesDirectory} from './places-directory.js';
 import atlasStyle from './data/atlas-style.json';
 import {createPersonMatcher,wrapReferenceNames} from './people-links.js';
-import {loadPlaces,getLocationDetails,createPlaceMatcher,wrapLocationNames} from './places-core.js';
+import {loadPlaces,getLocationDetails,createPlaceMatcher,wrapLocationNames,atlasDescription} from './places-core.js';
 const sheet=document.querySelector('#atlas-sheet'),mapNode=document.querySelector('#atlas-map'),status=document.querySelector('#atlas-status');
 let map,marker,anchor,request=0,workerURL,mapFailed=false;
 const close=()=>sheet.close();
@@ -25,13 +26,13 @@ new MutationObserver(colorMap).observe(document.body,{attributes:true,attributeF
 async function openAtlas(id,button){
  document.querySelector('#atlas-sources').open=false;
  const token=++request;anchor?.setAttribute('aria-expanded','false');anchor=button;button.setAttribute('aria-expanded','true');
- document.querySelector('#atlas-name').textContent='Loading place…';document.querySelector('#atlas-names').textContent='';document.querySelector('#atlas-description').textContent='';status.textContent='';mapNotice.textContent='';mapNode.hidden=true;document.querySelector('#atlas-external').hidden=true;
+ document.querySelector('#atlas-name').textContent='Loading place…';document.querySelector('#atlas-names').textContent='';document.querySelector('#atlas-description').textContent='';document.querySelector('#atlas-description').hidden=true;status.textContent='';mapNotice.textContent='';mapNode.hidden=true;document.querySelector('#atlas-external').hidden=true;
  if(!sheet.open)sheet.showModal();document.querySelector('#atlas-close').focus({preventScroll:true});sheet.querySelector('.atlas-scroll').scrollTop=0;
  try{
   const place=await getLocationDetails(id);if(token!==request||!sheet.open)return;if(!place)throw Error('This place is not in the reference dataset.');
   document.querySelector('#atlas-name').textContent=place.name;
   document.querySelector('#atlas-names').textContent=[place.modern_name&&`Modern name: ${place.modern_name}`,place.aliases.length&&`Also called ${place.aliases.join(', ')}`].filter(Boolean).join(' · ');
-  document.querySelector('#atlas-description').textContent=place.description;
+  const description=document.querySelector('#atlas-description');description.textContent=atlasDescription(place);description.hidden=!description.textContent;
   if(!place.coordinates){status.textContent='Coordinates are unavailable for this location.';return;}
   const {latitude,longitude}=place.coordinates,point=[longitude,latitude];mapNode.hidden=false;
   const approximate=place.verification!=='VERIFIED'||!['Precise','Center'].includes(place.precision);
@@ -112,3 +113,5 @@ async function initializeChips(){
  }catch(error){console.warn('Atlas chips unavailable:',error.message);}
 }
 initializeChips();
+
+mountPlacesDirectory();
