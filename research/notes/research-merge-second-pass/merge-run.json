@@ -1,0 +1,70 @@
+{
+  "counts": {
+    "psalms": {
+      "preserved": 9,
+      "new": 17,
+      "merged": 24,
+      "matched": 2
+    },
+    "isaiah": {
+      "preserved": 16,
+      "new": 23,
+      "merged": 30,
+      "matched": 9
+    },
+    "proverbs": {
+      "preserved": 7,
+      "new": 20,
+      "merged": 27,
+      "matched": 0
+    },
+    "jeremiah": {
+      "preserved": 13,
+      "new": 29,
+      "merged": 33,
+      "matched": 9
+    },
+    "2-chronicles": {
+      "preserved": 4,
+      "new": 15,
+      "merged": 16,
+      "matched": 3
+    },
+    "1-chronicles": {
+      "preserved": 10,
+      "new": 22,
+      "merged": 29,
+      "matched": 3
+    },
+    "samuel": {
+      "preserved": 19,
+      "new": 20,
+      "merged": 31,
+      "matched": 8
+    },
+    "kings": {
+      "preserved": 16,
+      "new": 12,
+      "merged": 22,
+      "matched": 5
+    },
+    "ezekiel": {
+      "preserved": 13,
+      "new": 16,
+      "merged": 24,
+      "matched": 5
+    },
+    "zechariah": {
+      "preserved": 9,
+      "new": 13,
+      "merged": 14,
+      "matched": 7
+    }
+  },
+  "total": 250,
+  "newOnly": 133,
+  "matched": 51,
+  "ownerQuestionVariants": 19,
+  "witnessDecisionsHeld": 2,
+  "protectedStateUnchanged": true
+}

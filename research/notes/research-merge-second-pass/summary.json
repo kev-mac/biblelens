@@ -1,0 +1,22 @@
+{
+  "branch": "research-merge-second-pass",
+  "base": "cb2203e33eebc313e9f9ff6da3300236663ba554",
+  "inputRecords": 303,
+  "mergedRecords": 250,
+  "statusCounts": {
+    "matched": 51,
+    "preserved-only": 64,
+    "new-only": 133,
+    "same-id-variant": 2
+  },
+  "quotePass": 222,
+  "quoteFail": 28,
+  "quoteChecks": 1582,
+  "ownerQuestionEntries": 19,
+  "notesVersionsPreserved": 23,
+  "witnessDecisionsHeld": 2,
+  "protectedStateUnchanged": true,
+  "idCollisions": 0,
+  "publishedIdCollisions": 0,
+  "otherDraftIdCollisions": 0
+}
