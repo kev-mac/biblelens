@@ -1,0 +1,51 @@
+{
+  "batch": "ezra-stories.json",
+  "draftSha256": "45ac151c248f23f3724fd7a7ae2ed50e80daa12066ae7ea44ae6a1fd397fc239",
+  "decisions": [
+    {
+      "title": "Cyrus's Decree and the Return",
+      "passage": "Ezra 1:1 - 2:70",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Rebuilding the Altar and Foundation",
+      "passage": "Ezra 3:1 - 3:13",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Opposition and Delay",
+      "passage": "Ezra 4:1 - 4:24",
+      "decision": "correct",
+      "reason": "Distinguish opposition to the temple from the inserted Artaxerxes correspondence about the city (4:12,21).",
+      "published": {
+        "title": "Opposition and Delay",
+        "passage": "Ezra 4:1 - 4:24",
+        "summary": "Opponents offer to help rebuild the temple, are refused, and obstruct the work. The chapter also recounts later letters that lead Artaxerxes to stop work on Jerusalem’s city; it closes by returning to the temple work halted until Darius’s reign.",
+        "cross_references": [
+          "Nehemiah 4:1-23"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Temple Completed",
+      "passage": "Ezra 5:1 - 6:22",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Ezra Comes to Jerusalem",
+      "passage": "Ezra 7:1 - 8:36",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Ezra and Mixed Marriages",
+      "passage": "Ezra 9:1 - 10:44",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    }
+  ]
+}

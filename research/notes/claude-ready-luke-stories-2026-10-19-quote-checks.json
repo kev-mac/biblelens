@@ -1,0 +1,545 @@
+{
+  "batch": "luke-stories.json",
+  "draftSha256": "532941c02ceec67ca13112547939b9df4204985cb986dc82eaacb937c3b94e85",
+  "packagedTextSha256": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+  "checks": [
+    {
+      "title": "The Births of John and Jesus",
+      "references": [
+        {
+          "reference": "Luke 1:5 - 2:20",
+          "valid": true,
+          "verses": 96
+        },
+        {
+          "reference": "Matthew 1:18-25",
+          "valid": true,
+          "verses": 8
+        },
+        {
+          "reference": "Micah 5:2",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 1:5",
+          "quote": "There was in the days of Herod, the king of Judaea, a certain priest named Zacharias, of the course of Abia: and his wife was of the daughters of Aaron, and her name was Elisabeth."
+        },
+        {
+          "ref": "Luke 1:13",
+          "quote": "But the angel said unto him, Fear not, Zacharias: for thy prayer is heard; and thy wife Elisabeth shall bear thee a son, and thou shalt call his name John."
+        },
+        {
+          "ref": "Luke 1:14",
+          "quote": "And thou shalt have joy and gladness; and many shall rejoice at his birth."
+        },
+        {
+          "ref": "Luke 1:27",
+          "quote": "To a virgin espoused to a man whose name was Joseph, of the house of David; and the virgin's name was Mary."
+        },
+        {
+          "ref": "Luke 1:30",
+          "quote": "And the angel said unto her, Fear not, Mary: for thou hast found favour with God."
+        },
+        {
+          "ref": "Luke 1:34",
+          "quote": "Then said Mary unto the angel, How shall this be, seeing I know not a man?"
+        },
+        {
+          "ref": "Luke 2:20",
+          "quote": "And the shepherds returned, glorifying and praising God for all the things that they had heard and seen, as it was told unto them."
+        }
+      ]
+    },
+    {
+      "title": "Presentation and the Boy Jesus in the Temple",
+      "references": [
+        {
+          "reference": "Luke 2:21 - 2:52",
+          "valid": true,
+          "verses": 32
+        },
+        {
+          "reference": "Leviticus 12:1-8",
+          "valid": true,
+          "verses": 8
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 2:21",
+          "quote": "And when eight days were accomplished for the circumcising of the child, his name was called Jesus, which was so named of the angel before he was conceived in the womb."
+        },
+        {
+          "ref": "Luke 2:25",
+          "quote": "And, behold, there was a man in Jerusalem, whose name was Simeon; and the same man was just and devout, waiting for the consolation of Israel: and the Holy Ghost was upon him."
+        },
+        {
+          "ref": "Luke 2:42",
+          "quote": "And when he was twelve years old, they went up to Jerusalem after the custom of the feast."
+        },
+        {
+          "ref": "Luke 2:43",
+          "quote": "And when they had fulfilled the days, as they returned, the child Jesus tarried behind in Jerusalem; and Joseph and his mother knew not of it."
+        },
+        {
+          "ref": "Luke 2:45",
+          "quote": "And when they found him not, they turned back again to Jerusalem, seeking him."
+        },
+        {
+          "ref": "Luke 2:46",
+          "quote": "And it came to pass, that after three days they found him in the temple, sitting in the midst of the doctors, both hearing them, and asking them questions."
+        },
+        {
+          "ref": "Luke 2:52",
+          "quote": "And Jesus increased in wisdom and stature, and in favour with God and man."
+        }
+      ]
+    },
+    {
+      "title": "Rejection at Nazareth",
+      "references": [
+        {
+          "reference": "Luke 4:14 - 4:30",
+          "valid": true,
+          "verses": 17
+        },
+        {
+          "reference": "Isaiah 61:1-2",
+          "valid": true,
+          "verses": 2
+        },
+        {
+          "reference": "Matthew 13:53-58",
+          "valid": true,
+          "verses": 6
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 4:14",
+          "quote": "And Jesus returned in the power of the Spirit into Galilee: and there went out a fame of him through all the region round about."
+        },
+        {
+          "ref": "Luke 4:16",
+          "quote": "And he came to Nazareth, where he had been brought up: and, as his custom was, he went into the synagogue on the sabbath day, and stood up for to read."
+        },
+        {
+          "ref": "Luke 4:20",
+          "quote": "And he closed the book, and he gave it again to the minister, and sat down. And the eyes of all them that were in the synagogue were fastened on him."
+        },
+        {
+          "ref": "Luke 4:21",
+          "quote": "And he began to say unto them, This day is this scripture fulfilled in your ears."
+        },
+        {
+          "ref": "Luke 4:28",
+          "quote": "And all they in the synagogue, when they heard these things, were filled with wrath,"
+        },
+        {
+          "ref": "Luke 4:30",
+          "quote": "But he passing through the midst of them went his way,"
+        }
+      ]
+    },
+    {
+      "title": "The Miraculous Catch",
+      "references": [
+        {
+          "reference": "Luke 5:1 - 5:11",
+          "valid": true,
+          "verses": 11
+        },
+        {
+          "reference": "John 21:1-14",
+          "valid": true,
+          "verses": 14
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 5:1",
+          "quote": "And it came to pass, that, as the people pressed upon him to hear the word of God, he stood by the lake of Gennesaret,"
+        },
+        {
+          "ref": "Luke 5:3",
+          "quote": "And he entered into one of the ships, which was Simon's, and prayed him that he would thrust out a little from the land. And he sat down, and taught the people out of the ship."
+        },
+        {
+          "ref": "Luke 5:4",
+          "quote": "Now when he had left speaking, he said unto Simon, Launch out into the deep, and let down your nets for a draught."
+        },
+        {
+          "ref": "Luke 5:5",
+          "quote": "And Simon answering said unto him, Master, we have toiled all the night, and have taken nothing: nevertheless at thy word I will let down the net."
+        },
+        {
+          "ref": "Luke 5:8",
+          "quote": "When Simon Peter saw it, he fell down at Jesus' knees, saying, Depart from me; for I am a sinful man, O Lord."
+        },
+        {
+          "ref": "Luke 5:10",
+          "quote": "And so was also James, and John, the sons of Zebedee, which were partners with Simon. And Jesus said unto Simon, Fear not; from henceforth thou shalt catch men."
+        },
+        {
+          "ref": "Luke 5:11",
+          "quote": "And when they had brought their ships to land, they forsook all, and followed him."
+        }
+      ]
+    },
+    {
+      "title": "The Centurion and the Widow's Son",
+      "references": [
+        {
+          "reference": "Luke 7:1 - 7:17",
+          "valid": true,
+          "verses": 17
+        },
+        {
+          "reference": "Matthew 8:5-13",
+          "valid": true,
+          "verses": 9
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 7:1",
+          "quote": "Now when he had ended all his sayings in the audience of the people, he entered into Capernaum."
+        },
+        {
+          "ref": "Luke 7:2",
+          "quote": "And a certain centurion's servant, who was dear unto him, was sick, and ready to die."
+        },
+        {
+          "ref": "Luke 7:3",
+          "quote": "And when he heard of Jesus, he sent unto him the elders of the Jews, beseeching him that he would come and heal his servant."
+        },
+        {
+          "ref": "Luke 7:6",
+          "quote": "Then Jesus went with them. And when he was now not far from the house, the centurion sent friends to him, saying unto him, Lord, trouble not thyself: for I am not worthy that thou shouldest enter under my roof:"
+        },
+        {
+          "ref": "Luke 7:7",
+          "quote": "Wherefore neither thought I myself worthy to come unto thee: but say in a word, and my servant shall be healed."
+        },
+        {
+          "ref": "Luke 7:12",
+          "quote": "Now when he came nigh to the gate of the city, behold, there was a dead man carried out, the only son of his mother, and she was a widow: and much people of the city was with her."
+        },
+        {
+          "ref": "Luke 7:17",
+          "quote": "And this rumour of him went forth throughout all Judaea, and throughout all the region round about."
+        }
+      ]
+    },
+    {
+      "title": "The Sinful Woman Anoints Jesus",
+      "references": [
+        {
+          "reference": "Luke 7:36 - 7:50",
+          "valid": true,
+          "verses": 15
+        },
+        {
+          "reference": "Matthew 26:6-13",
+          "valid": true,
+          "verses": 8
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 7:36",
+          "quote": "And one of the Pharisees desired him that he would eat with him. And he went into the Pharisee's house, and sat down to meat."
+        },
+        {
+          "ref": "Luke 7:37",
+          "quote": "And, behold, a woman in the city, which was a sinner, when she knew that Jesus sat at meat in the Pharisee's house, brought an alabaster box of ointment,"
+        },
+        {
+          "ref": "Luke 7:38",
+          "quote": "And stood at his feet behind him weeping, and began to wash his feet with tears, and did wipe them with the hairs of her head, and kissed his feet, and anointed them with the ointment."
+        },
+        {
+          "ref": "Luke 7:39",
+          "quote": "Now when the Pharisee which had bidden him saw it, he spake within himself, saying, This man, if he were a prophet, would have known who and what manner of woman this is that toucheth him: for she is a sinner."
+        },
+        {
+          "ref": "Luke 7:44",
+          "quote": "And he turned to the woman, and said unto Simon, Seest thou this woman? I entered into thine house, thou gavest me no water for my feet: but she hath washed my feet with tears, and wiped them with the hairs of her head."
+        },
+        {
+          "ref": "Luke 7:50",
+          "quote": "And he said to the woman, Thy faith hath saved thee; go in peace."
+        }
+      ]
+    },
+    {
+      "title": "The Good Samaritan and Mary and Martha",
+      "references": [
+        {
+          "reference": "Luke 10:25 - 10:42",
+          "valid": true,
+          "verses": 18
+        },
+        {
+          "reference": "Leviticus 19:18",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 10:25",
+          "quote": "And, behold, a certain lawyer stood up, and tempted him, saying, Master, what shall I do to inherit eternal life?"
+        },
+        {
+          "ref": "Luke 10:33",
+          "quote": "But a certain Samaritan, as he journeyed, came where he was: and when he saw him, he had compassion on him,"
+        },
+        {
+          "ref": "Luke 10:38",
+          "quote": "Now it came to pass, as they went, that he entered into a certain village: and a certain woman named Martha received him into her house."
+        },
+        {
+          "ref": "Luke 10:39",
+          "quote": "And she had a sister called Mary, which also sat at Jesus' feet, and heard his word."
+        },
+        {
+          "ref": "Luke 10:40",
+          "quote": "But Martha was cumbered about much serving, and came to him, and said, Lord, dost thou not care that my sister hath left me to serve alone? bid her therefore that she help me."
+        },
+        {
+          "ref": "Luke 10:41",
+          "quote": "And Jesus answered and said unto her, Martha, Martha, thou art careful and troubled about many things:"
+        },
+        {
+          "ref": "Luke 10:42",
+          "quote": "But one thing is needful: and Mary hath chosen that good part, which shall not be taken away from her."
+        }
+      ]
+    },
+    {
+      "title": "The Lost Sheep, Coin and Son",
+      "references": [
+        {
+          "reference": "Luke 15:1 - 15:32",
+          "valid": true,
+          "verses": 32
+        },
+        {
+          "reference": "Matthew 18:12-14",
+          "valid": true,
+          "verses": 3
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 15:1",
+          "quote": "Then drew near unto him all the publicans and sinners for to hear him."
+        },
+        {
+          "ref": "Luke 15:4",
+          "quote": "What man of you, having an hundred sheep, if he lose one of them, doth not leave the ninety and nine in the wilderness, and go after that which is lost, until he find it?"
+        },
+        {
+          "ref": "Luke 15:6",
+          "quote": "And when he cometh home, he calleth together his friends and neighbours, saying unto them, Rejoice with me; for I have found my sheep which was lost."
+        },
+        {
+          "ref": "Luke 15:9",
+          "quote": "And when she hath found it, she calleth her friends and her neighbours together, saying, Rejoice with me; for I have found the piece which I had lost."
+        },
+        {
+          "ref": "Luke 15:24",
+          "quote": "For this my son was dead, and is alive again; he was lost, and is found. And they began to be merry."
+        },
+        {
+          "ref": "Luke 15:32",
+          "quote": "It was meet that we should make merry, and be glad: for this thy brother was dead, and is alive again; and was lost, and is found."
+        }
+      ]
+    },
+    {
+      "title": "The Rich Man and Lazarus",
+      "references": [
+        {
+          "reference": "Luke 16:19 - 16:31",
+          "valid": true,
+          "verses": 13
+        },
+        {
+          "reference": "Luke 12:16-21",
+          "valid": true,
+          "verses": 6
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 16:19",
+          "quote": "There was a certain rich man, which was clothed in purple and fine linen, and fared sumptuously every day:"
+        },
+        {
+          "ref": "Luke 16:20",
+          "quote": "And there was a certain beggar named Lazarus, which was laid at his gate, full of sores,"
+        },
+        {
+          "ref": "Luke 16:21",
+          "quote": "And desiring to be fed with the crumbs which fell from the rich man's table: moreover the dogs came and licked his sores."
+        },
+        {
+          "ref": "Luke 16:22",
+          "quote": "And it came to pass, that the beggar died, and was carried by the angels into Abraham's bosom: the rich man also died, and was buried;"
+        },
+        {
+          "ref": "Luke 16:23",
+          "quote": "And in hell he lift up his eyes, being in torments, and seeth Abraham afar off, and Lazarus in his bosom."
+        },
+        {
+          "ref": "Luke 16:31",
+          "quote": "And he said unto him, If they hear not Moses and the prophets, neither will they be persuaded, though one rose from the dead."
+        }
+      ]
+    },
+    {
+      "title": "Zacchaeus",
+      "references": [
+        {
+          "reference": "Luke 19:1 - 19:10",
+          "valid": true,
+          "verses": 10
+        },
+        {
+          "reference": "Luke 18:35-43",
+          "valid": true,
+          "verses": 9
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 19:1",
+          "quote": "And Jesus entered and passed through Jericho."
+        },
+        {
+          "ref": "Luke 19:2",
+          "quote": "And, behold, there was a man named Zacchaeus, which was the chief among the publicans, and he was rich."
+        },
+        {
+          "ref": "Luke 19:4",
+          "quote": "And he ran before, and climbed up into a sycomore tree to see him: for he was to pass that way."
+        },
+        {
+          "ref": "Luke 19:5",
+          "quote": "And when Jesus came to the place, he looked up, and saw him, and said unto him, Zacchaeus, make haste, and come down; for to day I must abide at thy house."
+        },
+        {
+          "ref": "Luke 19:8",
+          "quote": "And Zacchaeus stood, and said unto the Lord: Behold, Lord, the half of my goods I give to the poor; and if I have taken any thing from any man by false accusation, I restore him fourfold."
+        },
+        {
+          "ref": "Luke 19:9",
+          "quote": "And Jesus said unto him, This day is salvation come to this house, forsomuch as he also is a son of Abraham."
+        },
+        {
+          "ref": "Luke 19:10",
+          "quote": "For the Son of man is come to seek and to save that which was lost."
+        }
+      ]
+    },
+    {
+      "title": "The Road to Emmaus",
+      "references": [
+        {
+          "reference": "Luke 24:13 - 24:35",
+          "valid": true,
+          "verses": 23
+        },
+        {
+          "reference": "Mark 16:12-13",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 24:13",
+          "quote": "And, behold, two of them went that same day to a village called Emmaus, which was from Jerusalem about threescore furlongs."
+        },
+        {
+          "ref": "Luke 24:18",
+          "quote": "And the one of them, whose name was Cleopas, answering said unto him, Art thou only a stranger in Jerusalem, and hast not known the things which are come to pass there in these days?"
+        },
+        {
+          "ref": "Luke 24:30",
+          "quote": "And it came to pass, as he sat at meat with them, he took bread, and blessed it, and brake, and gave to them."
+        },
+        {
+          "ref": "Luke 24:33",
+          "quote": "And they rose up the same hour, and returned to Jerusalem, and found the eleven gathered together, and them that were with them,"
+        },
+        {
+          "ref": "Luke 24:34",
+          "quote": "Saying, The Lord is risen indeed, and hath appeared to Simon."
+        },
+        {
+          "ref": "Luke 24:35",
+          "quote": "And they told what things were done in the way, and how he was known of them in breaking of bread."
+        }
+      ]
+    },
+    {
+      "title": "The Ascension",
+      "references": [
+        {
+          "reference": "Luke 24:36 - 24:53",
+          "valid": true,
+          "verses": 18
+        },
+        {
+          "reference": "Acts 1:1-11",
+          "valid": true,
+          "verses": 11
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Luke 24:36",
+          "quote": "And as they thus spake, Jesus himself stood in the midst of them, and saith unto them, Peace be unto you."
+        },
+        {
+          "ref": "Luke 24:37",
+          "quote": "But they were terrified and affrighted, and supposed that they had seen a spirit."
+        },
+        {
+          "ref": "Luke 24:38",
+          "quote": "And he said unto them, Why are ye troubled? and why do thoughts arise in your hearts?"
+        },
+        {
+          "ref": "Luke 24:45",
+          "quote": "Then opened he their understanding, that they might understand the scriptures,"
+        },
+        {
+          "ref": "Luke 24:51",
+          "quote": "And it came to pass, while he blessed them, he was parted from them, and carried up into heaven."
+        },
+        {
+          "ref": "Luke 24:53",
+          "quote": "And were continually in the temple, praising and blessing God. Amen."
+        }
+      ]
+    }
+  ]
+}

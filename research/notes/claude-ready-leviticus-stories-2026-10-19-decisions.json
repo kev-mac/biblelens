@@ -1,0 +1,72 @@
+{
+  "batch": "leviticus-stories.json",
+  "draftSha256": "406d4fd4b6b113802e6b458ba4eba48fddf7d31f5a2cf3a4de2aa3c109dc2463",
+  "decisions": [
+    {
+      "title": "Offerings at the Tabernacle",
+      "passage": "Leviticus 1:1 - 7:38",
+      "decision": "hold",
+      "reason": "Sacrificial instructions, not a narrated episode. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Aaron and His Sons Are Ordained",
+      "passage": "Leviticus 8:1 - 9:24",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Nadab and Abihu",
+      "passage": "Leviticus 10:1 - 10:20",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Clean and Unclean Animals",
+      "passage": "Leviticus 11:1 - 11:47",
+      "decision": "hold",
+      "reason": "Dietary law, not a narrated episode. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Purity After Childbirth, Skin Disease and Mold",
+      "passage": "Leviticus 12:1 - 15:33",
+      "decision": "hold",
+      "reason": "Purity instructions, not a narrated episode. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "The Day of Atonement",
+      "passage": "Leviticus 16:1 - 16:34",
+      "decision": "hold",
+      "reason": "Annual ritual instructions; the narrated death of Aaron’s sons is covered separately. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Holiness Laws",
+      "passage": "Leviticus 17:1 - 22:33",
+      "decision": "hold",
+      "reason": "A collection of holiness laws. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "The Appointed Festivals",
+      "passage": "Leviticus 23:1 - 23:44",
+      "decision": "hold",
+      "reason": "Calendar and festival instructions. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "The Blasphemer Stoned",
+      "passage": "Leviticus 24:10 - 24:23",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Sabbath Year and Jubilee",
+      "passage": "Leviticus 25:1 - 25:55",
+      "decision": "hold",
+      "reason": "Land tenure and Jubilee laws. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Blessings and Curses",
+      "passage": "Leviticus 26:1 - 27:34",
+      "decision": "hold",
+      "reason": "Covenant sanctions, vows and tithing instructions. Held under the owner’s narrative-only scope."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "batch": "ezekiel-stories.json",
+  "draftSha256": "a74a1b86fb606b3d48a524b7ff5511af8d936dfeec4d511c444403a8603e85d8",
+  "decisions": [
+    {
+      "title": "Ezekiel's Vision and Commission",
+      "passage": "Ezekiel 1:1 - 3:27",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Sign Acts of the Siege",
+      "passage": "Ezekiel 4:1 - 5:17",
+      "decision": "hold",
+      "reason": "Predominantly instructions for symbolic actions; the supplied summary turns the commands into completed actions. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "The Glory Leaves the Temple",
+      "passage": "Ezekiel 8:1 - 11:25",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Death of Ezekiel's Wife",
+      "passage": "Ezekiel 24:15 - 24:27",
+      "decision": "correct",
+      "reason": "Include the narrated death and subsequent exchange, rather than only the prediction.",
+      "published": {
+        "title": "The Death of Ezekiel's Wife",
+        "passage": "Ezekiel 24:15 - 24:27",
+        "summary": "The LORD tells Ezekiel that the desire of his eyes will be taken away and commands him not to perform the usual mourning rites. His wife dies that evening; he explains his conduct to the people as a sign concerning the sanctuary and their families.",
+        "cross_references": [
+          "Ezekiel 24:1-14"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Valley of Dry Bones",
+      "passage": "Ezekiel 37:1 - 37:28",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Gog and the Restored Temple",
+      "passage": "Ezekiel 38:1 - 40:4",
+      "decision": "correct",
+      "reason": "Hold the future Gog oracle from this story; retain only the narrated opening of the temple vision. No temple measurements occur before 40:5.",
+      "published": {
+        "title": "Ezekiel Is Shown the Temple in a Vision",
+        "passage": "Ezekiel 40:1 - 40:4",
+        "summary": "In a vision Ezekiel is brought to the land of Israel and set on a high mountain. He sees a man with a measuring reed at a gate and is told to observe what he is shown and declare it to the house of Israel.",
+        "cross_references": [
+          "Revelation 20:7-9"
+        ],
+        "topics": []
+      }
+    }
+  ]
+}

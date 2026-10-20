@@ -1,0 +1,40 @@
+{
+  "batch": "isaiah-stories.json",
+  "draftSha256": "d8ca467595b49ce8cec95c8a66ab6ec8989f6946486a984210d319f738238d61",
+  "decisions": [
+    {
+      "title": "Isaiah's Call",
+      "passage": "Isaiah 6:1 - 6:13",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Ahaz and the Sign of Immanuel",
+      "passage": "Isaiah 7:1 - 7:25",
+      "decision": "correct",
+      "reason": "Use the packaged KJV virgin wording; do not silently substitute a different translation or resolve the separate translation question.",
+      "published": {
+        "title": "Ahaz and the Sign of Immanuel",
+        "passage": "Isaiah 7:1 - 7:25",
+        "summary": "Syria and Israel threaten Judah. Isaiah tells King Ahaz to stand firm, and when Ahaz refuses to ask for a sign, Isaiah announces that a virgin shall conceive and bear a son called Immanuel.",
+        "cross_references": [
+          "Matthew 1:22-23",
+          "2 Kings 16:5-9"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Sennacherib's Threat and Hezekiah",
+      "passage": "Isaiah 36:1 - 37:38",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Hezekiah's Illness",
+      "passage": "Isaiah 38:1 - 39:8",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    }
+  ]
+}

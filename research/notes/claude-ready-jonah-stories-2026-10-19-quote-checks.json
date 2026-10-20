@@ -1,0 +1,137 @@
+{
+  "batch": "jonah-stories.json",
+  "draftSha256": "275943c5bc6e9efc57809b388b28c4139c3dc67b1cf843c30b09736c71d7822e",
+  "packagedTextSha256": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+  "checks": [
+    {
+      "title": "Jonah Flees and Is Swallowed",
+      "references": [
+        {
+          "reference": "Jonah 1:1 - 2:10",
+          "valid": true,
+          "verses": 27
+        },
+        {
+          "reference": "Matthew 12:39-41",
+          "valid": true,
+          "verses": 3
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Jonah 1:1",
+          "quote": "Now the word of the Lord came unto Jonah the son of Amittai, saying,"
+        },
+        {
+          "ref": "Jonah 1:3",
+          "quote": "But Jonah rose up to flee unto Tarshish from the presence of the Lord, and went down to Joppa; and he found a ship going to Tarshish: so he paid the fare thereof, and went down into it, to go with them unto Tarshish from the presence of the Lord."
+        },
+        {
+          "ref": "Jonah 1:5",
+          "quote": "Then the mariners were afraid, and cried every man unto his god, and cast forth the wares that were in the ship into the sea, to lighten it of them. But Jonah was gone down into the sides of the ship; and he lay, and was fast asleep."
+        },
+        {
+          "ref": "Jonah 1:7",
+          "quote": "And they said every one to his fellow, Come, and let us cast lots, that we may know for whose cause this evil is upon us. So they cast lots, and the lot fell upon Jonah."
+        },
+        {
+          "ref": "Jonah 1:17",
+          "quote": "Now the Lord had prepared a great fish to swallow up Jonah. And Jonah was in the belly of the fish three days and three nights."
+        },
+        {
+          "ref": "Jonah 2:10",
+          "quote": "And the Lord spake unto the fish, and it vomited out Jonah upon the dry land."
+        }
+      ]
+    },
+    {
+      "title": "Nineveh Repents",
+      "references": [
+        {
+          "reference": "Jonah 3:1 - 3:10",
+          "valid": true,
+          "verses": 10
+        },
+        {
+          "reference": "Luke 11:32",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Jonah 3:1",
+          "quote": "And the word of the Lord came unto Jonah the second time, saying,"
+        },
+        {
+          "ref": "Jonah 3:3",
+          "quote": "So Jonah arose, and went unto Nineveh, according to the word of the Lord. Now Nineveh was an exceeding great city of three days' journey."
+        },
+        {
+          "ref": "Jonah 3:4",
+          "quote": "And Jonah began to enter into the city a day's journey, and he cried, and said, Yet forty days, and Nineveh shall be overthrown."
+        },
+        {
+          "ref": "Jonah 3:5",
+          "quote": "So the people of Nineveh believed God, and proclaimed a fast, and put on sackcloth, from the greatest of them even to the least of them."
+        },
+        {
+          "ref": "Jonah 3:6",
+          "quote": "For word came unto the king of Nineveh, and he arose from his throne, and he laid his robe from him, and covered him with sackcloth, and sat in ashes."
+        },
+        {
+          "ref": "Jonah 3:7",
+          "quote": "And he caused it to be proclaimed and published through Nineveh by the decree of the king and his nobles, saying, Let neither man nor beast, herd nor flock, taste any thing: let them not feed, nor drink water:"
+        },
+        {
+          "ref": "Jonah 3:10",
+          "quote": "And God saw their works, that they turned from their evil way; and God repented of the evil, that he had said that he would do unto them; and he did it not."
+        }
+      ]
+    },
+    {
+      "title": "Jonah's Anger",
+      "references": [
+        {
+          "reference": "Jonah 4:1 - 4:11",
+          "valid": true,
+          "verses": 11
+        },
+        {
+          "reference": "Exodus 34:6-7",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Jonah 4:1",
+          "quote": "But it displeased Jonah exceedingly, and he was very angry."
+        },
+        {
+          "ref": "Jonah 4:5",
+          "quote": "So Jonah went out of the city, and sat on the east side of the city, and there made him a booth, and sat under it in the shadow, till he might see what would become of the city."
+        },
+        {
+          "ref": "Jonah 4:6",
+          "quote": "And the Lord God prepared a gourd, and made it to come up over Jonah, that it might be a shadow over his head, to deliver him from his grief. So Jonah was exceeding glad of the gourd."
+        },
+        {
+          "ref": "Jonah 4:9",
+          "quote": "And God said to Jonah, Doest thou well to be angry for the gourd? And he said, I do well to be angry, even unto death."
+        },
+        {
+          "ref": "Jonah 4:11",
+          "quote": "And should not I spare Nineveh, that great city, wherein are more than sixscore thousand persons that cannot discern between their right hand and their left hand; and also much cattle?"
+        },
+        {
+          "ref": "Jonah 4:10",
+          "quote": "Then said the Lord, Thou hast had pity on the gourd, for the which thou hast not laboured, neither madest it grow; which came up in a night, and perished in a night:"
+        }
+      ]
+    }
+  ]
+}

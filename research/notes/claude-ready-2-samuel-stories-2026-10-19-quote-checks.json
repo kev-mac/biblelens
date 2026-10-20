@@ -1,0 +1,509 @@
+{
+  "batch": "2-samuel-stories.json",
+  "draftSha256": "85589437a570ff57fc338bd9a973f40aa630f459ed1489e2056df928068d93c9",
+  "packagedTextSha256": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+  "checks": [
+    {
+      "title": "David Becomes King",
+      "references": [
+        {
+          "reference": "2 Samuel 1:1 - 5:5",
+          "valid": true,
+          "verses": 115
+        },
+        {
+          "reference": "1 Chronicles 11:1-3",
+          "valid": true,
+          "verses": 3
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 1:1",
+          "quote": "Now it came to pass after the death of Saul, when David was returned from the slaughter of the Amalekites, and David had abode two days in Ziklag;"
+        },
+        {
+          "ref": "2 Samuel 4:8",
+          "quote": "And they brought the head of Ishbosheth unto David to Hebron, and said to the king, Behold the head of Ishbosheth the son of Saul thine enemy, which sought thy life; and the Lord hath avenged my lord the king this day of Saul, and of his seed."
+        },
+        {
+          "ref": "2 Samuel 3:20",
+          "quote": "So Abner came to David to Hebron, and twenty men with him. And David made Abner and the men that were with him a feast."
+        },
+        {
+          "ref": "2 Samuel 3:21",
+          "quote": "And Abner said unto David, I will arise and go, and will gather all Israel unto my lord the king, that they may make a league with thee, and that thou mayest reign over all that thine heart desireth. And David sent Abner away; and he went in peace."
+        },
+        {
+          "ref": "2 Samuel 5:3",
+          "quote": "So all the elders of Israel came to the king to Hebron; and king David made a league with them in Hebron before the Lord: and they anointed David king over Israel."
+        },
+        {
+          "ref": "2 Samuel 5:5",
+          "quote": "In Hebron he reigned over Judah seven years and six months: and in Jerusalem he reigned thirty and three years over all Israel and Judah."
+        },
+        {
+          "ref": "2 Samuel 2:4",
+          "quote": "And the men of Judah came, and there they anointed David king over the house of Judah. And they told David, saying, That the men of Jabeshgilead were they that buried Saul."
+        }
+      ]
+    },
+    {
+      "title": "Jerusalem and the Ark",
+      "references": [
+        {
+          "reference": "2 Samuel 5:6 - 6:23",
+          "valid": true,
+          "verses": 43
+        },
+        {
+          "reference": "1 Chronicles 13:1-16:43",
+          "valid": true,
+          "verses": 103
+        },
+        {
+          "reference": "Psalms 132:1-8",
+          "valid": true,
+          "verses": 8
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 5:6",
+          "quote": "And the king and his men went to Jerusalem unto the Jebusites, the inhabitants of the land: which spake unto David, saying, Except thou take away the blind and the lame, thou shalt not come in hither: thinking, David cannot come in hither."
+        },
+        {
+          "ref": "2 Samuel 5:9",
+          "quote": "So David dwelt in the fort, and called it the city of David. And David built round about from Millo and inward."
+        },
+        {
+          "ref": "2 Samuel 6:16",
+          "quote": "And as the ark of the Lord came into the city of David, Michal Saul's daughter looked through a window, and saw king David leaping and dancing before the Lord; and she despised him in her heart."
+        },
+        {
+          "ref": "2 Samuel 6:23",
+          "quote": "Therefore Michal the daughter of Saul had no child unto the day of her death."
+        },
+        {
+          "ref": "2 Samuel 5:17",
+          "quote": "But when the Philistines heard that they had anointed David king over Israel, all the Philistines came up to seek David; and David heard of it, and went down to the hold."
+        },
+        {
+          "ref": "2 Samuel 6:10",
+          "quote": "So David would not remove the ark of the Lord unto him into the city of David: but David carried it aside into the house of Obededom the Gittite."
+        },
+        {
+          "ref": "2 Samuel 6:12",
+          "quote": "And it was told king David, saying, The Lord hath blessed the house of Obededom, and all that pertaineth unto him, because of the ark of God. So David went and brought up the ark of God from the house of Obededom into the city of David with gladness."
+        }
+      ]
+    },
+    {
+      "title": "The Davidic Covenant",
+      "references": [
+        {
+          "reference": "2 Samuel 7:1 - 7:29",
+          "valid": true,
+          "verses": 29
+        },
+        {
+          "reference": "1 Chronicles 17:1-27",
+          "valid": true,
+          "verses": 27
+        },
+        {
+          "reference": "Luke 1:32-33",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 7:1",
+          "quote": "And it came to pass, when the king sat in his house, and the Lord had given him rest round about from all his enemies;"
+        },
+        {
+          "ref": "2 Samuel 7:5",
+          "quote": "Go and tell my servant David, Thus saith the Lord, Shalt thou build me an house for me to dwell in?"
+        },
+        {
+          "ref": "2 Samuel 7:7",
+          "quote": "In all the places wherein I have walked with all the children of Israel spake I a word with any of the tribes of Israel, whom I commanded to feed my people Israel, saying, Why build ye not me an house of cedar?"
+        },
+        {
+          "ref": "2 Samuel 7:13",
+          "quote": "He shall build an house for my name, and I will stablish the throne of his kingdom for ever."
+        },
+        {
+          "ref": "2 Samuel 7:18",
+          "quote": "Then went king David in, and sat before the Lord, and he said, Who am I, O Lord God? and what is my house, that thou hast brought me hitherto?"
+        },
+        {
+          "ref": "2 Samuel 7:26",
+          "quote": "And let thy name be magnified for ever, saying, The Lord of hosts is the God over Israel: and let the house of thy servant David be established before thee."
+        },
+        {
+          "ref": "2 Samuel 7:29",
+          "quote": "Therefore now let it please thee to bless the house of thy servant, that it may continue for ever before thee: for thou, O Lord God, hast spoken it: and with thy blessing let the house of thy servant be blessed for ever."
+        }
+      ]
+    },
+    {
+      "title": "David and Mephibosheth",
+      "references": [
+        {
+          "reference": "2 Samuel 8:1 - 10:19",
+          "valid": true,
+          "verses": 50
+        },
+        {
+          "reference": "1 Chronicles 18:1-19:19",
+          "valid": true,
+          "verses": 36
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 8:1",
+          "quote": "And after this it came to pass that David smote the Philistines, and subdued them: and David took Methegammah out of the hand of the Philistines."
+        },
+        {
+          "ref": "2 Samuel 10:2",
+          "quote": "Then said David, I will shew kindness unto Hanun the son of Nahash, as his father shewed kindness unto me. And David sent to comfort him by the hand of his servants for his father. And David's servants came into the land of the children of Ammon."
+        },
+        {
+          "ref": "2 Samuel 8:6",
+          "quote": "Then David put garrisons in Syria of Damascus: and the Syrians became servants to David, and brought gifts. And the Lord preserved David whithersoever he went."
+        },
+        {
+          "ref": "2 Samuel 10:19",
+          "quote": "And when all the kings that were servants to Hadarezer saw that they were smitten before Israel, they made peace with Israel, and served them. So the Syrians feared to help the children of Ammon any more."
+        },
+        {
+          "ref": "2 Samuel 9:1",
+          "quote": "And David said, Is there yet any that is left of the house of Saul, that I may shew him kindness for Jonathan's sake?"
+        },
+        {
+          "ref": "2 Samuel 9:6",
+          "quote": "Now when Mephibosheth, the son of Jonathan, the son of Saul, was come unto David, he fell on his face, and did reverence. And David said, Mephibosheth. And he answered, Behold thy servant!"
+        },
+        {
+          "ref": "2 Samuel 9:7",
+          "quote": "And David said unto him, Fear not: for I will surely shew thee kindness for Jonathan thy father's sake, and will restore thee all the land of Saul thy father; and thou shalt eat bread at my table continually."
+        }
+      ]
+    },
+    {
+      "title": "David, Bathsheba and Uriah",
+      "references": [
+        {
+          "reference": "2 Samuel 11:1 - 12:31",
+          "valid": true,
+          "verses": 58
+        },
+        {
+          "reference": "Psalms 51:1-19",
+          "valid": true,
+          "verses": 19
+        },
+        {
+          "reference": "Matthew 1:6",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 11:1",
+          "quote": "And it came to pass, after the year was expired, at the time when kings go forth to battle, that David sent Joab, and his servants with him, and all Israel; and they destroyed the children of Ammon, and besieged Rabbah. But David tarried still at Jerusalem."
+        },
+        {
+          "ref": "2 Samuel 11:3",
+          "quote": "And David sent and enquired after the woman. And one said, Is not this Bathsheba, the daughter of Eliam, the wife of Uriah the Hittite?"
+        },
+        {
+          "ref": "2 Samuel 11:6",
+          "quote": "And David sent to Joab, saying, Send me Uriah the Hittite. And Joab sent Uriah to David."
+        },
+        {
+          "ref": "2 Samuel 11:10",
+          "quote": "And when they had told David, saying, Uriah went not down unto his house, David said unto Uriah, Camest thou not from thy journey? why then didst thou not go down unto thine house?"
+        },
+        {
+          "ref": "2 Samuel 12:15",
+          "quote": "And Nathan departed unto his house. And the Lord struck the child that Uriah's wife bare unto David, and it was very sick."
+        },
+        {
+          "ref": "2 Samuel 12:19",
+          "quote": "But when David saw that his servants whispered, David perceived that the child was dead: therefore David said unto his servants, Is the child dead? And they said, He is dead."
+        },
+        {
+          "ref": "2 Samuel 12:31",
+          "quote": "And he brought forth the people that were therein, and put them under saws, and under harrows of iron, and under axes of iron, and made them pass through the brick-kiln: and thus did he unto all the cities of the children of Ammon. So David and all the people returned unto Jerusalem."
+        }
+      ]
+    },
+    {
+      "title": "Amnon, Tamar and Absalom",
+      "references": [
+        {
+          "reference": "2 Samuel 13:1 - 14:33",
+          "valid": true,
+          "verses": 72
+        },
+        {
+          "reference": "Leviticus 18:9",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 13:1",
+          "quote": "And it came to pass after this, that Absalom the son of David had a fair sister, whose name was Tamar; and Amnon the son of David loved her."
+        },
+        {
+          "ref": "2 Samuel 13:2",
+          "quote": "And Amnon was so vexed, that he fell sick for his sister Tamar; for she was a virgin; and Amnon thought it hard for him to do anything to her."
+        },
+        {
+          "ref": "2 Samuel 13:4",
+          "quote": "And he said unto him, Why art thou, being the king's son, lean from day to day? wilt thou not tell me? And Amnon said unto him, I love Tamar, my brother Absalom's sister."
+        },
+        {
+          "ref": "2 Samuel 14:33",
+          "quote": "So Joab came to the king, and told him: and when he had called for Absalom, he came to the king, and bowed himself on his face to the ground before the king: and the king kissed Absalom."
+        },
+        {
+          "ref": "2 Samuel 13:20",
+          "quote": "And Absalom her brother said unto her, Hath Amnon thy brother been with thee? but hold now thy peace, my sister: he is thy brother; regard not this thing. So Tamar remained desolate in her brother Absalom's house."
+        },
+        {
+          "ref": "2 Samuel 13:22",
+          "quote": "And Absalom spake unto his brother Amnon neither good nor bad: for Absalom hated Amnon, because he had forced his sister Tamar."
+        }
+      ]
+    },
+    {
+      "title": "Absalom's Rebellion",
+      "references": [
+        {
+          "reference": "2 Samuel 15:1 - 19:43",
+          "valid": true,
+          "verses": 165
+        },
+        {
+          "reference": "Psalms 3:1-8",
+          "valid": true,
+          "verses": 8
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 15:1",
+          "quote": "And it came to pass after this, that Absalom prepared him chariots and horses, and fifty men to run before him."
+        },
+        {
+          "ref": "2 Samuel 18:9",
+          "quote": "And Absalom met the servants of David. And Absalom rode upon a mule, and the mule went under the thick boughs of a great oak, and his head caught hold of the oak, and he was taken up between the heaven and the earth; and the mule that was under him went away."
+        },
+        {
+          "ref": "2 Samuel 19:43",
+          "quote": "And the men of Israel answered the men of Judah, and said, We have ten parts in the king, and we have also more right in David than ye: why then did ye despise us, that our advice should not be first had in bringing back our king? And the words of the men of Judah were fiercer than the words of the men of Israel."
+        },
+        {
+          "ref": "2 Samuel 15:12",
+          "quote": "And Absalom sent for Ahithophel the Gilonite, David's counsellor, from his city, even from Giloh, while he offered sacrifices. And the conspiracy was strong; for the people increased continually with Absalom."
+        },
+        {
+          "ref": "2 Samuel 16:16",
+          "quote": "And it came to pass, when Hushai the Archite, David's friend, was come unto Absalom, that Hushai said unto Absalom, God save the king, God save the king."
+        },
+        {
+          "ref": "2 Samuel 18:33",
+          "quote": "And the king was much moved, and went up to the chamber over the gate, and wept: and as he went, thus he said, O my son Absalom, my son, my son Absalom! would God I had died for thee, O Absalom, my son, my son!"
+        },
+        {
+          "ref": "2 Samuel 15:31",
+          "quote": "And one told David, saying, Ahithophel is among the conspirators with Absalom. And David said, O Lord, I pray thee, turn the counsel of Ahithophel into foolishness."
+        }
+      ]
+    },
+    {
+      "title": "Sheba's Revolt and the Gibeonites",
+      "references": [
+        {
+          "reference": "2 Samuel 20:1 - 21:22",
+          "valid": true,
+          "verses": 48
+        },
+        {
+          "reference": "Joshua 9:3-27",
+          "valid": true,
+          "verses": 25
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 20:1",
+          "quote": "And there happened to be there a man of Belial, whose name was Sheba, the son of Bichri, a Benjamite: and he blew a trumpet, and said, We have no part in David, neither have we inheritance in the son of Jesse: every man to his tents, O Israel."
+        },
+        {
+          "ref": "2 Samuel 21:7",
+          "quote": "But the king spared Mephibosheth, the son of Jonathan the son of Saul, because of the Lord's oath that was between them, between David and Jonathan the son of Saul."
+        },
+        {
+          "ref": "2 Samuel 21:8",
+          "quote": "But the king took the two sons of Rizpah the daughter of Aiah, whom she bare unto Saul, Armoni and Mephibosheth; and the five sons of Michal the daughter of Saul, whom she brought up for Adriel the son of Barzillai the Meholathite:"
+        },
+        {
+          "ref": "2 Samuel 21:12",
+          "quote": "And David went and took the bones of Saul and the bones of Jonathan his son from the men of Jabeshgilead, which had stolen them from the street of Bethshan, where the Philistines had hanged them, when the Philistines had slain Saul in Gilboa:"
+        },
+        {
+          "ref": "2 Samuel 21:22",
+          "quote": "These four were born to the giant in Gath, and fell by the hand of David, and by the hand of his servants."
+        },
+        {
+          "ref": "2 Samuel 21:1",
+          "quote": "Then there was a famine in the days of David three years, year after year; and David enquired of the Lord. And the Lord answered, It is for Saul, and for his bloody house, because he slew the Gibeonites."
+        },
+        {
+          "ref": "2 Samuel 21:2",
+          "quote": "And the king called the Gibeonites, and said unto them; (now the Gibeonites were not of the children of Israel, but of the remnant of the Amorites; and the children of Israel had sworn unto them: and Saul sought to slay them in his zeal to the children of Israel and Judah.)"
+        }
+      ]
+    },
+    {
+      "title": "David's Song and Last Words",
+      "references": [
+        {
+          "reference": "2 Samuel 22:1 - 23:39",
+          "valid": true,
+          "verses": 90
+        },
+        {
+          "reference": "Psalms 18:1-50",
+          "valid": true,
+          "verses": 50
+        },
+        {
+          "reference": "1 Chronicles 11:10-47",
+          "valid": true,
+          "verses": 38
+        },
+        {
+          "reference": "2 Samuel 23:8 - 23:23",
+          "valid": true,
+          "verses": 16,
+          "role": "corrected passage"
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 22:1",
+          "quote": "And David spake unto the Lord the words of this song in the day that the Lord had delivered him out of the hand of all his enemies, and out of the hand of Saul:"
+        },
+        {
+          "ref": "2 Samuel 23:15",
+          "quote": "And David longed, and said, Oh that one would give me drink of the water of the well of Bethlehem, which is by the gate!"
+        },
+        {
+          "ref": "2 Samuel 23:16",
+          "quote": "And the three mighty men brake through the host of the Philistines, and drew water out of the well of Bethlehem, that was by the gate, and took it, and brought it to David: nevertheless he would not drink thereof, but poured it out unto the Lord."
+        },
+        {
+          "ref": "2 Samuel 23:1",
+          "quote": "Now these be the last words of David. David the son of Jesse said, and the man who was raised up on high, the anointed of the God of Jacob, and the sweet psalmist of Israel, said,"
+        },
+        {
+          "ref": "2 Samuel 23:39",
+          "quote": "Uriah the Hittite: thirty and seven in all."
+        },
+        {
+          "ref": "2 Samuel 23:8",
+          "quote": "These be the names of the mighty men whom David had: The Tachmonite that sat in the seat, chief among the captains; the same was Adino the Eznite: he lift up his spear against eight hundred, whom he slew at one time."
+        },
+        {
+          "ref": "2 Samuel 23:9",
+          "quote": "And after him was Eleazar the son of Dodo the Ahohite, one of the three mighty men with David, when they defied the Philistines that were there gathered together to battle, and the men of Israel were gone away:"
+        },
+        {
+          "ref": "2 Samuel 23:13",
+          "quote": "And three of the thirty chief went down, and came to David in the harvest time unto the cave of Adullam: and the troop of the Philistines pitched in the valley of Rephaim."
+        },
+        {
+          "ref": "2 Samuel 23:23",
+          "quote": "He was more honourable than the thirty, but he attained not to the first three. And David set him over his guard."
+        },
+        {
+          "ref": "2 Samuel 23:17",
+          "quote": "And he said, Be it far from me, O Lord, that I should do this: is not this the blood of the men that went in jeopardy of their lives? therefore he would not drink it. These things did these three mighty men."
+        },
+        {
+          "ref": "2 Samuel 23:20",
+          "quote": "And Benaiah the son of Jehoiada, the son of a valiant man, of Kabzeel, who had done many acts, he slew two lionlike men of Moab: he went down also and slew a lion in the midst of a pit in time of snow:"
+        },
+        {
+          "ref": "2 Samuel 23:21",
+          "quote": "And he slew an Egyptian, a goodly man: and the Egyptian had a spear in his hand; but he went down to him with a staff, and plucked the spear out of the Egyptian's hand, and slew him with his own spear."
+        }
+      ]
+    },
+    {
+      "title": "The Census and the Plague",
+      "references": [
+        {
+          "reference": "2 Samuel 24:1 - 24:25",
+          "valid": true,
+          "verses": 25
+        },
+        {
+          "reference": "1 Chronicles 21:1-30",
+          "valid": true,
+          "verses": 30
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "2 Samuel 24:1",
+          "quote": "And again the anger of the Lord was kindled against Israel, and he moved David against them to say, Go, number Israel and Judah."
+        },
+        {
+          "ref": "2 Samuel 24:10",
+          "quote": "And David's heart smote him after that he had numbered the people. And David said unto the Lord, I have sinned greatly in that I have done: and now, I beseech thee, O Lord, take away the iniquity of thy servant; for I have done very foolishly."
+        },
+        {
+          "ref": "2 Samuel 24:11",
+          "quote": "For when David was up in the morning, the word of the Lord came unto the prophet Gad, David's seer, saying,"
+        },
+        {
+          "ref": "2 Samuel 24:18",
+          "quote": "And Gad came that day to David, and said unto him, Go up, rear an altar unto the Lord in the threshingfloor of Araunah the Jebusite."
+        },
+        {
+          "ref": "2 Samuel 24:21",
+          "quote": "And Araunah said, Wherefore is my lord the king come to his servant? And David said, To buy the threshingfloor of thee, to build an altar unto the Lord, that the plague may be stayed from the people."
+        },
+        {
+          "ref": "2 Samuel 24:22",
+          "quote": "And Araunah said unto David, Let my lord the king take and offer up what seemeth good unto him: behold, here be oxen for burnt sacrifice, and threshing instruments and other instruments of the oxen for wood."
+        },
+        {
+          "ref": "2 Samuel 24:25",
+          "quote": "And David built there an altar unto the Lord, and offered burnt offerings and peace offerings. So the Lord was intreated for the land, and the plague was stayed from Israel."
+        }
+      ]
+    }
+  ]
+}

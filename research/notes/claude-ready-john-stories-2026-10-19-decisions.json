@@ -1,0 +1,108 @@
+{
+  "batch": "john-stories.json",
+  "draftSha256": "efb36c77fb04f1d2b04a965c6984d3d2d15569d83365c76e18e667ae29f542ba",
+  "decisions": [
+    {
+      "title": "The First Disciples and the Wedding at Cana",
+      "passage": "John 1:35 - 2:12",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Cleansing the Temple and Nicodemus",
+      "passage": "John 2:13 - 3:21",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Woman at the Well",
+      "passage": "John 4:1 - 4:42",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Healing at Bethesda",
+      "passage": "John 5:1 - 5:47",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Bread of Life",
+      "passage": "John 6:1 - 6:71",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Woman Caught in Adultery",
+      "passage": "John 7:53 - 8:11",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Man Born Blind",
+      "passage": "John 9:1 - 9:41",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Good Shepherd",
+      "passage": "John 10:1 - 10:42",
+      "decision": "correct",
+      "reason": "Narrow the standalone good-shepherd discourse to the narrated confrontation at the Feast of Dedication.",
+      "published": {
+        "title": "Jesus at the Feast of Dedication",
+        "passage": "John 10:22 - 10:42",
+        "summary": "At the Feast of Dedication in Jerusalem, Jesus is asked whether he is the Christ. Some take up stones after his answer and try to seize him, but he escapes and goes beyond Jordan, where many believe in him.",
+        "cross_references": [
+          "Ezekiel 34:11-16"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Raising of Lazarus",
+      "passage": "John 11:1 - 11:57",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Anointing and Triumphal Entry",
+      "passage": "John 12:1 - 12:50",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Last Supper Discourse",
+      "passage": "John 13:1 - 17:26",
+      "decision": "correct",
+      "reason": "Keep the narrated foot washing, identification of the betrayer and prediction of Peter’s denial; omit the standalone discourses and prayer in chapters 14–17.",
+      "published": {
+        "title": "Jesus Washes the Disciples' Feet",
+        "passage": "John 13:1 - 13:38",
+        "summary": "During supper Jesus washes his disciples’ feet and tells them to serve one another. He identifies his betrayer with a morsel given to Judas, who leaves, and foretells that Peter will deny him three times.",
+        "cross_references": [
+          "Matthew 26:17-30"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Arrest, Trial and Crucifixion",
+      "passage": "John 18:1 - 19:42",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Resurrection Appearances",
+      "passage": "John 20:1 - 20:31",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Breakfast by the Sea of Tiberias",
+      "passage": "John 21:1 - 21:25",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    }
+  ]
+}

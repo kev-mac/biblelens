@@ -1,0 +1,86 @@
+{
+  "batch": "2-samuel-stories.json",
+  "draftSha256": "85589437a570ff57fc338bd9a973f40aa630f459ed1489e2056df928068d93c9",
+  "decisions": [
+    {
+      "title": "David Becomes King",
+      "passage": "2 Samuel 1:1 - 5:5",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Jerusalem and the Ark",
+      "passage": "2 Samuel 5:6 - 6:23",
+      "decision": "correct",
+      "reason": "Clarify the order: Uzzah dies on the first attempt, followed by the successful transfer.",
+      "published": {
+        "title": "Jerusalem and the Ark",
+        "passage": "2 Samuel 5:6 - 6:23",
+        "summary": "David takes Jerusalem and defeats the Philistines. Uzzah dies touching the ark during an attempted transfer; David later brings it to the city with rejoicing, and Michal scorns his dancing.",
+        "cross_references": [
+          "1 Chronicles 13:1-16:43",
+          "Psalms 132:1-8"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Davidic Covenant",
+      "passage": "2 Samuel 7:1 - 7:29",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "David and Mephibosheth",
+      "passage": "2 Samuel 8:1 - 10:19",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "David, Bathsheba and Uriah",
+      "passage": "2 Samuel 11:1 - 12:31",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Amnon, Tamar and Absalom",
+      "passage": "2 Samuel 13:1 - 14:33",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Absalom's Rebellion",
+      "passage": "2 Samuel 15:1 - 19:43",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Sheba's Revolt and the Gibeonites",
+      "passage": "2 Samuel 20:1 - 21:22",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "David's Song and Last Words",
+      "passage": "2 Samuel 22:1 - 23:39",
+      "decision": "correct",
+      "reason": "Narrow the poetry/list collection to the narrated exploits of the mighty men.",
+      "published": {
+        "title": "The Exploits of David's Mighty Men",
+        "passage": "2 Samuel 23:8 - 23:23",
+        "summary": "The account recalls the deeds of David's mighty men, including three warriors who bring him water from Bethlehem and Benaiah's victories. David refuses to drink the water obtained at such risk and pours it out to the LORD.",
+        "cross_references": [
+          "Psalms 18:1-50",
+          "1 Chronicles 11:10-47"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Census and the Plague",
+      "passage": "2 Samuel 24:1 - 24:25",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    }
+  ]
+}

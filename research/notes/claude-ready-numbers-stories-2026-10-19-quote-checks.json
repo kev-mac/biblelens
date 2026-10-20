@@ -1,0 +1,897 @@
+{
+  "batch": "numbers-stories.json",
+  "draftSha256": "024f17189343e871433c829d6701f5905c68292c5d15f14b751ac22eb67fc8dc",
+  "packagedTextSha256": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+  "checks": [
+    {
+      "title": "Counting the Camp",
+      "references": [
+        {
+          "reference": "Numbers 1:1 - 4:49",
+          "valid": true,
+          "verses": 188
+        },
+        {
+          "reference": "Exodus 38:25-26",
+          "valid": true,
+          "verses": 2
+        },
+        {
+          "reference": "Numbers 26:1-65",
+          "valid": true,
+          "verses": 65
+        },
+        {
+          "reference": "Numbers 1:1 - 1:54",
+          "valid": true,
+          "verses": 54,
+          "role": "corrected passage"
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 1:1",
+          "quote": "And the Lord spake unto Moses in the wilderness of Sinai, in the tabernacle of the congregation, on the first day of the second month, in the second year after they were come out of the land of Egypt, saying,"
+        },
+        {
+          "ref": "Numbers 3:45",
+          "quote": "Take the Levites instead of all the firstborn among the children of Israel, and the cattle of the Levites instead of their cattle; and the Levites shall be mine: I am the Lord."
+        },
+        {
+          "ref": "Numbers 4:37",
+          "quote": "These were they that were numbered of the families of the Kohathites, all that might do service in the tabernacle of the congregation, which Moses and Aaron did number according to the commandment of the Lord by the hand of Moses."
+        },
+        {
+          "ref": "Numbers 3:1",
+          "quote": "These also are the generations of Aaron and Moses in the day that the Lord spake with Moses in mount Sinai."
+        },
+        {
+          "ref": "Numbers 4:49",
+          "quote": "According to the commandment of the Lord they were numbered by the hand of Moses, every one according to his service, and according to his burden: thus were they numbered of him, as the Lord commanded Moses."
+        },
+        {
+          "ref": "Numbers 3:39",
+          "quote": "All that were numbered of the Levites, which Moses and Aaron numbered at the commandment of the Lord, throughout their families, all the males from a month old and upward, were twenty and two thousand."
+        },
+        {
+          "ref": "Numbers 1:2",
+          "quote": "Take ye the sum of all the congregation of the children of Israel, after their families, by the house of their fathers, with the number of their names, every male by their polls;"
+        },
+        {
+          "ref": "Numbers 1:3",
+          "quote": "From twenty years old and upward, all that are able to go forth to war in Israel: thou and Aaron shall number them by their armies."
+        },
+        {
+          "ref": "Numbers 1:51",
+          "quote": "And when the tabernacle setteth forward, the Levites shall take it down: and when the tabernacle is to be pitched, the Levites shall set it up: and the stranger that cometh nigh shall be put to death."
+        },
+        {
+          "ref": "Numbers 1:53",
+          "quote": "But the Levites shall pitch round about the tabernacle of testimony, that there be no wrath upon the congregation of the children of Israel: and the Levites shall keep the charge of the tabernacle of testimony."
+        },
+        {
+          "ref": "Numbers 1:54",
+          "quote": "And the children of Israel did according to all that the Lord commanded Moses, so did they."
+        },
+        {
+          "ref": "Numbers 1:17",
+          "quote": "And Moses and Aaron took these men which are expressed by their names:"
+        },
+        {
+          "ref": "Numbers 1:18",
+          "quote": "And they assembled all the congregation together on the first day of the second month, and they declared their pedigrees after their families, by the house of their fathers, according to the number of the names, from twenty years old and upward, by their polls."
+        },
+        {
+          "ref": "Numbers 1:19",
+          "quote": "As the Lord commanded Moses, so he numbered them in the wilderness of Sinai."
+        },
+        {
+          "ref": "Numbers 1:47",
+          "quote": "But the Levites after the tribe of their fathers were not numbered among them."
+        }
+      ]
+    },
+    {
+      "title": "Purity, Nazirites and the Priestly Blessing",
+      "references": [
+        {
+          "reference": "Numbers 5:1 - 6:27",
+          "valid": true,
+          "verses": 58
+        },
+        {
+          "reference": "Judges 13:5",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Luke 1:15",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 5:1",
+          "quote": "And the Lord spake unto Moses, saying,"
+        },
+        {
+          "ref": "Numbers 5:12",
+          "quote": "Speak unto the children of Israel, and say unto them, If any man's wife go aside, and commit a trespass against him,"
+        },
+        {
+          "ref": "Numbers 5:14",
+          "quote": "And the spirit of jealousy come upon him, and he be jealous of his wife, and she be defiled: or if the spirit of jealousy come upon him, and he be jealous of his wife, and she be not defiled:"
+        },
+        {
+          "ref": "Numbers 5:15",
+          "quote": "Then shall the man bring his wife unto the priest, and he shall bring her offering for her, the tenth part of an ephah of barley meal; he shall pour no oil upon it, nor put frankincense thereon; for it is an offering of jealousy, an offering of memorial, bringing iniquity to remembrance."
+        },
+        {
+          "ref": "Numbers 6:23",
+          "quote": "Speak unto Aaron and unto his sons, saying, On this wise ye shall bless the children of Israel, saying unto them,"
+        },
+        {
+          "ref": "Numbers 6:27",
+          "quote": "And they shall put my name upon the children of Israel, and I will bless them."
+        },
+        {
+          "ref": "Numbers 5:29",
+          "quote": "This is the law of jealousies, when a wife goeth aside to another instead of her husband, and is defiled;"
+        }
+      ]
+    },
+    {
+      "title": "Offerings and the Passover at Sinai",
+      "references": [
+        {
+          "reference": "Numbers 7:1 - 9:23",
+          "valid": true,
+          "verses": 138
+        },
+        {
+          "reference": "Exodus 40:34-38",
+          "valid": true,
+          "verses": 5
+        },
+        {
+          "reference": "1 Corinthians 10:1-2",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 7:1",
+          "quote": "And it came to pass on the day that Moses had fully set up the tabernacle, and had anointed it, and sanctified it, and all the instruments thereof, both the altar and all the vessels thereof, and had anointed them, and sanctified them;"
+        },
+        {
+          "ref": "Numbers 9:15",
+          "quote": "And on the day that the tabernacle was reared up the cloud covered the tabernacle, namely, the tent of the testimony: and at even there was upon the tabernacle as it were the appearance of fire, until the morning."
+        },
+        {
+          "ref": "Numbers 9:17",
+          "quote": "And when the cloud was taken up from the tabernacle, then after that the children of Israel journeyed: and in the place where the cloud abode, there the children of Israel pitched their tents."
+        },
+        {
+          "ref": "Numbers 9:21",
+          "quote": "And so it was, when the cloud abode from even unto the morning, and that the cloud was taken up in the morning, then they journeyed: whether it was by day or by night that the cloud was taken up, they journeyed."
+        },
+        {
+          "ref": "Numbers 9:23",
+          "quote": "At the commandment of the Lord they rested in the tents, and at the commandment of the Lord they journeyed: they kept the charge of the Lord, at the commandment of the Lord by the hand of Moses."
+        },
+        {
+          "ref": "Numbers 8:22",
+          "quote": "And after that went the Levites in to do their service in the tabernacle of the congregation before Aaron, and before his sons: as the Lord had commanded Moses concerning the Levites, so did they unto them."
+        }
+      ]
+    },
+    {
+      "title": "Leaving Sinai and the Complaints",
+      "references": [
+        {
+          "reference": "Numbers 10:11 - 11:35",
+          "valid": true,
+          "verses": 61
+        },
+        {
+          "reference": "Exodus 16:1-36",
+          "valid": true,
+          "verses": 36
+        },
+        {
+          "reference": "Psalms 78:26-31",
+          "valid": true,
+          "verses": 6
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 10:11",
+          "quote": "And it came to pass on the twentieth day of the second month, in the second year, that the cloud was taken up from off the tabernacle of the testimony."
+        },
+        {
+          "ref": "Numbers 11:10",
+          "quote": "Then Moses heard the people weep throughout their families, every man in the door of his tent: and the anger of the Lord was kindled greatly; Moses also was displeased."
+        },
+        {
+          "ref": "Numbers 11:11",
+          "quote": "And Moses said unto the Lord, Wherefore hast thou afflicted thy servant? and wherefore have I not found favour in thy sight, that thou layest the burden of all this people upon me?"
+        },
+        {
+          "ref": "Numbers 11:16",
+          "quote": "And the Lord said unto Moses, Gather unto me seventy men of the elders of Israel, whom thou knowest to be the elders of the people, and officers over them; and bring them unto the tabernacle of the congregation, that they may stand there with thee."
+        },
+        {
+          "ref": "Numbers 11:24",
+          "quote": "And Moses went out, and told the people the words of the Lord, and gathered the seventy men of the elders of the people, and set them round about the tabernacle."
+        },
+        {
+          "ref": "Numbers 11:2",
+          "quote": "And the people cried unto Moses; and when Moses prayed unto the Lord, the fire was quenched."
+        },
+        {
+          "ref": "Numbers 11:35",
+          "quote": "And the people journeyed from Kibrothhattaavah unto Hazeroth; and abode at Hazeroth."
+        }
+      ]
+    },
+    {
+      "title": "Miriam and Aaron Speak Against Moses",
+      "references": [
+        {
+          "reference": "Numbers 12:1 - 12:16",
+          "valid": true,
+          "verses": 16
+        },
+        {
+          "reference": "Deuteronomy 24:9",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Micah 6:4",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 12:1",
+          "quote": "And Miriam and Aaron spake against Moses because of the Ethiopian woman whom he had married: for he had married an Ethiopian woman."
+        },
+        {
+          "ref": "Numbers 12:4",
+          "quote": "And the Lord spake suddenly unto Moses, and unto Aaron, and unto Miriam, Come out ye three unto the tabernacle of the congregation. And they three came out."
+        },
+        {
+          "ref": "Numbers 12:10",
+          "quote": "And the cloud departed from off the tabernacle; and, behold, Miriam became leprous, white as snow: and Aaron looked upon Miriam, and, behold, she was leprous."
+        },
+        {
+          "ref": "Numbers 12:14",
+          "quote": "And the Lord said unto Moses, If her father had but spit in her face, should she not be ashamed seven days? let her be shut out from the camp seven days, and after that let her be received in again."
+        },
+        {
+          "ref": "Numbers 12:15",
+          "quote": "And Miriam was shut out from the camp seven days: and the people journeyed not till Miriam was brought in again."
+        },
+        {
+          "ref": "Numbers 12:16",
+          "quote": "And afterward the people removed from Hazeroth, and pitched in the wilderness of Paran."
+        }
+      ]
+    },
+    {
+      "title": "The Twelve Spies",
+      "references": [
+        {
+          "reference": "Numbers 13:1 - 14:45",
+          "valid": true,
+          "verses": 78
+        },
+        {
+          "reference": "Deuteronomy 1:19-40",
+          "valid": true,
+          "verses": 22
+        },
+        {
+          "reference": "Hebrews 3:16-19",
+          "valid": true,
+          "verses": 4
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 13:1",
+          "quote": "And the Lord spake unto Moses, saying,"
+        },
+        {
+          "ref": "Numbers 14:33",
+          "quote": "And your children shall wander in the wilderness forty years, and bear your whoredoms, until your carcases be wasted in the wilderness."
+        },
+        {
+          "ref": "Numbers 14:45",
+          "quote": "Then the Amalekites came down, and the Canaanites which dwelt in that hill, and smote them, and discomfited them, even unto Hormah."
+        },
+        {
+          "ref": "Numbers 13:18",
+          "quote": "And see the land, what it is, and the people that dwelleth therein, whether they be strong or weak, few or many;"
+        },
+        {
+          "ref": "Numbers 14:19",
+          "quote": "Pardon, I beseech thee, the iniquity of this people according unto the greatness of thy mercy, and as thou hast forgiven this people, from Egypt even until now."
+        },
+        {
+          "ref": "Numbers 13:28",
+          "quote": "Nevertheless the people be strong that dwell in the land, and the cities are walled, and very great: and moreover we saw the children of Anak there."
+        },
+        {
+          "ref": "Numbers 13:30",
+          "quote": "And Caleb stilled the people before Moses, and said, Let us go up at once, and possess it; for we are well able to overcome it."
+        }
+      ]
+    },
+    {
+      "title": "Korah's Rebellion",
+      "references": [
+        {
+          "reference": "Numbers 16:1 - 17:13",
+          "valid": true,
+          "verses": 63
+        },
+        {
+          "reference": "Jude 1:11",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Numbers 26:9-11",
+          "valid": true,
+          "verses": 3
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 16:1",
+          "quote": "Now Korah, the son of Izhar, the son of Kohath, the son of Levi, and Dathan and Abiram, the sons of Eliab, and On, the son of Peleth, sons of Reuben, took men:"
+        },
+        {
+          "ref": "Numbers 16:40",
+          "quote": "To be a memorial unto the children of Israel, that no stranger, which is not of the seed of Aaron, come near to offer incense before the Lord; that he be not as Korah, and as his company: as the Lord said to him by the hand of Moses."
+        },
+        {
+          "ref": "Numbers 16:46",
+          "quote": "And Moses said unto Aaron, Take a censer, and put fire therein from off the altar, and put on incense, and go quickly unto the congregation, and make an atonement for them: for there is wrath gone out from the Lord; the plague is begun."
+        },
+        {
+          "ref": "Numbers 16:16",
+          "quote": "And Moses said unto Korah, Be thou and all thy company before the Lord, thou, and they, and Aaron, to morrow:"
+        },
+        {
+          "ref": "Numbers 16:18",
+          "quote": "And they took every man his censer, and put fire in them, and laid incense thereon, and stood in the door of the tabernacle of the congregation with Moses and Aaron."
+        },
+        {
+          "ref": "Numbers 16:27",
+          "quote": "So they gat up from the tabernacle of Korah, Dathan, and Abiram, on every side: and Dathan and Abiram came out, and stood in the door of their tents, and their wives, and their sons, and their little children."
+        },
+        {
+          "ref": "Numbers 17:13",
+          "quote": "Whosoever cometh any thing near unto the tabernacle of the Lord shall die: shall we be consumed with dying?"
+        }
+      ]
+    },
+    {
+      "title": "Water from the Rock at Meribah",
+      "references": [
+        {
+          "reference": "Numbers 20:1 - 20:13",
+          "valid": true,
+          "verses": 13
+        },
+        {
+          "reference": "Exodus 17:1-7",
+          "valid": true,
+          "verses": 7
+        },
+        {
+          "reference": "Psalms 106:32-33",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 20:1",
+          "quote": "Then came the children of Israel, even the whole congregation, into the desert of Zin in the first month: and the people abode in Kadesh; and Miriam died there, and was buried there."
+        },
+        {
+          "ref": "Numbers 20:2",
+          "quote": "And there was no water for the congregation: and they gathered themselves together against Moses and against Aaron."
+        },
+        {
+          "ref": "Numbers 20:3",
+          "quote": "And the people chode with Moses, and spake, saying, Would God that we had died when our brethren died before the Lord!"
+        },
+        {
+          "ref": "Numbers 20:8",
+          "quote": "Take the rod, and gather thou the assembly together, thou, and Aaron thy brother, and speak ye unto the rock before their eyes; and it shall give forth his water, and thou shalt bring forth to them water out of the rock: so thou shalt give the congregation and their beasts drink."
+        },
+        {
+          "ref": "Numbers 20:10",
+          "quote": "And Moses and Aaron gathered the congregation together before the rock, and he said unto them, Hear now, ye rebels; must we fetch you water out of this rock?"
+        },
+        {
+          "ref": "Numbers 20:11",
+          "quote": "And Moses lifted up his hand, and with his rod he smote the rock twice: and the water came out abundantly, and the congregation drank, and their beasts also."
+        },
+        {
+          "ref": "Numbers 20:13",
+          "quote": "This is the water of Meribah; because the children of Israel strove with the Lord, and he was sanctified in them."
+        }
+      ]
+    },
+    {
+      "title": "Edom Refuses Passage and Aaron Dies",
+      "references": [
+        {
+          "reference": "Numbers 20:14 - 20:29",
+          "valid": true,
+          "verses": 16
+        },
+        {
+          "reference": "Deuteronomy 10:6",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Judges 11:17",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 20:14",
+          "quote": "And Moses sent messengers from Kadesh unto the king of Edom, Thus saith thy brother Israel, Thou knowest all the travail that hath befallen us:"
+        },
+        {
+          "ref": "Numbers 20:17",
+          "quote": "Let us pass, I pray thee, through thy country: we will not pass through the fields, or through the vineyards, neither will we drink of the water of the wells: we will go by the king's high way, we will not turn to the right hand nor to the left, until we have passed thy borders."
+        },
+        {
+          "ref": "Numbers 20:23",
+          "quote": "And the Lord spake unto Moses and Aaron in mount Hor, by the coast of the land of Edom, saying,"
+        },
+        {
+          "ref": "Numbers 20:25",
+          "quote": "Take Aaron and Eleazar his son, and bring them up unto mount Hor:"
+        },
+        {
+          "ref": "Numbers 20:26",
+          "quote": "And strip Aaron of his garments, and put them upon Eleazar his son: and Aaron shall be gathered unto his people, and shall die there."
+        },
+        {
+          "ref": "Numbers 20:28",
+          "quote": "And Moses stripped Aaron of his garments, and put them upon Eleazar his son; and Aaron died there in the top of the mount: and Moses and Eleazar came down from the mount."
+        },
+        {
+          "ref": "Numbers 20:29",
+          "quote": "And when all the congregation saw that Aaron was dead, they mourned for Aaron thirty days, even all the house of Israel."
+        }
+      ]
+    },
+    {
+      "title": "The Bronze Serpent",
+      "references": [
+        {
+          "reference": "Numbers 21:4 - 21:9",
+          "valid": true,
+          "verses": 6
+        },
+        {
+          "reference": "John 3:14-15",
+          "valid": true,
+          "verses": 2
+        },
+        {
+          "reference": "2 Kings 18:4",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 21:4",
+          "quote": "And they journeyed from mount Hor by the way of the Red sea, to compass the land of Edom: and the soul of the people was much discouraged because of the way."
+        },
+        {
+          "ref": "Numbers 21:5",
+          "quote": "And the people spake against God, and against Moses, Wherefore have ye brought us up out of Egypt to die in the wilderness? for there is no bread, neither is there any water; and our soul loatheth this light bread."
+        },
+        {
+          "ref": "Numbers 21:6",
+          "quote": "And the Lord sent fiery serpents among the people, and they bit the people; and much people of Israel died."
+        },
+        {
+          "ref": "Numbers 21:7",
+          "quote": "Therefore the people came to Moses, and said, We have sinned, for we have spoken against the Lord, and against thee; pray unto the Lord, that he take away the serpents from us. And Moses prayed for the people."
+        },
+        {
+          "ref": "Numbers 21:8",
+          "quote": "And the Lord said unto Moses, Make thee a fiery serpent, and set it upon a pole: and it shall come to pass, that every one that is bitten, when he looketh upon it, shall live."
+        },
+        {
+          "ref": "Numbers 21:9",
+          "quote": "And Moses made a serpent of brass, and put it upon a pole, and it came to pass, that if a serpent had bitten any man, when he beheld the serpent of brass, he lived."
+        }
+      ]
+    },
+    {
+      "title": "Victories over Sihon and Og",
+      "references": [
+        {
+          "reference": "Numbers 21:10 - 21:35",
+          "valid": true,
+          "verses": 26
+        },
+        {
+          "reference": "Deuteronomy 2:26-3:11",
+          "valid": true,
+          "verses": 23
+        },
+        {
+          "reference": "Psalms 136:17-22",
+          "valid": true,
+          "verses": 6
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 21:10",
+          "quote": "And the children of Israel set forward, and pitched in Oboth."
+        },
+        {
+          "ref": "Numbers 21:13",
+          "quote": "From thence they removed, and pitched on the other side of Arnon, which is in the wilderness that cometh out of the coasts of the Amorites: for Arnon is the border of Moab, between Moab and the Amorites."
+        },
+        {
+          "ref": "Numbers 21:21",
+          "quote": "And Israel sent messengers unto Sihon king of the Amorites, saying,"
+        },
+        {
+          "ref": "Numbers 21:23",
+          "quote": "And Sihon would not suffer Israel to pass through his border: but Sihon gathered all his people together, and went out against Israel into the wilderness: and he came to Jahaz, and fought against Israel."
+        },
+        {
+          "ref": "Numbers 21:26",
+          "quote": "For Heshbon was the city of Sihon the king of the Amorites, who had fought against the former king of Moab, and taken all his land out of his hand, even unto Arnon."
+        },
+        {
+          "ref": "Numbers 21:29",
+          "quote": "Woe to thee, Moab! thou art undone, O people of Chemosh: he hath given his sons that escaped, and his daughters, into captivity unto Sihon king of the Amorites."
+        },
+        {
+          "ref": "Numbers 21:35",
+          "quote": "So they smote him, and his sons, and all his people, until there was none left him alive: and they possessed his land."
+        }
+      ]
+    },
+    {
+      "title": "Balaam and Balak",
+      "references": [
+        {
+          "reference": "Numbers 22:1 - 24:25",
+          "valid": true,
+          "verses": 96
+        },
+        {
+          "reference": "2 Peter 2:15-16",
+          "valid": true,
+          "verses": 2
+        },
+        {
+          "reference": "Revelation 2:14",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Micah 6:5",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 22:1",
+          "quote": "And the children of Israel set forward, and pitched in the plains of Moab on this side Jordan by Jericho."
+        },
+        {
+          "ref": "Numbers 22:35",
+          "quote": "And the angel of the Lord said unto Balaam, Go with the men: but only the word that I shall speak unto thee, that thou shalt speak. So Balaam went with the princes of Balak."
+        },
+        {
+          "ref": "Numbers 22:7",
+          "quote": "And the elders of Moab and the elders of Midian departed with the rewards of divination in their hand; and they came unto Balaam, and spake unto him the words of Balak."
+        },
+        {
+          "ref": "Numbers 23:2",
+          "quote": "And Balak did as Balaam had spoken; and Balak and Balaam offered on every altar a bullock and a ram."
+        },
+        {
+          "ref": "Numbers 24:10",
+          "quote": "And Balak's anger was kindled against Balaam, and he smote his hands together: and Balak said unto Balaam, I called thee to curse mine enemies, and, behold, thou hast altogether blessed them these three times."
+        },
+        {
+          "ref": "Numbers 22:27",
+          "quote": "And when the ass saw the angel of the Lord, she fell down under Balaam: and Balaam's anger was kindled, and he smote the ass with a staff."
+        },
+        {
+          "ref": "Numbers 24:25",
+          "quote": "And Balaam rose up, and went and returned to his place: and Balak also went his way."
+        }
+      ]
+    },
+    {
+      "title": "Baal of Peor",
+      "references": [
+        {
+          "reference": "Numbers 25:1 - 25:18",
+          "valid": true,
+          "verses": 18
+        },
+        {
+          "reference": "Psalms 106:28-31",
+          "valid": true,
+          "verses": 4
+        },
+        {
+          "reference": "1 Corinthians 10:8",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 25:1",
+          "quote": "And Israel abode in Shittim, and the people began to commit whoredom with the daughters of Moab."
+        },
+        {
+          "ref": "Numbers 25:6",
+          "quote": "And, behold, one of the children of Israel came and brought unto his brethren a Midianitish woman in the sight of Moses, and in the sight of all the congregation of the children of Israel, who were weeping before the door of the tabernacle of the congregation."
+        },
+        {
+          "ref": "Numbers 25:8",
+          "quote": "And he went after the man of Israel into the tent, and thrust both of them through, the man of Israel, and the woman through her belly. So the plague was stayed from the children of Israel."
+        },
+        {
+          "ref": "Numbers 25:9",
+          "quote": "And those that died in the plague were twenty and four thousand."
+        },
+        {
+          "ref": "Numbers 25:12",
+          "quote": "Wherefore say, Behold, I give unto him my covenant of peace:"
+        },
+        {
+          "ref": "Numbers 25:18",
+          "quote": "For they vex you with their wiles, wherewith they have beguiled you in the matter of Peor, and in the matter of Cozbi, the daughter of a prince of Midian, their sister, which was slain in the day of the plague for Peor's sake."
+        }
+      ]
+    },
+    {
+      "title": "A New Census and Joshua Appointed",
+      "references": [
+        {
+          "reference": "Numbers 26:1 - 27:23",
+          "valid": true,
+          "verses": 88
+        },
+        {
+          "reference": "Numbers 36:1-12",
+          "valid": true,
+          "verses": 12
+        },
+        {
+          "reference": "Joshua 17:3-6",
+          "valid": true,
+          "verses": 4
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 26:1",
+          "quote": "And it came to pass after the plague, that the Lord spake unto Moses and unto Eleazar the son of Aaron the priest, saying,"
+        },
+        {
+          "ref": "Numbers 27:1",
+          "quote": "Then came the daughters of Zelophehad, the son of Hepher, the son of Gilead, the son of Machir, the son of Manasseh, of the families of Manasseh the son of Joseph: and these are the names of his daughters; Mahlah, Noah, and Hoglah, and Milcah, and Tirzah."
+        },
+        {
+          "ref": "Numbers 26:33",
+          "quote": "And Zelophehad the son of Hepher had no sons, but daughters: and the names of the daughters of Zelophehad were Mahlah, and Noah, Hoglah, Milcah, and Tirzah."
+        },
+        {
+          "ref": "Numbers 27:7",
+          "quote": "The daughters of Zelophehad speak right: thou shalt surely give them a possession of an inheritance among their father's brethren; and thou shalt cause the inheritance of their father to pass unto them."
+        },
+        {
+          "ref": "Numbers 27:18",
+          "quote": "And the Lord said unto Moses, Take thee Joshua the son of Nun, a man in whom is the spirit, and lay thine hand upon him;"
+        },
+        {
+          "ref": "Numbers 27:22",
+          "quote": "And Moses did as the Lord commanded him: and he took Joshua, and set him before Eleazar the priest, and before all the congregation:"
+        },
+        {
+          "ref": "Numbers 27:23",
+          "quote": "And he laid his hands upon him, and gave him a charge, as the Lord commanded by the hand of Moses."
+        }
+      ]
+    },
+    {
+      "title": "Vengeance on Midian",
+      "references": [
+        {
+          "reference": "Numbers 31:1 - 31:54",
+          "valid": true,
+          "verses": 54
+        },
+        {
+          "reference": "Numbers 25:16-18",
+          "valid": true,
+          "verses": 3
+        },
+        {
+          "reference": "Judges 6:1-6",
+          "valid": true,
+          "verses": 6
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 31:1",
+          "quote": "And the Lord spake unto Moses, saying,"
+        },
+        {
+          "ref": "Numbers 31:3",
+          "quote": "And Moses spake unto the people, saying, Arm some of yourselves unto the war, and let them go against the Midianites, and avenge the Lord of Midian."
+        },
+        {
+          "ref": "Numbers 31:8",
+          "quote": "And they slew the kings of Midian, beside the rest of them that were slain; namely, Evi, and Rekem, and Zur, and Hur, and Reba, five kings of Midian: Balaam also the son of Beor they slew with the sword."
+        },
+        {
+          "ref": "Numbers 31:41",
+          "quote": "And Moses gave the tribute, which was the Lord'S heave offering, unto Eleazar the priest, as the Lord commanded Moses."
+        },
+        {
+          "ref": "Numbers 31:9",
+          "quote": "And the children of Israel took all the women of Midian captives, and their little ones, and took the spoil of all their cattle, and all their flocks, and all their goods."
+        },
+        {
+          "ref": "Numbers 31:14",
+          "quote": "And Moses was wroth with the officers of the host, with the captains over thousands, and captains over hundreds, which came from the battle."
+        },
+        {
+          "ref": "Numbers 31:54",
+          "quote": "And Moses and Eleazar the priest took the gold of the captains of thousands and of hundreds, and brought it into the tabernacle of the congregation, for a memorial for the children of Israel before the Lord."
+        }
+      ]
+    },
+    {
+      "title": "Tribes Settle East of the Jordan",
+      "references": [
+        {
+          "reference": "Numbers 32:1 - 32:42",
+          "valid": true,
+          "verses": 42
+        },
+        {
+          "reference": "Joshua 22:1-9",
+          "valid": true,
+          "verses": 9
+        },
+        {
+          "reference": "Deuteronomy 3:12-20",
+          "valid": true,
+          "verses": 9
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 32:1",
+          "quote": "Now the children of Reuben and the children of Gad had a very great multitude of cattle: and when they saw the land of Jazer, and the land of Gilead, that, behold, the place was a place for cattle;"
+        },
+        {
+          "ref": "Numbers 32:33",
+          "quote": "And Moses gave unto them, even to the children of Gad, and to the children of Reuben, and unto half the tribe of Manasseh the son of Joseph, the kingdom of Sihon king of the Amorites, and the kingdom of Og king of Bashan, the land, with the cities thereof in the coasts, even the cities of the country round about."
+        },
+        {
+          "ref": "Numbers 32:2",
+          "quote": "The children of Gad and the children of Reuben came and spake unto Moses, and to Eleazar the priest, and unto the princes of the congregation, saying,"
+        },
+        {
+          "ref": "Numbers 32:5",
+          "quote": "Wherefore, said they, if we have found grace in thy sight, let this land be given unto thy servants for a possession, and bring us not over Jordan."
+        },
+        {
+          "ref": "Numbers 32:42",
+          "quote": "And Nobah went and took Kenath, and the villages thereof, and called it Nobah, after his own name."
+        },
+        {
+          "ref": "Numbers 32:29",
+          "quote": "And Moses said unto them, If the children of Gad and the children of Reuben will pass with you over Jordan, every man armed to battle, before the Lord, and the land shall be subdued before you; then ye shall give them the land of Gilead for a possession:"
+        }
+      ]
+    },
+    {
+      "title": "Borders, Levitical Cities and Cities of Refuge",
+      "references": [
+        {
+          "reference": "Numbers 33:50 - 35:34",
+          "valid": true,
+          "verses": 70
+        },
+        {
+          "reference": "Joshua 20:1-9",
+          "valid": true,
+          "verses": 9
+        },
+        {
+          "reference": "Deuteronomy 19:1-13",
+          "valid": true,
+          "verses": 13
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Numbers 33:50",
+          "quote": "And the Lord spake unto Moses in the plains of Moab by Jordan near Jericho, saying,"
+        },
+        {
+          "ref": "Numbers 35:34",
+          "quote": "Defile not therefore the land which ye shall inhabit, wherein I dwell: for I the Lord dwell among the children of Israel."
+        },
+        {
+          "ref": "Numbers 35:2",
+          "quote": "Command the children of Israel, that they give unto the Levites of the inheritance of their possession cities to dwell in; and ye shall give also unto the Levites suburbs for the cities round about them."
+        },
+        {
+          "ref": "Numbers 35:6",
+          "quote": "And among the cities which ye shall give unto the Levites there shall be six cities for refuge, which ye shall appoint for the manslayer, that he may flee thither: and to them ye shall add forty and two cities."
+        },
+        {
+          "ref": "Numbers 35:7",
+          "quote": "So all the cities which ye shall give to the Levites shall be forty and eight cities: them shall ye give with their suburbs."
+        },
+        {
+          "ref": "Numbers 35:8",
+          "quote": "And the cities which ye shall give shall be of the possession of the children of Israel: from them that have many ye shall give many; but from them that have few ye shall give few: every one shall give of his cities unto the Levites according to his inheritance which he inheriteth."
+        },
+        {
+          "ref": "Numbers 35:14",
+          "quote": "Ye shall give three cities on this side Jordan, and three cities shall ye give in the land of Canaan, which shall be cities of refuge."
+        }
+      ]
+    }
+  ]
+}

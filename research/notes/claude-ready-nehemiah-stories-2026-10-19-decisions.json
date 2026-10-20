@@ -1,0 +1,75 @@
+{
+  "batch": "nehemiah-stories.json",
+  "draftSha256": "37202a2e805789ca45921df1a7cdc78c7c4bceab154099ec2e037c7b010c4707",
+  "decisions": [
+    {
+      "title": "Nehemiah's Prayer and Commission",
+      "passage": "Nehemiah 1:1 - 2:10",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Rebuilding the Wall",
+      "passage": "Nehemiah 2:11 - 4:23",
+      "decision": "correct",
+      "reason": "Distinguish Nehemiah’s servants from all builders: half his servants guard while the builders work armed (4:16–18).",
+      "published": {
+        "title": "Rebuilding the Wall",
+        "passage": "Nehemiah 2:11 - 4:23",
+        "summary": "Nehemiah inspects the ruined wall by night and organizes the people to rebuild. Sanballat and Tobiah mock and plot, so Nehemiah assigns guards while the builders work armed.",
+        "cross_references": [
+          "Ezra 4:1-24"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Debt Relief",
+      "passage": "Nehemiah 5:1 - 5:19",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Wall Completed",
+      "passage": "Nehemiah 6:1 - 7:73",
+      "decision": "correct",
+      "reason": "Keep the plots, completion of the wall and recovery of the register, without the long register itself.",
+      "published": {
+        "title": "The Wall Completed",
+        "passage": "Nehemiah 6:1 - 7:5",
+        "summary": "Plots against Nehemiah fail, and the wall is finished in fifty-two days. A register of those who returned is recovered.",
+        "cross_references": [
+          "Ezra 2:1-70"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Ezra Reads the Law",
+      "passage": "Nehemiah 8:1 - 9:38",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Covenant and Dedication of the Wall",
+      "passage": "Nehemiah 10:1 - 12:47",
+      "decision": "correct",
+      "reason": "Narrow the covenant, resettlement and personnel lists to the actual wall dedication.",
+      "published": {
+        "title": "The Dedication of Jerusalem’s Wall",
+        "passage": "Nehemiah 12:27 - 12:43",
+        "summary": "The Levites and singers gather for the dedication of Jerusalem’s wall. Two companies give thanks as they proceed along the wall and meet at the house of God; sacrifices and rejoicing follow.",
+        "cross_references": [
+          "Ezra 10:1-5"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Nehemiah's Reforms",
+      "passage": "Nehemiah 13:1 - 13:31",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    }
+  ]
+}

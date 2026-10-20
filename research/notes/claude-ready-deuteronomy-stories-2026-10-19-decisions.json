@@ -1,0 +1,116 @@
+{
+  "batch": "deuteronomy-stories.json",
+  "draftSha256": "806263c24323ce27dd546340434561c3b38f1d742ba2452ae179a64c89b29010",
+  "decisions": [
+    {
+      "title": "Moses Recalls the Wilderness Years",
+      "passage": "Deuteronomy 1:1 - 3:29",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Call to Obey the Law",
+      "passage": "Deuteronomy 4:1 - 4:49",
+      "decision": "correct",
+      "reason": "Retain only the narrated setting apart of the three eastern cities.",
+      "published": {
+        "title": "Moses Sets Apart Three Cities of Refuge",
+        "passage": "Deuteronomy 4:41 - 4:43",
+        "summary": "Moses sets apart Bezer, Ramoth and Golan east of the Jordan as cities where someone who kills a neighbor unintentionally, without prior hatred, may flee and live.",
+        "cross_references": [
+          "Exodus 20:4-6",
+          "Romans 3:1-2"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Ten Commandments and the Shema",
+      "passage": "Deuteronomy 5:1 - 6:25",
+      "decision": "hold",
+      "reason": "Restated commandments and teaching. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Driving Out the Nations",
+      "passage": "Deuteronomy 7:1 - 9:29",
+      "decision": "correct",
+      "reason": "Narrow the instruction block to Moses’s explicit retrospective account of the golden calf and intercession.",
+      "published": {
+        "title": "Moses Recalls the Golden Calf",
+        "passage": "Deuteronomy 9:7 - 9:29",
+        "summary": "Moses recalls receiving the stone tablets at Horeb, finding Israel worshiping a molten calf, and breaking the tablets. He recounts destroying the calf and interceding for Israel and Aaron after the LORD threatened destruction.",
+        "cross_references": [
+          "Exodus 32:1-35",
+          "Matthew 4:1-4"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Second Tablets and the Choice",
+      "passage": "Deuteronomy 10:1 - 11:32",
+      "decision": "correct",
+      "reason": "Keep the narrated replacement tablets and ark; omit the ensuing exhortation.",
+      "published": {
+        "title": "Moses Recalls the Second Tablets",
+        "passage": "Deuteronomy 10:1 - 10:11",
+        "summary": "Moses recalls making an ark and two stone tablets, going up the mountain, and placing the tablets written by the LORD inside the ark. He also recalls his intercession and the command to lead the people onward.",
+        "cross_references": [
+          "Exodus 34:1-4",
+          "Joshua 8:30-35"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Laws for Life in the Land",
+      "passage": "Deuteronomy 12:1 - 26:19",
+      "decision": "hold",
+      "reason": "A long law collection. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Blessings and Curses of the Covenant",
+      "passage": "Deuteronomy 27:1 - 28:68",
+      "decision": "hold",
+      "reason": "Instructions and covenant sanctions. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Renewal of the Covenant in Moab",
+      "passage": "Deuteronomy 29:1 - 30:20",
+      "decision": "hold",
+      "reason": "Covenant exhortation and promises rather than a discrete narrated episode. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Joshua Commissioned and the Song of Moses",
+      "passage": "Deuteronomy 31:1 - 32:52",
+      "decision": "correct",
+      "reason": "Keep the commissioning, delivery of the law and writing of the song; omit the song’s long poetic text.",
+      "published": {
+        "title": "Joshua Commissioned and the Law Entrusted",
+        "passage": "Deuteronomy 31:1 - 31:30",
+        "summary": "Moses tells Israel that Joshua will lead them across the Jordan and encourages Joshua before the people. He delivers the written law to the priests, appears with Joshua at the tabernacle, and writes and teaches a song as a witness for Israel.",
+        "cross_references": [
+          "Hebrews 13:5",
+          "Romans 10:19"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Moses Blesses the Tribes and Dies",
+      "passage": "Deuteronomy 33:1 - 34:12",
+      "decision": "correct",
+      "reason": "Narrow to the death and succession narrative; omit the poetic tribal blessings.",
+      "published": {
+        "title": "The Death of Moses",
+        "passage": "Deuteronomy 34:1 - 34:12",
+        "summary": "Moses climbs Mount Nebo, sees the promised land, and dies at 120 in Moab. Israel mourns thirty days, and Joshua, filled with the spirit of wisdom, succeeds him.",
+        "cross_references": [
+          "Genesis 49:1-28",
+          "Jude 1:9"
+        ],
+        "topics": []
+      }
+    }
+  ]
+}

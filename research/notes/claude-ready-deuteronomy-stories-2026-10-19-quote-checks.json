@@ -1,0 +1,591 @@
+{
+  "batch": "deuteronomy-stories.json",
+  "draftSha256": "806263c24323ce27dd546340434561c3b38f1d742ba2452ae179a64c89b29010",
+  "packagedTextSha256": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+  "checks": [
+    {
+      "title": "Moses Recalls the Wilderness Years",
+      "references": [
+        {
+          "reference": "Deuteronomy 1:1 - 3:29",
+          "valid": true,
+          "verses": 112
+        },
+        {
+          "reference": "Numbers 13:1-14:45",
+          "valid": true,
+          "verses": 78
+        },
+        {
+          "reference": "Hebrews 3:7-11",
+          "valid": true,
+          "verses": 5
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 1:1",
+          "quote": "These be the words which Moses spake unto all Israel on this side Jordan in the wilderness, in the plain over against the Red sea, between Paran, and Tophel, and Laban, and Hazeroth, and Dizahab."
+        },
+        {
+          "ref": "Deuteronomy 1:5",
+          "quote": "On this side Jordan, in the land of Moab, began Moses to declare this law, saying,"
+        },
+        {
+          "ref": "Deuteronomy 1:8",
+          "quote": "Behold, I have set the land before you: go in and possess the land which the Lord sware unto your fathers, Abraham, Isaac, and Jacob, to give unto them and to their seed after them."
+        },
+        {
+          "ref": "Deuteronomy 2:31",
+          "quote": "And the Lord said unto me, Behold, I have begun to give Sihon and his land before thee: begin to possess, that thou mayest inherit his land."
+        },
+        {
+          "ref": "Deuteronomy 3:29",
+          "quote": "So we abode in the valley over against Bethpeor."
+        },
+        {
+          "ref": "Deuteronomy 2:7",
+          "quote": "For the Lord thy God hath blessed thee in all the works of thy hand: he knoweth thy walking through this great wilderness: these forty years the Lord thy God hath been with thee; thou hast lacked nothing."
+        },
+        {
+          "ref": "Deuteronomy 1:25",
+          "quote": "And they took of the fruit of the land in their hands, and brought it down unto us, and brought us word again, and said, It is a good land which the Lord our God doth give us."
+        }
+      ]
+    },
+    {
+      "title": "Call to Obey the Law",
+      "references": [
+        {
+          "reference": "Deuteronomy 4:1 - 4:49",
+          "valid": true,
+          "verses": 49
+        },
+        {
+          "reference": "Exodus 20:4-6",
+          "valid": true,
+          "verses": 3
+        },
+        {
+          "reference": "Romans 3:1-2",
+          "valid": true,
+          "verses": 2
+        },
+        {
+          "reference": "Deuteronomy 4:41 - 4:43",
+          "valid": true,
+          "verses": 3,
+          "role": "corrected passage"
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 4:1",
+          "quote": "Now therefore hearken, O Israel, unto the statutes and unto the judgments, which I teach you, for to do them, that ye may live, and go in and possess the land which the Lord God of your fathers giveth you."
+        },
+        {
+          "ref": "Deuteronomy 4:41",
+          "quote": "Then Moses severed three cities on this side Jordan toward the sunrising;"
+        },
+        {
+          "ref": "Deuteronomy 4:42",
+          "quote": "That the slayer might flee thither, which should kill his neighbour unawares, and hated him not in times past; and that fleeing unto one of these cities he might live:"
+        },
+        {
+          "ref": "Deuteronomy 4:43",
+          "quote": "Namely, Bezer in the wilderness, in the plain country, of the Reubenites; and Ramoth in Gilead, of the Gadites; and Golan in Bashan, of the Manassites."
+        },
+        {
+          "ref": "Deuteronomy 4:46",
+          "quote": "On this side Jordan, in the valley over against Bethpeor, in the land of Sihon king of the Amorites, who dwelt at Heshbon, whom Moses and the children of Israel smote, after they were come forth out of Egypt:"
+        },
+        {
+          "ref": "Deuteronomy 4:49",
+          "quote": "And all the plain on this side Jordan eastward, even unto the sea of the plain, under the springs of Pisgah."
+        }
+      ]
+    },
+    {
+      "title": "The Ten Commandments and the Shema",
+      "references": [
+        {
+          "reference": "Deuteronomy 5:1 - 6:25",
+          "valid": true,
+          "verses": 58
+        },
+        {
+          "reference": "Exodus 20:1-17",
+          "valid": true,
+          "verses": 17
+        },
+        {
+          "reference": "Mark 12:28-31",
+          "valid": true,
+          "verses": 4
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 5:1",
+          "quote": "And Moses called all Israel, and said unto them, Hear, O Israel, the statutes and judgments which I speak in your ears this day, that ye may learn them, and keep, and do them."
+        },
+        {
+          "ref": "Deuteronomy 6:1",
+          "quote": "Now these are the commandments, the statutes, and the judgments, which the Lord your God commanded to teach you, that ye might do them in the land whither ye go to possess it:"
+        },
+        {
+          "ref": "Deuteronomy 6:5",
+          "quote": "And thou shalt love the Lord thy God with all thine heart, and with all thy soul, and with all thy might."
+        },
+        {
+          "ref": "Deuteronomy 5:10",
+          "quote": "And shewing mercy unto thousands of them that love me and keep my commandments."
+        },
+        {
+          "ref": "Deuteronomy 6:25",
+          "quote": "And it shall be our righteousness, if we observe to do all these commandments before the Lord our God, as he hath commanded us."
+        },
+        {
+          "ref": "Deuteronomy 5:28",
+          "quote": "And the Lord heard the voice of your words, when ye spake unto me; and the Lord said unto me, I have heard the voice of the words of this people, which they have spoken unto thee: they have well said all that they have spoken."
+        },
+        {
+          "ref": "Deuteronomy 5:29",
+          "quote": "O that there were such an heart in them, that they would fear me, and keep all my commandments always, that it might be well with them, and with their children for ever!"
+        }
+      ]
+    },
+    {
+      "title": "Driving Out the Nations",
+      "references": [
+        {
+          "reference": "Deuteronomy 7:1 - 9:29",
+          "valid": true,
+          "verses": 75
+        },
+        {
+          "reference": "Exodus 32:1-35",
+          "valid": true,
+          "verses": 35
+        },
+        {
+          "reference": "Matthew 4:1-4",
+          "valid": true,
+          "verses": 4
+        },
+        {
+          "reference": "Deuteronomy 9:7 - 9:29",
+          "valid": true,
+          "verses": 23,
+          "role": "corrected passage"
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 7:1",
+          "quote": "When the Lord thy God shall bring thee into the land whither thou goest to possess it, and hath cast out many nations before thee, the Hittites, and the Girgashites, and the Amorites, and the Canaanites, and the Perizzites, and the Hivites, and the Jebusites, seven nations greater and mightier than thou;"
+        },
+        {
+          "ref": "Deuteronomy 9:20",
+          "quote": "And the Lord was very angry with Aaron to have destroyed him: and I prayed for Aaron also the same time."
+        },
+        {
+          "ref": "Deuteronomy 9:21",
+          "quote": "And I took your sin, the calf which ye had made, and burnt it with fire, and stamped it, and ground it very small, even until it was as small as dust: and I cast the dust thereof into the brook that descended out of the mount."
+        },
+        {
+          "ref": "Deuteronomy 9:29",
+          "quote": "Yet they are thy people and thine inheritance, which thou broughtest out by thy mighty power and by thy stretched out arm."
+        },
+        {
+          "ref": "Deuteronomy 9:8",
+          "quote": "Also in Horeb ye provoked the Lord to wrath, so that the Lord was angry with you to have destroyed you."
+        },
+        {
+          "ref": "Deuteronomy 7:23",
+          "quote": "But the Lord thy God shall deliver them unto thee, and shall destroy them with a mighty destruction, until they be destroyed."
+        },
+        {
+          "ref": "Deuteronomy 9:16",
+          "quote": "And I looked, and, behold, ye had sinned against the Lord your God, and had made you a molten calf: ye had turned aside quickly out of the way which the Lord had commanded you."
+        },
+        {
+          "ref": "Deuteronomy 9:7",
+          "quote": "Remember, and forget not, how thou provokedst the Lord thy God to wrath in the wilderness: from the day that thou didst depart out of the land of Egypt, until ye came unto this place, ye have been rebellious against the Lord."
+        },
+        {
+          "ref": "Deuteronomy 9:9",
+          "quote": "When I was gone up into the mount to receive the tables of stone, even the tables of the covenant which the Lord made with you, then I abode in the mount forty days and forty nights, I neither did eat bread nor drink water:"
+        },
+        {
+          "ref": "Deuteronomy 9:17",
+          "quote": "And I took the two tables, and cast them out of my two hands, and brake them before your eyes."
+        },
+        {
+          "ref": "Deuteronomy 9:18",
+          "quote": "And I fell down before the Lord, as at the first, forty days and forty nights: I did neither eat bread, nor drink water, because of all your sins which ye sinned, in doing wickedly in the sight of the Lord, to provoke him to anger."
+        },
+        {
+          "ref": "Deuteronomy 9:19",
+          "quote": "For I was afraid of the anger and hot displeasure, wherewith the Lord was wroth against you to destroy you. But the Lord hearkened unto me at that time also."
+        },
+        {
+          "ref": "Deuteronomy 9:26",
+          "quote": "I prayed therefore unto the Lord, and said, O Lord God, destroy not thy people and thine inheritance, which thou hast redeemed through thy greatness, which thou hast brought forth out of Egypt with a mighty hand."
+        }
+      ]
+    },
+    {
+      "title": "The Second Tablets and the Choice",
+      "references": [
+        {
+          "reference": "Deuteronomy 10:1 - 11:32",
+          "valid": true,
+          "verses": 54
+        },
+        {
+          "reference": "Exodus 34:1-4",
+          "valid": true,
+          "verses": 4
+        },
+        {
+          "reference": "Joshua 8:30-35",
+          "valid": true,
+          "verses": 6
+        },
+        {
+          "reference": "Deuteronomy 10:1 - 10:11",
+          "valid": true,
+          "verses": 11,
+          "role": "corrected passage"
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 10:1",
+          "quote": "At that time the Lord said unto me, Hew thee two tables of stone like unto the first, and come up unto me into the mount, and make thee an ark of wood."
+        },
+        {
+          "ref": "Deuteronomy 10:3",
+          "quote": "And I made an ark of shittim wood, and hewed two tables of stone like unto the first, and went up into the mount, having the two tables in mine hand."
+        },
+        {
+          "ref": "Deuteronomy 10:10",
+          "quote": "And I stayed in the mount, according to the first time, forty days and forty nights; and the Lord hearkened unto me at that time also, and the Lord would not destroy thee."
+        },
+        {
+          "ref": "Deuteronomy 10:11",
+          "quote": "And the Lord said unto me, Arise, take thy journey before the people, that they may go in and possess the land, which I sware unto their fathers to give unto them."
+        },
+        {
+          "ref": "Deuteronomy 10:13",
+          "quote": "To keep the commandments of the Lord, and his statutes, which I command thee this day for thy good?"
+        },
+        {
+          "ref": "Deuteronomy 11:32",
+          "quote": "And ye shall observe to do all the statutes and judgments which I set before you this day."
+        },
+        {
+          "ref": "Deuteronomy 10:2",
+          "quote": "And I will write on the tables the words that were in the first tables which thou brakest, and thou shalt put them in the ark."
+        },
+        {
+          "ref": "Deuteronomy 10:4",
+          "quote": "And he wrote on the tables, according to the first writing, the ten commandments, which the Lord spake unto you in the mount out of the midst of the fire in the day of the assembly: and the Lord gave them unto me."
+        },
+        {
+          "ref": "Deuteronomy 10:5",
+          "quote": "And I turned myself and came down from the mount, and put the tables in the ark which I had made; and there they be, as the Lord commanded me."
+        }
+      ]
+    },
+    {
+      "title": "Laws for Life in the Land",
+      "references": [
+        {
+          "reference": "Deuteronomy 12:1 - 26:19",
+          "valid": true,
+          "verses": 345
+        },
+        {
+          "reference": "Matthew 5:17-20",
+          "valid": true,
+          "verses": 4
+        },
+        {
+          "reference": "Acts 3:22-23",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 12:1",
+          "quote": "These are the statutes and judgments, which ye shall observe to do in the land, which the Lord God of thy fathers giveth thee to possess it, all the days that ye live upon the earth."
+        },
+        {
+          "ref": "Deuteronomy 14:23",
+          "quote": "And thou shalt eat before the Lord thy God, in the place which he shall choose to place his name there, the tithe of thy corn, of thy wine, and of thine oil, and the firstlings of thy herds and of thy flocks; that thou mayest learn to fear the Lord thy God always."
+        },
+        {
+          "ref": "Deuteronomy 12:11",
+          "quote": "Then there shall be a place which the Lord your God shall choose to cause his name to dwell there; thither shall ye bring all that I command you; your burnt offerings, and your sacrifices, your tithes, and the heave offering of your hand, and all your choice vows which ye vow unto the Lord:"
+        },
+        {
+          "ref": "Deuteronomy 15:2",
+          "quote": "And this is the manner of the release: Every creditor that lendeth ought unto his neighbour shall release it; he shall not exact it of his neighbour, or of his brother; because it is called the Lord's release."
+        },
+        {
+          "ref": "Deuteronomy 26:12",
+          "quote": "When thou hast made an end of tithing all the tithes of thine increase the third year, which is the year of tithing, and hast given it unto the Levite, the stranger, the fatherless, and the widow, that they may eat within thy gates, and be filled;"
+        },
+        {
+          "ref": "Deuteronomy 12:23",
+          "quote": "Only be sure that thou eat not the blood: for the blood is the life; and thou mayest not eat the life with the flesh."
+        },
+        {
+          "ref": "Deuteronomy 26:19",
+          "quote": "And to make thee high above all nations which he hath made, in praise, and in name, and in honour; and that thou mayest be an holy people unto the Lord thy God, as he hath spoken."
+        }
+      ]
+    },
+    {
+      "title": "Blessings and Curses of the Covenant",
+      "references": [
+        {
+          "reference": "Deuteronomy 27:1 - 28:68",
+          "valid": true,
+          "verses": 94
+        },
+        {
+          "reference": "Galatians 3:10-13",
+          "valid": true,
+          "verses": 4
+        },
+        {
+          "reference": "Leviticus 26:1-46",
+          "valid": true,
+          "verses": 46
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 27:1",
+          "quote": "And Moses with the elders of Israel commanded the people, saying, Keep all the commandments which I command you this day."
+        },
+        {
+          "ref": "Deuteronomy 27:4",
+          "quote": "Therefore it shall be when ye be gone over Jordan, that ye shall set up these stones, which I command you this day, in mount Ebal, and thou shalt plaister them with plaister."
+        },
+        {
+          "ref": "Deuteronomy 27:8",
+          "quote": "And thou shalt write upon the stones all the words of this law very plainly."
+        },
+        {
+          "ref": "Deuteronomy 28:15",
+          "quote": "But it shall come to pass, if thou wilt not hearken unto the voice of the Lord thy God, to observe to do all his commandments and his statutes which I command thee this day; that all these curses shall come upon thee, and overtake thee:"
+        },
+        {
+          "ref": "Deuteronomy 27:13",
+          "quote": "And these shall stand upon mount Ebal to curse; Reuben, Gad, and Asher, and Zebulun, Dan, and Naphtali."
+        },
+        {
+          "ref": "Deuteronomy 28:2",
+          "quote": "And all these blessings shall come on thee, and overtake thee, if thou shalt hearken unto the voice of the Lord thy God."
+        },
+        {
+          "ref": "Deuteronomy 28:68",
+          "quote": "And the Lord shall bring thee into Egypt again with ships, by the way whereof I spake unto thee, Thou shalt see it no more again: and there ye shall be sold unto your enemies for bondmen and bondwomen, and no man shall buy you."
+        }
+      ]
+    },
+    {
+      "title": "Renewal of the Covenant in Moab",
+      "references": [
+        {
+          "reference": "Deuteronomy 29:1 - 30:20",
+          "valid": true,
+          "verses": 49
+        },
+        {
+          "reference": "Romans 10:6-8",
+          "valid": true,
+          "verses": 3
+        },
+        {
+          "reference": "Jeremiah 29:10-14",
+          "valid": true,
+          "verses": 5
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 29:1",
+          "quote": "These are the words of the covenant, which the Lord commanded Moses to make with the children of Israel in the land of Moab, beside the covenant which he made with them in Horeb."
+        },
+        {
+          "ref": "Deuteronomy 29:2",
+          "quote": "And Moses called unto all Israel, and said unto them, Ye have seen all that the Lord did before your eyes in the land of Egypt unto Pharaoh, and unto all his servants, and unto all his land;"
+        },
+        {
+          "ref": "Deuteronomy 30:15",
+          "quote": "See, I have set before thee this day life and good, and death and evil;"
+        },
+        {
+          "ref": "Deuteronomy 30:19",
+          "quote": "I call heaven and earth to record this day against you, that I have set before you life and death, blessing and cursing: therefore choose life, that both thou and thy seed may live:"
+        },
+        {
+          "ref": "Deuteronomy 30:20",
+          "quote": "That thou mayest love the Lord thy God, and that thou mayest obey his voice, and that thou mayest cleave unto him: for he is thy life, and the length of thy days: that thou mayest dwell in the land which the Lord sware unto thy fathers, to Abraham, to Isaac, and to Jacob, to give them."
+        }
+      ]
+    },
+    {
+      "title": "Joshua Commissioned and the Song of Moses",
+      "references": [
+        {
+          "reference": "Deuteronomy 31:1 - 32:52",
+          "valid": true,
+          "verses": 82
+        },
+        {
+          "reference": "Hebrews 13:5",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Romans 10:19",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Deuteronomy 31:1 - 31:30",
+          "valid": true,
+          "verses": 30,
+          "role": "corrected passage"
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 31:1",
+          "quote": "And Moses went and spake these words unto all Israel."
+        },
+        {
+          "ref": "Deuteronomy 31:3",
+          "quote": "The Lord thy God, he will go over before thee, and he will destroy these nations from before thee, and thou shalt possess them: and Joshua, he shall go over before thee, as the Lord hath said."
+        },
+        {
+          "ref": "Deuteronomy 31:7",
+          "quote": "And Moses called unto Joshua, and said unto him in the sight of all Israel, Be strong and of a good courage: for thou must go with this people unto the land which the Lord hath sworn unto their fathers to give them; and thou shalt cause them to inherit it."
+        },
+        {
+          "ref": "Deuteronomy 31:14",
+          "quote": "And the Lord said unto Moses, Behold, thy days approach that thou must die: call Joshua, and present yourselves in the tabernacle of the congregation, that I may give him a charge. And Moses and Joshua went, and presented themselves in the tabernacle of the congregation."
+        },
+        {
+          "ref": "Deuteronomy 32:52",
+          "quote": "Yet thou shalt see the land before thee; but thou shalt not go thither unto the land which I give the children of Israel."
+        },
+        {
+          "ref": "Deuteronomy 31:19",
+          "quote": "Now therefore write ye this song for you, and teach it the children of Israel: put it in their mouths, that this song may be a witness for me against the children of Israel."
+        },
+        {
+          "ref": "Deuteronomy 31:23",
+          "quote": "And he gave Joshua the son of Nun a charge, and said, Be strong and of a good courage: for thou shalt bring the children of Israel into the land which I sware unto them: and I will be with thee."
+        },
+        {
+          "ref": "Deuteronomy 31:30",
+          "quote": "And Moses spake in the ears of all the congregation of Israel the words of this song, until they were ended."
+        },
+        {
+          "ref": "Deuteronomy 31:2",
+          "quote": "And he said unto them, I am an hundred and twenty years old this day; I can no more go out and come in: also the Lord hath said unto me, Thou shalt not go over this Jordan."
+        },
+        {
+          "ref": "Deuteronomy 31:8",
+          "quote": "And the Lord, he it is that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed."
+        },
+        {
+          "ref": "Deuteronomy 31:9",
+          "quote": "And Moses wrote this law, and delivered it unto the priests the sons of Levi, which bare the ark of the covenant of the Lord, and unto all the elders of Israel."
+        },
+        {
+          "ref": "Deuteronomy 31:22",
+          "quote": "Moses therefore wrote this song the same day, and taught it the children of Israel."
+        }
+      ]
+    },
+    {
+      "title": "Moses Blesses the Tribes and Dies",
+      "references": [
+        {
+          "reference": "Deuteronomy 33:1 - 34:12",
+          "valid": true,
+          "verses": 41
+        },
+        {
+          "reference": "Genesis 49:1-28",
+          "valid": true,
+          "verses": 28
+        },
+        {
+          "reference": "Jude 1:9",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Deuteronomy 34:1 - 34:12",
+          "valid": true,
+          "verses": 12,
+          "role": "corrected passage"
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Deuteronomy 33:1",
+          "quote": "And this is the blessing, wherewith Moses the man of God blessed the children of Israel before his death."
+        },
+        {
+          "ref": "Deuteronomy 34:5",
+          "quote": "So Moses the servant of the Lord died there in the land of Moab, according to the word of the Lord."
+        },
+        {
+          "ref": "Deuteronomy 34:8",
+          "quote": "And the children of Israel wept for Moses in the plains of Moab thirty days: so the days of weeping and mourning for Moses were ended."
+        },
+        {
+          "ref": "Deuteronomy 34:9",
+          "quote": "And Joshua the son of Nun was full of the spirit of wisdom; for Moses had laid his hands upon him: and the children of Israel hearkened unto him, and did as the Lord commanded Moses."
+        },
+        {
+          "ref": "Deuteronomy 34:12",
+          "quote": "And in all that mighty hand, and in all the great terror which Moses shewed in the sight of all Israel."
+        },
+        {
+          "ref": "Deuteronomy 34:1",
+          "quote": "And Moses went up from the plains of Moab unto the mountain of Nebo, to the top of Pisgah, that is over against Jericho. And the Lord shewed him all the land of Gilead, unto Dan,"
+        },
+        {
+          "ref": "Deuteronomy 34:2",
+          "quote": "And all Naphtali, and the land of Ephraim, and Manasseh, and all the land of Judah, unto the utmost sea,"
+        },
+        {
+          "ref": "Deuteronomy 34:7",
+          "quote": "And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated."
+        }
+      ]
+    }
+  ]
+}

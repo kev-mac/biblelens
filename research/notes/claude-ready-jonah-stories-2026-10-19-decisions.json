@@ -1,0 +1,33 @@
+{
+  "batch": "jonah-stories.json",
+  "draftSha256": "275943c5bc6e9efc57809b388b28c4139c3dc67b1cf843c30b09736c71d7822e",
+  "decisions": [
+    {
+      "title": "Jonah Flees and Is Swallowed",
+      "passage": "Jonah 1:1 - 2:10",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Nineveh Repents",
+      "passage": "Jonah 3:1 - 3:10",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Jonah's Anger",
+      "passage": "Jonah 4:1 - 4:11",
+      "decision": "correct",
+      "reason": "The closing question concerns the LORD’s pity for Nineveh, rather than a direct command that Jonah care.",
+      "published": {
+        "title": "Jonah's Anger",
+        "passage": "Jonah 4:1 - 4:11",
+        "summary": "Jonah is angry that God spared Nineveh. A plant shades him and then withers; the LORD contrasts Jonah’s pity for the plant with his own pity for the great city.",
+        "cross_references": [
+          "Exodus 34:6-7"
+        ],
+        "topics": []
+      }
+    }
+  ]
+}

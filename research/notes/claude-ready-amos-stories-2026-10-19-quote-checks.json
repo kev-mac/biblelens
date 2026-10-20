@@ -1,0 +1,49 @@
+{
+  "batch": "amos-stories.json",
+  "draftSha256": "4c819dbbd890fe1542ab574c5e6a8f81b99e78e85f67fffc552fe3787096a9de",
+  "packagedTextSha256": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+  "checks": [
+    {
+      "title": "Amaziah Opposes Amos",
+      "references": [
+        {
+          "reference": "Amos 7:10 - 7:17",
+          "valid": true,
+          "verses": 8
+        },
+        {
+          "reference": "1 Kings 12:32-33",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Amos 7:10",
+          "quote": "Then Amaziah the priest of Bethel sent to Jeroboam king of Israel, saying, Amos hath conspired against thee in the midst of the house of Israel: the land is not able to bear all his words."
+        },
+        {
+          "ref": "Amos 7:11",
+          "quote": "For thus Amos saith, Jeroboam shall die by the sword, and Israel shall surely be led away captive out of their own land."
+        },
+        {
+          "ref": "Amos 7:12",
+          "quote": "Also Amaziah said unto Amos, O thou seer, go, flee thee away into the land of Judah, and there eat bread, and prophesy there:"
+        },
+        {
+          "ref": "Amos 7:13",
+          "quote": "But prophesy not again any more at Bethel: for it is the king's chapel, and it is the king's court."
+        },
+        {
+          "ref": "Amos 7:14",
+          "quote": "Then answered Amos, and said to Amaziah, I was no prophet, neither was I a prophet's son; but I was an herdman, and a gatherer of sycomore fruit:"
+        },
+        {
+          "ref": "Amos 7:17",
+          "quote": "Therefore thus saith the Lord; Thy wife shall be an harlot in the city, and thy sons and thy daughters shall fall by the sword, and thy land shall be divided by line; and thou shalt die in a polluted land: and Israel shall surely go into captivity forth of his land."
+        }
+      ]
+    }
+  ]
+}

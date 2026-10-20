@@ -1,0 +1,493 @@
+{
+  "batch": "judges-stories.json",
+  "draftSha256": "f51459b00c8f2486b6d8296fa360654b2c39612f6908887f9da3c614b6408489",
+  "packagedTextSha256": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+  "checks": [
+    {
+      "title": "Incomplete Conquest",
+      "references": [
+        {
+          "reference": "Judges 1:1 - 2:5",
+          "valid": true,
+          "verses": 41
+        },
+        {
+          "reference": "Joshua 15:63",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Joshua 16:10",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 1:1",
+          "quote": "Now after the death of Joshua it came to pass, that the children of Israel asked the Lord, saying, Who shall go up for us against the Canaanites first, to fight against them?"
+        },
+        {
+          "ref": "Judges 1:2",
+          "quote": "And the Lord said, Judah shall go up: behold, I have delivered the land into his hand."
+        },
+        {
+          "ref": "Judges 2:1",
+          "quote": "And an angel of the Lord came up from Gilgal to Bochim, and said, I made you to go up out of Egypt, and have brought you unto the land which I sware unto your fathers; and I said, I will never break my covenant with you."
+        },
+        {
+          "ref": "Judges 2:5",
+          "quote": "And they called the name of that place Bochim: and they sacrificed there unto the Lord."
+        },
+        {
+          "ref": "Judges 1:16",
+          "quote": "And the children of the Kenite, Moses' father in law, went up out of the city of palm trees with the children of Judah into the wilderness of Judah, which lieth in the south of Arad; and they went and dwelt among the people."
+        },
+        {
+          "ref": "Judges 1:19",
+          "quote": "And the Lord was with Judah; and he drave out the inhabitants of the mountain; but could not drive out the inhabitants of the valley, because they had chariots of iron."
+        },
+        {
+          "ref": "Judges 1:27",
+          "quote": "Neither did Manasseh drive out the inhabitants of Bethshean and her towns, nor Taanach and her towns, nor the inhabitants of Dor and her towns, nor the inhabitants of Ibleam and her towns, nor the inhabitants of Megiddo and her towns: but the Canaanites would dwell in that land."
+        }
+      ]
+    },
+    {
+      "title": "The Cycle of the Judges",
+      "references": [
+        {
+          "reference": "Judges 2:6 - 3:6",
+          "valid": true,
+          "verses": 24
+        },
+        {
+          "reference": "Psalms 106:34-43",
+          "valid": true,
+          "verses": 10
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 2:6",
+          "quote": "And when Joshua had let the people go, the children of Israel went every man unto his inheritance to possess the land."
+        },
+        {
+          "ref": "Judges 2:7",
+          "quote": "And the people served the Lord all the days of Joshua, and all the days of the elders that outlived Joshua, who had seen all the great works of the Lord, that he did for Israel."
+        },
+        {
+          "ref": "Judges 2:10",
+          "quote": "And also all that generation were gathered unto their fathers: and there arose another generation after them, which knew not the Lord, nor yet the works which he had done for Israel."
+        },
+        {
+          "ref": "Judges 2:12",
+          "quote": "And they forsook the Lord God of their fathers, which brought them out of the land of Egypt, and followed other gods, of the gods of the people that were round about them, and bowed themselves unto them, and provoked the Lord to anger."
+        },
+        {
+          "ref": "Judges 2:17",
+          "quote": "And yet they would not hearken unto their judges, but they went a whoring after other gods, and bowed themselves unto them: they turned quickly out of the way which their fathers walked in, obeying the commandments of the Lord; but they did not so."
+        },
+        {
+          "ref": "Judges 2:18",
+          "quote": "And when the Lord raised them up judges, then the Lord was with the judge, and delivered them out of the hand of their enemies all the days of the judge: for it repented the Lord because of their groanings by reason of them that oppressed them and vexed them."
+        },
+        {
+          "ref": "Judges 3:6",
+          "quote": "And they took their daughters to be their wives, and gave their daughters to their sons, and served their gods."
+        }
+      ]
+    },
+    {
+      "title": "Othniel, Ehud and Shamgar",
+      "references": [
+        {
+          "reference": "Judges 3:7 - 3:31",
+          "valid": true,
+          "verses": 25
+        },
+        {
+          "reference": "Judges 1:12-13",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 3:7",
+          "quote": "And the children of Israel did evil in the sight of the Lord, and forgat the Lord their God, and served Baalim and the groves."
+        },
+        {
+          "ref": "Judges 3:12",
+          "quote": "And the children of Israel did evil again in the sight of the Lord: and the Lord strengthened Eglon the king of Moab against Israel, because they had done evil in the sight of the Lord."
+        },
+        {
+          "ref": "Judges 3:14",
+          "quote": "So the children of Israel served Eglon the king of Moab eighteen years."
+        },
+        {
+          "ref": "Judges 3:15",
+          "quote": "But when the children of Israel cried unto the Lord, the Lord raised them up a deliverer, Ehud the son of Gera, a Benjamite, a man lefthanded: and by him the children of Israel sent a present unto Eglon the king of Moab."
+        },
+        {
+          "ref": "Judges 3:17",
+          "quote": "And he brought the present unto Eglon king of Moab: and Eglon was a very fat man."
+        },
+        {
+          "ref": "Judges 3:31",
+          "quote": "And after him was Shamgar the son of Anath, which slew of the Philistines six hundred men with an ox goad: and he also delivered Israel."
+        }
+      ]
+    },
+    {
+      "title": "Deborah and Barak",
+      "references": [
+        {
+          "reference": "Judges 4:1 - 5:31",
+          "valid": true,
+          "verses": 55
+        },
+        {
+          "reference": "Hebrews 11:32",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Psalms 83:9-10",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 4:1",
+          "quote": "And the children of Israel again did evil in the sight of the Lord, when Ehud was dead."
+        },
+        {
+          "ref": "Judges 4:9",
+          "quote": "And she said, I will surely go with thee: notwithstanding the journey that thou takest shall not be for thine honour; for the Lord shall sell Sisera into the hand of a woman. And Deborah arose, and went with Barak to Kedesh."
+        },
+        {
+          "ref": "Judges 4:14",
+          "quote": "And Deborah said unto Barak, Up; for this is the day in which the Lord hath delivered Sisera into thine hand: is not the Lord gone out before thee? So Barak went down from mount Tabor, and ten thousand men after him."
+        },
+        {
+          "ref": "Judges 4:15",
+          "quote": "And the Lord discomfited Sisera, and all his chariots, and all his host, with the edge of the sword before Barak; so that Sisera lighted down off his chariot, and fled away on his feet."
+        },
+        {
+          "ref": "Judges 4:16",
+          "quote": "But Barak pursued after the chariots, and after the host, unto Harosheth of the Gentiles: and all the host of Sisera fell upon the edge of the sword; and there was not a man left."
+        },
+        {
+          "ref": "Judges 4:22",
+          "quote": "And, behold, as Barak pursued Sisera, Jael came out to meet him, and said unto him, Come, and I will shew thee the man whom thou seekest. And when he came into her tent, behold, Sisera lay dead, and the nail was in his temples."
+        },
+        {
+          "ref": "Judges 5:31",
+          "quote": "So let all thine enemies perish, O Lord: but let them that love him be as the sun when he goeth forth in his might. And the land had rest forty years."
+        }
+      ]
+    },
+    {
+      "title": "Gideon and the Midianites",
+      "references": [
+        {
+          "reference": "Judges 6:1 - 8:35",
+          "valid": true,
+          "verses": 100
+        },
+        {
+          "reference": "Hebrews 11:32",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Isaiah 9:4",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 6:1",
+          "quote": "And the children of Israel did evil in the sight of the Lord: and the Lord delivered them into the hand of Midian seven years."
+        },
+        {
+          "ref": "Judges 8:35",
+          "quote": "Neither shewed they kindness to the house of Jerubbaal, namely, Gideon, according to all the goodness which he had shewed unto Israel."
+        },
+        {
+          "ref": "Judges 7:8",
+          "quote": "So the people took victuals in their hand, and their trumpets: and he sent all the rest of Israel every man unto his tent, and retained those three hundred men: and the host of Midian was beneath him in the valley."
+        },
+        {
+          "ref": "Judges 6:22",
+          "quote": "And when Gideon perceived that he was an angel of the Lord, Gideon said, Alas, O Lord God! for because I have seen an angel of the Lord face to face."
+        },
+        {
+          "ref": "Judges 6:25",
+          "quote": "And it came to pass the same night, that the Lord said unto him, Take thy father's young bullock, even the second bullock of seven years old, and throw down the altar of Baal that thy father hath, and cut down the grove that is by it:"
+        },
+        {
+          "ref": "Judges 6:28",
+          "quote": "And when the men of the city arose early in the morning, behold, the altar of Baal was cast down, and the grove was cut down that was by it, and the second bullock was offered upon the altar that was built."
+        },
+        {
+          "ref": "Judges 6:30",
+          "quote": "Then the men of the city said unto Joash, Bring out thy son, that he may die: because he hath cast down the altar of Baal, and because he hath cut down the grove that was by it."
+        }
+      ]
+    },
+    {
+      "title": "Abimelech",
+      "references": [
+        {
+          "reference": "Judges 9:1 - 9:57",
+          "valid": true,
+          "verses": 57
+        },
+        {
+          "reference": "2 Samuel 11:21",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 9:1",
+          "quote": "And Abimelech the son of Jerubbaal went to Shechem unto his mother's brethren, and communed with them, and with all the family of the house of his mother's father, saying,"
+        },
+        {
+          "ref": "Judges 9:6",
+          "quote": "And all the men of Shechem gathered together, and all the house of Millo, and went, and made Abimelech king, by the plain of the pillar that was in Shechem."
+        },
+        {
+          "ref": "Judges 9:18",
+          "quote": "And ye are risen up against my father's house this day, and have slain his sons, threescore and ten persons, upon one stone, and have made Abimelech, the son of his maidservant, king over the men of Shechem, because he is your brother;)"
+        },
+        {
+          "ref": "Judges 9:20",
+          "quote": "But if not, let fire come out from Abimelech, and devour the men of Shechem, and the house of Millo; and let fire come out from the men of Shechem, and from the house of Millo, and devour Abimelech."
+        },
+        {
+          "ref": "Judges 9:23",
+          "quote": "Then God sent an evil spirit between Abimelech and the men of Shechem; and the men of Shechem dealt treacherously with Abimelech:"
+        },
+        {
+          "ref": "Judges 9:57",
+          "quote": "And all the evil of the men of Shechem did God render upon their heads: and upon them came the curse of Jotham the son of Jerubbaal."
+        },
+        {
+          "ref": "Judges 9:28",
+          "quote": "And Gaal the son of Ebed said, Who is Abimelech, and who is Shechem, that we should serve him? is not he the son of Jerubbaal? and Zebul his officer? serve the men of Hamor the father of Shechem: for why should we serve him?"
+        }
+      ]
+    },
+    {
+      "title": "Jephthah's Vow",
+      "references": [
+        {
+          "reference": "Judges 10:6 - 12:7",
+          "valid": true,
+          "verses": 60
+        },
+        {
+          "reference": "Hebrews 11:32",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "1 Samuel 12:11",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 10:6",
+          "quote": "And the children of Israel did evil again in the sight of the Lord, and served Baalim, and Ashtaroth, and the gods of Syria, and the gods of Zidon, and the gods of Moab, and the gods of the children of Ammon, and the gods of the Philistines, and forsook the Lord, and served not him."
+        },
+        {
+          "ref": "Judges 10:9",
+          "quote": "Moreover the children of Ammon passed over Jordan to fight also against Judah, and against Benjamin, and against the house of Ephraim; so that Israel was sore distressed."
+        },
+        {
+          "ref": "Judges 11:29",
+          "quote": "Then the Spirit of the Lord came upon Jephthah, and he passed over Gilead, and Manasseh, and passed over Mizpeh of Gilead, and from Mizpeh of Gilead he passed over unto the children of Ammon."
+        },
+        {
+          "ref": "Judges 11:8",
+          "quote": "And the elders of Gilead said unto Jephthah, Therefore we turn again to thee now, that thou mayest go with us, and fight against the children of Ammon, and be our head over all the inhabitants of Gilead."
+        },
+        {
+          "ref": "Judges 12:1",
+          "quote": "And the men of Ephraim gathered themselves together, and went northward, and said unto Jephthah, Wherefore passedst thou over to fight against the children of Ammon, and didst not call us to go with thee? we will burn thine house upon thee with fire."
+        },
+        {
+          "ref": "Judges 12:4",
+          "quote": "Then Jephthah gathered together all the men of Gilead, and fought with Ephraim: and the men of Gilead smote Ephraim, because they said, Ye Gileadites are fugitives of Ephraim among the Ephraimites, and among the Manassites."
+        },
+        {
+          "ref": "Judges 12:7",
+          "quote": "And Jephthah judged Israel six years. Then died Jephthah the Gileadite, and was buried in one of the cities of Gilead."
+        }
+      ]
+    },
+    {
+      "title": "Samson",
+      "references": [
+        {
+          "reference": "Judges 13:1 - 16:31",
+          "valid": true,
+          "verses": 96
+        },
+        {
+          "reference": "Numbers 6:1-21",
+          "valid": true,
+          "verses": 21
+        },
+        {
+          "reference": "Hebrews 11:32",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 13:1",
+          "quote": "And the children of Israel did evil again in the sight of the Lord; and the Lord delivered them into the hand of the Philistines forty years."
+        },
+        {
+          "ref": "Judges 15:6",
+          "quote": "Then the Philistines said, Who hath done this? And they answered, Samson, the son in law of the Timnite, because he had taken his wife, and given her to his companion. And the Philistines came up, and burnt her and her father with fire."
+        },
+        {
+          "ref": "Judges 16:18",
+          "quote": "And when Delilah saw that he had told her all his heart, she sent and called for the lords of the Philistines, saying, Come up this once, for he hath shewed me all his heart. Then the lords of the Philistines came up unto her, and brought money in their hand."
+        },
+        {
+          "ref": "Judges 14:1",
+          "quote": "And Samson went down to Timnath, and saw a woman in Timnath of the daughters of the Philistines."
+        },
+        {
+          "ref": "Judges 14:3",
+          "quote": "Then his father and his mother said unto him, Is there never a woman among the daughters of thy brethren, or among all my people, that thou goest to take a wife of the uncircumcised Philistines? And Samson said unto his father, Get her for me; for she pleaseth me well."
+        },
+        {
+          "ref": "Judges 14:4",
+          "quote": "But his father and his mother knew not that it was of the Lord, that he sought an occasion against the Philistines: for at that time the Philistines had dominion over Israel."
+        },
+        {
+          "ref": "Judges 16:31",
+          "quote": "Then his brethren and all the house of his father came down, and took him, and brought him up, and buried him between Zorah and Eshtaol in the buryingplace of Manoah his father. And he judged Israel twenty years."
+        }
+      ]
+    },
+    {
+      "title": "Micah's Idols and the Danites",
+      "references": [
+        {
+          "reference": "Judges 17:1 - 18:31",
+          "valid": true,
+          "verses": 44
+        },
+        {
+          "reference": "Judges 21:25",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 17:1",
+          "quote": "And there was a man of mount Ephraim, whose name was Micah."
+        },
+        {
+          "ref": "Judges 17:10",
+          "quote": "And Micah said unto him, Dwell with me, and be unto me a father and a priest, and I will give thee ten shekels of silver by the year, and a suit of apparel, and thy victuals. So the Levite went in."
+        },
+        {
+          "ref": "Judges 17:12",
+          "quote": "And Micah consecrated the Levite; and the young man became his priest, and was in the house of Micah."
+        },
+        {
+          "ref": "Judges 18:31",
+          "quote": "And they set them up Micah's graven image, which he made, all the time that the house of God was in Shiloh."
+        },
+        {
+          "ref": "Judges 17:13",
+          "quote": "Then said Micah, Now know I that the Lord will do me good, seeing I have a Levite to my priest."
+        },
+        {
+          "ref": "Judges 18:4",
+          "quote": "And he said unto them, Thus and thus dealeth Micah with me, and hath hired me, and I am his priest."
+        },
+        {
+          "ref": "Judges 18:19",
+          "quote": "And they said unto him, Hold thy peace, lay thine hand upon thy mouth, and go with us, and be to us a father and a priest: is it better for thee to be a priest unto the house of one man, or that thou be a priest unto a tribe and a family in Israel?"
+        }
+      ]
+    },
+    {
+      "title": "The Levite and Gibeah",
+      "references": [
+        {
+          "reference": "Judges 19:1 - 21:25",
+          "valid": true,
+          "verses": 103
+        },
+        {
+          "reference": "Genesis 19:1-9",
+          "valid": true,
+          "verses": 9
+        },
+        {
+          "reference": "Hosea 9:9",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Judges 19:1",
+          "quote": "And it came to pass in those days, when there was no king in Israel, that there was a certain Levite sojourning on the side of mount Ephraim, who took to him a concubine out of Bethlehemjudah."
+        },
+        {
+          "ref": "Judges 20:4",
+          "quote": "And the Levite, the husband of the woman that was slain, answered and said, I came into Gibeah that belongeth to Benjamin, I and my concubine, to lodge."
+        },
+        {
+          "ref": "Judges 21:25",
+          "quote": "In those days there was no king in Israel: every man did that which was right in his own eyes."
+        },
+        {
+          "ref": "Judges 20:13",
+          "quote": "Now therefore deliver us the men, the children of Belial, which are in Gibeah, that we may put them to death, and put away evil from Israel. But the children of Benjamin would not hearken to the voice of their brethren the children of Israel."
+        },
+        {
+          "ref": "Judges 20:14",
+          "quote": "But the children of Benjamin gathered themselves together out of the cities unto Gibeah, to go out to battle against the children of Israel."
+        },
+        {
+          "ref": "Judges 20:20",
+          "quote": "And the men of Israel went out to battle against Benjamin; and the men of Israel put themselves in array to fight against them at Gibeah."
+        },
+        {
+          "ref": "Judges 20:30",
+          "quote": "And the children of Israel went up against the children of Benjamin on the third day, and put themselves in array against Gibeah, as at other times."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "batch": "daniel-stories.json",
+  "draftSha256": "371e163e902f5dfef6af53f7999c16a1c2ad77c2712f6b3ca5c3959e19312095",
+  "decisions": [
+    {
+      "title": "Daniel and His Friends in Babylon",
+      "passage": "Daniel 1:1 - 1:21",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Nebuchadnezzar's Dream of the Statue",
+      "passage": "Daniel 2:1 - 2:49",
+      "decision": "correct",
+      "reason": "Do not decide whether the king forgot the dream; correct the count to distinguish the metals and clay.",
+      "published": {
+        "title": "Nebuchadnezzar's Dream of the Statue",
+        "passage": "Daniel 2:1 - 2:49",
+        "summary": "Nebuchadnezzar demands that his wise men tell him both his dream and its interpretation. God reveals it to Daniel: a statue of gold, silver, brass, iron and clay is struck by a stone, which Daniel interprets as God’s kingdom overcoming the kingdoms represented by the statue.",
+        "cross_references": [
+          "Daniel 7:1-28"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Fiery Furnace",
+      "passage": "Daniel 3:1 - 3:30",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Nebuchadnezzar's Humbling",
+      "passage": "Daniel 4:1 - 4:37",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Belshazzar's Feast",
+      "passage": "Daniel 5:1 - 5:31",
+      "decision": "correct",
+      "reason": "Stay with what the supplied narrative explicitly reports: Belshazzar’s death and Darius receiving the kingdom.",
+      "published": {
+        "title": "Belshazzar's Feast",
+        "passage": "Daniel 5:1 - 5:31",
+        "summary": "A hand writes on the wall during Belshazzar’s feast, and Daniel reads it as a sentence on the kingdom. Belshazzar is killed that night, and Darius the Median receives the kingdom.",
+        "cross_references": [
+          "Isaiah 21:1-10"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Daniel in the Lions' Den",
+      "passage": "Daniel 6:1 - 6:28",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Daniel's Visions",
+      "passage": "Daniel 7:1 - 12:13",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    }
+  ]
+}

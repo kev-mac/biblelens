@@ -1,0 +1,118 @@
+{
+  "batch": "mark-stories.json",
+  "draftSha256": "3aa1afb8d1edb26f61a71afa87b37c99eb38bb3612cebc004227eab814c7597a",
+  "decisions": [
+    {
+      "title": "John the Baptist and the Baptism of Jesus",
+      "passage": "Mark 1:1 - 1:13",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Calling the Disciples and Healing in Capernaum",
+      "passage": "Mark 1:14 - 1:45",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Paralytic and Controversies",
+      "passage": "Mark 2:1 - 3:6",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Parables and Calming the Storm",
+      "passage": "Mark 4:1 - 4:41",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Gerasene Demoniac, Jairus and the Woman",
+      "passage": "Mark 5:1 - 5:43",
+      "decision": "correct",
+      "reason": "Use the KJV place name Gadarenes instead of substituting a different Gospel/edition name.",
+      "published": {
+        "title": "The Gadarene Demoniac, Jairus and the Woman",
+        "passage": "Mark 5:1 - 5:43",
+        "summary": "Jesus sends a legion of demons into pigs, heals a woman who touched his cloak, and raises Jairus's daughter.",
+        "cross_references": [
+          "Matthew 8:28-34",
+          "Luke 8:26-56"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Feeding the Multitude",
+      "passage": "Mark 6:30 - 6:56",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Peter's Confession and the Transfiguration",
+      "passage": "Mark 8:27 - 9:29",
+      "decision": "correct",
+      "reason": "Disambiguate the global title/DOM slug from the parallel Matthew story while preserving book-qualified routes.",
+      "published": {
+        "title": "Peter's Confession and the Transfiguration in Mark",
+        "passage": "Mark 8:27 - 9:29",
+        "summary": "Peter calls Jesus the Christ, and Jesus foretells his suffering. He is transfigured on a mountain and then heals a boy with an unclean spirit.",
+        "cross_references": [
+          "Matthew 16:13-17:21",
+          "Luke 9:18-43"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Blind Bartimaeus",
+      "passage": "Mark 10:46 - 10:52",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Triumphal Entry and the Temple",
+      "passage": "Mark 11:1 - 11:33",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Last Supper and Gethsemane",
+      "passage": "Mark 14:1 - 14:52",
+      "decision": "correct",
+      "reason": "Disambiguate the global title/DOM slug from the parallel Matthew story while preserving book-qualified routes.",
+      "published": {
+        "title": "The Last Supper and Gethsemane in Mark",
+        "passage": "Mark 14:1 - 14:52",
+        "summary": "A woman anoints Jesus at Bethany, Judas arranges the betrayal, and Jesus shares the last supper. In Gethsemane he prays and is arrested.",
+        "cross_references": [
+          "Matthew 26:1-56",
+          "Luke 22:1-53"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Trial, Crucifixion and Burial",
+      "passage": "Mark 14:53 - 15:47",
+      "decision": "correct",
+      "reason": "Disambiguate the global title/DOM slug from the parallel Matthew story while preserving book-qualified routes.",
+      "published": {
+        "title": "Trial, Crucifixion and Burial in Mark",
+        "passage": "Mark 14:53 - 15:47",
+        "summary": "Jesus is tried by the council and Pilate, Peter denies him, and he is crucified between two criminals and buried by Joseph of Arimathea.",
+        "cross_references": [
+          "Matthew 26:57-27:66",
+          "John 18:12-19:42"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "The Empty Tomb",
+      "passage": "Mark 16:1 - 16:8",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    }
+  ]
+}

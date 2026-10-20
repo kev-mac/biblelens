@@ -1,0 +1,57 @@
+{
+  "batch": "jeremiah-stories.json",
+  "draftSha256": "395c6f86c77722b482376974102167e5ab7995a00d808baefa29587b139f720c",
+  "decisions": [
+    {
+      "title": "Jeremiah's Call",
+      "passage": "Jeremiah 1:1 - 1:19",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Potter's House and the Broken Jar",
+      "passage": "Jeremiah 18:1 - 19:15",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Jeremiah and Pashhur; the Temple Sermon",
+      "passage": "Jeremiah 20:1 - 20:18",
+      "decision": "correct",
+      "reason": "The supplied range contains the stocks and lament, not the temple sermon of Jeremiah 7 or 26.",
+      "published": {
+        "title": "Jeremiah and Pashhur",
+        "passage": "Jeremiah 20:1 - 20:18",
+        "summary": "The priest Pashhur has Jeremiah beaten and put in the stocks. After his release Jeremiah announces judgment on Pashhur and complains bitterly about his calling.",
+        "cross_references": [
+          "Jeremiah 26:1-24"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Hananiah's False Prophecy",
+      "passage": "Jeremiah 28:1 - 28:17",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Scroll Burned",
+      "passage": "Jeremiah 36:1 - 36:32",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Jeremiah in the Cistern",
+      "passage": "Jeremiah 37:1 - 38:28",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Fall of Jerusalem and Flight to Egypt",
+      "passage": "Jeremiah 39:1 - 43:13",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    }
+  ]
+}

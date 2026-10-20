@@ -1,0 +1,130 @@
+{
+  "batch": "matthew-stories.json",
+  "draftSha256": "d236e48be6c106236a17ca9078bc4cd4d4bcddfea8bee45d99f65673d7bbe610",
+  "decisions": [
+    {
+      "title": "The Birth of Jesus and the Magi",
+      "passage": "Matthew 1:18 - 2:12",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Flight to Egypt and Return to Nazareth",
+      "passage": "Matthew 2:13 - 2:23",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Baptism and Temptation of Jesus",
+      "passage": "Matthew 3:1 - 4:11",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Calling the First Disciples",
+      "passage": "Matthew 4:12 - 4:25",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Sermon on the Mount",
+      "passage": "Matthew 5:1 - 7:29",
+      "decision": "hold",
+      "reason": "Standalone instructional discourse, despite its brief narrative frame. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Healings and Calming the Storm",
+      "passage": "Matthew 8:1 - 9:38",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Sending Out the Twelve",
+      "passage": "Matthew 10:1 - 10:42",
+      "decision": "correct",
+      "reason": "Keep the narrated choice and sending, omitting the lengthy mission instructions.",
+      "published": {
+        "title": "Sending Out the Twelve",
+        "passage": "Matthew 10:1 - 10:5",
+        "summary": "Jesus calls his twelve disciples, gives them authority over unclean spirits and disease, and sends them out. The account names the twelve, including Judas Iscariot, who later betrays him.",
+        "cross_references": [
+          "Mark 6:7-13",
+          "Luke 9:1-6"
+        ],
+        "topics": []
+      }
+    },
+    {
+      "title": "Jesus and John the Baptist",
+      "passage": "Matthew 11:1 - 11:30",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Sabbath Controversies and the Sign of Jonah",
+      "passage": "Matthew 12:1 - 12:50",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Parables of the Kingdom",
+      "passage": "Matthew 13:1 - 13:58",
+      "decision": "hold",
+      "reason": "A collection of kingdom teachings; no discrete narrative plot is summarized by this entry. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "Feeding the Five Thousand and Walking on Water",
+      "passage": "Matthew 14:1 - 14:36",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Peter's Confession and the Transfiguration",
+      "passage": "Matthew 16:13 - 17:27",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Teaching on Forgiveness and Greatness",
+      "passage": "Matthew 18:1 - 18:35",
+      "decision": "hold",
+      "reason": "Instruction on greatness, discipline and forgiveness; do not publish its inaccurate seventy-seven paraphrase of Matthew 18:22. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "The Rich Young Man",
+      "passage": "Matthew 19:1 - 20:34",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Triumphal Entry and Temple Cleansing",
+      "passage": "Matthew 21:1 - 21:46",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Teaching in the Temple and the Olivet Discourse",
+      "passage": "Matthew 22:1 - 25:46",
+      "decision": "hold",
+      "reason": "Temple teachings and the Olivet discourse; do not present the whole teaching block as a story. Held under the owner’s narrative-only scope."
+    },
+    {
+      "title": "The Last Supper and Gethsemane",
+      "passage": "Matthew 26:1 - 26:56",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "Trial, Crucifixion and Burial",
+      "passage": "Matthew 26:57 - 27:66",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    },
+    {
+      "title": "The Resurrection and the Great Commission",
+      "passage": "Matthew 28:1 - 28:20",
+      "decision": "accept",
+      "reason": "Narrated episode or explicitly framed narrative/parable; supplied references and supporting packaged KJV context checked. Summary is a paraphrase, not a verbatim quotation."
+    }
+  ]
+}

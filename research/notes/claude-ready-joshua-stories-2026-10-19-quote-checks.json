@@ -1,0 +1,606 @@
+{
+  "batch": "joshua-stories.json",
+  "draftSha256": "919609538759fbd43fb5444c29260982e762d1fc5d6207fedcb369128f11303b",
+  "packagedTextSha256": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+  "checks": [
+    {
+      "title": "Joshua Commissioned",
+      "references": [
+        {
+          "reference": "Joshua 1:1 - 1:18",
+          "valid": true,
+          "verses": 18
+        },
+        {
+          "reference": "Deuteronomy 31:7-8",
+          "valid": true,
+          "verses": 2
+        },
+        {
+          "reference": "Numbers 32:20-22",
+          "valid": true,
+          "verses": 3
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 1:1",
+          "quote": "Now after the death of Moses the servant of the Lord it came to pass, that the Lord spake unto Joshua the son of Nun, Moses' minister, saying,"
+        },
+        {
+          "ref": "Joshua 1:2",
+          "quote": "Moses my servant is dead; now therefore arise, go over this Jordan, thou, and all this people, unto the land which I do give to them, even to the children of Israel."
+        },
+        {
+          "ref": "Joshua 1:7",
+          "quote": "Only be thou strong and very courageous, that thou mayest observe to do according to all the law, which Moses my servant commanded thee: turn not from it to the right hand or to the left, that thou mayest prosper withersoever thou goest."
+        },
+        {
+          "ref": "Joshua 1:14",
+          "quote": "Your wives, your little ones, and your cattle, shall remain in the land which Moses gave you on this side Jordan; but ye shall pass before your brethren armed, all the mighty men of valour, and help them;"
+        },
+        {
+          "ref": "Joshua 1:15",
+          "quote": "Until the Lord have given your brethren rest, as he hath given you, and they also have possessed the land which the Lord your God giveth them: then ye shall return unto the land of your possession, and enjoy it, which Moses the Lord's servant gave you on this side Jordan toward the sunrising."
+        },
+        {
+          "ref": "Joshua 1:18",
+          "quote": "Whosoever he be that doth rebel against thy commandment, and will not hearken unto thy words in all that thou commandest him, he shall be put to death: only be strong and of a good courage."
+        }
+      ]
+    },
+    {
+      "title": "Rahab and the Spies",
+      "references": [
+        {
+          "reference": "Joshua 2:1 - 2:24",
+          "valid": true,
+          "verses": 24
+        },
+        {
+          "reference": "Hebrews 11:31",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "James 2:25",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 2:1",
+          "quote": "And Joshua the son of Nun sent out of Shittim two men to spy secretly, saying, Go view the land, even Jericho. And they went, and came into an harlot's house, named Rahab, and lodged there."
+        },
+        {
+          "ref": "Joshua 2:2",
+          "quote": "And it was told the king of Jericho, saying, Behold, there came men in hither to night of the children of Israel to search out the country."
+        },
+        {
+          "ref": "Joshua 2:3",
+          "quote": "And the king of Jericho sent unto Rahab, saying, Bring forth the men that are come to thee, which are entered into thine house: for they be come to search out all the country."
+        },
+        {
+          "ref": "Joshua 2:15",
+          "quote": "Then she let them down by a cord through the window: for her house was upon the town wall, and she dwelt upon the wall."
+        },
+        {
+          "ref": "Joshua 2:21",
+          "quote": "And she said, According unto your words, so be it. And she sent them away, and they departed: and she bound the scarlet line in the window."
+        },
+        {
+          "ref": "Joshua 2:24",
+          "quote": "And they said unto Joshua, Truly the Lord hath delivered into our hands all the land; for even all the inhabitants of the country do faint because of us."
+        }
+      ]
+    },
+    {
+      "title": "Crossing the Jordan",
+      "references": [
+        {
+          "reference": "Joshua 3:1 - 4:24",
+          "valid": true,
+          "verses": 41
+        },
+        {
+          "reference": "Exodus 14:21-22",
+          "valid": true,
+          "verses": 2
+        },
+        {
+          "reference": "Psalms 114:3-5",
+          "valid": true,
+          "verses": 3
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 3:1",
+          "quote": "And Joshua rose early in the morning; and they removed from Shittim, and came to Jordan, he and all the children of Israel, and lodged there before they passed over."
+        },
+        {
+          "ref": "Joshua 4:18",
+          "quote": "And it came to pass, when the priests that bare the ark of the covenant of the Lord were come up out of the midst of Jordan, and the soles of the priests' feet were lifted up unto the dry land, that the waters of Jordan returned unto their place, and flowed over all his banks, as they did before."
+        },
+        {
+          "ref": "Joshua 4:24",
+          "quote": "That all the people of the earth might know the hand of the Lord, that it is mighty: that ye might fear the Lord your God for ever."
+        },
+        {
+          "ref": "Joshua 3:13",
+          "quote": "And it shall come to pass, as soon as the soles of the feet of the priests that bear the ark of the Lord, the Lord of all the earth, shall rest in the waters of Jordan, that the waters of Jordan shall be cut off from the waters that come down from above; and they shall stand upon an heap."
+        },
+        {
+          "ref": "Joshua 3:17",
+          "quote": "And the priests that bare the ark of the covenant of the Lord stood firm on dry ground in the midst of Jordan, and all the Israelites passed over on dry ground, until all the people were passed clean over Jordan."
+        },
+        {
+          "ref": "Joshua 4:3",
+          "quote": "And command ye them, saying, Take you hence out of the midst of Jordan, out of the place where the priests' feet stood firm, twelve stones, and ye shall carry them over with you, and leave them in the lodging place, where ye shall lodge this night."
+        },
+        {
+          "ref": "Joshua 4:7",
+          "quote": "Then ye shall answer them, That the waters of Jordan were cut off before the ark of the covenant of the Lord; when it passed over Jordan, the waters of Jordan were cut off: and these stones shall be for a memorial unto the children of Israel for ever."
+        }
+      ]
+    },
+    {
+      "title": "Circumcision and Passover at Gilgal",
+      "references": [
+        {
+          "reference": "Joshua 5:1 - 5:15",
+          "valid": true,
+          "verses": 15
+        },
+        {
+          "reference": "Exodus 12:43-49",
+          "valid": true,
+          "verses": 7
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 5:1",
+          "quote": "And it came to pass, when all the kings of the Amorites, which were on the side of Jordan westward, and all the kings of the Canaanites, which were by the sea, heard that the Lord had dried up the waters of Jordan from before the children of Israel, until we were passed over, that their heart melted, neither was there spirit in them any more, because of the children of Israel."
+        },
+        {
+          "ref": "Joshua 5:4",
+          "quote": "And this is the cause why Joshua did circumcise: All the people that came out of Egypt, that were males, even all the men of war, died in the wilderness by the way, after they came out of Egypt."
+        },
+        {
+          "ref": "Joshua 5:5",
+          "quote": "Now all the people that came out were circumcised: but all the people that were born in the wilderness by the way as they came forth out of Egypt, them they had not circumcised."
+        },
+        {
+          "ref": "Joshua 5:10",
+          "quote": "And the children of Israel encamped in Gilgal, and kept the passover on the fourteenth day of the month at even in the plains of Jericho."
+        },
+        {
+          "ref": "Joshua 5:12",
+          "quote": "And the manna ceased on the morrow after they had eaten of the old corn of the land; neither had the children of Israel manna any more; but they did eat of the fruit of the land of Canaan that year."
+        },
+        {
+          "ref": "Joshua 5:13",
+          "quote": "And it came to pass, when Joshua was by Jericho, that he lifted up his eyes and looked, and, behold, there stood a man over against him with his sword drawn in his hand: and Joshua went unto him, and said unto him, Art thou for us, or for our adversaries?"
+        },
+        {
+          "ref": "Joshua 5:15",
+          "quote": "And the captain of the Lord's host said unto Joshua, Loose thy shoe from off thy foot; for the place whereon thou standest is holy. And Joshua did so."
+        }
+      ]
+    },
+    {
+      "title": "The Fall of Jericho",
+      "references": [
+        {
+          "reference": "Joshua 6:1 - 6:27",
+          "valid": true,
+          "verses": 27
+        },
+        {
+          "reference": "Hebrews 11:30",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Matthew 1:5",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 6:1",
+          "quote": "Now Jericho was straitly shut up because of the children of Israel: none went out, and none came in."
+        },
+        {
+          "ref": "Joshua 6:3",
+          "quote": "And ye shall compass the city, all ye men of war, and go round about the city once. Thus shalt thou do six days."
+        },
+        {
+          "ref": "Joshua 6:4",
+          "quote": "And seven priests shall bear before the ark seven trumpets of rams' horns: and the seventh day ye shall compass the city seven times, and the priests shall blow with the trumpets."
+        },
+        {
+          "ref": "Joshua 6:5",
+          "quote": "And it shall come to pass, that when they make a long blast with the ram's horn, and when ye hear the sound of the trumpet, all the people shall shout with a great shout; and the wall of the city shall fall down flat, and the people shall ascend up every man straight before him."
+        },
+        {
+          "ref": "Joshua 6:10",
+          "quote": "And Joshua had commanded the people, saying, Ye shall not shout, nor make any noise with your voice, neither shall any word proceed out of your mouth, until the day I bid you shout; then shall ye shout."
+        },
+        {
+          "ref": "Joshua 6:15",
+          "quote": "And it came to pass on the seventh day, that they rose early about the dawning of the day, and compassed the city after the same manner seven times: only on that day they compassed the city seven times."
+        },
+        {
+          "ref": "Joshua 6:27",
+          "quote": "So the Lord was with Joshua; and his fame was noised throughout all the country."
+        }
+      ]
+    },
+    {
+      "title": "Achan's Sin and Ai",
+      "references": [
+        {
+          "reference": "Joshua 7:1 - 8:35",
+          "valid": true,
+          "verses": 61
+        },
+        {
+          "reference": "1 Chronicles 2:7",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Deuteronomy 27:1-26",
+          "valid": true,
+          "verses": 26
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 7:1",
+          "quote": "But the children of Israel committed a trespass in the accursed thing: for Achan, the son of Carmi, the son of Zabdi, the son of Zerah, of the tribe of Judah, took of the accursed thing: and the anger of the Lord was kindled against the children of Israel."
+        },
+        {
+          "ref": "Joshua 7:18",
+          "quote": "And he brought his household man by man; and Achan, the son of Carmi, the son of Zabdi, the son of Zerah, of the tribe of Judah, was taken."
+        },
+        {
+          "ref": "Joshua 7:19",
+          "quote": "And Joshua said unto Achan, My son, give, I pray thee, glory to the Lord God of Israel, and make confession unto him; and tell me now what thou hast done; hide it not from me."
+        },
+        {
+          "ref": "Joshua 7:20",
+          "quote": "And Achan answered Joshua, and said, Indeed I have sinned against the Lord God of Israel, and thus and thus have I done:"
+        },
+        {
+          "ref": "Joshua 8:33",
+          "quote": "And all Israel, and their elders, and officers, and their judges, stood on this side the ark and on that side before the priests the Levites, which bare the ark of the covenant of the Lord, as well the stranger, as he that was born among them; half of them over against mount Gerizim, and half of them over against mount Ebal; as Moses the servant of the Lord had commanded before, that they should bless the people of Israel."
+        },
+        {
+          "ref": "Joshua 8:35",
+          "quote": "There was not a word of all that Moses commanded, which Joshua read not before all the congregation of Israel, with the women, and the little ones, and the strangers that were conversant among them."
+        }
+      ]
+    },
+    {
+      "title": "The Gibeonite Deception",
+      "references": [
+        {
+          "reference": "Joshua 9:1 - 9:27",
+          "valid": true,
+          "verses": 27
+        },
+        {
+          "reference": "2 Samuel 21:1-2",
+          "valid": true,
+          "verses": 2
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 9:1",
+          "quote": "And it came to pass, when all the kings which were on this side Jordan, in the hills, and in the valleys, and in all the coasts of the great sea over against Lebanon, the Hittite, and the Amorite, the Canaanite, the Perizzite, the Hivite, and the Jebusite, heard thereof;"
+        },
+        {
+          "ref": "Joshua 9:4",
+          "quote": "They did work wilily, and went and made as if they had been ambassadors, and took old sacks upon their asses, and wine bottles, old, and rent, and bound up;"
+        },
+        {
+          "ref": "Joshua 9:15",
+          "quote": "And Joshua made peace with them, and made a league with them, to let them live: and the princes of the congregation sware unto them."
+        },
+        {
+          "ref": "Joshua 9:16",
+          "quote": "And it came to pass at the end of three days after they had made a league with them, that they heard that they were their neighbours, and that they dwelt among them."
+        },
+        {
+          "ref": "Joshua 9:21",
+          "quote": "And the princes said unto them, Let them live; but let them be hewers of wood and drawers of water unto all the congregation; as the princes had promised them."
+        },
+        {
+          "ref": "Joshua 9:27",
+          "quote": "And Joshua made them that day hewers of wood and drawers of water for the congregation, and for the altar of the Lord, even unto this day, in the place which he should choose."
+        }
+      ]
+    },
+    {
+      "title": "The Sun Stands Still",
+      "references": [
+        {
+          "reference": "Joshua 10:1 - 10:43",
+          "valid": true,
+          "verses": 43
+        },
+        {
+          "reference": "Isaiah 28:21",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Habakkuk 3:11",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 10:1",
+          "quote": "Now it came to pass, when Adonizedec king of Jerusalem had heard how Joshua had taken Ai, and had utterly destroyed it; as he had done to Jericho and her king, so he had done to Ai and her king; and how the inhabitants of Gibeon had made peace with Israel, and were among them;"
+        },
+        {
+          "ref": "Joshua 10:5",
+          "quote": "Therefore the five kings of the Amorites, the king of Jerusalem, the king of Hebron, the king of Jarmuth, the king of Lachish, the king of Eglon, gathered themselves together, and went up, they and all their hosts, and encamped before Gibeon, and made war against it."
+        },
+        {
+          "ref": "Joshua 10:6",
+          "quote": "And the men of Gibeon sent unto Joshua to the camp to Gilgal, saying, Slack not thy hand from thy servants; come up to us quickly, and save us, and help us: for all the kings of the Amorites that dwell in the mountains are gathered together against us."
+        },
+        {
+          "ref": "Joshua 10:43",
+          "quote": "And Joshua returned, and all Israel with him, unto the camp to Gilgal."
+        },
+        {
+          "ref": "Joshua 10:12",
+          "quote": "Then spake Joshua to the Lord in the day when the Lord delivered up the Amorites before the children of Israel, and he said in the sight of Israel, Sun, stand thou still upon Gibeon; and thou, Moon, in the valley of Ajalon."
+        },
+        {
+          "ref": "Joshua 10:13",
+          "quote": "And the sun stood still, and the moon stayed, until the people had avenged themselves upon their enemies. Is not this written in the book of Jasher? So the sun stood still in the midst of heaven, and hasted not to go down about a whole day."
+        },
+        {
+          "ref": "Joshua 10:24",
+          "quote": "And it came to pass, when they brought out those kings unto Joshua, that Joshua called for all the men of Israel, and said unto the captains of the men of war which went with him, Come near, put your feet upon the necks of these kings. And they came near, and put their feet upon the necks of them."
+        }
+      ]
+    },
+    {
+      "title": "Northern Campaign and the Land Taken",
+      "references": [
+        {
+          "reference": "Joshua 11:1 - 12:24",
+          "valid": true,
+          "verses": 47
+        },
+        {
+          "reference": "Judges 4:2",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Numbers 21:21-35",
+          "valid": true,
+          "verses": 15
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 11:1",
+          "quote": "And it came to pass, when Jabin king of Hazor had heard those things, that he sent to Jobab king of Madon, and to the king of Shimron, and to the king of Achshaph,"
+        },
+        {
+          "ref": "Joshua 11:10",
+          "quote": "And Joshua at that time turned back, and took Hazor, and smote the king thereof with the sword: for Hazor beforetime was the head of all those kingdoms."
+        },
+        {
+          "ref": "Joshua 11:12",
+          "quote": "And all the cities of those kings, and all the kings of them, did Joshua take, and smote them with the edge of the sword, and he utterly destroyed them, as Moses the servant of the Lord commanded."
+        },
+        {
+          "ref": "Joshua 11:13",
+          "quote": "But as for the cities that stood still in their strength, Israel burned none of them, save Hazor only; that did Joshua burn."
+        },
+        {
+          "ref": "Joshua 12:24",
+          "quote": "The king of Tirzah, one: all the kings thirty and one."
+        },
+        {
+          "ref": "Joshua 12:7",
+          "quote": "And these are the kings of the country which Joshua and the children of Israel smote on this side Jordan on the west, from Baalgad in the valley of Lebanon even unto the mount Halak, that goeth up to Seir; which Joshua gave unto the tribes of Israel for a possession according to their divisions;"
+        }
+      ]
+    },
+    {
+      "title": "Dividing the Land",
+      "references": [
+        {
+          "reference": "Joshua 13:1 - 21:45",
+          "valid": true,
+          "verses": 272
+        },
+        {
+          "reference": "Numbers 34:1-29",
+          "valid": true,
+          "verses": 29
+        },
+        {
+          "reference": "Numbers 14:24",
+          "valid": true,
+          "verses": 1
+        },
+        {
+          "reference": "Joshua 14:6 - 14:15",
+          "valid": true,
+          "verses": 10,
+          "role": "corrected passage"
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 13:1",
+          "quote": "Now Joshua was old and stricken in years; and the Lord said unto him, Thou art old and stricken in years, and there remaineth yet very much land to be possessed."
+        },
+        {
+          "ref": "Joshua 14:6",
+          "quote": "Then the children of Judah came unto Joshua in Gilgal: and Caleb the son of Jephunneh the Kenezite said unto him, Thou knowest the thing that the Lord said unto Moses the man of God concerning me and thee in Kadeshbarnea."
+        },
+        {
+          "ref": "Joshua 14:13",
+          "quote": "And Joshua blessed him, and gave unto Caleb the son of Jephunneh Hebron for an inheritance."
+        },
+        {
+          "ref": "Joshua 21:45",
+          "quote": "There failed not ought of any good thing which the Lord had spoken unto the house of Israel; all came to pass."
+        },
+        {
+          "ref": "Joshua 19:49",
+          "quote": "When they had made an end of dividing the land for inheritance by their coasts, the children of Israel gave an inheritance to Joshua the son of Nun among them:"
+        },
+        {
+          "ref": "Joshua 19:51",
+          "quote": "These are the inheritances, which Eleazar the priest, and Joshua the son of Nun, and the heads of the fathers of the tribes of the children of Israel, divided for an inheritance by lot in Shiloh before the Lord, at the door of the tabernacle of the congregation. So they made an end of dividing the country."
+        },
+        {
+          "ref": "Joshua 17:4",
+          "quote": "And they came near before Eleazar the priest, and before Joshua the son of Nun, and before the princes, saying, The Lord commanded Moses to give us an inheritance among our brethren. Therefore according to the commandment of the Lord he gave them an inheritance among the brethren of their father."
+        },
+        {
+          "ref": "Joshua 14:9",
+          "quote": "And Moses sware on that day, saying, Surely the land whereon thy feet have trodden shall be thine inheritance, and thy children's for ever, because thou hast wholly followed the Lord my God."
+        },
+        {
+          "ref": "Joshua 14:10",
+          "quote": "And now, behold, the Lord hath kept me alive, as he said, these forty and five years, even since the Lord spake this word unto Moses, while the children of Israel wandered in the wilderness: and now, lo, I am this day fourscore and five years old."
+        },
+        {
+          "ref": "Joshua 14:14",
+          "quote": "Hebron therefore became the inheritance of Caleb the son of Jephunneh the Kenezite unto this day, because that he wholly followed the Lord God of Israel."
+        },
+        {
+          "ref": "Joshua 14:15",
+          "quote": "And the name of Hebron before was Kirjatharba; which Arba was a great man among the Anakims. And the land had rest from war."
+        }
+      ]
+    },
+    {
+      "title": "The Altar by the Jordan",
+      "references": [
+        {
+          "reference": "Joshua 22:1 - 22:34",
+          "valid": true,
+          "verses": 34
+        },
+        {
+          "reference": "Deuteronomy 12:5-14",
+          "valid": true,
+          "verses": 10
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 22:1",
+          "quote": "Then Joshua called the Reubenites, and the Gadites, and the half tribe of Manasseh,"
+        },
+        {
+          "ref": "Joshua 22:34",
+          "quote": "And the children of Reuben and the children of Gad called the altar Ed: for it shall be a witness between us that the Lord is God."
+        },
+        {
+          "ref": "Joshua 22:10",
+          "quote": "And when they came unto the borders of Jordan, that are in the land of Canaan, the children of Reuben and the children of Gad and the half tribe of Manasseh built there an altar by Jordan, a great altar to see to."
+        },
+        {
+          "ref": "Joshua 22:11",
+          "quote": "And the children of Israel heard say, Behold, the children of Reuben and the children of Gad and the half tribe of Manasseh have built an altar over against the land of Canaan, in the borders of Jordan, at the passage of the children of Israel."
+        },
+        {
+          "ref": "Joshua 22:14",
+          "quote": "And with him ten princes, of each chief house a prince throughout all the tribes of Israel; and each one was an head of the house of their fathers among the thousands of Israel."
+        },
+        {
+          "ref": "Joshua 22:26",
+          "quote": "Therefore we said, Let us now prepare to build us an altar, not for burnt offering, nor for sacrifice:"
+        },
+        {
+          "ref": "Joshua 22:29",
+          "quote": "God forbid that we should rebel against the Lord, and turn this day from following the Lord, to build an altar for burnt offerings, for meat offerings, or for sacrifices, beside the altar of the Lord our God that is before his tabernacle."
+        }
+      ]
+    },
+    {
+      "title": "Joshua's Farewell and Covenant at Shechem",
+      "references": [
+        {
+          "reference": "Joshua 23:1 - 24:33",
+          "valid": true,
+          "verses": 49
+        },
+        {
+          "reference": "Acts 7:44-45",
+          "valid": true,
+          "verses": 2
+        },
+        {
+          "reference": "Genesis 50:25",
+          "valid": true,
+          "verses": 1
+        }
+      ],
+      "summaryTreatment": "paraphrase; no verbatim quotation claimed",
+      "kjvContext": [
+        {
+          "ref": "Joshua 23:1",
+          "quote": "And it came to pass a long time after that the Lord had given rest unto Israel from all their enemies round about, that Joshua waxed old and stricken in age."
+        },
+        {
+          "ref": "Joshua 24:19",
+          "quote": "And Joshua said unto the people, Ye cannot serve the Lord: for he is an holy God; he is a jealous God; he will not forgive your transgressions nor your sins."
+        },
+        {
+          "ref": "Joshua 24:21",
+          "quote": "And the people said unto Joshua, Nay; but we will serve the Lord."
+        },
+        {
+          "ref": "Joshua 24:22",
+          "quote": "And Joshua said unto the people, Ye are witnesses against yourselves that ye have chosen you the Lord, to serve him. And they said, We are witnesses."
+        },
+        {
+          "ref": "Joshua 24:33",
+          "quote": "And Eleazar the son of Aaron died; and they buried him in a hill that pertained to Phinehas his son, which was given him in mount Ephraim."
+        },
+        {
+          "ref": "Joshua 24:2",
+          "quote": "And Joshua said unto all the people, Thus saith the Lord God of Israel, Your fathers dwelt on the other side of the flood in old time, even Terah, the father of Abraham, and the father of Nachor: and they served other gods."
+        },
+        {
+          "ref": "Joshua 24:15",
+          "quote": "And if it seem evil unto you to serve the Lord, choose you this day whom ye will serve; whether the gods which your fathers served that were on the other side of the flood, or the gods of the Amorites, in whose land ye dwell: but as for me and my house, we will serve the Lord."
+        }
+      ]
+    }
+  ]
+}
