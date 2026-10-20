@@ -117,3 +117,17 @@ assert.equal(vm.runInContext('storiesPage',c),0);assert(node('#stories-paginatio
 c.location.hash='#stories/genesis/'+c.storySlug(genesis.stories.at(-1).title);await c.routeLinkedStory();
 assert(node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(genesis.stories.at(-1).title)+'"'));assert(node('#stories-pagination').hidden);
 console.log('PASS: ten-story pages, page bounds, next/previous state, result ranges, filter resets, empty results, and late-story deep links.');
+
+// Story sections begin closed and toggle independently without changing filters.
+const sectionCard=c.storyCard(genesis.stories[0]);
+assert(sectionCard.includes('data-story-section aria-expanded="false"'));
+assert(sectionCard.includes('aria-labelledby="story-'+c.storySlug(genesis.stories[0].title)+'-verses-toggle" hidden'));
+assert(!sectionCard.includes(' →</button>'));
+const panel={hidden:true},section={getAttribute:()=> 'test-verses',setAttribute(name,value){this[name]=value;}};
+const previousLookup=c.document.getElementById;c.document.getElementById=()=>panel;
+await handlers.click({target:{closest:selector=>selector==='[data-story-section]'?section:null}});
+assert.equal(panel.hidden,false);assert.equal(section['aria-expanded'],'true');
+await handlers.click({target:{closest:selector=>selector==='[data-story-section]'?section:null}});
+assert.equal(panel.hidden,true);assert.equal(section['aria-expanded'],'false');
+c.document.getElementById=previousLookup;
+console.log('PASS: Story verse controls start closed, expand and collapse accessibly, with arrow-free passage labels.');

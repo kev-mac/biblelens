@@ -17,9 +17,10 @@ function storySlug(value){return value.toLowerCase().replace(/[^a-z0-9]+/g,'-').
 function storyRoute(){return /^#stories\/([a-z0-9-]+)\/([a-z0-9-]+)$/.exec(location.hash);}
 function storyCard(story, pivot=false){
  const reference=storyReference(story.passage);
- const passage=reference?`<button type="button" class="story-passage" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.passage)} starting at verse ${reference.verse}">${esc(story.passage)} →</button>`:`<span>${esc(story.passage)}</span>`;
+ const passage=reference?`<button type="button" class="story-passage" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.passage)} starting at verse ${reference.verse}">${esc(story.passage)}</button>`:`<span>${esc(story.passage)}</span>`;
  const references=story.cross_references.map(label=>{const ref=storyReference(label);return ref?`<button type="button" class="verse-citation story-reference" data-cite="${ref.book}/${ref.chapter}/${ref.verse}" data-cite-end="${ref.endVerse}" data-cite-end-chapter="${ref.endChapter}" data-cite-label="${esc(label)}" data-cite-preview aria-haspopup="dialog" aria-expanded="false">${esc(label)}</button>`:'';}).join('');
- return `<article class="story-card" id="${pivot?'topic-story-':'story-'}${storySlug(story.title)}" tabindex="-1"><h3>${esc(story.title)}</h3>${passage}<p>${esc(story.summary)}</p>${references?`<div class="story-references"><span>Referenced in:</span> ${references}</div>`:''}</article>`;
+ const id=(pivot?'topic-story-':'story-')+storySlug(story.title),panelId=id+'-verses';
+ return `<article class="story-card" id="${id}" tabindex="-1"><h3>${esc(story.title)}</h3><p class="story-summary">${esc(story.summary)}</p><div class="person-section-controls" role="group" aria-label="${esc(story.title)} story sections"><button type="button" class="person-section-toggle" data-story-section aria-expanded="false" aria-controls="${panelId}" id="${panelId}-toggle"><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span><span class="person-section-label">Verses</span></button></div><section class="person-section-panel" id="${panelId}" aria-labelledby="${panelId}-toggle" hidden><h4>Verses</h4>${passage}${references?`<div class="story-references"><span>Referenced in:</span> ${references}</div>`:''}</section></article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
@@ -66,6 +67,9 @@ $('#stories-book').addEventListener('change',updateStoriesFilters);
 $('#stories-theme').addEventListener('change',updateStoriesFilters);
 $('#stories-reset').addEventListener('click',()=>{storiesPage=0;storiesBook='';storiesTheme='';storiesSearch='';if(storyRoute())history.replaceState(null,'','#stories');renderStoriesView();});
 document.addEventListener('click',async event=>{
+ const section=event.target.closest('[data-story-section]');
+ if(section){const panel=document.getElementById(section.getAttribute('aria-controls'));if(panel){panel.hidden=!panel.hidden;section.setAttribute('aria-expanded',String(!panel.hidden));}return;}
+
  const paging=event.target.closest('[data-stories-page]');
  if(paging){
   if(paging.disabled)return;

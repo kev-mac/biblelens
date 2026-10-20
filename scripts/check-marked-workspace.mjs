@@ -25,7 +25,7 @@ const actualPrimaryReferences=context.markedPrimaryReferences;
 // Expanded cards quote primary passages before reasoning and place secondary references after it.
 Object.assign(context,{markedBookSelection:0,books:[{name:'Genesis'}],languageTags:{T:{}},comparisonTone:()=> 'translation',comparisonEvidenceOpen:new Set(),esc:s=>String(s),summaryText:r=>r.summary,comparisonReasoning:r=>r.reasoning,referenceLink:r=>`<a class="verse-citation">${r.label}</a>`,commandmentLabels:()=>'',commandmentRepetitions:()=>'',roleCitations:()=>'<div class="context-citations">Supporting reference</div>',scienceDetails:()=>'',markedPrimaryReferences:()=>[{label:'Genesis 49:10',quotes:['Full scripture quotation']}],markedCardId:()=> 'marked-regression'});
 vm.runInContext(readerSource.slice(readerSource.indexOf('function relatedStudyPassages('),readerSource.indexOf('function scienceDetails(')),context);
-context.markedKind='all';context.markedMatchingPlacements=()=>[{chapter:49,verse:10}];context.markedChoices=r=>[{...r,tag:'T'}];context.markedGroup=()=> 'T';
+context.markedKind='all';context.markedMatchingPlacements=()=>[{chapter:49,verse:10}];context.markedChoices=r=>[{...r,tag:'T'}];context.markedGroup=()=> 'V';
 vm.runInContext(source.slice(source.indexOf('function markedPrimaryRows'),source.indexOf('function renderMarkedContext')),context);
 // Prose links preserve chapter/range navigation and escape user-facing text.
 context.books=[{name:'Genesis',chapters:50}];
@@ -86,3 +86,19 @@ assert(has({kind:'bookmark',chapter:1},{verseBookmarks:{test:{book:0,chapter:1}}
 assert(!has({kind:'bookmark',chapter:2},{verseBookmarks:{test:{book:0,chapter:1}}}));
 assert(availability.markedFilterHasResults(null,{book:0},{}));
 console.log('PASS: zero-result draft filters respect categories, chapters, personal marks and commandment facets; unknown availability stays selectable.');
+
+// Questions retain evidence and scope in People-style, initially closed sections.
+const question=context.markedCategoryProfileCard({summary:'Genesis 1 leaves a question open.',text:'Quoted evidence',scope:'Interpretation limits',sources:[{url:'https://example.com/source',label:'Edition source'}],reasoning:'Reasoned comparison'}, {}, 'question-test', 'A question?', [{label:'Genesis 1:3',quotes:['Let there be light']}], '<div>Secondary References</div>');
+assert(question.includes('category-profile-card'));
+assert.equal((question.match(/data-category-section aria-expanded="false"/g)||[]).length,2);
+assert(question.includes('id="question-test-verses" aria-labelledby="question-test-verses-toggle" hidden'));
+assert(question.includes('id="question-test-reasoning" aria-labelledby="question-test-reasoning-toggle" hidden'));
+assert(question.includes('Let there be light'));assert(question.includes('Secondary References'));
+assert(question.includes('Interpretation limits'));assert(question.includes('Edition source'));
+assert(!question.includes('data-summary-toggle'));
+console.log('PASS: Questions profile cards preserve quotations, secondary references, reasoning, scope and sources in initially closed sections.');
+
+context.books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
+assert.equal(context.markedInlineScriptureLinks('Psalm 148:4'),'<a class="comparison-inline-reference" href="#read/18/148/4">Psalm 148:4</a>');
+assert.equal(context.markedInlineScriptureLinks('Psalms 104:6–9'),'<a class="comparison-inline-reference" href="#read/18/104/6-9">Psalms 104:6–9</a>');
+console.log('PASS: singular Psalm and plural Psalms references link to the same canonical book.');

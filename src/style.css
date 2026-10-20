@@ -2274,3 +2274,65 @@ html body.dark .place-profile-card{--profile-glow:#8cc8ff}
 html body .place-profile-card .character-summary{margin:14px 0}
 html body #places-view .person-section-toggle:is(:focus,:focus-visible),
 html body #places-view .person-section-panel:is(:focus,:focus-visible){outline:none!important;box-shadow:none!important}
+
+/* Story profiles share People’s spacing, surface treatment and section controls. */
+html body :is(#stories-view,#story-topic-body) .story-card{padding:18px;border-radius:22px;background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb),var(--surface-base))!important;border:1px solid rgba(var(--theme-rgb),.65)!important;--profile-glow:#367fc3}
+html body.dark :is(#stories-view,#story-topic-body) .story-card{--profile-glow:#8cc8ff}
+html body .story-card h3{font-size:1.35rem;margin:4px 0 16px;color:var(--ink)}
+html body .story-card .story-summary{font-size:.875rem;line-height:1.65;margin:14px 0}
+body .story-card .person-section-controls{display:flex;justify-content:center;margin:18px 0 0}
+body .story-card .person-section-toggle{width:100px}
+html body .story-card .person-section-panel{padding:16px;margin-top:16px;border:1px solid rgba(var(--theme-rgb),.65);border-radius:16px}
+body .story-card .person-section-panel h4{margin:0 0 12px;font-size:1rem}
+html body .story-card :is(.story-passage,.story-reference){padding:9px 12.6px!important;min-height:39.6px!important;border-radius:10.8px!important;font-size:.7875rem!important;font-weight:400;color:var(--ink)!important;border:1px solid rgba(var(--theme-rgb),.55)!important;background:radial-gradient(circle at 50% 0%,rgba(var(--theme-rgb),.12),rgba(255,255,255,.85)) #fff!important}
+html body.dark .story-card :is(.story-passage,.story-reference){background:radial-gradient(circle at 50% 0%,rgba(var(--theme-rgb),.2),rgba(15,23,34,.65)) #0f1722!important}
+html body .story-card :is(.story-passage,.story-reference):is(:hover,:focus-visible){border-color:rgba(var(--theme-rgb),.85)!important;background:rgba(var(--theme-rgb),.22)!important}
+body .story-card .story-references{margin-top:16px}
+body .story-card .story-references>span{flex-basis:100%;color:var(--muted)}
+html body .story-card:is(:focus,:focus-visible),html body .story-card.story-linked,
+html body .story-card :is(button,[tabindex]):is(:focus,:focus-visible){outline:none!important;box-shadow:none!important}
+html body #stories-search:focus{outline:none!important;box-shadow:none!important}
+
+/* Questions retain category filtering while sharing People’s profile layout. */
+html body #saved-view .category-profile-card .comparison-summary{padding:18px!important;--profile-glow:#367fc3}
+html body.dark #saved-view .category-profile-card .comparison-summary{--profile-glow:#8cc8ff}
+html body #saved-view .category-profile-card .comparison-summary h3{font-size:1.35rem!important;margin:4px 0 16px}
+html body #saved-view .category-profile-card .comparison-summary>p{font-size:.875rem!important;line-height:1.65;margin:14px 0}
+body .category-profile-card .person-section-controls{display:flex;justify-content:space-around;margin:18px 0 0}
+body .category-profile-card .person-section-toggle{flex:0 1 100px}
+html body #saved-view .category-profile-card .category-profile-panel{padding:16px;margin-top:16px;border:1px solid rgba(var(--theme-rgb),.65);border-radius:16px}
+body .category-profile-panel h4{margin:0 0 12px;font-size:1rem}
+html body #saved-view .category-profile-card .category-profile-panel p{font-size:.875rem!important}
+html body .category-profile-card [data-comparison-inspect]{color:var(--muted)!important}
+
+/* Commandments use the shared profile layout without changing filter controls. */
+html body #commandments-view .commandment-card{padding:18px;border-radius:22px;background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb),var(--surface-base))!important;border:1px solid rgba(var(--theme-rgb),.65)!important;--profile-glow:#367fc3}
+html body.dark #commandments-view .commandment-card{--profile-glow:#8cc8ff}
+html body .commandment-card h2{font-size:1.35rem!important;line-height:1.5;margin:4px 0 12px}
+body .commandment-card .commandment-number{font-size:.8rem;color:var(--muted);margin:0 0 12px}
+html body .commandment-card .commandment-summary{padding:0;border:0!important;background:transparent!important}
+body .commandment-card .commandment-summary p{font-size:.875rem;line-height:1.65;margin:14px 0}
+body .commandment-card .person-section-controls{display:flex;justify-content:space-evenly;margin:18px 0 0}
+body .commandment-card .person-section-toggle{flex:0 1 100px}
+html body .commandment-card .person-section-panel{padding:16px;margin-top:16px;border:1px solid rgba(var(--theme-rgb),.65);border-radius:16px}
+body .commandment-card .person-section-panel h3{margin:0 0 12px;font-size:1rem}
+body .commandment-card .person-section-panel p{font-size:.875rem;line-height:1.65}
+html body #commandments-view .commandment-passage{padding:9px 12.6px!important;min-height:39.6px!important;border-radius:10.8px!important;font-size:.7875rem!important;border:1px solid rgba(var(--theme-rgb),.55)!important;background:rgba(var(--theme-rgb),.12)!important}
+html body #commandments-view .commandment-card:is(:focus,:focus-visible),
+html body #commandments-view .commandment-card button:is(:focus,:focus-visible){outline:none!important;box-shadow:none!important}
+html body .comparison-context-dialog .comparison-inline-reference{color:var(--ui-link)!important;font:inherit;text-decoration:none}
+html body .comparison-context-dialog .comparison-inline-reference:hover{text-decoration:underline}
+html body .comparison-context-dialog .comparison-inline-reference:focus-visible{outline:none!important;background:var(--soft)!important}
+
+/* Private Marked entries use profile controls without altering saved data or editors. */
+html body #saved-view .category-personal-profile{--theme-rgb:234,179,8;--profile-glow:#367fc3;padding:18px;border-radius:22px;margin-bottom:20px;background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb),var(--surface-base))!important;border:1px solid rgba(var(--theme-rgb),.65)!important}
+html body.dark #saved-view .category-personal-profile{--profile-glow:#8cc8ff}
+body .category-personal-profile h3{font-size:1.35rem;line-height:1.5;margin:4px 0 16px}
+body .category-personal-profile>p{font-size:.875rem;line-height:1.65}
+body .category-personal-profile .person-section-controls{display:flex;justify-content:space-evenly;margin-top:18px}
+body .category-personal-profile .person-section-toggle{flex:0 1 100px}
+html body .category-personal-profile .person-section-panel{padding:16px;margin-top:16px;border:1px solid rgba(var(--theme-rgb),.65);border-radius:16px}
+body .category-personal-profile h4{font-size:1rem;margin:0 0 12px}
+body .category-personal-profile .person-section-panel p{font-size:.875rem;line-height:1.65}
+html body .category-personal-profile button:is(:focus,:focus-visible){outline:none!important;box-shadow:none!important}
+html body #saved-view .category-personal-profile>p{font-size:.875rem!important;line-height:1.65}

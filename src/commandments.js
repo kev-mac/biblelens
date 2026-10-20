@@ -25,7 +25,9 @@ function filterCommandments(records,filters,query='') {
 }
 function commandmentCard(item) {
  const passage=reference=>`<button type="button" class="commandment-passage" data-commandment-passage="${esc(reference)}" aria-label="Read ${esc(reference)}">${esc(reference)}</button>`;
- return `<article class="commandment-card"><div class="commandment-card-heading"><h2>${esc(item.title)}</h2></div><section class="commandment-summary" aria-label="Passage text"><p>${esc(item.summary)}</p></section>${item.lens?.length?`<section class="commandment-lens" aria-label="New Testament lens"><h3>New Testament lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${passage(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}<div class="commandment-card-footer">${passage(item.passage)}<span class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</span></div></article>`;
+ const prefix='commandment-'+item.id;
+ const control=(key,label,paths,available=true)=>`<button type="button" class="person-section-toggle" data-commandment-section aria-expanded="false" aria-controls="${esc(prefix)}-${key}" id="${esc(prefix)}-${key}-toggle" ${available?'':'disabled'}><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths}</svg></span><span class="person-section-label">${label}</span></button>`;
+ return `<article class="commandment-card"><div class="commandment-card-heading"><h2>${esc(item.title)}</h2></div><p class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</p><section class="commandment-summary" aria-label="Passage text"><p>${esc(item.summary)}</p></section><div class="person-section-controls" role="group" aria-label="${esc(item.title)} commandment sections">${control('verses','Verses','<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/>')}${control('lens','NT lens','<path d="M3 4h7a3 3 0 0 1 3 3v14a3 3 0 0 0-3-3H3zM13 7a3 3 0 0 1 3-3h5v14h-5a3 3 0 0 0-3 3"/>',!!item.lens?.length)}</div><section class="person-section-panel" id="${esc(prefix)}-verses" aria-labelledby="${esc(prefix)}-verses-toggle" hidden><h3>Verses</h3>${passage(item.passage)}</section><section class="person-section-panel${item.lens?.length?' commandment-lens':''}" id="${esc(prefix)}-lens" aria-labelledby="${esc(prefix)}-lens-toggle" hidden><h3>New Testament lens</h3>${(item.lens||[]).map(link=>`<div class="commandment-lens-item">${passage(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section></article>`;
 }
 function initCommandments() {
  const root=document.querySelector('#commandments-view');if(!root)return;
@@ -54,6 +56,13 @@ function initCommandments() {
   filters[dimension]=[...selected];visibleCount=60;render();
  }
  root.addEventListener('click',event=>{
+  const section=event.target.closest('[data-commandment-section]');
+  if(section){
+   if(section.disabled)return;
+   const card=section.closest('.commandment-card'),panel=document.getElementById(section.getAttribute('aria-controls')),open=panel.hidden;
+   for(const control of card.querySelectorAll('[data-commandment-section]')){const selected=open&&control===section;control.setAttribute('aria-expanded',String(selected));document.getElementById(control.getAttribute('aria-controls')).hidden=!selected;}return;
+  }
+
   const button=event.target.closest('[data-commandment-quick]');if(!button||button.disabled)return;
   const dimension=button.dataset.commandmentQuick,value=button.dataset.value;
   toggle(dimension,value,!filters[dimension].includes(value));

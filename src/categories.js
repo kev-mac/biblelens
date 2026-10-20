@@ -9,11 +9,20 @@ function categoryPersonalItems({book=markedBookSelection,chapter=markedChapterSe
  const studies=ENTRIES.filter(e=>(state.bookmarks.includes(e.id)||!bookmarksOnly&&(state.notes[e.id]||state.noteTitles?.[e.id]))&&e.refs.some(ref=>{const p=readRef(ref);return p&&(book===-1||p.book===book)&&(!chapter||p.chapter===chapter);})).map(item=>({kind:'study',item}));
  return [...verses,...passages,...studies];
 }
-function categoryPersonalCard({kind,item}){
+function categoryPersonalCard({kind,item},profile=false){
+ if(profile)return categoryPersonalProfile(kind,item);
  if(kind==='study')return `<article class="passage-saved-card"><button class="text-button" data-open="${esc(item.id)}">${esc(state.noteTitles?.[item.id]||item.title)}</button><p>${esc(state.notes[item.id]||'')}</p></article>`;
  const key=`${item.book}:${item.chapter}${kind==='verse'?':'+item.verse:''}`,note=kind==='verse'?state.verseNotes[key]||item:state.passageNotes[key]||item;
  const reference=`${books[item.book].name} ${item.chapter}${kind==='verse'?':'+item.verse:''}`;
  return `<article class="passage-saved-card marked-bookmark"><button type="button" class="verse-citation" data-read="${item.book}/${item.chapter}${kind==='verse'?'/'+item.verse:''}">${esc(reference)}</button>${kind==='verse'?bookmarkVerseTextHtml(item.book,item.chapter,item.verse):''}${note.title?`<h3>${esc(note.title)}</h3>`:''}${note.text?`<p class="passage-saved-note">${esc(note.text)}</p>`:''}${noteActionButtons(`${item.book}/${item.chapter}${kind==='verse'?'/'+item.verse:''}`)}</article>`;
+}
+function categoryPersonalProfile(kind,item){
+ const study=kind==='study',ref=study?'':`${item.book}/${item.chapter}${kind==='verse'?'/'+item.verse:''}`;
+ const key=ref.replaceAll('/',':'),note=study?{title:state.noteTitles?.[item.id],text:state.notes[item.id]}:(kind==='verse'?state.verseNotes[key]:state.passageNotes[key])||item;
+ const reference=study?item.title:`${books[item.book].name} ${item.chapter}${kind==='verse'?':'+item.verse:''}`;
+ const id='personal-'+kind+'-'+(study?item.id:ref.replaceAll('/','-')),hasNote=!!(note.title||note.text);
+ const icon=paths=>`<span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths}</svg></span>`;
+ return `<article class="marked-bookmark category-personal-profile" data-tone="bookmark"><h3>${esc(note.title||reference)}</h3>${note.title?`<p class="character-aliases">${esc(reference)}</p>`:''}${kind==='verse'?bookmarkVerseTextHtml(item.book,item.chapter,item.verse):study?`<p>${esc(item.summary||'')}</p>`:''}<div class="person-section-controls" role="group" aria-label="${esc(reference)} saved passage sections"><button type="button" class="person-section-toggle" ${study?`data-open="${esc(item.id)}"`:`data-read="${ref}"`} aria-label="Read ${esc(reference)}">${icon('<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/>')}<span class="person-section-label">Read</span></button><button type="button" class="person-section-toggle" data-personal-section aria-controls="${esc(id)}-note" id="${esc(id)}-note-toggle" aria-expanded="false" ${hasNote?'':'disabled'}>${icon('<path d="M4 3h16v18H4zM8 8h8m-8 4h8m-8 4h5"/>')}<span class="person-section-label">Note</span></button></div><section class="person-section-panel" id="${esc(id)}-note" aria-labelledby="${esc(id)}-note-toggle" hidden><h4>Note</h4>${note.text?`<p class="passage-saved-note">${esc(note.text)}</p>`:''}${study?'':noteActionButtons(ref)}</section></article>`;
 }
 function categoryQuery(kind,page=0,limit=24){return new URLSearchParams({book:markedBookSelection===-1?'all':String(markedBookSelection),chapter:String(markedChapterSelection),kind,page:String(page),limit:String(limit),theme:markedTheme,type:markedCommandmentType});}
 function categoryRoute(){
@@ -70,11 +79,21 @@ async function renderPagedCategories(){
     if(token!==categoryRequest||generation!==markedWorkspaceGeneration||view!=='saved')return;
     categoryPages.set(key,current);
     const pages=Math.ceil(total/24),label=MARKED_CATEGORIES.find(([kind])=>kind===key)[1];
-    content.innerHTML=`<p class="category-results" role="status">${total?current*24+1:0}–${Math.min((current+1)*24,total)} of ${total} results</p>`+(records.length?records.map(record=>key==='bookmark'?categoryPersonalCard(record):['stories','characters','prophecies'].includes(key)?categoryDirectoryCard(record,key):markedSummary(record,key)).join(''):'<p class="marked-empty">No results for these filters.</p>')+(pages>1?`<nav class="category-pagination" aria-label="${label} results"><button type="button" data-category-offset="-1" ${current===0?'disabled':''}>← Previous</button><span role="status">${current+1} / ${pages}</span><button type="button" data-category-offset="1" ${current+1>=pages?'disabled':''}>Next →</button></nav>`:'');
+    content.innerHTML=`<p class="category-results" role="status">${total?current*24+1:0}–${Math.min((current+1)*24,total)} of ${total} results</p>`+(records.length?records.map(record=>key==='bookmark'?categoryPersonalCard(record,true):['stories','characters','prophecies'].includes(key)?categoryDirectoryCard(record,key):markedSummary(record,key)).join(''):'<p class="marked-empty">No results for these filters.</p>')+(pages>1?`<nav class="category-pagination" aria-label="${label} results"><button type="button" data-category-offset="-1" ${current===0?'disabled':''}>← Previous</button><span role="status">${current+1} / ${pages}</span><button type="button" data-category-offset="1" ${current+1>=pages?'disabled':''}>Next →</button></nav>`:'');
     hydrateMarkedVerseTexts(++markedRenderGeneration);requestAnimationFrame(fitContextCitations);
    }catch{if(token===categoryRequest)content.innerHTML='<p>Results could not load. <button type="button" data-category-retry>Retry</button></p>';}
   }
   box.onclick=async event=>{
+   const personal=event.target.closest('[data-personal-section]');
+   if(personal){if(personal.disabled)return;const panel=document.getElementById(personal.getAttribute('aria-controls'));panel.hidden=!panel.hidden;personal.setAttribute('aria-expanded',String(!panel.hidden));return;}
+
+   const section=event.target.closest('[data-category-section]');
+   if(section){
+    if(section.disabled)return;
+    const card=section.closest('.category-profile-card'),panel=document.getElementById(section.getAttribute('aria-controls')),open=panel.hidden;
+    for(const control of card.querySelectorAll('[data-category-section]')){const selected=open&&control===section;control.setAttribute('aria-expanded',String(selected));document.getElementById(control.getAttribute('aria-controls')).hidden=!selected;}return;
+   }
+
    const button=event.target.closest('[data-category-offset],[data-category-retry]');if(!button||button.disabled)return;
    const page=categoryPages.get(key)||0;
    await fill(button.hasAttribute('data-category-retry')?page:page+Number(button.dataset.categoryOffset));

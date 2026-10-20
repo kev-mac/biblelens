@@ -55,3 +55,17 @@ vm.runInContext(app.slice(app.indexOf('function route(){'),app.indexOf('function
 for(const [key,view] of Object.entries({places:'places',stories:'stories',characters:'characters',commandments:'commandments',prophecies:'prophecies'})){directories.location.hash='#categories/'+key+'?book=0';directories.route();assert.equal(routes.at(-1)[0],view);assert.equal(directories.location.hash,directories.categoryDirectoryLocation(key));}
 assert(!fs.readFileSync('src/categories.js','utf8').includes('class="category-back"'));
 console.log('PASS: category links and legacy routes restore the original directory controls without a body back link.');
+
+// Marked profile rendering keeps private note text escaped and existing action references intact.
+{
+ const profileContext={state:{verseNotes:{'0:1:3':{title:'My note',text:'<private>'}},passageNotes:{},notes:{},noteTitles:{}},books:[{name:'Genesis'}],esc:s=>String(s).replace(/</g,'&lt;').replace(/>/g,'&gt;'),bookmarkVerseTextHtml:()=>'<p data-marked-verse-text="0/1/3">Loading verse text…</p>',noteActionButtons:ref=>'<button data-edit-marked-note="'+ref+'">Edit</button>'};
+ vm.createContext(profileContext);
+ const categorySource=fs.readFileSync('src/categories.js','utf8');
+ vm.runInContext(categorySource.slice(categorySource.indexOf('function categoryPersonalProfile('),categorySource.indexOf('function categoryQuery(')),profileContext);
+ const profile=profileContext.categoryPersonalProfile('verse',{book:0,chapter:1,verse:3});
+ assert(profile.includes('category-personal-profile'));assert(!profile.includes('passage-saved-card'));
+ assert(profile.includes('&lt;private&gt;'));assert(profile.includes('data-edit-marked-note="0/1/3"'));
+ assert(profile.includes('data-marked-verse-text="0/1/3"'));assert(profile.includes('aria-expanded="false"'));
+ assert(profile.includes('id="personal-verse-0-1-3-note" aria-labelledby="personal-verse-0-1-3-note-toggle" hidden'));
+ console.log('PASS: Marked profile cards preserve escaped private notes, text hydration and editor references in initially closed note sections.');
+}
