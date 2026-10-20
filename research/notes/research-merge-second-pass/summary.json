@@ -9,14 +9,19 @@
     "new-only": 133,
     "same-id-variant": 2
   },
-  "quotePass": 222,
-  "quoteFail": 28,
-  "quoteChecks": 1582,
+  "quotePass": 250,
+  "quoteFail": 0,
+  "quoteChecks": 1590,
   "ownerQuestionEntries": 19,
   "notesVersionsPreserved": 23,
   "witnessDecisionsHeld": 2,
   "protectedStateUnchanged": true,
   "idCollisions": 0,
   "publishedIdCollisions": 0,
-  "otherDraftIdCollisions": 0
+  "otherDraftIdCollisions": 0,
+  "quoteCorrectionsFromCheckpoint": {
+    "checkpoint": "4fe1e7d",
+    "originalFailed": 28,
+    "corrected": 28
+  }
 }

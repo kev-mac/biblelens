@@ -79,7 +79,7 @@ undecided=load('undecided.json')
 udoc=['# Items not decided','',
  'The following witness classifications need editorial review. Both sides’ supplied evidence is retained; no expanded classification was silently adopted.','']
 udoc+=table(['Record','Preserved classification kept','New proposal held'],[[u['id'],u['preserved'],u['new']] for u in undecided])
-udoc+=['','The 28 records below remain held for quote correction or source review. Exact failure details are in quote-checks.json. These are not decisions to drop the findings.','']
+udoc+=['',f'{len(failed)} records remain held for quote correction or source review. Exact check results are in quote-checks.json. Quote corrections do not approve a finding or resolve the two classification holds.','']
 udoc+=table(['Reference','Record ID','Result'],[[q['ref'],q['id'],'FAIL — quote/source correction needed'] for q in failed])
 udoc+=['','All 133 new-only findings remain draft, unverified. No final acceptance, rejection, witness expansion or publication decision is made by this merge.','',
  'The three historical owner-question versions are combined in research/claude-drafts/owner-questions.md. Historical “Decided” statements remain attributed reports, not new owner authorization.','']
@@ -91,6 +91,16 @@ rdoc+=table(['Side','Notes file','Status','Opening reported coverage statement']
 rdoc+=['','All matching reported passages, including qualifications elsewhere in the notes: [reported-reading-claims.json](reported-reading-claims.json).','']
 (OUT/'reported-reading-claims.md').write_text('\n'.join(rdoc))
 summary={'branch':'research-merge-second-pass','base':m['base'],'inputRecords':303,'mergedRecords':250,'statusCounts':dict(collections.Counter(r['mergeStatus'] for r in records)),'quotePass':passed,'quoteFail':len(failed),'quoteChecks':sum(len(q['checks']) for q in quotes['records']),'ownerQuestionEntries':len(load('owner-questions-merged.json')),'notesVersionsPreserved':len(m['notes']),'witnessDecisionsHeld':len(undecided),'protectedStateUnchanged':True,'idCollisions':0,'publishedIdCollisions':0,'otherDraftIdCollisions':0}
+if (OUT/'quote-corrections.json').exists():
+ corrections=load('quote-corrections.json')
+ assert corrections['recordsCorrected']==28
+ assert all(qmap[c['id']]['quoteResult']=='PASS' for c in corrections['records'])
+ summary['quoteCorrectionsFromCheckpoint']={'checkpoint':corrections['baselineCheckpoint'],'originalFailed':28,'corrected':28}
+ doc=['# Quote corrections after the unverified draft checkpoint','',
+ 'All 28 failing checkpoint records were corrected against packaged KJV and the cited editions. The scripture checks remain strict; no checks were disabled. Copied footnotes are retained as separately attributed source notes and verified independently. The two classification holds remain unchanged.','',
+ 'Checkpoint `4fe1e7d` preserves the original quotations and reports. Full before/after details: [quote-corrections.json](quote-corrections.json). Current per-record checks: [quote-checks.md](quote-checks.md).','']
+ doc+=table(['Reference / record','Changed fields','Corrections','Current result'],[[c['ref']+' — '+c['id'],', '.join(c['changedFields']),'; '.join(dict.fromkeys(x['reason'] for x in c['changes'])),qmap[c['id']]['quoteResult']] for c in corrections['records']])
+ (OUT/'quote-corrections.md').write_text('\n'.join(doc)+'\n')
 save('summary.json',summary)
 overview=['# Second-pass research merge review','',
  'This is a local draft merge on branch/worktree `research-merge-second-pass`, based on the preserved review branch. Main, the paused task, the queue and ledger are unchanged. Checkpoint label: Unverified draft checkpoint. Nothing was pushed or published; this checkpoint does not approve the findings.','']
@@ -99,5 +109,6 @@ overview+=['','- [Merge log: every finding, source side, status and correction](
  'Source-check resolutions: Psalm 59’s blanket agreement removed; your-law finding retained with Brenton’s variant note; Isaiah 15:9 uses preserved clause alignment and qualifies lion/Arabs; Isaiah 15:7 stands separately as a clause-level difference; Isaiah 65:11 retains Greek evidence plus the attributed Gad/Meni interpretation and its limits; Psalm 18’s mountains/heaven contrast retains Greek sourcing and qualification.','',
  'Jeremiah’s 9:25 ID is corrected to 9:26. The new versions of the two same-ID Samuel records carry `-new-20261020`; their preserved versions retain their original IDs.','',
  'No later work on Psalm headings, eras or the Jesus profile has started.','']
+if (OUT/'quote-corrections.json').exists():overview+=['Quote corrections after checkpoint `4fe1e7d`: [28-record correction log](quote-corrections.md). These remain draft research corrections, not acceptance or publication approval.','']
 (OUT/'README.md').write_text('\n'.join(overview))
 print(json.dumps(summary,indent=2))

@@ -1,7 +1,8 @@
 {
-  "checkedAt": "2026-10-20T15:57:27.084968+00:00",
+  "checkedAt": "2026-10-20T17:14:32.589159+00:00",
+  "inputCheckpoint": null,
   "sourceArchives": {},
-  "normalization": "KJV: exact packaged substrings. Original-language text: whitespace folding and surrounding editorial punctuation excluded; no Unicode normalization of WLC. HTML verse text excludes publisher footnotes and uses visible verse labels, including lettered verses. NT Strong/morphology annotations and apparatus markers are excluded. Brenton English quoted excerpts are checked with publisher footnotes excluded.",
+  "normalization": "KJV: exact packaged substrings. Original-language text: whitespace folding and surrounding editorial punctuation excluded; no Unicode normalization of WLC. HTML verse text excludes publisher footnotes and uses visible verse labels, including lettered verses. NT Strong/morphology annotations and apparatus markers are excluded. Brenton English quoted excerpts are checked with publisher footnotes excluded. Attributed sourceNotes are checked separately against the direct publisher-page evidence.",
   "records": [
     {
       "id": "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8",
@@ -1853,14 +1854,22 @@
     {
       "id": "there-were-they-in-great-fear-psalm-14-5-6-and-psalm-53-5",
       "ref": "Psalms 14:5",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
           "field": "sides",
           "ref": "Psalms 14:5",
-          "quote": "There were they in great fear: for God is in the generation of the righteous. Ye have shamed the counsel of the poor, because the Lord is his refuge.",
-          "result": "FAIL",
+          "quote": "There were they in great fear: for God is in the generation of the righteous.",
+          "result": "PASS",
+          "rule": "exact packaged KJV substring and ref listed"
+        },
+        {
+          "edition": "KJV",
+          "field": "sides",
+          "ref": "Psalms 14:6",
+          "quote": "Ye have shamed the counsel of the poor, because the Lord is his refuge.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring and ref listed"
         },
         {
@@ -1880,6 +1889,18 @@
             "verse": 5
           },
           "quote": "There were they in great fear: for God is in the generation of the righteous.",
+          "result": "PASS",
+          "rule": "exact packaged KJV substring"
+        },
+        {
+          "edition": "KJV",
+          "field": "text",
+          "claimedRef": {
+            "book": 18,
+            "chapter": 14,
+            "verse": 6
+          },
+          "quote": "Ye have shamed the counsel of the poor, because the Lord is his refuge.",
           "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
@@ -4312,7 +4333,7 @@
     {
       "id": "all-nations-shall-flow-or-people-shall-flow-isaiah-2-2-and-micah-4-1",
       "ref": "Isaiah 2:2",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -4378,8 +4399,8 @@
             "chapter": 2,
             "verse": 3
           },
-          "quote": "And many people shall go and say, Come ye, and let us go up to the mountain of the Lord.",
-          "result": "FAIL",
+          "quote": "And many people shall go and say, Come ye, and let us go up to the mountain of the Lord",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -4390,8 +4411,8 @@
             "chapter": 4,
             "verse": 2
           },
-          "quote": "And many nations shall come, and say, Come, and let us go up to the mountain of the Lord.",
-          "result": "FAIL",
+          "quote": "And many nations shall come, and say, Come, and let us go up to the mountain of the Lord",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -4988,7 +5009,7 @@
     {
       "id": "where-is-he-that-counted-the-towers-or-where-is-he-that-counts-the-nurtured-greek-isaiah-33-18",
       "ref": "Isaiah 33:18",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -5011,15 +5032,42 @@
           "rule": "exact packaged KJV substring"
         },
         {
-          "quote": "ἡ ψυχὴ ἡμῶν μελετήσει φόβον· ποῦ εἰσιν οἱ γραμματικοί; ποῦ εἰσιν οἱ συμβουλεύοντες; ποῦ ἐστιν ὁ ἀριθμῶν τοὺς τρεφομένους μικρὸν καὶ μέγαν λαόν",
+          "quote": "ἡ ψυχὴ ἡμῶν μελετήσει φόβον· ποῦ εἰσιν οἱ γραμματικοί; ποῦ εἰσιν οἱ συμβουλεύοντες; ποῦ ἐστιν ὁ ἀριθμῶν τοὺς τρεφομένους",
           "edition": "Brenton Greek",
           "claimedRef": {
             "book": 22,
             "chapter": 33,
             "verse": 18
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA33.htm",
+              "verse": "18"
+            }
+          ],
+          "otherVerseMatches": [],
+          "sourceErrors": [],
+          "checkedSources": [
+            "https://ebible.org/grcbrent/ISA33.htm"
+          ],
+          "field": "text"
+        },
+        {
+          "quote": "μικρὸν καὶ μέγαν λαόν",
+          "edition": "Brenton Greek",
+          "claimedRef": {
+            "book": 22,
+            "chapter": 33,
+            "verse": 19
+          },
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA33.htm",
+              "verse": "19"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -8272,7 +8320,7 @@
     {
       "id": "his-son-and-his-sons-son-and-restore-them-greek-omits-jeremiah-27-7-22",
       "ref": "Jeremiah 27:7, 27:22",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -8348,15 +8396,20 @@
           "field": "text"
         },
         {
-          "quote": "εἰς Βαβυλῶνα εἰσελεύσεται, λέγει Κύριος. ΙΕΡΕΜΙΑΣ",
+          "quote": "εἰς Βαβυλῶνα εἰσελεύσεται, λέγει Κύριος",
           "edition": "Brenton Greek",
           "claimedRef": {
             "book": 23,
             "chapter": 34,
             "verse": 22
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JER34.htm",
+              "verse": "22"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -8436,7 +8489,7 @@
     {
       "id": "branch-of-righteousness-and-david-never-want-a-man-greek-page-ends-at-jeremiah-33-13",
       "ref": "Jeremiah 33:14-26",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -8449,9 +8502,9 @@
         {
           "edition": "KJV",
           "field": "sides",
-          "ref": "Jeremiah 33:14",
+          "ref": "Jeremiah 33:15",
           "quote": "In those days, and at that time, will I cause the Branch of righteousness to grow up unto David",
-          "result": "FAIL",
+          "result": "PASS",
           "rule": "exact packaged KJV substring and ref listed"
         },
         {
@@ -8460,10 +8513,21 @@
           "claimedRef": {
             "book": 23,
             "chapter": 33,
-            "verse": 17,
-            "endVerse": 18
+            "verse": 17
           },
           "quote": "For thus saith the Lord; David shall never want a man to sit upon the throne of the house of Israel;",
+          "result": "PASS",
+          "rule": "exact packaged KJV substring"
+        },
+        {
+          "edition": "KJV",
+          "field": "text",
+          "claimedRef": {
+            "book": 23,
+            "chapter": 33,
+            "verse": 18
+          },
+          "quote": "Neither shall the priests the Levites want a man before me to offer burnt offerings, and to kindle meat offerings, and to do sacrifice continually.",
           "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
@@ -8537,15 +8601,20 @@
           "field": "text"
         },
         {
-          "quote": "ἐν πόλεσι τῆς ὀρεινῆς, καὶ ἐν πόλεσι τῆς σεφηλὰ, καὶ ἐν πόλεσι τῆς ναγὲβ, καὶ ἐν γῇ Βενιαμὶν, καὶ ἐν ταῖς κύκλῳ Ἱερουσαλὴμ, καὶ ἐν πόλεσιν Ἰούδα· ἔτι παρελεύσεται πρόβατα ἐπὶ χεῖρα ἀριθμοῦντος, εἶπε Κύριος. ΙΕΡΕΜΙΑΣ",
+          "quote": "ἐν πόλεσι τῆς ὀρεινῆς, καὶ ἐν πόλεσι τῆς σεφηλὰ, καὶ ἐν πόλεσι τῆς ναγὲβ, καὶ ἐν γῇ Βενιαμὶν, καὶ ἐν ταῖς κύκλῳ Ἱερουσαλὴμ, καὶ ἐν πόλεσιν Ἰούδα· ἔτι παρελεύσεται πρόβατα ἐπὶ χεῖρα ἀριθμοῦντος, εἶπε Κύριος",
           "edition": "Brenton Greek",
           "claimedRef": {
             "book": 23,
             "chapter": 40,
             "verse": 13
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JER40.htm",
+              "verse": "13"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -9727,7 +9796,7 @@
     {
       "id": "egypt-and-judah-and-edom-or-egypt-and-idumea-and-edom-jeremiah-9-26-greek",
       "ref": "Jeremiah 9:26",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -9750,15 +9819,20 @@
           "rule": "exact packaged KJV substring"
         },
         {
-          "quote": "Ἐπʼ Αἴγυπτον, καὶ ἐπὶ Ἰδουμαίαν, καὶ ἐπὶ Ἐδὼμ, καὶ ἐπὶ υἱοὺς Ἀμμὼν, καὶ ἐπὶ υἱοὺς Μωὰβ, καὶ ἐπὶ πάντα περικειρόμενον τὰ κατὰ πρόσωπον αὐτοῦ, τοὺς κατοικοῦντας ἐν τῇ ἐρήμῳ, ὅτι πάντα τὰ ἔθνη ἀπερίτμητα σαρκὶ, καὶ πᾶς οἶκος Ἰσραὴλ ἀπερίτμητοι καρδίας αὐτῶν. ΙΕΡΕΜΙΑΣ",
+          "quote": "Ἐπʼ Αἴγυπτον, καὶ ἐπὶ Ἰδουμαίαν, καὶ ἐπὶ Ἐδὼμ, καὶ ἐπὶ υἱοὺς Ἀμμὼν, καὶ ἐπὶ υἱοὺς Μωὰβ, καὶ ἐπὶ πάντα περικειρόμενον τὰ κατὰ πρόσωπον αὐτοῦ, τοὺς κατοικοῦντας ἐν τῇ ἐρήμῳ, ὅτι πάντα τὰ ἔθνη ἀπερίτμητα σαρκὶ, καὶ πᾶς οἶκος Ἰσραὴλ ἀπερίτμητοι καρδίας αὐτῶν",
           "edition": "Brenton Greek",
           "claimedRef": {
             "book": 23,
             "chapter": 9,
             "verse": 25
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JER09.htm",
+              "verse": "25"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -10660,14 +10734,14 @@
     {
       "id": "hazor-a-dwelling-for-dragons-or-the-court-a-haunt-of-ostriches-jeremiah-49-33-greek",
       "ref": "Jeremiah 49:33",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
           "field": "sides",
-          "ref": "Jeremiah 49:28",
+          "ref": "Jeremiah 49:33",
           "quote": "And Hazor shall be a dwelling for dragons, and a desolation for ever",
-          "result": "FAIL",
+          "result": "PASS",
           "rule": "exact packaged KJV substring and ref listed"
         },
         {
@@ -11162,7 +11236,7 @@
     {
       "id": "anger-not-kept-for-ever-or-fire-burning-for-ever-jeremiah-3-12-17-4",
       "ref": "Jeremiah 3:12, 17:4",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -11240,11 +11314,18 @@
           "quote": "for I am merciful, saith the Lord, and I will not be angry with you for ever",
           "edition": "Brenton English",
           "claimedRef": null,
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/eng-Brenton/JER03.htm",
+              "verse": "12"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
-          "checkedSources": [],
+          "checkedSources": [
+            "https://ebible.org/eng-Brenton/JER03.htm"
+          ],
           "field": "text"
         },
         {
@@ -11311,15 +11392,20 @@
           "field": "text"
         },
         {
-          "quote": "כִּֽי־חָסִ֤יד אֲנִי֙ נְאֻם־יְהוָ֔ה לֹ֥א אֶטֹּ֖ור לְעֹולָֽם׃",
+          "quote": "הָלֹ֡ךְ וְקָֽרָאתָ֩ אֶת־הַדְּבָרִ֨ים הָאֵ֜לֶּה צָפֹ֗ונָה וְ֠אָמַרְתָּ שׁ֣וּבָה מְשֻׁבָ֤ה יִשְׂרָאֵל֙ נְאֻם־יְהוָ֔ה לֹֽוא־אַפִּ֥יל פָּנַ֖י בָּכֶ֑ם כִּֽי־חָסִ֤יד אֲנִי֙ נְאֻם־יְהוָ֔ה לֹ֥א אֶטֹּ֖ור לְעֹולָֽם׃",
           "edition": "WLC",
           "claimedRef": {
             "book": 23,
             "chapter": 3,
             "verse": 12
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/24/3/",
+              "verse": "12"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -11328,15 +11414,20 @@
           "field": "text"
         },
         {
-          "quote": "כִּֽי־אֵ֛שׁ קְדַחְתֶּ֥ם בְּאַפִּ֖י עַד־עֹולָ֥ם תּוּקָֽד׃",
+          "quote": "וְשָׁמַטְתָּ֗ה וּבְךָ֙ מִנַּחֲלָֽתְךָ֙ אֲשֶׁ֣ר נָתַ֣תִּי לָ֔ךְ וְהַעֲבַדְתִּ֙יךָ֙ אֶת־אֹ֣יְבֶ֔יךָ בָּאָ֖רֶץ אֲשֶׁ֣ר לֹֽא־יָדָ֑עְתָּ כִּֽי־אֵ֛שׁ קְדַחְתֶּ֥ם בְּאַפִּ֖י עַד־עֹולָ֥ם תּוּקָֽד׃ ס",
           "edition": "WLC",
           "claimedRef": {
             "book": 23,
             "chapter": 17,
             "verse": 4
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/24/17/",
+              "verse": "4"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -11372,7 +11463,7 @@
     {
       "id": "i-will-not-repent-or-i-am-weary-with-repenting-jeremiah-4-28-15-6",
       "ref": "Jeremiah 4:28, 15:6",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -11537,15 +11628,20 @@
           "field": "text"
         },
         {
-          "quote": "עַל־זֹאת֙ תֶּאֱבַ֣ל הָאָ֔רֶץ וְקָדְר֥וּ הַשָּׁמַ֖יִם מִמָּ֑עַל עַ֤ל כִּי־דִבַּ֙רְתִּי֙ זַמֹּ֔תִי וְלֹ֥א נִחַ֖מְתִּי וְלֹא־אָשׁ֥וּב מִמֶּֽנָּה׃",
+          "quote": "עַל־זֹאת֙ תֶּאֱבַ֣ל הָאָ֔רֶץ וְקָדְר֥וּ הַשָּׁמַ֖יִם מִמָּ֑עַל עַ֤ל כִּי־דִבַּ֙רְתִּי֙ זַמֹּ֔תִי וְלֹ֥א נִחַ֖מְתִּי וְלֹא־אָשׁ֥וּב מִמֶּֽנָּה׃",
           "edition": "WLC",
           "claimedRef": {
             "book": 23,
             "chapter": 4,
             "verse": 28
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/24/4/",
+              "verse": "28"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -11554,15 +11650,20 @@
           "field": "text"
         },
         {
-          "quote": "אַ֣תְּ נָטַ֥שְׁתְּ אֹתִ֛י נְאֻם־יְהוָ֖ה אָחֹ֣ור תֵּלֵ֑כִי וָאַ֨ט אֶת־יָדִ֤י עָלַ֙יִךְ֙ וָֽאַשְׁחִיתֵ֔ךְ נִלְאֵ֖יתִי הִנָּחֵֽם׃",
+          "quote": "אַ֣תְּ נָטַ֥שְׁתְּ אֹתִ֛י נְאֻם־יְהוָ֖ה אָחֹ֣ור תֵּלֵ֑כִי וָאַ֨ט אֶת־יָדִ֤י עָלַ֙יִךְ֙ וָֽאַשְׁחִיתֵ֔ךְ נִלְאֵ֖יתִי הִנָּחֵֽם׃",
           "edition": "WLC",
           "claimedRef": {
             "book": 23,
             "chapter": 15,
             "verse": 6
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/24/15/",
+              "verse": "6"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -11598,7 +11699,7 @@
     {
       "id": "because-of-manasseh-or-every-one-shall-die-for-his-own-iniquity-jeremiah-15-4-31-29-30",
       "ref": "Jeremiah 15:4, 31:29-30",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -11637,8 +11738,8 @@
             "verse": 29,
             "endVerse": 30
           },
-          "quote": "In those days they shall say no more, The fathers have eaten a sour grape, and the children’s teeth are set on edge. But every one shall die for his own iniquity: every man that eateth the sour grape, his teeth shall be set on edge.",
-          "result": "FAIL",
+          "quote": "In those days they shall say no more, The fathers have eaten a sour grape, and the children's teeth are set on edge. But every one shall die for his own iniquity: every man that eateth the sour grape, his teeth shall be set on edge.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -11666,27 +11767,44 @@
         {
           "quote": "Ἐν ταῖς ἡμέραις ἐκείναις οὐ μὴ εἴπωσιν, οἱ πατέρες ἔφαγον ὄμφακα, καὶ οἱ ὀδόντες τῶν τέκνων ᾑμωδίασαν. Ἀλλʼ ἢ ἕκαστος ἐν τῇ ἑαυτοῦ ἁμαρτίᾳ ἀποθανεῖται, καὶ τοῦ φαγόντος τὸν ὄμφακα αἱμωδιάσουσιν οἱ ὀδόντες αὐτοῦ",
           "edition": "Brenton Greek",
-          "claimedRef": null,
-          "result": "FAIL",
-          "matches": [],
+          "claimedRef": {
+            "book": 23,
+            "chapter": 38,
+            "verse": 29,
+            "endVerse": 30
+          },
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/JER38.htm",
+              "verses": [
+                "29",
+                "30"
+              ]
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
-            "https://ebible.org/grcbrent/JER15.htm",
             "https://ebible.org/grcbrent/JER38.htm"
           ],
           "field": "text"
         },
         {
-          "quote": "וּנְתַתִּים לְזַעֲוָה לְכֹל מַמְלְכוֹת הָאָרֶץ בִּגְלַל מְנַשֶּׁה בֶן־יְחִזְקִיָּהוּ מֶלֶךְ יְהוּדָה עַל אֲשֶׁר־עָשָׂה בִּירוּשָׁלִָם׃",
+          "quote": "וּנְתַתִּ֣ים [לִזְוָעָה כ] (לְזַֽעֲוָ֔ה ק) לְכֹ֖ל מַמְלְכֹ֣ות הָאָ֑רֶץ בִּ֠גְלַל מְנַשֶּׁ֤ה בֶן־יְחִזְקִיָּ֙הוּ֙ מֶ֣לֶךְ יְהוּדָ֔ה עַ֥ל אֲשֶׁר־עָשָׂ֖ה בִּירוּשָׁלִָֽם׃",
           "edition": "WLC",
           "claimedRef": {
             "book": 23,
             "chapter": 15,
             "verse": 4
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/24/15/",
+              "verse": "4"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -11695,7 +11813,7 @@
           "field": "text"
         },
         {
-          "quote": "בַּיָּמִים הָהֵם לֹא־יֹאמְרוּ עוֹד אָבוֹת אָכְלוּ בֹסֶר וְשִׁנֵּי בָנִים תִּקְהֶינָה׃ כִּי אִם־אִישׁ בַּעֲוֹנוֹ יָמוּת כָּל־הָאָדָם הָאֹכֵל הַבֹּסֶר תִּקְהֶינָה שִׁנָּיו׃",
+          "quote": "בַּיָּמִ֣ים הָהֵ֔ם לֹא־יֹאמְר֣וּ עֹ֔וד אָבֹ֖ות אָ֣כְלוּ בֹ֑סֶר וְשִׁנֵּ֥י בָנִ֖ים תִּקְהֶֽינָה׃ כִּ֛י אִם־אִ֥ישׁ בַּעֲוֹנֹ֖ו יָמ֑וּת כָּל־הָֽאָדָ֛ם הָאֹכֵ֥ל הַבֹּ֖סֶר תִּקְהֶ֥ינָה שִׁנָּֽיו׃ ס",
           "edition": "WLC",
           "claimedRef": {
             "book": 23,
@@ -11703,8 +11821,16 @@
             "verse": 29,
             "endVerse": 30
           },
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://bolls.life/get-text/WLC/24/31/",
+              "verses": [
+                "29",
+                "30"
+              ]
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -17831,8 +17957,16 @@
     {
       "id": "king-of-israel-come-out-to-seek-a-flea-or-thy-life-1-samuel-26-20",
       "ref": "1 Samuel 26:20",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
+        {
+          "edition": "Brenton English publisher footnote",
+          "field": "sourceNotes",
+          "source": "https://ebible.org/eng-Brenton/1SA26.htm",
+          "quote": "Gr. the face of the Lord.",
+          "result": "PASS",
+          "rule": "exact attributed publisher footnote; checked separately from scripture"
+        },
         {
           "edition": "KJV",
           "field": "sides",
@@ -17866,11 +18000,16 @@
           "rule": "exact packaged KJV substring"
         },
         {
-          "quote": "And now let not my blood fall to the ground before ††Gr. the face of the Lord.the Lord, for the king of Israel has come forth to seek thy life, as the night hawk pursues its prey in the mountains",
+          "quote": "And now let not my blood fall to the ground before the Lord, for the king of Israel has come forth to seek thy life, as the night hawk pursues its prey in the mountains",
           "edition": "Brenton English",
           "claimedRef": null,
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/eng-Brenton/1SA26.htm",
+              "verse": "20"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -17972,8 +18111,24 @@
     {
       "id": "achish-david-with-me-these-days-or-these-years-or-second-year-1-samuel-29-3",
       "ref": "1 Samuel 29:3",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
+        {
+          "edition": "Brenton English publisher footnote",
+          "field": "sourceNotes",
+          "source": "https://ebible.org/eng-Brenton/1SA29.htm",
+          "quote": "The word עכר is here translated; as in Gen. 14. 13.",
+          "result": "PASS",
+          "rule": "exact attributed publisher footnote; checked separately from scripture"
+        },
+        {
+          "edition": "Brenton English publisher footnote",
+          "field": "sourceNotes",
+          "source": "https://ebible.org/eng-Brenton/1SA29.htm",
+          "quote": "Gr. to or days.",
+          "result": "PASS",
+          "rule": "exact attributed publisher footnote; checked separately from scripture"
+        },
         {
           "edition": "KJV",
           "field": "sides",
@@ -18007,11 +18162,16 @@
           "rule": "exact packaged KJV substring"
         },
         {
-          "quote": "And the lords of the Philistines said, Who are these †The word עכר is here translated; as in Gen. 14. 13.that pass by? And Anchus said to the captains of the Philistines, Is not this David the servant of Saul king of Israel? he has been with us ‡Gr. to or days.some time, even this second year, and I have not found any fault in him from the day that he attached himself to me even until this day",
+          "quote": "And the lords of the Philistines said, Who are these that pass by? And Anchus said to the captains of the Philistines, Is not this David the servant of Saul king of Israel? he has been with us some time, even this second year, and I have not found any fault in him from the day that he attached himself to me even until this day",
           "edition": "Brenton English",
           "claimedRef": null,
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/eng-Brenton/1SA29.htm",
+              "verse": "3"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -18078,23 +18238,6 @@
               "verse": "3"
             }
           ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/9/29/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "עכר",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 8,
-            "chapter": 29,
-            "verse": 3
-          },
-          "result": "FAIL",
-          "matches": [],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -18220,8 +18363,16 @@
     {
       "id": "hannah-song-his-king-or-our-kings-1-samuel-2-10",
       "ref": "1 Samuel 2:10",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
+        {
+          "edition": "Brenton English publisher footnote",
+          "field": "sourceNotes",
+          "source": "https://ebible.org/eng-Brenton/1SA02.htm",
+          "quote": "Perhaps 'and the Lord executes,' etc. Comp. Jer. 9. 24.",
+          "result": "PASS",
+          "rule": "exact attributed publisher footnote; checked separately from scripture"
+        },
         {
           "edition": "KJV",
           "field": "sides",
@@ -18243,11 +18394,16 @@
           "rule": "exact packaged KJV substring"
         },
         {
-          "quote": "The Lord will weaken his adversary; the Lord is holy. Let not the wise man boast in his wisdom, nor let the mighty man boast in his strength, and let not the rich man boast in his wealth; but let him that boasts boast in this, to understand and know the Lord, *Perhaps 'and the Lord executes,' etc. Comp. Jer. 9. 24.and to execute judgment and justice in the midst of the earth. The Lord has gone up to the heavens, and has thundered: he will judge the extremities of the earth, and he gives strength to our kings, and will exalt the horn of his Christ. And she left him there before the Lord",
+          "quote": "The Lord will weaken his adversary; the Lord is holy. Let not the wise man boast in his wisdom, nor let the mighty man boast in his strength, and let not the rich man boast in his wealth; but let him that boasts boast in this, to understand and know the Lord, and to execute judgment and justice in the midst of the earth. The Lord has gone up to the heavens, and has thundered: he will judge the extremities of the earth, and he gives strength to our kings, and will exalt the horn of his Christ. And she left him there before the Lord",
           "edition": "Brenton English",
           "claimedRef": null,
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/eng-Brenton/1SA02.htm",
+              "verse": "10"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -19508,7 +19664,7 @@
     {
       "id": "from-the-nations-and-their-gods-or-nations-and-tents-2-samuel-7-23-greek",
       "ref": "2 Samuel 7:23",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -19526,8 +19682,8 @@
             "chapter": 7,
             "verse": 23
           },
-          "quote": "…which thou redeemedst to thee from Egypt, from the nations and their gods?",
-          "result": "FAIL",
+          "quote": "which thou redeemedst to thee from Egypt, from the nations and their gods?",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -22268,8 +22424,24 @@
     {
       "id": "manasseh-made-his-son-pass-through-the-fire-or-his-children-2-kings-21-6-2-chronicles-33-6",
       "ref": "2 Kings 21:6",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
+        {
+          "edition": "Brenton English publisher footnote",
+          "field": "sourceNotes",
+          "source": "https://ebible.org/eng-Brenton/2KI21.htm",
+          "quote": "Lit. peculiar places cut off.",
+          "result": "PASS",
+          "rule": "exact attributed publisher footnote; checked separately from scripture"
+        },
+        {
+          "edition": "Brenton English publisher footnote",
+          "field": "sourceNotes",
+          "source": "https://ebible.org/eng-Brenton/2KI21.htm",
+          "quote": "Alex. θελητὴν.",
+          "result": "PASS",
+          "rule": "exact attributed publisher footnote; checked separately from scripture"
+        },
         {
           "edition": "KJV",
           "field": "sides",
@@ -22331,11 +22503,16 @@
           "rule": "exact packaged KJV substring"
         },
         {
-          "quote": "And he caused his sons to pass through the fire, and used divination and auspices, and made §Lit. peculiar places cut off.groves, and multiplied **Alex. θελητὴν.wizards, so as to do that which was evil in the sight of the Lord, to provoke him to anger",
+          "quote": "And he caused his sons to pass through the fire, and used divination and auspices, and made groves, and multiplied wizards, so as to do that which was evil in the sight of the Lord, to provoke him to anger",
           "edition": "Brenton English",
           "claimedRef": null,
-          "result": "FAIL",
-          "matches": [],
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/eng-Brenton/2KI21.htm",
+              "verse": "6"
+            }
+          ],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -22358,19 +22535,6 @@
               "verse": "6"
             }
           ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/2KI21.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "θελητὴν",
-          "edition": "Brenton Greek",
-          "claimedRef": null,
-          "result": "FAIL",
-          "matches": [],
           "otherVerseMatches": [],
           "sourceErrors": [],
           "checkedSources": [
@@ -23154,7 +23318,7 @@
     {
       "id": "ye-eat-with-the-blood-and-stand-upon-your-sword-or-not-printed-ezekiel-33-25-26",
       "ref": "Ezekiel 33:25-26",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -23176,8 +23340,8 @@
           "edition": "KJV",
           "field": "sides",
           "ref": "Ezekiel 33:26",
-          "quote": "Ye stand upon your sword, ye work abomination, and ye defile every one his neighbour’s wife: and shall ye possess the land?",
-          "result": "FAIL",
+          "quote": "Ye stand upon your sword, ye work abomination, and ye defile every one his neighbour's wife: and shall ye possess the land?",
+          "result": "PASS",
           "rule": "exact packaged KJV substring and ref listed"
         },
         {
@@ -23213,8 +23377,8 @@
             "verse": 25,
             "endVerse": 26
           },
-          "quote": "Wherefore say unto them, Thus saith the Lord GOD; Ye eat with the blood, and lift up your eyes toward your idols, and shed blood: and shall ye possess the land? Ye stand upon your sword, ye work abomination, and ye defile every one his neighbour’s wife: and shall ye possess the land?",
-          "result": "FAIL",
+          "quote": "Wherefore say unto them, Thus saith the Lord God; Ye eat with the blood, and lift up your eyes toward your idols, and shed blood: and shall ye possess the land? Ye stand upon your sword, ye work abomination, and ye defile every one his neighbour's wife: and shall ye possess the land?",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -23745,7 +23909,7 @@
     {
       "id": "the-king-shall-mourn-or-the-prince-only-ezekiel-7-27",
       "ref": "Ezekiel 7:27",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -23783,8 +23947,8 @@
             "chapter": 7,
             "verse": 27
           },
-          "quote": "The king shall mourn, and the prince shall be clothed with desolation, and the hands of the people of the land shall be troubled: I will do unto them after their way, and according to their deserts will I judge them; and they shall know that I am the LORD.",
-          "result": "FAIL",
+          "quote": "The king shall mourn, and the prince shall be clothed with desolation, and the hands of the people of the land shall be troubled: I will do unto them after their way, and according to their deserts will I judge them; and they shall know that I am the Lord.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -25131,7 +25295,7 @@
     {
       "id": "silver-and-gold-not-able-to-deliver-or-not-printed-ezekiel-7-19-greek",
       "ref": "Ezekiel 7:19",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -25149,8 +25313,8 @@
             "chapter": 7,
             "verse": 19
           },
-          "quote": "They shall cast their silver in the streets, and their gold shall be removed: their silver and their gold shall not be able to deliver them in the day of the wrath of the LORD: they shall not satisfy their souls, neither fill their bowels: because it is the stumblingblock of their iniquity.",
-          "result": "FAIL",
+          "quote": "They shall cast their silver in the streets, and their gold shall be removed: their silver and their gold shall not be able to deliver them in the day of the wrath of the Lord: they shall not satisfy their souls, neither fill their bowels: because it is the stumblingblock of their iniquity.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -25275,7 +25439,7 @@
     {
       "id": "ye-have-not-gone-up-into-the-gaps-or-they-stood-not-in-firmness-ezekiel-13-5-greek",
       "ref": "Ezekiel 13:5",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -25293,8 +25457,8 @@
             "chapter": 13,
             "verse": 5
           },
-          "quote": "Ye have not gone up into the gaps, neither made up the hedge for the house of Israel to stand in the battle in the day of the LORD.",
-          "result": "FAIL",
+          "quote": "Ye have not gone up into the gaps, neither made up the hedge for the house of Israel to stand in the battle in the day of the Lord.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -25563,7 +25727,7 @@
     {
       "id": "as-thou-didst-rejoice-so-will-i-do-unto-thee-or-not-printed-ezekiel-35-15-greek",
       "ref": "Ezekiel 35:15",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -25581,8 +25745,8 @@
             "chapter": 35,
             "verse": 15
           },
-          "quote": "As thou didst rejoice at the inheritance of the house of Israel, because it was desolate, so will I do unto thee: thou shalt be desolate, O mount Seir, and all Idumea, even all of it: and they shall know that I am the LORD.",
-          "result": "FAIL",
+          "quote": "As thou didst rejoice at the inheritance of the house of Israel, because it was desolate, so will I do unto thee: thou shalt be desolate, O mount Seir, and all Idumea, even all of it: and they shall know that I am the Lord.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -25707,7 +25871,7 @@
     {
       "id": "i-have-spread-you-abroad-or-i-will-gather-you-zechariah-2-6-greek",
       "ref": "Zechariah 2:6",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -25737,8 +25901,8 @@
             "chapter": 2,
             "verse": 6
           },
-          "quote": "Ho, ho, come forth, and flee from the land of the north, saith the LORD: for I have spread you abroad as the four winds of the heaven, saith the LORD.",
-          "result": "FAIL",
+          "quote": "Ho, ho, come forth, and flee from the land of the north, saith the Lord: for I have spread you abroad as the four winds of the heaven, saith the Lord.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -25853,7 +26017,7 @@
     {
       "id": "raised-up-out-of-his-holy-habitation-or-from-his-holy-clouds-zechariah-2-13-greek",
       "ref": "Zechariah 2:13",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -25883,8 +26047,8 @@
             "chapter": 2,
             "verse": 13
           },
-          "quote": "Be silent, O all flesh, before the LORD: for he is raised up out of his holy habitation.",
-          "result": "FAIL",
+          "quote": "Be silent, O all flesh, before the Lord: for he is raised up out of his holy habitation.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -25999,7 +26163,7 @@
     {
       "id": "my-servant-the-branch-or-my-servant-the-east-zechariah-3-8-greek",
       "ref": "Zechariah 3:8",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -26021,8 +26185,8 @@
           "edition": "KJV",
           "field": "sides",
           "ref": "Zechariah 3:8",
-          "quote": "I will bring forth my servant the BRANCH",
-          "result": "FAIL",
+          "quote": "I will bring forth my servant the Branch",
+          "result": "PASS",
           "rule": "exact packaged KJV substring and ref listed"
         },
         {
@@ -26057,8 +26221,8 @@
             "chapter": 3,
             "verse": 8
           },
-          "quote": "Hear now, O Joshua the high priest, thou, and thy fellows that sit before thee: for they are men wondered at: for, behold, I will bring forth my servant the BRANCH.",
-          "result": "FAIL",
+          "quote": "Hear now, O Joshua the high priest, thou, and thy fellows that sit before thee: for they are men wondered at: for, behold, I will bring forth my servant the Branch.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -26235,7 +26399,7 @@
     {
       "id": "i-will-engrave-the-graving-or-i-am-digging-a-trench-zechariah-3-9-greek",
       "ref": "Zechariah 3:9",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -26249,8 +26413,8 @@
           "edition": "KJV",
           "field": "sides",
           "ref": "Zechariah 3:9",
-          "quote": "I will engrave the graving thereof, saith the LORD of hosts, and I will remove the iniquity of that land in one day",
-          "result": "FAIL",
+          "quote": "I will engrave the graving thereof, saith the Lord of hosts, and I will remove the iniquity of that land in one day",
+          "result": "PASS",
           "rule": "exact packaged KJV substring and ref listed"
         },
         {
@@ -26273,8 +26437,8 @@
             "chapter": 3,
             "verse": 9
           },
-          "quote": "For behold the stone that I have laid before Joshua; upon one stone shall be seven eyes: behold, I will engrave the graving thereof, saith the LORD of hosts, and I will remove the iniquity of that land in one day.",
-          "result": "FAIL",
+          "quote": "For behold the stone that I have laid before Joshua; upon one stone shall be seven eyes: behold, I will engrave the graving thereof, saith the Lord of hosts, and I will remove the iniquity of that land in one day.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -26389,7 +26553,7 @@
     {
       "id": "the-inhabitants-of-one-city-go-to-another-or-five-cities-gather-into-one-zechariah-8-21-greek",
       "ref": "Zechariah 8:21",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -26419,8 +26583,8 @@
             "chapter": 8,
             "verse": 21
           },
-          "quote": "And the inhabitants of one city shall go to another, saying, Let us go speedily to pray before the LORD, and to seek the LORD of hosts: I will go also.",
-          "result": "FAIL",
+          "quote": "And the inhabitants of one city shall go to another, saying, Let us go speedily to pray before the Lord, and to seek the Lord of hosts: I will go also.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -26989,14 +27153,14 @@
     {
       "id": "the-eyes-of-man-toward-the-lord-or-the-lord-watches-over-men-zechariah-9-1-greek",
       "ref": "Zechariah 9:1",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
           "field": "sides",
           "ref": "Zechariah 9:1",
-          "quote": "when the eyes of man, as of all the tribes of Israel, shall be toward the LORD",
-          "result": "FAIL",
+          "quote": "when the eyes of man, as of all the tribes of Israel, shall be toward the Lord",
+          "result": "PASS",
           "rule": "exact packaged KJV substring and ref listed"
         },
         {
@@ -27007,8 +27171,8 @@
             "chapter": 9,
             "verse": 1
           },
-          "quote": "The burden of the word of the LORD in the land of Hadrach, and Damascus shall be the rest thereof: when the eyes of man, as of all the tribes of Israel, shall be toward the LORD.",
-          "result": "FAIL",
+          "quote": "The burden of the word of the Lord in the land of Hadrach, and Damascus shall be the rest thereof: when the eyes of man, as of all the tribes of Israel, shall be toward the Lord.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -27205,7 +27369,7 @@
     {
       "id": "with-whirlwinds-of-the-south-or-in-the-shaking-of-his-threatening-zechariah-9-14-greek",
       "ref": "Zechariah 9:14",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -27223,8 +27387,8 @@
             "chapter": 9,
             "verse": 14
           },
-          "quote": "And the LORD shall be seen over them, and his arrow shall go forth as the lightning: and the Lord GOD shall blow the trumpet, and shall go with whirlwinds of the south.",
-          "result": "FAIL",
+          "quote": "And the Lord shall be seen over them, and his arrow shall go forth as the lightning: and the Lord God shall blow the trumpet, and shall go with whirlwinds of the south.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {
@@ -27277,7 +27441,7 @@
     {
       "id": "stones-of-a-crown-lifted-up-as-an-ensign-or-holy-stones-rolling-on-his-land-zechariah-9-16-greek",
       "ref": "Zechariah 9:16",
-      "quoteResult": "FAIL",
+      "quoteResult": "PASS",
       "checks": [
         {
           "edition": "KJV",
@@ -27295,8 +27459,8 @@
             "chapter": 9,
             "verse": 16
           },
-          "quote": "And the LORD their God shall save them in that day as the flock of his people: for they shall be as the stones of a crown, lifted up as an ensign upon his land.",
-          "result": "FAIL",
+          "quote": "And the Lord their God shall save them in that day as the flock of his people: for they shall be as the stones of a crown, lifted up as an ensign upon his land.",
+          "result": "PASS",
           "rule": "exact packaged KJV substring"
         },
         {

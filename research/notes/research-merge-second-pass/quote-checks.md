@@ -1,8 +1,8 @@
 # Per-record quote checks
 
-**222 PASS; 28 FAIL; 250 records; 1582 checks.**
+**250 PASS; 0 FAIL; 250 records; 1590 checks.**
 
-KJV: exact packaged substrings. Original-language text: whitespace folding and surrounding editorial punctuation excluded; no Unicode normalization of WLC. HTML verse text excludes publisher footnotes and uses visible verse labels, including lettered verses. NT Strong/morphology annotations and apparatus markers are excluded. Brenton English quoted excerpts are checked with publisher footnotes excluded.
+KJV: exact packaged substrings. Original-language text: whitespace folding and surrounding editorial punctuation excluded; no Unicode normalization of WLC. HTML verse text excludes publisher footnotes and uses visible verse labels, including lettered verses. NT Strong/morphology annotations and apparatus markers are excluded. Brenton English quoted excerpts are checked with publisher footnotes excluded. Attributed sourceNotes are checked separately against the direct publisher-page evidence.
 
 Checks cover KJV side quotations, explicitly labelled KJV excerpts in `text`, supplied original-language runs in `text`, explicit Brenton English quotations and the selected printed-edition omissions. Where a printed verse label is supplied, it is checked; otherwise the result identifies the matching verse in a cited chapter. See JSON for every extracted quote, source, claimed reference and matching location.
 
@@ -30,7 +30,7 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | Psalms 49:11 | `their-inward-thought-is-that-their-houses-shall-continue-or-their-graves-are-their-houses-greek-psalm-49-11` | PASS | All extracted quote checks pass. |
 | Psalms 59:11 | `slay-them-not-lest-my-people-forget-or-lest-they-forget-thy-law-greek-psalm-59-11` | PASS | All extracted quote checks pass. |
 | Psalms 18:15 | `channels-of-waters-or-channels-of-the-sea-psalm-18-15-and-2-samuel-22-16` | PASS | All extracted quote checks pass. |
-| Psalms 14:5 | `there-were-they-in-great-fear-psalm-14-5-6-and-psalm-53-5` | FAIL | KJV sides: not an exact substring at its side reference |
+| Psalms 14:5 | `there-were-they-in-great-fear-psalm-14-5-6-and-psalm-53-5` | PASS | All extracted quote checks pass. |
 | Psalms 70:3 | `let-them-be-turned-back-or-let-them-be-desolate-psalm-70-3-and-psalm-40-15` | PASS | All extracted quote checks pass. |
 | Psalms 108:4 | `thy-mercy-is-great-above-the-heavens-or-unto-the-heavens-psalm-108-4-and-psalm-57-10` | PASS | All extracted quote checks pass. |
 | Psalms 108:9 | `over-philistia-will-i-triumph-or-philistia-triumph-thou-because-of-me-psalm-108-9-and-psalm-60-8` | PASS | All extracted quote checks pass. |
@@ -52,14 +52,14 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | Isaiah 38:21 | `for-isaiah-had-said-or-and-isaiah-said-isaiah-38-21-22` | PASS | All extracted quote checks pass. |
 | Isaiah 44:26 | `cities-of-judah-or-cities-of-idumea-greek-isaiah-44-26` | PASS | All extracted quote checks pass. |
 | Isaiah 60:18 | `thy-gates-praise-or-thy-gates-sculptured-work-greek-isaiah-60-18` | PASS | All extracted quote checks pass. |
-| Isaiah 2:2 | `all-nations-shall-flow-or-people-shall-flow-isaiah-2-2-and-micah-4-1` | FAIL | KJV text: exact quote/printed location not reproduced |
+| Isaiah 2:2 | `all-nations-shall-flow-or-people-shall-flow-isaiah-2-2-and-micah-4-1` | PASS | All extracted quote checks pass. |
 | Isaiah 14:9 | `all-the-chief-ones-of-the-earth-or-all-the-giants-who-ruled-the-earth-greek-isaiah-14-9` | PASS | All extracted quote checks pass. |
 | Isaiah 15:7 | `the-brook-of-the-willows-or-arabs-against-the-valley-greek-isaiah-15-7` | PASS | All extracted quote checks pass. |
 | Isaiah 20:1 | `sargon-the-king-of-assyria-or-arna-the-king-of-the-assyrians-greek-isaiah-20-1` | PASS | All extracted quote checks pass. |
 | Isaiah 22:21 | `strengthen-him-with-thy-girdle-or-i-will-give-him-thy-crown-greek-isaiah-22-21` | PASS | All extracted quote checks pass. |
 | Isaiah 24:16 | `glory-to-the-righteous-but-i-said-my-leanness-woe-unto-me-or-hope-to-the-godly-woe-to-the-faithless-greek-isaiah-24-16` | PASS | All extracted quote checks pass. |
 | Isaiah 33:9 | `bashan-and-carmel-shake-off-their-fruits-or-galilee-and-carmel-shall-be-manifest-greek-isaiah-33-9` | PASS | All extracted quote checks pass. |
-| Isaiah 33:18 | `where-is-he-that-counted-the-towers-or-where-is-he-that-counts-the-nurtured-greek-isaiah-33-18` | FAIL | Brenton Greek text: exact quote/printed location not reproduced |
+| Isaiah 33:18 | `where-is-he-that-counted-the-towers-or-where-is-he-that-counts-the-nurtured-greek-isaiah-33-18` | PASS | All extracted quote checks pass. |
 | Isaiah 44:28 | `that-saith-of-cyrus-he-is-my-shepherd-or-who-says-to-cyrus-to-be-wise-greek-isaiah-44-28` | PASS | All extracted quote checks pass. |
 | Isaiah 62:4 | `thou-shalt-be-called-hephzibah-and-thy-land-beulah-or-my-desire-and-inhabited-hebrew-and-greek-isaiah-62-4` | PASS | All extracted quote checks pass. |
 | Isaiah 51:9 | `cut-rahab-and-wounded-the-dragon-or-awake-as-in-the-beginning-of-the-day-greek-isaiah-51-9` | PASS | All extracted quote checks pass. |
@@ -94,8 +94,8 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | Proverbs 15:31 | `the-ear-that-heareth-the-reproof-of-life-brentons-greek-prints-no-verse-15-31` | PASS | All extracted quote checks pass. |
 | Proverbs 7:1 | `keep-my-words-or-son-honour-the-lord-and-thou-shalt-be-strong-greek-plus-proverbs-7-1` | PASS | All extracted quote checks pass. |
 | Jeremiah 27:1 | `in-the-reign-of-jehoiakim-or-zedekiah-jeremiah-27-1-3-12` | PASS | All extracted quote checks pass. |
-| Jeremiah 27:7, 27:22 | `his-son-and-his-sons-son-and-restore-them-greek-omits-jeremiah-27-7-22` | FAIL | Brenton Greek text: exact quote/printed location not reproduced |
-| Jeremiah 33:14-26 | `branch-of-righteousness-and-david-never-want-a-man-greek-page-ends-at-jeremiah-33-13` | FAIL | KJV sides: not an exact substring at its side reference; Brenton Greek text: exact quote/printed location not reproduced |
+| Jeremiah 27:7, 27:22 | `his-son-and-his-sons-son-and-restore-them-greek-omits-jeremiah-27-7-22` | PASS | All extracted quote checks pass. |
+| Jeremiah 33:14-26 | `branch-of-righteousness-and-david-never-want-a-man-greek-page-ends-at-jeremiah-33-13` | PASS | All extracted quote checks pass. |
 | Jeremiah 39:1 | `ninth-year-tenth-month-or-ninth-month-greek-jeremiah-39-1` | PASS | All extracted quote checks pass. |
 | Jeremiah 37:1 | `instead-of-coniah-the-son-of-jehoiakim-or-instead-of-jehoiakim-greek-jeremiah-37-1` | PASS | All extracted quote checks pass. |
 | Jeremiah 37:12 | `to-separate-himself-or-to-buy-greek-jeremiah-37-12` | PASS | All extracted quote checks pass. |
@@ -107,7 +107,7 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | Jeremiah 4:26 | `the-fruitful-place-or-carmel-jeremiah-4-26-greek` | PASS | All extracted quote checks pass. |
 | Jeremiah 5:10 | `they-are-not-the-lords-or-they-are-the-lords-jeremiah-5-10-greek` | PASS | All extracted quote checks pass. |
 | Jeremiah 9:14 | `baalim-or-the-idols-jeremiah-9-14-greek` | PASS | All extracted quote checks pass. |
-| Jeremiah 9:26 | `egypt-and-judah-and-edom-or-egypt-and-idumea-and-edom-jeremiah-9-26-greek` | FAIL | Brenton Greek text: exact quote/printed location not reproduced |
+| Jeremiah 9:26 | `egypt-and-judah-and-edom-or-egypt-and-idumea-and-edom-jeremiah-9-26-greek` | PASS | All extracted quote checks pass. |
 | Jeremiah 13:18 | `the-king-and-to-the-queen-or-the-king-and-those-in-power-jeremiah-13-18-greek` | PASS | All extracted quote checks pass. |
 | Jeremiah 14:9 | `as-a-man-astonied-or-as-a-man-asleep-jeremiah-14-9-greek` | PASS | All extracted quote checks pass. |
 | Jeremiah 15:12 | `shall-iron-break-the-northern-iron-or-will-iron-be-known-jeremiah-15-12-greek` | PASS | All extracted quote checks pass. |
@@ -119,13 +119,13 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | Jeremiah 42:10 | `i-repent-me-of-the-evil-or-i-have-rested-from-the-evils-jeremiah-42-10-greek` | PASS | All extracted quote checks pass. |
 | Jeremiah 47:4 | `remnant-of-the-country-of-caphtor-or-the-remnant-of-the-islands-jeremiah-47-4-greek` | PASS | All extracted quote checks pass. |
 | Jeremiah 49:1 | `their-king-inherit-gad-or-melchol-inherited-galaad-jeremiah-49-1-greek` | PASS | All extracted quote checks pass. |
-| Jeremiah 49:33 | `hazor-a-dwelling-for-dragons-or-the-court-a-haunt-of-ostriches-jeremiah-49-33-greek` | FAIL | KJV sides: not an exact substring at its side reference |
+| Jeremiah 49:33 | `hazor-a-dwelling-for-dragons-or-the-court-a-haunt-of-ostriches-jeremiah-49-33-greek` | PASS | All extracted quote checks pass. |
 | Jeremiah 30:10 | `fear-thou-not-o-my-servant-jacob-brentons-greek-prints-no-verses-jeremiah-30-10-11` | PASS | All extracted quote checks pass. |
 | Jeremiah 39:4 | `the-king-fled-by-night-brentons-greek-prints-no-verses-jeremiah-39-4-13` | PASS | All extracted quote checks pass. |
 | Jeremiah 49:6 | `afterward-i-will-bring-again-the-captivity-of-ammon-brentons-greek-prints-no-matching-verse-jeremiah-49-6` | PASS | All extracted quote checks pass. |
-| Jeremiah 3:12, 17:4 | `anger-not-kept-for-ever-or-fire-burning-for-ever-jeremiah-3-12-17-4` | FAIL | Brenton English text: no address supplied/extracted for that quoted edition; WLC text: exact quote/printed location not reproduced |
-| Jeremiah 4:28, 15:6 | `i-will-not-repent-or-i-am-weary-with-repenting-jeremiah-4-28-15-6` | FAIL | WLC text: exact quote/printed location not reproduced |
-| Jeremiah 15:4, 31:29-30 | `because-of-manasseh-or-every-one-shall-die-for-his-own-iniquity-jeremiah-15-4-31-29-30` | FAIL | KJV text: exact quote/printed location not reproduced; Brenton Greek text: exact quote/printed location not reproduced; WLC text: exact quote/printed location not reproduced |
+| Jeremiah 3:12, 17:4 | `anger-not-kept-for-ever-or-fire-burning-for-ever-jeremiah-3-12-17-4` | PASS | All extracted quote checks pass. |
+| Jeremiah 4:28, 15:6 | `i-will-not-repent-or-i-am-weary-with-repenting-jeremiah-4-28-15-6` | PASS | All extracted quote checks pass. |
+| Jeremiah 15:4, 31:29-30 | `because-of-manasseh-or-every-one-shall-die-for-his-own-iniquity-jeremiah-15-4-31-29-30` | PASS | All extracted quote checks pass. |
 | 2 Chronicles 11:15 | `priests-for-the-devils-or-for-the-idols-and-the-vain-things-greek` | PASS | All extracted quote checks pass. |
 | 2 Chronicles 23:6, 2 Kings 11:4 | `only-priests-and-levites-in-the-house-or-captains-and-the-guard-brought-in-2-chronicles-23-6-2-kings-11-4` | PASS | All extracted quote checks pass. |
 | 2 Chronicles 26:23, 2 Kings 15:7 | `uzziah-buried-in-the-field-of-the-burial-or-in-the-city-of-david-2-chronicles-26-23-2-kings-15-7` | PASS | All extracted quote checks pass. |
@@ -175,10 +175,10 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | 1 Samuel 2:25 | `if-one-man-sin-against-another-the-judge-or-they-shall-pray-1-samuel-2-25` | PASS | All extracted quote checks pass. |
 | 1 Samuel 6:19 | `bethshemesh-men-looked-into-the-ark-or-sons-of-jechonias-not-pleased-1-samuel-6-19` | PASS | All extracted quote checks pass. |
 | 1 Samuel 23:13 | `david-men-six-hundred-or-four-hundred-keilah-1-samuel-23-13` | PASS | All extracted quote checks pass. |
-| 1 Samuel 26:20 | `king-of-israel-come-out-to-seek-a-flea-or-thy-life-1-samuel-26-20` | FAIL | Brenton English text: exact quote/printed location not reproduced |
-| 1 Samuel 29:3 | `achish-david-with-me-these-days-or-these-years-or-second-year-1-samuel-29-3` | FAIL | Brenton English text: exact quote/printed location not reproduced; WLC text: exact quote/printed location not reproduced |
+| 1 Samuel 26:20 | `king-of-israel-come-out-to-seek-a-flea-or-thy-life-1-samuel-26-20` | PASS | All extracted quote checks pass. |
+| 1 Samuel 29:3 | `achish-david-with-me-these-days-or-these-years-or-second-year-1-samuel-29-3` | PASS | All extracted quote checks pass. |
 | 1 Samuel 2:22 | `eli-heard-how-his-sons-lay-with-the-women-or-greek-lacks-clause-1-samuel-2-22` | PASS | All extracted quote checks pass. |
-| 1 Samuel 2:10 | `hannah-song-his-king-or-our-kings-1-samuel-2-10` | FAIL | Brenton English text: exact quote/printed location not reproduced |
+| 1 Samuel 2:10 | `hannah-song-his-king-or-our-kings-1-samuel-2-10` | PASS | All extracted quote checks pass. |
 | 1 Samuel 26:5 | `saul-lay-in-the-trench-or-in-a-chariot-1-samuel-26-5-26-7` | PASS | All extracted quote checks pass. |
 | 1 Samuel 2:9 | `feet-of-his-saints-or-giving-a-vow-to-him-that-vows-1-samuel-2-9-greek` | PASS | All extracted quote checks pass. |
 | 1 Samuel 2:31 | `i-will-cut-off-thine-arm-or-i-will-destroy-thy-seed-1-samuel-2-31-greek` | PASS | All extracted quote checks pass. |
@@ -192,7 +192,7 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | 2 Samuel 11:22 | `messenger-shewed-david-or-david-was-angry-with-joab-2-samuel-11-22-greek` | PASS | All extracted quote checks pass. |
 | 2 Samuel 7:5 | `shalt-thou-build-me-an-house-or-thou-shalt-not-build-2-samuel-7-5-greek` | PASS | All extracted quote checks pass. |
 | 2 Samuel 7:15 | `as-i-took-it-from-saul-or-as-i-removed-from-those-whom-i-removed-2-samuel-7-15-greek` | PASS | All extracted quote checks pass. |
-| 2 Samuel 7:23 | `from-the-nations-and-their-gods-or-nations-and-tents-2-samuel-7-23-greek` | FAIL | KJV text: exact quote/printed location not reproduced |
+| 2 Samuel 7:23 | `from-the-nations-and-their-gods-or-nations-and-tents-2-samuel-7-23-greek` | PASS | All extracted quote checks pass. |
 | 2 Samuel 11:21 | `abimelech-son-of-jerubbesheth-or-son-of-jerubbaal-son-of-ner-2-samuel-11-21-greek` | PASS | All extracted quote checks pass. |
 | 2 Samuel 12:6 | `restore-the-lamb-fourfold-or-sevenfold-2-samuel-12-6-greek` | PASS | All extracted quote checks pass. |
 | 2 Samuel 12:14 | `given-occasion-to-the-enemies-to-blaspheme-or-provoked-the-enemies-2-samuel-12-14-greek` | PASS | All extracted quote checks pass. |
@@ -217,7 +217,7 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | 1 Kings 11:26 | `jeroboams-mother-a-widow-or-a-harlot-1-kings-11-26-and-12-24-greek` | PASS | All extracted quote checks pass. |
 | 1 Kings 21:16 | `ahab-rends-his-clothes-at-naboths-death-1-kings-21-16-greek` | PASS | All extracted quote checks pass. |
 | 2 Kings 4:42 | `full-ears-of-corn-in-the-husk-or-cakes-of-figs-greek` | PASS | All extracted quote checks pass. |
-| 2 Kings 21:6 | `manasseh-made-his-son-pass-through-the-fire-or-his-children-2-kings-21-6-2-chronicles-33-6` | FAIL | Brenton English text: exact quote/printed location not reproduced; Brenton Greek text: exact quote/printed location not reproduced |
+| 2 Kings 21:6 | `manasseh-made-his-son-pass-through-the-fire-or-his-children-2-kings-21-6-2-chronicles-33-6` | PASS | All extracted quote checks pass. |
 | 2 Kings 19:37 | `land-of-armenia-or-the-land-of-ararat-2-kings-19-37-isaiah-37-38` | PASS | All extracted quote checks pass. |
 | 2 Kings 6:25 | `ass-head-fourscore-pieces-of-silver-or-fifty-greek` | PASS | All extracted quote checks pass. |
 | 2 Kings 7:14 | `two-chariot-horses-or-two-horsemen-greek` | PASS | All extracted quote checks pass. |
@@ -225,10 +225,10 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | 2 Kings 11:6 | `gate-of-sur-or-gate-of-the-ways-2-kings-11-6-greek` | PASS | All extracted quote checks pass. |
 | 2 Kings 19:25 | `long-ago-i-did-it-or-i-formed-it-2-kings-19-25-greek` | PASS | All extracted quote checks pass. |
 | Ezekiel 22:25 | `conspiracy-of-her-prophets-or-her-princes-ezekiel-22-25` | PASS | All extracted quote checks pass. |
-| Ezekiel 33:25-26 | `ye-eat-with-the-blood-and-stand-upon-your-sword-or-not-printed-ezekiel-33-25-26` | FAIL | KJV sides: not an exact substring at its side reference; KJV text: exact quote/printed location not reproduced |
+| Ezekiel 33:25-26 | `ye-eat-with-the-blood-and-stand-upon-your-sword-or-not-printed-ezekiel-33-25-26` | PASS | All extracted quote checks pass. |
 | Ezekiel 47:8 | `from-the-east-country-into-the-desert-or-galilee-and-arabia-ezekiel-47-8` | PASS | All extracted quote checks pass. |
 | Ezekiel 12:6-7 | `bear-it-upon-thy-shoulders-or-thou-shalt-be-lifted-up-ezekiel-12-6-7` | PASS | All extracted quote checks pass. |
-| Ezekiel 7:27 | `the-king-shall-mourn-or-the-prince-only-ezekiel-7-27` | FAIL | KJV text: exact quote/printed location not reproduced |
+| Ezekiel 7:27 | `the-king-shall-mourn-or-the-prince-only-ezekiel-7-27` | PASS | All extracted quote checks pass. |
 | Ezekiel 24:18 | `at-even-my-wife-died-or-no-wife-named-ezekiel-24-18` | PASS | All extracted quote checks pass. |
 | Ezekiel 33:21 | `twelfth-year-tenth-month-or-tenth-year-twelfth-month-ezekiel-33-21` | PASS | All extracted quote checks pass. |
 | Ezekiel 47:3-4 | `waters-to-the-ankles-and-knees-or-thighs-ezekiel-47-3-4` | PASS | All extracted quote checks pass. |
@@ -240,25 +240,25 @@ Primary texts came from the supplied WLC/SBLGNT endpoints, packaged KJV and the 
 | Ezekiel 6:5 | `dead-carcases-before-their-idols-or-not-printed-ezekiel-6-5-greek` | PASS | All extracted quote checks pass. |
 | Ezekiel 7:13 | `seller-shall-not-return-or-buyer-shall-not-return-ezekiel-7-13-greek` | PASS | All extracted quote checks pass. |
 | Ezekiel 7:16 | `escapers-like-doves-mourning-or-all-the-rest-slain-ezekiel-7-16-greek` | PASS | All extracted quote checks pass. |
-| Ezekiel 7:19 | `silver-and-gold-not-able-to-deliver-or-not-printed-ezekiel-7-19-greek` | FAIL | KJV text: exact quote/printed location not reproduced |
+| Ezekiel 7:19 | `silver-and-gold-not-able-to-deliver-or-not-printed-ezekiel-7-19-greek` | PASS | All extracted quote checks pass. |
 | Ezekiel 7:23 | `make-a-chain-bloody-crimes-or-they-shall-make-confusion-peoples-ezekiel-7-23-greek` | PASS | All extracted quote checks pass. |
-| Ezekiel 13:5 | `ye-have-not-gone-up-into-the-gaps-or-they-stood-not-in-firmness-ezekiel-13-5-greek` | FAIL | KJV text: exact quote/printed location not reproduced |
+| Ezekiel 13:5 | `ye-have-not-gone-up-into-the-gaps-or-they-stood-not-in-firmness-ezekiel-13-5-greek` | PASS | All extracted quote checks pass. |
 | Ezekiel 24:17 | `make-no-mourning-for-the-dead-or-mourning-upon-thy-loins-ezekiel-24-17-greek` | PASS | All extracted quote checks pass. |
 | Ezekiel 26:16 | `lay-away-their-robes-or-take-off-the-turbans-ezekiel-26-16-greek` | PASS | All extracted quote checks pass. |
 | Ezekiel 35:5 | `shed-the-blood-by-the-force-of-the-sword-or-laid-wait-craftily-ezekiel-35-5-greek` | PASS | All extracted quote checks pass. |
-| Ezekiel 35:15 | `as-thou-didst-rejoice-so-will-i-do-unto-thee-or-not-printed-ezekiel-35-15-greek` | FAIL | KJV text: exact quote/printed location not reproduced |
+| Ezekiel 35:15 | `as-thou-didst-rejoice-so-will-i-do-unto-thee-or-not-printed-ezekiel-35-15-greek` | PASS | All extracted quote checks pass. |
 | Ezekiel 44:20 | `they-shall-only-poll-their-heads-or-shall-cover-their-heads-ezekiel-44-20-greek` | PASS | All extracted quote checks pass. |
-| Zechariah 2:6 | `i-have-spread-you-abroad-or-i-will-gather-you-zechariah-2-6-greek` | FAIL | KJV text: exact quote/printed location not reproduced |
-| Zechariah 2:13 | `raised-up-out-of-his-holy-habitation-or-from-his-holy-clouds-zechariah-2-13-greek` | FAIL | KJV text: exact quote/printed location not reproduced |
-| Zechariah 3:8 | `my-servant-the-branch-or-my-servant-the-east-zechariah-3-8-greek` | FAIL | KJV sides: not an exact substring at its side reference; KJV text: exact quote/printed location not reproduced |
-| Zechariah 3:9 | `i-will-engrave-the-graving-or-i-am-digging-a-trench-zechariah-3-9-greek` | FAIL | KJV sides: not an exact substring at its side reference; KJV text: exact quote/printed location not reproduced |
-| Zechariah 8:21 | `the-inhabitants-of-one-city-go-to-another-or-five-cities-gather-into-one-zechariah-8-21-greek` | FAIL | KJV text: exact quote/printed location not reproduced |
+| Zechariah 2:6 | `i-have-spread-you-abroad-or-i-will-gather-you-zechariah-2-6-greek` | PASS | All extracted quote checks pass. |
+| Zechariah 2:13 | `raised-up-out-of-his-holy-habitation-or-from-his-holy-clouds-zechariah-2-13-greek` | PASS | All extracted quote checks pass. |
+| Zechariah 3:8 | `my-servant-the-branch-or-my-servant-the-east-zechariah-3-8-greek` | PASS | All extracted quote checks pass. |
+| Zechariah 3:9 | `i-will-engrave-the-graving-or-i-am-digging-a-trench-zechariah-3-9-greek` | PASS | All extracted quote checks pass. |
+| Zechariah 8:21 | `the-inhabitants-of-one-city-go-to-another-or-five-cities-gather-into-one-zechariah-8-21-greek` | PASS | All extracted quote checks pass. |
 | Zechariah 9:10 | `he-shall-speak-peace-unto-the-heathen-or-multitude-and-peace-from-the-nations-zechariah-9-10-greek` | PASS | All extracted quote checks pass. |
 | Zechariah 9:12 | `prisoners-of-hope-turn-to-the-strong-hold-or-prisoners-of-the-gathering-zechariah-9-12-greek` | PASS | All extracted quote checks pass. |
 | Zechariah 3:5 | `let-them-set-a-fair-mitre-and-i-said-or-no-speaker-zechariah-3-5-greek` | PASS | All extracted quote checks pass. |
 | Zechariah 2:4 | `as-towns-without-walls-or-fruitfully-inhabited-zechariah-2-4-greek` | PASS | All extracted quote checks pass. |
-| Zechariah 9:1 | `the-eyes-of-man-toward-the-lord-or-the-lord-watches-over-men-zechariah-9-1-greek` | FAIL | KJV sides: not an exact substring at its side reference; KJV text: exact quote/printed location not reproduced |
+| Zechariah 9:1 | `the-eyes-of-man-toward-the-lord-or-the-lord-watches-over-men-zechariah-9-1-greek` | PASS | All extracted quote checks pass. |
 | Zechariah 9:4 | `the-lord-will-cast-her-out-or-the-lord-will-inherit-them-zechariah-9-4-greek` | PASS | All extracted quote checks pass. |
 | Zechariah 9:6 | `a-bastard-shall-dwell-in-ashdod-or-aliens-shall-dwell-in-azotus-zechariah-9-6-greek` | PASS | All extracted quote checks pass. |
-| Zechariah 9:14 | `with-whirlwinds-of-the-south-or-in-the-shaking-of-his-threatening-zechariah-9-14-greek` | FAIL | KJV text: exact quote/printed location not reproduced |
-| Zechariah 9:16 | `stones-of-a-crown-lifted-up-as-an-ensign-or-holy-stones-rolling-on-his-land-zechariah-9-16-greek` | FAIL | KJV text: exact quote/printed location not reproduced |
+| Zechariah 9:14 | `with-whirlwinds-of-the-south-or-in-the-shaking-of-his-threatening-zechariah-9-14-greek` | PASS | All extracted quote checks pass. |
+| Zechariah 9:16 | `stones-of-a-crown-lifted-up-as-an-ensign-or-holy-stones-rolling-on-his-land-zechariah-9-16-greek` | PASS | All extracted quote checks pass. |

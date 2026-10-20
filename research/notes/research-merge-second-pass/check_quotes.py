@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """Check draft quotations only; never mutates drafts, application data or main."""
-import base64, concurrent.futures, datetime, gzip, hashlib, html, io, json, pathlib, re, time, urllib.request, zipfile
+import argparse, base64, concurrent.futures, datetime, gzip, hashlib, html, io, json, pathlib, re, subprocess, time, urllib.request, zipfile
 from html.parser import HTMLParser
 
 OUT=pathlib.Path(__file__).resolve().parent; ROOT=OUT.parents[2]
 MANIFEST=json.loads((OUT/'manifest.json').read_text())
-records=[r for f in MANIFEST['files'] for r in json.loads((ROOT/f['file']).read_text())]
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--checkpoint',help='Read immutable records from a Git checkpoint and write a separate regression report')
+args=parser.parse_args()
+if args.checkpoint:
+ assert re.fullmatch(r'[0-9a-f]{7,40}',args.checkpoint),'Use a commit hash'
+ records=[r for f in MANIFEST['files'] for r in json.loads(subprocess.check_output(['git','show',args.checkpoint+':'+f['file']],cwd=ROOT))]
+else:records=[r for f in MANIFEST['files'] for r in json.loads((ROOT/f['file']).read_text())]
 def save(name,value): (OUT/name).write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
 def norm(s): return ' '.join(s.split())
 def fetch(url):
@@ -113,10 +119,15 @@ def result(q,edition,urls,ref=None):
  return {'quote':q,'edition':edition,'claimedRef':ref,'result':'PASS' if hits else 'FAIL','matches':hits,'otherVerseMatches':wrong,'sourceErrors':errors,'checkedSources':urls}
 
 reports=[]
+footnote_evidence_path=OUT/'quote-correction-source-evidence.json'
+footnote_evidence=json.loads(footnote_evidence_path.read_text()) if footnote_evidence_path.exists() else {}
 greek_re=re.compile(r'[\u0370-\u03ff\u1f00-\u1fff][\u0370-\u03ff\u1f00-\u1fff\s.,;:··ʼ’᾽\-—“”()\[\]!?]*')
 hebrew_re=re.compile(r'[\u0590-\u05ff][\u0590-\u05ff\s.,;:׃|\-—“”()\[\]!?]*')
 for r in records:
  checks=[];text=r['text'];primary=record_ref(r)
+ for note in r.get('sourceNotes',[]):
+  url=note['source'];body=footnote_evidence.get(url,{}).get('fullText','')
+  checks.append({'edition':note['edition'],'field':'sourceNotes','source':url,'quote':note['quote'],'result':'PASS' if norm(note['quote']) in norm(body) else 'FAIL','rule':'exact attributed publisher footnote; checked separately from scripture'})
  refs={x['label']:x for x in r.get('refs',[])}
  for side in r.get('sides',[]):
   ref=refs.get(side['ref']);q=side.get('quote','')
@@ -169,5 +180,6 @@ for r in records:
    checks.append({'edition':'Brenton Greek','field':'omission','verse':expected,'result':'FAIL' if present else 'PASS','pages':candidates,'rule':'primary verse label absent from cited page(s)'})
  if not checks:checks.append({'result':'FAIL','reason':'No machine-verifiable quotation extracted; manual quotation review required'})
  reports.append({'id':r['id'],'ref':r['ref'],'quoteResult':'PASS' if all(c['result']=='PASS' for c in checks) else 'FAIL','checks':checks,'limit':'Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness.'})
-save('quote-checks.json',{'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sourceArchives':archive_meta,'normalization':'KJV: exact packaged substrings. Original-language text: whitespace folding and surrounding editorial punctuation excluded; no Unicode normalization of WLC. HTML verse text excludes publisher footnotes and uses visible verse labels, including lettered verses. NT Strong/morphology annotations and apparatus markers are excluded. Brenton English quoted excerpts are checked with publisher footnotes excluded.','records':reports})
+output_name='quote-checks-baseline-'+args.checkpoint+'.json' if args.checkpoint else 'quote-checks.json'
+save(output_name,{'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'inputCheckpoint':args.checkpoint,'sourceArchives':archive_meta,'normalization':'KJV: exact packaged substrings. Original-language text: whitespace folding and surrounding editorial punctuation excluded; no Unicode normalization of WLC. HTML verse text excludes publisher footnotes and uses visible verse labels, including lettered verses. NT Strong/morphology annotations and apparatus markers are excluded. Brenton English quoted excerpts are checked with publisher footnotes excluded. Attributed sourceNotes are checked separately against the direct publisher-page evidence.','records':reports})
 print(json.dumps({'records':len(reports),'pass':sum(r['quoteResult']=='PASS' for r in reports),'fail':sum(r['quoteResult']=='FAIL' for r in reports),'checks':sum(len(r['checks']) for r in reports),'sourceErrors':{u:d['error'] for u,d in cache.items() if d.get('error')}},indent=2))

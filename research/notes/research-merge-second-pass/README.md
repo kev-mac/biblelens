@@ -10,8 +10,8 @@ This is a local draft merge on branch/worktree `research-merge-second-pass`, bas
 | Preserved-only records | 64 |
 | New-only findings — draft, unverified | 133 |
 | Explicit same-ID Samuel variants retained | 2 |
-| Quote PASS | 222 |
-| Quote FAIL | 28 |
+| Quote PASS | 250 |
+| Quote FAIL | 0 |
 | Witness classification decisions held | 2 |
 | Merged owner-question entries | 19 |
 | Verbatim notes versions retained | 23 |
@@ -30,3 +30,5 @@ Source-check resolutions: Psalm 59’s blanket agreement removed; your-law findi
 Jeremiah’s 9:25 ID is corrected to 9:26. The new versions of the two same-ID Samuel records carry `-new-20261020`; their preserved versions retain their original IDs.
 
 No later work on Psalm headings, eras or the Jesus profile has started.
+
+Quote corrections after checkpoint `4fe1e7d`: [28-record correction log](quote-corrections.md). These remain draft research corrections, not acceptance or publication approval.
