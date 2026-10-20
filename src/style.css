@@ -2336,3 +2336,14 @@ body .category-personal-profile h4{font-size:1rem;margin:0 0 12px}
 body .category-personal-profile .person-section-panel p{font-size:.875rem;line-height:1.65}
 html body .category-personal-profile button:is(:focus,:focus-visible){outline:none!important;box-shadow:none!important}
 html body #saved-view .category-personal-profile>p{font-size:.875rem!important;line-height:1.65}
+
+body .commandments-title-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+body .commandments-title-row h1{margin:0}
+html body #commandments-more{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 14px;border:1px solid rgba(59,130,246,.55);border-radius:24px;color:var(--ink);font-size:.8rem;white-space:nowrap}
+html body #commandments-view .commandment-inline-reference{display:inline;color:var(--ui-link)!important;font-size:.8125rem;text-decoration:none}
+html body #commandments-view .commandment-inline-reference:hover{text-decoration:underline}
+body .commandment-summary q,body .commandment-context q{font-size:.8125rem;line-height:1.65;font-style:italic}
+body .commandment-context q{quotes:none}
+body .commandment-context-verse{margin:0 0 14px}
+html body #commandments-view .commandment-inline-reference:focus-visible{outline:none!important;background:var(--soft)!important}
+html body #commandments-view button.commandment-inline-reference{padding:0!important;margin:0!important;min-height:0!important;border:0!important;border-radius:0!important;background:transparent!important;vertical-align:baseline}
