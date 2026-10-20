@@ -74,3 +74,20 @@ Targeted story, topic and character checks pass, including all 47 profiles and t
 Build 261 is reserved for the shared source release. Executed publication, full checks, signed-native asset comparison, installation availability and release verification will be recorded below. No publication or native installation is claimed by this pre-release checkpoint.
 
 People-page completion was preserved in the named stash `People page completion in progress before Claude stories integration`; its unfinished data is excluded from this release. Existing stashes, research drafts, the chapter ledger and research control files are preserved.
+
+### Executed results
+
+- Reviewed source commit: `0c064fc0e3acc1fa8b9e740270a6ae7b13a67cf2`, pushed as a fast-forward to GitHub main on top of the owner-confirmed `ce8b166`. Source backup: `.release/source-build-261.tar.gz` in this worktree.
+- `npm run release:prepare -- --ios` passed: canonical web build, full `npm run check`, `check:sync`, `check:release`, mobile build, `check:mobile`, Capacitor sync and signed Xcode build. The first invocation included `--install` but was stopped before installation so the signed asset comparison could run first. Preparation was rerun without that flag. Capacitor's generated machine-specific Package.swift dependency path was restored to its original tracked relative path after the build.
+- Shared release: v1.1.0, build **261**, full fingerprint `2ba5e0449cc0a832e71c8c68ba01512789a7acc77dbb71246741a9c10cecc191`. No built release.json was edited by hand.
+- `codesign --verify --deep --strict` passed. All **52** files in `www` exactly matched the corresponding signed app `public` files before installation and again after installation/publication; signed CFBundleVersion is **261**.
+- `xcrun devicectl device install app` succeeded on Kevin's iPhone for `com.scripturelens.app`. The subsequent launch attempt was rejected because the device was locked. Installation is confirmed; an on-device UI launch/inspection is not claimed. The iPad was not installed or verified.
+- The fresh Sites opening had the same unchanged build-260 source as the pre-development opening, so it had no independent advance to reconcile. The mirror received the canonical tracked source and **already-built** dist; it was not independently rebuilt.
+- Sites version **254**, source commit `c6912ea8e83dbb5797946ca5529296b936656090`, deployment `appgdep_6ad6e444435c8191861e16259ce5962f`, succeeded at `2026-10-20T03:47:26.706540Z` (October 19, 11:47 PM Eastern). Existing public audience preserved. URL: https://scripture-lens.kvn-mcgwn.chatgpt.site.
+- `npm run release:verify -- /Users/kevin/.codex/worktrees/1afc/BibleLens/.release/sites-mirror` passed after publication and installation: live web, canonical app source, mirror and mobile assets match build 261 and its fingerprint. A separate live `/stories.json` comparison exactly matched **276** stories in **30** books.
+- Browser verification showed the local and published John story, build 261, its narrowed `John 13:1 - 13:38` passage and successful navigation to the reader at `#read/42/13/1`. Screenshot: `.release/stories-build-261.png`. No live generated-answer accuracy claim is made; no Chat behavior was changed.
+- This executed-results appendix is a documentation-only checkpoint after publication; application source and the release fingerprint remain unchanged.
+
+## Remaining backlog
+
+Second-pass evidence D1–D27 (including the named Jeremiah/matthew-acts/epistles/OT-remainder files), the ten Tier 1 character batches, and academic timeline cards E2–E9 remain unintegrated by this run. Gallio E1 remains held. The Exile/Return era choice and Jesus character-profile framing remain for the owner; no new era or Jesus profile has been introduced. The original People-page work remains preserved in its named stash and is not included in build 261. Scheduled research, draft/control files, the chapter ledger and prior stashes remain unchanged.
