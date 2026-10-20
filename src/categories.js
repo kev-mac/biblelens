@@ -10,7 +10,7 @@ function categoryPersonalItems({book=markedBookSelection,chapter=markedChapterSe
  return [...verses,...passages,...studies];
 }
 function categoryPersonalCard({kind,item},profile=false){
- if(profile)return categoryPersonalProfile(kind,item);
+ if(profile===true)return categoryPersonalProfile(kind,item);
  if(kind==='study')return `<article class="passage-saved-card"><button class="text-button" data-open="${esc(item.id)}">${esc(state.noteTitles?.[item.id]||item.title)}</button><p>${esc(state.notes[item.id]||'')}</p></article>`;
  const key=`${item.book}:${item.chapter}${kind==='verse'?':'+item.verse:''}`,note=kind==='verse'?state.verseNotes[key]||item:state.passageNotes[key]||item;
  const reference=`${books[item.book].name} ${item.chapter}${kind==='verse'?':'+item.verse:''}`;
