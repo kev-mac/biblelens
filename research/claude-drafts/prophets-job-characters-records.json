@@ -1,0 +1,815 @@
+[
+ {
+  "id": "isaiah",
+  "name": "Isaiah",
+  "sex": "male",
+  "era": "Prophets",
+  "summary": "Son of Amoz, whose vision concerns Judah and Jerusalem in the days of four kings, from Uzziah to Hezekiah. He sees the Lord on a throne in the year Uzziah died, answers 'Here am I; send me', and is sent. He meets Ahaz at the upper pool with his son Shearjashub and offers the sign of Immanuel, goes naked and barefoot three years as a sign against Egypt and Ethiopia, and speaks to Hezekiah during the Assyrian crisis and his illness, telling him that Babylon will one day carry off his treasures and sons.",
+  "lineage": {
+   "parents": [
+    "Amoz"
+   ],
+   "spouses": [
+    "The prophetess (unnamed)"
+   ],
+   "children": [
+    "Shearjashub",
+    "Mahershalalhashbaz"
+   ]
+  },
+  "geography": {
+   "origin": "Judah and Jerusalem, son of Amoz (Isaiah 1:1)",
+   "residence": [
+    "Jerusalem (Isaiah 7:3)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Isaiah",
+    "2 Kings"
+   ],
+   "key_verses": [
+    "Isaiah 1:1",
+    "Isaiah 6:1",
+    "Isaiah 6:8",
+    "Isaiah 7:3",
+    "Isaiah 7:14",
+    "Isaiah 8:3",
+    "Isaiah 20:2",
+    "Isaiah 38:1",
+    "Isaiah 39:6"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "isaiah-isaiah-s-call",
+     "title": "Isaiah's Call",
+     "passage": "Isaiah 6:1 - 6:13",
+     "route": "#stories/isaiah/isaiah-s-call"
+    },
+    {
+     "story_id": "isaiah-ahaz-and-the-sign-of-immanuel",
+     "title": "Ahaz and the Sign of Immanuel",
+     "passage": "Isaiah 7:1 - 7:25",
+     "route": "#stories/isaiah/ahaz-and-the-sign-of-immanuel"
+    },
+    {
+     "story_id": "isaiah-sennacherib-s-threat-and-hezekiah",
+     "title": "Sennacherib's Threat and Hezekiah",
+     "passage": "Isaiah 36:1 - 37:38",
+     "route": "#stories/isaiah/sennacherib-s-threat-and-hezekiah"
+    },
+    {
+     "story_id": "isaiah-hezekiah-s-illness",
+     "title": "Hezekiah's Illness",
+     "passage": "Isaiah 38:1 - 39:8",
+     "route": "#stories/isaiah/hezekiah-s-illness"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ahaz",
+  "name": "Ahaz",
+  "sex": "male",
+  "era": "Monarchy",
+  "summary": "Son of Jotham, who becomes king of Judah at twenty and reigns sixteen years in Jerusalem. The writer of Kings says he did not do right like David, walked in the way of the kings of Israel, made his son pass through the fire, and sacrificed on the high places. When Syria and Israel come up against Jerusalem, Isaiah is sent to tell him to be quiet and not fear; offered a sign, he says he will not ask, and the sign of Immanuel is given to the house of David instead. His son Hezekiah reigns after him.",
+  "lineage": {
+   "parents": [
+    "Jotham"
+   ],
+   "children": [
+    "Hezekiah"
+   ],
+   "tribe": "Judah"
+  },
+  "geography": {
+   "origin": "Judah, son of Jotham (Isaiah 7:1)",
+   "residence": [
+    "Jerusalem (2 Kings 16:2)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Isaiah",
+    "2 Kings"
+   ],
+   "key_verses": [
+    "Isaiah 7:1",
+    "Isaiah 7:2",
+    "Isaiah 7:4",
+    "Isaiah 7:12",
+    "Isaiah 7:14",
+    "2 Kings 16:1",
+    "2 Kings 16:2",
+    "2 Kings 16:3",
+    "2 Kings 16:4",
+    "2 Kings 16:20"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "isaiah-ahaz-and-the-sign-of-immanuel",
+     "title": "Ahaz and the Sign of Immanuel",
+     "passage": "Isaiah 7:1 - 7:25",
+     "route": "#stories/isaiah/ahaz-and-the-sign-of-immanuel"
+    }
+   ]
+  }
+ },
+ {
+  "id": "sennacherib",
+  "name": "Sennacherib",
+  "sex": "male",
+  "era": "Monarchy",
+  "summary": "King of Assyria who, in Hezekiah's fourteenth year, comes up against the fenced cities of Judah and takes them. Hezekiah offers tribute, and Sennacherib sends Rabshakeh and others with a great army to Jerusalem, where they stand at the upper pool. The account in Isaiah says the angel of the Lord strikes the Assyrian camp with 185,000 dead; Sennacherib returns to Nineveh and is later killed by his sons Adrammelech and Sharezer in the house of his god, and Esarhaddon reigns in his place.",
+  "lineage": {
+   "children": [
+    "Adrammelech",
+    "Sharezer",
+    "Esarhaddon"
+   ]
+  },
+  "geography": {
+   "origin": "Assyria; his capital in the text is Nineveh (Isaiah 37:37)",
+   "residence": [
+    "Nineveh (Isaiah 37:37)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Isaiah",
+    "2 Kings"
+   ],
+   "key_verses": [
+    "Isaiah 36:1",
+    "Isaiah 36:2",
+    "Isaiah 37:36",
+    "Isaiah 37:37",
+    "Isaiah 37:38",
+    "2 Kings 18:13",
+    "2 Kings 18:14",
+    "2 Kings 18:17"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "isaiah-sennacherib-s-threat-and-hezekiah",
+     "title": "Sennacherib's Threat and Hezekiah",
+     "passage": "Isaiah 36:1 - 37:38",
+     "route": "#stories/isaiah/sennacherib-s-threat-and-hezekiah"
+    }
+   ]
+  }
+ },
+ {
+  "id": "jeremiah",
+  "name": "Jeremiah",
+  "sex": "male",
+  "era": "Prophets",
+  "summary": "Son of Hilkiah, of the priests at Anathoth in Benjamin, to whom the word of the Lord comes from the thirteenth year of Josiah until Jerusalem is carried away captive. Told that he was known and ordained a prophet to the nations before birth, he answers that he is a child and cannot speak. He is struck and put in the stocks by Pashur, opposes the prophet Hananiah, has his words written by Baruch, is lowered into a dungeon in the last siege and drawn out by Ebed-melech, and ends among the remnant carried into Egypt against his word.",
+  "lineage": {
+   "parents": [
+    "Hilkiah"
+   ],
+   "tribe": "Levi (priestly family)"
+  },
+  "geography": {
+   "origin": "Anathoth in the land of Benjamin (Jeremiah 1:1)",
+   "residence": [
+    "Anathoth (Jeremiah 1:1)",
+    "Jerusalem, court of the prison (Jeremiah 38:13)",
+    "Tahpanhes in Egypt (Jeremiah 43:7)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Jeremiah"
+   ],
+   "key_verses": [
+    "Jeremiah 1:1",
+    "Jeremiah 1:2",
+    "Jeremiah 1:3",
+    "Jeremiah 1:5",
+    "Jeremiah 1:6",
+    "Jeremiah 20:2",
+    "Jeremiah 28:5",
+    "Jeremiah 36:4",
+    "Jeremiah 38:13",
+    "Jeremiah 43:6",
+    "Jeremiah 43:7"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "jeremiah-jeremiah-s-call",
+     "title": "Jeremiah's Call",
+     "passage": "Jeremiah 1:1 - 1:19",
+     "route": "#stories/jeremiah/jeremiah-s-call"
+    },
+    {
+     "story_id": "jeremiah-jeremiah-and-pashhur-the-temple-sermon",
+     "title": "Jeremiah and Pashhur; the Temple Sermon",
+     "passage": "Jeremiah 20:1 - 20:18",
+     "route": "#stories/jeremiah/jeremiah-and-pashhur-the-temple-sermon"
+    },
+    {
+     "story_id": "jeremiah-hananiah-s-false-prophecy",
+     "title": "Hananiah's False Prophecy",
+     "passage": "Jeremiah 28:1 - 28:17",
+     "route": "#stories/jeremiah/hananiah-s-false-prophecy"
+    },
+    {
+     "story_id": "jeremiah-the-scroll-burned",
+     "title": "The Scroll Burned",
+     "passage": "Jeremiah 36:1 - 36:32",
+     "route": "#stories/jeremiah/the-scroll-burned"
+    },
+    {
+     "story_id": "jeremiah-jeremiah-in-the-cistern",
+     "title": "Jeremiah in the Cistern",
+     "passage": "Jeremiah 37:1 - 38:28",
+     "route": "#stories/jeremiah/jeremiah-in-the-cistern"
+    },
+    {
+     "story_id": "jeremiah-the-fall-of-jerusalem-and-flight-to-egypt",
+     "title": "The Fall of Jerusalem and Flight to Egypt",
+     "passage": "Jeremiah 39:1 - 43:13",
+     "route": "#stories/jeremiah/the-fall-of-jerusalem-and-flight-to-egypt"
+    }
+   ]
+  }
+ },
+ {
+  "id": "baruch",
+  "name": "Baruch",
+  "sex": "male",
+  "era": "Prophets",
+  "summary": "Son of Neriah, called the scribe. In the fourth year of Jehoiakim he writes down all the words of the Lord from Jeremiah's mouth on a roll. When the king burns the roll, he writes a second one from Jeremiah with many like words added, and the Lord hides both men from arrest. A separate word to Baruch records his complaint of grief and no rest. After Jerusalem falls he is among those taken into Egypt with Jeremiah.",
+  "lineage": {
+   "parents": [
+    "Neriah"
+   ],
+   "siblings": [
+    "Seraiah"
+   ]
+  },
+  "geography": {
+   "origin": "Judah, son of Neriah (Jeremiah 36:4)",
+   "residence": [
+    "Jerusalem (Jeremiah 36:10)",
+    "Egypt (Jeremiah 43:6)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Jeremiah"
+   ],
+   "key_verses": [
+    "Jeremiah 36:4",
+    "Jeremiah 36:10",
+    "Jeremiah 36:26",
+    "Jeremiah 36:32",
+    "Jeremiah 43:6",
+    "Jeremiah 45:1",
+    "Jeremiah 45:3"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "jeremiah-the-scroll-burned",
+     "title": "The Scroll Burned",
+     "passage": "Jeremiah 36:1 - 36:32",
+     "route": "#stories/jeremiah/the-scroll-burned"
+    },
+    {
+     "story_id": "jeremiah-the-fall-of-jerusalem-and-flight-to-egypt",
+     "title": "The Fall of Jerusalem and Flight to Egypt",
+     "passage": "Jeremiah 39:1 - 43:13",
+     "route": "#stories/jeremiah/the-fall-of-jerusalem-and-flight-to-egypt"
+    }
+   ]
+  }
+ },
+ {
+  "id": "hananiah-son-of-azur",
+  "name": "Hananiah son of Azur",
+  "sex": "male",
+  "era": "Prophets",
+  "summary": "A prophet of Gibeon who speaks in the Lord's house before the priests and people in Zedekiah's fourth year. He says the Lord has broken the yoke of the king of Babylon and that within two full years the temple vessels and Jeconiah with the captives will return. Jeremiah answers that the Lord has not sent him and that he makes the people trust a lie; Hananiah dies the same year in the seventh month.",
+  "lineage": {
+   "parents": [
+    "Azur"
+   ]
+  },
+  "geography": {
+   "origin": "Gibeon (Jeremiah 28:1)",
+   "residence": [
+    "Jerusalem (Jeremiah 28:1)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Jeremiah"
+   ],
+   "key_verses": [
+    "Jeremiah 28:1",
+    "Jeremiah 28:2",
+    "Jeremiah 28:3",
+    "Jeremiah 28:4",
+    "Jeremiah 28:15",
+    "Jeremiah 28:16",
+    "Jeremiah 28:17"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "jeremiah-hananiah-s-false-prophecy",
+     "title": "Hananiah's False Prophecy",
+     "passage": "Jeremiah 28:1 - 28:17",
+     "route": "#stories/jeremiah/hananiah-s-false-prophecy"
+    }
+   ]
+  }
+ },
+ {
+  "id": "zedekiah",
+  "name": "Zedekiah",
+  "sex": "male",
+  "era": "Monarchy",
+  "summary": "King of Judah at twenty-one, reigning eleven years in Jerusalem; his mother is Hamutal. The record says he did evil as Jehoiakim had done and rebelled against the king of Babylon. During the siege he secretly asks Jeremiah for a word from the Lord, gives the princes leave to put Jeremiah in the cistern, then has Ebed-melech lift him out, and begs Jeremiah to keep their talk secret. The Chaldeans overtake him on the plains of Jericho, kill his sons before his eyes, put out his eyes, and take him to Babylon, where he stays in prison until death.",
+  "lineage": {
+   "parents": [
+    "Josiah",
+    "Hamutal daughter of Jeremiah of Libnah"
+   ],
+   "tribe": "Judah"
+  },
+  "geography": {
+   "origin": "Judah, son of Josiah (Jeremiah 1:3)",
+   "residence": [
+    "Jerusalem (Jeremiah 52:1)",
+    "Babylon, prisoner (Jeremiah 52:11)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Jeremiah"
+   ],
+   "key_verses": [
+    "Jeremiah 37:17",
+    "Jeremiah 38:5",
+    "Jeremiah 38:24",
+    "Jeremiah 39:5",
+    "Jeremiah 39:6",
+    "Jeremiah 39:7",
+    "Jeremiah 52:1",
+    "Jeremiah 52:2",
+    "Jeremiah 52:3",
+    "Jeremiah 52:11"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "jeremiah-jeremiah-in-the-cistern",
+     "title": "Jeremiah in the Cistern",
+     "passage": "Jeremiah 37:1 - 38:28",
+     "route": "#stories/jeremiah/jeremiah-in-the-cistern"
+    },
+    {
+     "story_id": "jeremiah-the-fall-of-jerusalem-and-flight-to-egypt",
+     "title": "The Fall of Jerusalem and Flight to Egypt",
+     "passage": "Jeremiah 39:1 - 43:13",
+     "route": "#stories/jeremiah/the-fall-of-jerusalem-and-flight-to-egypt"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ebed-melech",
+  "name": "Ebed-melech",
+  "sex": "male",
+  "era": "Prophets",
+  "summary": "An Ethiopian (Cushite) eunuch in the king's house who hears that Jeremiah has been put in the dungeon. He speaks to the king in the gate of Benjamin, takes thirty men with the king's permission, lets down old rags and cords so Jeremiah can be drawn up, and Jeremiah stays in the court of the prison. While Jeremiah is still shut up, the Lord promises Ebed-melech deliverance in the day the city falls, because he trusted in the Lord.",
+  "aliases": [
+   "Ebedmelech"
+  ],
+  "geography": {
+   "origin": "Ethiopia (Jeremiah 38:7); serving in the king's house",
+   "residence": [
+    "Jerusalem (Jeremiah 38:7)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Jeremiah"
+   ],
+   "key_verses": [
+    "Jeremiah 38:7",
+    "Jeremiah 38:9",
+    "Jeremiah 38:10",
+    "Jeremiah 38:11",
+    "Jeremiah 38:13",
+    "Jeremiah 39:16",
+    "Jeremiah 39:18"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "jeremiah-jeremiah-in-the-cistern",
+     "title": "Jeremiah in the Cistern",
+     "passage": "Jeremiah 37:1 - 38:28",
+     "route": "#stories/jeremiah/jeremiah-in-the-cistern"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ezekiel",
+  "name": "Ezekiel",
+  "sex": "male",
+  "era": "Prophets",
+  "summary": "A priest, son of Buzi, among the captives by the river Chebar in the land of the Chaldeans, in the fifth year of Jehoiachin's captivity, when the heavens open and he sees visions of God. Addressed as 'son of man', he is commissioned, sits astonished seven days among the exiles at Telabib, and carries out sign acts such as lying on his side to bear Israel's iniquity. His wife, the desire of his eyes, dies in the evening and he is told not to mourn. Later the Spirit sets him in the valley full of bones.",
+  "lineage": {
+   "parents": [
+    "Buzi"
+   ],
+   "spouses": [
+    "Wife (unnamed)"
+   ],
+   "tribe": "Levi (priest)"
+  },
+  "geography": {
+   "origin": "Priestly family, son of Buzi; among the exiles in Chaldea (Ezekiel 1:3)",
+   "residence": [
+    "River Chebar (Ezekiel 1:3)",
+    "Telabib (Ezekiel 3:15)",
+    "His house, with the elders of Judah (Ezekiel 8:1)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Ezekiel"
+   ],
+   "key_verses": [
+    "Ezekiel 1:1",
+    "Ezekiel 1:2",
+    "Ezekiel 1:3",
+    "Ezekiel 2:1",
+    "Ezekiel 3:15",
+    "Ezekiel 4:4",
+    "Ezekiel 8:1",
+    "Ezekiel 11:24",
+    "Ezekiel 24:16",
+    "Ezekiel 24:18",
+    "Ezekiel 37:1"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "ezekiel-ezekiel-s-vision-and-commission",
+     "title": "Ezekiel's Vision and Commission",
+     "passage": "Ezekiel 1:1 - 3:27",
+     "route": "#stories/ezekiel/ezekiel-s-vision-and-commission"
+    },
+    {
+     "story_id": "ezekiel-sign-acts-of-the-siege",
+     "title": "Sign Acts of the Siege",
+     "passage": "Ezekiel 4:1 - 5:17",
+     "route": "#stories/ezekiel/sign-acts-of-the-siege"
+    },
+    {
+     "story_id": "ezekiel-the-glory-leaves-the-temple",
+     "title": "The Glory Leaves the Temple",
+     "passage": "Ezekiel 8:1 - 11:25",
+     "route": "#stories/ezekiel/the-glory-leaves-the-temple"
+    },
+    {
+     "story_id": "ezekiel-the-death-of-ezekiel-s-wife",
+     "title": "The Death of Ezekiel's Wife",
+     "passage": "Ezekiel 24:15 - 24:27",
+     "route": "#stories/ezekiel/the-death-of-ezekiel-s-wife"
+    },
+    {
+     "story_id": "ezekiel-the-valley-of-dry-bones",
+     "title": "The Valley of Dry Bones",
+     "passage": "Ezekiel 37:1 - 37:28",
+     "route": "#stories/ezekiel/the-valley-of-dry-bones"
+    },
+    {
+     "story_id": "ezekiel-gog-and-the-restored-temple",
+     "title": "Gog and the Restored Temple",
+     "passage": "Ezekiel 38:1 - 40:4",
+     "route": "#stories/ezekiel/gog-and-the-restored-temple"
+    }
+   ]
+  }
+ },
+ {
+  "id": "hosea",
+  "name": "Hosea",
+  "sex": "male",
+  "era": "Prophets",
+  "summary": "Son of Beeri, to whom the word of the Lord came in the days of four kings of Judah and Jeroboam son of Joash of Israel. Told to take a wife of whoredoms, he marries Gomer, and the three children are named Jezreel, Lo-ruhamah and Lo-ammi, each a word to Israel. Later he is told to love a woman beloved of another and an adulteress, buys her for fifteen pieces of silver and barley, and tells her to wait for him many days. The text ties both acts to the Lord's love for Israel.",
+  "lineage": {
+   "parents": [
+    "Beeri"
+   ],
+   "spouses": [
+    "Gomer"
+   ],
+   "children": [
+    "Jezreel",
+    "Lo-ruhamah",
+    "Lo-ammi"
+   ]
+  },
+  "geography": {
+   "origin": "Israel, son of Beeri (Hosea 1:1)",
+   "residence": [
+    "Israel (Hosea 1:1)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Hosea"
+   ],
+   "key_verses": [
+    "Hosea 1:1",
+    "Hosea 1:2",
+    "Hosea 1:3",
+    "Hosea 1:4",
+    "Hosea 1:6",
+    "Hosea 1:9",
+    "Hosea 3:1",
+    "Hosea 3:2",
+    "Hosea 3:3"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "hosea-hosea-s-marriage-to-gomer",
+     "title": "Hosea's Marriage to Gomer",
+     "passage": "Hosea 1:1 - 3:5",
+     "route": "#stories/hosea/hosea-s-marriage-to-gomer"
+    }
+   ]
+  }
+ },
+ {
+  "id": "gomer",
+  "name": "Gomer",
+  "sex": "female",
+  "era": "Prophets",
+  "summary": "Daughter of Diblaim, whom Hosea takes as wife at the Lord's command. She conceives and bears a son, then a daughter named Lo-ruhamah, and after weaning her, another son named Lo-ammi. In chapter 3 the text speaks of a woman beloved of her friend yet an adulteress whom Hosea buys back and tells to abide with him; whether this is Gomer is not stated in the verse, though the chapter is usually read that way.",
+  "lineage": {
+   "parents": [
+    "Diblaim"
+   ],
+   "spouses": [
+    "Hosea"
+   ],
+   "children": [
+    "Jezreel",
+    "Lo-ruhamah",
+    "Lo-ammi"
+   ]
+  },
+  "geography": {
+   "origin": "Daughter of Diblaim (Hosea 1:3)",
+   "residence": [
+    "Israel (Hosea 1:1)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Hosea"
+   ],
+   "key_verses": [
+    "Hosea 1:3",
+    "Hosea 1:6",
+    "Hosea 1:8",
+    "Hosea 3:1",
+    "Hosea 3:2",
+    "Hosea 3:3"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "hosea-hosea-s-marriage-to-gomer",
+     "title": "Hosea's Marriage to Gomer",
+     "passage": "Hosea 1:1 - 3:5",
+     "route": "#stories/hosea/hosea-s-marriage-to-gomer"
+    }
+   ]
+  }
+ },
+ {
+  "id": "amos",
+  "name": "Amos",
+  "sex": "male",
+  "era": "Prophets",
+  "summary": "One of the herdmen of Tekoa whose words concern Israel in the days of Uzziah of Judah and Jeroboam son of Joash, two years before the earthquake. When Amaziah the priest of Bethel reports him to the king, he is told to flee to Judah and not to prophesy at Bethel again. He answers that he was no prophet or prophet's son, but a herdman and a gatherer of sycomore fruit, and that the Lord took him from following the flock and sent him to Israel.",
+  "geography": {
+   "origin": "Tekoa (Amos 1:1)",
+   "residence": [
+    "Bethel, while prophesying (Amos 7:13)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Amos"
+   ],
+   "key_verses": [
+    "Amos 1:1",
+    "Amos 7:10",
+    "Amos 7:12",
+    "Amos 7:13",
+    "Amos 7:14",
+    "Amos 7:15"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "amos-amaziah-opposes-amos",
+     "title": "Amaziah Opposes Amos",
+     "passage": "Amos 7:10 - 7:17",
+     "route": "#stories/amos/amaziah-opposes-amos"
+    }
+   ]
+  }
+ },
+ {
+  "id": "amaziah-priest-of-bethel",
+  "name": "Amaziah the priest of Bethel",
+  "sex": "male",
+  "era": "Prophets",
+  "summary": "Priest at Bethel who sends word to Jeroboam of Israel that Amos has conspired against him and that the land cannot bear his words, quoting that Jeroboam will die by the sword and Israel be led away. He tells Amos, 'O thou seer', to flee to Judah, eat bread and prophesy there, and not at Bethel, since it is the king's chapel and court.",
+  "geography": {
+   "origin": "Bethel (Amos 7:10)",
+   "residence": [
+    "Bethel (Amos 7:10)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Amos"
+   ],
+   "key_verses": [
+    "Amos 7:10",
+    "Amos 7:11",
+    "Amos 7:12",
+    "Amos 7:13"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "amos-amaziah-opposes-amos",
+     "title": "Amaziah Opposes Amos",
+     "passage": "Amos 7:10 - 7:17",
+     "route": "#stories/amos/amaziah-opposes-amos"
+    }
+   ]
+  }
+ },
+ {
+  "id": "eliphaz",
+  "name": "Eliphaz",
+  "sex": "male",
+  "era": "Wisdom",
+  "summary": "The Temanite, first of Job's three friends. They come by appointment to mourn with Job and comfort him, and Eliphaz is the first to answer. At the close, the Lord says to Eliphaz that his wrath is kindled against him and his two friends because they have not spoken of him the thing that is right, as Job has, and tells them to offer bullocks and rams while Job prays for them. The Eliphaz of Genesis 36 is an Edomite name; the text does not say the two are the same.",
+  "geography": {
+   "origin": "Called the Temanite (Job 2:11)",
+   "residence": [
+    "Came to Job in his affliction (Job 2:11)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Job"
+   ],
+   "key_verses": [
+    "Job 2:11",
+    "Job 4:1",
+    "Job 42:7",
+    "Job 42:8",
+    "Job 42:9"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "job-job-s-testing",
+     "title": "Job's Testing",
+     "passage": "Job 1:1 - 2:13",
+     "route": "#stories/job/job-s-testing"
+    },
+    {
+     "story_id": "job-job-restored",
+     "title": "Job Restored",
+     "passage": "Job 42:1 - 42:17",
+     "route": "#stories/job/job-restored"
+    }
+   ]
+  }
+ },
+ {
+  "id": "bildad",
+  "name": "Bildad",
+  "sex": "male",
+  "era": "Wisdom",
+  "summary": "The Shuhite, second of Job's three friends, who comes with Eliphaz and Zophar to mourn and comfort Job. He takes up the answer after Eliphaz. The Lord's closing word at the end of the book includes him among the three whose words about God were not right, and he goes with the others to make the offering Job prays over.",
+  "geography": {
+   "origin": "Called the Shuhite (Job 2:11)",
+   "residence": [
+    "Came to Job in his affliction (Job 2:11)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Job"
+   ],
+   "key_verses": [
+    "Job 2:11",
+    "Job 8:1",
+    "Job 42:7",
+    "Job 42:9"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "job-job-s-testing",
+     "title": "Job's Testing",
+     "passage": "Job 1:1 - 2:13",
+     "route": "#stories/job/job-s-testing"
+    },
+    {
+     "story_id": "job-job-restored",
+     "title": "Job Restored",
+     "passage": "Job 42:1 - 42:17",
+     "route": "#stories/job/job-restored"
+    }
+   ]
+  }
+ },
+ {
+  "id": "zophar",
+  "name": "Zophar",
+  "sex": "male",
+  "era": "Wisdom",
+  "summary": "The Naamathite, third of Job's friends, who comes by appointment to comfort Job and speaks in his turn. He is one of the two named with Eliphaz in the Lord's rebuke at the end, and does as the Lord commanded in offering seven bullocks and seven rams while Job prays.",
+  "geography": {
+   "origin": "Called the Naamathite (Job 2:11)",
+   "residence": [
+    "Came to Job in his affliction (Job 2:11)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Job"
+   ],
+   "key_verses": [
+    "Job 2:11",
+    "Job 11:1",
+    "Job 42:7",
+    "Job 42:9"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "job-job-s-testing",
+     "title": "Job's Testing",
+     "passage": "Job 1:1 - 2:13",
+     "route": "#stories/job/job-s-testing"
+    },
+    {
+     "story_id": "job-job-restored",
+     "title": "Job Restored",
+     "passage": "Job 42:1 - 42:17",
+     "route": "#stories/job/job-restored"
+    }
+   ]
+  }
+ },
+ {
+  "id": "elihu",
+  "name": "Elihu",
+  "sex": "male",
+  "era": "Wisdom",
+  "summary": "Son of Barachel the Buzite, of the kindred of Ram. He waits until Job and the three friends have finished because they are older, then his wrath is kindled against Job for justifying himself rather than God, and against the three because they found no answer yet condemned Job. He speaks in chapters 32 to 37 and says that he too is formed out of clay. He is not named in the Lord's later rebuke of the friends.",
+  "lineage": {
+   "parents": [
+    "Barachel"
+   ]
+  },
+  "geography": {
+   "origin": "Called the Buzite (Job 32:2)",
+   "residence": [
+    "Came to Job in his affliction (Job 2:11)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Job"
+   ],
+   "key_verses": [
+    "Job 32:2",
+    "Job 32:3",
+    "Job 32:4",
+    "Job 32:6",
+    "Job 33:6"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "job-elihu-speaks",
+     "title": "Elihu Speaks",
+     "passage": "Job 32:1 - 32:22",
+     "route": "#stories/job/elihu-speaks"
+    }
+   ]
+  }
+ }
+]

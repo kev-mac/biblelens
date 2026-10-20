@@ -117,3 +117,8 @@ Owner’s answer: no. The record stays held. Sent to Codex by the owner.
 
 Question: does a place name count for H when the Hebrew name means something different from the KJV’s name?
 Owner’s answer: yes, when the Hebrew name is made of ordinary words the KJV’s name does not carry and the record says the place may be the same. Sent to Codex by the owner.
+
+## 2026-10-19 (remediation C5): era for the Exile and Return cast
+The character validator offers no era between Monarchy and Gospels except Wisdom and Prophets. I placed Cyrus, Zerubbabel, Ezra, Nehemiah, Esther, Mordecai, Haman, Daniel and others under "Prophets". Do you want a new era such as "Exile and Return" (Codex would extend the era list and the filter), or is Prophets acceptable?
+
+- (2026-10-19, C7) Should Jesus get a Characters profile? I left him out of the Gospels batch because the app treats him separately and a profile needs your ruling on framing (neutral narrative vs. credal). Say yes/no and the style.

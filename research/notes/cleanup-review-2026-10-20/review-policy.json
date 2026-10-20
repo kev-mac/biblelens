@@ -1,0 +1,25 @@
+{
+  "owner_instructions_date": "2026-10-20",
+  "baseline_commit": "b1ebe72ce8d2269a2d416e396ad5db79ddd18d23",
+  "baseline_description": "Latest GitHub main and Sites application source from last night; preserve all current application files and published data.",
+  "older_ui": "Archive only; do not cherry-pick old UI work or apply an old stash wholesale.",
+  "content": "Review by record, source and quote before integration or push. Preserve current IDs, corrected passages, scope limits, topics and references.",
+  "stories": "Keep current stories unless a documented comparison establishes that an older candidate is better. Do not prefer older text just because it is longer.",
+  "git_practice": "Alert the owner about stale branches, dirty-tree pulls, divergent histories and destructive or overwriting operations. Use fast-forward updates when histories allow.",
+  "publication": "No cleanup or candidate branch is approved for publication. No push or deployment is part of this cleanup.",
+  "automation": "Claude control files and scheduled tasks are unchanged. Completed uncommitted drafts are preserved on this local review branch; future integrations must check this branch and the archived stashes, not only main.",
+  "people_stash": {
+    "sha": "77c4225175de41348536b7e299248981b16d0337",
+    "enriched_people": 3067,
+    "family_candidates": 14,
+    "curated_details": 68,
+    "disposition": "hold-pending-content-review; UI and importer changes are not applied"
+  },
+  "old_evidence_stash": {
+    "sha": "0cc6c15a7a759e5d2603b627d99f37a18b61b8a9",
+    "old_record_count": 451,
+    "current_record_count": 1695,
+    "disposition": "historical archive only; do not restore removed Science Agrees records or replace the larger current catalog"
+  },
+  "recovery_directory": "/Users/kevin/git/BibleLens/.release/cleanup-archives/20261020-063955"
+}

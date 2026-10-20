@@ -1,0 +1,715 @@
+{
+  "review_limit": "Structural inventory only, not acceptance or quote verification. Character batches may use a different target schema from evidence; ID presence here does not decide duplication.",
+  "batches": [
+    {
+      "file": "research/claude-drafts/1-chronicles-second-pass-records.json",
+      "record_count": 10,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "returned-inhabitants-of-jerusalem-counts-1-chronicles-9-or-nehemiah-11",
+        "ephraim-and-manasseh-dwelt-in-jerusalem-1-chronicles-9-3-or-judah-and-benjamin-only-nehemiah-11-4",
+        "levites-numbered-from-thirty-or-from-twenty-years-1-chronicles-23",
+        "judges-of-israel-or-the-tribes-of-israel-1-chronicles-17-6-greek",
+        "in-my-house-and-in-my-kingdom-or-in-his-kingdom-1-chronicles-17-14-greek",
+        "a-good-piece-of-flesh-and-a-flagon-of-wine-or-a-baker-s-loaf-and-a-cake-1-chronicles-16-3-greek",
+        "all-israel-gathered-from-shihor-to-hemath-or-thirty-thousand-chosen-men-1-chronicles-13-2-samuel-6",
+        "thirty-thousand-chosen-men-or-seventy-thousand-young-men-2-samuel-6-1-greek",
+        "abiathar-son-of-ahimelech-or-ahimelech-son-of-abiathar",
+        "simeon-six-sons-or-five-genesis-46-10-1-chronicles-4-24"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/1-kings-second-pass-records.json",
+      "record_count": 11,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "people-piped-with-pipes-or-danced-in-choirs-1-kings-1-40-greek",
+        "that-thou-mayest-prosper-or-that-thou-mayest-understand-1-kings-2-3-greek",
+        "blood-of-war-on-his-girdle-or-innocent-blood-on-his-girdle-1-kings-2-5-greek",
+        "jeroboam-and-the-congregation-came-or-the-people-spake-1-kings-12-2-3-12-greek",
+        "an-hundred-and-fourscore-thousand-or-a-hundred-and-twenty-thousand-1-kings-12-21-greek",
+        "ravens-brought-bread-and-flesh-twice-or-bread-in-morning-flesh-in-evening-greek",
+        "widow-for-me-and-my-son-or-for-me-and-my-children-1-kings-17-12-15-greek",
+        "elijah-stretched-himself-and-soul-came-again-or-breathed-and-child-cried-out-greek",
+        "ahab-palace-or-ahab-threshingfloor-naboth-vineyard-1-kings-21-1-greek",
+        "naboth-did-blaspheme-god-and-the-king-or-blessed-god-and-the-king-greek",
+        "dogs-lick-thy-blood-or-swine-and-dogs-lick-and-harlots-wash-1-kings-21-19-greek"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/1-samuel-second-pass-records.json",
+      "record_count": 9,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "ark-sent-to-ekron-or-ascalon-1-samuel-5-10-6-16",
+        "eli-heard-how-his-sons-lay-with-the-women-or-greek-lacks-clause-1-samuel-2-22",
+        "if-one-man-sin-against-another-the-judge-or-they-shall-pray-1-samuel-2-25",
+        "hannah-song-his-king-or-our-kings-1-samuel-2-10",
+        "bethshemesh-men-looked-into-the-ark-or-sons-of-jechonias-not-pleased-1-samuel-6-19",
+        "david-men-six-hundred-or-four-hundred-keilah-1-samuel-23-13",
+        "saul-lay-in-the-trench-or-in-a-chariot-1-samuel-26-5-26-7",
+        "king-of-israel-come-out-to-seek-a-flea-or-thy-life-1-samuel-26-20",
+        "achish-david-with-me-these-days-or-these-years-or-second-year-1-samuel-29-3"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/1-thessalonians-second-pass-records.json",
+      "record_count": 3,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "their-own-prophets-or-the-prophets-1-thessalonians-2-15-greek-new-testament",
+        "be-at-peace-among-yourselves-or-among-them-1-thessalonians-5-13-greek-new-testament",
+        "unto-all-the-holy-brethren-or-all-the-brethren-1-thessalonians-5-27-greek-new-testament"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/2-chronicles-second-pass-records.json",
+      "record_count": 4,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "linen-yarn-at-a-price-or-the-charge-of-the-kings-merchants-greek",
+        "priests-for-the-devils-or-for-the-idols-and-the-vain-things-greek",
+        "only-priests-and-levites-in-the-house-or-captains-and-the-guard-brought-in-2-chronicles-23-6-2-kings-11-4",
+        "uzziah-buried-in-the-field-of-the-burial-or-in-the-city-of-david-2-chronicles-26-23-2-kings-15-7"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/2-corinthians-second-pass-records.json",
+      "record_count": 6,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "which-vail-is-done-away-in-christ-or-because-it-is-done-away-in-christ-2-corinthians-3-14-greek-new-testament",
+        "our-care-for-you-or-your-care-for-us-2-corinthians-7-12-greek-new-testament",
+        "we-were-comforted-in-your-comfort-or-in-our-comfort-2-corinthians-7-13-greek-new-testament",
+        "whereof-ye-had-notice-before-or-promised-before-2-corinthians-9-5-greek-new-testament",
+        "minister-bread-multiply-and-increase-or-will-supply-multiply-and-increase-2-corinthians-9-10-greek-new-testament",
+        "our-authority-which-the-lord-hath-given-us-or-which-the-lord-gave-2-corinthians-10-8-greek-new-testament"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/2-kings-second-pass-records.json",
+      "record_count": 5,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "land-of-armenia-or-the-land-of-ararat-2-kings-19-37-isaiah-37-38",
+        "ass-head-fourscore-pieces-of-silver-or-fifty-greek",
+        "full-ears-of-corn-in-the-husk-or-cakes-of-figs-greek",
+        "two-chariot-horses-or-two-horsemen-greek",
+        "manasseh-made-his-son-pass-through-the-fire-or-his-children-2-kings-21-6-2-chronicles-33-6"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/2-samuel-second-pass-records.json",
+      "record_count": 10,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "shalt-thou-build-me-an-house-or-thou-shalt-not-build-2-samuel-7-5-greek",
+        "as-i-took-it-from-saul-or-as-i-removed-from-those-whom-i-removed-2-samuel-7-15-greek",
+        "from-the-nations-and-their-gods-or-nations-and-tents-2-samuel-7-23-greek",
+        "land-of-saul-thy-father-or-saul-thy-fathers-father-2-samuel-9-7-greek",
+        "abimelech-son-of-jerubbesheth-or-son-of-jerubbaal-son-of-ner-2-samuel-11-21-greek",
+        "messenger-shewed-david-or-david-was-angry-with-joab-2-samuel-11-22-greek",
+        "restore-the-lamb-fourfold-or-sevenfold-2-samuel-12-6-greek",
+        "given-occasion-to-the-enemies-to-blaspheme-or-provoked-the-enemies-2-samuel-12-14-greek",
+        "who-is-a-rock-save-our-god-or-who-is-a-creator-2-samuel-22-32-greek",
+        "a-bow-of-steel-or-a-bow-of-bronze-2-samuel-22-35-greek"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/2-thessalonians-second-pass-records.json",
+      "record_count": 1,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "them-that-believe-or-those-who-believed-2-thessalonians-1-10-greek-new-testament"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/academic-cards-records.json",
+      "record_count": 0,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/acts-characters-records.json",
+      "record_count": 14,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "stephen",
+        "barnabas",
+        "philip-the-evangelist",
+        "cornelius",
+        "silas",
+        "timothy",
+        "apollos",
+        "priscilla",
+        "aquila",
+        "gamaliel",
+        "lydia",
+        "felix",
+        "festus",
+        "agrippa-ii"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/acts-remainder-characters-records.json",
+      "record_count": 9,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "ananias-husband-of-sapphira",
+        "sapphira",
+        "ananias-of-damascus",
+        "simon-magus",
+        "dorcas",
+        "eutychus",
+        "demetrius-the-silversmith",
+        "claudius-lysias",
+        "luke"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/ecclesiastes-second-pass-records.json",
+      "record_count": 8,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "before-the-angel-that-it-was-an-error-or-in-the-presence-of-god-it-was-ignorance-greek",
+        "god-answereth-him-in-the-joy-of-his-heart-or-god-troubles-him-in-the-joy-of-his-heart-greek",
+        "nor-known-any-thing-or-nor-known-rest-greek",
+        "a-thousand-years-twice-told-or-the-returns-of-a-thousand-years-greek",
+        "a-gift-destroyeth-the-heart-or-oppression-destroys-his-noble-heart-greek",
+        "withdraw-not-thine-hand-or-defile-not-thine-hand-greek",
+        "walk-in-the-sight-of-thine-eyes-or-walk-blameless-and-not-in-the-sight-of-thine-eyes-greek",
+        "childhood-and-youth-are-vanity-or-youth-and-folly-are-vanity-greek"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/epistles-second-pass-records.json",
+      "record_count": 9,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "therefore-if-thine-enemy-hunger-romans-12-20",
+        "above-that-which-is-written-1-corinthians-4-6",
+        "in-christ-1-corinthians-4-17",
+        "then-that-which-is-in-part-1-corinthians-13-10",
+        "peter-or-cephas-galatians-2-11-and-2-14",
+        "your-trespasses-and-sins-ephesians-2-1",
+        "peace-to-you-afar-off-ephesians-2-17",
+        "all-the-building-ephesians-2-21",
+        "and-not-of-strong-meat-hebrews-5-12"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/esther-second-pass-records.json",
+      "record_count": 5,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "esther-drew-near-and-touched-the-sceptre-or-the-king-laid-it-on-her-neck-esther-5-2-greek",
+        "she-obtained-favour-in-his-sight-or-god-changed-the-spirit-of-the-king-esther-5-1-greek",
+        "i-had-held-my-tongue-or-i-disobeyed-the-adversary-is-not-worthy-of-the-court-esther-7-4-greek",
+        "laid-a-tribute-upon-the-land-and-the-isles-or-wrote-upon-the-kingdom-of-land-and-sea-esther-10-1-greek",
+        "mordecai-next-unto-the-king-or-took-over-from-king-artaxerxes-esther-10-3-greek"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/exodus-wilderness-characters-records.json",
+      "record_count": 12,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "jethro",
+        "zipporah",
+        "eleazar",
+        "phinehas",
+        "caleb",
+        "korah",
+        "balaam",
+        "balak",
+        "nadab",
+        "abihu",
+        "hur",
+        "bezalel"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/ezekiel-second-pass-records.json",
+      "record_count": 13,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "at-even-my-wife-died-or-no-wife-named-ezekiel-24-18",
+        "conspiracy-of-her-prophets-or-her-princes-ezekiel-22-25",
+        "twelfth-year-tenth-month-or-tenth-year-twelfth-month-ezekiel-33-21",
+        "ye-eat-with-the-blood-and-stand-upon-your-sword-or-not-printed-ezekiel-33-25-26",
+        "waters-to-the-ankles-and-knees-or-thighs-ezekiel-47-3-4",
+        "joseph-shall-have-two-portions-or-an-addition-of-a-measuring-line-ezekiel-47-13",
+        "from-the-east-country-into-the-desert-or-galilee-and-arabia-ezekiel-47-8",
+        "five-hundred-reeds-or-five-hundred-cubits-ezekiel-42-16-19",
+        "bear-it-upon-thy-shoulders-or-thou-shalt-be-lifted-up-ezekiel-12-6-7",
+        "the-king-shall-mourn-or-the-prince-only-ezekiel-7-27",
+        "telabib-and-astonished-or-no-name-ezekiel-3-15",
+        "shall-set-glory-in-the-land-of-the-living-or-nor-stand-upon-it-ezekiel-26-20",
+        "him-that-passeth-out-and-returneth-or-men-and-cattle-ezekiel-35-7"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/ezra-daniel-characters-records.json",
+      "record_count": 14,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "cyrus",
+        "zerubbabel",
+        "ezra",
+        "nehemiah",
+        "sanballat",
+        "vashti",
+        "ahasuerus",
+        "esther",
+        "mordecai",
+        "haman",
+        "daniel",
+        "nebuchadnezzar",
+        "belshazzar",
+        "jonah"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/genesis-second-pass-records.json",
+      "record_count": 12,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "lot-dwelt-in-the-cities-of-the-plain-toward-sodom-or-a-city-in-sodom-genesis-13-12",
+        "abram-seed-as-the-dust-of-the-earth-or-the-sand-of-the-earth-genesis-13-16",
+        "plain-of-mamre-or-oaks-of-mamre-genesis-13-18",
+        "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "simeon-and-levi-came-upon-the-city-boldly-or-securely-genesis-34-25",
+        "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "joseph-asks-after-jacob-greek-adds-blessed-be-that-man-genesis-43-28"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/gospel-remainder-characters-records.json",
+      "record_count": 11,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "andrew",
+        "james-son-of-zebedee",
+        "john-son-of-zebedee",
+        "matthew-levi",
+        "philip-the-apostle",
+        "nathanael",
+        "herod-antipas",
+        "herodias",
+        "joseph-of-arimathaea",
+        "barabbas",
+        "annas"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/gospels-characters-records.json",
+      "record_count": 17,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "mary-mother-of-jesus",
+        "joseph-husband-of-mary",
+        "elisabeth",
+        "zacharias-father-of-john",
+        "john-the-baptist",
+        "herod-the-great",
+        "peter",
+        "judas-iscariot",
+        "mary-magdalene",
+        "martha-of-bethany",
+        "mary-of-bethany",
+        "lazarus-of-bethany",
+        "nicodemus",
+        "pontius-pilate",
+        "caiaphas",
+        "zacchaeus",
+        "thomas"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/isaiah-second-pass-records.json",
+      "record_count": 16,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "ten-acres-of-vineyard-or-ten-yoke-of-oxen-greek-isaiah-5-10",
+        "hamath-and-the-islands-of-the-sea-or-the-rising-of-the-sun-and-arabia-greek-isaiah-11-11",
+        "the-golden-city-ceased-or-the-taskmaster-ceased-greek-isaiah-14-4",
+        "bajith-and-lions-upon-moab-or-debon-where-your-altar-is-and-arabians-greek-isaiah-15-2-and-9",
+        "send-ye-the-lamb-to-the-ruler-or-i-will-send-as-reptiles-greek-isaiah-16-1",
+        "forsaken-bough-and-uppermost-branch-or-the-amorites-and-the-hivites-greek-isaiah-17-9",
+        "the-moon-confounded-and-the-sun-ashamed-or-the-brick-shall-melt-and-the-wall-fall-greek-isaiah-24-23",
+        "i-the-lord-do-keep-it-or-i-am-a-strong-city-besieged-greek-isaiah-27-3",
+        "i-shall-not-see-the-lord-even-the-lord-or-the-salvation-of-god-greek-isaiah-38-11",
+        "for-isaiah-had-said-or-and-isaiah-said-isaiah-38-21-22",
+        "cities-of-judah-or-cities-of-idumea-greek-isaiah-44-26",
+        "so-shall-he-sprinkle-many-nations-or-so-many-nations-shall-wonder-at-him-greek-isaiah-52-15",
+        "thy-gates-praise-or-thy-gates-sculptured-work-greek-isaiah-60-18",
+        "that-troop-and-that-number-or-the-demon-and-fortune-greek-isaiah-65-11",
+        "he-that-killeth-an-ox-or-the-transgressor-that-sacrifices-a-calf-greek-isaiah-66-3",
+        "lud-that-draw-the-bow-or-lud-and-mosoch-greek-isaiah-66-19"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/jeremiah-4b-second-pass-records.json",
+      "record_count": 3,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "anger-not-kept-for-ever-or-fire-burning-for-ever-jeremiah-3-12-17-4",
+        "i-will-not-repent-or-i-am-weary-with-repenting-jeremiah-4-28-15-6",
+        "because-of-manasseh-or-every-one-shall-die-for-his-own-iniquity-jeremiah-15-4-31-29-30"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/jeremiah-second-pass-records.json",
+      "record_count": 10,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "in-the-reign-of-jehoiakim-or-zedekiah-jeremiah-27-1-3-12",
+        "his-son-and-his-sons-son-and-restore-them-greek-omits-jeremiah-27-7-22",
+        "branch-of-righteousness-and-david-never-want-a-man-greek-page-ends-at-jeremiah-33-13",
+        "ninth-year-tenth-month-or-ninth-month-greek-jeremiah-39-1",
+        "instead-of-coniah-the-son-of-jehoiakim-or-instead-of-jehoiakim-greek-jeremiah-37-1",
+        "to-separate-himself-or-to-buy-greek-jeremiah-37-12",
+        "third-entry-in-the-house-of-the-lord-or-the-house-of-aseleisel-jeremiah-38-14-greek",
+        "four-princes-heard-jeremiah-or-three-greek-jeremiah-38-1",
+        "army-of-the-syrians-or-the-assyrians-greek-jeremiah-35-11",
+        "none-shall-escape-in-egypt-or-a-small-number-that-escape-jeremiah-42-17-44-14-28"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/joshua-ruth-characters-records.json",
+      "record_count": 15,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "rahab",
+        "achan",
+        "othniel",
+        "ehud",
+        "deborah",
+        "barak",
+        "jael",
+        "gideon",
+        "abimelech",
+        "jephthah",
+        "samson",
+        "delilah",
+        "naomi",
+        "ruth",
+        "boaz"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/kings-characters-records.json",
+      "record_count": 14,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "rehoboam",
+        "jeroboam",
+        "ahab",
+        "jezebel",
+        "jehu",
+        "athaliah",
+        "naaman",
+        "hezekiah",
+        "manasseh",
+        "josiah",
+        "abner",
+        "adonijah",
+        "amnon",
+        "tamar-daughter-of-david"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/luke-second-pass-records.json",
+      "record_count": 8,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "ministered-unto-him-or-ministered-unto-them-luke-8-3-greek-new-testament",
+        "country-of-the-gadarenes-or-gergesenes-luke-8-26-8-37-greek-new-testament",
+        "and-sayest-thou-who-touched-me-luke-8-45-greek-new-testament",
+        "he-put-them-all-out-luke-8-54-greek-new-testament",
+        "the-king-that-cometh-or-the-king-luke-19-38-greek-new-testament",
+        "therein-and-them-that-bought-luke-19-45-greek-new-testament",
+        "chief-priests-or-priests-luke-20-1-greek-new-testament",
+        "why-tempt-ye-me-luke-20-23-greek-new-testament"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/matthew-acts-second-pass-records.json",
+      "record_count": 9,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "commandment-or-law-of-god-matthew-15-6-greek-new-testament",
+        "draweth-nigh-with-their-mouth-matthew-15-8-greek-new-testament",
+        "son-of-man-cometh-clause-matthew-25-13-greek-new-testament",
+        "all-the-holy-angels-matthew-25-31-greek-new-testament",
+        "us-or-you-gave-rain-acts-14-17-greek-new-testament",
+        "wickedness-or-out-of-place-acts-25-5-greek-new-testament",
+        "ten-days-or-eight-or-ten-acts-25-6-greek-new-testament",
+        "to-die-or-to-destruction-acts-25-16-greek-new-testament",
+        "such-things-or-evil-things-acts-25-18-greek-new-testament"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/ot-remainder-1-second-pass-records.json",
+      "record_count": 8,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "the-slayer-at-the-gate-of-the-city-or-no-such-verses-joshua-20-4-6-greek",
+        "went-northward-or-passed-to-boraan-judges-12-1-greek",
+        "buried-in-one-of-the-cities-of-gilead-or-in-his-city-gilead-judges-12-7-greek",
+        "ten-shekels-by-the-year-or-ten-of-silver-a-day-judges-17-10-greek",
+        "an-house-of-gods-or-a-house-of-god-judges-17-5-greek",
+        "orpah-kissed-her-mother-in-law-or-and-returned-to-her-people-ruth-1-14-greek",
+        "the-almighty-or-the-sufficient-one-ruth-1-20-greek",
+        "the-lord-hath-testified-against-me-or-the-lord-humbled-me-ruth-1-21-greek"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/ot-remainder-2-second-pass-records.json",
+      "record_count": 11,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "perfect-peace-and-at-such-a-time-or-let-the-word-and-answer-be-completed-ezra-7-12-greek",
+        "banishment-or-chastisement-ezra-7-26-greek",
+        "our-priests-or-our-children-ezra-9-7-greek",
+        "an-unclean-land-or-a-land-of-removal-ezra-9-11-greek",
+        "punished-less-than-deserved-and-would-not-thou-be-angry-ezra-9-13-14-greek",
+        "other-men-have-our-lands-or-they-belong-to-the-honourable-nehemiah-5-5-greek",
+        "the-hundredth-part-or-of-the-money-nehemiah-5-11-greek",
+        "bread-of-the-governor-or-bread-of-extortion-nehemiah-5-14-18-greek",
+        "fowls-or-a-goat-nehemiah-5-18-greek",
+        "men-of-tyre-dwelt-therein-not-in-the-greek-nehemiah-13-16",
+        "or-for-yourselves-not-in-the-greek-nehemiah-13-25"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/ot-remainder-3-second-pass-records.json",
+      "record_count": 23,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "hosea-7-10-greek",
+        "hosea-7-12-greek",
+        "hosea-7-14-greek",
+        "hosea-7-16-greek",
+        "jonah-2-4-greek",
+        "jonah-2-5-greek",
+        "jonah-2-6-greek",
+        "micah-7-3-greek",
+        "micah-7-11-greek",
+        "micah-7-12-greek",
+        "micah-7-18-greek",
+        "zephaniah-2-1-greek",
+        "zephaniah-2-6-greek",
+        "zephaniah-2-9-greek",
+        "zephaniah-2-14-greek",
+        "daniel-2-11-greek",
+        "daniel-2-20-greek",
+        "daniel-9-4-greek",
+        "daniel-9-16-greek",
+        "daniel-9-24-greek",
+        "daniel-9-25-greek",
+        "daniel-9-26-greek",
+        "daniel-9-27-greek"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/prophets-job-characters-records.json",
+      "record_count": 17,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "isaiah",
+        "ahaz",
+        "sennacherib",
+        "jeremiah",
+        "baruch",
+        "hananiah-son-of-azur",
+        "zedekiah",
+        "ebed-melech",
+        "ezekiel",
+        "hosea",
+        "gomer",
+        "amos",
+        "amaziah-priest-of-bethel",
+        "eliphaz",
+        "bildad",
+        "zophar",
+        "elihu"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/proverbs-second-pass-records.json",
+      "record_count": 7,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "the-righteous-is-an-everlasting-foundation-or-the-righteous-turns-aside-and-is-saved-greek",
+        "a-gift-is-a-precious-stone-or-instruction-is-a-gracious-reward-greek",
+        "the-wicked-desires-evil-his-neighbour-finds-no-favour-or-the-soul-of-the-ungodly-will-not-be-pitied-greek",
+        "whosoever-hideth-her-hideth-the-wind-or-the-north-wind-is-sharp-greek",
+        "bray-a-fool-in-a-mortar-among-wheat-or-scourge-a-fool-disgracing-him-in-the-council-greek",
+        "a-man-hath-joy-by-the-answer-of-his-mouth-or-a-bad-man-will-not-listen-greek",
+        "the-heart-knoweth-his-own-bitterness-a-stranger-not-intermeddle-or-the-mind-is-sensitive-no-fellowship-with-pride-greek"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/psalms-second-pass-records.json",
+      "record_count": 9,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8",
+        "he-did-fly-or-he-was-seen-upon-the-wings-of-the-wind-psalm-18-10-2-samuel-22-11",
+        "they-cried-or-they-looked-but-there-was-none-to-save-psalm-18-41-2-samuel-22-42",
+        "great-deliverance-giveth-he-or-the-tower-of-salvation-for-his-king-psalm-18-50-2-samuel-22-51",
+        "slay-them-not-and-consume-them-that-they-may-not-be-psalm-59-11-and-13",
+        "in-the-place-of-dragons-or-in-a-place-of-affliction-greek-psalm-44-19",
+        "as-an-heap-or-as-in-a-wineskin-greek-psalm-33-7",
+        "our-guide-even-unto-death-or-shepherd-us-for-the-ages-greek-psalm-48-14",
+        "that-seek-thy-face-o-jacob-or-the-face-of-the-god-of-jacob-greek-psalm-24-6"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/revelation-second-pass-records.json",
+      "record_count": 7,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "the-things-that-are-ready-to-die-or-were-about-to-die-revelation-3-2-greek-new-testament",
+        "he-that-openeth-and-no-man-shutteth-or-will-shut-and-will-open-revelation-3-7-greek-new-testament",
+        "only-those-men-or-those-men-revelation-9-4-greek-new-testament",
+        "after-these-things-i-saw-another-angel-or-an-angel-revelation-18-1-greek-new-testament",
+        "her-sins-have-reached-unto-heaven-or-were-joined-together-revelation-18-5-greek-new-testament",
+        "ye-holy-apostles-and-prophets-or-the-saints-and-the-apostles-revelation-18-20-greek-new-testament",
+        "cinnamon-and-odours-or-cinnamon-and-amomum-revelation-18-13-greek-new-testament"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/samuel-kings-characters-records.json",
+      "record_count": 15,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "hannah",
+        "eli",
+        "samuel",
+        "saul",
+        "jonathan",
+        "david",
+        "michal",
+        "abigail",
+        "bathsheba",
+        "nathan",
+        "absalom",
+        "joab",
+        "solomon",
+        "mephibosheth",
+        "uriah"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/song-of-solomon-second-pass-records.json",
+      "record_count": 5,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "let-my-kinsman-come-down-into-his-garden-first-clause-greek",
+        "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+        "i-would-instruct-me-in-my-mothers-house-or-into-the-chamber-of-her-that-conceived-me-greek",
+        "i-charge-you-that-ye-stir-not-up-or-by-the-forces-of-the-field-that-ye-stir-not-up-greek",
+        "who-is-this-that-cometh-up-from-the-wilderness-or-who-is-this-that-comes-up-all-white-greek"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    },
+    {
+      "file": "research/claude-drafts/zechariah-second-pass-records.json",
+      "record_count": 9,
+      "existing_evidence_ids": 0,
+      "identical_evidence_records": 0,
+      "new_ids": [
+        "i-have-spread-you-abroad-or-i-will-gather-you-zechariah-2-6-greek",
+        "raised-up-out-of-his-holy-habitation-or-from-his-holy-clouds-zechariah-2-13-greek",
+        "let-them-set-a-fair-mitre-and-i-said-or-no-speaker-zechariah-3-5-greek",
+        "my-servant-the-branch-or-my-servant-the-east-zechariah-3-8-greek",
+        "men-wondered-at-or-men-who-watch-for-portents-zechariah-3-8-greek",
+        "i-will-engrave-the-graving-or-i-am-digging-a-trench-zechariah-3-9-greek",
+        "the-inhabitants-of-one-city-go-to-another-or-five-cities-gather-into-one-zechariah-8-21-greek",
+        "he-shall-speak-peace-unto-the-heathen-or-multitude-and-peace-from-the-nations-zechariah-9-10-greek",
+        "prisoners-of-hope-turn-to-the-strong-hold-or-prisoners-of-the-gathering-zechariah-9-12-greek"
+      ],
+      "disposition": "hold-pending-source-and-quote-review"
+    }
+  ]
+}

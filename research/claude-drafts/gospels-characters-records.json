@@ -1,0 +1,1032 @@
+[
+ {
+  "id": "mary-mother-of-jesus",
+  "name": "Mary",
+  "sex": "female",
+  "era": "Gospels",
+  "aliases": [
+   "Mary the mother of Jesus"
+  ],
+  "summary": "A virgin of Nazareth in Galilee, betrothed to Joseph, to whom the angel Gabriel announces that she will conceive and bear a son to be called Jesus. She answers 'Behold the handmaid of the Lord', visits her relative Elisabeth, and praises God in the Magnificat. She bears Jesus in Bethlehem, lays him in a manger, presents him in the temple, and later finds him among the teachers there. She is at the wedding in Cana, stands by the cross where Jesus commits her to the disciple whom he loved, and is named among those gathered in the upper room after the ascension.",
+  "lineage": {
+   "spouses": [
+    "Joseph"
+   ],
+   "children": [
+    "Jesus"
+   ]
+  },
+  "geography": {
+   "origin": "Nazareth in Galilee (Luke 1:26-27)",
+   "residence": [
+    "Nazareth (Luke 2:39)",
+    "Bethlehem (Luke 2:4-7)",
+    "Jerusalem (Acts 1:13-14)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "Luke",
+    "John",
+    "Acts"
+   ],
+   "key_verses": [
+    "Luke 1:26",
+    "Luke 1:27",
+    "Luke 1:38",
+    "Luke 1:46",
+    "Luke 2:7",
+    "Luke 2:51",
+    "John 2:1",
+    "John 19:25",
+    "John 19:27",
+    "Acts 1:14"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "matthew-the-birth-of-jesus-and-the-magi",
+     "title": "The Birth of Jesus and the Magi",
+     "passage": "Matthew 1:18 - 2:12",
+     "route": "#stories/matthew/the-birth-of-jesus-and-the-magi"
+    },
+    {
+     "story_id": "luke-the-births-of-john-and-jesus",
+     "title": "The Births of John and Jesus",
+     "passage": "Luke 1:5 - 2:20",
+     "route": "#stories/luke/the-births-of-john-and-jesus"
+    },
+    {
+     "story_id": "luke-presentation-and-the-boy-jesus-in-the-temple",
+     "title": "Presentation and the Boy Jesus in the Temple",
+     "passage": "Luke 2:21 - 2:52",
+     "route": "#stories/luke/presentation-and-the-boy-jesus-in-the-temple"
+    },
+    {
+     "story_id": "john-the-first-disciples-and-the-wedding-at-cana",
+     "title": "The First Disciples and the Wedding at Cana",
+     "passage": "John 1:35 - 2:12",
+     "route": "#stories/john/the-first-disciples-and-the-wedding-at-cana"
+    },
+    {
+     "story_id": "john-arrest-trial-and-crucifixion",
+     "title": "Arrest, Trial and Crucifixion",
+     "passage": "John 18:1 - 19:42",
+     "route": "#stories/john/arrest-trial-and-crucifixion"
+    }
+   ]
+  }
+ },
+ {
+  "id": "joseph-husband-of-mary",
+  "name": "Joseph of Nazareth",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Joseph the husband of Mary"
+  ],
+  "summary": "A just man of the house of David, betrothed to Mary. When she is found with child he plans to put her away privately, but an angel tells him in a dream to take her as his wife and name the child Jesus. He goes up with her to Bethlehem for the enrolment, is warned in a dream to take the child to Egypt, and after Herod's death brings the family back to Nazareth. Luke shows him at the presentation and at the Passover visit when Jesus is twelve; the Gospels do not mention him after that, and he is not named at the cross.",
+  "lineage": {
+   "spouses": [
+    "Mary"
+   ],
+   "children": [
+    "Jesus"
+   ],
+   "tribe": "Judah (house of David)"
+  },
+  "geography": {
+   "origin": "Nazareth in Galilee, of the house of David (Luke 1:27)",
+   "residence": [
+    "Nazareth (Matthew 2:23)",
+    "Bethlehem (Luke 2:4)",
+    "Egypt (Matthew 2:14)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "Luke"
+   ],
+   "key_verses": [
+    "Matthew 1:19",
+    "Matthew 1:20",
+    "Matthew 1:24",
+    "Matthew 2:13",
+    "Matthew 2:14",
+    "Matthew 2:19",
+    "Matthew 2:23",
+    "Luke 2:4",
+    "Luke 2:41"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "matthew-the-birth-of-jesus-and-the-magi",
+     "title": "The Birth of Jesus and the Magi",
+     "passage": "Matthew 1:18 - 2:12",
+     "route": "#stories/matthew/the-birth-of-jesus-and-the-magi"
+    },
+    {
+     "story_id": "matthew-flight-to-egypt-and-return-to-nazareth",
+     "title": "Flight to Egypt and Return to Nazareth",
+     "passage": "Matthew 2:13 - 2:23",
+     "route": "#stories/matthew/flight-to-egypt-and-return-to-nazareth"
+    },
+    {
+     "story_id": "luke-the-births-of-john-and-jesus",
+     "title": "The Births of John and Jesus",
+     "passage": "Luke 1:5 - 2:20",
+     "route": "#stories/luke/the-births-of-john-and-jesus"
+    },
+    {
+     "story_id": "luke-presentation-and-the-boy-jesus-in-the-temple",
+     "title": "Presentation and the Boy Jesus in the Temple",
+     "passage": "Luke 2:21 - 2:52",
+     "route": "#stories/luke/presentation-and-the-boy-jesus-in-the-temple"
+    }
+   ]
+  }
+ },
+ {
+  "id": "elisabeth",
+  "name": "Elisabeth",
+  "sex": "female",
+  "era": "Gospels",
+  "aliases": [
+   "Elizabeth"
+  ],
+  "summary": "A daughter of Aaron and the wife of the priest Zacharias, righteous before God but childless and well on in years. After Zacharias is told in the temple that she will bear a son, she conceives and keeps herself hidden five months. When Mary, her relative, greets her, the child leaps in her womb and she is filled with the Holy Spirit and blesses Mary as the mother of her Lord. At the child's birth she insists that he be called John.",
+  "lineage": {
+   "spouses": [
+    "Zacharias"
+   ],
+   "children": [
+    "John the Baptist"
+   ],
+   "tribe": "Levi (daughter of Aaron)"
+  },
+  "geography": {
+   "origin": "Of the daughters of Aaron (Luke 1:5)",
+   "residence": [
+    "Hill country of Judaea (Luke 1:39-40)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Luke"
+   ],
+   "key_verses": [
+    "Luke 1:5",
+    "Luke 1:7",
+    "Luke 1:24",
+    "Luke 1:36",
+    "Luke 1:41",
+    "Luke 1:42",
+    "Luke 1:60"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "luke-the-births-of-john-and-jesus",
+     "title": "The Births of John and Jesus",
+     "passage": "Luke 1:5 - 2:20",
+     "route": "#stories/luke/the-births-of-john-and-jesus"
+    }
+   ]
+  }
+ },
+ {
+  "id": "zacharias-father-of-john",
+  "name": "Zacharias",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Zechariah",
+   "Zacharias the priest"
+  ],
+  "summary": "A priest of the course of Abia, married to Elisabeth. While burning incense in the temple he is told by Gabriel that his wife will bear a son to be named John; because he asks for a sign he is struck dumb until the child is born. On the eighth day he writes 'His name is John', his speech returns, and he blesses God and prophesies of the horn of salvation raised up in the house of David. He is not the prophet Zechariah of the Old Testament, nor the Zacharias of Matthew 23:35.",
+  "lineage": {
+   "spouses": [
+    "Elisabeth"
+   ],
+   "children": [
+    "John the Baptist"
+   ],
+   "tribe": "Levi (priestly course of Abia)"
+  },
+  "geography": {
+   "origin": "A priest of the course of Abia (Luke 1:5)",
+   "residence": [
+    "Hill country of Judaea (Luke 1:39)",
+    "Jerusalem temple (Luke 1:8-9)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Luke"
+   ],
+   "key_verses": [
+    "Luke 1:5",
+    "Luke 1:9",
+    "Luke 1:13",
+    "Luke 1:18",
+    "Luke 1:20",
+    "Luke 1:63",
+    "Luke 1:64",
+    "Luke 1:67",
+    "Luke 1:69"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "luke-the-births-of-john-and-jesus",
+     "title": "The Births of John and Jesus",
+     "passage": "Luke 1:5 - 2:20",
+     "route": "#stories/luke/the-births-of-john-and-jesus"
+    }
+   ]
+  }
+ },
+ {
+  "id": "john-the-baptist",
+  "name": "John the Baptist",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "John the baptist",
+   "Baptist John"
+  ],
+  "summary": "Son of Zacharias and Elisabeth, born six months before Jesus. He appears in the wilderness of Judaea preaching repentance, clothed in camel's hair with a leathern girdle, eating locusts and wild honey, and baptizes in the Jordan those who confess their sins. He tells the crowds, soldiers and publicans how to live, turns away Pharisees and Sadducees, baptizes Jesus, and says that Jesus must increase while he decreases. He rebukes Herod Antipas over Herodias and is imprisoned and beheaded; from prison he sends disciples to ask whether Jesus is the one to come.",
+  "lineage": {
+   "parents": [
+    "Zacharias",
+    "Elisabeth"
+   ]
+  },
+  "geography": {
+   "origin": "Hill country of Judaea, son of Zacharias and Elisabeth (Luke 1:39-40, 57-60)",
+   "residence": [
+    "Wilderness of Judaea (Matthew 3:1)",
+    "Bethabara beyond Jordan (John 1:28)",
+    "Aenon near Salim (John 3:23)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "John"
+   ],
+   "key_verses": [
+    "Matthew 3:1",
+    "Matthew 3:4",
+    "Matthew 3:13",
+    "Matthew 11:2",
+    "Matthew 14:3",
+    "Matthew 14:10",
+    "Mark 1:4",
+    "Luke 3:12",
+    "Luke 3:14",
+    "John 1:29",
+    "John 3:23",
+    "John 3:30"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "matthew-the-baptism-and-temptation-of-jesus",
+     "title": "The Baptism and Temptation of Jesus",
+     "passage": "Matthew 3:1 - 4:11",
+     "route": "#stories/matthew/the-baptism-and-temptation-of-jesus"
+    },
+    {
+     "story_id": "matthew-jesus-and-john-the-baptist",
+     "title": "Jesus and John the Baptist",
+     "passage": "Matthew 11:1 - 11:30",
+     "route": "#stories/matthew/jesus-and-john-the-baptist"
+    },
+    {
+     "story_id": "mark-john-the-baptist-and-the-baptism-of-jesus",
+     "title": "John the Baptist and the Baptism of Jesus",
+     "passage": "Mark 1:1 - 1:13",
+     "route": "#stories/mark/john-the-baptist-and-the-baptism-of-jesus"
+    },
+    {
+     "story_id": "luke-the-births-of-john-and-jesus",
+     "title": "The Births of John and Jesus",
+     "passage": "Luke 1:5 - 2:20",
+     "route": "#stories/luke/the-births-of-john-and-jesus"
+    },
+    {
+     "story_id": "john-the-first-disciples-and-the-wedding-at-cana",
+     "title": "The First Disciples and the Wedding at Cana",
+     "passage": "John 1:35 - 2:12",
+     "route": "#stories/john/the-first-disciples-and-the-wedding-at-cana"
+    }
+   ]
+  }
+ },
+ {
+  "id": "herod-the-great",
+  "name": "Herod the king",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Herod the Great",
+   "Herod"
+  ],
+  "summary": "King of Judaea when Jesus is born. When Magi ask where the king of the Jews is born, he is troubled with all Jerusalem, learns from the chief priests and scribes that the Christ is to be born in Bethlehem, and sends the Magi to report back. Mocked by their departure by another road, he is exceeding wroth and kills the children in Bethlehem and its coasts from two years old and under. Matthew records that he dies, after which Joseph brings the family out of Egypt; Luke places the birth of John in his days. Other Herods in the Gospels (Antipas, Agrippa) are different men.",
+  "lineage": {
+   "children": [
+    "Archelaus"
+   ]
+  },
+  "geography": {
+   "origin": "King of Judaea (Matthew 2:1; Luke 1:5)",
+   "residence": [
+    "Jerusalem (Matthew 2:3)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "Luke"
+   ],
+   "key_verses": [
+    "Luke 1:5",
+    "Matthew 2:1",
+    "Matthew 2:3",
+    "Matthew 2:4",
+    "Matthew 2:7",
+    "Matthew 2:8",
+    "Matthew 2:16",
+    "Matthew 2:19",
+    "Matthew 2:22"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "matthew-the-birth-of-jesus-and-the-magi",
+     "title": "The Birth of Jesus and the Magi",
+     "passage": "Matthew 1:18 - 2:12",
+     "route": "#stories/matthew/the-birth-of-jesus-and-the-magi"
+    },
+    {
+     "story_id": "matthew-flight-to-egypt-and-return-to-nazareth",
+     "title": "Flight to Egypt and Return to Nazareth",
+     "passage": "Matthew 2:13 - 2:23",
+     "route": "#stories/matthew/flight-to-egypt-and-return-to-nazareth"
+    }
+   ]
+  }
+ },
+ {
+  "id": "peter",
+  "name": "Peter",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Simon",
+   "Simon Peter",
+   "Cephas"
+  ],
+  "summary": "A Galilean fisherman from Bethsaida, brother of Andrew, called Simon and surnamed Peter by Jesus. After the miraculous catch he leaves his nets to follow Jesus, is named first in the lists of the Twelve, walks to Jesus on the water and begins to sink, and confesses 'Thou art the Christ, the Son of the living God'. He is rebuked for resisting the passion, is with Jesus at the transfiguration, and swears he will not deny him. After the arrest he denies Jesus three times and weeps, runs to the tomb, and is asked by the risen Jesus three times 'lovest thou me?' and told to feed his sheep.",
+  "lineage": {
+   "siblings": [
+    "Andrew"
+   ]
+  },
+  "geography": {
+   "origin": "Bethsaida of Galilee (John 1:44)",
+   "residence": [
+    "Capernaum (Mark 1:21, 29)",
+    "Jerusalem (Acts 1:13)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "John",
+    "Acts"
+   ],
+   "key_verses": [
+    "John 1:42",
+    "John 1:44",
+    "Matthew 4:18",
+    "Matthew 14:29",
+    "Matthew 16:16",
+    "Matthew 26:34",
+    "Matthew 26:75",
+    "Luke 5:8",
+    "Luke 24:12",
+    "John 21:15",
+    "John 21:17",
+    "Acts 1:13"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "matthew-peter-s-confession-and-the-transfiguration",
+     "title": "Peter's Confession and the Transfiguration",
+     "passage": "Matthew 16:13 - 17:27",
+     "route": "#stories/matthew/peter-s-confession-and-the-transfiguration"
+    },
+    {
+     "story_id": "luke-the-miraculous-catch",
+     "title": "The Miraculous Catch",
+     "passage": "Luke 5:1 - 5:11",
+     "route": "#stories/luke/the-miraculous-catch"
+    },
+    {
+     "story_id": "matthew-the-last-supper-and-gethsemane",
+     "title": "The Last Supper and Gethsemane",
+     "passage": "Matthew 26:1 - 26:56",
+     "route": "#stories/matthew/the-last-supper-and-gethsemane"
+    },
+    {
+     "story_id": "john-breakfast-by-the-sea-of-tiberias",
+     "title": "Breakfast by the Sea of Tiberias",
+     "passage": "John 21:1 - 21:25",
+     "route": "#stories/john/breakfast-by-the-sea-of-tiberias"
+    }
+   ]
+  }
+ },
+ {
+  "id": "judas-iscariot",
+  "name": "Judas Iscariot",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Judas",
+   "Judas Iscariot, son of Simon"
+  ],
+  "summary": "One of the Twelve, named last in the lists as the one who betrayed Jesus, and keeper of the bag, from which John says he used to steal. Six days before the Passover he objects to the anointing at Bethany; John says it was not because he cared for the poor. He goes to the chief priests and agrees on thirty pieces of silver to deliver Jesus, is named at the supper as the one who will dip with him, and leads the band to Gethsemane, identifying Jesus with a kiss. Matthew says he repents, throws the silver down in the temple and hangs himself; Acts 1 tells of his death differently, and the two accounts are often compared.",
+  "lineage": {
+   "parents": [
+    "Simon"
+   ]
+  },
+  "geography": {
+   "origin": "Kerioth, as the name Iscariot is commonly read; the text does not say (John 6:71)",
+   "residence": [
+    "Jerusalem (Matthew 26:14)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "John",
+    "Acts"
+   ],
+   "key_verses": [
+    "Matthew 10:4",
+    "Matthew 26:14",
+    "Matthew 26:15",
+    "Matthew 26:25",
+    "Matthew 26:49",
+    "Matthew 27:3",
+    "Matthew 27:5",
+    "John 12:4",
+    "John 12:6",
+    "John 13:26",
+    "Acts 1:18"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "matthew-the-last-supper-and-gethsemane",
+     "title": "The Last Supper and Gethsemane",
+     "passage": "Matthew 26:1 - 26:56",
+     "route": "#stories/matthew/the-last-supper-and-gethsemane"
+    },
+    {
+     "story_id": "matthew-trial-crucifixion-and-burial",
+     "title": "Trial, Crucifixion and Burial",
+     "passage": "Matthew 26:57 - 27:66",
+     "route": "#stories/matthew/trial-crucifixion-and-burial"
+    },
+    {
+     "story_id": "john-anointing-and-triumphal-entry",
+     "title": "Anointing and Triumphal Entry",
+     "passage": "John 12:1 - 12:50",
+     "route": "#stories/john/anointing-and-triumphal-entry"
+    },
+    {
+     "story_id": "john-arrest-trial-and-crucifixion",
+     "title": "Arrest, Trial and Crucifixion",
+     "passage": "John 18:1 - 19:42",
+     "route": "#stories/john/arrest-trial-and-crucifixion"
+    }
+   ]
+  }
+ },
+ {
+  "id": "mary-magdalene",
+  "name": "Mary Magdalene",
+  "sex": "female",
+  "era": "Gospels",
+  "aliases": [
+   "Mary of Magdala"
+  ],
+  "summary": "A woman called Magdalene, out of whom Luke says seven devils had gone, who travels with Jesus and ministers to him from her substance. She is among the women at the crucifixion and sees where he is laid. At dawn on the first day she finds the stone rolled away; in John she stays weeping by the tomb and Jesus calls her by name, sending her to tell the brethren 'I have seen the Lord'. The Gospels do not identify her with the sinful woman of Luke 7 or with Mary of Bethany.",
+  "lineage": {},
+  "geography": {
+   "origin": "Magdala, as the name Magdalene is read (Luke 8:2)",
+   "residence": [
+    "Galilee (Luke 8:1-3)",
+    "Jerusalem (John 20:1)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "John"
+   ],
+   "key_verses": [
+    "Luke 8:2",
+    "Matthew 27:56",
+    "Matthew 27:61",
+    "Mark 16:1",
+    "Mark 16:9",
+    "Luke 24:10",
+    "John 19:25",
+    "John 20:1",
+    "John 20:11",
+    "John 20:16",
+    "John 20:18"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "matthew-trial-crucifixion-and-burial",
+     "title": "Trial, Crucifixion and Burial",
+     "passage": "Matthew 26:57 - 27:66",
+     "route": "#stories/matthew/trial-crucifixion-and-burial"
+    },
+    {
+     "story_id": "mark-the-empty-tomb",
+     "title": "The Empty Tomb",
+     "passage": "Mark 16:1 - 16:8",
+     "route": "#stories/mark/the-empty-tomb"
+    },
+    {
+     "story_id": "john-the-resurrection-appearances",
+     "title": "The Resurrection Appearances",
+     "passage": "John 20:1 - 20:31",
+     "route": "#stories/john/the-resurrection-appearances"
+    }
+   ]
+  }
+ },
+ {
+  "id": "martha-of-bethany",
+  "name": "Martha",
+  "sex": "female",
+  "era": "Gospels",
+  "aliases": [
+   "Martha of Bethany"
+  ],
+  "summary": "Sister of Mary and Lazarus, of the village of Bethany, who receives Jesus into her house and is cumbered about much serving; when she asks him to tell Mary to help, he says Mary has chosen the good part. When Lazarus dies she goes out to meet Jesus before he reaches the village, says 'if thou hadst been here', and confesses that he is the Christ, the Son of God. She objects at the tomb that the body will smell, and serves at the supper six days before the Passover.",
+  "lineage": {
+   "siblings": [
+    "Mary of Bethany",
+    "Lazarus"
+   ]
+  },
+  "geography": {
+   "origin": "Bethany (John 11:1)",
+   "residence": [
+    "Bethany (John 11:1; Luke 10:38)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Luke",
+    "John"
+   ],
+   "key_verses": [
+    "Luke 10:38",
+    "Luke 10:40",
+    "Luke 10:41",
+    "Luke 10:42",
+    "John 11:1",
+    "John 11:21",
+    "John 11:24",
+    "John 11:27",
+    "John 11:39",
+    "John 12:2"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "luke-the-good-samaritan-and-mary-and-martha",
+     "title": "The Good Samaritan and Mary and Martha",
+     "passage": "Luke 10:25 - 10:42",
+     "route": "#stories/luke/the-good-samaritan-and-mary-and-martha"
+    },
+    {
+     "story_id": "john-the-raising-of-lazarus",
+     "title": "The Raising of Lazarus",
+     "passage": "John 11:1 - 11:57",
+     "route": "#stories/john/the-raising-of-lazarus"
+    },
+    {
+     "story_id": "john-anointing-and-triumphal-entry",
+     "title": "Anointing and Triumphal Entry",
+     "passage": "John 12:1 - 12:50",
+     "route": "#stories/john/anointing-and-triumphal-entry"
+    }
+   ]
+  }
+ },
+ {
+  "id": "mary-of-bethany",
+  "name": "Mary of Bethany",
+  "sex": "female",
+  "era": "Gospels",
+  "aliases": [
+   "Mary",
+   "Mary the sister of Martha"
+  ],
+  "summary": "Sister of Martha and Lazarus, who sits at Jesus' feet and hears his word while Martha serves. When Lazarus dies she stays in the house until she is called, then falls at Jesus' feet and says 'if thou hadst been here'. Jesus is troubled and weeps, and raises Lazarus. Six days before the Passover she anoints Jesus' feet with a pound of spikenard and wipes them with her hair; Judas objects and Jesus says it is for the day of his burying. Matthew and Mark tell of an anointing at Bethany without naming the woman.",
+  "lineage": {
+   "siblings": [
+    "Martha",
+    "Lazarus"
+   ]
+  },
+  "geography": {
+   "origin": "Bethany (John 11:1)",
+   "residence": [
+    "Bethany (John 11:1)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Luke",
+    "John",
+    "Matthew",
+    "Mark"
+   ],
+   "key_verses": [
+    "Luke 10:39",
+    "Luke 10:42",
+    "John 11:1",
+    "John 11:2",
+    "John 11:20",
+    "John 11:32",
+    "John 11:33",
+    "John 11:35",
+    "John 12:3",
+    "John 12:7",
+    "Matthew 26:7",
+    "Mark 14:3"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "luke-the-good-samaritan-and-mary-and-martha",
+     "title": "The Good Samaritan and Mary and Martha",
+     "passage": "Luke 10:25 - 10:42",
+     "route": "#stories/luke/the-good-samaritan-and-mary-and-martha"
+    },
+    {
+     "story_id": "john-the-raising-of-lazarus",
+     "title": "The Raising of Lazarus",
+     "passage": "John 11:1 - 11:57",
+     "route": "#stories/john/the-raising-of-lazarus"
+    },
+    {
+     "story_id": "john-anointing-and-triumphal-entry",
+     "title": "Anointing and Triumphal Entry",
+     "passage": "John 12:1 - 12:50",
+     "route": "#stories/john/anointing-and-triumphal-entry"
+    }
+   ]
+  }
+ },
+ {
+  "id": "lazarus-of-bethany",
+  "name": "Lazarus",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Lazarus of Bethany"
+  ],
+  "summary": "Brother of Martha and Mary, of Bethany, whom Jesus loved. He falls sick and dies; when Jesus arrives he has lain four days in the grave. At the tomb Jesus lifts up his eyes, thanks the Father, and cries with a loud voice 'Lazarus, come forth', and the dead man comes out bound in graveclothes, which Jesus has loosed. Many of the Jews believe on account of it; six days before the Passover he sits at table with Jesus, and the chief priests plan to put him to death as well. He is a different man from the Lazarus of the parable in Luke 16.",
+  "lineage": {
+   "siblings": [
+    "Martha",
+    "Mary of Bethany"
+   ]
+  },
+  "geography": {
+   "origin": "Bethany (John 11:1)",
+   "residence": [
+    "Bethany (John 11:1)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "John"
+   ],
+   "key_verses": [
+    "John 11:1",
+    "John 11:3",
+    "John 11:11",
+    "John 11:39",
+    "John 11:43",
+    "John 11:44",
+    "John 11:45",
+    "John 12:1",
+    "John 12:2",
+    "John 12:10"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "john-the-raising-of-lazarus",
+     "title": "The Raising of Lazarus",
+     "passage": "John 11:1 - 11:57",
+     "route": "#stories/john/the-raising-of-lazarus"
+    },
+    {
+     "story_id": "john-anointing-and-triumphal-entry",
+     "title": "Anointing and Triumphal Entry",
+     "passage": "John 12:1 - 12:50",
+     "route": "#stories/john/anointing-and-triumphal-entry"
+    }
+   ]
+  }
+ },
+ {
+  "id": "nicodemus",
+  "name": "Nicodemus",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Nicodemus the Pharisee"
+  ],
+  "summary": "A Pharisee and a ruler of the Jews who comes to Jesus by night, says that no one can do these miracles unless God is with him, and is told that a man must be born again of water and of the Spirit. He asks how a man can be born when he is old, and the conversation moves to the serpent lifted up in the wilderness and to John 3:16. In John 7 he asks the Pharisees whether the law judges a man before it hears him. After the crucifixion he brings about a hundred pound of myrrh and aloes and helps Joseph of Arimathaea to bury Jesus.",
+  "lineage": {},
+  "geography": {
+   "origin": "A Pharisee, a ruler of the Jews (John 3:1)",
+   "residence": [
+    "Jerusalem (John 3:1; 19:39)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "John"
+   ],
+   "key_verses": [
+    "John 3:1",
+    "John 3:2",
+    "John 3:3",
+    "John 3:4",
+    "John 3:10",
+    "John 3:16",
+    "John 7:50",
+    "John 7:51",
+    "John 19:39",
+    "John 19:40"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "john-cleansing-the-temple-and-nicodemus",
+     "title": "Cleansing the Temple and Nicodemus",
+     "passage": "John 2:13 - 3:21",
+     "route": "#stories/john/cleansing-the-temple-and-nicodemus"
+    },
+    {
+     "story_id": "john-arrest-trial-and-crucifixion",
+     "title": "Arrest, Trial and Crucifixion",
+     "passage": "John 18:1 - 19:42",
+     "route": "#stories/john/arrest-trial-and-crucifixion"
+    }
+   ]
+  }
+ },
+ {
+  "id": "pontius-pilate",
+  "name": "Pontius Pilate",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Pilate",
+   "Pilate the governor"
+  ],
+  "summary": "The Roman governor of Judaea before whom Jesus is brought on the morning after the arrest. In the Gospels he asks 'Art thou the King of the Jews?', finds no fault, tries to release Jesus by sending him to Herod and offering Barabbas, and is warned by his wife's dream; Matthew says he washes his hands before the crowd. In the end he scourges Jesus and delivers him to be crucified, and has the inscription 'Jesus of Nazareth the King of the Jews' put on the cross. He grants Joseph of Arimathaea the body and sets a guard on the tomb. Luke 13:1 mentions Galileans whose blood he mingled with their sacrifices.",
+  "lineage": {},
+  "geography": {
+   "origin": "Governor of Judaea (Luke 3:1)",
+   "residence": [
+    "Jerusalem (John 18:28)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "Mark",
+    "Luke",
+    "John"
+   ],
+   "key_verses": [
+    "Luke 3:1",
+    "Luke 13:1",
+    "Matthew 27:2",
+    "Matthew 27:11",
+    "Matthew 27:19",
+    "Matthew 27:24",
+    "Matthew 27:58",
+    "Mark 15:15",
+    "Luke 23:4",
+    "Luke 23:7",
+    "John 18:38",
+    "John 19:19"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "matthew-trial-crucifixion-and-burial",
+     "title": "Trial, Crucifixion and Burial",
+     "passage": "Matthew 26:57 - 27:66",
+     "route": "#stories/matthew/trial-crucifixion-and-burial"
+    },
+    {
+     "story_id": "mark-trial-crucifixion-and-burial",
+     "title": "Trial, Crucifixion and Burial",
+     "passage": "Mark 14:53 - 15:47",
+     "route": "#stories/mark/trial-crucifixion-and-burial"
+    },
+    {
+     "story_id": "john-arrest-trial-and-crucifixion",
+     "title": "Arrest, Trial and Crucifixion",
+     "passage": "John 18:1 - 19:42",
+     "route": "#stories/john/arrest-trial-and-crucifixion"
+    }
+   ]
+  }
+ },
+ {
+  "id": "caiaphas",
+  "name": "Caiaphas",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Joseph Caiaphas"
+  ],
+  "summary": "The high priest in the year Jesus is put to death. After the raising of Lazarus, John says he tells the council that it is expedient that one man die for the people, and John adds that he spoke this being high priest that year. Matthew says the chief priests and elders gathered in his palace to plot to take Jesus by subtilty, and that Jesus was led to him after the arrest, where he tears his clothes at Jesus' reply. John gives Annas as his father-in-law; in Luke 3:2 Annas and Caiaphas are named together as high priests, and in Acts 4:6 Caiaphas is among the rulers who question Peter and John.",
+  "lineage": {},
+  "geography": {
+   "origin": "High priest at Jerusalem (John 11:49)",
+   "residence": [
+    "Jerusalem (Matthew 26:3)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "Luke",
+    "John",
+    "Acts"
+   ],
+   "key_verses": [
+    "Matthew 26:3",
+    "Matthew 26:57",
+    "Matthew 26:65",
+    "Luke 3:2",
+    "John 11:49",
+    "John 11:50",
+    "John 11:51",
+    "John 18:13",
+    "John 18:14",
+    "Acts 4:6"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "matthew-the-last-supper-and-gethsemane",
+     "title": "The Last Supper and Gethsemane",
+     "passage": "Matthew 26:1 - 26:56",
+     "route": "#stories/matthew/the-last-supper-and-gethsemane"
+    },
+    {
+     "story_id": "matthew-trial-crucifixion-and-burial",
+     "title": "Trial, Crucifixion and Burial",
+     "passage": "Matthew 26:57 - 27:66",
+     "route": "#stories/matthew/trial-crucifixion-and-burial"
+    },
+    {
+     "story_id": "john-the-raising-of-lazarus",
+     "title": "The Raising of Lazarus",
+     "passage": "John 11:1 - 11:57",
+     "route": "#stories/john/the-raising-of-lazarus"
+    },
+    {
+     "story_id": "john-arrest-trial-and-crucifixion",
+     "title": "Arrest, Trial and Crucifixion",
+     "passage": "John 18:1 - 19:42",
+     "route": "#stories/john/arrest-trial-and-crucifixion"
+    }
+   ]
+  }
+ },
+ {
+  "id": "zacchaeus",
+  "name": "Zacchaeus",
+  "sex": "male",
+  "era": "Gospels",
+  "summary": "A chief among the publicans of Jericho and rich, who is small of stature and climbs a sycomore tree to see Jesus pass. Jesus stops under it, calls him by name, and says he must abide at his house that day. The crowd murmurs that Jesus has gone to be guest with a sinner. Zacchaeus stands and says he gives half his goods to the poor and, if he has taken anything by false accusation, restores it fourfold; Jesus says salvation has come to the house, for the Son of man is come to seek and to save that which was lost.",
+  "lineage": {},
+  "geography": {
+   "origin": "Jericho (Luke 19:1-2)",
+   "residence": [
+    "Jericho (Luke 19:1)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Luke"
+   ],
+   "key_verses": [
+    "Luke 19:1",
+    "Luke 19:2",
+    "Luke 19:3",
+    "Luke 19:4",
+    "Luke 19:5",
+    "Luke 19:7",
+    "Luke 19:8",
+    "Luke 19:9",
+    "Luke 19:10"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "luke-zacchaeus",
+     "title": "Zacchaeus",
+     "passage": "Luke 19:1 - 19:10",
+     "route": "#stories/luke/zacchaeus"
+    }
+   ]
+  }
+ },
+ {
+  "id": "thomas",
+  "name": "Thomas",
+  "sex": "male",
+  "era": "Gospels",
+  "aliases": [
+   "Didymus",
+   "Thomas called Didymus"
+  ],
+  "summary": "One of the Twelve, called Didymus (the twin). When Jesus sets out for Bethany after Lazarus dies, he says to his fellow disciples 'Let us also go, that we may die with him'. At the supper he asks how they can know the way, and Jesus answers 'I am the way, the truth, and the life'. Absent when Jesus first appears to the disciples on the evening of the resurrection, he says he will not believe unless he sees the print of the nails and puts his hand in his side. Eight days later Jesus appears again and he answers 'My Lord and my God'. He is present at the sea of Tiberias and is named among those in the upper room.",
+  "lineage": {},
+  "geography": {
+   "origin": "Not stated; one of the Twelve (Matthew 10:3)",
+   "residence": [
+    "Jerusalem (John 20:24-26)"
+   ]
+  },
+  "narrative_anchors": {
+   "books": [
+    "Matthew",
+    "John",
+    "Acts"
+   ],
+   "key_verses": [
+    "Matthew 10:3",
+    "John 11:16",
+    "John 14:5",
+    "John 14:6",
+    "John 20:24",
+    "John 20:25",
+    "John 20:27",
+    "John 20:28",
+    "John 21:2",
+    "Acts 1:13"
+   ],
+   "linked_stories": [
+    {
+     "story_id": "john-the-raising-of-lazarus",
+     "title": "The Raising of Lazarus",
+     "passage": "John 11:1 - 11:57",
+     "route": "#stories/john/the-raising-of-lazarus"
+    },
+    {
+     "story_id": "john-the-last-supper-discourse",
+     "title": "The Last Supper Discourse",
+     "passage": "John 13:1 - 17:26",
+     "route": "#stories/john/the-last-supper-discourse"
+    },
+    {
+     "story_id": "john-the-resurrection-appearances",
+     "title": "The Resurrection Appearances",
+     "passage": "John 20:1 - 20:31",
+     "route": "#stories/john/the-resurrection-appearances"
+    },
+    {
+     "story_id": "john-breakfast-by-the-sea-of-tiberias",
+     "title": "Breakfast by the Sea of Tiberias",
+     "passage": "John 21:1 - 21:25",
+     "route": "#stories/john/breakfast-by-the-sea-of-tiberias"
+    }
+   ]
+  }
+ }
+]

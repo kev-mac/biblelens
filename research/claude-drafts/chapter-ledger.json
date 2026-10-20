@@ -32,7 +32,46 @@
     "genesis-45-50-science-notes.md",
     "genesis-5-50-q-notes.md",
     "genesis-sab-a-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "genesis-second-pass-records.json",
+    "notes": "genesis-second-pass-notes.md",
+    "chapters": {
+     "13": {
+      "status": "records-draft",
+      "reason": "records-draft: 13:1/13:3 (T Septuagint, south or wilderness), 13:12 (cities/one city, toward/in Sodom), 13:16 (dust or sand), 13:18 (T Hebrew and Septuagint, plain or oaks of Mamre); KJV read in full 2026-10-18 (D16); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "27": {
+      "status": "records-draft",
+      "reason": "records-draft: 27:29 (T Septuagint, mother's sons or sons of thy father); KJV read in full 2026-10-18 (D16); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "29": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 29:1 Greek parentage plus, 29:12 kinship wording, 29:17 tender/weak eyes, 29:32 Greek plus covered in-verse; no plain contrast stated; KJV read in full 2026-10-18 (D16); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "34": {
+      "status": "records-draft",
+      "reason": "records-draft: 34:25 (T Hebrew and Septuagint, boldly or securely); KJV read in full 2026-10-18 (D16); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "38": {
+      "status": "records-draft",
+      "reason": "records-draft: 38:12/38:20 (T Septuagint, friend or shepherd), 38:14/38:21 (T Septuagint, open place or Aenan); KJV read in full 2026-10-18 (D16); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "40": {
+      "status": "records-draft",
+      "reason": "records-draft: 40:3-4 (T Septuagint, captain of the guard or chief of the prison); KJV read in full 2026-10-18 (D16); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "42": {
+      "status": "records-draft",
+      "reason": "records-draft: 42:9/42:12 (T Septuagint, nakedness or tracks), 42:11 (true men or peaceable); KJV read in full 2026-10-18 (D16); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "43": {
+      "status": "records-draft",
+      "reason": "records-draft: 43:28 (T Septuagint, Greek adds Joseph's reply); KJV read in full 2026-10-18 (D16); Hebrew and Brenton fetched by script at flagged verses"
+     }
+    }
+   }
   },
   "Exodus": {
    "chapters": 40,
@@ -83,7 +122,18 @@
    "draftNotes": [
     "joshua-1-24-q-notes.md",
     "joshua-21-24-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-1-second-pass-records.json",
+    "notes": "ot-remainder-1-second-pass-notes.md",
+    "chapters": {
+     "20": {
+      "status": "records-draft",
+      "reason": "records-draft: 20:4-6 (absent in Brenton Greek), T Septuagint; KJV, Hebrew and Brenton Greek read in full 2026-10-19 (D25)"
+     }
+    }
+   }
   },
   "Judges": {
    "chapters": 21,
@@ -96,7 +146,22 @@
     "judges-1-21-q-notes.md",
     "judges-13-21-notes.md",
     "judges-3-12-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-1-second-pass-records.json",
+    "notes": "ot-remainder-1-second-pass-notes.md",
+    "chapters": {
+     "12": {
+      "status": "records-draft",
+      "reason": "records-draft: 12:1 (northward or place), 12:7 (one of the cities or his city), T Septuagint; KJV, Hebrew and Brenton Greek read in full 2026-10-19 (D25)"
+     },
+     "17": {
+      "status": "records-draft",
+      "reason": "records-draft: 17:5 (gods or God), 17:10 (year or day), T Septuagint; KJV, Hebrew and Brenton Greek read in full 2026-10-19 (D25)"
+     }
+    }
+   }
   },
   "Ruth": {
    "chapters": 4,
@@ -107,7 +172,18 @@
    "draftNotes": [
     "ruth-1-4-notes.md",
     "ruth-1-4-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-1-second-pass-records.json",
+    "notes": "ot-remainder-1-second-pass-notes.md",
+    "chapters": {
+     "1": {
+      "status": "records-draft",
+      "reason": "records-draft: 1:14, 1:20, 1:21, T Septuagint; KJV, Hebrew and Brenton Greek read in full 2026-10-19 (D25)"
+     }
+    }
+   }
   },
   "1 Samuel": {
    "chapters": 31,
@@ -125,7 +201,46 @@
    "draftNotes": [
     "1-samuel-1-31-notes.md",
     "1-samuel-1-31-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "1-samuel-second-pass-records.json",
+    "notes": "1-samuel-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "reason": "records-draft: 2:10 (T Septuagint, his king or our kings), 2:22 (T Septuagint, women clause absent), 2:25 (T Septuagint, judge or pray); KJV read in full 2026-10-18 (D15); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "5": {
+      "status": "records-draft",
+      "reason": "records-draft: 5:10 (T Septuagint, Ekron or Ascalon); KJV read in full 2026-10-18 (D15); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "6": {
+      "status": "records-draft",
+      "reason": "records-draft: 6:16 (T Septuagint, Ekron or Ascalon), 6:19 (T Septuagint, sons of Jechonias clause); KJV read in full 2026-10-18 (D15); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "20": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: Greek 20:14-16 runs differently and is obscure (Brenton notes the Hebrew is obscured), 20:19 Ezel/ergab is a name; no plain contrast stated; KJV read in full 2026-10-18 (D15); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "23": {
+      "status": "records-draft",
+      "reason": "records-draft: 23:13 (T Septuagint, six or four hundred); KJV read in full 2026-10-18 (D15); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "24": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 24:2 rocks of the wild goats against Greek proper name Saddaeem is a name-for-noun swap, not issued; no other difference in sense; KJV read in full 2026-10-18 (D15); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "26": {
+      "status": "records-draft",
+      "reason": "records-draft: 26:5 and 26:7 (T Septuagint, trench or chariot), 26:20 (T Septuagint, flea or my life); KJV read in full 2026-10-18 (D15); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "29": {
+      "status": "records-draft",
+      "reason": "records-draft: 29:3 (T Septuagint, days or years against second year); KJV read in full 2026-10-18 (D15); Hebrew and Brenton fetched by script at flagged verses"
+     }
+    }
+   }
   },
   "2 Samuel": {
    "chapters": 24,
@@ -140,7 +255,34 @@
    "draftNotes": [
     "2-samuel-1-24-notes.md",
     "2-samuel-1-24-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "2-samuel-second-pass-records.json",
+    "notes": "2-samuel-second-pass-notes.md",
+    "chapters": {
+     "7": {
+      "status": "records-draft",
+      "reason": "records-draft: 7:5 (question or negation), 7:15 (Saul not named), 7:23 (gods or tents), all T Septuagint; KJV read in full 2026-10-18 (D20); Hebrew and Brenton fetched by script"
+     },
+     "9": {
+      "status": "records-draft",
+      "reason": "records-draft: 9:7 (Saul thy father or father's father), T Septuagint; KJV read in full 2026-10-18 (D20); Hebrew and Brenton fetched by script"
+     },
+     "11": {
+      "status": "records-draft",
+      "reason": "records-draft: 11:21 (Jerubbesheth or Jerubbaal), 11:22 (David's anger added), T Septuagint; KJV read in full 2026-10-18 (D20); Hebrew and Brenton fetched by script"
+     },
+     "12": {
+      "status": "records-draft",
+      "reason": "records-draft: 12:6 (fourfold or sevenfold), 12:14 (blaspheme or provoked), T Septuagint; KJV read in full 2026-10-18 (D20); Hebrew and Brenton fetched by script"
+     },
+     "22": {
+      "status": "records-draft",
+      "reason": "records-draft: 22:32 (rock or creator), 22:35 (steel or bronze), T Septuagint; Psalm 18 pairs already in the Psalms pass; KJV read in full 2026-10-18 (D20); Hebrew and Brenton fetched by script"
+     }
+    }
+   }
   },
   "1 Kings": {
    "chapters": 22,
@@ -156,7 +298,38 @@
    "draftNotes": [
     "1-kings-1-22-notes.md",
     "1-kings-1-22-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "1-kings-second-pass-records.json",
+    "notes": "1-kings-second-pass-notes.md",
+    "chapters": {
+     "1": {
+      "status": "records-draft",
+      "reason": "records-draft: 1:40 (T Septuagint, piped or danced); KJV read in full 2026-10-18 (D19); Hebrew and Brenton fetched by script"
+     },
+     "2": {
+      "status": "records-draft",
+      "reason": "records-draft: 2:3 (T Septuagint, prosper or understand) and 2:5 (T Septuagint, blood of war or innocent blood); Brenton 2:47-57 repeats chapter 4 and 5 material, not issued; KJV read in full 2026-10-18 (D19); Hebrew and Brenton fetched by script"
+     },
+     "3": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 3:9 and 3:11 (KJV understanding, Hebrew and Greek hear) noted but not issued; 3:15 Greek adds an altar and Sion, nothing the KJV contradicts; KJV read in full 2026-10-18 (D19); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "12": {
+      "status": "records-draft",
+      "reason": "records-draft: 12:3 and 12:12 (T Septuagint, Jeroboam not named) and 12:21 (T Septuagint, 120,000); KJV read in full 2026-10-18 (D19); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "17": {
+      "status": "records-draft",
+      "reason": "records-draft: 17:6 (loaves and flesh), 17:12-15 (children), 17:21-22 (breathed, child cried out), all T Septuagint; KJV read in full 2026-10-18 (D19); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "21": {
+      "status": "records-draft",
+      "reason": "records-draft: 21:1 (palace or threshingfloor), 21:10 and 21:13 (blaspheme or blessed), 21:19 (swine and harlots), all T Septuagint; KJV read in full 2026-10-18 (D19); Hebrew and Brenton fetched by script at flagged verses (Brenton prints the Naboth story as chapter 20)"
+     }
+    }
+   }
   },
   "2 Kings": {
    "chapters": 25,
@@ -174,7 +347,46 @@
    "draftNotes": [
     "2-kings-1-25-notes.md",
     "2-kings-1-25-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "2-kings-second-pass-records.json",
+    "notes": "2-kings-second-pass-notes.md",
+    "chapters": {
+     "4": {
+      "status": "records-draft",
+      "reason": "records-draft: 4:42 (T Septuagint, cakes of figs); KJV read in full 2026-10-18 (D13); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "5": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 5:5 and 5:18 compared; Hebrew and Brenton agree in sense; KJV read in full 2026-10-18 (D13); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "6": {
+      "status": "records-draft",
+      "reason": "records-draft: 6:25 (T Septuagint, eighty or fifty); KJV read in full 2026-10-18 (D13); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "7": {
+      "status": "records-draft",
+      "reason": "records-draft: 7:14 (T Septuagint, chariot horses or horsemen); KJV read in full 2026-10-18 (D13); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "10": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 10:13-14 (forty-two brethren) already issued as ahaziah-forty-two-brethren-slain-or-all-his-elder-brothers-already-dead; KJV read in full 2026-10-18 (D13); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "11": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none here: 11:4-7 beside 2 Chronicles 23 already issued in 2-chronicles-second-pass-records.json; 11:16 Greek agrees with Hebrew (house of the king); KJV read in full 2026-10-18 (D13); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "19": {
+      "status": "records-draft",
+      "reason": "records-draft: 19:37 beside Isaiah 37:38 (T Hebrew, Armenia or Ararat); KJV read in full 2026-10-18 (D13); Hebrew and Brenton fetched by script at flagged verses"
+     },
+     "21": {
+      "status": "records-draft",
+      "reason": "records-draft: 21:6 beside 2 Chronicles 33:6 (T Septuagint, son or sons); KJV read in full 2026-10-18 (D13); Hebrew and Brenton fetched by script at flagged verses"
+     }
+    }
+   }
   },
   "1 Chronicles": {
    "chapters": 29,
@@ -195,7 +407,58 @@
    "draftNotes": [
     "1-chronicles-1-29-notes.md",
     "1-chronicles-1-29-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "1-chronicles-second-pass-records.json",
+    "notes": "1-chronicles-second-pass-notes.md",
+    "chapters": {
+     "4": {
+      "status": "records-draft",
+      "reason": "records-draft: 4:24 beside Genesis 46:10 and Numbers 26:12 (Simeon's sons); KJV read in full 2026-10-18 (D6)"
+     },
+     "9": {
+      "status": "records-draft",
+      "reason": "records-draft: 9:3 and 9:9, 9:13, 9:22 beside Nehemiah 11 (two records); KJV read in full 2026-10-18 (D6)"
+     },
+     "13": {
+      "status": "records-draft",
+      "reason": "records-draft: 13:1-5 beside 2 Samuel 6:1 (and the Greek 70,000 at 2 Samuel 6:1); KJV read in full 2026-10-18 (D6)"
+     },
+     "16": {
+      "status": "records-draft",
+      "reason": "records-draft: 16:3 (T Septuagint); KJV read in full 2026-10-18 (D6)"
+     },
+     "17": {
+      "status": "records-draft",
+      "reason": "records-draft: 17:6 and 17:14 (T Septuagint, beside 2 Samuel 7); KJV read in full 2026-10-18 (D6)"
+     },
+     "23": {
+      "status": "records-draft",
+      "reason": "records-draft: 23:3 beside 23:24 and 23:27 (Levite age); KJV read in full 2026-10-18 (D6)"
+     },
+     "24": {
+      "status": "records-draft",
+      "reason": "records-draft: 24:6 beside 1 Samuel 22:20 (Ahimelech and Abiathar); KJV read in full 2026-10-18 (D6)"
+     },
+     "15": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D6); Hebrew and Greek compared only at verses that raised a question; 15:26 (seven bullocks and seven rams) beside 2 Samuel 6:13 (oxen and fatling) differ in sacrifice but are not stated as the same act; Alamoth and Sheminith are musical terms of unknown sense, not issued"
+     },
+     "26": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D6); Hebrew and Greek compared only at verses that raised a question; Counts add up (Meshelemiah 7 sons, 18 in all; Hosah 4 sons, 13 in all; the gate allotments); no conflict found"
+     },
+     "27": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D6); Hebrew and Greek compared only at verses that raised a question; 24,000 x 12 courses add up; 27:2 (Zabdiel) beside 11:11 (Hachmonite) is a name only; 27:24 (Joab finished not) agrees with 21:6"
+     },
+     "29": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D6); Hebrew and Greek compared only at verses that raised a question; 29:4 and 29:7 gifts add to, not contradict, 22:14; reign 40 = 7 + 33; 'drams' (29:7) needs a primary publication on the daric, none opened"
+     }
+    }
+   }
   },
   "2 Chronicles": {
    "chapters": 36,
@@ -221,7 +484,78 @@
    "draftNotes": [
     "2-chronicles-1-36-notes.md",
     "2-chronicles-1-36-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "2-chronicles-second-pass-records.json",
+    "notes": "2-chronicles-second-pass-notes.md",
+    "chapters": {
+     "1": {
+      "status": "records-draft",
+      "reason": "records-draft: 1:16 and 1 Kings 10:28 (T Septuagint); KJV read in full 2026-10-18"
+     },
+     "6": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "7": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "10": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "11": {
+      "status": "records-draft",
+      "reason": "records-draft: 11:15 (T Septuagint); KJV read in full 2026-10-18"
+     },
+     "12": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "18": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "19": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "23": {
+      "status": "records-draft",
+      "reason": "records-draft: 23:4-6 against 2 Kings 11:4-7 (untagged); KJV read in full 2026-10-18"
+     },
+     "25": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "26": {
+      "status": "records-draft",
+      "reason": "records-draft: 26:23 against 2 Kings 15:7 (untagged); KJV read in full 2026-10-18"
+     },
+     "27": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "29": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "30": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "31": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "32": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D5); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     }
+    }
+   }
   },
   "Ezra": {
    "chapters": 10,
@@ -233,7 +567,22 @@
    "draftNotes": [
     "ezra-1-10-notes.md",
     "ezra-1-10-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-2-second-pass-records.json",
+    "notes": "ot-remainder-2-second-pass-notes.md",
+    "chapters": {
+     "7": {
+      "status": "records-draft",
+      "reason": "records-draft: 7:12, 7:26, T Septuagint; KJV, Hebrew and Brenton Greek read in full 2026-10-19 (D26)"
+     },
+     "9": {
+      "status": "records-draft",
+      "reason": "records-draft: 9:7, 9:11, 9:13-14, T Septuagint; KJV, Hebrew and Brenton Greek read in full 2026-10-19 (D26)"
+     }
+    }
+   }
   },
   "Nehemiah": {
    "chapters": 13,
@@ -245,7 +594,22 @@
    "draftNotes": [
     "nehemiah-1-13-notes.md",
     "nehemiah-1-13-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-2-second-pass-records.json",
+    "notes": "ot-remainder-2-second-pass-notes.md",
+    "chapters": {
+     "5": {
+      "status": "records-draft",
+      "reason": "records-draft: 5:5, 5:11, 5:14/18, 5:18, T Septuagint; KJV, Hebrew and Brenton Greek read in full 2026-10-19 (D26)"
+     },
+     "13": {
+      "status": "records-draft",
+      "reason": "records-draft: 13:16, 13:25, T Septuagint; KJV, Hebrew and Brenton Greek read in full 2026-10-19 (D26)"
+     }
+    }
+   }
   },
   "Esther": {
    "chapters": 10,
@@ -258,7 +622,26 @@
    "draftNotes": [
     "esther-1-10-notes.md",
     "esther-1-10-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "esther-second-pass-records.json",
+    "notes": "esther-second-pass-notes.md",
+    "chapters": {
+     "5": {
+      "status": "records-draft",
+      "reason": "records-draft: 5:2 sceptre (touched by Esther or laid on her neck by the king), 5:2/5:1e (favour obtained or God changed the king's spirit); KJV, Hebrew and Brenton Greek read in full (D21)."
+     },
+     "7": {
+      "status": "records-draft",
+      "reason": "records-draft: 7:4 (held my tongue or disregarded; damage or court); KJV, Hebrew and Greek read in full (D21)."
+     },
+     "10": {
+      "status": "records-draft",
+      "reason": "records-draft: 10:1 (tribute or wrote), 10:3 (next unto the king or took over from him); KJV, Hebrew and Greek read in full (D21)."
+     }
+    }
+   }
   },
   "Job": {
    "chapters": 42,
@@ -516,7 +899,345 @@
     "psalms-73-89-q-notes.md",
     "psalms-90-106-notes.md",
     "psalms-90-106-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "psalms-second-pass-records.json",
+    "notes": "psalms-second-pass-notes.md",
+    "chapters": {
+     "1": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "5": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "6": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "10": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "11": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "13": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "15": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "17": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "18": {
+      "status": "records-draft",
+      "records": [
+       "they-cried-or-they-looked-but-there-was-none-to-save-psalm-18-41-2-samuel-22-42",
+       "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8",
+       "he-did-fly-or-he-was-seen-upon-the-wings-of-the-wind-psalm-18-10-2-samuel-22-11",
+       "great-deliverance-giveth-he-or-the-tower-of-salvation-for-his-king-psalm-18-50-2-samuel-22-51"
+      ]
+     },
+     "20": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "21": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "23": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "24": {
+      "status": "records-draft",
+      "records": [
+       "that-seek-thy-face-o-jacob-or-the-face-of-the-god-of-jacob-greek-psalm-24-6"
+      ]
+     },
+     "25": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "26": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "27": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "28": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "30": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "31": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "32": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "33": {
+      "status": "records-draft",
+      "records": [
+       "as-an-heap-or-as-in-a-wineskin-greek-psalm-33-7"
+      ]
+     },
+     "34": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "35": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "36": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "37": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "38": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "39": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "41": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "43": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "44": {
+      "status": "records-draft",
+      "records": [
+       "in-the-place-of-dragons-or-in-a-place-of-affliction-greek-psalm-44-19"
+      ]
+     },
+     "46": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "48": {
+      "status": "records-draft",
+      "records": [
+       "our-guide-even-unto-death-or-shepherd-us-for-the-ages-greek-psalm-48-14"
+      ]
+     },
+     "49": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "52": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "53": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "54": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "57": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "59": {
+      "status": "records-draft",
+      "records": [
+       "slay-them-not-and-consume-them-that-they-may-not-be-psalm-59-11-and-13"
+      ]
+     },
+     "61": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "63": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "65": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "66": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "67": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "70": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "75": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "81": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "83": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "85": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "86": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "93": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "97": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "98": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "99": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "100": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "101": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "103": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "108": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "111": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "112": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "113": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "114": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "116": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "117": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "121": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "122": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "123": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "124": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "125": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "128": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "131": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "132": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "133": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "134": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "135": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "136": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "140": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "142": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "143": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "150": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     }
+    }
+   }
   },
   "Proverbs": {
    "chapters": 31,
@@ -543,7 +1264,82 @@
    "draftNotes": [
     "proverbs-1-31-notes.md",
     "proverbs-1-31-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "proverbs-second-pass-records.json",
+    "notes": "proverbs-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "5": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "7": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "9": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "10": {
+      "status": "records-draft",
+      "reason": "records-draft: 10:25 (everlasting foundation / turns aside); verse-by-verse overlap scan of KJV against Brenton's English, then flagged verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18)"
+     },
+     "12": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "13": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "14": {
+      "status": "records-draft",
+      "reason": "records-draft: 14:10 (stranger / pride); verse-by-verse overlap scan of KJV against Brenton's English, then flagged verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18)"
+     },
+     "15": {
+      "status": "records-draft",
+      "reason": "records-draft: 15:23 (joy by the answer / bad man will not listen); verse-by-verse overlap scan of KJV against Brenton's English, then flagged verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18)"
+     },
+     "16": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full; Greek page omits 16:1, 16:3, 16:4, 16:6 (held, see notes)"
+     },
+     "17": {
+      "status": "records-draft",
+      "reason": "records-draft: 17:8 (gift / instruction); verse-by-verse overlap scan of KJV against Brenton's English, then flagged verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18)"
+     },
+     "19": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "20": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "21": {
+      "status": "records-draft",
+      "reason": "records-draft: 21:10 (no favour / not pitied); verse-by-verse overlap scan of KJV against Brenton's English, then flagged verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18)"
+     },
+     "24": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "25": {
+      "status": "reviewed-none",
+      "reason": "verse-by-verse overlap scan of KJV against Brenton's English and low-overlap verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18); nothing issued; chapter not read in full"
+     },
+     "27": {
+      "status": "records-draft",
+      "reason": "records-draft: 27:16 (hideth the wind / north wind) and 27:22 (bray in a mortar / scourge in council); verse-by-verse overlap scan of KJV against Brenton's English, then flagged verses read in KJV, WLC and Brenton's Greek (D7, 2026-10-18)"
+     }
+    }
+   }
   },
   "Ecclesiastes": {
    "chapters": 12,
@@ -558,7 +1354,34 @@
    "draftNotes": [
     "ecclesiastes-to-song-of-solomon-notes.md",
     "ecclesiastes-to-song-of-solomon-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "ecclesiastes-second-pass-records.json",
+    "notes": "ecclesiastes-second-pass-notes.md",
+    "chapters": {
+     "4": {
+      "status": "reviewed-none",
+      "reason": "KJV and Brenton's English read in full 2026-10-18 (D8); Hebrew and Greek compared at verses that raised a question; 4:4 (envied of his neighbour), 4:14 (born in his kingdom) and 4:8 (child/son) are same-sense or ambiguous; nothing issued"
+     },
+     "5": {
+      "status": "records-draft",
+      "reason": "KJV and Brenton's English read in full 2026-10-18 (D8); Hebrew and Greek compared at verses that raised a question; records-draft: 5:6 (angel / God) and 5:20 (answereth / troubles); KJV 5:n is Hebrew and Greek 5:(n-1) in this chapter"
+     },
+     "6": {
+      "status": "records-draft",
+      "reason": "KJV and Brenton's English read in full 2026-10-18 (D8); Hebrew and Greek compared at verses that raised a question; records-draft: 6:5 (nor known any thing / rest) and 6:6 (twice told)"
+     },
+     "7": {
+      "status": "records-draft",
+      "reason": "KJV and Brenton's English read in full 2026-10-18 (D8); Hebrew and Greek compared at verses that raised a question; records-draft: 7:7 (a gift / noble heart) and 7:18 (withdraw / defile); 7:16 and 7:12 already ruled out in the first pass"
+     },
+     "11": {
+      "status": "records-draft",
+      "reason": "KJV and Brenton's English read in full 2026-10-18 (D8); Hebrew and Greek compared at verses that raised a question; records-draft: 11:9 (sight of thine eyes) and 11:10 (childhood / folly)"
+     }
+    }
+   }
   },
   "Song of Solomon": {
    "chapters": 8,
@@ -570,7 +1393,22 @@
    "draftNotes": [
     "ecclesiastes-to-song-of-solomon-notes.md",
     "ecclesiastes-to-song-of-solomon-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "song-of-solomon-second-pass-records.json",
+    "notes": "song-of-solomon-second-pass-notes.md",
+    "chapters": {
+     "5": {
+      "status": "records-draft",
+      "reason": "KJV and Brenton's English read in full 2026-10-18 (D9); Hebrew and Greek compared at verses that raised a question; records-draft: 5:1 (Greek opening clause) and 5:8 (added oath phrase)"
+     },
+     "8": {
+      "status": "records-draft",
+      "reason": "KJV and Brenton's English read in full 2026-10-18 (D9); Hebrew and Greek compared at verses that raised a question; records-draft: 8:2 (instruct / chamber), 8:4 (added oath phrase), 8:5 (wilderness / all white)"
+     }
+    }
+   }
   },
   "Isaiah": {
    "chapters": 66,
@@ -614,7 +1452,164 @@
     "isaiah-28-39-q-notes.md",
     "isaiah-40-66-notes.md",
     "isaiah-40-66-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "isaiah-second-pass-records.json",
+    "notes": "isaiah-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "5": {
+      "status": "records-draft",
+      "records": [
+       "ten-acres-of-vineyard-or-ten-yoke-of-oxen-greek-isaiah-5-10"
+      ]
+     },
+     "11": {
+      "status": "records-draft",
+      "records": [
+       "hamath-and-the-islands-of-the-sea-or-the-rising-of-the-sun-and-arabia-greek-isaiah-11-11"
+      ]
+     },
+     "12": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "14": {
+      "status": "records-draft",
+      "records": [
+       "the-golden-city-ceased-or-the-taskmaster-ceased-greek-isaiah-14-4"
+      ]
+     },
+     "15": {
+      "status": "records-draft",
+      "records": [
+       "bajith-and-lions-upon-moab-or-debon-where-your-altar-is-and-arabians-greek-isaiah-15-2-and-9"
+      ]
+     },
+     "16": {
+      "status": "records-draft",
+      "records": [
+       "send-ye-the-lamb-to-the-ruler-or-i-will-send-as-reptiles-greek-isaiah-16-1"
+      ]
+     },
+     "17": {
+      "status": "records-draft",
+      "records": [
+       "forsaken-bough-and-uppermost-branch-or-the-amorites-and-the-hivites-greek-isaiah-17-9"
+      ]
+     },
+     "20": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "22": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "24": {
+      "status": "records-draft",
+      "records": [
+       "the-moon-confounded-and-the-sun-ashamed-or-the-brick-shall-melt-and-the-wall-fall-greek-isaiah-24-23"
+      ]
+     },
+     "27": {
+      "status": "records-draft",
+      "records": [
+       "i-the-lord-do-keep-it-or-i-am-a-strong-city-besieged-greek-isaiah-27-3"
+      ]
+     },
+     "33": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "35": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "38": {
+      "status": "records-draft",
+      "records": [
+       "for-isaiah-had-said-or-and-isaiah-said-isaiah-38-21-22",
+       "i-shall-not-see-the-lord-even-the-lord-or-the-salvation-of-god-greek-isaiah-38-11"
+      ]
+     },
+     "39": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "43": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "44": {
+      "status": "records-draft",
+      "records": [
+       "cities-of-judah-or-cities-of-idumea-greek-isaiah-44-26"
+      ]
+     },
+     "46": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "47": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "50": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "51": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "52": {
+      "status": "records-draft",
+      "records": [
+       "so-shall-he-sprinkle-many-nations-or-so-many-nations-shall-wonder-at-him-greek-isaiah-52-15"
+      ]
+     },
+     "55": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "58": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "60": {
+      "status": "records-draft",
+      "records": [
+       "thy-gates-praise-or-thy-gates-sculptured-work-greek-isaiah-60-18"
+      ]
+     },
+     "62": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "64": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and compared with Brenton English; Hebrew and Greek not read in full (fetched and compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "65": {
+      "status": "records-draft",
+      "records": [
+       "that-troop-and-that-number-or-the-demon-and-fortune-greek-isaiah-65-11"
+      ]
+     },
+     "66": {
+      "status": "records-draft",
+      "records": [
+       "he-that-killeth-an-ox-or-the-transgressor-that-sacrifices-a-calf-greek-isaiah-66-3",
+       "lud-that-draw-the-bow-or-lud-and-mosoch-greek-isaiah-66-19"
+      ]
+     }
+    }
+   }
   },
   "Jeremiah": {
    "chapters": 52,
@@ -650,7 +1645,115 @@
     "jeremiah-1-29-q-notes.md",
     "jeremiah-30-52-notes.md",
     "jeremiah-30-52-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "jeremiah-second-pass-records.json",
+    "notes": "jeremiah-second-pass-notes.md",
+    "chapters": {
+     "4": {
+      "status": "records-draft",
+      "reason": "records-draft: 4:28 against 15:6 (T Septuagint); KJV read in full 2026-10-18"
+     },
+     "5": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D4b); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "8": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D4b); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "9": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D4b); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "11": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D4b); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "13": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D4b); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "14": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D4b); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "15": {
+      "status": "records-draft",
+      "reason": "records-draft: 15:4 against 31:29-30; 15:6 against 4:28 (T Septuagint); KJV read in full 2026-10-18"
+     },
+     "16": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D4b); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "17": {
+      "status": "records-draft",
+      "reason": "records-draft: 17:4 against 3:12 (T Septuagint; Brenton prints no 17:1-4); KJV read in full 2026-10-18"
+     },
+     "27": {
+      "status": "records-draft",
+      "reason": "Draft records 2026-10-18: 27:1 Jehoiakim against Zedekiah (27:3, 12) and Greek omissions at 27:7, 27:22."
+     },
+     "30": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 (D4b); Hebrew and Greek not read in full (compared only at verses that raised a question); no qualifying difference or conflict found"
+     },
+     "33": {
+      "status": "records-draft",
+      "reason": "Draft record 2026-10-18: Greek page ends at 33:13."
+     },
+     "35": {
+      "status": "records-draft",
+      "reason": "Draft record 2026-10-18: Syrians / Assyrians at 35:11."
+     },
+     "37": {
+      "status": "records-draft",
+      "reason": "Draft records 2026-10-18: 37:1 predecessor named; 37:12 separate / buy."
+     },
+     "38": {
+      "status": "records-draft",
+      "reason": "Draft records 2026-10-18: 38:1 four men / three; 38:14 third entry / house of Aseleisel."
+     },
+     "39": {
+      "status": "records-draft",
+      "reason": "Draft record 2026-10-18: 39:1 tenth month / ninth month."
+     },
+     "42": {
+      "status": "records-draft",
+      "reason": "Draft record 2026-10-18: 42:17 with 44:14, 44:28 (issued under chapter 44's record)."
+     },
+     "44": {
+      "status": "records-draft",
+      "reason": "Draft record 2026-10-18: 44:14, 44:28 against 42:17."
+     },
+     "21": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Zedekiah's inquiry and judgment; Greek not read in full; no qualifying difference found."
+     },
+     "24": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; the two baskets of figs; carpenters and smiths already covered at 29:2; no qualifying difference found."
+     },
+     "45": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18 and Greek 51:31-35 not separately read; no qualifying difference found."
+     },
+     "47": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Philistine oracle; Greek (printed as chapter 29) not read in full; no qualifying difference found."
+     },
+     "49": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-18; Ammon, Edom, Damascus, Kedar, Elam oracles; the Obadiah parallel and the Greek (printed in chapters 25, 29 and 30) were not opened in this unit; no qualifying difference found at KJV level."
+     }
+    },
+    "d4b": {
+     "date": "2026-10-18",
+     "file": "jeremiah-4b-second-pass-records.json",
+     "notes": "jeremiah-4b-second-pass-notes.md"
+    }
+   }
   },
   "Lamentations": {
    "chapters": 5,
@@ -686,7 +1789,74 @@
     "ezekiel-1-24-q-notes.md",
     "ezekiel-25-48-notes.md",
     "ezekiel-25-48-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "ezekiel-second-pass-records.json",
+    "notes": "ezekiel-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 2:1 Greek plus at the start and wording only; KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek read at flagged verses"
+     },
+     "3": {
+      "status": "records-draft",
+      "reason": "records-draft: 3:15 (T Septuagint, Telabib and astonished); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     },
+     "6": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 6:14 'more desolate than the wilderness toward Diblath' has the KJV margin 'desolate from the wilderness', so the alternative is already printed; other differences are wording; KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek read at flagged verses"
+     },
+     "7": {
+      "status": "records-draft",
+      "reason": "records-draft: 7:27 (T Septuagint, the king shall mourn); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     },
+     "12": {
+      "status": "records-draft",
+      "reason": "records-draft: 12:6-7 (T Septuagint, carried or lifted up); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     },
+     "13": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 13:5 'gaps' and 13:18 'armholes' carry KJV margins or are wording differences; KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek read at flagged verses"
+     },
+     "15": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 15:4 'both the ends of it' against Brenton 'that which is yearly pruned': not issued without a lexicon citation; KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek read at flagged verses"
+     },
+     "22": {
+      "status": "records-draft",
+      "reason": "records-draft: 22:25 (T Septuagint, prophets or princes); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     },
+     "24": {
+      "status": "records-draft",
+      "reason": "records-draft: 24:18 (T Septuagint, my wife died); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     },
+     "26": {
+      "status": "records-draft",
+      "reason": "records-draft: 26:20 (T Septuagint, glory or not stand in the land of the living); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     },
+     "33": {
+      "status": "records-draft",
+      "reason": "records-draft: 33:21 and 33:25-26 (T Septuagint, date swap; verse 26 not printed); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     },
+     "35": {
+      "status": "records-draft",
+      "reason": "records-draft: 35:7 (T Septuagint, passeth out or men and cattle); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     },
+     "42": {
+      "status": "records-draft",
+      "reason": "records-draft: 42:16-19 (T Septuagint, reeds or cubits); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     },
+     "44": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: 44:7 'fat' against Brenton 'flesh' and 44:20 'poll'/'cover': wording only, not issued; KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek read at flagged verses"
+     },
+     "47": {
+      "status": "records-draft",
+      "reason": "records-draft: 47:3-4, 47:8, 47:13 (T Septuagint); KJV and Brenton English read in full 2026-10-18 (D14); Hebrew and Greek fetched by script and read at flagged verses"
+     }
+    }
+   }
   },
   "Daniel": {
    "chapters": 12,
@@ -698,7 +1868,22 @@
    "draftNotes": [
     "daniel-to-hosea-notes.md",
     "daniel-to-hosea-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-3-second-pass-records.json",
+    "notes": "ot-remainder-3-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "reason": "records-draft: 2:11, 2:20, T Septuagint; KJV, Hebrew/Aramaic and Brenton Greek read in full 2026-10-19 (D27)"
+     },
+     "9": {
+      "status": "records-draft",
+      "reason": "records-draft: 9:4, 9:16, 9:24, 9:25, 9:26, 9:27, T Septuagint; KJV, Hebrew/Aramaic and Brenton Greek read in full 2026-10-19 (D27)"
+     }
+    }
+   }
   },
   "Hosea": {
    "chapters": 14,
@@ -709,7 +1894,18 @@
    "draftNotes": [
     "daniel-to-hosea-notes.md",
     "daniel-to-hosea-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-3-second-pass-records.json",
+    "notes": "ot-remainder-3-second-pass-notes.md",
+    "chapters": {
+     "7": {
+      "status": "records-draft",
+      "reason": "records-draft: 7:10, 7:12, 7:14, 7:16, T Septuagint; KJV, Hebrew/Aramaic and Brenton Greek read in full 2026-10-19 (D27)"
+     }
+    }
+   }
   },
   "Joel": {
    "chapters": 3,
@@ -744,7 +1940,18 @@
    ],
    "draftNotes": [
     "joel-to-micah-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-3-second-pass-records.json",
+    "notes": "ot-remainder-3-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "reason": "records-draft: 2:4, 2:5, 2:6 (KJV numbering), T Septuagint; KJV, Hebrew/Aramaic and Brenton Greek read in full 2026-10-19 (D27)"
+     }
+    }
+   }
   },
   "Micah": {
    "chapters": 7,
@@ -755,7 +1962,18 @@
    "draftNotes": [
     "joel-to-micah-notes.md",
     "joel-to-micah-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-3-second-pass-records.json",
+    "notes": "ot-remainder-3-second-pass-notes.md",
+    "chapters": {
+     "7": {
+      "status": "records-draft",
+      "reason": "records-draft: 7:3, 7:11, 7:12, 7:18, T Septuagint; KJV, Hebrew/Aramaic and Brenton Greek read in full 2026-10-19 (D27)"
+     }
+    }
+   }
   },
   "Nahum": {
    "chapters": 3,
@@ -782,7 +2000,18 @@
    ],
    "draftNotes": [
     "nahum-to-malachi-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "ot-remainder-3-second-pass-records.json",
+    "notes": "ot-remainder-3-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "reason": "records-draft: 2:1, 2:5-6, 2:9, 2:14, T Septuagint; KJV, Hebrew/Aramaic and Brenton Greek read in full 2026-10-19 (D27)"
+     }
+    }
+   }
   },
   "Haggai": {
    "chapters": 2,
@@ -803,7 +2032,30 @@
    ],
    "draftNotes": [
     "nahum-to-malachi-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "zechariah-second-pass-records.json",
+    "notes": "zechariah-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "reason": "records-draft: 2:6 (T Septuagint, spread abroad or gather), 2:13 (T Septuagint, holy habitation or holy clouds); KJV, Hebrew and Brenton Greek and English read in full 2026-10-18 (D18); fetched by script"
+     },
+     "3": {
+      "status": "records-draft",
+      "reason": "records-draft: 3:5 (T Septuagint, 'and I said' absent), 3:8 (T Septuagint, Branch or Anatole; men wondered at or portent-watchers), 3:9 (T Septuagint, engrave or dig a pit); KJV, Hebrew and Brenton Greek and English read in full 2026-10-18 (D18); fetched by script"
+     },
+     "8": {
+      "status": "records-draft",
+      "reason": "records-draft: 8:21 (T Septuagint, one city to another or five cities into one); KJV, Hebrew and Brenton Greek and English read in full 2026-10-18 (D18); fetched by script"
+     },
+     "9": {
+      "status": "records-draft",
+      "reason": "records-draft: 9:10 (T Septuagint, speak peace or multitude and peace), 9:12 (T Septuagint, prisoners of hope or of the assembly); KJV, Hebrew and Brenton Greek and English read in full 2026-10-18 (D18); fetched by script"
+     }
+    }
+   }
   },
   "Malachi": {
    "chapters": 4,
@@ -824,7 +2076,22 @@
    "draftNotes": [
     "matthew-1-28-notes.md",
     "matthew-1-28-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "matthew-acts-second-pass-records.json",
+    "notes": "matthew-acts-second-pass-notes.md",
+    "chapters": {
+     "15": {
+      "status": "records-draft",
+      "reason": "records-draft: 15:6 (commandment or law of God), 15:8 (draweth nigh clause) (D23); TR and Tischendorf compared by script, KJV read at differing verses."
+     },
+     "25": {
+      "status": "records-draft",
+      "reason": "records-draft: 25:13 (wherein the Son of man cometh), 25:31 (holy angels) (D23); TR and Tischendorf compared by script, KJV read at differing verses."
+     }
+    }
+   }
   },
   "Mark": {
    "chapters": 16,
@@ -847,7 +2114,30 @@
    "draftNotes": [
     "luke-1-24-notes.md",
     "luke-1-24-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "luke-second-pass-records.json",
+    "notes": "luke-second-pass-notes.md",
+    "chapters": {
+     "8": {
+      "status": "records-draft",
+      "reason": "records-draft: 8:3 (him/them), 8:26 and 8:37 (Gadarenes/Gergesenes), 8:45 (clause omitted), 8:54 (clause omitted); Greek editions (TR, Tischendorf) compared by script 2026-10-18 (D17); KJV read at differing verses only"
+     },
+     "15": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: TR and Tischendorf differ only in spelling, word order, particles and 15:32 ἀνέζησεν/ἔζησεν (“is alive again”/“lived”), judged too small to qualify; KJV read at differing verses only (D17)"
+     },
+     "19": {
+      "status": "records-draft",
+      "reason": "records-draft: 19:38 (“that cometh” participle absent), 19:45 (“therein, and them that bought” absent); Greek editions (TR, Tischendorf) compared by script 2026-10-18 (D17); KJV read at differing verses only"
+     },
+     "20": {
+      "status": "records-draft",
+      "reason": "records-draft: 20:1 (chief priests/priests), 20:23 (“Why tempt ye me?” absent); Greek editions (TR, Tischendorf) compared by script 2026-10-18 (D17); KJV read at differing verses only"
+     }
+    }
+   }
   },
   "John": {
    "chapters": 21,
@@ -858,7 +2148,18 @@
    "draftNotes": [
     "john-1-21-notes.md",
     "john-1-21-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "matthew-acts-second-pass-records.json",
+    "notes": "matthew-acts-second-pass-notes.md",
+    "chapters": {
+     "15": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: differences are spelling, tense or word order (15:4, 15:6 singular/plural pronoun, 15:7, 15:10, 15:21 unto you/in you, 15:22, 15:24); no change of meaning (D23); TR and Tischendorf compared by script, KJV read at differing verses only."
+     }
+    }
+   }
   },
   "Acts": {
    "chapters": 28,
@@ -870,7 +2171,22 @@
    "draftNotes": [
     "acts-1-28-notes.md",
     "acts-1-28-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "matthew-acts-second-pass-records.json",
+    "notes": "matthew-acts-second-pass-notes.md",
+    "chapters": {
+     "14": {
+      "status": "records-draft",
+      "reason": "records-draft: 14:17 (us/you gave rain) (D23); TR and Tischendorf compared by script, KJV read at differing verses."
+     },
+     "25": {
+      "status": "records-draft",
+      "reason": "records-draft: 25:5 (wickedness/out of place), 25:6 (ten days), 25:16 (to die), 25:18 (evil things) (D23); TR and Tischendorf compared by script, KJV read at differing verses."
+     }
+    }
+   }
   },
   "Romans": {
    "chapters": 16,
@@ -881,7 +2197,18 @@
    "draftNotes": [
     "romans-1-16-notes.md",
     "romans-1-16-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "epistles-second-pass-records.json",
+    "notes": "epistles-second-pass-notes.md",
+    "chapters": {
+     "12": {
+      "status": "records-draft",
+      "reason": "records-draft: 12:20 (therefore/but) (D24); TR and Tischendorf compared by script, KJV read at differing verses."
+     }
+    }
+   }
   },
   "1 Corinthians": {
    "chapters": 16,
@@ -893,7 +2220,22 @@
    "draftNotes": [
     "1-corinthians-to-2-corinthians-notes.md",
     "1-corinthians-to-2-corinthians-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "epistles-second-pass-records.json",
+    "notes": "epistles-second-pass-notes.md",
+    "chapters": {
+     "4": {
+      "status": "records-draft",
+      "reason": "records-draft: 4:6 (think), 4:17 (Christ Jesus) (D24); TR and Tischendorf compared by script, KJV read at differing verses."
+     },
+     "13": {
+      "status": "records-draft",
+      "reason": "records-draft: 13:10 (then) (D24); TR and Tischendorf compared by script, KJV read at differing verses."
+     }
+    }
+   }
   },
   "2 Corinthians": {
    "chapters": 13,
@@ -908,7 +2250,34 @@
    "draftNotes": [
     "1-corinthians-to-2-corinthians-notes.md",
     "1-corinthians-to-2-corinthians-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "2-corinthians-second-pass-records.json",
+    "notes": "2-corinthians-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "reviewed-none",
+      "reason": "Textus Receptus and Tischendorf compared word by word by script for the whole chapter 2026-10-18 (D10); KJV read at differing verses only; differences are spelling, order or particles only"
+     },
+     "3": {
+      "status": "records-draft",
+      "reason": "Textus Receptus and Tischendorf compared word by word by script for the whole chapter 2026-10-18 (D10); KJV read at differing verses only; records-draft: 3:14 (ο τι / ὅτι)"
+     },
+     "7": {
+      "status": "records-draft",
+      "reason": "Textus Receptus and Tischendorf compared word by word by script for the whole chapter 2026-10-18 (D10); KJV read at differing verses only; records-draft: 7:12 (our care / your care), 7:13 (your comfort / our comfort)"
+     },
+     "9": {
+      "status": "records-draft",
+      "reason": "Textus Receptus and Tischendorf compared word by word by script for the whole chapter 2026-10-18 (D10); KJV read at differing verses only; records-draft: 9:5 (announced / promised beforehand), 9:10 (wish / future verbs)"
+     },
+     "10": {
+      "status": "records-draft",
+      "reason": "Textus Receptus and Tischendorf compared word by word by script for the whole chapter 2026-10-18 (D10); KJV read at differing verses only; records-draft: 10:8 (us; verb mood)"
+     }
+    }
+   }
   },
   "Galatians": {
    "chapters": 6,
@@ -919,7 +2288,18 @@
    "draftNotes": [
     "galatians-to-2-thessalonians-notes.md",
     "galatians-to-2-thessalonians-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "epistles-second-pass-records.json",
+    "notes": "epistles-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "reason": "records-draft: 2:11, 2:14 (Peter/Cephas) (D24); TR and Tischendorf compared by script, KJV read at differing verses."
+     }
+    }
+   }
   },
   "Ephesians": {
    "chapters": 6,
@@ -929,7 +2309,18 @@
    ],
    "draftNotes": [
     "galatians-to-2-thessalonians-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "epistles-second-pass-records.json",
+    "notes": "epistles-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "reason": "records-draft: 2:1 (your sins), 2:17 (peace twice), 2:21 (all/every building) (D24); TR and Tischendorf compared by script, KJV read at differing verses."
+     }
+    }
+   }
   },
   "Philippians": {
    "chapters": 4,
@@ -956,7 +2347,22 @@
    ],
    "draftNotes": [
     "galatians-to-2-thessalonians-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "1-thessalonians-second-pass-records.json",
+    "notes": "1-thessalonians-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "reason": "TR and Tischendorf compared word by word by script 2026-10-18 (D11); KJV read at differing verses only; records-draft: 2:15 (ἰδίους)"
+     },
+     "5": {
+      "status": "records-draft",
+      "reason": "TR and Tischendorf compared word by word by script 2026-10-18 (D11); KJV read at differing verses only; records-draft: 5:13 (ἑαυτοῖς/αὐτοῖς), 5:27 (ἁγίοις)"
+     }
+    }
+   }
   },
   "2 Thessalonians": {
    "chapters": 3,
@@ -967,7 +2373,18 @@
    "draftNotes": [
     "galatians-to-2-thessalonians-notes.md",
     "galatians-to-2-thessalonians-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "2-thessalonians-second-pass-records.json",
+    "notes": "2-thessalonians-second-pass-notes.md",
+    "chapters": {
+     "1": {
+      "status": "records-draft",
+      "reason": "TR and Tischendorf compared word by word by script 2026-10-18 (D12); KJV read at differing verses only; records-draft: 1:10 (πιστευουσιν/πιστεύσασιν)"
+     }
+    }
+   }
   },
   "1 Timothy": {
    "chapters": 6,
@@ -1012,7 +2429,22 @@
    "draftNotes": [
     "1-timothy-to-hebrews-notes.md",
     "1-timothy-to-hebrews-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-19",
+    "file": "epistles-second-pass-records.json",
+    "notes": "epistles-second-pass-notes.md",
+    "chapters": {
+     "4": {
+      "status": "reviewed-none",
+      "reason": "reviewed-none: differences are spelling, order and particles only (D24); TR and Tischendorf compared by script, KJV read at differing verses."
+     },
+     "5": {
+      "status": "records-draft",
+      "reason": "records-draft: 5:12 (and not) (D24); TR and Tischendorf compared by script, KJV read at differing verses."
+     }
+    }
+   }
   },
   "James": {
    "chapters": 5,
@@ -1083,7 +2515,26 @@
    "draftNotes": [
     "revelation-1-22-notes.md",
     "revelation-1-22-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-18",
+    "file": "revelation-second-pass-records.json",
+    "notes": "revelation-second-pass-notes.md",
+    "chapters": {
+     "3": {
+      "status": "records-draft",
+      "reason": "records-draft: 3:2 (ready to die or were about to die), 3:7 (tense of shutting/opening); TR and Tischendorf compared by script, KJV read at differing verses (D22)."
+     },
+     "9": {
+      "status": "records-draft",
+      "reason": "records-draft: 9:4 (only those men, 'only' absent in Tischendorf); 9:19 considered and dropped as served-text artefact (D22)."
+     },
+     "18": {
+      "status": "records-draft",
+      "reason": "records-draft: 18:1 another angel, 18:5 reached or were joined, 18:13 added spice, 18:20 saints/apostles/prophets (D22)."
+     }
+    }
+   }
   }
  },
  "chapters": [
