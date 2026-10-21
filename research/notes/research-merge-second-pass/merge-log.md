@@ -262,3 +262,7 @@ Full field origins and final field hashes: [field-provenance.json](field-provena
 | Zechariah 9:6 — `a-bastard-shall-dwell-in-ashdod-or-aliens-shall-dwell-in-azotus-zechariah-9-6-greek` | new | new-only; draft, unverified | Retained as a separate draft; no substantive wording correction. |
 | Zechariah 9:14 — `with-whirlwinds-of-the-south-or-in-the-shaking-of-his-threatening-zechariah-9-14-greek` | new | new-only; draft, unverified | Quote repair against checkpoint 4fe1e7d: Restore exact packaged KJV wording/punctuation without changing application scripture |
 | Zechariah 9:16 — `stones-of-a-crown-lifted-up-as-an-ensign-or-holy-stones-rolling-on-his-land-zechariah-9-16-greek` | new | new-only; draft, unverified | Quote repair against checkpoint 4fe1e7d: Restore exact packaged KJV wording/punctuation without changing application scripture |
+
+## Owner approval (2026-10-21)
+
+Kevin approved the findings at 0ea7c58 in the project thread ("approved", 2026-10-21T03:29Z), after the findings review was applied and the quote check passed (238 PASS, 0 FAIL).
