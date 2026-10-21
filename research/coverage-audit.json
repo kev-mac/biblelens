@@ -5,18 +5,18 @@
   "counts": {
     "books": 66,
     "chapters": 1189,
-    "evidenceRecords": 1695,
+    "evidenceRecords": 1933,
     "studyRecords": 6,
     "booksWithAnnotations": 66,
-    "chaptersWithAnnotations": 879,
-    "annotatedVerses": 4232
+    "chaptersWithAnnotations": 1007,
+    "annotatedVerses": 4537
   },
   "byBook": [
     {
       "book": "Genesis",
       "chapters": 50,
       "chaptersWithAnnotations": 42,
-      "annotatedVerses": 190
+      "annotatedVerses": 191
     },
     {
       "book": "Exodus",
@@ -34,7 +34,7 @@
       "book": "Numbers",
       "chapters": 36,
       "chaptersWithAnnotations": 36,
-      "annotatedVerses": 535
+      "annotatedVerses": 536
     },
     {
       "book": "Deuteronomy",
@@ -46,7 +46,7 @@
       "book": "Joshua",
       "chapters": 24,
       "chaptersWithAnnotations": 23,
-      "annotatedVerses": 209
+      "annotatedVerses": 210
     },
     {
       "book": "Judges",
@@ -63,38 +63,38 @@
     {
       "book": "1 Samuel",
       "chapters": 31,
-      "chaptersWithAnnotations": 23,
-      "annotatedVerses": 53
+      "chaptersWithAnnotations": 30,
+      "annotatedVerses": 71
     },
     {
       "book": "2 Samuel",
       "chapters": 24,
-      "chaptersWithAnnotations": 19,
-      "annotatedVerses": 34
+      "chaptersWithAnnotations": 24,
+      "annotatedVerses": 51
     },
     {
       "book": "1 Kings",
       "chapters": 22,
-      "chaptersWithAnnotations": 16,
-      "annotatedVerses": 48
+      "chaptersWithAnnotations": 21,
+      "annotatedVerses": 67
     },
     {
       "book": "2 Kings",
       "chapters": 25,
-      "chaptersWithAnnotations": 17,
-      "annotatedVerses": 36
+      "chaptersWithAnnotations": 23,
+      "annotatedVerses": 50
     },
     {
       "book": "1 Chronicles",
       "chapters": 29,
-      "chaptersWithAnnotations": 18,
-      "annotatedVerses": 42
+      "chaptersWithAnnotations": 28,
+      "annotatedVerses": 80
     },
     {
       "book": "2 Chronicles",
       "chapters": 36,
-      "chaptersWithAnnotations": 20,
-      "annotatedVerses": 43
+      "chaptersWithAnnotations": 30,
+      "annotatedVerses": 61
     },
     {
       "book": "Ezra",
@@ -106,7 +106,7 @@
       "book": "Nehemiah",
       "chapters": 13,
       "chaptersWithAnnotations": 11,
-      "annotatedVerses": 41
+      "annotatedVerses": 47
     },
     {
       "book": "Esther",
@@ -123,14 +123,14 @@
     {
       "book": "Psalms",
       "chapters": 150,
-      "chaptersWithAnnotations": 71,
-      "annotatedVerses": 130
+      "chaptersWithAnnotations": 84,
+      "annotatedVerses": 147
     },
     {
       "book": "Proverbs",
       "chapters": 31,
-      "chaptersWithAnnotations": 14,
-      "annotatedVerses": 23
+      "chaptersWithAnnotations": 30,
+      "annotatedVerses": 53
     },
     {
       "book": "Ecclesiastes",
@@ -147,14 +147,14 @@
     {
       "book": "Isaiah",
       "chapters": 66,
-      "chaptersWithAnnotations": 36,
-      "annotatedVerses": 69
+      "chaptersWithAnnotations": 57,
+      "annotatedVerses": 100
     },
     {
       "book": "Jeremiah",
       "chapters": 52,
-      "chaptersWithAnnotations": 28,
-      "annotatedVerses": 53
+      "chaptersWithAnnotations": 46,
+      "annotatedVerses": 102
     },
     {
       "book": "Lamentations",
@@ -165,8 +165,8 @@
     {
       "book": "Ezekiel",
       "chapters": 48,
-      "chaptersWithAnnotations": 33,
-      "annotatedVerses": 75
+      "chaptersWithAnnotations": 46,
+      "annotatedVerses": 105
     },
     {
       "book": "Daniel",
@@ -237,8 +237,8 @@
     {
       "book": "Zechariah",
       "chapters": 14,
-      "chaptersWithAnnotations": 10,
-      "annotatedVerses": 33
+      "chaptersWithAnnotations": 14,
+      "annotatedVerses": 47
     },
     {
       "book": "Malachi",
@@ -286,7 +286,7 @@
       "book": "1 Corinthians",
       "chapters": 16,
       "chaptersWithAnnotations": 14,
-      "annotatedVerses": 48
+      "annotatedVerses": 49
     },
     {
       "book": "2 Corinthians",
@@ -1278,9 +1278,11 @@
       "annotationIds": [
         "exodus-family-counts",
         "benjamin-ten-sons-or-sons-and-grandsons-greek",
-        "benjamin-a-little-one-or-father-of-ten-sons"
+        "benjamin-a-little-one-or-father-of-ten-sons",
+        "simeon-six-sons-or-five-genesis-46-10-1-chronicles-4-24"
       ],
       "annotatedVerses": [
+        10,
         21,
         26,
         27
@@ -4153,7 +4155,8 @@
         "numbers-military-census-scope",
         "numbers-rebellion-household-judgment",
         "numbers-daughters-inheritance-and-marriage",
-        "deuteronomy-eyewitness-audience"
+        "deuteronomy-eyewitness-audience",
+        "simeon-six-sons-or-five-genesis-46-10-1-chronicles-4-24"
       ],
       "annotatedVerses": [
         1,
@@ -4162,6 +4165,7 @@
         9,
         10,
         11,
+        12,
         14,
         18,
         22,
@@ -5888,7 +5892,8 @@
       "bookId": 5,
       "chapter": 19,
       "annotationIds": [
-        "joshua-judah-town-totals"
+        "joshua-judah-town-totals",
+        "simeon-villages-five-cities-or-four-cities-1-chronicles-4-32-and-joshua-19-7"
       ],
       "annotatedVerses": [
         2,
@@ -5896,6 +5901,7 @@
         4,
         5,
         6,
+        7,
         32,
         33,
         34,
@@ -6526,9 +6532,23 @@
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "if-one-man-sin-against-another-the-judge-or-they-shall-pray-1-samuel-2-25",
+        "eli-heard-how-his-sons-lay-with-the-women-or-greek-lacks-clause-1-samuel-2-22",
+        "hannah-song-his-king-or-our-kings-1-samuel-2-10",
+        "feet-of-his-saints-or-giving-a-vow-to-him-that-vows-1-samuel-2-9-greek",
+        "i-will-cut-off-thine-arm-or-i-will-destroy-thy-seed-1-samuel-2-31-greek"
+      ],
+      "annotatedVerses": [
+        9,
+        10,
+        22,
+        25,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6565,18 +6585,32 @@
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ark-sent-to-ekron-or-ascalon-1-samuel-5-10-6-16"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ark-sent-to-ekron-or-ascalon-1-samuel-5-10-6-16",
+        "bethshemesh-men-looked-into-the-ark-or-sons-of-jechonias-not-pleased-1-samuel-6-19"
+      ],
+      "annotatedVerses": [
+        16,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6819,9 +6853,15 @@
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jonathan-made-a-covenant-with-the-house-of-david-or-the-name-of-jonathan-be-found-1-samuel-20-16-greek"
+      ],
+      "annotatedVerses": [
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6844,7 +6884,8 @@
       "bookId": 8,
       "chapter": 22,
       "annotationIds": [
-        "shewbread-ahimelech-or-abiathar"
+        "shewbread-ahimelech-or-abiathar",
+        "abiathar-son-of-ahimelech-or-ahimelech-son-of-abiathar"
       ],
       "annotatedVerses": [
         20
@@ -6858,9 +6899,17 @@
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "david-men-six-hundred-or-four-hundred-keilah-1-samuel-23-13",
+        "will-the-men-of-keilah-deliver-me-up-greek-page-omits-1-samuel-23-12"
+      ],
+      "annotatedVerses": [
+        12,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6891,9 +6940,23 @@
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 26,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "king-of-israel-come-out-to-seek-a-flea-or-thy-life-1-samuel-26-20",
+        "saul-lay-in-the-trench-or-in-a-chariot-1-samuel-26-5-26-7",
+        "saul-was-come-in-very-deed-or-saul-was-ready-from-keilah-1-samuel-26-4-greek",
+        "a-deep-sleep-from-the-lord-or-an-astonishment-of-the-lord-1-samuel-26-12-greek",
+        "a-partridge-in-the-mountains-or-a-night-raven-1-samuel-26-20-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        5,
+        7,
+        12,
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -6935,9 +6998,17 @@
       "book": "1 Samuel",
       "bookId": 8,
       "chapter": 29,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "achish-david-with-me-these-days-or-these-years-or-second-year-1-samuel-29-3",
+        "a-fountain-which-is-in-jezreel-or-aedor-which-is-in-jezreel-1-samuel-29-1-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        3
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7063,9 +7134,12 @@
       "chapter": 6,
       "annotationIds": [
         "michal-five-sons-bare-or-brought-up",
-        "david-gift-flagon-of-wine-or-cake-from-the-pan"
+        "david-gift-flagon-of-wine-or-cake-from-the-pan",
+        "a-good-piece-of-flesh-and-a-flagon-of-wine-or-a-baker-s-loaf-and-a-cake-1-chronicles-16-3-greek",
+        "thirty-thousand-chosen-men-or-seventy-thousand-young-men-2-samuel-6-1-greek"
       ],
       "annotatedVerses": [
+        1,
         19,
         23
       ],
@@ -7078,9 +7152,22 @@
       "book": "2 Samuel",
       "bookId": 9,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "judges-of-israel-or-the-tribes-of-israel-1-chronicles-17-6-greek",
+        "in-my-house-and-in-my-kingdom-or-in-his-kingdom-1-chronicles-17-14-greek",
+        "as-i-took-it-from-saul-or-as-i-removed-from-those-whom-i-removed-2-samuel-7-15-greek",
+        "from-the-nations-and-their-gods-or-nations-and-tents-2-samuel-7-23-greek",
+        "thine-house-and-thy-kingdom-before-thee-or-his-house-before-me-2-samuel-7-16-greek"
+      ],
+      "annotatedVerses": [
+        7,
+        15,
+        16,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7089,11 +7176,13 @@
       "chapter": 8,
       "annotationIds": [
         "hadadezer-horsemen-seventeen-hundred-seven-hundred-or-seven-thousand",
-        "valley-of-salt-syrians-or-edomites"
+        "valley-of-salt-syrians-or-edomites",
+        "abiathar-son-of-ahimelech-or-ahimelech-son-of-abiathar"
       ],
       "annotatedVerses": [
         4,
-        13
+        13,
+        17
       ],
       "modes": [
         "contradictions"
@@ -7104,9 +7193,16 @@
       "book": "2 Samuel",
       "bookId": 9,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "land-of-saul-thy-father-or-saul-thy-fathers-father-2-samuel-9-7-greek"
+      ],
+      "annotatedVerses": [
+        6,
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7130,18 +7226,37 @@
       "book": "2 Samuel",
       "bookId": 9,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "messenger-shewed-david-or-david-was-angry-with-joab-2-samuel-11-22-greek",
+        "abimelech-son-of-jerubbesheth-or-son-of-jerubbaal-son-of-ner-2-samuel-11-21-greek"
+      ],
+      "annotatedVerses": [
+        21,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Samuel",
       "bookId": 9,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "restore-the-lamb-fourfold-or-sevenfold-2-samuel-12-6-greek",
+        "given-occasion-to-the-enemies-to-blaspheme-or-provoked-the-enemies-2-samuel-12-14-greek",
+        "restore-the-lamb-fourfold-or-sevenfold-2-samuel-12-6-greek-new-20261020",
+        "their-kings-crown-or-the-crown-of-molchom-2-samuel-12-30-greek"
+      ],
+      "annotatedVerses": [
+        6,
+        14,
+        30
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7292,9 +7407,22 @@
       "book": "2 Samuel",
       "bookId": 9,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "they-cried-or-they-looked-but-there-was-none-to-save-psalm-18-41-2-samuel-22-42",
+        "great-deliverance-giveth-he-or-the-tower-of-salvation-for-his-king-psalm-18-50-2-samuel-22-51",
+        "who-is-a-rock-save-our-god-or-who-is-a-creator-2-samuel-22-32-greek",
+        "a-bow-of-steel-or-a-bow-of-bronze-2-samuel-22-35-greek",
+        "a-bow-of-steel-or-a-bow-of-bronze-2-samuel-22-35-greek-new-20261020"
+      ],
+      "annotatedVerses": [
+        32,
+        35,
+        42,
+        51
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7340,18 +7468,34 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "people-piped-with-pipes-or-danced-in-choirs-1-kings-1-40-greek"
+      ],
+      "annotatedVerses": [
+        40
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "that-thou-mayest-prosper-or-that-thou-mayest-understand-1-kings-2-3-greek",
+        "blood-of-war-on-his-girdle-or-innocent-blood-on-his-girdle-1-kings-2-5-greek",
+        "solomon-sends-benaiah-or-asks-joab-first-1-kings-2-29-greek"
+      ],
+      "annotatedVerses": [
+        3,
+        5,
+        29
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7474,7 +7618,8 @@
       "bookId": 10,
       "chapter": 10,
       "annotationIds": [
-        "deuteronomy-royal-limits-and-solomon"
+        "deuteronomy-royal-limits-and-solomon",
+        "linen-yarn-at-a-price-or-the-charge-of-the-kings-merchants-greek"
       ],
       "annotatedVerses": [
         14,
@@ -7484,7 +7629,8 @@
         29
       ],
       "modes": [
-        "history"
+        "history",
+        "contradictions"
       ],
       "researchStatus": "exhaustive-review-not-certified"
     },
@@ -7521,9 +7667,20 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jeroboam-and-the-congregation-came-or-the-people-spake-1-kings-12-2-3-12-greek",
+        "an-hundred-and-fourscore-thousand-or-a-hundred-and-twenty-thousand-1-kings-12-21-greek",
+        "jeroboams-mother-a-widow-or-a-harlot-1-kings-11-26-and-12-24-greek"
+      ],
+      "annotatedVerses": [
+        3,
+        12,
+        21,
+        24
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7599,9 +7756,22 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "elijah-stretched-himself-and-soul-came-again-or-breathed-and-child-cried-out-greek",
+        "ravens-brought-bread-and-flesh-twice-or-bread-in-morning-flesh-in-evening-greek",
+        "widow-for-me-and-my-son-or-for-me-and-my-children-1-kings-17-12-15-greek"
+      ],
+      "annotatedVerses": [
+        6,
+        12,
+        13,
+        15,
+        21,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7655,9 +7825,22 @@
       "book": "1 Kings",
       "bookId": 10,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ahab-palace-or-ahab-threshingfloor-naboth-vineyard-1-kings-21-1-greek",
+        "naboth-did-blaspheme-god-and-the-king-or-blessed-god-and-the-king-greek",
+        "dogs-lick-thy-blood-or-swine-and-dogs-lick-and-harlots-wash-1-kings-21-19-greek",
+        "ahab-rends-his-clothes-at-naboths-death-1-kings-21-16-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        10,
+        13,
+        16,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7734,9 +7917,17 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "full-ears-of-corn-in-the-husk-or-cakes-of-figs-greek",
+        "child-sneezed-seven-times-or-elisha-bowed-seven-times-2-kings-4-35-greek"
+      ],
+      "annotatedVerses": [
+        35,
+        42
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7752,18 +7943,30 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ass-head-fourscore-pieces-of-silver-or-fifty-greek"
+      ],
+      "annotatedVerses": [
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "two-chariot-horses-or-two-horsemen-greek"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7814,9 +8017,21 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "only-priests-and-levites-in-the-house-or-captains-and-the-guard-brought-in-2-chronicles-23-6-2-kings-11-4",
+        "seventh-year-or-eighth-year-jehoiada-strengthened-himself-2-chronicles-23-1-greek",
+        "brought-down-the-king-from-the-house-of-the-lord-or-brought-him-up-into-it-2-chronicles-23-20-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        5,
+        7,
+        8,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7860,9 +8075,11 @@
       "bookId": 11,
       "chapter": 14,
       "annotationIds": [
-        "azariah-began-in-jeroboam-twenty-seventh-year-or-about-his-fifteenth"
+        "azariah-began-in-jeroboam-twenty-seventh-year-or-about-his-fifteenth",
+        "buried-in-the-city-of-judah-or-the-city-of-david-amaziah-2-chronicles-25-28-greek"
       ],
       "annotatedVerses": [
+        20,
         23
       ],
       "modes": [
@@ -7876,10 +8093,12 @@
       "chapter": 15,
       "annotationIds": [
         "azariah-began-in-jeroboam-twenty-seventh-year-or-about-his-fifteenth",
-        "hoshea-began-in-jotham-twentieth-year-yet-jotham-reigned-sixteen"
+        "hoshea-began-in-jotham-twentieth-year-yet-jotham-reigned-sixteen",
+        "uzziah-buried-in-the-field-of-the-burial-or-in-the-city-of-david-2-chronicles-26-23-2-kings-15-7"
       ],
       "annotatedVerses": [
         1,
+        7,
         30,
         33
       ],
@@ -7943,9 +8162,17 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "land-of-armenia-or-the-land-of-ararat-2-kings-19-37-isaiah-37-38",
+        "long-ago-i-did-it-or-i-formed-it-2-kings-19-25-greek"
+      ],
+      "annotatedVerses": [
+        25,
+        37
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -7967,9 +8194,15 @@
       "book": "2 Kings",
       "bookId": 11,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "manasseh-made-his-son-pass-through-the-fire-or-his-children-2-kings-21-6-2-chronicles-33-6"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8072,9 +8305,11 @@
       "annotationIds": [
         "jesse-sons-eight-or-seven",
         "amasa-father-israelite-ishmeelite-or-jezreelite",
-        "hezron-married-at-sixty-or-sixty-five-greek"
+        "hezron-married-at-sixty-or-sixty-five-greek",
+        "elihu-brother-of-david-or-eliab-brother-of-david-1-chronicles-27-18-greek"
       ],
       "annotatedVerses": [
+        13,
         15,
         17,
         21
@@ -8107,9 +8342,23 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "simeon-six-sons-or-five-genesis-46-10-1-chronicles-4-24",
+        "keep-me-from-evil-or-make-me-know-1-chronicles-4-10-greek",
+        "chelub-the-brother-of-shuah-or-caleb-the-father-of-ascha-1-chronicles-4-11-greek",
+        "entrance-of-gedor-or-gerara-1-chronicles-4-39-greek",
+        "simeon-villages-five-cities-or-four-cities-1-chronicles-4-32-and-joshua-19-7"
+      ],
+      "annotatedVerses": [
+        10,
+        11,
+        24,
+        32,
+        39
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8189,9 +8438,23 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "returned-inhabitants-of-jerusalem-counts-1-chronicles-9-or-nehemiah-11",
+        "ephraim-and-manasseh-dwelt-in-jerusalem-1-chronicles-9-3-or-judah-and-benjamin-only-nehemiah-11-4",
+        "the-lord-was-with-him-or-these-were-with-him-1-chronicles-9-20-greek",
+        "azrikam-bocheru-ishmael-or-azrikam-his-firstborn-1-chronicles-9-44-greek"
+      ],
+      "annotatedVerses": [
+        3,
+        9,
+        13,
+        20,
+        22,
+        44
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8247,9 +8510,19 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "baalah-kirjathjearim-or-city-of-david-1-chronicles-13-6-greek",
+        "uzza-and-ahio-drave-the-cart-or-oza-and-his-brethren-1-chronicles-13-7-greek",
+        "perezuzza-name-of-ordinary-words-1-chronicles-13-11"
+      ],
+      "annotatedVerses": [
+        6,
+        7,
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8282,18 +8555,38 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "seed-of-israel-his-servant-or-seed-of-abraham-his-servant-1-chronicles-16-13-and-psalm-105-6",
+        "strength-and-gladness-are-in-his-place-or-strength-and-beauty-are-in-his-sanctuary-1-chronicles-16-27-and-psalm-96-6",
+        "a-good-piece-of-flesh-and-a-flagon-of-wine-or-a-baker-s-loaf-and-a-cake-1-chronicles-16-3-greek",
+        "law-of-the-lord-which-he-commanded-israel-or-by-the-hand-of-moses-1-chronicles-16-40-greek"
+      ],
+      "annotatedVerses": [
+        3,
+        13,
+        27,
+        40
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "judges-of-israel-or-the-tribes-of-israel-1-chronicles-17-6-greek",
+        "in-my-house-and-in-my-kingdom-or-in-his-kingdom-1-chronicles-17-14-greek"
+      ],
+      "annotatedVerses": [
+        6,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8302,11 +8595,13 @@
       "chapter": 18,
       "annotationIds": [
         "hadadezer-horsemen-seventeen-hundred-seven-hundred-or-seven-thousand",
-        "valley-of-salt-syrians-or-edomites"
+        "valley-of-salt-syrians-or-edomites",
+        "abiathar-son-of-ahimelech-or-ahimelech-son-of-abiathar"
       ],
       "annotatedVerses": [
         4,
-        12
+        12,
+        16
       ],
       "modes": [
         "contradictions"
@@ -8387,18 +8682,39 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "levites-numbered-from-thirty-or-from-twenty-years-1-chronicles-23",
+        "sons-of-shimei-three-in-verse-nine-and-four-in-verse-ten-1-chronicles-23",
+        "zetham-and-joel-sons-of-laadan-or-sons-of-jehieli-1-chronicles-23-8-and-26-22"
+      ],
+      "annotatedVerses": [
+        3,
+        8,
+        9,
+        10,
+        24,
+        27
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "abiathar-son-of-ahimelech-or-ahimelech-son-of-abiathar",
+        "eleazar-no-sons-or-eleazar-and-ithamar-born-to-mahli-1-chronicles-24-28-greek"
+      ],
+      "annotatedVerses": [
+        6,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8420,18 +8736,37 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 26,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "meshelemiah-seven-sons-or-eight-sons-1-chronicles-26-3-greek",
+        "ahijah-over-the-treasures-or-their-brethren-over-the-treasures-1-chronicles-26-20-greek",
+        "zetham-and-joel-sons-of-laadan-or-sons-of-jehieli-1-chronicles-23-8-and-26-22"
+      ],
+      "annotatedVerses": [
+        3,
+        20,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 27,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "elihu-brother-of-david-or-eliab-brother-of-david-1-chronicles-27-18-greek",
+        "benaiah-son-of-jehoiada-or-jehoiada-son-of-benaiah-1-chronicles-27-5-and-27-34"
+      ],
+      "annotatedVerses": [
+        5,
+        18,
+        34
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8456,18 +8791,32 @@
       "book": "1 Chronicles",
       "bookId": 12,
       "chapter": 29,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "chief-governor-or-king-anointed-solomon-1-chronicles-29-22-greek",
+        "throne-of-the-lord-or-throne-of-david-his-father-1-chronicles-29-23-greek"
+      ],
+      "annotatedVerses": [
+        22,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 1,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "linen-yarn-at-a-price-or-the-charge-of-the-kings-merchants-greek"
+      ],
+      "annotatedVerses": [
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8543,9 +8892,15 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "devour-the-land-or-devour-the-tree-2-chronicles-7-13-greek"
+      ],
+      "annotatedVerses": [
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8595,9 +8950,19 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "priests-for-the-devils-or-for-the-idols-and-the-vain-things-greek",
+        "the-levites-left-their-suburbs-or-the-tents-of-their-possession-2-chronicles-11-14-greek",
+        "dealt-wisely-and-dispersed-or-was-exalted-above-his-sons-2-chronicles-11-23-greek"
+      ],
+      "annotatedVerses": [
+        14,
+        15,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8698,9 +9063,15 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "for-controversies-when-they-returned-to-jerusalem-or-to-judge-those-dwelling-in-jerusalem-2-chronicles-19-8-greek"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8765,9 +9136,21 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "only-priests-and-levites-in-the-house-or-captains-and-the-guard-brought-in-2-chronicles-23-6-2-kings-11-4",
+        "seventh-year-or-eighth-year-jehoiada-strengthened-himself-2-chronicles-23-1-greek",
+        "brought-down-the-king-from-the-house-of-the-lord-or-brought-him-up-into-it-2-chronicles-23-20-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        4,
+        6,
+        7,
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8793,27 +9176,47 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 25,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "buried-in-the-city-of-judah-or-the-city-of-david-amaziah-2-chronicles-25-28-greek"
+      ],
+      "annotatedVerses": [
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 26,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "uzziah-buried-in-the-field-of-the-burial-or-in-the-city-of-david-2-chronicles-26-23-2-kings-15-7",
+        "visions-of-god-or-the-fear-of-the-lord-zechariah-2-chronicles-26-5-greek"
+      ],
+      "annotatedVerses": [
+        5,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 27,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "jotham-twenty-five-years-old-repeated-brentons-greek-prints-no-verse-8-2-chronicles-27-8"
+      ],
+      "annotatedVerses": [
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8844,9 +9247,15 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 29,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sixteenth-day-or-thirteenth-day-hezekiah-cleansing-2-chronicles-29-17-greek"
+      ],
+      "annotatedVerses": [
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -8871,9 +9280,17 @@
       "book": "2 Chronicles",
       "bookId": 13,
       "chapter": 32,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-brook-through-the-midst-of-the-land-or-through-the-city-2-chronicles-32-4-greek",
+        "the-lord-guided-them-on-every-side-or-gave-them-rest-round-about-2-chronicles-32-22-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -9302,10 +9719,18 @@
       "bookId": 15,
       "chapter": 11,
       "annotationIds": [
-        "dwellers-in-jerusalem-and-the-villages-nine-verses-not-in-the-greek"
+        "dwellers-in-jerusalem-and-the-villages-nine-verses-not-in-the-greek",
+        "returned-inhabitants-of-jerusalem-counts-1-chronicles-9-or-nehemiah-11",
+        "ephraim-and-manasseh-dwelt-in-jerusalem-1-chronicles-9-3-or-judah-and-benjamin-only-nehemiah-11-4"
       ],
       "annotatedVerses": [
+        4,
+        8,
+        12,
+        13,
+        14,
         16,
+        19,
         20,
         21,
         28,
@@ -10281,9 +10706,15 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "save-lord-let-the-king-hear-us-or-lord-save-the-king-greek-psalm-20-9"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10316,18 +10747,30 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 23,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "dwell-in-the-house-of-the-lord-for-ever-or-for-length-of-days-psalm-23-6"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "that-seek-thy-face-o-jacob-or-the-face-of-the-god-of-jacob-greek-psalm-24-6"
+      ],
+      "annotatedVerses": [
+        6
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10412,18 +10855,30 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 33,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "as-an-heap-or-as-in-a-wineskin-greek-psalm-33-7"
+      ],
+      "annotatedVerses": [
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 34,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-young-lions-do-lack-or-the-rich-have-become-poor-greek-psalm-34-10"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10439,9 +10894,15 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 36,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-transgression-of-the-wicked-saith-within-my-heart-or-within-himself-greek-psalm-36-1"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10466,9 +10927,15 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 39,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thou-makest-his-beauty-to-consume-away-like-a-moth-or-like-a-spider-greek-psalm-39-11"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10526,9 +10993,17 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 44,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-the-place-of-dragons-or-in-a-place-of-affliction-greek-psalm-44-19",
+        "neither-have-our-steps-declined-from-thy-way-or-thou-hast-turned-aside-our-paths-greek-psalm-44-18"
+      ],
+      "annotatedVerses": [
+        18,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10577,18 +11052,30 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 48,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "our-guide-even-unto-death-or-shepherd-us-for-the-ages-greek-psalm-48-14"
+      ],
+      "annotatedVerses": [
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Psalms",
       "bookId": 18,
       "chapter": 49,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "their-inward-thought-is-that-their-houses-shall-continue-or-their-graves-are-their-houses-greek-psalm-49-11"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10710,9 +11197,17 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 59,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "slay-them-not-and-consume-them-that-they-may-not-be-psalm-59-11-and-13",
+        "slay-them-not-lest-my-people-forget-or-lest-they-forget-thy-law-greek-psalm-59-11"
+      ],
+      "annotatedVerses": [
+        11,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -10720,7 +11215,8 @@
       "bookId": 18,
       "chapter": 60,
       "annotationIds": [
-        "judah-is-my-lawgiver-or-judas-is-my-king-greek"
+        "judah-is-my-lawgiver-or-judas-is-my-king-greek",
+        "over-philistia-will-i-triumph-or-philistia-triumph-thou-because-of-me-psalm-108-9-and-psalm-60-8"
       ],
       "annotatedVerses": [
         7,
@@ -11187,9 +11683,15 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 93,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "dwell-in-the-house-of-the-lord-for-ever-or-for-length-of-days-psalm-23-6"
+      ],
+      "annotatedVerses": [
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11229,10 +11731,12 @@
       "bookId": 18,
       "chapter": 96,
       "annotationIds": [
-        "all-the-gods-of-the-nations-are-idols-or-are-devils-greek"
+        "all-the-gods-of-the-nations-are-idols-or-are-devils-greek",
+        "strength-and-gladness-are-in-his-place-or-strength-and-beauty-are-in-his-sanctuary-1-chronicles-16-27-and-psalm-96-6"
       ],
       "annotatedVerses": [
-        5
+        5,
+        6
       ],
       "modes": [
         "contradictions"
@@ -11341,9 +11845,11 @@
       "annotationIds": [
         "he-was-laid-in-iron-or-iron-passed-through-his-soul-greek",
         "they-rebelled-not-against-his-word-or-they-rebelled-against-his-words-greek",
-        "he-sent-darkness-and-they-rebelled-not-who-is-they-in-psalm-105-28"
+        "he-sent-darkness-and-they-rebelled-not-who-is-they-in-psalm-105-28",
+        "seed-of-israel-his-servant-or-seed-of-abraham-his-servant-1-chronicles-16-13-and-psalm-105-6"
       ],
       "annotatedVerses": [
+        6,
         18,
         28
       ],
@@ -11392,9 +11898,15 @@
       "book": "Psalms",
       "bookId": 18,
       "chapter": 108,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "over-philistia-will-i-triumph-or-philistia-triumph-thou-because-of-me-psalm-108-9-and-psalm-60-8"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11957,9 +12469,17 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-layeth-up-sound-wisdom-for-the-righteous-or-he-lays-up-salvation-for-the-upright-greek-proverbs-2-7",
+        "the-dead-or-the-earthborn-and-the-giants-proverbs-2-18-9-18-and-21-16"
+      ],
+      "annotatedVerses": [
+        7,
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -11998,9 +12518,15 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-loving-hind-and-pleasant-roe-or-the-hind-of-friendship-and-the-colt-of-thy-graces-greek-proverbs-5-19"
+      ],
+      "annotatedVerses": [
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12022,9 +12548,18 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "as-a-fool-to-the-correction-of-the-stocks-or-as-a-dog-to-bonds-greek-proverbs-7-22",
+        "keep-my-words-or-son-honour-the-lord-and-thou-shalt-be-strong-greek-plus-proverbs-7-1"
+      ],
+      "annotatedVerses": [
+        1,
+        22,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12048,18 +12583,32 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-dead-or-the-earthborn-and-the-giants-proverbs-2-18-9-18-and-21-16"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 10,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-righteous-is-an-everlasting-foundation-or-the-righteous-turns-aside-and-is-saved-greek",
+        "a-prating-fool-shall-fall-or-he-that-reproves-openly-makes-peace-greek-proverbs-10-10"
+      ],
+      "annotatedVerses": [
+        10,
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12083,54 +12632,100 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-that-is-despised-and-hath-a-servant-or-a-man-in-dishonour-serving-himself-greek-proverbs-12-9",
+        "in-the-pathway-thereof-there-is-no-death-or-the-ways-of-the-revengeful-are-to-death-greek-proverbs-12-28"
+      ],
+      "annotatedVerses": [
+        9,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-wicked-messenger-falleth-into-mischief-or-a-bold-king-will-fall-into-evils-greek-proverbs-13-17",
+        "righteousness-keepeth-him-that-is-upright-in-the-way-brentons-greek-prints-no-verse-13-6"
+      ],
+      "annotatedVerses": [
+        6,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-heart-knoweth-his-own-bitterness-a-stranger-not-intermeddle-or-the-mind-is-sensitive-no-fellowship-with-pride-greek",
+        "the-righteous-hath-hope-in-his-death-or-he-that-trusts-in-his-own-holiness-is-righteous-greek-proverbs-14-32"
+      ],
+      "annotatedVerses": [
+        10,
+        32
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-man-hath-joy-by-the-answer-of-his-mouth-or-a-bad-man-will-not-listen-greek",
+        "the-ear-that-heareth-the-reproof-of-life-brentons-greek-prints-no-verse-15-31"
+      ],
+      "annotatedVerses": [
+        23,
+        31
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-the-light-of-the-kings-countenance-is-life-or-in-the-light-of-life-is-the-kings-son-greek-proverbs-16-15"
+      ],
+      "annotatedVerses": [
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "a-gift-is-a-precious-stone-or-instruction-is-a-gracious-reward-greek",
+        "a-wise-servant-shall-have-rule-over-a-son-that-causeth-shame-or-over-foolish-masters-greek-proverbs-17-2"
+      ],
+      "annotatedVerses": [
+        2,
+        8
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12154,9 +12749,15 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 19,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-contentions-of-a-wife-are-a-continual-dropping-or-prayers-from-a-courtesans-hire-are-not-pure-greek-proverbs-19-13"
+      ],
+      "annotatedVerses": [
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12172,9 +12773,21 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 21,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-wicked-desires-evil-his-neighbour-finds-no-favour-or-the-soul-of-the-ungodly-will-not-be-pitied-greek",
+        "the-dead-or-the-earthborn-and-the-giants-proverbs-2-18-9-18-and-21-16",
+        "the-plowing-of-the-wicked-is-sin-or-the-lamp-of-the-ungodly-is-sin-greek-proverbs-21-4",
+        "the-wicked-shall-be-a-ransom-for-the-righteous-or-the-lawless-is-the-offscouring-of-the-righteous-greek-proverbs-21-18"
+      ],
+      "annotatedVerses": [
+        4,
+        10,
+        16,
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12213,18 +12826,32 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "there-shall-be-no-reward-to-the-evil-man-or-there-shall-be-no-offspring-to-the-wicked-greek-proverbs-24-20"
+      ],
+      "annotatedVerses": [
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 25,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-men-of-hezekiah-copied-out-or-the-friends-of-hezekiah-wrote-out-greek-proverbs-25-1",
+        "the-honour-of-kings-is-to-search-out-a-matter-or-the-glory-of-a-king-honours-matters-greek-proverbs-25-2"
+      ],
+      "annotatedVerses": [
+        1,
+        2
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12249,9 +12876,17 @@
       "book": "Proverbs",
       "bookId": 19,
       "chapter": 27,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "whosoever-hideth-her-hideth-the-wind-or-the-north-wind-is-sharp-greek",
+        "bray-a-fool-in-a-mortar-among-wheat-or-scourge-a-fool-disgracing-him-in-the-council-greek"
+      ],
+      "annotatedVerses": [
+        16,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12683,9 +13318,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ten-acres-of-vineyard-or-ten-yoke-of-oxen-greek-isaiah-5-10"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12770,9 +13411,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 11,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "hamath-and-the-islands-of-the-sea-or-the-rising-of-the-sun-and-arabia-greek-isaiah-11-11"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12805,36 +13452,66 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-golden-city-ceased-or-the-taskmaster-ceased-greek-isaiah-14-4",
+        "all-the-chief-ones-of-the-earth-or-all-the-giants-who-ruled-the-earth-greek-isaiah-14-9"
+      ],
+      "annotatedVerses": [
+        4,
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bajith-or-debon-where-your-altar-is-greek-isaiah-15-2",
+        "lions-upon-moab-or-arabians-and-ariel-greek-isaiah-15-9",
+        "the-brook-of-the-willows-or-arabs-against-the-valley-greek-isaiah-15-7"
+      ],
+      "annotatedVerses": [
+        2,
+        7,
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 16,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "send-ye-the-lamb-to-the-ruler-or-i-will-send-as-reptiles-greek-isaiah-16-1"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "forsaken-bough-and-uppermost-branch-or-the-amorites-and-the-hivites-greek-isaiah-17-9"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12873,9 +13550,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 20,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "sargon-the-king-of-assyria-or-arna-the-king-of-the-assyrians-greek-isaiah-20-1"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12900,9 +13583,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "strengthen-him-with-thy-girdle-or-i-will-give-him-thy-crown-greek-isaiah-22-21"
+      ],
+      "annotatedVerses": [
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12924,9 +13613,17 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-moon-confounded-and-the-sun-ashamed-or-the-brick-shall-melt-and-the-wall-fall-greek-isaiah-24-23",
+        "glory-to-the-righteous-but-i-said-my-leanness-woe-unto-me-or-hope-to-the-godly-woe-to-the-faithless-greek-isaiah-24-16"
+      ],
+      "annotatedVerses": [
+        16,
+        23
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -12963,9 +13660,16 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 27,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-the-lord-do-keep-it-or-i-am-a-strong-city-besieged-greek-isaiah-27-3"
+      ],
+      "annotatedVerses": [
+        3,
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13069,9 +13773,17 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 33,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bashan-and-carmel-shake-off-their-fruits-or-galilee-and-carmel-shall-be-manifest-greek-isaiah-33-9",
+        "where-is-he-that-counted-the-towers-or-where-is-he-that-counts-the-nurtured-greek-isaiah-33-18"
+      ],
+      "annotatedVerses": [
+        9,
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13122,10 +13834,12 @@
       "bookId": 22,
       "chapter": 37,
       "annotationIds": [
-        "i-have-digged-and-drunk-water-or-i-have-made-a-bridge-greek"
+        "i-have-digged-and-drunk-water-or-i-have-made-a-bridge-greek",
+        "land-of-armenia-or-the-land-of-ararat-2-kings-19-37-isaiah-37-38"
       ],
       "annotatedVerses": [
-        25
+        25,
+        38
       ],
       "modes": [
         "contradictions"
@@ -13136,9 +13850,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 38,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-shall-not-see-the-lord-even-the-lord-or-the-salvation-of-god-greek-isaiah-38-11"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13212,9 +13932,17 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 44,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "cities-of-judah-or-cities-of-idumea-greek-isaiah-44-26",
+        "that-saith-of-cyrus-he-is-my-shepherd-or-who-says-to-cyrus-to-be-wise-greek-isaiah-44-28"
+      ],
+      "annotatedVerses": [
+        26,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13302,18 +14030,30 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 51,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "cut-rahab-and-wounded-the-dragon-or-awake-as-in-the-beginning-of-the-day-greek-isaiah-51-9"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 52,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "so-shall-he-sprinkle-many-nations-or-so-many-nations-shall-wonder-at-him-greek-isaiah-52-15"
+      ],
+      "annotatedVerses": [
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13357,9 +14097,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 55,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "wine-and-milk-without-money-or-wine-and-fat-without-money-greek-isaiah-55-1"
+      ],
+      "annotatedVerses": [
+        1
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13422,9 +14168,17 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 60,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thy-gates-praise-or-thy-gates-sculptured-work-greek-isaiah-60-18",
+        "the-house-of-my-glory-or-the-house-of-my-prayer-greek-isaiah-60-7"
+      ],
+      "annotatedVerses": [
+        7,
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13446,9 +14200,15 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 62,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "thou-shalt-be-called-hephzibah-and-thy-land-beulah-or-my-desire-and-inhabited-hebrew-and-greek-isaiah-62-4"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13473,27 +14233,47 @@
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 64,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "for-him-that-waiteth-for-him-or-for-them-that-love-him-isaiah-64-4-and-1-corinthians-2-9"
+      ],
+      "annotatedVerses": [
+        4
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 65,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "that-troop-and-that-number-or-the-demon-and-fortune-greek-isaiah-65-11"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Isaiah",
       "bookId": 22,
       "chapter": 66,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-that-killeth-an-ox-or-the-transgressor-that-sacrifices-a-calf-greek-isaiah-66-3",
+        "lud-that-draw-the-bow-or-lud-and-mosoch-greek-isaiah-66-19"
+      ],
+      "annotatedVerses": [
+        3,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13545,18 +14325,32 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 4,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "without-form-and-void-or-nothing-jeremiah-4-23-greek",
+        "the-fruitful-place-or-carmel-jeremiah-4-26-greek"
+      ],
+      "annotatedVerses": [
+        23,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 5,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "they-are-not-the-lords-or-they-are-the-lords-jeremiah-5-10-greek"
+      ],
+      "annotatedVerses": [
+        10
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13606,9 +14400,17 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "baalim-or-the-idols-jeremiah-9-14-greek",
+        "egypt-and-judah-and-edom-or-egypt-and-idumea-and-edom-jeremiah-9-26-greek"
+      ],
+      "annotatedVerses": [
+        14,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13654,27 +14456,51 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-king-and-to-the-queen-or-the-king-and-those-in-power-jeremiah-13-18-greek"
+      ],
+      "annotatedVerses": [
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 14,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "as-a-man-astonied-or-as-a-man-asleep-jeremiah-14-9-greek"
+      ],
+      "annotatedVerses": [
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 15,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "shall-iron-break-the-northern-iron-or-will-iron-be-known-jeremiah-15-12-greek",
+        "thy-words-were-found-and-i-did-eat-them-or-consume-them-jeremiah-15-16-greek",
+        "i-will-not-repent-or-i-am-weary-with-repenting-jeremiah-4-28-15-6",
+        "because-of-manasseh-or-every-one-shall-die-for-his-own-iniquity-jeremiah-15-4-31-29-30"
+      ],
+      "annotatedVerses": [
+        4,
+        6,
+        12,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13690,9 +14516,18 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 17,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-heart-is-deceitful-and-desperately-wicked-or-the-heart-is-deep-jeremiah-17-9-greek",
+        "anger-not-kept-for-ever-or-fire-burning-for-ever-jeremiah-3-12-17-4"
+      ],
+      "annotatedVerses": [
+        1,
+        4,
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13834,9 +14669,20 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 27,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "in-the-reign-of-jehoiakim-or-zedekiah-jeremiah-27-1-3-12",
+        "his-son-and-his-sons-son-and-restore-them-greek-omits-jeremiah-27-7-22"
+      ],
+      "annotatedVerses": [
+        1,
+        3,
+        7,
+        12,
+        22
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13875,9 +14721,16 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 30,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "fear-thou-not-o-my-servant-jacob-brentons-greek-prints-no-verses-jeremiah-30-10-11"
+      ],
+      "annotatedVerses": [
+        10,
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13888,12 +14741,15 @@
         "a-woman-shall-compass-a-man-or-men-shall-go-about-in-safety-jeremiah-31-22-greek",
         "satiate-the-soul-of-the-priests-with-fatness-or-cheer-with-wine-jeremiah-31-14-greek",
         "the-blind-and-the-lame-or-the-feast-of-the-passover-jeremiah-31-8-greek",
-        "the-lord-hath-created-a-new-thing-in-the-earth-what-is-the-new-thing-jeremiah-31-22"
+        "the-lord-hath-created-a-new-thing-in-the-earth-what-is-the-new-thing-jeremiah-31-22",
+        "because-of-manasseh-or-every-one-shall-die-for-his-own-iniquity-jeremiah-15-4-31-29-30"
       ],
       "annotatedVerses": [
         8,
         14,
-        22
+        22,
+        29,
+        30
       ],
       "modes": [
         "contradictions",
@@ -13921,9 +14777,20 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 33,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "branch-of-righteousness-and-david-never-want-a-man-greek-page-ends-at-jeremiah-33-13"
+      ],
+      "annotatedVerses": [
+        14,
+        15,
+        17,
+        18,
+        22,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13945,9 +14812,15 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 35,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "army-of-the-syrians-or-the-assyrians-greek-jeremiah-35-11"
+      ],
+      "annotatedVerses": [
+        11
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -13971,27 +14844,55 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 37,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "instead-of-coniah-the-son-of-jehoiakim-or-instead-of-jehoiakim-greek-jeremiah-37-1",
+        "to-separate-himself-or-to-buy-greek-jeremiah-37-12"
+      ],
+      "annotatedVerses": [
+        1,
+        12
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 38,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "third-entry-in-the-house-of-the-lord-or-the-house-of-aseleisel-jeremiah-38-14-greek",
+        "four-princes-heard-jeremiah-or-three-greek-jeremiah-38-1",
+        "these-men-have-done-evil-or-thou-hast-done-evil-jeremiah-38-9-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        9,
+        14
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 39,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ninth-year-tenth-month-or-ninth-month-greek-jeremiah-39-1",
+        "the-king-fled-by-night-brentons-greek-prints-no-verses-jeremiah-39-4-13"
+      ],
+      "annotatedVerses": [
+        1,
+        4,
+        7,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14028,9 +14929,17 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 42,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "none-shall-escape-in-egypt-or-a-small-number-that-escape-jeremiah-42-17-44-14-28",
+        "i-repent-me-of-the-evil-or-i-have-rested-from-the-evils-jeremiah-42-10-greek"
+      ],
+      "annotatedVerses": [
+        10,
+        17
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14054,9 +14963,16 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 44,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "none-shall-escape-in-egypt-or-a-small-number-that-escape-jeremiah-42-17-44-14-28"
+      ],
+      "annotatedVerses": [
+        14,
+        28
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14087,9 +15003,16 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 47,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "remnant-of-the-country-of-caphtor-or-the-remnant-of-the-islands-jeremiah-47-4-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14115,9 +15038,20 @@
       "book": "Jeremiah",
       "bookId": 23,
       "chapter": 49,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "their-king-inherit-gad-or-melchol-inherited-galaad-jeremiah-49-1-greek",
+        "hazor-a-dwelling-for-dragons-or-the-court-a-haunt-of-ostriches-jeremiah-49-33-greek",
+        "afterward-i-will-bring-again-the-captivity-of-ammon-brentons-greek-prints-no-matching-verse-jeremiah-49-6"
+      ],
+      "annotatedVerses": [
+        1,
+        6,
+        28,
+        33
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14325,9 +15259,15 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "telabib-and-astonished-or-no-name-ezekiel-3-15"
+      ],
+      "annotatedVerses": [
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14368,18 +15308,38 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 6,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "dead-carcases-before-their-idols-or-not-printed-ezekiel-6-5-greek"
+      ],
+      "annotatedVerses": [
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 7,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-king-shall-mourn-or-the-prince-only-ezekiel-7-27",
+        "seller-shall-not-return-or-buyer-shall-not-return-ezekiel-7-13-greek",
+        "escapers-like-doves-mourning-or-all-the-rest-slain-ezekiel-7-16-greek",
+        "silver-and-gold-not-able-to-deliver-or-not-printed-ezekiel-7-19-greek",
+        "make-a-chain-bloody-crimes-or-they-shall-make-confusion-peoples-ezekiel-7-23-greek"
+      ],
+      "annotatedVerses": [
+        13,
+        16,
+        19,
+        23,
+        27
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14456,18 +15416,31 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 12,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "bear-it-upon-thy-shoulders-or-thou-shalt-be-lifted-up-ezekiel-12-6-7"
+      ],
+      "annotatedVerses": [
+        6,
+        7
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 13,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ye-have-not-gone-up-into-the-gaps-or-they-stood-not-in-firmness-ezekiel-13-5-greek"
+      ],
+      "annotatedVerses": [
+        5
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14601,9 +15574,15 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 22,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "conspiracy-of-her-prophets-or-her-princes-ezekiel-22-25"
+      ],
+      "annotatedVerses": [
+        25
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14625,9 +15604,17 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 24,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "at-even-my-wife-died-or-no-wife-named-ezekiel-24-18",
+        "make-no-mourning-for-the-dead-or-mourning-upon-thy-loins-ezekiel-24-17-greek"
+      ],
+      "annotatedVerses": [
+        17,
+        18
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14649,9 +15636,17 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 26,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "shall-set-glory-in-the-land-of-the-living-or-nor-stand-upon-it-ezekiel-26-20",
+        "lay-away-their-robes-or-take-off-the-turbans-ezekiel-26-16-greek"
+      ],
+      "annotatedVerses": [
+        16,
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14767,9 +15762,18 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 33,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "ye-eat-with-the-blood-and-stand-upon-your-sword-or-not-printed-ezekiel-33-25-26",
+        "twelfth-year-tenth-month-or-tenth-year-twelfth-month-ezekiel-33-21"
+      ],
+      "annotatedVerses": [
+        21,
+        25,
+        26
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14793,9 +15797,19 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 35,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "him-that-passeth-out-and-returneth-or-men-and-cattle-ezekiel-35-7",
+        "shed-the-blood-by-the-force-of-the-sword-or-laid-wait-craftily-ezekiel-35-5-greek",
+        "as-thou-didst-rejoice-so-will-i-do-unto-thee-or-not-printed-ezekiel-35-15-greek"
+      ],
+      "annotatedVerses": [
+        5,
+        7,
+        15
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14904,9 +15918,18 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 42,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "five-hundred-reeds-or-five-hundred-cubits-ezekiel-42-16-19"
+      ],
+      "annotatedVerses": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14931,9 +15954,15 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 44,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "they-shall-only-poll-their-heads-or-shall-cover-their-heads-ezekiel-44-20-greek"
+      ],
+      "annotatedVerses": [
+        20
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -14981,9 +16010,20 @@
       "book": "Ezekiel",
       "bookId": 25,
       "chapter": 47,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "from-the-east-country-into-the-desert-or-galilee-and-arabia-ezekiel-47-8",
+        "waters-to-the-ankles-and-knees-or-thighs-ezekiel-47-3-4",
+        "joseph-shall-have-two-portions-or-an-addition-of-a-measuring-line-ezekiel-47-13"
+      ],
+      "annotatedVerses": [
+        3,
+        4,
+        8,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16114,18 +17154,38 @@
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 2,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "i-have-spread-you-abroad-or-i-will-gather-you-zechariah-2-6-greek",
+        "raised-up-out-of-his-holy-habitation-or-from-his-holy-clouds-zechariah-2-13-greek",
+        "as-towns-without-walls-or-fruitfully-inhabited-zechariah-2-4-greek"
+      ],
+      "annotatedVerses": [
+        4,
+        6,
+        13
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 3,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "my-servant-the-branch-or-my-servant-the-east-zechariah-3-8-greek",
+        "i-will-engrave-the-graving-or-i-am-digging-a-trench-zechariah-3-9-greek",
+        "let-them-set-a-fair-mitre-and-i-said-or-no-speaker-zechariah-3-5-greek"
+      ],
+      "annotatedVerses": [
+        5,
+        8,
+        9
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -16216,18 +17276,42 @@
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 8,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "the-inhabitants-of-one-city-go-to-another-or-five-cities-gather-into-one-zechariah-8-21-greek"
+      ],
+      "annotatedVerses": [
+        21
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
       "book": "Zechariah",
       "bookId": 37,
       "chapter": 9,
-      "annotationIds": [],
-      "annotatedVerses": [],
-      "modes": [],
+      "annotationIds": [
+        "he-shall-speak-peace-unto-the-heathen-or-multitude-and-peace-from-the-nations-zechariah-9-10-greek",
+        "prisoners-of-hope-turn-to-the-strong-hold-or-prisoners-of-the-gathering-zechariah-9-12-greek",
+        "the-eyes-of-man-toward-the-lord-or-the-lord-watches-over-men-zechariah-9-1-greek",
+        "the-lord-will-cast-her-out-or-the-lord-will-inherit-them-zechariah-9-4-greek",
+        "a-bastard-shall-dwell-in-ashdod-or-aliens-shall-dwell-in-azotus-zechariah-9-6-greek",
+        "with-whirlwinds-of-the-south-or-in-the-shaking-of-his-threatening-zechariah-9-14-greek",
+        "stones-of-a-crown-lifted-up-as-an-ensign-or-holy-stones-rolling-on-his-land-zechariah-9-16-greek"
+      ],
+      "annotatedVerses": [
+        1,
+        4,
+        6,
+        10,
+        12,
+        14,
+        16
+      ],
+      "modes": [
+        "contradictions"
+      ],
       "researchStatus": "exhaustive-review-not-certified"
     },
     {
@@ -19074,10 +20158,12 @@
       "chapter": 2,
       "annotationIds": [
         "enticing-words-of-mans-wisdom-or-persuasive-words-of-wisdom-1-corinthians-2-4-greek-new-testament",
-        "which-the-holy-ghost-teacheth-or-which-the-spirit-teacheth-1-corinthians-2-13-greek-new-testament"
+        "which-the-holy-ghost-teacheth-or-which-the-spirit-teacheth-1-corinthians-2-13-greek-new-testament",
+        "for-him-that-waiteth-for-him-or-for-them-that-love-him-isaiah-64-4-and-1-corinthians-2-9"
       ],
       "annotatedVerses": [
         4,
+        9,
         13
       ],
       "modes": [

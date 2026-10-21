@@ -1,0 +1,100 @@
+{
+  "sourceBranch": "research-merge-second-pass",
+  "sourceCommit": "f64e37cad5249adb660ab5377acbad2f52e04270",
+  "baseCommit": "b1ebe72ce8d2269a2d416e396ad5db79ddd18d23",
+  "authorization": {
+    "findings": "Kevin approved at 2026-10-21T03:29Z; recorded in merge-log.md at f64e37c",
+    "integration": "Kevin answered Yes at 03:31Z to integrating the approved records into app data, as supplied directly in this task",
+    "stop": "Uncommitted review only; no push, main merge, signing, installation or publication"
+  },
+  "integrated": 238,
+  "decisionCounts": {
+    "accept": 221,
+    "correct": 17
+  },
+  "held": [],
+  "priorReviewDropped": 13,
+  "existingRecordsUnchanged": 1695,
+  "classification": {
+    "T": 220,
+    "untagged": 18,
+    "mode": "contradictions",
+    "status": "Context"
+  },
+  "quotes": {
+    "pass": 238,
+    "fail": 0,
+    "checks": 1477,
+    "sourceRefresh": "Unavailable: shell DNS failed; existing publisher/WLC cache and separately saved publisher evidence used. All quoted-source matches passed. No Unicode normalization of WLC."
+  },
+  "duplicateReview": {
+    "idCollisions": 0,
+    "comparedAgainst": [
+      "data/evidence.json (1695 existing records)",
+      "ENTRIES (6 studies)"
+    ],
+    "overlapCandidates": [
+      {
+        "incoming": "a-good-piece-of-flesh-and-a-flagon-of-wine-or-a-baker-s-loaf-and-a-cake-1-chronicles-16-3-greek",
+        "existing": "david-gift-flagon-of-wine-or-cake-from-the-pan",
+        "title": "David’s gift to each person: “a flagon of wine”, or a cake from the pan?",
+        "summary": "After the ark is brought in, the KJV has David give everyone bread, flesh and “a flagon of wine”. The Greek has no wine: the third gift is a cake from the frying-pan.",
+        "shared": [
+          "2 Samuel 6:19"
+        ],
+        "score": 63
+      },
+      {
+        "incoming": "dogs-lick-thy-blood-or-swine-and-dogs-lick-and-harlots-wash-1-kings-21-19-greek",
+        "existing": "ahab-blood-armour-washed-or-harlots-washed",
+        "title": "At the pool of Samaria: “they washed his armour”, or the harlots washed?",
+        "summary": "After Ahab’s death the KJV says “they washed his armour”. The Hebrew says the harlots washed, and the Greek says the harlots washed themselves in the blood.",
+        "shared": [
+          "1 Kings 22:38"
+        ],
+        "score": 50
+      }
+    ],
+    "disposition": "Both candidates retained: 1 Chronicles 16:3 is distinct from the existing 2 Samuel 6:19 finding; 1 Kings 21:19 concerns the foretelling, while the existing 22:38 finding concerns the later event. No study duplicate found."
+  },
+  "merges": {
+    "witnessLabels": {
+      "applied": 271,
+      "retagged": 0,
+      "pending": 6,
+      "registryAndPendingUnchanged": true
+    },
+    "verseRoles": "No verse-roles.json supplied; supplied inline sides validated; one empty sides field omitted, primary-verse fallback retained."
+  },
+  "checks": {
+    "npm run build:mobile (includes web Worker build and build-time chat/search checks)": "PASS",
+    "npm run check": "PASS",
+    "npm run check:mobile": "PASS",
+    "npm run check:sync": "PASS",
+    "npm run check:release": "PASS",
+    "git diff --check": "PASS",
+    "Existing records and incoming editorial fields preservation": "PASS",
+    "86 imported research files byte-identical to approved branch": "PASS",
+    "Local web/mobile release identity equality": "PASS"
+  },
+  "coverage": {
+    "books": 66,
+    "chapters": 1189,
+    "evidenceRecords": 1933,
+    "studyRecords": 6,
+    "booksWithAnnotations": 66,
+    "chaptersWithAnnotations": 1007,
+    "annotatedVerses": 4537
+  },
+  "localRelease": {
+    "version": "1.1.0",
+    "buildNumber": 262,
+    "sourceHash": "7ef816bb5e80de7fb5a415ae734bf7fe5715b6703ea99d33e6cc295fb0882017"
+  },
+  "releaseLimitations": [
+    "Git fetch denied writing linked-worktree FETCH_HEAD outside writable roots; git ls-remote failed DNS. Cached origin/main equals b1ebe72; current remote main unverified.",
+    "Sites metadata read: public site scripture-lens, latest version 254. Source helper failed to prepare checkout; deployment-source freshness unverified. No Sites source changed.",
+    "No live hosted chat evaluation, signing, signed-asset comparison, device installation or publication performed. Local chat checks use packaged responses."
+  ],
+  "logs": "Execution logs retained in /private/tmp/biblelens-second-pass-{build,check,mobile,sync,release,quotes}.log; temporary and not part of source."
+}
