@@ -125,7 +125,75 @@
    "draftNotes": [
     "1-samuel-1-31-notes.md",
     "1-samuel-1-31-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "1-2-samuel-second-pass-records.json",
+    "notes": "1-2-samuel-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "records": [
+       "feet-of-his-saints-or-giving-a-vow-to-him-that-vows-1-samuel-2-9-greek",
+       "the-judge-shall-judge-him-or-they-shall-pray-for-him-1-samuel-2-25-greek",
+       "i-will-cut-off-thine-arm-or-i-will-destroy-thy-seed-1-samuel-2-31-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "5": {
+      "status": "records-draft",
+      "records": [
+       "ekron-or-askalon-1-samuel-5-10-and-6-16-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "6": {
+      "status": "records-draft",
+      "records": [
+       "he-smote-the-men-of-beth-shemesh-or-the-sons-of-jeconiah-did-not-rejoice-1-samuel-6-19-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "20": {
+      "status": "records-draft",
+      "records": [
+       "jonathan-made-a-covenant-with-the-house-of-david-or-the-name-of-jonathan-be-found-1-samuel-20-16-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "23": {
+      "status": "records-draft",
+      "records": [
+       "will-the-men-of-keilah-deliver-me-up-greek-page-omits-1-samuel-23-12",
+       "about-six-hundred-or-about-four-hundred-1-samuel-23-13-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "24": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question; nothing qualifying (ruled-out items in 1-2-samuel-second-pass-notes.md)"
+     },
+     "26": {
+      "status": "records-draft",
+      "records": [
+       "saul-was-come-in-very-deed-or-saul-was-ready-from-keilah-1-samuel-26-4-greek",
+       "a-deep-sleep-from-the-lord-or-an-astonishment-of-the-lord-1-samuel-26-12-greek",
+       "a-partridge-in-the-mountains-or-a-night-raven-1-samuel-26-20-greek",
+       "seek-a-flea-or-seek-my-soul-1-samuel-26-20-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "29": {
+      "status": "records-draft",
+      "records": [
+       "a-fountain-which-is-in-jezreel-or-aedor-which-is-in-jezreel-1-samuel-29-1-greek",
+       "these-days-or-these-years-or-this-second-year-1-samuel-29-3-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     }
+    }
+   }
   },
   "2 Samuel": {
    "chapters": 24,
@@ -140,7 +208,50 @@
    "draftNotes": [
     "2-samuel-1-24-notes.md",
     "2-samuel-1-24-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "1-2-samuel-second-pass-records.json",
+    "notes": "1-2-samuel-second-pass-notes.md",
+    "chapters": {
+     "7": {
+      "status": "records-draft",
+      "records": [
+       "thine-house-and-thy-kingdom-before-thee-or-his-house-before-me-2-samuel-7-16-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "9": {
+      "status": "records-draft",
+      "records": [
+       "saul-thy-father-or-saul-thy-fathers-father-2-samuel-9-7-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "11": {
+      "status": "records-draft",
+      "records": [
+       "the-messenger-shewed-david-or-david-was-angry-with-joab-2-samuel-11-22-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "12": {
+      "status": "records-draft",
+      "records": [
+       "restore-the-lamb-fourfold-or-sevenfold-2-samuel-12-6-greek",
+       "their-kings-crown-or-the-crown-of-molchom-2-samuel-12-30-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "22": {
+      "status": "records-draft",
+      "records": [
+       "a-bow-of-steel-or-a-bow-of-bronze-2-samuel-22-35-greek"
+      ],
+      "reason": "KJV and Brenton’s Greek read side by side 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     }
+    }
+   }
   },
   "1 Kings": {
    "chapters": 22,
@@ -156,7 +267,55 @@
    "draftNotes": [
     "1-kings-1-22-notes.md",
     "1-kings-1-22-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "1-2-kings-second-pass-records.json",
+    "notes": "1-2-kings-second-pass-notes.md",
+    "chapters": {
+     "1": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "2": {
+      "status": "records-draft",
+      "records": [
+       "solomon-sends-benaiah-or-asks-joab-first-1-kings-2-29-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "3": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "12": {
+      "status": "records-draft",
+      "records": [
+       "jeroboams-mother-a-widow-or-a-harlot-1-kings-11-26-and-12-24-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "17": {
+      "status": "records-draft",
+      "records": [
+       "stretched-himself-or-breathed-on-the-child-1-kings-17-21-greek",
+       "lord-heard-and-child-revived-or-child-cried-out-1-kings-17-22-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "21": {
+      "status": "records-draft",
+      "records": [
+       "palace-of-ahab-or-threshingfloor-of-ahab-1-kings-21-1-greek",
+       "naboth-blasphemed-or-blessed-god-and-the-king-1-kings-21-10-greek",
+       "ahab-rends-his-clothes-at-naboths-death-1-kings-21-16-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     }
+    }
+   }
   },
   "2 Kings": {
    "chapters": 25,
@@ -174,7 +333,63 @@
    "draftNotes": [
     "2-kings-1-25-notes.md",
     "2-kings-1-25-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "1-2-kings-second-pass-records.json",
+    "notes": "1-2-kings-second-pass-notes.md",
+    "chapters": {
+     "4": {
+      "status": "records-draft",
+      "records": [
+       "child-sneezed-seven-times-or-elisha-bowed-seven-times-2-kings-4-35-greek",
+       "full-ears-of-corn-or-cakes-of-figs-2-kings-4-42-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "5": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "6": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "7": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "10": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "11": {
+      "status": "records-draft",
+      "records": [
+       "gate-of-sur-or-gate-of-the-ways-2-kings-11-6-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "19": {
+      "status": "records-draft",
+      "records": [
+       "long-ago-i-did-it-or-i-formed-it-2-kings-19-25-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "21": {
+      "status": "records-draft",
+      "records": [
+       "made-his-son-pass-through-fire-or-his-sons-2-kings-21-6-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     }
+    }
+   }
   },
   "1 Chronicles": {
    "chapters": 29,
@@ -195,7 +410,102 @@
    "draftNotes": [
     "1-chronicles-1-29-notes.md",
     "1-chronicles-1-29-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "1-chronicles-second-pass-records.json",
+    "notes": "1-chronicles-second-pass-notes.md",
+    "chapters": {
+     "4": {
+      "status": "records-draft",
+      "records": [
+       "keep-me-from-evil-or-make-me-know-1-chronicles-4-10-greek",
+       "chelub-the-brother-of-shuah-or-caleb-the-father-of-ascha-1-chronicles-4-11-greek",
+       "entrance-of-gedor-or-gerara-1-chronicles-4-39-greek",
+       "simeon-villages-five-cities-or-four-cities-1-chronicles-4-32-and-joshua-19-7"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "9": {
+      "status": "records-draft",
+      "records": [
+       "the-lord-was-with-him-or-these-were-with-him-1-chronicles-9-20-greek",
+       "azrikam-bocheru-ishmael-or-azrikam-his-firstborn-1-chronicles-9-44-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "13": {
+      "status": "records-draft",
+      "records": [
+       "baalah-kirjathjearim-or-city-of-david-1-chronicles-13-6-greek",
+       "uzza-and-ahio-drave-the-cart-or-oza-and-his-brethren-1-chronicles-13-7-greek",
+       "perezuzza-name-of-ordinary-words-1-chronicles-13-11"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "15": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question; nothing qualifying (ruled-out items in 1-chronicles-second-pass-notes.md)"
+     },
+     "16": {
+      "status": "records-draft",
+      "records": [
+       "flesh-and-wine-in-davids-gifts-or-two-items-1-chronicles-16-3-greek",
+       "law-of-the-lord-which-he-commanded-israel-or-by-the-hand-of-moses-1-chronicles-16-40-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "17": {
+      "status": "records-draft",
+      "records": [
+       "judges-of-israel-or-tribes-of-israel-1-chronicles-17-6-greek",
+       "mine-house-and-my-kingdom-or-thy-house-and-thy-kingdom-1-chronicles-17-14-and-2-samuel-7-16"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "23": {
+      "status": "records-draft",
+      "records": [
+       "sons-of-shimei-three-in-verse-nine-and-four-in-verse-ten-1-chronicles-23",
+       "zetham-and-joel-sons-of-laadan-or-sons-of-jehieli-1-chronicles-23-8-and-26-22"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "24": {
+      "status": "records-draft",
+      "records": [
+       "eleazar-no-sons-or-eleazar-and-ithamar-born-to-mahli-1-chronicles-24-28-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "26": {
+      "status": "records-draft",
+      "records": [
+       "meshelemiah-seven-sons-or-eight-sons-1-chronicles-26-3-greek",
+       "ahijah-over-the-treasures-or-their-brethren-over-the-treasures-1-chronicles-26-20-greek",
+       "zetham-and-joel-sons-of-laadan-or-sons-of-jehieli-1-chronicles-23-8-and-26-22"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "27": {
+      "status": "records-draft",
+      "records": [
+       "elihu-brother-of-david-or-eliab-brother-of-david-1-chronicles-27-18-greek",
+       "benaiah-son-of-jehoiada-or-jehoiada-son-of-benaiah-1-chronicles-27-5-and-27-34"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "29": {
+      "status": "records-draft",
+      "records": [
+       "chief-governor-or-king-anointed-solomon-1-chronicles-29-22-greek",
+       "throne-of-the-lord-or-throne-of-david-his-father-1-chronicles-29-23-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with the Samuel/Joshua/Nehemiah parallels; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     }
+    }
+   }
   },
   "2 Chronicles": {
    "chapters": 36,
@@ -221,7 +531,119 @@
    "draftNotes": [
     "2-chronicles-1-36-notes.md",
     "2-chronicles-1-36-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "2-chronicles-second-pass-records.json",
+    "notes": "2-chronicles-second-pass-notes.md",
+    "chapters": {
+     "1": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question; nothing qualifying (ruled-out items in 2-chronicles-second-pass-notes.md)"
+     },
+     "6": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question; nothing qualifying (ruled-out items in 2-chronicles-second-pass-notes.md)"
+     },
+     "7": {
+      "status": "records-draft",
+      "records": [
+       "devour-the-land-or-devour-the-tree-2-chronicles-7-13-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "10": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question; nothing qualifying (ruled-out items in 2-chronicles-second-pass-notes.md)"
+     },
+     "11": {
+      "status": "records-draft",
+      "records": [
+       "the-levites-left-their-suburbs-or-the-tents-of-their-possession-2-chronicles-11-14-greek",
+       "devils-for-the-high-places-or-goats-and-idols-2-chronicles-11-15",
+       "dealt-wisely-and-dispersed-or-was-exalted-above-his-sons-2-chronicles-11-23-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "12": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question; nothing qualifying (ruled-out items in 2-chronicles-second-pass-notes.md)"
+     },
+     "18": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question; nothing qualifying (ruled-out items in 2-chronicles-second-pass-notes.md)"
+     },
+     "19": {
+      "status": "records-draft",
+      "records": [
+       "for-controversies-when-they-returned-to-jerusalem-or-to-judge-those-dwelling-in-jerusalem-2-chronicles-19-8-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "23": {
+      "status": "records-draft",
+      "records": [
+       "seventh-year-or-eighth-year-jehoiada-strengthened-himself-2-chronicles-23-1-greek",
+       "brought-down-the-king-from-the-house-of-the-lord-or-brought-him-up-into-it-2-chronicles-23-20-greek",
+       "levites-as-porters-and-guards-or-captains-and-the-guard-2-chronicles-23-and-2-kings-11",
+       "levites-as-porters-and-guards-or-captains-and-the-guard-2-chronicles-23-and-2-kings-11"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "25": {
+      "status": "records-draft",
+      "records": [
+       "buried-in-the-city-of-judah-or-the-city-of-david-amaziah-2-chronicles-25-28-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "26": {
+      "status": "records-draft",
+      "records": [
+       "visions-of-god-or-the-fear-of-the-lord-zechariah-2-chronicles-26-5-greek",
+       "uzziah-buried-in-the-field-of-the-burial-or-in-the-city-of-david-2-chronicles-26-23-and-2-kings-15-7"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "27": {
+      "status": "records-draft",
+      "records": [
+       "jotham-twenty-five-years-old-repeated-brentons-greek-prints-no-verse-8-2-chronicles-27-8"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "29": {
+      "status": "records-draft",
+      "records": [
+       "sixteenth-day-or-thirteenth-day-hezekiah-cleansing-2-chronicles-29-17-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "30": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question; nothing qualifying (ruled-out items in 2-chronicles-second-pass-notes.md)"
+     },
+     "31": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question; nothing qualifying (ruled-out items in 2-chronicles-second-pass-notes.md)"
+     },
+     "32": {
+      "status": "records-draft",
+      "records": [
+       "the-brook-through-the-midst-of-the-land-or-through-the-city-2-chronicles-32-4-greek",
+       "the-lord-guided-them-on-every-side-or-gave-them-rest-round-about-2-chronicles-32-22-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 with parallels in Samuel/Kings; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     }
+    }
+   }
   },
   "Ezra": {
    "chapters": 10,
@@ -516,7 +938,377 @@
     "psalms-73-89-q-notes.md",
     "psalms-90-106-notes.md",
     "psalms-90-106-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "psalms-second-pass-records.json",
+    "notes": "psalms-second-pass-notes.md",
+    "chapters": {
+     "1": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "5": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "6": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "10": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "11": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "13": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "15": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "17": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "18": {
+      "status": "records-draft",
+      "records": [
+       "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-and-2-samuel-22-8",
+       "channels-of-waters-or-channels-of-the-sea-psalm-18-15-and-2-samuel-22-16"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "20": {
+      "status": "records-draft",
+      "records": [
+       "save-lord-let-the-king-hear-us-or-lord-save-the-king-greek-psalm-20-9"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "21": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "23": {
+      "status": "records-draft",
+      "records": [
+       "dwell-in-the-house-of-the-lord-for-ever-or-for-length-of-days-psalm-23-6"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "24": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "25": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "26": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "27": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "28": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "30": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "31": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "32": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "33": {
+      "status": "records-draft",
+      "records": [
+       "he-gathereth-the-waters-as-an-heap-or-as-in-a-bottle-greek-psalm-33-7"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "34": {
+      "status": "records-draft",
+      "records": [
+       "the-young-lions-do-lack-or-the-rich-have-become-poor-greek-psalm-34-10"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "35": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "36": {
+      "status": "records-draft",
+      "records": [
+       "the-transgression-of-the-wicked-saith-within-my-heart-or-within-himself-greek-psalm-36-1"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "37": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "38": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "39": {
+      "status": "records-draft",
+      "records": [
+       "thou-makest-his-beauty-to-consume-away-like-a-moth-or-like-a-spider-greek-psalm-39-11"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "41": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "43": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "44": {
+      "status": "records-draft",
+      "records": [
+       "neither-have-our-steps-declined-from-thy-way-or-thou-hast-turned-aside-our-paths-greek-psalm-44-18"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "46": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "48": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "49": {
+      "status": "records-draft",
+      "records": [
+       "their-inward-thought-is-that-their-houses-shall-continue-or-their-graves-are-their-houses-greek-psalm-49-11"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "52": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "53": {
+      "status": "records-draft",
+      "records": [
+       "there-were-they-in-great-fear-psalm-14-5-6-and-psalm-53-5"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "54": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "57": {
+      "status": "records-draft",
+      "records": [
+       "thy-mercy-is-great-above-the-heavens-or-unto-the-heavens-psalm-108-4-and-psalm-57-10"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "59": {
+      "status": "records-draft",
+      "records": [
+       "slay-them-not-lest-my-people-forget-or-lest-they-forget-thy-law-greek-psalm-59-11"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "61": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "63": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "65": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "66": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "67": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "70": {
+      "status": "records-draft",
+      "records": [
+       "let-them-be-turned-back-or-let-them-be-desolate-psalm-70-3-and-psalm-40-15"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "75": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "81": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "83": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "85": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "86": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "93": {
+      "status": "records-draft",
+      "records": [
+       "dwell-in-the-house-of-the-lord-for-ever-or-for-length-of-days-psalm-23-6"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "97": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "98": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "99": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "100": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "101": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "103": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "108": {
+      "status": "records-draft",
+      "records": [
+       "over-philistia-will-i-triumph-or-philistia-triumph-thou-because-of-me-psalm-108-9-and-psalm-60-8",
+       "thy-mercy-is-great-above-the-heavens-or-unto-the-heavens-psalm-108-4-and-psalm-57-10"
+      ],
+      "reason": "KJV read in full against Brenton's English 2026-10-20; Hebrew and Greek fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "111": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "112": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "113": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "114": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "116": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "117": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "121": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "122": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "123": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "124": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "125": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "128": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "131": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "132": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "133": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "134": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "135": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "136": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "140": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "142": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "143": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "150": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's English; Hebrew and Greek fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     }
+    }
+   }
   },
   "Proverbs": {
    "chapters": 31,
@@ -543,7 +1335,134 @@
    "draftNotes": [
     "proverbs-1-31-notes.md",
     "proverbs-1-31-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "proverbs-second-pass-records.json",
+    "notes": "proverbs-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "records": [
+       "he-layeth-up-sound-wisdom-for-the-righteous-or-he-lays-up-salvation-for-the-upright-greek-proverbs-2-7",
+       "the-dead-or-the-earthborn-and-the-giants-proverbs-2-18-9-18-and-21-16"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "5": {
+      "status": "records-draft",
+      "records": [
+       "the-loving-hind-and-pleasant-roe-or-the-hind-of-friendship-and-the-colt-of-thy-graces-greek-proverbs-5-19"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "7": {
+      "status": "records-draft",
+      "records": [
+       "as-a-fool-to-the-correction-of-the-stocks-or-as-a-dog-to-bonds-greek-proverbs-7-22",
+       "keep-my-words-or-son-honour-the-lord-and-thou-shalt-be-strong-greek-plus-proverbs-7-1"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "9": {
+      "status": "records-draft",
+      "records": [
+       "the-dead-or-the-earthborn-and-the-giants-proverbs-2-18-9-18-and-21-16"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "10": {
+      "status": "records-draft",
+      "records": [
+       "a-prating-fool-shall-fall-or-he-that-reproves-openly-makes-peace-greek-proverbs-10-10"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "12": {
+      "status": "records-draft",
+      "records": [
+       "he-that-is-despised-and-hath-a-servant-or-a-man-in-dishonour-serving-himself-greek-proverbs-12-9",
+       "in-the-pathway-thereof-there-is-no-death-or-the-ways-of-the-revengeful-are-to-death-greek-proverbs-12-28"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "13": {
+      "status": "records-draft",
+      "records": [
+       "a-wicked-messenger-falleth-into-mischief-or-a-bold-king-will-fall-into-evils-greek-proverbs-13-17",
+       "righteousness-keepeth-him-that-is-upright-in-the-way-brentons-greek-prints-no-verse-13-6"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "14": {
+      "status": "records-draft",
+      "records": [
+       "the-righteous-hath-hope-in-his-death-or-he-that-trusts-in-his-own-holiness-is-righteous-greek-proverbs-14-32"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "15": {
+      "status": "records-draft",
+      "records": [
+       "the-ear-that-heareth-the-reproof-of-life-brentons-greek-prints-no-verse-15-31"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "16": {
+      "status": "records-draft",
+      "records": [
+       "in-the-light-of-the-kings-countenance-is-life-or-in-the-light-of-life-is-the-kings-son-greek-proverbs-16-15"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "17": {
+      "status": "records-draft",
+      "records": [
+       "a-wise-servant-shall-have-rule-over-a-son-that-causeth-shame-or-over-foolish-masters-greek-proverbs-17-2"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "19": {
+      "status": "records-draft",
+      "records": [
+       "the-contentions-of-a-wife-are-a-continual-dropping-or-prayers-from-a-courtesans-hire-are-not-pure-greek-proverbs-19-13"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "20": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference found, or the difference is a range-of-senses/paraphrase (see notes)"
+     },
+     "21": {
+      "status": "records-draft",
+      "records": [
+       "the-dead-or-the-earthborn-and-the-giants-proverbs-2-18-9-18-and-21-16",
+       "the-plowing-of-the-wicked-is-sin-or-the-lamp-of-the-ungodly-is-sin-greek-proverbs-21-4",
+       "the-wicked-shall-be-a-ransom-for-the-righteous-or-the-lawless-is-the-offscouring-of-the-righteous-greek-proverbs-21-18"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "24": {
+      "status": "records-draft",
+      "records": [
+       "there-shall-be-no-reward-to-the-evil-man-or-there-shall-be-no-offspring-to-the-wicked-greek-proverbs-24-20"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "25": {
+      "status": "records-draft",
+      "records": [
+       "the-men-of-hezekiah-copied-out-or-the-friends-of-hezekiah-wrote-out-greek-proverbs-25-1",
+       "the-honour-of-kings-is-to-search-out-a-matter-or-the-glory-of-a-king-honours-matters-greek-proverbs-25-2"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (Greek verse numbering is out of step with the KJV in chapters 15, 16, 19, 20, 21 and 24; compared by content); Hebrew fetched by script and compared only at the verses that raised a question"
+     },
+     "27": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference found, or the difference is a range-of-senses/paraphrase (see notes)"
+     }
+    }
+   }
   },
   "Ecclesiastes": {
    "chapters": 12,
@@ -614,7 +1533,197 @@
     "isaiah-28-39-q-notes.md",
     "isaiah-40-66-notes.md",
     "isaiah-40-66-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "isaiah-second-pass-records.json",
+    "notes": "isaiah-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "records": [
+       "all-nations-shall-flow-or-people-shall-flow-isaiah-2-2-and-micah-4-1"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "5": {
+      "status": "records-draft",
+      "records": [
+       "ten-acres-of-vineyard-one-bath-and-a-homer-an-ephah-or-six-artabas-three-measures-greek-isaiah-5-10"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "11": {
+      "status": "records-draft",
+      "records": [
+       "from-assyria-egypt-pathros-cush-elam-shinar-hamath-or-the-greek-list-without-pathros-and-hamath-isaiah-11-11"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "12": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "14": {
+      "status": "records-draft",
+      "records": [
+       "all-the-chief-ones-of-the-earth-or-all-the-giants-who-ruled-the-earth-greek-isaiah-14-9"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "15": {
+      "status": "records-draft",
+      "records": [
+       "the-brook-of-the-willows-and-lions-upon-moab-or-arabs-upon-the-valley-greek-isaiah-15-7-and-15-9"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "16": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "17": {
+      "status": "records-draft",
+      "records": [
+       "a-forsaken-bough-and-an-uppermost-branch-or-as-the-amorites-and-hivites-forsook-greek-isaiah-17-9"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "20": {
+      "status": "records-draft",
+      "records": [
+       "sargon-the-king-of-assyria-or-arna-the-king-of-the-assyrians-greek-isaiah-20-1"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "22": {
+      "status": "records-draft",
+      "records": [
+       "strengthen-him-with-thy-girdle-or-i-will-give-him-thy-crown-greek-isaiah-22-21"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "24": {
+      "status": "records-draft",
+      "records": [
+       "glory-to-the-righteous-but-i-said-my-leanness-woe-unto-me-or-hope-to-the-godly-woe-to-the-faithless-greek-isaiah-24-16",
+       "then-the-moon-shall-be-confounded-and-the-sun-ashamed-or-the-brick-shall-melt-and-the-wall-fall-greek-isaiah-24-23"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "27": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "33": {
+      "status": "records-draft",
+      "records": [
+       "bashan-and-carmel-shake-off-their-fruits-or-galilee-and-carmel-shall-be-manifest-greek-isaiah-33-9",
+       "where-is-he-that-counted-the-towers-or-where-is-he-that-counts-the-nurtured-greek-isaiah-33-18"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "35": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "38": {
+      "status": "records-draft",
+      "records": [
+       "i-shall-not-see-the-lord-even-the-lord-or-i-shall-not-see-the-salvation-of-god-greek-isaiah-38-11"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "39": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "43": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "44": {
+      "status": "records-draft",
+      "records": [
+       "that-saith-of-cyrus-he-is-my-shepherd-or-who-says-to-cyrus-to-be-wise-greek-isaiah-44-28"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "46": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "47": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "50": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "51": {
+      "status": "records-draft",
+      "records": [
+       "cut-rahab-and-wounded-the-dragon-or-awake-as-in-the-beginning-of-the-day-greek-isaiah-51-9"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "52": {
+      "status": "records-draft",
+      "records": [
+       "so-shall-he-sprinkle-many-nations-or-so-shall-many-nations-wonder-at-him-greek-isaiah-52-15"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "55": {
+      "status": "records-draft",
+      "records": [
+       "wine-and-milk-without-money-or-wine-and-fat-without-money-greek-isaiah-55-1"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "58": {
+      "status": "reviewed-none",
+      "reason": "KJV read in full 2026-10-20 beside Brenton's Greek; Hebrew fetched but compared only at verses that raised a question; no qualifying difference or conflict found, or the difference is a range-of-senses/already covered (see notes)"
+     },
+     "60": {
+      "status": "records-draft",
+      "records": [
+       "the-house-of-my-glory-or-the-house-of-my-prayer-greek-isaiah-60-7"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "62": {
+      "status": "records-draft",
+      "records": [
+       "thou-shalt-be-called-hephzibah-and-thy-land-beulah-or-my-desire-and-inhabited-hebrew-and-greek-isaiah-62-4"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "64": {
+      "status": "records-draft",
+      "records": [
+       "for-him-that-waiteth-for-him-or-for-them-that-love-him-isaiah-64-4-and-1-corinthians-2-9"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "65": {
+      "status": "records-draft",
+      "records": [
+       "prepare-a-table-for-that-troop-and-furnish-the-drink-offering-unto-that-number-or-gad-and-meni-hebrew-and-greek-isaiah-65-11"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     },
+     "66": {
+      "status": "records-draft",
+      "records": [
+       "he-that-killeth-an-ox-is-as-if-he-slew-a-man-or-he-that-sacrifices-a-calf-is-as-one-who-kills-a-dog-greek-isaiah-66-3",
+       "tarshish-pul-and-lud-that-draw-the-bow-or-tharsis-phoud-loud-and-mosoch-greek-isaiah-66-19"
+      ],
+      "reason": "KJV and Brenton's Greek read side by side 2026-10-20 (chapters 52, 62, 65: the named verse only); Hebrew fetched by script and compared at the verse named in the record, not read in full"
+     }
+    }
+   }
   },
   "Jeremiah": {
    "chapters": 52,
@@ -650,7 +1759,181 @@
     "jeremiah-1-29-q-notes.md",
     "jeremiah-30-52-notes.md",
     "jeremiah-30-52-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "jeremiah-second-pass-records.json",
+    "notes": "jeremiah-second-pass-notes.md",
+    "chapters": {
+     "4": {
+      "status": "records-draft",
+      "records": [
+       "without-form-and-void-or-nothing-jeremiah-4-23-greek",
+       "the-fruitful-place-or-carmel-jeremiah-4-26-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "5": {
+      "status": "records-draft",
+      "records": [
+       "they-are-not-the-lords-or-they-are-the-lords-jeremiah-5-10-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "8": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "Read 2026-10-20 against Brenton’s Greek; no verse qualified as a plain word or name difference. Brenton prints no 8:11-12 (the Jeremiah 6:14-15 doublet); held, not drafted, because the same words are already in 6:14-15."
+     },
+     "9": {
+      "status": "records-draft",
+      "records": [
+       "baalim-or-the-idols-jeremiah-9-14-greek",
+       "egypt-and-judah-and-edom-or-egypt-and-idumea-and-edom-jeremiah-9-25-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "11": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "Read 2026-10-20; Brenton prints no 11:7 and shortens 11:8, held, not drafted (would be a minor omission); no other qualifying difference."
+     },
+     "13": {
+      "status": "records-draft",
+      "records": [
+       "the-king-and-to-the-queen-or-the-king-and-those-in-power-jeremiah-13-18-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "14": {
+      "status": "records-draft",
+      "records": [
+       "as-a-man-astonied-or-as-a-man-asleep-jeremiah-14-9-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "15": {
+      "status": "records-draft",
+      "records": [
+       "i-am-weary-with-repenting-or-i-will-no-longer-spare-them-jeremiah-15-6-greek",
+       "shall-iron-break-the-northern-iron-or-will-iron-be-known-jeremiah-15-12-greek",
+       "thy-words-were-found-and-i-did-eat-them-or-consume-them-jeremiah-15-16-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "16": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "Read 2026-10-20; differences were in phrasing and order only."
+     },
+     "17": {
+      "status": "records-draft",
+      "records": [
+       "the-heart-is-deceitful-and-desperately-wicked-or-the-heart-is-deep-jeremiah-17-9-greek",
+       "meat-offerings-or-manna-jeremiah-17-26-greek",
+       "the-sin-of-judah-is-written-with-a-pen-of-iron-brentons-greek-prints-no-verses-jeremiah-17-1-4"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "21": {
+      "status": "records-draft",
+      "records": [
+       "rock-of-the-plain-or-the-valley-of-sor-jeremiah-21-13-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "24": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "Read 2026-10-20; differences in wording of a kind that would be different English synonyms; nothing qualified."
+     },
+     "27": {
+      "status": "records-draft",
+      "records": [
+       "in-the-beginning-of-the-reign-of-jehoiakim-or-no-opening-verse-jeremiah-27-1-greek",
+       "then-will-i-bring-them-up-and-restore-them-or-they-shall-go-into-babylon-jeremiah-27-22-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "30": {
+      "status": "records-draft",
+      "records": [
+       "fear-thou-not-o-my-servant-jacob-brentons-greek-prints-no-verses-jeremiah-30-10-11"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "33": {
+      "status": "records-draft",
+      "records": [
+       "the-branch-of-righteousness-brentons-greek-prints-no-verses-jeremiah-33-14-26"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "35": {
+      "status": "records-draft",
+      "records": [
+       "the-army-of-the-syrians-or-the-host-of-the-assyrians-jeremiah-35-11-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "37": {
+      "status": "records-draft",
+      "records": [
+       "coniah-the-son-of-jehoiakim-or-instead-of-joakim-jeremiah-37-1-greek",
+       "to-separate-himself-thence-or-to-buy-thence-a-property-jeremiah-37-12-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "38": {
+      "status": "records-draft",
+      "records": [
+       "these-men-have-done-evil-or-thou-hast-done-evil-jeremiah-38-9-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "39": {
+      "status": "records-draft",
+      "records": [
+       "in-the-ninth-year-in-the-tenth-month-or-in-the-ninth-month-jeremiah-39-1-greek",
+       "the-king-fled-by-night-brentons-greek-prints-no-verses-jeremiah-39-4-13"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "42": {
+      "status": "records-draft",
+      "records": [
+       "i-repent-me-of-the-evil-or-i-have-rested-from-the-evils-jeremiah-42-10-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "44": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "Read 2026-10-20 (Brenton page 51, verses 1-30); nothing qualified beyond differences in wording; name forms such as the Pharaoh’s name are transliterations."
+     },
+     "45": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "Read 2026-10-20 (Brenton page 51, verses 31-35, Baruch); the Greek matches the sense of the KJV; nothing qualified."
+     },
+     "47": {
+      "status": "records-draft",
+      "records": [
+       "remnant-of-the-country-of-caphtor-or-the-remnant-of-the-islands-jeremiah-47-4-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "49": {
+      "status": "records-draft",
+      "records": [
+       "their-king-inherit-gad-or-melchol-inherited-galaad-jeremiah-49-1-greek",
+       "hazor-a-dwelling-for-dragons-or-the-court-a-haunt-of-ostriches-jeremiah-49-33-greek",
+       "afterward-i-will-bring-again-the-captivity-of-ammon-brentons-greek-prints-no-matching-verse-jeremiah-49-6"
+      ],
+      "reason": "KJV and Brenton’s English read side by side 2026-10-20 (Brenton’s Greek orders chapters 25-52 differently, so compared by content); Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     }
+    }
+   }
   },
   "Lamentations": {
    "chapters": 5,
@@ -686,7 +1969,116 @@
     "ezekiel-1-24-q-notes.md",
     "ezekiel-25-48-notes.md",
     "ezekiel-25-48-q-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "ezekiel-second-pass-records.json",
+    "notes": "ezekiel-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "3": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "6": {
+      "status": "records-draft",
+      "records": [
+       "dead-carcases-before-their-idols-or-not-printed-ezekiel-6-5-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "7": {
+      "status": "records-draft",
+      "records": [
+       "escapers-like-doves-mourning-or-all-the-rest-slain-ezekiel-7-16-greek",
+       "make-a-chain-bloody-crimes-or-they-shall-make-confusion-peoples-ezekiel-7-23-greek",
+       "seller-shall-not-return-or-buyer-shall-not-return-ezekiel-7-13-greek",
+       "silver-and-gold-not-able-to-deliver-or-not-printed-ezekiel-7-19-greek",
+       "the-king-shall-mourn-or-the-ruler-ezekiel-7-27-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "12": {
+      "status": "records-draft",
+      "records": [
+       "bare-it-upon-my-shoulder-or-was-taken-up-on-shoulders-ezekiel-12-7-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "13": {
+      "status": "records-draft",
+      "records": [
+       "ye-have-not-gone-up-into-the-gaps-or-they-stood-not-in-firmness-ezekiel-13-5-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "15": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "22": {
+      "status": "records-draft",
+      "records": [
+       "conspiracy-of-her-prophets-or-her-princes-ezekiel-22-25-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "24": {
+      "status": "records-draft",
+      "records": [
+       "make-no-mourning-for-the-dead-or-mourning-upon-thy-loins-ezekiel-24-17-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "26": {
+      "status": "records-draft",
+      "records": [
+       "lay-away-their-robes-or-take-off-the-turbans-ezekiel-26-16-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "33": {
+      "status": "records-draft",
+      "records": [
+       "ye-eat-with-the-blood-and-shall-ye-possess-the-land-or-not-printed-ezekiel-33-25-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "35": {
+      "status": "records-draft",
+      "records": [
+       "as-thou-didst-rejoice-so-will-i-do-unto-thee-or-not-printed-ezekiel-35-15-greek",
+       "shed-the-blood-by-the-force-of-the-sword-or-laid-wait-craftily-ezekiel-35-5-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "42": {
+      "status": "reviewed-none",
+      "records": [],
+      "reason": "KJV read against Brenton’s English 2026-10-20; differences found are synonyms, transliterated names or clause-level wording; nothing qualifying (not a full Hebrew read)"
+     },
+     "44": {
+      "status": "records-draft",
+      "records": [
+       "they-shall-only-poll-their-heads-or-shall-cover-their-heads-ezekiel-44-20-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     },
+     "47": {
+      "status": "records-draft",
+      "records": [
+       "the-east-country-and-the-desert-or-galilee-and-arabia-ezekiel-47-8-greek"
+      ],
+      "reason": "KJV and Brenton’s English read side by side with an automated screen for low overlap and length mismatch 2026-10-20; Hebrew (WLC) and Greek fetched by script and compared at the verses that raised a question"
+     }
+    }
+   }
   },
   "Daniel": {
    "chapters": 12,
@@ -803,7 +2195,51 @@
    ],
    "draftNotes": [
     "nahum-to-malachi-notes.md"
-   ]
+   ],
+   "secondPass": {
+    "date": "2026-10-20",
+    "file": "zechariah-second-pass-records.json",
+    "notes": "zechariah-second-pass-notes.md",
+    "chapters": {
+     "2": {
+      "status": "records-draft",
+      "records": [
+       "as-towns-without-walls-or-fruitfully-inhabited-zechariah-2-4-greek",
+       "spread-you-abroad-as-the-four-winds-or-i-will-gather-you-from-the-four-winds-zechariah-2-6-greek",
+       "raised-up-out-of-his-holy-habitation-or-roused-from-holy-clouds-zechariah-2-13-greek"
+      ],
+      "reason": "KJV read against Brenton’s English and Greek, Hebrew (WLC) fetched by script and compared at flagged verses 2026-10-20"
+     },
+     "3": {
+      "status": "records-draft",
+      "records": [
+       "my-servant-the-branch-or-my-servant-the-rising-zechariah-3-8-greek",
+       "i-will-engrave-the-graving-or-i-dig-a-pit-zechariah-3-9-greek"
+      ],
+      "reason": "KJV read against Brenton’s English and Greek, Hebrew (WLC) fetched by script and compared at flagged verses 2026-10-20"
+     },
+     "8": {
+      "status": "records-draft",
+      "records": [
+       "inhabitants-of-one-city-go-to-another-or-inhabitants-of-five-cities-gather-into-one-zechariah-8-21-greek"
+      ],
+      "reason": "KJV read against Brenton’s English and Greek, Hebrew (WLC) fetched by script and compared at flagged verses 2026-10-20"
+     },
+     "9": {
+      "status": "records-draft",
+      "records": [
+       "the-eyes-of-man-toward-the-lord-or-the-lord-watches-over-men-zechariah-9-1-greek",
+       "the-lord-will-cast-her-out-or-the-lord-will-inherit-them-zechariah-9-4-greek",
+       "a-bastard-shall-dwell-in-ashdod-or-aliens-shall-dwell-in-azotus-zechariah-9-6-greek",
+       "he-shall-speak-peace-unto-the-heathen-or-a-multitude-and-peace-from-the-nations-zechariah-9-10-greek",
+       "prisoners-of-hope-or-prisoners-of-the-gathering-zechariah-9-12-greek",
+       "with-whirlwinds-of-the-south-or-in-the-shaking-of-his-threatening-zechariah-9-14-greek",
+       "stones-of-a-crown-lifted-up-as-an-ensign-or-holy-stones-rolling-on-his-land-zechariah-9-16-greek"
+      ],
+      "reason": "KJV read against Brenton’s English and Greek, Hebrew (WLC) fetched by script and compared at flagged verses 2026-10-20"
+     }
+    }
+   }
   },
   "Malachi": {
    "chapters": 4,

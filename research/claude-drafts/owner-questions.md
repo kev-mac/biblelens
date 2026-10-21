@@ -117,3 +117,6 @@ Owner’s answer: no. The record stays held. Sent to Codex by the owner.
 
 Question: does a place name count for H when the Hebrew name means something different from the KJV’s name?
 Owner’s answer: yes, when the Hebrew name is made of ordinary words the KJV’s name does not carry and the record says the place may be the same. Sent to Codex by the owner.
+
+## 2026-10-20 (remediation, Psalms second pass)
+- The psalm headings (Psalm 34 Abimelech, 52 Ahimelech, 54 Ziphites, 56/57/59/142 and others) are not in the packaged KJV. Should they be added so title-against-narrative records (e.g. Psalm 34 against 1 Samuel 21:10) can be quoted? Details in `psalms-second-pass-notes.md`.

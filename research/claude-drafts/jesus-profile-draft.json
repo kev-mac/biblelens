@@ -1,0 +1,128 @@
+[
+  {
+    "id": "jesus",
+    "name": "Jesus",
+    "sex": "male",
+    "era": "Gospels",
+    "aliases": [
+      "Jesus of Nazareth",
+      "Jesus Christ"
+    ],
+    "summary": "Jesus is the central figure of the four Gospels. This profile reports what each Gospel says, names the Gospel for every claim, and does not weigh the claims or harmonize differences between the accounts. Matthew (1:18; 2:1) and Luke (2:4-7) report that he was born in Bethlehem to Mary, who was betrothed to Joseph; Matthew (2:23) and Luke (2:39) say he was brought up in Nazareth, and Luke (2:41-46) tells of his being found in the temple at twelve. Matthew (1:6) and Luke (3:31) trace his descent from David through different sons of David, Solomon and Nathan. Luke (3:23) says he was about thirty when he began his work. Mark (6:3) and Matthew (13:55-56) report people of his home town calling him the carpenter or the carpenter's son, naming his mother Mary and his brothers James, Joses, Simon and Judas, and mentioning his sisters. Mark (1:9-11), Matthew (3:16-17) and Luke (3:21-22) report that John baptized him and that a voice from heaven spoke; John (1:32-34) reports John the Baptist's testimony that he saw the Spirit descend and rest on him. Matthew (4:1-11) and Luke (4:1-13) report a period of temptation in the wilderness, and Mark (1:12-13) a briefer one. Mark (1:14-15) says he came into Galilee preaching that the kingdom of God was at hand; Matthew (4:23) says he went about Galilee teaching, preaching and healing; Mark (3:14) says he appointed twelve; Mark (4:2) says he taught many things by parables. Matthew (5:3) and Luke (6:20) each report a blessing on the poor, in different words. John reports a sequence of signs beginning at Cana (2:11) and the raising of Lazarus (11:43-44), and quotes him saying 'I am the bread of life' (6:35), 'the light of the world' (8:12), 'the good shepherd' (10:11) and 'the way, the truth, and the life' (14:6). The Gospels report mixed responses: scribes and Pharisees question his eating with publicans and sinners (Mark 2:16), and he reports that he is called 'a friend of publicans and sinners' (Matthew 11:19; Luke 7:34). Mark (3:5) reports him looking on his opponents 'with anger, being grieved'; Mark (6:34) reports him moved with compassion; John (11:35) says he wept. The Gospels record different titles for him: Peter says 'Thou art the Christ' (Mark 8:29), 'the Christ of God' (Luke 9:20) or 'the Christ, the Son of God' (Matthew 16:16); an unclean spirit calls him 'the Holy One of God' (Mark 1:24); he speaks of himself as 'the Son of man' (Matthew 8:20); and John (20:31) states that his book is written so that readers may believe he is the Christ, the Son of God. On the final days Matthew (21:9) and John (12:13) report a crowd welcoming him into Jerusalem. Matthew (21:12) places a clearing of the temple in that last week, while John (2:15) places one near the start of his work; the Gospels do not say whether these are one event or two. At the last supper Luke (22:19) and Mark (14:22) report him breaking bread and speaking of his body, and John (13:5) reports him washing the disciples' feet. Matthew (26:39) reports his prayer in Gethsemane and (26:47) his arrest after Judas arrived with a crowd. Before the high priest, Matthew (26:64) has him answer 'Thou hast said' and Mark (14:62) has him answer 'I am'. Before Pilate, Mark (15:2) and Luke (23:3) have him answer 'Thou sayest it', and John (18:36-37) reports him saying his kingdom is not of this world. Mark (15:25) says he was crucified at the third hour, while John (19:14) places the judgment before Pilate at about the sixth hour; Mark (15:34), Luke (23:46) and John (19:30) report different last words. Matthew (27:60) and John (19:40) report his burial in a tomb. All four Gospels report an empty tomb, but they differ on who was there: Matthew (28:2, 5) an angel, Mark (16:5) a young man, Luke (24:4) two men and John (20:12) two angels. Matthew (28:9) and John (20:16) report him appearing to women, Luke (24:36) and John (20:19) to the disciples, and Matthew (28:19) reports a commission to teach all nations. Luke (24:51) reports that he was parted from the disciples and carried up into heaven.",
+    "lineage": {
+      "parents": [
+        "Mary",
+        "Joseph (husband of Mary)"
+      ],
+      "siblings": [
+        "James",
+        "Joses",
+        "Simon",
+        "Judas"
+      ]
+    },
+    "geography": {
+      "origin": "Born at Bethlehem (Matthew 2:1; Luke 2:4-7); brought up at Nazareth in Galilee (Luke 2:39; Mark 1:9)",
+      "residence": [
+        "Nazareth (Luke 4:16)",
+        "Capernaum (Matthew 4:13)",
+        "Jerusalem (Matthew 21:10-12; John 12:12)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ],
+      "key_verses": [
+        "Matthew 1:18",
+        "Luke 2:7",
+        "Luke 3:23",
+        "Mark 1:9",
+        "Mark 1:14",
+        "Mark 1:15",
+        "Mark 3:14",
+        "Matthew 16:16",
+        "Mark 8:29",
+        "John 11:35",
+        "John 14:6",
+        "Matthew 26:39",
+        "Mark 15:34",
+        "Luke 23:46",
+        "John 19:30",
+        "Matthew 28:19",
+        "Luke 24:51"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "matthew-the-birth-of-jesus-and-the-magi",
+          "title": "The Birth of Jesus and the Magi",
+          "passage": "Matthew 1:18 - 2:12",
+          "route": "#stories/matthew/the-birth-of-jesus-and-the-magi"
+        },
+        {
+          "story_id": "luke-presentation-and-the-boy-jesus-in-the-temple",
+          "title": "Presentation and the Boy Jesus in the Temple",
+          "passage": "Luke 2:21 - 2:52",
+          "route": "#stories/luke/presentation-and-the-boy-jesus-in-the-temple"
+        },
+        {
+          "story_id": "matthew-the-baptism-and-temptation-of-jesus",
+          "title": "The Baptism and Temptation of Jesus",
+          "passage": "Matthew 3:1 - 4:11",
+          "route": "#stories/matthew/the-baptism-and-temptation-of-jesus"
+        },
+        {
+          "story_id": "matthew-calling-the-first-disciples",
+          "title": "Calling the First Disciples",
+          "passage": "Matthew 4:12 - 4:25",
+          "route": "#stories/matthew/calling-the-first-disciples"
+        },
+        {
+          "story_id": "john-the-first-disciples-and-the-wedding-at-cana",
+          "title": "The First Disciples and the Wedding at Cana",
+          "passage": "John 1:35 - 2:12",
+          "route": "#stories/john/the-first-disciples-and-the-wedding-at-cana"
+        },
+        {
+          "story_id": "john-the-raising-of-lazarus",
+          "title": "The Raising of Lazarus",
+          "passage": "John 11:1 - 11:57",
+          "route": "#stories/john/the-raising-of-lazarus"
+        },
+        {
+          "story_id": "matthew-the-triumphal-entry-and-temple-cleansing",
+          "title": "The Triumphal Entry and Temple Cleansing",
+          "passage": "Matthew 21:1 - 21:46",
+          "route": "#stories/matthew/the-triumphal-entry-and-temple-cleansing"
+        },
+        {
+          "story_id": "matthew-the-last-supper-and-gethsemane",
+          "title": "The Last Supper and Gethsemane",
+          "passage": "Matthew 26:1 - 26:56",
+          "route": "#stories/matthew/the-last-supper-and-gethsemane"
+        },
+        {
+          "story_id": "matthew-trial-crucifixion-and-burial",
+          "title": "Trial, Crucifixion and Burial",
+          "passage": "Matthew 26:57 - 27:66",
+          "route": "#stories/matthew/trial-crucifixion-and-burial"
+        },
+        {
+          "story_id": "matthew-the-resurrection-and-the-great-commission",
+          "title": "The Resurrection and the Great Commission",
+          "passage": "Matthew 28:1 - 28:20",
+          "route": "#stories/matthew/the-resurrection-and-the-great-commission"
+        },
+        {
+          "story_id": "luke-the-ascension",
+          "title": "The Ascension",
+          "passage": "Luke 24:36 - 24:53",
+          "route": "#stories/luke/the-ascension"
+        }
+      ]
+    }
+  }
+]
