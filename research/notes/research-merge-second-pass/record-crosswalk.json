@@ -5,7 +5,8 @@
       "file": "psalms-second-pass-records.json",
       "id": "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8"
     },
-    "mergedId": "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8"
   },
   {
     "source": {
@@ -13,7 +14,8 @@
       "file": "psalms-second-pass-records.json",
       "id": "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-and-2-samuel-22-8"
     },
-    "mergedId": "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8"
   },
   {
     "source": {
@@ -37,7 +39,8 @@
       "file": "psalms-second-pass-records.json",
       "id": "he-did-fly-or-he-was-seen-upon-the-wings-of-the-wind-psalm-18-10-2-samuel-22-11"
     },
-    "mergedId": "he-did-fly-or-he-was-seen-upon-the-wings-of-the-wind-psalm-18-10-2-samuel-22-11"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "he-did-fly-or-he-was-seen-upon-the-wings-of-the-wind-psalm-18-10-2-samuel-22-11"
   },
   {
     "source": {
@@ -157,7 +160,8 @@
       "file": "psalms-second-pass-records.json",
       "id": "channels-of-waters-or-channels-of-the-sea-psalm-18-15-and-2-samuel-22-16"
     },
-    "mergedId": "channels-of-waters-or-channels-of-the-sea-psalm-18-15-and-2-samuel-22-16"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "channels-of-waters-or-channels-of-the-sea-psalm-18-15-and-2-samuel-22-16"
   },
   {
     "source": {
@@ -165,7 +169,8 @@
       "file": "psalms-second-pass-records.json",
       "id": "there-were-they-in-great-fear-psalm-14-5-6-and-psalm-53-5"
     },
-    "mergedId": "there-were-they-in-great-fear-psalm-14-5-6-and-psalm-53-5"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "there-were-they-in-great-fear-psalm-14-5-6-and-psalm-53-5"
   },
   {
     "source": {
@@ -173,7 +178,8 @@
       "file": "psalms-second-pass-records.json",
       "id": "let-them-be-turned-back-or-let-them-be-desolate-psalm-70-3-and-psalm-40-15"
     },
-    "mergedId": "let-them-be-turned-back-or-let-them-be-desolate-psalm-70-3-and-psalm-40-15"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "let-them-be-turned-back-or-let-them-be-desolate-psalm-70-3-and-psalm-40-15"
   },
   {
     "source": {
@@ -181,7 +187,8 @@
       "file": "psalms-second-pass-records.json",
       "id": "thy-mercy-is-great-above-the-heavens-or-unto-the-heavens-psalm-108-4-and-psalm-57-10"
     },
-    "mergedId": "thy-mercy-is-great-above-the-heavens-or-unto-the-heavens-psalm-108-4-and-psalm-57-10"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "thy-mercy-is-great-above-the-heavens-or-unto-the-heavens-psalm-108-4-and-psalm-57-10"
   },
   {
     "source": {
@@ -365,7 +372,12 @@
       "file": "isaiah-second-pass-records.json",
       "id": "bajith-and-lions-upon-moab-or-debon-where-your-altar-is-and-arabians-greek-isaiah-15-2-and-9"
     },
-    "mergedId": "bajith-and-lions-upon-moab-or-debon-where-your-altar-is-and-arabians-greek-isaiah-15-2-and-9"
+    "retiredMergedId": "bajith-and-lions-upon-moab-or-debon-where-your-altar-is-and-arabians-greek-isaiah-15-2-and-9",
+    "mergedIds": [
+      "bajith-or-debon-where-your-altar-is-greek-isaiah-15-2",
+      "lions-upon-moab-or-arabians-and-ariel-greek-isaiah-15-9"
+    ],
+    "reviewDisposition": "split into two verse-specific findings"
   },
   {
     "source": {
@@ -389,7 +401,8 @@
       "file": "isaiah-second-pass-records.json",
       "id": "for-isaiah-had-said-or-and-isaiah-said-isaiah-38-21-22"
     },
-    "mergedId": "for-isaiah-had-said-or-and-isaiah-said-isaiah-38-21-22"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "for-isaiah-had-said-or-and-isaiah-said-isaiah-38-21-22"
   },
   {
     "source": {
@@ -413,7 +426,8 @@
       "file": "isaiah-second-pass-records.json",
       "id": "all-nations-shall-flow-or-people-shall-flow-isaiah-2-2-and-micah-4-1"
     },
-    "mergedId": "all-nations-shall-flow-or-people-shall-flow-isaiah-2-2-and-micah-4-1"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "all-nations-shall-flow-or-people-shall-flow-isaiah-2-2-and-micah-4-1"
   },
   {
     "source": {
@@ -997,7 +1011,8 @@
       "file": "jeremiah-second-pass-records.json",
       "id": "meat-offerings-or-manna-jeremiah-17-26-greek"
     },
-    "mergedId": "meat-offerings-or-manna-jeremiah-17-26-greek"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "meat-offerings-or-manna-jeremiah-17-26-greek"
   },
   {
     "source": {
@@ -1005,7 +1020,8 @@
       "file": "jeremiah-second-pass-records.json",
       "id": "rock-of-the-plain-or-the-valley-of-sor-jeremiah-21-13-greek"
     },
-    "mergedId": "rock-of-the-plain-or-the-valley-of-sor-jeremiah-21-13-greek"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "rock-of-the-plain-or-the-valley-of-sor-jeremiah-21-13-greek"
   },
   {
     "source": {
@@ -1301,7 +1317,8 @@
       "file": "1-chronicles-second-pass-records.json",
       "id": "all-israel-gathered-from-shihor-to-hemath-or-thirty-thousand-chosen-men-1-chronicles-13-2-samuel-6"
     },
-    "mergedId": "all-israel-gathered-from-shihor-to-hemath-or-thirty-thousand-chosen-men-1-chronicles-13-2-samuel-6"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "all-israel-gathered-from-shihor-to-hemath-or-thirty-thousand-chosen-men-1-chronicles-13-2-samuel-6"
   },
   {
     "source": {
@@ -1637,7 +1654,8 @@
       "file": "2-samuel-second-pass-records.json",
       "id": "shalt-thou-build-me-an-house-or-thou-shalt-not-build-2-samuel-7-5-greek"
     },
-    "mergedId": "shalt-thou-build-me-an-house-or-thou-shalt-not-build-2-samuel-7-5-greek"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "shalt-thou-build-me-an-house-or-thou-shalt-not-build-2-samuel-7-5-greek"
   },
   {
     "source": {
@@ -2005,7 +2023,8 @@
       "file": "1-2-kings-second-pass-records.json",
       "id": "gate-of-sur-or-gate-of-the-ways-2-kings-11-6-greek"
     },
-    "mergedId": "gate-of-sur-or-gate-of-the-ways-2-kings-11-6-greek"
+    "reviewDisposition": "dropped; retained in findings-review-dropped-records.json",
+    "retiredMergedId": "gate-of-sur-or-gate-of-the-ways-2-kings-11-6-greek"
   },
   {
     "source": {

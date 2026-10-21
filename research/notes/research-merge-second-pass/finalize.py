@@ -2,6 +2,11 @@
 """Write review tables and verify invariants without editing research records."""
 import collections, hashlib, json, pathlib, subprocess
 OUT=pathlib.Path(__file__).resolve().parent;ROOT=OUT.parents[2]
+# The original merge checkpoint below remains reproducible before the findings review.
+if (OUT/'findings-review-changes.json').exists():
+ import runpy
+ runpy.run_path(str(OUT/'finalize_findings_review.py'),run_name='__main__')
+ raise SystemExit(0)
 def load(name):return json.loads((OUT/name).read_text())
 def save(name,value):(OUT/name).write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
 def esc(value):return str(value).replace('|','\\|').replace('\n','<br>')

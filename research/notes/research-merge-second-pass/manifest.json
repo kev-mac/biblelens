@@ -5,13 +5,13 @@
     "psalms": {
       "preserved": 9,
       "new": 17,
-      "merged": 24,
-      "matched": 2
+      "merged": 18,
+      "matched": 1
     },
     "isaiah": {
       "preserved": 16,
       "new": 23,
-      "merged": 30,
+      "merged": 29,
       "matched": 9
     },
     "proverbs": {
@@ -23,7 +23,7 @@
     "jeremiah": {
       "preserved": 13,
       "new": 29,
-      "merged": 33,
+      "merged": 31,
       "matched": 9
     },
     "2-chronicles": {
@@ -35,19 +35,19 @@
     "1-chronicles": {
       "preserved": 10,
       "new": 22,
-      "merged": 29,
+      "merged": 28,
       "matched": 3
     },
     "samuel": {
       "preserved": 19,
       "new": 20,
-      "merged": 31,
+      "merged": 30,
       "matched": 8
     },
     "kings": {
       "preserved": 16,
       "new": 12,
-      "merged": 22,
+      "merged": 21,
       "matched": 5
     },
     "ezekiel": {
@@ -67,9 +67,7 @@
     {
       "file": "research/claude-drafts/psalms-second-pass-records.json",
       "ids": [
-        "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8",
         "as-an-heap-or-as-in-a-wineskin-greek-psalm-33-7",
-        "he-did-fly-or-he-was-seen-upon-the-wings-of-the-wind-psalm-18-10-2-samuel-22-11",
         "they-cried-or-they-looked-but-there-was-none-to-save-psalm-18-41-2-samuel-22-42",
         "great-deliverance-giveth-he-or-the-tower-of-salvation-for-his-king-psalm-18-50-2-samuel-22-51",
         "slay-them-not-and-consume-them-that-they-may-not-be-psalm-59-11-and-13",
@@ -84,10 +82,6 @@
         "neither-have-our-steps-declined-from-thy-way-or-thou-hast-turned-aside-our-paths-greek-psalm-44-18",
         "their-inward-thought-is-that-their-houses-shall-continue-or-their-graves-are-their-houses-greek-psalm-49-11",
         "slay-them-not-lest-my-people-forget-or-lest-they-forget-thy-law-greek-psalm-59-11",
-        "channels-of-waters-or-channels-of-the-sea-psalm-18-15-and-2-samuel-22-16",
-        "there-were-they-in-great-fear-psalm-14-5-6-and-psalm-53-5",
-        "let-them-be-turned-back-or-let-them-be-desolate-psalm-70-3-and-psalm-40-15",
-        "thy-mercy-is-great-above-the-heavens-or-unto-the-heavens-psalm-108-4-and-psalm-57-10",
         "over-philistia-will-i-triumph-or-philistia-triumph-thou-because-of-me-psalm-108-9-and-psalm-60-8",
         "seed-of-israel-his-servant-or-seed-of-abraham-his-servant-1-chronicles-16-13-and-psalm-105-6",
         "strength-and-gladness-are-in-his-place-or-strength-and-beauty-are-in-his-sanctuary-1-chronicles-16-27-and-psalm-96-6"
@@ -106,13 +100,12 @@
         "he-that-killeth-an-ox-or-the-transgressor-that-sacrifices-a-calf-greek-isaiah-66-3",
         "lud-that-draw-the-bow-or-lud-and-mosoch-greek-isaiah-66-19",
         "the-golden-city-ceased-or-the-taskmaster-ceased-greek-isaiah-14-4",
-        "bajith-and-lions-upon-moab-or-debon-where-your-altar-is-and-arabians-greek-isaiah-15-2-and-9",
+        "bajith-or-debon-where-your-altar-is-greek-isaiah-15-2",
+        "lions-upon-moab-or-arabians-and-ariel-greek-isaiah-15-9",
         "send-ye-the-lamb-to-the-ruler-or-i-will-send-as-reptiles-greek-isaiah-16-1",
         "i-the-lord-do-keep-it-or-i-am-a-strong-city-besieged-greek-isaiah-27-3",
-        "for-isaiah-had-said-or-and-isaiah-said-isaiah-38-21-22",
         "cities-of-judah-or-cities-of-idumea-greek-isaiah-44-26",
         "thy-gates-praise-or-thy-gates-sculptured-work-greek-isaiah-60-18",
-        "all-nations-shall-flow-or-people-shall-flow-isaiah-2-2-and-micah-4-1",
         "all-the-chief-ones-of-the-earth-or-all-the-giants-who-ruled-the-earth-greek-isaiah-14-9",
         "the-brook-of-the-willows-or-arabs-against-the-valley-greek-isaiah-15-7",
         "sargon-the-king-of-assyria-or-arna-the-king-of-the-assyrians-greek-isaiah-20-1",
@@ -183,8 +176,6 @@
         "shall-iron-break-the-northern-iron-or-will-iron-be-known-jeremiah-15-12-greek",
         "thy-words-were-found-and-i-did-eat-them-or-consume-them-jeremiah-15-16-greek",
         "the-heart-is-deceitful-and-desperately-wicked-or-the-heart-is-deep-jeremiah-17-9-greek",
-        "meat-offerings-or-manna-jeremiah-17-26-greek",
-        "rock-of-the-plain-or-the-valley-of-sor-jeremiah-21-13-greek",
         "these-men-have-done-evil-or-thou-hast-done-evil-jeremiah-38-9-greek",
         "i-repent-me-of-the-evil-or-i-have-rested-from-the-evils-jeremiah-42-10-greek",
         "remnant-of-the-country-of-caphtor-or-the-remnant-of-the-islands-jeremiah-47-4-greek",
@@ -233,7 +224,6 @@
         "returned-inhabitants-of-jerusalem-counts-1-chronicles-9-or-nehemiah-11",
         "ephraim-and-manasseh-dwelt-in-jerusalem-1-chronicles-9-3-or-judah-and-benjamin-only-nehemiah-11-4",
         "levites-numbered-from-thirty-or-from-twenty-years-1-chronicles-23",
-        "all-israel-gathered-from-shihor-to-hemath-or-thirty-thousand-chosen-men-1-chronicles-13-2-samuel-6",
         "thirty-thousand-chosen-men-or-seventy-thousand-young-men-2-samuel-6-1-greek",
         "abiathar-son-of-ahimelech-or-ahimelech-son-of-abiathar",
         "simeon-six-sons-or-five-genesis-46-10-1-chronicles-4-24",
@@ -285,7 +275,6 @@
       "ids": [
         "land-of-saul-thy-father-or-saul-thy-fathers-father-2-samuel-9-7-greek",
         "messenger-shewed-david-or-david-was-angry-with-joab-2-samuel-11-22-greek",
-        "shalt-thou-build-me-an-house-or-thou-shalt-not-build-2-samuel-7-5-greek",
         "as-i-took-it-from-saul-or-as-i-removed-from-those-whom-i-removed-2-samuel-7-15-greek",
         "from-the-nations-and-their-gods-or-nations-and-tents-2-samuel-7-23-greek",
         "abimelech-son-of-jerubbesheth-or-son-of-jerubbaal-son-of-ner-2-samuel-11-21-greek",
@@ -327,7 +316,6 @@
         "ass-head-fourscore-pieces-of-silver-or-fifty-greek",
         "two-chariot-horses-or-two-horsemen-greek",
         "child-sneezed-seven-times-or-elisha-bowed-seven-times-2-kings-4-35-greek",
-        "gate-of-sur-or-gate-of-the-ways-2-kings-11-6-greek",
         "long-ago-i-did-it-or-i-formed-it-2-kings-19-25-greek"
       ]
     },
@@ -380,7 +368,7 @@
       ]
     }
   ],
-  "total": 250,
+  "total": 238,
   "inputHashes": {
     "preserved/psalms-second-pass-records.json": "93fc9a42dde505b105f30a2335cc285e55eb3e5e0363a0d3398f74b45ce3f316",
     "new/psalms-second-pass-records.json": "35758c62e083c2d2a912a39d0b1c3af34773a9dda7d89a361ed5d380bfe2565f",
@@ -548,5 +536,16 @@
       "file": "research/notes/research-merge-second-pass/notes/new/zechariah-second-pass-notes.md",
       "sha256": "d308f034c7b0c61557609d4ededb4138e4def46ea711299da1fa1689ddfca284"
     }
-  ]
+  ],
+  "findingsReview": {
+    "changedOutputRecords": 16,
+    "droppedRecords": 13,
+    "splitOriginalId": "bajith-and-lions-upon-moab-or-debon-where-your-altar-is-and-arabians-greek-isaiah-15-2-and-9",
+    "splitOutputIds": [
+      "bajith-or-debon-where-your-altar-is-greek-isaiah-15-2",
+      "lions-upon-moab-or-arabians-and-ariel-greek-isaiah-15-9"
+    ],
+    "netAddedRecords": 1,
+    "stableIdsRetained": true
+  }
 }

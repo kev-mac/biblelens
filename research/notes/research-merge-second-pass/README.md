@@ -1,34 +1,36 @@
 # Second-pass research merge review
 
-This is a local draft merge on branch/worktree `research-merge-second-pass`, based on the preserved review branch. Main, the paused task, the queue and ledger are unchanged. Checkpoint label: Unverified draft checkpoint. Nothing was pushed or published; this checkpoint does not approve the findings.
+Local draft review on `research-merge-second-pass`. All records remain **draft, unverified**; quotation PASS is not findings approval. Kevin authorized applying Claude’s findings handoff with the recommended answers. No commit, push, publication, app integration or main update was made.
 
 | Result | Count |
 |---|---|
 | Source records | 303 |
-| Merged draft records | 250 |
-| Matched canonical records | 51 |
-| Preserved-only records | 64 |
-| New-only findings — draft, unverified | 133 |
+| Merged draft records | 238 |
+| Matched canonical records | 50 |
+| Preserved-only records | 61 |
+| New-only findings — draft, unverified | 125 |
 | Explicit same-ID Samuel variants retained | 2 |
-| Quote PASS | 250 |
+| Changed / replacement output records | 16 |
+| Dropped findings | 13 |
+| Split replacement records (net +1) | 2 |
+| Quote PASS | 238 |
 | Quote FAIL | 0 |
-| Witness classification decisions held | 2 |
+| Witness classification decisions held | 0 |
+| Witness classification decisions resolved | 2 |
 | Merged owner-question entries | 19 |
 | Verbatim notes versions retained | 23 |
 | ID collisions | 0 |
 
-- [Merge log: every finding, source side, status and correction](merge-log.md)
+250 prior drafts − 12 section-4 drops − 1 section-3.10 drop + 1 net record from the Isaiah 15 split = **238**. The Psalm recasts reuse their stable IDs and add no count. Other stable IDs are retained for provenance, including the two recast Jeremiah IDs. Section 5 editorial preferences were skipped.
+
+- [Applied findings review: field changes, drops, split IDs and checks](findings-review-changes.json)
+- [Quick checks and source limits](findings-review-source-checks.md)
+- [Dropped observations / non-finding notes](findings-review-drops.md)
 - [Field-by-field provenance](field-provenance.json)
 - [Per-record quote PASS / FAIL](quote-checks.md)
-- [Items not decided](undecided.md)
-- [Merged owner questions](../../claude-drafts/owner-questions.md)
+- [Resolved witness decisions](undecided.md)
+- [Source-to-output / retired-record crosswalk](record-crosswalk.json)
+- [Historical merge log](merge-log.md)
 - [Reading claims: reported, not verified](reported-reading-claims.md)
-- [Machine-readable source-to-output crosswalk](record-crosswalk.json)
 
-Source-check resolutions: Psalm 59’s blanket agreement removed; your-law finding retained with Brenton’s variant note; Isaiah 15:9 uses preserved clause alignment and qualifies lion/Arabs; Isaiah 15:7 stands separately as a clause-level difference; Isaiah 65:11 retains Greek evidence plus the attributed Gad/Meni interpretation and its limits; Psalm 18’s mountains/heaven contrast retains Greek sourcing and qualification.
-
-Jeremiah’s 9:25 ID is corrected to 9:26. The new versions of the two same-ID Samuel records carry `-new-20261020`; their preserved versions retain their original IDs.
-
-No later work on Psalm headings, eras or the Jesus profile has started.
-
-Quote corrections after checkpoint `4fe1e7d`: [28-record correction log](quote-corrections.md). These remain draft research corrections, not acceptance or publication approval.
+Isaiah 65:11 and the two formerly held records are Septuagint only. The Kings/Isaiah Ararat record is labelled Hebrew and Septuagint, with the Greek difference confined to 2 Kings 19:37: Brenton’s Isaiah 37:38 prints Armenia and agrees with the KJV. The original verbatim notes and historical quote-correction reports remain unchanged.

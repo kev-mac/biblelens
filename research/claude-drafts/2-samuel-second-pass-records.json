@@ -135,61 +135,6 @@
     "mergeStatus": "matched"
   },
   {
-    "id": "shalt-thou-build-me-an-house-or-thou-shalt-not-build-2-samuel-7-5-greek",
-    "mode": "contradictions",
-    "ref": "2 Samuel 7:5",
-    "appliesTo": [
-      "2 Samuel 7:5"
-    ],
-    "title": "Nathan is told to ask “Shalt thou build me an house?” — Brenton’s Greek prints a flat “thou shalt not build”",
-    "status": "Context",
-    "summary": "KJV 2 Samuel 7:5 puts the Lord’s words as a question. The Hebrew opens with the question particle (הַאַתָּה); Brenton’s Greek prints οὐ σὺ οἰκοδομήσεις, “not you shall build”, a statement.",
-    "text": "KJV 2 Samuel 7:5: “Go and tell my servant David, Thus saith the Lord, Shalt thou build me an house for me to dwell in?” Hebrew (WLC) 2 Samuel 7:5: לֵ֤ךְ וְאָֽמַרְתָּ֙ אֶל־עַבְדִּ֣י אֶל־דָּוִ֔ד כֹּ֖ה אָמַ֣ר יְהוָ֑ה הַאַתָּ֛ה תִּבְנֶה־לִּ֥י בַ֖יִת לְשִׁבְתִּֽי׃ [… Thus says the Lord: [is it] you [who] will build me a house for my dwelling?]. Septuagint (Brenton Greek) 2 Samuel 7:5: καὶ εἶπον πρὸς τὸν δοῦλόν μου Δαυὶδ, τάδε λέγει Κύριος, οὐ σὺ οἰκοδομήσεις μοι οἶκον τοῦ κατοικῆσαί με. [… Thus says the Lord: not you shall build me a house for me to dwell in.] Fetched from https://ebible.org/eng-kjv/2SA07.htm, https://bolls.life/get-text/WLC/10/7/ and https://ebible.org/grcbrent/2SA07.htm.",
-    "reasoning": "The KJV and the Hebrew word-for-word carry an interrogative; the Greek page carries a negated statement with no question word. In the Greek the sentence refuses; in the Hebrew and KJV the sentence asks.",
-    "scope": "T applies at 2 Samuel 7:5 only and compares the sentence form: question in the KJV and Hebrew, statement in the Greek. A rhetorical question can convey a refusal, so the two forms could carry one meaning; this record does not say the Hebrew question is not a refusal, which form is original, or that the KJV mistranslates. The Greek of 1 Chronicles 17:4 (https://ebible.org/grcbrent/1CH17.htm) prints the same negated statement, οὐ σὺ οἰκοδομήσεις μοι οἶκον, so the Greek of the two books agrees; the Hebrew of 1 Chronicles 17:4 was not compared here. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. Hebrew quoted is the Westminster Leningrad Codex digital text. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
-    "sources": [
-      {
-        "label": "2 Samuel 7: KJV",
-        "url": "https://ebible.org/eng-kjv/2SA07.htm"
-      },
-      {
-        "label": "2 Samuel 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
-        "url": "https://bolls.life/get-text/WLC/10/7/"
-      },
-      {
-        "label": "2 Samuel 7: Brenton Greek edition of the Septuagint",
-        "url": "https://ebible.org/grcbrent/2SA07.htm"
-      },
-      {
-        "label": "1 Chronicles 17: Brenton Greek edition of the Septuagint",
-        "url": "https://ebible.org/grcbrent/1CH17.htm"
-      }
-    ],
-    "refs": [
-      {
-        "label": "2 Samuel 7:5",
-        "book": 9,
-        "chapter": 7,
-        "verse": 5
-      }
-    ],
-    "checked": "2026-10-18",
-    "tags": [
-      "T"
-    ],
-    "witness": "Septuagint",
-    "languageContext": "Hebrew Old Testament and Greek Old Testament · Westminster Leningrad Codex (WLC) digital text and Brenton’s Septuagint",
-    "sides": [
-      {
-        "label": "A",
-        "ref": "2 Samuel 7:5",
-        "quote": "Shalt thou build me an house for me to dwell in?"
-      }
-    ],
-    "reviewStatus": "draft, unverified",
-    "mergeStatus": "preserved-only"
-  },
-  {
     "id": "as-i-took-it-from-saul-or-as-i-removed-from-those-whom-i-removed-2-samuel-7-15-greek",
     "mode": "contradictions",
     "ref": "2 Samuel 7:15",
@@ -298,12 +243,12 @@
     "appliesTo": [
       "2 Samuel 11:21"
     ],
-    "title": "Joab’s messenger is to cite “Abimelech the son of Jerubbesheth” — Brenton’s Greek names “Jerubbaal son of Ner”, at “Thamasi”",
+    "title": "Joab’s messenger cites Abimelech — Brenton’s Greek adds “son of Ner” and names the town “Thamasi”",
     "status": "Context",
-    "summary": "KJV 2 Samuel 11:21 names Abimelech’s father Jerubbesheth and the town Thebez. The Hebrew prints יְרֻבֶּשֶׁת; Brenton’s Greek prints Ἱεροβάαλ υἱοῦ Νήρ, “Jerubbaal son of Ner”, and the town as Θαμασί.",
+    "summary": "KJV 2 Samuel 11:21 names Abimelech’s father Jerubbesheth and the town Thebez. Brenton’s Greek names the father Ἱεροβάαλ υἱοῦ Νήρ, “Jerubbaal son of Ner”, and the town Θαμασί. This record’s finding is the added “son of Ner” and the different town; the name form Jerubbesheth / Jerubbaal is not offered as a difference.",
     "text": "KJV 2 Samuel 11:21: “Who smote Abimelech the son of Jerubbesheth? did not a woman cast a piece of a millstone upon him from the wall, that he died in Thebez? why went ye nigh the wall? then say thou, Thy servant Uriah the Hittite is dead also.” KJV Judges 9:1: “And Abimelech the son of Jerubbaal went to Shechem unto his mother's brethren, and communed with them, and with all the family of the house of his mother's father, saying,” Hebrew (WLC) 2 Samuel 11:21: מִֽי־הִכָּ֞ה אֶת־אֲבִימֶ֣לֶךְ בֶּן־יְרֻבֶּ֗שֶׁת הֲלֹֽוא־אִשָּׁ֡ה הִשְׁלִ֣יכָה עָלָיו֩ פֶּ֨לַח רֶ֜כֶב מֵעַ֤ל הַֽחֹומָה֙ וַיָּ֣מָת בְּתֵבֵ֔ץ לָ֥מָּה נִגַּשְׁתֶּ֖ם אֶל־הַֽחֹומָ֑ה וְאָ֣מַרְתָּ֔ גַּ֗ם עַבְדְּךָ֛ אוּרִיָּ֥ה הַחִתִּ֖י מֵֽת׃ [Who struck Abimelech son of Jerubbesheth? Did not a woman throw a riding-stone [millstone] upon him from the wall, and he died in Tebets?]. Septuagint (Brenton Greek) 2 Samuel 11:21: Τίς ἐπάταξε τὸν Ἀβιμέλεχ υἱὸν Ἱεροβάαλ υἱοῦ Νήρ; οὐχὶ γυνὴ ἔῤῥιψε κλάσμα μύλου ἐπʼ αὐτὸν ἀπὸ ἄνωθεν τοῦ τείχους, καὶ ἀπέθανεν ἐν Θαμασί; ἱνατί προσηγάγετε πρὸς τὸ τεῖχος; καὶ ἐρεῖς, καί γε ὁ δοῦλός σου Οὐρίας ὁ Χετταῖος ἀπέθανε. [Who struck Abimelech son of Jerubbaal son of Ner? Did not a woman throw a piece of a millstone upon him from above the wall, and he died in Thamasi? …]. Fetched from https://ebible.org/eng-kjv/2SA11.htm, https://bolls.life/get-text/WLC/10/11/ and https://ebible.org/grcbrent/2SA11.htm.",
     "reasoning": "The same man’s father is named Jerubbesheth in the KJV and Hebrew of this verse and Jerubbaal in the KJV of Judges 9:1. The Greek page of this verse prints Jerubbaal, and adds “son of Ner” after it, and prints a different town name.",
-    "scope": "T applies at 2 Samuel 11:21 only and compares the names printed: Jerubbesheth against Jerubbaal, and Thebez against Thamasi. The KJV of Judges 9:1 is quoted only to show where the name Jerubbaal stands; the Hebrew and Greek of Judges 9 were not compared here. This record does not say Jerubbesheth and Jerubbaal are not two names of one man, does not explain “son of Ner”, and does not say which text is original or that the KJV mistranslates. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. Hebrew quoted is the Westminster Leningrad Codex digital text. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "scope": "T applies at 2 Samuel 11:21 only, to the added “son of Ner” and the town Thebez / Thamasi. The name form Jerubbesheth / Jerubbaal is background only. The KJV of Judges 9:1 is quoted only to show where the name Jerubbaal stands; the Hebrew and Greek of Judges 9 were not compared here. This record does not say Jerubbesheth and Jerubbaal are not two names of one man, does not explain “son of Ner”, and does not say which text is original or that the KJV mistranslates. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. Hebrew quoted is the Westminster Leningrad Codex digital text. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
     "sources": [
       {
         "label": "2 Samuel 11: KJV",

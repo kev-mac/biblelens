@@ -1,229 +1,9 @@
 {
-  "checkedAt": "2026-10-20T17:14:32.589159+00:00",
+  "checkedAt": "2026-10-21T03:27:45.437880+00:00",
   "inputCheckpoint": null,
   "sourceArchives": {},
   "normalization": "KJV: exact packaged substrings. Original-language text: whitespace folding and surrounding editorial punctuation excluded; no Unicode normalization of WLC. HTML verse text excludes publisher footnotes and uses visible verse labels, including lettered verses. NT Strong/morphology annotations and apparatus markers are excluded. Brenton English quoted excerpts are checked with publisher footnotes excluded. Attributed sourceNotes are checked separately against the direct publisher-page evidence.",
   "records": [
-    {
-      "id": "foundations-of-the-hills-or-foundations-of-heaven-psalm-18-7-2-samuel-22-8",
-      "ref": "Psalms 18:7",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 18:7",
-          "quote": "the foundations also of the hills moved and were shaken",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "2 Samuel 22:8",
-          "quote": "the foundations of heaven moved and shook",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 18:7",
-          "quote": "Then the earth shook and trembled; the foundations also of the hills moved and were shaken, because he was wroth.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "2 Samuel 22:8",
-          "quote": "Then the earth shook and trembled; the foundations of heaven moved and shook, because he was wroth.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 18,
-            "verse": 7
-          },
-          "quote": "Then the earth shook and trembled; the foundations also of the hills moved and were shaken, because he was wroth.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 8
-          },
-          "quote": "Then the earth shook and trembled; the foundations of heaven moved and shook, because he was wroth.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 18,
-            "verse": 7
-          },
-          "quote": "Then the earth shook and trembled; the foundations also of the hills moved and were shaken, because he was wroth.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 8
-          },
-          "quote": "Then the earth shook and trembled; the foundations of heaven moved and shook, because he was wroth.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "Καὶ ἐσαλεύθη, καὶ ἔντρόμος ἐγενήθη ἡ γῆ, καὶ τὰ θεμέλια τῶν ὀρέων ἐταράχθησαν, καὶ ἐσαλεύθησαν, ὅτι ὠργίσθη αὐτοῖς ὁ Θεός",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 17,
-            "verse": 8
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/PSA017.htm",
-              "verse": "8"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/PSA017.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "Καὶ ἐταράχθη καὶ ἐσείσθη ἡ γῆ, καὶ τὰ θεμέλια τοῦ οὐρανοῦ συνεταράχθησαν καὶ ἐσπαράχθησαν, ὃτι ἐθυμώθη Κύριος αὐτοῖς",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 8
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/2SA22.htm",
-              "verse": "8"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/2SA22.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַתִּגְעַ֬שׁ וַתִּרְעַ֨שׁ ׀ הָאָ֗רֶץ וּמֹוסְדֵ֣י הָרִ֣ים יִרְגָּ֑זוּ וַ֝יִּתְגָּֽעֲשׁ֗וּ כִּי־חָ֥רָה לֹֽו׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 18,
-            "verse": 8
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/18/",
-              "verse": "8"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/18/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַתְגָּעַשׁ כ] (וַיִּתְגָּעַ֤שׁ ק) וַתִּרְעַשׁ֙ הָאָ֔רֶץ מֹוסְדֹ֥ות הַשָּׁמַ֖יִם יִרְגָּ֑זוּ וַיִּֽתְגָּעֲשׁ֖וּ כִּֽי־חָ֥רָה לֹֽו׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 8
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/10/22/",
-              "verse": "8"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/10/22/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַתִּגְעַ֬שׁ וַתִּרְעַ֨שׁ ׀ הָאָ֗רֶץ וּמֹוסְדֵ֣י הָרִ֣ים יִרְגָּ֑זוּ וַ֝יִּתְגָּֽעֲשׁ֗וּ כִּי־חָ֥רָה לֹֽו׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 18,
-            "verse": 8
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/18/",
-              "verse": "8"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/18/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַתְגָּעַשׁ כ] (וַיִּתְגָּעַ֤שׁ ק) וַתִּרְעַשׁ֙ הָאָ֔רֶץ מֹוסְדֹ֥ות הַשָּׁמַ֖יִם יִרְגָּ֑זוּ וַיִּֽתְגָּעֲשׁ֖וּ כִּֽי־חָ֥רָה לֹֽו׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 8
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/10/22/",
-              "verse": "8"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/10/22/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
     {
       "id": "as-an-heap-or-as-in-a-wineskin-greek-psalm-33-7",
       "ref": "Psalms 33:7",
@@ -361,154 +141,10 @@
       "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
     },
     {
-      "id": "he-did-fly-or-he-was-seen-upon-the-wings-of-the-wind-psalm-18-10-2-samuel-22-11",
-      "ref": "Psalms 18:10",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 18:10",
-          "quote": "yea, he did fly upon the wings of the wind",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "2 Samuel 22:11",
-          "quote": "and he was seen upon the wings of the wind",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 18,
-            "verse": 10
-          },
-          "quote": "And he rode upon a cherub, and did fly: yea, he did fly upon the wings of the wind.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 11
-          },
-          "quote": "And he rode upon a cherub, and did fly: and he was seen upon the wings of the wind.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "Καὶ ἐπέβη ἐπὶ χερουβὶμ καὶ ἐπετάσθη, ἐπετάσθη ἐπὶ πτερύγων ἀνέμων",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 17,
-            "verse": 11
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/PSA017.htm",
-              "verse": "11"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/PSA017.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "Καὶ ἐπεκάθισεν ἐπὶ τῷ χερουβὶν καὶ ἐπετάσθη, καὶ ὤφθη ἐπὶ πτερύγων ἀνέμου",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 11
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/2SA22.htm",
-              "verse": "11"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/2SA22.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַיִּרְכַּ֣ב עַל־כְּ֭רוּב וַיָּעֹ֑ף וַ֝יֵּ֗דֶא עַל־כַּנְפֵי־רֽוּחַ׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 18,
-            "verse": 11
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/18/",
-              "verse": "11"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/18/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַיִּרְכַּ֥ב עַל־כְּר֖וּב וַיָּעֹ֑ף וַיֵּרָ֖א עַל־כַּנְפֵי־רֽוּחַ׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 11
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/10/22/",
-              "verse": "11"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/10/22/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
       "id": "they-cried-or-they-looked-but-there-was-none-to-save-psalm-18-41-2-samuel-22-42",
-      "ref": "Psalms 18:41",
+      "ref": "2 Samuel 22:42",
       "quoteResult": "PASS",
       "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 18:41",
-          "quote": "They cried, but there was none to save them",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
         {
           "edition": "KJV",
           "field": "sides",
@@ -634,17 +270,9 @@
     },
     {
       "id": "great-deliverance-giveth-he-or-the-tower-of-salvation-for-his-king-psalm-18-50-2-samuel-22-51",
-      "ref": "Psalms 18:50",
+      "ref": "2 Samuel 22:51",
       "quoteResult": "PASS",
       "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 18:50",
-          "quote": "Great deliverance giveth he to his king",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
         {
           "edition": "KJV",
           "field": "sides",
@@ -1753,421 +1381,6 @@
           "sourceErrors": [],
           "checkedSources": [
             "https://bolls.life/get-text/WLC/19/59/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
-      "id": "channels-of-waters-or-channels-of-the-sea-psalm-18-15-and-2-samuel-22-16",
-      "ref": "Psalms 18:15",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 18:15",
-          "quote": "Then the channels of waters were seen, and the foundations of the world were discovered at thy rebuke, O Lord, at the blast of the breath of thy nostrils.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "2 Samuel 22:16",
-          "quote": "And the channels of the sea appeared, the foundations of the world were discovered, at the rebuking of the Lord, at the blast of the breath of his nostrils.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 18,
-            "verse": 15
-          },
-          "quote": "Then the channels of waters were seen, and the foundations of the world were discovered at thy rebuke, O Lord, at the blast of the breath of thy nostrils.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 16
-          },
-          "quote": "And the channels of the sea appeared, the foundations of the world were discovered, at the rebuking of the Lord, at the blast of the breath of his nostrils.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "וַיֵּ֤רָא֨וּ ׀ אֲפִ֥יקֵי מַ֗יִם וַֽיִּגָּלוּ֮ מֹוסְדֹ֪ות תֵּ֫בֵ֥ל מִגַּעֲרָ֣תְךָ֣ יְהוָ֑ה מִ֝נִּשְׁמַ֗ת ר֣וּחַ אַפֶּֽךָ׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 18,
-            "verse": 16
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/18/",
-              "verse": "16"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/18/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַיֵּֽרָאוּ֙ אֲפִ֣קֵי יָ֔ם יִגָּל֖וּ מֹסְדֹ֣ות תֵּבֵ֑ל בְּגַעֲרַ֣ת יְהוָ֔ה מִנִּשְׁמַ֖ת ר֥וּחַ אַפֹּֽו׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 22,
-            "verse": 16
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/10/22/",
-              "verse": "16"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/10/22/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
-      "id": "there-were-they-in-great-fear-psalm-14-5-6-and-psalm-53-5",
-      "ref": "Psalms 14:5",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 14:5",
-          "quote": "There were they in great fear: for God is in the generation of the righteous.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 14:6",
-          "quote": "Ye have shamed the counsel of the poor, because the Lord is his refuge.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 53:5",
-          "quote": "There were they in great fear, where no fear was: for God hath scattered the bones of him that encampeth against thee: thou hast put them to shame, because God hath despised them.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 14,
-            "verse": 5
-          },
-          "quote": "There were they in great fear: for God is in the generation of the righteous.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 14,
-            "verse": 6
-          },
-          "quote": "Ye have shamed the counsel of the poor, because the Lord is his refuge.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 53,
-            "verse": 5
-          },
-          "quote": "There were they in great fear, where no fear was: for God hath scattered the bones of him that encampeth against thee: thou hast put them to shame, because God hath despised them.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "שָׁ֤ם ׀ פָּ֣חֲדוּ פָ֑חַד כִּֽי־אֱ֝לֹהִ֗ים בְּדֹ֣ור צַדִּֽיק׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 14,
-            "verse": 5,
-            "endVerse": 6
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/14/",
-              "verse": "5"
-            },
-            {
-              "url": "https://bolls.life/get-text/WLC/19/14/",
-              "verses": [
-                "5",
-                "6"
-              ]
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/14/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "עֲצַת־עָנִ֥י תָבִ֑ישׁוּ כִּ֖י יְהוָ֣ה מַחְסֵֽהוּ׃",
-          "edition": "WLC",
-          "claimedRef": null,
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/14/",
-              "verse": "6"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/14/",
-            "https://bolls.life/get-text/WLC/19/53/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "שָׁ֤ם ׀ פָּֽחֲדוּ־פַחַד֮ לֹא־הָ֪יָה֫ פָ֥חַד כִּֽי־אֱלֹהִ֗ים פִּ֭זַּר עַצְמֹ֣ות חֹנָ֑ךְ הֱ֝בִשֹׁ֗תָה כִּֽי־אֱלֹהִ֥ים מְאָסָֽם׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 53,
-            "verse": 6
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/53/",
-              "verse": "6"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/53/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
-      "id": "let-them-be-turned-back-or-let-them-be-desolate-psalm-70-3-and-psalm-40-15",
-      "ref": "Psalms 70:3",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 70:3",
-          "quote": "Let them be turned back for a reward of their shame that say, Aha, aha.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 40:15",
-          "quote": "Let them be desolate for a reward of their shame that say unto me, Aha, aha.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 70,
-            "verse": 3
-          },
-          "quote": "Let them be turned back for a reward of their shame that say, Aha, aha.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 40,
-            "verse": 15
-          },
-          "quote": "Let them be desolate for a reward of their shame that say unto me, Aha, aha.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "יָ֭שׁוּבוּ עַל־עֵ֣קֶב בָּשְׁתָּ֑ם הָ֝אֹמְרִ֗ים הֶ֘אָ֥ח ׀ הֶאָֽח׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 70,
-            "verse": 4
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/70/",
-              "verse": "4"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/70/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "יָ֭שֹׁמּוּ עַל־עֵ֣קֶב בָּשְׁתָּ֑ם הָאֹמְרִ֥ים לִ֝֗י הֶאָ֥ח ׀ הֶאָֽח׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 40,
-            "verse": 16
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/40/",
-              "verse": "16"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/40/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
-      "id": "thy-mercy-is-great-above-the-heavens-or-unto-the-heavens-psalm-108-4-and-psalm-57-10",
-      "ref": "Psalms 108:4",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 108:4",
-          "quote": "For thy mercy is great above the heavens: and thy truth reacheth unto the clouds.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Psalms 57:10",
-          "quote": "For thy mercy is great unto the heavens, and thy truth unto the clouds.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 108,
-            "verse": 4
-          },
-          "quote": "For thy mercy is great above the heavens: and thy truth reacheth unto the clouds.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 57,
-            "verse": 10
-          },
-          "quote": "For thy mercy is great unto the heavens, and thy truth unto the clouds.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "כִּֽי־גָדֹ֣ול מֵֽעַל־שָׁמַ֣יִם חַסְדֶּ֑ךָ וְֽעַד־שְׁחָקִ֥ים אֲמִתֶּֽךָ׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 108,
-            "verse": 5
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/108/",
-              "verse": "5"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/108/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "כִּֽי־גָדֹ֣ל עַד־שָׁמַ֣יִם חַסְדֶּ֑ךָ וְֽעַד־שְׁחָקִ֥ים אֲמִתֶּֽךָ׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 18,
-            "chapter": 57,
-            "verse": 11
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/19/57/",
-              "verse": "11"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/19/57/"
           ],
           "field": "text"
         }
@@ -3731,7 +2944,7 @@
       "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
     },
     {
-      "id": "bajith-and-lions-upon-moab-or-debon-where-your-altar-is-and-arabians-greek-isaiah-15-2-and-9",
+      "id": "bajith-or-debon-where-your-altar-is-greek-isaiah-15-2",
       "ref": "Isaiah 15:2",
       "quoteResult": "PASS",
       "checks": [
@@ -3756,18 +2969,6 @@
           "rule": "exact packaged KJV substring"
         },
         {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 15,
-            "verse": 9
-          },
-          "quote": "For the waters of Dimon shall be full of blood: for I will bring more upon Dimon, lions upon him that escapeth of Moab, and upon the remnant of the land.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
           "quote": "Λυπεῖσθε ἐφʼ ἑαυτοὺς, ἀπολεῖται γὰρ καὶ Δηβὼν, οὗ ὁ βωμὸς ὑμῶν· ἐκεῖ ἀναβήσεσθε κλαίειν, ἐπὶ Ναβαῦ τῆς Μωαβίτιδος· ὀλολύξατε, ἐπὶ πάσης κεφαλῆς φαλάκρωμα, πάντες βραχίονες κατατετμημένοι",
           "edition": "Brenton Greek",
           "claimedRef": {
@@ -3780,28 +2981,6 @@
             {
               "url": "https://ebible.org/grcbrent/ISA15.htm",
               "verse": "2"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/ISA15.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "Τὸ δὲ ὕδωρ τὸ Δειμὼν πλησθήσεται αἵματος, ἐπάξω γὰρ ἐπὶ Δειμὼν Ἄραβας, καὶ ἀρῶ τὸ σπέρμα Μωὰβ, καὶ Ἀριὴλ, καὶ τὸ κατάλοιπον Ἄδαμὰ",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 15,
-            "verse": 9
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/ISA15.htm",
-              "verse": "9"
             }
           ],
           "otherVerseMatches": [],
@@ -3830,6 +3009,48 @@
           "sourceErrors": [],
           "checkedSources": [
             "https://bolls.life/get-text/WLC/23/15/"
+          ],
+          "field": "text"
+        }
+      ],
+      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
+    },
+    {
+      "id": "lions-upon-moab-or-arabians-and-ariel-greek-isaiah-15-9",
+      "ref": "Isaiah 15:9",
+      "quoteResult": "PASS",
+      "checks": [
+        {
+          "edition": "KJV",
+          "field": "text",
+          "claimedRef": {
+            "book": 22,
+            "chapter": 15,
+            "verse": 9
+          },
+          "quote": "For the waters of Dimon shall be full of blood: for I will bring more upon Dimon, lions upon him that escapeth of Moab, and upon the remnant of the land.",
+          "result": "PASS",
+          "rule": "exact packaged KJV substring"
+        },
+        {
+          "quote": "Τὸ δὲ ὕδωρ τὸ Δειμὼν πλησθήσεται αἵματος, ἐπάξω γὰρ ἐπὶ Δειμὼν Ἄραβας, καὶ ἀρῶ τὸ σπέρμα Μωὰβ, καὶ Ἀριὴλ, καὶ τὸ κατάλοιπον Ἄδαμὰ",
+          "edition": "Brenton Greek",
+          "claimedRef": {
+            "book": 22,
+            "chapter": 15,
+            "verse": 9
+          },
+          "result": "PASS",
+          "matches": [
+            {
+              "url": "https://ebible.org/grcbrent/ISA15.htm",
+              "verse": "9"
+            }
+          ],
+          "otherVerseMatches": [],
+          "sourceErrors": [],
+          "checkedSources": [
+            "https://ebible.org/grcbrent/ISA15.htm"
           ],
           "field": "text"
         },
@@ -4059,134 +3280,6 @@
       "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
     },
     {
-      "id": "for-isaiah-had-said-or-and-isaiah-said-isaiah-38-21-22",
-      "ref": "Isaiah 38:21",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Isaiah 38:21",
-          "quote": "For Isaiah had said",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 38,
-            "verse": 21
-          },
-          "quote": "For Isaiah had said, Let them take a lump of figs, and lay it for a plaister upon the boil, and he shall recover.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 38,
-            "verse": 22
-          },
-          "quote": "Hezekiah also had said, What is the sign that I shall go up to the house of the Lord?",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "Καὶ εἶπεν Ἡσαΐας πρὸς Ἐζεκίαν, λάβε παλάθην ἐκ σύκων, καὶ τρίψον, καὶ κατάπλασαι, καὶ ὑγιὴς ἔσῃ",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 38,
-            "verse": 21
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/ISA38.htm",
-              "verse": "21"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/ISA38.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "Καὶ εἶπεν Ἐζεκίας, τοῦτο σημεῖον πρὸς Ἐζεκίαν, ὅτι ἀναβήσομαι εἰς τὸν οἶκον τοῦ Θεοῦ",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 38,
-            "verse": 22
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/ISA38.htm",
-              "verse": "22"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/ISA38.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַיֹּ֣אמֶר יְשַׁעְיָ֔הוּ יִשְׂא֖וּ דְּבֶ֣לֶת תְּאֵנִ֑ים וְיִמְרְח֥וּ עַֽל־הַשְּׁחִ֖ין וְיֶֽחִי׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 38,
-            "verse": 21
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/23/38/",
-              "verse": "21"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/23/38/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַיֹּ֥אמֶר חִזְקִיָּ֖הוּ מָ֣ה אֹ֑ות כִּ֥י אֶעֱלֶ֖ה בֵּ֥ית יְהוָֽה׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 38,
-            "verse": 22
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/23/38/",
-              "verse": "22"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/23/38/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
       "id": "cities-of-judah-or-cities-of-idumea-greek-isaiah-44-26",
       "ref": "Isaiah 44:26",
       "quoteResult": "PASS",
@@ -4324,250 +3417,6 @@
           "sourceErrors": [],
           "checkedSources": [
             "https://bolls.life/get-text/WLC/23/60/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
-      "id": "all-nations-shall-flow-or-people-shall-flow-isaiah-2-2-and-micah-4-1",
-      "ref": "Isaiah 2:2",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Isaiah 2:2",
-          "quote": "all nations shall flow unto it",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Isaiah 2:3",
-          "quote": "many people shall go",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Micah 4:1",
-          "quote": "people shall flow unto it",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Micah 4:2",
-          "quote": "many nations shall come",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 2,
-            "verse": 2
-          },
-          "quote": "and all nations shall flow unto it.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 32,
-            "chapter": 4,
-            "verse": 1
-          },
-          "quote": "and people shall flow unto it.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 2,
-            "verse": 3
-          },
-          "quote": "And many people shall go and say, Come ye, and let us go up to the mountain of the Lord",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 32,
-            "chapter": 4,
-            "verse": 2
-          },
-          "quote": "And many nations shall come, and say, Come, and let us go up to the mountain of the Lord",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 2,
-            "verse": 4
-          },
-          "quote": "and shall rebuke many people",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 32,
-            "chapter": 4,
-            "verse": 3
-          },
-          "quote": "and rebuke strong nations afar off",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "וְהָיָ֣ה ׀ בְּאַחֲרִ֣ית הַיָּמִ֗ים נָכֹ֨ון יִֽהְיֶ֜ה הַ֤ר בֵּית־יְהוָה֙ בְּרֹ֣אשׁ הֶהָרִ֔ים וְנִשָּׂ֖א מִגְּבָעֹ֑ות וְנָהֲר֥וּ אֵלָ֖יו כָּל־הַגֹּויִֽם׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 2,
-            "verse": 2
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/23/2/",
-              "verse": "2"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/23/2/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וְהָיָ֣ה ׀ בְּאַחֲרִ֣ית הַיָּמִ֗ים יִ֠הְיֶה הַ֣ר בֵּית־יְהוָ֤ה נָכֹון֙ בְּרֹ֣אשׁ הֶהָרִ֔ים וְנִשָּׂ֥א ה֖וּא מִגְּבָעֹ֑ות וְנָהֲר֥וּ עָלָ֖יו עַמִּֽים ׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 32,
-            "chapter": 4,
-            "verse": 1
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/33/4/",
-              "verse": "1"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/33/4/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וְֽהָלְכ֞וּ עַמִּ֣ים רַבִּ֗ים וְאָמְרוּ֙ לְכ֣וּ ׀ וְנַעֲלֶ֣ה אֶל־הַר־יְהוָ֗ה אֶל־בֵּית֙ אֱלֹהֵ֣י יַעֲקֹ֔ב וְיֹרֵ֙נוּ֙ מִדְּרָכָ֔יו וְנֵלְכָ֖ה בְּאֹרְחֹתָ֑יו כִּ֤י מִצִּיֹּון֙ תֵּצֵ֣א תֹורָ֔ה וּדְבַר־יְהוָ֖ה מִירוּשָׁלִָֽם׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 2,
-            "verse": 3
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/23/2/",
-              "verse": "3"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/23/2/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וְֽהָלְכ֞וּ גֹּויִ֣ם רַבִּ֗ים וְאָֽמְרוּ֙ לְכ֣וּ ׀ וְנַעֲלֶ֣ה אֶל־הַר־יְהוָ֗ה וְאֶל־בֵּית֙ אֱלֹהֵ֣י יַעֲקֹ֔ב וְיֹורֵ֙נוּ֙ מִדְּרָכָ֔יו וְנֵלְכָ֖ה בְּאֹֽרְחֹתָ֑יו כִּ֤י מִצִּיֹּון֙ תֵּצֵ֣א תֹורָ֔ה וּדְבַר־יְהוָ֖ה מִירוּשָׁלִָֽם׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 32,
-            "chapter": 4,
-            "verse": 2
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/33/4/",
-              "verse": "2"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/33/4/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וְשָׁפַט֙ בֵּ֣ין הַגֹּויִ֔ם וְהֹוכִ֖יחַ לְעַמִּ֣ים רַבִּ֑ים וְכִתְּת֨וּ חַרְבֹותָ֜ם לְאִתִּ֗ים וַחֲנִיתֹֽותֵיהֶם֙ לְמַזְמֵרֹ֔ות לֹא־יִשָּׂ֨א גֹ֤וי אֶל־גֹּוי֙ חֶ֔רֶב וְלֹא־יִלְמְד֥וּ עֹ֖וד מִלְחָמָֽה׃ פ",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 22,
-            "chapter": 2,
-            "verse": 4
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/23/2/",
-              "verse": "4"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/23/2/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וְשָׁפַ֗ט בֵּ֚ין עַמִּ֣ים רַבִּ֔ים וְהֹוכִ֛יחַ לְגֹויִ֥ם עֲצֻמִ֖ים עַד־רָחֹ֑וק וְכִתְּת֨וּ חַרְבֹתֵיהֶ֜ם לְאִתִּ֗ים וַחֲנִיתֹֽתֵיהֶם֙ לְמַזְמֵרֹ֔ות לֹֽא־יִשְׂא֞וּ גֹּ֤וי אֶל־גֹּוי֙ חֶ֔רֶב וְלֹא־יִלְמְד֥וּן עֹ֖וד מִלְחָמָֽה׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 32,
-            "chapter": 4,
-            "verse": 3
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/33/4/",
-              "verse": "3"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/33/4/"
           ],
           "field": "text"
         }
@@ -10226,150 +9075,6 @@
       "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
     },
     {
-      "id": "meat-offerings-or-manna-jeremiah-17-26-greek",
-      "ref": "Jeremiah 17:26",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Jeremiah 17:26",
-          "quote": "bringing burnt offerings, and sacrifices, and meat offerings, and incense, and bringing sacrifices of praise",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 17,
-            "verse": 26
-          },
-          "quote": "And they shall come from the cities of Judah, and from the places about Jerusalem, and from the land of Benjamin, and from the plain, and from the mountains, and from the south, bringing burnt offerings, and sacrifices, and meat offerings, and incense, and bringing sacrifices of praise, unto the house of the Lord.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "Καὶ ἥξουσιν ἐκ τῶν πόλεων Ἰούδα, καὶ κυκλόθεν Ἱερουσαλὴμ, καὶ ἐκ γῆς Βενιαμὶν, καὶ ἐκ γῆς πεδινῆς, καὶ ἐκ τοῦ ὄρους, καὶ ἐκ τῆς πρὸς Νότον, φέροντες ὁλοκαυτώματα καὶ θυσίας καὶ θυμιάματα καὶ μάννα καὶ λίβανον, φέροντες αἴνεσιν εἰς οἶκον Κυρίου",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 17,
-            "verse": 26
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/JER17.htm",
-              "verse": "26"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/JER17.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וּבָ֣אוּ מֵעָרֵֽי־יְ֠הוּדָה וּמִסְּבִיבֹ֨ות יְרוּשָׁלִַ֜ם וּמֵאֶ֣רֶץ בִּנְיָמִ֗ן וּמִן־הַשְּׁפֵלָ֤ה וּמִן־הָהָר֙ וּמִן־הַנֶּ֔גֶב מְבִאִ֛ים עֹולָ֥ה וְזֶ֖בַח וּמִנְחָ֣ה וּלְבֹונָ֑ה וּמְבִאֵ֥י תֹודָ֖ה בֵּ֥ית יְהוָֽה׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 17,
-            "verse": 26
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/24/17/",
-              "verse": "26"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/24/17/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
-      "id": "rock-of-the-plain-or-the-valley-of-sor-jeremiah-21-13-greek",
-      "ref": "Jeremiah 21:13",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Jeremiah 21:13",
-          "quote": "Behold, I am against thee, O inhabitant of the valley, and rock of the plain",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 21,
-            "verse": 13
-          },
-          "quote": "Behold, I am against thee, O inhabitant of the valley, and rock of the plain, saith the Lord; which say, Who shall come down against us? or who shall enter into our habitations?",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "Ἰδοὺ ἐγὼ πρὸς σὲ τὸν κατοικοῦντα τὴν κοιλάδα σὸρ, τὴν πεδεινὴν, τοὺς λέγοντας, τίς πτοήσει ἡμᾶς; ἢ τίς εἰσελεύσεται πρὸς τὸ κατοικητήριον ἡμῶν",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 21,
-            "verse": 13
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/JER21.htm",
-              "verse": "13"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/JER21.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "הִנְנִ֨י אֵלַ֜יִךְ יֹשֶׁ֧בֶת הָעֵ֛מֶק צ֥וּר הַמִּישֹׁ֖ר נְאֻם־יְהוָ֑ה הָאֹֽמְרִים֙ מִֽי־יֵחַ֣ת עָלֵ֔ינוּ וּמִ֥י יָבֹ֖וא בִּמְעֹונֹותֵֽינוּ׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 21,
-            "verse": 13
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/24/21/",
-              "verse": "13"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/24/21/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
       "id": "these-men-have-done-evil-or-thou-hast-done-evil-jeremiah-38-9-greek",
       "ref": "Jeremiah 38:9",
       "quoteResult": "PASS",
@@ -11235,17 +9940,9 @@
     },
     {
       "id": "anger-not-kept-for-ever-or-fire-burning-for-ever-jeremiah-3-12-17-4",
-      "ref": "Jeremiah 3:12, 17:4",
+      "ref": "Jeremiah 17:1",
       "quoteResult": "PASS",
       "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Jeremiah 3:12",
-          "quote": "I will not keep anger for ever",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
         {
           "edition": "KJV",
           "field": "sides",
@@ -11261,30 +9958,6 @@
           "quote": "The sin of Judah is written with a pen of iron, and with the point of a diamond",
           "result": "PASS",
           "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 3,
-            "verse": 12
-          },
-          "quote": "Go and proclaim these words toward the north, and say, Return, thou backsliding Israel, saith the Lord; and I will not cause mine anger to fall upon you: for I am merciful, saith the Lord, and I will not keep anger for ever.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 17,
-            "verse": 4
-          },
-          "quote": "And thou, even thyself, shalt discontinue from thine heritage that I gave thee; and I will cause thee to serve thine enemies in the land which thou knowest not: for ye have kindled a fire in mine anger, which shall burn for ever.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
         },
         {
           "edition": "KJV",
@@ -11311,65 +9984,6 @@
           "rule": "exact packaged KJV substring"
         },
         {
-          "quote": "for I am merciful, saith the Lord, and I will not be angry with you for ever",
-          "edition": "Brenton English",
-          "claimedRef": null,
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/eng-Brenton/JER03.htm",
-              "verse": "12"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/eng-Brenton/JER03.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "ὅτι ἐλεήμων ἐγώ εἰμι, λέγει Κύριος, καὶ οὐ μηνιῶ ὑμῖν εἰς τὸν αἰῶνα",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 3,
-            "verse": 12
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/JER03.htm",
-              "verse": "12"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/JER03.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "Ἐπικατάρατος ὁ ἄνθρωπος",
-          "edition": "Brenton Greek",
-          "claimedRef": null,
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/JER17.htm",
-              "verse": "5"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/JER03.htm",
-            "https://ebible.org/grcbrent/JER17.htm"
-          ],
-          "field": "text"
-        },
-        {
           "quote": "Ἐπικατάρατος ὁ ἄνθρωπος, ὃς τὴν ἐλπίδα ἔχει ἐπʼ ἄνθρωπον, καὶ στηρίσει σάρκα βραχίονος αὐτοῦ ἐπʼ αὐτὸν, καὶ ἀπὸ Κυρίου ἀποστῇ ἡ καρδία αὐτοῦ",
           "edition": "Brenton Greek",
           "claimedRef": {
@@ -11388,50 +10002,6 @@
           "sourceErrors": [],
           "checkedSources": [
             "https://ebible.org/grcbrent/JER17.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "הָלֹ֡ךְ וְקָֽרָאתָ֩ אֶת־הַדְּבָרִ֨ים הָאֵ֜לֶּה צָפֹ֗ונָה וְ֠אָמַרְתָּ שׁ֣וּבָה מְשֻׁבָ֤ה יִשְׂרָאֵל֙ נְאֻם־יְהוָ֔ה לֹֽוא־אַפִּ֥יל פָּנַ֖י בָּכֶ֑ם כִּֽי־חָסִ֤יד אֲנִי֙ נְאֻם־יְהוָ֔ה לֹ֥א אֶטֹּ֖ור לְעֹולָֽם׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 3,
-            "verse": 12
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/24/3/",
-              "verse": "12"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/24/3/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וְשָׁמַטְתָּ֗ה וּבְךָ֙ מִנַּחֲלָֽתְךָ֙ אֲשֶׁ֣ר נָתַ֣תִּי לָ֔ךְ וְהַעֲבַדְתִּ֙יךָ֙ אֶת־אֹ֣יְבֶ֔יךָ בָּאָ֖רֶץ אֲשֶׁ֣ר לֹֽא־יָדָ֑עְתָּ כִּֽי־אֵ֛שׁ קְדַחְתֶּ֥ם בְּאַפִּ֖י עַד־עֹולָ֥ם תּוּקָֽד׃ ס",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 17,
-            "verse": 4
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/24/17/",
-              "verse": "4"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/24/17/"
           ],
           "field": "text"
         },
@@ -11456,23 +10026,30 @@
             "https://bolls.life/get-text/WLC/24/17/"
           ],
           "field": "text"
+        },
+        {
+          "edition": "Brenton Greek",
+          "field": "omission",
+          "verses": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "result": "PASS",
+          "pages": [
+            "https://ebible.org/grcbrent/JER17.htm"
+          ],
+          "rule": "printed page starts at 5 and has no labels 1 to 4"
         }
       ],
       "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
     },
     {
       "id": "i-will-not-repent-or-i-am-weary-with-repenting-jeremiah-4-28-15-6",
-      "ref": "Jeremiah 4:28, 15:6",
+      "ref": "Jeremiah 15:6",
       "quoteResult": "PASS",
       "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "Jeremiah 4:28",
-          "quote": "I have purposed it, and will not repent, neither will I turn back from it",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
         {
           "edition": "KJV",
           "field": "sides",
@@ -11494,30 +10071,6 @@
           "field": "text",
           "claimedRef": {
             "book": 23,
-            "chapter": 4,
-            "verse": 28
-          },
-          "quote": "For this shall the earth mourn, and the heavens above be black; because I have spoken it, I have purposed it, and will not repent, neither will I turn back from it.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 15,
-            "verse": 6
-          },
-          "quote": "Thou hast forsaken me, saith the Lord, thou art gone backward: therefore will I stretch out my hand against thee, and destroy thee; I am weary with repenting.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 23,
             "chapter": 15,
             "verse": 6
           },
@@ -11544,46 +10097,6 @@
           "field": "text"
         },
         {
-          "quote": "and will no more spare them",
-          "edition": "Brenton English",
-          "claimedRef": null,
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/eng-Brenton/JER15.htm",
-              "verse": "6"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/eng-Brenton/JER15.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "Ἐπὶ τούτοις πενθείτω ἡ γῆ, καὶ συσκοτασάτω ὁ οὐρανὸς ἄνωθεν· διότι ἐλάλησα, καὶ οὐ μετανοήσω, ὥρμησα, καὶ οὐκ ἀποστρέψω ἀπʼ αὐτῆς",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 4,
-            "verse": 28
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/JER04.htm",
-              "verse": "28"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/JER04.htm"
-          ],
-          "field": "text"
-        },
-        {
           "quote": "Σὺ ἀπεστράφης με, λέγει Κύριος, ὀπίσω πορεύσῃ· καὶ ἐκτενῶ τὴν χεῖρά μου, καὶ διαφθερῶ σε, καὶ οὐκέτι ἀνήσω αὐτούς",
           "edition": "Brenton Greek",
           "claimedRef": {
@@ -11602,72 +10115,6 @@
           "sourceErrors": [],
           "checkedSources": [
             "https://ebible.org/grcbrent/JER15.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "Σὺ ἀπεστράφης με, λέγει Κύριος, ὀπίσω πορεύσῃ· καὶ ἐκτενῶ τὴν χεῖρά μου, καὶ διαφθερῶ σε, καὶ οὐκέτι ἀνήσω αὐτούς",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 15,
-            "verse": 6
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/JER15.htm",
-              "verse": "6"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/JER15.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "עַל־זֹאת֙ תֶּאֱבַ֣ל הָאָ֔רֶץ וְקָדְר֥וּ הַשָּׁמַ֖יִם מִמָּ֑עַל עַ֤ל כִּי־דִבַּ֙רְתִּי֙ זַמֹּ֔תִי וְלֹ֥א נִחַ֖מְתִּי וְלֹא־אָשׁ֥וּב מִמֶּֽנָּה׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 4,
-            "verse": 28
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/24/4/",
-              "verse": "28"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/24/4/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "אַ֣תְּ נָטַ֥שְׁתְּ אֹתִ֛י נְאֻם־יְהוָ֖ה אָחֹ֣ור תֵּלֵ֑כִי וָאַ֨ט אֶת־יָדִ֤י עָלַ֙יִךְ֙ וָֽאַשְׁחִיתֵ֔ךְ נִלְאֵ֖יתִי הִנָּחֵֽם׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 23,
-            "chapter": 15,
-            "verse": 6
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/24/15/",
-              "verse": "6"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/24/15/"
           ],
           "field": "text"
         },
@@ -14898,154 +13345,6 @@
           "sourceErrors": [],
           "checkedSources": [
             "https://bolls.life/get-text/WLC/13/23/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
-      "id": "all-israel-gathered-from-shihor-to-hemath-or-thirty-thousand-chosen-men-1-chronicles-13-2-samuel-6",
-      "ref": "1 Chronicles 13:5, 2 Samuel 6:1",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "1 Chronicles 13:5",
-          "quote": "David gathered all Israel together, from Shihor of Egypt even unto the entering of Hemath",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "2 Samuel 6:1",
-          "quote": "all the chosen men of Israel, thirty thousand",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 12,
-            "chapter": 13,
-            "verse": 1
-          },
-          "quote": "And David consulted with the captains of thousands and hundreds, and with every leader.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 12,
-            "chapter": 13,
-            "verse": 5
-          },
-          "quote": "So David gathered all Israel together, from Shihor of Egypt even unto the entering of Hemath, to bring the ark of God from Kirjathjearim.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 6,
-            "verse": 1
-          },
-          "quote": "Again, David gathered together all the chosen men of Israel, thirty thousand.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "Καὶ συνήγαγεν ἔτι Δαυὶδ πάντα νεανίαν ἐξ Ἰσραὴλ, ὡς ἑβδομήκοντα χιλιάδας",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 12,
-            "chapter": 6,
-            "verse": 1
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/2SA06.htm",
-              "verse": "1"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/2SA06.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַיִּוָּעַ֣ץ דָּוִ֗יד עִם־שָׂרֵ֧י הָאֲלָפִ֛ים וְהַמֵּאֹ֖ות לְכָל־נָגִֽיד׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 12,
-            "chapter": 13,
-            "verse": 1
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/13/13/",
-              "verse": "1"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/13/13/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַיַּקְהֵ֤ל דָּוִיד֙ אֶת־כָּל־יִשְׂרָאֵ֔ל מִן־שִׁיחֹ֥ור מִצְרַ֖יִם וְעַד־לְבֹ֣וא חֲמָ֑ת לְהָבִיא֙ אֶת־אֲרֹ֣ון הָאֱלֹהִ֔ים מִקִּרְיַ֖ת יְעָרִֽים׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 12,
-            "chapter": 13,
-            "verse": 5
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/13/13/",
-              "verse": "5"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/13/13/"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וַיֹּ֨סֶף עֹ֥וד דָּוִ֛ד אֶת־כָּל־בָּח֥וּר בְּיִשְׂרָאֵ֖ל שְׁלֹשִׁ֥ים אָֽלֶף׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 6,
-            "verse": 1
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/10/6/",
-              "verse": "1"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/10/6/"
           ],
           "field": "text"
         }
@@ -19518,78 +17817,6 @@
       "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
     },
     {
-      "id": "shalt-thou-build-me-an-house-or-thou-shalt-not-build-2-samuel-7-5-greek",
-      "ref": "2 Samuel 7:5",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "2 Samuel 7:5",
-          "quote": "Shalt thou build me an house for me to dwell in?",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 7,
-            "verse": 5
-          },
-          "quote": "Go and tell my servant David, Thus saith the Lord, Shalt thou build me an house for me to dwell in?",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "καὶ εἶπον πρὸς τὸν δοῦλόν μου Δαυὶδ, τάδε λέγει Κύριος, οὐ σὺ οἰκοδομήσεις μοι οἶκον τοῦ κατοικῆσαί με",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 7,
-            "verse": 5
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/2SA07.htm",
-              "verse": "5"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/2SA07.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "לֵ֤ךְ וְאָֽמַרְתָּ֙ אֶל־עַבְדִּ֣י אֶל־דָּוִ֔ד כֹּ֖ה אָמַ֣ר יְהוָ֑ה הַאַתָּ֛ה תִּבְנֶה־לִּ֥י בַ֖יִת לְשִׁבְתִּֽי׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 9,
-            "chapter": 7,
-            "verse": 5
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/10/7/",
-              "verse": "5"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/10/7/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
       "id": "as-i-took-it-from-saul-or-as-i-removed-from-those-whom-i-removed-2-samuel-7-15-greek",
       "ref": "2 Samuel 7:15",
       "quoteResult": "PASS",
@@ -22068,7 +20295,7 @@
     },
     {
       "id": "jeroboams-mother-a-widow-or-a-harlot-1-kings-11-26-and-12-24-greek",
-      "ref": "1 Kings 11:26",
+      "ref": "1 Kings 12:24",
       "quoteResult": "PASS",
       "checks": [
         {
@@ -22639,6 +20866,14 @@
       "quoteResult": "PASS",
       "checks": [
         {
+          "edition": "Brenton Greek publisher PDF",
+          "field": "sourceNotes",
+          "source": "https://ebible.org/pdf/grcbrent/grcbrent_ISA.pdf",
+          "quote": "αὐτοὶ δὲ διεσώθησαν εἰς Ἀρμενίαν",
+          "result": "PASS",
+          "rule": "exact attributed publisher footnote; checked separately from scripture"
+        },
+        {
           "edition": "KJV",
           "field": "sides",
           "ref": "2 Kings 19:37",
@@ -23011,78 +21246,6 @@
           "sourceErrors": [],
           "checkedSources": [
             "https://bolls.life/get-text/WLC/12/4/"
-          ],
-          "field": "text"
-        }
-      ],
-      "limit": "Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness."
-    },
-    {
-      "id": "gate-of-sur-or-gate-of-the-ways-2-kings-11-6-greek",
-      "ref": "2 Kings 11:6",
-      "quoteResult": "PASS",
-      "checks": [
-        {
-          "edition": "KJV",
-          "field": "sides",
-          "ref": "2 Kings 11:6",
-          "quote": "a third part shall be at the gate of Sur",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring and ref listed"
-        },
-        {
-          "edition": "KJV",
-          "field": "text",
-          "claimedRef": {
-            "book": 11,
-            "chapter": 11,
-            "verse": 6
-          },
-          "quote": "And a third part shall be at the gate of Sur; and a third part at the gate behind the guard: so shall ye keep the watch of the house, that it be not broken down.",
-          "result": "PASS",
-          "rule": "exact packaged KJV substring"
-        },
-        {
-          "quote": "καὶ φυλάξατε φυλακὴν οἴκου τοῦ βασιλέως ἐν τῷ πυλῶνι, καὶ τὸ τρίτον ἐν τῇ πύλῃ τῶν ὁδῶν, καὶ τὸ τρίτον τῆς πύλης ὀπίσω τῶν παρατρεχόντων, καὶ φυλάξτε τὴν φυλακὴν τοῦ οἴκου",
-          "edition": "Brenton Greek",
-          "claimedRef": {
-            "book": 11,
-            "chapter": 11,
-            "verse": 6
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://ebible.org/grcbrent/2KI11.htm",
-              "verse": "6"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://ebible.org/grcbrent/2KI11.htm"
-          ],
-          "field": "text"
-        },
-        {
-          "quote": "וְהַשְּׁלִשִׁית֙ בְּשַׁ֣עַר ס֔וּר וְהַשְּׁלִשִׁ֥ית בַּשַּׁ֖עַר אַחַ֣ר הָרָצִ֑ים וּשְׁמַרְתֶּ֛ם אֶת־מִשְׁמֶ֥רֶת הַבַּ֖יִת מַסָּֽח׃",
-          "edition": "WLC",
-          "claimedRef": {
-            "book": 11,
-            "chapter": 11,
-            "verse": 6
-          },
-          "result": "PASS",
-          "matches": [
-            {
-              "url": "https://bolls.life/get-text/WLC/12/11/",
-              "verse": "6"
-            }
-          ],
-          "otherVerseMatches": [],
-          "sourceErrors": [],
-          "checkedSources": [
-            "https://bolls.life/get-text/WLC/12/11/"
           ],
           "field": "text"
         }

@@ -142,7 +142,7 @@ for r in records:
   except (KeyError,StopIteration):good=False
   checks.append({'edition':'KJV','field':'text','claimedRef':ref,'quote':q,'result':'PASS' if good else 'FAIL','rule':'exact packaged KJV substring'})
  sources=[s['url'] for s in r.get('sources',[]) if 'url' in s]+re.findall(r'https://[^\s,)]+',text)
- greek_urls=[u.rstrip('.') for u in sources if '/grcbrent/' in u]
+ greek_urls=[u.rstrip('.') for u in sources if '/grcbrent/' in u and u.rstrip('.').endswith('.htm')]
  hebrew_urls=[u.rstrip('.') for u in sources if '/get-text/WLC/' in u]
  nt_urls=[u.rstrip('.') for u in sources if re.search(r'/get-text/(?:TR|SBLGNT|TISCH)/',u)]
  english_urls=[u.rstrip('.') for u in sources if '/eng-Brenton/' in u]
@@ -178,6 +178,10 @@ for r in records:
   if candidates:
    primary_ref=context_ref(r['ref'],r);expected=primary_ref['verse'];present=[u for u in candidates if str(expected) in cache[u]['verses']]
    checks.append({'edition':'Brenton Greek','field':'omission','verse':expected,'result':'FAIL' if present else 'PASS','pages':candidates,'rule':'primary verse label absent from cited page(s)'})
+ # Stable provenance ID retained after the owner-authorized omission recast.
+ if r['id']=='anger-not-kept-for-ever-or-fire-burning-for-ever-jeremiah-3-12-17-4':
+  url='https://ebible.org/grcbrent/JER17.htm';labels=list(cache.get(url,{}).get('verses',{}))
+  checks.append({'edition':'Brenton Greek','field':'omission','verses':[1,2,3,4],'result':'PASS' if labels and labels[0]=='5' and all(str(v) not in labels for v in range(1,5)) else 'FAIL','pages':[url],'rule':'printed page starts at 5 and has no labels 1 to 4'})
  if not checks:checks.append({'result':'FAIL','reason':'No machine-verifiable quotation extracted; manual quotation review required'})
  reports.append({'id':r['id'],'ref':r['ref'],'quoteResult':'PASS' if all(c['result']=='PASS' for c in checks) else 'FAIL','checks':checks,'limit':'Quotation check only. Does not verify chapter reading, interpretation, lexical claims, historical claims, or publication readiness.'})
 output_name='quote-checks-baseline-'+args.checkpoint+'.json' if args.checkpoint else 'quote-checks.json'

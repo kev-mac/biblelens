@@ -1,3 +1,5 @@
+> Historical pre-findings-review merge log (250 records). Current active records: 238. For owner-authorized corrections, drops and the Isaiah split, see [findings-review-changes.json](findings-review-changes.json) and [README.md](README.md). Retired outputs remain traceable in the crosswalk and dropped-record archive.
+
 # Second-pass research merge — local draft review
 
 Branch/worktree: `research-merge-second-pass`. Base: `codex/content-review-20261020` at `cb2203e33eebc313e9f9ff6da3300236663ba554`.

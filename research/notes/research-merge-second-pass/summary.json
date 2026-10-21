@@ -2,19 +2,19 @@
   "branch": "research-merge-second-pass",
   "base": "cb2203e33eebc313e9f9ff6da3300236663ba554",
   "inputRecords": 303,
-  "mergedRecords": 250,
+  "mergedRecords": 238,
   "statusCounts": {
-    "matched": 51,
-    "preserved-only": 64,
-    "new-only": 133,
+    "matched": 50,
+    "preserved-only": 61,
+    "new-only": 125,
     "same-id-variant": 2
   },
-  "quotePass": 250,
+  "quotePass": 238,
   "quoteFail": 0,
-  "quoteChecks": 1590,
+  "quoteChecks": 1477,
   "ownerQuestionEntries": 19,
   "notesVersionsPreserved": 23,
-  "witnessDecisionsHeld": 2,
+  "witnessDecisionsHeld": 0,
   "protectedStateUnchanged": true,
   "idCollisions": 0,
   "publishedIdCollisions": 0,
@@ -23,5 +23,13 @@
     "checkpoint": "4fe1e7d",
     "originalFailed": 28,
     "corrected": 28
+  },
+  "findingsReview": {
+    "changedOutputRecords": 16,
+    "droppedRecords": 13,
+    "splitReplacementRecords": 2,
+    "netAddedRecords": 1,
+    "editorialSection5": "skipped",
+    "witnessDecisionsResolved": 2
   }
 }
