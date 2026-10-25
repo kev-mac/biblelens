@@ -170,20 +170,18 @@ vm.runInContext(source.slice(source.indexOf('function citationButton('),source.i
 const expanded=context.render(20);assert(expanded.includes('<b>Reasoning:</b> Stored explanation'));assert(expanded.includes('Genesis 2:19'));assert(expanded.includes('id="comparison-evidence-20-contradictions-0" >'));
 assert(context.render(20).includes('id="comparison-evidence-20-contradictions-0" >'),'Evidence expansion survives rerendering');
 console.log('PASS: legacy reasoning fallback, citation rendering and retained evidence expansion.');
-// Exercise touch double-taps and keyboard disclosure with the production handlers.
+// Evidence changes only through a named control or keyboard activation.
 const disclosureHandlers={};
 const detailDialog={className:'',setAttribute(){},addEventListener(){}};
 context.document={createElement:()=>detailDialog,body:{append(){}},querySelectorAll:()=>[],addEventListener:(type,fn)=>disclosureHandlers[type]=fn};
 vm.runInContext(source.slice(source.indexOf('// Summary evidence stays'),source.indexOf('// Reveal the full category icon row')),context);
 const disclosureControl={attrs:{},setAttribute(k,v){this.attrs[k]=v;}};
-const evidence={hidden:true},summary={dataset:{evidenceKey:'touch-fixture'},attrs:{},querySelector:s=>s==='.comparison-evidence'?evidence:disclosureControl,setAttribute(k,v){this.attrs[k]=v;},matches:()=>true};
-const touchTarget={closest:s=>s==='button,a'?null:summary};
-const touch={pointerType:'touch',target:touchTarget,clientX:50,clientY:60};
-for(let i=0;i<2;i++){disclosureHandlers.pointerdown(touch);disclosureHandlers.pointerup(touch);}
-assert(!evidence.hidden);assert.equal(summary.attrs['aria-expanded'],'true');
-disclosureHandlers.dblclick({target:touchTarget,preventDefault(){}});assert(!evidence.hidden,'A synthesized dblclick must not undo the touch expansion');
-disclosureHandlers.keydown({key:'Enter',target:summary,preventDefault(){}});assert(evidence.hidden);
-console.log('PASS: touch double-tap expands once, synthetic dblclick is deduplicated, and keyboard collapses evidence.');
+const evidence={hidden:true},summary={dataset:{evidenceKey:'explicit-fixture'},attrs:{},querySelector:s=>s==='.comparison-evidence'?evidence:disclosureControl,setAttribute(k,v){this.attrs[k]=v;},matches:()=>true};
+assert(!disclosureHandlers.pointerdown&&!disclosureHandlers.pointerup&&!disclosureHandlers.dblclick,'Text gestures must not toggle research evidence');
+assert(evidence.hidden);
+disclosureHandlers.keydown({key:'Enter',target:summary,preventDefault(){}});assert(!evidence.hidden);assert.equal(summary.attrs['aria-expanded'],'true');
+disclosureHandlers.keydown({key:' ',target:summary,preventDefault(){}});assert(evidence.hidden);assert.equal(summary.attrs['aria-expanded'],'false');
+console.log('PASS: text gestures leave evidence unchanged; Enter and Space activate the explicit disclosure.');
 
 const expandButton={closest:()=>summary};
 disclosureHandlers.click({target:{closest:s=>s==='[data-summary-expand]'?expandButton:null}});
@@ -196,17 +194,23 @@ assert(expanded.indexOf('summary-reasoning')<expanded.indexOf('class="summary-ci
 assert.equal(disclosureControl.attrs['aria-label'],'Collapse references and reasoning');assert.equal(disclosureControl.attrs['aria-expanded'],'true');
 assert(expanded.indexOf('comparison-summary')<expanded.indexOf('<h3>Legacy card</h3>'));
 
-// One universal font; legacy choices migrate safely and old clients retain compatibility.
+// One app font preserves explicit choices and applies to text and controls together.
 const fontNodes=new Map(),fontProperties=new Map();let fontSaves=0;
 const fontsContext={readerPreferences:{verseFont:'invalid',categoryFont:'georgia'},state:{},persist:()=>fontSaves++,document:{documentElement:{style:{setProperty:(key,value)=>fontProperties.set(key,value)}}},$:id=>{if(!fontNodes.has(id))fontNodes.set(id,{});return fontNodes.get(id)}};vm.createContext(fontsContext);
 vm.runInContext(source.slice(source.indexOf('const READER_FONTS='),source.indexOf('function applyTextSize(')),fontsContext);
-assert.equal(fontNodes.get('#app-font-family').value,'inter','Invalid stored font falls back to sans serif');
-fontsContext.readerPreferences.verseFont='georgia';fontsContext.applyReaderFonts();assert.equal(fontNodes.get('#app-font-family').value,'georgia','Retain an explicit legacy choice');
+assert.equal(fontNodes.get('#app-font-family').value,'inter','Reading-only legacy preferences do not silently become app-wide choices');
+assert.equal(fontsContext.readerPreferences.categoryFont,'georgia','Legacy preference data is retained');
+fontsContext.readerPreferences={};fontsContext.applyReaderFonts();
+assert.equal(fontNodes.get('#app-font-family').value,'inter','Unsaved readers use the sans serif default');
+assert.equal(fontSaves,0,'Applying a default does not manufacture a saved preference');
+fontsContext.readerPreferences={appFont:'inter'};fontsContext.applyReaderFonts();
+assert.equal(fontNodes.get('#app-font-family').value,'inter','Explicit sans serif preferences remain unchanged');
 fontNodes.get('#app-font-family').onchange({target:{value:'lora'}});
-for(const key of ['font','verseFont','categoryFont'])assert.equal(fontsContext.readerPreferences[key],'lora');
-for(const key of ['--ui-font','--verse-font-family','--category-font-family'])assert(fontProperties.get(key).includes('Lora'));
+for(const key of ['appFont','font','verseFont','categoryFont'])assert.equal(fontsContext.readerPreferences[key],'lora');
+for(const key of ['--verse-font-family','--lens-reading-font','--ui-font','--category-font-family'])assert(fontProperties.get(key).includes('Lora'));
 assert.equal(fontSaves,1);
-console.log('PASS: universal font, sans-serif fallback, legacy migration and backward-compatible persistence.');
+fontsContext.applyReaderFonts();assert.equal(fontNodes.get('#app-font-family').value,'lora','Explicit app-wide choices survive reapplication');
+console.log('PASS: Inter default, preserved font choices, consistent app typography and backward-compatible persistence.');
 
 // Legacy stored H/G codes keep distinct display groups and toggle independently.
 vm.runInContext("this.tags=recordTags;this.group=filterCategory;this.languageLabels=languageTags",context);

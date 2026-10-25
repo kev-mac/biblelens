@@ -7,7 +7,8 @@ import {conversationInput,conversationalResult} from '../src/device-conversation
 const config=JSON.parse(fs.readFileSync('capacitor.config.json'));
 assert.equal(config.webDir,'www');assert(!config.server?.url,'No remote application host');
 const html=fs.readFileSync('www/index.html','utf8');
-assert(html.indexOf('device-bootstrap.js')<html.indexOf('reader.js'));
+assert(html.indexOf('id="biblelens-device-bootstrap"')>=0,'Offline bootstrap is included');
+assert(html.indexOf('id="biblelens-device-bootstrap"')<html.indexOf('id="biblelens-app-script"'),'Offline API bootstrap executes before the application bundle');
 for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g))if(!/^https?:/.test(match[1]))assert(fs.existsSync('www/'+match[1].split('?')[0].replace(/^\//,'')),match[1]);
 
 // Exercise the actual browser worker module and bundled engine through a Node

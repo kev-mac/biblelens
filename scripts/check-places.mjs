@@ -2,6 +2,8 @@ import {searchPlaces} from '../src/places-directory.js';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {parsePlaces,createPlaceMatcher,wrapLocationNames,getLocationDetails,loadPlaces,atlasDescription} from '../src/places-core.js';
+import {placePreviewGeometry,placePreviewSVG} from '../src/place-map-preview.js';
+import {createPersonMatcher,wrapReferenceNames} from '../src/people-links.js';
 const places=parsePlaces(JSON.parse(fs.readFileSync('data/reference/places.json','utf8'))),match=createPlaceMatcher(places);
 assert.equal(places.size,1298);
 assert.equal(match('The Lord put Rahab straight before Israel.').length,0,'Do not turn people, tribes or common words into geographic claims');
@@ -10,6 +12,25 @@ assert.equal(match('pillars and judgment. Pillars support the roof. Judgment is 
 assert.equal(match('jericho and egypt').length,0,'Lowercase ordinary words must not become claims');
 assert.equal(match('India and Egypt and Jericho').length,3,'Confirmed place types and the sourced India region remain available');
 assert.equal(match('Madmen went out. The Arab spoke.').length,0,'Sentence capitalization alone cannot disambiguate ordinary words');
+const storyContext={scope:'story',book:0,chapter:11,verse:27,endChapter:12,endVerse:9};
+assert.equal(match('Abram’s family leaves Ur for Haran.',storyContext).find(hit=>hit.label==='Ur')?.id,'recgQtoCtBjbsPwAw');
+assert.equal(match('Terah takes Abram from Ur toward Canaan.',storyContext).find(hit=>hit.label==='Ur')?.id,'recgQtoCtBjbsPwAw');
+assert.equal(match('Ur, father of Eliphalet.',storyContext).filter(hit=>hit.label==='Ur').length,0,'Personal-name use must remain unlinked');
+assert.equal(match('They travel from Ur.').length,0,'The short-name exception is narrative-only');
+assert.equal(match('Ur of the Chaldees',storyContext).length,1,'Prefer the existing full place name without nested chips');
+const matchPeople=createPersonMatcher(JSON.parse(fs.readFileSync('data/reference/people.json','utf8')));
+const abramStory=JSON.parse(fs.readFileSync('data/stories.json','utf8'))[0].stories.find(story=>story.title==='The Call of Abram').summary;
+const linkedStory=wrapReferenceNames(abramStory,match,matchPeople,storyContext);
+for(const [label,id,count] of [['Haran','recyuzIRhPm1IFEu0',2],['Canaan','recRxBBePxyyV6TFO',3],['Ur','recgQtoCtBjbsPwAw',2]]){
+ assert.equal((linkedStory.match(new RegExp('data-place-id="'+id+'"','g'))||[]).length,count,label+' resolves to the geographical record in narrative movement/residence phrases');
+ assert(!new RegExp('class="person-chip"[^>]*>'+label+'</button>').test(linkedStory),label+' must not be linked as a person in this story');
+}
+const personalMentions=wrapReferenceNames('Terah is the father of Haran. Noah curses Canaan.',match,matchPeople,{scope:'story',book:0,chapter:9,verse:1,endChapter:12,endVerse:9});
+assert(!personalMentions.includes('data-place-id='),'Genealogy and personal actions are not locations');
+assert(/class="person-chip"[^>]*>Canaan<\/button>/.test(personalMentions));
+const pendingPlaces=wrapReferenceNames(abramStory,()=>[],matchPeople,{...storyContext,placesReady:false});
+assert(!/class="person-chip"[^>]*>(?:Haran|Canaan)<\/button>/.test(pendingPlaces),'Do not publish a provisional personal link while place data is loading');
+assert.equal(match(' from Ur toward Canaan.',{...storyContext,leadingText:'Terah takes Abram, Sarai and Lot'})[0]?.id,'recgQtoCtBjbsPwAw','Existing person links do not erase the preceding movement context');
 const jericho=[...places.values()].find(p=>p.name==='Jericho');assert.deepEqual(jericho.coordinates,{latitude:31.8700465,longitude:35.443876});
 assert.equal(jericho.modern_name,null);assert(!/\]\(/.test(jericho.description));
 assert.equal(match('Jericho, JERICHO; notJericho')[0].id,jericho.id);assert.equal(match('Jericho, JERICHO; notJericho').length,2);
@@ -46,3 +67,15 @@ assert.equal(atlasDescription({description:'City.'}),'');
 assert.equal(atlasDescription({description:'A region mentioned in Genesis.'}),'A region mentioned in Genesis.');
 assert.equal(atlasDescription({description:''}),'');
 console.log('PASS: atlas hides generic feature labels while preserving meaningful descriptions.');
+
+const adam=[...places.values()].find(place=>place.name==='Adam');
+const preview=placePreviewGeometry(adam);
+assert(Math.abs(preview.point[0]-300)<1e-8&&Math.abs(preview.point[1]-140)<1e-8);assert(preview.land.length);assert(preview.water.length,'The regional preview retains nearby lakes');
+assert.equal(placePreviewGeometry({coordinates:null}),null);assert.equal(placePreviewSVG({coordinates:null}),'');
+assert(!placePreviewSVG({...adam,name:'<img onerror="bad">'}).includes('<img'));
+for(const place of places.values())if(place.coordinates){
+ const geometry=placePreviewGeometry(place);
+ assert(geometry.bounds.west>=-24&&geometry.bounds.east<=100&&geometry.bounds.south>=-4&&geometry.bounds.north<=64,'Vendored geometry covers the reference point: '+place.name);
+ assert(placePreviewSVG(place).length<30000,'Each preview stays compact: '+place.name);
+}
+console.log('PASS: narrative Ur links preserve ambiguity safeguards; real map previews cover every reference point, escape labels and keep unknown coordinates empty.');

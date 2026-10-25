@@ -24,10 +24,31 @@ async function chapter(book,ch){const key=`${book}:${ch}`;if(chapterCache.has(ke
 function parseRef(ref){const m=/^(.*?) (\d+):(\d+)/.exec(ref);if(!m)return null;const b=BOOKS.find(b=>b.name===m[1]);return b?{book:b.id,chapter:+m[2],verse:+m[3]}:null;}
 function rankStudies(message,book,ch){const words=message.toLowerCase().match(/[a-z0-9]{3,}/g)||[];return STUDIES.map(e=>{const text=JSON.stringify([e.title,e.topic,e.refs,e.claim,e.response,e.assessment]).toLowerCase();const relevance=words.filter(w=>!['the','how','what','does','this','that','with','about','and','are','can'].includes(w)&&text.includes(w)).length;const same=e.refs.some(r=>{const p=parseRef(r);return p&&p.book===book&&p.chapter===ch});return {e,score:relevance+(same?6:0)}}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,3).map(x=>x.e);}
 const SEARCH_VARIANTS=[['interest','usury','usurer','usurers'],['loan','loans','lend','lends','lending','lent'],['kill','kills','killed','killing','slew','slay','slain','slaying','smite','smites','smiting','smote','struck','death'],['die','dies','died','dying','death','dead'],['fear','fears','feared','fearing','fearful','afraid','terror','dread'],['beat','beats','beating','beaten','smite','smites','smiting','smote','struck'],['slave','slaves','servant','servants','bondman','bondmen','bondage'],['fly','flies'],['marry','married','marriage','wife','husband'],['create','created','creation','made','form','formed'],['child','children'],['wrote','write','written'],['rise','rose','risen','resurrection']];
-function namedBooks(message){const found=[];let remaining=message;for(const book of [...BOOKS].sort((a,b)=>b.name.length-a.name.length)){const pattern=new RegExp('\\b'+book.name+'\\b','gi');if(pattern.test(remaining)){found.push(book);remaining=remaining.replace(pattern,' ');}}return found;}
+const readingEdition=value=>['kjv','web','asv'].includes(String(value||'').toLowerCase())?String(value).toLowerCase():'kjv';
+const scriptureText=(verse,edition='kjv')=>cleanExcerpt(verse?.[readingEdition(edition)]||'');
+const scriptureKind=edition=>'Primary scripture text · '+readingEdition(edition).toUpperCase();
+let bookNameLookup,bookNamePattern;
+function bookNames(){
+ if(bookNameLookup)return;
+ bookNameLookup=new Map();
+ const extras={Genesis:['Ge','Gn'],Exodus:['Exo','Ex'],Psalms:['Psalm','Psa','Pss'],'Song of Solomon':['Song of Songs','Canticles'],John:['Jn'],Matthew:['Mt'],Mark:['Mk'],Luke:['Lk'],Revelation:['Revelations'],James:['Jam']};
+ for(const book of BOOKS){
+  const names=[book.name,book.code,...(extras[book.name]||[])];
+  if(/^[123] /.test(book.name)){const number=book.name[0],name=book.name.slice(2);names.push(number+name,number+' '+book.code.slice(1),['','I','II','III'][Number(number)]+' '+name);if(name==='John')names.push(number+' Jn',number+'Jn');}
+  for(const name of names)bookNameLookup.set(name.toLowerCase().replace(/[.\s]/g,''),book);
+ }
+ const names=BOOKS.flatMap(book=>[book.name,book.code,...(extras[book.name]||[]),...(/^[123] /.test(book.name)?[book.name.replace(' ',''),book.name[0]+' '+book.code.slice(1),['','I','II','III'][Number(book.name[0])]+' '+book.name.slice(2),...(book.name.slice(2)==='John'?[book.name[0]+' Jn',book.name[0]+'Jn']:[])]:[])]);
+ bookNamePattern=names.sort((a,b)=>b.length-a.length).map(name=>name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/\s+/g,'\\s+')).join('|');
+}
+function canonicalBookNames(message){bookNames();return String(message||'').replace(new RegExp('\\b('+bookNamePattern+')\\.?(?=\\s|\\d|[.:;,?!]|$)','gi'),name=>bookNameLookup.get(name.toLowerCase().replace(/[.\s]/g,''))?.name||name);}
+function namedBooks(message){
+ const canonical=canonicalBookNames(message),found=[];let remaining=canonical;
+ for(const book of [...BOOKS].sort((a,b)=>b.name.length-a.name.length)){const pattern=new RegExp('\\b'+book.name+'\\b','gi');if(pattern.test(remaining)){found.push(book);remaining=remaining.replace(pattern,' ');}}
+ return found;
+}
 function questionTerms(message){
  const stop=new Set('the and who whom whose what was were where when which how why does did didnt can could would should this that these those about bible biblical chapter verse tell explain give please have has had are not his her him its their them you your anyone anybody someone somebody person people according say says said also from into with for all any ever much allowed okay more else then'.split(' '));
- const scoped=namedBooks(message);let query=message;for(const book of scoped)query=query.replace(new RegExp(book.name,'gi'),' ');
+ const scoped=namedBooks(message);let query=canonicalBookNames(message);for(const book of scoped)query=query.replace(new RegExp(book.name,'gi'),' ');
  if(/\b(interest|usury|loans?|lend|lending|borrow)\b/i.test(query))query=query.replace(/\b(charge|charging|rate|rates)\b/gi,' ');
  const words=[...new Set(query.toLowerCase().match(/[a-z]{3,}/g)||[])].filter(w=>!stop.has(w)).slice(0,24);let correctionBudget=2;
  const groups=words.map(word=>{
@@ -67,7 +88,7 @@ function aquaticFoodQuestion(message){
  return seafood||fish&&/\b(eat|eating|eaten|food|diet|dietary|kosher|clean|unclean|permitted|forbidden|allowed)\b/i.test(message);
 }
 const verseParts=id=>({book:Math.floor(id/1000000),chapter:Math.floor(id%1000000/1000),verse:id%1000});
-function pinnedChapters(message){const keys=[];for(const book of namedBooks(message)){const match=new RegExp('\\b'+book.name+'\\s+(\\d+)(?::\\d+)?','i').exec(message);if(match&&CHAPTERS[book.id+':'+Number(match[1])])keys.push(book.id+':'+Number(match[1]));}
+function pinnedChapters(message){const keys=queryReferences(message).filter(ref=>CHAPTERS[ref.book+':'+ref.chapter]).map(ref=>ref.book+':'+ref.chapter);
  if(/\b(adam|eve|mankind|humanity|humans?|man|woman|people)\b/i.test(message)&&/\b(creat\w*|form\w*|made|sixth|day)\b/i.test(message))keys.push('0:1','0:2');
  if(aquaticFoodQuestion(message))keys.push('2:11','4:14','40:7','43:10','44:14');
  if(/plagues?/i.test(message))keys.push(...[7,8,9,10,11,12].map(ch=>'1:'+ch));return [...new Set(keys)];}
@@ -90,44 +111,149 @@ function searchPassages(message,broad=false){
  const picked=[];for(const [id]of [...scores].sort((a,b)=>b[1]-a[1]||a[0]-b[0])){const p=verseParts(id);if(anchors.some(i=>!matched.get(id)?.has(i))||!CHAPTERS[p.book+':'+p.chapter]||picked.some(o=>o.book===p.book&&o.chapter===p.chapter&&Math.abs(o.verse-p.verse)<=4))continue;picked.push(p);if(picked.length===(broad?24:12))break;}return picked;
 }
 function searchChapters(message){return [...new Set([...pinnedChapters(message),...searchPassages(message).map(p=>`${p.book}:${p.chapter}`)])].slice(0,12);}
-async function gatherSources(message,book,ch,selected,previousQuestion='',broad=false){const sources=[];function add(label,text,url,kind,metadata={}){const existing=sources.find(s=>s.url===url&&s.text===text);if(existing)return existing.id;const id=sources.length+1;sources.push({id,label,text,url,kind,...metadata});return id;}
+async function gatherSources(message,book,ch,selected,previousQuestion='',broad=false,edition='kjv'){const sources=[];function add(label,text,url,kind,metadata={}){const existing=sources.find(s=>s.url===url&&s.text===text);if(existing)return existing.id;const id=sources.length+1;sources.push({id,label,text,url,kind,...metadata});return id;}
  const pinned=pinnedChapters(message);if((selected.length||/this chapter|these verses|this verse/i.test(message))&&CHAPTERS[book+':'+ch])pinned.unshift(book+':'+ch);
  const windows=new Map();for(const key of pinned)windows.set(key,null);
  for(const p of [...(previousQuestion?searchPassages(previousQuestion,broad):[]),...searchPassages(message,broad)]){const key=`${p.book}:${p.chapter}`;if(windows.has(key)&&windows.get(key)===null)continue;if(!windows.has(key))windows.set(key,new Set());const nums=windows.get(key);for(let n=Math.max(1,p.verse-5);n<=p.verse+5;n++)nums.add(n);}
- for(const [key,numbers]of windows){const [b,c]=key.split(':').map(Number),data=await chapter(b,c);if(!data)continue;const verses=numbers?data.verses.filter(v=>numbers.has(v.n)):data.verses;if(!verses.length)continue;add(`${data.name} ${c}${numbers?':'+verses[0].n+'–'+verses.at(-1).n:''}`,verses.map(v=>`${data.name} ${c}:${v.n}. ${v.kjv||v.web}`).join('\n'),`#read/${b}/${c}`,'Primary scripture text · KJV');}
+ for(const [key,numbers]of windows){const [b,c]=key.split(':').map(Number),data=await chapter(b,c);if(!data)continue;const verses=data.verses.filter(v=>(!numbers||numbers.has(v.n))&&scriptureText(v,edition));if(!verses.length)continue;add(`${data.name} ${c}${numbers?':'+verses[0].n+'–'+verses.at(-1).n:''}`,verses.map(v=>`${data.name} ${c}:${v.n}. ${scriptureText(v,edition)}`).join('\n'),`#read/${b}/${c}`,scriptureKind(edition));}
  // Editorial annotations supplement primary text; they never substitute for passage retrieval.
  const scope=new Set(namedBooks(message).map(b=>b.id));
- for(const e of rankStudies(message,-1,-1).filter(e=>!scope.size||e.refs.some(r=>scope.has(parseRef(r)?.book)))){add(e.title,`${e.summary}\n${e.response}\nLimits: ${e.assessment}\n${e.context}`,`#study/${e.id}`,'Provisional editorial analysis');for(const ref of e.refs){const p=parseRef(ref);if(!p)continue;const data=await chapter(p.book,p.chapter),v=data?.verses.find(v=>v.n===p.verse);if(v)add(ref,v.kjv||v.web,`#read/${p.book}/${p.chapter}/${p.verse}`,'Related primary scripture excerpt');}}
- const words=questionTerms(message).flat();const ranked=EVIDENCE.filter(e=>e.mode!=='commandments'&&(!scope.size||scope.has(parseRef(e.ref)?.book))).map(e=>({e,score:words.filter(w=>JSON.stringify([e.title,e.text,e.summary,e.ref]).toLowerCase().includes(w)).length})).filter(x=>x.score>=2).sort((a,b)=>b.score-a.score).slice(0,4);for(const {e}of ranked)for(const source of e.sources)add(`${e.ref} — ${source.label}`,`${e.witness?e.witness+': ':''}${e.summary}\n${e.text}\nReasoning: ${e.reasoning}\nLimits: ${e.scope}\nChecked ${e.checked}; source not fetched live.`,source.url,'Curated editorial comparison',e.witness?{witness:e.witness,summary:e.summary,recordId:e.id}:{});return sources;}
+ for(const e of rankStudies(message,-1,-1).filter(e=>!scope.size||e.refs.some(r=>scope.has(parseRef(r)?.book)))){add(e.title,`${e.summary}\n${e.response}\nLimits: ${e.assessment}\n${e.context}`,`#study/${e.id}`,'Provisional editorial analysis');for(const ref of e.refs){const p=parseRef(ref);if(!p)continue;const data=await chapter(p.book,p.chapter),v=data?.verses.find(v=>v.n===p.verse);if(v&&scriptureText(v,edition))add(ref,scriptureText(v,edition),`#read/${p.book}/${p.chapter}/${p.verse}`,'Related primary scripture excerpt · '+edition.toUpperCase());}}
+ const ranked=matchingResearch(message,4).filter(record=>record.kind==='annotation');for(const e of ranked)add(`${e.ref} — ${e.title}`,`${e.witness?e.witness+': ':''}${e.summary}\n${e.reasoning}\nLimits: ${e.scope}${e.checked?'\nChecked '+e.checked+'; source not fetched live.':''}`,e.sources[0]?.url||e.url,'Curated editorial comparison',{witness:e.witness,summary:e.summary,recordId:e.id,references:e.sources});return sources;}
 // Chat is a deterministic interface to packaged content. No external services or credentials.
 function cleanExcerpt(text){return String(text||'').replace(/\{[HG]\d+\}/g,'').replace(/\s+/g,' ').trim();}
-function queryReferences(message){const refs=[];for(const b of namedBooks(message)){const m=new RegExp('\\b'+b.name+'\\s+(\\d+)(?::(\\d+)(?:[–-](\\d+))?)?','i').exec(message);if(m)refs.push({book:b.id,chapter:+m[1],first:m[2]?+m[2]:null,last:m[3]?+m[3]:m[2]?+m[2]:null});}return refs;}
+function queryReferences(message){
+ const canonical=canonicalBookNames(message),refs=[];
+ const add=(book,chapter,first=null,last=first)=>{if(refs.length<8&&!refs.some(ref=>ref.book===book&&ref.chapter===chapter&&ref.first===first&&ref.last===last))refs.push({book,chapter,first,last});};
+ const names=[...BOOKS].sort((a,b)=>b.name.length-a.name.length).map(book=>book.name).join('|');
+ const pattern=new RegExp('\\b('+names+')\\s*(\\d{1,3})(?::(\\d{1,3})(?:[–-](?:(\\d{1,3}):)?(\\d{1,3}))?)?(?!\\d)','gi');
+ for(const match of canonical.matchAll(pattern)){
+  const book=BOOKS.find(book=>book.name.toLowerCase()===match[1].toLowerCase()).id,start=Number(match[2]),first=match[3]?Number(match[3]):null;
+  const endChapter=match[4]?Number(match[4]):start,last=match[5]?Number(match[5]):first;
+  if(endChapter!==start){for(let ch=start;ch<=Math.min(endChapter,start+7);ch++)add(book,ch,ch===start?first:1,ch===endChapter?last:199);}
+  else add(book,start,first,last);
+  // Common shorthand: Genesis 1–2; John 3:16, 18; Genesis 1 and 2.
+  let tail=canonical.slice(match.index+match[0].length),currentChapter=start;
+  const range=first===null?/^\s*[–-]\s*(\d{1,3})(?!\d)/.exec(tail):null;
+  if(range){for(let ch=start+1;ch<=Math.min(Number(range[1]),start+7);ch++)add(book,ch);tail=tail.slice(range[0].length);currentChapter=Number(range[1]);}
+  for(let i=0;i<7;i++){
+   const next=/^\s*(and|versus|vs\.?|[,;&])\s*(?:chapter\s+)?(\d{1,3})(?::(\d{1,3})(?:[–-](\d{1,3}))?)?(?![\d\w])(?=\s|$|[?!.,;])/i.exec(tail);
+   if(!next)break;
+   if(first!==null&&!next[3]&&next[1]===',')add(book,currentChapter,Number(next[2]),Number(next[2]));
+   else {currentChapter=Number(next[2]);add(book,currentChapter,next[3]?Number(next[3]):null,next[4]?Number(next[4]):next[3]?Number(next[3]):null);}
+   tail=tail.slice(next[0].length);
+  }
+ }
+ return refs;
+}
+function referenceLabel(ref){return BOOKS[ref.book]?.name+' '+ref.chapter+(ref.first?':'+ref.first+(ref.last&&ref.last!==ref.first?'–'+ref.last:''):'');}
+function referenceUrl(ref){return '#read/'+ref.book+'/'+ref.chapter+(ref.first?'/'+ref.first+(ref.last&&ref.last!==ref.first?'-'+ref.last:''):'');}
+function referenceOverlaps(a,b){return a.book===b.book&&a.chapter===b.chapter&&(a.first===null||b.first===null||a.first<=(b.last??b.first)&&(a.last??a.first)>=b.first);}
+let researchCatalog;
+function includedResearch(){
+ if(researchCatalog)return researchCatalog;
+ const rows=[...STUDIES.map(record=>({record,kind:'study'})),...EVIDENCE.map(record=>({record,kind:'annotation'}))];
+ const seen=new Set();
+ researchCatalog=rows.filter(({record,kind})=>{const id=kind+':'+record.id;if(seen.has(id))return false;seen.add(id);return true;}).map(({record,kind})=>{
+  const labels=[record.ref,...(record.refs||[]).map(ref=>typeof ref==='string'?ref:ref.label),...(record.sides||[]).map(side=>side.ref),...(record.appliesTo||[])].filter(Boolean);
+  const refs=labels.flatMap(queryReferences).filter((ref,index,all)=>all.findIndex(other=>JSON.stringify(other)===JSON.stringify(ref))===index);
+  const text=[record.title,record.summary,record.text,record.reasoning,record.claim,record.response,record.context,record.assessment,record.scope].filter(Boolean).join(' ');
+  return {record,kind,refs,text};
+ });
+ return researchCatalog;
+}
+function researchRecord({record,kind,refs}){
+ const sources=[...(record.sources||[]),...(kind==='study'?[record.sab?{label:'Skeptic’s Annotated Bible — original skeptical source',url:record.sab}:null,record.responseUrl?{label:'Attributed Christian response',url:record.responseUrl}:null].filter(Boolean):[])];
+ return {id:record.id,title:record.title||record.ref,summary:record.summary||record.text,ref:record.ref||record.refs?.[0],url:kind==='study'?'#study/'+record.id:refs[0]?referenceUrl(refs[0]):'',kind,mode:record.mode||(kind==='study'?'study':''),tags:record.tags||[],tag:record.tag||'',text:record.text||'',sides:record.sides||[],languageContext:record.languageContext||'',fields:record.fields||[],scope:record.scope||record.assessment||'',reasoning:record.reasoning||record.context||'',alternativeReading:record.response||'',witness:record.witness||'',refs:refs.map(ref=>({...ref,label:referenceLabel(ref),url:referenceUrl(ref)})),sources:sources.filter((source,index,all)=>source?.url&&all.findIndex(other=>other.url===source.url)===index),checked:record.checked||null};
+}
+function matchingResearch(message,limit=12,allReferences=false){
+ const references=queryReferences(message),scope=new Set(namedBooks(message).map(book=>book.id));
+ const groups=references.length?[]:questionTerms(message);
+ if(!references.length&&!groups.length)return [];
+ return includedResearch().map(row=>{
+  if(scope.size&&!row.refs.some(ref=>scope.has(ref.book)))return {...row,score:0};
+  if(references.length){const count=references.filter(ref=>row.refs.some(other=>referenceOverlaps(ref,other))).length;return {...row,score:count&&(allReferences?count===references.length:true)?count*20+(row.kind==='study'?3:allReferences&&row.record.mode==='contradictions'?2:0):0};}
+  const hits=groups.filter(group=>groupMatches(group,row.text)).length;
+  const heading=[row.record.title,row.record.summary].filter(Boolean).join(' ');
+  return {...row,score:hits===groups.length?hits*5+groups.filter(group=>groupMatches(group,heading)).length*2:0};
+ }).filter(row=>row.score>0).sort((a,b)=>b.score-a.score||a.record.id.localeCompare(b.record.id)).slice(0,limit).map(researchRecord);
+}
+async function workspaceSearch(message,edition='kjv'){
+ const query=String(message||'').trim(),result={query,edition,mode:'search',generation:'retrieval',passages:[],research:[],total:{passages:0,research:0},limited:false};
+ if(!query)return result;
+ const refs=queryReferences(query),scope=namedBooks(query);
+ // A book name on its own opens its beginning; topical searches retain their terms.
+ const bookOnly=!refs.length&&scope.length===1&&canonicalBookNames(query).trim().toLowerCase()===scope[0].name.toLowerCase();
+ const targets=refs.length?refs:bookOnly?[{book:scope[0].id,chapter:1,first:null,last:null}]:searchPassages(query,true);
+ const groups=refs.length||bookOnly?[]:questionTerms(retrievalQuery(query));
+ const seen=new Set();
+ for(const ref of targets){
+  const data=await chapter(ref.book,ref.chapter);if(!data)continue;
+  let verses;
+  if('first' in ref)verses=data.verses.filter(verse=>(ref.first===null||verse.n>=ref.first&&verse.n<=(ref.last??ref.first))&&scriptureText(verse,edition));
+  else verses=data.verses.filter(verse=>Math.abs(verse.n-ref.verse)<=2&&scriptureText(verse,edition)).map(verse=>({verse,score:groups.filter(group=>groupMatches(group,scriptureText(verse,edition))).length})).sort((a,b)=>b.score-a.score||Math.abs(a.verse.n-ref.verse)-Math.abs(b.verse.n-ref.verse)).slice(0,1).map(row=>row.verse);
+  if(!refs.length&&!bookOnly)verses=verses.filter(verse=>enoughMatches(groups,scriptureText(verse,edition)));
+  const allowance=refs.length?Math.max(1,Math.floor(24/refs.length)):24;
+  if(verses.length>allowance)result.limited=true;
+  for(const verse of verses.slice(0,allowance)){
+   const url='#read/'+ref.book+'/'+ref.chapter+'/'+verse.n;if(seen.has(url))continue;seen.add(url);
+   if(result.passages.length===24){result.limited=true;break;}
+   result.passages.push({book:ref.book,chapter:ref.chapter,verse:verse.n,label:data.name+' '+ref.chapter+':'+verse.n,url,text:scriptureText(verse,edition),edition,kind:scriptureKind(edition)});
+  }
+  if(result.passages.length===24){result.limited=true;break;}
+ }
+ const research=matchingResearch(query,13);result.limited||=research.length>12;result.research=research.slice(0,12);
+ result.total={passages:result.passages.length,research:result.research.length};
+ return result;
+}
+async function comparisonReply(message,refs,edition){
+ const passages=[];
+ for(const ref of refs){
+  const data=await chapter(ref.book,ref.chapter);if(!data)continue;
+  const verses=data.verses.filter(verse=>(ref.first===null||verse.n>=ref.first&&verse.n<=(ref.last??ref.first))&&scriptureText(verse,edition));
+  if(!verses.length)continue;
+  passages.push({...ref,label:referenceLabel(ref),url:referenceUrl(ref),edition,text:verses.slice(0,3).map(verse=>verse.n+'. '+scriptureText(verse,edition)).join(' '),kind:scriptureKind(edition)});
+ }
+ if(passages.length!==refs.length)return {answer:'One of those passages is unavailable in '+edition.toUpperCase()+'. Check the references and selected edition.',details:'No text from another edition has been substituted.',sources:[],evidence:[],selected:[],context:'Selected passages',mode:'missing',modelEligible:false};
+ const records=matchingResearch(message,6,true);
+ const sources=passages.map((passage,index)=>({...passage,id:index+1}));
+ for(const record of records)for(const source of record.sources)if(!sources.some(existing=>existing.url===source.url))sources.push({...source,id:sources.length+1,kind:'Cited reference',recordId:record.id});
+ const answer=records.length?'The included research identifies these points of comparison:\n\n'+records.slice(0,3).map(record=>(record.witness?record.witness+': ':'')+record.summary).join('\n\n'):'Both passages are available to compare, but the included research has no assessment connecting these exact selections. Read their wording and context before drawing a conclusion.';
+ const details=records.map(record=>record.title+'\n'+record.summary+(record.reasoning?'\nReasoning: '+record.reasoning:'')+(record.alternativeReading?'\nOther reading: '+record.alternativeReading:'')+(record.scope?'\nLimits: '+record.scope:'')).join('\n\n')+(records.length?'\n\nThese are stored editorial assessments, not a newly generated conclusion. Source quotations retain their original witness; passage previews use '+edition.toUpperCase()+'.':'');
+ return {answer,details,sources:withNetsReadingLinks(sources.map(({text,...source})=>source)),evidence:passages.map((passage,index)=>({...passage,id:String(index+1)})),comparison:{left:passages[0],right:passages[1],passages,records},selected:[],context:'Selected passages',mode:'comparison',modelEligible:false};
+}
 /*__NETS_LINKS__*/
 /*__ANSWER_LAYER__*/
-async function searchReply(message,book,ch,selected,previousQuestion=''){
- const directed=await answerIntent(message,previousQuestion);if(directed)return {...directed,selected};
+async function searchReply(message,book,ch,selected,previousQuestion='',edition='kjv'){
+ message=canonicalBookNames(message);previousQuestion=canonicalBookNames(previousQuestion);
+ const explicit=queryReferences(message);
+ const directed=await answerIntent(message,previousQuestion,edition);if(directed)return {...directed,selected};
+ if(explicit.length>=2)return comparisonReply(message,explicit,edition);
  const followup=previousQuestion&&/\b(he|she|they|him|her|it|that|those|then|else|more)\b/i.test(message)&&!namedBooks(message).length;
  const query=followup?previousQuestion+' '+message:message;
- const sources=await gatherSources(query,book,ch,selected,followup?previousQuestion:'');
+ const sources=await gatherSources(query,book,ch,selected,followup?previousQuestion:'',false,edition);
  const refs=queryReferences(message).length?queryReferences(message):followup?queryReferences(previousQuestion):[];const useSelection=selected.length&&(!refs.length)&&/\b(this|these|selected)\b/i.test(message);
  const retrieval=retrievalQuery(query);
  const groups=questionTerms(retrieval).filter(g=>!['then','allowed','okay','more','else','explain'].includes(g[0]));
  const hits=searchPassages(retrieval).filter(p=>foodTopic(query)!=='eat unclean'||p.book===2&&p.chapter===11||p.book===4&&p.chapter===14);const passages=[];
  const targets=refs.length?refs:useSelection?[{book,chapter:ch,first:Math.min(...selected),last:Math.max(...selected)}]:hits.slice(0,12);
  for(const p of targets){const data=await chapter(p.book,p.chapter);if(!data)continue;
-  let verses;if('first' in p){verses=p.first?data.verses.filter(v=>v.n>=p.first&&v.n<=p.last&&(!useSelection||selected.includes(v.n))):data.verses;}
-  else {const nearby=data.verses.filter(v=>Math.abs(v.n-p.verse)<=2);const scored=nearby.map(v=>{const text=cleanExcerpt(v.kjv||v.web).toLowerCase(),words=new Set(text.match(/[a-z]+/g)||[]);return {v,score:groups.filter(g=>g.some(w=>words.has(w))).length};}).sort((a,b)=>b.score-a.score||Math.abs(a.v.n-p.verse)-Math.abs(b.v.n-p.verse));verses=scored.length?data.verses.filter(v=>Math.abs(v.n-scored[0].v.n)<=2):[];}
-  const matchText=verses.map(v=>cleanExcerpt(v.kjv||v.web)).join(' ');for(const v of verses.slice(0,refs.length||useSelection?8:5)){const label=data.name+' '+p.chapter+':'+v.n,url='#read/'+p.book+'/'+p.chapter+'/'+v.n;if(passages.some(x=>x.url===url))continue;passages.push({label,url,book:p.book,chapter:p.chapter,verse:v.n,matchText,text:cleanExcerpt(v.kjv||v.web),kind:'Primary scripture text · KJV'});}
+  let verses;if('first' in p){verses=p.first!==null?data.verses.filter(v=>v.n>=p.first&&v.n<=p.last&&(!useSelection||selected.includes(v.n))):data.verses;}
+  else {const nearby=data.verses.filter(v=>Math.abs(v.n-p.verse)<=2);const scored=nearby.map(v=>{const text=scriptureText(v,edition).toLowerCase(),words=new Set(text.match(/[a-z]+/g)||[]);return {v,score:groups.filter(g=>g.some(w=>words.has(w))).length};}).sort((a,b)=>b.score-a.score||Math.abs(a.v.n-p.verse)-Math.abs(b.v.n-p.verse));verses=scored.length?data.verses.filter(v=>Math.abs(v.n-scored[0].v.n)<=2):[];}
+  verses=verses.filter(v=>scriptureText(v,edition));const matchText=verses.map(v=>scriptureText(v,edition)).join(' ');for(const v of verses.slice(0,refs.length||useSelection?8:5)){const label=data.name+' '+p.chapter+':'+v.n,url='#read/'+p.book+'/'+p.chapter+'/'+v.n;if(passages.some(x=>x.url===url))continue;passages.push({label,url,book:p.book,chapter:p.chapter,verse:v.n,matchText,text:scriptureText(v,edition),kind:scriptureKind(edition)});}
  }
  // Keep search suggestions bounded: an unknown term must not produce a confident answer.
- const terms=groups.flat();const editorial=sources.filter(s=>s.kind==='Curated editorial comparison'||s.kind==='Provisional editorial analysis').filter(s=>terms.length&&groups.every(g=>g.some(w=>new RegExp('\\b'+w+'\\b','i').test(s.label+' '+s.text))));
+ // A topic explicitly scoped to one book should not import cross-book editorial
+ // arguments and their bibliography into an answer about that book's wording.
+ const scopedSearch=namedBooks(query).length===1&&!refs.length;
+ const terms=groups.flat();const editorial=scopedSearch?[]:sources.filter(s=>s.kind==='Curated editorial comparison'||s.kind==='Provisional editorial analysis').filter(s=>terms.length&&groups.every(g=>g.some(w=>new RegExp('\\b'+w+'\\b','i').test(s.label+' '+s.text))));
  for(const p of passages)p.directScore=groups.filter(g=>g.some(w=>new RegExp('\\b'+w+'\\b','i').test(p.label+' '+p.text))).length;
  const relevant=passages.filter(p=>refs.length||useSelection||enoughMatches(groups,p.label+' '+p.matchText) );
  const found=refs.length||useSelection?passages:relevant.sort((a,b)=>b.directScore-a.directScore||a.book-b.book||a.chapter-b.chapter||a.verse-b.verse);
  if(!found.length&&(refs.length||useSelection||!editorial.length)){
-  const topical=!refs.length&&!useSelection?await topicPassages(query):[];
+  const topical=!refs.length&&!useSelection?await topicPassages(query,edition):[];
   if(topical.length){const topic=topical[0].topic;return referenceResponse('Nave’s index connects your question with '+topic.label.toLowerCase()+'. '+topical[0].label+' says: “'+topical[0].text+'”',topical,[{label:'Nave’s Topical Bible: '+topic.label,text:'Third-party topic index. These references provide context, not a verdict about the question.',url:topic.source,kind:'Third-party reference aid'}],{mode:'topic',modelEligible:!questionIntent(message).permission});}
-  return {answer:'I couldn’t find a close match in the packaged content. Try a person, topic, or passage reference.',details:'This search checks the included Bible text and research records. A missing match does not establish that something is absent from the Bible.',sources:[],evidence:[],modelEligible:false,mode:'missing',context:'Whole Bible',selected};
+  return {answer:refs.length?'The requested passage text is unavailable in '+edition.toUpperCase()+'. Check the reference or choose another edition.':'I couldn’t find a close match in the packaged content. Try a person, topic, or passage reference.',details:refs.length?'Verse numbering can differ between editions. No text from another edition has been substituted.':'This search checks the included Bible text and research records. A missing match does not establish that something is absent from the Bible.',sources:[],evidence:[],modelEligible:false,mode:'missing',context:'Whole Bible',selected};
  }
  const linked=[];function link(p){let index=linked.findIndex(s=>s.url===p.url&&s.label===p.label);if(index<0){linked.push({...p,id:linked.length+1});index=linked.length-1;}return linked[index].id;}
  const lead=!refs.length&&!useSelection?editorial.find(p=>groups.every(g=>g.some(w=>new RegExp('\\b'+w+'\\b','i').test(p.summary||p.text.split('\n')[0])))):null;let answer;if(lead){const summary=lead.summary||(lead.text.split('\n')[0]);answer=(lead.witness?lead.witness+': ':'')+summary;link(lead);}else{const p=found[0]||editorial[0];answer=p.label+': “'+p.text+'”';}
@@ -137,7 +263,7 @@ async function searchReply(message,book,ch,selected,previousQuestion=''){
  const permission=questionIntent(message).permission;
  if(permission)details.unshift('This result is related context. A passage describing an act does not by itself establish permission or settle present-day applicability.');
  if(permission&&!refs.length&&!useSelection&&!lead&&found[0]?.directScore<groups.length)answer='I found related passages, but they do not directly answer whether this is permitted. Which rule or faith tradition are you asking about?';
- return {answer,details:details.join('\n\n'),sources:withNetsReadingLinks(linked.map(({text,matchText,directScore,book,chapter,verse,...p})=>p)),evidence:linked.filter(p=>p.kind.startsWith('Primary scripture')).slice(0,5).map(p=>({id:String(p.id),label:p.label,text:p.text,url:p.url,kind:p.kind})),modelEligible:!permission,mode:'passage',context:'Whole Bible',selected};
+ return {answer,details:details.join('\n\n'),sources:withNetsReadingLinks([...linked,...linked.flatMap(item=>(item.references||[]).filter(source=>!linked.some(existing=>existing.url===source.url)).map(source=>({...source,kind:'Cited reference',recordId:item.recordId})))].filter((source,index,all)=>all.findIndex(other=>other.url===source.url)===index).map(({text,matchText,directScore,book,chapter,verse,references,...p},index)=>({...p,id:p.id||linked.length+index+1}))),evidence:linked.filter(p=>p.kind.startsWith('Primary scripture')).slice(0,5).map(p=>({id:String(p.id),label:p.label,text:p.text,url:p.url,kind:p.kind})),modelEligible:!permission,mode:'passage',context:'Whole Bible',selected};
 }
 async function chat(request,env){
  if(request.headers.get('origin')&&request.headers.get('origin')!==new URL(request.url).origin)return json({error:'Invalid request origin.'},403);
@@ -145,7 +271,7 @@ async function chat(request,env){
  const message=typeof body.message==='string'?body.message.trim():'';if(!message||message.length>2500)return json({error:'Enter a question of 1–2,500 characters.'},400);
  const book=Number(body.book),ch=Number(body.chapter),selected=Array.isArray(body.selected)?body.selected.filter(v=>Number.isInteger(v)&&v>0&&v<200).slice(0,12):[];
  const history=Array.isArray(body.history)?body.history.filter(m=>m&&m.role==='user'&&typeof m.content==='string').slice(-8):[];
- try{return json(await searchReply(message,book,ch,selected,history.at(-1)?.content.slice(0,2500)||''));}catch{return json({error:'The packaged search could not finish. Please try again.'},500);}
+ try{const edition=readingEdition(body.edition),result=await searchReply(message,book,ch,selected,history.at(-1)?.content.slice(0,2500)||'',edition);return json({...result,edition,generation:'retrieval'});}catch{return json({error:'The packaged search could not finish. Please try again.'},500);}
 }
 
 
@@ -194,4 +320,4 @@ async function markedBook(book){
 let categoryCatalogCache;
 function publicCategoryPage(params){categoryCatalogCache||=createCategoryCatalog(EVIDENCE,STUDIES,parseRef,comparisonReadingSources,{stories:CATEGORY_STORIES,people:PEOPLE,prophecies:CATEGORY_PROPHECIES,summaries:CATEGORY_PERSON_SUMMARIES});return categoryPage(categoryCatalogCache,params);}
 /*__SYNC__*/
-export default {async fetch(request,env,ctx){const url=new URL(request.url);if(url.pathname.startsWith('/api/sync'))return syncRequest(request,env);if(url.pathname==='/release.json')return new Response(ASSETS['/release.json'].body,{headers:{'content-type':'application/json','cache-control':'no-store','access-control-allow-origin':'*'}});if(url.pathname==='/api/categories'){const result=publicCategoryPage(url.searchParams);return result?json(result):json({error:'Invalid category filters'},400);}if(url.pathname==='/api/marked-comparisons'){const book=Number(url.searchParams.get('book'));if(!url.searchParams.has('book')||!Number.isInteger(book)||!BOOKS[book])return json({error:'Invalid book'},400);return json(await markedBook(book));}if(url.pathname==='/reference/people.json')return json(PEOPLE);if(url.pathname==='/reference/topics.json')return json(TOPICS);if(url.pathname==='/api/comparisons'){const b=Number(url.searchParams.get('book')),c=Number(url.searchParams.get('chapter')),mode=url.searchParams.get('mode');if(!Number.isInteger(b)||!Number.isInteger(c)||!CHAPTERS[`${b}:${c}`]||!['history','science','contradictions','questions','commandments'].includes(mode))return json({error:'Invalid comparison request'},400);return json({items:await comparisons(b,c,mode),book:b,chapter:c,mode})}if(url.pathname==='/api/chat'){if(request.method!=='POST')return json({error:'Method not allowed'},405);return chat(request,env)}if(url.pathname==='/api/books')return json(BOOKS);if(url.pathname==='/api/chapter'){const b=Number(url.searchParams.get('book')),c=Number(url.searchParams.get('chapter'));if(!Number.isInteger(b)||!Number.isInteger(c))return json({error:'Invalid chapter'},400);const data=await chapter(b,c);return data?json(data):json({error:'Chapter not found'},404)}const asset=ASSETS[url.pathname==='/index.html'?'/':url.pathname];if(!asset)return new Response('Not found',{status:404});return new Response(asset.body,{headers:{'content-type':asset.type,'cache-control':'no-cache','x-content-type-options':'nosniff','referrer-policy':'strict-origin-when-cross-origin'}})}};
+export default {async fetch(request,env,ctx){const url=new URL(request.url);if(url.pathname.startsWith('/api/sync'))return syncRequest(request,env);if(url.pathname==='/release.json')return new Response(ASSETS['/release.json'].body,{headers:{'content-type':'application/json','cache-control':'no-store','access-control-allow-origin':'*'}});if(url.pathname==='/api/categories'){const result=publicCategoryPage(url.searchParams);return result?json(result):json({error:'Invalid category filters'},400);}if(url.pathname==='/api/marked-comparisons'){const book=Number(url.searchParams.get('book'));if(!url.searchParams.has('book')||!Number.isInteger(book)||!BOOKS[book])return json({error:'Invalid book'},400);return json(await markedBook(book));}if(url.pathname==='/reference/people.json')return json(PEOPLE);if(url.pathname==='/reference/topics.json')return json(TOPICS);if(url.pathname==='/api/comparisons'){const b=Number(url.searchParams.get('book')),c=Number(url.searchParams.get('chapter')),mode=url.searchParams.get('mode');if(!Number.isInteger(b)||!Number.isInteger(c)||!CHAPTERS[`${b}:${c}`]||!['history','science','contradictions','questions','commandments'].includes(mode))return json({error:'Invalid comparison request'},400);return json({items:await comparisons(b,c,mode),book:b,chapter:c,mode})}if(url.pathname==='/api/search'){if(request.method!=='GET')return json({error:'Method not allowed'},405);const query=url.searchParams.get('q')||'';if(query.length>2500)return json({error:'Enter a search of at most 2,500 characters.'},400);try{return json(await workspaceSearch(query,readingEdition(url.searchParams.get('edition'))));}catch{return json({error:'Search could not finish. Please try again.'},500);}}if(url.pathname==='/api/chat'){if(request.method!=='POST')return json({error:'Method not allowed'},405);return chat(request,env)}if(url.pathname==='/api/books')return json(BOOKS);if(url.pathname==='/api/chapter'){const b=Number(url.searchParams.get('book')),c=Number(url.searchParams.get('chapter'));if(!Number.isInteger(b)||!Number.isInteger(c))return json({error:'Invalid chapter'},400);const data=await chapter(b,c);return data?json(data):json({error:'Chapter not found'},404)}const asset=ASSETS[url.pathname==='/index.html'?'/':url.pathname];if(!asset)return new Response('Not found',{status:404});return new Response(asset.encoding==='base64'?Uint8Array.from(atob(asset.body),char=>char.charCodeAt(0)):asset.body,{headers:{'content-type':asset.type,'cache-control':'no-cache','x-content-type-options':'nosniff','referrer-policy':'strict-origin-when-cross-origin'}})}};

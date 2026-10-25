@@ -55,7 +55,7 @@ function confirmsParent(text,parent,child,type='father'){
  return false;
 }
 
-async function verifiedFamilyEdge(subject,relative,edge,type){
+async function verifiedFamilyEdge(subject,relative,edge,type,edition='kjv'){
  const parent=type==='children'?subject:relative,child=type==='children'?relative:subject;
  const candidates=[...(edge.contextRefs||[]),...subject.refs].slice(0,24);
  const tried=new Set();
@@ -65,7 +65,7 @@ async function verifiedFamilyEdge(subject,relative,edge,type){
   const verses=data.verses.filter(v=>Math.abs(v.n-verse)<=1);
   const text=verses.map(v=>cleanExcerpt(v.kjv||v.web)).join(' ');
   if(!confirmsParent(text,parent,child,type==='mother'?'mother':'father'))continue;
-  return verses.map(v=>({label:data.name+' '+ch+':'+v.n,text:cleanExcerpt(v.kjv||v.web),url:'#read/'+book+'/'+ch+'/'+v.n,kind:'Primary scripture text · KJV'}));
+  return verses.filter(v=>scriptureText(v,edition)).map(v=>({label:data.name+' '+ch+':'+v.n,text:scriptureText(v,edition),url:'#read/'+book+'/'+ch+'/'+v.n,kind:scriptureKind(edition)}));
  }
  return null;
 }
@@ -76,7 +76,7 @@ function referenceResponse(answer,primary=[],references=[],extra={}){
  return {answer,details:[...primary.map(s=>s.label+': “'+s.text+'”'),...references.map(s=>s.label+': '+s.text)].join('\n\n'),sources:sources.map(({text,...s})=>s),evidence:primary.map((s,i)=>({...s,id:String(i+1)})),mode:'reference',modelEligible:false,context:'Whole Bible',selected:[],...extra};
 }
 
-async function familyReply(question){
+async function familyReply(question,edition='kjv'){
  const choices=(referencePeople().get(normalizedName(question.name))||[]).filter(p=>!question.scope.length||p.refs.some(([book])=>question.scope.includes(book)));
  if(!choices.length)return referenceResponse('I couldn’t identify that person in the included reference data. Try a fuller name or passage reference.',[],[],{mode:'clarification'});
  if(['wife','husband','spouse'].includes(question.type))return referenceResponse('The included family dataset does not supply spouse links. A passage reference will help me check the relationship without guessing.',[],[],{mode:'clarification'});
@@ -87,7 +87,7 @@ async function familyReply(question){
   for(const type of types)for(const edge of (person.relations[type]||[]).slice(0,12)){
    const relative=PEOPLE.find(p=>p.id===edge.id);if(!relative)continue;
    if(question.word.startsWith('son')&&relative.gender!=='Male'||question.word.startsWith('daughter')&&relative.gender!=='Female')continue;
-   const proof=await verifiedFamilyEdge(person,relative,edge,type);if(!proof)continue;
+   const proof=await verifiedFamilyEdge(person,relative,edge,type,edition);if(!proof?.length)continue;
    primary.push(...proof);found.push({name:relative.name,type});
   }
   if(!found.length)continue;
@@ -112,7 +112,7 @@ function findReferenceTopics(message){
  return [...new Map([...direct,...ranked].map(t=>[t.id,t])).values()].slice(0,3);
 }
 
-async function topicPassages(message){
+async function topicPassages(message,edition='kjv'){
  const terms=questionTerms(message),matches=[];
  // Do not allow a broad topic to erase an unknown word in a question.
  if(!terms.length||terms.some(g=>!g.some(w=>SEARCH[w])))return [];
@@ -122,23 +122,23 @@ async function topicPassages(message){
   for(const [book,ch,verse,endChapter,endVerse]of [...topic.refs,...related.flatMap(t=>t.refs)].slice(0,80)){
    if(scope.size&&!scope.has(book))continue;const data=await chapter(book,ch);if(!data)continue;
    const candidates=verse?data.verses.filter(v=>v.n>=verse&&v.n<=(endChapter===ch?Math.min(endVerse,verse+3):verse)):data.verses.slice(0,8);
-   for(const v of candidates){const text=cleanExcerpt(v.kjv||v.web),score=terms.filter(g=>groupMatches(g,text)).length;if(!score)continue;
-    matches.push({book,chapter:ch,verse:v.n,text,label:data.name+' '+ch+':'+v.n,url:'#read/'+book+'/'+ch+'/'+v.n,kind:'Primary scripture text · KJV',score,topic});
+   for(const v of candidates){const text=scriptureText(v,edition),score=terms.filter(g=>groupMatches(g,text)).length;if(!score)continue;
+    matches.push({book,chapter:ch,verse:v.n,text,label:data.name+' '+ch+':'+v.n,url:'#read/'+book+'/'+ch+'/'+v.n,kind:scriptureKind(edition),score,topic});
    }
   }
  }
  return [...new Map(matches.sort((a,b)=>b.score-a.score).map(p=>[p.url,p])).values()].slice(0,4);
 }
 
-async function violenceReply(message){
+async function violenceReply(message,edition='kjv'){
  const topic=TOPICS.find(t=>t.label===(/\b(wife|wives|husband|spouse|partner)\b/i.test(message)?'HUSBAND':'CRUELTY'));
  const primary=[];
  for(const [book,ch,first,lastChapter,lastVerse]of topic?.refs||[]){
   const data=await chapter(book,ch);if(!data)continue;
   for(const verse of data.verses.filter(v=>v.n>=(first||1)&&v.n<=(lastChapter===ch?Math.min(lastVerse,(first||1)+4):(first||1)))){
-   const text=cleanExcerpt(verse.kjv||verse.web);
+   const text=scriptureText(verse,edition);
    if(!/\bhusbands?,? love your wives\b|\blove (?:his|their) wi(?:fe|ves)\b|\bbe not bitter\b|\bmerciful man\b|\bhe that is cruel\b/i.test(text))continue;
-   primary.push({label:data.name+' '+ch+':'+verse.n,text,url:'#read/'+book+'/'+ch+'/'+verse.n,kind:'Primary scripture text · KJV'});
+   primary.push({label:data.name+' '+ch+':'+verse.n,text,url:'#read/'+book+'/'+ch+'/'+verse.n,kind:scriptureKind(edition)});
   }
   if(primary.length>=3)break;
  }
@@ -147,38 +147,38 @@ async function violenceReply(message){
 }
 
 // Named sections need their indexed location, rather than literal word matches.
-async function namedPassageReply(message){
+async function namedPassageReply(message,edition='kjv'){
  if(!/\bsermon\s+on\s+(?:the\s+)?mount\b/i.test(message))return null;
  const scope=namedBooks(message);if(scope.length&&!scope.some(book=>book.id===39))return null;
  const index=TOPICS.find(topic=>topic.label==='SERMON');
  const refs=index?.refs.filter(([book,ch])=>book===39&&ch>=5&&ch<=7)||[];
  const primary=[];
  for(const [book,ch]of refs){const data=await chapter(book,ch);if(!data)continue;
-  primary.push({label:data.name+' '+ch,text:data.verses.slice(0,3).map(v=>cleanExcerpt(v.kjv||v.web)).join(' '),url:'#read/'+book+'/'+ch,kind:'Primary scripture text · KJV'});
+  primary.push({label:data.name+' '+ch,text:data.verses.slice(0,3).filter(v=>scriptureText(v,edition)).map(v=>scriptureText(v,edition)).join(' '),url:'#read/'+book+'/'+ch,kind:scriptureKind(edition)});
  }
  if(!primary.length)return null;
  return referenceResponse('The Sermon on the Mount is recorded in Matthew 5–7. Open the chapter chips to read the complete teaching in context.',primary,[],{mode:'named-passage'});
 }
 
-async function answerIntent(message,previous){
+async function answerIntent(message,previous,edition='kjv'){
  const intent=questionIntent(message);
- if(intent.violence)return violenceReply(message);
- const family=familyQuestion(message,previous);if(family)return familyReply(family);
- if(!queryReferences(message).length){const named=await namedPassageReply(message);if(named)return named;}
+ if(intent.violence)return violenceReply(message,edition);
+ const family=familyQuestion(message,previous);if(family)return familyReply(family,edition);
+ if(!queryReferences(message).length){const named=await namedPassageReply(message,edition);if(named)return named;}
  // Explicit passages retain priority over topic routing. Carry the food subject
  // only through a short dependent follow-up, never into a new named subject.
  if(!queryReferences(message).length){
   const dependent=/^(?:and |but |so |then )?(?:can (?:i|we) eat (?:it|that|them)|is (?:it|that) (?:allowed|a sin|kosher)|what about (?:christians|today)|does (?:that|it) apply (?:to (?:us|me)|today))[?.!]*$/i.test(message.trim());
-  if(aquaticFoodQuestion(message)||dependent&&aquaticFoodQuestion(previous))return dietaryReply(message);
+  if(aquaticFoodQuestion(message)||dependent&&aquaticFoodQuestion(previous))return dietaryReply(message,edition);
  }
  return null;
 }
 
-async function dietaryReply(message){
+async function dietaryReply(message,edition='kjv'){
  const primary=[];
  for(const [book,ch,verses]of [[2,11,[9,10,11,12]],[4,14,[9,10]],[40,7,[18,19,20,21,22,23]],[43,10,[28]],[44,14,[2,3,14,20]]]){
   const data=await chapter(book,ch);if(!data)continue;
-  for(const n of verses){const v=data.verses.find(v=>v.n===n);if(v)primary.push({label:data.name+' '+ch+':'+n,text:cleanExcerpt(v.kjv||v.web),url:'#read/'+book+'/'+ch+'/'+n,kind:'Primary scripture text · KJV'});}
+  for(const n of verses){const v=data.verses.find(v=>v.n===n);if(v&&scriptureText(v,edition))primary.push({label:data.name+' '+ch+':'+n,text:scriptureText(v,edition),url:'#read/'+book+'/'+ch+'/'+n,kind:scriptureKind(edition)});}
  }
  const scope=namedBooks(message).map(b=>b.id);
  const scoped=scope.length?primary.filter(p=>scope.some(b=>p.url.startsWith('#read/'+b+'/'))):primary;

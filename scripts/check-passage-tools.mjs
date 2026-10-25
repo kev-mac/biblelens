@@ -1,8 +1,8 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
-const nodes=new Map(),handlers={},downloads=[],links=[];
+const nodes=new Map(),handlers={},downloads=[],links=[],notices=[];
 const node=id=>{if(!nodes.has(id))nodes.set(id,{id,value:'',hidden:false,disabled:false,attrs:{},setAttribute(k,v){this.attrs[k]=v},addEventListener(type,fn){handlers[id+':'+type]=fn},append(){},replaceChildren(){},remove(){},before(){},focus(){},select(){},showModal(){this.open=true;},close(){this.open=false;}});return nodes.get(id)};
 const bookmark=node('bookmark'),dock=node('dock');
-const c={state:{bookmarks:[],notes:{}},ENTRIES:[],readingBook:0,readingChapter:8,books:[{name:'Genesis'}],reading:{name:'Genesis'},storageAvailable:true,confirm:()=>true,selectedVerseNumbers:()=>[],$:node,esc:s=>String(s).replaceAll('<','&lt;').replaceAll('>','&gt;'),persist(){c.saves++},saves:0,toast(){},download:(...args)=>downloads.push(args),navigator:{clipboard:{writeText:async text=>links.push(text)}},location:{href:'https://example.com/#read/0/8'},URL,document:{querySelector:selector=>selector==='[data-passage-save]'?bookmark:dock,addEventListener:(type,fn)=>handlers['document:'+type]=fn}};
+const c={state:{bookmarks:[],notes:{}},ENTRIES:[],readingBook:0,readingChapter:8,books:[{name:'Genesis'}],reading:{name:'Genesis'},storageAvailable:true,confirm:()=>true,selectedVerseNumbers:()=>[],$:node,esc:s=>String(s).replaceAll('<','&lt;').replaceAll('>','&gt;'),persist(){c.saves++},saves:0,toast:(message,options)=>notices.push({message,...options}),download:(...args)=>downloads.push(args),navigator:{clipboard:{writeText:async text=>links.push(text)}},location:{href:'https://example.com/#read/0/8'},URL,window:{addEventListener:(type,fn)=>handlers['window:'+type]=fn},document:{querySelector:selector=>selector==='[data-passage-save]'?bookmark:dock,addEventListener:(type,fn)=>handlers['document:'+type]=fn}};
 vm.createContext(c);const appSource=fs.readFileSync('src/app.js','utf8');vm.runInContext(appSource.slice(appSource.indexOf('function confirmNoteAction('),appSource.indexOf('function persist(')),c);vm.runInContext(fs.readFileSync('src/passage.js','utf8'),c);
 node('#passage-note-editor').hidden=true;node('#passage-note-toggle').onclick();assert.equal(node('#passage-note-editor').hidden,false);
 node('#passage-note').value='Private <note>';
@@ -24,14 +24,30 @@ assert(c.passageResearchMarkdown().includes('Genesis 8'));
 c.renderReader=()=>{};
 assert.equal(c.toggleVerseMark('bookmark',0,9,2),true);assert(c.state.verseBookmarks['0:9:2']);assert(node('#saved-passages').innerHTML.includes('Genesis 9:2'));
 assert.equal(c.toggleVerseMark('highlight',0,9,2),false);assert(!c.state.verseHighlights['0:9:2']);assert(!c.passageResearchMarkdown().includes('Highlighted verse'));
-c.state.verseNotes['0:9:2']={book:0,chapter:9,verse:2,name:'Genesis',title:'Keep until confirmed',text:'Private note'};
-const savesBeforeCancel=c.saves;
-assert.equal(c.toggleVerseMark('bookmark',0,9,2),null);assert(c.state.verseBookmarks['0:9:2']);assert(c.state.verseNotes['0:9:2']);assert.equal(c.saves,savesBeforeCancel);assert(node('#note-confirm-dialog').open);assert(node('#note-confirm-message').textContent.includes('permanently delete'));assert(node('#note-confirm-message').textContent.includes('Genesis 9:2'));
-node('#note-confirm-cancel').onclick();assert(c.state.verseBookmarks['0:9:2']);assert(c.state.verseNotes['0:9:2']);assert.equal(c.saves,savesBeforeCancel);
+c.state.verseNotes['0:9:2']={book:0,chapter:9,verse:2,name:'Genesis',title:'Keep title',text:'Private note'};
 c.state.verseNotes['0:9:4']={book:0,chapter:9,verse:4,name:'Genesis',text:'Other note'};
-assert.equal(c.toggleVerseMark('bookmark',0,9,2),null);node('#note-confirm-accept').onclick();assert(!c.state.verseBookmarks['0:9:2']);assert(!c.state.verseNotes['0:9:2']);assert(c.state.verseNotes['0:9:4']);assert(!c.passageResearchMarkdown().includes('Keep until confirmed'));
-assert.equal(c.toggleVerseMark('bookmark',0,9,7),true);assert.equal(c.toggleVerseMark('bookmark',0,9,7),false);assert(!node('#note-confirm-dialog').open,'Unmarking without a note must not show a warning');
-console.log('PASS: unmark cancellation preserves bookmark/note/title and avoids writes; confirmation removes only the target bookmark and personal note.');
+const originalNote=c.state.verseNotes['0:9:2'];
+assert.equal(c.toggleVerseMark('bookmark',0,9,2),false);assert(!c.state.verseBookmarks['0:9:2']);assert.equal(c.state.verseNotes['0:9:2'],originalNote);assert(c.state.verseNotes['0:9:4']);assert(!node('#note-confirm-dialog').open);assert.match(notices.at(-1).message,/Bookmark removed/);
+assert.equal(notices.at(-1).undo(),true);assert(c.state.verseBookmarks['0:9:2']);assert.equal(c.state.verseNotes['0:9:2'],originalNote);
+assert.equal(c.toggleVerseMark('bookmark',0,9,7),true);const undoSave=notices.at(-1).undo;
+c.state.verseNotes['0:9:7']={book:0,chapter:9,verse:7,name:'Genesis',title:'New note',text:'Written after bookmarking'};
+assert.equal(undoSave(),true);assert(!c.state.verseBookmarks['0:9:7']);assert.equal(c.state.verseNotes['0:9:7'].text,'Written after bookmarking');
+assert.equal(c.toggleVerseMark('bookmark',0,9,7),true);const outdatedUndo=notices.at(-1).undo;
+c.toggleVerseMark('bookmark',0,9,7);c.toggleVerseMark('bookmark',0,9,7);assert.equal(outdatedUndo(),false);assert(c.state.verseBookmarks['0:9:7'],'Old Undo must not remove a later bookmark');
+c.toggleVerseMark('bookmark',0,9,8);const highlightUndo=notices.at(-1).undo;
+const highlight={edition:'kjv',start:0,end:5,text:'Light',color:'yellow'};c.state.verseBookmarks['0:9:8'].highlights=[highlight];
+assert.equal(highlightUndo(),false);assert.equal(c.toggleVerseMark('bookmark',0,9,8),true);assert.equal(c.state.verseBookmarks['0:9:8'].highlights[0],highlight);assert.match(notices.at(-1).message,/highlights first/);
+c.toggleVerseMark('bookmark',0,9,10);const equalReplacementUndo=notices.at(-1).undo;c.state.verseBookmarks['0:9:10']=JSON.parse(JSON.stringify(c.state.verseBookmarks['0:9:10']));assert.equal(equalReplacementUndo(),true,'Equivalent storage hydration does not invalidate Undo');
+console.log('PASS: explicit bookmark removal and Undo preserve notes/titles; stale Undo cannot erase later bookmarks or highlights; highlights block destructive removal.');
+// A real external change invalidates old Undo even when later sync returns the
+// bookmark to the same value; unrelated notes and equal hydration do not.
+c.toggleVerseMark('bookmark',0,9,11);c.toggleVerseMark('bookmark',0,9,11);const removedUndo=notices.at(-1).undo;
+const synced={book:0,chapter:9,verse:11,name:'Genesis'};c.state.verseBookmarks['0:9:11']=synced;
+handlers['window:biblelens:statechange']({detail:{before:{verseBookmarks:{}},data:{verseBookmarks:{'0:9:11':synced}}}});
+delete c.state.verseBookmarks['0:9:11'];handlers['window:biblelens:statechange']({detail:{before:{verseBookmarks:{'0:9:11':synced}},data:{verseBookmarks:{}}}});
+assert.equal(removedUndo(),false);assert(!c.state.verseBookmarks['0:9:11'],'Undo cannot resurrect a bookmark after intervening synced save/removal');
+console.log('PASS: intervening sync changes invalidate stale Undo, including an add/remove race ending at the original value.');
+
 c.mergePassageBackup({verseBookmarks:{'0:9:3':{book:0,chapter:9,verse:3,name:'Genesis'}},verseHighlights:{'bad':{book:0,chapter:9,verse:0,name:'Genesis'}}});assert(c.state.verseBookmarks['0:9:3']);assert(!c.state.verseHighlights.bad);
 const html=fs.readFileSync('src/index.html','utf8');
 assert(!html.includes('data-view="method"'),'About is removed from the header icon row');assert(html.includes('aria-label="About BibleLens"'),'About remains in the footer');
@@ -73,11 +89,25 @@ assert(c.passageResearchMarkdown().includes('Chapter title'));c.syncPassageTools
 assert.equal(c.buildVerseShareUrl(0,9,[3]),'https://example.com/#read/0/9/3');
 assert.equal(c.buildVerseShareUrl(0,9,[7,4,3,4,5]),'https://example.com/#read/0/9/3-5,7');
 assert.throws(()=>c.buildVerseShareUrl(0,9,[]));
+const originalHref=c.location.href;
+for(const href of ['capacitor://localhost/#read/0/1','file:///app/index.html?token=private','https://localhost/?token=private','http://localhost:8790/?token=private','http://127.0.0.1:8790/?token=private','http://127.2.3.4:8790/#explore','http://[::1]:8790/','http://preview.localhost:8790/']){
+ c.location.href=href;assert.equal(c.buildVerseShareUrl(0,9,[3]),'https://scripture-lens.kvn-mcgwn.chatgpt.site/#read/0/9/3',href);
+}
+for(const origin of ['https://scripture-lens.kvn-mcgwn.chatgpt.site','https://biblelens-design-review.kvn-mcgwn.chatgpt.site']){
+ c.location.href=origin+'/index.html?build=267&token=private#notebook';assert.equal(c.buildVerseShareUrl(0,9,[3,4]),origin+'/#read/0/9/3-4','Real hosted origins keep their audience while dropping query data and old paths');
+}
+c.location.href='https://user:private@example.com/path?token=private#notebook';assert.equal(c.buildVerseShareUrl(0,9,[3]),'https://example.com/#read/0/9/3');c.location.href=originalHref;
+console.log('PASS: native/file/loopback links use the published site; real hosted previews preserve their origin and strip queries, credentials and previous routes.');
 c.readingChapter=9;c.reading.verses=[{n:3,kjv:'First public verse text.'},{n:4,kjv:'Second public verse text.'}];
 await c.copyVerseSelection(0,9,[3,4]);assert(links.at(-1).endsWith('https://example.com/#read/0/9/3-4'));assert(links.at(-1).includes('First public verse text.'));assert(links.at(-1).includes('Second public verse text.'));assert(!links.at(-1).includes('Private'));
 const sharePayloads=[];c.navigator.share=async value=>sharePayloads.push(value);
 await c.copyVerseSelection(0,9,[4]);assert.equal(sharePayloads.length,0);assert(links.at(-1).endsWith('https://example.com/#read/0/9/4'));assert(links.at(-1).includes('Second public verse text.'));assert(!links.at(-1).includes('Private'));
 console.log('PASS: editable note titles survive serialization and backup merge; note-only marks render expanded; selected verse links retain exact ranges and omit personal notes.');
+await c.shareVerseLink(0,9,3);assert.equal(sharePayloads.length,1);assert.equal(sharePayloads[0].url,'https://example.com/#read/0/9/3');assert.deepEqual(Object.keys(sharePayloads[0]).sort(),['title','url']);assert(!JSON.stringify(sharePayloads[0]).includes('Private'));
+delete c.navigator.share;await c.shareVerseLink(0,9,3);assert.equal(links.at(-1),'https://example.com/#read/0/9/3');
+c.navigator.share=async()=>{throw Object.assign(Error('cancelled'),{name:'AbortError'});};const beforeShareCancel=notices.length;assert.equal(await c.shareVerseLink(0,9,3),false);assert.equal(notices.length,beforeShareCancel);
+console.log('PASS: Share uses only the public passage link, falls back to copying that link, and respects cancelled system sharing.');
+
 const restored={...c,state:{bookmarks:[],notes:{},verseHighlights:{'0:1:1':{book:0,chapter:1,verse:1,name:'Genesis'},'0:1:2':{book:0,chapter:1,verse:2,name:'Genesis',text:'Keep legacy written text'}},verseBookmarks:{'0:1:3':{book:0,chapter:1,verse:3,name:'Genesis'}},verseNotes:{'0:1:3':{book:0,chapter:1,verse:3,name:'Genesis',title:'Existing title',text:'Existing body'}}},migrationSaves:0};
 restored.persist=()=>restored.migrationSaves++;
 vm.createContext(restored);vm.runInContext(fs.readFileSync('src/passage.js','utf8'),restored);

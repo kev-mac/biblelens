@@ -1,0 +1,46 @@
+/* Place cards provide a real geographical preview before their quiet actions. */
+html body.lens-app #places-view .place-map-card { margin-top: 18px; }
+html body.lens-app #places-view .place-map-preview {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 16px;
+  background: #afc9ce;
+  color: #273f47;
+  text-align: center;
+}
+html body.lens-app #places-view .place-map-preview svg { display: block; width: 100%; height: auto; }
+.place-map-water { fill: #afc9ce; }
+.place-map-land { fill: #e5dfcd; stroke: #b7b8a6; stroke-width: .7; }
+.place-map-grid { fill: none; stroke: #607b75; stroke-opacity: .13; stroke-width: .8; }
+.place-map-compass { fill: #426168; stroke: #426168; stroke-width: 1.5; }
+.place-map-compass text { font: 11px var(--ui-font); stroke: none; }
+.place-map-halo { fill: #a05538; fill-opacity: .14; }
+.place-map-pin { fill: #a05538; stroke: #fff9ed; stroke-width: 3; }
+.place-map-name { fill: #273f47; font: 600 20px var(--ui-font); paint-order: stroke; stroke: #e9e8dc; stroke-width: 5px; stroke-linejoin: round; }
+html body.lens-app #places-view .place-map-actions { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+html body.lens-app #places-view .place-map-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 6px 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent !important;
+  color: var(--lens-ink);
+  font: 500 .8125rem/1.4 var(--ui-font);
+}
+html body.lens-app #places-view .place-map-action svg { width: 15px; height: 15px; }
+html body.lens-app #places-view .place-map-action:hover { color: var(--lens-copper); }
+html body.lens-app #places-view .place-map-context { margin: 0; color: var(--lens-muted); font: .6875rem/1.5 var(--ui-font); }
+html body.lens-app #places-view .place-map-unavailable { display: grid; min-height: 130px; place-items: center; color: var(--lens-muted); background: var(--lens-surface); font: .875rem var(--ui-font); }
+html body.lens-app #places-view .place-location-details { padding: 0 0 12px; border-bottom: 1px solid var(--lens-rule); margin-bottom: 14px; }
+html body.lens-app #places-view .place-location-details h3 { font: 600 .875rem var(--ui-font); }
+html body.lens-app #places-view .place-location-details p { margin: 6px 0; }
+html body.dark #places-view .place-map-preview { filter: brightness(.86) saturate(.8); }
+html body.lens-app .story-summary :is(.person-chip, .location-chip) { text-decoration: underline !important; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent) !important; text-underline-offset: .16em; }
+@media (min-width: 761px) { html body.lens-app #places-view .place-map-card { max-width: 720px; } }
+@media (forced-colors: active) { html body.lens-app #places-view .place-map-preview { border: 1px solid ButtonText; } }

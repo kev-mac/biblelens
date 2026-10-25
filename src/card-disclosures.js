@@ -1,6 +1,7 @@
 'use strict';
 // Native disclosures keep touch, mouse and keyboard behavior consistent across directories.
-const COLLAPSED_CARD_SELECTOR='.prophecy-card,.timeline-card,.timeline-event-card,.passage-saved-card,.category-directory-card,#cards > .card,#saved-cards > .card';
+// Reviewed timeline cards already own an Academic comparison disclosure.
+const COLLAPSED_CARD_SELECTOR='.prophecy-card,.timeline-card,.passage-saved-card,.category-directory-card,#cards > .card,#saved-cards > .card';
 const collapsedCards=new WeakSet();
 function collapseDirectoryCard(card){
  if(collapsedCards.has(card))return;
@@ -14,6 +15,11 @@ function collapseDirectoryCard(card){
  const disclosure=document.createElement('details');disclosure.className='card-disclosure';
  const summary=document.createElement('summary');summary.className='card-disclosure-heading';
  const label=document.createElement('span');label.className='card-disclosure-label';label.textContent='Details';summary.append(label);
+ if(card.matches('.prophecy-card')){
+  summary.className+=' card-disclosure-icon';
+  summary.setAttribute('aria-label','Passages and interpretation for '+title.textContent);
+  label.textContent='';label.setAttribute('aria-hidden','true');
+ }
  const content=document.createElement('div');content.className='card-disclosure-content';
  content.append(...card.childNodes);disclosure.append(summary,content);card.append(preview,disclosure);
 }
@@ -30,7 +36,7 @@ function resetCardDisclosures(){
   if(panel){if(panel.classList.contains('timeline-discrepancy')){panel.classList.remove('is-expanded');panel.setAttribute('aria-hidden','true');panel.inert=true;}else panel.hidden=true;}
  });
  document.querySelectorAll('.comparison-evidence').forEach(node=>{node.hidden=true;});
- document.querySelectorAll('[data-summary-toggle],[data-summary-expand]').forEach(node=>{node.setAttribute('aria-expanded','false');if(node.hasAttribute('data-summary-expand'))node.setAttribute('aria-label','Expand references and reasoning');});
+ document.querySelectorAll('[data-summary-toggle],[data-summary-expand]').forEach(node=>{node.setAttribute('aria-expanded','false');if(node.hasAttribute('data-summary-expand'))node.setAttribute('aria-label','Expand '+(node.dataset?.summaryLabel||'references and reasoning'));});
 }
 function mountCollapsedCards(){
  collapseDirectoryCards(document.body);

@@ -8,4 +8,8 @@ Cloud notes belong to the signed-in user. Preserve offline changes, three-way me
 
 Claude's research role and restrictions in CLAUDE.md remain in force unless the owner explicitly authorizes a different task.
 
-Use sans serif by default throughout the app, including page titles, headings, quotations and editors. Serif fonts are available only when explicitly selected in reader font preferences.
+The owner selected Inter, sans serif throughout. The Study Atlas uses one typeface consistently across scripture, headings and interface controls. Settings → App font changes all of these together using readerPreferences.appFont. Preserve explicit app-wide choices; legacy reading-only preferences are retained as data but must not silently become an app-wide selection. This replaces the earlier Lora/Inter pairing after the owner's feedback about mixed serif and sans serif typography.
+
+The primary audience is adults aged 25–50 using mobile phones. Treat phone layouts as the primary experience: thumb-reachable navigation, light contemporary controls, clear action sheets, and purposeful motion with reduced-motion support. Keep actions discoverable; do not imply unsupported gestures with decorative handles.
+
+The audience is primarily African and Middle Eastern. Human illustrations should reflect African and Middle Eastern people with varied skin tones, facial features and natural hair textures. Use dignified individual portrayals; imagined artwork must not be presented as historical evidence or a verified portrait.

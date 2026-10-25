@@ -1,11 +1,11 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
-const handlers={},popupHandlers={},children=new Map(),loads=[];let requests=0;
-const child=s=>{if(!children.has(s))children.set(s,{setAttribute(){},focus(){}});return children.get(s);};
+const handlers={},popupHandlers={},children=new Map(),loads=[];let requests=0,selectedEdition='kjv';
+const child=s=>{if(!children.has(s))children.set(s,{attrs:{},setAttribute(key,value){this.attrs[key]=value;},focus(){doc.activeElement=this;}});return children.get(s);};
 const popup={style:{},hidden:true,setAttribute(){},querySelector:child,querySelectorAll:()=>[],contains:n=>n===popup,getBoundingClientRect:()=>({width:360,height:180}),addEventListener:(type,fn)=>popupHandlers[type]=fn};
-const doc={createElement:()=>popup,body:{append(){}},querySelector:s=>s==='#reader-edition'?{value:'kjv'}:null,addEventListener:(type,fn,capture)=>{const key=type+(capture===true?':capture':'');const previous=handlers[key];handlers[key]=previous?ev=>{previous(ev);fn(ev);}:fn;}};
+const doc={createElement:()=>popup,body:{append(){}},querySelector:s=>s==='#reader-edition'?{value:selectedEdition}:null,addEventListener:(type,fn,capture)=>{const key=type+(capture===true?':capture':'');const previous=handlers[key];handlers[key]=previous?ev=>{previous(ev);fn(ev);}:fn;}};
 const ctx={state:{verseBookmarks:{},verseHighlights:{}},document:doc,window:{innerWidth:780,innerHeight:1004,addEventListener(){}},setTimeout,clearTimeout,scriptureHtml:v=>v.kjv,setView:(v,update)=>loads.push({view:v,update}),loadChapter:(...ref)=>loads.push({ref}),fetch:async()=>{requests++;return{ok:true,json:async()=>({verses:[{n:1,kjv:'Full verse one, beyond the quoted excerpt.'},{n:2,kjv:'Full verse two.'}]})}}};
 vm.createContext(ctx);vm.runInContext(fs.readFileSync('src/citations.js','utf8').split('// Supporting-context markers')[0],ctx);
-const chip=(verse,end=verse)=>({dataset:{cite:`0/1/${verse}`,citeEnd:String(end),citeLabel:`Genesis 1:${verse}`},attrs:{},setAttribute(k,v){this.attrs[k]=v;},closest:()=>null,contains:()=>false,getBoundingClientRect:()=>({left:100,top:300,bottom:324})});
+const chip=(verse,end=verse)=>({isConnected:true,focus(){doc.activeElement=this;handlers.focusin({target:target(this)});},dataset:{cite:`0/1/${verse}`,citeEnd:String(end),citeLabel:`Genesis 1:${verse}`},attrs:{},setAttribute(k,v){this.attrs[k]=v;},closest:()=>null,contains:()=>false,getBoundingClientRect:()=>({left:100,top:300,bottom:324})});
 const target=b=>({closest:s=>s.includes('data-cite')?b:null});const settle=()=>new Promise(r=>setImmediate(r));
 const b=chip(1);handlers.pointerover({pointerType:'mouse',target:target(b),relatedTarget:null});await settle();assert(!popup.hidden);assert.equal(child('.preview-text').innerHTML,'Full verse one, beyond the quoted excerpt.');assert(!popup.innerHTML.includes('preview-link'));assert(!popup.innerHTML.includes('Highlight verse'));assert(popup.innerHTML.includes('data-verse-action="copy"'));assert.equal(requests,1);
 b.dataset.citeWitness='Septuagint';b.dataset.citeSummary='The exact original summary.';handlers.focusin({target:target(b)});await settle();assert.equal(child('.preview-summary').textContent,'Septuagint: The exact original summary.');assert.equal(child('.preview-summary').hidden,false);
@@ -20,7 +20,8 @@ handlers.focusout({target:target(story),relatedTarget:null});await new Promise(r
 handlers.keydown({key:'Escape',preventDefault(){}});assert(popup.hidden);
 
 handlers.pointerover({pointerType:'touch',target:target(b),relatedTarget:null});await settle();assert(popup.hidden);
-handlers.focusin({target:target(b)});await settle();handlers.keydown({key:'Escape',preventDefault(){}});assert(popup.hidden);
+handlers.focusin({target:target(b)});await settle();handlers.keydown({key:'Escape',preventDefault(){}});assert(popup.hidden);assert.equal(doc.activeElement,b,'Escape restores the citation opener without reopening its preview');
+handlers.focusin({target:target(b)});await settle();handlers.click({target:{closest:selector=>selector==='.preview-close'?{}:null},preventDefault(){}});assert(popup.hidden);assert.equal(doc.activeElement,b,'Close restores the citation opener');
 // Long-pressing a citation previews it and moving away cancels the hold.
 handlers.pointerdown({button:0,target:target(b),pointerId:10,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);handlers.pointerup();handlers.keydown({key:'Escape',preventDefault(){}});
 handlers.pointerdown({button:0,target:target(b),pointerId:11,clientX:10,clientY:10});handlers.pointermove({pointerId:11,clientX:30,clientY:10});await new Promise(r=>setTimeout(r,550));assert(popup.hidden);
@@ -43,9 +44,10 @@ ctx.readingBook=0;ctx.readingChapter=3;ctx.books=[{name:'Genesis'}];ctx.reading=
 ctx.fetch=async()=>({ok:true,json:async()=>({verses:[{n:22,kjv:'KJV fixture',web:'Complete WEB fixture verse.'}]})});ctx.scriptureHtml=(v,ed)=>v[ed];
 const body={...chip(22),closest:s=>s==='.verse'?{id:'verse-22'}:null,matches:s=>s==='.verse-body'};
 const verseTarget={closest:s=>s==='.verse-body'?body:null};
-handlers.pointerdown({button:0,target:verseTarget,pointerId:7,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');assert.equal(child('.preview-text').innerHTML,'Complete WEB fixture verse.');handlers.pointercancel();handlers.pointerup();handlers.pointerout({pointerType:'touch',target:target(body),relatedTarget:null});popupHandlers.pointerleave({pointerType:'touch'});await new Promise(r=>setTimeout(r,250));let bodyReleaseStopped=false;handlers['click:capture']({target:verseTarget,preventDefault(){},stopImmediatePropagation(){bodyReleaseStopped=true;}});assert(bodyReleaseStopped);assert(!popup.hidden);handlers.keydown({key:'Escape',preventDefault(){}});
+handlers.pointerdown({button:0,target:verseTarget,pointerId:7,clientX:10,clientY:10});await new Promise(r=>setTimeout(r,550));assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'KJV');assert.equal(child('.preview-text').innerHTML,'KJV fixture');handlers.pointercancel();handlers.pointerup();handlers.pointerout({pointerType:'touch',target:target(body),relatedTarget:null});popupHandlers.pointerleave({pointerType:'touch'});await new Promise(r=>setTimeout(r,250));let bodyReleaseStopped=false;handlers['click:capture']({target:verseTarget,preventDefault(){},stopImmediatePropagation(){bodyReleaseStopped=true;}});assert(bodyReleaseStopped);assert(!popup.hidden);handlers.keydown({key:'Escape',preventDefault(){}});
 handlers.pointerdown({button:0,target:verseTarget,pointerId:8,clientX:10,clientY:10});handlers.pointermove({pointerId:8,clientX:25,clientY:10});await new Promise(r=>setTimeout(r,550));assert(popup.hidden);
-handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'WEB');
+handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();assert(!popup.hidden);assert.equal(child('.preview-edition').textContent,'KJV');
+selectedEdition='web';handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();assert.equal(child('.preview-edition').textContent,'WEB');assert.equal(child('.preview-text').innerHTML,'Complete WEB fixture verse.');selectedEdition='kjv';
 const html=fs.readFileSync('src/index.html','utf8');assert(!html.includes('id="ask-selection"'));for(const id of ['prev-bottom','next-bottom'])assert(html.includes(`id="${id}"`));
 // Marked-card padding and note surfaces share the verse's long-press target.
 handlers.keydown({key:'Escape',preventDefault(){}});
@@ -60,6 +62,21 @@ handlers.focusin({target:target(body)});await settle();
 await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'copy-selected'}})}});assert.deepEqual(shared[1],{book:0,chapter:3,verses:[21,22]});assert(popup.hidden);
 const asks=[];ctx.askAboutVerse=(...args)=>asks.push(args);handlers.focusin({target:target(body)});await settle();await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'ask'}})}});assert.deepEqual(asks[0],[0,3,22]);assert(popup.hidden);
 console.log('PASS: verse menu copies the selected verse range without private notes and Ask opens a verse-specific draft.');
+// All saving actions are named; a note does not require an existing bookmark.
+ctx.state.verseNotes={};handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();
+const bookmarkAction=child('[data-verse-action="bookmark"]'),noteAction=child('[data-verse-action="note"]');
+assert.equal(bookmarkAction.attrs['aria-label'],'Bookmark');assert.equal(noteAction.hidden,false);assert.equal(noteAction.attrs['aria-label'],'Add note');assert.equal(doc.activeElement,bookmarkAction,'Opening verse actions focuses the first enabled action');
+const notesOpened=[];ctx.openVerseNote=(...args)=>notesOpened.push(args);await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'note'}})}});assert.deepEqual(notesOpened,[[0,3,22]]);assert(!ctx.state.verseBookmarks['0:3:22']);
+ctx.state.verseNotes['0:3:22']={title:'Title without body',text:''};ctx.state.verseBookmarks['0:3:22']={book:0,chapter:3,verse:22,highlights:[{edition:'kjv',start:0,end:3,text:'KJV'}]};
+handlers.keydown({key:'Enter',target:body,preventDefault(){}});await settle();
+assert.equal(noteAction.attrs['aria-label'],'Edit note');assert.equal(child('[data-verse-action="delete-note"]').hidden,false,'Title-only notes remain editable and independently deletable');assert.equal(bookmarkAction.attrs['aria-label'],'Remove bookmark');assert.equal(bookmarkAction.disabled,true);assert.equal(child('.preview-bookmark-help').hidden,false);assert.equal(bookmarkAction.attrs['aria-describedby'],'preview-bookmark-help');assert.equal(doc.activeElement,noteAction,'A disabled bookmark removal control is skipped on opening');
+let mutationAttempts=0;ctx.toggleVerseMark=()=>mutationAttempts++;await popupHandlers.click({target:{closest:()=>({disabled:true,dataset:{verseAction:'bookmark'}})}});assert.equal(mutationAttempts,0);assert(!popup.hidden);
+const shareLinks=[];ctx.shareVerseLink=async(...args)=>{shareLinks.push(args);return true;};await popupHandlers.click({target:{closest:()=>({dataset:{verseAction:'share'}})}});assert.deepEqual(shareLinks,[[0,3,22]]);assert(popup.hidden);
+const scriptureTarget={closest:s=>s==='[data-scripture]'?{}:s==='.verse-body'?body:null};
+for(let index=0;index<2;index++){handlers.pointerdown({button:0,pointerType:'touch',target:scriptureTarget,pointerId:32,clientX:50,clientY:50});handlers.pointerup();}
+assert(!handlers.dblclick,'No double-click handler may consume native text selection');assert(popup.hidden);assert.equal(mutationAttempts,0,'Touch text selection cannot mutate bookmarks');
+console.log('PASS: explicit actions label their effect, allow independent/title-only notes, protect highlights, delegate public sharing, focus enabled controls and leave text gestures native.');
+
 
 assert(!html.includes('id="prev-top"'));assert(!html.includes('id="next-top"'));
 

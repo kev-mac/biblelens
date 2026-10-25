@@ -9,6 +9,7 @@ const root = document.querySelector('#timeline-view');
 const list = root.querySelector('.timeline-list');
 const search = root.querySelector('[type="search"]');
 const history = root.querySelector('[data-timeline-filter]');
+history.textContent='With academic comparison';
 let historyOnly = false;
 function render() {
  const term = search.value.trim().toLowerCase();

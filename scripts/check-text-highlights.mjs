@@ -31,6 +31,11 @@ const html=wrapReferenceNames('Moses <test> James',()=>[],match,{book:39,chapter
 assert(html.includes('data-person-id="j1"'));assert(html.includes('&lt;test&gt;'));
 const raw=JSON.parse(fs.readFileSync('data/reference/people.json','utf8')),real=createPersonMatcher(raw);
 assert(real('Abraham').length);assert(real('Moses',{book:1,chapter:3,verse:4}).length);
+const familyOfNoah={scope:'story',book:0,chapter:9,verse:18,endChapter:10,endVerse:32};
+assert.equal(real('Noah’s sons',familyOfNoah)[0]?.id,'recVMHzYdllgvTo09','A narrative range and relationship witnesses disambiguate Noah without changing possessive text');
+assert.equal(real('Noah',{scope:'story',book:3,chapter:27,verse:1,endChapter:27,endVerse:11})[0]?.id,'recauQ3IPfRTuQbBj','The daughter of Zelophehad remains a different person');
+assert.equal(real('Noah').length,0,'An unqualified duplicate name still does not link');
+assert.equal(real('Noah',{scope:'story',book:0,chapter:1,verse:1,endChapter:1,endVerse:31}).length,0,'Do not infer a duplicate person from the book alone');
 console.log('PASS: exact highlight storage/reload, escaping, validation, edition separation, duplicate suppression, and passage-aware People links.');
 
 context.state.verseNotes['0:1:1']={title:'Keep this',text:'Personal note'};

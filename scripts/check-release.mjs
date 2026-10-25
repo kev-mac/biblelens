@@ -16,9 +16,14 @@ try{
  fs.writeFileSync(path.join(dir,'src/app.js'),'changed');assert.notEqual(first.sourceHash,releaseInfo(dir).sourceHash,'A runtime change must change the release identity');
  assert.equal(first.version,'1.0.0');assert.equal(first.buildNumber,219);
  fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'1.0.0',buildNumber:220}));const next=releaseInfo(dir);assert.equal(next.buildNumber,220);assert.notEqual(next.sourceHash,first.sourceHash);
+ // Invalid UTF-8 bytes previously collapsed to the same replacement character.
+ const image=path.join(dir,'src/explore-places.webp');
+ fs.writeFileSync(image,Buffer.from([0x52,0x49,0x46,0x46,0xff,0x0d,0x0a]));const imageFirst=releaseInfo(dir);
+ fs.writeFileSync(image,Buffer.from([0x52,0x49,0x46,0x46,0xfe,0x0d,0x0a]));assert.notEqual(imageFirst.sourceHash,releaseInfo(dir).sourceHash,'Distinct binary bytes cannot collapse to one UTF-8 fingerprint');
+ fs.writeFileSync(image,Buffer.from([0x52,0x49,0x46,0x46,0xff,0x0a]));assert.notEqual(imageFirst.sourceHash,releaseInfo(dir).sourceHash,'Binary CRLF bytes must not be normalized');
  for(const buildNumber of [undefined,0,-1,1.5,'219']){fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'1.0.0',buildNumber}));assert.throws(()=>releaseInfo(dir),/buildNumber/);}
 }finally{fs.rmSync(dir,{recursive:true,force:true});}
-console.log('PASS: deterministic release identity, generated-output exclusion and source drift detection.');
+console.log('PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.');
 
 // Web and iOS execute the same settings renderer and show the same build metadata.
 const {default:vm}=await import('node:vm');
@@ -27,11 +32,21 @@ for(const native of [false,true]){
  const panel={querySelector:selector=>selector==='[data-release-version]'?version:selector==='[data-release-status]'?status:button};
  const installed={version:'1.1.0',buildNumber:219,sourceHash:'abcdef0123456789'};
  let remote={...installed};
- const context={AbortSignal,document:{addEventListener:(event,fn)=>ready=fn,createElement:()=>panel,querySelector:selector=>selector==='[data-footer-version]'?footer:{append(){}},documentElement:{classList:{contains:()=>native}}},fetch:async url=>({json:async()=>url==='/release.json'?installed:remote})};
+ const context={AbortSignal,location:{hostname:native?'localhost':'scripture-lens.kvn-mcgwn.chatgpt.site'},document:{addEventListener:(event,fn)=>ready=fn,createElement:()=>panel,querySelector:selector=>selector==='[data-footer-version]'?footer:{append(){}},documentElement:{classList:{contains:()=>native}}},fetch:async url=>({json:async()=>url==='/release.json'?installed:remote})};
  vm.createContext(context);vm.runInContext(fs.readFileSync('src/release.js','utf8'),context);await ready();await button.onclick();
  assert.equal(footer.textContent,'v1.1.0 · Build 219');
  assert.equal(version.textContent,'1.1.0 · Build 219 · abcdef012345');assert.equal(status.textContent,'This app matches the website release.');
  remote={...installed,buildNumber:220};await button.onclick();assert(status.textContent.includes(native?'Install the latest iPhone build':'Reload this page'));
 }
+// A local browser preview must not compare its unpublished build to the live site.
+for(const hostname of ['localhost','127.0.0.1','[::1]']){
+ const version={},status={},button={},footer={},requests=[];let ready;
+ const panel={querySelector:selector=>selector==='[data-release-version]'?version:selector==='[data-release-status]'?status:button};
+ const context={AbortSignal,location:{hostname},document:{addEventListener:(_event,fn)=>ready=fn,createElement:()=>panel,querySelector:selector=>selector==='[data-footer-version]'?footer:{append(){}},documentElement:{classList:{contains:()=>false}}},fetch:async url=>{requests.push(url);assert.equal(url,'/release.json','A local preview must not request the published release');return {json:async()=>({version:'1.1.0',buildNumber:263,sourceHash:'localpreview0123456789'})};}};
+ vm.createContext(context);vm.runInContext(fs.readFileSync('src/release.js','utf8'),context);await ready();await button.onclick();
+ assert.deepEqual(requests,['/release.json']);assert.equal(footer.textContent,'v1.1.0 · Build 263');
+ assert.equal(status.textContent,'Local preview. The published website is separate.');
+}
 assert(fs.readFileSync('scripts/prepare-release.mjs','utf8').includes("'CURRENT_PROJECT_VERSION='+release.buildNumber"));
 console.log('PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.');
+console.log('PASS: local browser previews make no published-release request, while native localhost still checks for updates.');

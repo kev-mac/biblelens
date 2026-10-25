@@ -29,7 +29,6 @@ function mountCharacters(): void {
   let page = 0;
   let loading = true;
   let failed = false;
-  let example: DirectoryPerson | undefined;
   let profileRoute = '';
   let inlinePerson='';
   let opener: HTMLElement | null = null;
@@ -45,7 +44,7 @@ function mountCharacters(): void {
   const search = element('input');
   search.id = 'characters-search'; search.type = 'search';
   search.placeholder = 'Search names or aliases…';
-  const count = element('p', 'characters-count sr-only'); count.setAttribute('role', 'status');
+  const count = element('p', 'characters-count'); count.setAttribute('role', 'status');
   const list = element('div', 'characters-grid'); list.id = 'characters-list';
   const searchBox = element('div', 'characters-search-box');
   searchBox.append(label, search);
@@ -58,9 +57,8 @@ function mountCharacters(): void {
   pagination.append(previous, next); host.append(pagination, retry);
   list.tabIndex = -1;
   function render(): void {
-    const filtered = !!search.value.trim();
-    const matches = !filtered && example ? [example] : findPeople(search.value);
-    search.placeholder = example ? `Ex. ${example.name}` : 'Search names or aliases…';
+    const matches = findPeople(search.value);
+    search.placeholder = 'Search names or aliases…';
     page = Math.min(page, Math.max(0, Math.ceil(matches.length / CHARACTER_PAGE_SIZE) - 1));
     list.replaceChildren(...characterPage(matches, page).map(CharacterCard));
     count.textContent = loading ? 'Loading people…' : failed ? 'People could not be loaded. Please retry.'
@@ -107,7 +105,7 @@ function mountCharacters(): void {
   previous.addEventListener('click', () => movePage(-1)); next.addEventListener('click', () => movePage(1));
   async function load(): Promise<void> {
     loading = true; failed = false; render();
-    try { people = await fetchPeople(); findPeople = createPeopleSearch(people);const examples=people.filter(person=>!!person.summary);example=examples[Math.floor(Math.random()*examples.length)]||people[0]; }
+    try { people = await fetchPeople(); findPeople = createPeopleSearch(people); }
     catch { failed = true; }
     loading = false; render(); handleRoute();
   }
@@ -128,7 +126,7 @@ function mountCharacters(): void {
     if(inlinePerson)inlinePerson=previous.id;else history.replaceState(null, '', `#characters/${previous.id}`);
     void handleRoute();
   });
-  const close = element('button', '', '✕'); close.type = 'button'; close.autofocus = true;
+  const close = element('button', '', 'Close'); close.type = 'button'; close.autofocus = true;
   close.setAttribute('aria-label', 'Close character details'); header.append(close);
   const body = element('div', 'character-sheet-body');
   sheet.append(header, body); document.body.append(sheet);
@@ -212,7 +210,9 @@ function mountCharacters(): void {
       ? 'This character does not have a profile in this growing directory. Close this sheet to browse the available characters.'
       : 'The reference profile could not be loaded. Try again when the reference data is available.'));
     else {
-      body.append(element('span', 'character-era', profile.era), element('p', 'character-profile-biography', profile.summary), ProfileSections(profile, graph));
+      const context = element('div', 'character-profile-context');
+      context.append(element('span', 'character-era', profile.era), element('span', 'character-profile-kind', characters.some(person => person.id === profile!.id) ? 'Curated profile' : 'Reference profile'));
+      body.append(context, element('p', 'character-profile-biography', profile.summary), ProfileSections(profile, graph));
     }
     if (!profile && !graph) {
       const retry = element('button', 'character-connections-retry', 'Retry profile'); retry.type = 'button';

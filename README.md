@@ -1,16 +1,28 @@
-# Scripture Lens
+# BibleLens
 
 This snapshot packages KJV, WEB and ASV scripture for all 66 books and 1,189 chapters, with KJV as the default. Reading and existing annotations do not require AI requests.
 
+## Connected study workspace
+
+Read, Explore, Search and Notebook are the main destinations. The reader keeps attributed evidence in a desktop margin or a phone dialog. Focus mode keeps the desktop text clear. Search groups scripture, editorial research, stories, people, places and private notes; private-note matching stays on the device.
+
+Compare accepts two chapters or verse ranges, shows the selected KJV/WEB/ASV text and preserves the stored research's source quotations, alternative readings and scope. Save a comparison to Notebook to resume it later. Notes, bookmarks and saved comparisons support export, backup restore and optional cloud sync. Concurrent tab edits use a durable journal and three-way merge; storage failures and recovery copies remain visible.
+
+The shared design also covers Stories, People and family relationships, Places and the atlas, Evidence, Commandments, Prophecies, Timeline, Method & sources, conversation, filters, source panels and reader settings. Directory rows, expanded sections, loading and empty states use the same typography, surfaces and controls. Narrow layouts adapt to the text-size setting; browser layout checks do not replace physical-device testing.
+
+The Study Atlas direction adds a dark ink masthead and consistent Inter typography. Settings → App font applies the chosen face to scripture, headings and controls together; explicit app-wide choices persist, while the new design starts in Inter even when an older reading-only preference exists. All eight Explore categories have cinematic illustrations, with real place and person links alongside the introductory copy. These imagined scenes are decorative, not historical evidence; their generation prompts are recorded in `src/assets/explore-art.provenance.json`. Compressed WebP artwork is loaded independently of the startup script and packaged locally for native reading. The reader keeps its compact book/chapter selector and connects copper evidence counts to the reading margin or phone sheet.
+
+Explore is the first navigation destination and opens at the bare app URL. One ordered category gallery replaces the duplicate feature/directory lists. Swipe horizontally, choose a full-label category tab, or use keyboard/previous/next controls; vertical page scrolling never changes the selected category. Reduced-motion preferences disable smooth transitions. Question prompts lead into the existing studies, with detailed passage references inside each study.
+
+Reader actions are explicit: select a verse number to bookmark, write a note, copy or share. Saved verses show a bookmark icon; bookmark changes display confirmation with Undo. Removing a bookmark preserves its note and title. A bookmark containing saved highlights is protected until those highlights are removed separately. Scripture double-taps use normal text selection, and research details open through labeled controls. Outlined evidence counts open the corresponding research.
+
+Startup ships one content-fingerprinted stylesheet and one script package, preserving the original classic-script execution order. A self-contained loading/retry screen covers failed app files; reader book, chapter and picker requests have a 15-second deadline. Both hosted and native builds use the same packaged interface.
+
 ## Annotation coverage
 
-The annotation collection is **incomplete**. As of this snapshot, 236 chapters across all 66 books have annotations, covering 2,074 distinct verse locations. The other 953 chapters have no attached annotations. Even annotated chapters have not received an exhaustive research review.
+The annotation collection is incomplete. This snapshot contains 1,933 evidence records attached to 1,007 of 1,189 chapters, with 4,537 distinct annotated verse locations. The other 182 chapters have no attached evidence. Attached records and reference directories have not received an exhaustive scholarly review.
 
-The initial expansion added 64 assessments and enhanced three existing comparisons. Subsequent checkpoints add forty-one Exodus, twenty-nine Leviticus and thirty-eight Numbers and thirty-one Deuteronomy assessments and consolidate duplicate records. Sources, reasoning and interpretation limits are available through Details & sources. Internal literary comparisons are distinguished from independent historical or scientific evidence. No general claim of comprehensive review is made.
-
-`research/coverage-audit.json` lists every chapter and its actual annotation locations. `research/notes/` records researched passages, source-access limitations and outstanding work. The reader keeps unannotated verses blank, as requested.
-
-Reader tags start closed and independently toggle their summary, citations and Details & sources. History tags are gold, Contradictions peach/orange and Science green throughout both themes. History and Science display only explicit discrepancies; agreement and background assessments remain saved in the research collection. Coverage counts describe stored research attachments, not the number of visible discrepancy tags.
+The evidence panel distinguishes source text from editorial interpretation and retains reasoning, sources, witness labels and limitations. A missing annotation is not a conclusion about historical accuracy or agreement. Run `node scripts/audit-annotations.mjs` to recompute coverage from the current corpus. `research/notes/` records researched passages, access limitations and outstanding work.
 
 ## Build and check
 
@@ -20,6 +32,8 @@ Requires Node.js 22 or later. Install the pinned dependencies before building.
 npm ci
 npm run build
 npm run check
+npm run check:workspace
+npm run check:sync
 npm start
 ```
 
@@ -46,7 +60,7 @@ Optional on-device explanations are enabled from Reader settings for the current
 
 Generated explanations are labelled in Details & sources. Output checks confirm structure and cited source IDs; they do not prove that generated prose correctly interprets scripture. Qualified dietary, family and permission answers are retained without model rewriting. Native inference and performance require physical device testing; desktop worker checks do not verify them.
 
-The current mobile build and worker checks pass locally. Android/iOS project creation and sync have been verified. No APK, AAB, IPA or store release has been built or published on this Windows host, which currently lacks Java and the Android SDK. Browser QA verifies offline reading and the shark question against static files only.
+The mobile bundle and worker tests verify packaged reading, retrieval, comparisons and note handling. Physical-device performance, native model inference, signing and distribution require separate validation; a web preview does not establish those results.
 
 ## Hosted version
 
@@ -54,4 +68,4 @@ https://scripture-lens.kvn-mcgwn.chatgpt.site
 
 The existing hosted audience is preserved. Source identity is retained in `.openai/hosting.json`; it is not an authentication credential.
 
-Compare is an on/off switch enabled by default. Read and Ask replace Explore and Chat. Both themes use warm tan/orange palettes. Red-letter markup preserves the packaged text and follows publisher speech spans; see data/red-letter-provenance.json and research/notes/reader-warm-red-letters.md for attribution and boundary limits.
+The shared workspace uses ink/ivory surfaces, copper accents, labeled navigation, keyboard focus indicators and pinch zoom. Settings retains translation, evidence visibility, font, text size, theme and sync controls. Red-letter markup preserves the packaged text and follows publisher speech spans; see data/red-letter-provenance.json and research/notes/reader-warm-red-letters.md for attribution and boundary limits.

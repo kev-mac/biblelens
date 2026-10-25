@@ -84,17 +84,30 @@ state.verseHighlights={};
 state.verseNotes=normalizeVerseRecords(state.verseNotes);
 for(const [key,item]of Object.entries(legacyVerseHighlights)){if(item.text||item.title)state.verseNotes[key]=mergePersonalNote(state.verseNotes[key],item);}
 if(hadLegacyVerseHighlights)persist();
+const verseBookmarkActions=new Map();
+if(typeof window!=='undefined')window.addEventListener('biblelens:statechange',event=>{
+ const {before,data}=event.detail||{};if(!before||!data)return;
+ for(const [key,revision]of verseBookmarkActions)if(JSON.stringify(before.verseBookmarks?.[key])!==JSON.stringify(data.verseBookmarks?.[key]))verseBookmarkActions.set(key,revision+1);
+});
 function toggleVerseMark(kind,book,chapter,verse){
  if(kind!=='bookmark')return false;
- const key=`${book}:${chapter}:${verse}`,registry=state.verseBookmarks;
- function apply(){
-  if(registry[key]){delete registry[key];delete state.verseNotes[key];}
-  else registry[key]={book,chapter,verse,name:books[book].name};
-  persist();renderReader(true);renderPassageSaved();return !!registry[key];
- }
- const note=state.verseNotes[key];
- if(registry[key]&&(note?.text?.trim()||note?.title?.trim()))return confirmNoteAction('Unmark '+books[book].name+' '+chapter+':'+verse+'? This will permanently delete your personal note and its title for this verse.',apply);
- return apply();
+ const key=`${book}:${chapter}:${verse}`,before=state.verseBookmarks[key];
+ // Highlights share this record. Keep them intact until the reader explicitly
+ // removes each highlight; bookmark removal must never erase annotated text.
+ if(before&&normalizeTextHighlights(before.highlights).length){toast('This bookmark contains highlights. Remove those highlights first to remove the bookmark.');return true;}
+ const revision=(verseBookmarkActions.get(key)||0)+1;verseBookmarkActions.set(key,revision);
+ if(before)delete state.verseBookmarks[key];else state.verseBookmarks[key]={book,chapter,verse,name:books[book].name};
+ const after=state.verseBookmarks[key],afterSnapshot=JSON.stringify(after),saved=!!after;
+ persist();renderReader(true);renderPassageSaved();
+ toast(saved?'Saved to Notebook':'Bookmark removed. Notes kept.',{undo:()=>{
+  // Only this bookmark can be reverted. A later local action, imported record,
+  // sync update or newly saved highlight invalidates the old Undo operation.
+  if(verseBookmarkActions.get(key)!==revision||JSON.stringify(state.verseBookmarks[key])!==afterSnapshot){toast('This bookmark changed since that action. Nothing was undone.');return false;}
+  verseBookmarkActions.set(key,revision+1);
+  if(before)state.verseBookmarks[key]=before;else delete state.verseBookmarks[key];
+  persist();renderReader(true);renderPassageSaved();toast(saved?'Bookmark removed. Notes kept.':'Bookmark restored');return true;
+ }});
+ return saved;
 }
 let activePassageKey=null;
 function passageKey(){return readingBook+':'+readingChapter;}
@@ -258,7 +271,19 @@ function buildVerseShareUrl(book,chapter,verses){
  const ranges=[];let start=selected[0],end=start;
  for(const verse of selected.slice(1)){if(verse===end+1)end=verse;else{ranges.push(start===end?String(start):`${start}-${end}`);start=end=verse;}}
  ranges.push(start===end?String(start):`${start}-${end}`);
- const url=new URL(location.href);url.hash=`read/${book}/${chapter}/${ranges.join(',')}`;return url.href;
+ const current=new URL(location.href),host=current.hostname.toLowerCase().replace(/\.$/,'');
+ const local=!['http:','https:'].includes(current.protocol)||host==='localhost'||host.endsWith('.localhost')||host==='[::1]'||host==='0.0.0.0'||/^127\./.test(host);
+ // Device and development origins cannot be opened by a recipient. Hosted
+ // previews keep their own origin; no query, credentials or old route is shared.
+ const url=new URL('/',local?'https://scripture-lens.kvn-mcgwn.chatgpt.site/':current.origin);url.hash=`read/${book}/${chapter}/${ranges.join(',')}`;return url.href;
+}
+async function shareVerseLink(book,chapter,verse){
+ const url=buildVerseShareUrl(book,chapter,[verse]);
+ try{
+  if(typeof navigator.share==='function')await navigator.share({title:`${books[book].name} ${chapter}:${verse} · BibleLens`,url});
+  else{await navigator.clipboard.writeText(url);toast('Passage link copied');}
+  return true;
+ }catch(error){if(error?.name!=='AbortError')toast('Could not share this passage. Try Copy instead.');return false;}
 }
 async function copyVerseSelection(book,chapter,verses){
  const url=buildVerseShareUrl(book,chapter,verses),reference=new URL(url).hash.split('/').pop(),title=`${books[book].name} ${chapter}:${reference}`;

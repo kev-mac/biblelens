@@ -50,7 +50,7 @@ vm.runInContext(app.slice(app.indexOf('const CATEGORY_DIRECTORY_VIEWS='),app.ind
 for(const [key,url] of Object.entries({places:'#places',stories:'#stories',characters:'#people',commandments:'#commandments',prophecies:'#prophecies'}))assert.equal(directories.categoryDirectoryLocation(key),url);
 assert.equal(directories.categoryDirectoryLocation('academic'),null);
 const routes=[];
-Object.assign(directories,{location:{hash:'#categories/stories?book=0&chapter=1'},history:{replaceState(_a,_b,url){directories.location.hash=url;}},setView:(...args)=>routes.push(args),window:{scrollTo(){},addEventListener(){}}});
+Object.assign(directories,{$:()=>({open:false}),location:{hash:'#categories/stories?book=0&chapter=1'},history:{replaceState(_a,_b,url){directories.location.hash=url;}},setView:(...args)=>routes.push(args),window:{scrollTo(){},addEventListener(){}}});
 vm.runInContext(app.slice(app.indexOf('function route(){'),app.indexOf('function route(){')+app.slice(app.indexOf('function route(){')).indexOf("window.addEventListener('hashchange',route)")),directories);
 for(const [key,view] of Object.entries({places:'places',stories:'stories',characters:'characters',commandments:'commandments',prophecies:'prophecies'})){directories.location.hash='#categories/'+key+'?book=0';directories.route();assert.equal(routes.at(-1)[0],view);assert.equal(directories.location.hash,directories.categoryDirectoryLocation(key));}
 assert(!fs.readFileSync('src/categories.js','utf8').includes('class="category-back"'));

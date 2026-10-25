@@ -56,9 +56,7 @@
   viewport?.addEventListener('scroll',syncVisualChrome,{passive:true});
   window.addEventListener('resize',settle);
   window.addEventListener('orientationchange',settle);
-  // Safari gesture events supplement CSS touch-action while preserving one-finger scroll.
-  for(const type of ['gesturestart','gesturechange'])document.addEventListener(type,ev=>{if(smallScreen()&&ev.cancelable)ev.preventDefault()},{passive:false});
-  document.addEventListener('touchmove',ev=>{if(smallScreen()&&ev.touches.length>1&&ev.cancelable)ev.preventDefault()},{passive:false});
+  // Leave multi-touch gestures to the browser so pinch zoom remains available.
   settle();
 })();
 

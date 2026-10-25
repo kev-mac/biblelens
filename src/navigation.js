@@ -14,7 +14,7 @@
  trigger.setAttribute('aria-expanded', 'false');
  }
  const grid = sheet.querySelector('.navigation-grid');
- const pages = [['explore','Read'],['chat','Chat'],['saved','Categories'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['prophecies','Prophecies'],['timeline','Timeline']];
+ const pages = [['discover','Explore'],['explore','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['saved','Categories'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['prophecies','Prophecies'],['timeline','Timeline']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
   const icon = document.querySelector(`header nav [data-view="${page}"] svg`);
@@ -45,7 +45,7 @@
   if (button.dataset.navigationView) { setView(button.dataset.navigationView); window.scrollTo({top:0,behavior:'smooth'}); }
   else if (button.hasAttribute('data-navigation-settings')) requestAnimationFrame(() => document.querySelector('#reader-picker').click());
  });
- sheet.addEventListener('close', () => { for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');document.querySelector('#reader-picker').focus({preventScroll:true}); });
+ sheet.addEventListener('close', () => { for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');(document.querySelector('#lens-settings')||document.querySelector('#reader-picker')).focus({preventScroll:true}); });
  const outside = event => { const r = sheet.getBoundingClientRect(); return event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom; };
  let backdropStart = false;
  sheet.addEventListener('pointerdown', event => { backdropStart = event.target === sheet && outside(event); });

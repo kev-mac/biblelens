@@ -50,16 +50,17 @@ async function renderPagedCategories(){
   else if(!location.hash.includes('?'))markedKind='all';
   if(markedBookSelection===null)markedBookSelection=readingBook;
   const scope=JSON.stringify([markedBookSelection,markedChapterSelection,markedKind,markedTheme,markedCommandmentType]);if(scope!==categoryScope){categoryPages.clear();categoryScope=scope;}
-  $('#categories-heading').textContent=route?MARKED_CATEGORIES.find(([key])=>key===route.key)[1]:'Categories';
-  renderMarkedContext();$('#saved-cards').hidden=true;box.innerHTML='<p role="status">Loading categories…</p>';
+  $('#categories-heading').textContent=route?MARKED_CATEGORIES.find(([key])=>key===route.key)[1]:'Evidence';
+  renderMarkedContext();$('#saved-cards').hidden=true;box.innerHTML='<p role="status">Loading evidence…</p>';
   const response=await fetch('/api/categories?'+categoryQuery('all',0,0));if(!response.ok)throw Error();
   const meta=await response.json();if(generation!==markedWorkspaceGeneration||view!=='saved')return;
   markedData=meta;const personal=categoryPersonalItems(),counts={...meta.counts,bookmark:personal.length};
   if(!route){
    const links=[...MARKED_CATEGORIES,['timeline','Timeline'],['places','Places']].sort(([a,al],[b,bl])=>al.localeCompare(bl));
+   const descriptions={academic:'Science, history and the world of the text.',bookmark:'Your saved passages and private study notes.',T:'Language, manuscripts and translation choices.',V:'Accounts examined against biblical commands.',commandments:'The traditional 613, with context and related passages.',Q:'Questions raised by the text and its interpretations.',contradictions:'Compare accounts that differ in detail or perspective.',stories:'Follow narratives across books and themes.',characters:'People, relationships and their place in the story.',prophecies:'Predictions, linked accounts and interpretive context.',timeline:'Explore events in their historical setting.',places:'Locate biblical places and read their stories.'};
    const placesIcon='<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
    const timelineIcon='<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18M5 6h6m-6 6h10m-10 6h6"/><circle cx="14" cy="6" r="2"/><circle cx="18" cy="12" r="2"/><circle cx="14" cy="18" r="2"/></svg>';
-   box.innerHTML='<div class="marked-comparisons">'+links.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>`<a class="marked-category-pane category-page-link" href="${key==='timeline'?'#timeline':esc(categoryDirectoryLocation(key)||categoryLocation(key))}" data-category-page="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}"><span class="marked-category-icon">${key==='timeline'?timelineIcon:key==='places'?placesIcon:categoryIcon(key)}</span><span>${label}</span><span class="marked-count">${key==='timeline'?'All events':key==='places'?'All places':counts[key]||0}</span></a>`).join('')+'</div>';
+   box.innerHTML='<div class="marked-comparisons">'+links.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>`<a class="marked-category-pane category-page-link" href="${key==='timeline'?'#timeline':esc(categoryDirectoryLocation(key)||categoryLocation(key))}" data-category-page="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}"><span class="marked-category-icon">${key==='timeline'?timelineIcon:key==='places'?placesIcon:categoryIcon(key)}</span><span><span class="library-category-title">${label}</span><span class="library-category-description">${esc(descriptions[key]||'Explore the collection.')}</span></span><span class="marked-count">${key==='timeline'?'All events':key==='places'?'All places':counts[key]||0}</span></a>`).join('')+'</div>';
    box.onclick=null;return;
   }
   const key=route.key;
@@ -100,7 +101,7 @@ async function renderPagedCategories(){
    if(generation===markedWorkspaceGeneration&&view==='saved'){$('#categories-heading').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});}
   };
   await fill(categoryPages.get(key)||0);
- }catch{if(generation===markedWorkspaceGeneration)box.innerHTML='<p>Categories could not load. <button type="button" id="categories-retry">Retry</button></p>';box.querySelector('#categories-retry')?.addEventListener('click',renderPagedCategories);}
+ }catch{if(generation===markedWorkspaceGeneration)box.innerHTML='<p>Evidence could not load. <button type="button" id="categories-retry">Retry</button></p>';box.querySelector('#categories-retry')?.addEventListener('click',renderPagedCategories);}
 }
 if(view==='saved')renderPagedCategories();
 

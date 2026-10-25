@@ -51,12 +51,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(!core.equal(merged.data,remote.data)){
      try{revision=(await api('/document',{method:'PUT',body:JSON.stringify({revision:remote.revision,data:merged.data})})).revision;}catch(error){if(error.status===409)continue;throw error;}
     }
-    backup();
     // A user may edit while network requests are in flight. Keep those edits queued.
     const latest=core.snapshot(state),next=core.merge(captured,latest,merged.data);
-    applying=true;
-    try{core.apply(state,next.data);Object.assign(readerPreferences,state.readerPreferences);$('#reader-edition').value=readerPreferences.edition;updateCompareToggle();applyTheme();applyTextSize();applyReaderFonts();if(typeof applyNavigationAppearance==='function')applyNavigationAppearance();applyBookPickerPosition();persist();renderCards();if(reading)renderReader(true);renderPassageSaved();}
-    finally{applying=false;}
+    // An unchanged poll must not replace chapter nodes, selection or editor values.
+    if(!core.equal(latest,next.data)){
+     backup();applying=true;
+     try{applyWorkspaceSnapshot(next.data,{source:'cloud',conflicts:merged.conflicts+next.conflicts});persist('cloud');}
+     finally{applying=false;}
+    }
     meta.base=merged.data;meta.revision=revision;meta.lastSync=Date.now();saveMeta();
     say((merged.conflicts||next.conflicts?'Both versions of conflicting notes were kept. ':'')+'Synced '+new Date(meta.lastSync).toLocaleTimeString()+'.');
     if(!core.equal(next.data,merged.data))schedule();

@@ -8,6 +8,7 @@ import {validateCommandments} from './commandments.mjs';
 import zlib from 'node:zlib';
 import {validateRelatedPassages} from './study-relationships.mjs';
 import {releaseInfo} from './release-info.mjs';
+import {consolidateStartupAssets} from './startup-assets.mjs';
 import MiniSearch from 'minisearch';
 import {buildVocabulary,searchLicenses} from './search-vocabulary.mjs';
 import {loadReferenceResources} from './reference-resources.mjs';
@@ -30,7 +31,11 @@ const evidenceRecords=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));f
 validateCommandments(evidenceRecords,JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const root=process.cwd();const context={};vm.createContext(context);vm.runInContext(fs.readFileSync('src/data.js','utf8')+'\nthis.studies=ENTRIES;',context);
 validateRelatedPassages([...evidenceRecords,...context.studies],JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
-const assets={};for(const [name,type]of Object.entries({'index.html':'text/html; charset=utf-8','fonts.css':'text/css; charset=utf-8','style.css':'text/css; charset=utf-8','app.js':'application/javascript; charset=utf-8','navigation.js':'application/javascript; charset=utf-8','card-disclosures.js':'application/javascript; charset=utf-8','dialog-scroll.js':'application/javascript; charset=utf-8','data.js':'application/javascript; charset=utf-8','red-letters.js':'application/javascript; charset=utf-8','passage.js':'application/javascript; charset=utf-8','reader.js':'application/javascript; charset=utf-8','stories.js':'application/javascript; charset=utf-8','commandments.js':'application/javascript; charset=utf-8','marked.js':'application/javascript; charset=utf-8','categories.js':'application/javascript; charset=utf-8','sync-core.js':'application/javascript; charset=utf-8','sync.js':'application/javascript; charset=utf-8','release.js':'application/javascript; charset=utf-8','mobile.js':'application/javascript; charset=utf-8','citations.js':'application/javascript; charset=utf-8'})){assets[name==='index.html'?'/':'/'+name]={type,body:fs.readFileSync('src/'+name,'utf8')}}
+const assets={};for(const [name,type]of Object.entries({'index.html':'text/html; charset=utf-8','fonts.css':'text/css; charset=utf-8','workspace.css':'text/css; charset=utf-8','system.css':'text/css; charset=utf-8','library.css':'text/css; charset=utf-8','reference.css':'text/css; charset=utf-8','place-story-refinements.css':'text/css; charset=utf-8','dialogs.css':'text/css; charset=utf-8','workspace.js':'application/javascript; charset=utf-8','atlas.css':'text/css; charset=utf-8','atlas-reader.css':'text/css; charset=utf-8','atlas-explore.css':'text/css; charset=utf-8','atlas-reader.js':'application/javascript; charset=utf-8','atlas-explore.js':'application/javascript; charset=utf-8','style.css':'text/css; charset=utf-8','app.js':'application/javascript; charset=utf-8','navigation.js':'application/javascript; charset=utf-8','card-disclosures.js':'application/javascript; charset=utf-8','dialog-scroll.js':'application/javascript; charset=utf-8','data.js':'application/javascript; charset=utf-8','red-letters.js':'application/javascript; charset=utf-8','passage.js':'application/javascript; charset=utf-8','reader.js':'application/javascript; charset=utf-8','stories.js':'application/javascript; charset=utf-8','commandments.js':'application/javascript; charset=utf-8','marked.js':'application/javascript; charset=utf-8','categories.js':'application/javascript; charset=utf-8','sync-core.js':'application/javascript; charset=utf-8','sync.js':'application/javascript; charset=utf-8','release.js':'application/javascript; charset=utf-8','mobile.js':'application/javascript; charset=utf-8','citations.js':'application/javascript; charset=utf-8'})){assets[name==='index.html'?'/':'/'+name]={type,body:fs.readFileSync('src/'+name,'utf8')}}
+for(const name of ['beginnings-landscape.svg','beginnings-landscape.provenance.json'])assets['/assets/'+name]={type:name.endsWith('.svg')?'image/svg+xml':'application/json; charset=utf-8',body:fs.readFileSync('src/assets/'+name,'utf8')};
+// Raster illustrations stay separate from startup JavaScript and decode only
+// when requested. The same bytes are written directly into the native bundle.
+for(const name of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+\.webp$/.test(name)))assets['/assets/'+name]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src/assets/'+name).toString('base64')};
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
 const placesBundle=await build({entryPoints:['src/places.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/places.js']={type:'application/javascript; charset=utf-8',body:placesBundle.outputFiles[0].text};
@@ -61,7 +66,7 @@ const answerLayer=fs.readFileSync('worker/answer-layer.mjs','utf8').replace('/*_
 worker=worker.replace('/*__NETS_LINKS__*/',()=>fs.readFileSync('worker/nets-links.mjs','utf8')).replace('/*__ANSWER_LAYER__*/',()=>answerLayer);
 for(const name of ['notices','provenance'])assets['/reference/'+name+'.json']={type:'application/json; charset=utf-8',body:JSON.stringify(references[name])};
 for(const name of ['README.md','THEOGRAPHIC-LICENSE.txt','THEOGRAPHIC-SOURCES.md'])if(fs.existsSync('data/reference/'+name))assets['/reference/'+name]={type:'text/plain; charset=utf-8',body:fs.readFileSync('data/reference/'+name,'utf8')};
-const searchIndex={},documents=[];for(const encoded of Object.values(JSON.parse(fs.readFileSync('data/chapters.json','utf8')))){const data=JSON.parse(zlib.gunzipSync(Buffer.from(encoded,'base64')));for(const verse of data.verses){const text=(verse.kjv+' '+verse.web).replace(/\{[HG]\d+\}/g,'');const words=new Set(text.toLowerCase().match(/[a-z]{3,}/g)||[]);const id=data.book*1000000+data.chapter*1000+verse.n;documents.push({id,text});for(const word of words)searchIndex[word]=(searchIndex[word]||0)+1;}}
+const searchIndex={},documents=[];for(const encoded of Object.values(JSON.parse(fs.readFileSync('data/chapters.json','utf8')))){const data=JSON.parse(zlib.gunzipSync(Buffer.from(encoded,'base64')));for(const verse of data.verses){const text=(verse.kjv+' '+verse.web+' '+(verse.asv||'')).replace(/\{[HG]\d+\}/g,'');const words=new Set(text.toLowerCase().match(/[a-z]{3,}/g)||[]);const id=data.book*1000000+data.chapter*1000+verse.n;documents.push({id,text});for(const word of words)searchIndex[word]=(searchIndex[word]||0)+1;}}
 const shards={};
 for(const book of [...new Set(documents.map(d=>Math.floor(d.id/1000000)))]){
  const mini=new MiniSearch({fields:['text'],tokenize:text=>text.toLowerCase().match(/[a-z]{3,}/g)||[]});mini.addAll(documents.filter(d=>Math.floor(d.id/1000000)===book));shards[book]=JSON.stringify(mini);
@@ -70,6 +75,8 @@ const vocabulary=buildVocabulary(searchIndex);
 const miniLibrary=fs.readFileSync('node_modules/minisearch/dist/es/index.js','utf8').replace('export { MiniSearch as default };','').replace(/\/\/# sourceMappingURL=.*$/m,'');
 worker=worker.replace('/*__MINISEARCH_LIBRARY__*/',()=>miniLibrary).replace('/*__MINISEARCH_INDEX__*/{}',()=>JSON.stringify(shards)).replace('/*__VOCABULARY__*/{}',()=>JSON.stringify(vocabulary));
 assets['/search-licenses.txt']={type:'text/plain; charset=utf-8',body:searchLicenses()};
+const startup=consolidateStartupAssets(assets);
+console.log('Startup assets:',startup.css.sources.length,'styles and',startup.js.sources.length,'scripts consolidated into two fingerprinted requests');
 console.log('Search vocabulary:',Object.keys(vocabulary).length,'entries; MiniSearch documents:',documents.length);
 worker=worker.replace('/*__SEARCH__*/{}',()=>JSON.stringify(searchIndex));
 // The mobile target uses the same API and corpus inside a device Web Worker.
@@ -84,3 +91,5 @@ await import('./check-search-vocabulary.mjs');
 
 await import('./check-reference-answers.mjs');
 await import('./check-chat-understanding.mjs');
+await import('./check-startup-assets.mjs');
+await import('./check-startup-recovery.mjs');

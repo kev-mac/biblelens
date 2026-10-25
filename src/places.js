@@ -10,6 +10,10 @@ sheet.addEventListener('click',event=>{if(event.target===sheet){const r=sheet.ge
 sheet.addEventListener('close',()=>{request++;anchor?.setAttribute('aria-expanded','false');if(anchor?.isConnected)anchor.focus({preventScroll:true});});
 const resize=new ResizeObserver(()=>{if(sheet.open)map?.resize();});resize.observe(mapNode);
 const mapNotice=document.createElement('p');mapNotice.className='atlas-map-notice';mapNotice.setAttribute('role','status');mapNode.after(mapNotice);
+// Identification limits belong beside the map, not only in collapsed sources.
+const identification=document.createElement('p');identification.className='atlas-identification';identification.setAttribute('role','status');mapNode.before(identification);
+document.querySelector('#atlas-close').textContent='Close';
+document.querySelector('#atlas-sources summary').textContent='Sources & identification';
 function colorMap(){
  if(!map?.isStyleLoaded())return;
  const dark=document.body.classList.contains('dark');
@@ -26,16 +30,17 @@ new MutationObserver(colorMap).observe(document.body,{attributes:true,attributeF
 async function openAtlas(id,button){
  document.querySelector('#atlas-sources').open=false;
  const token=++request;anchor?.setAttribute('aria-expanded','false');anchor=button;button.setAttribute('aria-expanded','true');
- document.querySelector('#atlas-name').textContent='Loading place…';document.querySelector('#atlas-names').textContent='';document.querySelector('#atlas-description').textContent='';document.querySelector('#atlas-description').hidden=true;status.textContent='';mapNotice.textContent='';mapNode.hidden=true;document.querySelector('#atlas-external').hidden=true;
+ document.querySelector('#atlas-name').textContent='Loading place…';document.querySelector('#atlas-names').textContent='';document.querySelector('#atlas-description').textContent='';document.querySelector('#atlas-description').hidden=true;status.textContent='';mapNotice.textContent='';identification.textContent='';mapNode.hidden=true;document.querySelector('#atlas-external').hidden=true;
  if(!sheet.open)sheet.showModal();document.querySelector('#atlas-close').focus({preventScroll:true});sheet.querySelector('.atlas-scroll').scrollTop=0;
  try{
   const place=await getLocationDetails(id);if(token!==request||!sheet.open)return;if(!place)throw Error('This place is not in the reference dataset.');
   document.querySelector('#atlas-name').textContent=place.name;
   document.querySelector('#atlas-names').textContent=[place.modern_name&&`Modern name: ${place.modern_name}`,place.aliases.length&&`Also called ${place.aliases.join(', ')}`].filter(Boolean).join(' · ');
   const description=document.querySelector('#atlas-description');description.textContent=atlasDescription(place);description.hidden=!description.textContent;
-  if(!place.coordinates){status.textContent='Coordinates are unavailable for this location.';return;}
+  if(!place.coordinates){status.textContent='Coordinates are unavailable for this location.';identification.textContent=status.textContent;return;}
   const {latitude,longitude}=place.coordinates,point=[longitude,latitude];mapNode.hidden=false;
   const approximate=place.verification!=='VERIFIED'||!['Precise','Center'].includes(place.precision);
+  identification.textContent=approximate?'Approximate reference point · Ancient identification is uncertain. The map shows modern geographical context.':'Dataset reference point · Historical identifications vary. The map shows modern geographical context.';
   status.textContent=`${latitude.toFixed(5)}, ${longitude.toFixed(5)} · Dataset location${place.verification?` (${place.verification.toLowerCase()})`:''}. ${approximate?'This is an approximate reference point, not a confirmed ancient site. ':''}Historical identifications and precision vary. Map labels and boundaries show modern geographical context, not reconstructed ancient geography.`;
   const external=document.querySelector('#atlas-external');external.href=`https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}#map=7/${latitude}/${longitude}`;external.hidden=false;
   mapNotice.textContent='Loading geographical context…';
@@ -74,7 +79,7 @@ async function openAtlas(id,button){
    requestAnimationFrame(()=>{if(token===request&&sheet.open)map.resize();});
   }catch(error){mapNode.hidden=true;mapNotice.textContent='The interactive map is unavailable on this device. Place details and the external map link remain available.';}
 
- }catch(error){if(token!==request)return;document.querySelector('#atlas-name').textContent='Place unavailable';status.textContent=error.message;}
+ }catch(error){if(token!==request)return;document.querySelector('#atlas-name').textContent='Place unavailable';status.textContent=error.message;identification.textContent=error.message;}
 }
 // Holding a place opens its in-app contents, and scrolling cancels the hold.
 let placePress=null,placeTimer=0,suppressPlaceUntil=0;
@@ -95,21 +100,58 @@ for(const type of ['pointerdown','dblclick','contextmenu'])document.addEventList
 document.addEventListener('click',event=>{const chip=event.target.closest('[data-person-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(window.getSelection()?.toString())return;window.dispatchEvent(new CustomEvent('open-person',{detail:{id:chip.dataset.personId,opener:chip}}));},true);
 for(const type of ['pointerdown','dblclick'])document.addEventListener(type,event=>{if(event.target.closest('[data-person-id]'))event.stopImmediatePropagation();},true);
 async function initializeChips(){
- try{
-  const match=createPlaceMatcher(await loadPlaces());
-  let people=[];try{const response=await fetch('/reference/people.json');if(response.ok)people=await response.json();}catch{}
-  const matchPeople=createPersonMatcher(people);
-  const scopes='.verse-body,.story-card p,.category-profile-card[data-profile-people="true"] .comparison-summary>p,.category-profile-card[data-profile-people="true"] .category-profile-panel p';
-  function decorate(root){
-   const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(node){return node.parentElement.closest('button,a,script,style,textarea,.verse-num,[contenteditable]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;}}),nodes=[];
-   while(walker.nextNode())nodes.push(walker.currentNode);
-   for(const node of nodes){const body=node.parentElement.closest('.verse-body'),question=node.parentElement.closest('.category-profile-card'),context=body?{book:Number(body.dataset.book),chapter:Number(body.dataset.chapter),verse:Number(body.dataset.verse)}:question?{book:Number(question.dataset.referenceBook),chapter:Number(question.dataset.referenceChapter),verse:Number(question.dataset.referenceVerse)}:{};if(!match(node.data).length&&!matchPeople(node.data,context).length)continue;const template=document.createElement('template');template.innerHTML=wrapReferenceNames(node.data,match,matchPeople,context);node.replaceWith(template.content);}
+ let match=()=>[],matchPeople=()=>[],placesReady=false,peopleReady=false,loading=null;
+ const scopes='.verse-body,.story-card p,.category-profile-card[data-profile-people="true"] .comparison-summary>p,.category-profile-card[data-profile-people="true"] .category-profile-panel p';
+ function decorate(root){
+  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[];let leadingText='';
+  while(walker.nextNode()){
+   const node=walker.currentNode;
+   if(node.parentElement&&!node.parentElement.closest('button,a,script,style,textarea,.verse-num,[contenteditable]'))nodes.push({node,leadingText});
+   leadingText+=node.data;
   }
-  const roots=new Set();let queued=false;
-  const enqueue=node=>{const el=node.nodeType===1?node:node.parentElement;if(!el)return;const parent=el.closest(scopes);if(parent)roots.add(parent);for(const root of el.querySelectorAll?.(scopes)||[])roots.add(root);if(!queued&&roots.size){queued=true;queueMicrotask(()=>{observer.disconnect();for(const root of roots)if(root.isConnected)decorate(root);roots.clear();queued=false;observer.observe(document.body,{childList:true,subtree:true,characterData:true});});}};
-  const observer=new MutationObserver(records=>{for(const record of records){if(record.type==='characterData')enqueue(record.target);else for(const node of record.addedNodes)enqueue(node);}});
-  observer.observe(document.body,{childList:true,subtree:true,characterData:true});
-  enqueue(document.body);
+  for(const {node,leadingText} of nodes){
+   if(!node.parentElement||!node.isConnected)continue;
+   const body=node.parentElement.closest('.verse-body'),question=node.parentElement.closest('.category-profile-card'),story=node.parentElement.closest('.story-card[data-story-book]');
+   const context=body?{book:Number(body.dataset.book),chapter:Number(body.dataset.chapter),verse:Number(body.dataset.verse)}:question?{book:Number(question.dataset.referenceBook),chapter:Number(question.dataset.referenceChapter),verse:Number(question.dataset.referenceVerse)}:story?{scope:'story',placesReady,leadingText,book:Number(story.dataset.storyBook),chapter:Number(story.dataset.storyChapter),verse:Number(story.dataset.storyVerse),endChapter:Number(story.dataset.storyEndChapter),endVerse:Number(story.dataset.storyEndVerse)}:{};
+   if(!match(node.data,context).length&&!matchPeople(node.data,context).length)continue;
+   const template=document.createElement('template');template.innerHTML=wrapReferenceNames(node.data,match,matchPeople,context);node.replaceWith(template.content);
+  }
+ }
+ const roots=new Set();let queued=false;
+ const observerOptions={childList:true,subtree:true,characterData:true};
+ function flush(){
+  // A second render can replace queued roots before this microtask runs. Its
+  // mutation records may not have reached the observer callback yet; disconnect
+  // would discard them and leave the replacement story permanently unlinked.
+  collectRecords(observer.takeRecords());
+  observer.disconnect();
+  const pending=[...roots];roots.clear();
+  try{
+   for(const root of pending)if(root.isConnected){try{decorate(root);}catch(error){console.warn('Reference links could not decorate a passage:',error.message);}}
+  }finally{queued=false;observer.observe(document.body,observerOptions);}
+ }
+ const enqueue=node=>{const el=node.nodeType===1?node:node.parentElement;if(!el)return;const parent=el.closest(scopes);if(parent)roots.add(parent);for(const root of el.querySelectorAll?.(scopes)||[])roots.add(root);if(!queued&&roots.size){queued=true;queueMicrotask(flush);}};
+ function collectRecords(records){for(const record of records){if(record.type==='characterData')enqueue(record.target);else for(const node of record.addedNodes)enqueue(node);}}
+ const observer=new MutationObserver(collectRecords);
+ observer.observe(document.body,observerOptions);
+ async function loadReferenceMatchers(){
+  if(loading)return loading;
+  if(placesReady&&peopleReady){enqueue(document.body);return;}
+  loading=Promise.allSettled([
+   placesReady?Promise.resolve():loadPlaces().then(places=>{match=createPlaceMatcher(places);placesReady=true;enqueue(document.body);}),
+   peopleReady?Promise.resolve():fetch('/reference/people.json').then(response=>{if(!response.ok)throw Error('People references unavailable');return response.json();}).then(people=>{matchPeople=createPersonMatcher(people);peopleReady=true;enqueue(document.body);})
+  ]).then(results=>{
+   for(const result of results)if(result.status==='rejected')console.warn('Reference links are incomplete:',result.reason?.message||result.reason);
+   enqueue(document.body);
+  }).finally(()=>{loading=null;});
+  return loading;
+ }
+ // A reference request may fail independently of the visible content. Keep the
+ // working matcher and retry only missing data on a fresh view or reconnection.
+ window.addEventListener('viewchange',()=>{void loadReferenceMatchers();});
+ window.addEventListener('online',()=>{void loadReferenceMatchers();});
+ try{
+  await loadReferenceMatchers();
  }catch(error){console.warn('Atlas chips unavailable:',error.message);}
 }
 initializeChips();

@@ -48,9 +48,11 @@ for(const entry of catalog){
  }
 }
 vm.runInContext('storiesActive=true',c);await c.renderStoriesView();
-assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,1,'The unfiltered Stories page starts with one random example');
-assert.match(node('#stories-search').placeholder,/^Ex\. /);
-assert.equal(node('#stories-results').hidden,true);
+assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,10,'The unfiltered Stories page browses the full collection in pages');
+assert.match(node('#stories-search').placeholder,/Search stories/);
+assert.equal(node('#stories-results').hidden,false);
+assert.match(node('#stories-results').textContent,new RegExp('of '+total+' stories'));
+const firstPage=node('#stories-list').innerHTML;await c.renderStoriesView();assert.equal(node('#stories-list').innerHTML,firstPage,'Returning to browse preserves a stable first page');
 assert(!node('#reader-layout').hidden);assert(!node('#stories-view').hidden);
 assert(c.storyCard(genesis.stories[0]).includes('data-cite="42/1/1" data-cite-end="3"'));
 assert.equal(c.storiesFilterButton(),'');
@@ -120,6 +122,7 @@ console.log('PASS: ten-story pages, page bounds, next/previous state, result ran
 
 // Story sections begin closed and toggle independently without changing filters.
 const sectionCard=c.storyCard(genesis.stories[0]);
+assert(sectionCard.includes('data-story-book="0" data-story-chapter="1" data-story-verse="1" data-story-end-chapter="2" data-story-end-verse="3"'),'Story cards provide their complete source range to the shared name linker');
 assert(sectionCard.includes('data-story-section aria-expanded="false"'));
 assert(sectionCard.includes('aria-labelledby="story-'+c.storySlug(genesis.stories[0].title)+'-verses-toggle" hidden'));
 assert(!sectionCard.includes(' →</button>'));

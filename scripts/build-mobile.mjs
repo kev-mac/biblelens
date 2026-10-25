@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {build} from 'esbuild';
 import {mobileBundle} from './build.mjs';
+import {insertDeviceBootstrap} from './startup-assets.mjs';
 
 const output=path.resolve('www');
 // Remove only this build's fixed output directory, never a supplied path.
@@ -9,13 +10,13 @@ if(output!==path.join(process.cwd(),'www'))throw Error('Unexpected mobile output
 fs.mkdirSync(output,{recursive:true});
 for(const [url,asset]of Object.entries(mobileBundle.assets)){
  const file=path.join(output,url==='/'?'index.html':url.slice(1));
- fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,asset.body);
+ fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,asset.encoding==='base64'?Buffer.from(asset.body,'base64'):asset.body);
 }
 fs.writeFileSync(path.join(output,'device-engine.js'),mobileBundle.engine);
 fs.copyFileSync('src/device-api-worker.js',path.join(output,'device-api-worker.js'));
 await build({entryPoints:['src/device-bootstrap.js'],outfile:path.join(output,'device-bootstrap.js'),bundle:true,format:'iife',platform:'browser',target:['safari17','chrome119']});
 let html=fs.readFileSync(path.join(output,'index.html'),'utf8');
-html=html.replace('<script defer src="data.js">','<script defer src="device-bootstrap.js"></script><script defer src="data.js">');
+html=insertDeviceBootstrap(html);
 html=html.replace('Questions and recent conversation context are sent only to this site’s search endpoint, with no external AI service.','Questions and recent conversation context are processed on this device. Optional on-device AI runs locally; no external AI service receives your questions.');
 html=html.replace('Hosted access follows the site’s sharing settings. Chat requires no separate login.','Reading and search work offline. External source links require internet. Chat requires no login.');
 html=html.replace('run against packaged content on this site.','run against content bundled in this app.');

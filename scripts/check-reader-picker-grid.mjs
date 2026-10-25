@@ -1,7 +1,8 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
 const source=fs.readFileSync('src/reader.js','utf8'),nodes=new Map(),pending=[];
 const node=id=>{if(!nodes.has(id))nodes.set(id,{value:'',innerHTML:'',disabled:false});return nodes.get(id);};
-const c={$:node,books:[{chapters:150}],fetch:()=>new Promise(resolve=>pending.push(resolve))};vm.createContext(c);
+const c={$:node,books:[{chapters:150}],fetch:()=>new Promise(resolve=>pending.push(resolve)),setTimeout,clearTimeout};vm.createContext(c);
+vm.runInContext(source.slice(source.indexOf('async function readerJson('),source.indexOf('async function loadChapter(')),c);
 vm.runInContext('let passagePickerRequest=0;'+source.slice(source.indexOf('function passageNumberGrid('),source.indexOf('function openPassagePicker(')),c);
 node('#passage-book').value='0';c.updatePassagePickerChapters(13);assert.equal(node('#passage-chapter').value,'13');assert.equal((node('#passage-chapter-grid').innerHTML.match(/type="radio"/g)||[]).length,150);assert(node('#passage-chapter-grid').innerHTML.includes('value="13" checked'));
 const old=c.updatePassagePickerVerses(8);node('#passage-chapter').value='14';const fresh=c.updatePassagePickerVerses(2);assert(node('#passage-go').disabled);
