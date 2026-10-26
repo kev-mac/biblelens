@@ -55,11 +55,9 @@ html body.lens-app #discover-view .atlas-explore-related :is(a,button) {
   color:inherit !important; font:inherit; white-space:normal; text-decoration:underline; text-underline-offset:3px; cursor:pointer;
 }
 html body.lens-app #discover-view .atlas-explore-source { display:block; margin:13px 0 0; color:var(--lens-muted); font-size:.6875rem; line-height:1.6; }
-html body.lens-app #discover-view .atlas-explore-gallery-footer { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:12px; }
-html body.lens-app #discover-view .atlas-explore-position { display:flex; align-items:baseline; gap:12px; margin:0; color:var(--lens-muted); font:500 .6875rem/1.6 var(--lens-ui-font,Inter,system-ui,sans-serif); }
-html body.lens-app #discover-view .atlas-explore-position > span:last-child { font-variant-numeric:tabular-nums; letter-spacing:.06em; }
+html body.lens-app #discover-view .atlas-explore-gallery-footer { display:grid; grid-template-columns:44px minmax(0,1fr) 44px; align-items:center; gap:12px; margin-top:12px; }
+html body.lens-app #discover-view .atlas-explore-position { min-width:0; margin:0; text-align:center; color:var(--lens-muted); font:500 .75rem/1.6 var(--lens-ui-font,Inter,system-ui,sans-serif); }
 html body.lens-app #discover-view .atlas-explore-position-label { color:var(--lens-ink); }
-html body.lens-app #discover-view .atlas-explore-gallery-controls { display:flex; gap:7px; }
 html body.lens-app #discover-view .atlas-explore-step {
   display:grid; place-items:center; flex:0 0 44px; width:44px; height:44px; min-width:44px; min-height:44px;
   margin:0; padding:0; border:0 !important; border-radius:50% !important; box-shadow:none !important;
@@ -67,7 +65,6 @@ html body.lens-app #discover-view .atlas-explore-step {
 }
 html body.lens-app #discover-view .atlas-explore-step:disabled { opacity:.3; cursor:default; }
 html body.lens-app #discover-view .atlas-explore-step:not(:disabled):hover { background:color-mix(in srgb,var(--lens-ink) 11%,transparent) !important; }
-html body.lens-app #discover-view .atlas-explore-art-note { margin:2px 0 0; color:var(--lens-muted); font-size:.625rem; line-height:1.6; }
 html body.lens-app #discover-view .atlas-explore-studies { margin-top:44px; }
 html body.lens-app #discover-view .atlas-explore-coverage { max-width:75ch; margin:24px 0 0; color:var(--lens-muted); font-size:.75rem; line-height:1.65; }
 html body.lens-app #discover-view.atlas-explore :is(a,button):focus-visible { outline:2px solid var(--lens-focus); outline-offset:3px; }
@@ -95,7 +92,7 @@ html body.lens-app #discover-view .atlas-explore-tab:focus-visible { outline-off
   html body.lens-app #discover-view .atlas-explore-heading h1 { font-size:2.05rem; }
   html body.lens-app #discover-view .atlas-explore-copy { padding:20px 18px 22px; }
   html body.lens-app #discover-view .atlas-explore-copy h2 { font-size:1.6rem; }
-  html body.lens-app #discover-view .atlas-explore-position { gap:8px; font-size:.625rem; }
+  html body.lens-app #discover-view .atlas-explore-position { font-size:.6875rem; }
 }
 @media (prefers-reduced-motion:reduce) {
   html body.lens-app #discover-view.atlas-explore * { scroll-behavior:auto !important; transition:none !important; }

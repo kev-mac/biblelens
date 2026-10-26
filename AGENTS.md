@@ -13,3 +13,5 @@ The owner selected Inter, sans serif throughout. The Study Atlas uses one typefa
 The primary audience is adults aged 25–50 using mobile phones. Treat phone layouts as the primary experience: thumb-reachable navigation, light contemporary controls, clear action sheets, and purposeful motion with reduced-motion support. Keep actions discoverable; do not imply unsupported gestures with decorative handles.
 
 The audience is primarily African and Middle Eastern. Human illustrations should reflect African and Middle Eastern people with varied skin tones, facial features and natural hair textures. Use dignified individual portrayals; imagined artwork must not be presented as historical evidence or a verified portrait.
+
+BibleLens is a scholarly tool for readers of any religious affiliation or none. Use neutral descriptions of texts, literary forms, historical settings and interpretations. Do not assume religious belief, familiarity with biblical narratives, or devotional intent in interface copy.
