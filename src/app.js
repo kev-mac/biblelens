@@ -11,7 +11,7 @@ function showStorageStatus(status){
  if(!banner){
   banner=document.createElement('aside');banner.id='workspace-storage-status';banner.className='workspace-storage-status';banner.setAttribute('role','status');
   const message=document.createElement('p');message.dataset.storageMessage='';banner.append(message);
-  const backup=document.createElement('button');backup.type='button';backup.textContent='Export notes';backup.onclick=()=>download('BibleLens-notes.json',JSON.stringify({version:1,exportedAt:new Date().toISOString(),...state},null,2),'application/json');banner.append(backup);
+  const backup=document.createElement('button');backup.type='button';backup.textContent='Export notes';backup.onclick=()=>download('BibleLens-notes.json',JSON.stringify({version:1,exportedAt:new Date().toISOString(),...state,deviceDebates:window.BibleLensDebateStore?.all()},null,2),'application/json');banner.append(backup);
   const recovery=document.createElement('button');recovery.type='button';recovery.dataset.storageRecovery='';recovery.textContent='Download recovery';recovery.onclick=()=>{if(workspaceStore.recovery)download('BibleLens-recovery.txt',workspaceStore.recovery.raw,'text/plain');};banner.append(recovery);
   (document.querySelector('main')||document.body).prepend(banner);
  }
@@ -139,12 +139,12 @@ function navigationPosition(){
 }
 function rememberNavigation(){if(navigationRestore)return;navigationPositions.set(navigationEntry,navigationPosition());}
 // Keep bookmarked and native legacy destinations while publishing one vocabulary.
-// Bare #explore is the gallery; only the old reader's path form means Read.
+// #discover is Explore; legacy #explore remains a reader link.
 function canonicalRouteHash(hash){
  const value=hash.startsWith('#')?hash:'#'+hash;
- return value.replace(/^#discover(?=[/?]|$)/,'#explore')
+ return value.replace(/^#explore(?=[/?]|$)/,'#read')
   .replace(/^#(?:categories|saved)(?=[/?]|$)/,'#evidence')
-  .replace(/^#explore(?=\/)/,'#read');
+  .replace(/^#bookmarks(?=$)/,'#notebook?section=bookmarks');
 }
 function navigateHash(hash,{replace=false}={}){
  hash=canonicalRouteHash(hash);
@@ -182,9 +182,9 @@ window.addEventListener('viewchange',()=>{if(navigationRestore)requestAnimationF
 window.BibleLensNavigation={navigate:navigateHash,restore:restoreNavigation,remember:rememberNavigation};
 function setView(v,update=true){
  v=({categories:'evidence',saved:'evidence',discover:'explore',people:'characters'})[v]||v;
- const views=['read','chat','evidence','method','commandments','characters','prophecies','timeline','stories','bookmarks','places','explore','search','notebook'];
+ const views=['read','chat','evidence','method','commandments','characters','prophecies','timeline','stories','bookmarks','places','explore','search','notebook','debates','debate'];
  const next=views.includes(v)?v:'read';
- if(update)navigateHash('#'+(({characters:'people'})[next]||next));
+ if(update)navigateHash('#'+(({characters:'people',explore:'discover',bookmarks:'notebook?section=bookmarks'})[next]||next));
  view=next;document.body.classList.toggle('read-view',view==='read');
  for(const name of views){const section=$('#'+name+'-view');if(section)section.hidden=name!==view;}
  document.querySelectorAll('nav [data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);if(b.closest('header'))b.hidden=['chat','stories','commandments','prophecies','characters'].includes(b.dataset.view);if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
@@ -207,20 +207,20 @@ $('#search').oninput=renderCards;$('#testament').onchange=renderCards;$('#reset'
 $('#evidence-form').onsubmit=ev=>{ev.preventDefault();const q=$('#evidence-query').value.trim();const stop=new Set(['how','did','does','is','a','the','was','what','can','do','of','in','to','and','it','why','when','were','there','god']);let words=q.toLowerCase().replace(/[^a-z0-9\s:]/g,' ').split(/\s+/).filter(w=>w&&!stop.has(w));if(!words.length)words=q.toLowerCase().split(/\s+/).filter(Boolean);const ranked=ENTRIES.map(e=>({e,score:words.filter(w=>corpus(e).includes(w)).length})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,4);$('#evidence-results').innerHTML=ranked.length?`<div class="eyebrow">MATCHING RECORDS · RETRIEVAL, NOT A GENERATED ANSWER</div>${ranked.map(({e})=>`<article class="evidence-result"><button data-open="${e.id}">${esc(e.title)} ↗</button><p class="comparison-summary">${esc(e.summary)}</p></article>`).join('')}`:'<p>No relevant records in this six-study collection. Try “Judas,” “census,” “plants,” or a passage reference.</p>'};
 function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Export downloaded')}
 function studyMarkdown(e){return `# ${e.title}\n\nClassification: ${e.type} (provisional editorial)\n\n${e.intro}\n\n## Passage extracts\n${e.passages.map(p=>`\n### ${p[0]} — KJV\n${p[1]}\n\n### ${p[0]} — ASV\n${p[2]}\n`).join('')}\n## Our summary\n${e.summary}\n\nBackground reference: ${e.sab}\n\n## Competing reading\n${e.response}\n${e.responseUrl||'No external source attached; proposed editorial reading.'}\n\n## Evidence and limits\n${e.assessment}\n\nResearch question: ${e.question}\n\n## My private notes\n${state.noteTitles[e.id]?'Title: '+state.noteTitles[e.id]+'\n\n':''}${state.notes[e.id]||'(No notes)'}\n\nProvisional starter study. Not scholarly reviewed. Source check: October 11, 2026.\n`}
-$('#export-backup').onclick=()=>download('bible-lens-backup.json',JSON.stringify({version:1,exportedAt:new Date().toISOString(),...state},null,2),'application/json');
+$('#export-backup').onclick=()=>download('bible-lens-backup.json',JSON.stringify({version:1,exportedAt:new Date().toISOString(),...state,deviceDebates:window.BibleLensDebateStore?.all()},null,2),'application/json');
 function mergeInvestigationBackup(backup){
  const records=backup.investigations;if(!records||typeof records!=='object'||Array.isArray(records))return;
  const incoming=Object.fromEntries(Object.entries(records).filter(([id,item])=>!['__proto__','constructor','prototype'].includes(id)&&window.BibleLensSync.validInvestigation(item)).map(([id,item])=>[id,{...item,id}]));
  state.investigations=window.BibleLensSync.merge({}, {investigations:state.investigations||{}}, {investigations:incoming}).data.investigations;
 }
-$('#import-backup').onchange=async ev=>{const file=ev.target.files[0];if(!file)return;try{if(file.size>2000000)throw Error('Backup exceeds 2 MB');const backup=JSON.parse(await file.text());if(backup.version!==1||!Array.isArray(backup.bookmarks)||!backup.notes||typeof backup.notes!=='object'||Array.isArray(backup.notes))throw Error('Not a BibleLens backup');const valid=ENTRIES.map(e=>e.id);state.bookmarks=[...new Set([...state.bookmarks,...backup.bookmarks.filter(id=>valid.includes(id))])];for(const id of valid){const note=backup.notes[id];if(typeof note==='string'&&note.length<=100000){const old=state.notes[id];state.notes[id]=old&&old!==note?`${old}\n\n--- Imported note ---\n${note}`:note}}if(backup.noteTitles&&typeof backup.noteTitles==='object'&&!Array.isArray(backup.noteTitles))for(const id of valid){const title=backup.noteTitles[id];if(typeof title!=='string'||title.length>160)continue;if(state.noteTitles[id]&&state.noteTitles[id]!==title){state.notes[id]=(state.notes[id]||'')+'\n\nImported note title: '+title;}else state.noteTitles[id]=title;}if(typeof mergePassageBackup==='function')mergePassageBackup(backup);mergeInvestigationBackup(backup);persist();renderCards();$('#backup-status').textContent='Backup restored. Existing notes were preserved.'}catch(err){$('#backup-status').textContent=`Could not restore: ${err.message}`}ev.target.value=''};
+$('#import-backup').onchange=async ev=>{const file=ev.target.files[0];if(!file)return;try{if(file.size>2000000)throw Error('Backup exceeds 2 MB');const backup=JSON.parse(await file.text());if(backup.version!==1||!Array.isArray(backup.bookmarks)||!backup.notes||typeof backup.notes!=='object'||Array.isArray(backup.notes))throw Error('Not a BibleLens backup');const valid=ENTRIES.map(e=>e.id);state.bookmarks=[...new Set([...state.bookmarks,...backup.bookmarks.filter(id=>valid.includes(id))])];for(const id of valid){const note=backup.notes[id];if(typeof note==='string'&&note.length<=100000){const old=state.notes[id];state.notes[id]=old&&old!==note?`${old}\n\n--- Imported note ---\n${note}`:note}}if(backup.noteTitles&&typeof backup.noteTitles==='object'&&!Array.isArray(backup.noteTitles))for(const id of valid){const title=backup.noteTitles[id];if(typeof title!=='string'||title.length>160)continue;if(state.noteTitles[id]&&state.noteTitles[id]!==title){state.notes[id]=(state.notes[id]||'')+'\n\nImported note title: '+title;}else state.noteTitles[id]=title;}if(typeof mergePassageBackup==='function')mergePassageBackup(backup);mergeInvestigationBackup(backup);window.BibleLensDebateStore?.restore(backup.deviceDebates);persist();renderCards();$('#backup-status').textContent='Backup restored. Existing notes were preserved.'}catch(err){$('#backup-status').textContent=`Could not restore: ${err.message}`}ev.target.value=''};
 function route(){
  const canonical=canonicalRouteHash(location.hash);
  if(canonical!==location.hash&&location.hash){
   history.replaceState(history.state,'',canonical);
   if(navigationRestore)navigationRestore.hash=canonical;
  }
- let hash;try{hash=decodeURIComponent(location.hash.slice(1));}catch{hash='read';}if(!hash.startsWith('study/')&&$('#study-dialog').open)$('#study-dialog').close();if(window.BibleLensWorkspace?.route(location.hash))return;if(hash==='characters'||hash.startsWith('characters/')||hash==='people'||hash.startsWith('people/')){setView('characters',false)}else if(hash.startsWith('evidence/')||hash.startsWith('evidence?')){const key=/^evidence\/([^?]+)/.exec(hash)?.[1],directory=categoryDirectoryLocation(key);if(directory){history.replaceState(null,'',directory);setView(CATEGORY_DIRECTORY_VIEWS[key],false)}else setView('evidence',false);window.scrollTo({top:0,behavior:'instant'})}else if(hash.startsWith('stories/')){setView('stories',false)}else if(hash.startsWith('study/')){setView('read',false);const id=hash.slice(6);if(ENTRIES.some(e=>e.id===id))openStudy(id,false);else toast('Study not found in this collection')}else if(hash.startsWith('read/'))setView('read',false);else setView(hash,false)}window.addEventListener('hashchange',route);route();
+ let hash;try{hash=decodeURIComponent(location.hash.slice(1));}catch{hash='read';}if(!hash.startsWith('study/')&&$('#study-dialog').open)$('#study-dialog').close();if(window.BibleLensDebates?.route(location.hash))return;if(window.BibleLensWorkspace?.route(location.hash))return;if(hash==='characters'||hash.startsWith('characters/')||hash==='people'||hash.startsWith('people/')){setView('characters',false)}else if(hash.startsWith('evidence/')||hash.startsWith('evidence?')){const key=/^evidence\/([^?]+)/.exec(hash)?.[1],directory=categoryDirectoryLocation(key);if(directory){history.replaceState(null,'',directory);setView(CATEGORY_DIRECTORY_VIEWS[key],false)}else setView('evidence',false);window.scrollTo({top:0,behavior:'instant'})}else if(hash.startsWith('stories/')){setView('stories',false)}else if(hash.startsWith('study/')){setView('read',false);const id=hash.slice(6);if(ENTRIES.some(e=>e.id===id))openStudy(id,false);else toast('Study not found in this collection')}else if(hash.startsWith('commandments?'))setView('commandments',false);else if(hash.startsWith('timeline?'))setView('timeline',false);else if(hash.startsWith('read/'))setView('read',false);else setView(hash,false)}window.addEventListener('hashchange',route);route();
 
 // D8-A: remove this class to restore the separate book-cell styling.
 document.body.classList.add('merge-picker-inputs');

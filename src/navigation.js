@@ -14,7 +14,7 @@
  trigger.setAttribute('aria-expanded', 'false');
  }
  const grid = sheet.querySelector('.navigation-grid');
- const pages = [['explore','Explore'],['read','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['evidence','Evidence'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['timeline','Timeline']];
+ const pages = [['explore','Explore'],['read','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['debates','Debates'],['evidence','Evidence filters'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['timeline','Timeline'],['prophecies','Prophecies'],['method','Method & Sources']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
   const icon = document.querySelector('#navigation-icons').content.querySelector(`[data-navigation-icon="${page}"]`);
@@ -42,7 +42,7 @@
  grid.addEventListener('click', event => {
   const button = event.target.closest('button'); if (!button) return;
   sheet.close();
-  if (button.dataset.navigationView) { setView(button.dataset.navigationView); window.scrollTo({top:0,behavior:'smooth'}); }
+  if (button.dataset.navigationView) { const page=button.dataset.navigationView;window.BibleLensWorkspace.navigate('#'+({explore:'discover',characters:'people',bookmarks:'notebook?section=bookmarks'}[page]||page)); window.scrollTo({top:0,behavior:'smooth'}); }
   else if (button.hasAttribute('data-navigation-settings')) requestAnimationFrame(() => document.querySelector('#lens-settings').click());
  });
  sheet.addEventListener('close', () => { for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');document.querySelector('#lens-settings').focus({preventScroll:true}); });

@@ -65,7 +65,7 @@ async function initCommandments() {
  matrix.innerHTML=Object.entries(COMMANDMENT_FACETS).map(([dimension,values])=>`<fieldset><legend>${dimension[0].toUpperCase()+dimension.slice(1)}</legend><div class="commandments-options">${values.map(value=>`<button type="button" class="secondary commandment-facet-toggle" data-commandment-dimension="${dimension}" data-value="${esc(value)}" aria-pressed="false"><span>${esc(value)}</span></button>`).join('')}</div></fieldset>`).join('');
  let visibleCount=60;
  function render() {
-  const items=filterCommandments(COMMANDMENTS,filters,search.value);
+  const items=filterCommandments(COMMANDMENTS,filters,search.value).filter(item=>!/^\s*[PN]\d+\s*$/i.test(search.value)||item.code===search.value.trim().toUpperCase());
   document.querySelector('#commandments-list').innerHTML=items.length?items.slice(0,visibleCount).map(commandmentCard).join('')+(items.length>visibleCount?'<button type="button" id="commandments-load-more">Show more</button>':''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
   document.querySelector('#commandments-count').textContent=`${items.length} of ${COMMANDMENTS.length} commandments${items.length>visibleCount?` · showing 1–${visibleCount}`:''}`;
   for(const button of matrix.querySelectorAll('[data-commandment-dimension]')){
@@ -118,6 +118,8 @@ async function initCommandments() {
   const ref=readRef(button.dataset.commandmentPassage);if(!ref){toast('Passage reader is still loading. Please try again.');return;}
   storiesActive=false;renderStoriesView();setView('read',false);loadChapter(ref.book,ref.chapter,ref.verse);
  });
- render();
+ function followRoute(){if(!location.hash.startsWith('#commandments'))return;const code=new URLSearchParams(location.hash.split('?')[1]||'').get('code');if(code&&COMMANDMENTS.some(item=>item.code===code)){search.value=code;clear();}}
+ window.addEventListener('hashchange',followRoute);
+ render();followRoute();
 }
 initCommandments();
