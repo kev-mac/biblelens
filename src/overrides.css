@@ -2106,3 +2106,6 @@ html body.lens-app #main :is(.lens-kicker,.lens-question-topic,.atlas-reader-col
 html body.lens-app #chapter-text :is(.verse-num,.atlas-evidence-marker) {font-size:12px;}
 html body.lens-app #chapter-text .atlas-evidence-marker::after {inset:12px 10px;}
 }
+@layer overrides.priority {
+html body.lens-app #notebook-view .lens-note h2 a {display:inline-flex;align-items:center;min-height:44px;}
+}
