@@ -23,3 +23,12 @@ context.moveChapter=dispatch;await dispatch(-1);assert.equal(loads.length,0);ass
 blocked=true;await dispatch(-1);assert.equal(loads.length,0);blocked=false;context.readingBook=0;context.readingChapter=1;await Promise.all([dispatch(1),dispatch(1)]);assert.equal(loads.length,1);assert.equal(article.style.transform,'');assert.equal(article.style.opacity,'');
 const html=fs.readFileSync('src/index.html','utf8');assert(!html.includes('id="edge-prev"'));assert(!html.includes('id="edge-next"'));assert(html.includes('id="chapter-swipe-peek"'));
 console.log('PASS: finger tracking, axis lock, 80px threshold, edge cue, cancel/snap back, click suppression, boundaries, modal/selection guards, and serialized chapter loading.');
+
+// Chapter transitions leave loading/error content visible while the request waits.
+context.readingBook=0;context.readingChapter=1;
+let finishChapter;
+context.loadChapter=()=>new Promise(resolve=>{finishChapter=resolve;context.loadVersion++;});
+const delayedChapter=dispatch(1);await Promise.resolve();await Promise.resolve();
+assert.equal(article.style.opacity,'','A slow request must not hide its loading placeholder');
+finishChapter();await delayedChapter;
+console.log('PASS: chapter-loading feedback remains visible during page transitions.');
