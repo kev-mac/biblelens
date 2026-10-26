@@ -16,7 +16,7 @@
  sheet.addEventListener('click',event=>{if(event.target.closest('[data-debate-close]'))sheet.close();});
  sheet.addEventListener('close',()=>opener?.isConnected&&opener.focus({preventScroll:true}));
  const labelInfo='Labels reflect the record’s current status. They describe the attached research, not a public vote or a new assessment.';
- const popover=document.createElement('div');popover.id='debate-label-info';popover.className='phase2-label-info';popover.setAttribute('popover','auto');popover.innerHTML=`<h2>About these labels</h2><p>${labelInfo}</p><button class="lens-button">Close</button>`;document.body.append(popover);
+ const popover=document.createElement('div');popover.id='debate-label-info';popover.className='phase2-label-info';popover.setAttribute('popover','auto');popover.hidden=typeof popover.showPopover!=='function';popover.innerHTML=`<h2>About these labels</h2><p>${labelInfo}</p><button class="lens-button">Close</button>`;document.body.append(popover);
  popover.querySelector('button').onclick=()=>{popover.hidePopover();el('debate-label-trigger')?.focus();};
  const sources=record=>[...(record.sources||[]),...(record.fields||[]).flatMap(field=>field.sources||[])].filter((source,index,all)=>all.findIndex(other=>other.url===source.url)===index);
  function sourceLinks(record){return sources(record).map(source=>/^https:\/\//.test(source.url)?`<a class="phase2-source" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} ↗</a>`:'').join('')||'<p>No external source is attached to this research record.</p>';}

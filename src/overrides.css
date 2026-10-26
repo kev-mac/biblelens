@@ -2109,3 +2109,6 @@ html body.lens-app #chapter-text .atlas-evidence-marker::after {inset:12px 10px;
 @layer overrides.priority {
 html body.lens-app #notebook-view .lens-note h2 a {display:inline-flex;align-items:center;min-height:44px;}
 }
+@layer overrides.priority {
+html body.lens-app :is(.phase2-deeper,.phase2-rail-heading,.lens-result-group) {scroll-margin-top:90px;}
+}

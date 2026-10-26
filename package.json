@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node scripts/check-routes.mjs && node scripts/check-header-context.mjs && node scripts/check-card-disclosures.mjs && node scripts/check-text-highlights.mjs && node scripts/check-witness-labels.mjs && node scripts/check-chapter-names.mjs && node scripts/audit-annotations.mjs && node scripts/check-annotations.mjs && node scripts/check-reader-toggles.mjs && node scripts/check-red-letters.mjs && node scripts/check-reader-question.mjs && node scripts/check-global-chat.mjs && node scripts/check-verse-roles.mjs && node scripts/check-questions-category.mjs && node scripts/check-citation-preview.mjs && node scripts/check-reader-swipes.mjs && node scripts/check-reader-bookmarks.mjs && node scripts/check-passage-tools.mjs && node scripts/check-marked-workspace.mjs && node scripts/check-category-pagination.mjs && node scripts/check-commandments.mjs && node scripts/check-commandment-taxonomy.mjs && node scripts/check-genesis-academic.mjs && node scripts/check-study-relationships.mjs && node scripts/check-story-topics.mjs && node scripts/check-stories.mjs && node scripts/check-characters.mjs && node scripts/check-character-connections.mjs && node scripts/check-prophecies.mjs && node scripts/check-reader-picker-grid.mjs && node scripts/check-reader-network.mjs && node scripts/check-timeline.mjs && node scripts/check-places.mjs && node scripts/check-reviewed-timeline.mjs && npm run check:readability",
+    "check": "node scripts/check-routes.mjs && node scripts/check-header-context.mjs && node scripts/check-card-disclosures.mjs && node scripts/check-text-highlights.mjs && node scripts/check-witness-labels.mjs && node scripts/check-chapter-names.mjs && node scripts/audit-annotations.mjs && node scripts/check-annotations.mjs && node scripts/check-reader-toggles.mjs && node scripts/check-red-letters.mjs && node scripts/check-reader-question.mjs && node scripts/check-global-chat.mjs && node scripts/check-verse-roles.mjs && node scripts/check-questions-category.mjs && node scripts/check-citation-preview.mjs && node scripts/check-reader-swipes.mjs && node scripts/check-reader-bookmarks.mjs && node scripts/check-passage-tools.mjs && node scripts/check-marked-workspace.mjs && node scripts/check-category-pagination.mjs && node scripts/check-commandments.mjs && node scripts/check-commandment-taxonomy.mjs && node scripts/check-genesis-academic.mjs && node scripts/check-study-relationships.mjs && node scripts/check-story-topics.mjs && node scripts/check-stories.mjs && node scripts/check-characters.mjs && node scripts/check-character-connections.mjs && node scripts/check-prophecies.mjs && node scripts/check-reader-picker-grid.mjs && node scripts/check-reader-network.mjs && node scripts/check-timeline.mjs && node scripts/check-places.mjs && node scripts/check-reviewed-timeline.mjs && npm run check:readability && node scripts/check-debates.mjs",
     "check:connections": "node scripts/check-character-connections.mjs",
     "start": "node scripts/serve.mjs",
     "build:mobile": "node scripts/build-mobile.mjs",
@@ -22,8 +22,9 @@
     "release:prepare": "node scripts/prepare-release.mjs",
     "release:verify": "node scripts/verify-release.mjs",
     "stories:tag": "node scripts/story-topics.mjs data/stories.json data/reference/topics.json data/stories.json",
-    "check:workspace": "node scripts/check-workspace-state.mjs && node scripts/check-workspace-search.mjs",
-    "check:readability": "node scripts/check-readability.mjs"
+    "check:workspace": "node scripts/check-workspace-state.mjs && node scripts/check-workspace-search.mjs && node scripts/check-debates.mjs",
+    "check:readability": "node scripts/check-readability.mjs",
+    "check:ui": "node scripts/check-phase2-browser.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",
@@ -32,6 +33,7 @@
     "drizzle-orm": "0.45.2",
     "esbuild": "0.28.2",
     "minisearch": "7.2.0",
+    "playwright": "1.64.1",
     "wink-lemmatizer": "3.0.4",
     "wordnet-db": "3.1.14"
   },

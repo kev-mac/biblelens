@@ -203,7 +203,7 @@
  async function renderSaved(renderId){
   const ids=Object.entries(window.BibleLensDebateStore.all()).filter(([,value])=>value.saved).map(([id])=>id);
   for(const button of document.querySelectorAll('[data-lens-filter]'))button.setAttribute('aria-pressed',String(button.dataset.lensFilter==='saved'));
-  el('lens-notebook-status').textContent=`${ids.length} saved debates · Stored on this device. Full backups include them.`;
+  el('lens-notebook-status').textContent=`${ids.length} saved ${ids.length===1?'debate':'debates'} · Stored on this device. Full backups include them.`;
   el('lens-notebook-list').innerHTML=ids.length?'<p role="status">Loading saved debates…</p>':'<div class="lens-empty"><h2>Keep a question to return to.</h2><p>Save a debate to find it here.</p><a class="lens-button" href="#debates">Explore debates</a></div>';
   const rows=await Promise.all(ids.map(async id=>{try{const response=await fetch('/api/debate?'+new URLSearchParams({id}));if(!response.ok)throw Error();return window.BibleLensDebates.card(await response.json());}catch{return `<p>Saved record: ${esc(id)}. <a href="#debate/${encodeURIComponent(id)}">Open or retry</a></p>`;}}));
   if(renderId===savedRender&&ids.length)el('lens-notebook-list').innerHTML=rows.join('');
