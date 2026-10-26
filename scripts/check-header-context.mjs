@@ -16,3 +16,19 @@ rect={top:80,bottom:145};update();assert.equal(contextNode.text,'Read','Returnin
 context.view='characters';rect={top:-50,bottom:0};update();assert.equal(contextNode.text,'People');assert.equal(contextNode.children.length,0);
 context.view='evidence';context.location.hash='#evidence/academic';update();assert.equal(contextNode.text,'Evidence · Academic');
 console.log('PASS: reader header follows title/description visibility, returns to Read, and preserves other page contexts.');
+
+// Category cards must keep their icons after the legacy header is removed.
+const html=fs.readFileSync('src/index.html','utf8');
+assert.equal((html.match(/<header\b/g)||[]).length,1,'Only the live masthead remains');
+assert(!html.includes('id="reader-picker"'),'No hidden Settings proxy remains');
+const template=/<template id="navigation-icons">([\s\S]*?)<\/template>/.exec(html)?.[1];
+assert(template,'The live masthead hosts inert navigation icons');
+const iconNodes=new Map([...template.matchAll(/(<svg data-navigation-icon="([^"]+)"[\s\S]*?<\/svg>)/g)].map(([,outerHTML,key])=>[key,{outerHTML}]));
+const iconContext=vm.createContext({document:{querySelector(selector){
+ assert.equal(selector,'#navigation-icons','Icons come from the live template, not removed header buttons');
+ return {content:{querySelector(selector){return iconNodes.get(/data-navigation-icon="([^"]+)"/.exec(selector)?.[1]);}}};
+}}});
+const reader=fs.readFileSync('src/reader.js','utf8');
+vm.runInContext(reader.slice(reader.indexOf('function categoryIcon('),reader.indexOf('function comparisonIcon(')),iconContext);
+for(const key of ['stories','characters','prophecies'])assert.match(iconContext.categoryIcon(key),/^<svg[\s\S]*<\/svg>$/);
+console.log('PASS: one live masthead, direct Settings trigger and retained category icons.');

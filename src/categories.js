@@ -50,7 +50,7 @@ async function renderPagedCategories(){
   else if(!location.hash.includes('?'))markedKind='all';
   if(markedBookSelection===null)markedBookSelection=readingBook;
   const scope=JSON.stringify([markedBookSelection,markedChapterSelection,markedKind,markedTheme,markedCommandmentType]);if(scope!==categoryScope){categoryPages.clear();categoryScope=scope;}
-  $('#evidence-heading').textContent=route?MARKED_CATEGORIES.find(([key])=>key===route.key)[1]:'Evidence';
+  $('#categories-heading').textContent=route?MARKED_CATEGORIES.find(([key])=>key===route.key)[1]:'Evidence';
   renderMarkedContext();$('#saved-cards').hidden=true;box.innerHTML='<p role="status">Loading evidence…</p>';
   const response=await fetch('/api/categories?'+categoryQuery('all',0,0));if(!response.ok)throw Error();
   const meta=await response.json();if(generation!==markedWorkspaceGeneration||view!=='evidence')return;
@@ -98,10 +98,10 @@ async function renderPagedCategories(){
    const button=event.target.closest('[data-category-offset],[data-category-retry]');if(!button||button.disabled)return;
    const page=categoryPages.get(key)||0;
    await fill(button.hasAttribute('data-category-retry')?page:page+Number(button.dataset.categoryOffset));
-   if(generation===markedWorkspaceGeneration&&view==='evidence'){$('#evidence-heading').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});}
+   if(generation===markedWorkspaceGeneration&&view==='evidence'){$('#categories-heading').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});}
   };
   await fill(categoryPages.get(key)||0);
- }catch{if(generation===markedWorkspaceGeneration)box.innerHTML='<p>Evidence could not load. <button type="button" id="categories-retry">Retry</button></p>';box.querySelector('#evidence-retry')?.addEventListener('click',renderPagedCategories);}
+ }catch{if(generation===markedWorkspaceGeneration)box.innerHTML='<p>Evidence could not load. <button type="button" id="categories-retry">Retry</button></p>';box.querySelector('#categories-retry')?.addEventListener('click',renderPagedCategories);}
 }
 if(view==='evidence')renderPagedCategories();
 

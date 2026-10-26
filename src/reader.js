@@ -128,7 +128,7 @@ CATEGORY_ICON_PATHS.commandments='<rect x="3" y="3" width="18" height="18" rx="3
 CATEGORY_ICON_NAMES.commandments='list-ordered';
 CATEGORY_ICON_NAMES.stories='book-open';CATEGORY_ICON_PATHS.stories='<path d="M12 7v14M2 3h6a4 4 0 0 1 4 4 4 4 0 0 1 4-4h6v15h-6a4 4 0 0 0-4 3 4 4 0 0 0-4-3H2Z"/>';
 CATEGORY_ICON_NAMES.academic='graduation-cap';CATEGORY_ICON_NAMES.bookmark='bookmark';
-function categoryIcon(key){if(['stories','characters','prophecies'].includes(key))return document.querySelector(`header nav [data-view="${key}"] svg`).outerHTML;const normalized=key==='questions'?'Q':key;return `<svg class="category-icon" data-icon="${CATEGORY_ICON_NAMES[normalized]}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${CATEGORY_ICON_PATHS[normalized]}</svg>`;}
+function categoryIcon(key){if(['stories','characters','prophecies'].includes(key))return document.querySelector('#navigation-icons').content.querySelector(`[data-navigation-icon="${key}"]`).outerHTML;const normalized=key==='questions'?'Q':key;return `<svg class="category-icon" data-icon="${CATEGORY_ICON_NAMES[normalized]}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${CATEGORY_ICON_PATHS[normalized]}</svg>`;}
 function comparisonIcon(item){return categoryIcon(filterCategory(item));}
 function referenceLink(ref,label,contextItem){const p=typeof ref==='string'?readRef(ref):ref;if(!p)return '';const full=label||ref.label||(typeof ref==='string'?ref:`${books[p.book]?.name} ${p.chapter}:${p.verse}`);return `<a class="verse-citation${contextItem?' context-source':''}"${contextItem?` data-tone="${comparisonTone(contextItem)}"`:``} href="#read/${p.book}/${p.chapter}/${p.verse}" data-cite="${p.book}/${p.chapter}/${p.verse}" data-cite-end="${p.end||p.verse}" data-cite-label="${esc(full)}"${contextItem&&witnessLabel(contextItem)?` data-cite-witness="${esc(contextItem.witness)}" data-cite-summary="${esc(contextItem.summary||contextItem.text)}"`:``} aria-label="${esc(full)}" title="${esc(full)}"><span>${esc(compactCitation(p,full))}</span></a>`;}
 function contextRanges(item){
@@ -534,15 +534,16 @@ readerSheet.addEventListener('click',ev=>{if(ev.target===readerSheet){const r=re
 })();
 
 
-// Pinned reader controls resize with the header, filters and text-size setting.
+// Legacy dock offsets stay independent of the live masthead. The former
+// hidden header contributed zero; retain that scroll geometry during migration.
 (() => {
- const header=document.querySelector('body > header'),status=$('#comparison-status'),dock=document.querySelector('.comparison-dock'),root=document.documentElement;
+ const status=$('#comparison-status'),dock=document.querySelector('.comparison-dock'),root=document.documentElement;
  function measurePinnedControls(){
-  root.style.setProperty('--site-header-height',Math.ceil(header.getBoundingClientRect().height)+'px');
+  root.style.setProperty('--site-header-height','0px');
   const height=Math.ceil(status.getBoundingClientRect().height);
   root.style.setProperty('--comparison-dock-height',height+'px');dock.style.height=height+'px';
  }
- if(typeof ResizeObserver!=='undefined'){const observer=new ResizeObserver(measurePinnedControls);observer.observe(header);observer.observe(status);}
+ if(typeof ResizeObserver!=='undefined'){const observer=new ResizeObserver(measurePinnedControls);observer.observe(status);}
  window.addEventListener('resize',measurePinnedControls);window.addEventListener('viewchange',()=>requestAnimationFrame(measurePinnedControls));measurePinnedControls();
 })();
 

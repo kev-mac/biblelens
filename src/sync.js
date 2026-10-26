@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(!native)try{identity=await api('/session');}catch(error){if(error.status!==401)say(error.message);}
   render();
   if(meta.enabled)await sync();else if(!status.textContent)say('Sync is off. Existing notes stay on this device until you enable it.');
-  if(location.hash==='#sync')document.querySelector('#reader-picker').click();
+  if(location.hash==='#sync')document.querySelector('#lens-settings').click();
  }
  start();
 });
