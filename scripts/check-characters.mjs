@@ -157,7 +157,7 @@ storyContext.loadChapter=async(...args)=>loads.push(args);
 storyContext.location.hash='#stories/genesis/joseph-in-egypt';await storyContext.routeLinkedStory();
 assert.deepEqual(loads,[],'Opening a story page must not move the Bible reader');
 const app=fs.readFileSync('src/app.js','utf8');assert(app.includes("setView('characters',false)"));
-const html=fs.readFileSync('src/index.html','utf8');assert(html.includes('data-view="characters"'));assert(html.includes('src="characters.js"'));
+const html=fs.readFileSync('src/index.html','utf8');assert(html.includes('data-navigation-icon="characters"'));assert(html.includes('src="characters.js"'));
 console.log(`PASS: ${total} character profiles, verse bounds, 25 story destinations, combined era/Women filters, gender colors, sibling/spouse links, Paul/Saul search, cross-book verse links, text-safe cards, and fresh-load story routing.`);
 
 // Reference-backed directory: use the actual adapted schema, preserve duplicate

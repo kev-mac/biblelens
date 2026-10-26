@@ -19,13 +19,7 @@
   compare: icon('<path d="M10 3H3v18h7M14 3h7v18h-7M12 2v20"/>')
  };
  document.body.classList.add('lens-app');
- const masthead = document.createElement('header');
- masthead.id = 'lensMasthead'; masthead.className = 'lens-masthead';
- masthead.innerHTML = `<a class="lens-brand" href="#explore" aria-label="BibleLens · Explore"><span class="lens-mark" aria-hidden="true">${icons.read}</span><span>BibleLens<small>Read closely. See further.</small></span></a><nav class="lens-primary" aria-label="Workspace">${[['explore','Explore','explore'],['read','Read','read'],['search','Search','search'],['notebook','Notebook','notebook']].map(([id,label,ico]) => `<a href="#${id}" data-lens-view="${id}">${icons[ico]}<span>${label}</span></a>`).join('')}</nav><div class="lens-tools"><button type="button" id="lens-settings" class="lens-button" aria-label="Open settings" title="Settings">${el('reader-picker').innerHTML}</button></div>`;
- document.body.insertBefore(masthead, document.querySelector('body > header'));
- // The hidden original header remains an icon and settings compatibility host.
- el('lens-settings').querySelector('#reader-picker-label')?.remove();
- el('lens-settings').onclick = () => el('reader-picker').click();
+ const masthead = el('lensMasthead');
  el('reader-settings').addEventListener('close', () => el('lens-settings').focus({preventScroll:true}));
  const main = el('main');
  const contextNav=document.createElement('nav');contextNav.className='lens-context';contextNav.setAttribute('aria-label','Breadcrumb');contextNav.hidden=true;main.prepend(contextNav);

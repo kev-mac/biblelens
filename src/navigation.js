@@ -1,7 +1,7 @@
 'use strict';
-// The header label opens a touch-friendly overview; compact header shortcuts remain available.
+// The settings menu reuses inert icon templates hosted by the live masthead.
 (() => {
- const triggers = [document.querySelector('#settings-navigation'), document.querySelector('header .brand')];
+ const triggers = [document.querySelector('#settings-navigation')];
  const sheet = document.createElement('dialog');
  sheet.id = 'navigation-sheet'; sheet.className = 'navigation-sheet';
  sheet.setAttribute('aria-labelledby', 'navigation-heading');
@@ -17,14 +17,14 @@
  const pages = [['explore','Explore'],['read','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['evidence','Evidence'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['timeline','Timeline']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
-  const icon = document.querySelector(`header nav [data-view="${page}"] svg`);
+  const icon = document.querySelector('#navigation-icons').content.querySelector(`[data-navigation-icon="${page}"]`);
   if (icon) button.append(icon.cloneNode(true));
   else if(page==='places')button.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
   else button.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg>';
   const text = document.createElement('span'); text.textContent = label; button.append(text); grid.append(button);
  }
  const settings = document.createElement('button'); settings.type = 'button'; settings.dataset.navigationSettings = '';
- settings.append(document.querySelector('#reader-picker svg').cloneNode(true));
+ settings.append(document.querySelector('#lens-settings svg').cloneNode(true));
  const settingsLabel = document.createElement('span'); settingsLabel.textContent = 'Settings'; settings.append(settingsLabel); grid.append(settings);
  function open() {
   if (sheet.open) return;
@@ -43,9 +43,9 @@
   const button = event.target.closest('button'); if (!button) return;
   sheet.close();
   if (button.dataset.navigationView) { setView(button.dataset.navigationView); window.scrollTo({top:0,behavior:'smooth'}); }
-  else if (button.hasAttribute('data-navigation-settings')) requestAnimationFrame(() => document.querySelector('#reader-picker').click());
+  else if (button.hasAttribute('data-navigation-settings')) requestAnimationFrame(() => document.querySelector('#lens-settings').click());
  });
- sheet.addEventListener('close', () => { for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');(document.querySelector('#lens-settings')||document.querySelector('#reader-picker')).focus({preventScroll:true}); });
+ sheet.addEventListener('close', () => { for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');document.querySelector('#lens-settings').focus({preventScroll:true}); });
  const outside = event => { const r = sheet.getBoundingClientRect(); return event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom; };
  let backdropStart = false;
  sheet.addEventListener('pointerdown', event => { backdropStart = event.target === sheet && outside(event); });
@@ -53,11 +53,8 @@
  window.addEventListener('viewchange', () => { if (sheet.open) sheet.close(); });
 })();
 
-// Keep shortcuts in one row; Settings stays last.
+// Track scroll direction for the reader controls.
 (() => {
- const nav=document.querySelector('header nav');
- for(const page of ['read','chat','evidence','bookmarks','stories','characters','commandments','prophecies'])nav.append(nav.querySelector(`[data-view="${page}"]`));
- nav.append(document.querySelector('#reader-picker'));
  let lastY=window.scrollY;
  function update(){
   if(document.body.classList.contains('dialog-scroll-locked'))return;

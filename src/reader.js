@@ -19,7 +19,7 @@ function readRef(ref){const m=/^(.*?) (\d+):(\d+)/.exec(ref);const book=m&&books
 function chapterStudies(){if(!reading)return [];return ENTRIES.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter}));}
 function applicableStudies(){const entries=chapterStudies();if(!selectedVerses.size)return entries;const matching=entries.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter&&selectedVerses.has(p.verse)}));return matching.length?matching:entries;}
 function chapterOptions(){comparisonSelections.clear();comparisonEvidenceOpen.clear();comparisonRecordSelections.clear();comparisonHighlightOrder.clear();const book=books[readingBook];$('#chapter-select').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===readingChapter?'selected':''}>${i+1}</option>`).join('');$('#book-select').value=String(readingBook);}
-function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;const context=$('#header-context');context.dataset.description=CHAPTER_NAMES[books[readingBook].name]?.[readingChapter]||'';context.dataset.passage=`${label} · ${$('#reader-edition').value.toUpperCase()}`;if(view==='read'){context.innerHTML=esc(label)+' <span class="passage-bullet">•</span> '+esc($('#reader-edition').value.toUpperCase());context.parentElement?.setAttribute('aria-label',label+' — Open navigation');}if(typeof updateHeaderContext==='function')updateHeaderContext();$('#reader-picker').setAttribute('aria-label',`Settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;}
+function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;const context=$('#header-context');context.dataset.description=CHAPTER_NAMES[books[readingBook].name]?.[readingChapter]||'';context.dataset.passage=`${label} · ${$('#reader-edition').value.toUpperCase()}`;if(view==='read'){context.innerHTML=esc(label)+' <span class="passage-bullet">•</span> '+esc($('#reader-edition').value.toUpperCase());context.parentElement?.setAttribute('aria-label',label+' — Open navigation');}if(typeof updateHeaderContext==='function')updateHeaderContext();$('#lens-settings').setAttribute('aria-label',`Settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;}
 async function readerJson(url){
  // Bound the response body as well as the initial connection. The explicit
  // timer also works where AbortSignal.timeout is unavailable.
@@ -462,12 +462,12 @@ function positionBookPicker(){
  document.body.style.removeProperty('--book-picker-left');document.body.style.removeProperty('--book-picker-top');
 }
 applyBookPickerPosition();
-$('#reader-picker').onclick=()=>{
+$('#lens-settings').onclick=()=>{
  if(readerSheet.open)return;
- readerSheet.showModal();$('#reader-picker').setAttribute('aria-expanded','true');
+ readerSheet.showModal();$('#lens-settings').setAttribute('aria-expanded','true');
 };
 $('#reader-settings-close').onclick=()=>readerSheet.close();
-readerSheet.addEventListener('close',()=>{$('#reader-picker').setAttribute('aria-expanded','false');(document.querySelector('#lens-settings')||$('#reader-picker')).focus({preventScroll:true});});
+readerSheet.addEventListener('close',()=>{$('#lens-settings').setAttribute('aria-expanded','false');$('#lens-settings').focus({preventScroll:true});});
 readerSheet.querySelector('.settings-notebook-link').addEventListener('click',()=>readerSheet.close());
 // Sync and release modules add their panels later. Keep those live nodes and handlers
 // in their appropriate settings section, rather than duplicating their controls.

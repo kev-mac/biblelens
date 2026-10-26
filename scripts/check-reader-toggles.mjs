@@ -148,7 +148,7 @@ const settingNodes=new Map();
 const pointerHandlers={},positionStyles=new Map(),bodyClasses=new Set();let positionSaves=0;
 const settingsContext={state:{},persist(){positionSaves++;},Date,window:{innerWidth:414,innerHeight:810,addEventListener(){}},document:{addEventListener(type,fn,options){pointerHandlers[type+(options?.capture?':capture':'')]=fn;},body:{style:{setProperty(k,v){positionStyles.set(k,v);},removeProperty(k){positionStyles.delete(k);}},classList:{toggle(k,on){if(on)bodyClasses.add(k);else bodyClasses.delete(k);},contains(k){return bodyClasses.has(k);}}}},$:selector=>{if(selector==='#reader-settings-controls')return settingsTarget;if(!settingNodes.has(selector))settingNodes.set(selector,{});return settingNodes.get(selector);},readerToolbar:toolbar};
 vm.createContext(settingsContext);
-vm.runInContext(source.slice(source.indexOf('function placeReaderControls('),source.indexOf("$('#reader-picker').onclick=")),settingsContext);
+vm.runInContext(source.slice(source.indexOf('function placeReaderControls('),source.indexOf("$('#lens-settings').onclick=")),settingsContext);
 assert.equal(settingsTarget.child,actions);
 assert(bodyClasses.has('book-picker-floating'));
 settingsContext.state.bookPickerPosition='fixed';settingsContext.applyBookPickerPosition();
