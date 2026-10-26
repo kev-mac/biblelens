@@ -14,7 +14,7 @@
  trigger.setAttribute('aria-expanded', 'false');
  }
  const grid = sheet.querySelector('.navigation-grid');
- const pages = [['discover','Explore'],['explore','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['saved','Categories'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['timeline','Timeline']];
+ const pages = [['explore','Explore'],['read','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['evidence','Evidence'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['timeline','Timeline']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
   const icon = document.querySelector(`header nav [data-view="${page}"] svg`);
@@ -56,7 +56,7 @@
 // Keep shortcuts in one row; Settings stays last.
 (() => {
  const nav=document.querySelector('header nav');
- for(const page of ['explore','chat','saved','bookmarks','stories','characters','commandments','prophecies'])nav.append(nav.querySelector(`[data-view="${page}"]`));
+ for(const page of ['read','chat','evidence','bookmarks','stories','characters','commandments','prophecies'])nav.append(nav.querySelector(`[data-view="${page}"]`));
  nav.append(document.querySelector('#reader-picker'));
  let lastY=window.scrollY;
  function update(){

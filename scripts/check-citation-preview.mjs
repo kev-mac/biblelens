@@ -11,7 +11,7 @@ const b=chip(1);handlers.pointerover({pointerType:'mouse',target:target(b),relat
 b.dataset.citeWitness='Septuagint';b.dataset.citeSummary='The exact original summary.';handlers.focusin({target:target(b)});await settle();assert.equal(child('.preview-summary').textContent,'Septuagint: The exact original summary.');assert.equal(child('.preview-summary').hidden,false);
 const range=chip(1,2);handlers.focusin({target:target(range)});await settle();assert(child('.preview-text').innerHTML.includes('Full verse one, beyond the quoted excerpt.'));assert(child('.preview-text').innerHTML.includes('Full verse two.'));assert.equal(requests,1);
 assert.equal(child('.preview-summary').hidden,true);assert.equal(child('.preview-summary').textContent,'');
-let prevented=false;handlers.click({target:target(range),preventDefault(){prevented=true;}});assert(prevented);assert(popup.hidden);assert.deepEqual(loads.at(-1).ref,[0,1,1]);assert.equal(loads.at(-2).view,'explore');
+let prevented=false;handlers.click({target:target(range),preventDefault(){prevented=true;}});assert(prevented);assert(popup.hidden);assert.deepEqual(loads.at(-1).ref,[0,1,1]);assert.equal(loads.at(-2).view,'read');
 // Stories references stay in the reader's floating preview on click and Enter.
 const story=chip(1,2);story.dataset.citePreview='';const beforeStory=loads.length;
 handlers.click({target:target(story),preventDefault(){}});await settle();

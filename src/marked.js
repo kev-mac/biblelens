@@ -88,7 +88,7 @@ function markedSummary(record,category=markedKind){
 function renderMarkedContext(){
  const summary=[markedBookSelection===-1?'All Books':books[markedBookSelection].name,markedChapterSelection?String(markedChapterSelection):'',markedKind==='all'?'':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1],markedTheme==='all'?'':markedTheme,markedCommandmentType==='all'?'':markedCommandmentType].filter(Boolean).join(' · ');
  const criteria=$('#category-filter-summary');if(criteria)criteria.textContent='Showing: '+[markedBookSelection===-1?'All books':books[markedBookSelection].name,markedChapterSelection?'Chapter '+markedChapterSelection:'All chapters',markedKind==='all'?'All categories':MARKED_CATEGORIES.find(c=>c[0]===markedKind)[1],markedTheme==='all'?'':'Theme: '+markedTheme,markedCommandmentType==='all'?'':'Type: '+markedCommandmentType].filter(Boolean).join(' · ');
- const context=$('#header-context');context.dataset.marked=summary;if(view==='saved')updateHeaderContext();
+ const context=$('#header-context');context.dataset.marked=summary;if(view==='evidence')updateHeaderContext();
  $('#marked-context').innerHTML=`<button type="button" id="marked-filter-open" class="secondary" aria-haspopup="dialog" aria-controls="marked-filter-dialog" aria-label="Filter marked verses and categories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg><span>Filter</span></button>`;
  $('#marked-filter-open').onclick=openMarkedFilters;
 }
@@ -124,7 +124,7 @@ async function renderMarkedWorkspace(){
   if(markedBookSelection===null)markedBookSelection=readingBook;
   renderMarkedContext();$('#saved-passages').innerHTML='<p role="status">Loading categories…</p>';$('#saved-cards').hidden=true;
   const request=requestMarkedBookData(markedBookSelection);
-  const data=await request;if(generation!==markedWorkspaceGeneration||view!=='saved')return;markedData=data;renderMarkedResults();
+  const data=await request;if(generation!==markedWorkspaceGeneration||view!=='evidence')return;markedData=data;renderMarkedResults();
  }catch{if(generation===markedWorkspaceGeneration){$('#saved-passages').innerHTML='<p>Could not load categories. <button type="button" id="marked-retry">Try again</button></p>';$('#marked-retry').onclick=renderMarkedWorkspace;}}
 }
 function openMarkedFilters(){
@@ -164,9 +164,9 @@ function openMarkedFilters(){
 }
 
 const renderSavedPassagesLegacy=renderPassageSaved;
-renderPassageSaved=function(){renderSavedPassagesLegacy();if(view==='saved')renderMarkedWorkspace();};
-window.addEventListener('viewchange',ev=>{if(ev.detail==='saved')renderMarkedWorkspace();else markedWorkspaceGeneration++;});
-if(view==='saved')renderMarkedWorkspace();
+renderPassageSaved=function(){renderSavedPassagesLegacy();if(view==='evidence')renderMarkedWorkspace();};
+window.addEventListener('viewchange',ev=>{if(ev.detail==='evidence')renderMarkedWorkspace();else markedWorkspaceGeneration++;});
+if(view==='evidence')renderMarkedWorkspace();
 
 // The floating copy is available only after the heading's Filter leaves view.
 (() => {
@@ -174,13 +174,13 @@ if(view==='saved')renderMarkedWorkspace();
  top.addEventListener('click',openMarkedFilters);
  const observer=new IntersectionObserver(entries=>{
   const visible=entries[0].isIntersecting;
-  floating.hidden=visible||view!=='saved';
-  document.body.classList.toggle('marked-filter-visible',!visible&&view==='saved');
+  floating.hidden=visible||view!=='evidence';
+  document.body.classList.toggle('marked-filter-visible',!visible&&view==='evidence');
  },{rootMargin:'-60px 0px 0px 0px',threshold:0});
  observer.observe(top);
  window.addEventListener('viewchange',()=>{
-  const r=top.getBoundingClientRect(),visible=view==='saved'&&r.bottom>60&&r.top<innerHeight;
-  floating.hidden=view!=='saved'||visible;
-  document.body.classList.toggle('marked-filter-visible',view==='saved'&&!visible);
+  const r=top.getBoundingClientRect(),visible=view==='evidence'&&r.bottom>60&&r.top<innerHeight;
+  floating.hidden=view!=='evidence'||visible;
+  document.body.classList.toggle('marked-filter-visible',view==='evidence'&&!visible);
  });
 })();

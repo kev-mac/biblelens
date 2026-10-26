@@ -230,7 +230,7 @@ document.addEventListener('click',ev=>{
  if(edit){
   const [book,chapter,verse]=edit.dataset.editMarkedNote.split('/').map(Number);
   if(verse){openVerseNote(book,chapter,verse);return;}
-  setView('explore',false);
+  setView('read',false);
   loadChapter(book,chapter).then(()=>{if(readingBook===book&&readingChapter===chapter&&reading){selectedVerses.add(reading.verses[0].n);renderReader(true);$('#passage-note-editor').hidden=false;$('#passage-note-toggle').setAttribute('aria-expanded','true');$('#passage-note-title-input').focus();}});
   return;
  }

@@ -58,7 +58,7 @@ function applyWorkspaceSnapshot(data,{source='external',conflicts=0}={}){
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',refresh,{once:true});else refresh();
  return true;
 }
-let activeType='All studies',current=null,tab='passages',edition='KJV',view='explore';
+let activeType='All studies',current=null,tab='passages',edition='KJV',view='read';
 // Keep action feedback visible and announced; Undo never steals reading focus.
 let actionToastTimer;
 function toast(msg,{undo}={}){
@@ -95,7 +95,7 @@ function matches(e,q){return q.trim().toLowerCase().split(/\s+/).filter(Boolean)
 
 function utilityIcon(name){const paths={bookmark:'<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/>',link:'<path d="m10 13 4-4m-6 5-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 5 1-1a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0"/>'};return '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths[name]+'</svg>';}
 function card(e){let saved=state.bookmarks.includes(e.id);return `<article class="card" data-type="${esc(e.type)}"><div class="card-top"><span class="tag">${esc(e.type)}</span><button class="bookmark ${saved?'saved':''}" data-bookmark="${e.id}" aria-label="${saved?'Remove bookmark for':'Bookmark'} ${esc(e.title)}" aria-pressed="${saved}">${utilityIcon('bookmark')}</button></div><h3><button data-open="${e.id}">${esc(e.title)}</button></h3><p>${esc(e.intro)}</p><div class="card-bottom"><span>${esc(e.refs[0])}<br>${esc(e.refs[1])}</span><button class="open-study" data-open="${e.id}">Examine ↗</button></div></article>`}
-function renderCards(){const q=$('#search').value,t=$('#testament').value;updateStudyFilterAvailability();const list=ENTRIES.filter(e=>matches(e,q)&&(activeType==='All studies'||e.type===activeType)&&(t==='All testaments'||e.testament===t||e.testament==='Both'));$('#cards').innerHTML=list.length?list.map(card).join(''):'<div class="empty"><h3>No matching studies.</h3><p>Try a broader term or reset the filters. This starter contains six studies.</p></div>';$('#results-count').textContent=`${list.length} ${list.length===1?'study':'studies'} in this collection`;const saved=ENTRIES.filter(e=>state.bookmarks.includes(e.id)||state.notes[e.id]||state.noteTitles?.[e.id]);$('#saved-cards').innerHTML=saved.length?saved.map(e=>card(e).replace('</article>',(state.notes[e.id]||state.noteTitles[e.id]?'<section class="marked-study-note"><h4>'+esc(state.noteTitles[e.id]||'Note')+'</h4><p>'+esc(state.notes[e.id])+'</p></section>':'')+'</article>')).join(''):'<div class="empty"><h3>A little room to think.</h3><p>Bookmark a study or write a note to add it to your desk.</p><button class="primary" data-view="explore">Explore the collection →</button></div>';$('#save-count').textContent=saved.length;if(typeof renderPassageSaved==='function')renderPassageSaved();}
+function renderCards(){const q=$('#search').value,t=$('#testament').value;updateStudyFilterAvailability();const list=ENTRIES.filter(e=>matches(e,q)&&(activeType==='All studies'||e.type===activeType)&&(t==='All testaments'||e.testament===t||e.testament==='Both'));$('#cards').innerHTML=list.length?list.map(card).join(''):'<div class="empty"><h3>No matching studies.</h3><p>Try a broader term or reset the filters. This starter contains six studies.</p></div>';$('#results-count').textContent=`${list.length} ${list.length===1?'study':'studies'} in this collection`;const saved=ENTRIES.filter(e=>state.bookmarks.includes(e.id)||state.notes[e.id]||state.noteTitles?.[e.id]);$('#saved-cards').innerHTML=saved.length?saved.map(e=>card(e).replace('</article>',(state.notes[e.id]||state.noteTitles[e.id]?'<section class="marked-study-note"><h4>'+esc(state.noteTitles[e.id]||'Note')+'</h4><p>'+esc(state.notes[e.id])+'</p></section>':'')+'</article>')).join(''):'<div class="empty"><h3>A little room to think.</h3><p>Bookmark a study or write a note to add it to your desk.</p><button class="primary" data-view="read">Explore the collection →</button></div>';$('#save-count').textContent=saved.length;if(typeof renderPassageSaved==='function')renderPassageSaved();}
 function renderFilters(){$('#filters').innerHTML=['All studies',...Object.keys(TYPES)].map(t=>`<button class="chip ${t===activeType?'active':''}" data-filter="${esc(t)}" aria-pressed="${t===activeType}">${esc(t)}</button>`).join('')}renderFilters();renderCards();
 function updateStudyFilterAvailability(){
  const q=$('#search').value,testament=$('#testament').value;
@@ -109,12 +109,12 @@ function categoryDirectoryLocation(key){const page=CATEGORY_DIRECTORY_VIEWS[key]
 function updateHeaderContext(){
  const context=$('#header-context');if(!context)return;
  const heading=$('#chapter-text .passage-heading>div'),rect=heading?.getBoundingClientRect();
- const showPassage=view==='explore'&&rect&&(rect.bottom<=document.querySelector('body>header').getBoundingClientRect().bottom||rect.top>=window.innerHeight);
- let label=view==='explore'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Stories',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Commandments',chat:'Chat',saved:'Categories',bookmarks:'Bookmarks',method:'About',discover:'Discover',search:'Search',notebook:'Notebook'}[view]||'BibleLens');
- const key=view==='saved'?/^#categories\/([^?]+)/.exec(location.hash)?.[1]:null;
+ const showPassage=view==='read'&&rect&&(rect.bottom<=document.querySelector('body>header').getBoundingClientRect().bottom||rect.top>=window.innerHeight);
+ let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Stories',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Commandments',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',search:'Search',notebook:'Notebook'}[view]||'BibleLens');
+ const key=view==='evidence'?/^#evidence\/([^?]+)/.exec(location.hash)?.[1]:null;
  const category={academic:'Academic',commandments:'Commandments',contradictions:'Contradictions',bookmark:'Marked',characters:'People',prophecies:'Prophecies',Q:'Questions',stories:'Stories',T:'Translation',V:'Violations'}[key];
  if(category){
-  label='Categories · '+category;
+  label='Evidence · '+category;
   context.textContent=label;
  }else context.textContent=label;
  if(showPassage&&context.dataset.description){const description=document.createElement('small');description.className='header-description';description.textContent=context.dataset.description;description.title=context.dataset.description;context.append(description);}
@@ -138,8 +138,16 @@ function navigationPosition(){
  return {x:window.scrollX||0,y,focus};
 }
 function rememberNavigation(){if(navigationRestore)return;navigationPositions.set(navigationEntry,navigationPosition());}
+// Keep bookmarked and native legacy destinations while publishing one vocabulary.
+// Bare #explore is the gallery; only the old reader's path form means Read.
+function canonicalRouteHash(hash){
+ const value=hash.startsWith('#')?hash:'#'+hash;
+ return value.replace(/^#discover(?=[/?]|$)/,'#explore')
+  .replace(/^#(?:categories|saved)(?=[/?]|$)/,'#evidence')
+  .replace(/^#explore(?=\/)/,'#read');
+}
 function navigateHash(hash,{replace=false}={}){
- hash=hash.startsWith('#')?hash:'#'+hash;
+ hash=canonicalRouteHash(hash);
  if(location.hash===hash)return;
  navigationRestore=null;rememberNavigation();
  const position=navigationPositions.get(navigationEntry)||navigationPosition();
@@ -151,7 +159,7 @@ function restoreNavigation(){
  if(!navigationRestore||navigationRestore.hash!==location.hash)return false;
  const match=/^#read\/(\d+)\/(\d+)/.exec(location.hash);
  if(match&&(typeof reading==='undefined'||!reading||readingBook!==Number(match[1])||readingChapter!==Number(match[2])||$('#chapter-text .chapter-loading')))return false;
- if($('#chapter-text .chapter-loading')&&view==='explore')return false;
+ if($('#chapter-text .chapter-loading')&&view==='read')return false;
  const restore=navigationRestore;navigationRestore=null;
  requestAnimationFrame(()=>{
   if(restore.hash!==location.hash)return;
@@ -173,11 +181,11 @@ window.addEventListener('hashchange',()=>{if(!navigationRestore){navigationEntry
 window.addEventListener('viewchange',()=>{if(navigationRestore)requestAnimationFrame(()=>requestAnimationFrame(restoreNavigation));});
 window.BibleLensNavigation={navigate:navigateHash,restore:restoreNavigation,remember:rememberNavigation};
 function setView(v,update=true){
- v=({categories:'saved',people:'characters'})[v]||v;
- const views=['explore','chat','saved','method','commandments','characters','prophecies','timeline','stories','bookmarks','places','discover','search','notebook'];
- const next=views.includes(v)?v:'explore';
- if(update)navigateHash('#'+(({saved:'categories',characters:'people'})[next]||next));
- view=next;document.body.classList.toggle('read-view',view==='explore');
+ v=({categories:'evidence',saved:'evidence',discover:'explore',people:'characters'})[v]||v;
+ const views=['read','chat','evidence','method','commandments','characters','prophecies','timeline','stories','bookmarks','places','explore','search','notebook'];
+ const next=views.includes(v)?v:'read';
+ if(update)navigateHash('#'+(({characters:'people'})[next]||next));
+ view=next;document.body.classList.toggle('read-view',view==='read');
  for(const name of views){const section=$('#'+name+'-view');if(section)section.hidden=name!==view;}
  document.querySelectorAll('nav [data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);if(b.closest('header'))b.hidden=['chat','stories','commandments','prophecies','characters'].includes(b.dataset.view);if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
  updateHeaderContext();window.dispatchEvent(new CustomEvent('viewchange',{detail:view}));
@@ -206,7 +214,13 @@ function mergeInvestigationBackup(backup){
  state.investigations=window.BibleLensSync.merge({}, {investigations:state.investigations||{}}, {investigations:incoming}).data.investigations;
 }
 $('#import-backup').onchange=async ev=>{const file=ev.target.files[0];if(!file)return;try{if(file.size>2000000)throw Error('Backup exceeds 2 MB');const backup=JSON.parse(await file.text());if(backup.version!==1||!Array.isArray(backup.bookmarks)||!backup.notes||typeof backup.notes!=='object'||Array.isArray(backup.notes))throw Error('Not a BibleLens backup');const valid=ENTRIES.map(e=>e.id);state.bookmarks=[...new Set([...state.bookmarks,...backup.bookmarks.filter(id=>valid.includes(id))])];for(const id of valid){const note=backup.notes[id];if(typeof note==='string'&&note.length<=100000){const old=state.notes[id];state.notes[id]=old&&old!==note?`${old}\n\n--- Imported note ---\n${note}`:note}}if(backup.noteTitles&&typeof backup.noteTitles==='object'&&!Array.isArray(backup.noteTitles))for(const id of valid){const title=backup.noteTitles[id];if(typeof title!=='string'||title.length>160)continue;if(state.noteTitles[id]&&state.noteTitles[id]!==title){state.notes[id]=(state.notes[id]||'')+'\n\nImported note title: '+title;}else state.noteTitles[id]=title;}if(typeof mergePassageBackup==='function')mergePassageBackup(backup);mergeInvestigationBackup(backup);persist();renderCards();$('#backup-status').textContent='Backup restored. Existing notes were preserved.'}catch(err){$('#backup-status').textContent=`Could not restore: ${err.message}`}ev.target.value=''};
-function route(){let hash;try{hash=decodeURIComponent(location.hash.slice(1));}catch{hash='explore';}if(!hash.startsWith('study/')&&$('#study-dialog').open)$('#study-dialog').close();if(window.BibleLensWorkspace?.route(location.hash))return;if(hash==='characters'||hash.startsWith('characters/')||hash==='people'||hash.startsWith('people/')){setView('characters',false)}else if(hash.startsWith('categories/')||hash.startsWith('categories?')){const key=/^categories\/([^?]+)/.exec(hash)?.[1],directory=categoryDirectoryLocation(key);if(directory){history.replaceState(null,'',directory);setView(CATEGORY_DIRECTORY_VIEWS[key],false)}else setView('saved',false);window.scrollTo({top:0,behavior:'instant'})}else if(hash.startsWith('stories/')){setView('stories',false)}else if(hash.startsWith('study/')){setView('explore',false);const id=hash.slice(6);if(ENTRIES.some(e=>e.id===id))openStudy(id,false);else toast('Study not found in this collection')}else if(hash.startsWith('read/'))setView('explore',false);else setView(hash,false)}window.addEventListener('hashchange',route);route();
+function route(){
+ const canonical=canonicalRouteHash(location.hash);
+ if(canonical!==location.hash&&location.hash){
+  history.replaceState(history.state,'',canonical);
+  if(navigationRestore)navigationRestore.hash=canonical;
+ }
+ let hash;try{hash=decodeURIComponent(location.hash.slice(1));}catch{hash='read';}if(!hash.startsWith('study/')&&$('#study-dialog').open)$('#study-dialog').close();if(window.BibleLensWorkspace?.route(location.hash))return;if(hash==='characters'||hash.startsWith('characters/')||hash==='people'||hash.startsWith('people/')){setView('characters',false)}else if(hash.startsWith('evidence/')||hash.startsWith('evidence?')){const key=/^evidence\/([^?]+)/.exec(hash)?.[1],directory=categoryDirectoryLocation(key);if(directory){history.replaceState(null,'',directory);setView(CATEGORY_DIRECTORY_VIEWS[key],false)}else setView('evidence',false);window.scrollTo({top:0,behavior:'instant'})}else if(hash.startsWith('stories/')){setView('stories',false)}else if(hash.startsWith('study/')){setView('read',false);const id=hash.slice(6);if(ENTRIES.some(e=>e.id===id))openStudy(id,false);else toast('Study not found in this collection')}else if(hash.startsWith('read/'))setView('read',false);else setView(hash,false)}window.addEventListener('hashchange',route);route();
 
 // D8-A: remove this class to restore the separate book-cell styling.
 document.body.classList.add('merge-picker-inputs');

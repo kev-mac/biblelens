@@ -90,7 +90,7 @@ assert.equal(c.buildVerseShareUrl(0,9,[3]),'https://example.com/#read/0/9/3');
 assert.equal(c.buildVerseShareUrl(0,9,[7,4,3,4,5]),'https://example.com/#read/0/9/3-5,7');
 assert.throws(()=>c.buildVerseShareUrl(0,9,[]));
 const originalHref=c.location.href;
-for(const href of ['capacitor://localhost/#read/0/1','file:///app/index.html?token=private','https://localhost/?token=private','http://localhost:8790/?token=private','http://127.0.0.1:8790/?token=private','http://127.2.3.4:8790/#explore','http://[::1]:8790/','http://preview.localhost:8790/']){
+for(const href of ['capacitor://localhost/#read/0/1','file:///app/index.html?token=private','https://localhost/?token=private','http://localhost:8790/?token=private','http://127.0.0.1:8790/?token=private','http://127.2.3.4:8790/#read','http://[::1]:8790/','http://preview.localhost:8790/']){
  c.location.href=href;assert.equal(c.buildVerseShareUrl(0,9,[3]),'https://scripture-lens.kvn-mcgwn.chatgpt.site/#read/0/9/3',href);
 }
 for(const origin of ['https://scripture-lens.kvn-mcgwn.chatgpt.site','https://biblelens-design-review.kvn-mcgwn.chatgpt.site']){

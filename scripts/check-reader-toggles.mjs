@@ -138,7 +138,7 @@ const selectionContext={selectedVerses:new Set([9,2,4]),reading:{},renderReader(
 vm.createContext(selectionContext);
 vm.runInContext(source.slice(source.indexOf('function selectedVerseNumbers('),source.indexOf('let conversationTone=')),selectionContext);
 assert.deepEqual(Array.from(selectionContext.selectedVerseNumbers()),[2,4,9]);
-selectionContext.window.viewchange({detail:'explore'});assert.equal(selectionContext.selectedVerses.size,3);
+selectionContext.window.viewchange({detail:'read'});assert.equal(selectionContext.selectedVerses.size,3);
 selectionContext.window.viewchange({detail:'chat'});assert.equal(selectionContext.selectedVerses.size,0);
 const chapterLoader=source.slice(source.indexOf('async function loadChapter('),source.indexOf('const comparisonCache='));
 assert(!chapterLoader.includes('selectedVerses.add('),'Opening a verse URL must scroll without restoring selection');

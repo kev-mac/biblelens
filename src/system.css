@@ -218,8 +218,8 @@ html body.lens-app #method-view .taxonomy-item { padding: 15px 0; font-size: .87
 html body.lens-app #method-view .taxonomy-item b { color: var(--lens-ink); }
 
 /* Existing saved-study routes remain useful and share Notebook's appearance. */
-html body.lens-app :is(#bookmarks-view, #saved-view) .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 36px; }
-html body.lens-app :is(#bookmarks-view, #saved-view) .card {
+html body.lens-app :is(#bookmarks-view, #evidence-view) .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 36px; }
+html body.lens-app :is(#bookmarks-view, #evidence-view) .card {
   padding: 24px 0;
   margin: 0;
   min-height: 0;
@@ -230,8 +230,8 @@ html body.lens-app :is(#bookmarks-view, #saved-view) .card {
   box-shadow: none !important;
   transform: none !important;
 }
-html body.lens-app :is(#bookmarks-view, #saved-view) .card h3 { margin: 12px 0; font-size: 1.25rem; }
-html body.lens-app :is(#bookmarks-view, #saved-view) .card h3 button { padding: 0; min-height: 44px; background: none !important; color: var(--lens-ink); }
+html body.lens-app :is(#bookmarks-view, #evidence-view) .card h3 { margin: 12px 0; font-size: 1.25rem; }
+html body.lens-app :is(#bookmarks-view, #evidence-view) .card h3 button { padding: 0; min-height: 44px; background: none !important; color: var(--lens-ink); }
 html body.lens-app .card .tag { padding: 0; border: 0; color: var(--lens-copper); background: none !important; font-size: .75rem; }
 html body.lens-app .card .bookmark { min-width: 44px; min-height: 44px; border-radius: 50%; }
 html body.lens-app .card .bookmark.saved { color: var(--lens-copper); }
@@ -251,7 +251,7 @@ html body.lens-app #toast { z-index: 100; border-radius: 16px; border: 1px solid
   html body.lens-app .lens-context { padding-top: 12px; }
   html body.lens-app #main > section:not(.lens-workspace) > .page-heading { padding: 14px 0 24px; }
   html body.lens-app #method-view .method-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
-  html body.lens-app :is(#bookmarks-view, #saved-view) .cards { grid-template-columns: minmax(0, 1fr); }
+  html body.lens-app :is(#bookmarks-view, #evidence-view) .cards { grid-template-columns: minmax(0, 1fr); }
   html body.lens-app > footer { flex-wrap: wrap; }
   html body.lens-app #toast { bottom: calc(92px + env(safe-area-inset-bottom, 0px)); }
 }
@@ -300,7 +300,7 @@ html body.lens-app #toast { z-index: 100; border-radius: 16px; border: 1px solid
     justify-self: start;
     max-width: 100%;
   }
-  html body.lens-app #main :is(#commandments-view, #saved-view, #bookmarks-view, #stories-view, #chat-view, #prophecies-view, #timeline-view, #method-view, #characters-view, #places-view) h1 {
+  html body.lens-app #main :is(#commandments-view, #evidence-view, #bookmarks-view, #stories-view, #chat-view, #prophecies-view, #timeline-view, #method-view, #characters-view, #places-view) h1 {
     max-width: 100%;
     font-size: 1.5rem !important;
     line-height: 1.2 !important;

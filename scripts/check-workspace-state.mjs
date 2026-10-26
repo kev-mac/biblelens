@@ -87,7 +87,7 @@ const history={get state(){return entries[index].state;},scrollRestoration:'auto
 const focus={id:'passage-link',dataset:{},closest:()=>null,focus(){focused=this.id;}};
 const win={scrollX:0,scrollY:420,addEventListener(name,handler){handlers[name]=handler;},scrollTo({top}){this.scrollY=top;}};
 const doc={activeElement:focus,body:{classList:{contains:()=>false}},addEventListener(){},querySelector:selector=>selector==='#passage-link'?focus:null};
-const navContext={history,location:page,window:win,document:doc,CSS:{escape:value=>value},requestAnimationFrame:fn=>frames.push(fn),view:'explore',reading:{},readingBook:0,readingChapter:1,$:()=>null,Date,Math};
+const navContext={history,location:page,window:win,document:doc,CSS:{escape:value=>value},requestAnimationFrame:fn=>frames.push(fn),view:'read',reading:{},readingBook:0,readingChapter:1,$:()=>null,Date,Math};
 vm.createContext(navContext);vm.runInContext(appSource.slice(appSource.indexOf('const navigationPositions='),appSource.indexOf('function setView(')),navContext);
 navContext.navigateHash('#notebook');assert.equal(entries.length,2);assert.equal(page.hash,'#notebook');
 win.scrollY=80;handlers.scroll();navContext.navigateHash('#search');assert.equal(entries.length,3);

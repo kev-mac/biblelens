@@ -253,7 +253,7 @@ body.lens-app .lens-panel-close { width: 40px; height: 40px; flex: 0 0 40px; pad
 body.lens-app :is(.lens-button, .lens-tools button, .lens-reading-actions button):disabled { opacity: .55; cursor: default; }
 
 /* Reading is the main surface; the evidence occupies a real document margin. */
-body.lens-app #explore-view :is(.comparison-dock, .study-library) { display: none !important; }
+body.lens-app #read-view :is(.comparison-dock, .study-library) { display: none !important; }
 body.lens-app .chapter-workspace { min-width: 0; padding: 0; margin: 0; }
 body.lens-app #lensReadingBar.lens-reading-bar {
   display: flex;

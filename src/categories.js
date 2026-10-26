@@ -26,12 +26,12 @@ function categoryPersonalProfile(kind,item){
 }
 function categoryQuery(kind,page=0,limit=24){return new URLSearchParams({book:markedBookSelection===-1?'all':String(markedBookSelection),chapter:String(markedChapterSelection),kind,page:String(page),limit:String(limit),theme:markedTheme,type:markedCommandmentType});}
 function categoryRoute(){
- const match=/^#categories\/([^?]+)(?:\?(.*))?$/.exec(location.hash);
+ const match=/^#evidence\/([^?]+)(?:\?(.*))?$/.exec(location.hash);
  return match&&MARKED_CATEGORIES.some(([key])=>key===match[1]&&key!=='all')?{key:match[1],params:new URLSearchParams(match[2]||'')}:null;
 }
 function categoryLocation(key, index=false){
  const params=categoryQuery(index?key:'all',0,0);params.delete('page');params.delete('limit');
- return '#categories'+(index?'':'/'+key)+'?'+params;
+ return '#evidence'+(index?'':'/'+key)+'?'+params;
 }
 async function renderPagedCategories(){
  const directory=categoryDirectoryLocation(categoryRoute()?.key);if(directory){history.replaceState(null,'',directory);setView(directory.slice(1),false);return;}
@@ -39,7 +39,7 @@ async function renderPagedCategories(){
  const box=$('#saved-passages'),route=categoryRoute();
  try{
   if(!books.length){const response=await fetch('/api/books');if(!response.ok)throw Error();books=await response.json();}
-  if(generation!==markedWorkspaceGeneration||view!=='saved')return;
+  if(generation!==markedWorkspaceGeneration||view!=='evidence')return;
   const params=route?.params||new URLSearchParams(location.hash.split('?')[1]||'');
   if(params.has('book')){const book=params.get('book')==='all'?-1:Number(params.get('book'));if(Number.isInteger(book)&&book>=-1&&book<books.length)markedBookSelection=book;}
   if(params.has('chapter')){const chapter=Number(params.get('chapter'));if(Number.isInteger(chapter)&&chapter>=0&&chapter<=(books[markedBookSelection]?.chapters||0))markedChapterSelection=chapter;}
@@ -50,10 +50,10 @@ async function renderPagedCategories(){
   else if(!location.hash.includes('?'))markedKind='all';
   if(markedBookSelection===null)markedBookSelection=readingBook;
   const scope=JSON.stringify([markedBookSelection,markedChapterSelection,markedKind,markedTheme,markedCommandmentType]);if(scope!==categoryScope){categoryPages.clear();categoryScope=scope;}
-  $('#categories-heading').textContent=route?MARKED_CATEGORIES.find(([key])=>key===route.key)[1]:'Evidence';
+  $('#evidence-heading').textContent=route?MARKED_CATEGORIES.find(([key])=>key===route.key)[1]:'Evidence';
   renderMarkedContext();$('#saved-cards').hidden=true;box.innerHTML='<p role="status">Loading evidence…</p>';
   const response=await fetch('/api/categories?'+categoryQuery('all',0,0));if(!response.ok)throw Error();
-  const meta=await response.json();if(generation!==markedWorkspaceGeneration||view!=='saved')return;
+  const meta=await response.json();if(generation!==markedWorkspaceGeneration||view!=='evidence')return;
   markedData=meta;const personal=categoryPersonalItems(),counts={...meta.counts,bookmark:personal.length};
   if(!route){
    const links=[...MARKED_CATEGORIES,['timeline','Timeline'],['places','Places']].sort(([a,al],[b,bl])=>al.localeCompare(bl));
@@ -74,10 +74,10 @@ async function renderPagedCategories(){
     if(key==='bookmark'){total=personal.length;current=Math.min(page,Math.max(0,Math.ceil(total/24)-1));records=personal.slice(current*24,(current+1)*24);}
     else{
      const response=await fetch('/api/categories?'+categoryQuery(key,page));if(!response.ok)throw Error();const data=await response.json();
-     if(token!==categoryRequest||generation!==markedWorkspaceGeneration||view!=='saved')return;
+     if(token!==categoryRequest||generation!==markedWorkspaceGeneration||view!=='evidence')return;
      markedData=data;records=data.records;total=data.total;current=data.page;
     }
-    if(token!==categoryRequest||generation!==markedWorkspaceGeneration||view!=='saved')return;
+    if(token!==categoryRequest||generation!==markedWorkspaceGeneration||view!=='evidence')return;
     categoryPages.set(key,current);
     const pages=Math.ceil(total/24),label=MARKED_CATEGORIES.find(([kind])=>kind===key)[1];
     content.innerHTML=`<p class="category-results" role="status">${total?current*24+1:0}–${Math.min((current+1)*24,total)} of ${total} results</p>`+(records.length?records.map(record=>key==='bookmark'?categoryPersonalCard(record,true):['stories','characters','prophecies'].includes(key)?categoryDirectoryCard(record,key):markedSummary(record,key)).join(''):'<p class="marked-empty">No results for these filters.</p>')+(pages>1?`<nav class="category-pagination" aria-label="${label} results"><button type="button" data-category-offset="-1" ${current===0?'disabled':''}>← Previous</button><span role="status">${current+1} / ${pages}</span><button type="button" data-category-offset="1" ${current+1>=pages?'disabled':''}>Next →</button></nav>`:'');
@@ -98,12 +98,12 @@ async function renderPagedCategories(){
    const button=event.target.closest('[data-category-offset],[data-category-retry]');if(!button||button.disabled)return;
    const page=categoryPages.get(key)||0;
    await fill(button.hasAttribute('data-category-retry')?page:page+Number(button.dataset.categoryOffset));
-   if(generation===markedWorkspaceGeneration&&view==='saved'){$('#categories-heading').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});}
+   if(generation===markedWorkspaceGeneration&&view==='evidence'){$('#evidence-heading').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});}
   };
   await fill(categoryPages.get(key)||0);
- }catch{if(generation===markedWorkspaceGeneration)box.innerHTML='<p>Evidence could not load. <button type="button" id="categories-retry">Retry</button></p>';box.querySelector('#categories-retry')?.addEventListener('click',renderPagedCategories);}
+ }catch{if(generation===markedWorkspaceGeneration)box.innerHTML='<p>Evidence could not load. <button type="button" id="categories-retry">Retry</button></p>';box.querySelector('#evidence-retry')?.addEventListener('click',renderPagedCategories);}
 }
-if(view==='saved')renderPagedCategories();
+if(view==='evidence')renderPagedCategories();
 
 function categoryDirectoryCard(record,kind){
  if(kind==='stories')return storyCard(record);

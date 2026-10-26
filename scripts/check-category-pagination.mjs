@@ -33,14 +33,14 @@ assert.equal(browse('book=all&limit=0').counts.characters,30);
 console.log('PASS: narrative chapter ranges, scoped people pagination and cross-book prophecy links.');
 
 // Category pages preserve scope when opened directly or returned to the index.
-const client={URLSearchParams,location:{hash:'#categories/T?book=1&chapter=2&theme=all&type=all'},markedBookSelection:1,markedChapterSelection:2,markedKind:'T',markedTheme:'all',markedCommandmentType:'all',MARKED_CATEGORIES:[['all','All categories'],['T','Translation'],['bookmark','Marked']]};
+const client={URLSearchParams,location:{hash:'#evidence/T?book=1&chapter=2&theme=all&type=all'},markedBookSelection:1,markedChapterSelection:2,markedKind:'T',markedTheme:'all',markedCommandmentType:'all',MARKED_CATEGORIES:[['all','All categories'],['T','Translation'],['bookmark','Marked']]};
 vm.createContext(client);
 vm.runInContext(fs.readFileSync('src/categories.js','utf8').split('async function renderPagedCategories()')[0],client);
 assert.equal(client.categoryRoute().key,'T');
 assert.equal(client.categoryRoute().params.get('book'),'1');
-const resultUrl=client.categoryLocation('T');assert(resultUrl.startsWith('#categories/T?'));assert(resultUrl.includes('chapter=2'));
-const backUrl=client.categoryLocation('all',true);assert(backUrl.startsWith('#categories?'));assert(backUrl.includes('book=1'));assert(backUrl.includes('kind=all'));
-client.location.hash='#categories/unknown';assert.equal(client.categoryRoute(),null);
+const resultUrl=client.categoryLocation('T');assert(resultUrl.startsWith('#evidence/T?'));assert(resultUrl.includes('chapter=2'));
+const backUrl=client.categoryLocation('all',true);assert(backUrl.startsWith('#evidence?'));assert(backUrl.includes('book=1'));assert(backUrl.includes('kind=all'));
+client.location.hash='#evidence/unknown';assert.equal(client.categoryRoute(),null);
 console.log('PASS: independent category routes and filter-preserving page/back links.');
 
 // The Categories index must open the original directories, including old bookmarks.
@@ -49,10 +49,11 @@ const directories={};vm.createContext(directories);
 vm.runInContext(app.slice(app.indexOf('const CATEGORY_DIRECTORY_VIEWS='),app.indexOf('function updateHeaderContext()')),directories);
 for(const [key,url] of Object.entries({places:'#places',stories:'#stories',characters:'#people',commandments:'#commandments',prophecies:'#prophecies'}))assert.equal(directories.categoryDirectoryLocation(key),url);
 assert.equal(directories.categoryDirectoryLocation('academic'),null);
+vm.runInContext(app.slice(app.indexOf('function canonicalRouteHash('),app.indexOf('function navigateHash(')),directories);
 const routes=[];
-Object.assign(directories,{$:()=>({open:false}),location:{hash:'#categories/stories?book=0&chapter=1'},history:{replaceState(_a,_b,url){directories.location.hash=url;}},setView:(...args)=>routes.push(args),window:{scrollTo(){},addEventListener(){}}});
+Object.assign(directories,{$:()=>({open:false}),location:{hash:'#evidence/stories?book=0&chapter=1'},history:{replaceState(_a,_b,url){directories.location.hash=url;}},setView:(...args)=>routes.push(args),window:{scrollTo(){},addEventListener(){}}});
 vm.runInContext(app.slice(app.indexOf('function route(){'),app.indexOf('function route(){')+app.slice(app.indexOf('function route(){')).indexOf("window.addEventListener('hashchange',route)")),directories);
-for(const [key,view] of Object.entries({places:'places',stories:'stories',characters:'characters',commandments:'commandments',prophecies:'prophecies'})){directories.location.hash='#categories/'+key+'?book=0';directories.route();assert.equal(routes.at(-1)[0],view);assert.equal(directories.location.hash,directories.categoryDirectoryLocation(key));}
+for(const [key,view] of Object.entries({places:'places',stories:'stories',characters:'characters',commandments:'commandments',prophecies:'prophecies'})){directories.location.hash='#evidence/'+key+'?book=0';directories.route();assert.equal(routes.at(-1)[0],view);assert.equal(directories.location.hash,directories.categoryDirectoryLocation(key));}
 assert(!fs.readFileSync('src/categories.js','utf8').includes('class="category-back"'));
 console.log('PASS: category links and legacy routes restore the original directory controls without a body back link.');
 

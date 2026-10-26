@@ -45,6 +45,6 @@ if (root) {
   if (!link) return;
   event.preventDefault();
   const ref = readRef(link.dataset.timelinePassage);
-  if (ref) { setView('explore'); loadChapter(ref.book, ref.chapter, ref.verse); }
+  if (ref) { setView('read'); loadChapter(ref.book, ref.chapter, ref.verse); }
  });
 }

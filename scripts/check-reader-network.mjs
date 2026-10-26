@@ -15,7 +15,7 @@ function fixture({abort=true}={}){
  const context={
   $:node,books:[],reading:null,readingBook:0,readingChapter:1,loadVersion:0,selectedVerses:new Set(),
   state:{notes:{kept:'Private research'},verseNotes:{'0:1:1':{text:'Keep this note'}}},
-  location:{hash:'#explore'},view:'explore',esc:String,
+  location:{hash:'#read'},view:'read',esc:String,
   fetch:(url,options)=>new Promise((resolve,reject)=>requests.push({url,options,resolve,reject})),
   setTimeout:(callback,delay)=>{assert.equal(delay,15000);timers.set(++timerId,callback);return timerId;},
   clearTimeout:id=>timers.delete(id),
@@ -80,7 +80,7 @@ assert.equal(startup.node('#reader-status').textContent,'Chapter unavailable. Tr
 assert.equal(startup.updates,0);assert.equal(startup.saves,0);
 // Explore is now the home page. Loading its background reader must not steal
 // the scroll position while someone browses categories before the response.
-const home=fixture();home.context.view='discover';home.context.location.hash='';
+const home=fixture();home.context.view='explore';home.context.location.hash='';
 const background=home.context.initializeReader();respond(home.requests[0],catalog);await flush();
 home.context.window.scrollY=920;respond(home.requests[1],passage);await background;
 assert.equal(home.context.window.scrollY,920,'Background startup preserves Explore scroll');
@@ -94,7 +94,7 @@ const whole=active.context.loadChapter(0,1);respond(active.requests[0],passage);
 assert.equal(active.context.window.scrollY,0);assert.equal(active.scrolls.length,1);
 const linked=active.context.loadChapter(0,1,1);respond(active.requests[1],passage);await linked;
 assert.equal(active.verseScrolls.length,1);assert.equal(active.verseScrolls[0].id,'#verse-1');
-const leaving=active.context.loadChapter(0,1,1);active.context.view='discover';active.context.window.scrollY=510;
+const leaving=active.context.loadChapter(0,1,1);active.context.view='explore';active.context.window.scrollY=510;
 respond(active.requests[2],passage);await leaving;
 assert.equal(active.context.window.scrollY,510);assert.equal(active.verseScrolls.length,1);
 assert.equal(active.restores,3,'Every completed chapter can restore browser history');

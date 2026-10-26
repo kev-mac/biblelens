@@ -80,7 +80,7 @@ document.addEventListener('click',async event=>{
  if(event.target.closest('[data-stories-retry]')){renderStoriesView();return;}
  const button=event.target.closest('[data-story-passage]');if(!button)return;
  const ref=storyReference(button.dataset.storyPassage);if(!ref)return;
- closeStoryTopic();storiesActive=false;renderStoriesView();setView('explore',false);loadChapter(ref.book,ref.chapter,ref.verse);
+ closeStoryTopic();storiesActive=false;renderStoriesView();setView('read',false);loadChapter(ref.book,ref.chapter,ref.verse);
 });
 
 // Shared character anchors resolve to the full story card, including on a fresh load.

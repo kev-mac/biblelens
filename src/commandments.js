@@ -116,7 +116,7 @@ async function initCommandments() {
   if(event.target.closest('#commandments-load-more')){visibleCount+=60;render();return;}
   const button=event.target.closest('[data-commandment-passage]');if(!button)return;
   const ref=readRef(button.dataset.commandmentPassage);if(!ref){toast('Passage reader is still loading. Please try again.');return;}
-  storiesActive=false;renderStoriesView();setView('explore',false);loadChapter(ref.book,ref.chapter,ref.verse);
+  storiesActive=false;renderStoriesView();setView('read',false);loadChapter(ref.book,ref.chapter,ref.verse);
  });
  render();
 }
