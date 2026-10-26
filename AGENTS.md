@@ -10,11 +10,9 @@ Claude's research role and restrictions in CLAUDE.md remain in force unless the 
 
 The owner selected Inter, sans serif throughout. The Study Atlas uses one typeface consistently across scripture, headings and interface controls. Settings → App font changes all of these together using readerPreferences.appFont. Preserve explicit app-wide choices; legacy reading-only preferences are retained as data but must not silently become an app-wide selection. This replaces the earlier Lora/Inter pairing after the owner's feedback about mixed serif and sans serif typography.
 
-The primary audience is adults aged 25–50 using mobile phones. Treat phone layouts as the primary experience: thumb-reachable navigation, light contemporary controls, clear action sheets, and purposeful motion with reduced-motion support. Keep actions discoverable; do not imply unsupported gestures with decorative handles.
+BibleLens is for Gen Z and younger people using phones to learn, compare evidence and debate ideas. Design for phones first, with clear, thumb-reachable navigation, readable text, image-led discovery and short, plain explanations. Welcome people of any faith or none; do not assume belief, biblical knowledge or devotional intent. Keep actions discoverable, support reduced motion, and use images to invite learning without presenting imagined artwork as evidence. Human illustrations show people of the ancient Near East and Africa with varied skin tones, features and natural hair textures, in dignified portrayals. Imagined artwork is never presented as historical evidence or a real portrait.
 
-The audience is primarily African and Middle Eastern. Human illustrations should reflect African and Middle Eastern people with varied skin tones, facial features and natural hair textures. Use dignified individual portrayals; imagined artwork must not be presented as historical evidence or a verified portrait.
-
-BibleLens is a scholarly tool for readers of any religious affiliation or none. Use neutral descriptions of texts, literary forms, historical settings and interpretations. Do not assume religious belief, familiarity with biblical narratives, or devotional intent in interface copy.
+Use neutral descriptions of texts, literary forms, historical settings and interpretations. Do not assume religious belief, familiarity with biblical narratives, or devotional intent in interface copy.
 
 Prophecies and Method & Sources are deferred as Explore gallery cards. Keep Method & Sources accessible through the footer. Use title case for displayed timeline headings without changing the underlying research titles.
 
