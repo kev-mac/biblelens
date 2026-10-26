@@ -17,3 +17,10 @@ The audience is primarily African and Middle Eastern. Human illustrations should
 BibleLens is a scholarly tool for readers of any religious affiliation or none. Use neutral descriptions of texts, literary forms, historical settings and interpretations. Do not assume religious belief, familiarity with biblical narratives, or devotional intent in interface copy.
 
 Prophecies and Method & Sources are deferred as Explore gallery cards. Keep Method & Sources accessible through the footer. Use title case for displayed timeline headings without changing the underlying research titles.
+
+## Writing standard
+
+- Everything the app writes (UI copy, card blurbs, evidence summary/reasoning/scope, story summaries, people and place text) targets Flesch-Kincaid grade 6–8, averaged per collection. Scripture text and quoted source titles are exempt.
+- Per line: sentences of at most 20 words; card blurbs (Explore and collection descriptions) of at most 15 words; no unexplained jargon. Plain equivalents: "the old Greek translation" not "Brenton's Greek" or "the Septuagint" on first use; "the Hebrew text" not "WLC"; "ancient copies" not "manuscripts/witnesses". Full source names belong in Sources.
+- Keep each record's scholarly limits, but say them plainly. Never add claims, motives or certainty the record doesn't state.
+- Run `npm run check:readability` after content changes.
