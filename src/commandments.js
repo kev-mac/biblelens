@@ -40,7 +40,7 @@ async function loadCommandmentContext(panel,reference){
  if(panel.dataset.loaded==='true')return;
  const ref=readRef(reference);if(!ref)return;
  const key=ref.book+'/'+ref.chapter;
- panel.setAttribute('aria-busy','true');panel.innerHTML='<h3>Scripture context · KJV</h3><p role="status">Loading surrounding verses…</p>';
+ panel.setAttribute('aria-busy','true');panel.innerHTML='<h3>Scripture context · KJV</h3><p class="loading-state" role="status">Loading surrounding verses…</p>';
  try{
   if(!commandmentContextCache.has(key))commandmentContextCache.set(key,fetch(`/api/chapter?book=${ref.book}&chapter=${ref.chapter}`).then(response=>{if(!response.ok)throw Error('Chapter unavailable');return response.json();}).catch(error=>{commandmentContextCache.delete(key);throw error;}));
   const chapter=await commandmentContextCache.get(key);if(!panel.isConnected)return;

@@ -66,7 +66,6 @@ html body.lens-app #discover-view .atlas-explore-step {
 html body.lens-app #discover-view .atlas-explore-step:disabled { opacity:.3; cursor:default; }
 html body.lens-app #discover-view .atlas-explore-step:not(:disabled):hover { background:color-mix(in srgb,var(--lens-ink) 11%,transparent) !important; }
 html body.lens-app #discover-view .atlas-explore-studies { margin-top:44px; }
-html body.lens-app #discover-view .atlas-explore-coverage { max-width:75ch; margin:24px 0 0; color:var(--lens-muted); font-size:.75rem; line-height:1.65; }
 html body.lens-app #discover-view.atlas-explore :is(a,button):focus-visible { outline:2px solid var(--lens-focus); outline-offset:3px; }
 html body.lens-app #discover-view .atlas-explore-tab:focus-visible { outline-offset:-2px; }
 @media (max-width:700px) {
@@ -101,4 +100,18 @@ html body.lens-app #discover-view .atlas-explore-tab:focus-visible { outline-off
   html body.lens-app #discover-view .atlas-explore-feature { border:1px solid CanvasText; }
   html body.lens-app #discover-view .atlas-explore-tab[aria-selected=true] { outline:1px solid Highlight; outline-offset:-2px; }
   html body.lens-app #discover-view .atlas-explore-step { border:1px solid ButtonText !important; }
+}
+
+/* Images keep the layout stable and never leave an unexplained blank card. */
+html body.lens-app #discover-view .atlas-explore-visual { position:relative; }
+html body.lens-app #discover-view .atlas-image-status {
+  position:absolute; inset:0; display:flex; flex-direction:column; gap:12px;
+  align-items:center; justify-content:center; padding:24px; text-align:center;
+  background:var(--lens-surface);
+}
+html body.lens-app #discover-view .atlas-image-status[hidden] { display:none; }
+html body.lens-app #discover-view .atlas-explore-visual:not([data-image-state=ready]) img { opacity:0; }
+html body.lens-app #discover-view .atlas-image-status button {
+  border:0; border-radius:999px; min-height:44px; padding:10px 20px;
+  background:var(--lens-link-soft); color:var(--lens-ink); font:inherit;
 }

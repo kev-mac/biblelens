@@ -11,7 +11,7 @@ const passage={name:'Genesis',chapter:1,verses:[{n:1,kjv:'In the beginning'}]};
 function fixture({abort=true}={}){
  const timers=new Map(),nodes=new Map(),requests=[],scrolls=[],verseScrolls=[];
  let timerId=0,saves=0,renders=0,updates=0,restores=0;
- const node=id=>{if(!nodes.has(id))nodes.set(id,{innerHTML:'',textContent:'',hidden:false,scrollIntoView(options){verseScrolls.push({id,...options});}});return nodes.get(id);};
+ const node=id=>{if(!nodes.has(id))nodes.set(id,{innerHTML:'',textContent:'',hidden:false,setAttribute(name,value){this[name]=value;},scrollIntoView(options){verseScrolls.push({id,...options});}});return nodes.get(id);};
  const context={
   $:node,books:[],reading:null,readingBook:0,readingChapter:1,loadVersion:0,selectedVerses:new Set(),
   state:{notes:{kept:'Private research'},verseNotes:{'0:1:1':{text:'Keep this note'}}},
@@ -33,12 +33,12 @@ const respond=(request,data)=>request.resolve({ok:true,json:async()=>data});
 
 // A pending connection must expose Retry even if a transport ignores abort.
 const initial=fixture(),initialNotes=JSON.stringify(initial.context.state);
-const stuck=initial.context.initializeReader();assert.equal(initial.requests[0].url,'/api/books');
+const stuck=initial.context.initializeReader();assert.equal(initial.requests[0].url,'/api/books');assert.equal(initial.node('#chapter-text')['aria-busy'],'true');assert.match(initial.node('#chapter-text').innerHTML,/loading-state/);
 initial.timeout();await stuck;
 assert(initial.requests[0].options.signal.aborted);
 assert.match(initial.node('#chapter-text').innerHTML,/reader could not connect/);
 assert.equal(typeof initial.node('#retry-books').onclick,'function');
-assert.equal(initial.timers.size,0);assert.equal(initial.saves,0);
+assert.equal(initial.timers.size,0);assert.equal(initial.saves,0);assert.equal(initial.node('#chapter-text')['aria-busy'],'false');
 assert.equal(JSON.stringify(initial.context.state),initialNotes);
 
 // The actual retry handler reloads books and scripture; a late old response
@@ -48,7 +48,7 @@ assert.match(initial.node('#chapter-text').innerHTML,/Loading scripture/);
 respond(initial.requests[1],catalog);await flush();
 assert.equal(initial.requests[2].url,'/api/chapter?book=0&chapter=1');
 respond(initial.requests[2],passage);await retry;
-assert.equal(initial.renders,1);assert.equal(initial.saves,1);assert.equal(initial.timers.size,0);
+assert.equal(initial.renders,1);assert.equal(initial.node('#chapter-text')['aria-busy'],'false');assert.equal(initial.saves,1);assert.equal(initial.timers.size,0);
 assert.equal(initial.context.reading.chapter,1);assert.equal(initial.context.state.notes.kept,'Private research');
 respond(initial.requests[0],[{id:0,name:'Stale response',chapters:1}]);await flush();
 assert.equal(initial.context.books[0].name,'Genesis');assert.equal(initial.renders,1);
@@ -99,3 +99,12 @@ respond(active.requests[2],passage);await leaving;
 assert.equal(active.context.window.scrollY,510);assert.equal(active.verseScrolls.length,1);
 assert.equal(active.restores,3,'Every completed chapter can restore browser history');
 console.log('PASS: bounded reader startup/body loading, retry recovery, stale response isolation, preserved private notes, background homepage scroll, and reader chapter/verse navigation.');
+
+// An obsolete chapter must not dismiss the current chapter's loading state.
+const overlapping=fixture();overlapping.context.books=catalog;
+const oldChapter=overlapping.context.loadChapter(0,1),newChapter=overlapping.context.loadChapter(0,2);
+respond(overlapping.requests[0],passage);await oldChapter;
+assert.equal(overlapping.node('#chapter-text')['aria-busy'],'true');
+respond(overlapping.requests[1],{...passage,chapter:2});await newChapter;
+assert.equal(overlapping.node('#chapter-text')['aria-busy'],'false');
+console.log('PASS: visible reader loading, cleared success/error states, and overlapping-request loading ownership.');

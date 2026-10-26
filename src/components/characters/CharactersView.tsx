@@ -61,6 +61,7 @@ function mountCharacters(): void {
     search.placeholder = 'Search names or aliases…';
     page = Math.min(page, Math.max(0, Math.ceil(matches.length / CHARACTER_PAGE_SIZE) - 1));
     list.replaceChildren(...characterPage(matches, page).map(CharacterCard));
+    count.classList.toggle('loading-state', loading);
     count.textContent = loading ? 'Loading people…' : failed ? 'People could not be loaded. Please retry.'
       : `${matches.length ? page * CHARACTER_PAGE_SIZE + 1 : 0}–${Math.min((page + 1) * CHARACTER_PAGE_SIZE, matches.length)} of ${matches.length} people`;
     list.setAttribute('aria-busy', String(loading));
@@ -189,7 +190,7 @@ function mountCharacters(): void {
     back.hidden = !familyHistory.length;
     let profile = characters.find(person => person.id === currentId);
     title.textContent=profile?.name || 'Character profile';
-    body.replaceChildren(element('p', '', 'Loading character connections…'));
+    body.replaceChildren(element('p', 'loading-state', 'Loading character connections…'));
     body.setAttribute('aria-busy', 'true');
     if (!sheet.open) { sheet.showModal(); document.body.classList.add('character-sheet-open'); }
     let graph: Awaited<ReturnType<typeof loadCharacterGraph>> | undefined;

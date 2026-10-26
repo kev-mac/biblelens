@@ -30,11 +30,11 @@ new MutationObserver(colorMap).observe(document.body,{attributes:true,attributeF
 async function openAtlas(id,button){
  document.querySelector('#atlas-sources').open=false;
  const token=++request;anchor?.setAttribute('aria-expanded','false');anchor=button;button.setAttribute('aria-expanded','true');
- document.querySelector('#atlas-name').textContent='Loading place…';document.querySelector('#atlas-names').textContent='';document.querySelector('#atlas-description').textContent='';document.querySelector('#atlas-description').hidden=true;status.textContent='';mapNotice.textContent='';identification.textContent='';mapNode.hidden=true;document.querySelector('#atlas-external').hidden=true;
+ document.querySelector('#atlas-name').classList.add('loading-state');document.querySelector('#atlas-name').textContent='Loading place…';document.querySelector('#atlas-names').textContent='';document.querySelector('#atlas-description').textContent='';document.querySelector('#atlas-description').hidden=true;status.textContent='';mapNotice.classList.remove('loading-state');mapNotice.textContent='';identification.textContent='';mapNode.hidden=true;document.querySelector('#atlas-external').hidden=true;
  if(!sheet.open)sheet.showModal();document.querySelector('#atlas-close').focus({preventScroll:true});sheet.querySelector('.atlas-scroll').scrollTop=0;
  try{
   const place=await getLocationDetails(id);if(token!==request||!sheet.open)return;if(!place)throw Error('This place is not in the reference dataset.');
-  document.querySelector('#atlas-name').textContent=place.name;
+  document.querySelector('#atlas-name').classList.remove('loading-state');document.querySelector('#atlas-name').textContent=place.name;
   document.querySelector('#atlas-names').textContent=[place.modern_name&&`Modern name: ${place.modern_name}`,place.aliases.length&&`Also called ${place.aliases.join(', ')}`].filter(Boolean).join(' · ');
   const description=document.querySelector('#atlas-description');description.textContent=atlasDescription(place);description.hidden=!description.textContent;
   if(!place.coordinates){status.textContent='Coordinates are unavailable for this location.';identification.textContent=status.textContent;return;}
@@ -43,7 +43,7 @@ async function openAtlas(id,button){
   identification.textContent=approximate?'Approximate reference point · Ancient identification is uncertain. The map shows modern geographical context.':'Dataset reference point · Historical identifications vary. The map shows modern geographical context.';
   status.textContent=`${latitude.toFixed(5)}, ${longitude.toFixed(5)} · Dataset location${place.verification?` (${place.verification.toLowerCase()})`:''}. ${approximate?'This is an approximate reference point, not a confirmed ancient site. ':''}Historical identifications and precision vary. Map labels and boundaries show modern geographical context, not reconstructed ancient geography.`;
   const external=document.querySelector('#atlas-external');external.href=`https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}#map=7/${latitude}/${longitude}`;external.hidden=false;
-  mapNotice.textContent='Loading geographical context…';
+  mapNotice.classList.add('loading-state');mapNotice.textContent='Loading geographical context…';
   try{
    const modulePath='/vendor/maplibre-gl.mjs';
    const M=await import(modulePath);if(token!==request||!sheet.open)return;
@@ -63,8 +63,8 @@ async function openAtlas(id,button){
     map.addControl(new M.ScaleControl({unit:'metric'}),'bottom-left');
     map.addControl(new M.AttributionControl({compact:false}),'bottom-right');
     map.on('load',colorMap);
-    map.on('idle',()=>{if(!mapFailed&&map.areTilesLoaded())mapNotice.textContent='';});
-    map.on('error',()=>{mapFailed=true;mapNotice.textContent='Some map detail could not load. An internet connection is needed for geographical context. Place details remain available below.';});
+    map.on('idle',()=>{if(!mapFailed&&map.areTilesLoaded()){mapNotice.classList.remove('loading-state');mapNotice.textContent='';}});
+    map.on('error',()=>{mapFailed=true;mapNotice.classList.remove('loading-state');mapNotice.textContent='Some map detail could not load. An internet connection is needed for geographical context. Place details remain available below.';});
    }
    const baseZoom=place.featureType==='City'?8:place.featureType==='Region'||place.name==='India'?4.2:approximate?5:7;
    const zoom=baseZoom+Math.min(0,Math.log2(Math.max(240,mapNode.clientWidth)/536));
@@ -77,9 +77,9 @@ async function openAtlas(id,button){
    mapNode.setAttribute('aria-label',`Modern geographical context for ${place.name}`);
    map.getCanvas().setAttribute('aria-label',`Map of ${place.name}. Use arrow keys to pan and plus or minus to zoom.`);
    requestAnimationFrame(()=>{if(token===request&&sheet.open)map.resize();});
-  }catch(error){mapNode.hidden=true;mapNotice.textContent='The interactive map is unavailable on this device. Place details and the external map link remain available.';}
+  }catch(error){mapNode.hidden=true;mapNotice.classList.remove('loading-state');mapNotice.textContent='The interactive map is unavailable on this device. Place details and the external map link remain available.';}
 
- }catch(error){if(token!==request)return;document.querySelector('#atlas-name').textContent='Place unavailable';status.textContent=error.message;identification.textContent=error.message;}
+ }catch(error){if(token!==request)return;document.querySelector('#atlas-name').classList.remove('loading-state');document.querySelector('#atlas-name').textContent='Place unavailable';status.textContent=error.message;identification.textContent=error.message;}
 }
 // Holding a place opens its in-app contents, and scrolling cancels the hold.
 let placePress=null,placeTimer=0,suppressPlaceUntil=0;

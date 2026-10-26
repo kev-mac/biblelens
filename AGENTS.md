@@ -15,3 +15,5 @@ The primary audience is adults aged 25–50 using mobile phones. Treat phone lay
 The audience is primarily African and Middle Eastern. Human illustrations should reflect African and Middle Eastern people with varied skin tones, facial features and natural hair textures. Use dignified individual portrayals; imagined artwork must not be presented as historical evidence or a verified portrait.
 
 BibleLens is a scholarly tool for readers of any religious affiliation or none. Use neutral descriptions of texts, literary forms, historical settings and interpretations. Do not assume religious belief, familiarity with biblical narratives, or devotional intent in interface copy.
+
+Prophecies and Method & Sources are deferred as Explore gallery cards. Keep Method & Sources accessible through the footer. Use title case for displayed timeline headings without changing the underlying research titles.

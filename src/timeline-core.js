@@ -1,5 +1,6 @@
 import academicDiscrepancies from '../data/academic-discrepancies.json';
 import academicSources from '../data/academic-discrepancy-sources.json';
+import {titleCase} from './title-case.js';
 export {academicDiscrepancies};
 
 // Curated identities: never fuzzy-match a bare place name such as Jericho.
@@ -39,7 +40,7 @@ export function formatTimelineDuration(value) {
 }
 export function renderTimelineCard(event, index) {
  const fields = event.fields || event;
- const title = fields.title || fields.name || 'Untitled event';
+ const title = titleCase(fields.title || fields.name || 'Untitled event');
  const discrepancy = event.has_academic_conflict && event.academic_discrepancy;
  const panelId = `timeline-academic-${index}`;
  const sources = academicSources[event.academic_discrepancy_key] || [];

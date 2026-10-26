@@ -53,6 +53,7 @@ export function mountPlacesDirectory(){
  let places=new Map(),page=0,loaded=false,loading=false,failed=false;
  function render(){
   const matches=searchPlaces(places,search.value),pages=Math.ceil(matches.length/24);page=Math.min(page,Math.max(0,pages-1));
+  count.className=loading?'loading-state':failed?'':'sr-only';
   count.textContent=loading?'Loading places…':failed?'Places could not be loaded.':`${matches.length?page*24+1:0}–${Math.min((page+1)*24,matches.length)} of ${matches.length} ${matches.length===1?'place':'places'}`;
   list.replaceChildren();list.setAttribute('aria-busy',String(loading));
   for(const place of matches.slice(page*24,(page+1)*24)){

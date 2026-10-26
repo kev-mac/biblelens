@@ -1,3 +1,4 @@
+import {titleCase} from '../../title-case.js';
 // Load TimelineEventCard.css alongside the application's shared style.css.
 // discrepancy is optional: { academic_consensus, summary }.
 const template = document.createElement('template');
@@ -61,7 +62,7 @@ export function createTimelineEventCard(event) {
   const node = template.content.firstElementChild.cloneNode(true);
   const title = node.querySelector('.timeline-event-title');
   title.id = `timeline-title-${++nextId}`;
-  title.textContent = event.title;
+  title.textContent = titleCase(event.title);
   node.querySelector('article').setAttribute('aria-labelledby', title.id);
   node.querySelector('.timeline-event-date').textContent = event.traditional_date;
 

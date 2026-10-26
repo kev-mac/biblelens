@@ -5,6 +5,8 @@
   const host = document.getElementById('discover-view');
   if (!host || host.dataset.studyAtlas === 'ready') return;
   const starterStudies = host.querySelector('.lens-starter-studies');
+  // Keep these cards available for future work without presenting them in Explore.
+  const deferredCollections = new Set(['prophecies', 'method']);
   const collections = [
     {route:'places', image:'places', title:'Places', kicker:'Geography', heading:'Geography and Historical Setting.', copy:'Examine place references, proposed identifications and the geography of biblical texts.', action:'Explore places', alt:'An illustrated ancient hilltop city, winding paths and distant mountains in warm light.', related:'Start in <button type="button" data-place-id="recL1WV82pXaRBQ59" aria-haspopup="dialog" aria-controls="atlas-sheet" aria-label="Explore Jerusalem in the atlas">Jerusalem</button>, <button type="button" data-place-id="recmRfnw4XzPBH9jc" aria-haspopup="dialog" aria-controls="atlas-sheet" aria-label="Explore Nazareth in the atlas">Nazareth</button> or <button type="button" data-place-id="rectrAkGtrZH5LMp8" aria-haspopup="dialog" aria-controls="atlas-sheet" aria-label="Explore Beersheba in the atlas">Beersheba</button>.'},
     {route:'people', image:'people', title:'People', kicker:'People & connections', heading:'People and Relationships.', copy:'Examine named figures, genealogies and relationships described in the texts.', action:'Explore people', alt:'An imagined ancient Near Eastern family: an older man and woman with a young listener.', related:'Begin with <a href="#characters/reccdFYIq50NyxNej">Abraham</a>, <a href="#characters/rechda7WMDuW1jBTq">Sarah</a> and <a href="#characters/recqIoG1fkaNWJ1y0">Isaac</a> in <a href="#read/0/21/3">Genesis 21:3</a>.'},
@@ -14,7 +16,7 @@
     {route:'commandments', image:'commandments', title:'Commandments', kicker:'Law & daily life', heading:'Law in Historical Context.', copy:'Examine the 613 traditionally enumerated commandments by subject and textual reference.', action:'Explore commandments', alt:'An imagined desert mountain pass with two weathered stone tablets on a ledge.'},
     {route:'prophecies', image:'prophecies', title:'Prophecies', kicker:'Words & interpretation', heading:'Prophecy and Interpretation.', copy:'Examine prophetic texts, later interpretations and proposed correspondences.', action:'Explore prophecies', alt:'An illustrated ancient observer looking toward a distant city under a dramatic sky.', note:'3 illustrative records · review pending.'},
     {route:'method', image:'method', title:'Method & Sources', kicker:'How BibleLens works', heading:'Sources and Research Methods.', copy:'Review source attribution, editorial decisions and gaps in coverage.', action:'Read our method', alt:'An imagined archaeological worktable with a repaired clay vessel, fragments and a reference notebook.'}
-  ];
+  ].filter(item => !deferredCollections.has(item.route));
   const arrow = direction => `<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="${direction === 'previous' ? 'm14 6-6 6 6 6' : 'm10 6 6 6-6 6'}" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   host.dataset.studyAtlas = 'ready';
   host.classList.add('atlas-explore');
@@ -24,13 +26,35 @@
     <div class="atlas-explore-gallery" aria-label="Illustrated collections">${collections.map((item, index) => `
       <section class="atlas-explore-panel" id="atlas-explore-panel-${item.route}" role="tabpanel" aria-labelledby="atlas-explore-tab-${item.route}" data-active="${index === 0}"${index === 0 ? '' : ' aria-hidden="true" inert'}>
         <div class="atlas-explore-feature atlas-explore-feature-${item.route}">
-          <div class="atlas-explore-visual"><img class="atlas-explore-image" src="/assets/explore-${item.image}.webp" alt="${item.alt}" width="1200" height="800" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async"${index === 0 ? ' fetchpriority="high"' : ''}></div>
+          <div class="atlas-explore-visual" data-image-state="loading" aria-busy="true"><img class="atlas-explore-image" src="/assets/explore-${item.image}.webp" alt="${item.alt}" width="1200" height="800" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async"${index === 0 ? ' fetchpriority="high"' : ''}><div class="atlas-image-status" role="status"><span class="loading-state">Loading image…</span><button type="button" aria-label="Retry ${item.title} image" hidden>Retry</button></div></div>
           <div class="atlas-explore-copy"><span class="atlas-explore-eyebrow">${item.kicker}</span><h2>${item.heading}</h2><p>${item.copy}</p><a class="atlas-explore-action" href="#${item.route}">${item.action}<span aria-hidden="true">↗</span></a>${item.related ? `<p class="atlas-explore-related">${item.related}</p>` : ''}${item.note ? `<small class="atlas-explore-source">${item.note}</small>` : ''}</div>
         </div>
       </section>`).join('')}</div>
     <div class="atlas-explore-gallery-footer"><button type="button" class="atlas-explore-step" data-atlas-step="-1" aria-label="Previous collection" disabled>${arrow('previous')}</button><p class="atlas-explore-position" aria-live="polite" aria-atomic="true"><span class="atlas-explore-position-label">Places</span></p><button type="button" class="atlas-explore-step" data-atlas-step="1" aria-label="Next collection: People">${arrow('next')}</button></div>
-    <div class="atlas-explore-studies"></div>
-    <p class="atlas-explore-coverage">Reference coverage varies. A missing annotation is not a verdict of agreement or historical accuracy.</p>`;
+    <div class="atlas-explore-studies"></div>`;
+
+  // Keep the illustration's space reserved while its actual request finishes.
+  for (const visual of host.querySelectorAll('.atlas-explore-visual')) {
+    const image = visual.querySelector('img');
+    const status = visual.querySelector('.atlas-image-status');
+    const message = status.querySelector('span');
+    const retry = status.querySelector('button');
+    function imageState(state) {
+      visual.dataset.imageState = state;
+      visual.setAttribute('aria-busy', String(state === 'loading'));
+      status.hidden = state === 'ready';
+      message.classList.toggle('loading-state', state === 'loading');
+      message.textContent = state === 'error' ? 'Image unavailable.' : 'Loading image…';
+      retry.hidden = state !== 'error';
+    }
+    image.addEventListener('load', () => imageState('ready'));
+    image.addEventListener('error', () => imageState('error'));
+    retry.addEventListener('click', () => {
+      imageState('loading');
+      image.src = image.src;
+    });
+    if (image.complete) imageState(image.naturalWidth ? 'ready' : 'error');
+  }
 
   // Preserve the original questions and their actual study IDs.
   if (starterStudies) host.querySelector('.atlas-explore-studies').append(starterStudies);

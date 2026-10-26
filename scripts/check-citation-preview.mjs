@@ -1,6 +1,6 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
 const handlers={},popupHandlers={},children=new Map(),loads=[];let requests=0,selectedEdition='kjv';
-const child=s=>{if(!children.has(s))children.set(s,{attrs:{},setAttribute(key,value){this.attrs[key]=value;},focus(){doc.activeElement=this;}});return children.get(s);};
+const child=s=>{if(!children.has(s))children.set(s,{classList:{add(){},remove(){}},attrs:{},setAttribute(key,value){this.attrs[key]=value;},focus(){doc.activeElement=this;}});return children.get(s);};
 const popup={style:{},hidden:true,setAttribute(){},querySelector:child,querySelectorAll:()=>[],contains:n=>n===popup,getBoundingClientRect:()=>({width:360,height:180}),addEventListener:(type,fn)=>popupHandlers[type]=fn};
 const doc={createElement:()=>popup,body:{append(){}},querySelector:s=>s==='#reader-edition'?{value:selectedEdition}:null,addEventListener:(type,fn,capture)=>{const key=type+(capture===true?':capture':'');const previous=handlers[key];handlers[key]=previous?ev=>{previous(ev);fn(ev);}:fn;}};
 const ctx={state:{verseBookmarks:{},verseHighlights:{}},document:doc,window:{innerWidth:780,innerHeight:1004,addEventListener(){}},setTimeout,clearTimeout,scriptureHtml:v=>v.kjv,setView:(v,update)=>loads.push({view:v,update}),loadChapter:(...ref)=>loads.push({ref}),fetch:async()=>{requests++;return{ok:true,json:async()=>({verses:[{n:1,kjv:'Full verse one, beyond the quoted excerpt.'},{n:2,kjv:'Full verse two.'}]})}}};

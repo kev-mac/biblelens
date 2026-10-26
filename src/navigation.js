@@ -14,7 +14,7 @@
  trigger.setAttribute('aria-expanded', 'false');
  }
  const grid = sheet.querySelector('.navigation-grid');
- const pages = [['discover','Explore'],['explore','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['saved','Categories'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['prophecies','Prophecies'],['timeline','Timeline']];
+ const pages = [['discover','Explore'],['explore','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['saved','Categories'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['timeline','Timeline']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
   const icon = document.querySelector(`header nav [data-view="${page}"] svg`);

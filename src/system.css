@@ -309,3 +309,24 @@ html body.lens-app #toast { z-index: 100; border-radius: 16px; border: 1px solid
     hyphens: none;
   }
 }
+
+/* One calm, visible loading treatment across data views and inline previews. */
+html body .loading-state {
+  display:flex; align-items:center; gap:10px; color:var(--lens-muted,var(--muted));
+  font-family:var(--lens-ui-font,Inter,system-ui,sans-serif); font-size:.8125rem; line-height:1.6;
+}
+html body .loading-state::before {
+  content:""; display:inline-block; flex:0 0 14px; width:14px; height:14px;
+  box-sizing:border-box; border:2px solid color-mix(in srgb,currentColor 22%,transparent);
+  border-top-color:var(--lens-copper,currentColor); border-radius:50%;
+  animation:biblelens-loading .85s linear infinite;
+}
+html body .chapter-skeleton {
+  height:230px; max-width:38rem; margin:26px 0; opacity:.55;
+  background:repeating-linear-gradient(to bottom,var(--lens-rule,var(--line)) 0 9px,transparent 9px 32px);
+  border-radius:5px; mask-image:linear-gradient(to bottom,#000,transparent);
+}
+@keyframes biblelens-loading { to { transform:rotate(360deg); } }
+@media(prefers-reduced-motion:reduce) {
+  html body .loading-state::before { animation:none; }
+}

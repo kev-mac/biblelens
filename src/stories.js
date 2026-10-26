@@ -5,7 +5,7 @@ function storiesFilterButton(){return '';}
 let storiesBook='',storiesTheme='',storiesSearch='',storiesPage=0;
 const STORIES_PAGE_SIZE=10;
 function loadStories(){
- if(!storiesRequest){storiesRequest=fetch('/stories.json').then(response=>{if(!response.ok)throw Error('Stories unavailable');return response.json();}).then(catalog=>{storiesCatalog=catalog;return catalog;});storiesRequest.catch(()=>{storiesRequest=null;});}
+ if(!storiesRequest){storiesRequest=fetch('/stories.json',{signal:AbortSignal.timeout(20000)}).then(response=>{if(!response.ok)throw Error('Stories unavailable');return response.json();}).then(catalog=>{storiesCatalog=catalog;return catalog;});storiesRequest.catch(()=>{storiesRequest=null;});}
  return storiesRequest;
 }
 function storyReference(reference){
@@ -30,7 +30,7 @@ async function renderStoriesView(){
  $('#stories-pagination').hidden=true;
  if(!storiesActive)return;
  const route=typeof location==='undefined'?null:storyRoute();
- const list=$('#stories-list');list.innerHTML='<p role="status">Loading stories…</p>';
+ const list=$('#stories-list');list.setAttribute('aria-busy','true');if(!storiesCatalog)list.innerHTML='<p class="loading-state" role="status">Loading stories…</p>';
  try{
   const catalog=await loadStories();if(generation!==storiesGeneration||!storiesActive)return;
   const themes=[...new Set(catalog.flatMap(entry=>entry.stories.flatMap(story=>story.topics||[])))].sort();
@@ -38,9 +38,10 @@ async function renderStoriesView(){
   $('#stories-theme').innerHTML='<option value="">All themes</option>'+themes.map(theme=>`<option value="${esc(theme)}">${esc(theme)}</option>`).join('');
   $('#stories-book').value=storiesBook;$('#stories-theme').value=storiesTheme;$('#stories-search').value=storiesSearch;
   const query=storiesSearch.trim().toLowerCase();
+  const terms=query.match(/[\p{L}\p{N}]+/gu)||[];
   $('#stories-search').placeholder='Search stories, passages or themes';
   const filtered=!!(query||storiesBook||storiesTheme||route);
-  let stories=catalog.filter(entry=>!storiesBook||entry.book===storiesBook).flatMap(entry=>entry.stories).filter(story=>(!storiesTheme||(story.topics||[]).includes(storiesTheme))&&(!query||[story.title,story.summary,story.passage,...(story.topics||[])].join(' ').toLowerCase().includes(query)));
+  let stories=catalog.filter(entry=>!storiesBook||entry.book===storiesBook).flatMap(entry=>entry.stories).filter(story=>(!storiesTheme||(story.topics||[]).includes(storiesTheme))&&terms.every(term=>[story.title,story.summary,story.passage,...(story.topics||[])].join(' ').toLowerCase().includes(term)));
   if(route)stories=stories.filter(story=>storySlug(story.title)===route[2]);
   $('#stories-results').hidden=false;
   $('#stories-reset').hidden=!filtered;
@@ -53,7 +54,7 @@ async function renderStoriesView(){
   $('#stories-page-status').textContent=pages>1?`${storiesPage+1} / ${pages}`:'';
   list.innerHTML=stories.length?visible.map(story=>storyCard(story)).join(''):'<p class="empty">No stories match these filters. Try another book or theme, or clear your search.</p>';
   if(route){const selected=stories.find(story=>storySlug(story.title)===route[2]);if(selected){const card=document.getElementById('story-'+route[2]);card?.classList.add('story-linked');card?.focus({preventScroll:true});card?.scrollIntoView({block:'nearest'});}else list.innerHTML='<p class="empty">Story not found. Clear filters to explore other stories.</p>';}
- }catch{if(generation===storiesGeneration)list.innerHTML='<p>Could not load stories. <button type="button" data-stories-retry>Retry</button></p>';}
+ }catch{if(generation===storiesGeneration)list.innerHTML='<p>Could not load stories. <button type="button" data-stories-retry>Retry</button></p>';}finally{if(generation===storiesGeneration)list.setAttribute('aria-busy','false');}
 }
 function updateStoriesFilters(){
  storiesPage=0;storiesBook=$('#stories-book').value;storiesTheme=$('#stories-theme').value;storiesSearch=$('#stories-search').value;

@@ -23,8 +23,8 @@ assert.throws(()=>validateStories(changed(c=>c[1].stories[0].cross_references=['
 assert.throws(()=>validateStories(changed(c=>c[1].stories[0].topics=['Invented theme']),options),/Invalid story topics/);
 assert.throws(()=>validateStories(changed(c=>c[1].stories[0].passage='Exodus 2:1-1:1'),options),/Reversed story passage/);
 const nodes=new Map(),handlers={},loads=[];
-const node=id=>{if(!nodes.has(id))nodes.set(id,{hidden:false,innerHTML:'',textContent:'',addEventListener(){},focus(){},showModal(){this.open=true;},close(){this.open=false;}});return nodes.get(id);};
-const c={window:{addEventListener(){}},location:{hash:''},books,readingBook:0,$:node,esc:s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),categoryIcon:()=>'<svg></svg>',document:{body:{classList:{toggle(){},add(){},remove(){}}},getElementById:id=>({...node(id),classList:{add(){}},scrollIntoView(){}}),addEventListener:(type,fn)=>{handlers[type]=fn;}},setView(){},loadChapter:(...args)=>loads.push(args),fetch:async()=>({ok:true,json:async()=>catalog})};
+const node=id=>{if(!nodes.has(id))nodes.set(id,{hidden:false,innerHTML:'',textContent:'',setAttribute(name,value){this[name]=value;},addEventListener(){},focus(){},showModal(){this.open=true;},close(){this.open=false;}});return nodes.get(id);};
+const c={AbortSignal,window:{addEventListener(){}},location:{hash:''},books,readingBook:0,$:node,esc:s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),categoryIcon:()=>'<svg></svg>',document:{body:{classList:{toggle(){},add(){},remove(){}}},getElementById:id=>({...node(id),classList:{add(){}},scrollIntoView(){}}),addEventListener:(type,fn)=>{handlers[type]=fn;}},setView(){},loadChapter:(...args)=>loads.push(args),fetch:async()=>({ok:true,json:async()=>catalog})};
 c.readRef=reference=>{const match=/^(.*?) (\d+):(\d+)/.exec(reference),book=match&&books.find(b=>b.name===match[1]);return book?{book:book.id,chapter:+match[2],verse:+match[3]}:null;};
 vm.createContext(c);vm.runInContext(fs.readFileSync('src/stories.js','utf8'),c);
 const seen=new Set();
@@ -66,13 +66,22 @@ vm.runInContext("storiesBook='Exodus';storiesSearch='no matches for this query'"
 vm.runInContext("storiesSearch=''",c);
 vm.runInContext("storiesBook='Genesis';storiesTheme='Obedience'",c);await c.renderStoriesView();assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,Math.min(10,genesis.stories.filter(story=>story.topics.includes('Obedience')).length));
 vm.runInContext("storiesTheme='';storiesSearch='noah'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('Noah'));
+// Keywords can occur in different fields and in either order.
+for(const query of ['jonah fish','fish jonah','  JONAH   FISH  ','Jonah, fish']){
+ vm.runInContext("storiesBook='';storiesTheme='';storiesSearch="+JSON.stringify(query),c);await c.renderStoriesView();
+ assert(node('#stories-list').innerHTML.includes('id="story-jonah-flees-and-is-swallowed"'),query);
+ assert.equal(node('#stories-list')['aria-busy'],'false');
+}
+vm.runInContext("storiesSearch='jonah fish zqxvblorp'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories match'));
+vm.runInContext("storiesBook='Genesis';storiesSearch='jonah fish'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories match'),'Book filters still constrain keyword search');
 vm.runInContext("storiesSearch=''",c);
 handlers.click({target:{closest:s=>s==='[data-story-passage]'?{dataset:{storyPassage:'Genesis 6:9 - 9:17'}}:null}});
 assert.deepEqual(loads,[[0,6,9]]);assert(!node('#reader-layout').hidden);assert(node('#stories-view').hidden);
 // A delayed catalog response cannot replace the newly selected book.
 let resolve;vm.runInContext('storiesRequest=null;storiesActive=true',c);c.readingBook=0;vm.runInContext("storiesBook='Genesis'",c);c.fetch=()=>new Promise(r=>{resolve=r;});
-const stale=c.renderStoriesView();c.readingBook=1;vm.runInContext("storiesBook='Exodus'",c);const fresh=c.renderStoriesView();resolve({ok:true,json:async()=>catalog});await Promise.all([stale,fresh]);
+const stale=c.renderStoriesView();assert.equal(node('#stories-list')['aria-busy'],'true');c.readingBook=1;vm.runInContext("storiesBook='Exodus'",c);const fresh=c.renderStoriesView();resolve({ok:true,json:async()=>catalog});await Promise.all([stale,fresh]);
 assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,Math.min(10,exodus.stories.length));
+assert.equal(node('#stories-list')['aria-busy'],'false');
 assert(!node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(genesis.stories[0].title)+'"'));
 console.log(`PASS: ${total} stories in canon order, unique titles/slugs, reference bounds, topic vocabulary, per-book/all-book selection, empty search, passage navigation and stale-response protection.`);
 
