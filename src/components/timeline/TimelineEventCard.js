@@ -1,5 +1,5 @@
 import {titleCase} from '../../title-case.js';
-// Load TimelineEventCard.css alongside the application's shared style.css.
+// Styles live in the components layer of the shared application stylesheet bundle.
 // discrepancy is optional: { academic_consensus, summary }.
 const template = document.createElement('template');
 template.innerHTML = `

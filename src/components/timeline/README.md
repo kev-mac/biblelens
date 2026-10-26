@@ -1,6 +1,6 @@
 # Timeline Event Card
 
-Load the shared `src/style.css` first, then `TimelineEventCard.css`. Import
+The card styles are in the `components` layer of `src/components.css`. Load the ordered application stylesheets from `scripts/stylesheets.mjs`. Import
 `createTimelineEventCard` from `TimelineEventCard.js` in a browser module:
 
 ```js

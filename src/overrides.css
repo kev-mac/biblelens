@@ -1,0 +1,1945 @@
+/* The priority sublayer preserves the former important cascade without specificity escalation. Keep new exceptions scoped; semantic hidden and third-party invariants retain important. */
+@layer overrides {
+    @layer design, priority;
+    @layer design {/*  atlas.css  *//* Study Atlas: one typeface across content and controls, with a shared ink masthead. */
+html body.lens-app {
+  --lens-display-font: var(--ui-font, "Inter", system-ui, sans-serif);
+  --lens-ui-font: var(--ui-font, "Inter", system-ui, sans-serif);
+  --lens-paper: #fbf9f3;
+  --lens-surface: #fffdf8;
+  --lens-ink: #142e39;
+  --lens-muted: #58696c;
+  --lens-rule: #d8d6cb;
+  --lens-copper: #9a4629;
+  --lens-copper-soft: #f3e5d9;
+  --lens-link: #245f6d;
+  --lens-link-soft: #e7eeed;
+  --lens-masthead: #102833;
+  --lens-masthead-text: #faf7ed;
+  --lens-masthead-accent: #e8af8c;
+  --lens-nav-height: 4.4rem;
+  font-family: var(--lens-ui-font);
+}
+html body.lens-app.dark {
+  --lens-paper: #14232b;
+  --lens-surface: #1a2d36;
+  --lens-ink: #f4f0e5;
+  --lens-muted: #b6c2bf;
+  --lens-rule: #3e5057;
+  --lens-copper: #edb28d;
+  --lens-copper-soft: #40342e;
+  --lens-link: #a1d1d5;
+  --lens-link-soft: #253f49;
+  --lens-masthead: #0c1c25;
+}
+html body.lens-app > #lensMasthead.lens-masthead {
+  color: var(--lens-masthead-text);
+  border-bottom: 1px solid #42515a;
+}
+html body.lens-app #lensMasthead .lens-brand {
+  gap: 10px;
+}
+html body.lens-app #lensMasthead .lens-brand > span:last-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -.035em;
+  white-space: nowrap;
+}
+html body.lens-app #lensMasthead .lens-mark {
+  color: var(--lens-masthead-accent);
+  border-color: var(--lens-masthead-accent);
+  width: 27px;
+  flex-basis: 27px;
+  height: 34px;
+}
+html body.lens-app #lensMasthead .lens-mark svg { width: 21px; height: 21px; }
+html body.lens-app #lensMasthead .lens-primary a {
+  font-size: .875rem;
+  font-weight: 400;
+}
+html body.lens-app #lensMasthead #lens-settings {
+  width: 44px;
+  height: 44px;
+}
+
+/* Explicit route scoping overrides legacy collection font shorthands. */
+html body.lens-app #main > section h1,
+html body.lens-app #main :is(#characters-view, #places-view, #stories-view, #evidence-view, #bookmarks-view, #commandments-view, #prophecies-view, #timeline-view, #method-view, #search-view, #notebook-view, #chat-view)
+  :is(h2, h3, .character-name, .library-category-title),
+html body.lens-app #main #lensComparison :is(h2, h3),
+html body.lens-app :is(#character-sheet, #atlas-sheet, #study-dialog, #story-topic-sheet) :is(h2, .character-name),
+html body.lens-app :is(#reader-settings, #passage-picker, #verse-note-dialog, #chapter-bookmarks-dialog, #marked-filter-dialog, #chat-citations-dialog, #note-confirm-dialog, #prophecy-filters, #commandments-filters, #navigation-sheet, .comparison-context-dialog) h2,
+html body.lens-app .lens-workspace .lens-note h2 {
+  letter-spacing: -.035em;
+}
+html body.lens-app #main > section h1 {
+  text-wrap: balance;
+  overflow-wrap: normal;
+}
+html body.lens-app #main :is(.person-section-panel, .character-connections, .timeline-discrepancy-content) :is(h3, h4),
+html body.lens-app #main :is(.lens-kicker, .eyebrow, .person-section-controls, .person-section-toggle, .person-section-label) {
+  letter-spacing: 0;
+}
+html body.lens-app #main #search-view .lens-result-group > h2 {
+  letter-spacing: .075em;
+}
+html body.lens-app #main :is(.lens-kicker, .eyebrow) { letter-spacing: .13em; font-size: .6875rem; }
+html body.lens-app #main .lens-page-heading { padding-top: 32px; padding-bottom: 22px; }
+html body.lens-app #main .lens-page-heading h1 { margin-block: 8px 14px; }
+html body.lens-app #main .lens-page-heading > p { max-width: 58ch; }
+html body.lens-app .lens-context { padding-top: 12px; gap: 9px; }
+html body.lens-app #main > section:not(.lens-workspace) > .page-heading,
+html body.lens-app #main > section > .lens-section-heading { padding: 8px 0 16px; }
+html body.lens-app #main > section:not(.lens-workspace) > .page-heading h1 { margin-bottom: 8px; }
+html body.lens-app #stories-view { padding-top: 8px; }
+html body.lens-app #stories-view > h1 { margin-bottom: 9px; }
+html body.lens-app #stories-view > .muted { margin-bottom: 16px; }
+html body.lens-app #stories-view .stories-filters { margin: 16px 0 12px; padding-bottom: 12px; gap: 10px; }
+html body.lens-app #stories-view .stories-filters label { font-size: .75rem; }
+html body.lens-app #main :is(#characters-view, #places-view) .characters-search-box { margin: 8px 0 12px; }
+html body.lens-app #main #stories-view .story-summary { max-width: 66ch; line-height: 1.7; }
+html body.lens-app #main :is(#characters-view, #places-view) .character-name { font-size: 1.65rem; line-height: 1.3; }
+html body.lens-app #main :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #characters-view, #places-view) .person-section-controls { gap: 4px 14px; margin-top: 12px; }
+html body.lens-app #main .lens-result strong { font-family: var(--lens-display-font); font-size: 1.125rem; font-weight: 500; }
+html body.lens-app #main .lens-note { background: var(--lens-surface); padding: 24px; }
+html body.lens-app #main .lens-note h2 { font-size: 1.65rem; }
+html body.lens-app #main :is(#chat-view, #method-view) h2 { font-size: 1.55rem; }
+
+/* Invitations to explore, with source detail kept inside the study. */
+html body.lens-app #explore-view .lens-starter-studies {
+  margin: 56px 0 28px;
+  padding: 0;
+  border: 0;
+}
+html body.lens-app #explore-view .lens-questions-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+html body.lens-app #explore-view .lens-questions-heading h2 {
+  margin: 8px 0 10px;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.2;
+}
+html body.lens-app #explore-view .lens-questions-heading p {
+  margin: 0;
+  color: var(--lens-muted);
+  font-size: .875rem;
+  line-height: 1.6;
+}
+html body.lens-app #explore-view .lens-ask-own {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 44px;
+  padding: 8px 16px;
+  flex: none;
+  border-radius: 24px;
+  background: var(--lens-link-soft);
+  color: var(--lens-link);
+  font-size: .8125rem;
+  text-decoration: none;
+}
+html body.lens-app #explore-view .lens-question-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+html body.lens-app #explore-view .lens-question-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: clamp(22px, 2.6vw, 32px);
+  border: 0;
+  border-radius: 20px;
+  background: var(--lens-link-soft);
+  color: var(--lens-ink);
+  text-decoration: none;
+  transition: background .2s ease, transform .2s ease;
+}
+html body.lens-app #explore-view .lens-question-card:nth-child(3n + 2) { background: var(--lens-copper-soft); }
+html body.lens-app #explore-view .lens-question-card:nth-child(3n) { background: color-mix(in srgb, var(--lens-rule) 35%, var(--lens-paper)); }
+html body.lens-app #explore-view .lens-question-topic { color: var(--lens-muted); font-size: .6875rem; line-height: 1.5; }
+html body.lens-app #explore-view .lens-question-card h3 {
+  margin: 18px 0 12px;
+  font: 500 clamp(1.3rem, 2vw, 1.65rem)/1.3 var(--lens-display-font);
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+html body.lens-app #explore-view .lens-question-card p { margin: 0 0 28px; color: var(--lens-muted); font-size: .8125rem; line-height: 1.65; }
+html body.lens-app #explore-view .lens-question-open { display: flex; justify-content: space-between; width: 100%; gap: 12px; margin-top: auto; font-size: .75rem; color: var(--lens-link); }
+@media (hover: hover) {
+  html body.lens-app #explore-view .lens-question-card:hover { transform: translateY(-3px); }
+  html body.lens-app #explore-view .lens-question-card:hover h3 { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+}
+@media (max-width: 760px) {
+  html body.lens-app #explore-view .lens-questions-heading { display: block; }
+  html body.lens-app #explore-view .lens-ask-own { margin-top: 16px; }
+  html body.lens-app #explore-view .lens-question-cards {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 4px 4px 16px;
+    margin-inline: -4px;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 4px;
+  }
+  html body.lens-app #explore-view .lens-question-card { flex: 0 0 84%; scroll-snap-align: start; padding: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html body.lens-app #explore-view .lens-question-card { transition: none; }
+}
+@media (forced-colors: active) {
+  html body.lens-app #explore-view :is(.lens-question-card, .lens-ask-own) { border: 1px solid CanvasText; }
+}
+
+@media (min-width: 740px) {
+  html body.lens-app #main #stories-view .stories-filters { grid-template-columns: minmax(180px,2fr) repeat(2,minmax(120px,1fr)) auto; }
+  html body.lens-app #main #stories-view .stories-filters label:first-child { grid-column: auto; }
+  html body.lens-app #main #stories-view .story-card > .library-entry-meta { position: absolute; left: 0; top: 28px; max-width: 130px; color: var(--lens-copper); }
+  html body.lens-app #main :is(#characters-view, #places-view) .character-card {
+    display: grid;
+    grid-template-columns: minmax(150px,190px) minmax(0,1fr);
+    gap: 8px 28px;
+  }
+  html body.lens-app #main :is(#characters-view, #places-view) .character-card > .character-card-header { grid-column: 1; grid-row: 1 / span 3; }
+  html body.lens-app #main :is(#characters-view, #places-view) .character-card > :not(.character-card-header) { grid-column: 2; }
+}
+@media (max-width: 760px) {
+  html body.lens-app #lensMasthead .lens-brand > span:last-child { font-size: 1.35rem; }
+  html body.lens-app #lensMasthead .lens-primary a { font-size: .6875rem; }
+  html body.lens-app .lens-context { padding-top: 4px; }
+  html body.lens-app #main .lens-page-heading { padding-top: 24px; padding-bottom: 16px; }
+  html body.lens-app #main #stories-view .stories-filters { margin-top: 14px; }
+  html body.lens-app #main .lens-note { padding: 18px; }
+}
+@media (max-width: 420px) {
+  html body.lens-app #lensMasthead .lens-mark { display: none; }
+  html body.lens-app #lensMasthead .lens-brand > span:last-child { font-size: 1.25rem; }
+}
+/*  atlas-reader.css  *//* The study atlas: typography does the work; the passage remains the focus. */
+body.lens-app .lens-reading-layout {
+  gap: clamp(36px, 4.5vw, 68px);
+}
+body.lens-app #reader-layout {
+  max-width: 48rem;
+}
+body.lens-app #chapter-text .chapter-heading-row {
+  margin-bottom: 22px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--lens-rule);
+}
+body.lens-app #chapter-text .atlas-passage-heading {
+  align-items: center;
+  gap: 20px;
+}
+body.lens-app #chapter-text .atlas-reader-collection {
+  margin: 0 0 12px;
+  color: var(--lens-copper);
+  font: 600 .6875rem/1.5 var(--ui-font, Inter, sans-serif);
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+html body.lens-app #chapter-text .atlas-passage-heading :is(h2, .passage-heading-picker) {
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -.045em;
+}
+html body.lens-app #chapter-text .atlas-passage-heading .passage-heading-picker {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(20px, 3vw, 38px);
+  width: 100%;
+  min-width: 0;
+  text-align: left;
+}
+body.lens-app #chapter-text .atlas-book-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+body.lens-app #chapter-text .atlas-passage-chevron {
+  display: inline-block;
+  width: .38em;
+  height: .38em;
+  min-width: 12px;
+  min-height: 12px;
+  margin-left: .2em;
+  vertical-align: .1em;
+  fill: none;
+  stroke: var(--lens-copper);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+body.lens-app #chapter-text .atlas-chapter-mark {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  align-self: stretch;
+  padding-left: clamp(18px, 2.5vw, 30px);
+  border-left: 1px solid var(--lens-rule);
+  color: var(--lens-copper);
+}
+body.lens-app #chapter-text .atlas-chapter-label {
+  font: 500 .5625rem/1.5 var(--ui-font, Inter, sans-serif);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+body.lens-app #chapter-text .atlas-chapter-number {
+  font-family: var(--lens-display-font, Inter, system-ui, sans-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  font-variant-numeric: lining-nums;
+  line-height: 1;
+  letter-spacing: -.06em;
+}
+body.lens-app #chapter-text .atlas-passage-heading .passage-description {
+  max-width: 40rem;
+  margin-top: 15px;
+  color: var(--lens-muted);
+  font: 400 .875rem/1.65 var(--ui-font, Inter, sans-serif);
+  letter-spacing: 0;
+}
+/* The full book/chapter heading already opens this same passage picker. */
+html body.lens-app #chapter-text .atlas-passage-heading .passage-bookmark {
+  align-self: flex-start;
+  margin-top: 28px;
+}
+
+html body.lens-app #chapter-text .verse {
+  margin-bottom: 12px;
+}
+/* Keep every line inside the evidence column, including unannotated verses. */
+html body.lens-app #chapter-text .verse-body {
+  grid-template-columns: 1.25rem minmax(0, 1fr);
+  gap: 4px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0;
+}
+html body.lens-app #chapter-text .verse-num {
+  width: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 44px;
+  padding: 4px 0;
+  color: var(--lens-muted);
+  font: 500 .6875rem/1.6 var(--ui-font, Inter, sans-serif);
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 2px;
+}
+html body.lens-app #chapter-text .verse-num .verse-bookmark-indicator {
+  display: block;
+  flex: none;
+  width: 12px;
+  height: 12px;
+  fill: var(--lens-copper);
+  stroke: var(--lens-copper);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+html body.lens-app #chapter-text .atlas-evidence-marker {
+  top: 0;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: .5625rem;
+}
+/* The outline surrounds the count; the full 44px button remains tappable. */
+html body.lens-app #chapter-text .atlas-evidence-marker::after {
+  content: '';
+  position: absolute;
+  inset: 14px 13px;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  pointer-events: none;
+}
+html body.lens-app #chapter-text .verse.lens-active-verse .verse-num {
+  color: var(--lens-copper);
+}
+body.lens-app #lensInspector.lens-inspector {
+  padding-left: clamp(22px, 2.5vw, 34px);
+}
+body.lens-app #lensInspector .lens-inspector-header {
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding-bottom: 18px;
+}
+body.lens-app #lensInspector .lens-inspector-title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -.035em;
+}
+body.lens-app #lensInspector.atlas-verse-margin {
+  border-left-color: var(--lens-copper);
+}
+body.lens-app #lensInspector.atlas-verse-margin .lens-inspector-header {
+  border-bottom-color: var(--lens-copper);
+}
+body.lens-app #lensInspector .lens-inspector-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+body.lens-app #lensInspector .lens-evidence h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+}
+body.lens-app #lensInspector :is(.lens-evidence p, .lens-note-editor, .lens-evidence summary) {
+  font-family: var(--ui-font, Inter, sans-serif);
+}
+body.lens-app :is(#lensInspector, #lensComparison) .lens-evidence :is(blockquote, q) {
+  font-style: normal;
+}
+body.lens-app #lensInspector .lens-note-editor h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+html body.lens-app .atlas-reader-help {
+  margin: -8px 0 20px;
+  color: var(--lens-muted);
+  font: 400 .8125rem/1.6 var(--ui-font, "Inter", system-ui, sans-serif);
+}
+
+@media (max-width: 1100px) and (min-width: 761px) {
+  body.lens-app .lens-reading-layout { gap: 28px; }
+  body.lens-app #lensInspector.lens-inspector { padding-left: 22px; }
+}
+@media (max-width: 760px) {
+  body.lens-app #lensReadingBar.lens-reading-bar { padding-block: 12px; margin-bottom: 18px; }
+  body.lens-app #chapter-text .chapter-heading-row {
+    margin-bottom: 12px;
+    padding-bottom: 14px;
+  }
+  body.lens-app #chapter-text .atlas-passage-heading { flex-wrap: nowrap; gap: 6px; }
+  html body.lens-app #chapter-text .atlas-passage-heading .passage-heading-picker { gap: 18px; }
+  body.lens-app #chapter-text .atlas-chapter-mark { padding-left: 18px; }
+  body.lens-app #chapter-text .atlas-chapter-number { font-size: 2.5rem; }
+  body.lens-app #chapter-text .atlas-reader-collection { margin-bottom: 8px; }
+  body.lens-app #chapter-text .atlas-passage-heading .passage-description { margin-top: 10px; font-size: .8125rem; }
+  html body.lens-app #chapter-text .verse { margin-bottom: 10px; }
+  html body.lens-app #chapter-text .verse-body {
+    grid-template-columns: 1.25rem minmax(0, 1fr);
+    gap: 4px;
+    font-size: 1.0625rem;
+    line-height: 1.85;
+  }
+  html body.lens-app #chapter-text .verse-num { width: 1.25rem; min-width: 1.25rem; }
+  html body.lens-app .atlas-reader-help { margin-bottom: 14px; }
+  body.lens-app #lensInspector.lens-inspector { padding-left: 0; }
+  body.lens-app #lens-inspector-sheet > #lensInspector.lens-inspector {
+    padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px));
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  body.lens-app #chapter-text .atlas-evidence-marker {
+    transition: border-color 160ms ease, background-color 160ms ease;
+  }
+}
+@media (forced-colors: active) {
+  html body.lens-app #chapter-text .atlas-evidence-marker[aria-pressed="true"] {
+    outline: 2px solid Highlight;
+  }
+}
+/*  atlas-explore.css  *//* Native horizontal collections: a complete illustrated feature for every topic. */
+html body.lens-app #explore-view.atlas-explore { padding-top:clamp(20px,3vw,40px); }
+html body.lens-app #explore-view.atlas-explore :is(h1,h2) {
+  font-weight:500; letter-spacing:-.035em; text-wrap:balance;
+}
+html body.lens-app #explore-view .atlas-explore-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin:0 0 26px; }
+html body.lens-app #explore-view .atlas-explore-eyebrow { display:block; color:var(--lens-copper); font:600 .625rem/1.6 var(--lens-ui-font,Inter,system-ui,sans-serif); letter-spacing:.13em; text-transform:uppercase; }
+html body.lens-app #explore-view .atlas-explore-heading h1 { margin:9px 0 0; font-size:clamp(2.3rem,4.6vw,3.7rem); line-height:1.12; }
+html body.lens-app #explore-view .atlas-explore-heading > p { flex:0 1 19rem; margin:0 0 2px; color:var(--lens-muted); font-size:.9375rem; line-height:1.65; }
+html body.lens-app #explore-view .atlas-explore-tabs {
+  display:flex; gap:8px; width:100%; min-width:0; margin:0 0 14px; padding:4px 2px 8px;
+  overflow-x:auto; overflow-y:hidden; overscroll-behavior-x:contain; scrollbar-width:none;
+  scroll-padding-inline:10px; border:0;
+}
+html body.lens-app #explore-view .atlas-explore-tabs::-webkit-scrollbar,
+html body.lens-app #explore-view .atlas-explore-gallery::-webkit-scrollbar { display:none; }
+html body.lens-app #explore-view .atlas-explore-tab {
+  flex:0 0 auto; width:max-content; min-width:max-content; max-width:none; min-height:44px;
+  margin:0; padding:10px 15px;
+  font:500 .8125rem/1.4 var(--lens-ui-font,Inter,system-ui,sans-serif); white-space:nowrap;
+  overflow:visible; text-overflow:clip; cursor:pointer;
+}
+html body.lens-app #explore-view .atlas-explore-gallery {
+  display:flex; align-items:stretch; gap:14px; width:100%; min-width:0;
+  overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory;
+  overscroll-behavior-x:contain; scrollbar-width:none; border-radius:22px;
+}
+html body.lens-app #explore-view .atlas-explore-panel {
+  flex:0 0 100%; min-width:0; margin:0; padding:0; scroll-snap-align:start;
+  scroll-snap-stop:always; overflow:hidden; border-radius:22px;
+}
+html body.lens-app #explore-view .atlas-explore-feature {
+  display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); min-width:0;
+  min-height:440px; height:100%; overflow:hidden; border-radius:22px; background:var(--lens-surface);
+}
+html body.lens-app #explore-view .atlas-explore-visual { position:relative; min-width:0; min-height:400px; overflow:hidden; background:#b9a78e; }
+html body.lens-app #explore-view .atlas-explore-image { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
+html body.lens-app #explore-view .atlas-explore-copy { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; min-width:0; padding:clamp(24px,3.5vw,44px); }
+html body.lens-app #explore-view .atlas-explore-copy h2 { margin:12px 0 14px; color:var(--lens-ink); font-size:clamp(1.7rem,2.7vw,2.45rem); line-height:1.18; }
+html body.lens-app #explore-view .atlas-explore-copy > p { margin:0 0 17px; max-width:37ch; color:var(--lens-muted); font-size:.875rem; line-height:1.7; }
+html body.lens-app #explore-view .atlas-explore-action {
+  display:inline-flex; align-items:center; justify-content:flex-start; gap:8px; min-height:44px;
+  margin:0; padding:0; border:0; color:var(--lens-ink); font:600 .8125rem/1.5 var(--lens-ui-font,Inter,system-ui,sans-serif); text-decoration:none;
+}
+html body.lens-app #explore-view .atlas-explore-action > span { display:inline; width:auto; height:auto; margin:0; padding:0; border:0; border-radius:0; background:none; font-size:1rem; }
+html body.lens-app #explore-view .atlas-explore-action:hover { color:var(--lens-copper); text-decoration:underline; text-underline-offset:5px; }
+html body.lens-app #explore-view .atlas-explore-copy > .atlas-explore-related { margin:12px 0 0; max-width:39ch; font-size:.6875rem; line-height:1.9; }
+html body.lens-app #explore-view .atlas-explore-related :is(a,button) {
+  display:inline; width:auto; min-width:0; min-height:0; margin:0; padding:0; font:inherit; white-space:normal; text-decoration:underline; text-underline-offset:3px; cursor:pointer;
+}
+html body.lens-app #explore-view .atlas-explore-source { display:block; margin:13px 0 0; color:var(--lens-muted); font-size:.6875rem; line-height:1.6; }
+html body.lens-app #explore-view .atlas-explore-gallery-footer { display:grid; grid-template-columns:44px minmax(0,1fr) 44px; align-items:center; gap:12px; margin-top:12px; }
+html body.lens-app #explore-view .atlas-explore-position { min-width:0; margin:0; text-align:center; color:var(--lens-muted); font:500 .75rem/1.6 var(--lens-ui-font,Inter,system-ui,sans-serif); }
+html body.lens-app #explore-view .atlas-explore-position-label { color:var(--lens-ink); }
+html body.lens-app #explore-view .atlas-explore-step {
+  display:grid; place-items:center; flex:0 0 44px; width:44px; height:44px; min-width:44px; min-height:44px;
+  margin:0; padding:0; cursor:pointer;
+}
+html body.lens-app #explore-view .atlas-explore-step:disabled { opacity:.3; cursor:default; }
+html body.lens-app #explore-view .atlas-explore-studies { margin-top:44px; }
+html body.lens-app #explore-view.atlas-explore :is(a,button):focus-visible { outline:2px solid var(--lens-focus); outline-offset:3px; }
+html body.lens-app #explore-view .atlas-explore-tab:focus-visible { outline-offset:-2px; }
+@media (max-width:700px) {
+  html body.lens-app #explore-view.atlas-explore { padding-top:20px; }
+  html body.lens-app #explore-view .atlas-explore-heading { display:block; margin-bottom:19px; }
+  html body.lens-app #explore-view .atlas-explore-heading h1 { font-size:2.25rem; }
+  html body.lens-app #explore-view .atlas-explore-heading > p { margin-top:12px; max-width:35ch; font-size:.8125rem; }
+  html body.lens-app #explore-view .atlas-explore-heading > p br { display:none; }
+  html body.lens-app #explore-view .atlas-explore-tabs { gap:3px; margin-bottom:10px; }
+  html body.lens-app #explore-view .atlas-explore-tab { padding:10px 13px; font-size:.8125rem; }
+  html body.lens-app #explore-view .atlas-explore-gallery { gap:12px; border-radius:20px; }
+  html body.lens-app #explore-view .atlas-explore-panel { border-radius:20px; }
+  html body.lens-app #explore-view .atlas-explore-feature { grid-template-columns:minmax(0,1fr); grid-template-rows:auto 1fr; min-height:0; border-radius:20px; }
+  html body.lens-app #explore-view .atlas-explore-visual { min-height:0; aspect-ratio:1.4; }
+  html body.lens-app #explore-view .atlas-explore-copy { justify-content:flex-start; padding:22px 21px 24px; }
+  html body.lens-app #explore-view .atlas-explore-copy h2 { max-width:19ch; margin:10px 0 12px; font-size:1.8rem; }
+  html body.lens-app #explore-view .atlas-explore-copy > p { margin-bottom:10px; font-size:.8125rem; line-height:1.7; }
+  html body.lens-app #explore-view .atlas-explore-copy > .atlas-explore-related { margin:10px 0 0; font-size:.6875rem; }
+  html body.lens-app #explore-view .atlas-explore-gallery-footer { margin-top:8px; }
+  html body.lens-app #explore-view .atlas-explore-studies { margin-top:34px; }
+}
+@media (max-width:350px) {
+  html body.lens-app #explore-view .atlas-explore-heading h1 { font-size:2.05rem; }
+  html body.lens-app #explore-view .atlas-explore-copy { padding:20px 18px 22px; }
+  html body.lens-app #explore-view .atlas-explore-copy h2 { font-size:1.6rem; }
+  html body.lens-app #explore-view .atlas-explore-position { font-size:.6875rem; }
+}
+@media (forced-colors:active) {
+  html body.lens-app #explore-view .atlas-explore-feature { border:1px solid CanvasText; }
+  html body.lens-app #explore-view .atlas-explore-tab[aria-selected=true] { outline:1px solid Highlight; outline-offset:-2px; }
+}
+
+/* Images keep the layout stable and never leave an unexplained blank card. */
+html body.lens-app #explore-view .atlas-explore-visual { position:relative; }
+html body.lens-app #explore-view .atlas-image-status {
+  position:absolute; inset:0; display:flex; flex-direction:column; gap:12px;
+  align-items:center; justify-content:center; padding:24px; text-align:center;
+  background:var(--lens-surface);
+}
+html body.lens-app #explore-view .atlas-image-status[hidden] { display:none; }
+html body.lens-app #explore-view .atlas-explore-visual:not([data-image-state=ready]) img { opacity:0; }
+html body.lens-app #explore-view .atlas-image-status button {
+  border:0; border-radius:999px; min-height:44px; padding:10px 20px;
+  background:var(--lens-link-soft); color:var(--lens-ink); font:inherit;
+}
+/*  place-story-refinements.css  *//* Place cards provide a real geographical preview before their quiet actions. */
+html body.lens-app #places-view .place-map-card { margin-top: 18px; }
+html body.lens-app #places-view .place-map-preview {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 16px;
+  background: #afc9ce;
+  color: #273f47;
+  text-align: center;
+}
+html body.lens-app #places-view .place-map-preview svg { display: block; width: 100%; height: auto; }
+.place-map-water { fill: #afc9ce; }
+.place-map-land { fill: #e5dfcd; stroke: #b7b8a6; stroke-width: .7; }
+.place-map-grid { fill: none; stroke: #607b75; stroke-opacity: .13; stroke-width: .8; }
+.place-map-compass { fill: #426168; stroke: #426168; stroke-width: 1.5; }
+.place-map-compass text { font: 11px var(--ui-font); stroke: none; }
+.place-map-halo { fill: #a05538; fill-opacity: .14; }
+.place-map-pin { fill: #a05538; stroke: #fff9ed; stroke-width: 3; }
+.place-map-name { fill: #273f47; font: 600 20px var(--ui-font); paint-order: stroke; stroke: #e9e8dc; stroke-width: 5px; stroke-linejoin: round; }
+html body.lens-app #places-view .place-map-actions { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+html body.lens-app #places-view .place-map-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 6px 0;
+  border: 0;
+  border-radius: 6px;
+  color: var(--lens-ink);
+  font: 500 .8125rem/1.4 var(--ui-font);
+}
+html body.lens-app #places-view .place-map-action svg { width: 15px; height: 15px; }
+html body.lens-app #places-view .place-map-action:hover { color: var(--lens-copper); }
+html body.lens-app #places-view .place-map-context { margin: 0; color: var(--lens-muted); font: .6875rem/1.5 var(--ui-font); }
+html body.lens-app #places-view .place-map-unavailable { display: grid; min-height: 130px; place-items: center; color: var(--lens-muted); background: var(--lens-surface); font: .875rem var(--ui-font); }
+html body.lens-app #places-view .place-location-details { padding: 0 0 12px; border-bottom: 1px solid var(--lens-rule); margin-bottom: 14px; }
+html body.lens-app #places-view .place-location-details h3 { font: 600 .875rem var(--ui-font); }
+html body.lens-app #places-view .place-location-details p { margin: 6px 0; }
+html body.dark #places-view .place-map-preview { filter: brightness(.86) saturate(.8); }
+html body.lens-app .story-summary :is(.person-chip, .location-chip) { text-underline-offset: .16em; }
+@media (min-width: 761px) { html body.lens-app #places-view .place-map-card { max-width: 720px; } }
+@media (forced-colors: active) { html body.lens-app #places-view .place-map-preview { border: 1px solid ButtonText; } }
+    }
+    @layer priority {/*  fonts.css priorities  *//*  style.css priorities  */@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none}}.related-verse{font:1rem/1.6 var(--ui-font);color:var(--ink)}@media(max-width:650px){.reader-toolbar select{min-width:0}}
+@media(max-width:850px){
+ input,textarea,select,#search,.research-search input,.chat-form textarea,.reader-toolbar select{font-size:1rem}
+}
+@media(max-width:500px){.reader-question-form input{font-size:1rem}}
+.reader-question-form input{font-size:1rem}
+.reader-toolbar select{font-size:.875rem}
+.verse{padding-left:40px}.category-filter:disabled{background:transparent;color:var(--muted)}
+.verse,.with-comparisons .verse{padding:14px 0 14px 36px}.reader-settings .reader-actions{justify-content:flex-start}
+@media(max-width:600px){
+ .verse,.with-comparisons .verse{padding:12px 0}
+}
+.category-filter,.category-filter:disabled,.category-filter[aria-pressed="false"]{background:transparent}
+.comparison-status .category-filter .filter-icon{border:1px solid var(--green)}
+.comparison-status .category-filter[aria-pressed="true"] .filter-icon{border-color:var(--brand-accent);border-width:2px}
+.comparison-status .category-filter[aria-pressed="false"] .filter-icon,.comparison-status .category-filter:disabled .filter-icon{border-color:var(--green)}
+@media(hover:hover){
+ .comparison-status .category-filter:hover:not(:disabled) .filter-icon{background:var(--control-hover,#172f48);border-color:rgba(56,189,248,.67)}
+}
+body .comparison-status .category-filter .filter-icon{background:var(--control-bg);color:var(--control-text);border:1px solid var(--control-border)}
+body .comparison-status .category-filter[aria-pressed="true"]:not(:disabled) .filter-icon{background:var(--control-active);color:var(--control-selected-text,#b9eaff);border-color:rgba(56,189,248,.7)}
+body .comparison-status .category-filter[aria-pressed="false"] .filter-icon{background:var(--control-bg)}
+body .chapter-text,body .chapter-text.with-comparisons{padding:25px 28px 8px}
+body .chapter-heading-row .comparison-dock{height:auto}
+body .chapter-heading-row .category-filter{background:var(--control-bg)}
+body .chapter-heading-row .category-filter[aria-pressed="true"]{background:var(--control-active)}
+body .chapter-heading-row .category-filter:disabled{background:var(--control-bg);color:var(--control-text);border:1px solid var(--control-border)}
+body .verse,body .with-comparisons .verse{padding:0 0 18px}
+body #comparison-status .category-filter{background:transparent;border:0}
+body #comparison-status .category-filter .filter-icon{background:linear-gradient(to bottom,var(--tone-start,#475569),var(--tone-fade,#334155));color:var(--tone-ink,#fff);border:1px solid color-mix(in srgb,var(--tone-bright,#94a3b8) 65%,transparent)}
+body #comparison-status .category-filter[aria-pressed="true"]:not(:disabled) .filter-icon{border:2px solid var(--tone-bright)}
+body button.comparison-tab:not(.context-tag),body .source-icon:is(.translation,.violation,.question,.science,.history,.contradictions),body .verse-citation[data-tone]{background:linear-gradient(to bottom,var(--tone-start,#475569),var(--tone-fade,#334155));color:var(--tone-ink,#fff);border-color:var(--tone-bright,#94a3b8)}
+body button.comparison-tab.context-tag{background:transparent;color:var(--tone-bright);border-color:var(--tone-start)}
+body button.comparison-tab.context-tag[aria-pressed="true"]{background:linear-gradient(to bottom,var(--tone-start),var(--tone-fade))}
+body :is(h1,h2,h3,h4,h5,h6){font-family:var(--ui-font)}
+body .verse-citation[data-tone],body .verse-citation,body .ref-button,body .glass-pill{
+ background:radial-gradient(circle at 50% 0%,rgba(var(--theme-rgb),.4) 0%,rgba(15,23,34,.7) 100%);
+ background-color:#0f1722;
+ border:1px solid rgba(var(--theme-rgb),.65);
+ box-shadow:0 0 16px rgba(var(--theme-rgb),.35),inset 0 1px 1.5px rgba(255,255,255,.5),inset 0 -1px 2px rgba(0,0,0,.4);
+ color:#fff
+}
+body .verse-citation[data-tone]:hover,body .glass-pill:hover{border-color:rgba(var(--theme-rgb),.9);box-shadow:0 0 20px rgba(var(--theme-rgb),.45),inset 0 1px 1.5px rgba(255,255,255,.55),inset 0 -1px 2px rgba(0,0,0,.4)}
+body #comparison-status .category-filter .filter-icon{background:linear-gradient(to bottom,rgb(var(--theme-rgb)),color-mix(in srgb,rgb(var(--theme-rgb)) 50%,white));border-color:rgba(var(--theme-rgb),.8)}
+body.dark #comparison-status .category-filter .filter-icon{background:linear-gradient(to bottom,rgb(var(--theme-rgb)),color-mix(in srgb,rgb(var(--theme-rgb)) 50%,black))}
+body #comparison-status .category-filter[aria-pressed="true"]:not(:disabled) .filter-icon{border-color:rgba(var(--theme-rgb),.95)}
+body:not(.dark) :is(.verse-citation,.ref-button,.glass-pill){background:linear-gradient(rgba(var(--theme-rgb),.10),rgba(255,255,255,.85));background-color:#f7faff;color:var(--ink);box-shadow:0 2px 10px rgba(var(--theme-rgb),.12),inset 0 1px 2px #fff}
+body .verse-comparison h3,body #reader-settings-title,body #passage-picker-title{font-family:var(--ui-font)}
+body #reader-question-host .reader-question-form input{font-size:.875rem}
+body .verse.selected{background:rgba(255,255,255,.08)}
+body .verse.selected .verse-num{background:transparent}
+body .chapter-bottom,body .reader-footnote,body .study-library{display:none}
+body .comparison-dock{height:auto}
+body .verse-num,body .verse.selected .verse-num{color:var(--muted);text-shadow:none}
+body .verse:has(.verse-body.verse-bookmarked){
+ background:radial-gradient(ellipse at 50% 30%,rgba(var(--theme-rgb),.28) 0%,rgba(12,17,26,.85) 90%);background-color:#0c111a;padding:16px 18px
+}
+body:not(.dark) .verse:has(.verse-body.verse-bookmarked){background:radial-gradient(ellipse at 50% 0%,rgba(var(--theme-rgb),.12),rgba(255,255,255,.82) 85%);background-color:#f7faff}
+body nav button.active{background-color:var(--control-active);box-shadow:0 0 14px rgba(56,189,248,.22),inset 0 1px 2px #ffffff66}
+body .chapter-bookmarks{background:transparent;box-shadow:none}
+body .verse,body .with-comparisons .verse{padding:16px 18px}
+body #comparison-status .filter-badge,body .chapter-bookmarks .filter-badge{background:#ff3b30;color:#fff}
+body .message-body .verse-link,body .message-body .verse-link:hover,body .message-body .verse-link:focus-visible{background:none;box-shadow:none;color:var(--green)}
+body .chat-summary-sources>[hidden]{display:none}
+body>header nav button{border:0;border-radius:8px;background:transparent;box-shadow:none}
+body>header nav button:hover{background:rgba(255,255,255,.08)}
+body:not(.dark)>header nav button:hover{background:rgba(16,44,72,.08)}
+body #chapter-text .verse-num{background:transparent}
+body .reader-footnote{display:block}
+body #chapter-text .verse{padding:8px 10px}
+body #chapter-text .verse.selected{background:radial-gradient(ellipse at 50% 30%,rgba(var(--theme-rgb),.28) 0%,rgba(12,17,26,.85) 90%);background-color:#0c111a}
+body:not(.dark) #chapter-text .verse.selected{background:radial-gradient(ellipse at 50% 0%,rgba(var(--theme-rgb),.12),rgba(255,255,255,.82) 85%);background-color:#f7faff}
+body button[data-edit-verse-note],body button[data-edit-marked-note]{color:#eab308;border-color:rgba(234,179,8,.5);background:rgba(234,179,8,.12);box-shadow:0 0 10px rgba(234,179,8,.18)}
+body .text-size-setting label{display:flex}
+body.compare-active .comparison-dock{height:auto}
+body.compare-active #comparison-status .category-filter{background:rgba(var(--theme-rgb,100,116,139),.1)}
+body #chapter-text .passage-heading-picker{padding:0;border:0;border-radius:0;background:none;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;color:inherit;font:inherit}
+body.read-view .chapter-bottom{display:flex}
+body .comparison-dock,body.compare-active .comparison-dock,html.native-ios body.compare-active .comparison-dock{height:auto}
+body .comparison-dock .category-filter,body.compare-active #comparison-status .category-filter{background:none}
+body #comparison-status .filter-copy,body #comparison-status .filter-badge,body .comparison-dock-toggle{display:none}
+body #comparison-status .category-filter .filter-icon{border:0;background:transparent}
+body .note-actions .note-icon{background:transparent;border:0;box-shadow:none}
+body #chapter-text,body #chapter-text.with-comparisons{padding:12px 12px 8px}
+body #chapter-text .verse{padding:6px 0;border:0}
+body .note-actions .note-icon,body .note-actions .note-icon[data-edit-marked-note],body .note-actions .note-icon[data-edit-verse-note],body .note-actions .note-icon[data-delete-note]{color:var(--control-text,#7dd3fc);background:transparent;border:0;box-shadow:none}
+body .comparison-evidence[hidden],body #chapter-text .comparison-panel>.comparison-details{display:none}
+body .summary-inspect{border:0;background:transparent;box-shadow:none}
+body .comparison-dock,body.compare-active .comparison-dock,html.native-ios body.compare-active .comparison-dock{height:auto}
+body #chapter-text .passage-heading h2,body #chapter-text .passage-heading-picker{ text-shadow:0 0 4px rgba(200,238,255,.6),0 0 13px rgba(125,211,252,.5),0 0 28px rgba(125,211,252,.32) }
+body:not(.dark) #chapter-text .passage-heading h2,body:not(.dark) #chapter-text .passage-heading-picker{text-shadow:0 0 4px #38bdf855,0 0 14px #0284c744,0 0 24px #0284c72b}
+body #comparison-status .category-filter .filter-icon{background:rgb(var(--theme-rgb,148,163,184))}
+body .comparison-pill-expand{backdrop-filter:none;-webkit-backdrop-filter:none;border:0;background:transparent;box-shadow:none}
+body .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon{background:transparent}
+body .comparison-dock:not(.pill-expanded) #comparison-status .category-filter .filter-icon{border:0}
+body .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon{color:rgb(var(--theme-rgb,148,163,184));border:0}
+body>header nav button{color:var(--control-text,var(--ink))}
+body>header nav button svg{color:inherit}
+body .comparison-dock.pill-expanded #comparison-status .category-filter,
+body .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon,
+body.dark .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon{background:transparent;border:0;box-shadow:none;backdrop-filter:none;filter:none}
+body:not(.dark) .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon{color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,#172033)}
+body .comparison-tabs .comparison-tab:not(.context-tag){border:0;background:transparent;box-shadow:none;filter:none}
+body .comparison-tabs .context-tag{border:0;background:rgb(var(--theme-rgb,148,163,184));box-shadow:none}
+body .comparison-tabs .context-tag[data-context-local="true"]{box-shadow:0 0 7px rgba(var(--theme-rgb),.65)}
+body .preview-verse-actions button{background:transparent;border:0;box-shadow:none;backdrop-filter:none}
+body [hidden]{display:none}
+body .brand .mark{color:inherit}
+body #chapter-text .comparison-tabs .comparison-tab:not(.context-tag){color:rgb(var(--theme-rgb,148,163,184))}
+body:not(.dark) #chapter-text .comparison-tabs .comparison-tab:not(.context-tag){color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,#172033)}
+body #chapter-text [data-summary-toggle][aria-expanded="false"] .summary-inspect{display:none}
+body #chapter-text .summary-expand{border:0;background:transparent;box-shadow:none;backdrop-filter:none}
+body :is(#evidence-view,#chat-view) h2,body :is(#evidence-view,#chat-view) h3{font-family:var(--ui-font)}
+body :is(#evidence-view,#chat-view) [data-summary-toggle][aria-expanded="false"] .summary-inspect{display:none}
+body :is(#evidence-view,#chat-view) .summary-expand{border:0;background:transparent;box-shadow:none;backdrop-filter:none}
+body :is(#evidence-view,#chat-view) .comparison-panel>.comparison-details{display:none}
+body #evidence-view .comparison-tab{border:0;background:transparent;box-shadow:none;color:rgb(var(--theme-rgb))}
+body:not(.dark) #evidence-view .comparison-tab{color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,#172033)}
+body #marked-filter-dialog h2{font-family:var(--ui-font)}
+body #chat-view .chat-message.assistant{background:none;box-shadow:none}
+body .verse-body,body .marked-verse-text,body .comparison-side q,body .verse-preview blockquote{font-family:var(--verse-font-family,var(--ui-font))}
+body .comparison-summary,body :is(#chapter-text,#evidence-view,#chat-view) .comparison-summary :is(h3,p,.message-body,.chat-reasoning),body .comparison-evidence,body .comparison-context-content{font-family:var(--category-font-family,var(--ui-font))}
+body .comparison-summary,body #chapter-text .comparison-cell .comparison-summary,body .study-tldr .comparison-summary,body .preview-summary,body .citation-summary{font-size:.95rem;text-shadow:none}
+body .comparison-summary :is(p,.message-body,.chat-reasoning){font-size:inherit}
+body #chapter-text .passage-heading h2,body #chapter-text .passage-heading-picker,body #comparison-context-title{font-family:var(--ui-font)}
+body #reader-settings .cloud-sync-settings h3,body #reader-settings .release-settings h3{font-family:var(--ui-font)}
+.stories-view[hidden],#reader-layout[hidden]{display:none}
+body .story-card h3{font-family:var(--ui-font)}
+.commandments-disclaimer{font-size:.8rem}
+body .commandment-card h2{font:600 1.15rem/1.5 var(--ui-font)}
+body .commandment-lens h3{font:600 .8rem/1.5 var(--ui-font)}
+body #commandments-filter-heading{font:600 1.1rem/1.5 var(--ui-font)}
+
+body #commandments-heading{font:600 1.75rem/1.5 var(--ui-font)}
+body #evidence-view .marked-theme-heading h3{font-family:var(--ui-font)}
+body #prophecies-view .prophecy-toggle{background:rgba(var(--theme-rgb),.12)}
+body #prophecies-view .prophecy-toggle[aria-pressed="true"]{background:rgba(var(--theme-rgb),.26)}
+body #prophecies-view .prophecy-passage{background:rgba(var(--theme-rgb),.12)}
+body #prophecy-filters .prophecy-facet{border:1px solid rgba(var(--theme-rgb),.4);border-radius:8px;background:rgba(var(--theme-rgb),.09)}
+body #prophecy-filters .prophecy-facet[aria-pressed="true"]{border-color:rgba(var(--theme-rgb),.95);background:rgba(var(--theme-rgb),.3)}
+body #prophecy-filters .prophecy-facet:hover{border-color:rgba(var(--theme-rgb),.8)}
+body :is(#prophecies-view,#prophecy-filters),body :is(#prophecies-view,#prophecy-filters) :is(h1,h2,h3,h4,h5,h6){font-family:var(--ui-font)}
+body :is(#characters-view,.character-sheet) :is(h1,h2,h3,h4,h5,h6){font-family:var(--ui-font)}
+body #characters-view .characters-women{background:rgba(var(--theme-rgb),.15)}
+body #characters-view .characters-women[aria-pressed="true"]{background:linear-gradient(145deg,#be397b,#831843)}
+body #navigation-heading{font:600 1.2rem/1.5 var(--ui-font)}
+body #characters-view .characters-women{color:#fff;border-color:#ec4899;background:linear-gradient(145deg,#a92d69,#701a3e)}
+body #characters-view .characters-women:is(:focus,:focus-visible){outline-color:#ec4899}
+body>header nav [aria-current="page"]{background:transparent;box-shadow:none}
+
+.character-card .character-summary-toggle{background:transparent;box-shadow:none}
+.character-card-details[hidden]{display:none}
+body :is(button,.glass-pill,.chip,.agreement,.story-theme,.character-story-chip,.character-relative-chip,.location-chip,.person-chip){box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+body :is(.glass-summary,.comparison-summary,.assessment,:is(.character-sheet-body>p,.character-profile-biography),.character-summary,.card,.story-card,.character-card,.commandment-card,.prophecy-card,.timeline-card,.timeline-event-card,.saved-passage-card,.passage,.analysis-box,.method-grid article){
+ background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,99,102,241),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,99,102,241),var(--surface-base));
+ box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;
+}
+body :is(.character-card,.story-card,.commandment-card,.prophecy-card,.timeline-card,.timeline-event-card,.comparison-summary,.passage,.analysis-box,.assessment,.method-grid article) :is(h2,h3,h4),body .character-sheet :is(h2,h3,h4){font-family:var(--ui-font)}
+body .character-card .character-summary{background:transparent}
+body :is(.character-verses a,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference){min-height:34px;padding:6px 12px;border:1px solid rgba(var(--theme-rgb,99,102,241),.5);border-radius:24px;background:rgba(var(--theme-rgb,99,102,241),var(--surface-base));color:var(--ink)}
+body :is(.summary-citations,.chat-summary-sources,.marked-citations) :is(a,button),body .citation-chip{background:rgba(var(--theme-rgb,99,102,241),var(--surface-base));box-shadow:none}
+body :is(.timeline-passage,.character-name){background:none;border:0;color:var(--ui-link);text-decoration:none}
+body :is(p,q,blockquote,.verse-body,.message-body,.comparison-summary-text) :is(a,button[data-cite],.location-chip,.person-chip),body :is(.location-chip,.person-chip){border:0;border-radius:0;background:none;box-shadow:none;color:var(--ui-link)}
+body #chat-input{outline:none}
+body :is(.commandment-facet-toggle,.prophecy-toggle,.prophecy-facet,.story-theme,.character-badge,.character-story-chip,.character-relative-chip,.characters-filter,.characters-women,.glass-pill,.chip){min-height:32px;padding:5px 10px;border-radius:999px;background:rgba(var(--theme-rgb,99,102,241),var(--surface-base));color:var(--ink)}
+body :is(.commandment-facet-toggle,.prophecy-toggle,.prophecy-facet)[aria-pressed=true]::before,body :is(.commandment-facet-toggle,.prophecy-toggle,.prophecy-facet)[aria-pressed=true]::after{content:none}
+body :is(button[aria-pressed=true],button[aria-selected=true],.tabs button.active,.passage-number:has(input:checked) span){background:rgba(var(--theme-rgb,99,102,241),.32);border-color:rgb(var(--theme-rgb,99,102,241));color:var(--ink);box-shadow:none}
+body .character-more-passages{background:none;border:0;color:var(--ui-link)}
+body.merge-picker-inputs .passage-number input:focus-visible{outline:none}
+body.merge-picker-inputs .passage-number input:focus-visible+span{outline:2px solid var(--focus-blue)}
+body :is(.summary-expand,.summary-inspect),body #chapter-text :is(.summary-expand,.summary-inspect){background:none}
+body .primary{background:#1263bc;color:#fff}
+body.dark .primary{background:#287ac8;color:#fff}
+body :is(#reset,#stories-reset,#prophecy-reset,#commandments-reset,#commandments-clear){background:none;color:var(--ui-link)}
+body :is(.icon,[data-navigation-close],#atlas-close,#commandments-close,#prophecy-close){background:none}
+body :is(.icon svg,header nav svg,.navigation-grid svg){filter:none;transform:none}
+body .passage-picker-trigger{width:48px;height:48px;min-height:48px;min-width:48px}
+body dialog{background:var(--panel);border-radius:24px;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+body dialog::backdrop{backdrop-filter:none;-webkit-backdrop-filter:none}
+body :is(.notes-area,#verse-note-text,#passage-note,#study-note-title,#verse-note-title-input,#passage-note-title-input){font-family:var(--ui-font)}
+body :is(button,a,input,select,textarea,summary,[tabindex]):focus-visible,body :is(input,textarea,select):focus{outline:2px solid var(--focus-blue);outline-offset:2px;box-shadow:none}
+body :is(.characters-search-box,#chat-form):focus-within{outline:2px solid var(--focus-blue);outline-offset:2px;box-shadow:none}
+body .characters-search-box input:focus,body #chat-form input:focus{outline:none}
+body #chat-view .chat-message.user{background:#1263bc}
+body #chat-view .chat-answer{background:var(--panel)}
+body #chat-view .chat-typing{background:var(--panel)}
+@media(max-width:600px){
+ body :is(.commandment-facet-toggle,.prophecy-toggle,.prophecy-facet,.story-theme,.character-badge,.character-story-chip,.character-relative-chip,.characters-filter,.characters-women,.glass-pill,.chip,.secondary,.primary,.character-passage,.character-verses a,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.character-more-passages,.icon,summary){min-height:44px}
+ body dialog{inset:auto 0 0;margin:0 auto;width:100%;max-width:100%;border-radius:24px 24px 0 0}
+}
+body :is(.character-sheet-body>p,.character-profile-biography){background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,99,102,241),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,99,102,241),var(--surface-base))}
+body{background:var(--bg)}
+body *{text-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
+body>header{background:var(--panel)}
+body>header nav :is(button,svg){filter:none}
+body input[type=search]{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='m13 13 5 5'/%3E%3C/svg%3E")}
+body .characters-search-box input[type=search]{background-image:none}
+body span.character-badge{background:none;border-radius:0;color:var(--muted)}
+body *{filter:none}
+body .verse-preview,body.dark .verse-preview{background:var(--panel)}
+body input[type=search]{background-repeat:no-repeat;background-position:13px center;background-size:20px 20px}
+body button[aria-label^="Close"],body [data-close-comparison]{background:none}
+body dialog::backdrop{background:#08111c99}
+body .context-preview{background:var(--panel)}
+body .verse:has(.verse-body.verse-bookmarked){background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,234,179,8),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,234,179,8),var(--surface-base))}
+@media(max-width:600px){
+ body button{min-height:44px;min-width:44px}
+ body #chapter-text .comparison-tab,body #evidence-view .comparison-tab{width:44px;height:44px;min-width:44px;min-height:44px}
+ body #chapter-text .comparison-tab svg,body #evidence-view .comparison-tab svg{width:20px;height:20px}
+ body :is(p,q,blockquote,.verse-body,.message-body) :is(button[data-cite],.location-chip,.person-chip){min-height:0;min-width:0}
+}
+body .leaflet-tooltip{opacity:1}
+body>header nav [aria-current=page]{background:rgba(99,102,241,.18)}
+body #chapter-text .passage-heading h2,body #chapter-text .passage-heading-picker,body:not(.dark) #chapter-text .passage-heading h2,body:not(.dark) #chapter-text .passage-heading-picker{ text-shadow:none }
+body:not(.dark) .verse:has(.verse-body.verse-bookmarked){background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,234,179,8),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,234,179,8),var(--surface-base))}
+@media(max-width:600px){
+ body #chat-view :is(.summary-expand,.summary-inspect),body #evidence-view :is(.summary-expand,.summary-inspect),body #chapter-text :is(.summary-expand,.summary-inspect){width:44px;height:44px;min-width:44px;min-height:44px}
+ body #marked-filter-open,body #chapter-text .passage-heading-picker,body #prev-bottom,body #next-bottom,body #atlas-close{min-height:44px}
+}
+body #verse-note-dialog :is(h2,h3,label,input,textarea){font-family:var(--ui-font)}
+body #chat-view .summary-expand,body #chapter-text .summary-expand,body #evidence-view .summary-expand{color:var(--muted)}
+
+body span.character-badge{min-height:0;padding:0}
+body :is(a,a:hover,a:focus,a:visited,button:is(.location-chip,.person-chip),button[data-cite]),body :is(#reset,#stories-reset,#prophecy-reset,#commandments-reset,#commandments-clear){text-decoration:none}
+body .passage-picker-trigger,body #chat-view #clear-chat{width:58px;height:58px;min-width:58px;min-height:58px;padding:16px}
+body .passage-picker-trigger{padding:14px}
+body #characters-view .characters-women,body.dark #characters-view .characters-women{background:#fce1ed;color:#702448;border-color:#c98ba9}
+body #characters-view .characters-women[aria-pressed=true],body.dark #characters-view .characters-women[aria-pressed=true]{background:#f5bcd5;color:#58203b;border-color:#a6537c}
+body #navigation-sheet .navigation-grid button{border-radius:18px}
+body #atlas-map .maplibregl-ctrl-group button{background:#fff}
+body #atlas-map .maplibregl-ctrl-attrib a{color:#234d70}
+body .dock-pagination button{background:var(--panel)}
+body .comparison-dock,body.compare-active .comparison-dock,html.native-ios body.compare-active .comparison-dock{background:var(--panel)}
+@media(max-width:600px){
+ body :is(.summary-citations,.chat-summary-sources,.marked-citations,.story-references) :is(a,button),body #chat-view .chat-summary-sources :is(a,button),body #chapter-text .summary-citations :is(a,button){min-height:44px}
+}
+body.navigation-colored>header nav :is(button,button:hover,button.active,button[aria-current=page]){background:transparent;border-color:transparent;box-shadow:none;color:var(--nav-color,#1972b5)}
+body.navigation-colored>header nav button[aria-current=page] svg{filter:drop-shadow(0 0 4px currentColor)}
+body.dialog-scroll-locked{overflow:hidden}
+body .stories-view{padding-inline:0}
+body.read-view .comparison-dock,body.read-view.compare-active .comparison-dock,html.native-ios body.read-view .comparison-dock{padding:0;border:0;background:none;box-shadow:none;backdrop-filter:none}
+body.read-view .comparison-dock #comparison-status{display:none}
+body.read-view .dock-pagination button{background:var(--panel)}
+body.read-view.book-picker-floating .passage-picker-trigger{position:fixed;left:50%;right:auto;top:auto;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%)}
+body #chat-view .chat-message.assistant{border:0;overflow:visible}
+body #chat-view .chat-message.assistant .chat-answer{border-radius:22px 22px 22px 6px;overflow:visible;border:0}
+body #chat-view .chat-message.assistant::before{content:none}
+body #characters-search{color:var(--ink)}
+body .stories-list{max-height:none;overflow:visible}
+body.read-view .dock-pagination button{flex:0 0 58px;width:58px;max-width:58px;min-width:58px;height:58px;border-radius:50%}
+body.read-view .comparison-dock,html.native-ios body.read-view .comparison-dock{transform:translate(-50%,0)}
+body #marked-context[hidden]{display:none}
+body #evidence-view .marked-category-content>article{margin:0}
+html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip){border:0;box-shadow:none}
+html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):is(:hover,:focus,:focus-visible){outline:none}
+html body :is(a,.verse-citation[data-tone],.verse-citation,.verse-link,.location-chip,.person-chip,.character-passage,.commandment-passage,.prophecy-passage,.story-passage,.story-reference,.timeline-passage,.citation-chip,.character-story-chip,.character-relative-chip):focus-visible{text-decoration:none;text-decoration-thickness:2px;text-underline-offset:4px}
+body #chapter-text .verse:has(.verse-body.verse-bookmarked){background:transparent;background-color:transparent;border:0;border-radius:0;box-shadow:none}
+body .highlight-color-picker button{background:var(--swatch,transparent);box-shadow:none}
+body .highlight-menu-heading button{background:transparent;box-shadow:none}
+body .highlight-menu-colors button{background:var(--swatch);box-shadow:none}body .highlight-menu-actions button{background:var(--soft);box-shadow:none}
+body #chapter-text .comparison-panel[data-tone="bookmark"],body #chapter-text .verse-comparison[data-tone="bookmark"] .comparison-summary{border:0;box-shadow:none;background:transparent}
+html body .character-story-chip{border-radius:12px;padding:10px 14px}
+
+body #evidence-view a.category-page-link{border-bottom:1px solid var(--line)}
+body.highlight-selecting .passage-picker-trigger{visibility:hidden;pointer-events:none}
+html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]){border:0;outline:none;box-shadow:none;background:transparent}
+html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]):focus-visible{outline:none;box-shadow:none;text-decoration:none;text-decoration-thickness:2px;text-underline-offset:5px}
+body .context-citations [hidden]{display:none}
+body .person-section-panel[hidden]{display:none}
+html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]){border:1px solid var(--line);outline:none;box-shadow:none;text-decoration:none}
+html body :is(button[aria-label^="Close"],[data-navigation-close],[data-marked-filter-close]):focus-visible{outline:none;box-shadow:none;text-decoration:none;background:var(--soft)}
+html body :is(a,button,summary):is(:link,:visited,:hover,:focus,:focus-visible),html body :is(a,summary){text-decoration:none}
+body .person-section-toggle{border:0;border-radius:12px;background:transparent;box-shadow:none}
+body .person-section-toggle[aria-expanded=true]{background:var(--soft);color:var(--ui-link)}
+html body .person-section-toggle:disabled{color:#626a75;opacity:1;background:transparent;border:0;box-shadow:none}
+html body #characters-view .characters-search-box:focus-within{outline:none;box-shadow:none}
+html body .character-relative-chip.character-relative-female{color:#f6a4ce}
+body .person-section-toggle[aria-expanded=true] .person-section-icon{filter:drop-shadow(0 0 4px currentColor) drop-shadow(0 0 9px currentColor)}
+body .person-section-toggle[aria-expanded=true] .person-section-label{text-shadow:0 0 4px currentColor,0 0 10px currentColor}
+body.read-view .passage-picker-trigger{width:72px;height:72px;min-width:72px;min-height:72px;padding:18px}
+body.read-view .dock-pagination button{flex:0 0 44px;width:44px;max-width:44px;min-width:44px;height:44px;min-height:44px;padding:10px}
+html body .person-section-panel a.character-place-citation{color:var(--ui-link)}
+html body .character-relative-chip{background:rgba(59,130,246,var(--surface-base))}
+html body .character-card .character-name{color:var(--ink)}
+html body .person-section-toggle,html body .person-section-toggle[aria-expanded=true]{background:transparent;color:var(--ink)}
+html body .person-section-controls:has([aria-expanded=true]) .person-section-toggle[aria-expanded=false]:not(:disabled){color:var(--muted)}
+html body .person-section-toggle[aria-expanded=true] .person-section-icon{filter:drop-shadow(0 0 4px color-mix(in srgb,var(--profile-glow) 65%,transparent))}
+html body .person-section-toggle[aria-expanded=true] .person-section-label{text-shadow:0 0 5px color-mix(in srgb,var(--profile-glow) 65%,transparent)}
+html body .person-section-panel{background:#fff}
+html body.dark .person-section-panel{background:#142235}
+html body :is(.characters-reset,.person-section-panel .character-story-chip,.person-section-panel .character-relative-chip,.person-section-panel .character-verses a){background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.12),rgba(255,255,255,.85)) #fff;border:1px solid rgba(59,130,246,.4);color:var(--ink);box-shadow:none}
+html body.dark :is(.characters-reset,.person-section-panel .character-story-chip,.person-section-panel .character-relative-chip,.person-section-panel .character-verses a){background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.2),rgba(15,23,34,.65)) #0f1722}
+html body :is(.characters-reset,.person-section-panel .character-story-chip,.person-section-panel .character-relative-chip,.person-section-panel .character-verses a):is(:hover,:focus-visible){border-color:rgba(59,130,246,.8);background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.22),rgba(255,255,255,.9)) #fff}
+html body.dark :is(.characters-reset,.person-section-panel .character-story-chip,.person-section-panel .character-relative-chip,.person-section-panel .character-verses a):is(:hover,:focus-visible){background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.32),rgba(15,23,34,.65)) #0f1722}
+html body:not(.dark) .character-relative-chip.character-relative-female{color:#a32161}
+html body .character-female .person-section-panel :is(.character-story-chip,.character-relative-chip,.character-verses a){border-color:rgba(236,72,153,.55)}
+html body .character-female .person-section-panel :is(.character-story-chip,.character-relative-chip,.character-verses a):is(:hover,:focus-visible){border-color:rgba(236,72,153,.85)}
+html body .character-relative-chip{border-radius:10px}
+
+html body .person-section-panel .character-relative-chip{border-radius:12px;padding:10px 14px;min-height:44px}
+html body .person-section-panel .character-relative-chip.character-relative-female{color:#a32161}
+html body.dark .person-section-panel .character-relative-chip.character-relative-female{color:#f6a4ce}
+html body .person-section-panel .character-relative-chip,
+html body .character-female .person-section-panel .character-relative-chip{border-color:rgba(59,130,246,.55)}
+html body .person-section-panel .character-relative-chip:is(:hover,:focus-visible),
+html body .character-female .person-section-panel .character-relative-chip:is(:hover,:focus-visible){border-color:rgba(59,130,246,.85)}
+html body .person-section-panel .character-relative-chip.character-relative-female,
+html body .character-female .person-section-panel .character-relative-chip.character-relative-female{border-color:rgba(236,72,153,.55)}
+html body .person-section-panel .character-relative-chip.character-relative-female:is(:hover,:focus-visible),
+html body .character-female .person-section-panel .character-relative-chip.character-relative-female:is(:hover,:focus-visible){border-color:rgba(236,72,153,.85)}
+html body .person-section-panel .character-relative-chip{padding:9px 12.6px;min-height:39.6px;font-size:.7875rem;border-radius:10.8px}
+
+html body.dark .person-section-controls:has([aria-expanded=true]) .person-section-toggle[aria-expanded=false]:not(:disabled){color:#b4c3d5}
+html body:not(.dark) .person-section-controls:has([aria-expanded=true]) .person-section-toggle[aria-expanded=false]:not(:disabled){color:#4f6075}
+html body:not(.dark) .person-section-toggle:disabled{color:#9ba5b2}
+html body .person-section-toggle[aria-expanded=true]{color:#fff}
+html body .person-section-toggle[aria-expanded=true] .person-section-icon{filter:drop-shadow(0 0 4px var(--profile-glow)) drop-shadow(0 0 7px color-mix(in srgb,var(--profile-glow) 70%,transparent))}
+html body:not(.dark) .person-section-toggle[aria-expanded=true]{color:#102d4b}
+html body .person-section-toggle[aria-expanded=true] .person-section-label{text-shadow:0 0 4px var(--profile-glow),0 0 7px color-mix(in srgb,var(--profile-glow) 70%,transparent)}
+
+html body button.character-source-toggle{background:transparent}
+html body button.character-source-toggle{border:0;border-radius:0;color:var(--ui-link);width:auto;min-width:0;outline:none}
+html body button.character-source-toggle:focus-visible{background:var(--soft)}
+
+html body button.character-source-toggle{padding:0;margin:0;min-height:0;height:auto}
+html body .person-section-panel .character-verses a{padding:9px 12.6px;min-height:39.6px;border-radius:10.8px;font-size:.7875rem}
+html body .character-card{background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,59,130,246),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,59,130,246),var(--surface-base))}
+html body .person-section-panel .character-verses a{border-color:rgba(59,130,246,.55)}
+html body .person-section-panel .character-verses a:is(:hover,:focus-visible){border-color:rgba(59,130,246,.85)}
+html body .character-card:is(:focus,:focus-visible),
+html body .person-section-panel:is(:focus,:focus-visible){outline:none;box-shadow:none}
+html body .person-section-panel .character-relative-chip>span:not(.character-person-icon){color:#fff}
+html body:not(.dark) .person-section-panel .character-relative-chip{background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.2),rgba(15,23,34,.65)) #0f1722}
+html body:not(.dark) .person-section-panel .character-relative-chip:is(:hover,:focus-visible){background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.32),rgba(15,23,34,.65)) #0f1722}
+html body .person-section-panel .character-relative-chip small{color:#fff}
+
+html body button.character-place-link{display:inline;padding:0;margin:0;width:auto;height:auto;min-width:0;min-height:0;border:0;border-radius:0;background:transparent;color:var(--ui-link)}
+html body button.character-place-link:focus-visible{outline:none;background:var(--soft)}
+html body #places-view .place-directory-entry{padding:14px 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent}
+html body #places-view .place-directory-entry:hover{background:var(--soft)}
+html body #evidence-view .marked-comparison-card .comparison-summary{background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb),var(--surface-base));border:1px solid rgba(var(--theme-rgb),.65)}
+html body #evidence-view .marked-comparison-card .comparison-summary h3{font-size:1.25rem}
+html body #evidence-view .marked-comparison-card .comparison-summary p{font-size:1rem}
+html body #evidence-view .marked-comparison-card .marked-primary-passages q{font-size:.8125rem}
+html body #evidence-view .marked-comparison-card .comparison-inline-reference{color:var(--ui-link)}
+html body #evidence-view .marked-comparison-card .verse-citation{padding:0;margin:0;min-height:0;border:0;border-radius:0;background:transparent;color:var(--ui-link);font-size:.8125rem}
+html body #evidence-view .marked-comparison-card .comparison-summary{padding:14px 14px 42px}
+html body #evidence-view .marked-comparison-card:is(:focus,:focus-visible),
+html body #evidence-view .marked-comparison-card :is(button,a,[tabindex]):is(:focus,:focus-visible){outline:none;box-shadow:none}
+html body #evidence-view .marked-comparison-card :is(.comparison-inline-reference,.summary-expand,.summary-inspect):focus-visible{background:var(--soft)}
+html body .character-card .person-section-panel .character-relative-chip:not(.character-relative-female){border-color:rgba(59,130,246,.55)}
+html body .character-card .person-section-panel .character-relative-chip:not(.character-relative-female):is(:hover,:focus-visible){border-color:rgba(59,130,246,.85)}
+html body .character-connections>button.character-source-toggle,
+html body .place-profile-card>button.character-source-toggle{margin-left:auto}
+html body #places-search{border:0;background:transparent}
+html body #places-search:focus,html body #places-view .characters-search-box:focus-within{outline:none;box-shadow:none}
+html body #places-view .person-section-toggle:is(:focus,:focus-visible),
+html body #places-view .person-section-panel:is(:focus,:focus-visible){outline:none;box-shadow:none}
+html body :is(#stories-view,#story-topic-body) .story-card{background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb),var(--surface-base));border:1px solid rgba(var(--theme-rgb),.65)}
+html body .story-card :is(.story-passage,.story-reference){padding:9px 12.6px;min-height:39.6px;border-radius:10.8px;font-size:.7875rem;color:var(--ink);border:1px solid rgba(var(--theme-rgb),.55);background:radial-gradient(circle at 50% 0%,rgba(var(--theme-rgb),.12),rgba(255,255,255,.85)) #fff}
+html body.dark .story-card :is(.story-passage,.story-reference){background:radial-gradient(circle at 50% 0%,rgba(var(--theme-rgb),.2),rgba(15,23,34,.65)) #0f1722}
+html body .story-card :is(.story-passage,.story-reference):is(:hover,:focus-visible){border-color:rgba(var(--theme-rgb),.85);background:rgba(var(--theme-rgb),.22)}
+html body .story-card:is(:focus,:focus-visible),html body .story-card.story-linked,
+html body .story-card :is(button,[tabindex]):is(:focus,:focus-visible){outline:none;box-shadow:none}
+html body #stories-search:focus{outline:none;box-shadow:none}
+html body #evidence-view .category-profile-card .comparison-summary{padding:18px}
+html body #evidence-view .category-profile-card .comparison-summary h3{font-size:1.35rem}
+html body #evidence-view .category-profile-card .comparison-summary>p{font-size:.875rem}
+html body #evidence-view .category-profile-card .category-profile-panel p{font-size:.875rem}
+html body .category-profile-card [data-comparison-inspect]{color:var(--muted)}
+html body #commandments-view .commandment-card{background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb),var(--surface-base));border:1px solid rgba(var(--theme-rgb),.65)}
+html body .commandment-card h2{font-size:1.35rem}
+html body .commandment-card .commandment-summary{border:0;background:transparent}
+html body #commandments-view .commandment-passage{padding:9px 12.6px;min-height:39.6px;border-radius:10.8px;font-size:.7875rem;border:1px solid rgba(var(--theme-rgb),.55);background:rgba(var(--theme-rgb),.12)}
+html body #commandments-view .commandment-card:is(:focus,:focus-visible),
+html body #commandments-view .commandment-card button:is(:focus,:focus-visible){outline:none;box-shadow:none}
+html body .comparison-context-dialog .comparison-inline-reference{color:var(--ui-link)}
+html body .comparison-context-dialog .comparison-inline-reference:focus-visible{outline:none;background:var(--soft)}
+html body #evidence-view .category-personal-profile{background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb),var(--surface-base));border:1px solid rgba(var(--theme-rgb),.65)}
+html body .category-personal-profile button:is(:focus,:focus-visible){outline:none;box-shadow:none}
+html body #evidence-view .category-personal-profile>p{font-size:.875rem}
+html body #commandments-view .commandment-inline-reference{color:var(--ui-link)}
+html body #commandments-view .commandment-inline-reference:focus-visible{outline:none;background:var(--soft)}
+html body #commandments-view button.commandment-inline-reference{padding:0;margin:0;min-height:0;border:0;border-radius:0;background:transparent}
+/*  timeline.css priorities  */
+body #timeline-reviewed :is(h1,h2,h3,h4){font-family:var(--ui-font)}
+/*  workspace.css priorities  */
+body.lens-app {
+  background: var(--lens-paper);
+  padding-top: 0;
+}
+
+html body.lens-app > header:not(.lens-masthead) { display: none; }
+html body.lens-app [hidden] { display: none; }
+body.lens-app :is(.lens-workspace, .lens-inspector, #lensComparison) :is(h1, h2, h3, h4) {
+  font-family: inherit;
+}
+html body.lens-app > #lensMasthead.lens-masthead {
+  position: sticky;
+  inset: 0 0 auto;
+  height: auto;
+  min-height: var(--lens-nav-height);
+  max-height: none;
+  margin: 0;
+  padding: calc(12px + env(safe-area-inset-top, 0px)) clamp(20px, 4vw, 64px) 12px;
+  background: var(--lens-paper);
+  transform: none;
+}
+html body.lens-app #lensMasthead .lens-primary :is(a, button) {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: var(--lens-muted);
+}
+html body.lens-app #lensMasthead .lens-primary :is(a, button):is([aria-current="page"], .active) {
+  border-bottom-color: var(--lens-copper);
+  background: transparent;
+  color: var(--lens-ink);
+}
+html body.lens-app #lensMasthead .lens-primary :is(a, button):hover { color: var(--lens-copper); }
+html body.lens-app #lensMasthead .lens-primary :is(a, button) svg {
+  width: 17px;
+  height: 17px;
+  filter: none;
+  transform: none;
+}
+body.lens-app :is(.lens-button, .lens-tools button, .lens-reading-actions button, .lens-panel-close, .lens-notebook-tools button) {
+  padding: 8px 12px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--lens-ink);
+  text-decoration: none;
+  transform: none;
+}
+body.lens-app :is(.lens-button, .lens-tools button, .lens-reading-actions button, .lens-panel-close, .lens-notebook-tools button):hover:not(:disabled) {
+  background: var(--lens-link-soft);
+  border-color: var(--lens-link);
+}
+body.lens-app :is(.lens-button.primary, .lens-button-primary, .lens-button.is-primary, .lens-button[data-primary]) {
+  background: var(--lens-ink);
+  border-color: var(--lens-ink);
+  color: var(--lens-paper);
+}
+body.lens-app :is(.lens-button.primary, .lens-button-primary, .lens-button.is-primary):hover:not(:disabled) {
+  background: var(--lens-copper);
+  border-color: var(--lens-copper);
+  color: var(--lens-paper);
+}
+body.lens-app :is(.lens-reading-actions, .lens-notebook-tools) button:is([aria-pressed="true"], [aria-current="true"], .active) {
+  background: var(--lens-copper-soft);
+  border-color: var(--lens-copper);
+  color: var(--lens-copper);
+}
+body.lens-app .lens-panel-close { padding: 9px; }
+body.lens-app #read-view :is(.comparison-dock, .study-library) { display: none; }
+body.lens-app #reader-layout {
+  margin: 0 auto;
+}
+html body.lens-app #chapter-text {
+  padding: 4px 0 20px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+html body.lens-app #chapter-text .passage-heading :is(h2, .passage-heading-picker) {
+  border: 0;
+  background: transparent;
+  color: var(--lens-ink);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+html body.lens-app #chapter-text .passage-picker-trigger,
+html body.lens-app #chapter-text .passage-bookmark {
+  position: static;
+  inset: auto;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--lens-ink);
+  transform: none;
+  opacity: 1;
+}
+body.lens-app #chapter-text .verse-content-grid { display: block; }
+body.lens-app #chapter-text .comparison-cell { display: none; }
+html body.lens-app #chapter-text .verse {
+  padding: 10px 48px 10px 0;
+  border: 0;
+  border-left: 2px solid transparent;
+  border-radius: 0;
+  background: transparent;
+}
+html body.lens-app #chapter-text .verse:is(.selected, .lens-selected, .lens-active-verse, [data-lens-selected="true"], [aria-current="true"]) {
+  border-left-color: var(--lens-copper);
+  background: var(--lens-copper-soft);
+}
+html body.lens-app #chapter-text :is(.verse-num, .verse-number, .verse-menu-trigger) {
+  border: 0;
+  background: transparent;
+}
+body.lens-app #chapter-text :is(.verse-num, .verse-number, .verse-menu-trigger):hover { background: var(--lens-copper-soft); }
+html body.lens-app #chapter-text .lens-verse-evidence { padding: 5px;
+  border: 1px solid var(--lens-rule); border-radius: 4px;
+  background: transparent; color: var(--lens-copper);
+}
+html body.lens-app #chapter-text .lens-verse-evidence:hover,
+html body.lens-app #chapter-text .lens-active-verse .lens-verse-evidence {
+  border-color: var(--lens-copper); background: var(--lens-copper-soft);
+}
+body.lens-app .lens-inspector-title {
+  margin: 0;
+}
+body.lens-app :is(.lens-tabs, .lens-inspector-tabs) button { padding: 7px 0; border: 0;
+  border-bottom: 2px solid transparent; border-radius: 0;
+  background: transparent; color: var(--lens-muted);
+}
+body.lens-app :is(.lens-tabs, .lens-inspector-tabs) button:is([aria-selected="true"], [aria-pressed="true"], .active) { border-bottom-color: var(--lens-copper); color: var(--lens-copper); }
+body.lens-app .lens-evidence-refs :is(a, button) { padding: 6px 9px; border: 1px solid var(--lens-rule); border-radius: 4px; background: transparent; color: var(--lens-link); }
+body.lens-app .lens-source-link:hover { text-decoration: underline; }
+html body.lens-app .lens-search-form input[type="search"] {
+  background: var(--lens-surface); background-image: none;
+}
+body.lens-app .lens-search-form button { padding-inline: 20px; }
+body.lens-app .lens-search-jump a:hover { text-decoration: underline; }
+body.lens-app .lens-result { padding: 12px 0; border: 0;
+  border-bottom: 1px solid var(--lens-rule); border-radius: 0;
+  background: transparent; color: var(--lens-ink);
+}
+body.lens-app .lens-result:last-child { border-bottom: 0; }
+body.lens-app :is(.lens-danger, .lens-note [data-delete], .lens-note [data-note-delete], .lens-note [data-lens-delete-note]) { color: var(--lens-danger); }
+html body.lens-app :is(#main, #lensMasthead, dialog) :is(button, a, input, textarea, select, summary, [tabindex]):focus-visible,
+html body.lens-app > :is(button, a):focus-visible {
+  outline: 2px solid var(--lens-focus);
+  outline-offset: 3px;
+  box-shadow: none;
+  text-shadow: none;
+  filter: none;
+}
+html body.lens-app #main :is(input, textarea, select):focus,
+html body.lens-app dialog :is(input, textarea, select):focus {
+  outline: 2px solid var(--lens-focus);
+  outline-offset: 3px;
+}
+body.lens-app #workspace-storage-status button { background: transparent; color: var(--lens-ink); }
+
+@media (max-width: 760px) {
+  html body.lens-app > #lensMasthead.lens-masthead { padding: calc(10px + env(safe-area-inset-top, 0px)) 20px 10px; }
+  body.lens-app #lensMasthead .lens-tools button { padding: 9px; }
+  html body.lens-app #lensMasthead .lens-primary :is(a, button) { border-bottom: 0; border-top: 2px solid transparent;
+  }
+  html body.lens-app #lensMasthead .lens-primary :is(a, button):is([aria-current="page"], .active) { border-top-color: var(--lens-copper); }
+  html body.lens-app #lensMasthead .lens-primary :is(a, button) svg { width: 20px; height: 20px; }
+  html body.lens-app #chapter-text { padding-top: 0; padding-bottom: 0; }
+  html body.lens-app #chapter-text .passage-heading :is(h2, .passage-heading-picker) { font-size: 1.875rem; }
+  html body.lens-app #chapter-text .verse { padding: 8px 47px 8px 0; }
+  html:has(body.lens-app #lens-inspector-sheet[open]),
+  body.lens-app:has(#lens-inspector-sheet[open]) { overflow: hidden; }
+  html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet {
+    inset: auto 0 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 12px 12px 0 0;
+    background: var(--lens-surface);
+  }
+  html body.lens-app #lens-inspector-sheet:not([open]) { display: none; }
+  html body.lens-app #lens-inspector-sheet::backdrop { background: #0d1823a6; backdrop-filter: none; -webkit-backdrop-filter: none; }
+  body.lens-app #lens-inspector-sheet .lens-inspector-sheet-close {
+    padding: 12px max(20px, env(safe-area-inset-right, 0px)) 12px max(20px, env(safe-area-inset-left, 0px));
+    border: 0;
+    border-bottom: 1px solid var(--lens-rule);
+    border-radius: 0;
+    background: var(--lens-surface);
+    color: var(--lens-link);
+  }
+  html body.lens-app #lens-inspector-sheet .lens-inspector-sheet-close:focus-visible { outline-offset: -5px; }
+  body.lens-app .highlight-color-picker[data-docked="true"] { bottom: calc(88px + env(safe-area-inset-bottom, 0px)); }
+}
+
+@media (max-width: 430px) {
+  html body.lens-app > #lensMasthead.lens-masthead { padding-inline: 16px; }
+  body.lens-app .lens-reading-actions button { padding-inline: 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(body.lens-app) { scroll-behavior: auto; }
+  body.lens-app *, body.lens-app *::before, body.lens-app *::after { animation: none; transition: none; scroll-behavior: auto; }
+}
+body.lens-app.lens-comparing :is(.lens-reading-layout,.chapter-bottom,#passage-tools) { display: none; }
+body.lens-app #reader-settings :is(.surface-settings,.navigation-color-setting) { display: none; }
+/*  system.css priorities  */
+html body.lens-app .lens-action-toast[hidden] { display: none; }
+html body.lens-app .lens-action-toast .lens-action-undo {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: var(--lens-paper);
+  background: transparent;
+}
+html body.lens-app .lens-action-toast .lens-action-undo:hover { background: color-mix(in srgb, var(--lens-paper) 12%, transparent); }
+html body.lens-app .lens-action-toast button.lens-action-undo:focus-visible { outline: 2px solid var(--lens-paper); }
+html body.lens-app :is(.primary, .secondary, .lens-button, .lens-tools button, .lens-reading-actions button, .lens-panel-close, .lens-notebook-tools button, .glass-pill, .chip, .category-pagination button, .chapter-bottom button) {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--lens-control-bg);
+  color: var(--lens-ink);
+  box-shadow: none;
+  transform: none;
+}
+html body.lens-app :is(.primary, .lens-button-primary, .lens-button.is-primary, .lens-button[data-primary]) {
+  background: var(--lens-ink);
+  border-color: var(--lens-ink);
+  color: var(--lens-paper);
+}
+html body.lens-app :is(.secondary, .chip, .glass-pill, .lens-reading-actions button, .lens-notebook-tools button):is([aria-pressed="true"], [aria-current="true"], .active) {
+  border-color: transparent;
+  background: var(--lens-copper-soft);
+  color: var(--lens-ink);
+}
+html body.lens-app :is(.secondary, .lens-button, .lens-tools button, .lens-reading-actions button, .lens-panel-close, .lens-notebook-tools button, .chip, .glass-pill, .category-pagination button, .chapter-bottom button):hover:not(:disabled) {
+  border-color: transparent;
+  background: var(--lens-control-hover);
+}
+html body.lens-app :is(.primary, .lens-button-primary, .lens-button.is-primary, .lens-button[data-primary]):hover:not(:disabled) {
+  background: var(--lens-link);
+  border-color: var(--lens-link);
+  color: var(--lens-paper);
+}
+html body.lens-app :is(.chip, .glass-pill) { border-radius: 999px; }
+html body.lens-app :is(.lens-panel-close, .chapter-bottom button) { border-radius: 50%; }
+html body.lens-app :is(.primary, .secondary, .lens-button, .lens-panel-close, .lens-notebook-tools button, .chip, .glass-pill):focus-visible { outline: 2px solid var(--lens-focus); }
+html body.lens-app :is(input, textarea)::placeholder { font-style: normal; }
+html body.lens-app :is(.verse-citation, .chat-citation, .comparison-side .verse-citation, .context-citations .verse-citation) {
+  color: var(--lens-link);
+  background: transparent;
+  border-color: var(--lens-rule);
+  border-radius: 3px;
+}
+html body.lens-app #main > section:not(.lens-workspace) > .page-heading h1,
+html body.lens-app #main > section > .lens-section-heading h1,
+html body.lens-app #stories-view > h1 {
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  line-height: 1.15;
+}
+html body.lens-app #method-view .method-grid > article {
+  background: transparent;
+}
+html body.lens-app :is(#bookmarks-view, #evidence-view) .card {
+  border: 0;
+  border-top: 1px solid var(--lens-rule);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+html body.lens-app :is(#bookmarks-view, #evidence-view) .card h3 button { background: none; }
+html body.lens-app .card .tag { background: none; }
+html body.lens-app #chapter-text .passage-heading-picker,
+html body.lens-app #chapter-text .passage-heading-picker:hover { background: none; }
+@media (forced-colors: active) {
+  html body.lens-app :is(button, input, select, textarea) { border-color: ButtonText; }
+  html body.lens-app :is(.primary, .lens-button-primary) { background: ButtonFace; color: ButtonText; }
+}
+@media (max-width: 420px) {
+  html body.lens-app #lensMasthead .lens-brand :is(small, .lens-brand-subtitle) {
+    display: none;
+  }
+  html body.lens-app #main :is(#commandments-view, #evidence-view, #bookmarks-view, #stories-view, #chat-view, #prophecies-view, #timeline-view, #method-view, #characters-view, #places-view) h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    overflow-wrap: normal;
+  }
+}
+/*  library.css priorities  */
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view) { padding-inline: 0;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.story-card, .commandment-card, .category-directory-card, .category-personal-profile, .passage-saved-card, .marked-comparison-card) { padding: 28px 0;
+  border: 0; border-top: 1px solid var(--lens-rule);
+  border-radius: 0; background: transparent;
+  box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none;
+}
+html body.lens-app #evidence-view .marked-comparison-card .comparison-summary { padding: 0; border: 0; border-radius: 0;
+  background: transparent; box-shadow: none;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.story-card, .commandment-card, .category-directory-card, .category-personal-profile, .passage-saved-card, .marked-comparison-card)::before,
+html body.lens-app #evidence-view .comparison-summary::before { content: none; }
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.story-card, .commandment-card, .category-directory-card, .category-personal-profile, .passage-saved-card, .marked-comparison-card) :is(h2, h3) {
+  font: 500 1.375rem/1.4 var(--lens-display-font, "Inter", system-ui, sans-serif);
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.story-summary, .commandment-summary p, .comparison-summary > p, .category-personal-profile > p, .category-directory-card > p, .passage-saved-card > p) { font-size: 1rem;
+}
+html body.lens-app .story-card.story-linked { border-top-color: var(--lens-copper); }
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet) .person-section-toggle { padding: 9px 12px; border: 1px solid var(--lens-rule);
+  border-radius: 5px; background: transparent; color: var(--lens-ink); text-shadow: none; box-shadow: none;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet) .person-section-toggle .person-section-label { text-shadow: none; filter: none;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.person-section-icon, .person-section-icon svg) { filter: none; }
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  .person-section-controls:has([aria-expanded=true]) .person-section-toggle[aria-expanded=false]:not(:disabled) { color: var(--lens-ink); }
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  .person-section-toggle:is([aria-expanded=true], :hover:not(:disabled)) {
+  border-color: var(--lens-copper); background: var(--lens-copper-soft); color: var(--lens-copper);
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet) .person-section-toggle:disabled {
+  border: 1px solid var(--lens-rule); color: var(--lens-muted); opacity: .55;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.person-section-panel, .comparison-evidence) { padding: 4px 0 4px 20px;
+  border: 0; border-left: 2px solid var(--lens-copper); border-radius: 0;
+  background: transparent; box-shadow: none;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  .person-section-panel :is(h3, h4) { font: 600 .875rem/1.6 var(--ui-font); }
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.person-section-panel p:not(.marked-verse-text), .summary-reasoning, .passage-saved-note) { font: 400 .9375rem/1.8 var(--ui-font); }
+html body.lens-app :is(#evidence-view, #bookmarks-view) .marked-verse-text {
+  font: 400 1rem/1.8 var(--lens-reading-font, var(--verse-font-family, "Inter", system-ui, sans-serif));
+}
+html body.lens-app #evidence-view .marked-comparison-card .marked-primary-passages .comparison-side { background: transparent;
+}
+html body.lens-app #evidence-view .marked-comparison-card .marked-primary-passages .comparison-side q {
+  font: 400 1rem/1.8 var(--lens-reading-font, var(--verse-font-family, "Inter", system-ui, sans-serif));
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.story-passage, .story-reference, .verse-citation, .commandment-inline-reference, .comparison-inline-reference, .text-button) {
+  color: var(--lens-link); background: transparent; border: 0;
+  border-radius: 0; box-shadow: none;
+}
+html body.lens-app :is(#stories-view, #story-topic-sheet) :is(.story-passage, .story-reference) { min-height: 44px; padding: 8px 0; font-size: .875rem;
+}
+html body.lens-app #evidence-view .marked-comparison-card .verse-citation { color: var(--lens-link); font-size: .875rem; }
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(a, .story-passage, .story-reference, .verse-citation, .commandment-inline-reference):hover { text-decoration: underline; }
+html body.lens-app #evidence-view .marked-comparison-card :is(.summary-expand, .summary-inspect) {
+  position: static;
+  width: auto; height: auto; min-height: 44px; min-width: 0; padding: 9px 12px; border: 1px solid var(--lens-rule);
+  border-radius: 5px; color: var(--lens-ink);
+  background: transparent;
+}
+html body.lens-app #evidence-view .marked-comparison-card .summary-expand[aria-expanded=true] { border-color: var(--lens-copper); color: var(--lens-copper); background: var(--lens-copper-soft); }
+html body.lens-app :is(#stories-view .stories-filters, #commandments-search-box) :is(input, select) {
+  border-radius: 5px; background: var(--lens-surface);
+}
+html body.lens-app :is(#stories-reset, #commandments-reset) { padding: 8px 0; color: var(--lens-link); }
+html body.lens-app #stories-reset { padding-inline: 10px; }
+html body.lens-app :is(#commandments-more, #marked-filter-top, #marked-filter-open) { padding: 9px 12px; border: 1px solid var(--lens-rule);
+  border-radius: 5px; background: var(--lens-surface); color: var(--lens-ink);
+}
+html body.lens-app #commandments-view .commandments-disclaimer { font-size: .8125rem; }
+html body.lens-app #commandments-view .commandments-source { background: transparent; }
+html body.lens-app .commandment-summary { background: transparent; }
+html body.lens-app #evidence-view a.category-page-link { border: 0; border-top: 1px solid var(--lens-rule);
+  border-radius: 0; background: transparent; text-decoration: none;
+}
+html body.lens-app #evidence-view a.category-page-link:hover { background: transparent; }
+html body.lens-app #evidence-view .marked-category-pane[data-category-page] .marked-category-icon { color: var(--lens-copper); }
+html body.lens-app #evidence-view .commandment-filter-chips button { background: transparent; }
+html body.lens-app #evidence-view .commandment-filter-chips button[aria-pressed=true] { border-color: var(--lens-copper); background: var(--lens-copper-soft); color: var(--lens-copper); }
+html body.lens-app #marked-context { background: var(--lens-surface); box-shadow: none; }
+html body.lens-app :is(#stories-view, #evidence-view, #bookmarks-view) .category-pagination button { border-radius: 5px; background: var(--lens-surface);
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(button, a, input, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--lens-focus); outline-offset: 3px; box-shadow: none; filter: none;
+}
+
+@media (min-width: 960px) {
+  html body.lens-app #commandments-list .commandment-card { padding-left: 128px; }
+}
+@media (max-width: 600px) {
+  html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+    :is(.story-card, .commandment-card, .category-directory-card, .category-personal-profile, .passage-saved-card, .marked-comparison-card) { padding-block: 24px; }
+  html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+    :is(.person-section-panel, .comparison-evidence) { padding-left: 14px; }
+}
+/*  reference.css priorities  */
+html body.lens-app :is(#characters-view, #places-view, #timeline-view, #prophecies-view, #character-sheet, #atlas-sheet, #prophecy-filters) :is(h1, h2, h3, h4, p, li, a, button, label) {
+  font-family: var(--ui-font, "Inter", system-ui, sans-serif);
+  text-shadow: none;
+}
+html body.lens-app :is(#characters-view, #places-view, #timeline-view, #prophecies-view, #character-sheet, #atlas-sheet, #prophecy-filters) :is(button, a, input, summary):focus-visible {
+  outline: 2px solid var(--lens-focus);
+  outline-offset: 3px;
+}
+html body.lens-app :is(#characters-view, #places-view) > button,
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) :is(.character-connections-retry, .person-section-panel > button, .character-source-header > button) {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--lens-ink);
+  box-shadow: none;
+}
+html body.lens-app :is(#characters-view, #places-view) .characters-search-box {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+html body.lens-app :is(#characters-search, #places-search) {
+  margin: 0;
+  padding: 11px 14px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: var(--lens-surface);
+  color: var(--lens-ink);
+  box-shadow: none;
+}
+html body.lens-app :is(#characters-view, #places-view) .character-card {
+  padding: 25px 0;
+  border: 0;
+  border-bottom: 1px solid var(--lens-rule);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+html body.lens-app :is(#characters-view, #places-view) .character-card:focus-visible {
+  outline: 2px solid var(--lens-focus);
+  outline-offset: 4px;
+}
+html body.lens-app :is(#characters-view, #places-view) .character-card :is(.character-name, h2) {
+  color: var(--lens-ink);
+  letter-spacing: -.025em;
+}
+html body.lens-app :is(#characters-view, #places-view) .character-card .character-summary {
+  background: transparent;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-toggle {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: var(--lens-surface);
+  color: var(--lens-ink);
+  box-shadow: none;
+  filter: none;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-toggle[aria-expanded="true"] {
+  border-color: var(--lens-copper);
+  color: var(--lens-copper);
+  background: var(--lens-copper-soft);
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-toggle:disabled {
+  color: var(--lens-muted);
+  border: 1px dashed var(--lens-rule);
+  background: transparent;
+  opacity: .65;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-toggle :is(.person-section-icon, .person-section-label) {
+  filter: none;
+  text-shadow: none;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-panel {
+  border: 0;
+  border-left: 2px solid var(--lens-copper);
+  border-radius: 0;
+  background: var(--lens-surface);
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .character-relative-chip,
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) :is(.character-verses a, .character-story-chip, .character-badge) {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--lens-link);
+  font-size: .8125rem;
+  box-shadow: none;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) :is(.character-relative-chip, .character-story-chip, .character-verses a):hover {
+  background: var(--lens-link-soft);
+  border-color: var(--lens-link);
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .character-relative-chip > span,
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .character-relative-chip .character-person-icon {
+  color: inherit;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .character-relative-chip small {
+  color: var(--lens-muted);
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) button.character-source-toggle {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 0;
+  margin: 8px 0 0;
+  color: var(--lens-link);
+}
+html body.lens-app :is(#characters-view, #places-view) :is(.characters-pagination, .places-directory-pagination) button {
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: var(--lens-surface);
+}
+html body.lens-app #character-sheet :is(.character-profile-biography, .character-sheet-body > p) {
+  background: transparent;
+}
+html body.lens-app #timeline-view :is(.timeline-card, .timeline-event-card) {
+  border: 0;
+  border-bottom: 1px solid var(--lens-rule);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+html body.lens-app #timeline-view :is(.timeline-event-title, .timeline-card h2) {
+  letter-spacing: -.02em;
+}
+html body.lens-app #timeline-view :is(.timeline-history, .timeline-history-chip, [data-timeline-filter]) {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: var(--lens-surface);
+  color: var(--lens-link);
+}
+html body.lens-app #timeline-view :is(.timeline-history, .timeline-history-chip, [data-timeline-filter]):is([aria-expanded="true"], [aria-pressed="true"]) {
+  color: var(--lens-copper);
+  border-color: var(--lens-copper);
+  background: var(--lens-copper-soft);
+}
+html body.lens-app #timeline-view :is(.timeline-academic, .timeline-discrepancy-content) {
+  background: var(--lens-surface);
+}
+html body.lens-app #timeline-view :is(.timeline-sources a, .timeline-passage) {
+  color: var(--lens-link);
+  background: transparent;
+}
+html body.lens-app #prophecies-view :is(#prophecy-filter-button, #prophecy-reset) {
+  min-height: 44px;
+  padding: 11px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--lens-ink);
+  box-shadow: none;
+}
+html body.lens-app #prophecies-view :is(#prophecy-filter-button, #prophecy-reset):hover {
+  background: var(--lens-copper-soft);
+}
+html body.lens-app :is(#prophecies-view, #prophecy-filters) :is(.prophecy-toggle, .prophecy-facet) {
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--lens-link-soft);
+  color: var(--lens-ink);
+  box-shadow: none;
+}
+html body.lens-app :is(#prophecies-view, #prophecy-filters) :is(.prophecy-toggle, .prophecy-facet):hover { background: var(--lens-copper-soft); }
+html body.lens-app :is(#prophecies-view, #prophecy-filters) :is(.prophecy-toggle, .prophecy-facet)[aria-pressed="true"] {
+  border-color: var(--lens-copper);
+  background: var(--lens-copper-soft);
+  color: var(--lens-copper);
+}
+html body.lens-app #prophecies-view .prophecy-card {
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+html body.lens-app #prophecies-view .prophecy-card h2 { letter-spacing: -.025em; }
+html body.lens-app #prophecies-view .prophecy-passage {
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: var(--lens-surface);
+  color: var(--lens-link);
+  box-shadow: none;
+}
+html body.lens-app #prophecies-view .prophecy-passage:hover { border-color: var(--lens-link); background: var(--lens-link-soft); }
+@media (forced-colors: active) {
+  html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-toggle[aria-expanded="true"],
+  html body.lens-app :is(#prophecies-view, #prophecy-filters) [aria-pressed="true"],
+  html body.lens-app #timeline-view :is([aria-pressed="true"], [aria-expanded="true"]) { outline: 2px solid Highlight; outline-offset: -3px; }
+}
+/*  dialogs.css priorities  */
+html body.lens-app dialog,
+html body.lens-app :is(.verse-preview, .context-preview, .highlight-context-menu, .highlight-color-picker) {
+  color: var(--lens-ink);
+  background: var(--lens-surface);
+  background-image: none;
+  border: 1px solid color-mix(in srgb, var(--lens-rule) 45%, transparent);
+  border-radius: 24px;
+  box-shadow: 0 20px 70px #07131926;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  text-shadow: none;
+}
+html body.lens-app dialog::backdrop {
+  background: #101b24a6;
+}
+html body.lens-app dialog :is(h2, h3, h4, legend) {
+  font-family: var(--ui-font, "Inter", system-ui, sans-serif);
+  text-shadow: none;
+}
+html body.lens-app dialog :is(.sheet-heading, .comparison-context-heading, .dialog-top) {
+  background: none;
+}
+html body.lens-app :is(dialog, .verse-preview) :is(button[aria-label^="Close"], [data-marked-filter-close]) {
+  width: auto;
+  height: auto;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px;
+  margin: 0;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: var(--lens-control-bg);
+  color: var(--lens-ink);
+  box-shadow: none;
+}
+html body.lens-app :is(dialog, .verse-preview) :is(.icon[aria-label^="Close"], .preview-close, [data-marked-filter-close], [data-close-comparison], [data-navigation-close], #commandments-close, #prophecy-close) {
+  width: 44px;
+  height: 44px;
+}
+html body.lens-app dialog :is(button, input, select, textarea) {
+  color: var(--lens-ink);
+  border-color: var(--lens-rule);
+  border-radius: 12px;
+  background: var(--lens-surface);
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  filter: none;
+  font-family: var(--ui-font);
+}
+html body.lens-app dialog button { border: 1px solid transparent; background: var(--lens-control-bg); }
+html body.lens-app dialog :is(button[aria-pressed="true"], button[aria-selected="true"], button.active) {
+  color: var(--lens-copper);
+  border-color: transparent;
+  background: var(--lens-copper-soft);
+}
+html body.lens-app dialog button:hover:not(:disabled) { background: var(--lens-control-hover); }
+html body.lens-app dialog :is(.primary, #prophecy-done, #commandments-done) { color: var(--lens-paper); border-color: transparent; background: var(--lens-ink); }
+html body.lens-app dialog :is(.primary, #prophecy-done, #commandments-done):hover:not(:disabled) { background: var(--lens-link); }
+html body.lens-app dialog :is(button, input, select, textarea):disabled { opacity: .5; }
+html body.lens-app :is(dialog, .verse-preview, .context-preview) :is(button, a, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--lens-focus);
+  outline-offset: 3px;
+}
+html body.lens-app :is(dialog, .verse-preview, .context-preview) a:hover { text-decoration: underline; }
+html body.lens-app dialog details { box-shadow: none; background: transparent; }
+html body.lens-app #reader-settings .reader-actions { justify-content: stretch; }
+html body.lens-app #reader-settings .text-size-setting::before { content: none; display: none; }
+html body.lens-app #reader-settings #reader-font { background: transparent; }
+html body.lens-app #reader-settings :is(#settings-navigation, .navigation-color-setting, .surface-settings) { display: none; }
+html body.lens-app :is(#passage-picker, #marked-filter-dialog) .passage-steps button { border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; }
+html body.lens-app :is(#passage-picker, #marked-filter-dialog) .passage-steps [aria-pressed="true"] { border-bottom-color: var(--lens-copper); color: var(--lens-copper); }
+html body.lens-app #passage-picker .passage-number span { border: 1px solid transparent; border-radius: 10px; background: var(--lens-control-bg); box-shadow: none; }
+html body.lens-app #passage-picker .passage-number input:checked + span { color: var(--lens-copper); border-color: transparent; background: var(--lens-copper-soft); }
+html body.lens-app #passage-picker .passage-number input:focus-visible + span { outline: 2px solid var(--lens-focus); }
+html body.lens-app #marked-filter-dialog .marked-kind-grid svg { filter: none; }
+html body.lens-app :is(#commandments-filters, #prophecy-filters) button {
+  color: var(--lens-ink);
+  background: var(--lens-control-bg);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-shadow: none;
+}
+html body.lens-app :is(#commandments-filters, #prophecy-filters) button[aria-pressed="true"] {
+  color: var(--lens-copper);
+  background: var(--lens-copper-soft);
+  border-color: transparent;
+}
+html body.lens-app :is(#commandments-filters, #prophecy-filters) :is(#commandments-done, #prophecy-done) { color: var(--lens-paper); background: var(--lens-ink); }
+html body.lens-app #note-confirm-accept { color: var(--lens-danger); border: 1px solid transparent; background: color-mix(in srgb, var(--lens-danger) 9%, var(--lens-surface)); }
+html body.lens-app #chapter-bookmark-list > :is(article, div) { border-radius: 0; box-shadow: none; background: none; }
+html body.lens-app #chapter-bookmark-list > button { border: 1px solid transparent; color: var(--lens-link); }
+html body.lens-app .preview-verse-actions button { width: auto; border: 1px solid transparent; border-radius: 12px; color: var(--lens-ink); background: transparent; }
+html body.lens-app .preview-verse-actions button:hover:not(:disabled) { background: var(--lens-control-bg); }
+html body.lens-app .preview-verse-actions [data-verse-action="bookmark"] { color: var(--lens-copper); background: var(--lens-copper-soft); }
+html body.lens-app .preview-verse-actions [data-verse-action="delete-note"] { color: var(--lens-danger); }
+html body.lens-app .highlight-context-menu button { background: none; }
+html body.lens-app #study-dialog :is(.tag, .summary-attribution) { background: transparent; }
+html body.lens-app #study-dialog .tabs button { border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: transparent; }
+html body.lens-app #study-dialog .tabs button[aria-selected="true"] { border-bottom-color: var(--lens-copper); }
+html body.lens-app #study-dialog :is(.study-tldr, .comparison-summary, .analysis-box, .assessment, .passage, .source-row) { border-radius: 0; background: transparent; box-shadow: none; }
+html body.lens-app #study-dialog .comparison-summary { border: 0; }
+html body.lens-app #study-dialog .summary-citations .verse-citation { color: var(--lens-link); border: 1px solid var(--lens-rule); border-radius: 3px; background: transparent; }
+html body.lens-app #chat-view #clear-chat { position: static; width: auto; height: auto; min-width: 0; min-height: 44px; padding: 10px 12px; margin: 0; border: 1px solid transparent; border-radius: 12px; background: var(--lens-control-bg); color: var(--lens-ink); box-shadow: none; transform: none; }
+html body.lens-app #chat-view .chat-starter-grid button { border: 1px solid transparent; border-radius: 18px; background: var(--lens-control-bg); color: var(--lens-ink); box-shadow: none; }
+html body.lens-app #chat-view :is(.chat-message.user, .chat-message.assistant) { border: 0; border-radius: 0; margin: 0; padding: 24px 0; color: var(--lens-ink); background: none; box-shadow: none; filter: none; }
+html body.lens-app #chat-view .chat-message.user { border-top: 1px solid var(--lens-rule); padding-bottom: 8px; }
+html body.lens-app #chat-view .chat-message.assistant .chat-answer { border: 0; border-left: 2px solid var(--lens-rule); border-radius: 0; background: transparent; box-shadow: none; color: var(--lens-ink); }
+html body.lens-app #chat-view :is(.chat-message, .chat-answer)::before,
+html body.lens-app #chat-view :is(.chat-message, .chat-answer)::after { content: none; }
+html body.lens-app #chat-view :is(.summary-expand, .summary-inspect) { position: static; width: auto; height: auto; min-width: 0; min-height: 44px; transform: none; border: 0; border-radius: 0; color: var(--lens-link); background: transparent; box-shadow: none; opacity: 1; }
+html body.lens-app #chat-view .chat-answer[aria-expanded="false"] .summary-inspect { display: none; }
+html body.lens-app :is(#chat-view, #chat-citations-dialog) .chat-citation { border: 1px solid var(--lens-rule); border-radius: 3px; background: transparent; color: var(--lens-link); box-shadow: none; }
+html body.lens-app #chat-view #chat-form { position: static; margin: 24px 0 0; transform: none; border: 1px solid var(--lens-rule); border-radius: 20px; background: var(--lens-surface); box-shadow: none; }
+html body.lens-app #chat-view #chat-input { color: var(--lens-ink); border: 0; background: transparent; border-radius: 0; box-shadow: none; }
+html body.lens-app #chat-view #chat-send { border: 1px solid transparent; border-radius: 12px; color: var(--lens-paper); background: var(--lens-ink); box-shadow: none; }
+html body.lens-app #chat-view .chat-typing { border: 0; padding: 16px 20px; border-radius: 0; background: none; }
+@media (max-width: 760px) {
+  html body.lens-app .verse-preview {
+    inset: auto 0 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: min(70dvh, calc(100dvh - env(safe-area-inset-top, 0px) - 20px));
+    border-radius: 24px 24px 0 0;
+    border-bottom: 0;
+    box-shadow: 0 -12px 48px #07131926;
+  }
+  html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet {
+    border-radius: 24px 24px 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  html body.lens-app #reader-settings[open],
+  html body.lens-app :is(#passage-picker, #marked-filter-dialog, #verse-note-dialog, #chapter-bookmarks-dialog, #chat-citations-dialog, #study-dialog, .comparison-context-dialog)[open] {
+    border-radius: 24px 24px 0 0;
+    border-bottom: 0;
+  }
+  html body.lens-app :is(#commandments-filters, #prophecy-filters)[open] { border-radius: 24px 24px 0 0; }
+  html body.lens-app #chat-view #clear-chat { min-height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.lens-app :is(dialog, .verse-preview, .context-preview, #chat-view),
+  html body.lens-app :is(dialog, .verse-preview, .context-preview, #chat-view) * { animation: none; transition: none; scroll-behavior: auto; }
+}
+@media (forced-colors: active) {
+  html body.lens-app :is(dialog, .verse-preview, .context-preview) { border: 1px solid CanvasText; }
+  html body.lens-app dialog :is(button[aria-selected="true"], button[aria-pressed="true"]),
+  html body.lens-app #passage-picker .passage-number input:checked + span { outline: 2px solid Highlight; }
+}
+/*  atlas.css priorities  */
+html body.lens-app > #lensMasthead.lens-masthead {
+  background: var(--lens-masthead);
+  min-height: var(--lens-nav-height);
+  padding-block: calc(10px + env(safe-area-inset-top, 0px)) 10px;
+}
+html body.lens-app #lensMasthead .lens-brand {
+  color: var(--lens-masthead-text);
+}
+html body.lens-app #lensMasthead .lens-brand > span:last-child {
+  font-family: var(--lens-display-font);
+}
+html body.lens-app #lensMasthead .lens-brand :is(small, .lens-brand-subtitle) { display: none; }
+html body.lens-app #lensMasthead .lens-primary a {
+  color: var(--lens-masthead-text);
+  font-family: var(--lens-ui-font);
+}
+html body.lens-app #lensMasthead .lens-primary a[aria-current="page"] {
+  color: white;
+  border-bottom-color: var(--lens-masthead-accent);
+  background: transparent;
+}
+html body.lens-app #lensMasthead .lens-primary a:hover { background: #203c49; }
+html body.lens-app #lensMasthead #lens-settings {
+  color: var(--lens-masthead-text);
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  font-family: var(--lens-ui-font);
+}
+html body.lens-app #lensMasthead #lens-settings:hover { background: #203c49; }
+html body.lens-app #lensMasthead :is(a, button):focus-visible { outline-color: #f4c6a0; }
+html body.lens-app #main > section h1,
+html body.lens-app #main :is(#characters-view, #places-view, #stories-view, #evidence-view, #bookmarks-view, #commandments-view, #prophecies-view, #timeline-view, #method-view, #search-view, #notebook-view, #chat-view)
+  :is(h2, h3, .character-name, .library-category-title),
+html body.lens-app #main #lensComparison :is(h2, h3),
+html body.lens-app :is(#character-sheet, #atlas-sheet, #study-dialog, #story-topic-sheet) :is(h2, .character-name),
+html body.lens-app :is(#reader-settings, #passage-picker, #verse-note-dialog, #chapter-bookmarks-dialog, #marked-filter-dialog, #chat-citations-dialog, #note-confirm-dialog, #prophecy-filters, #commandments-filters, #navigation-sheet, .comparison-context-dialog) h2,
+html body.lens-app .lens-workspace .lens-note h2 {
+  font-family: var(--lens-display-font);
+  font-weight: 500;
+}
+html body.lens-app #main :is(h1, h2, h3) :is(a, button) { font-family: inherit; }
+html body.lens-app #main > section h1 {
+  font-size: clamp(2rem, 3.6vw, 3.4rem);
+  line-height: 1.15;
+}
+html body.lens-app #main :is(.person-section-panel, .character-connections, .timeline-discrepancy-content) :is(h3, h4),
+html body.lens-app #main :is(.lens-kicker, .eyebrow, .person-section-controls, .person-section-toggle, .person-section-label) {
+  font-family: var(--lens-ui-font);
+}
+html body.lens-app #main #search-view .lens-result-group > h2 {
+  font-family: var(--lens-ui-font);
+}
+html body.lens-app #main #stories-view .story-card { padding-block: 23px; }
+html body.lens-app #main #stories-view .story-card > h3 { font-size: clamp(1.4rem, 2.1vw, 1.8rem); line-height: 1.3; }
+html body.lens-app #main :is(#characters-view, #places-view) .character-card { padding-block: 22px; }
+html body.lens-app #main :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #characters-view, #places-view) .person-section-toggle {
+  border: 0;
+  border-bottom: 1px solid var(--lens-rule);
+  border-radius: 0;
+  background: transparent;
+  padding: 9px 3px;
+  color: var(--lens-link);
+}
+html body.lens-app #main :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #characters-view, #places-view) .person-section-toggle[aria-expanded="true"] {
+  border-bottom: 2px solid var(--lens-copper);
+  color: var(--lens-copper);
+}
+html body.lens-app #main :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #characters-view, #places-view) .person-section-toggle:disabled { color: var(--lens-muted); opacity: .55; }
+@media (prefers-reduced-motion: reduce) {
+  html body.lens-app #explore-view .lens-question-card { transform: none; }
+}
+
+@media (min-width: 740px) {
+  html body.lens-app #main #stories-view .story-card { padding-left: 155px; }
+}
+@media (max-width: 760px) {
+  html body.lens-app > #lensMasthead.lens-masthead { padding-inline: 18px; }
+  html body.lens-app #lensMasthead nav.lens-primary { background: var(--lens-masthead); border-top-color: #42515a; }
+  html body.lens-app #lensMasthead .lens-primary a[aria-current="page"] { border-top-color: var(--lens-masthead-accent); border-bottom: 0; }
+}
+@media (max-width: 420px) {
+  html body.lens-app #main > section h1 { font-size: 1.8rem; line-height: 1.2; }
+  html body.lens-app #main #commandments-view h1 { font-size: 1.45rem; }
+}
+@media (forced-colors: active) {
+  html body.lens-app #lensMasthead :is(.lens-brand, .lens-primary a, #lens-settings) { color: CanvasText; }
+  html body.lens-app > #lensMasthead.lens-masthead,
+  html body.lens-app #lensMasthead nav.lens-primary { background: Canvas; }
+}
+/*  atlas-reader.css priorities  */
+html body.lens-app #chapter-text .atlas-passage-heading :is(h2, .passage-heading-picker) {
+  font-family: var(--lens-display-font, Inter, system-ui, sans-serif);
+  font-size: clamp(2rem, 3vw, 2.85rem);
+}
+html body.lens-app #chapter-text .atlas-passage-heading .passage-picker-trigger {
+  display: none;
+}
+html body.lens-app #chapter-text .atlas-passage-heading .passage-bookmark {
+  border-color: transparent;
+  color: var(--lens-muted);
+}
+html body.lens-app #chapter-text .atlas-passage-heading .passage-bookmark:is(:hover, [aria-pressed="true"]) {
+  color: var(--lens-copper);
+  border-color: var(--lens-copper);
+}
+
+html body.lens-app #chapter-text .verse {
+  padding: 0 44px 0 0;
+  border-left-width: 2px;
+}
+html body.lens-app #chapter-text .verse-body {
+  font-family: var(--lens-reading-font, var(--verse-font-family, Inter, system-ui, sans-serif));
+}
+html body.lens-app #chapter-text .atlas-evidence-marker {
+  border-color: transparent;
+  border-radius: 5px;
+  background: transparent;
+}
+html body.lens-app #chapter-text .verse.lens-active-verse {
+  background: var(--lens-copper-soft);
+  border-left-color: var(--lens-copper);
+}
+html body.lens-app #chapter-text .atlas-evidence-marker:is(:hover, [aria-pressed="true"]) {
+  border-color: transparent;
+  background: var(--lens-copper-soft);
+}
+body.lens-app #lensInspector .lens-inspector-title {
+  font-family: var(--lens-display-font, Inter, system-ui, sans-serif);
+}
+body.lens-app #lensInspector .lens-evidence h3 {
+  font-family: var(--lens-display-font, Inter, system-ui, sans-serif);
+}
+body.lens-app :is(#lensInspector, #lensComparison) .lens-evidence :is(blockquote, q) {
+  font-family: var(--lens-reading-font, var(--verse-font-family, Inter, system-ui, sans-serif));
+}
+body.lens-app #lensInspector .lens-note-editor h3 {
+  font-family: var(--lens-display-font, Inter, system-ui, sans-serif);
+}
+@media (max-width: 760px) {
+  html body.lens-app #chapter-text .atlas-passage-heading :is(h2, .passage-heading-picker) {
+    font-size: clamp(1.8rem, 7.5vw, 2.3rem);
+  }
+}
+/*  atlas-explore.css priorities  */
+html body.lens-app #explore-view.atlas-explore :is(h1,h2) {
+  font-family:var(--lens-display-font,Inter,system-ui,sans-serif);
+}
+html body.lens-app #explore-view .atlas-explore-tab { border:0; border-radius:999px;
+  color:var(--lens-muted); background:transparent; box-shadow:none;
+}
+html body.lens-app #explore-view .atlas-explore-tab[aria-selected=true] { color:var(--lens-ink); background:color-mix(in srgb,var(--lens-ink) 8%,transparent); }
+html body.lens-app #explore-view .atlas-explore-tab:hover { color:var(--lens-ink); }
+html body.lens-app #explore-view .atlas-explore-related :is(a,button) {
+  border:0; border-radius:0; background:none; box-shadow:none;
+  color:inherit;
+}
+html body.lens-app #explore-view .atlas-explore-step { border:0; border-radius:50%; box-shadow:none;
+  color:var(--lens-ink); background:color-mix(in srgb,var(--lens-ink) 6%,transparent);
+}
+html body.lens-app #explore-view .atlas-explore-step:not(:disabled):hover { background:color-mix(in srgb,var(--lens-ink) 11%,transparent); }
+@media (prefers-reduced-motion:reduce) {
+  html body.lens-app #explore-view.atlas-explore * { scroll-behavior:auto; transition:none; }
+}
+@media (forced-colors:active) {
+  html body.lens-app #explore-view .atlas-explore-step { border:1px solid ButtonText; }
+}
+/*  place-story-refinements.css priorities  */
+html body.lens-app #places-view .place-map-action {
+  background: transparent;
+}
+html body.lens-app .story-summary :is(.person-chip, .location-chip) { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
+    }
+}
+
+@layer overrides.design {
+  /* These collection headings previously won by specificity over the shared
+     heading rule. Keep their established tracking in the final design layer. */
+  html body.lens-app #main > section:not(.lens-workspace) > .page-heading h1,
+  html body.lens-app #main > section > .lens-section-heading h1 {
+    letter-spacing: -.045em;
+  }
+}
+
+@layer overrides.design {
+html body.lens-app #places-view .place-map-preview{background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.2),rgba(15,23,34,.65));background-color:#0f1722;border-color:rgba(59,130,246,.4)}
+html body.lens-app:not(.dark) #places-view .place-map-preview{background:linear-gradient(rgba(59,130,246,.10),rgba(255,255,255,.85));background-color:#f7faff}
+}

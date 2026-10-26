@@ -1,0 +1,2009 @@
+@layer pages {/*
+  workspace.css
+ *//*
+ * BibleLens study workspace.
+ * Reading, search and notebook share the same tokens as collection and dialog
+ * styles. Native and web clients use this same interface.
+ */
+body.lens-app {
+  --lens-paper: #f7f4ec;
+  --lens-surface: #fffdf8;
+  --lens-ink: #243139;
+  --lens-muted: #5f6b6d;
+  --lens-rule: #d4d3c9;
+  --lens-copper: #914b2f;
+  --lens-copper-soft: #f1e4d8;
+  --lens-link: #205e6a;
+  --lens-link-soft: #e5eef0;
+  --lens-focus: #1263bc;
+  --lens-danger: #a03934;
+  --lens-inspector-width: 22rem;
+  --lens-nav-height: 4.5rem;
+  --bg: var(--lens-paper);
+  --panel: var(--lens-surface);
+  --ink: var(--lens-ink);
+  --muted: var(--lens-muted);
+  --line: var(--lens-rule);
+  --green: var(--lens-link);
+  --soft: var(--lens-link-soft);
+  --rust: var(--lens-copper);
+  --ui-link: var(--lens-link);
+  --focus-blue: var(--lens-focus);
+  --control-text: var(--lens-ink);
+  color-scheme: light;
+  color: var(--lens-ink);
+  font-family: var(--ui-font, "Inter", system-ui, sans-serif);
+  line-height: 1.6;
+  min-width: 0;
+}
+
+body.lens-app.dark {
+  --lens-paper: #151e25;
+  --lens-surface: #1b272f;
+  --lens-ink: #edf0e9;
+  --lens-muted: #b6c1c0;
+  --lens-rule: #3a484e;
+  --lens-copper: #e8b18c;
+  --lens-copper-soft: #392d26;
+  --lens-link: #a3d0d5;
+  --lens-link-soft: #233a40;
+  --lens-focus: #99cfff;
+  --lens-danger: #ffb1a5;
+  color-scheme: dark;
+}
+
+/* The old page-wide pan-only rule also restricted every descendant's zoom.
+   Keep pinch available through the full ancestor chain; drag handles opt out. */
+html:has(> body.lens-app),
+body.lens-app,
+body.lens-app :is(button, a, input, textarea, select, summary):not(.passage-picker-trigger):not(#clear-chat):not([data-drag-handle]):not(.edge-page) {
+  touch-action: pan-x pan-y pinch-zoom;
+}
+body.lens-app #reader-settings { touch-action: pan-x pan-y pinch-zoom; }
+html body.lens-app #main {
+  width: 100%;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 64px) 64px;
+}
+body.lens-app #main > section { min-width: 0; }
+body.lens-app :is(.lens-masthead, .lens-workspace, .lens-reading-bar, .lens-inspector, #lensComparison) {
+  font-family: var(--ui-font, "Inter", system-ui, sans-serif);
+}
+body.lens-app :is(.lens-workspace, .lens-inspector, #lensComparison) :is(h1, h2, h3, h4, p, li, a) {
+  overflow-wrap: anywhere;
+}
+body.lens-app :is(.lens-workspace, .lens-inspector, #lensComparison) :is(h1, h2, h3, h4) {
+  color: var(--lens-ink);
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+body.lens-app :is(.lens-workspace, .lens-inspector, #lensComparison) p { line-height: 1.7; }
+body.lens-app :is(.lens-workspace, .lens-inspector, #lensComparison) small { font-size: .8125rem; }
+
+/* Masthead: the wordmark and the four destinations remain stable. */
+html body.lens-app > #lensMasthead.lens-masthead {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) auto minmax(120px, 1fr);
+  align-items: center;
+  gap: 24px;
+  z-index: 40;
+  width: 100%;
+  max-width: none;
+  border: 0;
+  border-bottom: 1px solid var(--lens-rule);
+}
+body.lens-app #lensMasthead .lens-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: 11px;
+  min-width: 0;
+  min-height: 44px;
+  color: var(--lens-ink);
+  text-decoration: none;
+}
+body.lens-app #lensMasthead .lens-mark {
+  display: grid;
+  place-items: center;
+  flex: 0 0 35px;
+  width: 35px;
+  height: 40px;
+  border-top: 2px solid var(--lens-copper);
+  border-bottom: 2px solid var(--lens-copper);
+  color: var(--lens-copper);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.08em;
+}
+body.lens-app #lensMasthead .lens-brand :is(strong, b, .lens-brand-title) {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -.04em;
+}
+body.lens-app #lensMasthead .lens-brand > span:last-child { font-size: 1.125rem; font-weight: 600; line-height: 1.25; letter-spacing: -.04em; }
+body.lens-app #lensMasthead .lens-mark svg { width: 25px; height: 25px; }
+body.lens-app #lensMasthead .lens-brand :is(small, .lens-brand-subtitle) {
+  display: block;
+  margin-top: 3px;
+  color: var(--lens-muted);
+  font-size: .6875rem;
+  line-height: 1.35;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+html body.lens-app #lensMasthead nav.lens-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  grid-column: auto;
+  grid-row: auto;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+html body.lens-app #lensMasthead .lens-primary :is(a, button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  min-height: 44px;
+  height: auto;
+  flex: 0 1 auto;
+  padding: 8px 13px;
+  margin: 0;
+  font: 500 .875rem/1.4 var(--ui-font);
+  text-decoration: none;
+  opacity: 1;
+  transform: none;
+}
+html body.lens-app #lensMasthead .lens-primary :is(a, button) > span { margin: 0; padding: 0; border: 0; border-radius: 0; background: transparent; color: inherit; font: inherit; overflow-wrap: anywhere; }
+html body.lens-app #lensMasthead .lens-primary :is(a, button) svg {
+  flex: none;
+}
+body.lens-app #lensMasthead .lens-tools {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
+}
+
+/* Compact, explicit controls. Decorative shadows never communicate state. */
+body.lens-app :is(.lens-button, .lens-tools button, .lens-reading-actions button, .lens-panel-close, .lens-notebook-tools button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 0;
+  min-height: 40px;
+  max-width: 100%;
+  font: 500 .8125rem/1.4 var(--ui-font);
+  white-space: normal;
+  text-align: center;
+}
+body.lens-app :is(.lens-button, .lens-tools button, .lens-reading-actions button, .lens-panel-close) svg { width: 18px; height: 18px; flex: none; }
+body.lens-app .lens-panel-close { width: 40px; height: 40px; flex: 0 0 40px; }
+body.lens-app :is(.lens-button, .lens-tools button, .lens-reading-actions button):disabled { opacity: .55; cursor: default; }
+
+/* Reading is the main surface; the evidence occupies a real document margin. */
+body.lens-app .chapter-workspace { min-width: 0; padding: 0; margin: 0; }
+body.lens-app #lensReadingBar.lens-reading-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--lens-rule);
+  margin-bottom: 32px;
+}
+body.lens-app .lens-reading-location { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 15px; min-width: 0; }
+body.lens-app .lens-reading-location :is(strong, b) { font-weight: 600; font-size: 1rem; }
+body.lens-app .lens-reading-location :is(small, .lens-reading-edition) { font-size: .8125rem; color: var(--lens-muted); }
+body.lens-app .lens-reading-location .lens-kicker { margin: 0; }
+body.lens-app #lens-reading-meta { color: var(--lens-muted); font-size: .8125rem; }
+body.lens-app .lens-reading-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+body.lens-app .lens-edition-label { display: flex; min-width: 0; }
+body.lens-app .lens-edition-label select { min-height: 40px; width: auto; min-width: 76px; margin: 0; padding: 8px 26px 8px 11px; border: 1px solid var(--lens-rule); border-radius: 5px; background: var(--lens-surface); color: var(--lens-ink); font-size: .8125rem; }
+body.lens-app .lens-reading-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, var(--lens-inspector-width));
+  gap: clamp(30px, 4vw, 64px);
+  align-items: start;
+  min-width: 0;
+}
+body.lens-app .lens-reading-layout:has(> #lensInspector[hidden]),
+body.lens-app .lens-reading-layout.lens-inspector-closed,
+body.lens-app.lens-focus-mode .lens-reading-layout { grid-template-columns: minmax(0, 1fr); }
+body.lens-app #reader-layout {
+  display: block;
+  width: 100%;
+  max-width: calc(68ch + 5.5rem);
+  min-width: 0;
+  padding: 0;
+  overflow: visible;
+  font-size: 1.125rem;
+}
+html body.lens-app #chapter-text {
+  width: 100%;
+  min-width: 0;
+  min-height: 250px;
+  margin: 0;
+}
+body.lens-app #chapter-text .chapter-heading-row { margin: 0 0 30px; gap: 0; }
+body.lens-app #chapter-text .passage-heading { align-items: center; gap: 12px; }
+body.lens-app #chapter-text .passage-heading > div { flex: 1; min-width: 0; }
+html body.lens-app #chapter-text .passage-heading :is(h2, .passage-heading-picker) {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -.045em;
+}
+body.lens-app #chapter-text .passage-heading-picker { min-height: 44px; text-align: left; }
+body.lens-app #chapter-text .passage-description {
+  display: block;
+  margin: 9px 0 0;
+  color: var(--lens-muted);
+  font-size: .9375rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-transform: none;
+}
+html body.lens-app #chapter-text .passage-picker-trigger,
+html body.lens-app #chapter-text .passage-bookmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  margin: 0;
+}
+html body.lens-app #chapter-text :is(.passage-picker-trigger, .passage-bookmark) svg { width: 21px; height: 21px; }
+body.lens-app #chapter-text .verse-content-grid { min-width: 0; }
+html body.lens-app #chapter-text .verse {
+  display: block;
+  position: relative;
+  margin: 0 0 2px;
+  scroll-margin-top: calc(var(--lens-nav-height) + 26px);
+}
+html body.lens-app #chapter-text .verse-body {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  column-gap: 5px;
+  padding: 0;
+  margin: 0;
+  color: var(--lens-ink);
+  font-family: var(--verse-font-family, var(--ui-font));
+  font-size: var(--chapter-size, 1.125rem);
+  line-height: 1.85;
+  letter-spacing: -.012em;
+}
+body.lens-app #chapter-text .verse-body [data-scripture] { min-width: 0; overflow-wrap: break-word; }
+html body.lens-app #chapter-text :is(.verse-num, .verse-number, .verse-menu-trigger) {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+  width: 2.25rem;
+  min-width: 2.25rem;
+  min-height: 36px;
+  height: auto;
+  margin: 0;
+  padding: 5px 3px;
+  border-radius: 3px;
+  color: var(--lens-muted);
+  font: 500 .75rem/1.5 var(--ui-font);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  vertical-align: baseline;
+  opacity: 1;
+}
+body.lens-app #chapter-text :is(.verse-num, .verse-number, .verse-menu-trigger):hover { color: var(--lens-copper); }
+html body.lens-app #chapter-text .lens-verse-evidence {
+  position: absolute; right: 0; top: 10px; display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 36px; min-width: 38px; min-height: 36px; margin: 0;
+  font: 500 .6875rem/1.4 var(--ui-font); font-variant-numeric: tabular-nums;
+}
+body.lens-app.lens-focus-mode #chapter-text .lens-verse-evidence { opacity: .7; }
+body.lens-app.lens-focus-mode #chapter-text .lens-verse-evidence:is(:hover, :focus-visible) { opacity: 1; }
+body.lens-app .chapter-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  max-width: 49rem;
+  margin: 24px 0 0;
+  padding: 20px 0;
+  border-top: 1px solid var(--lens-rule);
+  color: var(--lens-muted);
+  font-size: .875rem;
+}
+body.lens-app .chapter-bottom button {
+  width: 44px; height: 44px; min-width: 44px; min-height: 44px;
+  padding: 10px; border: 1px solid var(--lens-rule); border-radius: 5px;
+  background: transparent; color: var(--lens-ink);
+}
+body.lens-app #passage-tools {
+  width: min(560px, calc(100vw - 32px));
+  border-radius: 8px;
+  background: var(--lens-surface);
+  color: var(--lens-ink);
+  border-color: var(--lens-rule);
+}
+body.lens-app #passage-tools :is(.note-privacy, .passage-note-status, label) { color: var(--lens-muted); }
+
+/* Inspector: distinct source roles, quiet dividers, visible qualifications. */
+body.lens-app #lensInspector.lens-inspector {
+  position: sticky;
+  top: calc(var(--lens-nav-height) + env(safe-area-inset-top, 0px) + 20px);
+  min-width: 0;
+  max-height: calc(100dvh - var(--lens-nav-height) - env(safe-area-inset-top, 0px) - 44px);
+  padding: 0 0 20px 26px;
+  border-left: 1px solid var(--lens-rule);
+  background: transparent;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--lens-rule) transparent;
+  scroll-padding-block: 12px;
+}
+body.lens-app .lens-inspector-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 22px;
+  padding: 3px 0 18px;
+  border-bottom: 1px solid var(--lens-rule);
+}
+body.lens-app .lens-inspector-header > div { min-width: 0; }
+body.lens-app .lens-kicker,
+body.lens-app .lens-page-heading > small {
+  display: block;
+  margin: 0 0 10px;
+  color: var(--lens-copper);
+  font: 600 .6875rem/1.5 var(--ui-font);
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+body.lens-app .lens-inspector-title {
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -.035em;
+}
+body.lens-app .lens-inspector-header p { color: var(--lens-muted); font-size: .8125rem; margin: 6px 0 0; }
+body.lens-app .lens-inspector-intro { margin: 0 0 12px; font-size: .875rem; color: var(--lens-muted); }
+body.lens-app .lens-coverage { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; padding: 11px 0; border-block: 1px solid var(--lens-rule); color: var(--lens-muted); font-size: .75rem; }
+body.lens-app :is(.lens-tabs, .lens-inspector-tabs) { display: flex; gap: 16px; flex-wrap: wrap; margin: 0 0 24px; border-bottom: 1px solid var(--lens-rule); }
+body.lens-app :is(.lens-tabs, .lens-inspector-tabs) button {
+  min-height: 40px; font-size: .8125rem;
+}
+body.lens-app .lens-evidence-list { display: grid; gap: 26px; }
+body.lens-app .lens-evidence { min-width: 0; margin: 0; padding: 0 0 24px; border: 0; border-bottom: 1px solid var(--lens-rule); border-radius: 0; background: transparent; }
+body.lens-app .lens-evidence:last-child { padding-bottom: 0; border-bottom: 0; }
+body.lens-app .lens-evidence h3 { margin: 7px 0 12px; font-size: 1.125rem; line-height: 1.45; font-weight: 600; }
+body.lens-app .lens-evidence h4 { margin: 22px 0 8px; font-size: .875rem; line-height: 1.5; }
+body.lens-app .lens-evidence-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 10px; margin: 0 0 10px; font-size: .6875rem; line-height: 1.5; color: var(--lens-muted); }
+body.lens-app .lens-evidence-meta > span:first-child { color: var(--lens-copper); text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+body.lens-app .lens-evidence-refs { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+body.lens-app .lens-evidence-refs :is(a, button) { min-height: 36px; font-size: .8125rem; }
+body.lens-app .lens-evidence-sources { display: grid; gap: 3px; margin-top: 14px; }
+body.lens-app .lens-evidence :is(p, li) { font-size: .875rem; margin-block: 10px; line-height: 1.7; }
+body.lens-app .lens-evidence :is(.lens-evidence-type, .lens-evidence-category) { display: inline-flex; gap: 7px; align-items: center; color: var(--lens-copper); font-size: .6875rem; letter-spacing: .075em; text-transform: uppercase; font-weight: 600; }
+body.lens-app .lens-evidence :is(.lens-evidence-limit, .lens-scope, .lens-qualification) {
+  color: var(--lens-muted); font-size: .8125rem; padding-left: 12px;
+  border-left: 2px solid var(--lens-copper); margin-block: 16px;
+}
+body.lens-app .lens-evidence details { margin-top: 15px; }
+body.lens-app .lens-evidence summary { display: list-item; min-height: 36px; padding: 6px 0; color: var(--lens-link); font-size: .8125rem; font-weight: 500; }
+body.lens-app .lens-source-link {
+  display: block;
+  max-width: 100%;
+  padding: 8px 0;
+  color: var(--lens-link);
+  font-size: .8125rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  text-underline-offset: 4px;
+}
+body.lens-app .lens-note-editor { display: grid; gap: 10px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--lens-rule); }
+body.lens-app .lens-note-editor label { color: var(--lens-ink); font-size: .875rem; font-weight: 500; }
+body.lens-app :is(.lens-note-editor, .lens-note) :is(input, textarea) {
+  display: block; width: 100%; min-width: 0; max-width: 100%;
+  border: 1px solid var(--lens-rule); border-radius: 5px; padding: 12px;
+  background: var(--lens-surface); color: var(--lens-ink);
+  font-family: var(--ui-font); font-size: 1rem; line-height: 1.7;
+}
+body.lens-app :is(.lens-note-editor, .lens-note) textarea { min-height: 150px; resize: vertical; }
+body.lens-app .lens-note-editor :is(small, [role="status"]) { color: var(--lens-muted); font-size: .8125rem; }
+
+/* Explore and Search read like an index, not a dashboard of widgets. */
+body.lens-app .lens-workspace { padding: 46px 0 20px; }
+body.lens-app .lens-page-heading { max-width: 48rem; margin-bottom: 40px; }
+body.lens-app .lens-page-heading h1 { margin: 0 0 16px; font-size: clamp(2rem, 4vw, 3.125rem); font-weight: 500; line-height: 1.16; letter-spacing: -.055em; }
+body.lens-app .lens-page-heading p { max-width: 42rem; margin: 0; color: var(--lens-muted); font-size: 1rem; }
+body.lens-app .lens-explore-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px; }
+body.lens-app .lens-collection {
+  display: flex; flex-direction: column; align-items: flex-start;
+  min-width: 0; min-height: 215px; padding: 26px 2px 24px;
+  border: 0; border-top: 1px solid var(--lens-rule); border-radius: 0;
+  background: transparent; color: var(--lens-ink); text-decoration: none;
+}
+body.lens-app .lens-collection-symbol { display: flex; align-items: center; justify-content: flex-start; min-height: 32px; color: var(--lens-copper); margin-bottom: 17px; font-size: 1.25rem; }
+body.lens-app .lens-collection-symbol svg { width: 26px; height: 26px; stroke-width: 1.5; }
+body.lens-app .lens-collection h2 { margin: 0 0 9px; font-size: 1.375rem; font-weight: 500; line-height: 1.35; }
+body.lens-app .lens-collection p { margin: 0 0 18px; max-width: 29rem; color: var(--lens-muted); font-size: .875rem; }
+body.lens-app .lens-collection-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; margin-top: auto; font-size: .75rem; color: var(--lens-link); }
+body.lens-app .lens-collection:hover h2 { color: var(--lens-copper); }
+body.lens-app .lens-collection:hover { border-top-color: var(--lens-copper); }
+body.lens-app .lens-collection > div { display: flex; flex-direction: column; align-items: flex-start; flex: 1; width: 100%; }
+body.lens-app .lens-collection h2 > span { color: var(--lens-muted); font-size: .8125rem; font-weight: 400; }
+body.lens-app .lens-starter-studies { margin: 44px 0 28px; padding-top: 24px; border-top: 2px solid var(--lens-copper); }
+body.lens-app .lens-starter-studies > h2 { font-size: 1.5rem; font-weight: 500; margin: 0 0 18px; }
+body.lens-app .lens-starter-studies .lens-result-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; }
+body.lens-app .lens-search-form { display: flex; align-items: stretch; gap: 10px; width: 100%; max-width: 52rem; margin: 0 0 14px; }
+html body.lens-app .lens-search-form input[type="search"] {
+  width: 100%; flex: 1; min-width: 0; min-height: 52px; height: auto;
+  padding: 13px 16px; margin: 0; border: 1px solid var(--lens-rule); border-radius: 5px;
+  color: var(--lens-ink); font-size: 1rem; line-height: 1.5;
+}
+body.lens-app .lens-search-form button { flex: none; min-height: 52px; }
+body.lens-app .lens-search-form input::placeholder { color: var(--lens-muted); opacity: 1; }
+body.lens-app .lens-search-suggestions { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-bottom: 22px; color: var(--lens-muted); font-size: .8125rem; }
+body.lens-app .lens-search-suggestions > span { margin-right: 4px; }
+body.lens-app .lens-search-suggestions a { display: inline-flex; align-items: center; min-height: 40px; margin-left: 8px; color: var(--lens-link); }
+body.lens-app #lens-search-status { min-height: 24px; margin: 18px 0; font-size: .875rem; color: var(--lens-muted); }
+body.lens-app :is(.lens-search-hint, .lens-search-status, .lens-search-meta) { color: var(--lens-muted); font-size: .8125rem; }
+body.lens-app .lens-search-results { margin-top: 36px; }
+body.lens-app .lens-search-jump { display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap; gap: 6px 20px; width: 100%; margin: 24px 0 0; padding: 10px 0; border-block: 1px solid var(--lens-rule); }
+body.lens-app .lens-search-jump a { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; color: var(--lens-link); font-size: .8125rem; line-height: 1.5; text-decoration: none; }
+body.lens-app .lens-search-jump a:hover { text-underline-offset: 4px; }
+body.lens-app .lens-search-jump :is(small, span) { margin: 0; padding: 0; background: none; border-radius: 0; color: var(--lens-muted); font-size: inherit; }
+body.lens-app .lens-result-group { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 28px; padding: 26px 0 18px; border-top: 1px solid var(--lens-rule); scroll-margin-top: calc(var(--lens-nav-height) + env(safe-area-inset-top, 0px) + 20px); }
+body.lens-app .lens-result-group > h2 { margin: 5px 0; font-size: .75rem; line-height: 1.5; color: var(--lens-muted); text-transform: uppercase; letter-spacing: .075em; }
+body.lens-app .lens-result-group > h2 > span { display: inline-block; margin-left: 9px; font-weight: 400; color: var(--lens-copper); }
+body.lens-app .lens-result-list { display: grid; gap: 0; min-width: 0; }
+body.lens-app .lens-result {
+  display: block; width: 100%; min-width: 0; min-height: 44px;
+  margin: 0;
+  text-align: left; text-decoration: none; line-height: 1.6;
+}
+body.lens-app .lens-result :is(strong, h3) { display: block; font-size: 1rem; font-weight: 500; margin: 0 0 5px; }
+body.lens-app .lens-result :is(p, small, .lens-result-meta) { display: block; margin: 4px 0 0; font-size: .875rem; color: var(--lens-muted); line-height: 1.65; }
+body.lens-app .lens-result > span { display: block; margin-top: 5px; color: var(--lens-muted); font-size: .875rem; line-height: 1.7; }
+body.lens-app .lens-result:hover :is(strong, h3) { color: var(--lens-copper); }
+body.lens-app .lens-result mark { padding: 0 2px; color: inherit; background: var(--lens-copper-soft); }
+body.lens-app .lens-more-results { grid-column: 1 / -1; min-width: 0; margin: 4px 0 0; padding: 0; border: 0; background: transparent; }
+body.lens-app .lens-more-results > summary { display: list-item; width: fit-content; max-width: 100%; min-height: 44px; margin: 0; padding: 10px 0; color: var(--lens-link); font-size: .8125rem; line-height: 1.6; font-weight: 500; list-style-position: inside; }
+body.lens-app .lens-more-results > summary::marker { color: var(--lens-copper); }
+body.lens-app .lens-more-results[open] > summary { margin-bottom: 4px; }
+body.lens-app .lens-more-results .lens-result-list { display: grid; grid-template-columns: minmax(0, 1fr); }
+body.lens-app .lens-search-results > .lens-empty { grid-column: 1 / -1; }
+body.lens-app .lens-answer-provenance { display: block; max-width: 50rem; margin: 14px 0 20px; padding: 10px 0; border-top: 1px solid var(--lens-rule); color: var(--lens-muted); font-size: .8125rem; line-height: 1.65; }
+body.lens-app .lens-answer-provenance a { color: var(--lens-link); text-underline-offset: 3px; }
+body.lens-app .lens-empty { max-width: 44rem; padding: 32px 0; border-top: 1px solid var(--lens-rule); color: var(--lens-muted); font-size: .9375rem; }
+body.lens-app .lens-empty h2 { color: var(--lens-ink); font-size: 1.25rem; margin: 0 0 9px; }
+body.lens-app .lens-empty p { max-width: 36rem; margin: 0 0 15px; }
+
+/* Notebook: an editable, legible document list with honest storage feedback. */
+body.lens-app .lens-notebook-tools { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+body.lens-app .lens-notebook-tools > div { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+body.lens-app .lens-notebook-tools > div:last-child { margin-left: auto; }
+body.lens-app .lens-notebook-list { display: grid; gap: 30px; max-width: 58rem; }
+body.lens-app .lens-note { min-width: 0; padding: 5px 0 25px 22px; border: 0; border-left: 2px solid var(--lens-copper); border-bottom: 1px solid var(--lens-rule); border-radius: 0; background: transparent; }
+body.lens-app .lens-note :is(h2, h3) { margin: 0 0 9px; font-size: 1.25rem; line-height: 1.4; }
+body.lens-app .lens-note :is(.lens-note-meta, small) { display: block; margin-bottom: 15px; color: var(--lens-muted); font-size: .8125rem; }
+body.lens-app .lens-note p { white-space: pre-wrap; }
+body.lens-app .lens-note textarea { margin: 12px 0; }
+body.lens-app .lens-note-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; margin-bottom: 16px; }
+body.lens-app .lens-note-heading > div { min-width: 0; }
+body.lens-app .lens-note-heading > a { flex: none; }
+body.lens-app .lens-note-heading h2 a { color: var(--lens-ink); }
+body.lens-app .lens-note-heading h2 a:hover { color: var(--lens-copper); }
+body.lens-app .lens-note-save-status { margin-right: auto; color: var(--lens-muted); font-size: .8125rem; }
+body.lens-app :is(.lens-note-actions, .lens-note > footer) { display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap; gap: 9px; margin: 14px 0 0; padding: 0; border: 0; }
+body.lens-app .lens-note [role="status"] { color: var(--lens-muted); font-size: .8125rem; }
+
+/* Comparison is a parallel reading surface with one shared interpretation margin. */
+body.lens-app #lensComparison { margin: 40px 0 20px; padding: 28px 0 0; border-top: 2px solid var(--lens-copper); }
+body.lens-app #lensComparison > :is(h2, h3) { margin-top: 0; font-size: 1.5rem; }
+body.lens-app .lens-comparison-form { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 12px; margin: 24px 0 30px; }
+body.lens-app .lens-comparison-form label { display: grid; flex: 1 1 170px; gap: 6px; min-width: 0; color: var(--lens-muted); font-size: .8125rem; }
+body.lens-app .lens-comparison-form :is(input, select) { width: 100%; min-width: 0; min-height: 44px; border: 1px solid var(--lens-rule); border-radius: 5px; background: var(--lens-surface); color: var(--lens-ink); padding: 8px 12px; font-size: 1rem; }
+body.lens-app .lens-comparison-form button { min-height: 44px; }
+body.lens-app .lens-comparison-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; align-items: start; }
+body.lens-app .lens-comparison-passage { min-width: 0; padding: 0 24px 18px 0; border-right: 1px solid var(--lens-rule); }
+body.lens-app .lens-comparison-passage:nth-child(2) { border-right: 0; padding-right: 0; }
+body.lens-app .lens-comparison-passage h3 { margin: 0 0 17px; font-size: 1.125rem; }
+body.lens-app .lens-comparison-passage :is(p, blockquote) { margin: 0 0 15px; font-family: var(--verse-font-family, var(--ui-font)); font-size: 1.125rem; line-height: 1.8; }
+body.lens-app .lens-comparison-passage :is(sup, .lens-verse-number) { color: var(--lens-muted); font-size: .75rem; padding-right: 7px; }
+body.lens-app .lens-parallel-text { max-width: 68ch; margin-top: 24px; }
+body.lens-app .lens-comparison-notes { grid-column: 1 / -1; padding-top: 25px; border-top: 1px solid var(--lens-rule); }
+body.lens-app .lens-comparison-notes .lens-evidence-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+
+/* Repair keyboard visibility lost in late legacy overrides, including dialogs. */
+body.lens-app :is(button, a, input, textarea, select, summary, [tabindex]) { scroll-margin-block: calc(var(--lens-nav-height) + 20px) 110px; }
+body.lens-app > footer { width: 100%; max-width: 1460px; padding: 24px clamp(20px, 4vw, 64px); margin: 0 auto; border-top: 1px solid var(--lens-rule); color: var(--lens-muted); }
+body.lens-app #workspace-storage-status.workspace-storage-status {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;
+  position: relative; z-index: 41; width: 100%; margin: 0;
+  padding: 12px clamp(16px, 4vw, 64px); border-bottom: 2px solid var(--lens-copper);
+  background: var(--lens-copper-soft); color: var(--lens-ink); font-size: .875rem; line-height: 1.6;
+}
+body.lens-app #workspace-storage-status :is(p, span) { margin: 0; }
+body.lens-app #workspace-storage-status button { min-height: 44px; padding: 8px 12px; border: 1px solid var(--lens-copper); border-radius: 5px; }
+
+@media (min-width: 1060px) {
+  body.lens-app .lens-search-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 42px; align-items: start; }
+  body.lens-app .lens-search-results .lens-result-group { display: block; min-width: 0; }
+  body.lens-app .lens-search-results .lens-result-group > h2 { margin: 0 0 16px; }
+}
+
+@media (max-width: 1100px) {
+  html body.lens-app > #lensMasthead.lens-masthead { grid-template-columns: minmax(160px, 1fr) auto auto; gap: 16px; }
+  body.lens-app .lens-reading-layout { --lens-inspector-width: 19rem; gap: 28px; }
+  body.lens-app #lensInspector.lens-inspector { padding-left: 20px; }
+  body.lens-app .lens-explore-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; }
+  html body.lens-app #lensMasthead .lens-primary :is(a, button) { padding-inline: 9px; }
+}
+
+@media (max-width: 760px) {
+  body.lens-app { --lens-nav-height: 4.25rem; padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px)); }
+  html body.lens-app #main { padding: 0 max(14px, env(safe-area-inset-right, 0px)) 32px max(14px, env(safe-area-inset-left, 0px)); }
+  html body.lens-app > #lensMasthead.lens-masthead { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; }
+  body.lens-app #lensMasthead .lens-brand :is(small, .lens-brand-subtitle) { font-size: .625rem; }
+  body.lens-app #lensMasthead .lens-mark { width: 29px; flex-basis: 29px; height: 35px; font-size: 1.125rem; }
+  body.lens-app #lensMasthead .lens-tools { gap: 6px; }
+  body.lens-app #lensMasthead .lens-tools button { min-width: 44px; min-height: 44px; }
+  html body.lens-app #lensMasthead nav.lens-primary {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 45;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    width: 100%;
+    padding: 6px max(8px, env(safe-area-inset-right, 0px)) calc(6px + env(safe-area-inset-bottom, 0px)) max(8px, env(safe-area-inset-left, 0px));
+    border-top: 1px solid var(--lens-rule);
+    background: var(--lens-surface);
+  }
+  html body.lens-app #lensMasthead .lens-primary :is(a, button) {
+    flex-direction: column; gap: 5px; width: 100%; min-width: 0; min-height: 58px;
+    padding: 6px 4px;
+    font-size: .6875rem; line-height: 1.35; white-space: normal;
+  }
+  html.mobile-editing body.lens-app #lensMasthead nav.lens-primary { display: none; }
+  body.lens-app #lensReadingBar.lens-reading-bar { align-items: flex-start; gap: 12px; padding: 18px 0; margin-bottom: 23px; }
+  body.lens-app .lens-reading-location { width: 100%; gap: 6px 12px; }
+  body.lens-app .lens-reading-actions { gap: 7px; }
+  body.lens-app :is(.lens-button, .lens-reading-actions button, .lens-notebook-tools button, .lens-panel-close) { min-height: 44px; }
+  body.lens-app .lens-reading-layout { display: flex; flex-direction: column; gap: 26px; }
+  body.lens-app #reader-layout { max-width: none; }
+  body.lens-app #chapter-text .chapter-heading-row { margin-bottom: 20px; }
+  body.lens-app #chapter-text .passage-heading { flex-wrap: wrap; }
+  body.lens-app #chapter-text .passage-description { font-size: .875rem; }
+  html body.lens-app #chapter-text .verse-body { grid-template-columns: 40px minmax(0, 1fr); gap: 3px; line-height: 1.8; }
+  html body.lens-app #chapter-text :is(.verse-num, .verse-number, .verse-menu-trigger) { width: 40px; min-width: 40px; min-height: 44px; }
+  html body.lens-app #chapter-text .lens-verse-evidence { top: 8px; width: 44px; height: 44px; min-width: 44px; min-height: 44px; }
+  body.lens-app .lens-edition-label select { min-height: 44px; }
+  body.lens-app .lens-evidence-refs :is(a, button) { min-height: 44px; }
+  body.lens-app #lensInspector.lens-inspector { position: static; top: auto; width: 100%; max-height: none; padding: 23px 0 10px; border-left: 0; border-top: 2px solid var(--lens-copper); overflow: visible; }
+  /* The native modal brings evidence to the selected verse, with one scroller. */
+  body.lens-app .lens-reading-layout > #lensInspector.lens-inspector { display: none; }
+  html:has(body.lens-app #lens-inspector-sheet[open]),
+  body.lens-app:has(#lens-inspector-sheet[open]) { overscroll-behavior: none; }
+  html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet {
+    position: fixed;
+    box-sizing: border-box;
+    min-width: 0;
+    height: auto;
+    max-height: 85vh;
+    max-height: 85dvh;
+    border: 0;
+    border-top: 2px solid var(--lens-copper);
+    color: var(--lens-ink);
+    font-family: var(--ui-font, "Inter", system-ui, sans-serif);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    touch-action: pan-x pan-y pinch-zoom;
+    scroll-padding-block: 70px 24px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--lens-rule) transparent;
+  }
+  body.lens-app #lens-inspector-sheet .lens-inspector-sheet-close {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 54px;
+    margin: 0;
+    font: 500 .8125rem/1.5 var(--ui-font);
+    white-space: normal;
+    text-align: right;
+  }
+  body.lens-app #lens-inspector-sheet .lens-inspector-sheet-close svg { flex: none; width: 20px; height: 20px; }
+  body.lens-app #lens-inspector-sheet > #lensInspector.lens-inspector {
+    position: static;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: none;
+    padding: 24px max(20px, env(safe-area-inset-right, 0px)) calc(28px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left, 0px));
+    border: 0;
+    overflow: visible;
+  }
+  body.lens-app #lens-inspector-sheet :is(button, a, input, textarea, select, summary, [tabindex]) { scroll-margin-block: 70px 24px; }
+  body.lens-app .lens-inspector-header { margin-bottom: 20px; }
+  body.lens-app .lens-inspector-title { font-size: 1.375rem; }
+  body.lens-app .lens-evidence :is(p, li) { font-size: .9375rem; }
+  body.lens-app .lens-source-link { padding-block: 10px; min-height: 44px; }
+  body.lens-app .lens-workspace { padding-top: 32px; }
+  body.lens-app .lens-page-heading { margin-bottom: 29px; }
+  body.lens-app .lens-page-heading h1 { font-size: 2.125rem; }
+  body.lens-app .lens-explore-grid { gap: 0 24px; }
+  body.lens-app .lens-collection { min-height: 210px; }
+  body.lens-app .lens-collection h2 { font-size: 1.25rem; }
+  body.lens-app .lens-result-group { grid-template-columns: minmax(0, 1fr); gap: 9px; }
+  body.lens-app .lens-result-group > h2 { margin: 0; }
+  body.lens-app .lens-note { padding-left: 16px; }
+  body.lens-app .lens-note-actions .lens-button { flex: 0 1 auto; }
+  body.lens-app .lens-notebook-tools > div:last-child { margin-left: 0; }
+  body.lens-app .lens-comparison-grid { grid-template-columns: minmax(0, 1fr); gap: 25px; }
+  body.lens-app .lens-comparison-passage { border: 0; border-bottom: 1px solid var(--lens-rule); padding: 0 0 20px; }
+  body.lens-app .lens-comparison-notes { grid-column: auto; }
+  body.lens-app .lens-comparison-notes .lens-evidence-list { grid-template-columns: minmax(0, 1fr); }
+  body.lens-app #passage-tools { bottom: calc(88px + env(safe-area-inset-bottom, 0px)); }
+  body.lens-app > footer { padding: 20px; }
+}
+
+@media (max-width: 430px) {
+  html body.lens-app #main { padding-inline: 16px; }
+  html body.lens-app > #lensMasthead.lens-masthead { gap: 8px; }
+  body.lens-app #lensMasthead .lens-brand { gap: 8px; }
+  body.lens-app #lensMasthead .lens-brand :is(strong, b, .lens-brand-title) { font-size: 1rem; }
+  body.lens-app #lensMasthead .lens-brand :is(small, .lens-brand-subtitle) { letter-spacing: .04em; }
+  body.lens-app .lens-reading-actions { width: 100%; }
+  body.lens-app .lens-reading-actions button { flex: 1 1 auto; }
+  body.lens-app .lens-explore-grid { grid-template-columns: minmax(0, 1fr); }
+  body.lens-app .lens-collection { min-height: 0; padding-block: 22px; }
+  body.lens-app .lens-collection-symbol { margin-bottom: 12px; }
+  body.lens-app .lens-starter-studies .lens-result-list { grid-template-columns: minmax(0, 1fr); }
+  body.lens-app .lens-note-heading { flex-wrap: wrap; }
+  body.lens-app .lens-search-form { flex-wrap: wrap; }
+  body.lens-app .lens-search-form input[type="search"] { flex-basis: 100%; }
+  body.lens-app .lens-search-form button { min-height: 44px; }
+  body.lens-app .lens-comparison-form label { flex-basis: 100%; }
+  body.lens-app #chapter-text .passage-heading > div { flex-basis: calc(100% - 112px); }
+  body.lens-app .lens-note :is(input, textarea) { padding: 10px; }
+}
+
+@media (pointer: coarse) {
+  body.lens-app :is(.lens-button, .lens-tools button, .lens-panel-close, .lens-reading-actions button, .lens-notebook-tools button, .lens-source-link, .lens-tabs button, .lens-inspector-tabs button, .lens-search-jump a) { min-height: 44px; }
+}
+
+@media (forced-colors: active) {
+  body.lens-app { --lens-paper: Canvas; --lens-surface: Canvas; --lens-ink: CanvasText; --lens-muted: CanvasText; --lens-rule: CanvasText; --lens-copper: LinkText; --lens-link: LinkText; --lens-focus: Highlight; --lens-copper-soft: Canvas; --lens-link-soft: Canvas; }
+  body.lens-app.dark { --lens-paper: Canvas; --lens-surface: Canvas; --lens-ink: CanvasText; --lens-muted: CanvasText; --lens-rule: CanvasText; --lens-copper: LinkText; --lens-link: LinkText; --lens-focus: Highlight; --lens-copper-soft: Canvas; --lens-link-soft: Canvas; }
+  body.lens-app #lensMasthead .lens-primary [aria-current="page"] { font-weight: 700; }
+  body.lens-app :is(button, a)[aria-pressed="true"] { outline: 1px solid Highlight; }
+}
+/* Comparison is a first-class reading mode; the passage remains ready to resume. */
+body.lens-app .lens-inspector-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+body.lens-app .lens-alternative-readings { margin: 20px 0; border-top: 1px solid var(--lens-rule); padding-top: 16px; }
+body.lens-app .lens-alternative-readings > summary { color: var(--lens-copper); cursor: pointer; font-weight: 600; }
+/* Retired glass and icon-tint controls do not govern the new workspace surface. */
+@media (max-width: 360px) {
+  body.lens-app #lensMasthead .lens-brand small { display: none; }
+  body.lens-app #lensMasthead .lens-primary a span { font-size: clamp(12px, .6875rem, 16px); white-space: nowrap; }
+}
+/*
+  system.css
+ *//* Shared visual rules for every BibleLens surface. Feature styles own layout. */
+html body.lens-app {
+  --caption-size: max(.8125rem, 12px);
+  --border: var(--lens-rule);
+  --text: var(--lens-ink);
+  --text-secondary: var(--lens-muted);
+  --surface-base: 0;
+  --surface-gradient: 0;
+  --profile-glow: transparent;
+  --lens-control-bg: color-mix(in srgb, var(--lens-ink) 5%, var(--lens-surface));
+  --lens-control-hover: color-mix(in srgb, var(--lens-ink) 9%, var(--lens-surface));
+  accent-color: var(--lens-copper);
+}
+html body.lens-app :is(button, input, select, textarea, summary) {
+  font-family: var(--ui-font, Inter, system-ui, sans-serif);
+}
+html body.lens-app :is(button, a, summary) { -webkit-tap-highlight-color: transparent; }
+html body.lens-app :is(button, input, select, textarea):disabled { opacity: .48; cursor: not-allowed; }
+/* Brief action feedback stays clear of the mobile destination bar. */
+html body.lens-app .lens-action-toast {
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right, 0px));
+  bottom: max(20px, env(safe-area-inset-bottom, 0px));
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+  max-width: min(420px, calc(100vw - 40px));
+  padding: 8px 12px 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background: var(--lens-ink);
+  color: var(--lens-paper);
+  box-shadow: 0 8px 28px #07131925;
+  font: 400 .875rem/1.5 var(--ui-font, "Inter", system-ui, sans-serif);
+}
+html body.lens-app .lens-action-message { min-width: 0; margin: 0; color: inherit; overflow-wrap: anywhere; }
+html body.lens-app .lens-action-toast .lens-action-undo {
+  flex: none;
+  min-width: 56px;
+  min-height: 44px;
+  padding: 8px 10px;
+  font: 500 .875rem/1.4 var(--ui-font, "Inter", system-ui, sans-serif);
+}
+html body.lens-app .lens-action-toast button.lens-action-undo:focus-visible { outline-offset: 3px; }
+html body.lens-app dialog > .lens-action-toast { position: sticky; inset: auto; bottom: 0; margin: 16px 0 0 auto; max-width: 100%; }
+@media (max-width: 760px) {
+  html body.lens-app > .lens-action-toast {
+    left: max(12px, env(safe-area-inset-left, 0px));
+    right: max(12px, env(safe-area-inset-right, 0px));
+    bottom: calc(var(--lens-nav-height, 4.4rem) + 12px + env(safe-area-inset-bottom, 0px));
+    width: auto;
+    max-width: none;
+  }
+  html body.lens-app > .lens-action-toast .lens-action-message { flex: 1; }
+}
+html body.lens-app :is(h1, h2, h3, h4, h5) {
+  color: var(--lens-ink);
+  font-family: var(--ui-font, Inter, system-ui, sans-serif);
+  font-weight: 600;
+  text-wrap: pretty;
+}
+html body.lens-app :is(#main, dialog) :is(p, h1, h2, h3, h4, label, a, button) { overflow-wrap: anywhere; }
+/* Soft secondary controls keep the visual weight on content and the next action. */
+html body.lens-app :is(.primary, .secondary, .lens-button, .lens-tools button, .lens-reading-actions button, .lens-panel-close, .lens-notebook-tools button, .glass-pill, .chip, .category-pagination button, .chapter-bottom button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 9px 14px;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: normal;
+  text-decoration: none;
+}
+html body.lens-app :is(.lens-panel-close, .chapter-bottom button) { min-width: 44px; }
+html body.lens-app :is(.primary, .secondary, .lens-button, .lens-panel-close, .lens-notebook-tools button, .chip, .glass-pill):focus-visible { outline-offset: 3px; }
+html body.lens-app :is(#main, dialog) :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), textarea, select) {
+  max-width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 12px;
+  background-color: var(--lens-surface);
+  color: var(--lens-ink);
+  font-size: max(1rem, 16px);
+  line-height: 1.5;
+}
+html body.lens-app :is(input, textarea)::placeholder { color: var(--lens-muted); opacity: 1; }
+html body.lens-app :is(.tag, .eyebrow, .summary-attribution, .source-label) {
+  color: var(--lens-muted);
+  background: transparent;
+  box-shadow: none;
+}
+html body.lens-app :is(.verse-citation, .chat-citation, .comparison-side .verse-citation, .context-citations .verse-citation) {
+  text-underline-offset: 3px;
+}
+html body.lens-app .lens-context {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: auto;
+  margin: 0;
+  padding: 25px 0 0;
+  color: var(--lens-muted);
+  font-size: .8125rem;
+  line-height: 1.5;
+}
+html body.lens-app .lens-context a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--lens-link);
+  text-decoration: none;
+}
+html body.lens-app .lens-context a:hover { text-decoration: underline; text-underline-offset: 4px; }
+html body.lens-app .lens-context span { padding: 0; margin: 0; background: none; color: inherit; font-size: inherit; }
+html body.lens-app #main > section:not(.lens-workspace) > .page-heading,
+html body.lens-app #main > section > .lens-section-heading {
+  margin: 0;
+  padding: 18px 0 30px;
+  border: 0;
+  background: none;
+}
+html body.lens-app #main > section:not(.lens-workspace) > .page-heading h1,
+html body.lens-app #main > section > .lens-section-heading h1,
+html body.lens-app #stories-view > h1 {
+  margin: 0 0 14px;
+  font-weight: 600;
+  letter-spacing: -.045em;
+}
+html body.lens-app #main > section:not(.lens-workspace) > .page-heading > p,
+html body.lens-app #main > section > .lens-section-heading > p {
+  max-width: 65ch;
+  margin: 9px 0 0;
+  color: var(--lens-muted);
+  line-height: 1.7;
+  font-size: .9375rem;
+}
+html body.lens-app #stories-view { padding-top: 18px; }
+html body.lens-app #stories-view > .muted { margin: 0 0 30px; }
+html body.lens-app .empty {
+  padding: 36px 0;
+  border: 0;
+  border-top: 1px solid var(--lens-rule);
+  border-radius: 0;
+  background: none;
+  color: var(--lens-muted);
+  text-align: left;
+}
+html body.lens-app .empty h3 { margin: 0 0 10px; color: var(--lens-ink); font-size: 1.25rem; }
+html body.lens-app .empty p { max-width: 60ch; }
+
+/* About and source documentation use the same readable document hierarchy. */
+html body.lens-app #method-view .method-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 54px;
+  margin: 0 0 40px;
+}
+html body.lens-app #method-view .method-grid > article {
+  min-width: 0;
+  margin: 0;
+  padding: 27px 0 30px;
+  border: 0;
+  border-top: 1px solid var(--lens-rule);
+  border-radius: 0;
+}
+html body.lens-app #method-view .method-grid h2 { margin: 0 0 16px; font-size: 1.25rem; }
+html body.lens-app #method-view .method-grid p { max-width: 66ch; font-size: .9375rem; line-height: 1.75; color: var(--lens-muted); }
+html body.lens-app #method-view a { color: var(--lens-link); text-underline-offset: 4px; }
+html body.lens-app #method-view .taxonomy-item { padding: 15px 0; font-size: .875rem; }
+html body.lens-app #method-view .taxonomy-item b { color: var(--lens-ink); }
+
+/* Existing saved-study routes remain useful and share Notebook's appearance. */
+html body.lens-app :is(#bookmarks-view, #evidence-view) .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 36px; }
+html body.lens-app :is(#bookmarks-view, #evidence-view) .card {
+  padding: 24px 0;
+  margin: 0;
+  min-height: 0;
+}
+html body.lens-app :is(#bookmarks-view, #evidence-view) .card h3 { margin: 12px 0; font-size: 1.25rem; }
+html body.lens-app :is(#bookmarks-view, #evidence-view) .card h3 button { padding: 0; min-height: 44px; color: var(--lens-ink); }
+html body.lens-app .card .tag { padding: 0; border: 0; color: var(--lens-copper); font-size: .75rem; }
+html body.lens-app .card .bookmark { min-width: 44px; min-height: 44px; border-radius: 50%; }
+html body.lens-app .card .bookmark.saved { color: var(--lens-copper); }
+html body.lens-app .card :is(.card-bottom, .card-top) { gap: 12px; }
+html body.lens-app .card .card-bottom { border: 0; padding-top: 12px; }
+html body.lens-app .card .open-study { min-height: 44px; color: var(--lens-link); }
+html body.lens-app .chapter-bottom { border-top: 1px solid var(--lens-rule); padding-top: 20px; gap: 18px; }
+html body.lens-app .chapter-bottom button { width: 44px; height: 44px; padding: 11px; flex: none; }
+html body.lens-app .chapter-bottom button svg { width: 20px; height: 20px; color: var(--lens-ink); }
+html body.lens-app > footer { align-items: center; gap: 20px; }
+html body.lens-app > footer .brand { color: var(--lens-link); font-size: .8125rem; letter-spacing: 0; text-decoration: none; min-height: 44px; }
+html body.lens-app > footer small { font-size: .75rem; }
+html body.lens-app #toast { z-index: 100; border-radius: 16px; border: 1px solid transparent; background: var(--lens-ink); color: var(--lens-paper); max-width: calc(100vw - 32px); text-align: center; }
+@media (max-width: 760px) {
+  html body.lens-app .lens-context { padding-top: 12px; }
+  html body.lens-app #main > section:not(.lens-workspace) > .page-heading { padding: 14px 0 24px; }
+  html body.lens-app #method-view .method-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  html body.lens-app :is(#bookmarks-view, #evidence-view) .cards { grid-template-columns: minmax(0, 1fr); }
+  html body.lens-app > footer { flex-wrap: wrap; }
+  html body.lens-app #toast { bottom: calc(92px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html body.lens-app :is(.secondary, .primary, .lens-button) { transition: background-color 120ms ease, border-color 120ms ease; }
+}
+
+/* Small screens keep headings intact at enlarged text settings. Titles get the
+   full row; secondary actions follow them. Body and reader scaling stay intact. */
+@media (max-width: 420px) {
+  html body.lens-app #lensMasthead .lens-brand > span:last-child {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  html body.lens-app #main > section > .page-heading {
+    display: block;
+  }
+  html body.lens-app #main .page-heading > button {
+    margin-top: 10px;
+  }
+  html body.lens-app #main #commandments-view .commandments-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+  }
+  html body.lens-app #main #commandments-view .commandments-title-row > button {
+    margin: 0 0 12px;
+  }
+  html body.lens-app #main #chat-view .chat-page-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 16px;
+  }
+  html body.lens-app #main #chat-view #clear-chat {
+    justify-self: start;
+    max-width: 100%;
+  }
+  html body.lens-app #main :is(#commandments-view, #evidence-view, #bookmarks-view, #stories-view, #chat-view, #prophecies-view, #timeline-view, #method-view, #characters-view, #places-view) h1 {
+    max-width: 100%;
+    word-break: normal;
+    hyphens: none;
+  }
+}
+
+/* One calm, visible loading treatment across data views and inline previews. */
+html body .loading-state {
+  display:flex; align-items:center; gap:10px; color:var(--lens-muted,var(--muted));
+  font-family:var(--lens-ui-font,Inter,system-ui,sans-serif); font-size:.8125rem; line-height:1.6;
+}
+html body .loading-state::before {
+  content:""; display:inline-block; flex:0 0 14px; width:14px; height:14px;
+  box-sizing:border-box; border:2px solid color-mix(in srgb,currentColor 22%,transparent);
+  border-top-color:var(--lens-copper,currentColor); border-radius:50%;
+  animation:biblelens-loading .85s linear infinite;
+}
+html body .chapter-skeleton {
+  height:230px; max-width:38rem; margin:26px 0; opacity:.55;
+  background:repeating-linear-gradient(to bottom,var(--lens-rule,var(--line)) 0 9px,transparent 9px 32px);
+  border-radius:5px; mask-image:linear-gradient(to bottom,#000,transparent);
+}
+@keyframes biblelens-loading { to { transform:rotate(360deg); } }
+@media(prefers-reduced-motion:reduce) {
+  html body .loading-state::before { animation:none; }
+}
+/*
+  library.css
+ *//* Collection surfaces share the reader's paper, rules and evidence hierarchy.
+   This file follows workspace.css and resolves legacy collection overrides. */
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view) {
+  width: 100%; max-width: 72rem; margin-inline: auto;
+  --line: var(--lens-rule); --border: var(--lens-rule);
+  color: var(--lens-ink); font-family: var(--ui-font, "Inter", system-ui, sans-serif);
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet) :is(p, q, h2, h3, h4, a, button) { overflow-wrap: anywhere; }
+html body.lens-app :is(#stories-list, #commandments-list, #saved-passages, #bookmarks-list) {
+  min-width: 0; padding: 0; margin: 0; max-height: none; overflow: visible;
+  color: var(--lens-ink); scrollbar-gutter: auto;
+}
+html body.lens-app :is(.stories-list, .commandments-list) { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
+
+/* A collection entry is a reading row, with a single quiet boundary. */
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.story-card, .commandment-card, .category-directory-card, .category-personal-profile, .passage-saved-card, .marked-comparison-card) {
+  position: relative; min-width: 0; margin: 0;
+  color: var(--lens-ink); transform: none; filter: none; isolation: auto;
+}
+html body.lens-app #evidence-view .marked-comparison-card .comparison-summary {
+  margin: 0;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.story-card, .commandment-card, .category-directory-card, .category-personal-profile, .passage-saved-card, .marked-comparison-card) :is(h2, h3) {
+  max-width: 52rem; margin: 0 0 10px; color: var(--lens-ink);
+  letter-spacing: -.025em;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.story-summary, .commandment-summary p, .comparison-summary > p, .category-personal-profile > p, .category-directory-card > p, .passage-saved-card > p) {
+  max-width: 76ch; margin: 0 0 16px; color: var(--lens-ink); line-height: 1.8;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #story-topic-sheet)
+  :is(.library-entry-meta, .commandment-number) {
+  display: block; max-width: 100%; margin: 0 0 10px; color: var(--lens-muted);
+  font: 500 .8125rem/1.6 var(--ui-font); white-space: normal; letter-spacing: .025em;
+}
+
+/* The complete action name is visible, with a stable 44px target on every device. */
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet) .person-section-controls {
+  display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap;
+  gap: 8px; margin: 18px 0 0; padding: 0;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet) .person-section-toggle {
+  display: inline-flex; flex: 0 1 auto; flex-direction: row; align-items: center; justify-content: center;
+  width: auto; max-width: 100%; min-width: 0; min-height: 44px; height: auto;
+  gap: 8px;
+  font: 500 .8125rem/1.5 var(--ui-font);
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet) .person-section-toggle .person-section-label {
+  display: inline; font: inherit; color: inherit;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.person-section-icon, .person-section-icon svg) { flex: none; width: 18px; height: 18px; }
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet) .person-section-toggle:disabled { cursor: not-allowed;
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  .person-section-toggle:disabled :is(.person-section-icon, .person-section-label) { opacity: 1; }
+
+/* Open sections feel attached to their record rather than becoming nested cards. */
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.person-section-panel, .comparison-evidence) {
+  margin: 18px 0 0; color: var(--lens-ink);
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  .person-section-panel :is(h3, h4) { margin: 0 0 12px; color: var(--lens-muted); letter-spacing: 0; }
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.person-section-panel p:not(.marked-verse-text), .summary-reasoning, .passage-saved-note) { max-width: 76ch; margin: 0 0 14px; }
+html body.lens-app :is(#evidence-view, #bookmarks-view) .marked-verse-text {
+  max-width: 76ch; margin: 0 0 14px;
+}
+html body.lens-app #evidence-view .marked-comparison-card .marked-primary-passages .comparison-side {
+  display: block; margin: 0 0 18px; padding: 0; border: 0; border-radius: 0;
+}
+html body.lens-app #evidence-view .marked-comparison-card .marked-primary-passages .comparison-side q {
+  display: block; margin: 7px 0 0; max-width: 76ch; color: var(--lens-ink);
+}
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet)
+  :is(.story-passage, .story-reference, .verse-citation, .commandment-inline-reference, .comparison-inline-reference, .text-button) { text-underline-offset: 3px;
+}
+html body.lens-app :is(#stories-view, #story-topic-sheet) :is(.story-passage, .story-reference) {
+  justify-content: flex-start; font: 500 .875rem/1.6 var(--ui-font);
+}
+html body.lens-app .story-references { align-items: baseline; gap: 0 16px; color: var(--lens-muted); margin-top: 5px; }
+html body.lens-app .story-references > span { width: 100%; font-size: .8125rem; }
+html body.lens-app #evidence-view .marked-comparison-card :is(.summary-expand, .summary-inspect) { inset: auto; display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  margin: 4px 8px 0 0; font: 500 .8125rem/1.5 var(--ui-font); transform: none; opacity: 1;
+}
+html body.lens-app #evidence-view .marked-comparison-card :is(.summary-expand, .summary-inspect) svg { width: 18px; height: 18px; }
+
+/* Filters remain in document flow, with an explicit result count. */
+html body.lens-app #stories-view .stories-filters {
+  display: grid; grid-template-columns: minmax(180px, 2fr) repeat(2, minmax(130px, 1fr)) auto;
+  gap: 14px; align-items: end; margin: 28px 0 18px; padding: 0 0 20px; border-bottom: 1px solid var(--lens-rule);
+}
+html body.lens-app #stories-view .stories-filters label { display: grid; gap: 6px; color: var(--lens-muted); font: 500 .8125rem/1.6 var(--ui-font); }
+html body.lens-app :is(#stories-view .stories-filters, #commandments-search-box) :is(input, select) {
+  width: 100%; min-width: 0; min-height: 46px; padding: 9px 12px; border: 1px solid var(--lens-rule); color: var(--lens-ink); font: 400 1rem/1.6 var(--ui-font);
+}
+html body.lens-app #commandments-search-box { max-width: 42rem; margin: 28px 0 16px; padding: 0; border: 0; background: none; border-radius: 0; }
+html body.lens-app #commandments-search-box:focus-within { outline: none; }
+html body.lens-app :is(#stories-results, #commandments-count, .category-results, .category-filter-summary, #story-topic-results) {
+  margin: 0 0 18px; padding: 0; color: var(--lens-muted); font: 400 .8125rem/1.7 var(--ui-font);
+}
+html body.lens-app #commandments-view .results-line { align-items: center; gap: 12px; flex-wrap: wrap; margin: 0 0 12px; }
+html body.lens-app #commandments-count { margin: 0; }
+html body.lens-app :is(#stories-reset, #commandments-reset) { min-height: 44px; font-size: .8125rem; }
+html body.lens-app #commandments-view .commandments-title-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; }
+html body.lens-app :is(#commandments-more, #marked-filter-top, #marked-filter-open) {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex: none;
+  min-height: 44px; margin: 0; font-size: .8125rem;
+}
+html body.lens-app #commandments-view .commandments-disclaimer { color: var(--lens-muted); }
+html body.lens-app #commandments-view .commandments-source { max-width: 76ch; margin: 18px 0 0; padding: 0; border: 0; border-top: 1px solid var(--lens-rule); border-radius: 0; }
+html body.lens-app .commandments-source > summary { min-height: 44px; padding: 9px 0; color: var(--lens-link); font-size: .8125rem; }
+html body.lens-app .commandments-source > p { color: var(--lens-muted); font-size: .875rem; line-height: 1.75; }
+html body.lens-app .commandment-card-heading { margin: 0; }
+html body.lens-app .commandment-summary { margin: 12px 0 0; padding: 0; border: 0; }
+html body.lens-app #commandments-view :is(.commandment-summary, .commandment-context) q {
+  font: 400 1rem/1.8 var(--lens-reading-font, var(--verse-font-family, "Inter", system-ui, sans-serif));
+}
+html body.lens-app .commandment-lens-item { display: block; margin: 0 0 18px; padding: 0; }
+html body.lens-app .commandment-lens-item p { margin-top: 7px; }
+html body.lens-app #commandments-load-more {
+  justify-self: start; min-height: 44px; margin: 15px 0 0; padding: 9px 14px;
+  border: 1px solid var(--lens-rule); border-radius: 5px; color: var(--lens-link); background: var(--lens-surface);
+}
+
+/* Evidence directory and scoped result lists. */
+html body.lens-app #evidence-view .marked-comparisons { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; margin: 0; padding: 0; }
+html body.lens-app #evidence-view a.category-page-link {
+  display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 16px; align-items: start;
+  min-height: 94px; margin: 0; padding: 22px 0; color: var(--lens-ink);
+}
+html body.lens-app #evidence-view a.category-page-link:hover .library-category-title { color: var(--lens-copper); }
+html body.lens-app #evidence-view .marked-category-pane[data-category-page] .marked-category-icon { display: block; margin-top: 2px; }
+html body.lens-app #evidence-view .marked-category-icon svg { width: 24px; height: 24px; filter: none; }
+html body.lens-app .library-category-title { display: block; font-size: 1.125rem; line-height: 1.5; font-weight: 600; }
+html body.lens-app .library-category-description { display: block; max-width: 58ch; margin-top: 5px; color: var(--lens-muted); font: 400 .875rem/1.65 var(--ui-font); }
+html body.lens-app #evidence-view .marked-count { margin: 2px 0 0; padding: 0; color: var(--lens-muted); background: transparent; border: 0; border-radius: 0; font: 400 .8125rem/1.7 var(--ui-font); text-align: right; white-space: nowrap; }
+html body.lens-app #evidence-view .marked-category-content { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; margin: 0; padding: 0; }
+html body.lens-app #evidence-view .category-results { padding: 0 0 16px; margin: 0; }
+html body.lens-app #evidence-view :is(.marked-theme-group, .marked-category-pane:not(a)) { margin: 0; padding: 0; border: 0; background: transparent; }
+html body.lens-app #evidence-view :is(.marked-theme-heading, .marked-category-pane > summary) { min-height: 52px; margin: 0; padding: 12px 0; border-bottom: 1px solid var(--lens-rule); color: var(--lens-ink); background: transparent; }
+html body.lens-app #evidence-view .marked-theme-content { padding-left: 20px; }
+html body.lens-app #evidence-view .commandment-labels span { border: 0; border-radius: 0; padding: 0; color: var(--lens-muted); font-size: .8125rem; }
+html body.lens-app #evidence-view .commandment-filter-chips button { min-height: 44px; padding: 9px 12px; border: 1px solid var(--lens-rule); border-radius: 5px; color: var(--lens-ink); }
+html body.lens-app #marked-context { right: 20px; bottom: calc(96px + env(safe-area-inset-bottom, 0px)); left: auto; width: auto; padding: 0; border: 0; border-radius: 5px; transform: none; }
+
+/* Counts, boundaries and next/previous stay identical across collections. */
+html body.lens-app :is(#stories-view, #evidence-view, #bookmarks-view) .category-pagination {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  margin: 12px 0 0; padding: 20px 0 0; border-top: 1px solid var(--lens-rule); background: transparent;
+}
+html body.lens-app :is(#stories-view, #evidence-view, #bookmarks-view) .category-pagination button {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+  padding: 9px 12px; border: 1px solid var(--lens-rule); color: var(--lens-ink); font-size: .8125rem;
+}
+html body.lens-app :is(#stories-view, #evidence-view, #bookmarks-view) .category-pagination button:disabled { opacity: .45; cursor: not-allowed; }
+html body.lens-app :is(#stories-view, #evidence-view, #bookmarks-view) .category-pagination span { margin: 0; padding: 0; border: 0; background: transparent; color: var(--lens-muted); font-size: .8125rem; }
+html body.lens-app :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #story-topic-sheet) :is(.empty, .marked-empty) {
+  max-width: 48rem; margin: 0; padding: 32px 0; border: 0; border-top: 1px solid var(--lens-rule);
+  border-radius: 0; background: transparent; color: var(--lens-muted); text-align: left; font-size: .9375rem; line-height: 1.75;
+}
+html body.lens-app :is(#stories-list, #saved-passages, #bookmarks-list) > p[role=status] { padding: 24px 0; color: var(--lens-muted); }
+
+@media (min-width: 960px) {
+  html body.lens-app #evidence-view .marked-comparisons:has(> .category-page-link) { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 42px; }
+  html body.lens-app #commandments-list .commandment-number { position: absolute; top: 31px; left: 0; width: 110px; }
+}
+@media (max-width: 900px) {
+  html body.lens-app #stories-view .stories-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html body.lens-app #stories-view .stories-filters label:first-child { grid-column: 1 / -1; }
+  html body.lens-app #stories-view .stories-filters button { grid-column: 1 / -1; justify-self: start; }
+}
+@media (max-width: 600px) {
+  html body.lens-app #evidence-view a.category-page-link { grid-template-columns: 24px minmax(0, 1fr) auto; gap: 12px; }
+  html body.lens-app .library-category-title { font-size: 1rem; }
+  html body.lens-app .library-category-description { font-size: .8125rem; }
+  html body.lens-app #evidence-view .marked-count { font-size: .75rem; white-space: normal; max-width: 5rem; }
+}
+@media (max-width: 360px) {
+  html body.lens-app #stories-view .stories-filters { grid-template-columns: minmax(0, 1fr); }
+  html body.lens-app :is(#stories-view, #evidence-view, #bookmarks-view) .category-pagination { gap: 8px; }
+  html body.lens-app :is(#stories-view, #evidence-view, #bookmarks-view) .category-pagination button { padding-inline: 9px; }
+}
+/*
+  reference.css
+ *//* Reference collections share the study workspace's paper, ink and rules.
+   ID-scoped selectors deliberately outrank the former glass/theme overrides. */
+html body.lens-app :is(#characters-view, #places-view, #timeline-view, #prophecies-view) {
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-inline: auto;
+  padding-bottom: 56px;
+  color: var(--lens-ink);
+}
+html body.lens-app :is(#characters-view, #places-view, #timeline-view, #prophecies-view, #character-sheet, #atlas-sheet, #prophecy-filters) :is(h1, h2, h3, h4, p, li, a, button, label) {
+  overflow-wrap: anywhere;
+}
+html body.lens-app :is(#characters-view, #places-view, #timeline-view, #prophecies-view, #character-sheet, #atlas-sheet, #prophecy-filters) :is(button, a, input, summary) {
+  touch-action: pan-x pan-y pinch-zoom;
+}
+html body.lens-app :is(#characters-view, #places-view) > button,
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) :is(.character-connections-retry, .person-section-panel > button, .character-source-header > button) {
+  font-size: .8125rem;
+}
+
+/* People and Places: browsable directory entries, with details in their row. */
+html body.lens-app :is(#characters-view, #places-view) .characters-search-box {
+  width: 100%;
+  max-width: 640px;
+  margin: 24px 0 16px;
+  padding: 0;
+}
+html body.lens-app :is(#characters-search, #places-search) {
+  width: 100%;
+  min-height: 48px;
+  font: inherit;
+}
+html body.lens-app :is(#characters-search, #places-search)::placeholder {
+  color: var(--lens-muted);
+  opacity: 1;
+  font-style: normal;
+}
+html body.lens-app :is(#characters-view, #places-view) :is(.characters-count, #places-count) {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0 0 16px;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  white-space: normal;
+  color: var(--lens-muted);
+  font-size: .8125rem;
+}
+html body.lens-app :is(#characters-view, #places-view) :is(.characters-grid, .places-directory-list) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--lens-rule);
+  list-style: none;
+}
+html body.lens-app :is(#characters-view, #places-view) .character-card {
+  min-width: 0;
+  margin: 0;
+}
+html body.lens-app :is(#characters-view, #places-view) .character-card :is(.character-name, h2) {
+  margin: 0 0 8px;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+html body.lens-app :is(#characters-view, #places-view) .character-card .character-summary {
+  max-width: 78ch;
+  margin: 10px 0 16px;
+  padding: 0;
+  color: var(--lens-ink);
+  font-size: .9375rem;
+  line-height: 1.75;
+}
+html body.lens-app :is(#characters-view, #places-view) :is(.character-aliases, .character-identity-context) {
+  margin: 7px 0;
+  color: var(--lens-muted);
+  font-size: .8125rem;
+  line-height: 1.6;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 6px;
+  margin: 12px 0 0;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-toggle {
+  display: inline-flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: .8125rem;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-toggle :is(.person-section-icon, .person-section-label) {
+  opacity: 1;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) :is(.person-section-icon, .person-section-icon svg) {
+  width: 17px;
+  height: 17px;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-label {
+  font-size: .8125rem;
+  line-height: 1.4;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-panel {
+  padding: 20px;
+  margin: 16px 0 0;
+  color: var(--lens-ink);
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) :is(.person-section-panel h3, .character-connections h3) {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .character-relative-chip,
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) :is(.character-verses a, .character-story-chip, .character-badge) {
+  font-weight: 400;
+  line-height: 1.5;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .character-relative-chip small {
+  opacity: 1;
+  font-size: .75rem;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) :is(.characters-note, .person-section-caption) {
+  color: var(--lens-muted);
+  font-size: .8125rem;
+  line-height: 1.65;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) button.character-source-toggle {
+  display: inline-flex;
+  font-size: .8125rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+html body.lens-app :is(#characters-view, #places-view, #character-sheet) .character-source-popover {
+  border: 1px solid var(--lens-rule);
+  border-radius: 5px;
+  background: var(--lens-surface);
+  color: var(--lens-ink);
+  box-shadow: 0 16px 60px #0003;
+}
+html body.lens-app :is(#characters-view, #places-view) :is(.characters-pagination, .places-directory-pagination) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+  color: var(--lens-muted);
+  font-size: .8125rem;
+}
+html body.lens-app :is(#characters-view, #places-view) :is(.characters-pagination, .places-directory-pagination) button {
+  min-height: 44px;
+  padding: 8px 15px;
+  color: var(--lens-ink);
+  box-shadow: none;
+}
+html body.lens-app #character-sheet .character-sheet-header {
+  grid-template-columns: minmax(0, 1fr) auto;
+  border-bottom: 1px solid var(--lens-rule);
+  padding: 20px 24px;
+}
+html body.lens-app #character-sheet .character-sheet-header h2 { font-size: 1.5rem; }
+html body.lens-app #character-sheet .character-sheet-body { padding: 22px 24px max(24px, env(safe-area-inset-bottom)); }
+html body.lens-app #character-sheet :is(.character-profile-biography, .character-sheet-body > p) {
+  padding: 0;
+  margin: 16px 0 24px;
+  border: 0;
+  border-radius: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+html body.lens-app #character-sheet .character-profile-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  color: var(--lens-muted);
+  font-size: .75rem;
+}
+html body.lens-app #character-sheet .character-profile-kind { color: var(--lens-copper); }
+
+/* Atlas: the context and precision of a location remain visible with its map. */
+html body.lens-app #atlas-sheet .atlas-header {
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--lens-rule);
+}
+html body.lens-app #atlas-sheet .atlas-header h2 { font-size: 1.5rem; line-height: 1.3; }
+html body.lens-app #atlas-sheet #atlas-close { margin: 0; font-size: .8125rem; }
+html body.lens-app #atlas-sheet .atlas-scroll { padding: 0 24px max(24px, env(safe-area-inset-bottom)); }
+html body.lens-app #atlas-sheet .atlas-identification {
+  margin: 18px 0;
+  padding-left: 12px;
+  border-left: 2px solid var(--lens-copper);
+  color: var(--lens-muted);
+  font-size: .8125rem;
+  line-height: 1.65;
+}
+html body.lens-app #atlas-sheet .atlas-identification:empty { display: none; }
+html body.lens-app #atlas-sheet #atlas-map {
+  height: 40dvh;
+  min-height: 240px;
+  max-height: 400px;
+  border: 1px solid var(--lens-rule);
+  border-radius: 3px;
+  overflow: hidden;
+}
+html body.lens-app #atlas-sheet .atlas-sources {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid var(--lens-rule);
+}
+html body.lens-app #atlas-sheet .atlas-sources summary { color: var(--lens-ink); font-size: .875rem; }
+html body.lens-app #atlas-sheet :is(.atlas-attribution, #atlas-status, .atlas-map-notice) { color: var(--lens-muted); font-size: .8125rem; }
+html body.lens-app #atlas-sheet .atlas-reference-pin > span:first-child {
+  border: 1px solid var(--lens-rule);
+  border-radius: 3px;
+  background: var(--lens-surface);
+  color: var(--lens-ink);
+  box-shadow: 0 2px 8px #0002;
+}
+
+/* Chronology reads as a sequence, with a clear separation between the inherited
+   dating and the independently sourced assessment. */
+html body.lens-app #timeline-view .timeline-controls {
+  align-items: end;
+  gap: 12px 20px;
+  margin: 24px 0 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--lens-rule);
+}
+html body.lens-app #timeline-view .timeline-controls label { max-width: 560px; font-size: .8125rem; color: var(--lens-muted); }
+html body.lens-app #timeline-view .timeline-controls > [role="status"] { flex: 1 0 100%; color: var(--lens-muted); font-size: .8125rem; }
+html body.lens-app #timeline-view :is(#timeline-reviewed, .timeline-list, #timeline-list) {
+  max-width: none;
+  min-width: 0;
+  margin-inline: 0;
+}
+html body.lens-app #timeline-view #timeline-reviewed { padding: 0 0 40px; }
+html body.lens-app #timeline-view :is(#timeline-list, .timeline-list) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  margin-top: 24px;
+  border-top: 1px solid var(--lens-rule);
+}
+html body.lens-app #timeline-view :is(.timeline-card, .timeline-event-card) {
+  min-width: 0;
+  padding: 24px 0;
+  color: var(--lens-ink);
+}
+html body.lens-app #timeline-view .timeline-event-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 24px;
+}
+html body.lens-app #timeline-view .timeline-event-body { min-height: 0; padding: 0; }
+html body.lens-app #timeline-view .timeline-event-card > :is(.timeline-passage, p, ul, .timeline-discrepancy, .timeline-source-details) { grid-column: 1 / -1; margin-block: 4px; }
+html body.lens-app #timeline-view .timeline-source-details summary { min-height: 44px; padding: 10px 0; color: var(--lens-link); font-size: .8125rem; }
+html body.lens-app #timeline-view :is(.timeline-event-title, .timeline-card h2) {
+  margin: 0 0 8px;
+  color: var(--lens-ink);
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+html body.lens-app #timeline-view .timeline-card h2 { margin-top: 14px; }
+html body.lens-app #timeline-view :is(.timeline-event-date, .timeline-card .eyebrow) {
+  margin: 0;
+  color: var(--lens-copper);
+  font-size: .8125rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+html body.lens-app #timeline-view :is(.timeline-history, .timeline-history-chip, [data-timeline-filter]) {
+  position: static;
+  align-self: start;
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  max-width: 100%;
+  font-size: .8125rem;
+  font-weight: 500;
+  white-space: normal;
+}
+html body.lens-app #timeline-view :is(.timeline-academic, .timeline-discrepancy-content) {
+  margin: 18px 0 0;
+  padding: 20px;
+  border: 0;
+  border-left: 2px solid var(--lens-copper);
+  border-radius: 0;
+  color: var(--lens-ink);
+}
+html body.lens-app #timeline-view .timeline-date-comparison { gap: 24px; }
+html body.lens-app #timeline-view .timeline-date-comparison dt { color: var(--lens-muted); font-size: .75rem; font-weight: 600; }
+html body.lens-app #timeline-view .timeline-date-comparison dd { margin-top: 8px; font-size: .9375rem; line-height: 1.7; }
+html body.lens-app #timeline-view :is(.timeline-scope, .timeline-limits, .timeline-reviewed, .timeline-review-status, #timeline-count) { color: var(--lens-muted); font-size: .8125rem; line-height: 1.7; }
+html body.lens-app #timeline-view .timeline-sources { padding-top: 10px; border-top: 1px solid var(--lens-rule); }
+html body.lens-app #timeline-view :is(.timeline-sources a, .timeline-passage) {
+  min-height: 44px;
+  padding: 8px 0;
+  font-size: .8125rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+html body.lens-app #timeline-view .timeline-attribution { margin-top: 32px; border-top: 1px solid var(--lens-rule); padding-top: 12px; color: var(--lens-muted); }
+
+/* Prophecies: classification labels explain the values, without assigning
+   decorative colors to contested interpretations. */
+html body.lens-app #prophecies-view .prophecy-note {
+  max-width: 80ch;
+  padding: 12px 0 12px 16px;
+  border-left: 2px solid var(--lens-copper);
+  color: var(--lens-muted);
+  font-size: .8125rem;
+  line-height: 1.7;
+}
+html body.lens-app #prophecies-view .prophecy-toolbar { margin-top: 0; gap: 14px; }
+html body.lens-app #prophecies-view :is(#prophecy-filter-button, #prophecy-reset) {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  font-size: .8125rem;
+  font-weight: 500;
+}
+html body.lens-app #prophecies-view :is(#prophecy-filter-button, #prophecy-reset) svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+html body.lens-app #prophecies-view .prophecy-filter-count {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  display: grid;
+  place-items: center;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 99px;
+  color: var(--lens-paper);
+  background: var(--lens-ink);
+  font: 600 .625rem/1 var(--ui-font);
+  pointer-events: none;
+}
+html body.lens-app #prophecies-view .prophecy-quick {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding: 0 0 24px;
+  border-bottom: 1px solid var(--lens-rule);
+  overflow: visible;
+  scroll-snap-type: none;
+}
+html body.lens-app #prophecies-view .prophecy-quick-group { min-width: 0; margin: 0; padding: 0; border: 0; }
+html body.lens-app #prophecies-view .prophecy-quick-group legend { padding: 0; margin-bottom: 8px; color: var(--lens-muted); font-size: .75rem; font-weight: 600; }
+html body.lens-app #prophecies-view .prophecy-quick-group > div { display: flex; flex-wrap: wrap; gap: 6px; }
+html body.lens-app :is(#prophecies-view, #prophecy-filters) :is(.prophecy-toggle, .prophecy-facet) {
+  flex: 0 1 auto;
+  font-size: .8125rem;
+  line-height: 1.4;
+  white-space: normal;
+}
+html body.lens-app :is(#prophecies-view, #prophecy-filters) :is(.prophecy-toggle, .prophecy-facet)[aria-pressed="true"] {
+  outline: none;
+}
+html body.lens-app #prophecies-view .prophecy-results { margin: 16px 0; font-size: .8125rem; }
+html body.lens-app #prophecies-view .prophecy-grid { grid-template-columns: minmax(0, 1fr); gap: 0; border-top: 1px solid var(--lens-rule); }
+html body.lens-app #prophecies-view .prophecy-card {
+  padding: 28px 0;
+  border: 0;
+  border-bottom: 1px solid var(--lens-rule);
+  border-radius: 0;
+  overflow: visible;
+}
+html body.lens-app #prophecies-view .prophecy-card h2 { margin: 0 0 20px; font-size: 1.375rem; }
+html body.lens-app #prophecies-view .prophecy-card > p { max-width: 85ch; margin: 20px 0; font-size: .9375rem; line-height: 1.75; }
+html body.lens-app #prophecies-view .card-disclosure-icon {
+  width: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  margin: 0 0 0 auto;
+  padding: 0;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--lens-link);
+}
+html body.lens-app #prophecies-view .card-disclosure-icon:hover { background: var(--lens-link-soft); }
+html body.lens-app #prophecies-view .card-disclosure-icon .card-disclosure-label::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border: solid currentColor;
+  border-width: 0 1.5px 1.5px 0;
+  transform: translateY(-2px) rotate(45deg);
+}
+html body.lens-app #prophecies-view .card-disclosure[open] > .card-disclosure-icon .card-disclosure-label::after { transform: translateY(2px) rotate(225deg); }
+html body.lens-app #prophecies-view .prophecy-bridge { grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr); gap: 16px; max-width: 800px; align-items: center; }
+html body.lens-app #prophecies-view .prophecy-node-label { min-height: 0; color: var(--lens-muted); font-size: .75rem; line-height: 1.5; }
+html body.lens-app #prophecies-view .prophecy-passage {
+  font-size: .9375rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+html body.lens-app #prophecies-view .prophecy-connector { padding-top: 24px; color: var(--lens-copper); }
+html body.lens-app #prophecies-view .prophecy-taxonomy { gap: 10px 24px; padding-top: 0; border: 0; }
+html body.lens-app #prophecies-view .prophecy-micro { padding: 0; border: 0; border-radius: 0; background: transparent; color: var(--lens-ink); font-size: .75rem; line-height: 1.6; }
+html body.lens-app #prophecies-view .prophecy-facet-label { color: var(--lens-muted); text-transform: capitalize; }
+html body.lens-app #prophecy-filters .prophecy-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+html body.lens-app :is(#characters-view, #places-view, #timeline-view, #prophecies-view) :is(.characters-empty, .reference-empty, .empty) {
+  margin: 0;
+  padding: 28px 0;
+  border: 0;
+  background: transparent;
+  color: var(--lens-muted);
+  font-size: .9375rem;
+  line-height: 1.7;
+}
+
+@media (min-width: 900px) {
+  html body.lens-app #characters-view .character-card { display: grid; grid-template-columns: minmax(180px, .65fr) minmax(0, 1.8fr); column-gap: 32px; }
+  html body.lens-app #characters-view .character-card-header { grid-column: 1; grid-row: 1 / 3; }
+  html body.lens-app #characters-view .character-card .character-summary { grid-column: 2; margin-top: 0; }
+  html body.lens-app #characters-view .character-card .person-sections { grid-column: 2; }
+  html body.lens-app #characters-view .character-card .person-section-controls { margin-top: 0; }
+}
+@media (max-width: 760px) {
+  html body.lens-app #prophecies-view { padding-top: 0; padding-bottom: 32px; }
+  html body.lens-app #prophecies-view .prophecy-note { padding-block: 7px; padding-left: 12px; }
+  html body.lens-app #prophecies-view .prophecy-toolbar { gap: 8px; }
+  html body.lens-app #prophecies-view .prophecy-quick { grid-template-columns: minmax(0, 1fr); gap: 12px; padding-bottom: 16px; }
+  html body.lens-app #prophecies-view .prophecy-quick-group legend { margin-bottom: 4px; }
+  html body.lens-app #prophecies-view .prophecy-results { margin-block: 8px; }
+  html body.lens-app #prophecies-view .prophecy-card { padding-block: 20px; }
+  html body.lens-app #prophecies-view .prophecy-card h2 { margin-bottom: 12px; }
+  html body.lens-app #timeline-view .timeline-event-card { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  html body.lens-app #timeline-view .timeline-history { justify-self: start; }
+  html body.lens-app #timeline-view .timeline-date-comparison { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  html body.lens-app :is(#characters-view, #places-view, #character-sheet) .person-section-panel,
+  html body.lens-app #timeline-view :is(.timeline-academic, .timeline-discrepancy-content) { padding: 16px; }
+  html body.lens-app #character-sheet .character-sheet-header,
+  html body.lens-app #atlas-sheet .atlas-header { padding: 16px; }
+  html body.lens-app #character-sheet .character-sheet-body { padding: 18px 16px max(24px, env(safe-area-inset-bottom)); }
+  html body.lens-app #atlas-sheet .atlas-scroll { padding: 0 16px max(24px, env(safe-area-inset-bottom)); }
+}
+@media (max-width: 420px) {
+  html body.lens-app #prophecies-view .prophecy-bridge { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  html body.lens-app #prophecies-view .prophecy-connector { justify-self: start; padding: 0 12px; transform: rotate(90deg); }
+  html body.lens-app :is(#characters-view, #character-sheet) .person-section-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html body.lens-app :is(#characters-view, #places-view, #character-sheet) .character-connection-row { display: block; }
+  html body.lens-app :is(#characters-view, #places-view, #character-sheet) .character-connection-row h4 { margin-bottom: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html body.lens-app #timeline-view .timeline-discrepancy { transition: none; }
+}
+/*
+  dialogs.css
+ *//* Shared sheets, contextual tools, and the conversation workspace.
+   The high-specificity scope deliberately replaces the retired glass theme. */
+html body.lens-app dialog,
+html body.lens-app :is(.verse-preview, .context-preview, .highlight-context-menu, .highlight-color-picker) {
+  font-family: var(--ui-font, "Inter", system-ui, sans-serif);
+  box-sizing: border-box;
+  min-width: 0;
+  overscroll-behavior: contain;
+  touch-action: pan-x pan-y pinch-zoom;
+}
+html body.lens-app dialog::backdrop {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+html body.lens-app dialog :is(h2, h3, h4, legend) {
+  color: var(--lens-ink);
+  line-height: 1.35;
+}
+html body.lens-app dialog h2 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.65rem); font-weight: 600; letter-spacing: -.03em; }
+html body.lens-app dialog h3 { font-size: 1rem; font-weight: 600; }
+html body.lens-app dialog p { line-height: 1.7; }
+html body.lens-app dialog :is(p, li, a, h2, h3, h4) { overflow-wrap: anywhere; }
+html body.lens-app dialog :is(.eyebrow, .lens-kicker) { color: var(--lens-copper); font-size: .6875rem; letter-spacing: .12em; text-transform: uppercase; }
+html body.lens-app dialog :is(.sheet-heading, .comparison-context-heading, .dialog-top) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 20px;
+  padding: 0 0 16px;
+  border-bottom: 1px solid var(--lens-rule);
+}
+html body.lens-app :is(dialog, .verse-preview) :is(button[aria-label^="Close"], [data-marked-filter-close]) {
+  flex: 0 0 auto;
+  font: 400 .8125rem/1.4 var(--ui-font);
+}
+html body.lens-app :is(dialog, .verse-preview) :is(.icon[aria-label^="Close"], .preview-close, [data-marked-filter-close], [data-close-comparison], [data-navigation-close], #commandments-close, #prophecy-close) {
+  flex-basis: 44px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+html body.lens-app dialog :is(button, input, select, textarea) {
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+html body.lens-app dialog button { min-height: 44px; font-size: .8125rem; }
+html body.lens-app dialog :is(input:not([type="radio"]):not([type="checkbox"]):not([type="range"]), select, textarea) {
+  width: 100%;
+  border: 1px solid var(--lens-rule);
+  padding: 10px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+html body.lens-app dialog textarea { resize: vertical; min-height: 140px; }
+html body.lens-app dialog label { font-size: .875rem; font-weight: 500; }
+html body.lens-app dialog :is(button, input, select, textarea):disabled { cursor: not-allowed; }
+html body.lens-app :is(dialog, .verse-preview, .context-preview) a { color: var(--lens-link); text-underline-offset: .2em; }
+html body.lens-app dialog details { border-radius: 0; }
+html body.lens-app dialog summary { min-height: 44px; padding: 10px 0; color: var(--lens-ink); }
+
+/* Settings has three stable groups; sync/release modules keep their own live nodes. */
+html body.lens-app #reader-settings[open],
+html body.lens-app :is(#passage-picker, #marked-filter-dialog, #verse-note-dialog, #chapter-bookmarks-dialog, #chat-citations-dialog, #note-confirm-dialog, #study-dialog, .comparison-context-dialog)[open] {
+  position: fixed;
+  inset: max(16px, env(safe-area-inset-top, 0px)) 16px max(16px, env(safe-area-inset-bottom, 0px));
+  margin: auto;
+  width: min(640px, calc(100vw - 32px));
+  height: fit-content;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 32px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+  padding: 24px;
+  overflow: auto;
+  transform: none;
+}
+html body.lens-app #reader-settings { scrollbar-gutter: stable; }
+html body.lens-app #reader-settings .settings-intro { margin: -4px 0 24px; color: var(--lens-muted); font-size: .875rem; }
+html body.lens-app #reader-settings .settings-section { border-top: 1px solid var(--lens-rule); padding: 20px 0; }
+html body.lens-app #reader-settings .settings-section > h3 { margin: 0 0 8px; color: var(--lens-copper); font-size: .6875rem; letter-spacing: .12em; text-transform: uppercase; }
+html body.lens-app #reader-settings .settings-section > p { color: var(--lens-muted); font-size: .8125rem; margin: 0 0 16px; }
+html body.lens-app #reader-settings .reader-actions { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: stretch; align-items: stretch; width: 100%; min-width: 0; gap: 20px; margin: 0; padding: 0; }
+html body.lens-app #reader-settings .compare-control { display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%; gap: 16px; border: 0; padding: 0; }
+html body.lens-app #reader-settings #compare-label { flex: 1 1 auto; color: var(--lens-ink); font-size: .875rem; }
+html body.lens-app #reader-settings #reader-compare { display: inline-flex; align-items: center; gap: 8px; width: auto; min-width: 92px; justify-content: center; border: 1px solid var(--lens-rule); padding: 5px 10px; }
+html body.lens-app #reader-settings .switch-track { width: 30px; height: 18px; background: var(--lens-rule); border: 1px solid var(--lens-muted); box-shadow: none; }
+html body.lens-app #reader-settings .switch-track > span { width: 12px; height: 12px; top: 2px; left: 2px; background: var(--lens-surface); box-shadow: none; }
+html body.lens-app #reader-settings [aria-checked="true"] .switch-track { background: var(--lens-copper); border-color: var(--lens-copper); }
+html body.lens-app #reader-settings [aria-checked="true"] .switch-track > span { transform: translateX(12px); }
+html body.lens-app #reader-settings .text-size-setting { display: grid; grid-template-columns: minmax(0, 1fr); justify-content: stretch; justify-items: stretch; align-items: stretch; align-self: stretch; width: 100%; min-width: 0; gap: 4px; margin: 0; padding: 0; }
+html body.lens-app #reader-settings .text-size-setting label { display: flex; width: 100%; justify-content: space-between; gap: 16px; color: var(--lens-ink); }
+html body.lens-app #reader-settings #reader-font { width: 100%; height: 44px; min-height: 44px; accent-color: var(--lens-copper); }
+html body.lens-app #reader-settings #reader-font-value { color: var(--lens-muted); font-variant-numeric: tabular-nums; }
+html body.lens-app #reader-settings .reader-font-settings { margin: 12px 0 0; }
+html body.lens-app #reader-settings .reader-font-settings label { display: grid; gap: 8px; color: var(--lens-ink); }
+html body.lens-app #reader-settings .settings-theme { display: inline-flex; gap: 10px; align-items: center; width: 100%; justify-content: flex-start; padding: 10px 14px; }
+html body.lens-app #reader-settings .settings-theme > span { font-size: 1.3rem; }
+html body.lens-app #reader-settings .settings-notebook-link { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; min-height: 44px; font-size: .875rem; }
+html body.lens-app #reader-settings :is(.cloud-sync-settings, .release-settings) { margin: 20px 0 0; padding: 20px 0 0; border-top: 1px solid var(--lens-rule); }
+html body.lens-app #reader-settings .cloud-sync-settings h3 { margin: 0 0 8px; }
+html body.lens-app #reader-settings :is(.cloud-sync-settings, .release-settings) p { color: var(--lens-muted); font-size: .8125rem; margin: 8px 0 14px; }
+html body.lens-app #reader-settings :is([data-sync-status], [data-release-status]) { padding-left: 12px; border-left: 2px solid var(--lens-copper); color: var(--lens-ink); }
+html body.lens-app #reader-settings :is([data-sync-status], [data-release-status]):empty { display: none; }
+html body.lens-app #reader-settings .sync-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+html body.lens-app #reader-settings .sync-actions :is(button, a) { padding: 9px 12px; min-height: 44px; display: inline-flex; align-items: center; border: 1px solid transparent; border-radius: 12px; background: var(--lens-control-bg); font-size: .8125rem; }
+html body.lens-app #reader-settings .release-settings { margin: 0; }
+html body.lens-app #reader-settings .release-settings h3 { font-size: .6875rem; text-transform: uppercase; letter-spacing: .12em; color: var(--lens-copper); margin: 0 0 8px; }
+
+/* Passage selection: soft cells distinguish selected books without a wall of outlines. */
+html body.lens-app :is(#passage-picker, #marked-filter-dialog) fieldset { min-width: 0; border: 0; padding: 0; margin: 18px 0; }
+html body.lens-app :is(#passage-picker, #marked-filter-dialog) legend { margin-bottom: 12px; color: var(--lens-muted); font-size: .8125rem; }
+html body.lens-app #passage-picker-form { display: flex; flex-direction: column; gap: 12px; margin: 0; }
+html body.lens-app #passage-translation label { display: flex; gap: 16px; justify-content: space-between; align-items: center; color: var(--lens-muted); }
+html body.lens-app #passage-translation select { width: min(240px, 60%); }
+html body.lens-app :is(#passage-picker, #marked-filter-dialog) .passage-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; padding: 0; margin: 8px 0 12px; border-bottom: 1px solid var(--lens-rule); background: none; }
+html body.lens-app :is(#passage-picker, #marked-filter-dialog) .passage-steps button { min-height: 48px; outline: none; padding: 8px 6px; white-space: normal; font-size: .8125rem; }
+html body.lens-app :is(#passage-picker, #marked-filter-dialog) .passage-steps [aria-pressed="true"] { font-weight: 600; }
+html body.lens-app :is(#passage-picker, #marked-filter-dialog) .passage-testaments { display: flex; gap: 8px; margin-bottom: 16px; }
+html body.lens-app :is(#passage-picker, #marked-filter-dialog) .passage-testaments button { min-height: 44px; border: 1px solid var(--lens-rule); outline: none; font-size: .8125rem; padding: 8px; }
+html body.lens-app #passage-picker .passage-book-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+html body.lens-app #passage-picker .passage-number-grid,
+html body.lens-app #marked-filter-dialog .marked-chapter-grid { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 7px; max-height: none; overflow: visible; }
+html body.lens-app #passage-picker .passage-number { position: relative; display: block; margin: 0; width: 100%; }
+html body.lens-app #passage-picker .passage-number span { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; height: auto; aspect-ratio: auto; padding: 9px 4px; color: var(--lens-ink); font: 400 .875rem/1.3 var(--ui-font); text-align: center; white-space: normal; }
+html body.lens-app #passage-picker .passage-book-grid .passage-number span { min-height: 48px; font-size: .8125rem; padding: 8px; }
+html body.lens-app #passage-picker .passage-number input:checked + span { font-weight: 600; }
+html body.lens-app #passage-picker .passage-number input:focus-visible + span { outline-offset: 2px; }
+html body.lens-app #passage-picker #passage-go { width: 100%; border: 1px solid var(--lens-copper); padding: 12px; }
+html body.lens-app #marked-filter-dialog :is(.marked-book-grid, .marked-kind-grid) { display: grid; gap: 8px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+html body.lens-app #marked-filter-dialog .marked-book-grid button { min-height: 44px; }
+html body.lens-app #marked-filter-dialog .marked-kind-grid button { min-height: 50px; border: 1px solid var(--lens-rule); padding: 10px; justify-content: flex-start; }
+html body.lens-app #marked-filter-dialog .marked-kind-grid svg { width: 19px; height: 19px; flex: 0 0 19px; }
+html body.lens-app #marked-filter-dialog :is(.marked-all-books, .marked-all-chapters) { margin-bottom: 8px; }
+html body.lens-app #marked-filter-dialog .marked-all-chapters { grid-column: 1 / -1; }
+
+/* Filter sheets share a fixed heading and action row, with one scrolling body. */
+html body.lens-app :is(#commandments-filters, #prophecy-filters)[open] { position: fixed; inset: 16px; margin: auto; width: min(680px, calc(100vw - 32px)); max-width: calc(100vw - 32px); height: min(760px, calc(100dvh - 32px)); max-height: calc(100dvh - 32px); display: flex; flex-direction: column; padding: 0; overflow: hidden; }
+html body.lens-app :is(.commandments-sheet-heading, .prophecy-sheet-header) { padding: 20px 24px; margin: 0; border-bottom: 1px solid var(--lens-rule); }
+html body.lens-app :is(.commandments-sheet-scroll, .prophecy-sheet-body) { padding: 0 24px 20px; background: var(--lens-surface); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--lens-rule) transparent; }
+html body.lens-app :is(.commandments-sheet-footer, .prophecy-sheet-footer) { padding: 16px 24px; border-top: 1px solid var(--lens-rule); background: var(--lens-surface); gap: 12px; }
+html body.lens-app :is(.commandments-sheet-footer, .prophecy-sheet-footer) button { border: 1px solid var(--lens-rule); padding: 10px 16px; }
+html body.lens-app .commandments-handle { height: 20px; min-height: 20px; flex: 0 0 20px; padding: 0; background: transparent; }
+html body.lens-app .commandments-handle span { width: 36px; height: 3px; margin-top: 8px; background: var(--lens-rule); box-shadow: none; }
+html body.lens-app :is(#commandments-matrix, .prophecy-matrix) fieldset { border: 0; border-top: 1px solid var(--lens-rule); margin: 20px 0; padding: 16px 0 0; }
+html body.lens-app :is(#commandments-matrix, .prophecy-matrix) legend { font-size: .8125rem; padding-right: 10px; font-weight: 600; }
+html body.lens-app :is(#commandments-matrix, .prophecy-matrix) button { border: 1px solid var(--lens-rule); min-height: 44px; }
+
+/* Notes and previews retain a clear boundary between scripture and private writing. */
+html body.lens-app #verse-note-form { display: grid; gap: 10px; }
+html body.lens-app #verse-note-form .sheet-heading { margin-bottom: 6px; }
+html body.lens-app #verse-note-form p { color: var(--lens-muted); font-size: .8125rem; margin: 2px 0 10px; }
+html body.lens-app #verse-note-form .primary { justify-self: end; min-width: 120px; border: 1px solid var(--lens-copper); }
+html body.lens-app #note-confirm-dialog { width: min(440px, calc(100vw - 32px)); }
+html body.lens-app #note-confirm-dialog h2 { margin-bottom: 12px; }
+html body.lens-app .note-confirm-actions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+html body.lens-app #chapter-bookmark-list > :is(article, div) { border: 0; border-bottom: 1px solid var(--lens-rule); padding: 16px 0; }
+html body.lens-app #chapter-bookmark-list { display: grid; gap: 8px; }
+html body.lens-app #chapter-bookmark-list > button { justify-content: flex-start; text-align: left; padding: 10px 12px; }
+html body.lens-app .verse-preview { width: min(440px, calc(100vw - 24px)); padding: 20px; overflow-y: auto; }
+html body.lens-app .preview-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 0; border-bottom: 0; }
+html body.lens-app .preview-heading strong { font-family: var(--lens-display-font, "Inter", system-ui, sans-serif); font-size: 1.125rem; font-weight: 500; letter-spacing: -.02em; }
+html body.lens-app .preview-edition { color: var(--lens-copper); letter-spacing: .1em; font-size: .6875rem; margin: 12px 0; }
+html body.lens-app .preview-text { font: 400 1rem/1.7 var(--lens-reading-font, var(--verse-font-family, "Inter", system-ui, sans-serif)); color: var(--lens-ink); }
+html body.lens-app .preview-summary { border-left: 2px solid var(--lens-rule); padding-left: 12px; font: 400 .875rem/1.7 var(--ui-font, "Inter", system-ui, sans-serif); color: var(--lens-muted); }
+html body.lens-app .preview-verse-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 4px 8px; margin: 16px 0 0; padding-top: 12px; border-top: 1px solid var(--lens-rule); }
+html body.lens-app .preview-verse-actions button { display: inline-flex; gap: 10px; align-items: center; justify-content: flex-start; height: auto; min-height: 44px; min-width: 0; padding: 10px; font: 400 .8125rem/1.4 var(--ui-font); text-align: left; }
+html body.lens-app .preview-verse-actions [data-verse-action="copy-selected"] { grid-column: 1 / -1; }
+html body.lens-app .preview-verse-actions button svg { width: 17px; height: 17px; flex: 0 0 17px; }
+html body.lens-app .preview-bookmark-help {
+  margin: 12px 0 0;
+  color: var(--lens-muted);
+  font: 400 .8125rem/1.6 var(--ui-font, "Inter", system-ui, sans-serif);
+}
+html body.lens-app .context-preview { padding: 16px; max-width: min(340px, calc(100vw - 24px)); }
+html body.lens-app .context-preview-link { display: grid; gap: 8px; font-size: .875rem; }
+html body.lens-app .context-preview-link span { color: var(--lens-link); }
+html body.lens-app .highlight-context-menu button { border-radius: 10px; color: var(--lens-ink); }
+html body.lens-app .highlight-color-picker { padding: 12px; gap: 10px; }
+html body.lens-app .highlight-color-label { font-size: .75rem; color: var(--lens-muted); }
+
+/* Study windows are reading surfaces, with a quiet tab rail and source ledger. */
+html body.lens-app #study-dialog[open] { width: min(980px, calc(100vw - 48px)); max-width: calc(100vw - 48px); padding: 28px; }
+html body.lens-app #study-dialog .study-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 20px; }
+html body.lens-app #study-dialog .study-heading h2 { margin: 12px 0; font-size: clamp(1.5rem, 3vw, 2.2rem); max-width: 32ch; }
+html body.lens-app #study-dialog .study-heading p { color: var(--lens-muted); font-size: .9375rem; max-width: 70ch; }
+html body.lens-app #study-dialog :is(.tag, .summary-attribution) { border: 0; border-radius: 0; color: var(--lens-copper); padding: 0; font-size: .6875rem; letter-spacing: .08em; }
+html body.lens-app #study-dialog .study-actions { display: flex; flex-direction: column; gap: 8px; }
+html body.lens-app #study-dialog .study-actions button { display: flex; gap: 8px; align-items: center; border: 1px solid var(--lens-rule); padding: 8px 12px; }
+html body.lens-app #study-dialog .workspace-tools { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; margin-top: 24px; padding: 0 0 12px; border-bottom: 1px solid var(--lens-rule); }
+html body.lens-app #study-dialog .workspace-tools > div:last-child { display: flex; align-items: center; gap: 12px; }
+html body.lens-app #study-dialog .workspace-tools label { display: flex; align-items: center; gap: 8px; }
+html body.lens-app #study-dialog #edition { width: auto; }
+html body.lens-app #study-dialog .tabs { display: flex; flex-wrap: wrap; gap: 4px; border: 0; }
+html body.lens-app #study-dialog .tabs button { padding: 10px 14px; }
+html body.lens-app #study-dialog .tabs button[aria-selected="true"] { font-weight: 600; }
+html body.lens-app #study-dialog #tab-content { padding-top: 20px; }
+html body.lens-app #study-dialog :is(.study-tldr, .comparison-summary, .analysis-box, .assessment, .passage, .source-row) { color: var(--lens-ink); padding: 0; }
+html body.lens-app #study-dialog .comparison-summary { font: 400 1rem/1.7 var(--ui-font); }
+html body.lens-app #study-dialog .summary-citations { margin: 12px 0; }
+html body.lens-app #study-dialog .summary-citations .verse-citation { padding: 8px 10px; min-height: 44px; }
+html body.lens-app #study-dialog .assessment { border: 0; border-top: 1px solid var(--lens-rule); margin-top: 24px; padding-top: 20px; }
+html body.lens-app #study-dialog .passages { gap: 20px; }
+html body.lens-app #study-dialog .passage { border: 0; border-left: 2px solid var(--lens-copper); padding: 4px 0 4px 18px; }
+html body.lens-app #study-dialog .passage blockquote { font: 400 1rem/1.75 var(--verse-font-family, var(--ui-font)); margin: 12px 0; }
+html body.lens-app #study-dialog .source-row { border: 0; border-bottom: 1px solid var(--lens-rule); padding: 18px 0; }
+html body.lens-app #study-dialog .source-row p { color: var(--lens-muted); font-size: .8125rem; margin: 6px 0 0; }
+html body.lens-app #study-dialog .notes-caption { color: var(--lens-muted); font-size: .8125rem; }
+html body.lens-app :is(.comparison-context-content, .chat-all-citations) { font: 400 .9375rem/1.7 var(--ui-font); }
+html body.lens-app .comparison-context-content > p { margin: 16px 0; }
+html body.lens-app .comparison-context-content :is(.comparison-sources, .citations-disclosure) { padding: 16px 0; border-top: 1px solid var(--lens-rule); }
+html body.lens-app .chat-all-citations { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* Chat is a research transcript. The prompt remains in the document flow on mobile. */
+html body.lens-app #chat-view { max-width: 900px; margin: 0 auto; padding: 0 0 32px; }
+html body.lens-app #chat-view .chat-page-heading { display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 8px 0 20px; border-bottom: 1px solid var(--lens-rule); }
+html body.lens-app #chat-view #chat-heading { margin: 6px 0 0; font: 600 clamp(2rem, 4.5vw, 3.5rem)/1.08 var(--ui-font); letter-spacing: -.05em; color: var(--lens-ink); }
+html body.lens-app #chat-view #clear-chat { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 8px; touch-action: pan-x pan-y pinch-zoom; font: 400 .8125rem/1.4 var(--ui-font); }
+html body.lens-app #chat-view #clear-chat svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+html body.lens-app #chat-view .chat-introduction { color: var(--lens-muted); max-width: 66ch; font-size: .9375rem; margin: 20px 0 28px; }
+html body.lens-app #chat-view .chat-starters { margin: 36px 0 28px; }
+html body.lens-app #chat-view .chat-starters > p { color: var(--lens-muted); font-size: .8125rem; }
+html body.lens-app #chat-view .chat-starter-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+html body.lens-app #chat-view .chat-starter-grid button { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 16px; min-height: 120px; text-align: left; font: 500 .875rem/1.5 var(--ui-font); }
+html body.lens-app #chat-view .chat-starter-grid button span { grid-column: 1 / -1; color: var(--lens-copper); text-transform: uppercase; letter-spacing: .09em; font-size: .625rem; font-weight: 600; }
+html body.lens-app #chat-view .chat-starter-grid button b { font-weight: 400; color: var(--lens-copper); }
+html body.lens-app #chat-view:has(.chat-message) .chat-starters { display: none; }
+html body.lens-app #chat-view #chat-messages { display: grid; gap: 0; padding: 0; margin: 0 0 24px; min-height: 0; }
+html body.lens-app #chat-view :is(.chat-message.user, .chat-message.assistant) { display: block; position: relative; align-self: stretch; justify-self: stretch; width: 100%; max-width: 100%; min-width: 0; }
+html body.lens-app #chat-view .chat-message.user .message-body { font-size: 1.0625rem; font-weight: 500; line-height: 1.6; }
+html body.lens-app #chat-view .chat-speaker { display: block; color: var(--lens-copper); font-size: .625rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 10px; }
+html body.lens-app #chat-view .chat-message.assistant .chat-answer { position: relative; display: flex; flex-wrap: wrap; gap: 0 12px; margin: 0; padding: 0 0 0 20px; }
+html body.lens-app #chat-view .chat-answer > :is(.message-body, .lens-answer-provenance, .comparison-evidence) { flex: 0 0 100%; min-width: 0; }
+html body.lens-app #chat-view .lens-answer-provenance { margin: 0 0 14px; color: var(--lens-muted); font: 400 .6875rem/1.6 var(--ui-font); }
+html body.lens-app #chat-view .message-body { color: var(--lens-ink); font: 400 1rem/1.75 var(--ui-font); overflow-wrap: anywhere; }
+html body.lens-app #chat-view :is(.summary-expand, .summary-inspect) { display: inline-flex; align-items: center; justify-content: flex-start; gap: 6px; margin: 12px 0 0; padding: 8px 0; font: 400 .75rem/1.4 var(--ui-font); }
+html body.lens-app #chat-view .summary-expand { order: 2; }
+html body.lens-app #chat-view .summary-inspect { order: 3; }
+html body.lens-app #chat-view .summary-expand svg { width: 16px; height: 16px; }
+html body.lens-app #chat-view .summary-inspect svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+html body.lens-app #chat-view .comparison-evidence { order: 1; padding-top: 16px; margin-top: 16px; border-top: 1px solid var(--lens-rule); }
+html body.lens-app #chat-view .chat-reasoning { margin: 0; }
+html body.lens-app #chat-view .chat-summary-sources { display: flex; flex-wrap: nowrap; gap: 8px; margin-top: 16px; }
+html body.lens-app :is(#chat-view, #chat-citations-dialog) .chat-citation { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 10px; font-size: .75rem; }
+html body.lens-app #chat-view #chat-form { display: flex; align-items: center; gap: 12px; width: 100%; max-width: 100%; min-height: 60px; padding: 6px 8px 6px 16px; }
+html body.lens-app #chat-view #chat-input { flex: 1 1 auto; min-width: 0; width: 100%; min-height: 44px; padding: 8px 0; font: 400 1rem/1.5 var(--ui-font); }
+html body.lens-app #chat-view #chat-send { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 8px; width: auto; min-width: 80px; height: auto; min-height: 44px; padding: 10px 12px; font: 500 .8125rem/1.3 var(--ui-font); }
+html body.lens-app #chat-view #chat-send svg { width: 16px; height: 16px; }
+html body.lens-app #chat-view #chat-status { color: var(--lens-muted); font-size: .8125rem; margin: 12px 0 0; padding: 0; }
+html body.lens-app #chat-view .chat-typing i { width: 5px; height: 5px; background: var(--lens-copper); }
+
+/* Phone tools arrive within thumb reach; desktop previews remain anchored. */
+@media (max-width: 760px) {
+  html body.lens-app .verse-preview {
+    position: fixed;
+    margin: 0;
+    padding: 12px max(20px, env(safe-area-inset-right, 0px)) calc(20px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left, 0px));
+    scroll-padding-block: 64px 20px;
+  }
+  html body.lens-app .verse-preview .preview-heading {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding-bottom: 8px;
+    background: var(--lens-surface);
+  }
+}
+@media (max-width: 760px) and (prefers-reduced-motion: no-preference) {
+  html body.lens-app .verse-preview:not([hidden]),
+  html body.lens-app dialog[open] {
+    animation: lens-sheet-arrive 180ms cubic-bezier(.2, .75, .25, 1);
+  }
+}
+@keyframes lens-sheet-arrive {
+  from { opacity: 0; translate: 0 24px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@media (max-width: 600px) {
+  html body.lens-app #reader-settings[open],
+  html body.lens-app :is(#passage-picker, #marked-filter-dialog, #verse-note-dialog, #chapter-bookmarks-dialog, #chat-citations-dialog, #study-dialog, .comparison-context-dialog)[open] {
+    inset: auto 0 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: calc(92dvh - env(safe-area-inset-top, 0px));
+    padding: 20px 20px calc(24px + env(safe-area-inset-bottom, 0px));
+  }
+  html body.lens-app dialog .sheet-heading { margin-bottom: 16px; }
+  html body.lens-app #passage-picker .passage-book-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html body.lens-app #passage-picker .passage-number-grid,
+  html body.lens-app #marked-filter-dialog .marked-chapter-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 7px; }
+  html body.lens-app #marked-filter-dialog .marked-kind-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html body.lens-app :is(#commandments-filters, #prophecy-filters)[open] { inset: auto 0 0; margin: 0; width: 100%; max-width: 100%; height: min(760px, 90dvh); max-height: 90dvh; }
+  html body.lens-app :is(.commandments-sheet-heading, .prophecy-sheet-header) { padding: 16px 20px; }
+  html body.lens-app :is(.commandments-sheet-scroll, .prophecy-sheet-body) { padding: 0 20px 20px; }
+  html body.lens-app :is(.commandments-sheet-footer, .prophecy-sheet-footer) { padding: 12px 20px calc(16px + env(safe-area-inset-bottom, 0px)); }
+  html body.lens-app :is(.commandments-sheet-footer, .prophecy-sheet-footer) button { flex: 1; padding: 10px 8px; }
+  html body.lens-app #study-dialog .study-heading { grid-template-columns: 1fr; gap: 8px; }
+  html body.lens-app #study-dialog .study-actions { flex-direction: row; flex-wrap: wrap; }
+  html body.lens-app #study-dialog .tabs { width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; }
+  html body.lens-app #study-dialog .tabs button { padding: 10px 3px; font-size: .75rem; }
+  html body.lens-app #study-dialog .passages { grid-template-columns: 1fr; }
+  html body.lens-app #chat-view .chat-page-heading { gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+  html body.lens-app #chat-view #clear-chat { font-size: .75rem; }
+  html body.lens-app #chat-view .chat-starters { margin: 24px 0; }
+  html body.lens-app #chat-view .chat-starter-grid { grid-template-columns: 1fr; gap: 8px; }
+  html body.lens-app #chat-view .chat-starter-grid button { min-height: 0; gap: 8px; padding: 14px; }
+  html body.lens-app #chat-view .chat-message.assistant .chat-answer { padding-left: 14px; }
+  html body.lens-app #chat-view #chat-form { gap: 6px; padding-left: 12px; }
+  html body.lens-app #chat-view #chat-send { min-width: 64px; padding: 10px; }
+  html body.lens-app #chat-view #chat-send svg { display: none; }
+}
+@media (max-width: 420px) {
+  html body.lens-app #passage-translation label {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+    overflow-wrap: normal;
+  }
+  html body.lens-app #passage-translation select { width: 100%; }
+  html body.lens-app #passage-picker .passage-book-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.5rem), 1fr));
+  }
+  html body.lens-app #passage-picker .passage-book-grid .passage-number span {
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+}
+@media (forced-colors: active) {
+  html body.lens-app dialog :is(button[aria-selected="true"], button[aria-pressed="true"]),
+  html body.lens-app #passage-picker .passage-number input:checked + span { outline-offset: -3px; }
+}
+}
+
+@layer pages {
+  /* Preserve the reader switch's established size over generic dialog buttons. */
+  html body.lens-app #reader-settings #reader-compare {
+    font-size: .875rem;
+    min-height: 40px;
+  }
+  html body.lens-app #reader-settings-close { font-weight: 500; }
+  html body.lens-app #stories-search::placeholder {
+    color: color-mix(in srgb, var(--muted) 80%, #000);
+  }
+  @media (max-width: 850px) {
+    html body.lens-app #reader-settings #reader-compare { min-height: 44px; }
+  }
+}

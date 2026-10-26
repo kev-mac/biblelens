@@ -18,12 +18,9 @@ for(const family of ['inter','lora']){
  if(!license.ok)throw Error('Font license download failed');
  fs.writeFileSync('assets/font-licenses/'+family+'-OFL.txt',await license.text());
 }
-fs.writeFileSync('src/fonts.css','/* Bundled Latin Lora and Inter, weights 400 and 500. SIL Open Font License: assets/font-licenses/. */\n'+output.join('\n'));
-let html=fs.readFileSync('src/index.html','utf8');
-html=html.replace('<link rel="stylesheet" href="style.css?v=round-gradients-v1">','<link rel="stylesheet" href="fonts.css?v=lora-inter-v1"><link rel="stylesheet" href="style.css?v=vertical-gradients-v1">');
-fs.writeFileSync('src/index.html',html);
-let styles=fs.readFileSync('src/style.css','utf8').replaceAll('system-ui','"Inter",system-ui').replaceAll('Georgia','"Lora",Georgia');
-fs.writeFileSync('src/style.css',styles);
-let build=fs.readFileSync('scripts/build.mjs','utf8').replace("'style.css':'text/css; charset=utf-8'","'fonts.css':'text/css; charset=utf-8','style.css':'text/css; charset=utf-8'");
-fs.writeFileSync('scripts/build.mjs',build);
+const file='src/base.css',styles=fs.readFileSync(file,'utf8');
+const start='/* Bundled reader fonts: start */',end='/* Bundled reader fonts: end */';
+const from=styles.indexOf(start),to=styles.indexOf(end,from);
+if(from<0||to<from)throw Error('Missing bundled-font markers in the base layer');
+fs.writeFileSync(file,styles.slice(0,from)+start+'\n'+output.join('\n')+'\n'+styles.slice(to));
 console.log('Bundled Lora and Inter:',faces.length,'font faces,',binaries.size,'unique font files.');

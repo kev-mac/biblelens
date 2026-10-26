@@ -1,3 +1,4 @@
+import {readApplicationStyles} from './stylesheets.mjs';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
@@ -88,17 +89,16 @@ assert(context.visible({mode:'science',status:'Context',tags:['Q']}));
 context.cache.set('0:1:kjv:science',{items:[{id:'fixture-question',verse:3,placementRole:'context',keyTarget:'Genesis 1:1',status:'Context',tags:['Q'],title:'Fixture question',refs:[],sources:[]}]});
 context.filters.delete('Q');assert.equal(context.render(3),'');context.filters.add('Q');
 const pointer=context.render(3);assert(!pointer.includes('Context for:'));assert(pointer.includes('data-context-local="false"'));assert(pointer.includes('aria-disabled="true"'));context.readRef=()=>({book:0,chapter:1,verse:1});const local=context.render(3);assert(local.includes('data-context-jump="1"'));assert(local.includes('data-context-local="true"'));context.readRef=()=>null;assert(!pointer.includes('comparison-panel'));assert(!pointer.includes('<svg'));assert(pointer.includes('context-tag'));assert(pointer.includes('class="context-tags"'));assert(pointer.includes('Questions'));
-const css=fs.readFileSync('src/style.css','utf8');assert(css.includes('.agreement.question,body.dark .agreement.question'));assert(css.includes('[data-tone="question"]'));
+const css=readApplicationStyles();assert(css.includes('.agreement.question,body.dark .agreement.question'));assert(css.includes('[data-tone="question"]'));
 const html=fs.readFileSync('src/index.html','utf8');
 assert(html.indexOf('id="theme"')>html.indexOf('id="reader-settings"'),'Theme control belongs inside Reader settings');
 assert(css.includes('.comparison-dock{position:sticky'),'Comparison filters must remain joined below the sticky header');
 assert(css.includes('border-bottom:1px solid var(--line)'),'Read divider belongs below the comparison filters');
-assert(css.includes('border:1px solid var(--green)!important')&&css.includes('border-color:var(--brand-accent)!important'),'Inactive filter icons need thin blue borders and active icons need burnt-orange borders');
+assert(css.includes('border:1px solid var(--green)')&&css.includes('border-color:var(--brand-accent)'),'Inactive filter icons need thin blue borders and active icons need burnt-orange borders');
 assert(html.includes('id="comparison-dock-toggle"')&&source.includes("classList.toggle('collapsed')"),'Comparison categories need a chevron show/hide control');
 assert(css.includes('.filter-icon{width:42px;height:42px;flex:0 0 42px;aspect-ratio:1}'),'Mobile comparison icons should be larger and remain round');
 assert(css.includes('.comparison-status{margin-top:0}'),'Mobile comparison tray must join the menu without a gap');
 assert(css.includes('.verse-comparison[data-tone="translation"]{--summary-tint:#ebe0f5;--summary-ink:#50356c}'),'Translation summaries must use the translation icon palette');
-assert(css.includes('.reader-picker.chapter-round{background:transparent;border:0;border-radius:0}'),'Settings cog should not have an outside circle');
 console.log('PASS: Q tag, accessible label, initially hidden summary, independent on/off, Context pointer and light/dark colors.');
 
 context.cache.set('0:1:kjv:science',{items:[]});

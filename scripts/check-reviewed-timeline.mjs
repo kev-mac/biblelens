@@ -43,7 +43,7 @@ for (const {id,ref,quote} of quotes) {
 const worker = (await import('../dist/server/index.js')).default;
 for (const [path,type,content] of [
  ['/reviewed-timeline.js','javascript','history-theudas-revolt-order'],
- ['/timeline.css','css','grid-template-rows:0fr'],
+ ['/components.css','css','grid-template-rows:0fr'],
  ['/','html','id="timeline-view"']
 ]) {
  const response = await worker.fetch(new Request('https://scripture.test'+path),{},{});

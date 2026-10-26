@@ -1,3 +1,4 @@
+import {readApplicationStyles} from './stylesheets.mjs';
 import os from 'node:os';import path from 'node:path';import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';import vm from 'node:vm';import zlib from 'node:zlib';import assert from 'node:assert/strict';
 import {validateSides,mergeVerseRoles} from './verse-roles.mjs';
@@ -47,7 +48,7 @@ assert(!ctx.html({n:1,kjv:text('Genesis 1:1')},'kjv').includes('data-tone="contr
 vm.runInContext("categoryFilters.delete('academic')",ctx);assert(!ctx.html({n:1,kjv:text('Genesis 1:1')},'kjv').includes('<mark'),'Disabled category removes its highlight');
 vm.runInContext("categoryFilters.add('academic')",ctx);assert(ctx.html({n:1,kjv:text('Genesis 1:1')},'kjv').includes('<mark'));
 ctx.toggle(scienceButton);assert(!ctx.html({n:1,kjv:text('Genesis 1:1')},'kjv').includes('<mark'),'Closing all icons removes every highlight');ctx.toggle(scienceButton);
-const style=fs.readFileSync('src/style.css','utf8');for(const tone of ['history','contradictions','science','hebrew','greek','violation','question'])assert(style.includes(`mark.side-quote[data-tone="${tone}"]`));
+const style=readApplicationStyles();for(const tone of ['history','contradictions','science','hebrew','greek','violation','question'])assert(style.includes(`mark.side-quote[data-tone="${tone}"]`));
 assert(!ctx.html({n:1,web:text('Genesis 1:1')},'web').includes('<mark'));ctx.RED_LETTERS={'0:1':{1:{kjv:[[0,16]]}}};const mixed=ctx.html({n:1,kjv:text('Genesis 1:1')},'kjv');assert(mixed.includes('jesus-words'));assert.equal(mixed.replace(/<[^>]*>/g,''),text('Genesis 1:1'));
 const before=evidence.reduce((n,e)=>n+new Set(e.appliesTo||[e.ref]).size,0),after=evidence.flatMap(e=>w.place(e)),cards=after.filter(p=>p.placementRole==='key').length,pointers=after.length-cards,converted=evidence.reduce((n,e)=>n+[...new Set(e.appliesTo||[e.ref])].filter(ref=>w.place(e).find(p=>p.ref===ref)?.placementRole==='context').length,0);
 const visible=evidence.filter(i=>(i.tags?.some(t=>['H','G','T','V'].includes(t))||['H','G','T','V'].includes(i.tag))||i.mode==='contradictions'||i.mode==='science'||(i.mode==='history'&&i.academicAssessment===true)||(i.status!=='Agrees'&&(i.status==='Disagrees'||i.discrepancy===true)));const shown=visible.flatMap(e=>w.place(e)),visibleCards=shown.filter(p=>p.placementRole==='key').length;
