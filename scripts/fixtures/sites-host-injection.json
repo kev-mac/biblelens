@@ -1,0 +1,64 @@
+{
+  "sourceUrl": "https://scripture-lens.kvn-mcgwn.chatgpt.site/",
+  "capturedAt": "2026-10-27T02:10:14.000Z",
+  "buildNumber": 273,
+  "position": "body-end",
+  "method": "Headless Chromium: three reloads with cache disabled and cookies cleared to force host injection. Ordinary reloads stop receiving the challenge after its cookie is set.",
+  "samples": [
+    {
+      "load": 1,
+      "capturedAt": "2026-10-27T02:10:14.000Z",
+      "html": "<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a50e29ae5a410f79',t:'MTc5MzA2NzAxMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>",
+      "params": {
+        "r": "a50e29ae5a410f79",
+        "t": "MTc5MzA2NzAxMA=="
+      },
+      "sha256": "WmeAB578fo8m4IGR0ith5m8khCswGSC0P/aOmhLi7b8=",
+      "nonce": "",
+      "nonceAttribute": null,
+      "childInline": "window.__CF$cv$params={r:'a50e29ae5a410f79',t:'MTc5MzA2NzAxMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);",
+      "childInlineSha256": "yQqd/eRTBaHBNd/mDnzmLl8LCiB4E+klNC0rpoF2f7Q=",
+      "childInlineNonce": "",
+      "childInlineNonceAttribute": null,
+      "remoteBodySha256": "+ePoibiemENciaDWC9oc60fSnUBzUbqzD2nC9hd4w0c="
+    },
+    {
+      "load": 2,
+      "capturedAt": "2026-10-27T02:11:21.000Z",
+      "html": "<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a50e2b61de5d0f79',t:'MTc5MzA2NzA3OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>",
+      "params": {
+        "r": "a50e2b61de5d0f79",
+        "t": "MTc5MzA2NzA3OQ=="
+      },
+      "sha256": "7qGLBTA7aEO2Oo7e7NF8ybzgoQtxgG/1/t+vxKY6kSs=",
+      "nonce": "",
+      "nonceAttribute": null,
+      "childInline": "window.__CF$cv$params={r:'a50e2b61de5d0f79',t:'MTc5MzA2NzA3OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);",
+      "childInlineSha256": "rtnx3sKb1VLtvVKxrd4Sc8IUFw8KPoyvMgemPnoi9PU=",
+      "childInlineNonce": "",
+      "childInlineNonceAttribute": null,
+      "remoteBodySha256": "IpiCvieIjp2zQIgTQbx6Gn+oVr8KUle/Acj+QOfJIrM="
+    },
+    {
+      "load": 3,
+      "capturedAt": "2026-10-27T02:11:40.000Z",
+      "html": "<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a50e2bd94e240f79',t:'MTc5MzA2NzA5OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>",
+      "params": {
+        "r": "a50e2bd94e240f79",
+        "t": "MTc5MzA2NzA5OQ=="
+      },
+      "sha256": "poVl142U8uV58iwrLnolBztDGAOsldR83GPot6IoliQ=",
+      "nonce": "",
+      "nonceAttribute": null,
+      "childInline": "window.__CF$cv$params={r:'a50e2bd94e240f79',t:'MTc5MzA2NzA5OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);",
+      "childInlineSha256": "4ryslmqzeNi7r4Y4ZWlwGUG7pUJ/AVg5Sa74/BF+5Xc=",
+      "childInlineNonce": "",
+      "childInlineNonceAttribute": null,
+      "remoteBodySha256": "g7KbV1yDXxBWR/eRYrrnukUM7jcuM8fb/ovBqisygSA="
+    }
+  ],
+  "remoteScriptPath": "/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+  "remoteRedirectPath": "/cdn-cgi/challenge-platform/h/b/scripts/jsd/d2d3316b729e/main.js?",
+  "remoteTagNonce": "",
+  "remoteTagNonceAttribute": null
+}

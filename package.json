@@ -1,7 +1,7 @@
 {
   "name": "scripture-lens",
   "version": "1.1.0",
-  "buildNumber": 274,
+  "buildNumber": 275,
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,7 +12,7 @@
     "build:mobile": "node scripts/build-mobile.mjs",
     "check:places": "node scripts/check-places.mjs",
     "check:mobile": "node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs",
-    "check:ui": "node scripts/check-security-ui.mjs",
+    "check:ui": "node scripts/check-security-ui.mjs && node scripts/check-hosted-csp.mjs",
     "mobile:sync": "npm run build:mobile && cap sync",
     "mobile:android": "cap open android",
     "mobile:ios": "cap open ios",

@@ -39,7 +39,7 @@ async function serverFor(platform,fixture,withoutCsp){
    }
    const headers=Object.fromEntries(response.headers);let body=Buffer.from(await response.arrayBuffer());
    if(withoutCsp&&headers['content-type']?.includes('text/html')){
-    delete headers['content-security-policy'];body=Buffer.from(body.toString().replace(/<meta http-equiv="Content-Security-Policy"[^>]*>/i,''));
+    delete headers['content-security-policy'];delete headers['content-security-policy-report-only'];body=Buffer.from(body.toString().replace(/<meta http-equiv="Content-Security-Policy"[^>]*>/i,''));
    }
    res.writeHead(response.status,headers);res.end(body);
   }catch(error){res.writeHead(500);res.end(error.message);}
@@ -64,11 +64,17 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
   await page.addInitScript(()=>{
    localStorage.setItem('biblelens-cloud-sync-v1',JSON.stringify({enabled:true,owner:'security-test',base:{},token:null}));
    localStorage.setItem('scripture-lens-v1',JSON.stringify({bookmarks:[],notes:{seen:'Keep my offline note'}}));
-   globalThis.__violations=[];document.addEventListener('securitypolicyviolation',e=>__violations.push(e.violatedDirective));
+   globalThis.__violations=[];document.addEventListener('securitypolicyviolation',e=>__violations.push({directive:e.violatedDirective,disposition:e.disposition}));
   });
   try{
    const response=await page.goto(server.url);assert.equal(response.status(),200);
-   if(platform==='web'&&!withoutCsp)assert(response.headers()['content-security-policy']);
+   if(!withoutCsp){
+    const headers=response.headers();
+    if(platform==='web'){
+     assert(headers['content-security-policy-report-only']);assert(!headers['content-security-policy']);
+     assert.equal(await page.locator('meta[http-equiv="Content-Security-Policy"]').count(),0,'Hosted web must not enforce a meta CSP');
+    }else assert.equal(await page.locator('meta[http-equiv="Content-Security-Policy"]').count(),1,'Native must enforce its CSP');
+   }
    await page.waitForFunction(()=>!document.documentElement.classList.contains('bl-starting')&&typeof reading!=='undefined'&&reading?.verses?.length&&state.investigations?.coordinates,{},{timeout:60000});
    await page.waitForFunction(()=>document.querySelector('[data-sync-status]')?.textContent.includes('Synced'));
    assert.equal(await page.evaluate(()=>state.notes.seen),'Keep my offline note');
@@ -118,12 +124,14 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
      const image=document.createElement('img');image.setAttribute('onerror','globalThis.__securityExecuted=1');document.body.append(image);image.dispatchEvent(new Event('error'));
      try{await fetch('https://blocked.invalid/probe');}catch{}
     });
-    await page.waitForFunction(()=>__violations.some(x=>x==='connect-src'));
-    assert(!await page.evaluate(()=>globalThis.__securityExecuted));
-    assert((await page.evaluate(()=>__violations)).some(x=>x.startsWith('script-src')));
+    await page.waitForFunction(()=>__violations.some(x=>x.directive==='connect-src'));
+    const violations=await page.evaluate(()=>__violations),reportOnly=platform==='web';
+    assert.equal(!!await page.evaluate(()=>globalThis.__securityExecuted),reportOnly,'Only the web report-only policy permits the intentional script probe');
+    assert(violations.some(x=>x.directive.startsWith('script-src')));
+    assert(violations.every(x=>x.disposition===(reportOnly?'report':'enforce')),'Web reports; native blocks');
    }
    assert.deepEqual(errors,[],'Application should not throw during security regression');
-   console.log(`PASS: ${name} ${platform}, CSP ${withoutCsp?'removed to isolate escaping':'enforced'}: paired-device write → sync merge → inert passage/note/bookmark/comparison; offline note, reader, search and workers preserved.`);
+   console.log(`PASS: ${name} ${platform}, CSP ${withoutCsp?'removed to isolate escaping':platform==='web'?'report-only':'enforced'}: paired-device write → sync merge → inert passage/note/bookmark/comparison; offline note, reader, search and workers preserved.`);
   }catch(error){console.error(name,platform,{withoutCsp,errors,consoleErrors:consoleErrors.slice(0,5),violations:await page.evaluate(()=>globalThis.__violations)});throw error;}finally{await context.close();await server.close();fixture.close();}
  }}finally{await browser.close();}
 }

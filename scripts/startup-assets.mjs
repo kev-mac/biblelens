@@ -81,9 +81,18 @@ export function consolidateStartupAssets(assets) {
     "font-src 'self' data:", "img-src 'self' data: blob:", "worker-src 'self' blob:",
     "connect-src 'self' https://scripture-lens.kvn-mcgwn.chatgpt.site https://tiles.openfreemap.org"].join('; ');
   assets['/'].csp = policy;
-  const meta = `<meta http-equiv="Content-Security-Policy" content="${policy}">`;
-  assets['/'].body = withoutOriginals.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + meta).replace(/<\/head\s*>/i, pair + '</head>');
+  // Sites/Cloudflare injects an inline challenge with request-specific values
+  // and no nonce. The web response reports this same policy; native enforces it
+  // via a meta tag added only when writing the device bundle.
+  assets['/'].body = withoutOriginals.replace(/<\/head\s*>/i, pair + '</head>');
   return manifest;
+}
+
+export function insertNativeContentSecurityPolicy(html, policy) {
+  const charset = '<meta charset="utf-8">';
+  if (!policy || !html.includes(charset)) throw Error('Missing native CSP or charset');
+  if (/<meta\b[^>]*http-equiv=["']Content-Security-Policy/i.test(html)) throw Error('CSP meta already present');
+  return html.replace(charset, charset + `<meta http-equiv="Content-Security-Policy" content="${policy}">`);
 }
 
 export function insertDeviceBootstrap(html) {
