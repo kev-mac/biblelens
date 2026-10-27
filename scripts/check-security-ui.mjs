@@ -15,7 +15,9 @@ const data={
  passageNotes:{p:{book:attribute,chapter:marker,name:text,title:text,text},'NaN:NaN':{book:attribute,chapter:marker,name:text,title:text,text}},
  passageBookmarks:{p:{book:0,chapter:marker,name:text}},
  verseNotes:{v:{book:0,chapter:1,verse:marker,name:text,title:text,text}},
- verseBookmarks:{v:{book:0,chapter:1,verse:marker,name:text}},
+ verseBookmarks:{v:{book:0,chapter:1,verse:marker,name:text},'0:1:1':{book:0,chapter:1,verse:1,name:'Genesis',highlights:[
+  {edition:attribute,start:0,end:2,text:'In',color:'yellow'},
+  {edition:'kjv',start:0,end:2,text:'In',color:'yellow'}]}},
  notes:{animals:text},noteTitles:{animals:text},
  investigations:{comparison:{id:'comparison',title:text,note:text,edition:'kjv',left:{book:0,chapter:1},right:{book:0,chapter:2}},
   coordinates:{id:'coordinates',title:text,note:text,edition:'kjv',left:{book:0,chapter:brokenChapter},right:{book:0,chapter:2}}}
@@ -70,7 +72,19 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
    await page.waitForFunction(()=>!document.documentElement.classList.contains('bl-starting')&&typeof reading!=='undefined'&&reading?.verses?.length&&state.investigations?.coordinates,{},{timeout:60000});
    await page.waitForFunction(()=>document.querySelector('[data-sync-status]')?.textContent.includes('Synced'));
    assert.equal(await page.evaluate(()=>state.notes.seen),'Keep my offline note');
+   assert.equal(await page.evaluate(()=>state.verseBookmarks['0:1:1'].highlights[0].edition),attribute,'Malicious edition must arrive through sync');
    await page.evaluate(()=>renderPassageSaved());
+   assert.equal(await page.locator('#saved-passages [data-marked-verse-text="0/1/1"]').first().getAttribute('data-marked-edition'),'kjv','Valid highlights must survive edition validation');
+   // Exercise escaping independently of the edition allowlist, so relaxing that
+   // validator in the future cannot silently reopen this attribute sink.
+   await page.evaluate(()=>{
+    const normalize=normalizeTextHighlights,probe=document.createElement('div');probe.id='security-edition-probe';
+    try{normalizeTextHighlights=value=>value;probe.innerHTML=bookmarkVerseTextHtml(0,1,1);}finally{normalizeTextHighlights=normalize;}
+    document.body.append(probe);
+   });
+   await inert(page,'#security-edition-probe');
+   assert.equal(await page.locator('#security-edition-probe [data-marked-edition]').first().getAttribute('data-marked-edition'),attribute);
+   await page.locator('#security-edition-probe').evaluate(node=>node.remove());
    assert((await inert(page,'#saved-passages')).body.includes(marker));
    await page.evaluate(()=>renderChapterBookmarks());await inert(page,'#chapter-bookmark-list');
    await page.evaluate(()=>{markedBookSelection=0;markedChapterSelection=0;markedKind='bookmark';markedData={records:[],verses:{}};renderMarkedResults();});

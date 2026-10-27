@@ -26,7 +26,7 @@ function combineTextHighlights(first,second){return normalizeTextHighlights([...
 function bookmarkVerseTextHtml(book,chapter,verse){
  const ranges=normalizeTextHighlights(state.verseBookmarks?.[`${book}:${chapter}:${verse}`]?.highlights);
  const editions=[...new Set(ranges.map(h=>h.edition))];
- return (editions.length?editions:['']).map(edition=>`<p class="marked-verse-text" data-marked-verse-text="${esc(book)}/${esc(chapter)}/${esc(verse)}"${edition?` data-marked-edition="${edition}"`:''} aria-live="polite" aria-busy="true">Loading verse text…</p>`).join('');
+ return (editions.length?editions:['']).map(edition=>`<p class="marked-verse-text" data-marked-verse-text="${esc(book)}/${esc(chapter)}/${esc(verse)}"${edition?` data-marked-edition="${esc(edition)}"`:''} aria-live="polite" aria-busy="true">Loading verse text…</p>`).join('');
 }
 function markedVerseTextParts(value,edition,book,chapter,verse){
  const source=String(value),ranges=normalizeTextHighlights(state.verseBookmarks?.[`${book}:${chapter}:${verse}`]?.highlights).filter(h=>h.edition===edition&&source.slice(h.start,h.end)===h.text),parts=[];
