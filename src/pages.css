@@ -473,6 +473,7 @@ body.lens-app #lens-search-status { min-height: 24px; margin: 18px 0; font-size:
 body.lens-app :is(.lens-search-hint, .lens-search-status, .lens-search-meta) { color: var(--lens-muted); font-size: .8125rem; }
 body.lens-app .lens-search-results { margin-top: 36px; }
 body.lens-app .lens-search-jump { display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap; gap: 6px 20px; width: 100%; margin: 24px 0 0; padding: 10px 0; border-block: 1px solid var(--lens-rule); }
+body.lens-app .lens-search-jump .lens-button { flex: 0 0 auto; white-space: nowrap; }
 body.lens-app .lens-search-jump a { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; color: var(--lens-link); font-size: .8125rem; line-height: 1.5; text-decoration: none; }
 body.lens-app .lens-search-jump a:hover { text-underline-offset: 4px; }
 body.lens-app .lens-search-jump :is(small, span) { margin: 0; padding: 0; background: none; border-radius: 0; color: var(--lens-muted); font-size: inherit; }
