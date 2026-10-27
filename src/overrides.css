@@ -1943,3 +1943,175 @@ html body.lens-app .story-summary :is(.person-chip, .location-chip) { text-decor
 html body.lens-app #places-view .place-map-preview{background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.2),rgba(15,23,34,.65));background-color:#0f1722;border-color:rgba(59,130,246,.4)}
 html body.lens-app:not(.dark) #places-view .place-map-preview{background:linear-gradient(rgba(59,130,246,.10),rgba(255,255,255,.85));background-color:#f7faff}
 }
+
+/* Phase 2: phone-first navigation, discovery, debates and the private notebook. */
+@layer overrides.priority {
+html body.lens-app {
+ --lens-paper:#f6f7fb; --lens-surface:#fff; --lens-ink:#1c2235; --lens-muted:#62697d;
+ --lens-rule:#e7e9f1; --lens-copper:#4056cf; --lens-link:#4056cf; --lens-focus:#4056cf;
+ --lens-copper-soft:#edf0ff; --lens-control-bg:#eef0f7; --lens-control-hover:#e5e8f5;
+ --phase2-rose:#a83d64; --phase2-rose-bg:#fceaf0; --phase2-green:#237360; --phase2-green-bg:#e7f4ef;
+ background:var(--lens-paper); color:var(--lens-ink);
+}
+html body.lens-app.dark {
+ color-scheme:dark; --lens-paper:#121520; --lens-surface:#1b1f2c; --lens-ink:#f0f1f8; --lens-muted:#a3abc1;
+ --lens-rule:#303648; --lens-copper:#a6b3ff; --lens-link:#a6b3ff; --lens-focus:#a6b3ff;
+ --lens-copper-soft:#292f51; --lens-control-bg:#252a3b; --lens-control-hover:#30364b;
+ --phase2-rose:#ffacce; --phase2-rose-bg:#442738; --phase2-green:#9adfc8; --phase2-green-bg:#1e3b34;
+}
+html body.lens-app > #lensMasthead.lens-masthead {background:var(--lens-surface);color:var(--lens-ink);border-bottom:1px solid var(--lens-rule);box-shadow:none;}
+html body.lens-app #lensMasthead :is(.lens-brand, .lens-primary a, #lens-settings){color:var(--lens-ink);}
+html body.lens-app #lensMasthead .lens-brand {font-size:20px;font-weight:750;letter-spacing:-.6px;}
+html body.lens-app #lensMasthead .lens-brand small {display:none;}
+html body.lens-app #lensMasthead .lens-mark {background:#4056cf;color:#fff;border:0;border-radius:10px;width:32px;height:32px;}
+html body.lens-app #lensMasthead nav.lens-primary {background:var(--lens-surface);border-color:var(--lens-rule);}
+html body.lens-app #lensMasthead .lens-primary a {color:var(--lens-muted);font-size:12px;min-height:52px;border:0;border-radius:12px;}
+html body.lens-app #lensMasthead .lens-primary a[aria-current="page"] {color:var(--lens-link);background:var(--lens-copper-soft);border:0;font-weight:700;}
+html body.lens-app #main .phase2-page {max-width:1080px;margin:0 auto;padding:28px 0 36px;container-type:inline-size;}
+html body.lens-app #main .phase2-page :is(h1,h2,h3),html body.lens-app .phase2-sheet :is(h1,h2,h3){font-family:var(--lens-display-font);color:var(--lens-ink);letter-spacing:-.035em;}
+html body.lens-app #main .phase2-page h1 {font-size:32px;line-height:1.14;font-weight:750;margin:8px 0 12px;}
+html body.lens-app #main .phase2-page h2 {font-size:20px;line-height:1.3;font-weight:700;margin:0 0 10px;}
+html body.lens-app #main .phase2-page h3 {font-size:16px;line-height:1.4;font-weight:650;margin:0;}
+html body.lens-app .phase2-page p {font-size:15px;line-height:1.65;margin:10px 0;color:var(--lens-muted);}
+html body.lens-app .phase2-page a {text-decoration:none;}
+html body.lens-app :is(.phase2-page,.phase2-sheet,#notebook-view,#search-view) :is(button,a,summary) {min-height:44px;}
+html body.lens-app :is(.phase2-page,.phase2-sheet,#notebook-view,#search-view) :is(input,textarea,select) {font-size:16px;}
+html body.lens-app .phase2-eyebrow {display:block;color:var(--lens-link);font-size:12px;line-height:1.5;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+html body.lens-app .phase2-meta {display:block;font-size:12px;line-height:1.6;color:var(--lens-muted);}
+html body.lens-app .phase2-search {display:flex;align-items:center;gap:8px;padding:3px 6px 3px 15px;border:1px solid var(--lens-rule);border-radius:14px;background:var(--lens-control-bg);margin-bottom:24px;}
+html body.lens-app .phase2-search input {flex:1;min-width:0;background:transparent;border:0;padding:10px 0;color:var(--lens-ink);box-shadow:none;}
+html body.lens-app .phase2-search button {width:44px;border:0;background:none;color:var(--lens-link);font-size:30px;}
+html body.lens-app .phase2-intro {margin-bottom:22px;}
+html body.lens-app .phase2-hero {position:relative;border-radius:20px;min-height:310px;overflow:hidden;background:#15283b;isolation:isolate;display:flex;align-items:flex-end;}
+html body.lens-app .phase2-hero > .phase2-art {position:absolute;inset:0;height:100%;z-index:-2;}
+html body.lens-app .phase2-hero::before {content:"";position:absolute;inset:0;background:linear-gradient(180deg,#10193126,#101931bd 35%,#101931);z-index:-1;}
+html body.lens-app .phase2-art {position:relative;flex:none;aspect-ratio:2.1;background:var(--lens-control-bg);overflow:hidden;}
+html body.lens-app .phase2-art img {position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;opacity:0;}
+html body.lens-app .phase2-art[data-art-state="ready"] img {opacity:1;}
+html body.lens-app .phase2-art-placeholder {position:absolute;inset:0;display:grid;place-content:center;padding:32px 16px 12px;text-align:center;font-size:13px;line-height:1.4;color:var(--lens-muted);background:linear-gradient(135deg,var(--lens-control-bg),var(--lens-copper-soft));}
+html body.lens-app .phase2-art[data-art-state="ready"] .phase2-art-placeholder {display:none;}
+html body.lens-app .phase2-art > span {position:absolute;right:8px;top:8px;color:white;background:#141c34d9;border-radius:5px;padding:4px 7px;font-size:12px;line-height:1.4;}
+html body.lens-app .phase2-hero .phase2-art > span {top:14px;right:14px;}
+html body.lens-app .phase2-hero-copy {padding:24px;width:100%;max-width:700px;}
+html body.lens-app .phase2-hero-copy .phase2-eyebrow {color:#d9dffa;margin-bottom:12px;}
+html body.lens-app #main .phase2-hero h2 {color:white;font-size:28px;line-height:1.2;}
+html body.lens-app .phase2-hero p {color:#d5ddf4;font-size:14px;}
+html body.lens-app .phase2-hero a {display:flex;justify-content:space-between;align-items:center;background:white;color:#263b92;padding:12px 16px;margin-top:18px;border-radius:10px;font-weight:650;font-size:14px;}
+html body.lens-app .phase2-continue {display:flex;align-items:center;justify-content:space-between;background:var(--lens-copper-soft);border-radius:12px;margin:14px 0;padding:12px 14px;font-size:14px;color:var(--lens-link);}
+html body.lens-app .phase2-rail-heading {display:flex;justify-content:space-between;gap:14px;align-items:center;margin:28px 0 0;}
+html body.lens-app #main .phase2-rail-heading h2 {font-size:19px;margin:0;}
+html body.lens-app .phase2-rail-heading a {flex:none;display:flex;align-items:center;font-size:14px;font-weight:650;}
+html body.lens-app .phase2-rail-description {font-size:14px;margin:3px 0 14px;}
+html body.lens-app .phase2-rail {display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory;scroll-padding-inline:2px;padding:2px 2px 12px;scrollbar-width:thin;}
+html body.lens-app .phase2-rail-card {display:flex;flex-direction:column;flex:0 0 248px;scroll-snap-align:start;container-type:inline-size;background:var(--lens-surface);border:1px solid var(--lens-rule);border-radius:16px;overflow:hidden;color:var(--lens-ink);padding:0;text-align:left;}
+html body.lens-app .phase2-rail-copy {padding:16px;display:grid;gap:10px;}
+html body.lens-app .phase2-verdict {display:inline-flex;align-items:center;width:fit-content;border-radius:7px;background:var(--lens-copper-soft);color:var(--lens-link);padding:6px 9px;font-size:12px;font-weight:650;line-height:1.4;}
+html body.lens-app .phase2-verdict:is([data-status="Textual conflict"],[data-status="Disagrees"]) {background:var(--phase2-rose-bg);color:var(--phase2-rose);}
+html body.lens-app .phase2-verdict[data-status="Agrees"] {background:var(--phase2-green-bg);color:var(--phase2-green);}
+html body.lens-app .phase2-tools {display:flex;flex-wrap:wrap;gap:8px;margin:24px 0;}
+html body.lens-app .phase2-tools a {display:flex;align-items:center;padding:10px 14px;background:var(--lens-surface);border:1px solid var(--lens-rule);border-radius:12px;font-size:14px;}
+html body.lens-app .phase2-modes {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:5px;border-radius:14px;background:var(--lens-control-bg);margin-top:22px;}
+html body.lens-app .phase2-modes button {border:0;border-radius:10px;background:none;color:var(--lens-muted);padding:8px 4px;font-size:12px;font-weight:650;line-height:1.4;}
+html body.lens-app .phase2-modes button[aria-pressed="true"] {background:var(--lens-surface);color:var(--lens-link);box-shadow:0 2px 7px #0001;}
+html body.lens-app .phase2-chips {display:flex;flex-wrap:wrap;gap:8px;padding:14px 0;}
+html body.lens-app .phase2-chips button {flex:none;min-width:44px;min-height:44px;white-space:nowrap;border:1px solid var(--lens-rule);border-radius:24px;padding:10px 14px;font-size:13px;background:var(--lens-surface);color:var(--lens-ink);}
+html body.lens-app .phase2-chips button[aria-pressed="true"] {background:var(--lens-ink);color:var(--lens-surface);}
+html body.lens-app .phase2-more {border-bottom:1px solid var(--lens-rule);padding-bottom:8px;}
+html body.lens-app .phase2-more summary {font-size:14px;cursor:pointer;padding:12px 0;}
+html body.lens-app .phase2-more > a {display:flex;align-items:center;font-size:14px;}
+html body.lens-app #debate-count {font-size:12px;margin:16px 0;}
+html body.lens-app .phase2-debate-grid {display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));}
+html body.lens-app .phase2-debate-card {display:block;padding:18px;border:1px solid var(--lens-rule);border-radius:16px;background:var(--lens-surface);color:var(--lens-ink);container-type:inline-size;}
+html body.lens-app #main .phase2-debate-card h2 {font-size:18px;margin:8px 0 10px;}
+html body.lens-app .phase2-debate-card > div {display:flex;justify-content:space-between;align-items:center;margin-top:14px;}
+html body.lens-app .phase2-debate-card:hover,.phase2-rail-card:hover {border-color:var(--lens-link);}
+html body.lens-app .phase2-pagination {display:flex;justify-content:space-between;align-items:center;margin-top:20px;gap:10px;font-size:14px;}
+html body.lens-app .phase2-back {display:flex;align-items:center;margin-bottom:12px;font-size:14px;}
+html body.lens-app .phase2-sides {display:grid;gap:14px;margin:24px 0;}
+html body.lens-app .phase2-side {background:var(--lens-surface);border:1px solid var(--lens-rule);border-top:3px solid var(--lens-link);border-radius:14px;padding:18px;min-width:0;}
+html body.lens-app .phase2-side:nth-child(2) {border-top-color:#a178d4;}
+html body.lens-app .phase2-side .phase2-ref {display:flex;align-items:center;font-size:16px;}
+html body.lens-app .phase2-side blockquote {margin:8px 0 16px;padding:0;border:0;font:400 16px/1.75 var(--lens-reading-font);color:var(--lens-ink);}
+html body.lens-app .phase2-summary {border-radius:14px;padding:20px;background:var(--lens-copper-soft);margin:20px 0;}
+html body.lens-app .phase2-summary p {color:var(--lens-ink);}
+html body.lens-app .phase2-deeper {border-block:1px solid var(--lens-rule);padding:4px 0;}
+html body.lens-app .phase2-deeper summary {padding:14px 0;cursor:pointer;font-size:16px;font-weight:650;}
+html body.lens-app .phase2-deeper summary span {display:block;color:var(--lens-muted);font-size:12px;font-weight:400;margin-top:5px;}
+html body.lens-app .phase2-deeper h3 {margin-top:16px!important;}
+html body.lens-app .phase2-deeper p {overflow-wrap:anywhere;white-space:pre-line;}
+html body.lens-app .phase2-source-button {width:100%;display:flex;justify-content:space-between;align-items:center;padding:14px 0;border:0;border-bottom:1px solid var(--lens-rule);border-radius:0;background:none;color:var(--lens-link);font-size:16px;}
+html body.lens-app .phase2-stance {margin:24px 0;border:1px solid var(--lens-rule);border-radius:16px;padding:20px;background:var(--lens-surface);}
+html body.lens-app .phase2-stance p {font-size:13px;}
+html body.lens-app .phase2-stance [role="group"] {display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+html body.lens-app .phase2-stance [aria-pressed="true"] {color:var(--lens-link);background:var(--lens-copper-soft);border-color:var(--lens-link);}
+html body.lens-app .phase2-save {display:block;width:100%;margin-top:18px;background:#4056cf;color:white;border:0;border-radius:10px;padding:12px;font-size:14px;font-weight:650;}
+html body.lens-app dialog.phase2-sheet {inset:auto 0 0;margin:0 auto;width:min(100%,680px);max-width:680px;max-height:85dvh;border:1px solid var(--lens-rule);border-radius:24px 24px 0 0;padding:24px 20px max(24px,env(safe-area-inset-bottom));background:var(--lens-surface);color:var(--lens-ink);overflow:auto;overscroll-behavior:contain;opacity:0;transform:translateY(24px);transition:opacity .18s,transform .18s,display .18s allow-discrete,overlay .18s allow-discrete;}
+html body.lens-app dialog.phase2-sheet[open] {opacity:1;transform:translateY(0);}
+html body.lens-app dialog.phase2-sheet::backdrop {background:#0b102b80;}
+html body.lens-app .phase2-sheet-head {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;}
+html body.lens-app .phase2-sheet-head h2 {font-size:22px;margin:0;}
+html body.lens-app .phase2-sheet-head button {min-width:44px;font-size:24px;}
+html body.lens-app .phase2-sheet p {font-size:15px;line-height:1.7;}
+html body.lens-app .phase2-source {display:flex;align-items:center;border-bottom:1px solid var(--lens-rule);padding:14px 0;overflow-wrap:anywhere;font-size:15px;}
+html body.lens-app #notebook-view .lens-notebook-tools {display:block;}
+html body.lens-app #notebook-view .lens-notebook-tools [role="group"] {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;background:var(--lens-control-bg);border-radius:12px;padding:4px;margin-bottom:16px;}
+html body.lens-app #notebook-view [data-lens-filter] {min-width:0;min-height:44px;padding:8px 2px;border:0;border-radius:9px;font-size:12px;}
+html body.lens-app #notebook-view [data-lens-filter][aria-pressed="true"] {background:var(--lens-surface);color:var(--lens-link);}
+html body.lens-app #notebook-view .lens-note {padding:18px;background:var(--lens-surface);border:1px solid var(--lens-rule);border-radius:16px;}
+html body.lens-app #notebook-view .lens-note h2 {font-size:18px;}
+html body.lens-app :is(#notebook-view,#search-view) .lens-page-heading {margin:0 0 22px;}
+html body.lens-app :is(#notebook-view,#search-view) .lens-page-heading h1 {font-size:30px;line-height:1.2;font-weight:750;}
+html body.lens-app :is(#notebook-view,#search-view) .lens-page-heading p {font-size:15px;line-height:1.6;}
+html body.lens-app #search-view .lens-result {background:var(--lens-surface);border:1px solid var(--lens-rule);border-radius:12px;padding:16px;margin-bottom:10px;}
+html body.lens-app #search-view .lens-search-form {gap:8px;}
+html body.lens-app #search-view .lens-search-form input {width:100%;min-width:0;border-radius:12px;}
+@starting-style {html body.lens-app dialog.phase2-sheet[open] {opacity:0;transform:translateY(24px);}}
+@container (min-width:660px) {.phase2-sides {grid-template-columns:1fr 1fr;}}
+@container (max-width:200px) {.phase2-rail-copy {padding:12px;}}
+@media (max-width:760px) {
+ html body.lens-app > #lensMasthead.lens-masthead {min-height:64px;padding:10px 20px;padding-top:max(10px,env(safe-area-inset-top));}
+ html body.lens-app #lensMasthead nav.lens-primary {padding:8px 10px max(12px,env(safe-area-inset-bottom));gap:6px;}
+ html body.lens-app #main {padding-inline:20px;}
+ html body.lens-app #main .phase2-page {padding-top:20px;}
+ html body.lens-app #main .phase2-page h1 {font-size:28px;}
+ html body.lens-app .phase2-hero-copy {padding:20px;}
+ html body.lens-app .phase2-hero {min-height:300px;}
+ html body.lens-app .phase2-rail {margin-inline:-20px;padding-inline:20px;scroll-padding-inline:20px;}
+ html body.lens-app :is(#notebook-view,#search-view) {padding-top:20px;}
+ html body.lens-app .phase2-sheet .phase2-debate-card {margin-bottom:12px;}
+}
+@media(prefers-reduced-motion:reduce) {
+ html body.lens-app dialog.phase2-sheet {transition:none;}
+ ::view-transition-old(root),::view-transition-new(root) {animation:none;}
+}
+}
+
+@layer overrides.priority {
+html body.lens-app .phase2-hero .phase2-art > span {display:none;}
+html body.lens-app .phase2-hero > .phase2-art-label {position:absolute;top:12px;right:12px;color:white;background:#141c34d9;border-radius:5px;padding:4px 7px;font-size:12px;}
+html body.lens-app #lensMasthead .lens-brand > span:last-child {font-size:20px;font-weight:750;}
+html body.lens-app #lensMasthead .lens-mark {display:grid;place-items:center;flex-basis:32px;}
+html body.lens-app .phase2-search label.sr-only {position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
+}
+@layer overrides.priority {
+html body.lens-app .phase2-label-info {position:fixed;inset:auto 20px max(96px,env(safe-area-inset-bottom));margin:auto;width:min(400px,calc(100% - 40px));padding:20px;border:1px solid var(--lens-rule);border-radius:16px;background:var(--lens-surface);color:var(--lens-ink);box-shadow:0 12px 40px #0004;font-size:15px;line-height:1.65;}
+html body.lens-app .phase2-label-info:not(:popover-open) {display:none;}
+html body.lens-app .phase2-label-info h2 {font-size:20px;}
+html body.lens-app .phase2-label-info button {min-height:44px;}
+}
+@layer overrides.priority {
+html body.lens-app :is(.phase2-page,#notebook-view,#search-view) h1[tabindex="-1"]:focus {outline:none;}
+html body.lens-app .phase2-rail-heading > a {min-width:44px;justify-content:flex-end;}
+}
+
+@layer overrides.priority {
+html body.lens-app #main :is(.lens-kicker,.lens-question-topic,.atlas-reader-collection,.atlas-chapter-label) {font-size:12px;}
+html body.lens-app #chapter-text :is(.verse-num,.atlas-evidence-marker) {font-size:12px;}
+html body.lens-app #chapter-text .atlas-evidence-marker::after {inset:12px 10px;}
+}
+@layer overrides.priority {
+html body.lens-app #notebook-view .lens-note h2 a {display:inline-flex;align-items:center;min-height:44px;}
+}
+@layer overrides.priority {
+html body.lens-app :is(.phase2-deeper,.phase2-rail-heading,.lens-result-group) {scroll-margin-top:90px;}
+}

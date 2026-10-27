@@ -39,7 +39,9 @@ if (root) {
  }
  search.addEventListener('input', render);
  history.addEventListener('click', render);
- render();
+ function followRoute(){if(!location.hash.startsWith('#timeline'))return;const id=new URLSearchParams(location.hash.split('?')[1]||'').get('event'),event=catalog.events.find(item=>item.id===id);if(event){search.value=event.title;history.setAttribute('aria-pressed','false');render();}}
+ window.addEventListener('hashchange',followRoute);
+ render();followRoute();
  root.addEventListener('click', event => {
   const link = event.target.closest('[data-timeline-passage]');
   if (!link) return;

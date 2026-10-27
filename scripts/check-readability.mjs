@@ -71,6 +71,9 @@ export function collections(directory = root) {
     { name: 'Stories', lines: lines(json('data/stories.json').flatMap(book => book.stories), ['summary']) },
     { name: 'People', lines: lines(json('src/data/characters.json'), ['summary']) },
     { name: 'Explore cards', lines: copy, blurb: true },
+    { name: 'Phase 2 interface', lines: ['src/debates.js','src/atlas-explore.js'].flatMap(file =>
+      [...read(file).matchAll(/>([^<>`$]+)</g)].map(match => match[1].trim())
+        .filter(text => words(text).length >= 8 && !/[{}]/.test(text))) },
   ];
 }
 

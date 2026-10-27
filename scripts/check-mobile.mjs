@@ -30,6 +30,8 @@ try{
  const comparison=await (await target.fetch('/api/comparisons?book=0&chapter=1&mode=questions')).json();assert(Array.isArray(comparison.items));
  const categories=await (await target.fetch('/api/categories?book=all&kind=T')).json();assert.equal(categories.records.length,24);assert(categories.total>24);const next=await (await target.fetch('/api/categories?book=all&kind=T&page=1')).json();assert.equal(next.records.length,24);assert.notEqual(next.records[0].key,categories.records[0].key);
  for(const [kind,minimum] of [['stories',1],['characters',3000],['prophecies',3]]){const page=await (await target.fetch('/api/categories?book=all&kind='+kind)).json();assert(page.total>=minimum,kind);assert(page.records.length<=24);assert(page.records.every(record=>record.mode===kind));}
+ const debates=await (await target.fetch('/api/debates?mode=science')).json();assert(debates.records.length);assert(debates.records.every(record=>record.mode==='science'));
+ const detail=await (await target.fetch('/api/debate?id='+debates.records[0].id)).json();assert.equal(detail.status,debates.records[0].status);assert(detail.scope);assert.equal((await target.fetch('/api/debate?id=missing')).status,404);
  const [shark,john]=await Promise.all(['can we eat shark','Explain John 3:16'].map(async message=>(await target.fetch('/api/chat',{method:'POST',body:JSON.stringify({message})})).json()));
  assert.equal(shark.mode,'dietary');assert(!shark.answer.includes('honey'));assert(john.answer.includes('God so loved'));
  const sermon=await (await target.fetch('/api/chat',{method:'POST',body:JSON.stringify({message:'Sermon on the Mount'})})).json();

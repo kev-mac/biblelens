@@ -1,0 +1,14 @@
+# Phase 2 structure
+
+Local implementation based on `origin/main` at `55e438a`. Build 273 is unchanged. Record content and verdict judgments are unchanged.
+
+- Bottom tabs: Explore, Read, Debates, Notebook. Search moved to Explore; its grouped results and “Ask a question” link remain. `/` and `#discover` open Explore. The plan’s compatibility contract wins over Phase 1’s conflicting alias: legacy `#explore` opens `#read`.
+- Explore adds a deterministic daily rotation (UTC date), nine rails from existing data, and continue reading. Only the existing artwork is used and labeled imagined. People, Places/Atlas, Stories, Commandments, Timeline, comparisons and starter studies remain linked. Prophecies has a text link, not a gallery card. Method & Sources stays in the footer.
+- `#debates` supports `mode=text|science|history`, `status`, `filter=all|Q|T|V|commandments`, and `page`. Current statuses supply every verdict label. The current corpus has zero V-tagged records: its empty state links to Commandments without inventing classifications. Legacy categories, saved, evidence and their filters remain available under “More collections & filters.”
+- `#debate/<evidence-id>` supports refresh, sharing, Back/Forward, retry and missing IDs. Assigned sides retain every exact quote. Records without assigned sides show referenced KJV text beside their original source discussion; no A/B passage assignment is inferred. Go deeper retains exact wording and scope. Starter-study IDs retain their separate `#study/<id>` destinations.
+- Notebook segments: Notes, Saved, Bookmarks, Comparisons. `#bookmarks` redirects to `#notebook?section=bookmarks`; private note focus, saved comparison IDs, edition, highlights and existing storage/sync behavior are retained.
+- New debate saves and A/B/Not sure choices use separate per-record device storage, excluded from cloud state. Full backup exports/restores include them; restoring preserves an existing choice. Existing notebook Markdown export is retained. Private choices never enter share links.
+
+Run `npm run build:mobile`, `npm run preview:mobile`, then `npm run check:ui` for repeatable phone tests and `.review/phone/` screenshots. Browser checks use installed Chrome on macOS, `CHROME_PATH` when supplied, or Playwright Chromium elsewhere. `.review/` is ignored. Required checks also cover verdict mapping, complete pagination, exact detail data, local persistence, old routes, and offline device APIs.
+
+`www/` runs from a static HTTP server at its root. Reading, search, debates and retrieval chat use the packaged device worker. Inter is bundled. Map tiles and external sources require internet. Browser-preview cloud sync requires the hosted backend and its authorized origin; pairing remains native-only. Optional native AI is unavailable in a standalone browser preview. A static browser preview has no service-worker install cache: keep the static files/server available.
