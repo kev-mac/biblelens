@@ -1,3 +1,7 @@
+import {compressAssets} from './compress-assets.mjs';
+import {shellStyles} from './shell-styles.mjs';
+import {readerReferences} from './reader-references.mjs';
+import {packageFeatures} from './lazy-assets.mjs';
 import {exploreFeed} from './explore-feed.mjs';
 import {applicationStylesheets} from './stylesheets.mjs';
 import {loadTimelineCatalog} from './timeline-catalog.mjs';
@@ -34,12 +38,18 @@ validateCommandments(evidenceRecords,JSON.parse(fs.readFileSync('data/books.json
 const root=process.cwd();const context={};vm.createContext(context);vm.runInContext(fs.readFileSync('src/data.js','utf8')+'\nthis.studies=ENTRIES;',context);
 validateRelatedPassages([...evidenceRecords,...context.studies],JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const assets={};for(const name of applicationStylesheets)assets['/'+name]={type:'text/css; charset=utf-8',body:fs.readFileSync('src/'+name,'utf8')};for(const [name,type]of Object.entries({'index.html':'text/html; charset=utf-8','debates.js':'application/javascript; charset=utf-8','debate-store.js':'application/javascript; charset=utf-8','workspace.js':'application/javascript; charset=utf-8','atlas-reader.js':'application/javascript; charset=utf-8','atlas-explore.js':'application/javascript; charset=utf-8','app.js':'application/javascript; charset=utf-8','navigation.js':'application/javascript; charset=utf-8','card-disclosures.js':'application/javascript; charset=utf-8','dialog-scroll.js':'application/javascript; charset=utf-8','data.js':'application/javascript; charset=utf-8','red-letters.js':'application/javascript; charset=utf-8','passage.js':'application/javascript; charset=utf-8','reader.js':'application/javascript; charset=utf-8','stories.js':'application/javascript; charset=utf-8','commandments.js':'application/javascript; charset=utf-8','marked.js':'application/javascript; charset=utf-8','categories.js':'application/javascript; charset=utf-8','sync-core.js':'application/javascript; charset=utf-8','sync.js':'application/javascript; charset=utf-8','release.js':'application/javascript; charset=utf-8','mobile.js':'application/javascript; charset=utf-8','citations.js':'application/javascript; charset=utf-8'})){assets[name==='index.html'?'/':'/'+name]={type,body:fs.readFileSync('src/'+name,'utf8')}}
+for(const name of ['feature-loader','reader-state','reader-data','workspace-shell','debate-ui'])assets['/'+name+'.js']={type:'application/javascript; charset=utf-8',body:fs.readFileSync('src/'+name+'.js','utf8')};
+assets['/reader-state.js'].body=assets['/reader-state.js'].body.replace('/*__BOOK_CATALOG__*/[]',fs.readFileSync('data/books.json','utf8'));
+for(const name of fs.readdirSync('src/assets/fonts'))assets['/assets/fonts/'+name]={type:'font/woff2',encoding:'base64',body:fs.readFileSync('src/assets/fonts/'+name).toString('base64')};
 for(const name of ['beginnings-landscape.svg','beginnings-landscape.provenance.json'])assets['/assets/'+name]={type:name.endsWith('.svg')?'image/svg+xml':'application/json; charset=utf-8',body:fs.readFileSync('src/assets/'+name,'utf8')};
 // Raster illustrations stay separate from startup JavaScript and decode only
 // when requested. The same bytes are written directly into the native bundle.
 for(const name of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+\.webp$/.test(name)))assets['/assets/'+name]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src/assets/'+name).toString('base64')};
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
 assets['/explore-feed.json']={type:'application/json; charset=utf-8',body:JSON.stringify(exploreFeed())};
+const referenceBundle=await build({entryPoints:['src/reference-cache.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
+assets['/reference-cache.js']={type:'application/javascript; charset=utf-8',body:referenceBundle.outputFiles[0].text};
+for(const [name,entry] of [['reader-links','reader-links'],['reference-links','reference-links'],['places-directory','places-directory-entry']]){const bundle=await build({entryPoints:['src/'+entry+'.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});assets['/'+name+'.js']={type:'application/javascript; charset=utf-8',body:bundle.outputFiles[0].text};}
 const placesBundle=await build({entryPoints:['src/places.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/places.js']={type:'application/javascript; charset=utf-8',body:placesBundle.outputFiles[0].text};
 // Pinned browser distribution; retain module-relative worker URLs for web and iOS.
@@ -59,10 +69,15 @@ assets['/characters.js']={type:'application/javascript; charset=utf-8',body:char
 assets['/characters.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('src/data/characters.json','utf8')};
 assets['/stories.json']={type:'application/json; charset=utf-8',body:JSON.stringify(tagStoryCatalog(JSON.parse(fs.readFileSync('data/stories.json','utf8')),JSON.parse(fs.readFileSync('data/reference/topics.json','utf8')),loadTopicOptions()))};
 assets['/release.json']={type:'application/json; charset=utf-8',body:JSON.stringify(releaseInfo())};
-assets['/reader.js'].body=assets['/reader.js'].body.replace('/*__CHAPTER_NAMES__*/{}',JSON.stringify(Object.fromEntries(Object.entries(chapterNames).filter(([key])=>!key.startsWith('_')))));
+const redLetterContext={};vm.createContext(redLetterContext);vm.runInContext(fs.readFileSync('src/red-letters.js','utf8')+';this.ranges=RED_LETTERS;',redLetterContext);
+const redLetters=redLetterContext.ranges;
+assets['/reader-data.js'].body=assets['/reader-data.js'].body.replace('/*__RED_LETTER_REFERENCES__*/[]',JSON.stringify(Object.entries(redLetters).flatMap(([key,verses])=>Object.entries(verses).filter(([,editions])=>editions.kjv?.length).map(([verse])=>key+':'+verse))));
 const categoryReferenceIds=JSON.parse(fs.readFileSync('src/data/character-reference-ids.json','utf8'));
 const categorySummaries=Object.fromEntries(JSON.parse(fs.readFileSync('src/data/characters.json','utf8')).filter(p=>categoryReferenceIds[p.id]).map(p=>[categoryReferenceIds[p.id],p.summary]));
-let worker=fs.readFileSync('worker/index.mjs','utf8').replace('/*__DEBATES__*/',()=>fs.readFileSync('worker/debates.mjs','utf8').replaceAll('export function','function')).replace('/*__CATEGORIES__*/',()=> 'const CATEGORY_STORIES='+assets['/stories.json'].body+';\nconst CATEGORY_PROPHECIES='+fs.readFileSync('src/data/prophecies.json','utf8')+';\nconst CATEGORY_PERSON_SUMMARIES='+JSON.stringify(categorySummaries)+';\n'+fs.readFileSync('worker/categories.mjs','utf8').replaceAll('export function','function')).replace('/*__SYNC__*/',()=>fs.readFileSync('worker/sync.mjs','utf8').replace('export async function','async function'));for(const [marker,file]of [['BOOKS','data/books.json'],['CHAPTERS','data/chapters.json'],['EVIDENCE','data/evidence.json']])worker=worker.replace(new RegExp('/\\*__'+marker+'__\\*/'+(['BOOKS','EVIDENCE'].includes(marker)?'\\[\\]':'\\{\\}')),fs.readFileSync(file,'utf8'));
+const referenceChapter=readerReferences(JSON.parse(fs.readFileSync('data/reference/people.json','utf8')),JSON.parse(fs.readFileSync('data/reference/places.json','utf8')));
+const decorateChapter=chapter=>{const linked=referenceChapter(chapter);return {...linked,chapterName:chapterNames[chapter.name][chapter.chapter],verses:linked.verses.map(verse=>({...verse,redLetters:redLetters[chapter.book+':'+chapter.chapter]?.[verse.n]||{}}))};};
+const linkedChapters=Object.fromEntries(Object.entries(JSON.parse(fs.readFileSync('data/chapters.json','utf8'))).map(([key,encoded])=>[key,zlib.gzipSync(JSON.stringify(decorateChapter(JSON.parse(zlib.gunzipSync(Buffer.from(encoded,'base64')))))).toString('base64')]));
+let worker=fs.readFileSync('worker/index.mjs','utf8').replace('/*__DEBATES__*/',()=>fs.readFileSync('worker/debates.mjs','utf8').replaceAll('export function','function')).replace('/*__CATEGORIES__*/',()=> 'const CATEGORY_STORIES='+assets['/stories.json'].body+';\nconst CATEGORY_PROPHECIES='+fs.readFileSync('src/data/prophecies.json','utf8')+';\nconst CATEGORY_PERSON_SUMMARIES='+JSON.stringify(categorySummaries)+';\n'+fs.readFileSync('worker/categories.mjs','utf8').replaceAll('export function','function')).replace('/*__SYNC__*/',()=>fs.readFileSync('worker/sync.mjs','utf8').replace('export async function','async function'));for(const [marker,file]of [['BOOKS','data/books.json'],['CHAPTERS','data/chapters.json'],['EVIDENCE','data/evidence.json']])worker=worker.replace(new RegExp('/\\*__'+marker+'__\\*/'+(['BOOKS','EVIDENCE'].includes(marker)?'\\[\\]':'\\{\\}')),marker==='CHAPTERS'?JSON.stringify(linkedChapters):fs.readFileSync(file,'utf8'));
 const references=loadReferenceResources();
 const answerLayer=fs.readFileSync('worker/answer-layer.mjs','utf8').replace('/*__PEOPLE__*/[]',()=>JSON.stringify(references.people)).replace('/*__TOPICS__*/[]',()=>JSON.stringify(references.topics));
 worker=worker.replace('/*__NETS_LINKS__*/',()=>fs.readFileSync('worker/nets-links.mjs','utf8')).replace('/*__ANSWER_LAYER__*/',()=>answerLayer);
@@ -78,7 +93,10 @@ const miniLibrary=fs.readFileSync('node_modules/minisearch/dist/es/index.js','ut
 worker=worker.replace('/*__MINISEARCH_LIBRARY__*/',()=>miniLibrary).replace('/*__MINISEARCH_INDEX__*/{}',()=>JSON.stringify(shards)).replace('/*__VOCABULARY__*/{}',()=>JSON.stringify(vocabulary));
 assets['/search-licenses.txt']={type:'text/plain; charset=utf-8',body:searchLicenses()};
 assets['/vendor/maplibre-gl.css'].body='@layer components {\n'+assets['/vendor/maplibre-gl.css'].body+'\n}';
-const startup=consolidateStartupAssets(assets);
+const styles=await shellStyles(assets);
+packageFeatures(assets,styles.path,styles.studyPath);
+const startup=consolidateStartupAssets(assets,{minify:true,cssOverride:styles.css});
+compressAssets(assets);
 console.log('Startup assets:',startup.css.sources.length,'styles and',startup.js.sources.length,'scripts consolidated into two fingerprinted requests');
 console.log('Search vocabulary:',Object.keys(vocabulary).length,'entries; MiniSearch documents:',documents.length);
 worker=worker.replace('/*__SEARCH__*/{}',()=>JSON.stringify(searchIndex));

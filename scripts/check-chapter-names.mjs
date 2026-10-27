@@ -1,17 +1,16 @@
-import fs from 'node:fs';import assert from 'node:assert/strict';import {validateChapterNames} from './chapter-names.mjs';
+import fs from 'node:fs';import assert from 'node:assert/strict';import zlib from 'node:zlib';import {validateChapterNames} from './chapter-names.mjs';
+import worker from '../dist/server/index.js';
 const books=JSON.parse(fs.readFileSync('data/books.json','utf8')),names=JSON.parse(fs.readFileSync('data/chapter-names.json','utf8'));
 assert.equal(books.length,66);assert.equal(validateChapterNames(names,books),1189);
 const missing=structuredClone(names);delete missing.Genesis['1'];assert.throws(()=>validateChapterNames(missing,books),/Genesis 1/);
 const empty=structuredClone(names);empty.Revelation['22']='';assert.throws(()=>validateChapterNames(empty,books),/Revelation 22/);
-const worker=fs.readFileSync('dist/server/index.js','utf8');
-const marker='const CHAPTER_NAMES=';const start=worker.indexOf(marker);assert(start>=0);
-// Worker assets are JSON-encoded strings; inspect the reader asset to verify every name survives packaging.
-// Parse the generated reader script from its JSON string value without executing the Worker.
-const encoded=worker.match(/"\/reader\.js":\{"type":"[^"]+","body":("(?:\\.|[^"\\])*")\}/);
-assert(encoded,'Reader asset missing');const reader=JSON.parse(encoded[1]);
-const payload=reader.slice(reader.indexOf(marker)+marker.length).split(';\n')[0].split(';\r\n')[0];
-const shipped=JSON.parse(payload);
-for(const book of books)for(let chapter=1;chapter<=book.chapters;chapter++)assert.equal(shipped[book.name][chapter],names[book.name][chapter]);
-assert(!Object.keys(shipped).some(key=>key.startsWith('_')));
-assert(reader.includes('esc(CHAPTER_NAMES[reading.name][reading.chapter])'));
-console.log('PASS: all 1,189 chapter names across 66 books; missing/empty rejection; exact packaged strings; notes excluded.');
+const corpus=JSON.parse(fs.readFileSync('data/chapters.json','utf8'));
+for(const book of books)for(let chapter=1;chapter<=book.chapters;chapter++){
+ const response=await worker.fetch(new Request(`https://biblelens.test/api/chapter?book=${book.id}&chapter=${chapter}`),{},{});
+ assert.equal(response.status,200);const shipped=await response.json();assert.equal(shipped.chapterName,names[book.name][chapter]);
+ const original=JSON.parse(zlib.gunzipSync(Buffer.from(corpus[book.id+':'+chapter],'base64')));
+ assert.deepEqual(shipped.verses.map(({referenceLinks,redLetters,...verse})=>verse),original.verses,'Every edition retains the exact original verse data');
+ assert(shipped.verses.every(verse=>verse.referenceLinks&&verse.redLetters));
+}
+assert(fs.readFileSync('src/reader.js','utf8').includes('esc(reading.chapterName'));
+console.log('PASS: all 1,189 packaged chapter names, every original verse in all editions, on-demand link/red-letter metadata, and missing/empty rejection.');

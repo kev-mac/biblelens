@@ -18,11 +18,11 @@ function placeCard(place){
  if(description)card.append(node('p','character-summary',description));
  const figure=node('div','place-map-card');
  const map=node('button','place-map-preview');map.type='button';map.dataset.placeId=place.id;map.disabled=!place.coordinates;
- map.setAttribute('aria-haspopup','dialog');map.setAttribute('aria-controls','atlas-sheet');map.setAttribute('aria-label','Explore '+place.name+' in the atlas');
+ map.setAttribute('aria-haspopup','dialog');map.setAttribute('aria-controls','atlas-sheet');map.setAttribute('aria-label',place.coordinates?'Explore '+place.name+' in the atlas':'Map location unavailable: '+place.name);
  map.innerHTML=place.coordinates?placePreviewSVG(place):'<span class="place-map-unavailable">Map location unavailable</span>';
  const controls=node('div','place-map-actions');controls.setAttribute('role','group');controls.setAttribute('aria-label',place.name+' map and sources');
  const label=node('button','place-map-action');label.type='button';label.dataset.placeId=place.id;label.disabled=!place.coordinates;
- label.setAttribute('aria-haspopup','dialog');label.setAttribute('aria-controls','atlas-sheet');label.setAttribute('aria-label','Explore '+place.name+' in the atlas');
+ label.setAttribute('aria-haspopup','dialog');label.setAttribute('aria-controls','atlas-sheet');label.setAttribute('aria-label','Map: '+place.name+' in the atlas');
  label.innerHTML='<span>Map</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 18 18 6M6 6h12v12"/></svg>';
  const source=node('button','place-map-action place-map-source');source.type='button';source.setAttribute('aria-label','Sources and location details for '+place.name);
  source.innerHTML='<span>Sources</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 3h9a2 2 0 0 1 2 2v14H8a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3ZM8 3v13h11M11 7h5M11 10h5"/></svg>';

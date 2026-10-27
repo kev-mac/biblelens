@@ -5,12 +5,12 @@ if(!response.ok)throw Error('Font stylesheet download failed: '+response.status)
 const css=await response.text();
 const faces=[...css.matchAll(/\/\* latin \*\/\s*(@font-face\s*\{[^}]+\})/g)].map(m=>m[1]);
 if(!faces.some(f=>f.includes("font-family: 'Inter'"))||!faces.some(f=>f.includes("font-family: 'Lora'")))throw Error('Expected Latin font faces missing');
-const binaries=new Map(),output=[];
+const binaries=new Map(),output=[];fs.mkdirSync('src/assets/fonts',{recursive:true});
 for(let face of faces){
  const fontUrl=/url\((https:\/\/fonts\.gstatic\.com\/[^)]+)\)/.exec(face)?.[1];
  if(!fontUrl)throw Error('Unsupported font source');
- if(!binaries.has(fontUrl)){const res=await fetch(fontUrl);if(!res.ok)throw Error('Font download failed');binaries.set(fontUrl,Buffer.from(await res.arrayBuffer()).toString('base64'));}
- face=face.replace(fontUrl,'data:font/woff2;base64,'+binaries.get(fontUrl));output.push(face);
+ if(!binaries.has(fontUrl)){const res=await fetch(fontUrl);if(!res.ok)throw Error('Font download failed');const file=/font-family: '([^']+)'/.exec(face)[1].toLowerCase()+'-'+/font-weight: (\d+)/.exec(face)[1]+'-latin.woff2';fs.writeFileSync('src/assets/fonts/'+file,Buffer.from(await res.arrayBuffer()));binaries.set(fontUrl,'/assets/fonts/'+file);}
+ face=face.replace(fontUrl,binaries.get(fontUrl));output.push(face);
 }
 fs.mkdirSync('assets/font-licenses',{recursive:true});
 for(const family of ['inter','lora']){

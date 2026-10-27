@@ -38,7 +38,7 @@ async function renderPagedCategories(){
  const generation=++markedWorkspaceGeneration;categoryRequest++;
  const box=$('#saved-passages'),route=categoryRoute();
  try{
-  if(!books.length){const response=await fetch('/api/books');if(!response.ok)throw Error();books=await response.json();}
+  if(!books.length){books=await window.BibleLensReferences.json('/api/books');}
   if(generation!==markedWorkspaceGeneration||view!=='evidence')return;
   const params=route?.params||new URLSearchParams(location.hash.split('?')[1]||'');
   if(params.has('book')){const book=params.get('book')==='all'?-1:Number(params.get('book'));if(Number.isInteger(book)&&book>=-1&&book<books.length)markedBookSelection=book;}
@@ -115,7 +115,7 @@ let bookmarksPage=0,bookmarksGeneration=0;
 async function renderBookmarks(){
  const generation=++bookmarksGeneration,box=$('#bookmarks-list');if(view!=='bookmarks')return;
  try{
-  if(!books.length){const response=await fetch('/api/books');if(!response.ok)throw Error();books=await response.json();}
+  if(!books.length){books=await window.BibleLensReferences.json('/api/books');}
   if(generation!==bookmarksGeneration||view!=='bookmarks')return;
   const items=categoryPersonalItems({book:-1,chapter:0,bookmarksOnly:true});
   bookmarksPage=Math.min(bookmarksPage,Math.max(0,Math.ceil(items.length/24)-1));

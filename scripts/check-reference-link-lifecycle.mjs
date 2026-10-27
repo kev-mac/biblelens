@@ -6,7 +6,7 @@ import {parsePlaces,createPlaceMatcher} from '../src/places-core.js';
 
 const places=parsePlaces(JSON.parse(fs.readFileSync('data/reference/places.json','utf8')));
 const people=JSON.parse(fs.readFileSync('data/reference/people.json','utf8'));
-const source=fs.readFileSync('src/places.js','utf8');
+const source=fs.readFileSync('src/reference-links.js','utf8');
 const initialization=source.slice(source.indexOf('async function initializeChips(){'),source.indexOf('\ninitializeChips();'));
 const roots=[],tasks=[],events=new Map(),warnings=[];let observer,placesCalls=0,peopleCalls=0,failPlaces=true;
 const body={nodeType:1,closest:()=>null,querySelectorAll:()=>roots};
@@ -22,7 +22,7 @@ function story(text,range={book:0,chapter:9,verse:18,endChapter:10,endVerse:32})
  root.nodes.push(node);roots.push(root);return root;
 }
 const noah=story('Noah’s sons include Shem.');
-const context={document,window:{addEventListener:(name,fn)=>events.set(name,fn)},NodeFilter:{SHOW_TEXT:4,FILTER_ACCEPT:1,FILTER_REJECT:2},MutationObserver:class {constructor(callback){this.callback=callback;this.pending=[];observer=this;}observe(){this.active=true;}takeRecords(){return this.pending.splice(0);}disconnect(){this.active=false;this.pending=[];}},queueMicrotask:callback=>tasks.push(callback),console:{warn:(...args)=>warnings.push(args)},createPersonMatcher,createPlaceMatcher,wrapReferenceNames,loadPlaces:async()=>{placesCalls++;if(failPlaces)throw Error('Places temporarily offline');return places;},fetch:async()=>{peopleCalls++;return {ok:true,json:async()=>people};}};
+const context={document,window:{addEventListener:(name,fn)=>events.set(name,fn)},NodeFilter:{SHOW_TEXT:4,FILTER_ACCEPT:1,FILTER_REJECT:2},MutationObserver:class {constructor(callback){this.callback=callback;this.pending=[];observer=this;}observe(){this.active=true;}takeRecords(){return this.pending.splice(0);}disconnect(){this.active=false;this.pending=[];}},queueMicrotask:callback=>tasks.push(callback),console:{warn:(...args)=>warnings.push(args)},createPersonMatcher,createPlaceMatcher,wrapReferenceNames,loadPlaces:async()=>{placesCalls++;if(failPlaces)throw Error('Places temporarily offline');return places;},referenceJson:async()=>{peopleCalls++;return people;}};
 vm.createContext(context);vm.runInContext(initialization,context);
 function flush(){while(tasks.length)tasks.shift()();}
 await context.initializeChips();flush();

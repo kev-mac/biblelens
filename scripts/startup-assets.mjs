@@ -1,3 +1,4 @@
+import {transformSync} from 'esbuild';
 import {createHash} from 'node:crypto';
 import vm from 'node:vm';
 
@@ -37,7 +38,8 @@ function stylesheetSource(path, source) {
 const classicScriptText = (path, source) => source.replace(/\r\n?/g, '\n') + '\n;document.currentScript.dataset.biblelensReady = "true";\n//# sourceURL=' + path;
 const scriptHash = source => "'sha256-" + createHash('sha256').update(source.replace(/\r\n?/g, '\n')).digest('base64') + "'";
 
-export function classicScriptBundle(sources) {
+export function classicScriptBundle(sources, {minify=false}={}) {
+  if(minify)sources=sources.map(source=>({...source,body:transformSync(source.body,{loader:"js",minify:true,target:["safari17","chrome119"]}).code}));
   // A simple concatenation changes function hoisting across files: app.js
   // would call reader.js functions before their reader state is initialized.
   // Synchronous inline classic scripts retain each original execution boundary,
@@ -48,7 +50,7 @@ export function classicScriptBundle(sources) {
   return `'use strict';\n(() => {\n  const owner = document.currentScript;\n  const nonce = owner?.nonce || '';\n  const sources = ${JSON.stringify(sources.map(({path, body}) => [path, body]))};\n  for (const [path, source] of sources) {\n    const script = document.createElement('script');\n    if (nonce) script.nonce = nonce;\n    script.dataset.bundleSource = path;\n    script.textContent = (${classicScriptText.toString()})(path, source);\n    try {\n      document.head.appendChild(script);\n      if (script.dataset.biblelensReady !== 'true') throw new Error('Application startup failed: ' + path);\n    } finally { script.remove(); }\n  }\n  owner.dataset.biblelensReady = 'true';\n})();\n`;
 }
 
-export function consolidateStartupAssets(assets) {
+export function consolidateStartupAssets(assets,{minify=false,cssOverride}={}) {
   const html = assets['/']?.body;
   if (!html) throw Error('Missing startup HTML');
   const references = startupAssetReferences(html);
@@ -59,8 +61,9 @@ export function consolidateStartupAssets(assets) {
     return {path, body: asset.body};
   };
   const cssSources = references.css.map(read), jsSources = references.js.map(read);
-  const css = cssSources.map(({path, body}) => `/* Source: ${path} */\n${stylesheetSource(path, body)}\n`).join('\n');
-  const js = classicScriptBundle(jsSources);
+  const cssSource = cssSources.map(({path, body}) => `/* Source: ${path} */\n${stylesheetSource(path, body)}\n`).join('\n');
+  const css = minify?transformSync(cssOverride??cssSource,{loader:'css',minify:true,target:['safari17','chrome119']}).code:cssSource;
+  const js = classicScriptBundle(jsSources,{minify});
   new vm.Script(js, {filename: 'app-bundle.js'});
   const manifest = {version: 1};
   for (const [kind, body, sources, type] of [['css', css, cssSources, 'text/css; charset=utf-8'], ['js', js, jsSources, 'application/javascript; charset=utf-8']]) {
@@ -73,7 +76,7 @@ export function consolidateStartupAssets(assets) {
   const pair = `<link rel="stylesheet" id="biblelens-app-styles" href="${manifest.css.path}"><script defer id="biblelens-app-script" src="${manifest.js.path}"></script>`;
   if (!/<\/head\s*>/i.test(withoutOriginals)) throw Error('Missing document head');
   const inline = [...withoutOriginals.matchAll(scriptTag)].map(match => match[0].replace(/^<script\b[^>]*>/i, '').replace(/<\/script\s*>$/i, ''));
-  const hashes = [...new Set([...inline, ...jsSources.map(({path, body}) => classicScriptText(path, body))].map(scriptHash))];
+  const hashes = [...new Set([...inline, ...jsSources.map(({path, body}) => classicScriptText(path, minify ? transformSync(body,{loader:'js',minify:true,target:['safari17','chrome119']}).code : body))].map(scriptHash))];
   // Inline styles support existing layout controls. Scripts use only exact build
   // hashes; no inline handlers, eval, remote scripts, objects or base overrides.
   const policy = ["default-src 'none'", "base-uri 'none'", "object-src 'none'", "frame-src 'none'", "form-action 'self'",

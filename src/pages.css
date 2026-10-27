@@ -246,7 +246,7 @@ html body.lens-app #chapter-text {
 body.lens-app #chapter-text .chapter-heading-row { margin: 0 0 30px; gap: 0; }
 body.lens-app #chapter-text .passage-heading { align-items: center; gap: 12px; }
 body.lens-app #chapter-text .passage-heading > div { flex: 1; min-width: 0; }
-html body.lens-app #chapter-text .passage-heading :is(h2, .passage-heading-picker) {
+html body.lens-app #chapter-text .passage-heading :is(h1,h2, .passage-heading-picker) {
   margin: 0;
   padding: 0;
   font-weight: 500;

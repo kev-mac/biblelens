@@ -62,7 +62,7 @@ assert.match(characters.find(person=>person.id==='lot').summary,/wife.*pillar of
 assert.match(characters.find(person=>person.id==='ham').summary,/Noah curses Canaan, Ham’s son/);
 const cardBundle=await build({entryPoints:['src/components/characters/CharacterCard.tsx'],bundle:true,write:false,format:'iife',globalName:'Cards'});
 const node=tag=>({tag,className:'',textContent:'',children:[],get childElementCount(){return this.children.length;},replaceChildren(...children){this.children=children;},dataset:{},attributes:{},events:{},addEventListener(type,fn){this.events[type]=fn;},append(...children){this.children.push(...children);},setAttribute(key,value){this.attributes[key]=value;}});
-const context={document:{createElement:node,createTextNode:text=>({textContent:text})}};
+const context={URL,AbortController,setTimeout,clearTimeout,fetch:async()=>{throw Error('Reference network unavailable in this fixture');},document:{createElement:node,createTextNode:text=>({textContent:text})}};
 vm.createContext(context);vm.runInContext(cardBundle.outputFiles[0].text,context);
 const malicious={...characters[0],name:'<img src=x onerror=bad()>',summary:'<script>bad()</script>'};
 const card=context.Cards.CharacterCard(malicious);
@@ -144,6 +144,7 @@ const catalog=JSON.parse(fs.readFileSync('data/stories.json','utf8'));
 const nodes=new Map();const $=key=>{if(!nodes.has(key))nodes.set(key,{hidden:true,innerHTML:'',setAttribute(name,value){this[name]=value;},addEventListener(){}});return nodes.get(key);};
 let focused=false,scrolled=false;
 const storyContext={AbortSignal,books:[],readingBook:0,$,esc:String,readRef:()=>null,location:{hash:'#stories/genesis/joseph-in-egypt'},window:{addEventListener(){}},document:{body:{classList:{toggle(){}}},addEventListener(){},getElementById:id=>{assert.equal(id,'story-joseph-in-egypt');return {classList:{add(){}},focus(){focused=true;},scrollIntoView(){scrolled=true;}};}},fetch:async()=>({ok:true,json:async()=>catalog})};
+storyContext.window.BibleLensReferences={json:async path=>(await storyContext.fetch(path)).json()};
 vm.createContext(storyContext);vm.runInContext(fs.readFileSync('src/stories.js','utf8'),storyContext);
 await storyContext.routeLinkedStory();
 assert(focused&&scrolled);assert(!$('#stories-view').hidden);assert($('#reader-layout').hidden);
@@ -157,7 +158,7 @@ storyContext.loadChapter=async(...args)=>loads.push(args);
 storyContext.location.hash='#stories/genesis/joseph-in-egypt';await storyContext.routeLinkedStory();
 assert.deepEqual(loads,[],'Opening a story page must not move the Bible reader');
 const app=fs.readFileSync('src/app.js','utf8');assert(app.includes("setView('characters',false)"));
-const html=fs.readFileSync('src/index.html','utf8');assert(html.includes('data-navigation-icon="characters"'));assert(html.includes('src="characters.js"'));
+const html=fs.readFileSync('src/index.html','utf8');assert(html.includes('data-navigation-icon="characters"'));assert((await import('./lazy-assets.mjs')).featureSources.characters.includes('characters.js'));
 console.log(`PASS: ${total} character profiles, verse bounds, 25 story destinations, combined era/Women filters, gender colors, sibling/spouse links, Paul/Saul search, cross-book verse links, text-safe cards, and fresh-load story routing.`);
 
 // Reference-backed directory: use the actual adapted schema, preserve duplicate
@@ -165,7 +166,7 @@ console.log(`PASS: ${total} character profiles, verse bounds, 25 story destinati
 const peopleBundle=await build({entryPoints:['src/components/characters/people.ts'],bundle:true,write:false,format:'iife',globalName:'People'});
 let requests=0;
 const referencePeople=JSON.parse(fs.readFileSync('data/reference/people.json','utf8'));
-const peopleContext={fetch:async url=>{assert.equal(url,'/reference/people.json');requests++;return {ok:requests>1,status:503,json:async()=>referencePeople};}};
+const peopleContext={URL,AbortController,setTimeout,clearTimeout,fetch:async url=>{assert.equal(url,'/reference/people.json');requests++;return {ok:requests>1,status:503,json:async()=>referencePeople};}};
 vm.createContext(peopleContext);vm.runInContext(peopleBundle.outputFiles[0].text,peopleContext);
 const {mapPeople,fetchPeople,createPeopleSearch,characterPage,CHARACTER_PAGE_SIZE}=peopleContext.People;
 await assert.rejects(fetchPeople(),/503/);

@@ -15,6 +15,7 @@ for(const [url,asset]of Object.entries(mobileBundle.assets)){
 fs.writeFileSync(path.join(output,'device-engine.js'),mobileBundle.engine);
 fs.copyFileSync('src/device-api-worker.js',path.join(output,'device-api-worker.js'));
 await build({entryPoints:['src/device-bootstrap.js'],outfile:path.join(output,'device-bootstrap.js'),bundle:true,format:'iife',platform:'browser',target:['safari17','chrome119']});
+await build({entryPoints:['src/device-local-ai.js'],outfile:path.join(output,'device-ai.js'),bundle:true,format:'esm',platform:'browser',target:['safari17','chrome119']});
 let html=fs.readFileSync(path.join(output,'index.html'),'utf8');
 html=insertDeviceBootstrap(html);
 html=html.replace('Questions and recent conversation context are sent only to this site’s search endpoint, with no external AI service.','Questions and recent conversation context are processed on this device. Optional on-device AI runs locally; no external AI service receives your questions.');

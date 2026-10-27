@@ -51,7 +51,7 @@ console.log('PASS: intervening sync changes invalidate stale Undo, including an 
 c.mergePassageBackup({verseBookmarks:{'0:9:3':{book:0,chapter:9,verse:3,name:'Genesis'}},verseHighlights:{'bad':{book:0,chapter:9,verse:0,name:'Genesis'}}});assert(c.state.verseBookmarks['0:9:3']);assert(!c.state.verseHighlights.bad);
 const html=fs.readFileSync('src/index.html','utf8');
 assert(!html.includes('data-view="method"'),'About is removed from the header icon row');assert(html.includes('aria-label="About BibleLens"'),'About remains in the footer');
-assert(html.includes('href="#method"'));assert(html.includes('passage.js?v=reader-picker-grid-v14'));
+assert(html.includes('href="#method"'));assert((await import('./lazy-assets.mjs')).featureSources.study.includes('passage.js'),'Passage tools load with the reader');
 for(const direction of ['m15 5-7 7 7 7','m9 5 7 7-7 7'])assert(html.includes(direction));
 console.log('PASS: private passage notes persist, escape, export and merge; chapter bookmarks, separate chapter state, and note-free share links.');
 node('#verse-note-dialog').showModal=()=>{node('#verse-note-dialog').hidden=false};

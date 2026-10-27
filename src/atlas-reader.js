@@ -24,7 +24,7 @@
 
     const book = document.createElement('span');
     book.className = 'atlas-book-title';
-    book.textContent = reading.name;
+    book.textContent = reading.name + ' ';
     const chevron = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     chevron.classList.add('atlas-passage-chevron');
     chevron.setAttribute('viewBox', '0 0 16 16');
@@ -38,18 +38,18 @@
     mark.className = 'atlas-chapter-mark';
     const label = document.createElement('span');
     label.className = 'atlas-chapter-label';
-    label.textContent = 'Chapter';
+    label.textContent = 'Chapter ';
     const number = document.createElement('span');
     number.className = 'atlas-chapter-number';
     number.textContent = String(reading.chapter);
     mark.append(label, number);
     picker.replaceChildren(book, mark);
-    picker.setAttribute('aria-label', `${reading.name}, chapter ${reading.chapter}. Choose book, chapter and verse`);
+    picker.setAttribute('aria-label', `${reading.name} Chapter ${reading.chapter}. Choose book, chapter and verse`);
 
     const collection = document.createElement('p');
     collection.className = 'atlas-reader-collection';
     collection.textContent = readingBook < 39 ? 'Old Testament' : 'New Testament';
-    picker.closest('h2').before(collection);
+    picker.closest('h1').before(collection);
     heading.classList.add('atlas-passage-heading');
   }
 

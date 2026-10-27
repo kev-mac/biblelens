@@ -5,7 +5,7 @@ import vm from 'node:vm';
 const source=fs.readFileSync('src/reader.js','utf8');
 const requestSource=source.slice(source.indexOf('async function readerJson('),source.indexOf('const comparisonCache='));
 const startupStart=source.indexOf('async function initializeReader(');
-const startupSource=source.slice(startupStart,source.indexOf('\n\ndocument.addEventListener',startupStart)).replace(/initializeReader\(\);\s*$/,'');
+const startupSource=source.slice(startupStart,source.indexOf('\nlet readerInitialization;',startupStart)).replace(/initializeReader\(\);\s*$/,'');
 const catalog=[{id:0,name:'Genesis',chapters:2}];
 const passage={name:'Genesis',chapter:1,verses:[{n:1,kjv:'In the beginning'}]};
 function fixture({abort=true}={}){
