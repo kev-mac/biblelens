@@ -1,3 +1,4 @@
+import {referenceJson} from './reference-cache.js';
 import referenceIds from './data/character-reference-ids.json' with {type: 'json'};
 
 // A parent edge means source is the parent of target; a child edge is its inverse.
@@ -34,11 +35,7 @@ export function createCharacterGraph(people, relationships) {
 let pendingGraph;
 // Reference assets are loaded only when a profile opens. Failed loads can be retried.
 export function loadCharacterGraph() {
-  if (!pendingGraph) pendingGraph = Promise.all(['people', 'relationships'].map(async name => {
-    const response = await fetch(`reference/${name}.json`);
-    if (!response.ok) throw new Error('Could not load family reference data');
-    return response.json();
-  })).then(([people, relationships]) => createCharacterGraph(people, relationships))
+  if (!pendingGraph) pendingGraph = Promise.all(['people', 'relationships'].map(name => referenceJson(`/reference/${name}.json`))).then(([people, relationships]) => createCharacterGraph(people, relationships))
     .catch(error => { pendingGraph = undefined; throw error; });
   return pendingGraph;
 }

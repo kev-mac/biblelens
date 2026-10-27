@@ -40,6 +40,8 @@ for(const name of ['beginnings-landscape.svg','beginnings-landscape.provenance.j
 for(const name of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+\.webp$/.test(name)))assets['/assets/'+name]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src/assets/'+name).toString('base64')};
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
 assets['/explore-feed.json']={type:'application/json; charset=utf-8',body:JSON.stringify(exploreFeed())};
+const referenceBundle=await build({entryPoints:['src/reference-cache.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
+assets['/reference-cache.js']={type:'application/javascript; charset=utf-8',body:referenceBundle.outputFiles[0].text};
 const placesBundle=await build({entryPoints:['src/places.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/places.js']={type:'application/javascript; charset=utf-8',body:placesBundle.outputFiles[0].text};
 // Pinned browser distribution; retain module-relative worker URLs for web and iOS.

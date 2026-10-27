@@ -1,3 +1,4 @@
+import {referenceJson} from './reference-cache.js';
 // Shared, DOM-free atlas parsing and safe text-to-chip helpers.
 import {isNarrativeLocationMention} from './people-links.js';
 const escapeHTML=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -76,7 +77,7 @@ export function wrapLocationNames(textOrNames,match){
 }
 let pending;
 export async function loadPlaces(){
- if(!pending)pending=fetch('/reference/places.json').then(r=>{if(!r.ok)throw Error('Could not load places.');return r.json();}).then(parsePlaces).catch(error=>{pending=null;throw error;});
+ if(!pending)pending=referenceJson('/reference/places.json').then(parsePlaces).catch(error=>{pending=null;throw error;});
  return pending;
 }
 export async function getLocationDetails(placeId){const places=await loadPlaces(),key=String(placeId);return places.get(key)||[...places.values()].find(p=>p.lookupIds.includes(key))||null;}

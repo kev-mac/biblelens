@@ -240,3 +240,10 @@ document.body.classList.add('merge-picker-inputs');
  section.querySelector('button').addEventListener('click',()=>{appearance={...defaults};save();});apply();
  window.addEventListener('storage',event=>{if(event.key!==key)return;try{const saved=JSON.parse(event.newValue||'{}');appearance=Object.fromEntries(Object.entries(defaults).map(([name,fallback])=>[name,valid(saved[name])?saved[name]:fallback]));apply();}catch{}});
 })();
+
+// Fragment routing must never interpret the skip target as a screen.
+document.querySelector('.skip').addEventListener('click',event=>{
+ event.preventDefault();
+ const content=document.getElementById('main');
+ content.focus({preventScroll:true});content.scrollIntoView({block:'start',behavior:'instant'});
+});

@@ -1,3 +1,4 @@
+import {referenceJson} from '../../reference-cache.js';
 import books from '../../../data/books.json';
 import {characters} from './directory';
 import referenceIds from '../../data/character-reference-ids.json';
@@ -45,9 +46,8 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
 let pending: Promise<DirectoryPerson[]> | undefined;
 export function fetchPeople(): Promise<DirectoryPerson[]> {
   // Share in-flight requests; allow a fresh request after a failed load.
-  return pending ||= fetch('/reference/people.json').then(async response => {
-    if (!response.ok) throw new Error(`People request failed (${response.status})`);
-    const people = mapPeople(await response.json());
+  return pending ||= referenceJson('/reference/people.json').then(raw => {
+    const people = mapPeople(raw);
     if (!people.length) throw new Error('The people directory is empty');
     return people;
   }).catch(error => { pending = undefined; throw error; });

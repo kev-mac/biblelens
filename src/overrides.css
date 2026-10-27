@@ -244,7 +244,7 @@ body.lens-app #chapter-text .atlas-reader-collection {
   letter-spacing: .13em;
   text-transform: uppercase;
 }
-html body.lens-app #chapter-text .atlas-passage-heading :is(h2, .passage-heading-picker) {
+html body.lens-app #chapter-text .atlas-passage-heading :is(h1,h2, .passage-heading-picker) {
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: -.045em;
@@ -699,8 +699,8 @@ body .note-actions .note-icon,body .note-actions .note-icon[data-edit-marked-not
 body .comparison-evidence[hidden],body #chapter-text .comparison-panel>.comparison-details{display:none}
 body .summary-inspect{border:0;background:transparent;box-shadow:none}
 body .comparison-dock,body.compare-active .comparison-dock,html.native-ios body.compare-active .comparison-dock{height:auto}
-body #chapter-text .passage-heading h2,body #chapter-text .passage-heading-picker{ text-shadow:0 0 4px rgba(200,238,255,.6),0 0 13px rgba(125,211,252,.5),0 0 28px rgba(125,211,252,.32) }
-body:not(.dark) #chapter-text .passage-heading h2,body:not(.dark) #chapter-text .passage-heading-picker{text-shadow:0 0 4px #38bdf855,0 0 14px #0284c744,0 0 24px #0284c72b}
+body #chapter-text .passage-heading :is(h1,h2),body #chapter-text .passage-heading-picker{ text-shadow:0 0 4px rgba(200,238,255,.6),0 0 13px rgba(125,211,252,.5),0 0 28px rgba(125,211,252,.32) }
+body:not(.dark) #chapter-text .passage-heading :is(h1,h2),body:not(.dark) #chapter-text .passage-heading-picker{text-shadow:0 0 4px #38bdf855,0 0 14px #0284c744,0 0 24px #0284c72b}
 body #comparison-status .category-filter .filter-icon{background:rgb(var(--theme-rgb,148,163,184))}
 body .comparison-pill-expand{backdrop-filter:none;-webkit-backdrop-filter:none;border:0;background:transparent;box-shadow:none}
 body .comparison-dock.pill-expanded #comparison-status .category-filter .filter-icon{background:transparent}
@@ -734,10 +734,10 @@ body .verse-body,body .marked-verse-text,body .comparison-side q,body .verse-pre
 body .comparison-summary,body :is(#chapter-text,#evidence-view,#chat-view) .comparison-summary :is(h3,p,.message-body,.chat-reasoning),body .comparison-evidence,body .comparison-context-content{font-family:var(--category-font-family,var(--ui-font))}
 body .comparison-summary,body #chapter-text .comparison-cell .comparison-summary,body .study-tldr .comparison-summary,body .preview-summary,body .citation-summary{font-size:.95rem;text-shadow:none}
 body .comparison-summary :is(p,.message-body,.chat-reasoning){font-size:inherit}
-body #chapter-text .passage-heading h2,body #chapter-text .passage-heading-picker,body #comparison-context-title{font-family:var(--ui-font)}
+body #chapter-text .passage-heading :is(h1,h2),body #chapter-text .passage-heading-picker,body #comparison-context-title{font-family:var(--ui-font)}
 body #reader-settings .cloud-sync-settings h3,body #reader-settings .release-settings h3{font-family:var(--ui-font)}
 .stories-view[hidden],#reader-layout[hidden]{display:none}
-body .story-card h3{font-family:var(--ui-font)}
+body .story-card :is(h2,h3){font-family:var(--ui-font)}
 .commandments-disclaimer{font-size:.8rem}
 body .commandment-card h2{font:600 1.15rem/1.5 var(--ui-font)}
 body .commandment-lens h3{font:600 .8rem/1.5 var(--ui-font)}
@@ -823,7 +823,7 @@ body .verse:has(.verse-body.verse-bookmarked){background:radial-gradient(ellipse
 }
 body .leaflet-tooltip{opacity:1}
 body>header nav [aria-current=page]{background:rgba(99,102,241,.18)}
-body #chapter-text .passage-heading h2,body #chapter-text .passage-heading-picker,body:not(.dark) #chapter-text .passage-heading h2,body:not(.dark) #chapter-text .passage-heading-picker{ text-shadow:none }
+body #chapter-text .passage-heading :is(h1,h2),body #chapter-text .passage-heading-picker,body:not(.dark) #chapter-text .passage-heading :is(h1,h2),body:not(.dark) #chapter-text .passage-heading-picker{ text-shadow:none }
 body:not(.dark) .verse:has(.verse-body.verse-bookmarked){background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,234,179,8),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,234,179,8),var(--surface-base))}
 @media(max-width:600px){
  body #chat-view :is(.summary-expand,.summary-inspect),body #evidence-view :is(.summary-expand,.summary-inspect),body #chapter-text :is(.summary-expand,.summary-inspect){width:44px;height:44px;min-width:44px;min-height:44px}
@@ -1076,7 +1076,7 @@ html body.lens-app #chapter-text {
   border-radius: 0;
   background: transparent;
 }
-html body.lens-app #chapter-text .passage-heading :is(h2, .passage-heading-picker) {
+html body.lens-app #chapter-text .passage-heading :is(h1,h2, .passage-heading-picker) {
   border: 0;
   background: transparent;
   color: var(--lens-ink);
@@ -1168,7 +1168,7 @@ body.lens-app #workspace-storage-status button { background: transparent; color:
   html body.lens-app #lensMasthead .lens-primary :is(a, button):is([aria-current="page"], .active) { border-top-color: var(--lens-copper); }
   html body.lens-app #lensMasthead .lens-primary :is(a, button) svg { width: 20px; height: 20px; }
   html body.lens-app #chapter-text { padding-top: 0; padding-bottom: 0; }
-  html body.lens-app #chapter-text .passage-heading :is(h2, .passage-heading-picker) { font-size: 1.875rem; }
+  html body.lens-app #chapter-text .passage-heading :is(h1,h2, .passage-heading-picker) { font-size: 1.875rem; }
   html body.lens-app #chapter-text .verse { padding: 8px 47px 8px 0; }
   html:has(body.lens-app #lens-inspector-sheet[open]),
   body.lens-app:has(#lens-inspector-sheet[open]) { overflow: hidden; }
@@ -1809,7 +1809,7 @@ html body.lens-app #main #search-view .lens-result-group > h2 {
   font-family: var(--lens-ui-font);
 }
 html body.lens-app #main #stories-view .story-card { padding-block: 23px; }
-html body.lens-app #main #stories-view .story-card > h3 { font-size: clamp(1.4rem, 2.1vw, 1.8rem); line-height: 1.3; }
+html body.lens-app #main #stories-view .story-card > :is(h2,h3) { font-size: clamp(1.4rem, 2.1vw, 1.8rem); line-height: 1.3; }
 html body.lens-app #main :is(#characters-view, #places-view) .character-card { padding-block: 22px; }
 html body.lens-app #main :is(#stories-view, #commandments-view, #evidence-view, #bookmarks-view, #characters-view, #places-view) .person-section-toggle {
   border: 0;
@@ -1846,7 +1846,7 @@ html body.lens-app #main :is(#stories-view, #commandments-view, #evidence-view, 
   html body.lens-app #lensMasthead nav.lens-primary { background: Canvas; }
 }
 /*  atlas-reader.css priorities  */
-html body.lens-app #chapter-text .atlas-passage-heading :is(h2, .passage-heading-picker) {
+html body.lens-app #chapter-text .atlas-passage-heading :is(h1,h2, .passage-heading-picker) {
   font-family: var(--lens-display-font, Inter, system-ui, sans-serif);
   font-size: clamp(2rem, 3vw, 2.85rem);
 }
@@ -1895,7 +1895,7 @@ body.lens-app #lensInspector .lens-note-editor h3 {
   font-family: var(--lens-display-font, Inter, system-ui, sans-serif);
 }
 @media (max-width: 760px) {
-  html body.lens-app #chapter-text .atlas-passage-heading :is(h2, .passage-heading-picker) {
+  html body.lens-app #chapter-text .atlas-passage-heading :is(h1,h2, .passage-heading-picker) {
     font-size: clamp(1.8rem, 7.5vw, 2.3rem);
   }
 }

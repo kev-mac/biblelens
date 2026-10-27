@@ -119,7 +119,7 @@ async function renderMarkedWorkspace(){
  for(const key of comparisonEvidenceOpen)if(key.startsWith('marked:'))comparisonEvidenceOpen.delete(key);
  const generation=++markedWorkspaceGeneration;
  try{
-  if(!books.length){const response=await fetch('/api/books');if(!response.ok)throw Error();books=await response.json();}
+  if(!books.length){books=await window.BibleLensReferences.json('/api/books');}
   if(generation!==markedWorkspaceGeneration)return;
   if(markedBookSelection===null)markedBookSelection=readingBook;
   renderMarkedContext();$('#saved-passages').innerHTML='<p role="status">Loading categories…</p>';$('#saved-cards').hidden=true;

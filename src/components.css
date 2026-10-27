@@ -141,7 +141,7 @@ body:not(.dark) .comparison-summary{color:var(--ink)}
 /* Ask directly from the chapter heading. */
 /* Compact question entry beside the chapter heading. */
 .chapter-heading-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:10px}
-.chapter-heading-row h2{flex:0 0 auto;margin:0}
+.chapter-heading-row :is(h1,h2){flex:0 0 auto;margin:0}
 .reader-question-form{display:flex;align-items:center;gap:6px;flex:1 1 220px;max-width:430px;min-width:0;margin:0 0 0 auto;border:1px solid var(--line);border-radius:24px;padding:4px 5px 4px 13px;background:var(--bg)}
 .reader-question-form input{flex:1;min-width:0;width:100%;height:32px;min-height:32px;padding:4px 0;border:0;background:transparent;font:0.875rem/1.6 var(--ui-font)}
 .reader-question-form .reader-question-submit{display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;min-height:30px;padding:0;border:0;border-radius:50%;background:var(--green);color:var(--bg)}
@@ -246,7 +246,7 @@ h2,h3,.card h3{font-size:1.375rem;line-height:1.6;font-weight:600;letter-spacing
 .comparison-cell,.comparison-summary,.verse-comparison h3,.context-pointer{font:400 1rem/1.6 var(--ui-font)}
 .verse-comparison h3{font-weight:600}.comparison-cell .comparison-summary{font-size:1rem;line-height:1.6}
 .chapter-heading-row{display:flex;flex-direction:column;align-items:stretch;gap:8px;margin-bottom:20px}
-.chapter-heading-row h2{font:400 1.375rem/1.6 var(--ui-font);margin:0}
+.chapter-heading-row :is(h1,h2){font:400 1.375rem/1.6 var(--ui-font);margin:0}
 .chapter-heading-row .chapter-subtitle{font-size:1rem;color:var(--muted);line-height:1.6;margin:0;overflow-wrap:break-word}
 .reader-question-form{flex:none;width:100%;max-width:none;margin:4px 0 0;height:44px;padding:1px 1px 1px 14px;flex-wrap:nowrap}
 .reader-question-form input{line-height:1.6;height:40px;padding:0}
@@ -292,7 +292,7 @@ body.dark mark.side-quote[data-tone="context"]{color:#254c68}
 body.dark mark.side-quote[data-tone="hebrew"]{color:#5c4012}
 body.dark mark.side-quote[data-tone="greek"]{color:#50356c}
 body.dark .jesus-words mark.side-quote{color:inherit}
-.brand{font-family:var(--ui-font);font-size:1.375rem}h2,h3,h4,h5{font-family:var(--ui-font)} .chapter-heading-row h2{font-family:var(--ui-font)}
+.brand{font-family:var(--ui-font);font-size:1.375rem}h2,h3,h4,h5{font-family:var(--ui-font)} .chapter-heading-row :is(h1,h2){font-family:var(--ui-font)}
 
 h1,h2,h3,h4,h5,h6{font-weight:600}h4,h5,h6{font-size:1rem;line-height:1.6}#chat-send,.preview-close{width:40px;height:40px;min-width:40px;min-height:40px;flex-basis:40px;border-radius:50%}.source-icon{width:20px;height:20px}
 
@@ -304,7 +304,7 @@ header{height:80px}.brand{gap:10px;letter-spacing:normal}nav{gap:28px}
 .comparison-status{gap:6px;margin:0 0 16px;padding:0}.category-filter{min-height:32px;gap:7px;padding:4px 11px}.category-filter:disabled{border-color:transparent;font-weight:400}
 .category-filter:not(:disabled):hover{outline:1px solid currentColor;outline-offset:1px}
 .chapter-text,.chapter-text.with-comparisons{padding:28px 32px;border-radius:12px}
-.chapter-heading-row{gap:4px;margin-bottom:24px}.chapter-heading-row h2{font-weight:400}.reader-question-form{margin-top:12px;padding:1px 1px 1px 14px}
+.chapter-heading-row{gap:4px;margin-bottom:24px}.chapter-heading-row :is(h1,h2){font-weight:400}.reader-question-form{margin-top:12px;padding:1px 1px 1px 14px}
 .reader-question-form .reader-question-submit{width:40px;height:40px;min-height:40px;flex-basis:40px}.reader-question-form input{height:40px}
 .verse,.with-comparisons .verse{border-radius:0}.verse-body{position:relative}
 .verse-num{top:.55em;left:-36px;width:24px;text-align:left;line-height:1.85}
@@ -524,7 +524,7 @@ body .chapter-text,body .chapter-text.with-comparisons{margin:0;background:trans
 body .chapter-heading-row{gap:0;margin:0 0 26px}
 body .passage-heading{display:flex;align-items:center;justify-content:space-between;gap:14px}
 body .passage-eyebrow{margin:0;font:500 .625rem/1.5 var(--ui-font);letter-spacing:1.6px;color:var(--muted)}
-body .chapter-heading-row h2{font:400 1.875rem/1.2 var(--ui-font);letter-spacing:-1px;margin:8px 0 0}
+body .chapter-heading-row :is(h1,h2){font:400 1.875rem/1.2 var(--ui-font);letter-spacing:-1px;margin:8px 0 0}
 body .chapter-heading-row .chapter-subtitle{display:none}
 body .passage-bookmark{width:40px;height:40px;padding:10px;flex:none}
 body .passage-bookmark svg{width:17px;height:17px}
@@ -577,7 +577,7 @@ body .passage-saved-note{white-space:pre-wrap;overflow-wrap:anywhere}
 /* Theme-balanced controls and vivid category gradients. */
 body.dark{--control-bg:rgba(15,23,42,.86);--control-text:#7dd3fc;--control-border:rgba(56,189,248,.25);--control-active:#163d55;--control-selected-text:#b9eaff;--control-hover:#172f48}
 body .edge-page svg{background:var(--control-bg);color:var(--control-text);border-color:var(--control-border)}
-body .chapter-heading-row h2{margin-top:0}
+body .chapter-heading-row :is(h1,h2){margin-top:0}
 body .passage-description{font:400 .75rem/1.6 var(--ui-font);letter-spacing:0;text-transform:none;margin:8px 0 0;color:var(--muted);max-width:100%;overflow-wrap:anywhere}
 body .passage-heading{align-items:flex-start}
 body :is(.translation,[data-tone="translation"],.hebrew,.greek){--tone-start:#7c3aed;--tone-end:#4338ca;--tone-bright:#a78bfa}
@@ -798,7 +798,7 @@ body #reader-settings[open]{position:fixed;inset:calc(env(safe-area-inset-top,0p
 /* BibleLens branding, clear verse glass and inline chat references. */
 body .brand b,body.dark .brand b,body .brand .mark-letter-l{color:#c46128}
 body .brand .mark-letter-s{color:#fff}
-body .passage-heading h2{text-shadow:0 0 10px rgba(196,97,40,.26),0 0 22px rgba(255,255,255,.2)}
+body .passage-heading :is(h1,h2){text-shadow:0 0 10px rgba(196,97,40,.26),0 0 22px rgba(255,255,255,.2)}
 
 body .verse-preview,body.dark .verse-preview{background:rgba(245,248,252,.38);border-color:rgba(255,255,255,.5);-webkit-backdrop-filter:blur(28px) saturate(130%);backdrop-filter:blur(28px) saturate(130%)}
 body.dark .verse-preview{background:rgba(15,25,40,.38)}
@@ -893,7 +893,7 @@ body .note-confirm-dialog::backdrop{background:rgba(0,0,0,.45);backdrop-filter:b
 /* Compact chapter surface and scroll-triggered comparison menu. */
 body>header .header-context::before{content:none;margin:0}
 body #chapter-text .verse{width:100%;min-width:0;box-sizing:border-box}
-body #chapter-text .passage-heading h2,body #chapter-text .chapter-subtitle{text-shadow:0 0 8px rgba(125,211,252,.45),0 0 22px rgba(125,211,252,.25)}
+body #chapter-text .passage-heading :is(h1,h2),body #chapter-text .chapter-subtitle{text-shadow:0 0 8px rgba(125,211,252,.45),0 0 22px rgba(125,211,252,.25)}
 body .note-actions{display:flex;gap:4px;margin:0 0 2px}
 body .note-actions .note-icon,body .note-actions .note-icon[data-edit-marked-note],body .note-actions .note-icon[data-edit-verse-note],body .note-actions .note-icon[data-delete-note]{width:32px;height:32px;min-height:32px;padding:7px}
 body .note-actions .note-icon svg{width:17px;height:17px}
@@ -1184,7 +1184,7 @@ body .commandment-filter-chips button[aria-pressed="true"]{background:rgba(var(-
 .stories-view{width:min(880px,100%);margin:0 auto;padding:18px}
 .stories-list{display:grid;gap:20px;max-height:calc(100dvh - 240px);min-height:220px;overflow-y:auto;overscroll-behavior:contain;padding:16px;scrollbar-gutter:stable}
 .story-card{position:relative;isolation:isolate;border-radius:22px;padding:24px;border:1px solid rgba(var(--theme-rgb),.35);background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),.18),transparent 75%),rgba(var(--theme-rgb),.1);box-shadow:0 8px 28px rgba(var(--theme-rgb),.12),0 0 18px rgba(var(--theme-rgb),.12),inset 0 1px 1px #ffffff80,inset 0 -1px 1px #00000020;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
-body .story-card h3{margin:0 0 14px;font:600 1.2rem/1.5 var(--ui-font)}
+body .story-card :is(h2,h3){margin:0 0 14px;font:600 1.2rem/1.5 var(--ui-font)}
 .story-card p{line-height:1.65;margin:16px 0}
 .story-references{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:.85rem}
 body .story-passage,body .story-reference{display:inline-flex;align-items:center;min-height:38px;white-space:normal;text-align:left;cursor:pointer;border:1px solid rgba(var(--theme-rgb),.6);border-radius:24px;padding:7px 13px;color:inherit;background:linear-gradient(135deg,rgba(var(--theme-rgb),.24),rgba(var(--theme-rgb),.1));box-shadow:inset 0 1px 1px #ffffff70,0 0 10px rgba(var(--theme-rgb),.15);font:inherit}
@@ -2039,7 +2039,7 @@ html body .place-profile-card .character-summary{margin:14px 0}
 /* Story profiles share People’s spacing, surface treatment and section controls. */
 html body :is(#stories-view,#story-topic-body) .story-card{padding:18px;border-radius:22px;--profile-glow:#367fc3}
 html body.dark :is(#stories-view,#story-topic-body) .story-card{--profile-glow:#8cc8ff}
-html body .story-card h3{font-size:1.35rem;margin:4px 0 16px;color:var(--ink)}
+html body .story-card :is(h2,h3){font-size:1.35rem;margin:4px 0 16px;color:var(--ink)}
 html body .story-card .story-summary{font-size:.875rem;line-height:1.65;margin:14px 0}
 body .story-card .person-section-controls{display:flex;justify-content:center;margin:18px 0 0}
 body .story-card .person-section-toggle{width:100px}

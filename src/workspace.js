@@ -151,7 +151,7 @@
   }
   if(view==='notebook'&&!el('notebook-view').contains(document.activeElement))renderNotebook();if(event.detail?.source!=='local')renderInspector();
  });
- async function getResources(){if(!resources)resources=Promise.allSettled(['/stories.json','/reference/people.json','/reference/places.json'].map(async url=>{const res=await fetch(url);if(!res.ok)throw Error('Reference unavailable');return res.json();}));const result=await resources;if(result.some(item=>item.status==='rejected'))resources=null;return result;}
+ async function getResources(){if(!resources)resources=Promise.allSettled(['/stories.json','/reference/people.json','/reference/places.json'].map(url=>window.BibleLensReferences.json(url)));const result=await resources;if(result.some(item=>item.status==='rejected'))resources=null;return result;}
  function noteRows(){
   const rows=[];
   for(const [kind,notes,marks] of [['passage',state.passageNotes,state.passageBookmarks],['verse',state.verseNotes,state.verseBookmarks]]){

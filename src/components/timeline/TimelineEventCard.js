@@ -91,7 +91,7 @@ export function createTimelineEventCard(event) {
   node.querySelector('.timeline-event-card').classList.add('has-discrepancy');
   drawer.id = `timeline-discrepancy-${nextId}`;
   button.setAttribute('aria-controls', drawer.id);
-  button.setAttribute('aria-label', `History: academic discrepancy for ${event.title}`);
+  button.setAttribute('aria-label', `Academic comparison for ${event.title}`);
   node.querySelector('[data-traditional-date]').textContent = event.traditional_date;
   node.querySelector('[data-academic-consensus]').textContent = event.discrepancy.academic_consensus;
   node.querySelector('[data-academic-label]').textContent = event.discrepancy.academic_label || 'Academic Consensus';

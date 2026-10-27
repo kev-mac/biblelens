@@ -1,3 +1,4 @@
+import {referenceJson} from './reference-cache.js';
 import {mountPlacesDirectory} from './places-directory.js';
 import atlasStyle from './data/atlas-style.json';
 import {createPersonMatcher,wrapReferenceNames} from './people-links.js';
@@ -139,7 +140,7 @@ async function initializeChips(){
   if(placesReady&&peopleReady){enqueue(document.body);return;}
   loading=Promise.allSettled([
    placesReady?Promise.resolve():loadPlaces().then(places=>{match=createPlaceMatcher(places);placesReady=true;enqueue(document.body);}),
-   peopleReady?Promise.resolve():fetch('/reference/people.json').then(response=>{if(!response.ok)throw Error('People references unavailable');return response.json();}).then(people=>{matchPeople=createPersonMatcher(people);peopleReady=true;enqueue(document.body);})
+   peopleReady?Promise.resolve():referenceJson('/reference/people.json').then(people=>{matchPeople=createPersonMatcher(people);peopleReady=true;enqueue(document.body);})
   ]).then(results=>{
    for(const result of results)if(result.status==='rejected')console.warn('Reference links are incomplete:',result.reason?.message||result.reason);
    enqueue(document.body);
