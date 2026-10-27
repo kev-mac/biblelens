@@ -1,3 +1,4 @@
+/*__SEARCH_CORE__*/
 const BOOKS=/*__BOOKS__*/[];
 const CHAPTERS=/*__CHAPTERS__*/{};
 const STUDIES=/*__STUDIES__*/[];
@@ -8,16 +9,20 @@ const SEARCH=/*__SEARCH__*/{};
 const MINI_INDEX=/*__MINISEARCH_INDEX__*/{};
 const VOCABULARY=/*__VOCABULARY__*/{};
 const passageSearch=new Map();
-function searchEngine(){return {search(query,options={}){
- const results=[];
- for(const [book,serialized]of Object.entries(MINI_INDEX)){
-  if(options.bookScope?.size&&!options.bookScope.has(Number(book)))continue;
-  let engine=passageSearch.get(book);
-  if(!engine){engine=MiniSearch.loadJSON(serialized,{fields:['text'],tokenize:text=>text.toLowerCase().match(/[a-z]{3,}/g)||[]});if(passageSearch.size>=2)passageSearch.delete(passageSearch.keys().next().value);passageSearch.set(book,engine);}
-  results.push(...engine.search(query,options));
+function searchEngine(){return {
+ search(query,options={}){return this.searchMany([query],options)[0];},
+ searchMany(queries,options={}){
+  const results=queries.map(()=>[]);
+  // Load each book once per query, while retaining only two decoded shards.
+  for(const [book,serialized]of Object.entries(MINI_INDEX)){
+   if(options.bookScope?.size&&!options.bookScope.has(Number(book)))continue;
+   let engine=passageSearch.get(book);
+   if(!engine){engine=MiniSearch.loadJSON(serialized,{fields:['text'],tokenize:text=>text.toLowerCase().match(/[a-z]{3,}/g)||[]});if(passageSearch.size>=2)passageSearch.delete(passageSearch.keys().next().value);passageSearch.set(book,engine);}
+   queries.forEach((query,index)=>results[index].push(...engine.search(query,options)));
+  }
+  return results.map(rows=>rows.sort((a,b)=>b.score-a.score));
  }
- return results.sort((a,b)=>b.score-a.score);
-}};}
+};}
 const chapterCache=new Map();
 const json=(value,status=200)=>new Response(JSON.stringify(value),{status,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 async function chapter(book,ch){const key=`${book}:${ch}`;if(chapterCache.has(key))return chapterCache.get(key);if(!CHAPTERS[key])return null;const bytes=Uint8Array.from(atob(CHAPTERS[key]),c=>c.charCodeAt(0));const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));const value=await new Response(stream).json();if(chapterCache.size>20)chapterCache.delete(chapterCache.keys().next().value);chapterCache.set(key,value);return value;}
@@ -27,41 +32,42 @@ const SEARCH_VARIANTS=[['interest','usury','usurer','usurers'],['loan','loans','
 const readingEdition=value=>['kjv','web','asv'].includes(String(value||'').toLowerCase())?String(value).toLowerCase():'kjv';
 const scriptureText=(verse,edition='kjv')=>cleanExcerpt(verse?.[readingEdition(edition)]||'');
 const scriptureKind=edition=>'Primary scripture text · '+readingEdition(edition).toUpperCase();
-let bookNameLookup,bookNamePattern;
-function bookNames(){
- if(bookNameLookup)return;
- bookNameLookup=new Map();
- const extras={Genesis:['Ge','Gn'],Exodus:['Exo','Ex'],Psalms:['Psalm','Psa','Pss'],'Song of Solomon':['Song of Songs','Canticles'],John:['Jn'],Matthew:['Mt'],Mark:['Mk'],Luke:['Lk'],Revelation:['Revelations'],James:['Jam']};
- for(const book of BOOKS){
-  const names=[book.name,book.code,...(extras[book.name]||[])];
-  if(/^[123] /.test(book.name)){const number=book.name[0],name=book.name.slice(2);names.push(number+name,number+' '+book.code.slice(1),['','I','II','III'][Number(number)]+' '+name);if(name==='John')names.push(number+' Jn',number+'Jn');}
-  for(const name of names)bookNameLookup.set(name.toLowerCase().replace(/[.\s]/g,''),book);
- }
- const names=BOOKS.flatMap(book=>[book.name,book.code,...(extras[book.name]||[]),...(/^[123] /.test(book.name)?[book.name.replace(' ',''),book.name[0]+' '+book.code.slice(1),['','I','II','III'][Number(book.name[0])]+' '+book.name.slice(2),...(book.name.slice(2)==='John'?[book.name[0]+' Jn',book.name[0]+'Jn']:[])]:[])]);
- bookNamePattern=names.sort((a,b)=>b.length-a.length).map(name=>name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/\s+/g,'\\s+')).join('|');
-}
-function canonicalBookNames(message){bookNames();return String(message||'').replace(new RegExp('\\b('+bookNamePattern+')\\.?(?=\\s|\\d|[.:;,?!]|$)','gi'),name=>bookNameLookup.get(name.toLowerCase().replace(/[.\s]/g,''))?.name||name);}
+function canonicalBookNames(message){return BibleLensSearch.canonicalBooks(message,BOOKS);}
 function namedBooks(message){
  const canonical=canonicalBookNames(message),found=[];let remaining=canonical;
  for(const book of [...BOOKS].sort((a,b)=>b.name.length-a.name.length)){const pattern=new RegExp('\\b'+book.name+'\\b','gi');if(pattern.test(remaining)){found.push(book);remaining=remaining.replace(pattern,' ');}}
  return found;
 }
-function questionTerms(message){
+const termCache=new Map();
+const searchWordFamilies=[['forgiveness','forgive','forgiven','forgives','forgiving','forgave']];
+const tunedVariants=[...searchWordFamilies,['anxiety','anxious','worry','worried','care','careful'],['slave','slaves','slavery','servitude','servant','servants','bondman','bondmen','bondage'],['tomb','tombs','sepulchre','sepulchres'],['story','stories','account','accounts','narrative','narratives']];
+const correctionWords=Object.keys(SEARCH);
+function spellingCorrections(word){
+ const limit=BibleLensSearch.tolerance(word);
+ if(!limit||word.length>24)return [];
+ const candidates=correctionWords.map(term=>({term,d:BibleLensSearch.distance(word,term,limit)})).filter(row=>row.d<=limit).sort((a,b)=>a.d-b.d||SEARCH[b.term]-SEARCH[a.term]||a.term.localeCompare(b.term));
+ return candidates.filter(row=>row.d===candidates[0]?.d).slice(0,2).map(row=>row.term);
+}
+function questionTerms(message,tuned=false){
+ const cacheKey=String(tuned)+':'+message;if(termCache.has(cacheKey))return termCache.get(cacheKey);
  const stop=new Set('the and who whom whose what was were where when which how why does did didnt can could would should this that these those about bible biblical chapter verse tell explain give please have has had are not his her him its their them you your anyone anybody someone somebody person people according say says said also from into with for all any ever much allowed okay more else then'.split(' '));
- const scoped=namedBooks(message);let query=canonicalBookNames(message);for(const book of scoped)query=query.replace(new RegExp(book.name,'gi'),' ');
+ if(tuned)for(const word of ['there','allow','find'])stop.add(word);
+ const scoped=namedBooks(message);let query=canonicalBookNames(message);if(tuned)query=BibleLensSearch.normalize(query);for(const book of scoped)query=query.replace(new RegExp(book.name,'gi'),' ');
  if(/\b(interest|usury|loans?|lend|lending|borrow)\b/i.test(query))query=query.replace(/\b(charge|charging|rate|rates)\b/gi,' ');
  const words=[...new Set(query.toLowerCase().match(/[a-z]{3,}/g)||[])].filter(w=>!stop.has(w)).slice(0,24);let correctionBudget=2;
  const groups=words.map(word=>{
-  const manual=SEARCH_VARIANTS.find(g=>g.includes(word)),entry=VOCABULARY[word];
+  const manual=(tuned?tunedVariants:[]).find(g=>g.includes(word))||SEARCH_VARIANTS.find(g=>g.includes(word)),entry=VOCABULARY[word];
   const primary=manual||[word,...(entry?.forms||[])];
   const group=[...new Set([...primary,...(manual?[]:entry?.related||[])])];
   if(!entry&&!group.some(w=>SEARCH[w])&&word.length>=5&&word.length<=24&&correctionBudget-->0){
-   const corrections=searchEngine().search(word,{fuzzy:.15}).slice(0,3).flatMap(result=>Object.keys(result.match));
-   group.push(...[...new Set(corrections)].slice(0,2));
+   const corrections=spellingCorrections(word);
+   group.push(...corrections);
+   if(tuned)for(const corrected of corrections)group.push(...(tunedVariants.find(g=>g.includes(corrected))||VOCABULARY[corrected]?.forms||[]));
   }
-  group.primary=primary;group.original=word;return group;
+  group.primary=primary;group.original=word;group.exact=[word,...(entry?.forms||[]),...(tuned?searchWordFamilies.find(family=>family.includes(word))||[]:[]),...(!entry?group.filter(w=>SEARCH[w]):[])];return group;
  }).filter((g,i,a)=>a.findIndex(other=>other[0]===g[0])===i);
- return groups.length?groups:scoped.map(b=>[b.name.toLowerCase()]);
+ const result=groups.length?groups:scoped.map(b=>[b.name.toLowerCase()]);
+ if(termCache.size>=64)termCache.delete(termCache.keys().next().value);termCache.set(cacheKey,result);return result;
 }
 function foodTopic(message){
  if(aquaticFoodQuestion(message))return 'fins scales';
@@ -92,14 +98,14 @@ function pinnedChapters(message){const keys=queryReferences(message).filter(ref=
  if(/\b(adam|eve|mankind|humanity|humans?|man|woman|people)\b/i.test(message)&&/\b(creat\w*|form\w*|made|sixth|day)\b/i.test(message))keys.push('0:1','0:2');
  if(aquaticFoodQuestion(message))keys.push('2:11','4:14','40:7','43:10','44:14');
  if(/plagues?/i.test(message))keys.push(...[7,8,9,10,11,12].map(ch=>'1:'+ch));return [...new Set(keys)];}
-function searchPassages(message,broad=false){
- const query=retrievalQuery(message),scope=new Set(namedBooks(query).map(b=>b.id)),groups=questionTerms(query),scores=new Map(),matched=new Map();
+function searchPassages(message,broad=false,tuned=false){
+ const query=retrievalQuery(message),scope=new Set(namedBooks(query).map(b=>b.id)),groups=questionTerms(query,tuned),scores=new Map(),matched=new Map();
  if(!groups.length||groups.some(g=>!g.some(w=>SEARCH[w])))return [];
- const engine=searchEngine();
+ const batches=searchEngine().searchMany(groups.map(group=>group.join(' ')),{combineWith:'OR',bookScope:scope,filter:r=>!scope.size||scope.has(verseParts(r.id).book)});
  const anchors=groups.map((g,i)=>!VOCABULARY[g.original]?.forms.length&&!VOCABULARY[g.original]?.related.length&&SEARCH[g.original]&&SEARCH[g.original]<100?i:-1).filter(i=>i>=0).slice(0,1);
  for(const [index,group]of groups.entries()){
   const centers=new Map();
-  const results=engine.search(group.join(' '),{combineWith:'OR',bookScope:scope,filter:r=>!scope.size||scope.has(verseParts(r.id).book)});
+  const results=batches[index];
   for(const result of results){const id=Number(result.id);const exact=Object.keys(result.match).some(w=>(group.primary||group).includes(w));const weight=result.score*(exact?1:.3);
    for(let offset=-2;offset<=2;offset++){const center=id+offset,p=verseParts(center);if(p.verse<1||p.verse>199||p.chapter!==verseParts(id).chapter||p.book!==verseParts(id).book)continue;
     const proximity=offset===0?1:.55;centers.set(center,Math.max(centers.get(center)||0,Math.min(5,Math.log1p(weight))*proximity));
@@ -122,30 +128,7 @@ async function gatherSources(message,book,ch,selected,previousQuestion='',broad=
  const ranked=matchingResearch(message,4).filter(record=>record.kind==='annotation');for(const e of ranked)add(`${e.ref} — ${e.title}`,`${e.witness?e.witness+': ':''}${e.summary}\n${e.reasoning}\nLimits: ${e.scope}${e.checked?'\nChecked '+e.checked+'; source not fetched live.':''}`,e.sources[0]?.url||e.url,'Curated editorial comparison',{witness:e.witness,summary:e.summary,recordId:e.id,references:e.sources});return sources;}
 // Chat is a deterministic interface to packaged content. No external services or credentials.
 function cleanExcerpt(text){return String(text||'').replace(/\{[HG]\d+\}/g,'').replace(/\s+/g,' ').trim();}
-function queryReferences(message){
- const canonical=canonicalBookNames(message),refs=[];
- const add=(book,chapter,first=null,last=first)=>{if(refs.length<8&&!refs.some(ref=>ref.book===book&&ref.chapter===chapter&&ref.first===first&&ref.last===last))refs.push({book,chapter,first,last});};
- const names=[...BOOKS].sort((a,b)=>b.name.length-a.name.length).map(book=>book.name).join('|');
- const pattern=new RegExp('\\b('+names+')\\s*(\\d{1,3})(?::(\\d{1,3})(?:[–-](?:(\\d{1,3}):)?(\\d{1,3}))?)?(?!\\d)','gi');
- for(const match of canonical.matchAll(pattern)){
-  const book=BOOKS.find(book=>book.name.toLowerCase()===match[1].toLowerCase()).id,start=Number(match[2]),first=match[3]?Number(match[3]):null;
-  const endChapter=match[4]?Number(match[4]):start,last=match[5]?Number(match[5]):first;
-  if(endChapter!==start){for(let ch=start;ch<=Math.min(endChapter,start+7);ch++)add(book,ch,ch===start?first:1,ch===endChapter?last:199);}
-  else add(book,start,first,last);
-  // Common shorthand: Genesis 1–2; John 3:16, 18; Genesis 1 and 2.
-  let tail=canonical.slice(match.index+match[0].length),currentChapter=start;
-  const range=first===null?/^\s*[–-]\s*(\d{1,3})(?!\d)/.exec(tail):null;
-  if(range){for(let ch=start+1;ch<=Math.min(Number(range[1]),start+7);ch++)add(book,ch);tail=tail.slice(range[0].length);currentChapter=Number(range[1]);}
-  for(let i=0;i<7;i++){
-   const next=/^\s*(and|versus|vs\.?|[,;&])\s*(?:chapter\s+)?(\d{1,3})(?::(\d{1,3})(?:[–-](\d{1,3}))?)?(?![\d\w])(?=\s|$|[?!.,;])/i.exec(tail);
-   if(!next)break;
-   if(first!==null&&!next[3]&&next[1]===',')add(book,currentChapter,Number(next[2]),Number(next[2]));
-   else {currentChapter=Number(next[2]);add(book,currentChapter,next[3]?Number(next[3]):null,next[4]?Number(next[4]):next[3]?Number(next[3]):null);}
-   tail=tail.slice(next[0].length);
-  }
- }
- return refs;
-}
+function queryReferences(message){return BibleLensSearch.references(message,BOOKS);}
 function referenceLabel(ref){return BOOKS[ref.book]?.name+' '+ref.chapter+(ref.first?':'+ref.first+(ref.last&&ref.last!==ref.first?'–'+ref.last:''):'');}
 function referenceUrl(ref){return '#read/'+ref.book+'/'+ref.chapter+(ref.first?'/'+ref.first+(ref.last&&ref.last!==ref.first?'-'+ref.last:''):'');}
 function referenceOverlaps(a,b){return a.book===b.book&&a.chapter===b.chapter&&(a.first===null||b.first===null||a.first<=(b.last??b.first)&&(a.last??a.first)>=b.first);}
@@ -157,8 +140,8 @@ function includedResearch(){
  researchCatalog=rows.filter(({record,kind})=>{const id=kind+':'+record.id;if(seen.has(id))return false;seen.add(id);return true;}).map(({record,kind})=>{
   const labels=[record.ref,...(record.refs||[]).map(ref=>typeof ref==='string'?ref:ref.label),...(record.sides||[]).map(side=>side.ref),...(record.appliesTo||[])].filter(Boolean);
   const refs=labels.flatMap(queryReferences).filter((ref,index,all)=>all.findIndex(other=>JSON.stringify(other)===JSON.stringify(ref))===index);
-  const text=[record.title,record.summary,record.text,record.reasoning,record.claim,record.response,record.context,record.assessment,record.scope].filter(Boolean).join(' ');
-  return {record,kind,refs,text};
+  const text=[record.title,record.topic,record.summary,record.intro,record.question,record.text,record.reasoning,record.claim,record.response,record.context,record.assessment,record.scope].filter(Boolean).join(' ');
+  return {record,kind,refs,text,words:new Set(BibleLensSearch.tokens(text)),heading:new Set(BibleLensSearch.tokens([record.title,record.topic,record.summary,record.intro].join(' ')))};
  });
  return researchCatalog;
 }
@@ -166,13 +149,29 @@ function researchRecord({record,kind,refs}){
  const sources=[...(record.sources||[]),...(kind==='study'?[record.sab?{label:'Skeptic’s Annotated Bible — original skeptical source',url:record.sab}:null,record.responseUrl?{label:'Attributed Christian response',url:record.responseUrl}:null].filter(Boolean):[])];
  return {id:record.id,title:record.title||record.ref,summary:record.summary||record.text,ref:record.ref||record.refs?.[0],url:kind==='study'?'#study/'+record.id:refs[0]?referenceUrl(refs[0]):'',kind,mode:record.mode||(kind==='study'?'study':''),tags:record.tags||[],tag:record.tag||'',text:record.text||'',sides:record.sides||[],languageContext:record.languageContext||'',fields:record.fields||[],scope:record.scope||record.assessment||'',reasoning:record.reasoning||record.context||'',alternativeReading:record.response||'',witness:record.witness||'',refs:refs.map(ref=>({...ref,label:referenceLabel(ref),url:referenceUrl(ref)})),sources:sources.filter((source,index,all)=>source?.url&&all.findIndex(other=>other.url===source.url)===index),checked:record.checked||null};
 }
-function matchingResearch(message,limit=12,allReferences=false){
+function matchingResearch(message,limit=12,allReferences=false,tuned=false){
  const references=queryReferences(message),scope=new Set(namedBooks(message).map(book=>book.id));
- const groups=references.length?[]:questionTerms(message);
- if(!references.length&&!groups.length)return [];
- return includedResearch().map(row=>{
+ const groups=references.length?[]:questionTerms(message,tuned);
+ if(!references.length&&!groups.length||references.some(ref=>ref.first!==null&&(ref.first<1||ref.last<ref.first)))return [];
+ const catalog=includedResearch();
+ const has=(group,words)=>group.some(word=>words.has(word));
+ const strength=(group,words)=>has(group.exact||group,words)?1:has(group,words)?0.35:0;
+ const exactFrequencies=tuned?groups.map(group=>catalog.filter(row=>has(group.exact||group,row.words)).length):[];
+ const frequencies=tuned?groups.map((group,index)=>exactFrequencies[index]||catalog.filter(row=>has(group,row.words)).length):[];
+ // A missing content term is not permission to invent a match to a common word.
+ if(tuned&&!references.length&&frequencies.some(count=>!count))return [];
+ const weights=frequencies.map(count=>Math.log1p(catalog.length/(1+count)));
+ const anchor=weights.indexOf(Math.max(...weights));
+ return catalog.map(row=>{
   if(scope.size&&!row.refs.some(ref=>scope.has(ref.book)))return {...row,score:0};
   if(references.length){const count=references.filter(ref=>row.refs.some(other=>referenceOverlaps(ref,other))).length;return {...row,score:count&&(allReferences?count===references.length:true)?count*20+(row.kind==='study'?3:allReferences&&row.record.mode==='contradictions'?2:0):0};}
+  if(tuned){
+   const hits=groups.map((group,index)=>has(group,row.words)?index:-1).filter(index=>index>=0);
+   const enough=hits.length>=Math.max(1,Math.ceil(groups.length*.6));
+   const anchored=has(groups[anchor].exact||groups[anchor],row.words)||!exactFrequencies[anchor]&&hits.includes(anchor);
+   const score=enough&&anchored?hits.reduce((sum,index)=>sum+weights[index]*(strength(groups[index],row.words)+3*strength(groups[index],row.heading)),0)+(hits.length===groups.length?3:0):0;
+   return {...row,score};
+  }
   const hits=groups.filter(group=>groupMatches(group,row.text)).length;
   const heading=[row.record.title,row.record.summary].filter(Boolean).join(' ');
   return {...row,score:hits===groups.length?hits*5+groups.filter(group=>groupMatches(group,heading)).length*2:0};
@@ -184,8 +183,9 @@ async function workspaceSearch(message,edition='kjv'){
  const refs=queryReferences(query),scope=namedBooks(query);
  // A book name on its own opens its beginning; topical searches retain their terms.
  const bookOnly=!refs.length&&scope.length===1&&canonicalBookNames(query).trim().toLowerCase()===scope[0].name.toLowerCase();
- const targets=refs.length?refs:bookOnly?[{book:scope[0].id,chapter:1,first:null,last:null}]:searchPassages(query,true);
- const groups=refs.length||bookOnly?[]:questionTerms(retrievalQuery(query));
+ const targets=refs.length?refs:bookOnly?[{book:scope[0].id,chapter:1,first:null,last:null}]:searchPassages(query,true,true);
+ const groups=refs.length||bookOnly?[]:questionTerms(retrievalQuery(query),true);
+ result.references=refs;result.terms=groups.map(group=>[...group]);
  const seen=new Set();
  for(const ref of targets){
   const data=await chapter(ref.book,ref.chapter);if(!data)continue;
@@ -202,7 +202,7 @@ async function workspaceSearch(message,edition='kjv'){
   }
   if(result.passages.length===24){result.limited=true;break;}
  }
- const research=matchingResearch(query,13);result.limited||=research.length>12;result.research=research.slice(0,12);
+ const research=matchingResearch(query,13,false,true);result.limited||=research.length>12;result.research=research.slice(0,12);
  result.total={passages:result.passages.length,research:result.research.length};
  return result;
 }

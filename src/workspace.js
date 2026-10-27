@@ -151,7 +151,7 @@
   }
   if(view==='notebook'&&!el('notebook-view').contains(document.activeElement))renderNotebook();if(event.detail?.source!=='local')renderInspector();
  });
- async function getResources(){if(!resources)resources=Promise.allSettled(['/stories.json','/reference/people.json','/reference/places.json'].map(async url=>{const res=await fetch(url);if(!res.ok)throw Error('Reference unavailable');return res.json();}));const result=await resources;if(result.some(item=>item.status==='rejected'))resources=null;return result;}
+ async function getResources(){if(!resources)resources=Promise.allSettled(['/stories.json','/reference/people.json','/reference/places.json','/characters.json'].map(async url=>{const res=await fetch(url);if(!res.ok)throw Error('Reference unavailable');return res.json();}));const result=await resources;if(result.some(item=>item.status==='rejected'))resources=null;return result;}
  function noteRows(){
   const rows=[];
   for(const [kind,notes,marks] of [['passage',state.passageNotes,state.passageBookmarks],['verse',state.verseNotes,state.verseBookmarks]]){
@@ -171,19 +171,30 @@
   const box=el('lens-search-results'),status=el('lens-search-status');box.innerHTML='';box.removeAttribute('aria-busy');status.classList.remove('loading-state');
   if(!query.trim()){status.textContent='Search by reference or keywords. Your private notes are searched only on this device.';return;}
   status.classList.add('loading-state');status.textContent='Searching the library…';box.setAttribute('aria-busy','true');
+  const passageRefs=BibleLensSearch.references(query,books);
   const passageQuery=parseReference(query);
-  const overlapsStory=story=>{const ref=storyReference(story.passage);return ref&&ref.book===passageQuery.book&&ref.chapter<=passageQuery.chapter&&ref.endChapter>=passageQuery.chapter&&(!passageQuery.verse||(ref.chapter<passageQuery.chapter||ref.verse<=passageQuery.endVerse)&&(ref.endChapter>passageQuery.chapter||ref.endVerse>=passageQuery.verse));};
+  const overlapsStory=story=>{const ref=storyReference(story.passage);return ref&&passageRefs.some(p=>(p.first===null||p.first>0&&p.last>=p.first)&&ref.book===p.book&&ref.chapter<=p.chapter&&ref.endChapter>=p.chapter&&(p.first===null||(ref.chapter<p.chapter||ref.verse<=p.last)&&(ref.endChapter>p.chapter||ref.endVerse>=p.first)));};
   const words=query.toLowerCase().split(/\s+/).filter(Boolean),matches=value=>words.every(word=>String(value).toLowerCase().includes(word));
   try{
    const [search,references]=await Promise.allSettled([fetch(`/api/search?q=${encodeURIComponent(query)}&edition=${searchEdition}`,{signal:AbortSignal.timeout(20000)}).then(async res=>{if(!res.ok)throw Error('Scripture search could not load. Try again.');return res.json();}),getResources()]);
    if(version!==searchVersion)return;
    const data=search.status==='fulfilled'?search.value:{passages:[],research:[]};
    const catalogs=references.status==='fulfilled'?references.value:[],catalog=index=>catalogs[index]?.status==='fulfilled'?catalogs[index].value:[];
-   const stories=catalog(0).flatMap(group=>group.stories.map(story=>({...story,book:group.book}))).filter(story=>passageQuery?overlapsStory(story):matches(story.title+' '+story.passage+' '+(story.topics||[]).join(' ')+' '+story.summary)).slice(0,8).map(story=>({title:story.title,url:`#stories/${storySlug(story.book)}/${storySlug(story.title)}`,text:story.summary,meta:story.passage}));
-   const people=catalog(1).filter(person=>matches(person.name+' '+(person.label||'')+' '+(person.aliases||[]).join(' '))).slice(0,8).map(person=>({title:person.label||person.name,url:'#characters/'+person.id,text:'Imported reference profile · relationships and passage links'}));
-   const places=catalog(2).filter(place=>matches(place.fields.displayTitle+' '+(place.fields.kjvName||''))).slice(0,8).map(place=>({html:`<button type="button" class="lens-result" data-place-id="${esc(place.id)}"><strong>${esc(place.fields.displayTitle)}</strong><small>Historical reference · location identification may be uncertain</small><span>${esc(excerpt(place.fields.dictText?.[0]||place.fields.featureType))}</span></button>`}));
+   const terms=data.terms?.length?data.terms:BibleLensSearch.queryTokens(query).map(word=>[word]);
+   const storyScore=story=>{
+    if(passageRefs.length)return overlapsStory(story)?1:0;
+    const title=new Set(BibleLensSearch.tokens(story.title)),text=new Set(BibleLensSearch.tokens(story.title+' '+story.passage+' '+(story.topics||[]).join(' ')+' '+story.summary));
+    const hits=terms.filter(group=>group.some(word=>text.has(word))).length,headingHits=terms.filter(group=>group.some(word=>title.has(word))).length;
+    return terms.length&&(hits>=Math.ceil(terms.length*.6)||headingHits>=2)?hits+headingHits*3:0;
+   };
+   const stories=catalog(0).flatMap(group=>group.stories.map(story=>({...story,book:group.book}))).map(story=>({story,score:storyScore(story)})).filter(row=>row.score).sort((a,b)=>b.score-a.score).slice(0,8).map(({story})=>({title:story.title,url:`#stories/${storySlug(story.book)}/${storySlug(story.title)}`,text:story.summary,meta:story.passage}));
+   const knownEntities=new Set([...BibleLensSearch.catalogVocabulary(catalog(1),'people',catalog(3)),...BibleLensSearch.catalogVocabulary(catalog(2),'places')]);
+   const people=BibleLensSearch.catalogSearch(catalog(1),'people',query,catalog(3),knownEntities).map(person=>({title:person.label||person.name,url:'#characters/'+person.id,text:'Imported reference profile · relationships and passage links'}));
+   const places=BibleLensSearch.catalogSearch(catalog(2),'places',query,[],knownEntities).map(place=>({html:`<button type="button" class="lens-result" data-place-id="${esc(place.id)}"><strong>${esc(place.fields.displayTitle)}</strong><small>Historical reference · location identification may be uncertain</small><span>${esc(excerpt(place.fields.dictText?.[0]||place.fields.featureType))}</span></button>`}));
    const notes=noteRows().filter(note=>passageQuery?(note.record?.book===passageQuery.book&&note.record?.chapter===passageQuery.chapter&&(!passageQuery.verse||!note.record.verse||note.record.verse>=passageQuery.verse&&note.record.verse<=passageQuery.endVerse)):matches(note.title+' '+note.label+' '+note.text)).slice(0,12).map(note=>({title:note.title||note.label,url:note.kind==='investigation'?note.url:'#notebook?note='+encodeURIComponent(note.kind+':'+note.key),text:note.text,meta:'Private notebook · '+note.label}));
-   box.innerHTML=resultGroup('Scripture',data.passages.map(p=>({title:p.label,url:p.url,text:p.text,meta:(data.edition||searchEdition).toUpperCase()})))+resultGroup('Research',data.research.map(r=>({title:r.title,url:r.kind==='annotation'?'#debate/'+encodeURIComponent(r.id):r.url,text:r.summary,meta:'Editorial interpretation · '+(r.ref||r.kind||'')})))+resultGroup('Stories',stories)+resultGroup('People',people)+resultGroup('Places',places)+resultGroup('Your notebook',notes);
+   const sections={Scripture:data.passages.map(p=>({title:p.label,url:p.url,text:p.text,meta:(data.edition||searchEdition).toUpperCase()})),Research:data.research.map(r=>({title:r.title,url:r.kind==='annotation'?'#debate/'+encodeURIComponent(r.id):r.url,text:r.summary,meta:'Editorial interpretation · '+(r.ref||r.kind||'')})),Stories:stories,People:people,Places:places,'Your notebook':notes};
+   const order=passageRefs.length?['Scripture','Research','Stories','People','Places']:/^where\b/i.test(query)?['Places','Research','Scripture','Stories','People']:/^(who|what|why|how|did|does|is|can)\b/i.test(query)?['Research','Stories','People','Places','Scripture']:people.length?['People','Places','Scripture','Research','Stories']:places.length?['Places','People','Scripture','Research','Stories']:['Scripture','Research','Stories','People','Places'];
+   box.innerHTML=[...order,'Your notebook'].map(title=>resultGroup(title,sections[title])).join('');
    const groups=[...box.querySelectorAll('.lens-result-group')];if(groups.length)box.insertAdjacentHTML('afterbegin',`<nav class="lens-search-jump" aria-label="Search result types">${groups.map(group=>`<button type="button" class="lens-button" data-lens-jump="${group.id}">${esc(group.querySelector('h2').textContent.replace(/(\D)(\d)/,'$1 · $2'))}</button>`).join('')}</nav>`);
    const total=data.passages.length+data.research.length+stories.length+people.length+places.length+notes.length;
    status.textContent=`${total} ${total===1?'result':'results'} shown${data.limited?' · Refine your search for more specific matches':''}${search.status==='rejected'?' · Scripture and research search unavailable. Try again.':''}${catalogs.some(r=>r.status==='rejected')?' · Some reference collections are unavailable.':''}.`;
@@ -229,7 +240,7 @@
  el('lens-backup').onclick=()=>el('export-backup').click();
  el('lens-export').onclick=()=>download('BibleLens-notebook.md','# BibleLens notebook\n\n'+noteRows().map(note=>`## ${note.title||note.label}\n\n${note.label}\n\n${note.text||'(Bookmark; no note)'}\n`).join('\n'),'text/markdown');
  function parseReference(value){
-  const match=/^(.+?)\s+(\d{1,3})(?::(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?)?$/.exec(value.trim());if(!match)return null;
+  const match=/^(.+?)\s*(\d{1,3})(?::(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?)?$/.exec(BibleLensSearch.canonicalBooks(value,books).trim());if(!match)return null;
   const name=match[1].toLowerCase().replace(/[.\s]/g,''),book=books.find(b=>b.name.toLowerCase().replace(/\s/g,'')===name)||books.filter(b=>b.name.toLowerCase().replace(/\s/g,'').startsWith(name)&&name.length>=3).reduce((only,b,i,all)=>all.length===1?b:null,null);
   if(!book||+match[2]<1||+match[2]>book.chapters||match[3]&&(+match[3]<1||+match[3]>176)||match[4]&&+match[4]<+match[3])return null;
   return {book:book.id,chapter:+match[2],...(match[3]?{verse:+match[3],endVerse:+(match[4]||match[3])}:{})};
