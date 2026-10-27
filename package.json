@@ -18,7 +18,7 @@
     "mobile:ios": "cap open ios",
     "preview:mobile": "node scripts/serve-mobile.mjs",
     "db:generate": "drizzle-kit generate --config drizzle.config.cjs",
-    "check:sync": "node scripts/check-sync.mjs",
+    "check:sync": "node scripts/check-sync.mjs && node scripts/check-sync-disconnect.mjs",
     "check:release": "node scripts/check-release.mjs",
     "release:prepare": "node scripts/prepare-release.mjs",
     "release:verify": "node scripts/verify-release.mjs",

@@ -4,8 +4,11 @@ document.addEventListener('DOMContentLoaded',()=>{
  const cloud='https://scripture-lens.kvn-mcgwn.chatgpt.site';
  const prefix=native?cloud:'';
  const core=window.BibleLensSync,storageKey='biblelens-cloud-sync-v1';
- let meta={enabled:false,base:{},owner:null,token:null},busy=false,applying=false,timer,identity;
+ let meta={enabled:false,base:{},owner:null,token:null},busy=false,applying=false,revoking=false,timer,identity;
  try{meta={...meta,...JSON.parse(localStorage.getItem(storageKey)||'{}')};}catch{}
+ // Web sync uses the signed-in session; never retain an unused device bearer.
+ if(!native&&(meta.token||meta.disconnectPending)){meta.token=null;delete meta.disconnectPending;saveMeta();}
+ if(meta.disconnectPending)meta.enabled=false;
  const panel=document.createElement('section');panel.className='cloud-sync-settings';
  panel.innerHTML='<h3>Cloud sync</h3><p>Keep bookmarks, notes, appearance, and reader preferences together. Reading and search still work offline.</p><p data-sync-status role="status" aria-live="polite"></p><div class="sync-actions"></div><div class="sync-pair" hidden></div>';
  document.querySelector('#reader-settings').append(panel);
@@ -17,13 +20,36 @@ document.addEventListener('DOMContentLoaded',()=>{
   const response=await fetch(prefix+'/api/sync'+path,{...options,credentials:native?'omit':'same-origin',headers:{'content-type':'application/json','x-biblelens-sync':'1',...(native&&meta.token?{authorization:'Bearer '+meta.token}:{}),...options.headers},signal:AbortSignal.timeout(15000)});
   const data=await response.json();if(!response.ok)throw Object.assign(Error(data.error||'Sync is unavailable.'),{status:response.status});return data;
  }
+ async function retryDisconnect(){
+  if(!meta.disconnectPending||revoking)return;
+  revoking=true;
+  try{
+   if(meta.token)try{await api('/disconnect',{method:'POST'});}catch(error){if(error.status!==401)throw error;}
+   // A 401 also means this credential can no longer authorize sync.
+   meta={enabled:false,owner:null,base:{},token:null};saveMeta();render();
+   say('Sync is off. This iPhone is disconnected. Your notes remain on this device.');
+  }catch{
+   say('Sync is off. Disconnect is pending. Reconnect to retry, or use Disconnect all iPhones on the website.');
+  }finally{revoking=false;}
+ }
+ async function disconnect(){
+  clearTimeout(timer);
+  // Persist the off state before the request. Keep a failed revocation available
+  // for retry after reload; never resume document sync with this credential.
+  meta={enabled:false,owner:null,base:{},token:native?meta.token:null,...(native&&meta.token?{disconnectPending:true}:{})};
+  saveMeta();render();
+  if(meta.disconnectPending)await retryDisconnect();else say('Sync is off. Your notes remain on this device.');
+ }
  function button(label,action){const b=document.createElement('button');b.type='button';b.className='secondary';b.textContent=label;b.onclick=async()=>{b.disabled=true;try{await action();}catch(error){say(error.message);}finally{b.disabled=false;}};actions.append(b);return b;}
  function downloadBackup(){const value=localStorage.getItem('biblelens-before-cloud-sync');if(!value){say('A safety backup is created when sync first starts.');return;}const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([value],{type:'application/json'}));a.download='BibleLens-before-cloud-sync.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
  function render(){
   actions.replaceChildren();pair.hidden=true;
-  if(meta.enabled){
+  if(meta.disconnectPending){
+   button('Retry disconnect',retryDisconnect);
+   button('Download safety backup',downloadBackup);
+  }else if(meta.enabled){
    button('Sync now',sync);
-   button('Turn off sync',async()=>{if(native&&meta.token)try{await api('/disconnect',{method:'POST'});}catch{}meta={enabled:false,owner:null,base:{},token:null};saveMeta();render();say('Sync is off. Your notes remain on this device.');});
+   button('Turn off sync',disconnect);
    button('Download safety backup',downloadBackup);
    if(!native){
     if(!identity){const a=document.createElement('a');a.href='/signin-with-chatgpt?return_to='+encodeURIComponent('/#sync');a.target='_top';a.textContent='Sign in again';actions.append(a);}
@@ -41,16 +67,19 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
  }
  async function sync(){
-  if(!meta.enabled||busy)return;busy=true;say('Syncing…');
+  if(!meta.enabled||meta.disconnectPending||busy)return;busy=true;const sessionMeta=meta,active=()=>meta===sessionMeta&&meta.enabled;say('Syncing…');
   try{
-   const session=await api('/session');
+   const session=await api('/session');if(!active())return;
    if(session.userId!==meta.owner){meta.enabled=false;saveMeta();render();throw Error('The signed-in account changed. Your local notes were kept; enable sync explicitly for this account.');}
    for(let attempt=0;attempt<4;attempt++){
-    const captured=core.snapshot(state),remote=await api('/document'),merged=core.merge(meta.base,captured,remote.data);
+    if(!active())return;
+    const captured=core.snapshot(state),remote=await api('/document');if(!active())return;
+    const merged=core.merge(meta.base,captured,remote.data);
     let revision=remote.revision;
     if(!core.equal(merged.data,remote.data)){
      try{revision=(await api('/document',{method:'PUT',body:JSON.stringify({revision:remote.revision,data:merged.data})})).revision;}catch(error){if(error.status===409)continue;throw error;}
     }
+    if(!active())return;
     // A user may edit while network requests are in flight. Keep those edits queued.
     const latest=core.snapshot(state),next=core.merge(captured,latest,merged.data);
     // An unchanged poll must not replace chapter nodes, selection or editor values.
@@ -65,18 +94,18 @@ document.addEventListener('DOMContentLoaded',()=>{
     return;
    }
    throw Error('Another device is still updating. Your edits are saved locally; sync will retry.');
-  }catch(error){say(error.status===401?'Sign in again or reconnect this iPhone. Local changes are saved.':navigator.onLine?error.message:'Offline. Changes are saved here and will sync when you reconnect.');}
+  }catch(error){if(meta===sessionMeta)say(error.status===401?'Sign in again or reconnect this iPhone. Local changes are saved.':navigator.onLine?error.message:'Offline. Changes are saved here and will sync when you reconnect.');}
   finally{busy=false;}
  }
- function schedule(){if(applying||!meta.enabled)return;clearTimeout(timer);timer=setTimeout(sync,800);}
+ function schedule(){if(meta.disconnectPending){retryDisconnect();return;}if(applying||!meta.enabled)return;clearTimeout(timer);timer=setTimeout(sync,800);}
  window.BibleLensCloud={changed:schedule};
  window.addEventListener('online',schedule);window.addEventListener('focus',schedule);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)schedule();});
- setInterval(()=>{if(!document.hidden&&meta.enabled)sync();},30000);
+ setInterval(()=>{if(!document.hidden){if(meta.disconnectPending)retryDisconnect();else if(meta.enabled)sync();}},30000);
  async function start(){
   if(!native)try{identity=await api('/session');}catch(error){if(error.status!==401)say(error.message);}
   render();
-  if(meta.enabled)await sync();else if(!status.textContent)say('Sync is off. Existing notes stay on this device until you enable it.');
+  if(meta.disconnectPending)await retryDisconnect();else if(meta.enabled)await sync();else if(!status.textContent)say('Sync is off. Existing notes stay on this device until you enable it.');
   if(location.hash==='#sync')document.querySelector('#lens-settings').click();
  }
  start();
