@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {build} from 'esbuild';
 import {mobileBundle} from './build.mjs';
-import {insertDeviceBootstrap} from './startup-assets.mjs';
+import {insertDeviceBootstrap,insertNativeContentSecurityPolicy} from './startup-assets.mjs';
 
 const output=path.resolve('www');
 // Remove only this build's fixed output directory, never a supplied path.
@@ -19,6 +19,7 @@ fs.copyFileSync('src/device-api-worker.js',path.join(output,'device-api-worker.j
 await build({entryPoints:['src/device-bootstrap.js'],outfile:path.join(output,'device-bootstrap.js'),bundle:true,format:'iife',platform:'browser',target:['safari17','chrome119']});
 await build({entryPoints:['src/device-local-ai.js'],outfile:path.join(output,'device-ai.js'),bundle:true,format:'esm',platform:'browser',target:['safari17','chrome119']});
 let html=fs.readFileSync(path.join(output,'index.html'),'utf8');
+html=insertNativeContentSecurityPolicy(html,mobileBundle.assets['/'].csp);
 html=insertDeviceBootstrap(html);
 html=html.replace('Questions and recent conversation context are sent only to this site’s search endpoint, with no external AI service.','Questions and recent conversation context are processed on this device. Optional on-device AI runs locally; no external AI service receives your questions.');
 html=html.replace('Hosted access follows the site’s sharing settings. Chat requires no separate login.','Reading and search work offline. External source links require internet. Chat requires no login.');

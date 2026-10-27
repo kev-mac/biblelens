@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import {assetDigest, classicScriptBundle, consolidateStartupAssets, insertDeviceBootstrap, startupAssetReferences} from './startup-assets.mjs';
+import {assetDigest, classicScriptBundle, consolidateStartupAssets, insertDeviceBootstrap, insertNativeContentSecurityPolicy, startupAssetReferences} from './startup-assets.mjs';
 
 const inline = '<style id="startup-style">body{opacity:1}</style><script>globalThis.startupProbe=true;</script>';
 const fixture = {
-  '/': {type: 'text/html', body: `<html><head>${inline}<link rel="stylesheet" href="base.css"><script defer src="first.js"></script><link rel="stylesheet" href="vendor/icons.css"><script defer src="second.js"></script></head><body></body></html>`},
+  '/': {type: 'text/html', body: `<html><head><meta charset="utf-8">${inline}<link rel="stylesheet" href="base.css"><script defer src="first.js"></script><link rel="stylesheet" href="vendor/icons.css"><script defer src="second.js"></script></head><body></body></html>`},
   '/base.css': {type: 'text/css', body: 'body{color:red} .art{background:url(data:image/png;base64,aBcD)}'},
   '/vendor/icons.css': {type: 'text/css', body: 'body{color:blue} .icon{background:url("icons/marker.svg")}'},
   '/first.js': {type: 'application/javascript', body: "'use strict'; const shared = 7; trace.push(typeof later); document.addEventListener('DOMContentLoaded', () => trace.push('ready:'+later()));"},
@@ -55,7 +55,11 @@ assert.deepEqual(execution.trace, ['undefined', 8, 'ready:8'], 'DOMContentLoaded
 assert.throws(() => executeBundle(classicScriptBundle([{path: '/broken.js', body: 'throw new Error("failed");'}, {path: '/later.js', body: 'trace.push("must not run");'}])), /Application startup failed: \/broken.js/, 'A broken script produces a visible startup failure instead of silently continuing');
 assert.throws(() => classicScriptBundle([{path: '/invalid.js', body: 'const = ;'}]), /Unexpected token/, 'Invalid source fails packaging');
 
-const native = insertDeviceBootstrap(fixture['/'].body);
+assert(!fixture['/'].body.includes('http-equiv="Content-Security-Policy"'), 'Web leaves policy enforcement to the response header mode');
+const native = insertDeviceBootstrap(insertNativeContentSecurityPolicy(fixture['/'].body, fixture['/'].csp));
+assert(native.includes(`<meta http-equiv="Content-Security-Policy" content="${fixture['/'].csp}">`), 'Native enforces the identical policy before all scripts');
+assert(native.indexOf('http-equiv="Content-Security-Policy"') < native.indexOf(inline));
+assert.throws(() => insertNativeContentSecurityPolicy(native, fixture['/'].csp), /already present/);
 assert(native.indexOf('id="biblelens-device-bootstrap"') < native.indexOf('id="biblelens-app-script"'));
 assert.deepEqual(startupAssetReferences(native).js, ['/device-bootstrap.js', manifest.js.path]);
 console.log('PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.');

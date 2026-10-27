@@ -24,7 +24,7 @@
     "stories:tag": "node scripts/story-topics.mjs data/stories.json data/reference/topics.json data/stories.json",
     "check:workspace": "node scripts/check-workspace-state.mjs && node scripts/check-workspace-search.mjs && node scripts/check-debates.mjs",
     "check:readability": "node scripts/check-readability.mjs",
-    "check:ui": "node scripts/check-security-ui.mjs && node scripts/check-phase2-browser.mjs && node scripts/check-performance-browser.mjs",
+    "check:ui": "node scripts/check-security-ui.mjs && node scripts/check-phase2-browser.mjs && node scripts/check-performance-browser.mjs && node scripts/check-hosted-csp.mjs",
     "check:search": "node scripts/check-search.mjs"
   },
   "devDependencies": {
