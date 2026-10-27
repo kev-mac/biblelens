@@ -24,7 +24,7 @@ For how these sources map onto each field, see [Chronology and Dates](chronology
 
 - STEPBible. *TIPNR – Translators Individualised Proper Names with all References.* STEPBible.org, CC BY 4.0. [GitHub: STEPBible/STEPBible-Data › Proper Nouns](https://github.com/STEPBible/STEPBible-Data/tree/master/Proper%20Nouns) (formerly "Tyndale Individualised Proper Names", Tyndale House)
 - Marshall Genealogy. [marshallgenealogy.org/bible](https://marshallgenealogy.org/bible/index.htm) ([archived copy](http://web.archive.org/web/20260412030941/https://marshallgenealogy.org/bible/index.htm); the live site was unresponsive in October 2026)
-- Complete Bible Genealogy. [complete-bible-genealogy.com](https://complete-bible-genealogy.com/)
+- Complete Bible Genealogy. [complete-bible-genealogy.com (archived 2026-07-12)](https://web.archive.org/web/20260712174348/https://www.complete-bible-genealogy.com/)
 
 ## Dictionary
 
@@ -36,7 +36,7 @@ For how these sources map onto each field, see [Chronology and Dates](chronology
 - Pelagios Network. *Recogito*, used to link places to gazetteers such as GeoNames, Pleiades, and the Digital Atlas of the Roman Empire. [recogito.pelagios.org](https://recogito.pelagios.org/). **Basis for:** the `recogito*` fields on places.
 - Pleiades: A Gazetteer of Past Places. [pleiades.stoa.org](https://pleiades.stoa.org/). **Basis for:** Pleiades links, ancient-language names and earliest attestation dates in `geo/bible-places.geojson`.
 - Digital Manna. *Encyclopedia: Places.* [digitalmanna.org](https://www.digitalmanna.org/encyclopedia/places). **Basis for:** place identity (which records are one place), names, coordinates, verse lists and region notes in `geo/bible-places.geojson`.
-- Wikidata. [wikidata.org](https://www.wikidata.org/). **Basis for:** Wikidata links and additional Pleiades identifiers in `geo/bible-places.geojson`.
+- Wikidata. [wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page). **Basis for:** Wikidata links and additional Pleiades identifiers in `geo/bible-places.geojson`.
 - Stern, E. (ed.). *The New Encyclopedia of Archaeological Excavations in the Holy Land.* Jerusalem: Israel Exploration Society (1993), periods as published in PeriodO, [n2t.net/ark:/99152/p0dkm29](http://n2t.net/ark:/99152/p0dkm29). **Basis for:** the PeriodO periods on place dates in `geo/bible-places.geojson`.
 - Grossner, K., Janowicz, K. & Keßler, C. *Linked Places Format* and the World Historical Gazetteer validation schema. [github.com/LinkedPasts/linked-places-format](https://github.com/LinkedPasts/linked-places-format). **Basis for:** the structure of `geo/bible-places.geojson`.
 - GeoNames. [geonames.org](https://www.geonames.org/)
