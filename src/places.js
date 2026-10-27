@@ -1,7 +1,4 @@
-import {referenceJson} from './reference-cache.js';
-import {mountPlacesDirectory} from './places-directory.js';
 import atlasStyle from './data/atlas-style.json';
-import {createPersonMatcher,wrapReferenceNames} from './people-links.js';
 import {loadPlaces,getLocationDetails,createPlaceMatcher,wrapLocationNames,atlasDescription} from './places-core.js';
 const sheet=document.querySelector('#atlas-sheet'),mapNode=document.querySelector('#atlas-map'),status=document.querySelector('#atlas-status');
 let map,marker,anchor,request=0,workerURL,mapFailed=false;
@@ -47,7 +44,7 @@ async function openAtlas(id,button){
   mapNotice.classList.add('loading-state');mapNotice.textContent='Loading geographical context…';
   try{
    const modulePath='/vendor/maplibre-gl.mjs';
-   const M=await import(modulePath);if(token!==request||!sheet.open)return;
+   const [M]=await Promise.all([import(modulePath),window.BibleLensFeatures.style('/vendor/maplibre-gl.css')]);if(token!==request||!sheet.open)return;
    if(mapFailed&&map){map.remove();map=null;marker=null;mapFailed=false;}
    if(!map){
     // Use a local module worker blob on web and Capacitor's custom origin.
@@ -82,79 +79,4 @@ async function openAtlas(id,button){
 
  }catch(error){if(token!==request)return;document.querySelector('#atlas-name').classList.remove('loading-state');document.querySelector('#atlas-name').textContent='Place unavailable';status.textContent=error.message;identification.textContent=error.message;}
 }
-// Holding a place opens its in-app contents, and scrolling cancels the hold.
-let placePress=null,placeTimer=0,suppressPlaceUntil=0;
-function cancelPlacePress(){clearTimeout(placeTimer);placePress=null;}
-document.addEventListener('pointerdown',event=>{
- const chip=event.target.closest('[data-place-id]');if(!chip||event.button!==0)return;
- cancelPlacePress();placePress={chip,id:event.pointerId,x:event.clientX,y:event.clientY};
- placeTimer=setTimeout(()=>{if(!placePress)return;suppressPlaceUntil=Date.now()+1000;openAtlas(chip.dataset.placeId,chip);cancelPlacePress();},500);
-},true);
-document.addEventListener('pointermove',event=>{if(placePress&&placePress.id===event.pointerId&&Math.hypot(event.clientX-placePress.x,event.clientY-placePress.y)>8)cancelPlacePress();},true);
-for(const type of ['pointerup','pointercancel'])document.addEventListener(type,cancelPlacePress,true);
-document.addEventListener('scroll',cancelPlacePress,true);
-document.addEventListener('contextmenu',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();cancelPlacePress();suppressPlaceUntil=Date.now()+1000;if(!sheet.open)openAtlas(chip.dataset.placeId,chip);},true);
-// Capture prevents reader verse gestures and citation navigation from handling a chip tap.
-document.addEventListener('click',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(Date.now()<suppressPlaceUntil)return;openAtlas(chip.dataset.placeId,chip);},true);
-for(const type of ['pointerdown','dblclick','contextmenu'])document.addEventListener(type,event=>{if(event.target.closest('[data-place-id]'))event.stopImmediatePropagation();},true);
-// People cards open over the current reading position, like the atlas.
-document.addEventListener('click',event=>{const chip=event.target.closest('[data-person-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(window.getSelection()?.toString())return;window.dispatchEvent(new CustomEvent('open-person',{detail:{id:chip.dataset.personId,opener:chip}}));},true);
-for(const type of ['pointerdown','dblclick'])document.addEventListener(type,event=>{if(event.target.closest('[data-person-id]'))event.stopImmediatePropagation();},true);
-async function initializeChips(){
- let match=()=>[],matchPeople=()=>[],placesReady=false,peopleReady=false,loading=null;
- const scopes='.verse-body,.story-card p,.category-profile-card[data-profile-people="true"] .comparison-summary>p,.category-profile-card[data-profile-people="true"] .category-profile-panel p';
- function decorate(root){
-  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[];let leadingText='';
-  while(walker.nextNode()){
-   const node=walker.currentNode;
-   if(node.parentElement&&!node.parentElement.closest('button,a,script,style,textarea,.verse-num,[contenteditable]'))nodes.push({node,leadingText});
-   leadingText+=node.data;
-  }
-  for(const {node,leadingText} of nodes){
-   if(!node.parentElement||!node.isConnected)continue;
-   const body=node.parentElement.closest('.verse-body'),question=node.parentElement.closest('.category-profile-card'),story=node.parentElement.closest('.story-card[data-story-book]');
-   const context=body?{book:Number(body.dataset.book),chapter:Number(body.dataset.chapter),verse:Number(body.dataset.verse)}:question?{book:Number(question.dataset.referenceBook),chapter:Number(question.dataset.referenceChapter),verse:Number(question.dataset.referenceVerse)}:story?{scope:'story',placesReady,leadingText,book:Number(story.dataset.storyBook),chapter:Number(story.dataset.storyChapter),verse:Number(story.dataset.storyVerse),endChapter:Number(story.dataset.storyEndChapter),endVerse:Number(story.dataset.storyEndVerse)}:{};
-   if(!match(node.data,context).length&&!matchPeople(node.data,context).length)continue;
-   const template=document.createElement('template');template.innerHTML=wrapReferenceNames(node.data,match,matchPeople,context);node.replaceWith(template.content);
-  }
- }
- const roots=new Set();let queued=false;
- const observerOptions={childList:true,subtree:true,characterData:true};
- function flush(){
-  // A second render can replace queued roots before this microtask runs. Its
-  // mutation records may not have reached the observer callback yet; disconnect
-  // would discard them and leave the replacement story permanently unlinked.
-  collectRecords(observer.takeRecords());
-  observer.disconnect();
-  const pending=[...roots];roots.clear();
-  try{
-   for(const root of pending)if(root.isConnected){try{decorate(root);}catch(error){console.warn('Reference links could not decorate a passage:',error.message);}}
-  }finally{queued=false;observer.observe(document.body,observerOptions);}
- }
- const enqueue=node=>{const el=node.nodeType===1?node:node.parentElement;if(!el)return;const parent=el.closest(scopes);if(parent)roots.add(parent);for(const root of el.querySelectorAll?.(scopes)||[])roots.add(root);if(!queued&&roots.size){queued=true;queueMicrotask(flush);}};
- function collectRecords(records){for(const record of records){if(record.type==='characterData')enqueue(record.target);else for(const node of record.addedNodes)enqueue(node);}}
- const observer=new MutationObserver(collectRecords);
- observer.observe(document.body,observerOptions);
- async function loadReferenceMatchers(){
-  if(loading)return loading;
-  if(placesReady&&peopleReady){enqueue(document.body);return;}
-  loading=Promise.allSettled([
-   placesReady?Promise.resolve():loadPlaces().then(places=>{match=createPlaceMatcher(places);placesReady=true;enqueue(document.body);}),
-   peopleReady?Promise.resolve():referenceJson('/reference/people.json').then(people=>{matchPeople=createPersonMatcher(people);peopleReady=true;enqueue(document.body);})
-  ]).then(results=>{
-   for(const result of results)if(result.status==='rejected')console.warn('Reference links are incomplete:',result.reason?.message||result.reason);
-   enqueue(document.body);
-  }).finally(()=>{loading=null;});
-  return loading;
- }
- // A reference request may fail independently of the visible content. Keep the
- // working matcher and retry only missing data on a fresh view or reconnection.
- window.addEventListener('viewchange',()=>{void loadReferenceMatchers();});
- window.addEventListener('online',()=>{void loadReferenceMatchers();});
- try{
-  await loadReferenceMatchers();
- }catch(error){console.warn('Atlas chips unavailable:',error.message);}
-}
-initializeChips();
-
-mountPlacesDirectory();
+window.BibleLensAtlas={open:openAtlas};

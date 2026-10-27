@@ -18,7 +18,7 @@ function placeCard(place){
  if(description)card.append(node('p','character-summary',description));
  const figure=node('div','place-map-card');
  const map=node('button','place-map-preview');map.type='button';map.dataset.placeId=place.id;map.disabled=!place.coordinates;
- map.setAttribute('aria-haspopup','dialog');map.setAttribute('aria-controls','atlas-sheet');map.setAttribute('aria-label','Explore '+place.name+' in the atlas');
+ map.setAttribute('aria-haspopup','dialog');map.setAttribute('aria-controls','atlas-sheet');map.setAttribute('aria-label',place.coordinates?'Explore '+place.name+' in the atlas':'Map location unavailable: '+place.name);
  map.innerHTML=place.coordinates?placePreviewSVG(place):'<span class="place-map-unavailable">Map location unavailable</span>';
  const controls=node('div','place-map-actions');controls.setAttribute('role','group');controls.setAttribute('aria-label',place.name+' map and sources');
  const label=node('button','place-map-action');label.type='button';label.dataset.placeId=place.id;label.disabled=!place.coordinates;

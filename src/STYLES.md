@@ -1,8 +1,10 @@
 # Application styles
 
 `scripts/stylesheets.mjs` defines the source order. Web and native packaging use
-these same files, and the startup bundler still emits one fingerprinted CSS file.
-The vendored MapLibre stylesheet is wrapped in `components` when packaged.
+these same files. `shell-styles.mjs` filters the Explore and study sheets against
+their declared markup. Other tools retain the full cascade. The loader waits for
+styles before showing each view, and inserts study styles before the full sheet.
+MapLibre CSS loads only with the interactive map, in the `components` layer.
 
 | Layer | Responsibility |
 | --- | --- |
@@ -19,7 +21,14 @@ sublayer retains established precedence during this migration; it does not use
 Only `hidden` and unmodified third-party declarations retain `!important` in
 stylesheets; the inline startup recovery curtain also retains its invariants.
 
-Font refreshes replace only the marked font block in `base.css`. Before changing
+Font refreshes replace the marked block in `base.css` and its local WOFF2 assets.
+Inter is the default; explicit app-wide choices still load their selected font.
+The build minifies each classic script separately, preserving shared globals
+and execution boundaries. Web assets negotiate gzip; native files keep the
+original bytes. `lazy-assets.mjs` lists feature dependencies. Reference matches,
+chapter names and red-letter spans travel with the chapter; source data is unchanged.
+
+Update the style content scopes when moving controls between features. Before changing
 cascade precedence, compare the affected screens in both themes and viewport
 sizes. The Phase 1 screenshot matrix and pixel comparisons live in ignored
 `.review/` in the development worktree.

@@ -25,7 +25,8 @@ assert(!userArticle.includes('<a '));assert(userArticle.includes('&lt;script&gt;
 assert(assistantArticle.includes('href="#read/1/8/3"'));assert(!assistantArticle.includes('<svg onload'));
 const routeCalls=[];c.location={hash:'#read/1/8/2,4,7-9'};c.window={addEventListener(){}};c.setView=()=>{};c.loadChapter=(...args)=>routeCalls.push(args);
 vm.runInContext(source.slice(source.indexOf('function readerRoute('),source.indexOf('async function initializeReader(')),c);
-c.readerRoute();assert.deepEqual(routeCalls[0],[1,8,2,false]);
+c.readerInitialization=null;c.readerRoute();assert.deepEqual(routeCalls[0],[1,8,2,false]);
+c.readerInitialization=Promise.resolve();c.readerRoute();assert.equal(routeCalls.length,1,'Pending initialization owns the first chapter request');c.readerInitialization=null;
 c.location.hash='#read/1/8/200';c.readerRoute();assert.equal(routeCalls.length,1);
 console.log('PASS: assistant references are actual escaped hyperlinks, user text stays plain, and bounded range/list routes focus the first verse.');
 

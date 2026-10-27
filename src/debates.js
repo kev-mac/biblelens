@@ -3,11 +3,8 @@
  const el=id=>document.getElementById(id),store=window.BibleLensDebateStore;
  const go=hash=>window.BibleLensWorkspace.navigate(hash);
  const paragraph=text=>text?`<p>${esc(text)}</p>`:'';
+ const {card,badge,href,verdict}=window.BibleLensDebates;
  const title=record=>record.title||`What does ${record.ref} show?`;
- const verdict=record=>record.verdict||(['science','history'].includes(record.mode)?{Agrees:'Evidence agrees',Disagrees:'Evidence disagrees',Context:'Not settled'}:{'Textual conflict':'Real conflict',Context:'Open question'})[record.status]||record.status;
- const badge=record=>`<span class="phase2-verdict" data-status="${esc(record.status)}">${esc(verdict(record))}</span>`;
- const href=record=>{const id=record.id.startsWith('study-')?record.id.slice(6):record.id;return (record.kind==='study'||record.id.startsWith('study-'))&&ENTRIES.some(entry=>entry.id===id)?'#study/'+encodeURIComponent(id):'#debate/'+encodeURIComponent(record.id);};
- const card=record=>`<a class="phase2-debate-card" href="${href(record)}"><span class="phase2-eyebrow">${esc(record.id.startsWith('study-')?'Starter study':record.mode==='contradictions'?'Text vs text':record.mode)}</span><h2>${esc(title(record))}</h2><span class="phase2-meta">${esc(record.ref)}</span><div>${badge(record)}<span aria-hidden="true"> ↗</span></div></a>`;
  function section(id){const node=document.createElement('section');node.id=id+'-view';node.className='lens-workspace phase2-page';node.hidden=true;el('main').append(node);return node;}
  const list=section('debates'),detail=section('debate');let generation=0,currentRecord=null,lastList='#debates';
  const sheet=document.createElement('dialog');sheet.className='phase2-sheet';sheet.id='debate-sheet';sheet.setAttribute('aria-labelledby','debate-sheet-title');document.body.append(sheet);
@@ -24,7 +21,7 @@
  const refLink=(ref,label)=>{const data=refData(ref);return data?`<a class="phase2-ref" href="#read/${data.book}/${data.chapter}${data.verse?'/'+data.verse:''}">${esc(label||ref.label||ref)}</a>`:esc(label||ref.label||ref);};
  function deeper(record){return `<details class="phase2-deeper"><summary>Go deeper <span>Exact record wording and scope</span></summary>${['text','reasoning','scope','languageContext','witness'].map(key=>record[key]?`<h3>${({text:'Recorded text',reasoning:'Reasoning',scope:'Scope & limits',languageContext:'Source editions',witness:'Named source'})[key]}</h3>${paragraph(record[key])}`:'').join('')}${record.alternativeReading?'<h3>Alternative reading</h3>'+paragraph(typeof record.alternativeReading==='string'?record.alternativeReading:record.alternativeReading.text||record.alternativeReading.summary):''}${(record.fields||[]).map(field=>`<h3>${esc(field.branch)}</h3>${paragraph(field.text)}`).join('')}${record.checked?paragraph('Source check: '+record.checked):''}</details>`;}
  async function sideCards(record){
-  if(!books.length){const response=await fetch('/api/books');if(response.ok)books=await response.json();}
+  if(!books.length){books=await window.BibleLensReferences.json('/api/books');}
   const assigned=record.sides?.length;
   if(assigned)return ['A','B'].map(label=>`<section class="phase2-side"><span class="phase2-eyebrow">Side ${label} · KJV</span>${record.sides.filter(side=>side.label===label).map(side=>`<h2>${refLink(side.ref)}</h2><blockquote>${esc(side.quote)}</blockquote>`).join('')||'<p>The record does not include an assigned quotation for this side.</p>'}</section>`).join('');
   const refs=[record.ref,...(record.refs||[])];const seen=new Set();
@@ -67,6 +64,6 @@
  window.addEventListener('viewchange',event=>{if(!['debates','debate'].includes(event.detail))generation++;if(sheet.open)sheet.close();if(typeof popover.hidePopover==='function')popover.hidePopover();});
  function openRecords(records){const rows=records.filter(record=>record.id);if(rows.length===1)go(href(rows[0]));else openSheet('Choose a debate',rows.map(card).join(''));}
  sheet.addEventListener('click',event=>{const link=event.target.closest('a[href^="#"]');if(link){event.preventDefault();sheet.close();go(link.hash);}});
- window.BibleLensDebates={route,card,badge,href,openRecords};
- route(location.hash);
+ window.BibleLensDebates={route,card,badge,href,verdict,openRecords};
+
 })();

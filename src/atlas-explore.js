@@ -19,7 +19,7 @@
  host.innerHTML=`<form class="phase2-search" id="explore-search"><label class="sr-only" for="explore-query">Search scripture, topics, or people</label><input id="explore-query" type="search" maxlength="300" placeholder="Search scripture, topics, people…"><button aria-label="Search the library" type="submit">⌕</button></form><div class="phase2-intro"><span class="phase2-eyebrow">Follow your curiosity</span><h1 tabindex="-1">Room for questions.</h1><p>Read the texts, explore the evidence, and consider what each account supports.</p></div><div id="explore-hero"><p role="status">Loading today’s debate…</p></div><a class="phase2-continue" id="explore-continue" href="#read">Continue reading <span aria-hidden="true">→</span></a><div id="explore-rails"><p role="status">Loading collections…</p></div><div class="phase2-tools"><a href="#debates?filter=Q">Questions</a><a href="#debates?filter=V">Violations</a><a href="#prophecies">Prophecies</a><a href="#compare">Compare passages</a><a href="#evidence">More evidence filters</a><a href="#places">Study Atlas</a></div><p class="phase2-meta">Artwork is imagined. It is not a real portrait or historical evidence.</p>`;
  if(starterStudies){starterStudies.querySelector('h2').textContent='Starter studies';host.append(starterStudies);}
  host.querySelector('form').onsubmit=event=>{event.preventDefault();window.BibleLensWorkspace.navigate('#search?q='+encodeURIComponent(document.getElementById('explore-query').value.trim()));};
- function continueReading(){const label=typeof reading!=='undefined'&&reading?`${books[readingBook].name} ${readingChapter}`:'';const link=document.getElementById('explore-continue');link.href=label?`#read/${readingBook}/${readingChapter}`:'#read';link.textContent=label?'Continue reading · '+label+' →':'Open the reader →';}
+ function continueReading(){const saved=state.reading||{book:readingBook,chapter:readingChapter},label=books[saved.book]?`${books[saved.book].name} ${saved.chapter}`:'';const link=document.getElementById('explore-continue');link.href=label?`#read/${saved.book}/${saved.chapter}`:'#read';link.textContent=label?'Continue reading · '+label+' →':'Open the reader →';}
  window.addEventListener('biblelens:readerchange',continueReading);continueReading();
  function images(){for(const img of host.querySelectorAll('img'))img.addEventListener('error',()=>{img.hidden=true;img.parentElement.classList.add('phase2-art-missing');},{once:true});}
  async function load(){
@@ -31,5 +31,7 @@
   images();restoreNavigation();
  }
  host.addEventListener('click',event=>{if(event.target.closest('[data-explore-retry]'))load();});
- load();
+ let loaded=false;
+ function activate(){if(view==='explore'&&!loaded){loaded=true;load();}}
+ window.addEventListener('viewchange',activate);activate();
 })();

@@ -1013,7 +1013,7 @@ body:not(.dark) #chapter-text .summary-expand{color:rgba(var(--theme-rgb),.32)}
 body a,body a:hover,body a:focus-visible,body.dark .comparison-sources a,body.dark .field-sources a,body .context-pointer a,body .citations-disclosure>summary{text-decoration:none}
 body>footer,html.native-ios body>footer{padding:8px 16px max(8px,env(safe-area-inset-bottom,0px));gap:12px}
 
-body #chapter-text .comparison-summary h3{margin:0 0 10px;font:600 1rem/1.5 var(--ui-font);letter-spacing:normal}
+body #chapter-text .comparison-summary :is(h2,h3){margin:0 0 10px;font:600 1rem/1.5 var(--ui-font);letter-spacing:normal}
 body #chapter-text [data-summary-toggle][aria-expanded="true"] .summary-expand svg{transform:rotate(180deg)}
 body #chapter-text .summary-inspect{color:rgba(var(--theme-rgb),.5)}
 body:not(.dark) #chapter-text .summary-inspect{color:rgba(var(--theme-rgb),.32)}
@@ -1022,7 +1022,7 @@ body:not(.dark) #chapter-text .summary-inspect{color:rgba(var(--theme-rgb),.32)}
 body :is(#evidence-view,#chat-view) h2,body :is(#evidence-view,#chat-view) h3{letter-spacing:normal}
 body :is(#evidence-view,#chat-view) h2{font-size:1.15rem;font-weight:600;margin:20px 0 12px}
 body :is(#evidence-view,#chat-view) .comparison-summary{position:relative;padding:18px 18px 46px;margin:8px 0 16px;min-width:0;box-sizing:border-box}
-body :is(#evidence-view,#chat-view) .comparison-summary h3{font:600 .95rem/1.5 var(--ui-font);margin:0 0 10px}
+body :is(#evidence-view,#chat-view) .comparison-summary :is(h2,h3){font:600 .95rem/1.5 var(--ui-font);margin:0 0 10px}
 body :is(#evidence-view,#chat-view) .comparison-summary p{margin:8px 0;white-space:pre-wrap}
 body :is(#evidence-view,#chat-view) .summary-expand{display:flex;position:absolute;left:50%;bottom:8px;transform:translateX(-50%);align-items:center;justify-content:center;width:28px;height:28px;min-height:28px;padding:4px;border-radius:0;color:rgba(var(--theme-rgb),.5)}
 body :is(#evidence-view,#chat-view) .summary-expand svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -2052,7 +2052,7 @@ body .story-card .story-references>span{flex-basis:100%;color:var(--muted)}
 /* Questions retain category filtering while sharing People’s profile layout. */
 html body #evidence-view .category-profile-card .comparison-summary{--profile-glow:#367fc3}
 html body.dark #evidence-view .category-profile-card .comparison-summary{--profile-glow:#8cc8ff}
-html body #evidence-view .category-profile-card .comparison-summary h3{margin:4px 0 16px}
+html body #evidence-view .category-profile-card .comparison-summary :is(h2,h3){margin:4px 0 16px}
 html body #evidence-view .category-profile-card .comparison-summary>p{line-height:1.65;margin:14px 0}
 body .category-profile-card .person-section-controls{display:flex;justify-content:space-around;margin:18px 0 0}
 body .category-profile-card .person-section-toggle{flex:0 1 100px}

@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 
 // Exercise the production renderer and click handler without starting AI Chat.
 const source=fs.readFileSync('src/reader.js','utf8');
+const preferences=fs.readFileSync('src/reader-state.js','utf8');
 const panels=new Map();
 const context={readingBook:0,readingChapter:1,esc:String,
  $:selector=>({value:selector==='#reader-edition'?'kjv':'science'}),
@@ -112,7 +113,7 @@ console.log('PASS: language tag placements retain KJV contrast card without impl
 const fontNode={attrs:{},setAttribute(k,v){this.attrs[k]=v;}},fontOutput={};
 const scaleValues=new Map();const fontContext={state:{},$:s=>s==='#reader-font-value'?fontOutput:fontNode,document:{documentElement:{style:{setProperty:(k,v)=>scaleValues.set(k,v)}}},persist(){scaleValues.set('saved',true);}};
 vm.createContext(fontContext);
-vm.runInContext(source.slice(source.indexOf('function applyTextSize(){'),source.indexOf("$('#clear-selection').onclick")),fontContext);
+vm.runInContext(preferences.slice(preferences.indexOf('function applyTextSize(){')),fontContext);
 assert.equal(scaleValues.get('--text-scale'),'1');assert.equal(fontOutput.textContent,'100%');
 for(const percent of [85,95,100,115,130,150]){fontNode.oninput({target:{value:String(percent)}});assert.equal(scaleValues.get('--text-scale'),String(percent/100));assert.equal(fontContext.state.textScale,percent/100);assert.equal(fontOutput.textContent,percent+'%');assert.equal(fontNode.attrs['aria-valuetext'],percent+' percent');}
 fontNode.onchange();assert(scaleValues.get('saved'));
@@ -197,7 +198,7 @@ assert(expanded.indexOf('comparison-summary')<expanded.indexOf('<h3>Legacy card<
 // One app font preserves explicit choices and applies to text and controls together.
 const fontNodes=new Map(),fontProperties=new Map();let fontSaves=0;
 const fontsContext={readerPreferences:{verseFont:'invalid',categoryFont:'georgia'},state:{},persist:()=>fontSaves++,document:{documentElement:{style:{setProperty:(key,value)=>fontProperties.set(key,value)}}},$:id=>{if(!fontNodes.has(id))fontNodes.set(id,{});return fontNodes.get(id)}};vm.createContext(fontsContext);
-vm.runInContext(source.slice(source.indexOf('const READER_FONTS='),source.indexOf('function applyTextSize(')),fontsContext);
+vm.runInContext(preferences.slice(preferences.indexOf('const READER_FONTS='),preferences.indexOf('function applyTextSize(')),fontsContext);
 assert.equal(fontNodes.get('#app-font-family').value,'inter','Reading-only legacy preferences do not silently become app-wide choices');
 assert.equal(fontsContext.readerPreferences.categoryFont,'georgia','Legacy preference data is retained');
 fontsContext.readerPreferences={};fontsContext.applyReaderFonts();

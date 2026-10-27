@@ -459,111 +459,6 @@ html body.lens-app .atlas-reader-help {
     outline: 2px solid Highlight;
   }
 }
-/*  atlas-explore.css  *//* Native horizontal collections: a complete illustrated feature for every topic. */
-html body.lens-app #explore-view.atlas-explore { padding-top:clamp(20px,3vw,40px); }
-html body.lens-app #explore-view.atlas-explore :is(h1,h2) {
-  font-weight:500; letter-spacing:-.035em; text-wrap:balance;
-}
-html body.lens-app #explore-view .atlas-explore-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin:0 0 26px; }
-html body.lens-app #explore-view .atlas-explore-eyebrow { display:block; color:var(--lens-copper); font:600 .625rem/1.6 var(--lens-ui-font,Inter,system-ui,sans-serif); letter-spacing:.13em; text-transform:uppercase; }
-html body.lens-app #explore-view .atlas-explore-heading h1 { margin:9px 0 0; font-size:clamp(2.3rem,4.6vw,3.7rem); line-height:1.12; }
-html body.lens-app #explore-view .atlas-explore-heading > p { flex:0 1 19rem; margin:0 0 2px; color:var(--lens-muted); font-size:.9375rem; line-height:1.65; }
-html body.lens-app #explore-view .atlas-explore-tabs {
-  display:flex; gap:8px; width:100%; min-width:0; margin:0 0 14px; padding:4px 2px 8px;
-  overflow-x:auto; overflow-y:hidden; overscroll-behavior-x:contain; scrollbar-width:none;
-  scroll-padding-inline:10px; border:0;
-}
-html body.lens-app #explore-view .atlas-explore-tabs::-webkit-scrollbar,
-html body.lens-app #explore-view .atlas-explore-gallery::-webkit-scrollbar { display:none; }
-html body.lens-app #explore-view .atlas-explore-tab {
-  flex:0 0 auto; width:max-content; min-width:max-content; max-width:none; min-height:44px;
-  margin:0; padding:10px 15px;
-  font:500 .8125rem/1.4 var(--lens-ui-font,Inter,system-ui,sans-serif); white-space:nowrap;
-  overflow:visible; text-overflow:clip; cursor:pointer;
-}
-html body.lens-app #explore-view .atlas-explore-gallery {
-  display:flex; align-items:stretch; gap:14px; width:100%; min-width:0;
-  overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory;
-  overscroll-behavior-x:contain; scrollbar-width:none; border-radius:22px;
-}
-html body.lens-app #explore-view .atlas-explore-panel {
-  flex:0 0 100%; min-width:0; margin:0; padding:0; scroll-snap-align:start;
-  scroll-snap-stop:always; overflow:hidden; border-radius:22px;
-}
-html body.lens-app #explore-view .atlas-explore-feature {
-  display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); min-width:0;
-  min-height:440px; height:100%; overflow:hidden; border-radius:22px; background:var(--lens-surface);
-}
-html body.lens-app #explore-view .atlas-explore-visual { position:relative; min-width:0; min-height:400px; overflow:hidden; background:#b9a78e; }
-html body.lens-app #explore-view .atlas-explore-image { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
-html body.lens-app #explore-view .atlas-explore-copy { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; min-width:0; padding:clamp(24px,3.5vw,44px); }
-html body.lens-app #explore-view .atlas-explore-copy h2 { margin:12px 0 14px; color:var(--lens-ink); font-size:clamp(1.7rem,2.7vw,2.45rem); line-height:1.18; }
-html body.lens-app #explore-view .atlas-explore-copy > p { margin:0 0 17px; max-width:37ch; color:var(--lens-muted); font-size:.875rem; line-height:1.7; }
-html body.lens-app #explore-view .atlas-explore-action {
-  display:inline-flex; align-items:center; justify-content:flex-start; gap:8px; min-height:44px;
-  margin:0; padding:0; border:0; color:var(--lens-ink); font:600 .8125rem/1.5 var(--lens-ui-font,Inter,system-ui,sans-serif); text-decoration:none;
-}
-html body.lens-app #explore-view .atlas-explore-action > span { display:inline; width:auto; height:auto; margin:0; padding:0; border:0; border-radius:0; background:none; font-size:1rem; }
-html body.lens-app #explore-view .atlas-explore-action:hover { color:var(--lens-copper); text-decoration:underline; text-underline-offset:5px; }
-html body.lens-app #explore-view .atlas-explore-copy > .atlas-explore-related { margin:12px 0 0; max-width:39ch; font-size:.6875rem; line-height:1.9; }
-html body.lens-app #explore-view .atlas-explore-related :is(a,button) {
-  display:inline; width:auto; min-width:0; min-height:0; margin:0; padding:0; font:inherit; white-space:normal; text-decoration:underline; text-underline-offset:3px; cursor:pointer;
-}
-html body.lens-app #explore-view .atlas-explore-source { display:block; margin:13px 0 0; color:var(--lens-muted); font-size:.6875rem; line-height:1.6; }
-html body.lens-app #explore-view .atlas-explore-gallery-footer { display:grid; grid-template-columns:44px minmax(0,1fr) 44px; align-items:center; gap:12px; margin-top:12px; }
-html body.lens-app #explore-view .atlas-explore-position { min-width:0; margin:0; text-align:center; color:var(--lens-muted); font:500 .75rem/1.6 var(--lens-ui-font,Inter,system-ui,sans-serif); }
-html body.lens-app #explore-view .atlas-explore-position-label { color:var(--lens-ink); }
-html body.lens-app #explore-view .atlas-explore-step {
-  display:grid; place-items:center; flex:0 0 44px; width:44px; height:44px; min-width:44px; min-height:44px;
-  margin:0; padding:0; cursor:pointer;
-}
-html body.lens-app #explore-view .atlas-explore-step:disabled { opacity:.3; cursor:default; }
-html body.lens-app #explore-view .atlas-explore-studies { margin-top:44px; }
-html body.lens-app #explore-view.atlas-explore :is(a,button):focus-visible { outline:2px solid var(--lens-focus); outline-offset:3px; }
-html body.lens-app #explore-view .atlas-explore-tab:focus-visible { outline-offset:-2px; }
-@media (max-width:700px) {
-  html body.lens-app #explore-view.atlas-explore { padding-top:20px; }
-  html body.lens-app #explore-view .atlas-explore-heading { display:block; margin-bottom:19px; }
-  html body.lens-app #explore-view .atlas-explore-heading h1 { font-size:2.25rem; }
-  html body.lens-app #explore-view .atlas-explore-heading > p { margin-top:12px; max-width:35ch; font-size:.8125rem; }
-  html body.lens-app #explore-view .atlas-explore-heading > p br { display:none; }
-  html body.lens-app #explore-view .atlas-explore-tabs { gap:3px; margin-bottom:10px; }
-  html body.lens-app #explore-view .atlas-explore-tab { padding:10px 13px; font-size:.8125rem; }
-  html body.lens-app #explore-view .atlas-explore-gallery { gap:12px; border-radius:20px; }
-  html body.lens-app #explore-view .atlas-explore-panel { border-radius:20px; }
-  html body.lens-app #explore-view .atlas-explore-feature { grid-template-columns:minmax(0,1fr); grid-template-rows:auto 1fr; min-height:0; border-radius:20px; }
-  html body.lens-app #explore-view .atlas-explore-visual { min-height:0; aspect-ratio:1.4; }
-  html body.lens-app #explore-view .atlas-explore-copy { justify-content:flex-start; padding:22px 21px 24px; }
-  html body.lens-app #explore-view .atlas-explore-copy h2 { max-width:19ch; margin:10px 0 12px; font-size:1.8rem; }
-  html body.lens-app #explore-view .atlas-explore-copy > p { margin-bottom:10px; font-size:.8125rem; line-height:1.7; }
-  html body.lens-app #explore-view .atlas-explore-copy > .atlas-explore-related { margin:10px 0 0; font-size:.6875rem; }
-  html body.lens-app #explore-view .atlas-explore-gallery-footer { margin-top:8px; }
-  html body.lens-app #explore-view .atlas-explore-studies { margin-top:34px; }
-}
-@media (max-width:350px) {
-  html body.lens-app #explore-view .atlas-explore-heading h1 { font-size:2.05rem; }
-  html body.lens-app #explore-view .atlas-explore-copy { padding:20px 18px 22px; }
-  html body.lens-app #explore-view .atlas-explore-copy h2 { font-size:1.6rem; }
-  html body.lens-app #explore-view .atlas-explore-position { font-size:.6875rem; }
-}
-@media (forced-colors:active) {
-  html body.lens-app #explore-view .atlas-explore-feature { border:1px solid CanvasText; }
-  html body.lens-app #explore-view .atlas-explore-tab[aria-selected=true] { outline:1px solid Highlight; outline-offset:-2px; }
-}
-
-/* Images keep the layout stable and never leave an unexplained blank card. */
-html body.lens-app #explore-view .atlas-explore-visual { position:relative; }
-html body.lens-app #explore-view .atlas-image-status {
-  position:absolute; inset:0; display:flex; flex-direction:column; gap:12px;
-  align-items:center; justify-content:center; padding:24px; text-align:center;
-  background:var(--lens-surface);
-}
-html body.lens-app #explore-view .atlas-image-status[hidden] { display:none; }
-html body.lens-app #explore-view .atlas-explore-visual:not([data-image-state=ready]) img { opacity:0; }
-html body.lens-app #explore-view .atlas-image-status button {
-  border:0; border-radius:999px; min-height:44px; padding:10px 20px;
-  background:var(--lens-link-soft); color:var(--lens-ink); font:inherit;
-}
 /*  place-story-refinements.css  *//* Place cards provide a real geographical preview before their quiet actions. */
 html body.lens-app #places-view .place-map-card { margin-top: 18px; }
 html body.lens-app #places-view .place-map-preview {
@@ -951,7 +846,7 @@ html body button.character-place-link:focus-visible{outline:none;background:var(
 html body #places-view .place-directory-entry{padding:14px 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent}
 html body #places-view .place-directory-entry:hover{background:var(--soft)}
 html body #evidence-view .marked-comparison-card .comparison-summary{background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb),var(--surface-base));border:1px solid rgba(var(--theme-rgb),.65)}
-html body #evidence-view .marked-comparison-card .comparison-summary h3{font-size:1.25rem}
+html body #evidence-view .marked-comparison-card .comparison-summary :is(h2,h3){font-size:1.25rem}
 html body #evidence-view .marked-comparison-card .comparison-summary p{font-size:1rem}
 html body #evidence-view .marked-comparison-card .marked-primary-passages q{font-size:.8125rem}
 html body #evidence-view .marked-comparison-card .comparison-inline-reference{color:var(--ui-link)}
@@ -976,7 +871,7 @@ html body .story-card:is(:focus,:focus-visible),html body .story-card.story-link
 html body .story-card :is(button,[tabindex]):is(:focus,:focus-visible){outline:none;box-shadow:none}
 html body #stories-search:focus{outline:none;box-shadow:none}
 html body #evidence-view .category-profile-card .comparison-summary{padding:18px}
-html body #evidence-view .category-profile-card .comparison-summary h3{font-size:1.35rem}
+html body #evidence-view .category-profile-card .comparison-summary :is(h2,h3){font-size:1.35rem}
 html body #evidence-view .category-profile-card .comparison-summary>p{font-size:.875rem}
 html body #evidence-view .category-profile-card .category-profile-panel p{font-size:.875rem}
 html body .category-profile-card [data-comparison-inspect]{color:var(--muted)}
@@ -1899,29 +1794,6 @@ body.lens-app #lensInspector .lens-note-editor h3 {
     font-size: clamp(1.8rem, 7.5vw, 2.3rem);
   }
 }
-/*  atlas-explore.css priorities  */
-html body.lens-app #explore-view.atlas-explore :is(h1,h2) {
-  font-family:var(--lens-display-font,Inter,system-ui,sans-serif);
-}
-html body.lens-app #explore-view .atlas-explore-tab { border:0; border-radius:999px;
-  color:var(--lens-muted); background:transparent; box-shadow:none;
-}
-html body.lens-app #explore-view .atlas-explore-tab[aria-selected=true] { color:var(--lens-ink); background:color-mix(in srgb,var(--lens-ink) 8%,transparent); }
-html body.lens-app #explore-view .atlas-explore-tab:hover { color:var(--lens-ink); }
-html body.lens-app #explore-view .atlas-explore-related :is(a,button) {
-  border:0; border-radius:0; background:none; box-shadow:none;
-  color:inherit;
-}
-html body.lens-app #explore-view .atlas-explore-step { border:0; border-radius:50%; box-shadow:none;
-  color:var(--lens-ink); background:color-mix(in srgb,var(--lens-ink) 6%,transparent);
-}
-html body.lens-app #explore-view .atlas-explore-step:not(:disabled):hover { background:color-mix(in srgb,var(--lens-ink) 11%,transparent); }
-@media (prefers-reduced-motion:reduce) {
-  html body.lens-app #explore-view.atlas-explore * { scroll-behavior:auto; transition:none; }
-}
-@media (forced-colors:active) {
-  html body.lens-app #explore-view .atlas-explore-step { border:1px solid ButtonText; }
-}
 /*  place-story-refinements.css priorities  */
 html body.lens-app #places-view .place-map-action {
   background: transparent;
@@ -2111,4 +1983,23 @@ html body.lens-app #notebook-view .lens-note h2 a {display:inline-flex;align-ite
 }
 @layer overrides.priority {
 html body.lens-app :is(.phase2-deeper,.phase2-rail-heading,.lens-result-group) {scroll-margin-top:90px;}
+}
+
+@layer overrides.priority {
+ body.lens-app .comparison-inline-reference { text-decoration:underline; text-underline-offset:3px; }
+ body.lens-app .lens-brand:focus-visible { color:var(--lens-ink); outline:2px solid var(--lens-focus); outline-offset:3px; }
+ #route-loading { min-height:65vh; }
+}
+
+@layer overrides.priority {
+ #explore-hero { min-height:310px; }
+ @media(max-width:760px) { #explore-hero { min-height:300px; } }
+}
+
+@layer overrides.priority {
+ html body.lens-app #chapter-text[aria-busy="true"] { min-height:100vh; }
+}
+@layer overrides.priority {
+ #route-loading { min-height:100vh; }
+ html body.lens-app #chapter-text > .chapter-loading { margin-top:0; }
 }

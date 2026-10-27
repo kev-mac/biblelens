@@ -35,11 +35,15 @@ export function createPersonMatcher(people){
   });
  };
 }
-export function wrapReferenceNames(text,placeMatch,personMatch,context){
+export function referenceMatches(text,placeMatch,personMatch,context){
  const places=placeMatch(text,context);
  const overlaps=(a,b)=>a.start<b.end&&a.end>b.start;
  const people=personMatch(text,context).filter(person=>!places.some(place=>place.contextual&&overlaps(place,person))&&!(context?.scope==='story'&&context.placesReady===false&&isNarrativeLocationMention(text,person,context.leadingText)));
  const hits=[...people.map(h=>({...h,person:true})),...places.filter(place=>!people.some(person=>overlaps(place,person)))].sort((a,b)=>a.start-b.start);
+ return hits;
+}
+export function wrapReferenceNames(text,placeMatch,personMatch,context){
+ const hits=referenceMatches(text,placeMatch,personMatch,context);
  let cursor=0,html='';
  for(const hit of hits){if(hit.start<cursor)continue;html+=escapeHTML(text.slice(cursor,hit.start));html+=hit.person?`<button type="button" class="person-chip" data-person-id="${escapeHTML(hit.id)}" aria-haspopup="dialog" aria-controls="character-sheet" aria-label="Open People card for ${escapeHTML(hit.label)}">${escapeHTML(hit.label)}</button>`:`<button type="button" class="location-chip" data-place-id="${escapeHTML(hit.id)}" aria-haspopup="dialog" aria-controls="atlas-sheet" aria-label="Explore ${escapeHTML(hit.label)} in the atlas"><span aria-hidden="true">📍</span>${escapeHTML(hit.label)}</button>`;cursor=hit.end;}
  return html+escapeHTML(text.slice(cursor));
