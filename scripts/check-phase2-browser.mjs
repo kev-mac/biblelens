@@ -15,16 +15,33 @@ try{
   await page.goto(base);await page.waitForSelector('.phase2-hero');await page.waitForFunction(()=>!document.documentElement.classList.contains('bl-starting'));
   await page.evaluate(theme=>{state.theme=theme;applyTheme();persist();},theme);
   async function shot(name){await page.evaluate(()=>document.fonts.ready);
+   // A screenshot does not wait for lazy images or async image decoding.
+   await page.waitForFunction(()=>[...document.querySelectorAll('.phase2-art img')].filter(img=>{
+    const rect=img.getBoundingClientRect();return rect.width&&rect.height&&rect.bottom>0&&rect.top<innerHeight&&rect.right>0&&rect.left<innerWidth;
+   }).every(img=>img.complete&&img.naturalWidth>0&&img.parentElement.dataset.artState==='ready'));
    const violations=await page.evaluate(()=>[...document.querySelectorAll('.phase2-page *,#notebook-view *,#search-view *')].filter(node=>node.getBoundingClientRect().width&&!node.closest('[hidden]')&&!node.classList.contains('sr-only')).flatMap(node=>{
     const style=getComputedStyle(node),size=parseFloat(style.fontSize);if(['INPUT','TEXTAREA','SELECT'].includes(node.tagName)&&size<16)return ['Input below 16px: '+node.id];
     if([...node.childNodes].some(child=>child.nodeType===3&&child.textContent.trim())&&size<12)return ['Text below 12px: '+node.className];
-    if(node.matches('button,a,summary')){const rect=node.getBoundingClientRect();if(rect.height<43.5)return ['Target below 44px: '+node.textContent.slice(0,30)];}return [];
+    if(node.matches('button,a,summary')){const rect=node.getBoundingClientRect();if(rect.height<43.5)return ['Target below 44px: '+node.textContent.slice(0,30)];}
+    if(node.matches('.phase2-chips button')){
+     const rect=node.getBoundingClientRect(),group=node.parentElement.getBoundingClientRect(),range=document.createRange();range.selectNodeContents(node);const label=range.getBoundingClientRect();
+     if(rect.width<43.5||rect.left<group.left||rect.right>group.right+.5||node.scrollWidth>node.clientWidth||label.left<rect.left+parseFloat(style.paddingLeft)-1||label.right>rect.right-parseFloat(style.paddingRight)+1)return ['Crowded filter: '+node.textContent];
+    }return [];
    }));assert.deepEqual(violations,[],name+' type and touch sizes');await page.screenshot({path:`${output}/${theme}-${name}.png`});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390,name+' has no horizontal page overflow');}
   async function go(hash,selector){await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),hash);await page.waitForFunction(hash=>location.hash===hash,hash);if(selector)await page.waitForSelector(selector);}
   await shot('explore');
   assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Explore','Read','Debates','Notebook']);
   assert.equal(await page.locator('.phase2-rail').count(),9);assert.equal(await page.locator('.phase2-rail-card').count(),54);
-  for(const rail of ['text','history','people','places','stories','commandments','timeline']){await page.locator('#rail-'+rail).scrollIntoViewIfNeeded();await shot('explore-'+rail);}
+  for(const rail of ['text','science','history','translation','people','places','stories','commandments','timeline']){
+   const collection=page.locator(`[aria-labelledby="rail-${rail}"]`);
+   // Always align this rail, even when its heading is already barely visible.
+   await collection.locator('.phase2-rail-heading').evaluate(node=>node.scrollIntoView({block:'start',behavior:'instant'}));
+   await shot('explore-'+rail);
+   const heading=await collection.locator('h2').boundingBox(),card=await collection.locator('.phase2-rail-card').first().boundingBox(),nav=await page.locator('.lens-primary').boundingBox();
+   assert(heading.y>=64&&heading.y<130&&card.y>heading.y&&card.y+card.height<=nav.y,rail+' heading and first card are fully framed above phone navigation');
+   const artwork=await collection.locator('.phase2-art img').first().evaluate(img=>({opacity:getComputedStyle(img).opacity,width:img.clientWidth,height:img.clientHeight,placeholder:getComputedStyle(img.previousElementSibling).display}));
+   assert.equal(artwork.opacity,'1',rail+' artwork is painted');assert.equal(artwork.placeholder,'none');assert(Math.abs(artwork.width/artwork.height-2.1)<.03,rail+' artwork keeps its reserved crop');
+  }
   await page.evaluate(()=>scrollTo(0,0));await page.locator('#explore-query').fill('Genesis 1');await page.locator('#explore-search').evaluate(form=>form.requestSubmit());
   await page.waitForSelector('#lens-results-scripture .lens-result');await shot('search');assert(await page.locator('#search-view a[href="#chat"]').isVisible());
   // Seed only this isolated browser profile with supported, pre-existing notebook data.
@@ -58,12 +75,31 @@ try{
   await page.evaluate(()=>{document.startViewTransition=undefined;HTMLElement.prototype.showPopover=undefined;});
   await go('#debates','#debate-results .phase2-debate-card');await page.locator('[data-debate-label-info]').click();await page.waitForSelector('#debate-sheet[open]');await page.keyboard.press('Escape');
   await context.close();
+  // Slow or failed artwork must keep a deliberate placeholder and stable layout.
+  const artContext=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'}),artPage=await artContext.newPage();
+  let releaseArt;const artGate=new Promise(resolve=>{releaseArt=resolve;});
+  await artPage.route('**/assets/explore-{timeline,people}.webp',async route=>{await artGate;if(route.request().url().endsWith('people.webp'))await route.fulfill({status:404,body:'Missing test artwork'});else await route.continue();});
+  try{
+   await artPage.goto(base);await artPage.waitForSelector('.phase2-hero');await artPage.evaluate(theme=>{state.theme=theme;applyTheme();},theme);
+   const sizes={};
+   for(const key of ['history','people']){
+    const art=artPage.locator(`[aria-labelledby="rail-${key}"] .phase2-art`).first();
+    await art.evaluate(node=>node.scrollIntoView({block:'center',behavior:'instant'}));
+    assert.equal(await art.getAttribute('data-art-state'),'loading');assert(await art.locator('.phase2-art-placeholder').isVisible());assert.equal(await art.locator('span').textContent(),'Imagined art');sizes[key]=await art.boundingBox();
+   }
+   releaseArt();
+   await artPage.waitForSelector('[aria-labelledby="rail-history"] [data-art-state="ready"]');await artPage.waitForSelector('[aria-labelledby="rail-people"] [data-art-state="error"]');
+   for(const key of ['history','people']){
+    const art=artPage.locator(`[aria-labelledby="rail-${key}"] .phase2-art`).first(),rect=await art.boundingBox();assert.equal(rect.height,sizes[key].height,key+' artwork does not shift after load/error');assert.equal(rect.width,sizes[key].width);
+   }
+   const missing=artPage.locator('[aria-labelledby="rail-people"] .phase2-art').first();assert.equal(await missing.locator('.phase2-art-placeholder').textContent(),'Artwork unavailable');assert(await missing.locator('.phase2-art-placeholder').isVisible());assert(await missing.locator('img').isHidden());
+  }finally{releaseArt();await artContext.close();}
  }
  const enhanced=await browser.newContext({viewport:{width:1200,height:900},reducedMotion:'no-preference'});const page=await enhanced.newPage();page.on('pageerror',error=>errors.push(error.message));await page.goto(base);await page.waitForSelector('.phase2-hero');
  await page.evaluate(()=>{window.transitionCalls=0;const start=document.startViewTransition.bind(document);document.startViewTransition=callback=>{transitionCalls++;return start(callback);};BibleLensWorkspace.navigate('#debates');});await page.waitForSelector('#debate-results a');assert.equal(await page.evaluate(()=>transitionCalls),1);
  await page.evaluate(()=>BibleLensWorkspace.navigate('#debate/early-ahaziah'));await page.waitForSelector('.phase2-sides:not([aria-busy])');assert.equal(await page.locator('.phase2-sides').evaluate(node=>getComputedStyle(node).gridTemplateColumns.split(' ').length),2,'Container query opens two columns on wide screens');await enhanced.close();
  const fallback=await browser.newContext({viewport:{width:390,height:844}});await fallback.addInitScript(()=>{HTMLElement.prototype.showPopover=undefined;document.startViewTransition=undefined;});const fallbackPage=await fallback.newPage();await fallbackPage.goto(base+'/#debates');await fallbackPage.waitForSelector('#debate-results a');assert.equal(await fallbackPage.locator('#debate-label-info').isVisible(),false,'Unsupported popovers stay hidden until a dialog is requested');await fallbackPage.locator('[data-debate-label-info]').click();await fallbackPage.waitForSelector('#debate-sheet[open]');await fallback.close();
  assert.deepEqual(errors,[],'No browser errors');assert.deepEqual(external,[],'No external network dependency in the tested screens');
- console.log('PASS: 390×844 light/dark screens, grouped search, all tabs, status filters, A/B and source discussion, private persistence/backups, legacy bookmarks, note focus, reader badges, history/refresh, deep links, missing IDs, motion/popover fallbacks and no external requests.');
+ console.log('PASS: 390×844 light/dark screens, all nine framed Explore rails with decoded artwork, slow/failed image placeholders, unclipped 44px filters, grouped search, all tabs, A/B and source discussion, private persistence/backups, legacy bookmarks, note focus, reader badges, history/refresh, deep links, missing IDs, motion/popover fallbacks and no external requests.');
  console.log('Screenshots: '+output);
 }finally{await browser.close();}

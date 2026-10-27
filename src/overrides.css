@@ -1985,8 +1985,11 @@ html body.lens-app .phase2-intro {margin-bottom:22px;}
 html body.lens-app .phase2-hero {position:relative;border-radius:20px;min-height:310px;overflow:hidden;background:#15283b;isolation:isolate;display:flex;align-items:flex-end;}
 html body.lens-app .phase2-hero > .phase2-art {position:absolute;inset:0;height:100%;z-index:-2;}
 html body.lens-app .phase2-hero::before {content:"";position:absolute;inset:0;background:linear-gradient(180deg,#10193126,#101931bd 35%,#101931);z-index:-1;}
-html body.lens-app .phase2-art {position:relative;aspect-ratio:2.1;background:var(--lens-control-bg);overflow:hidden;}
-html body.lens-app .phase2-art img {display:block;width:100%;height:100%;object-fit:cover;}
+html body.lens-app .phase2-art {position:relative;flex:none;aspect-ratio:2.1;background:var(--lens-control-bg);overflow:hidden;}
+html body.lens-app .phase2-art img {position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;opacity:0;}
+html body.lens-app .phase2-art[data-art-state="ready"] img {opacity:1;}
+html body.lens-app .phase2-art-placeholder {position:absolute;inset:0;display:grid;place-content:center;padding:32px 16px 12px;text-align:center;font-size:13px;line-height:1.4;color:var(--lens-muted);background:linear-gradient(135deg,var(--lens-control-bg),var(--lens-copper-soft));}
+html body.lens-app .phase2-art[data-art-state="ready"] .phase2-art-placeholder {display:none;}
 html body.lens-app .phase2-art > span {position:absolute;right:8px;top:8px;color:white;background:#141c34d9;border-radius:5px;padding:4px 7px;font-size:12px;line-height:1.4;}
 html body.lens-app .phase2-hero .phase2-art > span {top:14px;right:14px;}
 html body.lens-app .phase2-hero-copy {padding:24px;width:100%;max-width:700px;}
@@ -2010,8 +2013,8 @@ html body.lens-app .phase2-tools a {display:flex;align-items:center;padding:10px
 html body.lens-app .phase2-modes {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:5px;border-radius:14px;background:var(--lens-control-bg);margin-top:22px;}
 html body.lens-app .phase2-modes button {border:0;border-radius:10px;background:none;color:var(--lens-muted);padding:8px 4px;font-size:12px;font-weight:650;line-height:1.4;}
 html body.lens-app .phase2-modes button[aria-pressed="true"] {background:var(--lens-surface);color:var(--lens-link);box-shadow:0 2px 7px #0001;}
-html body.lens-app .phase2-chips {display:flex;overflow-x:auto;gap:8px;padding:14px 0;scroll-snap-type:x proximity;}
-html body.lens-app .phase2-chips button {white-space:nowrap;border:1px solid var(--lens-rule);border-radius:24px;padding:10px 14px;font-size:13px;background:var(--lens-surface);color:var(--lens-ink);scroll-snap-align:start;}
+html body.lens-app .phase2-chips {display:flex;flex-wrap:wrap;gap:8px;padding:14px 0;}
+html body.lens-app .phase2-chips button {flex:none;min-width:44px;min-height:44px;white-space:nowrap;border:1px solid var(--lens-rule);border-radius:24px;padding:10px 14px;font-size:13px;background:var(--lens-surface);color:var(--lens-ink);}
 html body.lens-app .phase2-chips button[aria-pressed="true"] {background:var(--lens-ink);color:var(--lens-surface);}
 html body.lens-app .phase2-more {border-bottom:1px solid var(--lens-rule);padding-bottom:8px;}
 html body.lens-app .phase2-more summary {font-size:14px;cursor:pointer;padding:12px 0;}

@@ -14,14 +14,21 @@
   {key:'commandments',image:'commandments',title:'What does the law actually say?',label:'Commandments',copy:'Explore laws, their source texts, and the settings in which they were written.',url:'#commandments'},
   {key:'timeline',image:'timeline',title:'When did it happen?',label:'Timeline',copy:'Compare the order of events and the evidence for their dates.',url:'#timeline'}
  ];
- const artwork=(name,eager=false)=>`<div class="phase2-art"><img src="/assets/explore-${name}.webp" width="1200" height="800" loading="${eager?'eager':'lazy'}" decoding="async" ${eager?'fetchpriority="high"':''} alt="Imagined illustration of ${name==='evidence'?'hands studying an ancient text':name}"><span>Imagined art</span></div>`;
+ const artwork=(name,eager=false)=>`<div class="phase2-art" data-art-state="loading"><div class="phase2-art-placeholder" aria-hidden="true">Loading illustration…</div><img src="/assets/explore-${name}.webp" width="1200" height="800" loading="${eager?'eager':'lazy'}" decoding="async" ${eager?'fetchpriority="high"':''} alt="Imagined illustration of ${name==='evidence'?'hands studying an ancient text':name}"><span>Imagined art</span></div>`;
  const starterStudies=host.querySelector('.lens-starter-studies');
  host.innerHTML=`<form class="phase2-search" id="explore-search"><label class="sr-only" for="explore-query">Search scripture, topics, or people</label><input id="explore-query" type="search" maxlength="300" placeholder="Search scripture, topics, people…"><button aria-label="Search the library" type="submit">⌕</button></form><div class="phase2-intro"><span class="phase2-eyebrow">Follow your curiosity</span><h1 tabindex="-1">Room for questions.</h1><p>Read the texts, explore the evidence, and consider what each account supports.</p></div><div id="explore-hero"><p role="status">Loading today’s debate…</p></div><a class="phase2-continue" id="explore-continue" href="#read">Continue reading <span aria-hidden="true">→</span></a><div id="explore-rails"><p role="status">Loading collections…</p></div><div class="phase2-tools"><a href="#debates?filter=Q">Questions</a><a href="#debates?filter=V">Violations</a><a href="#prophecies">Prophecies</a><a href="#compare">Compare passages</a><a href="#evidence">More evidence filters</a><a href="#places">Study Atlas</a></div><p class="phase2-meta">Artwork is imagined. It is not a real portrait or historical evidence.</p>`;
  if(starterStudies){starterStudies.querySelector('h2').textContent='Starter studies';host.append(starterStudies);}
  host.querySelector('form').onsubmit=event=>{event.preventDefault();window.BibleLensWorkspace.navigate('#search?q='+encodeURIComponent(document.getElementById('explore-query').value.trim()));};
  function continueReading(){const label=typeof reading!=='undefined'&&reading?`${books[readingBook].name} ${readingChapter}`:'';const link=document.getElementById('explore-continue');link.href=label?`#read/${readingBook}/${readingChapter}`:'#read';link.textContent=label?'Continue reading · '+label+' →':'Open the reader →';}
  window.addEventListener('biblelens:readerchange',continueReading);continueReading();
- function images(){for(const img of host.querySelectorAll('img'))img.addEventListener('error',()=>{img.hidden=true;img.parentElement.classList.add('phase2-art-missing');},{once:true});}
+ function images(){for(const img of host.querySelectorAll('.phase2-art img')){
+  const art=img.parentElement;
+  const missing=()=>{img.hidden=true;art.dataset.artState='error';art.querySelector('.phase2-art-placeholder').textContent='Artwork unavailable';};
+  const ready=()=>img.decode().then(()=>{art.dataset.artState='ready';},missing);
+  img.addEventListener('load',ready,{once:true});img.addEventListener('error',missing,{once:true});
+  // Cached images can finish before listeners are attached after rendering.
+  if(img.complete){if(img.naturalWidth)ready();else missing();}
+ }}
  async function load(){
   const day=new Date().toISOString().slice(0,10);
   const results=await Promise.allSettled([fetch('/api/debates?'+new URLSearchParams({day})).then(response=>{if(!response.ok)throw Error();return response.json();}),fetch('/explore-feed.json').then(response=>{if(!response.ok)throw Error();return response.json();})]);
