@@ -67,7 +67,7 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
    globalThis.__violations=[];document.addEventListener('securitypolicyviolation',e=>__violations.push(e.violatedDirective));
   });
   try{
-   const response=await page.goto(server.url);assert.equal(response.status(),200);
+   const response=await page.goto(server.url+'/#read/0/1');assert.equal(response.status(),200);
    if(platform==='web'&&!withoutCsp)assert(response.headers()['content-security-policy']);
    await page.waitForFunction(()=>!document.documentElement.classList.contains('bl-starting')&&typeof reading!=='undefined'&&reading?.verses?.length&&state.investigations?.coordinates,{},{timeout:60000});
    await page.waitForFunction(()=>document.querySelector('[data-sync-status]')?.textContent.includes('Synced'));
@@ -87,6 +87,7 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
    await page.locator('#security-edition-probe').evaluate(node=>node.remove());
    assert((await inert(page,'#saved-passages')).body.includes(marker));
    await page.evaluate(()=>renderChapterBookmarks());await inert(page,'#chapter-bookmark-list');
+   await page.evaluate(()=>BibleLensFeatures.load('evidence'));
    await page.evaluate(()=>{markedBookSelection=0;markedChapterSelection=0;markedKind='bookmark';markedData={records:[],verses:{}};renderMarkedResults();});
    assert((await inert(page,'#saved-passages')).body.includes(marker));
    await page.evaluate(()=>{const items=categoryPersonalItems({book:-1,chapter:0});document.querySelector('#bookmarks-list').innerHTML=items.map(item=>categoryPersonalCard(item)+categoryPersonalCard(item,true)).join('');});

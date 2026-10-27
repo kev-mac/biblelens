@@ -29,7 +29,7 @@ const localFetch=async input=>{
  return response;
 };
 const books=await (await localFetch('/api/books')).json();
-const context=vm.createContext({console,el,books,fetch:localFetch,AbortSignal,URLSearchParams,
+const context=vm.createContext({console,el,books,fetch:localFetch,AbortSignal,URLSearchParams,window:{BibleLensReferences:{json:async url=>{const response=await localFetch(url);if(!response.ok)throw Error('Reference unavailable');return response.json();}}},
  edition:()=>suite.edition,esc:value=>String(value??'').replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;'),
  excerpt:value=>String(value??''),noteRows:()=>privateNotes,
  resultGroup:(name,items)=>{groups.push({name,items});return '';},

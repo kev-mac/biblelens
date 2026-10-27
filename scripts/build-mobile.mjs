@@ -7,6 +7,8 @@ import {insertDeviceBootstrap} from './startup-assets.mjs';
 const output=path.resolve('www');
 // Remove only this build's fixed output directory, never a supplied path.
 if(output!==path.join(process.cwd(),'www'))throw Error('Unexpected mobile output directory');
+// Clear only the fixed generated bundle: draft and old hashed assets must not survive a production rebuild.
+fs.rmSync(output,{recursive:true,force:true});
 fs.mkdirSync(output,{recursive:true});
 for(const [url,asset]of Object.entries(mobileBundle.assets)){
  const file=path.join(output,url==='/'?'index.html':url.slice(1));

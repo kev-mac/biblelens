@@ -38,6 +38,10 @@ function stylesheetSource(path, source) {
 const classicScriptText = (path, source) => source.replace(/\r\n?/g, '\n') + '\n;document.currentScript.dataset.biblelensReady = "true";\n//# sourceURL=' + path;
 const scriptHash = source => "'sha256-" + createHash('sha256').update(source.replace(/\r\n?/g, '\n')).digest('base64') + "'";
 
+export function classicScriptHashes(sources, {minify=false}={}) {
+  return sources.map(({path,body})=>scriptHash(classicScriptText(path,minify?transformSync(body,{loader:'js',minify:true,target:['safari17','chrome119']}).code:body)));
+}
+
 export function classicScriptBundle(sources, {minify=false}={}) {
   if(minify)sources=sources.map(source=>({...source,body:transformSync(source.body,{loader:"js",minify:true,target:["safari17","chrome119"]}).code}));
   // A simple concatenation changes function hoisting across files: app.js
@@ -76,7 +80,7 @@ export function consolidateStartupAssets(assets,{minify=false,cssOverride}={}) {
   const pair = `<link rel="stylesheet" id="biblelens-app-styles" href="${manifest.css.path}"><script defer id="biblelens-app-script" src="${manifest.js.path}"></script>`;
   if (!/<\/head\s*>/i.test(withoutOriginals)) throw Error('Missing document head');
   const inline = [...withoutOriginals.matchAll(scriptTag)].map(match => match[0].replace(/^<script\b[^>]*>/i, '').replace(/<\/script\s*>$/i, ''));
-  const hashes = [...new Set([...inline, ...jsSources.map(({path, body}) => classicScriptText(path, minify ? transformSync(body,{loader:'js',minify:true,target:['safari17','chrome119']}).code : body))].map(scriptHash))];
+  const hashes = [...new Set([...inline.map(scriptHash), ...classicScriptHashes(jsSources,{minify}), ...Object.values(assets).flatMap(asset=>asset.scriptHashes||[])])];
   // Inline styles support existing layout controls. Scripts use only exact build
   // hashes; no inline handlers, eval, remote scripts, objects or base overrides.
   const policy = ["default-src 'none'", "base-uri 'none'", "object-src 'none'", "frame-src 'none'", "form-action 'self'",
