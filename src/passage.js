@@ -26,7 +26,7 @@ function combineTextHighlights(first,second){return normalizeTextHighlights([...
 function bookmarkVerseTextHtml(book,chapter,verse){
  const ranges=normalizeTextHighlights(state.verseBookmarks?.[`${book}:${chapter}:${verse}`]?.highlights);
  const editions=[...new Set(ranges.map(h=>h.edition))];
- return (editions.length?editions:['']).map(edition=>`<p class="marked-verse-text" data-marked-verse-text="${book}/${chapter}/${verse}"${edition?` data-marked-edition="${edition}"`:''} aria-live="polite" aria-busy="true">Loading verse text…</p>`).join('');
+ return (editions.length?editions:['']).map(edition=>`<p class="marked-verse-text" data-marked-verse-text="${esc(book)}/${esc(chapter)}/${esc(verse)}"${edition?` data-marked-edition="${edition}"`:''} aria-live="polite" aria-busy="true">Loading verse text…</p>`).join('');
 }
 function markedVerseTextParts(value,edition,book,chapter,verse){
  const source=String(value),ranges=normalizeTextHighlights(state.verseBookmarks?.[`${book}:${chapter}:${verse}`]?.highlights).filter(h=>h.edition===edition&&source.slice(h.start,h.end)===h.text),parts=[];
@@ -162,7 +162,7 @@ function noteActionButtons(ref,editAttribute='data-edit-marked-note'){
  const trash='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></svg>';
  const [book,chapter,verse]=ref.split('/').map(Number),key=verse?`${book}:${chapter}:${verse}`:`${book}:${chapter}`,note=(verse?state.verseNotes:state.passageNotes)[key];
  if(!note?.text?.trim()&&!note?.title?.trim())return '';
- return `<span class="note-actions"><button type="button" class="note-icon" data-delete-note="${ref}" aria-label="Delete note" title="Delete note">${trash}</button><button type="button" class="note-icon" ${editAttribute}="${ref}" aria-label="Edit note" title="Edit note">${pencil}</button></span>`;
+ return `<span class="note-actions"><button type="button" class="note-icon" data-delete-note="${esc(ref)}" aria-label="Delete note" title="Delete note">${trash}</button><button type="button" class="note-icon" ${editAttribute}="${esc(ref)}" aria-label="Edit note" title="Edit note">${pencil}</button></span>`;
 }
 function deletePersonalNote(ref){
  const [book,chapter,verse]=ref.split('/').map(Number),key=verse?`${book}:${chapter}:${verse}`:`${book}:${chapter}`,registry=verse?state.verseNotes:state.passageNotes;
@@ -172,9 +172,9 @@ function deletePersonalNote(ref){
 function renderPassageSaved(){
  const box=$('#saved-passages');if(!box)return;
  const records={...state.passageBookmarks,...state.passageNotes},items=Object.entries(records);
- box.innerHTML=items.length?'<h2>Marked Passages</h2><div class="passage-saved-grid">'+items.map(([key,item])=>'<article class="passage-saved-card">'+(item.title?'<h3>'+esc(item.title)+'</h3>':'')+'<button class="secondary" data-read="'+item.book+'/'+item.chapter+'">'+esc(item.name)+' '+item.chapter+'</button>'+(item.text?'<p class="passage-saved-note">'+esc(item.text)+'</p>':'')+noteActionButtons(item.book+'/'+item.chapter)+'</article>').join('')+'</div>':'';
+ box.innerHTML=items.length?'<h2>Marked Passages</h2><div class="passage-saved-grid">'+items.map(([key,item])=>'<article class="passage-saved-card">'+(item.title?'<h3>'+esc(item.title)+'</h3>':'')+'<button class="secondary" data-read="'+esc(item.book)+'/'+esc(item.chapter)+'">'+esc(item.name)+' '+esc(item.chapter)+'</button>'+(item.text?'<p class="passage-saved-note">'+esc(item.text)+'</p>':'')+noteActionButtons(item.book+'/'+item.chapter)+'</article>').join('')+'</div>':'';
  const marked=Object.entries({...state.verseBookmarks,...state.verseNotes});
- if(marked.length)box.innerHTML+='<h2>Marked Verses</h2><div class="passage-saved-grid">'+marked.map(([key,item])=>`<article class="passage-saved-card">${item.title?`<h3>${esc(item.title)}</h3>`:''}<button class="secondary" data-read="${item.book}/${item.chapter}/${item.verse}">${esc(item.name)} ${item.chapter}:${item.verse}</button>${bookmarkVerseTextHtml(item.book,item.chapter,item.verse)}${state.verseNotes[key]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[key].text)}</p>`:''}${noteActionButtons(`${item.book}/${item.chapter}/${item.verse}`)}</article>`).join('')+'</div>';
+ if(marked.length)box.innerHTML+='<h2>Marked Verses</h2><div class="passage-saved-grid">'+marked.map(([key,item])=>`<article class="passage-saved-card">${item.title?`<h3>${esc(item.title)}</h3>`:''}<button class="secondary" data-read="${esc(item.book)}/${esc(item.chapter)}/${esc(item.verse)}">${esc(item.name)} ${esc(item.chapter)}:${esc(item.verse)}</button>${bookmarkVerseTextHtml(item.book,item.chapter,item.verse)}${state.verseNotes[key]?.text?`<p class="passage-saved-note">${esc(state.verseNotes[key].text)}</p>`:''}${noteActionButtons(`${item.book}/${item.chapter}/${item.verse}`)}</article>`).join('')+'</div>';
  const studyCount=ENTRIES.filter(e=>state.bookmarks.includes(e.id)||state.notes[e.id]).length;
  $('#save-count').textContent=studyCount+items.length+marked.length;
  const empty=$('#saved-cards .empty');if(empty)empty.hidden=items.length+marked.length>0;
@@ -207,7 +207,7 @@ function renderChapterBookmarks(){
  button.setAttribute('aria-label',`Bookmarks: ${items.length} bookmarked verses in this chapter`);
  $('#chapter-bookmark-count').textContent=items.length;
  $('#chapter-bookmark-count').hidden=!items.length;
- $('#chapter-bookmark-list').innerHTML=items.length?items.map(item=>`<button type="button" class="verse-citation" data-read="${item.book}/${item.chapter}/${item.verse}">${esc(item.name)} ${item.chapter}:${item.verse}</button>`).join(''):'<p>No bookmarks in this chapter. Hold a verse to bookmark it.</p>';
+ $('#chapter-bookmark-list').innerHTML=items.length?items.map(item=>`<button type="button" class="verse-citation" data-read="${esc(item.book)}/${esc(item.chapter)}/${esc(item.verse)}">${esc(item.name)} ${esc(item.chapter)}:${esc(item.verse)}</button>`).join(''):'<p>No bookmarks in this chapter. Hold a verse to bookmark it.</p>';
 }
 $('#passage-note-toggle').onclick=()=>{
  if(!reading)return;

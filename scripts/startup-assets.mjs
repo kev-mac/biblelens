@@ -33,6 +33,10 @@ function stylesheetSource(path, source) {
   });
 }
 
+// Hash the exact script text the bundle inserts, including its readiness marker.
+const classicScriptText = (path, source) => source.replace(/\r\n?/g, '\n') + '\n;document.currentScript.dataset.biblelensReady = "true";\n//# sourceURL=' + path;
+const scriptHash = source => "'sha256-" + createHash('sha256').update(source.replace(/\r\n?/g, '\n')).digest('base64') + "'";
+
 export function classicScriptBundle(sources) {
   // A simple concatenation changes function hoisting across files: app.js
   // would call reader.js functions before their reader state is initialized.
@@ -41,7 +45,7 @@ export function classicScriptBundle(sources) {
   // Sources are build-time files, never user input. No eval/Function or extra
   // network requests are used. Carry any hosting-provided CSP nonce forward.
   for (const {path, body} of sources) new vm.Script(body, {filename: path});
-  return `'use strict';\n(() => {\n  const owner = document.currentScript;\n  const nonce = owner?.nonce || '';\n  const sources = ${JSON.stringify(sources.map(({path, body}) => [path, body]))};\n  for (const [path, source] of sources) {\n    const script = document.createElement('script');\n    if (nonce) script.nonce = nonce;\n    script.dataset.bundleSource = path;\n    script.textContent = source + '\\n;document.currentScript.dataset.biblelensReady = "true";\\n//# sourceURL=' + path;\n    try {\n      document.head.appendChild(script);\n      if (script.dataset.biblelensReady !== 'true') throw new Error('Application startup failed: ' + path);\n    } finally { script.remove(); }\n  }\n  owner.dataset.biblelensReady = 'true';\n})();\n`;
+  return `'use strict';\n(() => {\n  const owner = document.currentScript;\n  const nonce = owner?.nonce || '';\n  const sources = ${JSON.stringify(sources.map(({path, body}) => [path, body]))};\n  for (const [path, source] of sources) {\n    const script = document.createElement('script');\n    if (nonce) script.nonce = nonce;\n    script.dataset.bundleSource = path;\n    script.textContent = (${classicScriptText.toString()})(path, source);\n    try {\n      document.head.appendChild(script);\n      if (script.dataset.biblelensReady !== 'true') throw new Error('Application startup failed: ' + path);\n    } finally { script.remove(); }\n  }\n  owner.dataset.biblelensReady = 'true';\n})();\n`;
 }
 
 export function consolidateStartupAssets(assets) {
@@ -68,7 +72,17 @@ export function consolidateStartupAssets(assets) {
   const withoutOriginals = html.replace(stylesheetTag, tag => attribute(tag, 'rel')?.toLowerCase() === 'stylesheet' ? '' : tag).replace(scriptTag, (tag, attributes) => attribute(attributes, 'src') ? '' : tag);
   const pair = `<link rel="stylesheet" id="biblelens-app-styles" href="${manifest.css.path}"><script defer id="biblelens-app-script" src="${manifest.js.path}"></script>`;
   if (!/<\/head\s*>/i.test(withoutOriginals)) throw Error('Missing document head');
-  assets['/'].body = withoutOriginals.replace(/<\/head\s*>/i, pair + '</head>');
+  const inline = [...withoutOriginals.matchAll(scriptTag)].map(match => match[0].replace(/^<script\b[^>]*>/i, '').replace(/<\/script\s*>$/i, ''));
+  const hashes = [...new Set([...inline, ...jsSources.map(({path, body}) => classicScriptText(path, body))].map(scriptHash))];
+  // Inline styles support existing layout controls. Scripts use only exact build
+  // hashes; no inline handlers, eval, remote scripts, objects or base overrides.
+  const policy = ["default-src 'none'", "base-uri 'none'", "object-src 'none'", "frame-src 'none'", "form-action 'self'",
+    "script-src 'self' " + hashes.join(' '), "script-src-attr 'none'", "style-src 'self' 'unsafe-inline'",
+    "font-src 'self' data:", "img-src 'self' data: blob:", "worker-src 'self' blob:",
+    "connect-src 'self' https://scripture-lens.kvn-mcgwn.chatgpt.site https://tiles.openfreemap.org"].join('; ');
+  assets['/'].csp = policy;
+  const meta = `<meta http-equiv="Content-Security-Policy" content="${policy}">`;
+  assets['/'].body = withoutOriginals.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + meta).replace(/<\/head\s*>/i, pair + '</head>');
   return manifest;
 }
 

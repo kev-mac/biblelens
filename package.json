@@ -12,6 +12,7 @@
     "build:mobile": "node scripts/build-mobile.mjs",
     "check:places": "node scripts/check-places.mjs",
     "check:mobile": "node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs",
+    "check:ui": "node scripts/check-security-ui.mjs",
     "mobile:sync": "npm run build:mobile && cap sync",
     "mobile:android": "cap open android",
     "mobile:ios": "cap open ios",
@@ -32,6 +33,7 @@
     "drizzle-orm": "0.45.2",
     "esbuild": "0.28.2",
     "minisearch": "7.2.0",
+    "playwright": "1.64.1",
     "wink-lemmatizer": "3.0.4",
     "wordnet-db": "3.1.14"
   },
