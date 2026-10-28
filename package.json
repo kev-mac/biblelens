@@ -25,7 +25,7 @@
     "check:workspace": "node scripts/check-workspace-state.mjs && node scripts/check-workspace-search.mjs && node scripts/check-debates.mjs",
     "check:readability": "node scripts/check-readability.mjs",
     "check:readability:new": "node scripts/check-readability.mjs --new-production --strict",
-    "check:rc1": "node scripts/check-rc1.mjs",
+    "check:rc1": "node scripts/check-rc1.mjs && node scripts/check-rc1b.mjs",
     "check:ui": "node scripts/check-security-ui.mjs && node scripts/check-phase2-browser.mjs && node scripts/check-performance-browser.mjs && node scripts/check-hosted-csp.mjs",
     "check:search": "node scripts/check-search.mjs && node scripts/check-search-vocabulary.mjs && node scripts/check-workspace-search.mjs && node scripts/check-release-smoke.mjs",
     "release:smoke": "node scripts/release-smoke.mjs"

@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {chromium} from 'playwright';
+import {debateVerdict} from '../worker/debates.mjs';
+const sourceRecords=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
 const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8788';
 const output='.review/phone';fs.mkdirSync(output,{recursive:true});
 const executablePath=process.env.CHROME_PATH||(fs.existsSync('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')?'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome':undefined);
@@ -47,7 +49,7 @@ try{
   // Seed only this isolated browser profile with supported, pre-existing notebook data.
   await page.evaluate(()=>{state.verseNotes['0:1:1']={book:0,chapter:1,verse:1,name:'Genesis',title:'A question to revisit',text:'Which sources could help explain this passage?'};state.verseBookmarks['0:1:1']={book:0,chapter:1,verse:1,name:'Genesis',color:'yellow'};state.passageBookmarks['0:2']={book:0,chapter:2,name:'Genesis'};state.bookmarks.push(ENTRIES[0].id);state.investigations||={};state.investigations['phase2-review']={id:'phase2-review',title:'Two creation accounts',left:{book:0,chapter:1},right:{book:0,chapter:2},edition:'kjv',note:'Compare the order described in each account.',updatedAt:new Date().toISOString()};persist();});
   await go('#questions','#debate-results .phase2-debate-card');await shot('debates-text');
-  await page.locator('[data-debate-status="Textual conflict"]').click();await page.waitForFunction(()=>location.hash.includes('status=Textual'));await page.waitForSelector('#debate-results .phase2-debate-card');assert((await page.locator('#debate-results .phase2-verdict').allTextContents()).every(value=>value==='Wording differs'));
+  await page.locator('[data-debate-status="Textual conflict"]').click();await page.waitForFunction(()=>location.hash.includes('status=Textual'));await page.waitForSelector('#debate-results .phase2-debate-card');for(const card of await page.locator('#debate-results .phase2-debate-card').all()){const id=(await card.getAttribute('href')).split('#debate/')[1];const record=sourceRecords.find(row=>row.id===id);assert.equal(record.status,'Textual conflict');assert.equal(await card.locator('.phase2-verdict').textContent(),debateVerdict(record));}
   const filtered=await page.evaluate(()=>location.hash);const selected=page.locator('#debate-results a[href="#debate/early-ahaziah"]');const href=await selected.getAttribute('href');
   await selected.click();await page.waitForSelector('.phase2-sides:not([aria-busy])');await shot('debate-text');
   assert.equal(await page.locator('.phase2-side').count(),2);assert(await page.locator('.phase2-side blockquote').count()>=2);

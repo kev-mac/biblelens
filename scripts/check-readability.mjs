@@ -89,6 +89,9 @@ export function collections(directory = root) {
 // Newly authored RC1 connective prose is strict; exact owner-accepted imports
 // retain their reviewed wording and remain in the legacy report-only audit.
 export function newProductionCollections(directory = root) {
+  const rulings=JSON.parse(fs.readFileSync(path.join(directory,'data/rc1-rulings.json'),'utf8'));
+  // Approved short labels obey sentence/jargon limits; prose grades exclude labels.
+  for(const text of [...rulings.rulings.map(row=>row.label),'Evidence strength: '+rulings.evidenceStrength]){const result=assess(text);if(result.tooLong||result.unexplained)throw Error('Group A label exceeds limits: '+text);}
   const source = fs.readFileSync(path.join(directory,'src/accepted-questions.js'),'utf8');
   // Short labels/headings also obey sentence and jargon limits. FK collection
   // averages use full prose, so navigation labels do not dilute the grade.

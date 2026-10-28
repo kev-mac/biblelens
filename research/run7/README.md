@@ -33,7 +33,9 @@ Not settled is unchanged. All ambiguous rows are excluded from the meaning-chang
 Regenerate with `node research/run7/remap.mjs --write`.
 Verify with `node research/run7/remap.mjs`.
 The verifier checks exact coverage, source pins, mode labels, draft state, holds, and both tables.
-It checks that build number 275 remains unchanged and that no row has a tier.
+The verifier accepts draft build 275 or RC1 integration build 276 and checks that no row has a tier.
+Run 8b accepts only the 47 eligible Group A labels through `data/rc1-rulings.json`.
+This historical overlay stays unchanged, including all 19 holds and 1,867 remaining proposals.
 The rubric and authored review prose also receive the current two-tier readability check.
 Copied IDs, labels, source excerpts, and source reasons remain audit data, not rewritten card copy.
 

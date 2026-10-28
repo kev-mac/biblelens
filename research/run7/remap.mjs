@@ -106,7 +106,7 @@ if (process.argv.includes('--write')) {
     else assert(row.review_issues.length,row.id);
     assert(!('tier' in row));
   }
-  assert.equal(json('package.json').buildNumber,275);
+  assert([275,276].includes(json('package.json').buildNumber),'Run 7 draft build or RC1 integration build');
   console.log('PASS: exact draft coverage, source pins, mode labels, holds, change tables and no tier assignments.');
 }
 console.log(JSON.stringify(payload.counts,null,2));
