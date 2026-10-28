@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const context=vm.createContext({window:{}});
+vm.runInContext(fs.readFileSync('src/media-slots.js','utf8'),context);
+const {render}=context.window.BibleLensMedia;
+assert(!render().includes('<img'),'Empty slots must not request an image');
+const metadata={kind:'illustration',src:'/assets/example.webp',alt:'A draft <image> "label"',credit:'A & B',licence:'Pending review'};
+const image=render(metadata);
+assert(image.includes('loading="lazy"')&&image.includes('width="1600" height="900"'));
+assert(image.includes('Illustration')&&image.includes('Not a real portrait or historical evidence.'));
+assert(image.includes('&lt;image&gt; &quot;label&quot;')&&image.includes('A &amp; B'));
+for(const field of ['alt','credit','licence'])assert.throws(()=>render({...metadata,[field]:''}));
+assert.throws(()=>render({...metadata,context:'evidence'}));
+for(const src of ['javascript:alert(1)','https://example.test/a.webp','/assets/../private.png','/assets/x.svg'])assert.throws(()=>render({...metadata,src}));
+assert.throws(()=>render({...metadata,ratio:'100%'}));
+console.log('PASS: fixed image slots, lazy loading, required descriptions and rights fields, escaping, local assets, and illustration/evidence separation.');

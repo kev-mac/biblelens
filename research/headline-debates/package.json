@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:readability": "node check-candidates.mjs"
+  }
+}

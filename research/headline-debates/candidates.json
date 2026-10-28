@@ -1,0 +1,2937 @@
+{
+  "candidates": [
+    {
+      "number": 1,
+      "id": "headline-01",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "elhanan-slew-goliath-brother-supplied"
+      ],
+      "question": "Who killed Goliath: David or Elhanan?",
+      "side_a": {
+        "label": "David kills Goliath",
+        "kjv_refs": [
+          "1 Samuel 17:50"
+        ]
+      },
+      "side_b": {
+        "label": "Elhanan kills Goliath in the Hebrew text",
+        "kjv_refs": [
+          "2 Samuel 21:19"
+        ],
+        "reference_note": "The KJV adds brother here; this side compares the Hebrew and old Greek translation recorded for the same passage."
+      },
+      "summary_60_seconds": "The account in First Samuel names David as the man who killed Goliath. Second Samuel names Elhanan in another account. Its KJV wording says he killed Goliath's brother. The Hebrew text and old Greek translation cited by the record do not include the words for brother there. Those words do appear in the matching passage in Chronicles, which the KJV follows. That difference makes the translation central to this debate. Comparing the KJV verses alone would hide part of the issue. The record does not decide which version preserves the earlier wording. It also leaves open whether two people shared a name or one person had two names. These editions cannot establish what every ancient copy says. They also do not reveal why the KJV translators chose their wording.",
+      "what_would_settle_it": "Compare the earlier wording and the people named; the record establishes neither from the editions it cites.",
+      "why_selected": "A familiar David story makes a hidden translation choice easy to explore, with clear limits on the conclusion.",
+      "context_kjv_refs": [
+        "1 Chronicles 20:5"
+      ],
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "elhanan-slew-goliath-brother-supplied",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-12",
+          "scope_verbatim": "The KJV’s added words match the parallel verse in Chronicles. This comparison does not establish the translators’ intent or the italic marking of printed KJV editions; the packaged text contains no such markup. No claim is made about which of Samuel or Chronicles has the earlier wording, or whether two men named Goliath or two names for one man are meant. The Greek agrees with the Hebrew against the KJV, so both H and G apply. The Hebrew quoted is the Westminster Leningrad Codex digital text, with the consonants-only Aleppo-based edition as a second witness. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined, and the KJV translators’ source for their wording is not established here. English glosses in brackets are the researcher’s plain renderings, not lexicon entries. The Greek is Brenton’s printed edition of the Septuagint.",
+          "record_sha256": "d7eb4c5682f832c0ac0363a1a28873f410d59c2005564d0123aded81c4d1690d"
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 21: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA21.htm"
+        },
+        {
+          "label": "2 Samuel 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/10/21/"
+        },
+        {
+          "label": "2 Samuel 21: Hebrew, Aleppo-based edition (HAC), consonants only",
+          "url": "https://bolls.life/get-text/HAC/10/21/"
+        },
+        {
+          "label": "2 Samuel 21: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2SA21.htm"
+        },
+        {
+          "label": "1 Samuel 17: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA17.htm"
+        },
+        {
+          "label": "1 Chronicles 20: KJV",
+          "url": "https://ebible.org/eng-kjv/1CH20.htm"
+        },
+        {
+          "label": "1 Chronicles 20: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/13/20/"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 2,
+      "id": "headline-02",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "early-census-agent"
+      ],
+      "question": "Who prompted David's count: God or Satan?",
+      "side_a": {
+        "label": "The Lord prompts the count",
+        "kjv_refs": [
+          "2 Samuel 24:1"
+        ]
+      },
+      "side_b": {
+        "label": "Satan prompts the count",
+        "kjv_refs": [
+          "1 Chronicles 21:1"
+        ]
+      },
+      "summary_60_seconds": "David orders a count of Israel in both accounts. Second Samuel connects that action with the Lord's anger against Israel. First Chronicles instead names Satan as the one who prompts David. The contrast concerns the cause each account gives for the same action. A reader may propose that God allowed Satan to act as an agent. That would place the two causes at different levels within one explanation. Neither quoted verse states that combined account, however. The record therefore preserves the difference rather than treating that explanation as a fact. It also does not establish that either supernatural cause actually operated in history. Readers can compare what each narrator says without claiming access to the cause behind the event. The debate turns on stated causes and a proposed link between them.",
+      "what_would_settle_it": "Look for a stated link between divine permission and Satan; these verses do not supply that combined explanation.",
+      "why_selected": "Two short passages invite debate about responsibility, permission and what an explanation adds to a text.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "early-census-agent",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-11",
+          "scope_verbatim": "A difference in narrated causation; it does not independently establish a supernatural cause.",
+          "record_sha256": "2e5c5d76ece9ca98c06e9cd6c44cbefaec7e099daa99244fd82731e3a9c2d62e"
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 24 · primary text",
+          "url": "https://ebible.org/eng-kjv/2SA24.htm"
+        },
+        {
+          "label": "1 Chronicles 21 · primary text",
+          "url": "https://ebible.org/eng-kjv/1CH21.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 3,
+      "id": "headline-03",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "early-aaron"
+      ],
+      "question": "Did Aaron die at Mount Hor or Mosera?",
+      "side_a": {
+        "label": "Mount Hor",
+        "kjv_refs": [
+          "Numbers 20:28",
+          "Numbers 33:38"
+        ]
+      },
+      "side_b": {
+        "label": "Mosera",
+        "kjv_refs": [
+          "Deuteronomy 10:6"
+        ]
+      },
+      "summary_60_seconds": "Numbers places Aaron's death on Mount Hor. Deuteronomy names Mosera as the place where he died and was buried. Those names create a clear difference when readers treat them as separate locations. The record also points to the travel list in Numbers as relevant context. One possible explanation places Mount Hor within a larger region called Mosera. Under that reading, a mountain name and a regional name could describe one location. The passages cited do not explain such a link. A proposed map should therefore remain a proposal, rather than becoming a fact in the summary. The wording comparison can show what each account names. It cannot establish where Aaron actually died. This debate asks whether the place names conflict or refer to the same area at different scales.",
+      "what_would_settle_it": "Establish the geographical link between Mount Hor and Mosera; the cited passages alone cannot locate the historical death.",
+      "why_selected": "A simple place question helps readers separate a textual difference from a claim about an actual location.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "early-aaron",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-12",
+          "scope_verbatim": "A geographical tension in the text; these passages alone cannot settle the historical location.",
+          "record_sha256": "29da6976ea2ff9d7a836c64ead1eab47656793fa61e98b1f43a3d291ad355931"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Numbers 20 · primary text",
+          "url": "https://ebible.org/eng-kjv/NUM20.htm"
+        },
+        {
+          "label": "Deuteronomy 10 · primary text",
+          "url": "https://ebible.org/eng-kjv/DEU10.htm"
+        },
+        {
+          "label": "Numbers 33 · primary text",
+          "url": "https://ebible.org/eng-kjv/NUM33.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 4,
+      "id": "headline-04",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "early-stalls"
+      ],
+      "question": "Did Solomon have 4,000 or 40,000 horse stalls?",
+      "side_a": {
+        "label": "40,000 stalls",
+        "kjv_refs": [
+          "1 Kings 4:26"
+        ]
+      },
+      "side_b": {
+        "label": "4,000 stalls",
+        "kjv_refs": [
+          "2 Chronicles 9:25"
+        ]
+      },
+      "summary_60_seconds": "Kings gives Solomon forty thousand stalls for horses. Chronicles gives him four thousand stalls, a figure ten times smaller. Both accounts also give the same total of twelve thousand horsemen. That shared figure makes the different stall counts especially easy to compare. Readers do not need to master a long timeline to see the numerical gap. The record finds no conversion in these passages that explains the two amounts. It compares the readings in the packaged KJV, rather than an independently counted royal stable. Neither figure becomes a verified historical total just because the other differs. The question therefore has two levels: what the books report and how many stalls actually existed. The first comparison is clear in the text. The second would require evidence beyond the numbers printed here.",
+      "what_would_settle_it": "Find evidence explaining the tenfold difference; the record independently verifies neither count and supplies no conversion between them.",
+      "why_selected": "A striking numerical gap offers an accessible first debate about records, measurements and historical proof.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "early-stalls",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-11",
+          "scope_verbatim": "A discrepancy in the packaged readings; no claim that either figure is independently verified.",
+          "record_sha256": "0817be28bc021d7047f34fbd3c270137bcc59bb306ccd3460fc67daa714104a0"
+        }
+      ],
+      "sources": [
+        {
+          "label": "1 Kings 4 · primary text",
+          "url": "https://ebible.org/eng-kjv/1KI04.htm"
+        },
+        {
+          "label": "2 Chronicles 9 · primary text",
+          "url": "https://ebible.org/eng-kjv/2CH09.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 5,
+      "id": "headline-05",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "early-ahaziah"
+      ],
+      "question": "Was Ahaziah 22 or 42 when he became king?",
+      "side_a": {
+        "label": "Twenty-two years old",
+        "kjv_refs": [
+          "2 Kings 8:26"
+        ]
+      },
+      "side_b": {
+        "label": "Forty-two years old",
+        "kjv_refs": [
+          "2 Chronicles 22:2"
+        ]
+      },
+      "summary_60_seconds": "Kings says Ahaziah was twenty-two when he became king. Chronicles gives his age as forty-two in the KJV. Both accounts name the same mother and describe a reign lasting one year. Those shared details support comparing them as accounts of the same king taking power. The cited Hebrew text has the two different ages as well. The old Greek translation adds another complication: its Chronicles reading gives twenty, while Kings gives twenty-two. The record does not choose an original number from those readings. Nor does it claim that every ancient copy agrees with the editions cited. The central KJV question remains simple, even though the history of the wording is more complex. Two different ages cannot describe the same start of a reign in the ordinary sense.",
+      "what_would_settle_it": "Compare evidence for the earlier age reading; the cited editions do not establish which number is original.",
+      "why_selected": "The age gap is clear, while the third reading introduces textual evidence without inventing a final answer.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "early-ahaziah",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-12",
+          "scope_verbatim": "This extends the published record of the same ID with the Hebrew and Greek wording; the finding between the two KJV verses is unchanged. G applies at 2 Chronicles 22:2 only. No claim is made about which number is original. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "record_sha256": "395a80259be082175528f304bf7d08ecfb2ea544e5217f121d1554b4f186ca9f"
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Kings 8: KJV",
+          "url": "https://ebible.org/eng-kjv/2KI08.htm"
+        },
+        {
+          "label": "2 Kings 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/12/8/"
+        },
+        {
+          "label": "2 Chronicles 22: KJV",
+          "url": "https://ebible.org/eng-kjv/2CH22.htm"
+        },
+        {
+          "label": "2 Chronicles 22: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/14/22/"
+        },
+        {
+          "label": "2 Chronicles 22: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2CH22.htm"
+        },
+        {
+          "label": "2 Kings 8: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2KI08.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 6,
+      "id": "headline-06",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "jesse-sons-eight-or-seven"
+      ],
+      "question": "Was David the seventh or eighth son?",
+      "side_a": {
+        "label": "Eighth among eight sons",
+        "kjv_refs": [
+          "1 Samuel 16:10",
+          "1 Samuel 16:11",
+          "1 Samuel 17:12"
+        ]
+      },
+      "side_b": {
+        "label": "Seventh in the family list",
+        "kjv_refs": [
+          "1 Chronicles 2:13",
+          "1 Chronicles 2:14",
+          "1 Chronicles 2:15"
+        ]
+      },
+      "summary_60_seconds": "First Samuel describes seven sons of Jesse passing before Samuel before David is brought in. It also states that Jesse had eight sons. Chronicles lists Jesse's sons in order and calls David the seventh. The difference concerns both the total and David's position in the family. One possible explanation is that Chronicles leaves out a son who died without children. That could help explain why a family list is shorter. Neither book says that such a son has been omitted, however. The numbered places in Chronicles also mean this is more than an unnamed gap in a list. The record keeps the proposed explanation separate from what the passages state. Its Hebrew comparison uses a named digital edition. That edition does not show what every ancient copy of these passages contains.",
+      "what_would_settle_it": "Establish whether the family list omits a son; neither account explains an omission or its effect on numbering.",
+      "why_selected": "A family-tree puzzle offers a clear numerical comparison and a useful lesson about assuming missing information.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "jesse-sons-eight-or-seven",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-12",
+          "scope_verbatim": "A son who died without children could be left out of the Chronicles list, but that list gives ordinal numbers, and neither book says a son is omitted. The Hebrew quoted is the Westminster Leningrad Codex digital text; a digital named edition is not proof that every manuscript agrees.",
+          "record_sha256": "59c27309bf0cf26ff6b82ef73e3814af5502be122dee7beeb0650b4467369045"
+        }
+      ],
+      "sources": [
+        {
+          "label": "1 Samuel 16: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA16.htm"
+        },
+        {
+          "label": "1 Samuel 17: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA17.htm"
+        },
+        {
+          "label": "1 Chronicles 2: KJV",
+          "url": "https://ebible.org/eng-kjv/1CH02.htm"
+        },
+        {
+          "label": "1 Samuel 17: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/9/17/"
+        },
+        {
+          "label": "1 Chronicles 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/13/2/"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 7,
+      "id": "headline-07",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "shewbread-ahimelech-or-abiathar"
+      ],
+      "question": "Was the priest Ahimelech or Abiathar?",
+      "side_a": {
+        "label": "Ahimelech gives David bread",
+        "kjv_refs": [
+          "1 Samuel 21:1",
+          "1 Samuel 21:6",
+          "1 Samuel 22:20"
+        ]
+      },
+      "side_b": {
+        "label": "Mark names Abiathar",
+        "kjv_refs": [
+          "Mark 2:26"
+        ]
+      },
+      "summary_60_seconds": "First Samuel names Ahimelech as the priest David visits when he receives the sacred bread. It identifies Abiathar as Ahimelech's son, who escapes later in the account. Mark places the bread episode in the days of Abiathar the high priest. The names differ, but the wording also leaves a question about time. Mark's phrase could refer broadly to Abiathar's lifetime, including a period before he became high priest. First Samuel still names Ahimelech as the priest serving in the scene. The record preserves that possible broad reading without saying Mark clearly intended it. This is a comparison between passages, rather than a claim that the KJV mistranslates Mark. The cited Greek supports its wording there. The editions used do not establish agreement among every ancient copy of the text.",
+      "what_would_settle_it": "Determine whether Mark means Abiathar held office then or refers broadly to his lifetime; the record leaves this open.",
+      "why_selected": "This cross-testament example tests how a phrase about time can affect an apparent difference in names.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "shewbread-ahimelech-or-abiathar",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-12",
+          "scope_verbatim": "The KJV matches the Greek of Mark here, so no G tag applies; this is a difference between Mark and 1 Samuel. Mark’s phrase could be read loosely as “in the lifetime of Abiathar, who was later high priest”, but 1 Samuel gives Ahimelech as the priest in office. Hebrew and Greek verse numbers in 1 Samuel 21 run one ahead of the KJV. The texts quoted are the Westminster Leningrad Codex digital text and a digital Textus Receptus; a digital named edition is not proof that every manuscript agrees.",
+          "record_sha256": "28167298c478fbe872c26ce68428218b3d9a4280602dc714de3eb98f300fde86"
+        }
+      ],
+      "sources": [
+        {
+          "label": "1 Samuel 21: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA21.htm"
+        },
+        {
+          "label": "1 Samuel 22: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA22.htm"
+        },
+        {
+          "label": "1 Samuel 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/9/21/"
+        },
+        {
+          "label": "Mark 2: KJV",
+          "url": "https://ebible.org/eng-kjv/MRK02.htm"
+        },
+        {
+          "label": "Mark 2: Greek New Testament, Textus Receptus",
+          "url": "https://bolls.life/get-text/TR/41/2/"
+        }
+      ],
+      "testaments": [
+        "Old Testament",
+        "New Testament"
+      ]
+    },
+    {
+      "number": 8,
+      "id": "headline-08",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "lord-repented-of-saul-not-a-man-to-repent"
+      ],
+      "question": "Did God regret making Saul king?",
+      "side_a": {
+        "label": "Regret over making Saul king",
+        "kjv_refs": [
+          "1 Samuel 15:11",
+          "1 Samuel 15:35"
+        ]
+      },
+      "side_b": {
+        "label": "No change in the decision to remove Saul",
+        "kjv_refs": [
+          "1 Samuel 15:29"
+        ]
+      },
+      "summary_60_seconds": "One chapter says the Lord regretted making Saul king and also says he does not repent like a person. The KJV uses forms of the same English word across these statements. The Hebrew text likewise uses forms of one verb. Yet the statements concern different decisions within the story. The regret concerns appointing Saul, while Samuel's speech concerns the decision to remove him. The Hebrew verb can express sorrow, regret or a change of course. Sharing a verb does not prove that its sense stays identical in every sentence. The record shows the contrast while leaving that question open. Readers should compare the surrounding decisions as well as the repeated word. This debate cannot be settled simply by pointing to a shared root. It depends on what the word means in context.",
+      "what_would_settle_it": "Clarify the verb in each decision context; a shared Hebrew root does not establish that all three senses match.",
+      "why_selected": "A debate about changing one's mind encourages close reading while preserving the difference between regret and reversing a decision.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "lord-repented-of-saul-not-a-man-to-repent",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-12",
+          "scope_verbatim": "Verse 29 is Samuel’s speech about the decision to remove Saul; verses 11 and 35 are about the earlier decision to appoint him. A shared Hebrew root does not settle context, and the verb can cover regret, sorrow or a change of course. The record shows the wording contrast and does not decide whether the senses differ. The Hebrew quoted is the Westminster Leningrad Codex digital text; a digital named edition is not proof that every manuscript agrees.",
+          "record_sha256": "e7e45aceffa3be7c823f91b2399f6083d36edc01955181f0e6b6d84e0d6c678c"
+        }
+      ],
+      "sources": [
+        {
+          "label": "1 Samuel 15: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA15.htm"
+        },
+        {
+          "label": "1 Samuel 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/9/15/"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 9,
+      "id": "headline-09",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek"
+      ],
+      "question": "Did the 430 years cover Egypt alone?",
+      "side_a": {
+        "label": "The stay in Egypt",
+        "kjv_refs": [
+          "Exodus 12:40"
+        ]
+      },
+      "side_b": {
+        "label": "The time from the promise to the law",
+        "kjv_refs": [
+          "Galatians 3:17"
+        ]
+      },
+      "summary_60_seconds": "Exodus gives a period of four hundred and thirty years for Israel's stay in Egypt. Galatians uses that same number for the time from Abraham's promise to the law. That second span begins before Jacob's family arrives in Egypt. The old Greek translation of Exodus includes both Egypt and Canaan in the period. This wording differs from the KJV and changes what the years cover. Genesis and Acts also use four hundred years, adding a related numerical question. That shorter count could be rounded or could start at a different point. The cited passages do not state either explanation. The central debate asks when the longer count begins, rather than simply subtracting one number from another. The record establishes neither the original wording nor the actual length of the historical stay.",
+      "what_would_settle_it": "Establish where each period begins; the record does not choose an original reading or verify the historical duration.",
+      "why_selected": "A timeline puzzle links several books and shows why equal numbers can describe different spans of time.",
+      "context_kjv_refs": [
+        "Genesis 15:13",
+        "Acts 7:6"
+      ],
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-13",
+          "scope_verbatim": "G applies at Exodus 12:40 only, for the added words. The Greek of Genesis 15:13 agrees with the KJV and is quoted to show it. The numbers 400 and 430 can be reconciled if 400 is a round figure, or if the two counts begin at different points; none of the passages says so. Whether Galatians and Exodus can both stand depends on where the 430 years begin, which the KJV of Exodus states as the dwelling in Egypt. No claim is made about which form of Exodus 12:40 is original or about the actual length of any period. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+          "record_sha256": "cef6b530502b5c6c472c9597b7b2d438fc6247c91fc8acb431e0c49a0f1f4c15"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Exodus 12: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO12.htm"
+        },
+        {
+          "label": "Genesis 15: KJV",
+          "url": "https://ebible.org/eng-kjv/GEN15.htm"
+        },
+        {
+          "label": "Acts 7: KJV",
+          "url": "https://ebible.org/eng-kjv/ACT07.htm"
+        },
+        {
+          "label": "Galatians 3: KJV",
+          "url": "https://ebible.org/eng-kjv/GAL03.htm"
+        },
+        {
+          "label": "Exodus 12: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/2/12/"
+        },
+        {
+          "label": "Genesis 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/1/15/"
+        },
+        {
+          "label": "Exodus 12: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EXO12.htm"
+        },
+        {
+          "label": "Genesis 15: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/GEN15.htm"
+        },
+        {
+          "label": "Acts 7: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/44/7/"
+        },
+        {
+          "label": "Acts 7: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/44/7/"
+        },
+        {
+          "label": "Galatians 3: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/48/3/"
+        },
+        {
+          "label": "Galatians 3: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/48/3/"
+        }
+      ],
+      "testaments": [
+        "Old Testament",
+        "New Testament"
+      ]
+    },
+    {
+      "number": 10,
+      "id": "headline-10",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king"
+      ],
+      "question": "Did Moses leave Egypt in fear?",
+      "side_a": {
+        "label": "Moses fears and flees",
+        "kjv_refs": [
+          "Exodus 2:14",
+          "Exodus 2:15"
+        ]
+      },
+      "side_b": {
+        "label": "Moses leaves without fearing the king",
+        "kjv_refs": [
+          "Hebrews 11:27"
+        ]
+      },
+      "summary_60_seconds": "Exodus says Moses became afraid when his killing of an Egyptian became known. Pharaoh then sought to kill him, and Moses fled. Hebrews describes Moses leaving Egypt without fearing the king's anger. These statements pull in different directions if both describe the flight to Midian. But the record does not assume that they must describe that same departure. Hebrews could instead refer to the later departure with Israel. Another possible reading separates fear of discovery from fear of the king's anger. Hebrews does not explicitly identify the departure in the verse being compared. Its next verse mentions the Passover, but the record does not treat that sequence as a final answer. Readers must decide which event and which kind of fear each passage describes. The wording alone leaves those questions open.",
+      "what_would_settle_it": "Identify which departure Hebrews means and what Moses feared; the record does not decide between the stated readings.",
+      "why_selected": "A familiar escape story opens a debate about courage, fear and whether two accounts describe the same event.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-13",
+          "scope_verbatim": "No tag is proposed: the Hebrew and Brenton’s Greek agree with the KJV in Exodus. The two statements clash if Hebrews 11:27 refers to the flight to Midian. They can be reconciled if Hebrews refers instead to the later departure with all Israel, or if the fear in Exodus 2:14 is fear of discovery and not of the king’s wrath; Hebrews does not say which departure it means, and it mentions the passover only in the next verse. This record does not decide between those readings. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+          "record_sha256": "2fa0190a181d2f740c5e1c1e44f88ed350f5a285420e247b535bc7501c99596a"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Exodus 2: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO02.htm"
+        },
+        {
+          "label": "Hebrews 11: KJV",
+          "url": "https://ebible.org/eng-kjv/HEB11.htm"
+        },
+        {
+          "label": "Exodus 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/2/2/"
+        },
+        {
+          "label": "Exodus 2: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EXO02.htm"
+        },
+        {
+          "label": "Hebrews 11: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/58/11/"
+        },
+        {
+          "label": "Hebrews 11: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/58/11/"
+        }
+      ],
+      "testaments": [
+        "Old Testament",
+        "New Testament"
+      ]
+    },
+    {
+      "number": 11,
+      "id": "headline-11",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also"
+      ],
+      "question": "Did the ark hold only the stone tablets?",
+      "side_a": {
+        "label": "Only the two tablets",
+        "kjv_refs": [
+          "2 Chronicles 5:10",
+          "1 Kings 8:9"
+        ]
+      },
+      "side_b": {
+        "label": "Tablets, manna and a rod",
+        "kjv_refs": [
+          "Hebrews 9:4"
+        ]
+      },
+      "summary_60_seconds": "Kings and Chronicles say the ark held only the two stone tablets when it entered Solomon's temple. Hebrews describes the earlier worship tent and lists tablets, a pot of manna and Aaron's rod. Its KJV wording places those objects inside the ark. The difference sounds direct until the dates of the scenes are considered. The accounts describe different times, so the contents could have changed before the temple scene. None of the cited verses reports such a removal. Another question is whether the Greek phrase for location points to the ark or back to the tent. Exodus and Numbers place the pot and rod before the sacred objects, rather than explicitly inside the ark. The record preserves these limits. It does not establish that all the passages describe one unchanged collection of objects.",
+      "what_would_settle_it": "Clarify the location in Hebrews and any change in contents over time; the quoted verses report no removal.",
+      "why_selected": "A concrete object list makes it easy to examine how time and grammar can change an apparent conflict.",
+      "context_kjv_refs": [
+        "Exodus 16:33",
+        "Exodus 16:34",
+        "Numbers 17:10"
+      ],
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-13",
+          "scope_verbatim": "No tag is proposed: in each verse the KJV follows the Hebrew or Greek quoted. The two statements speak of different times: Hebrews of the tabernacle, Chronicles of the day the ark entered the temple. They can both stand if the pot and the rod were once inside the ark and had been taken out before Solomon’s day; no verse quoted reports that. The clash also depends on reading the Greek “in which” of Hebrews 9:4 as pointing to the ark, as the KJV’s wording does, and not back to the tabernacle of the verse before. The Numbers verse is 17:25 in the Hebrew numbering; only the KJV is quoted for Exodus and Numbers. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+          "record_sha256": "0ab50d74b65eda0698347599282e31ea1325b5472cd824395ddc937e37bc0853"
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Chronicles 5: KJV",
+          "url": "https://ebible.org/eng-kjv/2CH05.htm"
+        },
+        {
+          "label": "1 Kings 8: KJV",
+          "url": "https://ebible.org/eng-kjv/1KI08.htm"
+        },
+        {
+          "label": "Hebrews 9: KJV",
+          "url": "https://ebible.org/eng-kjv/HEB09.htm"
+        },
+        {
+          "label": "Exodus 16: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO16.htm"
+        },
+        {
+          "label": "Numbers 17: KJV",
+          "url": "https://ebible.org/eng-kjv/NUM17.htm"
+        },
+        {
+          "label": "2 Chronicles 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/14/5/"
+        },
+        {
+          "label": "2 Chronicles 5: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2CH05.htm"
+        },
+        {
+          "label": "Hebrews 9: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/58/9/"
+        },
+        {
+          "label": "Hebrews 9: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/58/9/"
+        }
+      ],
+      "testaments": [
+        "Old Testament",
+        "New Testament"
+      ]
+    },
+    {
+      "number": 12,
+      "id": "headline-12",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "whole-congregation-42360-or-the-sum-of-the-counts-given"
+      ],
+      "question": "Do the return lists add up to 42,360?",
+      "side_a": {
+        "label": "The stated total is 42,360",
+        "kjv_refs": [
+          "Ezra 2:64",
+          "Nehemiah 7:66"
+        ]
+      },
+      "side_b": {
+        "label": "The listed groups add to less",
+        "kjv_refs": [
+          "Ezra 2:3-60",
+          "Nehemiah 7:8-62"
+        ]
+      },
+      "summary_60_seconds": "Ezra and Nehemiah both give the returning community a total of forty-two thousand, three hundred and sixty people. Adding the listed groups produces smaller totals: twenty-nine thousand, eight hundred and eighteen in Ezra. Nehemiah's listed groups total thirty-one thousand and eighty-nine. Those sums come from the researcher's addition of the packaged KJV figures. Neither book explicitly says that its total must equal the sum of every listed group. Some people could therefore be included in the total without appearing in those counts. The record notes unnamed possibilities, including women or families without a stated figure. It does not identify which people explain the gap. Servants are counted separately after the total, so that distinction also matters. This is a debate about what a list covers, as well as whether its numbers add up.",
+      "what_would_settle_it": "Establish whom the total includes beyond the counted groups; the record does not identify the people behind the gap.",
+      "why_selected": "A useful numbers debate shows why a correct sum does not by itself establish that a list is complete.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "whole-congregation-42360-or-the-sum-of-the-counts-given",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-13",
+          "scope_verbatim": "No tag is proposed: the KJV total is the total of the Hebrew quoted in both books. The verse does not say that the total is the sum of the counts before it. The two can stand together if the congregation included people the list does not count — for example women, or families the list does not name; no verse quoted says who they were. The priestly families of Ezra 2:61–62 are named without a figure. Brenton’s Greek of Ezra 2:64 has a word for “about” before the figure, which the KJV and the Hebrew quoted do not have; that is noted as wording and no G is proposed on it. The sums are the researcher’s addition and rest on the packaged KJV figures; the differences between single counts in the two books are the subject of other records. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "record_sha256": "e4c30cf6e621c5b6e815b5186432c0ead45cf260a97bba91a101e9072823b681"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Ezra 2: KJV",
+          "url": "https://ebible.org/eng-kjv/EZR02.htm"
+        },
+        {
+          "label": "Nehemiah 7: KJV",
+          "url": "https://ebible.org/eng-kjv/NEH07.htm"
+        },
+        {
+          "label": "Ezra 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/15/2/"
+        },
+        {
+          "label": "Nehemiah 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/16/7/"
+        },
+        {
+          "label": "Ezra 2: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EZR02.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 13,
+      "id": "headline-13",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east"
+      ],
+      "question": "Are altar steps banned or required?",
+      "side_a": {
+        "label": "Do not climb altar steps",
+        "kjv_refs": [
+          "Exodus 20:26"
+        ]
+      },
+      "side_b": {
+        "label": "The altar has east-facing stairs",
+        "kjv_refs": [
+          "Ezekiel 43:17",
+          "Ezekiel 43:18"
+        ]
+      },
+      "summary_60_seconds": "Exodus forbids going up steps to the altar. Ezekiel describes an altar with stairs facing east, followed by rules presented in the Lord's name. The Hebrew text uses the same noun for the steps in both passages. The record treats this as a contrast between instructions, rather than someone breaking a rule. Several limits keep the debate open. The Exodus rule follows instructions about altars made from earth or uncut stone. Its stated concern is exposed nakedness, while another passage gives priests linen clothing that covers them. Ezekiel's altar also belongs to a vision of a building not yet built. Those differences may explain why the instructions vary. Neither passage names one of them as the reason the earlier rule does not apply. The record has not checked every altar elsewhere.",
+      "what_would_settle_it": "Clarify the rule’s range, clothing requirement and visionary setting; neither passage states why the instructions differ here.",
+      "why_selected": "Two concrete building instructions invite discussion about the reach of a rule and the importance of its setting.",
+      "context_kjv_refs": [
+        "Exodus 28:42"
+      ],
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-13",
+          "scope_verbatim": "No tag is proposed: the Hebrew and Brenton’s Greek agree with the KJV in both verses. The two can be reconciled in more than one way. The rule in Exodus follows a law about altars of earth and unhewn stone and may be limited to those; its stated reason, nakedness, is met for the priests by the linen breeches of Exodus 28:42; and Ezekiel’s altar is seen in a vision of a house not yet built. Neither passage states any of these as the reason the rule does not apply. The steps of altars in other books were not examined. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "record_sha256": "e7f2c783916f17a05230acb0cfc795801109ef8693d4eaee9b0c5d44b36b5ad3"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Exodus 20: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO20.htm"
+        },
+        {
+          "label": "Ezekiel 43: KJV",
+          "url": "https://ebible.org/eng-kjv/EZK43.htm"
+        },
+        {
+          "label": "Exodus 28: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO28.htm"
+        },
+        {
+          "label": "Exodus 20: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/2/20/"
+        },
+        {
+          "label": "Ezekiel 43: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/26/43/"
+        },
+        {
+          "label": "Exodus 20: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EXO20.htm"
+        },
+        {
+          "label": "Ezekiel 43: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EZK43.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 14,
+      "id": "headline-14",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "flying-creeping-things-some-may-be-eaten-or-none"
+      ],
+      "question": "Are locusts allowed as food or banned?",
+      "side_a": {
+        "label": "Some flying creatures may be eaten",
+        "kjv_refs": [
+          "Leviticus 11:21",
+          "Leviticus 11:22"
+        ]
+      },
+      "side_b": {
+        "label": "Every flying creeping thing is banned",
+        "kjv_refs": [
+          "Deuteronomy 14:19"
+        ]
+      },
+      "summary_60_seconds": "Leviticus allows four kinds of flying creeping creatures as food, including the locust. Deuteronomy calls every flying creeping thing unclean and says they must not be eaten. The record finds the same basic class of creatures named in the Hebrew and old Greek translation. That makes the exception in Leviticus important to the comparison. One reading treats Deuteronomy as a summary that leaves the earlier exception in place. Another includes the permitted kinds among the clean flying creatures mentioned in its next verse. Deuteronomy does not explicitly name those kinds or point back to the exception. The record leaves these readings possible rather than deciding which is intended. It also makes no new claim about modern animal categories or which law came first. The debate concerns the range of the two rules.",
+      "what_would_settle_it": "Determine whether Deuteronomy preserves the exception through its summary or clean-creature rule; the passage does not explain that link.",
+      "why_selected": "A clear food-rule question lets readers test the difference between a broad ban and a specific exception.",
+      "context_kjv_refs": [
+        "Deuteronomy 14:20"
+      ],
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "flying-creeping-things-some-may-be-eaten-or-none",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-13",
+          "scope_verbatim": "No tag is proposed: the Hebrew and Brenton’s Greek agree with the KJV in both books. The two can be reconciled if the “clean fowls” of Deuteronomy 14:20 are meant to take in the leaping kinds that Leviticus allows; Deuteronomy does not name them or say so. They can also be reconciled if Deuteronomy gives a summary and leaves the exception to Leviticus; it does not refer to it. No claim is made about what these creatures are or about which law is older. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "record_sha256": "08343199939e5f94796e05e5cf52907d4d73867c4de24cdb12423d688f73101d"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Leviticus 11: KJV",
+          "url": "https://ebible.org/eng-kjv/LEV11.htm"
+        },
+        {
+          "label": "Deuteronomy 14: KJV",
+          "url": "https://ebible.org/eng-kjv/DEU14.htm"
+        },
+        {
+          "label": "Leviticus 11: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/3/11/"
+        },
+        {
+          "label": "Deuteronomy 14: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/5/14/"
+        },
+        {
+          "label": "Leviticus 11: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/LEV11.htm"
+        },
+        {
+          "label": "Deuteronomy 14: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/DEU14.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 15,
+      "id": "headline-15",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "coverage-nt-jericho"
+      ],
+      "question": "Was Jesus entering or leaving Jericho?",
+      "side_a": {
+        "label": "Leaving Jericho",
+        "kjv_refs": [
+          "Mark 10:46"
+        ]
+      },
+      "side_b": {
+        "label": "Approaching Jericho",
+        "kjv_refs": [
+          "Luke 18:35"
+        ]
+      },
+      "summary_60_seconds": "Mark places the healing of a blind man as Jesus leaves Jericho. Luke places a blind man's healing as Jesus draws near to the city. The record compares the scenes because they share a request, the crowd's rebuke and a healing. The direction of travel stands out within these similar accounts. One proposed reading treats them as two events. Another suggests two city boundaries, so someone could leave one area while nearing another. Neither passage gives either explanation. The record leaves those ideas open without treating them as a proven map or sequence. The key question is whether both accounts describe one scene at the same boundary. The difference in wording is clear, while that question stays open. Readers should separate what each passage says from the extra links needed to join the accounts.",
+      "what_would_settle_it": "Establish whether the scenes share an event and city boundary; the proposed links are not stated in these passages.",
+      "why_selected": "A simple travel question makes a Gospel debate easy to follow while keeping possible ways to join the accounts open.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "coverage-nt-jericho",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-11",
+          "scope_verbatim": "Separate incidents or distinct city boundaries are proposed harmonizations, but neither explanation appears in these passages.",
+          "record_sha256": "5722d3c1ab86efe8c7695ac31b3ddf964979de5314120cd324cec5709be666fd"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Mark 10 (primary text)",
+          "url": "https://ebible.org/kjv/MRK10.htm"
+        },
+        {
+          "label": "Luke 18 (primary text)",
+          "url": "https://ebible.org/kjv/LUK18.htm"
+        }
+      ],
+      "testaments": [
+        "New Testament"
+      ]
+    },
+    {
+      "number": 16,
+      "id": "headline-16",
+      "recommended": true,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "he-rested-and-was-refreshed-or-fainteth-not-neither-is-weary"
+      ],
+      "question": "Does God need rest or never grow tired?",
+      "side_a": {
+        "label": "Rest and refreshment after creation",
+        "kjv_refs": [
+          "Exodus 31:17"
+        ]
+      },
+      "side_b": {
+        "label": "The Creator never grows weary",
+        "kjv_refs": [
+          "Isaiah 40:28"
+        ]
+      },
+      "summary_60_seconds": "Exodus says the Lord rested and was refreshed after making heaven and earth. Isaiah says the Creator does not grow weary. A tension arises if being refreshed means recovering from tiredness. Yet refreshment does not necessarily assert that someone was tired beforehand. It could describe stopping work in figurative language. The record keeps that possible reading open rather than treating fatigue as an established claim. The KJV follows the Hebrew wording in Exodus. The old Greek translation cited there speaks of stopping and resting without a word for being refreshed. That difference adds evidence about wording, but does not choose the original form of the passage. The Greek of Isaiah was not compared in this record. The debate therefore needs careful attention to what rest and refreshment mean in each setting.",
+      "what_would_settle_it": "Determine whether refreshment implies fatigue or describes stopping work; the record leaves that meaning open in the passage.",
+      "why_selected": "A familiar human experience helps explain figurative language without assuming a religious belief or a scientific claim.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "he-rested-and-was-refreshed-or-fainteth-not-neither-is-weary",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-13",
+          "scope_verbatim": "G applies at Exodus 31:17, for the Greek’s lack of “was refreshed”; Isaiah 40:28 is the other side and carries no tag. The Greek of Isaiah 40:28 was not compared. A tension arises if refreshment is taken to imply prior fatigue; the statements can be reconciled if “was refreshed” is a figure of speech for ceasing from work and not a report of recovered strength; Exodus does not say so. No H is proposed; “was refreshed” is a fair rendering of the Hebrew verb quoted. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "record_sha256": "f02d44cedca0a8dd9a9de767b724d5978d5c8b271c669a339fcc0c2d4e3bb6f6"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Exodus 31: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO31.htm"
+        },
+        {
+          "label": "Isaiah 40: KJV",
+          "url": "https://ebible.org/eng-kjv/ISA40.htm"
+        },
+        {
+          "label": "Exodus 31: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/2/31/"
+        },
+        {
+          "label": "Isaiah 40: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/23/40/"
+        },
+        {
+          "label": "Exodus 31: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EXO31.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 17,
+      "id": "headline-17",
+      "recommended": true,
+      "comparison": "text-vs-science",
+      "source_record_ids": [
+        "legacy-science-1",
+        "genesis-1-celestial-sequence"
+      ],
+      "question": "Did plants appear before the Sun?",
+      "side_a": {
+        "label": "Plants first, if the days show first creation",
+        "kjv_refs": [
+          "Genesis 1:11-19"
+        ]
+      },
+      "side_b": {
+        "label": "The Sun formed before Earth and its plants",
+        "kjv_refs": [],
+        "reference_note": "No KJV passage states the scientific model; use the external sources listed for this candidate."
+      },
+      "summary_60_seconds": "Genesis places seed-bearing plants on the third day and the heavenly lights on the fourth. Read as their first physical creation, that order puts plants before the Sun. The scientific model cited by the record places the Sun before Earth and its plants. This comparison concerns order, rather than only the length of a day. Genesis already describes light before the plants appear. The record therefore does not claim that the plants had no light at all. A literary arrangement, miraculous light or the later visibility of existing lights would change the claim being tested. The science sources do not establish those readings of the passage. Science models natural processes and cannot test an unspecified miracle on its own. Calling stars lights is not itself the error alleged by this record.",
+      "what_would_settle_it": "Clarify whether the days mean first physical creation; alternative readings change the claim, and unspecified miracles remain outside this test.",
+      "why_selected": "A familiar origins question has a clear sequence, strong science sources and two duplicate records combined into one candidate.",
+      "context_kjv_refs": [
+        "Genesis 1:3"
+      ],
+      "current_status": "Disagrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "legacy-science-1",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "The strongest disagreement is the Sun–Earth–plants sequence under a literal first-creation reading. A literary arrangement, later visibility of an existing Sun, or miraculous light changes the claim being evaluated; these readings are not established by the scientific sources. Science models natural processes and cannot independently test an unspecified miracle.",
+          "record_sha256": "b0d2b0a2419123fcf4830979e4d17dafad3e05a6ce7c9073a549c8d287bbb036"
+        },
+        {
+          "id": "genesis-1-celestial-sequence",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "This assessment applies to a literal first-creation chronology. A literary or theological reading does not necessarily make the same scientific claim. Reading this as the later visibility of already-existing lights also changes the claim being evaluated; NASA does not establish that interpretation.",
+          "record_sha256": "ebbcfab3ef598a42d6067337e64d1dada8579496bb4b5a4ec47d4d87a5170f56"
+        }
+      ],
+      "sources": [
+        {
+          "label": "NASA · Sun formation",
+          "url": "https://science.nasa.gov/sun/facts/"
+        },
+        {
+          "label": "OpenStax Biology 2e · photosynthesis",
+          "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
+        },
+        {
+          "label": "NASA: How did the solar system form?",
+          "url": "https://spaceplace.nasa.gov/solar-system-formation/en/"
+        },
+        {
+          "label": "Genesis 1:11–19 (WEB)",
+          "url": "https://ebible.org/engwebp/GEN01.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 18,
+      "id": "headline-18",
+      "recommended": true,
+      "comparison": "text-vs-science",
+      "source_record_ids": [
+        "legacy-science-4"
+      ],
+      "question": "Does the poem describe a motionless Earth?",
+      "side_a": {
+        "label": "Earth never moves, on a physical reading",
+        "kjv_refs": [
+          "Psalms 104:5"
+        ]
+      },
+      "side_b": {
+        "label": "Earth spins and travels around the Sun",
+        "kjv_refs": [],
+        "reference_note": "No KJV passage states the scientific model; use the external sources listed for this candidate."
+      },
+      "summary_60_seconds": "The psalm describes Earth as firmly set so that it will not be removed. If that means Earth never moves physically, the claim conflicts with the scientific account cited here. Earth spins and travels around the Sun. Those motions are the basis for the record's conditional disagreement. But the passage is poetry, and its meaning is part of the question. Stability or permanence can be described without making a claim about motion through space. Under that reading, the poem need not deny either of the motions in the scientific model. The record therefore does not label every reading of this verse a scientific error. It asks what sort of statement the poem is making. A decision about that meaning must come before applying the physical comparison to the passage.",
+      "what_would_settle_it": "Determine whether the poem asserts physical stillness or lasting stability; only the physical reading conflicts with the cited model.",
+      "why_selected": "A short poem offers a focused debate about literal readings, science and the limits of figurative language.",
+      "current_status": "Disagrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "legacy-science-4",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "The passage is poetry. Stability or permanence is another reading; the disagreement applies to physical immobility.",
+          "record_sha256": "83e712168fdaea1738e7dcd7a63b07805affa85de75d7150982eda2173187345"
+        }
+      ],
+      "sources": [
+        {
+          "label": "NASA: Earth orbit and rotation",
+          "url": "https://science.nasa.gov/earth/facts/"
+        },
+        {
+          "label": "NASA · Earth rotation and orbit",
+          "url": "https://science.nasa.gov/earth/facts/"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 19,
+      "id": "headline-19",
+      "recommended": true,
+      "comparison": "text-vs-science",
+      "source_record_ids": [
+        "science-sky-dome"
+      ],
+      "question": "Is the sky a solid roof or layers of gas?",
+      "side_a": {
+        "label": "A solid roof holds back upper waters, on one reading",
+        "kjv_refs": [
+          "Genesis 1:6",
+          "Genesis 1:7"
+        ]
+      },
+      "side_b": {
+        "label": "Layers of gas become thinner toward space",
+        "kjv_refs": [],
+        "reference_note": "No KJV passage states the scientific model; use the external sources listed for this candidate."
+      },
+      "summary_60_seconds": "Genesis describes a divider between waters below and waters above. One reading treats that divider as a solid roof supporting an upper sea. The record compares that physical model with measured layers of gas around Earth. A rigid roof holding an ocean does not fit that structure. However, the meaning of the passage is disputed in the sources the record cites. One scholar argues for a solid sky, while another reads the upper waters as rain-bearing clouds. Water in clouds does not itself conflict with the scientific account. The record assesses the solid-roof reading without claiming that every interpretation makes the same physical claim. The verse alone also does not establish a flat Earth. This is the record's conditional comparison, rather than a space agency's judgment on scripture.",
+      "what_would_settle_it": "Clarify the divider and upper waters in context; the physical comparison does not settle their disputed meaning in the text.",
+      "why_selected": "A visual question connects an ancient sky description with science while keeping the disputed interpretation separate from measured structure.",
+      "current_status": "Disagrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "science-sky-dome",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "“Snowglobe Earth” is a modern analogy for the dome interpretation, not a phrase or complete model stated in this verse. Verse 6 alone does not establish a flat Earth. The physical dome model disagrees with science; the lexical and literary interpretation remains disputed. This is our conditional assessment, not a NASA judgment on scripture.",
+          "record_sha256": "b93a0c9b4d3a920877b7f55c3e111b48c5a6258a9bdadaca787d96b9c59b6493"
+        }
+      ],
+      "sources": [
+        {
+          "label": "NASA · atmospheric layers",
+          "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+        },
+        {
+          "label": "Paul H. Seely · firmament interpretation (WTJ, 1991; preview)",
+          "url": "https://www.galaxie.com/article/wtj53-2-04"
+        },
+        {
+          "label": "Vern S. Poythress · alternative reading (WTJ, 2015; PDF)",
+          "url": "https://frame-poythress.org/wp-content/uploads/2015/12/2015Poythress-RainWater-WTJ77.2.pdf"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 20,
+      "id": "headline-20",
+      "recommended": true,
+      "comparison": "text-vs-science",
+      "source_record_ids": [
+        "joshua-prolonged-daylight"
+      ],
+      "question": "Does a delayed sunset fit Earth’s normal spin?",
+      "side_a": {
+        "label": "Daylight lasts about an extra day, if read literally",
+        "kjv_refs": [
+          "Joshua 10:12-14"
+        ]
+      },
+      "side_b": {
+        "label": "Earth’s normal spin produces the ordinary daily cycle",
+        "kjv_refs": [],
+        "reference_note": "No KJV passage states the scientific model; use the external sources listed for this candidate."
+      },
+      "summary_60_seconds": "Joshua speaks to the Sun and Moon during a battle. The account says sunset was delayed for about a day and credits divine action. A literal extra day of light does not follow Earth's normal spin. The cited science source describes that normal cycle. It does not tell us what happened in this battle. The record does not claim that Earth stopped spinning or work out what a sudden stop would cause. It also gives no date for the event. The passage names Jasher as a source and uses heightened battle language. Reading that language as poetry changes the claim being tested. Describing the Sun as moving is not itself the issue here. The record compares the extra daylight claim with a normal physical model, while leaving an unspecified miracle untested.",
+      "what_would_settle_it": "Clarify whether the scene claims extra physical daylight; the record gives no mechanism with which to test a miracle.",
+      "why_selected": "A vivid battle scene invites a science debate without adding claims about Earth stopping or the effects of a stop.",
+      "current_status": "Disagrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "joshua-prolonged-daylight",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-12",
+          "scope_verbatim": "This conditional comparison does not show Earth stopped rotating, calculate physical consequences, identify a historical date, or disprove supernatural intervention. NASA supplies the ordinary physical model, not a reconstruction of this battle. A figurative reading does not assert the same physical event.",
+          "record_sha256": "8181ce5fbf39ea13df87ff2223ff31ccdc94e9bc5b92630247683dc92104e2c0"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Joshua 10: Sun, Moon and delayed sunset",
+          "url": "https://ebible.org/eng-kjv/JOS10.htm"
+        },
+        {
+          "label": "NASA: Earth orbit and rotation",
+          "url": "https://science.nasa.gov/earth/facts/"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 21,
+      "id": "headline-21",
+      "recommended": true,
+      "comparison": "text-vs-science",
+      "source_record_ids": [
+        "genesis-1-birds-before-land-animals"
+      ],
+      "question": "Did birds come before land animals?",
+      "side_a": {
+        "label": "Birds first, if the days mark first appearances",
+        "kjv_refs": [
+          "Genesis 1:21",
+          "Genesis 1:23-25",
+          "Genesis 1:31"
+        ]
+      },
+      "side_b": {
+        "label": "Land-dwelling ancestors of birds came first",
+        "kjv_refs": [],
+        "reference_note": "No KJV passage states the scientific model; use the external sources listed for this candidate."
+      },
+      "summary_60_seconds": "Genesis places birds on day five and land animals on day six. The cited science account says birds came from dinosaurs that lived on land. Those ancestors would have to come before birds. The orders conflict if both days describe the first appearance of the groups. That reading must also include birds' land ancestors within the day-six group. The Bible's everyday animal groups do not match modern science groups exactly. The record does not say every land species came before every bird species. A literary plan or the later appearance of creatures already alive would change the claim. The science source does not prove those readings. The record gives no date and makes no new claim about Hebrew or Greek. An unspecified miracle also lies beyond what this science comparison can test.",
+      "what_would_settle_it": "Clarify whether the days mark first appearances and include birds’ land ancestors; other readings change the claim being tested.",
+      "why_selected": "An accessible origins question tests relative order while teaching readers to check whether two sources use comparable categories.",
+      "current_status": "Disagrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "genesis-1-birds-before-land-animals",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-17",
+          "scope_verbatim": "A literary or theological arrangement, a later appearance of already-existing creatures, or miraculous creation changes the claim being evaluated; none is established by the science source. The KJV categories are ordinary descriptions, not modern taxonomic ranks: the conditional comparison assumes the day-six land animals include terrestrial ancestors of birds. No Hebrew or Greek lexical finding is claimed. Science models natural processes and cannot independently test an unspecified miracle. This does not reconstruct events, assign a date or give a verdict on the whole passage.",
+          "record_sha256": "f67c98c99d2bd8bab3adaab3f2a74ae6ef9314ec19b32febd01751ba3d862c7b"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Genesis 1 · KJV creation sequence",
+          "url": "https://ebible.org/eng-kjv/GEN01.htm"
+        },
+        {
+          "label": "OpenStax Biology 2e · 29.5 Birds, Evolution of Birds",
+          "url": "https://openstax.org/books/biology-2e/pages/29-5-birds"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 22,
+      "id": "headline-22",
+      "recommended": true,
+      "comparison": "text-vs-science",
+      "source_record_ids": [
+        "genesis-7-worldwide-flood",
+        "genesis-9-humanity-from-noahs-family"
+      ],
+      "question": "Does a recent worldwide flood fit the evidence?",
+      "side_a": {
+        "label": "A recent global flood leaves only Noah’s household",
+        "kjv_refs": [
+          "Genesis 7:19",
+          "Genesis 7:20",
+          "Genesis 7:22",
+          "Genesis 7:23",
+          "Genesis 8:13",
+          "Genesis 9:19"
+        ]
+      },
+      "side_b": {
+        "label": "Long natural records and human histories",
+        "kjv_refs": [],
+        "reference_note": "No KJV passage states the scientific model; use the external sources listed for this candidate."
+      },
+      "summary_60_seconds": "Genesis describes a flood covering mountains, with Noah and his household as the only people left alive. Reading this as a recent global event conflicts with the evidence reviewed here. Ice layers, lake deposits, linked tree rings and traces of human activity point to much longer histories. Studies of genes also support a deeper human past. One old object or family line cannot by itself rule out a later flood. The test concerns a global flood and all people being replaced by one family through normal natural processes. Shared ancestry within a larger group is different. The studies give no direct headcount or eight-person test. The text gives no calendar year here. A local flood or literary reading changes the claim. Science cannot test an unspecified miracle or a claim that a miracle restored the evidence.",
+      "what_would_settle_it": "Clarify the flood’s scale and family-only survival claim; science cannot test a claim that a miracle restored the evidence.",
+      "why_selected": "A familiar flood debate joins several kinds of evidence and keeps the family-only survival claim within the same candidate.",
+      "current_status": "Disagrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "genesis-7-worldwide-flood",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-17",
+          "scope_verbatim": "Disagrees applies to a recent, globe-covering physical event, not to every flood in every geological period. Genesis supplies no absolute calendar date here; no flood year, mountain height or water volume is calculated. A regional, literary or theological reading changes the claim. Science does not independently test an unspecified miracle or a proposal that evidence was supernaturally restored. Genesis 7:21–23 concerns land-dwelling, air-breathing life outside the ark; this record does not claim that the narrative says every aquatic organism or microorganism died. The archaeological sequence is not an annual census, and the tree chronology is assembled from overlapping trees, not one tree that lived for twelve millennia.",
+          "record_sha256": "881ac0aa7ec30c2624588afc0df2caeea3a115c2958e01bd45ee18ae11280746"
+        },
+        {
+          "id": "genesis-9-humanity-from-noahs-family",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-17",
+          "scope_verbatim": "No minimum census population, precise bottleneck date or universally excluded ancestral couple is inferred. Effective population size is not a literal headcount. A couple or family being genealogical ancestors within a larger population is a different claim, as are regional survival and literary or theological readings. The cited study does not test miraculous creation or restoration of genetic diversity.",
+          "record_sha256": "97b83bb6de9fb747cce085b5686f6e602cc243a115f03df013183a2aeea0f08c"
+        }
+      ],
+      "sources": [
+        {
+          "label": "KJV · Genesis 7",
+          "url": "https://ebible.org/eng-kjv/GEN07.htm"
+        },
+        {
+          "label": "KJV · Genesis 8",
+          "url": "https://ebible.org/eng-kjv/GEN08.htm"
+        },
+        {
+          "label": "Svensson et al. (2008) · Greenland annual-layer chronology",
+          "url": "https://cp.copernicus.org/articles/4/47/2008/"
+        },
+        {
+          "label": "Nakagawa et al. (2012) · Continuous Lake Suigetsu sediment record",
+          "url": "https://eprints.ncl.ac.uk/185090"
+        },
+        {
+          "label": "Friedrich et al. (2004) · Hohenheim oak and pine chronology",
+          "url": "https://www.cambridge.org/core/journals/radiocarbon/article/12460year-hohenheim-oak-and-pine-treering-chronology-from-central-europea-unique-annual-record-for-radiocarbon-calibration-and-paleoenvironment-reconstructions/41104F23F7389472787A965C7AD6D702"
+        },
+        {
+          "label": "Mallick et al. (2016) · Simons Genome Diversity Project",
+          "url": "https://www.eva.mpg.de/documents/Nature/Mallick_Simons_Nature_2016_2351072.pdf"
+        },
+        {
+          "label": "Hawks et al. (2000) · Tests and limits of population bottleneck inference",
+          "url": "https://academic.oup.com/mbe/article/17/1/2/975516"
+        },
+        {
+          "label": "Hayes et al. (2022) · Madjedbebe grinding-stone sequence",
+          "url": "https://www.nature.com/articles/s41598-022-15174-x"
+        },
+        {
+          "label": "KJV · Genesis 9",
+          "url": "https://ebible.org/eng-kjv/GEN09.htm"
+        },
+        {
+          "label": "KJV · Genesis 6",
+          "url": "https://ebible.org/eng-kjv/GEN06.htm"
+        },
+        {
+          "label": "KJV · Genesis 2",
+          "url": "https://ebible.org/eng-kjv/GEN02.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 23,
+      "id": "headline-23",
+      "recommended": true,
+      "comparison": "text-vs-science",
+      "source_record_ids": [
+        "genesis-1-creation-and-earth-age"
+      ],
+      "question": "Is Earth thousands or billions of years old?",
+      "side_a": {
+        "label": "A young Earth inferred from days and family lists",
+        "kjv_refs": [
+          "Genesis 1:31",
+          "Genesis 2:2",
+          "Genesis 5:5",
+          "Genesis 11:10"
+        ]
+      },
+      "side_b": {
+        "label": "An ancient Earth in scientific dating",
+        "kjv_refs": [],
+        "reference_note": "No KJV passage states the scientific model; use the external sources listed for this candidate."
+      },
+      "summary_60_seconds": "A young Earth can be inferred from ordinary creation days, an unbroken family timeline and later dating assumptions. The quoted verses give no present age for Earth and no calendar year for creation. The science sources place Earth's formation about four and a half billion years ago. Dated material found with early human remains also points to a long human past. These timescales conflict with fitting all Earth and human history into only several thousand years. The record does not calculate a biblical creation year. It also does not assume every family list is complete. Reading the days as literary, allowing long gaps or changing the order changes the comparison. The fossil date is an estimate with a margin of error. It does not mark the first human or settle the claim of divine creation.",
+      "what_would_settle_it": "Clarify the young-Earth inference and its dating assumptions; the verses state no creation year, and scientific ages remain estimates.",
+      "why_selected": "A widely debated age question clearly separates an interpretation built from passages from a date explicitly stated in them.",
+      "current_status": "Disagrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "genesis-1-creation-and-earth-age",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-17",
+          "scope_verbatim": "Disagrees applies only to a young-Earth chronology, not to the claim of divine creation itself. No creation year is calculated, genealogies are not assumed complete without qualification, and different textual traditions are not treated as one numerical chronology. Literary days, long intervals and nonchronological readings change the comparison. The fossil age is a published estimate with uncertainty, not the exact first appearance of humanity.",
+          "record_sha256": "fde056485ed49a8ae4cb6870553d783bc7705309f7b71a3dc332e79c21fbb7cf"
+        }
+      ],
+      "sources": [
+        {
+          "label": "KJV · Genesis 1",
+          "url": "https://ebible.org/eng-kjv/GEN01.htm"
+        },
+        {
+          "label": "KJV · Genesis 2",
+          "url": "https://ebible.org/eng-kjv/GEN02.htm"
+        },
+        {
+          "label": "KJV · Genesis 5",
+          "url": "https://ebible.org/eng-kjv/GEN05.htm"
+        },
+        {
+          "label": "KJV · Genesis 11",
+          "url": "https://ebible.org/eng-kjv/GEN11.htm"
+        },
+        {
+          "label": "NASA · Earth formation and age",
+          "url": "https://science.nasa.gov/earth/facts/"
+        },
+        {
+          "label": "Richter et al. (2017) · Dating the Jebel Irhoud fossils",
+          "url": "https://www.nature.com/articles/nature22335"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 24,
+      "id": "headline-24",
+      "recommended": true,
+      "comparison": "text-vs-science",
+      "source_record_ids": [
+        "genesis-30-striped-rods-and-inheritance"
+      ],
+      "question": "Can seeing striped rods shape a lamb’s coat?",
+      "side_a": {
+        "label": "Viewing patterned rods causes inherited markings, on one reading",
+        "kjv_refs": [
+          "Genesis 30:37",
+          "Genesis 30:39",
+          "Genesis 30:41",
+          "Genesis 30:42",
+          "Genesis 31:9",
+          "Genesis 31:12"
+        ]
+      },
+      "side_b": {
+        "label": "Inherited genes help shape coat patterns",
+        "kjv_refs": [],
+        "reference_note": "No KJV passage states the scientific model; use the external sources listed for this candidate."
+      },
+      "summary_60_seconds": "Genesis describes patterned young animals after Jacob places peeled rods where the flocks mate. If seeing the rods caused inherited markings, that would conflict with the genetic evidence cited here. A study changed a sheep gene and found changes in coat colour and patterns. It did not test Jacob's rods or recreate his flocks. The story also says Jacob treated stronger and weaker animals differently. Selecting traits already present therefore remains a separate possible reading. Genesis later credits God with the outcome, so the story need not claim a natural effect from seeing rods. The study does not explain every coat trait in every species. It also does not disprove a miracle or a literary reading. The record's disagreement applies only if seeing the rods is treated as the cause of inherited patterns.",
+      "what_would_settle_it": "Clarify whether seeing rods is the claimed cause; the experiment does not reconstruct the flock or test miraculous explanations.",
+      "why_selected": "A surprising breeding scene invites a clear debate about inherited traits, causal claims and what an experiment actually tests.",
+      "current_status": "Disagrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "genesis-30-striped-rods-and-inheritance",
+          "mode": "science",
+          "status": "Disagrees",
+          "checked": "2026-10-17",
+          "scope_verbatim": "Disagrees is conditional on treating the visual stimulus itself as a heritable-pattern mechanism. The cited sheep experiment is not a reconstruction of ancient flocks, does not explain every coat trait or species, and does not rule out selection of existing variation. No original-language botanical or zoological identification is claimed. Miracle and literary interpretations are not experimentally disproved.",
+          "record_sha256": "0222b49f5011aa03dd1e53e31e75b24e931ab83b6dbbba33492e9a925a57988e"
+        }
+      ],
+      "sources": [
+        {
+          "label": "KJV · Genesis 30",
+          "url": "https://ebible.org/eng-kjv/GEN30.htm"
+        },
+        {
+          "label": "KJV · Genesis 31",
+          "url": "https://ebible.org/eng-kjv/GEN31.htm"
+        },
+        {
+          "label": "Zhang et al. (2017) · Experimental alteration of sheep coat patterns",
+          "url": "https://www.nature.com/articles/s41598-017-08636-0"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 25,
+      "id": "headline-25",
+      "recommended": true,
+      "comparison": "text-vs-history",
+      "source_record_ids": [
+        "legacy-history-10"
+      ],
+      "question": "Does Quirinius’s census fit a birth under Herod?",
+      "side_a": {
+        "label": "A census within a Herod-era birth setting",
+        "kjv_refs": [
+          "Luke 2:2",
+          "Matthew 2:1"
+        ]
+      },
+      "side_b": {
+        "label": "The same census after Herod’s death",
+        "kjv_refs": [
+          "Luke 2:2",
+          "Matthew 2:1"
+        ],
+        "reference_note": "These verses give the claim under review. The outside source supplies the historical comparison."
+      },
+      "summary_60_seconds": "Luke connects the birth setting with a census under Quirinius. Matthew places the birth in the days of Herod. Josephus places the census he describes after the removal of Archelaus, which followed Herod's death. Using that same census for a birth during Herod's rule therefore creates a conflict in time. The record's conclusion depends on identifying the census in Luke with the one Josephus describes. It does not establish that every proposed reading of Luke makes that identification. Other explanations need additional evidence rather than an assumption that the dates must fit. This draft adds no calendar year or earlier census to solve the problem. The question is about the sequence of rulers and the identity of the event. Those limits keep a familiar historical debate tied to the actual record.",
+      "what_would_settle_it": "Establish whether Luke means the census Josephus describes; other readings need more evidence than this record supplies.",
+      "why_selected": "A well-known birth timeline compares a biblical setting with an external account and makes its central assumption explicit.",
+      "current_status": "Disagrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "legacy-history-10",
+          "mode": "history",
+          "status": "Disagrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "A chronological tension assuming this is the census Josephus describes. Other proposed readings require additional evidence.",
+          "record_sha256": "f8ee10bedeb44802542383b8537ec8db6c159cc07db2e77d7b6e53870637c3b5"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 17",
+          "url": "https://penelope.uchicago.edu/josephus/ant-17.html"
+        },
+        {
+          "label": "Josephus, Antiquities 18",
+          "url": "https://penelope.uchicago.edu/josephus/ant-18.html"
+        }
+      ],
+      "testaments": [
+        "New Testament"
+      ]
+    },
+    {
+      "number": 26,
+      "id": "headline-26",
+      "recommended": true,
+      "comparison": "text-vs-history",
+      "source_record_ids": [
+        "legacy-history-8"
+      ],
+      "question": "Does Herod’s rule confirm the whole birth story?",
+      "side_a": {
+        "label": "Support for the ruler and setting",
+        "kjv_refs": [
+          "Matthew 2:1"
+        ]
+      },
+      "side_b": {
+        "label": "Proof of the birth and visitors: not established",
+        "kjv_refs": [
+          "Matthew 2:1"
+        ],
+        "reference_note": "These verses give the claim under review. The outside source supplies the historical comparison."
+      },
+      "summary_60_seconds": "Matthew places Jesus's birth in Judea during Herod's rule. The record cites Josephus as an outside source describing Herod as a ruler of Judea. That agreement supports a real ruler and the setting named in the verse. It does not independently establish the birth itself or the visit of the magi. The debate therefore concerns how far a piece of supporting evidence can reach. One side keeps the conclusion at the level of ruler and setting. The broader claim would use that agreement to verify the birth story as a whole. The record does not support that extra step. It also does not treat limited support as evidence that the rest is false. Readers can recognise a historical match while leaving other events open for their own evidence and assessment.",
+      "what_would_settle_it": "Evidence about the birth and visitors themselves would be needed; confirming the ruler alone cannot establish those events.",
+      "why_selected": "A familiar story offers an accessible test of whether accurate background details can verify a larger account.",
+      "current_status": "Agrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "legacy-history-8",
+          "mode": "history",
+          "status": "Agrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "Corroborates the ruler and setting; does not independently establish Jesus’s birth or the visit of the magi.",
+          "record_sha256": "8b31464fd4457bcf589f25f27394c73dcc16902205bbc084a0759c6635bff045"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 17",
+          "url": "https://penelope.uchicago.edu/josephus/ant-17.html"
+        }
+      ],
+      "testaments": [
+        "New Testament"
+      ]
+    },
+    {
+      "number": 27,
+      "id": "headline-27",
+      "recommended": true,
+      "comparison": "text-vs-history",
+      "source_record_ids": [
+        "legacy-history-9"
+      ],
+      "question": "Does a new ruler prove the family’s journey?",
+      "side_a": {
+        "label": "Archelaus succeeds Herod in Judea",
+        "kjv_refs": [
+          "Matthew 2:22"
+        ]
+      },
+      "side_b": {
+        "label": "The family’s journey is verified: not established",
+        "kjv_refs": [
+          "Matthew 2:22"
+        ],
+        "reference_note": "These verses give the claim under review. The outside source supplies the historical comparison."
+      },
+      "summary_60_seconds": "Matthew says Archelaus ruled Judea after his father Herod. The verse links that news with the family's response and journey. Josephus also describes Archelaus succeeding Herod and gaining power over Judea. This supports the change in rule, but does not prove where the family went. The record also notes that Archelaus held a specific formal Roman title. Matching his place in the story should not erase that distinction. The question asks whether a real change in rulers proves a private journey linked to it. The cited evidence does not reach that far. It supports one part of the account while leaving another part unverified by this source. That does not mean the journey never happened. Readers can accept the match between rulers without treating it as proof of the family's movements.",
+      "what_would_settle_it": "Evidence of the family’s journey would be needed; the source supports the change in rule rather than their movements.",
+      "why_selected": "A change in rulers helps readers distinguish a public event from a family’s journey linked to it.",
+      "current_status": "Agrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "legacy-history-9",
+          "mode": "history",
+          "status": "Agrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "Supports the succession. Archelaus’s formal Roman title was ethnarch; it does not independently verify the family’s journey.",
+          "record_sha256": "871d4c7dd1b7bcb8155226cb8543c1029756f85092e8b6f5aab9f1bc47bb9f50"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 17",
+          "url": "https://penelope.uchicago.edu/josephus/ant-17.html"
+        }
+      ],
+      "testaments": [
+        "New Testament"
+      ]
+    },
+    {
+      "number": 28,
+      "id": "headline-28",
+      "recommended": true,
+      "comparison": "text-vs-history",
+      "source_record_ids": [
+        "legacy-history-11"
+      ],
+      "question": "Does Pilate’s record confirm every detail in Luke?",
+      "side_a": {
+        "label": "Pilate serves under Tiberius",
+        "kjv_refs": [
+          "Luke 3:1"
+        ]
+      },
+      "side_b": {
+        "label": "Every date and ruler is verified: not established",
+        "kjv_refs": [
+          "Luke 3:1"
+        ],
+        "reference_note": "These verses give the claim under review. The outside source supplies the historical comparison."
+      },
+      "summary_60_seconds": "Luke names several rulers to set the scene for its account. These include Tiberius and Pilate, with Pilate governing Judea. Josephus also places Pilate in charge there under Tiberius. The record treats this as support for those officials and the setting. It does not verify every date, title or ruler named in Luke's verse. One sentence can make several separate claims about the past. Evidence for two names need not establish every other claim in that sentence. Those details would need checks of their own. The record has not made that full set of checks, and it does not call the unchecked details false. This debate asks how far a real match can reach. Readers can keep the agreement while limiting the conclusion to what the outside account actually supports.",
+      "what_would_settle_it": "Check each remaining date, title and ruler; the record supports only the officials and setting its source addresses.",
+      "why_selected": "A short list of rulers helps readers split a broad claim into parts that can each be checked.",
+      "current_status": "Agrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "legacy-history-11",
+          "mode": "history",
+          "status": "Agrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "Supports those officials and their setting; does not verify every date, title, or named ruler in this verse.",
+          "record_sha256": "2809f746e40f585641a69cf55986120b789ab3f2cad439f6ca55c3e94b6d81d3"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 18",
+          "url": "https://penelope.uchicago.edu/josephus/ant-18.html"
+        }
+      ],
+      "testaments": [
+        "New Testament"
+      ]
+    },
+    {
+      "number": 29,
+      "id": "headline-29",
+      "recommended": true,
+      "comparison": "text-vs-history",
+      "source_record_ids": [
+        "legacy-history-12"
+      ],
+      "question": "Does the census revolt record prove its ending?",
+      "side_a": {
+        "label": "A movement opposed the census",
+        "kjv_refs": [
+          "Acts 5:37"
+        ]
+      },
+      "side_b": {
+        "label": "Its leader’s death and followers’ fate are verified: not established",
+        "kjv_refs": [
+          "Acts 5:37"
+        ],
+        "reference_note": "These verses give the claim under review. The outside source supplies the historical comparison."
+      },
+      "summary_60_seconds": "Acts describes Judas the Galilean drawing people into a movement during a census. It also describes his death and the scattering of his followers. Josephus names Judas as a leader who opposed the census under Quirinius. That account supports the existence of a movement linked to the census. The record does not treat it as proof of every detail in Acts. It does not verify the leader's death or what happened to all his followers. The question asks whether evidence for a movement also proves the ending told in another source. The record supports the movement while leaving those later claims outside its result. This does not mean the ending must be false. It means the group's existence and its later fate are separate claims that need their own supporting evidence.",
+      "what_would_settle_it": "Check the death and followers’ fate separately; the source supports the census movement rather than every part of its ending.",
+      "why_selected": "A revolt makes an engaging case for asking whether evidence for a group also proves what happened to it.",
+      "current_status": "Agrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "legacy-history-12",
+          "mode": "history",
+          "status": "Agrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "Supports the existence of a census-related movement, not every detail of its leader’s death or followers’ dispersal.",
+          "record_sha256": "e638aa2687d904fae95897c2b10dfbf378a8a5543837302019c9a6e3ffae22f6"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 18",
+          "url": "https://penelope.uchicago.edu/josephus/ant-18.html"
+        }
+      ],
+      "testaments": [
+        "New Testament"
+      ]
+    },
+    {
+      "number": 30,
+      "id": "headline-30",
+      "recommended": true,
+      "comparison": "text-vs-history",
+      "source_record_ids": [
+        "early-lachish",
+        "exp-late-22-36-1"
+      ],
+      "question": "Do Assyrian records prove the whole campaign account?",
+      "side_a": {
+        "label": "Support for the attack, tribute and setting",
+        "kjv_refs": [
+          "2 Kings 18:13",
+          "2 Kings 18:14",
+          "Isaiah 36:1-3"
+        ]
+      },
+      "side_b": {
+        "label": "Every speech and event is proved: not established",
+        "kjv_refs": [
+          "2 Kings 18:13",
+          "2 Kings 18:14",
+          "Isaiah 36:1-3"
+        ],
+        "reference_note": "These verses give the claim under review. The outside source supplies the historical comparison."
+      },
+      "summary_60_seconds": "Kings places Sennacherib at Lachish during his attack on Judah. An Assyrian palace carving shows him watching the capture of that city. The record treats it as outside royal evidence for the attack and place. A related record cites an inscription describing tribute from Hezekiah in 701 BCE. That payment supports the rulers and setting found in Isaiah. Together, these objects give evidence for specific parts of the campaign setting. They do not prove every speech, payment or supernatural claim in the biblical accounts. A match with one part of a story does not verify every part. Nor does limited support show that the remaining claims are false. The question is how far each object can take the argument. Separate claims still need to be assessed with evidence that bears on them.",
+      "what_would_settle_it": "Assess other speeches, payments and rescue claims separately; the objects support specific parts of the setting rather than every event.",
+      "why_selected": "A carving and an inscription bring physical evidence into one campaign debate, avoiding two headlines for the same setting.",
+      "current_status": "Agrees",
+      "meets_status_filter": true,
+      "selection": "Recommended 30",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "early-lachish",
+          "mode": "history",
+          "status": "Agrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "Corroboration is limited to the campaign and location. It does not verify every speech, payment, or supernatural claim in Kings.",
+          "record_sha256": "53b7d4a7a3df8e8ec82f55bf9a99a85b9b1096d97cf11310e263483e0cb59ee8"
+        },
+        {
+          "id": "exp-late-22-36-1",
+          "mode": "history",
+          "status": "Agrees",
+          "checked": "2026-10-11",
+          "scope_verbatim": "Corroboration of setting, not the complete narrative.",
+          "record_sha256": "57a26f569e03b6627836ad7b4578528678ce5da08540cc4cedb6b59f7b2b69c8"
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Kings 18 · primary text",
+          "url": "https://ebible.org/eng-kjv/2KI18.htm"
+        },
+        {
+          "label": "British Museum · Lachish relief",
+          "url": "https://www.britishmuseum.org/collection/object/W_1856-0909-14_2"
+        },
+        {
+          "label": "Primary text: Isaiah 36 (WEB)",
+          "url": "https://ebible.org/engwebp/ISA36.htm"
+        },
+        {
+          "label": "British Museum: Sennacherib prism",
+          "url": "https://www.britishmuseum.org/collection/object/W_1855-1003-1"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 31,
+      "id": "headline-31",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "judas-hanged-himself-or-falling-headlong-he-burst-asunder-matthew-27-5-acts-1-18"
+      ],
+      "question": "Does Judas’s end involve hanging or a fall?",
+      "side_a": {
+        "label": "Matthew describes hanging",
+        "kjv_refs": [
+          "Matthew 27:5"
+        ]
+      },
+      "side_b": {
+        "label": "Acts describes a headlong fall",
+        "kjv_refs": [
+          "Acts 1:18"
+        ]
+      },
+      "summary_60_seconds": "Matthew says Judas went away and hanged himself. Acts describes a headlong fall in which his body burst open. The two accounts use different descriptions, which gives readers a clear comparison. They could both stand if the hanging happened first and the body later fell. Neither verse reports that combined sequence, so it remains a possible explanation. The record does not decide that either account is mistaken. It also does not declare the descriptions mutually exclusive or establish a broader meaning for the Greek words. This is a comparison of the wording supplied by the passages. It should not be turned into a reconstructed death scene with extra events presented as facts. The current status is Context, making this a reserve for further editorial review rather than a recommended conflict headline.",
+      "what_would_settle_it": "Establish whether the descriptions concern different stages; the record permits that reading without reporting the combined sequence as fact.",
+      "why_selected": "A requested, familiar debate has clear passages, but its Context status keeps it outside the recommended thirty.",
+      "current_status": "Context",
+      "meets_status_filter": false,
+      "selection": "Reserve",
+      "status_note": "Context reserve only; the record does not establish a contradiction.",
+      "record_provenance": [
+        {
+          "id": "judas-hanged-himself-or-falling-headlong-he-burst-asunder-matthew-27-5-acts-1-18",
+          "mode": "contradictions",
+          "status": "Context",
+          "checked": "2026-10-14",
+          "scope_verbatim": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not say that the two accounts contradict one another and does not say what the Greek words cover beyond the words quoted. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+          "record_sha256": "78f886352112ec29ce3c6e57879ef7f180f5794029c41e5128421184ca5e7e96"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Matthew 27: KJV",
+          "url": "https://ebible.org/eng-kjv/MAT27.htm"
+        },
+        {
+          "label": "Acts 1: KJV",
+          "url": "https://ebible.org/eng-kjv/ACT01.htm"
+        },
+        {
+          "label": "Matthew 27: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/40/27/"
+        },
+        {
+          "label": "Matthew 27: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/40/27/"
+        },
+        {
+          "label": "Acts 1: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/44/1/"
+        },
+        {
+          "label": "Acts 1: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/44/1/"
+        }
+      ],
+      "testaments": [
+        "New Testament"
+      ]
+    },
+    {
+      "number": 32,
+      "id": "headline-32",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1"
+      ],
+      "question": "Was it dark or light at the tomb?",
+      "side_a": {
+        "label": "Dawn or sunrise",
+        "kjv_refs": [
+          "Matthew 28:1",
+          "Mark 16:2"
+        ]
+      },
+      "side_b": {
+        "label": "Still dark",
+        "kjv_refs": [
+          "John 20:1"
+        ]
+      },
+      "summary_60_seconds": "Matthew places the tomb visit as dawn begins. Mark describes sunrise, while John says it was still dark when Mary Magdalene came. These phrases give different descriptions of the morning in the resurrection accounts. The record compares those time phrases without declaring any account mistaken. Different people or different stages of a journey could allow the descriptions to stand together. The cited verses do not explain them that way. The record also does not compare the full lists of visitors or decide how the three scenes connect. This draft therefore keeps its question focused on light and timing. It does not expand into a claim about every detail of resurrection morning. The current Context status reflects that limited comparison. Its familiarity makes it a useful reserve, but not a settled contradiction.",
+      "what_would_settle_it": "Establish how the time phrases relate to people or journey stages; the record does not reconstruct the morning’s sequence.",
+      "why_selected": "A requested resurrection-morning comparison stays focused on timing, with Context status clearly separating it from stronger conflict records.",
+      "current_status": "Context",
+      "meets_status_filter": false,
+      "selection": "Reserve",
+      "status_note": "Context reserve only; the record does not establish a contradiction.",
+      "record_provenance": [
+        {
+          "id": "as-it-began-to-dawn-or-at-the-rising-of-the-sun-or-yet-dark-matthew-28-1-mark-16-2-john-20-1",
+          "mode": "contradictions",
+          "status": "Context",
+          "checked": "2026-10-14",
+          "scope_verbatim": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not decide how the three are related and does not compare who came in each account. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+          "record_sha256": "9f79fc524110cc19d9571ce423d0712948bc37a2f3685d0135fbc256a906f214"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Matthew 28: KJV",
+          "url": "https://ebible.org/eng-kjv/MAT28.htm"
+        },
+        {
+          "label": "Mark 16: KJV",
+          "url": "https://ebible.org/eng-kjv/MRK16.htm"
+        },
+        {
+          "label": "John 20: KJV",
+          "url": "https://ebible.org/eng-kjv/JHN20.htm"
+        },
+        {
+          "label": "Matthew 28: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/40/28/"
+        },
+        {
+          "label": "Matthew 28: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/40/28/"
+        },
+        {
+          "label": "Mark 16: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/41/16/"
+        },
+        {
+          "label": "Mark 16: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/41/16/"
+        },
+        {
+          "label": "John 20: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/43/20/"
+        },
+        {
+          "label": "John 20: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/43/20/"
+        }
+      ],
+      "testaments": [
+        "New Testament"
+      ]
+    },
+    {
+      "number": 33,
+      "id": "headline-33",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "jacob-begat-joseph-or-joseph-which-was-the-son-of-heli-matthew-1-16-luke-3-23"
+      ],
+      "question": "Was Joseph’s father Jacob or Heli?",
+      "side_a": {
+        "label": "Matthew names Jacob",
+        "kjv_refs": [
+          "Matthew 1:16"
+        ]
+      },
+      "side_b": {
+        "label": "Luke names Heli",
+        "kjv_refs": [
+          "Luke 3:23"
+        ]
+      },
+      "summary_60_seconds": "Matthew names Jacob as the father of Joseph, Mary's husband. Luke names Joseph as the son of Heli in its family line for Jesus. The record also notes that the names above Joseph differ after David. These differences make the family lists worth comparing, but do not settle how the lists are related. They could follow different lines, including a line through Mary or a family link shaped by marriage. Neither verse states which of those explanations applies. The record does not decide that either account is mistaken. Its Greek comparison covers the quoted clause, rather than every name in both lists. This draft therefore uses the immediate father-name question as its entry point. The current Context status keeps the candidate in reserve without presenting a possible family relationship as established fact.",
+      "what_would_settle_it": "Identify which family line each list follows; neither verse states the proposed relationship, and the record leaves it unresolved.",
+      "why_selected": "A requested family-line debate has a short, clear contrast while its Context status and limited Greek comparison remain visible.",
+      "current_status": "Context",
+      "meets_status_filter": false,
+      "selection": "Reserve",
+      "status_note": "Context reserve only; the record does not establish a contradiction.",
+      "record_provenance": [
+        {
+          "id": "jacob-begat-joseph-or-joseph-which-was-the-son-of-heli-matthew-1-16-luke-3-23",
+          "mode": "contradictions",
+          "status": "Context",
+          "checked": "2026-10-14",
+          "scope_verbatim": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek. It does not say that either account is mistaken. Where Greek is quoted, the Textus Receptus text served carries the same words. The record does not decide how the genealogies are related and does not examine the Greek of the names beyond the clause quoted. The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+          "record_sha256": "8d49e42510405fcc33de5236b827de701425f08fa57fd5bf54f2c10865cb20e7"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Matthew 1: KJV",
+          "url": "https://ebible.org/eng-kjv/MAT01.htm"
+        },
+        {
+          "label": "Luke 3: KJV",
+          "url": "https://ebible.org/eng-kjv/LUK03.htm"
+        },
+        {
+          "label": "Matthew 1: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/40/1/"
+        },
+        {
+          "label": "Matthew 1: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/40/1/"
+        },
+        {
+          "label": "Luke 3: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/42/3/"
+        },
+        {
+          "label": "Luke 3: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/42/3/"
+        }
+      ],
+      "testaments": [
+        "New Testament"
+      ]
+    },
+    {
+      "number": 34,
+      "id": "headline-34",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "beasts-and-fowl-formed-before-man-or-after"
+      ],
+      "question": "Were animals formed before or after the man?",
+      "side_a": {
+        "label": "Birds and beasts appear before the man",
+        "kjv_refs": [
+          "Genesis 1:21",
+          "Genesis 1:25",
+          "Genesis 1:27"
+        ]
+      },
+      "side_b": {
+        "label": "The man appears before animals are formed and brought",
+        "kjv_refs": [
+          "Genesis 2:7",
+          "Genesis 2:18",
+          "Genesis 2:19"
+        ]
+      },
+      "summary_60_seconds": "Genesis first describes birds and beasts before the creation of the man. Its second chapter forms the man, then describes animals being formed and brought to him. Read as a strict sequence of events, the wording gives different orders. But the second chapter numbers no days. It could look back to an earlier forming or arrange the account without following time order. The record preserves both readings and does not decide how the chapters were written. The old Greek translation adds a word meaning further or yet in the animal-forming verse. That word may fit a reading that joins the accounts, but the record does not establish an intended purpose. Plants are outside this comparison. The Context status keeps this creation-order question in reserve. Sentence order is not automatically proven event order.",
+      "what_would_settle_it": "Determine whether the second chapter follows time order or looks back; the record does not establish either reading as intended.",
+      "why_selected": "A requested creation-order debate compares two texts; it stays distinct from the scientific questions about plants and birds.",
+      "current_status": "Context",
+      "meets_status_filter": false,
+      "selection": "Reserve",
+      "status_note": "Context reserve only; the record does not establish a contradiction.",
+      "record_provenance": [
+        {
+          "id": "beasts-and-fowl-formed-before-man-or-after",
+          "mode": "contradictions",
+          "status": "Context",
+          "checked": "2026-10-12",
+          "scope_verbatim": "G applies at Genesis 2:19 only, for the added Greek word. The two chapters clash as worded, but they can be reconciled if chapter 2 is not telling events in order of time, or if “formed” at 2:19 looks back to an earlier forming; chapter 2 does not say either, and it numbers no days. The Greek word can be read as fitting such a reading; this record does not assert that it was meant so. No claim is made about how the two chapters came to be written. The plants of 2:5 and 1:11–12 are not treated here. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "record_sha256": "b8de4e18bed13722a85ed95fc922287bc0b3fce9f64b5ece62b1e9abf1300b96"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Genesis 1: KJV",
+          "url": "https://ebible.org/eng-kjv/GEN01.htm"
+        },
+        {
+          "label": "Genesis 2: KJV",
+          "url": "https://ebible.org/eng-kjv/GEN02.htm"
+        },
+        {
+          "label": "Genesis 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/1/2/"
+        },
+        {
+          "label": "Genesis 2: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/GEN02.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 35,
+      "id": "headline-35",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "early-census-famine"
+      ],
+      "question": "Was David offered three or seven years of famine?",
+      "side_a": {
+        "label": "Seven years in Samuel",
+        "kjv_refs": [
+          "2 Samuel 24:13"
+        ]
+      },
+      "side_b": {
+        "label": "Three years in Chronicles",
+        "kjv_refs": [
+          "1 Chronicles 21:12"
+        ]
+      },
+      "summary_60_seconds": "After David's census, Gad presents him with a choice of punishments. Samuel gives the famine option as seven years, while Chronicles gives three. The passages describe the same set of alternatives, making the two numbers directly comparable. The KJV follows the cited Hebrew text in each book. The old Greek translation of Samuel instead gives three years, agreeing with Chronicles on that number. This adds a useful third piece of evidence without settling which reading came first. The record does not choose an original figure or claim that every ancient copy has the same wording. Readers can compare a clear numerical difference while keeping the history of the text open. This question concerns the length of a proposed famine. It differs from the other census candidate, which asks who prompted David's count.",
+      "what_would_settle_it": "Compare evidence for the earlier number; the cited Hebrew and Greek editions do not establish which reading is original.",
+      "why_selected": "A strong numerical reserve adds translation evidence, but another census question already gives this story a place among the thirty.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Reserve",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "early-census-famine",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-12",
+          "scope_verbatim": "This extends the published record of the same ID with the Hebrew and Greek wording; the finding between the two KJV verses is unchanged. No claim is made about which number is original. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "record_sha256": "db5b708527c1c489856e7814aa1ba2e7eeba5ea78076a7ba1f3c5b2c5e93f147"
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 24: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA24.htm"
+        },
+        {
+          "label": "1 Chronicles 21: KJV",
+          "url": "https://ebible.org/eng-kjv/1CH21.htm"
+        },
+        {
+          "label": "2 Samuel 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/10/24/"
+        },
+        {
+          "label": "1 Chronicles 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/13/21/"
+        },
+        {
+          "label": "2 Samuel 24: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2SA24.htm"
+        },
+        {
+          "label": "1 Chronicles 21: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/1CH21.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 36,
+      "id": "headline-36",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "threshingfloor-price-fifty-silver-or-six-hundred-gold"
+      ],
+      "question": "Did David pay in silver or gold?",
+      "side_a": {
+        "label": "Fifty shekels of silver",
+        "kjv_refs": [
+          "2 Samuel 24:24"
+        ]
+      },
+      "side_b": {
+        "label": "Six hundred shekels of gold",
+        "kjv_refs": [
+          "1 Chronicles 21:25"
+        ]
+      },
+      "summary_60_seconds": "Samuel says David paid fifty shekels of silver for the threshing floor and oxen. Chronicles says he paid six hundred shekels of gold for the place. Both the metal and the amount differ in the accounts of this purchase. But the descriptions of what he bought are also different. A larger piece of land in Chronicles could allow two payments for different parts of the purchase. Neither book explicitly reports two payments, so that remains a possible explanation. The record does not rely on the owner's different names in the two books. It also does not claim that the KJV changed the amounts from the Hebrew text. The central question is whether the prices cover the same property. The passages alone do not settle the boundaries of what each payment bought.",
+      "what_would_settle_it": "Establish whether the payments cover different property; neither book explicitly reports the proposed two-payment explanation for the differing amounts.",
+      "why_selected": "The price gap is clear, but another census question already gives David’s story a place among the thirty.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Reserve",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "threshingfloor-price-fifty-silver-or-six-hundred-gold",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-12",
+          "scope_verbatim": "Samuel names what was bought as “the threshingfloor and the oxen” and Chronicles as “the place”. If “the place” was a larger piece of land, two payments are possible; neither book mentions two. The owner is named differently in the two books; the record does not rely on that. The KJV matches the Hebrew in each book, and Brenton’s Greek of 2 Samuel 24:24 also has fifty shekels of silver, so no tag is proposed. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "record_sha256": "5fc1b9b4fec6cdc4e8a9f2ef36c1ff79bc117e41ede9ff8069e4904ab9f18d1e"
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 24: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA24.htm"
+        },
+        {
+          "label": "1 Chronicles 21: KJV",
+          "url": "https://ebible.org/eng-kjv/1CH21.htm"
+        },
+        {
+          "label": "2 Samuel 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/10/24/"
+        },
+        {
+          "label": "1 Chronicles 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/13/21/"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 37,
+      "id": "headline-37",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "michal-five-sons-bare-or-brought-up"
+      ],
+      "question": "Did Michal bear five sons or raise them?",
+      "side_a": {
+        "label": "The KJV says she brought them up",
+        "kjv_refs": [
+          "2 Samuel 21:8"
+        ]
+      },
+      "side_b": {
+        "label": "The cited Hebrew and Greek say she bore them",
+        "kjv_refs": [
+          "2 Samuel 21:8"
+        ],
+        "reference_note": "The KJV says brought up here; this side uses the Hebrew and old Greek translation described in the record."
+      },
+      "summary_60_seconds": "The KJV says Michal brought up five sons for Adriel. The Hebrew text and old Greek translation cited by the record instead say she bore them. Another passage says Michal had no child until her death. A further passage names Merab, rather than Michal, as the woman given to Adriel. The translation choice therefore affects how readers see the relationship between these statements. Raising children need not mean giving birth to them, so the KJV wording removes that part of the conflict. It still names Michal in the passage. The record does not decide whether her name resulted from a copying mistake. The editions cited both name Michal and do not establish what every ancient copy contains. The translators' source for their wording also remains unestablished by this comparison.",
+      "what_would_settle_it": "Compare evidence for the name and wording; the record establishes neither a copying mistake nor the translators’ source here.",
+      "why_selected": "A family question exposes a meaningful translation difference; it remains a reserve because Goliath already introduces this type of comparison.",
+      "context_kjv_refs": [
+        "2 Samuel 6:23",
+        "1 Samuel 18:19"
+      ],
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Reserve",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "michal-five-sons-bare-or-brought-up",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-12",
+          "scope_verbatim": "The KJV wording removes the conflict with 2 Samuel 6:23 but still names Michal rather than Merab. No claim is made about whether “Michal” in the Hebrew is a copying slip for “Merab”; the named Hebrew and Greek editions both print Michal. The Greek agrees with the Hebrew against the KJV, so both H and G apply. The Hebrew quoted is the Westminster Leningrad Codex digital text, with the consonants-only Aleppo-based edition as a second witness. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined, and the KJV translators’ source for their wording is not established here. English glosses in brackets are the researcher’s plain renderings, not lexicon entries. The Greek is Brenton’s printed edition of the Septuagint.",
+          "record_sha256": "af8fde21e87a7532bef3d0dba0f8a7edd90ecd1313281ffe32b05d904b8cc8bb"
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 21: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA21.htm"
+        },
+        {
+          "label": "2 Samuel 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/10/21/"
+        },
+        {
+          "label": "2 Samuel 21: Hebrew, Aleppo-based edition (HAC), consonants only",
+          "url": "https://bolls.life/get-text/HAC/10/21/"
+        },
+        {
+          "label": "2 Samuel 21: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2SA21.htm"
+        },
+        {
+          "label": "1 Samuel 18: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA18.htm"
+        },
+        {
+          "label": "2 Samuel 6: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA06.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 38,
+      "id": "headline-38",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "noah-entered-the-ark-seven-days-before-or-the-day-the-flood-began"
+      ],
+      "question": "Did Noah board before the flood or that day?",
+      "side_a": {
+        "label": "Entry followed by a seven-day interval",
+        "kjv_refs": [
+          "Genesis 7:7",
+          "Genesis 7:10"
+        ]
+      },
+      "side_b": {
+        "label": "Entry on the flood’s starting day",
+        "kjv_refs": [
+          "Genesis 7:11",
+          "Genesis 7:13"
+        ]
+      },
+      "summary_60_seconds": "Genesis first describes Noah entering the ark and then says the floodwaters came after seven days. A later passage dates the flood's beginning and places Noah's entry on that same day. Reading each sentence as the next event creates a difference in the timing. The record also preserves other ways of reading the account. The earlier entry could be a summary that the later passage expands. The same-day wording could mark the day the whole boarding process was complete. Those possibilities prevent the draft from treating sentence order as the only possible timeline. The record makes no Hebrew or Greek comparison for this finding. It also does not confirm that a flood occurred. This is a question about the surviving narrative's order, separate from the science candidate about a recent worldwide event.",
+      "what_would_settle_it": "Clarify whether the entries are a summary and expansion or mark completion; the record preserves both possible readings here.",
+      "why_selected": "A clear timing puzzle offers a textual reserve, while the recommended flood candidate addresses external scientific evidence instead.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Reserve",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "noah-entered-the-ark-seven-days-before-or-the-day-the-flood-began",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-16",
+          "scope_verbatim": "Genesis 7:7 may be read as a summary that is expanded in 7:13, and “selfsame day” can mark the day the whole embarkation was complete. These readings are preserved. The record is a comparison of the surviving narrative, not confirmation of a flood. No Hebrew or Greek comparison was made, so no H or G tag is proposed.",
+          "record_sha256": "c4e99ee7bd05766dd1ae42a6aa447d5c1823d61a5681c3fdc2014a5ab71bd6d2"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Genesis 7 · primary text",
+          "url": "https://ebible.org/eng-kjv/GEN07.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 39,
+      "id": "headline-39",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel"
+      ],
+      "question": "Who laid the foundation: Sheshbazzar or Zerubbabel?",
+      "side_a": {
+        "label": "Sheshbazzar in the reported answer",
+        "kjv_refs": [
+          "Ezra 5:16"
+        ]
+      },
+      "side_b": {
+        "label": "Zerubbabel in the work account and prophecy",
+        "kjv_refs": [
+          "Ezra 3:8",
+          "Ezra 3:10",
+          "Zechariah 4:9"
+        ]
+      },
+      "summary_60_seconds": "Ezra reports an answer from the elders that credits Sheshbazzar with laying the temple foundation. Another passage names Zerubbabel and Jeshua as starting the work, then says builders laid the foundation. Zechariah directly credits Zerubbabel's hands with laying it. The statements give credit in different ways, but the record keeps two possible links open. Sheshbazzar and Zerubbabel could be two names for one man. Both could also have played a part, with one in charge and another doing the work. None of the quoted verses gives either explanation. The claims also come from different speakers, including an answer within a reported letter. That matters when deciding who says what. The record does not prove which man did the physical work. It also does not settle how the two names are related.",
+      "what_would_settle_it": "Establish whether the names identify one person or shared roles; the quoted passages state neither proposed explanation for the difference.",
+      "why_selected": "This broadens the book mix, but long names and shared roles make it less direct than the recommended text comparisons.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Reserve",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "foundation-of-the-house-laid-by-sheshbazzar-or-by-zerubbabel",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-13",
+          "scope_verbatim": "No tag is proposed: in each verse the KJV follows the Hebrew or Aramaic quoted, and Brenton’s Greek names the same men. The statements can both stand if Sheshbazzar and Zerubbabel are two names of one man, or if both had a part in the laying, one as the governor in charge and one as the builder on the ground; no verse quoted says either. Ezra 5:16 is the elders’ answer as Tatnai’s letter reports it, not the narrator’s own statement. Ezra 3:10 says “the builders” laid the foundation and does not name Zerubbabel in that clause. A whole-word search of the packaged KJV finds “Sheshbazzar” at Ezra 1:8, 1:11, 5:14 and 5:16 only; that is a word search, not a reading of every book. The Hebrew quoted is the Westminster Leningrad Codex digital text. A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined. The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament. It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original. English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+          "record_sha256": "9218b88a7f6eb638f814aa898605eb5b765fc12c82cdd743899c7ebe75cde40d"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Ezra 5: KJV",
+          "url": "https://ebible.org/eng-kjv/EZR05.htm"
+        },
+        {
+          "label": "Ezra 1: KJV",
+          "url": "https://ebible.org/eng-kjv/EZR01.htm"
+        },
+        {
+          "label": "Ezra 3: KJV",
+          "url": "https://ebible.org/eng-kjv/EZR03.htm"
+        },
+        {
+          "label": "Zechariah 4: KJV",
+          "url": "https://ebible.org/eng-kjv/ZEC04.htm"
+        },
+        {
+          "label": "Ezra 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/15/5/"
+        },
+        {
+          "label": "Zechariah 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/38/4/"
+        },
+        {
+          "label": "Ezra 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/15/3/"
+        },
+        {
+          "label": "Ezra 5: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EZR05.htm"
+        },
+        {
+          "label": "Zechariah 4: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/ZEC04.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    },
+    {
+      "number": 40,
+      "id": "headline-40",
+      "recommended": false,
+      "comparison": "text-vs-text",
+      "source_record_ids": [
+        "exp-late-20-9-5"
+      ],
+      "question": "Do the dead stay inactive or wake again?",
+      "side_a": {
+        "label": "The dead take no part in life under the sun",
+        "kjv_refs": [
+          "Ecclesiastes 9:5",
+          "Ecclesiastes 9:6",
+          "Ecclesiastes 9:10"
+        ]
+      },
+      "side_b": {
+        "label": "The dead awaken in Daniel’s vision",
+        "kjv_refs": [
+          "Daniel 12:2"
+        ]
+      },
+      "summary_60_seconds": "Ecclesiastes describes the dead as taking no further part in what happens under the sun. It speaks of a place of the dead without work or knowledge. Daniel instead describes people awakening from death in a vision. The passages conflict if the first account denies every possible future life. But its repeated focus on earthly life allows another reading. Present inactivity could be different from a future awakening. Under that reading, the two passages need not speak about the same time or condition. The record preserves this distinction rather than deciding that one account rules out the other. It compares two kinds of writing and what their statements may mean. It does not offer tested evidence for or against life after death. This reserve broadens the range of books without changing that limit.",
+      "what_would_settle_it": "Clarify whether Ecclesiastes denies all future life or describes present inactivity; the record does not verify an afterlife.",
+      "why_selected": "This broadens the book mix, but the contrast depends on whether the passages describe the same time after death.",
+      "current_status": "Textual conflict",
+      "meets_status_filter": true,
+      "selection": "Reserve",
+      "status_note": "Meets the requested status filter.",
+      "record_provenance": [
+        {
+          "id": "exp-late-20-9-5",
+          "mode": "contradictions",
+          "status": "Textual conflict",
+          "checked": "2026-10-11",
+          "scope_verbatim": "Literary comparison, not empirical verification of an afterlife.",
+          "record_sha256": "d85e491654d23b64ac8bae8811d4aed0241565109c6ba023919b90d44a0fe33c"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Primary text: Ecclesiastes 9 (WEB)",
+          "url": "https://ebible.org/engwebp/ECC09.htm"
+        },
+        {
+          "label": "Primary text: Daniel 12 (WEB)",
+          "url": "https://ebible.org/engwebp/DAN12.htm"
+        }
+      ],
+      "testaments": [
+        "Old Testament"
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "draft_only": true,
+  "base_commit": "346bdfd173bb04d54745cd2164a23b9bf905eadd",
+  "evidence_sha256": "e1330ec7ba79712d190f3345b83a568d582fbb9983ed03323db8c1307cb4e377",
+  "kjv_sha256": "f91b3b893eaac46035dfc342f520b56f7a5f80879c448f7065d00ec8fad033aa",
+  "readability_standard_commit": "8e2cd1b87419d909e9bcc54a7d822fd9052447d5",
+  "readability_script_sha256": "47063835df0b164eeaf059fb92d318e68a90465a7569105cca70c873ca790c79",
+  "editorial_notes": [
+    "These are local drafts for Phase 2/3. They do not change app records or statuses.",
+    "The recommended thirty meet the requested status filter. Four familiar Context comparisons remain clearly marked reserves.",
+    "Science candidates are concentrated in Genesis because the qualifying records are concentrated there.",
+    "History agreement questions compare narrow support with a broader claim that the record does not establish.",
+    "Side labels identify claims or readings. They do not imply equally strong support or mutually exclusive events.",
+    "What would settle it names the unresolved scope test. It does not promise that available evidence can decide it.",
+    "The source links and checked dates come from existing records. External pages were not reopened during this local drafting task.",
+    "KJV references were checked against packaged chapters. No new scripture or source quotations were drafted.",
+    "The selected GitHub snapshot is the requested origin/main base. No claim of agreement with the Sites deployment is made."
+  ],
+  "readability": {
+    "command": "npm --prefix research/headline-debates run check:readability",
+    "note": "FK uses the copied standard. Short labels are checked for sentence length and jargon, not individual grade.",
+    "scope": "Summaries and combined drafted candidate prose. Scripture references, source titles and verbatim record scopes are excluded.",
+    "collection_averages": {
+      "text-vs-text": 7.48,
+      "text-vs-science": 7.44,
+      "text-vs-history": 7.54
+    },
+    "results": [
+      {
+        "id": "headline-01",
+        "summary_words": 129,
+        "summary_grade": 6.36,
+        "combined_prose_grade": 6.7,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-02",
+        "summary_words": 131,
+        "summary_grade": 7.52,
+        "combined_prose_grade": 7.21,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-03",
+        "summary_words": 129,
+        "summary_grade": 7.46,
+        "combined_prose_grade": 7.56,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-04",
+        "summary_words": 130,
+        "summary_grade": 7.54,
+        "combined_prose_grade": 8.25,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-05",
+        "summary_words": 130,
+        "summary_grade": 7,
+        "combined_prose_grade": 6.98,
+        "maximum_sentence_words": 17
+      },
+      {
+        "id": "headline-06",
+        "summary_words": 131,
+        "summary_grade": 7.07,
+        "combined_prose_grade": 7.71,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-07",
+        "summary_words": 129,
+        "summary_grade": 7.83,
+        "combined_prose_grade": 7.8,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-08",
+        "summary_words": 132,
+        "summary_grade": 6.43,
+        "combined_prose_grade": 6.75,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-09",
+        "summary_words": 131,
+        "summary_grade": 7.71,
+        "combined_prose_grade": 7.53,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-10",
+        "summary_words": 131,
+        "summary_grade": 7.43,
+        "combined_prose_grade": 6.99,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-11",
+        "summary_words": 133,
+        "summary_grade": 6.81,
+        "combined_prose_grade": 6.5,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-12",
+        "summary_words": 137,
+        "summary_grade": 8.7,
+        "combined_prose_grade": 7.57,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-13",
+        "summary_words": 131,
+        "summary_grade": 7.43,
+        "combined_prose_grade": 7.51,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-14",
+        "summary_words": 132,
+        "summary_grade": 8.42,
+        "combined_prose_grade": 8.12,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-15",
+        "summary_words": 134,
+        "summary_grade": 6.77,
+        "combined_prose_grade": 7.18,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-16",
+        "summary_words": 131,
+        "summary_grade": 7.97,
+        "combined_prose_grade": 8.33,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-17",
+        "summary_words": 132,
+        "summary_grade": 7.35,
+        "combined_prose_grade": 7.46,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-18",
+        "summary_words": 129,
+        "summary_grade": 7.55,
+        "combined_prose_grade": 7.86,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-19",
+        "summary_words": 130,
+        "summary_grade": 8.45,
+        "combined_prose_grade": 8.46,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-20",
+        "summary_words": 131,
+        "summary_grade": 5.72,
+        "combined_prose_grade": 6.59,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-21",
+        "summary_words": 133,
+        "summary_grade": 6.34,
+        "combined_prose_grade": 7.01,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-22",
+        "summary_words": 137,
+        "summary_grade": 7.79,
+        "combined_prose_grade": 8.29,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-23",
+        "summary_words": 135,
+        "summary_grade": 8.12,
+        "combined_prose_grade": 8.11,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-24",
+        "summary_words": 133,
+        "summary_grade": 8.23,
+        "combined_prose_grade": 8.19,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-25",
+        "summary_words": 131,
+        "summary_grade": 8.8,
+        "combined_prose_grade": 8.54,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-26",
+        "summary_words": 130,
+        "summary_grade": 7.82,
+        "combined_prose_grade": 8.1,
+        "maximum_sentence_words": 18
+      },
+      {
+        "id": "headline-27",
+        "summary_words": 131,
+        "summary_grade": 7.25,
+        "combined_prose_grade": 7.37,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-28",
+        "summary_words": 130,
+        "summary_grade": 6.45,
+        "combined_prose_grade": 6.62,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-29",
+        "summary_words": 131,
+        "summary_grade": 7.8,
+        "combined_prose_grade": 7.8,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-30",
+        "summary_words": 132,
+        "summary_grade": 7.15,
+        "combined_prose_grade": 7.86,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-31",
+        "summary_words": 131,
+        "summary_grade": 8.16,
+        "combined_prose_grade": 8.13,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-32",
+        "summary_words": 131,
+        "summary_grade": 7.88,
+        "combined_prose_grade": 7.65,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-33",
+        "summary_words": 133,
+        "summary_grade": 8.32,
+        "combined_prose_grade": 8.3,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-34",
+        "summary_words": 134,
+        "summary_grade": 6.86,
+        "combined_prose_grade": 7,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-35",
+        "summary_words": 132,
+        "summary_grade": 7.97,
+        "combined_prose_grade": 8.19,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-36",
+        "summary_words": 131,
+        "summary_grade": 6.72,
+        "combined_prose_grade": 7.27,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-37",
+        "summary_words": 129,
+        "summary_grade": 7.37,
+        "combined_prose_grade": 7.34,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-38",
+        "summary_words": 133,
+        "summary_grade": 8.05,
+        "combined_prose_grade": 8.33,
+        "maximum_sentence_words": 19
+      },
+      {
+        "id": "headline-39",
+        "summary_words": 131,
+        "summary_grade": 7.07,
+        "combined_prose_grade": 7.67,
+        "maximum_sentence_words": 20
+      },
+      {
+        "id": "headline-40",
+        "summary_words": 133,
+        "summary_grade": 7.49,
+        "combined_prose_grade": 7.45,
+        "maximum_sentence_words": 19
+      }
+    ],
+    "unexplained_jargon_lines": 0,
+    "overlength_sentences": 0
+  },
+  "kjv_reference_verification": {
+    "distinct_references": 117,
+    "distinct_verses": 241,
+    "source": "data/chapters.json"
+  },
+  "mix": {
+    "text-vs-text": {
+      "candidates": 26,
+      "recommended": 16
+    },
+    "text-vs-science": {
+      "candidates": 8,
+      "recommended": 8
+    },
+    "text-vs-history": {
+      "candidates": 6,
+      "recommended": 6
+    }
+  },
+  "self_review": {
+    "reviewer": "Codex, without delegated agents",
+    "checks": [
+      "Read each selected record and retained its scope limits.",
+      "Kept current statuses unchanged and excluded Context records from the recommended thirty.",
+      "Combined duplicate plant/Sun records, related flood/family records and the two Assyrian campaign records.",
+      "Kept distinct census questions separate: prompting, proposed famine length and purchase price.",
+      "Kept text-order questions separate from scientific models of creation and flood history.",
+      "Verified all KJV references in the packaged chapters; added no scripture or source quotations.",
+      "Checked every drafted candidate sentence for length and screened jargon.",
+      "Checked every summary and combined candidate prose block against grade 5–8.9.",
+      "Checked each summary collection against the writing standard’s grade 6–8 average."
+    ],
+    "limits": [
+      "Reference validation confirms that verses exist; scholarly fidelity also required manual comparison with the records.",
+      "External source pages were not reopened, and no new scholarship was added.",
+      "Readability scores use estimated English syllables and do not replace the manual prose review."
+    ]
+  }
+}
