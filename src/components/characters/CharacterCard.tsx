@@ -32,7 +32,7 @@ export function LineageBadges(profile: CharacterProfile): HTMLElement {
     const row = element('div');
     const values = element('dd');
     for (const name of names) {
-      const relative = label === 'Tribe' ? undefined : lineageCharacter(name);
+      const relative = label === 'Tribe' ? undefined : lineageCharacter(name, profile);
       const badge = element(relative ? 'a' : 'span', `character-badge ${isFemaleLineage(name) ? 'character-female' : 'character-neutral'}`, name);
       if (relative) {
         badge.setAttribute('href', `#characters/card/${relative.id}`);

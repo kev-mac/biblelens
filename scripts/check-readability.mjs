@@ -68,7 +68,10 @@ export function collections(directory = root) {
   const copy = [...read('src/atlas-explore.js').matchAll(/\bcopy\s*:\s*('(?:\\.|[^'\\])*'|"(?:\\.|[^"\\])*")/g)]
     .map(match => match[1].slice(1, -1).replace(/\\(['"\\])/g, '$1').replace(/\\n/g, '\n'));
   if (!copy.length) throw new Error('No Explore card copy found; update the literal extractor.');
+  const accepted=json('data/rc1-accepted.json');
   return [
+    { name: 'RC1 accepted imports', lines: [...lines(accepted.evidence,['title','summary']),...lines(accepted.people,['name','summary']),...lines(accepted.timeline,['title','display_title','summary']),...accepted.meaning.map(row=>row.record.summary),...accepted.questions.flatMap(row=>[row.question,...row.readings.flatMap(reading=>[reading.label,reading.summary])])] },
+    { name: 'RC1 accepted notes', tier: 'detail', lines: [...lines(accepted.evidence,['reasoning','scope','languageContext']),...accepted.questions.map(row=>row.limits)] },
     { name: 'Evidence', lines: [...lines(json('data/evidence.json'), ['title', 'summary']),...evidenceLabels,'Evidence strength: Not assessed'] },
     { name: 'Evidence notes', tier: 'detail', lines: lines(json('data/evidence.json'), ['reasoning', 'scope', 'languageContext']) },
     { name: 'Stories', lines: lines(json('data/stories.json').flatMap(book => book.stories), ['title','summary']) },
@@ -81,6 +84,19 @@ export function collections(directory = root) {
       [...read(file).matchAll(/>([^<>`$]+)</g)].map(match => match[1].trim())
         .filter(text => words(text).length >= 8 && !/[{}]/.test(text))) },
   ];
+}
+
+// Newly authored RC1 connective prose is strict; exact owner-accepted imports
+// retain their reviewed wording and remain in the legacy report-only audit.
+export function newProductionCollections(directory = root) {
+  const source = fs.readFileSync(path.join(directory,'src/accepted-questions.js'),'utf8');
+  // Short labels/headings also obey sentence and jargon limits. FK collection
+  // averages use full prose, so navigation labels do not dilute the grade.
+  const visible=[...source.matchAll(/<(?:p|h[1-6]|summary|a|button)\b[^>]*>([^<>$]+)<\//g)].map(match=>match[1]);
+  for(const text of visible){const result=assess(text);if(result.tooLong||result.unexplained)throw Error('New production copy exceeds limits: '+text);}
+  const lines = [...source.matchAll(/<p>([^<>$]+)<\/p>/g)].map(match=>match[1]).filter(text=>words(text).length>=8);
+  if(!lines.length)throw Error('Missing new production prose');
+  return [{name:'RC1 new production prose',lines}];
 }
 
 // Draft overlays live outside application data. This mode never edits accepted text.
@@ -137,7 +153,7 @@ export function report(groups) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
-  const failed = report(process.argv.includes('--drafts') ? draftCollections() : collections());
+  const failed = report(process.argv.includes('--new-production') ? newProductionCollections() : process.argv.includes('--drafts') ? draftCollections() : collections());
   const strict = process.argv.includes('--strict');
   console.log(`\n${strict ? 'Strict' : 'Report-only'} mode: ${failed ? 'items need review' : 'within checked limits'}.`);
   if (strict && failed) process.exitCode = 1;

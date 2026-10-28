@@ -1,3 +1,4 @@
+import profiles from './data/characters.json' with {type:'json'};
 import {referenceJson} from './reference-cache.js';
 import referenceIds from './data/character-reference-ids.json' with {type: 'json'};
 
@@ -20,6 +21,8 @@ export function createCharacterGraph(people, relationships) {
   for (const family of groups.values()) for (const child of family.children) {
     for (const sibling of family.children) if (child !== sibling) groups.get(child).siblings.add(sibling);
   }
+  // Reviewed profiles expose only their explicit links, including after sibling inference.
+  for(const profile of profiles){if(!profile.lineage_bindings)continue;const id=referenceIds[profile.id];if(!groups.has(id))continue;const family=groups.get(id);for(const key of Object.keys(family))family[key].clear();for(const link of profile.lineage_bindings.links){const target=referenceIds[link.profile_id];if(persons.has(target))family[link.relation].add(target);}}
   return {
     getPerson: id => persons.get(id),
     getCharacterConnections(characterId) {

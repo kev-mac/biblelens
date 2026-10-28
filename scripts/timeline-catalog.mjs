@@ -1,3 +1,4 @@
+import {releaseContent} from './rc1-content.mjs';
 import fs from 'node:fs';
 
 export function timelineCatalog(catalog, evidence) {
@@ -27,7 +28,7 @@ export function timelineCatalog(catalog, evidence) {
 }
 
 export function loadTimelineCatalog() {
- const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+ const read = file => JSON.parse(releaseContent(file));
  const catalog = read('data/timeline-events.json');
  const books = read('data/books.json');
  const events = timelineCatalog(catalog, read('data/evidence.json')).map(event => {

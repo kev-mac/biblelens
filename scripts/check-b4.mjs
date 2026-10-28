@@ -10,14 +10,14 @@ import {corpusConfig} from '../research/b4/corpus-config-proposal.mjs';
 import {report,words,assess} from './check-readability.mjs';
 const read=file=>fs.readFileSync(file,'utf8'),json=file=>JSON.parse(read(file));
 const baseline=file=>execFileSync('git',['show','codex/b3:'+file],{encoding:'utf8',maxBuffer:64*1024*1024});
-for(const file of [...contentFiles,'data/books.json','data/chapters.json','src/data.js','src/sync-core.js','src/sync.js','worker/sync.mjs','db/schema.ts','package.json','CLAUDE.md']){if(file==='package.json'){assert.equal(json(file).buildNumber,275);assert.deepEqual(json(file).dependencies,JSON.parse(baseline(file)).dependencies);}else assert.equal(read(file),['src/sync-core.js','src/sync.js','worker/sync.mjs'].includes(file)?execFileSync('git',['show','853c116:'+file],{encoding:'utf8'}):baseline(file),file+' changed a pinned source');}
+for(const file of [...contentFiles,'data/books.json','data/chapters.json','src/data.js','src/sync-core.js','src/sync.js','worker/sync.mjs','db/schema.ts','package.json','CLAUDE.md']){if(file==='package.json'){assert.equal(json(file).buildNumber,276);assert.deepEqual(json(file).dependencies,JSON.parse(baseline(file)).dependencies);}else assert.equal(read(file),['src/sync-core.js','src/sync.js','worker/sync.mjs'].includes(file)?execFileSync('git',['show','853c116:'+file],{encoding:'utf8'}):baseline(file),file+' changed a pinned source');}
 const ledgerLabel=text=>Object.entries({'Real conflict':'Wording differs','Can be reconciled':'Readings can fit together','Different detail':'Details differ','Open question':'Interpretation remains open','Evidence agrees':'Evidence matches the text','Evidence disagrees':'Evidence points elsewhere','not a debate':'Instruction in context'}).reduce((value,[from,to])=>value.split(from).join(to),text);
 const normalizedLedger=rows=>rows.map(row=>({...row,proposed_verdict:ledgerLabel(row.proposed_verdict),reason:ledgerLabel(row.reason),notes:row.notes.map(ledgerLabel)}));
 assert.deepEqual(normalizedLedger(json('research/verdict-ledger/ledger.json')),normalizedLedger(JSON.parse(baseline('research/verdict-ledger/ledger.json'))),'Ledger changes must be limited to accepted label names');
 const archiveNow=json('research/headline-debates/candidates.json'),archiveBefore=JSON.parse(baseline('research/headline-debates/candidates.json'));
 for(const key of ['base_commit','evidence_sha256','kjv_sha256'])delete archiveNow[key],delete archiveBefore[key];
 assert.deepEqual(archiveNow,archiveBefore,'Headline content changed while refreshing pins');
-assert.equal(json('package.json').buildNumber,275);
+assert.equal(json('package.json').buildNumber,276);
 assert.deepEqual(json('research/b4/wording-proposals.json'),b4Proposals(),'Regenerate B4 proposals after any wording-rule change');
 let changed=0;
 for(const file of contentFiles){

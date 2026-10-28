@@ -1,13 +1,14 @@
+import {releaseContent} from './rc1-content.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {gunzipSync} from 'node:zlib';
 import {loadTimelineCatalog,timelineCatalog} from './timeline-catalog.mjs';
 
-const read = path => JSON.parse(fs.readFileSync(path,'utf8'));
+const read = path => JSON.parse(releaseContent(path));
 const catalog = read('data/timeline-events.json');
 const evidence = read('data/evidence.json');
 const events = loadTimelineCatalog().events;
-assert.equal(events.length,10);
+assert.equal(events.length,18);
 assert.equal(events.filter(event => event.discrepancy).length,6);
 for (const id of ['history-jericho-destruction-date','history-darius-mede-succession','history-theudas-revolt-order']) {
  const record = evidence.find(record => record.id === id);
@@ -55,4 +56,4 @@ for (const [book,chapter,id] of [[5,6,'history-jericho-destruction-date'],[26,5,
  const response = await worker.fetch(new Request(`https://scripture.test/api/comparisons?book=${book}&chapter=${chapter}&mode=history`),{},{});
  assert((await response.json()).items.some(record => record.id === id),id);
 }
-console.log('PASS: 10 timeline cases, 6 qualified flags, 3 new history annotations, exact KJV quotations, unsafe-source rejection and packaged assets.');
+console.log('PASS: 18 timeline cases, 6 qualified flags, 3 new history annotations, exact KJV quotations, unsafe-source rejection and packaged assets.');

@@ -9,7 +9,8 @@ const aliases: Record<string, string> = {
   'Sarai (Sarah; inferred from Genesis 20:12)': 'sarah',
   'Terah (inferred from Genesis 20:12)': 'terah',
 };
-export function lineageCharacter(name: string): CharacterProfile | undefined {
+export function lineageCharacter(name: string, profile?: CharacterProfile): CharacterProfile | undefined {
+  if(profile?.lineage_bindings){const link=profile.lineage_bindings.links.find(link=>link.label===name);return link?characters.find(row=>row.id===link.profile_id):undefined;}
   // Genesis 46:13 names Issachar’s son Job; do not identify him with Job of Uz.
   if (name === 'Job') return undefined;
   const baseName = name.replace(/ \((?:paternal )?half-(?:brother|sister)\)$/, '');

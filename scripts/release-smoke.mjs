@@ -37,8 +37,8 @@ export async function smokeSearch(page, {timeout = 90000, attempts = 2} = {}) {
     page.on('response', onResponse);
     try {
       // Navigate away first: submitting an unchanged hash need not rerun search.
-      await page.evaluate(() => BibleLensWorkspace.route('#search'));
-      await page.evaluate(() => BibleLensWorkspace.route('#search?q=mercy'));
+      await page.evaluate(() => BibleLensWorkspace.navigate('#search'));
+      await page.evaluate(() => BibleLensWorkspace.navigate('#search?q=mercy'));
       await page.waitForFunction(() => {
         const status = document.querySelector('#lens-search-status');
         return status && !status.classList.contains('loading-state') &&
@@ -112,19 +112,19 @@ export async function releaseSmoke({base, expected, report, legacyCsp = false}) 
         result.csp = {reportOnly: headers['content-security-policy-report-only'] ?? null,
           enforced: headers['content-security-policy'] ?? null,
           meta: await page.locator('meta[http-equiv]').evaluateAll(nodes => nodes.filter(n => /content-security-policy/i.test(n.httpEquiv)).map(n => n.outerHTML))};
-        if (!legacyCsp) assert(result.csp.reportOnly && !result.csp.enforced && !result.csp.meta.length, 'HTML CSP response mode mismatch');
+        if (!legacyCsp) assert(result.csp.reportOnly && result.csp.enforced === "object-src 'none'; base-uri 'none'; form-action 'self'; worker-src 'self'" && !result.csp.meta.length, 'HTML CSP response mode mismatch');
         const release = await context.request.get(base + '/release.json', {headers: {'cache-control': 'no-cache'}, timeout: 90000});
         assert.equal(release.status(), 200); result.release = await release.json();
         assert.equal(result.release.buildNumber, expected.buildNumber); assert.equal(result.release.sourceHash, expected.sourceHash);
         await page.waitForFunction(() => !document.documentElement.classList.contains('bl-starting') &&
           document.getElementById('biblelens-app-script')?.dataset.biblelensReady === 'true' &&
-          typeof reading !== 'undefined' && reading?.verses?.length > 0, null, {timeout: 90000});
+          typeof window.BibleLensWorkspace !== 'undefined', null, {timeout: 90000});
         assert.deepEqual(result.errors, [], 'Startup threw a page error');
         return {status: 'PASS'};
       });
       if (result.startup.status === 'PASS') {
         await step('read', async () => {
-          await page.evaluate(() => BibleLensWorkspace.route('#read/0/1'));
+          await page.evaluate(() => BibleLensWorkspace.navigate('#read/0/1'));
           await page.waitForFunction(() => document.querySelector('.verse-body')?.textContent.trim().length > 15, null, {timeout: 60000});
           return {status: 'PASS', text: (await page.locator('.verse-body').first().textContent()).slice(0, 120)};
         });

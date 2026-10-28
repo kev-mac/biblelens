@@ -35,5 +35,5 @@ assert.equal(payload.collections.teachings.length,21);const forms=new Set(['teac
 for(const row of payload.collections.teachings){assert(forms.has(row.record.form));assert.equal(row.reviewStatus,'draft');assert(row.record.sources.length);assert(!assess(row.record.summary).tooLong);assert(!assess(row.record.context,{tier:'detail'}).tooLong);}
 const jesus=read('research/b6/jesus.json');assert.equal(jesus.ownerAccepted,false);assert.equal(jesus.reviewStatus,'draft');assert(jesus.sources.length);
 for(const file of ['data/evidence.json','data/stories.json','src/data/characters.json','data/timeline-events.json','src/data/prophecies.json','data/chapters.json'])assert.equal(fs.readFileSync(file,'utf8'),execFileSync('git',['show','codex/b4:'+file],{encoding:'utf8',maxBuffer:64*1024*1024}),file+' accepted content changed');
-assert.equal(read('package.json').buildNumber,275);
+assert.equal(read('package.json').buildNumber,276);
 console.log(`PASS: B6 tier negative controls, ${fields} failing-field proposals, 1693 source-bound reading pairs, sentence-case draft titles, 21 teaching drafts, unpublished Jesus and accepted-source preservation.`);

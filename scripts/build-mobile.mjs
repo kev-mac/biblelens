@@ -25,7 +25,8 @@ html=html.replace('Questions and recent conversation context are sent only to th
 html=html.replace('Hosted access follows the site’s sharing settings. Chat requires no separate login.','Reading and search work offline. External source links require internet. Chat requires no login.');
 html=html.replace('run against packaged content on this site.','run against content bundled in this app.');
 // Exported reference links must remain usable without an API interceptor.
-for(const file of ['people','topics'])fs.copyFileSync('data/reference/'+file+'.json',path.join(output,'reference',file+'.json'));
+// Keep the reviewed people asset from the shared build; topics are a static export.
+fs.copyFileSync('data/reference/topics.json',path.join(output,'reference','topics.json'));
 const nativeNotices=['@capacitor/core','@capacitor/android','@capacitor/ios','@capacitor/local-llm'].map(name=>name+'\n'+fs.readFileSync('node_modules/'+name+'/LICENSE','utf8')).join('\n\n');
 fs.writeFileSync(path.join(output,'native-licenses.txt'),nativeNotices);
 html=html.replace('No language model download is needed for Chat.','<a href="/native-licenses.txt" target="_blank" rel="noopener">Native component licenses</a>. No language model download is needed for reading and search.');

@@ -33,6 +33,7 @@ export interface CharacterProfile {
   era: 'Primeval' | 'Patriarchal' | 'Exodus' | 'Conquest' | 'Judges' | 'Monarchy' | 'Wisdom' | 'Prophets' | 'Gospels' | 'Apostolic' | 'Across scripture';
   summary: string;
   lineage?: CharacterLineage;
+  lineage_bindings?: {policy: string; links: {relation:string; label:string; profile_id:string}[]};
   geography: CharacterGeography;
   narrative_anchors: NarrativeAnchors;
 }

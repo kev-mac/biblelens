@@ -42,6 +42,8 @@ export function splitWorker(source, output = 'dist', external = false) {
   // One 9.75 MB asset avoids 66 first-search subrequests. It remains below
   // Cloudflare's static asset file limit; ranking still visits the same shards.
   const index = pack('search/index', data.MINI_INDEX);
+  const offline = pack('offline-bible',data.CHAPTERS);
+  source=source.replace("request.method==='GET'?json(CHAPTERS)","request.method==='GET'?json(await readPack("+JSON.stringify(offline)+"))");
   source = source.replace('const MINI_INDEX=' + JSON.stringify(data.MINI_INDEX), 'const MINI_INDEX={}');
   const chapterStart = source.indexOf('const CHAPTERS=');
   const chapterEnd = source.indexOf(';\nconst STUDIES=', chapterStart);
@@ -49,7 +51,16 @@ export function splitWorker(source, output = 'dist', external = false) {
   for (const [key, encoded] of Object.entries(data.CHAPTERS)) pack('chapters/' + key.replace(':', '-'), encoded);
   source = source.slice(0, chapterStart) + 'const CHAPTERS=' + JSON.stringify(Object.fromEntries(Object.keys(data.CHAPTERS).map(key => [key, true]))) + source.slice(chapterEnd);
   source = source.replace('atob(CHAPTERS[key])', "atob(await readPack(PACK_PREFIX+'chapters/'+key.replace(':','-')+'.json'))");
-  const metadata = Object.fromEntries(Object.entries(data.ASSETS).map(([url, {body, ...meta}]) => [url, meta]));
+  // Keep negotiated gzip bytes lazy too; they must not remain in Worker metadata.
+  const metadata = Object.fromEntries(Object.entries(data.ASSETS).map(([url, {body,gzip,...meta}]) => {
+    if(!gzip)return [url,meta];
+    const gzipPath=prefix+'gzip/'+createHash('sha256').update(url).digest('hex')+'.gz';
+    assets[gzipPath]={type:'application/gzip',encoding:'base64',body:gzip};
+    return [url,{...meta,gzipPath}];
+  }));
+  source=source.replace('asset.gzip&&acceptsGzip','asset.gzipPath&&acceptsGzip')
+    .replace("gzip?Uint8Array.from(atob(asset.gzip),char=>char.charCodeAt(0)):","gzip?await assetBody(asset.gzipPath):")
+    .replace("...(asset.gzip?{'vary'","...(asset.gzipPath?{'vary'");
   source = source.replace('const ASSETS=' + JSON.stringify(data.ASSETS), 'const ASSETS=' + JSON.stringify(metadata));
   source = source.replace("new Response(ASSETS['/release.json'].body,", "new Response(await assetBody('/release.json'),");
   source = source.replace("asset.encoding==='base64'?Uint8Array.from(atob(asset.body),char=>char.charCodeAt(0)):asset.body", "await assetBody(url.pathname==='/index.html'?'/':url.pathname)");
@@ -82,7 +93,7 @@ async function prepareAssets(request,env){
  const path=new URL(request.url).pathname;
  if(path==='/reference/people.json')await loadPack('PEOPLE');
  if(path==='/reference/topics.json')await loadPack('TOPICS');
- if(['/api/search','/api/chat','/api/categories','/api/marked-comparisons','/api/comparisons'].includes(path))await loadPack('EVIDENCE');
+ if(['/api/search','/api/chat','/api/categories','/api/marked-comparisons','/api/comparisons','/api/debates','/api/debate'].includes(path))await loadPack('EVIDENCE');
  if(['/api/search','/api/chat','/api/categories'].includes(path))await loadPack('PEOPLE');
  if(['/api/search','/api/chat'].includes(path)){
   await Promise.all(['TOPICS','SEARCH','VOCABULARY'].map(loadPack));
