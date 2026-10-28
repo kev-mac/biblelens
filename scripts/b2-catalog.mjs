@@ -73,6 +73,8 @@ export function packageB2Review(assets) {
   payload.b4Readings = JSON.parse(fs.readFileSync('research/b4/reading-proposals.json','utf8')).records.map(row=>({...row,record:{id:row.id,title:row.question,summary:row.readings.map(reading=>reading.summary).join(' '),sources:row.sources}}));
   for (const [file,type] of [['teachings.html','text/html'],['teachings.js','application/javascript']]) assets['/'+file]={type:type+'; charset=utf-8',body:fs.readFileSync('src/'+file,'utf8')};
   assets['/teachings.json']={type:'application/json; charset=utf-8',body:fs.readFileSync('research/b6/teachings.json','utf8')};
+  const feed=JSON.parse(assets['/explore-feed.json'].body);feed.teachings=payload.collections.teachings.map(({record})=>({id:record.id,title:record.title,meta:'Draft · '+record.form+' · '+record.passage,url:'/teachings.html#'+record.id}));
+  assets['/explore-feed.json'].body=JSON.stringify(feed);
   assets['/atlas-explore.js'].body=assets['/atlas-explore.js'].body.replace("const collections=[", "const collections=[{key:'teachings',image:'commandments',title:'Teachings & Laws',copy:'Explore teachings, laws, instructions, and lists in their written setting.',url:'/teachings.html'},");
   assets['/draft-review.json'] = {type: 'application/json; charset=utf-8', body: JSON.stringify(payload)};
   for (const [file, type] of [['draft-review.html', 'text/html'], ['draft-review.js', 'application/javascript'], ['draft-review.css', 'text/css']]) {

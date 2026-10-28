@@ -12,11 +12,11 @@
  const form=document.getElementById('form').value,book=document.getElementById('book').value;
  const selected=rows.filter(r=>(!form||r.form===form)&&(!book||bookOf(r)===book));
  const fragment=document.createDocumentFragment();
- for(const row of selected){const article=node('article','');article.append(node('p','Draft · '+row.form),node('h2',row.title),node('p',row.passage),node('p',row.summary));
+ for(const row of selected){const article=node('article','');article.id=row.id;article.append(node('p','Draft · '+row.form),node('h2',row.title),node('p',row.passage),node('p',row.summary));
  if(/^\/#read\/\d+\/\d+\/\d+$/.test(row.passageLink)){const link=node('a','Read passage');link.href=row.passageLink;article.append(link);}
  for(const [label,text]of [['Context',row.context+' '+row.limits],['Sources',row.sources.map(s=>s.label).join('; ')]]){const details=node('details','');details.append(node('summary',label),node('p',text));article.append(details);}fragment.append(article);}
- document.getElementById('results').replaceChildren(fragment);document.getElementById('count').textContent=`${selected.length} drafts`;
+ document.getElementById('results').replaceChildren(fragment);document.getElementById(location.hash.slice(1))?.scrollIntoView();document.getElementById('count').textContent=`${selected.length} drafts`;
  }
- document.getElementById('filters').onsubmit=e=>e.preventDefault();for(const id of ['form','book'])document.getElementById(id).onchange=render;render();
+ const params=new URLSearchParams(location.search);for(const id of ['form','book']){const input=document.getElementById(id),value=params.get(id)||'';if([...input.options].some(o=>o.value===value))input.value=value;input.onchange=()=>{const query=new URLSearchParams();for(const name of ['form','book'])if(document.getElementById(name).value)query.set(name,document.getElementById(name).value);history.replaceState(null,'',location.pathname+(query.size?'?'+query:'')+location.hash);render();};}document.getElementById('filters').onsubmit=e=>e.preventDefault();render();
  }catch{document.getElementById('count').textContent='Drafts could not load. Reload to retry.';}
 })();
