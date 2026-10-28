@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import zlib from 'node:zlib';
+import {packageB2Review} from './b2-catalog.mjs';
 
 const json = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const segmenter = new Intl.Segmenter('en', {granularity: 'sentence'});
@@ -68,6 +69,7 @@ export function loadDraftDebates(root = process.cwd()) {
 
 export function packageDraftDebates(assets, env = process.env) {
   if (!draftPreviewEnabled(env)) return false;
+  packageB2Review(assets);
   const payload = loadDraftDebates();
   const source = fs.readFileSync('src/draft-debates.js', 'utf8').replace('/*__DRAFT_DEBATES__*/{}', () => JSON.stringify(payload));
   assets['/debates.js'].body = source + '\n' + assets['/debates.js'].body;
@@ -75,7 +77,7 @@ export function packageDraftDebates(assets, env = process.env) {
   // A small discovery link is compiled only into the explicit draft preview.
   const target = '<div class="phase2-tools">';
   if (!assets['/atlas-explore.js'].body.includes(target)) throw Error('Missing Explore draft entry point');
-  assets['/atlas-explore.js'].body = assets['/atlas-explore.js'].body.replace(target, target + '<a class="phase3-preview-link" href="#debates?draft=1">Preview draft debates</a>');
+  assets['/atlas-explore.js'].body = assets['/atlas-explore.js'].body.replace(target, target + '<a class="phase3-preview-link" href="#debates?draft=1">Preview draft debates</a><a class="phase3-preview-link" href="/draft-review.html">Review content drafts</a>');
   console.log('DRAFT PREVIEW: 40 headlines; proposed verdicts await Kevin. Not a production build.');
   return true;
 }

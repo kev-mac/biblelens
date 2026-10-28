@@ -11,7 +11,11 @@ export function releaseInfo(root=process.cwd(),{drafts=process.env.BIBLELENS_DRA
  // Draft research is absent from production assets. Include its bytes and the
  // explicit build mode in preview identity, so preview and production cannot
  // claim to be the same bundle merely because their source checkout matches.
- if(drafts)for(const dir of ['research/verdict-ledger','research/headline-debates','research/phase3-preview'])walk(dir);
+ if(drafts){
+  for(const dir of ['research/verdict-ledger','research/headline-debates','research/phase3-preview','research/b2','research/codex-drafts/content-gaps','research/codex-reviews/2026-10-26','docs/plain-language'])walk(dir);
+  const auditPath=path.join(root,'research/codex-reviews/2026-10-26/audit.json');
+  if(fs.existsSync(auditPath))for(const name of Object.keys(JSON.parse(fs.readFileSync(auditPath,'utf8')).input_sha256).filter(name=>name.endsWith('records.json')))files.push('research/claude-drafts/'+name);
+ }
  const hash=createHash('sha256');if(drafts)hash.update('biblelens-draft-preview\0');for(const file of files.sort()){
   const bytes=fs.readFileSync(path.join(root,file));
   hash.update(file+'\0');

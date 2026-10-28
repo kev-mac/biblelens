@@ -1,0 +1,214 @@
+[
+  {
+    "reviewStatus": "draft",
+    "record": {
+      "id": "history-mesha-moab-revolt",
+      "mode": "history",
+      "status": "Context",
+      "title": "Mesha And Israel’s Rule",
+      "ref": "2 Kings 3:5",
+      "appliesTo": [
+        "2 Kings 3:5"
+      ],
+      "refs": [
+        {
+          "book": 11,
+          "chapter": 3,
+          "verse": 5,
+          "label": "2 Kings 3:5"
+        }
+      ],
+      "summary": "Kings links Moab’s revolt with Ahab’s death. Mesha’s stone describes Moab regaining land held by Israel. Both concern conflict between these kingdoms. This comparison does not establish that they describe the same stage of that conflict.",
+      "reasoning": "The Louvre identifies the stone as a record of Mesha’s victories. Its date fields differ within the ninth century BCE. The cited translation mentions Omri’s son and forty years. Those details need review before matching the accounts year by year.",
+      "scope": "A royal victory record gives one ruler’s account. It does not independently confirm every event in Kings. This draft assigns no precise year. It does not identify the unnamed son or resolve the forty years.",
+      "text": "KJV 2 Kings 3:5: “But it came to pass, when Ahab was dead, that the king of Moab rebelled against the king of Israel.”",
+      "sources": [
+        {
+          "label": "Louvre, Mesha stone AO 5066",
+          "url": "https://collections.louvre.fr/en/ark:/53355/cl010120339"
+        },
+        {
+          "label": "K. C. Hanson, Mesha translation adapted from Albright",
+          "url": "https://kchanson.com/ANCDOCS/westsem/mesha.html"
+        }
+      ],
+      "checked": "2026-10-28",
+      "tags": []
+    },
+    "event": {
+      "id": "mesha-moab-revolt",
+      "title": "Moab's revolt against Israel (Mesha)",
+      "display_title": "Mesha And Israel’s Rule",
+      "evidence_id": "history-mesha-moab-revolt",
+      "traditional_date": "Textual comparison; no precise historical year assigned in this draft.",
+      "reviewed": "2026-10-28",
+      "review_status": "draft / needs review: limited Context comparison",
+      "discrepancy_kind": null,
+      "passages": [
+        "2 Kings 3:5"
+      ]
+    },
+    "limits": "Narrow replacement proposal. The broader research claim stays held; Kevin has not accepted this draft.",
+    "provenance": {
+      "source": "research/b2/academic-context.json",
+      "checked": "2026-10-28",
+      "basis": "Opened primary editions and packaged KJV; see research-sources.json."
+    }
+  },
+  {
+    "reviewStatus": "draft",
+    "record": {
+      "id": "history-shishak-campaign-karnak",
+      "mode": "history",
+      "status": "Context",
+      "title": "Kings And The Karnak Place List",
+      "ref": "1 Kings 14:25",
+      "appliesTo": [
+        "1 Kings 14:25"
+      ],
+      "refs": [
+        {
+          "book": 10,
+          "chapter": 14,
+          "verse": 25,
+          "label": "1 Kings 14:25"
+        }
+      ],
+      "summary": "Kings describes an Egyptian campaign against Jerusalem. A survey records the Bubastite Portal at Karnak and its list of conquered places. The list offers a separate ancient source to compare with Kings. Each proposed place match needs its own review.",
+      "reasoning": "The survey documents the surviving relief and inscriptions. It supplies primary material for later checks of the campaign’s reach. It does not make every old place reading certain. The earlier draft’s detailed geography is held for further review.",
+      "scope": "This draft does not settle the identity of each place or assign a precise campaign year. It does not infer Jerusalem’s fate from a missing name. The earlier city list remains outside this draft.",
+      "text": "KJV 1 Kings 14:25: “And it came to pass in the fifth year of king Rehoboam, that Shishak king of Egypt came up against Jerusalem:”",
+      "sources": [
+        {
+          "label": "Epigraphic Survey, Reliefs and Inscriptions at Karnak III, OIP 74",
+          "url": "https://isac.uchicago.edu/publications/reliefs-and-inscriptions-karnak-volume-iii-bubastite"
+        }
+      ],
+      "checked": "2026-10-28",
+      "tags": []
+    },
+    "event": {
+      "id": "shishak-campaign-karnak",
+      "title": "Shishak's campaign against Rehoboam (Karnak relief)",
+      "display_title": "Kings And The Karnak Place List",
+      "evidence_id": "history-shishak-campaign-karnak",
+      "traditional_date": "Textual comparison; no precise historical year assigned in this draft.",
+      "reviewed": "2026-10-28",
+      "review_status": "draft / needs review: limited Context comparison",
+      "discrepancy_kind": null,
+      "passages": [
+        "1 Kings 14:25"
+      ]
+    },
+    "limits": "Narrow replacement proposal. The broader research claim stays held; Kevin has not accepted this draft.",
+    "provenance": {
+      "source": "research/b2/academic-context.json",
+      "checked": "2026-10-28",
+      "basis": "Opened primary editions and packaged KJV; see research-sources.json."
+    }
+  },
+  {
+    "reviewStatus": "draft",
+    "record": {
+      "id": "history-samaria-fall-sargon",
+      "mode": "history",
+      "status": "Context",
+      "title": "Samaria In Kings And Sargon’s Account",
+      "ref": "2 Kings 17:6",
+      "appliesTo": [
+        "2 Kings 17:6"
+      ],
+      "refs": [
+        {
+          "book": 11,
+          "chapter": 17,
+          "verse": 6,
+          "label": "2 Kings 17:6"
+        }
+      ],
+      "summary": "Kings reports Samaria’s capture by the king of Assyria. Sargon’s inscription also claims the city’s capture and removal of people. This gives an outside royal claim about Samaria. The relationship between these accounts still needs a chronology review.",
+      "reasoning": "The current edition prints 27,290 people in one copy. Its notes record different totals in other copies. The account names Sargon as the speaker. Kings names Shalmaneser earlier in the campaign, then refers to the king of Assyria.",
+      "scope": "A claim by Sargon does not settle who first captured the city. Differing copies limit the precision of the total. This draft does not force the two campaigns into one year. It does not turn royal claims into independently verified counts.",
+      "text": "KJV 2 Kings 17:6: “In the ninth year of Hoshea the king of Assyria took Samaria, and carried Israel away into Assyria, and placed them in Halah and in Habor by the river of Gozan, and in the cities of the Medes.”",
+      "sources": [
+        {
+          "label": "Grant Frame, RINAP 2, Sargon II 7, lines 23b–25a and notes",
+          "url": "https://oracc.museum.upenn.edu/rinap/rinap2/Q006488/html"
+        }
+      ],
+      "checked": "2026-10-28",
+      "tags": []
+    },
+    "event": {
+      "id": "samaria-fall-sargon",
+      "title": "The fall of Samaria: Shalmaneser or Sargon?",
+      "display_title": "Samaria In Kings And Sargon’s Account",
+      "evidence_id": "history-samaria-fall-sargon",
+      "traditional_date": "Textual comparison; no precise historical year assigned in this draft.",
+      "reviewed": "2026-10-28",
+      "review_status": "draft / needs review: limited Context comparison",
+      "discrepancy_kind": null,
+      "passages": [
+        "2 Kings 17:6"
+      ]
+    },
+    "limits": "Narrow replacement proposal. The broader research claim stays held; Kevin has not accepted this draft.",
+    "provenance": {
+      "source": "research/b2/academic-context.json",
+      "checked": "2026-10-28",
+      "basis": "Opened primary editions and packaged KJV; see research-sources.json."
+    }
+  },
+  {
+    "reviewStatus": "draft",
+    "record": {
+      "id": "history-tiglath-pileser-menahem-pekah-ahaz",
+      "mode": "history",
+      "status": "Context",
+      "title": "Judah In An Assyrian Tribute List",
+      "ref": "2 Kings 16:8",
+      "appliesTo": [
+        "2 Kings 16:8"
+      ],
+      "refs": [
+        {
+          "book": 11,
+          "chapter": 16,
+          "verse": 8,
+          "label": "2 Kings 16:8"
+        }
+      ],
+      "summary": "Kings describes Ahaz sending silver and gold to the king of Assyria. An Assyrian list names Jehoahaz of Judah among rulers sending goods. The passages offer a comparison about payments to Assyria. This draft leaves the name match open.",
+      "reasoning": "The current edition preserves the name Jehoahaz beside Judah. Parts of the surrounding payment list are damaged. The surviving name can guide a comparison with Kings. It does not alone explain the payment’s purpose or establish every proposed identity.",
+      "scope": "This draft covers the tribute list only. It does not settle Pul’s identity or who killed Pekah. It does not assume that a longer name proves an identity. The broader draft remains held for those source checks.",
+      "text": "KJV 2 Kings 16:8: “And Ahaz took the silver and gold that was found in the house of the Lord, and in the treasures of the king's house, and sent it for a present to the king of Assyria.”",
+      "sources": [
+        {
+          "label": "Tadmor and Yamada, RINAP 1, Tiglath-pileser III 47, reverse 6b′–12′",
+          "url": "https://oracc.museum.upenn.edu/rinap/rinap1/Q003460/html"
+        }
+      ],
+      "checked": "2026-10-28",
+      "tags": []
+    },
+    "event": {
+      "id": "tiglath-pileser-menahem-pekah-ahaz",
+      "title": "Tiglath-pileser III, Menahem, Pekah and Ahaz",
+      "display_title": "Judah In An Assyrian Tribute List",
+      "evidence_id": "history-tiglath-pileser-menahem-pekah-ahaz",
+      "traditional_date": "Textual comparison; no precise historical year assigned in this draft.",
+      "reviewed": "2026-10-28",
+      "review_status": "draft / needs review: limited Context comparison",
+      "discrepancy_kind": null,
+      "passages": [
+        "2 Kings 16:8"
+      ]
+    },
+    "limits": "Narrow replacement proposal. The broader research claim stays held; Kevin has not accepted this draft.",
+    "provenance": {
+      "source": "research/b2/academic-context.json",
+      "checked": "2026-10-28",
+      "basis": "Opened primary editions and packaged KJV; see research-sources.json."
+    }
+  }
+]
