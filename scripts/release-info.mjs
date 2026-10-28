@@ -12,7 +12,7 @@ export function releaseInfo(root=process.cwd(),{drafts=process.env.BIBLELENS_DRA
  // explicit build mode in preview identity, so preview and production cannot
  // claim to be the same bundle merely because their source checkout matches.
  if(drafts){
-  for(const dir of ['research/verdict-ledger','research/headline-debates','research/phase3-preview','research/b2','research/codex-drafts/content-gaps','research/codex-reviews/2026-10-26','docs/plain-language'])walk(dir);
+  for(const dir of ['research/verdict-ledger','research/headline-debates','research/phase3-preview','research/b2','research/b6','research/codex-drafts/content-gaps','research/codex-reviews/2026-10-26','docs/plain-language'])walk(dir);
   for(const file of ['research/b4/wording-proposals.json','research/b4/reading-proposals.json'])if(fs.existsSync(path.join(root,file)))files.push(file);
   const auditPath=path.join(root,'research/codex-reviews/2026-10-26/audit.json');
   if(fs.existsSync(auditPath))for(const name of Object.keys(JSON.parse(fs.readFileSync(auditPath,'utf8')).input_sha256).filter(name=>name.endsWith('records.json')))files.push('research/claude-drafts/'+name);

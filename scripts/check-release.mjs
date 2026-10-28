@@ -17,6 +17,12 @@ try{
  assert.equal(first.version,'1.0.0');assert.equal(first.buildNumber,219);
  fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'1.0.0',buildNumber:220}));const next=releaseInfo(dir);assert.equal(next.buildNumber,220);assert.notEqual(next.sourceHash,first.sourceHash);
  // Invalid UTF-8 bytes previously collapsed to the same replacement character.
+ const draftDir=path.join(dir,'research/b6');fs.mkdirSync(draftDir,{recursive:true});
+ fs.writeFileSync(path.join(draftDir,'evidence.json'),'first draft');
+ const productionBefore=releaseInfo(dir,{drafts:false}),draftBefore=releaseInfo(dir,{drafts:true});
+ fs.writeFileSync(path.join(draftDir,'evidence.json'),'revised draft');
+ assert.equal(releaseInfo(dir,{drafts:false}).sourceHash,productionBefore.sourceHash,'B6 research is excluded from production identity');
+ assert.notEqual(releaseInfo(dir,{drafts:true}).sourceHash,draftBefore.sourceHash,'B6 draft content must change preview identity');
  const image=path.join(dir,'src/explore-places.webp');
  fs.writeFileSync(image,Buffer.from([0x52,0x49,0x46,0x46,0xff,0x0d,0x0a]));const imageFirst=releaseInfo(dir);
  fs.writeFileSync(image,Buffer.from([0x52,0x49,0x46,0x46,0xfe,0x0d,0x0a]));assert.notEqual(imageFirst.sourceHash,releaseInfo(dir).sourceHash,'Distinct binary bytes cannot collapse to one UTF-8 fingerprint');

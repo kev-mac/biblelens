@@ -67,8 +67,8 @@ for (const file of ['data/evidence.json','data/stories.json','src/data/character
  if(file==='package.json'){const current=read(file),main=JSON.parse(execFileSync('git',['show','853c116:'+file],{encoding:'utf8'}));assert.equal(current.buildNumber,275);assert.deepEqual(current.dependencies,main.dependencies);assert.deepEqual(current.devDependencies,{...main.devDependencies,purgecss:'8.0.0'});}else assert.equal(fs.readFileSync(file,'utf8'),execFileSync('git',['show',`${['src/sync.js','src/sync-core.js'].includes(file)?'853c116':baseline}:${file}`],{encoding:'utf8',maxBuffer:64*1024*1024}),file+' changed accepted source');
 }
 if (process.argv.includes('--production')) {
- for (const file of ['draft-review.html','draft-review.json','draft-review.js','draft-review.css']) assert(!fs.existsSync('www/'+file),'Production draft leak: '+file);
+ for (const file of ['draft-review.html','draft-review.json','draft-review.js','draft-review.css','teachings.html','teachings.json','teachings.js']) assert(!fs.existsSync('www/'+file),'Production draft leak: '+file);
  const worker=(await import('../dist/server/index.js')).default;
- assert.equal((await worker.fetch(new Request('https://test.invalid/draft-review.json'),{},{})).status,404);
+ for(const file of ['draft-review.json','teachings.json','teachings.html'])assert.equal((await worker.fetch(new Request('https://test.invalid/'+file),{},{})).status,404,file+' production leak');
 }
 console.log(`PASS: 413 draft proposals, all 187 fixes mapped, 155 gaps, 59 meaning checks, 22 holds, 13 returns, 330 shots, ${quoteChecks} packaged quotations; accepted source preserved.`);

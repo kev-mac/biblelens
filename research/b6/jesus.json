@@ -3,15 +3,39 @@
   "name": "Jesus",
   "reviewStatus": "draft",
   "ownerAccepted": false,
-  "summary": "The Gospels describe Jesus as a teacher and healer. They tell of his followers, death by crucifixion, and reports of resurrection.",
+  "summary": "The four Gospels, books about Jesus, describe him as a teacher and healer. They tell of his followers, death on a cross, and reports that he rose from the dead.",
   "context": "Matthew, Mark, Luke, and John give accounts with shared scenes and distinct details. Acts describes his followers after his death. This profile attributes claims to these texts. It does not treat every account as an independently verified event.",
   "sources": [
-    {"label": "Mark 1:14–45", "corpus": "data/chapters.json", "passage": "Mark 1:14–45"},
-    {"label": "Mark 15–16", "corpus": "data/chapters.json", "passage": "Mark 15–16"},
-    {"label": "Matthew 28", "corpus": "data/chapters.json", "passage": "Matthew 28"},
-    {"label": "Luke 24", "corpus": "data/chapters.json", "passage": "Luke 24"},
-    {"label": "John 20", "corpus": "data/chapters.json", "passage": "John 20"},
-    {"label": "Acts 1", "corpus": "data/chapters.json", "passage": "Acts 1"}
+    {
+      "label": "Mark 1:14–45",
+      "corpus": "data/chapters.json",
+      "passage": "Mark 1:14–45"
+    },
+    {
+      "label": "Mark 15–16",
+      "corpus": "data/chapters.json",
+      "passage": "Mark 15–16"
+    },
+    {
+      "label": "Matthew 28",
+      "corpus": "data/chapters.json",
+      "passage": "Matthew 28"
+    },
+    {
+      "label": "Luke 24",
+      "corpus": "data/chapters.json",
+      "passage": "Luke 24"
+    },
+    {
+      "label": "John 20",
+      "corpus": "data/chapters.json",
+      "passage": "John 20"
+    },
+    {
+      "label": "Acts 1",
+      "corpus": "data/chapters.json",
+      "passage": "Acts 1"
+    }
   ],
   "limits": "Unpublished draft. No claim of agreement across every Gospel or independent historical confirmation. No Exile/Return era is added. Stories retain their narrative-only scope."
 }
