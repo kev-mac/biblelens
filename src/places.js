@@ -47,8 +47,9 @@ async function openAtlas(id,button){
    const [M]=await Promise.all([import(modulePath),window.BibleLensFeatures.style('/vendor/maplibre-gl.css')]);if(token!==request||!sheet.open)return;
    if(mapFailed&&map){map.remove();map=null;marker=null;mapFailed=false;}
    if(!map){
-    // Use a local module worker blob on web and Capacitor's custom origin.
+    // Web uses a same-origin worker; Capacitor needs a local module blob.
     // The library's HTTP-only URL inference cannot locate a native worker.
+    if(!workerURL && !document.documentElement.classList.contains('native-ios'))workerURL=new URL('/vendor/maplibre-gl-worker.mjs',location.href).href;
     if(!workerURL){
      const response=await fetch('/vendor/maplibre-gl-worker.mjs');if(!response.ok)throw Error('Map worker unavailable');
      workerURL=URL.createObjectURL(new Blob([await response.text()],{type:'application/javascript'}));

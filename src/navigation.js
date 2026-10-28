@@ -2,7 +2,12 @@
 // The settings menu reuses inert icon templates hosted by the live masthead.
 (() => {
  const triggers = [document.querySelector('#settings-navigation')];
- const sheet = document.createElement('dialog');
+ const popover = 'showPopover' in HTMLElement.prototype;
+ const sheet = document.createElement(popover ? 'div' : 'dialog');
+ if(popover){sheet.setAttribute('popover','auto');sheet.setAttribute('role','dialog');}
+ let opening=false;
+ const isOpen=()=>popover?sheet.matches(':popover-open'):sheet.open;
+ const close=()=>{opening=false;if(!isOpen())return;if(popover)sheet.hidePopover();else sheet.close();};
  sheet.id = 'navigation-sheet'; sheet.className = 'navigation-sheet';
  sheet.setAttribute('aria-labelledby', 'navigation-heading');
  sheet.innerHTML = '<div class="navigation-heading"><h2 id="navigation-heading">Menu</h2><button type="button" data-navigation-close aria-label="Close navigation" autofocus>✕</button></div><div class="navigation-grid"></div>';
@@ -27,30 +32,44 @@
  settings.append(document.querySelector('#lens-settings svg').cloneNode(true));
  const settingsLabel = document.createElement('span'); settingsLabel.textContent = 'Settings'; settings.append(settingsLabel); grid.append(settings);
  function open() {
-  if (sheet.open) return;
+  if (isOpen()||opening) return;
+  opening=true;
   for (const button of grid.querySelectorAll('[data-navigation-view]')) {
    if (button.dataset.navigationView === view) button.setAttribute('aria-current', 'page');
    else button.removeAttribute('aria-current');
   }
-  document.querySelector('#reader-settings').close();sheet.showModal(); for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'true'); document.body.classList.add('navigation-open');
+  const show=()=>{
+   if(!opening)return;opening=false;
+   if(popover)sheet.showPopover();else sheet.showModal();
+   sheet.querySelector('[data-navigation-close]').focus({preventScroll:true});
+   for(const trigger of triggers)trigger.setAttribute('aria-expanded','true');
+   document.body.classList.add('navigation-open');
+  };
+  // Let all Settings close handlers restore focus before the menu takes it.
+  const settings=document.querySelector('#reader-settings');
+  if(settings.open){settings.addEventListener('close',show,{once:true});settings.close();}else show();
  }
  for(const trigger of triggers){
  trigger.addEventListener('click', event => { event.preventDefault(); open(); });
  trigger.addEventListener('keydown', event => { if (event.key === ' ') { event.preventDefault(); open(); } });
  }
- sheet.querySelector('[data-navigation-close]').addEventListener('click', () => sheet.close());
+ sheet.querySelector('[data-navigation-close]').addEventListener('click', () => close());
  grid.addEventListener('click', event => {
   const button = event.target.closest('button'); if (!button) return;
-  sheet.close();
-  if (button.dataset.navigationView) { const page=button.dataset.navigationView;window.BibleLensWorkspace.navigate('#'+({explore:'discover',characters:'people',bookmarks:'notebook?section=bookmarks'}[page]||page)); window.scrollTo({top:0,behavior:'smooth'}); }
+  close();
+  if (button.dataset.navigationView) { const page=button.dataset.navigationView;window.BibleLensWorkspace.navigate('#'+({explore:'discover',characters:'people',bookmarks:'notebook?section=bookmarks'}[page]||page)); window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}); }
   else if (button.hasAttribute('data-navigation-settings')) requestAnimationFrame(() => document.querySelector('#lens-settings').click());
  });
- sheet.addEventListener('close', () => { for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');document.querySelector('#lens-settings').focus({preventScroll:true}); });
- const outside = event => { const r = sheet.getBoundingClientRect(); return event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom; };
- let backdropStart = false;
- sheet.addEventListener('pointerdown', event => { backdropStart = event.target === sheet && outside(event); });
- sheet.addEventListener('click', event => { if (backdropStart && event.target === sheet && outside(event)) sheet.close(); backdropStart = false; });
- window.addEventListener('viewchange', () => { if (sheet.open) sheet.close(); });
+ const closed = () => { for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');if(sheet.contains(document.activeElement)||document.activeElement===document.body)document.querySelector('#lens-settings').focus({preventScroll:true}); };
+ if(popover)sheet.addEventListener('toggle',event=>{if(event.newState==='closed')closed();});else sheet.addEventListener('close',closed);
+ // Older browsers retain the modal dialog's backdrop behavior.
+ if(!popover){
+  const outside=event=>{const r=sheet.getBoundingClientRect();return event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom;};
+  let backdropStart=false;
+  sheet.addEventListener('pointerdown',event=>{backdropStart=event.target===sheet&&outside(event);});
+  sheet.addEventListener('click',event=>{if(backdropStart&&event.target===sheet&&outside(event))close();backdropStart=false;});
+ }
+ window.addEventListener('viewchange', close);
 })();
 
 // Track scroll direction for the reader controls.

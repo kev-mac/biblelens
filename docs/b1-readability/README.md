@@ -9,10 +9,14 @@ People and Stories have complete draft rewrites. Evidence is **partly rewritten*
 | Collection | Records | Audited lines | Accepted FK | Draft FK | Accepted overlength lines | Draft overlength lines | Accepted jargon lines | Draft jargon lines |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | People | 47 | 47 | 8.64 | 6.69 | 16 | 0 | 1 | 0 |
-| Evidence | 1,933 | 6,035 | 7.89 | 6.86 | 3,619 | 2,984 | 3,356 | 2,274 |
+| Evidence | 1,933 | 6,035 | 7.89 | 6.79 | 3,619 | 2,825 | 3,356 | 2,070 |
 | Stories | 276 | 276 | 7.76 | 6.56 | 77 | 0 | 2 | 0 |
 
-The Evidence overlay changes 1,652 fields across 1,640 records. It applies 26 explicitly reviewed sentence pairs and 49 manually drafted fields. Every new replacement sentence has at most 20 words. Unchanged prose remains in the overlay for an honest collection score. **1,734 Evidence records remain held** for long sentences, jargon, or both. These are editorial tasks, not requests to waive the writing standard.
+The Evidence overlay changes 1,706 fields across 1,676 records. It applies 107 explicit sentence pairs and 49 manually drafted fields. Every new replacement sentence has at most 20 words. Unchanged prose remains in the overlay for an honest collection score. **1,714 Evidence records remain held** for long sentences, jargon, or both. These are editorial tasks, not requests to waive the writing standard.
+
+B3 adds 81 exact sentence pairs. These improve 373 fields across 368 records compared with B2, and clear 20 of the 1,734 held records. They do not finish the queue. Strict draft mode still fails. No rule uses a general synonym replacement or automatic clause split.
+
+The Romans/James record `coverage-nt-faith-works` has an additional meaning hold. Its scope includes a Rahab discussion whose intended placement is unclear. That field remains verbatim and appears in the meaning table. Removing or moving it would change the supplied scope.
 
 ## Review files
 

@@ -85,7 +85,7 @@ export function consolidateStartupAssets(assets,{minify=false,cssOverride}={}) {
   // hashes; no inline handlers, eval, remote scripts, objects or base overrides.
   const policy = ["default-src 'none'", "base-uri 'none'", "object-src 'none'", "frame-src 'none'", "form-action 'self'",
     "script-src 'self' " + hashes.join(' '), "script-src-attr 'none'", "style-src 'self' 'unsafe-inline'",
-    "font-src 'self' data:", "img-src 'self' data: blob:", "worker-src 'self' blob:",
+    "manifest-src 'self'", "font-src 'self' data:", "img-src 'self' data: blob:", "worker-src 'self' blob:",
     "connect-src 'self' https://scripture-lens.kvn-mcgwn.chatgpt.site https://tiles.openfreemap.org"].join('; ');
   assets['/'].csp = policy;
   // Sites/Cloudflare injects an inline challenge with request-specific values

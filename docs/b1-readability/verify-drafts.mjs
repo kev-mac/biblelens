@@ -52,6 +52,7 @@ for (let i = 0; i < evidence.length; i++) {
   assert.deepEqual(row.sources, original.sources || []);
   for (const field of ['summary', 'reasoning', 'scope']) {
     if (typeof original[field] !== 'string') continue;
+    if(row.meaningHolds?.[field])assert.equal(row.draft[field],row.original[field],`${row.id}: a meaning hold must retain its supplied field`);
     assert.equal(row.original[field], original[field], `${row.id}: stale ${field}`);
     let expected = original[field];
     for (const rule of [...rules].sort((a, b) => b.original.length - a.original.length)) {
@@ -71,9 +72,9 @@ for (let i = 0; i < evidence.length; i++) {
 }
 
 const changedEvidence = evidence.filter(row => Object.keys(row.original).some(field => row.original[field] !== row.draft[field]));
-const changes = evidence.flatMap(row => Object.keys(row.original).filter(field => row.original[field] !== row.draft[field]).map(field => ({
+const changes = evidence.flatMap(row => Object.keys(row.original).filter(field => row.original[field] !== row.draft[field] || row.meaningHolds?.[field]).map(field => ({
   id: row.id, title: row.title, field, original: row.original[field], draft: row.draft[field],
-  meaning: row.appliedRules.filter(item => item.field === field).map(item => {
+  meaning: (row.meaningHolds?.[field] ? row.meaningHolds[field] + ' ' : '') + row.appliedRules.filter(item => item.field === field).map(item => {
     const manual = overrides.find(candidate => `manual:${candidate.id}:${candidate.field}` === item.rule);
     return manual?.meaningCheck || rules.find(rule => rule.id === item.rule)?.meaningCheck;
   }).filter(Boolean).join(' '),
@@ -104,7 +105,8 @@ if (process.argv.includes('--write-tables')) {
 }
 const summary = {
   changedEvidenceRecords: changedEvidence.length,
-  changedEvidenceFields: changes.length,
+  changedEvidenceFields: changes.filter(row=>row.original!==row.draft).length,
+  meaningTableFields: changes.length,
   evidenceRecords: evidence.length,
   heldEvidenceRecords: evidence.filter(row=>row.flags.length).length,
   stories: stories.length,

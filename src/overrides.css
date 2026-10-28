@@ -1567,7 +1567,7 @@ html body.lens-app dialog details { box-shadow: none; background: transparent; }
 html body.lens-app #reader-settings .reader-actions { justify-content: stretch; }
 html body.lens-app #reader-settings .text-size-setting::before { content: none; display: none; }
 html body.lens-app #reader-settings #reader-font { background: transparent; }
-html body.lens-app #reader-settings :is(#settings-navigation, .navigation-color-setting, .surface-settings) { display: none; }
+html body.lens-app #reader-settings :is(.navigation-color-setting, .surface-settings) { display: none; }
 html body.lens-app :is(#passage-picker, #marked-filter-dialog) .passage-steps button { border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; }
 html body.lens-app :is(#passage-picker, #marked-filter-dialog) .passage-steps [aria-pressed="true"] { border-bottom-color: var(--lens-copper); color: var(--lens-copper); }
 html body.lens-app #passage-picker .passage-number span { border: 1px solid transparent; border-radius: 10px; background: var(--lens-control-bg); box-shadow: none; }

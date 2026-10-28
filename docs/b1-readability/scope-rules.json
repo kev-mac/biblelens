@@ -180,5 +180,572 @@
     "draft": "The record does not say which wording came first.",
     "meaningCheck": "Preserves the absence of an original-wording judgment.",
     "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E01",
+    "original": "The Hebrew quoted is the Westminster Leningrad Codex digital text and the Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition.",
+    "draft": "The Hebrew quotes use the digital Hebrew text named in Sources. The Greek quotes use the old Greek translation. This is the printed edition named in Sources, from an ancient translation tradition.",
+    "meaningCheck": "Keeps both named editions in Sources and the ancient translation limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E02",
+    "original": "The book is a lament in verse; the comparison is of what the texts print, not of what the speaker meant beyond the words quoted.",
+    "draft": "The book is a poem of grief. This compares the printed words. It does not explain what the speaker meant beyond those words.",
+    "meaningCheck": "Retains lament form and the limit on speaker intent.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E03",
+    "original": "Hosea’s verse numbers differ between the KJV and the Hebrew text in places (the KJV’s 1:10–2:23 are 2:1–2:25 in the Hebrew and Brenton’s Greek); the numbers quoted in the text lines are the numbers of the text quoted, and the refs use the KJV numbering.",
+    "draft": "Hosea’s verse numbers sometimes differ between the KJV and the Hebrew text. The KJV’s 1:10–2:23 are 2:1–2:25 in the Hebrew text and the old Greek translation. Quotes use their own text’s numbers. Passage links use KJV numbers.",
+    "meaningCheck": "Keeps the exact number mapping and distinguishes quote labels from passage links.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E04",
+    "original": "The Greek quoted is Tischendorf’s eighth edition as served by bolls.life, checked against the Textus Receptus text served there.",
+    "draft": "The Greek quotes use Greek edition 1 on bolls.life. They were checked against Greek edition 2 there. Sources names both editions in full.",
+    "meaningCheck": "Preserves the edition comparison and host; explicit edition aliases retain full names in sourceEditionNames.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E05",
+    "original": "A digital edition is not proof that every manuscript agrees, and this record compares the wording of the texts and does not show which reading is original.",
+    "draft": "One digital edition does not prove that all ancient copies agree. This compares wording without showing which reading is original.",
+    "meaningCheck": "Keeps both the copy-survey limit and original-reading limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E06",
+    "original": "The record does not say the KJV is wrong or that the Greek is wrong, and it does not decide how the Hebrew word should be read.",
+    "draft": "This does not say the KJV or the Greek is wrong. It does not decide how to read the Hebrew word.",
+    "meaningCheck": "Retains both negative judgments and the Hebrew reading limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E07",
+    "original": "The Greek is Brenton’s printed edition of the Septuagint, an ancient translation tradition, and the Hebrew quoted is the Westminster Leningrad Codex digital text.",
+    "draft": "The Greek quotes use the printed old Greek translation named in Sources. It comes from an ancient translation tradition. The Hebrew quotes use the digital Hebrew text named in Sources.",
+    "meaningCheck": "Keeps edition identity in Sources and the translation-tradition limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E08",
+    "original": "Brenton’s Greek Esther is printed on the pages addressed; it carries passages under lettered verse numbers that have no counterpart in the Hebrew edition or in the KJV’s Esther, and quotations from them are marked by their printed labels.",
+    "draft": "The old Greek translation prints Esther on the linked pages. Some passages have lettered verse numbers. They have no matching passages in the Hebrew edition or the KJV’s Esther. Quotes keep those printed labels.",
+    "meaningCheck": "Preserves the edition-specific extra-passage claim, both comparison texts and quote-label rule.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E09",
+    "original": "Daniel’s verse numbers differ between the KJV, the Hebrew and Aramaic text and Brenton’s Greek in places; the numbers quoted in the text lines are the numbers of the text quoted, and the refs use the KJV numbering.",
+    "draft": "Daniel’s verse numbers sometimes differ across the KJV, the Hebrew and Aramaic text, and the old Greek translation. Quotes use their own text’s numbers. Passage links use KJV numbers.",
+    "meaningCheck": "Keeps all three texts, both original languages and differing numbering systems.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E10",
+    "original": "Brenton’s edition prints this Greek Daniel at the address cited under the title “Daniel (Greek)”.",
+    "draft": "The old Greek translation prints this Greek Daniel at the cited address. Its title there is “Daniel (Greek)”.",
+    "meaningCheck": "Keeps the exact printed title and page limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E11",
+    "original": "The same edition also prints a second English text titled Daniel, whose Greek page was not found at the address pattern used; the record does not say which Greek form of Daniel the page quoted is, and it does not compare any other Greek form.",
+    "draft": "That edition also prints a second English text titled Daniel. Its Greek page was not found using that address pattern. This does not identify which Greek form of Daniel the quoted page uses. No other Greek form is compared.",
+    "meaningCheck": "Keeps the failed address-pattern lookup, unidentified form and absence of comparison.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E12",
+    "original": "Brenton’s Greek prints Nehemiah as the later chapters of its Ezra pages; the address given is the page that prints this chapter.",
+    "draft": "The old Greek translation prints Nehemiah in the later chapters of its Ezra pages. The link points to this chapter.",
+    "meaningCheck": "Retains the edition-specific book arrangement and linked chapter.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E13",
+    "original": "The record does not say what the Hebrew words quoted mean beyond the plain renderings given, and does not say which Greek word corresponds to which Hebrew word.",
+    "draft": "This does not explain the Hebrew words beyond the plain meanings given. It does not match individual Greek and Hebrew words.",
+    "meaningCheck": "Keeps the meaning limit and absence of word-by-word mapping.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E14",
+    "original": "The verse stands in a speech in verse; the comparison is of what the three texts print, not of what the speaker meant beyond the words quoted.",
+    "draft": "The verse is part of a speech in poetry. This compares what the three texts print. It does not explain what the speaker meant beyond the quoted words.",
+    "meaningCheck": "Keeps poetic speech, three-text scope and speaker-intent limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E15",
+    "original": "The book is reflective prose and aphorism; the comparison is of what the texts print, not of what the writer meant beyond the words quoted.",
+    "draft": "The book uses reflective prose and short sayings. This compares the printed words. It does not explain what the writer meant beyond those words.",
+    "meaningCheck": "Explains aphorism as short sayings and retains prose and intent limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E16",
+    "original": "The record does not say which reading is right and does not claim that no other passage of the Bible says more.",
+    "draft": "This does not decide which reading is right. Other Bible passages may say more.",
+    "meaningCheck": "Keeps the lack of verdict and does not claim silence elsewhere.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E17",
+    "original": "That is a word search, not a reading of the whole Bible, and it does not prove that no passage addresses the question.",
+    "draft": "That is a word search. It is not a reading of the whole Bible. It cannot prove that no passage addresses the question.",
+    "meaningCheck": "Preserves the search method and its inability to establish total absence.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E18",
+    "original": "The Textus Receptus text and Tischendorf’s text served print the same Greek in the places quoted; the difference is between that Greek and the English the KJV prints for it.",
+    "draft": "Greek edition 2 and Greek edition 1 print the same Greek in the quoted passages. The difference is between that Greek and its KJV English wording. Sources names both editions in full.",
+    "meaningCheck": "Keeps edition order, agreement and Greek-versus-KJV distinction; aliases name the same editions.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E19",
+    "original": "This record does not say what the Greek or the English means beyond the words quoted, and two digital editions are not a survey of manuscripts.",
+    "draft": "This does not explain the Greek or English beyond the quoted words. Two digital editions are not a survey of ancient copies.",
+    "meaningCheck": "Retains the interpretation limit and limited copy coverage.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E20",
+    "original": "Psalm numbers in that edition follow the Greek numbering, so the chapter and verse numbers of the Greek differ from the KJV’s, and the Greek verse is cited by its own number.",
+    "draft": "That edition uses Greek psalm numbers. Its chapter and verse numbers differ from the KJV’s. The Greek verse uses its own number.",
+    "meaningCheck": "Keeps the numbering difference and the quote-label rule.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E21",
+    "original": "The Hebrew quoted is the Westminster Leningrad Codex digital text, with the consonants-only Aleppo-based edition as a second witness.",
+    "draft": "The Hebrew quotes use the digital Hebrew text named in Sources. A second Hebrew text uses only consonants and follows the Aleppo edition.",
+    "meaningCheck": "Retains the main digital text, second comparison text, consonants-only form and Aleppo basis.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E22",
+    "original": "Brenton’s Greek numbers this psalm 138 (KJV Psalm 139); the verse numbers of the Hebrew and the Greek match the KJV in this psalm.",
+    "draft": "The old Greek translation numbers this psalm 138 (KJV Psalm 139). Hebrew and Greek verse numbers match the KJV here.",
+    "meaningCheck": "Keeps the exact psalm mapping and local verse-number agreement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E23",
+    "original": "The book is love poetry; the comparison is of what the texts print, not of what the writer meant beyond the words quoted.",
+    "draft": "The book is love poetry. This compares the printed words. It does not explain what the writer meant beyond those words.",
+    "meaningCheck": "Keeps literary form and the limit on writer intent.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E24",
+    "original": "It does not show which wording is original, and it does not say what the Hebrew word means beyond the words quoted.",
+    "draft": "It does not show which wording is original. It does not explain the Hebrew word beyond the quoted words.",
+    "meaningCheck": "Preserves both independent limits.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E25",
+    "original": "A digital edition is not proof that every manuscript agrees.",
+    "draft": "One digital edition does not prove that all ancient copies agree.",
+    "meaningCheck": "Preserves the single-edition limit without claiming disagreement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E26",
+    "original": "A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined, and the KJV translators’ source for their wording is not established here.",
+    "draft": "One named digital edition does not prove that all ancient copies agree. Other Hebrew copies were not checked. This does not establish the source of the KJV translators’ wording.",
+    "meaningCheck": "Retains unchecked Hebrew copies and uncertainty about the translators’ source.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E27",
+    "original": "The Hebrew quoted is the Westminster Leningrad Codex digital text; a digital named edition is not proof that every manuscript agrees.",
+    "draft": "The Hebrew quotes use the digital Hebrew text named in Sources. One named digital edition does not prove that all ancient copies agree.",
+    "meaningCheck": "Preserves the named digital Hebrew source and copy-survey limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E28",
+    "original": "Brenton’s Greek numbers this psalm 73 (KJV Psalm 74); the verse numbers of the Hebrew and the Greek match the KJV in this psalm.",
+    "draft": "The old Greek translation numbers this psalm 73 (KJV Psalm 74). Hebrew and Greek verse numbers match the KJV here.",
+    "meaningCheck": "Keeps exact psalm mapping and local verse-number agreement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E29",
+    "original": "Brenton’s Greek numbers this psalm 118 (KJV Psalm 119); the verse numbers of the Hebrew and the Greek match the KJV in this psalm.",
+    "draft": "The old Greek translation numbers this psalm 118 (KJV Psalm 119). Hebrew and Greek verse numbers match the KJV here.",
+    "meaningCheck": "Keeps exact psalm mapping and local verse-number agreement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E30",
+    "original": "This part of Daniel is written in Aramaic, and the Aramaic is quoted from the same digital text; the record does not say what the Aramaic words quoted mean.",
+    "draft": "This part of Daniel is in Aramaic. Its quotes come from the same digital text. This does not explain what the quoted Aramaic words mean.",
+    "meaningCheck": "Keeps the language, source identity and absence of meaning claims.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E31",
+    "original": "The Textus Receptus text served prints the verse; the Tischendorf page served prints the verse number with no text.",
+    "draft": "Greek edition 2 prints the verse. The linked page for Greek edition 1 prints the verse number without text. Sources names both editions in full.",
+    "meaningCheck": "Keeps the printed-page distinction without claiming an omission in every ancient copy.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E32",
+    "original": "The Greek is Brenton's printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament.",
+    "draft": "The Greek quotes use the printed old Greek translation named in Sources. This belongs to an ancient Greek translation tradition of the Old Testament.",
+    "meaningCheck": "Keeps the edition identity, language, translation tradition and Old Testament scope.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E33",
+    "original": "The record does not say that any reading is the right one, and does not rest on the Hebrew or the Greek.",
+    "draft": "This does not decide which reading is right. It does not rely on the Hebrew or Greek.",
+    "meaningCheck": "Keeps the lack of a verdict and both language-source exclusions.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E34",
+    "original": "The Greek of the New Testament verse in side B was not examined; its KJV wording is quoted only to show how it words the same matter.",
+    "draft": "The Greek of the New Testament verse on side B was not checked. Its KJV wording only shows how it describes the same matter.",
+    "meaningCheck": "Keeps side B, New Testament scope, unchecked Greek and limited KJV use.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E35",
+    "original": "The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, and does not claim that no other passage says more.",
+    "draft": "This does not decide which reading is right. It does not rely on the Hebrew or Greek. Other passages may say more.",
+    "meaningCheck": "Preserves all three negative limits.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E36",
+    "original": "Joel’s verse numbers differ between the KJV and the Hebrew text from 2:28 (the KJV’s 2:28–32 are 3:1–5 in the Hebrew and in Brenton’s Greek, and the KJV’s chapter 3 is their chapter 4); the numbers quoted in the text lines are the numbers of the text quoted, and the refs use the KJV numbering.",
+    "draft": "Joel’s verse numbers differ from 2:28 across the KJV, the Hebrew text and the old Greek translation. The KJV’s 2:28–32 are 3:1–5 in those other texts. The KJV’s chapter 3 is their chapter 4. Quotes use their own text’s numbers. Passage links use KJV numbers.",
+    "meaningCheck": "Keeps both exact chapter mappings, the start point and quote-versus-link numbering.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E37",
+    "original": "The record does not say that any reading is the right one and does not claim that no other passage of the Bible says more.",
+    "draft": "This does not decide which reading is right. Other Bible passages may say more.",
+    "meaningCheck": "Retains the undecided reading and possible further context.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E38",
+    "original": "This is a statement about one printed edition of the Greek; it does not show that no Greek manuscript has them, and the record does not say why the page prints no matching verses.",
+    "draft": "This concerns one printed Greek edition. It does not show that all ancient Greek copies lack those verses. It does not explain why the page has no matching verses.",
+    "meaningCheck": "Keeps edition-specific absence, copy-survey limit and unknown reason.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E39",
+    "original": "If “with his fathers” means only the same city and not the same tombs, the statements agree; Kings does not say so.",
+    "draft": "The statements agree if “with his fathers” means the same city, rather than the same tombs. Kings does not say so.",
+    "meaningCheck": "Keeps the conditional reconciliation, city/tombs distinction and unstated premise.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E40",
+    "original": "No tag is proposed: the Hebrew and Brenton’s Greek agree with the KJV in both verses.",
+    "draft": "No tag is proposed. The Hebrew and the old Greek translation agree with the KJV in both verses.",
+    "meaningCheck": "Preserves no-tag disposition and agreement in both verses.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E41",
+    "original": "Brenton’s Greek of the same verse has a different figure.",
+    "draft": "The old Greek translation gives a different figure for the same verse.",
+    "meaningCheck": "Retains a numerical difference limited to the cited translation.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E42",
+    "original": "Brenton’s Greek numbers this psalm 67 (KJV Psalm 68); the Hebrew and the Greek run one verse ahead of the KJV.",
+    "draft": "The old Greek translation numbers this psalm 67 (KJV Psalm 68). Hebrew and Greek verse numbers run one ahead of the KJV.",
+    "meaningCheck": "Keeps exact psalm mapping and verse offset.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E43",
+    "original": "Brenton’s Greek numbers this psalm 71 (KJV Psalm 72); the verse numbers of the Hebrew and the Greek match the KJV in this psalm.",
+    "draft": "The old Greek translation numbers this psalm 71 (KJV Psalm 72). Hebrew and Greek verse numbers match the KJV here.",
+    "meaningCheck": "Keeps exact psalm mapping and local verse agreement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E44",
+    "original": "Brenton’s Greek numbers this psalm 88 (KJV Psalm 89); the Hebrew and the Greek run one verse ahead of the KJV.",
+    "draft": "The old Greek translation numbers this psalm 88 (KJV Psalm 89). Hebrew and Greek verse numbers run one ahead of the KJV.",
+    "meaningCheck": "Keeps exact psalm mapping and verse offset.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E45",
+    "original": "Brenton’s Greek numbers this psalm 103 (KJV Psalm 104); the verse numbers of the Hebrew and the Greek match the KJV in this psalm.",
+    "draft": "The old Greek translation numbers this psalm 103 (KJV Psalm 104). Hebrew and Greek verse numbers match the KJV here.",
+    "meaningCheck": "Keeps exact psalm mapping and local verse agreement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E46",
+    "original": "Brenton’s Greek numbers this psalm 104 (KJV Psalm 105); the verse numbers of the Hebrew and the Greek match the KJV in this psalm.",
+    "draft": "The old Greek translation numbers this psalm 104 (KJV Psalm 105). Hebrew and Greek verse numbers match the KJV here.",
+    "meaningCheck": "Keeps exact psalm mapping and local verse agreement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E47",
+    "original": "Brenton’s Greek numbers this psalm 105 (KJV Psalm 106); the verse numbers of the Hebrew and the Greek match the KJV in this psalm.",
+    "draft": "The old Greek translation numbers this psalm 105 (KJV Psalm 106). Hebrew and Greek verse numbers match the KJV here.",
+    "meaningCheck": "Keeps exact psalm mapping and local verse agreement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E48",
+    "original": "The passage is verse; the comparison is of what the texts print, not of what the speaker meant beyond the words quoted.",
+    "draft": "The passage is poetry. This compares the printed words. It does not explain what the speaker meant beyond those words.",
+    "meaningCheck": "Keeps verse form and speaker-intent limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E49",
+    "original": "Brenton’s Greek numbers this psalm 140 (KJV Psalm 141); the verse numbers of the Hebrew and the Greek match the KJV in this psalm.",
+    "draft": "The old Greek translation numbers this psalm 140 (KJV Psalm 141). Hebrew and Greek verse numbers match the KJV here.",
+    "meaningCheck": "Keeps exact psalm mapping and local verse agreement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E50",
+    "original": "Brenton’s Greek prints the Hebrew chapter 30 and 31:1–9 inside its own chapter 24, under the lettered verses 24:22f–24:53 and the verses 24:54–24:62; the Hebrew and the KJV number these verses 30:1–33 and 31:1–9.",
+    "draft": "The old Greek translation places Hebrew chapter 30 and 31:1–9 inside its chapter 24. Their Greek labels are 24:22f–24:53 and 24:54–24:62. The Hebrew text and KJV number them 30:1–33 and 31:1–9.",
+    "meaningCheck": "Keeps all exact mappings, lettered labels and edition-specific arrangement.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E51",
+    "original": "So the verse stands in the KJV and in the Hebrew edition quoted and is not printed in that edition of the Greek.",
+    "draft": "The verse appears in the KJV and the quoted Hebrew edition. That Greek edition does not print it.",
+    "meaningCheck": "Keeps the edition-specific absence without extending it to all copies.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E52",
+    "original": "The question is limited to the verses quoted; the word search covers the packaged KJV text of Isaiah 1–27 only and is a word search.",
+    "draft": "The question concerns only the quoted verses. The word search covers only the packaged KJV text of Isaiah 1–27. It is a word search.",
+    "meaningCheck": "Keeps quoted-verse scope, packaged corpus range and search-method limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E53",
+    "original": "The record does not say that any reading is the right one, does not rest on the Hebrew or the Greek, and does not examine how another book uses the verse.",
+    "draft": "This does not decide which reading is right. It does not rely on the Hebrew or Greek. It does not examine another book’s use of the verse.",
+    "meaningCheck": "Keeps undecided reading, source limits and lack of cross-book analysis.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E54",
+    "original": "Micah’s verse numbers differ between the KJV and the Hebrew text from 5:1 (the KJV’s 5:1 is 4:14 and the KJV’s 5:n is 5:(n−1) in the Hebrew and in Brenton’s Greek); the numbers quoted in the text lines are the numbers of the text quoted, and the refs use the KJV numbering.",
+    "draft": "Micah’s verse numbers differ from 5:1 across the KJV, the Hebrew text and the old Greek translation. The KJV’s 5:1 is 4:14 in those texts. Its 5:n is their 5:(n−1). Quotes use their own text’s numbers. Passage links use KJV numbers.",
+    "meaningCheck": "Keeps exact arithmetic mapping, start point and quote-versus-link numbering.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-E55",
+    "original": "The word search is a word search of one packaged KJV text covering the four Gospels and does not examine the Greek.",
+    "draft": "The word search covers one packaged KJV text of the four Gospels. It does not examine the Greek.",
+    "meaningCheck": "Keeps corpus, four-book scope and unchecked Greek.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F01",
+    "original": "A literary arrangement, later visibility of an existing Sun, or miraculous light changes the claim being evaluated; these readings are not established by the scientific sources.",
+    "draft": "A literary arrangement, later visibility of an existing Sun, or miraculous light changes the claim being tested. The scientific sources do not establish these readings.",
+    "meaningCheck": "Preserves all three alternative readings and their lack of support from the cited science sources.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F02",
+    "original": "Reading this as the later visibility of already-existing lights also changes the claim being evaluated; NASA does not establish that interpretation.",
+    "draft": "Reading this as the later visibility of existing lights also changes the claim being tested. NASA does not establish that reading.",
+    "meaningCheck": "Keeps later visibility distinct from first creation and retains the NASA interpretation limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F03",
+    "original": "A harmonization could place Mount Hor within a region called Mosera, but the cited passages do not explain that relationship.",
+    "draft": "One possible explanation places Mount Hor within a region called Mosera. The cited passages do not explain that relationship.",
+    "meaningCheck": "Preserves the geographic proposal as possible, without claiming the texts establish it.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F04",
+    "original": "The narrator pauses to explain the practice, then describes witnesses recognizing Boaz's transaction.",
+    "draft": "The narrator pauses to explain the practice. Then the narrator describes people present recognizing Boaz's transaction.",
+    "meaningCheck": "Describes human observers in this scene without implying ancient textual copies.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F05",
+    "original": "Treating it as a lie for advantage is a possible reading; the story does not require the narrator to endorse every detail of that claim.",
+    "draft": "It could be a lie told for advantage. The story does not require the narrator to endorse every detail of that claim.",
+    "meaningCheck": "Keeps deception as a possible reading and preserves the narrator-versus-character distinction.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F06",
+    "original": "Brenton’s Greek has three years in both books, so in Samuel it differs from the KJV.",
+    "draft": "The old Greek translation has three years in both books. In Samuel, it differs from the KJV.",
+    "meaningCheck": "Keeps the same figure in both Greek books and the difference specifically in Samuel.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F07",
+    "original": "This extends the published record of the same ID with the Hebrew and Greek wording; the finding between the two KJV verses is unchanged.",
+    "draft": "This adds the Hebrew and Greek wording to the published record with the same ID. The finding between the two KJV verses stays unchanged.",
+    "meaningCheck": "Keeps stable record identity, the language extension and unchanged KJV comparison.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F08",
+    "original": "Brenton’s Greek has twenty-two in Kings and twenty in Chronicles, so in Chronicles it differs from the KJV and from Kings.",
+    "draft": "The old Greek translation has twenty-two in Kings and twenty in Chronicles. In Chronicles, it differs from the KJV and from Kings.",
+    "meaningCheck": "Keeps both Greek ages and both comparison targets in Chronicles.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F09",
+    "original": "Kings places Sennacherib at Lachish during his attack on Judah; the relief provides independent royal evidence for an Assyrian attack on that city.",
+    "draft": "Kings places Sennacherib at Lachish during his attack on Judah. The relief gives independent royal evidence for an Assyrian attack on that city.",
+    "meaningCheck": "Keeps the narrative location and royal evidence limited to an attack on Lachish.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F10",
+    "original": "Separate incidents or distinct city boundaries are proposed harmonizations, but neither explanation appears in these passages.",
+    "draft": "Separate incidents or different city boundaries are proposed explanations. Neither explanation appears in these passages.",
+    "meaningCheck": "Retains both proposals without treating either as stated in the passages.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F11",
+    "original": "The wording is in tension, but the immediate arguments target different problems: reliance on law and an inactive profession of belief.",
+    "draft": "The wording is in tension. Yet the arguments address different problems: reliance on law and claiming belief without acting on it.",
+    "meaningCheck": "Preserves the wording tension and both distinct targets.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F12",
+    "original": "This is primary textual evidence for the practices the letter advocates; its appeal to manna applies an older narrative to resource sharing.",
+    "draft": "The letter itself gives evidence of the practices it urges. Its reference to the food called manna uses an older account to discuss sharing resources.",
+    "meaningCheck": "Keeps the letter as evidence for advocated practices rather than proof they were followed.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F13",
+    "original": "This identifies the argument within Hebrews; it does not present its Christian conclusion as a neutral description accepted by all Jewish readers.",
+    "draft": "This identifies the argument in Hebrews. Its Christian conclusion is not presented as a neutral account accepted by all Jewish readers.",
+    "meaningCheck": "Retains attribution to Hebrews and the explicit interfaith acceptance limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F14",
+    "original": "Reading the comparison as a fixed mathematical conversion for dating creation or the end ignores its function as an answer to delay.",
+    "draft": "The comparison answers a concern about delay. Treating it as a fixed mathematical conversion to date creation or the end ignores that role.",
+    "meaningCheck": "Retains both dating uses and the stated function of the comparison.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F15",
+    "original": "The explicit explanation supplies a strong contextual reason not to read these particular stars as a claim about stellar size or physical placement.",
+    "draft": "The text explains these particular stars. This gives strong reason not to read them as claims about star size or physical placement.",
+    "meaningCheck": "Retains strength of contextual reason, these particular stars and both physical claims.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F16",
+    "original": "The Septuagint also reads seventy-five in Genesis 46:27 and Exodus 1:5.",
+    "draft": "The old Greek translation also reads seventy-five in Genesis 46:27 and Exodus 1:5.",
+    "meaningCheck": "Keeps the exact total and both verse references.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F17",
+    "original": "The passages do not describe their counting categories in identical terms, so the numerical difference is directly visible while its explanation needs further evidence.",
+    "draft": "The passages describe their counting groups in different terms. The numbers clearly differ, but explaining the difference needs more evidence.",
+    "meaningCheck": "Retains differing counting terms, visible numerical difference and the need for evidence.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F18",
+    "original": "Counting scope and textual transmission are questions for further research; these citations alone do not establish a particular reconciliation or manuscript history.",
+    "draft": "Further research must ask who was counted and how the text was passed down. These citations alone establish neither a specific explanation nor the history of ancient copies.",
+    "meaningCheck": "Keeps both research questions and both limits on what the citations establish.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F19",
+    "original": "Stephen’s seventy-five agrees with the Septuagint of Genesis and Exodus and disagrees with the Hebrew those KJV chapters translate.",
+    "draft": "Stephen’s seventy-five agrees with the old Greek translation of Genesis and Exodus. It differs from the Hebrew text translated in those KJV chapters.",
+    "meaningCheck": "Keeps the two-book agreement, Hebrew disagreement and relation to the KJV.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F20",
+    "original": "This shows where the two figures sit in the named editions; it does not show which figure is earlier or how either was counted.",
+    "draft": "This shows where the two figures appear in the named editions. It does not show which figure is earlier or how either was counted.",
+    "meaningCheck": "Preserves the edition-specific observation and both unresolved questions.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F21",
+    "original": "Exodus 6 says the patriarchs did not know God by the name Jehovah; Genesis presents that name in speech to Abram.",
+    "draft": "Exodus 6 says the early ancestors did not know God by the name Jehovah. Genesis presents that name in speech to Abram.",
+    "meaningCheck": "Keeps the attributed textual comparison and the particular name and speaker setting.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F22",
+    "original": "Exodus 3:19–20 had already anticipated Pharaoh’s resistance, so the worsening conditions are a setback within the narrative rather than a simple contradiction of a promise of immediate success.",
+    "draft": "Exodus 3:19–20 had already anticipated Pharaoh’s resistance. The worsening conditions are a setback within the story. They are not a simple contradiction of a promise of immediate success.",
+    "meaningCheck": "Preserves prior warning, narrative setback and the qualified contradiction judgment.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F23",
+    "original": "The chapters describe coercive labor and suffering but do not independently identify the ruler, date the events or establish the scale of the workforce.",
+    "draft": "The chapters describe forced labor and suffering. They do not independently identify the ruler, date the events or establish the size of the workforce.",
+    "meaningCheck": "Keeps forced labor and suffering plus all three historical limits.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F24",
+    "original": "A claim that God only hardens an already resistant ruler must also account for the advance announcement; a claim that Pharaoh has no agency must account for passages assigning action and blame to him.",
+    "draft": "Some claim God only hardens a ruler who already resists. That view must also explain the advance announcement. Others claim Pharaoh cannot choose how to act. That view must explain passages assigning action and blame to him.",
+    "meaningCheck": "Retains two competing claims and the distinct textual challenge each must address.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F25",
+    "original": "The account changes the magicians’ role from rival performers to witnesses of their limits.",
+    "draft": "The account changes the magicians’ role. They move from rival performers to people who see the limits of their powers.",
+    "meaningCheck": "Explains human observation, not textual copies; keeps the change of role and limits.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "B3-F26",
+    "original": "Reading it within the field-livestock scope of 9:3 offers a possible explanation, because the hail warning explicitly distinguishes sheltered and exposed animals.",
+    "draft": "Reading it as the field livestock in 9:3 offers a possible explanation. The hail warning clearly distinguishes sheltered and exposed animals.",
+    "meaningCheck": "Retains a possible limited-scope reading and the textual distinction supporting it.",
+    "reviewStatus": "draft, unverified"
   }
 ]

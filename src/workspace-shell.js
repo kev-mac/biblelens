@@ -31,7 +31,8 @@
  window.addEventListener('hashchange',()=>{if(pendingFocus&&pendingFocus.hash!==location.hash)clearPageFocus();});
  const routeTo = hash => {
  const navigate=()=>{clearPageFocus();const oldURL=location.href;navigateHash(hash);window.dispatchEvent(new HashChangeEvent('hashchange',{oldURL,newURL:location.href}));const destination=location.hash;if(!/^#(?:read|compare|investigation|study|characters|people)\//.test(destination)&&!destination.startsWith('#compare')&&!(destination.startsWith('#notebook?')&&new URLSearchParams(destination.split('?')[1]).has('note'))){window.scrollTo({top:0,behavior:'instant'});requestPageFocus(destination);}};
- if(document.startViewTransition&&!matchMedia('(prefers-reduced-motion: reduce)').matches){window.bibleLensTransition?.skipTransition();window.bibleLensTransition=document.startViewTransition(navigate);}else navigate();
+ // setView owns route transitions, including browser history and cold routes.
+ navigate();
  };
  document.body.classList.add('lens-app');
  const masthead = el('lensMasthead');

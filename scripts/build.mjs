@@ -1,3 +1,4 @@
+import {packageOfflineApp} from './offline-app.mjs';
 import {packageDraftDebates} from './draft-debates.mjs';
 import {compressAssets} from './compress-assets.mjs';
 import {shellStyles} from './shell-styles.mjs';
@@ -39,7 +40,7 @@ validateCommandments(evidenceRecords,JSON.parse(fs.readFileSync('data/books.json
 const root=process.cwd();const context={};vm.createContext(context);vm.runInContext(fs.readFileSync('src/data.js','utf8')+'\nthis.studies=ENTRIES;',context);
 validateRelatedPassages([...evidenceRecords,...context.studies],JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const assets={};for(const name of applicationStylesheets)assets['/'+name]={type:'text/css; charset=utf-8',body:fs.readFileSync('src/'+name,'utf8')};for(const [name,type]of Object.entries({'index.html':'text/html; charset=utf-8','debates.js':'application/javascript; charset=utf-8','debate-store.js':'application/javascript; charset=utf-8','search-core.js':'application/javascript; charset=utf-8','workspace.js':'application/javascript; charset=utf-8','atlas-reader.js':'application/javascript; charset=utf-8','media-slots.js':'application/javascript; charset=utf-8','atlas-explore.js':'application/javascript; charset=utf-8','app.js':'application/javascript; charset=utf-8','navigation.js':'application/javascript; charset=utf-8','card-disclosures.js':'application/javascript; charset=utf-8','dialog-scroll.js':'application/javascript; charset=utf-8','data.js':'application/javascript; charset=utf-8','red-letters.js':'application/javascript; charset=utf-8','passage.js':'application/javascript; charset=utf-8','reader.js':'application/javascript; charset=utf-8','stories.js':'application/javascript; charset=utf-8','commandments.js':'application/javascript; charset=utf-8','marked.js':'application/javascript; charset=utf-8','categories.js':'application/javascript; charset=utf-8','sync-core.js':'application/javascript; charset=utf-8','sync.js':'application/javascript; charset=utf-8','release.js':'application/javascript; charset=utf-8','mobile.js':'application/javascript; charset=utf-8','citations.js':'application/javascript; charset=utf-8'})){assets[name==='index.html'?'/':'/'+name]={type,body:fs.readFileSync('src/'+name,'utf8')}}
-for(const name of ['feature-loader','reader-state','reader-data','workspace-shell','debate-ui'])assets['/'+name+'.js']={type:'application/javascript; charset=utf-8',body:fs.readFileSync('src/'+name+'.js','utf8')};
+for(const name of ['offline-app','feature-loader','reader-state','reader-data','workspace-shell','debate-ui'])assets['/'+name+'.js']={type:'application/javascript; charset=utf-8',body:fs.readFileSync('src/'+name+'.js','utf8')};
 assets['/reader-state.js'].body=assets['/reader-state.js'].body.replace('/*__BOOK_CATALOG__*/[]',fs.readFileSync('data/books.json','utf8'));
 for(const name of fs.readdirSync('src/assets/fonts'))assets['/assets/fonts/'+name]={type:'font/woff2',encoding:'base64',body:fs.readFileSync('src/assets/fonts/'+name).toString('base64')};
 for(const name of ['beginnings-landscape.svg','beginnings-landscape.provenance.json'])assets['/assets/'+name]={type:name.endsWith('.svg')?'image/svg+xml':'application/json; charset=utf-8',body:fs.readFileSync('src/assets/'+name,'utf8')};
@@ -98,6 +99,7 @@ packageDraftDebates(assets);
 const styles=await shellStyles(assets);
 packageFeatures(assets,styles.path,styles.studyPath);
 const startup=consolidateStartupAssets(assets,{minify:true,cssOverride:styles.css});
+packageOfflineApp(assets);
 compressAssets(assets);
 console.log('Startup assets:',startup.css.sources.length,'styles and',startup.js.sources.length,'scripts consolidated into two fingerprinted requests');
 console.log('Search vocabulary:',Object.keys(vocabulary).length,'entries; MiniSearch documents:',documents.length);

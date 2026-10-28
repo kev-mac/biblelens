@@ -29,7 +29,8 @@ async function serverFor(platform,fixture,withoutCsp){
    const url=new URL(req.url,`http://127.0.0.1:${server.address().port}`),chunks=[];
    for await(const chunk of req)chunks.push(chunk);
    let response;
-   if(platform==='mobile'&&!url.pathname.startsWith('/api/sync')){
+   if(url.pathname==='/security-worker.js'){response=new Response('postMessage("ready")',{headers:{'content-type':'application/javascript'}});
+   }else if(platform==='mobile'&&!url.pathname.startsWith('/api/sync')){
     const file=path.resolve('www','.'+(url.pathname==='/'?'/index.html':url.pathname));
     if(!file.startsWith(path.resolve('www')+path.sep))throw Error('Invalid fixture path');
     response=new Response(fs.readFileSync(file),{headers:{'content-type':types[path.extname(file)]||'application/octet-stream'}});
@@ -71,7 +72,7 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
    if(!withoutCsp){
     const headers=response.headers();
     if(platform==='web'){
-     assert(headers['content-security-policy-report-only']);assert(!headers['content-security-policy']);
+     assert(headers['content-security-policy-report-only']);assert.equal(headers['content-security-policy'],"object-src 'none'; base-uri 'none'; form-action 'self'; worker-src 'self'");
      assert.equal(await page.locator('meta[http-equiv="Content-Security-Policy"]').count(),0,'Hosted web must not enforce a meta CSP');
     }else assert.equal(await page.locator('meta[http-equiv="Content-Security-Policy"]').count(),1,'Native must enforce its CSP');
    }
@@ -113,13 +114,13 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
    // The mobile request above is served by its packaged module worker.
    if(!withoutCsp){
     assert.deepEqual(await page.evaluate(()=>__violations),[],'Normal startup, sync, reading, search and comparison must satisfy CSP');
-    await page.evaluate(async()=>{
+    await page.evaluate(async platform=>{
      await import('/vendor/maplibre-gl.mjs');
      await fetch('https://tiles.openfreemap.org/planet');
      await fetch('https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json');
-     await new Promise((resolve,reject)=>{const url=URL.createObjectURL(new Blob(['postMessage("ready")'],{type:'text/javascript'})),worker=new Worker(url,{type:'module'});worker.onmessage=()=>{worker.terminate();URL.revokeObjectURL(url);resolve();};worker.onerror=reject;});
-    });
-    assert.deepEqual(await page.evaluate(()=>__violations),[],'Map module/blob worker and required connections must remain allowed');
+     await new Promise((resolve,reject)=>{const url=platform==='web'?'/security-worker.js':URL.createObjectURL(new Blob(['postMessage("ready")'],{type:'text/javascript'})),worker=new Worker(url,{type:'module'});worker.onmessage=()=>{worker.terminate();URL.revokeObjectURL(url);resolve();};worker.onerror=reject;});
+    },platform);
+    assert.deepEqual(await page.evaluate(()=>__violations),[],'Map module, self web worker/native blob worker and required connections must remain allowed');
     await page.evaluate(async()=>{
      const script=document.createElement('script');script.textContent='globalThis.__securityExecuted=1';document.head.append(script);
      const image=document.createElement('img');image.setAttribute('onerror','globalThis.__securityExecuted=1');document.body.append(image);image.dispatchEvent(new Event('error'));

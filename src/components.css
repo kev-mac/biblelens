@@ -1361,7 +1361,7 @@ body #characters-search:focus-visible{outline:none}
 
 /* Large labeled navigation shortcuts, three per row on phones. */
 body.navigation-open{overflow:hidden}
-body dialog.navigation-sheet{position:fixed;inset:auto 0 0;margin:0 auto;width:min(100%,680px);max-width:100%;max-height:85vh;max-height:85dvh;padding:20px 20px max(24px,env(safe-area-inset-bottom));border:1px solid rgba(var(--theme-rgb),.35);border-bottom:0;border-radius:26px 26px 0 0;background:color-mix(in srgb,var(--panel) 94%,transparent);color:var(--ink);box-shadow:0 -12px 48px rgba(var(--theme-rgb),.15);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);overflow-y:auto;overscroll-behavior:contain}
+body .navigation-sheet{position:fixed;inset:auto 0 0;margin:0 auto;width:min(100%,680px);max-width:100%;max-height:85vh;max-height:85dvh;padding:20px 20px max(24px,env(safe-area-inset-bottom));border:1px solid rgba(var(--theme-rgb),.35);border-bottom:0;border-radius:26px 26px 0 0;background:color-mix(in srgb,var(--panel) 94%,transparent);color:var(--ink);box-shadow:0 -12px 48px rgba(var(--theme-rgb),.15);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);overflow-y:auto;overscroll-behavior:contain}
 .navigation-sheet::backdrop{background:rgba(4,9,18,.65);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
 .navigation-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
 body #navigation-heading{margin:0;letter-spacing:normal}
@@ -1599,7 +1599,7 @@ body #chat-view .chat-typing{border:1px solid var(--line);border-radius:22px 22p
 .chat-typing i:nth-child(2){animation-delay:.15s}.chat-typing i:nth-child(3){animation-delay:.3s}
 @keyframes chat-dot{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-4px)}}
 @media(prefers-reduced-motion:reduce){.chat-typing i{animation:none}}
-@media(min-width:601px){body dialog:is(.navigation-sheet,.atlas-sheet,.character-sheet,.story-topic-sheet,.commandments-sheet,.prophecy-sheet){inset:0;margin:auto;border:1px solid var(--line);max-width:calc(100vw - 32px)}}
+@media(min-width:601px){body :is(.navigation-sheet,.atlas-sheet,.character-sheet,.story-topic-sheet,.commandments-sheet,.prophecy-sheet){inset:0;margin:auto;border:1px solid var(--line);max-width:calc(100vw - 32px)}}
 @media(max-width:600px){
  body>header{height:auto;min-height:100px;flex-wrap:wrap;gap:4px;padding:6px 12px}
  body>header nav{width:100%;max-width:100%;margin:0;gap:0;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}
@@ -2143,3 +2143,10 @@ body .timeline-history{
 .timeline-sources a:focus-visible,.timeline-passage:focus-visible{outline:2px solid rgb(var(--theme-rgb));outline-offset:3px}
 .timeline-sources a{font-size:.8rem;text-decoration:none;text-underline-offset:3px}
 .timeline-view-intro{line-height:1.65}}
+
+@media(prefers-reduced-motion:no-preference){
+ ::view-transition-old(root),::view-transition-new(root){animation-duration:140ms}
+}
+@media(prefers-reduced-motion:reduce){
+ ::view-transition-old(root),::view-transition-new(root){animation:none}
+}

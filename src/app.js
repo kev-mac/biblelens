@@ -89,7 +89,7 @@ function confirmNoteAction(message,action){
 }
 function persist(source='local'){const saved=workspaceStore.save();window.dispatchEvent(new CustomEvent('biblelens:statechange',{detail:{source}}));if(saved)globalThis.BibleLensCloud?.changed?.();return saved;}
 if(state.glassAppearanceVersion!=='midnight-v1'){state.theme='dark';state.glassAppearanceVersion='midnight-v1';persist();}
-function applyTheme(){document.body.classList.toggle('dark',state.theme==='dark');$('#theme').setAttribute('aria-pressed',String(state.theme==='dark'))}applyTheme();
+function applyTheme(){document.querySelectorAll('meta[name="theme-color"]').forEach(meta=>{meta.content=state.theme==='dark'?'#10131a':'#f7f8fa';});document.body.classList.toggle('dark',state.theme==='dark');$('#theme').setAttribute('aria-pressed',String(state.theme==='dark'))}applyTheme();
 function corpus(e){return [e.title,e.type,e.topic,e.refs.join(' '),e.intro,e.claim,e.response,e.assessment,e.context,e.translation,...e.passages.flat()].join(' ').toLowerCase()}
 function matches(e,q){return q.trim().toLowerCase().split(/\s+/).filter(Boolean).every(word=>corpus(e).includes(word))}
 
@@ -180,15 +180,23 @@ window.addEventListener('popstate',event=>{
 window.addEventListener('hashchange',()=>{if(!navigationRestore){navigationEntry=history.state?.biblelens?.id||navigationId();history.replaceState({...history.state,biblelens:{...history.state?.biblelens,id:navigationEntry}},'',location.href);}});
 window.addEventListener('viewchange',()=>{if(navigationRestore)requestAnimationFrame(()=>requestAnimationFrame(restoreNavigation));});
 window.BibleLensNavigation={navigate:navigateHash,restore:restoreNavigation,remember:rememberNavigation};
+let viewTransition,viewRender=0;
 function setView(v,update=true){
  v=({categories:'evidence',saved:'evidence',discover:'explore',people:'characters'})[v]||v;
  const views=['read','chat','evidence','method','commandments','characters','prophecies','timeline','stories','bookmarks','places','explore','search','notebook','debates','debate'];
  const next=views.includes(v)?v:'read';
  if(update){navigateHash('#'+(({characters:'people',explore:'discover',bookmarks:'notebook?section=bookmarks'})[next]||next));if(window.BibleLensFeatures?.route(location.hash))return;}
- view=next;document.body.classList.toggle('read-view',view==='read');
+ const changed=view!==next;view=next;const renderId=++viewRender;
+ const render=()=>{if(renderId!==viewRender)return;
+ document.body.classList.toggle('read-view',view==='read');
  for(const name of views){const section=$('#'+name+'-view');if(section)section.hidden=name!==view;}
  document.querySelectorAll('nav [data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);if(b.closest('header'))b.hidden=['chat','stories','commandments','prophecies','characters'].includes(b.dataset.view);if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
  updateHeaderContext();window.dispatchEvent(new CustomEvent('viewchange',{detail:view}));
+ };
+ if(changed&&document.startViewTransition&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  viewTransition?.skipTransition();viewTransition=document.startViewTransition(render);
+  viewTransition.ready.catch(()=>{});
+ }else{viewTransition?.skipTransition();render();}
 }
 
 function bookmark(id){if(state.bookmarks.includes(id))state.bookmarks=state.bookmarks.filter(x=>x!==id);else state.bookmarks.push(id);persist();renderCards();if(current?.id===id){const b=$('#study-bookmark');if(b)b.innerHTML=utilityIcon('bookmark')+(state.bookmarks.includes(id)?'Bookmarked':'Bookmark')}toast(state.bookmarks.includes(id)?'Added to your research desk':'Bookmark removed')}

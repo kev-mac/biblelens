@@ -112,7 +112,7 @@ function assertHealthy(result, sample) {
   assert.deepEqual(result.violations.filter(event => event.disposition !== 'report'), [], 'Hosted startup must have no enforced CSP violations');
   assert.deepEqual(result.policyErrors, [], 'Hosted startup must have no enforced CSP console errors');
   assert(result.headers['content-security-policy-report-only'], 'Web CSP must be report-only');
-  assert.equal(result.headers['content-security-policy'], undefined, 'Web must not send an enforced CSP header');
+  assert.equal(result.headers['content-security-policy'], "object-src 'none'; base-uri 'none'; form-action 'self'; worker-src 'self'", 'Only host-compatible web directives are enforced');
   assert.deepEqual(result.meta, [], 'Web must not enforce CSP through a meta tag');
   assert.deepEqual(result.pageErrors, [], 'Hosted startup must not throw');
   assert.deepEqual(result.serverErrors, [], 'The fixture server must serve real built assets');

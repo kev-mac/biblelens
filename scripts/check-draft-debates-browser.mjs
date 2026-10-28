@@ -11,7 +11,9 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
    const context=await browser.newContext({viewport,deviceScaleFactor:1,reducedMotion:'reduce',colorScheme:theme});
    const page=await context.newPage();const prefix=`${engine}-${viewport.width}-${theme}-phase3`;
    page.on('pageerror',error=>errors.push(prefix+': '+error.message));
-   page.on('console',message=>{if(message.type()==='error'&&/content security|refused|blocked|csp/i.test(message.text()))errors.push(prefix+': '+message.text());});
+   page.on('console',message=>{if(message.type()==='error'&&/content security|refused|blocked|csp/i.test(message.text())&&!message.text().includes("was delivered in report-only mode, but does not specify a 'report-to'"))errors.push(prefix+': '+message.text());});
+   // WebKit's missing reporting endpoint diagnostic is not a blocked resource.
+   await page.addInitScript(()=>{globalThis.__phase3Enforced=[];document.addEventListener('securitypolicyviolation',event=>{if(event.disposition==='enforce')__phase3Enforced.push(event.effectiveDirective);});});
    await page.route('**/*',route=>new URL(route.request().url()).origin===new URL(base).origin?route.continue():route.abort());
    await page.goto(base+'/#debates?draft=1');
    await page.waitForSelector('.phase3-card');
@@ -38,6 +40,7 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
    assert(await page.locator('.phase3-sheet a[href^="https://"]').count()>0);
    await page.keyboard.press('Escape');assert.equal(await page.locator('.phase3-sheet').getAttribute('open'),null);
    assert.equal(await page.evaluate(()=>document.activeElement.hasAttribute('data-draft-sources')),true,'Focus returns to Sources');
+   assert.deepEqual(await page.evaluate(()=>__phase3Enforced),[],'No enforced CSP violations before reload');
    await page.reload();await page.waitForSelector('.phase3-verdict-box');assert.equal(await page.locator('[data-draft-stance="B"]').getAttribute('aria-pressed'),'false');assert.equal(await page.locator('[data-draft-save]').getAttribute('aria-pressed'),'false');
    for(const id of ['headline-17','headline-25']){
     await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),'#debate/'+id+'?draft=1');await page.waitForSelector('.phase3-verdict-box');
@@ -47,6 +50,7 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
    await page.evaluate(()=>BibleLensWorkspace.navigate('#debates?draft=1&selection=reserves'));await page.waitForSelector('.phase3-card');assert.equal(await page.locator('.phase3-card').count(),10);
    await page.evaluate(()=>BibleLensWorkspace.navigate('#debate/missing?draft=1'));await page.waitForSelector('text=Draft not found');
    await page.evaluate(()=>BibleLensWorkspace.navigate('#debates'));await page.waitForSelector('#debate-results .phase2-debate-card');assert(await page.locator('#debates-view .phase3-preview-link').isVisible());
+   assert.deepEqual(await page.evaluate(()=>__phase3Enforced),[],'No enforced CSP violations after reload');
    results.push({engine,...viewport,theme,reducedMotion:true,status:'pass'});await context.close();
   }
  }finally{await browser.close();}
