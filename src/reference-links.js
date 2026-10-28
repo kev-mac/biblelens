@@ -58,4 +58,3 @@ async function initializeChips(){
  }catch(error){console.warn('Atlas chips unavailable:',error.message);}
 }
 initializeChips();
-
