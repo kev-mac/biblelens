@@ -1,0 +1,36 @@
+{
+  "checked": "2026-10-26",
+  "status": "pass",
+  "validator": "Python jsonschema Draft202012Validator; repository runtime validation is recorded separately",
+  "counts": {
+    "evidence": 50,
+    "stories": 40,
+    "story_books": 31,
+    "prophecies": 25,
+    "timeline": 40
+  },
+  "quote_checks": 3356,
+  "packaged_kjv_mismatches": 0,
+  "greek_and_brenton_english_mismatches": 0,
+  "acknowledged_publisher_wording_differences": 15,
+  "kjv_publisher_typography_variants": 1272,
+  "source_pages": 454,
+  "schema_errors": 0,
+  "gaps_screened": 100,
+  "gap_outcomes": {
+    "draft proposed": 50,
+    "no new record proposed": 50
+  },
+  "evidence_by_book": {
+    "Joshua": 1,
+    "Job": 25,
+    "Psalms": 22,
+    "Ecclesiastes": 2
+  },
+  "limitations": [
+    "Schema validity and exact quotations do not prove scholarly interpretation.",
+    "Evidence and timeline lack standalone repository JSON Schemas; supplemental shapes and actual runtime validators are both used.",
+    "Timeline review checks textual placement, not independent historical dating.",
+    "Fifteen packaged-KJV/publisher wording differences are pinned and reported, not silently normalized or corrected."
+  ]
+}

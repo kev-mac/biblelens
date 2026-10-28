@@ -1,0 +1,733 @@
+[
+  {
+    "id": "andrew",
+    "name": "Andrew",
+    "sex": "male",
+    "era": "Gospels",
+    "aliases": [
+      "Andrew his brother"
+    ],
+    "summary": "A fisherman from Bethsaida and Peter's brother. John first presents him as a follower of John the Baptist who brings Peter to Jesus. Matthew and Mark describe Jesus calling the brothers from their fishing nets. These scenes are not combined into one sequence here. Andrew points out the boy with five barley loaves before the feeding of the crowd. With Philip, he brings Greek visitors' request to Jesus. He is one of four who ask Jesus privately about the temple's future on the Mount of Olives.",
+    "lineage": {
+      "siblings": [
+        "Peter"
+      ]
+    },
+    "geography": {
+      "origin": "Bethsaida (John 1:44)",
+      "residence": [
+        "Bethsaida (John 1:44)",
+        "Sea of Galilee shore (Matthew 4:18)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "Mark",
+        "John",
+        "Acts"
+      ],
+      "key_verses": [
+        "Matthew 4:18",
+        "Mark 1:16",
+        "John 1:40",
+        "John 1:41",
+        "John 1:44",
+        "John 6:8",
+        "John 6:9",
+        "John 12:22",
+        "Mark 13:3",
+        "Acts 1:13"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "matthew-calling-the-first-disciples",
+          "title": "Calling the First Disciples",
+          "passage": "Matthew 4:12 - 4:25",
+          "route": "#stories/matthew/calling-the-first-disciples"
+        },
+        {
+          "story_id": "john-the-first-disciples-and-the-wedding-at-cana",
+          "title": "The First Disciples and the Wedding at Cana",
+          "passage": "John 1:35 - 2:12",
+          "route": "#stories/john/the-first-disciples-and-the-wedding-at-cana"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "andrew_264",
+      "reference_id": "recpvMKljbEMuiK9e",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "siblings",
+          "label": "Peter",
+          "profile_id": "peter"
+        }
+      ]
+    }
+  },
+  {
+    "id": "james-son-of-zebedee",
+    "name": "James son of Zebedee",
+    "sex": "male",
+    "era": "Gospels",
+    "aliases": [
+      "James the brother of John",
+      "James"
+    ],
+    "summary": "Zebedee's son, called with his brother John while they mend nets in their father's boat. They leave the boat and father to follow Jesus. Mark says Jesus names them Boanerges, sons of thunder. With Peter and John, James enters Jairus's house and sees Jesus transformed on the mountain. He and John ask for seats beside Jesus in glory, upsetting the other ten. Jesus says they will drink his cup. Luke describes them asking to call down fire after a Samaritan village refuses Jesus. Acts says King Herod kills James, John's brother, with a sword.",
+    "lineage": {
+      "parents": [
+        "Zebedee"
+      ],
+      "siblings": [
+        "John son of Zebedee"
+      ]
+    },
+    "geography": {
+      "origin": "Galilee, son of Zebedee (Matthew 4:21)",
+      "residence": [
+        "Sea of Galilee shore (Matthew 4:21)",
+        "Jerusalem (Acts 12:1-2)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "Acts"
+      ],
+      "key_verses": [
+        "Matthew 4:21",
+        "Mark 1:19",
+        "Mark 3:17",
+        "Luke 8:51",
+        "Luke 9:28",
+        "Luke 9:54",
+        "Mark 10:35",
+        "Mark 10:37",
+        "Mark 10:41",
+        "Acts 12:2"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "matthew-peter-s-confession-and-the-transfiguration",
+          "title": "Peter's Confession and the Transfiguration",
+          "passage": "Matthew 16:13 - 17:27",
+          "route": "#stories/matthew/peter-s-confession-and-the-transfiguration"
+        },
+        {
+          "story_id": "matthew-calling-the-first-disciples",
+          "title": "Calling the First Disciples",
+          "passage": "Matthew 4:12 - 4:25",
+          "route": "#stories/matthew/calling-the-first-disciples"
+        },
+        {
+          "story_id": "luke-the-miraculous-catch",
+          "title": "The Miraculous Catch",
+          "passage": "Luke 5:1 - 5:11",
+          "route": "#stories/luke/the-miraculous-catch"
+        },
+        {
+          "story_id": "mark-peter-s-confession-and-the-transfiguration-in-mark",
+          "title": "Peter's Confession and the Transfiguration in Mark",
+          "passage": "Mark 8:27 - 9:29",
+          "route": "#stories/mark/peter-s-confession-and-the-transfiguration-in-mark"
+        },
+        {
+          "story_id": "matthew-the-rich-young-man",
+          "title": "The Rich Young Man",
+          "passage": "Matthew 19:1 - 20:34",
+          "route": "#stories/matthew/the-rich-young-man"
+        },
+        {
+          "story_id": "acts-peter-s-escape-and-herod-s-death",
+          "title": "Peter's Escape and Herod's Death",
+          "passage": "Acts 12:1 - 12:25",
+          "route": "#stories/acts/peter-s-escape-and-herod-s-death"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "james_717",
+      "reference_id": "rechkAyIwugqcLaaY",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "siblings",
+          "label": "John son of Zebedee",
+          "profile_id": "john-son-of-zebedee"
+        }
+      ]
+    }
+  },
+  {
+    "id": "john-son-of-zebedee",
+    "name": "John son of Zebedee",
+    "sex": "male",
+    "era": "Gospels",
+    "aliases": [
+      "John his brother",
+      "John the brother of James"
+    ],
+    "summary": "Zebedee's son and James's brother, called with James from their fishing boat. He joins Peter and James at Jairus's house and when Jesus is transformed on the mountain. He reports stopping a man who casts out devils in Jesus' name. With James, he requests seats beside Jesus and proposes fire against a Samaritan village. Acts places him with Peter at the temple, before the council and in Samaria. The council calls them “unlearned and ignorant men”. John's Gospel leaves the beloved disciple unnamed while saying that disciple testified and wrote these things. This profile does not identify that disciple as John or settle authorship.",
+    "lineage": {
+      "parents": [
+        "Zebedee"
+      ],
+      "siblings": [
+        "James son of Zebedee"
+      ]
+    },
+    "geography": {
+      "origin": "Galilee, son of Zebedee (Matthew 4:21)",
+      "residence": [
+        "Sea of Galilee shore (Matthew 4:21)",
+        "Jerusalem (Acts 3:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "Acts"
+      ],
+      "key_verses": [
+        "Matthew 4:21",
+        "Mark 3:17",
+        "Luke 8:51",
+        "Luke 9:28",
+        "Luke 9:49",
+        "Luke 9:54",
+        "Mark 10:35",
+        "Acts 3:1",
+        "Acts 4:13",
+        "Acts 8:14"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "matthew-peter-s-confession-and-the-transfiguration",
+          "title": "Peter's Confession and the Transfiguration",
+          "passage": "Matthew 16:13 - 17:27",
+          "route": "#stories/matthew/peter-s-confession-and-the-transfiguration"
+        },
+        {
+          "story_id": "matthew-calling-the-first-disciples",
+          "title": "Calling the First Disciples",
+          "passage": "Matthew 4:12 - 4:25",
+          "route": "#stories/matthew/calling-the-first-disciples"
+        },
+        {
+          "story_id": "luke-the-miraculous-catch",
+          "title": "The Miraculous Catch",
+          "passage": "Luke 5:1 - 5:11",
+          "route": "#stories/luke/the-miraculous-catch"
+        },
+        {
+          "story_id": "mark-peter-s-confession-and-the-transfiguration-in-mark",
+          "title": "Peter's Confession and the Transfiguration in Mark",
+          "passage": "Mark 8:27 - 9:29",
+          "route": "#stories/mark/peter-s-confession-and-the-transfiguration-in-mark"
+        },
+        {
+          "story_id": "acts-the-lame-man-healed-and-arrest-of-peter-and-john",
+          "title": "The Lame Man Healed and Arrest of Peter and John",
+          "passage": "Acts 3:1 - 4:31",
+          "route": "#stories/acts/the-lame-man-healed-and-arrest-of-peter-and-john"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "john_1677",
+      "reference_id": "recvAB7vkczUEFH8Z",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "siblings",
+          "label": "James son of Zebedee",
+          "profile_id": "james-son-of-zebedee"
+        }
+      ]
+    }
+  },
+  {
+    "id": "matthew-levi",
+    "name": "Matthew",
+    "sex": "male",
+    "era": "Gospels",
+    "summary": "Matthew describes Jesus calling a tax collector named Matthew with “Follow me”, after which he follows. Mark describes a similar call to Levi, Alphaeus's son, while Luke names Levi. Luke says Levi leaves everything and holds a feast with tax collectors and others. Mark also places the meal at Levi's house. Matthew 10:3 names “Matthew the publican” among the Twelve; Acts includes Matthew in the upper room. The Matthew/Levi association is kept qualified here because no cited verse directly states it. Alphaeus is therefore not entered as Matthew's unqualified parent.",
+    "lineage": {},
+    "geography": {
+      "origin": "Not stated; at the receipt of custom (Matthew 9:9)",
+      "residence": [
+        "Capernaum area (Mark 2:1, 2:13-14)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "Acts"
+      ],
+      "key_verses": [
+        "Matthew 9:9",
+        "Matthew 10:3",
+        "Mark 2:14",
+        "Mark 2:15",
+        "Luke 5:27",
+        "Luke 5:28",
+        "Luke 5:29",
+        "Acts 1:13"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "matthew-healings-and-calming-the-storm",
+          "title": "Healings and Calming the Storm",
+          "passage": "Matthew 8:1 - 9:38",
+          "route": "#stories/matthew/healings-and-calming-the-storm"
+        },
+        {
+          "story_id": "mark-the-paralytic-and-controversies",
+          "title": "The Paralytic and Controversies",
+          "passage": "Mark 2:1 - 3:6",
+          "route": "#stories/mark/the-paralytic-and-controversies"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "matthew_1971",
+      "reference_id": "recVRtBEdN8mgLhHN",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "philip-the-apostle",
+    "name": "Philip the apostle",
+    "sex": "male",
+    "era": "Gospels",
+    "summary": "A man from Bethsaida, also home to Andrew and Peter. John describes Jesus finding him in Galilee and saying, “Follow me”. He tells Nathanael they have found the figure Moses and the prophets wrote about. When Nathanael questions Nazareth, Philip replies, “Come and see”. Before the crowd is fed, he says two hundred pennyworth of bread would not be enough. Greek visitors approach him; he and Andrew bring their request to Jesus. At supper, he asks to see the Father. Jesus replies that seeing him means seeing the Father. Acts names him in the upper room. He is distinct from Philip the evangelist.",
+    "lineage": {},
+    "geography": {
+      "origin": "Bethsaida (John 1:44)",
+      "residence": [
+        "Bethsaida of Galilee (John 12:21)",
+        "Jerusalem (Acts 1:13)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "John",
+        "Acts"
+      ],
+      "key_verses": [
+        "John 1:43",
+        "John 1:44",
+        "John 1:45",
+        "John 1:46",
+        "John 6:5",
+        "John 6:7",
+        "John 12:21",
+        "John 12:22",
+        "John 14:8",
+        "John 14:9",
+        "Acts 1:13"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "john-the-first-disciples-and-the-wedding-at-cana",
+          "title": "The First Disciples and the Wedding at Cana",
+          "passage": "John 1:35 - 2:12",
+          "route": "#stories/john/the-first-disciples-and-the-wedding-at-cana"
+        },
+        {
+          "story_id": "john-bread-of-life",
+          "title": "Bread of Life",
+          "passage": "John 6:1 - 6:71",
+          "route": "#stories/john/bread-of-life"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "philip_2344",
+      "reference_id": "recg3914bVvyjBOfN",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "nathanael",
+    "name": "Nathanael",
+    "sex": "male",
+    "era": "Gospels",
+    "summary": "Philip brings him to Jesus after saying they have found the figure described in the law and prophets. Nathanael questions whether good can come from Nazareth. John describes Jesus greeting him as an Israelite without deceit and saying he saw him under the fig tree. Nathanael replies, “Rabbi, thou art the Son of God; thou art the King of Israel.” John 21:2 calls him “of Cana in Galilee” among the disciples at the sea of Tiberias. The cited passages do not call him an apostle or identify him with Bartholomew.",
+    "lineage": {},
+    "geography": {
+      "origin": "Cana of Galilee (John 21:2)",
+      "residence": [
+        "Cana of Galilee (John 21:2)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "John"
+      ],
+      "key_verses": [
+        "John 1:45",
+        "John 1:46",
+        "John 1:47",
+        "John 1:48",
+        "John 1:49",
+        "John 21:2"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "john-the-first-disciples-and-the-wedding-at-cana",
+          "title": "The First Disciples and the Wedding at Cana",
+          "passage": "John 1:35 - 2:12",
+          "route": "#stories/john/the-first-disciples-and-the-wedding-at-cana"
+        },
+        {
+          "story_id": "john-breakfast-by-the-sea-of-tiberias",
+          "title": "Breakfast by the Sea of Tiberias",
+          "passage": "John 21:1 - 21:25",
+          "route": "#stories/john/breakfast-by-the-sea-of-tiberias"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "nathanael_2158",
+      "reference_id": "recd33WGbx9DkJuTk",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "herod-antipas",
+    "name": "Herod the tetrarch",
+    "sex": "male",
+    "era": "Gospels",
+    "aliases": [
+      "Herod the tetrarch",
+      "Herod"
+    ],
+    "summary": "Called Herod the tetrarch, ruling Galilee in Tiberius's fifteenth year. Antipas is a conventional historical label, not the KJV name. John rebukes his marriage to Herodias, his brother Philip's wife, and Herod imprisons him. Mark says Herod fears John and listens gladly. At a birthday feast, he promises Herodias's daughter whatever she asks. Though sorry, he orders John's execution to keep his oath. Hearing about Jesus, he says John has risen. Luke records a warning that Herod seeks Jesus' death and Jesus calling him a fox. At trial, Herod questions and mocks Jesus, then returns him to Pilate. Luke says the two rulers become friends that day.",
+    "lineage": {
+      "spouses": [
+        "Herodias"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated in the Gospels; tetrarch of Galilee (Luke 3:1)",
+      "residence": [
+        "Galilee (Luke 3:1)",
+        "Jerusalem at the time of the trial (Luke 23:7)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "Mark",
+        "Luke"
+      ],
+      "key_verses": [
+        "Luke 3:1",
+        "Luke 3:19",
+        "Luke 3:20",
+        "Matthew 14:1",
+        "Matthew 14:3",
+        "Matthew 14:9",
+        "Matthew 14:10",
+        "Mark 6:20",
+        "Luke 13:31",
+        "Luke 13:32",
+        "Luke 23:8",
+        "Luke 23:11",
+        "Luke 23:12"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "matthew-feeding-the-five-thousand-and-walking-on-water",
+          "title": "Feeding the Five Thousand and Walking on Water",
+          "passage": "Matthew 14:1 - 14:36",
+          "route": "#stories/matthew/feeding-the-five-thousand-and-walking-on-water"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "herod_1505",
+      "reference_id": "recV4ujd4P2vfpd2D",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Herodias",
+          "profile_id": "herodias"
+        }
+      ]
+    }
+  },
+  {
+    "id": "herodias",
+    "name": "Herodias",
+    "sex": "female",
+    "era": "Gospels",
+    "summary": "Herod the tetrarch's wife, described in the Gospels as previously married to his brother Philip. John tells Herod that this marriage is unlawful. Mark says Herodias wants John killed but cannot while Herod protects him. At Herod's birthday feast, her daughter dances and receives a promise of whatever she requests. Herodias tells her to ask for John's head. The daughter brings it to her mother on a platter. The Gospels leave the daughter unnamed; no fuller family tree is added here.",
+    "lineage": {
+      "spouses": [
+        "Philip (Herod's brother)",
+        "Herod the tetrarch"
+      ],
+      "children": [
+        "a daughter (unnamed)"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Galilee (Mark 6:21)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "Mark",
+        "Luke"
+      ],
+      "key_verses": [
+        "Luke 3:19",
+        "Matthew 14:3",
+        "Matthew 14:6",
+        "Matthew 14:8",
+        "Mark 6:17",
+        "Mark 6:19",
+        "Mark 6:24",
+        "Mark 6:28"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "matthew-feeding-the-five-thousand-and-walking-on-water",
+          "title": "Feeding the Five Thousand and Walking on Water",
+          "passage": "Matthew 14:1 - 14:36",
+          "route": "#stories/matthew/feeding-the-five-thousand-and-walking-on-water"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "herodias_1507",
+      "reference_id": "recP9mHoD9qFMGnMt",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Herod the tetrarch",
+          "profile_id": "herod-antipas"
+        }
+      ]
+    }
+  },
+  {
+    "id": "joseph-of-arimathaea",
+    "name": "Joseph of Arimathaea",
+    "sex": "male",
+    "era": "Gospels",
+    "summary": "A man from Arimathaea, distinct from Mary's husband and the patriarch Joseph. Matthew calls him rich; John describes him as a secret disciple who fears the Jewish leaders. Mark calls him a respected council member awaiting God's kingdom. Luke says he did not agree with the council's actions. Mark describes him boldly asking Pilate for Jesus' body, which Pilate grants after checking that Jesus is dead. Matthew says he wraps it in clean linen and places it in his own new rock-cut tomb. John describes Nicodemus bringing myrrh and aloes and both men wrapping the body with these substances.",
+    "lineage": {},
+    "geography": {
+      "origin": "Arimathaea (Matthew 27:57; Luke 23:51 'a city of the Jews')",
+      "residence": [
+        "Jerusalem area (Matthew 27:57-60)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ],
+      "key_verses": [
+        "Matthew 27:57",
+        "Matthew 27:60",
+        "Mark 15:43",
+        "Mark 15:46",
+        "Luke 23:50",
+        "Luke 23:51",
+        "Luke 23:53",
+        "John 19:38",
+        "John 19:39",
+        "John 19:41"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "matthew-trial-crucifixion-and-burial",
+          "title": "Trial, Crucifixion and Burial",
+          "passage": "Matthew 26:57 - 27:66",
+          "route": "#stories/matthew/trial-crucifixion-and-burial"
+        },
+        {
+          "story_id": "mark-trial-crucifixion-and-burial-in-mark",
+          "title": "Trial, Crucifixion and Burial in Mark",
+          "passage": "Mark 14:53 - 15:47",
+          "route": "#stories/mark/trial-crucifixion-and-burial-in-mark"
+        },
+        {
+          "story_id": "john-arrest-trial-and-crucifixion",
+          "title": "Arrest, Trial and Crucifixion",
+          "passage": "John 18:1 - 19:42",
+          "route": "#stories/john/arrest-trial-and-crucifixion"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "joseph_1716",
+      "reference_id": "recSPfp8wBRE8aSY9",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "barabbas",
+    "name": "Barabbas",
+    "sex": "male",
+    "era": "Gospels",
+    "summary": "A prisoner offered for release during the feast. Matthew calls him notable. Mark links him with rebels who committed murder; Luke names revolt and murder; John calls him a robber. These descriptions remain attributed to their Gospels and do not establish different identities. Matthew describes the priests urging the crowd to choose Barabbas and demand Jesus' death. Pilate asks what wrong Jesus has done, then releases Barabbas and hands Jesus over for crucifixion. The accounts give no later biography for Barabbas.",
+    "lineage": {},
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Prison in Jerusalem (Luke 23:19)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Matthew",
+        "Mark",
+        "Luke",
+        "John"
+      ],
+      "key_verses": [
+        "Matthew 27:16",
+        "Matthew 27:21",
+        "Matthew 27:26",
+        "Mark 15:7",
+        "Mark 15:11",
+        "Mark 15:15",
+        "Luke 23:18",
+        "Luke 23:19",
+        "Luke 23:25",
+        "John 18:40"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "matthew-trial-crucifixion-and-burial",
+          "title": "Trial, Crucifixion and Burial",
+          "passage": "Matthew 26:57 - 27:66",
+          "route": "#stories/matthew/trial-crucifixion-and-burial"
+        },
+        {
+          "story_id": "mark-trial-crucifixion-and-burial-in-mark",
+          "title": "Trial, Crucifixion and Burial in Mark",
+          "passage": "Mark 14:53 - 15:47",
+          "route": "#stories/mark/trial-crucifixion-and-burial-in-mark"
+        },
+        {
+          "story_id": "john-arrest-trial-and-crucifixion",
+          "title": "Arrest, Trial and Crucifixion",
+          "passage": "John 18:1 - 19:42",
+          "route": "#stories/john/arrest-trial-and-crucifixion"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "barabbas_399",
+      "reference_id": "recDz78J2GRUtxKWi",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "annas",
+    "name": "Annas",
+    "sex": "male",
+    "era": "Gospels",
+    "summary": "Named with Caiaphas as high priest in Luke when John begins receiving God's word. John says Jesus is first brought to Annas, Caiaphas's father-in-law, after his arrest. It then describes “the high priest” questioning Jesus about his followers and teaching. Jesus says he spoke openly, and an officer strikes him. John says Annas sent Jesus bound to Caiaphas. The passage names both men without settling the questioner's identity here. Acts again calls Annas high priest when Peter and John face the rulers. Caiaphas, John, Alexander and others from the high priest's family are also present.",
+    "lineage": {
+      "children": [
+        "Caiaphas's wife (unnamed)"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Jerusalem (John 18:13)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Luke",
+        "John",
+        "Acts"
+      ],
+      "key_verses": [
+        "Luke 3:2",
+        "John 18:13",
+        "John 18:19",
+        "John 18:24",
+        "Acts 4:6"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "john-arrest-trial-and-crucifixion",
+          "title": "Arrest, Trial and Crucifixion",
+          "passage": "John 18:1 - 19:42",
+          "route": "#stories/john/arrest-trial-and-crucifixion"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "annas_269",
+      "reference_id": "recGotpPx4VIXOGPr",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  }
+]

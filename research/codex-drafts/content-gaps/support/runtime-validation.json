@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "checks": [
+    "Repository validateWitnesses and validateSides, including the combined evidence catalog",
+    "Repository validateStories on combined old and draft story books",
+    "Repository timelineCatalog on combined old and draft events",
+    "Repository prophecy passage parser",
+    "Draft prose grade 6–8, sentence length and jargon screen"
+  ],
+  "readability": [
+    {
+      "collection": "Draft evidence",
+      "lines": 150,
+      "average_fk_grade": 6.792564345070058,
+      "over_length": 0,
+      "unexplained_jargon": 0
+    },
+    {
+      "collection": "Draft stories",
+      "lines": 40,
+      "average_fk_grade": 7.01299868503349,
+      "over_length": 0,
+      "unexplained_jargon": 0
+    },
+    {
+      "collection": "Draft prophecies",
+      "lines": 50,
+      "average_fk_grade": 7.764094248655922,
+      "over_length": 0,
+      "unexplained_jargon": 0
+    },
+    {
+      "collection": "Draft timeline",
+      "lines": 80,
+      "average_fk_grade": 6.7345509751975765,
+      "over_length": 0,
+      "unexplained_jargon": 0
+    }
+  ]
+}

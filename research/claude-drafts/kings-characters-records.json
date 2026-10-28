@@ -1,0 +1,971 @@
+[
+  {
+    "id": "rehoboam",
+    "name": "Rehoboam",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Solomon's son by Naamah the Ammonite, who becomes king at Shechem at forty-one. The people ask him to ease the burdens Solomon imposed. He rejects the elders' advice for that of his young peers. He promises “scorpions” where Solomon used whips. Ten tribes leave him, while Judah and Benjamin remain. Kings says a message through Shemaiah stops him from attacking Israel. In his fifth year, Shishak of Egypt takes treasures from the temple and royal house. War with Jeroboam continues throughout his reign.",
+    "aliases": [
+      "Roboam"
+    ],
+    "lineage": {
+      "parents": [
+        "Solomon",
+        "Naamah the Ammonitess"
+      ],
+      "children": [
+        "Abijam"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Birthplace not stated; rules from Jerusalem (1 Kings 14:21).",
+      "residence": [
+        "Jerusalem (1 Kings 14:21)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Kings",
+        "2 Chronicles",
+        "Matthew"
+      ],
+      "key_verses": [
+        "1 Kings 12:1",
+        "1 Kings 12:8",
+        "1 Kings 12:11",
+        "1 Kings 12:16",
+        "1 Kings 12:24",
+        "1 Kings 14:21",
+        "1 Kings 14:25",
+        "1 Kings 14:26",
+        "1 Kings 14:30",
+        "1 Kings 14:31"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-kings-the-kingdom-divides",
+          "title": "The Kingdom Divides",
+          "passage": "1 Kings 12:1 - 12:33",
+          "route": "#stories/1-kings/the-kingdom-divides"
+        },
+        {
+          "story_id": "1-kings-the-man-of-god-from-judah",
+          "title": "The Man of God from Judah",
+          "passage": "1 Kings 13:1 - 14:31",
+          "route": "#stories/1-kings/the-man-of-god-from-judah"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "rehoboam_2412",
+      "reference_id": "recqQthL4TAHb0KeC",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Solomon",
+          "profile_id": "solomon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jeroboam",
+    "name": "Jeroboam",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Nebat and Zeruah's son from Zereda, called an Ephrathite. Solomon puts him over the labour force of Joseph's tribes. Ahijah tears a garment into twelve pieces and gives him ten, with a conditional promise of a lasting royal line. Solomon seeks to kill him, so he flees to Egypt until Solomon dies. The people call him back and make him king at Shechem. He sets up golden calves at Bethel and Dan, appoints priests outside Levi and establishes an eighth-month feast. Kings uses his sin to judge later rulers. He reigns twenty-two years, followed by his son Nadab.",
+    "lineage": {
+      "parents": [
+        "Nebat",
+        "Zeruah"
+      ],
+      "spouses": [
+        "Wife (unnamed)"
+      ],
+      "children": [
+        "Abijah",
+        "Nadab"
+      ]
+    },
+    "geography": {
+      "origin": "Zereda, an Ephrathite (1 Kings 11:26)",
+      "residence": [
+        "Shechem, which he built in mount Ephraim (1 Kings 12:25)",
+        "Penuel (1 Kings 12:25)",
+        "Egypt, in flight from Solomon (1 Kings 11:40)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Kings"
+      ],
+      "key_verses": [
+        "1 Kings 11:26",
+        "1 Kings 11:29",
+        "1 Kings 11:31",
+        "1 Kings 11:40",
+        "1 Kings 12:20",
+        "1 Kings 12:28",
+        "1 Kings 12:29",
+        "1 Kings 12:31",
+        "1 Kings 14:1",
+        "1 Kings 14:20"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-kings-the-kingdom-divides",
+          "title": "The Kingdom Divides",
+          "passage": "1 Kings 12:1 - 12:33",
+          "route": "#stories/1-kings/the-kingdom-divides"
+        },
+        {
+          "story_id": "1-kings-the-man-of-god-from-judah",
+          "title": "The Man of God from Judah",
+          "passage": "1 Kings 13:1 - 14:31",
+          "route": "#stories/1-kings/the-man-of-god-from-judah"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "jeroboam_872",
+      "reference_id": "recXhPherZAxvXTS4",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "ahab",
+    "name": "Ahab",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Omri's son, who rules Israel from Samaria for twenty-two years. Kings says he does more evil than all before him. He marries Jezebel, Ethbaal's daughter, and serves Baal. Elijah announces a drought, meets him on Carmel and confronts him after Naboth's death. Ahab then humbles himself. While fighting Syria at Ramoth-gilead, an arrow shot at random strikes him. Kings says he dies that evening in his chariot and dogs lick the blood washed from it. This profile does not settle Athaliah's parentage or identify Ahab with Jeremiah's Ahab.",
+    "lineage": {
+      "parents": [
+        "Omri"
+      ],
+      "spouses": [
+        "Jezebel"
+      ],
+      "children": [
+        "Ahaziah",
+        "Joram",
+        "Seventy sons (2 Kings 10:1)",
+        "Daughter, wife of Jehoram of Judah (2 Kings 8:18)"
+      ]
+    },
+    "geography": {
+      "origin": "Birthplace not stated; rules from Samaria (1 Kings 16:29).",
+      "residence": [
+        "Samaria (1 Kings 16:29)",
+        "Jezreel, where Naboth's vineyard lay (1 Kings 21:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Kings",
+        "2 Kings"
+      ],
+      "key_verses": [
+        "1 Kings 16:29",
+        "1 Kings 16:30",
+        "1 Kings 16:31",
+        "1 Kings 17:1",
+        "1 Kings 18:17",
+        "1 Kings 21:2",
+        "1 Kings 21:27",
+        "1 Kings 22:34",
+        "1 Kings 22:38",
+        "1 Kings 22:40"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-kings-elijah-and-the-drought",
+          "title": "Elijah and the Drought",
+          "passage": "1 Kings 17:1 - 17:24",
+          "route": "#stories/1-kings/elijah-and-the-drought"
+        },
+        {
+          "story_id": "1-kings-elijah-on-mount-carmel",
+          "title": "Elijah on Mount Carmel",
+          "passage": "1 Kings 18:1 - 18:46",
+          "route": "#stories/1-kings/elijah-on-mount-carmel"
+        },
+        {
+          "story_id": "1-kings-naboth-s-vineyard",
+          "title": "Naboth's Vineyard",
+          "passage": "1 Kings 21:1 - 21:29",
+          "route": "#stories/1-kings/naboth-s-vineyard"
+        },
+        {
+          "story_id": "1-kings-ahab-and-micaiah",
+          "title": "Ahab and Micaiah",
+          "passage": "1 Kings 22:1 - 22:53",
+          "route": "#stories/1-kings/ahab-and-micaiah"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "ahab_113",
+      "reference_id": "rec91wntVnuliHv7E",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Jezebel",
+          "profile_id": "jezebel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jezebel",
+    "name": "Jezebel",
+    "sex": "female",
+    "era": "Monarchy",
+    "summary": "Ethbaal's daughter and Ahab's wife. Kings says Ahab marries Jezebel and serves Baal. It describes her killing the Lord's prophets and supporting four hundred prophets of the groves. She threatens Elijah's life after Carmel. Using letters sealed with Ahab's seal, she arranges false charges against Naboth and his death by stoning. When Jehu reaches Jezreel, she paints her face and looks from a window. Court servants throw her down, and she is trampled. Only her skull, feet and palms remain when people come to bury her. Jehu links this to Elijah's words about dogs eating her flesh.",
+    "lineage": {
+      "parents": [
+        "Ethbaal"
+      ],
+      "spouses": [
+        "Ahab"
+      ],
+      "children": [
+        "Ahaziah",
+        "Joram"
+      ]
+    },
+    "geography": {
+      "origin": "Zidon, daughter of Ethbaal (1 Kings 16:31)",
+      "residence": [
+        "Samaria (1 Kings 16:32)",
+        "Jezreel (1 Kings 21:23)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Kings",
+        "2 Kings"
+      ],
+      "key_verses": [
+        "1 Kings 16:31",
+        "1 Kings 18:4",
+        "1 Kings 18:19",
+        "1 Kings 19:2",
+        "1 Kings 21:7",
+        "1 Kings 21:8",
+        "1 Kings 21:23",
+        "2 Kings 9:22",
+        "2 Kings 9:30",
+        "2 Kings 9:33",
+        "2 Kings 9:36",
+        "1 Kings 22:52"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-kings-elijah-on-mount-carmel",
+          "title": "Elijah on Mount Carmel",
+          "passage": "1 Kings 18:1 - 18:46",
+          "route": "#stories/1-kings/elijah-on-mount-carmel"
+        },
+        {
+          "story_id": "1-kings-elijah-at-horeb",
+          "title": "Elijah at Horeb",
+          "passage": "1 Kings 19:1 - 19:21",
+          "route": "#stories/1-kings/elijah-at-horeb"
+        },
+        {
+          "story_id": "1-kings-naboth-s-vineyard",
+          "title": "Naboth's Vineyard",
+          "passage": "1 Kings 21:1 - 21:29",
+          "route": "#stories/1-kings/naboth-s-vineyard"
+        },
+        {
+          "story_id": "2-kings-jehu-s-revolt",
+          "title": "Jehu's Revolt",
+          "passage": "2 Kings 8:1 - 10:36",
+          "route": "#stories/2-kings/jehu-s-revolt"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "jezebel_1605",
+      "reference_id": "recJRZ55dvZRRb0mg",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Ahab",
+          "profile_id": "ahab"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jehu",
+    "name": "Jehu",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Son of Jehoshaphat and grandson of Nimshi, serving as a commander at Ramoth-gilead. A prophet sent by Elisha anoints him king of Israel. He shoots Joram at Naboth's plot, orders Ahaziah struck down and sees Jezebel thrown from her window. He has Ahab's seventy sons killed at Samaria and destroys Baal's worshippers and temple. Kings describes the Lord promising his descendants four generations on the throne. It also criticizes his continued calf worship and incomplete obedience. He reigns twenty-eight years. His father's name does not identify him with King Jehoshaphat of Judah.",
+    "lineage": {
+      "parents": [
+        "Jehoshaphat"
+      ]
+    },
+    "geography": {
+      "origin": "Ramoth-gilead, as captain among the host (2 Kings 9:1)",
+      "residence": [
+        "Ramoth-gilead (2 Kings 9:14)",
+        "Jezreel (2 Kings 9:30)",
+        "Samaria (2 Kings 10:36)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Kings"
+      ],
+      "key_verses": [
+        "2 Kings 9:2",
+        "2 Kings 9:6",
+        "2 Kings 9:24",
+        "2 Kings 9:27",
+        "2 Kings 9:33",
+        "2 Kings 10:7",
+        "2 Kings 10:28",
+        "2 Kings 10:29",
+        "2 Kings 10:30",
+        "2 Kings 10:31",
+        "2 Kings 10:36"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-kings-jehu-s-revolt",
+          "title": "Jehu's Revolt",
+          "passage": "2 Kings 8:1 - 10:36",
+          "route": "#stories/2-kings/jehu-s-revolt"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "jehu_817",
+      "reference_id": "receyzziW4sDhoPTk",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "athaliah",
+    "name": "Athaliah",
+    "sex": "female",
+    "era": "Monarchy",
+    "summary": "Ahaziah of Judah's mother. Second Kings 8:26 calls her Omri's daughter; 8:18 calls Jehoram's wife Ahab's daughter. These labels do not settle the exact family relationship here. After Ahaziah dies, she attacks the royal family. Jehosheba, Joram's daughter and Ahaziah's sister, hides the infant Joash in the temple for six years while Athaliah rules. In the seventh year, Jehoiada makes an agreement with the captains and guards and crowns Joash. Athaliah is taken out and killed near the horses' entrance to the royal house.",
+    "lineage": {
+      "spouses": [
+        "Jehoram of Judah"
+      ],
+      "children": [
+        "Ahaziah"
+      ]
+    },
+    "geography": {
+      "origin": "Israel, daughter of the house of Omri (2 Kings 8:26)",
+      "residence": [
+        "Jerusalem (2 Kings 11:3)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Kings"
+      ],
+      "key_verses": [
+        "2 Kings 8:18",
+        "2 Kings 8:26",
+        "2 Kings 11:1",
+        "2 Kings 11:2",
+        "2 Kings 11:3",
+        "2 Kings 11:4",
+        "2 Kings 11:16"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-kings-athaliah-and-joash",
+          "title": "Athaliah and Joash",
+          "passage": "2 Kings 11:1 - 12:21",
+          "route": "#stories/2-kings/athaliah-and-joash"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "athaliah_359",
+      "reference_id": "recjyWBYEzNaB2uZC",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "naaman",
+    "name": "Naaman",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "A Syrian commander whom Second Kings describes as honoured and brave, but affected by leprosy. A captive Israelite girl tells his wife about the prophet in Samaria. Naaman travels with his king's letter. Elisha tells him to wash seven times in the Jordan. He is angry, but follows his servants' advice and washes. The account says he is healed. He declares that God is found only in Israel and takes earth home for worship. He asks pardon for bowing in Rimmon's temple while attending his master. Jesus mentions Naaman while discussing lepers in Israel during Elisha's time.",
+    "geography": {
+      "origin": "Syria, captain of the host of its king (2 Kings 5:1)",
+      "residence": [
+        "Syria (2 Kings 5:1)",
+        "The Jordan, where he washes (2 Kings 5:14)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Kings",
+        "Luke"
+      ],
+      "key_verses": [
+        "2 Kings 5:1",
+        "2 Kings 5:2",
+        "2 Kings 5:10",
+        "2 Kings 5:11",
+        "2 Kings 5:14",
+        "2 Kings 5:15",
+        "2 Kings 5:17",
+        "2 Kings 5:18",
+        "Luke 4:27"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-kings-naaman-healed",
+          "title": "Naaman Healed",
+          "passage": "2 Kings 5:1 - 5:27",
+          "route": "#stories/2-kings/naaman-healed"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "naaman_2122",
+      "reference_id": "recNRf3uss32ZuTw7",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "hezekiah",
+    "name": "Hezekiah",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Ahaz and Abi's son, who becomes Judah's king at twenty-five and reigns twenty-nine years. He removes shrines and images and breaks Moses' bronze serpent, which people had used for worship. He calls it Nehushtan. When Sennacherib attacks Judah's towns, Hezekiah pays the demand. He later prays after an Assyrian official's challenge. Kings describes the Lord's angel striking the Assyrian camp. In the illness account, Isaiah tells him to prepare for death. He prays and receives fifteen more years, with a backward-moving shadow as a sign. After he shows Babylonian envoys his treasures, Isaiah warns they will be carried to Babylon. These episodes do not establish an independent chronology here.",
+    "aliases": [
+      "Ezekias"
+    ],
+    "lineage": {
+      "parents": [
+        "Ahaz",
+        "Abi, daughter of Zachariah"
+      ],
+      "children": [
+        "Manasseh"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Birthplace not stated; rules from Jerusalem (2 Kings 18:2).",
+      "residence": [
+        "Jerusalem (2 Kings 18:2)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Kings",
+        "Isaiah",
+        "Matthew"
+      ],
+      "key_verses": [
+        "2 Kings 18:1",
+        "2 Kings 18:2",
+        "2 Kings 18:3",
+        "2 Kings 18:4",
+        "2 Kings 19:15",
+        "2 Kings 19:35",
+        "2 Kings 20:1",
+        "2 Kings 20:6",
+        "2 Kings 20:12",
+        "2 Kings 20:17",
+        "Matthew 1:10"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-kings-hezekiah-and-sennacherib",
+          "title": "Hezekiah and Sennacherib",
+          "passage": "2 Kings 18:1 - 19:37",
+          "route": "#stories/2-kings/hezekiah-and-sennacherib"
+        },
+        {
+          "story_id": "2-kings-hezekiah-s-illness-and-the-babylonian-envoys",
+          "title": "Hezekiah's Illness and the Babylonian Envoys",
+          "passage": "2 Kings 20:1 - 20:21",
+          "route": "#stories/2-kings/hezekiah-s-illness-and-the-babylonian-envoys"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "hezekiah_1512",
+      "reference_id": "recNlVijtEIdQhAIm",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Ahaz",
+          "profile_id": "ahaz"
+        },
+        {
+          "relation": "children",
+          "label": "Manasseh",
+          "profile_id": "manasseh"
+        }
+      ]
+    }
+  },
+  {
+    "id": "manasseh",
+    "name": "Manasseh",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Hezekiah's son, who becomes Judah's king at twelve and reigns fifty-five years. Kings describes him restoring shrines, building altars for Baal and heavenly bodies, and making his son pass through fire. It also describes his dealings with spirits and the innocent blood he sheds in Jerusalem. Kings reports a warning of disaster for Jerusalem because of his sins. Chronicles adds an account of Assyrian captains taking him in chains to Babylon. It says he humbles himself there and returns to Jerusalem. His son Amon follows him.",
+    "aliases": [
+      "Manasses"
+    ],
+    "lineage": {
+      "parents": [
+        "Hezekiah",
+        "Hephzibah"
+      ],
+      "children": [
+        "Amon"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Birthplace not stated; rules from Jerusalem (2 Kings 21:1).",
+      "residence": [
+        "Jerusalem (2 Kings 21:1)",
+        "Babylon, in captivity (2 Chronicles 33:11)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Kings",
+        "2 Chronicles",
+        "Matthew"
+      ],
+      "key_verses": [
+        "2 Kings 21:1",
+        "2 Kings 21:3",
+        "2 Kings 21:6",
+        "2 Kings 21:12",
+        "2 Kings 21:16",
+        "2 Kings 21:18",
+        "2 Chronicles 33:11",
+        "2 Chronicles 33:12",
+        "2 Chronicles 33:13",
+        "Matthew 1:10"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-kings-manasseh-amon-and-josiah",
+          "title": "Manasseh, Amon and Josiah",
+          "passage": "2 Kings 21:1 - 23:30",
+          "route": "#stories/2-kings/manasseh-amon-and-josiah"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "manasseh_1930",
+      "reference_id": "rec5LjGfCEP8klGHt",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Hezekiah",
+          "profile_id": "hezekiah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "josiah",
+    "name": "Josiah",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Amon and Jedidah's son, who becomes Judah's king at eight and reigns thirty-one years. Kings says he does right in the Lord's sight. In his eighteenth year, Hilkiah finds the law book in the temple. Josiah tears his clothes and sends to Huldah, a prophet. He reads the book to the people and makes an agreement to follow it. He removes idols and shrines in Judah and at Bethel. Kings links his actions at Bethel to an earlier prophet's words. It describes his Passover and his turning to the Lord as unequalled. Pharaoh-nechoh kills him at Megiddo.",
+    "aliases": [
+      "Josias"
+    ],
+    "lineage": {
+      "parents": [
+        "Amon",
+        "Jedidah"
+      ],
+      "children": [
+        "Jehoahaz",
+        "Jehoiakim",
+        "Zedekiah"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Jerusalem, son of Amon (2 Kings 22:1)",
+      "residence": [
+        "Jerusalem (2 Kings 22:1)",
+        "Megiddo, where he dies (2 Kings 23:29)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Kings",
+        "1 Kings",
+        "Matthew",
+        "1 Chronicles"
+      ],
+      "key_verses": [
+        "1 Kings 13:2",
+        "2 Kings 22:1",
+        "2 Kings 22:8",
+        "2 Kings 22:14",
+        "2 Kings 23:3",
+        "2 Kings 23:15",
+        "2 Kings 23:21",
+        "2 Kings 23:22",
+        "2 Kings 23:25",
+        "2 Kings 23:29",
+        "2 Kings 23:30",
+        "1 Chronicles 3:15",
+        "2 Kings 23:34",
+        "2 Kings 24:17"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-kings-manasseh-amon-and-josiah",
+          "title": "Manasseh, Amon and Josiah",
+          "passage": "2 Kings 21:1 - 23:30",
+          "route": "#stories/2-kings/manasseh-amon-and-josiah"
+        },
+        {
+          "story_id": "1-kings-the-man-of-god-from-judah",
+          "title": "The Man of God from Judah",
+          "passage": "1 Kings 13:1 - 14:31",
+          "route": "#stories/1-kings/the-man-of-god-from-judah"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "josiah_1730",
+      "reference_id": "recNOn1RcB3sCzCnh",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "children",
+          "label": "Zedekiah",
+          "profile_id": "zedekiah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "abner",
+    "name": "Abner",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Ner's son and commander of Saul's army. First Samuel 14:50–51 supplies the family wording; this profile does not call Abner Saul's uncle. After Saul dies, Abner makes Ish-bosheth king at Mahanaim and leads his forces against David's men. During the fighting at Gibeon, he twice warns Asahel to stop pursuing him, then kills him with his spear. He quarrels with Ish-bosheth over Rizpah and offers to bring Israel over to David. David receives him at Hebron. Joab kills him at the gate; the account gives revenge for Asahel as the reason. David mourns publicly and walks behind his body.",
+    "lineage": {
+      "parents": [
+        "Ner"
+      ]
+    },
+    "geography": {
+      "origin": "Israel, in Saul's family (1 Samuel 14:50)",
+      "residence": [
+        "Mahanaim (2 Samuel 2:8)",
+        "Hebron (2 Samuel 3:20)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Samuel",
+        "2 Samuel"
+      ],
+      "key_verses": [
+        "1 Samuel 14:50",
+        "1 Samuel 14:51",
+        "2 Samuel 2:8",
+        "2 Samuel 2:23",
+        "2 Samuel 3:7",
+        "2 Samuel 3:12",
+        "2 Samuel 3:27",
+        "2 Samuel 3:33"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-samuel-david-becomes-king",
+          "title": "David Becomes King",
+          "passage": "2 Samuel 1:1 - 5:5",
+          "route": "#stories/2-samuel/david-becomes-king"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "abner_57",
+      "reference_id": "recX02UfwuM8OP0p3",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "adonijah",
+    "name": "Adonijah",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "David's fourth son, born to Haggith after Absalom. As David ages, Adonijah declares he will be king, with chariots and fifty runners. Joab and Abiathar support him, and he holds a feast at En-rogel. Nathan and Bathsheba urge David to name Solomon. Adonijah flees to the altar and is spared on condition of good conduct. After David's death, he asks Bathsheba to request Abishag as his wife. Solomon sends Benaiah to kill him. This profile adds no hidden motive for Adonijah's request.",
+    "lineage": {
+      "parents": [
+        "David",
+        "Haggith"
+      ],
+      "siblings": [
+        "Absalom",
+        "Solomon"
+      ]
+    },
+    "geography": {
+      "origin": "Hebron, born to David (2 Samuel 3:4)",
+      "residence": [
+        "Jerusalem (1 Kings 1:5)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel",
+        "1 Kings"
+      ],
+      "key_verses": [
+        "2 Samuel 3:4",
+        "1 Kings 1:5",
+        "1 Kings 1:6",
+        "1 Kings 1:7",
+        "1 Kings 1:9",
+        "1 Kings 1:50",
+        "1 Kings 1:53",
+        "1 Kings 2:17",
+        "1 Kings 2:25"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-kings-solomon-becomes-king",
+          "title": "Solomon Becomes King",
+          "passage": "1 Kings 1:1 - 2:46",
+          "route": "#stories/1-kings/solomon-becomes-king"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "adonijah_97",
+      "reference_id": "recMIpVUk92YKxyNs",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "David",
+          "profile_id": "david"
+        },
+        {
+          "relation": "siblings",
+          "label": "Absalom",
+          "profile_id": "absalom"
+        },
+        {
+          "relation": "siblings",
+          "label": "Solomon",
+          "profile_id": "solomon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "amnon",
+    "name": "Amnon",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "David's firstborn son, born at Hebron to Ahinoam. Second Samuel describes his desire for his half-sister Tamar and his distress. Following Jonadab's advice, he pretends to be ill and asks Tamar to bring food. He rapes her, then the account says his hatred exceeds his earlier desire. He has her thrown out. David is very angry, but this episode reports no action by him. Two years later, Absalom orders his servants to kill Amnon during a sheep-shearing feast while Amnon is drinking wine.",
+    "lineage": {
+      "parents": [
+        "David",
+        "Ahinoam the Jezreelitess"
+      ],
+      "siblings": [
+        "Absalom",
+        "Tamar, daughter of David"
+      ]
+    },
+    "geography": {
+      "origin": "Hebron, born to David (2 Samuel 3:2)",
+      "residence": [
+        "Jerusalem (2 Samuel 13:7)",
+        "Baal-hazor, where he is killed (2 Samuel 13:23)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel"
+      ],
+      "key_verses": [
+        "2 Samuel 3:2",
+        "2 Samuel 13:1",
+        "2 Samuel 13:3",
+        "2 Samuel 13:14",
+        "2 Samuel 13:15",
+        "2 Samuel 13:21",
+        "2 Samuel 13:28",
+        "2 Samuel 13:29"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-samuel-amnon-tamar-and-absalom",
+          "title": "Amnon, Tamar and Absalom",
+          "passage": "2 Samuel 13:1 - 14:33",
+          "route": "#stories/2-samuel/amnon-tamar-and-absalom"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "amnon_232",
+      "reference_id": "rec894DFEhD0nzF6w",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "David",
+          "profile_id": "david"
+        },
+        {
+          "relation": "siblings",
+          "label": "Absalom",
+          "profile_id": "absalom"
+        },
+        {
+          "relation": "siblings",
+          "label": "Tamar, daughter of David",
+          "profile_id": "tamar-daughter-of-david"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tamar-daughter-of-david",
+    "name": "Tamar, daughter of David",
+    "sex": "female",
+    "era": "Monarchy",
+    "summary": "David's daughter and Absalom's sister, whom Second Samuel describes as beautiful. She wears the special garment of the king's unmarried daughters. David sends her to prepare food for Amnon. She begs Amnon not to force her and says he could ask the king for her. Amnon rapes her and throws her out. She tears her garment, puts ashes on her head and cries aloud. Absalom takes her in, and the account describes her remaining desolate in his house. She is distinct from Judah's daughter-in-law and from Absalom's daughter Tamar in 2 Samuel 14:27.",
+    "lineage": {
+      "parents": [
+        "David"
+      ],
+      "siblings": [
+        "Absalom",
+        "Amnon"
+      ]
+    },
+    "geography": {
+      "origin": "Jerusalem, in the king's house (2 Samuel 13:7)",
+      "residence": [
+        "Absalom's house (2 Samuel 13:20)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel"
+      ],
+      "key_verses": [
+        "2 Samuel 13:1",
+        "2 Samuel 13:2",
+        "2 Samuel 13:7",
+        "2 Samuel 13:12",
+        "2 Samuel 13:13",
+        "2 Samuel 13:19",
+        "2 Samuel 13:20",
+        "2 Samuel 14:27"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-samuel-amnon-tamar-and-absalom",
+          "title": "Amnon, Tamar and Absalom",
+          "passage": "2 Samuel 13:1 - 14:33",
+          "route": "#stories/2-samuel/amnon-tamar-and-absalom"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "tamar_2822",
+      "reference_id": "recWfXI5GaLhZTDeT",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "David",
+          "profile_id": "david"
+        },
+        {
+          "relation": "siblings",
+          "label": "Absalom",
+          "profile_id": "absalom"
+        },
+        {
+          "relation": "siblings",
+          "label": "Amnon",
+          "profile_id": "amnon"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,769 @@
+[
+  {
+    "id": "stephen",
+    "name": "Stephen",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "One of seven chosen in Acts to help distribute food to widows among Greek-speaking disciples. The language description does not assign a modern nationality. Acts describes him as full of faith, the Holy Spirit and power, and doing wonders. Men from several synagogues dispute with him and accuse him of speaking against the temple and law. His defence retells Israel's history and accuses his hearers of resisting the Holy Spirit. Acts describes him seeing Jesus at God's right hand. He is stoned outside the city while praying, “Lord Jesus, receive my spirit”, and asking forgiveness for his attackers. Saul approves his death.",
+    "geography": {
+      "origin": "Not stated; chosen at Jerusalem (Acts 6:5)",
+      "residence": [
+        "Jerusalem (Acts 6:8-12)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 6:5",
+        "Acts 6:8",
+        "Acts 6:9",
+        "Acts 7:55",
+        "Acts 7:59",
+        "Acts 7:60",
+        "Acts 8:1",
+        "Acts 11:19"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-stephen",
+          "title": "Stephen",
+          "passage": "Acts 6:1 - 7:60",
+          "route": "#stories/acts/stephen"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "stephen_2802",
+      "reference_id": "recUipM9EEsnFSZI0",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "barnabas",
+    "name": "Barnabas",
+    "sex": "male",
+    "era": "Apostolic",
+    "aliases": [
+      "Joses",
+      "Son of consolation"
+    ],
+    "summary": "Joses, a Levite from Cyprus, whom the apostles call Barnabas. Acts 4:36 explains the name as “The son of consolation”, or encouragement. He sells land and gives the money to the apostles. He introduces Saul to the apostles and supports his account of preaching in Damascus. Sent to Antioch, he welcomes what Acts calls God's grace. Acts praises his character, faith and fullness of the Holy Spirit. He brings Saul from Tarsus, and Antioch's church sends them on a journey. Later, he wants John Mark to join them. A sharp dispute with Paul separates them; Barnabas sails to Cyprus with Mark.",
+    "lineage": {
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Cyprus (Acts 4:36)",
+      "residence": [
+        "Jerusalem (Acts 4:37)",
+        "Antioch (Acts 11:22-26)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 4:36",
+        "Acts 4:37",
+        "Acts 9:27",
+        "Acts 11:24",
+        "Acts 13:1",
+        "Acts 13:2",
+        "Acts 15:37",
+        "Acts 15:39"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-ananias-and-sapphira",
+          "title": "Ananias and Sapphira",
+          "passage": "Acts 4:32 - 5:11",
+          "route": "#stories/acts/ananias-and-sapphira"
+        },
+        {
+          "story_id": "acts-saul-s-conversion",
+          "title": "Saul's Conversion",
+          "passage": "Acts 9:1 - 9:31",
+          "route": "#stories/acts/saul-s-conversion"
+        },
+        {
+          "story_id": "acts-paul-s-first-journey",
+          "title": "Paul's First Journey",
+          "passage": "Acts 13:1 - 14:28",
+          "route": "#stories/acts/paul-s-first-journey"
+        },
+        {
+          "story_id": "acts-the-jerusalem-council",
+          "title": "The Jerusalem Council",
+          "passage": "Acts 15:1 - 15:35",
+          "route": "#stories/acts/the-jerusalem-council"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "barnabas_1722",
+      "reference_id": "recUA9Fc2yoNk8c5d",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "philip-the-evangelist",
+    "name": "Philip the evangelist",
+    "sex": "male",
+    "era": "Apostolic",
+    "aliases": [
+      "Philip"
+    ],
+    "summary": "One of the seven chosen with Stephen at Jerusalem. After the persecution following Stephen's death, Acts describes Philip preaching Christ in Samaria, where men and women are baptized. An angel directs him toward Gaza. He meets an Ethiopian officer reading Isaiah, explains the passage and baptizes him. Acts then describes Philip being carried away and found at Azotus. He preaches along the coast to Caesarea. Years later, Paul's group stays at his home there, where he has four unmarried daughters who prophesy. This profile is separate from Philip the apostle.",
+    "lineage": {
+      "children": [
+        "Four daughters who prophesied (unnamed)"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated; chosen at Jerusalem (Acts 6:5)",
+      "residence": [
+        "Samaria (Acts 8:5)",
+        "Caesarea (Acts 21:8)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 6:5",
+        "Acts 8:5",
+        "Acts 8:12",
+        "Acts 8:30",
+        "Acts 8:40",
+        "Acts 21:8",
+        "Acts 21:9"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-stephen",
+          "title": "Stephen",
+          "passage": "Acts 6:1 - 7:60",
+          "route": "#stories/acts/stephen"
+        },
+        {
+          "story_id": "acts-philip-and-the-ethiopian",
+          "title": "Philip and the Ethiopian",
+          "passage": "Acts 8:1 - 8:40",
+          "route": "#stories/acts/philip-and-the-ethiopian"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "philip_2347",
+      "reference_id": "recNsU6uPfTysNEKM",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "cornelius",
+    "name": "Cornelius",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "A Roman officer in the Italian unit at Caesarea. Acts describes him and his household as devoted to God, with Cornelius giving to the poor and praying often. It describes an angel telling him to send for Peter at Joppa while Peter has a vision. Cornelius gathers relatives and close friends. Acts says the Holy Spirit comes upon those listening to Peter. Peter directs their baptism and stays at their request. Later, Peter explains the visit in Jerusalem. In Acts 11:18, his listeners conclude that God has granted life-giving repentance to non-Jews.",
+    "geography": {
+      "origin": "Not stated; a Roman centurion (Acts 10:1)",
+      "residence": [
+        "Caesarea (Acts 10:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 10:1",
+        "Acts 10:2",
+        "Acts 10:22",
+        "Acts 10:44",
+        "Acts 10:48",
+        "Acts 11:18"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-peter-cornelius-and-the-gentiles",
+          "title": "Peter, Cornelius and the Gentiles",
+          "passage": "Acts 10:1 - 11:18",
+          "route": "#stories/acts/peter-cornelius-and-the-gentiles"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "cornelius_956",
+      "reference_id": "recq0lOFoVY6zUYkV",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "silas",
+    "name": "Silas",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "A leader in Jerusalem's church, sent with Judas Barsabas to bring its council's letter to Antioch. Acts describes him as a prophet who encourages the believers. After Paul's dispute with Barnabas, Paul chooses Silas as a companion. At Philippi, they are beaten and jailed. Acts describes them praying and singing at midnight before an earthquake. Silas stays with Timothy at Berea and later rejoins Paul at Corinth. Letters name Silvanus with Paul and Timothy and mention his preaching among the Corinthians. The proposed Silas/Silvanus link remains qualified; the name forms alone do not prove it.",
+    "geography": {
+      "origin": "Jerusalem church (Acts 15:22)",
+      "residence": [
+        "Jerusalem (Acts 15:22)",
+        "Antioch (Acts 15:32)",
+        "Philippi (Acts 16:19)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts",
+        "2 Corinthians"
+      ],
+      "key_verses": [
+        "Acts 15:22",
+        "Acts 15:32",
+        "Acts 16:19",
+        "Acts 16:25",
+        "Acts 17:14",
+        "Acts 18:5",
+        "2 Corinthians 1:19"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-the-jerusalem-council",
+          "title": "The Jerusalem Council",
+          "passage": "Acts 15:1 - 15:35",
+          "route": "#stories/acts/the-jerusalem-council"
+        },
+        {
+          "story_id": "acts-paul-in-philippi",
+          "title": "Paul in Philippi",
+          "passage": "Acts 16:1 - 16:40",
+          "route": "#stories/acts/paul-in-philippi"
+        },
+        {
+          "story_id": "acts-thessalonica-athens-and-corinth",
+          "title": "Thessalonica, Athens and Corinth",
+          "passage": "Acts 17:1 - 18:28",
+          "route": "#stories/acts/thessalonica-athens-and-corinth"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "silas_2740",
+      "reference_id": "recSo7V3yW4zpZBLM",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "timothy",
+    "name": "Timothy",
+    "sex": "male",
+    "era": "Apostolic",
+    "aliases": [
+      "Timotheus"
+    ],
+    "summary": "A disciple whom Acts introduces at Lystra, without stating his birthplace. His mother is a Jewish believer and his father is Greek. Local believers speak well of him. Paul takes him along and circumcises him because of the Jews in that region. He stays with Silas at Berea, rejoins Paul at Corinth and travels into Asia. Paul's letters call him his son in faith and recall the faith of Lois, his grandmother, and Eunice, his mother. First Timothy 1:3 places him at Ephesus. His father's name is not supplied here.",
+    "lineage": {
+      "parents": [
+        "Eunice"
+      ]
+    },
+    "geography": {
+      "origin": "Birthplace not stated; Acts 16:1 introduces him at Lystra.",
+      "residence": [
+        "Lystra (Acts 16:1)",
+        "Ephesus (1 Timothy 1:3)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts",
+        "1 Timothy",
+        "2 Timothy"
+      ],
+      "key_verses": [
+        "Acts 16:1",
+        "Acts 16:3",
+        "Acts 17:14",
+        "Acts 18:5",
+        "Acts 20:4",
+        "1 Timothy 1:2",
+        "2 Timothy 1:5",
+        "1 Timothy 1:3"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-paul-in-philippi",
+          "title": "Paul in Philippi",
+          "passage": "Acts 16:1 - 16:40",
+          "route": "#stories/acts/paul-in-philippi"
+        },
+        {
+          "story_id": "acts-thessalonica-athens-and-corinth",
+          "title": "Thessalonica, Athens and Corinth",
+          "passage": "Acts 17:1 - 18:28",
+          "route": "#stories/acts/thessalonica-athens-and-corinth"
+        },
+        {
+          "story_id": "acts-ephesus",
+          "title": "Ephesus",
+          "passage": "Acts 19:1 - 20:38",
+          "route": "#stories/acts/ephesus"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "timotheus_2863",
+      "reference_id": "recIRlDcRDv2MBfxW",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "apollos",
+    "name": "Apollos",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "A Jew born in Alexandria, described in Acts as a skilled speaker with strong knowledge of scripture. He teaches in Ephesus while knowing only John's baptism. Aquila and Priscilla explain God's way to him more fully. With letters from the believers, he goes to Achaia and helps those who believe. In First Corinthians, Paul writes, “I have planted, Apollos watered; but God gave the increase”. A later letter asks that Apollos and Zenas receive help for their journey. No claim about authorship of Hebrews is made here.",
+    "geography": {
+      "origin": "Alexandria (Acts 18:24)",
+      "residence": [
+        "Ephesus (Acts 18:24)",
+        "Corinth (Acts 19:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts",
+        "1 Corinthians",
+        "Titus"
+      ],
+      "key_verses": [
+        "Acts 18:24",
+        "Acts 18:26",
+        "Acts 18:27",
+        "Acts 19:1",
+        "1 Corinthians 3:6",
+        "Titus 3:13"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-thessalonica-athens-and-corinth",
+          "title": "Thessalonica, Athens and Corinth",
+          "passage": "Acts 17:1 - 18:28",
+          "route": "#stories/acts/thessalonica-athens-and-corinth"
+        },
+        {
+          "story_id": "acts-ephesus",
+          "title": "Ephesus",
+          "passage": "Acts 19:1 - 20:38",
+          "route": "#stories/acts/ephesus"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "apollos_276",
+      "reference_id": "recoxUPwUPGU1IP9X",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "priscilla",
+    "name": "Priscilla",
+    "sex": "female",
+    "era": "Apostolic",
+    "aliases": [
+      "Prisca"
+    ],
+    "summary": "Aquila's wife, who leaves Italy with him after Claudius orders Jews to leave Rome. Acts 18:2 names Aquila as Jewish without expressly saying this about Priscilla. At Corinth, they welcome Paul and work with him making tents. They travel with Paul to Ephesus, where they explain God's way more fully to Apollos. Paul calls them his helpers, and a church meets in their house. Her name appears before or after Aquila's in different passages. Second Timothy 4:19 uses Prisca.",
+    "lineage": {
+      "spouses": [
+        "Aquila"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated; recently come from Italy (Acts 18:2)",
+      "residence": [
+        "Rome (Acts 18:2)",
+        "Corinth (Acts 18:3)",
+        "Ephesus (Acts 18:18-19)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts",
+        "Romans",
+        "1 Corinthians",
+        "2 Timothy"
+      ],
+      "key_verses": [
+        "Acts 18:2",
+        "Acts 18:3",
+        "Acts 18:18",
+        "Acts 18:26",
+        "Romans 16:3",
+        "1 Corinthians 16:19",
+        "2 Timothy 4:19"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-thessalonica-athens-and-corinth",
+          "title": "Thessalonica, Athens and Corinth",
+          "passage": "Acts 17:1 - 18:28",
+          "route": "#stories/acts/thessalonica-athens-and-corinth"
+        },
+        {
+          "story_id": "acts-ephesus",
+          "title": "Ephesus",
+          "passage": "Acts 19:1 - 20:38",
+          "route": "#stories/acts/ephesus"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "priscilla_2370",
+      "reference_id": "recOpU2GjcCC2kTg9",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Aquila",
+          "profile_id": "aquila"
+        }
+      ]
+    }
+  },
+  {
+    "id": "aquila",
+    "name": "Aquila",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "A Jew born in Pontus, who arrives from Italy with Priscilla after Claudius's decree. Acts says he shares Paul's trade, and they make tents together at Corinth. He travels with Paul to Ephesus and joins Priscilla in teaching Apollos. Paul calls the pair his helpers and sends greetings “with the church that is in their house”. These passages do not give the date or circumstances of their conversion.",
+    "lineage": {
+      "spouses": [
+        "Priscilla"
+      ]
+    },
+    "geography": {
+      "origin": "Pontus (Acts 18:2)",
+      "residence": [
+        "Rome (Acts 18:2)",
+        "Corinth (Acts 18:3)",
+        "Ephesus (Acts 18:18-19)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts",
+        "Romans",
+        "1 Corinthians"
+      ],
+      "key_verses": [
+        "Acts 18:2",
+        "Acts 18:3",
+        "Acts 18:18",
+        "Acts 18:26",
+        "Romans 16:3",
+        "1 Corinthians 16:19"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-thessalonica-athens-and-corinth",
+          "title": "Thessalonica, Athens and Corinth",
+          "passage": "Acts 17:1 - 18:28",
+          "route": "#stories/acts/thessalonica-athens-and-corinth"
+        },
+        {
+          "story_id": "acts-ephesus",
+          "title": "Ephesus",
+          "passage": "Acts 19:1 - 20:38",
+          "route": "#stories/acts/ephesus"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "aquila_279",
+      "reference_id": "rec5L6bAZR3j8fYAE",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Priscilla",
+          "profile_id": "priscilla"
+        }
+      ]
+    }
+  },
+  {
+    "id": "gamaliel",
+    "name": "Gamaliel",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "A Pharisee and law teacher whom Acts describes as widely respected. During the apostles' trial, he asks that they leave briefly and warns the council to act carefully. He argues that a human movement will fail, while a movement from God cannot be overthrown. Opposing it could mean fighting God. The council agrees, but has the apostles beaten and forbids speaking in Jesus' name. Paul later says Gamaliel taught him. Acts does not say this advice means Gamaliel joined the movement. He is distinct from the Gamaliel in Numbers.",
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Jerusalem (Acts 5:34)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 5:34",
+        "Acts 5:38",
+        "Acts 5:39",
+        "Acts 22:3"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-the-lame-man-healed-and-arrest-of-peter-and-john",
+          "title": "The Lame Man Healed and Arrest of Peter and John",
+          "passage": "Acts 3:1 - 4:31",
+          "route": "#stories/acts/the-lame-man-healed-and-arrest-of-peter-and-john"
+        },
+        {
+          "story_id": "acts-ananias-and-sapphira",
+          "title": "Ananias and Sapphira",
+          "passage": "Acts 4:32 - 5:11",
+          "route": "#stories/acts/ananias-and-sapphira"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "gamaliel_1277",
+      "reference_id": "reciIAjF1PRn4qPbM",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "lydia",
+    "name": "Lydia",
+    "sex": "female",
+    "era": "Apostolic",
+    "summary": "A seller of purple goods from Thyatira who worships God. She hears Paul at a riverside prayer gathering outside Philippi. Acts says the Lord opens her heart to his words. She and her household are baptized, and she urges Paul's group to stay at her house. After prison, Paul and Silas return there to meet and comfort the believers. The account does not state her marital status, wealth or household members' ages.",
+    "geography": {
+      "origin": "Thyatira (Acts 16:14)",
+      "residence": [
+        "Philippi (Acts 16:12-15)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 16:14",
+        "Acts 16:15",
+        "Acts 16:40"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-paul-in-philippi",
+          "title": "Paul in Philippi",
+          "passage": "Acts 16:1 - 16:40",
+          "route": "#stories/acts/paul-in-philippi"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "lydia_1837",
+      "reference_id": "recL7FKDcTneTvG5r",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "felix",
+    "name": "Felix",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "The Roman governor to whom Paul is sent under guard from Jerusalem to Caesarea. He hears the high priest's accusation and Paul's reply. Acts describes his knowledge of the movement and his delay until Lysias can come. He and his Jewish wife Drusilla hear Paul discuss faith in Christ. Paul speaks about right conduct, self-control and coming judgment. Felix becomes afraid and sends him away. Acts 24:26 also says he hopes Paul will offer money. Two years later, Festus replaces him. Acts says Felix leaves Paul imprisoned to please the Jewish leaders.",
+    "lineage": {
+      "spouses": [
+        "Drusilla"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Caesarea (Acts 23:24)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 23:24",
+        "Acts 23:26",
+        "Acts 24:22",
+        "Acts 24:24",
+        "Acts 24:25",
+        "Acts 24:27"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-paul-arrested-in-jerusalem",
+          "title": "Paul Arrested in Jerusalem",
+          "passage": "Acts 21:1 - 23:35",
+          "route": "#stories/acts/paul-arrested-in-jerusalem"
+        },
+        {
+          "story_id": "acts-paul-before-felix-festus-and-agrippa",
+          "title": "Paul Before Felix, Festus and Agrippa",
+          "passage": "Acts 24:1 - 26:32",
+          "route": "#stories/acts/paul-before-felix-festus-and-agrippa"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "felix_1257",
+      "reference_id": "recSRPfTSaf7TsRiN",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "festus",
+    "name": "Festus",
+    "sex": "male",
+    "era": "Apostolic",
+    "aliases": [
+      "Porcius Festus"
+    ],
+    "summary": "Porcius Festus, named in Acts 24:27 as Felix's successor. Three days after arriving, he visits Jerusalem. Leaders ask him to bring Paul there, while planning an ambush. Festus holds the hearing at Caesarea. Acts says he wishes to please the leaders when he asks Paul about a Jerusalem trial. Paul appeals to Caesar. After consulting his council, Festus grants the appeal. He later presents the case to visiting King Agrippa so he can decide what to write.",
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Caesarea (Acts 25:1)",
+        "Jerusalem (Acts 25:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 24:27",
+        "Acts 25:1",
+        "Acts 25:9",
+        "Acts 25:12",
+        "Acts 25:13"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-paul-before-felix-festus-and-agrippa",
+          "title": "Paul Before Felix, Festus and Agrippa",
+          "passage": "Acts 24:1 - 26:32",
+          "route": "#stories/acts/paul-before-felix-festus-and-agrippa"
+        },
+        {
+          "story_id": "acts-shipwreck-and-rome",
+          "title": "Shipwreck and Rome",
+          "passage": "Acts 27:1 - 28:31",
+          "route": "#stories/acts/shipwreck-and-rome"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "portius_2367",
+      "reference_id": "reckKYeZ5P0KFuSkB",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "agrippa-ii",
+    "name": "Agrippa",
+    "sex": "male",
+    "era": "Apostolic",
+    "aliases": [
+      "King Agrippa"
+    ],
+    "summary": "A king whom Acts calls Agrippa, visiting Caesarea with Bernice to greet Festus. He allows Paul to speak. Paul describes his earlier life as a Pharisee, persecution of the church and vision near Damascus. Paul asks, “King Agrippa, believest thou the prophets? I know that thou believest”. Agrippa replies, “Almost thou persuadest me to be a Christian”. He and Festus agree that Paul has done nothing deserving death or imprisonment. Agrippa says Paul could have been freed without his appeal to Caesar. Acts does not give the fuller historical name Herod Agrippa II in this account.",
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Caesarea (Acts 25:13)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 25:13",
+        "Acts 26:1",
+        "Acts 26:27",
+        "Acts 26:28"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-paul-before-felix-festus-and-agrippa",
+          "title": "Paul Before Felix, Festus and Agrippa",
+          "passage": "Acts 24:1 - 26:32",
+          "route": "#stories/acts/paul-before-felix-festus-and-agrippa"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "agrippa_111",
+      "reference_id": "recMxoVUt13ExT48g",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  }
+]

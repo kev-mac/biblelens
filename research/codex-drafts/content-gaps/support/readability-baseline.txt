@@ -1,0 +1,21 @@
+
+> scripture-lens@1.1.0 check:readability
+> node scripts/check-readability.mjs
+
+| Collection | Lines | Average FK grade | Over length limits | Unexplained jargon lines |
+| --- | ---: | ---: | ---: | ---: |
+| Evidence | 6035 | 7.89 | 60.0% (3619) | 3356 |
+| Stories | 276 | 7.76 | 27.9% (77) | 2 |
+| People | 47 | 8.64 | 34.0% (16) | 1 |
+| Explore cards | 8 | 15.52 | 0.0% (0) | 0 |
+
+Evidence — top jargon: Brenton: 3177, manuscript: 2559, Textus Receptus: 1798, Tischendorf: 1779, Septuagint: 1082, witness: 981, ordinal: 8, WLC: 6, harmoniz: 3, calibration: 1
+Stories — top jargon: witness: 2
+People — top jargon: witness: 1
+Explore cards — top jargon: none
+
+Estimated English syllables; each nonempty field line counts once. FK grades are averaged per line.
+Length limits: 20 words per sentence; 15 words per card blurb. Quoted spans are excluded.
+Jargon screening uses the listed terms and same-sentence plain equivalents; review context manually.
+
+Report-only mode: items need review.

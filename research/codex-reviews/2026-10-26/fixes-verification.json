@@ -1,0 +1,4332 @@
+{
+  "date": "2026-10-26",
+  "base_commit": "950586d9fc947f821dfa258545efa83ad11974fe",
+  "draft_input_commit": "f64e37cad5249adb660ab5377acbad2f52e04270",
+  "input_fingerprints_checked": 36,
+  "local": {
+    "stats": {
+      "returnedUnchanged": 13,
+      "evidenceSchema": 49,
+      "characterSchema": 185,
+      "proposedProfiles": 138,
+      "timelineDrafts": 4,
+      "kjvQuotes": 61,
+      "kjvQuoteErrors": 0,
+      "timelineSchema": 4,
+      "EvidenceMeanGrade": 6.341339791099333,
+      "PeopleMeanGrade": 6.289343738017429,
+      "HistoryMeanGrade": 7.8860766365677835,
+      "acceptedInputs": 188,
+      "readyProposals": 187,
+      "profileKeyVerses": 1154,
+      "profileStoryLinks": 326,
+      "profileQuotes": 42,
+      "otherProfileProse": 696
+    },
+    "files": {
+      "genesis-second-pass-records.json": "94cb21f7556a044da33a0556d8a52d4de206edf99171966343494638d3a47604",
+      "ot-remainder-1-second-pass-records.json": "28f6730c5337bc7875fbcf54f2fd930587ca3c5da5025e4ca2dee095db2c070a",
+      "ot-remainder-2-second-pass-records.json": "8eba20dfcd3eaf90754e827bed09ddf0f1fdcf22a6d6a9fafb16aa1fde0ee812",
+      "esther-second-pass-records.json": "3d64d9d60ad4325e46f02b37519d14ab02631dea0d5c60941c6527d7fb81661c",
+      "2-corinthians-second-pass-records.json": "7be2fcdd8af3c5e010612fe3a0ceff4e2d230d7e739728927bd234a6a1055142",
+      "ecclesiastes-second-pass-records.json": "7473423018487cb6340fce47090e8219a7a3424f79414269d3a8af73f9f8945e",
+      "song-of-solomon-second-pass-records.json": "170b271cf0900b62dde639a07f6722aa82e9279284ee577713d010d259681511",
+      "exodus-wilderness-characters-records.json": "b7888eb2b13b7828db97294b5919442397a26864fb5450af37b8926264212d18",
+      "joshua-ruth-characters-records.json": "eb8c71e34d39e234d2d0cecdb9a90740940eb7ee8626a1a51493c31af673b0ad",
+      "samuel-kings-characters-records.json": "660f2fa47510f2f9fb7b7efcc5f4841738d758dcf1f872e9f8145a0e5e3041c4",
+      "kings-characters-records.json": "4abca9c79c63dc8ee91bc591cec3a4d0eba8f997ed1c3d784bf6b1a685f6c900",
+      "ezra-daniel-characters-records.json": "2cca62a8883ea0cd7f0a387ac32be4cbb865eeb18cccdabd9d8e88c1013a744a",
+      "prophets-job-characters-records.json": "6565424d347ae75b3232395c5479013482385aa9f39106c09182064dab2bba45",
+      "gospels-characters-records.json": "a22312e22b42c1c238a1653ea201329eaa440a517a16d7692976c9b7e39fc66e",
+      "acts-characters-records.json": "63f6a2d63e3e37ebcd32d0d50c787760ef76e3480af2406bb7a99bd0e2a553ec",
+      "gospel-remainder-characters-records.json": "303d5c869484f56f1c8dca9426d81a81914f087249ae8680c4a586cdab239e7d",
+      "acts-remainder-characters-records.json": "04e8c7ee354cc6d2269a198d38485a497f49bfc266badeea91fcebf635a5600b",
+      "academic-cards-records.json": "7723700ebe41e7d589ceeffd1b3c32411c48860cc2d96504e676e8032c582b50"
+    },
+    "kjv": [
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "ref": "Genesis 13:1",
+        "quote": "into the south.",
+        "pass": true
+      },
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "ref": "Genesis 13:3",
+        "quote": "from the south even to Bethel",
+        "pass": true
+      },
+      {
+        "id": "lot-dwelt-in-the-cities-of-the-plain-toward-sodom-or-a-city-in-sodom-genesis-13-12",
+        "ref": "Genesis 13:12",
+        "quote": "Lot dwelled in the cities of the plain, and pitched his tent toward Sodom.",
+        "pass": true
+      },
+      {
+        "id": "abram-seed-as-the-dust-of-the-earth-or-the-sand-of-the-earth-genesis-13-16",
+        "ref": "Genesis 13:16",
+        "quote": "I will make thy seed as the dust of the earth: so that if a man can number the dust of the earth",
+        "pass": true
+      },
+      {
+        "id": "plain-of-mamre-or-oaks-of-mamre-genesis-13-18",
+        "ref": "Genesis 13:18",
+        "quote": "dwelt in the plain of Mamre",
+        "pass": true
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "ref": "Genesis 27:29",
+        "quote": "let thy mother's sons bow down to thee",
+        "pass": true
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "ref": "Genesis 27:29",
+        "quote": "Let people serve thee, and nations bow down to thee",
+        "pass": true
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "ref": "Genesis 38:12",
+        "quote": "his friend Hirah the Adullamite",
+        "pass": true
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "ref": "Genesis 38:20",
+        "quote": "by the hand of his friend the Adullamite",
+        "pass": true
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "ref": "Genesis 38:14",
+        "quote": "sat in an open place, which is by the way to Timnath",
+        "pass": true
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "ref": "Genesis 38:21",
+        "quote": "openly by the way side",
+        "pass": true
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "ref": "Genesis 40:3",
+        "quote": "in ward in the house of the captain of the guard, into the prison",
+        "pass": true
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "ref": "Genesis 40:4",
+        "quote": "the captain of the guard charged Joseph with them",
+        "pass": true
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "ref": "Genesis 42:9",
+        "quote": "to see the nakedness of the land ye are come",
+        "pass": true
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "ref": "Genesis 42:12",
+        "quote": "to see the nakedness of the land ye are come",
+        "pass": true
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "ref": "Genesis 42:11",
+        "quote": "we are true men",
+        "pass": true
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "ref": "Genesis 42:34",
+        "quote": "that ye are true men",
+        "pass": true
+      },
+      {
+        "id": "joseph-asks-after-jacob-greek-adds-blessed-be-that-man-genesis-43-28",
+        "ref": "Genesis 43:28",
+        "quote": "Thy servant our father is in good health, he is yet alive.",
+        "pass": true
+      },
+      {
+        "id": "the-slayer-at-the-gate-of-the-city-or-no-such-verses-joshua-20-4-6-greek",
+        "ref": "Joshua 20:4–6",
+        "quote": "And when he that doth flee unto one of those cities shall stand at the entering of the gate of the city, and shall declare his cause in the ears of the elders of that city, they shall take him into the city unto them, and give him a place, that he may dwell among them. And if the avenger of blood pursue after him, then they shall not deliver the slayer up into his hand; because he smote his neighbour unwittingly, and hated him not beforetime. And he shall dwell in that city, until he stand before the congregation for judgment, and until the death of the high priest that shall be in those days: then shall the slayer return, and come unto his own city, and unto his own house, unto the city from whence he fled.",
+        "pass": true
+      },
+      {
+        "id": "buried-in-one-of-the-cities-of-gilead-or-in-his-city-gilead-judges-12-7-greek",
+        "ref": "Judges 12:7",
+        "quote": "And Jephthah judged Israel six years. Then died Jephthah the Gileadite, and was buried in one of the cities of Gilead.",
+        "pass": true
+      },
+      {
+        "id": "ten-shekels-by-the-year-or-ten-of-silver-a-day-judges-17-10-greek",
+        "ref": "Judges 17:10",
+        "quote": "And Micah said unto him, Dwell with me, and be unto me a father and a priest, and I will give thee ten shekels of silver by the year, and a suit of apparel, and thy victuals. So the Levite went in.",
+        "pass": true
+      },
+      {
+        "id": "an-house-of-gods-or-a-house-of-god-judges-17-5-greek",
+        "ref": "Judges 17:5",
+        "quote": "And the man Micah had an house of gods, and made an ephod, and teraphim, and consecrated one of his sons, who became his priest.",
+        "pass": true
+      },
+      {
+        "id": "the-lord-hath-testified-against-me-or-the-lord-humbled-me-ruth-1-21-greek",
+        "ref": "Ruth 1:21",
+        "quote": "I went out full and the Lord hath brought me home again empty: why then call ye me Naomi, seeing the Lord hath testified against me, and the Almighty hath afflicted me?",
+        "pass": true
+      },
+      {
+        "id": "perfect-peace-and-at-such-a-time-or-let-the-word-and-answer-be-completed-ezra-7-12-greek",
+        "ref": "Ezra 7:12",
+        "quote": "Artaxerxes, king of kings, unto Ezra the priest, a scribe of the law of the God of heaven, perfect peace, and at such a time.",
+        "pass": true
+      },
+      {
+        "id": "banishment-or-chastisement-ezra-7-26-greek",
+        "ref": "Ezra 7:26",
+        "quote": "And whosoever will not do the law of thy God, and the law of the king, let judgment be executed speedily upon him, whether it be unto death, or to banishment, or to confiscation of goods, or to imprisonment.",
+        "pass": true
+      },
+      {
+        "id": "our-priests-or-our-children-ezra-9-7-greek",
+        "ref": "Ezra 9:7",
+        "quote": "Since the days of our fathers have we been in a great trespass unto this day; and for our iniquities have we, our kings, and our priests, been delivered into the hand of the kings of the lands, to the sword, to captivity, and to a spoil, and to confusion of face, as it is this day.",
+        "pass": true
+      },
+      {
+        "id": "an-unclean-land-or-a-land-of-removal-ezra-9-11-greek",
+        "ref": "Ezra 9:11",
+        "quote": "Which thou hast commanded by thy servants the prophets, saying, The land, unto which ye go to possess it, is an unclean land with the filthiness of the people of the lands, with their abominations, which have filled it from one end to another with their uncleanness.",
+        "pass": true
+      },
+      {
+        "id": "punished-less-than-deserved-and-would-not-thou-be-angry-ezra-9-13-14-greek",
+        "ref": "Ezra 9:13–14",
+        "quote": "And after all that is come upon us for our evil deeds, and for our great trespass, seeing that thou our God hast punished us less than our iniquities deserve, and hast given us such deliverance as this; Should we again break thy commandments, and join in affinity with the people of these abominations? wouldest not thou be angry with us till thou hadst consumed us, so that there should be no remnant nor escaping?",
+        "pass": true
+      },
+      {
+        "id": "other-men-have-our-lands-or-they-belong-to-the-honourable-nehemiah-5-5-greek",
+        "ref": "Nehemiah 5:5",
+        "quote": "Yet now our flesh is as the flesh of our brethren, our children as their children: and, lo, we bring into bondage our sons and our daughters to be servants, and some of our daughters are brought unto bondage already: neither is it in our power to redeem them; for other men have our lands and vineyards.",
+        "pass": true
+      },
+      {
+        "id": "the-hundredth-part-or-of-the-money-nehemiah-5-11-greek",
+        "ref": "Nehemiah 5:11",
+        "quote": "Restore, I pray you, to them, even this day, their lands, their vineyards, their oliveyards, and their houses, also the hundredth part of the money, and of the corn, the wine, and the oil, that ye exact of them.",
+        "pass": true
+      },
+      {
+        "id": "bread-of-the-governor-or-bread-of-extortion-nehemiah-5-14-18-greek",
+        "ref": "Nehemiah 5:14, 18",
+        "quote": "Moreover from the time that I was appointed to be their governor in the land of Judah, from the twentieth year even unto the two and thirtieth year of Artaxerxes the king, that is, twelve years, I and my brethren have not eaten the bread of the governor. Now that which was prepared for me daily was one ox and six choice sheep; also fowls were prepared for me, and once in ten days store of all sorts of wine: yet for all this required not I the bread of the governor, because the bondage was heavy upon this people.",
+        "pass": true
+      },
+      {
+        "id": "fowls-or-a-goat-nehemiah-5-18-greek",
+        "ref": "Nehemiah 5:18",
+        "quote": "Now that which was prepared for me daily was one ox and six choice sheep; also fowls were prepared for me, and once in ten days store of all sorts of wine: yet for all this required not I the bread of the governor, because the bondage was heavy upon this people.",
+        "pass": true
+      },
+      {
+        "id": "men-of-tyre-dwelt-therein-not-in-the-greek-nehemiah-13-16",
+        "ref": "Nehemiah 13:16",
+        "quote": "There dwelt men of Tyre also therein, which brought fish, and all manner of ware, and sold on the sabbath unto the children of Judah, and in Jerusalem.",
+        "pass": true
+      },
+      {
+        "id": "or-for-yourselves-not-in-the-greek-nehemiah-13-25",
+        "ref": "Nehemiah 13:25",
+        "quote": "And I contended with them, and cursed them, and smote certain of them, and plucked off their hair, and made them swear by God, saying, Ye shall not give your daughters unto their sons, nor take their daughters unto your sons, or for yourselves.",
+        "pass": true
+      },
+      {
+        "id": "esther-drew-near-and-touched-the-sceptre-or-the-king-laid-it-on-her-neck-esther-5-2-greek",
+        "ref": "Esther 5:2",
+        "quote": "So Esther drew near, and touched the top of the sceptre.",
+        "pass": true
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "ref": "Esther 6:1",
+        "quote": "On that night could not the king sleep",
+        "pass": true
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "ref": "Esther 2:20",
+        "quote": "for Esther did the commandment of Mordecai, like as when she was brought up with him",
+        "pass": true
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "ref": "Esther 4:8",
+        "quote": "to make supplication unto him, and to make request before him for her people",
+        "pass": true
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "ref": "Esther 6:13",
+        "quote": "thou shalt not prevail against him, but shalt surely fall before him",
+        "pass": true
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "ref": "Esther 5:2",
+        "quote": "she obtained favour in his sight",
+        "pass": true
+      },
+      {
+        "id": "which-vail-is-done-away-in-christ-or-because-it-is-done-away-in-christ-2-corinthians-3-14-greek-new-testament",
+        "ref": "2 Corinthians 3:14",
+        "quote": "But their minds were blinded: for until this day remaineth the same vail untaken away in the reading of the old testament; which vail is done away in Christ.",
+        "pass": true
+      },
+      {
+        "id": "our-care-for-you-or-your-care-for-us-2-corinthians-7-12-greek-new-testament",
+        "ref": "2 Corinthians 7:12",
+        "quote": "Wherefore, though I wrote unto you, I did it not for his cause that had done the wrong, nor for his cause that suffered wrong, but that our care for you in the sight of God might appear unto you.",
+        "pass": true
+      },
+      {
+        "id": "we-were-comforted-in-your-comfort-or-in-our-comfort-2-corinthians-7-13-greek-new-testament",
+        "ref": "2 Corinthians 7:13",
+        "quote": "Therefore we were comforted in your comfort: yea, and exceedingly the more joyed we for the joy of Titus, because his spirit was refreshed by you all.",
+        "pass": true
+      },
+      {
+        "id": "whereof-ye-had-notice-before-or-promised-before-2-corinthians-9-5-greek-new-testament",
+        "ref": "2 Corinthians 9:5",
+        "quote": "Therefore I thought it necessary to exhort the brethren, that they would go before unto you, and make up beforehand your bounty, whereof ye had notice before, that the same might be ready, as a matter of bounty, and not as of covetousness.",
+        "pass": true
+      },
+      {
+        "id": "minister-bread-multiply-and-increase-or-will-supply-multiply-and-increase-2-corinthians-9-10-greek-new-testament",
+        "ref": "2 Corinthians 9:10",
+        "quote": "Now he that ministereth seed to the sower both minister bread for your food, and multiply your seed sown, and increase the fruits of your righteousness;)",
+        "pass": true
+      },
+      {
+        "id": "before-the-angel-that-it-was-an-error-or-in-the-presence-of-god-it-was-ignorance-greek",
+        "ref": "Ecclesiastes 5:6",
+        "quote": "Suffer not thy mouth to cause thy flesh to sin; neither say thou before the angel, that it was an error: wherefore should God be angry at thy voice, and destroy the work of thine hands?",
+        "pass": true
+      },
+      {
+        "id": "god-answereth-him-in-the-joy-of-his-heart-or-god-troubles-him-in-the-joy-of-his-heart-greek",
+        "ref": "Ecclesiastes 5:20",
+        "quote": "For he shall not much remember the days of his life; because God answereth him in the joy of his heart.",
+        "pass": true
+      },
+      {
+        "id": "nor-known-any-thing-or-nor-known-rest-greek",
+        "ref": "Ecclesiastes 6:5",
+        "quote": "Moreover he hath not seen the sun, nor known any thing: this hath more rest than the other.",
+        "pass": true
+      },
+      {
+        "id": "a-thousand-years-twice-told-or-the-returns-of-a-thousand-years-greek",
+        "ref": "Ecclesiastes 6:6",
+        "quote": "Yea, though he live a thousand years twice told, yet hath he seen no good: do not all go to one place?",
+        "pass": true
+      },
+      {
+        "id": "a-gift-destroyeth-the-heart-or-oppression-destroys-his-noble-heart-greek",
+        "ref": "Ecclesiastes 7:7",
+        "quote": "Surely oppression maketh a wise man mad; and a gift destroyeth the heart.",
+        "pass": true
+      },
+      {
+        "id": "withdraw-not-thine-hand-or-defile-not-thine-hand-greek",
+        "ref": "Ecclesiastes 7:18",
+        "quote": "It is good that thou shouldest take hold of this; yea, also from this withdraw not thine hand: for he that feareth God shall come forth of them all.",
+        "pass": true
+      },
+      {
+        "id": "walk-in-the-sight-of-thine-eyes-or-walk-blameless-and-not-in-the-sight-of-thine-eyes-greek",
+        "ref": "Ecclesiastes 11:9",
+        "quote": "Rejoice, O young man, in thy youth; and let thy heart cheer thee in the days of thy youth, and walk in the ways of thine heart, and in the sight of thine eyes: but know thou, that for all these things God will bring thee into judgment.",
+        "pass": true
+      },
+      {
+        "id": "childhood-and-youth-are-vanity-or-youth-and-folly-are-vanity-greek",
+        "ref": "Ecclesiastes 11:10",
+        "quote": "Therefore remove sorrow from thy heart, and put away evil from thy flesh: for childhood and youth are vanity.",
+        "pass": true
+      },
+      {
+        "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+        "ref": "Song of Solomon 5:8",
+        "quote": "I charge you, O daughters of Jerusalem, if ye find my beloved, that ye tell him, that I am sick of love.",
+        "pass": true
+      },
+      {
+        "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+        "ref": "Song of Solomon 8:4",
+        "quote": "I charge you, O daughters of Jerusalem, that ye stir not up, nor awake my love, until he please.",
+        "pass": true
+      },
+      {
+        "id": "i-would-instruct-me-in-my-mothers-house-or-into-the-chamber-of-her-that-conceived-me-greek",
+        "ref": "Song of Solomon 8:2",
+        "quote": "I would lead thee, and bring thee into my mother's house, who would instruct me: I would cause thee to drink of spiced wine of the juice of my pomegranate.",
+        "pass": true
+      },
+      {
+        "id": "who-is-this-that-cometh-up-from-the-wilderness-or-who-is-this-that-comes-up-all-white-greek",
+        "ref": "Song of Solomon 8:5",
+        "quote": "Who is this that cometh up from the wilderness, leaning upon her beloved? I raised thee up under the apple tree: there thy mother brought thee forth: there she brought thee forth that bare thee.",
+        "pass": true
+      },
+      {
+        "id": "history-jehu-tribute-shalmaneser",
+        "ref": "2 Kings 10:11",
+        "quote": "So Jehu slew all that remained of the house of Ahab in Jezreel, and all his great men, and his kinsfolks, and his priests, until he left him none remaining.",
+        "pass": true
+      },
+      {
+        "id": "history-esarhaddon-manasseh-tribute",
+        "ref": "2 Chronicles 33:11",
+        "quote": "Wherefore the Lord brought upon them the captains of the host of the king of Assyria, which took Manasseh among the thorns, and bound him with fetters, and carried him to Babylon.",
+        "pass": true
+      },
+      {
+        "id": "history-merodach-baladan-hezekiah-embassy",
+        "ref": "2 Kings 20:12",
+        "quote": "At that time Berodachbaladan, the son of Baladan, king of Babylon, sent letters and a present unto Hezekiah: for he had heard that Hezekiah had been sick.",
+        "pass": true
+      },
+      {
+        "id": "history-nebuchadnezzar-egypt-campaign",
+        "ref": "Ezekiel 29:19",
+        "quote": "Therefore thus saith the Lord God; Behold, I will give the land of Egypt unto Nebuchadrezzar king of Babylon; and he shall take her multitude, and take her spoil, and take her prey; and it shall be the wages for his army.",
+        "pass": true
+      }
+    ],
+    "profileQuotes": [
+      {
+        "id": "zipporah",
+        "quote": "him",
+        "matches": [
+          "Exodus 2:22",
+          "Exodus 4:24",
+          "Exodus 4:26"
+        ],
+        "totalMatches": 5453
+      },
+      {
+        "id": "zipporah",
+        "quote": "bloody husband",
+        "matches": [
+          "Exodus 4:25",
+          "Exodus 4:26"
+        ],
+        "totalMatches": 2
+      },
+      {
+        "id": "othniel",
+        "quote": "younger brother",
+        "matches": [
+          "Judges 3:9"
+        ],
+        "totalMatches": 4
+      },
+      {
+        "id": "eli",
+        "quote": "sons of Belial",
+        "matches": [
+          "1 Samuel 2:12"
+        ],
+        "totalMatches": 4
+      },
+      {
+        "id": "nathan",
+        "quote": "Thou art the man",
+        "matches": [
+          "2 Samuel 12:7"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "absalom",
+        "quote": "O my son Absalom",
+        "matches": [
+          "2 Samuel 18:33"
+        ],
+        "totalMatches": 2
+      },
+      {
+        "id": "rehoboam",
+        "quote": "scorpions",
+        "matches": [
+          "1 Kings 12:11"
+        ],
+        "totalMatches": 9
+      },
+      {
+        "id": "belshazzar",
+        "quote": "Mene, Mene, Tekel, Upharsin",
+        "matches": [
+          "Daniel 5:25"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "isaiah",
+        "quote": "Here am I; send me",
+        "matches": [
+          "Isaiah 6:8"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "ezekiel",
+        "quote": "son of man",
+        "matches": [
+          "Numbers 23:19",
+          "Job 25:6",
+          "Job 35:8"
+        ],
+        "totalMatches": 48
+      },
+      {
+        "id": "amaziah-priest-of-bethel",
+        "quote": "O thou seer",
+        "matches": [
+          "Amos 7:12"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "mary-mother-of-jesus",
+        "quote": "Behold the handmaid of the Lord",
+        "matches": [
+          "Luke 1:38"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "zacharias-father-of-john",
+        "quote": "His name is John",
+        "matches": [
+          "Luke 1:63"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "herod-the-great",
+        "quote": "Great",
+        "matches": [
+          "Job 32:9",
+          "Psalms 18:50",
+          "Psalms 48:1"
+        ],
+        "totalMatches": 16
+      },
+      {
+        "id": "peter",
+        "quote": "Thou art the Christ, the Son of the living God",
+        "matches": [
+          "Matthew 16:16"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "martha-of-bethany",
+        "quote": "if thou hadst been here",
+        "matches": [
+          "John 11:21"
+        ],
+        "totalMatches": 2
+      },
+      {
+        "id": "mary-of-bethany",
+        "quote": "if thou hadst been here",
+        "matches": [
+          "John 11:32"
+        ],
+        "totalMatches": 2
+      },
+      {
+        "id": "lazarus-of-bethany",
+        "quote": "Lazarus, come forth",
+        "matches": [
+          "John 11:43"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "pontius-pilate",
+        "quote": "Art thou the King of the Jews?",
+        "matches": [
+          "Matthew 27:11"
+        ],
+        "totalMatches": 4
+      },
+      {
+        "id": "pontius-pilate",
+        "quote": "Jesus Of Nazareth The King Of The Jews",
+        "matches": [
+          "John 19:19"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "thomas",
+        "quote": "Let us also go, that we may die with him",
+        "matches": [
+          "John 11:16"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "thomas",
+        "quote": "I am the way, the truth, and the life",
+        "matches": [
+          "John 14:6"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "thomas",
+        "quote": "My Lord and my God",
+        "matches": [
+          "John 20:28"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "stephen",
+        "quote": "Lord Jesus, receive my spirit",
+        "matches": [
+          "Acts 7:59"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "barnabas",
+        "quote": "The son of consolation",
+        "matches": [
+          "Acts 4:36"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "apollos",
+        "quote": "I have planted, Apollos watered; but God gave the increase",
+        "matches": [
+          "1 Corinthians 3:6"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "aquila",
+        "quote": "with the church that is in their house",
+        "matches": [
+          "1 Corinthians 16:19"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "agrippa-ii",
+        "quote": "King Agrippa, believest thou the prophets? I know that thou believest",
+        "matches": [
+          "Acts 26:27"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "agrippa-ii",
+        "quote": "Almost thou persuadest me to be a Christian",
+        "matches": [
+          "Acts 26:28"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "john-son-of-zebedee",
+        "quote": "unlearned and ignorant men",
+        "matches": [
+          "Acts 4:13"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "matthew-levi",
+        "quote": "Follow me",
+        "matches": [
+          "Matthew 9:9",
+          "Mark 2:14",
+          "Luke 5:27"
+        ],
+        "totalMatches": 8
+      },
+      {
+        "id": "matthew-levi",
+        "quote": "Matthew the publican",
+        "matches": [
+          "Matthew 10:3"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "philip-the-apostle",
+        "quote": "Follow me",
+        "matches": [
+          "John 1:43"
+        ],
+        "totalMatches": 8
+      },
+      {
+        "id": "philip-the-apostle",
+        "quote": "Come and see",
+        "matches": [
+          "John 1:46"
+        ],
+        "totalMatches": 7
+      },
+      {
+        "id": "nathanael",
+        "quote": "Rabbi, thou art the Son of God; thou art the King of Israel.",
+        "matches": [
+          "John 1:49"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "nathanael",
+        "quote": "of Cana in Galilee",
+        "matches": [
+          "John 21:2"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "annas",
+        "quote": "the high priest",
+        "matches": [
+          "Luke 3:2",
+          "John 18:13",
+          "John 18:24",
+          "Acts 4:6"
+        ],
+        "totalMatches": 62
+      },
+      {
+        "id": "dorcas",
+        "quote": "Tabitha, arise",
+        "matches": [
+          "Acts 9:40"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "demetrius-the-silversmith",
+        "quote": "Great is Diana of the Ephesians",
+        "matches": [
+          "Acts 19:28"
+        ],
+        "totalMatches": 2
+      },
+      {
+        "id": "luke",
+        "quote": "the beloved physician",
+        "matches": [
+          "Colossians 4:14"
+        ],
+        "totalMatches": 1
+      },
+      {
+        "id": "luke",
+        "quote": "we",
+        "matches": [
+          "Acts 16:10",
+          "Acts 20:6",
+          "Acts 27:1",
+          "Acts 28:16"
+        ],
+        "totalMatches": 8033
+      },
+      {
+        "id": "luke",
+        "quote": "The former treatise",
+        "matches": [
+          "Acts 1:1"
+        ],
+        "totalMatches": 1
+      }
+    ]
+  },
+  "source_responses": [
+    {
+      "url": "https://archive.org/details/LuckenbillAncientRecordsAssyria01",
+      "key": "652a55fa232de884d3e9",
+      "status": 200,
+      "final_url": "https://archive.org/details/LuckenbillAncientRecordsAssyria01",
+      "sha256": "7f77fc02a7fd9d43699acdccb7090d7b10f26f35a2b12b48cbd83ee12d611cad",
+      "bytes": 207943
+    },
+    {
+      "url": "https://archive.org/details/cuneiformparalle00rogeuoft",
+      "key": "c1cfb2b7fc3713e2d9d8",
+      "status": 200,
+      "final_url": "https://archive.org/details/cuneiformparalle00rogeuoft",
+      "sha256": "e8b9a880fa2340e0184c4890fd8b368f4fcff4899326778531c9b76c7376066a",
+      "bytes": 272786
+    },
+    {
+      "url": "https://archive.org/download/LuckenbillAncientRecordsAssyria01/Luckenbill_Ancient_Records_Assyria01_djvu.txt",
+      "key": "b44aad751ec836510689",
+      "status": 200,
+      "final_url": "https://dn710705.ca.archive.org/0/items/LuckenbillAncientRecordsAssyria01/Luckenbill_Ancient_Records_Assyria01_djvu.txt",
+      "sha256": "32138e25f77f10b52e6f11f3ab9eaa8293519ca9fb371504340f98cff53fbad7",
+      "bytes": 580746
+    },
+    {
+      "url": "https://archive.org/download/cuneiformparalle00rogeuoft/cuneiformparalle00rogeuoft_djvu.txt",
+      "key": "de1dbd501b55c01b4e8a",
+      "status": 200,
+      "final_url": "https://dn760104.eu.archive.org/0/items/cuneiformparalle00rogeuoft/cuneiformparalle00rogeuoft_djvu.txt",
+      "sha256": "2291d85f53f457c83b3d8da0cd7855788c466af8825bbbc9eda23c8f12041c48",
+      "bytes": 1118999
+    },
+    {
+      "url": "https://bolls.life/get-text/TISCH/47/3/",
+      "key": "0d718d3d9a4ec45a3a3d",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/TISCH/47/3/",
+      "sha256": "4c24a3f6f5eb54c40d4a9dc6f0706469e92228c118f9590ebd300ef88de5a916",
+      "bytes": 13659
+    },
+    {
+      "url": "https://bolls.life/get-text/TISCH/47/7/",
+      "key": "0e545b20d6d494d19436",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/TISCH/47/7/",
+      "sha256": "12a423221b7db92a97d04e52d9564974685b954aa4c89753f61a04a4c2358d34",
+      "bytes": 14778
+    },
+    {
+      "url": "https://bolls.life/get-text/TISCH/47/9/",
+      "key": "5bbc345e742b9f4a31da",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/TISCH/47/9/",
+      "sha256": "0a433e1992b0447ae92fbae4c2dc6b15a3031436b7fef3a5a6b6f35f630f5f1d",
+      "bytes": 12816
+    },
+    {
+      "url": "https://bolls.life/get-text/TR/47/3/",
+      "key": "c88634b80f8addc8fdff",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/TR/47/3/",
+      "sha256": "0b2263913014ad685a10de47870d59560006ff6c55966af089122b0aaf235073",
+      "bytes": 10370
+    },
+    {
+      "url": "https://bolls.life/get-text/TR/47/7/",
+      "key": "d62567242f98a6fb7c40",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/TR/47/7/",
+      "sha256": "84453f985fd0a841c3c88df11f91aa4d2fc2d0a49b157ccc33112360dba97549",
+      "bytes": 11179
+    },
+    {
+      "url": "https://bolls.life/get-text/TR/47/9/",
+      "key": "59f40bf3c2e38d9a38bf",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/TR/47/9/",
+      "sha256": "5c524eba822e76e681cf27dcb8468aed21e1eca9518b3b45baf85d318aab4719",
+      "bytes": 9839
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/1/13/",
+      "key": "a2d014852333e9ba5355",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/1/13/",
+      "sha256": "befe6e19662db0ef27259fb4f040f88337fc164e4bfc52f0c4cd9a7374e64e5c",
+      "bytes": 12262
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/1/27/",
+      "key": "049e95e679eb27626301",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/1/27/",
+      "sha256": "30faf2493b6470b29a43542c27e136ed61f74c134e315b6c2e548b85a2414b6d",
+      "bytes": 33287
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/1/38/",
+      "key": "7dc0bf9d4d709215113a",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/1/38/",
+      "sha256": "3078f047670555fadf47707e1928c5f8d3ed1b522312ecbc73a9d9b92ed8c0dc",
+      "bytes": 21111
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/1/39/",
+      "key": "f2c480ef351e1429e294",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/1/39/",
+      "sha256": "0bed9995b2f060cc3b33f902487b480ebe5f7cd17b6c41c2887610b2a1f067f2",
+      "bytes": 17858
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/1/40/",
+      "key": "8e7d083bb3deca21c4b8",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/1/40/",
+      "sha256": "a4314b60016e8e9fb64cfc6db911938d5abd70d601603dd1d4b7d51986fe9575",
+      "bytes": 16499
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/1/42/",
+      "key": "98b303db6c389a52cfc3",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/1/42/",
+      "sha256": "0d4325922a4c7a106ae77df401c6e946f9d915afa06bba0116488b63cb0bd8dc",
+      "bytes": 27770
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/1/43/",
+      "key": "766e8e2125474a8f3fc7",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/1/43/",
+      "sha256": "9fa4a3ddd98287a063543340b98edcf0319f0c7038c57054a1ed13dde36dcec8",
+      "bytes": 27013
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/12/20/",
+      "key": "a885652972c1f7d6d291",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/12/20/",
+      "sha256": "558ec50c65bdaaa29556a13362c150a5dce4eccb9ec4bd2817b2f5bfa8718406",
+      "bytes": 19331
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/14/33/",
+      "key": "9126be607fd6ceed722c",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/14/33/",
+      "sha256": "00baba45fe7d436d766265576ee6920572bcceca54387e8bceab8e9870a081dc",
+      "bytes": 21493
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/15/7/",
+      "key": "63e5d58b540eec9026f0",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/15/7/",
+      "sha256": "a7ab80864b03018a04ec8e0eaba164d0272ad1d622d0fe96b6bbf07e3f117a57",
+      "bytes": 24082
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/15/9/",
+      "key": "c7725c2ed3c0e95e0ac9",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/15/9/",
+      "sha256": "edb09b8ef8d4b47d760c9efe962548f655ee8d9ebf8bdcedc17a45e9582eacfb",
+      "bytes": 16684
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/16/13/",
+      "key": "903319cd22bca7c1a82e",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/16/13/",
+      "sha256": "70e8a2d866e9d0f778ba93c0c15cb2f36a2fbed8268a52e5e5fa03ca9c88c11d",
+      "bytes": 27452
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/16/5/",
+      "key": "c8b652d1696e66269554",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/16/5/",
+      "sha256": "a0901abbd606b73e9b241343e85832296bd6ed5344dcb18f945610ad7f3f427e",
+      "bytes": 17971
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/17/5/",
+      "key": "bf33bddbed0aa6353508",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/17/5/",
+      "sha256": "450f8cdb5a2f600fc5a7e295b66be4180736bf68300fc5ba4600aadedb7d525f",
+      "bytes": 13833
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/21/11/",
+      "key": "223b0fe171de7f086a2e",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/21/11/",
+      "sha256": "6dc5ca377ebd422f3dd06a4fc1a945a08e613d57e4c16cd4850e7d31eb122841",
+      "bytes": 7275
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/21/5/",
+      "key": "2ed05469d48a0f4a092a",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/21/5/",
+      "sha256": "c68dcd156ec7bed96c25d1fc05a022b5019ced58d98a52f5bbb709001267cbc3",
+      "bytes": 13551
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/21/6/",
+      "key": "236829373f00337de5d7",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/21/6/",
+      "sha256": "fda35862faca680e2ca60408870a452989e4758ed765f926e9cf13a682e01c01",
+      "bytes": 8323
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/21/7/",
+      "key": "a2037a70063b2673a811",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/21/7/",
+      "sha256": "7ee8dbd9e5c5dec7db6a6f628d1b02adc1676b36a80339d3bf34444419a3e3ff",
+      "bytes": 16622
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/22/5/",
+      "key": "9a8ced93324483a0eb77",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/22/5/",
+      "sha256": "a94221feafa673637127caf570b109ae48c23ca7dba714dcbf74483338325957",
+      "bytes": 10435
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/22/8/",
+      "key": "b4b72bbf8d96dce79732",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/22/8/",
+      "sha256": "c28b147cfc0999be5b531f0109b73d8da929926f5f940088c7935b8904330777",
+      "bytes": 9330
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/23/39/",
+      "key": "ff9ef8e56b869d37fdfe",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/23/39/",
+      "sha256": "b5727c791cdbd4f3791e98aee37f4f376481b6fdc6fa36fb08b062da048f251c",
+      "bytes": 7819
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/6/20/",
+      "key": "d09e05624b625e2f829a",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/6/20/",
+      "sha256": "2aaf029240f05df5f5c3ae36d8516417b32c6f509b6f28e1052eaadddfafe59b",
+      "bytes": 8659
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/7/12/",
+      "key": "3e44ad2f47a689435912",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/7/12/",
+      "sha256": "917a3cea88bb3756c8a3c64d95b76677aafbc59ef40c730a12760a3416c56f52",
+      "bytes": 12799
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/7/17/",
+      "key": "ccbc1b1b07b4f6fb3c51",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/7/17/",
+      "sha256": "ce43c0f283fa69d2b7c0f356cdfc5b376a166c22c36eec7bb266a4295df9076c",
+      "bytes": 10168
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/8/1/",
+      "key": "f7d2b0d3bab3fe07d2a4",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/8/1/",
+      "sha256": "c3c276d439e0fdbe0cf8d39df81d63f05e1fffb71ad3e8f991c08a01950b32d7",
+      "bytes": 17376
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/GEN13.htm",
+      "key": "f9d2fd3598f96e13e9d4",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/GEN13.htm",
+      "sha256": "5d64e5b66a680457cc22aa3ea35cb5cc08e53f4733b55a85dff1eec3adbf85f9",
+      "bytes": 5593
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/GEN27.htm",
+      "key": "164c3b123dd02be3c1d6",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/GEN27.htm",
+      "sha256": "130e5e140d5833fa403295b5aa5a379593bd39b0edc01da5d98c1bcf6ad564fb",
+      "bytes": 9877
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/GEN38.htm",
+      "key": "4ffabf271d5a2bd24e7f",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/GEN38.htm",
+      "sha256": "85fd5d288ea95472d782a6e8bf5646fe0a4ada8ea2fafe95bdcef7c28521b0b8",
+      "bytes": 7226
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/GEN39.htm",
+      "key": "5d6562d221c443192e23",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/GEN39.htm",
+      "sha256": "d8026b8051aa71edd2a30dba9107d6ae92271d676081554bf6ebd2e8fc8a619c",
+      "bytes": 6707
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/GEN40.htm",
+      "key": "c325a3cf2d2a13645bcf",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/GEN40.htm",
+      "sha256": "c2e24ebaeb61aa3bde3ba3611ecc9629359ab4500aecab59736a284a9bcc5182",
+      "bytes": 5729
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/GEN42.htm",
+      "key": "abf90642155c49c61b14",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/GEN42.htm",
+      "sha256": "71a70f8408bb59ffa654a432abe6ab5a110cbee54e75ad37bf97c85491af0127",
+      "bytes": 8410
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/GEN43.htm",
+      "key": "f9c1796000d428972ef6",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/GEN43.htm",
+      "sha256": "25e3c312a5ff773147e3ebf871d0d086b3c653448f8718ecef963da79e9511bc",
+      "bytes": 9230
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/2CO03.htm",
+      "key": "f8e3bef5a6582761de6b",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/2CO03.htm",
+      "sha256": "2e28e329dec8c9748c4cd85c2fab47285a01d3e0d47d62725e321a492e4233a4",
+      "bytes": 4560
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/2CO07.htm",
+      "key": "da244d192139e8f647f6",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/2CO07.htm",
+      "sha256": "54c92ce0c5eca0143a8646c605fd68c1fe4d7e7c3c313e84cd535874d4f20b35",
+      "bytes": 4919
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/2CO09.htm",
+      "key": "4e7703c50cc0ee94f734",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/2CO09.htm",
+      "sha256": "c62e547d628785f1fc4d36c7e70f296fed552a995006b66523b4ae6ecf41a287",
+      "bytes": 4188
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/ECC05.htm",
+      "key": "4c286079f70b615bc83e",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/ECC05.htm",
+      "sha256": "78157dc0e5c9fd460c369f2ce1dcbc14e284d151b492b0d72202ffbc7f06deb2",
+      "bytes": 7065
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/ECC06.htm",
+      "key": "4d67cbd5e0185b7ca5ce",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/ECC06.htm",
+      "sha256": "b57139c1181e9aeefdcc723c0d1258262d8a9e1d7cf14155f55af6a7087903a9",
+      "bytes": 4663
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/ECC07.htm",
+      "key": "11cfa2f4fdb8a5f11be3",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/ECC07.htm",
+      "sha256": "48043389b2a83da6d2f11a8256f49384f2d4154bd9ccc13de8be39addb4818d2",
+      "bytes": 9939
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/ECC11.htm",
+      "key": "f01fd5b14eead7ca62ca",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/ECC11.htm",
+      "sha256": "ebb2b02cf9ccbfdf501a1d41100c43372c1f27e66bf0322d2667ba87b3e13ca6",
+      "bytes": 4210
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/EST05.htm",
+      "key": "1d3ac320414034b95a14",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/EST05.htm",
+      "sha256": "0f46442a2dbe98b2141c896bb28c9c4aaf8927985cb84bad02ee5c0be7292fd6",
+      "bytes": 5460
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/EZR07.htm",
+      "key": "dff5b0a026fa71c687c4",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/EZR07.htm",
+      "sha256": "fda77d4dcb4074d96c25101b17953b2cc190142a33dbcd11a80c7d048c23234a",
+      "bytes": 9661
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/EZR09.htm",
+      "key": "0968625a70ef1e2471ae",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/EZR09.htm",
+      "sha256": "e34456686c0556620fd389b1778fbbba8c49a35c743f7bce275e0c0a6cd9b595",
+      "bytes": 7826
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/GEN13.htm",
+      "key": "84d5895968525ff88275",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/GEN13.htm",
+      "sha256": "e66bcb6038336721b4c850147ec9171832b83cca7a81a444919755ade4c5c5f6",
+      "bytes": 5413
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/GEN27.htm",
+      "key": "f6ace430fcd4a4f1a790",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/GEN27.htm",
+      "sha256": "129e95ce3634f864cdc808e920c5f133d5f65ee3f2ba4e125b5bb1008cb1a30c",
+      "bytes": 12824
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/GEN38.htm",
+      "key": "81a5c092c3f73ce772d3",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/GEN38.htm",
+      "sha256": "424c933df97c864dbc4f72156b38c80398320b77f99268f81d0dd2338688b190",
+      "bytes": 9888
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/GEN39.htm",
+      "key": "e88606330c7d76a30c5e",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/GEN39.htm",
+      "sha256": "1a3cf9735d0126be9b83a1d506bd445c73cd014598d1cf6715c23b2bae238816",
+      "bytes": 6824
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/GEN40.htm",
+      "key": "1d3824940c198e06d82f",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/GEN40.htm",
+      "sha256": "4303a3caf539b6b87222e736c19aeef134411ebcf93f8ccfd4eddcddd0282fb3",
+      "bytes": 7924
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/GEN42.htm",
+      "key": "91b7153de9cdba4d06ec",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/GEN42.htm",
+      "sha256": "5ef4a7fb6c11bbf13f31b94bb55efbf838d3e54ea13124447b935e150610274a",
+      "bytes": 10817
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/GEN43.htm",
+      "key": "91d88af29f53ba916ec3",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/GEN43.htm",
+      "sha256": "71cf1a6e591f1461ff59a2c93caad1c2a40fe4a9dc9fd8320beed2621c218c6c",
+      "bytes": 12056
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/JDG12.htm",
+      "key": "f18d16e7d60ba487a10e",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/JDG12.htm",
+      "sha256": "0de2aae1c257ec296c305357a4e07d526709e562ab41b79e7e6af2a7fa35852e",
+      "bytes": 4940
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/JDG17.htm",
+      "key": "48014ca1cac3aa358ee6",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/JDG17.htm",
+      "sha256": "83e2c31679a5987733d35a18a909986fd10d92de99705d1e11a8de2dfe7b94e9",
+      "bytes": 5098
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/JOS20.htm",
+      "key": "7476ff70e2d208ea841f",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/JOS20.htm",
+      "sha256": "775e9f8c82311433be3235507b3e9d4da3209c37f9b778ef09a697b8ad593b5a",
+      "bytes": 3760
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/NEH05.htm",
+      "key": "fe7d6a221903ad5df922",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/NEH05.htm",
+      "sha256": "e988d24bd749c86b0a4985c2f4968fa223a0def8a48fb10facff982531ea4616",
+      "bytes": 6676
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/NEH13.htm",
+      "key": "5ea08601372450f01bf4",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/NEH13.htm",
+      "sha256": "f669368d6436cdb71ab34486de9ce6c3e246a671dedeba9fd997bbb43e08bcbe",
+      "bytes": 13641
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/RUT01.htm",
+      "key": "914d51edd6ab49c106f0",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/RUT01.htm",
+      "sha256": "f4c36a816e5e221a7a68bc6ed3bf84ce38a7518f74ed5db4bbbf09975fcd8100",
+      "bytes": 8361
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/SNG05.htm",
+      "key": "8319dbf789023a300d47",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/SNG05.htm",
+      "sha256": "c09c2cd76ee17f1304d344c4c473c5770c99581758af77accbf33c33b061c172",
+      "bytes": 7329
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/SNG08.htm",
+      "key": "5f4aab7ce8bc6cab88a3",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/SNG08.htm",
+      "sha256": "55349b1e09fc922b55daaa8e83fb4c8bc4bd5c964f9f1f3b8b086a7c035e721f",
+      "bytes": 5681
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ECC05.htm",
+      "key": "461dcc684f5cf7d1b908",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/ECC05.htm",
+      "sha256": "d38327e17fd8f646d97854e32454cea50f9e28d237ce58bbd6c4e8c0bf3e8070",
+      "bytes": 6783
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ECC06.htm",
+      "key": "6912309b188ce2eb5846",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/ECC06.htm",
+      "sha256": "d8c90b9a04d88e264a130b57264cb3d9648fd6feef511abebea186ea0e7080e8",
+      "bytes": 4573
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ECC07.htm",
+      "key": "26b6e410616c0d81fa3d",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/ECC07.htm",
+      "sha256": "ad6fb37ba5940c6b700ec6b00b61ef082ead0057a912c15e070987ca8aa71f2a",
+      "bytes": 8371
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ECC11.htm",
+      "key": "ddc195ba64ecf9edca65",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/ECC11.htm",
+      "sha256": "7c6ac76b862760e7f2b1a57ecdcd111f8184b645bec7858e30e921075aaa0e0d",
+      "bytes": 4079
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ESG05.htm",
+      "key": "82794342211c2fe3a461",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/ESG05.htm",
+      "sha256": "0d3aa392f04cca66c41f66c0b60870ffddc1b37f11e2551122382f6a6daed8d6",
+      "bytes": 8197
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR07.htm",
+      "key": "3cc0863a847188899a5d",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/EZR07.htm",
+      "sha256": "6d4d2c706a8dd850689caec509e3b4db61dfdd917b562f66b983a7dd169ac416",
+      "bytes": 10235
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR09.htm",
+      "key": "1919da612d6921e34577",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/EZR09.htm",
+      "sha256": "c37f8ac47d0be187c2053f27839121a41363cde0402d0fc3fdebaaf990325d22",
+      "bytes": 7710
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR15.htm",
+      "key": "56b22ee4d5647198bb2d",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/EZR15.htm",
+      "sha256": "8692179953432f37e6de36db09b8ae8d6571b5418ed357f0d313e38c27c6919f",
+      "bytes": 8171
+    },
+    {
+      "url": "https://ebible.org/grcbrent/EZR23.htm",
+      "key": "8600be3b7089f367cb70",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/EZR23.htm",
+      "sha256": "b60249d2ae21590b65baaa7e326837016ffb033bc142e5e5d24f4b010fa1f858",
+      "bytes": 11809
+    },
+    {
+      "url": "https://ebible.org/grcbrent/GEN13.htm",
+      "key": "5a617cccd0147a5d83e5",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/GEN13.htm",
+      "sha256": "b86c8b9a3bfa54fa4964de36fc81f75f699a914da2065234252df92f23c82552",
+      "bytes": 6341
+    },
+    {
+      "url": "https://ebible.org/grcbrent/GEN27.htm",
+      "key": "5a6058dc3bde2018a45d",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/GEN27.htm",
+      "sha256": "94da9055522554c31b38e7710daed6a293c20485568f6172596a5bea80778925",
+      "bytes": 14945
+    },
+    {
+      "url": "https://ebible.org/grcbrent/GEN38.htm",
+      "key": "862a5dc8da92ca54df44",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/GEN38.htm",
+      "sha256": "bd83a6d74c14fe1e155fcbf48c19a76b35913c909c37b5907d1a321c40ce31a8",
+      "bytes": 10236
+    },
+    {
+      "url": "https://ebible.org/grcbrent/GEN39.htm",
+      "key": "edc333c9a3be1a0546f0",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/GEN39.htm",
+      "sha256": "c073ebc53f6bb9b1553d003e2f1e759099d71eac81d00b6e4303ad4a605f3f7d",
+      "bytes": 8719
+    },
+    {
+      "url": "https://ebible.org/grcbrent/GEN40.htm",
+      "key": "2b0f8d7a02a0cb0a063d",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/GEN40.htm",
+      "sha256": "b7d3496ea5d7e0737987b33fac36b4fc19e04a403ad1033b2a84adbaf64d0b11",
+      "bytes": 7708
+    },
+    {
+      "url": "https://ebible.org/grcbrent/GEN42.htm",
+      "key": "3639fe289c15ba10c812",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/GEN42.htm",
+      "sha256": "0c4eb73910a8fd7c7e51b28940bfeafb5bf893082e9a0495bdbb4fbbf7d7bc5f",
+      "bytes": 12343
+    },
+    {
+      "url": "https://ebible.org/grcbrent/GEN43.htm",
+      "key": "69b927ad367d5d46df74",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/GEN43.htm",
+      "sha256": "29cf95d34d2d9062f3e5f77b36afe78a7496d928bb1ba9288e6da112e6744fa3",
+      "bytes": 12382
+    },
+    {
+      "url": "https://ebible.org/grcbrent/JDG12.htm",
+      "key": "dd0bad90eb5be25bc13b",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/JDG12.htm",
+      "sha256": "010df2919b3d7c504c3fe533136ea99792c6408ab531824457b3b62cf6da8251",
+      "bytes": 5802
+    },
+    {
+      "url": "https://ebible.org/grcbrent/JDG17.htm",
+      "key": "0315a5a94b3b9a0642d2",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/JDG17.htm",
+      "sha256": "d78fbd2c01b537f84221104c0c06e4690b20223213b337cf32403b8a6febb717",
+      "bytes": 5243
+    },
+    {
+      "url": "https://ebible.org/grcbrent/JOS20.htm",
+      "key": "6cccc87b9ff64afa75a0",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/JOS20.htm",
+      "sha256": "fa0eb9b69b93b1b577896057b8cb9128f9ac4118fe0fa8eca04b5fa41845f3dc",
+      "bytes": 3286
+    },
+    {
+      "url": "https://ebible.org/grcbrent/RUT01.htm",
+      "key": "828386689b8c7027305c",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/RUT01.htm",
+      "sha256": "98aca4bd27a62f60dfebd1af643d5d53d24cebf0ec4e9b2afff8e39f7f9579a3",
+      "bytes": 8458
+    },
+    {
+      "url": "https://ebible.org/grcbrent/SNG05.htm",
+      "key": "215ffdb41fe4a46b381f",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/SNG05.htm",
+      "sha256": "ea93aeff208c4acc79995413d5da6fd19f0fd670510ce06b3e29aa3ca3498219",
+      "bytes": 5788
+    },
+    {
+      "url": "https://ebible.org/grcbrent/SNG08.htm",
+      "key": "bd2aa693017045582ddf",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/SNG08.htm",
+      "sha256": "6ff761f20e81d628ba7dbcf6e5aef06d1df67c0e66581c210396724055f76b09",
+      "bytes": 5105
+    },
+    {
+      "url": "https://www.livius.org/sources/content/anet/291-esarhaddons-prism-b/",
+      "key": "b53d45f8ae3a14c1827f",
+      "status": 200,
+      "final_url": "https://www.livius.org/sources/content/anet/291-esarhaddons-prism-b/",
+      "sha256": "fc07742bd836f9d136a5ce57b3710f809bb5b83748a36b2616aee22d1a92494e",
+      "bytes": 15534
+    },
+    {
+      "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-1-from-nabu-nasir-to-samas-suma-ukin/",
+      "key": "53b80254565971a27e2f",
+      "status": 200,
+      "final_url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-1-from-nabu-nasir-to-samas-suma-ukin/",
+      "sha256": "b342571ad1872886a93b63e6fedbf7446240dcd5d222a4ca8b4e775ecea351f8",
+      "bytes": 21910
+    },
+    {
+      "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-1-from-nabu-nasir-to-samas-suma-ukin/abc-1.ii/",
+      "key": "311e6585eb77b5a4a6de",
+      "status": 200,
+      "final_url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-1-from-nabu-nasir-to-samas-suma-ukin/abc-1.ii/",
+      "sha256": "d16d4572d53ecaa8873ba396898dbd4568d627b30af9d30e7e5b95218a617ec9",
+      "bytes": 19842
+    },
+    {
+      "url": "https://www.penn.museum/sites/expedition/through-assyrias-eyes/",
+      "key": "af5965b96d4e511b8228",
+      "status": 200,
+      "final_url": "https://www.penn.museum/sites/expedition/through-assyrias-eyes/",
+      "sha256": "ee565cfb28d4386a004b2f6f879a19ba5abe921e48add2cb7f9268d4ecb5bb10",
+      "bytes": 44071
+    },
+    {
+      "url": "https://www.sbl-site.org/wp-content/uploads/2024/11/9781628374643_OA.pdf",
+      "key": "54d77bb0cb0645470c62",
+      "status": 200,
+      "final_url": "https://www.sbl-site.org/wp-content/uploads/2024/11/9781628374643_OA.pdf",
+      "sha256": "7264eb94288ff13446fb23ef75264e98c0897db02a42b51d4808855ff4d23b08",
+      "bytes": 1521230
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/17/2/",
+      "key": "02c4919dda07c5f877cf",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/17/2/",
+      "sha256": "92ee50149e826fde2a9b9e66e839547ed2acf29e6d6177806a13633010ab4e4d",
+      "bytes": 23417
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/17/4/",
+      "key": "409f8a7a869248745e63",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/17/4/",
+      "sha256": "a70b2fdd810b805d9dba0aff26dbbd1ba681fe0d0e198e36d8d438fb8e37aead",
+      "bytes": 15466
+    },
+    {
+      "url": "https://bolls.life/get-text/WLC/17/6/",
+      "key": "ac16a6ca6b898576502b",
+      "status": 200,
+      "final_url": "https://bolls.life/get-text/WLC/17/6/",
+      "sha256": "3a9dd0381ee0e50549a86340649e4ffe2f689eff1a77a05b1db0f9fc6d51e03d",
+      "bytes": 14143
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/EST02.htm",
+      "key": "a4f319d1ad3121f2d9f8",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/EST02.htm",
+      "sha256": "a428473c23841f66266584b5228dc766cb2e19c8d22aeb99a0d5bb479f92d5b7",
+      "bytes": 10551
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/EST04.htm",
+      "key": "3445df370da44a9f4f87",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/EST04.htm",
+      "sha256": "89fccef80575808d70f434c5011974208031ae5b1bd3811474cc6422c44bd014",
+      "bytes": 6884
+    },
+    {
+      "url": "https://ebible.org/eng-kjv/EST06.htm",
+      "key": "3b69e3c6c67302259364",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-kjv/EST06.htm",
+      "sha256": "d295892612a5050d17e89af8ed7b65012cdc424c0584daab626af23fa33d24a9",
+      "bytes": 7168
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ESG02.htm",
+      "key": "6040cefbf16ffef47eab",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/ESG02.htm",
+      "sha256": "4f69bde399dec61d831e09d487271a920a87bc536f3846b0166754951bb7c4d3",
+      "bytes": 9156
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ESG04.htm",
+      "key": "89882f49a6102d2cec0a",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/ESG04.htm",
+      "sha256": "704cd8f7240159b56f373023466da467253fc8344a01bec7389a8e2ef71ff0df",
+      "bytes": 15169
+    },
+    {
+      "url": "https://ebible.org/grcbrent/ESG06.htm",
+      "key": "4064468511f993d927f3",
+      "status": 200,
+      "final_url": "https://ebible.org/grcbrent/ESG06.htm",
+      "sha256": "43ed6adb7002a59e09d342d78e25e4beee89595267abeede1b75b1f543a946d8",
+      "bytes": 6073
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ECC05.htm",
+      "key": "da3d7b49531c239d5508",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/ECC05.htm",
+      "sha256": "2689a09f58a32cb51556b222d5acebe1832b0703e0633a1b7281f7cab31a8be3",
+      "bytes": 4986
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ECC06.htm",
+      "key": "bd14678e41209b8986c2",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/ECC06.htm",
+      "sha256": "289eecac1cde1ab6efd348384f0d4669af3808fae76eb0613cbbb80b404e56fa",
+      "bytes": 3505
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ECC07.htm",
+      "key": "895759de50c050f831a1",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/ECC07.htm",
+      "sha256": "4e492c49269ae5b7c40f0a9caee145e02fa94df61d5eead7c2ac5c35bcf4fbb9",
+      "bytes": 6340
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/ECC11.htm",
+      "key": "9f6edf3da6c28147d976",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/ECC11.htm",
+      "sha256": "d67d84aedbb6f17d7d0004c9b5bdb65df050347a3f7d58fd1890547816b8011d",
+      "bytes": 3133
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/SNG05.htm",
+      "key": "3d218b264286c3b4b669",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/SNG05.htm",
+      "sha256": "f705bf14420ea48e6fb717e2116a9939d9d4c88702b6d43689d89c0867f38873",
+      "bytes": 4173
+    },
+    {
+      "url": "https://ebible.org/eng-Brenton/SNG08.htm",
+      "key": "aebdf025c50f5e8cad11",
+      "status": 200,
+      "final_url": "https://ebible.org/eng-Brenton/SNG08.htm",
+      "sha256": "f4102e4665d52e434e5908051d970e65f8d9cff6a8b9acf88eba62fd659c8a53",
+      "bytes": 3887
+    }
+  ],
+  "language_checks": {
+    "reviewed_spans": [
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "language": "Hebrew",
+        "quote": "הַנֶּֽגְבָּה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "1"
+          }
+        ]
+      },
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "language": "Hebrew",
+        "quote": "מִנֶּ֖גֶב וְעַד־בֵּֽית־אֵ֑ל",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "language": "Greek",
+        "quote": "εἰς τὴν ἔρημον",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "1"
+          },
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "language": "Greek",
+        "quote": "εἰς τὴν ἔρημον ἕως Βαιθὴλ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "lot-dwelt-in-the-cities-of-the-plain-toward-sodom-or-a-city-in-sodom-genesis-13-12",
+        "language": "Hebrew",
+        "quote": "וְלֹ֗וט יָשַׁב֙ בְּעָרֵ֣י הַכִּכָּ֔ר וַיֶּאֱהַ֖ל עַד־סְדֹֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "lot-dwelt-in-the-cities-of-the-plain-toward-sodom-or-a-city-in-sodom-genesis-13-12",
+        "language": "Greek",
+        "quote": "Λὼτ δὲ κατῴκησεν ἐν πόλει τῶν περιχώρων, καὶ ἐσκήνωσεν ἐν Σοδόμοις",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "abram-seed-as-the-dust-of-the-earth-or-the-sand-of-the-earth-genesis-13-16",
+        "language": "Hebrew",
+        "quote": "כַּעֲפַ֣ר הָאָ֑רֶץ אֲשֶׁ֣ר ׀ אִם־יוּכַ֣ל אִ֗ישׁ לִמְנֹות֙ אֶת־עֲפַ֣ר הָאָ֔רֶץ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "16"
+          }
+        ]
+      },
+      {
+        "id": "abram-seed-as-the-dust-of-the-earth-or-the-sand-of-the-earth-genesis-13-16",
+        "language": "Greek",
+        "quote": "ὡς τὴν ἄμμον τῆς γῆς· εἰ δύναταί τις ἐξαριθμῆσαι τὴν ἄμμον τῆς γῆς",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "16"
+          }
+        ]
+      },
+      {
+        "id": "plain-of-mamre-or-oaks-of-mamre-genesis-13-18",
+        "language": "Hebrew",
+        "quote": "וַיֵּ֛שֶׁב בְּאֵלֹנֵ֥י מַמְרֵ֖א",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "plain-of-mamre-or-oaks-of-mamre-genesis-13-18",
+        "language": "Greek",
+        "quote": "κατῴκησε παρὰ τὴν δρῦν τὴν Μαμβρῆ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "language": "Hebrew",
+        "quote": "וְיִשְׁתַּחֲוּ֥וּ לְךָ֖ בְּנֵ֣י אִמֶּ֑ךָ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/27/",
+            "verse": "29"
+          }
+        ]
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "language": "Hebrew",
+        "quote": "יַֽעַבְד֣וּךָ עַמִּ֗ים",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/27/",
+            "verse": "29"
+          }
+        ]
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "language": "Greek",
+        "quote": "προσκυνήσουσί σοι οἱ υἱοὶ τοῦ πατρός σου",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN27.htm",
+            "verse": "29"
+          }
+        ]
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "language": "Greek",
+        "quote": "δουλευσάτωσάν σοι ἔθνη, καὶ προσκυνησάτωσάν σοι ἄρχοντες",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN27.htm",
+            "verse": "29"
+          }
+        ]
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "language": "Hebrew",
+        "quote": "וְחִירָ֛ה רֵעֵ֥הוּ הָעֲדֻלָּמִ֖י",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/38/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "language": "Hebrew",
+        "quote": "בְּיַד֙ רֵעֵ֣הוּ הָֽעֲדֻלָּמִ֔י",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/38/",
+            "verse": "20"
+          }
+        ]
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "language": "Greek",
+        "quote": "Εἰρὰς ὁ ποιμὴν αὐτοῦ ὁ Ὀδολλαμίτης",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN38.htm",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "language": "Greek",
+        "quote": "ἐν χειρὶ τοῦ ποιμένος αὐτοῦ τοῦ Ὀδολλαμείτου",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN38.htm",
+            "verse": "20"
+          }
+        ]
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "language": "Hebrew",
+        "quote": "וַתֵּ֙שֶׁב֙ בְּפֶ֣תַח עֵינַ֔יִם אֲשֶׁ֖ר עַל־דֶּ֣רֶךְ תִּמְנָ֑תָה",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/38/",
+            "verse": "14"
+          }
+        ]
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "language": "Hebrew",
+        "quote": "בָעֵינַ֖יִם עַל־הַדָּ֑רֶךְ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/38/",
+            "verse": "21"
+          }
+        ]
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "language": "Greek",
+        "quote": "ἐκάθισε πρὸς ταῖς πύλαις Αἰνὰν, ἥ ἐστιν ἐν παρόδῳ Θαμνά",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN38.htm",
+            "verse": "14"
+          }
+        ]
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "language": "Greek",
+        "quote": "ἐν Αἰνὰν ἐπὶ τῆς ὁδοῦ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN38.htm",
+            "verse": "21"
+          }
+        ]
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "language": "Hebrew",
+        "quote": "בְּמִשְׁמַ֗ר בֵּ֛ית שַׂ֥ר הַטַבָּחִ֖ים אֶל־בֵּ֣ית הַסֹּ֑הַר",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/40/",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "language": "Hebrew",
+        "quote": "וַ֠יִּפְקֹד שַׂ֣ר הַטַּבָּחִ֧ים אֶת־יֹוסֵ֛ף אִתָּ֖ם",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/40/",
+            "verse": "4"
+          }
+        ]
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "language": "Greek",
+        "quote": "ἐν φυλακῇ εἰς τὸ δεσμωτήριον",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN40.htm",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "language": "Greek",
+        "quote": "συνέστησεν ὁ ἀρχιδεσμώτης τῷ Ἰωσὴφ αὐτούς",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN40.htm",
+            "verse": "4"
+          }
+        ]
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "language": "Hebrew",
+        "quote": "לִרְאֹ֛ות אֶת־עֶרְוַ֥ת הָאָ֖רֶץ בָּאתֶֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "9"
+          }
+        ]
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "language": "Hebrew",
+        "quote": "כִּֽי־עֶרְוַ֥ת הָאָ֖רֶץ בָּאתֶ֥ם לִרְאֹֽות׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "language": "Greek",
+        "quote": "κατανοῆσαι τὰ ἴχνη τῆς χώρας ἥκατε",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "9"
+          }
+        ]
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "language": "Greek",
+        "quote": "τὰ ἴχνη τῆς γῆς ἤλθετε ἰδεῖν",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "language": "Hebrew",
+        "quote": "כֵּנִ֣ים אֲנַ֔חְנוּ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "language": "Hebrew",
+        "quote": "כִּ֥י כֵנִ֖ים אַתֶּ֑ם",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "33"
+          },
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "34"
+          }
+        ]
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "language": "Greek",
+        "quote": "εἰρηνικοί ἐσμεν",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "language": "Greek",
+        "quote": "ὅτι εἰρηνικοί ἐστε",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "33"
+          },
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "34"
+          }
+        ]
+      },
+      {
+        "id": "joseph-asks-after-jacob-greek-adds-blessed-be-that-man-genesis-43-28",
+        "language": "Hebrew",
+        "quote": "וַיֹּאמְר֗וּ שָׁלֹ֛ום לְעַבְדְּךָ֥ לְאָבִ֖ינוּ עֹודֶ֣נּוּ חָ֑י",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/43/",
+            "verse": "28"
+          }
+        ]
+      },
+      {
+        "id": "joseph-asks-after-jacob-greek-adds-blessed-be-that-man-genesis-43-28",
+        "language": "Greek",
+        "quote": "Οἱ δὲ εἶπαν, ὑγιαίνει ὁ παῖς σου ὁ πατὴρ ἡμῶν, ἔτι ζῇ. Καὶ εἶπεν, εὐλογημένος ὁ ἄνθρωπος ἐκεῖνος τῷ Θεῷ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN43.htm",
+            "verse": "28"
+          }
+        ]
+      },
+      {
+        "id": "the-slayer-at-the-gate-of-the-city-or-no-such-verses-joshua-20-4-6-greek",
+        "language": "Hebrew",
+        "quote": "וְנָ֞ס אֶל־אַחַ֣ת ׀ מֵהֶעָרִ֣ים הָאֵ֗לֶּה וְעָמַד֙ פֶּ֚תַח שַׁ֣עַר הָעִ֔יר וְדִבֶּ֛ר בְּאָזְנֵ֛י זִקְנֵ֥י הָעִֽיר־הַהִ֖יא אֶת־דְּבָרָ֑יו וְאָסְפ֨וּ אֹתֹ֤ו הָעִ֙ירָה֙ אֲלֵיהֶ֔ם וְנָתְנוּ־לֹ֥ו מָקֹ֖ום וְיָשַׁ֥ב עִמָּֽם׃ וְכִ֨י יִרְדֹּ֜ף גֹּאֵ֤ל הַדָּם֙ אַֽחֲרָ֔יו וְלֹֽא־יַסְגִּ֥רוּ אֶת־הָרֹצֵ֖חַ בְּיָדֹ֑ו כִּ֤י בִבְלִי־דַ֙עַת֙ הִכָּ֣ה אֶת־רֵעֵ֔הוּ וְלֹֽא־שֹׂנֵ֥א ה֛וּא לֹ֖ו מִתְּמֹ֥ול שִׁלְשֹֽׁום׃ וְיָשַׁ֣ב ׀ בָּעִ֣יר הַהִ֗יא עַד־עָמְדֹ֞ו לִפְנֵ֤י הָֽעֵדָה֙ לַמִּשְׁפָּ֔ט עַד־מֹות֙ הַכֹּהֵ֣ן הַגָּדֹ֔ול אֲשֶׁ֥ר יִהְיֶ֖ה בַּיָּמִ֣ים הָהֵ֑ם אָ֣ז ׀ יָשׁ֣וּב הָרֹוצֵ֗חַ וּבָ֤א אֶל־עִירֹו֙ וְאֶל־בֵּיתֹ֔ו אֶל־הָעִ֖יר אֲשֶׁר־נָ֥ס מִשָּֽׁם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/6/20/",
+            "verse": "4,5,6"
+          }
+        ]
+      },
+      {
+        "id": "the-slayer-at-the-gate-of-the-city-or-no-such-verses-joshua-20-4-6-greek",
+        "language": "Greek",
+        "quote": "Φυγαδευτήριον τῷ φονευτῇ τῷ πατάξαντι ψυχὴν ἀκουσίως· καὶ ἔσονται ὑμῖν αἱ πόλεις φυγαδευτήριον, καὶ οὐκ ἀποθανεῖται ὁ φονευτὴς ὑπὸ τοῦ ἀγχιστεύοντος τὸ αἷμα, ἕως ἂν καταστῇ· ἐναντίον τῆς συναγωγῆς εἰς κρίσιν. Καὶ διέστειλε τὴν Κάδης ἐν τῇ Γαλιλαίᾳ ἐν τῷ ὄρει τῷ Νεφθαλὶ, καὶ Συχὲμ ἐν τῷ ὄρει τῷ Ἐφραὶμ, καὶ τὴν πόλιν Ἀρβὸκ, αὕτη ἐστὶ Χεβρὼν, ἐν τῷ ὄρει τῷ Ἰούδα",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/JOS20.htm",
+            "verse": "3,7"
+          }
+        ]
+      },
+      {
+        "id": "buried-in-one-of-the-cities-of-gilead-or-in-his-city-gilead-judges-12-7-greek",
+        "language": "Hebrew",
+        "quote": "וַיִּשְׁפֹּ֥ט יִפְתָּ֛ח אֶת־יִשְׂרָאֵ֖ל שֵׁ֣שׁ שָׁנִ֑ים וַיָּ֗מָת יִפְתָּח֙ הַגִּלְעָדִ֔י וַיִּקָּבֵ֖ר בְּעָרֵ֥י גִלְעָֽד׃ פ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/7/12/",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "buried-in-one-of-the-cities-of-gilead-or-in-his-city-gilead-judges-12-7-greek",
+        "language": "Greek",
+        "quote": "Καὶ ἔκρινεν Ἰεφθάε τὸν Ἰσραὴλ ἓξ ἔτη· καὶ ἀπέθανεν Ἰεφθάε ὁ Γαλααδίτης, καὶ ἐτάφη ἐν πόλει αὐτοῦ Γαλαάδ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/JDG12.htm",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "ten-shekels-by-the-year-or-ten-of-silver-a-day-judges-17-10-greek",
+        "language": "Hebrew",
+        "quote": "וַיֹּאמֶר֩ לֹ֨ו מִיכָ֜ה שְׁבָ֣ה עִמָּדִ֗י וֶֽהְיֵה־לִי֮ לְאָ֣ב וּלְכֹהֵן֒ וְאָנֹכִ֨י אֶֽתֶּן־לְךָ֜ עֲשֶׂ֤רֶת כֶּ֙סֶף֙ לַיָּמִ֔ים וְעֵ֥רֶךְ בְּגָדִ֖ים וּמִחְיָתֶ֑ךָ וַיֵּ֖לֶךְ הַלֵּוִֽי׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/7/17/",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "ten-shekels-by-the-year-or-ten-of-silver-a-day-judges-17-10-greek",
+        "language": "Greek",
+        "quote": "Καὶ εἶπεν αὐτῷ Μιχαίας, κάθου μετʼ ἐμοῦ, καὶ γίνου μοι εἰς πατέρα καὶ εἰς ἱερέα, καὶ ἐγὼ δώσω σοι δέκα ἀργυρίου εἰς ἡμέραν, καὶ στολὴν ἱματίων, καὶ τὰ πρὸς ζωήν σου",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/JDG17.htm",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "an-house-of-gods-or-a-house-of-god-judges-17-5-greek",
+        "language": "Hebrew",
+        "quote": "וְהָאִ֣ישׁ מִיכָ֔ה לֹ֖ו בֵּ֣ית אֱלֹהִ֑ים וַיַּ֤עַשׂ אֵפֹוד֙ וּתְרָפִ֔ים וַיְמַלֵּ֗א אֶת־יַ֤ד אַחַד֙ מִבָּנָ֔יו וַיְהִי־לֹ֖ו לְכֹהֵֽן׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/7/17/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "an-house-of-gods-or-a-house-of-god-judges-17-5-greek",
+        "language": "Greek",
+        "quote": "Καὶ ὁ οἶκος Μιχαία αὐτῷ οἶκος Θεοῦ· καὶ ἐποίησεν ἐφὼδ καὶ θαραφίν· καὶ ἐπλήρωσε τὴν χεῖρα ἀπὸ ἑνὸς υἱῶν αὐτοῦ, καὶ ἐγένετο αὐτῷ εἰς ἱερέα",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/JDG17.htm",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "the-lord-hath-testified-against-me-or-the-lord-humbled-me-ruth-1-21-greek",
+        "language": "Hebrew",
+        "quote": "אֲנִי֙ מְלֵאָ֣ה הָלַ֔כְתִּי וְרֵיקָ֖ם הֱשִׁיבַ֣נִי יְהוָ֑ה לָ֣מָּה תִקְרֶ֤אנָה לִי֙ נָעֳמִ֔י וַֽיהוָה֙ עָ֣נָה בִ֔י וְשַׁדַּ֖י הֵ֥רַֽע לִֽי׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/8/1/",
+            "verse": "21"
+          }
+        ]
+      },
+      {
+        "id": "the-lord-hath-testified-against-me-or-the-lord-humbled-me-ruth-1-21-greek",
+        "language": "Greek",
+        "quote": "Ἐγὼ πλήρης ἐπορεύθην, καὶ κενὴν ἀπέστρεψέ με ὁ Κύριος· καὶ ἱνατί καλεῖτέ με Νωεμὶν, καὶ Κύριος ἐταπείνωσέ με, καὶ ὁ ἱκανὸς ἐκάκωσέ με",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/RUT01.htm",
+            "verse": "21"
+          }
+        ]
+      },
+      {
+        "id": "which-vail-is-done-away-in-christ-or-because-it-is-done-away-in-christ-2-corinthians-3-14-greek-new-testament",
+        "language": "Greek",
+        "quote": "ἀλλὰ ἐπωρώθη τὰ νοήματα αὐτῶν. ἄχρι γὰρ τῆς σήμερον ἡμέρας τὸ αὐτὸ κάλυμμα ἐπὶ τῇ ἀναγνώσει τῆς παλαιᾶς διαθήκης μένει μὴ ἀνακαλυπτόμενον, ὅτι ἐν Χριστῷ καταργεῖται·",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/3/",
+            "verse": "14"
+          }
+        ]
+      },
+      {
+        "id": "which-vail-is-done-away-in-christ-or-because-it-is-done-away-in-christ-2-corinthians-3-14-greek-new-testament",
+        "language": "Greek",
+        "quote": "αλλ επωρωθη τα νοηματα αυτων αχρι γαρ της σημερον το αυτο καλυμμα επι τη αναγνωσει της παλαιας διαθηκης μενει μη ανακαλυπτομενον ο τι εν χριστω καταργειται",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/3/",
+            "verse": "14"
+          }
+        ]
+      },
+      {
+        "id": "our-care-for-you-or-your-care-for-us-2-corinthians-7-12-greek-new-testament",
+        "language": "Greek",
+        "quote": "ἄρα εἰ καὶ ἔγραψα ὑμῖν, οὐκ ἕνεκεν τοῦ ἀδικήσαντος οὐδὲ ἕνεκεν τοῦ ἀδικηθέντος, ἀλλ’ ἕνεκεν τοῦ φανερωθῆναι τὴν σπουδὴν ὑμῶν τὴν ὑπὲρ ἡμῶν πρὸς ὑμᾶς ἐνώπιον τοῦ θεοῦ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/7/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "our-care-for-you-or-your-care-for-us-2-corinthians-7-12-greek-new-testament",
+        "language": "Greek",
+        "quote": "αρα ει και εγραψα υμιν ουχ εινεκεν του αδικησαντος ουδε εινεκεν του αδικηθεντος αλλ εινεκεν του φανερωθηναι την σπουδην ημων την υπερ υμων προς υμας ενωπιον του θεου",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/7/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "we-were-comforted-in-your-comfort-or-in-our-comfort-2-corinthians-7-13-greek-new-testament",
+        "language": "Greek",
+        "quote": "διὰ τοῦτο παρακεκλήμεθα. ἐπὶ δὲ τῇ παρακλήσει ἡμῶν περισσοτέρως μᾶλλον ἐχάρημεν ἐπὶ τῇ χαρᾷ Τίτου, ὅτι ἀναπέπαυται τὸ πνεῦμα αὐτοῦ ἀπὸ πάντων ὑμῶν·",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/7/",
+            "verse": "13"
+          }
+        ]
+      },
+      {
+        "id": "we-were-comforted-in-your-comfort-or-in-our-comfort-2-corinthians-7-13-greek-new-testament",
+        "language": "Greek",
+        "quote": "δια τουτο παρακεκλημεθα επι τη παρακλησει υμων περισσοτερως δε μαλλον εχαρημεν επι τη χαρα τιτου οτι αναπεπαυται το πνευμα αυτου απο παντων υμων",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/7/",
+            "verse": "13"
+          }
+        ]
+      },
+      {
+        "id": "whereof-ye-had-notice-before-or-promised-before-2-corinthians-9-5-greek-new-testament",
+        "language": "Greek",
+        "quote": "ἀναγκαῖον οὖν ἡγησάμην παρακαλέσαι τοὺς ἀδελφοὺς ἵνα προέλθωσιν εἰς ὑμᾶς καὶ προκαταρτίσωσιν τὴν προεπηγγελμένην εὐλογίαν ὑμῶν, ταύτην ἑτοίμην εἶναι οὕτως ὡς εὐλογίαν, μὴ ὡς πλεονεξίαν",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/9/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "whereof-ye-had-notice-before-or-promised-before-2-corinthians-9-5-greek-new-testament",
+        "language": "Greek",
+        "quote": "αναγκαιον ουν ηγησαμην παρακαλεσαι τους αδελφους ινα προελθωσιν εις υμας και προκαταρτισωσιν την προκατηγγελμενην ευλογιαν υμων ταυτην ετοιμην ειναι ουτως ως ευλογιαν και μη ωσπερ πλεονεξιαν",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/9/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "minister-bread-multiply-and-increase-or-will-supply-multiply-and-increase-2-corinthians-9-10-greek-new-testament",
+        "language": "Greek",
+        "quote": "ὁ δὲ ἐπιχορηγῶν σπέρμα τῷ σπείροντι καὶ ἄρτον εἰς βρῶσιν χορηγήσει καὶ πληθυνεῖ τὸν σπόρον ὑμῶν καὶ αὐξήσει τὰ γενήματα τῆς δικαιοσύνης ὑμῶν·",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/9/",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "minister-bread-multiply-and-increase-or-will-supply-multiply-and-increase-2-corinthians-9-10-greek-new-testament",
+        "language": "Greek",
+        "quote": "ο δε επιχορηγων σπερμα τω σπειροντι και αρτον εις βρωσιν χορηγησαι και πληθυναι τον σπορον υμων και αυξησαι τα γεννηματα της δικαιοσυνης υμων",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/9/",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "perfect-peace-and-at-such-a-time-or-let-the-word-and-answer-be-completed-ezra-7-12-greek",
+        "language": "Hebrew",
+        "quote": "אַ֨רְתַּחְשַׁ֔סְתְּא מֶ֖לֶךְ מַלְכַיָּ֑א לְעֶזְרָ֣א כָ֠הֲנָא סָפַ֨ר דָּתָ֜א דִּֽי־אֱלָ֧הּ שְׁמַיָּ֛א גְּמִ֖יר וּכְעֶֽנֶת׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/7/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "perfect-peace-and-at-such-a-time-or-let-the-word-and-answer-be-completed-ezra-7-12-greek",
+        "language": "Greek",
+        "quote": "Ἀρθασασθὰ βασιλεὺς βασιλέων Ἔσδρᾳ γραμματεῖ νόμου Κυρίου τοῦ Θεοῦ τοῦ οὐρανοῦ· τετελέσθω λόγος καὶ ἡ ἀπόκρισις",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR07.htm",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "banishment-or-chastisement-ezra-7-26-greek",
+        "language": "Hebrew",
+        "quote": "וְכָל־דִּי־לָא֩ לֶהֱוֵ֨א עָבֵ֜ד דָּתָ֣א דִֽי־אֱלָהָ֗ךְ וְדָתָא֙ דִּ֣י מַלְכָּ֔א אָסְפַּ֕רְנָא דִּינָ֕ה לֶהֱוֵ֥א מִתְעֲבֵ֖ד מִנֵּ֑הּ הֵ֤ן לְמֹות֙ הֵ֣ן [לִשְׁרֹשׁוּ כ] (לִשְׁרֹשִׁ֔י ק) הֵן־לַעֲנָ֥שׁ נִכְסִ֖ין וְלֶאֱסוּרִֽין׃ פ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/7/",
+            "verse": "26"
+          }
+        ]
+      },
+      {
+        "id": "banishment-or-chastisement-ezra-7-26-greek",
+        "language": "Greek",
+        "quote": "Καὶ πὰς ὃς ἂν μὴ ᾖ ποιῶν νόμον τοῦ Θεοῦ καὶ νόμον τοῦ βασιλέως ἑτοίμως, τὸ κρίμα ἔσται γινόμενον ἐξ αὐτοῦ, ἐάν τε εἰς θάνατον, ἐάν τε εἰς παιδείαν, ἐάν τε εἰς ζημίαν τοῦ βίου. ἐάν τε εἰς παράδοσιν",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR07.htm",
+            "verse": "26"
+          }
+        ]
+      },
+      {
+        "id": "our-priests-or-our-children-ezra-9-7-greek",
+        "language": "Hebrew",
+        "quote": "מִימֵ֣י אֲבֹתֵ֗ינוּ אֲנַ֙חְנוּ֙ בְּאַשְׁמָ֣ה גְדֹלָ֔ה עַ֖ד הַיֹּ֣ום הַזֶּ֑ה וּבַעֲוֹנֹתֵ֡ינוּ נִתַּ֡נּוּ אֲנַחְנוּ֩ מְלָכֵ֨ינוּ כֹהֲנֵ֜ינוּ בְּיַ֣ד ׀ מַלְכֵ֣י הָאֲרָצֹ֗ות בַּחֶ֜רֶב בַּשְּׁבִ֧י וּבַבִּזָּ֛ה וּבְבֹ֥שֶׁת פָּנִ֖ים כְּהַיֹּ֥ום הַזֶּֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/9/",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "our-priests-or-our-children-ezra-9-7-greek",
+        "language": "Greek",
+        "quote": "Ἀπὸ ἡμερῶν πατέρων ἡμῶν ἐσμὲν ἐν πλημμελείᾳ μεγάλῃ ἕως τῆς ἡμέρας ταύτης· καὶ ἐν ταῖς ἀνομίαις ἡμῶν παρεδόθημεν ἡμεῖς καὶ οἱ βασιλεῖς ἡμῶν καὶ οἱ υἱοὶ ἡμῶν ἐν χειρὶ βασιλέων τῶν ἐθνῶν ἐν ῥομφαίᾳ, καὶ ἐν αἰχμαλωσίᾳ, καιὶ ἐν διαρπαγῇ, καὶ ἐν αἰσχύνῃ προσώπου ἡμῶν, ὡς ἡ ἡμέρα αὕτη",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR09.htm",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "an-unclean-land-or-a-land-of-removal-ezra-9-11-greek",
+        "language": "Hebrew",
+        "quote": "אֲשֶׁ֣ר צִוִּ֗יתָ בְּיַ֨ד עֲבָדֶ֣יךָ הַנְּבִיאִים֮ לֵאמֹר֒ הָאָ֗רֶץ אֲשֶׁ֨ר אַתֶּ֤ם בָּאִים֙ לְרִשְׁתָּ֔הּ אֶ֤רֶץ נִדָּה֙ הִ֔יא בְּנִדַּ֖ת עַמֵּ֣י הָאֲרָצֹ֑ות בְּתֹועֲבֹֽתֵיהֶ֗ם אֲשֶׁ֥ר מִלְא֛וּהָ מִפֶּ֥ה אֶל־פֶּ֖ה בְּטֻמְאָתָֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/9/",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "an-unclean-land-or-a-land-of-removal-ezra-9-11-greek",
+        "language": "Greek",
+        "quote": "ἃς ἔδωκας ἡμῖν ἐν χειρὶ δούλων σου τῶν προφητῶν, λέγων, ἡ γῆ εἰς ἣν εἰσπορεύεσθε κληρονομῆσαι αὐτὴν, γῆ μετακινουμένη ἐστὶν ἐν μετακινήσει λαῶν τῶν ἐθνῶν ἐν μακρύμμασιν αὐτῶν, ὧν ἔπλησαν αὐτὴν ἀπὸ στόματος ἐπὶ στόμα ἐν ἀκαθαρσίαις αὐτῶν",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR09.htm",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "punished-less-than-deserved-and-would-not-thou-be-angry-ezra-9-13-14-greek",
+        "language": "Hebrew",
+        "quote": "וְאַֽחֲרֵי֙ כָּל־הַבָּ֣א עָלֵ֔ינוּ בְּמַעֲשֵׂ֙ינוּ֙ הָרָעִ֔ים וּבְאַשְׁמָתֵ֖נוּ הַגְּדֹלָ֑ה כִּ֣י ׀ אַתָּ֣ה אֱלֹהֵ֗ינוּ חָשַׂ֤כְתָּֽ לְמַ֙טָּה֙ מֵֽעֲוֹנֵ֔נוּ וְנָתַ֥תָּה לָּ֛נוּ פְּלֵיטָ֖ה כָּזֹֽאת׃ הֲנָשׁוּב֙ לְהָפֵ֣ר מִצְוֹתֶ֔יךָ וּ֨לְהִתְחַתֵּ֔ן בְּעַמֵּ֥י הַתֹּעֵבֹ֖ות הָאֵ֑לֶּה הֲלֹ֤וא תֶֽאֱנַף־בָּ֙נוּ֙ עַד־כַּלֵּ֔ה לְאֵ֥ין שְׁאֵרִ֖ית וּפְלֵיטָֽה׃ פ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/9/",
+            "verse": "13,14"
+          }
+        ]
+      },
+      {
+        "id": "punished-less-than-deserved-and-would-not-thou-be-angry-ezra-9-13-14-greek",
+        "language": "Greek",
+        "quote": "Καὶ μετὰ πᾶν τὸ ἐρχόμενον ἐφʼ ἡμᾶς ἐν ποιήμασιν ἡμῶν τοῖς πονηροῖς καὶ ἐν πλημμελείᾳ ἡμῶν τῇ μεγάλῃ, ὅτι οὐκ ἔστιν ὡς ὁ Θεὸς ἡμῶν, ὅτι ἐκούφισας ἡμῶν τὰς ἀνομίας, καὶ ἔδωκας ἡμῖν σωτηρίαν· Ὅτι ἐπεστρέψαμεν διασκεδάσαι ἐντολάς σου, καὶ ἐπιγαμβρεῦσαι τοῖς λαοῖς τῶν γαιῶν· μὴ παροξυνθῇς ἐν ἡμῖν ἕως συντελείας, τοῦ μὴ εἶναι ἐγκατάλειμμα καὶ διασωζόμενον",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR09.htm",
+            "verse": "13,14"
+          }
+        ]
+      },
+      {
+        "id": "other-men-have-our-lands-or-they-belong-to-the-honourable-nehemiah-5-5-greek",
+        "language": "Hebrew",
+        "quote": "וְעַתָּ֗ה כִּבְשַׂ֤ר אַחֵ֙ינוּ֙ בְּשָׂרֵ֔נוּ כִּבְנֵיהֶ֖ם בָּנֵ֑ינוּ וְהִנֵּ֣ה אֲנַ֣חְנוּ כֹ֠בְשִׁים אֶת־בָּנֵ֨ינוּ וְאֶת־בְּנֹתֵ֜ינוּ לַעֲבָדִ֗ים וְיֵ֨שׁ מִבְּנֹתֵ֤ינוּ נִכְבָּשֹׁות֙ וְאֵ֣ין לְאֵ֣ל יָדֵ֔נוּ וּשְׂדֹתֵ֥ינוּ וּכְרָמֵ֖ינוּ לַאֲחֵרִֽים׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/5/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "other-men-have-our-lands-or-they-belong-to-the-honourable-nehemiah-5-5-greek",
+        "language": "Greek",
+        "quote": "Καὶ νῦν ὡς σὰρξ ἀδελφῶν ἡμῶν, σὰρξ ἡμῶν· ὡς υἱοὶ αὐτῶν, υἱοὶ ἡμῶν· καὶ ἰδοὺ ἡμεῖς καταδυναστεύομεν τοὺς υἱοὺς ἡμῶν καὶ τὰς θυγατέρας ἡμῶν εἰς δούλους, καὶ εἰσὶν ἀπὸ θυγατέρων ἡμῶν καταδυναστευόμεναι, καὶ οὐκ ἔστι δύναμις χειρῶν ἡμῶν, καὶ ἀγροὶ ἡμῶν καὶ ἀμπελῶνες ἡμῶν τοῖς ἐντίμοις",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR15.htm",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "the-hundredth-part-or-of-the-money-nehemiah-5-11-greek",
+        "language": "Hebrew",
+        "quote": "הָשִׁיבוּ֩ נָ֨א לָהֶ֜ם כְּהַיֹּ֗ום שְׂדֹתֵיהֶ֛ם כַּרְמֵיהֶ֥ם זֵיתֵיהֶ֖ם וּבָתֵּיהֶ֑ם וּמְאַ֨ת הַכֶּ֤סֶף וְהַדָּגָן֙ הַתִּירֹ֣ושׁ וְהַיִּצְהָ֔ר אֲשֶׁ֥ר אַתֶּ֖ם נֹשִׁ֥ים בָּהֶֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/5/",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "the-hundredth-part-or-of-the-money-nehemiah-5-11-greek",
+        "language": "Greek",
+        "quote": "Ἐπιστρέψατε δὴ αὐτοῖς ὡς σήμερον ἀγροὺς αὐτῶν καὶ ἀμπελῶνας αὐτῶν καὶ ἐλαιῶνας αὐτῶν καὶ οἰκίας αὐτῶν, καὶ ἀπὸ τοῦ ἀργυρίου τὸν σῖτον καὶ τὸν οἶνον καὶ τὸ ἔλαιον ἐξενέγκατε ἑαυτοῖς",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR15.htm",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "bread-of-the-governor-or-bread-of-extortion-nehemiah-5-14-18-greek",
+        "language": "Hebrew",
+        "quote": "גַּ֞ם מִיֹּ֣ום ׀ אֲשֶׁר־צִוָּ֣ה אֹתִ֗י לִהְיֹ֣ות פֶּחָם֮ בְּאֶ֣רֶץ יְהוּדָה֒ מִשְּׁנַ֣ת עֶשְׂרִ֗ים וְ֠עַד שְׁנַ֨ת שְׁלֹשִׁ֤ים וּשְׁתַּ֙יִם֙ לְאַרְתַּחְשַׁ֣סְתְּא הַמֶּ֔לֶךְ שָׁנִ֖ים שְׁתֵּ֣ים עֶשְׂרֵ֑ה אֲנִ֣י וְאַחַ֔י לֶ֥חֶם הַפֶּ֖חָה לֹ֥א אָכַֽלְתִּי׃ וַאֲשֶׁר֩ הָיָ֨ה נַעֲשֶׂ֜ה לְיֹ֣ום אֶחָ֗ד שֹׁ֣ור אֶחָ֞ד צֹ֠אן שֵׁשׁ־בְּרֻרֹ֤ות וְצִפֳּרִים֙ נַֽעֲשׂוּ־לִ֔י וּבֵ֨ין עֲשֶׂ֧רֶת יָמִ֛ים בְּכָל־יַ֖יִן לְהַרְבֵּ֑ה וְעִם־זֶ֗ה לֶ֤חֶם הַפֶּחָה֙ לֹ֣א בִקַּ֔שְׁתִּי כִּֽי־כָֽבְדָ֥ה הָעֲבֹדָ֖ה עַל־הָעָ֥ם הַזֶּֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/5/",
+            "verse": "14,18"
+          }
+        ]
+      },
+      {
+        "id": "bread-of-the-governor-or-bread-of-extortion-nehemiah-5-14-18-greek",
+        "language": "Greek",
+        "quote": "Ἀπὸ ἡμέρας ἧς ἐνετείλατό μοι εἶναι εἰς ἄρχοντα αὐτῶν ἐν γῇ Ἰούδα, ἀπὸ ἔτους εἰκοστοῦ καὶ ἕως ἔτους τριακοστοῦ καὶ δευτέρου τῷ Ἀρθασασθὰ ἔτη δώδεκα, ἐγὼ καὶ οἱ ἀδελφοί μου βίαν αὐτῶν οὐκ ἔφαγον. Καὶ ἦν γινόμενον εἰς ἡμέραν μίαν μόσχος εἷς, καὶ πρόβατα ἓξ ἐκλεκτὰ καὶ χίμαρος ἐγίνοντό μοι· καὶ ἀναμέσον δέκα ἡμερῶν ἐν πᾶσιν οἶνος τῷ πλήθει· καὶ σὺν τούτοις ἄρτους τῆς βίας οὐκ ἐζήτησα, ὅτι βαρεῖα ἡ δουλεία ἐπὶ τὸν λαὸν τοῦτον",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR15.htm",
+            "verse": "14,18"
+          }
+        ]
+      },
+      {
+        "id": "fowls-or-a-goat-nehemiah-5-18-greek",
+        "language": "Hebrew",
+        "quote": "וַאֲשֶׁר֩ הָיָ֨ה נַעֲשֶׂ֜ה לְיֹ֣ום אֶחָ֗ד שֹׁ֣ור אֶחָ֞ד צֹ֠אן שֵׁשׁ־בְּרֻרֹ֤ות וְצִפֳּרִים֙ נַֽעֲשׂוּ־לִ֔י וּבֵ֨ין עֲשֶׂ֧רֶת יָמִ֛ים בְּכָל־יַ֖יִן לְהַרְבֵּ֑ה וְעִם־זֶ֗ה לֶ֤חֶם הַפֶּחָה֙ לֹ֣א בִקַּ֔שְׁתִּי כִּֽי־כָֽבְדָ֥ה הָעֲבֹדָ֖ה עַל־הָעָ֥ם הַזֶּֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/5/",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "fowls-or-a-goat-nehemiah-5-18-greek",
+        "language": "Greek",
+        "quote": "Καὶ ἦν γινόμενον εἰς ἡμέραν μίαν μόσχος εἷς, καὶ πρόβατα ἓξ ἐκλεκτὰ καὶ χίμαρος ἐγίνοντό μοι· καὶ ἀναμέσον δέκα ἡμερῶν ἐν πᾶσιν οἶνος τῷ πλήθει· καὶ σὺν τούτοις ἄρτους τῆς βίας οὐκ ἐζήτησα, ὅτι βαρεῖα ἡ δουλεία ἐπὶ τὸν λαὸν τοῦτον",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR15.htm",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "men-of-tyre-dwelt-therein-not-in-the-greek-nehemiah-13-16",
+        "language": "Hebrew",
+        "quote": "וְהַצֹּרִים֙ יָ֣שְׁבוּ בָ֔הּ מְבִיאִ֥ים דָּ֖אג וְכָל־מֶ֑כֶר וּמֹכְרִ֧ים בַּשַּׁבָּ֛ת לִבְנֵ֥י יְהוּדָ֖ה וּבִירוּשָׁלִָֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/13/",
+            "verse": "16"
+          }
+        ]
+      },
+      {
+        "id": "men-of-tyre-dwelt-therein-not-in-the-greek-nehemiah-13-16",
+        "language": "Greek",
+        "quote": "Καὶ ἐκάθισαν ἐν αὐτῇ φέροντες ἰχθὺν, καὶ πᾶσαν πρᾶσιν πωλοῦντες τῷ σαββάτῳ τοῖς υἱοῖς Ἰούδα καὶ ἐν Ἱερουσαλήμ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR23.htm",
+            "verse": "16"
+          }
+        ]
+      },
+      {
+        "id": "or-for-yourselves-not-in-the-greek-nehemiah-13-25",
+        "language": "Hebrew",
+        "quote": "וָאָרִ֤יב עִמָּם֙ וָאֲקַֽלְלֵ֔ם וָאַכֶּ֥ה מֵהֶ֛ם אֲנָשִׁ֖ים וָֽאֶמְרְטֵ֑ם וָאַשְׁבִּיעֵ֣ם בֵּֽאלֹהִ֗ים אִם־תִּתְּנ֤וּ בְנֹֽתֵיכֶם֙ לִבְנֵיהֶ֔ם וְאִם־תִּשְׂאוּ֙ מִבְּנֹ֣תֵיהֶ֔ם לִבְנֵיכֶ֖ם וְלָכֶֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/13/",
+            "verse": "25"
+          }
+        ]
+      },
+      {
+        "id": "or-for-yourselves-not-in-the-greek-nehemiah-13-25",
+        "language": "Greek",
+        "quote": "Καὶ ἐμαχεσάμην μετʼ αὐτῶν, καὶ καταρασάμην αὐτούς· καὶ ἐπάταξα ἐν αὐτοῖς ἄνδρας, καὶ ἐμαδάρωσα αὐτοὺς, καὶ ὤρκισα αὐτοὺς ἐν τῷ Θεῷ, ἐὰν δῶτε τὰς θυγατέρας ὑμῶν τοῖς υἱοῖς αὐτῶν, καὶ ἐὰν λάβητε ἀπὸ τῶν θυγατέρων αὐτῶν τοῖς υἱοῖς ὑμῶν",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR23.htm",
+            "verse": "25"
+          }
+        ]
+      },
+      {
+        "id": "before-the-angel-that-it-was-an-error-or-in-the-presence-of-god-it-was-ignorance-greek",
+        "language": "Hebrew",
+        "quote": "אַל־תִּתֵּ֤ן אֶת־פִּ֙יךָ֙ לַחֲטִ֣יא אֶת־בְּשָׂרֶ֔ךָ וְאַל־תֹּאמַר֙ לִפְנֵ֣י הַמַּלְאָ֔ךְ כִּ֥י שְׁגָגָ֖ה הִ֑יא לָ֣מָּה יִקְצֹ֤ף הָֽאֱלֹהִים֙ עַל־קֹולֶ֔ךָ וְחִבֵּ֖ל אֶת־מַעֲשֵׂ֥ה יָדֶֽיךָ׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/5/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "before-the-angel-that-it-was-an-error-or-in-the-presence-of-god-it-was-ignorance-greek",
+        "language": "Greek",
+        "quote": "Μὴ δῷς τὸ στόμα σου τοῦ ἐξαμαρτῆσαι τὴν σάρκα σου, καὶ μὴ εἴπῃς πρὸ προσώπου τοῦ Θεοῦ, ὅτι ἄγνοιά ἐστιν· ἵνα μὴ ὀργισθῇ ὁ Θεὸς ἐπὶ φωνῇ σου, καὶ διαφθείρῃ τὰ ποιήματα χειρῶν σου",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC05.htm",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "god-answereth-him-in-the-joy-of-his-heart-or-god-troubles-him-in-the-joy-of-his-heart-greek",
+        "language": "Hebrew",
+        "quote": "כִּ֚י לֹ֣א הַרְבֵּ֔ה יִזְכֹּ֖ר אֶת־יְמֵ֣י חַיָּ֑יו כִּ֧י הָאֱלֹהִ֛ים מַעֲנֶ֖ה בְּשִׂמְחַ֥ת לִבֹּֽו׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/5/",
+            "verse": "19"
+          }
+        ]
+      },
+      {
+        "id": "god-answereth-him-in-the-joy-of-his-heart-or-god-troubles-him-in-the-joy-of-his-heart-greek",
+        "language": "Greek",
+        "quote": "Ὅτι οὐ πολλὰ μνησθήσεται τὰς ἡμέρας τῆς ζωῆς αὐτοῦ, ὅτι ὁ Θεὸς περισπᾷ αὐτὸν ἐν εὐφροσύνῃ καρδίας αὐτοῦ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC05.htm",
+            "verse": "19"
+          }
+        ]
+      },
+      {
+        "id": "nor-known-any-thing-or-nor-known-rest-greek",
+        "language": "Hebrew",
+        "quote": "גַּם־שֶׁ֥מֶשׁ לֹא־רָאָ֖ה וְלֹ֣א יָדָ֑ע נַ֥חַת לָזֶ֖ה מִזֶּֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/6/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "nor-known-any-thing-or-nor-known-rest-greek",
+        "language": "Greek",
+        "quote": "Καί γε ἥλιον οὐκ εἶδε, καὶ οὐκ ἔγνω ἀναπαύσεις, τούτῳ ὑπὲρ τοῦτον·",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC06.htm",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "a-thousand-years-twice-told-or-the-returns-of-a-thousand-years-greek",
+        "language": "Hebrew",
+        "quote": "וְאִלּ֣וּ חָיָ֗ה אֶ֤לֶף שָׁנִים֙ פַּעֲמַ֔יִם וְטֹובָ֖ה לֹ֣א רָאָ֑ה הֲלֹ֛א אֶל־מָקֹ֥ום אֶחָ֖ד הַכֹּ֥ל הֹולֵֽךְ׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/6/",
+            "verse": "6"
+          }
+        ]
+      },
+      {
+        "id": "a-thousand-years-twice-told-or-the-returns-of-a-thousand-years-greek",
+        "language": "Greek",
+        "quote": "Καὶ ἔζησε χιλίων ἐτῶν καθόδους, καὶ ἀγαθωσύνην οὐκ εἶδε, μὴ οὐκ εἰς τόπον ἕνα πορεύεται τὰ πάντα",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC06.htm",
+            "verse": "6"
+          }
+        ]
+      },
+      {
+        "id": "a-gift-destroyeth-the-heart-or-oppression-destroys-his-noble-heart-greek",
+        "language": "Hebrew",
+        "quote": "כִּ֥י הָעֹ֖שֶׁק יְהֹולֵ֣ל חָכָ֑ם וִֽיאַבֵּ֥ד אֶת־לֵ֖ב מַתָּנָֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/7/",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "a-gift-destroyeth-the-heart-or-oppression-destroys-his-noble-heart-greek",
+        "language": "Greek",
+        "quote": "Ὅτι ἡ συκοφαντία περιφέρει σοφὸν, καὶ ἀπόλλυσι τὴν καρδίαν εὐγενείας αὐτοῦ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC07.htm",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "withdraw-not-thine-hand-or-defile-not-thine-hand-greek",
+        "language": "Hebrew",
+        "quote": "טֹ֚וב אֲשֶׁ֣ר תֶּאֱחֹ֣ז בָּזֶ֔ה וְגַם־מִזֶּ֖ה אַל־תַּנַּ֣ח אֶת־יָדֶ֑ךָ כִּֽי־יְרֵ֥א אֱלֹהִ֖ים יֵצֵ֥א אֶת־כֻּלָּֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/7/",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "withdraw-not-thine-hand-or-defile-not-thine-hand-greek",
+        "language": "Greek",
+        "quote": "Ἀγαθὸν τὸ ἀντέχεσθαί σε ἐν τούτῳ, καί γε ἀπὸ τούτου μὴ μιάνῃς τὴν χεῖρά σου, ὅτι φοβουμένοις τὸν Θεὸν ἐξελεύσεται τὰ πάντα",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC07.htm",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "walk-in-the-sight-of-thine-eyes-or-walk-blameless-and-not-in-the-sight-of-thine-eyes-greek",
+        "language": "Hebrew",
+        "quote": "שְׂמַ֧ח בָּח֣וּר בְּיַלְדוּתֶ֗יךָ וִֽיטִֽיבְךָ֤ לִבְּךָ֙ בִּימֵ֣י בְחוּרֹותֶ֔ךָ וְהַלֵּךְ֙ בְּדַרְכֵ֣י לִבְּךָ֔ וּבְמַרְאֵ֖י עֵינֶ֑יךָ וְדָ֕ע כִּ֧י עַל־כָּל־אֵ֛לֶּה יְבִֽיאֲךָ֥ הָאֱלֹהִ֖ים בַּמִּשְׁפָּֽט׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/11/",
+            "verse": "9"
+          }
+        ]
+      },
+      {
+        "id": "walk-in-the-sight-of-thine-eyes-or-walk-blameless-and-not-in-the-sight-of-thine-eyes-greek",
+        "language": "Greek",
+        "quote": "Εὐφραίνου νεανίσκε ἐν νεότητί σου, καὶ ἀγαθυνάτω σε ἡ καρδία σου ἐν ἡμέραις νεότητός σου, καὶ περιπάτει ἐν ὁδοῖς καρδίας σου ἄμωμος, καὶ μὴ ἐν ὁράσει ὀφθαλμῶν σου· καὶ γνῶθι ὅτι ἐπὶ πᾶσι τούτοις ἄξει σε ὁ Θεὸς ἐν κρίσει",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC11.htm",
+            "verse": "9"
+          }
+        ]
+      },
+      {
+        "id": "childhood-and-youth-are-vanity-or-youth-and-folly-are-vanity-greek",
+        "language": "Hebrew",
+        "quote": "וְהָסֵ֥ר כַּ֙עַס֙ מִלִּבֶּ֔ךָ וְהַעֲבֵ֥ר רָעָ֖ה מִבְּשָׂרֶ֑ךָ כִּֽי־הַיַּלְד֥וּת וְהַֽשַּׁחֲר֖וּת הָֽבֶל׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/11/",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "childhood-and-youth-are-vanity-or-youth-and-folly-are-vanity-greek",
+        "language": "Greek",
+        "quote": "Καὶ ἀπόστησον θυμὸν ἀπὸ καρδίας σου, καὶ πάραγε πονηρίαν ἀπὸ σαρκός σου, ὅτι ἡ νεότης καὶ ἡ ἄνοια ματαιότης",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC11.htm",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+        "language": "Hebrew",
+        "quote": "הִשְׁבַּ֥עְתִּי אֶתְכֶ֖ם בְּנֹ֣ות יְרוּשָׁלִָ֑ם אִֽם־תִּמְצְאוּ֙ אֶת־דֹּודִ֔י מַה־תַּגִּ֣ידוּ לֹ֔ו שֶׁחֹולַ֥ת אַהֲבָ֖ה אָֽנִי׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/22/5/",
+            "verse": "8"
+          }
+        ]
+      },
+      {
+        "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+        "language": "Greek",
+        "quote": "Ὥρκισα ὑμᾶς θυγατέρες Ἱερουσαλὴμ ἐν ταῖς δυνάμεσι καὶ ἐν ταῖς ἰσχύσεσι τοῦ ἀγροῦ· ἐὰν εὕρητε τὸν ἀδελφιδόν μου, τί ἀπαγγείλητε αὐτῷ; ὅτι τετρωμένη ἀγάπης ἐγώ εἰμι",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/SNG05.htm",
+            "verse": "8"
+          }
+        ]
+      },
+      {
+        "id": "i-would-instruct-me-in-my-mothers-house-or-into-the-chamber-of-her-that-conceived-me-greek",
+        "language": "Hebrew",
+        "quote": "אֶנְהָֽגֲךָ֗ אֲבִֽיאֲךָ֛ אֶל־בֵּ֥ית אִמִּ֖י תְּלַמְּדֵ֑נִי אַשְׁקְךָ֙ מִיַּ֣יִן הָרֶ֔קַח מֵעֲסִ֖יס רִמֹּנִֽי׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/22/8/",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "i-would-instruct-me-in-my-mothers-house-or-into-the-chamber-of-her-that-conceived-me-greek",
+        "language": "Greek",
+        "quote": "Παραλήψομαί σε, εἰσάξω σε εἰς οἶκον μητρός μου καὶ εἰς ταμεῖον τῆς συλλαβούσης με· ποτιῶ σε ἀπὸ οἴνου τοῦ μυρεψικοῦ, ἀπὸ νάματος ῥοῶν μου",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/SNG08.htm",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "i-charge-you-that-ye-stir-not-up-or-by-the-forces-of-the-field-that-ye-stir-not-up-greek",
+        "language": "Hebrew",
+        "quote": "הִשְׁבַּ֥עְתִּי אֶתְכֶ֖ם בְּנֹ֣ות יְרוּשָׁלִָ֑ם מַה־תָּעִ֧ירוּ ׀ וּֽמַה־תְּעֹֽרְר֛וּ אֶת־הָאַהֲבָ֖ה עַ֥ד שֶׁתֶּחְפָּֽץ׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/22/8/",
+            "verse": "4"
+          }
+        ]
+      },
+      {
+        "id": "i-charge-you-that-ye-stir-not-up-or-by-the-forces-of-the-field-that-ye-stir-not-up-greek",
+        "language": "Greek",
+        "quote": "Ὥρκισα ὑμᾶς θυγατέρες Ἱερουσαλὴμ ἐν ταῖς ἰσχύσεσι τοῦ ἀγροῦ· ἐὰν ἐγείρητε καὶ ἐὰν ἐξεγείρητε τὴν ἀγάπην ἕως ἂν θελήσῃ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/SNG08.htm",
+            "verse": "4"
+          }
+        ]
+      },
+      {
+        "id": "who-is-this-that-cometh-up-from-the-wilderness-or-who-is-this-that-comes-up-all-white-greek",
+        "language": "Hebrew",
+        "quote": "מִ֣י זֹ֗את עֹלָה֙ מִן־הַמִּדְבָּ֔ר מִתְרַפֶּ֖קֶת עַל־דֹּודָ֑הּ תַּ֤חַת הַתַּפּ֙וּחַ֙ עֹֽורַרְתִּ֔יךָ מָּה חִבְּלַ֣תְךָ אִמֶּ֔ךָ שָׁ֖מָּה חִבְּלָ֥ה יְלָדַֽתְךָ׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/22/8/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "who-is-this-that-cometh-up-from-the-wilderness-or-who-is-this-that-comes-up-all-white-greek",
+        "language": "Greek",
+        "quote": "Τίς αὕτη ἡ ἀναβαίνουσα λελευκανθισμένη, ἐπιστηριζομένη ἐπὶ τὸν ἀδελφιδὸν αὐτῆς; Ὑπὸ μῆλον ἐξήγειρά σε· ἐκεῖ ὠδίνησέ σε ἡ μήτηρ σου, ἐκεῖ ὠδίνησέ σε ἡ τεκοῦσά σε",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/SNG08.htm",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "esther-drew-near-and-touched-the-sceptre-or-the-king-laid-it-on-her-neck-esther-5-2-greek",
+        "language": "Hebrew",
+        "quote": "וַתִּקְרַ֣ב אֶסְתֵּ֔ר וַתִּגַּ֖ע בְּרֹ֥אשׁ הַשַּׁרְבִֽיט",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/17/5/",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "esther-drew-near-and-touched-the-sceptre-or-the-king-laid-it-on-her-neck-esther-5-2-greek",
+        "language": "Greek",
+        "quote": "Καὶ ἄρας τὴν χρυσῆν ῥάβδον, ἐπέθηκεν ἐπὶ τὸν τράχηλον αὐτῆς, καὶ ἠσπάσατο αὐτὴν, καὶ εἶπε, λάλησόν μοι",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ESG05.htm",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "she-obtained-favour-in-his-sight-or-god-changed-the-spirit-of-the-king-esther-5-1-greek",
+        "language": "Hebrew",
+        "quote": "נָשְׂאָ֥ה חֵ֖ן בְּעֵינָ֑יו",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/17/5/",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "she-obtained-favour-in-his-sight-or-god-changed-the-spirit-of-the-king-esther-5-1-greek",
+        "language": "Greek",
+        "quote": "Καὶ μετέβαλεν ὁ Θεὸς τὸ πνεῦμα τοῦ βασιλέως εἰς πραύτητα, καὶ ἀγωνιάσας ἀνεπήδησεν ἀπὸ τοῦ θρόνου αὐτοῦ, καὶ ἀνέλαβεν αὐτὴν ἐπὶ τὰς ἀγκάλας αὐτοῦ, μέχρις οὗ κατέστη· καὶ παρεκάλει αὐτὴν λόγοις εἰρηνικοῖς",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ESG05.htm",
+            "verse": "1e"
+          }
+        ]
+      }
+    ],
+    "finished_spans": [
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "quote": "הַנֶּֽגְבָּה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "1"
+          }
+        ]
+      },
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "quote": "εἰς τὴν ἔρημον",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "1"
+          },
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "quote": "מִנֶּ֖גֶב וְעַד־בֵּֽית־אֵ֑ל",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "abram-went-up-into-the-south-or-into-the-wilderness-genesis-13-1-13-3",
+        "quote": "εἰς τὴν ἔρημον ἕως Βαιθὴλ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "lot-dwelt-in-the-cities-of-the-plain-toward-sodom-or-a-city-in-sodom-genesis-13-12",
+        "quote": "וְלֹ֗וט יָשַׁב֙ בְּעָרֵ֣י הַכִּכָּ֔ר וַיֶּאֱהַ֖ל עַד־סְדֹֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "lot-dwelt-in-the-cities-of-the-plain-toward-sodom-or-a-city-in-sodom-genesis-13-12",
+        "quote": "Λὼτ δὲ κατῴκησεν ἐν πόλει τῶν περιχώρων, καὶ ἐσκήνωσεν ἐν Σοδόμοις",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "abram-seed-as-the-dust-of-the-earth-or-the-sand-of-the-earth-genesis-13-16",
+        "quote": "כַּעֲפַ֣ר הָאָ֑רֶץ אֲשֶׁ֣ר ׀ אִם־יוּכַ֣ל אִ֗ישׁ לִמְנֹות֙ אֶת־עֲפַ֣ר הָאָ֔רֶץ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "16"
+          }
+        ]
+      },
+      {
+        "id": "abram-seed-as-the-dust-of-the-earth-or-the-sand-of-the-earth-genesis-13-16",
+        "quote": "ὡς τὴν ἄμμον τῆς γῆς· εἰ δύναταί τις ἐξαριθμῆσαι τὴν ἄμμον τῆς γῆς",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "16"
+          }
+        ]
+      },
+      {
+        "id": "plain-of-mamre-or-oaks-of-mamre-genesis-13-18",
+        "quote": "וַיֵּ֛שֶׁב בְּאֵלֹנֵ֥י מַמְרֵ֖א",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/13/",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "plain-of-mamre-or-oaks-of-mamre-genesis-13-18",
+        "quote": "κατῴκησε παρὰ τὴν δρῦν τὴν Μαμβρῆ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN13.htm",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "quote": "וְיִשְׁתַּחֲוּ֥וּ לְךָ֖ בְּנֵ֣י אִמֶּ֑ךָ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/27/",
+            "verse": "29"
+          }
+        ]
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "quote": "προσκυνήσουσί σοι οἱ υἱοὶ τοῦ πατρός σου",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN27.htm",
+            "verse": "29"
+          }
+        ]
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "quote": "יַֽעַבְד֣וּךָ עַמִּ֗ים",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/27/",
+            "verse": "29"
+          }
+        ]
+      },
+      {
+        "id": "thy-mothers-sons-bow-down-or-sons-of-thy-father-genesis-27-29",
+        "quote": "δουλευσάτωσάν σοι ἔθνη, καὶ προσκυνησάτωσάν σοι ἄρχοντες",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN27.htm",
+            "verse": "29"
+          }
+        ]
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "quote": "וְחִירָ֛ה רֵעֵ֥הוּ הָעֲדֻלָּמִ֖י",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/38/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "quote": "Εἰρὰς ὁ ποιμὴν αὐτοῦ ὁ Ὀδολλαμίτης",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN38.htm",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "quote": "בְּיַד֙ רֵעֵ֣הוּ הָֽעֲדֻלָּמִ֔י",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/38/",
+            "verse": "20"
+          }
+        ]
+      },
+      {
+        "id": "judah-and-hirah-his-friend-or-his-shepherd-genesis-38-12-38-20",
+        "quote": "ἐν χειρὶ τοῦ ποιμένος αὐτοῦ τοῦ Ὀδολλαμείτου",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN38.htm",
+            "verse": "20"
+          }
+        ]
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "quote": "וַתֵּ֙שֶׁב֙ בְּפֶ֣תַח עֵינַ֔יִם אֲשֶׁ֖ר עַל־דֶּ֣רֶךְ תִּמְנָ֑תָה",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/38/",
+            "verse": "14"
+          }
+        ]
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "quote": "ἐκάθισε πρὸς ταῖς πύλαις Αἰνὰν, ἥ ἐστιν ἐν παρόδῳ Θαμνά",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN38.htm",
+            "verse": "14"
+          }
+        ]
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "quote": "בָעֵינַ֖יִם עַל־הַדָּ֑רֶךְ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/38/",
+            "verse": "21"
+          }
+        ]
+      },
+      {
+        "id": "tamar-sat-in-an-open-place-or-at-the-gates-of-aenan-genesis-38-14-38-21",
+        "quote": "ἐν Αἰνὰν ἐπὶ τῆς ὁδοῦ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN38.htm",
+            "verse": "21"
+          }
+        ]
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "quote": "בְּמִשְׁמַ֗ר בֵּ֛ית שַׂ֥ר הַטַבָּחִ֖ים אֶל־בֵּ֣ית הַסֹּ֑הַר",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/40/",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "quote": "ἐν φυλακῇ εἰς τὸ δεσμωτήριον",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN40.htm",
+            "verse": "3"
+          }
+        ]
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "quote": "וַ֠יִּפְקֹד שַׂ֣ר הַטַּבָּחִ֧ים אֶת־יֹוסֵ֛ף אִתָּ֖ם",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/40/",
+            "verse": "4"
+          }
+        ]
+      },
+      {
+        "id": "captain-of-the-guard-charged-joseph-or-the-chief-of-the-prison-genesis-40-3-40-4",
+        "quote": "συνέστησεν ὁ ἀρχιδεσμώτης τῷ Ἰωσὴφ αὐτούς",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN40.htm",
+            "verse": "4"
+          }
+        ]
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "quote": "לִרְאֹ֛ות אֶת־עֶרְוַ֥ת הָאָ֖רֶץ בָּאתֶֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "9"
+          }
+        ]
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "quote": "κατανοῆσαι τὰ ἴχνη τῆς χώρας ἥκατε",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "9"
+          }
+        ]
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "quote": "כִּֽי־עֶרְוַ֥ת הָאָ֖רֶץ בָּאתֶ֥ם לִרְאֹֽות׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "nakedness-of-the-land-or-the-tracks-of-the-land-genesis-42-9-42-12",
+        "quote": "τὰ ἴχνη τῆς γῆς ἤλθετε ἰδεῖν",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "quote": "כֵּנִ֣ים אֲנַ֔חְנוּ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "quote": "εἰρηνικοί ἐσμεν",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "quote": "כִּ֥י כֵנִ֖ים אַתֶּ֑ם",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "33"
+          },
+          {
+            "url": "https://bolls.life/get-text/WLC/1/42/",
+            "verse": "34"
+          }
+        ]
+      },
+      {
+        "id": "we-are-true-men-or-we-are-peaceable-genesis-42-11",
+        "quote": "ὅτι εἰρηνικοί ἐστε",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "33"
+          },
+          {
+            "url": "https://ebible.org/grcbrent/GEN42.htm",
+            "verse": "34"
+          }
+        ]
+      },
+      {
+        "id": "joseph-asks-after-jacob-greek-adds-blessed-be-that-man-genesis-43-28",
+        "quote": "וַיֹּאמְר֗וּ שָׁלֹ֛ום לְעַבְדְּךָ֥ לְאָבִ֖ינוּ עֹודֶ֣נּוּ חָ֑י",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/1/43/",
+            "verse": "28"
+          }
+        ]
+      },
+      {
+        "id": "joseph-asks-after-jacob-greek-adds-blessed-be-that-man-genesis-43-28",
+        "quote": "Οἱ δὲ εἶπαν, ὑγιαίνει ὁ παῖς σου ὁ πατὴρ ἡμῶν, ἔτι ζῇ. Καὶ εἶπεν, εὐλογημένος ὁ ἄνθρωπος ἐκεῖνος τῷ Θεῷ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/GEN43.htm",
+            "verse": "28"
+          }
+        ]
+      },
+      {
+        "id": "the-slayer-at-the-gate-of-the-city-or-no-such-verses-joshua-20-4-6-greek",
+        "quote": "וְנָ֞ס אֶל־אַחַ֣ת ׀ מֵהֶעָרִ֣ים הָאֵ֗לֶּה וְעָמַד֙ פֶּ֚תַח שַׁ֣עַר הָעִ֔יר וְדִבֶּ֛ר בְּאָזְנֵ֛י זִקְנֵ֥י הָעִֽיר־הַהִ֖יא אֶת־דְּבָרָ֑יו וְאָסְפ֨וּ אֹתֹ֤ו הָעִ֙ירָה֙ אֲלֵיהֶ֔ם וְנָתְנוּ־לֹ֥ו מָקֹ֖ום וְיָשַׁ֥ב עִמָּֽם׃ וְכִ֨י יִרְדֹּ֜ף גֹּאֵ֤ל הַדָּם֙ אַֽחֲרָ֔יו וְלֹֽא־יַסְגִּ֥רוּ אֶת־הָרֹצֵ֖חַ בְּיָדֹ֑ו כִּ֤י בִבְלִי־דַ֙עַת֙ הִכָּ֣ה אֶת־רֵעֵ֔הוּ וְלֹֽא־שֹׂנֵ֥א ה֛וּא לֹ֖ו מִתְּמֹ֥ול שִׁלְשֹֽׁום׃ וְיָשַׁ֣ב ׀ בָּעִ֣יר הַהִ֗יא עַד־עָמְדֹ֞ו לִפְנֵ֤י הָֽעֵדָה֙ לַמִּשְׁפָּ֔ט עַד־מֹות֙ הַכֹּהֵ֣ן הַגָּדֹ֔ול אֲשֶׁ֥ר יִהְיֶ֖ה בַּיָּמִ֣ים הָהֵ֑ם אָ֣ז ׀ יָשׁ֣וּב הָרֹוצֵ֗חַ וּבָ֤א אֶל־עִירֹו֙ וְאֶל־בֵּיתֹ֔ו אֶל־הָעִ֖יר אֲשֶׁר־נָ֥ס מִשָּֽׁם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/6/20/",
+            "verse": "4,5,6"
+          }
+        ]
+      },
+      {
+        "id": "the-slayer-at-the-gate-of-the-city-or-no-such-verses-joshua-20-4-6-greek",
+        "quote": "Φυγαδευτήριον τῷ φονευτῇ τῷ πατάξαντι ψυχὴν ἀκουσίως· καὶ ἔσονται ὑμῖν αἱ πόλεις φυγαδευτήριον, καὶ οὐκ ἀποθανεῖται ὁ φονευτὴς ὑπὸ τοῦ ἀγχιστεύοντος τὸ αἷμα, ἕως ἂν καταστῇ· ἐναντίον τῆς συναγωγῆς εἰς κρίσιν. Καὶ διέστειλε τὴν Κάδης ἐν τῇ Γαλιλαίᾳ ἐν τῷ ὄρει τῷ Νεφθαλὶ, καὶ Συχὲμ ἐν τῷ ὄρει τῷ Ἐφραὶμ, καὶ τὴν πόλιν Ἀρβὸκ, αὕτη ἐστὶ Χεβρὼν, ἐν τῷ ὄρει τῷ Ἰούδα.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/JOS20.htm",
+            "verse": "3,7"
+          }
+        ]
+      },
+      {
+        "id": "buried-in-one-of-the-cities-of-gilead-or-in-his-city-gilead-judges-12-7-greek",
+        "quote": "וַיִּשְׁפֹּ֥ט יִפְתָּ֛ח אֶת־יִשְׂרָאֵ֖ל שֵׁ֣שׁ שָׁנִ֑ים וַיָּ֗מָת יִפְתָּח֙ הַגִּלְעָדִ֔י וַיִּקָּבֵ֖ר בְּעָרֵ֥י גִלְעָֽד׃ פ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/7/12/",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "buried-in-one-of-the-cities-of-gilead-or-in-his-city-gilead-judges-12-7-greek",
+        "quote": "Καὶ ἔκρινεν Ἰεφθάε τὸν Ἰσραὴλ ἓξ ἔτη· καὶ ἀπέθανεν Ἰεφθάε ὁ Γαλααδίτης, καὶ ἐτάφη ἐν πόλει αὐτοῦ Γαλαάδ.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/JDG12.htm",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "ten-shekels-by-the-year-or-ten-of-silver-a-day-judges-17-10-greek",
+        "quote": "וַיֹּאמֶר֩ לֹ֨ו מִיכָ֜ה שְׁבָ֣ה עִמָּדִ֗י וֶֽהְיֵה־לִי֮ לְאָ֣ב וּלְכֹהֵן֒ וְאָנֹכִ֨י אֶֽתֶּן־לְךָ֜ עֲשֶׂ֤רֶת כֶּ֙סֶף֙ לַיָּמִ֔ים וְעֵ֥רֶךְ בְּגָדִ֖ים וּמִחְיָתֶ֑ךָ וַיֵּ֖לֶךְ הַלֵּוִֽי׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/7/17/",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "ten-shekels-by-the-year-or-ten-of-silver-a-day-judges-17-10-greek",
+        "quote": "Καὶ εἶπεν αὐτῷ Μιχαίας, κάθου μετʼ ἐμοῦ, καὶ γίνου μοι εἰς πατέρα καὶ εἰς ἱερέα, καὶ ἐγὼ δώσω σοι δέκα ἀργυρίου εἰς ἡμέραν, καὶ στολὴν ἱματίων, καὶ τὰ πρὸς ζωήν σου.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/JDG17.htm",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "an-house-of-gods-or-a-house-of-god-judges-17-5-greek",
+        "quote": "וְהָאִ֣ישׁ מִיכָ֔ה לֹ֖ו בֵּ֣ית אֱלֹהִ֑ים וַיַּ֤עַשׂ אֵפֹוד֙ וּתְרָפִ֔ים וַיְמַלֵּ֗א אֶת־יַ֤ד אַחַד֙ מִבָּנָ֔יו וַיְהִי־לֹ֖ו לְכֹהֵֽן׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/7/17/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "an-house-of-gods-or-a-house-of-god-judges-17-5-greek",
+        "quote": "Καὶ ὁ οἶκος Μιχαία αὐτῷ οἶκος Θεοῦ· καὶ ἐποίησεν ἐφὼδ καὶ θαραφίν· καὶ ἐπλήρωσε τὴν χεῖρα ἀπὸ ἑνὸς υἱῶν αὐτοῦ, καὶ ἐγένετο αὐτῷ εἰς ἱερέα.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/JDG17.htm",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "the-lord-hath-testified-against-me-or-the-lord-humbled-me-ruth-1-21-greek",
+        "quote": "אֲנִי֙ מְלֵאָ֣ה הָלַ֔כְתִּי וְרֵיקָ֖ם הֱשִׁיבַ֣נִי יְהוָ֑ה לָ֣מָּה תִקְרֶ֤אנָה לִי֙ נָעֳמִ֔י וַֽיהוָה֙ עָ֣נָה בִ֔י וְשַׁדַּ֖י הֵ֥רַֽע לִֽי׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/8/1/",
+            "verse": "21"
+          }
+        ]
+      },
+      {
+        "id": "the-lord-hath-testified-against-me-or-the-lord-humbled-me-ruth-1-21-greek",
+        "quote": "Ἐγὼ πλήρης ἐπορεύθην, καὶ κενὴν ἀπέστρεψέ με ὁ Κύριος· καὶ ἱνατί καλεῖτέ με Νωεμὶν, καὶ Κύριος ἐταπείνωσέ με, καὶ ὁ ἱκανὸς ἐκάκωσέ με;",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/RUT01.htm",
+            "verse": "21"
+          }
+        ]
+      },
+      {
+        "id": "perfect-peace-and-at-such-a-time-or-let-the-word-and-answer-be-completed-ezra-7-12-greek",
+        "quote": "אַ֨רְתַּחְשַׁ֔סְתְּא מֶ֖לֶךְ מַלְכַיָּ֑א לְעֶזְרָ֣א כָ֠הֲנָא סָפַ֨ר דָּתָ֜א דִּֽי־אֱלָ֧הּ שְׁמַיָּ֛א גְּמִ֖יר וּכְעֶֽנֶת׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/7/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "perfect-peace-and-at-such-a-time-or-let-the-word-and-answer-be-completed-ezra-7-12-greek",
+        "quote": "Ἀρθασασθὰ βασιλεὺς βασιλέων Ἔσδρᾳ γραμματεῖ νόμου Κυρίου τοῦ Θεοῦ τοῦ οὐρανοῦ· τετελέσθω λόγος καὶ ἡ ἀπόκρισις.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR07.htm",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "banishment-or-chastisement-ezra-7-26-greek",
+        "quote": "וְכָל־דִּי־לָא֩ לֶהֱוֵ֨א עָבֵ֜ד דָּתָ֣א דִֽי־אֱלָהָ֗ךְ וְדָתָא֙ דִּ֣י מַלְכָּ֔א אָסְפַּ֕רְנָא דִּינָ֕ה לֶהֱוֵ֥א מִתְעֲבֵ֖ד מִנֵּ֑הּ הֵ֤ן לְמֹות֙ הֵ֣ן",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/7/",
+            "verse": "26"
+          }
+        ]
+      },
+      {
+        "id": "banishment-or-chastisement-ezra-7-26-greek",
+        "quote": "Καὶ πὰς ὃς ἂν μὴ ᾖ ποιῶν νόμον τοῦ Θεοῦ καὶ νόμον τοῦ βασιλέως ἑτοίμως, τὸ κρίμα ἔσται γινόμενον ἐξ αὐτοῦ, ἐάν τε εἰς θάνατον, ἐάν τε εἰς παιδείαν, ἐάν τε εἰς ζημίαν τοῦ βίου. ἐάν τε εἰς παράδοσιν.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR07.htm",
+            "verse": "26"
+          }
+        ]
+      },
+      {
+        "id": "our-priests-or-our-children-ezra-9-7-greek",
+        "quote": "מִימֵ֣י אֲבֹתֵ֗ינוּ אֲנַ֙חְנוּ֙ בְּאַשְׁמָ֣ה גְדֹלָ֔ה עַ֖ד הַיֹּ֣ום הַזֶּ֑ה וּבַעֲוֹנֹתֵ֡ינוּ נִתַּ֡נּוּ אֲנַחְנוּ֩ מְלָכֵ֨ינוּ כֹהֲנֵ֜ינוּ בְּיַ֣ד ׀ מַלְכֵ֣י הָאֲרָצֹ֗ות בַּחֶ֜רֶב בַּשְּׁבִ֧י וּבַבִּזָּ֛ה וּבְבֹ֥שֶׁת פָּנִ֖ים כְּהַיֹּ֥ום הַזֶּֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/9/",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "our-priests-or-our-children-ezra-9-7-greek",
+        "quote": "Ἀπὸ ἡμερῶν πατέρων ἡμῶν ἐσμὲν ἐν πλημμελείᾳ μεγάλῃ ἕως τῆς ἡμέρας ταύτης· καὶ ἐν ταῖς ἀνομίαις ἡμῶν παρεδόθημεν ἡμεῖς καὶ οἱ βασιλεῖς ἡμῶν καὶ οἱ υἱοὶ ἡμῶν ἐν χειρὶ βασιλέων τῶν ἐθνῶν ἐν ῥομφαίᾳ, καὶ ἐν αἰχμαλωσίᾳ, καιὶ ἐν διαρπαγῇ, καὶ ἐν αἰσχύνῃ προσώπου ἡμῶν, ὡς ἡ ἡμέρα αὕτη.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR09.htm",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "an-unclean-land-or-a-land-of-removal-ezra-9-11-greek",
+        "quote": "אֲשֶׁ֣ר צִוִּ֗יתָ בְּיַ֨ד עֲבָדֶ֣יךָ הַנְּבִיאִים֮ לֵאמֹר֒ הָאָ֗רֶץ אֲשֶׁ֨ר אַתֶּ֤ם בָּאִים֙ לְרִשְׁתָּ֔הּ אֶ֤רֶץ נִדָּה֙ הִ֔יא בְּנִדַּ֖ת עַמֵּ֣י הָאֲרָצֹ֑ות בְּתֹועֲבֹֽתֵיהֶ֗ם אֲשֶׁ֥ר מִלְא֛וּהָ מִפֶּ֥ה אֶל־פֶּ֖ה בְּטֻמְאָתָֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/9/",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "an-unclean-land-or-a-land-of-removal-ezra-9-11-greek",
+        "quote": "ἃς ἔδωκας ἡμῖν ἐν χειρὶ δούλων σου τῶν προφητῶν, λέγων, ἡ γῆ εἰς ἣν εἰσπορεύεσθε κληρονομῆσαι αὐτὴν, γῆ μετακινουμένη ἐστὶν ἐν μετακινήσει λαῶν τῶν ἐθνῶν ἐν μακρύμμασιν αὐτῶν, ὧν ἔπλησαν αὐτὴν ἀπὸ στόματος ἐπὶ στόμα ἐν ἀκαθαρσίαις αὐτῶν.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR09.htm",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "punished-less-than-deserved-and-would-not-thou-be-angry-ezra-9-13-14-greek",
+        "quote": "וְאַֽחֲרֵי֙ כָּל־הַבָּ֣א עָלֵ֔ינוּ בְּמַעֲשֵׂ֙ינוּ֙ הָרָעִ֔ים וּבְאַשְׁמָתֵ֖נוּ הַגְּדֹלָ֑ה כִּ֣י ׀ אַתָּ֣ה אֱלֹהֵ֗ינוּ חָשַׂ֤כְתָּֽ לְמַ֙טָּה֙ מֵֽעֲוֹנֵ֔נוּ וְנָתַ֥תָּה לָּ֛נוּ פְּלֵיטָ֖ה כָּזֹֽאת׃ הֲנָשׁוּב֙ לְהָפֵ֣ר מִצְוֹתֶ֔יךָ וּ֨לְהִתְחַתֵּ֔ן בְּעַמֵּ֥י הַתֹּעֵבֹ֖ות הָאֵ֑לֶּה הֲלֹ֤וא תֶֽאֱנַף־בָּ֙נוּ֙ עַד־כַּלֵּ֔ה לְאֵ֥ין שְׁאֵרִ֖ית וּפְלֵיטָֽה׃  פ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/15/9/",
+            "verse": "13,14"
+          }
+        ]
+      },
+      {
+        "id": "punished-less-than-deserved-and-would-not-thou-be-angry-ezra-9-13-14-greek",
+        "quote": "Καὶ μετὰ πᾶν τὸ ἐρχόμενον ἐφʼ ἡμᾶς ἐν ποιήμασιν ἡμῶν τοῖς πονηροῖς καὶ ἐν πλημμελείᾳ ἡμῶν τῇ μεγάλῃ, ὅτι οὐκ ἔστιν ὡς ὁ Θεὸς ἡμῶν, ὅτι ἐκούφισας ἡμῶν τὰς ἀνομίας, καὶ ἔδωκας ἡμῖν σωτηρίαν· Ὅτι ἐπεστρέψαμεν διασκεδάσαι ἐντολάς σου, καὶ ἐπιγαμβρεῦσαι τοῖς λαοῖς τῶν γαιῶν· μὴ παροξυνθῇς ἐν ἡμῖν ἕως συντελείας, τοῦ μὴ εἶναι ἐγκατάλειμμα καὶ διασωζόμενον.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR09.htm",
+            "verse": "13,14"
+          }
+        ]
+      },
+      {
+        "id": "other-men-have-our-lands-or-they-belong-to-the-honourable-nehemiah-5-5-greek",
+        "quote": "וְעַתָּ֗ה כִּבְשַׂ֤ר אַחֵ֙ינוּ֙ בְּשָׂרֵ֔נוּ כִּבְנֵיהֶ֖ם בָּנֵ֑ינוּ וְהִנֵּ֣ה אֲנַ֣חְנוּ כֹ֠בְשִׁים אֶת־בָּנֵ֨ינוּ וְאֶת־בְּנֹתֵ֜ינוּ לַעֲבָדִ֗ים וְיֵ֨שׁ מִבְּנֹתֵ֤ינוּ נִכְבָּשֹׁות֙ וְאֵ֣ין לְאֵ֣ל יָדֵ֔נוּ וּשְׂדֹתֵ֥ינוּ וּכְרָמֵ֖ינוּ לַאֲחֵרִֽים׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/5/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "other-men-have-our-lands-or-they-belong-to-the-honourable-nehemiah-5-5-greek",
+        "quote": "Καὶ νῦν ὡς σὰρξ ἀδελφῶν ἡμῶν, σὰρξ ἡμῶν· ὡς υἱοὶ αὐτῶν, υἱοὶ ἡμῶν· καὶ ἰδοὺ ἡμεῖς καταδυναστεύομεν τοὺς υἱοὺς ἡμῶν καὶ τὰς θυγατέρας ἡμῶν εἰς δούλους, καὶ εἰσὶν ἀπὸ θυγατέρων ἡμῶν καταδυναστευόμεναι, καὶ οὐκ ἔστι δύναμις χειρῶν ἡμῶν, καὶ ἀγροὶ ἡμῶν καὶ ἀμπελῶνες ἡμῶν τοῖς ἐντίμοις.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR15.htm",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "the-hundredth-part-or-of-the-money-nehemiah-5-11-greek",
+        "quote": "הָשִׁיבוּ֩ נָ֨א לָהֶ֜ם כְּהַיֹּ֗ום שְׂדֹתֵיהֶ֛ם כַּרְמֵיהֶ֥ם זֵיתֵיהֶ֖ם וּבָתֵּיהֶ֑ם וּמְאַ֨ת הַכֶּ֤סֶף וְהַדָּגָן֙ הַתִּירֹ֣ושׁ וְהַיִּצְהָ֔ר אֲשֶׁ֥ר אַתֶּ֖ם נֹשִׁ֥ים בָּהֶֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/5/",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "the-hundredth-part-or-of-the-money-nehemiah-5-11-greek",
+        "quote": "Ἐπιστρέψατε δὴ αὐτοῖς ὡς σήμερον ἀγροὺς αὐτῶν καὶ ἀμπελῶνας αὐτῶν καὶ ἐλαιῶνας αὐτῶν καὶ οἰκίας αὐτῶν, καὶ ἀπὸ τοῦ ἀργυρίου τὸν σῖτον καὶ τὸν οἶνον καὶ τὸ ἔλαιον ἐξενέγκατε ἑαυτοῖς.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR15.htm",
+            "verse": "11"
+          }
+        ]
+      },
+      {
+        "id": "bread-of-the-governor-or-bread-of-extortion-nehemiah-5-14-18-greek",
+        "quote": "גַּ֞ם מִיֹּ֣ום ׀ אֲשֶׁר־צִוָּ֣ה אֹתִ֗י לִהְיֹ֣ות פֶּחָם֮ בְּאֶ֣רֶץ יְהוּדָה֒ מִשְּׁנַ֣ת עֶשְׂרִ֗ים וְ֠עַד שְׁנַ֨ת שְׁלֹשִׁ֤ים וּשְׁתַּ֙יִם֙ לְאַרְתַּחְשַׁ֣סְתְּא הַמֶּ֔לֶךְ שָׁנִ֖ים שְׁתֵּ֣ים עֶשְׂרֵ֑ה אֲנִ֣י וְאַחַ֔י לֶ֥חֶם הַפֶּ֖חָה לֹ֥א אָכַֽלְתִּי׃ וַאֲשֶׁר֩ הָיָ֨ה נַעֲשֶׂ֜ה לְיֹ֣ום אֶחָ֗ד שֹׁ֣ור אֶחָ֞ד צֹ֠אן שֵׁשׁ־בְּרֻרֹ֤ות וְצִפֳּרִים֙ נַֽעֲשׂוּ־לִ֔י וּבֵ֨ין עֲשֶׂ֧רֶת יָמִ֛ים בְּכָל־יַ֖יִן לְהַרְבֵּ֑ה וְעִם־זֶ֗ה לֶ֤חֶם הַפֶּחָה֙ לֹ֣א בִקַּ֔שְׁתִּי כִּֽי־כָֽבְדָ֥ה הָעֲבֹדָ֖ה עַל־הָעָ֥ם הַזֶּֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/5/",
+            "verse": "14,18"
+          }
+        ]
+      },
+      {
+        "id": "bread-of-the-governor-or-bread-of-extortion-nehemiah-5-14-18-greek",
+        "quote": "Ἀπὸ ἡμέρας ἧς ἐνετείλατό μοι εἶναι εἰς ἄρχοντα αὐτῶν ἐν γῇ Ἰούδα, ἀπὸ ἔτους εἰκοστοῦ καὶ ἕως ἔτους τριακοστοῦ καὶ δευτέρου τῷ Ἀρθασασθὰ ἔτη δώδεκα, ἐγὼ καὶ οἱ ἀδελφοί μου βίαν αὐτῶν οὐκ ἔφαγον. Καὶ ἦν γινόμενον εἰς ἡμέραν μίαν μόσχος εἷς, καὶ πρόβατα ἓξ ἐκλεκτὰ καὶ χίμαρος ἐγίνοντό μοι· καὶ ἀναμέσον δέκα ἡμερῶν ἐν πᾶσιν οἶνος τῷ πλήθει· καὶ σὺν τούτοις ἄρτους τῆς βίας οὐκ ἐζήτησα, ὅτι βαρεῖα ἡ δουλεία ἐπὶ τὸν λαὸν τοῦτον.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR15.htm",
+            "verse": "14,18"
+          }
+        ]
+      },
+      {
+        "id": "fowls-or-a-goat-nehemiah-5-18-greek",
+        "quote": "וַאֲשֶׁר֩ הָיָ֨ה נַעֲשֶׂ֜ה לְיֹ֣ום אֶחָ֗ד שֹׁ֣ור אֶחָ֞ד צֹ֠אן שֵׁשׁ־בְּרֻרֹ֤ות וְצִפֳּרִים֙ נַֽעֲשׂוּ־לִ֔י וּבֵ֨ין עֲשֶׂ֧רֶת יָמִ֛ים בְּכָל־יַ֖יִן לְהַרְבֵּ֑ה וְעִם־זֶ֗ה לֶ֤חֶם הַפֶּחָה֙ לֹ֣א בִקַּ֔שְׁתִּי כִּֽי־כָֽבְדָ֥ה הָעֲבֹדָ֖ה עַל־הָעָ֥ם הַזֶּֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/5/",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "fowls-or-a-goat-nehemiah-5-18-greek",
+        "quote": "Καὶ ἦν γινόμενον εἰς ἡμέραν μίαν μόσχος εἷς, καὶ πρόβατα ἓξ ἐκλεκτὰ καὶ χίμαρος ἐγίνοντό μοι· καὶ ἀναμέσον δέκα ἡμερῶν ἐν πᾶσιν οἶνος τῷ πλήθει· καὶ σὺν τούτοις ἄρτους τῆς βίας οὐκ ἐζήτησα, ὅτι βαρεῖα ἡ δουλεία ἐπὶ τὸν λαὸν τοῦτον.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR15.htm",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "men-of-tyre-dwelt-therein-not-in-the-greek-nehemiah-13-16",
+        "quote": "וְהַצֹּרִים֙ יָ֣שְׁבוּ בָ֔הּ מְבִיאִ֥ים דָּ֖אג וְכָל־מֶ֑כֶר וּמֹכְרִ֧ים בַּשַּׁבָּ֛ת לִבְנֵ֥י יְהוּדָ֖ה וּבִירוּשָׁלִָֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/13/",
+            "verse": "16"
+          }
+        ]
+      },
+      {
+        "id": "men-of-tyre-dwelt-therein-not-in-the-greek-nehemiah-13-16",
+        "quote": "Καὶ ἐκάθισαν ἐν αὐτῇ φέροντες ἰχθὺν, καὶ πᾶσαν πρᾶσιν πωλοῦντες τῷ σαββάτῳ τοῖς υἱοῖς Ἰούδα καὶ ἐν Ἱερουσαλήμ.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR23.htm",
+            "verse": "16"
+          }
+        ]
+      },
+      {
+        "id": "or-for-yourselves-not-in-the-greek-nehemiah-13-25",
+        "quote": "וָאָרִ֤יב עִמָּם֙ וָאֲקַֽלְלֵ֔ם וָאַכֶּ֥ה מֵהֶ֛ם אֲנָשִׁ֖ים וָֽאֶמְרְטֵ֑ם וָאַשְׁבִּיעֵ֣ם בֵּֽאלֹהִ֗ים אִם־תִּתְּנ֤וּ בְנֹֽתֵיכֶם֙ לִבְנֵיהֶ֔ם וְאִם־תִּשְׂאוּ֙ מִבְּנֹ֣תֵיהֶ֔ם לִבְנֵיכֶ֖ם וְלָכֶֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/16/13/",
+            "verse": "25"
+          }
+        ]
+      },
+      {
+        "id": "or-for-yourselves-not-in-the-greek-nehemiah-13-25",
+        "quote": "Καὶ ἐμαχεσάμην μετʼ αὐτῶν, καὶ καταρασάμην αὐτούς· καὶ ἐπάταξα ἐν αὐτοῖς ἄνδρας, καὶ ἐμαδάρωσα αὐτοὺς, καὶ ὤρκισα αὐτοὺς ἐν τῷ Θεῷ, ἐὰν δῶτε τὰς θυγατέρας ὑμῶν τοῖς υἱοῖς αὐτῶν, καὶ ἐὰν λάβητε ἀπὸ τῶν θυγατέρων αὐτῶν τοῖς υἱοῖς ὑμῶν.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/EZR23.htm",
+            "verse": "25"
+          }
+        ]
+      },
+      {
+        "id": "esther-drew-near-and-touched-the-sceptre-or-the-king-laid-it-on-her-neck-esther-5-2-greek",
+        "quote": "וַתִּקְרַ֣ב אֶסְתֵּ֔ר וַתִּגַּ֖ע בְּרֹ֥אשׁ הַשַּׁרְבִֽיט",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/17/5/",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "esther-drew-near-and-touched-the-sceptre-or-the-king-laid-it-on-her-neck-esther-5-2-greek",
+        "quote": "Καὶ ἄρας τὴν χρυσῆν ῥάβδον, ἐπέθηκεν ἐπὶ τὸν τράχηλον αὐτῆς, καὶ ἠσπάσατο αὐτὴν, καὶ εἶπε, λάλησόν μοι.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ESG05.htm",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "בַּלַּ֣יְלָה הַה֔וּא נָדְדָ֖ה שְׁנַ֣ת הַמֶּ֑לֶךְ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/17/6/",
+            "verse": "1"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "Ὁ δε Κύριος ἀπέστησε τὸν ὕπνον ἀπὸ τοὺ βασιλέως τὴν νύκτα ἐκείνην",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ESG06.htm",
+            "verse": "1"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "וְאֶת־מַאֲמַ֤ר מָרְדֳּכַי֙ אֶסְתֵּ֣ר עֹשָׂ֔ה",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/17/2/",
+            "verse": "20"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "οὕτως γὰρ ἐνετείλατο αὐτῇ Μαρδοχαῖος, φοβεῖσθαι τὸν Θεὸν, καὶ ποιεῖν τὰ προστάγματα αὐτοῦ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ESG02.htm",
+            "verse": "20"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "וּלְבַקֵּ֥שׁ מִלְּפָנָ֖יו עַל־עַמָּֽהּ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/17/4/",
+            "verse": "8"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "ἐπικάλεσαι τὸν Κύριον, καὶ λάλησον τῷ βασιλεῖ περὶ ἡμῶν, ῥύσαι ἡμᾶς ἐκ θανάτου.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ESG04.htm",
+            "verse": "8"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "כִּֽי־נָפֹ֥ול תִּפֹּ֖ול לְפָנָֽיו",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/17/6/",
+            "verse": "13"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "καὶ οὐ μὴ δύνῃ αὐτὸν ἀμύνασθαι, ὅτι Θεὸς ζῶν μετʼ αὐτοῦ.",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ESG06.htm",
+            "verse": "13"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "נָשְׂאָ֥ה חֵ֖ן בְּעֵינָ֑יו",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/17/5/",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "god-named-in-the-greek-of-esther-where-the-kjv-names-none",
+        "quote": "Καὶ μετέβαλεν ὁ Θεὸς τὸ πνεῦμα τοῦ βασιλέως εἰς πραύτητα, καὶ ἀγωνιάσας ἀνεπήδησεν ἀπὸ τοῦ θρόνου αὐτοῦ, καὶ ἀνέλαβεν αὐτὴν ἐπὶ τὰς ἀγκάλας αὐτοῦ, μέχρις οὗ κατέστη· καὶ παρεκάλει αὐτὴν λόγοις εἰρηνικοῖς",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ESG05.htm",
+            "verse": "1e"
+          }
+        ]
+      },
+      {
+        "id": "which-vail-is-done-away-in-christ-or-because-it-is-done-away-in-christ-2-corinthians-3-14-greek-new-testament",
+        "quote": "ἀλλὰ ἐπωρώθη τὰ νοήματα αὐτῶν. ἄχρι γὰρ τῆς σήμερον ἡμέρας τὸ αὐτὸ κάλυμμα ἐπὶ τῇ ἀναγνώσει τῆς παλαιᾶς διαθήκης μένει μὴ ἀνακαλυπτόμενον, ὅτι ἐν Χριστῷ καταργεῖται·",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/3/",
+            "verse": "14"
+          }
+        ]
+      },
+      {
+        "id": "which-vail-is-done-away-in-christ-or-because-it-is-done-away-in-christ-2-corinthians-3-14-greek-new-testament",
+        "quote": "αλλ επωρωθη τα νοηματα αυτων αχρι γαρ της σημερον το αυτο καλυμμα επι τη αναγνωσει της παλαιας διαθηκης μενει μη ανακαλυπτομενον ο τι εν χριστω καταργειται",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/3/",
+            "verse": "14"
+          }
+        ]
+      },
+      {
+        "id": "our-care-for-you-or-your-care-for-us-2-corinthians-7-12-greek-new-testament",
+        "quote": "ἄρα εἰ καὶ ἔγραψα ὑμῖν, οὐκ ἕνεκεν τοῦ ἀδικήσαντος οὐδὲ ἕνεκεν τοῦ ἀδικηθέντος, ἀλλ’ ἕνεκεν τοῦ φανερωθῆναι τὴν σπουδὴν ὑμῶν τὴν ὑπὲρ ἡμῶν πρὸς ὑμᾶς ἐνώπιον τοῦ θεοῦ",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/7/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "our-care-for-you-or-your-care-for-us-2-corinthians-7-12-greek-new-testament",
+        "quote": "αρα ει και εγραψα υμιν ουχ εινεκεν του αδικησαντος ουδε εινεκεν του αδικηθεντος αλλ εινεκεν του φανερωθηναι την σπουδην ημων την υπερ υμων προς υμας ενωπιον του θεου",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/7/",
+            "verse": "12"
+          }
+        ]
+      },
+      {
+        "id": "we-were-comforted-in-your-comfort-or-in-our-comfort-2-corinthians-7-13-greek-new-testament",
+        "quote": "διὰ τοῦτο παρακεκλήμεθα. ἐπὶ δὲ τῇ παρακλήσει ἡμῶν περισσοτέρως μᾶλλον ἐχάρημεν ἐπὶ τῇ χαρᾷ Τίτου, ὅτι ἀναπέπαυται τὸ πνεῦμα αὐτοῦ ἀπὸ πάντων ὑμῶν·",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/7/",
+            "verse": "13"
+          }
+        ]
+      },
+      {
+        "id": "we-were-comforted-in-your-comfort-or-in-our-comfort-2-corinthians-7-13-greek-new-testament",
+        "quote": "δια τουτο παρακεκλημεθα επι τη παρακλησει υμων περισσοτερως δε μαλλον εχαρημεν επι τη χαρα τιτου οτι αναπεπαυται το πνευμα αυτου απο παντων υμων",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/7/",
+            "verse": "13"
+          }
+        ]
+      },
+      {
+        "id": "whereof-ye-had-notice-before-or-promised-before-2-corinthians-9-5-greek-new-testament",
+        "quote": "ἀναγκαῖον οὖν ἡγησάμην παρακαλέσαι τοὺς ἀδελφοὺς ἵνα προέλθωσιν εἰς ὑμᾶς καὶ προκαταρτίσωσιν τὴν προεπηγγελμένην εὐλογίαν ὑμῶν, ταύτην ἑτοίμην εἶναι οὕτως ὡς εὐλογίαν, μὴ ὡς πλεονεξίαν",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/9/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "whereof-ye-had-notice-before-or-promised-before-2-corinthians-9-5-greek-new-testament",
+        "quote": "αναγκαιον ουν ηγησαμην παρακαλεσαι τους αδελφους ινα προελθωσιν εις υμας και προκαταρτισωσιν την προκατηγγελμενην ευλογιαν υμων ταυτην ετοιμην ειναι ουτως ως ευλογιαν και μη ωσπερ πλεονεξιαν",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/9/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "minister-bread-multiply-and-increase-or-will-supply-multiply-and-increase-2-corinthians-9-10-greek-new-testament",
+        "quote": "ὁ δὲ ἐπιχορηγῶν σπέρμα τῷ σπείροντι καὶ ἄρτον εἰς βρῶσιν χορηγήσει καὶ πληθυνεῖ τὸν σπόρον ὑμῶν καὶ αὐξήσει τὰ γενήματα τῆς δικαιοσύνης ὑμῶν·",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TISCH/47/9/",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "minister-bread-multiply-and-increase-or-will-supply-multiply-and-increase-2-corinthians-9-10-greek-new-testament",
+        "quote": "ο δε επιχορηγων σπερμα τω σπειροντι και αρτον εις βρωσιν χορηγησαι και πληθυναι τον σπορον υμων και αυξησαι τα γεννηματα της δικαιοσυνης υμων",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/TR/47/9/",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "before-the-angel-that-it-was-an-error-or-in-the-presence-of-god-it-was-ignorance-greek",
+        "quote": "אַל־תִּתֵּ֤ן אֶת־פִּ֙יךָ֙ לַחֲטִ֣יא אֶת־בְּשָׂרֶ֔ךָ וְאַל־תֹּאמַר֙ לִפְנֵ֣י הַמַּלְאָ֔ךְ כִּ֥י שְׁגָגָ֖ה הִ֑יא לָ֣מָּה יִקְצֹ֤ף הָֽאֱלֹהִים֙ עַל־קֹולֶ֔ךָ וְחִבֵּ֖ל אֶת־מַעֲשֵׂ֥ה יָדֶֽיךָ׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/5/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "before-the-angel-that-it-was-an-error-or-in-the-presence-of-god-it-was-ignorance-greek",
+        "quote": "Μὴ δῷς τὸ στόμα σου τοῦ ἐξαμαρτῆσαι τὴν σάρκα σου, καὶ μὴ εἴπῃς πρὸ προσώπου τοῦ Θεοῦ, ὅτι ἄγνοιά ἐστιν· ἵνα μὴ ὀργισθῇ ὁ Θεὸς ἐπὶ φωνῇ σου, καὶ διαφθείρῃ τὰ ποιήματα χειρῶν σου",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC05.htm",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "god-answereth-him-in-the-joy-of-his-heart-or-god-troubles-him-in-the-joy-of-his-heart-greek",
+        "quote": "כִּ֚י לֹ֣א הַרְבֵּ֔ה יִזְכֹּ֖ר אֶת־יְמֵ֣י חַיָּ֑יו כִּ֧י הָאֱלֹהִ֛ים מַעֲנֶ֖ה בְּשִׂמְחַ֥ת לִבֹּֽו׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/5/",
+            "verse": "19"
+          }
+        ]
+      },
+      {
+        "id": "god-answereth-him-in-the-joy-of-his-heart-or-god-troubles-him-in-the-joy-of-his-heart-greek",
+        "quote": "Ὅτι οὐ πολλὰ μνησθήσεται τὰς ἡμέρας τῆς ζωῆς αὐτοῦ, ὅτι ὁ Θεὸς περισπᾷ αὐτὸν ἐν εὐφροσύνῃ καρδίας αὐτοῦ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC05.htm",
+            "verse": "19"
+          }
+        ]
+      },
+      {
+        "id": "nor-known-any-thing-or-nor-known-rest-greek",
+        "quote": "גַּם־שֶׁ֥מֶשׁ לֹא־רָאָ֖ה וְלֹ֣א יָדָ֑ע נַ֥חַת לָזֶ֖ה מִזֶּֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/6/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "nor-known-any-thing-or-nor-known-rest-greek",
+        "quote": "Καί γε ἥλιον οὐκ εἶδε, καὶ οὐκ ἔγνω ἀναπαύσεις, τούτῳ ὑπὲρ τοῦτον·",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC06.htm",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "a-thousand-years-twice-told-or-the-returns-of-a-thousand-years-greek",
+        "quote": "וְאִלּ֣וּ חָיָ֗ה אֶ֤לֶף שָׁנִים֙ פַּעֲמַ֔יִם וְטֹובָ֖ה לֹ֣א רָאָ֑ה הֲלֹ֛א אֶל־מָקֹ֥ום אֶחָ֖ד הַכֹּ֥ל הֹולֵֽךְ׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/6/",
+            "verse": "6"
+          }
+        ]
+      },
+      {
+        "id": "a-thousand-years-twice-told-or-the-returns-of-a-thousand-years-greek",
+        "quote": "Καὶ ἔζησε χιλίων ἐτῶν καθόδους, καὶ ἀγαθωσύνην οὐκ εἶδε, μὴ οὐκ εἰς τόπον ἕνα πορεύεται τὰ πάντα",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC06.htm",
+            "verse": "6"
+          }
+        ]
+      },
+      {
+        "id": "a-gift-destroyeth-the-heart-or-oppression-destroys-his-noble-heart-greek",
+        "quote": "כִּ֥י הָעֹ֖שֶׁק יְהֹולֵ֣ל חָכָ֑ם וִֽיאַבֵּ֥ד אֶת־לֵ֖ב מַתָּנָֽה׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/7/",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "a-gift-destroyeth-the-heart-or-oppression-destroys-his-noble-heart-greek",
+        "quote": "Ὅτι ἡ συκοφαντία περιφέρει σοφὸν, καὶ ἀπόλλυσι τὴν καρδίαν εὐγενείας αὐτοῦ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC07.htm",
+            "verse": "7"
+          }
+        ]
+      },
+      {
+        "id": "withdraw-not-thine-hand-or-defile-not-thine-hand-greek",
+        "quote": "טֹ֚וב אֲשֶׁ֣ר תֶּאֱחֹ֣ז בָּזֶ֔ה וְגַם־מִזֶּ֖ה אַל־תַּנַּ֣ח אֶת־יָדֶ֑ךָ כִּֽי־יְרֵ֥א אֱלֹהִ֖ים יֵצֵ֥א אֶת־כֻּלָּֽם׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/7/",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "withdraw-not-thine-hand-or-defile-not-thine-hand-greek",
+        "quote": "Ἀγαθὸν τὸ ἀντέχεσθαί σε ἐν τούτῳ, καί γε ἀπὸ τούτου μὴ μιάνῃς τὴν χεῖρά σου, ὅτι φοβουμένοις τὸν Θεὸν ἐξελεύσεται τὰ πάντα",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC07.htm",
+            "verse": "18"
+          }
+        ]
+      },
+      {
+        "id": "walk-in-the-sight-of-thine-eyes-or-walk-blameless-and-not-in-the-sight-of-thine-eyes-greek",
+        "quote": "שְׂמַ֧ח בָּח֣וּר בְּיַלְדוּתֶ֗יךָ וִֽיטִֽיבְךָ֤ לִבְּךָ֙ בִּימֵ֣י בְחוּרֹותֶ֔ךָ וְהַלֵּךְ֙ בְּדַרְכֵ֣י לִבְּךָ֔ וּבְמַרְאֵ֖י עֵינֶ֑יךָ וְדָ֕ע כִּ֧י עַל־כָּל־אֵ֛לֶּה יְבִֽיאֲךָ֥ הָאֱלֹהִ֖ים בַּמִּשְׁפָּֽט׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/11/",
+            "verse": "9"
+          }
+        ]
+      },
+      {
+        "id": "walk-in-the-sight-of-thine-eyes-or-walk-blameless-and-not-in-the-sight-of-thine-eyes-greek",
+        "quote": "Εὐφραίνου νεανίσκε ἐν νεότητί σου, καὶ ἀγαθυνάτω σε ἡ καρδία σου ἐν ἡμέραις νεότητός σου, καὶ περιπάτει ἐν ὁδοῖς καρδίας σου ἄμωμος, καὶ μὴ ἐν ὁράσει ὀφθαλμῶν σου· καὶ γνῶθι ὅτι ἐπὶ πᾶσι τούτοις ἄξει σε ὁ Θεὸς ἐν κρίσει",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC11.htm",
+            "verse": "9"
+          }
+        ]
+      },
+      {
+        "id": "childhood-and-youth-are-vanity-or-youth-and-folly-are-vanity-greek",
+        "quote": "וְהָסֵ֥ר כַּ֙עַס֙ מִלִּבֶּ֔ךָ וְהַעֲבֵ֥ר רָעָ֖ה מִבְּשָׂרֶ֑ךָ כִּֽי־הַיַּלְד֥וּת וְהַֽשַּׁחֲר֖וּת הָֽבֶל׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/21/11/",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "childhood-and-youth-are-vanity-or-youth-and-folly-are-vanity-greek",
+        "quote": "Καὶ ἀπόστησον θυμὸν ἀπὸ καρδίας σου, καὶ πάραγε πονηρίαν ἀπὸ σαρκός σου, ὅτι ἡ νεότης καὶ ἡ ἄνοια ματαιότης",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/ECC11.htm",
+            "verse": "10"
+          }
+        ]
+      },
+      {
+        "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+        "quote": "הִשְׁבַּ֥עְתִּי אֶתְכֶ֖ם בְּנֹ֣ות יְרוּשָׁלִָ֑ם אִֽם־תִּמְצְאוּ֙ אֶת־דֹּודִ֔י מַה־תַּגִּ֣ידוּ לֹ֔ו שֶׁחֹולַ֥ת אַהֲבָ֖ה אָֽנִי׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/22/5/",
+            "verse": "8"
+          }
+        ]
+      },
+      {
+        "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+        "quote": "Ὥρκισα ὑμᾶς θυγατέρες Ἱερουσαλὴμ ἐν ταῖς δυνάμεσι καὶ ἐν ταῖς ἰσχύσεσι τοῦ ἀγροῦ· ἐὰν εὕρητε τὸν ἀδελφιδόν μου, τί ἀπαγγείλητε αὐτῷ; ὅτι τετρωμένη ἀγάπης ἐγώ εἰμι",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/SNG05.htm",
+            "verse": "8"
+          }
+        ]
+      },
+      {
+        "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+        "quote": "הִשְׁבַּ֥עְתִּי אֶתְכֶ֖ם בְּנֹ֣ות יְרוּשָׁלִָ֑ם מַה־תָּעִ֧ירוּ ׀ וּֽמַה־תְּעֹֽרְר֛וּ אֶת־הָאַהֲבָ֖ה עַ֥ד שֶׁתֶּחְפָּֽץ׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/22/8/",
+            "verse": "4"
+          }
+        ]
+      },
+      {
+        "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+        "quote": "Ὥρκισα ὑμᾶς θυγατέρες Ἱερουσαλὴμ ἐν ταῖς ἰσχύσεσι τοῦ ἀγροῦ· ἐὰν ἐγείρητε καὶ ἐὰν ἐξεγείρητε τὴν ἀγάπην ἕως ἂν θελήσῃ",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/SNG08.htm",
+            "verse": "4"
+          }
+        ]
+      },
+      {
+        "id": "i-would-instruct-me-in-my-mothers-house-or-into-the-chamber-of-her-that-conceived-me-greek",
+        "quote": "אֶנְהָֽגֲךָ֗ אֲבִֽיאֲךָ֛ אֶל־בֵּ֥ית אִמִּ֖י תְּלַמְּדֵ֑נִי אַשְׁקְךָ֙ מִיַּ֣יִן הָרֶ֔קַח מֵעֲסִ֖יס רִמֹּנִֽי׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/22/8/",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "i-would-instruct-me-in-my-mothers-house-or-into-the-chamber-of-her-that-conceived-me-greek",
+        "quote": "Παραλήψομαί σε, εἰσάξω σε εἰς οἶκον μητρός μου καὶ εἰς ταμεῖον τῆς συλλαβούσης με· ποτιῶ σε ἀπὸ οἴνου τοῦ μυρεψικοῦ, ἀπὸ νάματος ῥοῶν μου",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/SNG08.htm",
+            "verse": "2"
+          }
+        ]
+      },
+      {
+        "id": "who-is-this-that-cometh-up-from-the-wilderness-or-who-is-this-that-comes-up-all-white-greek",
+        "quote": "מִ֣י זֹ֗את עֹלָה֙ מִן־הַמִּדְבָּ֔ר מִתְרַפֶּ֖קֶת עַל־דֹּודָ֑הּ תַּ֤חַת הַתַּפּ֙וּחַ֙ עֹֽורַרְתִּ֔יךָ מָּה חִבְּלַ֣תְךָ אִמֶּ֔ךָ שָׁ֖מָּה חִבְּלָ֥ה יְלָדַֽתְךָ׃",
+        "matches": [
+          {
+            "url": "https://bolls.life/get-text/WLC/22/8/",
+            "verse": "5"
+          }
+        ]
+      },
+      {
+        "id": "who-is-this-that-cometh-up-from-the-wilderness-or-who-is-this-that-comes-up-all-white-greek",
+        "quote": "Τίς αὕτη ἡ ἀναβαίνουσα λελευκανθισμένη, ἐπιστηριζομένη ἐπὶ τὸν ἀδελφιδὸν αὐτῆς; Ὑπὸ μῆλον ἐξήγειρά σε· ἐκεῖ ὠδίνησέ σε ἡ μήτηρ σου, ἐκεῖ ὠδίνησέ σε ἡ τεκοῦσά σε",
+        "matches": [
+          {
+            "url": "https://ebible.org/grcbrent/SNG08.htm",
+            "verse": "5"
+          }
+        ]
+      }
+    ],
+    "academic": [
+      {
+        "url": "https://bolls.life/get-text/WLC/12/20/",
+        "verse": 12,
+        "unchanged": true
+      },
+      {
+        "url": "https://bolls.life/get-text/WLC/12/20/",
+        "verse": 13,
+        "unchanged": true
+      },
+      {
+        "url": "https://bolls.life/get-text/WLC/23/39/",
+        "verse": 1,
+        "unchanged": true
+      },
+      {
+        "url": "https://bolls.life/get-text/WLC/23/39/",
+        "verse": 2,
+        "unchanged": true
+      },
+      {
+        "url": "https://bolls.life/get-text/WLC/14/33/",
+        "verse": 11,
+        "unchanged": true
+      }
+    ],
+    "failed": []
+  },
+  "english_translation_quotes": [
+    {
+      "id": "before-the-angel-that-it-was-an-error-or-in-the-presence-of-god-it-was-ignorance-greek",
+      "url": "https://ebible.org/eng-Brenton/ECC05.htm",
+      "quote": "Suffer not thy mouth to lead thy flesh to sin; and say not in the presence of God, It was an error: lest God be angry at thy voice, and destroy the works of thy hands.",
+      "verses": [
+        "5"
+      ]
+    },
+    {
+      "id": "god-answereth-him-in-the-joy-of-his-heart-or-god-troubles-him-in-the-joy-of-his-heart-greek",
+      "url": "https://ebible.org/eng-Brenton/ECC05.htm",
+      "quote": "For he shall not much remember the days of his life; for God troubles him in the mirth of his heart.",
+      "verses": [
+        "19"
+      ]
+    },
+    {
+      "id": "nor-known-any-thing-or-nor-known-rest-greek",
+      "url": "https://ebible.org/eng-Brenton/ECC06.htm",
+      "quote": "Moreover he has not seen the sun, nor known rest: there is no more rest to this one than another.",
+      "verses": [
+        "5"
+      ]
+    },
+    {
+      "id": "a-thousand-years-twice-told-or-the-returns-of-a-thousand-years-greek",
+      "url": "https://ebible.org/eng-Brenton/ECC06.htm",
+      "quote": "Though he has lived to the return of a thousand years, yet he has seen no good: do not all go to one place?",
+      "verses": [
+        "6"
+      ]
+    },
+    {
+      "id": "a-gift-destroyeth-the-heart-or-oppression-destroys-his-noble-heart-greek",
+      "url": "https://ebible.org/eng-Brenton/ECC07.htm",
+      "quote": "For oppression makes a wise man mad, and destroys his noble heart.",
+      "verses": [
+        "7"
+      ]
+    },
+    {
+      "id": "withdraw-not-thine-hand-or-defile-not-thine-hand-greek",
+      "url": "https://ebible.org/eng-Brenton/ECC07.htm",
+      "quote": "It is well for thee to hold fast by this; also by this defile not thine hand: for to them that fear God all things shall come forth well.",
+      "verses": [
+        "18"
+      ]
+    },
+    {
+      "id": "walk-in-the-sight-of-thine-eyes-or-walk-blameless-and-not-in-the-sight-of-thine-eyes-greek",
+      "url": "https://ebible.org/eng-Brenton/ECC11.htm",
+      "quote": "Rejoice, O young man, in thy youth; and let thy heart cheer thee in the days of thy youth, and walk in the ways of thy heart blameless, but not in the sight of thine eyes: yet know that for all these things God will bring thee into judgment.",
+      "verses": [
+        "9"
+      ]
+    },
+    {
+      "id": "childhood-and-youth-are-vanity-or-youth-and-folly-are-vanity-greek",
+      "url": "https://ebible.org/eng-Brenton/ECC11.htm",
+      "quote": "Therefore remove sorrow from thy heart, and put away evil from thy flesh: for youth and folly are vanity.",
+      "verses": [
+        "10"
+      ]
+    },
+    {
+      "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+      "url": "https://ebible.org/eng-Brenton/SNG05.htm",
+      "quote": "I have charged you, O daughters of Jerusalem, by the powers and the virtues of the field: if ye should find my kinsman, what are ye to say to him? That I am wounded with love.",
+      "verses": [
+        "8"
+      ]
+    },
+    {
+      "id": "i-charge-you-that-ye-tell-him-or-i-have-charged-you-by-the-powers-and-forces-of-the-field-greek",
+      "url": "https://ebible.org/eng-Brenton/SNG08.htm",
+      "quote": "I have charged you, ye daughters of Jerusalem, by the virtues of the field, that ye stir not up, nor awake my love, until he please.",
+      "verses": [
+        "4"
+      ]
+    },
+    {
+      "id": "i-would-instruct-me-in-my-mothers-house-or-into-the-chamber-of-her-that-conceived-me-greek",
+      "url": "https://ebible.org/eng-Brenton/SNG08.htm",
+      "quote": "I would take thee, I would bring thee into my mother's house, and into the chamber of her that conceived me; I would make thee to drink of spiced wine, of the juice of my pomegranates.",
+      "verses": [
+        "2"
+      ]
+    },
+    {
+      "id": "who-is-this-that-cometh-up-from-the-wilderness-or-who-is-this-that-comes-up-all-white-greek",
+      "url": "https://ebible.org/eng-Brenton/SNG08.htm",
+      "quote": "Who is this that comes up all white, leaning on her kinsman? I raised thee up under an apple-tree; there thy mother brought thee forth; there she that bore thee brought thee forth.",
+      "verses": [
+        "5"
+      ]
+    }
+  ],
+  "selected_kjv_context": [
+    {
+      "ref": "Exodus 4:24",
+      "text": "And it came to pass by the way in the inn, that the Lord met him, and sought to kill him."
+    },
+    {
+      "ref": "Exodus 18:2",
+      "text": "Then Jethro, Moses' father in law, took Zipporah, Moses' wife, after he had sent her back,"
+    },
+    {
+      "ref": "Exodus 31:2",
+      "text": "See, I have called by name Bezaleel the son of Uri, the son of Hur, of the tribe of Judah:"
+    },
+    {
+      "ref": "Numbers 26:11",
+      "text": "Notwithstanding the children of Korah died not."
+    },
+    {
+      "ref": "Joshua 14:1",
+      "text": "And these are the countries which the children of Israel inherited in the land of Canaan, which Eleazar the priest, and Joshua the son of Nun, and the heads of the fathers of the tribes of the children of Israel, distributed for inheritance to them."
+    },
+    {
+      "ref": "Judges 9:5",
+      "text": "And he went unto his father's house at Ophrah, and slew his brethren the sons of Jerubbaal, being threescore and ten persons, upon one stone: notwithstanding yet Jotham the youngest son of Jerubbaal was left; for he hid himself."
+    },
+    {
+      "ref": "Judges 16:17",
+      "text": "That he told her all his heart, and said unto her, There hath not come a razor upon mine head; for I have been a Nazarite unto God from my mother's womb: if I be shaven, then my strength will go from me, and I shall become weak, and be like any other man."
+    },
+    {
+      "ref": "Judges 16:20",
+      "text": "And she said, The Philistines be upon thee, Samson. And he awoke out of his sleep, and said, I will go out as at other times before, and shake myself. And he wist not that the Lord was departed from him."
+    },
+    {
+      "ref": "1 Samuel 14:50",
+      "text": "And the name of Saul's wife was Ahinoam, the daughter of Ahimaaz: and the name of the captain of his host was Abner, the son of Ner, Saul's uncle."
+    },
+    {
+      "ref": "1 Samuel 14:51",
+      "text": "And Kish was the father of Saul; and Ner the father of Abner was the son of Abiel."
+    },
+    {
+      "ref": "1 Samuel 16:11",
+      "text": "And Samuel said unto Jesse, Are here all thy children? And he said, There remaineth yet the youngest, and, behold, he keepeth the sheep. And Samuel said unto Jesse, Send and fetch him: for we will not sit down till he come hither."
+    },
+    {
+      "ref": "1 Samuel 16:12",
+      "text": "And he sent, and brought him in. Now he was ruddy, and withal of a beautiful countenance, and goodly to look to. And the Lord said, Arise, anoint him: for this is he."
+    },
+    {
+      "ref": "1 Samuel 16:13",
+      "text": "Then Samuel took the horn of oil, and anointed him in the midst of his brethren: and the Spirit of the Lord came upon David from that day forward. So Samuel rose up, and went to Ramah."
+    },
+    {
+      "ref": "1 Samuel 25:37",
+      "text": "But it came to pass in the morning, when the wine was gone out of Nabal, and his wife had told him these things, that his heart died within him, and he became as a stone."
+    },
+    {
+      "ref": "1 Samuel 25:38",
+      "text": "And it came to pass about ten days after, that the Lord smote Nabal, that he died."
+    },
+    {
+      "ref": "1 Samuel 25:39",
+      "text": "And when David heard that Nabal was dead, he said, Blessed be the Lord, that hath pleaded the cause of my reproach from the hand of Nabal, and hath kept his servant from evil: for the Lord hath returned the wickedness of Nabal upon his own head. And David sent and communed with Abigail, to take her to him to wife."
+    },
+    {
+      "ref": "1 Samuel 25:42",
+      "text": "And Abigail hasted, and arose and rode upon an ass, with five damsels of hers that went after her; and she went after the messengers of David, and became his wife."
+    },
+    {
+      "ref": "2 Samuel 12:25",
+      "text": "And he sent by the hand of Nathan the prophet; and he called his name Jedidiah, because of the Lord."
+    },
+    {
+      "ref": "2 Samuel 3:3",
+      "text": "And his second, Chileab, of Abigail the wife of Nabal the Carmelite; and the third, Absalom the son of Maacah the daughter of Talmai king of Geshur;"
+    },
+    {
+      "ref": "1 Chronicles 3:1",
+      "text": "Now these were the sons of David, which were born unto him in Hebron; the firstborn Amnon, of Ahinoam the Jezreelitess; the second Daniel, of Abigail the Carmelitess:"
+    },
+    {
+      "ref": "1 Chronicles 3:19",
+      "text": "And the sons of Pedaiah were, Zerubbabel, and Shimei: and the sons of Zerubbabel; Meshullam, and Hananiah, and Shelomith their sister:"
+    },
+    {
+      "ref": "Esther 1:4",
+      "text": "When he shewed the riches of his glorious kingdom and the honour of his excellent majesty many days, even an hundred and fourscore days."
+    },
+    {
+      "ref": "Esther 1:5",
+      "text": "And when these days were expired, the king made a feast unto all the people that were present in Shushan the palace, both unto great and small, seven days, in the court of the garden of the king's palace;"
+    },
+    {
+      "ref": "Esther 8:1",
+      "text": "On that day did the king Ahasuerus give the house of Haman the Jews' enemy unto Esther the queen. And Mordecai came before the king; for Esther had told what he was unto her."
+    },
+    {
+      "ref": "Esther 8:2",
+      "text": "And the king took off his ring, which he had taken from Haman, and gave it unto Mordecai. And Esther set Mordecai over the house of Haman."
+    },
+    {
+      "ref": "Ezra 7:6",
+      "text": "This Ezra went up from Babylon; and he was a ready scribe in the law of Moses, which the Lord God of Israel had given: and the king granted him all his request, according to the hand of the Lord his God upon him."
+    },
+    {
+      "ref": "Isaiah 8:3",
+      "text": "And I went unto the prophetess; and she conceived, and bare a son. Then said the Lord to me, Call his name Mahershalalhashbaz."
+    },
+    {
+      "ref": "Hosea 3:2",
+      "text": "So I bought her to me for fifteen pieces of silver, and for an homer of barley, and an half homer of barley:"
+    },
+    {
+      "ref": "Luke 1:20",
+      "text": "And, behold, thou shalt be dumb, and not able to speak, until the day that these things shall be performed, because thou believest not my words, which shall be fulfilled in their season."
+    },
+    {
+      "ref": "Luke 1:26",
+      "text": "And in the sixth month the angel Gabriel was sent from God unto a city of Galilee, named Nazareth,"
+    },
+    {
+      "ref": "Luke 1:36",
+      "text": "And, behold, thy cousin Elisabeth, she hath also conceived a son in her old age: and this is the sixth month with her, who was called barren."
+    },
+    {
+      "ref": "Luke 1:63",
+      "text": "And he asked for a writing table, and wrote, saying, His name is John. And they marvelled all."
+    },
+    {
+      "ref": "Luke 1:64",
+      "text": "And his mouth was opened immediately, and his tongue loosed, and he spake, and praised God."
+    },
+    {
+      "ref": "John 20:18",
+      "text": "Mary Magdalene came and told the disciples that she had seen the Lord, and that he had spoken these things unto her."
+    },
+    {
+      "ref": "Matthew 3:7",
+      "text": "But when he saw many of the Pharisees and Sadducees come to his baptism, he said unto them, O generation of vipers, who hath warned you to flee from the wrath to come?"
+    },
+    {
+      "ref": "Acts 5:7",
+      "text": "And it was about the space of three hours after, when his wife, not knowing what was done, came in."
+    },
+    {
+      "ref": "Acts 9:36",
+      "text": "Now there was at Joppa a certain disciple named Tabitha, which by interpretation is called Dorcas: this woman was full of good works and almsdeeds which she did."
+    },
+    {
+      "ref": "2 Timothy 4:11",
+      "text": "Only Luke is with me. Take Mark, and bring him with thee: for he is profitable to me for the ministry."
+    }
+  ],
+  "source_check_method": "Direct HTTPS retrieval; source text read. NFC and whitespace normalization for comparisons only; stored Hebrew unchanged. bolls.life Strong-number markup removed for comparison. Printed verse text, not HTML element IDs, supplies Greek labels.",
+  "academic_checks": [
+    {
+      "input": "jehu-tribute-shalmaneser",
+      "read": "Luckenbill §§590 and 672 separately; Schneider, Through Assyria’s Eyes. Date applies to tribute; Omri label remains an interpretation."
+    },
+    {
+      "input": "esarhaddon-manasseh-tribute",
+      "read": "Rogers Prism B, column V, lines 12–23; Oppenheim ANET translation. Named kings and material transport; no captivity inference from silence."
+    },
+    {
+      "input": "merodach-baladan-hezekiah-embassy",
+      "read": "Rogers Chronicle columns I–II; Livius ABC 1 columns I–II; supplied Hebrew names and verbs. Reign evidence does not date the embassy."
+    },
+    {
+      "input": "nebuchadnezzar-egypt-campaign",
+      "read": "Rogers campaign fragment; Wilson-Wright pp. 31–32, rendered PDF pages 46–47 visually checked. Partly restored name and broken outcome retained; no fulfilment ruling."
+    }
+  ],
+  "review_corrections": [
+    {
+      "id": "esther-drew-near-and-touched-the-sceptre-or-the-king-laid-it-on-her-neck-esther-5-2-greek",
+      "correction": "Printed Greek label is 5:2. The review prose incorrectly requested 5:1e; its own audit already matched this quote at verse 2. God-changing-the-king passage is 5:1e.",
+      "source": "https://ebible.org/grcbrent/ESG05.htm"
+    },
+    {
+      "id": "pontius-pilate",
+      "correction": "Packaged John 19:19 has Jesus Of Nazareth The King Of The Jews, not the uppercase wording requested by the review."
+    },
+    {
+      "id": "belshazzar",
+      "correction": "Packaged Daniel 5:25 has Mene, Mene, Tekel, Upharsin; adjusted capitalization during the required quote recheck."
+    },
+    {
+      "id": "withdraw-not-thine-hand-or-defile-not-thine-hand-greek",
+      "correction": "Removed a stray space before the final period of the quoted English translation at Ecclesiastes 7:18."
+    }
+  ],
+  "app_readability": {
+    "command": "npm run check:readability",
+    "exit_code": 0,
+    "mode": "report-only",
+    "unchanged_baseline": true,
+    "collections": [
+      {
+        "name": "Evidence",
+        "lines": 6035,
+        "mean_grade": 7.89,
+        "over_length": 3619,
+        "jargon": 3356
+      },
+      {
+        "name": "Stories",
+        "lines": 276,
+        "mean_grade": 7.76,
+        "over_length": 77,
+        "jargon": 2
+      },
+      {
+        "name": "People",
+        "lines": 47,
+        "mean_grade": 8.64,
+        "over_length": 16,
+        "jargon": 1
+      },
+      {
+        "name": "Explore cards",
+        "lines": 8,
+        "mean_grade": 15.52,
+        "over_length": 0,
+        "jargon": 0
+      }
+    ]
+  }
+}

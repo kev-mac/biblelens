@@ -1,0 +1,1308 @@
+[
+  {
+    "id": "hannah",
+    "name": "Hannah",
+    "sex": "female",
+    "era": "Judges",
+    "summary": "One of Elkanah's two wives from Ramathaim-zophim. She has no children, and Peninnah taunts her. At Shiloh, Eli first mistakes her intense prayer for drunkenness. She promises to give a son to the Lord. She bears Samuel and brings him to Shiloh after he stops nursing, leaving him there to serve. First Samuel 2 opens with her prayer of praise. The account later gives her three more sons and two daughters.",
+    "lineage": {
+      "spouses": [
+        "Elkanah"
+      ],
+      "children": [
+        "Samuel",
+        "Three more sons and two daughters (unnamed; 1 Samuel 2:21)"
+      ]
+    },
+    "geography": {
+      "origin": "Ramathaim-zophim, in mount Ephraim (1 Samuel 1:1)",
+      "residence": [
+        "Ramah (1 Samuel 1:19)",
+        "Shiloh, on yearly visits (1 Samuel 1:3)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Samuel"
+      ],
+      "key_verses": [
+        "1 Samuel 1:2",
+        "1 Samuel 1:9",
+        "1 Samuel 1:20",
+        "1 Samuel 1:27",
+        "1 Samuel 1:28",
+        "1 Samuel 2:1",
+        "1 Samuel 2:21"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-samuel-hannah-and-the-birth-of-samuel",
+          "title": "Hannah and the Birth of Samuel",
+          "passage": "1 Samuel 1:1 - 2:11",
+          "route": "#stories/1-samuel/hannah-and-the-birth-of-samuel"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "hannah_1400",
+      "reference_id": "recjwefZcKPa9FN7N",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "children",
+          "label": "Samuel",
+          "profile_id": "samuel"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eli",
+    "name": "Eli",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "The priest at Shiloh who watches Hannah pray and later trains the child Samuel. First Samuel calls his sons Hophni and Phinehas “sons of Belial”, a harsh description of their wrongdoing. They misuse their office. Eli rebukes them but does not stop them. An unnamed man of God warns of judgment on Eli's family. The account later describes the Lord giving Samuel a similar warning. At ninety-eight, Eli hears that the ark is taken and his sons are dead. He falls from his seat and dies. The text says he judged Israel forty years.",
+    "lineage": {
+      "children": [
+        "Hophni",
+        "Phinehas"
+      ]
+    },
+    "geography": {
+      "origin": "Shiloh, where he sits at the temple of the Lord (1 Samuel 1:9)",
+      "residence": [
+        "Shiloh (1 Samuel 1:3)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Samuel"
+      ],
+      "key_verses": [
+        "1 Samuel 1:9",
+        "1 Samuel 2:12",
+        "1 Samuel 2:22",
+        "1 Samuel 2:25",
+        "1 Samuel 3:1",
+        "1 Samuel 4:15",
+        "1 Samuel 4:17",
+        "1 Samuel 4:18"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-samuel-hannah-and-the-birth-of-samuel",
+          "title": "Hannah and the Birth of Samuel",
+          "passage": "1 Samuel 1:1 - 2:11",
+          "route": "#stories/1-samuel/hannah-and-the-birth-of-samuel"
+        },
+        {
+          "story_id": "1-samuel-eli-s-sons-and-samuel-s-call",
+          "title": "Eli's Sons and Samuel's Call",
+          "passage": "1 Samuel 2:12 - 3:21",
+          "route": "#stories/1-samuel/eli-s-sons-and-samuel-s-call"
+        },
+        {
+          "story_id": "1-samuel-the-ark-captured-and-returned",
+          "title": "The Ark Captured and Returned",
+          "passage": "1 Samuel 4:1 - 7:1",
+          "route": "#stories/1-samuel/the-ark-captured-and-returned"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "eli_1072",
+      "reference_id": "recH9ECLXz8IgSUgF",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "samuel",
+    "name": "Samuel",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "Elkanah and Hannah's son, given to serve the Lord at Shiloh under Eli. First Samuel describes the Lord calling him as a child. The text presents him as a prophet known from Dan to Beersheba. He judges Israel on a yearly circuit and lives at Ramah. He anoints Saul as leader and later anoints David among his brothers. He rebukes Saul, saying obedience is better than sacrifice. The book covers the end of the judges and the start of the kingdom. It says Samuel judged Israel throughout his life.",
+    "lineage": {
+      "parents": [
+        "Elkanah",
+        "Hannah"
+      ]
+    },
+    "geography": {
+      "origin": "Ramathaim-zophim, in mount Ephraim (1 Samuel 1:1)",
+      "residence": [
+        "Shiloh, in Eli's care (1 Samuel 3:1)",
+        "Ramah, his house (1 Samuel 7:17)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Samuel",
+        "2 Samuel"
+      ],
+      "key_verses": [
+        "1 Samuel 1:20",
+        "1 Samuel 3:10",
+        "1 Samuel 3:20",
+        "1 Samuel 7:15",
+        "1 Samuel 7:17",
+        "1 Samuel 10:1",
+        "1 Samuel 15:22",
+        "1 Samuel 16:13"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-samuel-hannah-and-the-birth-of-samuel",
+          "title": "Hannah and the Birth of Samuel",
+          "passage": "1 Samuel 1:1 - 2:11",
+          "route": "#stories/1-samuel/hannah-and-the-birth-of-samuel"
+        },
+        {
+          "story_id": "1-samuel-eli-s-sons-and-samuel-s-call",
+          "title": "Eli's Sons and Samuel's Call",
+          "passage": "1 Samuel 2:12 - 3:21",
+          "route": "#stories/1-samuel/eli-s-sons-and-samuel-s-call"
+        },
+        {
+          "story_id": "1-samuel-samuel-judges-israel",
+          "title": "Samuel Judges Israel",
+          "passage": "1 Samuel 7:2 - 7:17",
+          "route": "#stories/1-samuel/samuel-judges-israel"
+        },
+        {
+          "story_id": "1-samuel-israel-demands-a-king",
+          "title": "Israel Demands a King",
+          "passage": "1 Samuel 8:1 - 12:25",
+          "route": "#stories/1-samuel/israel-demands-a-king"
+        },
+        {
+          "story_id": "1-samuel-saul-rejected",
+          "title": "Saul Rejected",
+          "passage": "1 Samuel 13:1 - 15:35",
+          "route": "#stories/1-samuel/saul-rejected"
+        },
+        {
+          "story_id": "1-samuel-david-anointed",
+          "title": "David Anointed",
+          "passage": "1 Samuel 16:1 - 16:23",
+          "route": "#stories/1-samuel/david-anointed"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "samuel_2469",
+      "reference_id": "recZsS2Zu0zIDwqdv",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Hannah",
+          "profile_id": "hannah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "saul",
+    "name": "Saul",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Kish's son from Benjamin, described as taller than any other man in Israel. Samuel anoints him, and he becomes Israel's first king. He fights the Philistines. Samuel says the Lord has rejected him as king for failing to keep the Lord's word. David enters his service. First Samuel 18:8–12 describes Saul's anger and fear; the later account follows his pursuit of David. When the Lord no longer answers, he consults a medium at Endor. Archers wound him on Mount Gilboa, and he falls on his sword. Jonathan and two other sons die that day.",
+    "lineage": {
+      "parents": [
+        "Kish"
+      ],
+      "children": [
+        "Jonathan",
+        "Ishui (1 Samuel 14:49)",
+        "Abinadab (1 Samuel 31:2)",
+        "Melchishua",
+        "Merab",
+        "Michal"
+      ],
+      "tribe": "Benjamin"
+    },
+    "geography": {
+      "origin": "Benjamin, son of Kish (1 Samuel 9:1)",
+      "residence": [
+        "Gibeah of Saul (1 Samuel 10:26)",
+        "Mount Gilboa, where he dies (1 Samuel 31:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Samuel",
+        "2 Samuel",
+        "Acts"
+      ],
+      "key_verses": [
+        "1 Samuel 9:2",
+        "1 Samuel 10:1",
+        "1 Samuel 15:23",
+        "1 Samuel 18:20",
+        "1 Samuel 28:6",
+        "1 Samuel 28:7",
+        "1 Samuel 31:2",
+        "1 Samuel 31:4",
+        "Acts 13:21",
+        "1 Samuel 18:8",
+        "1 Samuel 18:9",
+        "1 Samuel 18:10",
+        "1 Samuel 18:11",
+        "1 Samuel 18:12"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-samuel-israel-demands-a-king",
+          "title": "Israel Demands a King",
+          "passage": "1 Samuel 8:1 - 12:25",
+          "route": "#stories/1-samuel/israel-demands-a-king"
+        },
+        {
+          "story_id": "1-samuel-saul-rejected",
+          "title": "Saul Rejected",
+          "passage": "1 Samuel 13:1 - 15:35",
+          "route": "#stories/1-samuel/saul-rejected"
+        },
+        {
+          "story_id": "1-samuel-david-anointed",
+          "title": "David Anointed",
+          "passage": "1 Samuel 16:1 - 16:23",
+          "route": "#stories/1-samuel/david-anointed"
+        },
+        {
+          "story_id": "1-samuel-saul-s-jealousy-and-david-s-flight",
+          "title": "Saul's Jealousy and David's Flight",
+          "passage": "1 Samuel 18:1 - 21:15",
+          "route": "#stories/1-samuel/saul-s-jealousy-and-david-s-flight"
+        },
+        {
+          "story_id": "1-samuel-david-in-the-wilderness",
+          "title": "David in the Wilderness",
+          "passage": "1 Samuel 22:1 - 26:25",
+          "route": "#stories/1-samuel/david-in-the-wilderness"
+        },
+        {
+          "story_id": "1-samuel-saul-and-the-medium-at-endor-saul-s-death",
+          "title": "Saul and the Medium at Endor; Saul's Death",
+          "passage": "1 Samuel 28:1 - 31:13",
+          "route": "#stories/1-samuel/saul-and-the-medium-at-endor-saul-s-death"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "saul_2478",
+      "reference_id": "recjMT68aIzFLh6cQ",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "children",
+          "label": "Jonathan",
+          "profile_id": "jonathan"
+        },
+        {
+          "relation": "children",
+          "label": "Michal",
+          "profile_id": "michal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jonathan",
+    "name": "Jonathan",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Saul's son and David's friend. He and his armour carrier attack a Philistine outpost without telling Saul. The people later refuse to let Saul put Jonathan to death. He and David make a lasting agreement. Jonathan gives David his robe, sword and bow and warns him of Saul's plans. He says David will be king, with himself next in rank. He dies with Saul at Gilboa. David's song of grief calls Jonathan's love wonderful.",
+    "lineage": {
+      "parents": [
+        "Saul"
+      ],
+      "children": [
+        "Mephibosheth"
+      ],
+      "tribe": "Benjamin",
+      "siblings": [
+        "Michal"
+      ]
+    },
+    "geography": {
+      "origin": "Benjamin, as Saul's son (1 Samuel 14:1)",
+      "residence": [
+        "Gibeah, in his father's house (1 Samuel 14:2)",
+        "Mount Gilboa, where he dies (1 Samuel 31:2)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Samuel",
+        "2 Samuel"
+      ],
+      "key_verses": [
+        "1 Samuel 14:1",
+        "1 Samuel 14:45",
+        "1 Samuel 18:1",
+        "1 Samuel 18:3",
+        "1 Samuel 18:4",
+        "1 Samuel 20:42",
+        "1 Samuel 23:17",
+        "1 Samuel 31:2",
+        "2 Samuel 1:26"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-samuel-saul-s-jealousy-and-david-s-flight",
+          "title": "Saul's Jealousy and David's Flight",
+          "passage": "1 Samuel 18:1 - 21:15",
+          "route": "#stories/1-samuel/saul-s-jealousy-and-david-s-flight"
+        },
+        {
+          "story_id": "1-samuel-david-in-the-wilderness",
+          "title": "David in the Wilderness",
+          "passage": "1 Samuel 22:1 - 26:25",
+          "route": "#stories/1-samuel/david-in-the-wilderness"
+        },
+        {
+          "story_id": "1-samuel-saul-and-the-medium-at-endor-saul-s-death",
+          "title": "Saul and the Medium at Endor; Saul's Death",
+          "passage": "1 Samuel 28:1 - 31:13",
+          "route": "#stories/1-samuel/saul-and-the-medium-at-endor-saul-s-death"
+        },
+        {
+          "story_id": "2-samuel-david-and-mephibosheth",
+          "title": "David and Mephibosheth",
+          "passage": "2 Samuel 8:1 - 10:19",
+          "route": "#stories/2-samuel/david-and-mephibosheth"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "jonathan_1692",
+      "reference_id": "recFPPmYLHmfePYj9",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Saul",
+          "profile_id": "saul"
+        },
+        {
+          "relation": "children",
+          "label": "Mephibosheth",
+          "profile_id": "mephibosheth"
+        },
+        {
+          "relation": "siblings",
+          "label": "Michal",
+          "profile_id": "michal"
+        }
+      ]
+    }
+  },
+  {
+    "id": "david",
+    "name": "David",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Jesse's youngest son from Bethlehem, summoned from the sheep and then anointed by Samuel. He kills Goliath with a sling and stone and serves Saul. He later flees Saul, leading an outlaw group in the wilderness and at Ziklag. After Saul's death, he becomes king at Hebron. The account gives him seven and a half years there and thirty-three in Jerusalem. It describes the Lord promising him a lasting royal line and throne. Nathan confronts him over Bathsheba and Uriah's death. The book also describes Absalom's revolt. The New Testament names David in Jesus' family list and Paul's speech at Antioch.",
+    "lineage": {
+      "parents": [
+        "Jesse"
+      ],
+      "spouses": [
+        "Michal",
+        "Ahinoam the Jezreelitess",
+        "Abigail",
+        "Maacah",
+        "Haggith",
+        "Abital",
+        "Eglah",
+        "Bathsheba"
+      ],
+      "children": [
+        "Amnon",
+        "Chileab",
+        "Absalom",
+        "Adonijah",
+        "Shephatiah",
+        "Ithream",
+        "Solomon",
+        "Tamar, daughter of David"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Bethlehem of Judah, son of Jesse (1 Samuel 17:12)",
+      "residence": [
+        "Bethlehem (1 Samuel 17:12)",
+        "The cave Adullam and the wilderness (1 Samuel 22:1)",
+        "Ziklag (1 Samuel 27:6)",
+        "Hebron (2 Samuel 5:5)",
+        "Jerusalem, the city of David (2 Samuel 5:7)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Samuel",
+        "2 Samuel",
+        "1 Kings",
+        "Matthew",
+        "Acts"
+      ],
+      "key_verses": [
+        "1 Samuel 16:11",
+        "1 Samuel 16:13",
+        "1 Samuel 17:12",
+        "1 Samuel 17:50",
+        "1 Samuel 27:6",
+        "2 Samuel 5:3",
+        "2 Samuel 5:4",
+        "2 Samuel 5:7",
+        "2 Samuel 7:16",
+        "2 Samuel 11:4",
+        "2 Samuel 12:13",
+        "2 Samuel 18:33",
+        "Acts 13:22",
+        "1 Samuel 16:12"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-samuel-david-anointed",
+          "title": "David Anointed",
+          "passage": "1 Samuel 16:1 - 16:23",
+          "route": "#stories/1-samuel/david-anointed"
+        },
+        {
+          "story_id": "1-samuel-david-and-goliath",
+          "title": "David and Goliath",
+          "passage": "1 Samuel 17:1 - 17:58",
+          "route": "#stories/1-samuel/david-and-goliath"
+        },
+        {
+          "story_id": "1-samuel-saul-s-jealousy-and-david-s-flight",
+          "title": "Saul's Jealousy and David's Flight",
+          "passage": "1 Samuel 18:1 - 21:15",
+          "route": "#stories/1-samuel/saul-s-jealousy-and-david-s-flight"
+        },
+        {
+          "story_id": "1-samuel-david-in-the-wilderness",
+          "title": "David in the Wilderness",
+          "passage": "1 Samuel 22:1 - 26:25",
+          "route": "#stories/1-samuel/david-in-the-wilderness"
+        },
+        {
+          "story_id": "1-samuel-saul-and-the-medium-at-endor-saul-s-death",
+          "title": "Saul and the Medium at Endor; Saul's Death",
+          "passage": "1 Samuel 28:1 - 31:13",
+          "route": "#stories/1-samuel/saul-and-the-medium-at-endor-saul-s-death"
+        },
+        {
+          "story_id": "2-samuel-david-becomes-king",
+          "title": "David Becomes King",
+          "passage": "2 Samuel 1:1 - 5:5",
+          "route": "#stories/2-samuel/david-becomes-king"
+        },
+        {
+          "story_id": "2-samuel-jerusalem-and-the-ark",
+          "title": "Jerusalem and the Ark",
+          "passage": "2 Samuel 5:6 - 6:23",
+          "route": "#stories/2-samuel/jerusalem-and-the-ark"
+        },
+        {
+          "story_id": "2-samuel-the-davidic-covenant",
+          "title": "The Davidic Covenant",
+          "passage": "2 Samuel 7:1 - 7:29",
+          "route": "#stories/2-samuel/the-davidic-covenant"
+        },
+        {
+          "story_id": "2-samuel-david-and-mephibosheth",
+          "title": "David and Mephibosheth",
+          "passage": "2 Samuel 8:1 - 10:19",
+          "route": "#stories/2-samuel/david-and-mephibosheth"
+        },
+        {
+          "story_id": "2-samuel-david-bathsheba-and-uriah",
+          "title": "David, Bathsheba and Uriah",
+          "passage": "2 Samuel 11:1 - 12:31",
+          "route": "#stories/2-samuel/david-bathsheba-and-uriah"
+        },
+        {
+          "story_id": "2-samuel-amnon-tamar-and-absalom",
+          "title": "Amnon, Tamar and Absalom",
+          "passage": "2 Samuel 13:1 - 14:33",
+          "route": "#stories/2-samuel/amnon-tamar-and-absalom"
+        },
+        {
+          "story_id": "2-samuel-absalom-s-rebellion",
+          "title": "Absalom's Rebellion",
+          "passage": "2 Samuel 15:1 - 19:43",
+          "route": "#stories/2-samuel/absalom-s-rebellion"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "david_994",
+      "reference_id": "rec1ZMFtfbEvoGC73",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Michal",
+          "profile_id": "michal"
+        },
+        {
+          "relation": "spouses",
+          "label": "Abigail",
+          "profile_id": "abigail"
+        },
+        {
+          "relation": "spouses",
+          "label": "Bathsheba",
+          "profile_id": "bathsheba"
+        },
+        {
+          "relation": "children",
+          "label": "Amnon",
+          "profile_id": "amnon"
+        },
+        {
+          "relation": "children",
+          "label": "Absalom",
+          "profile_id": "absalom"
+        },
+        {
+          "relation": "children",
+          "label": "Adonijah",
+          "profile_id": "adonijah"
+        },
+        {
+          "relation": "children",
+          "label": "Solomon",
+          "profile_id": "solomon"
+        },
+        {
+          "relation": "children",
+          "label": "Tamar, daughter of David",
+          "profile_id": "tamar-daughter-of-david"
+        }
+      ]
+    }
+  },
+  {
+    "id": "michal",
+    "name": "Michal",
+    "sex": "female",
+    "era": "Monarchy",
+    "summary": "Saul's younger daughter, who loves David. Saul gives her to David after he brings back two hundred Philistine foreskins. When Saul sends men to kill David, she lowers David through a window. He escapes. Saul later gives her to Phalti son of Laish. David demands her return through Abner and Ishbosheth. When the ark enters Jerusalem, she sees David dancing and despises him in her heart. Second Samuel 6:23 says she had no child until her death. This profile does not settle that statement against 2 Samuel 21:8.",
+    "lineage": {
+      "parents": [
+        "Saul"
+      ],
+      "spouses": [
+        "David",
+        "Phalti (Phaltiel) son of Laish"
+      ],
+      "siblings": [
+        "Jonathan",
+        "Merab"
+      ],
+      "tribe": "Benjamin"
+    },
+    "geography": {
+      "origin": "Daughter of Saul (1 Samuel 14:49)",
+      "residence": [
+        "David's house (1 Samuel 19:11)",
+        "The house of Phaltiel (2 Samuel 3:15)",
+        "The house of David in Jerusalem (2 Samuel 6:16)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Samuel",
+        "2 Samuel"
+      ],
+      "key_verses": [
+        "1 Samuel 14:49",
+        "1 Samuel 18:20",
+        "1 Samuel 18:27",
+        "1 Samuel 19:11",
+        "1 Samuel 19:12",
+        "1 Samuel 25:44",
+        "2 Samuel 3:14",
+        "2 Samuel 6:16",
+        "2 Samuel 6:23"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-samuel-saul-s-jealousy-and-david-s-flight",
+          "title": "Saul's Jealousy and David's Flight",
+          "passage": "1 Samuel 18:1 - 21:15",
+          "route": "#stories/1-samuel/saul-s-jealousy-and-david-s-flight"
+        },
+        {
+          "story_id": "2-samuel-david-becomes-king",
+          "title": "David Becomes King",
+          "passage": "2 Samuel 1:1 - 5:5",
+          "route": "#stories/2-samuel/david-becomes-king"
+        },
+        {
+          "story_id": "2-samuel-jerusalem-and-the-ark",
+          "title": "Jerusalem and the Ark",
+          "passage": "2 Samuel 5:6 - 6:23",
+          "route": "#stories/2-samuel/jerusalem-and-the-ark"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "michal_2073",
+      "reference_id": "recjqxIrJX2UB8DdR",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Saul",
+          "profile_id": "saul"
+        },
+        {
+          "relation": "spouses",
+          "label": "David",
+          "profile_id": "david"
+        },
+        {
+          "relation": "siblings",
+          "label": "Jonathan",
+          "profile_id": "jonathan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "abigail",
+    "name": "Abigail",
+    "sex": "female",
+    "era": "Monarchy",
+    "summary": "Nabal's wife from Carmel, whom First Samuel describes as having good understanding. Nabal is described as harsh. After he insults David's men, Abigail brings David bread, wine, sheep, grain, raisins and figs without telling Nabal. About ten days later, Nabal dies. David then sends for Abigail, and she becomes his wife. Second Samuel 3:3 names their son Chileab; the parallel list in 1 Chronicles 3:1 names him Daniel.",
+    "lineage": {
+      "spouses": [
+        "Nabal",
+        "David"
+      ],
+      "children": [
+        "Chileab (Daniel in 1 Chronicles 3:1)"
+      ]
+    },
+    "geography": {
+      "origin": "Carmel, the home of Nabal (1 Samuel 25:3)",
+      "residence": [
+        "Carmel (1 Samuel 25:3)",
+        "Hebron, as David's wife (2 Samuel 3:3)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "1 Samuel",
+        "2 Samuel",
+        "1 Chronicles"
+      ],
+      "key_verses": [
+        "1 Samuel 25:3",
+        "1 Samuel 25:18",
+        "1 Samuel 25:19",
+        "1 Samuel 25:38",
+        "1 Samuel 25:42",
+        "2 Samuel 3:3",
+        "1 Samuel 25:37",
+        "1 Samuel 25:39",
+        "1 Chronicles 3:1"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-samuel-david-in-the-wilderness",
+          "title": "David in the Wilderness",
+          "passage": "1 Samuel 22:1 - 26:25",
+          "route": "#stories/1-samuel/david-in-the-wilderness"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "abigail_26",
+      "reference_id": "reckcSleXhZyNw9hI",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "David",
+          "profile_id": "david"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bathsheba",
+    "name": "Bathsheba",
+    "sex": "female",
+    "era": "Monarchy",
+    "summary": "Eliam's daughter and Uriah the Hittite's wife in Second Samuel. First Chronicles' parallel family list uses the names Bathshua and Ammiel; the name link is not proved here. David sees Bathsheba from his roof, sends for her and has sex with her. She conceives; David arranges Uriah's death and marries her. Their first child dies. She later bears Solomon, whom the text says the Lord loved. With Nathan, she raises the succession with the ageing David, who promises Solomon the throne. Solomon later seats her at his right hand. Matthew calls her the wife of Urias.",
+    "aliases": [
+      "Bathshua"
+    ],
+    "lineage": {
+      "parents": [
+        "Eliam"
+      ],
+      "spouses": [
+        "Uriah",
+        "David"
+      ],
+      "children": [
+        "Solomon"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated; daughter of Eliam (2 Samuel 11:3)",
+      "residence": [
+        "The house of Uriah (2 Samuel 11:4)",
+        "David's house in Jerusalem (2 Samuel 12:24)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel",
+        "1 Kings",
+        "1 Chronicles",
+        "Matthew"
+      ],
+      "key_verses": [
+        "2 Samuel 11:2",
+        "2 Samuel 11:3",
+        "2 Samuel 11:4",
+        "2 Samuel 12:24",
+        "1 Kings 1:11",
+        "1 Kings 1:30",
+        "1 Kings 2:19",
+        "1 Chronicles 3:5",
+        "Matthew 1:6"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-samuel-david-bathsheba-and-uriah",
+          "title": "David, Bathsheba and Uriah",
+          "passage": "2 Samuel 11:1 - 12:31",
+          "route": "#stories/2-samuel/david-bathsheba-and-uriah"
+        },
+        {
+          "story_id": "1-kings-solomon-becomes-king",
+          "title": "Solomon Becomes King",
+          "passage": "1 Kings 1:1 - 2:46",
+          "route": "#stories/1-kings/solomon-becomes-king"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "bathsheba_416",
+      "reference_id": "rec48avi3AS18d5V6",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Uriah",
+          "profile_id": "uriah"
+        },
+        {
+          "relation": "spouses",
+          "label": "David",
+          "profile_id": "david"
+        },
+        {
+          "relation": "children",
+          "label": "Solomon",
+          "profile_id": "solomon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "nathan",
+    "name": "Nathan",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "A prophet at David's court, distinct from David's son of that name. In Second Samuel 7, he first supports David's plan for a house for the ark. He changes his answer after receiving the Lord's word. He tells David about a rich man taking a poor man's lamb, then says, “Thou art the man”. David confesses, and Nathan says the Lord has put away his sin. The name Jedidiah is given to the child through Nathan. Later, Nathan joins Bathsheba in urging David to make Solomon king. David directs Nathan and Zadok to anoint Solomon.",
+    "geography": {
+      "origin": "Not stated in the text",
+      "residence": [
+        "David's court in Jerusalem (2 Samuel 7:2)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel",
+        "1 Kings"
+      ],
+      "key_verses": [
+        "2 Samuel 7:2",
+        "2 Samuel 7:3",
+        "2 Samuel 12:1",
+        "2 Samuel 12:7",
+        "2 Samuel 12:13",
+        "2 Samuel 12:25",
+        "1 Kings 1:11",
+        "1 Kings 1:34"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-samuel-the-davidic-covenant",
+          "title": "The Davidic Covenant",
+          "passage": "2 Samuel 7:1 - 7:29",
+          "route": "#stories/2-samuel/the-davidic-covenant"
+        },
+        {
+          "story_id": "2-samuel-david-bathsheba-and-uriah",
+          "title": "David, Bathsheba and Uriah",
+          "passage": "2 Samuel 11:1 - 12:31",
+          "route": "#stories/2-samuel/david-bathsheba-and-uriah"
+        },
+        {
+          "story_id": "1-kings-solomon-becomes-king",
+          "title": "Solomon Becomes King",
+          "passage": "1 Kings 1:1 - 2:46",
+          "route": "#stories/1-kings/solomon-becomes-king"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "nathan_2153",
+      "reference_id": "rec2OlshepuMiuLDJ",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "absalom",
+    "name": "Absalom",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "David's third son, born at Hebron to Maacah, the daughter of Geshur's king. Second Samuel praises his beauty. He has Amnon killed after Amnon rapes his sister Tamar, then flees to Geshur for three years. Joab brings him back. He wins over people seeking the king's judgment and proclaims himself king at Hebron. David leaves Jerusalem. Absalom catches his head in an oak and is killed by Joab and ten armour carriers. David mourns him with “O my son Absalom”. The account names three sons and a daughter; this profile does not settle that against 2 Samuel 18:18.",
+    "lineage": {
+      "parents": [
+        "David",
+        "Maacah"
+      ],
+      "siblings": [
+        "Tamar, daughter of David",
+        "Amnon",
+        "Adonijah"
+      ],
+      "children": [
+        "Three sons (unnamed) and a daughter, Tamar"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Hebron, born to David (2 Samuel 3:3)",
+      "residence": [
+        "Geshur, with his mother's father (2 Samuel 13:38)",
+        "Jerusalem (2 Samuel 14:21)",
+        "Hebron, where he is proclaimed king (2 Samuel 15:10)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel"
+      ],
+      "key_verses": [
+        "2 Samuel 3:3",
+        "2 Samuel 13:1",
+        "2 Samuel 13:28",
+        "2 Samuel 13:38",
+        "2 Samuel 14:25",
+        "2 Samuel 14:27",
+        "2 Samuel 15:6",
+        "2 Samuel 15:10",
+        "2 Samuel 18:9",
+        "2 Samuel 18:15",
+        "2 Samuel 18:33"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-samuel-amnon-tamar-and-absalom",
+          "title": "Amnon, Tamar and Absalom",
+          "passage": "2 Samuel 13:1 - 14:33",
+          "route": "#stories/2-samuel/amnon-tamar-and-absalom"
+        },
+        {
+          "story_id": "2-samuel-absalom-s-rebellion",
+          "title": "Absalom's Rebellion",
+          "passage": "2 Samuel 15:1 - 19:43",
+          "route": "#stories/2-samuel/absalom-s-rebellion"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "absalom_59",
+      "reference_id": "recEdhjnlbofKC5rc",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "David",
+          "profile_id": "david"
+        },
+        {
+          "relation": "siblings",
+          "label": "Tamar, daughter of David",
+          "profile_id": "tamar-daughter-of-david"
+        },
+        {
+          "relation": "siblings",
+          "label": "Amnon",
+          "profile_id": "amnon"
+        },
+        {
+          "relation": "siblings",
+          "label": "Adonijah",
+          "profile_id": "adonijah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "joab",
+    "name": "Joab",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Zeruiah's son, brother of Abishai and Asahel, and commander of David's army. Second Samuel says he kills Abner to avenge Asahel. He later kills Amasa and strikes Absalom with darts against David's wishes. David calls Zeruiah's sons too hard for him. Joab supports Adonijah in the struggle for the throne; he had not supported Absalom. Following David's charge, Solomon orders Benaiah to kill Joab beside the altar. Joab is buried at his own house in the wilderness.",
+    "lineage": {
+      "parents": [
+        "Zeruiah"
+      ],
+      "siblings": [
+        "Abishai",
+        "Asahel"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated; his brother Asahel is buried at Bethlehem (2 Samuel 2:32)",
+      "residence": [
+        "Camp and campaign for David (2 Samuel 8:16)",
+        "Hebron (2 Samuel 3:27)",
+        "The tabernacle of the Lord, where he catches the altar's horns (1 Kings 2:28)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel",
+        "1 Kings"
+      ],
+      "key_verses": [
+        "2 Samuel 2:18",
+        "2 Samuel 3:27",
+        "2 Samuel 3:39",
+        "2 Samuel 8:16",
+        "2 Samuel 14:21",
+        "2 Samuel 18:14",
+        "2 Samuel 20:10",
+        "1 Kings 2:28",
+        "1 Kings 2:34"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-samuel-david-becomes-king",
+          "title": "David Becomes King",
+          "passage": "2 Samuel 1:1 - 5:5",
+          "route": "#stories/2-samuel/david-becomes-king"
+        },
+        {
+          "story_id": "2-samuel-amnon-tamar-and-absalom",
+          "title": "Amnon, Tamar and Absalom",
+          "passage": "2 Samuel 13:1 - 14:33",
+          "route": "#stories/2-samuel/amnon-tamar-and-absalom"
+        },
+        {
+          "story_id": "2-samuel-absalom-s-rebellion",
+          "title": "Absalom's Rebellion",
+          "passage": "2 Samuel 15:1 - 19:43",
+          "route": "#stories/2-samuel/absalom-s-rebellion"
+        },
+        {
+          "story_id": "2-samuel-sheba-s-revolt-and-the-gibeonites",
+          "title": "Sheba's Revolt and the Gibeonites",
+          "passage": "2 Samuel 20:1 - 21:22",
+          "route": "#stories/2-samuel/sheba-s-revolt-and-the-gibeonites"
+        },
+        {
+          "story_id": "1-kings-solomon-becomes-king",
+          "title": "Solomon Becomes King",
+          "passage": "1 Kings 1:1 - 2:46",
+          "route": "#stories/1-kings/solomon-becomes-king"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "joab_1617",
+      "reference_id": "reci5XsSfPw9RZWBA",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "solomon",
+    "name": "Solomon",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "David and Bathsheba's son, also given the name Jedidiah because of the Lord. He becomes king after David, despite Adonijah's attempt to take the throne. He asks God for understanding to judge the people. The account says God gives him wisdom and further gifts he did not request. He builds the temple over seven years. Kings lists seven hundred wives and three hundred concubines, partners distinct from wives. It says his heart turns toward other gods in old age. It gives him forty years as king in Jerusalem.",
+    "aliases": [
+      "Jedidiah"
+    ],
+    "lineage": {
+      "parents": [
+        "David",
+        "Bathsheba"
+      ],
+      "tribe": "Judah",
+      "siblings": [
+        "Adonijah"
+      ]
+    },
+    "geography": {
+      "origin": "Jerusalem, born to David and Bathsheba (2 Samuel 12:24)",
+      "residence": [
+        "Jerusalem (1 Kings 11:42)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel",
+        "1 Kings",
+        "1 Chronicles",
+        "Matthew"
+      ],
+      "key_verses": [
+        "2 Samuel 12:24",
+        "2 Samuel 12:25",
+        "1 Kings 1:34",
+        "1 Kings 3:9",
+        "1 Kings 3:12",
+        "1 Kings 4:29",
+        "1 Kings 6:38",
+        "1 Kings 11:3",
+        "1 Kings 11:4",
+        "1 Kings 11:42"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "1-kings-solomon-becomes-king",
+          "title": "Solomon Becomes King",
+          "passage": "1 Kings 1:1 - 2:46",
+          "route": "#stories/1-kings/solomon-becomes-king"
+        },
+        {
+          "story_id": "1-kings-solomon-s-wisdom",
+          "title": "Solomon's Wisdom",
+          "passage": "1 Kings 3:1 - 4:34",
+          "route": "#stories/1-kings/solomon-s-wisdom"
+        },
+        {
+          "story_id": "1-kings-the-temple-built",
+          "title": "The Temple Built",
+          "passage": "1 Kings 5:1 - 8:66",
+          "route": "#stories/1-kings/the-temple-built"
+        },
+        {
+          "story_id": "1-kings-the-queen-of-sheba-and-solomon-s-decline",
+          "title": "The Queen of Sheba and Solomon's Decline",
+          "passage": "1 Kings 9:1 - 11:43",
+          "route": "#stories/1-kings/the-queen-of-sheba-and-solomon-s-decline"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "solomon_2762",
+      "reference_id": "rec0BAacWSGBXZ0zI",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "David",
+          "profile_id": "david"
+        },
+        {
+          "relation": "parents",
+          "label": "Bathsheba",
+          "profile_id": "bathsheba"
+        },
+        {
+          "relation": "siblings",
+          "label": "Adonijah",
+          "profile_id": "adonijah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mephibosheth",
+    "name": "Mephibosheth",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Jonathan's son, whose feet are disabled after his nurse drops him while fleeing when he is five. David restores Saul's land to him and gives him a place at the king's table for Jonathan's sake. During Absalom's revolt, Ziba says Mephibosheth stayed behind hoping to gain the kingdom. David gives Ziba his goods. On David's return, Mephibosheth says Ziba deceived him. David tells them to divide the land; Mephibosheth says Ziba can take it all. This profile does not decide between their accounts. A parallel family list uses Meribbaal; he is distinct from the Mephibosheth in 2 Samuel 21:8.",
+    "aliases": [
+      "Meribbaal (name in the parallel genealogy)"
+    ],
+    "lineage": {
+      "parents": [
+        "Jonathan"
+      ],
+      "children": [
+        "Micha"
+      ],
+      "tribe": "Benjamin"
+    },
+    "geography": {
+      "origin": "Benjamin, as Jonathan's son (2 Samuel 4:4)",
+      "residence": [
+        "Lo-debar, before David summoned him (2 Samuel 9:4)",
+        "Jerusalem, eating at the king's table (2 Samuel 9:13)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel",
+        "1 Chronicles"
+      ],
+      "key_verses": [
+        "2 Samuel 4:4",
+        "2 Samuel 9:1",
+        "2 Samuel 9:7",
+        "2 Samuel 9:12",
+        "2 Samuel 9:13",
+        "2 Samuel 16:3",
+        "2 Samuel 19:26",
+        "2 Samuel 19:29",
+        "1 Chronicles 8:34"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-samuel-david-and-mephibosheth",
+          "title": "David and Mephibosheth",
+          "passage": "2 Samuel 8:1 - 10:19",
+          "route": "#stories/2-samuel/david-and-mephibosheth"
+        },
+        {
+          "story_id": "2-samuel-absalom-s-rebellion",
+          "title": "Absalom's Rebellion",
+          "passage": "2 Samuel 15:1 - 19:43",
+          "route": "#stories/2-samuel/absalom-s-rebellion"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "mephibosheth_1999",
+      "reference_id": "rec6D4qakD8wceZv8",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Jonathan",
+          "profile_id": "jonathan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "uriah",
+    "name": "Uriah",
+    "sex": "male",
+    "era": "Monarchy",
+    "summary": "Bathsheba's husband, called a Hittite and listed among David's thirty-seven leading warriors. David orders Joab to place him where the battle is fiercest and withdraw so he will be killed. Uriah dies during the siege. Joab's message anticipates David's anger. Matthew refers to him as Urias. The Hittite label does not establish his birthplace.",
+    "lineage": {
+      "spouses": [
+        "Bathsheba"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated; called a Hittite (2 Samuel 11:3)",
+      "residence": [
+        "Jerusalem, near the king's house (2 Samuel 11:3)",
+        "The siege of Rabbah, where he dies (2 Samuel 11:17)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Samuel",
+        "Matthew"
+      ],
+      "key_verses": [
+        "2 Samuel 11:3",
+        "2 Samuel 11:15",
+        "2 Samuel 11:17",
+        "2 Samuel 11:21",
+        "2 Samuel 23:39",
+        "Matthew 1:6"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "2-samuel-david-bathsheba-and-uriah",
+          "title": "David, Bathsheba and Uriah",
+          "passage": "2 Samuel 11:1 - 12:31",
+          "route": "#stories/2-samuel/david-bathsheba-and-uriah"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "uriah_2898",
+      "reference_id": "recqDQWQP9P7218TS",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Bathsheba",
+          "profile_id": "bathsheba"
+        }
+      ]
+    }
+  }
+]

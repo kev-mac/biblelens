@@ -1,0 +1,855 @@
+[
+  {
+    "id": "rahab",
+    "name": "Rahab",
+    "sex": "female",
+    "era": "Conquest",
+    "summary": "A woman of Jericho whom Joshua describes as a sex worker. She hides two spies on her roof, misleads the king's men and lowers the spies through her window. She says fear of Israel has fallen on the land and asks for kindness to her father's household. Joshua says she and her family survive Jericho's fall, and she lives among Israel. Matthew names Rachab in its family list; Hebrews and James also name Rahab. These later references do not establish every proposed family link here.",
+    "aliases": [
+      "Rachab"
+    ],
+    "lineage": {
+      "parents": [
+        "Her father (unnamed; Joshua 2:13)"
+      ]
+    },
+    "geography": {
+      "origin": "Jericho (Joshua 2:1)",
+      "residence": [
+        "A house on the town wall of Jericho (Joshua 2:15)",
+        "Among Israel after the conquest (Joshua 6:25)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Joshua",
+        "Matthew",
+        "Hebrews",
+        "James"
+      ],
+      "key_verses": [
+        "Joshua 2:1",
+        "Joshua 2:4",
+        "Joshua 2:9",
+        "Joshua 2:12",
+        "Joshua 2:15",
+        "Joshua 6:17",
+        "Joshua 6:25",
+        "Matthew 1:5",
+        "Hebrews 11:31",
+        "James 2:25"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "joshua-rahab-and-the-spies",
+          "title": "Rahab and the Spies",
+          "passage": "Joshua 2:1 - 2:24",
+          "route": "#stories/joshua/rahab-and-the-spies"
+        },
+        {
+          "story_id": "joshua-the-fall-of-jericho",
+          "title": "The Fall of Jericho",
+          "passage": "Joshua 6:1 - 6:27",
+          "route": "#stories/joshua/the-fall-of-jericho"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "rahab_2388",
+      "reference_id": "rec1KxZ8I6FX57Q0T",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "achan",
+    "name": "Achan",
+    "sex": "male",
+    "era": "Conquest",
+    "summary": "A man of Judah who takes goods set apart at Jericho: a garment, silver and gold. He hides them in his tent, and Israel later loses at Ai. Joshua describes groups being selected until Achan is singled out. He admits wanting and taking the goods. The account describes stoning and burning in the valley of Achor. Its pronouns are not used here to settle exactly who or what is burned.",
+    "lineage": {
+      "parents": [
+        "Carmi"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Tribe of Judah (Joshua 7:1)",
+      "residence": [
+        "Israel's camp at Jericho and Ai (Joshua 7:1)",
+        "Valley of Achor, where he is buried under stones (Joshua 7:26)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Joshua"
+      ],
+      "key_verses": [
+        "Joshua 7:1",
+        "Joshua 7:21",
+        "Joshua 7:25",
+        "Joshua 7:26"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "joshua-achan-s-sin-and-ai",
+          "title": "Achan's Sin and Ai",
+          "passage": "Joshua 7:1 - 8:35",
+          "route": "#stories/joshua/achan-s-sin-and-ai"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "achan_61",
+      "reference_id": "recL9x2FrJ8IWdGFA",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "othniel",
+    "name": "Othniel",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "Kenaz's son, who captures a town and receives Caleb's daughter Achsah as his wife. The phrase “younger brother” can refer to Kenaz or Othniel; this profile does not choose between them. Judges says Israel cries out under Chushanrishathaim of Mesopotamia. The Lord raises Othniel as a deliverer, and the Lord's spirit comes on him. The account gives the land forty years of rest until his death.",
+    "lineage": {
+      "parents": [
+        "Kenaz"
+      ],
+      "spouses": [
+        "Achsah"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated beyond his family of Kenaz (Judges 3:9)",
+      "residence": [
+        "Israel, as judge (Judges 3:10)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Joshua",
+        "Judges"
+      ],
+      "key_verses": [
+        "Joshua 15:17",
+        "Judges 3:9",
+        "Judges 3:10",
+        "Judges 3:11"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-othniel-ehud-and-shamgar",
+          "title": "Othniel, Ehud and Shamgar",
+          "passage": "Judges 3:7 - 3:31",
+          "route": "#stories/judges/othniel-ehud-and-shamgar"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "othniel_2259",
+      "reference_id": "recgfx8iuSsor6yXf",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "ehud",
+    "name": "Ehud",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "A left-handed man of Benjamin and son of Gera. Judges says the Lord raises him when Israel cries out under Eglon king of Moab. He brings tribute to Eglon, then returns to kill him with a dagger and escapes. He rallies Israel, which defeats Moab. Judges gives the land eighty years of rest. This profile does not identify him with the other Ehud in Chronicles.",
+    "lineage": {
+      "parents": [
+        "Gera"
+      ],
+      "tribe": "Benjamin"
+    },
+    "geography": {
+      "origin": "Tribe of Benjamin (Judges 3:15)",
+      "residence": [
+        "Israel, as deliverer (Judges 3:15)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Judges"
+      ],
+      "key_verses": [
+        "Judges 3:15",
+        "Judges 3:21",
+        "Judges 3:30"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-othniel-ehud-and-shamgar",
+          "title": "Othniel, Ehud and Shamgar",
+          "passage": "Judges 3:7 - 3:31",
+          "route": "#stories/judges/othniel-ehud-and-shamgar"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "ehud_1039",
+      "reference_id": "recyOsE7tW60nOWh3",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "deborah",
+    "name": "Deborah",
+    "sex": "female",
+    "era": "Judges",
+    "summary": "A prophet and the wife of Lapidoth who judges Israel beneath a palm tree in Ephraim's hill country. She calls Barak to lead ten thousand men against Sisera and agrees to go with him. Judges records her warning that the Lord will give Sisera into a woman's hand. Judges 5:1 names Deborah and Barak as singers of the victory song. This Deborah is distinct from Rebekah's nurse.",
+    "lineage": {
+      "spouses": [
+        "Lapidoth"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated; she held court in the hill country of Ephraim (Judges 4:5)",
+      "residence": [
+        "Under the palm tree of Deborah, between Ramah and Bethel (Judges 4:5)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Judges"
+      ],
+      "key_verses": [
+        "Judges 4:4",
+        "Judges 4:5",
+        "Judges 4:6",
+        "Judges 4:9",
+        "Judges 5:1"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-deborah-and-barak",
+          "title": "Deborah and Barak",
+          "passage": "Judges 4:1 - 5:31",
+          "route": "#stories/judges/deborah-and-barak"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "deborah_997",
+      "reference_id": "rec6OMKxWHWy6KHjE",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "barak",
+    "name": "Barak",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "Abinoam's son from Kedesh-naphtali, called by Deborah to gather ten thousand men at Mount Tabor against Sisera. He insists that she go with him. She warns that the honour of victory will pass to a woman. He pursues Sisera and finds him dead in Jael's tent. Hebrews 11:32 later names Barak among people it praises for faith.",
+    "lineage": {
+      "parents": [
+        "Abinoam"
+      ]
+    },
+    "geography": {
+      "origin": "Kedesh-naphtali (Judges 4:6)",
+      "residence": [
+        "Mount Tabor, where he musters the army (Judges 4:6)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Judges",
+        "Hebrews"
+      ],
+      "key_verses": [
+        "Judges 4:6",
+        "Judges 4:8",
+        "Judges 4:9",
+        "Judges 4:22",
+        "Hebrews 11:32"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-deborah-and-barak",
+          "title": "Deborah and Barak",
+          "passage": "Judges 4:1 - 5:31",
+          "route": "#stories/judges/deborah-and-barak"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "barak_401",
+      "reference_id": "recIugPvqGMSEmfHN",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "jael",
+    "name": "Jael",
+    "sex": "female",
+    "era": "Judges",
+    "summary": "The wife of Heber the Kenite. Judges says Sisera flees to her tent after his army's defeat, since Jabin and Heber's household are at peace. She welcomes him and drives a tent nail through his temples while he sleeps. She shows Barak the dead man. The song in Judges 5 blesses her above women in tents.",
+    "lineage": {
+      "spouses": [
+        "Heber the Kenite"
+      ]
+    },
+    "geography": {
+      "origin": "Birthplace not stated; she lives in Heber's tent in Judges 4:17.",
+      "residence": [
+        "Tent of Heber the Kenite (Judges 4:17)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Judges"
+      ],
+      "key_verses": [
+        "Judges 4:17",
+        "Judges 4:21",
+        "Judges 4:22",
+        "Judges 5:24"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-deborah-and-barak",
+          "title": "Deborah and Barak",
+          "passage": "Judges 4:1 - 5:31",
+          "route": "#stories/judges/deborah-and-barak"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "jael_689",
+      "reference_id": "recxJQqsngI2rJbuw",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "gideon",
+    "name": "Gideon",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "Joash's son, an Abiezrite from Manasseh. Judges describes an angel calling him to save Israel while he threshes wheat in a winepress. He asks for a sign with a fleece. He reduces his army to three hundred and defeats Midian with trumpets and torches in jars. He refuses to rule but makes an ephod, an object used in worship whose precise form is not given. Judges calls it a trap for Israel and his household. The text lists seventy sons, then introduces Abimelech separately; no revised total is supplied here.",
+    "aliases": [
+      "Jerubbaal",
+      "Gedeon"
+    ],
+    "lineage": {
+      "parents": [
+        "Joash"
+      ],
+      "children": [
+        "Seventy sons of his body (Judges 8:30)",
+        "Abimelech, by a concubine at Shechem"
+      ],
+      "tribe": "Manasseh"
+    },
+    "geography": {
+      "origin": "Ophrah of the Abiezrites (Judges 6:11)",
+      "residence": [
+        "Ophrah (Judges 8:27)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Judges",
+        "Hebrews"
+      ],
+      "key_verses": [
+        "Judges 6:11",
+        "Judges 6:15",
+        "Judges 6:34",
+        "Judges 6:36",
+        "Judges 6:37",
+        "Judges 7:7",
+        "Judges 7:20",
+        "Judges 8:23",
+        "Judges 8:27",
+        "Judges 8:30",
+        "Hebrews 11:32"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-gideon-and-the-midianites",
+          "title": "Gideon and the Midianites",
+          "passage": "Judges 6:1 - 8:35",
+          "route": "#stories/judges/gideon-and-the-midianites"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "gideon_1314",
+      "reference_id": "recjU9TzJTjllYnUJ",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "abimelech",
+    "name": "Abimelech",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "Gideon's son by a concubine from Shechem, a partner distinct from a wife. His mother's relatives support his claim to rule. Judges 9:5 says he kills seventy brothers on one stone, while also saying Jotham survives. The people make him king at Shechem. Judges says God sends an evil spirit between him and Shechem's men. He destroys the city. At Thebez, a woman breaks his skull with a millstone. The text calls his death God's repayment for his wickedness.",
+    "lineage": {
+      "parents": [
+        "Gideon",
+        "A concubine of Shechem"
+      ],
+      "siblings": [
+        "Jotham",
+        "Seventy brothers in Judges 9:5, which also says Jotham survived"
+      ]
+    },
+    "geography": {
+      "origin": "Shechem (Judges 8:31)",
+      "residence": [
+        "Shechem (Judges 9:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Judges"
+      ],
+      "key_verses": [
+        "Judges 8:31",
+        "Judges 9:1",
+        "Judges 9:5",
+        "Judges 9:23",
+        "Judges 9:53",
+        "Judges 9:56"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-abimelech",
+          "title": "Abimelech",
+          "passage": "Judges 9:1 - 9:57",
+          "route": "#stories/judges/abimelech"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "abimelech_41",
+      "reference_id": "recRZHTq3D9Hs5FG6",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Gideon",
+          "profile_id": "gideon"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jephthah",
+    "name": "Jephthah",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "A warrior from Gilead, whose parents are Gilead and a woman the text calls a harlot. The elders call him back to lead against Ammon. Judges says the Lord's spirit comes on him. He vows, or promises, to offer whoever first leaves his house to greet him as a burnt offering. His only daughter comes out first. The text says he acts according to his vow; this profile does not settle sacrifice versus dedication. He later fights Ephraim at the Jordan crossings and judges Israel for six years.",
+    "aliases": [
+      "Jephthae"
+    ],
+    "lineage": {
+      "parents": [
+        "Gilead"
+      ],
+      "children": [
+        "An only daughter (unnamed; Judges 11:34)"
+      ]
+    },
+    "geography": {
+      "origin": "Gilead (Judges 11:1)",
+      "residence": [
+        "Mizpeh of Gilead (Judges 11:34)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Judges",
+        "Hebrews"
+      ],
+      "key_verses": [
+        "Judges 11:1",
+        "Judges 11:29",
+        "Judges 11:30",
+        "Judges 11:31",
+        "Judges 11:34",
+        "Judges 11:39",
+        "Judges 12:6",
+        "Judges 12:7",
+        "Hebrews 11:32"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-jephthah-s-vow",
+          "title": "Jephthah's Vow",
+          "passage": "Judges 10:6 - 12:7",
+          "route": "#stories/judges/jephthah-s-vow"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "jephthah_839",
+      "reference_id": "recIo7V1LEn9xfvcc",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "samson",
+    "name": "Samson",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "Manoah's son from Dan, announced as set apart for God from birth. Judges says he will begin to free Israel from the Philistines. He marries a Philistine woman from Timnath, kills many Philistines and judges Israel for twenty years. Samson tells Delilah that shaving his hair will take away his strength. Judges 16:20 also says the Lord has left him. He is shaved, blinded and made to grind in Gaza's prison. At the Philistine temple, he asks to die with them and brings the building down.",
+    "lineage": {
+      "parents": [
+        "Manoah"
+      ],
+      "tribe": "Dan"
+    },
+    "geography": {
+      "origin": "Zorah, of the family of the Danites (Judges 13:2)",
+      "residence": [
+        "Timnath (Judges 14:1)",
+        "Valley of Sorek (Judges 16:4)",
+        "Gaza (Judges 16:21)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Judges",
+        "Hebrews"
+      ],
+      "key_verses": [
+        "Judges 13:2",
+        "Judges 13:5",
+        "Judges 14:1",
+        "Judges 15:20",
+        "Judges 16:4",
+        "Judges 16:19",
+        "Judges 16:21",
+        "Judges 16:30",
+        "Hebrews 11:32",
+        "Judges 16:17",
+        "Judges 16:20"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-samson",
+          "title": "Samson",
+          "passage": "Judges 13:1 - 16:31",
+          "route": "#stories/judges/samson"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "samson_2468",
+      "reference_id": "recwcML6FMulTblKH",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "delilah",
+    "name": "Delilah",
+    "sex": "female",
+    "era": "Judges",
+    "summary": "A woman Samson loves in the valley of Sorek. Judges 16 says the Philistine rulers ask her to draw out the source of his strength. She presses him until he tells her. She lets him sleep on her knees and calls a man to shave his seven locks. The account says his strength then leaves him. It does not give her birthplace or ethnic identity.",
+    "lineage": {},
+    "geography": {
+      "origin": "Birthplace not stated; the account places her in the valley of Sorek (Judges 16:4).",
+      "residence": [
+        "Valley of Sorek (Judges 16:4)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Judges"
+      ],
+      "key_verses": [
+        "Judges 16:4",
+        "Judges 16:5",
+        "Judges 16:19"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "judges-samson",
+          "title": "Samson",
+          "passage": "Judges 13:1 - 16:31",
+          "route": "#stories/judges/samson"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "delilah_1005",
+      "reference_id": "rec3CJaR6qJKZgcUA",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "naomi",
+    "name": "Naomi",
+    "sex": "female",
+    "era": "Judges",
+    "summary": "Elimelech's wife from Bethlehem, who moves to Moab during a famine. There she loses her husband and her sons Mahlon and Chilion. She returns to Bethlehem with her daughter-in-law Ruth. She asks to be called Mara, saying the Almighty has dealt bitterly with her. She guides Ruth toward Boaz. When Obed is born, the neighbours say a son is born to Naomi. Their words in Ruth 4:17 do not make Naomi his birth mother.",
+    "aliases": [
+      "Mara"
+    ],
+    "lineage": {
+      "spouses": [
+        "Elimelech"
+      ],
+      "children": [
+        "Mahlon",
+        "Chilion"
+      ]
+    },
+    "geography": {
+      "origin": "Bethlehem-judah (Ruth 1:2)",
+      "residence": [
+        "Moab (Ruth 1:2)",
+        "Bethlehem (Ruth 1:22)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Ruth"
+      ],
+      "key_verses": [
+        "Ruth 1:2",
+        "Ruth 1:4",
+        "Ruth 1:20",
+        "Ruth 1:22",
+        "Ruth 4:13",
+        "Ruth 4:17"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "ruth-naomi-and-ruth-return-to-bethlehem",
+          "title": "Naomi and Ruth Return to Bethlehem",
+          "passage": "Ruth 1:1 - 1:22",
+          "route": "#stories/ruth/naomi-and-ruth-return-to-bethlehem"
+        },
+        {
+          "story_id": "ruth-the-threshing-floor",
+          "title": "The Threshing Floor",
+          "passage": "Ruth 3:1 - 3:18",
+          "route": "#stories/ruth/the-threshing-floor"
+        },
+        {
+          "story_id": "ruth-boaz-redeems-and-marries-ruth",
+          "title": "Boaz Redeems and Marries Ruth",
+          "passage": "Ruth 4:1 - 4:22",
+          "route": "#stories/ruth/boaz-redeems-and-marries-ruth"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "naomi_2147",
+      "reference_id": "rec9C2DCAjPXuMVoL",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "ruth",
+    "name": "Ruth",
+    "sex": "female",
+    "era": "Judges",
+    "summary": "A Moabite woman who marries Mahlon, Naomi's son. After his death, she stays with Naomi and says Naomi's people and God will be hers. In Bethlehem, she gathers grain left by harvesters in the field of Boaz, a relative. Following Naomi's advice, she asks him to act as a close relative at the threshing floor. The account describes the nearer relative declining the family and land arrangement. Boaz marries her, and she bears Obed, Jesse's father and David's grandfather. Matthew names her in its family list.",
+    "lineage": {
+      "spouses": [
+        "Mahlon",
+        "Boaz"
+      ],
+      "children": [
+        "Obed"
+      ]
+    },
+    "geography": {
+      "origin": "Moab (Ruth 1:4)",
+      "residence": [
+        "Moab (Ruth 1:4)",
+        "Bethlehem (Ruth 1:22)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Ruth",
+        "Matthew"
+      ],
+      "key_verses": [
+        "Ruth 1:4",
+        "Ruth 1:16",
+        "Ruth 1:22",
+        "Ruth 3:9",
+        "Ruth 4:10",
+        "Ruth 4:13",
+        "Ruth 4:17",
+        "Matthew 1:5"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "ruth-naomi-and-ruth-return-to-bethlehem",
+          "title": "Naomi and Ruth Return to Bethlehem",
+          "passage": "Ruth 1:1 - 1:22",
+          "route": "#stories/ruth/naomi-and-ruth-return-to-bethlehem"
+        },
+        {
+          "story_id": "ruth-ruth-gleans-in-boaz-s-field",
+          "title": "Ruth Gleans in Boaz's Field",
+          "passage": "Ruth 2:1 - 2:23",
+          "route": "#stories/ruth/ruth-gleans-in-boaz-s-field"
+        },
+        {
+          "story_id": "ruth-the-threshing-floor",
+          "title": "The Threshing Floor",
+          "passage": "Ruth 3:1 - 3:18",
+          "route": "#stories/ruth/the-threshing-floor"
+        },
+        {
+          "story_id": "ruth-boaz-redeems-and-marries-ruth",
+          "title": "Boaz Redeems and Marries Ruth",
+          "passage": "Ruth 4:1 - 4:22",
+          "route": "#stories/ruth/boaz-redeems-and-marries-ruth"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "ruth_2450",
+      "reference_id": "recUgHX8TjNBQ3aXd",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Boaz",
+          "profile_id": "boaz"
+        }
+      ]
+    }
+  },
+  {
+    "id": "boaz",
+    "name": "Boaz",
+    "sex": "male",
+    "era": "Judges",
+    "summary": "A wealthy relative of Elimelech in Bethlehem who lets Ruth gather grain left in his field. At the threshing floor, she asks him to spread his skirt over her as a close relative. He arranges to buy the family land at the town gate. He marries Ruth to preserve the dead man's name through his inheritance. Their son Obed is Jesse's father. Matthew names Booz as the son of Salmon and Rachab. That family list does not itself settle further claims about Rachab's identity.",
+    "aliases": [
+      "Booz"
+    ],
+    "lineage": {
+      "parents": [
+        "Salmon"
+      ],
+      "spouses": [
+        "Ruth"
+      ],
+      "children": [
+        "Obed"
+      ]
+    },
+    "geography": {
+      "origin": "Bethlehem (Ruth 2:1)",
+      "residence": [
+        "Bethlehem (Ruth 2:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Ruth",
+        "Matthew"
+      ],
+      "key_verses": [
+        "Ruth 2:1",
+        "Ruth 3:9",
+        "Ruth 4:10",
+        "Ruth 4:13",
+        "Ruth 4:17",
+        "Ruth 4:21",
+        "Matthew 1:5"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "ruth-ruth-gleans-in-boaz-s-field",
+          "title": "Ruth Gleans in Boaz's Field",
+          "passage": "Ruth 2:1 - 2:23",
+          "route": "#stories/ruth/ruth-gleans-in-boaz-s-field"
+        },
+        {
+          "story_id": "ruth-the-threshing-floor",
+          "title": "The Threshing Floor",
+          "passage": "Ruth 3:1 - 3:18",
+          "route": "#stories/ruth/the-threshing-floor"
+        },
+        {
+          "story_id": "ruth-boaz-redeems-and-marries-ruth",
+          "title": "Boaz Redeems and Marries Ruth",
+          "passage": "Ruth 4:1 - 4:22",
+          "route": "#stories/ruth/boaz-redeems-and-marries-ruth"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "boaz_519",
+      "reference_id": "recD5yp1lrQTH1DZp",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Ruth",
+          "profile_id": "ruth"
+        }
+      ]
+    }
+  }
+]

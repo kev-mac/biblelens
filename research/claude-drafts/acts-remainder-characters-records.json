@@ -1,0 +1,443 @@
+[
+  {
+    "id": "ananias-husband-of-sapphira",
+    "name": "Ananias",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "A Jerusalem believer whose wife is Sapphira, distinct from the Damascus disciple and the high priest named Ananias. Acts says the couple sell property and knowingly keep part of the price while bringing the rest to the apostles. Peter says both land and money had been theirs to use freely. He accuses Ananias of lying to God. The account says Ananias falls down dead and fear spreads among those who hear. Young men wrap and bury him.",
+    "lineage": {
+      "spouses": [
+        "Sapphira"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Jerusalem (implied by Acts 5:1-2, the apostles' feet)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 5:1",
+        "Acts 5:2",
+        "Acts 5:3",
+        "Acts 5:4",
+        "Acts 5:5",
+        "Acts 5:6"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-ananias-and-sapphira",
+          "title": "Ananias and Sapphira",
+          "passage": "Acts 4:32 - 5:11",
+          "route": "#stories/acts/ananias-and-sapphira"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "ananias_258",
+      "reference_id": "reciQ6JZbbGyzAk2N",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Sapphira",
+          "profile_id": "sapphira"
+        }
+      ]
+    }
+  },
+  {
+    "id": "sapphira",
+    "name": "Sapphira",
+    "sex": "female",
+    "era": "Apostolic",
+    "summary": "Ananias's wife, who knows about the plan to keep part of the land's price. Acts says she comes in about three hours later, unaware of what has happened. Peter separately asks her whether the land sold for the stated amount, and she says yes. He asks why they agreed to test the Lord's Spirit. He says the men who buried her husband are at the door. Acts describes her falling dead at Peter's feet and being buried beside her husband.",
+    "lineage": {
+      "spouses": [
+        "Ananias, Sapphira's husband"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Jerusalem (implied by Acts 5:1-2)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 5:1",
+        "Acts 5:2",
+        "Acts 5:7",
+        "Acts 5:8",
+        "Acts 5:9",
+        "Acts 5:10"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-ananias-and-sapphira",
+          "title": "Ananias and Sapphira",
+          "passage": "Acts 4:32 - 5:11",
+          "route": "#stories/acts/ananias-and-sapphira"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "sapphira_2472",
+      "reference_id": "recPzUsFBorefZzaf",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Ananias, Sapphira's husband",
+          "profile_id": "ananias-husband-of-sapphira"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ananias-of-damascus",
+    "name": "Ananias of Damascus",
+    "sex": "male",
+    "era": "Apostolic",
+    "aliases": [
+      "Ananias, a devout man according to the law"
+    ],
+    "summary": "A disciple at Damascus, distinct from Sapphira's husband and the high priest. Acts 9 describes the Lord sending him in a vision to Judas's house on Straight Street. Saul is praying there and has seen Ananias coming to lay a hand on him. Ananias objects, citing Saul's persecution and authority to arrest believers. The Lord's reply describes Saul as chosen to speak before non-Jews, kings and Israel. Ananias goes, lays hands on Saul and calls him brother. He says he was sent for Saul's sight and filling with the Holy Spirit. In Paul's later account, Ananias follows the law and is respected by local Jews.",
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Damascus (Acts 9:10)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 9:10",
+        "Acts 9:11",
+        "Acts 9:12",
+        "Acts 9:13",
+        "Acts 9:14",
+        "Acts 9:15",
+        "Acts 9:17",
+        "Acts 22:12"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-saul-s-conversion",
+          "title": "Saul's Conversion",
+          "passage": "Acts 9:1 - 9:31",
+          "route": "#stories/acts/saul-s-conversion"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "ananias_259",
+      "reference_id": "recmTY4FOegpNmW1w",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "simon-magus",
+    "name": "Simon the sorcerer",
+    "sex": "male",
+    "era": "Apostolic",
+    "aliases": [
+      "Simon Magus",
+      "Simon the sorcerer"
+    ],
+    "summary": "A man in Samaria whom Acts describes as using sorcery and presenting himself as great. People call him God's great power. After Philip preaches, Simon believes, is baptized and follows him, amazed by the signs. Acts describes Peter and John laying hands on people, who receive the Holy Spirit. Simon offers money for that power. Peter rebukes him and tells him to turn from his wrongdoing and pray. Simon asks them to pray that the threatened harm will not happen. Acts gives no later biography. Magus is a conventional label, not his name in the KJV; he is distinct from Peter and Simon the tanner.",
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Samaria (Acts 8:9)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 8:9",
+        "Acts 8:10",
+        "Acts 8:13",
+        "Acts 8:18",
+        "Acts 8:19",
+        "Acts 8:20",
+        "Acts 8:21",
+        "Acts 8:22",
+        "Acts 8:24"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-philip-and-the-ethiopian",
+          "title": "Philip and the Ethiopian",
+          "passage": "Acts 8:1 - 8:40",
+          "route": "#stories/acts/philip-and-the-ethiopian"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "simon_2752",
+      "reference_id": "rec7mbq5BahDRoSlS",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "dorcas",
+    "name": "Dorcas",
+    "sex": "female",
+    "era": "Apostolic",
+    "aliases": [
+      "Tabitha"
+    ],
+    "summary": "Tabitha, also called Dorcas, is a disciple in Joppa whom Acts describes as generous and active in helping others. She becomes ill, dies and is laid in an upstairs room. Two men ask Peter to come from nearby Lydda. Widows show him clothing she made and weep. Acts describes Peter clearing the room, kneeling to pray and saying, “Tabitha, arise”. She opens her eyes and sits up, and he presents her alive to the believers and widows. The account says many in Joppa believe after hearing this.",
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Joppa (Acts 9:36)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 9:36",
+        "Acts 9:37",
+        "Acts 9:39",
+        "Acts 9:40",
+        "Acts 9:41",
+        "Acts 9:42"
+      ],
+      "linked_stories": []
+    },
+    "reference_binding": {
+      "sourceRecord": "dorcas_2810",
+      "reference_id": "recDt7JkmnmKqdnB7",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "eutychus",
+    "name": "Eutychus",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "A young man present at Troas, sitting in an upstairs window while Paul speaks until midnight before leaving. Acts says he falls deeply asleep, falls from the third floor and is taken up dead. Paul goes down, embraces him and says his life is in him. Paul returns upstairs, breaks bread and talks until dawn. The account describes Eutychus being brought in alive, greatly comforting the group. It does not establish his beliefs from attendance or explain a medical mechanism.",
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Troas (Acts 20:6-7)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 20:7",
+        "Acts 20:8",
+        "Acts 20:9",
+        "Acts 20:10",
+        "Acts 20:11",
+        "Acts 20:12"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-ephesus",
+          "title": "Ephesus",
+          "passage": "Acts 19:1 - 20:38",
+          "route": "#stories/acts/ephesus"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "eutychus_1230",
+      "reference_id": "recuqHd9gHVWFFHNK",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "demetrius-the-silversmith",
+    "name": "Demetrius the silversmith",
+    "sex": "male",
+    "era": "Apostolic",
+    "summary": "A silversmith in Ephesus who makes silver shrines for Diana. Acts records him warning other craftspeople that Paul's teaching threatens their income and the goddess's temple. He says Paul teaches that handmade gods are not gods. The workers shout, “Great is Diana of the Ephesians”, and confusion spreads through the city. The town clerk calms the crowd. He says the accused men neither rob temples nor insult their goddess, and directs complaints to the courts. This profile covers the silversmith in Acts, without identifying him with the Demetrius in 3 John.",
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Ephesus (Acts 19:28)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 19:24",
+        "Acts 19:25",
+        "Acts 19:26",
+        "Acts 19:27",
+        "Acts 19:28",
+        "Acts 19:38"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-ephesus",
+          "title": "Ephesus",
+          "passage": "Acts 19:1 - 20:38",
+          "route": "#stories/acts/ephesus"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "demetrius_1007",
+      "reference_id": "recnjSr5ffVmmz3Rf",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "claudius-lysias",
+    "name": "Claudius Lysias",
+    "sex": "male",
+    "era": "Apostolic",
+    "aliases": [
+      "chief captain"
+    ],
+    "summary": "The Roman commander at Jerusalem, distinct from Emperor Claudius. Acts describes him rescuing Paul from a crowd and binding him with two chains. He asks whether Paul is the Egyptian rebel; Paul replies that he is a Jew from Tarsus. The officer orders a whipping to question Paul but draws back on learning Paul is Roman. He says he bought citizenship, while Paul says he was born with it. After Paul's nephew reports an ambush plot, he sends Paul to Felix at Caesarea under a large guard. His letter names him and says Paul has done nothing deserving death or imprisonment. Those assessments remain the officer's claims.",
+    "geography": {
+      "origin": "Not stated; he bought Roman citizenship (Acts 22:28)",
+      "residence": [
+        "Jerusalem castle (Acts 21:34)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Acts"
+      ],
+      "key_verses": [
+        "Acts 21:31",
+        "Acts 21:33",
+        "Acts 21:37",
+        "Acts 22:24",
+        "Acts 22:27",
+        "Acts 22:28",
+        "Acts 23:17",
+        "Acts 23:23",
+        "Acts 23:26",
+        "Acts 23:29"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-paul-arrested-in-jerusalem",
+          "title": "Paul Arrested in Jerusalem",
+          "passage": "Acts 21:1 - 23:35",
+          "route": "#stories/acts/paul-arrested-in-jerusalem"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "claudius_948",
+      "reference_id": "recTx6ajkAepIsmh5",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "luke",
+    "name": "Luke",
+    "sex": "male",
+    "era": "Apostolic",
+    "aliases": [
+      "Lucas",
+      "the beloved physician"
+    ],
+    "summary": "Paul's companion named in three letters. Philemon calls Lucas a fellow worker; Colossians calls Luke “the beloved physician”; Second Timothy says only Luke is with Paul. The last passage does not establish a final imprisonment. Acts never names Luke, though its narration changes to “we” in parts of the journeys. Acts addresses Theophilus and refers to “The former treatise”; Luke's Gospel also addresses Theophilus. The traditional link between these books, Luke and the unnamed travelling narrator is not an explicit statement of the texts.",
+    "geography": {
+      "origin": "Not stated",
+      "residence": [
+        "Not stated in the cited letters."
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Luke",
+        "Acts",
+        "Colossians",
+        "2 Timothy",
+        "Philemon"
+      ],
+      "key_verses": [
+        "Colossians 4:14",
+        "2 Timothy 4:11",
+        "Philemon 1:24",
+        "Acts 16:10",
+        "Acts 20:6",
+        "Acts 27:1",
+        "Acts 28:16",
+        "Luke 1:3",
+        "Acts 1:1"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "acts-paul-in-philippi",
+          "title": "Paul in Philippi",
+          "passage": "Acts 16:1 - 16:40",
+          "route": "#stories/acts/paul-in-philippi"
+        },
+        {
+          "story_id": "acts-shipwreck-and-rome",
+          "title": "Shipwreck and Rome",
+          "passage": "Acts 27:1 - 28:31",
+          "route": "#stories/acts/shipwreck-and-rome"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "luke_1836",
+      "reference_id": "recFqCoLVEfASibXd",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  }
+]

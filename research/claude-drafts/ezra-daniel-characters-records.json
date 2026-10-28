@@ -1,0 +1,999 @@
+[
+  {
+    "id": "cyrus",
+    "name": "Cyrus",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "King of Persia, whose first-year proclamation in Ezra permits Judeans to return and rebuild Jerusalem's temple. He says the God of heaven gave him his kingdoms and calls God's people to go. He asks neighbours to help with silver, gold and goods. He returns temple vessels taken by Nebuchadnezzar, counting them out to Sheshbazzar. Ezra links this to Jeremiah's words. Isaiah calls Cyrus the Lord's anointed, and Daniel says Daniel prospers into his reign. These texts do not say every Judean returned or establish Cyrus's birthplace.",
+    "geography": {
+      "origin": "Birthplace not stated; king of Persia in Ezra 1:1.",
+      "residence": [
+        "Persia (Ezra 1:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Ezra",
+        "2 Chronicles",
+        "Isaiah",
+        "Daniel"
+      ],
+      "key_verses": [
+        "Ezra 1:1",
+        "Ezra 1:2",
+        "Ezra 1:3",
+        "Ezra 1:7",
+        "Ezra 1:8",
+        "Ezra 6:14",
+        "2 Chronicles 36:22",
+        "Isaiah 45:1",
+        "Daniel 6:28",
+        "Daniel 10:1"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "ezra-cyrus-s-decree-and-the-return",
+          "title": "Cyrus's Decree and the Return",
+          "passage": "Ezra 1:1 - 2:70",
+          "route": "#stories/ezra/cyrus-s-decree-and-the-return"
+        },
+        {
+          "story_id": "2-chronicles-the-fall-of-judah-and-cyrus-s-decree",
+          "title": "The Fall of Judah and Cyrus's Decree",
+          "passage": "2 Chronicles 36:1 - 36:23",
+          "route": "#stories/2-chronicles/the-fall-of-judah-and-cyrus-s-decree"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "cyrus_968",
+      "reference_id": "recYS0HXBlTsRDtlc",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "zerubbabel",
+    "name": "Zerubbabel",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "A leader among those returning from Babylon. Ezra and Haggai call him Shealtiel's son, while 1 Chronicles 3:19 lists him among Pedaiah's sons. This profile leaves that difference unresolved and does not identify him with Sheshbazzar. With Jeshua, he builds the altar and lays the temple foundation in the second year. After work stops, messages from Haggai and Zechariah prompt them to begin again. Haggai calls him Judah's governor and describes the Lord promising to make him a signet, a seal of authority. Zechariah says he will finish the temple. Matthew places him in Jechonias's family line.",
+    "aliases": [
+      "Zorobabel"
+    ],
+    "lineage": {
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Babylon, among the returnees led out in Cyrus's time (Ezra 2:2)",
+      "residence": [
+        "Jerusalem (Ezra 3:8)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Ezra",
+        "Nehemiah",
+        "1 Chronicles",
+        "Haggai",
+        "Zechariah",
+        "Matthew"
+      ],
+      "key_verses": [
+        "Ezra 2:2",
+        "Ezra 3:2",
+        "Ezra 3:8",
+        "Ezra 5:2",
+        "1 Chronicles 3:19",
+        "Haggai 1:1",
+        "Haggai 2:23",
+        "Zechariah 4:9",
+        "Matthew 1:12"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "ezra-cyrus-s-decree-and-the-return",
+          "title": "Cyrus's Decree and the Return",
+          "passage": "Ezra 1:1 - 2:70",
+          "route": "#stories/ezra/cyrus-s-decree-and-the-return"
+        },
+        {
+          "story_id": "ezra-rebuilding-the-altar-and-foundation",
+          "title": "Rebuilding the Altar and Foundation",
+          "passage": "Ezra 3:1 - 3:13",
+          "route": "#stories/ezra/rebuilding-the-altar-and-foundation"
+        },
+        {
+          "story_id": "ezra-the-temple-completed",
+          "title": "The Temple Completed",
+          "passage": "Ezra 5:1 - 6:22",
+          "route": "#stories/ezra/the-temple-completed"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "zerubbabel_3054",
+      "reference_id": "rec0lXwCB3xvWjTVN",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "ezra",
+    "name": "Ezra",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "A priest from Aaron's line through Seraiah and a trained reader and teacher of Moses' law. In Artaxerxes' seventh year, he leaves Babylon with the king's letter on the first day of the first month. Ezra 7:9 places his arrival in Jerusalem on the first day of the fifth month. The book says he prepares to study, follow and teach the law. After hearing about marriages to foreign women, he prays and weeps. Ezra 10:3 describes an agreement to send the women away. Nehemiah describes him reading the law to the people on the first day of the seventh month.",
+    "lineage": {
+      "parents": [
+        "Seraiah"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Priestly line of Aaron through Seraiah (Ezra 7:1-5)",
+      "residence": [
+        "Babylon (Ezra 7:6)",
+        "Jerusalem (Ezra 7:8)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Ezra",
+        "Nehemiah"
+      ],
+      "key_verses": [
+        "Ezra 7:1",
+        "Ezra 7:5",
+        "Ezra 7:6",
+        "Ezra 7:8",
+        "Ezra 7:10",
+        "Ezra 7:11",
+        "Ezra 10:1",
+        "Ezra 10:5",
+        "Nehemiah 8:1",
+        "Nehemiah 8:2",
+        "Nehemiah 12:26",
+        "Ezra 7:9",
+        "Ezra 10:3"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "ezra-ezra-comes-to-jerusalem",
+          "title": "Ezra Comes to Jerusalem",
+          "passage": "Ezra 7:1 - 8:36",
+          "route": "#stories/ezra/ezra-comes-to-jerusalem"
+        },
+        {
+          "story_id": "ezra-ezra-and-mixed-marriages",
+          "title": "Ezra and Mixed Marriages",
+          "passage": "Ezra 9:1 - 10:44",
+          "route": "#stories/ezra/ezra-and-mixed-marriages"
+        },
+        {
+          "story_id": "nehemiah-ezra-reads-the-law",
+          "title": "Ezra Reads the Law",
+          "passage": "Nehemiah 8:1 - 9:38",
+          "route": "#stories/nehemiah/ezra-reads-the-law"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "ezra_1245",
+      "reference_id": "recKCifIYcTXovrF4",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "nehemiah",
+    "name": "Nehemiah",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "Hachaliah's son, serving at Shushan when Hanani and others report Jerusalem's broken wall and the people's distress. He weeps, fasts and prays. In Artaxerxes' twentieth year, he serves the king's drink and asks to rebuild the city. He receives letters and timber. Nehemiah describes the wall builders facing opposition, carrying weapons as they work. He governs Judah for twelve years without taking the governor's food allowance. He later returns to the king, then comes back to make further reforms. This profile does not identify every Nehemiah in the records as this governor.",
+    "lineage": {
+      "parents": [
+        "Hachaliah"
+      ],
+      "siblings": [
+        "Hanani"
+      ]
+    },
+    "geography": {
+      "origin": "Shushan the palace, son of Hachaliah (Nehemiah 1:1)",
+      "residence": [
+        "Shushan (Nehemiah 1:1)",
+        "Jerusalem (Nehemiah 2:11)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Nehemiah"
+      ],
+      "key_verses": [
+        "Nehemiah 1:1",
+        "Nehemiah 1:2",
+        "Nehemiah 1:4",
+        "Nehemiah 1:11",
+        "Nehemiah 2:1",
+        "Nehemiah 2:5",
+        "Nehemiah 4:17",
+        "Nehemiah 5:14",
+        "Nehemiah 12:26",
+        "Nehemiah 13:6"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "nehemiah-nehemiah-s-prayer-and-commission",
+          "title": "Nehemiah's Prayer and Commission",
+          "passage": "Nehemiah 1:1 - 2:10",
+          "route": "#stories/nehemiah/nehemiah-s-prayer-and-commission"
+        },
+        {
+          "story_id": "nehemiah-rebuilding-the-wall",
+          "title": "Rebuilding the Wall",
+          "passage": "Nehemiah 2:11 - 4:23",
+          "route": "#stories/nehemiah/rebuilding-the-wall"
+        },
+        {
+          "story_id": "nehemiah-debt-relief",
+          "title": "Debt Relief",
+          "passage": "Nehemiah 5:1 - 5:19",
+          "route": "#stories/nehemiah/debt-relief"
+        },
+        {
+          "story_id": "nehemiah-the-wall-completed",
+          "title": "The Wall Completed",
+          "passage": "Nehemiah 6:1 - 7:5",
+          "route": "#stories/nehemiah/the-wall-completed"
+        },
+        {
+          "story_id": "nehemiah-nehemiah-s-reforms",
+          "title": "Nehemiah's Reforms",
+          "passage": "Nehemiah 13:1 - 13:31",
+          "route": "#stories/nehemiah/nehemiah-s-reforms"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "nehemiah_2172",
+      "reference_id": "recHC0HgcWgcXChGp",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "sanballat",
+    "name": "Sanballat",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "Called the Horonite in Nehemiah. With Tobiah and Geshem, he mocks the people rebuilding Jerusalem's wall. He speaks before Samaria's army. When the wall lacks only its doors, he sends four requests for Nehemiah to meet him near Ono. Nehemiah says they intend harm; this is Nehemiah's account of their purpose. Later, a son of Joiada from the high priest's family becomes Sanballat's son-in-law. Nehemiah drives that man away. The Horonite label is not used here to assign a modern nationality.",
+    "lineage": {
+      "children": [
+        "Daughter (unnamed), married into the high priest's family"
+      ]
+    },
+    "geography": {
+      "origin": "Horonite (Nehemiah 2:10)",
+      "residence": [
+        "Samaria is named in his speech (Nehemiah 4:2)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Nehemiah"
+      ],
+      "key_verses": [
+        "Nehemiah 2:10",
+        "Nehemiah 2:19",
+        "Nehemiah 4:1",
+        "Nehemiah 4:2",
+        "Nehemiah 6:1",
+        "Nehemiah 6:2",
+        "Nehemiah 6:4",
+        "Nehemiah 13:28"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "nehemiah-rebuilding-the-wall",
+          "title": "Rebuilding the Wall",
+          "passage": "Nehemiah 2:11 - 4:23",
+          "route": "#stories/nehemiah/rebuilding-the-wall"
+        },
+        {
+          "story_id": "nehemiah-the-wall-completed",
+          "title": "The Wall Completed",
+          "passage": "Nehemiah 6:1 - 7:5",
+          "route": "#stories/nehemiah/the-wall-completed"
+        },
+        {
+          "story_id": "nehemiah-nehemiah-s-reforms",
+          "title": "Nehemiah's Reforms",
+          "passage": "Nehemiah 13:1 - 13:31",
+          "route": "#stories/nehemiah/nehemiah-s-reforms"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "sanballat_2470",
+      "reference_id": "rec52hiVeIo48q2Ru",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "vashti",
+    "name": "Vashti",
+    "sex": "female",
+    "era": "Prophets",
+    "summary": "Ahasuerus's queen, who holds a feast for women while he feasts with the princes. On the seventh day, the king is merry with wine. He sends seven court servants to bring her wearing the royal crown and display her beauty. She refuses, and he becomes angry. Esther gives no reason for her refusal. Memucan advises barring her from the king's presence and giving her position to another woman. A decree goes to every province. The later search for a queen leads to Esther taking her place.",
+    "lineage": {
+      "spouses": [
+        "Ahasuerus"
+      ]
+    },
+    "geography": {
+      "origin": "Not stated in the text; queen of Ahasuerus (Esther 1:9)",
+      "residence": [
+        "Shushan the palace (Esther 1:2, 1:9)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Esther"
+      ],
+      "key_verses": [
+        "Esther 1:9",
+        "Esther 1:11",
+        "Esther 1:12",
+        "Esther 1:19",
+        "Esther 2:1",
+        "Esther 2:4",
+        "Esther 2:17"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "esther-vashti-deposed",
+          "title": "Vashti Deposed",
+          "passage": "Esther 1:1 - 1:22",
+          "route": "#stories/esther/vashti-deposed"
+        },
+        {
+          "story_id": "esther-esther-becomes-queen",
+          "title": "Esther Becomes Queen",
+          "passage": "Esther 2:1 - 2:23",
+          "route": "#stories/esther/esther-becomes-queen"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "vashti_2937",
+      "reference_id": "recX0LVuxaIsDqO6p",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Ahasuerus",
+          "profile_id": "ahasuerus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ahasuerus",
+    "name": "Ahasuerus",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "Esther's king ruling 127 provinces from India to Ethiopia, with his throne at Shushan. In his third year, he displays his riches for 180 days, then gives a seven-day feast. He removes Vashti and makes Esther queen in his seventh year. He promotes Haman and gives his ring for the decree against the Jews. After Esther reveals the plot, he orders Haman's death and gives the ring to Mordecai. The book later says he imposes tribute on the land and islands. This profile does not settle his external historical identity.",
+    "lineage": {
+      "spouses": [
+        "Vashti",
+        "Esther"
+      ]
+    },
+    "geography": {
+      "origin": "King of Persia, 127 provinces from India to Ethiopia (Esther 1:1)",
+      "residence": [
+        "Shushan the palace (Esther 1:2)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Esther"
+      ],
+      "key_verses": [
+        "Esther 1:1",
+        "Esther 1:2",
+        "Esther 1:3",
+        "Esther 2:16",
+        "Esther 2:17",
+        "Esther 3:1",
+        "Esther 7:10",
+        "Esther 8:2",
+        "Esther 10:3",
+        "Esther 1:4",
+        "Esther 1:5"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "esther-vashti-deposed",
+          "title": "Vashti Deposed",
+          "passage": "Esther 1:1 - 1:22",
+          "route": "#stories/esther/vashti-deposed"
+        },
+        {
+          "story_id": "esther-esther-becomes-queen",
+          "title": "Esther Becomes Queen",
+          "passage": "Esther 2:1 - 2:23",
+          "route": "#stories/esther/esther-becomes-queen"
+        },
+        {
+          "story_id": "esther-haman-s-plot",
+          "title": "Haman's Plot",
+          "passage": "Esther 3:1 - 4:17",
+          "route": "#stories/esther/haman-s-plot"
+        },
+        {
+          "story_id": "esther-esther-s-banquets",
+          "title": "Esther's Banquets",
+          "passage": "Esther 5:1 - 7:10",
+          "route": "#stories/esther/esther-s-banquets"
+        },
+        {
+          "story_id": "esther-the-jews-delivered-and-purim",
+          "title": "The Jews Delivered and Purim",
+          "passage": "Esther 8:1 - 10:3",
+          "route": "#stories/esther/the-jews-delivered-and-purim"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "ahasuerus_117",
+      "reference_id": "reck4FOoejZddGY7H",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Vashti",
+          "profile_id": "vashti"
+        },
+        {
+          "relation": "spouses",
+          "label": "Esther",
+          "profile_id": "esther"
+        }
+      ]
+    }
+  },
+  {
+    "id": "esther",
+    "name": "Esther",
+    "sex": "female",
+    "era": "Prophets",
+    "summary": "Hadassah, Abihail's daughter, whose cousin Mordecai raises her as his own daughter after her parents die. Esther says she enters the king's house in the tenth month of his seventh year and becomes queen. At Mordecai's direction, she keeps her people secret. When Haman's decree comes, Mordecai says help may come elsewhere and her position may be for this moment. She asks the Jews to fast three days and approaches the king without being called. The book describes two banquets, her naming Haman and a second decree for the Jews.",
+    "aliases": [
+      "Hadassah"
+    ],
+    "lineage": {
+      "parents": [
+        "Abihail"
+      ],
+      "spouses": [
+        "Ahasuerus"
+      ]
+    },
+    "geography": {
+      "origin": "Jewish orphan in Shushan, daughter of Abihail (Esther 2:7, 2:15)",
+      "residence": [
+        "Shushan the palace (Esther 2:8)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Esther"
+      ],
+      "key_verses": [
+        "Esther 2:7",
+        "Esther 2:15",
+        "Esther 2:17",
+        "Esther 4:14",
+        "Esther 4:16",
+        "Esther 5:2",
+        "Esther 7:3",
+        "Esther 8:3"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "esther-esther-becomes-queen",
+          "title": "Esther Becomes Queen",
+          "passage": "Esther 2:1 - 2:23",
+          "route": "#stories/esther/esther-becomes-queen"
+        },
+        {
+          "story_id": "esther-haman-s-plot",
+          "title": "Haman's Plot",
+          "passage": "Esther 3:1 - 4:17",
+          "route": "#stories/esther/haman-s-plot"
+        },
+        {
+          "story_id": "esther-esther-s-banquets",
+          "title": "Esther's Banquets",
+          "passage": "Esther 5:1 - 7:10",
+          "route": "#stories/esther/esther-s-banquets"
+        },
+        {
+          "story_id": "esther-the-jews-delivered-and-purim",
+          "title": "The Jews Delivered and Purim",
+          "passage": "Esther 8:1 - 10:3",
+          "route": "#stories/esther/the-jews-delivered-and-purim"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "esther_1343",
+      "reference_id": "recRuSINUX52qGLlh",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "spouses",
+          "label": "Ahasuerus",
+          "profile_id": "ahasuerus"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mordecai",
+    "name": "Mordecai",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "Jair's son from Benjamin, living in Shushan and raising his cousin Esther. Esther traces his family through Shimei and Kish. He tells Esther to conceal her people, uncovers Bigthan and Teresh's plot and refuses to bow to Haman. When Haman's decree comes, he tears his clothes, wears mourning cloth and urges Esther to act. The king honours him publicly using Haman's own proposal. He later receives the king's ring. Esther puts him in charge of Haman's house, which the king gave to her. He writes about keeping Purim and becomes second to the king. This profile distinguishes him from Ezra's returnee Mordecai.",
+    "lineage": {
+      "parents": [
+        "Jair"
+      ],
+      "tribe": "Benjamin"
+    },
+    "geography": {
+      "origin": "Benjamite in Shushan (Esther 2:5)",
+      "residence": [
+        "Shushan the palace (Esther 2:5)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Esther"
+      ],
+      "key_verses": [
+        "Esther 2:5",
+        "Esther 2:7",
+        "Esther 2:21",
+        "Esther 2:22",
+        "Esther 3:2",
+        "Esther 4:14",
+        "Esther 6:11",
+        "Esther 8:2",
+        "Esther 9:20",
+        "Esther 10:3"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "esther-esther-becomes-queen",
+          "title": "Esther Becomes Queen",
+          "passage": "Esther 2:1 - 2:23",
+          "route": "#stories/esther/esther-becomes-queen"
+        },
+        {
+          "story_id": "esther-haman-s-plot",
+          "title": "Haman's Plot",
+          "passage": "Esther 3:1 - 4:17",
+          "route": "#stories/esther/haman-s-plot"
+        },
+        {
+          "story_id": "esther-esther-s-banquets",
+          "title": "Esther's Banquets",
+          "passage": "Esther 5:1 - 7:10",
+          "route": "#stories/esther/esther-s-banquets"
+        },
+        {
+          "story_id": "esther-the-jews-delivered-and-purim",
+          "title": "The Jews Delivered and Purim",
+          "passage": "Esther 8:1 - 10:3",
+          "route": "#stories/esther/the-jews-delivered-and-purim"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "mordecai_2107",
+      "reference_id": "recCNBE1sRdiZd1js",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "haman",
+    "name": "Haman",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "Hammedatha's son, called an Agagite, whom Ahasuerus promotes above the princes. When Mordecai refuses to bow, Haman seeks to destroy Mordecai's people. He casts a lot to choose the day and offers the king ten thousand talents of silver. Despite his invitations to Esther's banquets, seeing Mordecai angers him. On advice from Zeresh and friends, he builds a gallows fifty cubits high. The king makes him lead Mordecai through the city in honour. Esther names him as the enemy, and he is hanged on his own gallows. His house goes to Esther, and his ten sons are killed.",
+    "lineage": {
+      "parents": [
+        "Hammedatha"
+      ],
+      "spouses": [
+        "Zeresh"
+      ],
+      "children": [
+        "Ten sons (Esther 9:10)"
+      ]
+    },
+    "geography": {
+      "origin": "Agagite, son of Hammedatha (Esther 3:1)",
+      "residence": [
+        "Shushan the palace (Esther 3:15)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Esther"
+      ],
+      "key_verses": [
+        "Esther 3:1",
+        "Esther 3:2",
+        "Esther 3:7",
+        "Esther 5:10",
+        "Esther 5:14",
+        "Esther 7:6",
+        "Esther 7:9",
+        "Esther 7:10",
+        "Esther 9:10",
+        "Esther 9:24"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "esther-haman-s-plot",
+          "title": "Haman's Plot",
+          "passage": "Esther 3:1 - 4:17",
+          "route": "#stories/esther/haman-s-plot"
+        },
+        {
+          "story_id": "esther-esther-s-banquets",
+          "title": "Esther's Banquets",
+          "passage": "Esther 5:1 - 7:10",
+          "route": "#stories/esther/esther-s-banquets"
+        },
+        {
+          "story_id": "esther-the-jews-delivered-and-purim",
+          "title": "The Jews Delivered and Purim",
+          "passage": "Esther 8:1 - 10:3",
+          "route": "#stories/esther/the-jews-delivered-and-purim"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "haman_1360",
+      "reference_id": "recWbF7K0mK6Cjo7U",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "daniel",
+    "name": "Daniel",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "A child of Judah taken to Babylon and renamed Belteshazzar. Daniel says he refuses the king's food and wine and receives understanding of dreams and visions from God. He explains Nebuchadnezzar's dream and is made ruler over Babylon's province. He reads the writing for Belshazzar. Under Darius, he is thrown into a lions' den for praying despite a decree. Later chapters describe beasts, a ram and goat, seventy weeks and a final vision in Cyrus's third year. Ezekiel names a Daniel with Noah and Job; the shared name does not settle his identity here. Matthew records Jesus referring to Daniel as a prophet.",
+    "aliases": [
+      "Belteshazzar"
+    ],
+    "lineage": {
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Judah, taken captive to Babylon (Daniel 1:1-6)",
+      "residence": [
+        "Babylon (Daniel 1:1-6)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Daniel",
+        "Ezekiel",
+        "Matthew"
+      ],
+      "key_verses": [
+        "Daniel 1:6",
+        "Daniel 1:7",
+        "Daniel 2:48",
+        "Daniel 5:30",
+        "Daniel 6:2",
+        "Daniel 6:28",
+        "Daniel 7:1",
+        "Daniel 9:1",
+        "Daniel 10:1",
+        "Ezekiel 14:14",
+        "Matthew 24:15"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "daniel-daniel-and-his-friends-in-babylon",
+          "title": "Daniel and His Friends in Babylon",
+          "passage": "Daniel 1:1 - 1:21",
+          "route": "#stories/daniel/daniel-and-his-friends-in-babylon"
+        },
+        {
+          "story_id": "daniel-nebuchadnezzar-s-dream-of-the-statue",
+          "title": "Nebuchadnezzar's Dream of the Statue",
+          "passage": "Daniel 2:1 - 2:49",
+          "route": "#stories/daniel/nebuchadnezzar-s-dream-of-the-statue"
+        },
+        {
+          "story_id": "daniel-nebuchadnezzar-s-humbling",
+          "title": "Nebuchadnezzar's Humbling",
+          "passage": "Daniel 4:1 - 4:37",
+          "route": "#stories/daniel/nebuchadnezzar-s-humbling"
+        },
+        {
+          "story_id": "daniel-belshazzar-s-feast",
+          "title": "Belshazzar's Feast",
+          "passage": "Daniel 5:1 - 5:31",
+          "route": "#stories/daniel/belshazzar-s-feast"
+        },
+        {
+          "story_id": "daniel-daniel-in-the-lions-den",
+          "title": "Daniel in the Lions' Den",
+          "passage": "Daniel 6:1 - 6:28",
+          "route": "#stories/daniel/daniel-in-the-lions-den"
+        },
+        {
+          "story_id": "daniel-daniel-s-visions",
+          "title": "Daniel's Visions",
+          "passage": "Daniel 7:1 - 12:13",
+          "route": "#stories/daniel/daniel-s-visions"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "daniel_975",
+      "reference_id": "recc4xDKjSwM1pH12",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "nebuchadnezzar",
+    "name": "Nebuchadnezzar",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "King of Babylon. Kings and Jeremiah describe his siege of Jerusalem, Jeconiah's captivity and the removal of temple vessels. His officers later burn the temple. Daniel describes his troubling dream of a statue and his promotion of Daniel over the wise men. He makes a gold image and orders three Judean men thrown into a furnace, then praises their God. Daniel also describes him living apart from people and eating grass like oxen. He later raises his eyes to heaven and praises its King. Cyrus returns the temple vessels he had taken. Daniel's father language about Belshazzar does not establish a biological link here.",
+    "aliases": [
+      "Nebuchadrezzar"
+    ],
+    "lineage": {},
+    "geography": {
+      "origin": "King of Babylon (Daniel 1:1)",
+      "residence": [
+        "Babylon (Daniel 1:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "2 Kings",
+        "Jeremiah",
+        "Daniel",
+        "Ezra"
+      ],
+      "key_verses": [
+        "2 Kings 24:1",
+        "2 Kings 25:8",
+        "Jeremiah 39:1",
+        "Daniel 1:1",
+        "Daniel 2:1",
+        "Daniel 3:1",
+        "Daniel 3:28",
+        "Daniel 4:33",
+        "Daniel 4:37",
+        "Ezra 1:7"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "daniel-daniel-and-his-friends-in-babylon",
+          "title": "Daniel and His Friends in Babylon",
+          "passage": "Daniel 1:1 - 1:21",
+          "route": "#stories/daniel/daniel-and-his-friends-in-babylon"
+        },
+        {
+          "story_id": "daniel-nebuchadnezzar-s-dream-of-the-statue",
+          "title": "Nebuchadnezzar's Dream of the Statue",
+          "passage": "Daniel 2:1 - 2:49",
+          "route": "#stories/daniel/nebuchadnezzar-s-dream-of-the-statue"
+        },
+        {
+          "story_id": "daniel-the-fiery-furnace",
+          "title": "The Fiery Furnace",
+          "passage": "Daniel 3:1 - 3:30",
+          "route": "#stories/daniel/the-fiery-furnace"
+        },
+        {
+          "story_id": "daniel-nebuchadnezzar-s-humbling",
+          "title": "Nebuchadnezzar's Humbling",
+          "passage": "Daniel 4:1 - 4:37",
+          "route": "#stories/daniel/nebuchadnezzar-s-humbling"
+        },
+        {
+          "story_id": "2-kings-the-fall-of-jerusalem",
+          "title": "The Fall of Jerusalem",
+          "passage": "2 Kings 23:31 - 25:30",
+          "route": "#stories/2-kings/the-fall-of-jerusalem"
+        },
+        {
+          "story_id": "jeremiah-the-fall-of-jerusalem-and-flight-to-egypt",
+          "title": "The Fall of Jerusalem and Flight to Egypt",
+          "passage": "Jeremiah 39:1 - 43:13",
+          "route": "#stories/jeremiah/the-fall-of-jerusalem-and-flight-to-egypt"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "nebuchadnezzar_2167",
+      "reference_id": "recTMYikvzJ27cDlA",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "belshazzar",
+    "name": "Belshazzar",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "Daniel calls him king of the Chaldeans. He feasts with a thousand lords and orders vessels taken from Jerusalem's temple brought out. The book describes a hand writing on the wall and his wise men failing to read it. The queen recalls Daniel. Daniel rebukes Belshazzar for not humbling himself despite knowing what happened to Nebuchadnezzar. Daniel reads and explains “Mene, Mene, Tekel, Upharsin”. Belshazzar clothes him in scarlet but is killed that night. The book places other visions in Belshazzar's first and third years. Its father language for Nebuchadnezzar does not settle biological parentage here.",
+    "lineage": {},
+    "geography": {
+      "origin": "King of the Chaldeans; Nebuchadnezzar is called his father (Daniel 5:2, 5:22)",
+      "residence": [
+        "Babylon (Daniel 5:1, 5:30)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Daniel"
+      ],
+      "key_verses": [
+        "Daniel 5:1",
+        "Daniel 5:2",
+        "Daniel 5:22",
+        "Daniel 5:25",
+        "Daniel 5:30",
+        "Daniel 7:1",
+        "Daniel 8:1"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "daniel-belshazzar-s-feast",
+          "title": "Belshazzar's Feast",
+          "passage": "Daniel 5:1 - 5:31",
+          "route": "#stories/daniel/belshazzar-s-feast"
+        },
+        {
+          "story_id": "daniel-daniel-s-visions",
+          "title": "Daniel's Visions",
+          "passage": "Daniel 7:1 - 12:13",
+          "route": "#stories/daniel/daniel-s-visions"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "belshazzar_437",
+      "reference_id": "recunH0SANFhGPvSJ",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "jonah",
+    "name": "Jonah",
+    "sex": "male",
+    "era": "Prophets",
+    "summary": "Amittai's son from Gathhepher, named as a prophet during Jeroboam son of Joash's reign. Jonah says the Lord sends him to Nineveh, but he flees toward Tarshish. Sailors throw him overboard during a storm. The book describes three days and nights in a great fish, where he prays. Sent again, he announces Nineveh's fall in forty days. The people believe God and fast. Jonah becomes angry and sits outside the city; the Lord asks whether Nineveh should be spared. The Gospels later describe Jesus speaking of Jonah's sign. This profile does not identify a fish species or make a science claim.",
+    "aliases": [
+      "Jonas"
+    ],
+    "lineage": {
+      "parents": [
+        "Amittai"
+      ]
+    },
+    "geography": {
+      "origin": "Gathhepher (2 Kings 14:25)",
+      "residence": [
+        "Gathhepher (2 Kings 14:25)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Jonah",
+        "2 Kings",
+        "Matthew"
+      ],
+      "key_verses": [
+        "Jonah 1:1",
+        "Jonah 1:2",
+        "Jonah 1:3",
+        "Jonah 1:17",
+        "Jonah 3:5",
+        "Jonah 4:1",
+        "Jonah 4:11",
+        "2 Kings 14:25",
+        "Matthew 12:40"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "jonah-jonah-flees-and-is-swallowed",
+          "title": "Jonah Flees and Is Swallowed",
+          "passage": "Jonah 1:1 - 2:10",
+          "route": "#stories/jonah/jonah-flees-and-is-swallowed"
+        },
+        {
+          "story_id": "jonah-nineveh-repents",
+          "title": "Nineveh Repents",
+          "passage": "Jonah 3:1 - 3:10",
+          "route": "#stories/jonah/nineveh-repents"
+        },
+        {
+          "story_id": "jonah-jonah-s-anger",
+          "title": "Jonah's Anger",
+          "passage": "Jonah 4:1 - 4:11",
+          "route": "#stories/jonah/jonah-s-anger"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "jonah_1689",
+      "reference_id": "recDDzG65U8UNAY4h",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  }
+]

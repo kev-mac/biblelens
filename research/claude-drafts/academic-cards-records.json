@@ -1,0 +1,513 @@
+{
+  "reviewed": "2026-10-26",
+  "note": "Research proposals only. Four revised events link to complete History Context drafts below. Four returned events remain unchanged. Display titles and related-record links are draft integration instructions, not runtime changes.",
+  "events": [
+    {
+      "id": "mesha-moab-revolt",
+      "title": "Moab's revolt against Israel (Mesha)",
+      "evidence_id": "TBD-history-mesha-moab-revolt",
+      "passages": [
+        "2 Kings 1:1",
+        "2 Kings 3:4-5",
+        "2 Kings 3:27"
+      ],
+      "traditional_date": "Reign of Ahab and Jehoram of Israel (ninth century BCE, c. 850 BCE on the usual reckoning)",
+      "reviewed": "2026-10-19",
+      "review_status": "Context only; the inscription gives its own account of the same revolt",
+      "discrepancy_kind": null,
+      "academic_consensus": "The Mesha inscription (Moabite Stone, Louvre, c. 850 BCE) names Omri king of Israel, says Israel oppressed Moab and that Mesha regained Israelite-held towns in his own days.",
+      "summary": "2 Kings 3:4-5 says Mesha king of Moab paid Israel a very large tribute in lambs and wool and rebelled after Ahab died. The Mesha inscription, written from the Moabite side, says Omri king of Israel afflicted Moab many days, that Omri took Medeba and Israel held it for his days and half his sons' days, and that Chemosh restored it in Mesha's days. The inscription names Omri and mentions Yahweh, so it independently attests Israel and its god in the ninth century. It does not mention the allied invasion of 2 Kings 3 or the king of Edom, and silence in a victory text is not evidence against it. How the 'forty years' and the 'son' of Omri fit the Kings chronology is a matter of reading and restoration, and readers differ.",
+      "sources": [
+        {
+          "label": "Cook (1903), A Text-book of North-Semitic Inscriptions, no. 1: Moabite Stone, text and translation (Internet Archive scan, opened)",
+          "url": "https://archive.org/details/atextbooknorths00cookgoog"
+        }
+      ],
+      "held_for_codex": "Codex to check the inscription's modern reading (date, whether 'son' is Ahab or a later descendant, line 8 'forty years') against a current edition before publishing; 1903 restoration is dated. Do not use Cook's claim that the stone 'corrects' 2 Kings 1:1."
+    },
+    {
+      "id": "shishak-campaign-karnak",
+      "title": "Shishak's campaign against Rehoboam (Karnak relief)",
+      "evidence_id": "TBD-history-shishak-campaign-karnak",
+      "passages": [
+        "1 Kings 14:25-26",
+        "2 Chronicles 12:2-9"
+      ],
+      "traditional_date": "Fifth year of Rehoboam (c. 925 BCE on the usual reckoning)",
+      "reviewed": "2026-10-19",
+      "review_status": "Context only; the Egyptian relief and the biblical account describe the same campaign with different emphases",
+      "discrepancy_kind": null,
+      "academic_consensus": "The Bubastite Portal relief at Karnak, built by Sheshonk I (Shoshenq I), records a campaign in Palestine with a list of captured places; he is usually identified with the biblical Shishak.",
+      "summary": "1 Kings 14:25-26 says Shishak king of Egypt came up against Jerusalem in Rehoboam's fifth year and took the treasures of the temple and the king's house; 2 Chronicles 12 adds that he took the fenced cities of Judah. The Karnak relief of Sheshonk I carries a list of places he plundered. In Breasted's 1906 edition the list names towns of both Israel and Judah, with many of the securely identified towns in the northern kingdom (for example Taanach, Beth-shean, Gibeon, Beth-horon, Ajalon, Megiddo) and the southernmost at Arad in Judah. Breasted notes that Jerusalem is not found among the surviving names and suggests it was lost in a gap. So the biblical books report an attack on Judah and Jerusalem and say nothing of Israelite towns, while the Egyptian list reaches into Israel; the two accounts are not in conflict, since each has its own interest, and a name missing from a damaged list is not evidence either way. Breasted also warns that the relief's inscriptions are stock phrases and give little detail of the campaign itself.",
+      "sources": [
+        {
+          "label": "Breasted (1906), Ancient Records of Egypt, vol. 4, sections 709-717: Great Karnak Relief of Sheshonk I (Internet Archive scan, opened)",
+          "url": "https://archive.org/details/ancientrecordsof0004jame_k7s1"
+        }
+      ],
+      "held_for_codex": "Breasted's identifications and numbering are 1906; Codex to check the toponym readings and the date against a current edition (e.g. Kitchen, Third Intermediate Period, or an open article) before publishing, and confirm the Shishak = Sheshonk I identification wording. I did not verify which Israelite towns Breasted lists beyond those I name; the Gibeon and Ajalon assignments to Israel versus Judah follow his footnotes (Ephraim/Dan region) and are uncertain."
+    },
+    {
+      "id": "jehu-tribute-shalmaneser",
+      "title": "Jehu paying tribute to Shalmaneser III (Black Obelisk)",
+      "evidence_id": "history-jehu-tribute-shalmaneser",
+      "passages": [
+        "2 Kings 9:1-10",
+        "2 Kings 10:11",
+        "2 Kings 10:32-33"
+      ],
+      "traditional_date": "Reported tribute in Shalmaneser III's eighteenth year, usually dated to c. 841 BCE.",
+      "reviewed": "2026-10-26",
+      "review_status": "Context only. Assyrian texts report tribute absent from the compared Kings account.",
+      "discrepancy_kind": null,
+      "display_title": "Jehu Paying Tribute to Shalmaneser III (Black Obelisk)"
+    },
+    {
+      "id": "samaria-fall-sargon",
+      "title": "The fall of Samaria: Shalmaneser or Sargon?",
+      "evidence_id": "TBD-history-samaria-fall-sargon",
+      "passages": [
+        "2 Kings 17:3-6",
+        "2 Kings 18:9-11"
+      ],
+      "traditional_date": "Ninth year of Hoshea, sixth year of Hezekiah (c. 722 BCE on the usual reckoning)",
+      "reviewed": "2026-10-19",
+      "review_status": "Context only; the books name Shalmaneser for the siege, and Sargon's inscriptions claim the capture, which may be one event told from two sides",
+      "discrepancy_kind": null,
+      "academic_consensus": "Shalmaneser V besieged Samaria and died soon after; Sargon II succeeded him in 722 and his inscriptions claim the capture and the deportation of 27,290 people.",
+      "summary": "2 Kings 17:3-5 and 18:9 name Shalmaneser king of Assyria as the one who came up against Samaria and besieged it three years. The verses that report the capture (17:6, 18:10) say only that 'the king of Assyria' took it in Hoshea's ninth year, and the deportation to Halah, Habor by the river of Gozan and the cities of the Medes follows. Sargon II's annals and his General Inscription, as translated in Rogers (1912), say that he besieged and took Samaria at the start of his reign, carried off 27,290 inhabitants, kept 50 chariots, and set his governors and tribute over the rest. The Hebrew of Kings never names Sargon, and the inscription never names Shalmaneser in the passages Rogers prints, so the two accounts are compatible if the siege began under one king and the city fell as the other took the throne. Rogers himself says Sargon claims the victory though he may not have been present, and that the city may even have fallen before Shalmaneser died; that is his judgement of a 1912 reading, not a settled point. A reader should not treat the difference of names as an error in either source.",
+      "sources": [
+        {
+          "label": "Rogers (1912), Cuneiform Parallels to the Old Testament, Sargon section: annals lines 10-17 and the General Inscription lines 23-25 (Internet Archive scan, opened)",
+          "url": "https://archive.org/details/cuneiformparalle00rogeuoft"
+        }
+      ],
+      "held_for_codex": "Rogers is 1912; Codex to check the figures, the assignment of the capture, and Sargon's date against a current edition (e.g. Tadmor's Sargon annals, or an open article) before publishing. Rogers's own words on Sargon's absence are one scholar's view. The Kings dating (Hoshea year 9 = Hezekiah year 6) conflicts with 2 Kings 18:13 (fourteenth year of Hezekiah, Sennacherib); that is a separate matter already handled by the sennacherib card. KJV and WLC verses fetched by script (bolls.life) on 2026-10-19."
+    },
+    {
+      "id": "tiglath-pileser-menahem-pekah-ahaz",
+      "title": "Tiglath-pileser III, Menahem, Pekah and Ahaz",
+      "evidence_id": "TBD-history-tiglath-pileser-menahem-pekah-ahaz",
+      "passages": [
+        "2 Kings 15:19-20",
+        "2 Kings 15:29-30",
+        "2 Kings 16:7-9"
+      ],
+      "traditional_date": "Reigns of Menahem, Pekah and Ahaz (mid to late eighth century BCE; Tiglath-pileser III reigned 745-727 BCE on the usual reckoning)",
+      "reviewed": "2026-10-19",
+      "review_status": "Context only; Assyrian records and 2 Kings name the same king and several of the same rulers",
+      "discrepancy_kind": null,
+      "academic_consensus": "Tiglath-pileser III of Assyria (also called Pulu in Babylonian records) campaigned in Syria and Palestine; his inscriptions list Menahem of Samaria and Jehoahaz (Ahaz) of Judah among tributaries, and say Pekah was deposed and Hoshea set on the throne.",
+      "summary": "2 Kings 15:19 names the Assyrian king Pul; 15:29 and 16:7 name Tiglath-pileser. The Babylonian Chronicle and Rogers (1912) treat these as one man, called Pulu in Babylonia. 2 Kings 15:19-20 says Menahem gave Pul a thousand talents of silver, raised by fifty shekels from each wealthy man. A tribute list of Tiglath-pileser names Menahem of Samaria among rulers who paid, though the surviving text gives no sum. 2 Kings 15:29-30 says Tiglath-pileser took northern towns and Gilead and Galilee and carried people to Assyria, and that Hoshea killed Pekah and reigned. A fragmentary annal, as Rogers translates it, says Pekah their king was deposed and Hoshea set over them as king. Both accounts agree that Hoshea replaced Pekah; the Bible has a conspiracy by Hoshea, the Assyrian record gives the Assyrian king the act. A tribute list also names Jehoahaz of Judah, which Rogers's index equates with Ahaz (2 Kings 16:8 has Ahaz sending a present of silver and gold). Rogers's older view that Azariah of Ja'udi was Azariah of Judah is withdrawn in his own footnote, so no card rests on it. Neither side lists every event, and the silence of a fragmentary Assyrian record is no evidence against the Bible.",
+      "sources": [
+        {
+          "label": "Rogers (1912), Cuneiform Parallels to the Old Testament, Tiglathpileser IV: introduction, annals, Nimroud Tablet and tribute list; Babylonian Chronicle col. I (Internet Archive scan, opened)",
+          "url": "https://archive.org/details/cuneiformparalle00rogeuoft"
+        }
+      ],
+      "held_for_codex": "Rogers (1912) is dated. Check the Menahem and Jehoahaz lines, the Pekah/Hoshea wording and the Pul=Tiglath-pileser equation against a current edition before publishing. Rogers's introduction says Menahem paid 1,000 shekels, but the Hebrew of 2 Kings 15:19 reads a thousand talents (kikkar); the card follows the Hebrew and does not use Rogers's prose figure."
+    },
+    {
+      "id": "esarhaddon-manasseh-tribute",
+      "title": "Esarhaddon and Manasseh of Judah",
+      "evidence_id": "history-esarhaddon-manasseh-tribute",
+      "passages": [
+        "2 Kings 21:1-2",
+        "2 Chronicles 33:10-13"
+      ],
+      "traditional_date": "Manasseh's reign; the text gives fifty-five years. Esarhaddon's reign is usually dated to 680–669 BCE.",
+      "reviewed": "2026-10-26",
+      "review_status": "Context only. The palace-building list names Manasseh; the biblical accounts report different details of his reign.",
+      "discrepancy_kind": null,
+      "display_title": "Esarhaddon and Manasseh of Judah"
+    },
+    {
+      "id": "merodach-baladan-hezekiah-embassy",
+      "title": "Merodach-baladan and Hezekiah",
+      "evidence_id": "history-merodach-baladan-hezekiah-embassy",
+      "passages": [
+        "2 Kings 20:12-13",
+        "Isaiah 39:1-2",
+        "2 Chronicles 32:31"
+      ],
+      "traditional_date": "Hezekiah's reign, during the reign setting of Merodach-baladan. The embassy's year is not fixed here.",
+      "reviewed": "2026-10-26",
+      "review_status": "Context only. The chronicle records the Babylonian king's reign, not this embassy.",
+      "discrepancy_kind": null,
+      "display_title": "Merodach-Baladan and Hezekiah"
+    },
+    {
+      "id": "nebuchadnezzar-egypt-campaign",
+      "title": "Nebuchadnezzar's campaign against Egypt (567 BCE)",
+      "evidence_id": "history-nebuchadnezzar-egypt-campaign",
+      "passages": [
+        "Ezekiel 29:17-20",
+        "Ezekiel 30:10-12",
+        "Jeremiah 43:8-13",
+        "Jeremiah 46:13"
+      ],
+      "traditional_date": "Nebuchadnezzar's thirty-seventh year: c. 568/567 BCE. Ezekiel 29:17 dates its message to the twenty-seventh year.",
+      "reviewed": "2026-10-26",
+      "review_status": "Context only. A damaged campaign notice is compared with predictions; it does not settle the outcome.",
+      "discrepancy_kind": null,
+      "display_title": "Nebuchadnezzar’s Campaign Against Egypt (c. 568/567 BCE)"
+    }
+  ],
+  "history_records": [
+    {
+      "id": "history-jehu-tribute-shalmaneser",
+      "draft_input_id": "jehu-tribute-shalmaneser",
+      "mode": "history",
+      "status": "Context",
+      "title": "Jehu paying tribute to Shalmaneser III (Black Obelisk)",
+      "ref": "2 Kings 10:11",
+      "refs": [
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 1,
+          "label": "2 Kings 9:1"
+        },
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 2,
+          "label": "2 Kings 9:2"
+        },
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 3,
+          "label": "2 Kings 9:3"
+        },
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 4,
+          "label": "2 Kings 9:4"
+        },
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 5,
+          "label": "2 Kings 9:5"
+        },
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 6,
+          "label": "2 Kings 9:6"
+        },
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 7,
+          "label": "2 Kings 9:7"
+        },
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 8,
+          "label": "2 Kings 9:8"
+        },
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 9,
+          "label": "2 Kings 9:9"
+        },
+        {
+          "book": 11,
+          "chapter": 9,
+          "verse": 10,
+          "label": "2 Kings 9:10"
+        },
+        {
+          "book": 11,
+          "chapter": 10,
+          "verse": 11,
+          "label": "2 Kings 10:11"
+        },
+        {
+          "book": 11,
+          "chapter": 10,
+          "verse": 32,
+          "label": "2 Kings 10:32"
+        },
+        {
+          "book": 11,
+          "chapter": 10,
+          "verse": 33,
+          "label": "2 Kings 10:33"
+        }
+      ],
+      "appliesTo": [
+        "2 Kings 10:11"
+      ],
+      "summary": "The Black Obelisk caption lists tribute from Jehu, son of Omri. He is usually identified with the king in 2 Kings 9–10. Those chapters describe Jehu ending Ahab's house and Hazael taking Israel's eastern lands. They do not report this tribute. A separate Assyrian account places the tribute in Shalmaneser III's eighteenth year, usually dated to 841 BCE.",
+      "text": "KJV 2 Kings 10:11: “So Jehu slew all that remained of the house of Ahab in Jezreel, and all his great men, and his kinsfolks, and his priests, until he left him none remaining.”",
+      "reasoning": "The caption lists silver, gold, gold vessels, lead, staves and javelins. The separate account of the king's deeds names tribute from Tyre, Sidon and Jehu after fighting Hazael. These are two distinct passages in Luckenbill's edition. The usual reading treats son of Omri as a label for the kingdom, not proof of Jehu's descent. The compared Kings account instead has Jehu destroy Ahab's house.",
+      "scope": "The date of about 841 BCE applies to the reported tribute, not the making of the obelisk. The identification of Jehu and the kingdom-label reading remain usual interpretations. They do not prove a family link to Omri. The silence claim concerns only the compared account in 2 Kings 9–10. Its silence does not disprove the tribute. The cited Assyrian passages do not describe Jehu's coup. The later museum article checks the older translation; no new reading of the ancient signs is claimed.",
+      "checked": "2026-10-26",
+      "sources": [
+        {
+          "label": "Luckenbill (1926), Ancient Records of Assyria and Babylonia, vol. 1, sections 590 (Black Obelisk relief caption) and 672 (annals, year 18) (Internet Archive scan, opened)",
+          "url": "https://archive.org/details/LuckenbillAncientRecordsAssyria01"
+        },
+        {
+          "label": "Tammi Schneider, Through Assyria’s Eyes, Penn Museum: Jehu, the eighteenth year and the Omri label",
+          "url": "https://www.penn.museum/sites/expedition/through-assyrias-eyes/"
+        }
+      ]
+    },
+    {
+      "id": "history-esarhaddon-manasseh-tribute",
+      "draft_input_id": "esarhaddon-manasseh-tribute",
+      "mode": "history",
+      "status": "Context",
+      "title": "Esarhaddon and Manasseh of Judah",
+      "ref": "2 Chronicles 33:11",
+      "refs": [
+        {
+          "book": 11,
+          "chapter": 21,
+          "verse": 1,
+          "label": "2 Kings 21:1"
+        },
+        {
+          "book": 11,
+          "chapter": 21,
+          "verse": 2,
+          "label": "2 Kings 21:2"
+        },
+        {
+          "book": 13,
+          "chapter": 33,
+          "verse": 10,
+          "label": "2 Chronicles 33:10"
+        },
+        {
+          "book": 13,
+          "chapter": 33,
+          "verse": 11,
+          "label": "2 Chronicles 33:11"
+        },
+        {
+          "book": 13,
+          "chapter": 33,
+          "verse": 12,
+          "label": "2 Chronicles 33:12"
+        },
+        {
+          "book": 13,
+          "chapter": 33,
+          "verse": 13,
+          "label": "2 Chronicles 33:13"
+        }
+      ],
+      "appliesTo": [
+        "2 Chronicles 33:11"
+      ],
+      "summary": "Esarhaddon's palace-building list names Manasseh king of Judah among rulers required to send materials. This demand suggests that Judah was under Assyrian rule. It is an inference from the list. In 2 Kings 21:1–2, Manasseh begins ruling at twelve, reigns fifty-five years and does evil. In 2 Chronicles 33:11–13, Assyrians take him to Babylon. The account says he humbles himself and returns to Jerusalem.",
+      "text": "KJV 2 Chronicles 33:11: “Wherefore the Lord brought upon them the captains of the host of the king of Assyria, which took Manasseh among the thorns, and bound him with fetters, and carried him to Babylon.”",
+      "reasoning": "The list begins with Baal of Tyre, Manasseh of Judah, Kaushgabri of Edom and Musuri of Moab. Rogers's translation and the later translation in Sources describe the demand and transport of building materials. The list does not mention Manasseh's capture, journey to Babylon or return. That silence neither proves nor disproves the Chronicles account. Kings and Chronicles report different details; this comparison does not rank their reliability.",
+      "scope": "Chronicles does not name the Assyrian king who takes Manasseh. This record does not identify him as Esarhaddon. The quotation uses the packaged KJV's among the thorns; no alternative word meaning is established. The claim about Assyrian control rests on an inference from the demand for materials. The later translation is a check on Rogers, not a fresh reading of the tablet.",
+      "checked": "2026-10-26",
+      "sources": [
+        {
+          "label": "Rogers (1912), Cuneiform Parallels to the Old Testament, Esarhaddon introduction (pp. 349-350) and Prism B, col. V, lines 12-23 (Internet Archive scan, opened)",
+          "url": "https://archive.org/details/cuneiformparalle00rogeuoft"
+        },
+        {
+          "label": "A. Leo Oppenheim, Esarhaddon’s Prism B, ANET third edition, translated text hosted by Livius",
+          "url": "https://www.livius.org/sources/content/anet/291-esarhaddons-prism-b/"
+        }
+      ]
+    },
+    {
+      "id": "history-merodach-baladan-hezekiah-embassy",
+      "draft_input_id": "merodach-baladan-hezekiah-embassy",
+      "mode": "history",
+      "status": "Context",
+      "title": "Merodach-baladan and Hezekiah",
+      "ref": "2 Kings 20:12",
+      "refs": [
+        {
+          "book": 11,
+          "chapter": 20,
+          "verse": 12,
+          "label": "2 Kings 20:12"
+        },
+        {
+          "book": 11,
+          "chapter": 20,
+          "verse": 13,
+          "label": "2 Kings 20:13"
+        },
+        {
+          "book": 22,
+          "chapter": 39,
+          "verse": 1,
+          "label": "Isaiah 39:1"
+        },
+        {
+          "book": 22,
+          "chapter": 39,
+          "verse": 2,
+          "label": "Isaiah 39:2"
+        },
+        {
+          "book": 13,
+          "chapter": 32,
+          "verse": 31,
+          "label": "2 Chronicles 32:31"
+        }
+      ],
+      "appliesTo": [
+        "2 Kings 20:12"
+      ],
+      "summary": "Kings and Isaiah describe a Babylonian king sending letters and a gift after hearing that Hezekiah had been ill. The KJV names him Berodachbaladan in 2 Kings 20:12 and Merodachbaladan in Isaiah 39:1. Kings says Hezekiah hearkened to the visitors; Isaiah says he was glad of them. Isaiah also says Hezekiah had recovered. A Babylonian chronicle records Merodach-baladan's reign, but does not report this embassy.",
+      "text": "KJV 2 Kings 20:12: “At that time Berodachbaladan, the son of Baladan, king of Babylon, sent letters and a present unto Hezekiah: for he had heard that Hezekiah had been sick.”",
+      "reasoning": "The chronicle names Merodach-baladan, also called Marduk-apal-iddin, as king of Babylon. He is generally identified with the king in Kings and Isaiah. It records his accession, twelve-year reign and flight to Elam after Sargon fights him. It also reports later conflict under Sennacherib. These events support the reign setting, not an embassy date or motive. In 2 Chronicles 32:31, the visitors ask about a wonder in the land. That account says God left Hezekiah to test him.",
+      "scope": "The compared biblical passages give no year for the embassy. This record does not choose between the king's first and later reign. It makes no claim about a KJV margin. The English names are the spellings in the packaged KJV. The Hebrew names differ in more than their first letter: Kings also includes a letter absent from Isaiah. The two Hebrew verbs also differ. No quoted Latin form is presented as exact Hebrew. The chronicle neither confirms nor contradicts the embassy, and does not establish its motive.",
+      "checked": "2026-10-26",
+      "sources": [
+        {
+          "label": "Rogers (1912), Cuneiform Parallels to the Old Testament, Babylonian Chronicle col. I lines 28-44 and col. II lines 1-5 (Internet Archive scan, opened)",
+          "url": "https://archive.org/details/cuneiformparalle00rogeuoft"
+        },
+        {
+          "label": "Babylonian Chronicle ABC 1, column I, translation based on Grayson and Glassner, Livius",
+          "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-1-from-nabu-nasir-to-samas-suma-ukin/"
+        },
+        {
+          "label": "Babylonian Chronicle ABC 1, column II, Livius",
+          "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-1-from-nabu-nasir-to-samas-suma-ukin/abc-1.ii/"
+        },
+        {
+          "label": "Westminster Leningrad Codex, 2 Kings 20, bolls.life digital text",
+          "url": "https://bolls.life/get-text/WLC/12/20/"
+        },
+        {
+          "label": "Westminster Leningrad Codex, Isaiah 39, bolls.life digital text",
+          "url": "https://bolls.life/get-text/WLC/23/39/"
+        }
+      ]
+    },
+    {
+      "id": "history-nebuchadnezzar-egypt-campaign",
+      "draft_input_id": "nebuchadnezzar-egypt-campaign",
+      "mode": "history",
+      "status": "Context",
+      "title": "Nebuchadnezzar's campaign against Egypt (567 BCE)",
+      "ref": "Ezekiel 29:19",
+      "refs": [
+        {
+          "book": 25,
+          "chapter": 29,
+          "verse": 17,
+          "label": "Ezekiel 29:17"
+        },
+        {
+          "book": 25,
+          "chapter": 29,
+          "verse": 18,
+          "label": "Ezekiel 29:18"
+        },
+        {
+          "book": 25,
+          "chapter": 29,
+          "verse": 19,
+          "label": "Ezekiel 29:19"
+        },
+        {
+          "book": 25,
+          "chapter": 29,
+          "verse": 20,
+          "label": "Ezekiel 29:20"
+        },
+        {
+          "book": 25,
+          "chapter": 30,
+          "verse": 10,
+          "label": "Ezekiel 30:10"
+        },
+        {
+          "book": 25,
+          "chapter": 30,
+          "verse": 11,
+          "label": "Ezekiel 30:11"
+        },
+        {
+          "book": 25,
+          "chapter": 30,
+          "verse": 12,
+          "label": "Ezekiel 30:12"
+        },
+        {
+          "book": 23,
+          "chapter": 43,
+          "verse": 8,
+          "label": "Jeremiah 43:8"
+        },
+        {
+          "book": 23,
+          "chapter": 43,
+          "verse": 9,
+          "label": "Jeremiah 43:9"
+        },
+        {
+          "book": 23,
+          "chapter": 43,
+          "verse": 10,
+          "label": "Jeremiah 43:10"
+        },
+        {
+          "book": 23,
+          "chapter": 43,
+          "verse": 11,
+          "label": "Jeremiah 43:11"
+        },
+        {
+          "book": 23,
+          "chapter": 43,
+          "verse": 12,
+          "label": "Jeremiah 43:12"
+        },
+        {
+          "book": 23,
+          "chapter": 43,
+          "verse": 13,
+          "label": "Jeremiah 43:13"
+        },
+        {
+          "book": 23,
+          "chapter": 46,
+          "verse": 13,
+          "label": "Jeremiah 46:13"
+        }
+      ],
+      "appliesTo": [
+        "Ezekiel 29:19"
+      ],
+      "summary": "A damaged Babylonian text reports a campaign against Egypt in Nebuchadnezzar's thirty-seventh year. The usual date is 568/567 BCE. The Egyptian king's name is partly restored as Amasis. Ezekiel and Jeremiah predict Nebuchadnezzar's attack on Egypt. This is a proposed comparison with those passages. They are predictions, not reports of the campaign.",
+      "text": "KJV Ezekiel 29:19: “Therefore thus saith the Lord God; Behold, I will give the land of Egypt unto Nebuchadrezzar king of Babylon; and he shall take her multitude, and take her spoil, and take her prey; and it shall be the wages for his army.”",
+      "reasoning": "Ezekiel 29:17–20 dates its message to the twenty-seventh year. It presents Egypt as payment for the army's work against Tyre. Ezekiel 30:10–12 and Jeremiah 43:8–13 and 46:13 also predict an attack on Egypt. Rogers's translation describes troops and battle, with gaps in the text. His tentative fragments about defeat and destruction do not establish conquest. The later transcription also keeps gaps and partly restores the king's name. It supports the limited campaign notice.",
+      "scope": "The broken text does not establish that Egypt was conquered, taken or made a province. It does not settle whether the predictions were fulfilled or failed. A missing or unclear result cannot decide that question. The newer author draws wider conclusions about history. This record does not adopt them. The existing Tyre record compares biblical passages internally. This History record concerns only the Egypt fragment and its proposed link with these texts. The date belongs to the reported campaign, not a date stated in the prophetic passages.",
+      "checked": "2026-10-26",
+      "sources": [
+        {
+          "label": "Rogers (1912), Cuneiform Parallels to the Old Testament, 'Nebuchadrezzar's Campaign against Egypt (567 B.C.)', text and translation of the British Museum fragment (Internet Archive scan, opened)",
+          "url": "https://archive.org/details/cuneiformparalle00rogeuoft"
+        },
+        {
+          "label": "Aren M. Wilson-Wright, Jeremiah’s Egypt, pp. 31–32: fragmentary campaign text and restored name",
+          "url": "https://www.sbl-site.org/wp-content/uploads/2024/11/9781628374643_OA.pdf"
+        }
+      ],
+      "draft_related_records": [
+        "exp-late-25-29-17"
+      ]
+    }
+  ]
+}

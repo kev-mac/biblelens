@@ -1,0 +1,844 @@
+[
+  {
+    "id": "jethro",
+    "name": "Jethro",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "The priest of Midian whose daughter Zipporah marries Moses. Exodus says he gives Moses refuge and releases him to return to Egypt. He later brings Moses' wife and sons to the camp at the mountain of God. He praises the Lord after hearing of Israel's escape from Egypt and offers sacrifices. He advises Moses to appoint officials to share the work of judging the people. Exodus uses Jethro and Reuel; Numbers 10:29 uses Raguel. These name links do not settle Hobab's relationship to Moses.",
+    "aliases": [
+      "Reuel (Exodus 2:18; name link remains qualified)",
+      "Raguel (Numbers 10:29; relationship wording remains qualified)"
+    ],
+    "lineage": {
+      "children": [
+        "Zipporah",
+        "Seven daughters in all (Exodus 2:16; only Zipporah is named)"
+      ]
+    },
+    "geography": {
+      "origin": "Midian (Exodus 2:15–16)",
+      "residence": [
+        "Midian (Exodus 3:1)",
+        "The camp at the mountain of God (Exodus 18:5)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "Numbers"
+      ],
+      "key_verses": [
+        "Exodus 2:16",
+        "Exodus 2:18",
+        "Exodus 2:21",
+        "Exodus 3:1",
+        "Exodus 4:18",
+        "Exodus 18:1",
+        "Exodus 18:10",
+        "Exodus 18:12",
+        "Numbers 10:29"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "exodus-moses-flees-to-midian",
+          "title": "Moses Flees to Midian",
+          "passage": "Exodus 2:11 - 2:25",
+          "route": "#stories/exodus/moses-flees-to-midian"
+        },
+        {
+          "story_id": "exodus-the-burning-bush",
+          "title": "The Burning Bush",
+          "passage": "Exodus 3:1 - 4:17",
+          "route": "#stories/exodus/the-burning-bush"
+        },
+        {
+          "story_id": "exodus-jethro-advises-moses",
+          "title": "Jethro Advises Moses",
+          "passage": "Exodus 18:1 - 18:27",
+          "route": "#stories/exodus/jethro-advises-moses"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "jethro_2431",
+      "reference_id": "recxxH0xyhQyXuyh2",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "children",
+          "label": "Zipporah",
+          "profile_id": "zipporah"
+        }
+      ]
+    }
+  },
+  {
+    "id": "zipporah",
+    "name": "Zipporah",
+    "sex": "female",
+    "era": "Exodus",
+    "summary": "A daughter of the Midianite priest who becomes Moses' wife and bears Gershom and Eliezer. On the journey, she circumcises her son after the Lord threatens a man's life. Exodus 4:24 uses “him” without naming the man. She uses a sharp stone and speaks of a “bloody husband”. Exodus 18:2 says Moses had sent her back but does not say when. Her father brings her and her sons to Moses at the mountain of God.",
+    "lineage": {
+      "parents": [
+        "Jethro"
+      ],
+      "spouses": [
+        "Moses"
+      ],
+      "children": [
+        "Gershom",
+        "Eliezer"
+      ]
+    },
+    "geography": {
+      "origin": "Midian (Exodus 2:16–21)",
+      "residence": [
+        "Midian (Exodus 2:21)",
+        "Her father's house after being sent back (Exodus 18:2)",
+        "The camp at the mountain of God (Exodus 18:5)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus"
+      ],
+      "key_verses": [
+        "Exodus 2:21",
+        "Exodus 2:22",
+        "Exodus 4:25",
+        "Exodus 4:26",
+        "Exodus 18:2",
+        "Exodus 18:3",
+        "Exodus 18:4",
+        "Exodus 4:24"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "exodus-moses-flees-to-midian",
+          "title": "Moses Flees to Midian",
+          "passage": "Exodus 2:11 - 2:25",
+          "route": "#stories/exodus/moses-flees-to-midian"
+        },
+        {
+          "story_id": "exodus-moses-returns-to-egypt",
+          "title": "Moses Returns to Egypt",
+          "passage": "Exodus 4:18 - 4:31",
+          "route": "#stories/exodus/moses-returns-to-egypt"
+        },
+        {
+          "story_id": "exodus-jethro-advises-moses",
+          "title": "Jethro Advises Moses",
+          "passage": "Exodus 18:1 - 18:27",
+          "route": "#stories/exodus/jethro-advises-moses"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "zipporah_3095",
+      "reference_id": "recsI3r5rXZZGdGal",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Jethro",
+          "profile_id": "jethro"
+        },
+        {
+          "relation": "spouses",
+          "label": "Moses",
+          "profile_id": "moses"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eleazar",
+    "name": "Eleazar",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "Aaron's third-named son, who becomes high priest after his two older brothers and Aaron die. Numbers places Aaron's death on Mount Hor, where Moses puts Aaron's garments on Eleazar. He works with Moses during the census and the war against Midian. Later, he helps divide the land with Joshua.",
+    "lineage": {
+      "parents": [
+        "Aaron",
+        "Elisheba"
+      ],
+      "spouses": [
+        "A daughter of Putiel (unnamed)"
+      ],
+      "children": [
+        "Phinehas"
+      ],
+      "siblings": [
+        "Nadab",
+        "Abihu",
+        "Ithamar"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Birthplace not stated; named among Aaron's sons in Exodus 6:23.",
+      "residence": [
+        "The wilderness camp (Numbers 3:32)",
+        "Mount Hor (Numbers 20:28)",
+        "The plains of Moab (Numbers 26:1)",
+        "Canaan during the allotment (Joshua 14:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "Leviticus",
+        "Numbers",
+        "Joshua"
+      ],
+      "key_verses": [
+        "Exodus 6:23",
+        "Exodus 6:25",
+        "Leviticus 10:6",
+        "Numbers 3:4",
+        "Numbers 20:26",
+        "Numbers 20:28",
+        "Numbers 26:1",
+        "Joshua 14:1"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "leviticus-aaron-and-his-sons-are-ordained",
+          "title": "Aaron and His Sons Are Ordained",
+          "passage": "Leviticus 8:1 - 9:24",
+          "route": "#stories/leviticus/aaron-and-his-sons-are-ordained"
+        },
+        {
+          "story_id": "leviticus-nadab-and-abihu",
+          "title": "Nadab and Abihu",
+          "passage": "Leviticus 10:1 - 10:20",
+          "route": "#stories/leviticus/nadab-and-abihu"
+        },
+        {
+          "story_id": "numbers-edom-refuses-passage-and-aaron-dies",
+          "title": "Edom Refuses Passage and Aaron Dies",
+          "passage": "Numbers 20:14 - 20:29",
+          "route": "#stories/numbers/edom-refuses-passage-and-aaron-dies"
+        },
+        {
+          "story_id": "numbers-a-new-census-and-joshua-appointed",
+          "title": "A New Census and Joshua Appointed",
+          "passage": "Numbers 26:1 - 27:23",
+          "route": "#stories/numbers/a-new-census-and-joshua-appointed"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "eleazar_1062",
+      "reference_id": "recyDlo13a3T5DDGh",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Aaron",
+          "profile_id": "aaron"
+        },
+        {
+          "relation": "children",
+          "label": "Phinehas",
+          "profile_id": "phinehas"
+        },
+        {
+          "relation": "siblings",
+          "label": "Nadab",
+          "profile_id": "nadab"
+        },
+        {
+          "relation": "siblings",
+          "label": "Abihu",
+          "profile_id": "abihu"
+        }
+      ]
+    }
+  },
+  {
+    "id": "phinehas",
+    "name": "Phinehas",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "Eleazar's son. Numbers describes an Israelite bringing a Midianite woman into the camp during a plague at Shittim. Phinehas takes a javelin and kills them both. In the account, the Lord says he turned away wrath. The Lord promises him peace and a lasting priesthood. He later carries sacred objects during the war against Midian. He leads the group sent to the eastern tribes during the altar dispute.",
+    "lineage": {
+      "parents": [
+        "Eleazar",
+        "A daughter of Putiel (unnamed)"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Born to Eleazar (Exodus 6:25)",
+      "residence": [
+        "The plains of Moab, Shittim (Numbers 25:1)",
+        "The war against Midian (Numbers 31:6)",
+        "Gilead delegation (Joshua 22:13)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "Numbers",
+        "Joshua",
+        "Psalms"
+      ],
+      "key_verses": [
+        "Exodus 6:25",
+        "Numbers 25:7",
+        "Numbers 25:8",
+        "Numbers 25:11",
+        "Numbers 25:13",
+        "Numbers 31:6",
+        "Joshua 22:13",
+        "Psalms 106:30"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "numbers-baal-of-peor",
+          "title": "Baal of Peor",
+          "passage": "Numbers 25:1 - 25:18",
+          "route": "#stories/numbers/baal-of-peor"
+        },
+        {
+          "story_id": "numbers-vengeance-on-midian",
+          "title": "Vengeance on Midian",
+          "passage": "Numbers 31:1 - 31:54",
+          "route": "#stories/numbers/vengeance-on-midian"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "phinehas_2349",
+      "reference_id": "recPDRskzPNTboSMu",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Eleazar",
+          "profile_id": "eleazar"
+        }
+      ]
+    }
+  },
+  {
+    "id": "caleb",
+    "name": "Caleb",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "Jephunneh's son, whom Numbers calls a Kenezite and a man of Judah. He is one of twelve men sent to spy out Canaan and urges Israel to go up at once. He and Joshua tear their clothes when the people refuse. Numbers says he survives the wilderness generation because he followed the Lord fully. At eighty-five, he asks for the hill country of Hebron and drives out the sons of Anak. This profile does not identify him with the Caleb in 1 Chronicles 2:18.",
+    "lineage": {
+      "parents": [
+        "Jephunneh"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "A Kenezite of the tribe of Judah (Numbers 13:6; Numbers 32:12)",
+      "residence": [
+        "Sent from Kadesh-barnea to spy out the land (Joshua 14:7)",
+        "Hebron in Judah (Joshua 14:13)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Numbers",
+        "Deuteronomy",
+        "Joshua"
+      ],
+      "key_verses": [
+        "Numbers 13:6",
+        "Numbers 13:30",
+        "Numbers 14:6",
+        "Numbers 14:24",
+        "Numbers 26:65",
+        "Numbers 32:12",
+        "Joshua 14:10",
+        "Joshua 14:13",
+        "Joshua 15:14"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "numbers-the-twelve-spies",
+          "title": "The Twelve Spies",
+          "passage": "Numbers 13:1 - 14:45",
+          "route": "#stories/numbers/the-twelve-spies"
+        },
+        {
+          "story_id": "numbers-tribes-settle-east-of-the-jordan",
+          "title": "Tribes Settle East of the Jordan",
+          "passage": "Numbers 32:1 - 32:42",
+          "route": "#stories/numbers/tribes-settle-east-of-the-jordan"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "caleb_537",
+      "reference_id": "recVua5TkKSl3y6Ol",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "korah",
+    "name": "Korah",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "A Levite from Kohath's family and a son of Izhar. In Numbers 16, he gathers followers with Dathan, Abiram and 250 leaders against Moses and Aaron. They say the whole community is holy. The account describes the earth swallowing Korah's company and fire consuming the 250 who offered incense. Numbers 26:11 says Korah's children did not die. These accounts are not combined into a more detailed death sequence here.",
+    "aliases": [
+      "Core"
+    ],
+    "lineage": {
+      "parents": [
+        "Izhar"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "A Levite, son of Izhar, son of Kohath (Numbers 16:1)",
+      "residence": [
+        "The wilderness camp, near the tabernacle (Numbers 16:19)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "Numbers",
+        "Jude"
+      ],
+      "key_verses": [
+        "Exodus 6:21",
+        "Numbers 16:1",
+        "Numbers 16:3",
+        "Numbers 16:32",
+        "Numbers 16:35",
+        "Numbers 26:11",
+        "Jude 1:11"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "numbers-korah-s-rebellion",
+          "title": "Korah's Rebellion",
+          "passage": "Numbers 16:1 - 17:13",
+          "route": "#stories/numbers/korah-s-rebellion"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "korah_1795",
+      "reference_id": "rece4MdvDF2ule9OY",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "balaam",
+    "name": "Balaam",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "Beor's son from Pethor, whom Balak king of Moab calls to curse Israel. Numbers describes an angel and a speaking donkey before Balaam is allowed to go. From Moab's heights he blesses Israel instead, including a message about a star from Jacob. Numbers 31 links him to Israel's actions at Peor and says Israel killed him in the war against Midian. Second Peter and Revelation also criticize him.",
+    "lineage": {
+      "parents": [
+        "Beor"
+      ]
+    },
+    "geography": {
+      "origin": "Pethor, by the river of his people (Numbers 22:5)",
+      "residence": [
+        "Pethor (Numbers 22:5)",
+        "The heights of Moab overlooking Israel (Numbers 22:41)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Numbers",
+        "Joshua",
+        "Micah",
+        "2 Peter",
+        "Jude",
+        "Revelation"
+      ],
+      "key_verses": [
+        "Numbers 22:5",
+        "Numbers 22:28",
+        "Numbers 23:8",
+        "Numbers 24:17",
+        "Numbers 31:8",
+        "Numbers 31:16",
+        "Joshua 13:22",
+        "Micah 6:5",
+        "2 Peter 2:15",
+        "Revelation 2:14"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "numbers-balaam-and-balak",
+          "title": "Balaam and Balak",
+          "passage": "Numbers 22:1 - 24:25",
+          "route": "#stories/numbers/balaam-and-balak"
+        },
+        {
+          "story_id": "numbers-baal-of-peor",
+          "title": "Baal of Peor",
+          "passage": "Numbers 25:1 - 25:18",
+          "route": "#stories/numbers/baal-of-peor"
+        },
+        {
+          "story_id": "numbers-vengeance-on-midian",
+          "title": "Vengeance on Midian",
+          "passage": "Numbers 31:1 - 31:54",
+          "route": "#stories/numbers/vengeance-on-midian"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "balaam_593",
+      "reference_id": "rec1S6Nkd3KyN5heV",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "balak",
+    "name": "Balak",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "The son of Zippor and king of Moab, alarmed by Israel's defeat of the Amorites and its numbers. He sends for Balaam to curse Israel and takes him to a series of high places. Each message blesses Israel instead. Numbers 24:10 describes Balak's anger.",
+    "aliases": [
+      "Balac"
+    ],
+    "lineage": {
+      "parents": [
+        "Zippor"
+      ]
+    },
+    "geography": {
+      "origin": "Moab (Numbers 22:4)",
+      "residence": [
+        "Moab (Numbers 22:36)",
+        "The high places of Baal (Numbers 22:41)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Numbers",
+        "Joshua",
+        "Judges",
+        "Micah"
+      ],
+      "key_verses": [
+        "Numbers 22:2",
+        "Numbers 22:4",
+        "Numbers 22:6",
+        "Numbers 22:41",
+        "Numbers 23:7",
+        "Micah 6:5",
+        "Joshua 24:9",
+        "Numbers 24:10"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "numbers-balaam-and-balak",
+          "title": "Balaam and Balak",
+          "passage": "Numbers 22:1 - 24:25",
+          "route": "#stories/numbers/balaam-and-balak"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "balak_387",
+      "reference_id": "recoJAyYl3Qele6ey",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "nadab",
+    "name": "Nadab",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "Aaron's firstborn son, who goes up the mountain with Moses and Aaron. Exodus says they see the God of Israel. Nadab is appointed a priest. Leviticus says he and Abihu offer fire the Lord had not commanded, and fire from the Lord consumes them. Numbers says they die without children.",
+    "lineage": {
+      "parents": [
+        "Aaron",
+        "Elisheba"
+      ],
+      "siblings": [
+        "Abihu",
+        "Eleazar",
+        "Ithamar"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Birthplace not stated; named among Aaron's sons in Exodus 6:23.",
+      "residence": [
+        "Sinai (Exodus 24:9)",
+        "The tabernacle court (Leviticus 10:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "Leviticus",
+        "Numbers"
+      ],
+      "key_verses": [
+        "Exodus 6:23",
+        "Exodus 24:1",
+        "Exodus 24:9",
+        "Exodus 24:10",
+        "Leviticus 10:1",
+        "Leviticus 10:2",
+        "Numbers 3:4"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "leviticus-aaron-and-his-sons-are-ordained",
+          "title": "Aaron and His Sons Are Ordained",
+          "passage": "Leviticus 8:1 - 9:24",
+          "route": "#stories/leviticus/aaron-and-his-sons-are-ordained"
+        },
+        {
+          "story_id": "leviticus-nadab-and-abihu",
+          "title": "Nadab and Abihu",
+          "passage": "Leviticus 10:1 - 10:20",
+          "route": "#stories/leviticus/nadab-and-abihu"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "nadab_2128",
+      "reference_id": "recCSN4kRre7qWV1P",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Aaron",
+          "profile_id": "aaron"
+        },
+        {
+          "relation": "siblings",
+          "label": "Abihu",
+          "profile_id": "abihu"
+        },
+        {
+          "relation": "siblings",
+          "label": "Eleazar",
+          "profile_id": "eleazar"
+        }
+      ]
+    }
+  },
+  {
+    "id": "abihu",
+    "name": "Abihu",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "Aaron's second-named son, who goes up the mountain with Moses. Exodus says they see the God of Israel. He is appointed a priest. Leviticus says he and Nadab offer uncommanded fire in incense holders and die before the Lord.",
+    "lineage": {
+      "parents": [
+        "Aaron",
+        "Elisheba"
+      ],
+      "siblings": [
+        "Nadab",
+        "Eleazar",
+        "Ithamar"
+      ],
+      "tribe": "Levi"
+    },
+    "geography": {
+      "origin": "Birthplace not stated; named among Aaron's sons in Exodus 6:23.",
+      "residence": [
+        "Sinai (Exodus 24:9)",
+        "The tabernacle court (Leviticus 10:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "Leviticus",
+        "Numbers"
+      ],
+      "key_verses": [
+        "Exodus 6:23",
+        "Exodus 24:1",
+        "Exodus 24:9",
+        "Exodus 24:11",
+        "Leviticus 10:1",
+        "Leviticus 10:2",
+        "Numbers 3:4"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "leviticus-aaron-and-his-sons-are-ordained",
+          "title": "Aaron and His Sons Are Ordained",
+          "passage": "Leviticus 8:1 - 9:24",
+          "route": "#stories/leviticus/aaron-and-his-sons-are-ordained"
+        },
+        {
+          "story_id": "leviticus-nadab-and-abihu",
+          "title": "Nadab and Abihu",
+          "passage": "Leviticus 10:1 - 10:20",
+          "route": "#stories/leviticus/nadab-and-abihu"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "abihu_33",
+      "reference_id": "rec2LyU5fsvL5DWDi",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": [
+        {
+          "relation": "parents",
+          "label": "Aaron",
+          "profile_id": "aaron"
+        },
+        {
+          "relation": "siblings",
+          "label": "Nadab",
+          "profile_id": "nadab"
+        },
+        {
+          "relation": "siblings",
+          "label": "Eleazar",
+          "profile_id": "eleazar"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hur",
+    "name": "Hur",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "A man who stands with Aaron during the battle with Amalek and helps hold up Moses' hands until sunset. When Moses goes up the mountain, he leaves Hur with Aaron to settle disputes. Exodus 31:2 names a Hur as Bezaleel's grandfather. It does not establish that this is the same Hur.",
+    "lineage": {},
+    "geography": {
+      "origin": "Birthplace and tribe not stated in the cited Exodus account.",
+      "residence": [
+        "The hill above Rephidim (Exodus 17:10)",
+        "The camp, while Moses is on the mountain (Exodus 24:14)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus"
+      ],
+      "key_verses": [
+        "Exodus 17:10",
+        "Exodus 17:12",
+        "Exodus 24:14",
+        "Exodus 31:2",
+        "Exodus 35:30",
+        "Exodus 38:22"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "exodus-water-from-the-rock-and-the-battle-with-amalek",
+          "title": "Water from the Rock and the Battle with Amalek",
+          "passage": "Exodus 17:1 - 17:16",
+          "route": "#stories/exodus/water-from-the-rock-and-the-battle-with-amalek"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "hur_1571",
+      "reference_id": "recbO7tUz8fk12ExW",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  },
+  {
+    "id": "bezalel",
+    "name": "Bezaleel",
+    "sex": "male",
+    "era": "Exodus",
+    "summary": "A craftsman from Judah, son of Uri and grandson of Hur. Exodus says the Lord calls him by name and fills him with God's spirit, wisdom and skill. With Aholiab of Dan, he makes the sacred tent, its furnishings and the priests' garments as commanded.",
+    "aliases": [
+      "Bezalel"
+    ],
+    "lineage": {
+      "parents": [
+        "Uri"
+      ],
+      "tribe": "Judah"
+    },
+    "geography": {
+      "origin": "Tribe of Judah, son of Uri, son of Hur (Exodus 31:2)",
+      "residence": [
+        "The wilderness camp (Exodus 36:1)"
+      ]
+    },
+    "narrative_anchors": {
+      "books": [
+        "Exodus",
+        "1 Chronicles",
+        "2 Chronicles"
+      ],
+      "key_verses": [
+        "Exodus 31:2",
+        "Exodus 31:3",
+        "Exodus 31:6",
+        "Exodus 35:30",
+        "Exodus 35:34",
+        "Exodus 36:1",
+        "Exodus 38:22",
+        "1 Chronicles 2:20",
+        "2 Chronicles 1:5"
+      ],
+      "linked_stories": [
+        {
+          "story_id": "exodus-building-the-tabernacle",
+          "title": "Building the Tabernacle",
+          "passage": "Exodus 35:1 - 40:38",
+          "route": "#stories/exodus/building-the-tabernacle"
+        }
+      ]
+    },
+    "reference_binding": {
+      "sourceRecord": "bezaleel_490",
+      "reference_id": "rec4QEZboAvgaMvkX",
+      "inherit_family_edges": false
+    },
+    "lineage_bindings": {
+      "policy": "explicit_only",
+      "links": []
+    }
+  }
+]
