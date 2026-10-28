@@ -15,6 +15,7 @@ for(const [name,engine]of [['chromium',chromium],['webkit',webkit]]){
   assert.equal(await page.locator('#form option').count(),7);assert.equal(await page.locator('#results details[open]').count(),0);
   assert.match(await page.locator('h1').evaluate(el=>getComputedStyle(el).fontFamily),/monospace/);
   assert.match(await page.locator('#form').evaluate(el=>getComputedStyle(el).fontFamily),/monospace/);
+  for(const control of await page.locator('select,summary,a').all())assert((await control.boundingBox()).height>=48,'Teachings controls must be at least 48 pixels high');
   await page.locator('#form').selectOption('family list');assert.equal(await page.locator('#results article').count(),1);
   await page.locator('#form').selectOption('');await page.locator('#book').selectOption('Matthew');assert.equal(await page.locator('#results article').count(),4);
   await page.locator('#results article').first().locator('summary').first().click();assert.equal(await page.locator('#results details[open]').count(),1);
