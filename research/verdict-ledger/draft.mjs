@@ -116,7 +116,7 @@ export function makeReadme(ledger) {
   return `# Draft Verdict Ledger
 
 This is a local draft for Phase 3. It changes no evidence or app content.
-The source is the requested origin/main snapshot, commit \`${source.commit}\`.
+The accepted evidence source is pinned at commit \`${source.commit}\`.
 It contains ${ledger.length.toLocaleString('en-US')} records. No claim is made about Sites or installed release versions.
 
 ## Method
@@ -224,14 +224,14 @@ The source hash must match before regeneration; later source changes require ano
 Source SHA-256: \`${source.evidence_sha256}\`.
 
 The writing standard was read from codex/readability-standard at \`${source.writing_standard_commit}\`.
-\`npm run check:readability\` was attempted; this origin/main snapshot has no such script.
+This archival ledger retains its earlier scoring method; B6 also runs the current two-tier checker.
 The branch’s checker was run directly on the draft’s authored prose and the unchanged app collections.
 The draft’s checked prose averages below grade 8, with no length or jargon flags.
 Existing app copy still has grade, length, and jargon flags; those files remain unchanged.
 Exact source excerpts, copied titles, and IDs are kept as evidence rather than rewritten.
 The validator also rejected test cases with duplicate, missing, or unknown IDs and missing owner flags.
 A fake source excerpt was rejected too. These test cases were held in memory and changed no files.
-No release script or build was run.
+This archival ledger makes no release or installation claim.
 `;
 }
 

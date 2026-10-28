@@ -1,7 +1,7 @@
 # Draft Verdict Ledger
 
 This is a local draft for Phase 3. It changes no evidence or app content.
-The source is the requested origin/main snapshot, commit `964d0f8`.
+The accepted evidence source is pinned at commit `964d0f8`.
 It contains 1,933 records. No claim is made about Sites or installed release versions.
 
 ## Method
@@ -203,11 +203,11 @@ The source hash must match before regeneration; later source changes require ano
 Source SHA-256: `d144fb0ce9082ce8730bf293d4986c0189df9d399bc17bf81c37b3934d62e3f4`.
 
 The writing standard was read from codex/readability-standard at `8e2cd1b87419d909e9bcc54a7d822fd9052447d5`.
-`npm run check:readability` was attempted; this origin/main snapshot has no such script.
+This archival ledger retains its earlier scoring method; B6 also runs the current two-tier checker.
 The branch’s checker was run directly on the draft’s authored prose and the unchanged app collections.
 The draft’s checked prose averages below grade 8, with no length or jargon flags.
 Existing app copy still has grade, length, and jargon flags; those files remain unchanged.
 Exact source excerpts, copied titles, and IDs are kept as evidence rather than rewritten.
 The validator also rejected test cases with duplicate, missing, or unknown IDs and missing owner flags.
 A fake source excerpt was rejected too. These test cases were held in memory and changed no files.
-No release script or build was run.
+This archival ledger makes no release or installation claim.
