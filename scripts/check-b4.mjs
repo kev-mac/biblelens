@@ -46,6 +46,8 @@ assert(after.includes('ACCEPTED 2026-10-28: Wording differs;'),'Owner-approved l
 for(const text of ['This app is a debate tool.','This disproves the reading.','This proves the account.','Use it to debunk religion.','“This proves the account.”'])assert(findings(text).length,text);
 assert.equal(findings('“that I may prove them, whether they will walk in my law, or no”').length,0);
 assert.equal(findings('Explore scripture and its sources.').length,0);
+for(const label of ['Evidence agrees','Evidence disagrees','Real conflict','Can be reconciled','Different detail','Open question','not a debate'])assert(findings(label,{labels:true}).length,'Obsolete label was accepted: '+label);
+for(const label of json('research/b6/owner-decisions.json').A00a.labels)assert.equal(findings(label,{labels:true}).length,0,'Owner label was rejected: '+label);
 const literals=copyLiterals('const internalVerdict=1; // proves\n const x=`Read ${fn("This proves it")}<p>Explore</p>`;');assert(literals.some(row=>row.text==='This proves it'));assert(!literals.some(row=>row.text.includes('// proves')));
 const audit=framingAudit();assert.deepEqual(audit.violations,[]);assert.deepEqual(audit.renames,[]);
 const loader=read('src/feature-loader.js'),scope=vm.createContext({});vm.runInContext(loader.slice(loader.indexOf('function requirements('),loader.indexOf('let routing=')),scope);

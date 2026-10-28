@@ -46,9 +46,9 @@ for (const [name, engine] of [['Chromium', chromium], ['WebKit', webkit]]) {
   });
   try {
     const page = await context.newPage();
-    const response = await page.goto(base);
+    const response = await page.goto(base+'/#read/0/1');
     assert(response.headers()['content-security-policy-report-only']);
-    assert(!response.headers()['content-security-policy']);
+    assert.equal(response.headers()['content-security-policy'],"object-src 'none'; base-uri 'none'; form-action 'self'; worker-src 'self'",'Retain the host-compatible enforced policy');
     await page.waitForFunction(() => typeof BibleLensWorkspace !== 'undefined' && reading?.verses?.length > 0);
     const signin = page.locator('a[href^="/signin-with-chatgpt"]').first();
     assert.equal(await signin.isVisible(), false, 'Settings link is attached in its closed panel');
