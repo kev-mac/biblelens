@@ -10,8 +10,8 @@ const jargon = [
   ['Septuagint', /\bSeptuagint\b/gi, /old Greek translation/i],
   ['WLC', /\bWLC\b/g, /Hebrew text/i],
   ['Masoretic', /\bMasoretic\b/gi, /Hebrew text/i],
-  ['Tischendorf', /\bTischendorf\b/gi],
-  ['Textus Receptus', /\bTextus\s+Receptus\b/gi],
+  ['Tischendorf', /\bTischendorf\b/gi, /Greek (?:texts?|editions?)/i],
+  ['Textus Receptus', /\bTextus\s+Receptus\b/gi, /Greek (?:texts?|editions?)/i],
   ['manuscript', /\bmanuscripts?\b/gi, /ancient copies/i],
   ['witness', /\bwitness(?:es)?\b/gi, /ancient copies/i],
   ['harmoniz', /\bharmoniz\w*/gi],
@@ -32,7 +32,7 @@ export function syllables(word) {
   return Math.max(1, (stem.match(/[aeiouy]+/g) || []).length);
 }
 
-export function assess(text, { blurb = false } = {}) {
+export function assess(text, { blurb = false, tier = 'visible' } = {}) {
   // Do not read Scripture/source title fields. Within prose, quoted spans are
   // conservatively exempt too: we cannot reliably classify a quotation's source.
   const prose = text.replace(/<[^>]*>/g, ' ').replace(/“[^”]*”|"[^"\n]*"/g, ' ');
@@ -40,17 +40,17 @@ export function assess(text, { blurb = false } = {}) {
   const sentences = [...segmenter.segment(prose)].map(part => words(part.segment)).filter(part => part.length);
   const counts = jargon.map(([term, regex, explanation]) => {
     const matches = [...prose.matchAll(regex)];
-    // An explanation must be in the same sentence as the first use. Human review
+    // An explanation must appear by the sentence containing the first use. Human review
     // is still needed for other explanations and nontechnical uses of "witness".
     const firstSentence = matches.length && [...segmenter.segment(prose)].find(part =>
       part.index <= matches[0].index && part.index + part.segment.length > matches[0].index);
-    const unexplained = matches.length > 0 && !(explanation && explanation.test(firstSentence.segment));
+    const unexplained = matches.length > 0 && !(explanation && explanation.test(prose.slice(0, firstSentence.index + firstSentence.segment.length)));
     return { term, count: matches.length, unexplained };
   });
   return {
     grade: tokens.length ? 0.39 * tokens.length / Math.max(1, sentences.length)
       + 11.8 * tokens.reduce((sum, word) => sum + syllables(word), 0) / tokens.length - 15.59 : null,
-    tooLong: sentences.some(sentence => sentence.length > 20) || (blurb && tokens.length > 15),
+    tooLong: sentences.some(sentence => sentence.length > (tier === 'detail' ? 30 : 20)) || (blurb && tokens.length > 15),
     unexplained: counts.some(item => item.unexplained),
     counts,
   };
@@ -67,9 +67,12 @@ export function collections(directory = root) {
     .map(match => match[1].slice(1, -1).replace(/\\(['"\\])/g, '$1').replace(/\\n/g, '\n'));
   if (!copy.length) throw new Error('No Explore card copy found; update the literal extractor.');
   return [
-    { name: 'Evidence', lines: lines(json('data/evidence.json'), ['summary', 'reasoning', 'scope']) },
-    { name: 'Stories', lines: lines(json('data/stories.json').flatMap(book => book.stories), ['summary']) },
-    { name: 'People', lines: lines(json('src/data/characters.json'), ['summary']) },
+    { name: 'Evidence', lines: lines(json('data/evidence.json'), ['title', 'summary']) },
+    { name: 'Evidence notes', tier: 'detail', lines: lines(json('data/evidence.json'), ['reasoning', 'scope', 'languageContext']) },
+    { name: 'Stories', lines: lines(json('data/stories.json').flatMap(book => book.stories), ['title','summary']) },
+    { name: 'People', lines: lines(json('src/data/characters.json'), ['name','summary']) },
+    { name: 'Timeline', lines: lines(json('data/timeline-events.json').events || json('data/timeline-events.json'), ['title','display_title','summary']) },
+    { name: 'Prophecies', lines: lines(json('src/data/prophecies.json'), ['title','summary']) },
     { name: 'Explore cards', lines: copy, blurb: true },
     { name: 'Phase 2 interface', lines: ['src/debates.js','src/atlas-explore.js'].flatMap(file =>
       [...read(file).matchAll(/>([^<>`$]+)</g)].map(match => match[1].trim())
@@ -81,14 +84,25 @@ export function collections(directory = root) {
 export function draftCollections(directory = root) {
   const read = name => JSON.parse(fs.readFileSync(path.join(directory, 'docs/b1-readability', name), 'utf8'));
   const lines = values => values.flatMap(value => value.split(/\r?\n/).filter(line => line.trim()));
-  const evidence = read('evidence.json');
+  let evidence = read('evidence.json');
+  const b6 = path.join(directory, 'research/b6/evidence.json');
+  if (fs.existsSync(b6)) evidence = JSON.parse(fs.readFileSync(b6, 'utf8')).records;
   const people = read('people.json');
   const stories = read('stories.json');
   for (const row of [...evidence, ...people, ...stories]) {
     if (row.reviewStatus !== 'draft, unverified') throw new Error(`Draft status missing: ${row.id}`);
   }
+  const extras=[];
+  const b6Read=name=>JSON.parse(fs.readFileSync(path.join(directory,'research/b6',name),'utf8'));
+  if(fs.existsSync(b6)){
+    const teachings=b6Read('teachings.json').records;
+    extras.push({name:'Teachings drafts',lines:lines(teachings.flatMap(row=>[row.title,row.form,row.summary]))},{name:'Teaching notes',tier:'detail',lines:lines(teachings.flatMap(row=>[row.context,row.limits]))});
+    extras.push({name:'B6 reading notes',tier:'detail',lines:lines(b6Read('comparison-readings.json').records.flatMap(row=>row.readings.map(reading=>reading.summary).filter(Boolean)))});
+  }
   return [
-    { name: 'Evidence drafts', lines: lines(evidence.flatMap(row => Object.values(row.draft))) },
+    ...extras,
+    { name: 'Evidence drafts', lines: lines(evidence.flatMap(row => [row.title,row.draft.summary].filter(Boolean))) },
+    { name: 'Evidence draft notes', tier: 'detail', lines: lines(evidence.flatMap(row => ['reasoning','scope'].map(field => row.draft[field]).filter(Boolean))) },
     { name: 'Stories drafts', lines: lines(stories.map(row => row.draft)) },
     { name: 'People drafts', lines: lines(people.map(row => row.draft)) },
   ];
@@ -108,14 +122,14 @@ export function report(groups) {
     const counts = jargon.map(([term]) => [term, results.reduce((sum, result) =>
       sum + result.counts.find(item => item.term === term).count, 0)])
       .filter(([, count]) => count).sort((a, b) => b[1] - a[1]).slice(0, 10);
-    failed ||= average > 8 || long > 0 || unexplained > 0;
-    console.log(`| ${group.name} | ${results.length} | ${average.toFixed(2)} | ${results.length ? (100 * long / results.length).toFixed(1) : '0.0'}% (${long}) | ${unexplained} |`);
+    failed ||= (group.tier !== 'detail' && average < 6) || average > (group.tier === 'detail' ? 10 : 8) || long > 0 || unexplained > 0;
+    console.log(`| ${group.name} (${group.tier || 'visible'}) | ${results.length} | ${average.toFixed(2)} | ${results.length ? (100 * long / results.length).toFixed(1) : '0.0'}% (${long}) | ${unexplained} |`);
     details.push(`${group.name} — top jargon: ${counts.map(([term, count]) => `${term}: ${count}`).join(', ') || 'none'}`);
   }
   console.log('\n' + details.join('\n'));
   console.log('\nEstimated English syllables; each nonempty field line counts once. FK grades are averaged per line.');
-  console.log('Length limits: 20 words per sentence; 15 words per card blurb. Quoted spans are excluded.');
-  console.log('Jargon screening uses the listed terms and same-sentence plain equivalents; review context manually.');
+  console.log('Length limits: visible 20 words per sentence and 15 per blurb; disclosed details 30 words per sentence. Visible collection grades 6–8; detail grades at most 10. Quoted spans are excluded.');
+  console.log('Jargon screening uses the listed terms and plain equivalents by first use; review context manually.');
   return failed;
 }
 

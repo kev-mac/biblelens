@@ -1,0 +1,468 @@
+{
+  "draft_only": true,
+  "ownerAccepted": false,
+  "records": [
+    {
+      "id": "teachings-f01",
+      "heldUnitId": "F01",
+      "reviewStatus": "draft",
+      "title": "Offerings at the Tabernacle",
+      "form": "ritual instructions",
+      "passage": "Leviticus 1:1–7:38",
+      "summary": "This text gives rules for offerings at the tent used for worship.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Leviticus 1:1–7:38",
+          "corpus": "data/chapters.json",
+          "passage": "Leviticus 1:1–7:38"
+        },
+        {
+          "label": "B2 held unit F01",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f02",
+      "heldUnitId": "F02",
+      "reviewStatus": "draft",
+      "title": "Clean and unclean animals",
+      "form": "law",
+      "passage": "Leviticus 11:1–11:47",
+      "summary": "This text lists animals that may or may not be eaten under its rules.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Leviticus 11:1–11:47",
+          "corpus": "data/chapters.json",
+          "passage": "Leviticus 11:1–11:47"
+        },
+        {
+          "label": "B2 held unit F02",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f03",
+      "heldUnitId": "F03",
+      "reviewStatus": "draft",
+      "title": "Purity after childbirth, skin disease and mold",
+      "form": "ritual instructions",
+      "passage": "Leviticus 12:1–15:33",
+      "summary": "This text gives rules about purity after childbirth, skin disease, and mold.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Leviticus 12:1–15:33",
+          "corpus": "data/chapters.json",
+          "passage": "Leviticus 12:1–15:33"
+        },
+        {
+          "label": "B2 held unit F03",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f04",
+      "heldUnitId": "F04",
+      "reviewStatus": "draft",
+      "title": "The day of Atonement",
+      "form": "ritual instructions",
+      "passage": "Leviticus 16:1–16:34",
+      "summary": "This text gives rules for a yearly day of ritual cleansing.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Leviticus 16:1–16:34",
+          "corpus": "data/chapters.json",
+          "passage": "Leviticus 16:1–16:34"
+        },
+        {
+          "label": "B2 held unit F04",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f05",
+      "heldUnitId": "F05",
+      "reviewStatus": "draft",
+      "title": "Holiness laws",
+      "form": "law",
+      "passage": "Leviticus 17:1–22:33",
+      "summary": "This section collects laws about worship and life among the people of Israel.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Leviticus 17:1–22:33",
+          "corpus": "data/chapters.json",
+          "passage": "Leviticus 17:1–22:33"
+        },
+        {
+          "label": "B2 held unit F05",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f06",
+      "heldUnitId": "F06",
+      "reviewStatus": "draft",
+      "title": "The appointed festivals",
+      "form": "ritual instructions",
+      "passage": "Leviticus 23:1–23:44",
+      "summary": "This text sets out a calendar of festivals and days of rest.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Leviticus 23:1–23:44",
+          "corpus": "data/chapters.json",
+          "passage": "Leviticus 23:1–23:44"
+        },
+        {
+          "label": "B2 held unit F06",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f07",
+      "heldUnitId": "F07",
+      "reviewStatus": "draft",
+      "title": "The Sabbath year and jubilee",
+      "form": "law",
+      "passage": "Leviticus 25:1–25:55",
+      "summary": "This text gives rules for land, rest, debts, and release in set years.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Leviticus 25:1–25:55",
+          "corpus": "data/chapters.json",
+          "passage": "Leviticus 25:1–25:55"
+        },
+        {
+          "label": "B2 held unit F07",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f08",
+      "heldUnitId": "F08",
+      "reviewStatus": "draft",
+      "title": "Blessings and curses",
+      "form": "law",
+      "passage": "Leviticus 26:1–27:34",
+      "summary": "This text sets out blessings and curses linked to following its laws.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Leviticus 26:1–27:34",
+          "corpus": "data/chapters.json",
+          "passage": "Leviticus 26:1–27:34"
+        },
+        {
+          "label": "B2 held unit F08",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f09",
+      "heldUnitId": "F09",
+      "reviewStatus": "draft",
+      "title": "Purity, Nazirites and the priestly blessing",
+      "form": "ritual instructions",
+      "passage": "Numbers 5:1–6:27",
+      "summary": "This text gives purity rules, special vows, and a blessing spoken by priests.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Numbers 5:1–6:27",
+          "corpus": "data/chapters.json",
+          "passage": "Numbers 5:1–6:27"
+        },
+        {
+          "label": "B2 held unit F09",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f10",
+      "heldUnitId": "F10",
+      "reviewStatus": "draft",
+      "title": "Borders, Levitical cities and cities of refuge",
+      "form": "law",
+      "passage": "Numbers 33:50–35:34",
+      "summary": "This text gives instructions about borders, towns for priests, and places of refuge.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Numbers 33:50–35:34",
+          "corpus": "data/chapters.json",
+          "passage": "Numbers 33:50–35:34"
+        },
+        {
+          "label": "B2 held unit F10",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f11",
+      "heldUnitId": "F11",
+      "reviewStatus": "draft",
+      "title": "The ten commandments and the Shema",
+      "form": "teaching",
+      "passage": "Deuteronomy 5:1–6:25",
+      "summary": "This text presents laws and a teaching about loving God in the setting of an address to Israel.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Deuteronomy 5:1–6:25",
+          "corpus": "data/chapters.json",
+          "passage": "Deuteronomy 5:1–6:25"
+        },
+        {
+          "label": "B2 held unit F11",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f12",
+      "heldUnitId": "F12",
+      "reviewStatus": "draft",
+      "title": "Laws for life in the land",
+      "form": "law",
+      "passage": "Deuteronomy 12:1–26:19",
+      "summary": "This section collects laws about life in the land described by the text.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Deuteronomy 12:1–26:19",
+          "corpus": "data/chapters.json",
+          "passage": "Deuteronomy 12:1–26:19"
+        },
+        {
+          "label": "B2 held unit F12",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f13",
+      "heldUnitId": "F13",
+      "reviewStatus": "draft",
+      "title": "Blessings and curses of the covenant",
+      "form": "law",
+      "passage": "Deuteronomy 27:1–28:68",
+      "summary": "This text gives blessings and curses linked to an agreement between God and Israel.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Deuteronomy 27:1–28:68",
+          "corpus": "data/chapters.json",
+          "passage": "Deuteronomy 27:1–28:68"
+        },
+        {
+          "label": "B2 held unit F13",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f14",
+      "heldUnitId": "F14",
+      "reviewStatus": "draft",
+      "title": "Renewal of the covenant in Moab",
+      "form": "teaching",
+      "passage": "Deuteronomy 29:1–30:20",
+      "summary": "This text presents appeals and promises in the setting of an agreement in Moab.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Deuteronomy 29:1–30:20",
+          "corpus": "data/chapters.json",
+          "passage": "Deuteronomy 29:1–30:20"
+        },
+        {
+          "label": "B2 held unit F14",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f15",
+      "heldUnitId": "F15",
+      "reviewStatus": "draft",
+      "title": "Genealogies from Adam",
+      "form": "family list",
+      "passage": "1 Chronicles 1:1–9:44",
+      "summary": "This text collects family lists beginning with Adam.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: 1 Chronicles 1:1–9:44",
+          "corpus": "data/chapters.json",
+          "passage": "1 Chronicles 1:1–9:44"
+        },
+        {
+          "label": "B2 held unit F15",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f16",
+      "heldUnitId": "F16",
+      "reviewStatus": "draft",
+      "title": "Organizing the Levites, priests and officers",
+      "form": "work list",
+      "passage": "1 Chronicles 23:1–27:34",
+      "summary": "This text lists duties for temple workers, priests, and officers.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: 1 Chronicles 23:1–27:34",
+          "corpus": "data/chapters.json",
+          "passage": "1 Chronicles 23:1–27:34"
+        },
+        {
+          "label": "B2 held unit F16",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f17",
+      "heldUnitId": "F17",
+      "reviewStatus": "draft",
+      "title": "Sign Acts of the siege",
+      "form": "symbolic instructions",
+      "passage": "Ezekiel 4:1–5:17",
+      "summary": "This text gives instructions for actions that stand for a siege.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Ezekiel 4:1–5:17",
+          "corpus": "data/chapters.json",
+          "passage": "Ezekiel 4:1–5:17"
+        },
+        {
+          "label": "B2 held unit F17",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f18",
+      "heldUnitId": "F18",
+      "reviewStatus": "draft",
+      "title": "The sermon on the Mount",
+      "form": "teaching",
+      "passage": "Matthew 5:1–7:29",
+      "summary": "This text collects teachings within a brief story frame on a mountain.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Matthew 5:1–7:29",
+          "corpus": "data/chapters.json",
+          "passage": "Matthew 5:1–7:29"
+        },
+        {
+          "label": "B2 held unit F18",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f19",
+      "heldUnitId": "F19",
+      "reviewStatus": "draft",
+      "title": "Parables of the kingdom",
+      "form": "teaching",
+      "passage": "Matthew 13:1–13:58",
+      "summary": "This text collects short teaching stories about the kingdom of heaven.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Matthew 13:1–13:58",
+          "corpus": "data/chapters.json",
+          "passage": "Matthew 13:1–13:58"
+        },
+        {
+          "label": "B2 held unit F19",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    },
+    {
+      "id": "teachings-f20",
+      "heldUnitId": "F20",
+      "reviewStatus": "draft",
+      "title": "Teaching on forgiveness and greatness",
+      "form": "teaching",
+      "passage": "Matthew 18:1–18:35",
+      "summary": "This text presents teachings about forgiveness and greatness.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Matthew 18:1–18:35",
+          "corpus": "data/chapters.json",
+          "passage": "Matthew 18:1–18:35"
+        },
+        {
+          "label": "B2 held unit F20",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open. The supplied forgiveness paraphrase remains held. This draft gives no number or quotation."
+    },
+    {
+      "id": "teachings-f21",
+      "heldUnitId": "F21",
+      "reviewStatus": "draft",
+      "title": "Teaching in the Temple and the Olivet discourse",
+      "form": "teaching",
+      "passage": "Matthew 22:1–25:46",
+      "summary": "This text collects teachings in the temple and on the Mount of Olives.",
+      "context": "Read these words in their written setting. Instructions alone do not show whether anyone followed them. Present-day use requires a separately sourced reading.",
+      "sources": [
+        {
+          "label": "Packaged KJV: Matthew 22:1–25:46",
+          "corpus": "data/chapters.json",
+          "passage": "Matthew 22:1–25:46"
+        },
+        {
+          "label": "B2 held unit F21",
+          "path": "research/b2/held-stories.md"
+        }
+      ],
+      "limits": "Draft based on the supplied held unit. Detailed source review remains open."
+    }
+  ]
+}

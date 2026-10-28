@@ -18,7 +18,8 @@ Prophecies and Method & Sources are deferred as Explore gallery cards. Keep Meth
 
 ## Writing standard
 
-- Everything the app writes (UI copy, card blurbs, evidence summary/reasoning/scope, story summaries, people and place text) targets Flesch-Kincaid grade 6–8, averaged per collection. Scripture text and quoted source titles are exempt.
-- Per line: sentences of at most 20 words; card blurbs (Explore and collection descriptions) of at most 15 words; no unexplained jargon. Plain equivalents: "the old Greek translation" not "Brenton's Greek" or "the Septuagint" on first use; "the Hebrew text" not "WLC"; "ancient copies" not "manuscripts/witnesses". Full source names belong in Sources.
+- Visible card text (titles, blurbs, one-line summaries, evidence-strength lines, and anything shown before a tap) targets Flesch-Kincaid grade 6–8 per collection average. Sentences have at most 20 words; blurbs have at most 15 words. No unexplained jargon.
+- Tap-to-open notes and detail fields may average up to grade 10 per collection. Sentences have at most 30 words. Explain jargon on first use.
+- Scripture text and quoted source titles are exempt in both tiers. Plain equivalents: "the old Greek translation" before "the Septuagint"; "the Hebrew text" before "WLC"; "ancient copies" before "manuscripts/witnesses". Full source names belong in Sources.
 - Keep each record's scholarly limits, but say them plainly. Never add claims, motives or certainty the record doesn't state.
 - Run `npm run check:readability` after content changes.
