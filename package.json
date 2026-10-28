@@ -1,7 +1,7 @@
 {
   "name": "scripture-lens",
   "version": "1.1.0",
-  "buildNumber": 276,
+  "buildNumber": 277,
   "private": true,
   "type": "module",
   "scripts": {
@@ -29,7 +29,8 @@
     "check:ui": "node scripts/check-security-ui.mjs && node scripts/check-phase2-browser.mjs && node scripts/check-performance-browser.mjs && node scripts/check-hosted-csp.mjs",
     "check:search": "node scripts/check-search.mjs && node scripts/check-search-vocabulary.mjs && node scripts/check-workspace-search.mjs && node scripts/check-release-smoke.mjs",
     "release:smoke": "node scripts/release-smoke.mjs",
-    "check:ux1": "node scripts/check-ux1-browser.mjs"
+    "check:ux1": "node scripts/check-ux1-browser.mjs",
+    "check:ux1b": "node scripts/check-ux1b-browser.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",

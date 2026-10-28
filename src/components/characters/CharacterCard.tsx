@@ -46,7 +46,7 @@ export function LineageBadges(profile: CharacterProfile): HTMLElement {
   return group;
 }
 
-export function CharacterCard(profile: CharacterProfile): HTMLElement {
+export function CharacterNameCard(profile: CharacterProfile): HTMLElement {
   const card=element('article',`character-card ${profile.sex==='female'?'character-female':'character-neutral'}`);
   card.id=`character-card-${profile.id}`;card.tabIndex=-1;
   const heading=element('h2','character-name',profile.name);
@@ -54,6 +54,12 @@ export function CharacterCard(profile: CharacterProfile): HTMLElement {
   const open=element('a','ux-person-open','→');open.href='#characters/'+encodeURIComponent(profile.id);open.setAttribute('aria-label','Open '+profile.name);header.append(open);
   if(profile.identity_context)header.append(element('p','character-identity-context',profile.identity_context));
   if(profile.aliases?.length)header.append(element('p','character-aliases',profile.aliases.join(' · ')));
-  card.append(header,element('p','character-summary',profile.summary||'A written biography is not yet available for this person.'),ProfileSections(profile));
+  card.append(header);
+  return card;
+}
+
+export function CharacterCard(profile: CharacterProfile): HTMLElement {
+  const card = CharacterNameCard(profile);
+  card.append(element('p','character-summary',profile.summary||'A written biography is not yet available for this person.'),ProfileSections(profile));
   return card;
 }
