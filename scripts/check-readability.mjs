@@ -63,17 +63,20 @@ export function collections(directory = root) {
     typeof record[field] === 'string' ? record[field].split(/\r?\n/).filter(line => line.trim()) : []));
   // Extract only literal copy properties, never execute browser code. Include
   // deferred cards so their copy is checked before they are made visible again.
+  const titles = [...read('src/atlas-explore.js').matchAll(/\btitle\s*:\s*'([^']*)'/g)].map(match=>match[1]);
+  const evidenceLabels=json('research/b6/owner-decisions.json').A00a.labels;
   const copy = [...read('src/atlas-explore.js').matchAll(/\bcopy\s*:\s*('(?:\\.|[^'\\])*'|"(?:\\.|[^"\\])*")/g)]
     .map(match => match[1].slice(1, -1).replace(/\\(['"\\])/g, '$1').replace(/\\n/g, '\n'));
   if (!copy.length) throw new Error('No Explore card copy found; update the literal extractor.');
   return [
-    { name: 'Evidence', lines: lines(json('data/evidence.json'), ['title', 'summary']) },
+    { name: 'Evidence', lines: [...lines(json('data/evidence.json'), ['title', 'summary']),...evidenceLabels,'Evidence strength: Not assessed'] },
     { name: 'Evidence notes', tier: 'detail', lines: lines(json('data/evidence.json'), ['reasoning', 'scope', 'languageContext']) },
     { name: 'Stories', lines: lines(json('data/stories.json').flatMap(book => book.stories), ['title','summary']) },
     { name: 'People', lines: lines(json('src/data/characters.json'), ['name','summary']) },
     { name: 'Timeline', lines: lines(json('data/timeline-events.json').events || json('data/timeline-events.json'), ['title','display_title','summary']) },
     { name: 'Prophecies', lines: lines(json('src/data/prophecies.json'), ['title','summary']) },
     { name: 'Explore cards', lines: copy, blurb: true },
+    { name: 'Explore visible text', lines: [...titles,...copy] },
     { name: 'Phase 2 interface', lines: ['src/debates.js','src/atlas-explore.js'].flatMap(file =>
       [...read(file).matchAll(/>([^<>`$]+)</g)].map(match => match[1].trim())
         .filter(text => words(text).length >= 8 && !/[{}]/.test(text))) },
