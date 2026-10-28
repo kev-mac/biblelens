@@ -1,6 +1,11 @@
 # B1 decisions for Kevin
 
-Status: proposals only. No answer has been assumed. Accepted app content stays unchanged.
+Status: owner answers are recorded; content proposals remain drafts. Accepted app content stays unchanged.
+
+B6 applies the answers recorded in `/Users/kevin/git/codex-reports/B1-decisions-answers.md`.
+A00a labels and M03 Teachings & Laws are accepted. Group F keeps Stories narrative-only and adds no Exile/Return era.
+The neutral Jesus profile is an unpublished draft. Groups G and L passed the supplied spot-check.
+The original recommendations below remain as an audit trail; acceptance does not publish their drafts.
 Reply by group, such as **“accept all defaults in group C”**, or name exceptions by ID.
 A group answer accepts only its stated defaults. A default marked **HOLD** keeps that item pending.
 Content approval does not authorize a push, release, deployment, download, purchase, or native install.

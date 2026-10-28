@@ -48,7 +48,8 @@ write('meaning-checks.json',meaning);
 fs.writeFileSync('research/b6/meaning-checks.md',['# B6 meaning checks','','Drafts remain unpublished. Ambiguous fields retain their original wording.','','| ID | Field | Tier | Reason |','| --- | --- | --- | --- |',...meaning.map(r=>`| ${r.id} | ${r.field} | ${r.tier} | ${r.reason.replaceAll('|','/')} |`),''].join('\n'));
 // The queue identifies which comparisons lack an individual paired-reading proposal.
 const evidence=new Map(read('data/evidence.json').map(r=>[r.id,r]));
-const pending=read('research/b4/comparison-review-queue.json').records.filter(r=>!r.questionPreview);
+const queue=read('research/b4/comparison-review-queue.json');
+const pending=queue.records.filter(r=>!r.questionPreview);
 const readings=pending.map(q=>{
  const r=evidence.get(q.id);if(!r)throw Error('Missing comparison '+q.id);
  const sources=r.sources||[];
@@ -63,6 +64,8 @@ const readings=pending.map(q=>{
 });
 if(readings.length!==1693)throw Error('Pending count '+readings.length);
 write('comparison-readings.json',{draft_only:true,ownerAccepted:false,records:readings});
+for(const row of readings){const queued=queue.records.find(q=>q.id===row.id);queued.b6Proposal='research/b6/comparison-readings.json#'+row.id;queued.b6ReadingsSupplied=row.readings.filter(r=>r.summary).length;queued.b6NeedsResearch=row.readings.filter(r=>r.status==='needs research').length;}
+fs.writeFileSync('research/b4/comparison-review-queue.json',JSON.stringify(queue,null,2)+'\n');
 const styles=[];
 for(const [collection,rows]of Object.entries(b2Catalog().collections))for(const row of rows){
  const draft={};for(const key of ['title','display_title'])if(row.record[key]){let title=sentenceCase(row.record[key]);if(row.id==='stories:mark-calling-the-disciples-and-healing-in-capernaum')title='Calling the disciples and healings';if(title!==row.record[key])draft[key]=title;}
