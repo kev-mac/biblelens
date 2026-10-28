@@ -27,7 +27,7 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
    await page.locator('[data-draft-mode="text-vs-text"]').click();await page.waitForFunction(()=>location.hash.includes('mode=text-vs-text'));assert.equal(await page.locator('.phase3-card').count(),16);
    await page.locator('.phase3-card').first().click();await page.waitForSelector('.phase3-verdict-box');
    assert.equal(await page.locator('.phase3-side').count(),2);assert.equal(await page.locator('.phase3-case').count(),2);
-   assert((await page.locator('.phase3-tier').innerText()).includes('Not assigned'));
+   assert((await page.locator('#debate-view .phase3-tier').innerText()).includes('Not assigned'));
    assert.equal(await page.locator('#debate-view img').count(),0,'No artwork is offered as evidence');
    await shot('detail');
    await page.locator('.phase3-verdict-box').scrollIntoViewIfNeeded();await shot('verdict');
