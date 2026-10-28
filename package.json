@@ -24,7 +24,9 @@
     "release:verify": "node scripts/verify-release.mjs",
     "stories:tag": "node scripts/story-topics.mjs data/stories.json data/reference/topics.json data/stories.json",
     "check:workspace": "node scripts/check-workspace-state.mjs && node scripts/check-workspace-search.mjs",
-    "check:readability": "node scripts/check-readability.mjs"
+    "check:readability": "node scripts/check-readability.mjs",
+    "check:search": "node scripts/check-search-vocabulary.mjs && node scripts/check-workspace-search.mjs && node scripts/check-release-smoke.mjs",
+    "release:smoke": "node scripts/release-smoke.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",
