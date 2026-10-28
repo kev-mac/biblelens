@@ -1943,3 +1943,19 @@ html body.lens-app .story-summary :is(.person-chip, .location-chip) { text-decor
 html body.lens-app #places-view .place-map-preview{background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.2),rgba(15,23,34,.65));background-color:#0f1722;border-color:rgba(59,130,246,.4)}
 html body.lens-app:not(.dark) #places-view .place-map-preview{background:linear-gradient(rgba(59,130,246,.10),rgba(255,255,255,.85));background-color:#f7faff}
 }
+
+.fetch-retry-status {
+  position: fixed;
+  bottom: calc(80px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10001;
+  padding: 6px 14px;
+  border-radius: 16px;
+  background: var(--paper, #fbf9f3);
+  color: var(--ink, #142e39);
+  font: inherit;
+  font-size: 13px;
+  pointer-events: none;
+}
+.fetch-retry-status[hidden] { display: none; }

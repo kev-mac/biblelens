@@ -1,9 +1,10 @@
+import {inspectionSource} from './built-worker.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 
-const code=fs.readFileSync('dist/server/index.js','utf8'),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};
+const code=inspectionSource(),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};
 vm.createContext(ctx);vm.runInContext(code.slice(0,code.indexOf('async function chat('))+'this.vocabulary=VOCABULARY;this.terms=questionTerms;',ctx);
 assert(ctx.vocabulary.infant.related.includes('babe'),'WordNet synonyms must reach the packaged vocabulary');
 assert(ctx.vocabulary.eaten.forms.includes('eat'),'Irregular forms must be normalized by the build-time lemmatizer');

@@ -2,11 +2,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import http from 'node:http';
 import {chromium, webkit} from 'playwright';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 import {smokeSearch, smokeSignin, syncProbeHeaders, assertPolicy} from './release-smoke.mjs';
 
 const fixture = JSON.parse(fs.readFileSync('scripts/fixtures/sites-host-injection.json', 'utf8'));
-assert(fs.statSync('dist/server/index.js').size > 40_000_000, 'Test the full packaged Worker, including the search shards');
+assert(fs.statSync('dist/server/index.js').size > 100_000, 'Test the actual built Worker');
+if(fs.existsSync('dist/asset-manifest.json'))assert(fs.readdirSync('dist/client').length>0, 'Split build must include packaged assets');
 assert.deepEqual(syncProbeHeaders, {'X-BibleLens-Sync': '1'});
 assertPolicy([{disposition: 'report', violatedDirective: 'script-src-elem', blockedURI: 'inline'}]);
 assert.throws(() => assertPolicy([{disposition: 'report'}, {disposition: 'enforce'}]), /Enforced CSP/);
@@ -59,7 +60,7 @@ for (const [name, engine] of [['Chromium', chromium], ['WebKit', webkit]]) {
     assert(healthy.attempts[0].requests.some(r => r.passages === 24 && r.research === 12));
     mode = 'transient'; searchCount = 0;
     const transient = await smokeSearch(page);
-    assert.equal(transient.attempts.length, 2);
+    assert.equal(transient.attempts.length, 1, 'Client GET retry recovers within the same search');
     assert.equal(transient.attempts[0].requests[0].status, 500);
     mode = 'cold'; searchCount = 0;
     const cold = await smokeSearch(page);
@@ -67,7 +68,7 @@ for (const [name, engine] of [['Chromium', chromium], ['WebKit', webkit]]) {
     assert.match(cold.attempts[0].summary, /Scripture and research search unavailable/);
     mode = 'broken'; searchCount = 0;
     await assert.rejects(smokeSearch(page), /Scripture search failed/);
-    assert.equal(searchCount, 2, 'Persistent API errors must fail after a bounded retry');
+    assert.equal(searchCount, 6, 'Two smoke probes each exhaust three GET attempts');
     const violations = await page.evaluate(() => __policy);
     assertPolicy(violations);
     assert(violations.some(e => e.disposition === 'report' && e.violatedDirective.startsWith('script-src')));

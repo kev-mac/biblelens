@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 
 // Exercise the actual shared worker: these calls also run in the native offline worker.
 const originalFetch=globalThis.fetch;let externalCalls=0;

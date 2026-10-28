@@ -1,8 +1,9 @@
+import {inspectionSource} from './built-worker.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import worker from '../dist/server/index.js';
-const code=fs.readFileSync('dist/server/index.js','utf8'),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};
+import worker from './built-worker.mjs';
+const code=inspectionSource(),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};
 vm.createContext(ctx);vm.runInContext(code.slice(0,code.indexOf('async function chat('))+'this.terms=questionTerms;',ctx);
 assert.deepEqual(Array.from(ctx.terms('shark')[0]),['shark'],'A real word must not turn into sharp or spark');
 assert.deepEqual(Array.from(ctx.terms('salmon')[0]),['salmon'],'A modern noun must not be silently replaced');

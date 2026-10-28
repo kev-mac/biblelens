@@ -1,7 +1,8 @@
+import {inspectionSource} from './built-worker.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 const netsContext={parseRef:()=>({book:0}),BOOKS:[{name:'Genesis'}]};
 vm.createContext(netsContext);vm.runInContext(fs.readFileSync('worker/nets-links.mjs','utf8'),netsContext);
 const greekRecord={ref:'Genesis 1:1',witness:['Septuagint'],sources:[{label:'Brenton Greek evidence',url:'https://example.test/grcbrent'}],text:'Existing reviewed quotation'};
@@ -12,7 +13,7 @@ assert.equal(readingSources[1],greekRecord.sources[0],'Retain the actual source 
 assert.equal(greekRecord.text,'Existing reviewed quotation');
 assert.equal(netsContext.comparisonReadingSources({ref:'Genesis 1:1',sources:[]}).length,0);
 
-const source=fs.readFileSync('dist/server/index.js','utf8'),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};
+const source=inspectionSource(),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};
 vm.createContext(ctx);vm.runInContext(source.slice(0,source.indexOf('async function chat('))+'this.confirms=confirmsParent;this.family=familyQuestion;this.intent=questionIntent;',ctx);
 const noah={name:'Noah'},lamech={name:'Lamech'},ham={name:'Ham'};
 assert(ctx.confirms('Lamech begat Noah.',lamech,noah));

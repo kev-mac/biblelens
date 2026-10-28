@@ -65,7 +65,7 @@ assert.deepEqual(startupAssetReferences(native).js, ['/device-bootstrap.js', man
 console.log('PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.');
 
 if (!process.argv.includes('--fixtures-only')) {
-  const worker = (await import('../dist/server/index.js')).default;
+  const worker = (await import('./built-worker.mjs')).default;
   const get = async path => {
     const response = await worker.fetch(new Request(new URL(path, 'https://biblelens.test/')), {}, {});
     assert.equal(response.status, 200, path); return {body: await response.text(), type: response.headers.get('content-type')};

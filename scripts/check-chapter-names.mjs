@@ -3,12 +3,11 @@ const books=JSON.parse(fs.readFileSync('data/books.json','utf8')),names=JSON.par
 assert.equal(books.length,66);assert.equal(validateChapterNames(names,books),1189);
 const missing=structuredClone(names);delete missing.Genesis['1'];assert.throws(()=>validateChapterNames(missing,books),/Genesis 1/);
 const empty=structuredClone(names);empty.Revelation['22']='';assert.throws(()=>validateChapterNames(empty,books),/Revelation 22/);
-const worker=fs.readFileSync('dist/server/index.js','utf8');
-const marker='const CHAPTER_NAMES=';const start=worker.indexOf(marker);assert(start>=0);
-// Worker assets are JSON-encoded strings; inspect the reader asset to verify every name survives packaging.
-// Parse the generated reader script from its JSON string value without executing the Worker.
-const encoded=worker.match(/"\/reader\.js":\{"type":"[^"]+","body":("(?:\\.|[^"\\])*")\}/);
-assert(encoded,'Reader asset missing');const reader=JSON.parse(encoded[1]);
+const worker=(await import('./built-worker.mjs')).default;
+const response=await worker.fetch(new Request('https://biblelens.test/reader.js'),{},{});
+assert.equal(response.status,200,'Reader asset must be served');
+const reader=await response.text(),marker='const CHAPTER_NAMES=';
+assert(reader.includes(marker),'Chapter names must reach the packaged reader');
 const payload=reader.slice(reader.indexOf(marker)+marker.length).split(';\n')[0].split(';\r\n')[0];
 const shipped=JSON.parse(payload);
 for(const book of books)for(let chapter=1;chapter<=book.chapters;chapter++)assert.equal(shipped[book.name][chapter],names[book.name][chapter]);

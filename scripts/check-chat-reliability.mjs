@@ -1,6 +1,7 @@
+import {inspectionSource} from './built-worker.mjs';
 import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
-import worker from '../dist/server/index.js';
-const code=fs.readFileSync('dist/server/index.js','utf8'),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};vm.createContext(ctx);vm.runInContext(code.slice(0,code.indexOf('async function chat('))+'this.gather=gatherSources;this.books=namedBooks;',ctx);
+import worker from './built-worker.mjs';
+const code=inspectionSource(),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};vm.createContext(ctx);vm.runInContext(code.slice(0,code.indexOf('async function chat('))+'this.gather=gatherSources;this.books=namedBooks;',ctx);
 const cases=[
  ['did moses kill anyone is exodus?','#read/1/2','slew the Egyptian'],
  ['Did Moses kill anyone in Exodus?','#read/1/2','slew the Egyptian'],

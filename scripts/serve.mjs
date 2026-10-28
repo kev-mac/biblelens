@@ -1,5 +1,5 @@
 import http from 'node:http';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 
 const port=8787;
 http.createServer(async(req,res)=>{

@@ -38,7 +38,7 @@ for(const state of [{polarity:['Negative'],topics:['Business']},{polarity:['Posi
 }
 assert(!html.includes('commandment-tag'));assert(!code.includes('--tag-rgb'));
 assert(code.includes('items.slice(0,visibleCount)'));assert(code.includes('visibleCount+=60'));
-const built=await (await import('../dist/server/index.js')).default.fetch(new Request('https://test/commandments.js'),{},{});assert((await built.text()).includes('N365'),'The full catalog must reach the built web bundle');
+const built=await (await import('./built-worker.mjs')).default.fetch(new Request('https://test/commandments.js'),{},{});assert((await built.text()).includes('N365'),'The full catalog must reach the built web bundle');
 console.log('PASS: all 613 unique commandment identities, 248/365 partitions, retained-source consistency, exact packaged KJV quotations, valid passage/lens routes, AND/OR facets, escaped cards and bounded incremental rendering.');
 
 const noLens=context.commandmentCard({...item,lens:[]});

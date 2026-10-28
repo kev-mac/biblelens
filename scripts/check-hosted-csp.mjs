@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import http from 'node:http';
 import {chromium, webkit} from 'playwright';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 
 // Replay the hosting layer after the real Worker response, as on Sites. These
 // captures contain no account credentials; their ray IDs/times are test data.

@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {performance} from 'node:perf_hooks';
+import {assets} from './built-worker.mjs';
+const [baselineFile, reportFile] = process.argv.slice(2);
+assert(baselineFile && reportFile, 'Usage: node scripts/check-static-worker.mjs baseline.json report.json');
+const baseline = JSON.parse(fs.readFileSync(baselineFile, 'utf8'));
+const manifest = JSON.parse(fs.readFileSync('dist/asset-manifest.json', 'utf8'));
+assert(manifest.splitBytes < 1000000, 'Split Worker must stay below 1 MB');
+const timings = [], reads = [];
+for (const [index, expected] of baseline.snapshots.entries()) {
+  const raw = (await import('../dist/server/index.js?cold=' + index)).default;
+  const accessed = [];
+  const binding = {async fetch(request) {accessed.push(new URL(request.url).pathname); return assets.fetch(request);}};
+  const start = performance.now();
+  const response = await raw.fetch(new Request('https://biblelens.test' + expected.path), manifest.mode === 'static' ? {ASSETS: binding} : {}, {});
+  const body = await response.text();
+  timings.push({path: expected.path, beforeMs: baseline.timings[index].ms, afterMs: Math.round(performance.now() - start)});
+  assert.equal(response.status, expected.status, expected.path);
+  assert.deepEqual(JSON.parse(body), JSON.parse(expected.body), expected.path + ': exact baseline response');
+  if (expected.path === '/api/books') assert.equal(accessed.length, 0, 'Book navigation never loads the search corpus');
+  if (manifest.mode === 'static' && expected.path.startsWith('/api/chapter')) assert.equal(accessed.length, 1, 'Read only the requested chapter asset');
+  reads.push({path: expected.path, assets: accessed.length});
+}
+const raw = (await import('../dist/server/index.js?recovery')).default;
+let fail = true;
+const binding = {fetch: request => fail ? Promise.resolve(new Response('Unavailable', {status:503})) : assets.fetch(request)};
+const request = new Request('https://biblelens.test/api/search?q=mercy');
+assert.equal((await raw.fetch(request, {ASSETS: binding}, {})).status, 503);
+fail = false; assert.equal((await raw.fetch(request, {ASSETS: binding}, {})).status, 200, 'A failed lazy load must be retried on the next request');
+const sync = await raw.fetch(new Request('https://biblelens.test/api/sync/session'), {}, {});
+assert.equal(sync.status, 403, 'Sync guard never depends on public assets');
+fs.writeFileSync(reportFile, JSON.stringify({workerBefore: baseline.workerBytes, workerAfter: manifest.after, splitBytes: manifest.splitBytes, mode: manifest.mode, sizes: manifest.sizes, timings, reads}, null, 2));
+console.log('PASS: exact baseline API/search responses; cold load measurements; on-demand book/chapter reads; failed asset recovery; unchanged sync guards.');

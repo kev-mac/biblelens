@@ -24,3 +24,25 @@ On the website, open Settings → Cloud sync, sign in with ChatGPT, and enable s
 Notes, bookmarks, theme and reader preferences sync when changed, on reconnect/focus and every 30 seconds while the app is visible. Reading and search stay on-device. Revision checks prevent stale writes. Three-way merging propagates deletions and retains concurrent note edits together. Local safety backups can be downloaded in Settings, and existing JSON/Markdown exports remain available. Sync is opt-in and never required to read or search.
 
 The additive D1 schema is in `db/schema.ts`; run `npm run db:generate` after future schema changes. Commit the generated `drizzle/` SQL and metadata without modifying applied migrations. The Sites publication workflow provisions the `DB` binding and applies migrations. Authentication uses Sites-provided identity on the web and paired-device bearer credentials on iOS; do not embed a service access token in either bundle.
+
+## Lazy asset builds
+
+`npm run build` now writes public data, chapter files, search shards and UI assets
+under `dist/client`. The default Worker includes a compressed fallback and opens
+these files only when needed. It remains self-contained for the existing Sites
+Worker ESM deployment contract. Native builds retain the same source corpus in
+the offline engine; no network access is added to native reading or search.
+
+`BIBLELENS_STATIC_ASSETS=1 npm run build` removes the fallback. This experimental
+artifact needs a Cloudflare `ASSETS` binding serving `dist/client`, with
+`run_worker_first: true` to preserve response headers and CSP. Its generated
+`dist/wrangler.json` describes that contract; it does not provision Sites or D1.
+The current Sites Worker starter documents embedded assets only. Do not publish
+the experimental artifact through the current Sites workflow until that binding
+and asset upload support are confirmed. Do not add `static` to hosting.json:
+that field selects a static-only deployment and would drop the API and sync.
+
+Local checks and `npm start` load static-mode files through a Node-only adapter.
+They use the real generated handler. A successful local check does not verify
+that Sites will provision an asset binding. Keep `dist/client` with a split
+artifact; never copy just its `dist/server/index.js`.
