@@ -1,0 +1,1583 @@
+{
+  "draft_only": true,
+  "reviewStatus": "draft",
+  "ownerAccepted": false,
+  "records": [
+    {
+      "id": "headline-01",
+      "decisionId": "B01",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Who killed Goliath: David or Elhanan?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The Hebrew wording names Elhanan, while Samuel's earlier account names David."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Chronicles names a brother of Goliath. Reading the accounts together could explain the KJV's added words."
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 21: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA21.htm"
+        },
+        {
+          "label": "2 Samuel 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/10/21/"
+        },
+        {
+          "label": "2 Samuel 21: Hebrew, Aleppo-based edition (HAC), consonants only",
+          "url": "https://bolls.life/get-text/HAC/10/21/"
+        },
+        {
+          "label": "2 Samuel 21: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2SA21.htm"
+        },
+        {
+          "label": "1 Samuel 17: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA17.htm"
+        },
+        {
+          "label": "1 Chronicles 20: KJV",
+          "url": "https://ebible.org/eng-kjv/1CH20.htm"
+        },
+        {
+          "label": "1 Chronicles 20: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/13/20/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-02",
+      "decisionId": "B02",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Who prompted David's count: God or Satan?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Each account names a different cause for David's count."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "God could allow Satan to act. This reading places the two causes at different levels."
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 24 · primary text",
+          "url": "https://ebible.org/eng-kjv/2SA24.htm"
+        },
+        {
+          "label": "1 Chronicles 21 · primary text",
+          "url": "https://ebible.org/eng-kjv/1CH21.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-03",
+      "decisionId": "B03",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Did Aaron die at Mount Hor or Mosera?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The accounts name different places for Aaron's death."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Mount Hor could stand within the area called Mosera. The cited passages do not supply that map."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Numbers 20 · primary text",
+          "url": "https://ebible.org/eng-kjv/NUM20.htm"
+        },
+        {
+          "label": "Deuteronomy 10 · primary text",
+          "url": "https://ebible.org/eng-kjv/DEU10.htm"
+        },
+        {
+          "label": "Numbers 33 · primary text",
+          "url": "https://ebible.org/eng-kjv/NUM33.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-04",
+      "decisionId": "B04",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Did Solomon have 4,000 or 40,000 horse stalls?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The printed counts differ by a factor of ten."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Pope Shenouda's site proposes larger buildings and smaller stalls. That would allow both counts to describe one collection."
+        }
+      ],
+      "sources": [
+        {
+          "label": "1 Kings 4 · primary text",
+          "url": "https://ebible.org/eng-kjv/1KI04.htm"
+        },
+        {
+          "label": "2 Chronicles 9 · primary text",
+          "url": "https://ebible.org/eng-kjv/2CH09.htm"
+        },
+        {
+          "label": "Pope Shenouda III · explanation of horse stall counts",
+          "url": "https://popeshenouda.org.eg/en/biblical-criticism-the-number-of-solomon-the-wises-horse-stalls/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-05",
+      "decisionId": "B05",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Was Ahaziah 22 or 42 when he became king?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The cited editions give different ages. The record leaves the earlier number open."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "GotQuestions discusses copying errors and a count of years in the royal family. These remain proposed explanations."
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Kings 8: KJV",
+          "url": "https://ebible.org/eng-kjv/2KI08.htm"
+        },
+        {
+          "label": "2 Kings 8: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/12/8/"
+        },
+        {
+          "label": "2 Chronicles 22: KJV",
+          "url": "https://ebible.org/eng-kjv/2CH22.htm"
+        },
+        {
+          "label": "2 Chronicles 22: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/14/22/"
+        },
+        {
+          "label": "2 Chronicles 22: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2CH22.htm"
+        },
+        {
+          "label": "2 Kings 8: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2KI08.htm"
+        },
+        {
+          "label": "GotQuestions · Ahaziah age readings",
+          "url": "https://www.gotquestions.org/Ahaziah-22-42.html"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-06",
+      "decisionId": "B06",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Was David the seventh or eighth son?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Samuel gives eight sons, while Chronicles calls David the seventh."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "A family list could omit a son who died without children. Neither passage states that explanation."
+        }
+      ],
+      "sources": [
+        {
+          "label": "1 Samuel 16: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA16.htm"
+        },
+        {
+          "label": "1 Samuel 17: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA17.htm"
+        },
+        {
+          "label": "1 Chronicles 2: KJV",
+          "url": "https://ebible.org/eng-kjv/1CH02.htm"
+        },
+        {
+          "label": "1 Samuel 17: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/9/17/"
+        },
+        {
+          "label": "1 Chronicles 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/13/2/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-07",
+      "decisionId": "B07",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Was the priest Ahimelech or Abiathar?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Samuel places Ahimelech in the bread scene, while Mark names Abiathar."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Mark's phrase could describe Abiathar's lifetime, including years before he served as high priest."
+        }
+      ],
+      "sources": [
+        {
+          "label": "1 Samuel 21: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA21.htm"
+        },
+        {
+          "label": "1 Samuel 22: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA22.htm"
+        },
+        {
+          "label": "1 Samuel 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/9/21/"
+        },
+        {
+          "label": "Mark 2: KJV",
+          "url": "https://ebible.org/eng-kjv/MRK02.htm"
+        },
+        {
+          "label": "Mark 2: Greek New Testament, Textus Receptus",
+          "url": "https://bolls.life/get-text/TR/41/2/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-08",
+      "decisionId": "B08",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Did God regret making Saul king?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The chapter uses related words for regret and for not changing course."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "The passages concern different decisions. A shared verb can carry different senses in each setting."
+        }
+      ],
+      "sources": [
+        {
+          "label": "1 Samuel 15: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA15.htm"
+        },
+        {
+          "label": "1 Samuel 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/9/15/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-09",
+      "decisionId": "B09",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Did the 430 years cover Egypt alone?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Exodus and Galatians appear to start the count at different times."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "The old Greek wording includes Canaan. A broader stay could bring the accounts closer together."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Exodus 12: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO12.htm"
+        },
+        {
+          "label": "Genesis 15: KJV",
+          "url": "https://ebible.org/eng-kjv/GEN15.htm"
+        },
+        {
+          "label": "Acts 7: KJV",
+          "url": "https://ebible.org/eng-kjv/ACT07.htm"
+        },
+        {
+          "label": "Galatians 3: KJV",
+          "url": "https://ebible.org/eng-kjv/GAL03.htm"
+        },
+        {
+          "label": "Exodus 12: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/2/12/"
+        },
+        {
+          "label": "Genesis 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/1/15/"
+        },
+        {
+          "label": "Exodus 12: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EXO12.htm"
+        },
+        {
+          "label": "Genesis 15: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/GEN15.htm"
+        },
+        {
+          "label": "Acts 7: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/44/7/"
+        },
+        {
+          "label": "Acts 7: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/44/7/"
+        },
+        {
+          "label": "Galatians 3: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/48/3/"
+        },
+        {
+          "label": "Galatians 3: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/48/3/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-10",
+      "decisionId": "B10",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Did Moses leave Egypt in fear?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The accounts differ if both describe Moses fleeing to Midian."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Hebrews could describe the later departure, or distinguish fear of discovery from fear of royal anger."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Exodus 2: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO02.htm"
+        },
+        {
+          "label": "Hebrews 11: KJV",
+          "url": "https://ebible.org/eng-kjv/HEB11.htm"
+        },
+        {
+          "label": "Exodus 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/2/2/"
+        },
+        {
+          "label": "Exodus 2: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EXO02.htm"
+        },
+        {
+          "label": "Hebrews 11: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/58/11/"
+        },
+        {
+          "label": "Hebrews 11: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/58/11/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-11",
+      "decisionId": "B11",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Did the ark hold only the stone tablets?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The accounts give different descriptions of what the ark contained."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "They describe different times. Objects could have been moved, though no cited verse reports a removal."
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Chronicles 5: KJV",
+          "url": "https://ebible.org/eng-kjv/2CH05.htm"
+        },
+        {
+          "label": "1 Kings 8: KJV",
+          "url": "https://ebible.org/eng-kjv/1KI08.htm"
+        },
+        {
+          "label": "Hebrews 9: KJV",
+          "url": "https://ebible.org/eng-kjv/HEB09.htm"
+        },
+        {
+          "label": "Exodus 16: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO16.htm"
+        },
+        {
+          "label": "Numbers 17: KJV",
+          "url": "https://ebible.org/eng-kjv/NUM17.htm"
+        },
+        {
+          "label": "2 Chronicles 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/14/5/"
+        },
+        {
+          "label": "2 Chronicles 5: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2CH05.htm"
+        },
+        {
+          "label": "Hebrews 9: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/58/9/"
+        },
+        {
+          "label": "Hebrews 9: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/58/9/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-12",
+      "decisionId": "B12",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Do the return lists add up to 42,360?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Adding the named groups gives totals below the stated whole community."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "The whole community could include people outside the listed groups. The passages do not identify everyone counted."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Ezra 2: KJV",
+          "url": "https://ebible.org/eng-kjv/EZR02.htm"
+        },
+        {
+          "label": "Nehemiah 7: KJV",
+          "url": "https://ebible.org/eng-kjv/NEH07.htm"
+        },
+        {
+          "label": "Ezra 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/15/2/"
+        },
+        {
+          "label": "Nehemiah 7: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/16/7/"
+        },
+        {
+          "label": "Ezra 2: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EZR02.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-13",
+      "decisionId": "B13",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Are altar steps banned or required?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "One instruction bars altar steps, while the vision includes them."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Different altar settings and clothing rules could matter. The passages do not name those differences as the reason."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Exodus 20: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO20.htm"
+        },
+        {
+          "label": "Ezekiel 43: KJV",
+          "url": "https://ebible.org/eng-kjv/EZK43.htm"
+        },
+        {
+          "label": "Exodus 28: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO28.htm"
+        },
+        {
+          "label": "Exodus 20: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/2/20/"
+        },
+        {
+          "label": "Ezekiel 43: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/26/43/"
+        },
+        {
+          "label": "Exodus 20: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EXO20.htm"
+        },
+        {
+          "label": "Ezekiel 43: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EZK43.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-14",
+      "decisionId": "B14",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Are locusts allowed as food or banned?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "One rule names permitted locusts, while another uses a broad ban."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "The broad rule could retain the earlier exception. Its next verse also permits clean flying creatures."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Leviticus 11: KJV",
+          "url": "https://ebible.org/eng-kjv/LEV11.htm"
+        },
+        {
+          "label": "Deuteronomy 14: KJV",
+          "url": "https://ebible.org/eng-kjv/DEU14.htm"
+        },
+        {
+          "label": "Leviticus 11: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/3/11/"
+        },
+        {
+          "label": "Deuteronomy 14: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/5/14/"
+        },
+        {
+          "label": "Leviticus 11: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/LEV11.htm"
+        },
+        {
+          "label": "Deuteronomy 14: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/DEU14.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-15",
+      "decisionId": "B15",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Was Jesus entering or leaving Jericho?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The travel directions differ if both accounts describe one healing at one boundary."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Separate events or separate city boundaries could explain the wording. The verses do not supply either account."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Mark 10 (primary text)",
+          "url": "https://ebible.org/kjv/MRK10.htm"
+        },
+        {
+          "label": "Luke 18 (primary text)",
+          "url": "https://ebible.org/kjv/LUK18.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-16",
+      "decisionId": "B16",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Does God need rest or never grow tired?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Rest and refreshment can suggest recovery, while Isaiah denies weariness."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Rest can describe stopping work in human terms. This reading need not claim that God became tired."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Exodus 31: KJV",
+          "url": "https://ebible.org/eng-kjv/EXO31.htm"
+        },
+        {
+          "label": "Isaiah 40: KJV",
+          "url": "https://ebible.org/eng-kjv/ISA40.htm"
+        },
+        {
+          "label": "Exodus 31: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/2/31/"
+        },
+        {
+          "label": "Isaiah 40: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/23/40/"
+        },
+        {
+          "label": "Exodus 31: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EXO31.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-17",
+      "decisionId": "B17",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Did plants appear before the Sun?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The order differs from the science model if the days describe first physical creation."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "A literary order or miraculous light changes that comparison. Science cannot test an unspecified miracle."
+        }
+      ],
+      "sources": [
+        {
+          "label": "NASA · Sun formation",
+          "url": "https://science.nasa.gov/sun/facts/"
+        },
+        {
+          "label": "OpenStax Biology 2e · photosynthesis",
+          "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
+        },
+        {
+          "label": "NASA: How did the solar system form?",
+          "url": "https://spaceplace.nasa.gov/solar-system-formation/en/"
+        },
+        {
+          "label": "Genesis 1:11–19 (WEB)",
+          "url": "https://ebible.org/engwebp/GEN01.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-18",
+      "decisionId": "B18",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Does the poem describe a motionless Earth?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "A claim that Earth never moves would differ from measured rotation and orbit."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "A poem can describe stability without making a claim about motion through space."
+        }
+      ],
+      "sources": [
+        {
+          "label": "NASA: Earth orbit and rotation",
+          "url": "https://science.nasa.gov/earth/facts/"
+        },
+        {
+          "label": "NASA · Earth rotation and orbit",
+          "url": "https://science.nasa.gov/earth/facts/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-19",
+      "decisionId": "B19",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Is the sky a solid roof or layers of gas?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "A solid roof holding an ocean differs from the measured atmosphere."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "Poythress reads the upper waters as clouds. That reading makes a different physical claim from Seely's solid sky."
+        }
+      ],
+      "sources": [
+        {
+          "label": "NASA · atmospheric layers",
+          "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+        },
+        {
+          "label": "Paul H. Seely · firmament interpretation (WTJ, 1991; preview)",
+          "url": "https://www.galaxie.com/article/wtj53-2-04"
+        },
+        {
+          "label": "Vern S. Poythress · alternative reading (WTJ, 2015; PDF)",
+          "url": "https://frame-poythress.org/wp-content/uploads/2015/12/2015Poythress-RainWater-WTJ77.2.pdf"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-20",
+      "decisionId": "B20",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Does a delayed sunset fit Earth’s normal spin?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "An extra day of light differs from Earth's normal cycle."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "The story credits divine action. A miracle reading makes a different claim from a model of normal motion."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Joshua 10: Sun, Moon and delayed sunset",
+          "url": "https://ebible.org/eng-kjv/JOS10.htm"
+        },
+        {
+          "label": "NASA: Earth orbit and rotation",
+          "url": "https://science.nasa.gov/earth/facts/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-21",
+      "decisionId": "B21",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Did birds come before land animals?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Birds' land ancestors precede birds in the cited science account."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "A literary order or later appearance changes what is being compared. The text's animal groups also differ from scientific groups."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Genesis 1 · KJV creation sequence",
+          "url": "https://ebible.org/eng-kjv/GEN01.htm"
+        },
+        {
+          "label": "OpenStax Biology 2e · 29.5 Birds, Evolution of Birds",
+          "url": "https://openstax.org/books/biology-2e/pages/29-5-birds"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-22",
+      "decisionId": "B22",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Does a recent worldwide flood fit the evidence?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The cited natural records conflict with a recent global flood replacing all people through ordinary processes."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "GotQuestions reads the flood as global from its descriptions of waters and survival. Miracle claims require a different kind of assessment."
+        }
+      ],
+      "sources": [
+        {
+          "label": "KJV · Genesis 7",
+          "url": "https://ebible.org/eng-kjv/GEN07.htm"
+        },
+        {
+          "label": "KJV · Genesis 8",
+          "url": "https://ebible.org/eng-kjv/GEN08.htm"
+        },
+        {
+          "label": "Svensson et al. (2008) · Greenland annual-layer chronology",
+          "url": "https://cp.copernicus.org/articles/4/47/2008/"
+        },
+        {
+          "label": "Nakagawa et al. (2012) · Continuous Lake Suigetsu sediment record",
+          "url": "https://eprints.ncl.ac.uk/185090"
+        },
+        {
+          "label": "Friedrich et al. (2004) · Hohenheim oak and pine chronology",
+          "url": "https://www.cambridge.org/core/journals/radiocarbon/article/12460year-hohenheim-oak-and-pine-treering-chronology-from-central-europea-unique-annual-record-for-radiocarbon-calibration-and-paleoenvironment-reconstructions/41104F23F7389472787A965C7AD6D702"
+        },
+        {
+          "label": "Mallick et al. (2016) · Simons Genome Diversity Project",
+          "url": "https://www.eva.mpg.de/documents/Nature/Mallick_Simons_Nature_2016_2351072.pdf"
+        },
+        {
+          "label": "Hawks et al. (2000) · Tests and limits of population bottleneck inference",
+          "url": "https://academic.oup.com/mbe/article/17/1/2/975516"
+        },
+        {
+          "label": "Hayes et al. (2022) · Madjedbebe grinding-stone sequence",
+          "url": "https://www.nature.com/articles/s41598-022-15174-x"
+        },
+        {
+          "label": "KJV · Genesis 9",
+          "url": "https://ebible.org/eng-kjv/GEN09.htm"
+        },
+        {
+          "label": "KJV · Genesis 6",
+          "url": "https://ebible.org/eng-kjv/GEN06.htm"
+        },
+        {
+          "label": "KJV · Genesis 2",
+          "url": "https://ebible.org/eng-kjv/GEN02.htm"
+        },
+        {
+          "label": "GotQuestions · global flood reading",
+          "url": "https://www.gotquestions.org/global-flood.html"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-23",
+      "decisionId": "B23",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Is Earth thousands or billions of years old?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The science sources support a much longer history than several thousand years."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "Creation days may describe a literary plan or allow long gaps. The verses supply no present age for Earth."
+        }
+      ],
+      "sources": [
+        {
+          "label": "KJV · Genesis 1",
+          "url": "https://ebible.org/eng-kjv/GEN01.htm"
+        },
+        {
+          "label": "KJV · Genesis 2",
+          "url": "https://ebible.org/eng-kjv/GEN02.htm"
+        },
+        {
+          "label": "KJV · Genesis 5",
+          "url": "https://ebible.org/eng-kjv/GEN05.htm"
+        },
+        {
+          "label": "KJV · Genesis 11",
+          "url": "https://ebible.org/eng-kjv/GEN11.htm"
+        },
+        {
+          "label": "NASA · Earth formation and age",
+          "url": "https://science.nasa.gov/earth/facts/"
+        },
+        {
+          "label": "Richter et al. (2017) · Dating the Jebel Irhoud fossils",
+          "url": "https://www.nature.com/articles/nature22335"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-24",
+      "decisionId": "B24",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Can seeing striped rods shape a lamb’s coat?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Inherited coat patterns involve genes. The cited study did not test the rods."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "Genesis later credits God. Selective breeding or divine action makes a different claim from a natural effect of seeing rods."
+        }
+      ],
+      "sources": [
+        {
+          "label": "KJV · Genesis 30",
+          "url": "https://ebible.org/eng-kjv/GEN30.htm"
+        },
+        {
+          "label": "KJV · Genesis 31",
+          "url": "https://ebible.org/eng-kjv/GEN31.htm"
+        },
+        {
+          "label": "Zhang et al. (2017) · Experimental alteration of sheep coat patterns",
+          "url": "https://www.nature.com/articles/s41598-017-08636-0"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-25",
+      "decisionId": "B25",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Does Quirinius’s census fit a birth under Herod?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Identifying Luke's census with Josephus's census creates a conflict in the sequence of rulers."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "GotQuestions proposes an earlier census or a different translation of Luke. The current record does not establish either explanation."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 17",
+          "url": "https://penelope.uchicago.edu/josephus/ant-17.html"
+        },
+        {
+          "label": "Josephus, Antiquities 18",
+          "url": "https://penelope.uchicago.edu/josephus/ant-18.html"
+        },
+        {
+          "label": "GotQuestions · Quirinius census readings",
+          "url": "https://www.gotquestions.org/Quirinius-census.html"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-26",
+      "decisionId": "B26",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Does Herod’s rule confirm the whole birth story?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Josephus supports Herod's rule in Judea. That is evidence for the named setting."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "A reader may trust Matthew's wider account as scripture. Josephus's account supplies narrower support for the ruler and setting."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 17",
+          "url": "https://penelope.uchicago.edu/josephus/ant-17.html"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-27",
+      "decisionId": "B27",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Does a new ruler establish the family’s journey?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The sources agree about a change in rulers. They do not independently track the family's journey."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "Matthew links the family's travel to the new ruler. Trust in that account reaches beyond what Josephus independently describes."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 17",
+          "url": "https://penelope.uchicago.edu/josephus/ant-17.html"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-28",
+      "decisionId": "B28",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Does Pilate’s record confirm every detail in Luke?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Josephus supports two officials and the setting. Other details still require separate checks."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "Luke presents those names within a larger account. A faith reading may trust that account beyond the details checked here."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 18",
+          "url": "https://penelope.uchicago.edu/josephus/ant-18.html"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-29",
+      "decisionId": "B29",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Does the census revolt record establish its ending?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The outside account supports a movement linked to the census. It does not verify every later event."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "Acts describes the movement's ending. A reader may trust that account while recognizing the outside source's narrower coverage."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Josephus, Antiquities 18",
+          "url": "https://penelope.uchicago.edu/josephus/ant-18.html"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-30",
+      "decisionId": "B30",
+      "reviewStatus": "draft",
+      "selectionAccepted": true,
+      "question": "Do Assyrian records establish the whole campaign account?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The objects support named rulers and parts of the campaign setting."
+        },
+        {
+          "label": "A faith or literary reading",
+          "summary": "Kings and Isaiah give wider accounts, including divine action. Trust in those accounts is distinct from what the objects independently support."
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Kings 18 · primary text",
+          "url": "https://ebible.org/eng-kjv/2KI18.htm"
+        },
+        {
+          "label": "British Museum · Lachish relief",
+          "url": "https://www.britishmuseum.org/collection/object/W_1856-0909-14_2"
+        },
+        {
+          "label": "Primary text: Isaiah 36 (WEB)",
+          "url": "https://ebible.org/engwebp/ISA36.htm"
+        },
+        {
+          "label": "British Museum: Sennacherib prism",
+          "url": "https://www.britishmuseum.org/collection/object/W_1855-1003-1"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-31",
+      "decisionId": "B31",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Does Judas’s end involve hanging or a fall?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Matthew describes hanging, while Acts describes a fatal fall."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "A hanging followed by a fall could join the accounts. Neither verse states the combined sequence."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Matthew 27: KJV",
+          "url": "https://ebible.org/eng-kjv/MAT27.htm"
+        },
+        {
+          "label": "Acts 1: KJV",
+          "url": "https://ebible.org/eng-kjv/ACT01.htm"
+        },
+        {
+          "label": "Matthew 27: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/40/27/"
+        },
+        {
+          "label": "Matthew 27: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/40/27/"
+        },
+        {
+          "label": "Acts 1: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/44/1/"
+        },
+        {
+          "label": "Acts 1: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/44/1/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-32",
+      "decisionId": "B32",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Was it dark or light at the tomb?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The accounts use different phrases for the light at the tomb visit."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Different visitors or stages of a journey could explain the descriptions. The record leaves their connection open."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Matthew 28: KJV",
+          "url": "https://ebible.org/eng-kjv/MAT28.htm"
+        },
+        {
+          "label": "Mark 16: KJV",
+          "url": "https://ebible.org/eng-kjv/MRK16.htm"
+        },
+        {
+          "label": "John 20: KJV",
+          "url": "https://ebible.org/eng-kjv/JHN20.htm"
+        },
+        {
+          "label": "Matthew 28: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/40/28/"
+        },
+        {
+          "label": "Matthew 28: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/40/28/"
+        },
+        {
+          "label": "Mark 16: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/41/16/"
+        },
+        {
+          "label": "Mark 16: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/41/16/"
+        },
+        {
+          "label": "John 20: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/43/20/"
+        },
+        {
+          "label": "John 20: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/43/20/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-33",
+      "decisionId": "B33",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Was Joseph’s father Jacob or Heli?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The family lists name different fathers for Joseph."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Different family lines or marriage links could explain the names. Neither verse identifies the proposed connection."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Matthew 1: KJV",
+          "url": "https://ebible.org/eng-kjv/MAT01.htm"
+        },
+        {
+          "label": "Luke 3: KJV",
+          "url": "https://ebible.org/eng-kjv/LUK03.htm"
+        },
+        {
+          "label": "Matthew 1: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/40/1/"
+        },
+        {
+          "label": "Matthew 1: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/40/1/"
+        },
+        {
+          "label": "Luke 3: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+          "url": "https://bolls.life/get-text/TISCH/42/3/"
+        },
+        {
+          "label": "Luke 3: Greek New Testament, Textus Receptus (bolls.life)",
+          "url": "https://bolls.life/get-text/TR/42/3/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-34",
+      "decisionId": "B34",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Were animals formed before or after the man?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "A strict sequence gives different orders for the man and animals."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "The second account could look back to an earlier event or arrange its material without following time order."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Genesis 1: KJV",
+          "url": "https://ebible.org/eng-kjv/GEN01.htm"
+        },
+        {
+          "label": "Genesis 2: KJV",
+          "url": "https://ebible.org/eng-kjv/GEN02.htm"
+        },
+        {
+          "label": "Genesis 2: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/1/2/"
+        },
+        {
+          "label": "Genesis 2: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/GEN02.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-35",
+      "decisionId": "B35",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Was David offered three or seven years of famine?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The Hebrew editions give different famine lengths in the two accounts."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "The old Greek Samuel gives three years. A difference from copying could explain the figures without choosing an earlier reading here."
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 24: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA24.htm"
+        },
+        {
+          "label": "1 Chronicles 21: KJV",
+          "url": "https://ebible.org/eng-kjv/1CH21.htm"
+        },
+        {
+          "label": "2 Samuel 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/10/24/"
+        },
+        {
+          "label": "1 Chronicles 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/13/21/"
+        },
+        {
+          "label": "2 Samuel 24: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2SA24.htm"
+        },
+        {
+          "label": "1 Chronicles 21: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/1CH21.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-36",
+      "decisionId": "B36",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Did David pay in silver or gold?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Both the metal and amount differ in the accounts of David's purchase."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "The payments could cover different pieces of property. The passages do not state that there were two payments."
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 24: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA24.htm"
+        },
+        {
+          "label": "1 Chronicles 21: KJV",
+          "url": "https://ebible.org/eng-kjv/1CH21.htm"
+        },
+        {
+          "label": "2 Samuel 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/10/24/"
+        },
+        {
+          "label": "1 Chronicles 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/13/21/"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-37",
+      "decisionId": "B37",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Did Michal bear five sons or raise them?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The cited Hebrew and Greek say Michal bore children, while another passage says she had none."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "The KJV says she raised them. That allows care for children without giving birth, but the name still needs explanation."
+        }
+      ],
+      "sources": [
+        {
+          "label": "2 Samuel 21: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA21.htm"
+        },
+        {
+          "label": "2 Samuel 21: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/10/21/"
+        },
+        {
+          "label": "2 Samuel 21: Hebrew, Aleppo-based edition (HAC), consonants only",
+          "url": "https://bolls.life/get-text/HAC/10/21/"
+        },
+        {
+          "label": "2 Samuel 21: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/2SA21.htm"
+        },
+        {
+          "label": "1 Samuel 18: KJV",
+          "url": "https://ebible.org/eng-kjv/1SA18.htm"
+        },
+        {
+          "label": "2 Samuel 6: KJV",
+          "url": "https://ebible.org/eng-kjv/2SA06.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-38",
+      "decisionId": "B38",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Did Noah board before the flood or that day?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "Reading each sentence as the next event gives different entry times."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "An earlier summary or a final stage of boarding could explain the later same-day account."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Genesis 7 · primary text",
+          "url": "https://ebible.org/eng-kjv/GEN07.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-39",
+      "decisionId": "B39",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Who laid the foundation: Sheshbazzar or Zerubbabel?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The passages credit different people with laying the temple foundation."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Two names could identify one person, or leaders and builders could share credit. The cited passages do not decide."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Ezra 5: KJV",
+          "url": "https://ebible.org/eng-kjv/EZR05.htm"
+        },
+        {
+          "label": "Ezra 1: KJV",
+          "url": "https://ebible.org/eng-kjv/EZR01.htm"
+        },
+        {
+          "label": "Ezra 3: KJV",
+          "url": "https://ebible.org/eng-kjv/EZR03.htm"
+        },
+        {
+          "label": "Zechariah 4: KJV",
+          "url": "https://ebible.org/eng-kjv/ZEC04.htm"
+        },
+        {
+          "label": "Ezra 5: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/15/5/"
+        },
+        {
+          "label": "Zechariah 4: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/38/4/"
+        },
+        {
+          "label": "Ezra 3: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+          "url": "https://bolls.life/get-text/WLC/15/3/"
+        },
+        {
+          "label": "Ezra 5: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/EZR05.htm"
+        },
+        {
+          "label": "Zechariah 4: Brenton Greek edition of the Septuagint",
+          "url": "https://ebible.org/grcbrent/ZEC04.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    },
+    {
+      "id": "headline-40",
+      "decisionId": "B40",
+      "reviewStatus": "draft",
+      "selectionAccepted": false,
+      "question": "Do the dead stay inactive or wake again?",
+      "readings": [
+        {
+          "label": "Reading the stated claims",
+          "summary": "The passages differ if earthly inactivity denies every possible future life."
+        },
+        {
+          "label": "Reading the accounts together",
+          "summary": "Present inactivity can differ from a later awakening. The kinds of writing and their time frames matter."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Primary text: Ecclesiastes 9 (WEB)",
+          "url": "https://ebible.org/engwebp/ECC09.htm"
+        },
+        {
+          "label": "Primary text: Daniel 12 (WEB)",
+          "url": "https://ebible.org/engwebp/DAN12.htm"
+        }
+      ],
+      "limits": "Possible readings are distinct from established events. Source scope and the original record limits still apply.",
+      "attributionReview": "New faith-source proposals are attributed individually. Other readings are inferences from the linked passages and pinned summaries."
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import {neutralTree,b4Proposals} from './b4-neutral.mjs';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 
@@ -66,7 +67,9 @@ export function b2Catalog() {
 }
 
 export function packageB2Review(assets) {
-  const payload = b2Catalog();
+  const payload = neutralTree(b2Catalog());
+  payload.b4Wording = Object.entries(b4Proposals().collections).flatMap(([source,rows])=>rows.map(row=>({id:source+':'+row.path.join('.'),record:{title:source,summary:row.draft},reviewStatus:'draft',source,path:row.path})));
+  payload.b4Readings = JSON.parse(fs.readFileSync('research/b4/reading-proposals.json','utf8')).records.map(row=>({...row,record:{id:row.id,title:row.question,summary:row.readings.map(reading=>reading.summary).join(' '),sources:row.sources}}));
   assets['/draft-review.json'] = {type: 'application/json; charset=utf-8', body: JSON.stringify(payload)};
   for (const [file, type] of [['draft-review.html', 'text/html'], ['draft-review.js', 'application/javascript'], ['draft-review.css', 'text/css']]) {
     assets['/' + file] = {type: type + '; charset=utf-8', body: fs.readFileSync('src/' + file, 'utf8')};

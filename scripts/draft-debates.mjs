@@ -1,3 +1,4 @@
+import {neutralTree} from './b4-neutral.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import zlib from 'node:zlib';
@@ -40,6 +41,7 @@ export function loadDraftDebates(root = process.cwd()) {
     }
     return {ref, href: `#read/${book.id}/${Number(match[2])}/${first}`, verses};
   };
+  const readingProposals = new Map(read('research/b4/reading-proposals.json').records.map(row => [row.id,row]));
   const candidates = headline.candidates.map(candidate => {
     const sourceRecords = candidate.source_record_ids.map(id => {
       const record = records.get(id), proposal = ledger.get(id);
@@ -58,13 +60,13 @@ export function loadDraftDebates(root = process.cwd()) {
     const sources = candidate.source_record_ids.flatMap(id => {
       const record = records.get(id); return [...(record.sources || []), ...(record.fields || []).flatMap(field => field.sources || [])];
     }).filter((source,index,all) => all.findIndex(other => other.url === source.url) === index);
-    return {...candidate, review_status: 'draft', evidence_tier: presentation.evidence_tier,
+    return {...candidate, reading_review:readingProposals.get(candidate.id), review_status: 'draft', evidence_tier: presentation.evidence_tier,
       side_a: {...candidate.side_a, passages: candidate.side_a.kjv_refs.map(reference), case: pairs[0].map(index => sentences[index])},
       side_b: {...candidate.side_b, passages: candidate.side_b.kjv_refs.map(reference), case: pairs[1].map(index => sentences[index])},
       context: (candidate.context_kjv_refs || []).map(reference), sourceRecords, sources};
   });
-  return {draft_only: true, review_status: 'draft', candidates, source_commits: {
-    headlines: presentation.headline_source_commit, verdicts: presentation.verdict_source_commit}};
+  return neutralTree({draft_only: true, review_status: 'draft', candidates, source_commits: {
+    headlines: presentation.headline_source_commit, verdicts: presentation.verdict_source_commit}});
 }
 
 export function packageDraftDebates(assets, env = process.env) {
@@ -77,7 +79,7 @@ export function packageDraftDebates(assets, env = process.env) {
   // A small discovery link is compiled only into the explicit draft preview.
   const target = '<div class="phase2-tools">';
   if (!assets['/atlas-explore.js'].body.includes(target)) throw Error('Missing Explore draft entry point');
-  assets['/atlas-explore.js'].body = assets['/atlas-explore.js'].body.replace(target, target + '<a class="phase3-preview-link" href="#debates?draft=1">Preview draft debates</a><a class="phase3-preview-link" href="/draft-review.html">Review content drafts</a>');
-  console.log('DRAFT PREVIEW: 40 headlines; proposed verdicts await Kevin. Not a production build.');
+  assets['/atlas-explore.js'].body = assets['/atlas-explore.js'].body.replace(target, target + '<a class="phase3-preview-link" href="#questions?draft=1">Preview draft Big Questions</a><a class="phase3-preview-link" href="/draft-review.html">Review content drafts</a>');
+  console.log('DRAFT PREVIEW: 40 headlines; proposed evidence labels await Kevin. Not a production build.');
   return true;
 }

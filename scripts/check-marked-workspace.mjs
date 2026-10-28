@@ -65,7 +65,7 @@ const linkedCard=context.markedSummary({...data.records.find(r=>r.relatedPassage
  vm.runInContext(source.slice(source.indexOf('function renderMarkedResults('),source.indexOf('async function renderMarkedWorkspace(')),ctx);
  ctx.renderMarkedResults();
  const labels=[...box.innerHTML.matchAll(/<\/span>([^<]+)<span class="marked-count">0<\/span>/g)].map(m=>m[1]);
- assert.deepEqual(labels,['Academic','Commandments','Contradictions','Marked','People','Prophecies','Questions','Stories','Translation','Violations']);
+ assert.deepEqual(labels,['Academic','Commandments','Marked','People','Prophecies','Questions','Stories','Text comparisons','Translation','Violations']);
  assert.equal((box.innerHTML.match(/No results for these filters\./g)||[]).length,10);
  ctx.markedKind='commandments';ctx.renderMarkedResults();
  assert.equal((box.innerHTML.match(/<details /g)||[]).length,1);

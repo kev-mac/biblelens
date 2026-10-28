@@ -1,3 +1,4 @@
+import {neutralTree} from './b4-neutral.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -5,7 +6,7 @@ import {debatePage,debateVerdict} from '../worker/debates.mjs';
 import {exploreFeed} from './explore-feed.mjs';
 const records=JSON.parse(fs.readFileSync('data/evidence.json'));
 const original=JSON.stringify(records);
-for(const record of records){const expected=['science','history'].includes(record.mode)?{Agrees:'Evidence agrees',Disagrees:'Evidence disagrees',Context:'Not settled'}:{'Textual conflict':'Real conflict',Context:'Open question'};assert.equal(debateVerdict(record),expected[record.status],record.id);}
+for(const record of records){const expected=['science','history'].includes(record.mode)?{Agrees:'Evidence agrees',Disagrees:'Evidence disagrees',Context:'Not settled'}:{'Textual conflict':'Wording differs',Context:'Open question'};assert.equal(debateVerdict(record),expected[record.status],record.id);}
 for(const mode of ['text','science','history']){
  const included=records.filter(record=>mode==='text'?!['science','history'].includes(record.mode):record.mode===mode);
  const rows=[];for(let page=0;page<Math.ceil(included.length/24);page++)rows.push(...debatePage(records,new URLSearchParams({mode,page})).records);
@@ -42,6 +43,6 @@ const get=path=>worker.fetch(new Request('https://test.invalid'+path),{},{});
 assert.equal((await get('/api/debate?id=missing')).status,404);
 assert.equal((await get('/api/debates?day=2026-99-99')).status,400,'Invalid daily date returns a client error');
 const sample=records.find(record=>record.sides?.length>2)||records.find(record=>record.sides?.length);
-const detail=await (await get('/api/debate?id='+sample.id)).json();assert.deepEqual(detail,{...sample,verdict:debateVerdict(sample)},'Every exact field and all side quotes survive packaging');
+const detail=await (await get('/api/debate?id='+sample.id)).json();const draftOnly=(await (await get('/release.json')).json()).draftOnly===true;assert.deepEqual(detail,{...(draftOnly?neutralTree(sample):sample),verdict:debateVerdict(sample)},'Every exact field and all side quotes survive packaging');
 assert.equal((await (await get('/api/debates?mode=science&status=Disagrees')).json()).total,records.filter(record=>record.mode==='science'&&record.status==='Disagrees').length);
 console.log('PASS: all current verdicts, full pagination, topic filters, deterministic daily selection, exact detail fields, missing IDs, local choices/saves, backup merge and four tabs.');

@@ -2,7 +2,7 @@
 export function debateVerdict(record) {
  const labels = record.mode === 'science' || record.mode === 'history'
   ? {Agrees:'Evidence agrees', Disagrees:'Evidence disagrees', Context:'Not settled'}
-  : {'Textual conflict':'Real conflict', Context:'Open question'};
+  : {'Textual conflict':'Wording differs', Context:'Open question'};
  return labels[record.status] || record.status;
 }
 export function debateCard(record) {

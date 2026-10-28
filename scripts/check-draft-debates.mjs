@@ -51,9 +51,9 @@ assert.ok(!html.includes('<img'));assert.ok(!html.includes('<script'));assert.ok
 if(process.argv.includes('--production')){
  for(const file of ['dist/server/index.js',...fs.readdirSync('www/assets').filter(name=>/\.js$/.test(name)).map(name=>'www/assets/'+name)]){
   const text=fs.readFileSync(file,'utf8');
-  for(const marker of ['headline-01','Preview draft debates','DRAFT PREVIEW','phase3-draft-notice'])assert.ok(!text.includes(marker),`${file}: leaked ${marker}`);
+  for(const marker of ['headline-01','Preview draft Big Questions','DRAFT PREVIEW','phase3-draft-notice'])assert.ok(!text.includes(marker),`${file}: leaked ${marker}`);
  }
- assert.ok(!fs.readFileSync('www/index.html','utf8').includes('Preview draft debates'));
+ assert.ok(!fs.readFileSync('www/index.html','utf8').includes('Preview draft Big Questions'));
  assert.equal(JSON.parse(fs.readFileSync('www/release.json','utf8')).draftOnly,undefined);
 }
 console.log('PASS: draft build gate, 40 source joins, exact cases, quotes, safe cards and production exclusion');
