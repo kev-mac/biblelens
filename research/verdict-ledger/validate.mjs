@@ -26,7 +26,7 @@ export function validate(records, ledger, decisions) {
     assert.equal(row.title, record.title ?? null, `Title changed: ${row.id}`);
     assert.equal(row.current_status, record.status, `Status changed: ${row.id}`);
     const allowed = ['science', 'history'].includes(row.mode) ? verdicts.slice(4, 7)
-      : row.mode === 'commandments' ? ['not a debate', ...verdicts.slice(0, 4)] : verdicts.slice(0, 4);
+      : row.mode === 'commandments' ? ['Instruction in context', ...verdicts.slice(0, 4)] : verdicts.slice(0, 4);
     assert(allowed.includes(row.proposed_verdict), `Wrong verdict for mode: ${row.id}`);
     assert.equal(typeof row.changed, 'boolean');
     assert.equal(row.changed, row.proposed_verdict !== baseline(record), `Wrong changed flag: ${row.id}`);
