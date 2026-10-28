@@ -84,7 +84,7 @@ async function observe(browser, sample, enforce = false) {
     }));
   });
   try {
-    const response = await page.goto(server.url, {waitUntil: 'load', timeout: 60000});
+    const response = await page.goto(server.url + '/#read/0/1', {waitUntil: 'load', timeout: 60000});
     assert.equal(response.status(), 200);
     await page.waitForFunction(() =>
       !document.documentElement.classList.contains('bl-starting') &&

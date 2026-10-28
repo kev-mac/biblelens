@@ -1,8 +1,36 @@
 'use strict';
 (() => {
  const el=id=>document.getElementById(id);
+ let pendingFocus=null,focusObserver=null,focusFrame=0;
+ function clearPageFocus(){pendingFocus=null;focusObserver?.disconnect();focusObserver=null;cancelAnimationFrame(focusFrame);focusFrame=0;}
+ function schedulePageFocus(){
+  if(!pendingFocus||focusFrame)return;
+  focusFrame=requestAnimationFrame(()=>{
+   focusFrame=0;
+   if(!pendingFocus)return;
+   if(pendingFocus.hash!==location.hash||navigationRestore){clearPageFocus();return;}
+   if(el('main').hasAttribute('aria-busy'))return;
+   const heading=el(view+'-view')?.querySelector('h1');
+   if(!heading||heading.closest('[hidden]'))return;
+   // A cold feature may insert its heading after the first route frame.
+   // Preserve a deliberate focus change made while that feature was loading.
+   const active=document.activeElement;
+   if(active!==document.body&&active!==pendingFocus.opener){clearPageFocus();return;}
+   clearPageFocus();heading.tabIndex=-1;heading.focus({preventScroll:true});
+  });
+ }
+ function requestPageFocus(hash){
+  pendingFocus={hash,opener:document.activeElement};
+  focusObserver=new MutationObserver(schedulePageFocus);
+  focusObserver.observe(el('main'),{childList:true,subtree:true,attributes:true,attributeFilter:['hidden','aria-busy']});
+  schedulePageFocus();
+ }
+ window.addEventListener('biblelens:featuresready',schedulePageFocus);
+ window.addEventListener('viewchange',schedulePageFocus);
+ window.addEventListener('popstate',clearPageFocus);
+ window.addEventListener('hashchange',()=>{if(pendingFocus&&pendingFocus.hash!==location.hash)clearPageFocus();});
  const routeTo = hash => {
- const navigate=()=>{const oldURL=location.href;navigateHash(hash);window.dispatchEvent(new HashChangeEvent('hashchange',{oldURL,newURL:location.href}));if(!/^#(?:read|compare|investigation|study|characters)\//.test(hash)&&!hash.startsWith('#compare')&&!(hash.startsWith('#notebook?')&&new URLSearchParams(hash.split('?')[1]).has('note'))){window.scrollTo({top:0,behavior:'instant'});requestAnimationFrame(()=>{const heading=el(view+'-view')?.querySelector('h1');heading?.focus({preventScroll:true});});}};
+ const navigate=()=>{clearPageFocus();const oldURL=location.href;navigateHash(hash);window.dispatchEvent(new HashChangeEvent('hashchange',{oldURL,newURL:location.href}));const destination=location.hash;if(!/^#(?:read|compare|investigation|study|characters|people)\//.test(destination)&&!destination.startsWith('#compare')&&!(destination.startsWith('#notebook?')&&new URLSearchParams(destination.split('?')[1]).has('note'))){window.scrollTo({top:0,behavior:'instant'});requestPageFocus(destination);}};
  if(document.startViewTransition&&!matchMedia('(prefers-reduced-motion: reduce)').matches){window.bibleLensTransition?.skipTransition();window.bibleLensTransition=document.startViewTransition(navigate);}else navigate();
  };
  document.body.classList.add('lens-app');

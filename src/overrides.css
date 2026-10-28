@@ -2005,4 +2005,21 @@ html body.lens-app :is(.phase2-deeper,.phase2-rail-heading,.lens-result-group) {
 @layer overrides.priority {
  #route-loading { min-height:100vh; }
  html body.lens-app #chapter-text > .chapter-loading { margin-top:0; }
+
+/* New image slots reserve their crop before any reviewed asset is selected. */
+html body.lens-app .bl-media-slot {margin:0;min-width:0;}
+html body.lens-app .bl-media-frame {position:relative;overflow:hidden;aspect-ratio:16/9;border:1px solid var(--lens-rule);border-radius:12px;background:var(--lens-control-bg);}
+html body.lens-app .bl-media-square .bl-media-frame {aspect-ratio:1;}
+html body.lens-app .bl-media-portrait .bl-media-frame {aspect-ratio:3/4;}
+html body.lens-app .bl-media-frame img {display:block;width:100%;height:100%;object-fit:cover;}
+html body.lens-app .bl-media-placeholder {position:absolute;inset:0;display:grid;place-content:center;margin:0;color:var(--lens-muted);font-size:14px;}
+html body.lens-app .bl-media-label {position:absolute;top:10px;left:10px;background:var(--lens-surface);color:var(--lens-ink);border:1px solid var(--lens-rule);padding:4px 8px;border-radius:6px;font-size:12px;}
+html body.lens-app .bl-media-slot figcaption {font-size:13px;line-height:1.5;color:var(--lens-muted);overflow-wrap:anywhere;}
+html body.lens-app .bl-media-slot figcaption p {margin:8px 0;}
+
+/* The root already reserves the sticky masthead in scroll-padding-top. */
+html body.lens-app .phase2-rail-heading {scroll-margin-top:0;}
+
+/* Reader dock measurements must not erase the app-wide masthead clearance. */
+html:has(body.lens-app) {scroll-padding-top:calc(var(--lens-nav-height,64px) + env(safe-area-inset-top,0px) + 24px);}
 }

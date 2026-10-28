@@ -17,9 +17,11 @@ export function debatePage(records, params) {
  const counts=Object.fromEntries([...new Set(rows.map(record=>record.status))].map(value=>[value,rows.filter(record=>record.status===value).length]));
  if(status!=='all')rows=rows.filter(record=>record.status===status);
  const day=params.get('day');
- if(day&&/^\d{4}-\d{2}-\d{2}$/.test(day)){
+ if(day){
+  const stamp=Date.parse(day+'T00:00:00Z');
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(day)||!Number.isFinite(stamp)||new Date(stamp).toISOString().slice(0,10)!==day)return null;
   const pool=rows.filter(record=>record.title&&record.title.length<=100&&record.title.split(/\s+/).length<=15&&record.sides?.some(side=>side.label==='A')&&record.sides.some(side=>side.label==='B'));
-  if(pool.length)rows=[pool[Math.floor(Date.parse(day+'T00:00:00Z')/86400000)%pool.length]];
+  if(pool.length){const index=Math.floor(stamp/86400000);rows=[pool[((index%pool.length)+pool.length)%pool.length]];}
  }
  const ids=params.getAll('id');if(ids.length)rows=rows.filter(record=>ids.includes(record.id));
  const page=Math.max(0,Math.min(Math.floor(Number(params.get('page'))||0),Math.max(0,Math.ceil(rows.length/24)-1)));

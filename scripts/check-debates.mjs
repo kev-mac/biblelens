@@ -17,6 +17,8 @@ assert.equal(debatePage(records,new URLSearchParams({filter:'V'})).total,records
 assert.equal(debatePage(records,new URLSearchParams({mode:'invented'})),null);
 assert.equal(debatePage(records,new URLSearchParams({status:'Can be reconciled'})).total,0,'No inferred verdicts');
 const day=new URLSearchParams({day:'2026-10-26'});assert.deepEqual(debatePage(records,day),debatePage(records,day));assert.equal(debatePage(records,day).total,1);
+for(const value of ['2026-99-99','2026-02-30','not-a-date'])assert.equal(debatePage(records,new URLSearchParams({day:value})),null,'Reject invalid daily dates');
+assert.equal(debatePage(records,new URLSearchParams({day:'1969-12-31'})).records.length,1,'Dates before the epoch still choose a valid record');
 assert.equal(JSON.stringify(records),original,'Rendering and filtering never alter records');
 const feed=exploreFeed();assert.equal(Object.keys(feed).length,9);for(const items of Object.values(feed)){assert(items.length>0);for(const item of items)assert(item.url||item.placeId);}
 for(const key of ['text','science','history','translation'])for(const item of feed[key])assert(records.some(record=>record.id===item.id));
@@ -38,6 +40,7 @@ const html=fs.readFileSync('src/index.html','utf8');assert.deepEqual([...html.ma
 const worker=(await import('../dist/server/index.js')).default;
 const get=path=>worker.fetch(new Request('https://test.invalid'+path),{},{});
 assert.equal((await get('/api/debate?id=missing')).status,404);
+assert.equal((await get('/api/debates?day=2026-99-99')).status,400,'Invalid daily date returns a client error');
 const sample=records.find(record=>record.sides?.length>2)||records.find(record=>record.sides?.length);
 const detail=await (await get('/api/debate?id='+sample.id)).json();assert.deepEqual(detail,{...sample,verdict:debateVerdict(sample)},'Every exact field and all side quotes survive packaging');
 assert.equal((await (await get('/api/debates?mode=science&status=Disagrees')).json()).total,records.filter(record=>record.mode==='science'&&record.status==='Disagrees').length);
