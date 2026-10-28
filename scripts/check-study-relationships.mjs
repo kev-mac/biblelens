@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import {validateRelatedPassages} from './study-relationships.mjs';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 const records=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
 const chapters=JSON.parse(fs.readFileSync('data/chapters.json','utf8'));
 validateRelatedPassages(records,chapters);

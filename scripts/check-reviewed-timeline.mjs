@@ -40,7 +40,7 @@ for (const {id,ref,quote} of quotes) {
 }
 
 // Check the actual Worker assets used by web and by build-mobile.mjs.
-const worker = (await import('../dist/server/index.js')).default;
+const worker = (await import('./built-worker.mjs')).default;
 for (const [path,type,content] of [
  ['/reviewed-timeline.js','javascript','history-theudas-revolt-order'],
  ['/components.css','css','grid-template-rows:0fr'],

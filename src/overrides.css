@@ -2023,3 +2023,18 @@ html body.lens-app .phase2-rail-heading {scroll-margin-top:0;}
 /* Reader dock measurements must not erase the app-wide masthead clearance. */
 html:has(body.lens-app) {scroll-padding-top:calc(var(--lens-nav-height,64px) + env(safe-area-inset-top,0px) + 24px);}
 }
+.fetch-retry-status {
+  position: fixed;
+  bottom: calc(80px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10001;
+  padding: 6px 14px;
+  border-radius: 16px;
+  background: var(--paper, #fbf9f3);
+  color: var(--ink, #142e39);
+  font: inherit;
+  font-size: 13px;
+  pointer-events: none;
+}
+.fetch-retry-status[hidden] { display: none; }

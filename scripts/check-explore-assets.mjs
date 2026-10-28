@@ -11,7 +11,7 @@ const explore = fs.readFileSync('src/atlas-explore.js', 'utf8');
 const used = [...explore.matchAll(/\bimage:'([a-z]+)'/g)].map(match => match[1]);
 assert(used.length>=9,'All discovery rails use existing artwork');assert(used.every(name=>names.includes(name)),'No new image asset is introduced');assert(explore.includes('Imagined art'),'Imagined art is labeled');
 
-const worker = (await import('../dist/server/index.js')).default;
+const worker = (await import('./built-worker.mjs')).default;
 const get = async pathname => {
   const response = await worker.fetch(new Request(new URL(pathname, 'https://biblelens.test')), {}, {});
   assert.equal(response.status, 200, pathname);

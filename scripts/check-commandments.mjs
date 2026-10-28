@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import {validateCommandments,redLetters} from './commandments.mjs';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 const read=name=>JSON.parse(fs.readFileSync('data/'+name+'.json','utf8'));
 const records=read('evidence'),books=read('books'),chapters=read('chapters'),red=redLetters(),commands=records.filter(r=>r.mode==='commandments');
 assert.equal(validateCommandments(records,books,chapters,red),commands.length);

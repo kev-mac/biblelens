@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
 import {chromium,webkit} from 'playwright';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 import {syncFixture} from './security-test-fixture.mjs';
 
 // Run after both builds. The servers and SQLite accounts exist only for this test.

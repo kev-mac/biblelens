@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import zlib from 'node:zlib';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 
 const read=file=>JSON.parse(fs.readFileSync(file,'utf8'));
 const records=read('research/notes/genesis-academic-additions-2026-10-17-records.json');

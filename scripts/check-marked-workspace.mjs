@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 const request=path=>worker.fetch(new Request('https://example.com'+path),{},{});
 for(const book of [0,1,4,39,64]){
  const response=await request('/api/marked-comparisons?book='+book);assert.equal(response.status,200);const data=await response.json();assert.equal(data.book,book);

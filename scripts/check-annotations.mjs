@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import worker from '../dist/server/index.js';
+import worker from './built-worker.mjs';
 
 const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 const evidence=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
