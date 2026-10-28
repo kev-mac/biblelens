@@ -1,0 +1,184 @@
+[
+  {
+    "id": "E01",
+    "original": "A digital named edition is not proof that every manuscript agrees; other Hebrew manuscripts were not examined.",
+    "draft": "One named digital edition does not prove that all ancient copies agree. Other Hebrew copies were not checked.",
+    "meaningCheck": "Retains the limit to one digital edition and the absence of checks of other Hebrew copies.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E02",
+    "original": "English in square brackets is the researcher’s plain rendering, not a KJV quotation and not a lexicon entry.",
+    "draft": "English in square brackets gives the researcher’s plain translation. It is not a KJV quote or a dictionary entry.",
+    "meaningCheck": "Preserves who supplied the English and both limits on its use.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E03",
+    "original": "The Hebrew quoted is the Westminster Leningrad Codex digital text.",
+    "draft": "The Hebrew quotes use the digital edition named in Sources.",
+    "meaningCheck": "The full edition name remains in Sources and in sourceEditionNames; no claim about all Hebrew copies is added.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E04",
+    "original": "It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original.",
+    "draft": "It is not a guide to readings across ancient copies. It does not show that all Greek copies agree or which wording came first.",
+    "meaningCheck": "Retains the lack of a comparison of copies, the agreement limit, and the original-wording limit.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E05",
+    "original": "The Greek New Testament wording is Tischendorf’s eighth edition as served by bolls.life (TISCH), compared with the Textus Receptus text served there (TR); neither is a critical apparatus.",
+    "draft": "The New Testament comparison uses two Greek editions served by bolls.life. Sources names both editions. Neither is a guide to readings across ancient copies.",
+    "meaningCheck": "Both precise edition names and bolls.life remain in sourceEditionNames; neither edition becomes a claim about every copy.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E06",
+    "original": "The Greek quoted is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament.",
+    "draft": "The Greek quotes use a printed edition of the old Greek translation of the Old Testament. Sources names that edition.",
+    "meaningCheck": "Retains a printed edition within an older translation tradition, rather than treating it as all Greek copies.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E07",
+    "original": "This record does not say which reading is original, and two digital editions are not a survey of manuscripts.",
+    "draft": "This record does not say which wording came first. Comparing two digital editions is not a survey of ancient copies.",
+    "meaningCheck": "Retains the uncertainty about original wording and the limited basis of two digital editions.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E08",
+    "original": "The difference is between Greek editions: the Textus Receptus text served agrees with the KJV and Tischendorf’s text does not.",
+    "draft": "The difference is between Greek editions. Greek edition 2 agrees with the KJV. Greek edition 1 does not.",
+    "meaningCheck": "The draft Sources key maps edition 1 to Tischendorf and edition 2 to Textus Receptus; check that UI preserves this key.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E09",
+    "original": "The Greek is Brenton’s printed edition of the Septuagint, an ancient Greek translation tradition of the Old Testament.",
+    "draft": "The Greek uses a printed edition of the old Greek translation of the Old Testament. Sources names that edition.",
+    "meaningCheck": "Retains the printed-edition and translation-tradition limits, with the full name kept in Sources.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E10",
+    "original": "The English quoted from Brenton’s own page is given only to show how that edition renders the Greek it prints; it is not a lexicon entry.",
+    "draft": "The English on that edition’s page shows only how it translates the Greek printed there. It is not a dictionary entry.",
+    "meaningCheck": "Keeps the same edition as the subject and limits the English to its own translation.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E11",
+    "original": "It is not a critical apparatus and does not show that all Greek witnesses agree or which reading is original, and the record does not claim the Greek is a mistranslation of the Hebrew.",
+    "draft": "It is not a guide to readings across ancient copies. It does not show that all Greek copies agree or which wording came first. The record does not claim the Greek mistranslates the Hebrew.",
+    "meaningCheck": "Preserves all three source limits and the separate refusal to call the Greek a Hebrew mistranslation.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E12",
+    "original": "The psalm is verse; the comparison is of what the texts print, not of what the singer meant beyond the words quoted.",
+    "draft": "The psalm is poetry. The comparison concerns the printed words. It does not claim what the singer meant beyond the words quoted.",
+    "meaningCheck": "Retains the literary form and the limit on claims about the singer’s intent.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E13",
+    "original": "The record does not say what the Hebrew words quoted mean, and does not say which Greek word corresponds to which Hebrew word.",
+    "draft": "The record does not say what the quoted Hebrew words mean. It does not match individual Greek words to Hebrew words.",
+    "meaningCheck": "Retains both limits: no Hebrew meaning claim and no word-by-word alignment.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E14",
+    "original": "No tag is proposed: the record compares the wording of the passages and does not rest on a difference between the KJV and the Greek.",
+    "draft": "No tag is proposed. The record compares the passages’ wording. It does not rely on a difference between the KJV and the Greek.",
+    "meaningCheck": "Keeps the absence of a proposed tag and the basis of the comparison.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E15",
+    "original": "Where Greek is quoted, the Textus Receptus text served carries the same words.",
+    "draft": "Where Greek is quoted, Greek edition 2 carries the same words.",
+    "meaningCheck": "Greek edition 2 is explicitly mapped to the served Textus Receptus text in the draft Sources key.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E16",
+    "original": "The book is a history written in prose; the comparison is of what the texts print, not of why the writer worded it so.",
+    "draft": "The book presents history in prose, or ordinary writing. This comparison concerns the printed words, not why the writer chose them.",
+    "meaningCheck": "Keeps the literary description and does not turn it into proof that every event happened.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E17",
+    "original": "The book is prophecy in verse and sermon; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted.",
+    "draft": "The book presents prophecy through poetry and sermons. The comparison concerns the printed words. It does not claim what the prophet meant beyond the words quoted.",
+    "meaningCheck": "Preserves both literary forms and the limit on inferred prophetic meaning.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E18",
+    "original": "The book is prophecy in verse; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted.",
+    "draft": "The book presents prophecy through poetry. The comparison concerns the printed words. It does not claim what the prophet meant beyond the words quoted.",
+    "meaningCheck": "Preserves poetry and the limit on inferred prophetic meaning.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E19",
+    "original": "It does not rule on whether or how the commandment applies today, and it adds no finding about the passage.",
+    "draft": "It does not decide whether or how the commandment applies today. It adds no finding about the passage.",
+    "meaningCheck": "Keeps both the modern-application limit and the absence of an added finding.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E20",
+    "original": "The book is prophecy and vision; the comparison is of what the texts print, not of what the prophet meant beyond the words quoted.",
+    "draft": "The book presents prophecy and visions. The comparison concerns the printed words. It does not claim what the prophet meant beyond the words quoted.",
+    "meaningCheck": "Retains both literary forms and the stated limit on meaning.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E21",
+    "original": "The book is verse and aphorism; the comparison is of what the texts print, not of what the writer meant beyond the words quoted.",
+    "draft": "The book contains poetry and short sayings. The comparison concerns the printed words. It does not claim what the writer meant beyond the words quoted.",
+    "meaningCheck": "Explains aphorisms as short sayings without expanding what the writer meant.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E22",
+    "original": "A digital named edition is not proof that every manuscript agrees, and neither edition settles which reading is earlier.",
+    "draft": "One named digital edition does not prove that all ancient copies agree. Neither edition settles which wording came earlier.",
+    "meaningCheck": "Keeps both the agreement and earlier-wording limits.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E23",
+    "original": "English glosses in brackets are the researcher’s plain renderings, not lexicon entries.",
+    "draft": "English in brackets gives the researcher’s plain translations, not dictionary entries.",
+    "meaningCheck": "Preserves the researcher attribution and distinction from a dictionary.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E24",
+    "original": "Hebrew quoted is the Westminster Leningrad Codex digital text.",
+    "draft": "The Hebrew quotes use the digital edition named in Sources.",
+    "meaningCheck": "Full edition identity remains in Sources and sourceEditionNames.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E25",
+    "original": "It does not show which wording is original.",
+    "draft": "It does not show which wording came first.",
+    "meaningCheck": "Keeps the limit on identifying original wording; no reading is chosen.",
+    "reviewStatus": "draft, unverified"
+  },
+  {
+    "id": "E26",
+    "original": "The record does not say which reading is original.",
+    "draft": "The record does not say which wording came first.",
+    "meaningCheck": "Preserves the absence of an original-wording judgment.",
+    "reviewStatus": "draft, unverified"
+  }
+]

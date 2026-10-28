@@ -77,6 +77,23 @@ export function collections(directory = root) {
   ];
 }
 
+// Draft overlays live outside application data. This mode never edits accepted text.
+export function draftCollections(directory = root) {
+  const read = name => JSON.parse(fs.readFileSync(path.join(directory, 'docs/b1-readability', name), 'utf8'));
+  const lines = values => values.flatMap(value => value.split(/\r?\n/).filter(line => line.trim()));
+  const evidence = read('evidence.json');
+  const people = read('people.json');
+  const stories = read('stories.json');
+  for (const row of [...evidence, ...people, ...stories]) {
+    if (row.reviewStatus !== 'draft, unverified') throw new Error(`Draft status missing: ${row.id}`);
+  }
+  return [
+    { name: 'Evidence drafts', lines: lines(evidence.flatMap(row => Object.values(row.draft))) },
+    { name: 'Stories drafts', lines: lines(stories.map(row => row.draft)) },
+    { name: 'People drafts', lines: lines(people.map(row => row.draft)) },
+  ];
+}
+
 export function report(groups) {
   let failed = false;
   console.log('| Collection | Lines | Average FK grade | Over length limits | Unexplained jargon lines |');
@@ -103,7 +120,7 @@ export function report(groups) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
-  const failed = report(collections());
+  const failed = report(process.argv.includes('--drafts') ? draftCollections() : collections());
   const strict = process.argv.includes('--strict');
   console.log(`\n${strict ? 'Strict' : 'Report-only'} mode: ${failed ? 'items need review' : 'within checked limits'}.`);
   if (strict && failed) process.exitCode = 1;
