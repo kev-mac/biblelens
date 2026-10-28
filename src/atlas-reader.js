@@ -12,7 +12,7 @@
     const help = document.createElement('p');
     help.id = 'atlas-reader-help';
     help.className = 'atlas-reader-help';
-    help.textContent = 'Tap a verse number for actions; tap a boxed count for evidence.';
+    help.textContent = 'Tap verse text or its number for actions. Tap a count for evidence.';
     readingBar.after(help);
   }
 

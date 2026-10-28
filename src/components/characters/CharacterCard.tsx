@@ -51,6 +51,7 @@ export function CharacterCard(profile: CharacterProfile): HTMLElement {
   card.id=`character-card-${profile.id}`;card.tabIndex=-1;
   const heading=element('h2','character-name',profile.name);
   const header=element('div','character-card-header');header.append(heading);
+  const open=element('a','ux-person-open','→');open.href='#characters/'+encodeURIComponent(profile.id);open.setAttribute('aria-label','Open '+profile.name);header.append(open);
   if(profile.identity_context)header.append(element('p','character-identity-context',profile.identity_context));
   if(profile.aliases?.length)header.append(element('p','character-aliases',profile.aliases.join(' · ')));
   card.append(header,element('p','character-summary',profile.summary||'A written biography is not yet available for this person.'),ProfileSections(profile));

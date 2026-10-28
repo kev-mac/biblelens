@@ -15,7 +15,7 @@ for(const [engine,browserType] of [['chromium',chromium],['webkit',webkit]]){
   // A cold legacy collection bookmark keeps every query parameter.
   await page.goto(base+'/#debates?mode=science&status=Context');await page.waitForSelector('#debate-results a');
   assert.equal(await page.evaluate(()=>location.hash),'#questions?mode=science&status=Context');
-  assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Explore','Read','Big Questions','Notebook']);
+  assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Read','Explore','Questions','Saved']);
   assert.equal(await page.evaluate(()=>BibleLensDebateStore.read('legacy-science-1').stance),'B');
   await page.evaluate(()=>BibleLensWorkspace.navigate('#read/0/1'));await page.waitForSelector('#verse-1');
   await page.goBack();await page.waitForSelector('#debate-results a');assert.equal(await page.evaluate(()=>location.hash),'#questions?mode=science&status=Context');

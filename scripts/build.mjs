@@ -51,6 +51,15 @@ for(const name of ['beginnings-landscape.svg','beginnings-landscape.provenance.j
 // when requested. The same bytes are written directly into the native bundle.
 for(const name of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+\.webp$/.test(name)))assets['/assets/'+name]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src/assets/'+name).toString('base64')};
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
+const uxRead=name=>JSON.parse(releaseContent(name));
+const uxEvidence=uxRead('data/evidence.json');
+assets['/collection-counts.json']={type:'application/json; charset=utf-8',body:JSON.stringify({
+ people:uxRead('data/reference/people.json').length,places:uxRead('data/reference/places.json').length,
+ stories:uxRead('data/stories.json').reduce((n,g)=>n+g.stories.length,0),
+ commandments:uxRead('data/commandments-catalog.json').records.length,
+ science:uxEvidence.filter(r=>r.mode==='science').length,history:uxEvidence.filter(r=>r.mode==='history').length,
+ translation:uxEvidence.filter(r=>(r.tags||[r.tag]).includes('T')).length
+})};
 assets['/explore-feed.json']={type:'application/json; charset=utf-8',body:JSON.stringify(exploreFeed())};
 const referenceBundle=await build({entryPoints:['src/reference-cache.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/reference-cache.js']={type:'application/javascript; charset=utf-8',body:referenceBundle.outputFiles[0].text};

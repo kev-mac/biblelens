@@ -66,14 +66,14 @@ try{
    assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-settings');
    // Real transitions run when allowed; the reduce branch never calls the API.
    await page.evaluate(()=>{globalThis.__transitions=0;const start=document.startViewTransition?.bind(document);if(start)document.startViewTransition=(...args)=>{__transitions++;return start(...args);};});
-   await page.evaluate(()=>BibleLensWorkspace.navigate('#discover'));await page.waitForSelector('.phase2-hero');
+   await page.evaluate(()=>BibleLensWorkspace.navigate('#discover'));await page.waitForSelector('.ux-topic-row');
    assert.equal(await page.evaluate(()=>__transitions),0);
    await page.emulateMedia({reducedMotion:'no-preference'});
    await page.evaluate(()=>BibleLensWorkspace.navigate('#read/0/1'));await page.waitForSelector('#verse-31');
    if(await page.evaluate(()=>!!document.startViewTransition)){
     assert((await page.evaluate(()=>__transitions))>0);
     const before=await page.evaluate(()=>__transitions);
-    await page.goBack();await page.waitForSelector('.phase2-hero');
+    await page.goBack();await page.waitForSelector('.ux-topic-row');
     assert((await page.evaluate(()=>__transitions))>before,'History uses the same route transition');
    }
    assert.deepEqual(errors,[]);await context.close();

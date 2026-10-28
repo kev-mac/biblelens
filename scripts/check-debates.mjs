@@ -38,7 +38,7 @@ store.restore({'legacy-science-1':{saved:false,stance:'A'},restored:{saved:true,
 assert.equal(store.read('legacy-science-1').stance,'B','Import preserves a current choice');assert.equal(store.read('legacy-science-1').saved,true);assert.equal(store.read('restored').stance,'Not sure');
 const sync=fs.readFileSync('src/sync-core.js','utf8');assert(!sync.includes('deviceDebates'),'Choices stay outside the cloud schema');
 const app=fs.readFileSync('src/app.js','utf8');assert(app.includes('deviceDebates:window.BibleLensDebateStore?.all()'));assert(app.includes('restore(backup.deviceDebates)'));
-const html=fs.readFileSync('src/index.html','utf8');assert.deepEqual([...html.matchAll(/data-lens-view="([^"]+)"/g)].map(match=>match[1]),['explore','read','debates','notebook']);
+const html=fs.readFileSync('src/index.html','utf8');assert.deepEqual([...html.matchAll(/data-lens-view="([^"]+)"/g)].map(match=>match[1]),['read','explore','debates','notebook']);
 const worker=(await import('../dist/server/index.js')).default;
 const get=path=>worker.fetch(new Request('https://test.invalid'+path),{},{});
 assert.equal((await get('/api/debate?id=missing')).status,404);

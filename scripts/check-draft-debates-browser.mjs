@@ -34,14 +34,14 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
    await shot('detail');
    await page.locator('.phase3-verdict-box').scrollIntoViewIfNeeded();await shot('verdict');
    await page.locator('.phase3-case').last().scrollIntoViewIfNeeded();await shot('cases');
-   await page.locator('[data-draft-stance="B"]').click();assert.equal(await page.locator('[data-draft-stance="B"]').getAttribute('aria-pressed'),'true');
+   assert.equal(await page.locator('[data-draft-stance]').count(),0);
    await page.locator('[data-draft-save]').click();assert.equal(await page.locator('[data-draft-save]').getAttribute('aria-pressed'),'true');
    await page.locator('[data-draft-sources]').click();await page.waitForSelector('.phase3-sheet[open]');await shot('sources');
    assert(await page.locator('.phase3-sheet a[href^="https://"]').count()>0);
    await page.keyboard.press('Escape');assert.equal(await page.locator('.phase3-sheet').getAttribute('open'),null);
    assert.equal(await page.evaluate(()=>document.activeElement.hasAttribute('data-draft-sources')),true,'Focus returns to Sources');
    assert.deepEqual(await page.evaluate(()=>__phase3Enforced),[],'No enforced CSP violations before reload');
-   await page.reload();await page.waitForSelector('.phase3-verdict-box');assert.equal(await page.locator('[data-draft-stance="B"]').getAttribute('aria-pressed'),'false');assert.equal(await page.locator('[data-draft-save]').getAttribute('aria-pressed'),'false');
+   await page.reload();await page.waitForSelector('.phase3-verdict-box');assert.equal(await page.locator('[data-draft-stance]').count(),0);assert.equal(await page.locator('[data-draft-save]').getAttribute('aria-pressed'),'false');
    for(const id of ['headline-17','headline-25']){
     await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),'#debate/'+id+'?draft=1');await page.waitForSelector('.phase3-verdict-box');
     assert.equal(await page.locator('.phase3-case').count(),2);
@@ -49,11 +49,11 @@ for(const [engine,type] of [['chromium',chromium],['webkit',webkit]]){
    }
    await page.evaluate(()=>BibleLensWorkspace.navigate('#questions?draft=1&selection=reserves'));await page.waitForSelector('.phase3-card');assert.equal(await page.locator('.phase3-card').count(),10);
    await page.evaluate(()=>BibleLensWorkspace.navigate('#debate/missing?draft=1'));await page.waitForSelector('text=Draft not found');
-   await page.evaluate(()=>BibleLensWorkspace.navigate('#questions'));await page.waitForSelector('#debate-results .phase2-debate-card');assert(await page.locator('#debates-view .phase3-preview-link').isVisible());
+   await page.evaluate(()=>BibleLensWorkspace.navigate('#questions'));await page.waitForSelector('.accepted-questions .phase2-debate-card');
    assert.deepEqual(await page.evaluate(()=>__phase3Enforced),[],'No enforced CSP violations after reload');
    results.push({engine,...viewport,theme,reducedMotion:true,status:'pass'});await context.close();
   }
  }finally{await browser.close();}
 }
 fs.writeFileSync(output+'/phase3-browser-results.json',JSON.stringify({results,errors},null,2)+'\n');assert.deepEqual(errors,[]);
-console.log('PASS: Phase 3 draft routes, cards, cases, sources, private choices; Chromium/WebKit, both phone sizes and themes');
+console.log('PASS: Phase 3 draft routes, cards, cases, sources, saves and removed choices; Chromium/WebKit, both phone sizes and themes');

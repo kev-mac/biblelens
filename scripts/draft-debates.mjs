@@ -76,10 +76,10 @@ export function packageDraftDebates(assets, env = process.env) {
   const source = fs.readFileSync('src/draft-debates.js', 'utf8').replace('/*__DRAFT_DEBATES__*/{}', () => JSON.stringify(payload));
   assets['/debates.js'].body = source + '\n' + assets['/debates.js'].body;
   assets['/overrides.css'].body += '\n' + fs.readFileSync('src/draft-debates.css', 'utf8');
-  // A small discovery link is compiled only into the explicit draft preview.
-  const target = '<div class="phase2-tools">';
-  if (!assets['/atlas-explore.js'].body.includes(target)) throw Error('Missing Explore draft entry point');
-  assets['/atlas-explore.js'].body = assets['/atlas-explore.js'].body.replace(target, target + '<a class="phase3-preview-link" href="#questions?draft=1">Preview draft Big Questions</a><a class="phase3-preview-link" href="/draft-review.html">Review content drafts</a>');
+  // Draft entry points belong to Questions; Explore retains its seven tiles.
+  const target = 'host.innerHTML=\'<h1 tabindex="-1">Big Questions</h1>';
+  if (!assets['/debates.js'].body.includes(target)) throw Error('Missing Questions draft entry point');
+  assets['/debates.js'].body = assets['/debates.js'].body.replace(target, target + '<a class="phase3-preview-link lens-button" href="#questions?draft=1">Preview draft Big Questions</a><a class="phase3-preview-link lens-button" href="/draft-review.html">Review content drafts</a>');
   console.log('DRAFT PREVIEW: 40 headlines; proposed evidence labels await Kevin. Not a production build.');
   return true;
 }

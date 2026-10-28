@@ -30,47 +30,79 @@
  window.addEventListener('popstate',clearPageFocus);
  window.addEventListener('hashchange',()=>{if(pendingFocus&&pendingFocus.hash!==location.hash)clearPageFocus();});
  const routeTo = hash => {
+ if(hash.startsWith('#search')&&view!=='search')searchParent=primary();
  const navigate=()=>{clearPageFocus();const oldURL=location.href;navigateHash(hash);window.dispatchEvent(new HashChangeEvent('hashchange',{oldURL,newURL:location.href}));const destination=location.hash;if(!/^#(?:read|compare|investigation|study|characters|people)\//.test(destination)&&!destination.startsWith('#compare')&&!(destination.startsWith('#notebook?')&&new URLSearchParams(destination.split('?')[1]).has('note'))){window.scrollTo({top:0,behavior:'instant'});requestPageFocus(destination);}};
  // setView owns route transitions, including browser history and cold routes.
  navigate();
  };
  document.body.classList.add('lens-app');
+ document.addEventListener('keydown',event=>{if(event.key==='Tab')document.body.classList.add('keyboard-navigation');});
+ document.addEventListener('pointerdown',()=>document.body.classList.remove('keyboard-navigation'));
  const masthead = el('lensMasthead');
  el('reader-settings').addEventListener('close', () => el('lens-settings').focus({preventScroll:true}));
  const main = el('main');
  const contextNav=document.createElement('nav');contextNav.className='lens-context';contextNav.setAttribute('aria-label','Breadcrumb');contextNav.hidden=true;main.prepend(contextNav);
- const contextPages={stories:'Stories',characters:'People',places:'Places',evidence:'Evidence',timeline:'Timeline',commandments:'Commandments',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the text',bookmarks:'Bookmarks'};
- function updateContext(){
-  const label=contextPages[view];contextNav.hidden=!label;if(!label)return;
-  const parent=view==='chat'?['search','Search']:view==='bookmarks'?['notebook','Notebook']:['discover','Explore'];
-  contextNav.innerHTML=`<a href="#${parent[0]}"><span aria-hidden="true">←</span> ${parent[1]}</a><span aria-hidden="true">/</span><span aria-current="page">${label}</span>`;
+ let searchParent='explore';
+ const labels={read:'Read',explore:'Explore',debates:'Big Questions',debate:'Question',notebook:'Saved',search:'Search',stories:'Stories',characters:'People',places:'Places',evidence:'Text Studies',timeline:'History & Timeline',commandments:'Commandments',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the Text'};
+ const roots={read:'#read',explore:'#discover',debates:'#questions',notebook:'#notebook'};
+ function primary(){
+  if(view==='search'||view==='chat')return searchParent;
+  if(view==='debates')return location.hash==='#questions'||location.hash.includes('draft=1')?'debates':'explore';
+  if(view==='debate')return /^#debate\/headline-/.test(location.hash)?'debates':'explore';
+  if(['read','notebook'].includes(view))return view;
+  return 'explore';
  }
- contextNav.addEventListener('click',event=>{const link=event.target.closest('a');if(!link||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();routeTo(link.hash);});
+ function back(fallback){if(history.state?.biblelens?.from&&history.state.biblelens.from!==location.hash)history.back();else routeTo(fallback);}
+ function updateContext(){
+  const active=primary();
+  for(const link of masthead.querySelectorAll('[data-lens-view]')){if(link.dataset.lensView===active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}
+  const host=el(view+'-view');if(!host)return;
+  const pageHeading=host.querySelector('h1');
+  if(view==='read'&&pageHeading){const readerTitle=/^#(?:compare|investigation)/.test(location.hash)?'Compare Passages':'Read';if(pageHeading.textContent!==readerTitle)pageHeading.textContent=readerTitle;}
+  let title=pageHeading?.textContent.trim()||labels[view]||'BibleLens';
+  if(/^#(?:compare|investigation)/.test(location.hash))title='Compare Passages';
+  if(/^#stories\//.test(location.hash))title=host.querySelector('.story-card h2')?.textContent.trim()||title;
+  const top=['read','explore','notebook'].includes(view)&&!/^#(?:compare|investigation|study)/.test(location.hash)||view==='debates'&&location.hash==='#questions';
+  contextNav.hidden=top;
+  if(!top){
+   const root=active==='debates'?'Questions':labels[active],rootHash=roots[active];
+   const from=history.state?.biblelens?.from||'';
+   const params=new URLSearchParams(from.split('?')[1]||'');
+   const studyParent=from.startsWith('#questions?')?[from,params.get('mode')==='science'?'Science':params.get('mode')==='history'?'History & Timeline':params.get('filter')==='T'?'Lost in Translation':'Text Studies']:['#evidence','Text Studies'];
+   const detail=view==='debate'&&active!=='debates'?'<a href="'+esc(studyParent[0])+'">'+studyParent[1]+'</a><span aria-hidden="true">›</span>':'';
+   const html='<button type="button" data-ux-back aria-label="Back">←</button><a href="'+rootHash+'">'+root+'</a><span aria-hidden="true">›</span>'+detail+'<span aria-current="page">'+esc(title)+'</span>';
+   if(contextNav.innerHTML!==html)contextNav.innerHTML=html;
+   contextNav.dataset.fallback=rootHash;
+  }
+  document.title=title+' · BibleLens';
+ }
+ contextNav.addEventListener('click',event=>{if(event.target.closest('[data-ux-back]')){back(contextNav.dataset.fallback);return;}const link=event.target.closest('a');if(!link||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();routeTo(link.hash);});
+ document.addEventListener('click',event=>{if(event.target.closest('.ux-search'))searchParent=primary();if(event.target.closest('[data-open-settings]'))el('lens-settings').click();});
  window.addEventListener('viewchange',updateContext);
+ window.addEventListener('hashchange',()=>requestAnimationFrame(updateContext));
+ // Lazy views render their titles after viewchange. Observe only page content,
+ // excluding our breadcrumb itself, so async titles never leave stale paths.
+ const observer=new MutationObserver(records=>{if(records.some(record=>!contextNav.contains(record.target)))requestAnimationFrame(updateContext);});
+ observer.observe(main,{childList:true,subtree:true,characterData:true});
+ // Sheets are inline tasks. Keep async profile titles and reused sheets current.
+ function dialogPaths(){for(const dialog of document.querySelectorAll('dialog[open]')){
+  const title=dialog.querySelector('h1,h2,h3')?.textContent.trim()||dialog.getAttribute('aria-label')||'Details';
+  let nav=dialog.querySelector('.ux-dialog-path');
+  if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='←';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
+  const collection={characters:'People',places:'Places',stories:'Stories',commandments:'Commandments',prophecies:'Prophecies',timeline:'History & Timeline'}[view];
+  const path=[primary()==='debates'?'Questions':labels[primary()]||'Explore',collection,title].filter(Boolean).join(' › ');
+  if(nav.lastElementChild.textContent!==path)nav.lastElementChild.textContent=path;
+ }}
+ const dialogObserver=new MutationObserver(records=>{if(records.some(record=>!record.target.closest?.('.ux-dialog-path')))requestAnimationFrame(dialogPaths);});
+ dialogObserver.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['open']});
  const aboutHeading=el('method-view')?.querySelector('h1');if(aboutHeading)aboutHeading.textContent='Method & Sources';
  const footerLink=document.querySelector('body > footer .brand');if(footerLink){footerLink.textContent='Method & Sources';footerLink.setAttribute('aria-label','BibleLens Method & Sources');}
  function section(id, html) {const node = document.createElement('section'); node.id = id + '-view'; node.className = 'lens-workspace'; node.hidden = true; node.innerHTML = html; main.append(node); return node;}
  const heading = (kicker, title, copy) => `<div class="lens-page-heading"><span class="lens-kicker">${kicker}</span><h1 tabindex="-1">${title}</h1><p>${copy}</p></div>`;
- const questionPrompts = {
-  seen: ['How Do Texts Describe Seeing God?', 'Compare descriptions of divine visibility and their literary contexts.', 'Representations of the divine'],
-  judas: ['How Do the Judas Accounts Differ?', 'Compare wording, narrative details and context in the parallel accounts.', 'Parallel accounts'],
-  animals: ['How Do the Creation Accounts Order Animals?', 'Compare the sequence and descriptions of animal creation in Genesis.', 'Creation narratives'],
-  plants: ['How Do the Creation Accounts Order Plants?', 'Examine the sequence and wording of vegetation in the Genesis accounts.', 'Creation narratives'],
-  soldiers: ['Why Do the Census Figures Differ?', 'Compare the totals and narrative settings of the accounts of David’s census.', 'Numerical variants'],
-  birth: ['How Are the Birth Narratives Dated?', 'Examine the rulers, events and proposed chronologies associated with the narratives.', 'Historical context']
- };
- const questionCards = ENTRIES.map(entry => {
-  const [title,copy,topic] = questionPrompts[entry.id] || [entry.title,entry.intro,entry.topic];
-  return `<a class="lens-question-card" href="#study/${esc(entry.id)}"><span class="lens-question-topic">${esc(topic)}</span><h3>${esc(title)}</h3><p>${esc(copy)}</p><span class="lens-question-open">Compare passages <span aria-hidden="true">↗</span></span></a>`;
- }).join('');
- section('explore', `<section class="lens-starter-studies" aria-labelledby="lens-questions-title"><div class="lens-questions-heading"><div><span class="lens-kicker">Textual analysis</span><h2 id="lens-questions-title">Questions for Analysis</h2><p>Examine differences in wording, narrative and historical context.</p></div><a class="lens-ask-own" href="#chat">Ask a research question <span aria-hidden="true">↗</span></a></div><div class="lens-question-cards">${questionCards}</div></section>`);
+ section('explore','');
 
  function shellRoute(hash){if(!hash||hash==='#'||hash==='#discover'){setView('explore',false);return true;}return false;}
  window.BibleLensWorkspace={navigate:routeTo,route:shellRoute};
- window.addEventListener('viewchange',event=>{
-  const primary=event.detail==='debate'?'debates':event.detail==='bookmarks'?'notebook':['read','debates','notebook'].includes(event.detail)?event.detail:'explore';
-  for(const link of masthead.querySelectorAll('[data-lens-view]')){if(link.dataset.lensView===primary)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}
- });
  document.addEventListener('click',event=>{
   const link=event.target.closest('a[href^="#"]');if(!link||event.defaultPrevented||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||link.classList.contains('skip')||link.hasAttribute('data-cite'))return;
   if(link.closest('.lens-masthead,.lens-workspace,#lensComparison,.lens-context')){event.preventDefault();routeTo(link.getAttribute('href'));}
