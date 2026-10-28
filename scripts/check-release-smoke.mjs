@@ -28,7 +28,9 @@ for (const [name, engine] of [['Chromium', chromium], ['WebKit', webkit]]) {
         // cold-load timeout without accepting the displayed local fallback.
         if (mode === 'cold' && searchCount === 1) await new Promise(resolve => setTimeout(resolve, 21000));
       }
-      const response = await worker.fetch(new Request(url, {headers: req.headers}), {}, {});
+      // The captured hosting script is inserted into decoded HTML, before transport compression.
+      const headers=new Headers(req.headers);headers.set('accept-encoding','identity');
+      const response = await worker.fetch(new Request(url, {headers}), {}, {});
       let body = Buffer.from(await response.arrayBuffer());
       if (response.headers.get('content-type')?.includes('text/html')) body = Buffer.from(body.toString().replace('</body>', fixture.samples[0].html + '</body>'));
       res.writeHead(response.status, Object.fromEntries(response.headers)); res.end(body);
