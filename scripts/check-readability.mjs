@@ -101,8 +101,8 @@ export function draftCollections(directory = root) {
   }
   return [
     ...extras,
-    { name: 'Evidence drafts', lines: lines(evidence.flatMap(row => [row.title,row.draft.summary].filter(Boolean))) },
-    { name: 'Evidence draft notes', tier: 'detail', lines: lines(evidence.flatMap(row => ['reasoning','scope'].map(field => row.draft[field]).filter(Boolean))) },
+    { name: 'Evidence drafts', lines: lines(evidence.flatMap(row => [row.draft.title||row.title,row.draft.summary].filter(Boolean))) },
+    { name: 'Evidence draft notes', tier: 'detail', lines: lines(evidence.flatMap(row => ['reasoning','scope','languageContext'].map(field => row.draft[field]).filter(Boolean))) },
     { name: 'Stories drafts', lines: lines(stories.map(row => row.draft)) },
     { name: 'People drafts', lines: lines(people.map(row => row.draft)) },
   ];

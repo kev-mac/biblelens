@@ -19,17 +19,20 @@ const substitutions=[
  [/\bmanuscripts\b/g,'ancient copies'],[/\bmanuscript\b/g,'ancient copy'],
 ];
 const changes=[],meaning=[],outstanding=[],records=[];
-for(const row of read('docs/b1-readability/evidence.json')){
+const acceptedSources=new Map(read('data/evidence.json').map(row=>[row.id,row]));
+for(const sourceRow of read('docs/b1-readability/evidence.json')){
+ const context=acceptedSources.get(sourceRow.id).languageContext;
+ const row={...sourceRow,original:{...(sourceRow.title?{title:sourceRow.title}:{}),...sourceRow.original,...(typeof context==='string'?{languageContext:context}:{})}};
  const draft={...row.original},appliedRules=[];
  for(const [field,original] of Object.entries(row.original)){
-  const tier=field==='summary'?'visible':'detail';
+  const tier=['title','summary'].includes(field)?'visible':'detail';
   if(row.meaningHolds?.[field]){meaning.push({id:row.id,field,tier,original,reason:row.meaningHolds[field]});continue;}
   if(!failing(original,tier))continue;
-  let candidate=sameTokens(original,row.draft[field])?row.draft[field]:original;
+  let candidate=typeof row.draft[field]==='string'&&sameTokens(original,row.draft[field])?row.draft[field]:original;
   // Fixed terminology pairs apply only outside quotes; original and source editions remain beside each proposal.
   candidate=candidate.split(/(“[^”]*”|"[^"\n]*")/g).map((part,i)=>i%2?part:substitutions.reduce((text,[from,to])=>text.replace(from,to),part)).join('');
   const names=['Tischendorf','Textus Receptus'].filter(name=>assess(candidate,{tier}).counts.some(item=>item.term===name&&item.unexplained));
-  if(names.length)candidate=(names.length===2?'Tischendorf and Textus Receptus are names of Greek editions. ':`${names[0]} is the name of a Greek edition. `)+candidate;
+  if(names.length)candidate=(names.length===2?'The Greek editions here are Tischendorf’s text and the Textus Receptus. ':names[0]==='Tischendorf'?'Tischendorf’s Greek edition is used here. ':'Textus Receptus names the Greek text used here. ')+candidate;
   if(candidate!==original){
    if(!sameTokens(original,candidate))throw Error('Protected tokens changed '+row.id+':'+field);
    draft[field]=candidate;changes.push({id:row.id,field,tier,original,draft:candidate,meaningCheck:'Retain attribution, negation, numbers, quoted wording, conditions and edition limits. Edition names remain in Sources. Draft requires meaning review.'});

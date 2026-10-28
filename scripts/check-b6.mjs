@@ -19,7 +19,7 @@ let fields=0;
 for(const [i,row]of overlay.records.entries()){
  const source=accepted[i];assert.equal(row.id,source.id);assert.equal(row.reviewStatus,'draft, unverified');assert.deepEqual(row.sources,source.sources||[]);
  for(const [field,original]of Object.entries(row.original)){
-  assert.equal(original,source[field]);const proposed=row.draft[field],tier=field==='summary'?'visible':'detail';
+  assert.equal(original,source[field]);const proposed=row.draft[field],tier=['title','summary'].includes(field)?'visible':'detail';
   if(proposed===original)continue;fields++;const result=assess(original,{tier});assert(result.tooLong||result.unexplained,'Passing field changed '+row.id+':'+field);
   assert.deepEqual(proposed.match(/“[^”]*”|"[^"\n]*"|\d+/g)||[],original.match(/“[^”]*”|"[^"\n]*"|\d+/g)||[],row.id+': protected text');
   if(row.meaningHolds?.[field])assert.fail('Meaning hold rewritten '+row.id);

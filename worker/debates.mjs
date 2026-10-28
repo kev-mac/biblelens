@@ -1,8 +1,9 @@
 // Labels are a presentation of the current record status, never new judgments.
 export function debateVerdict(record) {
+ if(record.mode==='commandments')return 'Instruction in context';
  const labels = record.mode === 'science' || record.mode === 'history'
-  ? {Agrees:'Evidence agrees', Disagrees:'Evidence disagrees', Context:'Not settled'}
-  : {'Textual conflict':'Wording differs', Context:'Open question'};
+  ? {Agrees:'Evidence matches the text', Disagrees:'Evidence points elsewhere', Context:'Not settled'}
+  : {'Textual conflict':'Wording differs', Context:'Interpretation remains open'};
  return labels[record.status] || record.status;
 }
 export function debateCard(record) {

@@ -6,7 +6,7 @@ import {debatePage,debateVerdict} from '../worker/debates.mjs';
 import {exploreFeed} from './explore-feed.mjs';
 const records=JSON.parse(fs.readFileSync('data/evidence.json'));
 const original=JSON.stringify(records);
-for(const record of records){const expected=['science','history'].includes(record.mode)?{Agrees:'Evidence agrees',Disagrees:'Evidence disagrees',Context:'Not settled'}:{'Textual conflict':'Wording differs',Context:'Open question'};assert.equal(debateVerdict(record),expected[record.status],record.id);}
+for(const record of records){const expected=['science','history'].includes(record.mode)?{Agrees:'Evidence matches the text',Disagrees:'Evidence points elsewhere',Context:'Not settled'}:{'Textual conflict':'Wording differs',Context:'Interpretation remains open'};assert.equal(debateVerdict(record),record.mode==='commandments'?'Instruction in context':expected[record.status],record.id);}
 for(const mode of ['text','science','history']){
  const included=records.filter(record=>mode==='text'?!['science','history'].includes(record.mode):record.mode===mode);
  const rows=[];for(let page=0;page<Math.ceil(included.length/24);page++)rows.push(...debatePage(records,new URLSearchParams({mode,page})).records);

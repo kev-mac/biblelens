@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import {chromium,webkit} from 'playwright';
 const base = process.env.BIBLELENS_PREVIEW_URL || 'http://127.0.0.1:18788';
 const results = [];
+fs.mkdirSync('.review/b2',{recursive:true});
 for (const [name,engine] of [['chromium',chromium],['webkit',webkit]]) {
  const browser = await engine.launch({headless:true});
  try {
@@ -13,7 +14,7 @@ for (const [name,engine] of [['chromium',chromium],['webkit',webkit]]) {
    await page.addInitScript(()=>{window.reviewViolations=[];document.addEventListener('securitypolicyviolation',event=>reviewViolations.push(event.violatedDirective));});
    await page.goto(base+'/draft-review.html'); await page.waitForSelector('#results article');
    assert.match(await page.locator('#count').innerText(),/^103 drafts/);
-   for (const [collection,total] of [['people',138],['timeline',48],['stories',40],['prophecies',25],['rewrites',59],['holds',22],['researchReturns',13]]) {
+   for (const [collection,total] of [['people',139],['timeline',48],['stories',40],['prophecies',25],['rewrites',59],['holds',22],['researchReturns',13]]) {
     await page.locator('#collection').selectOption(collection);assert.match(await page.locator('#count').innerText(),new RegExp('^'+total+' drafts'));
    }
    await page.locator('#collection').selectOption('rewrites');await page.locator('#query').fill('Ahasuerus');

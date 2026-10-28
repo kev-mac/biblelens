@@ -1,7 +1,7 @@
 # Draft Verdict Ledger
 
 This is a local draft for Phase 3. It changes no evidence or app content.
-The source is the requested origin/main snapshot, commit `346bdfd173bb04d54745cd2164a23b9bf905eadd`.
+The source is the requested origin/main snapshot, commit `964d0f8`.
 It contains 1,933 records. No claim is made about Sites or installed release versions.
 
 ## Method
@@ -200,7 +200,7 @@ It also checks that this README and the ledger match the reviewed decisions.
 Regenerate the draft with `node research/verdict-ledger/draft.mjs` after editing decisions.
 The source hash must match before regeneration; later source changes require another review.
 
-Source SHA-256: `e1330ec7ba79712d190f3345b83a568d582fbb9983ed03323db8c1307cb4e377`.
+Source SHA-256: `d144fb0ce9082ce8730bf293d4986c0189df9d399bc17bf81c37b3934d62e3f4`.
 
 The writing standard was read from codex/readability-standard at `8e2cd1b87419d909e9bcc54a7d822fd9052447d5`.
 `npm run check:readability` was attempted; this origin/main snapshot has no such script.

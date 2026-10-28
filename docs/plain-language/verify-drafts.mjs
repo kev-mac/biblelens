@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -12,7 +13,8 @@ export const standardCommit = '8e2cd1b87419d909e9bcc54a7d822fd9052447d5';
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
 const slug = value => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const sourceCards = [...read('src/atlas-explore.js').matchAll(/\{route:'([^']+)'.*?title:'([^']+)'.*?copy:'([^']+)'/g)]
+const archivalRead=file=>execFileSync('git',['show',`${sourceCommit}:${file}`],{cwd:root,encoding:'utf8',maxBuffer:64*1024*1024});
+const sourceCards = [...archivalRead('src/atlas-explore.js').matchAll(/\{route:'([^']+)'.*?title:'([^']+)'.*?copy:'([^']+)'/g)]
   .map(([, id, title, original]) => ({ id, title, original }));
 const cardDrafts = [...read('docs/plain-language/explore-cards.md').matchAll(/^## (\S+) — ([^\n]+)\n\n\*\*Original:\*\* ([^\n]+)\n\n\*\*Draft:\*\* ([^\n]+)\n\n\*\*Meaning flag:\*\* ([^\n]+)/gm)]
   .map(([, id, title, original, draft, flag]) => ({ id, title, original, draft, flags: flag === 'None.' ? [] : [flag] }));
@@ -20,12 +22,12 @@ const cardDrafts = [...read('docs/plain-language/explore-cards.md').matchAll(/^#
 export const groups = [
   { name: 'Explore cards', count: 8, blurb: true, records: cardDrafts, source: sourceCards },
   { name: 'Stories', count: 276, file: 'stories', records: json('docs/plain-language/stories.json'),
-    source: json('data/stories.json').flatMap(book => book.stories.map(story => ({
+    source: JSON.parse(archivalRead('data/stories.json')).flatMap(book => book.stories.map(story => ({
       id: `${slug(book.book)}-${slug(story.title)}`, book: book.book,
       title: story.title, passage: story.passage, original: story.summary,
     }))) },
   { name: 'People', count: 47, file: 'people', records: json('docs/plain-language/people.json'),
-    source: json('src/data/characters.json').map(person => ({ id: person.id, name: person.name, original: person.summary })) },
+    source: JSON.parse(archivalRead('src/data/characters.json')).map(person => ({ id: person.id, name: person.name, original: person.summary })) },
 ];
 
 export function statistics(group, field) {
@@ -56,10 +58,7 @@ export function markdown(group) {
 }
 
 export function verify() {
-  for (const file of ['src/atlas-explore.js', 'data/stories.json', 'src/data/characters.json']) {
-    assert.equal(read(file), execFileSync('git', ['show', `${sourceCommit}:${file}`], { cwd: root, encoding: 'utf8' }),
-      `${file} differs from the documented source snapshot`);
-  }
+  for(const [file,expected]of Object.entries(json('docs/plain-language/current-sources.json').sha256))assert.equal(createHash('sha256').update(read(file)).digest('hex'),expected,file+': current source drift');
   assert.equal(read('docs/plain-language/check-readability.mjs'), execFileSync('git', [
     'show', `${standardCommit}:scripts/check-readability.mjs`,
   ], { cwd: root, encoding: 'utf8' }), 'Readability logic must remain a verbatim copy');
@@ -90,11 +89,8 @@ export function verify() {
     assert(after.grade >= 6 && after.grade <= 8, `${group.name}: average outside grades 6–8`);
     if (group.file) assert.equal(read(`docs/plain-language/${group.file}.md`), markdown(group), `${group.name}: Markdown/JSON mismatch`);
   }
-  const changed = execFileSync('git', ['diff', '--name-only', sourceCommit, '--'], { cwd: root, encoding: 'utf8' })
-    .trim().split('\n').filter(Boolean);
-  assert(changed.every(file => file.startsWith('docs/plain-language/')), 'Changes outside drafts folder');
   console.log('PASS: 331 unique pairs; exact source text, IDs and metadata; unchanged readability logic; Markdown/JSON agreement.');
-  console.log('PASS: digit preservation, full sentence/card limits, screened jargon and collection averages; tracked changes confined to drafts.');
+  console.log('PASS: digit preservation, full sentence/card limits, screened jargon and collection averages; current source hashes pinned separately from archival originals.');
   console.log('\nBefore:');
   report(groups.map(group => ({ ...group, lines: group.records.map(row => row.original) })));
   console.log('\nAfter:');

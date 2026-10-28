@@ -5,17 +5,19 @@ import {copyLiterals} from './copy-literals.mjs';
 import {b4Content,contentFiles,proseKeys} from './b4-neutral.mjs';
 import {loadDraftDebates} from './draft-debates.mjs';
 import {b2Catalog} from './b2-catalog.mjs';
+import {b6Catalog} from './b6-drafts.mjs';
 import {neutralTree} from './b4-neutral.mjs';
 
 export const banned = /\b(?:debunk\w*|disprov(?:e[sd]?|ing|en)|prov(?:e[sd]?|ing|en)|proof)\b|\bfor or against (?:any |a |the )?(?:faith|religion|belief)\b|\b(?:anti|pro)[- ](?:Christian|Jewish|Muslim|religion)\b|\b(?:debate|debunking) tool\b|\bnot (?:a |an )?(?:debate|debunking) (?:tool|app)\b/gi;
 export const oldLabels = /\b(?:debates?|verdicts?|contradictions?)\b/gi;
+export const obsoleteEvidenceLabels = /\b(?:Evidence agrees|Evidence disagrees|Real conflict|Can be reconciled|Different detail|Open question|not a debate)\b/g;
 const read=file=>fs.readFileSync(file,'utf8');
 // Exact quotation spans and source-title fields are the only prose exemptions.
 // Provenance, IDs, URLs, routes and stored enum values are not copy fields.
 const allowlist=new Set(JSON.parse(read('research/b4/framing-allowlist.json')).entries.map(row=>row.text));
 export function findings(text,{labels=false}={}){
  const copy=text.replace(/“[^”]*”|"[^"\n]*"/g,quote=>allowlist.has(quote)?'':quote);
- return [...copy.matchAll(labels?oldLabels:banned)].map(match=>match[0]);
+ return [...copy.matchAll(labels?oldLabels:banned),...(labels?[...copy.matchAll(obsoleteEvidenceLabels)]:[])].map(match=>match[0]);
 }
 export function framingAudit(){
  const violations=[],renames=[],exemptions=[];let checked=0;
@@ -35,7 +37,7 @@ export function framingAudit(){
   }
  };
  for(const file of contentFiles)walk(JSON.parse(b4Content(file,{BIBLELENS_DRAFTS:'1'})),file);
- walk(loadDraftDebates(),'packaged/headlines');walk(neutralTree(b2Catalog()),'packaged/B2');
+ walk(loadDraftDebates(),'packaged/headlines');walk(neutralTree(b6Catalog(b2Catalog())),'packaged/B2-B6');
  for(const file of ['research/b4/wording-proposals.json','research/b4/reading-proposals.json'])walk(JSON.parse(read(file)),file);
  for(const file of ['research/b4/app-store-draft.md','research/b4/B1-decisions.md','research/b4/app-store-readiness-draft.md','research/b4/privacy-policy-draft.md'])check(read(file).replace(/\]\([^)]*\)/g,']').replace(/`[^`]+`/g,''),file);
  function files(directory){return fs.readdirSync(directory,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()&&!['vendor','assets','data','types'].includes(entry.name)?files(path.join(directory,entry.name)):entry.isFile()? [path.join(directory,entry.name)]:[]);}

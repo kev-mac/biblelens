@@ -10,12 +10,12 @@
  const href=row=>'#debate/'+encodeURIComponent(row.id)+'?draft=1';
  const paragraphs=values=>values.map(text=>`<p>${escape(text)}</p>`).join('');
  const verdicts=row=>[...new Set(row.sourceRecords.map(record=>record.proposal.proposed_verdict))];
- const tone=verdict=>({'Real conflict':'conflict','Evidence disagrees':'conflict','Can be reconciled':'agrees','Evidence agrees':'agrees','Different detail':'detail'}[verdict]||'open');
- const evidenceLabel=value=>({'Real conflict':'Wording differs','Can be reconciled':'Readings can fit together','Different detail':'Details differ','Open question':'Interpretation remains open','not a debate':'Instruction in context'}[value]||value);
+ const tone=verdict=>({'Wording differs':'conflict','Evidence points elsewhere':'conflict','Readings can fit together':'agrees','Evidence matches the text':'agrees','Details differ':'detail'}[evidenceLabel(verdict)]||'open');
+ const evidenceLabel=value=>({'Real conflict':'Wording differs','Can be reconciled':'Readings can fit together','Different detail':'Details differ','Open question':'Interpretation remains open','not a debate':'Instruction in context','Evidence agrees':'Evidence matches the text','Evidence disagrees':'Evidence points elsewhere'}[value]||value);
  const badge=verdict=>`<span class="phase3-verdict" data-tone="${tone(verdict)}">${escape(evidenceLabel(verdict))}</span>`;
  const tier=row=>`<span class="phase3-tier">Evidence strength: ${escape(row.evidence_tier||'Not assessed')}</span>`;
  const entry=()=>'<a class="lens-button phase3-preview-link" href="#questions?draft=1">Preview draft Big Questions</a>';
- const draftNotice='<p class="phase3-draft-notice"><strong>Draft preview</strong> · B01–B30 are selected. Wording proposals and evidence labels await review.</p>';
+ const draftNotice='<p class="phase3-draft-notice"><strong>Draft preview</strong> · B01–B30 are selected. Wording proposals await review. Evidence labels follow the accepted names.</p>';
  let current=null,lastList='#questions?draft=1',sheet=null,opener=null;
  function sourceLink(source){
   let url;try{url=new URL(source.url);}catch{return '';}

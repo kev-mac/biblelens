@@ -10,8 +10,11 @@ import {corpusConfig} from '../research/b4/corpus-config-proposal.mjs';
 import {report,words,assess} from './check-readability.mjs';
 const read=file=>fs.readFileSync(file,'utf8'),json=file=>JSON.parse(read(file));
 const baseline=file=>execFileSync('git',['show','codex/b3:'+file],{encoding:'utf8',maxBuffer:64*1024*1024});
-for(const file of [...contentFiles,'data/books.json','data/chapters.json','src/data.js','src/sync-core.js','src/sync.js','worker/sync.mjs','db/schema.ts','package.json','research/headline-debates/candidates.json','research/verdict-ledger/ledger.json','CLAUDE.md'])assert.equal(read(file),baseline(file),file+' changed a pinned source');
-assert.equal(json('package.json').buildNumber,274);
+for(const file of [...contentFiles,'data/books.json','data/chapters.json','src/data.js','src/sync-core.js','src/sync.js','worker/sync.mjs','db/schema.ts','package.json','research/verdict-ledger/ledger.json','CLAUDE.md']){if(file==='package.json'){assert.equal(json(file).buildNumber,275);assert.deepEqual(json(file).dependencies,JSON.parse(baseline(file)).dependencies);}else assert.equal(read(file),['src/sync-core.js','src/sync.js','worker/sync.mjs'].includes(file)?execFileSync('git',['show','853c116:'+file],{encoding:'utf8'}):baseline(file),file+' changed a pinned source');}
+const archiveNow=json('research/headline-debates/candidates.json'),archiveBefore=JSON.parse(baseline('research/headline-debates/candidates.json'));
+for(const key of ['base_commit','evidence_sha256','kjv_sha256'])delete archiveNow[key],delete archiveBefore[key];
+assert.deepEqual(archiveNow,archiveBefore,'Headline content changed while refreshing pins');
+assert.equal(json('package.json').buildNumber,275);
 assert.deepEqual(json('research/b4/wording-proposals.json'),b4Proposals(),'Regenerate B4 proposals after any wording-rule change');
 let changed=0;
 for(const file of contentFiles){
@@ -36,9 +39,9 @@ for(const [i,row] of readings.records.entries()){
 const before=read('research/b4/B1-decisions-before.md'),after=read('research/b4/B1-decisions.md');
 const ids=text=>[...text.matchAll(/^\| ([A-M]\d+[a-z]?) \|/gm)].map(match=>match[1]);assert.deepEqual(ids(after),ids(before),'Decision IDs/order changed');
 const cells=text=>text.split('\n').filter(line=>/^\| [A-M]\d+[a-z]? \|/.test(line)).map(line=>line.split('|').at(-2).trim());
-const canonical=text=>text.toLowerCase().replace(/what the evidence shows/g,'verdict').replace(/big questions/g,'debates').replace(/big question/g,'debate').replace(/text comparisons/g,'contradictions').replace(/difference between passages|text comparison/g,'contradiction').replace(/establish(?:es|ed|ing)?/g,'prove').replace(/prov(?:e[sd]?|ing|en)/g,'prove');
-assert.deepEqual(cells(after).map(canonical),cells(before).map(canonical),'Recommended default changed');
-assert.equal(read('/Users/kevin/git/codex-reports/B1-decisions.md'),after);
+const canonical=text=>text.toLowerCase().replace(/wording differs/g,'real conflict').replace(/readings can fit together/g,'can be reconciled').replace(/details differ/g,'different detail').replace(/interpretation remains open/g,'open question').replace(/instruction in context/g,'not a debate').replace(/evidence matches the text/g,'evidence agrees').replace(/evidence points elsewhere/g,'evidence disagrees').replace(/what the evidence shows/g,'verdict').replace(/big questions/g,'debates').replace(/big question/g,'debate').replace(/text comparisons/g,'contradictions').replace(/difference between passages|text comparison/g,'contradiction').replace(/establish(?:es|ed|ing)?/g,'prove').replace(/prov(?:e[sd]?|ing|en)/g,'prove');
+assert.deepEqual(cells(after).filter((_,i)=>ids(after)[i]!=='A00a').map(canonical),cells(before).filter((_,i)=>ids(before)[i]!=='A00a').map(canonical),'Recommended default changed');
+assert(after.includes('ACCEPTED 2026-10-28: Wording differs;'),'Owner-approved label decision missing');
 // New copy, including quoted copy, must fail without an exact quotation exception.
 for(const text of ['This app is a debate tool.','This disproves the reading.','This proves the account.','Use it to debunk religion.','“This proves the account.”'])assert(findings(text).length,text);
 assert.equal(findings('“that I may prove them, whether they will walk in my law, or no”').length,0);

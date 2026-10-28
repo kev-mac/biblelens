@@ -6,6 +6,7 @@ export const proseKeys = new Set(['title','display_title','question','summary','
 export function neutralProse(value) {
  const parts=value.split(/(“[^”]*”|"[^"\n]*")/g);
  return parts.map((part,index)=>index%2?part:part
+  .replace(/Real conflict/g,'Wording differs').replace(/Can be reconciled/g,'Readings can fit together').replace(/Different detail/g,'Details differ').replace(/Open question/g,'Interpretation remains open').replace(/not a debate/g,'Instruction in context').replace(/Evidence agrees/g,'Evidence matches the text').replace(/Evidence disagrees/g,'Evidence points elsewhere')
   .replace(/It is not a finding of contradiction or of scientific error\./g,'It does not establish that the passages cannot both hold or that a scientific claim is mistaken.')
   .replace(/not a logical contradiction/g,'not a finding that both statements cannot hold')
   .replace(/not a demonstrated factual contradiction/g,'not a finding that the accounts cannot both be true')
