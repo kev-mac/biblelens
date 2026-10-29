@@ -27,7 +27,6 @@ function mountCharacters(): void {
   let people: DirectoryPerson[] = [];
   let findPeople = createPeopleSearch(people);
   let page = 0;
-  let initial = '';
   let loading = true;
   let failed = false;
   let profileRoute = '';
@@ -49,39 +48,35 @@ function mountCharacters(): void {
   const list = element('div', 'characters-grid'); list.id = 'characters-list';
   const searchBox = element('div', 'characters-search-box');
   searchBox.append(label, search);
-  const alphabet = element('div', 'characters-alphabet');
-  alphabet.setAttribute('role', 'group'); alphabet.setAttribute('aria-label', 'Browse people by first letter');
-  for (const letter of ['All', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ']) {
-    const button = element('button', '', letter); button.type = 'button';
-    button.dataset.initial = letter === 'All' ? '' : letter;
-    button.setAttribute('aria-pressed', String(letter === 'All'));
-    button.addEventListener('click', () => {
-      clearTimeout(searchTimer); initial = button.dataset.initial!; search.value = ''; page = 0; render();
-    });
-    alphabet.append(button);
-  }
-  host.append(heading, searchBox, alphabet, count, list);
+  host.append(heading, searchBox, count, list);
   const pagination = element('div', 'characters-pagination');
   const previous = element('button', '', 'Previous'); previous.type = 'button';
   const next = element('button', '', 'Next'); next.type = 'button';
   const retry = element('button', '', 'Retry loading characters'); retry.type = 'button';
   previous.setAttribute('aria-controls', list.id); next.setAttribute('aria-controls', list.id);
-  pagination.append(previous, next); host.append(pagination, retry);
+  const pageLabel = element('span'); pageLabel.setAttribute('role', 'status');
+  pagination.append(previous, pageLabel, next); host.append(pagination, retry);
   list.tabIndex = -1;
   function render(): void {
-    const matches = findPeople(search.value).filter(person => !initial || person.name.toLocaleUpperCase().startsWith(initial));
-    // A letter is one browse step. Keep its names together rather than requiring
-    // repeated Next taps to reach names near the end of that letter.
-    for (const button of alphabet.querySelectorAll('button')) button.setAttribute('aria-pressed', String(button.dataset.initial === initial));
+    const matches = findPeople(search.value);
     search.placeholder = 'Search names or aliases…';
     page = Math.min(page, Math.max(0, Math.ceil(matches.length / CHARACTER_PAGE_SIZE) - 1));
-    list.replaceChildren(...(initial ? matches.map(CharacterNameCard) : characterPage(matches, page).map(CharacterCard)));
+    list.replaceChildren(...characterPage(matches, page).map(CharacterCard));
+    if(search.value.trim())for(const person of characterPage(matches,page)){
+      const primary=person.name.toLocaleLowerCase().split(/[^\p{L}\p{N}]+/u);
+      const terms=search.value.trim().toLocaleLowerCase().split(/\s+/);
+      if(!terms.every(term=>primary.some(word=>word.startsWith(term)))){
+        const aliases=(person.aliases||[]).filter(alias=>terms.some(term=>alias.toLocaleLowerCase().split(/[^\p{L}\p{N}]+/u).some(word=>word.startsWith(term))));
+        document.getElementById(`character-card-${person.id}`)?.querySelector('.character-card-header')?.append(element('p','character-matched-alias','Matched alias: '+aliases.join(', ')));
+      }
+    }
     count.classList.toggle('loading-state', loading);
     count.textContent = loading ? 'Loading people…' : failed ? 'People could not be loaded. Please retry.'
-      : `${matches.length ? (initial ? 1 : page * CHARACTER_PAGE_SIZE + 1) : 0}–${initial ? matches.length : Math.min((page + 1) * CHARACTER_PAGE_SIZE, matches.length)} of ${matches.length} people`;
+      : `${matches.length ? (page * CHARACTER_PAGE_SIZE + 1) : 0}–${Math.min((page + 1) * CHARACTER_PAGE_SIZE, matches.length)} of ${matches.length} people`;
     list.setAttribute('aria-busy', String(loading));
     previous.disabled = page === 0; next.disabled = (page + 1) * CHARACTER_PAGE_SIZE >= matches.length;
-    pagination.hidden = !!initial || loading || failed || matches.length <= CHARACTER_PAGE_SIZE;
+    pagination.hidden = loading || failed || matches.length <= CHARACTER_PAGE_SIZE;
+    pageLabel.textContent = `Page ${page + 1} of ${Math.max(1, Math.ceil(matches.length / CHARACTER_PAGE_SIZE))}`;
     retry.hidden = !failed;
     if (!loading && !failed && !matches.length) list.append(element('p', 'characters-empty', 'No people match. Try another name or alias.'));
   }
@@ -114,7 +109,7 @@ function mountCharacters(): void {
     })();
   });
   let searchTimer: ReturnType<typeof setTimeout>;
-  search.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { initial = ''; page = 0; render(); }, 100); });
+  search.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { page = 0; render(); }, 100); });
   function movePage(offset: number): void {
     clearTimeout(searchTimer); page += offset; render(); list.focus({preventScroll:true}); list.scrollIntoView({block:'start'});
   }

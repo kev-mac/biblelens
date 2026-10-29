@@ -2105,3 +2105,48 @@ html body.lens-app #main>section>h1{font-size:38px!important;font-weight:500!imp
 html body.lens-app #main #chat-view h1{font-size:38px!important;font-weight:500;line-height:1.12;letter-spacing:-1.6px}
 
 html body.lens-app #read-view .study-library{display:block;margin-top:28px}
+
+/* UX2 restores the Phase 2 palette (5cf2cda), shared by web and native. */
+html body.lens-app {--lens-paper:#f6f7fb;--lens-surface:#fff;--lens-ink:#1c2235;--lens-muted:#62697d;--lens-rule:#e7e9f1;--lens-copper:#4056cf;--lens-link:#4056cf;--lens-focus:#4056cf;--lens-copper-soft:#edf0ff;--lens-link-soft:#edf0ff;--bg:var(--lens-paper);--panel:var(--lens-surface);--ink:var(--lens-ink);--muted:var(--lens-muted);--green:var(--lens-link);--soft:var(--lens-control-bg);--line:var(--lens-rule);--brand-accent:var(--lens-link);
+--topic-stories:#7452c6;--topic-people:#a83d64;--topic-places:#237360;--topic-commandments:#966020;--topic-evidence:#4056cf;--topic-history:#966020;--topic-science:#237360;--topic-timeline:#136c86;--topic-text:#4056cf;--topic-translation:#7452c6;--topic-questions:#a83d64}
+html body.lens-app.dark {--lens-paper:#121520;--lens-surface:#1b1f2c;--lens-ink:#f0f1f8;--lens-muted:#a3abc1;--lens-rule:#303648;--lens-copper:#a6b3ff;--lens-link:#a6b3ff;--lens-focus:#a6b3ff;--lens-copper-soft:#292f51;--lens-link-soft:#292f51;--topic-stories:#c5abff;--topic-people:#ffacce;--topic-places:#9adfc8;--topic-commandments:#e9c18a;--topic-evidence:#a6b3ff;--topic-history:#e9c18a;--topic-science:#9adfc8;--topic-timeline:#8fd5ed;--topic-text:#a6b3ff;--topic-translation:#c5abff;--topic-questions:#ffacce}
+[data-topic=stories]{--topic:var(--topic-stories)}[data-topic=people]{--topic:var(--topic-people)}[data-topic=places]{--topic:var(--topic-places)}[data-topic=commandments]{--topic:var(--topic-commandments)}[data-topic=evidence]{--topic:var(--topic-evidence)}[data-topic=history]{--topic:var(--topic-history)}[data-topic=science]{--topic:var(--topic-science)}[data-topic=timeline]{--topic:var(--topic-timeline)}[data-topic=text]{--topic:var(--topic-text)}[data-topic=translation]{--topic:var(--topic-translation)}[data-topic=questions]{--topic:var(--topic-questions)}
+html body.lens-app :is(.page-heading,.lens-context,.ux-dialog-path){border-left:4px solid var(--topic);padding-left:12px}
+html body.lens-app :is(.tag,.character-era,.character-badge,.character-story-chip,.phase2-chips button,.chips .chip,.glass-pill){color:var(--topic);border:1px solid var(--topic);background:var(--lens-surface);border-radius:18px}
+html body.lens-app :is(.phase2-chips button,.chips .chip)[aria-pressed=true]{background:var(--lens-copper-soft);color:var(--topic)}
+html body.lens-app .ux-topic-section{margin:0 0 24px}
+html body.lens-app .ux-topic-row{gap:0;padding:0;scroll-padding:0;scroll-snap-type:x mandatory}
+html body.lens-app a.ux-topic{flex:0 0 100%;width:100%;height:360px;box-sizing:border-box;border:4px solid var(--topic);scroll-snap-align:start;scroll-snap-stop:always}
+html body.lens-app .ux-tile-copy{bottom:34px}
+html body.lens-app .ux-tile-copy strong{color:#fff;font-size:30px}
+html body.lens-app .ux-tile-copy small{color:#fff}
+.ux-art-label{position:absolute;bottom:10px;left:18px;color:#fff;font-size:12px;background:#10202b;padding:3px 8px;border-radius:5px}
+.ux-carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:16px 0}
+.ux-carousel-controls button{width:48px;height:48px;border:1px solid var(--lens-link);border-radius:10px;color:var(--lens-link);background:var(--lens-surface)}
+html body.lens-app .ux-popup{padding-top:64px;color:var(--lens-ink);background:var(--lens-surface)}
+html body.lens-app .ux-popup-close{position:absolute;inset:10px 10px auto auto;display:grid;place-items:center;width:44px;min-width:44px;height:44px;min-height:44px;padding:10px;border:0;border-radius:6px;background:var(--lens-surface);color:var(--lens-ink);z-index:5;font:inherit;box-shadow:none}
+.ux-popup-close svg{width:24px;height:24px}
+html body.lens-app :is(#lensComparison,#lens-inspector-sheet){position:fixed;inset:0;margin:auto;width:min(680px,calc(100% - 32px));max-width:680px;max-height:85dvh;overflow:auto;border:1px solid var(--lens-rule);border-radius:18px;padding:64px 20px 24px}
+html body.lens-app :is(#lensComparison,#lens-inspector-sheet)::backdrop{background:#080c2080}
+html body.lens-app #lensComparison:not([open]){display:none}
+html body.lens-app .lens-reading-layout{display:block}
+html body.lens-app .lens-reading-layout>#lensInspector{display:none}
+html body.lens-app #lens-inspector-sheet #lensInspector{display:block}
+html body.lens-app :is(.comparison-summary,.card>p){border:0;border-radius:0;background:none;padding:0;color:var(--lens-ink);font-weight:400}
+html body.lens-app .characters-pagination{display:flex;gap:14px;align-items:center;justify-content:space-between}
+@media(prefers-reduced-motion:reduce){.ux-topic-row{scroll-behavior:auto}.ux-popup{transition:none;animation:none}}
+
+
+:root{--topic:var(--topic-evidence)}
+/* Plain study summaries and a common surface for both reading tools. */
+html body.lens-app #collection .card{background:var(--lens-surface);border:1px solid var(--lens-rule);box-shadow:none;min-height:0;padding:20px;border-radius:14px}
+html body.lens-app #collection .card h3 button{background:none;border:0;border-radius:0;box-shadow:none;color:var(--lens-ink);padding:0;text-align:left;font:inherit;min-height:44px}
+html body.lens-app #collection .card p{background:none;border:0;border-radius:0;padding:0;font-size:14px;color:var(--lens-muted)}
+html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet,html body.lens-app dialog#lensComparison.lens-comparison{inset:0;margin:auto;width:min(680px,calc(100% - 32px));max-width:680px;max-height:85dvh;height:auto;overflow:auto;border:1px solid var(--lens-rule);border-radius:18px;padding:64px 20px 24px;background:var(--lens-surface)}
+html body.lens-app .ux-popup .ux-popup-close{inset:10px 10px auto auto;background:var(--lens-surface);color:var(--lens-ink);border:0;border-radius:6px;width:44px;height:44px;min-height:44px;padding:10px;box-shadow:none}
+html body.lens-app .ux-tile-copy{background:#10202b;padding:10px 14px;border-radius:8px;left:14px;right:14px}
+html body.lens-app .ux-carousel-controls span{background:none;padding:0;color:var(--lens-muted)}
+html body.lens-app #main>section>h1{border-left:4px solid var(--topic);padding-left:12px}
+
+html body.lens-app .lens-primary a[data-lens-view=debates]{color:var(--topic-questions)}
+html body.lens-app .lens-evidence-meta>span[data-topic],html body.lens-app .tag{color:var(--topic);border:1px solid var(--topic);border-radius:18px;background:var(--lens-surface);padding:4px 9px;font-size:12px;line-height:1.5;display:inline-block}

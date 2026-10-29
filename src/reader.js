@@ -752,6 +752,7 @@ positionChatButton();
   active={book,chapter,verse,range};suppressUntil=Date.now()+800;cancel();window.getSelection()?.removeAllRanges();
   for(const button of menu.querySelectorAll('[data-highlight-recolor]'))button.setAttribute('aria-pressed',String(button.dataset.highlightRecolor===range.color));
   menu.hidden=false;
+  window.BibleLensPopup?.prepare(menu);
   const viewport=window.visualViewport,left=viewport?.offsetLeft||0,top=viewport?.offsetTop||0,width=viewport?.width||window.innerWidth,height=viewport?.height||window.innerHeight;
   const box=menu.getBoundingClientRect();menu.style.left=Math.max(left+8,Math.min(x-box.width/2,left+width-box.width-8))+'px';
   menu.style.top=Math.max(top+64,Math.min(y+12,top+height-box.height-8))+'px';

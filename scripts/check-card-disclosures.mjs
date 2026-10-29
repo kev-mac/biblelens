@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 class Node {
  constructor(tag){this.tagName=tag;this.nodeType=1;this.childNodes=[];this.open=false;this.attributes={};}
  append(...nodes){for(const node of nodes){if(node.parent){node.parent.childNodes.splice(node.parent.childNodes.indexOf(node),1);}node.parent=this;this.childNodes.push(node);}}
- querySelector(selector){return selector.startsWith('.character-summary')?this.summary||null:this.title||null;}
+ querySelector(selector){if(selector==='.card-top')return null;return selector.startsWith('.character-summary')?this.summary||null:this.title||null;}
  querySelectorAll(){return this.cards||[];}
  matches(){return !!this.isCard;}
  setAttribute(key,value){this.attributes[key]=value;}

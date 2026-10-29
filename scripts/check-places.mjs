@@ -79,3 +79,12 @@ for(const place of places.values())if(place.coordinates){
  assert(placePreviewSVG(place).length<30000,'Each preview stays compact: '+place.name);
 }
 console.log('PASS: narrative Ur links preserve ambiguity safeguards; real map previews cover every reference point, escape labels and keep unknown coordinates empty.');
+const prefixPlaces=new Map([
+ ['alias',{id:'alias',name:'A location',aliases:['King road'],modern_name:''}],
+ ['inner',{id:'inner',name:'Baking',aliases:[],modern_name:''}],
+ ['primary',{id:'primary',name:'Kadesh',aliases:[],modern_name:''}],
+ ['word',{id:'word',name:'Old Kadesh',aliases:[],modern_name:''}],
+]);
+assert.deepEqual(searchPlaces(prefixPlaces,'K').map(place=>place.id),['primary','word','alias']);
+assert.deepEqual(searchPlaces(prefixPlaces,'king').map(place=>place.id),['alias'],'No substring match in Baking');
+console.log('PASS: UX2 Places primary prefix/word-start ranking ahead of displayed aliases, without inner substrings.');

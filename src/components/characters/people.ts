@@ -58,13 +58,13 @@ export function createPeopleSearch(people: DirectoryPerson[]) {
   return (query: string, womenOnly = false): DirectoryPerson[] => {
     const normalized = normalize(query.trim());
     const terms = normalized.split(/\s+/).filter(Boolean);
-    return index.filter(({person, names}) => (!womenOnly || person.sex === 'female') && terms.every(term => names.some(name => name.includes(term))))
-      .map(entry => ({...entry, rank: !normalized ? 0 : entry.names.includes(normalized) ? 2 : entry.names.some(name => name.startsWith(normalized)) ? 1 : 0}))
+    return index.filter(({person, names}) => (!womenOnly || person.sex === 'female') && terms.every(term => names.some(name => name.split(/[^\p{L}\p{N}]+/u).some(word => word.startsWith(term)))))
+      .map(entry => ({...entry, rank: !normalized ? 0 : entry.names[0] === normalized ? 5 : entry.names[0].startsWith(normalized) ? 4 : terms.every(term => entry.names[0].split(/[^\p{L}\p{N}]+/u).some(word => word.startsWith(term))) ? 3 : entry.names.includes(normalized) ? 2 : 1}))
       .sort((a, b) => b.rank - a.rank).map(entry => entry.person);
   };
 }
 
-export const CHARACTER_PAGE_SIZE = 24;
+export const CHARACTER_PAGE_SIZE = 15;
 export function characterPage<T>(matches: T[], page: number): T[] {
   return matches.slice(page * CHARACTER_PAGE_SIZE, (page + 1) * CHARACTER_PAGE_SIZE);
 }

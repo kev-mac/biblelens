@@ -4,15 +4,17 @@ import {placePreviewSVG} from './place-map-preview.js';
 const normalize=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
 export function searchPlaces(places,query=''){
  const terms=normalize(query.trim()).split(/\s+/).filter(Boolean);
- return [...places.values()].filter(place=>terms.every(term=>normalize([place.name,...place.aliases,place.modern_name].filter(Boolean).join(' ')).includes(term)))
-  .sort((a,b)=>Number(normalize(b.name)===normalize(query.trim()))-Number(normalize(a.name)===normalize(query.trim()))||a.name.localeCompare(b.name)||a.id.localeCompare(b.id));
+ const queryName=normalize(query.trim());
+ const rank=place=>{const name=normalize(place.name);return !queryName?0:name===queryName?4:name.startsWith(queryName)?3:terms.every(term=>name.split(/[^\p{L}\p{N}]+/u).some(word=>word.startsWith(term)))?2:1;};
+ return [...places.values()].filter(place=>terms.every(term=>normalize([place.name,...place.aliases,place.modern_name].filter(Boolean).join(' ')).split(/[^\p{L}\p{N}]+/u).some(word=>word.startsWith(term))))
+  .sort((a,b)=>rank(b)-rank(a)||a.name.localeCompare(b.name)||a.id.localeCompare(b.id));
 }
 
 const node=(tag,className,text)=>{const el=document.createElement(tag);el.className=className||'';if(text)el.textContent=text;return el;};
 function placeCard(place){
  const card=node('article','character-card place-profile-card');
  const heading=node('h2','character-name',place.name);card.append(heading);
- const aliases=place.aliases.filter(alias=>normalize(alias.trim())!==normalize(place.name.trim()));
+ const aliases=[...place.aliases,place.modern_name].filter(Boolean).filter(alias=>normalize(alias.trim())!==normalize(place.name.trim()));
  if(aliases.length)card.append(node('p','character-aliases',aliases.join(' · ')));
  const description=atlasDescription(place);
  if(description)card.append(node('p','character-summary',description));
@@ -52,16 +54,16 @@ export function mountPlacesDirectory(){
  const previous=host.querySelector('[data-places-previous]'),next=host.querySelector('[data-places-next]'),retry=host.querySelector('[data-places-retry]');
  let places=new Map(),page=0,loaded=false,loading=false,failed=false;
  function render(){
-  const matches=searchPlaces(places,search.value),pages=Math.ceil(matches.length/24);page=Math.min(page,Math.max(0,pages-1));
+  const matches=searchPlaces(places,search.value),pages=Math.ceil(matches.length/15);page=Math.min(page,Math.max(0,pages-1));
   count.className=loading?'loading-state':failed?'':'sr-only';
-  count.textContent=loading?'Loading places…':failed?'Places could not be loaded.':`${matches.length?page*24+1:0}–${Math.min((page+1)*24,matches.length)} of ${matches.length} ${matches.length===1?'place':'places'}`;
+  count.textContent=loading?'Loading places…':failed?'Places could not be loaded.':`${matches.length?page*15+1:0}–${Math.min((page+1)*15,matches.length)} of ${matches.length} ${matches.length===1?'place':'places'}`;
   list.replaceChildren();list.setAttribute('aria-busy',String(loading));
-  for(const place of matches.slice(page*24,(page+1)*24)){
+  for(const place of matches.slice(page*15,(page+1)*15)){
    const row=document.createElement('li');row.append(placeCard(place));list.append(row);
   }
   if(loaded&&!matches.length){const empty=document.createElement('li');empty.textContent='No places match. Try another name or alias.';list.append(empty);}
   previous.disabled=page===0;next.disabled=page+1>=pages;pagination.hidden=!loaded||pages<=1;retry.hidden=!failed;
-  pagination.querySelector('span').textContent=`${page+1} / ${pages}`;
+  pagination.querySelector('span').textContent=`Page ${page+1} of ${Math.max(1,pages)}`;
  }
  async function load(){
   if(loaded||loading)return;loading=true;failed=false;render();

@@ -12,6 +12,7 @@ function collapseDirectoryCard(card){
  preview.append(title);
  const summaryText=card.querySelector('.character-summary,.commandment-summary,.passage-saved-note,.timeline-event-summary,:scope > p:not(.eyebrow)');
  if(summaryText)preview.append(summaryText);
+ if(card.matches('#cards > .card,#saved-cards > .card')){const tags=card.querySelector('.card-top');if(tags)preview.prepend(tags);}
  const disclosure=document.createElement('details');disclosure.className='card-disclosure';
  const summary=document.createElement('summary');summary.className='card-disclosure-heading';
  const label=document.createElement('span');label.className='card-disclosure-label';label.textContent='Details';summary.append(label);
