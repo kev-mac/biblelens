@@ -38,7 +38,20 @@ const BibleLensSearch = (() => {
   catalogCache.set(rows,indexed);return indexed;
  }
  const catalogVocabulary=(rows,kind,curated=[])=>new Set(catalogIndex(rows,kind,curated).flatMap(row=>row.words));
+ function entityQuestion(query){
+  const person=/^(?:who (?:was|is)|tell me about)\s+(.+?)\s*[?.!]*$/i.exec(query.trim());
+  const place=/^where is\s+(.+?)\s*[?.!]*$/i.exec(query.trim());
+  return person?{kind:'people',name:person[1]}:place?{kind:'places',name:place[1]}:null;
+ }
+ function personLabel(person,rows){
+  if(rows.filter(row=>normalize(row.name)===normalize(person.name)).length<2)return person.name;
+  if(person.label&&person.label!==person.name)return person.label;
+  const parent=[...(person.relations?.father||[]),...(person.relations?.mother||[])].map(r=>rows.find(p=>p.id===r.id)?.name).find(Boolean);
+  const count=person.refs?.length||0;
+  return person.name+' ('+(parent?'child of '+parent:count+' '+(count===1?'passage':'passages'))+')';
+ }
  function catalogSearch(rows,kind,query,curated=[],knownEntities=new Set()){
+  const question=entityQuestion(query);if(question?.kind===kind)query=question.name;
   const index=catalogIndex(rows,kind,curated),words=queryTokens(query),phrase=words.join(' ');
   if(!words.length)return [];
   const vocabulary=catalogVocabulary(rows,kind,curated);let correctionBudget=2;
@@ -55,7 +68,8 @@ const BibleLensSearch = (() => {
    // alone must not turn unrelated multi-word input into a profile match.
    const nameWords=queryTokens(item.primary),fullName=nameWords.length&&nameWords.every(word=>choices.some(group=>group.includes(word)));
    const exactName=nameWords.length&&nameWords.every(word=>words.includes(word)||words.includes(word+'s'));
-   const base=item.primary===phrase?120:item.labels.includes(phrase)?110:hits===words.length?(fullName?100:90)+hits:exactName?55+hits:0;
+   const prefix=words.every(word=>item.words.some(term=>term.startsWith(word)));
+   const base=item.primary===phrase?120:item.labels.includes(phrase)?110:item.primary.startsWith(phrase)?105:hits===words.length?(fullName?100:90)+hits:exactName?55+hits:prefix?70+hits:0;
    const score=base?base-(item.row.fields?.canonicalPlace?.length?1:0):0;
    return {...item,score};
   }).filter(item=>item.score).sort((a,b)=>b.score-a.score||a.primary.length-b.primary.length||a.row.id.localeCompare(b.row.id)).slice(0,8).map(item=>item.row);
@@ -113,5 +127,5 @@ function references(message,books){
  }
  return refs;
 }
- return {references,normalize,tokens,queryTokens,distance,tolerance,names,catalogSearch,catalogVocabulary,canonicalBooks};
+ return {entityQuestion,personLabel,references,normalize,tokens,queryTokens,distance,tolerance,names,catalogSearch,catalogVocabulary,canonicalBooks};
 })();

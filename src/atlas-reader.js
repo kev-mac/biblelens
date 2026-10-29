@@ -12,10 +12,28 @@
     const help = document.createElement('p');
     help.id = 'atlas-reader-help';
     help.className = 'atlas-reader-help';
-    help.textContent = 'Tap verse text or its number for actions. Tap a count for evidence.';
+    help.textContent = 'Tap a verse to explore its context and linked passages.';
     readingBar.after(help);
   }
 
+  const controls=document.createElement('div');controls.className='ux-reader-controls';
+  const svg=path=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="${path}"/></svg>`;
+  controls.innerHTML=`<button type="button" id="ux-chapter-picker" aria-label="Choose chapter"></button><button type="button" id="ux-font-less" aria-label="Decrease text size">A−</button><button type="button" id="ux-font-more" aria-label="Increase text size">A+</button><button type="button" id="ux-font-style" aria-label="Use serif app font">${svg('M4 20 12 4l8 16M7 14h10')}</button><button type="button" id="ux-prev" aria-label="Previous chapter">${svg('m15 5-7 7 7 7')}</button><button type="button" id="ux-next" aria-label="Next chapter">${svg('m9 5 7 7-7 7')}</button>`;
+  readingBar.prepend(controls);
+  const control=id=>document.getElementById(id);
+  control('ux-chapter-picker').onclick=()=>chapter.querySelector('.passage-heading-picker')?.click();
+  for(const [id,step] of [['ux-font-less',-5],['ux-font-more',5]])control(id).onclick=()=>{const slider=control('reader-font');slider.value=String(Math.max(85,Math.min(150,Number(slider.value)+step)));slider.dispatchEvent(new Event('input'));slider.dispatchEvent(new Event('change'));};
+  control('ux-font-style').onclick=()=>{const select=control('app-font-family');select.value=['lora','georgia'].includes(readerPreferences.appFont)?'inter':'lora';select.dispatchEvent(new Event('change'));updateControls();};
+  control('ux-prev').onclick=()=>control('prev-bottom').click();control('ux-next').onclick=()=>control('next-bottom').click();
+  function updateControls(){
+   if(!reading)return;
+   control('ux-chapter-picker').textContent=reading.name+' '+reading.chapter+' ▾';
+   control('ux-prev').disabled=readingBook===0&&readingChapter===1;
+   control('ux-next').disabled=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;
+   control('ux-font-style').setAttribute('aria-label',['lora','georgia'].includes(readerPreferences.appFont)?'Use sans serif app font':'Use serif app font');
+   control('ux-font-less').disabled=Number(state.textScale)<=.85;control('ux-font-more').disabled=Number(state.textScale)>=1.5;
+  }
+  window.addEventListener('biblelens:statechange',updateControls);
   function decorateHeading() {
     if (typeof reading === 'undefined' || !reading) return;
     const heading = chapter.querySelector('.passage-heading');
@@ -65,6 +83,7 @@
   }
 
   function refresh() {
+    updateControls();
     decorateHeading();
     connectMargin();
   }

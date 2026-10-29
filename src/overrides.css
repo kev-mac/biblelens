@@ -2128,7 +2128,7 @@ html body.lens-app .ux-popup-close{position:absolute;inset:10px 10px auto auto;d
 .ux-popup-close svg{width:24px;height:24px}
 html body.lens-app :is(#lensComparison,#lens-inspector-sheet){position:fixed;inset:0;margin:auto;width:min(680px,calc(100% - 32px));max-width:680px;max-height:85dvh;overflow:auto;border:1px solid var(--lens-rule);border-radius:18px;padding:64px 20px 24px}
 html body.lens-app :is(#lensComparison,#lens-inspector-sheet)::backdrop{background:#080c2080}
-html body.lens-app #lensComparison:not([open]){display:none}
+html body.lens-app #lensComparison[hidden]{display:none}
 html body.lens-app .lens-reading-layout{display:block}
 html body.lens-app .lens-reading-layout>#lensInspector{display:none}
 html body.lens-app #lens-inspector-sheet #lensInspector{display:block}
@@ -2266,3 +2266,84 @@ html body.lens-app #characters-view {--topic:#4056cf}
 html body.lens-app.dark #characters-view {--topic:var(--ux-reference-ink)}
 
 html body.lens-app #characters-list .character-matched-alias {margin:0 var(--ux-target) var(--ux-space-2) 0;font-size:var(--ux-type-meta);color:var(--lens-muted)}
+
+/* UX5: one shared glass palette, including lazy feature surfaces. */
+html body.lens-app {
+ --lens-paper:#f6f7fb;--lens-surface:#ffffff;--lens-ink:#172033;--lens-muted:#526079;
+ --lens-rule:#cbd2e1;--lens-copper:#4338ca;--lens-link:#4338ca;--lens-focus:#4338ca;--lens-copper-soft:#e8eafe;
+ --bg:var(--lens-paper);--panel:var(--lens-surface);--ink:var(--lens-ink);--muted:var(--lens-muted);--line:var(--lens-rule);--border:var(--lens-rule);--soft:var(--lens-copper-soft);--green:var(--lens-link);--rust:var(--lens-link);--brand-accent:var(--lens-link);
+ --ux-glass-card:rgba(99,102,241,.03);--ux-glass-border:rgba(50,60,100,.2);--ux-filter-glass:rgba(246,247,251,.94);--ux-filter-solid:#f6f7fb;
+ --ux-directory-chip-ink:#4338ca;--ux-directory-active-ink:#283795;--ux-reference-ink:#4338ca;
+ --control-bg:var(--lens-surface);--control-text:var(--lens-link);--control-border:var(--lens-rule);--control-active:var(--lens-copper-soft);--control-selected-text:var(--lens-ink);
+ background:var(--lens-paper);color:var(--lens-ink);
+}
+html body.lens-app.dark {
+ --lens-paper:#0b0f17;--lens-surface:#121722;--lens-ink:#f8fafc;--lens-muted:#94a3b8;--lens-rule:#394154;
+ --lens-copper:#a5b4fc;--lens-link:#a5b4fc;--lens-focus:#a5b4fc;--lens-copper-soft:#232747;
+ --ux-glass-card:rgba(255,255,255,.03);--ux-glass-border:rgba(255,255,255,.08);--ux-filter-glass:rgba(11,15,23,.85);--ux-filter-solid:#0b0f17;
+ --ux-directory-chip-ink:#a5b4fc;--ux-directory-active-ink:#fff;--ux-reference-ink:#a5b4fc;
+}
+html body.lens-app #main{max-width:1100px}
+html body.lens-app .ux-topic-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;overflow:visible;padding:0;scroll-snap-type:none}
+html body.lens-app a.ux-topic{display:flex;flex-direction:column;align-items:flex-start;position:relative;isolation:auto;width:100%;min-width:0;height:185px;padding:16px 8px;box-sizing:border-box;border:1px solid var(--ux-glass-border);border-radius:var(--ux-glass-radius);background:var(--ux-glass-card);color:var(--lens-ink);transition:transform .18s,border-color .18s,box-shadow .18s}
+html body.lens-app a.ux-topic::after{display:none}
+html body.lens-app a.ux-topic:hover{transform:translateY(-2px);border-color:var(--ux-glass-hover-border);box-shadow:0 5px 22px rgba(99,102,241,.14)}
+html body.lens-app .ux-topic>svg{width:26px;height:26px;color:var(--topic,var(--lens-link));margin-bottom:18px;flex:none}
+html body.lens-app .ux-tile-copy{position:static;display:flex;flex-direction:column;padding:0;gap:6px;max-width:100%;width:100%;background:transparent;border-radius:0}
+html body.lens-app .ux-tile-copy strong{font-size:1.05rem;font-weight:600;line-height:1.3;letter-spacing:-.35px;white-space:normal;color:var(--lens-ink);text-shadow:none;max-width:none}
+html body.lens-app .ux-tile-copy small{display:block;font-size:.8rem;line-height:1.4;color:var(--lens-muted);white-space:nowrap;letter-spacing:0}
+html body.lens-app .ux-count{align-self:flex-end;margin-top:auto;background:var(--lens-copper-soft);color:var(--lens-link);font-size:12px;line-height:1.4;padding:3px 8px;border-radius:var(--ux-radius-pill)}
+html body.lens-app .ux-quick-links{display:flex;gap:12px;overflow-x:auto;margin:20px 0;padding:4px 0 12px}
+html body.lens-app .ux-quick-links a{display:flex;align-items:center;min-height:44px;flex:none;border:1px solid var(--ux-glass-border);border-radius:var(--ux-radius-pill);padding:8px 14px;color:var(--lens-link);font-size:13px;background:var(--ux-glass-card)}
+html body.lens-app #lensMasthead nav.lens-primary{max-width:none;background:var(--ux-filter-solid);border-top:1px solid var(--ux-glass-border);padding-bottom:calc(10px + env(safe-area-inset-bottom))}
+html body.lens-app #lensMasthead .lens-primary a[aria-current=page]{background:var(--lens-copper-soft);box-shadow:0 0 20px rgba(99,102,241,.16);border-radius:var(--ux-radius-pill);color:var(--lens-link)}
+html body.lens-app #lensReadingBar{display:flex;flex-wrap:wrap;position:sticky;top:0;z-index:90;background:var(--ux-filter-solid);padding:8px 0;border-bottom:1px solid var(--ux-glass-border);gap:4px}
+html body.lens-app .ux-reader-controls{display:flex;align-items:center;gap:0;width:100%}
+html body.lens-app .ux-reader-controls button{display:grid;place-items:center;min-height:44px;min-width:44px;padding:4px;border:0;border-radius:8px;color:var(--lens-ink);background:transparent;font-size:14px}
+html body.lens-app .ux-reader-controls #ux-chapter-picker{margin-right:auto;display:block;text-align:left;flex:1;min-width:0;font-size:14px;font-weight:600;overflow-wrap:anywhere}
+html body.lens-app .ux-reader-controls svg{width:20px;height:20px}
+html body.lens-app #lensReadingBar .lens-reading-location{display:none}
+html body.lens-app #lensReadingBar .lens-reading-actions{margin:0;display:flex;gap:8px}
+html body.lens-app #chapter-text .verse-body{line-height:1.75;color:var(--lens-ink)}
+html body.lens-app #chapter-text .verse-num{vertical-align:super;font-size:.7em;color:var(--lens-muted)}
+html body.lens-app #chapter-text :is(.verse-body span,.person-chip,.location-chip){text-decoration:none;border-bottom:0}
+html body.lens-app #chapter-text :is(.atlas-evidence-marker,.lens-verse-evidence,.comparison-tabs,.comparison-panel,.verse-highlight-marker){display:none}
+html body.lens-app #chapter-text [data-scripture]{background:transparent;color:var(--lens-ink);text-decoration:none}
+html body.lens-app #chapter-text .verse-body :is(.person-chip,.location-chip){color:inherit;background:transparent;box-shadow:none}
+html body.lens-app #chapter-text .location-chip>:is(span,svg)[aria-hidden]{display:none}
+html body.lens-app #lensInspector{position:static;width:auto;max-height:none;display:block;border:0;background:transparent;padding:0}
+html body.lens-app .lens-reading-layout{display:block}
+html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet{position:fixed;inset:auto 0 0;margin:0;width:100%;max-width:100%;height:auto;max-height:82dvh;overflow:auto;padding:68px 22px 28px;border:1px solid var(--ux-glass-border);border-radius:18px 18px 0 0;background:var(--lens-surface);color:var(--lens-ink)}
+html body.lens-app #lensComparison{position:static;width:auto;max-width:100%;padding:0;margin:0;border:0;box-shadow:none;background:transparent;color:var(--lens-ink)}
+html body.lens-app #lensComparison :is(.lens-panel-close,.ux-popup-close){display:none}
+html body.lens-app .lens-comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+html body.lens-app .lens-comparison-passage{min-width:0;padding:10px;overflow-wrap:anywhere}
+html body.lens-app #lens-search-overlay{width:min(720px,calc(100% - 24px));max-height:85dvh;padding:60px 20px 24px;border:1px solid var(--ux-glass-border);border-radius:18px;background:var(--lens-surface);color:var(--lens-ink);overflow:auto}
+html body.lens-app #lens-search-overlay #search-view{display:block;padding:0;background:transparent}
+html body.lens-app .ux-popup{background:var(--lens-surface);color:var(--lens-ink)}
+html body.lens-app .ux-popup::backdrop{background:rgba(0,0,0,.5)}
+html body.lens-app .ux-context-links{display:flex;flex-wrap:wrap;gap:8px}
+html body.lens-app .ux-context-links h3{width:100%}
+html body.lens-app .ux-context-links button{min-height:44px;color:var(--lens-link);background:var(--lens-copper-soft);border:1px solid var(--lens-rule);border-radius:8px;padding:8px}
+@supports ((backdrop-filter:blur(12px)) or (-webkit-backdrop-filter:blur(12px))){
+ html body.lens-app :is(#lensReadingBar,#lensMasthead nav.lens-primary){background:var(--ux-filter-glass);backdrop-filter:blur(var(--ux-glass-blur));-webkit-backdrop-filter:blur(var(--ux-glass-blur))}
+}
+@media(prefers-reduced-transparency:reduce){html body.lens-app :is(#lensReadingBar,#lensMasthead nav.lens-primary,.directory-filters){background:var(--ux-filter-solid);backdrop-filter:none;-webkit-backdrop-filter:none}}
+@media(prefers-reduced-motion:reduce){html body.lens-app a.ux-topic{transition:none}html body.lens-app a.ux-topic:hover{transform:none}}
+@media(min-width:1024px){
+ html body.lens-app .ux-topic-row{grid-template-columns:repeat(4,minmax(0,1fr))}
+ html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet{inset:0 0 0 auto;width:580px;max-width:60vw;max-height:100dvh;height:100dvh;border-radius:18px 0 0 18px}
+}
+
+html body.lens-app .ux-verse-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+html body.lens-app .ux-context-links svg{width:18px;height:18px}
+html body.lens-app #lensInspector .comparison-sides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+
+html body.lens-app #chapter-text mark.side-quote{background:transparent;color:inherit;border:0;text-decoration:none}
+
+html body.lens-app .phase2-verdict:is([data-status="Textual conflict"],[data-status="Disagrees"]){background:var(--lens-copper-soft);color:var(--lens-link)}
+html body.lens-app .ux-popup .lens-kicker{font-size:12px}
+html body.lens-app #lensInspector .comparison-side{min-width:0;overflow-wrap:anywhere}
+html body.lens-app #lensInspector .comparison-side q{display:block;min-width:0}
+html body.lens-app #lensInspector .comparison-side .verse-citation{white-space:normal;max-width:100%;overflow-wrap:anywhere}
+@media(prefers-reduced-transparency:reduce){html body.lens-app #main #characters-view .directory-filters{background:var(--ux-filter-solid);backdrop-filter:none;-webkit-backdrop-filter:none}}

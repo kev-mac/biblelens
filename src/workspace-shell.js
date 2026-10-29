@@ -36,7 +36,7 @@
  navigate();
  };
  document.body.classList.add('lens-app');
- document.addEventListener('keydown',event=>{if(event.key==='Tab')document.body.classList.add('keyboard-navigation');});
+ document.addEventListener('keydown',event=>{if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'){event.preventDefault();routeTo('#search');}if(event.key==='Tab')document.body.classList.add('keyboard-navigation');});
  document.addEventListener('pointerdown',()=>document.body.classList.remove('keyboard-navigation'));
  const masthead = el('lensMasthead');
  el('reader-settings').addEventListener('close', () => el('lens-settings').focus({preventScroll:true}));
@@ -82,7 +82,7 @@
  observer.observe(main,{childList:true,subtree:true,characterData:true});
  // Sheets are inline tasks. Keep async profile titles and reused sheets current.
  function dialogPaths(){for(const dialog of document.querySelectorAll('dialog[open]')){
-  const title=dialog.querySelector('h1,h2,h3')?.textContent.trim()||dialog.getAttribute('aria-label')||'Details';
+  const title=[...dialog.querySelectorAll('h1,h2,h3')].find(node=>!node.closest('[hidden]'))?.textContent.trim()||dialog.getAttribute('aria-label')||'Details';
   let nav=dialog.querySelector('.ux-dialog-path');
   if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='←';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
   const collection={characters:'People',places:'Places',stories:'Stories',commandments:'Commandments',prophecies:'Prophecies',timeline:'History & Timeline'}[view];

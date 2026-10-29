@@ -61,7 +61,8 @@
   if(settings&&!loaded.has('study')){event.preventDefault();event.stopImmediatePropagation();load('study').then(()=>settings.click()).catch(error=>toast(error.message));return;}
 
  },true);
- function openAtlas(id,button){load('map').then(()=>window.BibleLensAtlas.open(id,button)).catch(error=>toast(error.message));}
+ function verseContext(button){const verse=button?.closest('#chapter-text .verse');if(!verse||!window.BibleLensWorkspace?.inspectVerse)return false;window.BibleLensWorkspace.inspectVerse(Number(verse.id.replace('verse-','')),true,button);return true;}
+ function openAtlas(id,button){if(verseContext(button))return;load('map').then(()=>window.BibleLensAtlas.open(id,button)).catch(error=>toast(error.message));}
 // Holding a place opens its in-app contents, and scrolling cancels the hold.
 let placePress=null,placeTimer=0,suppressPlaceUntil=0;
 function cancelPlacePress(){clearTimeout(placeTimer);placePress=null;}
@@ -73,12 +74,12 @@ document.addEventListener('pointerdown',event=>{
 document.addEventListener('pointermove',event=>{if(placePress&&placePress.id===event.pointerId&&Math.hypot(event.clientX-placePress.x,event.clientY-placePress.y)>8)cancelPlacePress();},true);
 for(const type of ['pointerup','pointercancel'])document.addEventListener(type,cancelPlacePress,true);
 document.addEventListener('scroll',cancelPlacePress,true);
-document.addEventListener('contextmenu',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();cancelPlacePress();suppressPlaceUntil=Date.now()+1000;if(!document.querySelector('#atlas-sheet').open)openAtlas(chip.dataset.placeId,chip);},true);
+document.addEventListener('contextmenu',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();cancelPlacePress();suppressPlaceUntil=Date.now()+1000;if(!document.querySelector('#atlas-sheet')?.open)openAtlas(chip.dataset.placeId,chip);},true);
 // Capture prevents reader verse gestures and citation navigation from handling a chip tap.
 document.addEventListener('click',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(Date.now()<suppressPlaceUntil)return;openAtlas(chip.dataset.placeId,chip);},true);
 for(const type of ['pointerdown','dblclick','contextmenu'])document.addEventListener(type,event=>{if(event.target.closest('[data-place-id]'))event.stopImmediatePropagation();},true);
 // People cards open over the current reading position, like the atlas.
-document.addEventListener('click',event=>{const chip=event.target.closest('[data-person-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(window.getSelection()?.toString())return;load('study').then(()=>load('characters')).then(()=>window.dispatchEvent(new CustomEvent('open-person',{detail:{id:chip.dataset.personId,opener:chip}}))).catch(error=>toast(error.message));},true);
+document.addEventListener('click',event=>{const chip=event.target.closest('[data-person-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(window.getSelection()?.toString())return;if(verseContext(chip))return;load('study').then(()=>load('characters')).then(()=>window.dispatchEvent(new CustomEvent('open-person',{detail:{id:chip.dataset.personId,opener:chip}}))).catch(error=>toast(error.message));},true);
 for(const type of ['pointerdown','dblclick'])document.addEventListener(type,event=>{if(event.target.closest('[data-person-id]'))event.stopImmediatePropagation();},true);
 
  function references(){if((['stories','evidence'].includes(view)||(view==='read'&&typeof reading!=='undefined'&&reading&&!reading.verses[0]?.referenceLinks)))requestAnimationFrame(()=>requestAnimationFrame(()=>load('references').catch(()=>{})));}

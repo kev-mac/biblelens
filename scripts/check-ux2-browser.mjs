@@ -18,10 +18,8 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Read','Explore','Saved']);
   assert.deepEqual(await page.locator('.ux-topic strong').allTextContents(),['Stories','People','Places','Commandments','Evidence']);
   assert.equal(await page.locator('.ux-topic-row').count(),1);
-  await page.waitForFunction(()=>{const row=document.querySelector('.ux-topic-row');return row.clientWidth>0&&Math.abs(row.clientWidth-row.querySelector('a').getBoundingClientRect().width)<2;});
-  await page.waitForFunction(()=>document.querySelector('.ux-topic img').complete);
-  await shot('explore');
-  await page.getByRole('button',{name:'Next topic',exact:true}).tap();await page.waitForFunction(()=>document.querySelector('.ux-carousel-controls [role=status]').textContent.startsWith('2 of'));
+  assert.equal(await page.locator('.ux-topic-row').evaluate(n=>getComputedStyle(n).gridTemplateColumns.split(' ').length),2);
+  await shot('explore-grid');
   await page.locator('[data-topic=people]').tap();await page.waitForSelector('.ux-person-open');
   assert.equal(await page.locator('.characters-alphabet').count(),0);assert.equal(await page.locator('#characters-list>.character-card').count(),15);
   assert.match(await page.locator('.characters-pagination').innerText(),/Page 1 of \d+/);await shot('people-page-1');
@@ -33,7 +31,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await page.locator('a[aria-label="Open Moses"]').tap();mosesTaps++;assert(mosesTaps<=2,'Moses opens within two taps from People search');await page.waitForSelector('#character-sheet[open]');assert.match(await page.locator('#character-sheet').innerText(),/Moses/);
   assert.equal(await page.locator('#character-sheet button[aria-label=Close]').count(),1);await page.keyboard.press('Escape');await page.waitForSelector('#character-sheet[open]',{state:'hidden'});
   await go('#discover?section=evidence','.ux-topic-row');
-  assert.deepEqual(await page.locator('.ux-topic strong').allTextContents(),['History','Science','Timeline','Text Comparisons','Translations','Questions']);await shot('evidence-carousel');
+  assert.deepEqual(await page.locator('.ux-topic strong').allTextContents(),['History','Science','Timeline','Text Comparisons','Translations','Questions','Prophecies']);await shot('evidence-grid');
   // Child-path matrix: swiping locates a tile; only activations count as taps.
   await go('#discover','.ux-topic-row');
   await page.locator('.ux-topic[data-topic=evidence]').scrollIntoViewIfNeeded();
@@ -71,9 +69,9 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   const close=page.locator('#lens-inspector-sheet button[aria-label=Close]');assert.equal(await close.count(),1);const r=await close.boundingBox();assert(r.width>=44&&r.height>=44);
   await page.touchscreen.tap(2,2);await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-focus');
   await page.locator('#lens-focus').tap();await page.keyboard.press('Escape');await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});
-  await page.locator('#lens-compare').tap();await page.waitForSelector('#lensComparison[open]');assert.equal(await page.locator('#lensComparison img').count(),0);await shot('read-compare');
+  await page.locator('#lens-compare').tap();await page.waitForSelector('#lens-inspector-sheet[open]');assert.equal(await page.locator('#lensComparison img').count(),0);await shot('read-compare');
   await page.locator('#lens-compare-right').fill('Genesis 2');await page.getByRole('button',{name:'Compare passages',exact:true}).tap();await page.waitForSelector('.lens-comparison-passage');await shot('read-compare');
-  await page.touchscreen.tap(2,2);await page.waitForSelector('#lensComparison[open]',{state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-compare');
+  await page.touchscreen.tap(2,2);await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-compare');
   await page.locator('.study-library>summary').tap();await page.locator('#collection').scrollIntoViewIfNeeded();assert.equal(await page.locator('#collection input[type=search]').count(),0);await shot('studies');
   await page.locator('#lens-settings').tap();await page.waitForSelector('#reader-settings[open]');assert.equal(await page.locator('#reader-settings button[aria-label=Close]').count(),1);await page.keyboard.press('Escape');await page.waitForSelector('#reader-settings[open]',{state:'hidden'});
   assert.deepEqual(errors,[]);results.push({engine,width,height,theme,status:'PASS',mosesTaps,questionTaps,homeTaps,questionRoutes:'PASS',outsideEvidence:'PASS',outsideCompare:'PASS'});

@@ -89,7 +89,7 @@ function confirmNoteAction(message,action){
 }
 function persist(source='local'){const saved=workspaceStore.save();window.dispatchEvent(new CustomEvent('biblelens:statechange',{detail:{source}}));if(saved)globalThis.BibleLensCloud?.changed?.();return saved;}
 if(state.glassAppearanceVersion!=='midnight-v1'){state.theme='dark';state.glassAppearanceVersion='midnight-v1';persist();}
-function applyTheme(){document.querySelectorAll('meta[name="theme-color"]').forEach(meta=>{meta.content=state.theme==='dark'?'#121520':'#f6f7fb';});document.body.classList.toggle('dark',state.theme==='dark');$('#theme').setAttribute('aria-pressed',String(state.theme==='dark'))}applyTheme();
+function applyTheme(){document.querySelectorAll('meta[name="theme-color"]').forEach(meta=>{meta.content=state.theme==='dark'?'#0B0F17':'#f6f7fb';});document.body.classList.toggle('dark',state.theme==='dark');$('#theme').setAttribute('aria-pressed',String(state.theme==='dark'))}applyTheme();
 function corpus(e){return [e.title,e.type,e.topic,e.refs.join(' '),e.intro,e.claim,e.response,e.assessment,e.context,e.translation,...e.passages.flat()].join(' ').toLowerCase()}
 function matches(e,q){return q.trim().toLowerCase().split(/\s+/).filter(Boolean).every(word=>corpus(e).includes(word))}
 

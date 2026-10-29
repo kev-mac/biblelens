@@ -23,7 +23,7 @@ for(const [name,type] of Object.entries({chromium,webkit})){
      await page.setViewportSize({width,height:812});
      const metrics=await page.locator('.ux-tile-copy strong').evaluateAll(nodes=>nodes.map(n=>{const r=document.createRange();r.selectNodeContents(n);return {text:n.textContent,lines:r.getClientRects().length,width:r.getBoundingClientRect().width,available:n.clientWidth,size:getComputedStyle(n).fontSize};}));
      assert.equal(new Set(metrics.map(n=>n.size)).size,1,'All collection titles use the same size');
-     for(const label of metrics){assert(label.width<=label.available+1,label.text+' fits at '+width);assert.equal(label.lines,1,label.text+' stays on one line at '+width);}
+     for(const label of metrics){assert(label.width<=label.available+1,label.text+' fits at '+width);assert(label.lines<=2,label.text+' stays within two grid lines at '+width);}
      await links();
     }
    }
@@ -38,8 +38,8 @@ for(const [name,type] of Object.entries({chromium,webkit})){
     await links();await page.keyboard.press('Escape');
    };
    // Check the shell before any directory stylesheet has loaded.
-   for(const [trigger,selector] of [['#lens-focus','#lens-inspector-sheet'],['#lens-compare','#lensComparison']]){await page.locator(trigger).click();await closeAtCorner(selector);}
-   await page.locator('#verse-1 .verse-body').click();const preview=await page.locator('.verse-preview').boundingBox();assert(preview.x>=0&&preview.x+preview.width<=430);assert(preview.height<600,'Verse preview sizes to its content');await closeAtCorner('.verse-preview');
+   for(const [trigger,selector] of [['#lens-focus','#lens-inspector-sheet'],['#lens-compare','#lens-inspector-sheet']]){await page.locator(trigger).click();await closeAtCorner(selector);}
+   await page.locator('#verse-1 .verse-body').click();await closeAtCorner('#lens-inspector-sheet');
    const id=await page.evaluate(()=>ENTRIES[0].id);await go('#study/'+id,'#study-dialog[open]');await closeAtCorner('#study-dialog');
    await go('#people','.ux-person-open');await page.locator('#characters-search').fill('Moses');await page.locator('a[aria-label="Open Moses"]').click();await closeAtCorner('#character-sheet');await page.locator('#characters-search').fill('');
    for(const [hash,selector] of [['#people','.characters-pagination'],['#places','.places-directory-pagination'],['#evidence/T','.category-pagination']]){
@@ -60,7 +60,7 @@ for(const [name,type] of Object.entries({chromium,webkit})){
    await go('#notebook','#lens-notebook-list');await links();
    const labels=await page.locator('[data-lens-filter]').evaluateAll(nodes=>nodes.map(n=>{const r=document.createRange();r.selectNodeContents(n);return {lines:r.getClientRects().length,width:r.getBoundingClientRect().width,available:n.clientWidth};}));
    for(const label of labels){assert.equal(label.lines,1);assert(label.width<=label.available);}
-   assert.deepEqual(errors,[]);await context.close();console.log(`PASS ${name} ${theme}: all 71 widths 360–430; consistent one-line titles, links/focus, 44px popup/paging controls, SVG corners, content-sized verse preview and Saved filters`);
+   assert.deepEqual(errors,[]);await context.close();console.log(`PASS ${name} ${theme}: all 71 widths 360–430; consistent grid titles, links/focus, 44px popup/paging controls, SVG corners, shared verse drawer and Saved filters`);
   }
  }finally{await browser.close();}
 }

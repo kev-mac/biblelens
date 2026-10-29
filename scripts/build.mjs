@@ -58,7 +58,11 @@ assets['/collection-counts.json']={type:'application/json; charset=utf-8',body:J
  stories:uxRead('data/stories.json').reduce((n,g)=>n+g.stories.length,0),
  commandments:uxRead('data/commandments-catalog.json').records.length,
  science:uxEvidence.filter(r=>r.mode==='science').length,history:uxEvidence.filter(r=>r.mode==='history').length,
- translation:uxEvidence.filter(r=>(r.tags||[r.tag]).includes('T')).length
+ translation:uxEvidence.filter(r=>(r.tags||[r.tag]).includes('T')).length,
+ text:uxEvidence.filter(r=>!['science','history'].includes(r.mode)).length,
+ questions:accepted.questions.length,timeline:loadTimelineCatalog().events.length,
+ prophecies:uxRead('src/data/prophecies.json').length,
+ evidence:uxEvidence.length
 })};
 assets['/explore-feed.json']={type:'application/json; charset=utf-8',body:JSON.stringify(exploreFeed())};
 const referenceBundle=await build({entryPoints:['src/reference-cache.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
