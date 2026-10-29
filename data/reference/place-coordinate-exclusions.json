@@ -1,0 +1,97 @@
+{
+  "revision": "52e049efb3b95e4f1da52d11a3303fbd2d648922",
+  "url": "https://raw.githubusercontent.com/robertrouse/theographic-bible-metadata/52e049efb3b95e4f1da52d11a3303fbd2d648922/json/places.json",
+  "excludedCoordinates": [
+    {
+      "id": "recEqQREaXQbx8Uuf",
+      "name": "Baal",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "recGvmVzGXwM0gcuz",
+      "name": "Baalath-beer",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "recgHRXfPTqW94gKC",
+      "name": "Beer-elim",
+      "latitude": "30.998062",
+      "longitude": "35.498547",
+      "reason": "Reviewed source/context conflict; no supported alternative coordinate in the dataset."
+    },
+    {
+      "id": "recexdp2klTSY2AmR",
+      "name": "Bethel (of Judah)",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "recMycRUPsdlPW8ZK",
+      "name": "Bethuel",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "recQTK887MoYPCCId",
+      "name": "Bethul",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "recSSa66yHtBR12pu",
+      "name": "Chesil",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "rec8l1lVhso3t7ULj",
+      "name": "Eltolad",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "recNerBj6ADOpYbfh",
+      "name": "Ezem",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "recSPzi0p68v5OEah",
+      "name": "Hosah",
+      "latitude": "32.178502",
+      "longitude": "35.22758",
+      "reason": "Reviewed source/context conflict; no supported alternative coordinate in the dataset."
+    },
+    {
+      "id": "recIwErv710ydIveN",
+      "name": "Iim",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "recevwD8aPKX3CoC6",
+      "name": "Ramoth",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    },
+    {
+      "id": "recXH0UZI6yZKjxYj",
+      "name": "Tolad",
+      "latitude": "32.049953",
+      "longitude": "35.733402",
+      "reason": "Shared upstream placeholder; source descriptions conflict with this point."
+    }
+  ]
+}

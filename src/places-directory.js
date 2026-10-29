@@ -22,6 +22,7 @@ function placeCard(place, duplicate){
  const meta=node('div','ux-place-meta');
  if(place.featureType)meta.append(node('span','',place.featureType));
  if(place.coordinates)meta.append(node('span','',place.coordinates.latitude.toFixed(5)+', '+place.coordinates.longitude.toFixed(5)));
+ else meta.append(node('span','','Location unknown'));
  card.append(meta);
  const figure=node('div','place-map-actions');
  const map=node('button','place-map-action','Map');map.type='button';map.dataset.placeId=place.id;map.disabled=!place.coordinates;map.setAttribute('aria-label','Map: '+place.name+' in the atlas');
@@ -33,7 +34,7 @@ function placeCard(place, duplicate){
  if(fullDescription&&fullDescription!=='No description is available in this reference dataset.'){const details=node('details');details.append(node('summary','','Source description'),node('p','',fullDescription));panel.append(details);}
  for(const [label,value] of [['Type',place.featureType],['Modern name',place.modern_name],['Location precision',place.precision]])if(value)panel.append(node('p','',label+': '+value));
  if(place.coordinates)panel.append(node('p','',place.coordinates.latitude.toFixed(5)+', '+place.coordinates.longitude.toFixed(5)));
- panel.append(node('p','characters-note',place.coordinates?'Dataset location; historical identifications and precision vary. Modern map labels do not establish ancient boundaries.':'Coordinates are unavailable for this location.'));
+ panel.append(node('p','characters-note',place.coordinates?'Dataset location; historical identifications and precision vary. Modern map labels do not establish ancient boundaries.':'Location unknown'));
  const popover=node('div','character-source-popover');popover.id='place-source-'+place.id;popover.setAttribute('popover','auto');popover.setAttribute('role','dialog');popover.setAttribute('aria-labelledby',popover.id+'-title');source.setAttribute('popovertarget',popover.id);source.setAttribute('aria-haspopup','dialog');
  const header=node('div','character-source-header'),title=node('h3','','Place Data Source');title.id=popover.id+'-title';
  const close=node('button','','×');close.type='button';close.autofocus=true;close.setAttribute('aria-label','Close place source');close.setAttribute('popovertarget',popover.id);close.setAttribute('popovertargetaction','hide');header.append(title,close);popover.append(header);

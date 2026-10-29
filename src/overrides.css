@@ -2444,8 +2444,9 @@ html body.lens-app [popover]{max-width:calc(100vw - 32px);max-height:75dvh;overf
 html body.lens-app #lensReadingBar{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:4px 0;margin:0 0 12px}
 html body.lens-app #lensReadingBar .ux-reader-controls{width:auto;flex:1;gap:0;min-width:0}
 html body.lens-app #lensReadingBar #ux-chapter-picker{font-size:14px}
-html body.lens-app #lensReadingBar .lens-edition-label{width:56px;flex:none;margin:0}
-html body.lens-app #lensReadingBar #lens-edition{min-height:44px;width:56px;padding:2px;border-radius:20px;font-size:12px}
+html body.lens-app #lensReadingBar .lens-edition-label{width:56px;flex:none;margin:0;position:relative}
+html body.lens-app #lensReadingBar .lens-edition-label::after{content:"";position:absolute;right:7px;top:18px;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);pointer-events:none}
+html body.lens-app #lensReadingBar #lens-edition{appearance:none;height:44px;min-height:44px;min-width:56px;width:56px;box-sizing:border-box;padding:2px 16px 2px 6px;border-radius:20px;font-size:12px}
 html body.lens-app #lensReadingBar #lens-focus{font-size:12px;padding:6px;min-height:44px;min-width:60px}
 html body.lens-app #lensReadingBar #lens-focus[aria-pressed=true]{background:var(--lens-copper-soft);border-color:var(--lens-link)}
 html body.lens-app #lensReadingBar .lens-reading-actions[hidden],html body.lens-app .ux-type-panel[hidden],html body.lens-app .lens-note-editor[hidden]{display:none}
@@ -2470,6 +2471,11 @@ html body.lens-app .ux-letter-heading{position:sticky;top:var(--ux-letter-sticky
 html body.lens-app .ux-letter-bubble[hidden]{display:none}
 html body.lens-app #lens-inspector-sheet #lensInspector[hidden]{display:none}
 html body.lens-app #lensReadingBar #lens-edition{font-size:16px}
+/* Keep fixed targets from shrinking into the translation picker on narrow screens. */
+html body.lens-app #lensReadingBar .ux-reader-controls > button:not(#ux-chapter-picker){flex:0 0 44px}
+html body.lens-app #lensReadingBar .ux-reader-controls{flex-basis:240px}
+/* Search is a dialog outside #main, so its section labels need their own rule. */
+html body.lens-app #lens-search-overlay .lens-result-group > h2{font-size:12px;line-height:1.5;font-weight:700;letter-spacing:1px;text-transform:uppercase}
 html body.lens-app .ux-interior-chips #commandments-search-box{width:230px}
 html body.lens-app #read-view .home-heading{display:none}
 html body.lens-app #chapter-text .atlas-evidence-marker::after{display:none;content:none}

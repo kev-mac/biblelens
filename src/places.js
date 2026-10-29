@@ -35,7 +35,7 @@ async function openAtlas(id,button){
   document.querySelector('#atlas-name').classList.remove('loading-state');document.querySelector('#atlas-name').textContent=place.name;
   document.querySelector('#atlas-names').textContent=[place.modern_name&&`Modern name: ${place.modern_name}`,place.aliases.length&&`Also called ${place.aliases.join(', ')}`].filter(Boolean).join(' · ');
   const description=document.querySelector('#atlas-description');description.textContent=atlasDescription(place);description.hidden=!description.textContent;
-  if(!place.coordinates){status.textContent='Coordinates are unavailable for this location.';identification.textContent=status.textContent;return;}
+  if(!place.coordinates){identification.textContent='Location unknown';return;}
   const {latitude,longitude}=place.coordinates,point=[longitude,latitude];mapNode.hidden=false;
   const approximate=place.verification!=='VERIFIED'||!['Precise','Center'].includes(place.precision);
   identification.textContent=approximate?'Approximate reference point · Ancient identification is uncertain. The map shows modern geographical context.':'Dataset reference point · Historical identifications vary. The map shows modern geographical context.';
