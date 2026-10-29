@@ -8,7 +8,20 @@ fs.mkdirSync(output,{recursive:true});
 const matrix=[];
 for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch();
- try{for(const [width,height] of [[375,812],[430,932]])for(const theme of ['dark','light']){
+ try{
+  // Exercise delayed production counts on both sides of the editorial threshold.
+  for(const total of [19,20]){
+   const context=await browser.newContext(),page=await context.newPage();
+   let resolveCounts;const ready=new Promise(resolve=>{resolveCounts=resolve;});
+   await page.route('**/collection-counts.json',async route=>{await ready;const response=await route.fetch();await route.fulfill({json:{...await response.json(),prophecies:total}});});
+   await page.goto(base+'/#discover?section=evidence');await page.locator('.ux-topic').first().waitFor();
+   assert.equal(await page.locator('[data-topic=prophecies]').count(),0,'Hide until counts are known');resolveCounts();
+   await page.waitForFunction(()=>document.querySelector('.ux-count')?.textContent!=='…');
+   assert.equal(await page.locator('[data-topic=prophecies]').count(),total>=20?1:0,'Production threshold '+total);
+   await page.evaluate(()=>BibleLensWorkspace.navigate('#prophecies'));await page.locator('.prophecy-card').first().waitFor();
+   await context.close();
+  }
+  for(const [width,height] of [[375,812],[430,932]])for(const theme of ['dark','light']){
   const context=await browser.newContext({viewport:{width,height},isMobile:true,hasTouch:true,reducedMotion:'reduce'});
   const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base);await page.waitForFunction(()=>!document.documentElement.classList.contains('bl-starting'));
@@ -24,11 +37,11 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   assert.equal(await page.locator('.ux-topic-row').evaluate(n=>getComputedStyle(n).gridTemplateColumns.split(' ').length),2);
   const counts=await (await page.request.get(base+'/collection-counts.json')).json();
   for(const tile of await page.locator('.ux-topic').all()){const key=await tile.getAttribute('data-topic');assert.equal(await tile.locator('.ux-count').textContent(),counts[key].toLocaleString());}
-  for(const small of await page.locator('.ux-tile-copy small').all())assert(await small.evaluate(n=>n.scrollWidth<=n.clientWidth),'One-line subtitle fits');
+  for(const small of await page.locator('.ux-tile-copy small').all())assert(await small.evaluate(n=>n.scrollWidth<=n.clientWidth),'Subtitle fits within tile');
   await shot('explore');await shot('tab-bar');await page.locator('.ux-quick-links').scrollIntoViewIfNeeded();await shot('quick-links');
   await page.locator('.ux-topic[data-topic=people]').tap();await page.locator('#characters-list .ux-person-open').first().waitFor();await shot('people');
   await page.locator('.ux-person-open').first().tap();await page.locator('#character-sheet[open]').waitFor();await page.keyboard.press('Escape');const peopleTaps=2;
-  await go('#discover','.ux-topic');await page.locator('.ux-topic[data-topic=evidence]').tap();await page.locator('.ux-topic[data-topic=questions]').waitFor();await shot('evidence');await page.locator('.ux-topic[data-topic=prophecies]').scrollIntoViewIfNeeded();await shot('evidence-bottom');
+  await go('#discover','.ux-topic');await page.locator('.ux-topic[data-topic=evidence]').tap();await page.locator('.ux-topic[data-topic=questions]').waitFor();assert.equal(await page.locator('.ux-topic[data-topic=prophecies]').count(),counts.prophecies>=20?1:0);await shot('evidence');await page.locator('.ux-topic').last().scrollIntoViewIfNeeded();await shot('evidence-bottom');
   await page.locator('.ux-topic[data-topic=questions]').tap();await page.locator('.accepted-questions a').first().waitFor();await page.locator('.accepted-questions a').first().tap();await page.locator('[data-accepted-save]').waitFor();const questionTaps=3;
   await go('#read/0/1','#ux-next');await page.locator('#verse-1 .verse-num').waitFor();await shot('reader-bar');
   const size=await page.evaluate(()=>state.textScale);await page.locator('#ux-font-more').tap();assert.equal(await page.evaluate(()=>state.textScale),size+.05);await page.locator('#ux-font-less').tap();

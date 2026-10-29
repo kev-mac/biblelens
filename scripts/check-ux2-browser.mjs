@@ -31,7 +31,9 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await page.locator('a[aria-label="Open Moses"]').tap();mosesTaps++;assert(mosesTaps<=2,'Moses opens within two taps from People search');await page.waitForSelector('#character-sheet[open]');assert.match(await page.locator('#character-sheet').innerText(),/Moses/);
   assert.equal(await page.locator('#character-sheet button[aria-label=Close]').count(),1);await page.keyboard.press('Escape');await page.waitForSelector('#character-sheet[open]',{state:'hidden'});
   await go('#discover?section=evidence','.ux-topic-row');
-  assert.deepEqual(await page.locator('.ux-topic strong').allTextContents(),['History','Science','Timeline','Text Comparisons','Translations','Questions','Prophecies']);await shot('evidence-grid');
+  const counts=await (await page.request.get(base+'/collection-counts.json')).json();
+  await page.waitForFunction(()=>document.querySelector('.ux-count')?.textContent!=='…');
+  assert.deepEqual(await page.locator('.ux-topic strong').allTextContents(),['History','Science','Timeline','Text Comparisons','Translations','Questions',...(counts.prophecies>=20?['Prophecies']:[])]);await shot('evidence-grid');
   // Child-path matrix: swiping locates a tile; only activations count as taps.
   await go('#discover','.ux-topic-row');
   await page.locator('.ux-topic[data-topic=evidence]').scrollIntoViewIfNeeded();

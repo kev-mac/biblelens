@@ -2347,3 +2347,6 @@ html body.lens-app #lensInspector .comparison-side{min-width:0;overflow-wrap:any
 html body.lens-app #lensInspector .comparison-side q{display:block;min-width:0}
 html body.lens-app #lensInspector .comparison-side .verse-citation{white-space:normal;max-width:100%;overflow-wrap:anywhere}
 @media(prefers-reduced-transparency:reduce){html body.lens-app #main #characters-view .directory-filters{background:var(--ux-filter-solid);backdrop-filter:none;-webkit-backdrop-filter:none}}
+
+/* The Places description wraps within narrow phone tiles. */
+html body.lens-app .ux-topic[data-topic="places"] .ux-tile-copy small{white-space:normal}
