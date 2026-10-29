@@ -212,7 +212,7 @@ referenceCard.children[2].children[0].children[0].events.click();
 const verseLinks=referenceCard.children[2].children[1].children.at(-1).children;
 assert.equal(verseLinks[0].tag,'a');assert.equal(verseLinks[0].href,characterVerseRoute(people[0].key_passages[0]));
 const directorySource=fs.readFileSync('src/components/characters/CharactersView.tsx','utf8');
-assert(directorySource.includes('characterPage(matches, page).map(CharacterCard)'));
+assert(directorySource.includes('characterPage(matches,page)'));assert(directorySource.includes('list.append(PersonContact(person))'));
 assert(!directorySource.includes('matches.map(CharacterCard)'));
 console.log(`PASS: ${people.length} fetched Theographic people, alias search, safe text, reader passage buttons, bounded ${CHARACTER_PAGE_SIZE}-card pages, request caching and retry.`);
 

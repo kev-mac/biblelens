@@ -16,7 +16,7 @@ export function parsePlaces(data){
   const coordinates=lat!==null&&lat!==undefined&&String(lat).trim()!==''&&lon!==null&&lon!==undefined&&String(lon).trim()!==''&&Number.isFinite(latitude)&&Number.isFinite(longitude)&&Math.abs(latitude)<=90&&Math.abs(longitude)<=180?{latitude,longitude}:null;
   const aliases=[...names(f.aliases),f.kjvName,f.esvName,...names(f.otherNames).map(key=>raw.get(key)?.displayTitle)].filter(n=>n&&n!==name);
   const description=plain(f.description||f.comment||names(f.dictText)[0]);
-  places.set(id,{id,lookupIds:[f.slug,f.placeID].filter(v=>v!==undefined).map(String),name,modern_name:f.modern_name||f.modernName||null,aliases:[...new Set(aliases)],coordinates,description:description.length>600?description.slice(0,600).replace(/\s+\S*$/,'')+'…':description||'No description is available in this reference dataset.',featureType:f.featureType||null,verification:f.recogitoStatus||null,precision:f.precision||null,canonicalId:names(f.canonicalPlace)[0]||id,personNames:names(f.personNames),ambiguous:!!f.ambiguous});
+  places.set(id,{id,linkedPassageCount:Number.isInteger(f.linkedPassageCount)?f.linkedPassageCount:null,shortDescription:plain(f.description||f.comment||''),lookupIds:[f.slug,f.placeID].filter(v=>v!==undefined).map(String),name,modern_name:f.modern_name||f.modernName||null,aliases:[...new Set(aliases)],coordinates,description:description.length>600?description.slice(0,600).replace(/\s+\S*$/,'')+'…':description||'No description is available in this reference dataset.',featureType:f.featureType||null,verification:f.recogitoStatus||null,precision:f.precision||null,canonicalId:names(f.canonicalPlace)[0]||id,personNames:names(f.personNames),ambiguous:!!f.ambiguous});
  }
  return places;
 }

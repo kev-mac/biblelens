@@ -2350,3 +2350,79 @@ html body.lens-app #lensInspector .comparison-side .verse-citation{white-space:n
 
 /* The Places description wraps within narrow phone tiles. */
 html body.lens-app .ux-topic[data-topic="places"] .ux-tile-copy small{white-space:normal}
+
+/* UX6: the selected review uses the existing palette and shared app font. */
+html body.lens-app a.ux-topic{padding:16px 10px;height:185px;gap:8px}
+html body.lens-app .ux-topic>svg{box-sizing:content-box;width:24px;height:24px;padding:10px;border-radius:12px;background:var(--lens-copper-soft);margin-bottom:4px}
+html body.lens-app .ux-count{position:absolute;right:10px;top:12px;margin:0;font-size:12px;padding:3px 6px}
+html body.lens-app .ux-topic[data-topic=evidence]{grid-column:1/-1;height:120px;flex-direction:row;align-items:center;gap:16px;padding:20px}
+html body.lens-app .ux-topic[data-topic=evidence] .ux-tile-copy{width:auto}
+html body.lens-app .ux-daily-question{display:block;padding:18px;margin:12px 0 20px;border:1px solid var(--ux-glass-border);border-radius:16px;background:var(--lens-copper-soft);color:var(--lens-ink)}
+html body.lens-app .ux-daily-question h2{font-size:20px;line-height:1.4;margin:8px 0 0}
+html body.lens-app :is(.directory-categories,.ux-context-tabs).ux-overflow-right{mask-image:linear-gradient(to right,#000 calc(100% - 18px),transparent);padding-right:24px;scroll-padding-right:24px}
+html body.lens-app .ux-search-field{position:relative;display:flex;align-items:center;flex:1;min-width:0;width:100%}
+html body.lens-app .ux-search-field input{width:100%;padding-right:48px;min-width:0}
+html body.lens-app input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none}
+html body.lens-app .ux-search-clear{position:absolute;right:2px;top:50%;transform:translateY(-50%);width:44px;min-width:44px;height:44px;padding:0;border:0;background:transparent;color:var(--lens-ink);font-size:24px;border-radius:8px}
+html body.lens-app .ux-search-field:focus-within{outline:2px solid var(--lens-focus);outline-offset:3px;border-radius:10px}
+html body.lens-app #chapter-text .verse-body{line-height:1.9}
+html body.lens-app #chapter-text .verse-num{color:var(--lens-link);font-weight:700}
+html body.lens-app #lensMasthead .lens-primary a:not([aria-current]){color:var(--lens-ink)}
+html body.lens-app #chapter-text .verse.lens-active-verse{background:var(--lens-copper-soft);border-radius:6px;box-shadow:inset 0 0 0 1px var(--lens-link)}
+html body.lens-app .sheet-handle{position:absolute;top:12px;left:calc(50% - 18px);width:36px;height:4px;border-radius:2px;background:var(--lens-muted)}
+html body.lens-app #lensComparison .lens-inspector-header{display:none}
+html body.lens-app #lensComparison{padding-top:0}
+html body.lens-app .ux-verse-actions{flex-wrap:nowrap;gap:8px;margin:8px 0}
+html body.lens-app .ux-verse-actions button{display:grid;place-items:center;width:44px;height:44px;min-width:44px;padding:10px}
+html body.lens-app .ux-verse-actions svg{width:20px;height:20px}
+html body.lens-app .ux-context-tabs{display:flex;gap:6px;overflow-x:auto;margin:12px 0}
+html body.lens-app .ux-context-tabs button{flex:none;min-height:44px;padding:8px 12px;border:1px solid var(--lens-rule);border-radius:22px;background:var(--ux-glass-card);color:var(--lens-ink);font-size:13px}
+html body.lens-app .ux-context-tabs [aria-selected=true]{background:var(--lens-copper-soft);border-color:var(--lens-link)}
+html body.lens-app .lens-evidence{padding:16px;border:1px solid var(--ux-glass-border);border-radius:12px;background:var(--ux-glass-card);margin:12px 0}
+html body.lens-app .lens-evidence-meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--lens-muted)}
+html body.lens-app .lens-evidence-meta>span:first-child{text-transform:uppercase;letter-spacing:.07em}
+html body.lens-app .ux-evidence-articles{display:grid;gap:14px}
+html body.lens-app .ux-evidence-article{display:block;padding:20px;background:var(--ux-glass-card);border:1px solid var(--ux-glass-border);border-radius:14px;color:var(--lens-ink)}
+html body.lens-app .ux-evidence-article h2{font-size:21px;margin:14px 0 10px;line-height:1.4}
+html body.lens-app .ux-evidence-article p{color:var(--lens-muted);line-height:1.6;margin:0}
+html body.lens-app .ux-reading-time{float:right;font-size:12px;color:var(--lens-muted)}
+html body.lens-app #characters-list{display:grid;grid-template-columns:minmax(0,1fr);gap:0;padding-right:40px}
+html body.lens-app #main #characters-list .ux-contact{display:block;height:auto;min-height:78px;padding:12px 0;border:0;border-bottom:1px solid var(--lens-rule);border-radius:0;background:transparent;box-shadow:none;margin:0}
+html body.lens-app #main #characters-list .ux-contact .character-card-header{display:flex;align-items:center;gap:0;min-width:0;padding:0}
+html body.lens-app #main #characters-list .ux-contact .ux-person-open{position:static;inset:auto;width:auto;height:auto;font-size:16px;display:flex;align-items:center;justify-content:flex-start;gap:10px;flex:1;min-width:0;padding:0;color:var(--lens-ink)}
+html body.lens-app .ux-contact-copy{min-width:0;flex:1}
+html body.lens-app #main #characters-list .ux-contact .character-name{font-size:16px;line-height:1.35;margin:0;overflow-wrap:anywhere}
+html body.lens-app .ux-contact-subtitle{font-size:12px;line-height:1.5;color:var(--lens-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:4px 0 0}
+html body.lens-app .ux-avatar{flex:none;display:grid;place-items:center;width:36px;height:40px;border-radius:10px;background:var(--lens-copper-soft);color:var(--lens-link);font-size:14px;font-weight:600}
+html body.lens-app #main #characters-list .ux-contact .directory-save{position:static;flex:none;width:44px;height:44px;margin:0;padding:10px}
+html body.lens-app .ux-letter-heading{font-size:14px;color:var(--lens-link);margin:16px 0 4px;scroll-margin-top:210px}
+html body.lens-app #characters-view .directory-alphabet{position:fixed;z-index:95;top:180px;bottom:100px;right:max(0px,calc((100vw - 1100px)/2));width:44px;display:flex;flex-direction:column;gap:0;overflow:hidden;padding:0;background:var(--lens-paper);touch-action:none;user-select:none;border:0;border-radius:12px}
+html body.lens-app #characters-view[hidden] .directory-alphabet{display:none}
+html body.lens-app .directory-alphabet button{display:grid;place-items:center;flex:1;min-width:44px;width:44px;min-height:0;height:auto;font-size:12px;line-height:1;padding:0;border:0;border-radius:0;background:transparent;color:var(--lens-link);touch-action:none}
+html body.lens-app .directory-alphabet button:disabled{opacity:.35}
+html body.lens-app .directory-alphabet button:focus-visible{outline:2px solid var(--lens-focus);outline-offset:-2px}
+html body.lens-app .ux-letter-bubble{position:fixed;z-index:100;left:calc(50% - 40px);top:45%;width:80px;height:80px;border-radius:18px;background:var(--lens-copper-soft);color:var(--lens-ink);font-size:48px;text-align:center;line-height:80px;pointer-events:none}
+html body.lens-app .place-profile-card{padding:20px;background:var(--ux-glass-card);border:1px solid var(--ux-glass-border);border-radius:14px}
+html body.lens-app .ux-place-count{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--lens-link);margin:8px 0 14px}
+html body.lens-app .ux-place-meta{display:flex;flex-wrap:wrap;gap:10px;color:var(--lens-muted);font-size:12px}
+html body.lens-app .place-profile-card .place-map-actions{display:flex;gap:12px;margin-top:12px}
+html body.lens-app .place-profile-card .place-map-action{min-height:44px;min-width:44px;padding:8px 12px}
+html body.lens-app .places-directory-pagination{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 0}
+html body.lens-app .places-directory-pagination button{min-height:44px;min-width:80px}
+@media(max-height:650px){html body.lens-app #characters-view .directory-alphabet{top:100px;bottom:80px}}
+
+html body.lens-app #main #characters-list .ux-contact .character-name{margin:0;font-size:16px}
+html body.lens-app #main .places-directory-list .character-summary{display:block}
+
+html body.lens-app #main #characters-view #characters-list{grid-template-columns:minmax(0,1fr)}
+html body.lens-app #characters-view .page-heading{padding:12px 0;margin:8px 0 16px;border:0}
+html body.lens-app #characters-view .page-heading h1{font-size:28px;margin:0}
+html body.lens-app #characters-view .page-heading p{font-size:14px;margin:8px 0 0;line-height:1.5}
+html body.lens-app #main #characters-list .ux-contact::before,html body.lens-app #main #characters-list .ux-contact::after{display:none}
+html body.lens-app #main #characters-list .ux-contact .character-name::before,html body.lens-app #main #characters-list .ux-contact .character-name::after{display:none}
+html body.lens-app #main #characters-view .page-heading{padding:0;margin:8px 0 16px}
+html body.lens-app #main #characters-view .page-heading h1{font-size:28px;margin:0;line-height:1.25}
+html body.lens-app #main #characters-view .page-heading p{display:none}
+html body.lens-app #main #characters-list .ux-contact .character-name{min-height:0;display:block}
+html body.lens-app #main #places-view .places-directory-list .character-summary{display:block}
+html body.lens-app #main #places-view .place-map-actions{position:relative;z-index:2}

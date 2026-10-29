@@ -3,7 +3,7 @@ import type { DirectoryPerson } from './people';
 import type { CharacterProfile } from '../../types/character';
 import { characters, characterVerseRoute } from './directory';
 export { characters } from './directory';
-import { CharacterCard, CharacterNameCard, element } from './CharacterCard';
+import { CharacterCard, CharacterNameCard, PersonContact, element } from './CharacterCard';
 import {ProfileSections} from './ProfileSections';
 import {loadCharacterGraph} from '../../character-connections.js';
 import {FamilyConnections, connectionProfile, referenceId} from './Connections';
@@ -57,7 +57,7 @@ function mountCharacters(): void {
     if (categories.childElementCount !== names.length) {
       categories.replaceChildren(...names.map(name => {
         const button = element('button'); button.type = 'button'; button.dataset.category = name;
-        button.addEventListener('click', () => { category = name; page = 0; render(); });
+        button.addEventListener('click', () => { category = name; letter=''; page = 0; render(); });
         return button;
       }));
     }
@@ -69,16 +69,35 @@ function mountCharacters(): void {
     }
   }
   const alphabet = element('div', 'directory-alphabet');
-  alphabet.setAttribute('role', 'group'); alphabet.setAttribute('aria-label', 'Filter people by first letter');
+  alphabet.setAttribute('role', 'group'); alphabet.setAttribute('aria-label', 'Jump to people by first letter');
   for (const name of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
     const button = element('button', '', name); button.type = 'button';
-    button.setAttribute('aria-label', 'Names starting with ' + name);
-    button.addEventListener('click', () => { letter = letter === name ? '' : name; page = 0; render(); });
+    button.setAttribute('aria-label', 'Jump to ' + name);
+    button.addEventListener('click', () => { jump(name); });
     alphabet.append(button);
   }
+  const bubble=element('output','ux-letter-bubble');bubble.hidden=true;bubble.setAttribute('aria-live','polite');host.append(bubble);
+  function jump(name:string):void {
+    const candidates=findPeople(search.value).filter(person=>inCategory(person,category));
+    const index=candidates.findIndex(person=>person.name.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').charAt(0).toUpperCase()===name);
+    if(index<0)return;
+    letter=name;page=Math.floor(index/CHARACTER_PAGE_SIZE);render();
+    list.querySelector<HTMLElement>('[data-letter="'+name+'"]')?.scrollIntoView({block:'start'});
+  }
+  let dragging=false;
+  const scrub=(event:PointerEvent):void=>{
+    const rect=alphabet.getBoundingClientRect();
+    const index=Math.max(0,Math.min(25,Math.floor((event.clientY-rect.top)/rect.height*26)));
+    const button=alphabet.children[index] as HTMLButtonElement;
+    bubble.textContent=button.textContent;bubble.hidden=false;
+    if(!button.disabled)jump(button.textContent!);
+  };
+  alphabet.addEventListener('pointerdown',event=>{event.preventDefault();dragging=true;alphabet.setPointerCapture(event.pointerId);scrub(event);});
+  alphabet.addEventListener('pointermove',event=>{if(dragging){event.preventDefault();scrub(event);}});
+  for(const type of ['pointerup','pointercancel','lostpointercapture'])alphabet.addEventListener(type,()=>{dragging=false;bubble.hidden=true;});
   searchBox.classList.add('directory-filters');
-  searchBox.append(label, search, categories, alphabet);
-  host.append(heading, searchBox, count, list);
+  searchBox.append(label, search, categories);
+  host.append(heading, searchBox, alphabet, count, list);
   const pagination = element('div', 'characters-pagination');
   const previous = element('button', '', 'Previous'); previous.type = 'button';
   const next = element('button', '', 'Next'); next.type = 'button';
@@ -91,14 +110,20 @@ function mountCharacters(): void {
     renderCategories();
     const candidates = findPeople(search.value).filter(person => inCategory(person,category));
     const initial = (name: string) => name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase();
-    const matches = candidates.filter(person => !letter || initial(person.name) === letter);
+    const matches = candidates;
     for (const button of alphabet.querySelectorAll('button')) {
       button.disabled = !candidates.some(person => initial(person.name) === button.textContent);
       button.setAttribute('aria-pressed', String(button.textContent === letter));
     }
     search.placeholder = 'Search names or aliases…';
     page = Math.min(page, Math.max(0, Math.ceil(matches.length / CHARACTER_PAGE_SIZE) - 1));
-    list.replaceChildren(...characterPage(matches, page).map(CharacterCard));
+    list.replaceChildren();
+    let section='';
+    for(const person of characterPage(matches,page)){
+      const first=initial(person.name);
+      if(first!==section){const heading=element('h3','ux-letter-heading',first);heading.dataset.letter=first;list.append(heading);section=first;}
+      list.append(PersonContact(person));
+    }
     if(search.value.trim())for(const person of characterPage(matches,page)){
       const primary=person.name.toLocaleLowerCase().split(/[^\p{L}\p{N}]+/u);
       const terms=search.value.trim().toLocaleLowerCase().split(/\s+/);
@@ -133,7 +158,7 @@ function mountCharacters(): void {
           ||characters.find(person=>person.id===detail.id)
           ||(graph.getPerson(referenceId(detail.id))?connectionProfile(graph.getPerson(referenceId(detail.id))!):undefined);
         if(!person)return;
-        const replacement=CharacterCard(person);card.replaceWith(replacement);
+        const replacement=PersonContact(person);card.replaceWith(replacement);
         if(detail.keyboard)replacement.focus({preventScroll:true});
         replacement.scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
       }catch{
@@ -146,7 +171,7 @@ function mountCharacters(): void {
     })();
   });
   let searchTimer: ReturnType<typeof setTimeout>;
-  search.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { page = 0; render(); }, 100); });
+  search.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { letter=''; page = 0; render(); }, 100); });
   function movePage(offset: number): void {
     clearTimeout(searchTimer); page += offset; render(); list.focus({preventScroll:true}); list.scrollIntoView({block:'start'});
   }
@@ -235,8 +260,8 @@ function mountCharacters(): void {
     const wasOpen = sheet.open;
     currentId = match[1];
     back.hidden = !familyHistory.length;
-    let profile = characters.find(person => person.id === currentId);
-    title.textContent=profile?.name || 'Character profile';
+    let profile: CharacterProfile | undefined = people.find(person=>person.id===referenceId(currentId)) || characters.find(person => person.id === currentId);
+    title.textContent=profile?profile.name+(profile.identity_context?' ('+profile.identity_context+')':''):'Character profile';
     body.replaceChildren(element('p', 'loading-state', 'Loading character connections…'));
     body.setAttribute('aria-busy', 'true');
     if (!sheet.open) { sheet.showModal(); document.body.classList.add('character-sheet-open'); }
@@ -253,7 +278,7 @@ function mountCharacters(): void {
     sheet.classList.toggle('character-female', profile?.sex === 'female');
     sheet.classList.toggle('character-neutral', profile?.sex !== 'female');
     body.replaceChildren();
-    title.textContent=profile?.name || 'Character not found';
+    title.textContent=profile?profile.name+(profile.identity_context?' ('+profile.identity_context+')':''):'Character not found';
     if (!profile) body.append(element('p', '', graph
       ? 'This character does not have a profile in this growing directory. Close this sheet to browse the available characters.'
       : 'The reference profile could not be loaded. Try again when the reference data is available.'));

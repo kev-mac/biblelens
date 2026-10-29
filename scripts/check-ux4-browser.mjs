@@ -18,17 +18,17 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${state}.png`});
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,state+' page overflow');
   };
-  await go('#people','#characters-list .directory-reference');
+  await go('#people','#characters-list .ux-contact');
   assert.deepEqual(await page.locator('.directory-categories button').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('aria-label'))),['All','Women','Kings & Queens','Judges','Prophets','Priests','Apostles']);
   assert((await page.locator('.directory-categories button').allTextContents()).every(text=>/\([\d,]+\)$/.test(text)));
   assert.equal(await page.locator('.directory-alphabet button').count(),26);
   assert.equal(await page.locator('#characters-list>.character-card').count(),15);
-  for(const button of await page.locator('.directory-alphabet button,.directory-save').all()){
+  for(const button of await page.locator('.directory-save').all()){
    const r=await button.boundingBox();assert(r.width>=44&&r.height>=44,'44px target');
   }
   const columns=()=>page.locator('#characters-list').evaluate(n=>getComputedStyle(n).gridTemplateColumns.split(' ').length);
   assert.equal(await columns(),1);
-  await page.setViewportSize({width:768,height});assert.equal(await columns(),2);await page.setViewportSize({width,height});
+  await page.setViewportSize({width:768,height});assert.equal(await columns(),1);await page.setViewportSize({width,height});
   await shot('people-all');
   await page.getByRole('button',{name:'Next',exact:true}).click();
   await page.getByRole('button',{name:'Women',exact:true}).click();
@@ -39,7 +39,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    const blend=(fg,bg)=>fg.slice(0,3).map((c,i)=>c*(fg[3]??1)+bg[i]*(1-(fg[3]??1)));
    const lum=rgb=>rgb.map(c=>c/255).map(c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4).reduce((v,c,i)=>v+c*[.2126,.7152,.0722][i],0);
    const probe=document.createElement('span');probe.style.color='var(--lens-paper)';document.body.append(probe);const base=rgb(getComputedStyle(probe).color);probe.remove();
-   return ['.directory-reference','.directory-categories [aria-pressed=true]','.directory-save'].map(selector=>{
+   return ['.ux-contact .ux-person-open','.directory-categories [aria-pressed=true]','.directory-save'].map(selector=>{
     const css=getComputedStyle(document.querySelector(selector));
     const bg=blend(rgb(css.backgroundColor),base),ink=rgb(css.color),a=lum(ink),b=lum(bg);
     return {selector,ratio:(Math.max(a,b)+.05)/(Math.min(a,b)+.05)};
@@ -50,8 +50,10 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   // From People: category, result (two activations).
   await page.locator('.ux-person-open').first().click();await page.locator('#character-sheet[open]').waitFor();await page.keyboard.press('Escape');
   await page.getByRole('button',{name:'All',exact:true}).click();
-  await page.getByRole('button',{name:'Names starting with M',exact:true}).click();
-  assert((await page.locator('#characters-list h2').allTextContents()).every(name=>name.startsWith('M')));
+  await page.getByRole('button',{name:'Jump to M',exact:true}).click();
+  assert((await page.locator('#characters-list h2').allTextContents()).some(name=>name.startsWith('M')));
+  assert.equal(await page.locator('.directory-alphabet').evaluate(n=>getComputedStyle(n).touchAction),'none');
+  assert((await page.locator('.directory-alphabet').boundingBox()).width>=44);
   await shot('people-letter-m');
   await page.evaluate(()=>scrollTo(0,600));
   const sticky=await page.locator('.directory-filters').boundingBox();assert(sticky.y>=0&&sticky.y<150,'Filters stay below the masthead');
@@ -59,14 +61,16 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await page.locator('#characters-search').tap();await page.locator('#characters-search').fill('Moses');
   await page.locator('a[aria-label="Open Moses"]').waitFor();await page.locator('a[aria-label="Open Moses"]').tap();
   await page.locator('#character-sheet[open]').waitFor();assert.match(await page.locator('#character-sheet').innerText(),/Moses/);await page.keyboard.press('Escape');
-  await page.getByRole('button',{name:'Names starting with M',exact:true}).click();
-  assert.equal(await page.getByRole('button',{name:'Names starting with M',exact:true}).getAttribute('aria-pressed'),'false');
+  await page.getByRole('button',{name:'Jump to M',exact:true}).click();
+  assert.equal(await page.getByRole('button',{name:'Jump to M',exact:true}).getAttribute('aria-pressed'),'true');
   await shot('people-search-moses');
   // Search field and result: two taps.
   await page.locator('#characters-search').tap();await page.locator('a[aria-label="Open Moses"]').tap();await page.locator('#character-sheet[open]').waitFor();await page.keyboard.press('Escape');
   const save=page.getByRole('button',{name:'Save Moses',exact:true});await save.click();assert.equal(await save.getAttribute('aria-pressed'),'true');
   assert.equal(await page.locator('#character-sheet[open]').count(),0,'Saving does not open the profile');
-  const ref=page.locator('.directory-reference').first(),href=await ref.getAttribute('href');await ref.click();await page.waitForFunction(hash=>location.hash===hash,href);assert.equal(await page.locator('#character-sheet[open]').count(),0,'References open scripture');
+  await page.locator('a[aria-label="Open Moses"]').click();await page.locator('#character-sheet[open]').waitFor();
+  await page.getByRole('button',{name:'Verses',exact:true}).click();
+  const ref=page.locator('#character-sheet .person-section-panel:not([hidden]) a[href^="#read/"]').first(),href=await ref.getAttribute('href');await ref.click();await page.waitForFunction(hash=>location.hash===hash,href);await page.locator('#character-sheet[open]').waitFor({state:'hidden'});assert.equal(await page.locator('#character-sheet[open]').count(),0,'Detail references open scripture');
   await go('#people','#characters-search');await page.locator('#characters-search').fill('Abdi');await page.waitForFunction(()=>document.querySelector('#characters-list h2')?.textContent.startsWith('Abdi'));
   const names=await page.locator('#characters-list h2').allTextContents();assert(names.some(n=>n==='Abdi (child of Malluch)'));assert(names.some(n=>n==='Abdi (1 passage)'));await shot('people-same-name');
   await page.getByRole('button',{name:'Women',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.characters-empty'));assert.equal(await page.locator('.directory-alphabet button:not(:disabled)').count(),0);

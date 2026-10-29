@@ -82,6 +82,7 @@
  observer.observe(main,{childList:true,subtree:true,characterData:true});
  // Sheets are inline tasks. Keep async profile titles and reused sheets current.
  function dialogPaths(){for(const dialog of document.querySelectorAll('dialog[open]')){
+  if(dialog.id==='lens-inspector-sheet'&&!document.getElementById('lensComparison').hidden){dialog.querySelector('.ux-dialog-path')?.remove();continue;}
   const title=[...dialog.querySelectorAll('h1,h2,h3')].find(node=>!node.closest('[hidden]'))?.textContent.trim()||dialog.getAttribute('aria-label')||'Details';
   let nav=dialog.querySelector('.ux-dialog-path');
   if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='←';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
@@ -104,4 +105,22 @@
   if(link.closest('.lens-masthead,.lens-workspace,#lensComparison,.lens-context')){event.preventDefault();routeTo(link.getAttribute('href'));}
  });
  route();
+})();
+
+// Search fields retain their existing handlers; clearing fires the same input event.
+(() => {
+ const strips=new WeakSet();
+ const overflow=strip=>strip.classList.toggle('ux-overflow-right',strip.scrollWidth-strip.clientWidth-strip.scrollLeft>2);
+ function enhance(){for(const strip of document.querySelectorAll('.directory-categories,.ux-context-tabs')){if(!strips.has(strip)){strips.add(strip);strip.addEventListener('scroll',()=>overflow(strip),{passive:true});new ResizeObserver(()=>overflow(strip)).observe(strip);}overflow(strip);}
+ for(const input of document.querySelectorAll('input[type="search"]')){
+  let wrap=input.parentElement;
+  if(!wrap.classList.contains('ux-search-field')){
+   wrap=document.createElement('div');wrap.className='ux-search-field';input.before(wrap);wrap.append(input);
+   const clear=document.createElement('button');clear.type='button';clear.className='ux-search-clear';clear.textContent='×';clear.setAttribute('aria-label','Clear search');clear.title='Clear search';
+   clear.onclick=()=>{input.value='';input.dispatchEvent(new Event('input',{bubbles:true}));input.focus();clear.hidden=true;};wrap.append(clear);
+   input.addEventListener('input',()=>{clear.hidden=!input.value;});
+  }
+  wrap.querySelector('.ux-search-clear').hidden=!input.value;
+ }}
+ new MutationObserver(enhance).observe(document.body,{childList:true,subtree:true});window.addEventListener('hashchange',enhance);enhance();
 })();

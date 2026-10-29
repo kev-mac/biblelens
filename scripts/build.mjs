@@ -98,6 +98,15 @@ const categorySummaries=Object.fromEntries(JSON.parse(releaseContent('src/data/c
 const referenceChapter=readerReferences(JSON.parse(fs.readFileSync('data/reference/people.json','utf8')),JSON.parse(fs.readFileSync('data/reference/places.json','utf8')));
 const decorateChapter=chapter=>{const linked=referenceChapter(chapter);return {...linked,chapterName:chapterNames[chapter.name][chapter.chapter],verses:linked.verses.map(verse=>({...verse,redLetters:redLetters[chapter.book+':'+chapter.chapter]?.[verse.n]||{}}))};};
 const linkedChapters=Object.fromEntries(Object.entries(JSON.parse(fs.readFileSync('data/chapters.json','utf8'))).map(([key,encoded])=>[key,zlib.gzipSync(JSON.stringify(decorateChapter(JSON.parse(zlib.gunzipSync(Buffer.from(encoded,'base64')))))).toString('base64')]));
+// Count distinct KJV passages with actual ambiguity-aware place links.
+const placePassages=new Map();
+for(const [key,encoded] of Object.entries(linkedChapters))for(const verse of JSON.parse(zlib.gunzipSync(Buffer.from(encoded,'base64'))).verses){
+ for(const hit of verse.referenceLinks.kjv.filter(hit=>!hit.person)){
+  if(!placePassages.has(hit.id))placePassages.set(hit.id,new Set());
+  placePassages.get(hit.id).add(key+':'+verse.n);
+ }
+}
+assets['/reference/places.json'].body=JSON.stringify(JSON.parse(assets['/reference/places.json'].body).map(record=>({...record,fields:{...record.fields,linkedPassageCount:placePassages.get(record.id)?.size||0}})));
 let worker=fs.readFileSync('worker/index.mjs','utf8').replace('/*__ACCEPTED_QUESTIONS__*/[]',()=>JSON.stringify(accepted.questions)).replace('/*__SEARCH_CORE__*/',()=>fs.readFileSync('src/search-core.js','utf8')).replace('/*__DEBATES__*/',()=>fs.readFileSync('worker/debates.mjs','utf8').replace("import acceptedRulings from '../data/rc1-rulings.json' with {type:'json'};",()=> 'const acceptedRulings='+fs.readFileSync('data/rc1-rulings.json','utf8')+';').replaceAll('export function','function')).replace('/*__CATEGORIES__*/',()=> 'const CATEGORY_STORIES='+assets['/stories.json'].body+';\nconst CATEGORY_PROPHECIES='+fs.readFileSync('src/data/prophecies.json','utf8')+';\nconst CATEGORY_PERSON_SUMMARIES='+JSON.stringify(categorySummaries)+';\n'+fs.readFileSync('worker/categories.mjs','utf8').replaceAll('export function','function')).replace('/*__SYNC__*/',()=>fs.readFileSync('worker/sync.mjs','utf8').replace('export async function','async function'));for(const [marker,file]of [['BOOKS','data/books.json'],['CHAPTERS','data/chapters.json'],['EVIDENCE','data/evidence.json']])worker=worker.replace(new RegExp('/\\*__'+marker+'__\\*/'+(['BOOKS','EVIDENCE'].includes(marker)?'\\[\\]':'\\{\\}')),marker==='CHAPTERS'?JSON.stringify(linkedChapters):releaseContent(file,b4Content(file)));
 const references=loadReferenceResources();
 const reviewedReferences=releaseReferences(references.people,JSON.parse(assets['/reference/relationships.json'].body));reviewedReferences.people=releasePeopleRoles(reviewedReferences.people,draftPreviewEnabled());references.people=reviewedReferences.people;

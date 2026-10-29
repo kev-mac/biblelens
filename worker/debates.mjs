@@ -9,8 +9,16 @@ export function debateVerdict(record) {
   : {'Textual conflict':'Wording differs', Context:'Interpretation remains open'};
  return labels[record.status] || record.status;
 }
+// Read the record prose at 200 words per minute; short records have no estimate.
+export function recordReadingMinutes(record) {
+ const texts=[record.title,record.summary,record.text,record.reasoning,record.scope,record.languageContext,
+ typeof record.alternativeReading==='string'?record.alternativeReading:record.alternativeReading?.text||record.alternativeReading?.summary,
+ ...(record.fields||[]).map(field=>field.text)].filter(value=>typeof value==='string'&&value.trim());
+ const words=[...new Set(texts)].join(' ').replace(/<[^>]*>/g,' ').trim().split(/\s+/).filter(Boolean).length;
+ return words>=100?Math.ceil(words/200):null;
+}
 export function debateCard(record) {
- return {id:record.id, title:record.title || `What does ${record.ref} show?`, summary:record.summary || record.text,
+ return {readingMinutes:recordReadingMinutes(record), id:record.id, title:record.title || `What does ${record.ref} show?`, summary:record.summary || record.text,
   ref:record.ref, refs:record.refs || [], mode:record.mode, status:record.status, verdict:debateVerdict(record), tags:record.tags || [record.tag].filter(Boolean)};
 }
 export function debatePage(records, params) {

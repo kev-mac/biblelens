@@ -72,3 +72,16 @@ export function CharacterCard(profile: CharacterProfile): HTMLElement {
   card.append(references);
   return card;
 }
+
+// Contact rows keep the reviewed identity label and use only released role tags.
+export function PersonContact(profile: CharacterProfile & {roles?: {role:string;status:string}[];key_passages?:string[]}): HTMLElement {
+ const card=element('article','character-card ux-contact');card.id=`character-card-${profile.id}`;card.tabIndex=-1;
+ const header=element('div','character-card-header');
+ const open=element('a','ux-person-open');open.href='#characters/'+encodeURIComponent(profile.id);open.setAttribute('aria-label','Open '+profile.name);
+ const avatar=element('span','ux-avatar',profile.name.split(/\s+/).map(part=>part[0]).slice(0,2).join('').toUpperCase());avatar.setAttribute('aria-hidden','true');
+ const copy=element('div','ux-contact-copy');copy.append(element('h2','character-name',profile.name+(profile.identity_context?' ('+profile.identity_context+')':'')));
+ const role=profile.roles?.find(tag=>tag.status==='live')?.role;
+ const count=(profile.key_passages||profile.narrative_anchors?.key_verses||[]).length;
+ copy.append(element('p','ux-contact-subtitle',(role?role[0].toUpperCase()+role.slice(1)+' · ':'')+count+' '+(count===1?'passage':'passages')));
+ open.append(avatar,copy);header.append(open,directorySaveButton('person',profile.id,profile.name));card.append(header);return card;
+}
