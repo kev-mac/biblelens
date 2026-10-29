@@ -10,7 +10,7 @@ const resize=new ResizeObserver(()=>{if(sheet.open)map?.resize();});resize.obser
 const mapNotice=document.createElement('p');mapNotice.className='atlas-map-notice';mapNotice.setAttribute('role','status');mapNode.after(mapNotice);
 // Identification limits belong beside the map, not only in collapsed sources.
 const identification=document.createElement('p');identification.className='atlas-identification';identification.setAttribute('role','status');mapNode.before(identification);
-document.querySelector('#atlas-close').textContent='Close';
+
 document.querySelector('#atlas-sources summary').textContent='Sources & identification';
 function colorMap(){
  if(!map?.isStyleLoaded())return;

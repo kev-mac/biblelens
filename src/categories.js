@@ -92,7 +92,7 @@ async function renderPagedCategories(){
    if(section){
     if(section.disabled)return;
     const card=section.closest('.category-profile-card'),panel=document.getElementById(section.getAttribute('aria-controls')),open=panel.hidden;
-    for(const control of card.querySelectorAll('[data-category-section]')){const selected=open&&control===section;control.setAttribute('aria-expanded',String(selected));document.getElementById(control.getAttribute('aria-controls')).hidden=!selected;}return;
+    for(const control of card.querySelectorAll('[data-category-section]')){const selected=open&&control===section;control.setAttribute('aria-expanded',String(selected));document.getElementById(control.getAttribute('aria-controls')).hidden=!selected;}requestAnimationFrame(fitContextCitations);return;
    }
 
    const button=event.target.closest('[data-category-offset],[data-category-retry]');if(!button||button.disabled)return;

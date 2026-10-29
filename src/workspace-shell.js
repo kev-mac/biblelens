@@ -97,7 +97,7 @@
  const heading = (kicker, title, copy) => `<div class="lens-page-heading"><span class="lens-kicker">${kicker}</span><h1 tabindex="-1">${title}</h1><p>${copy}</p></div>`;
  section('explore','');
 
- function shellRoute(hash){if(!hash||hash==='#'||hash==='#discover'){setView('explore',false);return true;}return false;}
+ function shellRoute(hash){if(!hash||hash==='#'||hash.split('?')[0]==='#discover'){setView('explore',false);return true;}return false;}
  window.BibleLensWorkspace={navigate:routeTo,route:shellRoute};
  document.addEventListener('click',event=>{
   const link=event.target.closest('a[href^="#"]');if(!link||event.defaultPrevented||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||link.classList.contains('skip')||link.hasAttribute('data-cite'))return;

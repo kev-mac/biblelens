@@ -8,13 +8,13 @@ fs.mkdirSync(output,{recursive:true});
 const results=[];
 for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch({headless:true});
- try{for(const [width,height] of [[390,844],[430,932]])for(const theme of ['light','dark']){
+ try{for(const [width,height] of [[375,812],[430,932]])for(const theme of ['light','dark']){
   const context=await browser.newContext({viewport:{width,height},hasTouch:true,isMobile:true,colorScheme:theme,reducedMotion:'reduce'});
   const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base);await page.waitForSelector('.ux-topic-row');await page.waitForFunction(()=>!document.documentElement.classList.contains('bl-starting'));
   await page.evaluate(theme=>{state.theme=theme;applyTheme();persist();},theme);
   const go=async(hash,selector)=>{await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),hash);await page.waitForSelector(selector);};
-  const shot=async name=>{await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${name}.png`});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),width,name+' overflow');};
+  const shot=async name=>{await page.evaluate(()=>document.fonts.ready);const path=`${output}/${engine}-${width}-${theme}-${name}.png`;if(process.env.BIBLELENS_REUSE_SHOTS!=='1'||!fs.existsSync(path))await page.screenshot({path});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),width,name+' overflow');};
   assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Read','Explore','Saved']);
   assert.deepEqual(await page.locator('.ux-topic strong').allTextContents(),['Stories','People','Places','Commandments','Evidence']);
   assert.equal(await page.locator('.ux-topic-row').count(),1);

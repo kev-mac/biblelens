@@ -2149,3 +2149,46 @@ html body.lens-app .ux-carousel-controls span{background:none;padding:0;color:va
 html body.lens-app #main>section>h1{border-left:4px solid var(--topic);padding-left:12px}
 
 html body.lens-app .lens-evidence-meta>span[data-topic],html body.lens-app .tag{color:var(--topic);border:1px solid var(--topic);border-radius:18px;background:var(--lens-surface);padding:4px 9px;font-size:12px;line-height:1.5;display:inline-block}
+
+/* UX3: shared spacing, radius and type scales. Palette and carousel changes deferred to UX5. */
+html body.lens-app{
+ --ux-space-1:4px;--ux-space-2:8px;--ux-space-3:12px;--ux-space-4:16px;--ux-space-5:24px;
+ --ux-radius-sm:8px;--ux-radius-card:16px;--ux-radius-dialog:18px;--ux-radius-pill:999px;
+ --ux-type-meta:12px;--ux-type-control:13px;--ux-type-body:16px;--ux-type-card:20px;--ux-type-dialog:28px;--ux-type-page:38px;
+ --ux-target:44px;--ux-icon:20px;--ux-icon-close:24px;
+}
+/* Preserve link colour and weight; reserve the underline for keyboard focus. */
+html body.lens-app :is(a,button,summary),html body.lens-app :is(a,button,summary):is(:hover,:active,:focus,:visited){text-decoration:none!important}
+html body.lens-app :is(a,button,summary):focus-visible{text-decoration:underline!important;text-decoration-thickness:2px;text-underline-offset:4px}
+html body.lens-app a:not([class]){font-weight:500}
+/* One title treatment for every collection, with room for Commandments and Text Comparisons. */
+html body.lens-app .ux-tile-copy strong{max-width:none;font-size:clamp(22px,6vw,26px);letter-spacing:-.7px;line-height:1.2;font-weight:600}
+
+/* Audit fixes: compact, consistent controls and content-sized overlays. */
+html body.lens-app .ux-popup .ux-popup-close{position:absolute!important;inset:10px 10px auto auto!important;display:grid;place-items:center;min-width:var(--ux-target);min-height:var(--ux-target);padding:10px!important;border-radius:var(--ux-radius-sm)!important;transform:none}
+html body.lens-app .ux-popup .ux-popup-close svg{display:block;width:var(--ux-icon-close);height:var(--ux-icon-close);min-width:var(--ux-icon-close);flex:none}
+html body.lens-app :is(.characters-pagination,.places-directory-pagination,.category-pagination) button{min-height:var(--ux-target);padding:var(--ux-space-2) var(--ux-space-3);border:1px solid var(--lens-rule);border-radius:var(--ux-radius-sm);background:var(--lens-surface);color:var(--lens-link);font:500 var(--ux-type-control)/1.4 var(--ui-font)}
+html body.lens-app :is(.characters-pagination,.places-directory-pagination,.category-pagination){gap:var(--ux-space-2);font-size:var(--ux-type-meta)}
+html body.lens-app #notebook-view .lens-notebook-tools [role=group]{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--ux-space-1);border-radius:var(--ux-radius-card)}
+html body.lens-app #notebook-view [data-lens-filter]{white-space:nowrap;overflow-wrap:normal;border-radius:var(--ux-radius-sm);font-size:var(--ux-type-control)}
+html body.lens-app #commandments-view .commandments-title-row{gap:var(--ux-space-3)}
+html body.lens-app #commandments-view .page-heading{padding-bottom:var(--ux-space-4)}
+html body.lens-app #commandments-view .commandments-source{margin-bottom:0}
+html body.lens-app :is(.lens-result,.lens-note,#collection .card,.phase2-debate-card){border-radius:var(--ux-radius-card)}
+@media(max-width:760px){html body.lens-app .verse-preview{bottom:auto;right:auto;width:min(440px,calc(100vw - 24px));max-width:calc(100vw - 24px);height:auto;border-radius:var(--ux-radius-card);border:1px solid var(--lens-rule)}}
+
+/* Match legacy menu icons and corners to the shared controls. */
+html body.lens-app #navigation-sheet .navigation-grid button{border-radius:var(--ux-radius-sm)}
+html body.lens-app #navigation-sheet .navigation-grid svg{width:var(--ux-icon);height:var(--ux-icon)}
+html body.lens-app :is([data-stories-retry],[data-places-retry],#characters-view>button){min-height:44px;min-width:44px;padding:8px 12px;border:1px solid var(--lens-rule);border-radius:var(--ux-radius-sm);background:var(--lens-surface);color:var(--lens-link);font:500 var(--ux-type-control)/1.4 var(--ui-font);box-shadow:none}
+html body.lens-app [data-stories-retry]{margin-inline-start:8px}
+
+/* Reuse the same scale on existing page headings, dialogs, cards and filter pills. */
+html body.lens-app #main :is(.page-heading,.lens-page-heading) h1,
+html body.lens-app #main>section>h1,
+html body.lens-app #main #chat-view h1{font-size:var(--ux-type-page)!important}
+html body.lens-app dialog :is(h1,h2):first-of-type{font-size:var(--ux-type-dialog)}
+html body.lens-app .ux-popup,
+html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet,
+html body.lens-app dialog#lensComparison.lens-comparison{border-radius:var(--ux-radius-dialog)}
+html body.lens-app :is(.tag,.character-era,.character-badge,.character-story-chip,.phase2-chips button,.chips .chip,.glass-pill){border-radius:var(--ux-radius-pill)}

@@ -4,7 +4,7 @@ import {chromium} from 'playwright';
 import {debateVerdict} from '../worker/debates.mjs';
 const sourceRecords=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
 const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875';
-const output='.review/phone';fs.mkdirSync(output,{recursive:true});
+const output=process.env.BIBLELENS_UI_SHOTS||'.review/phone';fs.mkdirSync(output,{recursive:true});
 const executablePath=process.env.CHROME_PATH||(fs.existsSync('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')?'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome':undefined);
 const browser=await chromium.launch({headless:true,executablePath});
 const errors=[],external=[];
@@ -29,7 +29,7 @@ try{
      const rect=node.getBoundingClientRect(),group=node.parentElement.getBoundingClientRect(),range=document.createRange();range.selectNodeContents(node);const label=range.getBoundingClientRect();
      if(rect.width<43.5||rect.left<group.left||rect.right>group.right+.5||node.scrollWidth>node.clientWidth||label.left<rect.left+parseFloat(style.paddingLeft)-1||label.right>rect.right-parseFloat(style.paddingRight)+1)return ['Crowded filter: '+node.textContent];
     }return [];
-   }));assert.deepEqual(violations,[],name+' type and touch sizes');await page.screenshot({path:`${output}/${theme}-${name}.png`});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390,name+' has no horizontal page overflow');}
+   }));assert.deepEqual(violations,[],name+' type and touch sizes');const path=`${output}/${theme}-${name}.png`;if(process.env.BIBLELENS_REUSE_SHOTS!=='1'||!fs.existsSync(path))await page.screenshot({path});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390,name+' has no horizontal page overflow');}
   async function go(hash,selector){await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),hash);await page.waitForFunction(hash=>location.hash===hash,hash);if(selector)await page.waitForSelector(selector);}
   await shot('explore');
   assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Read','Explore','Saved']);

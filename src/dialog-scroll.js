@@ -42,6 +42,7 @@
   let control=buttons.shift();
   if(!control){control=document.createElement('button');surface.prepend(control);}
   for(const extra of buttons)extra.hidden=true;
+  surface.prepend(control);
   control.type='button';control.classList.add('ux-popup-close');control.setAttribute('aria-label','Close');control.innerHTML='<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 6 12 12M18 6 6 18"/></svg>';
   control.addEventListener('click',()=>close(surface));
   if(bound.has(surface))return;bound.add(surface);
