@@ -12,4 +12,13 @@ assert.equal(releasePeopleRoles(people, true).flatMap(person => person.roles).le
 for (const id of ['amittai_219','azur_569','nebat_2165','remaliah_2420','so_2760','urijah_2899']) assert.equal(people.find(person => person.sourceRecord === id).roles.length, 0);
 for (const [id,role] of [['david_994','king'],['deborah_997','judge'],['james_717','apostle'],['james_718','apostle']]) assert(people.find(person => person.sourceRecord === id).roles.some(tag => tag.role === role));
 assert.equal(people.find(person => person.sourceRecord === 'james_719').roles.length, 0);
+const jesus = people.find(person => person.sourceRecord === 'jesus_905');
+assert.deepEqual(jesus.roles.map(({role,ref,status}) => ({role,ref,status})), [
+  {role:'prophet',ref:'Matthew 21:11',status:'draft'},
+  {role:'priest',ref:'Hebrews 3:1',status:'draft'}
+]);
+for (const [role,count] of [['prophet',29],['priest',28]]) {
+  assert.equal(people.flatMap(person => person.roles).filter(tag => tag.role === role && tag.status === 'live').length, count);
+  assert.equal(releasePeopleRoles(people).find(person => person.id === jesus.id).roles.length, 0);
+}
 console.log('PASS invalid IDs, refs, quotes, roles, basis, production exclusion and same-name safeguards');

@@ -19,7 +19,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,state+' page overflow');
   };
   await go('#people','#characters-list .directory-reference');
-  assert.deepEqual(await page.locator('.directory-categories button').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('aria-label'))),['All','Women','Kings & Queens','Judges','Apostles']);
+  assert.deepEqual(await page.locator('.directory-categories button').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('aria-label'))),['All','Women','Kings & Queens','Judges','Prophets','Priests','Apostles']);
   assert((await page.locator('.directory-categories button').allTextContents()).every(text=>/\([\d,]+\)$/.test(text)));
   assert.equal(await page.locator('.directory-alphabet button').count(),26);
   assert.equal(await page.locator('#characters-list>.character-card').count(),15);

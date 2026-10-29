@@ -9,7 +9,11 @@ fs.mkdirSync(output,{recursive:true});
 const people=await (await fetch(base+'/reference/people.json')).json();
 assert.equal(people.length,3067);
 assert.equal(people.some(person=>person.roles.some(tag=>tag.status==='draft')),drafts);
-const groups={'All':()=>true,Women:p=>p.gender==='Female','Kings & Queens':p=>p.roles.some(t=>['king','queen'].includes(t.role)),Judges:p=>p.roles.some(t=>t.role==='judge'),...(drafts?{Prophets:p=>p.roles.some(t=>t.role==='prophet'),Priests:p=>p.roles.some(t=>t.role==='priest')} : {}),Apostles:p=>p.roles.some(t=>t.role==='apostle')};
+const groups={'All':()=>true,Women:p=>p.gender==='Female','Kings & Queens':p=>p.roles.some(t=>['king','queen'].includes(t.role)),Judges:p=>p.roles.some(t=>t.role==='judge'),Prophets:p=>p.roles.some(t=>t.role==='prophet'),Priests:p=>p.roles.some(t=>t.role==='priest'),Apostles:p=>p.roles.some(t=>t.role==='apostle')};
+assert.equal(people.filter(groups.Prophets).length,drafts?30:29);
+assert.equal(people.filter(groups.Priests).length,drafts?29:28);
+const jesus=people.find(person=>person.sourceRecord==='jesus_905');
+assert.equal(jesus.roles.length,drafts?2:0);
 const results=[];
 for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch();
@@ -39,6 +43,11 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   const labels=await page.locator('#characters-list h2').allTextContents();assert(labels.includes('Joash (King of Judah)'));assert(labels.includes('Joash (King of Israel)'));
   // Capture both identified kings together without changing the application data.
   await page.getByRole('button',{name:'Kings & Queens',exact:true}).tap();await shot('joash-pair');
+  await page.getByRole('button',{name:'All',exact:true}).tap();
+  for(const [name,label] of [['Jehu','Jehu (Prophet)'],['Joshua','Joshua (Priest)'],['Zacharias','Zacharias (Priest)']]){
+   await page.locator('#characters-search').fill(name);
+   await page.waitForFunction(label=>Array.from(document.querySelectorAll('#characters-list h2')).some(node=>node.textContent===label),label);
+  }
   assert.deepEqual(errors,[]);results.push({engine,width,theme,drafts,davidTaps:3,status:'PASS'});console.log('PASS',results.at(-1));await context.close();
  }}finally{await browser.close();}
 }

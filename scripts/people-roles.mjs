@@ -14,7 +14,8 @@ export function validatePeopleRoles(people, books, chapters) {
    assert(!roles.has(tag.role), `Duplicate role: ${at}`); roles.add(tag.role);
    assert(['title','list'].includes(tag.basis), `Missing/invalid basis: ${at}`);
    assert(['live','draft'].includes(tag.status), `Missing/invalid status: ${at}`);
-   assert(!['prophet','priest'].includes(tag.role) || tag.status === 'draft', `Role awaits review: ${at}`);
+   // ROLES2 accepted the reviewed titles; Jesus's two framing decisions remain held.
+   assert(person.sourceRecord !== 'jesus_905' || !['prophet','priest'].includes(tag.role) || tag.status === 'draft', `Role awaits owner decision: ${at}`);
    assert(tag.basis !== 'list' || ['king','queen','judge','apostle'].includes(tag.role), `Unsupported list: ${at}`);
    const match = /^(.*) (\d+):(\d+)$/.exec(tag.ref || '');
    const book = match && books.find(book => book.name === match[1]);
