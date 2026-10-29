@@ -21,11 +21,11 @@ class Node{
 }
 const body=new Node('body'),dialogs=[],timers=new Map();let next=0;
 const document={body,activeElement:null,createElement:tag=>new Node(tag),querySelectorAll:()=>dialogs,querySelector:()=>[body,...dialogs].flatMap(node=>node.children).find(node=>node.id==='lens-action-toast')};
-const tc={document,$:()=>document.querySelector(),setTimeout(fn){const id=++next;timers.set(id,fn);return id;},clearTimeout(id){timers.delete(id);}};vm.createContext(tc);
+const tc={window:{addEventListener(){}},document,$:()=>document.querySelector(),setTimeout(fn){const id=++next;timers.set(id,fn);return id;},clearTimeout(id){timers.delete(id);}};vm.createContext(tc);
 vm.runInContext(app.slice(app.indexOf('// Keep action feedback visible'),app.indexOf('function confirmNoteAction(')),tc);
-let undoCount=0;tc.toast('Saved to Notebook',{undo:()=>{undoCount++;tc.toast('Bookmark removed. Notes kept.');}});
+let undoCount=0;tc.toast('Saved',{undo:()=>{undoCount++;tc.toast('Bookmark removed. Notes kept.');}});
 const notice=document.querySelector(),message=notice.querySelector('.lens-action-message'),undo=notice.querySelector('button');
-assert.equal(notice.hidden,false);assert.equal(message.textContent,'Saved to Notebook');assert.equal(message.attrs.role,'status');assert.equal(message.attrs['aria-live'],'polite');assert.equal(undo.hidden,false);assert.equal(document.activeElement,null,'Notifications do not steal focus');
+assert.equal(notice.hidden,false);assert.equal(message.textContent,'Saved');assert.equal(message.attrs.role,'status');assert.equal(message.attrs['aria-live'],'polite');assert.equal(undo.hidden,false);assert.equal(document.activeElement,null,'Notifications do not steal focus');
 const expire=[...timers.values()].at(-1);document.activeElement=undo;expire();assert.equal(notice.hidden,false,'Undo remains available while keyboard focus is inside');
 undo.onclick();assert.equal(undoCount,1);assert.equal(message.textContent,'Bookmark removed. Notes kept.');assert.equal(undo.hidden,true);
 document.activeElement=null;[...timers.values()].at(-1)();assert.equal(notice.hidden,true);

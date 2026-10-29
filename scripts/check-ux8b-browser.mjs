@@ -30,11 +30,11 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    }
   }
   await page.setViewportSize({width:390,height:844});await page.evaluate(()=>BibleLensWorkspace.navigate('#read/0/1'));await page.locator('#lens-edition').selectOption('kjv');await page.locator('#ux-chapter-picker').filter({hasText:'Genesis'}).waitFor();await page.evaluate(()=>document.fonts.ready);
-  await page.screenshot({path:`${out}/${engine}-390-read-after.png`});
+  if(process.env.UX_NO_SHOTS!=='1')await page.screenshot({path:`${out}/${engine}-390-read-after.png`});
   await page.evaluate(()=>BibleLensWorkspace.navigate('#search?q=Moses'));await page.locator('#lens-results-people .lens-result').first().waitFor();
   const sizes=await page.locator('#lens-search-overlay .lens-result-group > h2').evaluateAll(nodes=>nodes.map(n=>({size:getComputedStyle(n).fontSize,weight:getComputedStyle(n).fontWeight})));
   assert(sizes.length>=2);for(const s of sizes){assert.equal(s.size,'12px');assert.equal(s.weight,'700');}
-  await page.screenshot({path:`${out}/${engine}-390-search-after.png`});
+  if(process.env.UX_NO_SHOTS!=='1')await page.screenshot({path:`${out}/${engine}-390-search-after.png`});
   await page.locator('[data-search-cancel]').tap();
   await page.evaluate(()=>BibleLensWorkspace.navigate('#places'));await page.locator('.place-profile-card').first().waitFor();await page.locator('#places-search').fill('Baalath beer');await page.locator('.ux-place-open').first().waitFor();assert.equal(await page.locator('.ux-place-open').count(),1);
   await page.locator('.ux-place-open').first().tap();await page.locator('.atlas-identification').filter({hasText:'Location unknown'}).waitFor();assert(await page.locator('#atlas-map').isHidden());assert(await page.locator('#atlas-external').isHidden());assert.equal(await page.locator('#atlas-sheet .maplibregl-marker:visible').count(),0);await page.keyboard.press('Escape');

@@ -19,10 +19,8 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
  assert.equal(await page.locator('.ux-daily-question h2').textContent(),today.question);await shot('explore');
  await page.locator('.ux-daily-question').tap();await page.locator('[data-accepted-save]').waitFor();assert.equal(await page.locator('#debate-view h1').textContent(),today.question);
  await go('#people','.ux-contact');await shot('people-all');assert.equal(await page.locator('.ux-contact').count(),15);assert.equal(await page.locator('.ux-contact .directory-reference').count(),0);assert.equal(await page.locator('.directory-alphabet button').count(),26);
- const rail=page.locator('.directory-alphabet');assert((await rail.boundingBox()).width>=44);assert.equal(await rail.evaluate(n=>getComputedStyle(n).touchAction),'none');
- const m=page.getByRole('button',{name:'Jump to M',exact:true}),r=await m.boundingBox();
- await page.mouse.move(r.x+r.width/2,r.y+r.height/2-35);await page.mouse.down();await page.mouse.move(r.x+r.width/2,r.y+r.height/2,{steps:8});
- assert.equal(await page.locator('.ux-letter-bubble').textContent(),'M');assert.equal(await page.locator('.ux-letter-bubble').isVisible(),true);await page.mouse.up();assert.equal(await page.locator('.ux-letter-bubble').isVisible(),false);
+ const rail=page.locator('.directory-alphabet');assert((await rail.boundingBox()).width>=44);assert.equal(await rail.evaluate(n=>getComputedStyle(n).touchAction),'pan-x');
+ const m=page.getByRole('button',{name:'Jump to M',exact:true});await m.scrollIntoViewIfNeeded();const r=await m.boundingBox();assert(r.width>=44&&r.height>=44);await m.click();
  assert((await page.locator('#characters-list h2').allTextContents()).some(name=>name.startsWith('M')));await page.evaluate(()=>scrollTo(0,0));await shot('people');
  await page.locator('#characters-search').tap();await page.locator('#characters-search').fill('Moses');await page.locator('a[aria-label="Open Moses"]').waitFor();
  const clear=page.locator('.ux-search-field:has(#characters-search) .ux-search-clear');assert.equal(await clear.getAttribute('aria-label'),'Clear search');assert((await clear.boundingBox()).height>=44);

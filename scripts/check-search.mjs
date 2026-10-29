@@ -31,8 +31,9 @@ const localFetch=async input=>{
 const books=await (await localFetch('/api/books')).json();
 const context=vm.createContext({console,el,books,fetch:localFetch,AbortSignal,URLSearchParams,window:{BibleLensReferences:{json:async url=>{const response=await localFetch(url);if(!response.ok)throw Error('Reference unavailable');return response.json();}}},
  edition:()=>suite.edition,esc:value=>String(value??'').replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;'),
+ refLabel:ref=>`${books[ref.book].name} ${ref.chapter}${ref.verse?':'+ref.verse:''}`,refHash:ref=>`#read/${ref.book}/${ref.chapter}${ref.verse?'/'+ref.verse:''}`,
  excerpt:value=>String(value??''),noteRows:()=>privateNotes,
- resultGroup:(name,items)=>{groups.push({name,items});return '';},
+ resultGroup:(name,items)=>{const previous=groups.findIndex(row=>row.name===name);if(previous>=0)groups.splice(previous,1);groups.push({name,items});return '';},
 });
 vm.runInContext(fs.readFileSync('src/data.js','utf8'),context);
 // Search helpers are plain shared JavaScript, also bundled into the browser.

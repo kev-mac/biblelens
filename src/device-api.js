@@ -12,7 +12,8 @@ export function installDeviceApi(target=globalThis){
  }
  target.fetch=async(input,init={})=>{
   const url=new URL(typeof input==='string'?input:input.url||String(input),target.location.href);
-  if(url.origin!==target.location.origin||!url.pathname.startsWith('/api/')||url.pathname.startsWith('/api/sync'))return originalFetch(input,init);
+  if(url.origin===target.location.origin&&url.pathname.startsWith('/api/sync'))return new Response(JSON.stringify({error:'Cloud sync is unavailable in this offline preview.'}),{status:503,headers:{'content-type':'application/json'}});
+  if(url.origin!==target.location.origin||!url.pathname.startsWith('/api/'))return originalFetch(input,init);
   const request=new Request(url,{...(input instanceof Request?{method:input.method,headers:input.headers,body:['GET','HEAD'].includes(input.method)?undefined:await input.clone().text(),signal:input.signal}:{}),...init});
   if(request.signal.aborted)throw request.signal.reason||new DOMException('Aborted','AbortError');
   const method=request.method,body=['GET','HEAD'].includes(method)?undefined:await request.text();
@@ -24,5 +25,7 @@ export function installDeviceApi(target=globalThis){
    catch(error){pending.delete(id);cleanup();reject(error);}
   });
  };
+ const warm=()=>target.fetch('/api/search?q=John%203%3A16').catch(()=>{});
+ if(target.requestAnimationFrame)target.requestAnimationFrame(()=>target.requestAnimationFrame(()=>{setTimeout(warm,0);}));
  return ()=>{stop(new Error('Device API closed'));target.fetch=originalFetch;};
 }

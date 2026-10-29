@@ -99,7 +99,7 @@ function toggleVerseMark(kind,book,chapter,verse){
  if(before)delete state.verseBookmarks[key];else state.verseBookmarks[key]={book,chapter,verse,name:books[book].name};
  const after=state.verseBookmarks[key],afterSnapshot=JSON.stringify(after),saved=!!after;
  persist();renderReader(true);renderPassageSaved();
- toast(saved?'Saved to Notebook':'Bookmark removed. Notes kept.',{undo:()=>{
+ toast(saved?'Saved':'Bookmark removed. Notes kept.',{undo:()=>{
   // Only this bookmark can be reverted. A later local action, imported record,
   // sync update or newly saved highlight invalidates the old Undo operation.
   if(verseBookmarkActions.get(key)!==revision||JSON.stringify(state.verseBookmarks[key])!==afterSnapshot){toast('This bookmark changed since that action. Nothing was undone.');return false;}

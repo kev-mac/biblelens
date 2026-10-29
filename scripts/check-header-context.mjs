@@ -5,7 +5,7 @@ const source=fs.readFileSync('src/app.js','utf8');
 const parent={setAttribute(key,value){this[key]=value;}};
 const contextNode={dataset:{passage:'Genesis 15 · KJV',description:'God’s Covenant with Abram'},parentElement:parent,children:[],set textContent(text){this.text=text;this.children=[];},append(node){this.children.push(node);}};
 let rect={top:80,bottom:145};
-const context={view:'read',location:{hash:'#read'},window:{innerHeight:800},document:{querySelector:()=>({getBoundingClientRect:()=>({bottom:48})}),createElement:()=>({})},$:selector=>selector==='#header-context'?contextNode:{getBoundingClientRect:()=>rect}};
+const context={view:'read',location:{hash:'#read'},window:{innerHeight:800},document:{title:'Read · BibleLens',querySelector:()=>({getBoundingClientRect:()=>({bottom:48})}),createElement:()=>({})},$:selector=>selector==='#header-context'?contextNode:{getBoundingClientRect:()=>rect,setAttribute(){}}};
 vm.createContext(context);
 vm.runInContext(source.slice(source.indexOf('function updateHeaderContext(){'),source.indexOf('let headerContextFrame=0;')),context);
 const update=()=>vm.runInContext('updateHeaderContext()',context);

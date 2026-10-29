@@ -65,6 +65,8 @@ export function ProfileSections(profile: CharacterProfile, graph?: Graph): HTMLE
  let familyGraph=graph;
  const sections: {button: HTMLButtonElement; panel: HTMLElement}[]=[];
  root.append(row);
+ const emptyNote=element('p','person-empty-sections');emptyNote.setAttribute('role','status');root.append(emptyNote);
+ const explainEmpty=()=>{const absent=sections.filter(section=>section.button.disabled).map(section=>section.button.dataset.personSection);emptyNote.textContent=absent.length?'No linked '+absent.join(' or ')+' in this profile.':'';};
  root.addEventListener('click',event=>{const relative=(event.target as HTMLElement).closest<HTMLButtonElement>('[data-relative-id]');if(relative&&!root.closest('dialog')){event.stopPropagation();root.dispatchEvent(new CustomEvent('replace-person-card',{bubbles:true,detail:{id:relative.dataset.relativeId,keyboard:relative.matches(':focus-visible')}}));}});
  for(const [key,label] of [['verses','Verses'],['stories','Stories'],['places','Places'],['family','Family']] as const){
   const button=element('button','person-section-toggle');button.type='button';button.dataset.personSection=key;
@@ -79,7 +81,7 @@ export function ProfileSections(profile: CharacterProfile, graph?: Graph): HTMLE
   let loaded=false;
   if(key==='family'&&!familyGraph){
    button.setAttribute('aria-busy','true');button.title='Loading family information';
-   loadCharacterGraph().then(data=>{familyGraph=data;button.disabled=!profileSectionAvailability(profile,data).family;button.setAttribute('aria-disabled',String(button.disabled));button.setAttribute('aria-busy','false');button.title=button.disabled?'No family information available':label;}).catch(()=>{button.setAttribute('aria-busy','false');button.title='Family information could not be loaded';});
+   loadCharacterGraph().then(data=>{familyGraph=data;button.disabled=!profileSectionAvailability(profile,data).family;button.setAttribute('aria-disabled',String(button.disabled));button.setAttribute('aria-busy','false');button.title=button.disabled?'No family information available':label;explainEmpty();}).catch(()=>{button.setAttribute('aria-busy','false');button.title='Family information could not be loaded';});
   }
   async function fillFamily(): Promise<void>{
    panel.replaceChildren(element('p','','Loading family…'));
@@ -112,5 +114,5 @@ export function ProfileSections(profile: CharacterProfile, graph?: Graph): HTMLE
    }
   });
  }
- return root;
+ explainEmpty();return root;
 }

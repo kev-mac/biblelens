@@ -33,7 +33,7 @@ async function renderStoriesView(){
  const list=$('#stories-list');list.setAttribute('aria-busy','true');if(!storiesCatalog)list.innerHTML='<p class="loading-state" role="status">Loading stories…</p>';
  try{
   const catalog=await loadStories();if(generation!==storiesGeneration||!storiesActive)return;
-  const themes=[...new Set(catalog.flatMap(entry=>entry.stories.flatMap(story=>story.topics||[])))].sort();
+  const themes=[];
   $('#stories-book').innerHTML='<option value="">All books</option>'+catalog.map(entry=>`<option value="${esc(entry.book)}">${esc(entry.book)}</option>`).join('');
   $('#stories-theme').innerHTML='<option value="">All themes</option>'+themes.map(theme=>`<option value="${esc(theme)}">${esc(theme)}</option>`).join('');
   $('#stories-book').value=storiesBook;$('#stories-theme').value=storiesTheme;$('#stories-search').value=storiesSearch;

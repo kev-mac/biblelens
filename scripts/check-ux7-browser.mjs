@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {chromium,webkit} from 'playwright';
+import {searchPlaces} from '../src/places-directory.js';
 import {parsePlaces} from '../src/places-core.js';
 import {regionCoverage,inWindow,usableRegionPoint} from '../src/place-regions.js';
 const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875';
@@ -9,7 +10,7 @@ const results=[];
 for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch();try{
  const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
- const places=[...parsePlaces(await (await page.request.get(base+'/reference/places.json')).json()).values()],regions=regionCoverage(places).filter(r=>r.shown);
+ const places=searchPlaces(parsePlaces(await (await page.request.get(base+'/reference/places.json')).json())),regions=regionCoverage(places).filter(r=>r.shown);
  await page.goto(base+'/#discover');await page.locator('.ux-topic-row').waitFor();await page.evaluate(()=>{state.theme='dark';applyTheme();});
  await page.locator('a[href="#places"]').first().tap();await page.locator('.place-profile-card').first().waitFor();
  assert.equal(await page.locator('#places-view .directory-categories button').count(),regions.length+1);

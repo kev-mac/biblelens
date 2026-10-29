@@ -35,12 +35,14 @@
   if(required.every(name=>loaded.has(name))){routing=null;document.getElementById('route-loading')?.setAttribute('hidden','');document.getElementById('main')?.removeAttribute('aria-busy');return false;}
   if(routing?.hash===hash)return true;
   const job={hash};routing=job;
+  const label=/^#(?:compare|investigation)/.test(hash)?'Compare Passages':/^#read/.test(hash)?'Read':/^#search/.test(hash)?'Search':/^#commandments/.test(hash)?'Commandments':/^#(?:people|characters)/.test(hash)?'People':/^#places/.test(hash)?'Places':/^#timeline/.test(hash)?'Timeline':/^#stories/.test(hash)?'Stories':/^#debate\//.test(hash)?'Question':/^#questions/.test(hash)?'Text Comparisons':/^#notebook/.test(hash)?'Saved':'Explore';
+  const context=document.querySelector('#header-context');if(context)context.textContent=label;const nav=document.querySelector('.lens-context');if(nav){nav.hidden=false;nav.innerHTML='<h1>'+label+'</h1>';}document.title=label+' · BibleLens';document.querySelector('#lens-settings')?.setAttribute('aria-label','Settings for '+label);
   queueMicrotask(async()=>{
    if(routing!==job||location.hash!==hash)return;
    const main=document.getElementById('main');let panel=document.getElementById('route-loading');
    if(!panel){panel=document.createElement('section');panel.id='route-loading';panel.className='lens-workspace';main.append(panel);}
    for(const section of main.querySelectorAll(':scope > section'))section.hidden=section!==panel;
-   panel.hidden=false;panel.innerHTML='<p role="status">Opening this screen…</p>';main.setAttribute('aria-busy','true');
+   panel.dataset.destinationLabel=label;panel.hidden=false;panel.innerHTML='<p role="status">Opening this screen…</p>';main.setAttribute('aria-busy','true');
    try{
     for(const name of required)await load(name);
     if(routing!==job||location.hash!==hash)return;
@@ -55,6 +57,7 @@
   });
   return true;
  }
+ requestAnimationFrame(()=>requestAnimationFrame(()=>{if(!document.querySelector('script[src*="device-bootstrap"]'))fetch('/api/search?q=John%203%3A16').catch(()=>{});}));
  window.BibleLensFeatures={load,style,route,resume:()=>window.dispatchEvent(new HashChangeEvent('hashchange'))};
  document.addEventListener('click',event=>{
   const settings=event.target.closest('#lens-settings');

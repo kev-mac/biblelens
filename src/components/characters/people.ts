@@ -44,7 +44,7 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
     }
     return [{roles, id: record.id, name: record.name.trim(), identity_context: label || (() => {
       const parent = [...(record.relations?.father || []), ...(record.relations?.mother || [])].map((relation: {id: string}) => records.get(relation.id)?.name).find(Boolean);
-      return parent ? 'child of ' + parent : `${key_passages.length} ${key_passages.length === 1 ? 'linked verse' : 'linked verses'}`;
+      return parent ? 'child of ' + parent : key_passages[0] || '';
     })(), aliases, summary, key_passages,
       sex: record.gender === 'Female' ? 'female' : record.gender === 'Male' ? 'male' : 'unspecified',
       era: written?.era || 'Across scripture', geography: written?.geography || {origin: '', residence: []},

@@ -1,6 +1,7 @@
 // Reproducible, attributed subset of the same Theographic revision as the timeline.
 import fs from 'node:fs';
 import crypto from 'node:crypto';
+import {placePassageFields} from './place-passages.mjs';
 import {excludeUnknownPlaceCoordinates} from './place-coordinate-policy.mjs';
 const revision='52e049efb3b95e4f1da52d11a3303fbd2d648922';
 const url=`https://raw.githubusercontent.com/robertrouse/theographic-bible-metadata/${revision}/json/places.json`;
@@ -8,6 +9,9 @@ const response=await fetch(url);if(!response.ok)throw Error(`Places download fai
 const source=await response.text(),records=JSON.parse(source);
 const fields=['displayTitle','kjvName','esvName','latitude','longitude','comment','aliases','otherNames','canonicalPlace','dictText','featureType','precision','recogitoStatus','ambiguous','slug','placeID'];
 const places=records.map(({id,fields:f})=>({id,fields:Object.fromEntries(fields.filter(k=>f[k]!==undefined).map(k=>[k,k==='dictText'?f[k].map(t=>t.split(/\n\s*\n/)[0].slice(0,1000)):f[k]]))}));
+const verseResponse=await fetch(url.replace('places.json','verses.json'));if(!verseResponse.ok)throw Error('Place verse links unavailable');
+const passageFields=placePassageFields(records,await verseResponse.json(),JSON.parse(fs.readFileSync('data/books.json','utf8')));
+for(const place of places)Object.assign(place.fields,passageFields.get(place.id));
 // Preserve reviewed coordinate/source conflicts as explicit uncertainty flags.
 const coordinateReviews=JSON.parse(fs.readFileSync('data/reference/place-coordinate-reviews.json','utf8'));
 for(const place of places)if(coordinateReviews[place.id])place.fields.identificationUncertain=true;

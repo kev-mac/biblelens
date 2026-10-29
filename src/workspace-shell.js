@@ -55,6 +55,11 @@
  }
  function back(fallback){if(history.state?.biblelens?.from&&history.state.biblelens.from!==location.hash)history.back();else routeTo(fallback);}
  function updateContext(){
+  if(el('main').hasAttribute('aria-busy')){
+   const title=el('route-loading')?.dataset.destinationLabel||'Opening this screen…';
+   contextNav.hidden=false;if(contextNav.querySelector('h1')?.textContent!==title)contextNav.innerHTML='<h1 tabindex="-1" aria-current="page">'+esc(title)+'</h1>';
+   document.title=title+' · BibleLens';el('lens-settings').setAttribute('aria-label','Settings for '+title);return;
+  }
   const active=primary();
   for(const link of masthead.querySelectorAll('[data-lens-view]')){if(link.dataset.lensView===active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}
   const host=el(view+'-view');if(!host)return;
@@ -76,7 +81,8 @@
    if(headingHadFocus)contextNav.querySelector('h1').focus({preventScroll:true});
    contextNav.dataset.fallback=rootHash;
   }
-  document.title=title+' · BibleLens';
+  const profileTitle=document.querySelector('#character-sheet[open] #character-detail-name')?.textContent;
+  document.title=(profileTitle||title)+' · BibleLens';el('lens-settings').setAttribute('aria-label','Settings for '+(view==='read'?el('ux-chapter-picker')?.textContent.trim()||'Read':profileTitle||title));
  }
  contextNav.addEventListener('click',event=>{if(event.target.closest('[data-ux-back]')){back(contextNav.dataset.fallback);return;}const link=event.target.closest('a');if(!link||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();routeTo(link.hash);});
  document.addEventListener('click',event=>{if(event.target.closest('[data-ux-commandment-filters]'))el('commandments-more').click();if(event.target.closest('.ux-search'))searchParent=primary();if(event.target.closest('[data-open-settings]'))el('lens-settings').click();});
@@ -96,7 +102,7 @@
   const path=[primary()==='debates'?'Questions':labels[primary()]||'Explore',collection,title].filter(Boolean).join(' › ');
   if(nav.lastElementChild.textContent!==path)nav.lastElementChild.textContent=path;
  }}
- const dialogObserver=new MutationObserver(records=>{if(records.some(record=>!record.target.closest?.('.ux-dialog-path')))requestAnimationFrame(dialogPaths);});
+ const dialogObserver=new MutationObserver(records=>{if(records.some(record=>!record.target.closest?.('.ux-dialog-path')))requestAnimationFrame(()=>{dialogPaths();updateContext();});});
  dialogObserver.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['open']});
  const aboutHeading=el('method-view')?.querySelector('h1');if(aboutHeading)aboutHeading.textContent='Method & Sources';
  const footerLink=document.querySelector('body > footer .brand');if(footerLink){footerLink.textContent='Method & Sources';footerLink.setAttribute('aria-label','BibleLens Method & Sources');}
@@ -116,8 +122,8 @@
 // Search fields retain their existing handlers; clearing fires the same input event.
 (() => {
  const strips=new WeakSet();
- const overflow=strip=>strip.classList.toggle('ux-overflow-right',strip.scrollWidth-strip.clientWidth-strip.scrollLeft>2);
- function enhance(){for(const strip of document.querySelectorAll('.directory-categories,.ux-context-tabs')){if(!strips.has(strip)){strips.add(strip);strip.addEventListener('scroll',()=>overflow(strip),{passive:true});new ResizeObserver(()=>overflow(strip)).observe(strip);}overflow(strip);}
+ const overflow=strip=>{strip.classList.toggle('ux-overflow-right',strip.scrollWidth-strip.clientWidth-strip.scrollLeft>2);strip.classList.toggle('ux-overflow-left',strip.scrollLeft>2);};
+ function enhance(){for(const strip of document.querySelectorAll('.directory-categories,.directory-alphabet,.ux-context-tabs,.phase2-modes,.phase2-chips,.lens-notebook-tools>div,.tabs,.reader-category-filters,.reader-filter-chips,.commandments-quick,.prophecy-quick,.chips,.filters,.comparison-tabs,#comparison-status,.ux-quick-links,.phase2-rail')){if(!strips.has(strip)){strips.add(strip);strip.addEventListener('scroll',()=>overflow(strip),{passive:true});new ResizeObserver(()=>overflow(strip)).observe(strip);}overflow(strip);}
  for(const input of document.querySelectorAll('input[type="search"]')){
   let wrap=input.parentElement;
   if(!wrap.classList.contains('ux-search-field')){

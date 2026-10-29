@@ -76,7 +76,6 @@ function mountCharacters(): void {
     button.addEventListener('click', () => { jump(name); });
     alphabet.append(button);
   }
-  const bubble=element('output','ux-letter-bubble');bubble.hidden=true;bubble.setAttribute('aria-live','polite');host.append(bubble);
   function jump(name:string):void {
     const candidates=findPeople(search.value).filter(person=>inCategory(person,category));
     const index=candidates.findIndex(person=>person.name.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').charAt(0).toUpperCase()===name);
@@ -84,17 +83,6 @@ function mountCharacters(): void {
     letter=name;page=Math.floor(index/CHARACTER_PAGE_SIZE);render();
     list.querySelector<HTMLElement>('[data-letter="'+name+'"]')?.scrollIntoView({block:'start'});
   }
-  let dragging=false;
-  const scrub=(event:PointerEvent):void=>{
-    const rect=alphabet.getBoundingClientRect();
-    const index=Math.max(0,Math.min(25,Math.floor((event.clientY-rect.top)/rect.height*26)));
-    const button=alphabet.children[index] as HTMLButtonElement;
-    bubble.textContent=button.textContent;bubble.hidden=false;
-    if(!button.disabled)jump(button.textContent!);
-  };
-  alphabet.addEventListener('pointerdown',event=>{event.preventDefault();dragging=true;alphabet.setPointerCapture(event.pointerId);scrub(event);});
-  alphabet.addEventListener('pointermove',event=>{if(dragging){event.preventDefault();scrub(event);}});
-  for(const type of ['pointerup','pointercancel','lostpointercapture'])alphabet.addEventListener(type,()=>{dragging=false;bubble.hidden=true;});
   searchBox.classList.add('directory-filters');
   searchBox.append(label, search, categories);
   host.append(heading, searchBox, alphabet, count, list);
@@ -118,6 +106,7 @@ function mountCharacters(): void {
     const matches = candidates;
     for (const button of alphabet.querySelectorAll('button')) {
       button.disabled = !candidates.some(person => initial(person.name) === button.textContent);
+      button.hidden=button.disabled;button.title=button.disabled?'No matching people':button.getAttribute('aria-label')!;
       button.setAttribute('aria-pressed', String(button.textContent === letter));
     }
     search.placeholder = 'Search names or aliases…';

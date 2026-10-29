@@ -53,7 +53,7 @@ assert(build.includes("'maplibre-gl-worker.mjs'"),'Ship the local map worker on 
 assert(htmlSource.includes('/vendor/MAPLIBRE-LICENSE.txt'));
 console.log('Places checks passed: dataset, aliases, boundaries, ambiguity, coordinates, escaping, fetch retry and cache.');
 
-assert.equal(searchPlaces(places).length,places.size);
+assert.equal(searchPlaces(places).length,places.size-5,'Possessive source aliases resolve through their canonical places');
 assert.equal(searchPlaces(places,'  PROMISED LAND  ')[0].name,'Canaan','Search location aliases without case sensitivity');
 assert.equal(searchPlaces(places,'Jericho')[0].name,'Jericho','Exact place names sort first');
 assert.equal(searchPlaces(places,'not-a-real-place-name').length,0);

@@ -77,6 +77,7 @@ function toast(msg,{undo}={}){
  function dismiss(){if(notice.contains(document.activeElement)){actionToastTimer=setTimeout(dismiss,2000);return;}notice.hidden=true;}
  actionToastTimer=setTimeout(dismiss,typeof undo==='function'?12000:6000);
 }
+window.addEventListener('hashchange',()=>{clearTimeout(actionToastTimer);const notice=document.querySelector('#lens-action-toast');if(notice)notice.hidden=true;});
 function confirmNoteAction(message,action){
  const dialog=$('#note-confirm-dialog');if(dialog.open)return null;
  $('#note-confirm-message').textContent=message;
@@ -119,6 +120,7 @@ function updateHeaderContext(){
   context.textContent=label;
  }else context.textContent=label;
  if(showPassage&&context.dataset.description){const description=document.createElement('small');description.className='header-description';description.textContent=context.dataset.description;description.title=context.dataset.description;context.append(description);}
+ $('#lens-settings')?.setAttribute('aria-label','Settings for '+(view==='read'?label:document.title?.replace(/ · BibleLens$/,'')||label));
  context.parentElement?.setAttribute('aria-label',label+(showPassage&&context.dataset.description?' · '+context.dataset.description:'')+' — Open navigation');
 }
 let headerContextFrame=0;

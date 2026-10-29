@@ -2492,3 +2492,85 @@ html body.lens-app #chapter-text:has([data-lens-inspect]) .verse-body{padding-le
 html body.lens-app #chapter-text .lens-verse-evidence{position:absolute;left:8px;top:0;width:44px;height:44px;min-width:44px;justify-content:center}
 html body.lens-app #chapter-text .verse-num{z-index:1}
 html body.lens-app #main .lens-context h1{margin:0;font:inherit;color:inherit;letter-spacing:normal}
+/* UX9: reachable controls and bounded layouts at phone and desktop widths. */
+html body.lens-app :is(button,select,input:not([type=checkbox]):not([type=radio]),summary,.lens-button,.directory-reference,.character-verses a,.character-story-chip,.character-place-citation){min-height:44px;min-width:44px;box-sizing:border-box}
+html body.lens-app :is(.chip,.glass-pill,.phase2-modes button,.phase2-chips button,.person-chip,.location-chip){min-height:44px;min-width:44px;box-sizing:border-box}
+html body.lens-app #characters-view .directory-alphabet{position:static;inset:auto;width:100%;height:auto;display:flex;flex-direction:row;overflow-x:auto;gap:2px;touch-action:pan-x;background:var(--lens-paper);padding:4px 0;margin:8px 0}
+html body.lens-app #characters-view .directory-alphabet button{flex:0 0 44px;width:44px;height:44px;min-height:44px}
+html body.lens-app #characters-view .directory-alphabet button[hidden]{display:none}
+html body.lens-app #characters-view :is(.characters-search-box,#characters-list){margin-right:0;padding-right:0;max-width:100%}
+html body.lens-app #characters-view .characters-search-box{position:relative;top:auto}
+html body.lens-app :is(.timeline-controls,.ux-interior-chips){flex-wrap:wrap;overflow:visible;mask-image:none;-webkit-mask-image:none;padding-right:0;max-width:100%;min-width:0}
+html body.lens-app .timeline-controls label{flex:1 1 200px;min-width:0;max-width:100%}
+html body.lens-app .timeline-controls :is(input,.ux-search-field){width:100%;min-width:0;max-width:100%}
+html body.lens-app .timeline-controls [data-timeline-filter]{white-space:normal;max-width:100%}
+html body.lens-app :is(.comparison-sides,.comparison-side){display:block;width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+html body.lens-app .lens-evidence .comparison-side{margin:12px 0}
+html body.lens-app .lens-evidence .comparison-side :is(q,blockquote){display:block;width:100%;max-width:none;margin:8px 0;box-sizing:border-box}
+html body.lens-app #chapter-text .verse-body{padding-left:48px}
+html body.lens-app #chapter-text .verse-num{left:0;width:44px;min-width:44px;height:44px;text-align:center}
+html body.lens-app #chapter-text:has([data-lens-inspect]) .verse-body{padding-left:88px}
+html body.lens-app #chapter-text .lens-verse-evidence{left:44px}
+html body.lens-app #chapter-text .verse.selected{overflow:visible;margin-left:0;padding-left:4px}
+html body.lens-app #ux-chapter-picker{white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis;line-height:1.3}
+html body.lens-app #ux-chapter-picker span{white-space:nowrap}
+html body.lens-app .character-era{height:auto;min-height:24px;line-height:1.5;overflow:visible;white-space:normal}
+html body.lens-app .character-profile-context :is(span,.character-era){height:auto;overflow:visible;line-height:1.5;white-space:normal}
+html body.lens-app .place-profile-card{position:relative;padding-right:12px}
+html body.lens-app .place-profile-card h2{padding-right:100px}
+html body.lens-app .place-profile-card .ux-place-open{position:absolute;top:12px;right:56px;width:44px;height:44px}
+html body.lens-app .place-profile-card .directory-save{position:absolute;top:12px;right:8px;width:44px;height:44px}
+html body.lens-app .place-map-actions{position:static;display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+html body.lens-app .ux-search-skeleton{padding:16px 0}
+html body.lens-app .ux-search-skeleton span{display:block;height:20px;margin:14px 0;background:var(--lens-rule);border-radius:6px}
+html body.lens-app .ux-search-skeleton span:nth-child(2){width:80%}
+html body.lens-app .ux-search-skeleton span:nth-child(3){width:60%}
+/* Edge masks track each row's actual scroll position, including keyboard scroll. */
+html body.lens-app .ux-overflow-right{mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent);-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent)}
+html body.lens-app .ux-overflow-left{mask-image:linear-gradient(to right,transparent,#000 24px);-webkit-mask-image:linear-gradient(to right,transparent,#000 24px)}
+html body.lens-app .ux-overflow-left.ux-overflow-right{mask-image:linear-gradient(to right,transparent,#000 24px,#000 calc(100% - 24px),transparent);-webkit-mask-image:linear-gradient(to right,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
+@media(max-width:599px){html body.lens-app #lensComparison[data-layout=side] .lens-comparison-grid{grid-template-columns:minmax(0,1fr)}}
+@media(min-width:900px){
+ html body.lens-app #main{max-width:960px;margin-inline:auto}
+ html body.lens-app > header{max-width:960px;margin-inline:auto;left:0;right:0}
+ html body.lens-app #main #characters-list .character-card-header{max-width:640px}
+ html body.lens-app :is(dialog,.lens-inspector-sheet)::before{display:none;content:none}
+ html body.lens-app :is(.sheet-handle,.ux-drag-handle){display:none}
+}
+html body.lens-app #lensInspector .comparison-sides{display:block;grid-template-columns:minmax(0,1fr)}
+html body.lens-app .atlas-map-controls{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:8px 0 16px;position:relative}
+html body.lens-app .atlas-map-controls :is(.maplibregl-ctrl-bottom-left,.maplibregl-ctrl-bottom-right){position:static;max-width:100%}
+html body.lens-app .atlas-map-controls .maplibregl-ctrl{margin:0;float:none;max-width:100%;color:var(--lens-ink);background:var(--lens-paper)}
+html body.lens-app #atlas-map{background:var(--lens-surface);min-height:240px}
+html body.lens-app #atlas-map.atlas-loading{background:repeating-linear-gradient(135deg,var(--lens-paper),var(--lens-paper) 12px,var(--lens-surface) 12px,var(--lens-surface) 24px)}
+html body.lens-app .atlas-reference-pin>span:first-child{margin-bottom:18px;max-width:180px;white-space:normal}
+html body.lens-app [hidden]{display:none!important}
+html body.lens-app #characters-view .characters-search-box{position:sticky;top:64px;z-index:96;background:var(--lens-paper)}
+html body.lens-app #lensInspector .comparison-side q{width:100%;max-width:none}
+html body.lens-app #chapter-text .verse-num{justify-content:center;align-items:center}
+html body.lens-app #character-sheet .character-era{padding:4px 10px;min-height:28px;display:inline-flex;align-items:center}
+html body.lens-app :is(a,button.location-chip,button.person-chip,button[data-cite]){min-height:44px;min-width:44px;box-sizing:border-box}
+html body.lens-app :is(p,q,blockquote,.verse-body,.message-body) :is(a,button[data-cite],.location-chip,.person-chip){display:inline-flex;align-items:center;min-height:44px;min-width:44px;max-width:100%;vertical-align:baseline}
+html body.lens-app #places-view .place-profile-card{display:block}
+html body.lens-app #places-view .place-profile-card h2{min-height:44px;margin:0 0 8px}
+html body.lens-app #places-view .directory-references{display:flex;flex-wrap:wrap;gap:8px;position:static}
+html body.lens-app #characters-view .directory-alphabet button{touch-action:pan-x}
+html body.lens-app #main #places-view .place-profile-card .ux-place-open{inset:12px 56px auto auto;display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;z-index:3}
+html body.lens-app #main #places-view .place-profile-card h2{padding-right:88px;overflow-wrap:normal;word-break:normal}
+html body.lens-app #main #places-view .place-profile-card h2{font-size:18px;max-width:100%;line-height:1.4}
+@media(min-width:900px){html body.lens-app #lensMasthead{width:100%;max-width:960px;margin-inline:auto;padding-inline:24px;box-sizing:border-box}html body.lens-app #lensMasthead nav.lens-primary{max-width:960px;left:50%;right:auto;transform:translateX(-50%);width:100%}}
+/* Native WebKit menus otherwise keep a 25 px intrinsic control height. */
+html body.lens-app select{appearance:none;height:44px;min-height:44px}
+html body.lens-app select:not(#lens-edition){padding-right:32px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23858fa0' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center}
+html body.lens-app label:has(input:is([type=checkbox],[type=radio])){min-height:44px;min-width:44px;display:flex;align-items:center;gap:8px}
+@media(min-width:900px){html body.lens-app #lensMasthead .lens-tools{margin-left:auto}}
+html body.lens-app .atlas-map-controls a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+html body.lens-app :is(h1,h2,h3,h4)>a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+html body.lens-app .lens-comparison-passage>a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+@media(min-width:900px){
+ html body.lens-app #lensMasthead{display:flex;align-items:center}
+ html body.lens-app #lensMasthead .lens-tools{position:static;margin-left:auto;flex:none}
+ html body.lens-app #main #characters-list .ux-contact .character-card-header{gap:12px}
+ html body.lens-app #main #characters-list .ux-contact .ux-person-open{flex:0 1 auto;max-width:calc(100% - 56px)}
+ html body.lens-app #main #characters-list .ux-contact .ux-contact-copy{flex:0 1 auto}
+}

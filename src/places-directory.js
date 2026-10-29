@@ -1,22 +1,24 @@
+import books from '../data/books.json' with {type:'json'};
 import {directorySaveButton} from './directory-save.js';
 import {loadPlaces,atlasDescription} from './places-core.js';
 import {regionCoverage,inWindow,usableRegionPoint} from './place-regions.js';
 
-const normalize=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
+const normalize=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase().replace(/['’]s\b/g,'');
 export function searchPlaces(places,query=''){
- const terms=normalize(query.trim()).split(/\s+/).filter(Boolean);
+ const terms=normalize(query.trim()).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
  const queryName=normalize(query.trim());
  const rank=place=>{const name=normalize(place.name);return !queryName?0:name===queryName?4:name.startsWith(queryName)?3:terms.every(term=>name.split(/[^\p{L}\p{N}]+/u).some(word=>word.startsWith(term)))?2:1;};
- return [...places.values()].filter(place=>terms.every(term=>normalize([place.name,...place.aliases,place.modern_name].filter(Boolean).join(' ')).split(/[^\p{L}\p{N}]+/u).some(word=>word.startsWith(term))))
+ return [...places.values()].filter(place=>!(/['’]s$/i.test(place.name)&&place.canonicalId!==place.id&&places.has(place.canonicalId))).filter(place=>terms.every(term=>normalize([place.name,...place.aliases,place.modern_name].filter(Boolean).join(' ')).split(/[^\p{L}\p{N}]+/u).some(word=>word.startsWith(term))))
   .sort((a,b)=>rank(b)-rank(a)||a.name.localeCompare(b.name)||a.id.localeCompare(b.id));
 }
 
 const node=(tag,className,text)=>{const el=document.createElement(tag);el.className=className||'';if(text)el.textContent=text;return el;};
 function placeCard(place, duplicate){
  const card=node('article','character-card place-profile-card');
- const heading=node('h2','character-name',place.name+(duplicate&&place.featureType?' ('+place.featureType+')':''));card.append(heading);
+ const heading=node('h2','character-name',place.name+(duplicate&&(place.region||place.refs?.[0])?' ('+(place.region||(books[place.refs[0][0]].code+' '+place.refs[0][1]+':'+place.refs[0][2]))+')':''));card.append(heading);
  const open=node('button','ux-place-open','→');open.type='button';open.dataset.placeId=place.id;open.setAttribute('aria-label','Open '+place.name);card.append(open,directorySaveButton('place',place.id,place.name));
  if(place.linkedPassageCount!==null)card.append(node('p','ux-place-count',place.linkedPassageCount+' linked '+(place.linkedPassageCount===1?'verse':'verses')));
+ if(place.refs?.length){const links=node('div','directory-references');for(const [book,chapter,verse] of place.refs.slice(0,2)){const link=node('a','directory-reference',books[book].name+' '+chapter+':'+verse);link.href='#read/'+book+'/'+chapter+'/'+verse;links.append(link);}card.append(links);}
  const description=place.shortDescription;
  if(description&&description.split(/\s+/).length<=15)card.append(node('p','character-summary',description));
  const meta=node('div','ux-place-meta');
@@ -68,8 +70,8 @@ export function mountPlacesDirectory(){
  async function load(){
   if(loaded||loading)return;loading=true;failed=false;render();
   try{places=await loadPlaces();loaded=true;
-   const shown=regionCoverage([...places.values()]).filter(row=>row.shown);
-   for(const row of [null,...shown]){const button=node('button','',row?row.name+' ('+row.usable.toLocaleString()+')':'All ('+places.size.toLocaleString()+')');button.type='button';button.setAttribute('aria-label',row?.name||'All');button.setAttribute('aria-pressed',String(row===region));button.onclick=()=>{region=row;page=0;for(const other of regions.children)other.setAttribute('aria-pressed',String(other===button));render();};regions.append(button);}
+   const shown=regionCoverage(searchPlaces(places)).filter(row=>row.shown);
+   for(const row of [null,...shown]){const button=node('button','',row?row.name+' ('+row.usable.toLocaleString()+')':'All ('+searchPlaces(places).length.toLocaleString()+')');button.type='button';button.setAttribute('aria-label',row?.name||'All');button.setAttribute('aria-pressed',String(row===region));button.onclick=()=>{region=row;page=0;for(const other of regions.children)other.setAttribute('aria-pressed',String(other===button));render();};regions.append(button);}
   }catch{failed=true;}
   loading=false;render();
  }

@@ -1,15 +1,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {execFileSync} from 'node:child_process';
 import {build} from 'esbuild';
 import {mobileBundle} from './build.mjs';
 import {insertDeviceBootstrap,insertNativeContentSecurityPolicy} from './startup-assets.mjs';
 
-const output=path.resolve('www');
-// Remove only this build's fixed output directory, never a supplied path.
-if(output!==path.join(process.cwd(),'www'))throw Error('Unexpected mobile output directory');
-// Clear only the fixed generated bundle: draft and old hashed assets must not survive a production rebuild.
-fs.rmSync(output,{recursive:true,force:true});
-fs.mkdirSync(output,{recursive:true});
+const destination=path.resolve('www');
+const output=fs.mkdtempSync(path.join(process.cwd(),'.www-stage-'));
+// Build beside www so the final exchange stays on one filesystem. Never remove
+// the directory served by the host, and leave it intact on any build failure.
+try {
 for(const [url,asset]of Object.entries(mobileBundle.assets)){
  const file=path.join(output,url==='/'?'index.html':url.slice(1));
  fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,asset.encoding==='base64'?Buffer.from(asset.body,'base64'):asset.body);
@@ -31,4 +31,15 @@ const nativeNotices=['@capacitor/core','@capacitor/android','@capacitor/ios','@c
 fs.writeFileSync(path.join(output,'native-licenses.txt'),nativeNotices);
 html=html.replace('No language model download is needed for Chat.','<a href="/native-licenses.txt" target="_blank" rel="noopener">Native component licenses</a>. No language model download is needed for reading and search.');
 fs.writeFileSync(path.join(output,'index.html'),html);
-console.log('Mobile web bundle ready:',output,'(offline reading/search; optional cloud sync)');
+// Keep owner previews outside the generated bundle, and retain the preceding
+// fingerprinted assets for requests that began before the directory exchange.
+for(const name of ['gemini','mock'])if(fs.existsSync(path.join(destination,name)))fs.cpSync(path.join(destination,name),path.join(output,name),{recursive:true});
+const previousManifest=['index.html','feature-loader.js'].filter(name=>fs.existsSync(path.join(destination,name))).map(name=>fs.readFileSync(path.join(destination,name),'utf8')).join('\n');
+for(const match of previousManifest.matchAll(/\/assets\/[^"'\s<>]+\.[a-f0-9]{16}\.(?:js|css)/g)){
+ const name=path.basename(match[0]),previous=path.join(destination,'assets',name),next=path.join(output,'assets',name);
+ if(fs.existsSync(previous)&&!fs.existsSync(next))fs.copyFileSync(previous,next);
+}
+execFileSync('python3',['scripts/swap-mobile.py',output,destination]);
+console.log('Mobile web bundle ready:',destination,'(offline reading/search; optional cloud sync)');
+
+} finally {fs.rmSync(output,{recursive:true,force:true});}
