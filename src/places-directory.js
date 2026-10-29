@@ -23,18 +23,18 @@ function placeCard(place, duplicate){
  if(description&&description.split(/\s+/).length<=15)card.append(node('p','character-summary',description));
  const meta=node('div','ux-place-meta');
  if(place.featureType)meta.append(node('span','',place.featureType));
- if(place.coordinates)meta.append(node('span','',place.coordinates.latitude.toFixed(5)+', '+place.coordinates.longitude.toFixed(5)));
- else meta.append(node('span','','Location unknown'));
+ if(place.modern_name)meta.append(node('span','','Now '+place.modern_name));
+ if(!place.coordinates)meta.append(node('span','','Location unknown'));
  card.append(meta);
  const figure=node('div','place-map-actions');
- const map=node('button','place-map-action','Map');map.type='button';map.dataset.placeId=place.id;map.disabled=!place.coordinates;map.setAttribute('aria-label','Map: '+place.name+' in the atlas');
+ const map=node('button','place-map-action','View on Map');map.type='button';map.dataset.placeId=place.id;map.disabled=!place.coordinates;map.setAttribute('aria-label','View on Map: '+place.name+' in the atlas');
  const source=node('button','place-map-action place-map-source','Sources');source.type='button';source.setAttribute('aria-label','Sources and location details for '+place.name);
  figure.append(map,source);card.append(figure);
  const panel=node('section','place-location-details');panel.setAttribute('aria-label',place.name+' location details');
- panel.append(node('h3','','Location details'));
+ panel.append(node('h3','','Location Details'));
  const fullDescription=atlasDescription(place);
- if(fullDescription&&fullDescription!=='No description is available in this reference dataset.'){const details=node('details');details.append(node('summary','','Source description'),node('p','',fullDescription));panel.append(details);}
- for(const [label,value] of [['Type',place.featureType],['Modern name',place.modern_name],['Location precision',place.precision]])if(value)panel.append(node('p','',label+': '+value));
+ if(fullDescription&&fullDescription!=='No description is available in this reference dataset.'){const details=node('details');details.append(node('summary','','Source Description'),node('p','',fullDescription));panel.append(details);}
+ for(const [label,value] of [['Type',place.featureType],['Modern Name',place.modern_name],['Location Precision',place.precision]])if(value)panel.append(node('p','',label+': '+value));
  if(place.coordinates)panel.append(node('p','',place.coordinates.latitude.toFixed(5)+', '+place.coordinates.longitude.toFixed(5)));
  panel.append(node('p','characters-note',place.coordinates?'Dataset location; historical identifications and precision vary. Modern map labels do not establish ancient boundaries.':'Location unknown'));
  const popover=node('div','character-source-popover');popover.id='place-source-'+place.id;popover.setAttribute('popover','auto');popover.setAttribute('role','dialog');popover.setAttribute('aria-labelledby',popover.id+'-title');source.setAttribute('popovertarget',popover.id);source.setAttribute('aria-haspopup','dialog');
@@ -50,7 +50,7 @@ function placeCard(place, duplicate){
 
 export function mountPlacesDirectory(){
  const host=document.querySelector('#places-view');if(!host)return;
- host.innerHTML='<div class="page-heading"><h1 id="places-heading">Places</h1><p>Find biblical locations and explore their maps and sources.</p></div><label class="sr-only" for="places-search">Search places by name or alias</label><div class="characters-search-box"><input id="places-search" type="search" placeholder="Search places or aliases…"></div><p id="places-count" class="sr-only" role="status"></p><ul class="places-directory-list"></ul><nav class="places-directory-pagination" aria-label="Places results"><button type="button" data-places-previous>Previous</button><span role="status"></span><button type="button" data-places-next>Next</button></nav><button type="button" data-places-retry hidden>Retry loading places</button>';
+ host.innerHTML='<div class="page-heading"><h1 id="places-heading">Places</h1><p>Find biblical locations and explore their maps and sources.</p></div><label class="sr-only" for="places-search">Search Places by Name or Alias</label><div class="characters-search-box"><input id="places-search" type="search" placeholder="Search places or aliases…"></div><p id="places-count" class="sr-only" role="status"></p><ul class="places-directory-list"></ul><nav class="places-directory-pagination" aria-label="Places results"><button type="button" data-places-previous>Previous</button><span role="status"></span><button type="button" data-places-next>Next</button></nav><button type="button" data-places-retry hidden>Retry Loading Places</button>';
  const regions=node('div','directory-categories');regions.setAttribute('aria-label','Place regions');regions.setAttribute('role','group');host.querySelector('.characters-search-box').after(regions);
  const search=host.querySelector('input'),count=host.querySelector('#places-count'),list=host.querySelector('ul'),pagination=host.querySelector('nav');
  const previous=host.querySelector('[data-places-previous]'),next=host.querySelector('[data-places-next]'),retry=host.querySelector('[data-places-retry]');

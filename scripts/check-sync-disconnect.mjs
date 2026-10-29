@@ -18,7 +18,7 @@ try{
  const device=await fixture.pair();let fail=true,requests=[];
  const fetcher=async(url,options)=>{const path=new URL(url,'https://bible.test').pathname.replace('/api/sync','');requests.push(path);if(path==='/disconnect'&&fail)throw Error('Offline');return fixture.call(path,{method:options.method,body:options.body&&JSON.parse(options.body),token:options.headers.authorization?.slice(7)});};
  const storage=new Map([[key,JSON.stringify({enabled:true,base:{},owner:device.userId,token:device.token})]]);
- let app=client(storage,{fetcher});await settle();await app.click('Turn off sync');
+ let app=client(storage,{fetcher});await settle();await app.click('Turn Off Sync');
  assert.equal(app.meta().enabled,false);assert.equal(app.meta().disconnectPending,true);assert.equal(app.meta().token,device.token);assert.match(app.status.textContent,/pending/);
  assert.equal(app.context.state.notes.offline,'Keep offline notes');assert.equal((await fixture.call('/document',{token:device.token})).status,200);
  requests=[];app=client(storage,{fetcher});await settle();assert.deepEqual(requests,['/disconnect'],'Reload must retry revocation without resuming sync');
@@ -32,7 +32,7 @@ try{
  // Pause a document read, then turn sync off while it is in flight.
  const third=await fixture.pair();storage.set(key,JSON.stringify({enabled:true,base:{},owner:third.userId,token:third.token}));let finishRead;
  app=client(storage,{fetcher:async(url,options)=>url.endsWith('/document')&&!options.method?new Promise(resolve=>{finishRead=resolve;}):fetcher(url,options)});await settle();assert(finishRead);
- await app.click('Turn off sync');finishRead(Response.json({revision:1,data:{notes:{remote:'Must not apply after disconnect'}}}));await settle();
+ await app.click('Turn Off Sync');finishRead(Response.json({revision:1,data:{notes:{remote:'Must not apply after disconnect'}}}));await settle();
  assert.equal(app.context.applied,0);assert.equal(app.context.state.notes.offline,'Keep offline notes');assert.equal(app.meta().enabled,false);assert.equal(app.meta().token,null);
  console.log('PASS: a late sync response cannot apply cloud data or restore credentials after disconnect.');
  storage.set(key,JSON.stringify({enabled:false,token:'unused-web-token',base:{}}));let authorization;

@@ -21,7 +21,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await go('#people','#characters-list .ux-contact');
   assert.deepEqual(await page.locator('.directory-categories button').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('aria-label'))),['All','Women','Kings & Queens','Judges','Prophets','Priests','Apostles']);
   assert((await page.locator('.directory-categories button').allTextContents()).every(text=>/\([\d,]+\)$/.test(text)));
-  assert.equal(await page.locator('.directory-alphabet button').count(),26);
+  assert.equal(await page.locator('.ux-alphabet-grid button').count(),26);
   assert.equal(await page.locator('#characters-list>.character-card').count(),15);
   for(const button of await page.locator('.directory-save').all()){
    const r=await button.boundingBox();assert(r.width>=44&&r.height>=44,'44px target');
@@ -50,19 +50,19 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   // From People: category, result (two activations).
   await page.locator('.ux-person-open').first().click();await page.locator('#character-sheet[open]').waitFor();await page.keyboard.press('Escape');
   await page.getByRole('button',{name:'All',exact:true}).click();
-  await page.getByRole('button',{name:'Jump to M',exact:true}).click();
+  await page.locator('#ux-alphabet-open').click();await page.locator('.ux-alphabet-grid button[aria-label="Jump to M"]').click();await page.locator('[data-letter=M]').waitFor();await page.waitForFunction(()=>document.querySelector('.ux-alphabet-grid button[aria-label="Jump to M"]')?.getAttribute('aria-pressed')==='true');
   assert((await page.locator('#characters-list h2').allTextContents()).some(name=>name.startsWith('M')));
-  assert.equal(await page.locator('.directory-alphabet').evaluate(n=>getComputedStyle(n).touchAction),'pan-x');
-  assert((await page.locator('.directory-alphabet').boundingBox()).width>=44);
-  await shot('people-letter-m');
+  await page.locator('#ux-alphabet-open').click();assert.equal(await page.locator('.ux-alphabet-grid').evaluate(n=>getComputedStyle(n).display),'grid');
+  assert((await page.locator('.ux-alphabet-grid').boundingBox()).width>=44);
+  await shot('people-letter-m');await page.keyboard.press('Escape');
   await page.evaluate(()=>scrollTo(0,600));
   const sticky=await page.locator('.directory-filters').boundingBox();assert(sticky.y>=0&&sticky.y<150,'Filters stay below the masthead');
   // From People: M, search field, Moses result (three taps; typing is not an activation).
   await page.locator('#characters-search').tap();await page.locator('#characters-search').fill('Moses');
   await page.locator('a[aria-label="Open Moses"]').waitFor();await page.locator('a[aria-label="Open Moses"]').tap();
   await page.locator('#character-sheet[open]').waitFor();assert.match(await page.locator('#character-sheet').innerText(),/Moses/);await page.keyboard.press('Escape');
-  await page.getByRole('button',{name:'Jump to M',exact:true}).click();
-  assert.equal(await page.getByRole('button',{name:'Jump to M',exact:true}).getAttribute('aria-pressed'),'true');
+  await page.locator('#ux-alphabet-open').click();await page.locator('.ux-alphabet-grid button[aria-label="Jump to M"]').click();await page.locator('[data-letter=M]').waitFor();await page.waitForFunction(()=>document.querySelector('.ux-alphabet-grid button[aria-label="Jump to M"]')?.getAttribute('aria-pressed')==='true');
+  assert.equal(await page.locator('.ux-alphabet-grid button[aria-label="Jump to M"]').getAttribute('aria-pressed'),'true');
   await shot('people-search-moses');
   // Search field and result: two taps.
   await page.locator('#characters-search').tap();await page.locator('a[aria-label="Open Moses"]').tap();await page.locator('#character-sheet[open]').waitFor();await page.keyboard.press('Escape');
@@ -73,7 +73,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   const ref=page.locator('#character-sheet .person-section-panel:not([hidden]) a[href^="#read/"]').first(),href=await ref.getAttribute('href');await ref.click();await page.waitForFunction(hash=>location.hash===hash,href);await page.locator('#character-sheet[open]').waitFor({state:'hidden'});assert.equal(await page.locator('#character-sheet[open]').count(),0,'Detail references open scripture');
   await go('#people','#characters-search');await page.locator('#characters-search').fill('Abdi');await page.waitForFunction(()=>document.querySelector('#characters-list h2')?.textContent.startsWith('Abdi'));
   const names=await page.locator('#characters-list h2').allTextContents();assert(names.some(n=>n==='Abdi (child of Malluch)'));assert(names.some(n=>/^Abdi \(.+ \d+:\d+\)$/.test(n)));await shot('people-same-name');
-  await page.getByRole('button',{name:'Women',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.characters-empty'));assert.equal(await page.locator('.directory-alphabet button:not(:disabled)').count(),0);
+  await page.getByRole('button',{name:'Women',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.characters-empty'));assert.equal(await page.locator('.ux-alphabet-grid button:not(:disabled)').count(),0);
   await page.getByRole('button',{name:'All',exact:true}).click();await page.locator('#characters-search').fill('King');await page.locator('.character-matched-alias').first().waitFor();assert.match(await page.locator('.character-matched-alias').first().innerText(),/King/);
   await go('#places','.place-profile-card');assert.equal(await page.locator('.place-profile-card').count(),15);await shot('places');
   const placeName=await page.locator('.place-profile-card .character-name').first().innerText();await page.locator('.place-profile-card .directory-save').first().click();

@@ -55,8 +55,8 @@ try{
   let visible=0;
   const results=groups.flatMap(({name,items})=>items.map((item,index)=>{
    const record=name==='Research'?lastSearch.research.find(row=>row.title===item.title):null;
-   const kind={Scripture:'verse',Research:record?.kind==='study'?'study':'record',Stories:'story',People:'person',Places:'place'}[name];
-   const id=name==='Scripture'?item.title:name==='Research'?record?.id:name==='People'?item.url.slice('#characters/'.length):name==='Places'?/data-place-id="([^"]+)"/.exec(item.html)?.[1]:item.url;
+   const kind={Scripture:'verse',Research:record?.kind==='study'?'study':'record',Stories:'story',People:'person',Places:'place',Commandments:'commandment'}[name];
+   const id=name==='Commandments'?item.id:name==='Scripture'?item.title:name==='Research'?record?.id:name==='People'?item.url.slice('#characters/'.length):name==='Places'?/data-place-id="([^"]+)"/.exec(item.html)?.[1]:item.url;
    assert(kind&&id,`Unidentified result in ${name}`);
    return {kind,id,group:name,groupRank:index+1,visibleRank:index<5?++visible:null};
   })).map((row,index)=>({...row,rank:index+1}));

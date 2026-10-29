@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  if(!native&&(meta.token||meta.disconnectPending)){meta.token=null;delete meta.disconnectPending;saveMeta();}
  if(meta.disconnectPending)meta.enabled=false;
  const panel=document.createElement('section');panel.className='cloud-sync-settings';
- panel.innerHTML='<h3>Cloud sync</h3><p>Keep bookmarks, notes, appearance, and reader preferences together. Reading and search still work offline.</p><p data-sync-status role="status" aria-live="polite"></p><div class="sync-actions"></div><div class="sync-pair" hidden></div>';
+ panel.innerHTML='<h3>Cloud Sync</h3><p>Keep bookmarks, notes, appearance, and reader preferences together. Reading and search still work offline.</p><p data-sync-status role="status" aria-live="polite"></p><div class="sync-actions"></div><div class="sync-pair" hidden></div>';
  document.querySelector('#reader-settings').append(panel);
  const status=panel.querySelector('[data-sync-status]'),actions=panel.querySelector('.sync-actions'),pair=panel.querySelector('.sync-pair');
  function say(text){status.textContent=text;}
@@ -45,25 +45,25 @@ document.addEventListener('DOMContentLoaded',()=>{
  function render(){
   actions.replaceChildren();pair.hidden=true;
   if(meta.disconnectPending){
-   button('Retry disconnect',retryDisconnect);
-   button('Download safety backup',downloadBackup);
+   button('Retry Disconnect',retryDisconnect);
+   button('Download Safety Backup',downloadBackup);
   }else if(meta.enabled){
-   button('Sync now',sync);
-   button('Turn off sync',disconnect);
-   button('Download safety backup',downloadBackup);
+   button('Sync Now',sync);
+   button('Turn Off Sync',disconnect);
+   button('Download Safety Backup',downloadBackup);
    if(!native){
-    if(!identity){const a=document.createElement('a');a.href='/signin-with-chatgpt?return_to='+encodeURIComponent('/#sync');a.target='_top';a.textContent='Sign in again';actions.append(a);}
+    if(!identity){const a=document.createElement('a');a.href='/signin-with-chatgpt?return_to='+encodeURIComponent('/#sync');a.target='_top';a.textContent='Sign In Again';actions.append(a);}
     button('Connect iPhone',async()=>{const data=await api('/pair',{method:'POST'});pair.replaceChildren();const p=document.createElement('p');p.textContent='On your iPhone, open Settings → Cloud sync and enter this code. It expires in 10 minutes and works once.';const input=document.createElement('input');input.readOnly=true;input.value=data.code;input.setAttribute('aria-label','iPhone connection code');pair.append(p,input);pair.hidden=false;input.select();});
-    button('Disconnect all iPhones',async()=>{await api('/disconnect',{method:'POST'});say('All connected iPhones were disconnected. Their local notes remain available.');});
+    button('Disconnect All iPhones',async()=>{await api('/disconnect',{method:'POST'});say('All connected iPhones were disconnected. Their local notes remain available.');});
    }
   }else if(native){
    const p=document.createElement('p');p.textContent='Sign in and enable sync on the website, choose Connect iPhone, then paste its one-time code here.';const input=document.createElement('input');input.placeholder='xxxx-xxxx-xxxx-xxxx';input.autocomplete='off';input.setAttribute('aria-label','Website connection code');pair.replaceChildren(p,input);pair.hidden=false;
    button('Connect',async()=>{const data=await api('/pair/redeem',{method:'POST',body:JSON.stringify({code:input.value})});backup();meta={enabled:true,base:{},owner:data.userId,token:data.token};saveMeta();render();await sync();});
-   const a=document.createElement('a');a.href=cloud+'/#sync';a.target='_blank';a.rel='noopener';a.textContent='Open BibleLens website';actions.append(a);
+   const a=document.createElement('a');a.href=cloud+'/#sync';a.target='_blank';a.rel='noopener';a.textContent='Open BibleLens Website';actions.append(a);
   }else if(identity){
-   button('Enable cloud sync',async()=>{backup();meta={enabled:true,base:{},owner:identity.userId,token:null};saveMeta();render();await sync();});
+   button('Enable Cloud Sync',async()=>{backup();meta={enabled:true,base:{},owner:identity.userId,token:null};saveMeta();render();await sync();});
   }else{
-   const a=document.createElement('a');a.href='/signin-with-chatgpt?return_to='+encodeURIComponent('/#sync');a.target='_top';a.textContent='Sign in with ChatGPT';actions.append(a);
+   const a=document.createElement('a');a.href='/signin-with-chatgpt?return_to='+encodeURIComponent('/#sync');a.target='_top';a.textContent='Sign In with ChatGPT';actions.append(a);
   }
  }
  async function sync(){

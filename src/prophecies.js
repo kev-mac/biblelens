@@ -35,7 +35,7 @@ export function mountProphecies() {
  matrix.innerHTML = Object.entries(PROPHECY_FACETS).map(([facet, values]) => `<fieldset><legend>${facet[0].toUpperCase() + facet.slice(1)}</legend><div class="prophecy-options">${values.map(value => `<button type="button" class="prophecy-facet ${tone(value)}" data-prophecy-facet="${facet}" data-value="${escape(value)}" aria-pressed="false" aria-controls="prophecies-list">${escape(value)}</button>`).join('')}</div></fieldset>`).join('');
  function render() {
   const items = filterProphecies(samples, filters);
-  root.querySelector('#prophecies-list').innerHTML = items.length ? items.map(prophecyCard).join('') : '<div class="empty"><h2>No matching prophecies</h2><p>Try fewer filters or reset filters to see all three samples.</p></div>';
+  root.querySelector('#prophecies-list').innerHTML = items.length ? items.map(prophecyCard).join('') : '<div class="empty"><h2>No Matching Prophecies</h2><p>Try fewer filters or reset filters to see all three samples.</p></div>';
   root.querySelector('#prophecies-count').textContent = `${items.length} of ${samples.length} sample prophecies`;
   for (const button of [...quick.querySelectorAll('[data-prophecy-facet]'), ...matrix.querySelectorAll('[data-prophecy-facet]')]) button.setAttribute('aria-pressed', String(filters[button.dataset.prophecyFacet].includes(button.dataset.value)));
   const count = Object.values(filters).reduce((sum, values) => sum + values.length, 0);

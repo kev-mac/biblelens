@@ -12,7 +12,7 @@ const mapNotice=document.createElement('p');mapNotice.className='atlas-map-notic
 // Identification limits belong beside the map, not only in collapsed sources.
 const identification=document.createElement('p');identification.className='atlas-identification';identification.setAttribute('role','status');mapNode.before(identification);
 
-document.querySelector('#atlas-sources summary').textContent='Sources & identification';
+document.querySelector('#atlas-sources summary').textContent='Sources & Identification';
 function colorMap(){
  if(!map?.isStyleLoaded())return;
  const dark=document.body.classList.contains('dark');
@@ -34,7 +34,7 @@ async function openAtlas(id,button){
  try{
   const place=await getLocationDetails(id);if(token!==request||!sheet.open)return;if(!place)throw Error('This place is not in the reference dataset.');
   document.querySelector('#atlas-name').classList.remove('loading-state');document.querySelector('#atlas-name').textContent=place.name;
-  document.querySelector('#atlas-names').textContent=[place.modern_name&&`Modern name: ${place.modern_name}`,place.aliases.length&&`Also called ${place.aliases.join(', ')}`].filter(Boolean).join(' · ');
+  document.querySelector('#atlas-names').textContent=[place.modern_name&&`Modern Name: ${place.modern_name}`,place.aliases.length&&`Also called ${place.aliases.join(', ')}`].filter(Boolean).join(' · ');
   const description=document.querySelector('#atlas-description');description.textContent=atlasDescription(place);description.hidden=!description.textContent;
   if(!place.coordinates){identification.textContent='Location unknown';return;}
   const {latitude,longitude}=place.coordinates,point=[longitude,latitude];mapNode.hidden=false;document.querySelectorAll('.atlas-map-controls').forEach(node=>node.hidden=false);

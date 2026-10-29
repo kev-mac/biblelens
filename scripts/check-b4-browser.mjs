@@ -26,7 +26,7 @@ for(const [engine,browserType] of [['chromium',chromium],['webkit',webkit]]){
   for(const id of ['headline-01','headline-04','headline-05','headline-22','headline-25']){
    await page.evaluate(id=>BibleLensWorkspace.navigate('#debate/'+id+'?draft=1'),id);await page.waitForSelector('.phase3-readings');
    assert.equal(await page.locator('.phase3-readings h3').count(),2);assert(await page.locator('.phase3-readings a[href^="https://"]').count()>0);
-   assert.match(await page.locator('.phase3-verdict-box').innerText(),/What the evidence shows/);
+   assert.match(await page.locator('.phase3-verdict-box').innerText(),/What the Evidence Shows/);
    assert.match(await page.locator('#debate-view .phase3-tier').innerText(),/Not assessed/);
    const text=await page.locator('#debate-view').innerText();assert.deepEqual(findings(text),[],id+' banned framing');
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),viewport.width,id+' overflow');

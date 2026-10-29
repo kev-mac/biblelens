@@ -1,6 +1,6 @@
 'use strict';
 document.addEventListener('DOMContentLoaded',async()=>{
- const panel=document.createElement('section');panel.className='release-settings';panel.innerHTML='<h3>App version</h3><p data-release-version></p><p data-release-status role="status"></p><button type="button" class="secondary">Check for updates</button>';
+ const panel=document.createElement('section');panel.className='release-settings';panel.innerHTML='<h3>App Version</h3><p data-release-version></p><p data-release-status role="status"></p><button type="button" class="secondary">Check for Updates</button>';
  document.querySelector('#reader-settings').append(panel);
  const footerVersion=document.querySelector('[data-footer-version]');
  let installed;

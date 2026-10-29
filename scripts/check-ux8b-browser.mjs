@@ -47,4 +47,4 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await context.close();
  }finally{await browser.close();}
 }
-fs.writeFileSync(root+'/UX8b-logs/browser-matrix.json',JSON.stringify(matrix,null,2)+'\n');console.log('PASS: Chromium/WebKit, 320/375/390, all editions, short/long titles, no control intersections; Search labels; unknown place All only.');
+fs.writeFileSync((process.env.UX_REPORT_DIR||root+'/UX8b-logs')+'/ux8b-browser-matrix.json',JSON.stringify(matrix,null,2)+'\n');console.log('PASS: Chromium/WebKit, 320/375/390, all editions, short/long titles, no control intersections; Search labels; unknown place All only.');

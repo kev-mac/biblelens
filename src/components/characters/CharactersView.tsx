@@ -68,12 +68,12 @@ function mountCharacters(): void {
       button.setAttribute('aria-pressed', String(name === category));
     }
   }
-  const alphabet = element('div', 'directory-alphabet');
+  const alphabet = element('div', 'ux-alphabet-grid');
   alphabet.setAttribute('role', 'group'); alphabet.setAttribute('aria-label', 'Jump to people by first letter');
   for (const name of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
     const button = element('button', '', name); button.type = 'button';
     button.setAttribute('aria-label', 'Jump to ' + name);
-    button.addEventListener('click', () => { jump(name); });
+    button.addEventListener('click', () => { alphabetJump=name;alphabetSheet.close(); });
     alphabet.append(button);
   }
   function jump(name:string):void {
@@ -81,11 +81,23 @@ function mountCharacters(): void {
     const index=candidates.findIndex(person=>person.name.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').charAt(0).toUpperCase()===name);
     if(index<0)return;
     letter=name;page=Math.floor(index/CHARACTER_PAGE_SIZE);render();
-    list.querySelector<HTMLElement>('[data-letter="'+name+'"]')?.scrollIntoView({block:'start'});
+    list.querySelector<HTMLElement>('[data-letter="'+name+'"]')?.focus({preventScroll:true});
+    list.querySelector<HTMLElement>('[data-letter="'+name+'"]')?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
   }
   searchBox.classList.add('directory-filters');
   searchBox.append(label, search, categories);
-  host.append(heading, searchBox, alphabet, count, list);
+  let alphabetJump:string|null=null;
+  const alphabetSheet=element('dialog','ux-alphabet-sheet');alphabetSheet.id='ux-alphabet-sheet';alphabetSheet.setAttribute('aria-labelledby','ux-alphabet-title');
+  const alphabetTitle=element('h2','','People A–Z');alphabetTitle.id='ux-alphabet-title';
+  const alphabetHelp=element('p','','Letters without matching names are disabled.');alphabetHelp.id='ux-alphabet-help';alphabet.setAttribute('aria-describedby',alphabetHelp.id);
+  const alphabetClose=element('button','','Close');alphabetClose.type='button';alphabetClose.onclick=()=>alphabetSheet.close();
+  alphabetSheet.append(alphabetTitle,alphabetHelp,alphabet,alphabetClose);document.body.append(alphabetSheet);
+  const alphabetOpen=element('button','ux-alphabet-open','A–Z');alphabetOpen.type='button';alphabetOpen.id='ux-alphabet-open';alphabetOpen.setAttribute('aria-haspopup','dialog');alphabetOpen.setAttribute('aria-controls',alphabetSheet.id);alphabetOpen.setAttribute('aria-label','Jump to a Letter');
+  alphabetOpen.onclick=()=>{alphabetSheet.showModal();alphabet.querySelector<HTMLButtonElement>('button:not(:disabled)')?.focus();};
+  alphabetSheet.addEventListener('close',()=>{const target=alphabetJump;alphabetJump=null;if(target){requestAnimationFrame(()=>requestAnimationFrame(()=>{if(!host.hidden)jump(target);}));}else alphabetOpen.focus({preventScroll:true});});
+  alphabetSheet.addEventListener('click',event=>{if(event.target===alphabetSheet){const r=alphabetSheet.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)alphabetSheet.close();}});
+  window.addEventListener('viewchange',()=>{if(alphabetSheet.open)alphabetSheet.close();});
+  host.append(heading, searchBox, count, list, alphabetOpen);
   // Keep letter dividers below the sticky search/filter controls at every font size.
   new ResizeObserver(() => {
     const top = parseFloat(getComputedStyle(searchBox).top) || 64;
@@ -94,7 +106,7 @@ function mountCharacters(): void {
   const pagination = element('div', 'characters-pagination');
   const previous = element('button', '', 'Previous'); previous.type = 'button';
   const next = element('button', '', 'Next'); next.type = 'button';
-  const retry = element('button', '', 'Retry loading characters'); retry.type = 'button';
+  const retry = element('button', '', 'Retry Loading Characters'); retry.type = 'button';
   previous.setAttribute('aria-controls', list.id); next.setAttribute('aria-controls', list.id);
   const pageLabel = element('span'); pageLabel.setAttribute('role', 'status');
   pagination.append(previous, pageLabel, next); host.append(pagination, retry);
@@ -106,7 +118,7 @@ function mountCharacters(): void {
     const matches = candidates;
     for (const button of alphabet.querySelectorAll('button')) {
       button.disabled = !candidates.some(person => initial(person.name) === button.textContent);
-      button.hidden=button.disabled;button.title=button.disabled?'No matching people':button.getAttribute('aria-label')!;
+      button.hidden=false;button.title=button.disabled?'No matching people':button.getAttribute('aria-label')!;
       button.setAttribute('aria-pressed', String(button.textContent === letter));
     }
     search.placeholder = 'Search names or aliases…';
@@ -115,7 +127,7 @@ function mountCharacters(): void {
     let section='';
     for(const person of characterPage(matches,page)){
       const first=initial(person.name);
-      if(first!==section){const heading=element('h3','ux-letter-heading',first);heading.dataset.letter=first;list.append(heading);section=first;}
+      if(first!==section){const heading=element('h3','ux-letter-heading',first);heading.dataset.letter=first;heading.tabIndex=-1;list.append(heading);section=first;}
       list.append(PersonContact(person));
     }
     if(search.value.trim())for(const person of characterPage(matches,page)){
@@ -184,7 +196,7 @@ function mountCharacters(): void {
   const header = element('div', 'character-sheet-header');
   const back = element('button', 'character-family-back', '← Back'); back.type = 'button'; back.hidden = true;
   back.setAttribute('aria-label', 'Back to previous character');
-  const title = element('h2', '', 'Character profile'); title.id = 'character-detail-name';title.tabIndex = -1;
+  const title = element('h2', '', 'Character Profile'); title.id = 'character-detail-name';title.tabIndex = -1;
   header.append(back, title);
   back.addEventListener('click', () => {
     const previous = familyHistory.pop();
@@ -240,7 +252,7 @@ function mountCharacters(): void {
         page = Math.max(0, Math.floor(people.indexOf(target as DirectoryPerson) / CHARACTER_PAGE_SIZE)); render();
         if (!people.includes(target as DirectoryPerson)) {
           list.replaceChildren(CharacterCard(target));
-          count.textContent = `${target.name} · Curated profile`; pagination.hidden = true;
+          count.textContent = `${target.name} · Curated Profile`; pagination.hidden = true;
         }
         const card = document.getElementById(`character-card-${target.id}`);
         // The four section controls remain collapsed after a family-card jump.
@@ -255,7 +267,7 @@ function mountCharacters(): void {
     currentId = match[1];
     back.hidden = !familyHistory.length;
     let profile: CharacterProfile | undefined = people.find(person=>person.id===referenceId(currentId)) || characters.find(person => person.id === currentId);
-    title.textContent=profile?profile.name+(profile.identity_context?' ('+profile.identity_context+')':''):'Character profile';
+    title.textContent=profile?profile.name+(profile.identity_context?' ('+profile.identity_context+')':''):'Character Profile';
     body.replaceChildren(element('p', 'loading-state', 'Loading character connections…'));
     body.setAttribute('aria-busy', 'true');
     if (!sheet.open) { sheet.showModal(); document.body.classList.add('character-sheet-open'); }
@@ -272,17 +284,17 @@ function mountCharacters(): void {
     sheet.classList.toggle('character-female', profile?.sex === 'female');
     sheet.classList.toggle('character-neutral', profile?.sex !== 'female');
     body.replaceChildren();
-    title.textContent=profile?profile.name+(profile.identity_context?' ('+profile.identity_context+')':''):'Character not found';
+    title.textContent=profile?profile.name+(profile.identity_context?' ('+profile.identity_context+')':''):'Character Not Found';
     if (!profile) body.append(element('p', '', graph
       ? 'This character does not have a profile in this growing directory. Close this sheet to browse the available characters.'
       : 'The reference profile could not be loaded. Try again when the reference data is available.'));
     else {
       const context = element('div', 'character-profile-context');
-      context.append(element('span', 'character-era', profile.era), element('span', 'character-profile-kind', characters.some(person => person.id === profile!.id) ? 'Curated profile' : 'Reference profile'));
+      context.append(element('span', 'character-era', profile.era), element('span', 'character-profile-kind', characters.some(person => person.id === profile!.id) ? 'Curated Profile' : 'Reference Profile'));
       body.append(context, element('p', 'character-profile-biography', profile.summary), ProfileSections(profile, graph));
     }
     if (!profile && !graph) {
-      const retry = element('button', 'character-connections-retry', 'Retry profile'); retry.type = 'button';
+      const retry = element('button', 'character-connections-retry', 'Retry Profile'); retry.type = 'button';
       retry.addEventListener('click', () => { void handleRoute(); }); body.append(retry);
     }
     body.scrollTop = 0;

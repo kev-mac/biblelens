@@ -17,7 +17,17 @@ async function initializeChips(){
    const body=node.parentElement.closest('.verse-body'),question=node.parentElement.closest('.category-profile-card'),story=node.parentElement.closest('.story-card[data-story-book]');
    const context=body?{book:Number(body.dataset.book),chapter:Number(body.dataset.chapter),verse:Number(body.dataset.verse)}:question?{book:Number(question.dataset.referenceBook),chapter:Number(question.dataset.referenceChapter),verse:Number(question.dataset.referenceVerse)}:story?{scope:'story',placesReady,leadingText,book:Number(story.dataset.storyBook),chapter:Number(story.dataset.storyChapter),verse:Number(story.dataset.storyVerse),endChapter:Number(story.dataset.storyEndChapter),endVerse:Number(story.dataset.storyEndVerse)}:{};
    if(!match(node.data,context).length&&!matchPeople(node.data,context).length)continue;
-   const template=document.createElement('template');template.innerHTML=wrapReferenceNames(node.data,match,matchPeople,context);node.replaceWith(template.content);
+   const template=document.createElement('template');template.innerHTML=wrapReferenceNames(node.data,match,matchPeople,context);
+   if(node.parentElement.closest('.story-summary')){
+    // Inline 44 px chips expanded every summary line. Keep the source prose
+    // intact and offer the same verified people/place actions in their own row.
+    let actions=story.querySelector('.story-entities');
+    if(!actions){actions=document.createElement('div');actions.className='story-entities';actions.setAttribute('aria-label','People and Places in This Story');story.querySelector('.story-summary').after(actions);}
+    for(const button of template.content.querySelectorAll('button')){
+     const key=(button.dataset.personId?'person:'+button.dataset.personId:'place:'+button.dataset.placeId);
+     if(![...actions.children].some(child=>child.dataset.entityKey===key)){button.dataset.entityKey=key;actions.append(button);}
+    }
+   }else node.replaceWith(template.content);
   }
  }
  const roots=new Set();let queued=false;

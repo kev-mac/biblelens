@@ -52,20 +52,20 @@ export function mountInlineProfile(host: HTMLElement, initialId: string): void {
       if (profile.lineage?.tribe) overview.append(element('p', '', `Tribe · ${profile.lineage.tribe}`));
       const residences = element('ul');
       for (const place of profile.geography.residence) residences.append(element('li', '', place));
-      overview.append(element('h4', '', 'Residences & sojourns'), residences, element('h3', '', 'Scripture anchors'), element('p', '', `Books · ${profile.narrative_anchors.books.join(', ')}`));
+      overview.append(element('h4', '', 'Residences & Sojourns'), residences, element('h3', '', 'Scripture Anchors'), element('p', '', `Books · ${profile.narrative_anchors.books.join(', ')}`));
       const verses = element('div', 'character-verses');
       for (const reference of profile.narrative_anchors.key_verses) {
         const route = characterVerseRoute(reference); if (!route) continue;
         const link = element('a', '', reference); link.href = route; verses.append(link);
       }
-      overview.append(element('h4', '', 'Key verses'), verses);
+      overview.append(element('h4', '', 'Key Verses'), verses);
       const stories = element('div', 'character-stories');
       for (const anchor of profile.narrative_anchors.linked_stories) stories.append(StoryAnchor(anchor));
-      if (stories.childElementCount) overview.append(element('h4', '', 'Linked stories'), stories);
+      if (stories.childElementCount) overview.append(element('h4', '', 'Linked Stories'), stories);
       if (graph) connections.append(FamilyConnections(graph.getCharacterConnections(referenceId(profile.id)), host.id));
     }
     if (!graph) {
-      const retry = element('button', '', 'Retry profile'); retry.type = 'button';
+      const retry = element('button', '', 'Retry Profile'); retry.type = 'button';
       retry.addEventListener('click', () => { void show(id); }); host.append(retry);
     }
     host.onclick = event => {

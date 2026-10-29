@@ -21,7 +21,7 @@ function storyCard(story, pivot=false){
  const references=story.cross_references.map(label=>{const ref=storyReference(label);return ref?`<button type="button" class="verse-citation story-reference" data-cite="${ref.book}/${ref.chapter}/${ref.verse}" data-cite-end="${ref.endVerse}" data-cite-end-chapter="${ref.endChapter}" data-cite-label="${esc(label)}" data-cite-preview aria-haspopup="dialog" aria-expanded="false">${esc(label)}</button>`:'';}).join('');
  const id=(pivot?'topic-story-':'story-')+storySlug(story.title),panelId=id+'-verses';
  const context=reference?` data-story-book="${reference.book}" data-story-chapter="${reference.chapter}" data-story-verse="${reference.verse}" data-story-end-chapter="${reference.endChapter}" data-story-end-verse="${reference.endVerse}"`:'';
- return `<article class="story-card" id="${id}" tabindex="-1"${context}><p class="library-entry-meta">${esc(story.passage)}</p><h${pivot?3:2}>${esc(story.title)}</h${pivot?3:2}><p class="story-summary">${esc(story.summary)}</p><div class="person-section-controls" role="group" aria-label="${esc(story.title)} story sections"><button type="button" class="person-section-toggle" data-story-section aria-expanded="false" aria-controls="${panelId}" id="${panelId}-toggle"><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 1-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span><span class="person-section-label">Verses</span></button></div><section class="person-section-panel" id="${panelId}" aria-labelledby="${panelId}-toggle" hidden><h${pivot?4:3}>Verses</h${pivot?4:3}>${passage}${references?`<div class="story-references"><span>Referenced in:</span> ${references}</div>`:''}</section></article>`;
+ return `<article class="story-card" id="${id}" tabindex="-1"${context}><p class="library-entry-meta">${esc(story.passage)}</p><h${pivot?3:2}>${esc(story.title)}</h${pivot?3:2}><p class="story-summary">${esc(String(story.summary).replace(/<br\s*\/?[>]|\s+/gi,' ').trim())}</p><div class="person-section-controls" role="group" aria-label="${esc(story.title)} story sections"><button type="button" class="person-section-toggle" data-story-section aria-expanded="false" aria-controls="${panelId}" id="${panelId}-toggle"><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 1-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span><span class="person-section-label">Verses</span></button></div><section class="person-section-panel" id="${panelId}" aria-labelledby="${panelId}-toggle" hidden><h${pivot?4:3}>Verses</h${pivot?4:3}>${passage}${references?`<div class="story-references"><span>Referenced in:</span> ${references}</div>`:''}</section></article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
@@ -34,8 +34,8 @@ async function renderStoriesView(){
  try{
   const catalog=await loadStories();if(generation!==storiesGeneration||!storiesActive)return;
   const themes=[];
-  $('#stories-book').innerHTML='<option value="">All books</option>'+catalog.map(entry=>`<option value="${esc(entry.book)}">${esc(entry.book)}</option>`).join('');
-  $('#stories-theme').innerHTML='<option value="">All themes</option>'+themes.map(theme=>`<option value="${esc(theme)}">${esc(theme)}</option>`).join('');
+  $('#stories-book').innerHTML='<option value="">All Books</option>'+catalog.map(entry=>`<option value="${esc(entry.book)}">${esc(entry.book)}</option>`).join('');
+  $('#stories-theme').innerHTML='<option value="">All Themes</option>'+themes.map(theme=>`<option value="${esc(theme)}">${esc(theme)}</option>`).join('');
   $('#stories-book').value=storiesBook;$('#stories-theme').value=storiesTheme;$('#stories-search').value=storiesSearch;
   const query=storiesSearch.trim().toLowerCase();
   const terms=query.match(/[\p{L}\p{N}]+/gu)||[];
@@ -53,7 +53,7 @@ async function renderStoriesView(){
   $('#stories-previous').disabled=storiesPage===0;$('#stories-next').disabled=storiesPage>=pages-1;
   $('#stories-page-status').textContent=pages>1?`${storiesPage+1} / ${pages}`:'';
   list.innerHTML=stories.length?visible.map(story=>storyCard(story)).join(''):'<p class="empty">No stories match these filters. Try another book or theme, or clear your search.</p>';
-  if(route){const selected=stories.find(story=>storySlug(story.title)===route[2]);if(selected){const card=document.getElementById('story-'+route[2]);card?.classList.add('story-linked');card?.focus({preventScroll:true});card?.scrollIntoView({block:'nearest'});}else list.innerHTML='<p class="empty">Story not found. Clear filters to explore other stories.</p>';}
+  if(route){const selected=stories.find(story=>storySlug(story.title)===route[2]);if(selected){const card=document.getElementById('story-'+route[2]);card?.classList.add('story-linked');card?.focus({preventScroll:true});card?.scrollIntoView({block:'nearest'});}else list.innerHTML='<p class="empty">Story not found. Clear Filters to explore other stories.</p>';}
  }catch{if(generation===storiesGeneration)list.innerHTML='<p>Could not load stories. <button type="button" data-stories-retry>Retry</button></p>';}finally{if(generation===storiesGeneration)list.setAttribute('aria-busy','false');}
 }
 function updateStoriesFilters(){

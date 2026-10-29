@@ -62,6 +62,15 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
   page.on('pageerror',error=>errors.push(error.message));
   // No real cloud account, map service or third party is contacted.
   await page.route('https://**/*',route=>route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:JSON.stringify({fixture:true})}));
+  // The browser-hosted native bundle intentionally blocks same-origin sync.
+  // Route only this fixture's sync calls to its synthetic signed-in session;
+  // the unmodified native API guard is covered by check:mobile.
+  if(platform==='mobile')await page.addInitScript(()=>{
+   const networkFetch=globalThis.fetch.bind(globalThis);let installed=networkFetch;
+   Object.defineProperty(globalThis,'fetch',{configurable:true,get:()=>installed,set:implementation=>{
+    installed=(input,options)=>{const url=new URL(typeof input==='string'?input:input.url,location.href);return url.origin===location.origin&&url.pathname.startsWith('/api/sync')?networkFetch(input,options):implementation(input,options);};
+   }});
+  });
   await page.addInitScript(()=>{
    localStorage.setItem('biblelens-cloud-sync-v1',JSON.stringify({enabled:true,owner:'security-test',base:{},token:null}));
    localStorage.setItem('scripture-lens-v1',JSON.stringify({bookmarks:[],notes:{seen:'Keep my offline note'}}));

@@ -49,7 +49,7 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
       sex: record.gender === 'Female' ? 'female' : record.gender === 'Male' ? 'male' : 'unspecified',
       era: written?.era || 'Across scripture', geography: written?.geography || {origin: '', residence: []},
       testaments: [...new Set([...referenceBooks].map(book=>book<39?'old':'new'))],
-      narrative_anchors: {books: written?.narrative_anchors.books || [], key_verses: key_passages, linked_stories: written?.narrative_anchors.linked_stories || []}} as DirectoryPerson];
+      narrative_anchors: {books: written?.narrative_anchors.books || [], key_verses: key_passages, linked_stories: [...new Map([...(written?.narrative_anchors.linked_stories || []),...(record.linked_stories || [])].map(anchor=>[anchor.story_id,anchor])).values()]}} as DirectoryPerson];
   }).sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
   const counts=new Map<string,number>();
   for(const person of mapped)counts.set(normalize(person.name),(counts.get(normalize(person.name))||0)+1);

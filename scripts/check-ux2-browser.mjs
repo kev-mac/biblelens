@@ -72,7 +72,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await page.touchscreen.tap(2,2);await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.className),'verse-num');
   await page.locator('#verse-3 .verse-num').tap();await page.keyboard.press('Escape');await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});
   await page.locator('#lens-compare').tap();await page.waitForSelector('#lens-inspector-sheet[open]');assert.equal(await page.locator('#lensComparison img').count(),0);await shot('read-compare');
-  await page.locator('#lens-compare-right').fill('Genesis 2');await page.getByRole('button',{name:'Compare passages',exact:true}).tap();await page.waitForSelector('.lens-comparison-passage');await shot('read-compare');
+  await page.locator('#lens-compare-right').fill('Genesis 2');await page.getByRole('button',{name:'Compare Passages',exact:true}).tap();await page.waitForSelector('.lens-comparison-passage');await shot('read-compare');
   await page.touchscreen.tap(2,2);await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-compare');
   await page.locator('.study-library>summary').tap();await page.locator('#collection').scrollIntoViewIfNeeded();assert.equal(await page.locator('#collection input[type=search]').count(),0);await shot('studies');
   await page.locator('#lens-settings').tap();await page.waitForSelector('#reader-settings[open]');assert.equal(await page.locator('#reader-settings button[aria-label=Close]').count(),1);await page.keyboard.press('Escape');await page.waitForSelector('#reader-settings[open]',{state:'hidden'});

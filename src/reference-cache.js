@@ -3,7 +3,7 @@
 const cache = globalThis[Symbol.for('biblelens.reference-cache')] ||= new Map();
 export function referenceJson(path) {
  const url = new URL(path, globalThis.location?.href || 'https://biblelens.invalid/');
- if (!/^\/reference\/[\w-]+\.json$/.test(url.pathname) && !['/stories.json','/characters.json','/api/books'].includes(url.pathname)) throw Error('Not a reference asset');
+ if (!/^\/reference\/[\w-]+\.json$/.test(url.pathname) && !['/stories.json','/characters.json','/commandments-catalog.json','/api/books'].includes(url.pathname)) throw Error('Not a reference asset');
  const key = url.href;
  if (!cache.has(key)) {
   const controller = new AbortController();

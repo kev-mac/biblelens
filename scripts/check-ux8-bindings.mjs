@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import {gunzipSync} from 'node:zlib';
 import worker,{inspectionSource} from './built-worker.mjs';
-const out=process.env.HOME+'/git/codex-reports/UX8-logs';fs.mkdirSync(out,{recursive:true});
+const out=process.env.UX_REPORT_DIR||process.env.HOME+'/git/codex-reports/UX8-logs';fs.mkdirSync(out,{recursive:true});
 const source=inspectionSource(),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};vm.createContext(ctx);
 vm.runInContext(source.slice(0,source.indexOf('const markedBookCache='))+';this.records=EVIDENCE;this.studies=STUDIES;this.expand=referenceVerses;',ctx);
 const books=JSON.parse(fs.readFileSync('data/books.json')),chapters=JSON.parse(fs.readFileSync('data/chapters.json'));

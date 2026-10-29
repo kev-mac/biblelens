@@ -57,7 +57,7 @@ assert.equal(searchPlaces(places).length,places.size-5,'Possessive source aliase
 assert.equal(searchPlaces(places,'  PROMISED LAND  ')[0].name,'Canaan','Search location aliases without case sensitivity');
 assert.equal(searchPlaces(places,'Jericho')[0].name,'Jericho','Exact place names sort first');
 assert.equal(searchPlaces(places,'not-a-real-place-name').length,0);
-const accented=new Map([['accent',{id:'accent',name:'Élodie',aliases:['A friendly place'],modern_name:'Modern name'}]]);
+const accented=new Map([['accent',{id:'accent',name:'Élodie',aliases:['A friendly place'],modern_name:'Modern Name'}]]);
 assert.equal(searchPlaces(accented,'elodie')[0].id,'accent');
 assert.equal(searchPlaces(accented,'friendly place')[0].id,'accent');
 console.log('PASS: Places directory search, aliases, accent folding, exact matches and empty results.');

@@ -39,7 +39,7 @@ for(const [name,type] of Object.entries({chromium,webkit})){
    };
    // Check the shell before any directory stylesheet has loaded.
    for(const [trigger,selector] of [['#verse-3 .verse-num','#lens-inspector-sheet'],['#lens-compare','#lens-inspector-sheet']]){await page.locator(trigger).click();await closeAtCorner(selector);}
-   await page.locator('#verse-1 .verse-body').click();await closeAtCorner('#lens-inspector-sheet');
+   await page.locator('#verse-1 .verse-body').click();await page.locator('#ux-empty-verse-toast').waitFor();assert.equal(await page.locator('#lens-inspector-sheet[open]').count(),0);await page.touchscreen.tap(2,2);
    const id=await page.evaluate(()=>ENTRIES[0].id);await go('#study/'+id,'#study-dialog[open]');await closeAtCorner('#study-dialog');
    await go('#people','.ux-person-open');await page.locator('#characters-search').fill('Moses');await page.locator('a[aria-label="Open Moses"]').click();await closeAtCorner('#character-sheet');await page.locator('#characters-search').fill('');
    for(const [hash,selector] of [['#people','.characters-pagination'],['#places','.places-directory-pagination'],['#evidence/T','.category-pagination']]){

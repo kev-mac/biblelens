@@ -1,7 +1,7 @@
 {
   "name": "scripture-lens",
   "version": "1.1.0",
-  "buildNumber": 278,
+  "buildNumber": 279,
   "private": true,
   "type": "module",
   "scripts": {
@@ -31,7 +31,8 @@
     "release:smoke": "node scripts/release-smoke.mjs",
     "check:ux1": "node scripts/check-ux1-browser.mjs",
     "check:ux1b": "node scripts/check-ux1b-browser.mjs",
-    "check:people-roles": "node scripts/check-people-roles.mjs"
+    "check:people-roles": "node scripts/check-people-roles.mjs",
+    "check:ux10": "node scripts/check-ux10.mjs && node scripts/check-ux10-browser.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",

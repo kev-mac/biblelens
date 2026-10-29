@@ -43,13 +43,13 @@ console.log('PASS: all 613 unique commandment identities, 248/365 partitions, re
 
 const noLens=context.commandmentCard({...item,lens:[]});
 assert(noLens.includes('id="commandment-'+item.id+'-context" aria-labelledby="commandment-'+item.id+'-context-toggle" hidden'));
-assert(!noLens.includes('NT lens'));assert(!noLens.includes('>Verses<'));
+assert(!noLens.includes('NT Lens'));assert(!noLens.includes('>Verses<'));
 assert(noLens.includes('href="#read/1/20/2"'));assert(noLens.includes('<q>'));
 assert.equal(context.commandmentDirective('To know that the Lord God exists'),'Know that the Lord God exists');
 assert.equal(context.commandmentDirective('Do not steal'),'Do not steal');
 const withLens=context.commandmentCard(context.records.find(record=>record.lens.length));
 assert(withLens.includes('commandment-lens'));assert(withLens.includes('Hebrews 10:11'));
-for(const record of context.records){const html=context.commandmentCard(record);assert(html.includes('-context-toggle'));assert(!html.includes('>Verses<'));assert(!html.includes('<h2>To '));assert.equal(html.includes('>NT lens<'),record.lens.length>0);}
+for(const record of context.records){const html=context.commandmentCard(record);assert(html.includes('-context-toggle'));assert(!html.includes('>Verses<'));assert(!html.includes('<h2>To '));assert.equal(html.includes('>NT Lens<'),record.lens.length>0);}
 const rows=Array.from({length:10},(_,i)=>({n:i+1,kjv:'Verse '+(i+1)}));
 assert.deepEqual(Array.from(context.commandmentContextVerses(rows,1),row=>row.n),[1,2,3]);
 assert.deepEqual(Array.from(context.commandmentContextVerses(rows,5),row=>row.n),[3,4,5,6,7]);
@@ -60,4 +60,4 @@ await context.loadCommandmentContext(first,'Genesis 1:5');await context.loadComm
 assert.equal(fetches,1);assert(first.innerHTML.includes('Verse 3'));assert(!first.innerHTML.includes('Verse 2'));assert(first.innerHTML.includes('Verse 7'));assert(first.innerHTML.includes('Read the full chapter'));assert.equal(first.dataset.loaded,'true');
 const failed=panel();context.fetch=async()=>({ok:false});await context.loadCommandmentContext(failed,'Exodus 1:1');assert(failed.innerHTML.includes('data-commandment-context-retry'));
 context.fetch=async()=>({ok:true,json:async()=>({verses:rows})});await context.loadCommandmentContext(failed,'Exodus 1:1');assert.equal(failed.dataset.loaded,'true');
-console.log('PASS: all 613 directive cards have inline verse links, conditional NT lenses and scripture-only context with bounded verses, caching and retry.');
+console.log('PASS: all 613 directive cards have inline verse links, conditional NT Lenses and scripture-only context with bounded verses, caching and retry.');

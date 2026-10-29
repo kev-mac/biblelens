@@ -28,7 +28,7 @@ export function connectionProfile(person: ReferencePerson): CharacterProfile {
     id: person.id, name: person.name,
     sex: person.gender === 'Female' ? 'female' : person.gender === 'Male' ? 'male' : 'unspecified',
     era: 'Across scripture',
-    summary: `Reference profile from Theographic Bible Metadata${person.status === 'wip' ? ' (work in progress)' : ''}. A written biography is not yet available. Family links are dataset assertions; passage tags provide context rather than proof of each relationship.`,
+    summary: `Reference Profile from Theographic Bible Metadata${person.status === 'wip' ? ' (work in progress)' : ''}. A written biography is not yet available. Family links are dataset assertions; passage tags provide context rather than proof of each relationship.`,
     geography: {origin: 'Not recorded in this reference profile', residence: []},
     narrative_anchors: {
       books: [...new Set(references.map(([book]) => books[book].name))],

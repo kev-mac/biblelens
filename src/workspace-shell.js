@@ -123,7 +123,7 @@
 (() => {
  const strips=new WeakSet();
  const overflow=strip=>{strip.classList.toggle('ux-overflow-right',strip.scrollWidth-strip.clientWidth-strip.scrollLeft>2);strip.classList.toggle('ux-overflow-left',strip.scrollLeft>2);};
- function enhance(){for(const strip of document.querySelectorAll('.directory-categories,.directory-alphabet,.ux-context-tabs,.phase2-modes,.phase2-chips,.lens-notebook-tools>div,.tabs,.reader-category-filters,.reader-filter-chips,.commandments-quick,.prophecy-quick,.chips,.filters,.comparison-tabs,#comparison-status,.ux-quick-links,.phase2-rail')){if(!strips.has(strip)){strips.add(strip);strip.addEventListener('scroll',()=>overflow(strip),{passive:true});new ResizeObserver(()=>overflow(strip)).observe(strip);}overflow(strip);}
+ function enhance(){for(const strip of document.querySelectorAll('.stories-filters,.ux-interior-chips,.directory-categories,.ux-context-tabs,.phase2-modes,.phase2-chips,.lens-notebook-tools>div,.tabs,.reader-category-filters,.reader-filter-chips,.commandments-quick,.prophecy-quick,.chips,.filters,.comparison-tabs,#comparison-status,.ux-quick-links,.phase2-rail')){if(!strips.has(strip)){strips.add(strip);strip.addEventListener('scroll',()=>overflow(strip),{passive:true});new ResizeObserver(()=>overflow(strip)).observe(strip);}overflow(strip);}
  for(const input of document.querySelectorAll('input[type="search"]')){
   let wrap=input.parentElement;
   if(!wrap.classList.contains('ux-search-field')){

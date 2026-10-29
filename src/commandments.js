@@ -40,21 +40,21 @@ async function loadCommandmentContext(panel,reference){
  if(panel.dataset.loaded==='true')return;
  const ref=readRef(reference);if(!ref)return;
  const key=ref.book+'/'+ref.chapter;
- panel.setAttribute('aria-busy','true');panel.innerHTML='<h3>Scripture context · KJV</h3><p class="loading-state" role="status">Loading surrounding verses…</p>';
+ panel.setAttribute('aria-busy','true');panel.innerHTML='<h3>Scripture Context · KJV</h3><p class="loading-state" role="status">Loading surrounding verses…</p>';
  try{
   if(!commandmentContextCache.has(key))commandmentContextCache.set(key,fetch(`/api/chapter?book=${ref.book}&chapter=${ref.chapter}`).then(response=>{if(!response.ok)throw Error('Chapter unavailable');return response.json();}).catch(error=>{commandmentContextCache.delete(key);throw error;}));
   const chapter=await commandmentContextCache.get(key);if(!panel.isConnected)return;
   const rows=commandmentContextVerses(chapter.verses,ref.verse);
   if(!rows.some(row=>row.n===ref.verse))throw Error('Verse unavailable');
-  panel.innerHTML='<h3>Scripture context · KJV</h3>'+rows.map(row=>`<p class="commandment-context-verse">${commandmentPassageLink(reference.replace(/:\d+$/,':'+row.n))} <q>${esc(String(row.kjv).replace(/\{[HG]\d+\}|<[^>]*>/g,''))}</q></p>`).join('')+`<a class="commandment-inline-reference" href="#read/${key}">Read the full chapter</a>`;
+  panel.innerHTML='<h3>Scripture Context · KJV</h3>'+rows.map(row=>`<p class="commandment-context-verse">${commandmentPassageLink(reference.replace(/:\d+$/,':'+row.n))} <q>${esc(String(row.kjv).replace(/\{[HG]\d+\}|<[^>]*>/g,''))}</q></p>`).join('')+`<a class="commandment-inline-reference" href="#read/${key}">Read the full chapter</a>`;
   panel.dataset.loaded='true';
- }catch{if(panel.isConnected)panel.innerHTML='<h3>Scripture context · KJV</h3><p role="status">Could not load the surrounding verses.</p><button type="button" data-commandment-context-retry>Retry</button>';}
+ }catch{if(panel.isConnected)panel.innerHTML='<h3>Scripture Context · KJV</h3><p role="status">Could not load the surrounding verses.</p><button type="button" data-commandment-context-retry>Retry</button>';}
  finally{panel.setAttribute('aria-busy','false');}
 }
 function commandmentCard(item) {
  const prefix='commandment-'+item.id,title=commandmentDirective(item.title);
  const control=(key,label,paths)=>`<button type="button" class="person-section-toggle" data-commandment-section aria-expanded="false" aria-controls="${esc(prefix)}-${key}" id="${esc(prefix)}-${key}-toggle"><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths}</svg></span><span class="person-section-label">${label}</span></button>`;
- return `<article class="commandment-card" data-commandment-reference="${esc(item.passage)}"><p class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</p><div class="commandment-card-heading"><h2>${esc(title)}</h2></div><div class="commandment-summary"><p>${commandmentPassageLink(item.passage)} <q>${esc(item.summary)}</q></p></div><div class="person-section-controls" role="group" aria-label="${esc(title)} commandment sections">${control('context','Context','<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/>')}${item.lens?.length?control('lens','NT lens','<path d="M3 4h7a3 3 0 0 1 3 3v14a3 3 0 0 0-3-3H3z"/><path d="M13 7a3 3 0 0 1 3-3h5v14h-5a3 3 0 0 0-3 3"/>'):''}</div><section class="person-section-panel commandment-context" id="${esc(prefix)}-context" aria-labelledby="${esc(prefix)}-context-toggle" hidden></section>${item.lens?.length?`<section class="person-section-panel commandment-lens" id="${esc(prefix)}-lens" aria-labelledby="${esc(prefix)}-lens-toggle" hidden><h3>New Testament lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${commandmentPassageLink(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
+ return `<article class="commandment-card" data-commandment-reference="${esc(item.passage)}"><p class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</p><div class="commandment-card-heading"><h2>${esc(title)}</h2></div><div class="commandment-summary"><p>${commandmentPassageLink(item.passage)} <q>${esc(item.summary)}</q></p></div><div class="person-section-controls" role="group" aria-label="${esc(title)} commandment sections">${control('context','Context','<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/>')}${item.lens?.length?control('lens','NT Lens','<path d="M3 4h7a3 3 0 0 1 3 3v14a3 3 0 0 0-3-3H3z"/><path d="M13 7a3 3 0 0 1 3-3h5v14h-5a3 3 0 0 0-3 3"/>'):''}</div><section class="person-section-panel commandment-context" id="${esc(prefix)}-context" aria-labelledby="${esc(prefix)}-context-toggle" hidden></section>${item.lens?.length?`<section class="person-section-panel commandment-lens" id="${esc(prefix)}-lens" aria-labelledby="${esc(prefix)}-lens-toggle" hidden><h3>New Testament Lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${commandmentPassageLink(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
 }
 async function initCommandments() {
  const root=document.querySelector('#commandments-view');if(!root)return;
@@ -66,7 +66,7 @@ async function initCommandments() {
  let visibleCount=60;
  function render() {
   const items=filterCommandments(COMMANDMENTS,filters,search.value).filter(item=>!/^\s*[PN]\d+\s*$/i.test(search.value)||item.code===search.value.trim().toUpperCase());
-  document.querySelector('#commandments-list').innerHTML=items.length?items.slice(0,visibleCount).map(commandmentCard).join('')+(items.length>visibleCount?'<button type="button" id="commandments-load-more">Show more</button>':''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
+  document.querySelector('#commandments-list').innerHTML=items.length?items.slice(0,visibleCount).map(commandmentCard).join('')+(items.length>visibleCount?'<button type="button" id="commandments-load-more">Show More</button>':''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
   document.querySelector('#commandments-count').textContent=`${items.length} of ${COMMANDMENTS.length} commandments${items.length>visibleCount?` · showing 1–${visibleCount}`:''}`;
   for(const button of matrix.querySelectorAll('[data-commandment-dimension]')){
    const dimension=button.dataset.commandmentDimension,value=button.dataset.value;
@@ -76,7 +76,7 @@ async function initCommandments() {
   }
   const count=Object.values(filters).reduce((sum,values)=>sum+values.length,0);
   more.querySelector('span').textContent=`Filter${count?' ('+count+')':''}`;
-  document.querySelector('#commandments-done').textContent=`Show ${items.length} ${items.length===1?'result':'results'}`;
+  document.querySelector('#commandments-done').textContent=`Show ${items.length} ${items.length===1?'Result':'Results'}`;
  }
  function toggle(dimension,value,enabled) {
   const selected=new Set(filters[dimension]);if(enabled)selected.add(value);else selected.delete(value);
