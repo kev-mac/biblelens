@@ -102,7 +102,7 @@ function renderMarkedResults(){
  if(showMarks&&passages.length)html+=`<h2>Marked Passages</h2>${passages.map(item=>`<article class="passage-saved-card marked-bookmark" data-tone="bookmark"><button class="verse-citation" data-read="${esc(book)}/${esc(item.chapter)}">${esc(item.name)} ${esc(item.chapter)}</button>${item.title?`<h3>${esc(item.title)}</h3>`:''}${item.text?`<p>${esc(item.text)}</p>`:''}${noteActionButtons(`${book}/${item.chapter}`)}</article>`).join('')}`;
  const personal=html;html='';
  const notes=ENTRIES.filter(e=>(state.notes[e.id]||state.noteTitles?.[e.id])&&e.refs.some(ref=>(book===-1||readRef(ref)?.book===book)));
- const studyNotes=showMarks&&notes.length?'<h2>Study Notes</h2>'+notes.map(e=>`<article class="passage-saved-card"><button class="text-button" data-open="${e.id}">${esc(state.noteTitles?.[e.id]||e.title)}</button><p>${esc(state.notes[e.id]||'')}</p></article>`).join(''):'';
+ const studyNotes=showMarks&&notes.length?'<h2>Notes</h2>'+notes.map(e=>`<article class="passage-saved-card"><button class="text-button" data-open="${e.id}">${esc(state.noteTitles?.[e.id]||e.title)}</button><p>${esc(state.notes[e.id]||'')}</p></article>`).join(''):'';
  html='<div class="marked-comparisons">'+MARKED_CATEGORIES.filter(([key])=>key!=='all'&&(markedKind==='all'||markedKind===key)).map(([key,label])=>{
   const matches=records.filter(record=>markedGroup(record)===key);
   const count=key==='bookmark'?marks.length+passages.length+notes.length:matches.length;

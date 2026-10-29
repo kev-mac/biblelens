@@ -2426,3 +2426,63 @@ html body.lens-app #main #characters-view .page-heading p{display:none}
 html body.lens-app #main #characters-list .ux-contact .character-name{min-height:0;display:block}
 html body.lens-app #main #places-view .places-directory-list .character-summary{display:block}
 html body.lens-app #main #places-view .place-map-actions{position:relative;z-index:2}
+
+/* UX8: one interior bar, one scrollable filter row. */
+html body.lens-app .ux-compact-interior > h1,
+html body.lens-app .ux-compact-interior > .page-heading,
+html body.lens-app #read-view > .page-heading,
+html body.lens-app #read-view > h1,
+html body.lens-app :is(.lens-reading-location,#atlas-reader-help,#chapter-text .passage-heading,#chapter-text .atlas-reader-collection),
+html body.lens-app #lens-inspector-sheet > :is(.lens-inspector-sheet-close,.ux-popup-close){display:none}
+html body.lens-app .lens-context{display:flex;align-items:center;gap:12px;min-height:48px;margin:0 0 8px;font-size:22px;font-weight:600}
+html body.lens-app .lens-context[hidden]{display:none}
+html body.lens-app :is(.ux-interior-chips,.timeline-controls){display:flex;flex-wrap:nowrap;align-items:center;gap:8px;overflow-x:auto;padding:4px 24px 8px 0;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 18px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 18px),transparent)}
+html body.lens-app .ux-interior-chips > *{flex:none}
+html body.lens-app .ux-interior-chips :is(.phase2-modes,.phase2-chips){display:contents}
+html body.lens-app .ux-interior-chips button{white-space:nowrap;min-height:44px}
+html body.lens-app [popover]{max-width:calc(100vw - 32px);max-height:75dvh;overflow:auto;padding:24px;background:var(--lens-surface);color:var(--lens-ink);border:1px solid var(--lens-rule);border-radius:16px}
+html body.lens-app #lensReadingBar{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:4px 0;margin:0 0 12px}
+html body.lens-app #lensReadingBar .ux-reader-controls{width:auto;flex:1;gap:0;min-width:0}
+html body.lens-app #lensReadingBar #ux-chapter-picker{font-size:14px}
+html body.lens-app #lensReadingBar .lens-edition-label{width:56px;flex:none;margin:0}
+html body.lens-app #lensReadingBar #lens-edition{min-height:44px;width:56px;padding:2px;border-radius:20px;font-size:12px}
+html body.lens-app #lensReadingBar #lens-focus{font-size:12px;padding:6px;min-height:44px;min-width:60px}
+html body.lens-app #lensReadingBar #lens-focus[aria-pressed=true]{background:var(--lens-copper-soft);border-color:var(--lens-link)}
+html body.lens-app #lensReadingBar .lens-reading-actions[hidden],html body.lens-app .ux-type-panel[hidden],html body.lens-app .lens-note-editor[hidden]{display:none}
+html body.lens-app .ux-type-panel{display:flex;gap:8px;margin-bottom:12px}
+html body.lens-app .ux-type-panel button{min-width:44px;min-height:44px}
+html body.lens-app #chapter-text .lens-verse-evidence{position:static;display:inline-flex;align-items:center;gap:3px;vertical-align:baseline;color:var(--lens-link);background:transparent;border:0;border-radius:0;font-size:11px;min-width:44px;min-height:44px;padding:0 5px;margin:0;box-shadow:none}
+html body.lens-app #lensInspector .lens-inspector-header{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;margin:0 0 12px;padding:0;border:0}
+html body.lens-app #lensInspector .lens-inspector-title{flex:1;font-size:20px;margin:0;line-height:1.3}
+html body.lens-app #lensInspector .lens-inspector-header button{min-width:44px;min-height:44px;font-size:24px}
+html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet{padding-top:28px;border-radius:24px 24px 0 0}
+html body.lens-app .ux-verse-actions button{width:60px;min-width:44px;height:60px;padding:5px;gap:2px;font-size:10px;line-height:1.2}
+html body.lens-app .ux-verse-actions button span{display:block}
+html body.lens-app .ux-compare-layout{display:flex;gap:4px;margin:8px 0 16px}
+html body.lens-app .ux-compare-layout button{min-height:44px;padding:8px 14px;color:var(--lens-ink);background:var(--lens-control-bg);border:1px solid var(--lens-rule);border-radius:12px}
+html body.lens-app .ux-compare-layout button[aria-pressed=true]{background:var(--lens-copper-soft);border-color:var(--lens-link)}
+html body.lens-app #lensComparison[data-layout=stacked] .lens-comparison-grid{grid-template-columns:minmax(0,1fr)}
+html body.lens-app #lensComparison[data-layout=side] .lens-comparison-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+html body.lens-app #lens-search-overlay .lens-search-form{display:flex;gap:8px;align-items:center;margin-top:0}
+html body.lens-app #lens-search-overlay{padding-top:20px}
+html body.lens-app #lens-search-overlay > :is(.ux-popup-close,.ux-dialog-path){display:none}
+html body.lens-app .ux-letter-heading{position:sticky;top:var(--ux-letter-sticky-top,210px);z-index:4;background:var(--lens-paper);padding:8px 0;margin:0;scroll-margin-top:calc(var(--ux-letter-sticky-top,210px) + 8px)}
+html body.lens-app .ux-letter-bubble[hidden]{display:none}
+html body.lens-app #lens-inspector-sheet #lensInspector[hidden]{display:none}
+html body.lens-app #lensReadingBar #lens-edition{font-size:16px}
+html body.lens-app .ux-interior-chips #commandments-search-box{width:230px}
+html body.lens-app #read-view .home-heading{display:none}
+html body.lens-app #chapter-text .atlas-evidence-marker::after{display:none;content:none}
+html body.lens-app #chapter-text .verse-body{display:block}
+html body.lens-app #chapter-text .lens-verse-evidence{display:inline-flex!important;position:relative;inset:auto;width:44px;height:44px;vertical-align:baseline;line-height:1}
+html body.lens-app .ux-interior-chips button{flex:0 0 auto;width:auto;min-width:max-content;padding:8px 12px;margin:0}
+html body.lens-app .lens-context{border:0;padding-left:0;flex-wrap:nowrap;color:var(--lens-ink)}
+html body.lens-app #lens-inspector-sheet:has(#lensComparison:not([hidden])){padding-top:64px}
+html body.lens-app #lens-inspector-sheet:has(#lensComparison:not([hidden])) > .ux-popup-close{display:grid}
+/* Keep scripture lines on one baseline, with cues contained in the verse gutter. */
+html body.lens-app #chapter-text .verse-body{position:relative;padding-left:26px}
+html body.lens-app #chapter-text .verse-num{position:absolute;left:0;top:0;width:20px;min-width:20px;height:44px;padding:0;text-align:left;line-height:44px}
+html body.lens-app #chapter-text:has([data-lens-inspect]) .verse-body{padding-left:52px}
+html body.lens-app #chapter-text .lens-verse-evidence{position:absolute;left:8px;top:0;width:44px;height:44px;min-width:44px;justify-content:center}
+html body.lens-app #chapter-text .verse-num{z-index:1}
+html body.lens-app #main .lens-context h1{margin:0;font:inherit;color:inherit;letter-spacing:normal}

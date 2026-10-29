@@ -13,7 +13,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
  await page.goto(base+'/#discover');await page.locator('.ux-daily-question').waitFor();
  await page.evaluate(theme=>{state.theme=theme;applyTheme();},theme);
  const go=async(hash,selector)=>{await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),hash);await page.locator(selector).first().waitFor();};
- const shot=async(name)=>{await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/${engine}-390-${theme}-${name}.png`});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,name+' overflow');};
+ const shot=async(name)=>{await page.evaluate(()=>document.fonts.ready);if(process.env.UX_NO_SHOTS!=='1')await page.screenshot({path:`${output}/${engine}-390-${theme}-${name}.png`});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,name+' overflow');};
  const questions=await (await page.request.get(base+'/accepted-questions.json')).json();questions.sort((a,b)=>a.id.localeCompare(b.id));
  const today=questions[Math.floor(Date.now()/86400000)%questions.length];
  assert.equal(await page.locator('.ux-daily-question h2').textContent(),today.question);await shot('explore');
@@ -33,8 +33,8 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
  const places=await (await page.request.get(base+'/reference/places.json')).json();assert(places.every(p=>Number.isInteger(p.fields.linkedPassageCount)));
  assert.equal(await page.locator('.ux-place-count').count(),15);await page.locator('[data-places-next]').tap();assert.match(await page.locator('.places-directory-pagination').innerText(),/Page 2 of/);
  await go('#discover?section=evidence','.ux-evidence-article');await shot('evidence');
- await go('#read/0/1','#verse-3 .verse-num');await shot('read');await page.locator('#verse-3 .verse-num').tap();await page.locator('[data-context-tab]').first().waitFor();await page.waitForFunction(()=>!document.querySelector('.lens-coverage').classList.contains('loading-state'));
- assert.equal(await page.locator('.lens-active-verse').getAttribute('id'),'verse-3');const activeRect=await page.locator('.lens-active-verse').boundingBox(),sheetRect=await page.locator('#lens-inspector-sheet').boundingBox();assert(activeRect.y>=0&&activeRect.y<sheetRect.y,'Selected verse remains visible above the sheet');assert.equal(await page.locator('.sheet-handle').count(),1);assert.equal(await page.locator('.ux-verse-actions button').count(),3);
+ await go('#read/0/1','#verse-3 .verse-num');await shot('read');await page.locator('#verse-3 .verse-num').tap();await page.locator('[data-context-tab]').first().waitFor();await page.waitForFunction(()=>comparisonModes.every(mode=>comparisonCache.get(comparisonKey(mode))?.status==='ready'));
+ assert.equal(await page.locator('.lens-active-verse').getAttribute('id'),'verse-3');const activeRect=await page.locator('.lens-active-verse').boundingBox(),sheetRect=await page.locator('#lens-inspector-sheet').boundingBox();assert(activeRect.y>=0&&activeRect.y<sheetRect.y,'Selected verse remains visible above the sheet');assert.equal(await page.locator('.sheet-handle').count(),1);assert.equal(await page.locator('.ux-verse-actions button').count(),4);
  for(const button of await page.locator('.ux-verse-actions button').all()){assert(await button.getAttribute('aria-label'));assert(await button.getAttribute('title'));const r=await button.boundingBox();assert(r.width>=44&&r.height>=44);}
  await shot('context');await page.touchscreen.tap(2,2);await page.locator('#lens-inspector-sheet[open]').waitFor({state:'hidden'});assert.equal(await page.locator('.lens-active-verse').count(),0);
  // 2 Samuel 24:13 has a real translation record in the production corpus.

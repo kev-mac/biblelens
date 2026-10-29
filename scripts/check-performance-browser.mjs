@@ -15,7 +15,7 @@ try{
  let release;const gate=new Promise(resolve=>release=resolve);await p.route('**/api/comparisons?*',async route=>{await gate;await route.continue();});
  await go(p,'#read/8/17','#verse-58');await p.evaluate(()=>window.retainedScripture=document.querySelector('#verse-2 [data-scripture]'));
  assert(await p.locator('#chapter-text .person-chip').count(),'Reference links arrive with the chapter');assert(!requests.includes('/reference/people.json'),'Reading does not need the whole People catalog');
- release();await p.waitForSelector('[data-lens-inspect]',{state:'attached'});assert(await p.evaluate(()=>retainedScripture===document.querySelector('#verse-2 [data-scripture]')),'Evidence arrival preserves scripture nodes and selection');await skip(p);
+ release();await p.locator('#lens-focus').click();await p.waitForSelector('[data-lens-inspect]',{state:'attached'});assert(await p.evaluate(()=>retainedScripture===document.querySelector('#verse-2 [data-scripture]')),'Evidence arrival preserves scripture nodes and selection');await skip(p);
  await p.locator('#chapter-text .person-chip').first().click();await p.waitForSelector('#lens-inspector-sheet[open]');await p.locator('#lensInspector .person-chip').first().click();await p.waitForSelector('#character-sheet[open]');await p.keyboard.press('Escape');await p.keyboard.press('Escape');assert.equal(await p.evaluate(()=>location.hash),'#read/8/17');
  await go(p,'#search?q=creation','.lens-result');assert(await p.evaluate(()=>!!document.activeElement.closest('#lens-search-overlay')),'Search keeps focus in its overlay');await p.keyboard.press('Escape');await p.waitForFunction(()=>!document.querySelector('#lens-search-overlay').open&&!location.hash.startsWith('#search')&&!document.body.classList.contains('dialog-scroll-locked'));await skip(p);await go(p,'#people','.character-card');await go(p,'#stories','.story-card');
  await p.waitForLoadState('networkidle');assert.equal(requests.filter(path=>path==='/reference/people.json').length,1,'Search, chips and profiles share the same People request');assert.equal(requests.filter(path=>path==='/reference/places.json').length,1,'Other references are shared too');
@@ -29,7 +29,7 @@ try{
  await focus.goto(base+'/#discover');await focus.waitForSelector('.ux-topic-row');
  await focus.locator('[data-topic="people"]').focus();await focus.keyboard.press('Enter');
  await focus.waitForSelector('#route-loading');releaseFocus();await focus.waitForSelector('.character-card');
- await focus.waitForFunction(()=>document.activeElement===document.querySelector('#characters-view h1'));
+ await focus.waitForFunction(()=>document.activeElement===document.querySelector('.lens-context h1'));
  await focus.goBack();await focus.waitForSelector('.ux-topic-row');
  await focus.waitForFunction(()=>document.activeElement===document.querySelector('[data-topic="people"]'));
  await focus.close();

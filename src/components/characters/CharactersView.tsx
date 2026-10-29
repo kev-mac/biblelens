@@ -98,6 +98,11 @@ function mountCharacters(): void {
   searchBox.classList.add('directory-filters');
   searchBox.append(label, search, categories);
   host.append(heading, searchBox, alphabet, count, list);
+  // Keep letter dividers below the sticky search/filter controls at every font size.
+  new ResizeObserver(() => {
+    const top = parseFloat(getComputedStyle(searchBox).top) || 64;
+    host.style.setProperty('--ux-letter-sticky-top', `${top + searchBox.getBoundingClientRect().height}px`);
+  }).observe(searchBox);
   const pagination = element('div', 'characters-pagination');
   const previous = element('button', '', 'Previous'); previous.type = 'button';
   const next = element('button', '', 'Next'); next.type = 'button';

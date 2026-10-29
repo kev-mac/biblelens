@@ -276,22 +276,25 @@ async function chat(request,env){
 }
 
 
-function evidencePlacements(e){const keys=e.sides?.length?e.sides.map(s=>s.ref):[e.ref];const target=e.sides?.find(s=>s.label==='A')?.ref||e.ref;return [...new Set([...keys,...(e.refs||[]).map(r=>r.label),...(e.appliesTo||[])])].map(ref=>({ref,placementRole:keys.includes(ref)?'key':'context',keyTarget:target}));}
+// Explicit citations define placement. Ranges cover each cited verse; supporting
+// citations stay context links rather than inheriting the primary reference.
+function referenceVerses(ref){const parsed=parseRef(ref);if(!parsed)return [];const range=/^.*? \d+:\d+\s*[-–—]\s*(\d+)\s*$/.exec(ref);const end=range?Number(range[1]):parsed.verse;return Array.from({length:Math.max(0,end-parsed.verse+1)},(_,i)=>({...parsed,verse:parsed.verse+i}));}
+function evidencePlacements(e){const keys=e.sides?.length?e.sides.map(s=>s.ref):[e.ref];const target=e.sides?.find(s=>s.label==='A')?.ref||e.ref;return [...new Set([...keys,...(e.refs||[]).map(r=>typeof r==='string'?r:r.label),...(e.appliesTo||[])])].filter(Boolean).map(ref=>({ref,placementRole:keys.includes(ref)?'key':'context',keyTarget:target}));}
 
 async function comparisons(book,ch,mode){
  const data=[];
  if(mode==='contradictions'){
   for(const e of STUDIES){
    if(e.type==='Historical / chronological')continue;
-   for(const ref of e.refs){const p=parseRef(ref);if(p?.book!==book||p.chapter!==ch)continue;
-     data.push({id:`study-${e.id}`,verse:p.verse,status:e.type==='Textual conflict'?'Textual conflict':'Apparent / interpretive conflict',title:e.title,summary:e.summary,text:e.context,reasoning:e.reasoning,scope:e.assessment,refs:e.refs.filter(r=>r!==ref).map(r=>({label:r,...parseRef(r)})),sources:[...e.refs.map(r=>{const p=parseRef(r);return {label:r+' — scripture',url:`#read/${p.book}/${p.chapter}/${p.verse}`}}),...(e.sources||[])],classification:e.type,relatedPassages:e.relatedPassages});
+   for(const ref of e.refs)for(const p of referenceVerses(ref)){if(p?.book!==book||p.chapter!==ch)continue;
+     data.push({id:`study-${e.id}`,verse:p.verse,ref,status:e.type==='Textual conflict'?'Textual conflict':'Apparent / interpretive conflict',title:e.title,summary:e.summary,text:e.context,reasoning:e.reasoning,scope:e.assessment,refs:e.refs.filter(r=>r!==ref).map(r=>({label:r,...parseRef(r)})),sources:[...e.refs.map(r=>{const p=parseRef(r);return {label:r+' — scripture',url:`#read/${p.book}/${p.chapter}/${p.verse}`}}),...(e.sources||[])],classification:e.type,relatedPassages:e.relatedPassages});
    }
   }
  }
  for(const e of EVIDENCE){
   if(e.mode!==mode)continue;
   for(const placement of evidencePlacements(e)){
-   const p=parseRef(placement.ref);if(p?.book===book&&p.chapter===ch)data.push({...e,sources:comparisonReadingSources(e),activeTags:(e.tags||[e.tag]).filter(t=>t&&(!['H','G','T','V'].includes(t)||!e.appliesTo||e.appliesTo.includes(placement.ref))),verse:p.verse,placementRole:placement.placementRole,keyTarget:placement.keyTarget});
+   for(const p of referenceVerses(placement.ref))if(p.book===book&&p.chapter===ch)data.push({...e,sources:comparisonReadingSources(e),activeTags:(e.tags||[e.tag]).filter(t=>t&&(!['H','G','T','V'].includes(t)||!e.appliesTo||e.appliesTo.includes(placement.ref))),verse:p.verse,placementRole:placement.placementRole,keyTarget:placement.keyTarget});
   }
  }
  return data;

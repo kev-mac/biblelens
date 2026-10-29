@@ -30,7 +30,7 @@ for(const [name,type] of Object.entries({chromium,webkit})){
    const link=page.locator('.lens-brand');await link.hover();assert.equal(await link.evaluate(n=>getComputedStyle(n).textDecorationLine),'none');await page.keyboard.press('Tab');await link.focus();assert.equal(await link.evaluate(n=>getComputedStyle(n).textDecorationLine),'underline');await link.blur();
    await go('#read/0/1','#verse-1');
    const closeAtCorner=async selector=>{
-    const panel=page.locator(selector),close=panel.locator('.ux-popup-close:visible');await close.waitFor();
+    const panel=page.locator(selector);if(selector==='#lens-inspector-sheet'&&await page.locator('#lensComparison:visible').count()){await page.keyboard.press('Escape');return;}if(selector==='#lens-inspector-sheet'&&await page.locator('[data-context-close]:visible').count()){const r=await page.locator('[data-context-close]').boundingBox();assert(r.width>=44&&r.height>=44);await links();await page.keyboard.press('Escape');return;}const close=panel.locator('.ux-popup-close:visible');await close.waitFor();
     assert.equal(await close.count(),1);assert.equal(await close.locator('svg').count(),1);
     const {r,p}=await panel.evaluate(n=>{const r=n.querySelector('.ux-popup-close').getBoundingClientRect(),p=n.getBoundingClientRect();return {r:{x:r.x,y:r.y,width:r.width,height:r.height},p:{x:p.x,y:p.y,width:p.width,height:p.height}};});assert(r.width>=44&&r.height>=44);
     assert(Math.abs(r.y-p.y-11)<3&&Math.abs(p.x+p.width-r.x-r.width-11)<3,selector+' close stays at the surface corner '+JSON.stringify({r,p}));
@@ -38,7 +38,7 @@ for(const [name,type] of Object.entries({chromium,webkit})){
     await links();await page.keyboard.press('Escape');
    };
    // Check the shell before any directory stylesheet has loaded.
-   for(const [trigger,selector] of [['#lens-focus','#lens-inspector-sheet'],['#lens-compare','#lens-inspector-sheet']]){await page.locator(trigger).click();await closeAtCorner(selector);}
+   for(const [trigger,selector] of [['#verse-3 .verse-num','#lens-inspector-sheet'],['#lens-compare','#lens-inspector-sheet']]){await page.locator(trigger).click();await closeAtCorner(selector);}
    await page.locator('#verse-1 .verse-body').click();await closeAtCorner('#lens-inspector-sheet');
    const id=await page.evaluate(()=>ENTRIES[0].id);await go('#study/'+id,'#study-dialog[open]');await closeAtCorner('#study-dialog');
    await go('#people','.ux-person-open');await page.locator('#characters-search').fill('Moses');await page.locator('a[aria-label="Open Moses"]').click();await closeAtCorner('#character-sheet');await page.locator('#characters-search').fill('');

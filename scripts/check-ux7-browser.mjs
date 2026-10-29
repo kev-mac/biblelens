@@ -4,7 +4,7 @@ import {chromium,webkit} from 'playwright';
 import {parsePlaces} from '../src/places-core.js';
 import {regionCoverage,inWindow,usableRegionPoint} from '../src/place-regions.js';
 const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875';
-const output=process.env.HOME+'/git/codex-reports/ux7-shots';fs.mkdirSync(output,{recursive:true});
+const output=process.env.UX7_SHOTS||process.env.HOME+'/git/codex-reports/ux7-shots';fs.mkdirSync(output,{recursive:true});
 const results=[];
 for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch();try{
@@ -22,7 +22,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
  const eligible=places.filter(p=>usableRegionPoint(p)&&inWindow(p,region));assert(eligible.length===region.usable);
  }
  await page.getByRole('button',{name:regions[0].name,exact:true}).tap();await page.evaluate(()=>scrollTo(0,0));
- const shot=async name=>{await page.evaluate(()=>document.fonts.ready);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);await page.screenshot({path:`${output}/${engine}-390-dark-${name}.png`});};
+ const shot=async name=>{await page.evaluate(()=>document.fonts.ready);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);if(process.env.UX_NO_SHOTS!=='1')await page.screenshot({path:`${output}/${engine}-390-dark-${name}.png`});};
  await shot('places-region');await page.locator('.ux-place-open').first().tap();await page.locator('#atlas-sheet[open]').waitFor();await page.keyboard.press('Escape');
  await page.evaluate(()=>BibleLensWorkspace.navigate('#people'));await page.locator('#characters-search').waitFor();await page.locator('#characters-search').fill('Moses');await page.locator('a[aria-label="Open Moses"]').waitFor();assert.match(await page.locator('.ux-contact-subtitle').first().textContent(),/774 linked verses/);await shot('people-moses');
  await page.locator('a[aria-label="Open Moses"]').tap();await page.locator('#character-sheet[open]').waitFor();assert.match(await page.locator('#character-detail-name').textContent(),/Moses/);await shot('moses-detail');

@@ -10,13 +10,14 @@
    if(!pendingFocus)return;
    if(pendingFocus.hash!==location.hash||navigationRestore){clearPageFocus();return;}
    if(el('main').hasAttribute('aria-busy'))return;
-   const heading=el(view+'-view')?.querySelector('h1');
+   const pageHeading=el(view+'-view')?.querySelector('h1');
+   const heading=view==='read'?el('ux-chapter-picker'):pageHeading?.getClientRects().length?pageHeading:contextNav.querySelector('h1');
    if(!heading||heading.closest('[hidden]'))return;
    // A cold feature may insert its heading after the first route frame.
    // Preserve a deliberate focus change made while that feature was loading.
    const active=document.activeElement;
    if(active!==document.body&&active!==pendingFocus.opener){clearPageFocus();return;}
-   clearPageFocus();heading.tabIndex=-1;heading.focus({preventScroll:true});
+   clearPageFocus();if(heading.tagName!=='BUTTON')heading.tabIndex=-1;heading.focus({preventScroll:true});
   });
  }
  function requestPageFocus(hash){
@@ -40,10 +41,12 @@
  document.addEventListener('pointerdown',()=>document.body.classList.remove('keyboard-navigation'));
  const masthead = el('lensMasthead');
  el('reader-settings').addEventListener('close', () => el('lens-settings').focus({preventScroll:true}));
+ // Top-layer source panels must stay outside the collapsed legacy headings.
+ for(const id of ['ux-commandment-info','ux-timeline-info']){const panel=el(id);if(panel)document.body.append(panel);}
  const main = el('main');
- const contextNav=document.createElement('nav');contextNav.className='lens-context';contextNav.setAttribute('aria-label','Breadcrumb');contextNav.hidden=true;main.prepend(contextNav);
+ const contextNav=document.createElement('nav');contextNav.className='lens-context';contextNav.setAttribute('aria-label','Page navigation');contextNav.hidden=true;main.prepend(contextNav);
  let searchParent='explore';
- const labels={read:'Read',explore:'Explore',debates:'Big Questions',debate:'Question',notebook:'Saved',search:'Search',stories:'Stories',characters:'People',places:'Places',evidence:'Text Studies',timeline:'History & Timeline',commandments:'Commandments',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the Text'};
+ const labels={read:'Read',explore:'Explore',debates:'Big Questions',debate:'Question',notebook:'Saved',search:'Search',stories:'Stories',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Commandments',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the Text'};
  const roots={read:'#read',explore:'#discover',debates:'#questions',notebook:'#notebook'};
  function primary(){
   if(view==='search'||view==='chat')return searchParent;
@@ -66,14 +69,17 @@
    const root=active==='debates'?'Questions':labels[active],rootHash=roots[active];
    const questions=view==='debate'||view==='debates'&&(location.hash==='#questions'||location.hash.includes('draft=1'));
    const detail=questions?'<a href="#discover?section=evidence">Evidence</a><span aria-hidden="true">›</span>'+(view==='debate'?'<a href="#questions">Questions</a><span aria-hidden="true">›</span>':''):'';
-   const html='<button type="button" data-ux-back aria-label="Back">←</button><a href="'+rootHash+'">'+root+'</a><span aria-hidden="true">›</span>'+detail+'<span aria-current="page">'+esc(questions&&view==='debates'?'Questions':title)+'</span>';
-   if(contextNav.innerHTML!==html)contextNav.innerHTML=html;
+   const html='<button type="button" data-ux-back aria-label="Back">‹</button><h1 tabindex="-1" aria-current="page">'+esc(title)+'</h1>';
+   const headingHadFocus=document.activeElement===pageHeading||document.activeElement===contextNav.querySelector('h1');
+   host.classList.add('ux-compact-interior');
+   if(!contextNav.querySelector('h1')||contextNav.querySelector('h1').textContent!==title)contextNav.innerHTML=html;
+   if(headingHadFocus)contextNav.querySelector('h1').focus({preventScroll:true});
    contextNav.dataset.fallback=rootHash;
   }
   document.title=title+' · BibleLens';
  }
  contextNav.addEventListener('click',event=>{if(event.target.closest('[data-ux-back]')){back(contextNav.dataset.fallback);return;}const link=event.target.closest('a');if(!link||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();routeTo(link.hash);});
- document.addEventListener('click',event=>{if(event.target.closest('.ux-search'))searchParent=primary();if(event.target.closest('[data-open-settings]'))el('lens-settings').click();});
+ document.addEventListener('click',event=>{if(event.target.closest('[data-ux-commandment-filters]'))el('commandments-more').click();if(event.target.closest('.ux-search'))searchParent=primary();if(event.target.closest('[data-open-settings]'))el('lens-settings').click();});
  window.addEventListener('viewchange',updateContext);
  window.addEventListener('hashchange',()=>requestAnimationFrame(updateContext));
  // Lazy views render their titles after viewchange. Observe only page content,
@@ -82,7 +88,7 @@
  observer.observe(main,{childList:true,subtree:true,characterData:true});
  // Sheets are inline tasks. Keep async profile titles and reused sheets current.
  function dialogPaths(){for(const dialog of document.querySelectorAll('dialog[open]')){
-  if(dialog.id==='lens-inspector-sheet'&&!document.getElementById('lensComparison').hidden){dialog.querySelector('.ux-dialog-path')?.remove();continue;}
+  if(dialog.id==='lens-inspector-sheet'||dialog.id==='lens-search-overlay'){dialog.querySelector('.ux-dialog-path')?.remove();continue;}
   const title=[...dialog.querySelectorAll('h1,h2,h3')].find(node=>!node.closest('[hidden]'))?.textContent.trim()||dialog.getAttribute('aria-label')||'Details';
   let nav=dialog.querySelector('.ux-dialog-path');
   if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='←';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}

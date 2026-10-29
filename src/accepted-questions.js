@@ -11,7 +11,7 @@
  const card=row=>`<a class="phase2-debate-card" href="${href(row)}"><span class="phase2-eyebrow">${esc(row.side_a[0]?.ref||row.side_b[0]?.ref||'Passages')}</span><h2>${esc(row.question)}</h2><div>${labels(row)}<span aria-hidden="true"> →</span></div></a>`;
  async function list(host){
   const token=++version;current=null;setView('debates',false);
-  host.innerHTML='<h1 tabindex="-1">Big Questions</h1><div class="accepted-questions phase2-debate-grid" role="status">Loading questions…</div>';
+  host.innerHTML='<h1 tabindex="-1">Big Questions</h1><nav class="ux-interior-chips" aria-label="Question collections"><a class="lens-button" href="#questions" aria-current="page">All questions</a><a class="lens-button" href="#questions?mode=text">Text Comparisons</a><a class="lens-button" href="#discover?section=evidence">Evidence</a></nav><div class="accepted-questions phase2-debate-grid" role="status">Loading questions…</div>';
   try{const rows=await load();if(token!==version)return;const slot=host.querySelector('.accepted-questions');slot.removeAttribute('role');slot.innerHTML=order.map(id=>rows.find(r=>r.decisionId===id)).filter(Boolean).map(card).join('');restoreNavigation();}
   catch{host.innerHTML='<h1>Big Questions</h1><p>Questions could not load.</p><a class="lens-button" href="#questions">Try again</a>';}
  }

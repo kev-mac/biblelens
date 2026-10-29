@@ -15,7 +15,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await page.evaluate(theme=>{state.theme=theme;applyTheme();},theme);
   const go=async(hash,selector)=>{await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),hash);await page.locator(selector).first().waitFor();};
   const shot=async state=>{
-   await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${state}.png`});
+   await page.evaluate(()=>document.fonts.ready);if(process.env.UX_NO_SHOTS!=='1')await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${state}.png`});
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,state+' page overflow');
   };
   await go('#people','#characters-list .ux-contact');

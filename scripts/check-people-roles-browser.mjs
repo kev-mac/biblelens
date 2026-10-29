@@ -23,7 +23,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await page.goto(base+'/#people');await page.locator('#characters-list .ux-person-open').first().waitFor();
   await page.evaluate(theme=>{state.theme=theme;applyTheme();},theme);
   assert.deepEqual(await page.locator('.directory-categories button').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('aria-label'))),Object.keys(groups));
-  const shot=async name=>{await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${drafts?'draft':'production'}-${name}.png`});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);};
+  const shot=async name=>{await page.evaluate(()=>document.fonts.ready);if(process.env.UX_NO_SHOTS!=='1')await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${drafts?'draft':'production'}-${name}.png`});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);};
   for(const [name,filter] of Object.entries(groups)){
    const button=page.getByRole('button',{name,exact:true});await button.tap();
    assert.equal(await button.textContent(),`${name} (${people.filter(filter).length.toLocaleString()})`);
