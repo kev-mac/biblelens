@@ -1,3 +1,4 @@
+import {directorySaveButton} from './directory-save.js';
 import {loadPlaces,atlasDescription} from './places-core.js';
 import {placePreviewSVG} from './place-map-preview.js';
 
@@ -11,9 +12,10 @@ export function searchPlaces(places,query=''){
 }
 
 const node=(tag,className,text)=>{const el=document.createElement(tag);el.className=className||'';if(text)el.textContent=text;return el;};
-function placeCard(place){
+function placeCard(place, duplicate){
  const card=node('article','character-card place-profile-card');
- const heading=node('h2','character-name',place.name);card.append(heading);
+ const heading=node('h2','character-name',place.name+(duplicate&&place.featureType?' ('+place.featureType+')':''));card.append(heading);
+ const open=node('button','ux-place-open','→');open.type='button';open.dataset.placeId=place.id;open.setAttribute('aria-label','Open '+place.name);card.append(open,directorySaveButton('place',place.id,place.name));
  const aliases=[...place.aliases,place.modern_name].filter(Boolean).filter(alias=>normalize(alias.trim())!==normalize(place.name.trim()));
  if(aliases.length)card.append(node('p','character-aliases',aliases.join(' · ')));
  const description=atlasDescription(place);
@@ -59,7 +61,7 @@ export function mountPlacesDirectory(){
   count.textContent=loading?'Loading places…':failed?'Places could not be loaded.':`${matches.length?page*15+1:0}–${Math.min((page+1)*15,matches.length)} of ${matches.length} ${matches.length===1?'place':'places'}`;
   list.replaceChildren();list.setAttribute('aria-busy',String(loading));
   for(const place of matches.slice(page*15,(page+1)*15)){
-   const row=document.createElement('li');row.append(placeCard(place));list.append(row);
+   const row=document.createElement('li');row.append(placeCard(place,[...places.values()].filter(other=>normalize(other.name)===normalize(place.name)).length>1));list.append(row);
   }
   if(loaded&&!matches.length){const empty=document.createElement('li');empty.textContent='No places match. Try another name or alias.';list.append(empty);}
   previous.disabled=page===0;next.disabled=page+1>=pages;pagination.hidden=!loaded||pages<=1;retry.hidden=!failed;

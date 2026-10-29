@@ -132,7 +132,7 @@ export async function releaseSmoke({base, expected, report, legacyCsp = false}) 
         await step('map', async () => {
           await page.evaluate(() => {location.hash = '#places';});
           await page.locator('#places-search').fill('Jerusalem');
-          await page.locator('#places-view .place-map-preview:not([disabled])').first().click({timeout: 60000});
+          await page.locator('#places-view .ux-place-open[data-place-id]').first().click({timeout: 60000});
           await page.waitForFunction(() => document.querySelector('#atlas-sheet')?.open && document.querySelector('#atlas-map canvas') &&
             document.querySelector('.atlas-map-notice')?.textContent === '', null, {timeout: 90000});
           assert(result.tiles.some(t => t.status === 200 && /\/(?:\d+\/){2}\d+\.pbf(?:\?|$)/.test(t.url)), 'No successful geographic tile');

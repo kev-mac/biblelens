@@ -27,6 +27,7 @@ function mountCharacters(): void {
   let people: DirectoryPerson[] = [];
   let findPeople = createPeopleSearch(people);
   let page = 0;
+  let category = 'All', letter = '';
   let loading = true;
   let failed = false;
   let profileRoute = '';
@@ -47,7 +48,23 @@ function mountCharacters(): void {
   const count = element('p', 'characters-count'); count.setAttribute('role', 'status');
   const list = element('div', 'characters-grid'); list.id = 'characters-list';
   const searchBox = element('div', 'characters-search-box');
-  searchBox.append(label, search);
+  const categories = element('div', 'directory-categories');
+  categories.setAttribute('role', 'group'); categories.setAttribute('aria-label', 'People categories');
+  for (const name of ['All', 'Women']) {
+    const button = element('button', '', name); button.type = 'button';
+    button.addEventListener('click', () => { category = name; page = 0; render(); });
+    categories.append(button);
+  }
+  const alphabet = element('div', 'directory-alphabet');
+  alphabet.setAttribute('role', 'group'); alphabet.setAttribute('aria-label', 'Filter people by first letter');
+  for (const name of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+    const button = element('button', '', name); button.type = 'button';
+    button.setAttribute('aria-label', 'Names starting with ' + name);
+    button.addEventListener('click', () => { letter = letter === name ? '' : name; page = 0; render(); });
+    alphabet.append(button);
+  }
+  searchBox.classList.add('directory-filters');
+  searchBox.append(label, search, categories, alphabet);
   host.append(heading, searchBox, count, list);
   const pagination = element('div', 'characters-pagination');
   const previous = element('button', '', 'Previous'); previous.type = 'button';
@@ -58,7 +75,14 @@ function mountCharacters(): void {
   pagination.append(previous, pageLabel, next); host.append(pagination, retry);
   list.tabIndex = -1;
   function render(): void {
-    const matches = findPeople(search.value);
+    const candidates = findPeople(search.value, category === 'Women');
+    const initial = (name: string) => name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase();
+    const matches = candidates.filter(person => !letter || initial(person.name) === letter);
+    for (const button of categories.querySelectorAll('button')) button.setAttribute('aria-pressed', String(button.textContent === category));
+    for (const button of alphabet.querySelectorAll('button')) {
+      button.disabled = !candidates.some(person => initial(person.name) === button.textContent);
+      button.setAttribute('aria-pressed', String(button.textContent === letter));
+    }
     search.placeholder = 'Search names or aliases…';
     page = Math.min(page, Math.max(0, Math.ceil(matches.length / CHARACTER_PAGE_SIZE) - 1));
     list.replaceChildren(...characterPage(matches, page).map(CharacterCard));

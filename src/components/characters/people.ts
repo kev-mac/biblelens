@@ -15,6 +15,7 @@ const normalize = (value: string): string => value.normalize('NFKD').replace(/[\
 export function mapPeople(raw: unknown): DirectoryPerson[] {
   if (!Array.isArray(raw)) throw new Error('Invalid people directory');
   const seen = new Set<string>();
+  const records = new Map(raw.filter(row => row && typeof row.id === 'string').map(row => [row.id, row]));
   const mapped: DirectoryPerson[] = raw.flatMap(record => {
     if (!record || typeof record.id !== 'string' || !record.id || typeof record.name !== 'string' || !record.name.trim() || seen.has(record.id)) return [];
     seen.add(record.id);
@@ -31,7 +32,10 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
     const key_passages = [...passages];
     let label=typeof record.label==='string'&&record.label!==record.name?record.label:'';
     if(label.startsWith(record.name+' (')&&label.endsWith(')'))label=label.slice(record.name.length+2,-1);
-    return [{id: record.id, name: record.name.trim(), identity_context:[label,key_passages[0]].filter(Boolean).join(' · '), aliases, summary, key_passages,
+    return [{id: record.id, name: record.name.trim(), identity_context: label || (() => {
+      const parent = [...(record.relations?.father || []), ...(record.relations?.mother || [])].map((relation: {id: string}) => records.get(relation.id)?.name).find(Boolean);
+      return parent ? 'child of ' + parent : `${key_passages.length} ${key_passages.length === 1 ? 'passage' : 'passages'}`;
+    })(), aliases, summary, key_passages,
       sex: record.gender === 'Female' ? 'female' : record.gender === 'Male' ? 'male' : 'unspecified',
       era: written?.era || 'Across scripture', geography: written?.geography || {origin: '', residence: []},
       testaments: [...new Set([...referenceBooks].map(book=>book<39?'old':'new'))],

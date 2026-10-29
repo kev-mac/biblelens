@@ -1,3 +1,4 @@
+import {directorySaveButton} from '../../directory-save.js';
 import {ProfileSections} from './ProfileSections';
 export {profileSectionAvailability} from './ProfileSections';
 import { lineageCharacter, isFemaleLineage, characterVerseRoute } from './directory';
@@ -49,10 +50,10 @@ export function LineageBadges(profile: CharacterProfile): HTMLElement {
 export function CharacterNameCard(profile: CharacterProfile): HTMLElement {
   const card=element('article',`character-card ${profile.sex==='female'?'character-female':'character-neutral'}`);
   card.id=`character-card-${profile.id}`;card.tabIndex=-1;
-  const heading=element('h2','character-name',profile.name);
+  const heading=element('h2','character-name',profile.name + (profile.identity_context ? ' (' + profile.identity_context + ')' : ''));
   const header=element('div','character-card-header');header.append(heading);
   const open=element('a','ux-person-open','→');open.href='#characters/'+encodeURIComponent(profile.id);open.setAttribute('aria-label','Open '+profile.name);header.append(open);
-  if(profile.identity_context)header.append(element('p','character-identity-context',profile.identity_context));
+  header.append(directorySaveButton('person', profile.id, profile.name));
   if(profile.aliases?.length)header.append(element('p','character-aliases',profile.aliases.join(' · ')));
   card.append(header);
   return card;
@@ -61,5 +62,13 @@ export function CharacterNameCard(profile: CharacterProfile): HTMLElement {
 export function CharacterCard(profile: CharacterProfile): HTMLElement {
   const card = CharacterNameCard(profile);
   card.append(element('p','character-summary',profile.summary||'A written biography is not yet available for this person.'),ProfileSections(profile));
+  const references = element('div', 'directory-references');
+  const passages = profile.narrative_anchors?.key_verses || [];
+  for (const passage of passages.slice(0, 2)) {
+    const route = characterVerseRoute(passage); if (!route) continue;
+    const chip = element('a', 'directory-reference', passage); chip.href = route; references.append(chip);
+  }
+  if (passages.length > 2) references.append(element('span', 'directory-more', '+' + (passages.length - 2) + ' more'));
+  card.append(references);
   return card;
 }

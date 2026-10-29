@@ -2192,3 +2192,77 @@ html body.lens-app .ux-popup,
 html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet,
 html body.lens-app dialog#lensComparison.lens-comparison{border-radius:var(--ux-radius-dialog)}
 html body.lens-app :is(.tag,.character-era,.character-badge,.character-story-chip,.phase2-chips button,.chips .chip,.glass-pill){border-radius:var(--ux-radius-pill)}
+
+/* UX4 reusable glass tokens. Light surfaces retain AA text contrast. */
+html body.lens-app {
+ --ux-glass-card:rgba(255,255,255,0.025);--ux-glass-border:rgba(255,255,255,0.08);
+ --ux-glass-hover:rgba(255,255,255,0.05);--ux-glass-hover-border:rgba(99,102,241,0.45);
+ --ux-glass-radius:12px;--ux-glass-padding-block:14px;--ux-glass-padding-inline:16px;
+ --ux-reference-bg:rgba(99,102,241,0.12);--ux-reference-ink:#a5b4fc;
+ --ux-reference-type:.75rem;--ux-reference-weight:500;--ux-reference-radius:6px;--ux-reference-padding:3px 8px;
+ --ux-filter-active:rgba(99,102,241,0.25);--ux-filter-border:rgba(99,102,241,0.45);--ux-glass-blur:12px;
+ --ux-filter-solid:var(--lens-paper);--ux-filter-glass:rgba(246,247,251,.94);
+ --ux-directory-chip-ink:#4056cf;--ux-directory-active-ink:#283795;--ux-directory-border:var(--lens-rule);
+}
+html body.lens-app.dark {
+ --ux-filter-glass:rgba(18,21,32,.94);--ux-directory-chip-ink:var(--ux-reference-ink);
+ --ux-directory-active-ink:#fff;--ux-directory-border:var(--ux-glass-border);
+}
+html body.lens-app #main :is(#characters-list,.places-directory-list) {
+ display:grid;grid-template-columns:minmax(0,1fr);gap:var(--ux-space-3);border:0;
+}
+html body.lens-app #main :is(#characters-list,.places-directory-list) .character-card {
+ position:relative;display:flex;flex-direction:column;margin:0;min-height:calc(var(--ux-target) * 2 + var(--ux-space-5));height:100%;box-sizing:border-box;
+ padding:var(--ux-glass-padding-block) var(--ux-glass-padding-inline);border:1px solid var(--ux-directory-border);
+ border-radius:var(--ux-glass-radius);background:var(--ux-glass-card);box-shadow:none;backdrop-filter:none;
+}
+html body.lens-app #main :is(#characters-list,.places-directory-list) .character-card:hover {
+ background:var(--ux-glass-hover);border-color:var(--ux-glass-hover-border);
+}
+html body.lens-app #main :is(#characters-list,.places-directory-list) .character-name {
+ margin:0 calc(var(--ux-target) + var(--ux-space-2)) var(--ux-space-3) 0;
+ font:500 var(--ux-type-card)/1.35 var(--ui-font);color:var(--lens-ink);
+}
+html body.lens-app #main :is(#characters-list,.places-directory-list) .character-card-header {display:block;position:static}
+html body.lens-app #main :is(#characters-list,.places-directory-list) :is(.character-aliases,.character-summary,.person-sections,.place-map-card) {display:none}
+html body.lens-app #main :is(.ux-person-open,.ux-place-open) {
+ position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-end;box-sizing:border-box;
+ width:100%;height:100%;padding:var(--ux-glass-padding-block) var(--ux-glass-padding-inline);
+ background:transparent;border:0;border-radius:var(--ux-glass-radius);color:var(--lens-link);font-size:var(--ux-icon);z-index:1;
+}
+html body.lens-app .directory-save {
+ position:absolute;top:var(--ux-space-1);right:var(--ux-space-2);z-index:2;display:grid;place-items:center;
+ min-width:var(--ux-target);width:var(--ux-target);height:var(--ux-target);min-height:var(--ux-target);padding:var(--ux-space-2);
+ color:var(--lens-link);border:0;border-radius:var(--ux-radius-sm);background:transparent;box-shadow:none;
+}
+html body.lens-app .directory-save svg {width:var(--ux-icon);height:var(--ux-icon)}
+html body.lens-app .directory-save[aria-pressed=true] svg {fill:currentColor}
+html body.lens-app .directory-references {display:flex;align-items:center;flex-wrap:wrap;gap:var(--ux-space-1);margin-right:var(--ux-target);margin-top:auto;min-height:var(--ux-target)}
+html body.lens-app .directory-reference {
+ position:relative;z-index:2;display:inline-flex;align-items:center;min-height:var(--ux-target);box-sizing:border-box;
+ padding:var(--ux-reference-padding);border-radius:var(--ux-reference-radius);background:var(--ux-reference-bg);
+ color:var(--ux-directory-chip-ink);font-size:var(--ux-reference-type);font-weight:var(--ux-reference-weight);
+}
+html body.lens-app .directory-more {font-size:var(--ux-type-meta);color:var(--lens-muted)}
+html body.lens-app #main #characters-view .directory-filters {
+ position:sticky;top:calc(var(--lens-nav-height,64px) + env(safe-area-inset-top,0px));z-index:10;display:block;max-width:none;
+ padding:var(--ux-space-2) 0;margin-block:var(--ux-space-2) var(--ux-space-3);background:var(--ux-filter-solid);
+}
+@supports(backdrop-filter:blur(1px)) {
+ html body.lens-app #main #characters-view .directory-filters {background:var(--ux-filter-glass);backdrop-filter:blur(var(--ux-glass-blur));-webkit-backdrop-filter:blur(var(--ux-glass-blur))}
+}
+html body.lens-app :is(.directory-categories,.directory-alphabet) {display:flex;gap:var(--ux-space-1);overflow-x:auto;max-width:100%;margin-top:var(--ux-space-2);scrollbar-width:thin}
+html body.lens-app :is(.directory-categories,.directory-alphabet) button {
+ flex:0 0 auto;min-width:var(--ux-target);min-height:var(--ux-target);padding:var(--ux-space-2) var(--ux-space-3);
+ border:1px solid transparent;border-radius:var(--ux-radius-sm);background:transparent;color:var(--lens-ink);box-shadow:none;font:500 var(--ux-type-control)/1.4 var(--ui-font);
+}
+html body.lens-app :is(.directory-categories,.directory-alphabet) button[aria-pressed=true] {
+ background:var(--ux-filter-active);color:var(--ux-directory-active-ink);border-color:var(--ux-filter-border);
+}
+html body.lens-app .directory-alphabet button {width:var(--ux-target);padding:var(--ux-space-2)}
+html body.lens-app .directory-alphabet button:disabled {opacity:.45;cursor:default}
+@media(min-width:768px) {html body.lens-app #main :is(#characters-list,.places-directory-list) {grid-template-columns:repeat(2,minmax(0,1fr))}}
+html body.lens-app #characters-view {--topic:#4056cf}
+html body.lens-app.dark #characters-view {--topic:var(--ux-reference-ink)}
+
+html body.lens-app #characters-list .character-matched-alias {margin:0 var(--ux-target) var(--ux-space-2) 0;font-size:var(--ux-type-meta);color:var(--lens-muted)}

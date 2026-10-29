@@ -174,14 +174,20 @@
   for(const button of document.querySelectorAll('[data-lens-filter]'))button.setAttribute('aria-pressed',String(button.dataset.lensFilter===notebookFilter));
  }
  async function renderSaved(renderId){
-  const ids=Object.entries(window.BibleLensDebateStore.all()).filter(([,value])=>value.saved).map(([id])=>id);
+  const saved=Object.entries(window.BibleLensDebateStore.all()).filter(([,value])=>value.saved);
+  const entities=saved.filter(([,value])=>value.entity);
+  const ids=saved.filter(([,value])=>!value.entity).map(([id])=>id);
+  const entityRows=entities.map(([key,{entity}])=>`<article class="lens-note"><h2>${entity.kind==='person'?`<a href="#characters/${encodeURIComponent(entity.id)}">${esc(entity.name)}</a>`:`<button class="lens-button" data-place-id="${esc(entity.id)}">${esc(entity.name)}</button>`}</h2><button type="button" class="lens-button" data-directory-remove="${esc(key)}">Remove from Saved</button></article>`);
   for(const button of document.querySelectorAll('[data-lens-filter]'))button.setAttribute('aria-pressed',String(button.dataset.lensFilter==='saved'));
-  el('lens-notebook-status').textContent=`${ids.length} saved ${ids.length===1?'Big Question':'Big Questions'} · Stored on this device. Full backups include them.`;
-  el('lens-notebook-list').innerHTML=ids.length?'<p role="status">Loading saved Big Questions…</p>':'<div class="lens-empty"><h2>Keep a question to return to.</h2><p>Save a Big Question to find it here.</p><a class="lens-button" href="#questions">Explore Big Questions</a></div>';
+  el('lens-notebook-status').textContent=`${saved.length} saved ${saved.length===1?'item':'items'} · Stored on this device. Full backups include them.`;
+  el('lens-notebook-list').innerHTML=entityRows.length?entityRows.join(''):ids.length?'<p role="status">Loading saved Big Questions…</p>':'<div class="lens-empty"><h2>Keep a question to return to.</h2><p>Save a Big Question to find it here.</p><a class="lens-button" href="#questions">Explore Big Questions</a></div>';
   const rows=await Promise.all(ids.map(async id=>{try{const response=await fetch('/api/debate?'+new URLSearchParams({id}));if(!response.ok)throw Error();return window.BibleLensDebates.card(await response.json());}catch{return `<p>Saved record: ${esc(id)}. <a href="#debate/${encodeURIComponent(id)}">Open or retry</a></p>`;}}));
-  if(renderId===savedRender&&ids.length)el('lens-notebook-list').innerHTML=rows.join('');
+  if(renderId===savedRender&&saved.length)el('lens-notebook-list').innerHTML=entityRows.concat(rows).join('');
  }
  window.addEventListener('biblelens:debatechange',()=>{if(view==='notebook'&&notebookFilter==='saved')renderNotebook();});
+ el('lens-notebook-list').addEventListener('click',event=>{
+  const remove=event.target.closest('[data-directory-remove]');if(remove)window.BibleLensDebateStore.write(remove.dataset.directoryRemove,{saved:false});
+ });
  el('notebook-view').addEventListener('click',event=>{
   const filter=event.target.closest('[data-lens-filter]');if(filter){routeTo('#notebook?section='+filter.dataset.lensFilter);return;}
   const action=event.target.closest('[data-lens-delete-note],[data-lens-remove-bookmark]'),row=action?.closest('[data-lens-note]');if(!row)return;

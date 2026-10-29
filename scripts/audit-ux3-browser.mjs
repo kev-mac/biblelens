@@ -86,7 +86,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})) {
    await page.locator('[data-places-next]').click();await page.locator('.places-directory-pagination').scrollIntoViewIfNeeded();await shot('places-page-2');
    await page.locator('#places-search').fill('Jerusalem');await page.locator('.place-profile-card').first().waitFor();await shot('place-detail');
    await page.locator('.place-map-source').first().click();await shot('place-sources');await page.keyboard.press('Escape');
-   await page.locator('.place-map-preview:not([disabled])').first().click();await page.waitForSelector('#atlas-sheet[open]');await shot('place-map');await page.keyboard.press('Escape');
+   await page.locator('.ux-place-open[data-place-id]').first().click();await page.waitForSelector('#atlas-sheet[open]');await shot('place-map');await page.keyboard.press('Escape');
    await page.locator('#places-search').fill('zzzzzzzz');await shot('places-empty');
   });
   await step('commandments',async()=>{
