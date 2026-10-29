@@ -9,8 +9,9 @@ Mappings: History and Science use the existing mode-filtered research lists;
 Timeline uses the existing timeline; Text Comparisons uses mode=text;
 Translations uses the existing T-tagged translation studies. There is no separate
 translation catalogue: this is the closest existing collection. Questions uses
-#questions. The Questions bottom tab remains on that same page; Kevin listed
-Questions under Evidence and may want that duplicate entry removed later.
+#questions. UX2b removes its duplicate bottom tab. The three tabs are Read,
+Explore and Saved; global Search remains in the masthead. The Settings menu
+also omits the direct Questions shortcut; saved question links still work.
 Prophecies stays out of the Explore gallery. Method & Sources remains in the footer.
 
 People search previously used substring matches across names and aliases.
@@ -59,3 +60,34 @@ in both engines. It fails only cloud sync (503: no local DB) and hosted sign-in
 (404: no local Sites sign-in route). These are retained as failures in the logs,
 not changed into simulated passes. Source, web and www identities match at 277;
 no signed iOS artifact or installation was produced or compared.
+
+## UX2b child-test matrix
+
+This interaction review covers Chromium and WebKit at 390×844 and 430×932,
+in light and dark themes. It is not a study with children. Carousel swipes and
+scrolling locate tiles; the counts below measure taps on destinations. Using
+carousel arrow buttons instead of swipes adds taps.
+
+| Task from Explore home | Path | Taps | Limit |
+| --- | --- | --- | --- |
+| Open a Big Question | Swipe to Evidence → tap Evidence → swipe to Questions → tap Questions → tap a question | 3 | ≤3 |
+| Return home from a question | Tap Explore in the bottom bar | 1 | ≤2 |
+
+The browser check records these counts in the screenshot matrix and verifies
+cold #questions, #debates, accepted question and legacy detail links. Question
+pages highlight Explore and show Explore › Evidence › Questions › [title].
+The list ends at Questions. Evidence and Questions breadcrumb links are usable.
+Explore and Questions screenshots are refreshed in all eight combinations.
+
+UX2b validation uses the existing scripts/serve-smoke.mjs fixture on 8875,
+as UX1b did. Its anonymous DB boundary and local sign-in resolution page let
+smoke check the production handler without contacting hosted authentication.
+A local pass verifies these boundaries; it does not verify a hosted sign-in or
+cloud database. No app authentication or sync security is changed.
+
+UX2b final checks pass: check, check:mobile, check:ui, check:ux1b (the UX2
+browser matrix), UX2 colour, readability, neutral framing and check:release.
+Release smoke passes in Chromium and WebKit using the local boundary fixtures.
+An initial smoke run caught the old 8875 server fingerprint after rebuilding;
+restarting that test server fixed the mismatch. Final source/web/www match at
+build 277, in production mode. The 8788 preview was left alone.

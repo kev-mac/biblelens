@@ -38,7 +38,8 @@ store.restore({'legacy-science-1':{saved:false,stance:'A'},restored:{saved:true,
 assert.equal(store.read('legacy-science-1').stance,'B','Import preserves a current choice');assert.equal(store.read('legacy-science-1').saved,true);assert.equal(store.read('restored').stance,'Not sure');
 const sync=fs.readFileSync('src/sync-core.js','utf8');assert(!sync.includes('deviceDebates'),'Choices stay outside the cloud schema');
 const app=fs.readFileSync('src/app.js','utf8');assert(app.includes('deviceDebates:window.BibleLensDebateStore?.all()'));assert(app.includes('restore(backup.deviceDebates)'));
-const html=fs.readFileSync('src/index.html','utf8');assert.deepEqual([...html.matchAll(/data-lens-view="([^"]+)"/g)].map(match=>match[1]),['read','explore','debates','notebook']);
+const html=fs.readFileSync('src/index.html','utf8');assert.deepEqual([...html.matchAll(/data-lens-view="([^"]+)"/g)].map(match=>match[1]),['read','explore','notebook']);
+assert(!fs.readFileSync('src/navigation.js','utf8').includes("['debates','Big Questions']"),'Questions discovery belongs under Explore Evidence');
 const worker=(await import('../dist/server/index.js')).default;
 const get=path=>worker.fetch(new Request('https://test.invalid'+path),{},{});
 assert.equal((await get('/api/debate?id=missing')).status,404);
@@ -46,4 +47,4 @@ assert.equal((await get('/api/debates?day=2026-99-99')).status,400,'Invalid dail
 const sample=records.find(record=>record.sides?.length>2)||records.find(record=>record.sides?.length);
 const detail=await (await get('/api/debate?id='+sample.id)).json();const draftOnly=(await (await get('/release.json')).json()).draftOnly===true;assert.deepEqual(detail,{...(draftOnly?neutralTree(sample):sample),verdict:debateVerdict(sample)},'Every exact field and all side quotes survive packaging');
 assert.equal((await (await get('/api/debates?mode=science&status=Disagrees')).json()).total,records.filter(record=>record.mode==='science'&&record.status==='Disagrees').length);
-console.log('PASS: all current verdicts, full pagination, topic filters, deterministic daily selection, exact detail fields, missing IDs, local choices/saves, backup merge and four tabs.');
+console.log('PASS: all current verdicts, full pagination, topic filters, deterministic daily selection, exact detail fields, missing IDs, local choices/saves, backup merge and three tabs.');

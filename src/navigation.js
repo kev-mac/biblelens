@@ -19,7 +19,7 @@
  trigger.setAttribute('aria-expanded', 'false');
  }
  const grid = sheet.querySelector('.navigation-grid');
- const pages = [['explore','Explore'],['read','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['debates','Big Questions'],['evidence','Evidence filters'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['timeline','Timeline'],['prophecies','Prophecies'],['method','Method & Sources']];
+ const pages = [['explore','Explore'],['read','Read'],['search','Search'],['notebook','Notebook'],['chat','Chat'],['evidence','Evidence filters'],['bookmarks','Bookmarks'],['stories','Stories'],['characters','People'],['places','Places'],['commandments','Commandments'],['timeline','Timeline'],['prophecies','Prophecies'],['method','Method & Sources']];
  for (const [page, label] of pages) {
   const button = document.createElement('button'); button.type = 'button'; button.dataset.navigationView = page;
   const icon = document.querySelector('#navigation-icons').content.querySelector(`[data-navigation-icon="${page}"]`);

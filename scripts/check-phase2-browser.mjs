@@ -32,7 +32,7 @@ try{
    }));assert.deepEqual(violations,[],name+' type and touch sizes');await page.screenshot({path:`${output}/${theme}-${name}.png`});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390,name+' has no horizontal page overflow');}
   async function go(hash,selector){await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),hash);await page.waitForFunction(hash=>location.hash===hash,hash);if(selector)await page.waitForSelector(selector);}
   await shot('explore');
-  assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Read','Explore','Questions','Saved']);
+  assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Read','Explore','Saved']);
   await page.locator('.ux-search').click();await page.waitForSelector('#lens-search-input');await page.locator('#lens-search-input').fill('Genesis 1');await page.locator('#lens-search-form').evaluate(form=>form.requestSubmit());
   await page.waitForSelector('#lens-results-scripture .lens-result');await shot('search');assert(await page.locator('#search-view a[href="#chat"]').isVisible());
   // Seed only this isolated browser profile with supported, pre-existing notebook data.

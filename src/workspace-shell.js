@@ -47,8 +47,6 @@
  const roots={read:'#read',explore:'#discover',debates:'#questions',notebook:'#notebook'};
  function primary(){
   if(view==='search'||view==='chat')return searchParent;
-  if(view==='debates')return location.hash==='#questions'||location.hash.includes('draft=1')?'debates':'explore';
-  if(view==='debate')return /^#debate\/headline-/.test(location.hash)?'debates':'explore';
   if(['read','notebook'].includes(view))return view;
   return 'explore';
  }
@@ -62,15 +60,13 @@
   let title=pageHeading?.textContent.trim()||labels[view]||'BibleLens';
   if(/^#(?:compare|investigation)/.test(location.hash))title='Compare Passages';
   if(/^#stories\//.test(location.hash))title=host.querySelector('.story-card h2')?.textContent.trim()||title;
-  const top=['read','explore','notebook'].includes(view)&&!/^#(?:compare|investigation|study)/.test(location.hash)||view==='debates'&&location.hash==='#questions';
+  const top=['read','explore','notebook'].includes(view)&&!/^#(?:compare|investigation|study)/.test(location.hash);
   contextNav.hidden=top;
   if(!top){
    const root=active==='debates'?'Questions':labels[active],rootHash=roots[active];
-   const from=history.state?.biblelens?.from||'';
-   const params=new URLSearchParams(from.split('?')[1]||'');
-   const studyParent=from.startsWith('#questions?')?[from,params.get('mode')==='science'?'Science':params.get('mode')==='history'?'History & Timeline':params.get('filter')==='T'?'Lost in Translation':'Text Studies']:['#evidence','Text Studies'];
-   const detail=view==='debate'&&active!=='debates'?'<a href="'+esc(studyParent[0])+'">'+studyParent[1]+'</a><span aria-hidden="true">›</span>':'';
-   const html='<button type="button" data-ux-back aria-label="Back">←</button><a href="'+rootHash+'">'+root+'</a><span aria-hidden="true">›</span>'+detail+'<span aria-current="page">'+esc(title)+'</span>';
+   const questions=view==='debate'||view==='debates'&&(location.hash==='#questions'||location.hash.includes('draft=1'));
+   const detail=questions?'<a href="#discover?section=evidence">Evidence</a><span aria-hidden="true">›</span>'+(view==='debate'?'<a href="#questions">Questions</a><span aria-hidden="true">›</span>':''):'';
+   const html='<button type="button" data-ux-back aria-label="Back">←</button><a href="'+rootHash+'">'+root+'</a><span aria-hidden="true">›</span>'+detail+'<span aria-current="page">'+esc(questions&&view==='debates'?'Questions':title)+'</span>';
    if(contextNav.innerHTML!==html)contextNav.innerHTML=html;
    contextNav.dataset.fallback=rootHash;
   }

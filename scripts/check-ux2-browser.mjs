@@ -15,7 +15,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await page.evaluate(theme=>{state.theme=theme;applyTheme();persist();},theme);
   const go=async(hash,selector)=>{await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),hash);await page.waitForSelector(selector);};
   const shot=async name=>{await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${name}.png`});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),width,name+' overflow');};
-  assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Read','Explore','Questions','Saved']);
+  assert.deepEqual(await page.locator('.lens-primary a').allTextContents(),['Read','Explore','Saved']);
   assert.deepEqual(await page.locator('.ux-topic strong').allTextContents(),['Stories','People','Places','Commandments','Evidence']);
   assert.equal(await page.locator('.ux-topic-row').count(),1);
   await page.waitForFunction(()=>{const row=document.querySelector('.ux-topic-row');return row.clientWidth>0&&Math.abs(row.clientWidth-row.querySelector('a').getBoundingClientRect().width)<2;});
@@ -34,6 +34,34 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   assert.equal(await page.locator('#character-sheet button[aria-label=Close]').count(),1);await page.keyboard.press('Escape');await page.waitForSelector('#character-sheet[open]',{state:'hidden'});
   await go('#discover?section=evidence','.ux-topic-row');
   assert.deepEqual(await page.locator('.ux-topic strong').allTextContents(),['History','Science','Timeline','Text Comparisons','Translations','Questions']);await shot('evidence-carousel');
+  // Child-path matrix: swiping locates a tile; only activations count as taps.
+  await go('#discover','.ux-topic-row');
+  await page.locator('.ux-topic[data-topic=evidence]').scrollIntoViewIfNeeded();
+  await page.locator('.ux-topic[data-topic=evidence]').tap();let questionTaps=1;
+  await page.waitForSelector('.ux-topic[data-topic=questions]');
+  await page.locator('.ux-topic[data-topic=questions]').scrollIntoViewIfNeeded();
+  await page.locator('.ux-topic[data-topic=questions]').tap();questionTaps++;
+  await page.waitForSelector('.accepted-questions .phase2-debate-card');
+  const crumbs=()=>page.locator('.lens-context').innerText();
+  assert.match(await crumbs(),/Explore\s*›\s*Evidence\s*›\s*Questions/);
+  assert.equal(await page.locator('.lens-primary [aria-current=page]').innerText(),'Explore');
+  await shot('questions');
+  const questionRoute=await page.locator('.accepted-questions a').first().getAttribute('href');
+  await page.locator('.accepted-questions a').first().tap();questionTaps++;
+  await page.waitForSelector('[data-accepted-save]');
+  assert.match(await crumbs(),/Explore\s*›\s*Evidence\s*›\s*Questions\s*›/);
+  assert.equal(await page.locator('.lens-primary [aria-current=page]').innerText(),'Explore');
+  await shot('question-detail');assert(questionTaps<=3);
+  await page.locator('.lens-primary [data-lens-view=explore]').tap();const homeTaps=1;
+  await page.waitForSelector('.ux-topic-row');assert.equal(await page.evaluate(()=>location.hash),'#discover');assert(homeTaps<=2);
+  // Cold old links, aliases, and legacy detail routes retain their pages and owner.
+  for(const hash of ['#questions','#debates',questionRoute,'#debate/early-ahaziah']){
+   await page.goto(base+'/'+hash);
+   await page.waitForSelector(hash===questionRoute?'[data-accepted-save]':hash.includes('/early-')?'.phase2-sides:not([aria-busy])':'.accepted-questions a');
+   await page.waitForFunction(()=>document.querySelector('.lens-context').textContent.includes('Questions'));
+   assert.equal(await page.locator('.lens-primary [aria-current=page]').innerText(),'Explore');
+   assert.match(await crumbs(),/Explore\s*›\s*Evidence\s*›\s*Questions/);
+  }
   await go('#places','.place-profile-card');assert.equal(await page.locator('.places-directory-list>li').count(),15);await shot('places');
   await page.getByRole('button',{name:'Next',exact:true}).tap();assert.match(await page.locator('.places-directory-pagination').innerText(),/Page 2 of/);
   await page.locator('#places-search').fill('Jericho');await page.waitForFunction(()=>document.querySelector('.place-profile-card h2').textContent==='Jericho');assert(await page.locator('.place-profile-card').count()<=15);
@@ -48,7 +76,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   await page.touchscreen.tap(2,2);await page.waitForSelector('#lensComparison[open]',{state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-compare');
   await page.locator('.study-library>summary').tap();await page.locator('#collection').scrollIntoViewIfNeeded();assert.equal(await page.locator('#collection input[type=search]').count(),0);await shot('studies');
   await page.locator('#lens-settings').tap();await page.waitForSelector('#reader-settings[open]');assert.equal(await page.locator('#reader-settings button[aria-label=Close]').count(),1);await page.keyboard.press('Escape');await page.waitForSelector('#reader-settings[open]',{state:'hidden'});
-  assert.deepEqual(errors,[]);results.push({engine,width,height,theme,status:'PASS',mosesTaps,outsideEvidence:'PASS',outsideCompare:'PASS'});
+  assert.deepEqual(errors,[]);results.push({engine,width,height,theme,status:'PASS',mosesTaps,questionTaps,homeTaps,questionRoutes:'PASS',outsideEvidence:'PASS',outsideCompare:'PASS'});
   fs.writeFileSync(`${output}/matrix.json`,JSON.stringify(results,null,2)+'\n');console.log('PASS '+JSON.stringify(results.at(-1)));await context.close();
  }}finally{await browser.close();}
 }

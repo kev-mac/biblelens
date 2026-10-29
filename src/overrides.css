@@ -2044,7 +2044,7 @@ html body.lens-app #lensMasthead .lens-brand small{display:none}
 html body.lens-app #lensMasthead .lens-tools{margin-left:auto;display:flex;gap:2px}
 html body.lens-app #lensMasthead .ux-search{order:2;width:44px;height:44px;display:grid;place-items:center;color:var(--lens-ink);border-radius:50%}
 .ux-search svg{width:22px;height:22px}
-html body.lens-app #lensMasthead nav.lens-primary{position:fixed;inset:auto 0 0;transform:none;margin:0 auto;max-width:680px;width:100%;display:grid;grid-template-columns:repeat(4,1fr);background:var(--lens-surface);border-top:1px solid var(--lens-rule);padding:9px 20px max(12px,env(safe-area-inset-bottom));gap:0;z-index:100}
+html body.lens-app #lensMasthead nav.lens-primary{position:fixed;inset:auto 0 0;transform:none;margin:0 auto;max-width:680px;width:100%;display:grid;grid-template-columns:repeat(3,1fr);background:var(--lens-surface);border-top:1px solid var(--lens-rule);padding:9px 20px max(12px,env(safe-area-inset-bottom));gap:0;z-index:100}
 html body.lens-app #lensMasthead .lens-primary a{min-height:54px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;font-size:11px;border:0;background:none;border-radius:0;color:var(--lens-muted)}
 html body.lens-app #lensMasthead .lens-primary a[aria-current=page]{background:none;color:var(--lens-copper)}
 html body.lens-app #main{max-width:680px;padding:0 24px 24px;margin:0 auto}
@@ -2148,5 +2148,4 @@ html body.lens-app .ux-tile-copy{background:#10202b;padding:10px 14px;border-rad
 html body.lens-app .ux-carousel-controls span{background:none;padding:0;color:var(--lens-muted)}
 html body.lens-app #main>section>h1{border-left:4px solid var(--topic);padding-left:12px}
 
-html body.lens-app .lens-primary a[data-lens-view=debates]{color:var(--topic-questions)}
 html body.lens-app .lens-evidence-meta>span[data-topic],html body.lens-app .tag{color:var(--topic);border:1px solid var(--topic);border-radius:18px;background:var(--lens-surface);padding:4px 9px;font-size:12px;line-height:1.5;display:inline-block}
