@@ -6,6 +6,7 @@ const writtenByReference=new Map(characters.map(profile=>[(referenceIds as Recor
 import type { CharacterProfile } from '../../types/character';
 
 export interface DirectoryPerson extends CharacterProfile {
+  roles: {role: string; ref: string; phrase: string; basis: string; status: string}[];
   key_passages: string[];
   testaments: ('old'|'new')[];
 }
@@ -32,7 +33,16 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
     const key_passages = [...passages];
     let label=typeof record.label==='string'&&record.label!==record.name?record.label:'';
     if(label.startsWith(record.name+' (')&&label.endsWith(')'))label=label.slice(record.name.length+2,-1);
-    return [{id: record.id, name: record.name.trim(), identity_context: label || (() => {
+    const roles = Array.isArray(record.roles) ? record.roles : [];
+    const role = roles[0];
+    const kingdom = role?.role === 'king' && /king of ([A-Z][a-z]+)/.exec(role.phrase);
+    const roleLabel = role ? (kingdom ? 'King of ' + kingdom[1] : role.role[0].toUpperCase() + role.role.slice(1)) : '';
+    if (roleLabel) {
+      const sameRole = raw.some(other => other.id !== record.id && other.name === record.name && other.roles?.some(tag => tag.role === role.role && (!kingdom || tag.phrase.includes('king of ' + kingdom[1]))));
+      const parent = [...(record.relations?.father || []), ...(record.relations?.mother || [])].map(relation => records.get(relation.id)?.name).find(Boolean);
+      label = roleLabel + (sameRole && parent ? ', child of ' + parent : '');
+    }
+    return [{roles, id: record.id, name: record.name.trim(), identity_context: label || (() => {
       const parent = [...(record.relations?.father || []), ...(record.relations?.mother || [])].map((relation: {id: string}) => records.get(relation.id)?.name).find(Boolean);
       return parent ? 'child of ' + parent : `${key_passages.length} ${key_passages.length === 1 ? 'passage' : 'passages'}`;
     })(), aliases, summary, key_passages,

@@ -45,10 +45,13 @@ const BibleLensSearch = (() => {
  }
  function personLabel(person,rows){
   if(rows.filter(row=>normalize(row.name)===normalize(person.name)).length<2)return person.name;
-  if(person.label&&person.label!==person.name)return person.label;
+  const role=person.roles?.[0],kingdom=role?.role==='king'&&/king of ([A-Z][a-z]+)/.exec(role.phrase);
+  const roleLabel=role?(kingdom?'King of '+kingdom[1]:role.role[0].toUpperCase()+role.role.slice(1)):'';
+  if(!roleLabel&&person.label&&person.label!==person.name)return person.label;
   const parent=[...(person.relations?.father||[]),...(person.relations?.mother||[])].map(r=>rows.find(p=>p.id===r.id)?.name).find(Boolean);
   const count=person.refs?.length||0;
-  return person.name+' ('+(parent?'child of '+parent:count+' '+(count===1?'passage':'passages'))+')';
+  const sameRole=role&&rows.some(row=>row.id!==person.id&&row.name===person.name&&row.roles?.some(tag=>tag.role===role.role&&(!kingdom||tag.phrase.includes('king of '+kingdom[1]))));
+  return person.name+' ('+(roleLabel?roleLabel+(sameRole&&parent?', child of '+parent:''):parent?'child of '+parent:count+' '+(count===1?'passage':'passages'))+')';
  }
  function catalogSearch(rows,kind,query,curated=[],knownEntities=new Set()){
   const question=entityQuestion(query);if(question?.kind===kind)query=question.name;

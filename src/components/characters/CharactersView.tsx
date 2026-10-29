@@ -50,10 +50,23 @@ function mountCharacters(): void {
   const searchBox = element('div', 'characters-search-box');
   const categories = element('div', 'directory-categories');
   categories.setAttribute('role', 'group'); categories.setAttribute('aria-label', 'People categories');
-  for (const name of ['All', 'Women']) {
-    const button = element('button', '', name); button.type = 'button';
-    button.addEventListener('click', () => { category = name; page = 0; render(); });
-    categories.append(button);
+  const categoryRoles: Record<string,string[]> = {'Kings & Queens':['king','queen'],Judges:['judge'],Prophets:['prophet'],Priests:['priest'],Apostles:['apostle']};
+  const inCategory = (person: DirectoryPerson, name: string): boolean => name === 'All' || (name === 'Women' ? person.sex === 'female' : person.roles.some(tag => categoryRoles[name]?.includes(tag.role)));
+  function renderCategories(): void {
+    const names = ['All','Women',...Object.keys(categoryRoles).filter(name => people.some(person => inCategory(person,name)))];
+    if (categories.childElementCount !== names.length) {
+      categories.replaceChildren(...names.map(name => {
+        const button = element('button'); button.type = 'button'; button.dataset.category = name;
+        button.addEventListener('click', () => { category = name; page = 0; render(); });
+        return button;
+      }));
+    }
+    for (const button of categories.querySelectorAll('button')) {
+      const name = button.dataset.category!;
+      button.textContent = `${name} (${people.filter(person => inCategory(person,name)).length.toLocaleString()})`;
+      button.setAttribute('aria-label', name);
+      button.setAttribute('aria-pressed', String(name === category));
+    }
   }
   const alphabet = element('div', 'directory-alphabet');
   alphabet.setAttribute('role', 'group'); alphabet.setAttribute('aria-label', 'Filter people by first letter');
@@ -75,10 +88,10 @@ function mountCharacters(): void {
   pagination.append(previous, pageLabel, next); host.append(pagination, retry);
   list.tabIndex = -1;
   function render(): void {
-    const candidates = findPeople(search.value, category === 'Women');
+    renderCategories();
+    const candidates = findPeople(search.value).filter(person => inCategory(person,category));
     const initial = (name: string) => name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase();
     const matches = candidates.filter(person => !letter || initial(person.name) === letter);
-    for (const button of categories.querySelectorAll('button')) button.setAttribute('aria-pressed', String(button.textContent === category));
     for (const button of alphabet.querySelectorAll('button')) {
       button.disabled = !candidates.some(person => initial(person.name) === button.textContent);
       button.setAttribute('aria-pressed', String(button.textContent === letter));

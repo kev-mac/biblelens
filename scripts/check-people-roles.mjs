@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {validatePeopleRoles,releasePeopleRoles} from './people-roles.mjs';
+const read = name => JSON.parse(fs.readFileSync(name, 'utf8'));
+const people = read('data/reference/people.json'), books = read('data/books.json'), chapters = read('data/chapters.json');
+console.log('PASS people roles:', validatePeopleRoles(people, books, chapters));
+const changed = mutate => {const rows = structuredClone(people); mutate(rows); return rows;};
+const tagged = rows => rows.find(person => person.roles.length).roles[0];
+for (const mutate of [rows => rows.push(rows[0]), rows => {rows[0].id = '';}, rows => {tagged(rows).role = 'levite';}, rows => {delete tagged(rows).basis;}, rows => {tagged(rows).ref = 'Genesis 999:1';}, rows => {tagged(rows).phrase = 'invented quotation';}]) assert.throws(() => validatePeopleRoles(changed(mutate), books, chapters));
+assert(releasePeopleRoles(people).every(person => person.roles.every(tag => tag.status === 'live')));
+assert.equal(releasePeopleRoles(people, true).flatMap(person => person.roles).length, people.flatMap(person => person.roles).length);
+for (const id of ['amittai_219','azur_569','nebat_2165','remaliah_2420','so_2760','urijah_2899']) assert.equal(people.find(person => person.sourceRecord === id).roles.length, 0);
+for (const [id,role] of [['david_994','king'],['deborah_997','judge'],['james_717','apostle'],['james_718','apostle']]) assert(people.find(person => person.sourceRecord === id).roles.some(tag => tag.role === role));
+assert.equal(people.find(person => person.sourceRecord === 'james_719').roles.length, 0);
+console.log('PASS invalid IDs, refs, quotes, roles, basis, production exclusion and same-name safeguards');

@@ -1,3 +1,5 @@
+import {validatePeopleRoles,releasePeopleRoles} from './people-roles.mjs';
+import {draftPreviewEnabled} from './draft-debates.mjs';
 import {releaseContent,releaseJsonPlugin,releaseReferences,accepted} from './rc1-content.mjs';
 import {splitWorker} from './static-worker.mjs';
 import {b4Content} from './b4-neutral.mjs';
@@ -28,6 +30,7 @@ import {validateWitnesses} from './witness-labels.mjs';
 import {validateSides} from './verse-roles.mjs';
 import fs from 'node:fs';import vm from 'node:vm';import path from 'node:path';
 validateSides(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
+console.log('Validated people roles:',validatePeopleRoles(JSON.parse(fs.readFileSync('data/reference/people.json')),JSON.parse(fs.readFileSync('data/books.json')),JSON.parse(fs.readFileSync('data/chapters.json'))));
 console.log('Validated commandment catalog:',validateCommandmentsCatalog());
 console.log('Validated characters:',validateCharacters());
 console.log('Validated stories:',validateStories(JSON.parse(fs.readFileSync('data/stories.json','utf8')),{
@@ -97,7 +100,7 @@ const decorateChapter=chapter=>{const linked=referenceChapter(chapter);return {.
 const linkedChapters=Object.fromEntries(Object.entries(JSON.parse(fs.readFileSync('data/chapters.json','utf8'))).map(([key,encoded])=>[key,zlib.gzipSync(JSON.stringify(decorateChapter(JSON.parse(zlib.gunzipSync(Buffer.from(encoded,'base64')))))).toString('base64')]));
 let worker=fs.readFileSync('worker/index.mjs','utf8').replace('/*__ACCEPTED_QUESTIONS__*/[]',()=>JSON.stringify(accepted.questions)).replace('/*__SEARCH_CORE__*/',()=>fs.readFileSync('src/search-core.js','utf8')).replace('/*__DEBATES__*/',()=>fs.readFileSync('worker/debates.mjs','utf8').replace("import acceptedRulings from '../data/rc1-rulings.json' with {type:'json'};",()=> 'const acceptedRulings='+fs.readFileSync('data/rc1-rulings.json','utf8')+';').replaceAll('export function','function')).replace('/*__CATEGORIES__*/',()=> 'const CATEGORY_STORIES='+assets['/stories.json'].body+';\nconst CATEGORY_PROPHECIES='+fs.readFileSync('src/data/prophecies.json','utf8')+';\nconst CATEGORY_PERSON_SUMMARIES='+JSON.stringify(categorySummaries)+';\n'+fs.readFileSync('worker/categories.mjs','utf8').replaceAll('export function','function')).replace('/*__SYNC__*/',()=>fs.readFileSync('worker/sync.mjs','utf8').replace('export async function','async function'));for(const [marker,file]of [['BOOKS','data/books.json'],['CHAPTERS','data/chapters.json'],['EVIDENCE','data/evidence.json']])worker=worker.replace(new RegExp('/\\*__'+marker+'__\\*/'+(['BOOKS','EVIDENCE'].includes(marker)?'\\[\\]':'\\{\\}')),marker==='CHAPTERS'?JSON.stringify(linkedChapters):releaseContent(file,b4Content(file)));
 const references=loadReferenceResources();
-const reviewedReferences=releaseReferences(references.people,JSON.parse(assets['/reference/relationships.json'].body));references.people=reviewedReferences.people;
+const reviewedReferences=releaseReferences(references.people,JSON.parse(assets['/reference/relationships.json'].body));reviewedReferences.people=releasePeopleRoles(reviewedReferences.people,draftPreviewEnabled());references.people=reviewedReferences.people;
 for(const name of ['people','relationships'])assets['/reference/'+name+'.json'].body=JSON.stringify(reviewedReferences[name]);
 const answerLayer=fs.readFileSync('worker/answer-layer.mjs','utf8').replace('/*__PEOPLE__*/[]',()=>JSON.stringify(references.people)).replace('/*__TOPICS__*/[]',()=>JSON.stringify(references.topics));
 worker=worker.replace('/*__NETS_LINKS__*/',()=>fs.readFileSync('worker/nets-links.mjs','utf8')).replace('/*__ANSWER_LAYER__*/',()=>answerLayer);
