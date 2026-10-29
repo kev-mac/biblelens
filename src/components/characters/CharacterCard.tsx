@@ -82,6 +82,6 @@ export function PersonContact(profile: CharacterProfile & {roles?: {role:string;
  const copy=element('div','ux-contact-copy');copy.append(element('h2','character-name',profile.name+(profile.identity_context?' ('+profile.identity_context+')':'')));
  const role=profile.roles?.find(tag=>tag.status==='live')?.role;
  const count=(profile.key_passages||profile.narrative_anchors?.key_verses||[]).length;
- copy.append(element('p','ux-contact-subtitle',(role?role[0].toUpperCase()+role.slice(1)+' · ':'')+count+' '+(count===1?'passage':'passages')));
+ copy.append(element('p','ux-contact-subtitle',(role?role[0].toUpperCase()+role.slice(1)+' · ':'')+count+' '+(count===1?'linked verse':'linked verses')));
  open.append(avatar,copy);header.append(open,directorySaveButton('person',profile.id,profile.name));card.append(header);return card;
 }

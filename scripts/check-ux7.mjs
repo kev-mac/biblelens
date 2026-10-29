@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {parsePlaces} from '../src/places-core.js';
+import {regionCoverage,inWindow,usableRegionPoint,regionWindows} from '../src/place-regions.js';
+const people=JSON.parse(fs.readFileSync('data/reference/people.json'));
+for(const [id,count] of Object.entries({moses_2108:774,lot_1830:34,david_994:896,paul_2479:179,jesus_905:1831}))assert.equal(people.find(p=>p.sourceRecord===id).refs.length,count,id);
+for(const p of people)assert.equal(new Set(p.refs.map(ref=>ref.join(':'))).size,p.refs.length,'Duplicate verses: '+p.name);
+const places=[...parsePlaces(JSON.parse(fs.readFileSync('data/reference/places.json'))).values()];
+for(const p of places)assert(regionWindows.filter(r=>inWindow(p,r)).length<=1,'Overlapping assignment');
+assert(usableRegionPoint({coordinates:{latitude:32.7,longitude:35.3},verification:'UNVERIFIED'}));
+for(const flag of [{ambiguous:true},{identificationUncertain:true},{precision:'Unlocated'},{verification:'NOT_IDENTIFIABLE'},{verification:'DISPUTED'}])assert(!usableRegionPoint({coordinates:{latitude:32.7,longitude:35.3},...flag}));
+const point={coordinates:{latitude:32.7,longitude:35.3},verification:'UNVERIFIED'};
+assert(regionCoverage([...Array(70).fill(point),...Array(30).fill({})])[0].shown);
+assert(!regionCoverage([...Array(69).fill(point),...Array(31).fill({})])[0].shown);
+assert(!regionCoverage(Array(14).fill(point))[0].shown);
+assert(regionCoverage(Array(15).fill(point))[0].shown);
+console.log('PASS: full distinct person verses, usable coordinates, disjoint boxes, 70% total gate and 15-place chip gate.');

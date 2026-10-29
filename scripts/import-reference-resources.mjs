@@ -31,6 +31,12 @@ function verseRef(osis) {
   return [bookIds.get(match[1]), Number(match[2]), Number(match[3])];
 }
 const verses = new Map(JSON.parse(versesText).map(v => [v.id, {ref: verseRef(v.fields.osisRef), people: v.fields.people || []}]));
+// Index all distinct verse/person links; profile reference lists must never be samples.
+const personRefs = new Map();
+for (const verse of verses.values()) if (verse.ref) for (const id of verse.people) {
+  if (!personRefs.has(id)) personRefs.set(id, new Map());
+  personRefs.get(id).set(verse.ref.join(':'), verse.ref);
+}
 const verseKeys = new Set([...verses.values()].filter(v => v.ref).map(v => v.ref.join(':')));
 const excludedTopicReferences = [];
 const upstreamPeople = JSON.parse(peopleText);
@@ -48,7 +54,7 @@ const people = upstreamPeople.map(({id, fields: f}) => {
   }
   return {id, name: f.name, label: f.displayTitle || f.name, aliases: [...new Set([f.name, ...(f.alsoCalled || '').split(',')].map(cleanText).filter(Boolean))],
     gender: f.gender || null, status: f.status || 'unknown', ambiguous: Boolean(f.ambiguous),
-    refs: (f.verses || []).map(v => verses.get(v)?.ref).filter(Boolean).slice(0, 16), relations,
+    refs: [...(personRefs.get(id)?.values() || [])], relations,
     source: `https://github.com/robertrouse/theographic-bible-metadata/blob/${revision}/json/people.json`, sourceRecord: f.slug || f.personLookup || id};
 });
 const topics = [];
@@ -82,7 +88,7 @@ const notices = [
   {id: 'theographic', title: 'Theographic Bible Metadata', author: 'Robert Rouse / Viz.Bible and contributors', license: 'CC-BY-SA-4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', source: 'https://github.com/robertrouse/theographic-bible-metadata', attribution: 'Adapted from Theographic Bible Metadata by Robert Rouse / Viz.Bible and contributors, CC BY-SA 4.0. Names, relationships and passage tags also credit STEPBible TIPNR (CC BY 4.0), Marshall Genealogy, and Complete Bible Genealogy, as listed by the upstream bibliography. Changes: field selection, flattened identifiers, limited context references, numeric reference conversion. This adapted people dataset remains CC BY-SA 4.0.'},
   {id: 'nave', title: "Nave’s Topical Bible", author: 'Orville J. Nave', license: 'Public Domain', source: 'https://ccel.org/ccel/nave/bible.html', attribution: 'Topic headings and scripture references from Orville J. Nave, Nave’s Topical Bible (1896/1897), via Christian Classics Ethereal Library XML. CrossWire lists the underlying module as Public Domain. CCEL introductory/editorial text is excluded. Changes: extracted headings, reference deduplication and numeric conversion.'}
 ];
-const provenance = {schema: 1, importedAt: new Date().toISOString(), revision, sources, counts: {people: people.length, topics: topics.length, topicReferences: topics.reduce((n,t)=>n+t.refs.length,0), excludedTopicReferences: excludedTopicReferences.length}, excludedTopicReferences, relationshipReferenceMeaning: 'contextRefs are upstream co-mention tags, not verified proof of a relationship. Father/mother/children links are upstream assertions. No spouse edges are supplied by this upstream schema.', classification: 'Third-party reference aids, separate from Claude research and Scripture Lens annotations.'};
+const provenance = {schema: 1, importedAt: new Date().toISOString(), revision, sources, peopleReferenceMeaning: 'Distinct verse/person links from the complete upstream verse index; includes aliases and interpretive tags, not an exhaustive name search.', counts: {people: people.length, peopleReferences: people.reduce((n,p)=>n+p.refs.length,0), topics: topics.length, topicReferences: topics.reduce((n,t)=>n+t.refs.length,0), excludedTopicReferences: excludedTopicReferences.length}, excludedTopicReferences, relationshipReferenceMeaning: 'contextRefs are upstream co-mention tags, not verified proof of a relationship. Father/mother/children links are upstream assertions. No spouse edges are supplied by this upstream schema.', classification: 'Third-party reference aids, separate from Claude research and Scripture Lens annotations.'};
 await fs.mkdir(output, {recursive:true});
 for (const [name, value] of Object.entries({people, topics, notices, provenance})) await fs.writeFile(output + name + '.json', JSON.stringify(value) + '\n');
 await fs.writeFile(output + 'THEOGRAPHIC-LICENSE.txt', license);

@@ -16,7 +16,7 @@ function placeCard(place, duplicate){
  const card=node('article','character-card place-profile-card');
  const heading=node('h2','character-name',place.name+(duplicate&&place.featureType?' ('+place.featureType+')':''));card.append(heading);
  const open=node('button','ux-place-open','→');open.type='button';open.dataset.placeId=place.id;open.setAttribute('aria-label','Open '+place.name);card.append(open,directorySaveButton('place',place.id,place.name));
- if(place.linkedPassageCount!==null)card.append(node('p','ux-place-count',place.linkedPassageCount+' linked '+(place.linkedPassageCount===1?'passage':'passages')));
+ if(place.linkedPassageCount!==null)card.append(node('p','ux-place-count',place.linkedPassageCount+' linked '+(place.linkedPassageCount===1?'verse':'verses')));
  const description=place.shortDescription;
  if(description&&description.split(/\s+/).length<=15)card.append(node('p','character-summary',description));
  const meta=node('div','ux-place-meta');
@@ -68,7 +68,7 @@ export function mountPlacesDirectory(){
   if(loaded||loading)return;loading=true;failed=false;render();
   try{places=await loadPlaces();loaded=true;
    const shown=regionCoverage([...places.values()]).filter(row=>row.shown);
-   for(const row of [null,...shown]){const button=node('button','',row?.name||'All ('+places.size.toLocaleString()+')');button.type='button';button.setAttribute('aria-label',row?.name||'All');button.setAttribute('aria-pressed',String(row===region));button.onclick=()=>{region=row;page=0;for(const other of regions.children)other.setAttribute('aria-pressed',String(other===button));render();};regions.append(button);}
+   for(const row of [null,...shown]){const button=node('button','',row?row.name+' ('+row.usable.toLocaleString()+')':'All ('+places.size.toLocaleString()+')');button.type='button';button.setAttribute('aria-label',row?.name||'All');button.setAttribute('aria-pressed',String(row===region));button.onclick=()=>{region=row;page=0;for(const other of regions.children)other.setAttribute('aria-pressed',String(other===button));render();};regions.append(button);}
   }catch{failed=true;}
   loading=false;render();
  }
