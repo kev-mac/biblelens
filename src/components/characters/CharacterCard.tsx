@@ -1,7 +1,7 @@
 import {directorySaveButton} from '../../directory-save.js';
 import {ProfileSections} from './ProfileSections';
 export {profileSectionAvailability} from './ProfileSections';
-import { lineageCharacter, isFemaleLineage, characterVerseRoute } from './directory';
+import { characters, lineageCharacter, isFemaleLineage, characterVerseRoute } from './directory';
 import type { CharacterProfile, LinkedStoryAnchor } from '../../types/character';
 
 // Typed DOM components fit the existing reader without adding a second UI runtime.
@@ -85,9 +85,11 @@ export function PersonContact(profile: CharacterProfile & {roles?: {role:string;
  copy.append(element('p','ux-contact-subtitle',(role?role[0].toUpperCase()+role.slice(1)+' · ':'')+count.toLocaleString()+' '+(count===1?'linked verse':'linked verses')));
  open.append(avatar,copy);header.append(open,directorySaveButton('person',profile.id,profile.name));card.append(header);
  if(role)card.prepend(element('span','passage-badge',role[0].toUpperCase()+role.slice(1)));
- const preview=profile.summary?.match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim()||profile.summary;
- if(preview&&preview.split(/\s+/).length<=15)card.append(element('p','character-summary story-summary',preview));
- const footer=element('div','story-footer');
- const meta=element('span','',count.toLocaleString()+' '+(count===1?'linked verse':'linked verses'));
- const action=element('a','action-link','View profile →');action.href=open.href;footer.append(meta,action);card.append(footer);return card;
+ const body=element('div','character-contact-body');
+ const context=element('div','character-profile-context');
+ context.append(element('span','character-era',profile.era),element('span','character-profile-kind',characters.some(person=>person.id===profile.id)?'Curated Profile':'Reference Profile'));
+ body.append(context);
+ if(profile.summary)body.append(element('p','character-profile-biography',profile.summary));
+ body.append(ProfileSections(profile));
+ card.append(body);return card;
 }
