@@ -44,7 +44,7 @@ function mountCharacters(): void {
   label.htmlFor = 'characters-search';
   const search = element('input');
   search.id = 'characters-search'; search.type = 'search';
-  search.placeholder = 'Search names or aliases…';
+  search.placeholder = `Search ${people.length.toLocaleString()} people, names, aliases…`;
   const count = element('p', 'characters-count'); count.setAttribute('role', 'status');
   const list = element('div', 'characters-grid'); list.id = 'characters-list';
   const searchBox = element('div', 'characters-search-box');
@@ -121,7 +121,7 @@ function mountCharacters(): void {
       button.hidden=false;button.title=button.disabled?'No matching people':button.getAttribute('aria-label')!;
       button.setAttribute('aria-pressed', String(button.textContent === letter));
     }
-    search.placeholder = 'Search names or aliases…';
+    search.placeholder = `Search ${people.length.toLocaleString()} people, names, aliases…`;
     page = Math.min(page, Math.max(0, Math.ceil(matches.length / CHARACTER_PAGE_SIZE) - 1));
     list.replaceChildren();
     let section='';

@@ -28,6 +28,11 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
  assert.equal(await page.locator('.story-summary').first().textContent(),catalog[0].stories[0].summary);
  assert.equal(await page.locator('.read-badge').first().innerText(),catalog[0].stories[0].readMinutes+' min read');
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No page overflow');
+ for(const meta of await page.locator('.story-linked-meta').all())assert(await meta.evaluate(n=>n.scrollWidth<=n.clientWidth),'Metadata fits one line within its card');
+ const overflowingMetadata=await page.evaluate(catalog=>{
+  const sample=document.querySelector('.story-linked-meta'),canvas=document.createElement('canvas'),ctx=canvas.getContext('2d');ctx.font=getComputedStyle(sample).font;
+  return catalog.flatMap(group=>group.stories).filter(story=>{const node=document.createElement('div');node.innerHTML=storyCard(story);return ctx.measureText(node.querySelector('.story-linked-meta')?.textContent||'').width>sample.clientWidth;}).map(story=>story.title);
+ },catalog);assert.deepEqual(overflowingMetadata,[],'All 276 story metadata lines fit this viewport');
  for(const selector of ['#stories-filter-open','#stories-chips button','.action-link'])for(const box of await page.locator(selector).evaluateAll(ns=>ns.map(n=>n.getBoundingClientRect().toJSON())))assert(box.width>=44&&box.height>=44,selector);
  await page.locator('#stories-search').fill('Creation');await page.locator('#stories-search-clear').waitFor();const clear=await page.locator('#stories-search-clear').boundingBox();assert(clear.width>=44&&clear.height>=44);await page.locator('#stories-search-clear').click();
  await page.locator('#stories-filter-open').click();await page.locator('#stories-filter-sheet[open]').waitFor();await page.locator('#stories-book').selectOption('Exodus');await page.waitForFunction(()=>document.querySelector('.passage-badge').textContent.startsWith('Exodus'));await page.locator('#stories-reset').click();await page.locator('#stories-filter-close').click();

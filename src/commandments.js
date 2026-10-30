@@ -62,20 +62,29 @@ async function initCommandments() {
  const sheet=document.querySelector('#commandments-filters'),matrix=document.querySelector('#commandments-matrix');
  const search=document.querySelector('#commandments-search'),more=document.querySelector('#commandments-more');
  const filters=Object.fromEntries(Object.keys(COMMANDMENT_FACETS).map(key=>[key,[]]));
- matrix.innerHTML=Object.entries(COMMANDMENT_FACETS).map(([dimension,values])=>`<fieldset><legend>${dimension[0].toUpperCase()+dimension.slice(1)}</legend><div class="commandments-options">${values.map(value=>`<button type="button" class="secondary commandment-facet-toggle" data-commandment-dimension="${dimension}" data-value="${esc(value)}" aria-pressed="false"><span>${esc(value)}</span></button>`).join('')}</div></fieldset>`).join('');
+ matrix.innerHTML=Object.entries(COMMANDMENT_FACETS).map(([dimension,values])=>`<fieldset><legend>${dimension[0].toUpperCase()+dimension.slice(1)}</legend><div class="commandments-options">${values.map(value=>`<button type="button" class="secondary commandment-facet-toggle filter-pill" data-commandment-dimension="${dimension}" data-value="${esc(value)}" aria-pressed="false"><span>${esc(value)}</span></button>`).join('')}</div></fieldset>`).join('');
+ search.placeholder=`Search ${COMMANDMENTS.length} commandments, passages…`;
+ const chips=document.createElement('nav');chips.className='directory-categories filter-carousel';chips.setAttribute('aria-label','Commandment polarity');root.querySelector('.results-line').before(chips);
  let visibleCount=60;
  function render() {
+  chips.replaceChildren(...['All',...new Set(COMMANDMENTS.map(item=>item.taxonomy.polarity))].map(value=>{
+   const button=document.createElement('button');button.type='button';button.className='filter-pill';
+   const selected=value==='All'?!filters.polarity.length:filters.polarity.includes(value);button.classList.toggle('active',selected);button.setAttribute('aria-pressed',String(selected));
+   button.textContent=value+' ('+(value==='All'?COMMANDMENTS.length:COMMANDMENTS.filter(item=>item.taxonomy.polarity===value).length)+')';
+   button.onclick=()=>{filters.polarity=value==='All'?[]:[value];visibleCount=60;render();};return button;
+  }));
   const items=filterCommandments(COMMANDMENTS,filters,search.value).filter(item=>!/^\s*[PN]\d+\s*$/i.test(search.value)||item.code===search.value.trim().toUpperCase());
   document.querySelector('#commandments-list').innerHTML=items.length?items.slice(0,visibleCount).map(commandmentCard).join('')+(items.length>visibleCount?'<button type="button" id="commandments-load-more">Show More</button>':''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
-  document.querySelector('#commandments-count').textContent=`${items.length} of ${COMMANDMENTS.length} commandments${items.length>visibleCount?` · showing 1–${visibleCount}`:''}`;
+  document.querySelector('#commandments-count').textContent=`Showing ${items.length?1:0}–${Math.min(visibleCount,items.length)} of ${items.length} commandments`;
   for(const button of matrix.querySelectorAll('[data-commandment-dimension]')){
    const dimension=button.dataset.commandmentDimension,value=button.dataset.value;
-   button.setAttribute('aria-pressed',String(filters[dimension].includes(value)));
+   button.setAttribute('aria-pressed',String(filters[dimension].includes(value)));button.classList.toggle('active',filters[dimension].includes(value));
    button.disabled=commandmentFacetDisabled(COMMANDMENTS,filters,search.value,dimension,value);
    button.title=`${value} · ${commandmentFacetCount(COMMANDMENTS,filters,search.value,dimension,value)} matching commandments`;
   }
   const count=Object.values(filters).reduce((sum,values)=>sum+values.length,0);
-  more.querySelector('span').textContent=`Filter${count?' ('+count+')':''}`;
+  more.setAttribute('aria-label',`Filter commandments${count?' ('+count+')':''}`);
+  document.querySelector('#commandments-reset').hidden=!count&&!search.value;
   document.querySelector('#commandments-done').textContent=`Show ${items.length} ${items.length===1?'Result':'Results'}`;
  }
  function toggle(dimension,value,enabled) {

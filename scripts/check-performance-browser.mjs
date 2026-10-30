@@ -30,7 +30,7 @@ try{
  await focus.goto(base+'/#discover');await focus.waitForSelector('.ux-topic-row');
  await focus.locator('[data-topic="people"]').focus();await focus.keyboard.press('Enter');
  await focus.waitForSelector('#route-loading');releaseFocus();await focus.waitForSelector('.character-card');
- await focus.waitForFunction(()=>document.activeElement===document.querySelector('.lens-context h1'));
+ await focus.waitForFunction(()=>document.activeElement===document.querySelector('#characters-view .directory-heading'));
  await focus.goBack();await focus.waitForSelector('.ux-topic-row');
  await focus.waitForFunction(()=>document.activeElement===document.querySelector('[data-topic="people"]'));
  await focus.close();

@@ -26,6 +26,9 @@ export function debatePage(records, params) {
  if(!['text','science','history'].includes(mode)||!['all','Q','T','V','commandments'].includes(filter))return null;
  let rows=records.filter(record=>mode==='text'?!['science','history'].includes(record.mode):record.mode===mode);
  if(filter!=='all')rows=rows.filter(record=>filter==='commandments'?record.mode==='commandments':filter==='Q'?record.mode==='questions':(record.tags||[record.tag]).includes(filter));
+ const collectionTotal=rows.length,modeCounts=Object.fromEntries(['text','science','history'].map(key=>[key,records.filter(record=>key==='text'?!['science','history'].includes(record.mode):record.mode===key).length]));
+ const terms=(params.get('q')||'').toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu)||[];
+ rows=rows.filter(record=>terms.every(term=>[record.title||`What does ${record.ref} show?`,record.summary,record.text,record.ref,...(record.refs||[]).map(ref=>typeof ref==='string'?ref:ref.label)].join(' ').toLocaleLowerCase().includes(term)));
  const counts=Object.fromEntries([...new Set(rows.map(record=>record.status))].map(value=>[value,rows.filter(record=>record.status===value).length]));
  if(status!=='all')rows=rows.filter(record=>record.status===status);
  const day=params.get('day');
@@ -37,5 +40,5 @@ export function debatePage(records, params) {
  }
  const ids=params.getAll('id');if(ids.length)rows=rows.filter(record=>ids.includes(record.id));
  const page=Math.max(0,Math.min(Math.floor(Number(params.get('page'))||0),Math.max(0,Math.ceil(rows.length/24)-1)));
- return {records:rows.slice(page*24,page*24+24).map(debateCard), total:rows.length, page, counts};
+ return {records:rows.slice(page*24,page*24+24).map(debateCard), total:rows.length, page, counts, collectionTotal, modeCounts};
 }

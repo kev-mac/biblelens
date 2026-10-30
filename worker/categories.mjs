@@ -53,8 +53,10 @@ export function createCategoryCatalog(evidence,studies,parseRef,readingSources,d
 export function categoryPage(catalog,params){
  const rawBook=params.get('book')??'all',book=rawBook==='all'?-1:Number(rawBook),chapter=Number(params.get('chapter')||0),page=Number(params.get('page')||0),limit=Number(params.get('limit')??24),kind=params.get('kind')||'all',theme=params.get('theme')||'all',type=params.get('type')||'all';
  if(!Number.isInteger(book)||book < -1||book>65||!Number.isInteger(chapter)||chapter<0||chapter>150||!Number.isInteger(page)||page<0||page>100000||!Number.isInteger(limit)||limit<0||limit>24||!['all',...categoryOrder].includes(kind))return null;
+ const terms=(params.get('q')||'').toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu)||[];
  const counts=Object.fromEntries(categoryOrder.map(key=>[key,0])),matches=[];
  for(const record of catalog){
+  if(!terms.every(term=>[record.title,record.summary,record.ref,...(record.refs||[]).map(ref=>typeof ref==='string'?ref:ref.label)].join(' ').toLocaleLowerCase().includes(term)))continue;
   if(record.mode==='commandments'&&(theme!=='all'&&record.theme!==theme||type!=='all'&&record.commandmentType!==type))continue;
   const placements=record.placements.filter(p=>(book===-1||p.book===book)&&(!chapter||p.chapter===chapter));
   if(!placements.length)continue;

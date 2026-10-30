@@ -11,10 +11,12 @@ const marker='<img src=x onerror="globalThis.__securityExecuted=1">';
 const attribute='" autofocus onfocus="globalThis.__securityExecuted=1" data-probe="';
 const text='</textarea>'+marker+'&"\'';
 const brokenChapter='1&extra='+marker;
+// Valid coordinates keep hostile text at the rendering sinks after normalization;
+// malformed coordinate rows independently exercise rejection and escaping.
 const data={
- passageNotes:{p:{book:attribute,chapter:marker,name:text,title:text,text},'NaN:NaN':{book:attribute,chapter:marker,name:text,title:text,text}},
+ passageNotes:{'0:1':{book:0,chapter:1,name:'Genesis',title:text,text},p:{book:attribute,chapter:marker,name:text,title:text,text},'NaN:NaN':{book:attribute,chapter:marker,name:text,title:text,text}},
  passageBookmarks:{p:{book:0,chapter:marker,name:text}},
- verseNotes:{v:{book:0,chapter:1,verse:marker,name:text,title:text,text}},
+ verseNotes:{'0:1:1':{book:0,chapter:1,verse:1,name:'Genesis',title:text,text},v:{book:0,chapter:1,verse:marker,name:text,title:text,text}},
  verseBookmarks:{v:{book:0,chapter:1,verse:marker,name:text},'0:1:1':{book:0,chapter:1,verse:1,name:'Genesis',highlights:[
   {edition:attribute,start:0,end:2,text:'In',color:'yellow'},
   {edition:'kjv',start:0,end:2,text:'In',color:'yellow'}]}},
@@ -59,7 +61,7 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
   assert.equal((await fixture.call('/document',{method:'PUT',token:device.token,body:{revision:0,data}})).status,200);
   const server=await serverFor(platform,fixture,withoutCsp),context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage(),errors=[];
   const consoleErrors=[];page.on('console',message=>{if(message.type()==='error')consoleErrors.push(message.text());});
-  page.on('pageerror',error=>errors.push(error.message));
+  page.on('pageerror',error=>{errors.push(error.stack||error.message);console.error(error.stack||error.message);});
   // No real cloud account, map service or third party is contacted.
   await page.route('https://**/*',route=>route.fulfill({status:200,contentType:'application/json',headers:{'access-control-allow-origin':'*'},body:JSON.stringify({fixture:true})}));
   // The browser-hosted native bundle intentionally blocks same-origin sync.
@@ -88,16 +90,18 @@ for(const [name,engine]of [['Chromium',chromium],['WebKit',webkit]]){
    await page.waitForFunction(()=>!document.documentElement.classList.contains('bl-starting')&&typeof reading!=='undefined'&&reading?.verses?.length&&state.investigations?.coordinates,{},{timeout:60000});
    await page.waitForFunction(()=>document.querySelector('[data-sync-status]')?.textContent.includes('Synced'));
    assert.equal(await page.evaluate(()=>state.notes.seen),'Keep my offline note');
-   assert.equal(await page.evaluate(()=>state.verseBookmarks['0:1:1'].highlights[0].edition),attribute,'Malicious edition must arrive through sync');
+   assert.deepEqual(await page.evaluate(()=>normalizeTextHighlights(state.verseBookmarks['0:1:1'].highlights).map(h=>h.edition)),['kjv'],'Highlight normalization must discard the unsafe edition and preserve KJV');
    await page.evaluate(()=>renderPassageSaved());
    assert.equal(await page.locator('#saved-passages [data-marked-verse-text="0/1/1"]').first().getAttribute('data-marked-edition'),'kjv','Valid highlights must survive edition validation');
    // Exercise escaping independently of the edition allowlist, so relaxing that
    // validator in the future cannot silently reopen this attribute sink.
-   await page.evaluate(()=>{
+   await page.evaluate(attribute=>{
+    const original=state.verseBookmarks['0:1:1'].highlights;
+    state.verseBookmarks['0:1:1'].highlights=[{...original[0],edition:attribute}];
     const normalize=normalizeTextHighlights,probe=document.createElement('div');probe.id='security-edition-probe';
-    try{normalizeTextHighlights=value=>value;probe.innerHTML=bookmarkVerseTextHtml(0,1,1);}finally{normalizeTextHighlights=normalize;}
+    try{normalizeTextHighlights=value=>value;probe.innerHTML=bookmarkVerseTextHtml(0,1,1);}finally{normalizeTextHighlights=normalize;state.verseBookmarks['0:1:1'].highlights=original;}
     document.body.append(probe);
-   });
+   },attribute);
    await inert(page,'#security-edition-probe');
    assert.equal(await page.locator('#security-edition-probe [data-marked-edition]').first().getAttribute('data-marked-edition'),attribute);
    await page.locator('#security-edition-probe').evaluate(node=>node.remove());

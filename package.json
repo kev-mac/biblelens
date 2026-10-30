@@ -32,6 +32,7 @@
     "check:ux1": "node scripts/check-ux1-browser.mjs",
     "check:ux1b": "node scripts/check-ux1b-browser.mjs",
     "check:people-roles": "node scripts/check-people-roles.mjs",
+    "check:ux11b": "node scripts/check-ux11-directories.mjs",
     "check:ux10": "node scripts/check-ux10.mjs && node scripts/check-ux10-browser.mjs"
   },
   "devDependencies": {

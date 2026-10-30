@@ -19,7 +19,12 @@ export async function smokeSearch(page, {timeout = 90000, attempts = 2} = {}) {
       if (new URL(response.url()).pathname !== '/api/search') return;
       pending.push((async () => {
         try {
-          const text = await response.text();
+          // Playwright can leave a cancelled duplicate response body pending after
+          // navigation. Bound that read; it cannot count as a successful probe.
+          let bodyTimer;
+          let text;
+          try { text = await Promise.race([response.text(), new Promise((_, reject) => { bodyTimer = setTimeout(() => reject(new Error('Search response body timed out')), 10000); })]); }
+          finally { clearTimeout(bodyTimer); }
           const headers = await response.allHeaders();
           if (!response.ok()) {
             requests.push({status: response.status(), ms: Date.now() - started,

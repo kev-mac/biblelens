@@ -83,5 +83,11 @@ export function PersonContact(profile: CharacterProfile & {roles?: {role:string;
  const role=profile.roles?.find(tag=>tag.status==='live')?.role;
  const count=(profile.key_passages||profile.narrative_anchors?.key_verses||[]).length;
  copy.append(element('p','ux-contact-subtitle',(role?role[0].toUpperCase()+role.slice(1)+' · ':'')+count+' '+(count===1?'linked verse':'linked verses')));
- open.append(avatar,copy);header.append(open,directorySaveButton('person',profile.id,profile.name));card.append(header);return card;
+ open.append(avatar,copy);header.append(open,directorySaveButton('person',profile.id,profile.name));card.append(header);
+ if(role)card.prepend(element('span','passage-badge',role[0].toUpperCase()+role.slice(1)));
+ const preview=profile.summary?.match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim()||profile.summary;
+ if(preview&&preview.split(/\s+/).length<=15)card.append(element('p','character-summary story-summary',preview));
+ const footer=element('div','story-footer');
+ const meta=element('span','',count+' '+(count===1?'linked verse':'linked verses'));
+ const action=element('a','action-link','View profile →');action.href=open.href;footer.append(meta,action);card.append(footer);return card;
 }

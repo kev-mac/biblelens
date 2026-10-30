@@ -1,7 +1,7 @@
 'use strict';
 // Fetch at most 24 public records for one open category. Notes stay on-device.
 const categoryPages=new Map();
-let categoryRequest=0,categoryScope='';
+let categoryRequest=0,categoryScope='',categorySearch='';
 function categoryPersonalItems({book=markedBookSelection,chapter=markedChapterSelection,bookmarksOnly=false}={}){
  const inScope=item=>(book===-1||item.book===book)&&(!chapter||item.chapter===chapter);
  const verses=Object.values({...state.verseBookmarks,...(bookmarksOnly?{}:state.verseNotes)}).filter(inScope).map(item=>({kind:'verse',item}));
@@ -24,7 +24,7 @@ function categoryPersonalProfile(kind,item){
  const icon=paths=>`<span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths}</svg></span>`;
  return `<article class="marked-bookmark category-personal-profile" data-tone="bookmark"><h3>${esc(note.title||reference)}</h3>${note.title?`<p class="character-aliases">${esc(reference)}</p>`:''}${kind==='verse'?bookmarkVerseTextHtml(item.book,item.chapter,item.verse):study?`<p>${esc(item.summary||'')}</p>`:''}<div class="person-section-controls" role="group" aria-label="${esc(reference)} saved passage sections"><button type="button" class="person-section-toggle" ${study?`data-open="${esc(item.id)}"`:`data-read="${esc(ref)}"`} aria-label="Read ${esc(reference)}">${icon('<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/>')}<span class="person-section-label">Read</span></button><button type="button" class="person-section-toggle" data-personal-section aria-controls="${esc(id)}-note" id="${esc(id)}-note-toggle" aria-expanded="false" ${hasNote?'':'disabled'}>${icon('<path d="M4 3h16v18H4zM8 8h8m-8 4h8m-8 4h5"/>')}<span class="person-section-label">Note</span></button></div><section class="person-section-panel" id="${esc(id)}-note" aria-labelledby="${esc(id)}-note-toggle" hidden><h4>Note</h4>${note.text?`<p class="passage-saved-note">${esc(note.text)}</p>`:''}${study?'':noteActionButtons(ref)}</section></article>`;
 }
-function categoryQuery(kind,page=0,limit=24){return new URLSearchParams({book:markedBookSelection===-1?'all':String(markedBookSelection),chapter:String(markedChapterSelection),kind,page:String(page),limit:String(limit),theme:markedTheme,type:markedCommandmentType});}
+function categoryQuery(kind,page=0,limit=24){return new URLSearchParams({book:markedBookSelection===-1?'all':String(markedBookSelection),chapter:String(markedChapterSelection),kind,page:String(page),limit:String(limit),theme:markedTheme,type:markedCommandmentType,q:categorySearch});}
 function categoryRoute(){
  const match=/^#evidence\/([^?]+)(?:\?(.*))?$/.exec(location.hash);
  return match&&MARKED_CATEGORIES.some(([key])=>key===match[1]&&key!=='all')?{key:match[1],params:new URLSearchParams(match[2]||'')}:null;
@@ -43,13 +43,15 @@ async function renderPagedCategories(){
   const params=route?.params||new URLSearchParams(location.hash.split('?')[1]||'');
   if(params.has('book')){const book=params.get('book')==='all'?-1:Number(params.get('book'));if(Number.isInteger(book)&&book>=-1&&book<books.length)markedBookSelection=book;}
   if(params.has('chapter')){const chapter=Number(params.get('chapter'));if(Number.isInteger(chapter)&&chapter>=0&&chapter<=(books[markedBookSelection]?.chapters||0))markedChapterSelection=chapter;}
+  if(params.has('q'))categorySearch=params.get('q');
+  const searchInput=document.getElementById('directory-evidence-search');if(searchInput)searchInput.value=categorySearch;
   if(params.has('theme'))markedTheme=params.get('theme');
   if(params.has('type')&&['all','moral','civil','ritual'].includes(params.get('type')))markedCommandmentType=params.get('type');
   if(route)markedKind=route.key;
   else if(params.has('kind')&&MARKED_CATEGORIES.some(([key])=>key===params.get('kind')))markedKind=params.get('kind');
   else if(!location.hash.includes('?'))markedKind='all';
   if(markedBookSelection===null)markedBookSelection=readingBook;
-  const scope=JSON.stringify([markedBookSelection,markedChapterSelection,markedKind,markedTheme,markedCommandmentType]);if(scope!==categoryScope){categoryPages.clear();categoryScope=scope;}
+  const scope=JSON.stringify([markedBookSelection,markedChapterSelection,markedKind,markedTheme,markedCommandmentType,categorySearch]);if(scope!==categoryScope){categoryPages.clear();categoryScope=scope;}
   $('#categories-heading').textContent=route?MARKED_CATEGORIES.find(([key])=>key===route.key)[1]:'Evidence';
   renderMarkedContext();$('#saved-cards').hidden=true;box.innerHTML='<p role="status">Loading evidence…</p>';
   const response=await fetch('/api/categories?'+categoryQuery('all',0,0));if(!response.ok)throw Error();
@@ -64,6 +66,10 @@ async function renderPagedCategories(){
    box.onclick=null;return;
   }
   const key=route.key;
+  const search=document.getElementById('directory-evidence-search');if(search)search.placeholder=`Search ${counts[key]||0} records, titles, references…`;
+  let chips=document.getElementById('evidence-directory-chips');
+  if(!chips){chips=document.createElement('nav');chips.id='evidence-directory-chips';chips.className='filter-carousel';chips.setAttribute('aria-label','Evidence collections');document.querySelector('#saved-passages').before(chips);}
+  chips.innerHTML=MARKED_CATEGORIES.filter(([kind])=>['T','V','Q','academic','contradictions'].includes(kind)).map(([kind,label])=>`<a class="filter-pill${key===kind?' active':''}" href="${esc(categoryLocation(kind))}">${esc(label)} (${counts[kind]||0})</a>`).join('');
   box.innerHTML='<div class="marked-category-content" aria-live="polite"></div>';
   const content=box.querySelector('.marked-category-content');
   async function fill(page){
@@ -80,7 +86,7 @@ async function renderPagedCategories(){
     if(token!==categoryRequest||generation!==markedWorkspaceGeneration||view!=='evidence')return;
     categoryPages.set(key,current);
     const pages=Math.ceil(total/24),label=MARKED_CATEGORIES.find(([kind])=>kind===key)[1];
-    content.innerHTML=`<p class="category-results" role="status">${total?current*24+1:0}–${Math.min((current+1)*24,total)} of ${total} results</p>`+(records.length?records.map(record=>key==='bookmark'?categoryPersonalCard(record,true):['stories','characters','prophecies'].includes(key)?categoryDirectoryCard(record,key):markedSummary(record,key)).join(''):'<p class="marked-empty">No results for these filters.</p>')+(pages>1?`<nav class="category-pagination" aria-label="${label} results"><button type="button" data-category-offset="-1" ${current===0?'disabled':''}>← Previous</button><span role="status">${current+1} / ${pages}</span><button type="button" data-category-offset="1" ${current+1>=pages?'disabled':''}>Next →</button></nav>`:'');
+    content.innerHTML=`<p class="category-results" role="status">Showing ${total?current*24+1:0}–${Math.min((current+1)*24,total)} of ${total} results</p>`+(records.length?records.map(record=>key==='bookmark'?categoryPersonalCard(record,true):['stories','characters','prophecies'].includes(key)?categoryDirectoryCard(record,key):markedSummary(record,key)).join(''):'<p class="marked-empty">No results for these filters.</p>')+(pages>1?`<nav class="category-pagination" aria-label="${label} results"><button type="button" data-category-offset="-1" ${current===0?'disabled':''}>← Previous</button><span role="status">${current+1} / ${pages}</span><button type="button" data-category-offset="1" ${current+1>=pages?'disabled':''}>Next →</button></nav>`:'');
     hydrateMarkedVerseTexts(++markedRenderGeneration);requestAnimationFrame(fitContextCitations);
    }catch{if(token===categoryRequest)content.innerHTML='<p>Results could not load. <button type="button" data-category-retry>Retry</button></p>';}
   }
@@ -133,3 +139,5 @@ window.addEventListener('viewchange',event=>{if(event.detail==='bookmarks')void 
 const renderPassagesBeforeBookmarks=renderPassageSaved;
 renderPassageSaved=function(){renderPassagesBeforeBookmarks();if(view==='bookmarks')void renderBookmarks();};
 if(view==='bookmarks')void renderBookmarks();
+
+document.addEventListener('input',event=>{if(event.target.id!=='directory-evidence-search')return;categorySearch=event.target.value;categoryPages.clear();const route=categoryRoute();if(route){route.params.set('q',categorySearch);history.replaceState(null,'','#evidence/'+route.key+'?'+route.params);}renderPagedCategories();});

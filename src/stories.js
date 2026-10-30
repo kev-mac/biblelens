@@ -22,9 +22,12 @@ function storyCard(story, pivot=false){
  const passage=reference?`<button type="button" class="story-passage" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.passage)} starting at verse ${reference.verse}">${esc(story.passage)}</button>`:`<span>${esc(story.passage)}</span>`;
  const id=(pivot?'topic-story-':'story-')+storySlug(story.title);
  const counts=story.linkedCounts||{};
- const meta=[[counts.crossReferences,'cross-reference'],[counts.science,'science note'],[counts.history,'history note'],[counts.text,'text note']].filter(([n])=>n>0).map(([n,label])=>`${n} ${label}${n===1?'':'s'}`).join(' • ');
+ const parts=[[counts.crossReferences,'cross-reference'],[counts.science,'science note'],[counts.history,'history note'],[counts.text,'text note']].filter(([n])=>n>0);
+ const label=([n,text])=>`${n} ${text}${n===1?'':'s'}`,fullMeta=parts.map(label).join(' • ');
+ const ranked=[...parts].sort((a,b)=>b[0]-a[0]);
+ const meta=parts.length>2?ranked.slice(0,2).map(label).join(' • ')+` • +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:fullMeta;
  const context=reference?` data-story-book="${reference.book}" data-story-chapter="${reference.chapter}" data-story-verse="${reference.verse}" data-story-end-chapter="${reference.endChapter}" data-story-end-verse="${reference.endVerse}"`:'';
- return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(story.passage.replace(/\s*[-–]\s*/g,' – '))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title)}</h${pivot?3:2}><div class="story-summary">${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div><div class="story-footer">${meta?`<span class="story-linked-meta">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story →</button></div></article>`;
+ return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(story.passage.replace(/\s*[-–]\s*/g,' – '))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title)}</h${pivot?3:2}><div class="story-summary">${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div><div class="story-footer">${meta?`<span class="story-linked-meta" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story →</button></div></article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;

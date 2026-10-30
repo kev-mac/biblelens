@@ -16,7 +16,7 @@ const node=(tag,className,text)=>{const el=document.createElement(tag);el.classN
 function placeCard(place, duplicate){
  const card=node('article','character-card place-profile-card');
  const heading=node('h2','character-name',place.name+(duplicate&&(place.region||place.refs?.[0])?' ('+(place.region||(books[place.refs[0][0]].code+' '+place.refs[0][1]+':'+place.refs[0][2]))+')':''));card.append(heading);
- const open=node('button','ux-place-open','→');open.type='button';open.dataset.placeId=place.id;open.setAttribute('aria-label','Open '+place.name);card.append(open,directorySaveButton('place',place.id,place.name));
+ const open=node('button','ux-place-open place-map-action','View place →');open.type='button';open.dataset.placeId=place.id;open.setAttribute('aria-label','Open '+place.name);card.append(directorySaveButton('place',place.id,place.name));
  if(place.linkedPassageCount!==null)card.append(node('p','ux-place-count',place.linkedPassageCount+' linked '+(place.linkedPassageCount===1?'verse':'verses')));
  if(place.refs?.length){const links=node('div','directory-references');for(const [book,chapter,verse] of place.refs.slice(0,2)){const link=node('a','directory-reference',books[book].name+' '+chapter+':'+verse);link.href='#read/'+book+'/'+chapter+'/'+verse;links.append(link);}card.append(links);}
  const description=place.shortDescription;
@@ -29,7 +29,7 @@ function placeCard(place, duplicate){
  const figure=node('div','place-map-actions');
  const map=node('button','place-map-action','View on Map');map.type='button';map.dataset.placeId=place.id;map.disabled=!place.coordinates;map.setAttribute('aria-label','View on Map: '+place.name+' in the atlas');
  const source=node('button','place-map-action place-map-source','Sources');source.type='button';source.setAttribute('aria-label','Sources and location details for '+place.name);
- figure.append(map,source);card.append(figure);
+ figure.append(open,map,source);card.append(figure);
  const panel=node('section','place-location-details');panel.setAttribute('aria-label',place.name+' location details');
  panel.append(node('h3','','Location Details'));
  const fullDescription=atlasDescription(place);
@@ -57,7 +57,8 @@ export function mountPlacesDirectory(){
  let region=null,places=new Map(),page=0,loaded=false,loading=false,failed=false;
  function render(){
   const matches=searchPlaces(places,search.value).filter(place=>!region||usableRegionPoint(place)&&inWindow(place,region)),pages=Math.ceil(matches.length/15);page=Math.min(page,Math.max(0,pages-1));
-  count.className=loading?'loading-state':failed?'':'sr-only';
+  count.className=loading?'loading-state':'directory-results';
+  search.placeholder=`Search ${searchPlaces(places).length.toLocaleString()} places, names, aliases…`;
   count.textContent=loading?'Loading places…':failed?'Places could not be loaded.':`${matches.length?page*15+1:0}–${Math.min((page+1)*15,matches.length)} of ${matches.length} ${matches.length===1?'place':'places'}`;
   list.replaceChildren();list.setAttribute('aria-busy',String(loading));
   for(const place of matches.slice(page*15,(page+1)*15)){

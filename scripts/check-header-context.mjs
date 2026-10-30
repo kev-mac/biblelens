@@ -19,7 +19,7 @@ console.log('PASS: reader header follows title/description visibility, returns t
 
 // Category cards must keep their icons after the legacy header is removed.
 const html=fs.readFileSync('src/index.html','utf8');
-assert.equal((html.match(/<header\b/g)||[]).length,1,'Only the live masthead remains');
+assert.equal((html.match(/<header\b/g)||[]).length,2,'The live masthead and dedicated Stories collection header remain');
 assert(!html.includes('id="reader-picker"'),'No hidden Settings proxy remains');
 const template=/<template id="navigation-icons">([\s\S]*?)<\/template>/.exec(html)?.[1];
 assert(template,'The live masthead hosts inert navigation icons');
@@ -31,4 +31,4 @@ const iconContext=vm.createContext({document:{querySelector(selector){
 const reader=fs.readFileSync('src/reader.js','utf8');
 vm.runInContext(reader.slice(reader.indexOf('function categoryIcon('),reader.indexOf('function comparisonIcon(')),iconContext);
 for(const key of ['stories','characters','prophecies'])assert.match(iconContext.categoryIcon(key),/^<svg[\s\S]*<\/svg>$/);
-console.log('PASS: one live masthead, direct Settings trigger and retained category icons.');
+console.log('PASS: live masthead and collection header, direct Settings trigger and retained category icons.');

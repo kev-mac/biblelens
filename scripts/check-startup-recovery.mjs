@@ -7,11 +7,11 @@ const html=fs.readFileSync('src/index.html','utf8');
 const bootstrap=html.match(/<script>\s*([\s\S]*?)<\/script>/)?.[1];
 assert(bootstrap?.includes('bl-starting'),'The real early startup bootstrap must be present');
 
-function browser({bundled=true,mounted=true}={}){
+function browser({bundled=true,mounted=true,childrenReady=true}={}){
  const classes=new Set(),nodes=new Map(),documentListeners=new Map(),windowListeners=new Map(),timers=new Map();
  let now=0,nextTimer=0,reloads=0,storageTouches=0;
  const title={textContent:'Opening BibleLens'},copy={textContent:'Preparing your reading room.'},retry={hidden:true,onclick:null};
- const panel={id:'biblelens-startup',querySelector:selector=>selector==='[data-startup-title]'?title:selector==='[data-startup-copy]'?copy:selector==='button'?retry:null};
+ const panel={id:'biblelens-startup',querySelector:selector=>!childrenReady?null:selector==='[data-startup-title]'?title:selector==='[data-startup-copy]'?copy:selector==='button'?retry:null};
  const styles={id:'biblelens-app-styles',sheet:null},script={id:'biblelens-app-script',dataset:{}};
  if(bundled){nodes.set(styles.id,styles);nodes.set(script.id,script);}
  if(mounted)nodes.set(panel.id,panel);
@@ -35,7 +35,7 @@ function browser({bundled=true,mounted=true}={}){
   now=until;
  }
  function completeResources({events=true}={}){styles.sheet={};script.dataset.biblelensReady='true';if(events){emit('load',{target:styles});emit('load',{target:script});}}
- return {styles,script,title,copy,retry,document,documentListeners,location,emit,emitWindow,tick,completeResources,mount:()=>nodes.set(panel.id,panel),get starting(){return classes.has('bl-starting');},get reloads(){return reloads;},get storageTouches(){return storageTouches;},get pendingTimers(){return timers.size;}};
+ return {styles,script,title,copy,retry,document,documentListeners,location,emit,emitWindow,tick,completeResources,mount:()=>nodes.set(panel.id,panel),finishPanel:()=>{childrenReady=true;},get starting(){return classes.has('bl-starting');},get reloads(){return reloads;},get storageTouches(){return storageTouches;},get pendingTimers(){return timers.size;}};
 }
 
 const normal=browser();assert(normal.starting);
@@ -47,6 +47,7 @@ const cached=browser();cached.completeResources({events:false});cached.emit('DOM
 assert(!cached.starting,'Completed CSS and bundle sentinel recover even if every resource load event was missed');
 const early=browser({mounted:false});early.completeResources();early.mount();early.emit('DOMContentLoaded');early.tick(0);
 assert(!early.starting,'Resources completed before the body recovery panel exists are recognized later');
+const parsingPanel=browser({childrenReady:false});parsingPanel.completeResources();parsingPanel.finishPanel();parsingPanel.emit('DOMContentLoaded');parsingPanel.tick(0);assert(!parsingPanel.starting,'Resource events during partial recovery-panel parsing cannot mark startup as failed');
 console.log('PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.');
 
 for(const missing of ['stylesheet','script']){

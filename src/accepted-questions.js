@@ -8,13 +8,27 @@
  const readings=row=>row.readings.map((reading,index)=>`<section><h3>${index===0?'A':'B'} · ${esc(reading.label)}</h3><p>${esc(reading.summary)}</p></section>`).join('');
  const labels=row=>row.labels.map(label=>`<span class="phase2-verdict">${esc(uiTitleCase(label))}</span>`).join('');
  const order=['B25','B17','B16','B01','B26','B18','B08','B02','B27','B19','B13','B03','B28','B20','B14','B04','B29','B21','B09','B05','B30','B22','B10','B06','B23','B11','B07','B24','B12','B15'];
- const card=row=>`<a class="phase2-debate-card" href="${href(row)}"><span class="phase2-eyebrow">${esc(row.side_a[0]?.ref||row.side_b[0]?.ref||'Passages')}</span><h2>${esc(row.question)}</h2><div>${labels(row)}<span aria-hidden="true"> →</span></div></a>`;
+ const card=row=>`<a class="phase2-debate-card" href="${href(row)}"><div class="story-top-row"><span class="passage-badge">${esc(row.side_a[0]?.ref||row.side_b[0]?.ref||'Passages')}</span></div><h2 class="story-title">${esc(row.question)}</h2><div class="story-footer"><span class="phase2-verdict">${esc(row.labels.map(uiTitleCase).join(' • '))}</span><span class="action-link">View question →</span></div></a>`;
  async function list(host){
-  const token=++version;current=null;setView('debates',false);
-  host.innerHTML='<h1 tabindex="-1">Big Questions</h1><nav class="ux-interior-chips" aria-label="Question collections"><a class="lens-button" href="#questions" aria-current="page">All questions</a><a class="lens-button" href="#questions?mode=text">Text Comparisons</a><a class="lens-button" href="#discover?section=evidence">Evidence</a></nav><div class="accepted-questions phase2-debate-grid" role="status">Loading questions…</div>';
-  try{const rows=await load();if(token!==version)return;const slot=host.querySelector('.accepted-questions');slot.removeAttribute('role');slot.innerHTML=order.map(id=>rows.find(r=>r.decisionId===id)).filter(Boolean).map(card).join('');restoreNavigation();}
-  catch{host.innerHTML='<h1>Big Questions</h1><p>Questions could not load.</p><a class="lens-button" href="#questions">Try again</a>';}
+  const token=++version;current=null;setView('debates',false);delete host.dataset.directoryMounted;
+  host.innerHTML='<div class="page-heading"><h1 tabindex="-1">Big Questions</h1><button data-accepted-filters type="button" aria-label="Filter questions" aria-haspopup="dialog" aria-controls="accepted-question-filters">Filters</button></div><div class="characters-search-box"><input id="accepted-search" type="search" aria-label="Search questions" placeholder="Search questions, passages…"></div><nav class="directory-categories" aria-label="Question labels"></nav><p class="directory-results" role="status"></p><div class="accepted-questions phase2-debate-grid" role="status">Loading questions…</div>';
+  try{
+   const rows=await load();if(token!==version)return;const ordered=order.map(id=>rows.find(r=>r.decisionId===id)).filter(Boolean),slot=host.querySelector('.accepted-questions'),search=host.querySelector('input'),chips=host.querySelector('.directory-categories'),count=host.querySelector('.directory-results');slot.removeAttribute('role');let selected='';
+   search.placeholder=`Search ${ordered.length} questions, passages…`;
+   const options=['',...new Set(ordered.flatMap(row=>row.labels))];
+   let sheet=document.getElementById('accepted-question-filters');if(!sheet){sheet=document.createElement('dialog');sheet.id='accepted-question-filters';sheet.setAttribute('aria-label','Filter Questions');sheet.className='stories-filter-sheet';sheet.dataset.directorySection='evidence';document.body.append(sheet);}
+   sheet.innerHTML='<div class="stories-sheet-heading"><h2>Filter Questions</h2><button type="button" aria-label="Close question filters">×</button></div><div class="directory-categories"></div><nav class="ux-study-links" aria-label="Question collections"><a class="lens-button" href="#questions">All questions</a><a class="lens-button" href="#questions?mode=text">Text Comparisons</a><a class="lens-button" href="#discover?section=evidence">Evidence</a></nav>';
+   sheet.querySelector('button').onclick=()=>sheet.close();sheet.querySelectorAll('a').forEach(link=>link.onclick=()=>sheet.close());
+   host.querySelector('[data-accepted-filters]').onclick=()=>sheet.showModal();
+   function render(){
+    const terms=search.value.toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu)||[],matches=ordered.filter(row=>(!selected||row.labels.includes(selected))&&terms.every(term=>[row.question,...row.labels,...row.side_a.map(s=>s.ref),...row.side_b.map(s=>s.ref)].join(' ').toLocaleLowerCase().includes(term)));
+    count.textContent=`Showing ${matches.length?1:0}–${matches.length} of ${matches.length} questions`;slot.innerHTML=matches.map(card).join('')||'<p>No questions match these filters.</p>';
+    for(const target of [chips,sheet.querySelector('.directory-categories')]){target.replaceChildren(...options.map(value=>{const button=document.createElement('button');button.type='button';button.className='filter-pill'+(selected===value?' active':'');button.setAttribute('aria-pressed',String(selected===value));button.textContent=(value?uiTitleCase(value):'All questions')+' ('+(value?ordered.filter(row=>row.labels.includes(value)).length:ordered.length)+')';button.onclick=()=>{selected=value;render();};return button;}));}
+   }
+   search.oninput=render;render();restoreNavigation();
+  }catch{host.innerHTML='<h1>Big Questions</h1><p>Questions could not load.</p><a class="lens-button" href="#questions">Try again</a>';}
  }
+
  function controls(){if(!current)return;const value=store.read(current.id);const button=document.querySelector('[data-accepted-save]');if(button){button.setAttribute('aria-pressed',String(value.saved));button.textContent=value.saved?'Saved':'Save';}}
  async function detail(id){
   const token=version;setView('debate',false);const host=document.getElementById('debate-view');host.innerHTML='<p>Loading selected question…</p>';

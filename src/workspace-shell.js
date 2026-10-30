@@ -136,3 +136,72 @@
  }}
  new MutationObserver(enhance).observe(document.body,{childList:true,subtree:true});window.addEventListener('hashchange',enhance);enhance();
 })();
+
+// The directory canvas uses the Stories components; collection modules keep
+// ownership of their records, search, filters and pagination.
+(()=>{
+ const icon='<svg class="header-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg>';
+ const searchIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4-4"/></svg>';
+ const filterIcon='<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 14h16M4 21h16"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="14" r="2"/></svg></span>';
+ function prepareSearchBox(box){
+  box.classList.add('stories-search-box');box.insertAdjacentHTML('afterbegin',searchIcon);const input=box.querySelector('input');input.classList.add('directory-search');
+  const clear=document.createElement('button');clear.type='button';clear.className='directory-search-clear';clear.setAttribute('aria-label','Clear Search');clear.textContent='×';clear.hidden=!input.value;
+  input.addEventListener('input',()=>{clear.hidden=!input.value;});clear.onclick=()=>{input.value='';input.dispatchEvent(new Event('input',{bubbles:true}));input.focus();};box.append(clear);
+ }
+ function mount(id,section){
+  const host=document.getElementById(id),heading=host?.querySelector('.page-heading h1');
+  if(!heading||host.dataset.directoryMounted)return;
+  host.dataset.directoryMounted='true';host.dataset.directorySection=section;host.classList.add('directory-hub');
+  const oldHeading=heading.closest('.page-heading'),header=document.createElement('header');header.className='stories-header';
+  header.innerHTML='<a class="back-action" href="#discover" aria-label="Back to Explore">‹ Explore</a><div class="header-center-title">'+icon+'</div>';
+  const glyph=document.querySelector('#navigation-icons')?.content.querySelector('[data-navigation-icon="'+({people:'characters',commandments:'commandments',evidence:'evidence'}[section]||'')+'"]');
+  if(glyph){const copy=glyph.cloneNode(true);copy.classList.add('header-icon-svg');header.querySelector('.header-icon-svg').replaceWith(copy);}
+  if(section==='places')header.querySelector('.header-icon-svg').innerHTML='<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/>';
+  heading.classList.add('directory-heading');header.querySelector('.header-center-title').append(heading);
+  let filter=host.querySelector('#commandments-more,#marked-filter-top,[data-debate-filters],[data-accepted-filters]');
+  if(!filter){
+   filter=document.createElement('button');filter.type='button';filter.setAttribute('aria-label','Filter '+heading.textContent);filter.setAttribute('aria-haspopup','dialog');
+   const sheet=document.createElement('dialog');sheet.className='stories-filter-sheet';sheet.dataset.directorySection=section;
+   sheet.id=id+'-filters';sheet.innerHTML='<div class="stories-sheet-heading"><h2>Filter '+heading.textContent+'</h2><button type="button" aria-label="Close filters">×</button></div><div class="directory-categories"></div>';
+   sheet.setAttribute('aria-label','Filter '+heading.textContent);filter.setAttribute('aria-controls',sheet.id);
+   filter.onclick=()=>{const source=host.querySelector('.filter-carousel'),target=sheet.querySelector('.directory-categories');target.replaceChildren();for(const control of source?.querySelectorAll('button')||[]){const proxy=control.cloneNode(true);proxy.onclick=()=>{control.click();proxy.setAttribute('aria-pressed',control.getAttribute('aria-pressed'));proxy.classList.add('active');for(const sibling of target.children)if(sibling!==proxy){sibling.setAttribute('aria-pressed','false');sibling.classList.remove('active');}};target.append(proxy);}sheet.showModal();};
+   sheet.querySelector('button').onclick=()=>sheet.close();document.body.append(sheet);
+   window.addEventListener('viewchange',()=>{if(sheet.open)sheet.close();});
+  }
+  filter.classList.add('directory-filter-open');filter.innerHTML=filterIcon;header.append(filter);
+  const content=document.createElement('div');content.className='stories-content';
+  const searchBox=host.querySelector('.characters-search-box,#commandments-search-box');
+  const chips=host.querySelector('.directory-categories');
+  if(chips){chips.classList.add('filter-carousel');chips.remove();}
+  if(searchBox){prepareSearchBox(searchBox);content.append(searchBox);}
+  if(chips)content.append(chips);
+  if(section==='evidence'&&id==='evidence-view'){
+   const box=document.createElement('div');box.className='stories-search-box';box.innerHTML='<input id="directory-evidence-search" class="directory-search" type="search" aria-label="Search evidence records" placeholder="Search records, titles, references…">';if(typeof categorySearch==='string')box.querySelector('input').value=categorySearch;prepareSearchBox(box);content.append(box);
+  }
+  // Existing attribution and applicability copy belongs with the filters.
+  const sheet=document.getElementById(filter.getAttribute('aria-controls'));
+  if(section==='commandments'){
+   const source=oldHeading.querySelector('.commandments-source');if(source){source.removeAttribute('popover');source.open=false;sheet?.querySelector('.commandments-sheet-scroll')?.prepend(source);}
+   for(const p of oldHeading.querySelectorAll('p'))sheet?.querySelector('.commandments-sheet-scroll')?.prepend(p);
+  }
+  oldHeading.remove();for(const child of [...host.children])content.append(child);host.replaceChildren(header,content);
+ }
+ function enhance(){
+  mount('characters-view','people');mount('places-view','places');mount('commandments-view','commandments');mount('debates-view','evidence');
+  if(/^#evidence\//.test(location.hash))mount('evidence-view','evidence');
+  for(const host of document.querySelectorAll('.directory-hub')){
+   for(const box of host.querySelectorAll('.stories-search-box')){const input=box.querySelector('input'),clear=box.querySelector('.directory-search-clear');if(input&&clear)clear.hidden=!input.value;}
+   for(const chip of host.querySelectorAll('.filter-carousel button')){chip.classList.add('filter-pill');chip.classList.toggle('active',chip.getAttribute('aria-pressed')==='true');}
+   for(const result of host.querySelectorAll('.characters-count,#places-count,#commandments-count')){result.classList.add('directory-results');if(/^\d/.test(result.textContent))result.textContent='Showing '+result.textContent;}
+   for(const card of host.querySelectorAll('.ux-contact,.place-profile-card,.commandment-card,.marked-comparison-card,.phase2-debate-card')){
+    if(card.classList.contains('story-card'))continue;card.classList.add('story-card');
+    const title=card.querySelector('h2,h3');title?.classList.add('story-title');
+    const summary=card.querySelector('.character-summary,.comparison-summary>p');summary?.classList.add('story-summary');
+    card.querySelector('.commandment-number')?.classList.add('passage-badge');
+   }
+  }
+ }
+ let scheduled=false;const schedule=()=>{if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;observer.disconnect();enhance();observer.observe(document.getElementById('main'),{subtree:true,childList:true});});};
+ const observer=new MutationObserver(schedule);observer.observe(document.getElementById('main'),{subtree:true,childList:true});
+ window.addEventListener('hashchange',schedule);schedule();
+})();
