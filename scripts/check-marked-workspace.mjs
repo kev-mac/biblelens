@@ -9,7 +9,7 @@ for(const book of [0,1,4,39,64]){
  for(const record of data.records){assert(record.placements.length);assert.equal(new Set(record.placements.map(p=>p.chapter+':'+p.verse)).size,record.placements.length);for(const p of record.placements)assert(data.verses[p.chapter+':'+p.verse]?.kjv);}
  if(book===0){assert(data.records.some(r=>r.id==='study-plants'));const ch=await (await request('/api/chapter?book=0&chapter=1')).json();assert.equal(data.verses['1:11'].kjv,ch.verses.find(v=>v.n===11).kjv);}
 }
-for(const query of ['','?book=-1','?book=66','?book=NaN','?book=0.5'])assert.equal((await request('/api/marked-comparisons'+query)).status,400);
+for(const query of ['','?book=-1','?book=999','?book=NaN','?book=0.5'])assert.equal((await request('/api/marked-comparisons'+query)).status,400);
 const data=await (await request('/api/marked-comparisons?book=0')).json();
 const context={markedData:data,markedChapterSelection:1,markedKind:'all',markedTheme:'all',markedCommandmentType:'all',recordTags:item=>(item.activeTags??item.tags??[]).map(t=>['H','G'].includes(t)?'T':t).filter(t=>['T','V','Q'].includes(t)),filterCategory:item=>item.tag||(['science','history'].includes(item.mode)?'academic':item.mode==='questions'?'Q':item.mode)};
 vm.createContext(context);const readerSource=fs.readFileSync('src/reader.js','utf8');vm.runInContext(readerSource.slice(readerSource.indexOf('function visibleComparison('),readerSource.indexOf('function verseBookmarkComparisons(')),context);const source=fs.readFileSync('src/marked.js','utf8');vm.runInContext(source.slice(source.indexOf('function markedChoices'),source.indexOf('function markedVerseRow')),context);

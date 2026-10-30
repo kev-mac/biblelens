@@ -70,6 +70,7 @@ export function collections(directory = root) {
   if (!titles.length) throw new Error('No Explore tile labels found; update the literal extractor.');
   const accepted=json('data/rc1-accepted.json');
   return [
+    ...['Apocrypha','Gnostic'].map(collection=>({name:'Lost Books — '+collection,blurb:true,lines:json('data/lost-books/books.json').filter(b=>b.collection===collection).flatMap(b=>[b.description,...(b.traditionNote?[b.traditionNote]:[])])})),
     { name: 'RC1 accepted imports', lines: [...lines(accepted.evidence,['title','summary']),...lines(accepted.people,['name','summary']),...lines(accepted.timeline,['title','display_title','summary']),...accepted.meaning.map(row=>row.record.summary),...accepted.questions.flatMap(row=>[row.question,...row.readings.flatMap(reading=>[reading.label,reading.summary])])] },
     { name: 'RC1 accepted notes', tier: 'detail', lines: [...lines(accepted.evidence,['reasoning','scope','languageContext']),...accepted.questions.map(row=>row.limits)] },
     { name: 'Evidence', lines: [...lines(json('data/evidence.json'), ['title', 'summary']),...evidenceLabels,'Evidence strength: Not assessed'] },

@@ -25,8 +25,10 @@ let networkCalls=0;
 const target={Worker:DeviceWorker,location:{href:'https://device.test/',origin:'https://device.test'},fetch:async()=>{networkCalls++;throw Error('Network forbidden');}};
 const restore=installDeviceApi(target);
 try{
- const books=await (await target.fetch('/api/books')).json();assert.equal(books.length,66);
+ const books=await (await target.fetch('/api/books')).json();assert.equal(books.length,66+JSON.parse(fs.readFileSync('data/lost-books/books.json','utf8')).length);assert.equal(books.slice(0,66).filter(b=>b.collection).length,0);
  const chapter=await (await target.fetch('/api/chapter?book=42&chapter=3')).json();assert(chapter.verses.some(v=>v.n===16&&v.kjv.includes('God so loved')));
+ for(const book of books.filter(b=>b.collection)){const lost=await (await target.fetch('/api/chapter?book='+book.id+'&chapter=1')).json();assert.equal(lost.editionLabel,book.collection+' · '+book.edition);assert(lost.verses.length);}
+ const lostSearch=await (await target.fetch('/api/search?lost=1&q=hidden%20sayings')).json();assert(lostSearch.passages.some(p=>p.collection==='Gnostic'));
  const comparison=await (await target.fetch('/api/comparisons?book=0&chapter=1&mode=questions')).json();assert(Array.isArray(comparison.items));
  const categories=await (await target.fetch('/api/categories?book=all&kind=T')).json();assert.equal(categories.records.length,24);assert(categories.total>24);const next=await (await target.fetch('/api/categories?book=all&kind=T&page=1')).json();assert.equal(next.records.length,24);assert.notEqual(next.records[0].key,categories.records[0].key);
  for(const [kind,minimum] of [['stories',1],['characters',3000],['prophecies',3]]){const page=await (await target.fetch('/api/categories?book=all&kind='+kind)).json();assert(page.total>=minimum,kind);assert(page.records.length<=24);assert(page.records.every(record=>record.mode===kind));}

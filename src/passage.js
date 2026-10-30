@@ -4,7 +4,7 @@ function normalizePassageRecords(value){
  const clean={};
  if(!value||typeof value!=='object'||Array.isArray(value))return clean;
  for(const [key,item]of Object.entries(value)){
-  if(!item||typeof item!=='object'||!Number.isInteger(item.book)||item.book<0||item.book>65||!Number.isInteger(item.chapter)||item.chapter<1||item.chapter>150||key!==item.book+':'+item.chapter||typeof item.name!=='string'||item.name.length>80)continue;
+  if(!item||typeof item!=='object'||!Number.isInteger(item.book)||item.book<0||(item.book>65&&!books[item.book]?.collection)||!Number.isInteger(item.chapter)||item.chapter<1||item.chapter>150||key!==item.book+':'+item.chapter||typeof item.name!=='string'||item.name.length>80)continue;
   clean[key]={book:item.book,chapter:item.chapter,name:item.name,title:typeof item.title==='string'?item.title.slice(0,200):'',text:typeof item.text==='string'?item.text.slice(0,100000):''};
  }
  return clean;
@@ -43,13 +43,13 @@ function markedVerseTextParts(value,edition,book,chapter,verse){
 }
 function fillMarkedVerseText(field,value,edition,book,chapter,verse){
  const parts=markedVerseTextParts(value,edition,book,chapter,verse);
- if(!parts.some(part=>part.highlight)){field.textContent=parts.map(part=>part.text).join('')+' ('+edition.toUpperCase()+')';return;}
+ if(!parts.some(part=>part.highlight)){field.textContent=parts.map(part=>part.text).join('')+' ('+(typeof books!=='undefined'&&books[book]?.edition||edition.toUpperCase())+')';return;}
  const nodes=parts.map(part=>{
   if(!part.highlight)return document.createTextNode(part.text);
   const mark=document.createElement('mark'),h=part.highlight;mark.className='text-highlight';mark.textContent=part.text;
   Object.assign(mark.dataset,{highlightBook:String(book),highlightChapter:String(chapter),highlightVerse:String(verse),highlightStart:String(h.start),highlightEnd:String(h.end),highlightEdition:h.edition,highlightColor:h.color});return mark;
  });
- field.replaceChildren(...nodes,document.createTextNode(' ('+edition.toUpperCase()+')'));
+ field.replaceChildren(...nodes,document.createTextNode(' ('+(typeof books!=='undefined'&&books[book]?.edition||edition.toUpperCase())+')'));
 }
 function saveTextHighlights(entries){
  let changed=false;
@@ -74,7 +74,7 @@ function editTextHighlight(book,chapter,verse,range,color){
 }
 function normalizeVerseRecords(value){
  const clean={};if(!value||typeof value!=='object'||Array.isArray(value))return clean;
- for(const [key,item]of Object.entries(value)){if(!item||!Number.isInteger(item.book)||item.book<0||item.book>65||!Number.isInteger(item.chapter)||item.chapter<1||item.chapter>150||!Number.isInteger(item.verse)||item.verse<1||item.verse>176||key!==`${item.book}:${item.chapter}:${item.verse}`||typeof item.name!=='string'||item.name.length>80)continue;clean[key]={book:item.book,chapter:item.chapter,verse:item.verse,name:item.name,title:typeof item.title==='string'?item.title.slice(0,200):'',text:typeof item.text==='string'?item.text.slice(0,100000):'',...(normalizeTextHighlights(item.highlights).length?{highlights:normalizeTextHighlights(item.highlights)}:{})};}return clean;
+ for(const [key,item]of Object.entries(value)){if(!item||!Number.isInteger(item.book)||item.book<0||(item.book>65&&!books[item.book]?.collection)||!Number.isInteger(item.chapter)||item.chapter<1||item.chapter>150||!Number.isInteger(item.verse)||item.verse<1||item.verse>(books[item.book]?.collection?Math.max(...books[item.book].verseCounts):176)||key!==`${item.book}:${item.chapter}:${item.verse}`||typeof item.name!=='string'||item.name.length>80)continue;clean[key]={book:item.book,chapter:item.chapter,verse:item.verse,name:item.name,title:typeof item.title==='string'?item.title.slice(0,200):'',text:typeof item.text==='string'?item.text.slice(0,100000):'',...(normalizeTextHighlights(item.highlights).length?{highlights:normalizeTextHighlights(item.highlights)}:{})};}return clean;
 }
 state.verseBookmarks=normalizeVerseRecords(state.verseBookmarks);
 // Retire highlight-only state; bookmarks and all note text remain intact.
@@ -121,7 +121,7 @@ function mergePersonalNote(old,note){
 }
 function passageResearchMarkdown(){
  const passages=Object.values({...state.passageBookmarks,...state.passageNotes}).map(item=>passageMarkdown(item));
- const verses=Object.entries({...state.verseBookmarks,...state.verseNotes}).map(([key,item])=>`# ${item.name} ${item.chapter}:${item.verse}\n\n${item.title?'## '+item.title+'\n\n':''}${state.verseBookmarks[key]?'Bookmarked verse. ':''}\n\n${normalizeTextHighlights(state.verseBookmarks[key]?.highlights).map(h=>'Highlighted ('+h.edition.toUpperCase()+'): '+h.text).join('\n\n')}\n\n${state.verseNotes[key]?.text||''}\n`);
+ const verses=Object.entries({...state.verseBookmarks,...state.verseNotes}).map(([key,item])=>`# ${item.name} ${item.chapter}:${item.verse}\n\n${item.title?'## '+item.title+'\n\n':''}${state.verseBookmarks[key]?'Bookmarked verse. ':''}\n\n${normalizeTextHighlights(state.verseBookmarks[key]?.highlights).map(h=>'Highlighted ('+(books[item.book]?.edition||h.edition.toUpperCase())+'): '+h.text).join('\n\n')}\n\n${state.verseNotes[key]?.text||''}\n`);
  return [...passages,...verses].join('\n---\n\n');
 }
 function mergePassageBackup(backup){
@@ -265,8 +265,8 @@ $('#verse-note-form').onsubmit=ev=>{
 };
 
 function buildVerseShareUrl(book,chapter,verses){
- if(!Number.isInteger(book)||book<0||book>65||!Number.isInteger(chapter)||chapter<1||chapter>150)throw new Error('Invalid passage reference');
- const selected=[...new Set(Array.isArray(verses)?verses:[])].filter(v=>Number.isInteger(v)&&v>0&&v<=176).sort((a,b)=>a-b);
+ if(!Number.isInteger(book)||book<0||(book>65&&!books[book]?.collection)||!Number.isInteger(chapter)||chapter<1||chapter>150)throw new Error('Invalid passage reference');
+ const selected=[...new Set(Array.isArray(verses)?verses:[])].filter(v=>Number.isInteger(v)&&v>0&&v<=(books[book]?.collection?Math.max(...books[book].verseCounts):176)).sort((a,b)=>a-b);
  if(!selected.length)throw new Error('Select at least one verse to share');
  const ranges=[];let start=selected[0],end=start;
  for(const verse of selected.slice(1)){if(verse===end+1)end=verse;else{ranges.push(start===end?String(start):`${start}-${end}`);start=end=verse;}}
@@ -290,7 +290,7 @@ async function copyVerseSelection(book,chapter,verses){
  let chapterData=book===readingBook&&chapter===readingChapter?reading:null;
  if(!chapterData){try{const response=await fetch(`/api/chapter?book=${book}&chapter=${chapter}`);if(!response.ok)throw Error();chapterData=await response.json();}catch{toast('Could not load the selected verses. Please try again.');return false;}}
  const selected=[...new Set(verses)].sort((a,b)=>a-b),edition=$('#reader-edition')?.value||'kjv',lines=[];
- for(const verse of selected){const item=chapterData?.verses?.find(item=>item.n===verse),value=item?.[edition]||item?.kjv;if(!value){toast('A selected verse is unavailable. Choose another verse.');return false;}const plain=String(value).replace(/\{[HG]\d+\}/g,'').replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();lines.push(`${books[book].name} ${chapter}:${verse} (${(item?.[edition]?edition:'kjv').toUpperCase()})\n${plain}`);}
+ for(const verse of selected){const item=chapterData?.verses?.find(item=>item.n===verse),value=item?.[edition]||item?.kjv;if(!value){toast('A selected verse is unavailable. Choose another verse.');return false;}const plain=String(value).replace(/\{[HG]\d+\}/g,'').replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();lines.push(`${books[book].name} ${chapter}:${verse} (${books[book]?.edition||(item?.[edition]?edition:'kjv').toUpperCase()})\n${plain}`);}
  const text=lines.join('\n\n'),clipboardText=text+'\n\n'+url;
  try{await navigator.clipboard.writeText(clipboardText);toast('Copied');return true;}
  catch{

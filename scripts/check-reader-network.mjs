@@ -4,7 +4,7 @@ import vm from 'node:vm';
 
 const source=fs.readFileSync('src/reader.js','utf8');
 const requestSource=source.slice(source.indexOf('async function readerJson('),source.indexOf('const comparisonCache='));
-const startupStart=source.indexOf('async function initializeReader(');
+const startupStart=source.indexOf('function readerBookOptions(');
 const startupSource=source.slice(startupStart,source.indexOf('\nlet readerInitialization;',startupStart)).replace(/initializeReader\(\);\s*$/,'');
 const catalog=[{id:0,name:'Genesis',chapters:2}];
 const passage={name:'Genesis',chapter:1,verses:[{n:1,kjv:'In the beginning'}]};
@@ -15,7 +15,7 @@ function fixture({abort=true}={}){
  const context={
   $:node,books:[],reading:null,readingBook:0,readingChapter:1,loadVersion:0,selectedVerses:new Set(),
   state:{notes:{kept:'Private research'},verseNotes:{'0:1:1':{text:'Keep this note'}}},
-  location:{hash:'#read'},view:'read',esc:String,
+  location:{hash:'#read'},view:'read',esc:String,readerPreferences:{edition:'kjv'},
   fetch:(url,options)=>new Promise((resolve,reject)=>requests.push({url,options,resolve,reject})),
   setTimeout:(callback,delay)=>{assert.equal(delay,15000);timers.set(++timerId,callback);return timerId;},
   clearTimeout:id=>timers.delete(id),

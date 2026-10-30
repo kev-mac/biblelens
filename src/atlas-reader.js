@@ -35,6 +35,16 @@
   control('ux-prev').onclick=()=>control('prev-bottom').click();control('ux-next').onclick=()=>control('next-bottom').click();
   function updateControls(){
    if(!reading)return;
+   const lost=!!books[readingBook]?.collection;
+   control('lens-focus').disabled=lost;control('lens-focus').title=lost?'Evidence links are not available for these books yet.':'';
+   control('lens-compare').hidden=lost;
+   control('lens-edition').disabled=lost;control('reader-edition').disabled=lost;
+   control('lens-edition').value=lost?'kjv':control('reader-edition').value;
+   let label=control('lost-reader-edition');
+   if(!label){label=document.createElement('p');label.id='lost-reader-edition';label.className='lost-edition-label';readingBar.after(label);}
+   label.hidden=!lost;label.textContent=lost?reading.editionLabel+' · Evidence links not added yet.':'';
+   control('lens-edition').closest('label').hidden=lost;
+
    const bookLabel=document.createElement('span');bookLabel.className='ux-picker-book';bookLabel.textContent=reading.name;
    const chapterLabel=document.createElement('span');chapterLabel.className='ux-picker-chapter';chapterLabel.textContent=' '+reading.chapter;const arrow=document.createElement('span');arrow.className='ux-picker-arrow';arrow.textContent=' ▾';chapterLabel.append(arrow);
    control('ux-chapter-picker').replaceChildren(bookLabel,chapterLabel);
@@ -95,7 +105,7 @@
 
     const collection = document.createElement('p');
     collection.className = 'atlas-reader-collection';
-    collection.textContent = readingBook < 39 ? 'Old Testament' : 'New Testament';
+    collection.textContent = reading.editionLabel || (readingBook < 39 ? 'Old Testament' : 'New Testament');
     picker.closest('h1').before(collection);
     heading.classList.add('atlas-passage-heading');
   }

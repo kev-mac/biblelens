@@ -121,7 +121,7 @@ function updateHeaderContext(){
  const context=$('#header-context');if(!context)return;
  const heading=$('#chapter-text .passage-heading>div'),rect=heading?.getBoundingClientRect();
  const showPassage=view==='read'&&rect&&(rect.bottom<=document.querySelector('body>header').getBoundingClientRect().bottom||rect.top>=window.innerHeight);
- let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Events',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Laws',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',search:'Search',notebook:'Notebook'}[view]||'BibleLens');
+ let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Events',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Laws',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',lost:'Lost Books',search:'Search',notebook:'Notebook'}[view]||'BibleLens');
  const key=view==='evidence'?/^#evidence\/([^?]+)/.exec(location.hash)?.[1]:null;
  const category={academic:'Academic',commandments:'Laws',contradictions:'Text Comparisons',bookmark:'Marked',characters:'People',prophecies:'Prophecies',Q:'Questions',stories:'Events',T:'Translation'}[key];
  if(category){
@@ -205,7 +205,7 @@ window.BibleLensNavigation={navigate:navigateHash,restore:restoreNavigation,reme
 let viewTransition,viewRender=0;
 function setView(v,update=true){
  v=({categories:'evidence',saved:'evidence',discover:'explore',people:'characters'})[v]||v;
- const views=['read','chat','evidence','method','commandments','characters','prophecies','timeline','stories','bookmarks','places','explore','search','notebook','debates','debate'];
+ const views=['read','chat','evidence','method','commandments','characters','prophecies','timeline','stories','bookmarks','places','explore','lost','search','notebook','debates','debate'];
  const next=views.includes(v)?v:'read';
  if(update){navigateHash('#'+(({characters:'people',explore:'discover',bookmarks:'notebook?section=bookmarks',debates:'questions'})[next]||next));if(window.BibleLensFeatures?.route(location.hash))return;}
  const changed=view!==next;view=next;const renderId=++viewRender;

@@ -46,7 +46,7 @@
  const main = el('main');
  const contextNav=document.createElement('nav');contextNav.className='lens-context';contextNav.setAttribute('aria-label','Page navigation');contextNav.hidden=true;main.prepend(contextNav);
  let searchParent='explore';
- const labels={read:'Read',explore:'Explore',debates:'Contradictions',debate:'Question',notebook:'Saved',search:'Search',stories:'Events',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Laws',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the Text'};
+ const labels={read:'Read',explore:'Explore',debates:'Contradictions',debate:'Question',notebook:'Saved',search:'Search',stories:'Events',lost:'Lost Books',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Laws',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the Text'};
  const roots={read:'#read',explore:'#discover',debates:'#questions',notebook:'#notebook'};
  function primary(){
   if(view==='search'||view==='chat')return searchParent;

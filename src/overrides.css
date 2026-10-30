@@ -3034,3 +3034,23 @@ html body.lens-app #main #places-view.directory-hub .place-details .place-detail
 html body.lens-app #chapter-text .verse-body :is(a.person-chip,a.location-chip)::before{content:none}
 html body.lens-app #main .directory-hub .place-details:not(.open){visibility:hidden}
 /* purgecss end ignore */
+/* UX14: use the same directory and reader surfaces as the rest of the library. */
+html body.lens-app .lost-hub .stories-header{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+html body.lens-app .lost-hub h1{display:flex;align-items:center;gap:8px;flex:1;font-size:1.25rem;white-space:nowrap}
+html body.lens-app .lost-hub .stories-content{max-width:960px;margin-inline:auto;padding:16px 16px 100px}
+html body.lens-app .lost-hub input{width:100%;min-width:0;min-height:44px;box-sizing:border-box}
+html body.lens-app .lost-hub .filter-carousel{display:flex;overflow:auto;gap:8px;margin-block:16px;max-width:100%}
+html body.lens-app .lost-hub .filter-carousel[hidden]{display:none}
+html body.lens-app .lost-hub .filter-pill{white-space:nowrap;min-height:44px;flex-shrink:0}
+html body.lens-app .lost-cards{display:grid;gap:16px;margin-top:20px}
+html body.lens-app .lost-card{min-width:0;padding:20px;overflow-wrap:anywhere}
+html body.lens-app .lost-card h2{font-size:1.25rem;margin-block:12px}
+html body.lens-app .lost-card .lens-button{display:inline-flex;min-height:44px;align-items:center}
+html body.lens-app .lost-card details{margin-top:12px;font-size:.875rem}
+html body.lens-app .lost-card summary{min-height:44px;align-content:center;cursor:pointer}
+html body.lens-app .lost-card-meta,html body.lens-app .lost-intro{color:var(--lens-muted)}
+html body.lens-app .lost-picker-heading{grid-column:1/-1;font-size:1rem;margin:12px 0 4px}
+html body.lens-app .lost-edition-label{font-size:.75rem;color:var(--lens-muted);margin:0;padding:4px 0;overflow-wrap:anywhere}
+html body.lens-app .lost-search-toggle{min-height:44px;display:inline-flex;align-items:center}
+html body.lens-app:has(#lost-view:not([hidden])) .lens-context{display:none}
+@media(min-width:768px){html body.lens-app .lost-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
