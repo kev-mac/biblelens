@@ -75,3 +75,6 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
 }
 assert.deepEqual(matrix.filter(row=>row.smallTargets.length),[],'Visible controls meet 44 px targets');
 console.log('PASS UX10 browser requirements and screenshot matrix.');
+
+// UX10c restores phone bar arrows alongside chapter-foot navigation.
+await import('./check-ux10c-browser.mjs');

@@ -14,6 +14,9 @@ assert.equal(read('data/reference/place-coordinate-exclusions.json').excludedCoo
 assert.equal(read('package.json').buildNumber,279);
 const web=read('dist/client/release.json'),mobile=read('www/release.json');assert.match(web.sourceHash,/^[a-f0-9]{64}$/);assert.equal(web.sourceHash,mobile.sourceHash);assert.equal(web.draftOnly,undefined);assert.equal(mobile.draftOnly,undefined);assert.equal(web.buildNumber,279);assert.equal(mobile.buildNumber,279);
 const production=read('www/reference/people.json'),jesus=production.find(p=>p.sourceRecord==='jesus_905');assert.equal(jesus.summary,read('src/data/characters.json').find(p=>p.id==='jesus').summary,'Approved biography is packaged for Jesus of Nazareth');
+assert.equal(jesus.summary.includes('\"'),false,'Approved Jesus quotes use curly quotation marks');
+assert(jesus.summary.includes('“was with God, and the Word was God.”'));
+assert(jesus.summary.includes('“in the name of the Father, and of the Son, and of the Holy Ghost.”'));
 assert(!production.find(p=>p.sourceRecord==='jesus_904').summary,'The other Jesus has no biography');
 assert.equal(read('src/data/character-reference-ids.json').jesus,jesus.id);
 assert(read('src/data/characters.json').some(p=>p.id==='jesus'&&p.era==='Gospels'));

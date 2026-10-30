@@ -35,7 +35,10 @@
   control('ux-prev').onclick=()=>control('prev-bottom').click();control('ux-next').onclick=()=>control('next-bottom').click();
   function updateControls(){
    if(!reading)return;
-   control('ux-chapter-picker').textContent=reading.name+' '+reading.chapter+' ▾';
+   const bookLabel=document.createElement('span');bookLabel.className='ux-picker-book';bookLabel.textContent=reading.name;
+   const chapterLabel=document.createElement('span');chapterLabel.className='ux-picker-chapter';chapterLabel.textContent=' '+reading.chapter+' ▾';
+   control('ux-chapter-picker').replaceChildren(bookLabel,chapterLabel);
+   control('ux-chapter-picker').setAttribute('aria-label',reading.name+' '+reading.chapter+'. Choose chapter');
    control('ux-prev').disabled=readingBook===0&&readingChapter===1;
    control('ux-next').disabled=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;
    control('ux-font-style').setAttribute('aria-label',['lora','georgia'].includes(readerPreferences.appFont)?'Use sans serif app font':'Use serif app font');
