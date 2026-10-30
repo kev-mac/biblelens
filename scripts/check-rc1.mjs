@@ -18,7 +18,9 @@ assert.deepEqual(accepted.people,proposals.people.filter(row=>row.provenance.sou
 assert.deepEqual(accepted.timeline,proposals.timeline.filter(row=>['research/claude-drafts/academic-cards-records.json','research/b2/academic-context.json'].includes(row.provenance.source)).map(row=>row.record));
 assert.deepEqual(accepted.meaning,proposals.rewrites.filter(row=>['people','stories'].includes(row.targetCollection)));
 const selected=loadDraftDebates().candidates.filter(row=>row.recommended);
-assert.deepEqual(accepted.questions,selected.map(row=>({id:row.id,decisionId:row.reading_review.decisionId,question:row.question,comparison:row.comparison,readings:row.reading_review.readings,sources:row.reading_review.sources,limits:row.reading_review.limits,side_a:row.side_a.passages,side_b:row.side_b.passages,labels:[...new Set(row.source_record_ids.map(id=>debateVerdict(read('data/evidence.json').find(record=>record.id===id))))]})));
+// UX12 adds science facets without changing the approved question content.
+const scienceBranches={B17:'Astronomy',B18:'Astronomy',B19:'Astronomy',B20:'Astronomy',B21:'Biology',B22:'Geology',B23:'Geology',B24:'Biology'};
+assert.deepEqual(accepted.questions,selected.map(row=>({id:row.id,decisionId:row.reading_review.decisionId,question:row.question,comparison:row.comparison,...(scienceBranches[row.reading_review.decisionId]?{branch:scienceBranches[row.reading_review.decisionId]}:{}),readings:row.reading_review.readings,sources:row.reading_review.sources,limits:row.reading_review.limits,side_a:row.side_a.passages,side_b:row.side_b.passages,labels:[...new Set(row.source_record_ids.map(id=>debateVerdict(read('data/evidence.json').find(record=>record.id===id))))]})));
 const evidence=JSON.parse(releaseContent('data/evidence.json')),people=JSON.parse(releaseContent('src/data/characters.json'));
 validateSides(evidence,read('data/books.json'),read('data/chapters.json'));validateWitnesses(evidence,read('data/books.json'),read('data/chapters.json'));
 for(const original of read('data/evidence.json'))if(!accepted.evidence.some(row=>row.id===original.id))assert.deepEqual(evidence.find(row=>row.id===original.id),original);
