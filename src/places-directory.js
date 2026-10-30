@@ -1,6 +1,6 @@
 import books from '../data/books.json' with {type:'json'};
 import {directorySaveButton} from './directory-save.js';
-import {loadPlaces,atlasDescription} from './places-core.js';
+import {loadPlaces,directoryPlaces} from './places-core.js';
 import {regionCoverage,inWindow,usableRegionPoint} from './place-regions.js';
 
 const normalize=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase().replace(/['’]s\b/g,'');
@@ -8,7 +8,7 @@ export function searchPlaces(places,query=''){
  const terms=normalize(query.trim()).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
  const queryName=normalize(query.trim());
  const rank=place=>{const name=normalize(place.name);return !queryName?0:name===queryName?4:name.startsWith(queryName)?3:terms.every(term=>name.split(/[^\p{L}\p{N}]+/u).some(word=>word.startsWith(term)))?2:1;};
- return [...places.values()].filter(place=>!(/['’]s$/i.test(place.name)&&place.canonicalId!==place.id&&places.has(place.canonicalId))).filter(place=>terms.every(term=>normalize([place.name,...place.aliases,place.modern_name].filter(Boolean).join(' ')).split(/[^\p{L}\p{N}]+/u).some(word=>word.startsWith(term))))
+ return directoryPlaces(places).filter(place=>terms.every(term=>normalize([place.name,...place.aliases,place.modern_name].filter(Boolean).join(' ')).split(/[^\p{L}\p{N}]+/u).some(word=>word.startsWith(term))))
   .sort((a,b)=>rank(b)-rank(a)||a.name.localeCompare(b.name)||a.id.localeCompare(b.id));
 }
 
@@ -17,8 +17,8 @@ function placeCard(place, duplicate){
  const card=node('article','character-card place-profile-card');
  const heading=node('h2','character-name',place.name+(duplicate&&(place.region||place.refs?.[0])?' ('+(place.region||(books[place.refs[0][0]].code+' '+place.refs[0][1]+':'+place.refs[0][2]))+')':''));card.append(heading);
  const open=node('button','ux-place-open place-map-action','View place →');open.type='button';open.dataset.placeId=place.id;open.setAttribute('aria-label','Open '+place.name);card.append(directorySaveButton('place',place.id,place.name));
- if(place.linkedPassageCount!==null)card.append(node('p','ux-place-count',place.linkedPassageCount+' linked '+(place.linkedPassageCount===1?'verse':'verses')));
- if(place.refs?.length){const links=node('div','directory-references');for(const [book,chapter,verse] of place.refs.slice(0,2)){const link=node('a','directory-reference',books[book].name+' '+chapter+':'+verse);link.href='#read/'+book+'/'+chapter+'/'+verse;links.append(link);}card.append(links);}
+
+ if(place.refs?.length){const [book,chapter,verse]=place.refs[0],pill=node('span','passage-badge',books[book].name+' '+chapter+':'+verse+(place.refs.length>1?' +'+(place.refs.length-1).toLocaleString():''));card.prepend(pill);}
  const description=place.shortDescription;
  if(description&&description.split(/\s+/).length<=15)card.append(node('p','character-summary',description));
  const meta=node('div','ux-place-meta');
@@ -26,26 +26,10 @@ function placeCard(place, duplicate){
  if(place.modern_name)meta.append(node('span','','Now '+place.modern_name));
  if(!place.coordinates)meta.append(node('span','','Location unknown'));
  card.append(meta);
- const figure=node('div','place-map-actions');
- const map=node('button','place-map-action','View on Map');map.type='button';map.dataset.placeId=place.id;map.disabled=!place.coordinates;map.setAttribute('aria-label','View on Map: '+place.name+' in the atlas');
- const source=node('button','place-map-action place-map-source','Sources');source.type='button';source.setAttribute('aria-label','Sources and location details for '+place.name);
- figure.append(open,map,source);card.append(figure);
- const panel=node('section','place-location-details');panel.setAttribute('aria-label',place.name+' location details');
- panel.append(node('h3','','Location Details'));
- const fullDescription=atlasDescription(place);
- if(fullDescription&&fullDescription!=='No description is available in this reference dataset.'){const details=node('details');details.append(node('summary','','Source Description'),node('p','',fullDescription));panel.append(details);}
- for(const [label,value] of [['Type',place.featureType],['Modern Name',place.modern_name],['Location Precision',place.precision]])if(value)panel.append(node('p','',label+': '+value));
- if(place.coordinates)panel.append(node('p','',place.coordinates.latitude.toFixed(5)+', '+place.coordinates.longitude.toFixed(5)));
- panel.append(node('p','characters-note',place.coordinates?'Dataset location; historical identifications and precision vary. Modern map labels do not establish ancient boundaries.':'Location unknown'));
- const popover=node('div','character-source-popover');popover.id='place-source-'+place.id;popover.setAttribute('popover','auto');popover.setAttribute('role','dialog');popover.setAttribute('aria-labelledby',popover.id+'-title');source.setAttribute('popovertarget',popover.id);source.setAttribute('aria-haspopup','dialog');
- const header=node('div','character-source-header'),title=node('h3','','Place Data Source');title.id=popover.id+'-title';
- const close=node('button','','×');close.type='button';close.autofocus=true;close.setAttribute('aria-label','Close place source');close.setAttribute('popovertarget',popover.id);close.setAttribute('popovertargetaction','hide');header.append(title,close);popover.append(header);
- let returnFocus=false;
- popover.addEventListener('beforetoggle',event=>{if(event.newState==='closed')returnFocus=popover.contains(document.activeElement);});
- popover.addEventListener('toggle',event=>{if(event.newState==='closed'&&returnFocus&&source.isConnected)source.focus({preventScroll:true});});
- popover.append(panel,node('p','atlas-attribution','Preview geography: Natural Earth 5.1.2, public domain. Coastlines and lakes are simplified modern context, not a reconstruction of ancient geography.'));
- const credit=document.querySelector('#atlas-sources .atlas-attribution');if(credit)popover.append(credit.cloneNode(true));
- card.append(popover);return card;
+ const figure=node('div','story-footer');
+ figure.append(node('span','',place.linkedPassageCount===null?'':place.linkedPassageCount.toLocaleString()+' linked '+(place.linkedPassageCount===1?'verse':'verses')));open.classList.add('action-link');
+ figure.append(open);card.append(figure);
+ return card;
 }
 
 export function mountPlacesDirectory(){
@@ -56,12 +40,12 @@ export function mountPlacesDirectory(){
  const previous=host.querySelector('[data-places-previous]'),next=host.querySelector('[data-places-next]'),retry=host.querySelector('[data-places-retry]');
  let region=null,places=new Map(),page=0,loaded=false,loading=false,failed=false;
  function render(){
-  const matches=searchPlaces(places,search.value).filter(place=>!region||usableRegionPoint(place)&&inWindow(place,region)),pages=Math.ceil(matches.length/15);page=Math.min(page,Math.max(0,pages-1));
+  const matches=searchPlaces(places,search.value).filter(place=>!region||usableRegionPoint(place)&&inWindow(place,region)),pages=Math.ceil(matches.length/24);page=Math.min(page,Math.max(0,pages-1));
   count.className=loading?'loading-state':'directory-results';
   search.placeholder=`Search ${searchPlaces(places).length.toLocaleString()} places, names, aliases…`;
-  count.textContent=loading?'Loading places…':failed?'Places could not be loaded.':`${matches.length?page*15+1:0}–${Math.min((page+1)*15,matches.length)} of ${matches.length} ${matches.length===1?'place':'places'}`;
+  count.textContent=loading?'Loading places…':failed?'Places could not be loaded.':`${(matches.length?page*24+1:0).toLocaleString()}–${Math.min((page+1)*24,matches.length).toLocaleString()} of ${matches.length.toLocaleString()} ${matches.length===1?'place':'places'}`;
   list.replaceChildren();list.setAttribute('aria-busy',String(loading));
-  for(const place of matches.slice(page*15,(page+1)*15)){
+  for(const place of matches.slice(page*24,(page+1)*24)){
    const row=document.createElement('li');row.append(placeCard(place,[...places.values()].filter(other=>normalize(other.name)===normalize(place.name)).length>1));list.append(row);
   }
   if(loaded&&!matches.length){const empty=document.createElement('li');empty.textContent='No places match. Try another name or alias.';list.append(empty);}

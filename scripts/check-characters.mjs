@@ -242,6 +242,6 @@ for(const person of kResults)assert([person.name,...person.aliases].some(name=>n
 assert(kResults.some(person=>person.name==='Cainan'&&person.aliases.includes('Kenan')),'Cainan is a valid, displayed Kenan alias match');
 assert(kResults.some(person=>person.name==='Jesus'&&person.aliases.includes('King')),'Jesus is a valid, displayed King alias match');
 assert(!findPeople('ainan').some(person=>person.name==='Cainan'),'Inner substrings do not match');
-assert.equal(CHARACTER_PAGE_SIZE,15);
+assert.equal(CHARACTER_PAGE_SIZE,24);
 assert.equal(findPeople('Moses')[0].name,'Moses');
-console.log('PASS: UX2 K prefix ranking, visible Kenan/King aliases, no inner substring matches, Moses and 15-result paging.');
+console.log('PASS: UX2 K prefix ranking, visible Kenan/King aliases, no inner substring matches, Moses and 24-result paging.');

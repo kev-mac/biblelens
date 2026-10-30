@@ -50,7 +50,7 @@
   if(inspectorSheet.open)inspectorSheet.close();
   emptyToast.textContent='Nothing linked to '+refLabel({book:readingBook,chapter:readingChapter,verse:activeVerse})+' yet.';emptyToast.hidden=false;
   clearTimeout(emptyToastTimer);emptyToastTimer=setTimeout(()=>{emptyToast.hidden=true;},2200);
-  emptyStrip.replaceChildren(inspector.querySelector('.ux-verse-actions').cloneNode(true));emptyStrip.hidden=!EMPTY_VERSE_ACTIONS;
+  emptyStrip.replaceChildren(emptyToast,inspector.querySelector('.ux-verse-actions').cloneNode(true));emptyStrip.hidden=!EMPTY_VERSE_ACTIONS;
  }
  document.addEventListener('pointerdown',event=>{if(!event.target.closest('#ux-empty-verse-actions,#chapter-text .verse'))dismissEmpty();});
  window.addEventListener('scroll',dismissEmpty,{passive:true});
@@ -137,7 +137,7 @@
  }
  document.addEventListener('click',event=>{
   const tab=event.target.closest('[data-context-tab]');if(tab){const offset=inspector.querySelector('.ux-context-tabs').scrollLeft;contextTab=tab.dataset.contextTab;renderInspector();inspector.querySelector('.ux-context-tabs').scrollLeft=offset;inspector.querySelector('[data-context-tab="'+contextTab+'"]')?.focus({preventScroll:true});return;}
-  if(event.target.closest('[data-context-bookmark]')){toggleVerseMark('bookmark',readingBook,readingChapter,activeVerse);renderInspector();if(!emptyStrip.hidden)emptyStrip.replaceChildren(inspector.querySelector('.ux-verse-actions').cloneNode(true));return;}
+  if(event.target.closest('[data-context-bookmark]')){toggleVerseMark('bookmark',readingBook,readingChapter,activeVerse);renderInspector();if(!emptyStrip.hidden)emptyStrip.replaceChildren(emptyToast,inspector.querySelector('.ux-verse-actions').cloneNode(true));return;}
   if(event.target.closest('[data-context-close]')){inspectorSheet.close();return;}
   if(event.target.closest('[data-context-note]')){dismissEmpty();showInspectorSheet(event.target.closest('button'));const editor=inspector.querySelector('.lens-note-editor');editor.hidden=false;el('lens-margin-note').focus();return;}
   if(event.target.closest('[data-search-cancel]')){clearTimeout(inputTimer);searchDialog.close();return;}

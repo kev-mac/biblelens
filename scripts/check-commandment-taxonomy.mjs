@@ -37,7 +37,7 @@ for(const state of [{polarity:['Negative'],topics:['Business']},{polarity:['Posi
  assert.deepEqual(Array.from(filter(state),r=>r.code),expected.map(r=>r.code));
 }
 assert(!html.includes('commandment-tag'));assert(!code.includes('--tag-rgb'));
-assert(code.includes('items.slice(0,visibleCount)'));assert(code.includes('visibleCount+=60'));
+assert(code.includes('items.slice(0,visibleCount)'));assert(code.includes('visibleCount+=24'));
 const built=await (await import('./built-worker.mjs')).default.fetch(new Request('https://test/commandments.js'),{},{});assert((await built.text()).includes('N365'),'The full catalog must reach the built web bundle');
 console.log('PASS: all 613 unique commandment identities, 248/365 partitions, retained-source consistency, exact packaged KJV quotations, valid passage/lens routes, AND/OR facets, escaped cards and bounded incremental rendering.');
 
@@ -49,7 +49,7 @@ assert.equal(context.commandmentDirective('To know that the Lord God exists'),'K
 assert.equal(context.commandmentDirective('Do not steal'),'Do not steal');
 const withLens=context.commandmentCard(context.records.find(record=>record.lens.length));
 assert(withLens.includes('commandment-lens'));assert(withLens.includes('Hebrews 10:11'));
-for(const record of context.records){const html=context.commandmentCard(record);assert(html.includes('-context-toggle'));assert(!html.includes('>Verses<'));assert(!html.includes('<h2>To '));assert.equal(html.includes('>NT Lens<'),record.lens.length>0);}
+for(const record of context.records){const html=context.commandmentCard(record);assert(html.includes('-context-toggle'));assert(!html.includes('>Verses<'));assert(!html.includes('<h2>To '));assert.equal(html.includes('commandment-lens'),record.lens.length>0);}
 const rows=Array.from({length:10},(_,i)=>({n:i+1,kjv:'Verse '+(i+1)}));
 assert.deepEqual(Array.from(context.commandmentContextVerses(rows,1),row=>row.n),[1,2,3]);
 assert.deepEqual(Array.from(context.commandmentContextVerses(rows,5),row=>row.n),[3,4,5,6,7]);

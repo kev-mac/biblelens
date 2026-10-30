@@ -13,7 +13,7 @@
   const token=++version;current=null;setView('debates',false);delete host.dataset.directoryMounted;
   host.innerHTML='<div class="page-heading"><h1 tabindex="-1">Big Questions</h1><button data-accepted-filters type="button" aria-label="Filter questions" aria-haspopup="dialog" aria-controls="accepted-question-filters">Filters</button></div><div class="characters-search-box"><input id="accepted-search" type="search" aria-label="Search questions" placeholder="Search questions, passages…"></div><nav class="directory-categories" aria-label="Question labels"></nav><p class="directory-results" role="status"></p><div class="accepted-questions phase2-debate-grid" role="status">Loading questions…</div>';
   try{
-   const rows=await load();if(token!==version)return;const ordered=order.map(id=>rows.find(r=>r.decisionId===id)).filter(Boolean),slot=host.querySelector('.accepted-questions'),search=host.querySelector('input'),chips=host.querySelector('.directory-categories'),count=host.querySelector('.directory-results');slot.removeAttribute('role');let selected='';
+   const rows=await load();if(token!==version)return;const ordered=order.map(id=>rows.find(r=>r.decisionId===id)).filter(Boolean),slot=host.querySelector('.accepted-questions'),search=host.querySelector('input'),chips=host.querySelector('.directory-categories'),count=host.querySelector('.directory-results');slot.removeAttribute('role');let selected='',page=0;const paging=document.createElement('nav');paging.className='phase2-pagination';paging.setAttribute('aria-label','Question pages');slot.after(paging);
    search.placeholder=`Search ${ordered.length} questions, passages…`;
    const options=['',...new Set(ordered.flatMap(row=>row.labels))];
    let sheet=document.getElementById('accepted-question-filters');if(!sheet){sheet=document.createElement('dialog');sheet.id='accepted-question-filters';sheet.setAttribute('aria-label','Filter Questions');sheet.className='stories-filter-sheet';sheet.dataset.directorySection='evidence';document.body.append(sheet);}
@@ -22,10 +22,12 @@
    host.querySelector('[data-accepted-filters]').onclick=()=>sheet.showModal();
    function render(){
     const terms=search.value.toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu)||[],matches=ordered.filter(row=>(!selected||row.labels.includes(selected))&&terms.every(term=>[row.question,...row.labels,...row.side_a.map(s=>s.ref),...row.side_b.map(s=>s.ref)].join(' ').toLocaleLowerCase().includes(term)));
-    count.textContent=`Showing ${matches.length?1:0}–${matches.length} of ${matches.length} questions`;slot.innerHTML=matches.map(card).join('')||'<p>No questions match these filters.</p>';
-    for(const target of [chips,sheet.querySelector('.directory-categories')]){target.replaceChildren(...options.map(value=>{const button=document.createElement('button');button.type='button';button.className='filter-pill'+(selected===value?' active':'');button.setAttribute('aria-pressed',String(selected===value));button.textContent=(value?uiTitleCase(value):'All questions')+' ('+(value?ordered.filter(row=>row.labels.includes(value)).length:ordered.length)+')';button.onclick=()=>{selected=value;render();};return button;}));}
+    const pages=Math.ceil(matches.length/24);page=Math.min(page,Math.max(0,pages-1));
+    count.textContent=`Showing ${matches.length?page*24+1:0}–${Math.min((page+1)*24,matches.length)} of ${matches.length.toLocaleString()} questions`;slot.innerHTML=matches.slice(page*24,(page+1)*24).map(card).join('')||'<p>No questions match these filters.</p>';
+    paging.hidden=pages<=1;paging.innerHTML=`<button type="button" ${page===0?'disabled':''}>Previous</button><span>${page+1} / ${Math.max(1,pages)}</span><button type="button" ${page+1>=pages?'disabled':''}>Next</button>`;paging.firstElementChild.onclick=()=>{page--;render();count.scrollIntoView({block:'start'});};paging.lastElementChild.onclick=()=>{page++;render();count.scrollIntoView({block:'start'});};
+    for(const target of [chips,sheet.querySelector('.directory-categories')]){target.replaceChildren(...options.map(value=>{const button=document.createElement('button');button.type='button';button.className='filter-pill'+(selected===value?' active':'');button.setAttribute('aria-pressed',String(selected===value));button.textContent=(value?uiTitleCase(value):'All questions')+' ('+(value?ordered.filter(row=>row.labels.includes(value)).length:ordered.length)+')';button.onclick=()=>{selected=value;page=0;render();};return button;}));}
    }
-   search.oninput=render;render();restoreNavigation();
+   search.oninput=()=>{page=0;render();};render();restoreNavigation();
   }catch{host.innerHTML='<h1>Big Questions</h1><p>Questions could not load.</p><a class="lens-button" href="#questions">Try again</a>';}
  }
 

@@ -94,7 +94,7 @@
  observer.observe(main,{childList:true,subtree:true,characterData:true});
  // Sheets are inline tasks. Keep async profile titles and reused sheets current.
  function dialogPaths(){for(const dialog of document.querySelectorAll('dialog[open]')){
-  if(dialog.id==='lens-inspector-sheet'||dialog.id==='lens-search-overlay'){dialog.querySelector('.ux-dialog-path')?.remove();continue;}
+  if(dialog.id==='lens-inspector-sheet'||dialog.id==='lens-search-overlay'||dialog.id==='ux-alphabet-sheet'){dialog.querySelector('.ux-dialog-path')?.remove();continue;}
   const title=[...dialog.querySelectorAll('h1,h2,h3')].find(node=>!node.closest('[hidden]'))?.textContent.trim()||dialog.getAttribute('aria-label')||'Details';
   let nav=dialog.querySelector('.ux-dialog-path');
   if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='←';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
@@ -192,6 +192,7 @@
   for(const host of document.querySelectorAll('.directory-hub')){
    for(const box of host.querySelectorAll('.stories-search-box')){const input=box.querySelector('input'),clear=box.querySelector('.directory-search-clear');if(input&&clear)clear.hidden=!input.value;}
    for(const chip of host.querySelectorAll('.filter-carousel button')){chip.classList.add('filter-pill');chip.classList.toggle('active',chip.getAttribute('aria-pressed')==='true');}
+   for(const row of host.querySelectorAll('.filter-carousel')){const selected=row.querySelector('.active,[aria-pressed=true]');if(selected){const r=selected.getBoundingClientRect(),box=row.getBoundingClientRect();if(r.left<box.left||r.right>box.right-16)row.scrollLeft+=r.left-box.left-Math.max(0,(box.width-r.width)/2);}}
    for(const result of host.querySelectorAll('.characters-count,#places-count,#commandments-count')){result.classList.add('directory-results');if(/^\d/.test(result.textContent))result.textContent='Showing '+result.textContent;}
    for(const card of host.querySelectorAll('.ux-contact,.place-profile-card,.commandment-card,.marked-comparison-card,.phase2-debate-card')){
     if(card.classList.contains('story-card'))continue;card.classList.add('story-card');
@@ -200,6 +201,12 @@
     card.querySelector('.commandment-number')?.classList.add('passage-badge');
    }
   }
+  // Keep the real footer within the People scroller, outside its alphabet dock.
+  const footer=document.querySelector('footer'),people=document.getElementById('characters-view');
+  const destination=people&&!people.hidden&&people.classList.contains('directory-hub')?people.querySelector('.stories-content'):null;
+  if(footer&&destination&&footer.parentElement!==destination)destination.append(footer);
+  else if(footer&&!destination&&footer.parentElement!==document.body)document.getElementById('main').after(footer);
+
  }
  let scheduled=false;const schedule=()=>{if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;observer.disconnect();enhance();observer.observe(document.getElementById('main'),{subtree:true,childList:true});});};
  const observer=new MutationObserver(schedule);observer.observe(document.getElementById('main'),{subtree:true,childList:true});

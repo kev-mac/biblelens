@@ -1,3 +1,4 @@
+import {parsePlaces,directoryPlaces} from '../src/places-core.js';
 import {enrichStories} from './story-metrics.mjs';
 import {linkPeopleStories} from '../src/story-people.js';
 import {validatePeopleRoles,releasePeopleRoles} from './people-roles.mjs';
@@ -59,7 +60,7 @@ assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COM
 const uxRead=name=>JSON.parse(releaseContent(name));
 const uxEvidence=uxRead('data/evidence.json');
 assets['/collection-counts.json']={type:'application/json; charset=utf-8',body:JSON.stringify({
- people:uxRead('data/reference/people.json').length,places:uxRead('data/reference/places.json').length,
+ people:uxRead('data/reference/people.json').length,places:directoryPlaces(parsePlaces(uxRead('data/reference/places.json'))).length,
  stories:uxRead('data/stories.json').reduce((n,g)=>n+g.stories.length,0),
  commandments:uxRead('data/commandments-catalog.json').records.length,
  science:uxEvidence.filter(r=>r.mode==='science').length,history:uxEvidence.filter(r=>r.mode==='history').length,

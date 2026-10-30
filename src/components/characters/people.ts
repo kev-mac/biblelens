@@ -78,7 +78,7 @@ export function createPeopleSearch(people: DirectoryPerson[]) {
   };
 }
 
-export const CHARACTER_PAGE_SIZE = 15;
+export const CHARACTER_PAGE_SIZE = 24;
 export function characterPage<T>(matches: T[], page: number): T[] {
   return matches.slice(page * CHARACTER_PAGE_SIZE, (page + 1) * CHARACTER_PAGE_SIZE);
 }

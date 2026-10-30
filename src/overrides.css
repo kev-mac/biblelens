@@ -2743,7 +2743,7 @@ html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#comman
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .directory-search{font-style:normal}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .directory-results{position:static;width:auto;height:auto;clip:auto;overflow:visible;margin:0;font-size:.74rem;color:#64748B}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub :is(#characters-list,.places-directory-list,#commandments-list,.marked-category-content){display:flex;flex-direction:column;gap:12px;padding:0;margin:0;list-style:none;max-width:100%}
-html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-card{position:relative;inset:auto;height:auto;min-height:0;overflow:visible;backdrop-filter:none;--theme-rgb:var(--directory-rgb);background:linear-gradient(rgba(var(--directory-rgb),.025),rgba(var(--directory-rgb),.025)),#141A23}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-card{position:relative;inset:auto;height:auto;min-height:0;overflow:visible;backdrop-filter:none;--theme-rgb:var(--directory-rgb);background:rgba(20,26,35,.7);border-radius:16px}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-card::before,html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-card::after{display:none}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-card .story-title{font:700 1.15rem/1.3 var(--ui-font);color:#fff;margin:0;padding:0;min-height:0}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-card .story-summary{display:block;font:400 .84rem/1.55 var(--ui-font);color:#CBD5E1;margin:0;padding:0}
@@ -2893,3 +2893,26 @@ html body.lens-app #lensReadingBar #lens-focus:focus-visible{outline:1px solid v
 @media(max-width:767px){html body.lens-app.dark #chapter-text .chapter-subtitle{color:#fff}}
 /* A saved-verse indicator must share the number’s inline formatting context. */
 html body.lens-app #chapter-text .verse-num .verse-bookmark-indicator{display:inline-block;width:7px;height:7px;vertical-align:super;margin-left:1px}
+
+/* UX11d: one shared single-row directory footer. */
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-footer{flex-wrap:nowrap;min-width:0}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-footer>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-linked-meta{flex:0 1 auto;flex-basis:auto;font-size:.7rem;white-space:nowrap}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-footer>.action-link{flex:none;margin-left:auto;display:inline-flex;align-items:center}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .stories-header{border-bottom:1px solid rgba(255,255,255,.08)}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .passage-badge{align-self:flex-start;display:inline-block;white-space:nowrap;min-height:0;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-summary :is(.person-chip,.location-chip){display:inline;position:relative;padding:0;margin:0;min-width:0;min-height:0;height:auto;line-height:inherit;vertical-align:baseline;color:var(--directory-accent);background:none;border:0;text-decoration:none}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-summary :is(.person-chip,.location-chip)::before{content:"";position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);width:max(100%,44px);height:44px}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .filter-carousel{scroll-behavior:auto;scroll-padding-inline:16px;mask-image:none}
+html body.lens-app #ux-alphabet-sheet{position:fixed;inset:auto 0 calc(72px + env(safe-area-inset-bottom));margin:0 auto;width:100%;max-width:600px;max-height:calc(100dvh - 100px);padding:12px 20px 20px;overflow:auto;border:1px solid rgba(59,130,246,.35);border-radius:18px 18px 0 0;background:#141A23;color:#F8FAFC;box-sizing:border-box;box-shadow:none}
+html body.lens-app #ux-alphabet-sheet .stories-sheet-heading{margin:0 0 8px;display:flex;align-items:center;justify-content:space-between}
+html body.lens-app #ux-alphabet-sheet .stories-sheet-heading button{position:static;min-height:44px;min-width:44px;width:44px;height:44px;padding:0;background:none;border:0}
+html body.lens-app #ux-alphabet-sheet .sheet-handle{display:block;width:36px;height:4px;border-radius:4px;background:#64748B;margin:0 auto 8px}
+html body.lens-app #ux-alphabet-sheet .ux-dialog-path{display:none}
+html body.lens-app #main #characters-view.directory-hub .stories-content{padding-bottom:150px}
+html body.lens-app #ux-empty-verse-actions #ux-empty-verse-toast{position:static;transform:none;width:auto;max-width:none;margin:0;padding:8px 10px 4px;background:none;border:0;border-radius:0;box-shadow:none;color:var(--lens-ink)}
+/* Reserve an alphabet dock outside the People scroll area so actions stay clear. */
+html body.lens-app:has(#characters-view:not([hidden])){overflow:hidden}
+html body.lens-app:has(#characters-view:not([hidden])) #main{position:fixed;inset:0 0 auto;margin:0 auto;flex:0 0 auto;min-height:0;height:calc(100dvh - 144px - env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}
+html body.lens-app #main #places-view.directory-hub .place-profile-card>.passage-badge{max-width:calc(100% - 36px)}
+html body.lens-app #characters-view .stories-content>footer{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:20px 0;font-size:.74rem;margin:0}

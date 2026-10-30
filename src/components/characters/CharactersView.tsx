@@ -87,11 +87,11 @@ function mountCharacters(): void {
   searchBox.classList.add('directory-filters');
   searchBox.append(label, search, categories);
   let alphabetJump:string|null=null;
-  const alphabetSheet=element('dialog','ux-alphabet-sheet');alphabetSheet.id='ux-alphabet-sheet';alphabetSheet.setAttribute('aria-labelledby','ux-alphabet-title');
+  const alphabetSheet=element('dialog','ux-alphabet-sheet stories-filter-sheet');alphabetSheet.id='ux-alphabet-sheet';alphabetSheet.setAttribute('aria-labelledby','ux-alphabet-title');
   const alphabetTitle=element('h2','','People A–Z');alphabetTitle.id='ux-alphabet-title';
   const alphabetHelp=element('p','','Letters without matching names are disabled.');alphabetHelp.id='ux-alphabet-help';alphabet.setAttribute('aria-describedby',alphabetHelp.id);
-  const alphabetClose=element('button','','Close');alphabetClose.type='button';alphabetClose.onclick=()=>alphabetSheet.close();
-  alphabetSheet.append(alphabetTitle,alphabetHelp,alphabet,alphabetClose);document.body.append(alphabetSheet);
+  const alphabetClose=element('button','','×');alphabetClose.setAttribute('aria-label','Close People A–Z');alphabetClose.type='button';alphabetClose.onclick=()=>alphabetSheet.close();
+  const alphabetHandle=element('div','sheet-handle');alphabetHandle.setAttribute('aria-hidden','true');const alphabetHeader=element('div','stories-sheet-heading');alphabetHeader.append(alphabetTitle,alphabetClose);alphabetSheet.append(alphabetHandle,alphabetHeader,alphabetHelp,alphabet);document.body.append(alphabetSheet);
   const alphabetOpen=element('button','ux-alphabet-open','A–Z');alphabetOpen.type='button';alphabetOpen.id='ux-alphabet-open';alphabetOpen.setAttribute('aria-haspopup','dialog');alphabetOpen.setAttribute('aria-controls',alphabetSheet.id);alphabetOpen.setAttribute('aria-label','Jump to a Letter');
   alphabetOpen.onclick=()=>{alphabetSheet.showModal();alphabet.querySelector<HTMLButtonElement>('button:not(:disabled)')?.focus();};
   alphabetSheet.addEventListener('close',()=>{const target=alphabetJump;alphabetJump=null;if(target){requestAnimationFrame(()=>requestAnimationFrame(()=>{if(!host.hidden)jump(target);}));}else alphabetOpen.focus({preventScroll:true});});
@@ -140,7 +140,7 @@ function mountCharacters(): void {
     }
     count.classList.toggle('loading-state', loading);
     count.textContent = loading ? 'Loading people…' : failed ? 'People could not be loaded. Please retry.'
-      : `${matches.length ? (page * CHARACTER_PAGE_SIZE + 1) : 0}–${Math.min((page + 1) * CHARACTER_PAGE_SIZE, matches.length)} of ${matches.length} people`;
+      : `${(matches.length ? (page * CHARACTER_PAGE_SIZE + 1) : 0).toLocaleString()}–${Math.min((page + 1) * CHARACTER_PAGE_SIZE, matches.length).toLocaleString()} of ${matches.length.toLocaleString()} people`;
     list.setAttribute('aria-busy', String(loading));
     previous.disabled = page === 0; next.disabled = (page + 1) * CHARACTER_PAGE_SIZE >= matches.length;
     pagination.hidden = loading || failed || matches.length <= CHARACTER_PAGE_SIZE;

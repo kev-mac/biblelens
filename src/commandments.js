@@ -53,8 +53,8 @@ async function loadCommandmentContext(panel,reference){
 }
 function commandmentCard(item) {
  const prefix='commandment-'+item.id,title=commandmentDirective(item.title);
- const control=(key,label,paths)=>`<button type="button" class="person-section-toggle" data-commandment-section aria-expanded="false" aria-controls="${esc(prefix)}-${key}" id="${esc(prefix)}-${key}-toggle"><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths}</svg></span><span class="person-section-label">${label}</span></button>`;
- return `<article class="commandment-card" data-commandment-reference="${esc(item.passage)}"><p class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</p><div class="commandment-card-heading"><h2>${esc(title)}</h2></div><div class="commandment-summary"><p>${commandmentPassageLink(item.passage)} <q>${esc(item.summary)}</q></p></div><div class="person-section-controls" role="group" aria-label="${esc(title)} commandment sections">${control('context','Context','<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/>')}${item.lens?.length?control('lens','NT Lens','<path d="M3 4h7a3 3 0 0 1 3 3v14a3 3 0 0 0-3-3H3z"/><path d="M13 7a3 3 0 0 1 3-3h5v14h-5a3 3 0 0 0-3 3"/>'):''}</div><section class="person-section-panel commandment-context" id="${esc(prefix)}-context" aria-labelledby="${esc(prefix)}-context-toggle" hidden></section>${item.lens?.length?`<section class="person-section-panel commandment-lens" id="${esc(prefix)}-lens" aria-labelledby="${esc(prefix)}-lens-toggle" hidden><h3>New Testament Lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${commandmentPassageLink(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
+ const control=(key,label,paths)=>`<button type="button" class="person-section-toggle action-link" data-commandment-section aria-expanded="false" aria-controls="${esc(prefix)}-${key}" id="${esc(prefix)}-${key}-toggle"><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths}</svg></span><span class="person-section-label">${label}</span></button>`;
+ return `<article class="commandment-card" data-commandment-reference="${esc(item.passage)}"><p class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</p><div class="commandment-card-heading"><h2>${esc(title)}</h2></div><div class="commandment-summary"><p>${commandmentPassageLink(item.passage)} <q>${esc(item.summary)}</q></p></div><div class="story-footer"><span>${(item.lens||[]).length.toLocaleString()} linked texts</span>${control('context','View commandment →','')}</div><section class="person-section-panel commandment-context" id="${esc(prefix)}-context" aria-labelledby="${esc(prefix)}-context-toggle" hidden></section>${item.lens?.length?`<section class="person-section-panel commandment-lens" id="${esc(prefix)}-lens" aria-labelledby="${esc(prefix)}-lens-toggle" hidden><h3>New Testament Lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${commandmentPassageLink(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
 }
 async function initCommandments() {
  const root=document.querySelector('#commandments-view');if(!root)return;
@@ -65,13 +65,13 @@ async function initCommandments() {
  matrix.innerHTML=Object.entries(COMMANDMENT_FACETS).map(([dimension,values])=>`<fieldset><legend>${dimension[0].toUpperCase()+dimension.slice(1)}</legend><div class="commandments-options">${values.map(value=>`<button type="button" class="secondary commandment-facet-toggle filter-pill" data-commandment-dimension="${dimension}" data-value="${esc(value)}" aria-pressed="false"><span>${esc(value)}</span></button>`).join('')}</div></fieldset>`).join('');
  search.placeholder=`Search ${COMMANDMENTS.length} commandments, passages…`;
  const chips=document.createElement('nav');chips.className='directory-categories filter-carousel';chips.setAttribute('aria-label','Commandment polarity');root.querySelector('.results-line').before(chips);
- let visibleCount=60;
+ let visibleCount=24;
  function render() {
   chips.replaceChildren(...['All',...new Set(COMMANDMENTS.map(item=>item.taxonomy.polarity))].map(value=>{
    const button=document.createElement('button');button.type='button';button.className='filter-pill';
    const selected=value==='All'?!filters.polarity.length:filters.polarity.includes(value);button.classList.toggle('active',selected);button.setAttribute('aria-pressed',String(selected));
    button.textContent=value+' ('+(value==='All'?COMMANDMENTS.length:COMMANDMENTS.filter(item=>item.taxonomy.polarity===value).length)+')';
-   button.onclick=()=>{filters.polarity=value==='All'?[]:[value];visibleCount=60;render();};return button;
+   button.onclick=()=>{filters.polarity=value==='All'?[]:[value];visibleCount=24;render();};return button;
   }));
   const items=filterCommandments(COMMANDMENTS,filters,search.value).filter(item=>!/^\s*[PN]\d+\s*$/i.test(search.value)||item.code===search.value.trim().toUpperCase());
   document.querySelector('#commandments-list').innerHTML=items.length?items.slice(0,visibleCount).map(commandmentCard).join('')+(items.length>visibleCount?'<button type="button" id="commandments-load-more">Show More</button>':''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
@@ -89,7 +89,7 @@ async function initCommandments() {
  }
  function toggle(dimension,value,enabled) {
   const selected=new Set(filters[dimension]);if(enabled)selected.add(value);else selected.delete(value);
-  filters[dimension]=[...selected];visibleCount=60;render();
+  filters[dimension]=[...selected];visibleCount=24;render();
  }
  root.addEventListener('click',event=>{
   const retry=event.target.closest('[data-commandment-context-retry]');if(retry){const panel=retry.closest('.commandment-context');void loadCommandmentContext(panel,panel.closest('.commandment-card').dataset.commandmentReference);return;}
@@ -98,13 +98,14 @@ async function initCommandments() {
    if(section.disabled)return;
    const card=section.closest('.commandment-card'),panel=document.getElementById(section.getAttribute('aria-controls')),open=panel.hidden;
    for(const control of card.querySelectorAll('[data-commandment-section]')){const selected=open&&control===section;control.setAttribute('aria-expanded',String(selected));document.getElementById(control.getAttribute('aria-controls')).hidden=!selected;}
+   const lens=card.querySelector('.commandment-lens');if(lens)lens.hidden=!open;
    if(open&&panel.classList.contains('commandment-context'))void loadCommandmentContext(panel,card.dataset.commandmentReference);return;
   }
 
  });
  matrix.addEventListener('click',event=>{const button=event.target.closest('[data-commandment-dimension]');if(button&&!button.disabled)toggle(button.dataset.commandmentDimension,button.dataset.value,!filters[button.dataset.commandmentDimension].includes(button.dataset.value));});
- search.addEventListener('input',()=>{visibleCount=60;render();});
- function clear(){visibleCount=60;Object.keys(filters).forEach(key=>{filters[key]=[];});render();}
+ search.addEventListener('input',()=>{visibleCount=24;render();});
+ function clear(){visibleCount=24;Object.keys(filters).forEach(key=>{filters[key]=[];});render();}
  document.querySelector('#commandments-reset').onclick=()=>{search.value='';clear();};
  document.querySelector('#commandments-clear').onclick=clear;
  more.onclick=()=>{sheet.showModal();more.setAttribute('aria-expanded','true');document.body.classList.add('commandments-filter-open');};
@@ -122,7 +123,7 @@ async function initCommandments() {
  handle.addEventListener('pointerup',event=>{if(drag?.id===event.pointerId&&event.clientY-drag.y>60)close();drag=null;});
  handle.addEventListener('pointercancel',()=>{drag=null;});
  root.addEventListener('click',event=>{
-  if(event.target.closest('#commandments-load-more')){visibleCount+=60;render();return;}
+  if(event.target.closest('#commandments-load-more')){visibleCount+=24;render();return;}
   const button=event.target.closest('[data-commandment-passage]');if(!button)return;
   const ref=readRef(button.dataset.commandmentPassage);if(!ref){toast('Passage reader is still loading. Please try again.');return;}
   storiesActive=false;renderStoriesView();setView('read',false);loadChapter(ref.book,ref.chapter,ref.verse);

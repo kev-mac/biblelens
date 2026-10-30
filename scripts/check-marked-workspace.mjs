@@ -90,13 +90,12 @@ console.log('PASS: zero-result draft filters respect categories, chapters, perso
 // Questions retain evidence and scope in People-style, initially closed sections.
 const question=context.markedCategoryProfileCard({summary:'Genesis 1 leaves a question open.',text:'Quoted evidence',scope:'Interpretation limits',sources:[{url:'https://example.com/source',label:'Edition source'}],reasoning:'Reasoned comparison'}, {}, 'question-test', 'A question?', [{label:'Genesis 1:3',quotes:['Let there be light']}], '<div>Secondary References</div>');
 assert(question.includes('category-profile-card'));
-assert.equal((question.match(/data-category-section aria-expanded="false"/g)||[]).length,2);
-assert(question.includes('id="question-test-verses" aria-labelledby="question-test-verses-toggle" hidden'));
-assert(question.includes('id="question-test-reasoning" aria-labelledby="question-test-reasoning-toggle" hidden'));
+assert.equal((question.match(/data-comparison-inspect/g)||[]).length,1);
+assert(question.includes('View record →'));assert(question.includes('<details class="comparison-details" hidden>'));
 assert(question.includes('Let there be light'));assert(question.includes('Secondary References'));
 assert(question.includes('Interpretation limits'));assert(question.includes('Edition source'));
 assert(!question.includes('data-summary-toggle'));
-console.log('PASS: Questions profile cards preserve quotations, secondary references, reasoning, scope and sources in initially closed sections.');
+console.log('PASS: Questions profile cards preserve quotations, secondary references, reasoning, scope and sources behind one record action.');
 
 context.books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 assert.equal(context.markedInlineScriptureLinks('Psalm 148:4'),'<a class="comparison-inline-reference" href="#read/18/148/4">Psalm 148:4</a>');

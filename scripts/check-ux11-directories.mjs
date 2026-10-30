@@ -16,11 +16,11 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
    if(total)assert((await host.locator('.directory-search').getAttribute('placeholder')).includes(total.toLocaleString())||(await host.locator('.directory-search').getAttribute('placeholder')).includes(String(total)),name+' real total');
    else if(name.startsWith('gallery-')){
     const data=await page.evaluate(async hash=>hash==='#questions'?{total:(await(await fetch('/accepted-questions.json')).json()).length}:await(await fetch('/api/debates?'+hash.split('?')[1])).json(),hash);
-    assert.match(await host.locator('.directory-results').innerText(),new RegExp('of '+data.total+' '));assert((await host.locator('.directory-search').getAttribute('placeholder')).includes(String(data.collectionTotal||data.total)),name+' real count');
+    assert.match(await host.locator('.directory-results').innerText(),new RegExp('of '+data.total.toLocaleString()+' '));assert((await host.locator('.directory-search').getAttribute('placeholder')).includes((data.collectionTotal||data.total).toLocaleString()),name+' real count');
    }else{
     const key=name.slice(9),data=await page.evaluate(async key=>(await fetch('/api/categories?book=all&kind='+key+'&limit=0')).json(),key);
-    assert.match(await host.locator('.category-results').innerText(),new RegExp('of '+data.total+' results'));
-    assert((await host.locator('.directory-search').getAttribute('placeholder')).includes(String(data.total)),name+' real count');
+    assert.match(await host.locator('.category-results').innerText(),new RegExp('of '+data.total.toLocaleString()+' results'));
+    assert((await host.locator('.directory-search').getAttribute('placeholder')).includes(data.total.toLocaleString()),name+' real count');
    }
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),name+' '+width+' overflow');
    for(const selector of ['.directory-filter-open','.phase2-debate-card','.ux-person-open','.filter-pill','a.action-link','button.action-link','.place-map-action','.person-section-toggle']){

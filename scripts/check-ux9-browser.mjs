@@ -11,7 +11,7 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
  const shot=async(name)=>{
   await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(80);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,name+' document overflow');
-  const small=await page.locator('button:visible,a:visible,select:visible,summary:visible').evaluateAll(nodes=>nodes.filter(n=>!n.disabled&&!n.matches('.skip,.sr-only')).map(n=>{const r=n.getBoundingClientRect();return {label:n.getAttribute('aria-label')||n.textContent.trim().slice(0,45),w:r.width,h:r.height};}).filter(r=>r.w<43.9||r.h<43.9));
+  const small=await page.locator('button:visible,a:visible,select:visible,summary:visible').evaluateAll(nodes=>nodes.filter(n=>!n.disabled&&!n.matches('.skip,.sr-only')).map(n=>{const r=n.getBoundingClientRect(),hit=getComputedStyle(n,'::before'),inline=n.matches('.verse-num,.story-summary .person-chip,.story-summary .location-chip');return {label:n.getAttribute('aria-label')||n.textContent.trim().slice(0,45),w:inline?Math.max(r.width,parseFloat(hit.width)||0):r.width,h:inline?Math.max(r.height,parseFloat(hit.height)||0):r.height};}).filter(r=>r.w<43.9||r.h<43.9));
   matrix.push({engine,width,screen:name,smallTargets:small});
   if(engine==='chromium'&&process.env.UX_NO_SHOTS!=='1')await page.screenshot({path:`${out}/${width}-${name}.png`});
  };
@@ -19,7 +19,7 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
  await page.route('**/assets/characters.*.js',async route=>{await new Promise(resolve=>setTimeout(resolve,1500));await route.continue();});
  await page.evaluate(()=>BibleLensWorkspace.navigate('#people'));await page.waitForTimeout(150);assert.equal(await page.locator('.lens-context h1').innerText(),'People');assert.equal(await page.title(),'People · BibleLens');await shot('people-loading');await page.locator('.ux-contact').first().waitFor();await page.unroute('**/assets/characters.*.js');
  await page.goto(base+'/#read/0/1');await page.locator('#verse-3 .verse-num').waitFor();await page.waitForFunction(()=>comparisonModes.every(mode=>comparisonCache.get(comparisonKey(mode))?.status==='ready'));
- await shot('read');const verse=page.locator('#verse-3 .verse-num'),target=await verse.boundingBox();assert(target.width>=44&&target.height>=44);
+ await shot('read');const verse=page.locator('#verse-3 .verse-num'),target=await verse.evaluate(n=>{const r=n.getBoundingClientRect(),hit=getComputedStyle(n,'::before');return {width:Math.max(r.width,parseFloat(hit.width)||0),height:Math.max(r.height,parseFloat(hit.height)||0)};});assert(target.width>=44&&target.height>=44);
  await verse.click();await page.locator('#lens-inspector-sheet[open]').waitFor();await shot('verse-evidence');
  for(const quote of await page.locator('#lensInspector .comparison-side q').all())assert(await quote.evaluate(n=>n.clientWidth>=n.closest('.lens-evidence').clientWidth-40),'Evidence quotes fill card');
  await page.locator('[data-context-bookmark]').click();assert.match(await page.locator('#lens-action-toast').innerText(),/^Saved/);await page.keyboard.press('Escape');

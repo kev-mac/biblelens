@@ -81,3 +81,6 @@ export async function loadPlaces(){
  return pending;
 }
 export async function getLocationDetails(placeId){const places=await loadPlaces(),key=String(placeId);return places.get(key)||[...places.values()].find(p=>p.lookupIds.includes(key))||null;}
+
+// Possessive aliases remain addressable by ID, but do not form separate directory entries.
+export function directoryPlaces(places){return [...places.values()].filter(place=>!(/['’]s$/i.test(place.name)&&place.canonicalId!==place.id&&places.has(place.canonicalId)));}

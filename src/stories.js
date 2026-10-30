@@ -3,7 +3,7 @@
 let storiesActive=false,storiesRequest=null,storiesGeneration=0,storiesCatalog=null;
 function storiesFilterButton(){return '';}
 let storiesBook='',storiesTheme='',storiesSearch='',storiesPage=0;
-const STORIES_PAGE_SIZE=10;
+const STORIES_PAGE_SIZE=24;
 let storiesSection='';
 const STORIES_SECTIONS=['Law','History','Poetry & Wisdom','Prophets','Gospels & Acts','Letters & Revelation'];
 function loadStories(){
@@ -25,9 +25,10 @@ function storyCard(story, pivot=false){
  const parts=[[counts.crossReferences,'cross-reference'],[counts.science,'science note'],[counts.history,'history note'],[counts.text,'text note']].filter(([n])=>n>0);
  const label=([n,text])=>`${n} ${text}${n===1?'':'s'}`,fullMeta=parts.map(label).join(' • ');
  const ranked=[...parts].sort((a,b)=>b[0]-a[0]);
+ const candidates=[ranked.slice(0,2).map(label).join(' · ')+(ranked.length>2?` · +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:''),ranked.slice(0,1).map(label).join('')+(ranked.length>1?` · +${ranked.slice(1).reduce((n,[count])=>n+count,0)} more`:'')];
  const meta=parts.length>2?ranked.slice(0,2).map(label).join(' • ')+` • +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:fullMeta;
  const context=reference?` data-story-book="${reference.book}" data-story-chapter="${reference.chapter}" data-story-verse="${reference.verse}" data-story-end-chapter="${reference.endChapter}" data-story-end-verse="${reference.endVerse}"`:'';
- return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(story.passage.replace(/\s*[-–]\s*/g,' – '))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title)}</h${pivot?3:2}><div class="story-summary">${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div><div class="story-footer">${meta?`<span class="story-linked-meta" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story →</button></div></article>`;
+ return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(story.passage.replace(/\s*[-–]\s*/g,' – '))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title)}</h${pivot?3:2}><div class="story-summary">${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div><div class="story-footer">${meta?`<span class="story-linked-meta" data-meta-options="${esc(JSON.stringify(candidates))}" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story →</button></div></article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
@@ -131,3 +132,27 @@ $('#story-topic-sheet').addEventListener('close',()=>document.body.classList.rem
 $('#story-topic-sheet').addEventListener('cancel',()=>document.body.classList.remove('story-topic-open'));
 window.addEventListener('hashchange',()=>{closeStoryTopic();if($('#stories-filter-sheet').open)$('#stories-filter-sheet').close();});
 window.addEventListener('viewchange',closeStoryTopic);
+
+// Fit real metadata against the action’s measured width, including after resizing.
+function fitStoryFooters(){
+ // Read every footer before changing text, avoiding one layout per candidate.
+ const rows=[...document.querySelectorAll('.story-footer:has(.story-linked-meta)')].flatMap(footer=>{
+  const meta=footer.querySelector('.story-linked-meta'),action=footer.querySelector('.action-link');
+  if(!action||!footer.clientWidth)return [];
+  const style=getComputedStyle(meta);
+  return [{meta,options:JSON.parse(meta.dataset.metaOptions),font:style.font,spacing:parseFloat(style.letterSpacing)||0,available:footer.clientWidth-action.getBoundingClientRect().width-8}];
+ });
+ const ctx=document.createElement('canvas').getContext('2d');
+ for(const row of rows){
+  ctx.font=row.font;
+  const chosen=row.options.find(text=>ctx.measureText(text).width+Math.max(0,text.length-1)*row.spacing<=row.available+.5)||row.options.at(-1);
+  if(row.meta.textContent!==chosen)row.meta.textContent=chosen;
+ }
+}
+
+if(typeof ResizeObserver!=='undefined'&&typeof MutationObserver!=='undefined'){
+const storyFooterObserver=new ResizeObserver(fitStoryFooters);
+new MutationObserver(()=>{storyFooterObserver.disconnect();for(const footer of document.querySelectorAll('.story-footer:has(.story-linked-meta)'))storyFooterObserver.observe(footer);fitStoryFooters();}).observe(document.getElementById('stories-list'),{childList:true});
+document.fonts.ready.then(fitStoryFooters);
+window.addEventListener('biblelens:statechange',fitStoryFooters);
+}

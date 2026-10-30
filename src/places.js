@@ -1,6 +1,8 @@
+import books from '../data/books.json' with {type:'json'};
 import atlasStyle from './data/atlas-style.json';
 import {loadPlaces,getLocationDetails,createPlaceMatcher,wrapLocationNames,atlasDescription} from './places-core.js';
 const sheet=document.querySelector('#atlas-sheet'),mapNode=document.querySelector('#atlas-map'),status=document.querySelector('#atlas-status');
+const passageDetails=document.createElement('details');passageDetails.id='atlas-passages';passageDetails.className='atlas-sources';passageDetails.hidden=true;document.querySelector('#atlas-sources').before(passageDetails);
 let map,marker,anchor,request=0,workerURL,mapFailed=false,mapTimer;
 const close=()=>sheet.close();
 function themedStyle(){const style=structuredClone(atlasStyle),dark=document.body.classList.contains('dark');if(dark)for(const layer of style.layers){const paint=layer.paint||{};if(layer.type==='background')paint['background-color']='#23313a';if(layer.type==='fill')paint['fill-color']='#17232f';if(layer.type==='line')paint['line-color']='#526573';if(layer.type==='symbol'){paint['text-color']='#d7e4e9';paint['text-halo-color']='#23313a';}}return style;}
@@ -27,6 +29,7 @@ function colorMap(){
 }
 new MutationObserver(colorMap).observe(document.body,{attributes:true,attributeFilter:['class']});
 async function openAtlas(id,button){
+ passageDetails.hidden=true;passageDetails.open=false;passageDetails.replaceChildren();
  document.querySelector('#atlas-sources').open=false;document.querySelectorAll('.atlas-map-controls').forEach(node=>node.hidden=true);
  const token=++request;anchor?.setAttribute('aria-expanded','false');anchor=button;button.setAttribute('aria-expanded','true');
  document.querySelector('#atlas-name').classList.add('loading-state');document.querySelector('#atlas-name').textContent='Loading place…';document.querySelector('#atlas-names').textContent='';document.querySelector('#atlas-description').textContent='';document.querySelector('#atlas-description').hidden=true;status.textContent='';mapNotice.classList.remove('loading-state');mapNotice.textContent='';identification.textContent='';mapNode.hidden=true;document.querySelector('#atlas-external').hidden=true;
@@ -36,6 +39,13 @@ async function openAtlas(id,button){
   document.querySelector('#atlas-name').classList.remove('loading-state');document.querySelector('#atlas-name').textContent=place.name;
   document.querySelector('#atlas-names').textContent=[place.modern_name&&`Modern Name: ${place.modern_name}`,place.aliases.length&&`Also called ${place.aliases.join(', ')}`].filter(Boolean).join(' · ');
   const description=document.querySelector('#atlas-description');description.textContent=atlasDescription(place);description.hidden=!description.textContent;
+  const refs=(place.refs||[]).filter(([book,chapter,verse])=>books[book]&&Number.isInteger(chapter)&&Number.isInteger(verse));
+  if(refs.length){
+   const summary=document.createElement('summary');summary.textContent='Linked Passages ('+refs.length.toLocaleString()+')';passageDetails.append(summary);
+   const list=document.createElement('ul');passageDetails.append(list);
+   for(const [book,chapter,verse]of refs){const row=document.createElement('li'),link=document.createElement('a');link.href='#read/'+book+'/'+chapter+'/'+verse;link.textContent=books[book].name+' '+chapter+':'+verse;link.onclick=close;link.style.display='inline-flex';link.style.alignItems='center';link.style.minHeight='44px';row.append(link);list.append(row);}
+   passageDetails.hidden=false;
+  }
   if(!place.coordinates){identification.textContent='Location unknown';return;}
   const {latitude,longitude}=place.coordinates,point=[longitude,latitude];mapNode.hidden=false;document.querySelectorAll('.atlas-map-controls').forEach(node=>node.hidden=false);
   const approximate=place.verification!=='VERIFIED'||!['Precise','Center'].includes(place.precision);
