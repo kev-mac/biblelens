@@ -3,7 +3,7 @@ import type { DirectoryPerson } from './people';
 import type { CharacterProfile } from '../../types/character';
 import { characters, characterVerseRoute } from './directory';
 export { characters } from './directory';
-import { CharacterCard, CharacterNameCard, PersonContact, element } from './CharacterCard';
+import { CharacterCard, CharacterNameCard, PersonContact, ProfileBiography, element } from './CharacterCard';
 import {ProfileSections} from './ProfileSections';
 import {loadCharacterGraph} from '../../character-connections.js';
 import {FamilyConnections, connectionProfile, referenceId} from './Connections';
@@ -306,7 +306,7 @@ function mountCharacters(): void {
     else {
       const context = element('div', 'character-profile-context');
       context.append(element('span', 'character-era', profile.era), element('span', 'character-profile-kind', characters.some(person => person.id === profile!.id) ? 'Curated Profile' : 'Reference Profile'));
-      body.append(context, element('p', 'character-profile-biography', profile.summary), ProfileSections(profile, graph));
+      body.append(context, ProfileBiography(profile), ProfileSections(profile, graph));
     }
     if (!profile && !graph) {
       const retry = element('button', 'character-connections-retry', 'Retry Profile'); retry.type = 'button';

@@ -42,7 +42,7 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
       const parent = [...(record.relations?.father || []), ...(record.relations?.mother || [])].map(relation => records.get(relation.id)?.name).find(Boolean);
       label = roleLabel + (sameRole && parent ? ', child of ' + parent : '');
     }
-    return [{roles, id: record.id, name: record.name.trim(), identity_context: label || (() => {
+    return [{roles, scripture_context:record.scripture_context,summary_source:record.summary_source,summary_route:record.summary_route,summary_links:record.summary_links, id: record.id, name: record.name.trim(), identity_context: label || (() => {
       const parent = [...(record.relations?.father || []), ...(record.relations?.mother || [])].map((relation: {id: string}) => records.get(relation.id)?.name).find(Boolean);
       return parent ? 'child of ' + parent : key_passages[0] || '';
     })(), aliases, summary, key_passages,

@@ -12,6 +12,27 @@ export function element<K extends keyof HTMLElementTagNameMap>(tag: K, className
   return node;
 }
 
+export function ProfileBiography(profile: CharacterProfile): HTMLElement {
+ const root=element('div','character-biography');
+ const context=!profile.summary?profile.scripture_context:undefined;
+ const text=context?.text||profile.summary;
+ if(!text)return root;
+ const paragraph=element(context?'blockquote':'p','character-profile-biography');
+ let cursor=0;
+ for(const hit of context?.links||profile.summary_links||[]){
+  paragraph.append(document.createTextNode(text.slice(cursor,hit.start)));
+  const link=element('a','character-biography-person',hit.label);link.href='#characters/'+encodeURIComponent(hit.id);
+  paragraph.append(link);cursor=hit.end;
+ }
+ paragraph.append(document.createTextNode(text.slice(cursor)));root.append(paragraph);
+ if(context||profile.summary_source){
+  const source=element('a','character-biography-source',context?context.ref+' · KJV':profile.summary_source);
+  source.href=context?`#read/${context.book}/${context.chapter}/${context.verse}`:profile.summary_route!;
+  root.prepend(source);
+ }
+ return root;
+}
+
 export function StoryAnchor(anchor: LinkedStoryAnchor): HTMLAnchorElement {
   const link = element('a', 'character-story-chip');
   link.href = anchor.route;
@@ -89,7 +110,7 @@ export function PersonContact(profile: CharacterProfile & {roles?: {role:string;
  const context=element('div','character-profile-context');
  context.append(element('span','character-era',profile.era),element('span','character-profile-kind',characters.some(person=>person.id===profile.id)?'Curated Profile':'Reference Profile'));
  body.append(context);
- if(profile.summary)body.append(element('p','character-profile-biography',profile.summary));
+ body.append(ProfileBiography(profile));
  body.append(ProfileSections(profile));
  card.append(body);return card;
 }

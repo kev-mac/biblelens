@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import {build} from 'esbuild';
 import {validateCharacters} from './characters.mjs';
+import './check-people-context.mjs';
 
 const total=validateCharacters();
 const result=await build({entryPoints:['src/components/characters/CharactersView.tsx'],bundle:true,write:false,format:'esm',platform:'node'});

@@ -3,6 +3,7 @@ import {addUX13Events,validateUX13Content} from './ux13-content.mjs';
 import {parsePlaces,directoryPlaces} from '../src/places-core.js';
 import {enrichStories} from './story-metrics.mjs';
 import {linkPeopleStories} from '../src/story-people.js';
+import {addPeopleContext} from './people-context.mjs';
 import {validatePeopleRoles,releasePeopleRoles} from './people-roles.mjs';
 import {draftPreviewEnabled} from './draft-debates.mjs';
 import {releaseContent,releaseJsonPlugin,releaseReferences,accepted} from './rc1-content.mjs';
@@ -123,6 +124,7 @@ for(const [key,encoded] of Object.entries(linkedChapters))for(const verse of JSO
 assets['/reference/places.json'].body=JSON.stringify(JSON.parse(assets['/reference/places.json'].body).map(record=>({...record,fields:{...record.fields,linkedPassageCount:Array.isArray(record.fields.refs)?record.fields.refs.length:placePassages.get(record.id)?.size||0}})));
 let worker=fs.readFileSync('worker/index.mjs','utf8').replace('/*__ACCEPTED_QUESTIONS__*/[]',()=>JSON.stringify(accepted.questions)).replace('/*__SEARCH_CORE__*/',()=>fs.readFileSync('src/search-core.js','utf8')).replace('/*__DEBATES__*/',()=>fs.readFileSync('worker/debates.mjs','utf8').replace("import acceptedRulings from '../data/rc1-rulings.json' with {type:'json'};",()=> 'const acceptedRulings='+fs.readFileSync('data/rc1-rulings.json','utf8')+';').replaceAll('export function','function')).replace('/*__CATEGORIES__*/',()=> 'const CATEGORY_STORIES='+assets['/stories.json'].body+';\nconst CATEGORY_PROPHECIES='+fs.readFileSync('src/data/prophecies.json','utf8')+';\nconst CATEGORY_PERSON_SUMMARIES='+JSON.stringify(categorySummaries)+';\n'+fs.readFileSync('worker/categories.mjs','utf8').replaceAll('export function','function')).replace('/*__SYNC__*/',()=>fs.readFileSync('worker/sync.mjs','utf8').replace('export async function','async function'));for(const [marker,file]of [['BOOKS','data/books.json'],['CHAPTERS','data/chapters.json'],['EVIDENCE','data/evidence.json']])worker=worker.replace(new RegExp('/\\*__'+marker+'__\\*/'+(['BOOKS','EVIDENCE'].includes(marker)?'\\[\\]':'\\{\\}')),marker==='CHAPTERS'?JSON.stringify(linkedChapters):marker==='BOOKS'?JSON.stringify(readerBooks):releaseContent(file,b4Content(file)));
 const references=loadReferenceResources();
+references.people=addPeopleContext(references.people,JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
 const reviewedReferences=releaseReferences(references.people,JSON.parse(assets['/reference/relationships.json'].body));reviewedReferences.people=releasePeopleRoles(reviewedReferences.people,draftPreviewEnabled());reviewedReferences.people=linkPeopleStories(reviewedReferences.people,JSON.parse(assets['/stories.json'].body),JSON.parse(fs.readFileSync('data/books.json')));references.people=reviewedReferences.people;
 for(const name of ['people','relationships'])assets['/reference/'+name+'.json'].body=JSON.stringify(reviewedReferences[name]);
 const answerLayer=fs.readFileSync('worker/answer-layer.mjs','utf8').replace('/*__PEOPLE__*/[]',()=>JSON.stringify(references.people)).replace('/*__TOPICS__*/[]',()=>JSON.stringify(references.topics));

@@ -25,6 +25,10 @@ export interface NarrativeAnchors {
 }
 
 export interface CharacterProfile {
+  summary_source?: string;
+  summary_route?: string;
+  summary_links?: {start:number;end:number;label:string;id:string}[];
+  scripture_context?: {book:number;chapter:number;verse:number;ref:string;text:string;links:{start:number;end:number;label:string;id:string}[]};
   id: string;
   name: string;
   aliases?: string[];

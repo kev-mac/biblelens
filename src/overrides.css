@@ -3060,8 +3060,13 @@ html body.lens-app #main #characters-list .character-profile-biography{margin:0 
 html body.lens-app #main #characters-list .character-contact-body .person-sections{display:block}
 html body.lens-app #main #characters-view.directory-hub #characters-list .ux-contact .character-card-header{display:flex;align-items:center;gap:12px}
 html body.lens-app #main #characters-view.directory-hub #characters-list .ux-contact .ux-person-open{flex:1;min-width:0;padding:0}
-html body.lens-app #main #characters-list .character-contact-body .person-section-controls{justify-content:flex-start;flex-wrap:wrap;gap:6px;padding:12px 0 0}
-html body.lens-app #main #characters-list .character-contact-body .person-section-toggle{min-height:44px;padding:8px 12px;border:1px solid var(--lens-rule);border-radius:5px;background:var(--lens-surface)}
-html body.lens-app #main #characters-list .character-contact-body .person-section-toggle[aria-expanded=true]{border-color:var(--topic-people);color:var(--topic-people);background:var(--lens-link-soft)}
+html body.lens-app #main #characters-list .character-contact-body .person-section-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:12px 0 0}
+html body.lens-app #main #characters-list .character-contact-body .person-section-toggle{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-width:0;min-height:64px;width:100%;padding:8px 2px;border:0;border-radius:5px;background:transparent}
+html body.lens-app #main #characters-list .character-contact-body .person-section-toggle[aria-expanded=true]{color:var(--topic-people);background:var(--lens-link-soft)}
+html body.lens-app #main #characters-list .character-contact-body .person-section-icon{display:inline-flex;width:22px;height:22px}
+html body.lens-app #main #characters-list .character-contact-body .person-section-icon svg{width:22px;height:22px}
 html body.lens-app :is(#characters-view,#places-view,#character-sheet) .person-section-panel :is(.character-story-chip,.character-relative-chip,.character-verses a,.character-place-citation){border-radius:5px}
 html body.lens-app #main #characters-view.directory-hub .directory-categories button{border-radius:5px}
+html body.lens-app :is(#characters-view,#character-sheet) .character-era{border-radius:4px;padding:3px 7px}
+html body.lens-app :is(#characters-view,#character-sheet) .character-biography-source{display:inline-flex;align-items:center;min-height:44px;color:var(--topic-people);font-size:.76rem;text-decoration:underline;text-underline-offset:3px}
+html body.lens-app :is(#characters-view,#character-sheet) .character-biography-person{color:var(--topic-people);text-decoration:underline;text-underline-offset:3px}
