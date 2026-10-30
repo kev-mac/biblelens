@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 const source=fs.readFileSync('src/app.js','utf8');
-const scope=vm.createContext({URLSearchParams});
+const scope=vm.createContext({URLSearchParams,URL});
 vm.runInContext(source.slice(source.indexOf('function canonicalRouteHash('),source.indexOf('function navigateHash(')),scope);
 for(const [old,expected] of [
  ['#discover','#discover'],['#discover?tab=places','#discover?tab=places'],

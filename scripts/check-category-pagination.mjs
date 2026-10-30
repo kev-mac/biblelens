@@ -45,7 +45,7 @@ console.log('PASS: independent category routes and filter-preserving page/back l
 
 // The Categories index must open the original directories, including old bookmarks.
 const app=fs.readFileSync('src/app.js','utf8');
-const directories={URLSearchParams,};vm.createContext(directories);
+const directories={URLSearchParams,URL};vm.createContext(directories);
 vm.runInContext(app.slice(app.indexOf('const CATEGORY_DIRECTORY_VIEWS='),app.indexOf('function updateHeaderContext()')),directories);
 for(const [key,url] of Object.entries({places:'#places',stories:'#stories',characters:'#people',commandments:'#commandments',prophecies:'#prophecies'}))assert.equal(directories.categoryDirectoryLocation(key),url);
 assert.equal(directories.categoryDirectoryLocation('academic'),null);
