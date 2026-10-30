@@ -9,7 +9,7 @@ import {b6Catalog} from './b6-drafts.mjs';
 import {neutralTree} from './b4-neutral.mjs';
 
 export const banned = /\b(?:debunk\w*|disprov(?:e[sd]?|ing|en)|prov(?:e[sd]?|ing|en)|proof)\b|\bfor or against (?:any |a |the )?(?:faith|religion|belief)\b|\b(?:anti|pro)[- ](?:Christian|Jewish|Muslim|religion)\b|\b(?:debate|debunking) tool\b|\bnot (?:a |an )?(?:debate|debunking) (?:tool|app)\b/gi;
-export const oldLabels = /\b(?:debates?|verdicts?|contradictions?)\b/gi;
+export const oldLabels = /\b(?:debates?|verdicts?)\b/gi;
 export const obsoleteEvidenceLabels = /\b(?:Evidence agrees|Evidence disagrees|Real conflict|Can be reconciled|Different detail|Open question|not a debate)\b/g;
 const read=file=>fs.readFileSync(file,'utf8');
 // Exact quotation spans and source-title fields are the only prose exemptions.
@@ -17,7 +17,8 @@ const read=file=>fs.readFileSync(file,'utf8');
 const allowlist=new Set(JSON.parse(read('research/b4/framing-allowlist.json')).entries.map(row=>row.text));
 export function findings(text,{labels=false}={}){
  const copy=text.replace(/“[^”]*”|"[^"\n]*"/g,quote=>allowlist.has(quote)?'':quote);
- return [...copy.matchAll(labels?oldLabels:banned),...(labels?[...copy.matchAll(obsoleteEvidenceLabels)]:[])].map(match=>match[0]);
+ const verdictMyth = labels ? [] : [...copy.matchAll(/^\s*(?:exposed|lies|myth)[.!]?\s*$|\b(?:Bible|scripture|religion|faith|Christianity|Judaism|Islam) (?:is |are )?(?:exposed|lies)\b|\b(?:religious|biblical) lies\b|\b(?:just|merely|only|is a|are) (?:a )?myth\b|\bmyth (?:busted|exposed|debunked)\b/gi)];
+ return [...verdictMyth,...copy.matchAll(labels?oldLabels:banned),...(labels?[...copy.matchAll(obsoleteEvidenceLabels)]:[])].map(match=>match[0]);
 }
 export function framingAudit(){
  const violations=[],renames=[],exemptions=[];let checked=0;

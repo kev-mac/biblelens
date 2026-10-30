@@ -71,7 +71,7 @@ function mountCharacters(): void {
   const alphabet = element('div', 'ux-alphabet-grid');
   alphabet.setAttribute('role', 'group'); alphabet.setAttribute('aria-label', 'Jump to people by first letter');
   for (const name of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
-    const button = element('button', '', name); button.type = 'button';
+    const button = element('button', '', name); button.dataset.letter=name; button.type = 'button';
     button.setAttribute('aria-label', 'Jump to ' + name);
     button.addEventListener('click', () => { alphabetJump=name;alphabetSheet.close(); });
     alphabet.append(button);
@@ -88,16 +88,28 @@ function mountCharacters(): void {
   searchBox.append(label, search, categories);
   let alphabetJump:string|null=null;
   const alphabetSheet=element('dialog','ux-alphabet-sheet stories-filter-sheet');alphabetSheet.id='ux-alphabet-sheet';alphabetSheet.setAttribute('aria-labelledby','ux-alphabet-title');
-  const alphabetTitle=element('h2','','People A–Z');alphabetTitle.id='ux-alphabet-title';
+  const alphabetTitle=element('h2','','Jump to Letter');alphabetTitle.id='ux-alphabet-title';
   const alphabetHelp=element('p','','Letters without matching names are disabled.');alphabetHelp.id='ux-alphabet-help';alphabet.setAttribute('aria-describedby',alphabetHelp.id);
-  const alphabetClose=element('button','','×');alphabetClose.setAttribute('aria-label','Close People A–Z');alphabetClose.type='button';alphabetClose.onclick=()=>alphabetSheet.close();
+  const alphabetClose=element('button','','×');alphabetClose.setAttribute('aria-label','Close Jump to Letter');alphabetClose.type='button';alphabetClose.onclick=()=>alphabetSheet.close();
   const alphabetHandle=element('div','sheet-handle');alphabetHandle.setAttribute('aria-hidden','true');const alphabetHeader=element('div','stories-sheet-heading');alphabetHeader.append(alphabetTitle,alphabetClose);alphabetSheet.append(alphabetHandle,alphabetHeader,alphabetHelp,alphabet);document.body.append(alphabetSheet);
   const alphabetOpen=element('button','ux-alphabet-open','A–Z');alphabetOpen.type='button';alphabetOpen.id='ux-alphabet-open';alphabetOpen.setAttribute('aria-haspopup','dialog');alphabetOpen.setAttribute('aria-controls',alphabetSheet.id);alphabetOpen.setAttribute('aria-label','Jump to a Letter');
-  alphabetOpen.onclick=()=>{alphabetSheet.showModal();alphabet.querySelector<HTMLButtonElement>('button:not(:disabled)')?.focus();};
+  alphabetOpen.onclick=()=>{updateVisibleLetter();alphabetSheet.showModal();alphabet.querySelector<HTMLButtonElement>('button:not(:disabled)')?.focus();};
   alphabetSheet.addEventListener('close',()=>{const target=alphabetJump;alphabetJump=null;if(target){requestAnimationFrame(()=>requestAnimationFrame(()=>{if(!host.hidden)jump(target);}));}else alphabetOpen.focus({preventScroll:true});});
   alphabetSheet.addEventListener('click',event=>{if(event.target===alphabetSheet){const r=alphabetSheet.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)alphabetSheet.close();}});
   window.addEventListener('viewchange',()=>{if(alphabetSheet.open)alphabetSheet.close();});
-  host.append(heading, searchBox, count, list, alphabetOpen);
+  searchBox.append(alphabetOpen);
+  host.append(heading, searchBox, count, list);
+  function updateVisibleLetter():void {
+    if(host.hidden)return;
+    const headings=[...list.querySelectorAll<HTMLElement>('.ux-letter-heading')];
+    const top=searchBox.getBoundingClientRect().bottom;
+    const current=headings.filter(node=>node.getBoundingClientRect().top<=top+16).at(-1)||headings[0];
+    if(!current)return;
+    for(const button of alphabet.querySelectorAll('button'))button.setAttribute('aria-pressed',String(button.dataset.letter===current.dataset.letter));
+  }
+  let letterFrame=0;
+  document.getElementById('main')?.addEventListener('scroll',()=>{if(!letterFrame)letterFrame=requestAnimationFrame(()=>{letterFrame=0;updateVisibleLetter();});},{passive:true});
+
   // Keep letter dividers below the sticky search/filter controls at every font size.
   new ResizeObserver(() => {
     const top = parseFloat(getComputedStyle(searchBox).top) || 64;
@@ -117,9 +129,12 @@ function mountCharacters(): void {
     const initial = (name: string) => name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase();
     const matches = candidates;
     for (const button of alphabet.querySelectorAll('button')) {
-      button.disabled = !candidates.some(person => initial(person.name) === button.textContent);
+      const name=button.dataset.letter!;
+      const total=candidates.filter(person=>initial(person.name)===name).length;
+      button.replaceChildren(element('span','',name),element('small','',String(total)));
+      button.disabled = total===0;
       button.hidden=false;button.title=button.disabled?'No matching people':button.getAttribute('aria-label')!;
-      button.setAttribute('aria-pressed', String(button.textContent === letter));
+      button.setAttribute('aria-pressed', String(button.dataset.letter === (letter||initial(matches[page*CHARACTER_PAGE_SIZE]?.name||''))));
     }
     search.placeholder = `Search ${people.length.toLocaleString()} people, names, aliases…`;
     page = Math.min(page, Math.max(0, Math.ceil(matches.length / CHARACTER_PAGE_SIZE) - 1));

@@ -22,7 +22,7 @@ assert.equal(defaults.length,66);
 for(const row of group){const cells=defaults.find(cells=>cells[1]===row.group);assert(cells[2].startsWith('['+row.id+']'));assert.equal(cells[4].startsWith('HOLD'),!row.proposed_label,row.id);}
 const originals=read('data/evidence.json'), production=JSON.parse(releaseContent('data/evidence.json'));
 const native=(await import('../www/device-engine.js')).default;
-const legacy=record=>record.mode==='commandments'?'Instruction in context':(['science','history'].includes(record.mode)?{Agrees:'Evidence matches the text',Disagrees:'Evidence points elsewhere',Context:'Not settled'}:{'Textual conflict':'Wording differs',Context:'Interpretation remains open'})[record.status]||record.status;
+const legacy=record=>record.mode==='commandments'?'Instruction in context':(['science','history'].includes(record.mode)?{Agrees:'Evidence matches the text',Disagrees:'Conflicts with evidence',Context:'Not settled'}:{'Textual conflict':'Wording differs',Context:'Interpretation remains open'})[record.status]||record.status;
 for(const row of proposals){
  const original=originals.find(record=>record.id===row.id);
  assert.equal(createHash('sha256').update(JSON.stringify(original)).digest('hex'),row.evidence_sha256);

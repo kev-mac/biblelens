@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 export const accepted=JSON.parse(fs.readFileSync(new URL('../data/rc1-accepted.json',import.meta.url),'utf8'));
+for (const question of accepted.questions) if (question.comparison === 'text-vs-science' && !['Astronomy','Geology','Biology'].includes(question.branch)) throw Error('Missing science branch: ' + question.id);
 const slug=text=>text.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export function releaseContent(file,text=fs.readFileSync(file,'utf8')){
  const value=JSON.parse(text);

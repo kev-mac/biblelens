@@ -1,3 +1,4 @@
+import {directorySaveButton} from './directory-save.js';
 import books from '../data/books.json' with {type:'json'};
 import atlasStyle from './data/atlas-style.json';
 import {loadPlaces,getLocationDetails,createPlaceMatcher,wrapLocationNames,atlasDescription} from './places-core.js';
@@ -29,6 +30,7 @@ function colorMap(){
 }
 new MutationObserver(colorMap).observe(document.body,{attributes:true,attributeFilter:['class']});
 async function openAtlas(id,button){
+ sheet.querySelector('.directory-save')?.remove();
  passageDetails.hidden=true;passageDetails.open=false;passageDetails.replaceChildren();
  document.querySelector('#atlas-sources').open=false;document.querySelectorAll('.atlas-map-controls').forEach(node=>node.hidden=true);
  const token=++request;anchor?.setAttribute('aria-expanded','false');anchor=button;button.setAttribute('aria-expanded','true');
@@ -37,6 +39,7 @@ async function openAtlas(id,button){
  try{
   const place=await getLocationDetails(id);if(token!==request||!sheet.open)return;if(!place)throw Error('This place is not in the reference dataset.');
   document.querySelector('#atlas-name').classList.remove('loading-state');document.querySelector('#atlas-name').textContent=place.name;
+  const save=directorySaveButton('place',id,place.name);save.title='Save place';document.querySelector('#atlas-names').after(save);
   document.querySelector('#atlas-names').textContent=[place.modern_name&&`Modern Name: ${place.modern_name}`,place.aliases.length&&`Also called ${place.aliases.join(', ')}`].filter(Boolean).join(' · ');
   const description=document.querySelector('#atlas-description');description.textContent=atlasDescription(place);description.hidden=!description.textContent;
   const refs=(place.refs||[]).filter(([book,chapter,verse])=>books[book]&&Number.isInteger(chapter)&&Number.isInteger(verse));

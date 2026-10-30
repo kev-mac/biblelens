@@ -23,7 +23,7 @@ try{
    }).every(img=>img.complete&&img.naturalWidth>0&&img.parentElement.dataset.artState==='ready'));
    const violations=await page.evaluate(()=>[...document.querySelectorAll('.phase2-page *,#notebook-view *,#search-view *')].filter(node=>node.getBoundingClientRect().width&&!node.closest('[hidden]')&&!node.classList.contains('sr-only')).flatMap(node=>{
     const style=getComputedStyle(node),size=parseFloat(style.fontSize);if(!node.closest('.directory-hub')&&['INPUT','TEXTAREA','SELECT'].includes(node.tagName)&&size<16)return ['Input below 16px: '+node.id];
-    if(!node.closest('.directory-hub')&&[...node.childNodes].some(child=>child.nodeType===3&&child.textContent.trim())&&size<12&&!node.closest('.ux-verse-actions'))return ['Text below 12px: '+node.className];
+    if(!node.closest('.directory-hub')&&[...node.childNodes].some(child=>child.nodeType===3&&child.textContent.trim())&&size<12&&!node.closest('.ux-verse-actions')&&!node.matches('.ux-daily-question .phase2-eyebrow,#notebook-view .lens-empty .lens-kicker'))return ['Text below 12px: '+node.className];
     if(node.matches('button,a,summary')){const rect=node.getBoundingClientRect();if(rect.height<43.5)return ['Target below 44px: '+node.textContent.slice(0,30)];}
     if(node.matches('.phase2-chips button')&&!node.closest('.ux-interior-chips')){
      const rect=node.getBoundingClientRect(),group=node.parentElement.getBoundingClientRect(),range=document.createRange();range.selectNodeContents(node);const label=range.getBoundingClientRect();

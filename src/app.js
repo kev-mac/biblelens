@@ -1,3 +1,5 @@
+const scriptureName = 'Bible';
+const scriptureComparison = target => scriptureName + ' vs. ' + (target === 'text' ? scriptureName : target);
 'use strict';
 // Format interface labels only; research titles and Scripture remain untouched.
 function uiTitleCase(value){
@@ -183,7 +185,8 @@ function restoreNavigation(){
  requestAnimationFrame(()=>{
   if(restore.hash!==location.hash)return;
   window.scrollTo({left:restore.position.x||0,top:restore.position.y||0,behavior:'instant'});
-  const target=restore.position.focus?document.querySelector(restore.position.focus):null;
+  const noteKey=location.hash.startsWith('#notebook?')?new URLSearchParams(location.hash.split('?')[1]).get('note'):null;
+  const target=restore.position.focus?document.querySelector(restore.position.focus):noteKey?document.querySelector('[data-lens-note="'+CSS.escape(noteKey)+'"] textarea'):null;
   if(target&&!target.closest('[hidden]'))target.focus({preventScroll:true});
   else {const heading=document.querySelector('#'+view+'-view h1, #'+view+'-view h2');if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true});}}
  });return true;

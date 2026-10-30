@@ -7,7 +7,7 @@
  const edition = () => el('reader-edition').value || 'kjv';
  const refLabel = ref => `${books[ref.book]?.name || 'Passage'} ${ref.chapter}${ref.verse ? ':' + ref.verse + (ref.endVerse && ref.endVerse !== ref.verse ? '–' + ref.endVerse : '') : ''}`;
  const refHash = ref => `#read/${ref.book}/${ref.chapter}${ref.verse ? '/' + ref.verse : ''}`;
- let activeVerse = null, inspectorChapter = '', searchVersion = 0, compareVersion = 0, notebookFilter = 'notes', currentInvestigation = null, comparison = null;
+ let activeVerse = null, inspectorChapter = '', searchVersion = 0, compareVersion = 0, notebookFilter = 'all', currentInvestigation = null, comparison = null;
  let resources, contextTab='all', contextKey='';
  // Indicator visibility is a local display choice, independent of record availability.
  function displayChoice(key,fallback){try{return localStorage.getItem(key)||fallback;}catch{return fallback;}}
@@ -32,7 +32,7 @@
  window.addEventListener('hashchange',event=>{const previous=new URL(event.oldURL||location.href).hash;if(location.hash.startsWith('#search')&&!previous.startsWith('#search'))searchReturn=previous||'#discover';if(!location.hash.startsWith('#search')){clearTimeout(inputTimer);if(searchDialog.open)searchDialog.close();}});
  searchDialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();event.stopPropagation();searchDialog.close();}});
  searchDialog.addEventListener('close',()=>{if(!searchDialog.open&&location.hash.startsWith('#search'))routeTo(searchReturn);});
- section('notebook', heading('Your private record', 'Saved', 'Keep your notes, saved Big Questions, bookmarks, and passage comparisons.') + `<button class="lens-button" data-open-settings>Settings</button><div class="lens-notebook-tools"><div role="group" aria-label="Filter notebook">${[['notes','Notes'],['saved','Questions & Profiles'],['bookmarks','Bookmarks'],['investigations','Comparisons']].map(([id,label])=>`<button type="button" class="lens-button" data-lens-filter="${id}" aria-pressed="${id==='notes'}">${label}</button>`).join('')}</div><div><button class="lens-button" id="lens-export">Export Notes</button><button class="lens-button" id="lens-backup">Full Backup</button></div></div><p id="lens-notebook-status" class="lens-collection-meta" role="status"></p><div id="lens-notebook-list" class="lens-notebook-list"></div>`);
+ section('notebook', `<div class="lens-page-heading"><h1 tabindex="-1">Saved</h1></div><div class="lens-notebook-tools"><div role="group" aria-label="Filter saved items">${[['all','All'],['notes','Notes'],['bookmarks','Bookmarks'],['saved','Contradictions'],['investigations','Comparisons']].map(([id,label])=>`<button type="button" class="lens-button" data-lens-filter="${id}" aria-pressed="${id==='all'}">${label} (0)</button>`).join('')}</div></div><p id="lens-notebook-status" class="lens-collection-meta" role="status"></p><div id="lens-notebook-list" class="lens-notebook-list"></div><div class="lens-notebook-exports"><button class="lens-button" id="lens-export">Export Notes</button><button class="lens-button" id="lens-backup">Full Backup</button></div>`);
  const layout = document.createElement('div'); layout.className = 'lens-reading-layout';
  el('reader-layout').before(layout); layout.append(el('reader-layout'));
  const readingBar = document.createElement('div'); readingBar.id='lensReadingBar'; readingBar.className='lens-reading-bar';
@@ -241,24 +241,29 @@
  let savedRender=0;
  function renderNotebook(){
   const renderId=++savedRender;
+  const savedCount=Object.values(window.BibleLensDebateStore.all()).filter(value=>value.saved).length;
+  const source=noteRows(),counts={all:source.length+savedCount,notes:source.filter(n=>n.kind!=='investigation'&&!!(n.text?.trim()||n.title?.trim())).length,bookmarks:source.filter(n=>n.marked).length,saved:savedCount,investigations:source.filter(n=>n.kind==='investigation').length};
+  for(const button of document.querySelectorAll('[data-lens-filter]')){const key=button.dataset.lensFilter;button.textContent=({all:'All',notes:'Notes',bookmarks:'Bookmarks',saved:'Contradictions',investigations:'Comparisons'})[key]+' ('+counts[key]+')';button.setAttribute('aria-pressed',String(key===notebookFilter));}
   if(notebookFilter==='saved'){renderSaved(renderId);return;}
   const all=noteRows(),rows=all.filter(note=>notebookFilter==='all'||notebookFilter==='investigations'&&note.kind==='investigation'||notebookFilter==='bookmarks'&&note.marked||notebookFilter==='notes'&&note.kind!=='investigation'&&!!(note.text?.trim()||note.title?.trim()));
-  el('lens-notebook-status').textContent=`${rows.length} saved ${rows.length===1?'item':'items'} · Private. Passage links never include your notes.`;
-  el('lens-notebook-list').innerHTML=rows.length?rows.map(note=>`<article class="lens-note" data-lens-note="${esc(note.kind+':'+note.key)}"><div class="lens-note-heading"><div><span class="lens-kicker">${note.kind==='investigation'?'Saved comparison':notebookFilter==='notes'?'Private note':note.marked?'Bookmarked '+(note.kind==='study'?'record':'passage'):'Private note'}</span><h2><a href="${esc(note.url)}">${esc(note.label)}</a></h2></div><a class="lens-button" href="${esc(note.url)}">${note.kind==='investigation'?'Resume':'Open'} ↗</a></div><label class="sr-only">Note Title</label><input aria-label="Note title for ${esc(note.label)}" data-lens-note-title maxlength="160" value="${esc(note.title)}" placeholder="Add a title"><label class="sr-only">Your Note</label><textarea aria-label="Private note for ${esc(note.label)}" data-lens-note-text maxlength="100000" rows="3" placeholder="Keep a thought, a question, or a source…">${esc(note.text)}</textarea><div class="lens-note-actions"><span class="lens-note-save-status" role="status"></span><button type="button" class="lens-button" data-lens-delete-note>${note.kind==='investigation'?'Delete comparison':'Delete note'}</button>${note.marked?'<button type="button" class="lens-button" data-lens-remove-bookmark>Remove Bookmark</button>':''}</div></article>`).join(''):'<div class="lens-empty"><span class="lens-kicker">A place to return to</span><h2>Give a Thought Somewhere to Live.</h2><p>Write a margin note while reading, mark a verse, or save a comparison. It will be waiting here.</p><a class="lens-button lens-button-primary" href="#read">Return to reading</a></div>';
-  for(const button of document.querySelectorAll('[data-lens-filter]'))button.setAttribute('aria-pressed',String(button.dataset.lensFilter===notebookFilter));
+  el('lens-notebook-status').textContent=`${rows.length} saved ${rows.length===1?'item':'items'} · Stored on this device`;
+  el('lens-notebook-list').innerHTML=rows.length?rows.map(note=>`<article class="lens-note" data-lens-note="${esc(note.kind+':'+note.key)}"><div class="lens-note-heading"><div><span class="lens-kicker">${note.kind==='investigation'?'Saved comparison':notebookFilter==='notes'?'Private note':note.marked?'Bookmarked '+(note.kind==='study'?'record':'passage'):'Private note'}</span><h2><a href="${esc(note.url)}">${esc(note.label)}</a></h2></div><a class="lens-button" href="${esc(note.url)}">${note.kind==='investigation'?'Resume':'Open'} ↗</a></div><label class="sr-only">Note Title</label><input aria-label="Note title for ${esc(note.label)}" data-lens-note-title maxlength="160" value="${esc(note.title)}" placeholder="Add a title"><label class="sr-only">Your Note</label><textarea aria-label="Private note for ${esc(note.label)}" data-lens-note-text maxlength="100000" rows="3" placeholder="Keep a thought, a question, or a source…">${esc(note.text)}</textarea><div class="lens-note-actions"><span class="lens-note-save-status" role="status"></span><button type="button" class="lens-button" data-lens-delete-note>${note.kind==='investigation'?'Delete comparison':'Delete note'}</button>${note.marked?'<button type="button" class="lens-button" data-lens-remove-bookmark>Remove Bookmark</button>':''}</div></article>`).join(''):'<div class="lens-empty"><span class="lens-kicker">A Place to Return To</span><h2>Give a Thought Somewhere to Live.</h2><p>Write a margin note while reading, mark a verse, or save a comparison. It will be waiting here.</p><a class="lens-button lens-button-primary" href="#read">Return to reading</a></div>';
+  if(notebookFilter==='all'&&savedCount)renderSaved(renderId,rows.length?el('lens-notebook-list').innerHTML:'',rows.length);
  }
- async function renderSaved(renderId){
+ async function renderSaved(renderId,prefix='',noteCount=0){
   const saved=Object.entries(window.BibleLensDebateStore.all()).filter(([,value])=>value.saved);
   const entities=saved.filter(([,value])=>value.entity);
   const ids=saved.filter(([,value])=>!value.entity).map(([id])=>id);
   const entityRows=entities.map(([key,{entity}])=>`<article class="lens-note"><h2>${entity.kind==='person'?`<a href="#characters/${encodeURIComponent(entity.id)}">${esc(entity.name)}</a>`:`<button class="lens-button" data-place-id="${esc(entity.id)}">${esc(entity.name)}</button>`}</h2><button type="button" class="lens-button" data-directory-remove="${esc(key)}">Remove from Saved</button></article>`);
-  for(const button of document.querySelectorAll('[data-lens-filter]'))button.setAttribute('aria-pressed',String(button.dataset.lensFilter==='saved'));
-  el('lens-notebook-status').textContent=`${saved.length} saved ${saved.length===1?'item':'items'} · Stored on this device. Full backups include them.`;
-  el('lens-notebook-list').innerHTML=entityRows.length?entityRows.join(''):ids.length?'<p role="status">Loading saved Big Questions…</p>':'<div class="lens-empty"><h2>Keep a Question to Return To.</h2><p>Save a Big Question to find it here.</p><a class="lens-button" href="#questions">Explore Big Questions</a></div>';
+  for(const button of document.querySelectorAll('[data-lens-filter]'))button.setAttribute('aria-pressed',String(button.dataset.lensFilter===notebookFilter));
+  el('lens-notebook-status').textContent=`${saved.length+noteCount} saved ${saved.length+noteCount===1?'item':'items'} · Stored on this device`;
+  const list=el('lens-notebook-list');let target=list;
+  if(notebookFilter==='all'){if(!prefix)list.replaceChildren();target=document.createElement('div');target.className='lens-saved-records';list.append(target);}
+  target.innerHTML=entityRows.length?entityRows.join(''):ids.length?'<p role="status">Loading saved Contradictions…</p>':'<div class="lens-empty"><h2>Keep a Question to Return To.</h2><p>Save a Contradiction to find it here.</p><a class="lens-button" href="#questions">Explore Contradictions</a></div>';
   const rows=await Promise.all(ids.map(async id=>{try{const response=await fetch('/api/debate?'+new URLSearchParams({id}));if(!response.ok)throw Error();return window.BibleLensDebates.card(await response.json());}catch{return `<p>Saved record: ${esc(id)}. <a href="#debate/${encodeURIComponent(id)}">Open or retry</a></p>`;}}));
-  if(renderId===savedRender&&saved.length)el('lens-notebook-list').innerHTML=entityRows.concat(rows).join('');
+  if(renderId===savedRender&&saved.length)target.innerHTML=entityRows.concat(rows).join('');
  }
- window.addEventListener('biblelens:debatechange',()=>{if(view==='notebook'&&notebookFilter==='saved')renderNotebook();});
+ window.addEventListener('biblelens:debatechange',()=>{if(view==='notebook')renderNotebook();});
  el('lens-notebook-list').addEventListener('click',event=>{
   const remove=event.target.closest('[data-directory-remove]');if(remove)window.BibleLensDebateStore.write(remove.dataset.directoryRemove,{saved:false});
  });
@@ -306,7 +311,7 @@
   const [path,query='']=hash.split('?'),params=new URLSearchParams(query);
   if(!path || path==='#' || path==='#discover'){setView('explore',false);return true;}
   if(path==='#search'){searchView.hidden=false;if(!searchDialog.open)BibleLensPopup.show(searchDialog,document.querySelector('.ux-search'));runSearch(params.get('q')||'');el('lens-search-input').focus({preventScroll:true});return true;}
-  if(path==='#notebook'){notebookFilter=params.has('note')?'all':['notes','saved','bookmarks','investigations'].includes(params.get('section'))?params.get('section'):'notes';setView('notebook',false);renderNotebook();const note=params.get('note');if(note)requestAnimationFrame(()=>{const row=[...el('lens-notebook-list').children].find(n=>n.dataset.lensNote===note);row?.querySelector('textarea')?.focus();});return true;}
+  if(path==='#notebook'){notebookFilter=params.has('note')?'all':['all','notes','saved','bookmarks','investigations'].includes(params.get('section'))?params.get('section'):'all';setView('notebook',false);renderNotebook();const note=params.get('note');if(note)requestAnimationFrame(()=>{const row=[...el('lens-notebook-list').children].find(n=>n.dataset.lensNote===note);row?.querySelector('textarea')?.focus();});return true;}
   if(path==='#compare'||path.startsWith('#investigation/')){
    setView('read',false);compare.hidden=false;if(!compare.open)showComparison();if(!books.length){el('lens-compare-status').textContent='Loading the library…';return true;}
    let left,right;

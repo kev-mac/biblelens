@@ -1,5 +1,4 @@
 import books from '../data/books.json' with {type:'json'};
-import {directorySaveButton} from './directory-save.js';
 import {loadPlaces,directoryPlaces} from './places-core.js';
 import {regionCoverage,inWindow,usableRegionPoint} from './place-regions.js';
 
@@ -16,7 +15,7 @@ const node=(tag,className,text)=>{const el=document.createElement(tag);el.classN
 function placeCard(place, duplicate){
  const card=node('article','character-card place-profile-card');
  const heading=node('h2','character-name',place.name+(duplicate&&(place.region||place.refs?.[0])?' ('+(place.region||(books[place.refs[0][0]].code+' '+place.refs[0][1]+':'+place.refs[0][2]))+')':''));card.append(heading);
- const open=node('button','ux-place-open place-map-action','View place →');open.type='button';open.dataset.placeId=place.id;open.setAttribute('aria-label','Open '+place.name);card.append(directorySaveButton('place',place.id,place.name));
+ const open=node('button','ux-place-open place-map-action','View place →');open.type='button';open.dataset.placeId=place.id;open.setAttribute('aria-label','Open '+place.name);
 
  if(place.refs?.length){const [book,chapter,verse]=place.refs[0],pill=node('span','passage-badge',books[book].name+' '+chapter+':'+verse+(place.refs.length>1?' +'+(place.refs.length-1).toLocaleString():''));card.prepend(pill);}
  const description=place.shortDescription;

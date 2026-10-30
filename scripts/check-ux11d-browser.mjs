@@ -21,7 +21,7 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
     assert.match(await host.locator('.directory-results').innerText(),/1–24 of 3,067/);
     await page.locator('#ux-alphabet-open').click();const sheet=page.locator('#ux-alphabet-sheet[open]');await sheet.waitFor();assert.equal(await sheet.locator('.ux-dialog-path').count(),0);assert.equal(await sheet.locator('.ux-alphabet-grid button').count(),26);assert.equal(await sheet.locator('.ux-popup-close').count(),1);
     const box=await sheet.boundingBox();assert(Math.abs(box.width-width)<1);assert(box.y+box.height<=772+.5);await page.keyboard.press('Escape');
-    assert(await page.locator('#main').evaluate(n=>n.getBoundingClientRect().bottom<=document.querySelector('#ux-alphabet-open').getBoundingClientRect().top),'alphabet dock clears the entire scroll area');
+    assert(await page.locator('#ux-alphabet-open').evaluate(n=>n.closest('.stories-search-box')!==null),'alphabet trigger stays in search row');
     await page.locator('.characters-pagination').scrollIntoViewIfNeeded();
     const overlap=await page.evaluate(()=>{const b=document.querySelector('#ux-alphabet-open').getBoundingClientRect(),a=[...document.querySelectorAll('#characters-list .story-footer .action-link')].at(-1).getBoundingClientRect();return a.left<b.right&&b.left<a.right&&a.top<b.bottom&&b.top<a.bottom;});assert(!overlap,'last action clears floating alphabet button');
    }

@@ -77,9 +77,9 @@ export function packageDraftDebates(assets, env = process.env) {
   assets['/debates.js'].body = source + '\n' + assets['/debates.js'].body;
   assets['/overrides.css'].body += '\n' + fs.readFileSync('src/draft-debates.css', 'utf8');
   // Draft entry points belong to Questions; Explore retains its seven tiles.
-  const target = 'host.innerHTML=\'<h1 tabindex="-1">Big Questions</h1>';
+  const target = 'host.innerHTML=\'<h1 tabindex="-1">Contradictions</h1>';
   if (!assets['/debates.js'].body.includes(target)) throw Error('Missing Questions draft entry point');
-  assets['/debates.js'].body = assets['/debates.js'].body.replace(target, target + '<a class="phase3-preview-link lens-button" href="#questions?draft=1">Preview draft Big Questions</a><a class="phase3-preview-link lens-button" href="/draft-review.html">Review content drafts</a>');
+  assets['/debates.js'].body = assets['/debates.js'].body.replace(target, target + '<a class="phase3-preview-link lens-button" href="#questions?draft=1">Preview draft Contradictions</a><a class="phase3-preview-link lens-button" href="/draft-review.html">Review content drafts</a>');
   console.log('DRAFT PREVIEW: 40 headlines; proposed evidence labels await Kevin. Not a production build.');
   return true;
 }

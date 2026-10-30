@@ -5,7 +5,7 @@ export function debateVerdict(record) {
  if(rulings.has(record.id))return rulings.get(record.id);
  if(record.mode==='commandments')return 'Instruction in context';
  const labels = record.mode === 'science' || record.mode === 'history'
-  ? {Agrees:'Evidence matches the text', Disagrees:'Evidence points elsewhere', Context:'Not settled'}
+  ? {Agrees:'Evidence matches the text', Disagrees:'Conflicts with evidence', Context:'Not settled'}
   : {'Textual conflict':'Wording differs', Context:'Interpretation remains open'};
  return labels[record.status] || record.status;
 }

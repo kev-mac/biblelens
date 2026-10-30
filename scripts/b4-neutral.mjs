@@ -6,14 +6,8 @@ export const proseKeys = new Set(['title','display_title','question','summary','
 export function neutralProse(value) {
  const parts=value.split(/(“[^”]*”|"[^"\n]*")/g);
  return parts.map((part,index)=>index%2?part:part
-  .replace(/Real conflict/g,'Wording differs').replace(/Can be reconciled/g,'Readings can fit together').replace(/Different detail/g,'Details differ').replace(/Open question/g,'Interpretation remains open').replace(/not a debate/g,'Instruction in context').replace(/Evidence agrees/g,'Evidence matches the text').replace(/Evidence disagrees/g,'Evidence points elsewhere')
-  .replace(/It is not a finding of contradiction or of scientific error\./g,'It does not establish that the passages cannot both hold or that a scientific claim is mistaken.')
-  .replace(/not a logical contradiction/g,'not a finding that both statements cannot hold')
-  .replace(/not a demonstrated factual contradiction/g,'not a finding that the accounts cannot both be true')
-  .replace(/without contradiction/g,'while both accounts can still hold')
-  .replace(/not a contradiction/g,'not a finding that the passages cannot both hold')
-  .replace(/\bcontradictions\b/gi,'text comparisons').replace(/\bcontradiction\b/gi,'difference between passages')
-  .replace(/\bdebates\b/gi,'Big Questions').replace(/\bdebate\b/gi,'Big Question')
+  .replace(/Real conflict/g,'Wording differs').replace(/Can be reconciled/g,'Readings can fit together').replace(/Different detail/g,'Details differ').replace(/Open question/g,'Interpretation remains open').replace(/not a debate/g,'Instruction in context').replace(/Evidence agrees/g,'Evidence matches the text').replace(/Evidence disagrees/g,'Conflicts with evidence')
+  .replace(/\bdebates\b/gi,'Contradictions').replace(/\bdebate\b/gi,'Contradiction')
   .replace(/\bverdicts?\b/gi,'what the evidence shows')
   .replace(/\bdisproving\b/gi,'ruling out').replace(/\bdisproved\b/gi,'ruled out')
   .replace(/\bproved\b/gi,'established').replace(/\bproving\b/gi,'establishing')
