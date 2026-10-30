@@ -60,7 +60,7 @@ try{
   await page.evaluate(()=>BibleLensDebates.openRecords([{id:'study-animals',title:'Creation accounts'}]));await page.waitForFunction(()=>document.querySelector('#study-dialog').open&&current.id==='animals');
   await go('#debate/missing','text=We Couldn’t Find That');await shot('missing-debate');
   await page.goto(base+'/#explore');await page.waitForFunction(()=>view==='read'&&location.hash==='#read');
-  await page.goto(base+'/#categories/T?book=all');await page.waitForFunction(()=>view==='evidence'&&location.hash==='#evidence/T?book=all');await page.waitForSelector('.marked-category-content');
+  await page.goto(base+'/#categories/T?book=all');await page.waitForFunction(()=>view==='debates'&&location.hash==='#questions?filter=T');await page.waitForSelector('#debate-results .phase2-debate-card');
   await go('#commandments?code=P1','.commandment-card');assert.equal(await page.locator('.commandment-card').count(),1);
   // Both progressive enhancements can be absent; ordinary navigation/sheets still work.
   await page.evaluate(()=>{document.startViewTransition=undefined;HTMLElement.prototype.showPopover=undefined;});

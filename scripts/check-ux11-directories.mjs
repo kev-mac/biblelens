@@ -4,7 +4,7 @@ import {chromium,webkit} from 'playwright';
 const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875',root=process.env.HOME+'/git/codex-reports',shots=root+'/ux11-shots';
 fs.mkdirSync(shots,{recursive:true});
 const gallery=[['gallery-history','#questions?mode=history'],['gallery-science','#questions?mode=science'],['gallery-text','#questions?mode=text'],['gallery-translation','#questions?filter=T'],['gallery-questions','#questions']].map(([name,hash])=>[name,hash,'.phase2-debate-card',null]);
-const screens=[['people','#characters','.ux-contact',3067],['places','#places','.place-profile-card',1293],['commandments','#commandments','.commandment-card',613],...['academic','Q','T','contradictions','V'].map(key=>['evidence-'+key,'#evidence/'+key+'?book=all','.marked-category-content',null]),...gallery];
+const screens=[['people','#characters','.ux-contact',3067],['places','#places','.place-profile-card',1293],['commandments','#commandments','.commandment-card',613],...gallery];
 for(const [engine,type]of Object.entries({chromium,webkit})){
  const browser=await type.launch();try{for(const width of [320,375,390]){
   const page=await browser.newPage({viewport:{width,height:844},reducedMotion:'reduce',serviceWorkers:'block'}),errors=[];page.on('pageerror',e=>errors.push(e.message));

@@ -121,7 +121,7 @@ function updateHeaderContext(){
  const showPassage=view==='read'&&rect&&(rect.bottom<=document.querySelector('body>header').getBoundingClientRect().bottom||rect.top>=window.innerHeight);
  let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Stories',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Commandments',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',search:'Search',notebook:'Notebook'}[view]||'BibleLens');
  const key=view==='evidence'?/^#evidence\/([^?]+)/.exec(location.hash)?.[1]:null;
- const category={academic:'Academic',commandments:'Commandments',contradictions:'Text Comparisons',bookmark:'Marked',characters:'People',prophecies:'Prophecies',Q:'Questions',stories:'Stories',T:'Translation',V:'Violations'}[key];
+ const category={academic:'Academic',commandments:'Commandments',contradictions:'Text Comparisons',bookmark:'Marked',characters:'People',prophecies:'Prophecies',Q:'Questions',stories:'Stories',T:'Translation'}[key];
  if(category){
   label='Evidence · '+category;
   context.textContent=label;
@@ -151,10 +151,19 @@ function rememberNavigation(){if(navigationRestore)return;navigationPositions.se
 // Keep bookmarked and native legacy destinations while publishing one vocabulary.
 // #discover is Explore; legacy #explore remains a reader link.
 function canonicalRouteHash(hash){
- const value=hash.startsWith('#')?hash:'#'+hash;
- return value.replace(/^#debates(?=[?]|$)/,'#questions').replace(/^#explore(?=[/?]|$)/,'#read')
+ let value=hash.startsWith('#')?hash:'#'+hash;
+ value=value.replace(/^#debates(?=[?]|$)/,'#questions').replace(/^#explore(?=[/?]|$)/,'#read')
   .replace(/^#(?:categories|saved)(?=[/?]|$)/,'#evidence')
   .replace(/^#bookmarks(?=$)/,'#notebook?section=bookmarks');
+ const [path,query='']=value.split('?'),params=new URLSearchParams(query);
+ const destinations={academic:'#questions?mode=history',Q:'#questions',contradictions:'#questions?mode=text',T:'#questions?filter=T',V:'#discover?section=evidence'};
+ const key=/^#evidence\/([^?]+)/.exec(path)?.[1]||(path==='#evidence'?params.get('kind'):null);
+ if(Object.hasOwn(destinations,key))return destinations[key];
+ if(path==='#evidence'&&(!key||key==='all'))return '#discover?section=evidence';
+ if(path==='#questions'&&params.get('filter')==='V')return destinations.V;
+ if(path==='#questions'&&params.get('filter')==='Q')return destinations.Q;
+ if(path==='#questions'&&params.get('filter')==='commandments')return '#commandments';
+ return value;
 }
 function navigateHash(hash,{replace=false}={}){
  hash=canonicalRouteHash(hash);

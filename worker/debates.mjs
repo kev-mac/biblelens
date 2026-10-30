@@ -40,5 +40,5 @@ export function debatePage(records, params) {
  }
  const ids=params.getAll('id');if(ids.length)rows=rows.filter(record=>ids.includes(record.id));
  const page=Math.max(0,Math.min(Math.floor(Number(params.get('page'))||0),Math.max(0,Math.ceil(rows.length/24)-1)));
- return {records:rows.slice(page*24,page*24+24).map(debateCard), total:rows.length, page, counts, collectionTotal, modeCounts};
+ return {records:rows.slice(page*24,page*24+24).map(debateCard), total:rows.length, page, counts, collectionTotal, modeCounts, translationTotal:records.filter(record=>(record.tags||[record.tag]).includes('T')).length};
 }

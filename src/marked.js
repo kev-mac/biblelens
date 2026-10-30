@@ -2,7 +2,7 @@
 // Book-scoped comparison browsing uses public records; personal marks use local storage with optional cloud sync.
 const markedComparisonCache=new Map();
 let markedBookSelection=null,markedChapterSelection=0,markedKind='all',markedTheme='all',markedCommandmentType='all',markedWorkspaceGeneration=0,markedData=null;
-const MARKED_CATEGORIES=[['all','All Categories'],['bookmark','Marked'],['T','Translation'],['V','Violations'],['commandments','Commandments'],['Q','Questions'],['academic','Academic'],['contradictions','Text Comparisons'],['stories','Stories'],['characters','People'],['prophecies','Prophecies']].sort(([a,al],[b,bl])=>a==='all'?-1:b==='all'?1:al.localeCompare(bl));
+const MARKED_CATEGORIES=[['all','All Categories'],['bookmark','Marked'],['commandments','Commandments'],['stories','Stories'],['characters','People'],['prophecies','Prophecies']].sort(([a,al],[b,bl])=>a==='all'?-1:b==='all'?1:al.localeCompare(bl));
 function markedChoices(record,placement){const item={...record,...placement},tags=recordTags(item);return tags.length?tags.map(tag=>({...item,tag})):item.mode==='questions'?[{...item,tag:'Q'}]:[item];}
 const COMMANDMENT_THEMES=["Worship of God","Sabbath and rest","Family","Life and violence","Marriage and sexual conduct","Property and economics","Truth and justice","Food and purity","Festivals and sacrifice","Care for the poor and the stranger","Love of God and neighbor","Prayer and fasting","Baptism and the Lord's Supper","Church life and order"];
 function markedCommandmentMatches(record){return record.mode!=='commandments'||((markedTheme==='all'||record.theme===markedTheme)&&(markedCommandmentType==='all'||record.commandmentType===markedCommandmentType));}
