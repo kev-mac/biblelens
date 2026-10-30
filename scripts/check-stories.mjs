@@ -50,12 +50,12 @@ for(const entry of catalog){
 }
 vm.runInContext('storiesActive=true',c);await c.renderStoriesView();
 assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,10,'The unfiltered Stories page browses the full collection in pages');
-assert.match(node('#stories-search').placeholder,/Search stories/);
+assert.match(node('#stories-search').placeholder,/Search \d+ stories/);
 assert.equal(node('#stories-results').hidden,false);
-assert.match(node('#stories-results').textContent,new RegExp('of '+total+' stories'));
+assert.match(node('#stories-results').textContent,new RegExp('of '+total+' narratives'));
 const firstPage=node('#stories-list').innerHTML;await c.renderStoriesView();assert.equal(node('#stories-list').innerHTML,firstPage,'Returning to browse preserves a stable first page');
 assert(!node('#reader-layout').hidden);assert(!node('#stories-view').hidden);
-assert(c.storyCard(genesis.stories[0]).includes('data-cite="42/1/1" data-cite-end="3"'));
+assert(c.storyCard(genesis.stories[0]).includes('data-story-passage="Genesis 1:1 - 2:3"'));
 assert.equal(c.storiesFilterButton(),'');
 const malicious=c.storyCard({...genesis.stories[0],title:'<img onerror="bad">'});assert(!malicious.includes('<img'));
 for(const entry of catalog){
@@ -121,7 +121,7 @@ const page1=node('#stories-list').innerHTML;
 await handlers.click({target:{closest:selector=>selector==='[data-stories-page]'?{disabled:false,dataset:{storiesPage:'1'}}:null}});
 assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,10);
 assert(!node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(genesis.stories[0].title)+'"'));
-assert(node('#stories-results').textContent.startsWith('11–20 of '));assert(!node('#stories-previous').disabled);
+assert(node('#stories-results').textContent.startsWith('Showing 11–20 of '));assert(!node('#stories-previous').disabled);
 await handlers.click({target:{closest:selector=>selector==='[data-stories-page]'?{disabled:false,dataset:{storiesPage:'-1'}}:null}});assert.equal(node('#stories-list').innerHTML,page1,'Previous returns to the same first-page stories');
 vm.runInContext('storiesPage=999',c);await c.renderStoriesView();assert(node('#stories-next').disabled);assert((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length<=10);
 node('#stories-book').value='Genesis';node('#stories-search').value='no matches';node('#stories-theme').value='';c.updateStoriesFilters();await c.renderStoriesView();
@@ -130,17 +130,10 @@ c.location.hash='#stories/genesis/'+c.storySlug(genesis.stories.at(-1).title);aw
 assert(node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(genesis.stories.at(-1).title)+'"'));assert(node('#stories-pagination').hidden);
 console.log('PASS: ten-story pages, page bounds, next/previous state, result ranges, filter resets, empty results, and late-story deep links.');
 
-// Story sections begin closed and toggle independently without changing filters.
+// Stories expose the passage action directly while retaining their complete range.
 const sectionCard=c.storyCard(genesis.stories[0]);
-assert(sectionCard.includes('data-story-book="0" data-story-chapter="1" data-story-verse="1" data-story-end-chapter="2" data-story-end-verse="3"'),'Story cards provide their complete source range to the shared name linker');
-assert(sectionCard.includes('data-story-section aria-expanded="false"'));
-assert(sectionCard.includes('aria-labelledby="story-'+c.storySlug(genesis.stories[0].title)+'-verses-toggle" hidden'));
-assert(!sectionCard.includes(' →</button>'));
-const panel={hidden:true},section={getAttribute:()=> 'test-verses',setAttribute(name,value){this[name]=value;}};
-const previousLookup=c.document.getElementById;c.document.getElementById=()=>panel;
-await handlers.click({target:{closest:selector=>selector==='[data-story-section]'?section:null}});
-assert.equal(panel.hidden,false);assert.equal(section['aria-expanded'],'true');
-await handlers.click({target:{closest:selector=>selector==='[data-story-section]'?section:null}});
-assert.equal(panel.hidden,true);assert.equal(section['aria-expanded'],'false');
-c.document.getElementById=previousLookup;
-console.log('PASS: Story verse controls start closed, expand and collapse accessibly, with arrow-free passage labels.');
+assert(sectionCard.includes('data-story-book="0" data-story-chapter="1" data-story-verse="1" data-story-end-chapter="2" data-story-end-verse="3"'));
+assert(sectionCard.includes('Read story →</button>'));
+assert(!sectionCard.includes('data-story-section'));
+assert(sectionCard.includes('<div class="story-summary"><p>'+genesis.stories[0].summary.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;')+'</p></div>'));
+console.log('PASS: Full-range story anchors, direct reader action and unchanged narrative summary.');

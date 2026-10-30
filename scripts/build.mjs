@@ -1,3 +1,4 @@
+import {enrichStories} from './story-metrics.mjs';
 import {linkPeopleStories} from '../src/story-people.js';
 import {validatePeopleRoles,releasePeopleRoles} from './people-roles.mjs';
 import {draftPreviewEnabled} from './draft-debates.mjs';
@@ -89,7 +90,7 @@ assets['/prophecies.js']={type:'application/javascript; charset=utf-8',body:prop
 const charactersBundle=await build({plugins:[releaseJsonPlugin],entryPoints:['src/components/characters/CharactersView.tsx'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/characters.js']={type:'application/javascript; charset=utf-8',body:charactersBundle.outputFiles[0].text};
 assets['/characters.json']={type:'application/json; charset=utf-8',body:releaseContent('src/data/characters.json',b4Content('src/data/characters.json'))};
-assets['/stories.json']={type:'application/json; charset=utf-8',body:JSON.stringify(tagStoryCatalog(JSON.parse(releaseContent('data/stories.json',b4Content('data/stories.json'))),JSON.parse(fs.readFileSync('data/reference/topics.json','utf8')),loadTopicOptions()))};
+assets['/stories.json']={type:'application/json; charset=utf-8',body:JSON.stringify(enrichStories(tagStoryCatalog(JSON.parse(releaseContent('data/stories.json',b4Content('data/stories.json'))),JSON.parse(fs.readFileSync('data/reference/topics.json','utf8')),loadTopicOptions()),uxRead('data/books.json'),uxRead('data/chapters.json'),uxEvidence))};
 assets['/release.json']={type:'application/json; charset=utf-8',body:JSON.stringify(releaseInfo())};
 const redLetterContext={};vm.createContext(redLetterContext);vm.runInContext(fs.readFileSync('src/red-letters.js','utf8')+';this.ranges=RED_LETTERS;',redLetterContext);
 const redLetters=redLetterContext.ranges;

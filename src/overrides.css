@@ -2677,3 +2677,64 @@ html body.lens-app #character-sheet .character-sheet-header h2{color:var(--topic
 html body.lens-app :is(.story-card,.commandment-card,#character-sheet) .person-section-icon{color:var(--topic)}
 
 html body.lens-app #chapter-text .verse-num[data-digits="3"]{margin-right:-12px}
+
+/* UX11a: Stories canvas. Tokens and layout stay inside this collection. */
+html body.lens-app:has(#stories-view:not([hidden])){background:#0B0E14}
+html body.lens-app:has(#stories-view:not([hidden])) #lensMasthead{height:0;min-height:0;padding:0;border:0;overflow:visible;background:none}
+html body.lens-app:has(#stories-view:not([hidden])) #lensMasthead>:not(.lens-primary){display:none}
+html body.lens-app:has(#stories-view:not([hidden])) #main{padding:0;margin:0 auto;width:100%;max-width:960px}
+html body.lens-app:has(#stories-view:not([hidden])) .lens-context{display:none}
+html body.lens-app #main #stories-view.stories-hub{--bg-base:#0B0E14;--bg-surface:#141A23;--border-subtle:rgba(255,255,255,.08);--accent-purple:#C084FC;--accent-purple-border:rgba(168,85,247,.35);--accent-purple-soft:rgba(168,85,247,.16);padding:0 0 90px;margin:0;color:#F8FAFC;font-family:var(--ui-font);width:100%;max-width:none}
+html body.lens-app #main #stories-view .stories-header{position:sticky;top:0;z-index:40;height:52px;padding:0 12px 0 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border-subtle);background:rgba(11,14,20,.85);backdrop-filter:blur(16px)}
+html body.lens-app #main #stories-view .back-action{display:flex;align-items:center;min-height:44px;color:#94A3B8;font-size:.85rem;font-weight:500;text-decoration:none;gap:6px}
+html body.lens-app #main #stories-view .header-center-title{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px}
+html body.lens-app #main #stories-view .header-icon-svg{width:20px;height:20px;color:#C084FC;filter:drop-shadow(0 0 8px rgba(168,85,247,.45))}
+html body.lens-app #main #stories-view #stories-heading{font:700 1.15rem/1.3 var(--ui-font);letter-spacing:-.01em;color:#fff;margin:0;padding:0;border:0}
+html body.lens-app #main #stories-view #stories-filter-open{margin:0;padding:4px;width:44px;height:44px;min-height:44px;min-width:44px;background:none;border:0;border-radius:50%;color:#94A3B8}
+html body.lens-app #main #stories-view #stories-filter-open>span{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.04);border:1px solid var(--border-subtle)}
+html body.lens-app #main #stories-view #stories-filter-open svg{width:16px;height:16px}
+html body.lens-app #main #stories-view .stories-content{padding:14px 16px 20px;display:flex;flex-direction:column;gap:12px}
+html body.lens-app #main #stories-view .stories-search-box{position:relative;width:100%}
+html body.lens-app #main #stories-view .stories-search-box>svg{position:absolute;left:12px;top:13px;width:16px;height:16px;color:#64748B;pointer-events:none}
+html body.lens-app #main #stories-view #stories-search{width:100%;height:42px;min-height:42px;margin:0;background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:12px;padding:0 40px 0 38px;color:#fff;font:400 .85rem/1.3 var(--ui-font);outline:none}
+html body.lens-app #main #stories-view #stories-search::placeholder{color:#64748B;opacity:1}
+html body.lens-app #main #stories-view #stories-search::-webkit-search-cancel-button{-webkit-appearance:none}
+html body.lens-app #main #stories-view #stories-search:focus{border-color:rgba(168,85,247,.6);box-shadow:0 0 0 2px rgba(168,85,247,.15)}
+html body.lens-app #main #stories-view #stories-search-clear{position:absolute;right:0;top:-1px;height:44px;width:44px;padding:0;border:0;background:none;color:#64748B;min-height:44px;min-width:44px}
+html body.lens-app #main #stories-view .filter-carousel{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 0 4px;mask-image:linear-gradient(90deg,#000 90%,transparent);margin:0;flex-wrap:nowrap;min-width:0}
+html body.lens-app #main #stories-view .filter-carousel::-webkit-scrollbar{display:none}
+html body.lens-app #main #stories-view .filter-pill{flex:0 0 auto;min-width:max-content;min-height:44px;border:1px solid var(--border-subtle);border-radius:20px;padding:6px 14px;font:500 .78rem/1.3 var(--ui-font);white-space:nowrap;background:rgba(255,255,255,.04);color:#94A3B8;margin:0}
+html body.lens-app #main #stories-view .filter-pill.active{background:var(--accent-purple-soft);border-color:var(--accent-purple-border);color:var(--accent-purple);font-weight:600}
+html body.lens-app #main #stories-view .list-meta-row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:0 2px;font-size:.74rem;line-height:1.5;color:#64748B}
+html body.lens-app #main #stories-view #stories-results{margin:0;padding:0;font:inherit;color:inherit}
+html body.lens-app #main #stories-view .stories-list{display:flex;flex-direction:column;gap:12px;margin:0;padding:0;outline:none}
+html body.lens-app #main #stories-view .story-card{display:flex;flex-direction:column;gap:10px;background:rgba(20,26,35,.75);border:1px solid rgba(168,85,247,.35);border-radius:18px;padding:16px;margin:0;box-shadow:0 4px 16px -4px rgba(0,0,0,.4);width:100%;min-width:0}
+html body.lens-app #main #stories-view .story-top-row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+html body.lens-app #main #stories-view .passage-badge{font-size:.74rem;line-height:1.5;font-weight:700;color:var(--accent-purple);background:var(--accent-purple-soft);padding:2px 8px;border-radius:8px;letter-spacing:.02em}
+html body.lens-app #main #stories-view .read-badge{font-size:.7rem;color:#64748B;font-weight:500;white-space:nowrap}
+html body.lens-app #main #stories-view .story-title{font:700 1.15rem/1.3 var(--ui-font);letter-spacing:-.01em;color:#fff;margin:0;padding:0}
+html body.lens-app #main #stories-view .story-summary{font-size:.84rem;line-height:1.55;color:#CBD5E1;white-space:normal;margin:0;max-width:none;overflow:visible}
+html body.lens-app #main #stories-view .story-summary p{font:inherit;color:inherit;margin:0 0 6px;padding:0}
+html body.lens-app #main #stories-view .story-summary p:last-child{margin-bottom:0}
+html body.lens-app #main #stories-view .story-footer{display:flex;justify-content:space-between;align-items:center;gap:8px;padding-top:10px;border-top:1px solid var(--border-subtle);font-size:.76rem;line-height:1.5;color:#94A3B8;margin-top:2px}
+html body.lens-app #main #stories-view .action-link{color:var(--accent-purple);font:600 .76rem/1.5 var(--ui-font);background:none;border:0;padding:0;min-height:44px;min-width:44px;white-space:nowrap;margin-left:auto}
+html body.lens-app .stories-filter-sheet{position:fixed;inset:auto 0 0;margin:0 auto;width:min(100%,600px);max-width:100%;max-height:80dvh;padding:20px 20px 32px;border:1px solid rgba(168,85,247,.35);border-radius:18px 18px 0 0;background:#141A23;color:#F8FAFC;font-family:var(--ui-font)}
+html body.lens-app .stories-filter-sheet::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(4px)}
+html body.lens-app .stories-sheet-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+html body.lens-app .stories-sheet-heading h2{font-size:1.15rem;margin:0}
+html body.lens-app .stories-filter-sheet button{min-width:44px;min-height:44px}
+html body.lens-app .stories-filter-sheet select{display:block;width:100%;min-height:44px;margin:8px 0 20px;background:#0B0E14;color:#F8FAFC;border:1px solid #64748B;border-radius:12px}
+html body.lens-app:has(#stories-view:not([hidden])) #lensMasthead nav.lens-primary{position:fixed;inset:auto 0 0;transform:none;width:100%;max-width:none;height:76px;padding:10px 16px 22px;background:rgba(11,14,20,.96);border-top:1px solid rgba(255,255,255,.08);z-index:50;justify-content:space-around}
+html body.lens-app:has(#stories-view:not([hidden])) #lensMasthead .lens-primary a{flex:1;display:flex;flex-direction:column;gap:4px;padding:0;min-height:44px;font-size:.7rem;color:#64748B}
+html body.lens-app:has(#stories-view:not([hidden])) #lensMasthead .lens-primary a[aria-current=page]{color:#fff;font-weight:700}
+html body.lens-app:has(#stories-view:not([hidden])) #lensMasthead .lens-primary a[aria-current=page] svg{color:#6366F1}
+html body.lens-app:has(#stories-view:not([hidden])) #lensMasthead .lens-primary a[aria-current=page]::after{bottom:-3px;background:#6366F1}
+html body.lens-app:has(#stories-view:not([hidden])) #lensMasthead nav.lens-primary::after{content:'';position:absolute;bottom:8px;left:calc(50% - 67px);width:134px;height:5px;background:rgba(255,255,255,.22);border-radius:100px}
+@media(max-width:350px){html body.lens-app #main #stories-view .list-meta-row{font-size:.66rem}html body.lens-app #main #stories-view .story-footer{flex-wrap:wrap}html body.lens-app #main #stories-view .passage-badge{font-size:.68rem}}
+html body.lens-app #main #stories-view .filter-carousel{order:0}
+html body.lens-app #main #stories-view .action-link{flex:0 0 auto;width:auto;max-width:none;letter-spacing:normal}
+html body.lens-app #main #stories-view .story-linked-meta{min-width:0}
+html body.lens-app #main #stories-view .stories-search-box>svg{display:block}
+html body.lens-app #main #stories-view .stories-search-box>svg{z-index:1}
+html body.lens-app #stories-filter-sheet .ux-dialog-path{display:none}
+html body.lens-app #stories-filter-sheet .stories-sheet-heading h2{font:700 1.15rem/1.3 var(--ui-font);letter-spacing:-.01em;margin:0;color:#F8FAFC}

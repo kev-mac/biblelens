@@ -4,6 +4,8 @@ let storiesActive=false,storiesRequest=null,storiesGeneration=0,storiesCatalog=n
 function storiesFilterButton(){return '';}
 let storiesBook='',storiesTheme='',storiesSearch='',storiesPage=0;
 const STORIES_PAGE_SIZE=10;
+let storiesSection='';
+const STORIES_SECTIONS=['Law','History','Poetry & Wisdom','Prophets','Gospels & Acts','Letters & Revelation'];
 function loadStories(){
  if(!storiesRequest){storiesRequest=window.BibleLensReferences.json('/stories.json').then(catalog=>{storiesCatalog=catalog;return catalog;});storiesRequest.catch(()=>{storiesRequest=null;});}
  return storiesRequest;
@@ -18,10 +20,11 @@ function storyRoute(){return /^#stories\/([a-z0-9-]+)\/([a-z0-9-]+)$/.exec(locat
 function storyCard(story, pivot=false){
  const reference=storyReference(story.passage);
  const passage=reference?`<button type="button" class="story-passage" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.passage)} starting at verse ${reference.verse}">${esc(story.passage)}</button>`:`<span>${esc(story.passage)}</span>`;
- const references=story.cross_references.map(label=>{const ref=storyReference(label);return ref?`<button type="button" class="verse-citation story-reference" data-cite="${ref.book}/${ref.chapter}/${ref.verse}" data-cite-end="${ref.endVerse}" data-cite-end-chapter="${ref.endChapter}" data-cite-label="${esc(label)}" data-cite-preview aria-haspopup="dialog" aria-expanded="false">${esc(label)}</button>`:'';}).join('');
- const id=(pivot?'topic-story-':'story-')+storySlug(story.title),panelId=id+'-verses';
+ const id=(pivot?'topic-story-':'story-')+storySlug(story.title);
+ const counts=story.linkedCounts||{};
+ const meta=[[counts.crossReferences,'cross-reference'],[counts.science,'science note'],[counts.history,'history note'],[counts.text,'text note']].filter(([n])=>n>0).map(([n,label])=>`${n} ${label}${n===1?'':'s'}`).join(' • ');
  const context=reference?` data-story-book="${reference.book}" data-story-chapter="${reference.chapter}" data-story-verse="${reference.verse}" data-story-end-chapter="${reference.endChapter}" data-story-end-verse="${reference.endVerse}"`:'';
- return `<article class="story-card" id="${id}" tabindex="-1"${context}><p class="library-entry-meta">${esc(story.passage)}</p><h${pivot?3:2}>${esc(story.title)}</h${pivot?3:2}><p class="story-summary">${esc(String(story.summary).replace(/<br\s*\/?[>]|\s+/gi,' ').trim())}</p><div class="person-section-controls" role="group" aria-label="${esc(story.title)} story sections"><button type="button" class="person-section-toggle" data-story-section aria-expanded="false" aria-controls="${panelId}" id="${panelId}-toggle"><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 1-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span><span class="person-section-label">Verses</span></button></div><section class="person-section-panel" id="${panelId}" aria-labelledby="${panelId}-toggle" hidden><h${pivot?4:3}>Verses</h${pivot?4:3}>${passage}${references?`<div class="story-references"><span>Referenced in:</span> ${references}</div>`:''}</section></article>`;
+ return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(story.passage.replace(/\s*[-–]\s*/g,' – '))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title)}</h${pivot?3:2}><div class="story-summary">${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div><div class="story-footer">${meta?`<span class="story-linked-meta">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story →</button></div></article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
@@ -39,16 +42,19 @@ async function renderStoriesView(){
   $('#stories-book').value=storiesBook;$('#stories-theme').value=storiesTheme;$('#stories-search').value=storiesSearch;
   const query=storiesSearch.trim().toLowerCase();
   const terms=query.match(/[\p{L}\p{N}]+/gu)||[];
-  $('#stories-search').placeholder='Search stories, passages or themes';
-  const filtered=!!(query||storiesBook||storiesTheme||route);
-  let stories=catalog.filter(entry=>!storiesBook||entry.book===storiesBook).flatMap(entry=>entry.stories).filter(story=>(!storiesTheme||(story.topics||[]).includes(storiesTheme))&&terms.every(term=>[story.title,story.summary,story.passage,...(story.topics||[])].join(' ').toLowerCase().includes(term)));
+  const total=catalog.reduce((n,g)=>n+g.stories.length,0);
+  $('#stories-search').placeholder=`Search ${total} stories, themes, passages…`;
+  $('#stories-search-clear').hidden=!storiesSearch;
+  $('#stories-chips').innerHTML=[['',`All Stories`,total],...STORIES_SECTIONS.map(section=>[section,section,catalog.filter(g=>g.section===section).reduce((n,g)=>n+g.stories.length,0)])].filter(([, ,count])=>count).map(([section,label,count])=>`<button type="button" class="filter-pill${storiesSection===section?' active':''}" data-stories-section="${esc(section)}" aria-pressed="${storiesSection===section}">${esc(label)} (${count})</button>`).join('');
+  const filtered=!!(query||storiesBook||storiesTheme||storiesSection||route);
+  let stories=catalog.filter(entry=>(!storiesBook||entry.book===storiesBook)&&(!storiesSection||entry.section===storiesSection)).flatMap(entry=>entry.stories).filter(story=>(!storiesTheme||(story.topics||[]).includes(storiesTheme))&&terms.every(term=>[story.title,story.summary,story.passage,...(story.topics||[])].join(' ').toLowerCase().includes(term)));
   if(route)stories=stories.filter(story=>storySlug(story.title)===route[2]);
   $('#stories-results').hidden=false;
   $('#stories-reset').hidden=!filtered;
   const pages=Math.ceil(stories.length/STORIES_PAGE_SIZE);
   storiesPage=Math.max(0,Math.min(storiesPage,Math.max(0,pages-1)));
   const start=storiesPage*STORIES_PAGE_SIZE,visible=stories.slice(start,start+STORIES_PAGE_SIZE);
-  $('#stories-results').textContent=pages>1?`${start+1}–${start+visible.length} of ${stories.length} stories`:`${stories.length} ${stories.length===1?'story':'stories'}`;
+  $('#stories-results').textContent=`Showing ${stories.length?start+1:0}–${start+visible.length} of ${stories.length} narratives`;
   $('#stories-pagination').hidden=pages<=1;
   $('#stories-previous').disabled=storiesPage===0;$('#stories-next').disabled=storiesPage>=pages-1;
   $('#stories-page-status').textContent=pages>1?`${storiesPage+1} / ${pages}`:'';
@@ -62,9 +68,14 @@ function updateStoriesFilters(){
  renderStoriesView();
 }
 $('#stories-search').addEventListener('input',updateStoriesFilters);
+$('#stories-search-clear').addEventListener('click',()=>{$('#stories-search').value='';updateStoriesFilters();$('#stories-search').focus();});
+$('#stories-filter-open').addEventListener('click',()=>{$('#stories-filter-sheet').showModal();$('#stories-filter-open').setAttribute('aria-expanded','true');});
+$('#stories-filter-close').addEventListener('click',()=>$('#stories-filter-sheet').close());
+$('#stories-filter-sheet').addEventListener('close',()=>$('#stories-filter-open').setAttribute('aria-expanded','false'));
+$('#stories-chips').addEventListener('click',event=>{const chip=event.target.closest('[data-stories-section]');if(!chip)return;storiesSection=chip.dataset.storiesSection;storiesPage=0;if(storyRoute())history.replaceState(null,'','#stories');renderStoriesView();});
 $('#stories-book').addEventListener('change',updateStoriesFilters);
 $('#stories-theme').addEventListener('change',updateStoriesFilters);
-$('#stories-reset').addEventListener('click',()=>{storiesPage=0;storiesBook='';storiesTheme='';storiesSearch='';if(storyRoute())history.replaceState(null,'','#stories');renderStoriesView();});
+$('#stories-reset').addEventListener('click',()=>{storiesPage=0;storiesBook='';storiesTheme='';storiesSearch='';storiesSection='';if(storyRoute())history.replaceState(null,'','#stories');renderStoriesView();});
 document.addEventListener('click',async event=>{
  const section=event.target.closest('[data-story-section]');
  if(section){const panel=document.getElementById(section.getAttribute('aria-controls'));if(panel){panel.hidden=!panel.hidden;section.setAttribute('aria-expanded',String(!panel.hidden));}return;}
@@ -88,7 +99,7 @@ async function routeLinkedStory(){
  const route=storyRoute();
  storiesActive=location.hash==='#stories'||!!route;
  if(route){
-  storiesPage=0;
+  storiesPage=0;storiesSection='';
   const hash=location.hash;
   try{const catalog=await loadStories();if(location.hash!==hash)return;storiesBook=catalog.find(entry=>storySlug(entry.book)===route[1])?.book||'';storiesTheme='';storiesSearch='';}catch{}
  }
@@ -115,5 +126,5 @@ $('#story-topic-close').onclick=closeStoryTopic;
 $('#story-topic-sheet').addEventListener('click',event=>{if(event.target!==event.currentTarget)return;const rect=event.currentTarget.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)closeStoryTopic();});
 $('#story-topic-sheet').addEventListener('close',()=>document.body.classList.remove('story-topic-open'));
 $('#story-topic-sheet').addEventListener('cancel',()=>document.body.classList.remove('story-topic-open'));
-window.addEventListener('hashchange',closeStoryTopic);
+window.addEventListener('hashchange',()=>{closeStoryTopic();if($('#stories-filter-sheet').open)$('#stories-filter-sheet').close();});
 window.addEventListener('viewchange',closeStoryTopic);
