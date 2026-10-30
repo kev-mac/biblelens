@@ -3091,3 +3091,4 @@ html body.lens-app #explore-view.ux-evidence-hub .ux-count{color:var(--topic);ba
 html body.lens-app #chapter-text .reader-event-title{font:700 1.35rem/1.4 var(--ui-font);color:var(--lens-ink);margin:28px 0 12px;padding-top:8px}
 html body.lens-app .comparison-topic-passages{margin:20px 0;padding:16px;border:1px solid var(--lens-rule);border-radius:8px}
 html body.lens-app .comparison-topic-passages nav{display:flex;flex-wrap:wrap;gap:8px}
+html body.lens-app #lensMasthead nav.lens-primary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
