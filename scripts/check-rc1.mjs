@@ -9,7 +9,7 @@ import {b2Catalog} from './b2-catalog.mjs';
 import {loadDraftDebates} from './draft-debates.mjs';
 import {debateVerdict} from '../worker/debates.mjs';
 const read=file=>JSON.parse(fs.readFileSync(file,'utf8'));
-assert.equal(read('package.json').buildNumber,276);
+assert(read('package.json').buildNumber>=276,'RC1 production content remains supported in later builds');
 for(const [key,count] of Object.entries({evidence:53,people:138,timeline:8,meaning:56,questions:30}))assert.equal(accepted[key].length,count,key);
 assert.deepEqual(accepted.questions.map(row=>row.decisionId),Array.from({length:30},(_,i)=>'B'+String(i+1).padStart(2,'0')));
 const proposals=b2Catalog().collections;
