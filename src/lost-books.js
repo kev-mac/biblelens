@@ -4,9 +4,11 @@
  const host=document.createElement('section');host.id='lost-view';host.hidden=true;host.className='directory-hub stories-hub lost-hub';host.dataset.directorySection='lost';host.setAttribute('aria-labelledby','lost-heading');document.getElementById('main').append(host);
  let catalog=[],collection='All',query='',request;
  const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- // Use the Events header verbatim so navigation and target sizes stay shared.
+ // Share the directory header layout, with the Lost Books tile icon.
  const header=document.querySelector('#stories-view .stories-header').cloneNode(true);
  header.querySelector('h1').id='lost-heading';header.querySelector('h1').textContent='Lost Books';header.querySelector('h1').tabIndex=-1;
+ for(const [key,value] of Object.entries({'stroke-width':'1.6','stroke-linecap':'round','stroke-linejoin':'round'}))header.querySelector('.header-icon-svg').setAttribute(key,value);
+ header.querySelector('.header-icon-svg').innerHTML='<path d="M4 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-2H4ZM13 7a3 3 0 0 1 3-3h5v15h-4a4 4 0 0 0-4 2"/>';
  const filter=header.querySelector('button');filter.id='lost-filter';filter.setAttribute('aria-label','Filter Lost Books');filter.setAttribute('aria-controls','lost-filter-sheet');host.append(header);
  host.insertAdjacentHTML('beforeend',`<div class="stories-content"><div class="stories-search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input class="directory-search" type="search" id="lost-query" aria-label="Search Lost Books" placeholder="Search 20 books…" autocomplete="off"><button type="button" class="directory-search-clear" aria-label="Clear Search" hidden>✕</button></div><nav id="lost-chips" class="filter-carousel" aria-label="Book collection"></nav><div class="list-meta-row"><span id="lost-count" class="directory-results" role="status" aria-live="polite">Loading books…</span><span>Collection order</span></div><div id="lost-cards" class="stories-list" role="region" aria-label="Book results" tabindex="-1"></div></div>`);
  const sheet=document.createElement('dialog');sheet.id='lost-filter-sheet';sheet.className='stories-filter-sheet';sheet.dataset.directorySection='lost';sheet.setAttribute('aria-labelledby','lost-filter-heading');

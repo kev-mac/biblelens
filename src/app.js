@@ -278,3 +278,6 @@ document.querySelector('.skip').addEventListener('click',event=>{
  const content=document.getElementById('main');
  content.focus({preventScroll:true});content.scrollIntoView({block:'start',behavior:'instant'});
 });
+
+// Normalize visible passage ranges and count distinct references in shared cards.
+function passagePillText(references){const refs=[...new Set(references.filter(Boolean).map(ref=>String(ref).replace(/\s*[-–]\s*/g," – ")))];return (refs[0]||"Passages")+(refs.length>1?" +"+(refs.length-1):"");}

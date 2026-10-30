@@ -3036,8 +3036,8 @@ html body.lens-app #main .directory-hub .place-details:not(.open){visibility:hid
 /* purgecss end ignore */
 /* UX14: use the same directory and reader surfaces as the rest of the library. */
 /* Lost Books inherits the Events directory canvas and components above. */
-html body.lens-app [data-directory-section=lost],html body.lens-app [data-topic=lost]{--directory-accent:#b45309;--directory-rgb:180,83,9;--topic:#b45309;--category-border:rgba(180,83,9,.35);--category-glow:rgba(180,83,9,.4)}
-html body.lens-app.dark [data-directory-section=lost],html body.lens-app.dark [data-topic=lost]{--directory-accent:#fbbf24;--directory-rgb:251,191,36;--topic:#fbbf24;--category-border:rgba(251,191,36,.35);--category-glow:rgba(251,191,36,.4)}
+html body.lens-app [data-directory-section=lost],html body.lens-app [data-topic=lost]{--directory-accent:#9f2452;--directory-rgb:159,36,82;--topic:#9f2452;--category-border:rgba(159,36,82,.35);--category-glow:rgba(159,36,82,.4)}
+html body.lens-app.dark [data-directory-section=lost],html body.lens-app.dark [data-topic=lost]{--directory-accent:#fda4af;--directory-rgb:253,164,175;--topic:#fda4af;--category-border:rgba(253,164,175,.35);--category-glow:rgba(253,164,175,.4)}
 html body.lens-app .lost-text-link{display:inline-flex;align-items:center;align-self:flex-start;min-height:44px;padding:0;border:0;background:none;color:var(--directory-accent);font:500 .76rem/1.5 var(--ui-font);text-decoration:underline;text-underline-offset:3px}
 html body.lens-app #lost-view .story-footer .action-link{display:inline-flex;align-items:center;text-decoration:none}
 html body.lens-app .lost-picker-heading{grid-column:1/-1;font-size:1rem;margin:12px 0 4px}
@@ -3046,4 +3046,9 @@ html body.lens-app .lost-search-toggle{min-height:44px;display:inline-flex;align
 html body.lens-app:has(#lost-view:not([hidden])) .lens-context{display:none}
 
 
-html body.lens-app #lost-view .lost-text-link{color:var(--ux13-muted);text-decoration:underline}
+html body.lens-app #lost-view .lost-text-link{color:var(--directory-accent);text-decoration:underline}
+
+/* One slim, non-interactive passage badge on every directory card. */
+html body.lens-app #main .directory-hub .story-card .passage-badge{box-sizing:border-box;height:22px;min-height:22px;max-height:22px;line-height:18px;padding:2px 8px;font-size:.74rem;border:0;flex:none}
+html body.lens-app .story-passages{font-size:.8rem;color:var(--directory-accent)}
+html body.lens-app .story-passages button{display:block;min-height:44px;background:none;border:0;color:inherit;text-decoration:underline}

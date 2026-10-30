@@ -2,8 +2,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {chromium,webkit} from 'playwright';
 import {findings} from './check-neutral-framing.mjs';
-const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875',root=process.env.HOME+'/git/codex-reports',rows=[];
-fs.mkdirSync(root+'/UX12-logs',{recursive:true});
+const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875',root=process.env.UX_LOG_DIR||process.env.HOME+'/git/codex-reports/UX12-logs',rows=[];
+fs.mkdirSync(root,{recursive:true});
 assert.deepEqual(findings('Contradictions and conflicts with evidence'),[]);
 for(const text of ['debunk the Bible','scripture exposed','biblical lies','This is a myth'])assert(findings(text).length,text);
 assert.deepEqual(findings('The settlement lies north. Erosion exposed the stone.'),[]);
@@ -45,5 +45,5 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
   // Both a failed fetch and a real zero-result response retain a usable Retry action.
   const retry=await browser.newPage({viewport:{width,height:844},serviceWorkers:'block'});let fail=true;await retry.route('**/api/debates?*',r=>fail?r.fulfill({status:503,body:'Unavailable'}):r.continue());await retry.goto(base+'/#questions?mode=science');await retry.locator('#debate-results .lens-empty [data-debate-retry]').waitFor();fail=false;await retry.locator('[data-debate-retry]').click();await retry.locator('#debate-results .phase2-debate-card').first().waitFor();await retry.goto(base+'/#questions?mode=science&q=zzzzzzzzzz');await retry.locator('#debate-results .lens-empty [data-debate-retry]').waitFor();await retry.locator('[data-debate-retry]').click();await retry.locator('#debate-results .lens-empty').waitFor();await retry.close();
   rows.push({engine,width,cold:['history','science','text'],status:'PASS'});console.log('PASS UX12',engine,width);
- }}finally{await browser.close();fs.writeFileSync(root+'/UX12-logs/ux12-matrix.json',JSON.stringify(rows,null,2)+'\n');}
+ }}finally{await browser.close();fs.writeFileSync(root+'/'+(process.env.UX_LOG_PREFIX||'ux12-')+'matrix.json',JSON.stringify(rows,null,2)+'\n');}
 }

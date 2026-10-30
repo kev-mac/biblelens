@@ -37,7 +37,7 @@
     "check:ux10": "node scripts/check-ux10.mjs && node scripts/check-ux10-browser.mjs",
     "release:sites": "node scripts/package-sites.mjs",
     "check:ux13": "node scripts/check-ux13-content.mjs && node scripts/check-ux13-browser.mjs",
-    "check:ux14": "node scripts/check-lost-books.mjs && node scripts/check-ux14-browser.mjs"
+    "check:ux14": "node scripts/check-question-passages.mjs && node scripts/check-lost-books.mjs && node scripts/check-ux14-browser.mjs && node scripts/check-ux14c-browser.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",

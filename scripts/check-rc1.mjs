@@ -1,3 +1,4 @@
+import {questionPassageAdditions,validateQuestionPassages} from './question-passages.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {accepted,releaseContent,releaseReferences} from './rc1-content.mjs';
@@ -20,7 +21,8 @@ assert.deepEqual(accepted.meaning,proposals.rewrites.filter(row=>['people','stor
 const selected=loadDraftDebates().candidates.filter(row=>row.recommended);
 // UX12 adds science facets without changing the approved question content.
 const scienceBranches={B17:'Astronomy',B18:'Astronomy',B19:'Astronomy',B20:'Astronomy',B21:'Biology',B22:'Geology',B23:'Geology',B24:'Biology'};
-assert.deepEqual(accepted.questions,selected.map(row=>({id:row.id,decisionId:row.reading_review.decisionId,question:row.question,comparison:row.comparison,...(scienceBranches[row.reading_review.decisionId]?{branch:scienceBranches[row.reading_review.decisionId]}:{}),readings:row.reading_review.readings,sources:row.reading_review.sources,limits:row.reading_review.limits,side_a:row.side_a.passages,side_b:row.side_b.passages,labels:[...new Set(row.source_record_ids.map(id=>debateVerdict(read('data/evidence.json').find(record=>record.id===id))))]})));
+assert.deepEqual(accepted.questions,selected.map(row=>({id:row.id,decisionId:row.reading_review.decisionId,question:row.question,comparison:row.comparison,...(scienceBranches[row.reading_review.decisionId]?{branch:scienceBranches[row.reading_review.decisionId]}:{}),readings:row.reading_review.readings,sources:row.reading_review.sources,limits:row.reading_review.limits,side_a:row.side_a.passages,side_b:[...row.side_b.passages,...(questionPassageAdditions[row.reading_review.decisionId]||[])],labels:[...new Set(row.source_record_ids.map(id=>debateVerdict(read('data/evidence.json').find(record=>record.id===id))))]})));
+console.log(validateQuestionPassages(accepted.questions));
 const evidence=JSON.parse(releaseContent('data/evidence.json')),people=JSON.parse(releaseContent('src/data/characters.json'));
 validateSides(evidence,read('data/books.json'),read('data/chapters.json'));validateWitnesses(evidence,read('data/books.json'),read('data/chapters.json'));
 for(const original of read('data/evidence.json'))if(!accepted.evidence.some(row=>row.id===original.id))assert.deepEqual(evidence.find(row=>row.id===original.id),original);
@@ -37,7 +39,7 @@ assert.deepEqual(read('www/reference/relationships.json'),refs.relationships);
 for(const row of accepted.questions)assert.equal((await json('/api/debate?id='+row.id)).title,row.question);
 assert.deepEqual(await json('/release.json'),releaseInfo());
 assert.deepEqual(read('www/release.json'),releaseInfo());
-assert.equal(Object.keys(await json('/offline-bible.json')).length,1189);
+assert.equal(Object.keys(await json('/offline-bible.json')).length,Object.keys(read('data/chapters.json')).length+Object.keys(read('data/lost-books/chapters.json')).length);
 for(const file of ['draft-review.html','draft-review.json','teachings.html','teachings.json'])assert.equal((await worker.fetch(new Request('https://rc1.test/'+file),{},{})).status,404);
 const manifest=read('dist/asset-manifest.json');const packed=read('dist/client'+manifest.parts.EVIDENCE);assert.deepEqual(packed,evidence);
 // Test the independent packaged native engine, not only the shared build helper.

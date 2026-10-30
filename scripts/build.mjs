@@ -1,3 +1,4 @@
+import {validateQuestionPassages} from './question-passages.mjs';
 import {addUX13Events,validateUX13Content} from './ux13-content.mjs';
 import {parsePlaces,directoryPlaces} from '../src/places-core.js';
 import {enrichStories} from './story-metrics.mjs';
@@ -34,6 +35,7 @@ import {validateWitnesses} from './witness-labels.mjs';
 import {validateSides} from './verse-roles.mjs';
 import fs from 'node:fs';import vm from 'node:vm';import path from 'node:path';
 validateSides(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
+console.log('Validated question passages:',validateQuestionPassages(accepted.questions));
 const lostBooks=JSON.parse(fs.readFileSync('data/lost-books/books.json','utf8'));
 const lostChapters=JSON.parse(fs.readFileSync('data/lost-books/chapters.json','utf8'));
 const readerBooks=[...JSON.parse(fs.readFileSync('data/books.json','utf8')),...lostBooks];

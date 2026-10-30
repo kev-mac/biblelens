@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {validateQuestionPassages} from './question-passages.mjs';
+const questions=JSON.parse(fs.readFileSync('data/rc1-accepted.json')).questions;
+console.log('PASS',validateQuestionPassages(questions));
+const q=questions[0];
+assert.throws(()=>validateQuestionPassages([{...q,side_b:q.side_b.slice(0,1)}]),/Chronicles without a passage/);
+for(const mention of ['2 Chronicles','Isaiah 36:4','1 Chronicles 20:6'])assert.throws(()=>validateQuestionPassages([{...q,readings:[{label:'Reading',summary:mention}]}]),/without a passage|lacks verse/);
+assert.throws(()=>validateQuestionPassages([{...q,side_b:[{...q.side_b[1],verses:[]}]}]),/missing verse text/);
+console.log('PASS missing short/numbered books, missing named verses and empty verse text are rejected');
