@@ -3069,4 +3069,4 @@ html body.lens-app :is(#characters-view,#places-view,#character-sheet) .person-s
 html body.lens-app #main #characters-view.directory-hub .directory-categories button{border-radius:5px}
 html body.lens-app :is(#characters-view,#character-sheet) .character-era{border-radius:4px;padding:3px 7px}
 html body.lens-app :is(#characters-view,#character-sheet) .character-biography-source{display:inline-flex;align-items:center;min-height:44px;color:var(--topic-people);font-size:.76rem;text-decoration:underline;text-underline-offset:3px}
-html body.lens-app :is(#characters-view,#character-sheet) .character-biography-person{color:var(--topic-people);text-decoration:underline;text-underline-offset:3px}
+html body.lens-app :is(#characters-view,#character-sheet) .character-biography-person{display:inline;min-height:0;min-width:0;height:auto;padding:0;margin:0;border:0;background:none;border-radius:0;font:inherit;line-height:inherit;vertical-align:baseline;color:var(--topic-people);text-decoration:underline;text-underline-offset:3px}
