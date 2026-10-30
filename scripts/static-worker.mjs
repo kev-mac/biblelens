@@ -121,6 +121,15 @@ const EMBEDDED_ASSETS={async fetch(request){
 }};
 `;
   source=source.replace('export default {async fetch',()=>embedded+'\nexport default {async fetch');
+  // Keep the response policy on every route, including release and lazy APIs.
+  source=source.replace('export default {async fetch', 'const packagedWorker={async fetch');
+  source+=`\nexport default {async fetch(request,env,ctx){
+ const response=await packagedWorker.fetch(request,env,ctx);
+ const headers=new Headers(response.headers);
+ headers.set('content-security-policy-report-only',ASSETS['/'].csp);
+ headers.set('content-security-policy',"object-src 'none'; base-uri 'none'; form-action 'self'; worker-src 'self'");
+ return new Response(response.body,{status:response.status,statusText:response.statusText,headers});
+}};\n`;
   const sizes = Object.fromEntries(Object.entries(data).map(([key, value]) => [key, Buffer.byteLength(JSON.stringify(value))]));
   fs.writeFileSync(path.join(output, 'asset-manifest.json'), JSON.stringify({mode:external?'static':'compressed',prefix, parts, index, sizes, splitBytes, before: Buffer.byteLength(fs.readFileSync(path.join(output, 'server/index.js'))), after: Buffer.byteLength(source)}, null, 2));
   fs.writeFileSync(path.join(output, 'server/index.js'), source);
