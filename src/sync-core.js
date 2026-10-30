@@ -65,7 +65,7 @@
   for(const key of maps)state[key]=copy(data[key]||{});
   const prefs=data.preferences||{};
   if(['dark','light'].includes(prefs.theme))state.theme=prefs.theme;
-  if(Number.isFinite(prefs.textScale))state.textScale=Math.min(1.5,Math.max(.85,prefs.textScale));
+  if(Number.isFinite(prefs.textScale))state.textScale=Math.min(1.8,Math.max(.85,prefs.textScale));
   if(['fixed','floating'].includes(prefs.bookPickerPosition))state.bookPickerPosition=prefs.bookPickerPosition;
   state.readerPreferences={...state.readerPreferences};
   for(const key of ['edition','compare','commentary','navColors','font','verseFont','categoryFont','appFont'])if(typeof prefs[key]==='string')state.readerPreferences[key]=prefs[key];

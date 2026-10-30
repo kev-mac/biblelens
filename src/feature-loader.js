@@ -35,7 +35,7 @@
   if(required.every(name=>loaded.has(name))){routing=null;document.getElementById('route-loading')?.setAttribute('hidden','');document.getElementById('main')?.removeAttribute('aria-busy');return false;}
   if(routing?.hash===hash)return true;
   const job={hash};routing=job;
-  const label=/^#(?:compare|investigation)/.test(hash)?'Compare Passages':/^#read/.test(hash)?'Read':/^#search/.test(hash)?'Search':/^#commandments/.test(hash)?'Commandments':/^#(?:people|characters)/.test(hash)?'People':/^#places/.test(hash)?'Places':/^#timeline/.test(hash)?'Timeline':/^#stories/.test(hash)?'Stories':/^#debate\//.test(hash)?'Question':/^#questions/.test(hash)?'Text Comparisons':/^#notebook/.test(hash)?'Saved':'Explore';
+  const label=/^#(?:compare|investigation)/.test(hash)?'Compare Passages':/^#read/.test(hash)?'Read':/^#search/.test(hash)?'Search':/^#commandments/.test(hash)?'Laws':/^#(?:people|characters)/.test(hash)?'People':/^#places/.test(hash)?'Places':/^#timeline/.test(hash)?'Timeline':/^#stories/.test(hash)?'Events':/^#debate\//.test(hash)?'Question':/^#questions/.test(hash)?'Text Comparisons':/^#notebook/.test(hash)?'Saved':'Explore';
   const context=document.querySelector('#header-context');if(context)context.textContent=label;const nav=document.querySelector('.lens-context');if(nav){nav.hidden=false;nav.innerHTML='<h1>'+label+'</h1>';}document.title=label+' · BibleLens';document.querySelector('#lens-settings')?.setAttribute('aria-label','Settings for '+label);
   queueMicrotask(async()=>{
    if(routing!==job||location.hash!==hash)return;
@@ -64,8 +64,7 @@
   if(settings&&!loaded.has('study')){event.preventDefault();event.stopImmediatePropagation();load('study').then(()=>settings.click()).catch(error=>toast(error.message));return;}
 
  },true);
- function verseContext(button){const verse=button?.closest('#chapter-text .verse');if(!verse||!window.BibleLensWorkspace?.inspectVerse)return false;window.BibleLensWorkspace.inspectVerse(Number(verse.id.replace('verse-','')),true,button);return true;}
- function openAtlas(id,button){if(verseContext(button))return;load('map').then(()=>window.BibleLensAtlas.open(id,button)).catch(error=>toast(error.message));}
+ function openAtlas(id,button){if(button.classList.contains('ux-place-open'))return;window.BibleLensWorkspace.navigate('#places?place='+encodeURIComponent(id));}
 // Holding a place opens its in-app contents, and scrolling cancels the hold.
 let placePress=null,placeTimer=0,suppressPlaceUntil=0;
 function cancelPlacePress(){clearTimeout(placeTimer);placePress=null;}
@@ -79,10 +78,10 @@ for(const type of ['pointerup','pointercancel'])document.addEventListener(type,c
 document.addEventListener('scroll',cancelPlacePress,true);
 document.addEventListener('contextmenu',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();cancelPlacePress();suppressPlaceUntil=Date.now()+1000;if(!document.querySelector('#atlas-sheet')?.open)openAtlas(chip.dataset.placeId,chip);},true);
 // Capture prevents reader verse gestures and citation navigation from handling a chip tap.
-document.addEventListener('click',event=>{const chip=event.target.closest('[data-place-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(Date.now()<suppressPlaceUntil)return;openAtlas(chip.dataset.placeId,chip);},true);
+document.addEventListener('click',event=>{const chip=event.target.closest('[data-place-id]');if(!chip||chip.classList.contains('ux-place-open'))return;event.preventDefault();event.stopImmediatePropagation();if(Date.now()<suppressPlaceUntil)return;openAtlas(chip.dataset.placeId,chip);},true);
 for(const type of ['pointerdown','dblclick','contextmenu'])document.addEventListener(type,event=>{if(event.target.closest('[data-place-id]'))event.stopImmediatePropagation();},true);
 // People cards open over the current reading position, like the atlas.
-document.addEventListener('click',event=>{const chip=event.target.closest('[data-person-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(window.getSelection()?.toString())return;if(verseContext(chip))return;load('study').then(()=>load('characters')).then(()=>window.dispatchEvent(new CustomEvent('open-person',{detail:{id:chip.dataset.personId,opener:chip}}))).catch(error=>toast(error.message));},true);
+document.addEventListener('click',event=>{const chip=event.target.closest('[data-person-id]');if(!chip)return;event.preventDefault();event.stopImmediatePropagation();if(window.getSelection()?.toString())return;window.BibleLensWorkspace.navigate('#characters/'+encodeURIComponent(chip.dataset.personId));},true);
 for(const type of ['pointerdown','dblclick'])document.addEventListener(type,event=>{if(event.target.closest('[data-person-id]'))event.stopImmediatePropagation();},true);
 
  function references(){if((['stories','evidence'].includes(view)||(view==='read'&&typeof reading!=='undefined'&&reading&&!reading.verses[0]?.referenceLinks)))requestAnimationFrame(()=>requestAnimationFrame(()=>load('references').catch(()=>{})));}

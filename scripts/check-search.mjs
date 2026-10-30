@@ -55,8 +55,8 @@ try{
   let visible=0;
   const results=groups.flatMap(({name,items})=>items.map((item,index)=>{
    const record=name==='Research'?lastSearch.research.find(row=>row.title===item.title):null;
-   const kind={Scripture:'verse',Research:record?.kind==='study'?'study':'record',Stories:'story',People:'person',Places:'place',Commandments:'commandment'}[name];
-   const id=name==='Commandments'?item.id:name==='Scripture'?item.title:name==='Research'?record?.id:name==='People'?item.url.slice('#characters/'.length):name==='Places'?/data-place-id="([^"]+)"/.exec(item.html)?.[1]:item.url;
+   const kind={Scripture:'verse',Research:record?.kind==='study'?'study':'record',Events:'story',People:'person',Places:'place',Laws:'commandment'}[name];
+   const id=name==='Laws'?item.id:name==='Scripture'?item.title:name==='Research'?record?.id:name==='People'?item.url.slice('#characters/'.length):name==='Places'?/data-place-id="([^"]+)"/.exec(item.html)?.[1]:item.url;
    assert(kind&&id,`Unidentified result in ${name}`);
    return {kind,id,group:name,groupRank:index+1,visibleRank:index<5?++visible:null};
   })).map((row,index)=>({...row,rank:index+1}));
@@ -71,11 +71,11 @@ try{
  const search=async query=>{groups.length=0;await context.runSearch(query);return lastSearch;};
  for(const query of ['1 sam 17:4','1Sam17:4','first samuel 17:4','I Samuel 17:4','1 Samuel 17 4']){
   const result=await search(query);assert.deepEqual(result.passages.map(p=>p.label),['1 Samuel 17:4'],query);
-  assert(groups.find(g=>g.name==='Stories').items.some(item=>item.url==='#stories/1-samuel/david-and-goliath'),query+' story');
+  assert(groups.find(g=>g.name==='Events').items.some(item=>item.url==='#stories/1-samuel/david-and-goliath'),query+' story');
  }
  for(const query of ['1Sam17','first samuel 17']){const result=await search(query);assert.equal(result.passages[0]?.label,'1 Samuel 17:1',query);assert(result.limited);}
  for(const query of ['John 3:0','John 3:999','John 3:18-16','John 4:2–3:35','Genesis 2–1','Genesis 999']){
-  const result=await search(query);assert.equal(result.passages.length+result.research.length,0,query);assert.equal(groups.find(g=>g.name==='Stories').items.length,0,query+' stories');
+  const result=await search(query);assert.equal(result.passages.length+result.research.length,0,query);assert.equal(groups.find(g=>g.name==='Events').items.length,0,query+' stories');
  }
  for(const [query,kind,id] of [['Cephas','People','recX9MMADoVI2CSP1'],['Saul','People','recgkzNX07a7kGFYL'],['Saul','People','recjMT68aIzFLh6cQ'],['Devil','People','recLFwe2uKBqJwmWn'],['Zion','Places','recL1WV82pXaRBQ59'],['Sea of Tiberias','Places','recRe6uBpPMDP6u82'],['Jersualem','Places','recL1WV82pXaRBQ59']]){
   await search(query);assert(groups.find(g=>g.name===kind).items.some(item=>kind==='People'?item.url==='#characters/'+id:item.html.includes('data-place-id="'+id+'"')),query+' alias/typo');

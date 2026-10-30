@@ -115,7 +115,7 @@ const scaleValues=new Map();const fontContext={state:{},$:s=>s==='#reader-font-v
 vm.createContext(fontContext);
 vm.runInContext(preferences.slice(preferences.indexOf('function applyTextSize(){')),fontContext);
 assert.equal(scaleValues.get('--text-scale'),'1');assert.equal(fontOutput.textContent,'100%');
-for(const percent of [85,95,100,115,130,150]){fontNode.oninput({target:{value:String(percent)}});assert.equal(scaleValues.get('--text-scale'),String(percent/100));assert.equal(fontContext.state.textScale,percent/100);assert.equal(fontOutput.textContent,percent+'%');assert.equal(fontNode.attrs['aria-valuetext'],percent+' percent');}
+for(const percent of [85,95,100,115,130,150]){fontNode.oninput({target:{value:String(percent)}});assert.equal(scaleValues.get('--text-scale'),'1');assert.equal(scaleValues.get('--reader-text-scale'),String(percent/100*1.2));assert.equal(fontContext.state.textScale,percent/100*1.2);assert.equal(fontOutput.textContent,percent+'%');assert.equal(fontNode.attrs['aria-valuetext'],percent+' percent');}
 fontNode.onchange();assert(scaleValues.get('saved'));
 fontContext.state.textScale=Infinity;fontContext.applyTextSize();assert.equal(scaleValues.get('--text-scale'),'1');
 assert(html.includes('id="reader-font" type="range"'));
@@ -226,3 +226,5 @@ context.comparisonStatus();assert(statusNode.innerHTML.includes('Academic: 1 sum
 vm.runInContext("comparisonRecordSelections.set('dual-language-fixture:H',true);comparisonRecordSelections.set('dual-language-fixture:G',false)",context);
 const onlyH=context.render(1);assert(onlyH.includes('comparison-panel-1-contradictions-0-H" aria-labelledby="comparison-tab-1-contradictions-0-H" >'));assert(onlyH.includes('comparison-panel-1-contradictions-0-G" aria-labelledby="comparison-tab-1-contradictions-0-G" hidden'));
 console.log('PASS: H/G codes retained; Academic/Translation cards and independent toggle groups; Q display name.');
+
+for(const physical of [.85,1,1.2,1.5]){fontContext.state.textScaleBaseline='110-v2';fontContext.state.textScale=physical;fontContext.applyTextSize();assert.equal(fontContext.state.textScale,physical);assert.equal(Number(scaleValues.get('--reader-text-scale')),physical);}

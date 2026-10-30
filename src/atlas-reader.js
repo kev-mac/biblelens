@@ -43,7 +43,7 @@
    control('ux-prev').disabled=readingBook===0&&readingChapter===1;
    control('ux-next').disabled=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;
    control('ux-font-style').setAttribute('aria-label',['lora','georgia'].includes(readerPreferences.appFont)?'Use sans serif app font':'Use serif app font');
-   control('ux-font-less').disabled=Number(state.textScale)<=.85;control('ux-font-more').disabled=Number(state.textScale)>=1.5;
+   control('ux-font-less').disabled=Number(state.textScale)<=1.02;control('ux-font-more').disabled=Number(state.textScale)>=1.8;
   }
   window.addEventListener('biblelens:statechange',updateControls);
   // Long passage names yield space to the fixed edition and evidence controls.

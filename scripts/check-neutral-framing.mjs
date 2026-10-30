@@ -37,6 +37,7 @@ export function framingAudit(){
    walk(row,location+'/'+name,name);
   }
  };
+ for(const file of ['data/reference/place-summaries.json','data/ux13-events.json'])walk(JSON.parse(read(file)),file);
  for(const file of contentFiles)walk(JSON.parse(b4Content(file,{BIBLELENS_DRAFTS:'1'})),file);
  walk(loadDraftDebates(),'packaged/headlines');walk(neutralTree(b6Catalog(b2Catalog())),'packaged/B2-B6');
  for(const file of ['research/b4/wording-proposals.json','research/b4/reading-proposals.json'])walk(JSON.parse(read(file)),file);

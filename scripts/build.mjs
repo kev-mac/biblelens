@@ -1,3 +1,4 @@
+import {addUX13Events,validateUX13Content} from './ux13-content.mjs';
 import {parsePlaces,directoryPlaces} from '../src/places-core.js';
 import {enrichStories} from './story-metrics.mjs';
 import {linkPeopleStories} from '../src/story-people.js';
@@ -33,6 +34,7 @@ import {validateWitnesses} from './witness-labels.mjs';
 import {validateSides} from './verse-roles.mjs';
 import fs from 'node:fs';import vm from 'node:vm';import path from 'node:path';
 validateSides(JSON.parse(fs.readFileSync('data/evidence.json','utf8')),JSON.parse(fs.readFileSync('data/books.json','utf8')),JSON.parse(fs.readFileSync('data/chapters.json','utf8')));
+console.log('Validated UX13 content:',validateUX13Content());
 console.log('Validated people roles:',validatePeopleRoles(JSON.parse(fs.readFileSync('data/reference/people.json')),JSON.parse(fs.readFileSync('data/books.json')),JSON.parse(fs.readFileSync('data/chapters.json'))));
 console.log('Validated commandment catalog:',validateCommandmentsCatalog());
 console.log('Validated characters:',validateCharacters());
@@ -61,7 +63,7 @@ const uxRead=name=>JSON.parse(releaseContent(name));
 const uxEvidence=uxRead('data/evidence.json');
 assets['/collection-counts.json']={type:'application/json; charset=utf-8',body:JSON.stringify({
  people:uxRead('data/reference/people.json').length,places:directoryPlaces(parsePlaces(uxRead('data/reference/places.json'))).length,
- stories:uxRead('data/stories.json').reduce((n,g)=>n+g.stories.length,0),
+ stories:addUX13Events(uxRead('data/stories.json')).reduce((n,g)=>n+g.stories.length,0),
  commandments:uxRead('data/commandments-catalog.json').records.length,
  science:uxEvidence.filter(r=>r.mode==='science').length,history:uxEvidence.filter(r=>r.mode==='history').length,
  translation:uxEvidence.filter(r=>(r.tags||[r.tag]).includes('T')).length,
@@ -91,7 +93,7 @@ assets['/prophecies.js']={type:'application/javascript; charset=utf-8',body:prop
 const charactersBundle=await build({plugins:[releaseJsonPlugin],entryPoints:['src/components/characters/CharactersView.tsx'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/characters.js']={type:'application/javascript; charset=utf-8',body:charactersBundle.outputFiles[0].text};
 assets['/characters.json']={type:'application/json; charset=utf-8',body:releaseContent('src/data/characters.json',b4Content('src/data/characters.json'))};
-assets['/stories.json']={type:'application/json; charset=utf-8',body:JSON.stringify(enrichStories(tagStoryCatalog(JSON.parse(releaseContent('data/stories.json',b4Content('data/stories.json'))),JSON.parse(fs.readFileSync('data/reference/topics.json','utf8')),loadTopicOptions()),uxRead('data/books.json'),uxRead('data/chapters.json'),uxEvidence))};
+assets['/stories.json']={type:'application/json; charset=utf-8',body:JSON.stringify(enrichStories(addUX13Events(tagStoryCatalog(JSON.parse(releaseContent('data/stories.json',b4Content('data/stories.json'))),JSON.parse(fs.readFileSync('data/reference/topics.json','utf8')),loadTopicOptions())),uxRead('data/books.json'),uxRead('data/chapters.json'),uxEvidence))};
 assets['/release.json']={type:'application/json; charset=utf-8',body:JSON.stringify(releaseInfo())};
 const redLetterContext={};vm.createContext(redLetterContext);vm.runInContext(fs.readFileSync('src/red-letters.js','utf8')+';this.ranges=RED_LETTERS;',redLetterContext);
 const redLetters=redLetterContext.ranges;

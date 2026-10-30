@@ -46,7 +46,7 @@
  const main = el('main');
  const contextNav=document.createElement('nav');contextNav.className='lens-context';contextNav.setAttribute('aria-label','Page navigation');contextNav.hidden=true;main.prepend(contextNav);
  let searchParent='explore';
- const labels={read:'Read',explore:'Explore',debates:'Contradictions',debate:'Question',notebook:'Saved',search:'Search',stories:'Stories',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Commandments',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the Text'};
+ const labels={read:'Read',explore:'Explore',debates:'Contradictions',debate:'Question',notebook:'Saved',search:'Search',stories:'Events',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Laws',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the Text'};
  const roots={read:'#read',explore:'#discover',debates:'#questions',notebook:'#notebook'};
  function primary(){
   if(view==='search'||view==='chat')return searchParent;
@@ -98,7 +98,7 @@
   const title=[...dialog.querySelectorAll('h1,h2,h3')].find(node=>!node.closest('[hidden]'))?.textContent.trim()||dialog.getAttribute('aria-label')||'Details';
   let nav=dialog.querySelector('.ux-dialog-path');
   if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='←';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
-  const collection={characters:'People',places:'Places',stories:'Stories',commandments:'Commandments',prophecies:'Prophecies',timeline:'History & Timeline'}[view];
+  const collection={characters:'People',places:'Places',stories:'Events',commandments:'Laws',prophecies:'Prophecies',timeline:'History & Timeline'}[view];
   const path=[primary()==='debates'?'Questions':labels[primary()]||'Explore',collection,title].filter(Boolean).join(' › ');
   if(nav.lastElementChild.textContent!==path)nav.lastElementChild.textContent=path;
  }}
@@ -137,7 +137,7 @@
  new MutationObserver(enhance).observe(document.body,{childList:true,subtree:true});window.addEventListener('hashchange',enhance);enhance();
 })();
 
-// The directory canvas uses the Stories components; collection modules keep
+// The directory canvas uses the Events components; collection modules keep
 // ownership of their records, search, filters and pagination.
 (()=>{
  const icon='<svg class="header-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg>';

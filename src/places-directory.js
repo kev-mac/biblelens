@@ -1,3 +1,5 @@
+import {placePreviewSVG} from './place-map-preview.js';
+import {directorySaveButton} from './directory-save.js';
 import books from '../data/books.json' with {type:'json'};
 import {loadPlaces,directoryPlaces} from './places-core.js';
 import {regionCoverage,inWindow,usableRegionPoint} from './place-regions.js';
@@ -14,12 +16,12 @@ export function searchPlaces(places,query=''){
 const node=(tag,className,text)=>{const el=document.createElement(tag);el.className=className||'';if(text)el.textContent=text;return el;};
 function placeCard(place, duplicate){
  const card=node('article','character-card place-profile-card');
- const heading=node('h2','character-name',place.name+(duplicate&&(place.region||place.refs?.[0])?' ('+(place.region||(books[place.refs[0][0]].code+' '+place.refs[0][1]+':'+place.refs[0][2]))+')':''));card.append(heading);
- const open=node('button','ux-place-open place-map-action','View place →');open.type='button';open.dataset.placeId=place.id;open.setAttribute('aria-label','Open '+place.name);
+ const heading=node('h2','character-name',place.name+(duplicate&&(place.region||place.refs?.[0])?' ('+(place.region||(books[place.refs[0][0]].code+' '+place.refs[0][1]+':'+place.refs[0][2]))+')':''));card.append(heading);card.id='place-'+place.id;card.dataset.placeCard=place.id;
+ const open=node('button','ux-place-open place-map-action','View place →');open.type='button';open.dataset.expandPlace=place.id;open.setAttribute('aria-expanded','false');open.setAttribute('aria-controls','place-details-'+place.id);open.setAttribute('aria-label','Open '+place.name);
 
  if(place.refs?.length){const [book,chapter,verse]=place.refs[0],pill=node('span','passage-badge',books[book].name+' '+chapter+':'+verse+(place.refs.length>1?' +'+(place.refs.length-1).toLocaleString():''));card.prepend(pill);}
- const description=place.shortDescription;
- if(description&&description.split(/\s+/).length<=15)card.append(node('p','character-summary',description));
+ const description=place.summary;
+ if(description)card.append(node('p','character-summary',description));
  const meta=node('div','ux-place-meta');
  if(place.featureType)meta.append(node('span','',place.featureType));
  if(place.modern_name)meta.append(node('span','','Now '+place.modern_name));
@@ -28,6 +30,21 @@ function placeCard(place, duplicate){
  const figure=node('div','story-footer');
  figure.append(node('span','',place.linkedPassageCount===null?'':place.linkedPassageCount.toLocaleString()+' linked '+(place.linkedPassageCount===1?'verse':'verses')));open.classList.add('action-link');
  figure.append(open);card.append(figure);
+ const details=node('div','place-details');details.id='place-details-'+place.id;details.inert=true;details.setAttribute('aria-hidden','true');
+ const inner=node('div','place-details-inner');details.append(inner);card.append(details);
+ let filled=false;
+ open.onclick=()=>{const expanded=open.getAttribute('aria-expanded')!=='true';open.setAttribute('aria-expanded',String(expanded));open.textContent=expanded?'Hide details':'View place →';open.setAttribute('aria-label',(expanded?'Hide details for ':'Open ')+place.name);details.inert=!expanded;details.setAttribute('aria-hidden',String(!expanded));details.classList.toggle('open',expanded);
+  if(!expanded||filled)return;filled=true;
+  const map=node('figure','place-inline-map');
+  if(place.coordinates){map.innerHTML=placePreviewSVG(place);const caption=node('figcaption','','Modern geographical context · Dataset reference point; identification may be uncertain.');map.append(caption);const external=node('a','','Open map ↗');external.href='https://www.openstreetmap.org/?mlat='+place.coordinates.latitude+'&mlon='+place.coordinates.longitude+'#map=8/'+place.coordinates.latitude+'/'+place.coordinates.longitude;external.target='_blank';external.rel='noopener';map.append(external);}else map.append(node('p','','Location unknown. No map reference point is available.'));
+  inner.append(map,node('h3','','Linked Passages'));const refs=node('div','place-inline-passages');for(const [b,c,v] of place.refs){const link=node('a','',books[b].name+' '+c+':'+v);link.href='#read/'+b+'/'+c+'/'+v;refs.append(link);}inner.append(refs,node('h3','','Identification'));
+  const identification=node('dl','');for(const [label,value] of [['Modern name',place.modern_name],['Feature',place.featureType],['Map precision',({Precise:'Specific reference point',Center:'Area center',Rough:'Broad reference area','Related-Within':'Within a wider area','Related-Surrounding':'Surrounding area'})[place.precision]||place.precision],['Dataset status',({VERIFIED:'Checked in source dataset',UNVERIFIED:'Not checked in source dataset',NOT_IDENTIFIABLE:'Not identified in source dataset'})[place.verification]||place.verification],['Identification uncertain',place.identificationUncertain?'Yes':'Not flagged by the dataset'],['Part of',place.region],['Other names',[...place.aliases,...place.otherNames].join(', ')]])if(value)identification.append(node('dt','',label),node('dd','',value));inner.append(identification,node('h3','','Sources'));
+  for(const text of place.sources.dictionary)inner.append(node('p','',text.replace(/\[([^\]]+)\]\([^)]*\)/g,'$1')));
+  if(place.sources.dictionary.length)inner.append(node('p','','Easton’s Bible Dictionary (1897, public domain), via Robert Rouse / Viz.Bible (CC BY-SA 4.0). Historical identifications may differ from current research.'));
+  if(place.sources.comment)inner.append(node('p','','Dataset comment: '+place.sources.comment));
+  const source=node('a','','Dataset provenance and attribution');source.href='/reference/places-provenance.json';source.target='_blank';source.rel='noopener';inner.append(source,directorySaveButton('place',place.id,place.name));
+ };
+
  return card;
 }
 
@@ -51,17 +68,27 @@ export function mountPlacesDirectory(){
   previous.disabled=page===0;next.disabled=page+1>=pages;pagination.hidden=!loaded||pages<=1;retry.hidden=!failed;
   pagination.querySelector('span').textContent=`Page ${page+1} of ${Math.max(1,pages)}`;
  }
+ function deepLink(){
+  if(!loaded||!location.hash.startsWith('#places'))return;
+  const id=new URLSearchParams(location.hash.split('?')[1]).get('place')||/^#places\/(.+)$/.exec(location.hash)?.[1];if(!id)return;
+  let place=places.get(id)||[...places.values()].find(p=>p.lookupIds.includes(id));if(!place)return;
+  if(/['’]s$/i.test(place.name)&&places.has(place.canonicalId))place=places.get(place.canonicalId);
+  search.value='';region=null;for(const button of regions.children)button.setAttribute('aria-pressed',String(button.getAttribute('aria-label')==='All'));
+  const matches=searchPlaces(places);page=Math.floor(matches.findIndex(p=>p.id===place.id)/24);render();
+  requestAnimationFrame(()=>{const card=document.getElementById('place-'+place.id);card?.querySelector('[aria-expanded=false]')?.click();card?.scrollIntoView({block:'start',behavior:'instant'});});
+ }
+ window.addEventListener('hashchange',deepLink);
  async function load(){
   if(loaded||loading)return;loading=true;failed=false;render();
   try{places=await loadPlaces();loaded=true;
    const shown=regionCoverage(searchPlaces(places)).filter(row=>row.shown);
    for(const row of [null,...shown]){const button=node('button','',row?row.name+' ('+row.usable.toLocaleString()+')':'All ('+searchPlaces(places).length.toLocaleString()+')');button.type='button';button.setAttribute('aria-label',row?.name||'All');button.setAttribute('aria-pressed',String(row===region));button.onclick=()=>{region=row;page=0;for(const other of regions.children)other.setAttribute('aria-pressed',String(other===button));render();};regions.append(button);}
   }catch{failed=true;}
-  loading=false;render();
+  loading=false;render();deepLink();
  }
  search.addEventListener('input',()=>{page=0;render();});retry.addEventListener('click',()=>{void load();});
  function move(offset){page+=offset;render();count.scrollIntoView({block:'start'});}
  previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
- window.addEventListener('viewchange',event=>{if(event.detail==='places')void load();});
+ window.addEventListener('viewchange',event=>{if(event.detail==='places'){void load();deepLink();}});
  render();if(!host.hidden)void load();
 }

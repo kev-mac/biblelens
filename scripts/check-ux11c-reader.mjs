@@ -34,7 +34,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
     const first=range.getClientRects()[0],num=label.getBoundingClientRect(),hit=getComputedStyle(n,'::before');
     return {font:parseFloat(getComputedStyle(body).fontSize),root:parseFloat(getComputedStyle(document.documentElement).fontSize),line:parseFloat(getComputedStyle(body).lineHeight),left:body.getBoundingClientRect().left,first:first.toJSON(),num:num.toJSON(),hitWidth:hit.width,hitHeight:hit.height};
    });
-   assert(Math.abs(inline.font/inline.root-.95)<.01,'default reader size');
+   assert(Math.abs(inline.font/inline.root-1.14)<.01,'default reader size');
    assert(Math.abs(inline.line/inline.font-1.75)<.01,'reader line height');
    assert(inline.num.bottom>=inline.first.top&&inline.num.top<inline.first.bottom,'number stays on first line');
    assert(inline.first.left-inline.left<16,'no first-line gutter');
@@ -76,7 +76,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
   await page.goto(base+'/#discover');await page.locator('#lens-settings').click();await page.locator('#reader-settings[open] #reader-font').waitFor();
   await page.locator('#reader-font').evaluate(n=>{n.value='125';n.dispatchEvent(new Event('input'));});
   await page.keyboard.press('Escape');await page.goto(base+'/#read/0/1');await page.locator('#verse-1').waitFor();await page.waitForFunction(()=>reading?.book===0&&reading?.chapter===1&&document.querySelector('#chapter-text').getAttribute('aria-busy')==='false');
-  assert(Math.abs(await page.locator('#verse-1 .verse-body').evaluate(n=>parseFloat(getComputedStyle(n).fontSize))-19)<.1,'Settings scales scripture');
+  assert(Math.abs(await page.locator('#verse-1 .verse-body').evaluate(n=>parseFloat(getComputedStyle(n).fontSize))-22.8)<.1,'Settings scales scripture');
   await page.close();
  }}finally{await browser.close();}
 }}finally{fs.writeFileSync(root+'/UX11-logs/'+prefix+'-reader-matrix.json',JSON.stringify(rows,null,2)+'\n');}

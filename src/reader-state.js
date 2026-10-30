@@ -24,14 +24,19 @@ $('#app-font-family').onchange=ev=>{
 };
 applyReaderFonts();
 function applyTextSize(){
- if(state.textScaleBaseline!=='110-v2'){state.textScale=1;state.textScaleBaseline='110-v2';persist();}
- const raw=Number(state.textScale),scale=Number.isFinite(raw)?Math.round(Math.max(.85,Math.min(1.5,raw))*20)/20:1;
+ if(state.textScaleBaseline!=='120-v3'){
+  // Old clients stored a physical multiplier. Keep its exact size on migration.
+  state.textScale=state.textScale!=null&&Number.isFinite(Number(state.textScale))?Number(state.textScale):1.2;
+  state.textScaleBaseline='120-v3';persist();
+ }
+ const raw=Number(state.textScale),scale=Number.isFinite(raw)?Math.max(.85,Math.min(1.8,raw)):1.2;
  state.textScale=scale;
- document.documentElement.style.setProperty('--text-scale',String(scale));
- const percent=Math.round(scale*100),slider=$('#reader-font');
+ document.documentElement.style.setProperty('--text-scale','1');
+ document.documentElement.style.setProperty('--reader-text-scale',String(scale));
+ const percent=Math.round(scale/1.2*100),slider=$('#reader-font');
  slider.value=String(percent);slider.setAttribute('aria-valuetext',percent+' percent');
  $('#reader-font-value').textContent=percent+'%';
 }
-$('#reader-font').oninput=ev=>{state.textScale=Number(ev.target.value)/100;applyTextSize();};
+$('#reader-font').oninput=ev=>{state.textScale=Number(ev.target.value)/100*1.2;applyTextSize();};
 $('#reader-font').onchange=()=>persist();
 applyTextSize();

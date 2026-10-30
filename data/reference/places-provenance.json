@@ -11,5 +11,9 @@
     "url": "https://raw.githubusercontent.com/robertrouse/theographic-bible-metadata/52e049efb3b95e4f1da52d11a3303fbd2d648922/json/verses.json",
     "sha256": "056ca2a13683ca4aca020aae6655f0b488a8abc291959b385ef83ba1c7db0fff",
     "changes": "Explicit source verse IDs resolved to existing zero-based book, chapter and verse references. Parent region IDs retained. No coordinate fields imported or changed."
+  },
+  "localReferenceCorrections": {
+    "file": "place-reference-corrections.json",
+    "changes": "UX13: missing reference lists use source-declared canonical links; Ham uses the KJV land-of-Ham passages. No coordinates changed."
   }
 }

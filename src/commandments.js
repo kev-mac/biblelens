@@ -54,7 +54,7 @@ async function loadCommandmentContext(panel,reference){
 function commandmentCard(item) {
  const prefix='commandment-'+item.id,title=commandmentDirective(item.title);
  const control=(key,label,paths)=>`<button type="button" class="person-section-toggle action-link" data-commandment-section aria-expanded="false" aria-controls="${esc(prefix)}-${key}" id="${esc(prefix)}-${key}-toggle"><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths}</svg></span><span class="person-section-label">${label}</span></button>`;
- return `<article class="commandment-card" data-commandment-reference="${esc(item.passage)}"><p class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</p><div class="commandment-card-heading"><h2>${esc(title)}</h2></div><div class="commandment-summary"><p>${commandmentPassageLink(item.passage)} <q>${esc(item.summary)}</q></p></div><div class="story-footer"><span>${(item.lens||[]).length.toLocaleString()} linked texts</span>${control('context','View commandment →','')}</div><section class="person-section-panel commandment-context" id="${esc(prefix)}-context" aria-labelledby="${esc(prefix)}-context-toggle" hidden></section>${item.lens?.length?`<section class="person-section-panel commandment-lens" id="${esc(prefix)}-lens" aria-labelledby="${esc(prefix)}-lens-toggle" hidden><h3>New Testament Lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${commandmentPassageLink(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
+ return `<article class="commandment-card" data-commandment-reference="${esc(item.passage)}"><p class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</p><div class="commandment-card-heading"><h2>${esc(title)}</h2></div><div class="commandment-summary"><p>${commandmentPassageLink(item.passage)} <q>${esc(item.summary)}</q></p></div><div class="story-footer"><span>${(item.lens||[]).length.toLocaleString()} linked texts</span>${control('context','View law →','')}</div><section class="person-section-panel commandment-context" id="${esc(prefix)}-context" aria-labelledby="${esc(prefix)}-context-toggle" hidden></section>${item.lens?.length?`<section class="person-section-panel commandment-lens" id="${esc(prefix)}-lens" aria-labelledby="${esc(prefix)}-lens-toggle" hidden><h3>New Testament Lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${commandmentPassageLink(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
 }
 async function initCommandments() {
  const root=document.querySelector('#commandments-view');if(!root)return;
@@ -63,7 +63,7 @@ async function initCommandments() {
  const search=document.querySelector('#commandments-search'),more=document.querySelector('#commandments-more');
  const filters=Object.fromEntries(Object.keys(COMMANDMENT_FACETS).map(key=>[key,[]]));
  matrix.innerHTML=Object.entries(COMMANDMENT_FACETS).map(([dimension,values])=>`<fieldset><legend>${dimension[0].toUpperCase()+dimension.slice(1)}</legend><div class="commandments-options">${values.map(value=>`<button type="button" class="secondary commandment-facet-toggle filter-pill" data-commandment-dimension="${dimension}" data-value="${esc(value)}" aria-pressed="false"><span>${esc(value)}</span></button>`).join('')}</div></fieldset>`).join('');
- search.placeholder=`Search ${COMMANDMENTS.length} commandments, passages…`;
+ search.placeholder=`Search ${COMMANDMENTS.length} laws, passages…`;
  const chips=document.createElement('nav');chips.className='directory-categories filter-carousel';chips.setAttribute('aria-label','Commandment polarity');root.querySelector('.results-line').before(chips);
  let visibleCount=24;
  function render() {
@@ -74,16 +74,16 @@ async function initCommandments() {
    button.onclick=()=>{filters.polarity=value==='All'?[]:[value];visibleCount=24;render();};return button;
   }));
   const items=filterCommandments(COMMANDMENTS,filters,search.value).filter(item=>!/^\s*[PN]\d+\s*$/i.test(search.value)||item.code===search.value.trim().toUpperCase());
-  document.querySelector('#commandments-list').innerHTML=items.length?items.slice(0,visibleCount).map(commandmentCard).join('')+(items.length>visibleCount?'<button type="button" id="commandments-load-more">Show More</button>':''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
-  document.querySelector('#commandments-count').textContent=`Showing ${items.length?1:0}–${Math.min(visibleCount,items.length)} of ${items.length} commandments`;
+  document.querySelector('#commandments-list').innerHTML=items.length?items.slice(0,visibleCount).map(commandmentCard).join('')+(items.length>visibleCount?'<button type="button" id="commandments-load-more">Show More</button>':''):'<p class="empty">No matching laws. Try fewer filters or reset your search.</p>';
+  document.querySelector('#commandments-count').textContent=`Showing ${items.length?1:0}–${Math.min(visibleCount,items.length)} of ${items.length} laws`;
   for(const button of matrix.querySelectorAll('[data-commandment-dimension]')){
    const dimension=button.dataset.commandmentDimension,value=button.dataset.value;
    button.setAttribute('aria-pressed',String(filters[dimension].includes(value)));button.classList.toggle('active',filters[dimension].includes(value));
    button.disabled=commandmentFacetDisabled(COMMANDMENTS,filters,search.value,dimension,value);
-   button.title=`${value} · ${commandmentFacetCount(COMMANDMENTS,filters,search.value,dimension,value)} matching commandments`;
+   button.title=`${value} · ${commandmentFacetCount(COMMANDMENTS,filters,search.value,dimension,value)} matching laws`;
   }
   const count=Object.values(filters).reduce((sum,values)=>sum+values.length,0);
-  more.setAttribute('aria-label',`Filter commandments${count?' ('+count+')':''}`);
+  more.setAttribute('aria-label',`Filter laws${count?' ('+count+')':''}`);
   document.querySelector('#commandments-reset').hidden=!count&&!search.value;
   document.querySelector('#commandments-done').textContent=`Show ${items.length} ${items.length===1?'Result':'Results'}`;
  }

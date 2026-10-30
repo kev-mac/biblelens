@@ -35,7 +35,8 @@
     "check:ux12": "node scripts/check-ux12-browser.mjs",
     "check:ux11b": "node scripts/check-ux11-directories.mjs",
     "check:ux10": "node scripts/check-ux10.mjs && node scripts/check-ux10-browser.mjs",
-    "release:sites": "node scripts/package-sites.mjs"
+    "release:sites": "node scripts/package-sites.mjs",
+    "check:ux13": "node scripts/check-ux13-content.mjs && node scripts/check-ux13-browser.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",

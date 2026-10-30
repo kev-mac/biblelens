@@ -9,7 +9,7 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
   await go('#stories','.story-card');
   assert.equal(await page.locator('#stories-list .story-card').count(),24);
   const all=await page.evaluate(async()=>{const catalog=await(await fetch('/stories.json')).json(),list=document.querySelector('#stories-list'),saved=list.innerHTML;list.innerHTML=catalog.flatMap(g=>g.stories).map(story=>storyCard(story)).join('');fitStoryFooters();const measurements=[...list.querySelectorAll('.story-footer')].map(n=>{const meta=n.querySelector('.story-linked-meta'),action=n.querySelector('.action-link'),m=meta?.getBoundingClientRect(),a=action.getBoundingClientRect();return {id:n.closest('article').id,meta:meta?.textContent,overflow:meta&&meta.scrollWidth>meta.clientWidth,aligned:!m||Math.abs(m.top+m.height/2-a.top-a.height/2)<1,collide:m&&m.right>a.left-7};});list.innerHTML=saved;fitStoryFooters();return measurements;});
-  assert.equal(all.length,276);assert.deepEqual(all.filter(x=>x.overflow||!x.aligned||x.collide),[],'all story footers');
+  assert.equal(all.length,284);assert.deepEqual(all.filter(x=>x.overflow||!x.aligned||x.collide),[],'all story footers');
   for(const [hash,selector]of [['#characters','.ux-contact'],['#places','.place-profile-card'],['#commandments','.commandment-card'],['#questions?mode=history','.phase2-debate-card'],['#questions?mode=science','.phase2-debate-card'],['#questions?mode=text','.phase2-debate-card'],['#questions?filter=T','.phase2-debate-card'],['#questions','.phase2-debate-card']]){
    await go(hash,selector);await page.locator('.directory-hub:not([hidden]) .stories-header').waitFor();
    const host=page.locator('.directory-hub:not([hidden])');
@@ -29,7 +29,7 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
    if(hash==='#places'){
     assert.match(await host.locator('.directory-results').innerText(),/of 1,293 /);
     assert.equal(await host.locator('.directory-references').count(),0);
-    await host.locator('.ux-place-open').first().click();await page.locator('#atlas-sheet[open]').waitFor();assert(await page.locator('#atlas-sources summary').isVisible());await page.locator('#atlas-passages summary').waitFor();await page.locator('#atlas-passages summary').click();assert(await page.locator('#atlas-passages a').first().isVisible());assert.match(await page.locator('#atlas-passages a').first().getAttribute('href'),/^#read\/\d+\/\d+\/\d+$/);await page.keyboard.press('Escape');
+    await host.locator('.ux-place-open').first().click();const expanded=host.locator('.place-details.open');await expanded.waitFor();assert(await expanded.getByRole('heading',{name:'Sources',exact:true}).isVisible());assert.match(await expanded.locator('.place-inline-passages a').first().getAttribute('href'),/^#read\/\d+\/\d+\/\d+$/);assert(!await page.locator('#atlas-sheet').isVisible());
    }
    if(hash.startsWith('#evidence/')||hash.startsWith('#questions?mode=')){
     const selected=host.locator('.filter-carousel .active').first();if(await selected.count()){assert(await selected.evaluate(n=>{const r=n.getBoundingClientRect(),p=n.closest('.filter-carousel').getBoundingClientRect();return r.left>=p.left-.5&&r.right<=p.right+.5;}),'selected chip fully in view');}

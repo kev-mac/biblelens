@@ -61,7 +61,7 @@ export function mountInlineProfile(host: HTMLElement, initialId: string): void {
       overview.append(element('h4', '', 'Key Verses'), verses);
       const stories = element('div', 'character-stories');
       for (const anchor of profile.narrative_anchors.linked_stories) stories.append(StoryAnchor(anchor));
-      if (stories.childElementCount) overview.append(element('h4', '', 'Linked Stories'), stories);
+      if (stories.childElementCount) overview.append(element('h4', '', 'Linked Events'), stories);
       if (graph) connections.append(FamilyConnections(graph.getCharacterConnections(referenceId(profile.id)), host.id));
     }
     if (!graph) {

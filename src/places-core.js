@@ -1,3 +1,4 @@
+import placeSummaries from '../data/reference/place-summaries.json' with {type:'json'};
 import {referenceJson} from './reference-cache.js';
 // Shared, DOM-free atlas parsing and safe text-to-chip helpers.
 import {isNarrativeLocationMention} from './people-links.js';
@@ -16,7 +17,7 @@ export function parsePlaces(data){
   const coordinates=lat!==null&&lat!==undefined&&String(lat).trim()!==''&&lon!==null&&lon!==undefined&&String(lon).trim()!==''&&Number.isFinite(latitude)&&Number.isFinite(longitude)&&Math.abs(latitude)<=90&&Math.abs(longitude)<=180?{latitude,longitude}:null;
   const aliases=[...names(f.aliases),f.kjvName,f.esvName,...names(f.otherNames).map(key=>raw.get(key)?.displayTitle)].filter(n=>n&&n!==name&&!/['’]s$/i.test(n));
   const description=plain(f.description||f.comment||names(f.dictText)[0]);
-  places.set(id,{id,refs:f.refs||[],region:names(f.partOf).map(key=>raw.get(key)?.displayTitle).filter(Boolean).join(', '),linkedPassageCount:Number.isInteger(f.linkedPassageCount)?f.linkedPassageCount:null,shortDescription:plain(f.description||f.comment||''),lookupIds:[f.slug,f.placeID].filter(v=>v!==undefined).map(String),name,modern_name:f.modern_name||f.modernName||null,aliases:[...new Set(aliases)],coordinates,description:description.length>600?description.slice(0,600).replace(/\s+\S*$/,'')+'…':description||'No description is available in this reference dataset.',featureType:f.featureType||null,verification:f.recogitoStatus||null,precision:f.precision||null,canonicalId:names(f.canonicalPlace)[0]||id,personNames:names(f.personNames),identificationUncertain:!!f.identificationUncertain,ambiguous:!!f.ambiguous});
+  places.set(id,{id,summary:placeSummaries[id]?.summary||'',sources:{dictionary:names(f.dictText),comment:f.comment||''},otherNames:names(f.otherNames).map(key=>raw.get(key)?.displayTitle).filter(Boolean),refs:f.refs||[],region:names(f.partOf).map(key=>raw.get(key)?.displayTitle).filter(Boolean).join(', '),linkedPassageCount:Number.isInteger(f.linkedPassageCount)?f.linkedPassageCount:null,shortDescription:plain(f.description||f.comment||''),lookupIds:[f.slug,f.placeID].filter(v=>v!==undefined).map(String),name,modern_name:f.modern_name||f.modernName||null,aliases:[...new Set(aliases)],coordinates,description:description.length>600?description.slice(0,600).replace(/\s+\S*$/,'')+'…':description||'No description is available in this reference dataset.',featureType:f.featureType||null,verification:f.recogitoStatus||null,precision:f.precision||null,canonicalId:names(f.canonicalPlace)[0]||id,personNames:names(f.personNames),identificationUncertain:!!f.identificationUncertain,ambiguous:!!f.ambiguous});
  }
  return places;
 }
@@ -59,15 +60,15 @@ export function createPlaceMatcher(places){
  return (text,context={})=>{
   const value=String(text);
   const hits=pattern?[...value.matchAll(pattern)].filter(m=>/^\p{Lu}/u.test(m[0])).map(m=>({start:m.index,end:m.index+m[0].length,label:m[0],id:unique.get(m[0].toLocaleLowerCase())})):[];
-  if(contextualPattern&&context.scope==='story')for(const mention of value.matchAll(contextualPattern)){
+  if(contextualPattern)for(const mention of value.matchAll(contextualPattern)){
    if(!/^\p{Lu}/u.test(mention[0])||hits.some(hit=>hit.start<=mention.index&&hit.end>mention.index))continue;
    const hit={start:mention.index,end:mention.index+mention[0].length,label:mention[0],id:contextualNames.get(mention[0].toLocaleLowerCase()),contextual:true};
-   if(isNarrativeLocationMention(value,hit,context.leadingText))hits.push(hit);
+   if((context.scope==='story'&&isNarrativeLocationMention(value,hit,context.leadingText))||[...places.values()].some(p=>(p.id===hit.id||p.canonicalId===hit.id)&&p.refs.some(r=>r[0]===context.book&&r[1]===context.chapter&&r[2]===context.verse)&&/\b(?:from|unto|in|at|into)\s+$/i.test(value.slice(0,hit.start))))hits.push(hit);
   }
   return hits.sort((a,b)=>a.start-b.start);
  };
 }
-export function locationChip(id,label){return `<button type="button" class="location-chip" data-place-id="${escapeHTML(id)}" aria-haspopup="dialog" aria-controls="atlas-sheet" aria-label="Explore ${escapeHTML(label)} in the atlas"><span aria-hidden="true">◉</span>${escapeHTML(label)}</button>`;}
+export function locationChip(id,label){return `<button type="button" class="location-chip" data-place-id="${escapeHTML(id)}" aria-controls="places-view" aria-label="Open place summary for ${escapeHTML(label)}"><span aria-hidden="true">◉</span>${escapeHTML(label)}</button>`;}
 // Input is plain text, never markup. Existing markup is handled with a DOM walker.
 export function wrapLocationNames(textOrNames,match){
  if(Array.isArray(textOrNames))return textOrNames.map(text=>wrapLocationNames(text,match)).join(', ');

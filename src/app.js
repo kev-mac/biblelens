@@ -10,7 +10,7 @@ function uiTitleCase(value){
 
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let state={bookmarks:[],notes:{},theme:'light'},storageAvailable=true;
+let state={bookmarks:[],notes:{},theme:'dark'},storageAvailable=true;
 let storageIssue='',storageRecoveryNotice='';
 function showStorageStatus(status){
  if(status.kind==='error'){storageAvailable=false;storageIssue=status.message;}
@@ -98,7 +98,7 @@ function confirmNoteAction(message,action){
  dialog.showModal();$('#note-confirm-cancel').focus();return null;
 }
 function persist(source='local'){const saved=workspaceStore.save();window.dispatchEvent(new CustomEvent('biblelens:statechange',{detail:{source}}));if(saved)globalThis.BibleLensCloud?.changed?.();return saved;}
-if(state.glassAppearanceVersion!=='midnight-v1'){state.theme='dark';state.glassAppearanceVersion='midnight-v1';persist();}
+if(state.glassAppearanceVersion!=='midnight-v1'){if(!['dark','light'].includes(state.theme))state.theme='dark';state.glassAppearanceVersion='midnight-v1';persist();}
 function applyTheme(){document.querySelectorAll('meta[name="theme-color"]').forEach(meta=>{meta.content=state.theme==='dark'?'#0B0F17':'#f6f7fb';});document.body.classList.toggle('dark',state.theme==='dark');$('#theme').setAttribute('aria-pressed',String(state.theme==='dark'))}applyTheme();
 function corpus(e){return [e.title,e.type,e.topic,e.refs.join(' '),e.intro,e.claim,e.response,e.assessment,e.context,e.translation,...e.passages.flat()].join(' ').toLowerCase()}
 function matches(e,q){return q.trim().toLowerCase().split(/\s+/).filter(Boolean).every(word=>corpus(e).includes(word))}
@@ -121,9 +121,9 @@ function updateHeaderContext(){
  const context=$('#header-context');if(!context)return;
  const heading=$('#chapter-text .passage-heading>div'),rect=heading?.getBoundingClientRect();
  const showPassage=view==='read'&&rect&&(rect.bottom<=document.querySelector('body>header').getBoundingClientRect().bottom||rect.top>=window.innerHeight);
- let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Stories',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Commandments',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',search:'Search',notebook:'Notebook'}[view]||'BibleLens');
+ let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Events',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Laws',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',search:'Search',notebook:'Notebook'}[view]||'BibleLens');
  const key=view==='evidence'?/^#evidence\/([^?]+)/.exec(location.hash)?.[1]:null;
- const category={academic:'Academic',commandments:'Commandments',contradictions:'Text Comparisons',bookmark:'Marked',characters:'People',prophecies:'Prophecies',Q:'Questions',stories:'Stories',T:'Translation'}[key];
+ const category={academic:'Academic',commandments:'Laws',contradictions:'Text Comparisons',bookmark:'Marked',characters:'People',prophecies:'Prophecies',Q:'Questions',stories:'Events',T:'Translation'}[key];
  if(category){
   label='Evidence · '+category;
   context.textContent=label;
@@ -251,7 +251,7 @@ function route(){
   if(navigationRestore)navigationRestore.hash=canonical;
  }
  if(window.BibleLensFeatures.route(location.hash))return;
- let hash;try{hash=decodeURIComponent(location.hash.slice(1));}catch{hash='read';}if(!hash.startsWith('study/')&&$('#study-dialog').open)$('#study-dialog').close();if(window.BibleLensDebates?.route?.(location.hash))return;if(window.BibleLensWorkspace?.route(location.hash))return;if(hash==='characters'||hash.startsWith('characters/')||hash==='people'||hash.startsWith('people/')){setView('characters',false)}else if(hash.startsWith('evidence/')||hash.startsWith('evidence?')){const key=/^evidence\/([^?]+)/.exec(hash)?.[1],directory=categoryDirectoryLocation(key);if(directory){history.replaceState(history.state,'',directory);route();return;}else setView('evidence',false);window.scrollTo({top:0,behavior:'instant'})}else if(hash.startsWith('stories/')){setView('stories',false)}else if(hash.startsWith('study/')){setView('read',false);const id=hash.slice(6);if(ENTRIES.some(e=>e.id===id))openStudy(id,false);else toast('Record not found in this collection')}else if(hash.startsWith('commandments?'))setView('commandments',false);else if(hash.startsWith('timeline?'))setView('timeline',false);else if(hash.startsWith('read/'))setView('read',false);else setView(hash,false)}window.addEventListener('hashchange',route);route();
+ let hash;try{hash=decodeURIComponent(location.hash.slice(1));}catch{hash='read';}if(!hash.startsWith('study/')&&$('#study-dialog').open)$('#study-dialog').close();if(window.BibleLensDebates?.route?.(location.hash))return;if(window.BibleLensWorkspace?.route(location.hash))return;if(hash==='characters'||hash.startsWith('characters/')||hash==='people'||hash.startsWith('people/')){setView('characters',false)}else if(hash.startsWith('evidence/')||hash.startsWith('evidence?')){const key=/^evidence\/([^?]+)/.exec(hash)?.[1],directory=categoryDirectoryLocation(key);if(directory){history.replaceState(history.state,'',directory);route();return;}else setView('evidence',false);window.scrollTo({top:0,behavior:'instant'})}else if(hash.startsWith('stories/')){setView('stories',false)}else if(hash.startsWith('study/')){setView('read',false);const id=hash.slice(6);if(ENTRIES.some(e=>e.id===id))openStudy(id,false);else toast('Record not found in this collection')}else if(hash.startsWith('places?'))setView('places',false);else if(hash.startsWith('commandments?'))setView('commandments',false);else if(hash.startsWith('timeline?'))setView('timeline',false);else if(hash.startsWith('read/'))setView('read',false);else setView(hash,false)}window.addEventListener('hashchange',route);route();
 
 // D8-A: remove this class to restore the separate book-cell styling.
 document.body.classList.add('merge-picker-inputs');

@@ -28,7 +28,7 @@ for(const book of [1,4,39]){
 assert(!ctx.commandmentLabels({...fixture,wordsOfJesus:true}).includes('Words of Jesus'));
 assert(ctx.commandmentLabels({...commands.find(r=>r.wordsOfJesus),wordsOfJesus:false}).includes('Words of Jesus'));
 assert(!ctx.commandmentLabels({...fixture,repeatedIn:['Matthew 22:37']}).includes('Words of Jesus'));
-assert(ctx.commandmentLabels(fixture).includes('Ten Commandments'));
+assert(ctx.commandmentLabels(fixture).includes('Ten Laws'));
 assert(ctx.commandmentLabels(fixture).includes('Old Testament'));assert(ctx.commandmentLabels(commands.find(r=>r.wordsOfJesus)).includes('New Testament'));
 assert(ctx.commandmentRepetitions(commands.find(r=>r.repeatedIn?.some(ref=>ref.includes('-')))).includes('data-cite-end='));
 ctx.markedSummary=r=>r.id;const pinned=commands.find(r=>r.tenCommandments&&r.theme==='Property and economics'),ordinary=commands.find(r=>!r.tenCommandments&&r.theme===pinned.theme);
