@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {chromium,webkit} from 'playwright';
 import {validateUX13Content} from './ux13-content.mjs';
-const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875',root=process.env.HOME+'/git/codex-reports/UX13-logs',rows=[];
+const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875',root=process.env.HOME+'/git/codex-reports/UX13-logs',logPrefix=process.env.UX13_LOG_PREFIX||'ux13-',rows=[];
 fs.mkdirSync(root,{recursive:true});console.log(validateUX13Content());
 const routes=[['#discover','.ux-topic'],['#discover?section=evidence','.ux-topic'],['#stories','.story-card'],['#people','.ux-contact'],['#places','.place-profile-card'],['#commandments','.commandment-card'],...['history','science','text'].map(mode=>['#questions?mode='+mode,'.phase2-debate-card']),['#questions?filter=T','.phase2-debate-card'],['#questions','.phase2-debate-card'],['#notebook','.lens-empty'],['#read/0/1','#verse-1'],['#timeline','.timeline-event-card'],['#method','#method-view']];
 const engines=process.env.UX13_ENGINE==='chromium'?{chromium}:{chromium,webkit};
@@ -39,5 +39,5 @@ for(const [engine,type]of Object.entries(engines)){
   assert.deepEqual(errors,[]);await context.close();console.log('PASS UX13',engine,width,theme);
  }
  for(const width of [768,1057,1440]){const p=await browser.newPage({viewport:{width,height:1000},serviceWorkers:'block'});for(const [hash,selector]of routes){await p.goto(base+'/'+hash);await p.locator(selector+':visible').first().waitFor();await p.evaluate(()=>scrollTo(0,2000));const m=await p.locator('#lensMasthead').boundingBox();assert(Math.abs(m.y)<1&&m.height>0&&Math.abs(m.width-width)<1,hash+' '+width+' sticky masthead');const last=p.locator('.directory-hub:not([hidden]) article').last();if(await last.count()){await last.scrollIntoViewIfNeeded();assert((await last.boundingBox()).y<1000,'last card reachable');}}await p.close();console.log('PASS desktop',engine,width);}
- }finally{await browser.close();fs.writeFileSync(root+'/ux13-matrix.json',JSON.stringify(rows,null,2)+'\n');}
+ }finally{await browser.close();fs.writeFileSync(root+'/'+logPrefix+'matrix.json',JSON.stringify(rows,null,2)+'\n');}
 }
