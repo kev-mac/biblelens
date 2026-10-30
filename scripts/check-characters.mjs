@@ -66,6 +66,12 @@ const node=tag=>({tag,className:'',textContent:'',children:[],get childElementCo
 const context={URL,AbortController,setTimeout,clearTimeout,fetch:async()=>{throw Error('Reference network unavailable in this fixture');},document:{createElement:node,createTextNode:text=>({textContent:text})}};
 vm.createContext(context);vm.runInContext(cardBundle.outputFiles[0].text,context);
 const malicious={...characters[0],name:'<img src=x onerror=bad()>',summary:'<script>bad()</script>'};
+const citedIdentity={...characters[0],name:'Abiah',identity_context:'1 Chronicles 2:24'};
+assert.equal(context.Cards.profileDisplayName(citedIdentity),'Abiah','Passage labels belong with the biography');
+assert.equal(context.Cards.profileDisplayName({...citedIdentity,identity_context:'child of Malluch'}),'Abiah (child of Malluch)','Keep relationship labels for repeated names');
+const citedBiography=context.Cards.ProfileBiography(citedIdentity);
+assert.equal(citedBiography.children[0].href,'#read/12/2/24');
+assert.equal(citedBiography.children[0].children[0].textContent,'1 Chronicles 2:24');
 const card=context.Cards.CharacterCard(malicious);
 assert.equal(card.children[0].children[0].textContent,malicious.name);
 assert.equal(card.children[0].children[0].tag,'h2');

@@ -3,7 +3,7 @@ import type { DirectoryPerson } from './people';
 import type { CharacterProfile } from '../../types/character';
 import { characters, characterVerseRoute } from './directory';
 export { characters } from './directory';
-import { CharacterCard, CharacterNameCard, PersonContact, ProfileBiography, element } from './CharacterCard';
+import { CharacterCard, CharacterNameCard, PersonContact, ProfileBiography, profileDisplayName, element } from './CharacterCard';
 import {loadCharacterGraph} from '../../character-connections.js';
 import {FamilyConnections, connectionProfile, referenceId} from './Connections';
 
@@ -250,7 +250,7 @@ function mountCharacters(): void {
     const wasOpen = sheet.open;
     currentId = match[1];
     let profile: CharacterProfile | undefined = people.find(person=>person.id===referenceId(currentId)) || characters.find(person => person.id === currentId);
-    title.textContent=profile?profile.name+(profile.identity_context?' ('+profile.identity_context+')':''):'Character Profile';
+    title.textContent=profile?profileDisplayName(profile):'Character Profile';
     body.replaceChildren(element('p', 'loading-state', 'Loading character connections…'));
     body.setAttribute('aria-busy', 'true');
     if (!sheet.open) { sheet.showModal(); document.body.classList.add('character-sheet-open'); }
@@ -267,7 +267,7 @@ function mountCharacters(): void {
     sheet.classList.toggle('character-female', profile?.sex === 'female');
     sheet.classList.toggle('character-neutral', profile?.sex !== 'female');
     body.replaceChildren();
-    title.textContent=profile?profile.name+(profile.identity_context?' ('+profile.identity_context+')':''):'Character Not Found';
+    title.textContent=profile?profileDisplayName(profile):'Character Not Found';
     if (!profile) body.append(element('p', '', graph
       ? 'This character does not have a profile in this growing directory. Close this sheet to browse the available characters.'
       : 'The reference profile could not be loaded. Try again when the reference data is available.'));

@@ -12,10 +12,23 @@ export function element<K extends keyof HTMLElementTagNameMap>(tag: K, className
   return node;
 }
 
+export function profileDisplayName(profile: CharacterProfile): string {
+ const identity=profile.identity_context;
+ return profile.name+(identity&&!characterVerseRoute(identity)?' ('+identity+')':'');
+}
+
 export function ProfileBiography(profile: CharacterProfile): HTMLElement {
  const root=element('div','character-biography');
  const context=!profile.summary?profile.scripture_context:undefined;
  const text=context?.text||profile.summary;
+ const identity=profile.identity_context&&characterVerseRoute(profile.identity_context)?profile.identity_context:undefined;
+ const ref=profile.summary_source||context?.ref||identity;
+ if(ref){
+  const source=element('a','character-biography-source');
+  source.append(element('span','passage-badge',ref+(context?' · KJV':'')));
+  source.href=profile.summary_route||(context?`#read/${context.book}/${context.chapter}/${context.verse}`:characterVerseRoute(ref))!;
+  root.append(source);
+ }
  if(!text)return root;
  const paragraph=element(context?'blockquote':'p','character-profile-biography');
  let cursor=0;
@@ -25,11 +38,6 @@ export function ProfileBiography(profile: CharacterProfile): HTMLElement {
   paragraph.append(link);cursor=hit.end;
  }
  paragraph.append(document.createTextNode(text.slice(cursor)));root.append(paragraph);
- if(context||profile.summary_source){
-  const source=element('a','character-biography-source',context?context.ref+' · KJV':profile.summary_source);
-  source.href=context?`#read/${context.book}/${context.chapter}/${context.verse}`:profile.summary_route!;
-  root.prepend(source);
- }
  return root;
 }
 
@@ -71,7 +79,7 @@ export function LineageBadges(profile: CharacterProfile): HTMLElement {
 export function CharacterNameCard(profile: CharacterProfile): HTMLElement {
   const card=element('article',`character-card ${profile.sex==='female'?'character-female':'character-neutral'}`);
   card.id=`character-card-${profile.id}`;card.tabIndex=-1;
-  const heading=element('h2','character-name',profile.name + (profile.identity_context ? ' (' + profile.identity_context + ')' : ''));
+  const heading=element('h2','character-name',profileDisplayName(profile));
   const header=element('div','character-card-header');header.append(heading);
   const open=element('a','ux-person-open','→');open.href='#characters/'+encodeURIComponent(profile.id);open.setAttribute('aria-label','Open '+profile.name);header.append(open);
   header.append(directorySaveButton('person', profile.id, profile.name));
@@ -100,7 +108,7 @@ export function PersonContact(profile: CharacterProfile & {roles?: {role:string;
  const header=element('div','character-card-header');
  const open=element('a','ux-person-open');open.href='#characters/'+encodeURIComponent(profile.id);open.setAttribute('aria-label','Open '+profile.name);
  const avatar=element('span','ux-avatar',profile.name.split(/\s+/).map(part=>part[0]).slice(0,2).join('').toUpperCase());avatar.setAttribute('aria-hidden','true');
- const copy=element('div','ux-contact-copy');copy.append(element('h2','character-name',profile.name+(profile.identity_context?' ('+profile.identity_context+')':'')));
+ const copy=element('div','ux-contact-copy');copy.append(element('h2','character-name',profileDisplayName(profile)));
  const role=profile.roles?.find(tag=>tag.status==='live')?.role;
  const count=(profile.key_passages||profile.narrative_anchors?.key_verses||[]).length;
  copy.append(element('p','ux-contact-subtitle',(role?role[0].toUpperCase()+role.slice(1)+' · ':'')+count.toLocaleString()+' '+(count===1?'linked verse':'linked verses')));
