@@ -2158,7 +2158,7 @@ html body.lens-app{
  --ux-target:44px;--ux-icon:20px;--ux-icon-close:24px;
 }
 /* Preserve link colour and weight; reserve the underline for keyboard focus. */
-html body.lens-app :is(a,button,summary),html body.lens-app :is(a,button,summary):is(:hover,:active,:focus,:visited){text-decoration:none!important}
+html body.lens-app :is(a,button,summary):not(.person-chip,.location-chip),html body.lens-app :is(a,button,summary):not(.person-chip,.location-chip):is(:hover,:active,:focus,:visited){text-decoration:none!important}
 html body.lens-app :is(a,button,summary):focus-visible{text-decoration:underline!important;text-decoration-thickness:2px;text-underline-offset:4px}
 html body.lens-app a:not([class]){font-weight:500}
 /* One title treatment for every collection, with room for Commandments and Text Comparisons. */
@@ -2519,7 +2519,7 @@ html body.lens-app .character-profile-context :is(span,.character-era){height:au
 html body.lens-app .place-profile-card{position:relative;padding-right:12px}
 html body.lens-app .place-profile-card h2{padding-right:100px}
 html body.lens-app .place-profile-card .ux-place-open{position:absolute;top:12px;right:56px;width:44px;height:44px}
-html body.lens-app .place-profile-card .directory-save{position:absolute;top:12px;right:8px;width:44px;height:44px}
+html body.lens-app .place-profile-card>.directory-save{position:absolute;top:12px;right:8px;width:44px;height:44px}
 html body.lens-app .place-map-actions{position:static;display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 html body.lens-app .ux-search-skeleton{padding:16px 0}
 html body.lens-app .ux-search-skeleton span{display:block;height:20px;margin:14px 0;background:var(--lens-rule);border-radius:6px}
@@ -2756,7 +2756,7 @@ html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#comman
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub :is(.person-section-toggle,.place-map-action){width:auto;min-width:44px;min-height:44px;height:auto;padding:0 8px;background:none;border:0;color:var(--directory-accent);font:600 .76rem/1.5 var(--ui-font)}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .person-section-icon{display:none}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .person-section-label{font:inherit}
-html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .directory-save{position:absolute;top:8px;right:8px;width:44px;height:44px;margin:0}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .story-card>.directory-save{position:absolute;top:8px;right:8px;width:44px;height:44px;margin:0}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .ux-letter-heading{position:sticky;top:52px;z-index:10;background:var(--ux13-base);color:var(--directory-accent);margin:0;padding:6px 0;font-size:.8rem;border-bottom:1px solid var(--ux13-rule)}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub :is(.comparison-summary,.commandment-summary){display:contents}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view).directory-hub .commandment-summary p{font:400 .84rem/1.55 var(--ui-font);color:var(--ux13-copy);margin:0}
@@ -2976,7 +2976,7 @@ html body.lens-app #lensMasthead nav.lens-primary{background:var(--ux13-base);co
 html body.lens-app #lensReadingBar #lens-focus .ux-evidence-label{display:inline-flex;align-items:center;gap:4px}
 html body.lens-app #lens-focus .ux-evidence-label::after{content:"";display:inline-block;width:6px;height:6px;flex:none;border-radius:50%;background:#64748B;box-shadow:none}
 html body.lens-app #lens-focus[aria-pressed=true] .ux-evidence-label::after{content:"";background:#22C55E;box-shadow:0 0 6px rgba(34,197,94,.7)}
-html body.lens-app #chapter-text .verse-body :is(.person-chip,.location-chip){display:inline;position:relative;min-width:0;min-height:0;height:auto;margin:0;padding:0;border:0;border-radius:0;vertical-align:baseline;line-height:inherit;font:inherit;color:var(--lens-link);text-decoration:underline dotted;text-underline-offset:3px;background:none}
+html body.lens-app #chapter-text .verse-body :is(.person-chip,.location-chip){display:inline;position:relative;min-width:0;min-height:0;height:auto;margin:0;padding:0;border:0;border-radius:0;vertical-align:baseline;line-height:inherit;font:inherit;color:inherit;white-space:normal;text-decoration:underline dotted;text-decoration-color:color-mix(in srgb,var(--lens-link) 40%,transparent);text-decoration-thickness:1px;text-underline-offset:3px;background:none}
 html body.lens-app #chapter-text .verse-body :is(.person-chip,.location-chip)::before{content:"";position:absolute;left:50%;top:50%;width:max(100%,44px);height:44px;transform:translate(-50%,-50%)}
 html body.lens-app :is(#atlas-sheet,#ux-alphabet-sheet){background:var(--ux13-surface);color:var(--ux13-ink)}
 html body.lens-app #main .directory-hub .place-details{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s ease}
@@ -3016,3 +3016,21 @@ html body.lens-app #main #places-view.directory-hub .place-details .directory-sa
 html body.lens-app :is(.lens-action-toast,.fetch-retry-status){background:var(--ux13-surface);color:var(--ux13-ink);border-color:var(--ux13-rule)}
 html body.lens-app .lens-action-toast .lens-action-undo{color:var(--ux13-ink);border-color:var(--ux13-rule)}
 html body.lens-app .lens-action-toast button.lens-action-undo:focus-visible{outline-color:var(--lens-focus)}
+
+/* UX13c: reader controls and sheets use the shared theme at every viewport.
+   Keep runtime interaction selectors in both lazy reader and shell sheets. */
+/* purgecss start ignore */
+html body.lens-app{--lens-control-bg:var(--ux13-surface);--lens-control-hover:var(--lens-copper-soft)}
+html body.lens-app.dark{--lens-control-bg:var(--ux13-surface);--lens-control-hover:var(--lens-copper-soft)}
+html body.lens-app #chapter-text .verse-body :is(.person-chip,.location-chip):is(:hover,:focus,:active){color:var(--lens-link)}
+html body.lens-app #chapter-text .verse-body :is(.person-chip,.location-chip):focus-visible{outline:1px solid var(--lens-focus);outline-offset:3px}
+html body.lens-app :is(.chapter-bottom,.ux-verse-actions) button{background:var(--lens-control-bg);color:var(--ux13-ink);border:1px solid var(--ux13-rule);min-height:44px;min-width:44px}
+html body.lens-app :is(.chapter-bottom,.ux-verse-actions) button:is(:hover,:active){background:var(--lens-control-hover)}
+html body.lens-app :is(#reader-settings,#passage-picker),html body.lens-app dialog#lens-inspector-sheet.lens-inspector-sheet{background:var(--ux13-surface);color:var(--ux13-ink);border-color:var(--ux13-rule)}
+html body.lens-app #lensComparison{position:static;inset:auto;width:100%;max-width:none;max-height:none;overflow:visible;margin:0;padding:0;border:0;border-radius:0;background:transparent;color:var(--ux13-ink)}
+html body.lens-app :is(#reader-settings,#passage-picker,#lensComparison) :is(input:not([type=range]):not([type=radio]):not([type=checkbox]),select,textarea){background:var(--ux13-base);color:var(--ux13-ink);border-color:var(--ux13-rule-15)}
+html body.lens-app #lensComparison :is(.lens-comparison-passage,.lens-comparison-notes,.lens-note-editor){background:var(--ux13-base);color:var(--ux13-ink);border-color:var(--ux13-rule)}
+html body.lens-app #main #places-view.directory-hub .place-details .place-detail-save{position:static;inset:auto;display:inline-flex;vertical-align:middle;margin:12px 0 0 12px}
+html body.lens-app #chapter-text .verse-body :is(a.person-chip,a.location-chip)::before{content:none}
+html body.lens-app #main .directory-hub .place-details:not(.open){visibility:hidden}
+/* purgecss end ignore */

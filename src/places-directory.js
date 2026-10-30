@@ -42,7 +42,7 @@ function placeCard(place, duplicate){
   for(const text of place.sources.dictionary)inner.append(node('p','',text.replace(/\[([^\]]+)\]\([^)]*\)/g,'$1')));
   if(place.sources.dictionary.length)inner.append(node('p','','Easton’s Bible Dictionary (1897, public domain), via Robert Rouse / Viz.Bible (CC BY-SA 4.0). Historical identifications may differ from current research.'));
   if(place.sources.comment)inner.append(node('p','','Dataset comment: '+place.sources.comment));
-  const source=node('a','','Dataset provenance and attribution');source.href='/reference/places-provenance.json';source.target='_blank';source.rel='noopener';inner.append(source,directorySaveButton('place',place.id,place.name));
+  const source=node('a','','Dataset provenance and attribution');source.href='/reference/places-provenance.json';source.target='_blank';source.rel='noopener';const save=directorySaveButton('place',place.id,place.name);save.classList.add('place-detail-save');inner.append(source,save);
  };
 
  return card;

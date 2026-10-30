@@ -15,7 +15,7 @@ async function initializeChips(){
   for(const {node,leadingText} of nodes){
    if(!node.parentElement||!node.isConnected)continue;
    const body=node.parentElement.closest('.verse-body'),question=node.parentElement.closest('.category-profile-card'),story=node.parentElement.closest('.story-card[data-story-book]');
-   const context=body?{book:Number(body.dataset.book),chapter:Number(body.dataset.chapter),verse:Number(body.dataset.verse)}:question?{book:Number(question.dataset.referenceBook),chapter:Number(question.dataset.referenceChapter),verse:Number(question.dataset.referenceVerse)}:story?{scope:'story',placesReady,leadingText,book:Number(story.dataset.storyBook),chapter:Number(story.dataset.storyChapter),verse:Number(story.dataset.storyVerse),endChapter:Number(story.dataset.storyEndChapter),endVerse:Number(story.dataset.storyEndVerse)}:{};
+   const context=body?{scope:'reader',book:Number(body.dataset.book),chapter:Number(body.dataset.chapter),verse:Number(body.dataset.verse)}:question?{book:Number(question.dataset.referenceBook),chapter:Number(question.dataset.referenceChapter),verse:Number(question.dataset.referenceVerse)}:story?{scope:'story',placesReady,leadingText,book:Number(story.dataset.storyBook),chapter:Number(story.dataset.storyChapter),verse:Number(story.dataset.storyVerse),endChapter:Number(story.dataset.storyEndChapter),endVerse:Number(story.dataset.storyEndVerse)}:{};
    if(!match(node.data,context).length&&!matchPeople(node.data,context).length)continue;
    const template=document.createElement('template');template.innerHTML=wrapReferenceNames(node.data,match,matchPeople,context);
    if(node.parentElement.closest('.story-summary')){

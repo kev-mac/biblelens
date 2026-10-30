@@ -3,5 +3,5 @@ import {wrapReferenceNames} from './people-links.js';
 // boundaries and link only complete names inside the current text segment.
 window.BibleLensReaderLinks={html(text,hits=[],offset=0){
  const local=hits.filter(hit=>hit.start>=offset&&hit.end<=offset+text.length).map(hit=>({...hit,start:hit.start-offset,end:hit.end-offset}));
- return wrapReferenceNames(text,()=>local.filter(hit=>!hit.person),()=>local.filter(hit=>hit.person));
+ return wrapReferenceNames(text,()=>local.filter(hit=>!hit.person),()=>local.filter(hit=>hit.person),{scope:'reader'});
 }};

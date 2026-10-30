@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {chromium,webkit} from 'playwright';
+import {checkReaderTheme} from './check-ux13-reader.mjs';
 import {validateUX13Content} from './ux13-content.mjs';
 const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875',root=process.env.HOME+'/git/codex-reports/UX13-logs',logPrefix=process.env.UX13_LOG_PREFIX||'ux13-',rows=[];
 fs.mkdirSync(root,{recursive:true});console.log(validateUX13Content());
@@ -26,6 +27,7 @@ for(const [engine,type]of Object.entries(engines)){
    if(hash==='#people'){await p.locator('#ux-alphabet-open').click();const sheet=p.locator('#ux-alphabet-sheet[open]');await sheet.waitFor();assert.equal(await sheet.evaluate(n=>getComputedStyle(n).backgroundColor),theme==='dark'?'rgb(20, 26, 35)':'rgb(255, 255, 255)');await p.keyboard.press('Escape');}
    rows.push({engine,width,theme,hash,...surfaces});
   }
+  rows.push({engine,...await checkReaderTheme(p,go,theme,width)});
   await go('#stories','.story-card');await p.getByRole('button',{name:'Covenants (6)',exact:true}).click();assert.equal(await p.locator('#stories-list .story-card').count(),6);
   for(const query of ['covenant','Davidic','new covenant']){await go('#search?q='+encodeURIComponent(query),'#lens-search-results .lens-result');await p.waitForFunction(()=>!document.querySelector('#lens-search-results').hasAttribute('aria-busy'));assert((await p.locator('#lens-search-results').innerText()).includes(query==='Davidic'?'Davidic Covenant':query==='new covenant'?'New Covenant':'Noahic Covenant'));}
   await p.locator('#lens-search-input').fill('David ');await p.waitForTimeout(500);assert.equal(await p.locator('#lens-search-input').inputValue(),'David ');await p.keyboard.press('Escape');
