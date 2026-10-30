@@ -1,7 +1,7 @@
 import {directorySaveButton} from '../../directory-save.js';
 import {ProfileSections} from './ProfileSections';
 export {profileSectionAvailability} from './ProfileSections';
-import { characters, lineageCharacter, isFemaleLineage, characterVerseRoute } from './directory';
+import { lineageCharacter, isFemaleLineage, characterVerseRoute } from './directory';
 import type { CharacterProfile, LinkedStoryAnchor } from '../../types/character';
 
 // Typed DOM components fit the existing reader without adding a second UI runtime.
@@ -108,7 +108,7 @@ export function PersonContact(profile: CharacterProfile & {roles?: {role:string;
  if(role)card.prepend(element('span','passage-badge',role[0].toUpperCase()+role.slice(1)));
  const body=element('div','character-contact-body');
  const context=element('div','character-profile-context');
- context.append(element('span','character-era',profile.era),element('span','character-profile-kind',characters.some(person=>person.id===profile.id)?'Curated Profile':'Reference Profile'));
+ context.append(element('span','character-era',profile.era));
  body.append(context);
  body.append(ProfileBiography(profile));
  body.append(ProfileSections(profile));

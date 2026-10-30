@@ -305,7 +305,7 @@ function mountCharacters(): void {
       : 'The reference profile could not be loaded. Try again when the reference data is available.'));
     else {
       const context = element('div', 'character-profile-context');
-      context.append(element('span', 'character-era', profile.era), element('span', 'character-profile-kind', characters.some(person => person.id === profile!.id) ? 'Curated Profile' : 'Reference Profile'));
+      context.append(element('span', 'character-era', profile.era));
       body.append(context, ProfileBiography(profile), ProfileSections(profile, graph));
     }
     if (!profile && !graph) {
