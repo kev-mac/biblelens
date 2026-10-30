@@ -13,6 +13,9 @@ const places=parsePlaces(read('data/reference/places.json'));for(const row of re
 assert.equal(read('data/reference/place-coordinate-exclusions.json').excludedCoordinates.length,13);
 assert.equal(read('package.json').buildNumber,279);
 const web=read('dist/client/release.json'),mobile=read('www/release.json');assert.match(web.sourceHash,/^[a-f0-9]{64}$/);assert.equal(web.sourceHash,mobile.sourceHash);assert.equal(web.draftOnly,undefined);assert.equal(mobile.draftOnly,undefined);assert.equal(web.buildNumber,279);assert.equal(mobile.buildNumber,279);
-const production=read('www/reference/people.json'),jesus=production.find(p=>p.sourceRecord==='jesus_905');assert(!jesus.summary&&!jesus.description,'Jesus draft must stay outside production');
+const production=read('www/reference/people.json'),jesus=production.find(p=>p.sourceRecord==='jesus_905');assert.equal(jesus.summary,read('src/data/characters.json').find(p=>p.id==='jesus').summary,'Approved biography is packaged for Jesus of Nazareth');
+assert(!production.find(p=>p.sourceRecord==='jesus_904').summary,'The other Jesus has no biography');
+assert.equal(read('src/data/character-reference-ids.json').jesus,jesus.id);
+assert(read('src/data/characters.json').some(p=>p.id==='jesus'&&p.era==='Gospels'));
 for(const dir of ['www/gemini','www/mock'])assert(fs.existsSync(dir));
-console.log('PASS UX10: real story participants plus passage overlap, eight Elisha links, source story routes, 13 unknown locations, build 279, matching web/native fingerprints, no Jesus draft in production, preserved owner previews.');
+console.log('PASS UX10: real story participants plus passage overlap, eight Elisha links, source story routes, 13 unknown locations, build 279, matching web/native fingerprints, approved Jesus profile bound to Nazareth identity, preserved owner previews.');

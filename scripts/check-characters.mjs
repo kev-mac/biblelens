@@ -7,7 +7,7 @@ import {validateCharacters} from './characters.mjs';
 const total=validateCharacters();
 const result=await build({entryPoints:['src/components/characters/CharactersView.tsx'],bundle:true,write:false,format:'esm',platform:'node'});
 const {characters,filterCharacters}=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
-assert.equal(total,47);
+assert.equal(total,48);
 assert.equal(filterCharacters('Job')[0].id,'job');
 assert.equal(filterCharacters('Uz','Wisdom')[0].id,'job');
 assert.equal(filterCharacters('', 'All Eras', true).length, 11);
@@ -177,6 +177,9 @@ const people=await firstLoad;assert.equal(requests,2);assert.equal(await fetchPe
 assert.equal(people.length,referencePeople.length);
 assert.equal(people.find(p=>p.name==='Aaron').key_passages[0],'Exodus 4:14');
 assert.equal(people.find(p=>p.name==='Aaron').summary,characters.find(p=>p.id==='aaron').summary,'Use the reviewed biography only through the explicit reference-ID mapping');
+const jesusId=referencePeople.find(p=>p.sourceRecord==='jesus_905').id;
+assert.equal(people.find(p=>p.id===jesusId).summary,characters.find(p=>p.id==='jesus').summary);
+assert.equal(people.find(p=>p.id===referencePeople.find(p=>p.sourceRecord==='jesus_904').id).summary,'','The other Jesus must not receive the biography');
 assert(people.filter(p=>p.name==='Abdi').length>1,'Distinct IDs with the same name must survive');
 const findPeople=createPeopleSearch(people);
 assert(findPeople(' jeezer ').some(p=>p.name==='Abiezer'),'Search aliases, ignoring case and surrounding whitespace');

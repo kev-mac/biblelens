@@ -91,7 +91,9 @@ const spouseRow=section.children.find(row=>row.children?.[0]?.textContent==='Spo
 assert(spouseRow.children[1].children.find(chip=>chip.dataset.relativeId==='sarah').className.includes('character-relative-female'));
 assert(!isaac.className.includes('character-relative-female'));
 const reference = context.Connections.connectionProfile(graph.getPerson(personId('jesus_905')));
-assert.equal(reference.id, end); assert.equal(reference.name, 'Jesus');
+assert.equal(reference.id, 'jesus'); assert.equal(reference.name, 'Jesus');
+assert.equal(reference.summary, profiles.find(p=>p.id==='jesus').summary);
+assert.equal(context.Connections.connectionProfile(graph.getPerson(personId('jesus_904'))).id, personId('jesus_904'));
 assert.equal(context.Connections.connectionProfile(graph.getPerson(bindings.jacob)).id, 'jacob');
 const hostile = {...graph.getPerson(bindings.isaac), name: '<img src=x onerror=alert(1)>'};
 const safe = context.Connections.FamilyConnections({parents: [hostile], spouses: [], siblings: [], children: []});

@@ -6,7 +6,7 @@ const disambiguated = {
   jacob: 'israel_682', enoch: 'enoch_1192', noah: 'noah_2210', sarah: 'sarah_2473',
   ishmael: 'ishmael_630', simeon: 'simeon_2741', levi: 'levi_1820', judah: 'judah_1751',
   gad: 'gad_1262', issachar: 'issachar_645', joseph: 'joseph_1710', benjamin: 'benjamin_463',
-  tamar: 'tamar_2821', joshua: 'joshua_1727', elijah: 'elijah_1131', miriam: 'miriam_2087', job: 'job_1639',
+  tamar: 'tamar_2821', joshua: 'joshua_1727', elijah: 'elijah_1131', miriam: 'miriam_2087', job: 'job_1639', jesus: 'jesus_905',
 };
 
 export function characterRelationshipData(people, profiles) {
