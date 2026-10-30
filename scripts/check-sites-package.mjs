@@ -19,6 +19,27 @@ try {
   }
   const sync = await worker.fetch(new Request('https://example.test/api/sync', {headers: {'X-BibleLens-Sync': '1'}}), {DB: {}}, {});
   assert.equal(sync.status, 401);
+  // Sites supplies an ASSETS binding that does not contain our internal packs.
+  // A self-contained Worker must use its embedded files even with that binding.
+  let externalReads = 0;
+  const hostedEnv = {DB: {}, ASSETS: {async fetch() {
+    externalReads++;
+    return new Response('Not found', {status: 404});
+  }}};
+  for (const route of ['/', '/index.html', '/release.json', '/api/chapter?book=0&chapter=1', '/api/search?q=mercy', '/offline-bible.json']) {
+    const response = await worker.fetch(new Request('https://example.test' + route), hostedEnv, {});
+    assert.equal(response.status, 200, route);
+    assert(response.headers.get('content-security-policy-report-only'), route);
+    assert(response.headers.get('content-security-policy'), route);
+    if (route === '/release.json') {
+      assert.equal((await response.json()).buildNumber, JSON.parse(fs.readFileSync('package.json', 'utf8')).buildNumber);
+    } else {
+      assert((await response.arrayBuffer()).byteLength > 0, route);
+    }
+  }
+  const hostedSync = await worker.fetch(new Request('https://example.test/api/sync', {headers: {'X-BibleLens-Sync': '1'}}), hostedEnv, {});
+  assert.equal(hostedSync.status, 401);
+  assert.equal(externalReads, 0, 'Self-contained Sites Worker must not read the platform asset store');
   fs.mkdirSync(path.join(output, 'client'));
   fs.writeFileSync(path.join(output, 'client/index.html'), '<html>unsafe static response</html>');
   assert.throws(() => checkSitesPackage(output), /static assets may bypass/);
@@ -32,4 +53,4 @@ try {
 } finally {
   fs.rmSync(temporary, {recursive: true, force: true});
 }
-console.log('PASS: Sites package excludes static bypass paths; embedded HTML retains both CSP headers and sync retains authentication.');
+console.log('PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, release identity matches, and sync retains authentication.');

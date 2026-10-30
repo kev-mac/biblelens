@@ -88,7 +88,7 @@ async function loadPack(key){
  await packRequests.get(key);
 }
 async function prepareAssets(request,env){
- assetStore=env.ASSETS||EMBEDDED_ASSETS;
+ assetStore=EMBEDDED_ASSETS||env.ASSETS;
  if(!assetStore?.fetch)throw Error('Split Worker requires the ASSETS binding');
  const path=new URL(request.url).pathname;
  if(path==='/reference/people.json')await loadPack('PEOPLE');
