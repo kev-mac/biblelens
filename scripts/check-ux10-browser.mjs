@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {chromium,webkit} from 'playwright';
 const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875';
-const root=process.env.HOME+'/git/codex-reports',out=root+'/ux10-shots',logs=process.env.UX_REPORT_DIR||root+'/UX10-logs';
+const root=process.env.HOME+'/git/codex-reports',out=process.env.UX_SHOT_DIR||root+'/ux10-shots',logs=process.env.UX_REPORT_DIR||root+'/UX10-logs';
 fs.mkdirSync(out,{recursive:true});fs.mkdirSync(logs,{recursive:true});
 const matrix=[],books=JSON.parse(fs.readFileSync('data/books.json')),titles=JSON.parse(fs.readFileSync('data/chapter-names.json'));
 for(const [engine,type]of Object.entries({chromium,webkit})){
@@ -76,5 +76,5 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
 assert.deepEqual(matrix.filter(row=>row.smallTargets.length),[],'Visible controls meet 44 px targets');
 console.log('PASS UX10 browser requirements and screenshot matrix.');
 
-// UX10c restores phone bar arrows alongside chapter-foot navigation.
+// UX10d keeps phone navigation at chapter end and through swipes.
 await import('./check-ux10c-browser.mjs');

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {chromium,webkit} from 'playwright';
-const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875',root=process.env.HOME+'/git/codex-reports',out=root+'/ux9-shots',matrix=[];
+const base=process.env.BIBLELENS_PREVIEW_URL||'http://127.0.0.1:8875',root=process.env.HOME+'/git/codex-reports',out=process.env.UX_SHOT_DIR||root+'/ux9-shots',matrix=[];
 fs.mkdirSync(out,{recursive:true});
 for(const [engine,type]of Object.entries({chromium,webkit})){
  const browser=await type.launch();try{for(const width of [320,390,1440]){
