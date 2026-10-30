@@ -26,19 +26,30 @@ try {
     externalReads++;
     return new Response('Not found', {status: 404});
   }}};
-  for (const route of ['/', '/index.html', '/release.json', '/api/chapter?book=0&chapter=1', '/api/search?q=mercy', '/offline-bible.json']) {
-    const response = await worker.fetch(new Request('https://example.test' + route), hostedEnv, {});
+  for (const encoding of ['', 'gzip']) for (const route of ['/', '/index.html', '/release.json', '/api/chapter?book=0&chapter=1', '/api/search?q=mercy', '/offline-bible.json']) {
+    const response = await worker.fetch(new Request('https://example.test' + route, {headers: encoding ? {'accept-encoding': encoding} : {}}), hostedEnv, {});
     assert.equal(response.status, 200, route);
     assert(response.headers.get('content-security-policy-report-only'), route);
     assert(response.headers.get('content-security-policy'), route);
-    if (route === '/release.json') {
+    assert.equal(response.headers.get('content-encoding'), null, route + ' identity encoding');
+    assert.equal(response.headers.get('vary'), null, route + ' no encoding negotiation');
+    if (route === '/' || route === '/index.html') {
+      const body = Buffer.from(await response.arrayBuffer());
+      assert.match(body.toString('utf8'), /^<!doctype/i, route + ' decoded HTML');
+      assert.notEqual(body.subarray(0, 2).toString('hex'), '1f8b');
+    } else if (route === '/release.json') {
       assert.equal((await response.json()).buildNumber, JSON.parse(fs.readFileSync('package.json', 'utf8')).buildNumber);
     } else {
       assert((await response.arrayBuffer()).byteLength > 0, route);
     }
   }
-  const hostedSync = await worker.fetch(new Request('https://example.test/api/sync', {headers: {'X-BibleLens-Sync': '1'}}), hostedEnv, {});
-  assert.equal(hostedSync.status, 401);
+  for (const encoding of ['', 'gzip']) {
+    const hostedSync = await worker.fetch(new Request('https://example.test/api/sync', {headers: {'X-BibleLens-Sync': '1', ...(encoding ? {'accept-encoding': encoding} : {})}}), hostedEnv, {});
+    assert.equal(hostedSync.status, 401);
+    assert.equal(hostedSync.headers.get('content-encoding'), null);
+    assert(!/accept-encoding/i.test(hostedSync.headers.get('vary') || ''), 'Sync must not negotiate encoding');
+    await hostedSync.arrayBuffer();
+  }
   assert.equal(externalReads, 0, 'Self-contained Sites Worker must not read the platform asset store');
   fs.mkdirSync(path.join(output, 'client'));
   fs.writeFileSync(path.join(output, 'client/index.html'), '<html>unsafe static response</html>');
@@ -53,4 +64,4 @@ try {
 } finally {
   fs.rmSync(temporary, {recursive: true, force: true});
 }
-console.log('PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, release identity matches, and sync retains authentication.');
+console.log('PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.');

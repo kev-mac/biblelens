@@ -51,16 +51,9 @@ export function splitWorker(source, output = 'dist', external = false) {
   for (const [key, encoded] of Object.entries(data.CHAPTERS)) pack('chapters/' + key.replace(':', '-'), encoded);
   source = source.slice(0, chapterStart) + 'const CHAPTERS=' + JSON.stringify(Object.fromEntries(Object.keys(data.CHAPTERS).map(key => [key, true]))) + source.slice(chapterEnd);
   source = source.replace('atob(CHAPTERS[key])', "atob(await readPack(PACK_PREFIX+'chapters/'+key.replace(':','-')+'.json'))");
-  // Keep negotiated gzip bytes lazy too; they must not remain in Worker metadata.
-  const metadata = Object.fromEntries(Object.entries(data.ASSETS).map(([url, {body,gzip,...meta}]) => {
-    if(!gzip)return [url,meta];
-    const gzipPath=prefix+'gzip/'+createHash('sha256').update(url).digest('hex')+'.gz';
-    assets[gzipPath]={type:'application/gzip',encoding:'base64',body:gzip};
-    return [url,{...meta,gzipPath}];
-  }));
-  source=source.replace('asset.gzip&&acceptsGzip','asset.gzipPath&&acceptsGzip')
-    .replace("gzip?Uint8Array.from(atob(asset.gzip),char=>char.charCodeAt(0)):","gzip?await assetBody(asset.gzipPath):")
-    .replace("...(asset.gzip?{'vary'","...(asset.gzipPath?{'vary'");
+  // Hosting owns HTTP compression. Keep storage compressed below, but expose
+  // only identity asset bodies and omit negotiation metadata from the handler.
+  const metadata = Object.fromEntries(Object.entries(data.ASSETS).map(([url, {body,gzip,...meta}]) => [url,meta]));
   source = source.replace('const ASSETS=' + JSON.stringify(data.ASSETS), 'const ASSETS=' + JSON.stringify(metadata));
   source = source.replace("new Response(ASSETS['/release.json'].body,", "new Response(await assetBody('/release.json'),");
   source = source.replace("asset.encoding==='base64'?Uint8Array.from(atob(asset.body),char=>char.charCodeAt(0)):asset.body", "await assetBody(url.pathname==='/index.html'?'/':url.pathname)");
