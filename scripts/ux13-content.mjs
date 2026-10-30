@@ -34,6 +34,10 @@ export function validateUX13Content(){
   assert.deepEqual(s.sourceQuotes,s.refs.map(r=>verse(r)?.kjv),'Summary source text differs: '+label);
  }
  assert.equal(ux13Events.filter(e=>e.collection==='Covenants').length,6);
+ const comparisons=JSON.parse(fs.readFileSync('data/comparison-topics.json','utf8'));
+ const evidence=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
+ assert(!addUX13Events(JSON.parse(fs.readFileSync('data/stories.json','utf8'))).some(group=>group.stories.some(event=>event.title==='Parallel Accounts in Genesis')));
+ for(const comparison of comparisons){assert(evidence.some(record=>comparison.href==='#debate/'+record.id&&record.mode==='contradictions'));for(const ref of comparison.passages){const [b,c,v,ec,ev]=passageReference(ref,books);assert(verse([b,c,v])&&verse([b,ec,ev]));}}
  for(const e of ux13Events){assert(e.passages.includes(e.passage)&&e.review&&e.summary);for(const ref of e.passages){const [b,c,v,ec,ev]=passageReference(ref,books);assert(verse([b,c,v])&&verse([b,ec,ev]),'Invalid event reference '+ref);}}
  return `${places.length} place summaries, refs and KJV source quotes; ${ux13Events.length} events (6 covenants)`;
 }

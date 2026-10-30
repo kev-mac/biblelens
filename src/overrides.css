@@ -3088,3 +3088,6 @@ html body.lens-app #explore-view.ux-evidence-hub [data-topic=questions]{--inspec
 html body.lens-app #explore-view.ux-evidence-hub a.ux-topic{--topic:rgb(var(--inspect-rgb));--category-border:rgba(var(--inspect-rgb),.45);--category-glow:rgba(var(--inspect-rgb),.25);background:rgba(var(--inspect-rgb),.1);border-color:var(--category-border)}
 html body.lens-app:not(.dark) #explore-view.ux-evidence-hub a.ux-topic{--topic:color-mix(in srgb,rgb(var(--inspect-rgb)) 60%,#000)}
 html body.lens-app #explore-view.ux-evidence-hub .ux-count{color:var(--topic);background:rgba(var(--inspect-rgb),.15)}
+html body.lens-app #chapter-text .reader-event-title{font:700 1.35rem/1.4 var(--ui-font);color:var(--lens-ink);margin:28px 0 12px;padding-top:8px}
+html body.lens-app .comparison-topic-passages{margin:20px 0;padding:16px;border:1px solid var(--lens-rule);border-radius:8px}
+html body.lens-app .comparison-topic-passages nav{display:flex;flex-wrap:wrap;gap:8px}

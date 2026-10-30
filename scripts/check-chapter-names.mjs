@@ -13,4 +13,8 @@ for(const book of books)for(let chapter=1;chapter<=book.chapters;chapter++){
  assert(shipped.verses.every(verse=>verse.referenceLinks&&verse.redLetters));
 }
 assert(fs.readFileSync('src/reader.js','utf8').includes('esc(reading.chapterName'));
+const genesis4=await(await worker.fetch(new Request('https://biblelens.test/api/chapter?book=0&chapter=4'),{},{})).json();
+assert.deepEqual(genesis4.eventHeadings['1'],['Cain and Abel']);
+assert.deepEqual(genesis4.eventHeadings['25'],['The Line of Seth'],'Events beginning mid-chapter retain their own verse heading');
+assert(!Object.values(genesis4.eventHeadings).flat().includes('Parallel Accounts in Genesis'));
 console.log('PASS: all 1,189 packaged chapter names, every original verse in all editions, on-demand link/red-letter metadata, and missing/empty rejection.');

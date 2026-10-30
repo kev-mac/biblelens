@@ -1,5 +1,6 @@
 import {validateQuestionPassages} from './question-passages.mjs';
 import {addUX13Events,validateUX13Content} from './ux13-content.mjs';
+import {eventHeadings} from './event-headings.mjs';
 import {parsePlaces,directoryPlaces} from '../src/places-core.js';
 import {enrichStories} from './story-metrics.mjs';
 import {linkPeopleStories} from '../src/story-people.js';
@@ -68,6 +69,8 @@ for(const name of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+\.we
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
 const uxRead=name=>JSON.parse(releaseContent(name));
 const uxEvidence=uxRead('data/evidence.json');
+const comparisonTopics=uxRead('data/comparison-topics.json');
+assets['/comparison-topics.json']={type:'application/json; charset=utf-8',body:JSON.stringify(comparisonTopics)};
 assets['/collection-counts.json']={type:'application/json; charset=utf-8',body:JSON.stringify({
  people:uxRead('data/reference/people.json').length,places:directoryPlaces(parsePlaces(uxRead('data/reference/places.json'))).length,
  stories:addUX13Events(uxRead('data/stories.json')).reduce((n,g)=>n+g.stories.length,0),
@@ -75,7 +78,7 @@ assets['/collection-counts.json']={type:'application/json; charset=utf-8',body:J
  science:uxEvidence.filter(r=>r.mode==='science').length,history:uxEvidence.filter(r=>r.mode==='history').length,
  translation:uxEvidence.filter(r=>(r.tags||[r.tag]).includes('T')).length,
  text:uxEvidence.filter(r=>!['science','history'].includes(r.mode)).length,
- questions:accepted.questions.length,timeline:loadTimelineCatalog().events.length,
+ questions:accepted.questions.length+comparisonTopics.length,timeline:loadTimelineCatalog().events.length,
  prophecies:uxRead('src/data/prophecies.json').length,
  lost:lostBooks.length,evidence:uxEvidence.length
 })};
@@ -109,7 +112,8 @@ assets['/commandments-catalog.json']={type:'application/json; charset=utf-8',bod
 const categoryReferenceIds=JSON.parse(releaseContent('src/data/character-reference-ids.json'));
 const categorySummaries=Object.fromEntries(JSON.parse(releaseContent('src/data/characters.json')).filter(p=>categoryReferenceIds[p.id]).map(p=>[categoryReferenceIds[p.id],p.summary]));
 const referenceChapter=readerReferences(JSON.parse(fs.readFileSync('data/reference/people.json','utf8')),JSON.parse(fs.readFileSync('data/reference/places.json','utf8')));
-const decorateChapter=chapter=>{const linked=referenceChapter(chapter);return {...linked,chapterName:chapterNames[chapter.name][chapter.chapter],verses:linked.verses.map(verse=>({...verse,redLetters:redLetters[chapter.book+':'+chapter.chapter]?.[verse.n]||{}}))};};
+const readerEventHeadings=eventHeadings(JSON.parse(assets['/stories.json'].body),readerBooks);
+const decorateChapter=chapter=>{const linked=referenceChapter(chapter);return {...linked,eventHeadings:readerEventHeadings[chapter.book+':'+chapter.chapter]||{},chapterName:chapterNames[chapter.name][chapter.chapter],verses:linked.verses.map(verse=>({...verse,redLetters:redLetters[chapter.book+':'+chapter.chapter]?.[verse.n]||{}}))};};
 const linkedChapters=Object.fromEntries(Object.entries(JSON.parse(fs.readFileSync('data/chapters.json','utf8'))).map(([key,encoded])=>[key,zlib.gzipSync(JSON.stringify(decorateChapter(JSON.parse(zlib.gunzipSync(Buffer.from(encoded,'base64')))))).toString('base64')]));
 for(const [key,chapter] of Object.entries(lostChapters))linkedChapters[key]=zlib.gzipSync(JSON.stringify(chapter)).toString('base64');
 assets['/lost-books.json']={type:'application/json; charset=utf-8',body:JSON.stringify(lostBooks)};

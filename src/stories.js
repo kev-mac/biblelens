@@ -37,6 +37,7 @@ async function renderStoriesView(){
  $('#stories-pagination').hidden=true;
  if(!storiesActive)return;
  const route=typeof location==='undefined'?null:storyRoute();
+ if(route?.[2]==='parallel-accounts-in-genesis'){location.replace('#debate/woman-made-with-man-or-after-the-animals');return;}
  const list=$('#stories-list');list.setAttribute('aria-busy','true');if(!storiesCatalog)list.innerHTML='<p class="loading-state" role="status">Loading events…</p>';
  try{
   const catalog=await loadStories();if(generation!==storiesGeneration||!storiesActive)return;
