@@ -22,7 +22,8 @@ assert.deepEqual(accepted.questions,selected.map(row=>({id:row.id,decisionId:row
 const evidence=JSON.parse(releaseContent('data/evidence.json')),people=JSON.parse(releaseContent('src/data/characters.json'));
 validateSides(evidence,read('data/books.json'),read('data/chapters.json'));validateWitnesses(evidence,read('data/books.json'),read('data/chapters.json'));
 for(const original of read('data/evidence.json'))if(!accepted.evidence.some(row=>row.id===original.id))assert.deepEqual(evidence.find(row=>row.id===original.id),original);
-assert.equal(people.length,185);assert(!people.some(row=>row.id==='jesus-b6'));
+// The approved Jesus profile was added after the original RC1 fixture.
+assert.equal(people.length,186);assert(!people.some(row=>row.id==='jesus-b6'));
 const refs=releaseReferences(read('data/reference/people.json'),read('data/reference/relationships.json'));
 for(const profile of accepted.people){assert.equal(profile.reference_binding.inherit_family_edges,false);for(const edge of refs.relationships.filter(edge=>edge.source_id===profile.reference_binding.reference_id))assert(profile.lineage_bindings.links.some(link=>JSON.parse(releaseContent('src/data/character-reference-ids.json'))[link.profile_id]===edge.target_id));}
 const json=async path=>{const response=await worker.fetch(new Request('https://rc1.test'+path),{},{});assert.equal(response.status,200,path);return response.json();};
