@@ -4,7 +4,6 @@ import type { CharacterProfile } from '../../types/character';
 import { characters, characterVerseRoute } from './directory';
 export { characters } from './directory';
 import { CharacterCard, CharacterNameCard, PersonContact, ProfileBiography, element } from './CharacterCard';
-import {ProfileSections} from './ProfileSections';
 import {loadCharacterGraph} from '../../character-connections.js';
 import {FamilyConnections, connectionProfile, referenceId} from './Connections';
 
@@ -163,34 +162,6 @@ function mountCharacters(): void {
     retry.hidden = !failed;
     if (!loading && !failed && !matches.length) list.append(element('p', 'characters-empty', 'No people match. Try another name or alias.'));
   }
-  // Family navigation replaces only the card that owns the clicked chip.
-  const cardRequests=new WeakMap<HTMLElement,number>();
-  list.addEventListener('replace-person-card',event=>{
-    event.stopPropagation();
-    const detail=(event as CustomEvent<{id:string;keyboard:boolean}>).detail;
-    const card=(event.target as HTMLElement).closest<HTMLElement>('.character-card');
-    if(!card)return;
-    const request=(cardRequests.get(card)||0)+1;cardRequests.set(card,request);
-    void (async()=>{
-      try{
-        const graph=await loadCharacterGraph();
-        if(!card.isConnected||cardRequests.get(card)!==request)return;
-        const person=people.find(person=>person.id===referenceId(detail.id))
-          ||characters.find(person=>person.id===detail.id)
-          ||(graph.getPerson(referenceId(detail.id))?connectionProfile(graph.getPerson(referenceId(detail.id))!):undefined);
-        if(!person)return;
-        const replacement=PersonContact(person);card.replaceWith(replacement);
-        if(detail.keyboard)replacement.focus({preventScroll:true});
-        replacement.scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
-      }catch{
-        if(card.isConnected&&cardRequests.get(card)===request){
-          let error=card.querySelector<HTMLElement>('.character-navigation-error');
-          if(!error){error=element('p','character-navigation-error');error.setAttribute('role','status');card.append(error);}
-          error.textContent='This profile could not be loaded. Select the name to try again.';
-        }
-      }
-    })();
-  });
   let searchTimer: ReturnType<typeof setTimeout>;
   search.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { letter=''; page = 0; render(); }, 100); });
   function movePage(offset: number): void {
@@ -209,17 +180,16 @@ function mountCharacters(): void {
   const sheet = element('dialog', 'character-sheet'); sheet.id = 'character-sheet';
   sheet.setAttribute('aria-labelledby', 'character-detail-name');
   const header = element('div', 'character-sheet-header');
-  const back = element('button', 'character-family-back', '← Back'); back.type = 'button'; back.hidden = true;
-  back.setAttribute('aria-label', 'Back to previous character');
   const title = element('h2', '', 'Character Profile'); title.id = 'character-detail-name';title.tabIndex = -1;
-  header.append(back, title);
-  back.addEventListener('click', () => {
+  header.append(title);
+  function backToContext(): void {
     const previous = familyHistory.pop();
-    if (!previous) return;
+    if (!previous) { sheet.close(); return; }
     activeTab = previous.tab;
     if(inlinePerson)inlinePerson=previous.id;else history.replaceState(null, '', `#characters/${previous.id}`);
     void handleRoute();
-  });
+  }
+  sheet.addEventListener('person-context-back',backToContext);
   const close = element('button', '', 'Close'); close.type = 'button'; close.autofocus = true;
   close.setAttribute('aria-label', 'Close character details'); header.append(close);
   const body = element('div', 'character-sheet-body');
@@ -233,14 +203,13 @@ function mountCharacters(): void {
   sheet.addEventListener('close', () => {
     document.body.classList.remove('character-sheet-open');
     familyHistory.length = 0; currentId = ''; activeTab = 'overview'; routeVersion++;
-    back.hidden = true;
     const wasInline=!!inlinePerson;inlinePerson='';
-    if (!wasInline&&location.hash === profileRoute) history.replaceState(null, '', '#characters');
+    if (/^#characters\/(?!card\/)/.test(location.hash)&&location.hash === profileRoute) history.replaceState(null, '', '#characters');
     if(wasInline&&opener?.isConnected)opener.focus({preventScroll:true});
     if (location.hash === '#characters' && opener?.isConnected && !host.hidden) opener.focus();
   });
   host.addEventListener('click', event => {
-    const target = (event.target as HTMLElement).closest<HTMLAnchorElement>('a.character-name,a.character-more-passages,a.character-detail-toggle');
+    const target = (event.target as HTMLElement).closest<HTMLAnchorElement>('a.character-name,a.character-more-passages,a.character-detail-toggle,a.ux-person-open');
     if (target) opener = target;
   });
   function repeatFamilyNavigation(event: MouseEvent): void {
@@ -249,13 +218,14 @@ function mountCharacters(): void {
   }
   host.addEventListener('click', repeatFamilyNavigation);
   sheet.addEventListener('click', repeatFamilyNavigation);
-  sheet.addEventListener('click', event => {
-    const chip = (event.target as HTMLElement).closest<HTMLButtonElement>('button[data-relative-id]');
-    if (!chip || !currentId || chip.dataset.relativeId === currentId) return;
-    familyHistory.push({id: currentId, tab: activeTab});
-    if(inlinePerson)inlinePerson=chip.dataset.relativeId!;else history.replaceState(null, '', `#characters/${chip.dataset.relativeId}`);
-    void handleRoute();
-  });
+  function openBiographyPerson(event: MouseEvent): void {
+    const link=(event.target as HTMLElement).closest<HTMLAnchorElement>('a.character-biography-person');
+    if(!link||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    event.preventDefault();
+    window.dispatchEvent(new CustomEvent('open-person',{detail:{id:decodeURIComponent(link.hash.slice('#characters/'.length)),opener:link}}));
+  }
+  host.addEventListener('click',openBiographyPerson);
+  sheet.addEventListener('click',openBiographyPerson);
   async function handleRoute(): Promise<void> {
     const version = ++routeVersion;
     const cardRoute = !inlinePerson && /^#characters\/card\/([a-zA-Z0-9_-]+)$/.exec(location.hash);
@@ -263,15 +233,14 @@ function mountCharacters(): void {
       if (sheet.open) sheet.close();
       const target = people.find(person => person.id === cardRoute[1]) || characters.find(person => person.id === cardRoute[1]);
       if (target) {
-        search.value = target.name;
-        page = Math.max(0, Math.floor(people.indexOf(target as DirectoryPerson) / CHARACTER_PAGE_SIZE)); render();
+        clearTimeout(searchTimer); search.value = target.name; category='All'; letter=''; page=0; render();
         if (!people.includes(target as DirectoryPerson)) {
           list.replaceChildren(CharacterCard(target));
-          count.textContent = `${target.name} · Curated Profile`; pagination.hidden = true;
+          count.textContent = target.name; pagination.hidden = true;
         }
         const card = document.getElementById(`character-card-${target.id}`);
         // The four section controls remain collapsed after a family-card jump.
-        card?.focus({preventScroll:true}); card?.scrollIntoView({behavior:'smooth', block:'start'});
+        card?.focus({preventScroll:true}); card?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth', block:'start'});
       }
       return;
     }
@@ -280,7 +249,6 @@ function mountCharacters(): void {
     profileRoute = location.hash;
     const wasOpen = sheet.open;
     currentId = match[1];
-    back.hidden = !familyHistory.length;
     let profile: CharacterProfile | undefined = people.find(person=>person.id===referenceId(currentId)) || characters.find(person => person.id === currentId);
     title.textContent=profile?profile.name+(profile.identity_context?' ('+profile.identity_context+')':''):'Character Profile';
     body.replaceChildren(element('p', 'loading-state', 'Loading character connections…'));
@@ -306,7 +274,9 @@ function mountCharacters(): void {
     else {
       const context = element('div', 'character-profile-context');
       context.append(element('span', 'character-era', profile.era));
-      body.append(context, ProfileBiography(profile), ProfileSections(profile, graph));
+      const go=element('a','character-context-go',`Go to ${profile.name}’s Card`);
+      go.href='#characters/card/'+encodeURIComponent(referenceId(profile.id));
+      body.append(context, ProfileBiography(profile), go);
     }
     if (!profile && !graph) {
       const retry = element('button', 'character-connections-retry', 'Retry Profile'); retry.type = 'button';
@@ -318,7 +288,7 @@ function mountCharacters(): void {
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) body.animate([{opacity: .3, transform: 'translateY(6px)'}, {opacity: 1, transform: 'translateY(0)'}], {duration: 160, easing: 'ease-out'});
     }
   }
-  window.addEventListener('open-person',((event:CustomEvent<{id:string;opener:HTMLElement}>)=>{inlinePerson=event.detail.id;opener=event.detail.opener;familyHistory.length=0;activeTab='overview';void handleRoute();}) as EventListener);
+  window.addEventListener('open-person',((event:CustomEvent<{id:string;opener:HTMLElement}>)=>{if(sheet.open&&currentId){familyHistory.push({id:currentId,tab:activeTab});}else{opener=event.detail.opener;familyHistory.length=0;}inlinePerson=event.detail.id;activeTab='overview';void handleRoute();}) as EventListener);
   window.addEventListener('hashchange',()=>{inlinePerson='';void handleRoute();});
   window.addEventListener('viewchange', ((event: CustomEvent<string>) => { if (event.detail !== 'characters' && sheet.open) sheet.close(); }) as EventListener);
   void load();

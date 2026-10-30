@@ -67,7 +67,7 @@ export function ProfileSections(profile: CharacterProfile, graph?: Graph): HTMLE
  root.append(row);
  const emptyNote=element('p','person-empty-sections');emptyNote.setAttribute('role','status');root.append(emptyNote);
  const explainEmpty=()=>{emptyNote.hidden=true;};
- root.addEventListener('click',event=>{const relative=(event.target as HTMLElement).closest<HTMLButtonElement>('[data-relative-id]');if(relative&&!root.closest('dialog')){event.stopPropagation();root.dispatchEvent(new CustomEvent('replace-person-card',{bubbles:true,detail:{id:relative.dataset.relativeId,keyboard:relative.matches(':focus-visible')}}));}});
+ root.addEventListener('click',event=>{const relative=(event.target as HTMLElement).closest<HTMLButtonElement>('[data-relative-id]');if(relative&&!root.closest('dialog')){event.stopPropagation();root.dispatchEvent(new CustomEvent('open-person',{bubbles:true,detail:{id:relative.dataset.relativeId,opener:relative}}));}});
  for(const [key,label] of [['verses','Verses'],['stories','Events'],['places','Places'],['family','Family']] as const){
   const button=element('button','person-section-toggle');button.type='button';button.dataset.personSection=key;
   button.disabled=!availability[key];button.setAttribute('aria-disabled',String(button.disabled));

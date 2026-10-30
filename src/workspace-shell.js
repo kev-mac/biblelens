@@ -97,7 +97,7 @@
   if(dialog.id==='lens-inspector-sheet'||dialog.id==='lens-search-overlay'||dialog.id==='ux-alphabet-sheet'){dialog.querySelector('.ux-dialog-path')?.remove();continue;}
   const title=[...dialog.querySelectorAll('h1,h2,h3')].find(node=>!node.closest('[hidden]'))?.textContent.trim()||dialog.getAttribute('aria-label')||'Details';
   let nav=dialog.querySelector('.ux-dialog-path');
-  if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='←';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
+  if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='←';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.id==='character-sheet'?dialog.dispatchEvent(new Event('person-context-back')):dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
   const collection={characters:'People',places:'Places',stories:'Events',commandments:'Laws',prophecies:'Prophecies',timeline:'History & Timeline'}[view];
   const path=[primary()==='debates'?'Questions':labels[primary()]||'Explore',collection,title].filter(Boolean).join(' › ');
   if(nav.lastElementChild.textContent!==path)nav.lastElementChild.textContent=path;
