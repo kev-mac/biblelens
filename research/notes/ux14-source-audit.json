@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 1,
+  "status": "INCOMPLETE — NOT A PRODUCTION LICENCE MANIFEST",
+  "baseCommit": "2cd32dc48e01f4792078d4636b5e70aa1c4ab541",
+  "includedBooks": [],
+  "snapshots": [
+    {
+      "id": "kjv-ebible-notice",
+      "url": "https://ebible.org/eng-kjv/copyright.htm",
+      "finalUrl": "https://ebible.org/eng-kjv/copyright.htm",
+      "status": 200,
+      "bytes": 2771,
+      "sha256": "2f1184410b9cc1e59926df6c31f73747ed5d22f40bc817838e485b68e10c25b3",
+      "file": "/Users/kevin/git/codex-reports/UX14-logs/kjv-ebible-notice.html"
+    },
+    {
+      "id": "kjv-1611-index",
+      "url": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "finalUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": 200,
+      "bytes": 146802,
+      "sha256": "c572f28802eef77cc1211e13bd8a6725c7168e2860c93e7ccbea689ff70b518b",
+      "file": "/Users/kevin/git/codex-reports/UX14-logs/kjv-1611-index.html"
+    },
+    {
+      "id": "kjv-1611-tobit",
+      "url": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)/Tobit",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "kjv-1611-tobit-kjbo",
+      "url": "https://www.kingjamesbibleonline.org/1611_Tobit-Chapter-1/",
+      "finalUrl": "https://www.kingjamesbibleonline.org/1611_Tobit-Chapter-1/",
+      "status": 200,
+      "bytes": 43918,
+      "sha256": "b3fe4345420bd634bc146ee839ea5a7de99a67e47318be0c8c5c24c4b76b85f1",
+      "file": "/Users/kevin/git/codex-reports/UX14-logs/kjv-1611-tobit-kjbo.html"
+    },
+    {
+      "id": "kjbo-copyright",
+      "url": "https://www.kingjamesbibleonline.org/Copyright/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "charles-enoch-1",
+      "url": "https://www.ccel.org/c/charles/otpseudepig/enoch/ENOCH_1.HTM",
+      "finalUrl": "https://www.ccel.org/c/charles/otpseudepig/enoch/ENOCH_1.HTM",
+      "status": 200,
+      "bytes": 72009,
+      "sha256": "1d9ddb9c9465ec691c23de3c26ac37341ca15140e9eb58d7b6841a117d440ed3",
+      "file": "/Users/kevin/git/codex-reports/UX14-logs/charles-enoch-1.html"
+    },
+    {
+      "id": "gnostic-pistis-title",
+      "url": "https://www.gnosis.org/library/pistis-sophia/ps000.htm",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1028)>"
+    },
+    {
+      "id": "gnostic-thomas-mattison",
+      "url": "https://www.gospels.net/thomas",
+      "finalUrl": "https://www.gospels.net/thomas",
+      "status": 200,
+      "bytes": 105143,
+      "sha256": "fcfb84058b41d75fda2532da0388c87fc6e41a773a58e9bc8e135e181909997f",
+      "file": "/Users/kevin/git/codex-reports/UX14-logs/gnostic-thomas-mattison.html"
+    },
+    {
+      "id": "gnostic-philip-isenberg",
+      "url": "https://www.gnosis.org/naghamm/gop.html",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1028)>"
+    },
+    {
+      "id": "gnostic-philip-barnstone",
+      "url": "https://www.gnosis.org/naghamm/GPhilip-Barnstone.html",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1028)>"
+    },
+    {
+      "id": "charles-index",
+      "url": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "file": "/Users/kevin/git/codex-reports/UX14-logs/charles-index.html",
+      "bytes": 2907,
+      "sha256": "27cdc34475aff7fc347d649e8f2521723639a79162ea246eba7d03072349524d"
+    },
+    {
+      "id": "charles-1913-vol2-ocr",
+      "url": "https://archive.org/download/apocryphapseudep02char/apocryphapseudep02char_djvu.txt",
+      "file": "/Users/kevin/git/codex-reports/UX14-logs/charles-1913-vol2-ocr.txt",
+      "bytes": 7942204,
+      "sha256": "d55352d3a84206f6e1b8cb151a08cb8e46ef3aefcb8d9f4e0b17ecc25559d3c4"
+    },
+    {
+      "id": "charles-1913-toronto-ocr",
+      "url": "https://archive.org/download/apocryphapseudep02charuoft/apocryphapseudep02charuoft_djvu.txt",
+      "file": "/Users/kevin/git/codex-reports/UX14-logs/charles-1913-toronto-ocr.txt",
+      "bytes": 4548548,
+      "sha256": "03e137612363f72b1ebb34e2c89f70506d99af5a76935cacf92cf0e32babff11"
+    }
+  ],
+  "apocryphaCandidates": [
+    {
+      "title": "1 Esdras",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "2 Esdras",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Tobit",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Judith",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Rest of Esther",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Wisdom of Solomon",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Ecclesiasticus",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Baruch with the Epistle of Jeremiah",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Song of the Three Children",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Susanna",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Bel and the Dragon",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "Prayer of Manasseh",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "1 Maccabees",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    },
+    {
+      "title": "2 Maccabees",
+      "translator": "King James Version translators",
+      "editionYear": 1611,
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James_Version,_1611)",
+      "status": "candidate-not-imported",
+      "verification": "Required original-edition text, complete counts and passage cross-checks not yet certified. Wikisource contents is not proof that each transcription exists."
+    }
+  ],
+  "pseudepigraphaCandidates": [
+    {
+      "title": "1 Enoch",
+      "translatorAsListed": "R. H. Charles",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Jubilees",
+      "translatorAsListed": "R. H. Charles",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Letter of Aristeas",
+      "translatorAsListed": "Andrews",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Books of Adam and Eve",
+      "translatorAsListed": "Wells",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Martyrdom of Isaiah",
+      "translatorAsListed": "R. H. Charles",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Testaments of the Twelve Patriarchs",
+      "translatorAsListed": "R. H. Charles",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Sibylline Oracles",
+      "translatorAsListed": "Lanchester",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Assumption of Moses",
+      "translatorAsListed": "R. H. Charles",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "2 Enoch",
+      "translatorAsListed": "Forbes and Charles",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "2 Baruch",
+      "translatorAsListed": "R. H. Charles",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "3 Baruch",
+      "translatorAsListed": "Hughes",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "4 Ezra",
+      "translatorAsListed": "Box",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Psalms of Solomon",
+      "translatorAsListed": "Gray",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "4 Maccabees",
+      "translatorAsListed": "Townshend",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Pirke Aboth",
+      "translatorAsListed": "Herford",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Story of Ahikar",
+      "translatorAsListed": "Harris, Lewis, Conybeare",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    },
+    {
+      "title": "Fragment of a Zadokite Work",
+      "translatorAsListed": "R. H. Charles",
+      "editionYear": 1913,
+      "editor": "R. H. Charles",
+      "sourceUrl": "https://www.ccel.org/c/charles/otpseudepig/home.html",
+      "status": "candidate-not-imported",
+      "verification": "Translation, completeness, chapter/verse counts and passage cross-checks pending; a contents entry is not a full-text source."
+    }
+  ],
+  "gnosticDecisions": [
+    {
+      "title": "Gospel of Thomas",
+      "translator": "Mark M. Mattison",
+      "sourceUrl": "https://www.gospels.net/thomas",
+      "licenceDecision": "Public-domain dedication explicitly displayed by translator; eligible for further text verification.",
+      "editionYear": null,
+      "status": "not-imported",
+      "verification": "Source edition year, source-relative passage divisions, complete counts and ten-passage collection spot-check still pending. Do not invent a year or reconstruct missing text."
+    },
+    {
+      "title": "Gospel of Philip",
+      "translator": "Mark M. Mattison",
+      "sourceUrl": "https://www.gospels.net/philip",
+      "licenceDecision": "Public-domain dedication explicitly displayed by translator; eligible for further text verification.",
+      "editionYear": null,
+      "status": "not-imported",
+      "verification": "Source edition year, source-relative passage divisions, complete counts and ten-passage collection spot-check still pending. Do not invent a year or reconstruct missing text."
+    },
+    {
+      "title": "Gospel of Truth",
+      "translator": "Mark M. Mattison",
+      "sourceUrl": "https://www.gospels.net/truth",
+      "licenceDecision": "Public-domain dedication explicitly displayed by translator; eligible for further text verification.",
+      "editionYear": null,
+      "status": "not-imported",
+      "verification": "Source edition year, source-relative passage divisions, complete counts and ten-passage collection spot-check still pending. Do not invent a year or reconstruct missing text."
+    },
+    {
+      "title": "Gospel of Mary",
+      "translator": "Mark M. Mattison",
+      "sourceUrl": "https://www.gospels.net/mary",
+      "licenceDecision": "Public-domain dedication explicitly displayed by translator; eligible for further text verification.",
+      "editionYear": null,
+      "status": "not-imported",
+      "verification": "Source edition year, source-relative passage divisions, complete counts and ten-passage collection spot-check still pending. Do not invent a year or reconstruct missing text."
+    },
+    {
+      "title": "Gospel of Judas",
+      "translator": "Mark M. Mattison",
+      "sourceUrl": "https://www.gospels.net/judas",
+      "licenceDecision": "Public-domain dedication explicitly displayed by translator; eligible for further text verification.",
+      "editionYear": null,
+      "status": "not-imported",
+      "verification": "Source edition year, source-relative passage divisions, complete counts and ten-passage collection spot-check still pending. Do not invent a year or reconstruct missing text."
+    },
+    {
+      "title": "Secret Book of James",
+      "translator": "Mark M. Mattison",
+      "sourceUrl": "https://www.gospels.net/james",
+      "licenceDecision": "Public-domain dedication explicitly displayed by translator; eligible for further text verification.",
+      "editionYear": null,
+      "status": "not-imported",
+      "verification": "Source edition year, source-relative passage divisions, complete counts and ten-passage collection spot-check still pending. Do not invent a year or reconstruct missing text."
+    },
+    {
+      "title": "Pistis Sophia",
+      "translator": "G. R. S. Mead",
+      "sourceUrl": "https://www.gnosis.org/library/pistis-sophia/ps000.htm",
+      "licenceDecision": "1921 edition; source explicitly states US public-domain status and UK/EU expiry. Eligible for further verification; not imported.",
+      "status": "not-imported"
+    },
+    {
+      "title": "Gospel of Thomas",
+      "translator": "Thomas O. Lambdin / Nag Hammadi Library",
+      "sourceUrl": "https://www.gnosis.org/naghamm/nhl_thomas.htm",
+      "licenceDecision": "Excluded: no verified redistribution licence for this modern translation; not substituted for Mattison.",
+      "status": "not-imported"
+    },
+    {
+      "title": "Gospel of Thomas",
+      "translator": "Stephen Patterson and Marvin Meyer",
+      "sourceUrl": "https://gnosis.org/naghamm/gosthom.html",
+      "licenceDecision": "Excluded: modern translation; public access is not a verified redistribution licence.",
+      "status": "not-imported"
+    },
+    {
+      "title": "Gospel of Thomas",
+      "translator": "Stephen Patterson and James M. Robinson",
+      "sourceUrl": "https://www.gnosis.org/naghamm/gth_pat_rob.htm",
+      "licenceDecision": "Excluded: 1997/1998 translation; no verified redistribution licence.",
+      "status": "not-imported"
+    },
+    {
+      "title": "Gospel of Philip",
+      "translator": "Wesley W. Isenberg",
+      "sourceUrl": "https://www.gnosis.org/naghamm/gop.html",
+      "licenceDecision": "Excluded: page explicitly records Brill copyright assertion.",
+      "status": "not-imported"
+    },
+    {
+      "title": "Gospel of Philip",
+      "translator": "Willis Barnstone",
+      "sourceUrl": "https://gnosis.org/naghamm/GPhilip-Barnstone.html",
+      "licenceDecision": "Excluded: page says translator retains copyright; licence to host site does not grant this app redistribution rights.",
+      "status": "not-imported"
+    }
+  ],
+  "acceptance": {
+    "passageSpotChecksRequiredPerCollection": 10,
+    "completedPassageSpotChecksPerCollection": {
+      "apocrypha": 0,
+      "pseudepigrapha": 0,
+      "gnostic": 0
+    },
+    "chapterVerseCountsVerified": false,
+    "readyForProduction": false
+  },
+  "observations": [
+    "eBible explicitly supplies standardized 1769 KJV, not an original-spelling 1611 transcription.",
+    "Wikisource 1611 Tobit returned HTTP 404. King James Bible Online has an original-spelling Tobit chapter 1 and a linked scan; its FAQ permits scripture text use, but the full corpus has not been cross-checked.",
+    "CCEL older 1913 contents has seven text links, not text links for every listed work.",
+    "Archive apocryphapseudep02char OCR has no Latin ASCII letters and is unsuitable for an English import. A separate Toronto OCR was found and fetched; it still needs isolation of translation text from commentary and source-image validation.",
+    "Public-domain eligibility and faithful complete-text verification are separate gates. No candidate is asserted to pass both.",
+    "Live web release is 280; existing www is 279. No publication, installation, source sync or local build was performed.",
+    "Direct follow-up retrievals of 1611 Tobit chapter 2 and 1 Esdras chapter 1 returned HTTP 403, as did the book index and FAQ. The earlier Tobit chapter 1 success does not establish corpus availability."
+  ],
+  "followupFetches": [
+    {
+      "id": "kjv-1611-tobit-2",
+      "url": "https://www.kingjamesbibleonline.org/1611_Tobit-Chapter-2/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "kjv-1611-1esdras-1",
+      "url": "https://www.kingjamesbibleonline.org/1611_1-Esdras-Chapter-1/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "kjv-1611-esther-10",
+      "url": "https://www.kingjamesbibleonline.org/1611_Additions-to-Esther-Chapter-10/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "charles-jubilees",
+      "url": "https://www.ccel.org/ccel/c/charles/otpseudepig/files/jubilee/index.htm",
+      "bytes": 50073,
+      "title": "Jubilees",
+      "links": [],
+      "file": "/Users/kevin/git/codex-reports/UX14-logs/charles-jubilees.html",
+      "sha256": "80f33b0aa310cddc52678dce0bfe20ffac93298fa1784b3a931090c57a672433"
+    },
+    {
+      "id": "kjbo-faq",
+      "url": "https://www.kingjamesbibleonline.org/FAQ.php",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "blockingCondition": "Cannot obtain and independently verify the complete requested 1611 Apocrypha corpus: subsequent chapter fetches return HTTP 403; checked alternatives are incomplete or explicitly 1769. No edition substitution is authorized."
+}
