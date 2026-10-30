@@ -7,7 +7,7 @@ const STORIES_PAGE_SIZE=24;
 let storiesSection='';
 const STORIES_SECTIONS=['Law','History','Poetry & Wisdom','Prophets','Gospels & Acts','Letters & Revelation'];
 function loadStories(){
- if(!storiesRequest){storiesRequest=window.BibleLensReferences.json('/stories.json').then(catalog=>{storiesCatalog=catalog;return catalog;});storiesRequest.catch(()=>{storiesRequest=null;});}
+ if(!storiesRequest){storiesRequest=window.BibleLensReferences.json('/stories.json').then(catalog=>{storiesCatalog=catalog.map(group=>({...group,stories:group.stories.filter(story=>story.title!=='Parallel Accounts in Genesis')}));return storiesCatalog;});storiesRequest.catch(()=>{storiesRequest=null;});}
  return storiesRequest;
 }
 function storyReference(reference){
