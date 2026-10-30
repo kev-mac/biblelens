@@ -27,7 +27,10 @@ const node=id=>{if(!nodes.has(id))nodes.set(id,{hidden:false,innerHTML:'',textCo
 const c={AbortSignal,window:{addEventListener(){}},location:{hash:''},books,readingBook:0,$:node,esc:s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),categoryIcon:()=>'<svg></svg>',document:{body:{classList:{toggle(){},add(){},remove(){}}},getElementById:id=>({...node(id),classList:{add(){}},scrollIntoView(){}}),addEventListener:(type,fn)=>{handlers[type]=fn;}},setView(){},loadChapter:(...args)=>loads.push(args),fetch:async()=>({ok:true,json:async()=>catalog})};
 c.readRef=reference=>{const match=/^(.*?) (\d+):(\d+)/.exec(reference),book=match&&books.find(b=>b.name===match[1]);return book?{book:book.id,chapter:+match[2],verse:+match[3]}:null;};
 c.window.BibleLensReferences={json:async path=>(await c.fetch(path)).json()};
-vm.createContext(c);vm.runInContext(fs.readFileSync('src/stories.js','utf8'),c);
+vm.createContext(c);
+// Load the real shared passage-pill formatter before the story renderer.
+vm.runInContext(fs.readFileSync('src/app.js','utf8').split('\n').find(line=>line.startsWith('function passagePillText(')),c);
+vm.runInContext(fs.readFileSync('src/stories.js','utf8'),c);
 const seen=new Set();
 for(const entry of catalog){
  assert(!seen.has(entry.book));seen.add(entry.book);assert(books.some(b=>b.name===entry.book));

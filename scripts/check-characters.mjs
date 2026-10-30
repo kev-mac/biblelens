@@ -147,7 +147,10 @@ const nodes=new Map();const $=key=>{if(!nodes.has(key))nodes.set(key,{hidden:tru
 let focused=false,scrolled=false;
 const storyContext={AbortSignal,books:[],readingBook:0,$,esc:String,readRef:()=>null,location:{hash:'#stories/genesis/joseph-in-egypt'},window:{addEventListener(){}},document:{body:{classList:{toggle(){}}},addEventListener(){},getElementById:id=>{assert.equal(id,'story-joseph-in-egypt');return {classList:{add(){}},focus(){focused=true;},scrollIntoView(){scrolled=true;}};}},fetch:async()=>({ok:true,json:async()=>catalog})};
 storyContext.window.BibleLensReferences={json:async path=>(await storyContext.fetch(path)).json()};
-vm.createContext(storyContext);vm.runInContext(fs.readFileSync('src/stories.js','utf8'),storyContext);
+vm.createContext(storyContext);
+// Load the real shared passage-pill formatter before the story renderer.
+vm.runInContext(fs.readFileSync('src/app.js','utf8').split('\n').find(line=>line.startsWith('function passagePillText(')),storyContext);
+vm.runInContext(fs.readFileSync('src/stories.js','utf8'),storyContext);
 await storyContext.routeLinkedStory();
 assert(focused&&scrolled);assert(!$('#stories-view').hidden);assert($('#reader-layout').hidden);
 assert($('#stories-list').innerHTML.includes('id="story-joseph-in-egypt"'));
