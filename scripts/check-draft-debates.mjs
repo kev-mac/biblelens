@@ -37,6 +37,8 @@ report([{name:'Phase 3 exact draft case excerpts',lines:caseLines}]);
 // escaping implementation. Drafts must never become a path for script markup.
 const context={window:{addEventListener(){}},document:{addEventListener(){}},URL,URLSearchParams,Map,Set};
 vm.createContext(context);
+// Load the app's shared comparison-label helpers before the draft renderer.
+vm.runInContext(fs.readFileSync('src/app.js','utf8').split("'use strict';")[0],context);
 vm.runInContext(fs.readFileSync('src/media-slots.js','utf8'),context);
 vm.runInContext(fs.readFileSync('src/draft-debates.js','utf8').replace('/*__DRAFT_DEBATES__*/{}',()=>JSON.stringify(data)),context);
 const hostile=structuredClone(data.candidates[0]);
