@@ -62,7 +62,7 @@
  inspectorSheet.addEventListener('close',()=>{layout.append(inspector);inspector.hidden=true;document.querySelectorAll('.lens-active-verse').forEach(node=>node.classList.remove('lens-active-verse'));inspectorOpener?.focus({preventScroll:true});});
  function showComparison(){inspector.hidden=true;compare.hidden=false;compare.open=true;if(!inspectorSheet.open)BibleLensPopup.show(inspectorSheet,el('lens-compare'));}
  const mobileLayout=matchMedia('(max-width:760px)');
- const updateEvidenceControl=()=>{el('lens-focus').textContent='Evidence';el('lens-focus').setAttribute('aria-pressed',String(evidenceVisible));};
+ const updateEvidenceControl=()=>{const label=document.createElement('span');label.className='ux-evidence-label';label.textContent='Evidence';el('lens-focus').replaceChildren(label);el('lens-focus').setAttribute('aria-pressed',String(evidenceVisible));};
  mobileLayout.addEventListener('change',updateEvidenceControl);
 
  const compare = document.createElement('section'); compare.id='lensComparison'; compare.className='lens-comparison'; compare.hidden=true; compare.setAttribute('aria-labelledby','lens-compare-heading');

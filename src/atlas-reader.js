@@ -36,17 +36,35 @@
   function updateControls(){
    if(!reading)return;
    const bookLabel=document.createElement('span');bookLabel.className='ux-picker-book';bookLabel.textContent=reading.name;
-   const chapterLabel=document.createElement('span');chapterLabel.className='ux-picker-chapter';chapterLabel.textContent=' '+reading.chapter+' ▾';
+   const chapterLabel=document.createElement('span');chapterLabel.className='ux-picker-chapter';chapterLabel.textContent=' '+reading.chapter;const arrow=document.createElement('span');arrow.className='ux-picker-arrow';arrow.textContent=' ▾';chapterLabel.append(arrow);
    control('ux-chapter-picker').replaceChildren(bookLabel,chapterLabel);
    control('ux-chapter-picker').setAttribute('aria-label',reading.name+' '+reading.chapter+'. Choose chapter');
+   requestAnimationFrame(fitPassageLabel);
    control('ux-prev').disabled=readingBook===0&&readingChapter===1;
    control('ux-next').disabled=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;
    control('ux-font-style').setAttribute('aria-label',['lora','georgia'].includes(readerPreferences.appFont)?'Use sans serif app font':'Use serif app font');
    control('ux-font-less').disabled=Number(state.textScale)<=.85;control('ux-font-more').disabled=Number(state.textScale)>=1.5;
   }
   window.addEventListener('biblelens:statechange',updateControls);
+  // Long passage names yield space to the fixed edition and evidence controls.
+  function fitPassageLabel(){
+   const picker=control('ux-chapter-picker');picker.style.removeProperty('font-size');
+   if(innerWidth>=768||!picker.clientWidth)return;
+   const labels=[...picker.children];
+   for(let size=parseFloat(getComputedStyle(document.documentElement).fontSize);size>=9;size-=.25){
+    picker.style.fontSize=size+'px';
+    if(labels.reduce((sum,node)=>{const range=document.createRange();range.selectNodeContents(node);return sum+range.getBoundingClientRect().width;},0)+3<=picker.clientWidth+.1)break;
+   }
+  }
+  new ResizeObserver(fitPassageLabel).observe(readingBar);
+  document.fonts.ready.then(fitPassageLabel);
   function decorateHeading() {
     if (typeof reading === 'undefined' || !reading) return;
+    const row=chapter.querySelector('.chapter-heading-row');
+    if(row&&!row.querySelector('.ux-reader-eyebrow')){
+      const eyebrow=document.createElement('p');eyebrow.className='ux-reader-eyebrow';
+      eyebrow.textContent=reading.name+' '+reading.chapter;row.prepend(eyebrow);
+    }
     const heading = chapter.querySelector('.passage-heading');
     const picker = heading?.querySelector('.passage-heading-picker');
     if (!picker || picker.querySelector('.atlas-book-title')) return;
