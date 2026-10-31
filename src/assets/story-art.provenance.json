@@ -2184,5 +2184,142 @@
         "original": "output/imagegen/nehemiah-complete/nehemiah-s-reforms.png"
       }
     ]
+  },
+  "esther": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/esther-complete/",
+    "assets": {
+      "Vashti Deposed": {
+        "src": "/assets/story-vashti-deposed-v1.webp",
+        "alt": "Vashti declines a messenger’s summons in a cool, lamplit palace courtyard.",
+        "width": 1200,
+        "height": 675
+      },
+      "Esther Becomes Queen": {
+        "src": "/assets/story-esther-becomes-queen-v1.webp",
+        "alt": "The Persian king places a diadem on Esther as attendants watch.",
+        "width": 1200,
+        "height": 675
+      },
+      "Haman's Plot": {
+        "src": "/assets/story-haman-s-plot-v1.webp",
+        "alt": "Mordecai speaks with a messenger outside a palace gate as Esther listens above.",
+        "width": 1200,
+        "height": 675
+      },
+      "Esther's Banquets": {
+        "src": "/assets/story-esther-s-banquets-v1.webp",
+        "alt": "Esther addresses the king at a lamplit banquet while Haman listens.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Jews Delivered and Purim": {
+        "src": "/assets/story-the-jews-delivered-and-purim-v1.webp",
+        "alt": "Families share bread and baskets of food in a Persian town courtyard.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Vashti Deposed",
+        "alt": "Vashti declines a messenger’s summons in a cool, lamplit palace courtyard.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Esther. Vashti stands calmly in her own palace courtyard among adult women, declining a messenger's summons with a restrained open hand. Achaemenid Persian setting at blue evening, carved stone columns, cool lamps, dignified agency; no coercion or eroticism. Frame queen foreground left, messenger at respectful distance. Narrative basis: King Ahasuerus holds a long feast, and Queen Vashti refuses his summons. He deposes her on the advice of his counselors.",
+        "original": "output/imagegen/esther-complete/vashti-deposed.png"
+      },
+      {
+        "index": 1,
+        "title": "Esther Becomes Queen",
+        "alt": "The Persian king places a diadem on Esther as attendants watch.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Esther. Esther, an adult Jewish woman with deep brown skin and natural dark curls, stands before the seated Persian king as he places a modest royal diadem on her head. Pale morning light through a columned Achaemenid hall, simple robe under royal mantle, attentive adult attendants, warm human expressions. Narrative basis: Esther, a Jewish orphan raised by her cousin Mordecai, is chosen as queen without revealing her people. Mordecai exposes a plot against the king.",
+        "original": "output/imagegen/esther-complete/esther-becomes-queen.png"
+      },
+      {
+        "index": 2,
+        "title": "Haman's Plot",
+        "alt": "Mordecai speaks with a messenger outside a palace gate as Esther listens above.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Esther. Mordecai wearing plain sackcloth speaks urgently with a palace messenger outside a great Persian gate. Esther listens from a shaded upper window in the midground. Harsh white midday light, geometric stonework, quiet tense mood. Show literary appeal for help, not a threatening crowd or combat. No written decree visible. Narrative basis: Haman is angered that Mordecai will not bow and persuades the king to decree the destruction of the Jews. Mordecai urges Esther to intervene, and she asks the Jews to fast.",
+        "original": "output/imagegen/esther-complete/haman-s-plot.png"
+      },
+      {
+        "index": 3,
+        "title": "Esther's Banquets",
+        "alt": "Esther addresses the king at a lamplit banquet while Haman listens.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Esther. Esther speaks with steady resolve at a small low banquet table, facing the Persian king, Haman seated to one side. Night interior, soft oil lamps, deep indigo and terracotta fabrics, dates pomegranates bread ceramic cups, no alcohol focus, no gallows or violence. Natural intimate triangular composition. Narrative basis: Esther invites the king and Haman to two banquets. The king, reminded of Mordecai's service, honors him, and Esther exposes Haman, who is hanged on the gallows he built.",
+        "original": "output/imagegen/esther-complete/esther-s-banquets.png"
+      },
+      {
+        "index": 4,
+        "title": "The Jews Delivered and Purim",
+        "alt": "Families share bread and baskets of food in a Persian town courtyard.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Esther. A Jewish family and neighbors share bread and give baskets of food to one another during Purim in an ancient Persian town courtyard. Fresh overcast morning, leafy shade, adults children elderly with varied brown skin, quiet relief and celebration, no modern costumes or ritual objects or legible text. Narrative basis: A new decree lets the Jews defend themselves, and they overcome their enemies. The days of Purim are established, and Mordecai rises to high office.",
+        "original": "output/imagegen/esther-complete/the-jews-delivered-and-purim.png"
+      }
+    ]
+  },
+  "job": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/job-complete/",
+    "assets": {
+      "Job's Testing": {
+        "src": "/assets/story-job-s-testing-v1.webp",
+        "alt": "Job sits in grief outside his home as three friends keep him company.",
+        "width": 1200,
+        "height": 675
+      },
+      "Elihu Speaks": {
+        "src": "/assets/story-elihu-speaks-v1.webp",
+        "alt": "Elihu speaks while Job and three older friends listen beneath a tree.",
+        "width": 1200,
+        "height": 675
+      },
+      "God Answers from the Whirlwind": {
+        "src": "/assets/story-god-answers-from-the-whirlwind-v1.webp",
+        "alt": "Job stands on a ridge beneath vast storm clouds as wind bends the grass.",
+        "width": 1200,
+        "height": 675
+      },
+      "Job Restored": {
+        "src": "/assets/story-job-restored-v1.webp",
+        "alt": "Job and his household share food with visiting relatives in a green courtyard.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Job's Testing",
+        "alt": "Job sits in grief outside his home as three friends keep him company.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Job. Job, a fully clothed older ancient Near Eastern man, sits on the earth beside a broken clay bowl outside his home. His three friends sit with him in silent grief, each a distinct dignified face, varied brown skin. Gray diffused morning, sparse courtyard with a bare fig tree. Express loss through posture; no wounds, corpses, violence, Satan or divine figures. Narrative basis: Job is a blameless man whose wealth and children are taken after Satan challenges his motives before God. When his health is struck as well, his wife urges him to curse God, and three friends come to sit with him.",
+        "original": "output/imagegen/job-complete/job-s-testing.png"
+      },
+      {
+        "index": 1,
+        "title": "Elihu Speaks",
+        "alt": "Elihu speaks while Job and three older friends listen beneath a tree.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Job. Young adult Elihu speaks earnestly to Job and three older friends seated in a loose circle beneath a tamarisk tree. Clear cool late afternoon, green-gray hill country, intimate profile composition, listener faces thoughtful rather than caricatured, muted linen robes and natural curls. Narrative basis: A younger man, Elihu, speaks after Job's three friends fall silent. He says he is angry with Job for justifying himself and with the friends for failing to answer him.",
+        "original": "output/imagegen/job-complete/elihu-speaks.png"
+      },
+      {
+        "index": 2,
+        "title": "God Answers from the Whirlwind",
+        "alt": "Job stands on a ridge beneath vast storm clouds as wind bends the grass.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Job. Tiny fully clothed figure of Job stands on a rocky ridge beneath a towering spiral of storm cloud and wind over open land. Wide cinematic panorama, deep slate blue with silver light breaking through, grasses bend and a flock of wild birds turns in the wind. Awe at nature; no face, hand, human-like form or divine body in sky, no monsters. Narrative basis: The LORD answers Job out of the whirlwind with questions about creation, the animals, Behemoth and Leviathan.",
+        "original": "output/imagegen/job-complete/god-answers-from-the-whirlwind.png"
+      },
+      {
+        "index": 3,
+        "title": "Job Restored",
+        "alt": "Job and his household share food with visiting relatives in a green courtyard.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Job. Older Job welcomes relatives and children to a shared meal in a courtyard with fruit trees and distant sheep. Soft spring daylight after rain, varied ages and natural hair, grounded relief and renewed community, no ostentatious riches. Depict a later family gathering, never a resurrection or return of dead children. Narrative basis: Job answers that he has spoken of things too wonderful for him. God rebukes the three friends, Job prays for them, and his wealth is doubled and new children are born.",
+        "original": "output/imagegen/job-complete/job-restored.png"
+      }
+    ]
   }
 }

@@ -67,7 +67,7 @@ if(document.documentElement.classList.contains('native-ios')){
  const measureIndicator=()=>{
   indicatorFrame=0;
   const scroller=document.scrollingElement,viewport=window.visualViewport?.height||innerHeight;
-  const top=(document.querySelector('body>header')?.getBoundingClientRect().bottom||0)+6;
+  const top=Math.max(...[...document.querySelectorAll('body>header,#lensReadingBar')].map(el=>el.getBoundingClientRect().bottom),0)+6;
   const track=Math.max(0,viewport-top-12),range=scroller.scrollHeight-viewport;
   indicator.hidden=range<=1||track<30;
   if(indicator.hidden)return;

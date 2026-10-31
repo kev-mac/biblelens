@@ -35,7 +35,7 @@ console.log('PASS: deterministic release identity, text line-ending normalizatio
 const {default:vm}=await import('node:vm');
 for(const native of [false,true]){
  const version={},status={},button={},footer={};let ready;
- const panel={querySelector:selector=>selector==='[data-release-version]'?version:selector==='[data-release-status]'?status:button};
+ const panel={append(){},querySelector:selector=>selector==='[data-release-version]'?version:selector==='[data-release-status]'?status:button};
  const installed={version:'1.1.0',buildNumber:219,sourceHash:'abcdef0123456789'};
  let remote={...installed};
  const context={AbortSignal,location:{hostname:native?'localhost':'scripture-lens.kvn-mcgwn.chatgpt.site'},document:{addEventListener:(event,fn)=>ready=fn,createElement:()=>panel,querySelector:selector=>selector==='[data-footer-version]'?footer:{append(){}},documentElement:{classList:{contains:()=>native}}},fetch:async url=>({json:async()=>url==='/release.json'?installed:remote})};
@@ -47,7 +47,7 @@ for(const native of [false,true]){
 // A local browser preview must not compare its unpublished build to the live site.
 for(const hostname of ['localhost','127.0.0.1','[::1]']){
  const version={},status={},button={},footer={},requests=[];let ready;
- const panel={querySelector:selector=>selector==='[data-release-version]'?version:selector==='[data-release-status]'?status:button};
+ const panel={append(){},querySelector:selector=>selector==='[data-release-version]'?version:selector==='[data-release-status]'?status:button};
  const context={AbortSignal,location:{hostname},document:{addEventListener:(_event,fn)=>ready=fn,createElement:()=>panel,querySelector:selector=>selector==='[data-footer-version]'?footer:{append(){}},documentElement:{classList:{contains:()=>false}}},fetch:async url=>{requests.push(url);assert.equal(url,'/release.json','A local preview must not request the published release');return {json:async()=>({version:'1.1.0',buildNumber:263,sourceHash:'localpreview0123456789'})};}};
  vm.createContext(context);vm.runInContext(fs.readFileSync('src/release.js','utf8'),context);await ready();await button.onclick();
  assert.deepEqual(requests,['/release.json']);assert.equal(footer.textContent,'v1.1.0 · Build 263');

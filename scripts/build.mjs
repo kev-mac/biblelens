@@ -109,6 +109,7 @@ assets['/characters.js']={type:'application/javascript; charset=utf-8',body:char
 assets['/characters.json']={type:'application/json; charset=utf-8',body:releaseContent('src/data/characters.json',b4Content('src/data/characters.json'))};
 assets['/stories.json']={type:'application/json; charset=utf-8',body:JSON.stringify(enrichStories(addUX13Events(tagStoryCatalog(JSON.parse(releaseContent('data/stories.json',b4Content('data/stories.json'))),JSON.parse(fs.readFileSync('data/reference/topics.json','utf8')),loadTopicOptions())),uxRead('data/books.json'),uxRead('data/chapters.json'),uxEvidence))};
 assets['/release.json']={type:'application/json; charset=utf-8',body:JSON.stringify(releaseInfo())};
+assets['/release.js'].body=assets['/release.js'].body.replace('/*__RELEASE_INFO__*/null',assets['/release.json'].body);
 const redLetterContext={};vm.createContext(redLetterContext);vm.runInContext(fs.readFileSync('src/red-letters.js','utf8')+';this.ranges=RED_LETTERS;',redLetterContext);
 const redLetters=redLetterContext.ranges;
 assets['/reader-data.js'].body=assets['/reader-data.js'].body.replace('/*__RED_LETTER_REFERENCES__*/[]',JSON.stringify(Object.entries(redLetters).flatMap(([key,verses])=>Object.entries(verses).filter(([,editions])=>editions.kjv?.length).map(([verse])=>key+':'+verse))));
