@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+
+const source=fs.readFileSync('src/feature-loader.js','utf8');
+const code=source.slice(source.indexOf(' let referenceContextVersion='),source.indexOf('// Holding a place'));
+const loads=[],people=[],places=[],errors=[];
+const location={hash:'#read/0/19/1'};
+const context={location,load:name=>new Promise((resolve,reject)=>loads.push({name,resolve,reject})),toast:message=>errors.push(message),CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail;}},window:{dispatchEvent:event=>people.push(event),BibleLensAtlas:{open:(...args)=>places.push(args)}}};
+vm.createContext(context);vm.runInContext(code,context);
+const button={isConnected:true,classList:{contains:()=>false}};
+let task=context.openReferenceContext('person','lot',button);
+assert.equal(loads.at(-1).name,'characters');loads.at(-1).resolve();await task;
+assert.equal(people[0].type,'open-person');assert.equal(people[0].detail.id,'lot');assert.equal(people[0].detail.opener,button);
+assert.equal(location.hash,'#read/0/19/1','Opening a person must retain the reader route');
+task=context.openAtlas('sodom',button);assert.equal(loads.at(-1).name,'map');loads.at(-1).resolve();await task;
+assert.equal(places[0][0],'sodom');assert.equal(places[0][1],button);assert.equal(location.hash,'#read/0/19/1');
+task=context.openReferenceContext('person','stale',button);location.hash='#read/0/20/1';loads.at(-1).resolve();await task;
+assert.equal(people.length,1,'Navigation during feature loading must cancel a stale context');
+task=context.openReferenceContext('person','removed',{...button,isConnected:false});loads.at(-1).resolve();await task;assert.equal(people.length,1);
+const first=context.openReferenceContext('person','first',button),oldLoad=loads.at(-1);
+const second=context.openReferenceContext('person','second',button);loads.at(-1).resolve();await second;oldLoad.resolve();await first;
+assert.equal(people.at(-1).detail.id,'second');assert.equal(people.length,2,'A slower prior tap must not replace the latest context');
+task=context.openAtlas('offline',button);loads.at(-1).reject(Error('Offline'));await task;assert.deepEqual(errors,['Offline']);
+assert.equal(context.openAtlas('directory',{...button,classList:{contains:()=>true}}),undefined,'Directory card links keep their own navigation');
+console.log('PASS: inline person/place contexts preserve the passage route and opener, lazy-load the correct window, reject stale requests and recover from loading failures.');

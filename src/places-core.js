@@ -68,7 +68,7 @@ export function createPlaceMatcher(places){
   return hits.sort((a,b)=>a.start-b.start);
  };
 }
-export function locationChip(id,label){return `<button type="button" class="location-chip" data-place-id="${escapeHTML(id)}" aria-controls="places-view" aria-label="Open place summary for ${escapeHTML(label)}"><span aria-hidden="true">◉</span>${escapeHTML(label)}</button>`;}
+export function locationChip(id,label){return `<button type="button" class="location-chip" data-place-id="${escapeHTML(id)}" aria-controls="atlas-sheet" aria-haspopup="dialog" aria-label="Open place summary for ${escapeHTML(label)}"><span aria-hidden="true">◉</span>${escapeHTML(label)}</button>`;}
 // Input is plain text, never markup. Existing markup is handled with a DOM walker.
 export function wrapLocationNames(textOrNames,match){
  if(Array.isArray(textOrNames))return textOrNames.map(text=>wrapLocationNames(text,match)).join(', ');
