@@ -7,10 +7,12 @@ const images=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
 const catalog=await(await get('/stories.json')).json();
 assert.deepEqual(Object.keys(images),catalog.flatMap(group=>group.stories).slice(0,15).map(story=>story.title));
 for(const [title,art]of Object.entries(images)){
- assert.match(art.src,/^\/assets\/story-[a-z-]+-v[12]\.jpg$/);
+ assert.match(art.src,/^\/assets\/story-[a-z-]+-v[12]\.webp$/);
  assert(art.alt.length>20);
- const response=await get(art.src);assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),'image/jpeg');
- const bytes=Buffer.from(await response.arrayBuffer());assert(bytes.length<650000);assert.equal(bytes.readUInt16BE(0),0xffd8);
+ const response=await get(art.src);assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),'image/webp');
+ const bytes=Buffer.from(await response.arrayBuffer());assert(bytes.length<250000);assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,16),'WEBPVP8 ');
+ assert.equal(art.width,1200);assert.equal(art.height,675);assert.equal(bytes.readUInt16LE(26)&0x3fff,art.width);assert.equal(bytes.readUInt16LE(28)&0x3fff,art.height);
+ assert(!fs.existsSync('www'+art.src.replace('.webp','.jpg')),'Obsolete Story JPEGs are absent from native bundle');
  assert.deepEqual(bytes,fs.readFileSync('src'+art.src));
  assert.deepEqual(bytes,fs.readFileSync('www'+art.src),'Native and web share identical image bytes');
 }
@@ -30,4 +32,4 @@ for(const [chapter,verse,title]of starts){
  const data=await(await get(`/api/chapter?book=0&chapter=${chapter}`)).json();
  assert(data.eventHeadings[verse].includes(title),title+' retains its exact starting verse');
 }
-console.log('PASS: first fifteen Story images, valid packaged JPEGs, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.');
+console.log('PASS: first fifteen Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.');
