@@ -1,5 +1,5 @@
 {
-  "title": "Complete Genesis and Exodus Story illustrations",
+  "title": "BibleLens Story illustrations",
   "kind": "AI-generated imagined literary scenes, not historical evidence or real portraits",
   "method": "Built-in image_gen imagegen",
   "date": "2026-10-31",
@@ -468,6 +468,49 @@
       {
         "title": "Building the Tabernacle",
         "prompt": "Use case: illustration-story. Create ONE wide 16:9 cinematic naturalistic painterly illustration for BibleLens Story summary cards and matching Read banners, consistent with a finely textured sophisticated illustrated biblical series. Imagined literary scene, not historical evidence or a real portrait. All people are dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin, natural black/brown curly or tightly curled hair, believable anatomy and practical woven linen or wool. Egypt shows brown-skinned Egyptians, period linen, simple bronze and earthen materials. Desert scenes use practical ancient travel garments. For Moses when elderly: lean weathered brown face, thick curly gray beard, dark-gray curly hair, muted rust-brown wool outer cloak, plain linen tunic and rough wooden shepherd's staff; no European white face. No modern objects, glass lanterns, machinery, medieval costume, maize/corn, modern books, legible text, titles, captions, watermarks, borders, collage or split panels. No nudity, gore, visible dead people, graphic cruelty or depicted divine human body. Compose clear focal subjects for phones, scenes believable but evocative. Follow the specified unique lighting and scenery, not a repetitive golden sunset desert. Skilled men and women of an ancient Israelite wilderness camp work together assembling the tabernacle: one group weaves rich blue, purple and muted crimson cloth on a simple upright wooden loom, another shapes gilded wooden frames by hand, the partly erected portable sanctuary and plain linen courtyard hangings visible beyond. Bezaleel and Aholiab represented by two attentive adult craftspeople with brown skin and natural dark curls collaborating, no king-like costumes. LIGHTING: bright airy late-afternoon white canvas-filtered daylight, jewel-colored textiles stand out against pale sand and cream linen, warm metal reflections, close craftsmanship-focused wide composition. Hand tools only, no machinery, no readable writing, no fantasy temple or stone cathedral."
+      }
+    ]
+  },
+  "leviticus": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases and installs.",
+    "originals": "output/imagegen/leviticus-complete/",
+    "assets": {
+      "Aaron and His Sons Are Ordained": {
+        "src": "/assets/story-aaron-and-his-sons-are-ordained-v1.webp",
+        "alt": "Moses anoints Aaron while his sons stand beside the tabernacle.",
+        "width": 1200,
+        "height": 675
+      },
+      "Nadab and Abihu": {
+        "src": "/assets/story-nadab-and-abihu-v1.webp",
+        "alt": "Two priests hold smoking incense pans near the tabernacle entrance.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Blasphemer Stoned": {
+        "src": "/assets/story-the-blasphemer-stoned-v1.webp",
+        "alt": "A man faces Moses and gathered elders outside the wilderness camp.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "title": "Aaron and His Sons Are Ordained",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Leviticus 8:1–9:24, Aaron and His Sons Are Ordained. Show the clothing and anointing moment, not animal sacrifice. Elderly Moses, lean weathered brown face, gray curly beard, muted rust-brown outer cloak and plain linen tunic, gently tips a small earthen flask toward Aaron's covered head. Aaron has deep brown skin and a full gray curly beard, cream linen turban, richly woven blue outer robe, restrained woven breastpiece set with small colored stones. His adult sons in plain white linen stand nearby, a small respectful assembly behind. Portable tabernacle courtyard with white linen hangings and muted blue-purple-red entry fabric. Three-quarter medium-wide view with figures forming an intimate group. Clear fresh morning daylight filtered through pale linen, cool ivory and soft blue balanced with restrained jewel textiles, no sunset or grand stone temple. Hands anatomically natural, anointing gesture restrained, no readable inscriptions.",
+        "original": "/Users/kevin/.codex/generated_images/01a19106-7619-75f2-94fb-4952cf8ac576/exec-b058fddb-2e0b-4f09-a751-813090af90ab.png"
+      },
+      {
+        "title": "Nadab and Abihu",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Leviticus 10:1–20, Nadab and Abihu. Show the ominous moment before the narrative's fatal event, avoiding injury or bodies: two adult brown-skinned priests with dark natural curls and plain cream linen tunics stand at the entrance of a portable tabernacle, each holding one simple bronze incense pan by its handle. Thin curling smoke rises against deep blue and muted crimson woven curtains. Older Aaron, deep brown face, gray curly beard and cream turban, watches quietly from the far courtyard edge. No aggression, no moral caricature. Intimate low oblique framing focused on the two men and smoke, central subjects crop-safe. Lighting: cool indigo early evening and restrained amber brazier glow reflected on bronze and linen; faint drifting ash, smoky air, no sunset mountain panorama, no fire touching people, no fantasy magic or modern ritual objects.",
+        "original": "/Users/kevin/.codex/generated_images/01a19106-7619-75f2-94fb-4952cf8ac576/exec-266f5e8d-87ac-42f5-8f53-b793d30c8989.png"
+      },
+      {
+        "title": "The Blasphemer Stoned",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Leviticus 24:10–23, The Blasphemer Stoned. A sober literary depiction of the gathering before the punishment, not a violent action scene. Outside a wilderness tent camp on a flat pale stony plain, an adult man of mixed Israelite and Egyptian family, brown skin and short naturally curled dark hair, fully clothed in a plain undyed tunic, stands at a respectful distance facing a quiet assembled group of adults. Elders in simple woven garments and headcloths listen and deliberate. Moses, an older brown-skinned man in muted rust cloak with gray curls and beard, stands with the group. Keep the accused man's dignity and equal humanity, no villainous face or stereotypes. A few loose stones lie naturally on the ground but no one raises or throws them; no ropes, weapons, blood, execution or bodies. Wide lateral composition with a clear humane focal figure and restrained posture, linen tents receding into pale haze. Lighting: soft overcast midday, silver-gray sky, chalk stone, muted clay and slate garments; quiet and severe, no glorious sunset or theatrical spectacle.",
+        "original": "/Users/kevin/.codex/generated_images/01a19106-7619-75f2-94fb-4952cf8ac576/exec-7fda7b5a-b70f-465c-a7d6-715081ff4bb7.png"
       }
     ]
   }

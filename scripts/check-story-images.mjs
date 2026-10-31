@@ -5,7 +5,9 @@ import worker from '../dist/server/index.js';
 const get=path=>worker.fetch(new Request('https://biblelens.test'+path),{},{});
 const images=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
 const catalog=await(await get('/stories.json')).json();
-assert.deepEqual(Object.keys(images),catalog.filter(group=>['Genesis','Exodus'].includes(group.book)).flatMap(group=>group.stories).map(story=>story.title));
+const illustratedBooks=['Genesis','Exodus','Leviticus'];
+const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
+assert.deepEqual(Object.keys(images),catalog.filter(group=>illustratedBooks.includes(group.book)).flatMap(group=>group.stories).map(story=>story.title));
 for(const [title,art]of Object.entries(images)){
  assert.match(art.src,/^\/assets\/story-[a-z-]+-v[12]\.webp$/);
  assert(art.alt.length>20);
@@ -30,7 +32,7 @@ for(const title of Object.keys(images)){
 }
 assert.equal(context.storyIllustration('A story without artwork'),'');
 const chapters=new Map();
-for(const [book,name]of [[0,'Genesis'],[1,'Exodus']]){
+for(const {id:book,name}of books.filter(book=>illustratedBooks.includes(book.name))){
  for(const story of catalog.find(group=>group.book===name).stories){
   const match=story.passage.match(/(\d+):(\d+)/);assert(match,story.title+' has a starting passage');
   const chapter=Number(match[1]),verse=Number(match[2]),key=book+':'+chapter;
@@ -38,4 +40,4 @@ for(const [book,name]of [[0,'Genesis'],[1,'Exodus']]){
   assert(chapters.get(key).eventHeadings[verse].includes(story.title.replace(/\bCommandments\b/g,'Laws')),story.title+' retains its exact starting verse');
  }
 }
-console.log('PASS: complete Genesis and Exodus Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.');
+console.log('PASS: complete '+illustratedBooks.join(', ')+' Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.');
