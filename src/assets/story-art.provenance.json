@@ -3139,5 +3139,171 @@
         "original": "output/imagegen/mark-complete/the-empty-tomb.png"
       }
     ]
+  },
+  "luke": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/luke-complete/",
+    "assets": {
+      "The Births of John and Jesus": {
+        "src": "/assets/story-the-births-of-john-and-jesus-v1.webp",
+        "alt": "Mary holds her newborn as shepherds arrive at a modest Bethlehem shelter.",
+        "width": 1200,
+        "height": 675
+      },
+      "Presentation and the Boy Jesus in the Temple": {
+        "src": "/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp",
+        "alt": "Young Jesus listens among teachers as Mary and Joseph enter the temple portico.",
+        "width": 1200,
+        "height": 675
+      },
+      "Rejection at Nazareth": {
+        "src": "/assets/story-rejection-at-nazareth-v1.webp",
+        "alt": "Jesus holds a scroll before villagers seated in the Nazareth synagogue.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Miraculous Catch": {
+        "src": "/assets/story-the-miraculous-catch-v1.webp",
+        "alt": "Fishermen draw in a full net while Simon kneels beside Jesus in the boat.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Centurion and the Widow's Son": {
+        "src": "/assets/story-the-centurion-and-the-widow-s-son-v1.webp",
+        "alt": "A mother reaches toward her son as he sits up beside Jesus outside Nain.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Sinful Woman Anoints Jesus": {
+        "src": "/assets/story-the-sinful-woman-anoints-jesus-v1.webp",
+        "alt": "A woman brings an oil jar to Jesus’s feet during a meal.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Good Samaritan and Mary and Martha": {
+        "src": "/assets/story-the-good-samaritan-and-mary-and-martha-v1.webp",
+        "alt": "A Samaritan bandages a traveler beside a rocky road while a donkey waits nearby.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Lost Sheep, Coin and Son": {
+        "src": "/assets/story-the-lost-sheep-coin-and-son-v1.webp",
+        "alt": "A father embraces his returning son at the entrance to a rural courtyard.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Rich Man and Lazarus": {
+        "src": "/assets/story-the-rich-man-and-lazarus-v1.webp",
+        "alt": "Lazarus rests outside a wealthy household’s gate while a meal is served within.",
+        "width": 1200,
+        "height": 675
+      },
+      "Zacchaeus": {
+        "src": "/assets/story-zacchaeus-v1.webp",
+        "alt": "Zacchaeus looks down from a sycamore tree as Jesus speaks beneath it.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Road to Emmaus": {
+        "src": "/assets/story-the-road-to-emmaus-v1.webp",
+        "alt": "Two travelers watch Jesus break bread at a low table in Emmaus.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Ascension": {
+        "src": "/assets/story-the-ascension-v1.webp",
+        "alt": "Jesus raises his hands in blessing as disciples gather on a hillside near Bethany.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "The Births of John and Jesus",
+        "alt": "Mary holds her newborn as shepherds arrive at a modest Bethlehem shelter.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Night inside a modest Bethlehem animal shelter: Mary holds her wrapped newborn beside a stone feeding trough, Joseph seated nearby, shepherds arriving quietly at the open doorway with a lamb outside. Cool night air, muted small oil-lamp light, no glowing infant. Narrative basis: Gabriel announces John's birth to Zechariah and Jesus's birth to Mary. Mary visits Elizabeth, John is born, and Jesus is born in Bethlehem and visited by shepherds.",
+        "original": "output/imagegen/luke-complete/the-births-of-john-and-jesus.png"
+      },
+      {
+        "index": 1,
+        "title": "Presentation and the Boy Jesus in the Temple",
+        "alt": "Young Jesus listens among teachers as Mary and Joseph enter the temple portico.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Wide interior of a first-century Jerusalem temple portico in bright reflected daylight: twelve-year-old Jesus in a simple linen tunic sits listening among elderly Jewish teachers with rolled scrolls; Mary and Joseph find him from the side. No legible writing. Narrative basis: Simeon and Anna see the infant Jesus at the temple. At twelve, Jesus stays behind in Jerusalem and is found among the teachers.",
+        "original": "output/imagegen/luke-complete/presentation-and-the-boy-jesus-in-the-temple.png"
+      },
+      {
+        "index": 2,
+        "title": "Rejection at Nazareth",
+        "alt": "Jesus holds a scroll before villagers seated in the Nazareth synagogue.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Small first-century synagogue built of rough stone at Nazareth: adult Jesus stands holding an open unlettered parchment scroll, gathered villagers listen from low benches with thoughtful and skeptical faces. Cool diffuse light through doorway, dignified calm moment before confrontation. Narrative basis: Jesus reads from Isaiah in the Nazareth synagogue and says it is fulfilled. The crowd turns on him and tries to throw him off a cliff.",
+        "original": "output/imagegen/luke-complete/rejection-at-nazareth.png"
+      },
+      {
+        "index": 3,
+        "title": "The Miraculous Catch",
+        "alt": "Fishermen draw in a full net while Simon kneels beside Jesus in the boat.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Pre-dawn blue on the Sea of Galilee: two wooden fishing boats sit low in water beside each other as fishermen haul a heavy net glittering with fish; Simon kneels in the near boat before seated Jesus. Wide low viewpoint, physical realistic boat load. Narrative basis: After a night of fishing without success, Simon lets down his nets at Jesus's word and catches so many fish that the boats begin to sink. He leaves everything to follow Jesus.",
+        "original": "output/imagegen/luke-complete/the-miraculous-catch.png"
+      },
+      {
+        "index": 4,
+        "title": "The Centurion and the Widow's Son",
+        "alt": "A mother reaches toward her son as he sits up beside Jesus outside Nain.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Outside the stone gate of Nain in clear late morning: a fully clothed young man sits upright on a carried wooden bier, Jesus stands beside him and his widowed mother reaches toward her son; small astonished group behind, no wounds or distressing imagery. Narrative basis: Jesus heals a centurion's servant at a distance and raises the only son of a widow at Nain.",
+        "original": "output/imagegen/luke-complete/the-centurion-and-the-widow-s-son.png"
+      },
+      {
+        "index": 5,
+        "title": "The Sinful Woman Anoints Jesus",
+        "alt": "A woman brings an oil jar to Jesus’s feet during a meal.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Quiet meal in a first-century stone house: Jesus reclines at a low dining table while a fully clothed woman kneels beside his feet with a small alabaster oil jar. Other diners observe, soft afternoon courtyard light, respectful human emotion. Narrative basis: At a Pharisee's house a woman bathes Jesus's feet with tears and oil. He tells a parable about two debtors and forgives her.",
+        "original": "output/imagegen/luke-complete/the-sinful-woman-anoints-jesus.png"
+      },
+      {
+        "index": 6,
+        "title": "The Good Samaritan and Mary and Martha",
+        "alt": "A Samaritan bandages a traveler beside a rocky road while a donkey waits nearby.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Illustrate the parable as an ancient imagined scene, not Jesus physically present: on a rocky road between Jerusalem and Jericho, a Samaritan in a blue-brown traveling cloak wraps a bandage around a clothed injured traveler resting safely against a rock; donkey and clay oil flask nearby, no blood. Narrative basis: Asked who his neighbor is, Jesus tells of a Samaritan who helps a beaten traveler. He is then welcomed by Martha, while Mary sits at his feet.",
+        "original": "output/imagegen/luke-complete/the-good-samaritan-and-mary-and-martha.png"
+      },
+      {
+        "index": 7,
+        "title": "The Lost Sheep, Coin and Son",
+        "alt": "A father embraces his returning son at the entrance to a rural courtyard.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Illustrate the parable: elderly father embraces his returning adult son in plain worn clothing outside a rural stone courtyard; distant older brother pauses at the edge of the vineyard, overcast spring afternoon, no text or halos. Narrative basis: Jesus tells three parables of recovery: the lost sheep, the lost coin and the prodigal son with his elder brother.",
+        "original": "output/imagegen/luke-complete/the-lost-sheep-coin-and-son.png"
+      },
+      {
+        "index": 8,
+        "title": "The Rich Man and Lazarus",
+        "alt": "Lazarus rests outside a wealthy household’s gate while a meal is served within.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Illustrate the opening scene of the parable, not the afterlife: Lazarus, a poor adult in patched clothing, sits beside an ornate ancient house gate; a small dog rests nearby. Beyond the entrance a wealthy man dines in rich woven clothes. Cool shade outside, daylight within; no wounds. Narrative basis: Jesus tells of a rich man and a poor man named Lazarus whose fortunes reverse after death.",
+        "original": "output/imagegen/luke-complete/the-rich-man-and-lazarus.png"
+      },
+      {
+        "index": 9,
+        "title": "Zacchaeus",
+        "alt": "Zacchaeus looks down from a sycamore tree as Jesus speaks beneath it.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Ancient Jericho street in green morning light: small-statured adult Zacchaeus sits on a thick low branch of a sycamore fig tree, looking down at Jesus who has stopped below; a few travelers and palms in the background, natural easy composition. Narrative basis: The tax collector Zacchaeus climbs a tree to see Jesus, welcomes him to his house, and promises to repay those he cheated.",
+        "original": "output/imagegen/luke-complete/zacchaeus.png"
+      },
+      {
+        "index": 10,
+        "title": "The Road to Emmaus",
+        "alt": "Two travelers watch Jesus break bread at a low table in Emmaus.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Modest inn at Emmaus, blue evening outside a small window: Jesus breaks a flatbread at a low table as two travelers suddenly look closely at him; clay bowls, woven mat and one oil lamp, intimate painterly scene without halos or glow. Narrative basis: Two disciples walking to Emmaus meet the risen Jesus without recognizing him. They recognize him when he breaks bread and return to Jerusalem.",
+        "original": "output/imagegen/luke-complete/the-road-to-emmaus.png"
+      },
+      {
+        "index": 11,
+        "title": "The Ascension",
+        "alt": "Jesus raises his hands in blessing as disciples gather on a hillside near Bethany.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Luke. Wide hillside near Bethany in soft overcast daylight: Jesus stands slightly above gathered disciples on a rocky rise, hands raised in a farewell blessing, high drifting cloud behind; earthbound human farewell composition before ascent, no flying body or supernatural glow. Narrative basis: Jesus appears to the disciples, opens the scriptures to them, and is carried up into heaven as he blesses them.",
+        "original": "output/imagegen/luke-complete/the-ascension.png"
+      }
+    ]
   }
 }
