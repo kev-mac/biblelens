@@ -32,7 +32,7 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
   const pip=page.locator('#verse-3 [data-lens-inspect]');assert.match(await pip.innerText(),/^✦ \d+$/);
   assert(await pip.evaluate(n=>n===n.parentElement.lastElementChild&&n.parentElement.classList.contains('verse-body')));
   await shot('read-on');
-  const count=Number((await pip.innerText()).split(' ')[1]);await pip.click();await page.locator('#lens-inspector-sheet[open]').waitFor();assert.equal(await page.locator('[data-context-tab=all]').innerText(),`All (${count})`);await page.keyboard.press('Escape');
+  const count=Number((await pip.innerText()).split(' ')[1]);await pip.click();await page.locator('#lens-inspector-sheet[open]').waitFor();assert.equal(await page.locator('[data-context-tab]').count(),0);assert.equal(await page.locator('#ux-context-panel .lens-evidence').count(),count);await page.keyboard.press('Escape');
   await page.reload();await page.locator('#verse-3 [data-lens-inspect]').waitFor();await page.evaluate(theme=>{state.theme=theme;applyTheme();},theme);
   if(width===390&&theme==='dark'){
    await go('#read/0/22','#verse-1');await page.locator('.chapter-subtitle').filter({hasText:titles.Genesis['22']}).waitFor();await ready();await shot('genesis-22');

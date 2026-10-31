@@ -3120,3 +3120,6 @@ html body.lens-app #verse-preview .preview-text :is(a,button.person-chip,button.
 html body.lens-app #verse-preview .preview-text .person-chip{font-weight:700;color:var(--topic-people)}
 html body.lens-app #verse-preview .preview-text .location-chip{font-weight:700;color:var(--topic-places)}
 html body.lens-app #verse-preview .preview-text :is(.person-chip,.location-chip) svg{display:none}
+html body.lens-app #lensInspector .ux-verse-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%}
+html body.lens-app #lensInspector .ux-verse-actions button{width:100%;min-width:0;height:60px;min-height:44px;border:0;box-shadow:none;background:transparent}
+html body.lens-app #lensInspector .lens-evidence>details>summary{text-decoration:none}
