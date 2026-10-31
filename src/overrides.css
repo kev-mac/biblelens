@@ -3079,16 +3079,22 @@ html body.lens-app :is(#characters-view,#character-sheet) .character-biography-s
 html body.lens-app #chapter-text .chapter-heading-row{margin:8px 0 24px;text-align:center}
 html body.lens-app #chapter-text .ux-reader-eyebrow{font:700 .875rem/1.5 var(--ui-font);margin-bottom:4px}
 html body.lens-app #chapter-text .chapter-subtitle{font:700 1.65rem/1.3 var(--ui-font);margin:0;overflow-wrap:anywhere}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=history]{--inspect-rgb:251,191,36}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=science]{--inspect-rgb:74,222,128}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=timeline]{--inspect-rgb:45,212,191}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=text]{--inspect-rgb:96,165,250}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=translation]{--inspect-rgb:192,132,252}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=questions]{--inspect-rgb:251,113,133}
-html body.lens-app #explore-view.ux-evidence-hub a.ux-topic{--topic:rgb(var(--inspect-rgb));--category-border:rgba(var(--inspect-rgb),.45);--category-glow:rgba(var(--inspect-rgb),.25);background:rgba(var(--inspect-rgb),.1);border-color:var(--category-border)}
-html body.lens-app:not(.dark) #explore-view.ux-evidence-hub a.ux-topic{--topic:color-mix(in srgb,rgb(var(--inspect-rgb)) 60%,#000)}
-html body.lens-app #explore-view.ux-evidence-hub .ux-count{color:var(--topic);background:rgba(var(--inspect-rgb),.15)}
-html body.lens-app #chapter-text .reader-event-title{font:700 1.35rem/1.4 var(--ui-font);color:var(--lens-ink);margin:28px 0 12px;padding-top:8px}
+/* Explore and Inspect share the same color tint strength. */
+html body.lens-app #explore-view [data-topic=stories]{--tile-rgb:192,132,252}
+html body.lens-app #explore-view [data-topic=people]{--tile-rgb:96,165,250}
+html body.lens-app #explore-view [data-topic=places]{--tile-rgb:45,212,191}
+html body.lens-app #explore-view [data-topic=commandments]{--tile-rgb:251,191,36}
+html body.lens-app #explore-view [data-topic=lost]{--tile-rgb:253,164,175}
+html body.lens-app #explore-view.ux-evidence-hub [data-topic=history]{--tile-rgb:251,191,36}
+html body.lens-app #explore-view.ux-evidence-hub [data-topic=science]{--tile-rgb:74,222,128}
+html body.lens-app #explore-view.ux-evidence-hub [data-topic=timeline]{--tile-rgb:45,212,191}
+html body.lens-app #explore-view.ux-evidence-hub [data-topic=text]{--tile-rgb:96,165,250}
+html body.lens-app #explore-view.ux-evidence-hub [data-topic=translation]{--tile-rgb:192,132,252}
+html body.lens-app #explore-view.ux-evidence-hub [data-topic=questions]{--tile-rgb:251,113,133}
+html body.lens-app #explore-view a.ux-topic{--topic:rgb(var(--tile-rgb));--category-border:rgba(var(--tile-rgb),.45);--category-glow:rgba(var(--tile-rgb),.25);background:rgba(var(--tile-rgb),.1);border-color:var(--category-border)}
+html body.lens-app:not(.dark) #explore-view a.ux-topic{--topic:color-mix(in srgb,rgb(var(--tile-rgb)) 60%,#000)}
+html body.lens-app #explore-view .ux-count{color:var(--topic);background:rgba(var(--tile-rgb),.15)}
+html body.lens-app #chapter-text .reader-event-title{font:700 1.35rem/1.4 var(--ui-font);color:var(--lens-ink);margin:28px 0 24px;padding-top:8px;text-align:center}
 html body.lens-app .comparison-topic-passages{margin:20px 0;padding:16px;border:1px solid var(--lens-rule);border-radius:8px}
 html body.lens-app .comparison-topic-passages nav{display:flex;flex-wrap:wrap;gap:8px}
 html body.lens-app #lensMasthead nav.lens-primary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
