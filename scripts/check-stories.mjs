@@ -53,7 +53,7 @@ for(const entry of catalog){
 }
 vm.runInContext('storiesActive=true',c);await c.renderStoriesView();
 assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,24,'The unfiltered Stories page browses the full collection in pages');
-assert.match(node('#stories-search').placeholder,/Search \d+ events/);
+assert.match(node('#stories-search').placeholder,/Search \d+ stories/);
 assert.equal(node('#stories-results').hidden,false);
 assert.match(node('#stories-results').textContent,new RegExp('of '+total+' events'));
 const firstPage=node('#stories-list').innerHTML;await c.renderStoriesView();assert.equal(node('#stories-list').innerHTML,firstPage,'Returning to browse preserves a stable first page');

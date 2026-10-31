@@ -80,7 +80,7 @@ assert.equal(card.children[0].children[1].tag,'a','The full row has a profile li
 assert.equal(card.children[0].children[1].href,'#characters/'+encodeURIComponent(malicious.id));
 assert.equal(card.children[1].textContent,malicious.summary);
 const sections=card.children[2],controls=sections.children[0].children,panels=sections.children.filter(node=>node.className==='person-section-panel');
-assert.deepEqual(Array.from(controls,b=>b.children[1].textContent),['Verses','Events','Places','Family']);
+assert.deepEqual(Array.from(controls,b=>b.children[1].textContent),['Verses','Stories','Places','Family']);
 assert(controls.every(b=>b.attributes['aria-expanded']==='false'));
 assert(panels.every(panel=>panel.hidden===true));
 controls[0].events.click();assert.equal(panels[0].hidden,false);
@@ -161,7 +161,7 @@ vm.runInContext(fs.readFileSync('src/stories.js','utf8'),storyContext);
 await storyContext.routeLinkedStory();
 assert(focused&&scrolled);assert(!$('#stories-view').hidden);assert($('#reader-layout').hidden);
 assert($('#stories-list').innerHTML.includes('id="story-joseph-in-egypt"'));
-storyContext.location.hash='#stories/genesis/missing';await storyContext.routeLinkedStory();assert($('#stories-list').innerHTML.includes('Event not found'));
+storyContext.location.hash='#stories/genesis/missing';await storyContext.routeLinkedStory();assert($('#stories-list').innerHTML.includes('Story not found'));
 storyContext.location.hash='#read/0/1/1';await storyContext.routeLinkedStory();assert($('#stories-view').hidden);
 const loads=[];
 storyContext.books=[{name:'Genesis',id:0}];
