@@ -5,7 +5,7 @@ import worker from '../dist/server/index.js';
 const get=path=>worker.fetch(new Request('https://biblelens.test'+path),{},{});
 const images=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
 const catalog=await(await get('/stories.json')).json();
-assert.deepEqual(Object.keys(images),catalog.flatMap(group=>group.stories).slice(0,15).map(story=>story.title));
+assert.deepEqual(Object.keys(images),catalog.find(group=>group.book==='Genesis').stories.map(story=>story.title));
 for(const [title,art]of Object.entries(images)){
  assert.match(art.src,/^\/assets\/story-[a-z-]+-v[12]\.webp$/);
  assert(art.alt.length>20);
@@ -27,9 +27,9 @@ for(const title of Object.keys(images)){
  assert(!summary.includes('<figcaption>'));assert(!reader.includes('<figcaption>'));
 }
 assert.equal(context.storyIllustration('A story without artwork'),'');
-const starts=[[1,1,'The Creation'],[3,1,'The Fall of Man'],[4,1,'Cain and Abel'],[4,25,'The Line of Seth'],[6,9,'Noah and the Flood'],[9,8,'Noahic Covenant'],[9,18,'The Family of Noah'],[11,1,'The Tower of Babel'],[11,27,'The Call of Abram'],[12,1,'Abrahamic Covenant'],[13,1,'Abram and Lot'],[16,1,'Hagar and Ishmael'],[17,1,'Abraham and Sarah’s Covenant'],[19,1,'Lot Leaves Sodom'],[21,1,'Isaac and Ishmael']];
+const starts=[[1,1,'The Creation'],[3,1,'The Fall of Man'],[4,1,'Cain and Abel'],[4,25,'The Line of Seth'],[6,9,'Noah and the Flood'],[9,8,'Noahic Covenant'],[9,18,'The Family of Noah'],[11,1,'The Tower of Babel'],[11,27,'The Call of Abram'],[12,1,'Abrahamic Covenant'],[13,1,'Abram and Lot'],[16,1,'Hagar and Ishmael'],[17,1,'Abraham and Sarah’s Covenant'],[19,1,'Lot Leaves Sodom'],[21,1,'Isaac and Ishmael'],[22,1,'The Binding of Isaac'],[24,1,'Isaac and Rebekah'],[25,19,'Jacob and Esau'],[29,1,'Jacob’s Household'],[31,1,'Jacob Returns to Canaan'],[34,1,'Dinah at Shechem'],[35,1,'The Death of Rachel'],[37,1,'Joseph and His Brothers'],[38,1,'Judah and Tamar'],[39,1,'Joseph in Egypt'],[42,1,'Joseph Reunites His Family'],[48,1,'Jacob Blesses His Family']];
 for(const [chapter,verse,title]of starts){
  const data=await(await get(`/api/chapter?book=0&chapter=${chapter}`)).json();
  assert(data.eventHeadings[verse].includes(title),title+' retains its exact starting verse');
 }
-console.log('PASS: first fifteen Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.');
+console.log('PASS: complete Genesis Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.');
