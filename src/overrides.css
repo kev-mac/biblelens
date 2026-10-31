@@ -2975,7 +2975,7 @@ html body.lens-app #chapter-text :is(.verse,.chapter-heading-row){scroll-margin-
 html body.lens-app #lensMasthead nav.lens-primary{background:var(--ux13-base);color:var(--ux13-ink);border-color:var(--ux13-rule)}
 html body.lens-app #lensReadingBar #lens-focus .ux-evidence-label{display:inline-flex;align-items:center;gap:4px}
 html body.lens-app #lens-focus .ux-evidence-label::after{content:"";display:inline-block;width:6px;height:6px;flex:none;border-radius:50%;background:#64748B;box-shadow:none}
-html body.lens-app #lens-focus[aria-pressed=true] .ux-evidence-label::after{content:"";background:#22C55E;box-shadow:0 0 6px rgba(34,197,94,.7)}
+html body.lens-app #lens-focus[aria-pressed=true] .ux-evidence-label::after{content:"";background:#4ade80;box-shadow:0 0 4px #4ade80,0 0 10px rgba(34,197,94,.9),0 0 18px rgba(34,197,94,.55)}
 html body.lens-app #chapter-text .verse-body :is(.person-chip,.location-chip){display:inline;position:relative;min-width:0;min-height:0;height:auto;margin:0;padding:0;border:0;border-radius:0;vertical-align:baseline;line-height:inherit;font:inherit;color:inherit;white-space:normal;text-decoration:underline dotted;text-decoration-color:color-mix(in srgb,var(--lens-link) 40%,transparent);text-decoration-thickness:1px;text-underline-offset:3px;background:none}
 html body.lens-app #chapter-text .verse-body :is(.person-chip,.location-chip)::before{content:"";position:absolute;left:50%;top:50%;width:max(100%,44px);height:44px;transform:translate(-50%,-50%)}
 html body.lens-app :is(#atlas-sheet,#ux-alphabet-sheet){background:var(--ux13-surface);color:var(--ux13-ink)}
