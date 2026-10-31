@@ -3085,12 +3085,12 @@ html body.lens-app #explore-view [data-topic=people]{--tile-rgb:96,165,250}
 html body.lens-app #explore-view [data-topic=places]{--tile-rgb:45,212,191}
 html body.lens-app #explore-view [data-topic=commandments]{--tile-rgb:251,191,36}
 html body.lens-app #explore-view [data-topic=lost]{--tile-rgb:253,164,175}
-html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=history],[data-collection=history]){--tile-rgb:251,191,36}
-html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=science],[data-collection=science]){--tile-rgb:74,222,128}
-html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=timeline],[data-collection=timeline]){--tile-rgb:45,212,191}
-html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=text],[data-collection=text]){--tile-rgb:96,165,250}
-html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=translation],[data-collection=translation]){--tile-rgb:192,132,252}
-html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=questions],[data-collection=questions]){--tile-rgb:251,113,133}
+html body.lens-app[data-topic=history],html body.lens-app :is([data-topic=history],[data-collection=history]){--tile-rgb:251,191,36}
+html body.lens-app[data-topic=science],html body.lens-app :is([data-topic=science],[data-collection=science]){--tile-rgb:74,222,128}
+html body.lens-app[data-topic=timeline],html body.lens-app :is([data-topic=timeline],[data-collection=timeline]){--tile-rgb:45,212,191}
+html body.lens-app[data-topic=text],html body.lens-app :is([data-topic=text],[data-collection=text]){--tile-rgb:96,165,250}
+html body.lens-app[data-topic=translation],html body.lens-app :is([data-topic=translation],[data-collection=translation]){--tile-rgb:192,132,252}
+html body.lens-app[data-topic=questions],html body.lens-app :is([data-topic=questions],[data-collection=questions]){--tile-rgb:251,113,133}
 html body.lens-app #explore-view a.ux-topic{--topic:rgb(var(--tile-rgb));--category-border:rgba(var(--tile-rgb),.45);--category-glow:rgba(var(--tile-rgb),.25);background:rgba(var(--tile-rgb),.1);border-color:var(--category-border)}
 html body.lens-app:not(.dark) #explore-view a.ux-topic{--topic:color-mix(in srgb,rgb(var(--tile-rgb)) 60%,#000)}
 html body.lens-app #explore-view .ux-count{color:var(--topic);background:rgba(var(--tile-rgb),.15)}
@@ -3108,3 +3108,9 @@ html body.lens-app #chapter-text .verse-body .location-chip{font-weight:700;colo
 /* Keep both discovery grids equally wide when only Inspect needs scrolling. */
 html:has(body.lens-app #explore-view:not([hidden])){scrollbar-gutter:stable}
 @supports not (scrollbar-gutter:stable){html:has(body.lens-app #explore-view:not([hidden])){overflow-y:scroll}}
+/* Category pages inherit their Inspect tile palette. */
+html body.lens-app:is([data-topic=history],[data-topic=science],[data-topic=timeline],[data-topic=text],[data-topic=translation],[data-topic=questions]){--inspect-accent:rgb(var(--tile-rgb));--category-border:rgba(var(--tile-rgb),.45);--category-glow:rgba(var(--tile-rgb),.25);--lens-link:var(--inspect-accent);--lens-focus:var(--inspect-accent);--lens-link-soft:rgba(var(--tile-rgb),.15)}
+html body.lens-app:not(.dark):is([data-topic=history],[data-topic=science],[data-topic=timeline],[data-topic=text],[data-topic=translation],[data-topic=questions]){--inspect-accent:color-mix(in srgb,rgb(var(--tile-rgb)) 60%,#000)}
+html body.lens-app:is([data-topic=history],[data-topic=science],[data-topic=timeline],[data-topic=text],[data-topic=translation],[data-topic=questions]) :is(.directory-hub,.stories-filter-sheet,.phase2-page,#timeline-view){--directory-rgb:var(--tile-rgb);--directory-accent:var(--inspect-accent);--accent-purple:var(--inspect-accent);--accent-purple-soft:rgba(var(--tile-rgb),.16);--accent-purple-border:rgba(var(--tile-rgb),.35);--accent:var(--inspect-accent);--ui-link:var(--inspect-accent)}
+html body.lens-app:is([data-topic=history],[data-topic=science],[data-topic=timeline],[data-topic=text],[data-topic=translation],[data-topic=questions]) #main :is(#debates-view,#debate-view,#timeline-view,#evidence-view) :is(h1,.directory-heading){color:var(--inspect-accent)}
+html body.lens-app:is([data-topic=history],[data-topic=science],[data-topic=timeline],[data-topic=text],[data-topic=translation],[data-topic=questions]) #timeline-view :is(.timeline-card,.timeline-event-card){border-color:rgba(var(--tile-rgb),.35)}
