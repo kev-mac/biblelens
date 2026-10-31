@@ -55,7 +55,7 @@ vm.runInContext('storiesActive=true',c);await c.renderStoriesView();
 assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,24,'The unfiltered Stories page browses the full collection in pages');
 assert.match(node('#stories-search').placeholder,/Search \d+ stories/);
 assert.equal(node('#stories-results').hidden,false);
-assert.match(node('#stories-results').textContent,new RegExp('of '+total+' events'));
+assert.match(node('#stories-results').textContent,new RegExp('of '+total+' stories'));
 const firstPage=node('#stories-list').innerHTML;await c.renderStoriesView();assert.equal(node('#stories-list').innerHTML,firstPage,'Returning to browse preserves a stable first page');
 assert(!node('#reader-layout').hidden);assert(!node('#stories-view').hidden);
 assert(c.storyCard(genesis.stories[0]).includes('data-story-passage="Genesis 1:1 - 2:3"'));
@@ -66,7 +66,7 @@ for(const entry of catalog){
  assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,Math.min(24,entry.stories.length));
  assert(node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(entry.stories[0].title)+'"'));
 }
-vm.runInContext("storiesBook='Exodus';storiesSearch='no matches for this query'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No events match'));
+vm.runInContext("storiesBook='Exodus';storiesSearch='no matches for this query'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories match'));
 vm.runInContext("storiesSearch=''",c);
 vm.runInContext("storiesBook='Genesis';storiesTheme='Obedience'",c);await c.renderStoriesView();assert.equal((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length,Math.min(24,genesis.stories.filter(story=>story.topics.includes('Obedience')).length));
 vm.runInContext("storiesTheme='';storiesSearch='noah'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('Noah'));
@@ -76,8 +76,8 @@ for(const query of ['jonah fish','fish jonah','  JONAH   FISH  ','Jonah, fish'])
  assert(node('#stories-list').innerHTML.includes('id="story-jonah-flees-and-is-swallowed"'),query);
  assert.equal(node('#stories-list')['aria-busy'],'false');
 }
-vm.runInContext("storiesSearch='jonah fish zqxvblorp'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No events match'));
-vm.runInContext("storiesBook='Genesis';storiesSearch='jonah fish'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No events match'),'Book filters still constrain keyword search');
+vm.runInContext("storiesSearch='jonah fish zqxvblorp'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories match'));
+vm.runInContext("storiesBook='Genesis';storiesSearch='jonah fish'",c);await c.renderStoriesView();assert(node('#stories-list').innerHTML.includes('No stories match'),'Book filters still constrain keyword search');
 vm.runInContext("storiesSearch=''",c);
 handlers.click({target:{closest:s=>s==='[data-story-passage]'?{dataset:{storyPassage:'Genesis 6:9 - 9:17'}}:null}});
 assert.deepEqual(loads,[[0,6,9]]);assert(!node('#reader-layout').hidden);assert(node('#stories-view').hidden);
@@ -104,7 +104,7 @@ await c.openStoryTopic(theme,origin.passage);
 assert(node('#story-topic-sheet').open);assert.equal(node('#story-topic-heading').textContent,theme);
 assert(!node('#story-topic-body').innerHTML.includes(`data-story-passage="${origin.passage}"`));
 assert(!node('#story-topic-body').innerHTML.includes('class="story-themes"'),'Story cards reserve this space for narrative');
-await c.openStoryTopic('No matches',origin.passage);assert(node('#story-topic-body').innerHTML.includes('No other events'));
+await c.openStoryTopic('No matches',origin.passage);assert(node('#story-topic-body').innerHTML.includes('No other stories'));
 c.closeStoryTopic();assert(!node('#story-topic-sheet').open);
 const unsafe=c.storyCard({...origin,topics:['<script>"&']});assert(!unsafe.includes('<script>'));
 const shared=exodus.stories.find(story=>story.topics.some(topic=>genesis.stories.some(other=>other.topics.includes(topic))));
@@ -128,7 +128,7 @@ assert(node('#stories-results').textContent.startsWith(`Showing 25–${Math.min(
 await handlers.click({target:{closest:selector=>selector==='[data-stories-page]'?{disabled:false,dataset:{storiesPage:'-1'}}:null}});assert.equal(node('#stories-list').innerHTML,page1,'Previous returns to the same first-page stories');
 vm.runInContext('storiesPage=999',c);await c.renderStoriesView();assert(node('#stories-next').disabled);assert((node('#stories-list').innerHTML.match(/class="story-card"/g)||[]).length<=24);
 node('#stories-book').value='Genesis';node('#stories-search').value='no matches';node('#stories-theme').value='';c.updateStoriesFilters();await c.renderStoriesView();
-assert.equal(vm.runInContext('storiesPage',c),0);assert(node('#stories-pagination').hidden);assert(node('#stories-list').innerHTML.includes('No events match'));
+assert.equal(vm.runInContext('storiesPage',c),0);assert(node('#stories-pagination').hidden);assert(node('#stories-list').innerHTML.includes('No stories match'));
 c.location.hash='#stories/genesis/'+c.storySlug(genesis.stories.at(-1).title);await c.routeLinkedStory();
 assert(node('#stories-list').innerHTML.includes('id="story-'+c.storySlug(genesis.stories.at(-1).title)+'"'));assert(node('#stories-pagination').hidden);
 console.log('PASS: 24-story pages, page bounds, next/previous state, result ranges, filter resets, empty results, and late-story deep links.');
@@ -136,7 +136,7 @@ console.log('PASS: 24-story pages, page bounds, next/previous state, result rang
 // Stories expose the passage action directly while retaining their complete range.
 const sectionCard=c.storyCard(genesis.stories[0]);
 assert(sectionCard.includes('data-story-book="0" data-story-chapter="1" data-story-verse="1" data-story-end-chapter="2" data-story-end-verse="3"'));
-assert(sectionCard.includes('Read event →</button>'));
+assert(sectionCard.includes('Read story →</button>'));
 assert(!sectionCard.includes('data-story-section'));
 assert(sectionCard.includes('<div class="story-summary"><p>'+genesis.stories[0].summary.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;')+'</p></div>'));
 console.log('PASS: Full-range story anchors, direct reader action and unchanged narrative summary.');
