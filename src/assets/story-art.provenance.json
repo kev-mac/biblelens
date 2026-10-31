@@ -3143,7 +3143,7 @@
   "luke": {
     "date": "2026-10-31",
     "method": "Built-in image_gen imagegen",
-    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "authorization": "Owner authorized direct continued story artwork and explicitly requested commits, pushes, publication and iPhone installs.",
     "originals": "output/imagegen/luke-complete/",
     "assets": {
       "The Births of John and Jesus": {
@@ -3309,7 +3309,7 @@
   "john": {
     "date": "2026-10-31",
     "method": "Built-in image_gen imagegen",
-    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "authorization": "Owner authorized direct continued story artwork and explicitly requested commits, pushes, publication and iPhone installs.",
     "originals": "output/imagegen/john-complete/",
     "assets": {
       "The First Disciples and the Wedding at Cana": {
@@ -3495,6 +3495,237 @@
         "alt": "Jesus prepares fish and bread as fishermen come ashore beside the lake.",
         "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only breakfast at Tiberias: Jesus tends a small charcoal fire with fish and bread on the pebbled lakeshore; Peter and several fishermen arrive from a wooden boat pulling a net, pale misty morning, calm blue lake, no other scenes. Narrative basis: Jesus appears to seven disciples after a night of fishing, eats with them, and asks Peter three times whether he loves him.",
         "original": "output/imagegen/john-complete/breakfast-by-the-sea-of-tiberias.png"
+      }
+    ]
+  },
+  "acts": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner authorized direct continued story artwork and explicitly requested commits, pushes, publication and iPhone installs.",
+    "originals": "output/imagegen/acts-complete/",
+    "assets": {
+      "The Ascension and the Replacement of Judas": {
+        "src": "/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp",
+        "alt": "The apostles watch lots fall into a clay bowl in a cool-lit upper room.",
+        "width": 1200,
+        "height": 675
+      },
+      "Pentecost": {
+        "src": "/assets/story-pentecost-v1.webp",
+        "alt": "Peter addresses a colorful gathering in a Jerusalem courtyard after rain.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Lame Man Healed and Arrest of Peter and John": {
+        "src": "/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+        "alt": "Peter helps a man rise beside the temple gate while John watches.",
+        "width": 1200,
+        "height": 675
+      },
+      "Ananias and Sapphira": {
+        "src": "/assets/story-ananias-and-sapphira-v1.webp",
+        "alt": "Ananias places a pouch of coins before Peter in a meeting room.",
+        "width": 1200,
+        "height": 675
+      },
+      "Stephen": {
+        "src": "/assets/story-stephen-v1.webp",
+        "alt": "Stephen addresses a council in a grey stone chamber beneath rainy daylight.",
+        "width": 1200,
+        "height": 675
+      },
+      "Philip and the Ethiopian": {
+        "src": "/assets/story-philip-and-the-ethiopian-v1.webp",
+        "alt": "Philip and an Ethiopian official study a scroll in a chariot beside the road.",
+        "width": 1200,
+        "height": 675
+      },
+      "Saul's Conversion": {
+        "src": "/assets/story-saul-s-conversion-v1.webp",
+        "alt": "Ananias rests a hand on Saul’s shoulder in a cool-lit Damascus room.",
+        "width": 1200,
+        "height": 675
+      },
+      "Peter, Cornelius and the Gentiles": {
+        "src": "/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+        "alt": "Peter speaks with Cornelius and his household in a coastal courtyard.",
+        "width": 1200,
+        "height": 675
+      },
+      "Peter's Escape and Herod's Death": {
+        "src": "/assets/story-peter-s-escape-and-herod-s-death-v1.webp",
+        "alt": "Peter follows a messenger through an open prison gate before dawn.",
+        "width": 1200,
+        "height": 675
+      },
+      "Paul's First Journey": {
+        "src": "/assets/story-paul-s-first-journey-v1.webp",
+        "alt": "Paul and Barnabas meet villagers beside a green hillside road near Antioch.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Jerusalem Council": {
+        "src": "/assets/story-the-jerusalem-council-v1.webp",
+        "alt": "A meeting listens to James while a scribe prepares a letter at a low table.",
+        "width": 1200,
+        "height": 675
+      },
+      "Paul in Philippi": {
+        "src": "/assets/story-paul-in-philippi-v1.webp",
+        "alt": "Lydia speaks with Paul among women gathered beside a river outside Philippi.",
+        "width": 1200,
+        "height": 675
+      },
+      "Thessalonica, Athens and Corinth": {
+        "src": "/assets/story-thessalonica-athens-and-corinth-v1.webp",
+        "alt": "Paul addresses listeners on a rocky ridge above ancient Athens.",
+        "width": 1200,
+        "height": 675
+      },
+      "Ephesus": {
+        "src": "/assets/story-ephesus-v1.webp",
+        "alt": "Silversmiths discuss small silver temple models in a cool-lit Ephesus workshop.",
+        "width": 1200,
+        "height": 675
+      },
+      "Paul Arrested in Jerusalem": {
+        "src": "/assets/story-paul-arrested-in-jerusalem-v1.webp",
+        "alt": "Paul addresses a crowd from stone steps with Roman guards nearby.",
+        "width": 1200,
+        "height": 675
+      },
+      "Paul Before Felix, Festus and Agrippa": {
+        "src": "/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+        "alt": "Paul speaks before a seated governor and king in a stone hearing hall.",
+        "width": 1200,
+        "height": 675
+      },
+      "Shipwreck and Rome": {
+        "src": "/assets/story-shipwreck-and-rome-v1.webp",
+        "alt": "Paul and fellow survivors gather near a fire as islanders bring cloaks on Malta.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "The Ascension and the Replacement of Judas",
+        "alt": "The apostles watch lots fall into a clay bowl in a cool-lit upper room.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. \nColor and lighting: preserve distinct local colors with neutral or cool white balance. Avoid a uniform sepia, amber, brown or yellow color grade. Include clear blues, greens, reds or purples appropriate to each scene, and varied scenery, framing, weather and time of day. One continuous scene only.\n When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. ONLY the casting of lots: overhead oblique wide composition in a white-plastered Jerusalem upper room with indigo woven curtains and cool daylight. Several apostles with varied brown skin and natural hair sit around a low table on forest-green, deep red and blue cushions, Peter casts two small lots into a clay bowl. Fresh white linen, blue-grey shadows, saturated but natural fabric colors, no golden light, no sepia or amber color grading. No Jesus figure or ascension. Narrative basis: Jesus is taken up after promising the Holy Spirit. The apostles choose Matthias by lot to replace Judas.",
+        "original": "output/imagegen/acts-complete/the-ascension-and-the-replacement-of-judas.png"
+      },
+      {
+        "index": 1,
+        "title": "Pentecost",
+        "alt": "Peter addresses a colorful gathering in a Jerusalem courtyard after rain.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. \nColor and lighting: preserve distinct local colors with neutral or cool white balance. Avoid a uniform sepia, amber, brown or yellow color grade. Include clear blues, greens, reds or purples appropriate to each scene, and varied scenery, framing, weather and time of day. One continuous scene only.\n When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. ONLY Peter's public speech: very wide view across a Jerusalem courtyard after spring rain; wet pale grey paving, cobalt-blue sky with white clouds and bright green potted foliage. A gathering in varied indigo, muted crimson, purple, green and white linen and wool clothing listens to Peter, an older curly grey-haired bearded man on a low step. Neutral clear daylight, natural brown skin, no yellow filter, no sepia, no amber haze. No Jesus figure, halos or fire. Narrative basis: The Spirit comes on the believers, who speak in other languages. Peter preaches, about three thousand are baptized, and the community shares its goods.",
+        "original": "output/imagegen/acts-complete/pentecost.png"
+      },
+      {
+        "index": 2,
+        "title": "The Lame Man Healed and Arrest of Peter and John",
+        "alt": "Peter helps a man rise beside the temple gate while John watches.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single moment outside a richly carved temple gate: a man rises to his feet holding Peter’s hand, John stands beside them, other visitors watch with surprise; warm reflected morning light on stone, dignified fully clothed human subjects, no other scenes. Narrative basis: Peter and John heal a lame man at the temple gate. They are arrested, speak boldly before the council, and the believers pray for courage.",
+        "original": "output/imagegen/acts-complete/the-lame-man-healed-and-arrest-of-peter-and-john.png"
+      },
+      {
+        "index": 3,
+        "title": "Ananias and Sapphira",
+        "alt": "Ananias places a pouch of coins before Peter in a meeting room.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single quiet moment before the confrontation: Ananias places a small cloth pouch of coins before Peter in a modest meeting room; other adults seated nearby listen seriously. Cool window light, no deaths, bodies, supernatural effects or other scenes. Narrative basis: The believers share property, but Ananias and Sapphira lie about the price of a field and both die.",
+        "original": "output/imagegen/acts-complete/ananias-and-sapphira.png"
+      },
+      {
+        "index": 4,
+        "title": "Stephen",
+        "alt": "Stephen addresses a council in a grey stone chamber beneath rainy daylight.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. \nColor and lighting: preserve distinct local colors with neutral or cool white balance. Avoid a uniform sepia, amber, brown or yellow color grade. Include clear blues, greens, reds or purples appropriate to each scene, and varied scenery, framing, weather and time of day. One continuous scene only.\n When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. ONLY Stephen addressing the council: a cool pale-grey stone chamber in soft overcast daylight with no golden lamps. Stephen stands at the left in a deep green mantle over white linen, council sits on low seats in indigo, burgundy, plum and white wool clothing. High windows reveal rain and blue-grey clouds. Wide side-on composition, thoughtful respectful faces, varied brown skin. No glowing figure, violence, death, sepia or amber grade. Narrative basis: Seven men are chosen to serve the widows. Stephen is accused of blasphemy, gives a speech recounting Israel's history, and is stoned.",
+        "original": "output/imagegen/acts-complete/stephen.png"
+      },
+      {
+        "index": 5,
+        "title": "Philip and the Ethiopian",
+        "alt": "Philip and an Ethiopian official study a scroll in a chariot beside the road.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single scene on a green-edged road south of Jerusalem in clear late morning: Philip sits alongside a dignified dark-skinned Ethiopian court official in an ancient wooden chariot stopped by a pool; they study an open parchment scroll together, a driver and horses wait. The official has short natural tightly curled hair and finely woven clothing. No legible writing or other scenes. Narrative basis: Persecution scatters the church. Philip preaches in Samaria and explains Isaiah to an Ethiopian official, whom he baptizes.",
+        "original": "output/imagegen/acts-complete/philip-and-the-ethiopian.png"
+      },
+      {
+        "index": 6,
+        "title": "Saul's Conversion",
+        "alt": "Ananias rests a hand on Saul’s shoulder in a cool-lit Damascus room.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. \nColor and lighting: preserve distinct local colors with neutral or cool white balance. Avoid a uniform sepia, amber, brown or yellow color grade. Include clear blues, greens, reds or purples appropriate to each scene, and varied scenery, framing, weather and time of day. One continuous scene only.\n When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. ONLY Ananias visiting Saul: quiet Damascus courtyard room with white lime-plaster, bright blue-green glazed ceramic bowl, dark indigo woven curtain, leafy green vine outside. Saul with close-cropped curly hair and short beard sits in a muted burgundy tunic; an older Ananias in moss-green rests one hand on his shoulder. Cool north-window daylight, deep blue shadows, authentic medium-to-deep brown skin. No Jesus figure, warm color grade, sepia, amber or gold tint. Narrative basis: Saul, traveling to Damascus to arrest believers, is struck blind by a light from heaven. Ananias restores his sight, and Saul begins preaching Jesus.",
+        "original": "output/imagegen/acts-complete/saul-s-conversion.png"
+      },
+      {
+        "index": 7,
+        "title": "Peter, Cornelius and the Gentiles",
+        "alt": "Peter speaks with Cornelius and his household in a coastal courtyard.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single scene: Peter speaks inside Cornelius’s Caesarea courtyard home to a gathered household, including the Roman centurion in a simple off-duty tunic with a wool cloak, varied family members sitting and listening. Coastal daylight, no vision animals, glow or other scene. Narrative basis: Peter has a vision of animals unclean under ritual rules. He is sent to the centurion Cornelius, an army officer. The Spirit falls on the Gentile, or non-Jewish, household, and the Jerusalem church accepts it.",
+        "original": "output/imagegen/acts-complete/peter-cornelius-and-the-gentiles.png"
+      },
+      {
+        "index": 8,
+        "title": "Peter's Escape and Herod's Death",
+        "alt": "Peter follows a messenger through an open prison gate before dawn.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single prison corridor before dawn: Peter follows a plain white-clothed messenger through an open iron-bound wooden gate; guards asleep at a distance, practical stone vault, cool outside light and an almost spent oil lamp. No wings, glow, Herod or other scenes. Narrative basis: Herod kills James and imprisons Peter, whom an angel frees. Later the people acclaim Herod’s speech as the voice of a god; he is struck by an angel because he does not give God the glory, and dies.",
+        "original": "output/imagegen/acts-complete/peter-s-escape-and-herod-s-death.png"
+      },
+      {
+        "index": 9,
+        "title": "Paul's First Journey",
+        "alt": "Paul and Barnabas meet villagers beside a green hillside road near Antioch.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. \nColor and lighting: preserve distinct local colors with neutral or cool white balance. Avoid a uniform sepia, amber, brown or yellow color grade. Include clear blues, greens, reds or purples appropriate to each scene, and varied scenery, framing, weather and time of day. One continuous scene only.\n When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. ONLY Paul and Barnabas traveling near Pisidian Antioch: very wide hillside road through vividly green spring grass and red poppies, blue mountains and crisp white clouds beyond. Two travelers walk with linen bundles, Paul has close-cropped receding curly hair and short beard in a muted crimson mantle, Barnabas older and grey-bearded in deep blue. Local villagers in purple and white pause by a pale stone wall to speak. Natural neutral midday light, no Jesus figure, golden haze or sepia grade. Narrative basis: Barnabas and Saul are sent out from Antioch. They preach in Cyprus, Pisidian Antioch and Lystra, where Paul is stoned, and return to appoint elders.",
+        "original": "output/imagegen/acts-complete/paul-s-first-journey.png"
+      },
+      {
+        "index": 10,
+        "title": "The Jerusalem Council",
+        "alt": "A meeting listens to James while a scribe prepares a letter at a low table.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single Jerusalem meeting room in daylight: apostles and elders sit in an open circle listening to James while a scribe at a low table prepares a parchment letter. Serious respectful discussion among diverse brown-skinned Jewish adults, no legible writing, no other scenes. Narrative basis: The apostles and elders meet to decide whether Gentile believers must be circumcised. They send a letter asking only a few things of them.",
+        "original": "output/imagegen/acts-complete/the-jerusalem-council.png"
+      },
+      {
+        "index": 11,
+        "title": "Paul in Philippi",
+        "alt": "Lydia speaks with Paul among women gathered beside a river outside Philippi.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single riverside scene outside Philippi: Lydia, a dignified adult woman in a muted purple wool mantle, speaks with Paul among other women beside clear flowing water, willow shade and green banks, soft morning light. No prison or other scenes. Narrative basis: Timothy joins Paul, who is called to Macedonia. In Philippi Lydia believes, and Paul and Silas are imprisoned. An earthquake opens the prison doors, the jailer is baptized, and the magistrates order their release the next day.",
+        "original": "output/imagegen/acts-complete/paul-in-philippi.png"
+      },
+      {
+        "index": 12,
+        "title": "Thessalonica, Athens and Corinth",
+        "alt": "Paul addresses listeners on a rocky ridge above ancient Athens.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single scene in Athens: Paul speaks to listeners on a rocky ridge near the Areopagus, varied ancient Mediterranean adults in practical Greek and Roman clothing, a restrained classical city and temple in background, clear cool afternoon light. No other cities or narrative scenes. Narrative basis: Paul preaches in Thessalonica and Berea, speaks to the Areopagus in Athens, and stays in Corinth for eighteen months.",
+        "original": "output/imagegen/acts-complete/thessalonica-athens-and-corinth.png"
+      },
+      {
+        "index": 13,
+        "title": "Ephesus",
+        "alt": "Silversmiths discuss small silver temple models in a cool-lit Ephesus workshop.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. \nColor and lighting: preserve distinct local colors with neutral or cool white balance. Avoid a uniform sepia, amber, brown or yellow color grade. Include clear blues, greens, reds or purples appropriate to each scene, and varied scenery, framing, weather and time of day. One continuous scene only.\n When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. ONLY silversmiths in their Ephesus workshop: cool silver-blue reflected skylight in a white-plaster room. Bright metallic silver miniature temple models on a blue-green textile workbench, blue ceramic water vessel, smith wears a dark red wool tunic and brown work apron, colleagues wear moss-green and indigo. Side-on composition shows hands and tools, thoughtful dignified adults with varied brown skin. Green courtyard vines beyond, no golden light, sepia, amber haze, inscriptions or other scenes. Narrative basis: Paul teaches in Ephesus for about two years. A riot led by silversmiths follows, and he later raises Eutychus at Troas and bids the Ephesian elders farewell.",
+        "original": "output/imagegen/acts-complete/ephesus.png"
+      },
+      {
+        "index": 14,
+        "title": "Paul Arrested in Jerusalem",
+        "alt": "Paul addresses a crowd from stone steps with Roman guards nearby.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single moment on Jerusalem stone steps: Paul speaks with an open hand toward a listening crowd while Roman soldiers stand a short distance behind him, respectful realistic faces, no violence, blades or injuries. Bright neutral daylight, no other scenes. Narrative basis: Paul goes to Jerusalem, is seized in the temple, addresses the crowd, and is brought before the council. A plot against him leads to transfer to Caesarea.",
+        "original": "output/imagegen/acts-complete/paul-arrested-in-jerusalem.png"
+      },
+      {
+        "index": 15,
+        "title": "Paul Before Felix, Festus and Agrippa",
+        "alt": "Paul speaks before a seated governor and king in a stone hearing hall.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single official hearing in Caesarea: Paul stands in a plain tunic before Agrippa and Festus seated on a modest raised platform with court attendants; stone hall, blue coastal daylight, dignified neutral portrayals, no inscriptions or other scenes. Narrative basis: Paul defends himself before Felix, Festus and King Agrippa, and appeals to Caesar.",
+        "original": "output/imagegen/acts-complete/paul-before-felix-festus-and-agrippa.png"
+      },
+      {
+        "index": 16,
+        "title": "Shipwreck and Rome",
+        "alt": "Paul and fellow survivors gather near a fire as islanders bring cloaks on Malta.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Acts. Single moment on Malta after shipwreck: Paul and fellow survivors, fully clothed, gather driftwood beside a small fire on a stony shore; islanders welcome them with cloaks, broken wooden hull offshore under clearing grey rain clouds. No casualties, snakes, Rome scene or other scenes. Narrative basis: Paul sails for Rome, survives a storm and shipwreck at Malta, and arrives to preach under house arrest.",
+        "original": "output/imagegen/acts-complete/shipwreck-and-rome.png"
       }
     ]
   }

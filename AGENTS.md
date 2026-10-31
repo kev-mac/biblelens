@@ -25,3 +25,5 @@ Prophecies and Method & Sources are deferred as Explore gallery cards. Keep Meth
 - Scripture text and quoted source titles are exempt in both tiers. Plain equivalents: "the old Greek translation" before "the Septuagint"; "the Hebrew text" before "WLC"; "ancient copies" before "manuscripts/witnesses". Full source names belong in Sources.
 - Keep each record's scholarly limits, but say them plainly. Never add claims, motives or certainty the record doesn't state.
 - Run `npm run check:readability` after content changes.
+
+Story artwork uses varied lighting, scenery, composition and time of day. Preserve distinct natural colors, including blues, greens, reds and purples; avoid a repeated sepia or amber color grade. Keep approved artwork unless Kevin requests a replacement.
