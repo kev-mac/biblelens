@@ -3125,3 +3125,10 @@ html body.lens-app #lensInspector .ux-verse-actions button{width:100%;min-width:
 html body.lens-app #lensInspector .lens-evidence>details>summary{text-decoration:none}
 /* Keep the active dot close to desktop navigation content. */
 @media(min-width:768px){html body.lens-app #lensMasthead .lens-primary a[aria-current=page]::after{bottom:calc(50% - 15px)}}
+/* The same imagined scene accompanies its Story card and Read heading. */
+html body.lens-app .story-illustration{display:block;width:100%;margin:4px 0 16px;padding:0}
+html body.lens-app .story-illustration img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:var(--lens-surface)}
+html body.lens-app .story-illustration figcaption{display:block;margin:6px 0 0;font:400 .7rem/1.4 var(--ui-font);color:var(--lens-muted);text-align:right}
+html body.lens-app #chapter-text .story-illustration-reader{max-width:860px;margin:0 auto 24px}
+html body.lens-app #chapter-text .reader-event-title:has(+.story-illustration){margin-bottom:16px}
+html body.lens-app #chapter-text .chapter-subtitle:has(+.story-illustration){margin-bottom:16px}

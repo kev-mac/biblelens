@@ -68,6 +68,10 @@ for(const name of ['beginnings-landscape.svg','beginnings-landscape.provenance.j
 for(const name of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+\.webp$/.test(name)))assets['/assets/'+name]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src/assets/'+name).toString('base64')};
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
 const uxRead=name=>JSON.parse(releaseContent(name));
+const storyImages=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
+for(const art of Object.values(storyImages))assets[art.src]={type:'image/jpeg',encoding:'base64',body:fs.readFileSync('src'+art.src).toString('base64')};
+assets['/stories.js'].body=assets['/stories.js'].body.replace('/*__STORY_IMAGES__*/{}',JSON.stringify(storyImages));
+
 const uxEvidence=uxRead('data/evidence.json');
 const comparisonTopics=uxRead('data/comparison-topics.json');
 assets['/comparison-topics.json']={type:'application/json; charset=utf-8',body:JSON.stringify(comparisonTopics)};

@@ -1,5 +1,11 @@
 'use strict';
 // Book-wide narratives are separate from verse-aligned evidence classifications.
+const STORY_IMAGES=/*__STORY_IMAGES__*/{};
+function storyIllustration(title,placement='summary'){
+ const art=STORY_IMAGES[title];if(!art)return '';
+ return `<figure class="story-illustration story-illustration-${placement}"><img src="${esc(art.src)}" alt="${esc(art.alt)}" width="${art.width}" height="${art.height}" loading="${placement==='reader'?'eager':'lazy'}" decoding="async"><figcaption>${esc(art.caption)}</figcaption></figure>`;
+}
+
 let storiesActive=false,storiesRequest=null,storiesGeneration=0,storiesCatalog=null;
 function storiesFilterButton(){return '';}
 let storiesBook='',storiesTheme='',storiesSearch='',storiesPage=0;
@@ -28,7 +34,7 @@ function storyCard(story, pivot=false){
  const candidates=[ranked.slice(0,2).map(label).join(' · ')+(ranked.length>2?` · +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:''),ranked.slice(0,1).map(label).join('')+(ranked.length>1?` · +${ranked.slice(1).reduce((n,[count])=>n+count,0)} more`:'')];
  const meta=parts.length>2?ranked.slice(0,2).map(label).join(' • ')+` • +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:fullMeta;
  const context=reference?` data-story-book="${reference.book}" data-story-chapter="${reference.chapter}" data-story-verse="${reference.verse}" data-story-end-chapter="${reference.endChapter}" data-story-end-verse="${reference.endVerse}"`:'';
- return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(passagePillText(story.passages?.length?story.passages:[story.passage]))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title.replace(/\bCommandments\b/g,'Laws'))}</h${pivot?3:2}><div class="story-summary">${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div>${story.passages?.length>1?`<details class="story-passages"><summary>All passages</summary>${story.passages.map(ref=>`<button type="button" data-story-passage="${esc(ref)}">${esc(passagePillText([ref]))}</button>`).join('')}</details>`:''}<div class="story-footer">${meta?`<span class="story-linked-meta" data-meta-options="${esc(JSON.stringify(candidates))}" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story →</button></div></article>`;
+ return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(passagePillText(story.passages?.length?story.passages:[story.passage]))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title.replace(/\bCommandments\b/g,'Laws'))}</h${pivot?3:2}><div class="story-summary">${storyIllustration(story.title)}${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div>${story.passages?.length>1?`<details class="story-passages"><summary>All passages</summary>${story.passages.map(ref=>`<button type="button" data-story-passage="${esc(ref)}">${esc(passagePillText([ref]))}</button>`).join('')}</details>`:''}<div class="story-footer">${meta?`<span class="story-linked-meta" data-meta-options="${esc(JSON.stringify(candidates))}" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story →</button></div></article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
