@@ -1151,5 +1151,609 @@
         "original": "output/imagegen/ruth-complete/boaz-redeems-and-marries-ruth.png"
       }
     ]
+  },
+  "1_samuel": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/1-samuel-complete/",
+    "assets": {
+      "Hannah and the Birth of Samuel": {
+        "src": "/assets/story-hannah-and-the-birth-of-samuel-v1.webp",
+        "alt": "Hannah brings young Samuel to the elderly priest Eli at a sanctuary doorway.",
+        "width": 1200,
+        "height": 675
+      },
+      "Eli's Sons and Samuel's Call": {
+        "src": "/assets/story-eli-s-sons-and-samuel-s-call-v1.webp",
+        "alt": "Samuel sits awake on a woven mat beside a small lamp while Eli rests nearby.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Ark Captured and Returned": {
+        "src": "/assets/story-the-ark-captured-and-returned-v1.webp",
+        "alt": "Two cows draw a wooden cart carrying a chest toward people in barley fields.",
+        "width": 1200,
+        "height": 675
+      },
+      "Samuel Judges Israel": {
+        "src": "/assets/story-samuel-judges-israel-v1.webp",
+        "alt": "Samuel addresses gathered families beside a standing stone as clouds clear.",
+        "width": 1200,
+        "height": 675
+      },
+      "Israel Demands a King": {
+        "src": "/assets/story-israel-demands-a-king-v1.webp",
+        "alt": "Village elders speak with Samuel in a shaded stone courtyard.",
+        "width": 1200,
+        "height": 675
+      },
+      "Saul Rejected": {
+        "src": "/assets/story-saul-rejected-v1.webp",
+        "alt": "Saul reaches toward Samuel’s torn cloak as the two men stand apart.",
+        "width": 1200,
+        "height": 675
+      },
+      "David Anointed": {
+        "src": "/assets/story-david-anointed-v1.webp",
+        "alt": "Samuel anoints young David while Jesse and his sons look on.",
+        "width": 1200,
+        "height": 675
+      },
+      "David and Goliath": {
+        "src": "/assets/story-david-and-goliath-v1.webp",
+        "alt": "David gathers smooth stones by a stream as an armored man waits across the valley.",
+        "width": 1200,
+        "height": 675
+      },
+      "Saul's Jealousy and David's Flight": {
+        "src": "/assets/story-saul-s-jealousy-and-david-s-flight-v1.webp",
+        "alt": "Jonathan gives David a folded robe and belt in a quiet field.",
+        "width": 1200,
+        "height": 675
+      },
+      "David in the Wilderness": {
+        "src": "/assets/story-david-in-the-wilderness-v1.webp",
+        "alt": "Abigail speaks with David beside donkeys carrying baskets of food.",
+        "width": 1200,
+        "height": 675
+      },
+      "Saul and the Medium at Endor; Saul's Death": {
+        "src": "/assets/story-saul-and-the-medium-at-endor-saul-s-death-v1.webp",
+        "alt": "Saul and two companions consult an older woman in a lamplit room.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "title": "Hannah and the Birth of Samuel",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest mudbrick and rough stone, believable ancient woven linen/wool. Do not introduce Moses or later classical architecture. Fine painterly brush texture. 1 Samuel 1–2: adult brown-skinned Hannah with dark natural curls beneath a muted teal linen shawl gently brings her fully clothed young son Samuel to the elderly priest Eli at Shiloh's sanctuary doorway. Eli has deep brown skin and a gray curly beard, simple cream linen. Hannah's expression tender and resolute, Samuel safe beside her. Quiet shaded morning, cream plaster, soft green leaves and cool pearl light, intimate triangular group, no modern christening costume.",
+        "alt": "Hannah brings young Samuel to the elderly priest Eli at a sanctuary doorway.",
+        "original": "output/imagegen/1-samuel-complete/hannah-and-the-birth-of-samuel.png"
+      },
+      {
+        "title": "Eli's Sons and Samuel's Call",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest mudbrick and rough stone, believable ancient woven linen/wool. Do not introduce Moses or later classical architecture. Fine painterly brush texture. 1 Samuel 3: young brown-skinned Samuel with short dark curls rises awake from a simple woven sleeping mat in a modest sanctuary side room, listening intently. Elderly Eli rests safely on another mat farther back, covered by linen. Small earthen oil lamp, rough plaster, cloth curtain, no visible god, ghost, halo or magical writing. Cool deep-blue night shadow with restrained warm lamp light, low intimate perspective.",
+        "alt": "Samuel sits awake on a woven mat beside a small lamp while Eli rests nearby.",
+        "original": "output/imagegen/1-samuel-complete/eli-s-sons-and-samuel-s-call.png"
+      },
+      {
+        "title": "The Ark Captured and Returned",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest mudbrick and rough stone, believable ancient woven linen/wool. Do not introduce Moses or later classical architecture. Fine painterly brush texture. 1 Samuel 6: two healthy cows pull a plain wooden cart carrying a closed rectangular sacred chest toward the barley fields of Beth-shemesh. Brown-skinned harvest workers pause and look toward it from a respectful distance. Modest rough timber, no modern wheel hubs, no uncovered sacred contents or modern farm tools. Fresh green margins and pale barley, clear silvery late-morning light, low diagonal road framing. No plague, bodies or battle.",
+        "alt": "Two cows draw a wooden cart carrying a chest toward people in barley fields.",
+        "original": "output/imagegen/1-samuel-complete/the-ark-captured-and-returned.png"
+      },
+      {
+        "title": "Samuel Judges Israel",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest mudbrick and rough stone, believable ancient woven linen/wool. Do not introduce Moses or later classical architecture. Fine painterly brush texture. 1 Samuel 7: elderly Samuel, brown skin, silver natural curls and gray beard in simple linen and muted charcoal mantle, stands beside an uninscribed upright Ebenezer stone addressing families gathered near Mizpah. No battle shown. A storm clears beyond a green ridge, cool white shafts through blue-gray cloud, wet gray stone and ivory linen, medium-wide assembly grounded in a modest ancient setting, no golden sunset.",
+        "alt": "Samuel addresses gathered families beside a standing stone as clouds clear.",
+        "original": "output/imagegen/1-samuel-complete/samuel-judges-israel.png"
+      },
+      {
+        "title": "Israel Demands a King",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest mudbrick and rough stone, believable ancient woven linen/wool. Do not introduce Moses or later classical architecture. Fine painterly brush texture. 1 Samuel 8–12: older Samuel listens soberly as a group of village elders ask for a king in a shaded stone courtyard. One elder speaks with open hand, others lean in thoughtfully; ordinary families wait farther back. Plain woven garments, brown skin and varied natural curls, no crowned king in this opening scene. Close lateral deliberation, crisp white noon outside with deep cool blue shade, muted olive and cream, no modern scroll document or magical figure.",
+        "alt": "Village elders speak with Samuel in a shaded stone courtyard.",
+        "original": "output/imagegen/1-samuel-complete/israel-demands-a-king.png"
+      },
+      {
+        "title": "Saul Rejected",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, fine painterly brushwork, modest stone/mudbrick and woven linen/wool. Samuel elderly with deep brown skin, gray curls and beard, charcoal mantle. Saul tall brown-skinned adult with natural dark curls, thick beard and muted burgundy mantle. David brown-skinned, natural tight dark curls, youthful and simply clothed before kingship. No European faces or medieval armor. 1 Samuel 15: old Samuel and King Saul stand apart near a rough stone offering place, Saul reaches toward the edge of Samuel's charcoal mantle and its hem is torn. A few sheep safe in distant background, no sacrifices or killing. Samuel grave and resolute, Saul troubled, equally dignified, no exaggerated villain face. Stark windy overcast afternoon, pale gray rock and dark burgundy fabric, close side-on separation.",
+        "alt": "Saul reaches toward Samuel’s torn cloak as the two men stand apart.",
+        "original": "output/imagegen/1-samuel-complete/saul-rejected.png"
+      },
+      {
+        "title": "David Anointed",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, fine painterly brushwork, modest stone/mudbrick and woven linen/wool. Samuel elderly with deep brown skin, gray curls and beard, charcoal mantle. Saul tall brown-skinned adult with natural dark curls, thick beard and muted burgundy mantle. David brown-skinned, natural tight dark curls, youthful and simply clothed before kingship. No European faces or medieval armor. 1 Samuel 16: elderly Samuel pours a small amount of oil from a plain horn onto the head of youthful David, fully clothed in a simple shepherd's linen tunic, while Jesse and older brothers look on in a modest Bethlehem courtyard. David a brown-skinned adolescent with short tight curls and no beard, humble attentive expression, no crown or armor. Soft dappled late-morning white light, olive leaves, warm-gray stone, muted blue shadows and cream, intimate group.",
+        "alt": "Samuel anoints young David while Jesse and his sons look on.",
+        "original": "output/imagegen/1-samuel-complete/david-anointed.png"
+      },
+      {
+        "title": "David and Goliath",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, fine painterly brushwork, modest stone/mudbrick and woven linen/wool. Samuel elderly with deep brown skin, gray curls and beard, charcoal mantle. Saul tall brown-skinned adult with natural dark curls, thick beard and muted burgundy mantle. David brown-skinned, natural tight dark curls, youthful and simply clothed before kingship. No European faces or medieval armor. 1 Samuel 17: youthful fully clothed brown-skinned David crouches at a shallow stream selecting smooth stones, a simple leather sling and woven shepherd's pouch in his hand. Far beyond across the valley stands Goliath, a tall but human-proportioned brown-skinned adult in restrained ancient bronze helmet and scale armor with lowered spear, not a fantasy giant. No impact, combat, beheading, blood or bodies. Strong low stream foreground, hard clear noon, slate-blue water and pale rock, sober resolve.",
+        "alt": "David gathers smooth stones by a stream as an armored man waits across the valley.",
+        "original": "output/imagegen/1-samuel-complete/david-and-goliath.png"
+      },
+      {
+        "title": "Saul's Jealousy and David's Flight",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, fine painterly brushwork, modest stone/mudbrick and woven linen/wool. Samuel elderly with deep brown skin, gray curls and beard, charcoal mantle. Saul tall brown-skinned adult with natural dark curls, thick beard and muted burgundy mantle. David brown-skinned, natural tight dark curls, youthful and simply clothed before kingship. No European faces or medieval armor. 1 Samuel 18–21: choose Jonathan and David's covenant friendship, two young adult brown-skinned men with natural dark curls stand in a quiet green field. Jonathan, in a fine but simple dark-blue mantle, gives his folded outer robe and belt to David in plain shepherd's linen, no embrace as romantic spectacle, no crown or weapon raised. Intimate side-on exchange, cool misty morning, fresh green and silver light, a tiny stone settlement far off. No Saul attacking anyone.",
+        "alt": "Jonathan gives David a folded robe and belt in a quiet field.",
+        "original": "output/imagegen/1-samuel-complete/saul-s-jealousy-and-david-s-flight.png"
+      },
+      {
+        "title": "David in the Wilderness",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, fine painterly brushwork, modest stone/mudbrick and woven linen/wool. Samuel elderly with deep brown skin, gray curls and beard, charcoal mantle. Saul tall brown-skinned adult with natural dark curls, thick beard and muted burgundy mantle. David brown-skinned, natural tight dark curls, youthful and simply clothed before kingship. No European faces or medieval armor. 1 Samuel 25: choose Abigail's intervention, a dignified brown-skinned adult woman with natural dark curls under a muted plum linen headwrap stands beside laden donkeys and baskets of bread and dried fruit, speaking firmly and calmly to adult David in plain travel clothing and muted blue mantle. David listens with a lowered open hand, followers stay distant with weapons sheathed. Rocky green ravine in cool deep shade, silver-white afternoon light at opening, no violence, subservient sexual pose or modern food.",
+        "alt": "Abigail speaks with David beside donkeys carrying baskets of food.",
+        "original": "output/imagegen/1-samuel-complete/david-in-the-wilderness.png"
+      },
+      {
+        "title": "Saul and the Medium at Endor; Saul's Death",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, fine painterly brushwork, modest stone/mudbrick and woven linen/wool. Samuel elderly with deep brown skin, gray curls and beard, charcoal mantle. Saul tall brown-skinned adult with natural dark curls, thick beard and muted burgundy mantle. David brown-skinned, natural tight dark curls, youthful and simply clothed before kingship. No European faces or medieval armor. 1 Samuel 28: choose Saul's nighttime consultation before the later death. Disguised brown-skinned Saul in plain travel cloak sits anxiously in a modest stone room opposite an older brown-skinned woman with natural gray-streaked curls under a headwrap. She gestures soberly while two companions wait near doorway. No ghost, occult symbols, crystal ball, fantasy witch costume, violence or body. Small clay oil lamp, deep cool blue night at doorway, charcoal interior and muted brown textiles, intimate restrained council.",
+        "alt": "Saul and two companions consult an older woman in a lamplit room.",
+        "original": "output/imagegen/1-samuel-complete/saul-and-the-medium-at-endor-saul-s-death.png"
+      }
+    ]
+  },
+  "2_samuel": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/2-samuel-complete/",
+    "assets": {
+      "David Becomes King": {
+        "src": "/assets/story-david-becomes-king-v1.webp",
+        "alt": "Elders gather around David as one pours oil onto his head.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jerusalem and the Ark": {
+        "src": "/assets/story-jerusalem-and-the-ark-v1.webp",
+        "alt": "David moves before priests carrying a covered chest as people watch near a city gate.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Davidic Covenant": {
+        "src": "/assets/story-the-davidic-covenant-v1.webp",
+        "alt": "Nathan speaks with David in a cedar-paneled room.",
+        "width": 1200,
+        "height": 675
+      },
+      "Davidic Covenant": {
+        "src": "/assets/story-davidic-covenant-v1.webp",
+        "alt": "David sits quietly before a linen sanctuary curtain beside a small lamp.",
+        "width": 1200,
+        "height": 675
+      },
+      "David and Mephibosheth": {
+        "src": "/assets/story-david-and-mephibosheth-v1.webp",
+        "alt": "David welcomes Mephibosheth at a low table with bread and fruit.",
+        "width": 1200,
+        "height": 675
+      },
+      "David, Bathsheba and Uriah": {
+        "src": "/assets/story-david-bathsheba-and-uriah-v1.webp",
+        "alt": "Nathan addresses David, who listens with his crown set aside.",
+        "width": 1200,
+        "height": 675
+      },
+      "Amnon, Tamar and Absalom": {
+        "src": "/assets/story-amnon-tamar-and-absalom-v1.webp",
+        "alt": "Tamar sits in a shaded doorway as Absalom offers her a place to stay.",
+        "width": 1200,
+        "height": 675
+      },
+      "Absalom's Rebellion": {
+        "src": "/assets/story-absalom-s-rebellion-v1.webp",
+        "alt": "David and companions walk uphill away from Jerusalem beneath gray skies.",
+        "width": 1200,
+        "height": 675
+      },
+      "Sheba's Revolt and the Gibeonites": {
+        "src": "/assets/story-sheba-s-revolt-and-the-gibeonites-v1.webp",
+        "alt": "A woman speaks from a city wall to Joab and waiting men below.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Exploits of David's Mighty Men": {
+        "src": "/assets/story-the-exploits-of-david-s-mighty-men-v1.webp",
+        "alt": "David pours water onto the ground before three waiting companions.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Census and the Plague": {
+        "src": "/assets/story-the-census-and-the-plague-v1.webp",
+        "alt": "David offers a pouch to Araunah beside a stone threshing floor and oxen.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "title": "David Becomes King",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest royal stone-and-cedar interiors, no classical columns, medieval castles or European regalia. David is brown-skinned adult with natural tight dark curls and a short curly beard, muted blue woven mantle over linen, small plain gold circlet when needed. Fine painterly brushwork. 2 Samuel 1–5: elders anoint adult David at Hebron, one older brown-skinned man gently tips a small plain oil flask toward David's bowed head as representatives gather around. David fully clothed in linen and a muted blue mantle, no elaborate throne or triumphal battle. Close quiet circle, silver overcast morning in gray limestone courtyard, muted cream, indigo and olive, no golden sunset.",
+        "alt": "Elders gather around David as one pours oil onto his head.",
+        "original": "output/imagegen/2-samuel-complete/david-becomes-king.png"
+      },
+      {
+        "title": "Jerusalem and the Ark",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest royal stone-and-cedar interiors, no classical columns, medieval castles or European regalia. David is brown-skinned adult with natural tight dark curls and a short curly beard, muted blue woven mantle over linen, small plain gold circlet when needed. Fine painterly brushwork. 2 Samuel 6: select the later joyful procession entering Jerusalem. Linen-clothed priests carry a fully covered sacred chest on wooden poles, adult David dances with restrained natural movement before it in a fully covering long linen garment. Families play small frame drums and watch, all dignified brown-skinned people. No exposed body, touching ark, corpse or modern parade. White late-morning sun and deep stone-gate shade, muted jewel cloth, wide lively diagonal procession.",
+        "alt": "David moves before priests carrying a covered chest as people watch near a city gate.",
+        "original": "output/imagegen/2-samuel-complete/jerusalem-and-the-ark.png"
+      },
+      {
+        "title": "The Davidic Covenant",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest royal stone-and-cedar interiors, no classical columns, medieval castles or European regalia. David is brown-skinned adult with natural tight dark curls and a short curly beard, muted blue woven mantle over linen, small plain gold circlet when needed. Fine painterly brushwork. 2 Samuel 7: prophet Nathan, brown-skinned mature man with dark curls streaked gray and a plain charcoal wool mantle, speaks thoughtfully to seated David in a modest cedar-paneled royal room. David listens with open empty hands, a small plain circlet laid aside on a low wooden table. Human conversation, no deity or literal future family tree. Cool white daylight through small high opening, blue-gray and warm cedar wood, intimate side view.",
+        "alt": "Nathan speaks with David in a cedar-paneled room.",
+        "original": "output/imagegen/2-samuel-complete/the-davidic-covenant.png"
+      },
+      {
+        "title": "Davidic Covenant",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest royal stone-and-cedar interiors, no classical columns, medieval castles or European regalia. David is brown-skinned adult with natural tight dark curls and a short curly beard, muted blue woven mantle over linen, small plain gold circlet when needed. Fine painterly brushwork. 2 Samuel 7:8–17: a distinct contemplative scene from the same promise: adult David sits alone before the closed linen sanctuary curtain, head bowed slightly, empty open hands resting on his knees. Plain robe, no harp or throne or visible god. No written promise, literal family tree or heavenly crown. Deep indigo evening, small clay lamp, soft reflected cream curtain light and muted blue mantle, low quiet framing centered on listening posture.",
+        "alt": "David sits quietly before a linen sanctuary curtain beside a small lamp.",
+        "original": "output/imagegen/2-samuel-complete/davidic-covenant.png"
+      },
+      {
+        "title": "David and Mephibosheth",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant, modest royal stone-and-cedar interiors, no classical columns, medieval castles or European regalia. David is brown-skinned adult with natural tight dark curls and a short curly beard, muted blue woven mantle over linen, small plain gold circlet when needed. Fine painterly brushwork. 2 Samuel 9: adult Mephibosheth, brown-skinned man with natural short dark curls and beard, sits comfortably at David's low royal dining table. A simple wooden walking staff rests beside his seat, showing mobility support without exposing or emphasizing his feet. David welcomes him with a calm open hand. Earthen dishes, flatbread and fruit, no luxury medieval banquet or invented wheelchair. Soft white window light in shaded cedar-and-stone room, cream, muted olive and blue, equal eye-level framing.",
+        "alt": "David welcomes Mephibosheth at a low table with bread and fruit.",
+        "original": "output/imagegen/2-samuel-complete/david-and-mephibosheth.png"
+      },
+      {
+        "title": "David, Bathsheba and Uriah",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant; fine cinematic painterly brushwork. David brown-skinned mature adult, natural tight dark curls and beard, muted blue mantle and plain linen, small simple gold circlet where royal. Modest stone-and-cedar settings, no medieval or classical architecture. 2 Samuel 12: choose Nathan confronting David with his parable after the wrongdoing. Nathan, mature brown-skinned man in plain charcoal wool, addresses seated David with a steady open hand; David looks stricken and thoughtful, plain circlet laid aside. Two human figures in a shaded cedar room, no Bathsheba bathing, sexual scene, dying child, battle or invented literal lamb. Hard narrow white daylight from doorway, deep cool gray shadow, restrained blue and cream, intimate side confrontation.",
+        "alt": "Nathan addresses David, who listens with his crown set aside.",
+        "original": "output/imagegen/2-samuel-complete/david-bathsheba-and-uriah.png"
+      },
+      {
+        "title": "Amnon, Tamar and Absalom",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant; fine cinematic painterly brushwork. David brown-skinned mature adult, natural tight dark curls and beard, muted blue mantle and plain linen, small simple gold circlet where royal. Modest stone-and-cedar settings, no medieval or classical architecture. 2 Samuel 13: choose Tamar being received in her brother Absalom's home after the assault. Fully clothed adult brown-skinned Tamar with natural dark curls under a loose muted blue wrap sits near a doorway with a torn outer mantle and a small trace of ash on her covered hair; Absalom, brown-skinned adult with long natural dark curls, offers her a place to stay with a sober open-hand gesture. Respect her dignity and privacy, restrained grief not spectacle. No attacker, assault, bruises, exposed body or revenge. Cool rain-gray daylight in simple stone courtyard, muted indigo and charcoal, intimate equal-eye-level view.",
+        "alt": "Tamar sits in a shaded doorway as Absalom offers her a place to stay.",
+        "original": "output/imagegen/2-samuel-complete/amnon-tamar-and-absalom.png"
+      },
+      {
+        "title": "Absalom's Rebellion",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant; fine cinematic painterly brushwork. David brown-skinned mature adult, natural tight dark curls and beard, muted blue mantle and plain linen, small simple gold circlet where royal. Modest stone-and-cedar settings, no medieval or classical architecture. 2 Samuel 15: David leaves Jerusalem on foot with a small group of loyal companions, head covered by plain linen, bare feet stepping on a rocky path up the Mount of Olives. Dignified sorrow, no humiliation spectacle, no violence or Absalom's death. Brown-skinned figures and varied natural curls, modest city walls distant behind. Cold overcast light after rain, gray rock, silver olive leaves and muted blue cloth, a diagonal uphill procession with David clearly focal.",
+        "alt": "David and companions walk uphill away from Jerusalem beneath gray skies.",
+        "original": "output/imagegen/2-samuel-complete/absalom-s-rebellion.png"
+      },
+      {
+        "title": "Sheba's Revolt and the Gibeonites",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant; fine cinematic painterly brushwork. David brown-skinned mature adult, natural tight dark curls and beard, muted blue mantle and plain linen, small simple gold circlet where royal. Modest stone-and-cedar settings, no medieval or classical architecture. 2 Samuel 20: select the wise woman of Abel speaking from the top of a modest stone-and-mudbrick city wall to Joab below. She is a dignified middle-aged brown-skinned woman with natural curls beneath a cream headwrap, plain muted plum mantle, calm authoritative open hand. Joab and a few men listen with weapons lowered, no severed head, siege attack, executions or famine bodies. Strong vertical conversational composition, clear cool morning, pale stone and muted green, no golden sunset.",
+        "alt": "A woman speaks from a city wall to Joab and waiting men below.",
+        "original": "output/imagegen/2-samuel-complete/sheba-s-revolt-and-the-gibeonites.png"
+      },
+      {
+        "title": "The Exploits of David's Mighty Men",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant; fine cinematic painterly brushwork. David brown-skinned mature adult, natural tight dark curls and beard, muted blue mantle and plain linen, small simple gold circlet where royal. Modest stone-and-cedar settings, no medieval or classical architecture. 2 Samuel 23: adult David pours clear water from a small clay cup onto the ground before three weary but uninjured brown-skinned warriors who have brought it from Bethlehem. He looks grave and grateful, they stand with weapons sheathed and respectful distance. Rocky cave refuge, no combat, cuts or blood. Tight focus on falling water and hands, cool cave shade with narrow white afternoon light, muted blue, gray and pale terra-cotta.",
+        "alt": "David pours water onto the ground before three waiting companions.",
+        "original": "output/imagegen/2-samuel-complete/the-exploits-of-david-s-mighty-men.png"
+      },
+      {
+        "title": "The Census and the Plague",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Early Iron Age Levant; fine cinematic painterly brushwork. David brown-skinned mature adult, natural tight dark curls and beard, muted blue mantle and plain linen, small simple gold circlet where royal. Modest stone-and-cedar settings, no medieval or classical architecture. 2 Samuel 24: choose David buying Araunah's threshing floor. Brown-skinned David in plain blue mantle offers a small cloth pouch of silver to brown-skinned Araunah beside a stone threshing circle, a simple wooden yoke and healthy oxen nearby. Both solemn and equally dignified. No plague symptoms, dead people, angel attacking or sacrifice. Broad open plateau with modest Jerusalem rooftops beyond, pearly overcast dawn, muted sage and silver-gray rock, medium-wide practical exchange.",
+        "alt": "David offers a pouch to Araunah beside a stone threshing floor and oxen.",
+        "original": "output/imagegen/2-samuel-complete/the-census-and-the-plague.png"
+      }
+    ]
+  },
+  "1_kings": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/1-kings-complete/",
+    "assets": {
+      "Solomon Becomes King": {
+        "src": "/assets/story-solomon-becomes-king-v1.webp",
+        "alt": "A priest anoints Solomon beside a spring as Nathan and Bathsheba watch.",
+        "width": 1200,
+        "height": 675
+      },
+      "Solomon's Wisdom": {
+        "src": "/assets/story-solomon-s-wisdom-v1.webp",
+        "alt": "Two women stand before Solomon while one safely holds a wrapped baby.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Temple Built": {
+        "src": "/assets/story-the-temple-built-v1.webp",
+        "alt": "Craftspeople fit cedar beams and stone blocks at a temple construction site.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Queen of Sheba and Solomon's Decline": {
+        "src": "/assets/story-the-queen-of-sheba-and-solomon-s-decline-v1.webp",
+        "alt": "The queen of Sheba speaks with Solomon as attendants carry vessels and folded cloth.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Kingdom Divides": {
+        "src": "/assets/story-the-kingdom-divides-v1.webp",
+        "alt": "A young king and elders speak from opposite sides of a stone bench.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Man of God from Judah": {
+        "src": "/assets/story-the-man-of-god-from-judah-v1.webp",
+        "alt": "A prophet addresses Jeroboam beside a stone altar under gray skies.",
+        "width": 1200,
+        "height": 675
+      },
+      "Zimri's Coup and Omri's Rise": {
+        "src": "/assets/story-zimri-s-coup-and-omri-s-rise-v1.webp",
+        "alt": "Omri speaks with workers laying stone foundations on a green hill.",
+        "width": 1200,
+        "height": 675
+      },
+      "Elijah and the Drought": {
+        "src": "/assets/story-elijah-and-the-drought-v1.webp",
+        "alt": "Elijah rests beside a shaded brook as ravens approach with bread.",
+        "width": 1200,
+        "height": 675
+      },
+      "Elijah on Mount Carmel": {
+        "src": "/assets/story-elijah-on-mount-carmel-v1.webp",
+        "alt": "Elijah stands near a stone altar with fire and a water-filled trench.",
+        "width": 1200,
+        "height": 675
+      },
+      "Elijah at Horeb": {
+        "src": "/assets/story-elijah-at-horeb-v1.webp",
+        "alt": "Elijah covers his face with his cloak at the mouth of a mountain cave.",
+        "width": 1200,
+        "height": 675
+      },
+      "Naboth's Vineyard": {
+        "src": "/assets/story-naboth-s-vineyard-v1.webp",
+        "alt": "Elijah addresses Ahab among vineyard terraces and grapevines.",
+        "width": 1200,
+        "height": 675
+      },
+      "Ahab and Micaiah": {
+        "src": "/assets/story-ahab-and-micaiah-v1.webp",
+        "alt": "Micaiah speaks before two seated kings and their advisors.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "title": "Solomon Becomes King",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant; visible finely painted texture. Solomon brown-skinned young adult with short natural dark curls and trimmed curly beard, cream linen and muted deep teal royal mantle, simple gold circlet. Ancient cedar, stone and bronze; no European medieval or Greco-Roman architecture. 1 Kings, literary scene Solomon Becomes King. At Gihon a linen-clothed priest anoints young Solomon from a plain oil horn, Nathan and Bathsheba watching respectfully; a mule waits nearby. Joyful small gathering, no violence. Cool clear morning by a stone spring, gray rock and fresh green, close curved composition.",
+        "alt": "A priest anoints Solomon beside a spring as Nathan and Bathsheba watch.",
+        "original": "output/imagegen/1-kings-complete/solomon-becomes-king.png"
+      },
+      {
+        "title": "Solomon's Wisdom",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant; visible finely painted texture. Solomon brown-skinned young adult with short natural dark curls and trimmed curly beard, cream linen and muted deep teal royal mantle, simple gold circlet. Ancient cedar, stone and bronze; no European medieval or Greco-Roman architecture. 1 Kings, literary scene Solomon's Wisdom. Two fully clothed adult brown-skinned women stand before seated Solomon in a modest cedar court. One mother safely holds a living wrapped baby; Solomon raises an open hand to stop the dispute. No sword, threat to child, dead infant or stereotyped villain woman. Dignified anxiety and attention. Cool shaded noon with white doorway light, cream and muted teal.",
+        "alt": "Two women stand before Solomon while one safely holds a wrapped baby.",
+        "original": "output/imagegen/1-kings-complete/solomon-s-wisdom.png"
+      },
+      {
+        "title": "The Temple Built",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant; visible finely painted texture. Solomon brown-skinned young adult with short natural dark curls and trimmed curly beard, cream linen and muted deep teal royal mantle, simple gold circlet. Ancient cedar, stone and bronze; no European medieval or Greco-Roman architecture. 1 Kings, literary scene The Temple Built. Skilled brown-skinned stonemasons and carpenters fit cedar beams and shaped stones at Solomon's temple construction site. Modest early Levantine temple with rectangular walls and two plain bronze pillars, no gothic or classical building. Human craft foreground, ancient hand tools only. Bright pearl-white afternoon, pale stone, cedar and bronze reflections.",
+        "alt": "Craftspeople fit cedar beams and stone blocks at a temple construction site.",
+        "original": "output/imagegen/1-kings-complete/the-temple-built.png"
+      },
+      {
+        "title": "The Queen of Sheba and Solomon's Decline",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant; visible finely painted texture. Solomon brown-skinned young adult with short natural dark curls and trimmed curly beard, cream linen and muted deep teal royal mantle, simple gold circlet. Ancient cedar, stone and bronze; no European medieval or Greco-Roman architecture. 1 Kings, literary scene The Queen of Sheba and Solomon's Decline. Choose the queen's visit: a dignified Northeast African queen with deep brown skin and natural tightly curled hair beneath a simple fine woven headdress speaks thoughtfully with Solomon. Her attendants bring small bronze vessels and folded textiles, no exotic caricature or sexualization. Shaded cedar courtyard, cool reflected daylight, muted plum, teal and cream, intimate equal-level conversation.",
+        "alt": "The queen of Sheba speaks with Solomon as attendants carry vessels and folded cloth.",
+        "original": "output/imagegen/1-kings-complete/the-queen-of-sheba-and-solomon-s-decline.png"
+      },
+      {
+        "title": "The Kingdom Divides",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant; visible finely painted texture. Solomon brown-skinned young adult with short natural dark curls and trimmed curly beard, cream linen and muted deep teal royal mantle, simple gold circlet. Ancient cedar, stone and bronze; no European medieval or Greco-Roman architecture. 1 Kings, literary scene The Kingdom Divides. Rehoboam and village elders in a tense but dignified discussion at Shechem, two groups separated by a low stone bench. Brown-skinned adults in practical woven clothes; young king in muted burgundy, no enemy caricatures. Wide lateral divide, hard cool-white noon, gray stone courtyard with olive shade. No battle, maps, golden calf or modern flags.",
+        "alt": "A young king and elders speak from opposite sides of a stone bench.",
+        "original": "output/imagegen/1-kings-complete/the-kingdom-divides.png"
+      },
+      {
+        "title": "The Man of God from Judah",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant; visible finely painted texture. Solomon brown-skinned young adult with short natural dark curls and trimmed curly beard, cream linen and muted deep teal royal mantle, simple gold circlet. Ancient cedar, stone and bronze; no European medieval or Greco-Roman architecture. 1 Kings, literary scene The Man of God from Judah. At Bethel a brown-skinned prophet in rough charcoal mantle speaks toward Jeroboam beside a rough stone altar; king in simple muted burgundy robe with a restrained circlet, listening in alarm. No lion attack, sacrifice, corpses or divine body. Ominous storm-gray afternoon, drifting pale altar smoke, pale rock and dark clothing, low diagonal confrontation.",
+        "alt": "A prophet addresses Jeroboam beside a stone altar under gray skies.",
+        "original": "output/imagegen/1-kings-complete/the-man-of-god-from-judah.png"
+      },
+      {
+        "title": "Zimri's Coup and Omri's Rise",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, naturalistic painterly brushwork. Elijah a brown-skinned mature man with natural dark curls streaked gray and curly beard, rough dark camel-hair-like mantle and simple linen, no Moses. No medieval costume or Greco-Roman buildings. 1 Kings, literary scene Zimri's Coup and Omri's Rise. Choose Omri overseeing the founding of Samaria on a green hill after the struggle. Brown-skinned adult leader in plain travel clothes with muted burgundy mantle speaks with stoneworkers laying rough foundations, a few tents and carrying baskets. No massacre, siege flames, suicide or bodies. Clear cold morning, wet gray limestone and green hill, broad diagonal construction composition.",
+        "alt": "Omri speaks with workers laying stone foundations on a green hill.",
+        "original": "output/imagegen/1-kings-complete/zimri-s-coup-and-omri-s-rise.png"
+      },
+      {
+        "title": "Elijah and the Drought",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, naturalistic painterly brushwork. Elijah a brown-skinned mature man with natural dark curls streaked gray and curly beard, rough dark camel-hair-like mantle and simple linen, no Moses. No medieval costume or Greco-Roman buildings. 1 Kings, literary scene Elijah and the Drought. Elijah sits beside a small shaded brook in a narrow stony ravine while two ravens approach with small pieces of bread. Brown skin, natural curls, coarse dark mantle, plain clay cup nearby. Sparse dry land above contrasting with cool water, no dead child. Low intimate view, hard white noon outside and deep blue-green ravine shade, black feathers and silver reflections.",
+        "alt": "Elijah rests beside a shaded brook as ravens approach with bread.",
+        "original": "output/imagegen/1-kings-complete/elijah-and-the-drought.png"
+      },
+      {
+        "title": "Elijah on Mount Carmel",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, naturalistic painterly brushwork. Elijah a brown-skinned mature man with natural dark curls streaked gray and curly beard, rough dark camel-hair-like mantle and simple linen, no Moses. No medieval costume or Greco-Roman buildings. 1 Kings, literary scene Elijah on Mount Carmel. Elijah stands at a rough twelve-stone altar as a column of bright natural-looking fire consumes wood on it, a water-filled trench at its base. Distant onlookers safe well away, no visible animal remains, human harm or bodies. Storm-dark slate afternoon, white-gold flame and wet gray stones, wide dramatic ridge composition, no deity figure or magic symbols.",
+        "alt": "Elijah stands near a stone altar with fire and a water-filled trench.",
+        "original": "output/imagegen/1-kings-complete/elijah-on-mount-carmel.png"
+      },
+      {
+        "title": "Elijah at Horeb",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, naturalistic painterly brushwork. Elijah a brown-skinned mature man with natural dark curls streaked gray and curly beard, rough dark camel-hair-like mantle and simple linen, no Moses. No medieval costume or Greco-Roman buildings. 1 Kings, literary scene Elijah at Horeb. Elijah stands quietly at the mouth of a dark mountain cave, covering part of his face with the edge of his rough mantle, listening. One dignified brown-skinned human figure, no divine face, lightning, ghost or literal sound waves. Still cool pre-dawn, pale lavender horizon and pearl cloud, charcoal rock enclosure, close contemplative profile.",
+        "alt": "Elijah covers his face with his cloak at the mouth of a mountain cave.",
+        "original": "output/imagegen/1-kings-complete/elijah-at-horeb.png"
+      },
+      {
+        "title": "Naboth's Vineyard",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, naturalistic painterly brushwork. Elijah a brown-skinned mature man with natural dark curls streaked gray and curly beard, rough dark camel-hair-like mantle and simple linen, no Moses. No medieval costume or Greco-Roman buildings. 1 Kings, literary scene Naboth's Vineyard. Choose Elijah confronting Ahab in Naboth's vineyard after the wrongdoing. Two brown-skinned adult men stand among low stone terraces and grapevines: rough-cloaked Elijah speaks steadily, Ahab in muted royal burgundy listens gravely. No accusation trial, stoning or corpse. Cool overcast late afternoon, green leaves, gray limestone and plum grapes, intimate lateral confrontation.",
+        "alt": "Elijah addresses Ahab among vineyard terraces and grapevines.",
+        "original": "output/imagegen/1-kings-complete/naboth-s-vineyard.png"
+      },
+      {
+        "title": "Ahab and Micaiah",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, naturalistic painterly brushwork. Elijah a brown-skinned mature man with natural dark curls streaked gray and curly beard, rough dark camel-hair-like mantle and simple linen, no Moses. No medieval costume or Greco-Roman buildings. 1 Kings, literary scene Ahab and Micaiah. Micaiah, brown-skinned prophet in plain cream linen and charcoal mantle, speaks before seated kings Ahab and Jehoshaphat in a modest gateway court. Other advisors listen, no mocking faces. King robes burgundy and muted teal, simple circlets. Shade under wood canopy, cold reflected noon light, cream stone and restrained colors, medium-wide council, no battle or dying king.",
+        "alt": "Micaiah speaks before two seated kings and their advisors.",
+        "original": "output/imagegen/1-kings-complete/ahab-and-micaiah.png"
+      }
+    ]
+  },
+  "2_kings": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/2-kings-complete/",
+    "assets": {
+      "Elijah Taken Up": {
+        "src": "/assets/story-elijah-taken-up-v1.webp",
+        "alt": "Elisha holds a fallen cloak beside a river and looks toward a luminous whirlwind.",
+        "width": 1200,
+        "height": 675
+      },
+      "Elisha and Moab": {
+        "src": "/assets/story-elisha-and-moab-v1.webp",
+        "alt": "Elisha and travelers stand beside shallow channels filling with water.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Widow's Oil and the Shunammite's Son": {
+        "src": "/assets/story-the-widow-s-oil-and-the-shunammite-s-son-v1.webp",
+        "alt": "A woman pours oil into clay jars while two children help arrange the vessels.",
+        "width": 1200,
+        "height": 675
+      },
+      "Naaman Healed": {
+        "src": "/assets/story-naaman-healed-v1.webp",
+        "alt": "Naaman stands in shallow river water and looks at his hands as servants wait nearby.",
+        "width": 1200,
+        "height": 675
+      },
+      "Elisha and the Arameans": {
+        "src": "/assets/story-elisha-and-the-arameans-v1.webp",
+        "alt": "Elisha and a woodworker look toward an axe head floating beside the riverbank.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jehu's Revolt": {
+        "src": "/assets/story-jehu-s-revolt-v1.webp",
+        "alt": "A young messenger anoints Jehu in a small room while officers wait outside.",
+        "width": 1200,
+        "height": 675
+      },
+      "Athaliah and Joash": {
+        "src": "/assets/story-athaliah-and-joash-v1.webp",
+        "alt": "A priest crowns young Joash as adults stand beside him with a rolled scroll.",
+        "width": 1200,
+        "height": 675
+      },
+      "Elisha's Death and Israel's Victories": {
+        "src": "/assets/story-elisha-s-death-and-israel-s-victories-v1.webp",
+        "alt": "Elisha guides a king’s hands on a bow beside an open window.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Fall of Samaria": {
+        "src": "/assets/story-the-fall-of-samaria-v1.webp",
+        "alt": "Families carry their belongings away from a damaged city gate.",
+        "width": 1200,
+        "height": 675
+      },
+      "Hezekiah and Sennacherib": {
+        "src": "/assets/story-hezekiah-and-sennacherib-v1.webp",
+        "alt": "Hezekiah spreads a letter before a sanctuary curtain while Isaiah stands nearby.",
+        "width": 1200,
+        "height": 675
+      },
+      "Hezekiah's Illness and the Babylonian Envoys": {
+        "src": "/assets/story-hezekiah-s-illness-and-the-babylonian-envoys-v1.webp",
+        "alt": "Hezekiah and Isaiah watch a shadow falling across plain stone steps.",
+        "width": 1200,
+        "height": 675
+      },
+      "Manasseh, Amon and Josiah": {
+        "src": "/assets/story-manasseh-amon-and-josiah-v1.webp",
+        "alt": "Hilkiah lifts an old scroll from a wooden chest as workers and a young king watch.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Fall of Jerusalem": {
+        "src": "/assets/story-the-fall-of-jerusalem-v1.webp",
+        "alt": "Families leave a broken city gateway as smoke rises behind them.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "title": "Elijah Taken Up",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, finely painted naturalistic texture, ancient stone, linen, wood and clay. Elisha is a brown-skinned mature man with a balding head, short curly dark beard, simple linen and muted brown wool mantle. No medieval or modern objects. 2 Kings, literary scene Elijah Taken Up. Elisha stands on a stony riverbank holding Elijah's fallen rough dark mantle and looks toward a distant luminous whirlwind lifting into a storm-blue sky. A small fully clothed human silhouette high within the cloud suggests Elijah, no visible deity or corpse. White swirling cloud with restrained fire-colored accents, cool gray water and reeds, wide awe-filled composition, no fantasy winged horses as foreground spectacle.",
+        "alt": "Elisha holds a fallen cloak beside a river and looks toward a luminous whirlwind.",
+        "original": "output/imagegen/2-kings-complete/elijah-taken-up.png"
+      },
+      {
+        "title": "Elisha and Moab",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, finely painted naturalistic texture, ancient stone, linen, wood and clay. Elisha is a brown-skinned mature man with a balding head, short curly dark beard, simple linen and muted brown wool mantle. No medieval or modern objects. 2 Kings, literary scene Elisha and Moab. Choose the water arrival: Elisha and tired but uninjured soldiers in simple ancient travel clothing stand beside freshly dug shallow channels filling with water on a dry plain. Three distant plain tents suggest allied camp. No battle, child sacrifice, swords raised or bodies. Pale rose first light with mostly cool pearl-gray shadows, water reflecting the sky, low channel-leading composition.",
+        "alt": "Elisha and travelers stand beside shallow channels filling with water.",
+        "original": "output/imagegen/2-kings-complete/elisha-and-moab.png"
+      },
+      {
+        "title": "The Widow's Oil and the Shunammite's Son",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, finely painted naturalistic texture, ancient stone, linen, wood and clay. Elisha is a brown-skinned mature man with a balding head, short curly dark beard, simple linen and muted brown wool mantle. No medieval or modern objects. 2 Kings, literary scene The Widow's Oil and the Shunammite's Son. Choose the widow's oil: a brown-skinned adult woman with natural curls under a muted teal headcloth carefully pours oil from a small clay jug into one of several plain earthen vessels, her two safely clothed sons help arrange empty jars. Modest stone room, Elisha at doorway, human wonder without exaggerated spectacle. Cool narrow white window light and warm clay, intimate hands-and-vessels composition, no dead child.",
+        "alt": "A woman pours oil into clay jars while two children help arrange the vessels.",
+        "original": "output/imagegen/2-kings-complete/the-widow-s-oil-and-the-shunammite-s-son.png"
+      },
+      {
+        "title": "Naaman Healed",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, finely painted naturalistic texture, ancient stone, linen, wood and clay. Elisha is a brown-skinned mature man with a balding head, short curly dark beard, simple linen and muted brown wool mantle. No medieval or modern objects. 2 Kings, literary scene Naaman Healed. Brown-skinned adult Naaman stands in shallow Jordan water fully covered by a plain wet linen tunic, looking gratefully at his healthy hands after washing; servants wait with his folded clothing on the reed-lined bank. No exposed torso, wounds, disease lesions or modern medical objects. Clear cool morning, silver-green reeds and pale blue water, gentle ripples, eye-level medium-wide scene.",
+        "alt": "Naaman stands in shallow river water and looks at his hands as servants wait nearby.",
+        "original": "output/imagegen/2-kings-complete/naaman-healed.png"
+      },
+      {
+        "title": "Elisha and the Arameans",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, finely painted naturalistic texture, ancient stone, linen, wood and clay. Elisha is a brown-skinned mature man with a balding head, short curly dark beard, simple linen and muted brown wool mantle. No medieval or modern objects. 2 Kings, literary scene Elisha and the Arameans. Choose the floating axe head: Elisha points toward a small dark iron axe head floating at the surface of a calm stream, a young brown-skinned woodworker kneels surprised beside a plain wooden axe handle. Other helpers and a few cut logs on bank, no modern tool heads. Intimate low river-level view, soft cool shade under green leaves, silver water and brown wood, no battle or sick people.",
+        "alt": "Elisha and a woodworker look toward an axe head floating beside the riverbank.",
+        "original": "output/imagegen/2-kings-complete/elisha-and-the-arameans.png"
+      },
+      {
+        "title": "Jehu's Revolt",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, finely painted naturalistic texture, ancient stone, linen, wood and clay. Elisha is a brown-skinned mature man with a balding head, short curly dark beard, simple linen and muted brown wool mantle. No medieval or modern objects. 2 Kings, literary scene Jehu's Revolt. Choose Jehu's private anointing before later violence: a young brown-skinned messenger in plain linen pours oil from a small flask onto Jehu's bowed head in a simple side room while a few officers wait outside. Jehu adult with dark natural curls, short beard, plain soldier's wool tunic, no crown yet. Deep blue-gray interior, narrow white noon doorway light, muted clay and cream, no killings, fallen woman or triumphant gore.",
+        "alt": "A young messenger anoints Jehu in a small room while officers wait outside.",
+        "original": "output/imagegen/2-kings-complete/jehu-s-revolt.png"
+      },
+      {
+        "title": "Athaliah and Joash",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, finely painted naturalistic texture, ancient stone, linen, wood and clay. Elisha is a brown-skinned mature man with a balding head, short curly dark beard, simple linen and muted brown wool mantle. No medieval or modern objects. 2 Kings, literary scene Athaliah and Joash. Choose young Joash's coronation: a priest gently places a simple small gold circlet on the head of a fully clothed brown-skinned boy, about seven, in a cream tunic. Adults stand protectively nearby, rolled scroll held by another priest. Safe dignified child, no weapons threatening him or violent queen. Temple courtyard, clear cool white morning and soft linen shade, gray stone and muted blue, intimate group.",
+        "alt": "A priest crowns young Joash as adults stand beside him with a rolled scroll.",
+        "original": "output/imagegen/2-kings-complete/athaliah-and-joash.png"
+      },
+      {
+        "title": "Elisha's Death and Israel's Victories",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant or Mesopotamian conquest settings as specified; finely painted naturalistic texture. Brown-skinned Israelites, Arameans, Assyrians and Babylonians all shown with equal dignity and natural dark curled hair. Ancient objects only, no modern or medieval symbols. 2 Kings, literary scene Elisha's Death and Israel's Victories. Choose the arrow sign before Elisha's death: elderly balding brown-skinned Elisha, gray curly beard, rests safely propped on a plain linen-covered couch, guiding King Joash's hands as the king holds a simple wooden bow toward an open window. No arrow hitting anyone, bones, corpse or battle. Quiet gray-white morning light, muted blue and cream, close hands-and-window composition.",
+        "alt": "Elisha guides a king’s hands on a bow beside an open window.",
+        "original": "output/imagegen/2-kings-complete/elisha-s-death-and-israel-s-victories.png"
+      },
+      {
+        "title": "The Fall of Samaria",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant or Mesopotamian conquest settings as specified; finely painted naturalistic texture. Brown-skinned Israelites, Arameans, Assyrians and Babylonians all shown with equal dignity and natural dark curled hair. Ancient objects only, no modern or medieval symbols. 2 Kings, literary scene The Fall of Samaria. Brown-skinned families leave a battered ancient city gate carrying cloth bundles, an adult safely holds a child's hand, elders walk with staffs. Distant Assyrian guards in restrained period garments and conical helmets maintain distance, no cruelty caricature, bonds, attack or bodies. Somber cloudy silver light, gray stone rubble and muted blue-gray textiles, low human-centered diagonal procession.",
+        "alt": "Families carry their belongings away from a damaged city gate.",
+        "original": "output/imagegen/2-kings-complete/the-fall-of-samaria.png"
+      },
+      {
+        "title": "Hezekiah and Sennacherib",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant or Mesopotamian conquest settings as specified; finely painted naturalistic texture. Brown-skinned Israelites, Arameans, Assyrians and Babylonians all shown with equal dignity and natural dark curled hair. Ancient objects only, no modern or medieval symbols. 2 Kings, literary scene Hezekiah and Sennacherib. Choose Hezekiah spreading an unrolled letter before the sanctuary, king brown-skinned adult in plain linen and muted teal robe, head bowed in thought, hands resting beside parchment with surface turned away and no legible writing. Isaiah, brown-skinned elder in charcoal cloak, stands nearby. Cool blue evening, small clay lamp and pale curtain, intimate solemn interior. No battle, dead soldiers or deity.",
+        "alt": "Hezekiah spreads a letter before a sanctuary curtain while Isaiah stands nearby.",
+        "original": "output/imagegen/2-kings-complete/hezekiah-and-sennacherib.png"
+      },
+      {
+        "title": "Hezekiah's Illness and the Babylonian Envoys",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant or Mesopotamian conquest settings as specified; finely painted naturalistic texture. Brown-skinned Israelites, Arameans, Assyrians and Babylonians all shown with equal dignity and natural dark curled hair. Ancient objects only, no modern or medieval symbols. 2 Kings, literary scene Hezekiah's Illness and the Babylonian Envoys. Choose the shadow sign: recovered Hezekiah and Isaiah stand beside plain sunlit stone steps, watching a sharply defined shadow on them. Brown skin, curls, simple royal circlet, plain woven robes. No clock, numbered sundial, futuristic graphics or medical spectacle. Strong clear late-morning white light and deep cyan-gray step shadows, geometric stair composition with thoughtful human faces.",
+        "alt": "Hezekiah and Isaiah watch a shadow falling across plain stone steps.",
+        "original": "output/imagegen/2-kings-complete/hezekiah-s-illness-and-the-babylonian-envoys.png"
+      },
+      {
+        "title": "Manasseh, Amon and Josiah",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant or Mesopotamian conquest settings as specified; finely painted naturalistic texture. Brown-skinned Israelites, Arameans, Assyrians and Babylonians all shown with equal dignity and natural dark curled hair. Ancient objects only, no modern or medieval symbols. 2 Kings, literary scene Manasseh, Amon and Josiah. Choose finding the law scroll: brown-skinned priest Hilkiah gently lifts an old rolled parchment from a simple wooden storage chest during temple repair; another worker pauses beside stacked timber and stone. Josiah, young brown-skinned king in muted plum robe, listens as a scribe prepares to read. No readable writing, idols being smashed, violence or modern book. Pale window shafts in cool dusty interior, cream, charcoal and plum.",
+        "alt": "Hilkiah lifts an old scroll from a wooden chest as workers and a young king watch.",
+        "original": "output/imagegen/2-kings-complete/manasseh-amon-and-josiah.png"
+      },
+      {
+        "title": "The Fall of Jerusalem",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant or Mesopotamian conquest settings as specified; finely painted naturalistic texture. Brown-skinned Israelites, Arameans, Assyrians and Babylonians all shown with equal dignity and natural dark curled hair. Ancient objects only, no modern or medieval symbols. 2 Kings, literary scene The Fall of Jerusalem. Somber human-centered scene of brown-skinned Judean families with bundled belongings leaving a breached Jerusalem gateway, distant temple roof smoking under a gray sky. A parent carries a wrapped infant safely, elders help one another, Babylonian guards far away with lowered weapons, equally human. No wounds, bodies, cruelty, chains or glorified conquest. Cool smoky blue-gray daylight, pale ash and muted umber, broad procession with dignified foreground faces.",
+        "alt": "Families leave a broken city gateway as smoke rises behind them.",
+        "original": "output/imagegen/2-kings-complete/the-fall-of-jerusalem.png"
+      }
+    ]
   }
 }

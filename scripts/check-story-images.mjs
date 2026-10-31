@@ -5,7 +5,7 @@ import worker from '../dist/server/index.js';
 const get=path=>worker.fetch(new Request('https://biblelens.test'+path),{},{});
 const images=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
 const catalog=await(await get('/stories.json')).json();
-const illustratedBooks=['Genesis','Exodus','Leviticus','Numbers','Deuteronomy','Joshua','Judges','Ruth'];
+const illustratedBooks=['Genesis','Exodus','Leviticus','Numbers','Deuteronomy','Joshua','Judges','Ruth','1 Samuel','2 Samuel','1 Kings','2 Kings'];
 const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 assert.deepEqual(Object.keys(images),catalog.filter(group=>illustratedBooks.includes(group.book)).flatMap(group=>group.stories).map(story=>story.title));
 for(const [title,art]of Object.entries(images)){
