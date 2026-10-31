@@ -8,7 +8,7 @@ const catalog=await(await get('/stories.json')).json();
 assert.deepEqual(Object.keys(images),catalog.flatMap(group=>group.stories).slice(0,5).map(story=>story.title));
 for(const [title,art]of Object.entries(images)){
  assert.match(art.src,/^\/assets\/story-[a-z-]+-v2\.jpg$/);
- assert.equal(art.caption,'Imagined illustration');assert(art.alt.length>20);
+ assert(art.alt.length>20);
  const response=await get(art.src);assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),'image/jpeg');
  const bytes=Buffer.from(await response.arrayBuffer());assert(bytes.length<650000);assert.equal(bytes.readUInt16BE(0),0xffd8);
  assert.deepEqual(bytes,fs.readFileSync('src'+art.src));
@@ -22,7 +22,7 @@ for(const title of Object.keys(images)){
  const summary=context.storyIllustration(title),reader=context.storyIllustration(title,'reader');
  assert(summary.includes('loading="lazy"'));assert(reader.includes('loading="eager"'));
  assert(summary.includes(images[title].src));assert(reader.includes(images[title].src));
- assert(summary.includes('Imagined illustration'));
+ assert(!summary.includes('<figcaption>'));assert(!reader.includes('<figcaption>'));
 }
 assert.equal(context.storyIllustration('A story without artwork'),'');
 const starts=[[1,1,'The Creation'],[3,1,'The Fall of Man'],[4,1,'Cain and Abel'],[4,25,'The Line of Seth'],[6,9,'Noah and the Flood']];

@@ -3,7 +3,7 @@
 const STORY_IMAGES=/*__STORY_IMAGES__*/{};
 function storyIllustration(title,placement='summary'){
  const art=STORY_IMAGES[title];if(!art)return '';
- return `<figure class="story-illustration story-illustration-${placement}"><img src="${esc(art.src)}" alt="${esc(art.alt)}" width="${art.width}" height="${art.height}" loading="${placement==='reader'?'eager':'lazy'}" decoding="async"><figcaption>${esc(art.caption)}</figcaption></figure>`;
+ return `<figure class="story-illustration story-illustration-${placement}"><img src="${esc(art.src)}" alt="${esc(art.alt)}" width="${art.width}" height="${art.height}" loading="${placement==='reader'?'eager':'lazy'}" decoding="async"></figure>`;
 }
 
 let storiesActive=false,storiesRequest=null,storiesGeneration=0,storiesCatalog=null;
