@@ -1755,5 +1755,434 @@
         "original": "output/imagegen/2-kings-complete/the-fall-of-jerusalem.png"
       }
     ]
+  },
+  "1_chronicles": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/1-chronicles-complete/",
+    "assets": {
+      "The Death of Saul": {
+        "src": "/assets/story-the-death-of-saul-v1.webp",
+        "alt": "People mourn beneath a tamarisk tree beside plain memorial stones.",
+        "width": 1200,
+        "height": 675
+      },
+      "David Takes Jerusalem and Gathers His Warriors": {
+        "src": "/assets/story-david-takes-jerusalem-and-gathers-his-warriors-v1.webp",
+        "alt": "David speaks with companions in a stone courtyard.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Ark Brought to Jerusalem": {
+        "src": "/assets/story-the-ark-brought-to-jerusalem-v1.webp",
+        "alt": "Singers and musicians accompany priests carrying a covered chest toward a city gate.",
+        "width": 1200,
+        "height": 675
+      },
+      "God's Covenant with David and His Wars": {
+        "src": "/assets/story-god-s-covenant-with-david-and-his-wars-v1.webp",
+        "alt": "Nathan speaks with David outside a cedar residence.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Census and the Temple Site": {
+        "src": "/assets/story-the-census-and-the-temple-site-v1.webp",
+        "alt": "David and Solomon look over timber and stone beside workers.",
+        "width": 1200,
+        "height": 675
+      },
+      "David's Last Charge and Death": {
+        "src": "/assets/story-david-s-last-charge-and-death-v1.webp",
+        "alt": "An elderly David gives Solomon a rolled plan as elders bring materials.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "title": "The Death of Saul",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, ancient linen/wool, stone and cedar, no medieval or classical architecture. Fine painterly texture. David brown-skinned mature man with short tight natural curls and beard, muted blue mantle and simple gold circlet where royal. All scenes are literary interpretations of the supplied account. 1 Chronicles. Choose the mourning after Saul's death: men of Jabesh quietly gather beneath a tamarisk tree beside simple memorial stones, heads bowed. No corpse, body parts, violence or grave inscription. Cold violet dawn and wet gray stones. Narrative basis: Saul and his sons die on Mount Gilboa. The writer says Saul died for his unfaithfulness, including consulting a medium, someone who seeks contact with the dead.",
+        "alt": "People mourn beneath a tamarisk tree beside plain memorial stones.",
+        "original": "output/imagegen/1-chronicles-complete/the-death-of-saul.png",
+        "pre_revision_original": "/Users/kevin/.codex/generated_images/01a19106-7619-75f2-94fb-4952cf8ac576/exec-03c64e8c-0701-4e0b-9fa3-e29d0d7f36ea.png",
+        "revision_prompt": "Remove only the gold royal circlet from the bowed foreground mourner's hair. Replace it with matching natural dark curls and gray strands. He is an ordinary man mourning Saul, not a king. Preserve every other element exactly: all people, skin tones, clothes, tree, memorial stones, lighting and composition. No crown on any person, no lettering, signature or watermark. Wide 16:9."
+      },
+      {
+        "title": "David Takes Jerusalem and Gathers His Warriors",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, ancient linen/wool, stone and cedar, no medieval or classical architecture. Fine painterly texture. David brown-skinned mature man with short tight natural curls and beard, muted blue mantle and simple gold circlet where royal. All scenes are literary interpretations of the supplied account. 1 Chronicles. David listens to a varied group of brown-skinned warriors gathered in a modest Jerusalem stone courtyard, weapons sheathed. Sober camaraderie, no victory trophies or violence. Bright cool white morning, ivory and muted blue, close curved group. Narrative basis: All Israel anoints David at Hebron. He captures Jerusalem, and the lists name his mighty men and the troops who joined him.",
+        "alt": "David speaks with companions in a stone courtyard.",
+        "original": "output/imagegen/1-chronicles-complete/david-takes-jerusalem-and-gathers-his-warriors.png"
+      },
+      {
+        "title": "The Ark Brought to Jerusalem",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, ancient linen/wool, stone and cedar, no medieval or classical architecture. Fine painterly texture. David brown-skinned mature man with short tight natural curls and beard, muted blue mantle and simple gold circlet where royal. All scenes are literary interpretations of the supplied account. 1 Chronicles. Choose the appointed singers: brown-skinned Levite musicians with plain frame drums, wooden lyres and simple bronze cymbals walk beside priests carrying a covered sacred chest on poles toward a modest city gate. No ark touching or death. Cool pearl afternoon light, diagonal musical procession. Narrative basis: Uzzah dies when the ark is moved on a cart, and David leaves it with Obed-edom. He then brings it to Jerusalem with the Levites carrying it and appoints singers.",
+        "alt": "Singers and musicians accompany priests carrying a covered chest toward a city gate.",
+        "original": "output/imagegen/1-chronicles-complete/the-ark-brought-to-jerusalem.png"
+      },
+      {
+        "title": "God's Covenant with David and His Wars",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, ancient linen/wool, stone and cedar, no medieval or classical architecture. Fine painterly texture. David brown-skinned mature man with short tight natural curls and beard, muted blue mantle and simple gold circlet where royal. All scenes are literary interpretations of the supplied account. 1 Chronicles. Choose Nathan addressing David outside a simple cedar residence, both brown-skinned and thoughtfully conversing. Nathan charcoal cloak, David blue mantle, no battle, literal deity or celestial dynasty. Deep cool courtyard shade at noon and white doorway light. Narrative basis: Through Nathan God promises David a lasting dynasty. David wins wars against the Philistines, Moab, Aram and Ammon.",
+        "alt": "Nathan speaks with David outside a cedar residence.",
+        "original": "output/imagegen/1-chronicles-complete/god-s-covenant-with-david-and-his-wars.png"
+      },
+      {
+        "title": "The Census and the Temple Site",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, ancient linen/wool, stone and cedar, no medieval or classical architecture. Fine painterly texture. David brown-skinned mature man with short tight natural curls and beard, muted blue mantle and simple gold circlet where royal. All scenes are literary interpretations of the supplied account. 1 Chronicles. Choose gathering temple materials: David and young Solomon examine stacked cedar beams and rough shaped stones at Ornan's former threshing floor, craftspeople waiting nearby. No plague or angel threatening people. Cloudy silver morning and pale stone, broad craft-focused view. Narrative basis: Satan incites David to number Israel, and a plague follows. David buys Ornan's threshing floor and starts gathering materials for the temple, which Solomon will build.",
+        "alt": "David and Solomon look over timber and stone beside workers.",
+        "original": "output/imagegen/1-chronicles-complete/the-census-and-the-temple-site.png",
+        "pre_revision_original": "/Users/kevin/.codex/generated_images/01a19106-7619-75f2-94fb-4952cf8ac576/exec-7cacb460-426a-49cf-9324-19a6e14067a4.png",
+        "revision_prompt": "Remove only the small white signature-like mark in the extreme bottom-right corner, filling it with matching pale stone and ground texture. Preserve all other pixels and the painting's people, materials, hands, composition and light. No text, signature, logo or watermark anywhere. Wide 16:9."
+      },
+      {
+        "title": "David's Last Charge and Death",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Iron Age Levant, ancient linen/wool, stone and cedar, no medieval or classical architecture. Fine painterly texture. David brown-skinned mature man with short tight natural curls and beard, muted blue mantle and simple gold circlet where royal. All scenes are literary interpretations of the supplied account. 1 Chronicles. Choose old David's charge: elderly brown-skinned David with gray natural curls gives a rolled plan to adult Solomon while elders offer small bowls of metal and folded cloth for temple construction. No readable plans, deathbed or corpse. Soft cool interior light, blue and cream, intimate generational grouping. Narrative basis: David presents the temple plans to Solomon, the leaders give freely, and David prays. Solomon is crowned a second time, and David dies after a reign of forty years.",
+        "alt": "An elderly David gives Solomon a rolled plan as elders bring materials.",
+        "original": "output/imagegen/1-chronicles-complete/david-s-last-charge-and-death.png"
+      }
+    ]
+  },
+  "2_chronicles": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/2-chronicles-complete/",
+    "assets": {
+      "Solomon Builds the Temple": {
+        "src": "/assets/story-solomon-builds-the-temple-v1.webp",
+        "alt": "Priests carry a covered chest toward a temple doorway.",
+        "width": 1200,
+        "height": 675
+      },
+      "Solomon's Reign and the Queen of Sheba": {
+        "src": "/assets/story-solomon-s-reign-and-the-queen-of-sheba-v1.webp",
+        "alt": "The queen of Sheba examines bronze vessels as Solomon listens.",
+        "width": 1200,
+        "height": 675
+      },
+      "Rehoboam and the Division": {
+        "src": "/assets/story-rehoboam-and-the-division-v1.webp",
+        "alt": "Rehoboam listens to elders beside a low bench and an open chest.",
+        "width": 1200,
+        "height": 675
+      },
+      "Abijah and Asa": {
+        "src": "/assets/story-abijah-and-asa-v1.webp",
+        "alt": "A king and gathered elders stand with open hands beside a rolled scroll.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jehoshaphat": {
+        "src": "/assets/story-jehoshaphat-v1.webp",
+        "alt": "A teacher reads a scroll to families in a village courtyard.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jehoram, Ahaziah, Athaliah and Joash": {
+        "src": "/assets/story-jehoram-ahaziah-athaliah-and-joash-v1.webp",
+        "alt": "A young king and priest watch masons repair a temple wall.",
+        "width": 1200,
+        "height": 675
+      },
+      "Amaziah, Uzziah and Jotham": {
+        "src": "/assets/story-amaziah-uzziah-and-jotham-v1.webp",
+        "alt": "A king holding an incense bowl faces priests with raised open hands.",
+        "width": 1200,
+        "height": 675
+      },
+      "Ahaz and Hezekiah's Reforms": {
+        "src": "/assets/story-ahaz-and-hezekiah-s-reforms-v1.webp",
+        "alt": "People clean a temple courtyard and carry vessels through open doors.",
+        "width": 1200,
+        "height": 675
+      },
+      "Sennacherib's Invasion and Hezekiah's Pride": {
+        "src": "/assets/story-sennacherib-s-invasion-and-hezekiah-s-pride-v1.webp",
+        "alt": "Workers shape a stone water channel as Hezekiah watches the flow.",
+        "width": 1200,
+        "height": 675
+      },
+      "Manasseh's Repentance and Josiah's Reforms": {
+        "src": "/assets/story-manasseh-s-repentance-and-josiah-s-reforms-v1.webp",
+        "alt": "A man sits with open hands in a stone room lit by a narrow window.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Fall of Judah and Cyrus's Decree": {
+        "src": "/assets/story-the-fall-of-judah-and-cyrus-s-decree-v1.webp",
+        "alt": "A Persian ruler gives a sealed scroll to elders beside a tray of vessels.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "title": "Solomon Builds the Temple",
+        "alt": "Priests carry a covered chest toward a temple doorway.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Brown-skinned Levite priests carry a covered sacred chest into Solomon's newly built stone-and-cedar temple, two bronze pillars visible, modest rectangular Levantine design, no classical columns. Cool pearl morning with pale linen and bronze reflections, wide doorway framing. Narrative basis: Solomon asks for wisdom at Gibeon, builds the temple with Huram of Tyre's help, brings in the ark, and prays at the dedication as fire and glory fill the house.",
+        "index": 0,
+        "original": "output/imagegen/2-chronicles-complete/solomon-builds-the-temple.png"
+      },
+      {
+        "title": "Solomon's Reign and the Queen of Sheba",
+        "alt": "The queen of Sheba examines bronze vessels as Solomon listens.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. A dignified deep-brown-skinned Northeast African queen with natural tightly curled hair in a fine woven headdress examines skillfully made bronze vessels while Solomon listens to her questions. Fine muted plum and teal robes, cool shaded courtyard with patterned white daylight. Equal human stature, no exotic caricature. Narrative basis: Solomon builds cities, arranges temple worship, and receives the queen of Sheba and tribute before his death.",
+        "index": 1,
+        "original": "output/imagegen/2-chronicles-complete/solomon-s-reign-and-the-queen-of-sheba.png"
+      },
+      {
+        "title": "Rehoboam and the Division",
+        "alt": "Rehoboam listens to elders beside a low bench and an open chest.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Choose Rehoboam listening to an elder after the crisis, young brown-skinned king in muted burgundy seated on a low stone bench, older advisors face him gravely; modest Jerusalem courtyard with a partly emptied treasury chest. Cold overcast afternoon, pale stone and gray-blue shadows, no combat. Narrative basis: Rehoboam's harsh answer splits the kingdom. Shishak of Egypt attacks Jerusalem in Rehoboam's fifth year, and the king humbles himself.",
+        "index": 2,
+        "original": "output/imagegen/2-chronicles-complete/rehoboam-and-the-division.png"
+      },
+      {
+        "title": "Abijah and Asa",
+        "alt": "A king and gathered elders stand with open hands beside a rolled scroll.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Choose Asa and a gathered assembly renewing their agreement at Jerusalem, king and elders raise empty open hands while a plain rolled scroll rests on a low wooden table. Varied brown faces, linen and wool, no Cushite army caricature, combat or disease. Cool misty morning, cream and sage. Narrative basis: Abijah defeats Jeroboam, and Asa removes idols and defeats Zerah the Cushite. Late in life Asa relies on Aram and consults physicians rather than the LORD.",
+        "index": 3,
+        "original": "output/imagegen/2-chronicles-complete/abijah-and-asa.png"
+      },
+      {
+        "title": "Jehoshaphat",
+        "alt": "A teacher reads a scroll to families in a village courtyard.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Choose officials teaching the law in a village courtyard: a brown-skinned teacher reads from an unrolled scroll with its surface unreadable, families listen closely, modest stone homes and an olive tree. Dappled white noon, fresh green, cream and muted indigo, eye-level human scale. Narrative basis: Jehoshaphat sends officials to teach the law and allies with Ahab. He later faces a coalition of Moab and Ammon, and Judah sings as the enemies destroy one another.",
+        "index": 4,
+        "original": "output/imagegen/2-chronicles-complete/jehoshaphat.png"
+      },
+      {
+        "title": "Jehoram, Ahaziah, Athaliah and Joash",
+        "alt": "A young king and priest watch masons repair a temple wall.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Choose temple repairs under Joash: brown-skinned masons fit pale stone blocks while a young king and linen-clothed priest inspect the work, a simple lidded wooden collection chest nearby. No assassination, massacre or stoning. Bright cool late-morning light with gray stone and wood, craft-focused foreground. Narrative basis: Jehoram kills his brothers, and Athaliah seizes the throne until the priest Jehoiada crowns Joash. After Jehoiada's death Joash turns away and has Zechariah stoned.",
+        "index": 5,
+        "original": "output/imagegen/2-chronicles-complete/jehoram-ahaziah-athaliah-and-joash.png"
+      },
+      {
+        "title": "Amaziah, Uzziah and Jotham",
+        "alt": "A king holding an incense bowl faces priests with raised open hands.",
+        "index": 6,
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Choose Uzziah's incense confrontation before illness: a brown-skinned king with a small incense bowl stands facing linen-clothed priests who hold open hands asking him to stop. No skin lesions, aggression or magical beams. Cool dark temple interior, single pale shaft of light and muted purple cloth. Narrative basis: Amaziah defeats Edom but worships its gods. Uzziah prospers, then enters the temple to burn incense and is struck with a skin disease; Jotham rules faithfully.",
+        "original": "output/imagegen/2-chronicles-complete/amaziah-uzziah-and-jotham.png"
+      },
+      {
+        "title": "Ahaz and Hezekiah's Reforms",
+        "alt": "People clean a temple courtyard and carry vessels through open doors.",
+        "index": 7,
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Choose reopening and cleaning the temple: brown-skinned men and women sweep a stone courtyard and carry plain vessels through reopened cedar doors, Hezekiah in muted blue watches with linen-clothed priests. Clear white morning, fresh green sprigs and pale gray stone, human craft focus. Narrative basis: Ahaz sacrifices to foreign gods and closes the temple. Hezekiah reopens it, cleanses it, restores worship and calls all Israel to keep the Passover.",
+        "original": "output/imagegen/2-chronicles-complete/ahaz-and-hezekiah-s-reforms-clean.png",
+        "revisionPrompt": "Remove only the faint white symbol-like mark in the extreme top right sky. Preserve the full scene."
+      },
+      {
+        "title": "Sennacherib's Invasion and Hezekiah's Pride",
+        "alt": "Workers shape a stone water channel as Hezekiah watches the flow.",
+        "index": 8,
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Choose preparing the water supply: brown-skinned workers cut and fit a narrow stone water channel beneath Jerusalem while Hezekiah and an elder inspect the flow. Ancient iron hand tools, no modern pipes or machinery. Cool blue subterranean shadows, small clay lamps and silver moving water. Narrative basis: Hezekiah prepares Jerusalem's defenses and water supply, and Sennacherib's army is struck down. Hezekiah's later pride is humbled.",
+        "original": "output/imagegen/2-chronicles-complete/sennacherib-s-invasion-and-hezekiah-s-pride.png"
+      },
+      {
+        "title": "Manasseh's Repentance and Josiah's Reforms",
+        "alt": "A man sits with open hands in a stone room lit by a narrow window.",
+        "index": 9,
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Choose Manasseh's reflection in captivity: a brown-skinned adult man in a plain undyed woven robe sits safely in a simple stone room, hands open on knees, face turned toward narrow cool window light. No chains, threats, torture or divine figure. Quiet pearl-blue dawn, charcoal stone and cream linen. Narrative basis: Manasseh is taken captive to Babylon, humbles himself, and returns to remove idols. During Josiah’s reign Hilkiah finds the law book; Josiah renews the covenant, keeps a great Passover, and dies fighting Pharaoh Necho.",
+        "original": "output/imagegen/2-chronicles-complete/manasseh-s-repentance-and-josiah-s-reforms.png"
+      },
+      {
+        "title": "The Fall of Judah and Cyrus's Decree",
+        "alt": "A Persian ruler gives a sealed scroll to elders beside a tray of vessels.",
+        "index": 10,
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. 2 Chronicles. Choose Cyrus authorizing rebuilding: a dignified brown-skinned Persian ruler in practical long Achaemenid-style robe and soft headgear gives a rolled sealed parchment to Judean elders, a plain tray of returned temple vessels nearby. No readable script, elaborate fantasy crown or modern flags. Soft cloudy white courtyard light, indigo, cream and warm bronze. Narrative basis: Judah's last kings fall to Nebuchadnezzar, the temple is burned, and the land lies desolate seventy years. Cyrus of Persia then decrees that the temple be rebuilt.",
+        "original": "output/imagegen/2-chronicles-complete/the-fall-of-judah-and-cyrus-s-decree.png"
+      }
+    ]
+  },
+  "ezra": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/ezra-complete/",
+    "assets": {
+      "Cyrus's Decree and the Return": {
+        "src": "/assets/story-cyrus-s-decree-and-the-return-v1.webp",
+        "alt": "Families travel with bundled belongings and covered vessels on donkeys.",
+        "width": 1200,
+        "height": 675
+      },
+      "Rebuilding the Altar and Foundation": {
+        "src": "/assets/story-rebuilding-the-altar-and-foundation-v1.webp",
+        "alt": "People gather with mixed joy and tears as workers lay temple foundations.",
+        "width": 1200,
+        "height": 675
+      },
+      "Opposition and Delay": {
+        "src": "/assets/story-opposition-and-delay-v1.webp",
+        "alt": "Officials and builders meet beside an unfinished wall and a sealed letter.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Temple Completed": {
+        "src": "/assets/story-the-temple-completed-v1.webp",
+        "alt": "Priests, musicians and families gather before a completed temple.",
+        "width": 1200,
+        "height": 675
+      },
+      "Ezra Comes to Jerusalem": {
+        "src": "/assets/story-ezra-comes-to-jerusalem-v1.webp",
+        "alt": "Ezra leads travelers carrying scroll bundles beside a river.",
+        "width": 1200,
+        "height": 675
+      },
+      "Ezra and Mixed Marriages": {
+        "src": "/assets/story-ezra-and-mixed-marriages-v1.webp",
+        "alt": "Ezra and an assembled crowd sit solemnly in the rain outside a temple.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Cyrus's Decree and the Return",
+        "alt": "Families travel with bundled belongings and covered vessels on donkeys.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezra. Persian-era Judean families travel home through green uplands carrying bundles and carefully wrapped temple vessels on donkeys. An elder holds a sealed rolled decree, no readable script. Pearl-blue dawn, silver mist and muted teal, diagonal journey composition, no conquest or chains. Narrative basis: Cyrus of Persia allows the Jews to return and rebuild the temple and returns the temple containers. A list records those who go back under Zerubbabel and Jeshua.",
+        "original": "output/imagegen/ezra-complete/cyrus-s-decree-and-the-return.png"
+      },
+      {
+        "index": 1,
+        "title": "Rebuilding the Altar and Foundation",
+        "alt": "People gather with mixed joy and tears as workers lay temple foundations.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezra. Returnees lay rough temple foundation stones: older brown-skinned adults weep quietly while younger workers smile and carry stone, equally dignified emotions. Simple hand tools, gray stone rubble, clear cool noon and deep shadows. No modern crane or finished grand temple. Narrative basis: The returnees rebuild the altar, keep the Feast of Booths, and lay the temple foundation to shouts of joy and weeping from the older generation.",
+        "original": "output/imagegen/ezra-complete/rebuilding-the-altar-and-foundation.png"
+      },
+      {
+        "index": 2,
+        "title": "Opposition and Delay",
+        "alt": "Officials and builders meet beside an unfinished wall and a sealed letter.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezra. A solemn meeting between local officials and temple builders, a sealed rolled letter on a low table, unfinished stone wall behind and laid-down hand tools. No mocked enemy caricatures. Cool overcast afternoon, gray-green and cream, close deliberation. Narrative basis: Opponents offer to help rebuild the temple, are refused, and block the work. The chapter also tells of later letters that lead Artaxerxes to stop work on Jerusalem’s city. It closes by returning to the temple work halted until Darius’s rule.",
+        "original": "output/imagegen/ezra-complete/opposition-and-delay.png"
+      },
+      {
+        "index": 3,
+        "title": "The Temple Completed",
+        "alt": "Priests, musicians and families gather before a completed temple.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezra. Linen-clothed priests and families gather before a modest completed Persian-era Judean temple, musicians with small frame drums and simple wooden lyres. Cool fresh late-morning light, pale stone, restrained blue and cream. No oversized classical temple, sacrifice or readable signs. Narrative basis: Haggai and Zechariah urge the people to resume building. Darius finds Cyrus's decree and orders the work supported, and the temple is dedicated and Passover kept.",
+        "original": "output/imagegen/ezra-complete/the-temple-completed.png"
+      },
+      {
+        "index": 4,
+        "title": "Ezra Comes to Jerusalem",
+        "alt": "Ezra leads travelers carrying scroll bundles beside a river.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezra. Ezra, brown-skinned mature scribe with natural curled beard and plain linen headwrap, leads a small return caravan past a reed-lined river stopping place, carefully tied scroll bundles on a donkey. Cool cloudy morning and green reeds, intimate foreground, no modern books. Narrative basis: Ezra, a priest and scribe, receives a royal commission from Artaxerxes and leads a group of exiles to Jerusalem after fasting for safe passage.",
+        "original": "output/imagegen/ezra-complete/ezra-comes-to-jerusalem.png"
+      },
+      {
+        "index": 5,
+        "title": "Ezra and Mixed Marriages",
+        "alt": "Ezra and an assembled crowd sit solemnly in the rain outside a temple.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezra. Ezra sits in distress with open empty hands while a sober assembly listens outside the temple in rain. Adult women and men of different communities shown equally dignified, no casting out action, stereotypes or celebratory divorce scene. Cool slate rain, wet pale stones and muted dark-blue fabric. Narrative basis: Ezra learns that many Israelites have married foreign wives. He prays in distress, and the assembly agrees to send away the foreign wives.",
+        "original": "output/imagegen/ezra-complete/ezra-and-mixed-marriages.png"
+      }
+    ]
+  },
+  "nehemiah": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/nehemiah-complete/",
+    "assets": {
+      "Nehemiah's Prayer and Commission": {
+        "src": "/assets/story-nehemiah-s-prayer-and-commission-v1.webp",
+        "alt": "Nehemiah speaks with a Persian ruler while holding a bronze cup.",
+        "width": 1200,
+        "height": 675
+      },
+      "Rebuilding the Wall": {
+        "src": "/assets/story-rebuilding-the-wall-v1.webp",
+        "alt": "Nehemiah rides beside a ruined wall as companions carry small lamps.",
+        "width": 1200,
+        "height": 675
+      },
+      "Debt Relief": {
+        "src": "/assets/story-debt-relief-v1.webp",
+        "alt": "Nehemiah oversees a meeting as a man returns a pouch to a family.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Wall Completed": {
+        "src": "/assets/story-the-wall-completed-v1.webp",
+        "alt": "Workers fit a wooden beam into a repaired gateway as families watch.",
+        "width": 1200,
+        "height": 675
+      },
+      "Ezra Reads the Law": {
+        "src": "/assets/story-ezra-reads-the-law-v1.webp",
+        "alt": "Ezra reads from a platform while teachers speak with groups of listeners.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Dedication of Jerusalem’s Wall": {
+        "src": "/assets/story-the-dedication-of-jerusalem-s-wall-v1.webp",
+        "alt": "Singers and musicians walk along the repaired city wall.",
+        "width": 1200,
+        "height": 675
+      },
+      "Nehemiah's Reforms": {
+        "src": "/assets/story-nehemiah-s-reforms-v1.webp",
+        "alt": "Nehemiah speaks with gatekeepers as merchants wait outside closing doors.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Nehemiah's Prayer and Commission",
+        "alt": "Nehemiah speaks with a Persian ruler while holding a bronze cup.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Nehemiah. Brown-skinned Persian-era Nehemiah in a plain fine linen court garment respectfully speaks to seated Artaxerxes while holding a simple bronze drinking cup, asking leave to rebuild. Dignified Persian court, no unreadable modern papers. Cool high-window light, muted indigo, cream and cedar, intimate two-person focus. Narrative basis: Nehemiah, cupbearer to Artaxerxes, hears that Jerusalem's walls are broken. He prays, then asks the king for leave and letters of passage to rebuild.",
+        "original": "output/imagegen/nehemiah-complete/nehemiah-s-prayer-and-commission.png"
+      },
+      {
+        "index": 1,
+        "title": "Rebuilding the Wall",
+        "alt": "Nehemiah rides beside a ruined wall as companions carry small lamps.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Nehemiah. Choose Nehemiah inspecting Jerusalem's broken wall by night, riding a small donkey while two companions carry small clay lamps. Rough stone rubble and a breached plain gateway, no modern lanterns. Indigo moonlight and small warm lamp glints, low oblique perspective. Narrative basis: Nehemiah inspects the ruined wall by night and organizes the people to rebuild. Sanballat and Tobiah mock and plot, so Nehemiah assigns guards while the builders work armed.",
+        "original": "output/imagegen/nehemiah-complete/rebuilding-the-wall.png"
+      },
+      {
+        "index": 2,
+        "title": "Debt Relief",
+        "alt": "Nehemiah oversees a meeting as a man returns a pouch to a family.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Nehemiah. Poor families and nobles meet with Nehemiah in a shaded courtyard; a noble returns a small pouch and an unrolled land record with writing turned away. Families shown capable and dignified, no children sold or threatened. Bright white noon outside, cool blue shade and muted sage. Narrative basis: Poor families are losing land and children to debt. Nehemiah rebukes the nobles, they return what they took, and he refuses the governor's food allowance.",
+        "original": "output/imagegen/nehemiah-complete/debt-relief.png"
+      },
+      {
+        "index": 3,
+        "title": "The Wall Completed",
+        "alt": "Workers fit a wooden beam into a repaired gateway as families watch.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Nehemiah. Workers set the final wooden gate beam into a repaired stone gateway, Nehemiah and families watch with quiet relief. Ancient hand tools and ropes, no cranes. Crisp silver morning after rain, pale gray stone and fresh green, diagonal teamwork composition. Narrative basis: Plots against Nehemiah fail, and the wall is finished in fifty-two days. A register of those who returned is recovered.",
+        "original": "output/imagegen/nehemiah-complete/the-wall-completed.png"
+      },
+      {
+        "index": 4,
+        "title": "Ezra Reads the Law",
+        "alt": "Ezra reads from a platform while teachers speak with groups of listeners.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Nehemiah. Ezra reads from an unrolled scroll on a plain wooden platform while adults and safely seated children listen; Levites speak quietly with small groups nearby. Scroll surface turned away, no legible text. Cloudy pearl daylight, cream linen and muted blue, gently elevated assembly view. Narrative basis: Ezra reads the law to the assembly, the Levites explain it, and the people keep the Feast of Booths. They confess their sins and recount Israel's history in prayer.",
+        "original": "output/imagegen/nehemiah-complete/ezra-reads-the-law.png"
+      },
+      {
+        "index": 5,
+        "title": "The Dedication of Jerusalem’s Wall",
+        "alt": "Singers and musicians walk along the repaired city wall.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Nehemiah. Two groups of brown-skinned singers with wooden lyres, plain cymbals and frame drums walk on separate stretches of a broad repaired city wall toward the temple. Modest Persian-era city, safe broad walking surface and no precarious children. Cool clear early morning, blue-gray distance and bright linen. Narrative basis: The Levites and singers gather for the dedication of Jerusalem’s wall. Two companies give thanks as they proceed along the wall and meet at the house of God; sacrifices and rejoicing follow.",
+        "original": "output/imagegen/nehemiah-complete/the-dedication-of-jerusalem-s-wall.png"
+      },
+      {
+        "index": 6,
+        "title": "Nehemiah's Reforms",
+        "alt": "Nehemiah speaks with gatekeepers as merchants wait outside closing doors.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Nehemiah. Choose closing the city gates for Sabbath: Nehemiah speaks firmly but respectfully with gatekeepers as plain timber doors swing shut, merchants and bundled goods wait safely outside. No assault, forced eviction or caricature. Deep cool blue evening with small clay lamps, warm brown timber and gray stone. Narrative basis: On a return from Persia, Nehemiah removes Tobiah from a temple room, restores tithes, shuts the gates on the Sabbath, and confronts those who married foreign women.",
+        "original": "output/imagegen/nehemiah-complete/nehemiah-s-reforms.png"
+      }
+    ]
   }
 }
