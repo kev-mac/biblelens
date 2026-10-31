@@ -67,8 +67,13 @@
  let referenceContextVersion=0;
  function openReferenceContext(kind,id,button){
   const hash=location.hash,version=++referenceContextVersion;
+  const position={left:window.scrollX,top:document.body.classList.contains('dialog-scroll-locked')?-parseFloat(document.body.style.top||'0'):window.scrollY};
   return load(kind==='person'?'characters':'map').then(()=>{
    if(version!==referenceContextVersion||location.hash!==hash||!button.isConnected)return;
+   const dialog=document.querySelector(kind==='person'?'#character-sheet':'#atlas-sheet');
+   if(dialog&&!dialog.open)dialog.addEventListener('close',()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    if(location.hash===hash&&!document.querySelector('dialog[open]'))window.scrollTo({...position,behavior:'instant'});
+   })),{once:true});
    if(kind==='person')window.dispatchEvent(new CustomEvent('open-person',{detail:{id,opener:button}}));
    else window.BibleLensAtlas.open(id,button);
   }).catch(error=>toast(error.message));

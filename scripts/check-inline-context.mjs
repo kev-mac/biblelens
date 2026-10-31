@@ -4,15 +4,18 @@ import vm from 'node:vm';
 
 const source=fs.readFileSync('src/feature-loader.js','utf8');
 const code=source.slice(source.indexOf(' let referenceContextVersion='),source.indexOf('// Holding a place'));
-const loads=[],people=[],places=[],errors=[];
+const loads=[],people=[],places=[],errors=[],frames=[],restored=[],closeHandlers=[];
+const dialog={open:false,addEventListener:(type,callback)=>closeHandlers.push(callback)};
+const document={body:{classList:{contains:()=>false}},querySelector:selector=>selector==='dialog[open]'?null:dialog};
 const location={hash:'#read/0/19/1'};
-const context={location,load:name=>new Promise((resolve,reject)=>loads.push({name,resolve,reject})),toast:message=>errors.push(message),CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail;}},window:{dispatchEvent:event=>people.push(event),BibleLensAtlas:{open:(...args)=>places.push(args)}}};
+const context={location,document,requestAnimationFrame:callback=>frames.push(callback),load:name=>new Promise((resolve,reject)=>loads.push({name,resolve,reject})),toast:message=>errors.push(message),CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail;}},window:{scrollY:1171,scrollX:0,scrollTo:position=>restored.push(position),dispatchEvent:event=>people.push(event),BibleLensAtlas:{open:(...args)=>places.push(args)}}};
 vm.createContext(context);vm.runInContext(code,context);
 const button={isConnected:true,classList:{contains:()=>false}};
 let task=context.openReferenceContext('person','lot',button);
 assert.equal(loads.at(-1).name,'characters');loads.at(-1).resolve();await task;
 assert.equal(people[0].type,'open-person');assert.equal(people[0].detail.id,'lot');assert.equal(people[0].detail.opener,button);
 assert.equal(location.hash,'#read/0/19/1','Opening a person must retain the reader route');
+closeHandlers.shift()();while(frames.length)frames.shift()();assert.equal(restored[0].top,1171,'Restore exact pre-dialog position after unlock and focus settle');
 task=context.openAtlas('sodom',button);assert.equal(loads.at(-1).name,'map');loads.at(-1).resolve();await task;
 assert.equal(places[0][0],'sodom');assert.equal(places[0][1],button);assert.equal(location.hash,'#read/0/19/1');
 task=context.openReferenceContext('person','stale',button);location.hash='#read/0/20/1';loads.at(-1).resolve();await task;
@@ -23,4 +26,4 @@ const second=context.openReferenceContext('person','second',button);loads.at(-1)
 assert.equal(people.at(-1).detail.id,'second');assert.equal(people.length,2,'A slower prior tap must not replace the latest context');
 task=context.openAtlas('offline',button);loads.at(-1).reject(Error('Offline'));await task;assert.deepEqual(errors,['Offline']);
 assert.equal(context.openAtlas('directory',{...button,classList:{contains:()=>true}}),undefined,'Directory card links keep their own navigation');
-console.log('PASS: inline person/place contexts preserve the passage route and opener, lazy-load the correct window, reject stale requests and recover from loading failures.');
+console.log('PASS: inline person/place contexts preserve the passage route, scroll position and opener, lazy-load the correct window, reject stale requests and recover from loading failures.');
