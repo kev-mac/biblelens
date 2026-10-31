@@ -3,6 +3,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import {gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
+import {encodeEmbeddedAsset,decodeEmbeddedAsset} from './embedded-encoding.mjs';
 
 // Default: compressed lazy assets preserve the existing Sites ESM contract.
 // Opt-in static mode removes their bytes and needs Cloudflare's ASSETS binding.
@@ -110,12 +111,13 @@ async function prepareAssets(request,env){
   for(const [url,asset]of Object.entries(assets)){
     if(!external&&(url===offline||chapterPaths.has(url)))continue;
     const route=url==='/'?'/index.html':url;
-    const body=gzipSync(asset.encoding==='base64'?Buffer.from(asset.body,'base64'):Buffer.from(asset.body),{level:9}).toString('base64');
+    const body=encodeEmbeddedAsset(gzipSync(asset.encoding==='base64'?Buffer.from(asset.body,'base64'):Buffer.from(asset.body),{level:9}));
     if(bodies.has(body))aliases[route]=bodies.get(body);
     else {bodies.set(body,route);compressed[route]=body;}
   }
   const embedded = external ? 'const EMBEDDED_ASSETS=null;\n' : `
 const COMPRESSED_ASSETS=${JSON.stringify(compressed)};
+${decodeEmbeddedAsset.toString()}
 const ASSET_ALIASES=${JSON.stringify(aliases)},CHAPTER_PACKS=${JSON.stringify(data.CHAPTERS)},CHAPTER_PATHS=${JSON.stringify(Object.fromEntries(chapterPaths))};
 const EMBEDDED_ASSETS={async fetch(request){
  const path=new URL(request.url).pathname;
@@ -123,7 +125,7 @@ const EMBEDDED_ASSETS={async fetch(request){
  if(CHAPTER_PATHS[path])return new Response(JSON.stringify(CHAPTER_PACKS[CHAPTER_PATHS[path]]));
  const encoded=COMPRESSED_ASSETS[path]||COMPRESSED_ASSETS[ASSET_ALIASES[path]];
  if(!encoded)return new Response('Not found',{status:404});
- const bytes=Uint8Array.from(atob(encoded),c=>c.charCodeAt(0));
+ const bytes=decodeEmbeddedAsset(encoded);
  return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip')));
 }};
 `;
