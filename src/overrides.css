@@ -3085,12 +3085,12 @@ html body.lens-app #explore-view [data-topic=people]{--tile-rgb:96,165,250}
 html body.lens-app #explore-view [data-topic=places]{--tile-rgb:45,212,191}
 html body.lens-app #explore-view [data-topic=commandments]{--tile-rgb:251,191,36}
 html body.lens-app #explore-view [data-topic=lost]{--tile-rgb:253,164,175}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=history]{--tile-rgb:251,191,36}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=science]{--tile-rgb:74,222,128}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=timeline]{--tile-rgb:45,212,191}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=text]{--tile-rgb:96,165,250}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=translation]{--tile-rgb:192,132,252}
-html body.lens-app #explore-view.ux-evidence-hub [data-topic=questions]{--tile-rgb:251,113,133}
+html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=history],[data-collection=history]){--tile-rgb:251,191,36}
+html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=science],[data-collection=science]){--tile-rgb:74,222,128}
+html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=timeline],[data-collection=timeline]){--tile-rgb:45,212,191}
+html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=text],[data-collection=text]){--tile-rgb:96,165,250}
+html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=translation],[data-collection=translation]){--tile-rgb:192,132,252}
+html body.lens-app #explore-view.ux-evidence-hub :is([data-topic=questions],[data-collection=questions]){--tile-rgb:251,113,133}
 html body.lens-app #explore-view a.ux-topic{--topic:rgb(var(--tile-rgb));--category-border:rgba(var(--tile-rgb),.45);--category-glow:rgba(var(--tile-rgb),.25);background:rgba(var(--tile-rgb),.1);border-color:var(--category-border)}
 html body.lens-app:not(.dark) #explore-view a.ux-topic{--topic:color-mix(in srgb,rgb(var(--tile-rgb)) 60%,#000)}
 html body.lens-app #explore-view .ux-count{color:var(--topic);background:rgba(var(--tile-rgb),.15)}
@@ -3098,3 +3098,5 @@ html body.lens-app #chapter-text .reader-event-title{font:700 1.35rem/1.4 var(--
 html body.lens-app .comparison-topic-passages{margin:20px 0;padding:16px;border:1px solid var(--lens-rule);border-radius:8px}
 html body.lens-app .comparison-topic-passages nav{display:flex;flex-wrap:wrap;gap:8px}
 html body.lens-app #lensMasthead nav.lens-primary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+html body.lens-app #explore-view .ux-evidence-category{color:rgb(var(--tile-rgb))}
+html body.lens-app:not(.dark) #explore-view .ux-evidence-category{color:color-mix(in srgb,rgb(var(--tile-rgb)) 60%,#000)}
